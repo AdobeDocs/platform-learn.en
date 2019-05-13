@@ -19,8 +19,8 @@ user-guide: null
   + [Create your first Schema](schemas/schemas-feature-video-use.md)
   + [Create your own Mixins and Classes](schemas/mixins-and-classes-feature-video-use.md)
 + Data Ingestion{#data-ingestion}
-  + [Understand Data Ingestion](data-ingestion/data-ingestion-feature-video-understand.md)
-  + [Create Datasets and Ingest Data](data-ingestion/datasets-feature-video-use.md)
+  + [Understand Data Ingestion](datasets/data-ingestion-feature-video-understand.md)
+  + [Create Datasets and Ingest Data](datasets/datasets-feature-video-use.md)
 + Profiles{#profiles}
   + [Understand the Real-time Customer Profile](profiles/real-time-customer-profile-feature-video-understand.md)
   + [Ingest Data into Unified Profile](profiles/data-ingestion-into-profile-feature-video-use.md)
