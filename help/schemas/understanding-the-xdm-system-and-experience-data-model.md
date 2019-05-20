@@ -8,7 +8,7 @@ author: Daniel Wright
 doc-type: understand
 ---
 
-# Understanding the XDM System & Experience Data Model
+# Understanding the XDM System & Experience Data Model in Adobe Experience Platform
 
 >[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12)
 

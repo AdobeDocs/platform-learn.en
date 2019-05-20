@@ -5,10 +5,10 @@ description:
 audience: marketer
 difficulty: 1
 author: Daniel Wright
-doc-type: understand
+doc-type: use
 ---
 
-# Create Segments
+# Create Segments in Adobe Experience Platform
 
 >[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12)
 

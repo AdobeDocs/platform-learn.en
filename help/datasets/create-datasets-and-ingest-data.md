@@ -1,6 +1,6 @@
 ---
-title: Creating Datasets and Ingesting Data
-seo-title: Creating Datasets and Ingesting Data in Adobe Experience Platform
+title: Create Datasets and Ingest Data
+seo-title: Create Datasets and Ingest Data in Adobe Experience Platform
 description: 
 audience: architect
 difficulty: 1

@@ -8,7 +8,7 @@ author: Daniel Wright
 doc-type: use
 ---
 
-# Bring Data Into the Real-Time Customer Profile
+# Bring Data Into the Real-Time Customer Profile in Adobe Experience Platform
 
 [!VIDEO](https://video.tv.adobe.com/v/27301?quality=12)
 

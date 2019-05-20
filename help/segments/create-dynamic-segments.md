@@ -1,6 +1,6 @@
 ---
-title: Advanced Segmentation
-seo-title: Advanced Segmentation in Adobe Experience Platform
+title: Create Dynamic Segments
+seo-title: Create Dynamic Segmentation in Adobe Experience Platform
 description: 
 audience: marketer
 difficulty: 3
@@ -8,9 +8,9 @@ author: Daniel Wright
 doc-type: use
 ---
 
-# Advanced Segmentation
+# Create Dynamic Segments in Adobe Experience Platform
 
-<!-->[!VIDEO](https://video.tv.adobe.com/v/?quality=12)-->
+>[!VIDEO](https://video.tv.adobe.com/v/27428?quality=12)
 
 ## Additional Resources
 

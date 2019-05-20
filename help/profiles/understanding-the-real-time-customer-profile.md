@@ -8,7 +8,7 @@ author: Daniel Wright
 doc-type: understand
 ---
 
-# Understanding the Real-Time Customer Profile
+# Understanding the Real-Time Customer Profile in Adobe Experience Platform
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12)
 
