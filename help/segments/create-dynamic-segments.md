@@ -14,6 +14,6 @@ doc-type: use
 
 ## Additional Resources
 
-* [Create Segments video](segmentation-feature-video-use.md)
-* [Understanding the Real-Time Customer Profile](../profiles/real-time-customer-profile-feature-video-understand.md)
+* [Create Segments video](create-segments.md)
+* [Understanding the Real-Time Customer Profile](../profiles/bring-data-into-the-real-time-customer-profile.md)
 * [Segment Builder documentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)

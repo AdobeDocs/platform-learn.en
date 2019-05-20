@@ -14,7 +14,7 @@ doc-type: use
 
 ## Additional Resources
 
-* [Understanding the XDM System & Experience Data Model](xdm-system-and-experience-data-model-feature-video-understand.md)
-* [Create your first Schema with out-of-the-box components video](schemas-feature-video-use.md)
+* [Understanding the XDM System & Experience Data Model](understanding-the-xdm-system-and-experience-data-model.md)
+* [Create your first Schema with out-of-the-box components video](create-your-first-schema-with-out-of-the-box-components.md)
 * [Schema documentation](https://www.adobe.io/apis/experienceplatform/home/xdm.html)
 * [Schema Editor tutorial](https://www.adobe.com/go/xdm-schema-editor-tutorial-en)

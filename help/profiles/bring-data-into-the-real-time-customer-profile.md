@@ -14,6 +14,6 @@ doc-type: use
 
 ## Additional Resources
 
-* [Understanding the Real-Time Customer Profile video](real-time-customer-profile-feature-video-understand.md)
-* [Create Segments](../segments/segmentation-feature-video-use.md)
+* [Understanding the Real-Time Customer Profile video](bring-data-into-the-real-time-customer-profile.md)
+* [Create Segments](../segments/create-segments.md)
 * [Unified Profile documentation](https://www.adobe.com/go/profile-overview-en)

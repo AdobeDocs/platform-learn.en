@@ -14,7 +14,7 @@ doc-type: understand
 
 ## Additional Resources
 
-* [Create your first Schema with out-of-the-box components video](schemas-feature-video-use.md)
-* [Create your own Mixins and Classes video](mixins-and-classes-feature-video-use.md)
+* [Create your first Schema with out-of-the-box components video](create-your-first-schema-with-out-of-the-box-components.md)
+* [Create your own Mixins and Classes video](create-your-own-mixins-and-classes.md)
 * [XDM System in Adobe Experience Platform documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/xdm_system/xdm_system_in_experience_platform.md)
 * [Schema documentation](https://www.adobe.io/apis/experienceplatform/home/xdm.html)

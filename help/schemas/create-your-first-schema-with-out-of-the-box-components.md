@@ -14,8 +14,8 @@ doc-type: use
 
 ## Additional Resources
 
-* [Understanding the XDM System & Experience Data Model](xdm-system-and-experience-data-model-feature-video-understand.md)
-* [Create your own Mixins and Classes video](mixins-and-classes-feature-video-use.md)
+* [Understanding the XDM System & Experience Data Model](understanding-the-xdm-system-and-experience-data-model.md)
+* [Create your own Mixins and Classes video](create-your-own-mixins-and-classes.md)
 * [Schema documentation](https://www.adobe.io/apis/experienceplatform/home/xdm.html)
 * [Basics of schema composition documentation](https://www.adobe.com/go/xdm-schema-composition-basics-en)
 * [Schema Editor tutorial](https://www.adobe.com/go/xdm-schema-editor-tutorial-en)

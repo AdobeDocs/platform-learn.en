@@ -14,6 +14,6 @@ doc-type: use
 
 ## Additional Resources
 
-* [Understanding Data Ingestion video](data-ingestion-feature-video-understand.md)
+* [Understanding Data Ingestion video](understanding-data-ingestion.md)
 * [Data Ingestion documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion.html)
 * [Configuring a Dataset with Platform API tutorial](https://www.adobe.com/go/data-configure-dataset-en)

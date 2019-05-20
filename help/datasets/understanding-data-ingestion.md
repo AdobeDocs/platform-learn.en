@@ -14,6 +14,6 @@ doc-type: understand
 
 ## Additional Resources
 
-* [Create Datasets and Ingest Data video](datasets-feature-video-use.md)
+* [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
 * [Data Ingestion Documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion.html)
 * [Configuring a Dataset with Platform API tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md)

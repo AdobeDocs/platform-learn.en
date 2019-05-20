@@ -14,5 +14,5 @@ doc-type: understand
 
 ## Additional Resources
 
-* [Bring Data Into the Real-Time Customer Profile video](data-ingestion-into-profile-feature-video-use.md)
+* [Bring Data Into the Real-Time Customer Profile video](bring-data-into-the-real-time-customer-profile.md)
 * [Unified Profile documentation](https://www.adobe.com/go/profile-overview-en)
