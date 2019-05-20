@@ -45,7 +45,7 @@ seo-description: null
 <table>
 <tr>
   <td><a href="segments/create-segments.md"><img alt="Create Segments" src="assets/thumb_Create-Segments.png"></a><br/><a href="segments/create-segments.md">Create Segments</a></td>
-  <td><a href="segments/create-advanced-segments.md"><img alt="Create Dynamic Segments" src="assets/thumb_Create-Dynamic-Segments.png"></a><br/><a href="segments/create-advanced-segments.md">Create Dynamic Segments</a></td>
+  <td><a href="segments/create-dynamic-segments.md"><img alt="Create Dynamic Segments" src="assets/thumb_Create-Dynamic-Segments.png"></a><br/><a href="segments/create-dynamic-segments.md">Create Dynamic Segments</a></td>
   <td><br/></td>
   <td><br/></td>
 </tr>

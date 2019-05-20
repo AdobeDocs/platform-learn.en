@@ -16,7 +16,7 @@ user-guide: null
 
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
-  + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-componentse.md)
+  + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
   + [Create your own Mixins and Classes](schemas/create-your-own-mixins-and-classes.md)
 + Data Ingestion{#data-ingestion}
   + [Understanding Data Ingestion](datasets/understanding-data-ingestion.md)
