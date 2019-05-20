@@ -12,7 +12,7 @@ audience: end-user
 user-guide: null
 ---
 
-# Adobe Experience Platform Videos and Tutorials {}
+# Adobe Experience Platform Videos and Tutorials
 
 + [Overview](index.md)
 + Schemas{#schemas}
