@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Platform Tutorials
-seo-title: Adobe Experience Platform Tutorials
+title: Adobe Experience Platform Tutorials Overview
+seo-title: Adobe Experience Platform TutorialsOverview
 description: null
 seo-description: null
 ---
 
-# Adobe Experience Platform Tutorials
+# Overview
 
 ## Schemas
 
