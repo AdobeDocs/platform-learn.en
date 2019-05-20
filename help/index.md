@@ -1,6 +1,6 @@
 ---
 title: Adobe Experience Platform Tutorials
-seo-title: Adobe Experience Platform Tutorial
+seo-title: Adobe Experience Platform Tutorials
 description: null
 seo-description: null
 ---
