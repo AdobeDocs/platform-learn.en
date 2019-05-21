@@ -7,14 +7,14 @@ solution-hub-url: https://www.adobe.io/apis/experienceplatform/home.html
 getting-started-title: Experience League
 getting-started-url: https://experienceleague.adobe.com
 tutorials-title: Tutorials
-tutorials-url: /content/help/en/platform-learn/tutorials/index.html
+tutorials-url: /content/help/en/target-learn/tutorials/overview.html
 audience: end-user
 user-guide: null
 ---
 
 # Adobe Experience Platform Tutorials {#tutorials}
 
-+ [Overview](index.md)
++ [Overview](overview.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
