@@ -12,7 +12,7 @@ user-guide: null
 
 # Adobe Experience Platform Tutorials {#tutorials}
 
-+ [Overview](overview.md)
++ [Overvie](overview.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
