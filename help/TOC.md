@@ -6,6 +6,8 @@ solution-title: Documentation
 solution-hub-url: https://www.adobe.io/apis/experienceplatform/home.html
 getting-started-title: Experience League
 getting-started-url: https://experienceleague.adobe.com
+tutorials-title: Tutorials
+tutorials-url: /content/help/en/platform-learn/tutorials/overview.html
 audience: end-user
 user-guide: null
 ---
