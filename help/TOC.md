@@ -28,3 +28,5 @@ user-guide: null
 + Segments{#segments}
   + [Create Segments](segments/create-segments.md)
   + [Create Dynamic Segments](segments/create-dynamic-segments.md)
++ Identities{#identities}
+  + [Understanding Identity and Identity Graphs](identities/understanding-identity-and-identity-graphs.md)

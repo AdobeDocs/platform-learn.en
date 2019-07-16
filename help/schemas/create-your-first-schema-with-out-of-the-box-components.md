@@ -8,7 +8,7 @@ author: Daniel Wright
 doc-type: use
 ---
 
-# Create your first Schema with out-of-the-box components in Adobe Experience Platform
+# Create your first Schema with out-of-the-box components
 
 >[!VIDEO](https://video.tv.adobe.com/v/27012?quality=12)
 

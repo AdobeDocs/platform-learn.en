@@ -8,7 +8,7 @@ author: Daniel Wright
 doc-type: use
 ---
 
-# Create Dynamic Segments in Adobe Experience Platform
+# Create Dynamic Segments
 
 >[!VIDEO](https://video.tv.adobe.com/v/27428?quality=12)
 

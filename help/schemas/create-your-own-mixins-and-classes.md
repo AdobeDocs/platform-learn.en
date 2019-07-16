@@ -8,7 +8,7 @@ author: Daniel Wright
 doc-type: use
 ---
 
-# Create your own Mixins and Classes in Adobe Experience Platform
+# Create your own Mixins and Classes
 
 >[!VIDEO](https://video.tv.adobe.com/v/27013?quality=12)
 

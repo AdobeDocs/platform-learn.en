@@ -2,10 +2,72 @@
 title: Adobe Experience Platform Tutorials
 seo-title: Adobe Experience Platform Tutorials
 description: Learn about Adobe Experience Platform
-seo-description: null
 ---
 
-# Adobe Experience Platform Tutorials
+# Overview
+
+Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences. Use these videos and tutorials to learn the many components of the Experience Platform.
+
+## What's New
+
+* **[Understanding Identity and Identity Graphs (Video)](README.md)**
+    <br>
+    *Learn about the rich set of Identity resolution capabilities, which link disconnected identities to create a unified profile.*
+
+* **[Create Dynamic Segments (Video)](README.md)**
+    <br>
+    *Learn how to build segments using dynamic attributes to scale your personalization.*
+
+* **[Create Segments (Video)](README.md)**
+    <br>
+    *Learn how to build audience segments with the new segment builder.*
+
+
+## Staff Picks
+
+<table>
+<tr>
+  <td>
+    <a href="schemas/create-your-first-schema-with-out-of-the-box-components.md">
+      <img alt="thumbnail image for the 'Create your first Schema' video" src="assets/thumb_Create-your-First-Schema.png" />
+    </a>
+    <div>
+      <a href="schemas/create-your-first-schema-with-out-of-the-box-components.md">
+    <strong>Create your first Schema</strong>
+    </a>
+    </div>
+    <p>
+    <em>Build a schema for your dataset</em>
+    <p>
+  </td>
+   <td>
+    <a href="datasets/create-datasets-and-ingest-data.md">
+      <img alt="thumbnail image for the 'Create Datasets and Ingest Data' video" src="assets/thumb_Create-Datasets-and-Ingest-Data.png" />
+    </a>
+    <div>
+      <a href="datasets/create-datasets-and-ingest-data.md">
+    <strong>Create Datasets and Ingest Data</strong>
+    </a>
+    </div>
+    <p>
+    <em>Ingest your dataset.</em>
+    <p>
+  </td>
+  <td>
+    <a href="segments/create-segments.md">
+      <img alt="thumbnail image for the 'Create Segments' video" src="assets/thumb_Create-Segments.png" />
+    </a>
+    <div>
+      <a href="segments/create-segments.md">
+    <strong>Create Segments</strong>
+    </a>
+    </div>
+    <p>
+    <em>Build segments based on your data.</em>
+    <p>
+  </td>
+</tr>
+</table>
 
 ## Schemas
 

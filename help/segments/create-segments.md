@@ -8,7 +8,7 @@ author: Daniel Wright
 doc-type: use
 ---
 
-# Create Segments in Adobe Experience Platform
+# Create Segments
 
 >[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12)
 
