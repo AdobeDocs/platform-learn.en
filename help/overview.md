@@ -6,7 +6,7 @@ description: Learn about Adobe Experience Platform
 
 # Overview
 
-Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences. Use these videos and tutorials to learn the many components of the Experience Platform.
+Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences. Use these videos and tutorials to learn the many components of Experience Platform.
 
 ## What's New
 
@@ -27,6 +27,32 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 <table>
 <tr>
   <td>
+    <a href="end-to-end/a-customer-experience-powered-by-experience-platform.md">
+      <img alt="A Customer Experience Powered by Experience Platform video" src="assets/thumb_A-Customer-Experience.jpg" />
+    </a>
+    <div>
+      <a href="end-to-end/a-customer-experience-powered-by-experience-platform.md">
+    <strong>A Customer Experience Powered by Experience Platform</strong>
+    </a>
+    </div>
+    <p>
+    <em>See how the Platform can be used to power a customer experience</em>
+    <p>
+  </td>
+  <td>
+    <a href="end-to-end/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md">
+      <img alt="Behind the Scenes: A Customer Experience Powered by Experience Platform video" src="assets/thumb_Behind-the-Scenes.jpg" />
+    </a>
+    <div>
+      <a href="end-to-end/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md">
+    <strong>Behind the Scenes: A Customer Experience Powered by Experience Platform</strong>
+    </a>
+    </div>
+    <p>
+    <em>Go behind the scenes of Platform</em>
+    <p>
+  </td>
+  <td>
     <a href="schemas/create-your-first-schema-with-out-of-the-box-components.md">
       <img alt="thumbnail image for the 'Create your first Schema' video" src="assets/thumb_Create-your-First-Schema.png" />
     </a>
@@ -39,6 +65,7 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <em>Build a schema for your dataset</em>
     <p>
   </td>
+   <!--
    <td>
     <a href="datasets/create-datasets-and-ingest-data.md">
       <img alt="thumbnail image for the 'Create Datasets and Ingest Data' video" src="assets/thumb_Create-Datasets-and-Ingest-Data.png" />
@@ -64,6 +91,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
     <em>Build segments based on your data.</em>
     <p>
-  </td>
+  </td>-->
 </tr>
 </table>
