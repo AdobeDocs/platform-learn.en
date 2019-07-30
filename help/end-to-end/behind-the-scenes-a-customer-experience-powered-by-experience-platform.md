@@ -1,6 +1,6 @@
 ---
-title: Behind the Scenes: A Customer Experience Powered by Experience Platform
-seo-title: Behind the Scenes: A Customer Experience Powered by Adobe Experience Platform
+title: Behind the Scenes&#58; A Customer Experience Powered by Experience Platform
+seo-title: Behind the Scenes&#58; A Customer Experience Powered by Adobe Experience Platform
 description: 
 feature: platform
 topics:
