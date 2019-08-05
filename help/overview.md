@@ -36,7 +36,7 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     </a>
     </div>
     <p>
-    <em>See how the Platform can be used to power a customer experience</em>
+    <em>See how Platform can be used to power a customer experience</em>
     <p>
   </td>
   <td>
