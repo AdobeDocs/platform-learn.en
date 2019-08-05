@@ -1,7 +1,7 @@
 ---
 cloud: experience-cloud
 product: platform
-user-guide-title: Adobe Experience Platform Tutorials
+user-guide-title: Using Adobe Experience Platform API
 solution-title: Documentation
 solution-hub-url: https://www.adobe.io/apis/experienceplatform/home.html
 getting-started-title: Experience League
@@ -12,10 +12,10 @@ audience: end-user
 user-guide: null
 ---
 
-# Adobe Experience Platform Tutorials {#tutorials}
+# Using Adobe Experience Platform API {#using-platform-api}
 
 + [Overview](overview.md)
-+ Introduction to Platform{#intro-to-platform}
++ Setup the Environment{#setup}
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 + Schemas{#schemas}
