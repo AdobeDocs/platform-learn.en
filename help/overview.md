@@ -27,11 +27,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 <table>
 <tr>
   <td>
-    <a href="end-to-end/a-customer-experience-powered-by-experience-platform.md">
+    <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
       <img alt="A Customer Experience Powered by Experience Platform video" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
-      <a href="end-to-end/a-customer-experience-powered-by-experience-platform.md">
+      <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
     <strong>A Customer Experience Powered by Experience Platform</strong>
     </a>
     </div>
@@ -40,11 +40,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
   </td>
   <td>
-    <a href="end-to-end/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md">
+    <a href="intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md">
       <img alt="Behind the Scenes: A Customer Experience Powered by Experience Platform video" src="assets/thumb_Behind-the-Scenes.jpg" />
     </a>
     <div>
-      <a href="end-to-end/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md">
+      <a href="intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md">
     <strong>Behind the Scenes: A Customer Experience Powered by Experience Platform</strong>
     </a>
     </div>

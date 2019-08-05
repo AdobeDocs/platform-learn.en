@@ -15,9 +15,9 @@ user-guide: null
 # Adobe Experience Platform Tutorials {#tutorials}
 
 + [Overview](overview.md)
-+ End-to-End{#end-to-end}
-  + [A Customer Experience Powered by Experience Platform](end-to-end/a-customer-experience-powered-by-experience-platform.md)
-  + [Behind the Scenes: A Customer Experience Powered by Experience Platform](end-to-end/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
++ Introduction to Platform{#intro-to-platform}
+  + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+  + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
