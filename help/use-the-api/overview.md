@@ -8,7 +8,7 @@ doc-type: use
 
 # Overview
 
-_Use the Adobe Experience Platform API_ is the perfect starting point for developers who want to learn how to use the Experience Platform API to build rich applications to power their digital marketing.
+_Use the Adobe Experience Platform API_ is the perfect starting point for developers who want to learn how to use the Experience Platform API to build rich applications to power their digital marketing..
 
 Each lesson contains foundational information and how-to exercises to provide context around the API as well as how to successfully make requests.
 
