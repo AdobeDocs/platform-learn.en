@@ -33,3 +33,4 @@ user-guide: null
   + [Create Dynamic Segments](segments/create-dynamic-segments.md)
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](identities/understanding-identity-and-identity-graphs.md)
++ [Using the Platform API](using-the-platform-api/overview.md)
