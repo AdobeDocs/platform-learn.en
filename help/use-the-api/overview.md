@@ -1,14 +1,14 @@
 ---
-title: Using the Platform API
-seo-title: Using the Adobe Experience Platform API
+title: Use the Platform API Tutorial Overview
+seo-title: Use the Adobe Experience Platform API Tutorial Overview
 description: 
 difficulty: 5
 doc-type: use
 ---
 
-# Using the API
+# Overview
 
-_Using the Adobe Experience Platform API_ is the perfect starting point for developers who want to learn how to use the Experience Platform API to build rich applications to power their digital marketing.
+_Use the Adobe Experience Platform API_ is the perfect starting point for developers who want to learn how to use the Experience Platform API to build rich applications to power their digital marketing.
 
 Each lesson contains foundational information and how-to exercises to provide context around the API as well as how to successfully make requests.
 
