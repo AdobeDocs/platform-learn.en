@@ -45,4 +45,3 @@ Adobe Experience Platform enables Luma to understand its users via Unified Profi
 Let's get started!
 
 [Next "Do this thing" >](#)
-
