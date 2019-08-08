@@ -29,5 +29,5 @@ user-guide: null
 + Use Data{#use-data}
   + [Create Segments](use-data/create-segments.md)
   + [Use Segments](use-data/use-segments.md)
-  * [Query the Data](use-data/query-the-data.md)
+  + [Query the Data](use-data/query-the-data.md)
   + [Data Science](use-data/data-science.md)
