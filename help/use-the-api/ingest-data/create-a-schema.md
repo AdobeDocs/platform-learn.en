@@ -69,7 +69,7 @@ Using the Experience Platform APIs, a suite of abilities to view, extend and cre
 
 1. Now select `XDM: Get Custom Profile Schema` and click `Send`.
 
-   ![Get custom profile schema](./images/get_custom_profile_schema.png)
+   ![Get custom profile schema](../assets/get_custom_profile_schema.png)
 
    The response section should return the details of the schema which look an awful lot like `Profile` class because that is the base of our schema. In the `meta:extends` section you can see our schema extends the `Profile` class as well as the four entities (record, auditable, identitymap and extensible) that the `Profile` class extended.
 

@@ -77,7 +77,7 @@ For Lesson 2, we will first start with basic dataset creation, and the requireme
 
     ![](../assets/upload_file_body.png)
 
-1.  From there you'll need to select a file to upload by clicking on `Choose Files` and selecting [Profile_CRM_Data_Sample.parquet](data/Profile_CRM_Data_Sample.parquet).
+1.  From there you'll need to select a file to upload by clicking on `Choose Files` and selecting [Profile_CRM_Data_Sample.parquet](../assets/Profile_CRM_Data_Sample.parquet).
 
     ![](../assets/upload_file_selected.png)
 
