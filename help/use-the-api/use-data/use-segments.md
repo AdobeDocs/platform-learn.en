@@ -65,7 +65,7 @@ This will help utilize several aspects Luma's customer loyalty program, includin
 
 [Unified Profile, Identity, & Segmentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation.html)
 
-# Next Steps
+## Next Steps
 
 Now that we've been able to see how to use Adobe Experience Platform's APIs to empower Luma, the opportunities that to understand and utilize the real-time customer profile that Unified Profile offers are numerous. As an API-first built platform, Adobe Experience Platform allows developers to take full control of its features and integrate them into their own solutions as well.
 
