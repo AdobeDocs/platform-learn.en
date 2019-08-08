@@ -7,7 +7,7 @@
 
 ## Lesson Resources
 
-- Sample data .parquet file in Profile XDM format (required download): [Profile_CRM_Data_Sample.parquet](/resources/Profile_CRM_Data_Sample.parquet)
+- Sample data .parquet file in Profile XDM format (required download): [Profile_CRM_Data_Sample.parquet](../assets//Profile_CRM_Data_Sample.parquet)
 
 ## Lesson Context
 

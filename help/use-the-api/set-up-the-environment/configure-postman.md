@@ -33,7 +33,7 @@ Maybe organize by the UI labels:
 
    ![](../assets/postman_import.png)
 
-   Select the [L778.postman_collection.json](/resources/L778.postman_collection.json) collection file from this repository.
+   Select the [L778.postman_collection.json](../assets//L778.postman_collection.json) collection file from this repository.
 
 1. Next we need to import our environment. Click on the settings logo
 
@@ -47,7 +47,7 @@ Maybe organize by the UI labels:
 
    ![](../assets/postman_import_env.png)
 
-1. Select the [L778.postman_environment.json](/resources/L778.postman_environment.json) file to import the environment.
+1. Select the [L778.postman_environment.json](../assets//L778.postman_environment.json) file to import the environment.
 
    ![](../assets/postman_after_env_import.png)
 
@@ -106,7 +106,7 @@ Maybe organize by the UI labels:
 
 ## Exercise 0.3 - Setup Fenix Web Server
 
-1.  Download the [Luma website](/resources/Luma-local.zip).
+1.  Download the [Luma website](../assets//Luma-local.zip).
 1.  Unzip the `Luma-local.zip` file and make note of which directory you extract the content to.
 1.  Start the Fenix web server.
 

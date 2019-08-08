@@ -7,7 +7,7 @@
 
 ## Lesson Resources
 
-- Profile XDM in JSON format (to inspect): [ProfileXDM.json](/resources/profileXDM.json)
+- Profile XDM in JSON format (to inspect): [ProfileXDM.json](../assets/profileXDM.json)
 
 ## Lesson Context
 

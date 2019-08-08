@@ -27,13 +27,13 @@ Make sure that Fenix webserver is running with luma.com. Navigate to [http://lum
 
 1. Next, we need to define the schema identity decriptor in order to tell Experience Platform what the main identifying field for data is in this schema, which here will be the ECID, or Experience Cloud ID that a user is auto-assigned within their browser session. Click `Define Identity Descriptor` and send the POST call.
 
-   ![](/images/create-ee-dataset-1b.png)
+   ![](../assets//create-ee-dataset-1b.png)
 
 1. Send the POST call for `Create Web Behavior Event Dataset`, which includes the tag `"streamingIngestionEnabled": "true"` within it to enable data streaming. You should then get a Dataset ID in response:
 
    ![](../assets/create-ee-dataset-2.png)
 
-   ![](/images/create-ee-dataset-2a-streaming.png)
+   ![](../assets//create-ee-dataset-2a-streaming.png)
 
 1. Do the same with the next call, `Create User Signups Dataset`, to create a new Profile-based dataset with `"streamingIngestionEnabled": "true"` in it as well.
 
