@@ -21,29 +21,29 @@ Using the Experience Platform APIs, a suite of abilities to view, extend and cre
 1. Start by expanding the `Lesson 1` & `List Schemas` folder in postman under `L778`.
 1. Select the `XDM: Get All Classes` action and click `Send`.
 
-   ![](images/Lesson_1_schema_1.png)
+   ![](assets/Lesson_1_schema_1.png)
 
    In the response pane you can scroll down and see the classes that are available in XDM. The ExperienceEvent class is used as a base for time based data while Profile is used for person based data.
 
 1. Let's drill down a bit and view the `Profile` class. If you select `XDM: Get Profile Class` and click `Send` you should see something similar to:
 
-   ![](images/Lesson_1_schema_3.png)
+   ![](assets/Lesson_1_schema_3.png)
 
 1. There are not many classes in XDM but they are used as the base for all tenant schemas. If you select `XDM: Get All Tenant Schemas` and click `Send` you should see something similar to:
 
-   ![](images/Lesson_1_schema_6.png)
+   ![](assets/Lesson_1_schema_6.png)
 
    This will list all of the schemas that have already been created for this tenant.
 
 1. Now select `XDM: Get All Mixins` and click `Send` you should see something like the following:
 
-   ![](images/Lesson_1_get_mixins.png)
+   ![](assets/Lesson_1_get_mixins.png)
 
    This will return all of the mixins that ship with Experience Platform. Scroll down until you see `Profile Personal Details` which we are going to look up next.
 
 1. Now select `XDM: Get Profile Mixin` and click `Send` you will see the following:
 
-   ![](images/Lesson_1_get_profile_mixin.png)
+   ![](assets/Lesson_1_get_profile_mixin.png)
 
    This is a mixin you will add to your schema when you need common personal details like home address, home phone, etc.
 
@@ -51,19 +51,19 @@ Using the Experience Platform APIs, a suite of abilities to view, extend and cre
 
 1. Now that we've seen the API calls to query schema let's move on to creating a custom schema of our own. Expand the `Create Schema` folder under `Lesson 1` in postman and select `XDM: Get Tenant ID` and click `Send`.
 
-   ![](images/Lesson_1_schema_8.png)
+   ![](assets/Lesson_1_schema_8.png)
 
    This API call will determine which tenant you are currently logged in as and save the value as an environment variable in postman for future API calls.
 
 1. Now select `XDM: Create New Schema`.
 
-   ![](images/Lesson_1_schema_9.png)
+   ![](assets/Lesson_1_schema_9.png)
 
    As you can see, our simple schema extends "context/profile" and that's it. At its most basic, a schema need only extend a class which will capture the minimum viable schema. This schema will be named `L778+[AccountID]_Customers_Schema`, as it is the schema we will be using for user profile data ingestion in Lesson 2.
 
    Click `Send`
 
-   ![](images/Lesson_1_schema_10.png)
+   ![](assets/Lesson_1_schema_10.png)
 
    In the response section you will the ID of your newly created schema which we will be using to create a dataset in `Lesson 2`.
 
@@ -77,49 +77,49 @@ Using the Experience Platform APIs, a suite of abilities to view, extend and cre
 
    Select `XDM: Add Person Details Mixin`
 
-   ![](images/Lesson_1_schema_11.png)
+   ![](assets/Lesson_1_schema_11.png)
 
    Click `Send`
 
-   ![](images/add_person_mixin.png)
+   ![](assets/add_person_mixin.png)
 
    You will notice there is a new entries in the `meta:extends` section for `profile-person-details`, `profile-personal-details` and `profile-preferences-details`.
 
 1. We would also like our schema to capture information related to a loyalty program. There is no out-of-the-box loyalty mixin, so will create a new mixin of our own. The Loyalty mixin defines a loyalty field that can now be reused in any Profile-based schema. Select the `XDM: Create Loyalty Mixin` and take a look at the Body tab to see the JSON for our Loyalty mixin:
 
-   ![](images/Lesson_1_schema_13.png)
+   ![](assets/Lesson_1_schema_13.png)
 
    Click `Send`.
 
-   ![](images/Lesson_1_schema_14.png)
+   ![](assets/Lesson_1_schema_14.png)
 
    In the response section you will the ID of your newly created mixin. The ID of the mixin will be stored in an environment variable in postman which will be used in our next step.
 
 1. Select `XDM: Add Loyalty Mixin to Custom Profile Schema`. The following API call will update the simple profile schema to include the Loyalty mixin. The body of the request includes the "MIXIN_ID" of the newly created Loyalty mixin.
 
-   ![](images/Lesson_1_schema_15.png)
+   ![](assets/Lesson_1_schema_15.png)
 
 1. Now select `XDM: Get Custom Profile Schema` so we can lookup the schema and see the changes that have been made to the schema definition.
 
-   ![](images/Lesson_1_schema_17.png)
+   ![](assets/Lesson_1_schema_17.png)
 
    You'll notice there is a new mixin in the `meta:extends` section.
 
 1. Now we need to make the "address" field within the personalEmail mixin an identity so that values for that field are added to the identity graph. To do this we need to create an identity descriptor that references the "personalEmail.address" field and defines the details of the identity that the email address data represents. This identity descriptor can be added for multiple fields to define as an key field to identify schema data for Unified Profile. In our case, we are only adding one, and making sure to mark it as the primary identifier. Select `XDM: Create Identify Descriptor` and look at the structure of the descriptor on the body tag:
 
-   ![](images/Lesson_1_schema_18.png)
+   ![](assets/Lesson_1_schema_18.png)
 
    Click `Send`.
 
-   ![](images/Lesson_1_schema_19.png)
+   ![](assets/Lesson_1_schema_19.png)
 
 1. When creating schema, it's also possible to enable a schema for Unified Profile, one of Experience Platform's most useful features. In fact, for a dataset to be ingested into the Unified Profile, its underlying schema must be enabled for Unified Profile aswell. To enable this we need to add "union" to the "meta:immutableTags" property of the schema. Select `XDM: Enable Schema for Unified Profile`.
 
-   ![](images/Lesson_1_schema_20.png)
+   ![](assets/Lesson_1_schema_20.png)
 
    Click `Send`.
 
-   ![](images/Lesson_1_schema_21.png)
+   ![](assets/Lesson_1_schema_21.png)
 
    Your completed profile-based schema, `L778+[AccountID]_Customers_Schema`, with Unified Profile enabled is now ready for batch data ingestion of user profile data.
 
