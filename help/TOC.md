@@ -1,6 +1,6 @@
 ---
 cloud: experience-cloud
-product: platform
+product: adobe experience platform
 user-guide-title: Adobe Experience Platform Tutorials
 solution-title: Documentation
 solution-hub-url: https://www.adobe.io/apis/experienceplatform/home.html
@@ -9,7 +9,8 @@ getting-started-url: https://experienceleague.adobe.com
 tutorials-title: Tutorials
 tutorials-url: /content/help/en/platform-learn/tutorials/overview.html
 audience: end-user
-user-guide: null
+user-guide: Adobe Experience Platform Learn
+
 ---
 
 # Adobe Experience Platform Tutorials {#tutorials}
