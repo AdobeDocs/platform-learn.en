@@ -20,13 +20,13 @@ user-guide: null
   + [Create Encryption Keys](set-up-the-environment/create-the-encryption-keys.md)
   + [Create the Integration in Adobe I/O](set-up-the-environment/create-the-integration.md)
   + [Configure Postman](set-up-the-environment/configure-postman.md)
-+ [Ingest Data](#ingest-data)
++ Ingest Data{#ingest-data}
   + [Create a Schema](ingest-data/create-a-schema.md)
   + [Ingest Batch Data](ingest-data/ingest-batch-data.md)
   + [Ingest Streaming Data](ingest-data/ingest-streaming-data.md)
   + [Create Merge Policies](ingest-data/create-merge-policies.md)
   + [Label for Governance and DULE](ingest-data/label-for-governance-and-dule.md)
-+ [Use the Data](#use-data)
++ Use Data{#use-data}
   + [Create Segments](use-data/create-segments.md)
   + [Use Segments](use-data/use-segments.md)
   * [Query the Data](use-data/query-the-data.md)
