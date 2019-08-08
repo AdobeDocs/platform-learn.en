@@ -27,33 +27,33 @@ Maybe organize by the UI labels:
 
 1. Start POSTMan
 
-   ![](assets/postman.png)
+   ![](../assets/postman.png)
 
 1. Click the `Import` button on the top left.
 
-   ![](assets/postman_import.png)
+   ![](../assets/postman_import.png)
 
    Select the [L778.postman_collection.json](/resources/L778.postman_collection.json) collection file from this repository.
 
 1. Next we need to import our environment. Click on the settings logo
 
-   ![](assets/postman_settings.png)
+   ![](../assets/postman_settings.png)
 
    To bring up the **Manage Environments** dialog.
 
-   ![](assets/postman_manage_env.png)
+   ![](../assets/postman_manage_env.png)
 
 1. Then click on `Import`
 
-   ![](assets/postman_import_env.png)
+   ![](../assets/postman_import_env.png)
 
 1. Select the [L778.postman_environment.json](/resources/L778.postman_environment.json) file to import the environment.
 
-   ![](assets/postman_after_env_import.png)
+   ![](../assets/postman_after_env_import.png)
 
 1. Now click on the newly imported `L778 - Environment`.
 
-   ![](assets/postman_set_env.png)
+   ![](../assets/postman_set_env.png)
 
 1. Fill out the values for:
 
@@ -78,29 +78,29 @@ Maybe organize by the UI labels:
 
    Paste the contents of the clipboard into the `secret`, include the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` lines up to the last `-`. When you paste the contents of the clipboard into POSTman you may end up with an extra new line character.
 
-   ![](assets/private_key_bad.png)
+   ![](../assets/private_key_bad.png)
 
    Make sure you delete this character as it is not required and will cause problems with authentication.
 
-   ![](assets/private_key_good.png)
+   ![](../assets/private_key_good.png)
 
 1. Click `Update` and close the `Manage Environments` dialog.
 
 1. Now make sure you select the `L778 - Environment` from the environments drop down at the top right of POSTMan.
 
-   ![](assets/postman_experience_platform_env.png)
+   ![](../assets/postman_experience_platform_env.png)
 
 1. After all this setup you are now ready to generate an JWT and bearer token to interact with Adobe I/O. In order to make this process easier we'll be using an Adobe I/O Runtime action.
 
    From our newly imported `L778` collection, open `Lesson 0` and click on `Adobe I/O Runtime: Generate Auth`. Then click on the body tab:
 
-   ![](assets/postman_auth_body.png)
+   ![](../assets/postman_auth_body.png)
 
    All of that work you did to setup the environment has been put to good use. Each POSTMan call will take advantage of these values.
 
 1. Now click `Send` and scroll down to the response section:
 
-   ![](assets/postman_auth_response.png)
+   ![](../assets/postman_auth_response.png)
 
    That JSON response includes an `access_token` which is the Bearer token used to authenticate with Adobe I/O. The POSTMan call will save this value in an environment variable for future use.
 
@@ -110,35 +110,35 @@ Maybe organize by the UI labels:
 1.  Unzip the `Luma-local.zip` file and make note of which directory you extract the content to.
 1.  Start the Fenix web server.
 
-    ![](assets/start-fenix.png)
+    ![](../assets/start-fenix.png)
 
 1.  Select the `Web Servers` menu and click `New`
 
-    ![](assets/new-server.png)
+    ![](../assets/new-server.png)
 
 1.  Use `Luma` as descriptive name.
 
-    ![](assets/luma.png)
+    ![](../assets/luma.png)
 
 1.  Click on the folder in the `Directory` input field. Then navigate the file dialog to the directory you unzipped the `Luma-local` folder, for the lab machines it should be `Desktop/resources/Luma-local`, highlight it and click `Select`.
 
-    ![](assets/select-folder.png)
+    ![](../assets/select-folder.png)
 
 1.  Click `Create`.
 
-    ![](assets/create.png)
+    ![](../assets/create.png)
 
 1.  Click on the `Play` button to start the server.
 
-    ![](assets/click-start.png)
+    ![](../assets/click-start.png)
 
 1.  Now your Luma site should be ready to be browsed.
 
-    ![](assets/server-started.png)
+    ![](../assets/server-started.png)
 
 1)  Navigate to [http://luma.com](http://luma.com) to test the web server. You should see the following:
 
-    ![](assets/not-localhost.png)
+    ![](../assets/not-localhost.png)
 
 ## Lesson 0 - Wrap
 
