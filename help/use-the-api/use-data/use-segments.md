@@ -1,4 +1,4 @@
-# [BONUS] Lesson 5 - Segmentation: Segment the Unified Profile
+# BONUS Lesson 5 - Segmentation: Segment the Unified Profile
 
 _NOTE: This section is bonus material and can be completed within this lab, if you have extra time._
 
