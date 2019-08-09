@@ -35,4 +35,4 @@ user-guide: Adobe Experience Platform Learn
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](identities/understanding-identity-and-identity-graphs.md)
 + API{#use-the-api}
-+ [Using the Platform API Tutorial](use-the-api/overview.md)
+  + [Using the Platform API Tutorial](use-the-api/overview.md)
