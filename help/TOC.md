@@ -34,4 +34,5 @@ user-guide: Adobe Experience Platform Learn
   + [Create Dynamic Segments](segments/create-dynamic-segments.md)
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](identities/understanding-identity-and-identity-graphs.md)
-+ [Using the Platform API](use-the-api/overview.md)
++ API{#use-the-api}
++ [Using the Platform API Tutorial](use-the-api/overview.md)
