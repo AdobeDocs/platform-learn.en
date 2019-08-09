@@ -26,7 +26,7 @@ After completing this tutorial you will be able to:
 >!NOTE
 > A similar, user interface-driven tutorial is also available for Experience Platform:
 >
-> * [Using the Adobe Experience Platform Interface](#)
+> * [Using the Adobe Experience Platform Interface](overview.md)
 
 ## About Adobe Experience Platform
 
@@ -44,4 +44,4 @@ Adobe Experience Platform enables Luma to understand its users via Unified Profi
 
 Let's get started!
 
-[Next "Do this thing" >](#)
+[Next "Do this thing" >](set-up-the-environment/assign-user-permissions.md)

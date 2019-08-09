@@ -2,7 +2,7 @@
 
 ## Objective
 
-- Learn how to query Profile and Experience Events from the Unified Profile
+Learn how to query Profile and Experience Events from the Unified Profile
 
 ## Lesson Context
 
@@ -10,23 +10,23 @@ Much of the value of having all our data integrated with the Adobe Experience Pl
 
 ## Lesson Resources
 
-- Make sure to have the ECID copied from the end of Lesson 3
+Make sure to have the ECID copied from the end of Lesson 3
 
 ## Exercise 4.1 - Querying Unified Profiles via the API
 
 1. Go to Postman, and under the `Lesson 4` collection find the `Behavioral Data Point Lookup` call. find the `entityId` Field and paste your copied ECID here from the clipboard. Make sure that the `entityIdNS` field is set to "ecid". Send the `GET` call.
 
-   ![](images/launch-ecid-lookup-1.png)
+   ![](../assets/launch-ecid-lookup-1.png)
 
 1. You should get back a list of all ExperienceEvents associated with your ECID - browsing the homepage and the signup page. Take a look, your streaming data is now in Experience Platform!
 
-   ![](images/launch-ecid-lookup-2.png)
+   ![](../assets/launch-ecid-lookup-2.png)
 
 1. This data is now in Experience Platform! In addition, it's now been ingested into the Unified Profile, since we tagged it for Unified Profile when creating our dataset back in Lesson 2. To confirm this in the API since we're still in Postman, you can take the ECID that you used in the last step and do a similar call with the `GET` call for `Unified Profile Lookup`. You will then be able to see your full Unified Profile associated with your ECID - your sign-up data for Profile data should now be available as a profile view.
 
    _NOTE: It may take up to 5 minutes for the Unified Profile data to refresh and show your profile data_
 
-   ![](images/launch-unifiedprofile-1.png)
+   ![](../assets/launch-unifiedprofile-1.png)
 
 ## Lesson 4 Wrap
 
