@@ -17,8 +17,7 @@ user-guide: null
 + [Overview](overview.md)
 + Setup the Environment{#set-up-the-environment}
   + [Get Access to Platform](set-up-the-environment/assign-user-permissions.md)
-  + [Create Encryption Keys](set-up-the-environment/create-the-encryption-keys.md)
-  + [Create the Integration in Adobe I/O](set-up-the-environment/create-the-integration.md)
+  + [Create the Adobe I/O Integration](set-up-the-environment/create-the-adobe-io-integration.md)
   + [Configure Postman](set-up-the-environment/configure-postman.md)
 + Ingest Data{#ingest-data}
   + [Create a Schema](ingest-data/create-a-schema.md)

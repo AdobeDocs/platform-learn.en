@@ -1,19 +1,19 @@
 # Assign User Permissions
 
-In this lesson you will get the user- and developer-level access to your organization's Platform account.
+In this lesson you will assign yourself user- and developer-level access to your organization's Experience Platform account. If you already have this level of access, you can proceed to the next lesson.
 
 ## Prerequisites
- 
- In order to complete this lesson, your organization must be provisioned for Platform. Also, if you do not already have user- and developer-level access to your organization's Platform account, you will need Administrator-level access to the organization or request an administrator
+
+In order to complete this lesson, your organization must be provisioned for Experience Platform and you must have an Adobe Id. Also, a System Administrato for your Adobe solutions will need to complete these steps. If you don't have System Administrator access, reach out to one of your organization's System Administrators and ask them to give you access following the steps below.
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
-* Assign users access to Platform User Interface
-* Assign users access to Platform API
+* Assign user-level access to Platform so users can access the Platform User Interface
+* Assign developer-level access to Platform so users can use the Platform API
 
-## Check if you already have access
+## Unsure if you already have access?
 
 ### Confirm User-level Access
 
@@ -50,3 +50,4 @@ After logging in, if you land on the Platform Home screen and are able to select
 
   ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/access-ioConsoleCreateAPlatformIntegration.png)
 
+[Next "Create the Encryption Keys" >](create-the-adobe-io-integration.md)
