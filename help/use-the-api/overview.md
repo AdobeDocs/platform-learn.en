@@ -10,16 +10,16 @@ doc-type: use
 
 _Using the Adobe Experience Platform API_ is the perfect starting point for developers who want to learn how to use the Experience Platform API to build rich applications to power their digital marketing.
 
-Each lesson provides provides an overview of the API capabilities as well as step-by-step instructions so you can successfully make API requests.
+Each lesson provides  an overview of the API capabilities as well as step-by-step instructions so you can successfully make API requests.
 
 After completing this tutorial you will be able to:
 
-* Assign Developer and User Permissions so you can use the Platform API
+* Assign user-level and developer-level permissions to allow access to the Platform UI and API
 * Create Public and Private keys
 * Create the Platform Integration in the Adobe I/O Console
 * Define and select an XDM Schema
 * Ingest sample data in XDM format into Experience Platform
-* Understand what can be done with XDM data and Unified Profiles
+* Understand what can be done with XDM data and Realtime Customer Profiles
 * Use Experience Platform Launch to stream data from a webpage into Platform
 * Segment profiles created in the Unified Profile Service based off ingested data
 
@@ -31,7 +31,7 @@ After completing this tutorial you will be able to:
 
 ## About Adobe Experience Platform
 
-Adobe Experience Platform is the most powerful, flexible, and ]open system on the market for building and managing complete solutions that drive customer experiences. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences.
+Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experiences. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences.
 
 Experience Platform was built API-first, exposing the full functionality of the system to developers and supporting the easy integration of enterprise solutions using familiar tools. Experience Platform also supports partners to build and integrate their own products and technologies as needed.
 
@@ -41,7 +41,7 @@ In these lessons, you will learn the Platform API from the perspective of Luma, 
 
 Adobe Experience Platform enables Luma to understand its users via Unified Profile, by bringing in existing customer profiles through batch ingestion, creating profiles and adding real-time behavioral data through streaming ingestion, and managing those Unified Profiles using the segmentation engine. All of this data helps to hydrate the Unified Profile, giving Luma a full real-time view of their customers.
 
-You will use your own Platform account and we will provide a Postman collection and other materials to get you started. Postman is a widely used tool for interacting with APIs and was chosen for this tutorial as a "common denominator" environment for learning the API. Once you are comfortable with the API, can then incorporate them as needed into your own custom environment.
+You will use your own Platform account and a Postman collection provided by Adobe to get started. Postman is a widely used tool for interacting with APIs and was chosen for this tutorial as a "common denominator" environment for learning the API. Once you are comfortable with the API, can then incorporate them as needed into your own custom environment.
 
 ## Pre-requisites
 

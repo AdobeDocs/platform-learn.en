@@ -1,4 +1,6 @@
-# Exercise 0.2 - Authenticate via POSTMan
+# Configure Postman
+
+## Exercise 0.2 - Authenticate via POSTMan
 
 * Explain all of the environment variables
 * Explain all of the calls in the collection
