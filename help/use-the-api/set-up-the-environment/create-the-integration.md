@@ -25,27 +25,27 @@ An integration can be subscribed to one or more services. In many cases, you wil
 
 1. You will get a response similar to the following which prompts you to enter some information about yourself:
 
+    ```shell
+    Generating a 2048 bit RSA private key
+    .................+++
+    .......................................+++
+    writing new private key to 'private.key'
+    -----
+    You are about to be asked to enter information that will be incorporated
+    into your certificate request.
+    What you are about to enter is what is called a Distinguished Name or a DN.
+    There are quite a few fields but you can leave some blank
+    For some fields there will be a default value,
+    If you enter '.', the field will be left blank.
+    -----
+    Country Name (2 letter code) []:
+    State or Province Name (full name) []:
+    Locality Name (eg, city) []:
+    Organization Name (eg, company) []:
+    Organizational Unit Name (eg, section) []:
+    Common Name (eg, fully qualified host name) []:
+    Email Address []:
     ```
-   Generating a 2048 bit RSA private key
-   .................+++
-   .......................................+++
-   writing new private key to 'private.key'
-   -----
-   You are about to be asked to enter information that will be incorporated
-   into your certificate request.
-   What you are about to enter is what is called a Distinguished Name or a DN.
-   There are quite a few fields but you can leave some blank
-   For some fields there will be a default value,
-   If you enter '.', the field will be left blank.
-   -----
-   Country Name (2 letter code) []:
-   State or Province Name (full name) []:
-   Locality Name (eg, city) []:
-   Organization Name (eg, company) []:
-   Organizational Unit Name (eg, section) []:
-   Common Name (eg, fully qualified host name) []:
-   Email Address []:
-   ```
 
 After entering the information two files will be generated: `certificate_pub.crt` and `private.key` in the same directory from which you ran the `openssl` command.
 
@@ -77,13 +77,7 @@ Your private key file named `private.key` will be used later to sign your JWT to
 1. Click **[!UICONTROL Continue]**
  ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/access-ioConsoleCreateAPlatformIntegration.png)
 
-
-1. From this page we want to create a New Integration.
-
-   ![New integration](../assets/new_integration.png)
-
 1. You will then be prompted to Access an API or to Receive near-real-time events. We will be accessing APIs so select Access an API and then Continue.
-
    ![New integration 1](../assets/new_integration1.png)
 
 1. The drop-down menu on the top right of the screen is where you would switch your organization if your account is tied to multiple. We are selecting `Summit Platform Lab 03` and `Experience Platform API` under `Adobe Experience Platform`.
@@ -92,10 +86,10 @@ Your private key file named `private.key` will be used later to sign your JWT to
 
 1. Fill in your Integration Details. Afterwards, click on Select a File to upload your certificate_pub.crt file we generated in the previous section. Then click on `AEP Summit 2019` to select this product profile. Finally, click Create Integration to finish up the process
 
-   ![New ingtegration 4](../assets/new_integration4.png)
+   ![New integration 4](../assets/new_integration4.png)
 
 1. After creating your integration, you will be able to view the details of your integration. After clicking on Retrieve client Secret your screen should look similar to this.
 
    ![Access values](../assets/access_values.png)
 
-   Copy down the values for {API KEY}, {IMS ORG} which is the Organization ID, and {CLIENT SECRET} as these will be used in the next step.
+Copy down the values for {API KEY}, {IMS ORG} which is the Organization ID, and {CLIENT SECRET} as these will be used in the next step.
