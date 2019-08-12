@@ -78,14 +78,14 @@ Your private key file named `private.key` will be used later to sign your JWT to
  ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/createIntegration-ioConsole-createAPlatformIntegration.png)
 
 1. Name your integration (we recommend including an identifier for your name) F
-1. Add a Descriptiion
+1. Add a Description
 1. Upload your public certificate&mdash;the `certificate_pub.crt` file we generated in the previous section
 1. Click on Adobe Cloud Platform as the [!UICONTROL Product Profile] (or whatever the appropriate Product Profile is setup in your org) <!--when might there be other profiles? depending on the admin setup? when should they be used? -->
 1. Finally, click Create Integration to finish up the process
 
    ![Add integration details](../assets/createIntegration-ioConsole-createIntegration.png)
 
-1. After your integration has been created you will land on a screen like the one pictured below. Click **[!UICONTROL Continue to Integration Details]**, 
+1. After your integration has been created you will land on a screen like the one pictured below. Click **[!UICONTROL Continue to Integration Details]**,
 
    ![Integration created--continue to integration details](../assets/createIntegration-ioConsole-continueToDetails.png)
 1. You will be able to view the details of your integration. After clicking on Retrieve client Secret your screen should look similar to this (without the blurring!):
