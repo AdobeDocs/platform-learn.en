@@ -4,50 +4,43 @@ In this lesson you will assign yourself user- and developer-level access to your
 
 ## Prerequisites
 
-In order to complete this lesson, your organization must be provisioned for Experience Platform and you must have an Adobe Id. Also, a System Administrato for your Adobe solutions will need to complete these steps. If you don't have System Administrator access, reach out to one of your organization's System Administrators and ask them to give you access following the steps below.
+In order to complete this lesson, your organization must be provisioned for Experience Platform and you must have an Adobe Id. Also, a System Administrator for your Adobe solutions will need to complete these steps. If you are not a System Administrator, reach out to one of your organization's System Administrators and ask them to give you access following the steps below.
+<!--what is the best way to find out who is a System Administrator is? Also, is there a "Platform Administrator" role and could that person do this?-->
 
 ## Learning Objectives
 
-At the end of this lesson, you will be able to:
+At the end of this lesson, a System Administrator will be able to:
 
 * Assign user-level access to Platform so users can access the Platform User Interface
 * Assign developer-level access to Platform so users can use the Platform API
 
 ## Unsure if you already have access?
 
-### Confirm User-level Access
+### Check User-level Access
 
 1. Go to [https://platform.adobe.com](https://platform.adobe.com)
-1. Enter the email address associated with your Adobe Id
-1. Select the type of account your organization uses for access to Adobe Experience Cloud solutions (Personal or Company)
-1. Enter your password
-
-After logging in, if you land on the Platform Home screen and are able to select the Experience Cloud Organization you are intending to use for this tutorial, congratulations&mdash;you already have User-level access to Platform!
-
+1. Log in using your Adobe Id
+1. If you land on the Platform Home screen and are able to select the Experience Cloud Organization you are intending to use for this tutorial, congratulations&mdash;you already have User-level access to Platform! <!--what does it say if the user doesn't have access?--> If you're unable to get to your organization's Platform home screen, ***reach out to a System Administrator to request user-level access to Platform and repeat these steps again once they have assigned access.***
   ![Platform home screen](../assets/access-platformHome.png)
 
-### Confirm Developer-level Access
+### Check Developer-level Access
 
-1. Go to [https://console.adobe.io](https://console.adobe.io)
-1. Log in, if prompted
-1. If you land on the Adobe I/O Console home screen, click "View Integrations"
+If you think you might already have Developer-level access, try completing the steps in the next lesson. If you are unable to get to the screens in which you configure the Platform API integration, If you're unable to get to your organization's Platform home screen, ***reach out to a System Administrator to request user-level access to Platform and repeat these steps again once they have assigned access.***
 
-  ![Adobe I/O home screen](../assets/access-ioConsoleHome.png)
+## Assign User- and Developer-level access
 
-1. Make sure the Experience Cloud Organization you are intending to use for this tutorial is selected in the dropdown
-1. If the **[!UICONTROL Organization Role]** says "Developer" or "Administrator" that is a good sign
-1. Click New integration
+These steps are for administrators to give people access to Platform. You may manage users differently in your organization and use more granular Product Profiles pictured in these instructions. Feel free to deviate from these instructions as needed to fit your organization's practices, the main thing is that the user must have both user-level and developer-level privileges to Platform in order to use the API and complete this tutorial:
 
-  ![Adobe I/O Integrations screen](../assets/access-ioConsoleIntegrations.png)
+1. Log into the [Admin Console](http://adminconsole.adobe.com)
+1. Confirm you are in the desired Organization
+1. Click on **[!UICONTROL Products]** in the top navigation
+1. Click on **[!UICONTROL Adobe Experience Platform]** in the left navigation
+1. Click on the **[!UICONTROL Product Profile]**
+  ![Admin Console Platform Product Profile](../assets/access-adminConsole-productProfile.png)
+1. On the **[!UICONTROL Users]** tab, click **[!UICONTROL Add User]** and complete flow to give the user user-level privileges
+1. Click on the **[!UICONTROL Developers]** tab and then click **[!UICONTROL Add User]** again and complete flow to give the user developer-level privileges
+  ![Admin Console add a user](../assets/access-adminConsole-addUser.png)
+1. Notify the user and have them confirm their access
+<!--is this step necessary or are notifications automatically sent? -->
 
-1. Make sure **[!UICONTROL Access an API]** is selected
-1. Click **[!UICONTROL Continue]**
-
-  ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/access-ioConsoleCreateANewIntegration.png)
-
-1. Select **[!UICONTROL Experience Platform API]**
-1. Click **[!UICONTROL Continue]**
-
-  ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/access-ioConsoleCreateAPlatformIntegration.png)
-
-[Next "Create the Encryption Keys" >](create-the-adobe-io-integration.md)
+[Next "Create the Adobe I/O Integration" >](create-the-adobe-io-integration.md)
