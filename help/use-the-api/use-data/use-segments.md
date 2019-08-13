@@ -69,8 +69,8 @@ This will help utilize several aspects Luma's customer loyalty program, includin
 
 Now that we've been able to see how to use Adobe Experience Platform's APIs to empower Luma, the opportunities that to understand and utilize the real-time customer profile that Unified Profile offers are numerous. As an API-first built platform, Adobe Experience Platform allows developers to take full control of its features and integrate them into their own solutions as well.
 
-We hope you enjoyed this workshop and that this workbook can serve as a useful reference for you going forward. Please don't hesitate to reach out to one of the Platform team members if you have any questions, and visit our booth at the pavillion to see the many other faces of Adobe Experience Platform!
+We hope you enjoyed this workshop and that this workbook can serve as a useful reference for you going forward. Please don't hesitate to reach out to one of the Platform team members if you have any questions, and visit our booth at the pavilion to see the many other faces of Adobe Experience Platform!
 
 ## Additional Resources
 
-[Adobe Experience Platfrom API Documentation](https://www.adobe.io/apis/experienceplatform/home.html)
+[Adobe Experience Platform API Documentation](https://www.adobe.io/apis/experienceplatform/home.html)

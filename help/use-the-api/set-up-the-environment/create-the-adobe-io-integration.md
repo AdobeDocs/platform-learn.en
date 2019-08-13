@@ -62,34 +62,35 @@ Your private key file named `private.key` will be used later to sign your JWT to
 1. Navigate to the [Adobe I/O Console](https://console.adobe.io/) and sign in with your Adobe ID.
 
 1. From the Adobe I/O Console home screen, click **[!UICONTROL View Integrations]**
-  ![Adobe I/O home screen](../assets/access-ioConsoleHome.png)
+  ![Adobe I/O home screen](../assets/createIntegration-ioConsole-home.png)
 
 1. Make sure the Experience Cloud Organization you are intending to use for this tutorial is selected in the dropdown
 1. Note that with the correct user access privileges assigned in the previous lesson, **[!UICONTROL Organization Role]** should say [!UICONTROL Developer] or [!UICONTROL Administrator].
 1. Click New integration
-  ![Adobe I/O Integrations screen](../assets/access-ioConsoleIntegrations.png)
+  ![Adobe I/O Integrations screen](../assets/createIntegration-ioConsole-integrations.png)
 
 1. Make sure **[!UICONTROL Access an API]** is selected
 1. Click **[!UICONTROL Continue]**
-  ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/access-ioConsoleCreateANewIntegration.png)
+  ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/createIntegration-ioConsole-createANewIntegration.png)
 
 1. Select **[!UICONTROL Experience Platform API]**
 1. Click **[!UICONTROL Continue]**
- ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/access-ioConsoleCreateAPlatformIntegration.png)
+ ![Adobe I/O Create a new integration screen. Select Access an API and click Continue](../assets/createIntegration-ioConsole-createAPlatformIntegration.png)
 
-1. You will then be prompted to Access an API or to Receive near-real-time events. We will be accessing APIs so select Access an API and then Continue.
-   ![New integration 1](../assets/new_integration1.png)
+1. Name your integration (we recommend including an identifier for your name) F
+1. Add a Description
+1. Upload your public certificate&mdash;the `certificate_pub.crt` file we generated in the previous section
+1. Click on Adobe Cloud Platform as the [!UICONTROL Product Profile] (or whatever the appropriate Product Profile is setup in your org) <!--when might there be other profiles? depending on the admin setup? when should they be used? -->
+1. Finally, click Create Integration to finish up the process
 
-1. The drop-down menu on the top right of the screen is where you would switch your organization if your account is tied to multiple. We are selecting `Summit Platform Lab 03` and `Experience Platform API` under `Adobe Experience Platform`.
+   ![Add integration details](../assets/createIntegration-ioConsole-createIntegration.png)
 
-   ![New integration 2](../assets/new_integration2.png)
+1. After your integration has been created you will land on a screen like the one pictured below. Click **[!UICONTROL Continue to Integration Details]**,
 
-1. Fill in your Integration Details. Afterwards, click on Select a File to upload your certificate_pub.crt file we generated in the previous section. Then click on `AEP Summit 2019` to select this product profile. Finally, click Create Integration to finish up the process
+   ![Integration created--continue to integration details](../assets/createIntegration-ioConsole-continueToDetails.png)
+1. You will be able to view the details of your integration. After clicking on Retrieve client Secret your screen should look similar to this (without the blurring!):
+   ![Access values](../assets/createIntegration-ioConsole-details.png)
 
-   ![New integration 4](../assets/new_integration4.png)
+Copy the values for your {API KEY}, {IMS ORG} which is the Organization ID, and {CLIENT SECRET} as these will be used in upcoming lessons.
 
-1. After creating your integration, you will be able to view the details of your integration. After clicking on Retrieve client Secret your screen should look similar to this.
-
-   ![Access values](../assets/access_values.png)
-
-Copy down the values for {API KEY}, {IMS ORG} which is the Organization ID, and {CLIENT SECRET} as these will be used in the next step.
+[Next "Configure Postman" >](configure-postman.md)
