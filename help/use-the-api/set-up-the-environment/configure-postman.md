@@ -1,13 +1,25 @@
 # Configure Postman
 
-## Exercise 0.2 - Authenticate via POSTMan
+In this lesson, you will configure a Postman environment with environment variables from your new integration and a collection of requests provided by Adobe. Postman is a widely used tool for interacting with APIs and was chosen for this tutorial as a "common denominator" environment for learning the API. Once you are comfortable with the API, can then incorporate them as needed into your own custom environment. If you are new to Postman, we're confident you will quickly get up-to-speed. 
 
-* Explain all of the environment variables
-* Explain all of the calls in the collection
-* Explain endpoints
-* seems to be some segments stuff in l778 that isn't in git postman
+## Prerequisites
 
-Establishing your own best practices
+In order to complete this lesson, you need to have Developer-level access to Platform
+
+## Learning Objectives
+
+* Get comfortable using Postman
+* Explain the environment variables
+* Explain the calls in the collection
+* Explain the Platform endpoints
+
+## Download and Install Postman
+
+If you don't already have it, [download and install Postman](https://www.getpostman.com/) on your machine.
+
+## Authenticate via Postman
+
+<!--Establishing your own best practices
 
 Quotes from customers about how they like to work
 
@@ -26,127 +38,72 @@ Maybe organize by the UI labels:
 1. Data Science
    1. Models
    1. Services
-
-1. Start POSTMan
-
-   ![](../assets/postman.png)
+-->
+1. Start Postman
+   ![Start Postman](../assets/postman.png)
 
 1. Click the `Import` button on the top left.
+   ![Click Import](../assets/postman_import.png)
 
-   ![](../assets/postman_import.png)
+   Select the [Check_Streaming_to_Profile.json](https://github.com/adobe/experience-platform-postman-samples/blob/master/Postman%20Collections/Check_Streaming_to_Profile.json) collection file from this repository.
 
-   Select the [L778.postman_collection.json](../assets//L778.postman_collection.json) collection file from this repository.
+1. Next we need to import our environment. Click on the settings icon ![settings icon](../assets/postman_settings.png) to open the **Manage Environments** dialog.
 
-1. Next we need to import our environment. Click on the settings logo
-
-   ![](../assets/postman_settings.png)
-
-   To bring up the **Manage Environments** dialog.
-
-   ![](../assets/postman_manage_env.png)
+   ![Click on the settings icon to open the Manage Environments dialog.](../assets/postman_manage_env.png)
 
 1. Then click on `Import`
 
-   ![](../assets/postman_import_env.png)
+   ![Click on "Import"](../assets/postman_import_env.png)
 
 1. Select the [L778.postman_environment.json](../assets//L778.postman_environment.json) file to import the environment.
 
    ![](../assets/postman_after_env_import.png)
 
-1. Now click on the newly imported `L778 - Environment`.
+1. Now click on the newly imported `Check Streaming to Profile` environment.
 
-   ![](../assets/postman_set_env.png)
+   ![Click on the new environment](../assets/postman_set_env.png)
 
-1. Fill out the values for:
+1. Using the values from the Adobe I/O integration you created in the last lesson, complete the values for the following, putting them **in both the "Initial Values" and the "Current Values" fields.**:
 
    * clientID
    * clientSecret
    * OrgID
    * TechAcctID
 
-   that you generated when you created your **new integration**.
+1. Complete the `ldap` field using your Adobe Id. This field will be used to to uniquely identify the datasets you create. <!--is this all the ldap field is used for? perhaps it should have a friendlier name in the collection-->
 
-   **Fill these out in both the "Initial Values" and the "Current Values" field.**
-
-   **Your AccountID is assigned to you by your computer's label and should appear as L778+###.** Fill out the `ldap` field in Postman with your Account ID (L778+###) so you'll be able to uniquely identify the datasets you create.
-
-1. Copy the contents of the `private.key` and use it as the value for `secret`.
-
-   From the same terminal you ran `openssl`, execute the following command:
+1. Copy the contents of the `private.key` and use it as the value for `secret`.  To copy the contents, from the same terminal you ran `openssl`, execute the following command:
 
    ```shell
    pbcopy < private.key
    ```
 
-   Paste the contents of the clipboard into the `secret`, include the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` lines up to the last `-`. When you paste the contents of the clipboard into POSTman you may end up with an extra new line character.
+   Paste the contents of the clipboard into the `secret` field, include the `-----BEGIN PRIVATE KEY-----` and `-----END PRIVATE KEY-----` lines up to the last `-`. When you paste the contents of the clipboard into Postman you may end up with an extra new line character. Delete this newline character or it will prevent you from making API calls later on.
 
-   ![](../assets/private_key_bad.png)
-
-   Make sure you delete this character as it is not required and will cause problems with authentication.
-
-   ![](../assets/private_key_good.png)
+   ![Private key pasted into Postman](../assets/private_key_good.png)
 
 1. Click `Update` and close the `Manage Environments` dialog.
 
-1. Now make sure you select the `L778 - Environment` from the environments drop down at the top right of POSTMan.
+1. Now make sure you select the `Check Streaming to Profile` from the environments drop down at the top right of Postman.
 
-   ![](../assets/postman_experience_platform_env.png)
+   ![Select the environment](../assets/postman_experience_platform_env.png)
 
-1. After all this setup you are now ready to generate an JWT and bearer token to interact with Adobe I/O. In order to make this process easier we'll be using an Adobe I/O Runtime action.
+1. From our newly imported collection, open `Auth Setup` and click on `INIT: Load Crypto Library for RS256`.<!--need to provide context on what this does. check with Thomas-->
+1. Now you are ready to generate an JWT and bearer token to interact with Adobe I/O. In order to make this process easier we'll be using an Adobe I/O Runtime action. Click on `IMS: JWT Generate + Auth via User Token`. Then click on the body tab:<!--need to provide more context around the JWT token, how long it lasts, etc.-->
 
-   From our newly imported `L778` collection, open `Lesson 0` and click on `Adobe I/O Runtime: Generate Auth`. Then click on the body tab:
+   ![Body tab of the JWT generation request](../assets/postman_auth_body.png)
 
-   ![](../assets/postman_auth_body.png)
-
-   All of that work you did to setup the environment has been put to good use. Each POSTMan call will take advantage of these values.
+   All of that work you did to setup the environment has been put to good use. Each Postman call will take advantage of these values.
 
 1. Now click `Send` and scroll down to the response section:
 
    ![](../assets/postman_auth_response.png)
 
-   That JSON response includes an `access_token` which is the Bearer token used to authenticate with Adobe I/O. The POSTMan call will save this value in an environment variable for future use.
-
-## Exercise 0.3 - Setup Fenix Web Server
-
-1.  Download the [Luma website](../assets//Luma-local.zip).
-1.  Unzip the `Luma-local.zip` file and make note of which directory you extract the content to.
-1.  Start the Fenix web server.
-
-    ![](../assets/start-fenix.png)
-
-1.  Select the `Web Servers` menu and click `New`
-
-    ![](../assets/new-server.png)
-
-1.  Use `Luma` as descriptive name.
-
-    ![](../assets/luma.png)
-
-1.  Click on the folder in the `Directory` input field. Then navigate the file dialog to the directory you unzipped the `Luma-local` folder, for the lab machines it should be `Desktop/resources/Luma-local`, highlight it and click `Select`.
-
-    ![](../assets/select-folder.png)
-
-1.  Click `Create`.
-
-    ![](../assets/create.png)
-
-1.  Click on the `Play` button to start the server.
-
-    ![](../assets/click-start.png)
-
-1.  Now your Luma site should be ready to be browsed.
-
-    ![](../assets/server-started.png)
-
-1)  Navigate to [http://luma.com](http://luma.com) to test the web server. You should see the following:
-
-    ![](../assets/not-localhost.png)
-
-## Lesson 0 - Wrap
+   That JSON response includes an `access_token` which is the Bearer token used to authenticate with Adobe I/O. The Postman call will save this value in an environment variable for future use.
 
 Whew! We are finally ready to start calling the Adobe Experience Platform API's for real. We've run through creating an integration and getting authenticated.
 
 ## Lesson 0 - Additional Resources
 
 * [Authentication Documentation on Adobe I/O](https://www.adobe.io/authentication.html)
-* [Using POSTMan for JWT authentication on Adobe I/O - Adobe Tech Blog](https://medium.com/adobetech/using-postman-for-jwt-authentication-on-adobe-i-o-7573428ffe7f)
+* [Using Postman for JWT authentication on Adobe I/O - Adobe Tech Blog](https://medium.com/adobetech/using-postman-for-jwt-authentication-on-adobe-i-o-7573428ffe7f)
