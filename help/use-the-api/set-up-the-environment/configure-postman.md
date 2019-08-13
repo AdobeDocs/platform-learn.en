@@ -39,15 +39,17 @@ Maybe organize by the UI labels:
    1. Models
    1. Services
 -->
-1. Start Postman
+1. Start Postman. If you are new to Postman, you can opt to create a user account or skip that step to start using the app.
    ![Start Postman](../assets/postman.png)
 
 1. Click the `Import` button on the top left.
    ![Click Import](../assets/postman_import.png)
 
-   Select the [Check_Streaming_to_Profile.json](https://github.com/adobe/experience-platform-postman-samples/blob/master/Postman%20Collections/Check_Streaming_to_Profile.json) collection file from this repository.
+1. Select `Import From Link` and enter this URL `https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/Postman%20Collections/Check_Streaming_to_Profile.json` (Full Github location is https://github.com/adobe/experience-platform-postman-samples/blob/master/Postman%20Collections/Check_Streaming_to_Profile.json)
 
-1. Next we need to import our environment. Click on the settings icon ![settings icon](../assets/postman_settings.png) to open the **Manage Environments** dialog.
+1. Click on the `Collections` tab and you should see the `Check Streaming to Profile` collection you just added.
+1. Next we need to import our environment. Download the  https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/postman/Adobe%20Experience%20Platform.postman_environment.json file. (Full Github location is https://github.com/adobe/experience-platform-postman-samples/blob/master/postman/Adobe%20Experience%20Platform.postman_environment.json)
+1. Click on the settings icon ![settings icon](../assets/postman_settings.png) to open the **Manage Environments** dialog.
 
    ![Click on the settings icon to open the Manage Environments dialog.](../assets/postman_manage_env.png)
 
@@ -55,11 +57,11 @@ Maybe organize by the UI labels:
 
    ![Click on "Import"](../assets/postman_import_env.png)
 
-1. Select the [L778.postman_environment.json](../assets//L778.postman_environment.json) file to import the environment.
+1. Upload the json file you just downloaded
 
    ![](../assets/postman_after_env_import.png)
 
-1. Now click on the newly imported `Check Streaming to Profile` environment.
+1. Now click on the newly imported `Adobe Experience Platform` environment.
 
    ![Click on the new environment](../assets/postman_set_env.png)
 
@@ -89,7 +91,7 @@ Maybe organize by the UI labels:
    ![Select the environment](../assets/postman_experience_platform_env.png)
 
 1. From our newly imported collection, open `Auth Setup` and click on `INIT: Load Crypto Library for RS256`.<!--need to provide context on what this does. check with Thomas-->
-1. Now you are ready to generate an JWT and bearer token to interact with Adobe I/O. In order to make this process easier we'll be using an Adobe I/O Runtime action. Click on `IMS: JWT Generate + Auth via User Token`. Then click on the body tab:<!--need to provide more context around the JWT token, how long it lasts, etc.-->
+1.  Now you are ready to generate an JWT and bearer token to interact with Adobe I/O. In order to make this process easier we'll be using an Adobe I/O Runtime action. Click on `IMS: JWT Generate + Auth via User Token`. Then click on the body tab:<!--need to provide more context around the JWT token, how long it lasts, etc.-->
 
    ![Body tab of the JWT generation request](../assets/postman_auth_body.png)
 
