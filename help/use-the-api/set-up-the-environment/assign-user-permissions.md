@@ -21,7 +21,7 @@ At the end of this lesson, a System Administrator will be able to:
 1. Go to [https://platform.adobe.com](https://platform.adobe.com)
 1. Log in using your Adobe Id
 1. If you land on the Platform Home screen and are able to select the Experience Cloud Organization you are intending to use for this tutorial, congratulations&mdash;you already have User-level access to Platform! <!--what does it say if the user doesn't have access?--> If you're unable to get to your organization's Platform home screen, ***reach out to a System Administrator to request user-level access to Platform and repeat these steps again once they have assigned access.***
-  ![Platform home screen](../assets/access-platformHome.png)
+  ![Platform home screen](../assets/access-platform-home.png)
 
 ### Check Developer-level Access
 
