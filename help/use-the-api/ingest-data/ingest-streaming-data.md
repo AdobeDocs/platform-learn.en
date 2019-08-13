@@ -25,7 +25,7 @@ Make sure that Fenix webserver is running with luma.com. Navigate to [http://lum
 
    ![](../assets/create-ee-dataset-1a.png)
 
-1. Next, we need to define the schema identity decriptor in order to tell Experience Platform what the main identifying field for data is in this schema, which here will be the ECID, or Experience Cloud ID that a user is auto-assigned within their browser session. Click `Define Identity Descriptor` and send the POST call.
+1. Next, we need to define the schema identity descriptor in order to tell Experience Platform what the main identifying field for data is in this schema, which here will be the ECID, or Experience Cloud ID that a user is auto-assigned within their browser session. Click `Define Identity Descriptor` and send the POST call.
 
    ![](../assets//create-ee-dataset-1b.png)
 
@@ -115,7 +115,7 @@ Make sure that Fenix webserver is running with luma.com. Navigate to [http://lum
 
 ## Exercise 3.5 - Sending ExperienceEvent Data (behavioral data)
 
-1. Now, we have our streaming endpoint from our Luma site into Experience Platform defined and ready to go. The next step is to create triggers that will make actions happen on our Luma site. Go to the `Rules` tab. Take alook at the existing rules - we have two defined here. Look into `Page Visit`.
+1. Now, we have our streaming endpoint from our Luma site into Experience Platform defined and ready to go. The next step is to create triggers that will make actions happen on our Luma site. Go to the `Rules` tab. Take a look at the existing rules - we have two defined here. Look into `Page Visit`.
 
    ![](../assets/launch-setup-14.png)
 
@@ -175,7 +175,7 @@ Make sure that Fenix webserver is running with luma.com. Navigate to [http://lum
 
    ![](../assets/launch-setup-23.png)
 
-1. Click `Keep Changes` on the action, and thten `Save to Library and Build` on the rule. Click on the `Publishing` tab to watch the status of our build and see it succeed.
+1. Click `Keep Changes` on the action, and then `Save to Library and Build` on the rule. Click on the `Publishing` tab to watch the status of our build and see it succeed.
 
    ![](../assets/launch-setup-24.png)
 
@@ -220,3 +220,41 @@ The streaming capabilities of data into Experience Platform are not limited to w
 ## Lesson 3 - Additional Resources
 
 [Getting Started with Adobe Launch](https://docs.adobelaunch.com/getting-started)
+
+## Exercise 0.3 - Setup Fenix Web Server
+
+1.  Download the [Luma website](../assets//Luma-local.zip).
+1.  Unzip the `Luma-local.zip` file and make note of which directory you extract the content to.
+1.  Start the Fenix web server.
+
+    ![](../assets/start-fenix.png)
+
+1.  Select the `Web Servers` menu and click `New`
+
+    ![](../assets/new-server.png)
+
+1.  Use `Luma` as descriptive name.
+
+    ![](../assets/luma.png)
+
+1.  Click on the folder in the `Directory` input field. Then navigate the file dialog to the directory you unzipped the `Luma-local` folder, for the lab machines it should be `Desktop/resources/Luma-local`, highlight it and click `Select`.
+
+    ![](../assets/select-folder.png)
+
+1.  Click `Create`.
+
+    ![](../assets/create.png)
+
+1.  Click on the `Play` button to start the server.
+
+    ![](../assets/click-start.png)
+
+1.  Now your Luma site should be ready to be browsed.
+
+    ![](../assets/server-started.png)
+
+1)  Navigate to [http://luma.com](http://luma.com) to test the web server. You should see the following:
+
+    ![](../assets/not-localhost.png)
+
+## Lesson 0 - Wrap
