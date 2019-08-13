@@ -17,7 +17,7 @@ In order to complete this lesson, you need to have Developer-level access to Pla
 
 If you don't already have it, [download and install Postman](https://www.getpostman.com/) on your machine.
 
-## Authenticate via Postman
+## Add the Postman Collection
 
 <!--Establishing your own best practices
 
@@ -45,25 +45,32 @@ Maybe organize by the UI labels:
 1. Click the `Import` button on the top left.
    ![Click Import](../assets/postman_import.png)
 
-1. Select `Import From Link` and enter this URL `https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/Postman%20Collections/Check_Streaming_to_Profile.json` (Full Github location is https://github.com/adobe/experience-platform-postman-samples/blob/master/Postman%20Collections/Check_Streaming_to_Profile.json)
+1. Select `Import From Link` and enter this URL `https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/Postman%20Collections/Check_Streaming_to_Profile.json`
 
 1. Click on the `Collections` tab and you should see the `Check Streaming to Profile` collection you just added.
-1. Next we need to import our environment. Download the  https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/postman/Adobe%20Experience%20Platform.postman_environment.json file. (Full Github location is https://github.com/adobe/experience-platform-postman-samples/blob/master/postman/Adobe%20Experience%20Platform.postman_environment.json)
-1. Click on the settings icon ![settings icon](../assets/postman_settings.png) to open the **Manage Environments** dialog.
+
+## Add a Postman Environment
+
+The sample requests in our Collection refer to numerous global variables. We need to create a Postman Environment which will store the values of these global variables so we can successfully make the API requests. The Environment will store details of our Adobe I/O Integration, among other values. If you are a user who supports multiple Platform organizations, you can create an environment for each organization you support and use the same Collection to make Platform requests.
+
+1. Download the [Adobe Experience Platform Postman environment json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/postman/Adobe%20Experience%20Platform.postman_environment.json).
+1. In Postman, click on the settings icon ![settings icon](../assets/postman_settings.png) to open the **Manage Environments** dialog.
 
    ![Click on the settings icon to open the Manage Environments dialog.](../assets/postman_manage_env.png)
 
-1. Then click on `Import`
+1. Click on `Import`
+
+1. Click on `Choose Fles` and 
 
    ![Click on "Import"](../assets/postman_import_env.png)
 
-1. Upload the json file you just downloaded
+1. Select the `Adobe Experience Platform.postman_environment.json` file you just downloaded
+
+1. Click `Add`
 
    ![](../assets/postman_after_env_import.png)
 
-1. Now click on the newly imported `Adobe Experience Platform` environment.
-
-   ![Click on the new environment](../assets/postman_set_env.png)
+1. Click on the newly created `Adobe Experience Platform` environment from the dropdown on the top right
 
 1. Using the values from the Adobe I/O integration you created in the last lesson, complete the values for the following, putting them **in both the "Initial Values" and the "Current Values" fields.**:
 
@@ -72,7 +79,7 @@ Maybe organize by the UI labels:
    * OrgID
    * TechAcctID
 
-1. Complete the `ldap` field using your Adobe Id. This field will be used to to uniquely identify the datasets you create. <!--is this all the ldap field is used for? perhaps it should have a friendlier name in the collection-->
+   ![Click on the new environment](../assets/postman_set_env.png)
 
 1. Copy the contents of the `private.key` and use it as the value for `secret`.  To copy the contents, from the same terminal you ran `openssl`, execute the following command:
 
@@ -84,9 +91,11 @@ Maybe organize by the UI labels:
 
    ![Private key pasted into Postman](../assets/private_key_good.png)
 
+1. Complete the `ldap` field using your Adobe Id. This field will be used to to uniquely identify the datasets you create. <!--is this all the ldap field is used for? perhaps it should have a friendlier name in the collection-->
+
 1. Click `Update` and close the `Manage Environments` dialog.
 
-1. Now make sure you select the `Check Streaming to Profile` from the environments drop down at the top right of Postman.
+1. Now make sure you select the `Adibe Experience Platform` from the environments drop down at the top right of Postman.
 
    ![Select the environment](../assets/postman_experience_platform_env.png)
 
@@ -108,4 +117,5 @@ Whew! We are finally ready to start calling the Adobe Experience Platform API's 
 ## Lesson 0 - Additional Resources
 
 * [Authentication Documentation on Adobe I/O](https://www.adobe.io/authentication.html)
+* [JWT (Service Account) Authentication](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md)
 * [Using Postman for JWT authentication on Adobe I/O - Adobe Tech Blog](https://medium.com/adobetech/using-postman-for-jwt-authentication-on-adobe-i-o-7573428ffe7f)
