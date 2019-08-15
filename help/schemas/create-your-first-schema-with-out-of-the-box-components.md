@@ -2,10 +2,13 @@
 title: Create your first Schema with out-of-the-box components
 seo-title: Create your first Schema with out-of-the-box components in Adobe Experience Platform
 description: 
+seo-description:
+feature: xdm
+topics:
+kt: kt-2697
 audience: architect
-difficulty: 1
-author: Daniel Wright
-doc-type: use
+doc-type: video
+activity: setup
 ---
 
 # Create your first Schema with out-of-the-box components

@@ -1,14 +1,19 @@
 ---
 title: Create your own Mixins and Classes
 seo-title: Create your own Mixins and Classes in Adobe Experience Platform 
-description: 
+description: Mixins are reusable components that define fields in XDM schemas. Adobe Experience Platform includes many standard mixins and you can also define your own mixins to capture data for your business's use case.
+seo-description:
+feature: xdm
+topics:
+kt: kt-2698
 audience: architect
-difficulty: 3
-author: Daniel Wright
-doc-type: use
+doc-type: video
+activity: setup
 ---
 
 # Create your own Mixins and Classes
+
+Mixins are reusable components that define fields in XDM schemas. Adobe Experience Platform includes many standard mixins and you can also define your own mixins to capture data for your business's use case.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27013?quality=12)
 
