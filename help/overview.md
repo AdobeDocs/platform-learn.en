@@ -10,17 +10,17 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+* **[Understanding Streaming Ingestion (Video)](datasets/understanding-streaming-ingestion.md)**
+    <br>
+    *Stream data to the Real-time Customer Profile in under a second.*
+
+* **[Build Segments Across Classes and Include Segment Context (Video)](segments/create-segments-across-classes-and-include-segment-context.md)**
+    <br>
+    *Create segments that span multiple XDM classes and include additional context about the segment.*
+
 * **[Understanding Identity and Identity Graphs (Video)](identities/understanding-identity-and-identity-graphs.md)**
     <br>
     *Learn about the rich set of Identity resolution capabilities, which link disconnected identities to create a unified profile.*
-
-* **[Create Dynamic Segments (Video)](segments/create-dynamic-segments.md)**
-    <br>
-    *Learn how to build segments using dynamic attributes to scale your personalization.*
-
-* **[Create Segments (Video)](segments/create-segments.md)**
-    <br>
-    *Learn how to build audience segments with the new segment builder.*
 
 ## Staff Picks
 
