@@ -20,5 +20,6 @@ Data ingestion gives you the ability to bring your data together into one open a
 ## Additional Resources
 
 * [Understanding Data Ingestion video](understanding-data-ingestion.md)
+* [Understanding Streaming Ingestion video](understanding-streaming-ingestion.md)
 * [Data Ingestion documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion.html)
 * [Configuring a Dataset with Platform API tutorial](https://www.adobe.com/go/data-configure-dataset-en)

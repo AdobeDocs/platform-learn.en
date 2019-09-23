@@ -16,6 +16,7 @@ audience: all
   + [Create your own Mixins and Classes](schemas/create-your-own-mixins-and-classes.md)
 + Data Ingestion{#data-ingestion}
   + [Understanding Data Ingestion](datasets/understanding-data-ingestion.md)
+  + [Understanding Streaming Ingestion](datasets/understanding-streaming-ingestion.md)
   + [Create Datasets and Ingest Data](datasets/create-datasets-and-ingest-data.md)
 + Profiles{#profiles}
   + [Understanding the Real-time Customer Profile](profiles/understanding-the-real-time-customer-profile.md)
@@ -23,5 +24,6 @@ audience: all
 + Segments{#segments}
   + [Create Segments](segments/create-segments.md)
   + [Create Dynamic Segments](segments/create-dynamic-segments.md)
+  + [Create Create Segments Across Classes and Include Segment Context](segments/create-segments-across-classes-and-include-segment-context.md)
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](identities/understanding-identity-and-identity-graphs.md)

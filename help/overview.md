@@ -14,7 +14,7 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <br>
     *Stream data to the Real-time Customer Profile in under a second.*
 
-* **[Build Segments Across Classes and Include Segment Context (Video)](segmentation/use-segments-across-classes-and-add-segment-context.md)**
+* **[Build Segments Across Classes and Include Segment Context (Video)](segments/create-segments-across-classes-and-include-segment-context.md)**
     <br>
     *Create segments that span multiple XDM classes and include additional context about the segment.*
 
