@@ -10,6 +10,10 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+* **[Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)**
+    <br>
+    *See a dashboard built using Query Service*
+
 * **[Understanding Streaming Ingestion (Video)](datasets/understanding-streaming-ingestion.md)**
     <br>
     *Stream data to the Real-time Customer Profile in under a second.*
@@ -17,10 +21,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 * **[Build Segments Across Classes and Include Segment Context (Video)](segments/create-segments-across-classes-and-include-segment-context.md)**
     <br>
     *Create segments that span multiple XDM classes and include additional context about the segment.*
-
-* **[Understanding Identity and Identity Graphs (Video)](identities/understanding-identity-and-identity-graphs.md)**
-    <br>
-    *Learn about the rich set of Identity resolution capabilities, which link disconnected identities to create a unified profile.*
 
 ## Staff Picks
 
