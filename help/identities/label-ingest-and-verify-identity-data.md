@@ -5,9 +5,9 @@ description: Adobe Experience Platform provides a rich set of Identity resolutio
 audience: architect
 feature: identity
 topics:
-kt: kt-3039
+kt: kt-2707
 doc-type: feature video
-activity: understand
+activity: use
 team: TM
 ---
 
