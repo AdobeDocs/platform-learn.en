@@ -29,3 +29,4 @@ audience: all
   + [Create Segments Across Classes and Include Segment Context](segments/create-segments-across-classes-and-include-segment-context.md)
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](identities/understanding-identity-and-identity-graphs.md)
+  + [Label, Ingest, and Verify Identity Data](identities/label-ingest-and-verify-identity-data.md)
