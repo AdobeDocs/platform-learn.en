@@ -26,8 +26,7 @@ audience: all
 + Segments{#segments}
   + [Create Segments](segments/create-segments.md)
   + [Create Dynamic Segments](segments/create-dynamic-segments.md)
-  + [Create Create Segments Across Classes and Include Segment Context](segments/create-segments-across-classes-and-include-segment-context.md)
+  + [Create Segments Across Classes and Include Segment Context](segments/create-segments-across-classes-and-include-segment-context.md)
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](identities/understanding-identity-and-identity-graphs.md)
-+ API{#use-the-api}
-  + [Using the Platform API Tutorial](use-the-api/overview.md)
+  + [Label, Ingest, and Verify Identity Data](identities/label-ingest-and-verify-identity-data.md)

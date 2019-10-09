@@ -10,17 +10,19 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-* **[Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)**
+Label, Ingest, and Verify Identity Data
+
+* **[Label, Ingest, and Verify Identity Data (Video)](identities/label-ingest-and-verify-identity-data.md)**
+    <br>
+    *Label fields as identities and verify that the data has made it to the Adobe Experience Platform Identity Service Private Graph*
+
+* **[Understanding the Value of Dashboards built with Query Service (Video)](queries/understanding-the-value-of-dashboards-built-with-query-service.md)**
     <br>
     *See a dashboard built using Query Service*
 
 * **[Understanding Streaming Ingestion (Video)](datasets/understanding-streaming-ingestion.md)**
     <br>
     *Stream data to the Real-time Customer Profile in under a second.*
-
-* **[Build Segments Across Classes and Include Segment Context (Video)](segments/create-segments-across-classes-and-include-segment-context.md)**
-    <br>
-    *Create segments that span multiple XDM classes and include additional context about the segment.*
 
 ## Staff Picks
 
