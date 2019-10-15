@@ -11,7 +11,7 @@ doc-type: video
 activity: understand
 ---
 
-# Understanding Data Ingestion
+# Understanding Streaming Data Ingestion
 
 Using Experience Platform's Streaming Ingestion you can be sure that any data you send will be available in the real-time Customer Profile in under a second. This data can be captured on your website or mobile apps, from CRM and ERP systems, or from any other source which is able to communicate over HTTP or public cloud streaming infrastructure. Data sent through streaming to Experience Platform is stitched together with existing data in the Real-Time Customer Profile in real-time. You can then use this data for real-time segmentation and to activate other marketing processes.
 
