@@ -22,7 +22,19 @@ Adobe I/O Console's **Export Details for Postman** capability provides an easy w
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12)
 
+## Generate an Access Token with Postman
+
+Use the [Adobe I/O Access Token Generation Postman collection](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) in conjunction with Adobe I/O's Postman Environment to quickly and easily generate an Adobe I/O Access Token that can be used to authenticate to Adobe Experience Platform, and any other Adobe I/O API.
+
+>[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12)
+
+>[!WARNING]
+> As noted in the Adobe I/O Access Token Generation Postman collection, the denoted generation methods are suitable for non-production use. Local Signing loads a JavaScript library from a 3rd-party host, and Remote signing sends the private key to an Adobe owned and operated web service. While Adobe does not store this private key, production keys should never be shared with anyone.
+
 ## Additional Resources
 
 * [Adobe I/O Console](https://console.adobe.io)
-* [Postman](https://www.getpostman.com/)
+* [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples)
+  * [Adobe I/O Access Token Generation Postman Collection](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims)
+  * [Adobe Experience Platform APIs Postman Collections](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
+* [Download Postman](https://www.getpostman.com/)
