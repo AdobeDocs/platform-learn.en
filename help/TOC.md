@@ -18,6 +18,12 @@ audience: all
   + [Understanding Data Ingestion](datasets/understanding-data-ingestion.md)
   + [Understanding Streaming Ingestion](datasets/understanding-streaming-ingestion.md)
   + [Create Datasets and Ingest Data](datasets/create-datasets-and-ingest-data.md)
+  + [Understanding Source Connectors](understanding-source-connectors.md)
+  + [Set up the Adobe Analytics Source Connector](setup-the-adobe-analytics-source-connector.md)
+  + [Set up the Amazon S3 Source Connector](setup-the-amazon-s3-source-connector.md)
+  + [Set up the Salesforce Source Connector](setup-the-salesforce-source-connector.md)
++ Data Governance{#data-governance}
+  + [Understanding Data Governance](governance/understanding-data-governance.md)
 + Queries{#queries}
   + [Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Profiles{#profiles}
