@@ -33,7 +33,7 @@ Use the [Adobe I/O Access Token Generation Postman collection](https://github.co
 
 ## Interacting with Adobe I/O APIs using Postman
 
-Explore interacting with Adobe I/O APIs using the [Adobe-provided Experience Platform API Postman collections](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), building upon the [Adobe I/O Environment Variables](#export-adobe-io-integration-details-to-postman) and [generated access token].(#generate-an-access-token-with-postman).
+Explore interacting with Adobe I/O APIs using the [Adobe-provided Experience Platform API Postman collections](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), building upon the [Adobe I/O Environment Variables](#export-adobe-io-integration-details-to-postman) and [generated access token](#generate-an-access-token-with-postman).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12)
 
