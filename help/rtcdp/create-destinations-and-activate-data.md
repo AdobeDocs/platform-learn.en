@@ -11,10 +11,9 @@ activity: use
 
 # Create Destinations and Activate Data
 
-
->[!VIDEO]()
+>[!VIDEO](https://video.tv.adobe.com/v/29710?quality=12)
 
 ## Additional Resources
 
-* []()
-* []()
+* [Understanding Adobe's Real-time Customer Data Platform](understanding-adobes-real-time-customer-data-platform.md)
+* [Understanding Destinations](understanding-destinations.md)

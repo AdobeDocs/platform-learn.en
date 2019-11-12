@@ -12,9 +12,9 @@ activity: understand
 # Understanding Destinations
 
 
->[!VIDEO]()
+>[!VIDEO](https://video.tv.adobe.com/v/29707?quality=12)
 
 ## Additional Resources
 
-* []()
-* []()
+* [Understanding Adobe's Real-time Customer Data Platform](understanding-adobes-real-time-customer-data-platform.md)
+* [Create Destinations and Activate Data](create-destinations-and-activate-data.md)

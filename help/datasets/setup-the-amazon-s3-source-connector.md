@@ -20,3 +20,4 @@ activity: setup
 * [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
 * [Understanding Data Ingestion video](understanding-data-ingestion.md)
 * [Streaming Ingestion documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/streaming_ingest_overview.md)
+* [Amazon S3 Data Connector documentation](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_connector_tutorial/ACP_s3_connector_tutorial.md)

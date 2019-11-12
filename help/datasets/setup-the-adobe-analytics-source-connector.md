@@ -20,3 +20,4 @@ activity: setup
 * [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
 * [Understanding Data Ingestion video](understanding-data-ingestion.md)
 * [Streaming Ingestion documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/streaming_ingest/streaming_ingest_overview.md)
+* [Adobe Analytics Data Connector documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion/data-ingestion-services.html#!api-specification/markdown/narrative/technical_overview/acp_connectors_overview/analytics_data_connector.md)
