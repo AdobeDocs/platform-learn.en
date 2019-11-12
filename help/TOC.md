@@ -10,6 +10,10 @@ audience: all
 + Introduction to Platform{#intro-to-platform}
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
++ Real-time CDP{#rtcdp}
+  + [Understanding Adobe's Real-time CDP](rtcdp/understanding-destinations.md)
+  + [Understanding Destinations](rtcdp/understanding-destinations.md)
+  + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
@@ -18,6 +22,13 @@ audience: all
   + [Understanding Data Ingestion](datasets/understanding-data-ingestion.md)
   + [Understanding Streaming Ingestion](datasets/understanding-streaming-ingestion.md)
   + [Create Datasets and Ingest Data](datasets/create-datasets-and-ingest-data.md)
+  + [Understanding Source Connectors](datasets/understanding-source-connectors.md)
+  + [Set up the Adobe Analytics Source Connector](datasets/setup-the-adobe-analytics-source-connector.md)
+  + [Set up the Amazon S3 Source Connector](datasets/setup-the-amazon-s3-source-connector.md)
+  + [Set up the Salesforce Source Connector](datasets/setup-the-salesforce-source-connector.md)
++ Data Governance{#data-governance}
+  + [Understanding Data Governance](governance/understanding-data-governance.md)
+  + [Classify Data Using Governance Labels](governance/understanding-data-governance.md)
 + Queries{#queries}
   + [Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Profiles{#profiles}
