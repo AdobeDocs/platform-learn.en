@@ -1,5 +1,5 @@
 ---
-title: Configuring Streaming Events for Adobe Journey Orchestration
+title: Configure Streaming Events for Adobe Journey Orchestration
 description: This video explains how to configure XDM schemas and datasets for Journey Orchestration events, define an event in Journey Orchestration ,and configure source systems to stream events
 feature: Journey Orchestration
 topics: Events
@@ -9,7 +9,7 @@ doc-type: video
 activity: setup
 ---
 
-# Configuring Streaming Events
+# Configure Streaming Events
 
 ## Events
 
