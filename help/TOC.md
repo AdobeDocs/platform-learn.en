@@ -7,13 +7,13 @@ audience: all
 # Adobe Experience Platform Tutorials {#tutorials}
 
 + [Overview](overview.md)
-+ [Journey Orchestration]{#journey-orchestration}
-  + [Introduction to Journey Orchestration](/help/journey-orchestration/journey-orchestration-introduction.md)
-  + [Configuring Streaming Events](/help/journey-orchestration/journey-orchestration-configuring-streaming-events.md)
-  + [Configuring Data Sources](/help/journey-orchestration/journey-orchestration-configuring-data-sources.md)
-  + [Configuring Actions](/help/journey-orchestration/journey-orchestration-configuring-actions.md)
-  + [Create a Journey](/help/journey-orchestration/journey-orchestration-create-a-journey.md)
-  + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/journey-orchestration-reporting.md)
++ Journey Orchestration{#journey-orchestration}
+  + [Introduction to Journey Orchestration](/help/journey-orchestration/introduction.md)
+  + [Configuring Streaming Events](/help/journey-orchestration/configuring-streaming-events.md)
+  + [Configuring Data Sources](/help/journey-orchestration/configuring-data-sources.md)
+  + [Configuring Actions](/help/journey-orchestration/configuring-actions.md)
+  + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
+  + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Introduction to Platform{#intro-to-platform}
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)

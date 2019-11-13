@@ -13,12 +13,10 @@ activity: setup
 
 ## Events
 
-An Event is linked to an individual person. Journey Orchestration listens to Events and orchestrates the best next actions within the customer's journey based on these Events.
+An Event is linked to an individual person. Journey Orchestration listens to Events and orchestrates the best next actions within the customer's journey based on these Events. An Event can relate to:
 
-An Event can relate to:
-
-* An individual's interaction (e.g a customer bought a product, visited a store or abandoned an online shopping cart online)
-* Or something happening that is connected to the individual (e.g. a customer reaches 10 000 loyalty points)
+* An individual's interaction (e.g., a customer bought a product, visited a store, or abandoned an online shopping cart)
+* Or something happening that is connected to the individual (e.g., a customer reaches 10 000 loyalty points)
 
 Journey Orchestration Events are XDM Experience Events that are sent to the Adobe Experience Platform via streaming ingestion.
 
@@ -30,8 +28,8 @@ Journey Orchestration Events are XDM Experience Events that are sent to the Adob
 >
 >To understand the examples used in the video, you should also familiarize yourself with the following Adobe Experience Platform Services:
 >
->* [Launch](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property)
->* [Places](https://aep-sdks.gitbook.io/docs/beta/adobe-places)
+>* [Adobe Experience Platform Mobil SKD - Launch](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property)
+>* [Adobe Experience Platform Location Service)](https://docs.adobe.com/content/help/en/places/using/home.html)
 >
   
 ## How to Configure Streaming Events
