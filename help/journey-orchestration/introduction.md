@@ -1,7 +1,6 @@
 ---
 title: Introduction to Journey Orchestration
-description: Journey Orchestration provides an intelligent and open ecosystem to activate all relevant live data through scalable, event-based engagement across any channel your business requires from marketing to operations to service. Journey Orchestration can leverage any data in Adobe Experience Platform and any external delivery system to create and deliver compelling experiences. 
-This tutorial introduces the concept of Journey Orchestration,the types of use cases it enables, and the key elements of how Journey Orchestration works.
+description: Journey Orchestration provides an intelligent and open ecosystem to activate all relevant live data through scalable, event-based engagement across any channel your business requires from marketing to operations to service. Journey Orchestration can leverage any data in Adobe Experience Platform and any external delivery system to create and deliver compelling experiences. This tutorial introduces the concept of Journey Orchestration,the types of use cases it enables, and the key elements of how Journey Orchestration works.
 feature: Journey Orchestration
 topics: Introduction
 kt: KT-2773
