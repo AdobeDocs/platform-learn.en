@@ -12,6 +12,7 @@ activity: setup
 # Configuring Streaming Events
 
 ## Events
+
 An Event is linked to an individual person. Journey Orchestration listens to Events and orchestrates the best next actions within the customer's journey based on these Events.
 
 An Event can relate to:
