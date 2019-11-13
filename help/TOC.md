@@ -10,6 +10,13 @@ audience: all
 + Introduction to Platform{#intro-to-platform}
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
++ Journey Orchestration{#journey-orchestration}
+  + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
+  + [Configure Streaming Events](/help/journey-orchestration/configure-streaming-events.md)
+  + [Configure Data Sources](/help/journey-orchestration/configure-data-sources.md)
+  + [Configure Actions](/help/journey-orchestration/configure-actions.md)
+  + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
+  + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
