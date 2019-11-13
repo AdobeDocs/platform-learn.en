@@ -6,7 +6,7 @@ topics: Introduction
 kt: KT-2773
 audience: user, developer
 doc-type: video
-activity: use
+activity: understand
 ---
 
 # Introduction to Journey Orchestration
@@ -18,8 +18,28 @@ Journey orchestration leverages data stored on the Experience Platform, data sto
 
 >[!VIDEO](https://video.tv.adobe.com/v/29307?quality=12)
 
+## How to Configure a Journey
+
+The main steps in preparation for building journeys:
+
+1. [Configure Streaming Events](/help/journey-orchestration/journey-orchestration-configuring-streaming-events.md): This configuration is mandatory, as Triggered Journeys is designed to listen to events.
+2. [Configure Data Sources](help/journey-orchestration/journey-orchestration-configuring-data-sources.md):This configuration is not required if your journeys only leverage local data coming from an event payload.
+3. [Configure Actions](/help/journey-orchestration/journey-orchestration-configuring-actions.md): Required if you want to us a service from any provider that can be called through a REST API with a Jason formatted payload 
+
+>[!NOTE]
+>These configuration steps require technical knowledge. You will need to be familiar with the [Experience Data Model (XDM)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md) and [how to compose XDM Experience EventSchemas](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md).
+
+
+## How to Create, Publish, and Analyze a Journey
+
+1. [Create a Journey](/help/journey-orchestration/journey-orchestration-create-a-journey.md)
+2. Validate a Journey
+3. [Analyze a Journey via Reporting Tools](/help/journey-orchestration/journey-orchestration-reporting.md)
+
 ## Additional Resources
 
+* [Journey Orchestration Documentation](https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html)
 * Join the [Journey Orchestration community](www.adobe.com/go/journeyscommunity) to ask questions, have discussions with other users and experts 
 * [Submit feedback](www.adobe.com/go/journeysideas), new ideas and vote on ideas related to Journey Orchestration
 * [Journey Orchestration Documentation](https://helpx.adobe.com/campaign/kb/aep-acs-integration.html)
+ 
