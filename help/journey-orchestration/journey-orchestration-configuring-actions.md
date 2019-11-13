@@ -22,6 +22,3 @@ The following video below explains how to configure an Action for Journey Orches
 ## Additional Resources
 
 * [Journey Orchestration Documentation](https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html)
-* Join the [Journey Orchestration community](www.adobe.com/go/journeyscommunity) to ask questions, have discussions with other users and experts 
-* [Submit feedback](www.adobe.com/go/journeysideas), new ideas and vote on ideas related to Journey Orchestration
-* [Journey Orchestration Documentation](https://helpx.adobe.com/campaign/kb/aep-acs-integration.html)
