@@ -23,7 +23,7 @@ Journey orchestration leverages data stored on the Experience Platform, data sto
 The main steps in preparation for building journeys:
 
 1. [Configure Streaming Events](/help/journey-orchestration/journey-orchestration-configuring-streaming-events.md): This configuration is mandatory, as Triggered Journeys is designed to listen to events.
-2. [Configure Data Sources](help/journey-orchestration/journey-orchestration-configuring-data-sources.md):This configuration is not required if your journeys only leverage local data coming from an event payload.
+2. [Configure Data Sources](/help/journey-orchestration/journey-orchestration-configuring-data-sources.md):This configuration is not required if your journeys only leverage local data coming from an event payload.
 3. [Configure Actions](/help/journey-orchestration/journey-orchestration-configuring-actions.md): Required if you want to us a service from any provider that can be called through a REST API with a Jason formatted payload
 
 >[!NOTE]
