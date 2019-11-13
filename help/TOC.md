@@ -23,9 +23,9 @@ audience: all
   + [Understanding Streaming Ingestion](datasets/understanding-streaming-ingestion.md)
   + [Create Datasets and Ingest Data](datasets/create-datasets-and-ingest-data.md)
   + [Understanding Source Connectors](datasets/understanding-source-connectors.md)
-  + [Set up the Adobe Analytics Source Connector](datasets/setup-the-adobe-analytics-source-connector.md)
-  + [Set up the Amazon S3 Source Connector](datasets/setup-the-amazon-s3-source-connector.md)
-  + [Set up the Salesforce Source Connector](datasets/setup-the-salesforce-source-connector.md)
+  + [Ingest Data from Adobe Analytics](datasets/ingest-data-from-adobe-analytics.md)
+  + [Ingest Data from Amazon S3](datasets/ingest-data-from-amazon-s3.md)
+  + [Ingest Data from Salesforce CRM](datasets/ingest-data-from-salesforce-crm.md)
 + Data Governance{#data-governance}
   + [Understanding Data Governance](governance/understanding-data-governance.md)
   + [Classify Data Using Governance Labels](governance/understanding-data-governance.md)
