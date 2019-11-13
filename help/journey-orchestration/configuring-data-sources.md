@@ -15,12 +15,16 @@ Journey Orchestration allows you to connect to the Adobe Experience Platform or 
 
 * Definition of conditions
 * Parameters and personalization data in actions
-* custom timer definition
-* custom timezone definition
+* Custom timer definition
+* Custom timezone definition
 
 This configuration is not required if your journeys only leverage local data coming from an event payload.
 
-The following video explains how to configure Experience Platform Data Source, configure an external data source, find and use data in a journey.
+The following video explains how to:
+
+* Configure Experience Platform Data Source 
+* Configure an external data source
+* Find and use data in a journey.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29406?quality=12)
 

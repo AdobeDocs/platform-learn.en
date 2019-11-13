@@ -25,14 +25,14 @@ The video below introduces
 
 The main steps in preparation for building journeys are:
 
-1. [Configure Streaming Events](/help/journey-orchestration/configuring-streaming-events.md) - This configuration is mandatory, as Triggered Journeys is designed to listen to events.
+1. [Configure Streaming Events](/help/journey-orchestration/configuring-streaming-events.md) - This configuration is mandatory, as Journey Orchestration is designed to listen to events.
 2. [Configure Data Sources](/help/journey-orchestration/configuring-data-sources.md) - This configuration is not required if your journeys only leverage local data coming from an event payload.
-3. [Configure Custom Actions](/help/journey-orchestration/configuring-actions.md): Required if you want to us a service from any 3rd party provider that can be called through a REST API with a Jason formatted payload
+3. [Configure Custom Actions](/help/journey-orchestration/configuring-actions.md): Required if you want to use a service from any 3rd party provider that can be called through a REST API with a Jason formatted payload
 
 >[!NOTE]
 >These configuration steps require technical knowledge. You will need to be familiar with the [Experience Data Model (XDM)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md) and [how to compose XDM Experience EventSchemas](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md).
 
-## How to create, publish, and analyze a Journey
+## How to Create, Publish, and Analyze a Journey
 
 1. [Create a Journey](/help/journey-orchestration/create-a-journey.md)
 2. Validate a Journey
