@@ -20,15 +20,16 @@ An Event can relate to:
 * An individual's interaction (e.g a customer bought a product, visited a store or abandoned an online shopping cart online)
 * Or something happening that is connected to the individual (e.g. a customer reaches 10 000 loyalty points)
 
-Journey Orchestration Events are XDM Experience Events that are sent to the Adobe Experience Platform via streaming ingestion. 
+Journey Orchestration Events are XDM Experience Events that are sent to the Adobe Experience Platform via streaming ingestion.
 
 >[!NOTE]
->You will  need to be familiar with: 
+>You will  need to be familiar with:
 >
 >* [The Experience Data Model (XDM)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md)
 >* [How to compose XDM Experience EventSchemas](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md)
 >
 >To understand the examples used in the video, you should also familiarize yourself with the following Adobe Experience Platform Services:
+>
 >* [Launch](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property)
 >* [Places](https://aep-sdks.gitbook.io/docs/beta/adobe-places)
 >
