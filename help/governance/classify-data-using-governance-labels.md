@@ -1,5 +1,5 @@
 ---
-title: Classify Data in Adobe Experience Platform using Governance Labels
+title: Classify Data Using Governance Labels in Adobe Experience Platform
 description: 
 feature: governance
 topics:
@@ -10,7 +10,6 @@ activity: understand
 ---
 
 # Classify Data using Governance Labels
-
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/29709?quality=12)

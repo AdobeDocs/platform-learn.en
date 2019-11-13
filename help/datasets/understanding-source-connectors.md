@@ -1,6 +1,6 @@
 ---
 title: Understanding Source Connectors in Adobe Experience Platform
-description: 
+description: Source Connectors are easily configurable integrations that allow you to ingest data from Adobe, first-party, and third-party applications into Adobe Experience Platform's Real-time Customer Profile and Data Lake, in a seamless and scalable manner.
 feature: data ingestion
 topics:
 kt: 
@@ -11,7 +11,7 @@ activity: understand
 
 # Understanding Source Connectors
 
-
+Source Connectors are easily configurable integrations that allow you to ingest data from Adobe, first-party, and third-party applications into Adobe Experience Platform's Real-time Customer Profile and Data Lake, in a seamless and scalable manner.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29694?quality=12)
 
