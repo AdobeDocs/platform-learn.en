@@ -7,16 +7,16 @@ audience: all
 # Adobe Experience Platform Tutorials {#tutorials}
 
 + [Overview](overview.md)
-+ Journey Orchestration{#journey-orchestration}
-  + [Introduction to Journey Orchestration](/help/journey-orchestration/introduction.md)
-  + [Configuring Streaming Events](/help/journey-orchestration/configuring-streaming-events.md)
-  + [Configuring Data Sources](/help/journey-orchestration/configuring-data-sources.md)
-  + [Configuring Actions](/help/journey-orchestration/configuring-actions.md)
-  + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
-  + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Introduction to Platform{#intro-to-platform}
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
++ Journey Orchestration{#journey-orchestration}
+  + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
+  + [Configure Streaming Events](/help/journey-orchestration/configure-streaming-events.md)
+  + [Configure Data Sources](/help/journey-orchestration/configure-data-sources.md)
+  + [Configure Actions](/help/journey-orchestration/configure-actions.md)
+  + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
+  + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Real-time CDP{#rtcdp}
   + [Understanding Adobe's Real-time CDP](rtcdp/understanding-destinations.md)
   + [Understanding Destinations](rtcdp/understanding-destinations.md)

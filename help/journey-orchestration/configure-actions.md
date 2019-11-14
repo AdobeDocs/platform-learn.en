@@ -1,5 +1,5 @@
 ---
-title: Configuring Actions for Adobe Journey Orchestration
+title: Configure Actions for Adobe Journey Orchestration
 description: The video explains how to configure an Action for Journey Orchestration and how to use it in a journey.
 feature: Journey Orchestration
 topics: Custom Actions
@@ -9,7 +9,7 @@ doc-type: video
 activity: setup
 ---
 
-# Configuring Custom Actions
+# Configure Custom Actions
 
 Actions are the touch point in Journey Orchestration through which you deliver personalized, real time experiences to individuals. These can include traditional messaging channels, such as push notifications, email, or SMS, or any other means of digital engagement you use in your business.
 
