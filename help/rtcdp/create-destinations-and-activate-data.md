@@ -17,5 +17,5 @@ This video walks you through the settings and configuration of both Profile Expo
 
 ## Additional Resources
 
-* [Understanding Adobe's Real-time Customer Data Platform](understanding-adobes-real-time-customer-data-platform.md)
+* [Understanding Adobe's Real-time Customer Data Platform](understanding-the-real-time-customer-data-platform.md)
 * [Understanding Destinations](understanding-destinations.md)
