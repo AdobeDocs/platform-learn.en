@@ -18,7 +18,7 @@ audience: all
   + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
   + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Real-time CDP{#rtcdp}
-  + [Understanding Adobe's Real-time CDP](rtcdp/understanding-destinations.md)
+  + [Understanding the Real-time CDP](rtcdp/understanding-the-real-time-customer-data-platform.md)
   + [Understanding Destinations](rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
 + Schemas{#schemas}
