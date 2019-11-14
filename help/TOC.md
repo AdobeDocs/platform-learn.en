@@ -17,6 +17,10 @@ audience: all
   + [Configure Actions](/help/journey-orchestration/configure-actions.md)
   + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
   + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
++ Real-time CDP{#rtcdp}
+  + [Understanding Adobe's Real-time CDP](rtcdp/understanding-destinations.md)
+  + [Understanding Destinations](rtcdp/understanding-destinations.md)
+  + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
@@ -25,6 +29,13 @@ audience: all
   + [Understanding Data Ingestion](datasets/understanding-data-ingestion.md)
   + [Understanding Streaming Ingestion](datasets/understanding-streaming-ingestion.md)
   + [Create Datasets and Ingest Data](datasets/create-datasets-and-ingest-data.md)
+  + [Understanding Source Connectors](datasets/understanding-source-connectors.md)
+  + [Ingest Data from Adobe Analytics](datasets/ingest-data-from-adobe-analytics.md)
+  + [Ingest Data from Amazon S3](datasets/ingest-data-from-amazon-s3.md)
+  + [Ingest Data from Salesforce CRM](datasets/ingest-data-from-salesforce-crm.md)
++ Data Governance{#data-governance}
+  + [Understanding Data Governance](governance/understanding-data-governance.md)
+  + [Classify Data Using Governance Labels](governance/understanding-data-governance.md)
 + Queries{#queries}
   + [Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Profiles{#profiles}
