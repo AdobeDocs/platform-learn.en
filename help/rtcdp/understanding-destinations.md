@@ -1,16 +1,17 @@
 ---
 title: Understanding Destinations in Adobe's Real-time Customer Data Platform (RTCDP)
-description: 
+description: This video describes what destinations are in Adobe's Real-time Customer Data Platform, defines the two destination types, and gives examples/use cases for each destination type.
 feature: real-time customer data platform
 topics:
-kt: 
-audience: 
-doc-type: video
+kt: 3797
+audience: implementer, developer, architect
+doc-type: feature video
 activity: understand
 ---
 
 # Understanding Destinations
 
+This video describes what destinations are in Adobe's Real-time Customer Data Platform, defines the two destination types, and gives examples/use cases for each destination type.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29707?quality=12)
 
