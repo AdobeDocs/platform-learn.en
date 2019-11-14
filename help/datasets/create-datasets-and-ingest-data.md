@@ -1,8 +1,6 @@
 ---
-title: Create Datasets and Ingest Data
-seo-title: Create Datasets and Ingest Data in Adobe Experience Platform
+title: Create Datasets and Ingest Data in Adobe Experience Platform
 description: Data ingestion gives you the ability to bring your data together into one open and scalable platform. When your data is mapped to schemas it becomes easy to combine data from multiple sources and create a unified profile.
-seo-description:
 feature: data ingestion
 topics:
 kt: kt-2700
@@ -13,7 +11,7 @@ activity: use
 
 # Create Datasets and Ingest Data
 
-Data ingestion gives you the ability to bring your data together into one open and scalable platform. When your data is mapped to schemas it becomes easy to combine data from multiple sources and create a unified profile.
+Data ingestion gives you the ability to bring your data together into one open and scalable platform. When your data is mapped to schemas it becomes easy to combine data from multiple sources and create real-time customer profiles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12)
 

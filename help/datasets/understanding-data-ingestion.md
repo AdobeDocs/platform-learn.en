@@ -1,8 +1,6 @@
 ---
-title: Understanding Data Ingestion
-seo-title: Understanding Data Ingestion in Adobe Experience Platform
+title: Understanding Data Ingestion in Adobe Experience Platform
 description: Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing a unified profile.
-seo-description:
 feature: data ingestion
 topics:
 kt: kt-2699
@@ -13,13 +11,14 @@ activity: understand
 
 # Understanding Data Ingestion
 
-Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing a unified profile.
+Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing real-time customer profiles.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12)
 
 ## Additional Resources
 
-* [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
+* [Understanding Source Connectors video](understanding-source-connectors.md)
 * [Understanding Streaming Ingestion video](understanding-streaming-ingestion.md)
+* [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
 * [Data Ingestion documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion.html)
 * [Configuring a Dataset with Platform API tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_dataset_tutorial/creating_a_dataset_tutorial.md)
