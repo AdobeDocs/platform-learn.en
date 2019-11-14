@@ -1,11 +1,11 @@
 ---
 title: Create Destinations and Activate Data in Adobe's Real-time Customer Data Platform (RTCDP)
 description: This video walks you through the settings and configuration of both Profile Export and Segment Export Destinations in Adobe's Real-time Customer Data Platform.
-feature: real-time customer data platform
-topics:
+feature: destinations
+topics: rtcdp
 kt: 3798
-audience: implementer, developer, architect
-doc-type: feature video
+audience: implementer, developer, architect, marketer
+doc-type: video
 activity: use
 ---
 

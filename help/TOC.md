@@ -11,7 +11,7 @@ audience: all
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 + Real-time CDP{#rtcdp}
-  + [Understanding Adobe's Real-time CDP](rtcdp/understanding-destinations.md)
+  + [Understanding the Real-time CDP](rtcdp/understanding-the-real-time-customer-data-platform.md)
   + [Understanding Destinations](rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
 + Schemas{#schemas}

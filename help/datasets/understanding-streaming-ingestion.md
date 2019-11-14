@@ -4,7 +4,7 @@ description: Using Experience Platform's Streaming Ingestion you can be sure tha
 feature: data ingestion
 topics:
 kt: kt-2711
-audience: engineer
+audience: engineer, architect
 doc-type: video
 activity: understand
 ---
