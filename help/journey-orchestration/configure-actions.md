@@ -11,11 +11,11 @@ activity: setup
 
 # Configure Custom Actions
 
-Actions are the touch point in Journey Orchestration through which you deliver personalized, real time experiences to individuals. These can include traditional messaging channels, such as push notifications, email, or SMS, or any other means of digital engagement you use in your business.
+Actions are the touchpoint in Journey Orchestration through which you deliver personalized, real-time experiences to individuals. These can include traditional messaging channels, such as push notifications, email, or SMS, or any other means of digital engagement you use in your business.
 
-Any service from any provider that can be called through a REST API with a Jason formatted payload can be configured as an Action in Journey orchestration.
+Any service from any provider that can be called through a REST API with a JSON-formatted payload can be configured as an Action in Journey Orchestration.
 
-The following video below explains how to configure an Action for Journey Orchestration and how to use it in a journey.
+The following video explains how to configure an Action for Journey Orchestration and how to use it in a journey.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29638?quality=12)
 

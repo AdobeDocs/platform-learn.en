@@ -11,7 +11,7 @@ activity: setup
 
 # Configure Data Sources
 
-Journey Orchestration allows you to connect to the Adobe Experience Platform or other third-party data sources to retrieve additional information that can be used in a journey for:
+Journey Orchestration allows you to connect to Adobe Experience Platform or other third-party data sources to retrieve additional information that can be used in a journey for:
 
 * Definition of conditions
 * Parameters and personalization data in actions
