@@ -28,7 +28,7 @@ audience: all
   + [Ingest Data from Salesforce CRM](datasets/ingest-data-from-salesforce-crm.md)
 + Data Governance{#data-governance}
   + [Understanding Data Governance](governance/understanding-data-governance.md)
-  + [Classify Data Using Governance Labels](governance/understanding-data-governance.md)
+  + [Classify Data Using Governance Labels](governance/classify-data-using-governance-labels.md)
 + Queries{#queries}
   + [Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Profiles{#profiles}
