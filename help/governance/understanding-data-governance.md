@@ -23,5 +23,5 @@ With these three pillars, you can be assured that all data usage is in complianc
 
 ## Additional Resources
 
-* [Classify Data Using Governance Labels video](understanding-data-governance.md)
+* [Classify Data Using Governance Labels video](classify-data-using-governance-labels.md)
 * [Data Governance documentation](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html)
