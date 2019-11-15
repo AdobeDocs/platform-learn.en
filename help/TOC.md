@@ -18,7 +18,7 @@ audience: all
   + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
   + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Real-time CDP{#rtcdp}
-  + [Understanding the Real-time CDP](rtcdp/understanding-the-real-time-customer-data-platform.md)
+  + [Understanding Adobe's Real-time CDP](rtcdp/understanding-destinations.md)
   + [Understanding Destinations](rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
 + Schemas{#schemas}
@@ -35,6 +35,7 @@ audience: all
   + [Ingest Data from Salesforce CRM](datasets/ingest-data-from-salesforce-crm.md)
 + Data Governance{#data-governance}
   + [Understanding Data Governance](governance/understanding-data-governance.md)
+  + [Classify Data Using Governance Labels](governance/understanding-data-governance.md)
 + Queries{#queries}
   + [Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Profiles{#profiles}
