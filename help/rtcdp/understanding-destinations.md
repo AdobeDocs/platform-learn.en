@@ -17,5 +17,6 @@ This video describes what destinations are in Adobe's Real-time Customer Data Pl
 
 ## Additional Resources
 
-* [Understanding Adobe's Real-time Customer Data Platform](understanding-the-real-time-customer-data-platform.md)
-* [Create Destinations and Activate Data](create-destinations-and-activate-data.md)
+* [Understanding Adobe's Real-time Customer Data Platform video](understanding-the-real-time-customer-data-platform.md)
+* [Understanding the Real-time Customer Data Platform User Interface and Workflow video](understanding-the-real-time-customer-data-platform-user-interface.md)
+* [Create Destinations and Activate Data video](create-destinations-and-activate-data.md)
