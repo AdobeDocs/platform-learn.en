@@ -4,7 +4,7 @@ description: Data ingestion gives you the ability to bring your data together in
 feature: data ingestion
 topics:
 kt: kt-2700
-audience: engineer
+audience: engineer, architect
 doc-type: video
 activity: use
 ---

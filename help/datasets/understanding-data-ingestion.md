@@ -2,9 +2,9 @@
 title: Understanding Data Ingestion in Adobe Experience Platform
 description: Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing a unified profile.
 feature: data ingestion
-topics:
+topics: rtcdp
 kt: kt-2699
-audience: engineer
+audience: engineer, architect
 doc-type: video
 activity: understand
 ---
