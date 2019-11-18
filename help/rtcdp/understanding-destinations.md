@@ -20,4 +20,4 @@ Destinations are pre-built integrations with destination platforms supported by 
 * [Understanding Adobe's Real-time Customer Data Platform video](understanding-the-real-time-customer-data-platform.md)
 * [Understanding the Real-time Customer Data Platform User Interface and Workflow video](understanding-the-real-time-customer-data-platform-user-interface.md)
 * [Create Destinations and Activate Data video](create-destinations-and-activate-data.md)
-* [Destinations Overview](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-overview.html)
+* [Destinations Overview documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-overview.html)
