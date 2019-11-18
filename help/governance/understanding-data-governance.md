@@ -11,11 +11,9 @@ activity: understand
 
 # Understanding Data Governance
 
-
-
 >[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12)
 
 ## Additional Resources
 
-* [Classify Data Using Governance Labels video](understanding-data-governance.md)
+* [Classify data using Governance Labels video](classify-data-using-governance-labels.md)
 * [Data Governance documentation](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html)

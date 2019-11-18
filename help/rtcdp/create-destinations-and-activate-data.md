@@ -15,5 +15,5 @@ activity: use
 
 ## Additional Resources
 
-* [Understanding Adobe's Real-time Customer Data Platform](understanding-adobes-real-time-customer-data-platform.md)
-* [Understanding Destinations](understanding-destinations.md)
+* [Understanding Adobe's Real-time Customer Data Platform video](understanding-the-real-time-customer-data-platform.md)
+* [Understanding Destinations video](understanding-destinations.md)\
