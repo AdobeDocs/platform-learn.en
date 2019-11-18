@@ -32,7 +32,7 @@ Journey Orchestration Events are XDM Experience Events that are sent to the Adob
 >
 >* [Adobe Experience Platform Mobile SDK - Launch](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/launch-mobile/understanding-the-mobile-sdks.html)
 >* [Adobe Experience Platform Location Service](https://docs.adobe.com/content/help/en/places/using/home.html)
->* [Streaming Data Ingestion](/help/datasets/understanding-streaming-ingestion.md)
+>
   
 ## How to Configure Streaming Events
 
