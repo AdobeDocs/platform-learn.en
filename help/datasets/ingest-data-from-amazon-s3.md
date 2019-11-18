@@ -2,9 +2,9 @@
 title: Ingest data using the Amazon S3 Source connector in Adobe Experience Platform
 description: The Amazon S3 Source ￼connector allows you to easily batch ingest data from Amazon S3 into Adobe Experience Platform's Real-time Customer Profile and Experience Data Lake, in a seamless and scalable manner.
 feature: data ingestion
-topics: rtcdp
-kt: kt-3827
-audience: engineer, architect, marketer
+topics:
+kt: 
+audience: 
 doc-type: video
 activity: setup
 ---
