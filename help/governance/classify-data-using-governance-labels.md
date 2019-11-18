@@ -18,4 +18,4 @@ Governance labels in Adobe Experience Platform enable you to tag and classify da
 ## Additional Resources
 
 * [Understanding Data Governance video](understanding-data-governance.md)
-* [Data Governance documentation](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html)
+* [Data usage labels user guide documentation](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html#!api-specification/markdown/narrative/tutorials/dule/dule_working_with_labels.md)

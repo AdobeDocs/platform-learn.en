@@ -19,4 +19,4 @@ The Amazon S3 Source ￼connector allows you to easily batch ingest data from Am
 
 * [Understanding Source Connectors video](understanding-source-connectors.md)
 * [Understanding Data Ingestion video](understanding-data-ingestion.md)
-* [Amazon S3 Data Connector documentation](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_connector_tutorial/ACP_s3_connector_tutorial.md)
+* [Create an Azure Blob or Amazon S3 source connector in the UI tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/sources_tutorial/amazon-s3-ui-tutorial.md)
