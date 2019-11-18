@@ -1,8 +1,6 @@
 ---
-title: A Customer Experience Powered by Experience Platform
-seo-title: A Customer Experience Powered by Adobe Experience Platform
+title: A Customer Experience Powered by Adobe Experience Platform
 description: This video follows a hypothetical experience built with Adobe Experience Platform, as seen from the perspective of a customer. See how Experience Platform creates a rich, relevant and real-time experience.
-seo-description:
 feature: platform
 topics:
 kt: aaa-696
