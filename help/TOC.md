@@ -40,6 +40,7 @@ audience: all
 + Queries{#queries}
   + [Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Profiles{#profiles}
+
   + [Understanding the Real-time Customer Profile](profiles/understanding-the-real-time-customer-profile.md)
   + [Bring Data into Unified Profile](profiles/bring-data-into-the-real-time-customer-profile.md)
 + Segments{#segments}

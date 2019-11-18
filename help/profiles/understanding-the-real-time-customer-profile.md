@@ -1,8 +1,6 @@
 ---
-title: Understanding the Real-Time Customer Profile
-seo-title: Understanding the Real-Time Customer Profile in Adobe Experience Platform
+title: Understanding the Real-Time Customer Profile in Adobe Experience Platform
 description: The Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey.
-seo-description:
 feature: profile
 topics:
 kt: kt-2701
