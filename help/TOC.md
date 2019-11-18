@@ -10,13 +10,6 @@ audience: all
 + Introduction to Platform{#intro-to-platform}
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
-+ Journey Orchestration{#journey-orchestration}
-  + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
-  + [Configure Streaming Events](/help/journey-orchestration/configure-streaming-events.md)
-  + [Configure Data Sources](/help/journey-orchestration/configure-data-sources.md)
-  + [Configure Actions](/help/journey-orchestration/configure-actions.md)
-  + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
-  + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Real-time CDP{#rtcdp}
   + [Understanding Real-time CDP](rtcdp/understanding-the-real-time-customer-data-platform.md)
   + [Understanding Real-time CDP UI and Workflow](rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
