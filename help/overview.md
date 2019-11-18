@@ -14,11 +14,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <br>
     *Create trusted customer profiles and activate them in real-time*
 
-* **[Understanding Source Connectors (Video)](data-ingestion/understanding-source-connectors.md)**
+* **[Understanding Source Connectors (Video)](datasets/understanding-source-connectors.md)**
     <br>
     *Ingest your data in a seamless and scalable manner*
 
-* **[Understanding Data Governance (Video)](data-governance/understanding-data-governance.md)**
+* **[Understanding Data Governance (Video)](governance/understanding-data-governance.md)**
     <br>
     *Use Labels, Policies, and Enforcement to make sure your data is being used correctly*
 
