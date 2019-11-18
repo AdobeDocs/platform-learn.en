@@ -21,3 +21,4 @@ This video takes you through Adobe’s Real-time Customer Data Platform (CDP) us
 * [Understanding Source Connectors video](../datasets/understanding-source-connectors.md)
 * [Understanding Destinations video](understanding-destinations.md)
 * [Create Destinations and Activate Data video](create-destinations-and-activate-data.md)
+* [Real-time Customer Data Platform metrics overview documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/intro/home-page-dashboards.html)

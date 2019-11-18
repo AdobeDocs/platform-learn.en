@@ -1,6 +1,5 @@
 ---
-title: Label, Ingest, and Verify Identity Data
-seo-title: Label, Ingest, and Verify Identity Data in Adobe Experience Platform
+title: Label, Ingest, and Verify Identity Data in Adobe Experience Platform
 description: Adobe Experience Platform provides a rich set of Identity resolution capabilities, which are built from the ground up to link disconnected identities to deliver a consistent connected experience by referencing a unified profile. This video covers the three capabilities of Identity Collection, Identity Graphs, and the APIs, describes how deterministic and probabilistic algorithms are used to construct private identity graphs, and discusses the role of private identity graphs, Adobe Device Co-Op, and third-party graphs.
 audience: architect
 feature: identity

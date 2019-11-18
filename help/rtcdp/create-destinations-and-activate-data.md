@@ -16,4 +16,6 @@ activity: use
 ## Additional Resources
 
 * [Understanding Adobe's Real-time Customer Data Platform video](understanding-the-real-time-customer-data-platform.md)
-* [Understanding Destinations video](understanding-destinations.md)\
+* [Understanding Destinations video](understanding-destinations.md)
+* [How to connect a destination documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
+* [Activate profiles and segments to a destination documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)

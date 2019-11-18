@@ -1,8 +1,6 @@
 ---
-title: Create your first Schema with out-of-the-box components
-seo-title: Create your first Schema with out-of-the-box components in Adobe Experience Platform
-description: 
-seo-description:
+title: Create your first Schema with out-of-the-box components in Adobe Experience Platform
+description: This video shows you how to create a simple Schema in Adobe Experience Platform using standard classes and mixins.
 feature: xdm
 topics:
 kt: kt-2697
@@ -12,6 +10,8 @@ activity: setup
 ---
 
 # Create your first Schema with out-of-the-box components
+
+This video shows you how to create a simple Schema in Adobe Experience Platform using standard classes and mixins.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27012?quality=12)
 

@@ -20,3 +20,4 @@ Adobe’s Real-time Customer Data Platform (CDP) is an application service built
 * [Understanding Source Connectors video](../datasets/understanding-source-connectors.md)
 * [Understanding Destinations video](understanding-destinations.md)
 * [Create Destinations and Activate Data video](create-destinations-and-activate-data.md)
+* [Getting started with Adobe Real-time Customer Data Platform documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/intro/get-started.html)
