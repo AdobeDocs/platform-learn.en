@@ -1,6 +1,6 @@
 ---
 title: Set up and Use Query Service to Build a Dashboard
-description: This video shows how to run queries in the Adobe Experience Platform interface, using a PSQL client, and in a business intelligence (BI) solution. Additionally, using individual properties in an XDM object, using Adobe-defined functions, and using CREATE TABLE AS SELECT (CTAS) are demonstrated.
+description: This video shows how to run queries in the Adobe Experience Platform interface, in a PSQL client and in a business intelligence (BI) solution. Additionally, using individual properties in an XDM object, using Adobe-defined functions, and using CREATE TABLE AS SELECT (CTAS) are demonstrated.
 feature: query-service
 topics:
 kt: kt-3140
@@ -11,7 +11,7 @@ activity: setup,use
 
 # Set up and Use Query Service to Build a Dashboard
 
-This video shows how to run queries in the Adobe Experience Platform interface, using a PSQL client, and in a business intelligence (BI) solution. Additionally, using individual properties in an XDM object, using Adobe-defined functions, and using CREATE TABLE AS SELECT (CTAS) are demonstrated.
+This video shows how to run queries in the Adobe Experience Platform interface, in a PSQL client and in a business intelligence (BI) solution. Additionally, using individual properties in an XDM object, using Adobe-defined functions, and using CREATE TABLE AS SELECT (CTAS) are demonstrated.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?quality=12)
 

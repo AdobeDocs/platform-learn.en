@@ -1,6 +1,6 @@
 ---
 title: Understanding Data Usage Patterns with Query Service
-description: This video shares tips and best practices for running queries in the query editor in the Platform user interface, PSQL clients, business intelligence (BI) solutions and the HTTP API.
+description: This video shares tips and best practices for running queries in the query editor interface, PSQL clients, business intelligence (BI) solutions and the HTTP API.
 feature: query-service
 topics:
 kt: kt-3715
@@ -11,7 +11,7 @@ activity: understand
 
 # Understanding Data Usage Patterns with Query Service
 
-This video shares tips and best practices for running queries in the query editor in the Platform user interface, PSQL clients, business intelligence (BI) solutions and the HTTP API.
+This video shares tips and best practices for running queries in the query editor interface, PSQL clients, business intelligence (BI) solutions and the HTTP API.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29811?quality=12)
 
