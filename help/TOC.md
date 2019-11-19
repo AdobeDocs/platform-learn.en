@@ -38,9 +38,11 @@ audience: all
   + [Understanding Data Governance](governance/understanding-data-governance.md)
   + [Classify data using Governance Labels](governance/classify-data-using-governance-labels.md)
 + Queries{#queries}
+  + [Understanding Query Service](queries/understanding-query-service.md)
+  + [Understanding Data Usage Patterns in Query Service](queries/understanding-data-usage-patterns-with-query-service.md)
+  + [Set up and Use Query Service to build a Dashboard](queries/set-up-and-use-query-service-to-build-a-dashboard.md)
   + [Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Profiles{#profiles}
-
   + [Understanding the Real-time Customer Profile](profiles/understanding-the-real-time-customer-profile.md)
   + [Bring Data into Unified Profile](profiles/bring-data-into-the-real-time-customer-profile.md)
 + Segments{#segments}
