@@ -39,7 +39,7 @@ audience: all
   + [Classify data using Governance Labels](governance/classify-data-using-governance-labels.md)
 + Queries{#queries}
   + [Understanding Query Service](queries/understanding-query-service.md)
-  + [Understanding Data Usage Patterns in Query Service](queries/understanding-data-usage-patterns-with-query-service.md)
+  + [Understanding Data Usage Patterns with Query Service](queries/understanding-data-usage-patterns-with-query-service.md)
   + [Set up and Use Query Service to build a Dashboard](queries/set-up-and-use-query-service-to-build-a-dashboard.md)
   + [Understanding the Value of Dashboards built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Profiles{#profiles}
