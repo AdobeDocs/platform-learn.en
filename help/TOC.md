@@ -33,7 +33,7 @@ audience: all
 + Queries{#queries}
   + [Understanding Query Service](queries/understanding-query-service.md)
   + [Ways to Run Queries](queries/understanding-data-usage-patterns-with-query-service.md)
-  + [The Value of Dashboards](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
+  + [See a Dashboard built with Query Service](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Build a Dashboard](queries/set-up-and-use-query-service-to-build-a-dashboard.md)
 + Profiles{#profiles}
   + [Understanding the Real-time Customer Profile](profiles/understanding-the-real-time-customer-profile.md)
