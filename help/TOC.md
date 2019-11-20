@@ -45,5 +45,7 @@ audience: all
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](identities/understanding-identity-and-identity-graphs.md)
   + [Label, Ingest, and Verify Identity Data](identities/label-ingest-and-verify-identity-data.md)
++ Sandboxes{#sandboxes}
+  + [Use Sandboxes](./sandboxes/use-sandboxes.md)
 + APIs{#apis}
   + [Postman and Experience Platform APIs](apis/postman.md)
