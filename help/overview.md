@@ -10,19 +10,17 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-Label, Ingest, and Verify Identity Data
-
-* **[Label, Ingest, and Verify Identity Data (Video)](identities/label-ingest-and-verify-identity-data.md)**
+* **[Understanding Adobe's Real-time Customer Data Platform (Video)](rtcdp/understanding-the-real-time-customer-data-platform.md)**
     <br>
-    *Label fields as identities and verify that the data has made it to the Adobe Experience Platform Identity Service Private Graph*
+    *Create trusted customer profiles and activate them in real-time*
 
-* **[Understanding the Value of Dashboards built with Query Service (Video)](queries/understanding-the-value-of-dashboards-built-with-query-service.md)**
+* **[Understanding Source Connectors (Video)](datasets/understanding-source-connectors.md)**
     <br>
-    *See a dashboard built using Query Service*
+    *Ingest your data in a seamless and scalable manner*
 
-* **[Understanding Streaming Ingestion (Video)](datasets/understanding-streaming-ingestion.md)**
+* **[Understanding Data Governance (Video)](governance/understanding-data-governance.md)**
     <br>
-    *Stream data to the Real-time Customer Profile in under a second.*
+    *Use Labels, Policies, and Enforcement to make sure your data is being used correctly*
 
 ## Staff Picks
 
@@ -42,29 +40,29 @@ Label, Ingest, and Verify Identity Data
     <p>
   </td>
   <td>
-    <a href="intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md">
-      <img alt="Behind the Scenes: A Customer Experience Powered by Experience Platform video" src="assets/thumb_Behind-the-Scenes.jpg" />
+    <a href="rtcdp/understanding-the-real-time-customer-data-platform.md">
+      <img alt="thumbnail image for the 'Understanding the Real-time Customer Data Platform' video" src="assets/thumb_RTCDP.png" />
     </a>
     <div>
-      <a href="intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md">
-    <strong>Behind the Scenes: A Customer Experience Powered by Experience Platform</strong>
+      <a href="rtcdp/understanding-the-real-time-customer-data-platform.md">
+    <strong>Understanding the Real-time Customer Data Platform (CDP)</strong>
     </a>
     </div>
     <p>
-    <em>Go behind the scenes of Platform</em>
+    <em>Activate your profiles with Real-time CDP</em>
     <p>
   </td>
   <td>
-    <a href="schemas/create-your-first-schema-with-out-of-the-box-components.md">
-      <img alt="thumbnail image for the 'Create your first Schema' video" src="assets/thumb_Create-your-First-Schema.png" />
+    <a href="datasets/understanding-source-connectors.md">
+      <img alt="thumbnail image for the 'Understanding Source connectors' video" src="assets/thumb_Sources.png" />
     </a>
     <div>
-      <a href="schemas/create-your-first-schema-with-out-of-the-box-components.md">
-    <strong>Create your first Schema</strong>
+      <a href="datasets/understanding-source-connectors.md">
+    <strong>Understanding Source Connectors</strong>
     </a>
     </div>
     <p>
-    <em>Build a schema for your dataset</em>
+    <em>Easily ingest your data</em>
     <p>
   </td>
    <!--

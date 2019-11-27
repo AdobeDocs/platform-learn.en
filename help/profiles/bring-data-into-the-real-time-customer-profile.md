@@ -1,8 +1,6 @@
 ---
-title: Bring Data Into the Real-Time Customer Profile
-seo-title: Bring Data Into the Real-Time Customer Profile in Adobe Experience Platform
+title: Bring Data Into the Real-Time Customer Profile in Adobe Experience Platform
 description: The Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for the Real-time Customer Profile by enabling both the schema and corresponding dataset.
-seo-description:
 feature: profile
 topics:
 kt: kt-2702
