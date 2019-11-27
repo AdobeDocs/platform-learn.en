@@ -3,7 +3,7 @@ title: Create a journey with Adobe Journey Orchestration
 description: The following video below explains how to create a new journey, start with an event, use orchestrations controls to control the flow and timing of a journey, and use Actions to engage at points in the journey.
 feature: Journey Orchestration
 topics: Create a journey
-kt: KT-2789
+kt: 2789
 audience: user
 doc-type: video
 activity: use

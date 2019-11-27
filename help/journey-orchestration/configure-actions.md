@@ -3,7 +3,7 @@ title: Configure Actions for Adobe Journey Orchestration
 description: The video explains how to configure an Action for Journey Orchestration and how to use it in a journey.
 feature: Journey Orchestration
 topics: Custom Actions
-kt: KT-2775
+kt: 2775
 audience: developer
 doc-type: video
 activity: setup
