@@ -16,6 +16,7 @@ audience: all
   + [Configure Data Sources](/help/journey-orchestration/configure-data-sources.md)
   + [Configure Actions](/help/journey-orchestration/configure-actions.md)
   + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
+  + [Validate and Publish a Journey](/help/journey-orchestration/validate-and-publish-a-journey.md)
   + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Real-time CDP{#rtcdp}
   + [Understanding Real-time CDP](rtcdp/understanding-the-real-time-customer-data-platform.md)
