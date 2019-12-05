@@ -9,7 +9,7 @@ doc-type: video
 activity: use
 ---
 
-# Create a Journey
+# Validate and Publish a Journey
 
 You can test your journey before its publication, using test profiles. This allows you to analyze how individuals flow in the journey and troubleshoot before publication.
 
