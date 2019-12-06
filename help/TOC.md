@@ -25,6 +25,7 @@ audience: all
   + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
 + Customer Journey Analytics {#cja}
   + [Understanding Customer Journey Analytics](cja/understanding-customer-journey-analytics.md)
+  + [Connecting to Data Sources in Platform](cja/connecting-customer-journey-analytics-to-data-sources-in-platform.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
