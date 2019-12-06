@@ -16,12 +16,15 @@ audience: all
   + [Configure Data Sources](/help/journey-orchestration/configure-data-sources.md)
   + [Configure Actions](/help/journey-orchestration/configure-actions.md)
   + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
+  + [Validate and Publish a Journey](/help/journey-orchestration/validate-and-publish-a-journey.md)
   + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 + Real-time CDP{#rtcdp}
   + [Understanding Real-time CDP](rtcdp/understanding-the-real-time-customer-data-platform.md)
   + [Understanding Real-time CDP UI and Workflow](rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
   + [Understanding Destinations](rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
++ Customer Journey Analytics {#cja}
+  + [Understanding Customer Journey Analytics](cja/understanding-customer-journey-analytics.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)

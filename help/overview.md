@@ -10,6 +10,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+
+* **[Understanding Journey Orchestration (Video)](/help/journey-orchestration/introduction.md)**
+    <br>
+    *Build real-time orchestration use cases leveraging contextual data stored in events or data sources*
+
 * **[Understanding Adobe's Real-time Customer Data Platform (Video)](rtcdp/understanding-the-real-time-customer-data-platform.md)**
     <br>
     *Create trusted customer profiles and activate them in real-time*

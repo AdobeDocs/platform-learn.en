@@ -1,6 +1,6 @@
 ---
 title: Understanding Journey Orchestration
-description: Journey Orchestration provides an intelligent and open ecosystem to activate all relevant live data through scalable, event-based engagement across any channel your business requires from marketing to operations to service. Journey Orchestration can leverage any data in Adobe Experience Platform and any external delivery system to create and deliver compelling experiences. This tutorial introduces the concept of Journey Orchestration,the types of use cases it enables, and the key elements of how Journey Orchestration works.
+description: Journey Orchestration allows you to build real-time orchestration use cases leveraging contextual data stored in events or data sources
 feature: Journey Orchestration
 topics: Introduction
 kt: 2773
@@ -13,7 +13,9 @@ activity: understand
 
 ## Introduction to Journey Orchestration
 
-Journey Orchestration provides an intelligent and open ecosystem to activate all relevant live data through scalable, event-based engagement across any channel your business requires from marketing to operations to service. Journey Orchestration can leverage any data in Adobe Experience Platform and any external delivery system to create and deliver compelling experiences.
+Journey Orchestration allows you to build real-time orchestration use cases leveraging contextual data stored in events or data sources.
+
+Journey Orchestration is an application service integrated with the Experience Platform. It provides an intelligent and open ecosystem to activate all relevant live data through scalable, event-based engagement across any channel your business requires from marketing to operations to service. Journey Orchestration can leverage any data in Adobe Experience Platform and any external delivery system to create and deliver compelling experiences.
 
 The video below introduces
 
@@ -37,7 +39,7 @@ The main steps in preparation for building journeys are:
 ## How to Create, Publish, and Analyze a Journey
 
 1. [Create a Journey](/help/journey-orchestration/create-a-journey.md)
-2. Validate a Journey
+2. [Validate and Publish a Journey](/help/journey-orchestration/validate-and-publish-a-journey.md)
 3. [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
 
 ## Additional Resources
