@@ -19,5 +19,5 @@ Query Service makes it possible for brands to connect the online-to-offline cust
 
 * [Understanding Query Service video](understanding-query-service.md)
 * [Understanding the Value of Dashboards built with Query Service](understanding-the-value-of-dashboards-built-with-query-service.md)
-* [Set up and Use Query Service to Build a Dashboard video](set-up-and-use-query-service-to-build-a-dashboard.md)
+* [Run Queries video](run-queries.md)
 * [Query Service documentation](https://www.adobe.io/apis/experienceplatform/home/services/query-service/query-service.html)
