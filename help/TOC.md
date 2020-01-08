@@ -48,6 +48,9 @@ audience: all
   + [Data Usage Patterns](queries/understanding-data-usage-patterns-with-query-service.md)
   + [Run Queries](queries/run-queries.md)
   + [Build Dashboards](queries/understanding-the-value-of-dashboards-built-with-query-service.md)
++ Data Science Workspace{#data-science-workspace}
+  + [Understanding Data Science Workspace](data-science-workspace/understanding-data-science-workspace.md)
+  + [Build and Deploy a Model](data-science-workspace/build-and-deploy-a-model.md)
 + Profiles{#profiles}
   + [Understanding the Real-time Customer Profile](profiles/understanding-the-real-time-customer-profile.md)
   + [Bring Data into Unified Profile](profiles/bring-data-into-the-real-time-customer-profile.md)
