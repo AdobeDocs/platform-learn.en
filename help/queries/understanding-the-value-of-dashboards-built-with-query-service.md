@@ -20,4 +20,4 @@ With Adobe Experience Platform, brands can ingest, store, structure, and pull al
 * [Run Queries video](run-queries.md)
 * [Understanding Query Service video](understanding-query-service.md)
 * [Understanding Data Usage Patterns with Query Service video](understanding-data-usage-patterns-with-query-service.md)
-* [Query Service documentation](https://www.adobe.io/apis/experienceplatform/home/services/query-service/query-service.html)
+* [Query Service documentation](https://www.adobe.io/apis/experienceplatform/home/query-service/overview.html)
