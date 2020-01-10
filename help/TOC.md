@@ -28,6 +28,7 @@ audience: all
   + [Connecting to Data Sources in Platform](cja/connecting-customer-journey-analytics-to-data-sources-in-platform.md)
   + [Basic Configuration for Data Views](cja/basic-configuration-for-data-views.md)
   + [Attribution Settings in Data Views](cja/attribution-settings-in-data-views.md)
+  + [Understanding How CJA Uses Identity](cja/understanding-how-customer-journey-analytics-uses-identity.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
