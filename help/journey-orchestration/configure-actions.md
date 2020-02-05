@@ -17,7 +17,7 @@ Any service from any provider that can be called through a REST API with a JSON-
 
 The following video explains how to configure an Action for Journey Orchestration and how to use it in a journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/29638?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/29638?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 

@@ -3,7 +3,7 @@ title: Create Segments in Adobe Experience Platform
 description: The segment builder in Adobe Experience Platform gives you the power to build segment rules, apply them to your real-time customer profiles and produce the audiences you need to power your customer experiences.
 feature: segmentation
 topics:
-kt: kt-2704
+kt: 2704
 audience: marketer
 doc-type: video
 activity: use
@@ -13,7 +13,7 @@ activity: use
 
 The segment builder in Adobe Experience Platform gives you the power to build segment rules, apply them to your real-time customer profiles and produce the audiences you need to power your customer experiences.
 
->[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 
