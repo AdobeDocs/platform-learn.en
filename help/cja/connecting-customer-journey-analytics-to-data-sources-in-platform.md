@@ -15,7 +15,7 @@ kt: 3954
 
 Customer Journey Analytics (CJA) gives you Analysis Workspace on top of data sets from Adobe Experience Platform, in order to do cross-channel analysis of your data. This video will show you how to make the connection between CJA and the Platform data sets, including setting the connection to stream ongoing data into CJA from the Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/30140/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/30140/?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 

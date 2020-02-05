@@ -4,7 +4,7 @@ description: Adobe Experience Platform provides a rich set of Identity resolutio
 audience: architect
 feature: identity
 topics:
-kt: kt-2707
+kt: 2707
 doc-type: feature video
 activity: use
 team: TM
@@ -14,7 +14,7 @@ team: TM
 
 This video shows you how to label data fields as identities, ingest Identity data and then verify that the data has made it to the Adobe Experience Platform Identity Service Private Graph.
 
->[!VIDEO](https://video.tv.adobe.com/v/28167?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/28167?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 

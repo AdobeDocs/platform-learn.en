@@ -42,7 +42,7 @@ The following video below explains how to:
 * Define an event in Journey Orchestration
 * Configure source systems to stream events
 
->[!VIDEO](https://video.tv.adobe.com/v/29338?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/29338?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 

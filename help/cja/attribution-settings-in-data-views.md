@@ -15,7 +15,7 @@ kt: 3959
 
 When configuring Data Views in Customer Journey Analytics, you can choose attribution settings in order to control how dimensions and metrics will work together. This video walks you through the defaults, the options, and how metric and dimension attribution settings interact.
 
->[!VIDEO](https://video.tv.adobe.com/v/30185/?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/30185/?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 

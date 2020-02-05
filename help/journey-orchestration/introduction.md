@@ -23,7 +23,7 @@ The video below introduces
 * The types of use cases it enables
 * The key elements of how Journey Orchestration works
 
->[!VIDEO](https://video.tv.adobe.com/v/29307?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/29307?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## How to Configure a Journey
 
