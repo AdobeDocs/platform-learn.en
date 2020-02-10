@@ -18,7 +18,7 @@ The segment builder in Adobe Experience Platform gives you the power to build se
 ## Additional Resources
 
 * [Create Dynamic Segments video](create-dynamic-segments.md)
-* [Create Create Segments Across Classes and Include Segment Context video](create-segments-across-classes-and-include-segment-context.md)
+* [Create Segments Across Classes and Include Segment Context video](create-segments-across-classes-and-include-segment-context.md)
 * [Understanding the Real-Time Customer Profile video](../profiles/bring-data-into-the-real-time-customer-profile.md)
 * [Segment Builder documentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)
 * [Creating segments via API tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_segment_tutorial/creating_a_segment_tutorial.md)
