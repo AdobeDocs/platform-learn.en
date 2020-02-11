@@ -21,4 +21,4 @@ Segment context (segment payload) allows you to provide key contextual details, 
 * [Create Segments video](create-segments.md)
 * [Create Dynamic Segments video](create-dynamic-segments.md)
 * [Understanding the Real-Time Customer Profile video](../profiles/bring-data-into-the-real-time-customer-profile.md)
-* [Segment Builder documentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)
+* [Segment Builder documentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segmentation-overview.md)

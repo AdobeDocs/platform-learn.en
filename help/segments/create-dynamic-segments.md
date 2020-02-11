@@ -18,6 +18,6 @@ Dynamic segments are an advanced segmentation feature in Adobe Experience Platfo
 ## Additional Resources
 
 * [Create Segments video](create-segments.md)
-* [Create Create Segments Across Classes and Include Segment Context video](create-segments-across-classes-and-include-segment-context.md)
+* [Create Segments Across Classes and Include Segment Context video](create-segments-across-classes-and-include-segment-context.md)
 * [Understanding the Real-Time Customer Profile video](../profiles/bring-data-into-the-real-time-customer-profile.md)
-* [Segment Builder documentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!end-user/markdown/segmentation_overview/segmentation.md)
+* [Segment Builder documentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/segmentation/segment-builder-guide.md)
