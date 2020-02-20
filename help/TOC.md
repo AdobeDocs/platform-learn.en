@@ -29,6 +29,10 @@ audience: all
   + [Basic Configuration for Data Views](cja/basic-configuration-for-data-views.md)
   + [Attribution Settings in Data Views](cja/attribution-settings-in-data-views.md)
   + [Understanding How CJA Uses Identity](cja/understanding-how-customer-journey-analytics-uses-identity.md)
+  + [Creating Cross-Channel Visualizations](cja/creating-cross-channel-visualizations-in-customer-journey-analytics.md)
+  + [Cross-Channel Attribution](cja/cross-channel-attribution-in-customer-journey-analytics.md)
+  + [Introduction to Calculated Metrics in Customer Journey Analytics](cja/introduction-to-calculated-metrics-in-customer-journey-analytics.md)
+  + [Moving your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](cja/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
