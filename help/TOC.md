@@ -33,6 +33,8 @@ audience: all
   + [Cross-Channel Attribution](cja/cross-channel-attribution-in-customer-journey-analytics.md)
   + [Introduction to Calculated Metrics in Customer Journey Analytics](cja/introduction-to-calculated-metrics-in-customer-journey-analytics.md)
   + [Moving your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](cja/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.md)
+  + [Creating Cross-Channel Filters](cja/creating-cross-channel-filters-in-customer-journey-analytics.md)
+  + [Moving Adobe Analytics Segments to Customer Journey Analytics](cja/moving-adobe-analytics-segments-to-customer-journey-analytics.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
