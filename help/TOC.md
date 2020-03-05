@@ -18,6 +18,7 @@ audience: all
   + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
   + [Validate and Publish a Journey](/help/journey-orchestration/validate-and-publish-a-journey.md)
   + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
+  + [How to find help with Adobe Journey Orchestration](/help/journey-orchestration/how-to-find-help-with-journey-orchestration.md)
 + Real-time CDP{#rtcdp}
   + [Understanding Real-time CDP](rtcdp/understanding-the-real-time-customer-data-platform.md)
   + [Understanding Real-time CDP UI and Workflow](rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)

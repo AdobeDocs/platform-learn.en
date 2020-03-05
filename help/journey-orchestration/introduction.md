@@ -45,3 +45,4 @@ The main steps in preparation for building journeys are:
 ## Additional Resources
 
 * [Journey Orchestration Documentation](https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html)
+* [How to find help with Adobe Journey Orchestration](/help/journey-orchestration/how-to-find-help-with-journey-orchestration.md)
