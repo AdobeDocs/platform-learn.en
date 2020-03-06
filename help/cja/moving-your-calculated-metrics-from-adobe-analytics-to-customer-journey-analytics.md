@@ -1,5 +1,5 @@
 ---
-title: Moving your Calculated Metrics from Adobe Analytics to Customer Journey Analytics
+title: Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics
 description: In this video, find tips for re-creating your Adobe Analytics Calculated Metrics in Customer Journey Analytics.
 feature: customer journey analytics - calculated metrics
 topics: 
@@ -11,7 +11,7 @@ kt: 3966
 
 ---
 
-# Moving your Calculated Metrics from Adobe Analytics to Customer Journey Analytics
+# Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics
 
 In this video, find tips for re-creating your Adobe Analytics Calculated Metrics in Customer Journey Analytics.
 

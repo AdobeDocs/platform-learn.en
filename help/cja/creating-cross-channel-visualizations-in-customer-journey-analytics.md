@@ -1,5 +1,5 @@
 ---
-title: Creating Cross-Channel Visualizations in Customer Journey Analytics
+title: Create Cross-Channel Visualizations in Customer Journey Analytics
 description: In this video, discover how Customer Journey Analytics allows you to create visualizations that include data from multiple data sets across multiple channels, including merging the data per visitor.
 feature: customer journey analytics
 topics: 
@@ -11,7 +11,7 @@ kt: 3961
 
 ---
 
-# Creating Cross-Channel Visualizations in Customer Journey Analytics
+# Create Cross-Channel Visualizations in Customer Journey Analytics
 
 In this video, discover how Customer Journey Analytics allows you to create visualizations that include data from multiple data sets across multiple channels, including merging the data per visitor.
 

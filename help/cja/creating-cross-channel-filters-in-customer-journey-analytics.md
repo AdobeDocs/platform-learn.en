@@ -1,5 +1,5 @@
 ---
-title: Creating Cross-Channel Filters in Customer Journey Analytics
+title: Create Cross-Channel Filters in Customer Journey Analytics
 description: In this video we discuss how to create filters in Customer Journey Analytics that utilize more than one data source, and more than one channel. You will also see how these filters can be combined in visualizations.
 feature: customer journey analytics
 topics: 
@@ -11,7 +11,7 @@ kt: 3962
 
 ---
 
-# Creating Cross-Channel Filters in Customer Journey Analytics
+# Create Cross-Channel Filters in Customer Journey Analytics
 
 In this video we discuss how to create filters in Customer Journey Analytics that utilize more than one data source, and more than one channel. You will also see how these filters can be combined in visualizations.
 
