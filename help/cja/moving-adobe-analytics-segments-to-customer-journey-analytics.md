@@ -1,5 +1,5 @@
 ---
-title: Moving Adobe Analytics Segments to Customer Journey Analytics
+title: Move Adobe Analytics Segments to Customer Journey Analytics
 description: In this video you will learn tips for re-creating your Adobe Analytics segments as "filters" in Customer Journey Analytics.
 feature: customer journey analytics
 topics: 
@@ -11,7 +11,7 @@ kt: 3967
 
 ---
 
-# Moving Adobe Analytics Segments to Customer Journey Analytics
+# Move Adobe Analytics Segments to Customer Journey Analytics
 
 In this video you will learn tips for re-creating your Adobe Analytics segments as "filters" in Customer Journey Analytics.
 
