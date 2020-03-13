@@ -46,7 +46,7 @@ audience: all
   + [Create your own Mixins and Classes](schemas/create-your-own-mixins-and-classes.md)
 + Data Ingestion{#data-ingestion}
   + Web SDK{#web-sdk}
-    + [Intro to the Debugger](data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
+    + [Introduction to the Debugger](data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
   + [Understanding Data Ingestion](data-ingestion/understanding-data-ingestion.md)
   + [Understanding Streaming Ingestion](data-ingestion/understanding-streaming-ingestion.md)
   + [Create Datasets and Ingest Data](data-ingestion/create-datasets-and-ingest-data.md)
