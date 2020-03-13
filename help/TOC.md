@@ -45,6 +45,8 @@ audience: all
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
   + [Create your own Mixins and Classes](schemas/create-your-own-mixins-and-classes.md)
 + Data Ingestion{#data-ingestion}
+  + Web SDK{#web-sdk}
+    + [Introduction to the Debugger](data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
   + [Understanding Data Ingestion](data-ingestion/understanding-data-ingestion.md)
   + [Understanding Streaming Ingestion](data-ingestion/understanding-streaming-ingestion.md)
   + [Create Datasets and Ingest Data](data-ingestion/create-datasets-and-ingest-data.md)
@@ -52,8 +54,6 @@ audience: all
   + [Ingest Data from Adobe Analytics](data-ingestion/ingest-data-from-adobe-analytics.md)
   + [Ingest Data from Amazon S3](data-ingestion/ingest-data-from-amazon-s3.md)
   + [Ingest Data from Salesforce CRM](data-ingestion/ingest-data-from-salesforce-crm.md)
-  + Web SDK{#web-sdk}
-    + [Ingest Data from Salesforce CRM](data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
 + Data Governance{#data-governance}
   + [Understanding Data Governance](governance/understanding-data-governance.md)
   + [Classify data using Governance Labels](governance/classify-data-using-governance-labels.md)
