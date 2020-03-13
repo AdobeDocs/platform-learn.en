@@ -26,7 +26,7 @@ Journey Orchestration Events are XDM Experience Events that are sent to the Adob
 >* [The Experience Data Model (XDM)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md)
 >* [How to compose XDM Schemas for Experience Events](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md)
 >
->* [Streaming Data Ingestion](/help/datasets/understanding-streaming-ingestion.md)
+>* [Streaming Data Ingestion](/help/data-ingestion/understanding-streaming-ingestion.md)
 >
 >To understand the examples used in the video, you should also familiarize yourself with the following Adobe Experience Platform Services:
 >
@@ -42,7 +42,7 @@ The following video below explains how to:
 * Define an event in Journey Orchestration
 * Configure source systems to stream events
 
->[!VIDEO](https://video.tv.adobe.com/v/29338?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/29338?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 

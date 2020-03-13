@@ -19,7 +19,7 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <br>
     *Create trusted customer profiles and activate them in real-time*
 
-* **[Understanding Source Connectors (Video)](datasets/understanding-source-connectors.md)**
+* **[Understanding Source Connectors (Video)](data-ingestion/understanding-source-connectors.md)**
     <br>
     *Ingest your data in a seamless and scalable manner*
 
@@ -58,11 +58,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
   </td>
   <td>
-    <a href="datasets/understanding-source-connectors.md">
+    <a href="data-ingestion/understanding-source-connectors.md">
       <img alt="thumbnail image for the 'Understanding Source connectors' video" src="assets/thumb_Sources.png" />
     </a>
     <div>
-      <a href="datasets/understanding-source-connectors.md">
+      <a href="data-ingestion/understanding-source-connectors.md">
     <strong>Understanding Source Connectors</strong>
     </a>
     </div>
@@ -72,11 +72,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
   </td>
    <!--
    <td>
-    <a href="datasets/create-datasets-and-ingest-data.md">
+    <a href="data-ingestion/create-datasets-and-ingest-data.md">
       <img alt="thumbnail image for the 'Create Datasets and Ingest Data' video" src="assets/thumb_Create-Datasets-and-Ingest-Data.png" />
     </a>
     <div>
-      <a href="datasets/create-datasets-and-ingest-data.md">
+      <a href="data-ingestion/create-datasets-and-ingest-data.md">
     <strong>Create Datasets and Ingest Data</strong>
     </a>
     </div>

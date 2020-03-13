@@ -22,7 +22,7 @@ This configuration is not required if your journeys only leverage local data com
 
 The following video explains how to: Configure an Experience Platform Data Source and an external data source, as well as how to find and use data in a journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/29406?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/29406?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 

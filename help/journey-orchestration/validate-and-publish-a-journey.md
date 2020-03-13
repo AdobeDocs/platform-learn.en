@@ -18,7 +18,7 @@ The following video below explains how to:
 * Enable and use Test Mode to validate a journey
 * Publish a journey and manage its status
   
->[!VIDEO](https://video.tv.adobe.com/v/30066?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/30066?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 
