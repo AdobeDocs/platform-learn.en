@@ -17,4 +17,4 @@ The Adobe Experience Platform Debugger is a Chrome extension and Firefox add-on 
 
 ## Additional Resources
 
-* [How to Use the Adobe Experience Cloud Debugger (Legacy) video]([understanding-data-ingestion.md](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html)
+* [How to Use the legacy Adobe Experience Cloud Debugger video](https://docs.adobe.com/content/help/en/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html)
