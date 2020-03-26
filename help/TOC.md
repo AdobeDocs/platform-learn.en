@@ -10,6 +10,8 @@ audience: all
 + Introduction to Platform{#intro-to-platform}
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+  + [Key Capabilities](intro-to-platform/key-capabilities.md)
+  + [Architectural Overview](intro-to-platform/architectural-overview.md)
 + Journey Orchestration{#journey-orchestration}
   + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
   + [Configure Streaming Events](/help/journey-orchestration/configure-streaming-events.md)
