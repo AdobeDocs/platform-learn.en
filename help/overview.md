@@ -10,22 +10,17 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-
-* **[Understanding Journey Orchestration (Video)](/help/journey-orchestration/introduction.md)**
+* **[Archiectural Overview (Video)](/help/intro-to-platform/architectural-overview.md)**
     <br>
-    *Build real-time orchestration use cases leveraging contextual data stored in events or data sources*
+    *Take a guided walk-through of an overview diagram and learn the primary components of  Experience Platform*
 
-* **[Understanding Adobe's Real-time Customer Data Platform (Video)](rtcdp/understanding-the-real-time-customer-data-platform.md)**
+* **[Key Capabilities (Video)](/help/intro-to-platform/key-capabilities.md)**
     <br>
-    *Create trusted customer profiles and activate them in real-time*
-
-* **[Understanding Source Connectors (Video)](data-ingestion/understanding-source-connectors.md)**
+    *Learn the key capabilities of Experience Platform*
+    
+* **[Introduction to the Adobe Experience Platform Debugger (Video)](/help/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)**
     <br>
-    *Ingest your data in a seamless and scalable manner*
-
-* **[Understanding Data Governance (Video)](governance/understanding-data-governance.md)**
-    <br>
-    *Use Labels, Policies, and Enforcement to make sure your data is being used correctly*
+    *Debug your web implementations*
 
 ## Staff Picks
 

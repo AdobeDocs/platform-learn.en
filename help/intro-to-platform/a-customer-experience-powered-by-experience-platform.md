@@ -18,3 +18,5 @@ This video follows a hypothetical experience built with Adobe Experience Platfor
 ## Additional Resources
 
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+* [Key Capabilities of Experience Platform](key-capabilities.md)
+* [Architectural Overview of Experience Platform](architectural-overview.md)
