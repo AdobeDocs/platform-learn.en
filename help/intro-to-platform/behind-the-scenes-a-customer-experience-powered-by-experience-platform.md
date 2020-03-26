@@ -18,3 +18,5 @@ In the previous video we saw how an example brand, Luma, was able to create a ri
 ## Additional Resources
 
 * [A Customer Experience Powered by Experience Platform](a-customer-experience-powered-by-experience-platform.md)
+* [Key Capabilities of Experience Platform](key-capabilities.md)
+* [Architectural Overview of Experience Platform](architectural-overview.md)
