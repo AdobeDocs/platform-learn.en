@@ -10,11 +10,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-* **[Archiectural Overview (Video)](/help/intro/architectural-overview.md)**
+* **[Archiectural Overview (Video)](/help/intro-to-platform/architectural-overview.md)**
     <br>
     *Take a guided walk-through of an overview diagram and learn the primary components of  Experience Platform*
 
-* **[Key Capabilities (Video)](/help/intro/key-capabilities.md)**
+* **[Key Capabilities (Video)](/help/intro-to-platform/key-capabilities.md)**
     <br>
     *Learn the key capabilities of Experience Platform*
     
