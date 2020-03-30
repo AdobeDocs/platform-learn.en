@@ -27,11 +27,13 @@ audience: all
 + Customer Journey Analytics {#cja}
   + [Understanding Customer Journey Analytics](cja/understanding-customer-journey-analytics.md)
   + [New Terms and Concepts](cja/new-terms-and-concepts-in-cja.md)
+  + [Architecture and Integrations](cja/architecture-and-integrations-of-cja.md)
   + [Working with Data](cja/working-with-data-in-cja.md)
   + [Connect to Data Sources in Platform](cja/connecting-customer-journey-analytics-to-data-sources-in-platform.md)
   + [Basic Configuration for Data Views](cja/basic-configuration-for-data-views.md)
   + [Attribution Settings in Data Views](cja/attribution-settings-in-data-views.md)
   + [Understanding How CJA Uses Identity](cja/understanding-how-customer-journey-analytics-uses-identity.md)
+  + [Add Past Data to an Existing Connection](cja/add-past-data-to-an-existing-connection-in-cja.md)
   + [Create Cross-Channel Visualizations](cja/creating-cross-channel-visualizations-in-customer-journey-analytics.md)
   + [Cross-Channel Attribution](cja/cross-channel-attribution-in-customer-journey-analytics.md)
   + [Introduction to Filters](cja/introduction-to-filters-in-cja.md)
