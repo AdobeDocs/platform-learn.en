@@ -18,5 +18,5 @@ A high-level introduction to Intelligent Services, which empower marketing analy
 ## Additional Resources
 
 * [Introduction to Attribution AI (video)](introduction-to-attribution-ai.md)
-* * [Introduction to Customer AI (video)](introduction-to-customer-ai.md)
+* [Introduction to Customer AI (video)](introduction-to-customer-ai.md)
 * [Intelligent Services (documentation)](https://docs.adobe.com/content/help/en/experience-platform/intelligent-services/home.html)
