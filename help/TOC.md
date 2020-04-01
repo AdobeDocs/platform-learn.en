@@ -44,6 +44,14 @@ audience: all
   + [Introduction to Filters](cja/introduction-to-filters-in-cja.md)
   + [Create Cross-Channel Filters](cja/creating-cross-channel-filters-in-customer-journey-analytics.md)
   + [Move Adobe Analytics Segments to Customer Journey Analytics](cja/moving-adobe-analytics-segments-to-customer-journey-analytics.md)
++ Intelligent Services {#intelligent-services}
+  + [Intro to Intelligent Services](intelligent-services/introduction-to-intelligent-services.md)
+  + [Intro to Attribution AI](intelligent-services/introduction-to-attribution-ai.md)
+  + [Configure Attribution AI](intelligent-services/configure-attribution-ai.md)
+  + [Use Attribution AI Scores and Insights](intelligent-services/use-attribution-ai-scores-and-insights.md)
+  + [Intro to Customer AI](intelligent-services/introduction-to-customer-ai.md)
+  + [Configure Customer AI](intelligent-services/configure-customer-ai.md)
+  + [Use Customer AI Scores and Insights](intelligent-services/use-customer-ai-scores-and-insights.md)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](schemas/create-your-first-schema-with-out-of-the-box-components.md)
