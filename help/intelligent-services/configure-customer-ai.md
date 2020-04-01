@@ -13,7 +13,7 @@ activity: understand
 
 Learn how to create an instance of Customer AI to predict customer behavior.
 
->[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on
+>[!VIDEO](https://video.tv.adobe.com/v/32665?learn=on)
 
 ## Additional Resources
 
