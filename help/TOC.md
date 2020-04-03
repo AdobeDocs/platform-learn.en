@@ -10,8 +10,13 @@ audience: all
 + Introduction to Platform{#intro-to-platform}
   + [A Customer Experience Powered by Experience Platform](intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+  + [Overview](intro-to-platform/overview.md)
   + [Key Capabilities](intro-to-platform/key-capabilities.md)
-  + [Architectural Overview](intro-to-platform/architectural-overview.md)
+  + [Application and Intelligent Services](intro-to-platform/application-and-intelligent-services.md)
+  + [Integrations with Experience Cloud Applications](intro-to-platform/integrations-with-experience-cloud-applications.md)
+  + [Key Use Cases](intro-to-platform/key-use-cases.md)
+  + [Basic Architecture](intro-to-platform/basic-architecture.md)
+  + [Interface Tour](intro-to-platform/interface-tour.md)
 + Journey Orchestration{#journey-orchestration}
   + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
   + [Configure Streaming Events](/help/journey-orchestration/configure-streaming-events.md)

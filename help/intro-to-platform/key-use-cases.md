@@ -1,22 +1,24 @@
 ---
-title: A Customer Experience Powered by Adobe Experience Platform
-description: This video follows a hypothetical experience built with Adobe Experience Platform, as seen from the perspective of a customer. See how Experience Platform creates a rich, relevant and real-time experience.
-feature:
+title: Key Use Cases of Adobe Experience Platform
+description: This video gives an overview of the four key use cases of Adobe Experience Platform&mdash;real-time customer data platform, customer journey intelligence, delivery and cross-channel experience, and customer experience application development.
+feature: platform
 topics:
-kt: 4339
+kt: 4337
 audience: all
 doc-type: video
 activity: understand
 ---
 
-# A Customer Experience Powered by Experience Platform
+# Key Use Cases of Adobe Experience Platform
 
-This video follows a hypothetical experience built with Adobe Experience Platform, as seen from the perspective of a customer. See how Experience Platform creates a rich, relevant and real-time experience.
+This video gives an overview of the four key use cases of Adobe Experience Platform&mdash;real-time customer data platform, customer journey intelligence, delivery and cross-channel experience, and customer experience application development.
 
->[!VIDEO](https://video.tv.adobe.com/v/27361?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32806?quality=12&learn=on)
 
 ## Additional Resources
 
+
+* [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 * [Overview of Experience Platform (video)](overview.md)
 * [Key Capabilities of Experience Platform (video)](key-capabilities.md)
@@ -24,6 +26,4 @@ This video follows a hypothetical experience built with Adobe Experience Platfor
 * [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
-* [Key Use Cases of Experience Platform (video)](key-use-cases.md)
-
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
