@@ -19,12 +19,12 @@ This video gives a quick tour of Adobe Experience Platform's user interface to s
 
 * [Use Postman and Experience Platform APIs](../apis/postman.md)
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
-* [Roles and Project Phases](roles-and-project-phases.md)
+
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 * [Overview of Experience Platform (video)](overview.md)
 * [Key Capabilities of Experience Platform (video)](key-capabilities.md)
 * [Application and Intelligent Services (video)](application-and-intelligent-services.md)
 * [Integrations with Experience Cloud (video)](integrations-with-experience-cloud.md)
-* [Architecture of Experience Platform (video)](architecture.md)
+* [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)

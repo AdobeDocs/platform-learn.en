@@ -23,7 +23,7 @@ This video gives an overview of the roles involved in a successful Experience Pl
 * [Key Capabilities of Experience Platform (video)](key-capabilities.md)
 * [Application and Intelligent Services (video)](application-and-intelligent-services.md)
 * [Integrations with Experience Cloud (video)](integrations-with-experience-cloud.md)
-* [Architecture of Experience Platform (video)](architecture.md)
+* [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
