@@ -17,6 +17,7 @@ This video walks through an overview diagram and explains the primary components
 
 ## Additional Resources
 
-* [Key Capabilities of Experience Platform](key-capabilities.md)
-* [A Customer Experience Powered by Experience Platform](a-customer-experience-powered-by-experience-platform.md)
-* [Behind the Scenes: A Customer Experience Powered by Experience Platform](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+* [Key Capabilities of Experience Platform (video)](key-capabilities.md)
+* [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
+* [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)

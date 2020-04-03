@@ -1,29 +1,28 @@
 ---
-title: Key Capabilities of Adobe Experience Platform
+title: Application and Intelligent Services built on Adobe Experience Platform
 description: 
 feature: platform
 topics:
-kt: 4332
+kt: 4333
 audience: all
 doc-type: video
 activity: understand
 ---
 
-# Key Capabilities of Adobe Experience Platform
+# Application and Intelligent Services built on Adobe Experience Platform
 
-This video reviews the key capabilities of Adobe Experience Platform:
+This video gives an overview of the Application Services and Intelligent Services built on top of Adobe Experience Platform, which complement the Experience Cloud Applications:
 
-1. Create actionable, intelligent, real-time customer profiles
-1. Enrich data and derive more insights with AI/ML models and data queries
-1. Innovate with open and composable components
-1. Enhance delivery and personalization of real-time experiences
-1. Gain trust with governance, security and privacy Controls
+1. Real-time Customer Data Platform
+1. Journey Orchestration
+1. Customer Journey Analytics
+1. Attribution AI
+1. Customer AI
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32554?quality=12&learn=on)
 
 ## Additional Resources
 
-* [Application and Intelligent Services (video)](application-and-intelligent-services.md)
 * [Integrations with Experience Cloud (video)](integrations-with-experience-cloud.md)
 * [Architecture of Experience Platform (video)](architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
@@ -32,4 +31,5 @@ This video reviews the key capabilities of Adobe Experience Platform:
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 * [Overview of Experience Platform (video)](overview.md)
+* [Key Capabilities of Experience Platform (video)](key-capabilities.md)
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)

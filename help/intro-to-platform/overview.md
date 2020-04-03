@@ -1,23 +1,22 @@
 ---
-title: Behind the Scenes&#58; A Customer Experience Powered by Adobe Experience Platform
-description: In the previous video we saw how an example brand, Luma, was able to create a rich, rewarding and relevant customer experience. This video looks at how Adobe Experience Platform is used to accomplish this journey.
-feature: platform
+title: Overview of Adobe Experience Platform
+description: This video gives a quick overview of what Adobe Experience Platform is and the business challenges it solves.
+feature:
 topics:
-kt: 4340
+kt: 4804
 audience: all
 doc-type: video
 activity: understand
 ---
 
-# Behind the Scenes: A Customer Experience Powered by Experience Platform
+# Overview of Adobe Experience Platform
 
-In the previous video we saw how an example brand, Luma, was able to create a rich, rewarding and relevant customer experience. This video looks at how Adobe Experience Platform is used to accomplish this journey.
+This video gives a quick overview of what Adobe Experience Platform is and the business challenges it solves.
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32797?quality=12&learn=on)
 
 ## Additional Resources
 
-* [Overview of Experience Platform (video)](overview.md)
 * [Key Capabilities of Experience Platform (video)](key-capabilities.md)
 * [Application and Intelligent Services (video)](application-and-intelligent-services.md)
 * [Integrations with Experience Cloud (video)](integrations-with-experience-cloud.md)
@@ -26,4 +25,5 @@ In the previous video we saw how an example brand, Luma, was able to create a ri
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Roles and Project Phases](roles-and-project-phases.md)
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
+* [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
