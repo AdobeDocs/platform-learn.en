@@ -9,7 +9,7 @@ doc-type: video
 activity: understand
 ---
 
-# Interface Tour of Adobe Experience Platform
+# Interface Tour of Experience Platform
 
 This video gives a quick tour of Adobe Experience Platform's user interface to show you how to navigate to Experience Platform from Experience Cloud, the homepage dashboard, the interface's enablement features, the sandbox switcher and navigation elements.
 

@@ -9,7 +9,7 @@ doc-type: video
 activity: understand
 ---
 
-# Overview of Adobe Experience Platform
+# Overview of Experience Platform
 
 This video gives a quick overview of what Adobe Experience Platform is and the business challenges it solves.
 
