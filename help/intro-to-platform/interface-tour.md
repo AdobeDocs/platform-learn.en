@@ -25,6 +25,6 @@ This video gives a quick tour of Adobe Experience Platform's user interface to s
 * [Overview of Experience Platform (video)](overview.md)
 * [Key Capabilities of Experience Platform (video)](key-capabilities.md)
 * [Application and Intelligent Services (video)](application-and-intelligent-services.md)
-* [Integrations with Experience Cloud (video)](integrations-with-experience-cloud.md)
+* [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)

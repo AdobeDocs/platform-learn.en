@@ -19,7 +19,7 @@ This video gives a quick overview of what Adobe Experience Platform is and the b
 
 * [Key Capabilities of Experience Platform (video)](key-capabilities.md)
 * [Application and Intelligent Services (video)](application-and-intelligent-services.md)
-* [Integrations with Experience Cloud (video)](integrations-with-experience-cloud.md)
+* [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)

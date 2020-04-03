@@ -23,7 +23,7 @@ This video gives an overview of the Application Services and Intelligent Service
 
 ## Additional Resources
 
-* [Integrations with Experience Cloud (video)](integrations-with-experience-cloud.md)
+* [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
