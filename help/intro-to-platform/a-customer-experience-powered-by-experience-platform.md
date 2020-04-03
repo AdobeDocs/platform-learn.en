@@ -22,8 +22,8 @@ This video follows a hypothetical experience built with Adobe Experience Platfor
 * [Key Capabilities of Experience Platform (video)](key-capabilities.md)
 * [Application and Intelligent Services (video)](application-and-intelligent-services.md)
 * [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
+* [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
-* [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
