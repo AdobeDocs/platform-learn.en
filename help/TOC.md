@@ -13,10 +13,10 @@ audience: all
   + [Overview](intro-to-platform/overview.md)
   + [Key Capabilities](intro-to-platform/key-capabilities.md)
   + [Application and Intelligent Services](intro-to-platform/application-and-intelligent-services.md)
-  + [Integrations with Experience Cloud Applications](intro-to-platform/integrations-with-experience-cloud.md)
-  + [Architecture](intro-to-platform/basic-architecture.md)
-  + [Interface Tour](intro-to-platform/interface-tour.md)
+  + [Integrations with Experience Cloud Applications](intro-to-platform/integrations-with-experience-cloud-applications.md)
   + [Key Use Cases](intro-to-platform/key-use-cases.md)
+  + [Basic Architecture](intro-to-platform/basic-architecture.md)
+  + [Interface Tour](intro-to-platform/interface-tour.md)
 + Journey Orchestration{#journey-orchestration}
   + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
   + [Configure Streaming Events](/help/journey-orchestration/configure-streaming-events.md)
