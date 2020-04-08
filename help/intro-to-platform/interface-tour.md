@@ -18,7 +18,7 @@ This video gives a quick tour of Experience Platform's user interface to show yo
 ## Additional Resources
 
 * [Use Postman and Experience Platform APIs](../apis/postman.md)
-
+* [Roles and Project Phases (video)](roles-and-project-phases.md)
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 * [Overview of Experience Platform (video)](overview.md)

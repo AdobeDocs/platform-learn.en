@@ -10,6 +10,10 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+* **[Roles and Project Phases (Video)](/help/intro-to-platform/roles-and-project-phases.md)**
+    <br>
+    *Learn the key roles and phases of an Experience Platform project*
+
 * **[Key Capabilities (Video)](/help/intro-to-platform/key-capabilities.md)**
     <br>
     *Learn the key capabilities of Experience Platform*
@@ -17,10 +21,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 * **[Basic Architecture (Video)](/help/intro-to-platform/basic-architecture.md)**
     <br>
     *Take a guided walk-through of an overview diagram to learn the primary components of Experience Platform*
-
-* **[Introduction to the Adobe Experience Platform Debugger (Video)](/help/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)**
-    <br>
-    *Debug your web implementations*
 
 ## Staff Picks
 
