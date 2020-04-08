@@ -17,6 +17,7 @@ audience: all
   + [Key Use Cases](intro-to-platform/key-use-cases.md)
   + [Basic Architecture](intro-to-platform/basic-architecture.md)
   + [Interface Tour](intro-to-platform/interface-tour.md)
+  + [Roles and Project Phases](intro-to-platform/roles-and-project-phases.md)
 + Journey Orchestration{#journey-orchestration}
   + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
   + [Configure Streaming Events](/help/journey-orchestration/configure-streaming-events.md)
