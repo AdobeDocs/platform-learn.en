@@ -24,6 +24,6 @@ In the previous video we saw how an example brand, Luma, was able to create a ri
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
-
+* [Roles and Project Phases (video)](roles-and-project-phases.md)
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)

@@ -25,5 +25,5 @@ This video follows a hypothetical experience built with Adobe Experience Platfor
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
-
+* [Roles and Project Phases (video)](roles-and-project-phases.md)
 * [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)

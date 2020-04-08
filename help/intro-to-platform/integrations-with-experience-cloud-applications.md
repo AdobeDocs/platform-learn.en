@@ -20,7 +20,7 @@ This video gives an overview of how Experience Platform integrates with Experien
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
-
+* [Roles and Project Phases (video)](roles-and-project-phases.md)
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
 * [Overview of Experience Platform (video)](overview.md)

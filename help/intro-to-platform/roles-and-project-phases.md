@@ -1,6 +1,6 @@
 ---
 title: Roles and Project Phases
-description: This video gives an overview of the roles involved in a successful Experience Platform project and the key outcomes of the project phases.
+description: This video gives an overview of the roles, phases, and key outcomes involved in a successful Experience Platform project.
 feature:
 topics:
 kt: 4338
@@ -11,7 +11,7 @@ activity: understand
 
 # Roles and Project Phases
 
-This video gives an overview of the roles involved in a successful Experience Platform project and the key outcomes of the project phases.
+This video gives an overview of the roles, phases, and key outcomes involved in a successful Experience Platform project.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32807?quality=12&learn=on)
 
