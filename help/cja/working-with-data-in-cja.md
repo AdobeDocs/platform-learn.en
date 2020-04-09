@@ -13,7 +13,7 @@ kt: 3964
 
 # Working with Data in Customer Journey Analytics
 
-In this video, you will learn how dataset schemas are translated into variables in Customer Journey Analytics (CJA), as well as how CJA handles very high cardinality.
+In this video, you will learn how [!UICONTROL dataset] [!UICONTROL schemas] are translated into variables in Customer Journey Analytics (CJA), as well as how CJA handles very high cardinality.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32112/?quality=12)
 

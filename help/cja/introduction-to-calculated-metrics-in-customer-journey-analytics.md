@@ -11,9 +11,9 @@ kt: 4448
 
 ---
 
-# Introduction to Calculated Metrics in Customer Journey Analytics
+# Introduction to [!UICONTROL Calculated Metrics] in Customer Journey Analytics
 
-In this video, we'll walk through the basics of creating Calculated Metrics in Customer Journey Analytics.
+In this video, we'll walk through the basics of creating [!UICONTROL Calculated Metrics] in Customer Journey Analytics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31787/?quality=12)
 
