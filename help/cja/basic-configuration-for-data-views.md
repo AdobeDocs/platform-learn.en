@@ -19,5 +19,5 @@ Once you have created a [!UICONTROL connection] in Customer Journey Analytics to
 
 ## Additional Resources
 
-* [[!UICONTROL Attribution] Settings in Data Views](attribution-settings-in-data-views.md)
+* [Attribution Settings in Data Views](attribution-settings-in-data-views.md)
 * [Customer Journey Analytics - Data Views Documentation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-dataviews/create-dataview.html)

@@ -19,5 +19,5 @@ When configuring [!UICONTROL Data Views] in Customer Journey Analytics, you can 
 
 ## Additional Resources
 
-* [Basic Configuration for [!UICONTROL Data Views]](basic-configuration-for-data-views.md)
-* [Customer Journey Analytics - [!UICONTROL Data Views] Configuration Documentation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-dataviews/configure-dataviews.html).
+* [Basic Configuration for Data Views](basic-configuration-for-data-views.md)
+* [Customer Journey Analytics - Data Views Configuration Documentation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-dataviews/configure-dataviews.html).
