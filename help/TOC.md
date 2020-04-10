@@ -44,7 +44,6 @@ audience: all
   + [Add Past Data to an Existing Connection](cja/add-past-data-to-an-existing-connection-in-cja.md)
   + [Create Cross-Channel Visualizations](cja/creating-cross-channel-visualizations-in-customer-journey-analytics.md)
   + [Cross-Channel Attribution](cja/cross-channel-attribution-in-customer-journey-analytics.md)
-  + [Introduction to Filters](cja/introduction-to-filters-in-cja.md)
   + [Introduction to Calculated Metrics in Customer Journey Analytics](cja/introduction-to-calculated-metrics-in-customer-journey-analytics.md)
   + [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](cja/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.md)
   + [Introduction to Filters](cja/introduction-to-filters-in-cja.md)

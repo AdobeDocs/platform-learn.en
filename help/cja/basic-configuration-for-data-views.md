@@ -11,9 +11,9 @@ kt: 3958
 
 ---
 
-# Basic Configuration for Data Views in Customer Journey Analytics
+# Basic Configuration for [!UICONTROL Data Views] in Customer Journey Analytics
 
-Once you have created a connection in Customer Journey Analytics to data sets in the Adobe Experience Platform, you need to create a Data View for that Connection, so that you can use the data in Analysis Workspace on Platform. This video walks you through the basic configuration of a Data View.
+Once you have created a [!UICONTROL connection] in Customer Journey Analytics to [!UICONTROL datasets] in the Adobe Experience Platform, you need to create a [!UICONTROL Data View] for that [!UICONTROL Connection], so that you can use the data in Analysis Workspace on Platform. This video walks you through the basic configuration of a [!UICONTROL Data View].
 
 >[!VIDEO](https://video.tv.adobe.com/v/30186/?quality=12&enable10seconds=on&speedcontrol=on)
 

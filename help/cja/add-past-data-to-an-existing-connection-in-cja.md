@@ -11,7 +11,7 @@ kt: 3965
 
 ---
 
-# Add Past Data to an Existing Connection in Customer Journey Analytics
+# Add Past Data to an Existing [!UICONTROL Connection] in Customer Journey Analytics
 
 In this video, learn about adding past data (data that has a previous timestamp associated with it) into your existing Customer Journey Analytics analysis via [!UICONTROL connections] and [!UICONTROL data views].
 
