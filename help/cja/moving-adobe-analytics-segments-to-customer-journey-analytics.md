@@ -11,9 +11,9 @@ kt: 3967
 
 ---
 
-# Move Adobe Analytics Segments to Customer Journey Analytics
+# Move Adobe Analytics [!UICONTROL Segments] to Customer Journey Analytics
 
-In this video you will learn tips for re-creating your Adobe Analytics segments as "filters" in Customer Journey Analytics.
+In this video you will learn tips for re-creating your Adobe Analytics [!UICONTROL segments] as "[!UICONTROL filters]" in Customer Journey Analytics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31982/?quality=12)
 

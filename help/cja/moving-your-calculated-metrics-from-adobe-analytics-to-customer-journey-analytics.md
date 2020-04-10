@@ -11,9 +11,9 @@ kt: 3966
 
 ---
 
-# Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics
+# Move your [!UICONTROL Calculated Metrics] from Adobe Analytics to Customer Journey Analytics
 
-In this video, find tips for re-creating your Adobe Analytics Calculated Metrics in Customer Journey Analytics.
+In this video, find tips for re-creating your Adobe Analytics [!UICONTROL Calculated Metrics] in Customer Journey Analytics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31788/?quality=12)
 

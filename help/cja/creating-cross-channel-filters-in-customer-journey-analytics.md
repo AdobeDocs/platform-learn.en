@@ -11,9 +11,9 @@ kt: 3962
 
 ---
 
-# Create Cross-Channel Filters in Customer Journey Analytics
+# Create Cross-Channel [!UICONTROL Filters] in Customer Journey Analytics
 
-In this video we discuss how to create filters in Customer Journey Analytics that utilize more than one data source, and more than one channel. You will also see how these filters can be combined in visualizations.
+In this video we discuss how to create [!UICONTROL filters] in Customer Journey Analytics that utilize more than one data source, and more than one channel. You will also see how these [!UICONTROL filters] can be combined in [!UICONTROL visualizations].
 
 >[!VIDEO](https://video.tv.adobe.com/v/31983/?quality=12)
 

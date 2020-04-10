@@ -11,9 +11,9 @@ kt: 3963
 
 ---
 
-# Cross-Channel Attribution in Customer Journey Analytics
+# Cross-Channel [!UICONTROL Attribution] in Customer Journey Analytics
 
-In this video, we will show how you can use visualizations to show attribution (give credit) across channels in Customer Journey Analytics.
+In this video, we will show how you can use [!UICONTROL visualizations] to show [!UICONTROL attribution] (give credit) across channels in Customer Journey Analytics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/31772/?quality=12)
 

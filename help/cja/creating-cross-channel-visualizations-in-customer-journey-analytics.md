@@ -11,9 +11,9 @@ kt: 3961
 
 ---
 
-# Create Cross-Channel Visualizations in Customer Journey Analytics
+# Create Cross-Channel [!UICONTROL Visualizations] in Customer Journey Analytics
 
-In this video, discover how Customer Journey Analytics allows you to create visualizations that include data from multiple data sets across multiple channels, including merging the data per visitor.
+In this video, discover how Customer Journey Analytics allows you to create [!UICONTROL visualizations] that include data from multiple [!UICONTROL datasets] across multiple channels, including merging the data per [!UICONTROL visitor].
 
 >[!VIDEO](https://video.tv.adobe.com/v/31771/?quality=12)
 

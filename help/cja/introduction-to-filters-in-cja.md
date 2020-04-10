@@ -11,9 +11,9 @@ kt: 4447
 
 ---
 
-# Introduction to Filters in Customer Journey Analytics
+# Introduction to [!UICONTROL Filters] in Customer Journey Analytics
 
-This video will introduce you to filters and the Filter Builder in Customer Journey Analytics.
+This video will introduce you to [!UICONTROL filters] and the [!UICONTROL Filter Builder] in Customer Journey Analytics.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32114/?quality=12)
 
