@@ -84,8 +84,9 @@ audience: all
   + [Understanding Data Science Workspace](data-science-workspace/understanding-data-science-workspace.md)
   + [Build and Deploy a Model](data-science-workspace/build-and-deploy-a-model.md)
 + Profiles{#profiles}
-  + [Understanding the Real-time Customer Profile](profiles/understanding-the-real-time-customer-profile.md)
-  + [Bring Data into Unified Profile](profiles/bring-data-into-the-real-time-customer-profile.md)
+  + [Understanding Real-time Customer Profile](profiles/understanding-the-real-time-customer-profile.md)
+  + [Overview Diagram](profiles/overview-diagram.md)
+  + [Bring Data into Real-time Customer Profile](profiles/bring-data-into-the-real-time-customer-profile.md)
 + Segments{#segments}
   + [Create Segments](segments/create-segments.md)
   + [Create Dynamic Segments](segments/create-dynamic-segments.md)
