@@ -1,6 +1,6 @@
 ---
-title: Understanding the Real-Time Customer Profile in Adobe Experience Platform
-description: The Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey.
+title: Understanding Real-Time Customer Profile in Adobe Experience Platform
+description: Real-Time Customer Profile powers cross-channel personalization at scale through each phase of the customer journey.
 feature: profile
 topics:
 kt: 2701
@@ -9,13 +9,14 @@ doc-type: video
 activity: understand
 ---
 
-# Understanding the Real-Time Customer Profile
+# Understanding Real-Time Customer Profile
 
-The Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey.
+Real-Time Customer Profile powers cross-channel personalization at scale through each phase of the customer journey.
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&enable10seconds=on&speedcontrol=on)
 
 ## Additional Resources
 
-* [Bring Data Into the Real-Time Customer Profile video](bring-data-into-the-real-time-customer-profile.md)
-* [Unified Profile documentation](https://www.adobe.com/go/profile-overview-en)
+* [Overview Diagram of Real-Time Customer Profile video](overview-diagram.md)
+* [Bring Data into  Real-Time Customer Profile video](bring-data-into-the-real-time-customer-profile.md)
+* [Real-time Customer Profile documentation](https://www.adobe.com/go/profile-overview-en)
