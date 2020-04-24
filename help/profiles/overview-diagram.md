@@ -1,6 +1,6 @@
 ---
 title: Overview Diagram of Real-time Customer Profile
-description: This video walks you through an overview diagram illustrating Real-time Customer Profile capability of Adobe Experience Platform.
+description: This video walks you through an overview diagram illustrating the Real-time Customer Profile capability of Adobe Experience Platform.
 feature: profile
 topics:
 kt: 4943
@@ -10,7 +10,7 @@ activity: understanding
 
 # Overview Diagram of Real-time Customer Profile
 
-This video walks you through an overview diagram illustrating Real-time Customer Profile capability of Adobe Experience Platform.
+This video walks you through an overview diagram illustrating the Real-time Customer Profile capability of Adobe Experience Platform.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33600?quality=12&learn=on)
 
