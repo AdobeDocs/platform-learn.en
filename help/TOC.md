@@ -32,7 +32,7 @@ audience: all
   + [Understanding Real-time CDP UI and Workflow](rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
   + [Understanding Destinations](rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
-  + [Enforce Data Usage Policies in Real-time CDP](governance/enforce-data-usage-policies-in-real-time-cdp.html)
+  + [Enforce Data Usage Policies in Real-time CDP](https://docs.adobe.com/content/help/en/platform-learn/tutorials/governance/enforce-data-usage-policies-in-real-time-cdp.html)
 + Customer Journey Analytics {#cja}
   + [Understanding Customer Journey Analytics](cja/understanding-customer-journey-analytics.md)
   + [New Terms and Concepts](cja/new-terms-and-concepts-in-cja.md)
