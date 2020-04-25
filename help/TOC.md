@@ -32,6 +32,7 @@ audience: all
   + [Understanding Real-time CDP UI and Workflow](rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
   + [Understanding Destinations](rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](rtcdp/create-destinations-and-activate-data.md)
+  + [Enforce Data Usage Policies in Real-time CDP](governance/enforce-data-usage-policies-in-real-time-cdp.html)
 + Customer Journey Analytics {#cja}
   + [Understanding Customer Journey Analytics](cja/understanding-customer-journey-analytics.md)
   + [New Terms and Concepts](cja/new-terms-and-concepts-in-cja.md)
@@ -74,6 +75,8 @@ audience: all
 + Data Governance{#data-governance}
   + [Understanding Data Governance](governance/understanding-data-governance.md)
   + [Classify data using Governance Labels](governance/classify-data-using-governance-labels.md)
+  + [Create Data Usage Policies](governance/create-data-usage-policies.md)
+  + [Enforce Data Usage Policies in Real-time CDP](governance/enforce-data-usage-policies-in-real-time-cdp.md)
 + Queries{#queries}
   + [Understanding Query Service](queries/understanding-query-service.md)
   + [Data Usage Patterns](queries/understanding-data-usage-patterns-with-query-service.md)
