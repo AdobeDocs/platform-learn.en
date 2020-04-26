@@ -4,7 +4,7 @@ description: Governance labels in Adobe Experience Platform enable you to tag an
 feature: governance
 topics:
 kt: 3992
-audience: data-stewards, architect
+audience: data-steward, architect
 doc-type: video
 activity: understand
 ---
@@ -17,5 +17,7 @@ Governance labels in Adobe Experience Platform enable you to tag and classify da
 
 ## Additional Resources
 
+* [Create Data Usage Policies video](create-data-usage-policies.md)
+* [Enforce Data Usage Policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
 * [Understanding Data Governance video](understanding-data-governance.md)
-* [Data usage labels user guide documentation](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html#!api-specification/markdown/narrative/tutorials/dule/dule_working_with_labels.md)
+* [Data usage labels documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/labels/overview.html)

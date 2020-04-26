@@ -18,5 +18,7 @@ Adobe Experience Platform provides an easily extensible Governance framework tha
 ## Additional Resources
 
 * [Classify data using Governance Labels video](classify-data-using-governance-labels.md)
-* [Data Governance in Platform documentation](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html)
+* [Create Data Usage Policies video](create-data-usage-policies.md)
+* [Enforce Data Usage Policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
+* [Data Governance in Platform documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/home.html)
 * [Data Governance in Real-time CDP documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/privacy/data-governance-overview.html)
