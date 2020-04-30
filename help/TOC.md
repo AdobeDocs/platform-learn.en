@@ -129,7 +129,7 @@ audience: all
   + [Publish a Model as a Service (API)](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/publish-model-service-api.html)
   + [Package source files into a recipe](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html)
   + [Import a Packaged Recipe](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html)
-  + [Import a packaged recipe (API)](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html))
+  + [Import a packaged recipe (API)](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html)
   + [Train and evaluate a model](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/train-evaluate-model-ui.html)
   + [Train and evaluate a model (API)](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/train-evaluate-model-api.html)
   + [Score a model](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/score-model-ui.html)
