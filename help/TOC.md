@@ -82,9 +82,9 @@ audience: all
   + [Stream Time Series Data (API)](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
   + [Stream Multiple Messages in a Single request (API)](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
   + [Understanding Source Connectors](data-ingestion/understanding-source-connectors.md)
-  + [Adobe Application Sources]
+  + [Adobe Application Sources]{#adobe-application-sources}
     + [Ingest Data from Adobe Analytics](data-ingestion/ingest-data-from-adobe-analytics.md)
-  + Cloud Storage Sources
+  + Cloud Storage Sources{#cloud-storage-sources}
     + [Ingest Data from Amazon S3](data-ingestion/ingest-data-from-amazon-s3.md)
     + [Create an Amazon S3 or Azure Blob connector](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/cloud-storage/blob-s3.html)
     + [Create an Amazon S3 connector (API)](https://docs.adobe.com/content/help/en/experience-platform/sources/api-tutorials/create/cloud-storage/s3.html)
@@ -99,14 +99,14 @@ audience: all
     + [Collect cloud storage data through source connectors](https://docs.adobe.com/content/help/en/experience-platform/sources/api-tutorials/collect/cloud-storage.html)
     + [Ingest parquet data from a third-party cloud storage system](https://docs.adobe.com/content/help/en/experience-platform/sources/api-tutorials/cloud-storage-parquet.html)
     + [Configure a dataflow for a cloud storage connector](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/dataflow/cloud-storage.html)
-  + CRM Sources
+  + CRM Sources{#crm-sources}
     + [Ingest Data from Salesforce CRM](data-ingestion/ingest-data-from-salesforce-crm.md)
-  + Customer Success Sources
-  + Database Sources
-  + Marketing Automation Sources
-  + Payments Sources
-  + Protocol Sources
-  + Streaming Sources
+  + Customer Success Sources{#customer-success-sources}
+  + Database Sources{#database-sources}
+  + Marketing Automation Sources{#marketing-automation-sources}
+  + Payments Sources{#payments-sources}
+  + Protocol Sources{#protocol-sources}
+  + Streaming Sources{#streaming-sources}
 + Data Governance{#data-governance}
   + [Understanding Data Governance](governance/understanding-data-governance.md)
   + [Classify data using Governance Labels](governance/classify-data-using-governance-labels.md)
