@@ -6,7 +6,7 @@ audience: all
 
 # Adobe Experience Platform Tutorials {#tutorials}
 
-+ [Overview](overview.md)
++ [Overview](/help/overview.md)
 + Introduction to Platform{#intro-to-platform}
   + [A Customer Experience Powered by Experience Platform](/help/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the Scenes: A Customer Experience Powered by Experience Platform](/help/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
