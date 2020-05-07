@@ -1,0 +1,103 @@
+---
+user-guide-title: Adobe Experience Platform Tutorials
+user-guide-url: /content/help/en/platform-learn/tutorials/overview.html
+audience: all
+---
+
+# Adobe Experience Platform Tutorials {#tutorials}
+
++ [Overview](/help//help/overview.md)
++ Introduction to Platform{#intro-to-platform}
+  + [A Customer Experience Powered by Experience Platform](/help//help/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+  + [Behind the Scenes: A Customer Experience Powered by Experience Platform](/help//help/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+  + [Overview](/help//help/intro-to-platform/overview.md)
+  + [Key Capabilities](/help//help/intro-to-platform/key-capabilities.md)
+  + [Application and Intelligent Services](/help//help/intro-to-platform/application-and-intelligent-services.md)
+  + [Integrations with Experience Cloud Applications](/help//help/intro-to-platform/integrations-with-experience-cloud-applications.md)
+  + [Key Use Cases](/help//help/intro-to-platform/key-use-cases.md)
+  + [Basic Architecture](/help//help/intro-to-platform/basic-architecture.md)
+  + [Interface Tour](/help//help/intro-to-platform/interface-tour.md)
+  + [Roles and Project Phases](/help//help/intro-to-platform/roles-and-project-phases.md)
++ Journey Orchestration{#journey-orchestration}
+  + [Understanding Journey Orchestration](/help//help/journey-orchestration/introduction.md)
+  + [Configure Streaming Events](/help//help/journey-orchestration/configure-streaming-events.md)
+  + [Configure Data Sources](/help//help/journey-orchestration/configure-data-sources.md)
+  + [Configure Actions](/help//help/journey-orchestration/configure-actions.md)
+  + [Create a Journey](/help//help/journey-orchestration/create-a-journey.md)
+  + [Validate and Publish a Journey](/help//help/journey-orchestration/validate-and-publish-a-journey.md)
+  + [Analyze a Journey via Reporting Tools](/help//help/journey-orchestration/reporting.md)
+  + [How to find help with Adobe Journey Orchestration](/help//help/journey-orchestration/how-to-find-help-with-journey-orchestration.md)
++ Real-time CDP{#rtcdp}
+  + [Understanding Real-time CDP](/help//help/rtcdp/understanding-the-real-time-customer-data-platform.md)
+  + [Understanding Real-time CDP UI and Workflow](/help//help/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+  + [Understanding Destinations](/help//help/rtcdp/understanding-destinations.md)
+  + [Create Destinations and Activate Data](/help//help/rtcdp/create-destinations-and-activate-data.md)
+  + [Enforce Data Usage Policies in Real-time CDP](/help//help/https://docs.adobe.com/content/help/en/platform-learn/tutorials/governance/enforce-data-usage-policies-in-real-time-cdp.html)
++ Customer Journey Analytics {#cja}
+  + [Understanding Customer Journey Analytics](/help//help/cja/understanding-customer-journey-analytics.md)
+  + [New Terms and Concepts](/help//help/cja/new-terms-and-concepts-in-cja.md)
+  + [Architecture and Integrations](/help//help/cja/architecture-and-integrations-of-cja.md)
+  + [Working with Data](/help//help/cja/working-with-data-in-cja.md)
+  + [Connect to Data Sources in Platform](/help//help/cja/connecting-customer-journey-analytics-to-data-sources-in-platform.md)
+  + [Basic Configuration for Data Views](/help//help/cja/basic-configuration-for-data-views.md)
+  + [Attribution Settings in Data Views](/help//help/cja/attribution-settings-in-data-views.md)
+  + [Understanding How CJA Uses Identity](/help//help/cja/understanding-how-customer-journey-analytics-uses-identity.md)
+  + [Add Past Data to an Existing Connection](/help//help/cja/add-past-data-to-an-existing-connection-in-cja.md)
+  + [Create Cross-Channel Visualizations](/help//help/cja/creating-cross-channel-visualizations-in-customer-journey-analytics.md)
+  + [Cross-Channel Attribution](/help//help/cja/cross-channel-attribution-in-customer-journey-analytics.md)
+  + [Introduction to Calculated Metrics in Customer Journey Analytics](/help//help/cja/introduction-to-calculated-metrics-in-customer-journey-analytics.md)
+  + [Move your Calculated Metrics from Adobe Analytics to Customer Journey Analytics](/help//help/cja/moving-your-calculated-metrics-from-adobe-analytics-to-customer-journey-analytics.md)
+  + [Introduction to Filters](/help//help/cja/introduction-to-filters-in-cja.md)
+  + [Create Cross-Channel Filters](/help//help/cja/creating-cross-channel-filters-in-customer-journey-analytics.md)
+  + [Move Adobe Analytics Segments to Customer Journey Analytics](/help//help/cja/moving-adobe-analytics-segments-to-customer-journey-analytics.md)
++ Intelligent Services {#intelligent-services}
+  + [Intro to Intelligent Services](/help//help/intelligent-services/introduction-to-intelligent-services.md)
+  + [Intro to Attribution AI](/help//help/intelligent-services/introduction-to-attribution-ai.md)
+  + [Configure Attribution AI](/help/intelligent-services/configure-attribution-ai.md)
+  + [Use Attribution AI Scores and Insights](/help/intelligent-services/use-attribution-ai-scores-and-insights.md)
+  + [Intro to Customer AI](/help/intelligent-services/introduction-to-customer-ai.md)
+  + [Configure Customer AI](/help/intelligent-services/configure-customer-ai.md)
+  + [Use Customer AI Scores and Insights](/help/intelligent-services/use-customer-ai-scores-and-insights.md)
++ Schemas{#schemas}
+  + [Understanding the XDM System and Experience Data Model](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md)
+  + [Create your first Schema](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md)
+  + [Create your own Mixins and Classes](/help/schemas/create-your-own-mixins-and-classes.md)
++ Data Ingestion{#data-ingestion}
+  + Web SDK{#web-sdk}
+    + [Introduction to the Debugger](/help/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
+  + [Understanding Data Ingestion](/help/data-ingestion/understanding-data-ingestion.md)
+  + [Understanding Streaming Ingestion](/help/data-ingestion/understanding-streaming-ingestion.md)
+  + [Create Datasets and Ingest Data](/help/data-ingestion/create-datasets-and-ingest-data.md)
+  + [Understanding Source Connectors](/help/data-ingestion/understanding-source-connectors.md)
+  + [Ingest Data from Adobe Analytics](/help/data-ingestion/ingest-data-from-adobe-analytics.md)
+  + [Ingest Data from Amazon S3](/help/data-ingestion/ingest-data-from-amazon-s3.md)
+  + [Ingest Data from Salesforce CRM](/help/data-ingestion/ingest-data-from-salesforce-crm.md)
++ Data Governance{#data-governance}
+  + [Understanding Data Governance](/help/governance/understanding-data-governance.md)
+  + [Classify data using Governance Labels](/help/governance/classify-data-using-governance-labels.md)
+  + [Create Data Usage Policies](/help/governance/create-data-usage-policies.md)
+  + [Enforce Data Usage Policies in Real-time CDP](/help/governance/enforce-data-usage-policies-in-real-time-cdp.md)
++ Queries{#queries}
+  + [Understanding Query Service](/help/queries/understanding-query-service.md)
+  + [Data Usage Patterns](/help/queries/understanding-data-usage-patterns-with-query-service.md)
+  + [Run Queries](/help/queries/run-queries.md)
+  + [Build Dashboards](/help/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
++ Data Science Workspace{#data-science-workspace}
+  + [Understanding Data Science Workspace](/help/data-science-workspace/understanding-data-science-workspace.md)
+  + [Build and Deploy a Model](/help/data-science-workspace/build-and-deploy-a-model.md)
++ Profiles{#profiles}
+  + [Understanding Real-time Customer Profile](/help/profiles/understanding-the-real-time-customer-profile.md)
+  + [Overview Diagram](/help/profiles/overview-diagram.md)
+  + [Bring Data into Real-time Customer Profile](/help/profiles/bring-data-into-the-real-time-customer-profile.md)
++ Segments{#segments}
+  + [Create Segments](/help/segments/create-segments.md)
+  + [Create Dynamic Segments](/help/segments/create-dynamic-segments.md)
+  + [Create Segments Across Classes and Include Segment Context](/help/segments/create-segments-across-classes-and-include-segment-context.md)
++ Identities{#identities}
+  + [Understanding Identity and Identity Graphs](/help/identities/understanding-identity-and-identity-graphs.md)
+  + [Label, Ingest, and Verify Identity Data](/help/identities/label-ingest-and-verify-identity-data.md)
++ Sandboxes{#sandboxes}
+  + [Use Sandboxes](/help/./sandboxes/use-sandboxes.md)
++ APIs{#apis}
+  + [Postman and Experience Platform APIs](/help/apis/postman.md)
++ [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://docs-stg.corp.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
