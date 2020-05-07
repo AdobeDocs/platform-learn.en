@@ -66,4 +66,4 @@ audience: all
   + [Use Sandboxes](/help/sandboxes/use-sandboxes.md)
 + APIs{#apis}
   + [Postman and Experience Platform APIs](/help/apis/postman.md)
-+ [Getting Started with Platform for Data Architects and Data Engineers](/help/getting-started-for-data-architects-and-data-engineers/overview.md)
++ [Getting Started with Platform for Data Architects and Data Engineers](/help/tutorial-data-architect-and-engineer/overview.md)
