@@ -8,8 +8,8 @@ audience: all
 
 + [Overview](overview.md)
 + [Create a Sandbox](create-a-sandbox.md)
-+ [Create a Profile Schema](create-a-profile-schema.md)
-+ [Create an Event Schema](create-an-event-schema.md)
++ [Create a Profile Schema](create-a-profile-based-schema.md)
++ [Create an Event Schema](create-an-event-based-schema.md)
 + [Create Datasets](create-datasets.md)
 + [Stitch Profiles](stitch-profiles.md)
 + [Create Governance Policies](create-governance-policies.md)
