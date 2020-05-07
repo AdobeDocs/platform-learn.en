@@ -12,3 +12,11 @@ activity: implement
 # Ingest Streaming Data
 
 Lorem Ipsum
+
+## Create a Launch Configuration
+
+## Install the Web SDK Extension
+
+## Create Rules to Send Data
+
+## Use the Data Layer to XDM Mapper
