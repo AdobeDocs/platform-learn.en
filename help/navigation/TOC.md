@@ -32,7 +32,7 @@ audience: all
   + [Understanding Real-time CDP UI and Workflow](/help/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
   + [Understanding Destinations](/help/rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](/help/rtcdp/create-destinations-and-activate-data.md)
-  + [Enforce Data Usage Policies in Real-time CDP](/help/https://docs.adobe.com/content/help/en/platform-learn/tutorials/governance/enforce-data-usage-policies-in-real-time-cdp.html)
+  + [Enforce Data Usage Policies in Real-time CDP](https://docs.adobe.com/content/help/en/platform-learn/tutorials/governance/enforce-data-usage-policies-in-real-time-cdp.html)
 + Customer Journey Analytics {#cja}
   + [Understanding Customer Journey Analytics](/help/cja/understanding-customer-journey-analytics.md)
   + [New Terms and Concepts](/help/cja/new-terms-and-concepts-in-cja.md)
@@ -97,7 +97,7 @@ audience: all
   + [Understanding Identity and Identity Graphs](/help/identities/understanding-identity-and-identity-graphs.md)
   + [Label, Ingest, and Verify Identity Data](/help/identities/label-ingest-and-verify-identity-data.md)
 + Sandboxes{#sandboxes}
-  + [Use Sandboxes](/help/./sandboxes/use-sandboxes.md)
+  + [Use Sandboxes](/help/sandboxes/use-sandboxes.md)
 + APIs{#apis}
   + [Postman and Experience Platform APIs](/help/apis/postman.md)
 + [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://docs-stg.corp.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
