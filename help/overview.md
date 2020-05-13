@@ -10,13 +10,13 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-* **[Roles and Project Phases (Video)](/help/intro-to-platform/roles-and-project-phases.md)**
+* **[Introduction to Adobe Experience Platform Web SDK and Edge Network video](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)**
     <br>
-    *Learn the key roles and phases of an Experience Platform project*
+    *Learn how Web SDK will simplify your implementations and improve page performance*
 
-* **[Key Capabilities (Video)](/help/intro-to-platform/key-capabilities.md)**
+* **[Demo of Adobe Experience Platform Web SDK and Edge Network video](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)**
     <br>
-    *Learn the key capabilities of Experience Platform*
+    *See a demo of Web SDK and a single call being sent to Platform, Analytics, Audience Manager, and Target*
 
 * **[Basic Architecture (Video)](/help/intro-to-platform/basic-architecture.md)**
     <br>
