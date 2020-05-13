@@ -64,8 +64,8 @@ audience: all
   + [Create your own Mixins and Classes](/help/schemas/create-your-own-mixins-and-classes.md)
 + Data Ingestion{#data-ingestion}
   + Web SDK{#web-sdk}
-    + [Introduction to Web SDK and Edge Netowrk](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
-    + [Demo of Web SDK and Edge Netowrk](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
+    + [Introduction to Web SDK and Edge Network](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
+    + [Demo of Web SDK and Edge Network](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
     + [Introduction to the Debugger](/help/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
   + [Understanding Data Ingestion](/help/data-ingestion/understanding-data-ingestion.md)
   + [Understanding Streaming Ingestion](/help/data-ingestion/understanding-streaming-ingestion.md)
