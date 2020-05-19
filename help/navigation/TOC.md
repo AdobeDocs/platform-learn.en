@@ -102,4 +102,3 @@ audience: all
   + [Use Sandboxes](/help/sandboxes/use-sandboxes.md)
 + APIs{#apis}
   + [Postman and Experience Platform APIs](/help/apis/postman.md)
-+ [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://docs-stg.corp.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
