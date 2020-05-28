@@ -10,6 +10,10 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+* **[Demo of Real-time Customer Data Platform (Video)](/help/rtcdp/demo.md)**
+    <br>
+    *See a demo of a personalized experience build with Real-time CDP*
+
 * **[Introduction to Adobe Experience Platform Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)**
     <br>
     *Learn how Web SDK will simplify your implementations and improve page performance*
@@ -17,10 +21,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 * **[Demo of Adobe Experience Platform Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)**
     <br>
     *See a demo of Web SDK and a single call being sent to Platform, Analytics, Audience Manager, and Target*
-
-* **[Basic Architecture (Video)](/help/intro-to-platform/basic-architecture.md)**
-    <br>
-    *Take a guided walk-through of an overview diagram to learn the primary components of Experience Platform*
 
 ## Staff Picks
 

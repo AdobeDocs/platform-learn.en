@@ -29,6 +29,7 @@ audience: all
   + [How to find help with Adobe Journey Orchestration](/help/journey-orchestration/how-to-find-help-with-journey-orchestration.md)
 + Real-time CDP{#rtcdp}
   + [Understanding Real-time CDP](/help/rtcdp/understanding-the-real-time-customer-data-platform.md)
+  + [Demo of Real-time CDP](/help/rtcdp/demo.md)
   + [Understanding Real-time CDP UI and Workflow](/help/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
   + [Understanding Destinations](/help/rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](/help/rtcdp/create-destinations-and-activate-data.md)
