@@ -29,6 +29,7 @@ audience: all
   + [How to find help with Adobe Journey Orchestration](/help/journey-orchestration/how-to-find-help-with-journey-orchestration.md)
 + Real-time CDP{#rtcdp}
   + [Understanding Real-time CDP](/help/rtcdp/understanding-the-real-time-customer-data-platform.md)
+  + [Demo of Real-time CDP](/help/rtcdp/demo.md)
   + [Understanding Real-time CDP UI and Workflow](/help/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
   + [Understanding Destinations](/help/rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](/help/rtcdp/create-destinations-and-activate-data.md)
@@ -102,4 +103,3 @@ audience: all
   + [Use Sandboxes](/help/sandboxes/use-sandboxes.md)
 + APIs{#apis}
   + [Postman and Experience Platform APIs](/help/apis/postman.md)
-+ [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://docs-stg.corp.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
