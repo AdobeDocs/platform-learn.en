@@ -1,0 +1,40 @@
+{
+  "header": {
+    "datasetId": "5ea04d5bf1fb6c18a8424b0b",
+    "imsOrgId": "A71C5A0C536804740A490D44@AdobeOrg",
+    "source": {
+      "name": "Alexa"
+    },
+    "schemaRef": {
+      "id": "https://ns.adobe.com/apac_sc/schemas/a9e2bc6e0aa3cec0658cb813694e3be6",
+      "contentType": "application/vnd.adobe.xed-full+json;version=1"
+    }
+  },
+  "body": {
+    "xdmMeta": {
+      "schemaRef": {
+        "id": "https://ns.adobe.com/apac_sc/schemas/a9e2bc6e0aa3cec0658cb813694e3be6",
+        "contentType": "application/vnd.adobe.xed-full+json;version=1"
+      }
+    },
+    "xdmEntity": {
+      "_id": "{%%uniqueTimeStamp%%}",
+      "timestamp": "{%%formattedDate%%}:00Z",
+      "eventType": "Alexa",
+      "productListItems": [{"SKU": "{%%productName%%}"}],
+      "_apac_sc": {
+        "productData": {
+          "productUrl": "{%%productImageUrl%%}",
+          "productName": "{%%productName%%}",
+          "productInteraction": "{%%productInteraction%%}"
+        },
+        "identification": {
+          "emailId": "{%%mcid%%}"
+        },
+        "brand": {
+          "tms": "Launch"
+        }
+      }
+    }
+  }
+}
