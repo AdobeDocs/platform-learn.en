@@ -1,10 +1,10 @@
 ---
-user-guide-title: Adobe Experience Platform Tutorials
-user-guide-url: /content/help/en/platform-learn/tutorials/overview.html
+user-guide-title: SC Demo Tutorial
+user-guide-url: /content/help/en/platform-learn/tutorials/sc-demo-tutorial/overview.html
 audience: all
 ---
 
-# Adobe Experience Platform Tutorials {#tutorials}
+# SC Demo Tutorial {#sc-demo-tutorial}
 
 + [Overview](/help/tutorial-platform-demo-sc/overview.md)
 + Module 0: Initial Setup{#module0}
