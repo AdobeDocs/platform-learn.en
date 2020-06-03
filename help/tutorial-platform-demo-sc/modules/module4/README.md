@@ -2,8 +2,6 @@
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 In **Module 4**, we will take you through the steps to demonstrate how an Internet of Things device, like an Amazon Alexa device, can send its relevant interactions to Adobe Experience Platform.
 
 **Note:** Don't worry; if you're not familiar with configuring, setting up and/or using an Amazon Alexa device. We will guide you through all the necessary steps:

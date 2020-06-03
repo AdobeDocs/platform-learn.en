@@ -48,8 +48,6 @@ Click ``Submit``.
 
 You're now able to interact with the Offer APIs through your existing Adobe IO Integration. (You might have to request a new JWT Token in Postman to re-authenticate with the new Product Profile. You can do this in exercise 14.2)
 
----
-
 [Next Step: Exercise 14.1 - Offers Decisioning Engine UI](./ex1.md)
 
 [Go Back to Module 14](./README.md)

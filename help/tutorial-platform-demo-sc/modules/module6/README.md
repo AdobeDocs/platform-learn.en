@@ -2,8 +2,6 @@
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 In **Module 6**, we will take you through the steps to use Journey Orchestration. In this exercise, you'll get access to Journey Orchestration and will be able to configure Events and Journeys that start based on a trigger from an Experience Event sent to Platform.
 
 This module requires ``Adobe Experience Platform`` and ``Adobe Campaign Standard with Platform`` to be implemented. If you don't have ``Adobe Campaign Standard with Platform`` provisioned in your environment, which is a new version of Adobe Campaign Standard, you can't complete this module.

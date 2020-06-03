@@ -2,8 +2,6 @@
 
 **Authors: [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 ## Lab Overview
 
 Retailers like Luma and La Boutique want to deliver personalized recommendations. When customers visit the website and click on a product, they should be presented with personalized product recommendations.

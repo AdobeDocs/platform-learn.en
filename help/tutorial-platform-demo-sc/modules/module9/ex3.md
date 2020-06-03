@@ -63,8 +63,6 @@ For the next variables, you'll repeat this process:
 * Paste the Java-Script code
 * Click ``Save`` to save your new Variable.
 
----
-
 The next Variable will be **customerMobileNr**. When a customer creates a profile on the SYTYCD website, we'll link the customer's Mobile Number to his or her customer profile in Platform.
 
 In the ``User-Defined Variables`` - section, click ``New``.

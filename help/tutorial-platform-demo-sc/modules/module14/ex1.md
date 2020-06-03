@@ -156,8 +156,6 @@ An activity combines placement, offer filter (set of offers to take into account
 
 Currently, the UI does not provide the functionality to manage activities. You can go tho the **Activities** tab of the **Offer Library** and you might see activities, but there is no way to create a new activity. We will create an activity as part of the API exercises of this module.
 
----
-
 [Next Step: Exercise 14.2 - Offers API](./ex2.md)
 
 [Go Back to Module 14](./README.md)

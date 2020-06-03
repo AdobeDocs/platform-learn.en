@@ -47,7 +47,6 @@ After clicking the ```Search``` - button again, you'll see a new Experience Even
 
 Congrats, you've successfully finished Module 2 - Real-time Customer Profile!
 
----
 [Go Back to Module 2](./README.md)
 
 [Go Back to All Modules](../../README.md)

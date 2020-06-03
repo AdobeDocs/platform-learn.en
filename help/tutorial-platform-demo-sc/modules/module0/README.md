@@ -2,8 +2,6 @@
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 In this module, you'll setup your own local AEP Demo-website environment and you'll install the Mobile App (iOS) that is used for this enablement.
 
 ## Your Environment Variables

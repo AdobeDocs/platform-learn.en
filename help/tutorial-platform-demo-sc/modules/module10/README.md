@@ -2,8 +2,6 @@
 
 **Author: [Tina Soni](https://www.linkedin.com/in/tinadsoni/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 ## Lab Overview
 
 This module was presented by Tina Dilip Soni during a webinar/training session in EMEA on Nov. 20, 2019.

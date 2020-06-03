@@ -68,7 +68,6 @@ Finally, go to the menu option ```Segment Membership```. You'll now see all segm
 
 Now that you've learned how to view any customer's real-time profile by making use of Adobe Experience Platform's User Interface, let's do the same thing through the API's by making use of Postman and Adobe I/O to query against Adobe Experience Platform's API's.
 
----
 Next Step: [Exercise 3 - Visualize your own real-time customer profile - API](./ex3.md)
 
 [Go Back to Foundation 2](./README.md)

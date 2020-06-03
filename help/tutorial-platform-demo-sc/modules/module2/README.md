@@ -2,8 +2,6 @@
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 In this exercise, we'll do a deep dive into the Real-time Customer Profile and Identity capabilities of Adobe Experience Platform. Learn how audiences can be defined, the role of Identity Service and Experience Cloud ID, and how to define segment builder queries to define your own segments.
 
 ## Learning Objectives

@@ -248,7 +248,6 @@ In the list of available Audiences, you can see ``AAM Traits`` and ``AAM Segment
 
 Those lists will dynamically populate with all AAM Traits and AAM Segments, so that they can be reused and enriched in Adobe Experience Platform.
 
----
 Next Step: [Exercise 11.5 - Take Action: send your segment to an S3-destination](./ex5.md)
 
 [Go Back to Module 11](./README.md)

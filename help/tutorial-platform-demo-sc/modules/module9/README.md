@@ -2,8 +2,6 @@
 
 **Author: [Gerard Lindeboom](https://www.linkedin.com/in/gerardlindeboom/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 In **Module 9**, the following topics will be addressed:
   
 * Configuration of Google Tag Manager

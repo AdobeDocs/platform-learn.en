@@ -187,8 +187,6 @@ Once the connection has been created, you'll see this:
 
 You're now ready to continue with the next exercise, in which you'll use Customer Journey Analytics to build powerful visualizations on top of Google Analytics data.
 
----
-
 Exercise 16.5 - [Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
 
 [Go Back to Module 16](./README.md)

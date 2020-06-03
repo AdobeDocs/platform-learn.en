@@ -2,8 +2,6 @@
 
 **Authors: [Marius Shehati](https://www.linkedin.com/in/mshehati/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 In **Module 5**, the following topics will be addressed:
 
 * ETL Overview

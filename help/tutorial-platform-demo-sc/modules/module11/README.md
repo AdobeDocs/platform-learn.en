@@ -2,8 +2,6 @@
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 ## Lab Overview
 
 In this module you'll configure a segment, enable it for Streaming Segmentation and activate the segment to multiple destinations.

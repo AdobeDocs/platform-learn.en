@@ -189,8 +189,6 @@ To do so:
    2. An indication of the number of offers the profile is not eligible for (**2**), due to not qualifying for the **Female Profiles** decision rule.
 6. (optional) You can modify the **Priority** for the offers in the **Offers Library** at the **Personalized Offers** tab to see if you get a different result, using this API call.
 
----
-
 [Next Step: Exercise 14.3 - Using Web UI](./ex3.md)
 
 [Go Back to Module 14](./README.md)

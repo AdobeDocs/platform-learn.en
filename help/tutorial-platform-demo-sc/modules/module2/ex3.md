@@ -1240,7 +1240,6 @@ This is currently all of the available ExperienceEvent data in Platform for this
 
 You're not required to use the ECID to request ExperienceEvent data from Adobe Experience Platform's Real-time Profile, you can use any ID in any namespace to request this data.
 
----
 Next Step: [Exercise 4 - Create a segment - UI](./ex4.md)
 
 [Go Back to Foundation 2](./README.md)
