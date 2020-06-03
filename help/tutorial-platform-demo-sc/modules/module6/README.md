@@ -29,6 +29,4 @@ This exercise will guide you through the configuration of an Journey and how to 
 
 This exercise will guide you through the configuration of Launch to trigger your Event and provide the right payload and finally, you'll be able to send yourself an email.
 
----
-
 [Go Back to All Modules](../../README.md)

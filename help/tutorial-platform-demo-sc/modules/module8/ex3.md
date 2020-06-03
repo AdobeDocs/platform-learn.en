@@ -87,8 +87,6 @@ Training a model requires more then one run. All Training Runs will be visible o
 
 After training your model, let's now score it in the next exercise.
 
----
-
 Next Step: [Exercise 8.4 - Scoring and Consumption of Insights](./ex4.md)
 
 [Go Back to Module 8](./README.md)

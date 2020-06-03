@@ -79,8 +79,6 @@ Click ```Cancel``` to leave this configuration without changing it.
 
 This gives you an idea on how data is collected from a website and ingested into Adobe Experience Platform, in the XDM-language.
 
----
-
 Next Step: [Exercise 5 - Data Ingestion from Offline Sources](./ex5.md)
 
 [Go Back to Module 1](./README.md)

@@ -170,6 +170,7 @@ function() {
   var loggedin = localStorage.getItem("loggedin");
   return loggedin;
 }
+```
 
 Your screen should look like this.
 ![GTM Setup](./images/loggedin2.png)
@@ -178,11 +179,11 @@ Click ``Save`` to save your new Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Next: **brandName**. When you select a brand to demo from the ```Admin``` - menu, the brandName will be sent to Adobe Experience Platform.
+Next: **brandName**. When you select a brand to demo from the ``Admin`` - menu, the brandName will be sent to Adobe Experience Platform.
 
 In the ``User-Defined Variables`` - section, click ``New``.
 
-* Rename ``Untitled Variable`` to ``brandName ``
+* Rename ``Untitled Variable`` to ``brandName``
 * Choose ``Custom Javascript`` as Variable Type
 * Paste this Custom JavaScript code:
 
@@ -491,8 +492,6 @@ Your screen should now look like this:
 ![GTM Setup](./images/gasave.png)
 
 You've finished configuring all required GTM Variables!
-
----
 
 Next Step: [Exercise 9.4 - Retrieve Platform Datasets](./ex4.md)
 

@@ -12,8 +12,6 @@ Follow the step by step process for model building. Notice the independent varia
 
 Two models are outlined in this exercise - Logistic Regression and Random Forrest Regressor. Depending on the accuracy of the model, one can choose the model and use it to score the data set and build recipe.
 
----
-
 Next Step: [Exercise 10.4 - Experimentation - Recipe Building](./ex4.md)
 
 [Go Back to Module 10](./README.md)

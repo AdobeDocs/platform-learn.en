@@ -169,8 +169,6 @@ Click ``Close``.
 
 You've now successfully created an AWS S3 bucket, you've uploaded CSV files into that bucket and you've created a user with permissions to access this bucket.
 
----
-
 Next Step: [Exercise 5.2 - Connect Informatica to your AWS S3 bucket](./ex2.md)
 
 [Go Back to Module 5](./README.md)

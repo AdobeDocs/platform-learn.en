@@ -147,8 +147,6 @@ You'll then see all available Recipes, which now includes your Recipe as well.
 
 Now that you've created your recipe, let's continue with the next exercise, in which you'll start scalable training and experimentation.
 
----
-
 Next Step: [Exercise 15.4 - Train and Score your Recipe](./ex4.md)
 
 [Go Back to Module 15](./README.md)

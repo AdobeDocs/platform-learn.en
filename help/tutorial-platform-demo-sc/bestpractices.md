@@ -73,6 +73,4 @@ Things to do before starting a new demo on your iPhone:
 
 With this information, you're now ready to go into the demo walkthrough.
 
----
-
 [Go Back to All Modules](./README.md)

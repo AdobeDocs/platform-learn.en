@@ -168,8 +168,6 @@ You'll then see a green confirmation bar saying that your Journey is now Publish
 
 You've now finished this exercise.
 
----
-
 Next Step: [Exercise 6.3: Configure Launch to trigger your Event](./ex3.md)
 
 [Go Back to Module 6](./README.md)

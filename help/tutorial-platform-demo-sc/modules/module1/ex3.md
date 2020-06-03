@@ -152,8 +152,6 @@ Your dataset is now enabled for Profile.
 
 With the datasets created and configured for Profile, you can now continue with the Launch configuration to capture data on your website.
 
----
-
 Next Step: [Exercise 4 - Use Launch and the Adobe Experience Platform Extension](./ex4.md)
 
 [Go Back to Module 1](./README.md)

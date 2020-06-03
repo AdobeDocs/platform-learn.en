@@ -55,8 +55,6 @@ Examples: depth of decision tree, number of hidden layers, learning rate, etc.
 
 Let's continue with a hands-on exercise.
 
----
-
 Next Step: [Exercise 10.2 - Churn Prediction: Data Preparation](./ex2.md)
 
 [Go Back to Module 10](./README.md)

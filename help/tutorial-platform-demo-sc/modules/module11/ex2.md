@@ -101,8 +101,6 @@ Finally, on the ``Review``-page, click ``Finish``.
 
 In the next exercise, you'll connect the segment you built in the previous exercise to the Google DV360 destination.
 
----
-
 Next Step: [Exercise 11.3 - Take Action: send your segment to DV360](./ex3.md)
 
 [Go Back to Module 11](./README.md)

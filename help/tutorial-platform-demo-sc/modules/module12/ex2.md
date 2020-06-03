@@ -185,8 +185,6 @@ Your Data Source has now been created successfully and is part of the ``Data Sou
 
 ![Demo](./images/dslist.png)
 
----
-
 Next Step: [Exercise 12.3 - Define a Custom Action](./ex3.md)
 
 [Go Back to Module 12](./README.md)

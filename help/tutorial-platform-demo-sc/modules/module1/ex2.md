@@ -17,26 +17,26 @@ There are 2 types of data that we want to capture:
 * Who is this customer?
 * What does this customer do?
 
-However, the question ```Who is this customer?``` is a very open question that has many answers. When your company wants to see this question answered, you're looking for demographic information like First Name, Last Name and Address. But also for contact information like an Email Address or a Mobile Phone Number. And also for information linked to Language, OptIn/OptOut and maybe even Profile Pictures. And finally, what you really need to know, is how we'll be identifying this customer in the various systems that your company uses.
+However, the question "Who is this customer?" is a very open question that has many answers. When your company wants to see this question answered, you're looking for demographic information like First Name, Last Name and Address. But also for contact information like an Email Address or a Mobile Phone Number. And also for information linked to Language, OptIn/OptOut and maybe even Profile Pictures. And finally, what you really need to know, is how we'll be identifying this customer in the various systems that your company uses.
 
-The same thing goes for the question ```What does this customer do?```. It's a very open question with many answers. When your company wants to see this question answered, you're looking for any interaction a customer has has had with any of your online and offline properties. Which pages or products have been visited? Has this customer added a product to his cart or even purchased an item? What device and browser has been used to browse the website? What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer? And finally, what we really need to know, is how we'll be identifying this customer in the various systems that your company will use.
+The same thing goes for the question "What does this customer do?". It's a very open question with many answers. When your company wants to see this question answered, you're looking for any interaction a customer has has had with any of your online and offline properties. Which pages or products have been visited? Has this customer added a product to his cart or even purchased an item? What device and browser has been used to browse the website? What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer? And finally, what we really need to know, is how we'll be identifying this customer in the various systems that your company will use.
 
 ## Exercise 1.1 - Who is this customer?
 
-Capturing the answer to ```Who is this customer?``` for your company is done through the Login/Registration-page.
+Capturing the answer to "Who is this customer?" for your company is done through the Login/Registration-page.
 
 ![Data Ingestion](./images/lb_register_dtl.png)
 
-From a Schema perspective, we look at this as a ``Class``. The question: ```Who is this customer?```is something that we define in the Class ``XDM Individual Profile``.
+From a Schema perspective, we look at this as a ``Class``. The question: "Who is this customer?"is something that we define in the Class ``XDM Individual Profile``.
 
-So when you create an XDM Schema to capture the answer to ```Who is this customer?```, first of all, you'll need to create and define 1 schema that references the class ``XDM Individual Profile``.
+So when you create an XDM Schema to capture the answer to "Who is this customer?", first of all, you'll need to create and define 1 schema that references the class ``XDM Individual Profile``.
 
-To specify what kind of answers can be given to that question, you'll need to define Mixins. Mixins are extensions of the Profile-class, and have very specific configurations. For instance, demographic information like First Name, Last Name, Gender and Birthday are part of the Mixin: ```Profile Person Details```.
+To specify what kind of answers can be given to that question, you'll need to define Mixins. Mixins are extensions of the Profile-class, and have very specific configurations. For instance, demographic information like First Name, Last Name, Gender and Birthday are part of the Mixin: ``Profile Person Details``.
 
 Secondly, your company needs to decide how to identify this customer. In the case of your company, the main identifier for a known customer might be a specific customer ID, like for instance an email address. But technically, there are other ways of identifying a customer at your company, like using a mobile phone number.
 In this lab, we'll define the email address as the primary identifier and the phone number as a secondary identifier.
 
-Lastly, it's important to distinguish the channel on which data was captured. In this case, we'll be talking about Website Registrations and the schema that needs to be defined needs to reflect ```Where``` the registration data was captured. The channel will also have an important role in influencing what data is captured. As such, it's a best practice to define schema's for every combination of channel, primary identifier and type of data collected.
+Lastly, it's important to distinguish the channel on which data was captured. In this case, we'll be talking about Website Registrations and the schema that needs to be defined needs to reflect "Where" the registration data was captured. The channel will also have an important role in influencing what data is captured. As such, it's a best practice to define schema's for every combination of channel, primary identifier and type of data collected.
 
 Based on the above, you'll need to configure a Schema in Adobe Experience Platform.
 
@@ -56,7 +56,7 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In Adobe Experience Platform, click on ```Schemas```in the menu on the left side of your screen.
+In Adobe Experience Platform, click on ``Schemas``in the menu on the left side of your screen.
 
 ![Data Ingestion](./images/menuschemas.png)
 
@@ -64,11 +64,11 @@ Your list of Schemas is currently empty.
 
 ![Data Ingestion](./images/schemas.png)
 
-You should create a new schema. To create a new schema, click on the button ```+ Create Schema```.
+You should create a new schema. To create a new schema, click on the button ``+ Create Schema``.
 
 ![Data Ingestion](./images/createschema.png)
 
-After clicking the ```+ Create Schema```button, you'll see an empty, new schema.
+After clicking the ``+ Create Schema``button, you'll see an empty, new schema.
 
 ![Data Ingestion](./images/emptyschema.png)
 
@@ -83,15 +83,15 @@ That should give you something like this:
 
 Next, you need to select the class of your schema. As indicated before, the class of your schema should be ``XDM Individual Profile``.
 
-Click on the button ```+ Assign```
+Click on the button ``+ Assign``
 
 ![Data Ingestion](./images/assign.png)
 
-In the ```Assign Class```-window, select ```XDM Individual Profile```.
+In the ``Assign Class``-window, select ``XDM Individual Profile``.
 
 ![Data Ingestion](./images/XDMProfile.png)
 
-Click the ```Assign Class```-button to assign the class.
+Click the ``Assign Class``-button to assign the class.
 
 ![Data Ingestion](./images/assignclass.png)
 
@@ -100,11 +100,11 @@ You'll now see an overview of the minimal structure of your schema.
 ![Data Ingestion](./images/classoverview.png)
 
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the field ```_id``` is a required field.
+For instance, the field ``_id`` is a required field.
 
 * _id needs to contain a unique id for a specific data ingestion
 
-Now you need to define what an answer to the question ```Who is this customer?``` should look like.
+Now you need to define what an answer to the question "Who is this customer" should look like.
 In the introduction of this lab, we noted the need for following attributes to define a customer:
 
 * Demographic information like First Name, Last Name and Address
@@ -119,15 +119,15 @@ To make that information part of your schema, you need to add the following Mixi
 * Profile Preferences Details (Other Information)
 * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
 
-You can add these Mixins by clicking the ```+ Add```-button below the Class that you just defined.
+You can add these Mixins by clicking the ``+ Add``-button below the Class that you just defined.
 
 ![Data Ingestion](./images/addmixin.png)
 
 Let's start with **Profile Person Details**.
 
-Click the ```+ Add```-button to start adding a Mixin.
+Click the ``+ Add``-button to start adding a Mixin.
 
-In the ``Add Mixin``-screen, select the Mixin ```Profile Person Details```.
+In the ``Add Mixin``-screen, select the Mixin ``Profile Person Details``.
 
 ![Data Ingestion](./images/ppd.png)
 
@@ -137,25 +137,25 @@ Click the ``Add Mixin``-button to add the Mixin to your schema.
 
 Next, add the Mixin **Profile Personal Details**.
 
-Click the ```+ Add```-button to start adding a Mixin.
+Click the ``+ Add``-button to start adding a Mixin.
 
-In the ``Add Mixin``-screen, select the Mixin ```Profile Personal Details```.
+In the ``Add Mixin``-screen, select the Mixin ``Profile Personal Details``.
 
 ![Data Ingestion](./images/ppsd.png)
 
-Click the ```Add Mixin```-button to add the Mixin to your schema.
+Click the ``Add Mixin``-button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
 Next, add the Mixin **Profile Preferences Details**.
 
-Click the ```+ Add```-button to start adding a Mixin.
+Click the ``+ Add``-button to start adding a Mixin.
 
-In the ``Add Mixin``-screen, select the Mixin ```Profile Preferences Details```.
+In the ``Add Mixin``-screen, select the Mixin ``Profile Preferences Details``.
 
 ![Data Ingestion](./images/ppfd.png)
 
-Click the ```Add Mixin```-button to add the Mixin to your schema.
+Click the ``Add Mixin``-button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -163,7 +163,7 @@ Lastly, you need a new Mixin to capture the ``Identifier`` used for data collect
 
 You will now create your own custom Mixin and as such, you'll be extending the XDM Schema to meet your own company's requirements.
 
-Click the ```+ Add```-button to start adding a Mixin.
+Click the ``+ Add``-button to start adding a Mixin.
 
 ![Data Ingestion](./images/addmixin.png)
 
@@ -180,7 +180,7 @@ That should give you something like this:
 
 ![Data Ingestion](./images/mixinname.png)
 
-Click the ```Add Mixin```-button to add the newly created Mixin to your schema.
+Click the ``Add Mixin``-button to add the newly created Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -335,7 +335,7 @@ The ``identification``-object should now look like this, with the 3 id-fields no
 
 You have now defined a Schema, linked existing and newly created mixins and have defined identifiers.
 
-Click ```Save``` to save your changes.
+Click ``Save`` to save your changes.
 
 ![Data Ingestion](./images/save.png)
 
@@ -356,31 +356,31 @@ You'll see this message:
 
 ![Data Ingestion](./images/sure.png)
 
-Click ```Enable``` to enable this schema for Unified Profile.
+Click ``Enable`` to enable this schema for Unified Profile.
 
 Your Schema is now configured to be part of the Real-time Customer Profile.
 
 ![Data Ingestion](./images/surey.png)
 
-Finally, click ```Save``` to save your schema.
+Finally, click ``Save`` to save your schema.
 
 ![Data Ingestion](./images/save.png)
 
 ## Exercise 1.2 - What does this customer do?
 
-Capturing the answer to ```What does this customer do?``` for your company is done through f.i. a Product View on a Product Page.
+Capturing the answer to "What does this customer do" for your company is done through f.i. a Product View on a Product Page.
 
 ![Data Ingestion](./images/lb_babars.png)
 
-From a Schema perspective, we look at this as a ``Class``. The question: ```What does this customer do?```is something that we've defined in the Class ``ExperienceEvent``.
+From a Schema perspective, we look at this as a ``Class``. The question: "What does this customer do?" is something that we've defined in the Class ``ExperienceEvent``.
 
-So when you create an XDM Schema to capture the answer to ```Who is this customer?```, first of all, you'll need to create and define 1 schema that references the class ``ExperienceEvent``.
+So when you create an XDM Schema to capture the answer to "Who is this customer?", first of all, you'll need to create and define 1 schema that references the class ``ExperienceEvent``.
 
-To specify what kind of answers can be given to that question, you'll need to define Mixins. Mixins are extensions of the Experience Event-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the Mixin ```ExperienceEvent Commerce Details```.
+To specify what kind of answers can be given to that question, you'll need to define Mixins. Mixins are extensions of the Experience Event-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the Mixin ``ExperienceEvent Commerce Details``.
 
 Secondly, your company needs to decide how you'll identify the behavior of this customer. Since we're talking about interactions on a website, it's possible that your company knows the customer but it's equally possible that an unknown, anonymous visitor is active on the website. So we can't use an identifier like email-address. In this case, your company will probably decide to use the Experience Cloud ID (ECID) as the primary identifier.
 
-Lastly, it's important to distinguish the channel on which data was captured. In this case, we'll be talking about Website Interactions and the schema that needs to be defined needs to reflect ```Where``` the interaction data was captured. The channel will also have an important role in influencing what data is captured. As such, it's a best practice to define schema's for every combination of channel, primary identifier and type of data collected.
+Lastly, it's important to distinguish the channel on which data was captured. In this case, we'll be talking about Website Interactions and the schema that needs to be defined needs to reflect ``Where`` the interaction data was captured. The channel will also have an important role in influencing what data is captured. As such, it's a best practice to define schema's for every combination of channel, primary identifier and type of data collected.
 
 Based on the above, you'll need to configure a Schema in Adobe Experience Platform.
 
@@ -398,7 +398,7 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In Adobe Experience Platform, click on ```Schemas```in the menu on the left side of your screen.
+In Adobe Experience Platform, click on ``Schemas``in the menu on the left side of your screen.
 
 ![Data Ingestion](./images/menuschemas.png)
 
@@ -406,11 +406,11 @@ In Schemas, you'll see your previously defined schema.
 
 ![Data Ingestion](./images/schemasee.png)
 
-You should create a new schema. To create a new schema, click on the button ```+ Create Schema```.
+You should create a new schema. To create a new schema, click on the button ``+ Create Schema``.
 
 ![Data Ingestion](./images/createschema.png)
 
-After clicking the ```+ Create Schema```button, you'll see an empty, new schema.
+After clicking the ``+ Create Schema``button, you'll see an empty, new schema.
 
 ![Data Ingestion](./images/emptyschema.png)
 
@@ -425,15 +425,15 @@ That should give you something like this:
 
 Next, you need to select the class of your schema. As indicated before, the class of your schema should be ``XDM ExperienceEvent``.
 
-Click on the button ```+ Assign```
+Click on the button ``+ Assign``
 
 ![Data Ingestion](./images/assignee.png)
 
-In the ```Assign Class```-window, select ```XDM ExperienceEvent```.
+In the ``Assign Class``-window, select ``XDM ExperienceEvent``.
 
 ![Data Ingestion](./images/XDMEE.png)
 
-Click the ```Assign Class```-button to assign the class.
+Click the ``Assign Class``-button to assign the class.
 
 ![Data Ingestion](./images/assignclass.png)
 
@@ -442,12 +442,12 @@ You'll now see an overview of the minimal structure of your schema.
 ![Data Ingestion](./images/classoverviewee.png)
 
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the fields ```_id``` and ```timestamp``` are required fields.
+For instance, the fields ``_id`` and ``timestamp`` are required fields.
 
 * _id needs to contain a unique id for a specific data ingestion
 * timestamp needs to be the timestamp of this hit, in the format **"YYYY-MM-DDTHH:MM:SSZ"**, like f.i.: **"2019-04-08T07:20:00Z"**
 
-Now you need to define what an answer to the question ```What does this customer do?``` should look like.
+Now you need to define what an answer to the question ``What does this customer do?`` should look like.
 In the introduction of this lab, we noted the need for following attributes to define what a customer does:
 
 * Which pages or products have been visited?
@@ -463,43 +463,43 @@ To make that information part of your schema, you need to add the following Mixi
 * ExperienceEvent Environment Details
 * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
 
-You can add these Mixins by clicking the ```+ Add```-button below the Class that you just defined.
+You can add these Mixins by clicking the ``+ Add``-button below the Class that you just defined.
 
 ![Data Ingestion](./images/addmixinee.png)
 
 Let's start with **ExperienceEvent Web Details**.
 
-Click the ```+ Add```-button to start adding a Mixin.
+Click the ``+ Add``-button to start adding a Mixin.
 
-In the ``Add Mixin``-screen, select the Mixin ```ExperienceEvent Web Details```.
+In the ``Add Mixin``-screen, select the Mixin ``ExperienceEvent Web Details``.
 
 ![Data Ingestion](./images/eewd.png)
 
-Click the ```Add Mixin```-button to add the Mixin to your schema.
+Click the ``Add Mixin``-button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
 Next, add the Mixin **ExperienceEvent Commerce Details**.
 
-Click the ```+ Add```-button to start adding a Mixin.
+Click the ``+ Add``-button to start adding a Mixin.
 
-In the ``Add Mixin``-screen, select the Mixin ```ExperienceEvent Commerce Details```.
+In the ``Add Mixin``-screen, select the Mixin ``ExperienceEvent Commerce Details``.
 
 ![Data Ingestion](./images/eecd.png)
 
-Click the ```Add Mixin```-button to add the Mixin to your schema.
+Click the ``Add Mixin``-button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
 Next, add the Mixin **ExperienceEvent Environment Details**.
 
-Click the ```+ Add```-button to start adding a Mixin.
+Click the ``+ Add``-button to start adding a Mixin.
 
-In the ``Add Mixin``-screen, select the Mixin ```ExperienceEvent Environment Details```.
+In the ``Add Mixin``-screen, select the Mixin ``ExperienceEvent Environment Details``.
 
 ![Data Ingestion](./images/eeed.png)
 
-Click the ```Add Mixin```-button to add the Mixin to your schema.
+Click the ``Add Mixin``-button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -509,7 +509,7 @@ You will now create your own custom Mixin and as such, you'll be extending the X
 
 A Mixin is linked to a Class, so that means that we can't simply reuse the previously created Mixin.
 
-Click the ```+ Add```-button to start adding a Mixin.
+Click the ``+ Add``-button to start adding a Mixin.
 
 ![Data Ingestion](./images/addmixinee.png)
 
@@ -526,7 +526,7 @@ That should give you something like this:
 
 ![Data Ingestion](./images/mixinnameee.png)
 
-Click the ```Add Mixin```-button to add the newly created Mixin to your schema.
+Click the ``Add Mixin``-button to add the newly created Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -620,7 +620,7 @@ The ``identification``-object should now look like this, with the ecid-field now
 
 You have now defined a Schema, linked existing and newly created mixins and have defined identifiers.
 
-Click ```Save``` to save your changes.
+Click ``Save`` to save your changes.
 
 ![Data Ingestion](./images/save.png)
 
@@ -641,21 +641,19 @@ You'll see this message:
 
 ![Data Ingestion](./images/sure.png)
 
-Click ```Enable``` to enable this schema for Unified Profile.
+Click ``Enable`` to enable this schema for Unified Profile.
 
 Your Schema is now configured to be part of the Real-time Customer Profile.
 
 ![Data Ingestion](./images/surey.png)
 
-Finally, click ```Save``` to save your schema.
+Finally, click ``Save`` to save your schema.
 
 ![Data Ingestion](./images/save.png)
 
 You've now finished building schemas that are activated to be used in the Real-time Customer Profile.
 
 Let's have a look at datasets in the next exercise.
-
----
 
 Next Step: [Exercise 3 - Configure Datasets](./ex3.md)
 

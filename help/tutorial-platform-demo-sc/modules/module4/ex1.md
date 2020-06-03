@@ -111,8 +111,6 @@ Leave the browser tab open; we will need it later in the module.
 
 You have finished this exercise.
 
----
-
 Next Step: [Exercise 4.2: Define your Alexa skill](./ex2.md)
 
 [Go Back to Module 4](./README.md)

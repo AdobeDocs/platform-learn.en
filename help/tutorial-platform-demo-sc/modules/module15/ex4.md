@@ -133,8 +133,6 @@ Next, click the ```Preview Scoring Results Dataset```.
 
 ![DSW](./images/previewresults.png)
 
----
-
 Next Step: [Exercise 15.5 - Publish your Recipe as a Scheduled Service](./ex5.md)
 
 [Go Back to Module 15](./README.md)

@@ -226,8 +226,6 @@ These Calculated Time Dimensions we will help analysts and business users to rem
 
 You've now finished the data preparation exercise using CJA Analysis Workspace.
 
----
-
 Next Step: [Exercise 13.5 - Visualization using Analysis WorkSpace](./ex5.md)
 
 [Go Back to Module 13](./README.md)

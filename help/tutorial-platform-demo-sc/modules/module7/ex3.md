@@ -575,8 +575,6 @@ prod:all-> and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identifi
 
 In the next exercise you will persist your query (also known as **create table as select** or **CTAS**) as a new dataset that you will use in Microsoft Power BI.
 
----
-
 Next Step: [Exercise 7.4 - Power BI/Tableau](./ex4.md)
 
 [Go Back to Module 7](../README.md)

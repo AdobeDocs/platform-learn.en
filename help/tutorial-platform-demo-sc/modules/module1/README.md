@@ -44,6 +44,4 @@ In this exercise, you'll learn how to use the Adobe Experience Platform extensio
 
 In this exercise, you'll go on the website and mobile app and behave like a customer, streaming data to Platform.
 
----
-
 [Go Back to All Modules](../../README.md)

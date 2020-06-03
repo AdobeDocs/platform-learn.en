@@ -104,8 +104,6 @@ If you'd like to view the setup of the connector, follow these steps:
   
 Please continue with the next exercise.
 
----
-
 Next Step: [Exercise 5.3 - Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
 
 [Go Back to Module 5](./README.md)

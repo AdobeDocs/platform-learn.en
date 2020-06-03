@@ -170,8 +170,6 @@ From here you can click back to the ``Workspace`` tab, where you can add more Ta
 
 ![GA setup](./images/gaworkspace.png)
 
----
-
 Next Step: [Exercise 9.3 - Configure GTM Variables](./ex3.md)
 
 [Go Back to Module 9](./README.md)

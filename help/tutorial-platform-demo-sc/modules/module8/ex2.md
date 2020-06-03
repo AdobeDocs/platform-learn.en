@@ -297,8 +297,6 @@ You'll find your recipe in the list.
 
 Now that you've created your recipe, let's continue with the next exercise, in which you'll start scalable training and experimentation.
 
----
-
 Next Step: [Exercise 8.3 - Model Training and Experimentation](./ex3.md)
 
 [Go Back to Module 8](./README.md)

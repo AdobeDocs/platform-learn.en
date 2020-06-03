@@ -200,8 +200,6 @@ Your custom Action is now part of the ``Actions``-list.
 
 You've now defined Events, Data Sources and Actions - let's consolidate all of that in 1 Orchestrated Journey.
 
----
-
 Next Step: [Exercise 12.4 - Design a trigger-based Customer Journey](./ex4.md)
 
 [Go Back to Module 12](./README.md)

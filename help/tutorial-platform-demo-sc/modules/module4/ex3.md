@@ -103,8 +103,6 @@ You'll now see an overview of the most recent data that was ingested in this dat
 
 You have finished this exercise.
 
----
-
 Next Step: [Exercise 4.4: Walkthrough of Demo Scenario, now including Alexa](./ex4.md)
 
 [Go Back to Module 4](./README.md)

@@ -101,8 +101,6 @@ And finally, based on the calculated propensity score, you'll also see specific 
 
 This segment qualification can then be shared through the Bi-Directional Segment Sharing connector between AEP and AEC, which means that solutions like Adobe Audience Manager and Adobe Target are now able to use that segment qualification and deliver an alternative, more personal experience to the customer.
 
----
-
 Next Step: [Exercise 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
 
 [Go Back to Module 15](./README.md)

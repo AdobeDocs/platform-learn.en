@@ -10,8 +10,6 @@ When you create a custom Demo Brand, you can now configure the activation of you
 
 By checking the checkbox for ``Use Google``, you'll make sure that the GTM Tag will be loaded and send calls to Adobe Experience Platform.
 
----
-
 Next Step: [Exercise 9.9 - Verify Data Ingestion from website into Platform](./ex9.md)
 
 [Go Back to Module 9](./README.md)

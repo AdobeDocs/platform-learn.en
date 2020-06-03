@@ -333,8 +333,6 @@ The result in Adobe Experience Platform is that a new batch of data has been cre
 
 ![DSW](./images/1dsb.png)
 
----
-
 Next Step: [Exercise 8.2 - Model Authoring and Operationalization](./ex2.md)
 
 [Go Back to Module 8](./README.md)

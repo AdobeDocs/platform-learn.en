@@ -175,8 +175,6 @@ FYI: You can come back to this Data View afterwards and change settings and comp
 
 You can now continue with the visualization and analysis part!
 
----
-
 Next Step: [Exercise 13.4 - Some data preparation in Analysis WorkSpace](./ex4.md)
 
 [Go Back to Module 13](./README.md)

@@ -145,8 +145,6 @@ You've now defined the event that will trigger the Journey we're building. Once 
 
 As discussed in the use-case description, we then need to provide contextual promotions that depend on the weather. In order to get weather information, we'll need to define an external data sources that will provide us with the weather information for that location. We'll use the ``OpenWeather``-service to provide us what that information, as part of exercise 2.
 
----
-
 Next Step: [Exercise 12.2 - Define an External Data Source](./ex2.md)
 
 [Go Back to Module 12](./README.md)

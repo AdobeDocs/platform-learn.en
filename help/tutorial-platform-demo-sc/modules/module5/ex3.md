@@ -512,8 +512,6 @@ Scroll down until you see the Batch IDs and locate your specific batch.
 
 You can now continue with exercise 4.
 
----
-
 Next Step: [Exercise 5.4 - Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
 
 [Go Back to Module 5](./README.md)

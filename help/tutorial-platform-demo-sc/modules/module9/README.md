@@ -76,6 +76,4 @@ While creating your custom demo brand using SYTYCD, you can now activate the GTM
 
 With the implementation done now, you'll learn how you can verify your full implementation.
 
----
-
 [Go Back to All Modules](../README.md)

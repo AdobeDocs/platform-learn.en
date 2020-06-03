@@ -102,8 +102,6 @@ The ``AEP Demo - Car Insurance Interactions`` - dataset is now assigned to a dat
 
 ![LocalNotebook](./images/df.png)
 
----
-
 Next Step: [Exercise 15.3 - Operationalize your model using a Recipe](./ex3.md)
 
 [Go Back to Module 15](./README.md)

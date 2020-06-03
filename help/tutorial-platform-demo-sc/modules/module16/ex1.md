@@ -63,13 +63,13 @@ Next, go to the search bar on top of the screen and type ``BigQuery``. Select th
 
 ![demo](./images/ex1/7.png)
 
-You'll then be redirected to the BigQuery Console and you'll see a popup message. 
+You'll then be redirected to the BigQuery Console and you'll see a popup message.
 
 ``Click Done``.
 
 ![demo](./images/ex1/5.png)
 
-The goal of this module is to get Google Analytics data into Adobe Experience Platform. To do that, we need dummy data in a Google Analytics dataset to start with. 
+The goal of this module is to get Google Analytics data into Adobe Experience Platform. To do that, we need dummy data in a Google Analytics dataset to start with.
 
 Click on ``Add Data`` on the left side menu, followed by clicking ``Explore public datasets``.
 
@@ -113,8 +113,6 @@ You'll then see your Project ID on the right side:
 ![demo](./images/ex1/projetcselection.png)
 
 You can now move to Exercise 2 where you'll get your hands dirty by querying Google Analytics data.
-
----
 
 Next Step: [Exercise 16.2 - Create your first query in BigQuery](./ex2.md)
 

@@ -206,12 +206,12 @@ Continue in the **aep** definition screen
 Key | Value
 ---------|----------
 `alexaBrandName` | `luma retail`
-```applicationId``` | ```<b4aAppId>```
-```emailAddress``` | ```rmaur@adobe.com```
-```experienceEventPostbackURL``` | `<dcsInletId>`
-```javascriptKey``` | ```<b4aJsKey>```
-```ldap``` | ```rmaur```
-```serverURL``` | ```https://parseapi.back4app.com```
+`applicationId` | `<b4aAppId>`
+`emailAddress` | `rmaur@adobe.com`
+`experienceEventPostbackURL` | `<dcsInletId>`
+`javascriptKey` | `<b4aJsKey>`
+`ldap` | `rmaur`
+`serverURL` | `https://parseapi.back4app.com`
 
 Ensure you replace `alexaBrandName`, `ldap` and `emailAddress` with your specific configuration details.
 
@@ -264,8 +264,6 @@ Verify that on your skill's main screen all the items on the **Skill builder che
 * Your skill and its implementation are now ready to be used.
 
 You have finished this exercise.
-
----
 
 Next Step: [Exercise 4.3: Use your Alexa skill](./ex3.md)
 

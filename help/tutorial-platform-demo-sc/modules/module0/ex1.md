@@ -105,8 +105,6 @@ If the AEP Demo-website is displayed and your demo brand is loaded successfully,
 
 Congratulations!
 
----
-
 Next Step: [Exercise 2 - Install the Mobile Application (iOS)](./ex2.md)
 
 [Go Back to Module 0](../README.md)

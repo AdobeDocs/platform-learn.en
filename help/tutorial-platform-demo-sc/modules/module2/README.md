@@ -52,6 +52,4 @@ In this exercise, you'll use Postman and Adobe I/O to create a segment and store
 
 In this exercise, you'll impersonate a call center employee who receives a call from a customer. In order to really make an impact on this customer's experience, you'll need access to all available information in real-time.
 
----
-
 [Go Back to All Modules](../../README.md)

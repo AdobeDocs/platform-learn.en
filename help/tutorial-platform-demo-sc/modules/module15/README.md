@@ -15,7 +15,7 @@ In this module, you'll learn:
 
 ## Business Context
 
-Luma Insurance is a typical Insurance Company with a big offline dealer-network and a website with lots of traffic. 
+Luma Insurance is a typical Insurance Company with a big offline dealer-network and a website with lots of traffic.
 Luma Insurance has been trying to personalize their digital communication for years, but it’s very hard to personalize anything if you don’t know who you’re speaking to. As most of the traffic on the website is from unknown, anonymous users who only visit the website once or twice, it’s difficult for Luma Insurance to build out a deep customer profile.
 
 Most of these unknown, anonymous visitors only come to the website with one goal: get a quick indication of the cost of an insurance, by filling out a form which then gives them an idea of the insurance cost.
@@ -54,7 +54,5 @@ After creating a Recipe, you can now Train and Score your Recipe without having 
 Finally, you can select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
 
 ### [FAQ](./qa.md)
-
----
 
 [Go Back to All Modules](../../README.md)

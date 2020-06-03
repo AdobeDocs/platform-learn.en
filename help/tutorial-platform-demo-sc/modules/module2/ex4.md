@@ -123,8 +123,6 @@ Then, click the ```Save``` - button to save your segment, after which you'll be 
 
 Let's now continue to the next exercise and build a segment through the API.
 
----
-
 Next Step: [Exercise 5 - Create a segment - API](./ex5.md)
 
 [Go Back to Foundation 2](./README.md)

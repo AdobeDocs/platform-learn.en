@@ -167,8 +167,6 @@ prod:all-> limit 1;
 (1 row)
 ```
 
----
-
 Next Step: [Exercise 7.3 - Queries, queries, queries...  and churn analysis](./ex3.md)
 
 [Go Back to Module 7](../README.md)

@@ -627,8 +627,6 @@ Your Journey is now published.
 
 In the next exercise, you'll be able to test your Journey.
 
----
-
 Next Step: [Exercise 12.5 - Trigger your Orchestrated Customer Journey](./ex5.md)
 
 [Go Back to Module 12](./README.md)

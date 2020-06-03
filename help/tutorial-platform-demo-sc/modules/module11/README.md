@@ -48,6 +48,4 @@ In this exercise, you'll use the segment you built in Exercise 1 and send it to 
 
 In this exercise, you'll use the segment you built in Exercise 1 to configure an Experience Targeting Activity in Adobe Target.
 
----
-
 [Go Back to All Modules](../../README.md)

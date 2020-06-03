@@ -276,8 +276,6 @@ It takes some time until the data is ready in the table we've created. After a c
 
 You con now continue with the next exercise, where you'll connect this table to Adobe Experience Platform.
 
----
-
 Next Step: [Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 
 [Go Back to Module 16](./README.md)

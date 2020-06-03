@@ -87,8 +87,6 @@ You will now ingest data into Adobe Experience Platform and that data will be li
 
 You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email-addresses. The goal of this exercise is to understand the business context of what you're about to do. In the next exercise, you'll start configuring everything you need to make all that data ingestion possible.
 
----
-
 Next Step: [Exercise 2 - Configure Schema's and Set Identifiers](./ex2.md)
 
 [Go Back to Module 1](./README.md)

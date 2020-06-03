@@ -78,8 +78,6 @@ You can find the identifiers by opening a schema and looking at the object ``<ae
 
 You're now ready to start using the Customer Journey Analytics UI.
 
----
-
 Next Step: [Exercise 13.2 - Connect AEP datasets in CJA](./ex2.md)
 
 [Go Back to Module 13](./README.md)

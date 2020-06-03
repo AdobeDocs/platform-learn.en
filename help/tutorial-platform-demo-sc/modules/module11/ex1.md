@@ -138,8 +138,6 @@ When you now go back to the SYTYCD - website and refresh the homepage, you shoul
 
 ![Segmentation](./images/xraystrseg.png)
 
----
-
 Next Step: [Exercise 11.2 - Review how to configure DV360 Destination using Destinations](./ex2.md)
 
 [Go Back to Module 11](./README.md)

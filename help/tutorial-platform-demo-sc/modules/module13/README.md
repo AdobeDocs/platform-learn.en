@@ -2,8 +2,6 @@
 
 **Author: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
----
-
 **In Module 13**, you will get a hands-on preview of the Adobe Experience Platform - Customer Journey Analytics Application Service.
 
 CJA provides a toolkit to business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within CJA deliver context and clarity to the complex multi-channel customer journeys. The provided context generates actionable insight into how to remove pain points from the customer conversion process and deliver positive experiences in the moments that matter most.
@@ -52,7 +50,5 @@ In this exercise, you'll learn how to do some data preparation before continuing
 ### [Exercise 13.5 - Visualization using Analysis Workspace](./ex5.md)
 
 In this exercise, you'll learn how to visualize Adobe Experience Platform data using Analysis Workspace and CJA.
-
----
 
 [Go Back to All Modules](../../README.md)

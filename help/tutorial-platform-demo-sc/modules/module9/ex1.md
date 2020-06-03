@@ -55,8 +55,6 @@ After clicking OK, you're now seeing the standard GTM homepage.
 
 You can now proceed with the next step, where we'll setup Google Analytics.
 
----
-
 Next Step: [Exercise 9.2 - Configure Google Analytics](./ex2.md)
 
 [Go Back to Module 9](./README.md)

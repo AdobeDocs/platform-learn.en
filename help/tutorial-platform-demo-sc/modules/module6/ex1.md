@@ -93,8 +93,6 @@ Click ``Close``.
 
 You've now finished this exercise.
 
----
-
 Next Step: [Exercise 6.2: Journey Orchestration: Setup Journey](./ex2.md)
 
 [Go Back to Module 6](./README.md)

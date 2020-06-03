@@ -43,6 +43,4 @@ In this exercise, you'll combine events, data sources and actions into an intell
 
 In this exercise, you'll trigger your specific Orchestrated Journey.
 
----
-
 [Go Back to All Modules](../../README.md)

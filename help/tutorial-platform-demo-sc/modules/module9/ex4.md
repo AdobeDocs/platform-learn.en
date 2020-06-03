@@ -180,8 +180,6 @@ Finally, we'll configure the Variable for ``Experience Event Schema Reference``.
 
 Congratulations for reaching this point! Let's continue with the GTM Tags and Triggers Configuration now.
 
----
-
 Next Step: [Exercise 9.5 - Configure GTM Tags & Triggers](./ex5.md)
 
 [Go Back to Module 9](./README.md)

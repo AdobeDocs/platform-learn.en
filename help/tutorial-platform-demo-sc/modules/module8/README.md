@@ -50,6 +50,4 @@ So we’ve prepared our data, authored our model and packaged it to test it at s
 
 Now that we’ve experimented with our recommendations model and have determined the optimal run, we can move on to scoring the model to generate product recommendations for customers.
 
----
-
 [Go Back to All Modules](../../README.md)

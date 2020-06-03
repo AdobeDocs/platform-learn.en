@@ -28,8 +28,6 @@ Finally, you'll see a confirmation of your publication.
 
 Your GTM Property is now published. The last thing to do now is to setup the GTM Tags on thee SYTYCD-website so that the GTM configuration is being loaded.
 
----
-
 Next Step: [Exercise 9.7 - Implement GTM Tag on SYTYCD website](./ex7.md)
 
 [Go Back to Module 9](./README.md)

@@ -342,8 +342,6 @@ You will now see the BigQuery-dataset you created during exercise 16.2.
 
 Well done! In the next exercise, you'll load data from that table and map it against a Schema and Dataset in Adobe Experience Platform.
 
----
-
 Next Step: [Exercise 16.4 - Load data from BigQuery into Adobe Experience Platform](./ex4.md)
 
 [Go Back to Module 16](./README.md)

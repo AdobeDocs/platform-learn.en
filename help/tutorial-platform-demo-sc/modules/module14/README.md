@@ -45,6 +45,4 @@ You can view these variables [here](../../environment.md).
 
 ### Content for this module is currently being developed
 
----
-
 [Go Back to All Modules](../../README.md)

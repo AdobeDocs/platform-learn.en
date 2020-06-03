@@ -52,6 +52,4 @@ In this exercise, a Data Scientist creates the Target variable and create some i
 
 In this exercise, you'll convert the feature engineering and model that you have prepared in the above steps into a recipe.
 
----
-
 [Go Back to All Modules](../../README.md)

@@ -38,8 +38,6 @@ Click ``Confirm``.
 
 You're done - your Google Account has been created.
 
----
-
 Next Step: [Exercise 9.1 - Create a Google Tag Manager Property](./ex1.md)
 
 [Go Back to Module 9](./README.md)

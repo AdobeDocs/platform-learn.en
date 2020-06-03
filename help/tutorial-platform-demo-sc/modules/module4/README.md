@@ -45,6 +45,4 @@ In this module, we'll show you the different approaches to demoing the Alexa ski
 
 In this module, we'll show you a walkthrough and script of the updated demo talk track and steps to follow.
 
----
-
 [Go Back to All Modules](../../README.md)

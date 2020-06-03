@@ -23,6 +23,4 @@ In this exercise, you'll install a web server and the AEP Demo website that is u
 
 In this exercise, you'll Install the Mobile Application (iOS) that is used as part of this enablement.
 
----
-
 [Go Back to All Modules](../../README.md)

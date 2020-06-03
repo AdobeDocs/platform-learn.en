@@ -104,8 +104,6 @@ FYI: in the ``iframe.src`` - tag, you can find your **GTM Container ID**. In thi
 
 After this change, your website and configuration are ready for Production!
 
----
-
 Next Step: [Exercise 9.8 - Activate GTM-tag in SYTYCD Admin](./ex8.md)
 
 [Go Back to Module 9](./README.md)

@@ -54,6 +54,4 @@ In this exercise, you'll learn how to import order data into Informatica, join d
 
 In this exercise, you'll learn how to import 2nd and 3rd party data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
----
-
 [Go Back to All Modules](../../README.md)

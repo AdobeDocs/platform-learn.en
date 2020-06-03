@@ -113,8 +113,6 @@ Once the status is ```SUCCEEDED```, your segment job has run and customers are n
 
 Congrats, you've successfully completed the Segmentation exercise. Let's now have a look how the Real-Time Customer Profile can be activated across the enterprise.
 
----
-
 Next Step: [Exercise 6 - See you Real-time Customer Profile in action in the Call Center](./ex6.md)
 
 [Go Back to Foundation 2](./README.md)

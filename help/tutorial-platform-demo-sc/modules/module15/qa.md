@@ -10,7 +10,7 @@ On this page, you'll find answers to common questions related to this specific M
 
 The Model relies on 2 datasets:
 
-- **EMEA Car Insurance Quotes (API)**. This is the training and scoring input dataset. All customer behaviour like ``Get Quote`` and ``Purchase Insurance`` - events are stored in this dataset.
+- **EMEA Car Insurance Quotes (API)**. This is the training and scoring input dataset. All customer behavior like ``Get Quote`` and ``Purchase Insurance`` - events are stored in this dataset.
 
 - **EMEA ML Predictions (API)**. This is the scoring output dataset. When the ML Model calculates a propensity score, it stores that score in this dataset.
 
@@ -127,7 +127,7 @@ Data is collected on the website through Launch and ``alloy.js``, which streams 
 
 ## What is the Target Predictor Variable?
 
-The Target Predictor Variable is the below field. This is the value that indicated the desired behaviour, namely a Purchase.
+The Target Predictor Variable is the below field. This is the value that indicated the desired behavior, namely a Purchase.
 
 ```json
 "_experienceplatform": {

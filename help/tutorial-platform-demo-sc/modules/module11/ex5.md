@@ -133,8 +133,6 @@ if you'd like to add more segment exports, you can click ``Edit Activation`` to 
 
 ![RTCDP](./images/s3k.png)
 
----
-
 Next Step: [Exercise 11.6 - Take Action: send your segment to Adobe Target](./ex6.md)
 
 [Go Back to Module 11](./README.md)

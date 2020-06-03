@@ -23,8 +23,6 @@ Tableau gives you a 14-day trial period automatically.
 
 If you want to use Tableau beyond those 14 days, you'll need a license key.
 
----
-
 Next Step: [Exercise 7.1 - Getting Started](./ex1.md)
 
 [Go Back to Module 7](../README.md)

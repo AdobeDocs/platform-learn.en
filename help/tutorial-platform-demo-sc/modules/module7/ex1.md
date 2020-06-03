@@ -100,8 +100,6 @@ In the next exercises, there will be quite some interaction with this window. We
 
 Now you are ready to start submitting queries!
 
----
-
 Next Step: [Exercise 7.2 - Using the Query Service](./ex2.md)
 
 [Go Back to Module 7](../README.md)

@@ -129,8 +129,6 @@ After becoming a known customer, it's time to open the mobile app on your iPhone
 
 You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email-addresses. The goal of this exercise is to understand the business context of what you're about to do. You've now effectively built a Real-time, Cross-Device Customer Profile. In the next exercise, you'll go ahead and visualize your profile by making use of Adobe Experience Platform.
 
----
-
 Next Step: [Exercise 2 - Visualize your own real-time customer profile - UI](./ex2.md)
 
 [Go Back to Foundation 2](./README.md)

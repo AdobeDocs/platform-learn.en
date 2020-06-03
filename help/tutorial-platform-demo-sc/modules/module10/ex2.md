@@ -162,8 +162,6 @@ Open the notebook ``Mod10 - Data Exploration.ipynb``.
 
 Execute all cells one by one. The code outlines steps to explore data, build visualizations and gain insights about your data.
 
----
-
 Next Step: [Exercise 10.3 - Feature Engineering and Model Building](./ex3.md)
 
 [Go Back to Module 10](./README.md)
