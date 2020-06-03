@@ -40,7 +40,7 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### 
+### Exercise 7.0 - Pre-requisites
 
 [Exercise 7.0 - Pre-requisites](./ex0.md)
 

@@ -55,7 +55,7 @@ In this exercise, you'll retrieve the required datasets to capture and store pro
 
 In this exercise, you'll learn how to use the Adobe Experience Platform extension in Launch to stream data to Adobe Experience Platform.
 
-### 
+### Exercise 5 - Data Ingestion from Offline Sources
 
 [Exercise 5 - Data Ingestion from Offline Sources](./ex5.md)
 

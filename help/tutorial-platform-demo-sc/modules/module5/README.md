@@ -48,7 +48,7 @@ In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS env
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.
 
-### 
+### Exercise 5.3 - Ingest Offline Order Events into Adobe Experience Platform
 
 [Exercise 5.3 - Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
 
