@@ -59,4 +59,4 @@ Next Step: [Exercise 9.2 - Configure Google Analytics](./ex2.md)
 
 [Go Back to Module 9](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

@@ -52,4 +52,4 @@ You're now able to interact with the Offer APIs through your existing Adobe IO I
 
 [Go Back to Module 14](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

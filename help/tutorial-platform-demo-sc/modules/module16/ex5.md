@@ -68,4 +68,4 @@ Congratulations, you've now finished Module 16!
 
 [Go Back to Module 16](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

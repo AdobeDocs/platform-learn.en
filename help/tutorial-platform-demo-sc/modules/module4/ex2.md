@@ -269,4 +269,4 @@ Next Step: [Exercise 4.3: Use your Alexa skill](./ex3.md)
 
 [Go Back to Module 4](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

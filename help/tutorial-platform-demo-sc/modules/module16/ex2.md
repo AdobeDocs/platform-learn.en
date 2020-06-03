@@ -280,4 +280,4 @@ Next Step: [Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform]
 
 [Go Back to Module 16](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

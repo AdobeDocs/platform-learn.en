@@ -191,4 +191,4 @@ Exercise 16.5 - [Analyze Google Analytics Data using Customer Journey Analytics]
 
 [Go Back to Module 16](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

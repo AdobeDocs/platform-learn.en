@@ -40,7 +40,7 @@ In the left side menu (components area), find the Calculated Metric ``Product Vi
 
 ![demo](./images/module135/2.png)
 
-Automatically the dimension ``Day`` will be added to create your first table. Now you can see your question answered on the fly. Do you remember the query from [Module 7](./../../modules/module7/exercises/3-queries.md)? It wasn't that easy.
+Automatically the dimension ``Day`` will be added to create your first table. Now you can see your question answered on the fly. Do you remember the query from <!--[Module 7](./../../modules/module7/exercises/3-queries.md)-->? It wasn't that easy.
 
 ![demo](./images/module135/3.png)
 
@@ -387,4 +387,4 @@ Congratulations, you have finished Module 13.
 
 [Go Back to Module 13](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

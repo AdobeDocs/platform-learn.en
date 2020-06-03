@@ -80,7 +80,7 @@ You'll find your recipe in the list.
 
 From this list, your Recipe can be used to experiment but no coding is required beyond this stage anymore.
 
-**To mark completion of Module 10, follow the instructions here:** [How is completion measured?](./../../release/completion.md)
+**To mark completion of Module 10, follow the instructions here:** <!--[How is completion measured?](./../../release/completion.md)-->
 This will mark your completion for Module 10.
 
 [Go Back to Module 10](./README.md)

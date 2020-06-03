@@ -346,4 +346,4 @@ Next Step: [Exercise 16.4 - Load data from BigQuery into Adobe Experience Platfo
 
 [Go Back to Module 16](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

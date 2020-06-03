@@ -495,4 +495,4 @@ Next Step: [Exercise 9.4 - Retrieve Platform Datasets](./ex4.md)
 
 [Go Back to Module 9](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

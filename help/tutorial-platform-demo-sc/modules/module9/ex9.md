@@ -160,4 +160,4 @@ If both of these Datasets have successfully received the data coming from your w
 
 [Go Back to Module 9](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

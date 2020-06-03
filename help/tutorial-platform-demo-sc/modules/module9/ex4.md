@@ -184,4 +184,4 @@ Next Step: [Exercise 9.5 - Configure GTM Tags & Triggers](./ex5.md)
 
 [Go Back to Module 9](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

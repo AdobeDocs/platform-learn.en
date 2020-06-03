@@ -42,4 +42,4 @@ Next Step: [Exercise 9.1 - Create a Google Tag Manager Property](./ex1.md)
 
 [Go Back to Module 9](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

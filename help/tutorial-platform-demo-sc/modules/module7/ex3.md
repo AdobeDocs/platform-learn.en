@@ -577,6 +577,6 @@ In the next exercise you will persist your query (also known as **create table a
 
 Next Step: [Exercise 7.4 - Power BI/Tableau](./ex4.md)
 
-[Go Back to Module 7](../README.md)
+[Go Back to Module 7](./README.md)
 
 [Go Back to All Modules](../../README.md)

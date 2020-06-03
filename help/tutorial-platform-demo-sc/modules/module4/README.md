@@ -39,7 +39,7 @@ This module will guide you through all the necessary steps to define and configu
 
 In this module, we'll show you the different approaches to demoing the Alexa skill.
 
-### [Exercise 4.4: Walkthrough of Demo Scenario, now including Alexa](./demo/README.md)
+### [Exercise 4.4: Walkthrough of Demo Scenario, now including Alexa](./ex4.md)
 
 In this module, we'll show you a walkthrough and script of the updated demo talk track and steps to follow.
 

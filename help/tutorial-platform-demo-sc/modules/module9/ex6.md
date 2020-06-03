@@ -32,4 +32,4 @@ Next Step: [Exercise 9.7 - Implement GTM Tag on SYTYCD website](./ex7.md)
 
 [Go Back to Module 9](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

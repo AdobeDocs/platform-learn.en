@@ -169,4 +169,4 @@ You've now finished this exercise and this module!
 
 [Go Back to Module 6](./README.md)
 
-[Go Back to All Modules](../README.md)
+[Go Back to All Modules](../../README.md)

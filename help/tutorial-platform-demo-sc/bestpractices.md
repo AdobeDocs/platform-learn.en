@@ -39,15 +39,15 @@ Things to do before starting a new demo on a desktop computer:
 
 * Manually quit your browser (you have to manually quit the browser like this, otherwise your cookies/identifiers in Incognito Mode aren't always reset)
   
-  ![Demo](./images/quit.png)
+  ![Demo](./assets/quit.png)
   
 * Start a New Incognito Window
 
-  ![Demo](./images/incognito.png)
+  ![Demo](./assets/incognito.png)
   
 * Go to the La Boutique homepage and open the X-ray panel to check if the profile is clean.
   
-  ![Demo](./images/xrayclean.png)
+  ![Demo](./assets/xrayclean.png)
 
 ## Step 3 - Mobile App
 
@@ -55,21 +55,21 @@ Things to do before starting a new demo on your iPhone:
 
 * If the La Boutique mobile app was already installed, delete it.
 
-  ![Demo](./images/deleteapp.png)
+  ![Demo](./assets/deleteapp.png)
   
 * Go to TestFlight on your iPhone and reinstall the La Boutique mobile app.
 
-  ![Demo](./images/tf_install.png)
+  ![Demo](./assets/tf_install.png)
   
 * Open the La Boutique mobile app
   
 * Click "Always Allow" to allow La Boutique to access your location. The La Boutique app will be used in the future in combination with iBeacons and to fully take advantage of these iBeacons, La Boutique always needs to be able to access your location.
 
-  ![Demo](./images/allow1.png)
+  ![Demo](./assets/allow1.png)
   
 * Click "Always Allow" to allow La Boutique to send you notifications. Push notifications will be used at a later stage to show personalized messages.
 
-  ![Demo](./images/allow2.png)
+  ![Demo](./assets/allow2.png)
 
 With this information, you're now ready to go into the demo walkthrough.
 

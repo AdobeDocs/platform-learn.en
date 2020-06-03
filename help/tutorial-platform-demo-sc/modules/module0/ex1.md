@@ -107,6 +107,6 @@ Congratulations!
 
 Next Step: [Exercise 2 - Install the Mobile Application (iOS)](./ex2.md)
 
-[Go Back to Module 0](../README.md)
+[Go Back to Module 0](README.md)
 
 [Go Back to All Modules](../../../README.md)

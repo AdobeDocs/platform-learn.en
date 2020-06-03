@@ -14,4 +14,4 @@ Next Step: [Exercise 9.9 - Verify Data Ingestion from website into Platform](./e
 
 [Go Back to Module 9](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

@@ -107,4 +107,4 @@ Next Step: [Exercise 4.4: Walkthrough of Demo Scenario, now including Alexa](./e
 
 [Go Back to Module 4](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

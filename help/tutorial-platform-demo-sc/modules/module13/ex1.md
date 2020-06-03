@@ -82,4 +82,4 @@ Next Step: [Exercise 13.2 - Connect AEP datasets in CJA](./ex2.md)
 
 [Go Back to Module 13](./README.md)
 
-[Go Back to All Modules](../../../README.md)
+[Go Back to All Modules](../../README.md)

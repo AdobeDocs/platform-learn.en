@@ -118,4 +118,4 @@ Next Step: [Exercise 16.2 - Create your first query in BigQuery](./ex2.md)
 
 [Go Back to Module 16](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

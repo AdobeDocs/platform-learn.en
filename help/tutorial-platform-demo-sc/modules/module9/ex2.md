@@ -174,4 +174,4 @@ Next Step: [Exercise 9.3 - Configure GTM Variables](./ex3.md)
 
 [Go Back to Module 9](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

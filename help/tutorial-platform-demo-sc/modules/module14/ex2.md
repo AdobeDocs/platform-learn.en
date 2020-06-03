@@ -9,7 +9,7 @@
 
 To use the Offers API, we will use Postman and a specific collection. Please follow these steps to set you up:
 
-1. Open Postman and select the environment you have used before as part of the AEP enablement. Refer to [this section](../module2/prerequisites/ex2.md) for more details on how to setup Postman.
+1. Open Postman and select the environment you have used before as part of the AEP enablement. Refer to <!--[this section](../module2/prerequisites/ex2.md)--> for more details on how to setup Postman.
 ![Postman](./images/postmanenvironment.png)
 2. Download the [Decisioning Service collection](./postman/_Decisioning%20Service.postman_collection.json) to your local computer.
 3. Import the `_Decisioning Service.postman_collection.json` file into Postman:
@@ -193,4 +193,4 @@ To do so:
 
 [Go Back to Module 14](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

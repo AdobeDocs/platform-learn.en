@@ -160,4 +160,4 @@ Currently, the UI does not provide the functionality to manage activities. You c
 
 [Go Back to Module 14](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

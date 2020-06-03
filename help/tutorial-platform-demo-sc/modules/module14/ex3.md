@@ -30,7 +30,7 @@ Repeat the previous steps for a non-existing profile and you will see a preview 
 
 You've now completed Module 14!
 
-**To mark completion of Module 14, follow the instructions here:** [How is completion measured?](./../../release/completion.md)
+**To mark completion of Module 14, follow the instructions here:** <!--[How is completion measured?](./../../release/completion.md)-->
 
 You'll need your Offer Activity ID to mark completion, it looks like this ``xcore:offer-activity:1122fcc4603ea499`` and you can find it here:
 
@@ -38,4 +38,4 @@ You'll need your Offer Activity ID to mark completion, it looks like this ``xcor
 
 [Go Back to Module 14](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)

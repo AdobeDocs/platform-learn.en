@@ -6,7 +6,7 @@ audience: all
 
 # SC Demo Tutorial {#sc-demo-tutorial}
 
-+ [Overview](/help/tutorial-platform-demo-sc/overview.md)
++ [Overview](/help/tutorial-platform-demo-sc/README.md)
 + Module 0: Initial Setup{#module0}
   + [README](/help/tutorial-platform-demo-sc/modules/module0/README.md)
   + [Ex1](/help/tutorial-platform-demo-sc/modules/module0/ex1.md)

@@ -192,7 +192,7 @@ Change the name and description:
 
 Now click ``Save As`` to save your new Calculated Metric without overwriting the original one..
 
-![demo](./images/prsaveas.png)
+<!--![demo](./images/prsaveas.png)-->
 
 ## Exercise 13.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
 
@@ -222,7 +222,7 @@ These Calculated Time Dimensions we will help analysts and business users to rem
 * When did we run that TV campaign in December?
 * From when to when did we do the 2018 Summer Sales? I want to compare it against 2019. By the way, do you know the exact days in 2019?
 
-![demo](./images/prtimedimensions.png)
+<!--![demo](./images/prtimedimensions.png)-->
 
 You've now finished the data preparation exercise using CJA Analysis Workspace.
 
@@ -230,4 +230,4 @@ Next Step: [Exercise 13.5 - Visualization using Analysis WorkSpace](./ex5.md)
 
 [Go Back to Module 13](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)
