@@ -2,7 +2,7 @@
 
 ## Objectives
 
-- Understand & Use the Customer Journey Analytics UI
+- Understand and Use the Customer Journey Analytics UI
 - Become familiar with the main Customer Journey Analytics Visualizations
 - Understand the value of using Customer Journey Analytics and Adobe Experience Platform to report on Google Analytics Data
 
@@ -14,7 +14,7 @@ Thanks to Adobe Experience Platform and the BigQuery Source Connector we can now
 
 ## 16.5.1 Log in to Customer Journey Analytics
 
-Go to [analytics.adobe.com](https://experience.adobe.com/#/@experienceplatform/platform/analytics/#/workspace) to access Customer Journey Analytics.
+Go to [analytics.adobe.com](https://analytics.adobe.com) to access Customer Journey Analytics.
 
 You'll the see the Customer Journey Analytics workspace home page. Please select the project ``ldap - Google Analytics``.
 
