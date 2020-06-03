@@ -1,5 +1,5 @@
 ---
-title: Module 0: Initial Setup
+title: Module 0 - Initial Setup
 description: In this module, you'll setup your own local AEP Demo-website environment and you'll install the Mobile App (iOS) that is used for this enablement.
 kt: 5342
 audience: 
