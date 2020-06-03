@@ -72,6 +72,8 @@ After creating a Recipe, you can now Train and Score your Recipe without having 
 
 Finally, you can select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
 
-### [FAQ](./qa.md)
+### FAQ
+
+[FAQ](./qa.md)
 
 [Go Back to All Modules](../../README.md)
