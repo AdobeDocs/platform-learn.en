@@ -133,8 +133,6 @@ You'll then get a visual confirmation that your activity is now live.
 
 ![RTCDP](./images/veclive.png)
 
----
-
 [Go Back to Module 11](./README.md)
 
 [Go Back to All Modules](../../README.md)

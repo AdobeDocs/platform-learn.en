@@ -82,8 +82,6 @@ And you're done. Your service is now created and the schedule is set.
 
 Congratulations, you've now finished Module 15!
 
----
-
 [Go Back to Module 15](./README.md)
 
 [Go Back to All Modules](../../README.md)

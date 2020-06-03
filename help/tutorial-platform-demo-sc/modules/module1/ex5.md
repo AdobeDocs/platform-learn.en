@@ -285,8 +285,6 @@ Go to ``Identity Data`` and you'll see that the ``I2`` option is already checked
 
 With this, you've now successfully ingested and classified CRM Data in Adobe Experience Platform.
 
----
-
 [Go Back to Module 1](./README.md)
 
 [Go Back to All Modules](../../README.md)

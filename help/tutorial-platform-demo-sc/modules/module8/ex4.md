@@ -62,8 +62,6 @@ Next, click the ```Preview Scoring Results Dataset```.
 
 With this, you've successfully finished this exercise and this module.
 
----
-
 [Go Back to Module 8](./README.md)
 
 [Go Back to All Modules](../../README.md)

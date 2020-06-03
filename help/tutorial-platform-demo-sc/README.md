@@ -1,6 +1,3 @@
-
-![Platform](./platformlogo.png)
-
 # Adobe Experience Platform - Technical Enablement
 
 ## Your Environment Variables
@@ -29,8 +26,6 @@ In this foundational module the focus is on data ingestion by making use of the 
 [Foundation: Real-time Customer Profile](./modules/module2/README.md)
 
 In this foundational module you'll be exploring the Real-time Customer Profile in Adobe Experience Platform by making use of the UI and API.
-
----
 
 ### OK - Module 4: Voice Assistant - Amazon Alexa
 

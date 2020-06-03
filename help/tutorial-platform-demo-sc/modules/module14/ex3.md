@@ -36,8 +36,6 @@ You'll need your Offer Activity ID to mark completion, it looks like this ``xcor
 
 ![demo](./images/webapp4.png)
 
----
-
 [Go Back to Module 14](./README.md)
 
 [Go Back to All Modules](./../../README.md)

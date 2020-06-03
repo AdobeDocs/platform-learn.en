@@ -84,8 +84,6 @@ Click the ``Create Account`` - button. If all goes well, you should receive an e
 
 You've now finished this exercise and this module!
 
----
-
 [Go Back to Module 6](./README.md)
 
 [Go Back to All Modules](../../README.md)

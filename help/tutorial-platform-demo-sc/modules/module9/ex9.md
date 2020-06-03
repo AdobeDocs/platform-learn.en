@@ -158,8 +158,6 @@ Also have a look at the ``Preview`` of Profile Data to retrieve your ingested da
 
 If both of these Datasets have successfully received the data coming from your website, you've finished this module!
 
----
-
 [Go Back to Module 9](./README.md)
 
 [Go Back to All Modules](./../../README.md)

@@ -83,8 +83,6 @@ From this list, your Recipe can be used to experiment but no coding is required 
 **To mark completion of Module 10, follow the instructions here:** [How is completion measured?](./../../release/completion.md)
 This will mark your completion for Module 10.
 
----
-
 [Go Back to Module 10](./README.md)
 
 [Go Back to All Modules](../../README.md)

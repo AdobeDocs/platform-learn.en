@@ -45,8 +45,6 @@ To further display the data per ``Call Topic``, drag (1) the ``Call Topic`` dime
 
 Congratulations! You have finished this module.
 
----
-
 [Go Back to Module 7](../README.md)
 
 [Go Back to All Modules](../../README.md)

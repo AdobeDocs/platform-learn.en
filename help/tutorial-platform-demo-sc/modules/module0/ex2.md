@@ -60,8 +60,6 @@ Your mobile app will now display the brand ``Luma Retail``.
 
 You now have the Mobile App installed, please continue with Module 1.
 
----
-
 [Go Back to Module 0](./README.md)
 
 [Go Back to All Modules](../../README.md)

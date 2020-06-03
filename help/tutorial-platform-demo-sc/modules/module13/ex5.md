@@ -385,8 +385,6 @@ It can be really useful to bring disconnected data into your analysis to give co
 
 Congratulations, you have finished Module 13.
 
----
-
 [Go Back to Module 13](./README.md)
 
 [Go Back to All Modules](./../../README.md)

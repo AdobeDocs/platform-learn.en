@@ -53,6 +53,4 @@ In this exercise you will be doing queries, you will learn about the Adobe Defin
 
 In this exercise you will generate a dataset from a query executed in the previous exercise and you will use this dataset in Power BI or Tableau to to Callcenter Interaction Analysis.
 
----
-
 [Go Back to Hands-On Lab Content](../../README.md)

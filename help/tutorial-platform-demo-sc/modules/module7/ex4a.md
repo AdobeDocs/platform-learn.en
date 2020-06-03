@@ -56,8 +56,6 @@ Select/unselect ``callTopics`` to investigate:
 
 Congratulations! You have finished this module.
 
----
-
 [Go Back to Module 7](../README.md)
 
 [Go Back to All Modules](../../README.md)

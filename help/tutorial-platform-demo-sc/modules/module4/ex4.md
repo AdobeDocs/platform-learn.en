@@ -174,8 +174,6 @@ With this, you've successfully completed this exercise.
 
 Congratulations, you've now finished Module 4.
 
----
-
 [Go Back to Module 4](./README.md)
 
 [Go Back to All Modules](./../../README.md)

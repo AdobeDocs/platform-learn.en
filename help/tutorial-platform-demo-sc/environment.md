@@ -1,6 +1,3 @@
-
-![Platform](./platformlogo.png)
-
 # Your Adobe Experience Platform environment
 
 These are the variables that are specific to your Adobe Experience Platform instance. You'll need these variables when going through the enablement content.
