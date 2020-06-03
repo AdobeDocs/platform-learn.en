@@ -57,7 +57,7 @@ On Monday May 25 2020, this should be the first set of identifiers of the day.
 
 ![Demo](./images/lb_register.png)
 
-ATTENTION: please remember [the Platform Demo Best Practices guidelines](./ex5.md)
+ATTENTION: please remember [the Platform Demo Best Practices guidelines](../../bestpractices.md)
 
 ![Demo](./images/lb_register_dtl.png)
 
@@ -176,4 +176,4 @@ Congratulations, you've now finished Module 4.
 
 [Go Back to Module 4](./README.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](../../README.md)
