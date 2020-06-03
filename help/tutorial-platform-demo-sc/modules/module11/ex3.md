@@ -1,3 +1,12 @@
+---
+title: Module 11, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 11.3 - Take Action: send your segment to DV360
 
 Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)

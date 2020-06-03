@@ -1,3 +1,12 @@
+---
+title: Module 6, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 6.3: Configure Launch to trigger your Event
 
 In this exercise, you'll configure Launch so that the Event you created in exercise 1 is now triggered, and activates the Journey that you built in exercise 2.

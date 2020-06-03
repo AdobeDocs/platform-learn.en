@@ -1,3 +1,12 @@
+---
+title: Module 11, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Module 11: RTCDP - Build a segment and take action!
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

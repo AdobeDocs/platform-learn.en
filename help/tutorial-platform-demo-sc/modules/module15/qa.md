@@ -1,3 +1,12 @@
+---
+title: Module 15, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # FAQ
 
 On this page, you'll find answers to common questions related to this specific ML Model.

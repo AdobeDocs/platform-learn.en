@@ -1,3 +1,12 @@
+---
+title: Module 12, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 12.1 - Define an Event
 
 In this exercise, you'll create a custom Event by making use of Journey Orchestration in combination with Adobe Experience Platform.

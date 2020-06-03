@@ -1,3 +1,12 @@
+---
+title: Module 8, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 8.4 - Scoring and Consumption of Insights
 
 Now that we’ve experimented with our recommendations model and have determined the optimal run, we can move on to scoring the model to generate product recommendations.

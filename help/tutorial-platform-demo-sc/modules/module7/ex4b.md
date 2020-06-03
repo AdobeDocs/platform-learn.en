@@ -1,4 +1,13 @@
 
+---
+title: Module 7, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 7.4.2 Explore the dataset with Tableau
 
 Open Tableau.

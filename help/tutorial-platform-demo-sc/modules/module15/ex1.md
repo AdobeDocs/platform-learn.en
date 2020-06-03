@@ -1,3 +1,12 @@
+---
+title: Module 15, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 15.1 - Introduction to Luma Insurance
 
 In this exercise, you'll learn how to use the Luma Insurance Demo Brand and how to demo the Real-time ML Use-Case.

@@ -1,3 +1,12 @@
+---
+title: Module 6, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 6.2: Journey Orchestration: Setup Journey
 
 In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the AEP Demo-website.

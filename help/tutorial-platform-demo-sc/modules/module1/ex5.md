@@ -1,3 +1,12 @@
+---
+title: Module 1, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 5: Data Ingestion from Offline Sources
 
 In this exercise, the goal is to onboard external data like CRM Data in Platform.

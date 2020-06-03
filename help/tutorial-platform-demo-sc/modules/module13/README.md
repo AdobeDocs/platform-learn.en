@@ -1,3 +1,12 @@
+---
+title: Module 13, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Module 13: Customer Journey Anaytics (CJA) - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 
 **Author: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

@@ -1,3 +1,12 @@
+---
+title: Module 15, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 15.4 - Train and Score your Recipe
 
 After creating a Recipe, you can now Train and Score your Recipe without having to touch code again.

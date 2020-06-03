@@ -1,3 +1,12 @@
+---
+title: Module 2, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 2 - Visualize your own Real-Time Customer Profile - UI
 
 In this exercise, you'll login to Adobe Experience Platform and you'll view your own Real-Time Customer Profile in the UI.

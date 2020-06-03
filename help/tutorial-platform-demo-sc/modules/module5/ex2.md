@@ -1,3 +1,12 @@
+---
+title: Module 5, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 5.2 - Connect Informatica to your AWS S3 bucket
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.

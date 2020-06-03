@@ -1,3 +1,12 @@
+---
+title: Module 4, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 4.2: Define your Alexa skill
 
 ## Introduction

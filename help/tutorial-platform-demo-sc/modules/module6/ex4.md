@@ -1,3 +1,12 @@
+---
+title: Module 6, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # (Optional) Exercise 6.4: How to create your own email in ACwP
 
 In this optional exercise, you'll learn how to create your own message and event structure in Adobe Campaign with Platform to use in combination with the events coming from Adobe Experience Platform.

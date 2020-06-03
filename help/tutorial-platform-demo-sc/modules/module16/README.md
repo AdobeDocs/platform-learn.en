@@ -1,3 +1,12 @@
+---
+title: Module 16, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Module 16: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
 
 **Authors: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

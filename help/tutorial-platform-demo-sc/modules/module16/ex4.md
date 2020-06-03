@@ -1,3 +1,12 @@
+---
+title: Module 16, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 16.4 - Load data from BigQuery into Adobe Experience Platform
 
 ## Objectives

@@ -1,3 +1,12 @@
+---
+title: Module 15, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 15.3 - Operationalize your model using a Recipe
 
 In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a Recipe.

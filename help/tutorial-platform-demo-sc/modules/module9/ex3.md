@@ -1,3 +1,12 @@
+---
+title: Module 9, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 9.3 - Configure GTM Variables
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.

@@ -1,3 +1,12 @@
+---
+title: Module 10, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 10.2 - Churn Prediction: Data Preparation
 
 ## Open Adobe Experience Platform and Jupyter Notebooks

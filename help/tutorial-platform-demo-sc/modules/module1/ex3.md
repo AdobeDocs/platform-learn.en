@@ -1,3 +1,12 @@
+---
+title: Module 1, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 3 - Configure Datasets
 
 In this exercise, you'll configure the required datasets to capture and store profile information and customer behavior. Every dataset that you create in this exercise will use one of the schemas that you built in the previous step.

@@ -1,3 +1,12 @@
+---
+title: Module 9, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 9.4 - Retrieve Datasets in Platform
 
 As part of the GTM Rule configuration, we'll define rules that will send behavioral and profile data to Platform. When defining a tag and trigger in GTM to send behavioral and/or profile data to Adobe Experience Platform, we'll need to define some variables in GTM:

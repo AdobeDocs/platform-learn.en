@@ -1,3 +1,12 @@
+---
+title: Module 12, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 12.4 - Design a trigger-based Customer Journey
 
 In this exercise, you'll create an Orchestrated Journey by making use of Journey Orchestration in combination with Adobe Experience Platform.

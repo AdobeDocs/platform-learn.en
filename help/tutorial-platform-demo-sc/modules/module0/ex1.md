@@ -1,3 +1,12 @@
+---
+title: Module 0, Exercise 1 - Setup of Webserver and Website
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 1: Setup of Webserver and Website
 
 In this exercise, the goal is to install the AEP Demo-website.

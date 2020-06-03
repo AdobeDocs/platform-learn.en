@@ -1,3 +1,12 @@
+---
+title: Module 9, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 9.9 - Verify Data Ingestion from website into Platform
 
 After implementing the GTM Tag on your website, you should start to see calls being sent towards Adobe Experience Platform.

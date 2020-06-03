@@ -1,3 +1,12 @@
+---
+title: Module 7, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 7.3 - Queries, queries, queries...  and churn analysis
 
 ## Objective

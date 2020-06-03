@@ -1,3 +1,12 @@
+---
+title: Module 1, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 4 - Use Launch and the Adobe Experience Platform Extension
 
 In this exercise, you'll use an existing Launch property and update 1 Launch Rule to capture customer behavior and send it to Adobe Experience Platform using the new Adobe Experience Platform extension.

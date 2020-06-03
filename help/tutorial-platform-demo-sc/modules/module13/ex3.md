@@ -1,3 +1,12 @@
+---
+title: Module 13, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 13.3 - Create a Data View
 
 ## Objectives

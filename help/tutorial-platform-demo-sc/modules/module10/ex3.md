@@ -1,3 +1,12 @@
+---
+title: Module 10, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 10.3 - Feature Engineering and Model Building
 
 In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model.

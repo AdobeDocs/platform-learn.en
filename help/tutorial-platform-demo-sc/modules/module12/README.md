@@ -1,3 +1,12 @@
+---
+title: Module 12, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Module 12: Journey Orchestration - External Weather API, SMS Action & more...
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

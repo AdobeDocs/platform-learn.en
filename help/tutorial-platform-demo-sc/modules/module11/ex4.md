@@ -1,3 +1,12 @@
+---
+title: Module 11, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
 
 Adobe Experience Platform and Adobe Audience Manager are closely connected to each other. The way they are connected is through a Bi-Directional Segment Sharing Connector. This means that all segments built in Adobe Experience Platform are shared to Adobe Audience Manager, and all segments built in Adobe Audience Manager are shared to Adobe Experience Platform.

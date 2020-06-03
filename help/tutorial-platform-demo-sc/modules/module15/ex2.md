@@ -1,3 +1,12 @@
+---
+title: Module 15, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment
 
 In this exercise, you'll install Anaconda on your local machine so you can run Jupyter Notebooks on your local machine, to then interact with the data in Adobe Experience Platform through the Query Service.

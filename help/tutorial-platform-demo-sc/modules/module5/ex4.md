@@ -1,3 +1,12 @@
+---
+title: Module 5, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 5.4: Ingest 2nd and 3rd party data into Adobe Experience Platform
 
 In this exercise, you'll learn how to import 2nd and 3rd party data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.

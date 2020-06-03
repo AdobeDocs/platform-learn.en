@@ -1,3 +1,12 @@
+---
+title: Module 2, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 6 - See you Real-time Customer Profile in action in the Call Center
 
 In this exercise, you'll follow a script and walk through the website.

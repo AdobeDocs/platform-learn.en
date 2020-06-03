@@ -1,3 +1,12 @@
+---
+title: Module 9, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 9.8 - Activate GTM-tag in SYTYCD Admin
 
 After implementing the GTM Tag on your website, you should control the behavior of the GTM Tag for your custom demo brands.

@@ -1,3 +1,12 @@
+---
+title: Module 0, Exercise 2 - Install the Mobile Application (iOS)
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 2: Install the Mobile Application (iOS)
 
 In this exercise, the goal is to install the Mobile Application (iOS).

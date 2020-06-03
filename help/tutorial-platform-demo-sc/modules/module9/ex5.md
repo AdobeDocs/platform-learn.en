@@ -1,3 +1,12 @@
+---
+title: Module 9, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 9.5 - Configure GTM Tags & Triggers
 
 After creating the extensions and data elements, it's time to build our Rules or ``Triggers`` as they are called in GTM.

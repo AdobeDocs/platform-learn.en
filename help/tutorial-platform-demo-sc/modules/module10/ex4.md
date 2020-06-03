@@ -1,3 +1,12 @@
+---
+title: Module 10, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 10.4 - Experimentation - Recipe Building
 
 ## What is a Recipe?

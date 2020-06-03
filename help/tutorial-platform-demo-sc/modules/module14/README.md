@@ -1,3 +1,12 @@
+---
+title: Module 14, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Module 14: Offer Decisioning
 
 **In Module 14**, you will get a hands-on preview of the Adobe Experience Platform -  Decisioning Service.

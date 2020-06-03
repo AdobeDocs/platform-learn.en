@@ -1,3 +1,12 @@
+---
+title: Module 0 - Initial Setup
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Module 0: Initial Setup
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

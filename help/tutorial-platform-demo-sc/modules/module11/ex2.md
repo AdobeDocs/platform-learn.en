@@ -1,3 +1,12 @@
+---
+title: Module 11, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 11.2 - Configure an Advertising Destination like Google DV360
 
 >[!IMPORTANT] The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.

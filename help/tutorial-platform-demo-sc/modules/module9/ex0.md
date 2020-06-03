@@ -1,3 +1,12 @@
+---
+title: Module 9, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 9.2.0 - Create a Google Account
 
 Go to [https://accounts.google.com/signup](https://accounts.google.com/signup).

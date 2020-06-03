@@ -1,3 +1,12 @@
+---
+title: Module 9, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 9.2 - Setup Google Analytics & link it to GTM
 
 Go to [https://analytics.google.com/](https://analytics.google.com/) and login with your Google Account.

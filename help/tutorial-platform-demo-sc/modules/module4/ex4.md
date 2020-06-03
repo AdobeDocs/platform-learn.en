@@ -1,3 +1,12 @@
+---
+title: Module 4, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 4.4 - Walkthrough of Demo Scenario, now including Alexa
 
 Below is a standard script to walk through the demo scenario in the context of Luma Retail. The same script can be applied to any other brand of choice, like Luma Retail or your own custom brand.

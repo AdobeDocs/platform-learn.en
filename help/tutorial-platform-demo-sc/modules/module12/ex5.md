@@ -1,3 +1,12 @@
+---
+title: Module 12, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 12.5 - Trigger your Orchestrated Customer Journey
 
 In this exercise, you'll test and trigger the Orchestrated Journey you configured in this module.

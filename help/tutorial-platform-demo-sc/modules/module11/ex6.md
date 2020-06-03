@@ -1,3 +1,12 @@
+---
+title: Module 11, Exercise - 
+description: 
+kt: 5342
+audience: 
+doc-type: tutorial
+activity: 
+---
+
 # Exercise 11.6 - Take Action: send your segment to Adobe Target
 
 Adobe Experience Platform also has the ability to share Audiences directly with the Adobe Experience Cloud Core Service ``People - Audience Library``.
