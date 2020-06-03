@@ -1,5 +1,5 @@
 ---
-title: Module 10, Exercise - 
+title: Module 10, Exercise
 description: 
 kt: 5342
 audience: 
@@ -19,7 +19,7 @@ Execute all cells one by one. The cells detail steps to explore data, build visu
 
 Follow the step by step process for model building. Notice the independent variables like number of orders and revenue metrics created for the observation time period.
 
-Two models are outlined in this exercise - Logistic Regression and Random Forrest Regressor. Depending on the accuracy of the model, one can choose the model and use it to score the data set and build recipe.
+Two models are outlined in this ExerciseLogistic Regression and Random Forrest Regressor. Depending on the accuracy of the model, one can choose the model and use it to score the data set and build recipe.
 
 Next Step: [Exercise 10.4 - Experimentation - Recipe Building](./ex4.md)
 

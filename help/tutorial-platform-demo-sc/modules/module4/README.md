@@ -1,5 +1,5 @@
 ---
-title: Module 4, Exercise - 
+title: Module 4, Exercise
 description: 
 kt: 5342
 audience: 

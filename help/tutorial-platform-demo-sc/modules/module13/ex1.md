@@ -1,5 +1,5 @@
 ---
-title: Module 13, Exercise - 
+title: Module 13, Exercise
 description: 
 kt: 5342
 audience: 

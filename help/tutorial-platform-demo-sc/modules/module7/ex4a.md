@@ -1,5 +1,5 @@
 ---
-title: Module 7, Exercise - 
+title: Module 7, Exercise
 description: 
 kt: 5342
 audience: 

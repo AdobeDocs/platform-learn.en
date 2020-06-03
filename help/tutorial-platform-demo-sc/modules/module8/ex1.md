@@ -1,5 +1,5 @@
 ---
-title: Module 8, Exercise - 
+title: Module 8, Exercise
 description: 
 kt: 5342
 audience: 

@@ -1,5 +1,5 @@
 ---
-title: Module 11, Exercise - 
+title: Module 11, Exercise
 description: 
 kt: 5342
 audience: 

@@ -1,5 +1,5 @@
 ---
-title: Module 6, Exercise - 
+title: Module 6, Exercise
 description: 
 kt: 5342
 audience: 
