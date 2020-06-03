@@ -1,10 +1,10 @@
 ---
-title: Module 0 - Initial Setup
-description: 
+title: Module 0  Initial Setup
+description: description
 kt: 5342
-audience: 
+audience: test
 doc-type: tutorial
-activity: 
+activity: test
 ---
 
 # Module 0: Initial Setup
