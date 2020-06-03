@@ -8,6 +8,7 @@ activity: setup
 doc-type: feature video
 team: Technical Marketing
 kt: 3958
+thumbnail: 30186.jpg
 
 ---
 
