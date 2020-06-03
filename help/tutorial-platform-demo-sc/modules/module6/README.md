@@ -24,15 +24,21 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 6.1: Journey Orchestration: Setup Event](./ex1.md)
+### Exercise 6.1: Journey Orchestration: Setup Event
+
+[Exercise 6.1: Journey Orchestration: Setup Event](./ex1.md)
 
 This exercise will guide you through the configuration of an Event.
 
-### [Exercise 6.2: Journey Orchestration: Setup Journey](./ex2.md)
+### Exercise 6.2: Journey Orchestration: Setup Journey
+
+[Exercise 6.2: Journey Orchestration: Setup Journey](./ex2.md)
 
 This exercise will guide you through the configuration of an Journey and how to link your Event to that Journey.
 
-### [Exercise 6.3: Configure Launch to trigger your Event](./ex3.md)
+### Exercise 6.3: Configure Launch to trigger your Event
+
+[Exercise 6.3: Configure Launch to trigger your Event](./ex3.md)
 
 This exercise will guide you through the configuration of Launch to trigger your Event and provide the right payload and finally, you'll be able to send yourself an email.
 

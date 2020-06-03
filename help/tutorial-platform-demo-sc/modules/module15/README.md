@@ -42,23 +42,33 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 15.1 - Introduction to Luma Insurance](./ex1.md)
+### Exercise 15.1 - Introduction to Luma Insurance
+
+[Exercise 15.1 - Introduction to Luma Insurance](./ex1.md)
 
 In this exercise, you'll learn how to use the Luma Insurance Demo Brand and how to demo the Real-time ML Use-Case.
 
-### [Exercise 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
+### Exercise 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment
+
+[Exercise 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
 
 In this exercise, you'll install Anaconda on your local machine so you can run Jupyter Notebooks on your local machine, to then interact with the data in Adobe Experience Platform through the Query Service.
 
-### [Exercise 15.3 - Operationalize your model using a Recipe](./ex3.md)
+### Exercise 15.3 - Operationalize your model using a Recipe
+
+[Exercise 15.3 - Operationalize your model using a Recipe](./ex3.md)
 
 In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a Recipe.
 
-### [Exercise 15.4 - Train and Score your Recipe](./ex4.md)
+### Exercise 15.4 - Train and Score your Recipe
+
+[Exercise 15.4 - Train and Score your Recipe](./ex4.md)
 
 After creating a Recipe, you can now Train and Score your Recipe without having to touch code again.
 
-### [Exercise 15.5 - Publish your Recipe as a Scheduled Service](./ex5.md)
+### Exercise 15.5 - Publish your Recipe as a Scheduled Service
+
+[Exercise 15.5 - Publish your Recipe as a Scheduled Service](./ex5.md)
 
 Finally, you can select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
 

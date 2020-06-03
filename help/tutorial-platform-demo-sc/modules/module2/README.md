@@ -35,27 +35,39 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 1 - Visit the website](./ex1.md)
+### Exercise 1 - Visit the website
+
+[Exercise 1 - Visit the website](./ex1.md)
 
 In this exercise, you'll follow a script and walk through the website.
 
-### [Exercise 2 - Visualize your own real-time customer profile - UI](./ex2.md)
+### Exercise 2 - Visualize your own real-time customer profile - UI
+
+[Exercise 2 - Visualize your own real-time customer profile - UI](./ex2.md)
 
 In this exercise, you'll login to Adobe Experience Platform and you'll view your own Real-time Customer Profile in the UI.
 
-### [Exercise 3 - Visualize your own real-time customer profile - API](./ex3.md)
+### Exercise 3 - Visualize your own real-time customer profile - API
+
+[Exercise 3 - Visualize your own real-time customer profile - API](./ex3.md)
 
 In this exercise, you'll use Postman and Adobe I/O to view your own real-time customer profile, by making use of Adobe Experience Platform's API's.
 
-### [Exercise 4 - Create a segment - UI](./ex4.md)
+### Exercise 4 - Create a segment - UI
+
+[Exercise 4 - Create a segment - UI](./ex4.md)
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
 
-### [Exercise 5 - Create a segment - API](./ex5.md)
+### Exercise 5 - Create a segment - API
+
+[Exercise 5 - Create a segment - API](./ex5.md)
 
 In this exercise, you'll use Postman and Adobe I/O to create a segment and store the results of that segment as a dataset, by making use of Adobe Experience Platform's API's.
 
-### [Exercise 6 - See you Real-time Customer Profile in action in the Call Center](./ex6.md)
+### Exercise 6 - See you Real-time Customer Profile in action in the Call Center
+
+[Exercise 6 - See you Real-time Customer Profile in action in the Call Center](./ex6.md)
 
 In this exercise, you'll impersonate a call center employee who receives a call from a customer. In order to really make an impact on this customer's experience, you'll need access to all available information in real-time.
 

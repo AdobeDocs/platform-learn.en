@@ -40,23 +40,33 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 7.0 - Pre-requisites](./ex0.md)
+### 
+
+[Exercise 7.0 - Pre-requisites](./ex0.md)
 
 You will need to install psql to execute the queries in this enablement exercise. Depending on your operating system you will have to install Microsoft Power BI or Tableau. Windows users can choose between Power BI or Tableau. Mac users should install Tableau.
 
-### [Exercise 7.1 - Getting Started](./ex1.md)
+### Exercise 7.1 - Getting Started
+
+[Exercise 7.1 - Getting Started](./ex1.md)
 
 In this exercise you will explore the Adobe Experience Platform Query Service User Interface, learn about data sets, find your queries and finally setup a connection from PSQL.
 
-### [Exercise 7.2 - Using the Query Service](./ex2.md)
+### Exercise 7.2 - Using the Query Service
+
+[Exercise 7.2 - Using the Query Service](./ex2.md)
 
 In this exercise you will learn about the basic Query Service syntax and you can identify the attributes of the XDM schema in your query.
 
-### [Exercise 7.3 - Queries, queries, queries...  and churn analysis](./ex3.md)
+### Exercise 7.3 - Queries, queries, queries...  and churn analysis
+
+[Exercise 7.3 - Queries, queries, queries...  and churn analysis](./ex3.md)
 
 In this exercise you will be doing queries, you will learn about the Adobe Defined Functions while doing some churn analysis. At the end of this exercise you will write a query to prepare a dataset for use in Microsoft Power BI.
 
-### [Exercise 7.4 - Power BI/Tableau](./ex4.md)
+### Exercise 7.4 - Power BI/Tableau
+
+[Exercise 7.4 - Power BI/Tableau](./ex4.md)
 
 In this exercise you will generate a dataset from a query executed in the previous exercise and you will use this dataset in Power BI or Tableau to to Callcenter Interaction Analysis.
 

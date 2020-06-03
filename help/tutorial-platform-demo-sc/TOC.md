@@ -6,13 +6,13 @@ audience: all
 
 # SC Demo Tutorial {#sc-demo-tutorial}
 
-+ [Overview](/help/tutorial-platform-demo-sc/readme.md)
++ [Overview](/help/tutorial-platform-demo-sc/README.md)
 + Module 0: Initial Setup{#module0}
-  + [README](/help/tutorial-platform-demo-sc/modules/module0/readme.md)
+  + [README](/help/tutorial-platform-demo-sc/modules/module0/README.md)
   + [Ex1](/help/tutorial-platform-demo-sc/modules/module0/ex1.md)
   + [Ex2](/help/tutorial-platform-demo-sc/modules/module0/ex2.md)
 + Module 1: Foundation: Data Ingestion{#module1}
-  + [README](/help/tutorial-platform-demo-sc/modules/module1/readme.md)
+  + [README](/help/tutorial-platform-demo-sc/modules/module1/README.md)
   + [Ex1](/help/tutorial-platform-demo-sc/modules/module1/ex1.md)
   + [Ex2](/help/tutorial-platform-demo-sc/modules/module1/ex2.md)
   + [Ex3](/help/tutorial-platform-demo-sc/modules/module1/ex3.md)

@@ -40,23 +40,33 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 13.1 - Customer Journey Analytics 101](./ex1.md)
+### Exercise 13.1 - Customer Journey Analytics 101
+
+[Exercise 13.1 - Customer Journey Analytics 101](./ex1.md)
 
 In this exercise, you'll learn all about the Customer Journey Analytics-concepts.
 
-### [Exercise 13.2 - Connect Adobe Experience Platform Data Sets in CJA](./ex2.md)
+### Exercise 13.2 - Connect Adobe Experience Platform Data Sets in CJA
+
+[Exercise 13.2 - Connect Adobe Experience Platform Data Sets in CJA](./ex2.md)
 
 In this exercise, you'll learn how to consume multiple datasets from Adobe Experience Platform into CJA.
 
-### [Exercise 13.3 - Create a Data View](./ex3.md)
+### Exercise 13.3 - Create a Data View
+
+[Exercise 13.3 - Create a Data View](./ex3.md)
 
 In this exercise, you'll learn how to configure a data view in CJA.
 
-### [Exercise 13.4 - Data Preparation in Analysis Workspace](./ex4.md)
+### Exercise 13.4 - Data Preparation in Analysis Workspace
+
+[Exercise 13.4 - Data Preparation in Analysis Workspace](./ex4.md)
 
 In this exercise, you'll learn how to do some data preparation before continuing with analysis.
 
-### [Exercise 13.5 - Visualization using Analysis Workspace](./ex5.md)
+### Exercise 13.5 - Visualization using Analysis Workspace
+
+[Exercise 13.5 - Visualization using Analysis Workspace](./ex5.md)
 
 In this exercise, you'll learn how to visualize Adobe Experience Platform data using Analysis Workspace and CJA.
 

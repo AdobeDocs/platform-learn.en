@@ -34,19 +34,27 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 1 - Introduction to Data Science](./ex1.md)
+### Exercise 1 - Introduction to Data Science
+
+[Exercise 1 - Introduction to Data Science](./ex1.md)
 
 Learn about basic concepts and terminology used in the Data Science world.
 
-### [Exercise 2 - Churn Prediction: Data Preparation](./ex2.md)
+### Exercise 2 - Churn Prediction: Data Preparation
+
+[Exercise 2 - Churn Prediction: Data Preparation](./ex2.md)
 
 One of the first steps in any Data Science project is Data Preparation. A Data Scientist has to ensure data is correct before feeding it into a model.
 
-### [Exercise 3 - Feature Engineering and Model Building](./ex3.md)
+### Exercise 3 - Feature Engineering and Model Building
+
+[Exercise 3 - Feature Engineering and Model Building](./ex3.md)
 
 In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model.
 
-### [Exercise 4 - Experimentation - Recipe Building](./ex4.md)
+### Exercise 4 - Experimentation - Recipe Building
+
+[Exercise 4 - Experimentation - Recipe Building](./ex4.md)
 
 In this exercise, you'll convert the feature engineering and model that you have prepared in the above steps into a recipe.
 

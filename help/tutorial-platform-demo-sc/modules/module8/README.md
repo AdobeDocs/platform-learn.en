@@ -41,19 +41,27 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 8.1 - Data Exploration and Transformation](./ex1.md)
+### Exercise 8.1 - Data Exploration and Transformation
+
+[Exercise 8.1 - Data Exploration and Transformation](./ex1.md)
 
 To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you will explore purchase data flowing via Adobe Analytics to Platform and transform that data into a Feature DataSet that can help train your machine learning model.
 
-### [Exercise 8.2 - Model Authoring and Operationalization](./ex2.md)
+### Exercise 8.2 - Model Authoring and Operationalization
+
+[Exercise 8.2 - Model Authoring and Operationalization](./ex2.md)
 
 In exercise 1 we created the Training Data required to power our Machine Learning model. In this lesson we will show you how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
-### [Exercise 8.3 - Model Training and Experimentation](./ex3.md)
+### Exercise 8.3 - Model Training and Experimentation
+
+[Exercise 8.3 - Model Training and Experimentation](./ex3.md)
 
 So we’ve prepared our data, authored our model and packaged it to test it at scale as a recipe. Now let’s go ahead and train and test the model at scale.
 
-### [Exercise 8.4 - Scoring and Consumption of Insights](./ex4.md)
+### Exercise 8.4 - Scoring and Consumption of Insights
+
+[Exercise 8.4 - Scoring and Consumption of Insights](./ex4.md)
 
 Now that we’ve experimented with our recommendations model and have determined the optimal run, we can move on to scoring the model to generate product recommendations for customers.
 

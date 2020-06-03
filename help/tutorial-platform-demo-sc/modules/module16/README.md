@@ -40,23 +40,33 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 16.1 - Create your Google Cloud Platform Account](./ex1.md)
+### Exercise 16.1 - Create your Google Cloud Platform Account
+
+[Exercise 16.1 - Create your Google Cloud Platform Account](./ex1.md)
 
 In this exercise, you'll create your Google Cloud Platform account.
 
-### [Exercise 16.2 - Create your first query in BigQuery](./ex2.md)
+### Exercise 16.2 - Create your first query in BigQuery
+
+[Exercise 16.2 - Create your first query in BigQuery](./ex2.md)
 
 In this exercise, you'll learn how to use BigQuery to prepare the data for loading into AEP.
 
-### [Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
+### Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform
+
+[Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 
 In this exercise, you'll learn how to setup the Source Connector in Adobe Experience Platform.
 
-### [Exercise 16.4 - Load data from BigQuery into Adobe Experience Platform](./ex4.md)
+### Exercise 16.4 - Load data from BigQuery into Adobe Experience Platform
+
+[Exercise 16.4 - Load data from BigQuery into Adobe Experience Platform](./ex4.md)
 
 In this exercise, you'll learn how to configure the BigQuery Source Connector in Adobe Experience Platform to ingest your Google Analytics Data.
 
-### [Exercise 16.5 - Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
+### Exercise 16.5 - Analyze Google Analytics Data using Customer Journey Analytics
+
+[Exercise 16.5 - Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
 
 In this exercise, you'll learn how to analyze Google Analytics data in Customer Journey Analytics and combine it with Loyalty data.
 

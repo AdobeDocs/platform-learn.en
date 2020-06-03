@@ -36,19 +36,27 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 4.1: Set up an Amazon environment](./ex1.md)
+### Exercise 4.1: Set up an Amazon environment
+
+[Exercise 4.1: Set up an Amazon environment](./ex1.md)
 
 In this module, you'll have to setup an Amazon developer account. With an Amazon developer account you can build your Alexa skill and, even more important, simulate your skill, which is especially relevant in case you do not own an Alexa device like an Echo Spot or Echo Show.
 
-### [Exercise 4.2: Define your Alexa skill](./ex2.md)
+### Exercise 4.2: Define your Alexa skill
+
+[Exercise 4.2: Define your Alexa skill](./ex2.md)
 
 This module will guide you through all the necessary steps to define and configure a new Amazon Alexa skill.
 
-### [Exercise 4.3: Use your Alexa skill](./ex3.md)
+### Exercise 4.3: Use your Alexa skill
+
+[Exercise 4.3: Use your Alexa skill](./ex3.md)
 
 In this module, we'll show you the different approaches to demoing the Alexa skill.
 
-### [Exercise 4.4: Walkthrough of Demo Scenario, now including Alexa](./ex4.md)
+### Exercise 4.4: Walkthrough of Demo Scenario, now including Alexa
+
+[Exercise 4.4: Walkthrough of Demo Scenario, now including Alexa](./ex4.md)
 
 In this module, we'll show you a walkthrough and script of the updated demo talk track and steps to follow.
 

@@ -30,23 +30,33 @@ You can view these variables [here](../../environment.md).
 
 ## Lab Content
 
-### [Exercise 12.1 - Define an Event](./ex1.md)
+### Exercise 12.1 - Define an Event
+
+[Exercise 12.1 - Define an Event](./ex1.md)
 
 In this exercise, you'll learn how to define a custom event using Journey Orchestration.
 
-### [Exercise 12.2 - Define an External Data Source](./ex2.md)
+### Exercise 12.2 - Define an External Data Source
+
+[Exercise 12.2 - Define an External Data Source](./ex2.md)
 
 In this exercise, you'll learn how to configure an external Data Source using Journey Orchestration.
 
-### [Exercise 12.3 - Define a Custom Action](./ex3.md)
+### Exercise 12.3 - Define a Custom Action
+
+[Exercise 12.3 - Define a Custom Action](./ex3.md)
 
 In this exercise, you'll learn how to define an external Action using Journey Orchestration.
 
-### [Exercise 12.4 - Design a trigger-based Customer Journey](./ex4.md)
+### Exercise 12.4 - Design a trigger-based Customer Journey
+
+[Exercise 12.4 - Design a trigger-based Customer Journey](./ex4.md)
 
 In this exercise, you'll combine events, data sources and actions into an intelligent and contextual Journey.
 
-### [Exercise 12.5 - Trigger your Orchestrated Customer Journey](./ex5.md)
+### Exercise 12.5 - Trigger your Orchestrated Customer Journe
+
+[Exercise 12.5 - Trigger your Orchestrated Customer Journey](./ex5.md)
 
 In this exercise, you'll trigger your specific Orchestrated Journey.
 

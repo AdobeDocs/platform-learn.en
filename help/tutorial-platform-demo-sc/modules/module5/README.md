@@ -36,19 +36,27 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 5.1 - Setup an AWS S3 bucket](./ex1.md)
+### Exercise 5.1 - Setup an AWS S3 bucket
+
+[Exercise 5.1 - Setup an AWS S3 bucket](./ex1.md)
 
 In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS environment and how to upload data in that S3 bucket.
 
-### [Exercise 5.2 - Connect Informatica to your AWS S3 bucket](./ex2.md)
+### Exercise 5.2 - Connect Informatica to your AWS S3 bucket
+
+[Exercise 5.2 - Connect Informatica to your AWS S3 bucket](./ex2.md)
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.
 
-### [Exercise 5.3 - Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
+### 
+
+[Exercise 5.3 - Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
 
 In this exercise, you'll learn how to import order data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
-### [Exercise 5.4 - Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
+### Exercise 5.4 - Ingest 2nd and 3rd party data into Adobe Experience Platform
+
+[Exercise 5.4 - Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
 
 In this exercise, you'll learn how to import 2nd and 3rd party data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
