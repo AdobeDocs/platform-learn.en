@@ -84,7 +84,7 @@ audience: all
   + [Ex4](/help/tutorial-platform-demo-sc/modules/module11/ex4.md)
   + [Ex5](/help/tutorial-platform-demo-sc/modules/module11/ex5.md)
   + [Ex6](/help/tutorial-platform-demo-sc/modules/module11/ex6.md)
-+ Module 12: Journey Orchestration - External Weather API, SMS Action & more...{#module12}
++ Module 12: Journey Orchestration - External Weather API, SMS Action and more...{#module12}
   + [README](/help/tutorial-platform-demo-sc/modules/module12/README.md)
   + [Ex1](/help/tutorial-platform-demo-sc/modules/module12/ex1.md)
   + [Ex2](/help/tutorial-platform-demo-sc/modules/module12/ex2.md)
@@ -113,7 +113,7 @@ audience: all
   + [Ex4](/help/tutorial-platform-demo-sc/modules/module15/ex4.md)
   + [Ex5](/help/tutorial-platform-demo-sc/modules/module15/ex5.md)
   + [FAQ](/help/tutorial-platform-demo-sc/modules/module15/qa.md)
-+ Module 16: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector{#module16}
++ Module 16: Ingest and Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector{#module16}
   + [README](/help/tutorial-platform-demo-sc/modules/module16/README.md)
   + [Ex1](/help/tutorial-platform-demo-sc/modules/module16/ex1.md)
   + [Ex2](/help/tutorial-platform-demo-sc/modules/module16/ex2.md)
