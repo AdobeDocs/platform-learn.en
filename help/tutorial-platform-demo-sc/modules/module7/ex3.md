@@ -1,22 +1,22 @@
-## Exercise 7.3 - Queries, queries, queries...  and churn analysis
+# Exercise 7.3 - Queries, queries, queries...  and churn analysis
 
-### Objective
+## Objective
 
-- Write queries for data analyses
-- Write SQL queries combining online, callcenter and loyalty data avialable in Adobe Experience Platform
-- Learn about Adobe Defined Functions
+* Write queries for data analyses
+* Write SQL queries combining online, callcenter and loyalty data available in Adobe Experience Platform
+* Learn about Adobe Defined Functions
 
-### Context
+## Context
 
-In this exercises you will write queries to analyse product views, product funnels, churn etc.
+In this exercises you will write queries to analyze product views, product funnels, churn etc.
 
 All queries listed in this chapter will be executed in your **PSQL command-line interface**. You should copy (CTRL-c) the statement blocks indicated with **SQL** and paste (CTRL-v)them in the **PSQL command-line interface**. The **Query Result** blocks show the pasted SQL statement and the associated query result.
 
-### Exercise 7.3.1
+## Exercise 7.3.1
 
 Write basic queries for data analysis
 
-#### Timestamp
+### Timestamp
 
 Data captured in Adobe Experience Platform is time stamped. The ``timestamp`` attribute allows you to analyze data over time.
 
@@ -52,7 +52,7 @@ prod:all-> limit 10;
 (1 row)
 ```
 
-#### Top 5 products viewed
+### Top 5 products viewed
 
 What are the top 5 products viewed?
 
@@ -80,7 +80,7 @@ prod:all-> and    <aepTenantId>.productData.productInteraction = 'productView'
 prod:all-> group  by <aepTenantId>.productData.productName
 prod:all-> order  by 2 desc
 prod:all-> limit 5;
-              productname              | count(1) 
+              productname              | count(1)
 ---------------------------------------+----------
  Google Pixel XL 32GB Black Smartphone |      838
  Samsung Galaxy S8                     |      456
@@ -89,7 +89,7 @@ prod:all-> limit 5;
 (4 rows)
 ```
 
-#### Product Interaction funnel, from viewing to buying
+### Product Interaction funnel, from viewing to buying
 
 **SQL**
 
@@ -119,8 +119,7 @@ prod:all-> group  by <aepTenantId>.productData.productInteraction;
 (3 rows)
 ```
 
-
-#### Identify visitors with risk to Churn (visit page => Cancel Service)
+### Identify visitors with risk to Churn (visit page => Cancel Service)
 
 **SQL**
 
@@ -159,28 +158,28 @@ prod:all-> limit 10;
 (10 rows)
 ```
 
-In the next set of queries we will extend the above query, in order to get a complete view on the customers and their behavior that have been visiting the "Cancel Service" page. You will learn how to use the Adobe Defined Function to sessionize information, identify the sequence and timiong of events. You will also join datasets together to further enrich and prepare the data for analysis in Microsoft Power BI.
+In the next set of queries we will extend the above query, in order to get a complete view on the customers and their behavior that have been visiting the "Cancel Service" page. You will learn how to use the Adobe Defined Function to sessionize information, identify the sequence and timing of events. You will also join datasets together to further enrich and prepare the data for analysis in Microsoft Power BI.
 
-### Exercise 7.3.2
+## Exercise 7.3.2
 
 The majority of the business logic requires gathering the touchpoints for a customer and ordering them by time. This support is provided by Spark SQL in the form of window functions. Window functions are part of standard SQL and are supported by many other SQL engines.
 
-#### Adobe Defined Functions
+### Adobe Defined Functions
 
 Adobe has added a set of **Adobe Defined Functions** to the standard SQL syntax that allow you to better understand your experience data. In the next couple of queries you will learn about these ADF functions. You can find more information and the complete list via [Adobe IO](https://www.adobe.io/apis/experienceplatform/home/services/query-service/query-service.html#!acpdr/end-user/markdown/query-service/qs-queries-adobefunctions.md).
 
-#### What do people do on the site before reaching the "Cancel Service" page as the 3rd page in a session?
+### What do people do on the site before reaching the "Cancel Service" page as the 3rd page in a session?
 
 With this query you will discover the first two Adobe Defined Functions **SESS_TIMEOUT** and **NEXT**
 
 > The **SESS_TIMEOUT()** reproduces the visit groupings found with Adobe Analytics. It performs a similar time-based grouping, but customizable parameters.
-
+>
 > **NEXT()** and **PREVIOUS()** help you to understand how customers navigate your site.
 
 **SQL**
 
 ```sql
-SELECT 
+SELECT
   webPage,
   webPage_2,
   webPage_3,
@@ -251,7 +250,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (10 rows)
 ```
 
-#### How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page?
+### How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page?
 
 To answer this kind of query will we use the ``TIME_BETWEEN_NEXT_MATCH()`` Adobe Defined Function.
 
@@ -301,7 +300,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (15 rows)
 ```
 
-#### And what is the outcome of that contact?
+### And what is the outcome of that contact?
 
 Explain that we are joining datasets together, in this case we join our ``aep_demo_website_interactions`` with ``aep_demo_call_center_interactions``. We do this to know the outcome of the callcenter interaction.
 
@@ -355,7 +354,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (15 rows)
 ```
 
-#### What is the loyalty profile of these customers?
+### What is the loyalty profile of these customers?
 
 In this query we join loyalty data that we have onboarded in Adobe Experience Platform. This allows to enrich the churn analysis with loyalty data.
 
@@ -414,44 +413,44 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 
 #### From what region do the visit us?
 
-Lets include the geographical info, like longitude, lattitude, city, countrycode, captured by the Adobe Experience Platform in order to get some geographical insights about churning customers.
+Lets include the geographical info, like longitude, attitude, city, countrycode, captured by the Adobe Experience Platform in order to get some geographical insights about churning customers.
 
 **SQL**
 
 ```sql
-	select r.ecid,
-	       r.city,
-	       r.countrycode,
-	       r.lat as latitude,
-	       r.lon as longitude,
-	       r.contact_callcenter_after_seconds as seconds_to_contact_callcenter,
-	       c.<aepTenantId>.callDetails.callFeeling,
-	       c.<aepTenantId>.callDetails.callTopic,
-	       c.<aepTenantId>.callDetails.contractCancelled,
-	       l.<aepTenantId>.loyalty.loyaltyStatus,
-	       l.<aepTenantId>.identification.crmid
-	from (
-	       select <aepTenantId>.identification.ecid ecid,
-	              placeContext.geo._schema.latitude lat,
-	              placeContext.geo._schema.longitude lon,
-	              placeContext.geo.city,
-	              placeContext.geo.countryCode,
-	              web.webPageDetails.name as webPage,
-	              TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-	              OVER(PARTITION BY <aepTenantId>.identification.ecid
-	                  ORDER BY timestamp
-	                  ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
-	              AS contact_callcenter_after_seconds
-	       from   aep_demo_website_interactions
-	       where  <aepTenantId>.brand.brandName like 'Luma Telco'
-	       and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
-	) r
-	, aep_demo_call_center_interactions c
-	, aep_demo_loyalty_data l
-	where r.ecid = c.<aepTenantId>.identification.ecid
-	and r.webPage = 'Cancel Service'
-	and l.<aepTenantId>.identification.ecid = r.ecid
-	limit 15;
+       select r.ecid,
+              r.city,
+              r.countrycode,
+              r.lat as latitude,
+              r.lon as longitude,
+              r.contact_callcenter_after_seconds as seconds_to_contact_callcenter,
+              c.<aepTenantId>.callDetails.callFeeling,
+              c.<aepTenantId>.callDetails.callTopic,
+              c.<aepTenantId>.callDetails.contractCancelled,
+              l.<aepTenantId>.loyalty.loyaltyStatus,
+              l.<aepTenantId>.identification.crmid
+       from (
+              select <aepTenantId>.identification.ecid ecid,
+                     placeContext.geo._schema.latitude lat,
+                     placeContext.geo._schema.longitude lon,
+                     placeContext.geo.city,
+                     placeContext.geo.countryCode,
+                     web.webPageDetails.name as webPage,
+                     TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
+                     OVER(PARTITION BY <aepTenantId>.identification.ecid
+                         ORDER BY timestamp
+                         ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
+                     AS contact_callcenter_after_seconds
+              from   aep_demo_website_interactions
+              where  <aepTenantId>.brand.brandName like 'Luma Telco'
+              and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
+       ) r
+       , aep_demo_call_center_interactions c
+       , aep_demo_loyalty_data l
+       where r.ecid = c.<aepTenantId>.identification.ecid
+       and r.webPage = 'Cancel Service'
+       and l.<aepTenantId>.identification.ecid = r.ecid
+       limit 15;
 ```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
@@ -475,7 +474,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 
 ```
 
-### Callcenter Interaction Analysis
+## Callcenter Interaction Analysis
 
 In the queries above we only looked at the visitors that ended up contacting the callcenter in case of service cancellation. We want to take this a bit broader and take into account all callcenter interaction including (wifi, promo, invoice, complaint and contract).  
 
@@ -489,7 +488,7 @@ On Mac
 
 ![osx-start-brackets.png](./images/osx-start-brackets.png)
 
-Copy the following statement to notepad/brackts:
+Copy the following statement to notepad/brackets:
 
 ```sql
 select /* enter your name */
@@ -583,4 +582,3 @@ Next Step: [Exercise 7.4 - Power BI/Tableau](./ex4.md)
 [Go Back to Module 7](../README.md)
 
 [Go Back to All Modules](../../README.md)
-

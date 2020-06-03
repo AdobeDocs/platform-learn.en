@@ -1,4 +1,4 @@
-## Exercise 10.1 - Introduction to Data Science
+# Exercise 10.1 - Introduction to Data Science
 
 ## Introduction to Data Science
 
@@ -10,7 +10,7 @@
 
 #### A little history of Data Science and how the word was coined
 
-In 1980s, IBM came up withthe first relational database storing data like customer details, payroll data. 
+In 1980s, IBM came up with the first relational database storing data like customer details, payroll data.
 
 Soon after, we started thinking of what useful things we can mine from this data and the term data mining was coined.
 
@@ -19,7 +19,6 @@ In a paper called ``From Data mining to Knowledge Discovery in databases``, Data
 In the 1990s, when computer science was developing with incredible speeds, people started thinking about combining data mining with computer science and thus the word data science was born.
 
 With the boom in digital world, huge amounts of data are being collected – every click, every scroll, every visit, all of this is collected and stored. Why? Business Intelligence. Using data science to pick patterns in the data and predict when a customer would buy, if someone will buy a product
-
 
 ### Data Science Workspace - Building Intelligent Services on Adobe Experience Platform
 
@@ -51,8 +50,8 @@ With Data Science Workspace, Adobe Experience Platform allows you to streamline 
 
 * **Jupyter Notebook**: An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
 
-* **Hyperparameters**: High level properties of a model, different from standard model parameters that are usually fixed. 
-Examples: depth of decision tree, number of hidden layers, learning rate, etc. 
+* **Hyperparameters**: High level properties of a model, different from standard model parameters that are usually fixed.
+Examples: depth of decision tree, number of hidden layers, learning rate, etc.
 
 Let's continue with a hands-on exercise.
 

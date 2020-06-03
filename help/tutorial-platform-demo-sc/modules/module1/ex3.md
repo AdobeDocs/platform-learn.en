@@ -1,19 +1,19 @@
-## Exercise 3 - Configure Datasets
+# Exercise 3 - Configure Datasets
 
 In this exercise, you'll configure the required datasets to capture and store profile information and customer behavior. Every dataset that you create in this exercise will use one of the schemas that you built in the previous step.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com).
 
-### Story
+## Story
 
 After defining what the answer to the questions ```Who is this customer?``` and ```What does this customer do?``` should look like, you now need to create a bucket that uses that information, to receive and validate data that was sent to Adobe Experience Platform.
 
-### Exercise 2.1 - Create Datasets
+## Exercise 2.1 - Create Datasets
 
 You now need to create 2 datasets:
 
-  * 1 dataset to capture the information that answers the ```Who is this customer?``` - question.
-  * 1 dataset to capture the information that answers the ```What does this customer do?``` - question.
+* 1 dataset to capture the information that answers the ```Who is this customer?``` - question.
+* 1 dataset to capture the information that answers the ```What does this customer do?``` - question.
 
 Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
 After logging in, you'll land on the homepage of Adobe Experience Platform.
@@ -34,7 +34,7 @@ In Adobe Experience Platform, click on ```Datasets``` in the menu on the left si
 
 ![Data Ingestion](./images/menudatasets.png)
 
-In Datasets, you'll see that no datasets exist yet. 
+In Datasets, you'll see that no datasets exist yet.
 
 ![Data Ingestion](./images/datasets.png)
 
@@ -44,7 +44,7 @@ You should create a new dataset. To create a new dataset, click on the button ``
 
 ![Data Ingestion](./images/createdataset.png)
 
-After clicking the ```+ Create Dataset``` - button, you'll see the following screen. 
+After clicking the ```+ Create Dataset``` - button, you'll see the following screen.
 
 ![Data Ingestion](./images/datasetsetup.png)
 
@@ -60,7 +60,7 @@ After selecting the schema, click ```Next``` to continue.
 
 ![Data Ingestion](./images/next.png)
 
-Let's give a name to your dataset. 
+Let's give a name to your dataset.
 
 As the name for our dataset, we'll use this:
 **AEP Demo - Website Registrations**
@@ -83,7 +83,7 @@ You should create a new dataset. To create a new dataset, click on the button ``
 
 ![Data Ingestion](./images/createdataset.png)
 
-After clicking the ```+ Create Dataset``` - button, you'll see the following screen. 
+After clicking the ```+ Create Dataset``` - button, you'll see the following screen.
 
 ![Data Ingestion](./images/datasetsetup.png)
 
@@ -99,7 +99,7 @@ After selecting the schema, click ```Next``` to continue.
 
 ![Data Ingestion](./images/next.png)
 
-Let's give a name to your dataset. 
+Let's give a name to your dataset.
 
 As the name for our dataset, we'll use this:
 **AEP Demo - Website Interactions**

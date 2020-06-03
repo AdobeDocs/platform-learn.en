@@ -9,7 +9,7 @@ In ``Connect To a Server`` select ``PostgreSQL``:
 
 ![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
 
-Go to 	Adobe Experience Platform, to ``Queries`` and to ``Credentials``.
+Go to Adobe Experience Platform, to ``Queries`` and to ``Credentials``.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 

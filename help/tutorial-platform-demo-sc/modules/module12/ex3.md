@@ -1,4 +1,4 @@
-## Exercise 12.3 - Define Custom Actions
+# Exercise 12.3 - Define Custom Actions
 
 In this exercise, you'll create 2 custom Actions by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
@@ -9,7 +9,7 @@ You'll see the ``Adobe Experience Cloud``-homepage.
 ![Demo](./images/aec.png)
 
 Click on ``Journey Orchestration``.
- 
+
 ![Demo](./images/aecjo.png)
 
 Next, you'll see the ``Journey Orchestration``-homepage.
@@ -29,7 +29,7 @@ You'll define 2 actions:
 * 1 Action that sends an SMS using an external application, Twilio
 * 1 Action that sends a text to a Slack channel
 
-### Action: Send SMS using Twilio
+## Action: Send SMS using Twilio
 
 Twilio is a 3rd party provider of SMS Messages. It has an easy-to-use API and we'll use Journey Orchestration to trigger their API.
 
@@ -70,28 +70,28 @@ So for the ``Message Parameters``, click the ``Edit Payload``-icon.
 
 ![Demo](./images/twiliomsgp.png)
 
-You'll then see an empty popup-window. 
+You'll then see an empty popup-window.
 
 ![Demo](./images/twiliomsgpopup.png)
 
 Copy the below text and paste it in the empty popup-window.
 
-``
+```json
 {
-	"body": {
-		"textMessage": {
-			"toBeMapped": true,
-			"dataType": "string",
-			"label": "textMessage"
-		},
-		"to": {
-			"toBeMapped": true,
-			"dataType": "string",
-			"label": "mobileNr"
-		}
-	}
+ "body": {
+  "textMessage": {
+   "toBeMapped": true,
+   "dataType": "string",
+   "label": "textMessage"
+  },
+  "to": {
+   "toBeMapped": true,
+   "dataType": "string",
+   "label": "mobileNr"
+  }
+ }
 }
-``
+```
 
 FYI: by specifying the below fields, these fields will become accessible from your Customer Journey and you'll be able to populate them dynamically from the Journey:
 
@@ -119,7 +119,7 @@ Your custom Action is now part of the ``Actions``-list.
 
 Let's define your second action now.
 
-### Action: Send Text to Slack Channel
+## Action: Send Text to Slack Channel
 
 We'll now use an existing Slack Channel and send messages to that Slack Channel. Slack has an easy-to-use API and we'll use Journey Orchestration to trigger their API.
 
@@ -158,21 +158,21 @@ So for the ``Message Parameters``, click the ``Edit Payload``-icon.
 
 ![Demo](./images/slackmsgp.png)
 
-You'll then see an empty popup-window. 
+You'll then see an empty popup-window.
 
 ![Demo](./images/slackmsgpopup.png)
 
 Copy the below text and paste it in the empty popup-window.
 
-``
+```json
 {
-	"text": {
-		"toBeMapped": true,
-		"dataType": "string",
-		"label": "textToSlack"
-	}
+ "text": {
+  "toBeMapped": true,
+  "dataType": "string",
+  "label": "textToSlack"
+ }
 }
-``
+```
 
 FYI: by specifying the below fields, these fields will become accessible from your Customer Journey and you'll be able to populate them dynamically from the Journey:
 

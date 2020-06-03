@@ -1,4 +1,4 @@
-## Exercise 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment
+# Exercise 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment
 
 In this exercise, you'll install Anaconda on your local machine so you can run Jupyter Notebooks on your local machine, to then interact with the data in Adobe Experience Platform through the Query Service.
 
@@ -14,7 +14,7 @@ For this exercise, we're using ``Anaconda Navigator`` which you can download and
 
 If you're using a MacBook, please make sure to have ``brew`` installed. You can find installation instructions for ``brew`` here: [https://brew.sh/](https://brew.sh/)
 
-Also, after intalling ``brew``, you'll need to install the ``postgres``-package, by running the ``brew install postgres``-command in a Terminal window.
+Also, after installing ``brew``, you'll need to install the ``postgres``-package, by running the ``brew install postgres``-command in a Terminal window.
 
 ![LocalNotebook](./images/terminal.png)
 
@@ -44,7 +44,7 @@ Click on the ``Launch`` - button for JupyterLab.
 
 ![LocalNotebook](./images/launchjn.png)
 
-Aftr that, your browser should open and show you the JupterLab startpage.
+After that, your browser should open and show you the JupterLab startpage.
 
 ![LocalNotebook](./images/jupstart.png)
 
@@ -76,7 +76,7 @@ FYI: if you get an error on loading ``psycopg2``, you will need to install ``pos
 
 ![LocalNotebook](./images/cell12.png)
 
-You'll see all the packages being loaded and then you can go to the next cell, which will connect to Adobe Experience Platform Query Service. In order to connect, you'll have to update the ``password`` in the next cell as the password is only valid 24 hours. 
+You'll see all the packages being loaded and then you can go to the next cell, which will connect to Adobe Experience Platform Query Service. In order to connect, you'll have to update the ``password`` in the next cell as the password is only valid 24 hours.
 
 To retrieve the Query Service password, go into Adobe Experience Platform, to ``Queries`` > ``Credentials`` > ``Postgres Credentials``.
 
@@ -86,7 +86,7 @@ Paste the new password by replacing the current password and click the ``Play`` 
 
 ![LocalNotebook](./images/queryconn.png)
 
-Go to the next cell. Click the ``Play`` - icon to execute this cell. 
+Go to the next cell. Click the ``Play`` - icon to execute this cell.
 
 ![LocalNotebook](./images/loadsql.png)
 
@@ -98,7 +98,7 @@ Go to the next cell. This cell will load the ``AEP Demo - Car Insurance Interact
 
 ![LocalNotebook](./images/loadee.png)
 
-The ``AEP Demo - Car Insurance Interactions`` - dataset is now assigned to a dataframe, and now a data scientist can continue Exploration, Visualisation and Model Development based on this dataframe.
+The ``AEP Demo - Car Insurance Interactions`` - dataset is now assigned to a dataframe, and now a data scientist can continue Exploration, Visualization and Model Development based on this dataframe.
 
 ![LocalNotebook](./images/df.png)
 

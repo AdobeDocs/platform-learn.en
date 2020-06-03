@@ -8,7 +8,7 @@
   - containers,
   - placements,
   - decision rules,
-  - personalised and fallback offers,
+  - personalized and fallback offers,
   - offer filters,
   - activities.
 
@@ -16,10 +16,10 @@ As mentioned before, not all of these concepts you can yet define through the UI
 
 To work through this and remaining exercises, you need to login to the Offers. To do this:
 
-1. Go to https://experience.adobe.com and login with your Adobe ID and password.
-2. Ensure you select **Experience Platform EMEA** as the organisation to work in.
+1. Go to [https://experience.adobe.com](https://experience.adobe.com) and login with your Adobe ID and password.
+2. Ensure you select **Experience Platform EMEA** as the organization to work in.
 ![Homepage AEC](./images/homepageaec.png)
-3. Click on the infamous nine-dots right of the organisation name to open the Adobe Experience Cloud rail, and select **Offers**.
+3. Click on the infamous nine-dots right of the organization name to open the Adobe Experience Cloud rail, and select **Offers**.
 ![Select Offers](./images/selectoffers.png)
 4. You will end up in the main screen of Offers, titled **Offer Library**
 
@@ -35,7 +35,7 @@ From this dropdown you could select the container to work in. In our environment
 
 In the **Settings** tab you can define your placements (context) for your offers. When you define an activity the placement defines where the resulting offer (personalized or fallback) will appear (channel) and in what shape or form (component type).
 
-We have already defined placements for this lab but you can still inspect what is there. 
+We have already defined placements for this lab but you can still inspect what is there.
 **Note**: Please do not change anything to the placements already available, as this might break the remainder of this lab not only for you but also for others.
 
 To inspect a placement:
@@ -44,7 +44,7 @@ To inspect a placement:
 2. Select **Placements** in the left rail. You will see the **Placements** list.
 
    1. Select the **Image for Email** entry.
-   2. Click on the three dots (**...**) in the **Image for Email** enty.
+   2. Click on the three dots (**...**) in the **Image for Email** entry.
 ![Placements](./images/placements.png)
    3. Click on **Edit**.
 3. The **Edit Placement** screen shows and allows you to edit:
@@ -57,7 +57,7 @@ To inspect a placement:
 
 ## Exercise 14.1.3 - Decision Rules
 
-A decision rule (or eligibility rule) is the defined equivalent to a **segment rule** you defined as part of AEP's UI. It is in fact a segment rule itself with the only difference that a decision rule can be teamed up with an offer to provide the best offer to a proile in AEP.
+A decision rule (or eligibility rule) is the defined equivalent to a **segment rule** you defined as part of AEP's UI. It is in fact a segment rule itself with the only difference that a decision rule can be teamed up with an offer to provide the best offer to a profile in AEP.
 
 As you already know how to define these, we just quickly revisit the UI:
 
@@ -95,7 +95,7 @@ You might see offers defined by other participants in this module.
    ![Step 3-2](./images/personalizedoffer-step3-2.png)
    4. Repeat step 3 but now for **Image for Email**. Drop **Image for Email** below the **IMAGE FOR WEB Image Link** box.
    ![Step 4](./images/personalizedoffer-step4.png)
-   5. Switch to the **Libray** pane (top icon) in the left rail. Here you can find the content for your offers. Double-click on **La Boutique** and then on **Offers**.
+   5. Switch to the **Library** pane (top icon) in the left rail. Here you can find the content for your offers. Double-click on **La Boutique** and then on **Offers**.
    ![Step 5](./images/personalizedoffer-step5.png)
    6. Drag and drop the **elpasotank PNG** image and drop it onto the **Image for Web** container. Repeat this for the **Image for Email** container. For each container, also define the language as **en - English**.
    ![Step 6](./images/personalizedoffer-step6.png)
@@ -117,7 +117,7 @@ Name | Date Range | Image for Web / Email | Priority | Eligibility | Total Cap |
  *ldap* - Carstensen | now - 1 month later | carstensen.png | 25 | Male Profiles | 100 | 10 | en-English |
  *ldap* - El Silencio | now - 1 month later | elsilencio.png | 15 | Male Profiles | 100 | 10 | en-English |
 
-When having entered all details around the four personalised offers, your **Inventory** screen for **Personalized Offers** should show your offers.
+When having entered all details around the four personalized offers, your **Inventory** screen for **Personalized Offers** should show your offers.
 ![Final Offers](./images/finaloffers.png)
 
 ## Exercise 14.1.5 - Create Fallback Offer
@@ -135,7 +135,7 @@ You might see other fallback offers defined by other participants in this module
    ![Step 3-2](./images/fallbackoffer-step3.png)
    3. Repeat step 2 but now for **Image for Email**. Drop **Image for Email** below the **IMAGE FOR WEB Image Link** box.
    ![Step 4](./images/fallbackoffer-step4.png)
-   4. Switch to the **Libray** pane (top icon) in the left rail. Here you can find the content for your offers. Double-click on **La Boutique** and then on **Offers**.
+   4. Switch to the **Library** pane (top icon) in the left rail. Here you can find the content for your offers. Double-click on **La Boutique** and then on **Offers**.
    ![Step 5](./images/fallbackoffer-step5.png)
    5. Drag and drop the **fallback PNG** image and drop it onto the **Image for Web** container. Repeat this for the **Image for Email** container. For each container, also define the language as **en - English**.
    ![Step 6](./images/fallbackoffer-step6.png)
@@ -148,11 +148,11 @@ You might see other fallback offers defined by other participants in this module
 
 An offer filter is used to **filter** out a sub-set of offers from the personalized offer list and use that as part of an offer activity in order to speed up the decision process. Offer filters are shown in the left rail at the **Personalized Offers** tab of the **Inventory** screen.
 ![Final Offers](./images/finaloffers.png)
-Currently, the UI does not provide functionality to manage offer filters. We will create an offer filter as part of the API exercices of this module.
+Currently, the UI does not provide functionality to manage offer filters. We will create an offer filter as part of the API exercises of this module.
 
 ## Exercise 14.1.7 - Activity
 
-An activity combines placement, offer filter (set of offers to take into account) and fallback offer to  ultimately be used by the Offer Decisioning Engine to find the best offer for a specific profile, based on each of the individual personalised offer characteristics like priority, eligibility constraint and total / user capping.
+An activity combines placement, offer filter (set of offers to take into account) and fallback offer to  ultimately be used by the Offer Decisioning Engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
 
 Currently, the UI does not provide the functionality to manage activities. You can go tho the **Activities** tab of the **Offer Library** and you might see activities, but there is no way to create a new activity. We will create an activity as part of the API exercises of this module.
 

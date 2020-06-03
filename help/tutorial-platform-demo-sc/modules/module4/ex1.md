@@ -22,7 +22,7 @@ Click **Create your Amazon Developer account** to create a new Amazon developer 
 
 In the **Create Account** screen, provide your **Name**, **Email** and choose a **Password**. Then click **Create your Amazon Developer Account**.
 
-![Create Account](./images/alexadeveloperaccountdetails.png) 
+![Create Account](./images/alexadeveloperaccountdetails.png)
 
 Some additional verification might be required.
 
@@ -59,10 +59,10 @@ In the **Create an AWS account** screen, define **Email address**, **Password** 
 
 In the **Contact Information** screen:
 
-   - Select **Personal** for the **Account Type**.
-   - Provide required details in the **Contact Information** screen, and click on **Create Account and Continue**.
-   
-   ![Contact Information](images/awscontactinformation.png)
+* Select **Personal** for the **Account Type**.
+* Provide required details in the **Contact Information** screen, and click on **Create Account and Continue**.
+
+![Contact Information](images/awscontactinformation.png)
 
 Provide your credit card details in the **Payment Information** screen and click on **Secure Submit**.
 
@@ -109,7 +109,7 @@ You will end up in the **AWS Management Console**.
 
 Leave the browser tab open; we will need it later in the module.
 
-You have finished this exercise. 
+You have finished this exercise.
 
 ---
 

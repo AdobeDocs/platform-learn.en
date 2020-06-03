@@ -1,4 +1,4 @@
-## Exercise 2: Install the Mobile Application (iOS)
+# Exercise 2: Install the Mobile Application (iOS)
 
 In this exercise, the goal is to install the Mobile Application (iOS).
 
@@ -65,6 +65,3 @@ You now have the Mobile App installed, please continue with Module 1.
 [Go Back to Module 0](./README.md)
 
 [Go Back to All Modules](../../README.md)
-
-
-

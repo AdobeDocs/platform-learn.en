@@ -1,13 +1,14 @@
 # Exercise 13.5 - Visualization using Analysis WorkSpace
 
-
 ## Objectives
-- Understand Analysis Workspace UI
-- Learn some feature that make Analysis Workspace so different.
-- Learn how to analyse in CJA using Analysis Workspace
+
+* Understand Analysis Workspace UI
+* Learn some feature that make Analysis Workspace so different.
+* Learn how to analyse in CJA using Analysis Workspace
 
 ## Context
-In this exercises you will use Analysis Workspace within CJA to analyse product views, product funnels, churn etc.
+
+In this exercises you will use Analysis Workspace within CJA to analyze product views, product funnels, churn etc.
 
 We will cover some of the queries done in the Module 7 - Query Service so you can see how easy is to run the same queries and more but withouot using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
 
@@ -73,9 +74,9 @@ What are the top 5 products viewed?
 
 Remember to save project every now and then.
 
-|  OS        | Short cut  	    | 
-| ----------------- |-------------| 
-| Windows | Control + S          | 
+|  OS        | Short cut      |
+| ----------------- |-------------|
+| Windows | Control + S          |
 | Mac | Command + S          |
 
 Let's start finding the top 5 products viewed. In the left side menu, find the ``Product Name`` - Dimension.
@@ -118,7 +119,7 @@ You'll see the donut chart changed:
 
 ![demo](./images/module135/21.png)
 
-You can even adapt the design to be more readable, by making both the ``Line``-graph and the ``Donut``-graph a bit smaller so they can fit next to eachother:
+You can even adapt the design to be more readable, by making both the ``Line``-graph and the ``Donut``-graph a bit smaller so they can fit next to each other:
 
 ![demo](./images/module135/22.png)
 
@@ -130,12 +131,10 @@ Next, click ``Lock Selection`` to lock this visualization so that it always disp
 
 ![demo](./images/module135/22b.png)
 
-
-Find out more about visualizations using Analysis Workspace here: 
+Find out more about visualizations using Analysis Workspace here:
 
 * [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 * [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
-
 
 ## Product Interaction funnel, from viewing to buying.
 
@@ -189,7 +188,7 @@ Right click on the touchpoint ``Product Add To Cart``. Then click on ``Breakdown
 
 ![demo](./images/module135/32.png)
 
-A new freeform table will be created to analyse what the people did if they didn't purchase. 
+A new freeform table will be created to analyse what the people did if they didn't purchase.
 
 ![demo](./images/module135/33.png)
 
@@ -261,8 +260,7 @@ You'll then see this:
 
 ![demo](./images/module135/flow.png)
 
-As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion? 
-
+As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion?
 
 ## How are customers with a Positive Callcenter contact performing against the main KPIs?
 
@@ -272,9 +270,9 @@ Let's first segment the data to get only users with ``positive`` calls. In CJA, 
 
 Inside the Filter builder, give a name to the filter
 
-|  Name        | Description    | 
-| ----------------- |-------------| 
-| Call Feeling - Positive | Call Feeling - Positive          | 
+|  Name        | Description    |
+| ----------------- |-------------|
+| Call Feeling - Positive | Call Feeling - Positive          |
 
 ![demo](./images/module135/47.png)
 
@@ -334,9 +332,9 @@ Thanks to the first flow analysis, a new question came to mind. So we decided to
 
 Attribution in CJA enables business users to understand each touch in the customer journey. Attribution showcases how customers momve from one touchpoint to another and brands use it to undertsand how advertising (banners on the website), content, products, etc... impact the customer journey.
 
-With the omnichanel data that is available in Adobe Experience Platform, we can now provide attribution insights across online and offline channels to understand that for instance, a customer became interested in a product through an offline store visit, that the customer called the call-center for information and that the sale was done on the website. 
+With the omnichanel data that is available in Adobe Experience Platform, we can now provide attribution insights across online and offline channels to understand that for instance, a customer became interested in a product through an offline store visit, that the customer called the call-center for information and that the sale was done on the website.
 
-Attribution in Customer Journey Analaytics is one of the key differentiators from other BI solutions. Let's see how it works.
+Attribution in Customer Journey Analytics is one of the key differentiators from other BI solutions. Let's see how it works.
 
 We can define attribution logic in almost any metric (except things like ``People`` or ``Sessions``). You can even use it with calculated metrics.
 
@@ -354,7 +352,7 @@ After checking the checkbox for ``Use non-default attribution model``, you'll se
 
 Here you can change the model and the Lookback Window.
 
-You'll now see all available attribution models. To understand the differences between the attribution models, read this: [Adobe Analytics Attribution] (https://www.adobe.com/content/dam/acom/en/data-analytics-cloud/analytics/pdfs/Adobe.Analytics.Attribution.Solution_Brief_Sept.2017.pdf)
+You'll now see all available attribution models. To understand the differences between the attribution models, read this: [Adobe Analytics Attribution](https://www.adobe.com/content/dam/acom/en/data-analytics-cloud/analytics/pdfs/Adobe.Analytics.Attribution.Solution_Brief_Sept.2017.pdf)
 
 As already mentioned, you can even change the reporting lookback window. Depending on the model you'll have different options.
 
@@ -374,7 +372,7 @@ Using the omnichannel data that is available thanks to Adobe Experience Platform
 
 * How many people who bought offline, came back to buy online after? How long does it take for them to come back?
 * What is the retention of people after having interactions with our call-center? Are they coming back more or less?
-* Since the launch of our Alexa App, how do our custmers interact with the various available interaction channels (digital, point of sales, etc.)?
+* Since the launch of our Alexa App, how do our customers interact with the various available interaction channels (digital, point of sales, etc.)?
 
 Example:
 
@@ -382,8 +380,8 @@ Example:
 
 ## Customer Journey Analytics and Analysis Workspace recap
 
-As you've learned in this lab, Analysis Workspace stitches data from all channels together to analyse the full customer journey. Also, remember that you can bring in data to the same workspace that is not stitched to the journey. 
-It can be really useful to bring disconnected data into your analysis to give context to the journey. Some examples include thigs like NPS data, surveys, Facebook Ads events or offline interactions (non identified).
+As you've learned in this lab, Analysis Workspace stitches data from all channels together to analyze the full customer journey. Also, remember that you can bring in data to the same workspace that is not stitched to the journey.
+It can be really useful to bring disconnected data into your analysis to give context to the journey. Some examples include things like NPS data, surveys, Facebook Ads events or offline interactions (non identified).
 
 Congratulations, you have finished Module 13.
 
@@ -392,5 +390,3 @@ Congratulations, you have finished Module 13.
 [Go Back to Module 13](./README.md)
 
 [Go Back to All Modules](./../../README.md)
-
-

@@ -1,8 +1,8 @@
-## Exercise 15.4 - Train and Score your Recipe
+# Exercise 15.4 - Train and Score your Recipe
 
 After creating a Recipe, you can now Train and Score your Recipe without having to touch code again.
 
-### Exercise 15.4.1 - Train a Model based on a Recipe
+## Exercise 15.4.1 - Train a Model based on a Recipe
 
 Login to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -26,7 +26,8 @@ Click the ```ldapCarInsurancePropensity``` - recipe to open it.
 
 ![DSW](./images/prrecipe1.png)
 
-You now need to create your own Model, based on the ```ldapCarInsurancePropensity ``` - recipe.
+You now need to create your own Model, based on the ```ldapCarInsurancePropensity``` - recipe.
+
 To do that, click on the ```Create a Model``` - button.
 
 ![DSW](./images/createmodel1.png)
@@ -67,14 +68,14 @@ And 1-2 minutes later, the Training Run's status will change to ```Complete```.
 
 ![DSW](./images/trainingrunsuccess.png)
 
-Once the Training Run has completed, you'll see an Accuracy Metric that indicates how successfull the model is. (Due to the lack of training data, accuracy doesn't say much in this demo situation).
+Once the Training Run has completed, you'll see an Accuracy Metric that indicates how successful the model is. (Due to the lack of training data, accuracy doesn't say much in this demo situation).
   
 ![DSW](./images/acc.png)
 
-Training a model requires more then one run. All Training Runs will be visible on this page and you'll be able to compare their results, so you can decide which one is the most successfull. 
+Training a model requires more then one run. All Training Runs will be visible on this page and you'll be able to compare their results, so you can decide which one is the most successful.
 ![DSW](./images/multipleruns.png)
 
-### Exercise 15.4.2 - Score a Model based on a Recipe
+## Exercise 15.4.2 - Score a Model based on a Recipe
 
 After training a model, we can use the model to score and as such, have the model calculate Car Insurance Sales Propensity scores which can be activated through targeting.
 
@@ -90,7 +91,7 @@ To score, you have to click the ```+ Score``` - button in the top right corner o
 
 ![DSW](./images/score.png)
 
-In the next step, you again have to select an Input Dataset. Let's choose the ```AEP Demo - Car Insurance Interactions```-dataset. 
+In the next step, you again have to select an Input Dataset. Let's choose the ```AEP Demo - Car Insurance Interactions```-dataset.
 
 ![DSW](./images/scoreinput.png)
 
@@ -110,7 +111,7 @@ In the next screen, you can again specify/change some of the Model's Configurati
 
 ![DSW](./images/scoreconfig.png)
 
-After updating the Model's Configuration parametres, click ```Finish```.
+After updating the Model's Configuration parameters, click ```Finish```.
 
 ![DSW](./images/finish.png)
 

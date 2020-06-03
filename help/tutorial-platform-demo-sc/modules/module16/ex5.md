@@ -8,7 +8,7 @@
 
 ## Context
 
-Google Analytics is one of the most used web analytics applications in the world, however is not the most powerful one. We all know Adobe Analytics and its capabilities. 
+Google Analytics is one of the most used web analytics applications in the world, however is not the most powerful one. We all know Adobe Analytics and its capabilities.
 
 Thanks to Adobe Experience Platform and the BigQuery Source Connector we can now bring Google Analytics data into Customer Journey Analytics. In addition, we're also able to enrich Google Analytics data by joining it with other data sources such as CRM, Call Center or Loyalty data within Customer Journey Analytics.
 
@@ -26,14 +26,13 @@ You'll then see this:
 
 ![demo](./images/ex5/5.png)
 
-
 ## 16.5.2 Behind the scenes of the Analysis Workspace Project
 
 The Customer Journey Analytics-project has been curated by the team behind the Team International AEP Enablement.
 
 The goal of this project is to showcase the analysis we can do using Google Analytics data in combination with the other datasets we have available in Adobe Experience Platform.
 
-We have built a Connection in Customer Journey Analytics that combines the Google Analytics-data that was ingested through the BigQuery Source Connectors (``BigQuery - Website Interactions``-dataset) as part of the previous exercise, and Loyalty Data. 
+We have built a Connection in Customer Journey Analytics that combines the Google Analytics-data that was ingested through the BigQuery Source Connectors (``BigQuery - Website Interactions``-dataset) as part of the previous exercise, and Loyalty Data.
 
 This Connection is called: ``all - GA + Loyalty Connection`` and you can review it by going through the ``Connections``-tab in Customer Journey Analytics.
 

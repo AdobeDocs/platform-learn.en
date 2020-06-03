@@ -1,14 +1,14 @@
-## Exercise 11.1 - Build a segment and enable Streaming Segmentation
+# Exercise 11.1 - Build a segment and enable Streaming Segmentation
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
-### Story
+## Story
 
-In today's world, responding to a customer's behaviour needs to be real-time. One of the ways of responding to customer behaviour in real-time is by using a segment, on the condition that the segment qualifies in real-time. In this exercise, you need to build out a segment, taking into account real activity on the website that we've been using. 
+In today's world, responding to a customer's behaviour needs to be real-time. One of the ways of responding to customer behaviour in real-time is by using a segment, on the condition that the segment qualifies in real-time. In this exercise, you need to build out a segment, taking into account real activity on the website that we've been using.
 
-### Identify the behaviour you want to react to...
+## Identify the behaviour you want to react to...
 
 Go to your AEP Demo-website.
 
@@ -42,7 +42,7 @@ You'll then be redirected to the ``Luma Retail``-homepage.
 
 ![Demo](./images/lb_home.png)
 
-In this example, I want to respond to a specific customer viewing a specific product. 
+In this example, I want to respond to a specific customer viewing a specific product.
 By scrolling down on the ``Luma Retail``-homepage, I can see multiple products and I'm going to pick the product ``Zeppelin Yoga Pant``.
 
 ![Data Ingestion](./images/homenadia.png)
@@ -51,7 +51,7 @@ So when somebody visits the product page for ``Zeppelin Yoga Pant``, I want to b
 
 ![Data Ingestion](./images/homenadiapp.png)
 
-### Create the Segment
+## Create the Segment
 
 To create the segment as defined above, log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -117,7 +117,7 @@ Finally, let's give your segment a name and save it.
 
 As a naming convention, we'll use:
 
-  * ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)
+* ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)
 
 Please replace **ldap** with your assigned number, like this:
 **vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)**
@@ -144,4 +144,4 @@ Next Step: [Exercise 11.2 - Review how to configure DV360 Destination using Dest
 
 [Go Back to Module 11](./README.md)
 
-[Go Back to All Modules](../../README.md)	
+[Go Back to All Modules](../../README.md)

@@ -1,16 +1,16 @@
-## Exercise 7.4 - Power BI/Tableau
+# Exercise 7.4 - Power BI/Tableau
 
-### Objective
+## Objective
 
 Learn how to generate datasets from query results
 Connect Microsoft Power BI Desktop/Tableau directly to the Query Service
 Creating a report in Microsoft Power BI Desktop/Tableau Desktop
 
-### Lesson Context
+## Lesson Context
 
 A command line interface to query data is exciting but it doesn't present well. In this lesson, we will guide you through a recommended workflow for how you can use Microsoft Power BI Desktop/Tableau directly the Query Service to create visual reports for your stakeholders.
 
-### Exercise 7.4.1 Create a dataset from a SQL query
+## Exercise 7.4.1 Create a dataset from a SQL query
 
 The complexity of your query will impact how long it takes for the Query Service to return results. And when querying directly from the command line or other solutions like Microsoft Power BI/Tableau the Query Service is configured with a 5 minute timeout (600 seconds). And in certain cases these solutions will be configured with shorter timeouts. To run larger queries and front load the time it takes to return results we offer a feature to generate a dataset from the query results. This feature utilizes the standard SQL feature know as Create Table As Select (CTAS). It is available in the Platform UI from the Query List and also available to be run directly from the command line with PSQL.
 
@@ -38,7 +38,7 @@ and    e.<aepTenantId>.identification.ecid = c.<aepTenantId>.identification.ecid
 and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identification.ecid;
 ```
 
-Navigate to the Adobe Experience Platform UI - [https://platform.adobe.com](https://platform.adobe.com) 
+Navigate to the Adobe Experience Platform UI - [https://platform.adobe.com](https://platform.adobe.com)
 
 You will search for your executed statement in the Adobe Experience Platform Query UI by entering your ldap in the search field:
 
@@ -71,4 +71,3 @@ Next Step - Option B: [Exercise 7.4.2 Explore the dataset with Tableau](./ex4b.m
 [Go Back to Module 7](../README.md)
 
 [Go Back to All Modules](../../README.md)
-

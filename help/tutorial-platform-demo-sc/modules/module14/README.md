@@ -4,9 +4,9 @@
 
 The Adobe Experience Platform - Offer Decisioning Application Service provides the capability to create personalized, optimized, and orchestrated experiences in applications running on top of Adobe Experience Platform.
 
-Using Decisioning Service, you can determine the best option from a set of available choices. These options, also called alternatives, could be offers, product recommendations, content components for a web experience, conversation scripts, and actions to take. **Currently** the use case and domain of **offer decisioning** is supported and is referred to as the **Offers Decisioning Engine** (**ODE**), where decision options are modeled specifically as offers (with support for more use cases to come). 
+Using Decisioning Service, you can determine the best option from a set of available choices. These options, also called alternatives, could be offers, product recommendations, content components for a web experience, conversation scripts, and actions to take. **Currently** the use case and domain of **offer decisioning** is supported and is referred to as the **Offers Decisioning Engine** (**ODE**), where decision options are modeled specifically as offers (with support for more use cases to come).
 
-In this module we will refer to the **Offers Decisioning Engine** (or simply **Offers**) as the first implementation of the **Decisioning Serice** within Adobe Experience Platform.
+In this module we will refer to the **Offers Decisioning Engine** (or simply **Offers**) as the first implementation of the **Decisioning Service** within Adobe Experience Platform.
 
 ## Key Takeaways
 
@@ -26,11 +26,11 @@ Working with Offers, you have to understand the following concepts:
  **Container** | Everything you work with in the Offers Decisioning Engine, happens in the context of a container. In our module, we will work in the **Decisioning** container.
  **Placement** | Is the combination of location (or channel) and context (or component type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image Link for Email, Mobile, Web, Social, Instant Messaging, and Non Digital.
  **Decision Rule** | The logic that defines and controls the eligibility of end-users for an offer.
-**Personalised Offer** | A customizable marketing message based on eligibility rules and constraints.
+**Personalized Offer** | A customizable marketing message based on eligibility rules and constraints.
 **Fallback Offer** | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.
 **Capping** | Used in an offer definition to define how many times an offer can be presented in total and to a specific user.
 **Priority** | Level to determine the priority rank from a result set of offers.
-**Offer Filter** | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process..
+**Offer Filter** | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.
 **Activity** | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.
 **Experience Cloud Library** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform. It is indeed, arguably, the (first visible) incarnation of the content part of Adobe Experience Platform. **Note**: this is a different repository than what is (was previously) known as the Assets Core Service.
 
@@ -43,7 +43,7 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### Content for this module is currently being developed.
+### Content for this module is currently being developed
 
 ---
 

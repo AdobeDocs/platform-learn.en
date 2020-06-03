@@ -1,4 +1,4 @@
-## Exercise 9.9 - Verify Data Ingestion from website into Platform
+# Exercise 9.9 - Verify Data Ingestion from website into Platform
 
 After implementing the GTM Tag on your website, you should start to see calls being sent towards Adobe Experience Platform.
 
@@ -34,7 +34,7 @@ To easily find the calls to Platform, you can apply a filter by entering ``dcs``
 
 ![Verify Calls](./images/dcsfilter.png)
 
-This should give you 2 calls to Platform, which are the calls that sends in ExperienceEvent-data on every pageload, now sent by Adobe Experience Platform Launch and also, Google Tag Manager.
+This should give you 2 calls to Platform, which are the calls that sends in ExperienceEvent-data on every page load, now sent by Adobe Experience Platform Launch and also, Google Tag Manager.
 
 The first call is the call sent by GTM. Click on it and scroll down until you see ``Request Payload``.
 
@@ -84,7 +84,7 @@ Click on ``Make Pretty`` to see a readable version of the call to Platform. You 
 
 Next, go to to the Login/Register-page [http://localhost:8888/login-register.html](http://localhost:8888/login-register.html).
 
-Fill out all the fields and click ``Create Account``. 
+Fill out all the fields and click ``Create Account``.
 
 ![Verify Calls](./images/createaccount.png)
 
@@ -112,22 +112,22 @@ Go to [https://jsonformatter.org/json-pretty-print
 
 ![Verify Calls](./images/prettyprofile.png)
 
-Again you notice that the identifiers-object contains a Google ``GAID``. In this case, for Profile-data, the Primary Identifier is ``emailId``, with ``GAID`` being a secondary identifier. By having both of these identities on the same call, including the ``mobilenr``, ID-syncs have now been done and have connected these 3 identities to eachother in Adobe Experience Platform's Unified Identity Service.
+Again you notice that the identifiers-object contains a Google ``GAID``. In this case, for Profile-data, the Primary Identifier is ``emailId``, with ``GAID`` being a secondary identifier. By having both of these identities on the same call, including the ``mobilenr``, ID-syncs have now been done and have connected these 3 identities to each other in Adobe Experience Platform's Unified Identity Service.
 
 If you see all these calls going out to the DCS Endpoint from GTM, that means that GTM is correctly configured.
 
 Now we need to verify whether these calls are successfully received by Platform.
 
-To log in to Platform, go to [https://platform.adobe.com/home](https://platform.adobe.com/home). 
+To log in to Platform, go to [https://platform.adobe.com/home](https://platform.adobe.com/home).
 
 Go to ``Datasets`` and locate your 2 Datasets. As a reminder, the shared datasets we're using are called:
 
-* Website Interaction Dataset name: 
+* Website Interaction Dataset name:
   
   * **AEP Demo - GA Website Interactions**
       ![Platform Setup](./images/ee.png)
 
-* Website Registration Dataset name: 
+* Website Registration Dataset name:
   
   * **AEP Demo - GA Website Registrations**
       ![Platform Setup](./images/p.png)
@@ -163,6 +163,3 @@ If both of these Datasets have successfully received the data coming from your w
 [Go Back to Module 9](./README.md)
 
 [Go Back to All Modules](./../../README.md)
-
-
-

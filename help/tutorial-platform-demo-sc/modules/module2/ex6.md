@@ -1,8 +1,9 @@
-## Exercise 6 - See you Real-time Customer Profile in action in the Call Center
+# Exercise 6 - See you Real-time Customer Profile in action in the Call Center
 
 In this exercise, you'll follow a script and walk through the website.
- 
-### Story
+
+## Story
+
 In this exercise, the goal is to have you walk through the customer journey and act like a real customer.
 
 On this website, we've implemented Adobe Experience Platform. Every activity is considered an Experience Event and is sent like that to Adobe Experience Platform in real-time, and hydrates the Real-time Customer Profile.
@@ -11,8 +12,7 @@ In the journey, you started as an anonymous customer who was browsing the websit
 
 Let's now see how the information on your Customer Profile can be used to impact the customer experience & a company's bottom line.
 
-
-### Customer Journey
+## Customer Journey
 
 Go to to your AEP Demo website.
 

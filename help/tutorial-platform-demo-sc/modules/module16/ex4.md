@@ -38,7 +38,7 @@ You'll then see the ``Add data``-view. You can now continue with exercise 16.4.1
 
 ## 16.4.1 BigQuery Table Selection
 
-In the ``Add data``-view, select your BigQuery-dataset. 
+In the ``Add data``-view, select your BigQuery-dataset.
 
 ![demo](./images/ex4/1.png)
 
@@ -78,32 +78,32 @@ You now need to map every ``Source Field`` from Google Analytics/BigQuery to an 
 
 Use the below mapping table for this exercise.
 
-| Source Field        | Target Field |   
-| ----------------- |-------------| 
-| \_id | \_id | 
-| timeStamp | timestamp | 
-| GA\_ID | \<aepTenantId>.identification.gaid | 
-| customerID | \<aepTenantId>.identification.crmId | 
-| Page | \<aepTenantId>.gabqdata.page.pagetitle | 
-| Landing_Page | \<aepTenantId>.gabqdata.page.landingpage | 
-| Exit_Page | \<aepTenantId>.gabqdata.page.exitpage | 
-| Device | \<aepTenantId>.gabqdata.useragent.device | 
-| Browser | \<aepTenantId>.gabqdata.useragent.browser | 
-| MarketingChannel | \<aepTenantId>.gabqdata.traffic.marketingchannel | 
-| TrafficSource | \<aepTenantId>.gabqdata.traffic.trafficsource | 
-| TrafficMedium | \<aepTenantId>.gabqdata.traffic.trafficmedium | 
-| TransactionID | \<aepTenantId>.gabqdata.commerce.transactionid | 
-| Ecommerce\_Action\_Type | \<aepTenantId>.gabqdata.commerce.actiontype | 
-| Entries | \<aepTenantId>.gabqdata.behaviourevents.entries | 
-| Pageviews | \<aepTenantId>.gabqdata.behaviourevents.pageviews | 
-| Exits | \<aepTenantId>.gabqdata.behaviourevents.exits | 
-| Bounces | \<aepTenantId>.gabqdata.behaviourevents.bounces | 
-| Unique\_Purchases | \<aepTenantId>.gabqdata.commerce.commerceevents.purchase | 
-| Product\_Detail\_Views | \<aepTenantId>.gabqdata.commerce.commerceevents.productdetail | 
-| Adds\_To\_Cart | \<aepTenantId>.gabqdata.commerce.commerceevents.addtocart | 
-| Product\_Removes\_From\_Cart | \<aepTenantId>.gabqdata.commerce.commerceevents.removeproduct | 
-| Product\_Checkouts | \<aepTenantId>.gabqdata.commerce.commerceevents.checkout | 
-| Product\_Refunds | \<aepTenantId>.gabqdata.commerce.commerceevents.refund | 
+| Source Field        | Target Field |
+| ----------------- |-------------|
+| \_id | \_id |
+| timeStamp | timestamp |
+| GA\_ID | \<aepTenantId>.identification.gaid |
+| customerID | \<aepTenantId>.identification.crmId |
+| Page | \<aepTenantId>.gabqdata.page.pagetitle |
+| Landing_Page | \<aepTenantId>.gabqdata.page.landingpage |
+| Exit_Page | \<aepTenantId>.gabqdata.page.exitpage |
+| Device | \<aepTenantId>.gabqdata.useragent.device |
+| Browser | \<aepTenantId>.gabqdata.useragent.browser |
+| MarketingChannel | \<aepTenantId>.gabqdata.traffic.marketingchannel |
+| TrafficSource | \<aepTenantId>.gabqdata.traffic.trafficsource |
+| TrafficMedium | \<aepTenantId>.gabqdata.traffic.trafficmedium |
+| TransactionID | \<aepTenantId>.gabqdata.commerce.transactionid |
+| Ecommerce\_Action\_Type | \<aepTenantId>.gabqdata.commerce.actiontype |
+| Entries | \<aepTenantId>.gabqdata.behaviourevents.entries |
+| Pageviews | \<aepTenantId>.gabqdata.behaviourevents.pageviews |
+| Exits | \<aepTenantId>.gabqdata.behaviourevents.exits |
+| Bounces | \<aepTenantId>.gabqdata.behaviourevents.bounces |
+| Unique\_Purchases | \<aepTenantId>.gabqdata.commerce.commerceevents.purchase |
+| Product\_Detail\_Views | \<aepTenantId>.gabqdata.commerce.commerceevents.productdetail |
+| Adds\_To\_Cart | \<aepTenantId>.gabqdata.commerce.commerceevents.addtocart |
+| Product\_Removes\_From\_Cart | \<aepTenantId>.gabqdata.commerce.commerceevents.removeproduct |
+| Product\_Checkouts | \<aepTenantId>.gabqdata.commerce.commerceevents.checkout |
+| Product\_Refunds | \<aepTenantId>.gabqdata.commerce.commerceevents.refund |
 
 After copying and pasting the above mapping into the Adobe Experience Platform UI, please verify if you don't see any errors due to typos or leading/trailing spaces.
 
@@ -123,7 +123,7 @@ You'll now see the ``Scheduling``-tab:
 
 ![demo](./images/ex4/38a.png)
 
-In the ``Scheduling``-tab, you are able to define a frequency for the data ingestion process for this ``Mapping`` and data. 
+In the ``Scheduling``-tab, you are able to define a frequency for the data ingestion process for this ``Mapping`` and data.
 
 ![demo](./images/ex4/40.png)
 
@@ -138,7 +138,7 @@ As you're using demo-data in Google BigQuery that won't be refreshed, there's no
 
 ![demo](./images/ex4/39a.png)
 
-Last but not least, you must define a ``delta``-field. 
+Last but not least, you must define a ``delta``-field.
 
 ![demo](./images/ex4/36.png)
 
@@ -154,14 +154,14 @@ Click ``Next``.
 
 ## 16.4.4 Review and launch connection
 
-In the ``Dataset flow detail``-view. you need to name your connection, which will help you to find it later. 
+In the ``Dataset flow detail``-view. you need to name your connection, which will help you to find it later.
 
 Please use this naming convention:
 
-| Field         | Naming| Example|   
+| Field         | Naming| Example|
 | ----------------- |-------------| -------------|
 | Dataset flow name| DataFlow - ldap - BigQuery Website Interaction | DataFlow - vangeluw - BigQuery Website Interaction  |
-| Description | DataFlow - ldap - BigQuery Website Interaction | DataFlow - vangeluw - BigQuery Website Interaction	|
+| Description | DataFlow - ldap - BigQuery Website Interaction | DataFlow - vangeluw - BigQuery Website Interaction |
 
 ![demo](./images/ex4/44.png)
 

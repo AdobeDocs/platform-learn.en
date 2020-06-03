@@ -1,6 +1,6 @@
-## Exercise 10.2 - Churn Prediction: Data Preparation
+# Exercise 10.2 - Churn Prediction: Data Preparation
 
-#### Open Adobe Experience Platform and Jupyter Notebooks
+## Open Adobe Experience Platform and Jupyter Notebooks
 
 To start preparing data for modeling, we must first read the data into Data Science Workspace. To do that, let's go to Adobe Experience Platform. you can login in Adobe Experience Platform by going here: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -8,7 +8,7 @@ After logging in with your Adobe ID, you'll be on the homepage of Adobe Experien
 
 ![DSW10](./images/aephome.png)
 
-From the menu on the left side, select ``Models``. 
+From the menu on the left side, select ``Models``.
 
 ![DSW10](./images/aepmenumodels.png)
 
@@ -24,7 +24,7 @@ Finally, you'll be able to work with Jupyter Notebooks.
 
 ![DSW10](./images/aepjuploaded.png)
 
-Jupyter Notebooks is an open-source standard data science tool where one can write code in languages like Python, Pyspark, Spark and R. 
+Jupyter Notebooks is an open-source standard data science tool where one can write code in languages like Python, Pyspark, Spark and R.
 
 Let's open a blank Python 3 notebook by clicking this button:
 
@@ -34,9 +34,10 @@ Once the Python 3 notebook is opened, you should see this:
 
 ![DSW10](./images/aepjuppy3o.png)
 
-#### Reading a dataset in Python
-An Adobe Experience Platform dataset can be easily read in Python from a Jupyter Notebook in Data Science Workspace. 
-First, click on the datasets icon in Jupter Notebooks.
+## Reading a dataset in Python
+
+An Adobe Experience Platform dataset can be easily read in Python from a Jupyter Notebook in Data Science Workspace.
+First, click on the datasets icon in Jupyter Notebooks.
 
 ![DSW10](./images/aepjuppynavds.png)
 
@@ -65,7 +66,7 @@ df0.head()
 
 ![DSW10](./images/aepjuppynavdscicode200000.png)
 
-Execute the code by clicking the play button at the top of the Jupyter notebook. Executing this code will take several minutes. 
+Execute the code by clicking the play button at the top of the Jupyter notebook. Executing this code will take several minutes.
 While the code is running, you should wait until it's finished.
 You can see that an action is ongoing by verifying the Python status at the top right of your notebook.
 
@@ -83,7 +84,7 @@ The result of executing the cell and loading the data from that dataset is that 
 
 ![DSW10](./images/aepjuppydf.png)
 
-Before going further with data exploration, we need to import certain libraries. 
+Before going further with data exploration, we need to import certain libraries.
 
 In your Jupyter notebook, click the ``+`` - button to create a new, empty cell.
 
@@ -110,7 +111,7 @@ import matplotlib.pyplot as plt
 
 ![DSW10](./images/aepjuppynewcellcode.png)
 
-Execute the code by clicking the play button at the top of the Jupyter notebook. 
+Execute the code by clicking the play button at the top of the Jupyter notebook.
 
 ![DSW10](./images/aepjuppynavdscicodeexecp.png)
 
@@ -118,7 +119,7 @@ After executing the cell, you'll see a new empty cell being created.
 
 ![DSW10](./images/aepjuppynavdscicodeexecpn.png)
 
-Next, we want to have a look at the summary stats for all the numerical variables. This is done using the ``describe()`` function. 
+Next, we want to have a look at the summary stats for all the numerical variables. This is done using the ``describe()`` function.
 
 Copy the below code snippet and paste it in the new, empty cell.
 
@@ -128,7 +129,7 @@ df0.describe()
 
 ![DSW10](./images/aepjuppynavdesc.png)
 
-Execute the code by clicking the play button at the top of the Jupyter notebook. 
+Execute the code by clicking the play button at the top of the Jupyter notebook.
 
 ![DSW10](./images/aepjuppynavdscicodeexecp.png)
 
@@ -136,14 +137,14 @@ The result will look like this:
 
 ![DSW10](./images/aepjuppydescresult.png)
 
-#### Loading notebooks
+## Loading notebooks
 
 For the next exercises, we'll use Jupyter notebooks that have been prepared for you already.
 Download the zip-file located [here](./resources/dsw-mod10.zip) and unzip its content to the desktop of your computer.
 
 ![DSW](./images/dswfiles.png)
 
-Open the folder ```dsw```. In this folder, you'll find 3 notebooks. 
+Open the folder ```dsw```. In this folder, you'll find 3 notebooks.
 
 ![DSW](./images/dswdtl.png)
 
@@ -160,7 +161,6 @@ Open the notebook ``Mod10 - Data Exploration.ipynb``.
 ![DSW](./images/dswdexnb.png)
 
 Execute all cells one by one. The code outlines steps to explore data, build visualizations and gain insights about your data.
-
 
 ---
 

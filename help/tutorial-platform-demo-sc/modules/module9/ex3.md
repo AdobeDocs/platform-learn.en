@@ -1,8 +1,8 @@
-## Excercise 9.3 - Configure GTM Variables
+# Exercise 9.3 - Configure GTM Variables
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
-After creating and configuring the GA Tag, we're now ready to configure GTM Variables (like the Data Elements we use in Adobe Launch). 
+After creating and configuring the GA Tag, we're now ready to configure GTM Variables (like the Data Elements we use in Adobe Launch).
 
 In the GTM UI, go to ``Variables``. You'll see the list of built-in Variables and the one User-Defined Variable we created in the previous exercise.
 
@@ -19,11 +19,11 @@ In the ``User-Defined Variables`` - section, click ``New``:
 
 First rename "Untitled Variable" into a more descriptive name:
 
-| Untitled Variable | 
+| Untitled Variable |
 | ------------- |
-| customerEmail | 
-    
-Then click in the Configuration part, this lets you choose a variable type. 
+| customerEmail |
+
+Then click in the Configuration part, this lets you choose a variable type.
 
 ![GTM Setup](./images/cemailconfiguration.png)
 
@@ -31,7 +31,7 @@ Choose this one.
 
 | Variable Type     |
 |-------------|
-| Custom Javascript | 
+| Custom Javascript |
 
 ![GTM Setup](./images/cemail1a.png)
 
@@ -39,7 +39,7 @@ This is the custom code to enter in the screen below:
 
 ```javascript
 function() {
-  var email = localStorage.getItem("email"); 
+  var email = localStorage.getItem("email");
   return email;
 }
 ```
@@ -47,7 +47,7 @@ function() {
 So after pasting the code your screen looks like this.
 ![GTM Setup](./images/cemail2.png)
 
-Click ``Save`` to save your new Variable. 
+Click ``Save`` to save your new Variable.
 
 ![GTM Setup](./images/gasave.png)
 
@@ -55,7 +55,7 @@ You're screen will look like this.
 
 ![GTM Setup](./images/cemailfinal.png)
 
-For the next variables, you'll repeat this proces:
+For the next variables, you'll repeat this process:
 
 * In the ``User-Defined Variables`` - section, click ``New``.
 * Rename the Untitled Variable
@@ -69,16 +69,17 @@ The next Variable will be **customerMobileNr**. When a customer creates a profil
 
 In the ``User-Defined Variables`` - section, click ``New``.
 
-* Rename ``Untitled Variable`` to ``customerMobileNr ``
+* Rename ``Untitled Variable`` to ``customerMobileNr``
 * Choose ``Custom Javascript`` as Variable Type
 * Paste this Custom JavaScript code:
 
 ```javascript
 function() {
-  var mobilenr = localStorage.getItem("mobilenr"); 
+  var mobilenr = localStorage.getItem("mobilenr");
   return mobilenr;
 }
 ```
+
 Your screen should look like this.
 
 ![GTM Setup](./images/mobilenr.png)
@@ -97,10 +98,11 @@ In the ``User-Defined Variables`` - section, click ``New``.
 
 ```javascript
 function() {
-  var firstname = localStorage.getItem("firstname"); 
+  var firstname = localStorage.getItem("firstname");
   return firstname;
 }
 ```
+
 Your screen should look like this.
 
 ![GTM Setup](./images/firstname2.png)
@@ -119,10 +121,11 @@ In the ``User-Defined Variables`` - section, click ``New``.
 
 ```javascript
 function() {
-  var lastname = localStorage.getItem("lastname"); 
+  var lastname = localStorage.getItem("lastname");
   return lastname;
 }
 ```
+
 Your screen should look like this.
 
 ![GTM Setup](./images/lastname.png)
@@ -135,16 +138,17 @@ Next: **aepTenantId**. When a customer creates a profile on the AEP Demo website
 
 In the ``User-Defined Variables`` - section, click ``New``.
 
-* Rename ``Untitled Variable`` to ``aepTenantId ``
+* Rename ``Untitled Variable`` to ``aepTenantId``
 * Choose ``Custom Javascript`` as Variable Type
 * Paste this Custom JavaScript code:
 
 ```javascript
 function() {
-  var aepTenantId = localStorage.getItem("aepTenantId"); 
+  var aepTenantId = localStorage.getItem("aepTenantId");
   return aepTenantId;
 }
 ```
+
 Your screen should look like this.
 
 ![GTM Setup](./images/aeptenantid.png)
@@ -157,16 +161,16 @@ Next: **customerLoggedIn**. When a customer is logged in on the AEP Demo website
 
 In the ``User-Defined Variables`` - section, click ``New``.
 
-* Rename ``Untitled Variable`` to ``customerLoggedIn ``
+* Rename ``Untitled Variable`` to ``customerLoggedIn``
 * Choose ``Custom Javascript`` as Variable Type
 * Paste this Custom JavaScript code:
 
 ```javascript
 function() {
-  var loggedin = localStorage.getItem("loggedin"); 
+  var loggedin = localStorage.getItem("loggedin");
   return loggedin;
 }
-```
+
 Your screen should look like this.
 ![GTM Setup](./images/loggedin2.png)
 
@@ -184,10 +188,11 @@ In the ``User-Defined Variables`` - section, click ``New``.
 
 ```javascript
 function() {
-  var brandName = localStorage.getItem("brandName"); 
+  var brandName = localStorage.getItem("brandName");
   return brandName;
 }
 ```
+
 Your screen should look like this.
 ![GTM Setup](./images/debrandname.png)
 
@@ -195,7 +200,7 @@ Click ``Save`` to save your new Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-The next Variables will be created in the same processm, but with a little different code.
+The next Variables will be created in the same process, but with a little different code.
 
 The next Variable we need is called **productProductView**. When a customer view a product, this Variable will store the product view information.
 
@@ -211,6 +216,7 @@ function() {
   return productview;
 }
 ```
+
 Your screen should look like this.
 
 ![GTM Setup](./images/deppv.png)
@@ -232,6 +238,7 @@ function() {
   return 1;
 }
 ```
+
 Your screen should look like this.
 
 ![GTM Setup](./images/dere1cc.png)
@@ -241,6 +248,7 @@ Click ``Save`` to save your new Variable.
 ![GTM Setup](./images/gasave.png)
 
 Had we worked with Adobe applications, we would have to capture the ECID. Since we will showcase, that we can also do this with a ``Google-only`` approach to platform we'll store a unique Google identifier, from Google Analytics. We'll assign the value of the client-side id to this Variable.
+
 The next Variable is called **gaClientId**. We'll use this Variable to as a key for all Google Analytics data.
 
 In the ``User-Defined Variables`` - section, click ``New``.
@@ -286,6 +294,7 @@ var str = date.getFullYear() + "-" + month + "-" + day + "T" +  hour + ":" + min
 return str;
 }
 ```
+
 ![GTM Setup](./images/timestamp.png)
 
 Click ``Save`` to save your new Variable.
@@ -302,10 +311,10 @@ In the ``User-Defined Variables`` - section, click ``New``.
 
 ```javascript
 function() {
-	var min = 111111111;
-	var max = 9999999999999;
-	var randomNumber = Math.random() * (max - min) + min;
-	return String(randomNumber);
+  var min = 111111111;
+  var max = 9999999999999;
+  var randomNumber = Math.random() * (max - min) + min;
+  return String(randomNumber);
 }
 ```
 
@@ -344,18 +353,18 @@ Your screen should now look like this:
 
 ![GTM Setup](./images/gasave.png)
 
-Next: **pageType**. On every new pageload, we need to capture the type of the page.
+Next: **pageType**. On every new page load, we need to capture the type of the page.
 
 In the ``User-Defined Variables`` - section, click ``New``.
 
-* Rename the ``Untitled Variable`` to ``pageType ``.
+* Rename the ``Untitled Variable`` to ``pageType``.
 * Choose  ``JavaScript Variable`` as Variable type.
 * Enter the JavaScript Variable name: ``digitalData.category.siteSection``.
 
 Your screen should now look like this:
 ![GTM Setup](./images/ptype.png)
 
-* Click ``Save`` to save your new Variable. 
+* Click ``Save`` to save your new Variable.
 
 ![GTM Setup](./images/gasave.png)
 
@@ -449,7 +458,7 @@ Your screen should now look like this:
 
 ![GTM Setup](./images/gasave.png)
 
-Almost done, now time for : **pageName**. On every new pageload, we need to capture the page name and send it to AA, AAM and Platform.
+Almost done, now time for : **pageName**. On every new page load, we need to capture the page name and send it to AA, AAM and Platform.
 
 In the ``User-Defined Variables`` - section, click ``New``.
 
@@ -490,6 +499,3 @@ Next Step: [Exercise 9.4 - Retrieve Platform Datasets](./ex4.md)
 [Go Back to Module 9](./README.md)
 
 [Go Back to All Modules](./../../README.md)
-
-
-

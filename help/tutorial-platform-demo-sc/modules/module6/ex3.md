@@ -1,12 +1,12 @@
-### Exercise 6.3: Configure Launch to trigger your Event
+# Exercise 6.3: Configure Launch to trigger your Event
 
 In this exercise, you'll configure Launch so that the Event you created in exercise 1 is now triggered, and activates the Journey that you built in exercise 2.
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/) and login with your personal login details. 
+Go to [https://launch.adobe.com/](https://launch.adobe.com/) and login with your personal login details.
 
 Select your Launch property.
 
-### Exercise 6.3.1 - Edit Rule: Create Account
+## Exercise 6.3.1 - Edit Rule: Create Account
 
 In the Launch UI, go to Rules.
 
@@ -48,13 +48,13 @@ Click ```Keep Changes``` to save your Action.
 
 Click ```Save```to save your changes.
 
-You can now publish these changes into your development environment. 
+You can now publish these changes into your development environment.
 
 In the Launch UI, navigate to the menu option ```Publishing```.
 
 ![Launch Setup](./images/publ.png)
 
-Under Development, you'll see your current Development-environment. 
+Under Development, you'll see your current Development-environment.
 Click on little arrow to open a dropdown-list and click Edit to make changes to your development-library.
 
 ![Launch Setup](./images/editv1.png)
@@ -89,6 +89,3 @@ You've now finished this exercise and this module!
 [Go Back to Module 6](./README.md)
 
 [Go Back to All Modules](../../README.md)
-
-
-

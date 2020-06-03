@@ -1,10 +1,10 @@
-## Exercise 5.2 - Connect Informatica to your AWS S3 bucket
+# Exercise 5.2 - Connect Informatica to your AWS S3 bucket
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.
 
-### Log in to Informatica
+## Log in to Informatica
 
-Go to [https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS](https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS). 
+Go to [https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS](https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS).
 
 Login using the credentials that were sent to you by email.
 
@@ -53,7 +53,7 @@ In the Connection Section, configure the fields like this:
 
 - Access Key: this is your Access key ID for your S3 bucket, as defined in the previous exercise.
 - Secret Key: this is your Secret access key for your S3 bucket, as defined in the previous exercise.
-As a reminder, here's where you could find the Amazon S3 Acces and Secret keys:
+As a reminder, here's where you could find the Amazon S3 Access and Secret keys:
 ![ETL](./images/cred1.png)
 
 - Folder Path: folder path should be ``aepmodule5LDAP``, replace LDAP by your LDAP. In this example, the Folder Path is ``aepmodule5vangeluw``.
@@ -83,8 +83,8 @@ If your connection is set up properly, you should see a confirmation message: ``
 
 If the test was successful, you can continue with the next exercise.
 
-FYI
----
+## FYI
+
 You just defined the connection for Informatica to read from your Amazon S3-bucket.
 As part of this exercise, you'll also use another connector to write data from Informatica to Adobe Experience Platform.
 

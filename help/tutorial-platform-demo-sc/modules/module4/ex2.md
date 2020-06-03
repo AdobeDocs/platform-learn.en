@@ -30,15 +30,15 @@ In the **Create a new skill** screen:
    ![Create Skill 2](images/createskill2.png)
    Your screen might look a bit different dependent on the **Default language** you have selected.
    5. Click **Create skill**.
-   
+
 In the **Choose a template** screen:
 
-   1. Select **Start from scratch** as the template to use below **Choose a template**.
-   
+1. Select **Start from scratch** as the template to use below **Choose a template**.
+
    ![Choose a template](images/chooseatemplate.png)
-   
-   2. Click **Choose**.
-   
+
+1. Click **Choose**.
+
 You will end up in your **AEP** skill main screen, which should look like this:
 
 ![AEP Skill Main Screen](images/aepskillmainscreen.png)
@@ -49,7 +49,7 @@ For your skill to be invoked, it needs an invocation name. To define this:
 
 1. Click on **Invocation** in the left rail, or on the **1. Invocation name >** button in the **Skill builder checklist** of the **AEP** skill main screen.
 
-2. In the **Invocation** panel, replace ``aep`` with ``adobe experience platform`` as the **Skill Invocation Name**.
+1. In the **Invocation** panel, replace ``aep`` with ``adobe experience platform`` as the **Skill Invocation Name**.
 
 ![Invocation Name](images/invocationname.png)
 
@@ -70,12 +70,12 @@ Click on **JSON Editor** in the left rail.
 Go [here](./downloads/skill/aepskillinteractionmodel.json). Click on ``Raw``.
 
    ![Raw](images/raw.png)
-   
+
     Select everything and then, copy everything.
 
    ![Raw](images/rawcopy.png)
-   
-In the **JSON Editor** panel on the right, select everything and paste the code that you copied in the previous step, by overwriting the text that was there already. 
+
+In the **JSON Editor** panel on the right, select everything and paste the code that you copied in the previous step, by overwriting the text that was there already.
 
 ![Drag and drop JSON file](images/dragdropjson.png)
 
@@ -128,31 +128,31 @@ Click on **Create a function**.
 In the **Create function** screen:
 
    1. Select **Author from scratch**.
-   
+
    ![Author From Scratch](images/authorfromscratch.png)
-   
-   2. Give your skill function a **Function name**, e.g. ``aep``.
-   
+
+   1. Give your skill function a **Function name**, e.g. ``aep``.
+
    ![Function Name](images/functionname.png)
-   
-   3. Select ``Node.js 12.x`` from the **Runtime** dropdown list.
-   
+
+   1. Select ``Node.js 12.x`` from the **Runtime** dropdown list.
+
    ![Runtime](images/runtime.png)
-   
-   4. Click on **Choose or create an execution role** below **Permissions**. Then select ``Create a new role with basic Lambda permissions``from the **Execution role** dropdown list. Your screen should look like
-   
+
+   1. Click on **Choose or create an execution role** below **Permissions**. Then select ``Create a new role with basic Lambda permissions``from the **Execution role** dropdown list. Your screen should look like
+
    ![Permissions](images/permissions.png)
-   
-   5. Click on **Create function**. It will take a while to finish that creation.
-   
-   6. You will end up in your **aep** function definition screen, with the **Configuration** tab active.
-   
+
+   1. Click on **Create function**. It will take a while to finish that creation.
+
+   1. You will end up in your **aep** function definition screen, with the **Configuration** tab active.
+
    ![AEP Function Definition](images/aepfunctiondefinition.png)
-   
-   7. In the list of triggers listed below **Add triggers**, select **Alexa Skills Kit**. You will see that the skill is added to the definition screen, with the remark **Configuration required**.
-   
+
+   1. In the list of triggers listed below **Add triggers**, select **Alexa Skills Kit**. You will see that the skill is added to the definition screen, with the remark **Configuration required**.
+
    ![Configuration Required](images/configurationrequired.png)
-   
+
 **Note**: if **Alexa Skills Kit** is not available in the **Add triggers** list, the data center you selected does not support it. Select another datacenter (e.g. `EU (Ireland)`) that provides the **Alexa Skills Kit** trigger.
 
 Move over to your **Alexa developer console** ([https://developer.amazon.com/alexa/console/ask](https://developer.amazon.com/alexa/console/ask)).
@@ -165,44 +165,44 @@ Click on **Copy to Clipboard** to copy the skill.
 
 Move back to your **aep** function definition screen in the **AWS Lambda** home screen.
 
-   1. Paste the skill id in the **Skill ID** field below the **Skill ID Verification**. Ensure **Enable** is selected, which is the default and recommended setting.
-   
-   ![Configure Skill ID](images/pasteskillid.png)
-   
-   2. Click on **Add** in the **Configure Triggers** panel.
-   
-   3. Then click on **Save**.
+1. Paste the skill id in the **Skill ID** field below the **Skill ID Verification**. Ensure **Enable** is selected, which is the default and recommended setting.
+
+![Configure Skill ID](images/pasteskillid.png)
+
+1. Click on **Add** in the **Configure Triggers** panel.
+
+1. Then click on **Save**.
 
 Continue, in the **aep** definition screen.
 
-   1. Click on **aep** box in the **Designer** panel.
-   
-   ![Select AEP](images/selectaep.png)
-   
-   2. In the **Function code** panel, from the **Code entry type** dropdown list, select ``Upload a .zip file``.
-   
-   ![Function Code](images/functioncode.png)
-   
-   3. Go [here](./downloads/lambda/aepskill.zip), download and save the file somewhere on your computer as `aepskill.zip`.
-   
-   4. Click on the **Upload** button. Pick the `aepskill.zip` you saved on your computer from the file browser dialog.
-   
-   ![AEP Skill ZIP](images/selectaepskillzip.png)
-   
-   5. Click **Save**.
-   
+1. Click on **aep** box in the **Designer** panel.
+
+![Select AEP](images/selectaep.png)
+
+1. In the **Function code** panel, from the **Code entry type** dropdown list, select ``Upload a .zip file``.
+
+![Function Code](images/functioncode.png)
+
+1. Go [here](./downloads/lambda/aepskill.zip), download and save the file somewhere on your computer as `aepskill.zip`.
+
+1. Click on the **Upload** button. Pick the `aepskill.zip` you saved on your computer from the file browser dialog.
+
+![AEP Skill ZIP](images/selectaepskillzip.png)
+
+1. Click **Save**.
+
 Continue in the **aep** definition screen
 
-   1. Scroll down until you see the **Environment Variables** panel.
-   
+1. Scroll down until you see the **Environment Variables** panel.
+
    ![Environment Variables](images/envvariables.png)
-   
-   2. Add the key value pairs from the table below, so your **Environment variables** panel will look like below.
-   
+
+1. Add the key value pairs from the table below, so your **Environment variables** panel will look like below.
+
    ![Environment Variables](images/environmentvariables.png)
-    
+
 ### Environment variables
-	
+
 Key | Value
 ---------|----------
 `alexaBrandName` | `luma retail`
@@ -212,35 +212,35 @@ Key | Value
 ```javascriptKey``` | ```<b4aJsKey>```
 ```ldap``` | ```rmaur```
 ```serverURL``` | ```https://parseapi.back4app.com```
-    
+
 Ensure you replace `alexaBrandName`, `ldap` and `emailAddress` with your specific configuration details.
 
 **Also very important**:
 
-  - define your `alexaBrandName` as the lowercase version of your brand name (e.g. Luma Retail as `luma retail`),
-  - if your brand name contains an `&` replace it with ` and `.
+* define your `alexaBrandName` as the lowercase version of your brand name (e.g. Luma Retail as `luma retail`),
+* if your brand name contains an `&` replace it with ` and `.
     So as an example, H&M becomes `h and m`.
 
 Click **Save**.
 
-As a final step, we need to copy the Amazon Resource Name that represents this functionality to our skill. 
+As a final step, we need to copy the Amazon Resource Name that represents this functionality to our skill.
 
 To do so,
 
-  - In the **aep** function definition screen, click on the copy icon right from the **ARN - arm:aws.lambda:.....** text at the top right of the screen.
-  
-  ![ARN](images/arn.png)
-  
-  - A **copied** will indicate the value has been copied.
- 
+* In the **aep** function definition screen, click on the copy icon right from the **ARN - arm:aws.lambda:.....** text at the top right of the screen.
+
+![ARN](images/arn.png)
+
+* A **copied** will indicate the value has been copied.
+
 Move over to your **alexa developer console**.
 
-  - In the **Endpoint** config screen.
-  - Paste the copied ARN from the previous step in the **Default Region (Required)** field.
-  
-  ![Endpoint](images/defaultregion.png)
-  
-  - Click on **Save Endpoints**.
+* In the **Endpoint** config screen.
+* Paste the copied ARN from the previous step in the **Default Region (Required)** field.
+
+![Endpoint](images/defaultregion.png)
+
+* Click on **Save Endpoints**.
 
 ## Exercise 4.2.5: Finalizing the skill
 
@@ -250,20 +250,20 @@ The final step for the skill is to build the model. To do so:
 
   1. Select **Invocation** from the left rail.
   2. Click on **Build Model**. This will build the skill's model. This might take a while.
-    
+
   ![Build Started](images/buildstarted.png)
   
 Verify that on your skill's main screen all the items on the **Skill builder checklist** (except for the optional **In-skill products**) are checked. To do so:
 
-  - Click on **Build**.
-   
-  ![Finished](images/finished.png)
-  
-  - Your **alexa developer console** should display green checkmarks for the first four items in the **Skill builder checklist**.
-  
-  - Your skill and its implementation are now ready to be used.
+* Click on **Build**.
 
-You have finished this exercise. 
+![Finished](images/finished.png)
+  
+* Your **alexa developer console** should display green checkmarks for the first four items in the **Skill builder checklist**.
+  
+* Your skill and its implementation are now ready to be used.
+
+You have finished this exercise.
 
 ---
 

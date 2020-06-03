@@ -1,6 +1,6 @@
 # Module 16: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
 
-#### Authors: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)
+**Authors: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 ---
 

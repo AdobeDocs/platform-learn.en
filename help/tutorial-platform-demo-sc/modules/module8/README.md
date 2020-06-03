@@ -1,6 +1,6 @@
 # Module 8: Adobe Experience Platform Data Science Workspace
 
-#### Authors: [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)
+**Authors: [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 ---
 
@@ -17,7 +17,7 @@ This lab will enable you to create a simple Machine Learning model that generate
 * Analyze and transform your data.
 * Author a model and operationalize it
 * Train your model and experiment
-* Score your model annd consume the insights
+* Score your model and consume the insights
 
 ## Prerequisites
 
@@ -53,4 +53,3 @@ Now that we’ve experimented with our recommendations model and have determined
 ---
 
 [Go Back to All Modules](../../README.md)
-

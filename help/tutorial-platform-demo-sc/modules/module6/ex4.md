@@ -1,4 +1,4 @@
-### (Optional) Exercise 6.4: How to create your own email in ACwP
+# (Optional) Exercise 6.4: How to create your own email in ACwP
 
 In this optional exercise, you'll learn how to create your own message and event structure in Adobe Campaign with Platform to use in combination with the events coming from Adobe Experience Platform.
 
@@ -33,7 +33,7 @@ To define a transactional message in ACwP:
    4. Select ``Real-time event`` from the **Targeting dimension** dropdown list.
    ![Configure Event](images/configureevent.png)
    5. Click **Create** to create the event.
-8. You will end up in the **Event configuration '...'** screen where you can further define your event. 
+8. You will end up in the **Event configuration '...'** screen where you can further define your event.
 ![Event Configuration 1](images/eventconfiguration1.png)
 To do so:
     1. Ensure the **Data Structure** tab is active.
@@ -47,27 +47,26 @@ To do so:
        5. Click on **Add**.
        ![Event Configuration 2](images/eventconfiguration2.png)
     4. Repeat step 2 and 3 for
-       1. **Label** - ``Brand Logo URL``, 
-       **ID** - ``brandLogoUrl``, 
-       **Type** - ``Text``, 
+       1. **Label** - ``Brand Logo URL``,
+       **ID** - ``brandLogoUrl``,
+       **Type** - ``Text``,
        **Length** - ``127``.
-       2. **Label** - ``First Name``, 
-       **ID** - ``firstName``, 
-       **Type** - ``Text``, 
+       2. **Label** - ``First Name``,
+       **ID** - ``firstName``,
+       **Type** - ``Text``,
        **Length** - ``127``.
-       3. **Label** - ``Last Name``, 
-       **ID** - ``lastName``, 
-       **Type** - ``Text``, 
+       3. **Label** - ``Last Name``,
+       **ID** - ``lastName``,
+       **Type** - ``Text``,
        **Length** - ``127``.
     5. Your event configuration screen should now look like
     ![Event Configuration 3](images/eventconfiguration3.png)
     6. Click on **Save** to save your changes.
     7. Click on **Publish** to publish the event. Click on **OK** in the **Confirm** dialog.
- 9. The event will be published and you can see progress in the **Publication** screen.
+9. The event will be published and you can see progress in the **Publication** screen.
     ![Event Publication](images/eventpublication.png)
- 10. When finished, you will see **Publication completed**.
+10. When finished, you will see **Publication completed**.
  ![Event Publication Completed](images/eventpublicationcompleted.png)
-
 
 You have finished the exercise to create an event in ACwP. Note that the event parameters you created are the ones you will map to the event data coming from Adobe Experience Platform, as was shown in previous exercise.
 
@@ -91,7 +90,7 @@ By creating the event in the previous exercise, ACwP automatically created a mes
 To define the details of this message:
 
 1. Click on the link or the transactional message tile to open the message.
-2. You will see the **Transactional email '...'** screen that summarizes the details of your email. 
+2. You will see the **Transactional email '...'** screen that summarizes the details of your email.
 ![Transactional Email](images/transactionalemail.png)
 Click on the big thumbnail at the bottom of the **Content** pane. **Note**: Do **NOT** click on **Use the legacy editor**.
 3. This will open the email editor **_ldap_ - Thanks For Signing Up**, where you will further define the email.
@@ -114,10 +113,10 @@ The three structure components define your header, body and footer of your email
     4. Drag a **Text** component from the left pane on top of the bottom structure component.
     5. Your screen should look like
     ![Email Editor 6](images/emaileditor6.png)
-10. Click on **Browse** in the Image component in the top structure component. 
-    1.  The Upload image dialog is shown
+10. Click on **Browse** in the Image component in the top structure component.
+    1. The Upload image dialog is shown
     ![Email Editor 7](images/emaileditor7.png)
-    2.  Drag the La Boutique logo image below and drop it on the dialog.
+    2. Drag the La Boutique logo image below and drop it on the dialog.
     ![Logo](images/logo.png)
     Alternatively, save the file somewhere locally on your computer and select **Upload a file from your computer** and select the file from where you saved it.
     3. With the Image component selected, resize the image to ``50%`` using the **Width** slider underneath **Size** in the **Component Settings** right pane.
@@ -130,34 +129,34 @@ The three structure components define your header, body and footer of your email
        1. Remove the URL from the text box.
        2. Click on the **Add Personalization field** button.
        ![Email Editor 11](images/emaileditor11.png)
-       3. A left **Add personalization field** pane will open. 
+       3. A left **Add personalization field** pane will open.
        4. Scroll down to the bottom in the list until you see **Real-time event (rtEv..** and click on it.
        5. Scroll down even further until you see **Event context (ctx** and click on it.
        6. Double click **Brand Logo**.  **Brand Logo URL (brandLogoUrl)** is inserted in the **Image Source URL** text field.
        ![Email Editor 12](images/emaileditor12.png)
        7. Click on **Save**.
- 11. Click on **Browse** in the Image component in the middle structure component.
+11. Click on **Browse** in the Image component in the middle structure component.
      1. The upload image dialog is shown.
      2. Drag the Thank You image below and drop it on the dialog.
     ![Logo](images/ThankYou.jpg)
     Alternatively, save the file somewhere locally on your computer and select **Upload a file from your computer**.
-    3. Your editor should now look like
+     3. Your editor should now look like
     ![Email Editor 13](images/emaileditor13.png)
-12. Click in the top text box and change the text to 
+12. Click in the top text box and change the text to
 ``Dear ,
-Thank you for signing up for ``. 
+Thank you for signing up for``.
 Then:
     1. Center the text using the toolbar that pops up.
     ![Email Editor 14](images/emaileditor14.png)
     2. Format the text using the **Component Settings panel**. E.g. set **padding** to ``30``.
     ![Email Editor 15](images/emaileditor15.png)
-    3. Insert the cursor before the ``,``after ``Dear ``, and click on the **Insert personalization field button**.
+    3. Insert the cursor before the ``,``after ``Dear``, and click on the **Insert personalization field button**.
     4. The **Select a personalization field** dialog pops up and allows you to select a field similarly as what you have done in step 10.5 above. In this case select **First Name (firstName)**.
     ![Email Editor 17](images/emaileditpr17.png)
-    5. Click **Confirm**. The personalization field is insteted in the text.
+    5. Click **Confirm**. The personalization field is inserted in the text.
     ![Email Editor 18](images/emaileditpr18.png)
-13.  Now repeat what you have done in step 12 to insert the Brand Name personalization field in the second line of the first Text component as well as in the Text component of the bottom structure component. You should also modify and format that Text component.
-14. Your editor now should look like 
+13. Now repeat what you have done in step 12 to insert the Brand Name personalization field in the second line of the first Text component as well as in the Text component of the bottom structure component. You should also modify and format that Text component.
+14. Your editor now should look like
 ![Email Editor 19](images/emaileditor19.png)
 15. Click on **Save & Close** to save and close the editor.
 16. Back in the **Transactional email '...'** screen, click on **Publish** to publish your email template.
@@ -166,12 +165,8 @@ Your email template is now ready to be invoked using the event you have specifie
 
 If you want you can further beautify your email and/or explore the possibilities of transactional messages (additional parameters) but that is beyond the scope of the Adobe Experience Platform curriculum :-)
 
-
 You've now finished this exercise and this module!
 
 [Go Back to Module 6](./README.md)
 
 [Go Back to All Modules](../README.md)
-
-
-

@@ -1,13 +1,8 @@
-## Exercise 11.2 - Configure an Advertising Destination like Google DV360
+# Exercise 11.2 - Configure an Advertising Destination like Google DV360
 
-
-**IMPORTANT**
-
-The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
-
-**IMPORTANT**
-
-Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+>[!IMPORTANT] The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
+>
+>[!IMPORTANT] Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
@@ -64,7 +59,7 @@ The field ``Account ID`` is the ``Advertiser ID`` of the DV360 Account. You can 
 
 ![RTCDP](./images/rtcdpgoogledv360advid.png)
 
-The ``Account Type`` should be set to ``Invite Advertiser``. 
+The ``Account Type`` should be set to ``Invite Advertiser``.
 
 Now you have something like this:
 
@@ -83,7 +78,7 @@ After creating the destination, you'll see this:
 Click ``Next``.
 
 ![RTCDP](./images/next.png)
- 
+
 You can then select segments to be sent to this destination:
 
 ![RTCDP](./images/rtcdpselseg.png)

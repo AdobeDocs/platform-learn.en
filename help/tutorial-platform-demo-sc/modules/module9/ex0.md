@@ -1,4 +1,4 @@
-## Exercise 9.2.0 - Create a Google Account
+# Exercise 9.2.0 - Create a Google Account
 
 Go to [https://accounts.google.com/signup](https://accounts.google.com/signup).
 
@@ -45,5 +45,3 @@ Next Step: [Exercise 9.1 - Create a Google Tag Manager Property](./ex1.md)
 [Go Back to Module 9](./README.md)
 
 [Go Back to All Modules](./../../README.md)
-
-

@@ -1,4 +1,4 @@
-## Exercise 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
+# Exercise 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
 
 Adobe Experience Platform and Adobe Audience Manager are closely connected to each other. The way they are connected is through a Bi-Directional Segment Sharing Connector. This means that all segments built in Adobe Experience Platform are shared to Adobe Audience Manager, and all segments built in Adobe Audience Manager are shared to Adobe Experience Platform.
 
@@ -8,7 +8,7 @@ When a segment is first built in Adobe Audience Manager, it will take an initial
 
 Let's have a look at Adobe Audience Manager now.
 
-### Use an AEP Segment as a Segment in AAM
+## Use an AEP Segment as a Segment in AAM
 
 The URL to login to Adobe Audience Manager is: [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
 
@@ -36,7 +36,7 @@ Open the segment you built in Exercise 1 by clicking it. In this example, that i
 
 ![RTCDP](./images/aam4.png)
 
-This segment was built in Adobe Experience Platform and cannot be edited anymore in Adobe Audience Manager. The only thing you can do here is link it to a ``Destination`` that is available in Adobe Audience Manager. 
+This segment was built in Adobe Experience Platform and cannot be edited anymore in Adobe Audience Manager. The only thing you can do here is link it to a ``Destination`` that is available in Adobe Audience Manager.
 
 Click ``Edit``.
 
@@ -50,7 +50,7 @@ Click ``Browse All Destinations``.
 
 ![RTCDP](./images/aambrowsedest.png)
 
-You'll see this popup, which makes it possible to link your segment that was built in Adobe Experience Platform to Google Adwords. 
+You'll see this popup, which makes it possible to link your segment that was built in Adobe Experience Platform to Google Adwords.
 
 ![RTCDP](./images/aambrowsedests.png)
 
@@ -72,7 +72,7 @@ Click ``Done`` to save your changes.
 
 As of this moment, everybody who qualifies for this segment in Adobe Experience Platform, will be sent to a Google AdWords Remarketing List for Search Advertising.
 
-### Use an AEP Segment as a Trait in AAM
+## Use an AEP Segment as a Trait in AAM
 
 Every segment built in Adobe Experience Platform will also show up in Adobe Audience Manager as a Trait. This means that it is possible to enrich Adobe Experience Platform segments with for instance 2nd or 3rd Party Data in Adobe Audience Manager.
 
@@ -105,12 +105,12 @@ You now have an empty Trait to be configured.
 Fill out the details like this:
 
 | Field Name              | Field Name              |
-|:-----------------------:| :-----------------------| 
-| Name               | Display Ad Campaign - **Product Name** - ldap, f.i. Display Ad Campaign - Zeppelin Yoga Pant - vangeluw| 
-| Description               | Display Ad Campaign - **Product Name** - ldap, f.i. Display Ad Campaign - Zeppelin Yoga Pant - vangeluw| 
-| Data Source               | Audience Library              | 
-| Event Type               | Delivery Event             | 
-| Store In               | ``All Traits`` > ``1st Party Data`` > ``Display Advertising Data`` > ``Impression Pixels``             | 
+|:-----------------------:| :-----------------------|
+| Name               | Display Ad Campaign - **Product Name** - ldap, f.i. Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
+| Description               | Display Ad Campaign - **Product Name** - ldap, f.i. Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
+| Data Source               | Audience Library              |
+| Event Type               | Delivery Event             |
+| Store In               | ``All Traits`` > ``1st Party Data`` > ``Display Advertising Data`` > ``Impression Pixels``             |
 
 ![RTCDP](./images/aamt6.png)
 
@@ -153,13 +153,13 @@ You'll then see an empty segment.
 Fill out the Segment Basic Information like this:
 
 | Field Name              | Field Name              |
-|:-----------------------:| :-----------------------| 
-| Name               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, f.i. Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw| 
+|:-----------------------:| :-----------------------|
+| Name               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, f.i. Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw|
 | Description               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, f.i. Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw|
-| Data Source               | Audience Library             | 
+| Data Source               | Audience Library             |
 | Profile Merge Rule               | Use the default Profile Merge Rule            |
-| Status               | Active           | 
-| Store In               | ``All Segments`` > ``Enablement Segments``| 
+| Status               | Active           |
+| Store In               | ``All Segments`` > ``Enablement Segments``|
 
 That should look like this:
 
@@ -220,7 +220,7 @@ Next, scroll down and click ``Save`` to save your segment.
 
 The Bi-directional Segment Sharing - connector works in both ways. That means that if you have a Trait or Segment that was built in Adobe Audience Manager natively, it will be shared towards Adobe Experience Platform.
 
-To view AAM Traits or Segmenrs in Adobe Experience Platform, log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+To view AAM Traits or Segments in Adobe Experience Platform, log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

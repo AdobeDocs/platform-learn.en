@@ -1,4 +1,4 @@
-## Exercise 7.4.2 Explore the dataset with Power BI
+# Exercise 7.4.2 Explore the dataset with Power BI
 
 Open Microsoft Power BI Desktop.
 
@@ -12,7 +12,7 @@ Search for ``postgres`` (1), select ``Postgres`` (2) from the list and ``Connect
 
 ![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
 
-Go to 	Adobe Experience Platform, to ``Queries`` and to ``Credentials``.
+Go to Adobe Experience Platform, to ``Queries`` and to ``Credentials``.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
@@ -38,7 +38,7 @@ Select the map (1) and after it is added to the reporting canvas, enlarge the ma
 
 ![power-bi-select-map.png](./images/power-bi-select-map.png)
 
-Next we need to define the measures and the dimensions, you do this by draging fields from the ``fields`` section onto the coresponding placeholders (located under ``visualizations``) as indicated below:
+Next we need to define the measures and the dimensions, you do this by dragging fields from the ``fields`` section onto the coresponding placeholders (located under ``visualizations``) as indicated below:
 
 ![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
 

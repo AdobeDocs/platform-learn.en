@@ -1,14 +1,13 @@
+# Exercise 7.1 - Getting Started
 
-## Exercise 7.1 - Getting Started
-
-### Objectives
+## Objectives
 
 - Log in to Adobe Experience Platform
 - Browse datasets
 - Introduction to Query Service
 - Connect PSQL client to Query Service
 
-### Exercise 7.1.1 - Getting familiar with the Adobe Experience Platform UI
+## Exercise 7.1.1 - Getting familiar with the Adobe Experience Platform UI
 
 Make sure you are logged in into the Adobe Experience Platform UI and navigate to the Navigate to the Adobe Experience Platform Login Page: [https://platform.adobe.com
 ](https://platform.adobe.com).
@@ -45,7 +44,7 @@ You can open the schema structure by clicking on the schema's name in the left p
 
 Close the ``Preview Dataset`` window.
 
-# Exercise 4.1.3 - Introduction to Query Service
+## Exercise 7.1.3 - Introduction to Query Service
 
 Adobe Experience Platform Query Service is accessed by clicking on ``Queries`` in the left menu.
 
@@ -63,7 +62,7 @@ You can scroll the window to see the entire query, or you can click on the icon 
 
 ![click-copy-query.png](./images/click-copy-query.png)
 
-You can't just see the queries that have been executed, this User Interface lets you create new datasets from queries. These datasets can be linked to Adobe Experience Platform's Real-Time Customer Profile or can be used as input for Adobe Experience Platform Data Science Workspace. 
+You can't just see the queries that have been executed, this User Interface lets you create new datasets from queries. These datasets can be linked to Adobe Experience Platform's Real-Time Customer Profile or can be used as input for Adobe Experience Platform Data Science Workspace.
 
 ## Exercise 7.1.4 - Connect PSQL Client to Query Service
 
@@ -95,8 +94,7 @@ OSX:
 
 ![command-prompt-paste-osx.png](./images/command-prompt-paste-osx.png)
 
-
-You are now connected to Query Service using PSQL. 
+You are now connected to Query Service using PSQL.
 
 In the next exercises, there will be quite some interaction with this window. We will refer to it as your **PSQL command-line interface**.
 

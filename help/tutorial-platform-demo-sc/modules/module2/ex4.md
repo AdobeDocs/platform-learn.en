@@ -1,10 +1,10 @@
-## Exercise 4 - Create a segment - UI
+# Exercise 4 - Create a segment - UI
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
-### Story
+## Story
 
 In the real-time customer profile, all profile data is shown alongside behavioral and transactional data and the view will also be enriched with existing segment memberships. The data that is shown here comes from anywhere, from any Adobe Solution to any external solution. This is the most powerful view of Adobe Experience Platform: the true Experience System of Record.
 
@@ -36,7 +36,7 @@ Since XDM is the language that powers the experience business, XDM is also the f
 
 Let's build a segment which includes all **male** customers.
 
-To get to the attribute gender, you need to understand and know XDM. 
+To get to the attribute gender, you need to understand and know XDM.
 
 Gender is an attribute of Person, which can be found under Attributes. So to get there, you'll start by clicking on ``XDM Individual Profile``.
 
@@ -62,9 +62,9 @@ To build out this segment, you need to add an Experience Event. You can find all
 
 ![Segmentation](./images/findee.png)
 
-Next, you'll see the top level ``Experience Events``-node. 
+Next, you'll see the top level ``Experience Events``-node.
 
-![Segmentation](./images/see.png) 
+![Segmentation](./images/see.png)
 
 To find customers that have visited the ```Proteus Fitness Jackshirt (Orange)``` - product, click on ```XDM ExperienceEvent```.
 
@@ -91,7 +91,7 @@ When building a segment, we're actually composing a PQL query: Profile Query Lan
 
 Now you can see the full PQL-statement:
 
-```
+```pql
 person.gender in ["male"] and (select _Any1 from xEvent, _Any1__Product_list_items1 from _Any1.productListItems where _Any1__Product_list_items1.name.equals("Proteus Fitness Jackshirt (Orange)", false))
 ```
 
@@ -105,7 +105,7 @@ Finally, let's give your segment a name and save it.
 
 As a naming convention, we'll use:
 
-  * all - Male customers with interest in Proteus Fitness Jackshirt (Orange) - ldap
+* all - Male customers with interest in Proteus Fitness Jackshirt (Orange) - ldap
 
 Please replace **ldap** with your ldap.
 

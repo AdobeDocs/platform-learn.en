@@ -1,11 +1,11 @@
-## Exercise 7.0 - Pre-requisites
+# Exercise 7.0 - Pre-requisites
 
-### Install PSQL Command Line Utility
+## Install PSQL Command Line Utility
 
 Follow the instruction outlined in the Adobe Experience Platform documentation to install the psql client:
 [PSQL Install Guide](https://docs.adobe.com/content/help/en/experience-platform/query/clients/psql.html)
 
-### Install Power BI
+## Install Power BI
 
 Only for Windows users
 
@@ -13,7 +13,7 @@ Only for Windows users
 
 Make sure that you install the exact version of ``npgsql`` as mentioned on the document, otherwise you will not be able to connect Power BI to Adobe Experience Platform Query Service.
 
-### Install Tableau
+## Install Tableau
 
 For Windows or Mac users
 

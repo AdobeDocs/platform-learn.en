@@ -1,12 +1,12 @@
 # Module 10: Adobe Experience Platform Data Science Workspace - Churn Prediction Model
 
-#### Author: [Tina Soni](https://www.linkedin.com/in/tinadsoni/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)
+**Author: [Tina Soni](https://www.linkedin.com/in/tinadsoni/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 ---
 
 ## Lab Overview
 
-This module was presented by Tina Dilip Soni during a webinar/training session in EMEA on Nov. 20, 2019. 
+This module was presented by Tina Dilip Soni during a webinar/training session in EMEA on Nov. 20, 2019.
 
 You can view the recording of that webinar [here](https://bluejeans.com/playback/s/80gVAzgKeGkkBQlDzHzTXuo0mEPqIlPuSttpvG1jMYslb4OP1Key7QnkBRBMzNqO).
 
@@ -24,7 +24,7 @@ You can also find Tina's slides [here](./resources/DataScienceWorkspaceSession.p
 ## Prerequisites
 
 * Access Adobe Experience Platform Data Science Workspace
-* Datasets 
+* Datasets
 * Zip-file containing the 3 required notebooks
 
 ## Your Environment Variables
@@ -46,7 +46,7 @@ One of the first steps in any Data Science project is Data Preparation. A Data S
 
 ### [Exercise 3 - Feature Engineering and Model Building](./ex3.md)
 
-In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model. 
+In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model.
 
 ### [Exercise 4 - Experimentation - Recipe Building](./ex4.md)
 
@@ -55,4 +55,3 @@ In this exercise, you'll convert the feature engineering and model that you have
 ---
 
 [Go Back to All Modules](../../README.md)
-

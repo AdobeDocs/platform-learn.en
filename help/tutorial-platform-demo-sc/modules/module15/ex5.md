@@ -1,4 +1,4 @@
-## Exercise 15.5 - Publish your Recipe as a Scheduled Service
+# Exercise 15.5 - Publish your Recipe as a Scheduled Service
 
 Finally, you can select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
 

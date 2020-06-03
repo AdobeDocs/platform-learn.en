@@ -1,10 +1,10 @@
-## Exercise 8.4 - Scoring and Consumption of Insights
+# Exercise 8.4 - Scoring and Consumption of Insights
 
 Now that we’ve experimented with our recommendations model and have determined the optimal run, we can move on to scoring the model to generate product recommendations.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
-### Exercise 8.4.1 - Score a Model based on a Recipe
+## Exercise 8.4.1 - Score a Model based on a Recipe
 
 After training a model, we can use the model to score and as such, have the model build recommendations which can be activated through targeting.
 
@@ -20,7 +20,7 @@ To score, you have to click the ```+ Score``` - button in the top right corner o
 
 ![DSW](./images/score.png)
 
-In the next step, you again have to select an Input Dataset. Let's choose the ```AEP Demo - Recommendations Input```. 
+In the next step, you again have to select an Input Dataset. Let's choose the ```AEP Demo - Recommendations Input```.
 
 ![DSW](./images/scoreinput.png)
 
@@ -40,7 +40,7 @@ In the next screen, you'll see the Model's Configuration parameters.
 
 ![DSW](./images/scoreconfig.png)
 
-After updating the Model's Configuration parametres, click ```Finish```.
+After updating the Model's Configuration parameters, click ```Finish```.
 
 ![DSW](./images/finish.png)
 

@@ -1,4 +1,4 @@
-### Exercise 6.2: Journey Orchestration: Setup Journey
+# Exercise 6.2: Journey Orchestration: Setup Journey
 
 In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the AEP Demo-website.
 
@@ -28,7 +28,7 @@ In the previous exercise, you created a new ``Event``. You named it like this ``
 
 ![ACOP](./images/eventdone.png)
 
-You now need to take this eevent as the start of this Journey. You can do this by going to the left side of your screen and searching for your event in the list of events.
+You now need to take this event as the start of this Journey. You can do this by going to the left side of your screen and searching for your event in the list of events.
 
 ![ACOP](./images/eventlist.png)
 
@@ -49,7 +49,7 @@ On the right side of your screen, you now need to configure the email.
 ![ACOP](./images/emptymsg.png)
 
 Go to ``Message`` and open the dropdown-list. In that list, you need to select the template with the name ``Thanks for Signing Up``.
- 
+
 ![ACOP](./images/emailmsglist.png)
 
 Selecting this message automatically opens up a number of additional fields. These are the fields that. have been configured to be dynamic field in the email template. You now need to link each of the expected dynamic fields to a field coming from the Payload that is sent to Platform.
@@ -175,6 +175,3 @@ Next Step: [Exercise 6.3: Configure Launch to trigger your Event](./ex3.md)
 [Go Back to Module 6](./README.md)
 
 [Go Back to All Modules](../../README.md)
-
-
-

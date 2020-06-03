@@ -1,4 +1,4 @@
-## Exercise 12.4 - Design a trigger-based Customer Journey
+# Exercise 12.4 - Design a trigger-based Customer Journey
 
 In this exercise, you'll create an Orchestrated Journey by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
@@ -9,7 +9,7 @@ You'll see the ``Adobe Experience Cloud``-homepage.
 ![Demo](./images/aec.png)
 
 Click on ``Journey Orchestration``.
- 
+
 ![Demo](./images/aecjo.png)
 
 Next, you'll see the ``Journey Orchestration``-homepage, which shows all existing Journeys.
@@ -46,7 +46,7 @@ Next, click on ``Orchestration``.
 
 ![Demo](./images/jo2.png)
 
-You now see ``Orchestration``-capabilities. 
+You now see ``Orchestration``-capabilities.
 
 ![Demo](./images/jo3.png)
 
@@ -54,15 +54,15 @@ Select ``Condition``, then drag and drop it on the Journey Canvas.
 
 ![Demo](./images/jo4.png)
 
-You now have to define 3 conditions: 
+You now have to define 3 conditions:
 
-* It's colder than 10° Celcius
-* It's between 10° and 25° Celcius
-* It's warmer than 25° Celcius 
+* It's colder than 10° Celsius
+* It's between 10° and 25° Celsius
+* It's warmer than 25° Celsius
 
 Let's define the first condition.
 
-#### Condition 1: Colder than 10° Celcius
+## Condition 1: Colder than 10° Celsius
 
 Click on the ``Condition``.
 
@@ -100,11 +100,11 @@ Click the field ``dynamic val: q`` as indicated in the screenshot.
 
 ![Demo](./images/jo11.png)
 
-You then need to find the field that contains the current city of the customer in one of the available Data Sources. 
+You then need to find the field that contains the current city of the customer in one of the available Data Sources.
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to ``geofenceEntryLdap.<aepTenantId>.locationService.currentPoiCity`` (replace Ldap by your LDAP). 
+You can find the field by navigating to ``geofenceEntryLdap.<aepTenantId>.locationService.currentPoiCity`` (replace Ldap by your LDAP).
 
 By clicking that field, it will be added as the dynamic value for the parameter ``q``. This field will be populated by f.i. the geolocation-service that you've implemented in your Mobile App.
 
@@ -116,7 +116,7 @@ Click ``OK``.
 
 Next, we'll add the 2nd condition.
 
-#### Condition 2: Between 10° and 25° Celcius
+## Condition 2: Between 10° and 25° Celsius
 
 After having added the first condition, you'll see this screen.
 
@@ -158,7 +158,7 @@ Click the field ``dynamic val: q`` as indicated in the screenshot.
 
 ![Demo](./images/joc11.png)
 
-You then need to find the field that contains the current city of the customer in one of the available Data Sources. 
+You then need to find the field that contains the current city of the customer in one of the available Data Sources.
 
 ![Demo](./images/joc12.png)
 
@@ -172,7 +172,7 @@ Click ``OK``.
 
 Next, we'll add the 3nd condition.
 
-#### Condition 3: Warmer than 25° Celcius
+## Condition 3: Warmer than 25° Celsius
 
 After having added the second condition, you'll see this screen.
 
@@ -214,7 +214,7 @@ Click the field ``dynamic val: q`` as indicated in the screenshot.
 
 ![Demo](./images/joct11.png)
 
-You then need to find the field that contains the current city of the customer in one of the available Data Sources. 
+You then need to find the field that contains the current city of the customer in one of the available Data Sources.
 
 ![Demo](./images/joct12.png)
 
@@ -232,7 +232,7 @@ You now have 3 configured paths.
 
 As this is a journey for learning purpose, we'll now configure a couple of actions to showcase the variety of options marketeers now have to deliver messages.
 
-#### Path 1
+## Path 1
 
 For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
 
@@ -241,7 +241,7 @@ Let's focus on ``Path1``.
 ![Demo](./images/p1steps.png)
 
 Let's take another ``Condition``-element and drag it as indicated in the screenshot above. We'll verify if for this customer, we have a mobile number available.
- 
+
 ![Demo](./images/joa1.png)
 
 Click on the ``Edit``-icon for the Expression for Path1.
@@ -359,7 +359,7 @@ In the left menu, go to ``Orchestration``, select ``End``, then drag and drop ``
 
 ![Demo](./images/joa23.png)
 
-#### Path 2
+## Path 2
 
 For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
 
@@ -368,7 +368,7 @@ Let's focus on ``Path2``.
 ![Demo](./images/p2steps.png)
 
 Let's take another ``Condition``-element and drag it as indicated in the screenshot above. We'll verify if for this customer, we have a mobile number available.
- 
+
 ![Demo](./images/jop1.png)
 
 Click on the ``Edit``-icon for the Expression for Path1.
@@ -484,16 +484,16 @@ In the left menu, go to ``Orchestration``, select ``End``, then drag and drop ``
 
 ![Demo](./images/jop23.png)
 
-#### Path 3
+## Path 3
 
 For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
 
 Let's focus on ``Path3``.
 
-![Demo](./images/p3steps.png) 
+![Demo](./images/p3steps.png)
 
 Let's take another ``Condition``-element and drag it as indicated in the screenshot above. We'll verify if for this customer, we have a mobile number available.
- 
+
 ![Demo](./images/jod1.png)
 
 Click on the ``Edit``-icon for the Expression for Path3.

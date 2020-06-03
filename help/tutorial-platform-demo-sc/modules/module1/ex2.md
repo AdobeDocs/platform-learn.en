@@ -1,27 +1,27 @@
-## Exercise 2 - Configure Schemas and Set Identifiers
+# Exercise 2 - Configure Schemas and Set Identifiers
 
 In this exercise, you'll configure the required XDM schemas to classify profile information and customer behavior. In every XDM schema, you'll also have to configure a primary identifier to link all the information to.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
- 
-### Story
 
-Before you start configuring XDM Schema's and setting Primary Identifiers, we need to think about the business context of what we're trying to do: 
+## Story
 
-  * We Want Data
-  * We Want to Link Data to a Customer
-  * We Want to Build a Progressive, Unified Profile
+Before you start configuring XDM Schema's and setting Primary Identifiers, we need to think about the business context of what we're trying to do:
+
+* We Want Data
+* We Want to Link Data to a Customer
+* We Want to Build a Progressive, Unified Profile
 
 There are 2 types of data that we want to capture:
 
-  * Who is this customer?
-  * What does this customer do?
+* Who is this customer?
+* What does this customer do?
 
-However, the question ```Who is this customer?``` is a very open question that has many answers. When your company wants to see this question answered, you're looking for demographic information like First Name, Last Name and Address. But also for contact information like an Email Address or a Mobile Phone Number. And also for information linked to Language, OptIn/OptOut and maybe even Profile Pictures. And finally, what you really need to know, is how we'll be identifying this customer in the various systems that your companyuses.
+However, the question ```Who is this customer?``` is a very open question that has many answers. When your company wants to see this question answered, you're looking for demographic information like First Name, Last Name and Address. But also for contact information like an Email Address or a Mobile Phone Number. And also for information linked to Language, OptIn/OptOut and maybe even Profile Pictures. And finally, what you really need to know, is how we'll be identifying this customer in the various systems that your company uses.
 
 The same thing goes for the question ```What does this customer do?```. It's a very open question with many answers. When your company wants to see this question answered, you're looking for any interaction a customer has has had with any of your online and offline properties. Which pages or products have been visited? Has this customer added a product to his cart or even purchased an item? What device and browser has been used to browse the website? What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer? And finally, what we really need to know, is how we'll be identifying this customer in the various systems that your company will use.
 
-### Exercise 1.1 - Who is this customer?
+## Exercise 1.1 - Who is this customer?
 
 Capturing the answer to ```Who is this customer?``` for your company is done through the Login/Registration-page.
 
@@ -60,7 +60,7 @@ In Adobe Experience Platform, click on ```Schemas```in the menu on the left side
 
 ![Data Ingestion](./images/menuschemas.png)
 
-Your list of Schemas is currently empty. 
+Your list of Schemas is currently empty.
 
 ![Data Ingestion](./images/schemas.png)
 
@@ -68,7 +68,7 @@ You should create a new schema. To create a new schema, click on the button ```+
 
 ![Data Ingestion](./images/createschema.png)
 
-After clicking the ```+ Create Schema```button, you'll see an empty, new schema. 
+After clicking the ```+ Create Schema```button, you'll see an empty, new schema.
 
 ![Data Ingestion](./images/emptyschema.png)
 
@@ -81,7 +81,7 @@ That should give you something like this:
 
 ![Data Ingestion](./images/schemaname.png)
 
-Next, you need to select the class of your schema. As indicated before, the class of your schema should be ``XDM Individual Profile``. 
+Next, you need to select the class of your schema. As indicated before, the class of your schema should be ``XDM Individual Profile``.
 
 Click on the button ```+ Assign```
 
@@ -102,22 +102,22 @@ You'll now see an overview of the minimal structure of your schema.
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
 For instance, the field ```_id``` is a required field.
 
-  * _id needs to contain a unique id for a specific data ingestion
+* _id needs to contain a unique id for a specific data ingestion
 
 Now you need to define what an answer to the question ```Who is this customer?``` should look like.
 In the introduction of this lab, we noted the need for following attributes to define a customer:
 
-  * Demographic information like First Name, Last Name and Address
-  * Contact information like a Home Address, Email Address or a Mobile Phone Number
-  * Other Information linked to Language, OptIn/OptOut and maybe even Profile Pictures. 
-  * Primary Identifier for a customer
+* Demographic information like First Name, Last Name and Address
+* Contact information like a Home Address, Email Address or a Mobile Phone Number
+* Other Information linked to Language, OptIn/OptOut and maybe even Profile Pictures.
+* Primary Identifier for a customer
 
 To make that information part of your schema, you need to add the following Mixins to your schema:
 
-  * Profile Person Details (Demographic Information)
-  * Profile Personal Details (Contact Information)
-  * Profile Preferences Details (Other Information)
-  * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
+* Profile Person Details (Demographic Information)
+* Profile Personal Details (Contact Information)
+* Profile Preferences Details (Other Information)
+* your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
 
 You can add these Mixins by clicking the ```+ Add```-button below the Class that you just defined.
 
@@ -171,7 +171,7 @@ Instead of reusing an existing Mixin, you'll now create your own Mixin. You can 
 
 ![Data Ingestion](./images/createmixin.png)
 
-You now need to provide a ``Display Name`` and ``Description`` for your new Mixin. 
+You now need to provide a ``Display Name`` and ``Description`` for your new Mixin.
 
 As the name for our schema, we'll use this:
 **AEP Demo - Profile Identification Mixin**
@@ -199,7 +199,7 @@ On the top-level of your Schema, next to your Schema - name, click the ``+ Add F
 
 ![Data Ingestion](./images/clickaddfield.png)
 
-After clicking the ``+ Add Field``-button, you now see a new ``object`` in your schema. This object represents a custom ``object `` in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance [here](../../environment.md).
+After clicking the ``+ Add Field``-button, you now see a new ``object`` in your schema. This object represents a custom ``object`` in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance [here](../../environment.md).
 
 ![Data Ingestion](./images/tenant.png)
 
@@ -225,22 +225,21 @@ After clicking ``Apply``, you now see your ``identification``-object in the Sche
 
 You'll now add 3 new fields under the  ``identification``-object:
 
-- ecid:
-
+* ecid:
   * Field name: ``ecid``
   * Display name:  ``ecid``
   * Type: ``String``
 
-- emailId
+* emailId
 
-  * Field name: ``emailId ``
-  * Display name:  ``emailId ``
+  * Field name: ``emailId``
+  * Display name:  ``emailId``
   * Type: ``String``
   
-- mobilenr
+* mobilenr
 
-  * Field name: ``mobilenr ``
-  * Display name:  ``mobilenr ``
+  * Field name: ``mobilenr``
+  * Display name:  ``mobilenr``
   * Type: ``String``
 
 Each field will be defined as type ``String`` and we'll configure these fields as ``Identities``. For the Schema ``Website Registration Schema``, we assume that a customer will always be identified by their email-address, which means that you have to configure the field ``emailId`` as a **primary** identifier, and the other fields as **secondary** identifiers.
@@ -255,7 +254,7 @@ You now have an empty field. You need to configure the above 3 fields as indicat
 
 This is how each field should look after your initial field configuration:
 
-- ecid
+* ecid
 
 ![Data Ingestion](./images/ecidfield.png)
 
@@ -263,7 +262,7 @@ To save your field, scroll down in the ``Field Properties`` until you see the bu
 
 ![Data Ingestion](./images/apply.png)
 
-- emailId
+* emailId
 
 ![Data Ingestion](./images/emailidfield.png)
 
@@ -271,7 +270,7 @@ To save your field, scroll down in the ``Field Properties`` until you see the bu
 
 ![Data Ingestion](./images/apply.png)
 
-- mobilenr
+* mobilenr
 
 ![Data Ingestion](./images/mobilenrfield.png)
 
@@ -286,7 +285,7 @@ You now have 3 fields, but these fields haven't been defined as ``Identity``-fie
 To start defining these fields as ``Identity``-fields, follow these steps:
 
 * Select the field ``emailId``.
-* On the right side, in the field properties, scroll down until you see ``Identity``. Check the checkbox for ``Identity``. 
+* On the right side, in the field properties, scroll down until you see ``Identity``. Check the checkbox for ``Identity``.
 
   ![Data Ingestion](./images/emailidid.png)
 
@@ -305,7 +304,7 @@ To start defining these fields as ``Identity``-fields, follow these steps:
 Next, you have to define the other fields for ``ecid`` and ``mobilenr`` as secondary identifiers.
 
 * Select the field ``ecid``.
-* On the right side, in the field properties, scroll down until you see ``Identity``. Check the checkbox for ``Identity``. 
+* On the right side, in the field properties, scroll down until you see ``Identity``. Check the checkbox for ``Identity``.
 
   ![Data Ingestion](./images/ecidid.png)
 
@@ -318,7 +317,7 @@ Next, you have to define the other fields for ``ecid`` and ``mobilenr`` as secon
   ![Data Ingestion](./images/apply.png)
 
 * Select the field ``mobilenr``.
-* On the right side, in the field properties, scroll down until you see ``Identity``. Check the checkbox for ``Identity``. 
+* On the right side, in the field properties, scroll down until you see ``Identity``. Check the checkbox for ``Identity``.
 
   ![Data Ingestion](./images/mobid.png)
 
@@ -367,7 +366,7 @@ Finally, click ```Save``` to save your schema.
 
 ![Data Ingestion](./images/save.png)
 
-### Exercise 1.2 - What does this customer do?
+## Exercise 1.2 - What does this customer do?
 
 Capturing the answer to ```What does this customer do?``` for your company is done through f.i. a Product View on a Product Page.
 
@@ -403,7 +402,7 @@ In Adobe Experience Platform, click on ```Schemas```in the menu on the left side
 
 ![Data Ingestion](./images/menuschemas.png)
 
-In Schemas, you'll see your previously defined schema. 
+In Schemas, you'll see your previously defined schema.
 
 ![Data Ingestion](./images/schemasee.png)
 
@@ -411,7 +410,7 @@ You should create a new schema. To create a new schema, click on the button ```+
 
 ![Data Ingestion](./images/createschema.png)
 
-After clicking the ```+ Create Schema```button, you'll see an empty, new schema. 
+After clicking the ```+ Create Schema```button, you'll see an empty, new schema.
 
 ![Data Ingestion](./images/emptyschema.png)
 
@@ -424,12 +423,13 @@ That should give you something like this:
 
 ![Data Ingestion](./images/schemanameee.png)
 
-Next, you need to select the class of your schema. As indicated before, the class of your schema should be ``XDM ExperienceEvent``. 
+Next, you need to select the class of your schema. As indicated before, the class of your schema should be ``XDM ExperienceEvent``.
+
 Click on the button ```+ Assign```
 
 ![Data Ingestion](./images/assignee.png)
 
-In the ```Assign Class```-window, select ```XDM ExperienceEvent ```.
+In the ```Assign Class```-window, select ```XDM ExperienceEvent```.
 
 ![Data Ingestion](./images/XDMEE.png)
 
@@ -444,25 +444,24 @@ You'll now see an overview of the minimal structure of your schema.
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
 For instance, the fields ```_id``` and ```timestamp``` are required fields.
 
-  * _id needs to contain a unique id for a specific data ingestion
-  * timestamp needs to be the timestamp of this hit, in the format **"YYYY-MM-DDTHH:MM:SSZ"**, like f.i.: **"2019-04-08T07:20:00Z"**
+* _id needs to contain a unique id for a specific data ingestion
+* timestamp needs to be the timestamp of this hit, in the format **"YYYY-MM-DDTHH:MM:SSZ"**, like f.i.: **"2019-04-08T07:20:00Z"**
 
 Now you need to define what an answer to the question ```What does this customer do?``` should look like.
 In the introduction of this lab, we noted the need for following attributes to define what a customer does:
 
-  * Which pages or products have been visited? 
-  * Has this customer added a product to his cart or even purchased an item? 
-  * What device and browser has been used to browse the website? 
-  * What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer?
-  * Primary Identifier for a customer
-
+* Which pages or products have been visited?
+* Has this customer added a product to his cart or even purchased an item?
+* What device and browser has been used to browse the website?
+* What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer?
+* Primary Identifier for a customer
 
 To make that information part of your schema, you need to add the following Mixins to your schema:
 
-  * ExperienceEvent Web Details
-  * ExperienceEvent Commerce Details
-  * ExperienceEvent Environment Details
-  * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
+* ExperienceEvent Web Details
+* ExperienceEvent Commerce Details
+* ExperienceEvent Environment Details
+* your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
 
 You can add these Mixins by clicking the ```+ Add```-button below the Class that you just defined.
 
@@ -518,7 +517,7 @@ Instead of reusing an existing Mixin, you'll now create your own Mixin. You can 
 
 ![Data Ingestion](./images/createmixin.png)
 
-You now need to provide a ``Display Name`` and ``Description`` for your new Mixin. 
+You now need to provide a ``Display Name`` and ``Description`` for your new Mixin.
 
 As the name for our schema, we'll use this:
 **AEP Demo - EE Identification**
@@ -546,7 +545,7 @@ On the top-level of your Schema, next to your Schema - name, click the ``+ Add F
 
 ![Data Ingestion](./images/clickaddfieldee.png)
 
-After clicking the ``+ Add Field``-button, you now see a new ``object`` in your schema. This object represents a custom ``object `` in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance [here](../../environment.md).
+After clicking the ``+ Add Field``-button, you now see a new ``object`` in your schema. This object represents a custom ``object`` in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance [here](../../environment.md).
 
 ![Data Ingestion](./images/tenantee.png)
 
@@ -572,7 +571,7 @@ After clicking ``Apply``, you now see your ``identification``-object in the Sche
 
 We'll now add 1 new field under the  ``identification``-object:
 
-- ecid:
+* ecid:
 
   * Field name: ``ecid``
   * Display name:  ``ecid``
@@ -599,7 +598,7 @@ You now have a new field, but this field hasn't been defined as an ``Identity``-
 To start defining these fields as ``Identity``-fields, follow these steps:
 
 * Select the field ``ecid``.
-* On the right side, in the field properties, scroll down until you see ``Identity``. Check the checkbox for ``Identity``. 
+* On the right side, in the field properties, scroll down until you see ``Identity``. Check the checkbox for ``Identity``.
 
   ![Data Ingestion](./images/ecididee.png)
 

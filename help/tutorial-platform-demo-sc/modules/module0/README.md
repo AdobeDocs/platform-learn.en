@@ -1,6 +1,6 @@
 # Module 0: Initial Setup
 
-#### Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)
+**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 ---
 
@@ -15,10 +15,12 @@ You can view these variables [here](../../environment.md).
 
 ## Content
 
-### [Exercise 1 - Setup of Webserver and Website](./ex1.md)
+### [Exercise 1 - Setup of Web server and Website](./ex1.md)
+
 In this exercise, you'll install a web server and the AEP Demo website that is used as part of this enablement.
 
 ### [Exercise 2 - Install the Mobile Application (iOS)](./ex2.md)
+
 In this exercise, you'll Install the Mobile Application (iOS) that is used as part of this enablement.
 
 ---

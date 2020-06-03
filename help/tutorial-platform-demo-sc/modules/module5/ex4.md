@@ -1,36 +1,36 @@
-## Exercise 5.4: Ingest 2nd and 3rd party data into Adobe Experience Platform
+# Exercise 5.4: Ingest 2nd and 3rd party data into Adobe Experience Platform
 
 In this exercise, you'll learn how to import 2nd and 3rd party data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
-### Learning Objectives
+## Learning Objectives
 
 - Learn how to load data in Informatica
-- Learn how to create a mapper workflow in Informatica. 
+- Learn how to create a mapper workflow in Informatica.
 - Understand the process to join data sets, enrich data and ingest it in Platform.
 
-### Lab Resources
+## Lab Resources
 
 - Informatica: [https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home](https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home)
 - Adobe Experience Platform: [https://platform.adobe.com/](https://platform.adobe.com/)
 
-### Lab Tasks
+## Lab Tasks
 
 - Load CSV-files from your S3 bucket into Informatica for Offline Orders and Loyalty Program Profiles
 - Create a mapper workflow to join the above data sets, enrich and filter the data.
 - Run the job to ingest the data into Adobe Experience Platform
 
-### Business Context: Using Informatica to ingest 2nd and 3rd party data into Platform.
+## Business Context: Using Informatica to ingest 2nd and 3rd party data into Platform
 
 Luma Retail fashion brand, has a partnership with Survey corp which has agreed to share their latest survey results on people preferences on designers, colors, and brands. Luma Retail has also decided to buy some demographics data from a marketplace from Money Corp, providing details on people income and credit score. By combining these two data sets Luma Retail is aiming to target their customer with more meaningful experiences based on their their preferences as well as income.
 
-### Exercise 5.4.1 - Create Sources in a Mapping Workflow
+## Exercise 5.4.1 - Create Sources in a Mapping Workflow
 
-In this exercise, you'll load two CSV-files from your S3-bucket into Informatica: 
+In this exercise, you'll load two CSV-files from your S3-bucket into Informatica:
 
 - 3rdparty\_data.csv
 - survey\_data.csv
 
-Go to [https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home](https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home). . 
+Go to [https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home](https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home).
 
 Login using the credentials that were sent to you by email.
 
@@ -66,15 +66,15 @@ Let's start by configuring the name of your mapping. For the name of your mappin
 
 Click ``Save`` in the upper right corner of the screen to save your changes.
 
-![ETL](./images/save.png) 
+![ETL](./images/save.png)
 
 Next, let's start the creation of your mapping workflow. Your workflow looks like this at the moment.
 
-![ETL](./images/2wf1.png) 
+![ETL](./images/2wf1.png)
 
 Let's start by removing the ``Target``-object for the moment. Select the ``Target``-object and click the ``Delete``-icon.
 
-![ETL](./images/2wf2.png) 
+![ETL](./images/2wf2.png)
 
 Click ``Delete``on the popup window.
 
@@ -108,7 +108,7 @@ You'll then see a popup window, which shows your S3-connection. In the ``Package
 
 ![ETL](./images/2wf10.png)
 
-After selecting your bucket name, you'll see the 4 CSV-files that you uploaded into your S3-bucket in exercise 1. 
+After selecting your bucket name, you'll see the 4 CSV-files that you uploaded into your S3-bucket in exercise 1.
 
 Select the file ``3rdparty_data.csv`` and click OK.
 
@@ -158,7 +158,7 @@ In the ``Properties``-window, click ``Source``.
 
 Open the ``Connection``-dropdown, locate your ``S3 - LDAP``-connection and select it.
 
-![ETL](./images/2wf21.png) 
+![ETL](./images/2wf21.png)
 
 You'll then see this.
 
@@ -172,7 +172,7 @@ You'll then see a popup window, which shows your S3-connection. In the ``Package
 
 ![ETL](./images/2wf23.png)
 
-After selecting your bucket name, you'll see the 4 CSV-files that you uploaded into your S3-bucket in exercise 1. 
+After selecting your bucket name, you'll see the 4 CSV-files that you uploaded into your S3-bucket in exercise 1.
 
 Select the file ``survey_data.csv`` and click OK.
 
@@ -204,8 +204,7 @@ You should then see a preview just like this one. Click ``Done`` to close the pr
 
 You have now created the Source connectors required for this exercise!
 
-
-### Exercise 5.4.2 - Join Sources
+## Exercise 5.4.2 - Join Sources
 
 In this exercise, you'll join the above created Sources.
 
@@ -213,7 +212,7 @@ Your mapping workflow looks like this currently:
 
 ![ETL](./images/2wf30.png)
 
-You now need to join those 2 datasets. The way to do that is using a ``Joiner``. In the Design-menu, scroll down until you see the ``Joiner``-object. 
+You now need to join those 2 datasets. The way to do that is using a ``Joiner``. In the Design-menu, scroll down until you see the ``Joiner``-object.
 
 ![ETL](./images/2wf31.png)
 
@@ -245,9 +244,9 @@ You'll see this window now.
 
 ![ETL](./images/2wf42.png)
 
-For Master > Source, open the dropdown list for ``Bulk Rename Options`` and select ``Prefix``. 
+For Master > Source, open the dropdown list for ``Bulk Rename Options`` and select ``Prefix``.
 
-Enter the prefix ``m_``. 
+Enter the prefix ``m_``.
 
 Click ``OK``.
 
@@ -269,7 +268,7 @@ You'll then see a Join Condition appear.
 
 ![ETL](./images/2wf46.png)
 
-Set the ``Join Type`` to ``Full Outer``, and connect these 2 fields to eachother:
+Set the ``Join Type`` to ``Full Outer``, and connect these 2 fields to each other:
 
 ``m_email (string)`` = ``email (string)``
 
@@ -279,13 +278,13 @@ When done, click ``Save``.
 
 ![ETL](./images/2wf48.png)
 
-Your 2 Sources are now joined with eachother.
+Your 2 Sources are now joined with each other.
 
 Don't forget to click ``Save`` to save your mapping's current state.
 
 ![ETL](./images/4savemapping.png)
 
-### Exercise 5.4.3 - Filter Data
+## Exercise 5.4.3 - Filter Data
 
 The next step is filtering data. Specifically, you need to remove potential empty lines like in the case of having an empty account_id.
 
@@ -315,7 +314,7 @@ Click the ``Define Filter Condition``-button.
 
 ![ETL](./images/filter6.png)
 
-In the ``Edit Filter``-popup, paste this filter: 
+In the ``Edit Filter``-popup, paste this filter:
 ``IIF(ISNULL(m_email),FALSE,TRUE)``
 
 ![ETL](./images/4filter7.png)
@@ -328,9 +327,9 @@ Don't forget to click ``Save`` to save your mapping's current state.
 
 ![ETL](./images/4savemapping.png)
 
-### Exercise 5.4.4 - Enrich Data
+## Exercise 5.4.4 - Enrich Data
 
-In the enrichment phase, you can add additional fields to your dataset or transform existing fields. In this example, we need to transform the existing field ``m_yearly_income``. Luma Retail's marketers shouldn't see indiviual income numbers, instead they should see a class of income. 
+In the enrichment phase, you can add additional fields to your dataset or transform existing fields. In this example, we need to transform the existing field ``m_yearly_income``. Luma Retail's marketers shouldn't see individual income numbers, instead they should see a class of income.
 In this case, Luma Retail has decided that if someone's yearly income is above 100000/year, that they should be classified as having a ``high`` income. If their yearly income is between 50000 and 100000/year, they should be classified as having a ``medium`` income and if a yearly income is below 50000, it's classified as ``low``.
 
 To transform a field, you'll be using an ``Expression`` so you need to add an ``Expression``-object onto the canvas. You can find the ``Expression``-object in the left menu on the Design workflow.
@@ -356,7 +355,7 @@ You'll then see this popup:
 In the popup, define the Field Name and Type:
 
 - Field Name: ``m_income``
-- Type: ``string`` 
+- Type: ``string``
 - Precision: ``256``
 
 ![ETL](./images/4enrich5.png)
@@ -369,7 +368,7 @@ You'll then see this:
 
 Click ``Configure...``
 
-In the ``Edit Expression``-popup, paste this expression: 
+In the ``Edit Expression``-popup, paste this expression:
 ``IIF(TO_INTEGER(m_yearly_income) > 100000, 'high', IIF(TO_INTEGER(m_yearly_income) > 50000, 'medium', 'low'))``
 
 ![ETL](./images/4enrich6.png)
@@ -382,7 +381,7 @@ Don't forget to click ``Save`` to save your mapping's current state.
 
 ![ETL](./images/4savemapping.png)
 
-### Exercise 5.4.5 - Output Data to Target
+## Exercise 5.4.5 - Output Data to Target
 
 The last step is to add the ``Target``-object to the workflow. From the left menu, drag and drop the ``Target``-object onto the canvas.
 
@@ -484,7 +483,7 @@ Open the dataset ``AEP Demo - ETL Profile Data``.
 
 ![ETL](./images/4run11.png)
 
-Scroll down until you see the Batch IDs and locate your specific batch. 
+Scroll down until you see the Batch IDs and locate your specific batch.
 
 ![ETL](./images/4run12.png)
 

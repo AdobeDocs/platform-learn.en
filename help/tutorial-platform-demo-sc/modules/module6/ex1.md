@@ -1,4 +1,4 @@
-### Exercise 6.1: Journey Orchestration: Setup Event
+# Exercise 6.1: Journey Orchestration: Setup Event
 
 The end goal of this module is to receive an email after creating your account on the AEP Demo-website.
 
@@ -50,7 +50,7 @@ You'll see a ``Fields`` - window popup, in which you need to select the fields t
 
 ![ACOP](./images/eventfields.png)
 
-In the object ``<aepTenantId>.accountcreation``, please make sure to select the fields ``firstName`` and ``lastName``. 
+In the object ``<aepTenantId>.accountcreation``, please make sure to select the fields ``firstName`` and ``lastName``.
 
 ![ACOP](./images/eventpayloadac.png)
 
@@ -82,11 +82,11 @@ Click on the ``View`` - icon. You'll now see an example of the expected payload.
 
 ![ACOP](./images/fullpayload.png)
 
-Your Event has a unique ochestration eventID, which you can find by scrolling down in that payload until you see ``_experience.campaign.orchestration.eventID``. 
+Your Event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see ``_experience.campaign.orchestration.eventID``.
 
 ![ACOP](./images/payloadeventID.png)
 
-The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Jounery that you'll build in exercise 2. Remember this eventID, as you'll need it in exercise 3.
+The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in exercise 2. Remember this eventID, as you'll need it in exercise 3.
 ``"eventID": "71d98ef80980453e03a3bfc6aab57d15663784265a9363c097b6b9608f1a54bf"``
 
 Click ``Close``.
@@ -100,6 +100,3 @@ Next Step: [Exercise 6.2: Journey Orchestration: Setup Journey](./ex2.md)
 [Go Back to Module 6](./README.md)
 
 [Go Back to All Modules](../../README.md)
-
-
-

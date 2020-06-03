@@ -1,6 +1,8 @@
 # Module 5: Extract, Transform, Load data using a 3rd party ETL-tool
 
-#### Authors: [Marius Shehati](https://www.linkedin.com/in/mshehati/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)
+**Authors: [Marius Shehati](https://www.linkedin.com/in/mshehati/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+
+---
 
 In **Module 5**, the following topics will be addressed:
 
@@ -13,12 +15,13 @@ In **Module 5**, the following topics will be addressed:
   * Ingesting the enriched data into Platform
 
 ## Key Takeaways
+
 In this module, you'll learn:
 
-  - How to setup an AWS S3 bucket
-  - How to use Informatica ETL
-  - How to setup a connector from Informatica to your AWS S3 bucket
-  - How to build a mapper workflow to extract data, transform data and eventually, load that data into a dataset in Adobe Experience Platform
+* How to setup an AWS S3 bucket
+* How to use Informatica ETL
+* How to setup a connector from Informatica to your AWS S3 bucket
+* How to build a mapper workflow to extract data, transform data and eventually, load that data into a dataset in Adobe Experience Platform
 
 ## Business Context
 

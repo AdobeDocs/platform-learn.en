@@ -7,7 +7,7 @@ To do this, you'll use the Alexa Simulator.
 Go to your **AWS Lambda** definition screen for **aep**.
 
 Make sure you have all of these **Environment Variables** properly configured in your Lambda-function before your demonstration, and make sure that these 3 reflect the proper values for your demo: `ldap`, `alexaBrandName`, `emailAddress`.
- 
+
 ![Environment Variables](images/environmentvariables.png)
 
 If needed, update and save the **Environment variables**.
@@ -16,18 +16,18 @@ Go to your **alexa developer console** and open the **AEP** skill you created as
 
 ![AEP Skill Main Screen](images/aepskillmainscreen.png)
 
-In the **aep** skill definition screen within the **alexa developer console**, click on **Test**. 
+In the **aep** skill definition screen within the **alexa developer console**, click on **Test**.
 You might be prompted if you want to allow use of the microphone. The instructions here are using text input for simulating the conversation.
 
 ![Initial Test Screen](images/initialtestscreen.png)
 
 Ensure to:
   
-  - Select `Development` from **Skill testing is enabled in:**.
-  - Select the **Alexa Simulator**.
-  - Select the language you have developed your skill in from the language dropdown list (e.g. `English (GB)`)
-  - Unselect **Skill I/O**, select **Device Display** and unselect **Device Log**.
-  - Select the type of device you want to use for your demonstration, e.g. `Small Hub` (Echo Spot) or `Medium Hub` (Echo Show) or another one from the dropdown list.
+- Select `Development` from **Skill testing is enabled in:**.
+- Select the **Alexa Simulator**.
+- Select the language you have developed your skill in from the language dropdown list (e.g. `English (GB)`)
+- Unselect **Skill I/O**, select **Device Display** and unselect **Device Log**.
+- Select the type of device you want to use for your demonstration, e.g. `Small Hub` (Echo Spot) or `Medium Hub` (Echo Show) or another one from the dropdown list.
 
 Your screen should now look like this:
 
@@ -101,7 +101,7 @@ You'll now see an overview of the most recent data that was ingested in this dat
 
 ![Platform Enablements](images/datapreview.png)
 
-You have finished this exercise. 
+You have finished this exercise.
 
 ---
 

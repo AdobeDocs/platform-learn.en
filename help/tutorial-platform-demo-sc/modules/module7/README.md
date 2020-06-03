@@ -1,13 +1,13 @@
 # Module 7: Adobe Experience Platform Query Service
 
-#### Authors: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)
+**Authors: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 ---
 
-**In Module 7**, you will get a hands-on preview of Adobe Experience Platform Query Service. Query Service lets you perform omnichannel queries across all Adobe Experience Cloud product data, joining and analyzing data across Adobe Campaign, Analytics, Audience Manager, Target, and Advertising Cloud and other customer data loaded/inserted into Adobe Experience Platform. 
+**In Module 7**, you will get a hands-on preview of Adobe Experience Platform Query Service. Query Service lets you perform omnichannel queries across all Adobe Experience Cloud product data, joining and analyzing data across Adobe Campaign, Analytics, Audience Manager, Target, and Advertising Cloud and other customer data loaded/inserted into Adobe Experience Platform.
 
-Query Service is a serverless tool. It supports SQL queries and connectivity from multiple client applications through its PostgreSQL compatibility. 
-We will use data that has been injected into platform using either Web Interaction Data, Call Center Interactions in combibation with Customer Loyalty Data uploaded into platform.
+Query Service is a serverless tool. It supports SQL queries and connectivity from multiple client applications through its PostgreSQL compatibility.
+We will use data that has been injected into platform using either Web Interaction Data, Call Center Interactions in combination with Customer Loyalty Data uploaded into platform.
 
 ## Key Takeaways
 
@@ -19,9 +19,9 @@ We will use data that has been injected into platform using either Web Interacti
 ## Prerequisites
 
 * Some familiarity with SQL is preferred, but not required
-* Access to Adobe Experience Platform 
+* Access to Adobe Experience Platform
 * Datasets (dataset used during lab, pre-loaded for you)
-* Installation and configuration of PostgreSQL compliant client or command line interface 
+* Installation and configuration of PostgreSQL compliant client or command line interface
 * Tableau or Microsoft Power BI Desktop
 
 ## Your Environment Variables
@@ -35,11 +35,11 @@ You can view these variables [here](../../environment.md).
 
 ### [Exercise 7.0 - Pre-requisites](./ex0.md)
 
-You will need to install psql to execute the queries in this enablement excercise. Depending on your operating system you will have to install Microsoft Power BI or Tableau. Windows users can choose between Power BI or Tableau. Mac users should install Tableau.
+You will need to install psql to execute the queries in this enablement exercise. Depending on your operating system you will have to install Microsoft Power BI or Tableau. Windows users can choose between Power BI or Tableau. Mac users should install Tableau.
 
 ### [Exercise 7.1 - Getting Started](./ex1.md)
 
-In this exercise you will explore the Adobe Experience Platform Query Service User Interface, learn about data sets, find your queries and finaly setup a connection from PSQL.
+In this exercise you will explore the Adobe Experience Platform Query Service User Interface, learn about data sets, find your queries and finally setup a connection from PSQL.
 
 ### [Exercise 7.2 - Using the Query Service](./ex2.md)
 

@@ -1,10 +1,10 @@
-## Exercise 8.3 - Model Training and Experimentation
+# Exercise 8.3 - Model Training and Experimentation
 
 So you’ve prepared your data, authored your model and packaged it to test it at scale as a recipe. Now let’s go ahead and train and test the model.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
-### Exercise 8.3.1 - Train a Model based on a Recipe
+## Exercise 8.3.1 - Train a Model based on a Recipe
 
 Login to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -73,15 +73,15 @@ And 1-2 minutes later, the Training Run's status will change to ```Complete```.
 
 Once the Training Run has completed, you'll see a couple of metrics that indicate the quality of the run:
 
-  * **Recall** is also known as True Positive Rate and also as Sensitivity: if the real result was Yes, how often did the model predict Yes?
-  
-  ![DSW](./images/recall.png)
-  
-  * **Precision** means: When the model predicts Yes, how often is it correct?
-  
-  ![DSW](./images/precision.png)
+* **Recall** is also known as True Positive Rate and also as Sensitivity: if the real result was Yes, how often did the model predict Yes?
 
-Training a model requires more then one run. All Training Runs will be visible on this page and you'll be able to compare their results, so you can decide which one is the most successfull. 
+![DSW](./images/recall.png)
+
+* **Precision** means: When the model predicts Yes, how often is it correct?
+
+![DSW](./images/precision.png)
+
+Training a model requires more then one run. All Training Runs will be visible on this page and you'll be able to compare their results, so you can decide which one is the most successful.
 
 ![DSW](./images/multipleruns.png)
 

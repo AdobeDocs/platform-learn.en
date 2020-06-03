@@ -1,8 +1,8 @@
-## Exercise 10.3 - Feature Engineering and Model Building
+# Exercise 10.3 - Feature Engineering and Model Building
 
-In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model. 
+In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model.
 
-Open the notebook ``Mod10 - Churn Model Feature Engineering and Model Building.ipynb``. 
+Open the notebook ``Mod10 - Churn Model Feature Engineering and Model Building.ipynb``.
 
 ![DSW](./images/dswchmfe.png)
 

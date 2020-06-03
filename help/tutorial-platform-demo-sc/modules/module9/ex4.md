@@ -1,15 +1,15 @@
-## Exercise 9.4 - Retrieve Datasets in Platform
+# Exercise 9.4 - Retrieve Datasets in Platform
 
 As part of the GTM Rule configuration, we'll define rules that will send behavioral and profile data to Platform. When defining a tag and trigger in GTM to send behavioral and/or profile data to Adobe Experience Platform, we'll need to define some variables in GTM:
 
 * **Adobe Organization ID/IMS Org ID**
-* **DCS Streaming Endpoint** 
+* **DCS Streaming Endpoint**
 * **Profile Dataset ID** & **Profile Schema Reference**
 * **Experience Event Dataset ID** & **Experience Event Schema Reference**
 
 We'll go into Platform to retrieve most of that information, to then fill out the below table and configure it in GTM.
 
-| Name | GTM Variable Name | Constant Value | 
+| Name | GTM Variable Name | Constant Value |
 | ------------- | ------------- | ------------- |
 | Adobe Organization ID | imsOrgId |\<imsOrg\>|
 | DCS Streaming Endpoint | dcsStreamingEndpoint | \<dcsInletId\> |
@@ -18,8 +18,7 @@ We'll go into Platform to retrieve most of that information, to then fill out th
 | Experience Event Dataset ID | eeDatasetId |  |
 | Experience Event Schema Reference | eeSchemaRef |  |
 
-
-To log in to Platform, go to [https://platform.adobe.com/home](https://platform.adobe.com/home). 
+To log in to Platform, go to [https://platform.adobe.com/home](https://platform.adobe.com/home).
 
 Log in with your personal Adobe Login credentials.
 
@@ -37,8 +36,8 @@ You can consult these schema's by going to ``Schemas`` in the Platform menu.
 
 If you'd like to know more about XDM, please have a look here:
 
-  * [https://www.adobe.io/open/standards/xdm.html](https://www.adobe.io/open/standards/xdm.html)
-  * [https://github.com/adobe/xdm
+* [https://www.adobe.io/open/standards/xdm.html](https://www.adobe.io/open/standards/xdm.html)
+* [https://github.com/adobe/xdm
 ](https://github.com/adobe/xdm)
 
 Search for ``AEP Demo - GA Website Registrations Schema`` to find the Profile XDM for your Platform Org.
@@ -49,7 +48,7 @@ The AEP Demo - GA Website Registrations Schema looks like this and is using the 
 
 ![Platform Setup](./images/profiledtl.png)
 
-Search for ``AEP Demo - GA Website Interactions Schema`` to find the ExperienceEvent XDM. 
+Search for ``AEP Demo - GA Website Interactions Schema`` to find the ExperienceEvent XDM.
 
 ![Platform Setup](./images/xdmprofileee.png)
 
@@ -69,24 +68,24 @@ You'll find a number of existing Datasets in Platform.
 
 At this moment, we'll use 2 datasets, which are linked to the Schema's that you just viewed
 
-  * 1 Dataset to capture Google Analytics Website Interaction data
-  * 1 Dataset to capture Google Analytics Website Registration data
+* 1 Dataset to capture Google Analytics Website Interaction data
+* 1 Dataset to capture Google Analytics Website Registration data
 
 These datasets already exist! Don't recreate them.
 
-  * Website Interaction Dataset name: 
-  
-    * **AEP Demo - GA Website Interactions**
-      ![Platform Setup](./images/ee.png)
+* Website Interaction Dataset name:
 
-  * Website Registration name: 
-  
-    * **AEP Demo - GA Website Registrations**
-      ![Platform Setup](./images/p.png)
+  * **AEP Demo - GA Website Interactions**
+    ![Platform Setup](./images/ee.png)
+
+* Website Registration name:
+
+  * **AEP Demo - GA Website Registrations**
+    ![Platform Setup](./images/p.png)
 
 After having consulted the above Schemas and Datasets, you can now fill out the below table:
 
-| Name | GTM Variable Name | Constant Value | 
+| Name | GTM Variable Name | Constant Value |
 | ------------- | ------------- | ------------- |
 | Adobe Organization ID | imsOrgId |\<imsOrg\>|
 | DCS Streaming Endpoint | dcsStreamingEndpoint |\<dcsInletId>|
@@ -103,7 +102,7 @@ In the ``User-Defined Variables`` - section, click ``New``.
 
 First, we'll configure the Variable for ``Adobe Organization ID``.
 
-* Rename ``Untitled Variable`` to ``imsOrgId ``
+* Rename ``Untitled Variable`` to ``imsOrgId``
 * Click on ``Variable Configuration`` and choose ``Utilities - Constant`` as Variable Type
 
 ![Platform Setup](./images/constanti.png)
@@ -169,7 +168,7 @@ Next, we'll configure the Variable for ``Experience Event Dataset ID``.
 
 Finally, we'll configure the Variable for ``Experience Event Schema Reference``.
 
-* Rename ``Untitled Variable`` to ``eeSchemaRef ``
+* Rename ``Untitled Variable`` to ``eeSchemaRef``
 * Click on ``Variable Configuration`` and choose ``Utilities - Constant`` as Variable Type
 * Enter the constant value ``Experience Event Schema Reference`` out of the above table for this Variable.
 
@@ -188,6 +187,3 @@ Next Step: [Exercise 9.5 - Configure GTM Tags & Triggers](./ex5.md)
 [Go Back to Module 9](./README.md)
 
 [Go Back to All Modules](./../../README.md)
-
-
-

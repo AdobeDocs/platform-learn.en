@@ -1,23 +1,23 @@
-## Exercise 15.1 - Introduction to Luma Insurance
+# Exercise 15.1 - Introduction to Luma Insurance
 
 In this exercise, you'll learn how to use the Luma Insurance Demo Brand and how to demo the Real-time ML Use-Case.
 
-### Business Context
+## Business Context
 
-Luma Insurance is a typical Insurance Company with a big offline dealer-network and a website with lots of traffic. 
+Luma Insurance is a typical Insurance Company with a big offline dealer-network and a website with lots of traffic.
 Luma Insurance has been trying to personalize their digital communication for years, but it’s very hard to personalize anything if you don’t know who you’re speaking to. As most of the traffic on the website is from unknown, anonymous users who only visit the website once or twice, it’s difficult for Luma Insurance to build out a deep customer profile.
 
 Most of these unknown, anonymous visitors only come to the website with one goal: get a quick indication of the cost of an insurance, by filling out a form which then gives them an idea of the insurance cost.
 
 Because of this limited amount of information, Luma Insurance has a hard time optimizing any kind of digital campaign which leads to prospects being bombarded with irrelevant and inconsistent messaging.
 
-As a consequence, Luma Insurance can’t understand which customer are interesting targets and which customers aren’t, they’re unable to optimise their ad spend and they’re unable to understand which channels are best used to interact with any given customer.
+As a consequence, Luma Insurance can’t understand which customer are interesting targets and which customers aren’t, they’re unable to optimize their ad spend and they’re unable to understand which channels are best used to interact with any given customer.
 
 Let's have a look at the demo scenario.
 
-### Demo Scenario
+## Demo Scenario
 
-Open your AEP Demo-website. 
+Open your AEP Demo-website.
 
 You'll be redirected to the Admin Homepage.
 
@@ -49,7 +49,7 @@ From the Luma Insurance homepage, scroll down to see the Luma Insurance ``produc
 
 ![LumaBank](./images/5.png)
 
-The ``Luma Insurance`` - demo brand also allows you to visit pages like ``Car Insurance``, ``Travel Insurance`` and ``Household Insurance``. 
+The ``Luma Insurance`` - demo brand also allows you to visit pages like ``Car Insurance``, ``Travel Insurance`` and ``Household Insurance``.
 
 Go to the ``Car Insurance``-page.
 
@@ -69,7 +69,7 @@ You'll then be redirected to the ``Get A Car Insurance Quote`` - page and you'll
 
 ![LumaBank](./images/7b.png)
 
-Just like in reality, at this moment, you're an unknown, anonymous customer to ``Luma Insurance``. Unknown customers do Car Insurance simulations every day and it's important for any insurance company to react in an intelligent way to this specific customer behaviour.
+Just like in reality, at this moment, you're an unknown, anonymous customer to ``Luma Insurance``. Unknown customers do Car Insurance simulations every day and it's important for any insurance company to react in an intelligent way to this specific customer behavior.
 
 To react in an intelligent way, ``Luma Insurance`` has implemented Adobe Experience Platform Data Science Workspace and has a real-time Sales Prediction model running. The Sales Prediction model will look at all available information, like all of the form fields a customer has filled out and will combine this with any other temporal, behavioral or device data. Obviously, if Luma Insurance has seen this customer on their website before, they'll have more information available for this customer which will make any ML model even better.
 

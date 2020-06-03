@@ -1,6 +1,4 @@
-## Exercise 10.5 - Create & Publish Model-as-a-service
-
-
+# Exercise 10.5 - Create & Publish Model-as-a-service
 
 ---
 

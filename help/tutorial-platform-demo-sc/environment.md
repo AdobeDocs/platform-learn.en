@@ -22,10 +22,9 @@ These are the variables that are specific to your Adobe Experience Platform inst
 | X-ray Adobe IO Profile URL       |ioRuntimeExperienceEventURL| https://vangeluw.adobeio-static.net/api/v1/web/aepxrayINTDEMO-1.0/getAEPExperienceEventInfoXray.json |
 | X-ray Adobe IO Profile URL       |ioRuntimeSegmentURL| https://vangeluw.adobeio-static.net/api/v1/web/aepxrayINTDEMO-1.0/getAEPSegmentInfoXray.json |
 
-
 ## Sandbox Assignment
 
-| Sandbox Name     | LDAP       | 
+| Sandbox Name     | LDAP       |
 |:-------------:| :---------------:|
 | Sandbox 1 |vangeluw|1|
 | Sandbox 2 ||
@@ -52,8 +51,3 @@ These are the variables that are specific to your Adobe Experience Platform inst
 | Sandbox 23 ||
 | Sandbox 24 ||
 | Sandbox 25 ||
-
-
-
-
-

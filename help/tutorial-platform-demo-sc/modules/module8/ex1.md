@@ -1,10 +1,10 @@
-## Exercise 8.1 - Data Exploration and Transformation
+# Exercise 8.1 - Data Exploration and Transformation
 
 To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you will explore purchase data flowing via Adobe Analytics to Platform and transform that data into a Feature dataset that can help train your machine learning model.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
-### Exercise 8.1.1 - Explore the Datasets and XDM Schemas
+## Exercise 8.1.1 - Explore the Datasets and XDM Schemas
 
 Experience Data Models (XDM) on Adobe Experience Platform help standardize your data so that it can be used efficiently across your organization.
 
@@ -26,7 +26,7 @@ In this Tech Lab, we'll be using 3 datasets:
 |:---------------------------:| :---------------:| :-------------------------------------: |
 | AEP Demo - Website Interactions | AEP Demo - Website Interactions Schema | Clickstream data from website |
 | AEP Demo - Recommendations Input | AEP Demo - Recommendations Input Schema| The clickstream data will be converted into a feature/training dataset using a feature pipeline. This data is used to train the Product Recommendations machine learning model. itemid and userid correspond to a product purchased by that user at time timestamp |
-| AEP Demo - Recommendations Output | AEP Demo - Recommendations Output Schema| Schema	This is the dataset that you obtain after scoring. This contains the list of recommended products for each user |
+| AEP Demo - Recommendations Output | AEP Demo - Recommendations Output Schema| Schema This is the dataset that you obtain after scoring. This contains the list of recommended products for each user |
 
 Let's have a look at the ``AEP Demo - Website Interactions``-dataset.
 
@@ -37,10 +37,10 @@ On the Datasets - page, enter ``AEP Demo - Website Interactions`` in the searchb
 Open the dataset ``AEP Demo - Website Interactions``.
 
 ![DSW](./images/dsview.png)
- 
+
 By clicking the ```Preview Dataset``` - button, you can see what data is sent into that dataset and how the data model looks like.
 
-![DSW](./images/dspreview.png) 
+![DSW](./images/dspreview.png)
 
 ![DSW](./images/dsdtl.png)
 
@@ -54,9 +54,9 @@ From the left menu, select ```Schemas```.
 
 In the Schemas - overview, search to find the 3 schemas you'll be using in this lab.
 
-| Schema Name    | 
-| :---------------:| 
-| AEP Demo - Recommendations Input Schema| 
+| Schema Name    |
+| :---------------:|
+| AEP Demo - Recommendations Input Schema|
 | AEP Demo - Recommendations Output Schema|
 | AEP Demo - Website Interactions Schema|
 
@@ -66,7 +66,7 @@ Let's explore the schema for AEP Demo - Website Interactions Schema, click to op
 
 ![DSW](./images/schemadtl.png)
 
-### Exercise 8.1.2 - Open Jupyter Notebooks
+## Exercise 8.1.2 - Open Jupyter Notebooks
 
 Let's get our hands dirty now, by going to Jupyter Notebooks.
 
@@ -82,7 +82,7 @@ While Jupyter Notebooks is starting, download the zip-file located [here](../../
 
 ![DSW](./images/dswfiles.png)
 
-Open the folder ```dsw```. In this folder, you'll find 3 notebooks. 
+Open the folder ```dsw```. In this folder, you'll find 3 notebooks.
 
 ![DSW](./images/dswdtl.png)
 
@@ -94,7 +94,8 @@ Once all 3 notebooks appear in Jupyter Notebooks, you can continue with the next
 
 ![DSW](./images/dswdtldragdone.png)
 
-### Exercise 8.1.3 - Transform Clickstream Data
+## Exercise 8.1.3 - Transform Clickstream Data
+
 After the previous exercise, you should now see 3 notebooks available in Jupyter Notebooks inside of Adobe Experience Platform.
 
 ![DSW](./images/dswdtldragdone.png)
@@ -103,14 +104,14 @@ In Jupyter Notebooks, open the notebook named ```luma-retail-recommendations-fea
 
 What you'll do next:
 
-  * Define the input and output datasets for this Notebook
-  * Read form Platform: Load the input dataset and describe it
-  * Filter out empty values
-  * Split the item_id into individual records
-  * Create a new dataframe that holds the data that we need for our model
-  * Write to Platform: Output that dataframe into a dataset in Adobe Experience Platform
+* Define the input and output datasets for this Notebook
+* Read form Platform: Load the input dataset and describe it
+* Filter out empty values
+* Split the item_id into individual records
+* Create a new dataframe that holds the data that we need for our model
+* Write to Platform: Output that dataframe into a dataset in Adobe Experience Platform
 
-#### Define the input and output datasets for this Notebook
+### Define the input and output datasets for this Notebook
 
 Click on the first cell in the notebook.
 
@@ -138,7 +139,7 @@ Click the play - button to execute this cell.
 
 The execution of this cell might take 1-2 minutes. Just wait and don't do anything else in this notebook until you the below result.
 
-Every time you push the play-button to execute a cell, you'll see an indicator that tells you whether or not your action is still ongoing. 
+Every time you push the play-button to execute a cell, you'll see an indicator that tells you whether or not your action is still ongoing.
 
 This is the indicator when you push the play - button to execute a cell:
 
@@ -148,7 +149,7 @@ This is the indicator when the cell has been executed and the action has finishe
 
 ![DSW](./images/actionfinished.png)
 
-Don't continue the exercises untill the indicator shows that the execution is finished. If you don't wait for your execution to finish, you'll get stuck and receive many errors in the next steps. This is applicable to the execution of all cells in any Jupyter Notebook: always wait until the execution is done and you see the indicator changes and looks like this:
+Don't continue the exercises until the indicator shows that the execution is finished. If you don't wait for your execution to finish, you'll get stuck and receive many errors in the next steps. This is applicable to the execution of all cells in any Jupyter Notebook: always wait until the execution is done and you see the indicator changes and looks like this:
 
 ![DSW](./images/actionfinished.png)
 
@@ -170,7 +171,7 @@ df.head()
 
 Click the play - button to execute this cell.
 
-The execution of this cell might take 1-2 minutes. Just wait and don't do anything else in this notebook until you the below result. 
+The execution of this cell might take 1-2 minutes. Just wait and don't do anything else in this notebook until you the below result.
 
 ![DSW](./images/play.png)
 
@@ -182,7 +183,7 @@ This is the result:
 
 ![DSW](./images/result2.png)
 
-#### Filter out empty values and select data for brand Luma Telco
+### Filter out empty values and select data for brand Luma Telco
 
 Click on the next cell in the notebook.
 
@@ -206,7 +207,7 @@ Wait until the indicator looks like this before continuing:
 
 There is no visual result after this execution. After clicking the play - button, continue to the next step.
 
-#### Split the items into individual records
+### Split the items into individual records
 
 Click on the next cell in the notebook.
 
@@ -246,8 +247,7 @@ Wait until the indicator looks like this before continuing:
 
 There is no visual result after this execution. After clicking the play - button, continue to the next step.
 
-
-#### Prep the data before saving it back to Adobe Experience Platform
+### Prep the data before saving it back to Adobe Experience Platform
 
 Click on the next cell in the notebook.
 
@@ -278,7 +278,7 @@ Wait until the indicator looks like this before continuing:
 
 There is no visual result after this execution. After clicking the play - button, continue to the next step.
 
-#### Write to Platform: Output that dataframe into a dataset in Adobe Experience Platform
+### Write to Platform: Output that dataframe into a dataset in Adobe Experience Platform
 
 Click on the next cell in the notebook.
 
@@ -326,7 +326,7 @@ The result looks like this:
 
 ![DSW](./images/result7.png)
 
-The result in Adobe Experience Platform is that a new batch of data has been created on the ```AEP Demo - Recommendations Input``` which you can verify by going 
+The result in Adobe Experience Platform is that a new batch of data has been created on the ```AEP Demo - Recommendations Input``` which you can verify by going
 [here](https://platform.adobe.com/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created).
 
 ![DSW](./images/1ds.png)

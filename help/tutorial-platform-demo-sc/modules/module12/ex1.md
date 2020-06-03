@@ -1,4 +1,4 @@
-## Exercise 12.1 - Define an Event
+# Exercise 12.1 - Define an Event
 
 In this exercise, you'll create a custom Event by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
@@ -9,7 +9,7 @@ You'll see the ``Adobe Experience Cloud``-homepage.
 ![Demo](./images/aec.png)
 
 Click on ``Journey Orchestration``.
- 
+
 ![Demo](./images/aecjo.png)
 
 Next, you'll see the ``Journey Orchestration``-homepage.
@@ -106,8 +106,8 @@ Once that's done, click ``OK``.
 
 ![Demo](./images/popupok.png)
 
-Journey Orchestration also needs an Identifier to identify the customer. Since Journey Orchestration is linked to Adobe Experience Platform, the Primary Identifier of a Schema is automatically taken as the Identifier for the Journey. 
-The Primary Identifier will also automatically take into account the full Identity Graph of Adobe Experience Platform and will link all behaviour across all available identities, devices and channels to the same profile, so that Journey Orchestration is contextual, relevant and consistent.
+Journey Orchestration also needs an Identifier to identify the customer. Since Journey Orchestration is linked to Adobe Experience Platform, the Primary Identifier of a Schema is automatically taken as the Identifier for the Journey.
+The Primary Identifier will also automatically take into account the full Identity Graph of Adobe Experience Platform and will link all behavior across all available identities, devices and channels to the same profile, so that Journey Orchestration is contextual, relevant and consistent.
 
 ![Demo](./images/eventidentifier.png)
 
@@ -119,7 +119,7 @@ Your event will then be part of the list of available events.
 
 ![Demo](./images/eventlist.png)
 
-Finally, you need to recover the ``Orchestration eventID`` for your custom event. 
+Finally, you need to recover the ``Orchestration eventID`` for your custom event.
 
 Open your event again by clicking it in the list of events.
 

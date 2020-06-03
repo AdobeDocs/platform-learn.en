@@ -1,4 +1,4 @@
-## Exercise 11.3 - Take Action: send your segment to DV360
+# Exercise 11.3 - Take Action: send your segment to DV360
 
 Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -15,7 +15,7 @@ In ``Destinations``, click on ``Google Display & Video 360``.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Click on ``Browse Destinations``. 
+Click on ``Browse Destinations``.
 
 You'll then see all available ``Google Display & Video 360``-destinations.
 

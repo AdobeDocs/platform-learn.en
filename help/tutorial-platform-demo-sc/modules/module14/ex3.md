@@ -2,9 +2,7 @@
 
 ## Objectives
 
-- See how a sample web app can use the Offer Decisioning Engine to show next best offers.
-
-
+* See how a sample web app can use the Offer Decisioning Engine to show next best offers.
 
 ## Exercise 14.3.1 - Use the Web App
 
@@ -18,8 +16,8 @@ Provide details:
 
    1. Select your activity from the **Activity** dropdown listbox, e.g. `rmaur - La Boutique Activity`.
    2. Enter your **Identity Id**, i.e. email address in case you are using the email identity namespace. E.g. `rmaur+09022020-1@adobetest.com`.
-   3. Specify the **Identity Namepace**, e.g. `Email`.
-   
+   3. Specify the **Identity Namespace**, e.g. `Email`.
+
 ![Web App 1a](./images/webapp1a.png)
 
 Click on **Preview**. A preview of the next best offers should be shown.

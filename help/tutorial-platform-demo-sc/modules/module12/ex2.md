@@ -1,4 +1,4 @@
-## Exercise 12.2 - Define an External Data Source
+# Exercise 12.2 - Define an External Data Source
 
 In this exercise, you'll create a custom External Data Source by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
@@ -9,7 +9,7 @@ You'll see the ``Adobe Experience Cloud``-homepage.
 ![Demo](./images/aec.png)
 
 Click on ``Journey Orchestration``.
- 
+
 ![Demo](./images/aecjo.png)
 
 Next, you'll see the ``Journey Orchestration``-homepage.
@@ -71,7 +71,7 @@ In our use-case, we'll implement the connection with Open Weather Map based on t
 ![WeatherMap](./images/owm6.png)
 
 Go back to ``Journey Orchestration``, to your empty ``External Data Source``-popup.
- 
+
 ![Demo](./images/emptyds.png)
 
 As a Name for the Data Source, use **weatherApiLdap** and replace **Ldap** with your LDAP. In this example, the Data Source Name is **weatherApiVangeluw**.
@@ -82,7 +82,7 @@ The URL for the Open Weather Map API is: ``http://api.openweathermap.org/data/2.
 
 ![Demo](./images/dsname.png)
 
-Next, you need to select the Authentication to use. 
+Next, you need to select the Authentication to use.
 
 Use these variables:
 
@@ -105,9 +105,7 @@ According to the Weather API Documentation, we need to send a parameter ``q=City
 
 In order to match the expected API Request, configure your FieldGroup as follows:
 
-**IMPORTANT** 
-
-The Field group name has to be unique, please use this naming convention: **WeatherByCityLdap** so in this case, the name should be **WeatherByCityVangeluw**
+>[!IMPORTANT] The Field group name has to be unique, please use this naming convention: **WeatherByCityLdap** so in this case, the name should be **WeatherByCityVangeluw**
 
 ![Demo](./images/fg1.png)
 
@@ -119,7 +117,7 @@ You can find the expected API JSON Response on the API Documentation page [here]
 
 Or you can copy the JSON Response from here:
 
-``
+```json
 {"coord": { "lon": 139,"lat": 35},
   "weather": [
     {
@@ -159,7 +157,7 @@ Or you can copy the JSON Response from here:
   "name": "Shuzenji",
   "cod": 200
 }
-``
+```
 
 Copy the above JSON Response to your clipboard, then go to your custom Data Source configuration screen.
 
@@ -167,7 +165,7 @@ Click the ``Edit Payload``-icon.
 
 ![Demo](./images/owmapi2.png)
 
-You'll see a popup where you now have to paste the above JSON Reponse.
+You'll see a popup where you now have to paste the above JSON Response.
 
 ![Demo](./images/owmapi3.png)
 

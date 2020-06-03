@@ -1,10 +1,10 @@
-## Exercise 9.1 - Create a Google Tag Manager Property
+# Exercise 9.1 - Create a Google Tag Manager Property
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your Google Account.
 
 ![GTM Setup](./images/gtm-firsttime.png)
 
-Click ``Create Account`` to setup your GTM property. 
+Click ``Create Account`` to setup your GTM property.
 
 ![GTM Setup](./images/gtm1-create-account-button.png)
 
@@ -16,16 +16,16 @@ Fill in these details:
 
 | Form field                | Value               |
 |:-------------------------------------------| :------------------ |
-|Account Name|SYTYCD - **ldap**| 
+|Account Name|SYTYCD - **ldap**|
 |Country|Choose the country where you work, or where your demowebsite runs|
-|Contgainer name|www.platformdemo.net|
+|Container name|www.platformdemo.net|
 |Target platform|Web|
 
 After filling in the details your screen should look like this
 
 ![GTM Setup](./images/gtm2-create-account.png)
 
-Click ``Create`` 
+Click ``Create``
 
 ![GTM Setup](./images/gtm3-terms-create.png)
 
@@ -47,11 +47,11 @@ Accepting the terms brings you to the screen where you can copy the code for Goo
 
 Click OK.
 
-![GTM Setup](./images/gtm4-getcode-ok.png) 
+![GTM Setup](./images/gtm4-getcode-ok.png)
 
 After clicking OK, you're now seeing the standard GTM homepage.
 
-![GTM Setup](./images/gtmhome.png) 
+![GTM Setup](./images/gtmhome.png)
 
 You can now proceed with the next step, where we'll setup Google Analytics.
 
@@ -62,5 +62,3 @@ Next Step: [Exercise 9.2 - Configure Google Analytics](./ex2.md)
 [Go Back to Module 9](./README.md)
 
 [Go Back to All Modules](./../../README.md)
-
-

@@ -1,14 +1,14 @@
-## Exercise 1: Setup of Webserver and Website
+# Exercise 1: Setup of Webserver and Website
 
 In this exercise, the goal is to install the AEP Demo-website.
 
-### Exercise 1.1 - Download and Install MAMP
+## Exercise 1.1 - Download and Install MAMP
 
 MAMP is a free web server which we will use for this enablement.
 
-Go to <a href="https://www.mamp.info/en/" target="_blank">https://www.mamp.info/en/</a> and install MAMP (Free Edition).
+Go to [https://www.mamp.info/en/](https://www.mamp.info/en/) and install MAMP (Free Edition).
 
-MAMP comes in 2 versions: Free and Pro. For this enablement we'll be using the Free version. 
+MAMP comes in 2 versions: Free and Pro. For this enablement we'll be using the Free version.
 
 **For Mac Users:** install MAMP with all default settings.
 
@@ -18,13 +18,13 @@ MAMP comes in 2 versions: Free and Pro. For this enablement we'll be using the F
 
 Configuration of MAMP will be done in the next exercise.
 
-### Exercise 1.2 - Download Demo Site Package
+## Exercise 1.2 - Download Demo Site Package
+
 Download the [AEP Demo-website zip package](../../assets/website/sytycd_demo_site.zip) to your computer, unzip it in a directory of your choice, f.i. on your Desktop:
 
 ![MAMP Setup](./images/mamp_app6.png)
 
-
-### Exercise 1.3 - Setup Demo Site
+## Exercise 1.3 - Setup Demo Site
 
 **Mac:** Go to Launchpad and click on the grey MAMP-icon to start MAMP.
 
@@ -112,6 +112,3 @@ Next Step: [Exercise 2 - Install the Mobile Application (iOS)](./ex2.md)
 [Go Back to Module 0](../README.md)
 
 [Go Back to All Modules](../../../README.md)
-
-
-

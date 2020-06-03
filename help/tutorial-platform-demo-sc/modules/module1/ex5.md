@@ -1,24 +1,25 @@
-## Exercise 5: Data Ingestion from Offline Sources
+# Exercise 5: Data Ingestion from Offline Sources
+
 In this exercise, the goal is to onboard external data like CRM Data in Platform.
 
-### Learning Objectives
+## Learning Objectives
 
-- Learn how to generate your demo data
-- Learn how to ingest CSV
-- Learn how to use the web UI for data ingestion through Workflows
-- Understand the data governance features of Experience Platform
+* Learn how to generate your demo data
+* Learn how to ingest CSV
+* Learn how to use the web UI for data ingestion through Workflows
+* Understand the data governance features of Experience Platform
 
-### Lab Resources
+## Lab Resources
 
-- Mockaroo UI: [https://www.mockaroo.com/](https://www.mockaroo.com/)
-- Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
+* Mockaroo UI: [https://www.mockaroo.com/](https://www.mockaroo.com/)
+* Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
 
-### Lab Tasks
+## Lab Tasks
 
-- Create a CSV file with demo date. Ingest the CSV file in the Experience Platform UI by making use of the available workflows.
-- Understand data governance options in Experience Platform UI
+* Create a CSV file with demo date. Ingest the CSV file in the Experience Platform UI by making use of the available workflows.
+* Understand data governance options in Experience Platform UI
 
-### Exercise 5.1 - Create your CRM Dataset through a data generator tool
+## Exercise 5.1 - Create your CRM Dataset through a data generator tool
 
 For this exercise you need 1000 sample lines of CRM Data.
 
@@ -28,23 +29,23 @@ Open the Mockaroo Template by going to [https://www.mockaroo.com/12674210](https
 
 On the template, you'll notice the following fields:
 
-  * id
-  * first_name
-  * last_name
-  * email
-  * gender
-  * birthDate
-  * home_latitude
-  * home_longitude
-  * country_code
-  * city
-  * country
+* id
+* first_name
+* last_name
+* email
+* gender
+* birthDate
+* home_latitude
+* home_longitude
+* country_code
+* city
+* country
 
-All these fields have been defined to produce data that is compatible with Platform. 
+All these fields have been defined to produce data that is compatible with Platform.
 
 ![Data Ingestion](./images/dd.png)
 
-To generate your CSV-file, click the ``Download Data``-button which will give you a CSV-file with 1000 lines of demo-data. 
+To generate your CSV-file, click the ``Download Data``-button which will give you a CSV-file with 1000 lines of demo-data.
 
 Open your CSV-file in Microsoft Excel to visualize its contents.
 
@@ -52,10 +53,10 @@ Open your CSV-file in Microsoft Excel to visualize its contents.
 
 With your CSV-file ready, you can proceed with mapping it against XDM.
 
-### Exercise 5.2 - Verify the CRM Onboarding Dataset in Adobe Experience Platform
+## Exercise 5.2 - Verify the CRM Onboarding Dataset in Adobe Experience Platform
 
 Open [Adobe Experience Platform
-](https://platform.adobe.com) and go to ``Datasets``. 
+](https://platform.adobe.com) and go to ``Datasets``.
 
 Before you continue, make sure you are in the ``PRODUCTION Prod``-environment in the blue line on top of your screen.
 
@@ -79,15 +80,15 @@ Second, by scrolling down on the page you can check when batches of data were in
 
 ![Data Ingestion](./images/datasetsettings.png)
 
-Lastly, the Dataset Info tab shows important information like the Dataset ID (again, important from a troubleshooting perspective), the Dataset's Name and whether the dataset was enabled for Unified Profile and Streaming Ingestion. 
+Lastly, the Dataset Info tab shows important information like the Dataset ID (again, important from a troubleshooting perspective), the Dataset's Name and whether the dataset was enabled for Unified Profile and Streaming Ingestion.
 
 ![Data Ingestion](./images/ds_ups_link.png)
 
-Enabling a dataset for Streaming Ingestion can currently only be done through the API's. 
+Enabling a dataset for Streaming Ingestion can currently only be done through the API's.
 
-The most important setting here is the link between the dataset and the Schema. The Schema defines what data can be ingested and how that data should look like. 
+The most important setting here is the link between the dataset and the Schema. The Schema defines what data can be ingested and how that data should look like.
 
-In this case, we're using the ``AEP Demo - CRM Onboarding Schema``, which is mapped against the class of ``Profile`` and has implemented extensions, also called mixins. 
+In this case, we're using the ``AEP Demo - CRM Onboarding Schema``, which is mapped against the class of ``Profile`` and has implemented extensions, also called mixins.
 
 ![Data Ingestion](./images/ds_schemalink.png)
 
@@ -105,9 +106,9 @@ Every schema and as such, every dataset that should be used in the Unified Profi
 
 It is best practice to create a separate, specific schema for every dataset and to set the descriptor for every dataset specifically to match how the current solutions used by the brand operate.
 
-### Exercise 5.3 - Using a workflow to map a CSV file to an XDM Schema
+## Exercise 5.3 - Using a workflow to map a CSV file to an XDM Schema
 
-The goal of this exercise is to onboard CRM data in Platform. All the data that is ingested in Platform should be mapped against the specific XDM Schema. What you currently have is a CSV dataset with 1000 lines on the one side, and a dataset that is linked to a schema on the other side. To load that CSV file in that dataset, a mapping exercise needs to take place. To facilitate this mapping exercise, we have ``Workflows`` availabe in Platform.
+The goal of this exercise is to onboard CRM data in Platform. All the data that is ingested in Platform should be mapped against the specific XDM Schema. What you currently have is a CSV dataset with 1000 lines on the one side, and a dataset that is linked to a schema on the other side. To load that CSV file in that dataset, a mapping exercise needs to take place. To facilitate this mapping exercise, we have ``Workflows`` available in Platform.
 
 ![Data Ingestion](./images/workflows.png)
 
@@ -146,7 +147,7 @@ Platform has already done some guessing for us, by trying to link the Source Att
 
 ![Data Ingestion](./images/mapschema.png)
 
-First of all, we need to add the required mapping for the descriptor field. The descriptor field is a required field in this workflow and expects you to indicate what the main identifier is of the file you're uploading. 
+First of all, we need to add the required mapping for the descriptor field. The descriptor field is a required field in this workflow and expects you to indicate what the main identifier is of the file you're uploading.
 
 Selecting the descriptor is actually the most important thing: you'll be defining the custom, brand-specific, primary identifier. Within Platform-context, we refer to this custom, brand-specific, primary identifier as the descriptor. The descriptor is a requirement for this data to be onboarded. Without the presence of the descriptor, the ingestion of this CSV-file will fail.
 Our descriptor for the ``AEP Demo - CRM Onboarding``-dataset is the ``email`` as it's the unique identifier for our dataset.
@@ -193,7 +194,7 @@ Locate the ``home_latitude``-line.
 ![Data Ingestion](./images/newmapfield.png)
 
 Click the ``schema``-icon:
- 
+
 ![Data Ingestion](./images/schema_icon.png)
 
 Locate the property ``homeAddress._schema.latitude`` by making use of the visual mapping tool.
@@ -205,7 +206,7 @@ Click ``Select`` to confirm your choice. You should then see this:
 ![Data Ingestion](./images/schema_lat_result.png)
 
 Repeat the process for the Source Field ``home_longitude``, linking it to the Target Field of ``homeAddress._schema.longitude`` so that you have this as a result:
- 
+
 ![Data Ingestion](./images/schema_long_result.png)
 
 And this should be the overall result of the mapping exercise:
@@ -216,7 +217,7 @@ Click ``Next`` to go to the next step.
 
 ![Data Ingestion](./images/next.png)
 
-On the next screen you'll see an overview of what you've done and you can start the ingestion. 
+On the next screen you'll see an overview of what you've done and you can start the ingestion.
 
 ![Data Ingestion](./images/mapoverview.png)
 
@@ -251,18 +252,18 @@ Click on the ``Preview Dataset``- button to get a quick view of a small sample o
 ![Data Ingestion](./images/previewdata.png)
 
 Once data is loaded, we can define the correct data governance approach for our dataset.
-   
-### Exercise 5.4 - Adding data governance to your dataset 
+
+## Exercise 5.4 - Adding data governance to your dataset
 
 ![Data Ingestion](./images/ingestdataset.png)
 
 Now that our customer data is ingested, we want to make sure that this dataset is properly governed for usage and export control. Click on the ``Data Governance`` tab and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
-You can find more info on the different labels and how they will be enforced in the future through the policy framework on this link: [https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html) 
- 
+You can find more info on the different labels and how they will be enforced in the future through the policy framework on this link: [https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html)
+
 ![Data Ingestion](./images/dsgovernance.png)
 
-Let's restrict identity data for the entire dataset. Hover over your dataset name, and click the Pencil icon to edit the settings. 
+Let's restrict identity data for the entire dataset. Hover over your dataset name, and click the Pencil icon to edit the settings.
 
 ![Data Ingestion](./images/pencil.png)
 
@@ -270,7 +271,7 @@ Go to ``Identity Data`` and you'll see that the ``I2`` option is checked - this 
 
 ![Data Ingestion](./images/identity.png)
 
-Click ``Save Changes`` and observe that ``I2`` is now set for all data fields in the dataset. 
+Click ``Save Changes`` and observe that ``I2`` is now set for all data fields in the dataset.
 
 You can also set these flags for individual data fields - for example, the ``firstName`` field is likely to be classified as an ``I1`` level for directly identifiable information.
 
@@ -289,6 +290,3 @@ With this, you've now successfully ingested and classified CRM Data in Adobe Exp
 [Go Back to Module 1](./README.md)
 
 [Go Back to All Modules](../../README.md)
-
-
-

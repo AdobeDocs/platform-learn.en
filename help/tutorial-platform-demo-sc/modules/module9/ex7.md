@@ -1,4 +1,4 @@
-## Exercise 9.7 - Implement GTM Tag on SYTYCD website
+# Exercise 9.7 - Implement GTM Tag on SYTYCD website
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
@@ -40,7 +40,7 @@ You now have this result:
 
 ![Launch Setup](./images/gtmjstxtedit1.png)
 
-Next, you need to make sure that all this text is part of the same line. There cannot be any linebreaks.
+Next, you need to make sure that all this text is part of the same line. There cannot be any line breaks.
 This means:
 
 * On line 5, set your cursor to the first position before ``}`` and click backspace.
@@ -94,7 +94,7 @@ On line 9, you see ``iframe.src = "";``
 
 Set your cursor between the 2 quotes and paste the GTM Tag that you just copied.
 
-Your ``tags_body.js `` - file and line 9 should now look like this:
+Your ``tags_body.js`` - file and line 9 should now look like this:
 
 ![Launch Setup](./images/gtmjstxtedittagsbodyok.png)
 
@@ -111,6 +111,3 @@ Next Step: [Exercise 9.8 - Activate GTM-tag in SYTYCD Admin](./ex8.md)
 [Go Back to Module 9](./README.md)
 
 [Go Back to All Modules](./../../README.md)
-
-
-

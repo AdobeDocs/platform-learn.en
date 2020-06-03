@@ -1,20 +1,19 @@
-## Exercise 7.2 - Using the Query Service
+# Exercise 7.2 - Using the Query Service
 
-### Objective
+## Objective
 
 - Find and explore datasets
 - Learn how to address Experience Data Models objects and attributes in your queries
 
-
-### Exercise Context
+## Exercise Context
 
 In this exercise you will learn how to use PSQL to retrieve information about the available datasets, how to write a queries for Experience Data Model (XDM), and write your first simple reporting queries using the Query Service and Luma Telco datasets.
 
-### Exercise 7.2.1
+## Exercise 7.2.1
 
 In this exercise you will learn about the methods to retrieve information about the available datasets and how to properly retrieve data with a query from an XDM dataset.
 
-All the datasets hat we have explored via Adobe Experience Platform in the beginning of exercise 1, are also available for access via a SQL interface as tables. To list those tables you can use the ``show tables;`` command. 
+All the datasets hat we have explored via Adobe Experience Platform in the beginning of exercise 1, are also available for access via a SQL interface as tables. To list those tables you can use the ``show tables;`` command.
 
 Execute **show tables;** in your **PSQL command-line interface**. (do not forget to end your command with a semicolon).
 
@@ -26,7 +25,7 @@ You will see the following result:
 
 ```text
 prod:all=> show tables;
-                   name                    |        dataSetId         |                  dataSet                  | description | resolved 
+                   name                    |        dataSetId         |                  dataSet                  | description | resolved
 -------------------------------------------+--------------------------+-------------------------------------------+-------------+----------
  aam_profile_dataset_userprofile           | 5e1d3d905f3bbe18a8ed1ca8 | AAM Devices Data                          |             | false
  aam_realtime                              | 5e1d3d8d93db9218a8f3a850 | AAM Realtime                              |             | false
@@ -85,7 +84,7 @@ prod:all-> limit 1;
 (1 row)
 ```
 
-Notice the result is a flattended object rather than a single value? The ``placecontext.geo`` object contains four attributes: schema, country and city. And when an object is declared as a column it will return the entire object as a string. The XDM schema may be more complex than what you are familiar with but it's very powerful and was architected to support many solutions, channels, and use cases.
+Notice the result is a flat object rather than a single value? The ``placecontext.geo`` object contains four attributes: schema, country and city. And when an object is declared as a column it will return the entire object as a string. The XDM schema may be more complex than what you are familiar with but it's very powerful and was architected to support many solutions, channels, and use cases.
 
 To select the individual properties of an object, you use the ``.`` (dot) notation.
 
@@ -130,7 +129,7 @@ Click the ``search``-icon in the windows toolbar, type **notepad** in the ``sear
 
 On Mac
 
-Install [Brackets](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg) or use another Text Editor of choice if you don't have it installed and follow the instructions. After installation, search for ``Brackets`` via Mac's spotligt search and open it.
+Install [Brackets](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg) or use another Text Editor of choice if you don't have it installed and follow the instructions. After installation, search for ``Brackets`` via Mac's spotlight search and open it.
 
 Copy the following statement to notepad or brackets:
 
@@ -140,7 +139,6 @@ from   aep_demo_website_interactions
 where  <aepTenantId>.productData.productInteraction = 'productView'
 limit 1;
 ```
-
 
 Go back to your Adobe Experience Platform UI (should be open in your browser) or navigate to [http://platform.adobe.com](http://platform.adobe.com).
 
@@ -163,7 +161,7 @@ prod:all=> select placeContext.geo._schema.longitude
 prod:all-> from   aep_demo_website_interactions
 prod:all-> where  <aepTenantId>.productData.productInteraction = 'productView'
 prod:all-> limit 1;
- longitude 
+ longitude
 -----------
  4.9246444
 (1 row)

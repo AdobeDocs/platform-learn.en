@@ -1,4 +1,4 @@
-## Exercise 9.2 - Setup Google Analytics & link it to GTM
+# Exercise 9.2 - Setup Google Analytics & link it to GTM
 
 Go to [https://analytics.google.com/](https://analytics.google.com/) and login with your Google Account.
 
@@ -10,7 +10,7 @@ Click on ``Start measuring``.
 
 ![GA setup](./images/ga1-blank-start.png)
 
-You'll need to fill in some Account details about the website you want to analyse. Please use ``SYTYCD - ldap``, and leave the fields checked, unless you have a specific reason to uncheck them.
+You'll need to fill in some Account details about the website you want to analyze. Please use ``SYTYCD - ldap``, and leave the fields checked, unless you have a specific reason to uncheck them.
 
 ![GA setup](./images/ga2-accountdetails.png)
 
@@ -30,8 +30,8 @@ You can fill in these fields:
 
 | Form field                | Value               |
 |:-------------------------------------------| :------------------ |
-|Website Name|SYTYCD - **ldap**| 
-|Website URL|www.platformdemo.net| 
+|Website Name|SYTYCD - **ldap**|
+|Website URL|www.platformdemo.net|
 |Industry Category|Shopping|
 |Reporting Time Zone|the timezone where you work|
 
@@ -57,7 +57,7 @@ Click on ``Property Settings``.
 
 ![GA setup](./images/ga8-property.png)
 
-You now need to copy the value of ``Tracking ID``. 
+You now need to copy the value of ``Tracking ID``.
 
 ![GA setup](./images/ga9-trackingidd.png)
 
@@ -82,7 +82,7 @@ You are now on the overview page of GTM where nothing has been added yet.
 
 ![GA setup](./images/ga12-gtmoverviewsstart.png)
 
-If you're familiair to Adobe Launch you use ``Extensions``, ``Data elements`` and ``Rules``. In GTM you use in more or less the same way ``Tags``, ``Variables`` and ``Triggers``.
+If you're familiar to Adobe Launch you use ``Extensions``, ``Data elements`` and ``Rules``. In GTM you use in more or less the same way ``Tags``, ``Variables`` and ``Triggers``.
 We're going to create a ``Tag`` for GA, then a ``Trigger`` when to fire the GA-tag.
 
 Create the tag by clicking ``New Tag``.
@@ -97,7 +97,7 @@ Give this tag a name by changing ``Untitled Tag`` into ``Universal Analytics``:
 
 | Form field                | Value               |
 |:-------------------------------------------| :------------------ |
-|Tag Name|Universal Analytics| 
+|Tag Name|Universal Analytics|
 
 Then press ``Tag Configuration``, where you can choose from a list of available tags.
 
@@ -115,19 +115,19 @@ Then add the following fields:
 
 | Form field                | Value               |
 |:-------------------------------------------| :------------------ |
-|Track Type|Page View| 
-|Google Analytics settings|New Variable| 
+|Track Type|Page View|
+|Google Analytics settings|New Variable|
 
-This selection gives you a next screen where you can enter as a Tracking ID the one you copied earlier from Google Analytics. 
+This selection gives you a next screen where you can enter as a Tracking ID the one you copied earlier from Google Analytics.
 Name this one ``GA Tracking ID``. By doing that, you've also automatically created a new GTM Variable.
 
 ![GA setup](./images/ga15-yourtrackingid.png)
 
-Click ``Save`` to proceed. 
+Click ``Save`` to proceed.
 
 ![GA setup](./images/gasave.png)
 
-You now see the name of the newly created data element appearing. You're now ready with the Tag Configuration, now it's time to tell GTM, that this tag should be triggered on each pageview. You do that by clicking the ``Triggering`` element in your screen.
+You now see the name of the newly created data element appearing. You're now ready with the Tag Configuration, now it's time to tell GTM, that this tag should be triggered on each page view. You do that by clicking the ``Triggering`` element in your screen.
 
 ![GA setup](./images/ga15-garesult.png)
 
@@ -139,7 +139,7 @@ Your screen will now show a checked box, proceed by clicking ``Add``.
 
 ![GA setup](./images/gaadd.png)
 
-![GA setup](./images/ga16-addtriggerB.png) 
+![GA setup](./images/ga16-addtriggerB.png)
 
 You are now ready to save the Universal Analytics Tag by clicking ``Save``.
 
@@ -162,7 +162,7 @@ Now click ``Publish``.
 
 ![GA setup](./images/gapublish.png)
 
-You're then seeing the versions tab in GTM, showing you the summary of what you just published. This will not be active yet, since we have not yet implemented the GTM tag on the SYTYCD-webbsite. We'll be doing that in a later exercise. 
+You're then seeing the versions tab in GTM, showing you the summary of what you just published. This will not be active yet, since we have not yet implemented the GTM tag on the SYTYCD-website. We'll be doing that in a later exercise.
 
 ![GA setup](./images/ga-publish3.png)
 
@@ -177,4 +177,3 @@ Next Step: [Exercise 9.3 - Configure GTM Variables](./ex3.md)
 [Go Back to Module 9](./README.md)
 
 [Go Back to All Modules](./../../README.md)
-
