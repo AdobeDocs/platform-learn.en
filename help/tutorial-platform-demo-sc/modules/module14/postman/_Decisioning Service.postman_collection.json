@@ -1,0 +1,862 @@
+{
+	"info": {
+		"_postman_id": "bbe1673b-d4c5-40b0-9967-52670d83847b",
+		"name": "_Decisioning Service",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "--------REPOSITORY APIs--------",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Containers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "af3779b2-22e9-4c6e-90cf-938a4820e497",
+						"exec": [
+							"var offersResponse = JSON.parse(responseBody);",
+							"var offerContainerId = offersResponse._embedded['https://ns.adobe.com/experience/xcore/container'][0].instanceId",
+							"postman.setEnvironmentVariable(\"OFFER_CONTAINER_ID\", offerContainerId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Accept",
+						"value": "application/vnd.adobe.platform.xcore.home.hal+json"
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "{{clientID}}req1"
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/?product=dma_offers",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						""
+					],
+					"query": [
+						{
+							"key": "product",
+							"value": "dma_offers"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Placements",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "6700b3e6-8847-4f83-90e0-6e3e0b9e78b3",
+						"exec": [
+							"// figure out placements: their id and their names and turn them into Postman environment variables...",
+							"",
+							"var placements = pm.response.json();",
+							"",
+							"// get the 6 placement instances",
+							"var placementInstance0 = placements._embedded.results[0]._instance;",
+							"var placementInstance1 = placements._embedded.results[1]._instance;",
+							"var placementInstance2 = placements._embedded.results[2]._instance;",
+							"var placementInstance3 = placements._embedded.results[3]._instance;",
+							"var placementInstance4 = placements._embedded.results[4]._instance;",
+							"var placementInstance5 = placements._embedded.results[5]._instance;",
+							"",
+							"// figure out name and id",
+							"var placementName0 = placementInstance0['xdm:name'];",
+							"var placementId0 = placementInstance0['@id'];",
+							"pm.environment.set(\"OFFER_PLACEMENT_ID: \" + placementName0.replace(/ /g, \"_\"), placementId0);",
+							"",
+							"// figure out name and id",
+							"var placementName1 = placementInstance1['xdm:name'];",
+							"var placementId1 = placementInstance1['@id'];",
+							"pm.environment.set(\"OFFER_PLACEMENT_ID: \" + placementName1.replace(/ /g, \"_\"), placementId1);",
+							"",
+							"// figure out name and id",
+							"var placementName2 = placementInstance2['xdm:name'];",
+							"var placementId2 = placementInstance2['@id'];",
+							"pm.environment.set(\"OFFER_PLACEMENT_ID: \" + placementName2.replace(/ /g, \"_\"), placementId2);",
+							"",
+							"// figure out name and id",
+							"var placementName3 = placementInstance3['xdm:name'];",
+							"var placementId3 = placementInstance3['@id'];",
+							"pm.environment.set(\"OFFER_PLACEMENT_ID: \" + placementName3.replace(/ /g, \"_\"), placementId3);",
+							"",
+							"// figure out name and id",
+							"var placementName4 = placementInstance4['xdm:name'];",
+							"var placementId4 = placementInstance4['@id'];",
+							"pm.environment.set(\"OFFER_PLACEMENT_ID: \" + placementName4.replace(/ /g, \"_\"), placementId4);",
+							"",
+							"// figure out name and id",
+							"var placementName5 = placementInstance5['xdm:name'];",
+							"var placementId5 = placementInstance5['@id'];",
+							"pm.environment.set(\"OFFER_PLACEMENT_ID: \" + placementName5.replace(/ /g, \"_\"), placementId5);",
+							""
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobe.platform.xcore.hal+json; schema=\"https://ns.adobe.com/experience/offer-management/offer-placement\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.adobe.platform.xcore.xdm.receipt+json",
+						"disabled": true
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/{{OFFER_CONTAINER_ID}}/instances?schema=https://ns.adobe.com/experience/offer-management/offer-placement",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						"{{OFFER_CONTAINER_ID}}",
+						"instances"
+					],
+					"query": [
+						{
+							"key": "schema",
+							"value": "https://ns.adobe.com/experience/offer-management/offer-placement"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Decision Rules",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobe.platform.xcore.hal+json; schema=\"https://ns.adobe.com/experience/offer-management/eligibility-rule\""
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/{{OFFER_CONTAINER_ID}}/instances?schema=https://ns.adobe.com/experience/offer-management/eligibility-rule",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						"{{OFFER_CONTAINER_ID}}",
+						"instances"
+					],
+					"query": [
+						{
+							"key": "schema",
+							"value": "https://ns.adobe.com/experience/offer-management/eligibility-rule"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Personalized Offers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "5645d77b-bc92-4a10-a784-cb1a25e281d4",
+						"exec": [
+							"let offersResponse = pm.response.json();",
+							"let offersResults = offersResponse._embedded.results;",
+							"let ldapName = pm.environment.get(\"LDAP\");",
+							"",
+							"console.log(\"length of results is: \" + offersResults.length);",
+							"",
+							"var j = 1;",
+							"",
+							"for (var i = 0; i < offersResults.length; i++) {",
+							"    var offerInstance = offersResults[i]._instance;",
+							"    var offerName = offerInstance['xdm:name'];",
+							"    // console.log(\"Offer Name found: \" + offerName);",
+							"    if (offerName.startsWith(ldapName)) {",
+							"        console.log(\"Offer name found: \" + offerName);",
+							"        var offerId = offerInstance['@id'];",
+							"        pm.environment.set(\"PERSONALIZED_OFFER_ID\" + j, offerId);",
+							"        j++;",
+							"        ",
+							"    }",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobe.platform.xcore.hal+json; schema=\"https://ns.adobe.com/experience/offer-management/personalized-offer\""
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/{{OFFER_CONTAINER_ID}}/instances?schema=https://ns.adobe.com/experience/offer-management/personalized-offer&orderby=-repo:lastModifiedDate",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						"{{OFFER_CONTAINER_ID}}",
+						"instances"
+					],
+					"query": [
+						{
+							"key": "schema",
+							"value": "https://ns.adobe.com/experience/offer-management/personalized-offer"
+						},
+						{
+							"key": "orderby",
+							"value": "-repo:lastModifiedDate"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Fallback Offers",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "94f7b6d1-6078-4a5f-a35b-efcaf03efa45",
+						"exec": [
+							"let fbOffersResponse = pm.response.json();",
+							"let fbOffersResults = fbOffersResponse._embedded.results;",
+							"let ldapName = pm.environment.get(\"LDAP\");",
+							"",
+							"console.log(\"length of results is: \" + fbOffersResults.length);",
+							"",
+							"for (var i = 0; i < fbOffersResults.length; i++) {",
+							"    var fbOfferInstance = fbOffersResults[i]._instance;",
+							"    var fbOfferName = fbOfferInstance['xdm:name'];",
+							"    // console.log(\"Offer Name found: \" + offerName);",
+							"    if (fbOfferName.startsWith(ldapName)) {",
+							"        console.log(\"Fallback Offer name found: \" + fbOfferName);",
+							"        var fbOfferId = fbOfferInstance['@id'];",
+							"        pm.environment.set(\"FALLBACK_OFFER_ID\", fbOfferId);",
+							"    }",
+							"}"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobe.platform.xcore.hal+json; schema=\"https://ns.adobe.com/experience/offer-management/fallback-offer\""
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/{{OFFER_CONTAINER_ID}}/instances?schema=https://ns.adobe.com/experience/offer-management/fallback-offer",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						"{{OFFER_CONTAINER_ID}}",
+						"instances"
+					],
+					"query": [
+						{
+							"key": "schema",
+							"value": "https://ns.adobe.com/experience/offer-management/fallback-offer"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Offer Filter",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "d04430dc-96d5-4218-84ad-2ddb5119d1c1",
+						"exec": [
+							"var offerFilterResponse = JSON.parse(responseBody);",
+							"var offerFilterId = offerFilterResponse['@id'];",
+							"postman.setEnvironmentVariable(\"OFFER_FILTER_ID\", offerFilterId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobe.platform.xcore.hal+json; schema=\"https://ns.adobe.com/experience/offer-management/offer-filter\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.adobe.platform.xcore.xdm.receipt+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_instance\": {\r\n\t  \"xdm:name\": \"{{LDAP}} - La Boutique Offer Filter with LDAP\",\r\n\t  \"xdm:filterType\": \"offers\",\r\n\t  \"xdm:ids\": [\r\n\t  \t\"{{PERSONALIZED_OFFER_ID1}}\",\r\n\t  \t\"{{PERSONALIZED_OFFER_ID2}}\",\r\n\t  \t\"{{PERSONALIZED_OFFER_ID3}}\",\r\n\t  \t\"{{PERSONALIZED_OFFER_ID4}}\"\r\n\t  ]\r\n },\r\n  \"_links\": {}\r\n}"
+				},
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/{{OFFER_CONTAINER_ID}}/instances",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						"{{OFFER_CONTAINER_ID}}",
+						"instances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Offer Filters",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobe.platform.xcore.hal+json; schema=\"https://ns.adobe.com/experience/offer-management/fallback-offer\""
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/{{OFFER_CONTAINER_ID}}/instances?schema=https://ns.adobe.com/experience/offer-management/offer-filter",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						"{{OFFER_CONTAINER_ID}}",
+						"instances"
+					],
+					"query": [
+						{
+							"key": "schema",
+							"value": "https://ns.adobe.com/experience/offer-management/offer-filter"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Create Activity",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "a02c4eec-6e4c-4110-a332-c87d7c96ca23",
+						"exec": [
+							"var offerActivityResponse = JSON.parse(responseBody);",
+							"var offerActivityId = offerActivityResponse['@id'];",
+							"postman.setEnvironmentVariable(\"OFFER_ACTIVITY_ID\", offerActivityId);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobe.platform.xcore.hal+json; schema=\"https://ns.adobe.com/experience/offer-management/offer-activity\""
+					},
+					{
+						"key": "Accept",
+						"value": "application/vnd.adobe.platform.xcore.xdm.receipt+json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n  \"_instance\": {\r\n      \"xdm:name\": \"{{LDAP}} - La Boutique Activity\",\r\n\t  \"xdm:startDate\": \"2019-12-01T05:59:59.999Z\",\r\n\t  \"xdm:endDate\":   \"2020-12-27T00:00:00.000Z\",\r\n\t  \"xdm:status\":    \"live\",\r\n\t  \"xdm:placement\": \"{{OFFER_PLACEMENT_ID: Image_for_Email}}\",\r\n\t  \"xdm:filter\":    \"{{OFFER_FILTER_ID}}\",\r\n\t  \"xdm:fallback\":  \"{{FALLBACK_OFFER_ID}}\"\r\n  },\r\n  \"_links\": {}\r\n}"
+				},
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/{{OFFER_CONTAINER_ID}}/instances",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						"{{OFFER_CONTAINER_ID}}",
+						"instances"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "List Activities",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobe.platform.xcore.hal+json; schema=\"https://ns.adobe.com/experience/offer-management/offer-activity\""
+					},
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/xcore/{{OFFER_CONTAINER_ID}}/instances?schema=https://ns.adobe.com/experience/offer-management/offer-activity",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"xcore",
+						"{{OFFER_CONTAINER_ID}}",
+						"instances"
+					],
+					"query": [
+						{
+							"key": "schema",
+							"value": "https://ns.adobe.com/experience/offer-management/offer-activity"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "--------RUNTIME APIs--------",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Offers by Activity Id",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json"
+					}
+				],
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/ode/{{OFFER_CONTAINER_ID}}/offers?activityId={{OFFER_ACTIVITY_ID}}",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"ode",
+						"{{OFFER_CONTAINER_ID}}",
+						"offers"
+					],
+					"query": [
+						{
+							"key": "activityId",
+							"value": "{{OFFER_ACTIVITY_ID}}"
+						}
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get OFFERs for Customer PROFILEs",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "x-api-key",
+						"value": "{{clientID}}"
+					},
+					{
+						"key": "x-gw-ims-org-id",
+						"value": "{{IMSOrg}}"
+					},
+					{
+						"key": "x-request-id",
+						"value": "unique-requestid-{{clientID}}"
+					},
+					{
+						"key": "x-products",
+						"value": "dma_offers"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/json"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\t\"xdm:dryRun\":false,\n\t\"xdm:validateContextData\":false,\n\t\"xdm:offerActivities\":[{\"xdm:offerActivity\":\"{{OFFER_ACTIVITY_ID}}\"}],\n\t\"xdm:identityMap\":{\"Email\":[{\"xdm:id\":\"jigeorge@adobe.com\"}]},\n\t\"xdm:profileModel\":\"_xdm.context.profile\",\n\t\"xdm:contextData\":[]\n}"
+				},
+				"url": {
+					"raw": "https://platform.adobe.io/data/core/ode/{{OFFER_CONTAINER_ID}}/decisions",
+					"protocol": "https",
+					"host": [
+						"platform",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"data",
+						"core",
+						"ode",
+						"{{OFFER_CONTAINER_ID}}",
+						"decisions"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "--------OPTIONAL--------",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": ""
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Grant Access to Library Folder",
+			"request": {
+				"method": "PUT",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{access_token}}"
+					},
+					{
+						"key": "Cache-Control",
+						"value": "no-cache"
+					},
+					{
+						"key": "Content-Type",
+						"value": "application/vnd.adobecloud.accesscontrolpolicy+json"
+					},
+					{
+						"key": "Host",
+						"value": "platform-cs-va7.adobe.io"
+					},
+					{
+						"key": "x-api-key",
+						"value": "offer-library-ui"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\"repo:acl\":[{\n\t\"repo:principal\":{\n\t\t\"@id\":\"034628015C7D28D90A495D91@techacct.adobe.com\",\n\t\t\"xdm:provider\":{\"@id\":\"https://ims-na1.adobelogin.com/\"},\n\t\t\"@type\":\"https://ns.adobe.com/adobecloudplatform/ims/user\"\n\t},\n\t\"repo:privileges\":[\"full\"],\n\t\"repo:relations\": [],\n\t\"repo:inheritance\":\"deep\",\n\t\"repo:modifier\":\"grant\"}]\n}"
+				},
+				"url": {
+					"raw": "https://platform-cs-va7.adobe.io/content/acl/policy/urn:aaid:sc:VA7:45e85091-d355-5bc6-9ee7-0723216d578f?op=merge",
+					"protocol": "https",
+					"host": [
+						"platform-cs-va7",
+						"adobe",
+						"io"
+					],
+					"path": [
+						"content",
+						"acl",
+						"policy",
+						"urn:aaid:sc:VA7:45e85091-d355-5bc6-9ee7-0723216d578f"
+					],
+					"query": [
+						{
+							"key": "op",
+							"value": "merge"
+						}
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
