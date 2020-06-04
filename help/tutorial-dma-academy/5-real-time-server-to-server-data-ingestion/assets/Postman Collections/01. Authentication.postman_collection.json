@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "0e5ebfc2-4df2-4c66-be40-f8761228d837",
+		"name": "01. Authentication",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "INIT: Load Crypto Library for RS256",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "56b97740-2550-4f5d-ac04-46acf2dffbe1",
+						"exec": [
+							"postman.setGlobalVariable(\"jsrsasign-js\", responseBody);"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js",
+					"protocol": "http",
+					"host": [
+						"kjur",
+						"github",
+						"io"
+					],
+					"path": [
+						"jsrsasign",
+						"jsrsasign-latest-all-min.js"
+					]
+				},
+				"description": "Load the RSA-Sign Crypto LIbrary in a global environment variable\n\nSource: http://kjur.github.io/jsrsasign/jsrsasign-latest-all-min.js\n\nGithub: https://github.com/kjur/jsrsasign"
+			},
+			"response": []
+		},
+		{
+			"name": "Auth using JWT",
+			"event": [
+				{
+					"listen": "test",
+					"script": {
+						"id": "ae59a0ab-3533-4913-816e-40bd2f0f8f55",
+						"exec": [
+							"var json = JSON.parse(responseBody);",
+							"postman.setEnvironmentVariable(\"access_token\", json.access_token);"
+						],
+						"type": "text/javascript"
+					}
+				},
+				{
+					"listen": "prerequest",
+					"script": {
+						"id": "95be2a35-5cf5-423a-977e-8848d5de85d8",
+						"exec": [
+							"// https://github.com/kjur/jsrsasign/wiki/Tutorial-for-JWT-generation",
+							"",
+							"var navigator = {}; //fake a navigator object for the lib",
+							"var window = {}; //fake a window object for the lib",
+							"eval(postman.getGlobalVariable(\"jsrsasign-js\")); //import javascript jsrsasign",
+							"",
+							"",
+							"var header = {",
+							"\t\"alg\": \"RS256\"",
+							"};",
+							"",
+							"var data = {",
+							"\t\"exp\": Math.round(87000 + Date.now()/1000),",
+							"\t\"iss\": postman.getEnvironmentVariable(\"org_id\"),",
+							"\t\"sub\": postman.getEnvironmentVariable(\"tech_id\"),",
+							"\t\"aud\": \"https://\"+postman.getEnvironmentVariable(\"ims_host\")+\"/c/\"+postman.getEnvironmentVariable(\"client_id\")",
+							"};",
+							"",
+							"meta_scopes = postman.getEnvironmentVariable(\"meta_scopes\").split(',');",
+							"",
+							"meta_scopes.forEach(function(scope){",
+							"   var meta_scope = \"https://\"+postman.getEnvironmentVariable(\"ims_host\")+\"/s/\"+",
+							"                    scope;",
+							"             //   print(meta_scope);",
+							"    data[meta_scope] = true;",
+							"});",
+							"",
+							"var secret = postman.getEnvironmentVariable(\"pkey\");",
+							"",
+							"var sHeader = JSON.stringify(header);",
+							"var sPayload = JSON.stringify(data);",
+							"",
+							"var sJWT = KJUR.jws.JWS.sign(\"RS256\", sHeader, sPayload, secret);",
+							"",
+							"console.log(sPayload);",
+							"console.log(sJWT);",
+							"",
+							"postman.setEnvironmentVariable(\"jwt_token\", sJWT);",
+							"",
+							"pm.environment.unset(\"variable_key\");"
+						],
+						"type": "text/javascript"
+					}
+				}
+			],
+			"request": {
+				"auth": {
+					"type": "noauth"
+				},
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/x-www-form-urlencoded",
+						"type": "text",
+						"disabled": true
+					},
+					{
+						"key": "Accept",
+						"value": "application/json",
+						"disabled": true
+					}
+				],
+				"body": {
+					"mode": "formdata",
+					"formdata": [
+						{
+							"key": "client_id",
+							"value": "{{client_id}}",
+							"type": "text"
+						},
+						{
+							"key": "client_secret",
+							"value": "{{client_secret}}",
+							"type": "text"
+						},
+						{
+							"key": "jwt_token",
+							"value": "{{jwt_token}}",
+							"type": "text"
+						}
+					]
+				},
+				"url": {
+					"raw": "https://{{ims_host}}/ims/exchange/jwt/",
+					"protocol": "https",
+					"host": [
+						"{{ims_host}}"
+					],
+					"path": [
+						"ims",
+						"exchange",
+						"jwt",
+						""
+					]
+				}
+			},
+			"response": []
+		}
+	],
+	"protocolProfileBehavior": {}
+}
