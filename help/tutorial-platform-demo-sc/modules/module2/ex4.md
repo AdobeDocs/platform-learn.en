@@ -1,5 +1,5 @@
 ---
-title: Module 2, Exercise
+title: Module 1, Exercise
 description: 
 kt: 5342
 audience: 
@@ -7,133 +7,89 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 4 - Create a segment - UI
+# Exercise 4 - Use Launch and the Adobe Experience Platform Extension
 
-In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
+In this exercise, you'll use an existing Launch property and update 1 Launch Rule to capture customer behavior and send it to Adobe Experience Platform using the new Adobe Experience Platform extension.
 
-The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
+The URL to login to Launch is: [https://launch.adobe.com](https://launch.adobe.com)
 
 ## Story
 
-In the real-time customer profile, all profile data is shown alongside behavioral and transactional data and the view will also be enriched with existing segment memberships. The data that is shown here comes from anywhere, from any Adobe Solution to any external solution. This is the most powerful view of Adobe Experience Platform: the true Experience System of Record.
+After defining what the answer to the questions ```Who is this customer?``` and ```What does this customer do?``` should look like and creating a bucket to hold the data as answers, you should make sure that that data can be sent somewhere in real-time so that it can be consumed in real-time by Adobe Experience Platform.
+To send data to Adobe Experience Platform, you'll use Launch.
 
-Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+## Exercise 4.1 - Find your Launch Property
 
-After logging in, you'll land on the homepage of Adobe Experience Platform.
+Log in to Launch by going to this URL: [https://launch.adobe.com](https://launch.adobe.com)
 
-![Data Ingestion](./images/home.png)
+![Data Ingestion](./images/launchhome.png)
 
-Before you continue, make sure you are in the ``Production Prod (VA7)``-environment in the blue line on top of your screen.
+In the list of Launch Properties, you'll see a Launch property that is named ``AEP Launch Module 1``.
 
-In the menu on the left side, go to ```Segments```.
+Locate that Launch Property and click it to open it. After opening it, you'll see this:
 
-![Segmentation](./images/menuseg.png)
+![Data Ingestion](./images/launchprop.png)
 
-On this page, you can see an overview of all existing segments.
+## Exercise 4.2 - Explore the Adobe Experience Platform Extension for Launch
 
-![Segmentation](./images/segmentation.png)
+From the Launch menu, click on ``Extensions``. You'll see these 4 Extensions already configured. Let's have a quick look at the ``Adobe Experience Platform``-extension.
 
-Click on the ``Create Segment``-button to start creating a new segment.
+![Data Ingestion](./images/launchext.png)
 
-![Segmentation](./images/createnewsegment.png)
+The goal of this exercise is not to fully configure a Launch property, instead the goal is to zoom in on what needs to happen in Launch to easily ingest data into Adobe Experience Platform. Several extensions, data elements and rules are already prebuilt into your Launch property.
 
-Once you're in the new segment builder, you immediately notice the ```Attributes``` - menu option and the ```XDM Individual Profile```-reference.
+Click the ``Configure``-button on the Adobe Experience Platform - extension to open it.
 
-![Segmentation](./images/segmentationui.png)
+![Data Ingestion](./images/launchprope.png)
 
-Since XDM is the language that powers the experience business, XDM is also the foundation for the new segment builder. All data that is ingested in Platform should be mapped against XDM, and as such, all data becomes part of the same data model regardless of where that data comes from. This gives us a big advantage when building segments, as from this one segment builder UI, we can combine data from any origin in the same workflow. Segments built within this new, unified segmentation environment can be sent to solutions like Adobe Target, Adobe Campaign and Adobe Audience Manager for activation.
+What you see here is the DCS Streaming Endpoint. The DCS Streaming Endpoint is a ``door`` on the Adobe Pipeline. The Adobe Pipeline is built on Apache Kafka. With this Launch extension, data will be sent directly from the website onto the Adobe Pipeline in real-time.
 
-Let's build a segment which includes all **male** customers.
+This DCS Streaming Endpoint expects data to be modeled in the XDM Standard. Let's now have a look at how you can use Launch to map client-side data elements to an XDM-Schema, by making use of a rule.
 
-To get to the attribute gender, you need to understand and know XDM.
+## Exercise 4.3 - View Rule: All General Pages
 
-Gender is an attribute of Person, which can be found under Attributes. So to get there, you'll start by clicking on ``XDM Individual Profile``.
+In the Launch Menu, click on ```Rules```.
 
-![Segmentation](./images/person.png)
+In the ```Rules``` - screen, you'll find several already partially configured Launch Rules.
 
-From the XDM Individual Profile-window, you can select Person now.
+![Data Ingestion](./images/rulesov.png)
 
-![Segmentation](./images/gender.png)
+Open the ``All General Pages``-rule that sends a beacon to Adobe Experience Platform.
 
-And in Person, you can find the Gender-attribute. Drag the Gender-attribute on the segment builder.
+Click the ```All General Pages``` - rule to open it.
 
-Now you can choose the specific gender out of the pre-populated options. In this case, let's pick ``Male``.
+![Data Ingestion](./images/pppre.png)
 
-![Segmentation](./images/genderselection.png)
+As you can see, the Event and Condition to trigger the rule are already defined, and also 3 actions.
 
-After selecting ``Male``, you can get an estimation of the segment's population by pushing the ``Refresh Estimate`` - button. This is very helpful for a business audience, so that they understand the impact of certain attribute selections on segment size and addressable audience.
+Open the ```Action``` named ``Adobe Experience Platform - Send Beacon``.
 
-![Segmentation](./images/segmentpreview.png)
+You'll then see this:
 
-Next, we should refine our segment a bit. I'd like to build a segment out of all male customers that have viewed the product ``Proteus Fitness Jackshirt (Orange)``.
+![Launch Setup](./images/beaconconfig.png)
 
-To build out this segment, you need to add an Experience Event. You can find all Experience Events by clicking on the ```Events``` - icon in the ```Segments``` - menu bar.
+You can see that the dataset that is selected here is **AEP Demo - Website Interactions**, similar to the one you created in the previous exercise.
 
-![Segmentation](./images/findee.png)
+You can also see the Schema Mapping. In Schema Mapping, these fields have been connected to each other. The ``Source Value`` refers to a Data Element in Launch, while the ``Target Value`` refers to an XDM field, just like the fields you defined in the previous exercises.
 
-Next, you'll see the top level ``Experience Events``-node.
+| Source Value                 | Target Schema Field               |
+|:-------------------------------------------| :------------------ |
+|%pageHitId%|_id|
+|%pageName%|web.webPageDetails.name|
+|%pageTimeStamp%|timestamp|
+|%return1%|web.webPageDetails.pageViews.value|
+|%pageUserAgent%|environment.browserDetails.userAgent|
+|%customerLanguage%|environment.browserDetails.acceptLanguage|
+|%customerECID%|\<aepTenantId\>.identification.ecid|
 
-![Segmentation](./images/see.png)
+![Upgrade Launch](./images/appp_ok.png)
 
-To find customers that have visited the ```Proteus Fitness Jackshirt (Orange)``` - product, click on ```XDM ExperienceEvent```.
+Click ```Cancel``` to leave this configuration without changing it.
 
-![Segmentation](./images/comm_pv.png)
+This gives you an idea on how data is collected from a website and ingested into Adobe Experience Platform, in the XDM-language.
 
-Go to ```Product List Items```.
+Next Step: [Exercise 5 - Data Ingestion from Offline Sources](./ex5.md)
 
-![Segmentation](./images/eeweb.png)
-
-Select ```Name``` and drag and drop the ```Name```-object from the left ```Product List Items``` - menu onto the segment builder canvas into the ```Events```- section.
-
-![Segmentation](./images/eewebpdtlname.png)
-
-The comparison parameter should be ```equals``` and in the input field, enter ```Proteus Fitness Jackshirt (Orange)```.
-
-![Segmentation](./images/pv.png)
-
-Every time you add an element to the segment builder, you can click the ``Refresh Estimate``-button to get a new estimate of the population in your segment.
-
-So far, we've only used the UI to build our segment, but there's also a code-option to build a segment.
-When building a segment, we're actually composing a PQL query: Profile Query Language. To visualize the PQL code, you can click on the ``Code View`` switcher in the upper right corner of the segment builder.
-
-![Segmentation](./images/codeview.png)
-
-Now you can see the full PQL-statement:
-
-```pql
-person.gender in ["male"] and (select _Any1 from xEvent, _Any1__Product_list_items1 from _Any1.productListItems where _Any1__Product_list_items1.name.equals("Proteus Fitness Jackshirt (Orange)", false))
-```
-
-You can also preview a sample of the customer profiles that are part of this segment, by clicking on ``View Profiles``.
-
-![Segmentation](./images/previewprofiles.png)
-
-![Segmentation](./images/previewprofilesdtl.png)
-
-Finally, let's give your segment a name and save it.
-
-As a naming convention, we'll use:
-
-* all - Male customers with interest in Proteus Fitness Jackshirt (Orange) - ldap
-
-Please replace **ldap** with your ldap.
-
-![Segmentation](./images/segmentname.png)
-
-It's also important to note the ``Streaming`` - switch.
-
-![Segmentation](./images/streaming.png)
-
-By enabling the ``Streaming``-switch, your segment will qualify in real-time and will be available for activation in real-time.
-
-Then, click the ```Save``` - button to save your segment, after which you'll be taken back to the Segment overview - page.
-
-![Segmentation](./images/savedsegment.png)
-
-Let's now continue to the next exercise and build a segment through the API.
-
-Next Step: [Exercise 5 - Create a segment - API](./ex5.md)
-
-[Go Back to Foundation 2](./README.md)
+[Go Back to Module 1](./README.md)
 
 [Go Back to All Modules](../../README.md)

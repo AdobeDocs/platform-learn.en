@@ -1,5 +1,5 @@
 ---
-title: Module 2, Exercise
+title: Module 1, Exercise
 description: 
 kt: 5342
 audience: 
@@ -7,123 +7,293 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 5 - Create a segment - API
+# Exercise 5: Data Ingestion from Offline Sources
 
-In this exercise, you'll use Postman and Adobe I/O to create a segment and store the results of that segment as a dataset, by making use of Adobe Experience Platform's API's.
+In this exercise, the goal is to onboard external data like CRM Data in Platform.
 
-## Story
+## Learning Objectives
 
-In the real-time customer profile, all profile data is shown alongside behavioral and transactional data and the view will also be enriched with existing segment memberships. The data that is shown here comes from anywhere, from any Adobe Solution to any external solution. This is the most powerful view of Adobe Experience Platform: the true Experience System of Record.
+* Learn how to generate your demo data
+* Learn how to ingest CSV
+* Learn how to use the web UI for data ingestion through Workflows
+* Understand the data governance features of Experience Platform
 
-## Exercise 5.1 - Create a segment through the Platform API
+## Lab Resources
 
-Go to Postman.
+* Mockaroo UI: [https://www.mockaroo.com/](https://www.mockaroo.com/)
+* Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
 
-Locate the collection: ```_Adobe Experience Platform Enablement```. In this collection, you'll see a folder ```2. Segmentation```. We'll be using these calls in this exercise.
+## Lab Tasks
 
-![Segmentation](./images/pmdtl.png)
+* Create a CSV file with demo date. Ingest the CSV file in the Experience Platform UI by making use of the available workflows.
+* Understand data governance options in Experience Platform UI
 
-What we'll do next is follow all the required steps to create a segment through the API. We're going to build a simple segment: "**ldap** - All Female Customers".
+## Exercise 5.1 - Create your CRM Dataset through a data generator tool
 
-### Step 1 - Create a Segment Definition
+For this exercise you need 1000 sample lines of CRM Data.
 
-Click on the call named ```Step 1 - Profile: Create A Segment Definition```.
+Open the Mockaroo Template by going to [https://www.mockaroo.com/12674210](https://www.mockaroo.com/12674210).
 
-![Segmentation](./images/s1_call.png)
+![Data Ingestion](./images/mockaroo.png)
 
-Go the the ```Body``` section of this call.
+On the template, you'll notice the following fields:
 
-![Segmentation](./images/s1_body.png)
+* id
+* first_name
+* last_name
+* email
+* gender
+* birthDate
+* home_latitude
+* home_longitude
+* country_code
+* city
+* country
 
-In the ```Body``` of this call, you'll see the following:
+All these fields have been defined to produce data that is compatible with Platform.
 
-![Segmentation](./images/s1_bodydtl.png)
+![Data Ingestion](./images/dd.png)
 
-The language used for this call is called ```PQL```: Profile Query Language.
-You can find more info and documentation about PQL [here](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/unified_profile_architectural_overview/unified_profile_pql.md).
+To generate your CSV-file, click the ``Download Data``-button which will give you a CSV-file with 1000 lines of demo-data.
 
-Attention: please update the variable **name** in the below call by replacing **ldap** with your specific **ldap**.
+Open your CSV-file in Microsoft Excel to visualize its contents.
 
-```json
-{
-    "name" : "ldap - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "ldap",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
+![Data Ingestion](./images/excel.png)
 
-After adding your specific **ldap**, the Body should look similar to this:
+With your CSV-file ready, you can proceed with mapping it against XDM.
 
-```json
-{
-    "name" : "vangeluw - API - All Female Customer",
-    "expression" : {"type":"PQL", "format":"pql/json", "value":"{\"nodeType\":\"fnApply\",\"fnName\":\"in\",\"params\":[{\"nodeType\":\"fieldLookup\",\"fieldName\":\"gender\",\"object\":{\"nodeType\":\"fieldLookup\",\"fieldName\":\"person\",\"object\":{\"nodeType\":\"literal\",\"literalType\":\"XDMObject\",\"value\":\"profile\"}}},{\"literalType\":\"List\",\"nodeType\":\"literal\",\"value\":[\"female\"]}]}"},
-    "createdBy": "vangeluw",
-    "schema" : { "name" : "_xdm.context.profile"},
-    "ttlInDays" : 90
-}
-```
+## Exercise 5.2 - Verify the CRM Onboarding Dataset in Adobe Experience Platform
 
-Now, click the blue ```Send``` - button to create the segment and view the results of that.
+Open [Adobe Experience Platform
+](https://platform.adobe.com) and go to ``Datasets``.
 
-![Segmentation](./images/s1_bodydtl_results.png)
+Before you continue, make sure you are in the ``PRODUCTION Prod``-environment in the blue line on top of your screen.
 
-After this step, you can view your Segment Definition in the Platform UI. To check this, log in to Platform and go to [https://platform.adobe.com/segment](https://platform.adobe.com/segment).
+We're going to use a shared dataset based in this enablement. The shared dataset has been created already and is called ``AEP Demo - CRM Onboarding``.
 
-![Segmentation](./images/s1_segmentdef.png)
+![Data Ingestion](./images/emeacrm.png)
 
-### Step 2 - Create a Segment POST Job
+Open the dataset ``AEP Demo - CRM Onboarding``.
 
-In the previous exercise, you've created a Streaming Segment. A Streaming Segment continuously evaluates qualifications in real-time. What you're doing here, is creating a Batch Segment. Batch Segments definitions don't mean that the segment has actually run, it only gives you a preview of what the segment could look like in terms of qualifications. At this moment, nobody qualifies for this segment. To make people qualify, the Batch Segment needs to run, which is exactly what we'll do here.
+![Data Ingestion](./images/emeacrmoverview.png)
 
-Let's now POST a Segment Job.
+On the overview screen, you can see 3 main pieces of information.
 
-Go to Postman.
+![Data Ingestion](./images/dashboard.png)
 
-![Segmentation](./images/pmdtl.png)
+First of all, the Dataset Activity dashboard shows the total number of CRM records in the dataset and the ingested batches and their status
 
-In your Postman-collection, click on the call named ```Step 2 - POST Segment Job``` to open it.
+![Data Ingestion](./images/batchids.png)
 
-![Segmentation](./images/s2_call.png)
+Second, by scrolling down on the page you can check when batches of data were ingested, how many records were onboarded and also, whether or not the batch was successfully onboarded. The ``Batch ID`` is the identifier for a specific batch job, and the ``Batch ID`` is important as it can be used for troubleshooting why a specific batch was not successfully onboarded. More on that in Enablement Module 2.
 
-Click on the blue ```Send``` - button.
+![Data Ingestion](./images/datasetsettings.png)
 
-You should see a similar result:
+Lastly, the Dataset Info tab shows important information like the Dataset ID (again, important from a troubleshooting perspective), the Dataset's Name and whether the dataset was enabled for Unified Profile and Streaming Ingestion.
 
-![Segmentation](./images/s2_call_response.png)
+![Data Ingestion](./images/ds_ups_link.png)
 
-This Segment Job is now running, and this may take some time. In Step 3, you'll be able to check the status of this job.
+Enabling a dataset for Streaming Ingestion can currently only be done through the API's.
 
-### Step 3 - GET Segment Job status
+The most important setting here is the link between the dataset and the Schema. The Schema defines what data can be ingested and how that data should look like.
 
-Go to Postman.
+In this case, we're using the ``AEP Demo - CRM Onboarding Schema``, which is mapped against the class of ``Profile`` and has implemented extensions, also called mixins.
 
-![Segmentation](./images/pmdtl.png)
+![Data Ingestion](./images/ds_schemalink.png)
 
-In your Postman-collection, click on the call named ```Step 3 - GET Segment Job status```.
+By clicking on the name of the schema, you're taken to the Schema overview were you can see all the fields that have been activated for this schema.
 
-![Segmentation](./images/s3_call.png)
+![Data Ingestion](./images/schemads.png)
 
-Click on the blue ```Send``` - button.
+Every schema needs to have a custom, primary descriptor defined. In the case of our CRM dataset, the schema has defined that the field ``email`` should be the primary identifier. If you want to create a schema and link it to the Unified Profile, you need to define a custom Mixin that refers to your primary descriptor.
 
-You should see a similar result:
+![Data Ingestion](./images/schema_descriptor.png)
 
-![Segmentation](./images/s3_status.png)
+In the above screenshot, you can see that our descriptor is located in ```<aepTenantId>.identification.emailId```, which is set as the Primary Identifier, linked to the namespace of ``email``.
 
-In this example, the ```status``` of the job is set to ```QUEUED```.
+Every schema and as such, every dataset that should be used in the Unified Profile should have 1 Primary identifier. This Primary Identifier is the identifier user by the brand for a customer in that dataset. In the case of a CRM dataset it might be the email-address or the CRM ID, in the case of a Call Center dataset it might be the mobile number of a customer.
 
-Repeat this call by clicking the blue ```Send``` - button every couple of minutes until the ```status``` is set to ```SUCCEEDED```.
+It is best practice to create a separate, specific schema for every dataset and to set the descriptor for every dataset specifically to match how the current solutions used by the brand operate.
 
-![Segmentation](./images/s3_status_succeeded.png)
+## Exercise 5.3 - Using a workflow to map a CSV file to an XDM Schema
 
-Once the status is ```SUCCEEDED```, your segment job has run and customers are now qualifying for the segment.
+The goal of this exercise is to onboard CRM data in Platform. All the data that is ingested in Platform should be mapped against the specific XDM Schema. What you currently have is a CSV dataset with 1000 lines on the one side, and a dataset that is linked to a schema on the other side. To load that CSV file in that dataset, a mapping exercise needs to take place. To facilitate this mapping exercise, we have ``Workflows`` available in Platform.
 
-Congrats, you've successfully completed the Segmentation exercise. Let's now have a look how the Real-Time Customer Profile can be activated across the enterprise.
+![Data Ingestion](./images/workflows.png)
 
-Next Step: [Exercise 6 - See you Real-time Customer Profile in action in the Call Center](./ex6.md)
+The workflow that we'll use here, is the workflow named ``Map CSV to XDM Schema`` in the Data Ingestion menu.
 
-[Go Back to Foundation 2](./README.md)
+Click the ``Map CSV to XDM Schema``-button.
+
+![Data Ingestion](./images/mapcsvxdm.png)
+
+Click ``Launch`` to start the process.
+
+![Data Ingestion](./images/launchprocess.png)
+
+Drag & Drop your CSV-file or click ``Browse`` and navigate on your computer to your desktop and select your CSV-file.
+
+![Data Ingestion](./images/dragdrop.png)
+
+After selecting your CSV-file it will upload immediately and you will see a preview of your file within seconds.
+
+![Data Ingestion](./images/previewcsv.png)
+
+Click ``Next`` to go to the next step. It can take a few seconds while the file is processed completely.
+
+![Data Ingestion](./images/next.png)
+
+On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select the ``AEP Demo - CRM Onboarding``-dataset as indicated below.
+
+![Data Ingestion](./images/datasetselection.png)
+
+Click ``Next`` to go to the next step.
+
+![Data Ingestion](./images/next.png)
+
+It's now time to map our CSV Column Headers with an XDM-property in our ``AEP Demo - CRM Onboarding Schema``.
+Platform has already done some guessing for us, by trying to link the Source Attributes with the Target Schema Fields.
+
+![Data Ingestion](./images/mapschema.png)
+
+First of all, we need to add the required mapping for the descriptor field. The descriptor field is a required field in this workflow and expects you to indicate what the main identifier is of the file you're uploading.
+
+Selecting the descriptor is actually the most important thing: you'll be defining the custom, brand-specific, primary identifier. Within Platform-context, we refer to this custom, brand-specific, primary identifier as the descriptor. The descriptor is a requirement for this data to be onboarded. Without the presence of the descriptor, the ingestion of this CSV-file will fail.
+Our descriptor for the ``AEP Demo - CRM Onboarding``-dataset is the ``email`` as it's the unique identifier for our dataset.
+In our case, based on the selection of the dataset and the schema that is linked to the dataset, the required Target Schema Field in XDM is ``<aepTenantId>.identification.emailId``. You need to map the ``email``-field from your CSV file as the source attribute for this required Target Schema Field.
+
+To do this, click the ``Add new mapping``-button.
+
+![Data Ingestion](./images/reqmapping.png)
+
+In the Source Field, click the ``arrow``-icon.
+
+![Data Ingestion](./images/emptysource.png)
+
+In the popup, select the field ``email``.
+
+![Data Ingestion](./images/emptysourcepopup.png)
+
+You'll then see this. Click the ``schema``-icon.
+
+![Data Ingestion](./images/emptytarget.png)
+
+In the popup, select the field ``<aepTenantId>.identification.emailId``.
+
+![Data Ingestion](./images/emptytargetpopup.png)
+
+The result should look like this:
+
+![Data Ingestion](./images/filledsource.png)
+
+For the Schema Mappings, Platform has tried to link fields together already. However, not all proposals of mapping are correct.
+
+![Data Ingestion](./images/schemamap.png)
+
+For the Source Attribute ``email``, the Target Schema Field should be ``personalEmail.address``. You can either enter ``personalEmail.address`` in the field, or you can click the icon to visually locate the correct property in the ``AEP Demo - CRM Onboarding Schema``.
+
+![Data Ingestion](./images/schema_icon.png)
+
+![Data Ingestion](./images/schema_viz.png)
+
+You also need to update 2 fields: ``home_latitude`` and ``home_longitude`` haven't been filled out by the Mapper tool.
+
+Locate the ``home_latitude``-line.
+
+![Data Ingestion](./images/newmapfield.png)
+
+Click the ``schema``-icon:
+
+![Data Ingestion](./images/schema_icon.png)
+
+Locate the property ``homeAddress._schema.latitude`` by making use of the visual mapping tool.
+
+![Data Ingestion](./images/schema_lat.png)
+
+Click ``Select`` to confirm your choice. You should then see this:
+
+![Data Ingestion](./images/schema_lat_result.png)
+
+Repeat the process for the Source Field ``home_longitude``, linking it to the Target Field of ``homeAddress._schema.longitude`` so that you have this as a result:
+
+![Data Ingestion](./images/schema_long_result.png)
+
+And this should be the overall result of the mapping exercise:
+
+![Data Ingestion](./images/overall.png)
+
+Click ``Next`` to go to the next step.
+
+![Data Ingestion](./images/next.png)
+
+On the next screen you'll see an overview of what you've done and you can start the ingestion.
+
+![Data Ingestion](./images/mapoverview.png)
+
+Click the ``Ingest``-button.
+
+![Data Ingestion](./images/ingest.png)
+
+Ingestion starts and will be running for a number of seconds/minutes (depending on file-size).
+
+![Data Ingestion](./images/ingest_running.png)
+
+After a couple of minutes, the file will be successfully ingested.
+
+![Data Ingestion](./images/success.png)
+
+Click the ``Finish``-button to finish the workflow.
+
+![Data Ingestion](./images/finish.png)
+
+After clicking ``Finish``, you're taken to your dataset.
+
+![Data Ingestion](./images/ingestdataset.png)
+
+On the dataset, you'll see a Batch ID that was ingested just now, with 1000 records ingested and a status of ``Success``.
+
+![Data Ingestion](./images/batchsuccess.png)
+
+Click on the ``Preview Dataset``- button to get a quick view of a small sample of the dataset to ensure that the loaded data is correct.
+
+![Data Ingestion](./images/preview.png)
+
+![Data Ingestion](./images/previewdata.png)
+
+Once data is loaded, we can define the correct data governance approach for our dataset.
+
+## Exercise 5.4 - Adding data governance to your dataset
+
+![Data Ingestion](./images/ingestdataset.png)
+
+Now that our customer data is ingested, we want to make sure that this dataset is properly governed for usage and export control. Click on the ``Data Governance`` tab and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
+
+You can find more info on the different labels and how they will be enforced in the future through the policy framework on this link: [https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html)
+
+![Data Ingestion](./images/dsgovernance.png)
+
+Let's restrict identity data for the entire dataset. Hover over your dataset name, and click the Pencil icon to edit the settings.
+
+![Data Ingestion](./images/pencil.png)
+
+Go to ``Identity Data`` and you'll see that the ``I2`` option is checked - this will assume that all pieces of information in this dataset are _at least_ indirectly identifiable to the person.
+
+![Data Ingestion](./images/identity.png)
+
+Click ``Save Changes`` and observe that ``I2`` is now set for all data fields in the dataset.
+
+You can also set these flags for individual data fields - for example, the ``firstName`` field is likely to be classified as an ``I1`` level for directly identifiable information.
+
+Select the field ``firstName`` by checking the checkbox and click on ``Edit Governance Labels`` in the upper right corner of your screen.
+
+![Data Ingestion](./images/editfirstname.png)
+
+Go to ``Identity Data`` and you'll see that the ``I2`` option is already checked (inherited from the dataset). The field firstName also has a field-specific configuration and is set as ``I1 - Directly Identifiable Data``.
+
+![Data Ingestion](./images/fndii.png)
+
+With this, you've now successfully ingested and classified CRM Data in Adobe Experience Platform.
+
+[Go Back to Module 1](./README.md)
 
 [Go Back to All Modules](../../README.md)
