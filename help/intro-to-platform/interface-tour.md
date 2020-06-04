@@ -7,6 +7,7 @@ kt: 4821
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32792.jpg
 ---
 
 # Interface Tour of Experience Platform

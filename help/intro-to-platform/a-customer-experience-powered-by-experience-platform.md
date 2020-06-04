@@ -7,6 +7,7 @@ kt: 4339
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 27361.jpg
 ---
 
 # A Customer Experience Powered by Experience Platform
