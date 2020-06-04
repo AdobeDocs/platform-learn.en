@@ -145,7 +145,7 @@ Find out more about visualizations using Analysis Workspace here:
 * [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 * [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Product Interaction funnel, from viewing to buying.
+## Product Interaction funnel, from viewing to buying
 
 There are many ways to solve this question. One of them is to use Product Interaction Type and use it on a freeform table. Another way is to use a ``Fallout Visualization``. Let's use the last one as we want to visualize and analyze at the same time.
 
@@ -205,7 +205,7 @@ Change the ``Product Interaction Type`` by ``Page Name``, in the new freeform ta
 
 ![demo](./images/module135/34.png)
 
-## What do people do on the site before reaching the "Cancel Service" page?
+## What do people do on the site before reaching the "Cancel Service" page
 
 Again, there are many ways to perform this analysis. However, let's use the flow analysis to start the discovery part.
 
@@ -271,7 +271,7 @@ You'll then see this:
 
 As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion?
 
-## How are customers with a Positive Callcenter contact performing against the main KPIs?
+## How are customers with a Positive Callcenter contact performing against the main KPIs
 
 Let's first segment the data to get only users with ``positive`` calls. In CJA, Segments are called Filters. Go to filters within the component area (on the left-side) and click ``+``.
 
