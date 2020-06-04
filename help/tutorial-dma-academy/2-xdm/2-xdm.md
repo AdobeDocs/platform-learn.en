@@ -1,67 +1,4 @@
-
-<p style="color: red; font-weight: bold">>>>>>  gd2md-html alert:  ERRORs: 0; WARNINGs: 0; ALERTS: 42.</p>
-<ul style="color: red; font-weight: bold"><li>See top comment block for details on ERRORs and WARNINGs. <li>In the converted Markdown or HTML, search for inline alerts that start with >>>>>  gd2md-html alert:  for specific instances that need correction.</ul>
-
-<p style="color: red; font-weight: bold">Links to alert messages:</p><a href="#gdcalert1">alert1</a>
-<a href="#gdcalert2">alert2</a>
-<a href="#gdcalert3">alert3</a>
-<a href="#gdcalert4">alert4</a>
-<a href="#gdcalert5">alert5</a>
-<a href="#gdcalert6">alert6</a>
-<a href="#gdcalert7">alert7</a>
-<a href="#gdcalert8">alert8</a>
-<a href="#gdcalert9">alert9</a>
-<a href="#gdcalert10">alert10</a>
-<a href="#gdcalert11">alert11</a>
-<a href="#gdcalert12">alert12</a>
-<a href="#gdcalert13">alert13</a>
-<a href="#gdcalert14">alert14</a>
-<a href="#gdcalert15">alert15</a>
-<a href="#gdcalert16">alert16</a>
-<a href="#gdcalert17">alert17</a>
-<a href="#gdcalert18">alert18</a>
-<a href="#gdcalert19">alert19</a>
-<a href="#gdcalert20">alert20</a>
-<a href="#gdcalert21">alert21</a>
-<a href="#gdcalert22">alert22</a>
-<a href="#gdcalert23">alert23</a>
-<a href="#gdcalert24">alert24</a>
-<a href="#gdcalert25">alert25</a>
-<a href="#gdcalert26">alert26</a>
-<a href="#gdcalert27">alert27</a>
-<a href="#gdcalert28">alert28</a>
-<a href="#gdcalert29">alert29</a>
-<a href="#gdcalert30">alert30</a>
-<a href="#gdcalert31">alert31</a>
-<a href="#gdcalert32">alert32</a>
-<a href="#gdcalert33">alert33</a>
-<a href="#gdcalert34">alert34</a>
-<a href="#gdcalert35">alert35</a>
-<a href="#gdcalert36">alert36</a>
-<a href="#gdcalert37">alert37</a>
-<a href="#gdcalert38">alert38</a>
-<a href="#gdcalert39">alert39</a>
-<a href="#gdcalert40">alert40</a>
-<a href="#gdcalert41">alert41</a>
-<a href="#gdcalert42">alert42</a>
-
-<p style="color: red; font-weight: bold">>>>>> PLEASE check and correct alert issues and delete this message and the inline alerts.<hr></p>
-
-
-
-## Adobe Experience Platform: 
-
-
-## Hands-on Technical Exercise: XDM
-
-V 1.0
-
-Contents
-
-
-[TOC]
-
-
+# Adobe Experience Platform: Hands-on Technical Exercise: XDM
 
 ## Experience Data Model (XDM) Criticality
 
@@ -76,10 +13,10 @@ Before starting into this exercise, recall that an Adobe Experience Platform Rea
 
 
 
-*   New Loyalty Program Database
-*   Customer Relationship Management (CRM) database
-*   Live Event/Physical Booth Purchases (when customers self-identify with loyalty ID)
-*   Web data from the Luma website
+* New Loyalty Program Database
+* Customer Relationship Management (CRM) database
+* Live Event/Physical Booth Purchases (when customers self-identify with loyalty ID)
+* Web data from the Luma website
 
 Each of these sources of data have different fields and as well as key identifiers in them that will allow Platform to create a single, unified profile.
 
@@ -87,8 +24,8 @@ Lastly, and as always, setting up the technology is not the point. Luma is tryin
 
 
 
-*   Sponsoring live events (like races, wellness expos, and the like)
-*   Having a loyalty program
+* Sponsoring live events (like races, wellness expos, and the like)
+* Having a loyalty program
 
 A correctly built XDM schema will account for these data sources and then allow Platform-enabled application services (like Customer Journey Analytics) to help Luma make that data-driven determination. It will also enable Luma to even further activate that data for other marketing activities made possible by other application services like Real-Time Customer Data Platform (RTCDP) and Customer Journey Orchestration.
 
@@ -97,17 +34,11 @@ A correctly built XDM schema will account for these data sources and then allow 
 
 XDM provides open, standardized, and extensible schemas to represent an organization’s customer data model to achieve an immediate, semantic understanding and actioning of the data as soon as it lands in Adobe Experience Platform. All customer data is transformed into conformant schemas before being written to Experience Platform.
 
-This exercise will introduce you to XDM data modelling structures and terminology such as Schema, Class, Mixin, and Datatype while you create a schema to meet Luma's strategic objectives. This diagram outlines the basic relationship between these structures that will become even more clear as you progress through the exercise:
-
-
-
-<p id="gdcalert1" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image1.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert2">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
+This exercise will introduce you to XDM data modeling structures and terminology such as Schema, Class, Mixin, and Datatype while you create a schema to meet Luma's strategic objectives. This diagram outlines the basic relationship between these structures that will become even more clear as you progress through the exercise:
 
 ![alt_text](assets/image001.png "image_tooltip")
 
-
-**Note:** The term datatype in this diagram can be confusing. A potentially better term would be field. As with a database field, XDM fields have a data type (string, long, double, date, and so forth). So, while the diagram is technically correct, it also helps to think of these data types as fields that contain data.  
+>[!NOTE] The term datatype in this diagram can be confusing. A potentially better term would be field. As with a database field, XDM fields have a data type (string, long, double, date, and so forth). So, while the diagram is technically correct, it also helps to think of these data types as fields that contain data.  
 
  
 
@@ -116,9 +47,7 @@ This exercise will introduce you to XDM data modelling structures and terminolog
 
 Experience Platform uses schemas to describe the structure of data across systems in a consistent and reusable way. Before data can be ingested into Platform, a schema must be composed to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more mixins. As such, you could say:
 
- 
-
-**XDM Schema = Class + Mixin(s)**
+ **XDM Schema = Class + Mixin(s)**
 
 
 ### Data Behavior Types and Classes
@@ -127,10 +56,8 @@ Experience Platform uses schemas to describe the structure of data across system
 
 Data intended for use in Experience Platform is grouped into two behavior types:
 
-
-
-*   **Record data:** Provides information about the attributes of a subject. A subject could be an organization or an individual. This would be analogous to a noun (person, place, or thing) in the English language.
-*   **Time series data:** Provides a snapshot of the system at the time an action was taken either directly or indirectly by a subject. To use language as an analogy, time series data would be a verb, or the action that a noun (your subject) does.
+* **Record data:** Provides information about the attributes of a subject. A subject could be an organization or an individual. This would be analogous to a noun (person, place, or thing) in the English language.
+* **Time series data:** Provides a snapshot of the system at the time an action was taken either directly or indirectly by a subject. To use language as an analogy, time series data would be a verb, or the action that a noun (your subject) does.
 
 **Class:**
 
@@ -158,7 +85,7 @@ Since XDM creation is really a one-time event with adjustments being done along 
 As is usually the case, there's a lot more to learn than we have time to cover in this exercise. For more detailed information on XDM schema and its components, see the official [documentation](https://www.adobe.io/apis/experienceplatform/home/xdm/xdmservices.html#!api-specification/markdown/narrative/technical_overview/schema_registry/schema_composition/schema_composition.md) with a special callout to the [API documentation](https://docs.adobe.com/content/help/en/experience-platform/xdm/api/getting-started.html). 
 
 
-## Exercise Overview	
+## Exercise Overview
 
 The XDM schemas you're going to build in this exercise, and then utilize in later exercises, will account for the four sources of Luma data and also set Luma up for success later on. We need to ingest these data sources into Platform and, in a later exercise, build a Unified profile and perform segmentation on it. Based on best practices we will create two profile schemas (CRM & Loyalty) and two Experience Event Schema (Purchase events and website data collection)
 
@@ -173,26 +100,26 @@ We'll be starting with the CRM schema because we can build it quickly using a fe
 
 
 
-*   Id
-*   crmId
-*   person_first_name
-*   person_last_name
-*   birthdate
-*   gender
-*   work_country
-*   work_countryCode
-*   work_postalCode
-*   work_Street
-*   work_email
-*   home_address_city
-*   home_address_country
-*   home_address_country_code
-*   home_address_country_street
-*   home_address_country_label
-*   home_address_country_state
-*   home_phone
-*   mobile_phone
-*   personalEmail
+* Id
+* crmId
+* person_first_name
+* person_last_name
+* birthdate
+* gender
+* work_country
+* work_countryCode
+* work_postalCode
+* work_Street
+* work_email
+* home_address_city
+* home_address_country
+* home_address_country_code
+* home_address_country_street
+* home_address_country_label
+* home_address_country_state
+* home_phone
+* mobile_phone
+* personalEmail
 
    
 
@@ -205,42 +132,18 @@ As you go through these steps, see if you can determine which CRM fields match t
 
 1. Log into [https://platform.adobe.com](https://platform.adobe.com) with your Adobe ID and ensure that you are in your assigned Experience Cloud org and in the sandbox you've created.
 2. Click on the **Schemas** tab in the left rail followed by a click on **Create Schema** in the upper right.
-
-    
-
-<p id="gdcalert2" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image2.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert3">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image002.png "image_tooltip")
 
 
 3. On the resulting screen you will see a **Schema Properties** in the right rail. Name your schema** **by entering **CRM Schema **into the **Display name** field.  Give a proper description as well in the **Description** field:
+![alt_text](assets/image003.png "image_tooltip
 
-    
-
-<p id="gdcalert3" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image3.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert4">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/image003.png "image_tooltip")
-
-
-
-        **Note:** All the schema columns are case sensitive. Please make sure you follow the naming suggestion exactly or you might face errors while ingesting data in next exercise.
+        >[!NOTE] All the schema columns are case sensitive. Please make sure you follow the naming suggestion exactly or you might face errors while ingesting data in next exercise.
 
 4. We now need to assign a class to this schema. Click **Assign **from the **Composition** column
-
-<p id="gdcalert4" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image4.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert5">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image004.png "image_tooltip")
 
 5. On the **Assign class** overlay, select the **XDM Individual Profile** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
-
-    
-
-<p id="gdcalert5" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image5.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert6">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image005.png "image_tooltip")
 
 
@@ -254,51 +157,24 @@ As you go through these steps, see if you can determine which CRM fields match t
 The next step is to identify which mixins contain the XDM fields that map to the fields of data that are going to be onboarded into Platform. It's in this process that you'll determine what standard mixins can be used vs which ones will have to be custom created.
 
 
-#### **Standard Profile Mixins **
+#### Standard Profile Mixins
 
 As mentioned at the first of this section, CRM data is pretty generic across Adobe's clients so a few of the standard mixins should give us a good start. 
 
-
-
 1. Click on **Add** in the **Mixins** section as shown below:
-
-    
-
-<p id="gdcalert6" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image6.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert7">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image006.png "image_tooltip")
 
 
 2. On the **Add mixin** overlay, ensure that **Use existing mixin** is selected then locate and select the **Profile work details** mixin (you will likely need to scroll down):
-
-    
-
-<p id="gdcalert7" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image7.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert8">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image007.png "image_tooltip")
 
 
 3. Once you’ve selected **Profile work details**, click the **Add mixin** button. You'll see the schema now has the fields of the mixin added:
-
-    
-
-<p id="gdcalert8" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image8.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert9">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image008.png "image_tooltip")
 
 
 4. Repeat the previous steps to add the **Profile person details** and** Profile personal details** mixins (notice one is person and the other is person**<span style="text-decoration:underline;">al</span>**). When finished, your schema should look like this:
-
-    
-
-<p id="gdcalert9" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image9.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert10">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image009.png "image_tooltip")
-**<span style="text-decoration:underline;"> </span>**
 
 5. Click **Save** in the upper right corner to save your schema with the work done thus far.
 
@@ -313,34 +189,15 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 
 
-1. Click **Add **to add another mixin
+1. Click **Add** to add another mixin
 2. On the **Add mixin** overlay, select the **Create new mixin** radio button. Name the mixin** Identities** and give it a proper description:
-
-    
-
-<p id="gdcalert10" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image10.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert11">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image010.png "image_tooltip")
-** **
 
 3. Once you've named your new custom mixin, click the **Add Mixin **button and you'll see it added to the schema:
-
-     
-
-<p id="gdcalert11" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image11.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert12">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image011.png "image_tooltip")
 
 
 4. Select the newly added **Identities** mixin and you'll see new **Add field** buttons appear. Click the one by the root CRM Schema node and you'll see a **New field** node appear (because the identities mixin was selected, this new field will belong to the identities mixin):
-
-    
-
-<p id="gdcalert12" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image12.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert13">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image012.png "image_tooltip")
 
 
@@ -352,12 +209,6 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 5. If not already done, select the **New field** node and the right pane will have the field properties for that node. 
 6. In the **Field name** and **Display name** fields, enter the text **identification **and set the **Type** dropdown to **Object:**
-
-    
-
-<p id="gdcalert13" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image13.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert14">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image013.png "image_tooltip")
 
 
@@ -365,75 +216,24 @@ There are also a few reasons to create a custom identity mixin. One is so it can
     **Note:** Since we are building a custom mixin that we want to reuse, we create a parent object for identities, with those identity fields grouped under it. 
 
 7. Click **Apply** and you'll see your schema update with the new name and the field is now turned into an object with the Add Field button now visible:
-
-     
-
-<p id="gdcalert14" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image14.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert15">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image014.png "image_tooltip")
 
 
-8. Start adding the specific identity fields we want by clicking **Add Field **next to the **identification** object.
-9. Like before, a new field node will appear with the properties in the right panel. Name the field **crmid** with a display name of **CRM ID.** Set the type to **String. **Leave all the other fields as their defaults then scroll down to the bottom and click **Apply**. You should then see your new identity field:
-
-     
-
-<p id="gdcalert15" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image15.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert16">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
+8. Start adding the specific identity fields we want by clicking **Add Field** next to the **identification** object.
+9. Like before, a new field node will appear with the properties in the right panel. Name the field **crmid** with a display name of **CRM ID.** Set the type to **String.** Leave all the other fields as their defaults then scroll down to the bottom and click **Apply**. You should then see your new identity field:
 ![alt_text](assets/image015.png "image_tooltip")
 
 
 10. Create three more identity fields as outlined in the table below. 
 
-<table>
-  <tr>
-   <td>
-<strong>Field Name</strong>
-   </td>
-   <td><strong>Display Name</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>declaredId
-   </td>
-   <td>Declared Id
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>emailId
-   </td>
-   <td>Email Id
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>phoneNbr
-   </td>
-   <td>Phone Number
-   </td>
-   <td>String
-   </td>
-  </tr>
-</table>
-
-
+    | Field Name | Display Name | Type |
+    |---|---|---|
+    | declaredId | Declared Id | String |
+    | emailId | Email Id | String |
+    | phoneNbr | Phone Number | String | 
 
     When finished, your full identity mixin should look like this:
-
-
-     
-
-<p id="gdcalert16" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image16.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert17">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/image016.png "image_tooltip")
+    ![alt_text](assets/image016.png "image_tooltip")
 
 
 
@@ -443,33 +243,17 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 11. With your custom identity mixin created, you're ready to save your entire schema. Click **Save** in the upper right corner. 
 12. Let's take a moment and discuss the advantages and drawback of creating a custom identity mixin like we just did. Expand the **homePhone** node and notice that there is a **number** field that could also work to contain a phone number, yet we added a **phoneNbr** field in the identities mixin.
-
-    
-
-<p id="gdcalert17" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image17.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert18">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image017.png "image_tooltip")
-
-
 
     This is example of what was mentioned in the opening paragraphs of this sub section around whether or not building a custom identity mixin is a good practice. We could simply mark the homePhone > number node as an identity field (we'll be marking fields as identity fields in a later exercise). There is also a mobilePhone > number field. We could mark them both as identity fields. However, having a dedicated identity mixin makes it easy to be reused in other schemas (you'll see that shortly). Additionally, some people don't have a home phone number while others don't have a mobile phone number. As such, having just a primary phone number in an identity schema that can be either a home or mobile phone and yet still ben an identity may still come in handy
 
-
     One of the downsides of having a phone number in an identities node is that it's going to seem out of place when there is a duplicate phone number(s) in other nodes. It also duplicates a field and so we have the potential of duplicate data getting out of sync and clients gettings confused as to which field to use and when.  While it's not a technical problem, it is an education and understanding problem that will need to be understood by our clients. 
-
 
     This, again, brings to light the point made earlier. There is no perfect, one-way to do XDM. This exercise documents some of the ways XDM has been done successfully for customers. As XDM matures and product enhancements are made, better solutions are bound to surface.
 
 13. Recall from the first part of this section that Luma had a list of fields in their CRM system that they wanted to bring into Platform. Now that you've created the CRM XDM schema, [review that list](#building-record-type-schema-5) and see where each Luma CRM field has its XDM field equivalent. 
 14. Click on **Schemas** in the left pane to return to the schema homepage. 
 15. Click on the **Browse** tab and you should now see the CRM Schema that you just created:
-
-    
-
-<p id="gdcalert18" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image18.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert19">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image018.png "image_tooltip")
 
 
@@ -479,13 +263,7 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 With Experience Platform being an API-first platform, it's important to call out how the UI provides ways to do common tasks with the API. In this case, you can simply copy the JSON that this schema relates to be clicking on the **Copy JSON** button in the upper right corner of the schema definition:
 
-
-
-<p id="gdcalert19" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image19.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert20">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image019.png "image_tooltip")
-
 
 If you were to paste that into a text editor and save has a .json file, you would be able to see all the JSON that could be used to help build API calls to either rebuild this schema in another sandbox or adjust this schema programmatically. We won't be doing that in this exercise, but we call it out, so you know that this feature is there.
 
@@ -495,16 +273,15 @@ If you were to paste that into a text editor and save has a .json file, you woul
 Next you're going to build the XDM Schema that will be used in conjunction with the loyalty data source that Luma's loyalty program provider supplies to Platform in a nightly batch upload. It is up to the loyalty program provider to determine how many points a customer has, if they have expired, how purchase returns affect point status, and the like. Platform is simply going to ingest that daily snapshot of customer loyalty data and use it in Luma's marketing efforts. Since this is also a data source that describes attributes of an individual, it will also be a record-type schema. The fields Luma can onboard into Platform from the loyalty program provider are:
 
 
-
-*   Id
-*   life_time_value
-*   loyalty_exp_date
-*   loyalty_points
-*   loyalty_status
-*   CRMID
-*   emailId
-*   loyaltyId
-*   phoneNbr
+* Id
+* life_time_value
+* loyalty_exp_date
+* loyalty_points
+* loyalty_status
+* CRMID
+* emailId
+* loyaltyId
+* phoneNbr
 
      
 
@@ -524,7 +301,7 @@ This section is going to be very similar to the last section. As such, some of t
 
     **Note:** All the schema columns are case sensitive. Please make sure you follow the naming suggestion exactly or you might face errors while ingesting data in next exercise.
 
-4. Click **Assign **from the **Composition** column and on the **Assign class** overlay, select the **XDM Individual Profile** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
+4. Click **Assign** from the **Composition** column and on the **Assign class** overlay, select the **XDM Individual Profile** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
 
 
 ### Add Mixins
@@ -540,135 +317,51 @@ Now is an example of how good XDM planning pays off as you can reuse the identit
 
 1. Click on **Add** in the **Mixins** section and on the **Add mixin** overlay, ensure that the **Use Existing mixin **radio button is selected.
 2. At the top of the list of available mixins should be the identities mixin you created earlier. Notice how the owner is listed as customer. Select the **identities **mixin then click **Add mixin.**
-
-    
-
-<p id="gdcalert20" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image20.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert21">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image020.png "image_tooltip")
 
 
 3. Expand the **_wwfovlab### **> **identification** nodes and notice all of the identity fields are now present and the mixin is shown in the Composition panel:
-
-     
-
-<p id="gdcalert21" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image21.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert22">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image021.png "image_tooltip")
 
 
 
-
-#### **Custom Loyalty Mixin **
+#### Custom Loyalty Mixin
 
 Now it's time to add the other custom fields needed to meet Luma's needs.
-
-
 
 1. Click **Add **to add another mixin and on the **Add mixin** overly, select the **Create new mixin** radio button. 
 2. Name the mixin** Loyalty Mixin**, give it a proper description, then click **Add Mixin.**
 3. Once the new mixin is added, we need to add the custom fields. Select the new** Loyalty** **Mixin** in the mixins section and then click the **Add Field** button that is at the root **Loyalty Schema** level: 
-
-<p id="gdcalert22" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image22.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert23">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image022.png "image_tooltip")
-
 
     **Note: **Just like before, you'll see the new field appear under the Experience Cloud Org tenant
 
 4. If not already done, select the **new field** node and the right pane give it a **Field name** of **lifeTimeValue** and a **Display name** of **Lifetime Value of Loyalty Points.** Also set the **Type** dropdown to **Long** then click **Apply**. Your new field should look like this in the schema:
-
-     
-
-<p id="gdcalert23" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image23.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert24">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image023.png "image_tooltip")
 
 
 5. Create three more Loyalty Mixin fields as outlined in the table below. 
 
-<table>
-  <tr>
-   <td>
-<strong>Field Name</strong>
-   </td>
-   <td><strong>Display Name</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>loyaltyExpDate
-   </td>
-   <td>Exp Date of Loyalty Points
-   </td>
-   <td>Date
-   </td>
-  </tr>
-  <tr>
-   <td>loyaltyPoints
-   </td>
-   <td>Loyalty Points
-   </td>
-   <td>Long
-   </td>
-  </tr>
-  <tr>
-   <td>loyaltyStatus
-   </td>
-   <td>Status of Loyalty
-   </td>
-   <td>String
-   </td>
-  </tr>
-</table>
-
-
+    | Field Name | Display Name | Type |
+    |---|---|---|
+    | loyaltyExpDate | Exp Date of Loyalty Points | Date |
+    | loyaltyPoints | Loyalty Points | Long |
+    | loyaltyStatus | Status of Loyalty | String | 
 
     When finished, your full Loyalty mixin should look like this:
-
-
-     
-
-<p id="gdcalert24" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image24.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert25">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image024.png "image_tooltip")
 
 
 
-
 6. The only field we're missing is the loyalty Id field. This will be an identity field for this schema. Thinking back on the best practice of grouping identity fields together, we want to add this to the identities node of the schema, but keep it attached to the Loyalty mixin so that we aren't adding it to the identification mixin. To do that, ensure that the **Loyalty Mixin** is still selected in the **Composition** pane then click **Add Field** next to the **identification **object:
-
-     
-
-<p id="gdcalert25" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image25.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert26">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image025.png "image_tooltip")
 
 
 7. Name the new field **loyaltyId** and give it a **Display name** of **Loyalty Id**. This is going to be an identity field, so the **Type** needs to be set as **String**. When finished, your new field should be grouped in with the other identities:
-
-     
-
-<p id="gdcalert26" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image26.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert27">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image026.png "image_tooltip")
 
 
 8. Click **Save** to save your entire Loyalty Schema and the finished product should look like this:
-
-     
-
-<p id="gdcalert27" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image27.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert28">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image027.png "image_tooltip")
 
 
@@ -676,12 +369,6 @@ Now it's time to add the other custom fields needed to meet Luma's needs.
     **Note: **Like the other schema created, you can also use the **Copy JSON** button to retrieve the JSON structure for this new schema if needed.
 
 9. Click on **Schemas** in the left pane to return to the schema homepage and you should now see that you have 2 schemas (the **Browse** tab may already be selected. If not, click on it):
-
-    
-
-<p id="gdcalert28" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image28.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert29">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image028.png "image_tooltip")
 
 
@@ -695,16 +382,16 @@ Looking at what Luma can send us on this front, we know we'll need XDM fields to
 
 
 
-*   SKU
-*   Product Name
-*   Price
-*   Quantity
-*   priceTotal
-*   currencyCode
-*   loyaltyId
-*   receipt_nbr
-*   Order Date
-*   timestamp
+* SKU
+* Product Name
+* Price
+* Quantity
+* priceTotal
+* currencyCode
+* loyaltyId
+* receipt_nbr
+* Order Date
+* timestamp
 
 Unlike a CRM or record-type schema, this schema needs to be able to handle events as they happen. That's why this schema needs to be a Time Series-type schema. While also applicable in an in-store purchase scenario, this schema in Luma's use case is going to be handling any purchases that are made at their booths that they have at races or other wellness expos. 
 
@@ -718,9 +405,9 @@ This ideology could also be applied to other offline activities as well. Perhaps
 
 
 
-*   Customers who simply "check-in" at a booth with their email or phone number
-*   New customers who join the loyalty program at the booth. 
-*   Race participants who check-in at the booth wearing Luma gear
+* Customers who simply "check-in" at a booth with their email or phone number
+* New customers who join the loyalty program at the booth. 
+* Race participants who check-in at the booth wearing Luma gear
 
     While these "check-in" activities would require a new schema, hopefully you see the idea behind why something like a loyalty id would be a critical piece of bringing the online and offline world together and why it's the only identity field needed in this offline purchase event schema.
 
@@ -736,12 +423,6 @@ With that background in mind, let's create this new time-series offline purchase
 2. Click on the **Schemas** tab in the left rail and being the process of creating a new schema
 3. Name your schema** Offline Purchase Schema **and give it a proper description
 4. Click **Assign **to give this schema a class. On the **Assign class** overlay, select the **XDM ExperienceEvent** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
-
-    
-
-<p id="gdcalert29" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image29.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert30">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image029.png "image_tooltip")
 
 
@@ -755,7 +436,7 @@ With that background in mind, let's create this new time-series offline purchase
 The next step is to identify which mixins contain the XDM fields that map to the fields of data that are going to be onboarded into Platform. 
 
 
-#### **Custom Identity Mixin **
+#### Custom Identity Mixin
 
 At this point you may be wondering why you're going to create a new identities mixin when you just reused a custom identity mixin to create the Loyalty schema. The simplest explanation is that you can't use a mixin created for a record-type schema, which is what loyalty ID is, in a time-series schema. You’ll need to create a new custom identity mixin. 
 
@@ -764,44 +445,20 @@ At this point you may be wondering why you're going to create a new identities m
 1. Click on **Add** in the **Mixins** section.
 2. On the **Add mixin** overly, select the **Create new mixin** radio button. Name the mixin** Event Identities**, give it a proper description, and click the **Add Mixin **button. 
 3. Click on the newly created **Event Identities** mixin in the **Composition **panel then click the only **Add field** button available to you. Like before, you'll see a new tenant node appear:
-
-     
-
-<p id="gdcalert30" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image30.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert31">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image030.png "image_tooltip")
  
 
 4. If not already done, select the **new field** node and in the right pane, name the field and display name **identification. **Then set the **Type** dropdown to **Object.**
 5. Click **Apply** and you'll see your schema update with the new name and the field is now turned into an object with the Add Field button now visible:
-
-    
-
-<p id="gdcalert31" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image31.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert32">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image031.png "image_tooltip")
 
 
 6. Start adding the specific identity fields we want by clicking **Add Field **next to the **identification** object.
 7. Like before, a new field node will appear with the properties in the right panel. Name the field **loyaltyId** with a display name of **Loyalty Id.** Set the type to **String** (again, because this is going to be an identity field)**. **
-
-    
-
-<p id="gdcalert32" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image32.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert33">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image032.png "image_tooltip")
 
 
 8. Leave all the other fields as their defaults then scroll down to the bottom and click **Apply**. You should then see your new identity field:
-
-     
-
-<p id="gdcalert33" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image33.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert34">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image033.png "image_tooltip")
 
 
@@ -816,24 +473,12 @@ In this subsection, you're going to create a new mixin and add a field to it tha
 1. Click **Add **to add another mixin
 2. On the **Add mixin** overly, select the **Create new mixin** radio button, name the mixin** Offline Purchase Mixin,** give it a proper description, and click **Add mixin**.
 3. Select the newly created **Offline Purchase Mixin **and click the top-most** Add field** button:
-
-
-
-<p id="gdcalert34" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image34.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert35">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image034.png "image_tooltip")
  
 
 
 
 4. If not already done, select the **new field** node and the right pane name the field **purchaseEvent** with a **Display name** of **Purchase Event**. Set the type dropdown to **Product list item:**
-
-    
-
-<p id="gdcalert35" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image35.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert36">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image035.png "image_tooltip")
 
 
@@ -841,78 +486,51 @@ In this subsection, you're going to create a new mixin and add a field to it tha
     **Note:** The Product list item type tells the schema to automatically add a series of product-related fields to this node. This also indicates to Platform that it should expect this data to be product data.  
 
 5. Since a single purchase event can have multiple products in it, you also need to check the **Array** box:
-
-    
-
-<p id="gdcalert36" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image36.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert37">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image036.png "image_tooltip")
 
 
 6. Click **Apply**. You'll see your schema update with the new name and the field and several more product-related nodes:
-
-    
-
-<p id="gdcalert37" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image37.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert38">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image037.png "image_tooltip")
 
 
 7. We need to add two more fields to this mixin. Using the what you've learned earlier in this document, add these two fields to the **Offline Purchase Mixin** mixin: 
 
-<table>
-  <tr>
-   <td>
-<strong>Field Name</strong>
-   </td>
-   <td><strong>Display Name</strong>
-   </td>
-   <td><strong>Type</strong>
-   </td>
-  </tr>
-  <tr>
-   <td>receiptNbr
-   </td>
-   <td>Receipt Number
-   </td>
-   <td>String
-   </td>
-  </tr>
-  <tr>
-   <td>receiptTotal
-   </td>
-   <td>Receipt Total
-   </td>
-   <td>Double
-   </td>
-  </tr>
-</table>
-
-
+    <table>
+    <tr>
+    <td>
+    <strong>Field Name</strong>
+    </td>
+    <td><strong>Display Name</strong>
+    </td>
+    <td><strong>Type</strong>
+    </td>
+    </tr>
+    <tr>
+    <td>receiptNbr
+    </td>
+    <td>Receipt Number
+    </td>
+    <td>String
+    </td>
+    </tr>
+    <tr>
+    <td>receiptTotal
+    </td>
+    <td>Receipt Total
+    </td>
+    <td>Double
+    </td>
+    </tr>
+    </table>
 
     When finished, your full **Offline Purchase Mixin** should look like this:
-
-
-    
-
-<p id="gdcalert38" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image38.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert39">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
-![alt_text](assets/image038.png "image_tooltip")
+    ![alt_text](assets/image038.png "image_tooltip")
 
 
 
 
 8. Click **Save** in the upper right corner. 
 9. Click on **Schemas** in the left pane to return to the schema homepage. You should now see that you have 3 schemas (the **Browse** tab may already be selected. If not, click on it):
-
-    
-
-<p id="gdcalert39" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image39.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert40">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image039.png "image_tooltip")
 
 
@@ -929,27 +547,15 @@ Like the CRM Schema, there'll be some standard mixins to use as well as a custom
 1. Create a new schema called **Luma Website**. Add a description.
 2. Since this is going to be live, behavioral data collected in real time, assign the schema the **XDM ExperienceEvent** class (time-series data) 
 3. Once the class is assigned, add the **AEP Web SDK ExperienceEvent Mixin** mixin. At this point, your schema should look like this:
-
-    
-
-<p id="gdcalert40" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image40.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert41">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image040.png "image_tooltip")
 
 
-4. The nodes that you see in this mixin describe a lot of the same default things that current JavaScript libraries (like at.js, AppMeasurement, or DIL) do. You'll see these things categorically grouped by the nodes above. Take a moment to explore the **device, environment, place context, **and** web** nodes to see what they contain. 
+4. The nodes that you see in this mixin describe a lot of the same default things that current JavaScript libraries (like at.js, AppMeasurement, or DIL) do. You'll see these things categorically grouped by the nodes above. Take a moment to explore the **device, environment, place context, and web** nodes to see what they contain. 
 5. While the AEP SDK captures a lot of valuable information, it's not very vertical specific. Since Luma is retailer and has a shopping cart, we will need to add XDM schema to account for that. To do that, add the **ExperienceEvent commerce details** mixin. 
 
     **Note: **Once the ExperienceEvent commerce details mixin is added, you'll see the new **commerce** and **productListItems **nodes. Does anything about the **productListItems** node seem familiar? It should, because in the Offline Purchase Schema, you created a custom mixin and set one of the fields in that mixin to be of the productListItems type. This is yet another example of how the same datatype can be utilized across different mixins in different schemas.
 
 6. At this point, your schema should look like this:
-
-    
-
-<p id="gdcalert41" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image41.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert42">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image041.png "image_tooltip")
 
 
@@ -961,12 +567,6 @@ Like the CRM Schema, there'll be some standard mixins to use as well as a custom
     **Note**: It was mentioned earlier in this document that XDM design and standards are still new and evolving. That is especially true for XDM used for collecting data from the AEP Web SDK. At the time of this writing, there are no other vertical-specific XDM (like the commerce one you just added). Best practices are still being created by a joint team of consultants and product managers, and the mixins you've just added may be out of date in just a few weeks. Again, take in what you’re learning from this exercise, but expect that best practices are going to evolve as customers start to use the web SDK in practice. We will cover more of this in an upcoming exercise on deploying the AEP Web SDK. 
 
 8. Return to the schema homepage and you should now have four schemas:
-
-    
-
-<p id="gdcalert42" ><span style="color: red; font-weight: bold">>>>>>  gd2md-html alert: inline image link here (to images/image42.png). Store image on your image server and adjust path/filename/extension if necessary. </span><br>(<a href="#">Back to top</a>)(<a href="#gdcalert43">Next alert</a>)<br><span style="color: red; font-weight: bold">>>>>> </span></p>
-
-
 ![alt_text](assets/image042.png "image_tooltip")
 
 
@@ -979,30 +579,3 @@ Praveen Sharma and David Woolsey, and the original GABA team
 **Exercise Contributors**:
 
 Shruti Jagtap and Danny Miller
-
-**Change Log**
-
-
-<table>
-  <tr>
-   <td>Ver.
-   </td>
-   <td>Issue Reporter
-   </td>
-   <td>Changes
-   </td>
-   <td>Date
-   </td>
-  </tr>
-  <tr>
-   <td>1.0
-   </td>
-   <td>
-   </td>
-   <td>Original Launch
-   </td>
-   <td>6/1/2020
-   </td>
-  </tr>
-</table>
-
