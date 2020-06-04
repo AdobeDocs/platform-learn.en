@@ -7,6 +7,7 @@ kt: 4340
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 28144.jpg
 ---
 
 # Behind the Scenes: A Customer Experience Powered by Experience Platform
