@@ -8,6 +8,7 @@ activity: understand
 doc-type: presentation
 team: Technical Marketing
 kt: 3953
+thumbnail: 30090.jpg
 
 ---
 
