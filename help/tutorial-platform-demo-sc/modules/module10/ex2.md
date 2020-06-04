@@ -59,7 +59,7 @@ In the list of datasets, search for the dataset named ``EMEA DSW - Churn Input D
 
 ![DSW10](./images/aepjuppynavdsci.png)
 
-Next, doubleclick on the dataset name ``EMEA DSW - Churn Input Data``. Jupyter Notebooks will now automatically generate the code needed to read this data from Adobe Experience Platform into this Python notebook.
+Next, double-click on the dataset name ``EMEA DSW - Churn Input Data``. Jupyter Notebooks will now automatically generate the code needed to read this data from Adobe Experience Platform into this Python notebook.
 
 ![DSW10](./images/aepjuppynavdscicode.png)
 
@@ -89,7 +89,7 @@ When the action is finished, you'll see this:
 
 ![DSW10](./images/aepjuppynavdscicodeexec.png)
 
-The result of executing the cell and loading the data from that dataset is that you now have a dataframe (df0) available that contains data.
+The result of executing the cell and loading the data from that dataset is that you now have a data-frame (df0) available that contains data.
 
 ![DSW10](./images/aepjuppydf.png)
 
@@ -173,6 +173,6 @@ Execute all cells one by one. The code outlines steps to explore data, build vis
 
 Next Step: [Exercise 10.3 - Feature Engineering and Model Building](./ex3.md)
 
-[Go Back to Module 10](./README.md)
+[Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
 [Go Back to All Modules](../../README.md)

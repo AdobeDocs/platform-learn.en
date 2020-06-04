@@ -179,6 +179,6 @@ You've now finished this exercise.
 
 Next Step: [Exercise 6.3: Configure Launch to trigger your Event](./ex3.md)
 
-[Go Back to Module 6](./README.md)
+[Go Back to Module 6](./journey-orchestration-create-account.md)
 
 [Go Back to All Modules](../../README.md)

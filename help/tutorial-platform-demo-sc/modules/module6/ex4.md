@@ -176,6 +176,6 @@ If you want you can further beautify your email and/or explore the possibilities
 
 You've now finished this exercise and this module!
 
-[Go Back to Module 6](./README.md)
+[Go Back to Module 6](./journey-orchestration-create-account.md)
 
 [Go Back to All Modules](../../README.md)

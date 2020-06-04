@@ -11,7 +11,7 @@ activity:
 
 In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a Recipe.
 
-The Recipe Builder Notebook is one of our recent innovations that templatizes your model to automatically package and operationalize it. The notebook has multiple templatized cells that you fit your model code into:
+The Recipe Builder Notebook is one of our recent innovations that templatizes your model to automatically package and operationalize it. The notebook has multiple templated cells that you fit your model code into:
 
 * The requirements and configuration cells allow you to add additional libraries and configure datasets and tuning parameters for your model
 * The evaluator cell enables you to split your data and evaluate the performance of your model
@@ -158,6 +158,6 @@ Now that you've created your recipe, let's continue with the next exercise, in w
 
 Next Step: [Exercise 15.4 - Train and Score your Recipe](./ex4.md)
 
-[Go Back to Module 15](./README.md)
+[Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
 [Go Back to All Modules](../../README.md)

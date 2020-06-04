@@ -1,5 +1,5 @@
 ---
-title: Module 0, Exercise 1 - Setup of Webserver and Website
+title: Module 0, Exercise 1 - Setup of Web server and Website
 description: 
 kt: 5342
 audience: 
@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 1: Setup of Webserver and Website
+# Exercise 1: Setup of Web server and Website
 
 In this exercise, the goal is to install the AEP Demo-website.
 
@@ -69,13 +69,14 @@ MAMP has a default website installed on a specific location on your computer. We
 
 ![MAMP Setup](./images/mamp_app3.png)
 
-**Fot both Windows and Mac:** Delete all files in this folder.
+**For both Windows and Mac:** Delete all files in this folder.
 
 ![MAMP Setup](./images/mamp_app4.png)
 
 Go to the folder where you unzipped the zip-package of the SYTYCD - website. Copy all files and paste them in the ``htdocs`` folder.
 
 ![MAMP Setup](./images/mamp_app6.png)
+
 ![MAMP Setup](./images/mamp_app7.png)
 
 Go back to your web browser.

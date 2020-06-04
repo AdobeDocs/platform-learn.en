@@ -90,6 +90,6 @@ This gives you an idea on how data is collected from a website and ingested into
 
 Next Step: [Exercise 5 - Data Ingestion from Offline Sources](./ex5.md)
 
-[Go Back to Module 1](./README.md)
+[Go Back to Module 1](./data-ingestion.md)
 
 [Go Back to All Modules](../../README.md)

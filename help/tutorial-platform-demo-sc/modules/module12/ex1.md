@@ -156,6 +156,6 @@ As discussed in the use-case description, we then need to provide contextual pro
 
 Next Step: [Exercise 12.2 - Define an External Data Source](./ex2.md)
 
-[Go Back to Module 12](./README.md)
+[Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
 [Go Back to All Modules](../../README.md)

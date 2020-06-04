@@ -253,6 +253,6 @@ You can now publish you configuration in the next exercise.
 
 Next Step: [Exercise 9.6 - Publish GTM Property](./ex6.md)
 
-[Go Back to Module 9](./README.md)
+[Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
 [Go Back to All Modules](../../README.md)

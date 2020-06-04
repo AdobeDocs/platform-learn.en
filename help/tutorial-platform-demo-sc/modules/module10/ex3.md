@@ -23,6 +23,6 @@ Two models are outlined in this ExerciseLogistic Regression and Random Forrest R
 
 Next Step: [Exercise 10.4 - Experimentation - Recipe Building](./ex4.md)
 
-[Go Back to Module 10](./README.md)
+[Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
 [Go Back to All Modules](../../README.md)

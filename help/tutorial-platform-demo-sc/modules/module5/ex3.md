@@ -360,7 +360,7 @@ Don't forget to click ``Save`` to save your mapping's current state.
 
 ## Exercise 5.3.4 - Enrich Data
 
-In the enrichment phase, you can add additional fields to your dataset. In this example, we need to provide a uniqiue ``hitId`` to Adobe Experience Platform when ingesting Experience Event-data. This ``hitId`` isn't part of the dataset yet, so you'll add it now using an ``Expression``.
+In the enrichment phase, you can add additional fields to your dataset. In this example, we need to provide a unique ``hitId`` to Adobe Experience Platform when ingesting Experience Event-data. This ``hitId`` isn't part of the dataset yet, so you'll add it now using an ``Expression``.
 
 In order to enrich data, you need to add an ``Expression``-object onto the canvas. You can find the ``Expression``-object in the left menu on the Design workflow.
 
@@ -523,6 +523,6 @@ You can now continue with exercise 4.
 
 Next Step: [Exercise 5.4 - Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
 
-[Go Back to Module 5](./README.md)
+[Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
 [Go Back to All Modules](../../README.md)

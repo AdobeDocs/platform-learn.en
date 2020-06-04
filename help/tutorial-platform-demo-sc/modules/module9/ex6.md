@@ -39,6 +39,6 @@ Your GTM Property is now published. The last thing to do now is to setup the GTM
 
 Next Step: [Exercise 9.7 - Implement GTM Tag on SYTYCD website](./ex7.md)
 
-[Go Back to Module 9](./README.md)
+[Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
 [Go Back to All Modules](../../README.md)

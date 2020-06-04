@@ -15,7 +15,7 @@ activity:
 * Learn how to position CJA
 * Understand the CJA workflow: from data connection to insights
 
-## Exercise 13.1.1 - What is Customer Journey Analytics?
+## Exercise 13.1.1 - What is Customer Journey Analytics
 
 Customer Journey Analytics (CJA) provides a toolkit to the business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within CJA deliver context and clarity to the complex multi-channel customer journey. The provided context leads to actionable insight into removing pain points from the customer conversion process and designing and delivering exceptional experiences for the moments that matter most.
 
@@ -34,7 +34,7 @@ The 3 main benefits for customers are:
 
 ## Exercise 13.1.3 - Why choose Customer Journey Analytics
 
-CJA isn't intended to replace a current BI application such as Power BI, Microstrategy, Locker or Tableau. These BI applications are meant to visiualize data to create corporate dashboards so that everyone in an organization can quickly look at important metrics.  
+CJA isn't intended to replace a current BI application such as Power BI, Microstrategy, Locker or Tableau. These BI applications are meant to visualize data to create corporate dashboards so that everyone in an organization can quickly look at important metrics.  
 CJA's goal is to bring analysis power to Marketing and Business teams making it 'a must have' analysis tool for those personas.
 
 Traditionally, BI applications have been incapable of enabling true customer intelligence:
@@ -44,7 +44,7 @@ Traditionally, BI applications have been incapable of enabling true customer int
 * Interactive queries are limited by the structure of the database
 * SQL skills are required.
 * BI applications don't give you the ability to ask why something happened
-* BI applications have no direct connection to customer touchpoints
+* BI applications have no direct connection to customer touch-points
 
 Because of the above, business users and analysts hit dead ends almost immediately, making analysis expensive, slow, inflexible and disconnected from systems of action.
 
@@ -54,7 +54,7 @@ With CJA you can have a 360 view of the customer journey, using offline and onli
 
 ## Exercise 13.1.4 - Understand the Customer Journey Analytics workflow
 
-Before starting the next excercises it's key to understand what steps are needed to bring data from Adobe Experience Platform into CJA in order to visualize it and get some deep insights. It's what we call CJA Workflow. Let's have a look at it:
+Before starting the next exercises it's key to understand what steps are needed to bring data from Adobe Experience Platform into CJA in order to visualize it and get some deep insights. It's what we call CJA Workflow. Let's have a look at it:
 
 ![demo](./images/cja-work-flow.jpg)
 
@@ -89,6 +89,6 @@ You're now ready to start using the Customer Journey Analytics UI.
 
 Next Step: [Exercise 13.2 - Connect AEP datasets in CJA](./ex2.md)
 
-[Go Back to Module 13](./README.md)
+[Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
 [Go Back to All Modules](../../README.md)

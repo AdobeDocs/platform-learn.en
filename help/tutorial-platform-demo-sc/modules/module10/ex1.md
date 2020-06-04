@@ -59,13 +59,13 @@ With Data Science Workspace, Adobe Experience Platform allows you to streamline 
 
 * **Jupyter Notebook**: An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
 
-* **Hyperparameters**: High level properties of a model, different from standard model parameters that are usually fixed.
+* **Hyper-parameters**: High level properties of a model, different from standard model parameters that are usually fixed.
 Examples: depth of decision tree, number of hidden layers, learning rate, etc.
 
 Let's continue with a hands-on exercise.
 
 Next Step: [Exercise 10.2 - Churn Prediction: Data Preparation](./ex2.md)
 
-[Go Back to Module 10](./README.md)
+[Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
 [Go Back to All Modules](../../README.md)

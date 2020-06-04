@@ -287,6 +287,6 @@ You con now continue with the next exercise, where you'll connect this table to 
 
 Next Step: [Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 
-[Go Back to Module 16](./README.md)
+[Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
 [Go Back to All Modules](../../README.md)

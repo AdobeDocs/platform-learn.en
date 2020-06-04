@@ -79,6 +79,6 @@ Now that you've learned how to view any customer's real-time profile by making u
 
 Next Step: [Exercise 3 - Visualize your own real-time customer profile - API](./ex3.md)
 
-[Go Back to Foundation 2](./README.md)
+[Go Back to Foundation 2](./real-time-customer-profile.md)
 
 [Go Back to All Modules](../../README.md)

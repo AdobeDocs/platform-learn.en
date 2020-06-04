@@ -125,6 +125,6 @@ You can now move to Exercise 2 where you'll get your hands dirty by querying Goo
 
 Next Step: [Exercise 16.2 - Create your first query in BigQuery](./ex2.md)
 
-[Go Back to Module 16](./README.md)
+[Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
 [Go Back to All Modules](../../README.md)

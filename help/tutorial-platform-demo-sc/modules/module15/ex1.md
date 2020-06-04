@@ -82,12 +82,12 @@ Just like in reality, at this moment, you're an unknown, anonymous customer to `
 
 To react in an intelligent way, ``Luma Insurance`` has implemented Adobe Experience Platform Data Science Workspace and has a real-time Sales Prediction model running. The Sales Prediction model will look at all available information, like all of the form fields a customer has filled out and will combine this with any other temporal, behavioral or device data. Obviously, if Luma Insurance has seen this customer on their website before, they'll have more information available for this customer which will make any ML model even better.
 
-This unknown, anonymous customer decides to fill out the fields on this form (you can use the default values which are prepopulated on the form) and clicks ``Get Quote``.
+This unknown, anonymous customer decides to fill out the fields on this form (you can use the default values which are pre-populated on the form) and clicks ``Get Quote``.
 
 ![LumaBank](./images/7c.png)
 
 By clicking ``Get Quote``, the customer is presented with the different Insurance types and their price.
-Also, by clicking ``Get Quote``, an Experience Event for this Car Insurance Qet Quote-action is sent to Adobe Experience Platform and will be taken into account by the Sales Prediction model in real-time.
+Also, by clicking ``Get Quote``, an Experience Event for this Car Insurance Get Quote-action is sent to Adobe Experience Platform and will be taken into account by the Sales Prediction model in real-time.
 
 If you wish, you may decide to simulate a Car Insurance Purchase by pushing the ``Purchase`` - button.
 
@@ -112,6 +112,6 @@ This segment qualification can then be shared through the Bi-Directional Segment
 
 Next Step: [Exercise 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
 
-[Go Back to Module 15](./README.md)
+[Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
 [Go Back to All Modules](../../README.md)

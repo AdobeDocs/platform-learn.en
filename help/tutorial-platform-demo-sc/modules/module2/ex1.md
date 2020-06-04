@@ -17,7 +17,7 @@ Adobe Experience Platform plays a huge role in this journey. Platform is the bra
 
 Platform is an environment in which the word ``customer`` is broader than just the ``known``-customers. This is a very important thing to mention when speaking to brands: an unknown visitor on the website is also a customer from Platform's perspective and as such, all of the behavior as an unknown visitor is also sent to Platform. Thanks to that approach, when this customer eventually becomes a known customer, a brand can visualize what happened before that moment as well. This helps from an attribution and experience optimization perspective.
 
-## What are you going to do?
+## What are you going to do
 
 You will now ingest data into Adobe Experience Platform and that data will be linked to identifiers like ECIDs and email-addresses. The goal of this exercise is to understand the business context of what you're about to do from a configuration perspective. In the next exercise, you'll start configuring everything you need to make all that data ingestion possible in your own sandbox environment.
 
@@ -98,6 +98,6 @@ You've now ingested data into Adobe Experience Platform and you've linked that d
 
 Next Step: [Exercise 2 - Configure Schema's and Set Identifiers](./ex2.md)
 
-[Go Back to Module 1](./README.md)
+[Go Back to Module 1](./data-ingestion.md)
 
 [Go Back to All Modules](../../README.md)

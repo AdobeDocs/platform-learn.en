@@ -112,6 +112,6 @@ In the next exercise, you'll connect the segment you built in the previous exerc
 
 Next Step: [Exercise 11.3 - Take Action: send your segment to DV360](./ex3.md)
 
-[Go Back to Module 11](./README.md)
+[Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
 [Go Back to All Modules](../../README.md)

@@ -55,7 +55,7 @@ Example: for ldap vangeluw, the name become ```vangeluw - CarInsurancePropensity
 
 ![DSW](./images/modelname.png)
 
-We can also hypertune the Model by changing the Model Configuration. To do that, you can f.i. change the ``n_estimators`` or the ``max_depth``.
+We can also hyper-tune the Model by changing the Model Configuration. To do that, you can f.i. change the ``n_estimators`` or the ``max_depth``.
 
 ![DSW](./images/modelcfg.png)
 
@@ -144,6 +144,6 @@ Next, click the ```Preview Scoring Results Dataset```.
 
 Next Step: [Exercise 15.5 - Publish your Recipe as a Scheduled Service](./ex5.md)
 
-[Go Back to Module 15](./README.md)
+[Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
 [Go Back to All Modules](../../README.md)

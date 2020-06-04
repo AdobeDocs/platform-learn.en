@@ -124,6 +124,6 @@ Congrats, you've successfully completed the Segmentation exercise. Let's now hav
 
 Next Step: [Exercise 6 - See you Real-time Customer Profile in action in the Call Center](./ex6.md)
 
-[Go Back to Foundation 2](./README.md)
+[Go Back to Foundation 2](./real-time-customer-profile.md)
 
 [Go Back to All Modules](../../README.md)

@@ -163,6 +163,6 @@ With the datasets created and configured for Profile, you can now continue with 
 
 Next Step: [Exercise 4 - Use Launch and the Adobe Experience Platform Extension](./ex4.md)
 
-[Go Back to Module 1](./README.md)
+[Go Back to Module 1](./data-ingestion.md)
 
 [Go Back to All Modules](../../README.md)

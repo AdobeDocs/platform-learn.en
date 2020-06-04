@@ -11,11 +11,11 @@ activity:
 
 On this page, you'll find answers to common questions related to this specific ML Model.
 
-## What is the Architecture behind this use-case?
+## What is the Architecture behind this use-case
 
 ![DSW](./images/architecture.png)
 
-## What are the datasets involved?
+## What are the datasets involved
 
 The Model relies on 2 datasets:
 
@@ -23,7 +23,7 @@ The Model relies on 2 datasets:
 
 - **EMEA ML Predictions (API)**. This is the scoring output dataset. When the ML Model calculates a propensity score, it stores that score in this dataset.
 
-## What does the training data look like?
+## What does the training data look like
 
 When a customer clicks the ``Get Quote``-button, this data is collected:
 
@@ -128,13 +128,13 @@ When a customer purchases a Car Insurance, this data is collected:
 }
 ```
 
-## How is the training data set created?
+## How is the training data set created
 
 The training dataset populates in real-time, based on customer interactions on the website. The dataset is configured to collect data in a streaming way and is activated for Profile.
 As indicated in the previous questions, the dataset collects both ``Get Quote``-events as ``Purchase``-events.
 Data is collected on the website through Launch and ``alloy.js``, which streams data in real-time to Adobe Experience Platform.
 
-## What is the Target Predictor Variable?
+## What is the Target Predictor Variable
 
 The Target Predictor Variable is the below field. This is the value that indicated the desired behavior, namely a Purchase.
 
@@ -145,16 +145,16 @@ The Target Predictor Variable is the below field. This is the value that indicat
 },
 ```
 
-## How is traffic forwarded from Pipeline to the RTML endpoint?
+## How is traffic forwarded from Pipeline to the RTML endpoint
 
 In this demo environment, Pipeline Smarts is used to forward data from Pipeline to the RTML endpoint.
 In a future implementation, the correct mechanism to use to stream data to any custom endpoint is Launch Server-Side Forwarding when it becomes available later this year.
 
-## What is the latency?
+## What is the latency
 
 The end-to-end latency, from clicking the ``Get Quote``-button to delivering an experience by Adobe Target, based on the score calculated by the RTML-endpoint is 1-1,5 seconds.
 
-## How does the output from the RTML endpoint get sent back to AEP?
+## How does the output from the RTML endpoint get sent back to AEP
 
 Given that this is a custom implementation, the way to send the output of the score back to Adobe Experience Platform is by sending an XDM Payload to a DCS Inlet ID.
 
@@ -199,6 +199,6 @@ This is a sample of the XDM payload sent by the RTML endpoint to the DCS Inlet I
 }
 ```
 
-[Go Back to Module 15](./README.md)
+[Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
 [Go Back to All Modules](../../README.md)

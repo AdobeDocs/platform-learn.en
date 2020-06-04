@@ -13,13 +13,13 @@ activity:
 
 * Understand Analysis Workspace UI
 * Learn some feature that make Analysis Workspace so different.
-* Learn how to analyse in CJA using Analysis Workspace
+* Learn how to analyze in CJA using Analysis Workspace
 
 ## Context
 
 In this exercises you will use Analysis Workspace within CJA to analyze product views, product funnels, churn etc.
 
-We will cover some of the queries done in the Module 7 - Query Service so you can see how easy is to run the same queries and more but withouot using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
+We will cover some of the queries done in the Module 7 - Query Service so you can see how easy is to run the same queries and more but without using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
 
 Let's use the project you created in [Exercise 13.4 - Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
@@ -39,9 +39,9 @@ With your project opened and the Data View ``all - Omnichannel Analysis`` select
 
 ![demo](./images/module135/dataView1.png)
 
-## How many product views do we have on a daily basis?
+## How many product views do we have on a daily basis
 
-First of all, we need to select the right dates to analyse the data. Go to the calendar dropdown on the right side of the canvas. Click on it and select the dates: ``30/01/2020 – 31/01/2020``.
+First of all, we need to select the right dates to analyze the data. Go to the calendar dropdown on the right side of the canvas. Click on it and select the dates: ``30/01/2020 – 31/01/2020``.
 
 ![demo](./images/module135/1.png)
 
@@ -191,13 +191,13 @@ Your visualization will now look like this:
 
 ![demo](./images/module135/30.png)
 
-We can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if we want to analyse interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
+We can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if we want to analyze interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
 
 Right click on the touchpoint ``Product Add To Cart``. Then click on ``Breakdown fallout at this touchpoint``.
 
 ![demo](./images/module135/32.png)
 
-A new freeform table will be created to analyse what the people did if they didn't purchase.
+A new freeform table will be created to analyze what the people did if they didn't purchase.
 
 ![demo](./images/module135/33.png)
 
@@ -247,7 +247,7 @@ You'll then see this:
 
 ![demo](./images/module135/40.png)
 
-Let's now analyse if customers who visited the ``Cancel Service``-page on the website also called the callcenter, and what the outcome was.
+Let's now analyze if customers who visited the ``Cancel Service``-page on the website also called the callcenter, and what the outcome was.
 
 Under the dimensions, find ``Call Interaction Type``. Drag and drop it to replace the first interaction on the right within the ``Flow Visualization``.
 
@@ -335,13 +335,13 @@ You'll then see this:
 
 ![demo](./images/module135/57.png)
 
-Thanks to the first flow analysis, a new question came to mind. So we decided to create this table and check some KPIs against a segment to aswer that question. As you can see, time to insight is much faster than using SQL or using other BI solutions.
+Thanks to the first flow analysis, a new question came to mind. So we decided to create this table and check some KPIs against a segment to answer that question. As you can see, time to insight is much faster than using SQL or using other BI solutions.
 
 ## Attribution
 
-Attribution in CJA enables business users to understand each touch in the customer journey. Attribution showcases how customers momve from one touchpoint to another and brands use it to undertsand how advertising (banners on the website), content, products, etc... impact the customer journey.
+Attribution in CJA enables business users to understand each touch in the customer journey. Attribution showcases how customers move from one touchpoint to another and brands use it to understand how advertising (banners on the website), content, products, etc... impact the customer journey.
 
-With the omnichanel data that is available in Adobe Experience Platform, we can now provide attribution insights across online and offline channels to understand that for instance, a customer became interested in a product through an offline store visit, that the customer called the call-center for information and that the sale was done on the website.
+With the omnichannel data that is available in Adobe Experience Platform, we can now provide attribution insights across online and offline channels to understand that for instance, a customer became interested in a product through an offline store visit, that the customer called the call-center for information and that the sale was done on the website.
 
 Attribution in Customer Journey Analytics is one of the key differentiators from other BI solutions. Let's see how it works.
 
@@ -359,11 +359,11 @@ After checking the checkbox for ``Use non-default attribution model``, you'll se
 
 ![demo](./images/module135/c.png)
 
-Here you can change the model and the Lookback Window.
+Here you can change the model and the Look-back Window.
 
 You'll now see all available attribution models. To understand the differences between the attribution models, read this: [Adobe Analytics Attribution](https://www.adobe.com/content/dam/acom/en/data-analytics-cloud/analytics/pdfs/Adobe.Analytics.Attribution.Solution_Brief_Sept.2017.pdf)
 
-As already mentioned, you can even change the reporting lookback window. Depending on the model you'll have different options.
+As already mentioned, you can even change the reporting look-back window. Depending on the model you'll have different options.
 
 ![demo](./images/module135/f.png)
 
@@ -394,6 +394,6 @@ It can be really useful to bring disconnected data into your analysis to give co
 
 Congratulations, you have finished Module 13.
 
-[Go Back to Module 13](./README.md)
+[Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
 [Go Back to All Modules](../../README.md)

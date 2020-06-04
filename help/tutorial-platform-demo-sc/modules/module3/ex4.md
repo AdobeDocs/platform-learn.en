@@ -134,6 +134,6 @@ Let's now continue to the next exercise and build a segment through the API.
 
 Next Step: [Exercise 5 - Create a segment - API](./ex5.md)
 
-[Go Back to Foundation 2](./README.md)
+[Go Back to Foundation 2](./real-time-customer-profile.md)
 
 [Go Back to All Modules](../../README.md)

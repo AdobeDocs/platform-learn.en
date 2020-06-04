@@ -6,13 +6,13 @@ audience: all
 
 # SC Demo Tutorial {#sc-demo-tutorial}
 
-+ [Overview](/help/tutorial-platform-demo-sc/overview.md)
++ [Overview](/help/tutorial-platform-demo-sc/README.md)
 + Module 1: Foundation - Setup of Adobe Experience Platform Launch and the WebSDK extension{#module1}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module1/data-ingestion-launch-websdk.md)
 + Module 2: Foundation: Data Ingestion{#module2}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module2/data-ingestion.md)
   + [2.1 Explore the website](/help/tutorial-platform-demo-sc/modules/module2/ex2.md)
-  + [2.2 Configure Schema's and Set Identifiers](/help/tutorial-platform-demo-sc/modules/module2/ex2Z.md)
+  + [2.2 Configure Schema's and Set Identifiers](/help/tutorial-platform-demo-sc/modules/module2/ex2.md)
   + [2.3 Configure Datasets](/help/tutorial-platform-demo-sc/modules/module2/ex3.md)
   + [2.4 Use Launch and the Adobe Experience Platform Extension](/help/tutorial-platform-demo-sc/modules/module2/ex4.md)
   + [2.5 Data Ingestion from Offline Sources](/help/tutorial-platform-demo-sc/modules/module2/ex5.md)

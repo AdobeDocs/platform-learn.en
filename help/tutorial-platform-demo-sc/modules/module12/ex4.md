@@ -179,7 +179,7 @@ Click ``OK``.
 
 ![Demo](./images/jook.png)
 
-Next, we'll add the 3nd condition.
+Next, we'll add the 3rd condition.
 
 ## Condition 3: Warmer than 25° Celsius
 
@@ -638,6 +638,6 @@ In the next exercise, you'll be able to test your Journey.
 
 Next Step: [Exercise 12.5 - Trigger your Orchestrated Customer Journey](./ex5.md)
 
-[Go Back to Module 12](./README.md)
+[Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
 [Go Back to All Modules](../../README.md)

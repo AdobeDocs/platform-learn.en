@@ -47,7 +47,7 @@ It's now time to use your own custom, personalized demo environment and follow t
 
 ![Demo](./images/lb_cartee.png)
 
-* While the behavior is anonymous, Luma is able to track every click and store in in Platform. Once the anonymous customer becomes known, Luma will be able to merge all anonymous behaviour automatically to the know profile.
+* While the behavior is anonymous, Luma is able to track every click and store in in Platform. Once the anonymous customer becomes known, Luma will be able to merge all anonymous behavior automatically to the know profile.
 
 ### Step 2 - Unknown visitor registers on the Luma website
 
@@ -118,7 +118,7 @@ To use the new mobile app, you need to install the ```AEP Demo```-mobile app.
 
 ![Demo](./images/app_men_cat.png)
 
-* Go to the Account-screen and your Real-Time Customer Profile data will be refreshed, after which you'll see the ```Proteus Fitness Jackshirt (Orange)``` - product be part of your receent browse activity.
+* Go to the Account-screen and your Real-Time Customer Profile data will be refreshed, after which you'll see the ```Proteus Fitness Jackshirt (Orange)``` - product be part of your recent browse activity.
 
 ![Demo](./images/app_after_proteus.png)
 
@@ -163,7 +163,7 @@ Let's put Alexa into the story.
 
 ![Demo](./images/lb_x_afteralexa.png)
   
-### Step 5 - Call the most personal Call Center ever!
+### Step 5 - Call the most personal Call Center ever
 
 #### **Demo flow:**
 
@@ -183,6 +183,6 @@ With this, you've successfully completed this exercise.
 
 Congratulations, you've now finished Module 4.
 
-[Go Back to Module 4](./README.md)
+[Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
 [Go Back to All Modules](../../README.md)

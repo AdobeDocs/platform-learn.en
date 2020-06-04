@@ -30,7 +30,7 @@ However, the question "Who is this customer?" is a very open question that has m
 
 The same thing goes for the question "What does this customer do?". It's a very open question with many answers. When your company wants to see this question answered, you're looking for any interaction a customer has has had with any of your online and offline properties. Which pages or products have been visited? Has this customer added a product to his cart or even purchased an item? What device and browser has been used to browse the website? What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer? And finally, what we really need to know, is how we'll be identifying this customer in the various systems that your company will use.
 
-## Exercise 1.1 - Who is this customer?
+## Exercise 1.1 - Who is this customer
 
 Capturing the answer to "Who is this customer?" for your company is done through the Login/Registration-page.
 
@@ -375,7 +375,7 @@ Finally, click ``Save`` to save your schema.
 
 ![Data Ingestion](./images/save.png)
 
-## Exercise 1.2 - What does this customer do?
+## Exercise 1.2 - What does this customer do
 
 Capturing the answer to "What does this customer do" for your company is done through f.i. a Product View on a Product Page.
 
@@ -666,6 +666,6 @@ Let's have a look at datasets in the next exercise.
 
 Next Step: [Exercise 3 - Configure Datasets](./ex3.md)
 
-[Go Back to Module 1](./README.md)
+[Go Back to Module 1](./data-ingestion.md)
 
 [Go Back to All Modules](../../README.md)

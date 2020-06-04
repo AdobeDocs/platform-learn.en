@@ -75,6 +75,6 @@ Next Step - Option A: [Exercise 7.4.2 Explore the dataset with Power BI](./ex4a.
 
 Next Step - Option B: [Exercise 7.4.2 Explore the dataset with Tableau](./ex4b.md)
 
-[Go Back to Module 7](./README.md)
+[Go Back to Module 7](./query-service.md)
 
 [Go Back to All Modules](../../README.md)

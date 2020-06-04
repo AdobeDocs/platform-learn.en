@@ -481,8 +481,8 @@ Your screen should now look like this:
 
 ![GTM Setup](./images/gasave.png)
 
-And the final one:: **pageUrl**. On every new pageload, we need to capture the URL to send it to other solutions.
-Page URL is allready a built-in variable in GTM, so we do not really need to define this. But for consistency with other information on Platform we'll define pageUrl anyway.
+And the final one:: **pageUrl**. On every new page load, we need to capture the URL to send it to other solutions.
+Page URL is already a built-in variable in GTM, so we do not really need to define this. But for consistency with other information on Platform we'll define pageUrl anyway.
 
 In the ``User-Defined Variables`` - section, click ``New``.
 
@@ -502,6 +502,6 @@ You've finished configuring all required GTM Variables!
 
 Next Step: [Exercise 9.4 - Retrieve Platform Datasets](./ex4.md)
 
-[Go Back to Module 9](./README.md)
+[Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
 [Go Back to All Modules](../../README.md)

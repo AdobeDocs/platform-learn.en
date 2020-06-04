@@ -11,7 +11,7 @@ activity:
 
 **Authors: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-**In Module 16**, you'll setup your own instance of Google Cloud Platform, load demo data in Google Cloud Platfrom and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platfrom into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
+**In Module 16**, you'll setup your own instance of Google Cloud Platform, load demo data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
 
 Source Connectors in Adobe Experience Platform make the process of getting data into Adobe Experience Platform easy. Google BigQuery is one of the already available connectors. 
 

@@ -115,6 +115,6 @@ Please continue with the next exercise.
 
 Next Step: [Exercise 5.3 - Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
 
-[Go Back to Module 5](./README.md)
+[Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
 [Go Back to All Modules](../../README.md)
