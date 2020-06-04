@@ -26,7 +26,7 @@ Fill in these details:
 | Form field                | Value               |
 |:-------------------------------------------| :------------------ |
 |Account Name|SYTYCD - **ldap**|
-|Country|Choose the country where you work, or where your demowebsite runs|
+|Country|Choose the country where you work, or where your demo website runs|
 |Container name|www.platformdemo.net|
 |Target platform|Web|
 
@@ -66,6 +66,6 @@ You can now proceed with the next step, where we'll setup Google Analytics.
 
 Next Step: [Exercise 9.2 - Configure Google Analytics](./ex2.md)
 
-[Go Back to Module 9](./README.md)
+[Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
 [Go Back to All Modules](../../README.md)

@@ -56,7 +56,7 @@ You'll see this popup:
 
 ![demo](./images/prsave.png)
 
-Please use this naming convenction:
+Please use this naming convention:
 
 |  Name       | Description     |
 | ----------------- |-------------|
@@ -73,7 +73,7 @@ Although we have organized all the components in the Data View, you still need t
 If you remember, we didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View.
 However, we do have a dimension called: ``Product Interaction Type``. So, let's derive these interaction types by creating 3 calculated Metrics.
 
-Back in module 7, [Query Service](./../../modules/module7/README.md), you created a SQL query to get the interactions funnel:
+Back in module 7, [Query Service](./../../modules/module7/query-service.md), you created a SQL query to get the interactions funnel:
 
 **Query & Result**
 
@@ -207,7 +207,7 @@ Now click ``Save As`` to save your new Calculated Metric without overwriting the
 
 ### Filters: Calculated Time Dimensions
 
-Calculations are not meant to be only for Metrics. Before starting any analysis it's also interesting to create some ``Calculated Dimensions``. This basically meant ``segments`` back in Adobe Analytics. In CJA, these segments are called ``Filters``. The change on the name wants to avoid any confusion with Adobe Experience Platform audiencies / segments that at some point (roadmap) will be available as well in CJA.
+Calculations are not meant to be only for Metrics. Before starting any analysis it's also interesting to create some ``Calculated Dimensions``. This basically meant ``segments`` back in Adobe Analytics. In CJA, these segments are called ``Filters``. The change on the name wants to avoid any confusion with Adobe Experience Platform audiences / segments that at some point (roadmap) will be available as well in CJA.
 
 ![demo](./images/prfilters.png)
 
@@ -237,6 +237,6 @@ You've now finished the data preparation exercise using CJA Analysis Workspace.
 
 Next Step: [Exercise 13.5 - Visualization using Analysis WorkSpace](./ex5.md)
 
-[Go Back to Module 13](./README.md)
+[Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
 [Go Back to All Modules](../../README.md)

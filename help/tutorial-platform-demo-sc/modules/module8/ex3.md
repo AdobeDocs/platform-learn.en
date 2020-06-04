@@ -54,7 +54,7 @@ Example: for ldap vangeluw, the name become ```vangeluw - Recommendations Model`
 
 ![DSW](./images/modelname.png)
 
-We can also hypertune the Model by changing the Model Configuration. To do that, you can change the number of recommendations and the sampling fraction.
+We can also hyper-tune the Model by changing the Model Configuration. To do that, you can change the number of recommendations and the sampling fraction.
 
 ![DSW](./images/modelcfg.png)
 
@@ -98,6 +98,6 @@ After training your model, let's now score it in the next exercise.
 
 Next Step: [Exercise 8.4 - Scoring and Consumption of Insights](./ex4.md)
 
-[Go Back to Module 8](./README.md)
+[Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 
 [Go Back to All Modules](../../README.md)

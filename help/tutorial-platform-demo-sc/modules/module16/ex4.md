@@ -33,7 +33,7 @@ Select the ``Google BigQuery`` Source Connector and click on ``+ Connect source`
 
 ![demo](./images/ex4/0-b.png)
 
-You'll then see the Google BiqQuery Account selection screen.
+You'll then see the Google BigQuery Account selection screen.
 
 ![demo](./images/ex4/0-c.png)
 
@@ -198,6 +198,6 @@ You're now ready to continue with the next exercise, in which you'll use Custome
 
 Exercise 16.5 - [Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
 
-[Go Back to Module 16](./README.md)
+[Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
 [Go Back to All Modules](../../README.md)

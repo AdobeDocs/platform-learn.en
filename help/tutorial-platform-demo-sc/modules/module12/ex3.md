@@ -211,6 +211,6 @@ You've now defined Events, Data Sources and Actions - let's consolidate all of t
 
 Next Step: [Exercise 12.4 - Design a trigger-based Customer Journey](./ex4.md)
 
-[Go Back to Module 12](./README.md)
+[Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
 [Go Back to All Modules](../../README.md)

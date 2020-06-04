@@ -180,6 +180,6 @@ You've now successfully created an AWS S3 bucket, you've uploaded CSV files into
 
 Next Step: [Exercise 5.2 - Connect Informatica to your AWS S3 bucket](./ex2.md)
 
-[Go Back to Module 5](./README.md)
+[Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
 [Go Back to All Modules](../../README.md)

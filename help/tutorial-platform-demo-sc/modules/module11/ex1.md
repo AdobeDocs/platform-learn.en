@@ -15,9 +15,9 @@ The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](h
 
 ## Story
 
-In today's world, responding to a customer's behaviour needs to be real-time. One of the ways of responding to customer behaviour in real-time is by using a segment, on the condition that the segment qualifies in real-time. In this exercise, you need to build out a segment, taking into account real activity on the website that we've been using.
+In today's world, responding to a customer's behavior needs to be real-time. One of the ways of responding to customer behavior in real-time is by using a segment, on the condition that the segment qualifies in real-time. In this exercise, you need to build out a segment, taking into account real activity on the website that we've been using.
 
-## Identify the behaviour you want to react to...
+## Identify the behavior you want to react to
 
 Go to your AEP Demo-website.
 
@@ -149,6 +149,6 @@ When you now go back to the SYTYCD - website and refresh the homepage, you shoul
 
 Next Step: [Exercise 11.2 - Review how to configure DV360 Destination using Destinations](./ex2.md)
 
-[Go Back to Module 11](./README.md)
+[Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
 [Go Back to All Modules](../../README.md)

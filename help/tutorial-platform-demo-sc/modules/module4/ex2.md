@@ -276,6 +276,6 @@ You have finished this exercise.
 
 Next Step: [Exercise 4.3: Use your Alexa skill](./ex3.md)
 
-[Go Back to Module 4](./README.md)
+[Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
 [Go Back to All Modules](../../README.md)

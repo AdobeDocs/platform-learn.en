@@ -353,6 +353,6 @@ Well done! In the next exercise, you'll load data from that table and map it aga
 
 Next Step: [Exercise 16.4 - Load data from BigQuery into Adobe Experience Platform](./ex4.md)
 
-[Go Back to Module 16](./README.md)
+[Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
 [Go Back to All Modules](../../README.md)

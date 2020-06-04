@@ -144,6 +144,6 @@ if you'd like to add more segment exports, you can click ``Edit Activation`` to 
 
 Next Step: [Exercise 11.6 - Take Action: send your segment to Adobe Target](./ex6.md)
 
-[Go Back to Module 11](./README.md)
+[Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
 [Go Back to All Modules](../../README.md)

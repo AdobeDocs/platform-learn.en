@@ -39,7 +39,7 @@ In this Tech Lab, we'll be using 3 datasets:
 
 Let's have a look at the ``AEP Demo - Website Interactions``-dataset.
 
-On the Datasets - page, enter ``AEP Demo - Website Interactions`` in the searchbox.
+On the Datasets - page, enter ``AEP Demo - Website Interactions`` in the search box.
 
 ![DSW](./images/dssearch.png)
 
@@ -117,8 +117,8 @@ What you'll do next:
 * Read form Platform: Load the input dataset and describe it
 * Filter out empty values
 * Split the item_id into individual records
-* Create a new dataframe that holds the data that we need for our model
-* Write to Platform: Output that dataframe into a dataset in Adobe Experience Platform
+* Create a new data-frame that holds the data that we need for our model
+* Write to Platform: Output that data-frame into a dataset in Adobe Experience Platform
 
 ### Define the input and output datasets for this Notebook
 
@@ -287,7 +287,7 @@ Wait until the indicator looks like this before continuing:
 
 There is no visual result after this execution. After clicking the play - button, continue to the next step.
 
-### Write to Platform: Output that dataframe into a dataset in Adobe Experience Platform
+### Write to Platform: Output that data-frame into a dataset in Adobe Experience Platform
 
 Click on the next cell in the notebook.
 
@@ -344,6 +344,6 @@ The result in Adobe Experience Platform is that a new batch of data has been cre
 
 Next Step: [Exercise 8.2 - Model Authoring and Operationalization](./ex2.md)
 
-[Go Back to Module 8](./README.md)
+[Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 
 [Go Back to All Modules](../../README.md)

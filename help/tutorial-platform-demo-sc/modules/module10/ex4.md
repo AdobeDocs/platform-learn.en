@@ -13,7 +13,7 @@ activity:
 
 A recipe is a proprietary algorithm or an ensemble of algorithms to help solve a specific business problem.
 
-The feature engineering and model that you have prepared in the previous exercises can be converted into a recipe which can be used to train multiple datasets by changing a set of hyperparameters, like the learning rate, estimators, etc. to evaluate which training run gives the maximum accuracy and recall.
+The feature engineering and model that you have prepared in the previous exercises can be converted into a recipe which can be used to train multiple datasets by changing a set of hyper-parameters, like the learning rate, estimators, etc. to evaluate which training run gives the maximum accuracy and recall.
 
 Open the notebook ``Mod10 - Recipe Builder-Churn Recipe.ipynb``.
 
@@ -89,9 +89,6 @@ You'll find your recipe in the list.
 
 From this list, your Recipe can be used to experiment but no coding is required beyond this stage anymore.
 
-**To mark completion of Module 10, follow the instructions here:** <!--[How is completion measured?](./../../release/completion.md)-->
-This will mark your completion for Module 10.
-
-[Go Back to Module 10](./README.md)
+[Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
 [Go Back to All Modules](../../README.md)

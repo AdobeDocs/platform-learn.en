@@ -171,7 +171,7 @@ In the next set of queries we will extend the above query, in order to get a com
 
 ## Exercise 7.3.2
 
-The majority of the business logic requires gathering the touchpoints for a customer and ordering them by time. This support is provided by Spark SQL in the form of window functions. Window functions are part of standard SQL and are supported by many other SQL engines.
+The majority of the business logic requires gathering the touch-points for a customer and ordering them by time. This support is provided by Spark SQL in the form of window functions. Window functions are part of standard SQL and are supported by many other SQL engines.
 
 ### Adobe Defined Functions
 
@@ -586,6 +586,6 @@ In the next exercise you will persist your query (also known as **create table a
 
 Next Step: [Exercise 7.4 - Power BI/Tableau](./ex4.md)
 
-[Go Back to Module 7](./README.md)
+[Go Back to Module 7](./query-service.md)
 
 [Go Back to All Modules](../../README.md)

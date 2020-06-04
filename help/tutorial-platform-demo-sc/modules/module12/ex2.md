@@ -196,6 +196,6 @@ Your Data Source has now been created successfully and is part of the ``Data Sou
 
 Next Step: [Exercise 12.3 - Define a Custom Action](./ex3.md)
 
-[Go Back to Module 12](./README.md)
+[Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
 [Go Back to All Modules](../../README.md)

@@ -27,7 +27,7 @@ Make sure you are logged in into the Adobe Experience Platform UI and navigate t
 
 Bringing data from different channels is a tough task for any brand. And in this exercise, Luma Telco customers are engaging with Luma Telco on its website, on its mobile app, purchase data is collected by Luma Telco’s Point of Sale system, and they have CRM and Loyalty data. Luma Telco is using Adobe Analytics and Adobe Launch to capture data across its website, mobile app as well as POS system, so this data is already flowing into Adobe Experience Platform. Let's begin with exploring all the data for Luma Telco that already exists in Adobe Experience Platform.
 
-- In the left meu, click ``Datasets``.
+- In the left menu, click ``Datasets``.
 
 ![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
@@ -111,6 +111,6 @@ Now you are ready to start submitting queries!
 
 Next Step: [Exercise 7.2 - Using the Query Service](./ex2.md)
 
-[Go Back to Module 7](./README.md)
+[Go Back to Module 7](./query-service.md)
 
 [Go Back to All Modules](../../README.md)

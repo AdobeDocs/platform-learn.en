@@ -122,6 +122,6 @@ You have finished this exercise.
 
 Next Step: [Exercise 4.2: Define your Alexa skill](./ex2.md)
 
-[Go Back to Module 4](./README.md)
+[Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
 [Go Back to All Modules](../../README.md)

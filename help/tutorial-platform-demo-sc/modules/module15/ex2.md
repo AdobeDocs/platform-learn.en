@@ -53,7 +53,7 @@ Click on the ``Launch`` - button for JupyterLab.
 
 ![LocalNotebook](./images/launchjn.png)
 
-After that, your browser should open and show you the JupterLab startpage.
+After that, your browser should open and show you the JupyterLab start page.
 
 ![LocalNotebook](./images/jupstart.png)
 
@@ -107,12 +107,12 @@ Go to the next cell. This cell will load the ``AEP Demo - Car Insurance Interact
 
 ![LocalNotebook](./images/loadee.png)
 
-The ``AEP Demo - Car Insurance Interactions`` - dataset is now assigned to a dataframe, and now a data scientist can continue Exploration, Visualization and Model Development based on this dataframe.
+The ``AEP Demo - Car Insurance Interactions`` - dataset is now assigned to a data-frame, and now a data scientist can continue Exploration, Visualization and Model Development based on this data-frame.
 
 ![LocalNotebook](./images/df.png)
 
 Next Step: [Exercise 15.3 - Operationalize your model using a Recipe](./ex3.md)
 
-[Go Back to Module 15](./README.md)
+[Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
 [Go Back to All Modules](../../README.md)

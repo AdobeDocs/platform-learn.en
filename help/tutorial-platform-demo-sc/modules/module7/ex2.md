@@ -178,6 +178,6 @@ prod:all-> limit 1;
 
 Next Step: [Exercise 7.3 - Queries, queries, queries...  and churn analysis](./ex3.md)
 
-[Go Back to Module 7](./README.md)
+[Go Back to Module 7](./query-service.md)
 
 [Go Back to All Modules](../../README.md)

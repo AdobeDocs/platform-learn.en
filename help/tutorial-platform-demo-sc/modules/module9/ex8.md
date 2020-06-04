@@ -21,6 +21,6 @@ By checking the checkbox for ``Use Google``, you'll make sure that the GTM Tag w
 
 Next Step: [Exercise 9.9 - Verify Data Ingestion from website into Platform](./ex9.md)
 
-[Go Back to Module 9](./README.md)
+[Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
 [Go Back to All Modules](../../README.md)

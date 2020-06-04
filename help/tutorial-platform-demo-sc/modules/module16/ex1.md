@@ -23,7 +23,7 @@ BigQuery is one of these services and it is always included with Google Analytic
 
 Google Analytics data is loaded daily into BigQuery using a batch-mechanism. As such, it doesn't make any sense to use this GCP/BigQuery-integration for Real-time personalization and activation use cases.
 
-If a brand wants to deliver real-time personalization use-cases based on Google Analytics data, it can collect that data on the website with Google Tag Manager and then stream it to Adobe Experience Platform in real-time ([just like you did in Module 9](../../modules/module9/README.md)).
+If a brand wants to deliver real-time personalization use-cases based on Google Analytics data, it can collect that data on the website with Google Tag Manager and then stream it to Adobe Experience Platform in real-time ([just like you did in Module 9](../../modules/module9/data-ingestion-using-google-tag-manager-and-google-analytics.md)).
 
 The GCP/BigQuery Source Connector should be used to...
 
@@ -125,6 +125,6 @@ You can now move to Exercise 2 where you'll get your hands dirty by querying Goo
 
 Next Step: [Exercise 16.2 - Create your first query in BigQuery](./ex2.md)
 
-[Go Back to Module 16](./README.md)
+[Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
 [Go Back to All Modules](../../README.md)

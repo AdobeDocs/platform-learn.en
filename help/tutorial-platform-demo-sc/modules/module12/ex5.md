@@ -90,6 +90,6 @@ In this exercise, you'll test and trigger the Orchestrated Journey you configure
 
 If you've received your SMS Message, you've successfully completed this module.  
 
-[Go Back to Module 12](./README.md)
+[Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
 [Go Back to All Modules](../../README.md)

@@ -1,5 +1,5 @@
 ---
-title: Module 2, Exercise
+title: Module 1, Exercise
 description: 
 kt: 5342
 audience: 
@@ -17,7 +17,7 @@ Adobe Experience Platform plays a huge role in this journey. Platform is the bra
 
 Platform is an environment in which the word ``customer`` is broader than just the ``known``-customers. This is a very important thing to mention when speaking to brands: an unknown visitor on the website is also a customer from Platform's perspective and as such, all of the behavior as an unknown visitor is also sent to Platform. Thanks to that approach, when this customer eventually becomes a known customer, a brand can visualize what happened before that moment as well. This helps from an attribution and experience optimization perspective.
 
-## What are you going to do?
+## What are you going to do
 
 You will now ingest data into Adobe Experience Platform and that data will be linked to identifiers like ECIDs and email-addresses. The goal of this exercise is to understand the business context of what you're about to do from a configuration perspective. In the next exercise, you'll start configuring everything you need to make all that data ingestion possible in your own sandbox environment.
 
@@ -37,7 +37,7 @@ You will now ingest data into Adobe Experience Platform and that data will be li
 
 ![Demo](../module2/images/1b.png)
 
-* back on the ``Admin``-page, click ``Select Brand``.
+* Back on the ``Admin``-page, click ``Select Brand``.
 
 ![Demo](../module2/images/2.png)
 
@@ -94,52 +94,10 @@ You will now ingest data into Adobe Experience Platform and that data will be li
 
 ![Demo](../module2/images/lb_home_xee_dtl.png)
 
-After becoming a known customer, it's time to open the mobile app on your iPhone and then login to the app.
+You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email-addresses. The goal of this exercise is to understand the business context of what you're about to do. In the next exercise, you'll start configuring everything you need to make all that data ingestion possible.
 
-* You'll now see an updated homepage of the app, which matches the products and brand of the website you selected on the website.
+Next Step: [Exercise 2 - Configure Schema's and Set Identifiers](./ex2.md)
 
-![Demo](../module2/images/app_hp.png)
-
-* Go to the Account-screen.
-
-![Demo](../module2/images/app_acc.png)
-
-* Login with the Email ID you used in the previous exercise and the password of 1234.
-
-![Demo](../module2/images/app_acc_login.png)
-
-* See your Real-time Customer Profile data appear in the application, along with your Desktop Product Views
-
-![Demo](../module2/images/app_up.png)
-
-* Go to the app's Homepage
-
-![Demo](../module2/images/app_hp.png)
-
-* Go to any category
-
-![Demo](../module2/images/app_men_cat.png)
-
-* Click on a product to view it.
-
-![Demo](../module2/images/app_carst.png)
-
-* Go back to the previous screen
-
-![Demo](../module2/images/app_men_cat.png)
-
-* Go to the Account-screen and your Real-time Customer Profile data will be refreshed, after which you'll see the product you just viewed, be part of your Experience Events.
-
-![Demo](../module2/images/app_after_carst.png)
-
-* Now go back to your desktop computer and refresh the homepage, after which you'll see the Carstensen product also appear there.
-
-![Demo](../module2/images/lb_x_aftermobile.png)
-
-You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email-addresses. The goal of this exercise is to understand the business context of what you're about to do. You've now effectively built a Real-time, Cross-Device Customer Profile. In the next exercise, you'll go ahead and visualize your profile by making use of Adobe Experience Platform.
-
-Next Step: [Exercise 2 - Visualize your own real-time customer profile - UI](./ex2.md)
-
-[Go Back to Foundation 2](./README.md)
+[Go Back to Module 1](./data-ingestion.md)
 
 [Go Back to All Modules](../../README.md)

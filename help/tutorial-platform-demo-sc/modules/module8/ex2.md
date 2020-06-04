@@ -179,7 +179,7 @@ This is the result:
 
 ## Exercise 2.2 - Recipe Builder Notebook
 
-The Recipe Builder Notebook is one of our recent innovations that templatises your model to automatically package and operationalize it. The notebook has multiple templatized cells that you fit your model code into:
+The Recipe Builder Notebook is one of our recent innovations that templates your model to automatically package and operationalize it. The notebook has multiple templated cells that you fit your model code into:
 
 * The requirements and configuration cells allow you to add additional libraries and configure datasets and tuning parameters for your model
 * The evaluator cell enables you to split your data and evaluate the performance of your model
@@ -308,6 +308,6 @@ Now that you've created your recipe, let's continue with the next exercise, in w
 
 Next Step: [Exercise 8.3 - Model Training and Experimentation](./ex3.md)
 
-[Go Back to Module 8](./README.md)
+[Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 
 [Go Back to All Modules](../../README.md)

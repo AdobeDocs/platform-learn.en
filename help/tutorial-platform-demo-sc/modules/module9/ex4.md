@@ -191,6 +191,6 @@ Congratulations for reaching this point! Let's continue with the GTM Tags and Tr
 
 Next Step: [Exercise 9.5 - Configure GTM Tags & Triggers](./ex5.md)
 
-[Go Back to Module 9](./README.md)
+[Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
 [Go Back to All Modules](../../README.md)
