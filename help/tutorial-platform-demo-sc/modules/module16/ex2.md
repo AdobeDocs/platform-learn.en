@@ -1,13 +1,13 @@
 ---
-title: Module 16, Exercise
-description: 
+title: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector - Create your first query in BigQuery
+description: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector - Create your first query in BigQuery
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: 
 ---
 
-# 16.2 - Create your first query in BigQuery
+# 16.2 Create your first query in BigQuery
 
 ## Objectives
 
@@ -21,9 +21,9 @@ Google Analytics data loaded in BigQuery has a very ugly, however useful, format
 
 The solution to this problem: Let's transform Google Analytics data into a readable format to make the ingestion into Adobe Experience Platform easier.
 
-## 16.2.1 – Create a dataset to save new BigQuery Tables
+## Exercise 16.2.1 – Create a dataset to save new BigQuery Tables
 
-Go to the [BigQuery Console](https://console.cloud.google.com/bigquery).
+Go to the [BigQuery Console] (https://console.cloud.google.com/bigquery).
 
 ![demo](./images/ex3/1.png)
 
@@ -47,11 +47,12 @@ On the right side of your screen, you'll see the **Create dataset**-menu.
 
 For the **Dataset ID**, use the below naming convention. For the other fields, please leave the default settings.
 
-| Naming         | Example |
-| ----------------- | ------------- |
+| Naming         | Example |    
+| ----------------- | ------------- | 
 | ldap_BigQueryDataSets | delaigle_BigQueryDataSets |  
 
 ![demo](./images/ex3/6.png)
+
 
 Next, click **Create dataset**.
 
@@ -61,7 +62,7 @@ You'll then be back in the BigQuery Console with your dataset created.
 
 ![demo](./images/ex3/8.png)
 
-## 16.2.2 – Create your first SQL BigQuery
+## Exercise 16.2.2 – Create your first SQL BigQuery
 
 Next, you'll create your first query in BigQuery. The goal of this query is to take the Google Analytics sample data and transform it so that it can be ingested in Adobe Experience Platform.
 
@@ -69,7 +70,8 @@ Next, you'll create your first query in BigQuery. The goal of this query is to t
 
 Please copy the following SQL query and paste it into that Query Editor. Feel free to read the query and understand the GA BigQuery syntax.
 
-**sql
+
+```sql
 SELECT
   CONCAT(fullVisitorId, CAST(hitTime AS String), '-', hitNumber) AS _id,
   TIMESTAMP(DATETIME(Year_Current, Month_Current, Day_Current, Hour, Minutes, Seconds)) AS timeStamp,
@@ -103,17 +105,17 @@ SELECT
     0
   END
     ) AS Entries,
-
+    
 --Pageviews (metric)
     COUNT(*) AS Pageviews,
-
- -- Exits
+    
+ -- Exits 
     SUM(
     IF
       (isExit IS NOT NULL,
         1,
         0)) AS Exits,
-
+        
  --Bounces
    SUM(CASE
       WHEN isExit = TRUE AND isEntrance = TRUE THEN 1
@@ -121,7 +123,7 @@ SELECT
     0
   END
     ) AS Bounces,
-
+        
   -- Unique Purchases (metric)
   COUNT(DISTINCT TransactionID) AS Unique_Purchases,
   -- Product Detail Views (metric)
@@ -167,7 +169,7 @@ SELECT
     ELSE NULL
   END
     AS Landing_page,
-
+    
         -- Exit Page (dimension)
     CASE
       WHEN hits.isExit = TRUE THEN hits.page.pageTitle
@@ -175,7 +177,7 @@ SELECT
     NULL
   END
     AS Exit_page,
-
+    
     hits.page.pageTitle AS Page,
     hits.isEntrance,
     hits.isExit,
@@ -211,7 +213,7 @@ SELECT
     AND totals.visits = 1
     AND hits.type = 'PAGE'
     )
-
+    
 GROUP BY
   1,
   2,
@@ -227,9 +229,10 @@ GROUP BY
   12,
   13,
   14
-
+    
   ORDER BY 2 DESC
-**
+
+```
 
 When you are ready, click **Run** to run the query:
 
@@ -243,7 +246,7 @@ Once the query has finished running, you'll see the below output in the **Query 
 
 ![demo](./images/ex3/12.png)
 
-## 16.2.3 – Save the results of your BigQuery SQL query
+## Exercise 16.2.3 – Save the results of your BigQuery SQL query
 
 The next step is to save the output of your query by clicking the **SAVE RESULTS**-button.
 
@@ -255,16 +258,16 @@ As the location for your output, select **BigQuery table**.
 
 You'll then see a new popup, where your **Project Name** and **Dataset Name** are pre-populated. The dataset name should be the dataset that you created in the beginning of this exercise, with this naming convention:
 
-| Naming         | Example |
-| ----------------- | ------------- |
+| Naming         | Example |    
+| ----------------- | ------------- | 
 | ldap_BigQueryDataSets | delaigle_BigQueryDataSets |  
-
+ 
 ![demo](./images/ex3/15.png)
 
 You now need to enter a Table name. Please use this naming convention:
 
-| Naming         | Example |
-| ----------------- |------------- |
+| Naming         | Example |    
+| ----------------- |------------- | 
 | ldap\_GAdataTableBigQuery | delaigle\_GAdataTableBigQuery |  
 
 ![demo](./images/ex3/16.png)
@@ -285,8 +288,8 @@ It takes some time until the data is ready in the table we've created. After a c
 
 You con now continue with the next exercise, where you'll connect this table to Adobe Experience Platform.
 
-Next Step: [16.3 - Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
+Next Step: [16.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](./../../README.md)
