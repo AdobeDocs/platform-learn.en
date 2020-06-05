@@ -1,13 +1,13 @@
 ---
-title: Module 7, Exercise
-description: 
+title: Query Service
+description: Query Service
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---
 
-# Module 7: Adobe Experience Platform Query Service
+# 7. Query Service
 
 **Authors: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
@@ -16,58 +16,67 @@ activity:
 Query Service is a serverless tool. It supports SQL queries and connectivity from multiple client applications through its PostgreSQL compatibility.
 We will use data that has been injected into platform using either Web Interaction Data, Call Center Interactions in combination with Customer Loyalty Data uploaded into platform.
 
-## Key Takeaways
+## Learning Objectives
 
-* Become familiar with the Adobe Experience Platform UI
-* Connect to Query Service and run your SQL queries
-* Explore datasets in Adobe Experience Platform
-* Connect Tableau or Power BI to the Adobe Experience Platform Query Service to create visualizations and reports
+- Become familiar with the Adobe Experience Platform UI
+- Connect to Query Service and run your SQL queries
+- Explore datasets in Adobe Experience Platform
+- Connect Tableau or Power BI to the Adobe Experience Platform Query Service to create visualizations and reports
 
-## Prerequisites
+## Resources
 
-* Some familiarity with SQL is preferred, but not required
-* Access to Adobe Experience Platform
-* Datasets (dataset used during lab, pre-loaded for you)
-* Installation and configuration of PostgreSQL compliant client or command line interface
-* Tableau or Microsoft Power BI Desktop
+- Some familiarity with SQL is preferred, but not required
+- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Datasets (dataset used during lab, pre-loaded for you)
+- PostgreSQL
+- Tableau or Microsoft Power BI Desktop
 
-## Your Environment Variables
+>[!IMPORTANT]
+>
+>Your Adobe Experience Platform instance
+>
+>This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
+>
+>In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
+>
+>Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
-This documentation has been created to be reused across multiple Adobe Experience Platform instances for enablement purposes.
-In order to complete some of the modules, you'll need to change some variables and replace them by your specific ``Environment Variables``.
+## Exercises
 
-You can view these variables [here](../../environment.md).
-
-## Content
-
-### Exercise 7.0 - Pre-requisites
-
-[Exercise 7.0 - Pre-requisites](./ex0.md)
+### 7.0 Pre-requisites
 
 You will need to install psql to execute the queries in this enablement exercise. Depending on your operating system you will have to install Microsoft Power BI or Tableau. Windows users can choose between Power BI or Tableau. Mac users should install Tableau.
 
-### Exercise 7.1 - Getting Started
+Go to [7.0 Pre-requisites](./ex0.md)
 
-[Exercise 7.1 - Getting Started](./ex1.md)
+### 7.1 Getting Started
 
 In this exercise you will explore the Adobe Experience Platform Query Service User Interface, learn about data sets, find your queries and finally setup a connection from PSQL.
 
-### Exercise 7.2 - Using the Query Service
+Go to [7.1 Getting Started](./ex1.md)
 
-[Exercise 7.2 - Using the Query Service](./ex2.md)
+### 7.2 Using the Query Service
 
 In this exercise you will learn about the basic Query Service syntax and you can identify the attributes of the XDM schema in your query.
 
-### Exercise 7.3 - Queries, queries, queries...  and churn analysis
+Go to [7.2 Using the Query Service](./ex2.md)
 
-[Exercise 7.3 - Queries, queries, queries...  and churn analysis](./ex3.md)
+### 7.3 Queries, queries, queries...  and churn analysis
 
 In this exercise you will be doing queries, you will learn about the Adobe Defined Functions while doing some churn analysis. At the end of this exercise you will write a query to prepare a dataset for use in Microsoft Power BI.
 
-### Exercise 7.4 - Power BI/Tableau
+Go to [7.3 Queries, queries, queries...  and churn analysis](./ex3.md)
 
-[Exercise 7.4 - Power BI/Tableau](./ex4.md)
+### 7.4 Power BI/Tableau
 
 In this exercise you will generate a dataset from a query executed in the previous exercise and you will use this dataset in Power BI or Tableau to to Callcenter Interaction Analysis.
 
-[Go Back to Hands-On Lab Content](../../README.md)
+Go to [7.4 Power BI/Tableau](./ex4.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
+
+[Go Back to All Modules](../../README.md)

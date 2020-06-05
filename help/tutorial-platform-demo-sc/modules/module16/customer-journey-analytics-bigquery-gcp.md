@@ -31,12 +31,17 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 * Access to Adobe Experience Platform, Customer Journey Analytics
 * Understanding of Adobe Experience Platform data sets and XDM
 
-## Your Environment Variables
-
-This documentation has been created to be reused across multiple Adobe Experience Platform instances for enablement purposes.
-In order to complete some of the modules, you'll need to change some variables and replace them by your specific ``Environment Variables``.
-
-You can view these variables [here](../../environment.md).
+>[!IMPORTANT]
+>
+>Your Adobe Experience Platform instance
+>
+>This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
+>
+>In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
+>
+>Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
 ## Content
 
@@ -69,5 +74,9 @@ In this exercise, you'll learn how to configure the BigQuery Source Connector in
 [Exercise 16.5 - Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
 
 In this exercise, you'll learn how to analyze Google Analytics data in Customer Journey Analytics and combine it with Loyalty data.
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
 
 [Go Back to All Modules](../../README.md)

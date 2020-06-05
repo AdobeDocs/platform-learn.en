@@ -20,8 +20,9 @@ This training course doesn't just focus on Adobe applications, but takes into ac
 - Postman
 - Informatica
 - AWS Lambda
-- Amazon Alexa
+- AWS S3
 - AWS Kinesis
+- Amazon Alexa
 - Google Tag Manager
 - Google Analytics
 - Google Cloud Platform
@@ -140,7 +141,7 @@ Go to [9. Data Ingestion using Google Tag Manager and Google Analytics](./module
 
 Go to [10. Data Science Workspace - Churn Prediction Model](./modules/module10/data-science-workspace-churn-prediction-model.md).
 
-### 11. RTCDP - Build a segment and take action
+### 11. Real-time CDP - Build a segment and take action
 
 - **Audience:** Data Architect, Orchestration Engineer, Marketer
 - **Dependencies:** Access to Adobe Experience Platform, Real-time CDP, Adobe Audience Manager, Adobe Target, AWS S3

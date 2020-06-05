@@ -1,106 +1,113 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics
+description: Data Ingestion using Google Tag Manager and Google Analytics
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# Module 9: Data Ingestion using Google Tag Manager and Google Analytics
+# 9. Data Ingestion using Google Tag Manager and Google Analytics
 
 **Author: [Gerard Lindeboom](https://www.linkedin.com/in/gerardlindeboom/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In **Module 9**, the following topics will be addressed:
   
-* Configuration of Google Tag Manager
-* Basic setup of Google Analytics
-* Stream GA/GTM-data to Adobe Experience Platform in real-time
+- Configuration of Google Tag Manager
+- Basic setup of Google Analytics
+- Stream GA/GTM-data to Adobe Experience Platform in real-time
 
-In this module, the goal is to install and configure Google Tag Manager and Google Analytics and connect them to Platform by capturing data from our SYTYCD-environment client-side and streaming it in real-time to Adobe Experience Platform.
-This is to show that customers with an existing Google Analytics and Google Tag Manager implementation can also benefit from the power of Adobe Experience Platform, without limitations or latencies.
+In this module, the goal is to install and configure Google Tag Manager and Google Analytics and connect that to Adobe Experience Platform by capturing data from your AEP Demo website client-side and streaming it in real-time to Adobe Experience Platform.
+This is to show that brands with an existing Google Analytics and Google Tag Manager implementation can also benefit from the power of Adobe Experience Platform, without limitations or latencies.
 
-## Prerequisites
+## Learning Objectives
 
-* You must have a working version of the AEP Demo - environment on your local machine to complete this module.
+- Learn how to create a Google account
+- Learn how to set up a Google Tag Manager and Google Analytics property
+- Learn how to create variables and triggers in Google Tag Manager
+- Learn how to troubleshoot data ingestion into Adobe Experience Platform
 
 ## Resources
 
-* You will need a Google account. You can apply for one at [https://accounts.google.com/signup](https://accounts.google.com/signup).
-* Using that Google account you can get access to Google Analytics
-* You will setup and use Google Analytics on the AEP Demo website using Google Tag Manager [https://tagmanager.google.com](https://tagmanager.google.com)
+- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Google Tag Manager and Google Analytics
 
-## Story
+>[!IMPORTANT]
+>
+>Your Adobe Experience Platform instance
+>
+>This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
+>
+>In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
+>
+>Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
-After setting up our website, we now want to make sure that new Profile data (from sign-ups) and behavioral ExperienceEvent data (browsing habits, actionable triggers, etc) are recorded and updated in near real-time. We can do this by utilizing Google Tag Manager on our website. For this exercise, we will step into the shoes of the owners of Luma Retail, a fashion retail website, and see how we can bring in behavioral and profile data from website interactions into Experience Platform.
+## Exercises
 
-## Your Environment Variables
-
-This documentation has been created to be reused across multiple Adobe Experience Platform instances for enablement purposes.
-In order to complete some of the modules, you'll need to change some variables and replace them by your specific ``Environment Variables``.
-
-You can view these variables [here](../../environment.md).
-
-## Content
-
-### Exercise 9.0 - Create a Google Account
-
-[Exercise 9.0 - Create a Google Account](./ex0.md)
+### 9.0 Create a Google Account
 
 In this exercise, you'll set up a Google User Account. If you already have a Google User Account, you can skip this step.
 
-### Exercise 9.1 - Create a Google Tag Manager Property
+Go to [9.0 Create a Google Account](./ex0.md)
 
-[Exercise 9.1 - Create a Google Tag Manager Property](./ex1.md)
+### 9.1 Create a Google Tag Manager Property
 
 In this exercise, you'll set up a Google Tag Manager property. You will use this on the AEP Demo website to manage the Google Analytics code and to send data to platform.
 
-### Exercise 9.2 - Setup Google Analytics & link it to GTM
+Go to [9.1 Create a Google Tag Manager Property](./ex1.md)
 
-[Exercise 9.2 - Setup Google Analytics & link it to GTM](./ex2.md)
+### 9.2 Setup Google Analytics & link it to GTM
 
 In this exercise, you'll set up a Google Analytics property which will be used on your AEP Demo website.
 
-### Exercise 9.3 - Configure GTM Variables
+Go to [9.2 Setup Google Analytics & link it to GTM](./ex2.md)
 
-[Exercise 9.3 - Configure GTM Variables](./ex3.md)
+### 9.3 Configure GTM Variables
 
 In this exercise, you'll be configuring Data Elements so you can send data to Google Analytics and to Adobe Experience Platform.
 
-### Exercise 9.4 - Retrieve Data Sets in Platform
+Go to [9.3 Configure GTM Variables](./ex3.md)
 
-[Exercise 9.4 - Retrieve Data Sets in Platform](./ex4.md)
+### 9.4 Retrieve Data Sets in Platform
 
 In this exercise, you'll retrieve data sets in Adobe Experience Platform.
 
-### Exercise 9.5 - Configure GTM Tags & Triggers
+Go to [9.4 Retrieve Data Sets in Platform](./ex4.md)
 
-[Exercise 9.5 - Configure GTM Tags & Triggers](./ex5.md)
+### 9.5 Configure GTM Tags & Triggers
 
 After the configuration of variables in your Google Tag Manager property and retrieving the configuration of your datasets in the Adobe Experience Platform UI, you're now ready to configure your Google Tag Manager Tags to send real data into Adobe Experience Platform.
 
-### Exercise 9.6 - Publish your GTM Property
+Go to [9.5 Configure GTM Tags & Triggers](./ex5.md)
 
-[Exercise 9.6 - Publish your GTM Property](./ex6.md)
+### 9.6 Publish your GTM Property
 
 With all GTM configuration done now, let's publish your Google Tag Manager property.
 
-### Exercise 9.7 - Implement GTM Tag on SYTYCD website
+Go to [9.6 Publish your GTM Property](./ex6.md)
 
-[Exercise 9.7 - Implement GTM Tag on SYTYCD website](./ex7.md)
+### 9.7 Implement GTM Tag on your AEP Demo website
 
-After publishing your Google Tag Manager property, you can now implement it on your SYTCD-website.
+After publishing your Google Tag Manager property, you can now implement it on your AEP Demo website.
 
-### Exercise 9.8 - Activate GTM-tag in SYTYCD Admin
+Go to [9.7 Implement GTM Tag on your AEP Demo website](./ex7.md)
 
-[Exercise 9.8 - Activate GTM-tag in SYTYCD Admin](./ex8.md)
+### 9.8 Activate GTM-tag in your AEP Demo website Admin
 
-While creating your custom demo brand using SYTYCD, you can now activate the GTM Tag so that the GT Tag is loaded and sends calls to Adobe Experience Platform.
+While creating your custom demo brand using your AEP Demo website, you can now activate the GTM Tag so that the GT Tag is loaded and sends calls to Adobe Experience Platform.
 
-### Exercise 9.9 - Verify Data Ingestion from website into Platform
+Go to [9.8 Activate GTM-tag in your AEP Demo website Admin](./ex8.md)
 
-[Exercise 9.9 - Verify Data Ingestion from website into Platform](./ex9.md)
+### 9.9 Verify Data Ingestion from website into Platform
 
 With the implementation done now, you'll learn how you can verify your full implementation.
+
+Go to [9.9 Verify Data Ingestion from website into Platform](./ex9.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
 
 [Go Back to All Modules](../../README.md)

@@ -31,14 +31,19 @@ Most of these unknown, anonymous visitors only come to the website with one goal
 
 Because of this limited amount of information, Luma Insurance has a hard time optimizing any kind of digital campaign which leads to prospects being bombarded with irrelevant and inconsistent messaging.
 
-As a consequence, Luma Insurance can’t understand which customer are interesting targets and which customers aren’t, they’re unable to optimise their ad spend and they’re unable to understand which channels are best used to interact with any given customer.
+As a consequence, Luma Insurance can’t understand which customer are interesting targets and which customers aren’t, they’re unable to optimize their ad spend and they’re unable to understand which channels are best used to interact with any given customer.
 
-## Your Environment Variables
-
-This documentation has been created to be reused across multiple Adobe Experience Platform instances for enablement purposes.
-In order to complete some of the modules, you'll need to change some variables and replace them by your specific ``Environment Variables``.
-
-You can view these variables [here](../../environment.md).
+>[!IMPORTANT]
+>
+>Your Adobe Experience Platform instance
+>
+>This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
+>
+>In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
+>
+>Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
 ## Content
 
@@ -75,5 +80,9 @@ Finally, you can select your best experiment and Publish it as a Scheduled Servi
 ### FAQ
 
 [FAQ](./qa.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
 
 [Go Back to All Modules](../../README.md)

@@ -1,68 +1,72 @@
 ---
-title: Module 8, Exercise
-description: 
+title: Data Science Workspace - Popularity Based Recommendations
+description: Data Science Workspace - Popularity Based Recommendations
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# Module 8: Adobe Experience Platform Data Science Workspace
+# 8. Data Science Workspace - Popularity Based Recommendations
 
 **Authors: [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-## Lab Overview
+In **Module 8** you'll learn how to create a simple Machine Learning model that generates product recommendations using Data Science Workspace for retailers like Luma Retail that want to deliver personalized recommendations. When customers visit the website and click on a product, they should be presented with personalized product recommendations afterwards.
 
-Retailers like Luma and La Boutique want to deliver personalized recommendations. When customers visit the website and click on a product, they should be presented with personalized product recommendations.
+## Learning Objectives
 
-This lab will enable you to create a simple Machine Learning model that generates product recommendations for this website using Data Science Workspace.
+- Become familiar with the Adobe Experience Platform UI
+- Explore Adobe Experience Platform Data Science Workspace
+- Analyze and transform your data.
+- Author a model and operationalize it
+- Train your model and experiment
+- Score your model and consume the insights
 
-## Key Takeaways
+## Resources
 
-* Become familiar with the Adobe Experience Platform UI
-* Explore Adobe Experience Platform Data Science Workspace
-* Analyze and transform your data.
-* Author a model and operationalize it
-* Train your model and experiment
-* Score your model and consume the insights
+- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to the zip-file containing the 3 required notebooks
 
-## Prerequisites
+>[!IMPORTANT]
+>
+>Your Adobe Experience Platform instance
+>
+>This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
+>
+>In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
+>
+>Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
-* Adobe Experience Platform
-* Datasets (dataset used during lab, pre-loaded for you)
-* Zip-file containing the 3 required notebooks
+## Exercises
 
-## Your Environment Variables
+### 8.1 Data Exploration and Transformation
 
-This documentation has been created to be reused across multiple Adobe Experience Platform instances for enablement purposes.
-In order to complete some of the modules, you'll need to change some variables and replace them by your specific ``Environment Variables``.
+To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you'll explore purchase data flowing via Launch and WebSDK to Adobe Experience Platform and transform that data into a feature dataset that will be used to train your machine learning model.
 
-You can view these variables [here](../../environment.md).
+Go to [8.1 Data Exploration and Transformation](./ex1.md)
 
-## Content
+### 8.2 Model Authoring and Operationalization
 
-### Exercise 8.1 - Data Exploration and Transformation
+In exercise 1 you created the training data required to power your Machine Learning model. In this lesson you'll learn how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
-[Exercise 8.1 - Data Exploration and Transformation](./ex1.md)
+Go to [8.2 Model Authoring and Operationalization](./ex2.md)
 
-To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you will explore purchase data flowing via Adobe Analytics to Platform and transform that data into a Feature DataSet that can help train your machine learning model.
+### 8.3 Model Training and Experimentation
 
-### Exercise 8.2 - Model Authoring and Operationalization
+So you’ve prepared your data, authored your model and packaged it to test it at scale as a recipe. Now let’s go ahead and train and test the model at scale.
 
-[Exercise 8.2 - Model Authoring and Operationalization](./ex2.md)
+Go to [8.3 Model Training and Experimentation](./ex3.md)
 
-In exercise 1 we created the Training Data required to power our Machine Learning model. In this lesson we will show you how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
+### 8.4 Scoring and Consumption of Insights
 
-### Exercise 8.3 - Model Training and Experimentation
+Now that you've experimented with your recommendations model and have determined the optimal run, you can move on to scoring the model to generate product recommendations for customers.
 
-[Exercise 8.3 - Model Training and Experimentation](./ex3.md)
+Go to [8.4 Scoring and Consumption of Insights](./ex4.md)
 
-So we’ve prepared our data, authored our model and packaged it to test it at scale as a recipe. Now let’s go ahead and train and test the model at scale.
-
-### Exercise 8.4 - Scoring and Consumption of Insights
-
-[Exercise 8.4 - Scoring and Consumption of Insights](./ex4.md)
-
-Now that we’ve experimented with our recommendations model and have determined the optimal run, we can move on to scoring the model to generate product recommendations for customers.
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
 
 [Go Back to All Modules](../../README.md)
