@@ -1,13 +1,13 @@
 ---
-title: Module 13, Exercise
-description: 
+title: Customer Journey Analytics - Connect Adobe Experience Platform Datasets in Customer Journey Analytics
+description: Customer Journey Analytics - Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: 
 ---
 
-# 13.1 - Connect Adobe Experience Platform datasets in CJA
+# 13.1 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 
 ## Objectives
 
@@ -20,13 +20,13 @@ activity:
 
 Go to [analytics.adobe.com](https://analytics.adobe.com) to access Customer Journey Analytics.
 
-On the Customer Journey Analytics-homepage, go to **Connections**.
+On the Customer Journey Analytics-homepage, go to **Connections**. 
 
 ![demo](./images/cja2.png)
 
-Here you can see all the different connections made between CJA and AEP. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets.
+Here you can see all the different connections made between CJA and AEP. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets. 
 
-Let's create your first connection.
+Let's create your first connection. 
 
 ![demo](./images/cja3.png)
 
@@ -58,7 +58,7 @@ You'll see the dataset being added to the canvas.
 
 ![demo](./images/cja8.png)
 
-Now search and check the checkboxes for **AEP Demo - Voice Assistant Interactions** and **AEP Demo - Call Center Interactions**.
+Now search and check the checkboxes for **AEP Demo - Voice Assistant Interactions** and **AEP Demo - Call Center Interactions**. 
 
 Next, click **Add**.
 
@@ -72,7 +72,7 @@ You'll then have this:
 
 ### Person ID
 
-The goal now is to join these datasets. If you look at the right side you’ll see a field called **Person ID**.
+The goal now is to join these datasets. If you look at the right side you’ll see a field called **Person ID**. 
 
 ![demo](./images/cja11.png)
 
@@ -93,17 +93,17 @@ As mentioned, we can set different Person IDs for each dataset. This allows you 
 The name of the Person ID field isn't important, as long as the value in the Person ID fields correspond. Let say we have **EMAILID** in one dataset and **EmailAddress** in another dataset defined as Person ID. If **delaigle@adobe.com** is the same value for the Person ID-field on both datasets, CJA will be able to stitch the data.
 
 At this point, you may wonder, will the full ID Graph of Adobe Experience Platform's Real-time Customer Profile be available for stitching the data? This is part of the H2 2020 roadmap.
-Currently, CJA brings data directly from the datasets and isn't aware of the Real-time Customer Profile yet. That’s why, at this moment, you have to manually define the Person ID to get to the 360° view of the customer.
+Currently, CJA brings data directly from the datasets and isn't aware of the Real-time Customer Profile yet. That’s why, at this moment, you have to manually define the Person ID to get to the 360° view of the customer. 
 
-Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html).
+Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ] (https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html). 
 
 ### Stitching the data using the Person ID
 
-Now that you understand the concept of stitching datasets using the Person ID, let's choose **emailId** as your Person ID for each dataset.
+Now that you understand the concept of stitching datasets using the Person ID, let's choose **emailId** as your Person ID for each dataset. 
 
 ![demo](./images/cja15.png)
 
-Select each dataset by clicking on it.
+Select each dataset by clicking on it. 
 
 ![demo](./images/cja12.png)
 
@@ -111,13 +111,13 @@ Now fill the field Person ID choosing the **emailId** on the dropdown list.
 
 ![demo](./images/cja17.png)
 
-Once you have stitched the 3 datasets, we are ready to continue.
+Once you have stitched the 3 datasets, we are ready to continue. 
 
-|  dataset       | Person ID      |
-| ----------------- |-------------|
-| AEP Demo - Website Interactions | emailId         |
-| AEP Demo - Voice Assistant Interactions | emailId          |
-| AEP Demo - Call Center Interactions | emailId         |
+|  dataset       | Person ID | 
+| ----------------- |-------------| 
+| AEP Demo - Website Interactions | emailId         | 
+| AEP Demo - Voice Assistant Interactions | emailId          | 
+| AEP Demo - Call Center Interactions | emailId         | 
 
 Click on Next.
 
@@ -125,17 +125,17 @@ Click on Next.
 
 ## 13.2.4 Connection - Naming & Streaming
 
-Here you need to give a name to your connection.
+Here you need to give a name to your connection. 
 
-Please use this naming convention: **ldap – Omnichannel Data Connection**.
+Please use this naming convention: **ldap – Omnichannel Data Connection**. 
 
 Example: **vangeluw - Omnichannel Data Connection**
 
-Before finishing, please also activate **Automatically import all new data for all datasets in this connection, beginning today.** as in the image below.
+Before finishing, please also activate **Automatically import all new data for all datasets in this connection, beginning today.** as in the image below. 
 
 ![demo](./images/cja19.png)
 
-This will start a data flow from Adobe Experience Platform to CJA every 60 minutes, however with high volumes of data it can take up to 24 hours.
+This will start a data flow from Adobe Experience Platform to CJA every 60 minutes, however with high volumes of data it can take up to 24 hours. 
 
 If you also want to backfill historical data, check the checkbox for **Import all existing data**.
 
@@ -143,12 +143,14 @@ If you also want to backfill historical data, check the checkbox for **Import al
 
 After having created your **Connection** it may take a few hours before your data is available in CJA.
 
-Click **Save** and go to the next exercise.
+Click **Save** and go to the next exercise. 
 
 ![demo](./images/cjasave.png)
 
-Next Step: [13.3 - Create a Data View](./ex3.md)
+Next Step: [13.3 Create a Data View](./ex3.md)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](./../../README.md)
+
+
