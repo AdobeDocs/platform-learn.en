@@ -1,13 +1,13 @@
 ---
-title: Module 12, Exercise
-description: 
+title: Journey Orchestration - External Weather API, SMS Action & more - Define an External Data Source
+description: Journey Orchestration - External Weather API, SMS Action & more - Define an External Data Source
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 12.2 - Define an External Data Source
+# 12.2 Define an External Data Source
 
 In this exercise, you'll create a custom External Data Source by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
@@ -126,7 +126,7 @@ You can find the expected API JSON Response on the API Documentation page [here]
 
 Or you can copy the JSON Response from here:
 
-**json
+```json
 {"coord": { "lon": 139,"lat": 35},
   "weather": [
     {
@@ -166,7 +166,7 @@ Or you can copy the JSON Response from here:
   "name": "Shuzenji",
   "cod": 200
 }
-**
+```
 
 Copy the above JSON Response to your clipboard, then go to your custom Data Source configuration screen.
 
@@ -194,7 +194,7 @@ Your Data Source has now been created successfully and is part of the **Data Sou
 
 ![Demo](./images/dslist.png)
 
-Next Step: [12.3 - Define a Custom Action](./ex3.md)
+Next Step: [12.3 Define a Custom Action](./ex3.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 

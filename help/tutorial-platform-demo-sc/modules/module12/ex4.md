@@ -1,17 +1,17 @@
 ---
-title: Module 12, Exercise
-description: 
+title: Journey Orchestration - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
+description: Journey Orchestration - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 12.4 - Design a trigger-based Customer Journey
+# 12.4 Design a trigger-based Customer Journey
 
 In this exercise, you'll create an Orchestrated Journey by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
-Go to [https://experience.adobe.com/#/@experienceplatform/home](https://experience.adobe.com/#/@experienceplatform/home)
+Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
 You'll see the **Adobe Experience Cloud**-homepage.
 
@@ -171,7 +171,7 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/joc12.png)
 
-You can find the field by navigating to **geofenceEntryLdap._experienceplatform.locationService.currentPoiCity** (Replace Ldap by your LDAP). By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by f.i. the geolocation-service that you've implemented in your Mobile App.
+You can find the field by navigating to ```geofenceEntryLdap.<aepTenantId>.locationService.currentPoiCity``` (Replace Ldap by your LDAP). By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by f.i. the geolocation-service that you've implemented in your Mobile App.
 
 ![Demo](./images/joc13.png)
 
@@ -295,7 +295,7 @@ Navigate to the **Action Parameters**.
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit**-icon for the Action Paramater **TEXTMESSAGE**.
+Click on the **Edit**-icon for the Action Parameter **TEXTMESSAGE**.
 
 ![Demo](./images/joa12.png)
 
@@ -311,7 +311,7 @@ Select the below code, copy it and paste it in the **Advanced Mode Editor**.
 
 Click **OK**.
 
-Click on the **Edit**-icon for the Action Paramater **MOBILENR**.
+Click on the **Edit**-icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/joa15.png)
 
@@ -422,7 +422,7 @@ Navigate to the **Action Parameters**.
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit**-icon for the Action Paramater **TEXTMESSAGE**.
+Click on the **Edit**-icon for the Action Parameter **TEXTMESSAGE**.
 
 ![Demo](./images/joa12.png)
 
@@ -436,7 +436,7 @@ Select the below code, copy it and paste it in the **Advanced Mode Editor**.
 
 Click **OK**.
 
-Click on the **Edit**-icon for the Action Paramater **MOBILENR**.
+Click on the **Edit**-icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/jop15.png)
 
@@ -547,7 +547,7 @@ Navigate to the **Action Parameters**.
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit**-icon for the Action Paramater **TEXTMESSAGE**.
+Click on the **Edit**-icon for the Action Parameter **TEXTMESSAGE**.
 
 ![Demo](./images/joa12.png)
 
@@ -561,7 +561,7 @@ Select the below code, copy it and paste it in the **Advanced Mode Editor**.
 
 Click **OK**.
 
-Click on the **Edit**-icon for the Action Paramater **MOBILENR**.
+Click on the **Edit**-icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/jod15.png)
 
@@ -636,7 +636,7 @@ Your Journey is now published.
 
 In the next exercise, you'll be able to test your Journey.
 
-Next Step: [12.5 - Trigger your Orchestrated Customer Journey](./ex5.md)
+Next Step: [12.5 Trigger your Orchestrated Customer Journey](./ex5.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 

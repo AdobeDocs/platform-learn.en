@@ -1,13 +1,13 @@
 ---
-title: Module 12, Exercise
-description: 
+title: Journey Orchestration - External Weather API, SMS Action & more - Trigger your Orchestrated Customer Journey
+description: Journey Orchestration - External Weather API, SMS Action & more - Trigger your Orchestrated Customer Journey
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 12.5 - Trigger your Orchestrated Customer Journey
+# 12.5 Trigger your Orchestrated Customer Journey
 
 In this exercise, you'll test and trigger the Orchestrated Journey you configured in this module.
 
@@ -84,7 +84,7 @@ In this exercise, you'll test and trigger the Orchestrated Journey you configure
 
   ![Demo](./images/gf19.png)
 
-* The same message will also be sent to the Adobe Hands-On Lab Slack channel. Your instructor is able to show you the received messages in the Slack channel.
+* The same message will also be sent to the Adobe Hands-On Lab Slack channel. Your trainer is able to show you the received messages in the Slack channel.
   
   ![Demo](./images/gf18.png)
 

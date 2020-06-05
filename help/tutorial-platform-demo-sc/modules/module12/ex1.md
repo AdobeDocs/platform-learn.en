@@ -1,17 +1,17 @@
 ---
-title: Module 12, Exercise
-description: 
+title: Journey Orchestration - External Weather API, SMS Action & more - Define an Event
+description: Journey Orchestration - External Weather API, SMS Action & more
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 12.1 - Define an Event
+# 12.1 Define an Event
 
 In this exercise, you'll create a custom Event by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
-Go to [https://experience.adobe.com/#/@experienceplatform/home](https://experience.adobe.com/#/@experienceplatform/home)
+Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
 You'll see the **Adobe Experience Cloud**-homepage.
 
@@ -103,11 +103,11 @@ Fields like the ECID and the Orchestration eventID are required and as such pres
 However, a marketeer needs to have flexible access to all data points that provide context to a Journey. So let's make sure to select the following fields as a minimum as well:
 
 * locationService
-  * currentPoiCity
-  * currentPoiCountry
-  * currentPoiLat
-  * currentPoiLon
-  * currentPoiName
+* currentPoiCity
+* currentPoiCountry
+* currentPoiLat
+* currentPoiLon
+* currentPoiName
 
 ![Demo](./images/popupls.png)
 
@@ -154,7 +154,7 @@ You've now defined the event that will trigger the Journey we're building. Once 
 
 As discussed in the use-case description, we then need to provide contextual promotions that depend on the weather. In order to get weather information, we'll need to define an external data sources that will provide us with the weather information for that location. We'll use the **OpenWeather**-service to provide us what that information, as part of 2.
 
-Next Step: [12.2 - Define an External Data Source](./ex2.md)
+Next Step: [12.2 Define an External Data Source](./ex2.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
