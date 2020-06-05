@@ -1,13 +1,13 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics - Configure GTM Tags & Triggers
+description: Data Ingestion using Google Tag Manager and Google Analytics - Configure GTM Tags & Triggers
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.5 - Configure GTM Tags & Triggers
+# 9.5 Configure GTM Tags & Triggers
 
 After creating the extensions and data elements, it's time to build our Rules or **Triggers** as they are called in GTM.
 
@@ -139,13 +139,13 @@ In the menu, select **Custom HTML**.
 
 Paste this code in the Tag:
 
-**javascript
+```javascript
 <script>
 console.log(">>>>> GA - All General Pages - Sending PageView to DCS");
   
 fetch("{{dcsStreamingEndpoint}}", {"credentials":"omit","headers":{"accept":"*/*","accept-language":"en-US,es;q=0.9,en;q=0.8","cache-control":"no-cache","content-type":"application/json","pragma":"no-cache","sec-fetch-mode":"cors","sec-fetch-site":"cross-site"},"referrer":"{{pageUrl}}","referrerPolicy":"no-referrer-when-downgrade","body":"{\"header\":{\"datasetId\":\"{{eeDatasetId}}\",\"imsOrgId\":\"{{imsOrgId}}\",\"source\":{\"name\":\"GA\"},\"schemaRef\":{\"id\":\"{{eeSchemaRef}}\",\"contentType\":\"application/vnd.adobe.xed-full+json;version=1\"}},\"body\":{\"xdmMeta\":{\"schemaRef\":{\"id\":\"{{eeSchemaRef}}\",\"contentType\":\"application/vnd.adobe.xed-full+json;version=1\"}},\"xdmEntity\":{\"_id\":\"{{pageHitId}}\",\"web\":{\"webPageDetails\":{\"name\":\"{{pageName}}\",\"pageViews\":{\"value\":1}}},\"timestamp\":\"{{pageTimeStamp}}\",\"environment\":{\"browserDetails\":{\"userAgent\":\"{{pageUserAgent}}\",\"acceptLanguage\":\"{{customerLanguage}}\"}},\"{{aepTenantId}}\":{\"brand\":{\"brandName\":\"{{brandName}}\",\"tms\":\"GTM\"},\"identification\":{\"gaid\":\"{{gaClientId}}\"}}}}}","method":"POST","mode":"cors"});
 </script>
-**
+```
 
 Your configuration should now look like this:
 
@@ -188,13 +188,13 @@ In the menu, select **Custom HTML**.
 
 Paste this code in the Tag:
 
-**javascript
+```javascript
 <script>
 console.log(">>>>> GA - All Product Pages - Sending Product View to DCS");
   
 fetch("{{dcsStreamingEndpoint}}", {"credentials":"omit","headers":{"accept":"*/*","accept-language":"en,nl;q=0.9,en-US;q=0.8,en-GB;q=0.7,sv;q=0.6,it;q=0.5,fr;q=0.4,es;q=0.3,da;q=0.2,de;q=0.1","content-type":"application/json","sec-fetch-mode":"cors","sec-fetch-site":"cross-site"},"referrer":"{{pageUrl}}","referrerPolicy":"no-referrer-when-downgrade","body":"{\"header\":{\"datasetId\":\"{{eeDatasetId}}\",\"imsOrgId\":\"{{imsOrgId}}\",\"source\":{\"name\":\"vangeluw Launch 2\"},\"schemaRef\":{\"id\":\"{{eeSchemaRef}}\",\"contentType\":\"application/vnd.adobe.xed-full+json;version=1\"}},\"body\":{\"xdmMeta\":{\"schemaRef\":{\"id\":\"{{eeSchemaRef}}\",\"contentType\":\"application/vnd.adobe.xed-full+json;version=1\"}},\"xdmEntity\":{\"_id\":\"{{pageHitId}}\",\"web\":{\"webPageDetails\":{\"name\":\"{{pageName}}\"}},\"commerce\":{\"productViews\":{\"value\":1}},\"timestamp\":\"{{pageTimeStamp}}\",\"environment\":{\"browserDetails\":{\"userAgent\":\"{{pageUserAgent}}\",\"acceptLanguage\":\"{{customerLanguage}}\"}},\"identityMap\":{\"GOOGLE\":[{\"id\":\"{{gaClientId}}\"}]},\"productListItems\":[{\"SKU\":\"{{productName}}\",\"priceTotal\":{{productPrice}},\"quantity\":1,\"name\":\"{{productName}}\",\"product\":\"{{productImageUrl}}\",\"productAddMethod\":\"Desktop\"}],\"{{aepTenantId}}\":{\"brand\":{\"brandName\":\"{{brandName}}\",\"tms\":\"GTM\"},\"productData\":{\"productUrl\":\"{{productImageUrl}}\",\"productName\":\"{{productName}}\",\"productInteraction\":\"{{productInteraction}}\"},\"identification\":{\"gaid\":\"{{gaClientId}}\"}}}}}","method":"POST","mode":"cors"});
 </script>
-**
+```
 
 Your configuration should now look like this:
 
@@ -237,13 +237,13 @@ In the menu, select **Custom HTML**.
 
 Paste this code in the Tag:
 
-**javascript
+```javascript
 <script>
 console.log(">>>>> GA - All Authenticated Pages - Sending PageView to DCS");
   
 fetch("{{dcsStreamingEndpoint}}", {"credentials":"omit","headers":{"accept":"*/*","accept-language":"en,nl;q=0.9,en-US;q=0.8,en-GB;q=0.7,sv;q=0.6,it;q=0.5,fr;q=0.4,es;q=0.3,da;q=0.2,de;q=0.1","content-type":"application/json","sec-fetch-mode":"cors","sec-fetch-site":"cross-site"},"referrer":"{{pageUrl}}","referrerPolicy":"no-referrer-when-downgrade","body":"{\"header\":{\"datasetId\":\"{{profileDatasetId}}\",\"imsOrgId\":\"{{imsOrgId}}\",\"source\":{\"name\":\"GA\"},\"schemaRef\":{\"id\":\"{{profileSchemaRef}}\",\"contentType\":\"application/vnd.adobe.xed-full+json;version=1\"}},\"body\":{\"xdmMeta\":{\"schemaRef\":{\"id\":\"{{profileSchemaRef}}\",\"contentType\":\"application/vnd.adobe.xed-full+json;version=1\"}},\"xdmEntity\":{\"_repo\":{\"createDate\":\"{{pageTimeStamp}}\"},\"person\":{\"name\":{\"lastName\":\"{{customerLastName}}\",\"firstName\":\"{{customerFirstName}}\"}},\"{{aepTenantId}}\":{\"identification\":{\"gaid\":\"{{gaClientId}}\",\"emailId\":\"{{customerEmail}}\",\"mobilenr\":\"{{customerMobileNr}}\"}}}}}","method":"POST","mode":"cors"});
 </script>
-**
+```
 
 Your configuration should now look like this:
 
@@ -251,7 +251,7 @@ Your configuration should now look like this:
 
 You can now publish you configuration in the next exercise.
 
-Next Step: [9.6 - Publish GTM Property](./ex6.md)
+Next Step: [9.6 Publish GTM Property](./ex6.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

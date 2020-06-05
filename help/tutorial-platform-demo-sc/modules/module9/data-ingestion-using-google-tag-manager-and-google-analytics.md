@@ -94,17 +94,11 @@ After publishing your Google Tag Manager property, you can now implement it on y
 
 Go to [9.7 Implement GTM Tag on your AEP Demo website](./ex7.md)
 
-### 9.8 Activate GTM-tag in your AEP Demo website Admin
-
-While creating your custom demo brand using your AEP Demo website, you can now activate the GTM Tag so that the GT Tag is loaded and sends calls to Adobe Experience Platform.
-
-Go to [9.8 Activate GTM-tag in your AEP Demo website Admin](./ex8.md)
-
-### 9.9 Verify Data Ingestion from website into Platform
+### 9.8 Verify Data Ingestion from website into Platform
 
 With the implementation done now, you'll learn how you can verify your full implementation.
 
-Go to [9.9 Verify Data Ingestion from website into Platform](./ex9.md)
+Go to [9.8 Verify Data Ingestion from website into Platform](./ex8.md)
 
 >[!NOTE]
 >

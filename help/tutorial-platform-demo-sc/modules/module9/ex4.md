@@ -1,13 +1,13 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics - Retrieve Datasets in Platform
+description: Data Ingestion using Google Tag Manager and Google Analytics - Retrieve Datasets in Platform
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.4 - Retrieve Datasets in Platform
+# 9.4 Retrieve Datasets in Platform
 
 As part of the GTM Rule configuration, we'll define rules that will send behavioral and profile data to Platform. When defining a tag and trigger in GTM to send behavioral and/or profile data to Adobe Experience Platform, we'll need to define some variables in GTM:
 
@@ -20,7 +20,7 @@ We'll go into Platform to retrieve most of that information, to then fill out th
 
 | Name | GTM Variable Name | Constant Value |
 | ------------- | ------------- | ------------- |
-| Adobe Organization ID | imsOrgId |\<imsOrg\>|
+| Adobe Organization ID | imsOrgId |\<imsOrg>|
 | DCS Streaming Endpoint | dcsStreamingEndpoint | \<dcsInletId\> |
 | Profile Dataset ID | profileDatasetId |  |
 | Profile Schema Reference | profileSchemaRef |  |
@@ -46,8 +46,7 @@ You can consult these schema's by going to **Schemas** in the Platform menu.
 If you'd like to know more about XDM, please have a look here:
 
 * [https://www.adobe.io/open/standards/xdm.html](https://www.adobe.io/open/standards/xdm.html)
-* [https://github.com/adobe/xdm
-](https://github.com/adobe/xdm)
+* [https://github.com/adobe/xdm](https://github.com/adobe/xdm)
 
 Search for **AEP Demo - GA Website Registrations Schema** to find the Profile XDM for your Platform Org.
 
@@ -96,12 +95,12 @@ After having consulted the above Schemas and Datasets, you can now fill out the 
 
 | Name | GTM Variable Name | Constant Value |
 | ------------- | ------------- | ------------- |
-| Adobe Organization ID | imsOrgId |\<imsOrg\>|
+| Adobe Organization ID | imsOrgId |\<imsOrg>|
 | DCS Streaming Endpoint | dcsStreamingEndpoint |\<dcsInletId>|
 | Profile Dataset ID | profileDatasetId | 5ea04d5b005a6e18a8bc88af |
-| Profile Schema Reference | profileSchemaRef |https://ns.adobe.com/apac_sc/schemas/18c20233e055248c013f76df48c47670|
+| Profile Schema Reference | profileSchemaRef |https://ns.adobe.com/\<aepTenantId>/schemas/18c20233e055248c013f76df48c47670|
 | Experience Event Dataset ID | eeDatasetId | 5ea04d5b25b79d18aa3b5f93 |
-| Experience Event Schema Reference | eeSchemaRef |https://ns.adobe.com/apac_sc/schemas/226a6fc8e72fc7d7f0d9844c117d5006|
+| Experience Event Schema Reference | eeSchemaRef |https://ns.adobe.com/\<aepTenantId>/schemas/226a6fc8e72fc7d7f0d9844c117d5006|
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
@@ -189,7 +188,7 @@ Finally, we'll configure the Variable for **Experience Event Schema Reference**.
 
 Congratulations for reaching this point! Let's continue with the GTM Tags and Triggers Configuration now.
 
-Next Step: [9.5 - Configure GTM Tags & Triggers](./ex5.md)
+Next Step: [9.5 Configure GTM Tags & Triggers](./ex5.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

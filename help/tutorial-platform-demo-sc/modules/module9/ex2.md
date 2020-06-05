@@ -1,13 +1,13 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics - Setup Google Analytics & link it to GTM
+description: Data Ingestion using Google Tag Manager and Google Analytics - Setup Google Analytics & link it to GTM
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.2 - Setup Google Analytics & link it to GTM
+# 9.2 Setup Google Analytics & link it to GTM
 
 Go to [https://analytics.google.com/](https://analytics.google.com/) and login with your Google Account.
 
@@ -171,7 +171,7 @@ Now click **Publish**.
 
 ![GA setup](./images/gapublish.png)
 
-You're then seeing the versions tab in GTM, showing you the summary of what you just published. This will not be active yet, since we have not yet implemented the GTM tag on the SYTYCD-website. We'll be doing that in a later exercise.
+You're then seeing the versions tab in GTM, showing you the summary of what you just published. This will not be active yet, since we have not yet implemented the GTM tag on the AEP Demo-website. We'll be doing that in a later exercise.
 
 ![GA setup](./images/ga-publish3.png)
 
@@ -179,7 +179,7 @@ From here you can click back to the **Workspace** tab, where you can add more Ta
 
 ![GA setup](./images/gaworkspace.png)
 
-Next Step: [9.3 - Configure GTM Variables](./ex3.md)
+Next Step: [9.3 Configure GTM Variables](./ex3.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

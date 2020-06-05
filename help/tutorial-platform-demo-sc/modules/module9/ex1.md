@@ -1,13 +1,13 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics - Create a Google Tag Manager Property
+description: Data Ingestion using Google Tag Manager and Google Analytics - Create a Google Tag Manager Property
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.1 - Create a Google Tag Manager Property
+# 9.1 Create a Google Tag Manager Property
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your Google Account.
 
@@ -64,7 +64,7 @@ After clicking OK, you're now seeing the standard GTM homepage.
 
 You can now proceed with the next step, where we'll setup Google Analytics.
 
-Next Step: [9.2 - Configure Google Analytics](./ex2.md)
+Next Step: [9.2 Configure Google Analytics](./ex2.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

@@ -1,13 +1,13 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics - Publish your GTM Property
+description: Data Ingestion using Google Tag Manager and Google Analytics - Publish your GTM Property
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.6 - Publish your GTM Property
+# 9.6 Publish your GTM Property
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
@@ -35,9 +35,9 @@ Finally, you'll see a confirmation of your publication.
 
 ![Launch Setup](./images/env.png)
 
-Your GTM Property is now published. The last thing to do now is to setup the GTM Tags on thee SYTYCD-website so that the GTM configuration is being loaded.
+Your GTM Property is now published. The last thing to do now is to setup the GTM Tags on the AEP Demo-website so that the GTM configuration is being loaded.
 
-Next Step: [9.7 - Implement GTM Tag on SYTYCD website](./ex7.md)
+Next Step: [9.7 Implement GTM Tag on AEP Demo website](./ex7.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
