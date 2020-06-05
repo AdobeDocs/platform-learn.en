@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 10.1 - Introduction to Data Science
+# 10.1 - Introduction to Data Science
 
 ## Introduction to Data Science
 
@@ -23,7 +23,7 @@ In 1980s, IBM came up with the first relational database storing data like custo
 
 Soon after, we started thinking of what useful things we can mine from this data and the term data mining was coined.
 
-In a paper called ``From Data mining to Knowledge Discovery in databases``, Data Mining is the application of specific algorithms for extracting patterns from data.
+In a paper called **From Data mining to Knowledge Discovery in databases**, Data Mining is the application of specific algorithms for extracting patterns from data.
 
 In the 1990s, when computer science was developing with incredible speeds, people started thinking about combining data mining with computer science and thus the word data science was born.
 
@@ -55,7 +55,7 @@ With Data Science Workspace, Adobe Experience Platform allows you to streamline 
 
 * **Trained Model**: An instance of the recipe that is  trained using historical data to learn from. The trained model finds patterns in the training data to predict the target.
 
-* **Service**: Service that is created from a ``trained model`` to be used in building experiments.
+* **Service**: Service that is created from a **trained model** to be used in building experiments.
 
 * **Jupyter Notebook**: An open-source web application that allows you to create and share documents that contain live code, equations, visualizations and narrative text.
 
@@ -64,7 +64,7 @@ Examples: depth of decision tree, number of hidden layers, learning rate, etc.
 
 Let's continue with a hands-on exercise.
 
-Next Step: [Exercise 10.2 - Churn Prediction: Data Preparation](./ex2.md)
+Next Step: [10.2 - Churn Prediction: Data Preparation](./ex2.md)
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 

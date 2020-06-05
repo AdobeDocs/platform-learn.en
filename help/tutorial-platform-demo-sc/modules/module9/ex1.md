@@ -7,13 +7,13 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 9.1 - Create a Google Tag Manager Property
+# 9.1 - Create a Google Tag Manager Property
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your Google Account.
 
 ![GTM Setup](./images/gtm-firsttime.png)
 
-Click ``Create Account`` to setup your GTM property.
+Click **Create Account** to setup your GTM property.
 
 ![GTM Setup](./images/gtm1-create-account-button.png)
 
@@ -34,7 +34,7 @@ After filling in the details your screen should look like this
 
 ![GTM Setup](./images/gtm2-create-account.png)
 
-Click ``Create``
+Click **Create**
 
 ![GTM Setup](./images/gtm3-terms-create.png)
 
@@ -42,11 +42,11 @@ This brings you to the screen where you'll have to accept the terms.
 
 ![GTM Setup](./images/gtm3-terms.png)
 
-Check the checkbox for ``I also accept the Data Processing Terms as required by GDPR. Learn more``.
+Check the checkbox for **I also accept the Data Processing Terms as required by GDPR. Learn more**.
 
 ![GTM Setup](./images/gtm3-terms-checkbox.png)
 
-Click ``Yes``.
+Click **Yes**.
 
 ![GTM Setup](./images/gtm3-terms-checkbox-yes.png)
 
@@ -64,7 +64,7 @@ After clicking OK, you're now seeing the standard GTM homepage.
 
 You can now proceed with the next step, where we'll setup Google Analytics.
 
-Next Step: [Exercise 9.2 - Configure Google Analytics](./ex2.md)
+Next Step: [9.2 - Configure Google Analytics](./ex2.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

@@ -7,23 +7,23 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 9.6 - Publish your GTM Property
+# 9.6 - Publish your GTM Property
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
-In the GTM UI, in the menu option ``Workspace`` - ``Tags``, you should now see 4 tags. You now need to publish them.
+In the GTM UI, in the menu option **Workspace** - **Tags**, you should now see 4 tags. You now need to publish them.
 
 ![Launch Setup](./images/workspace.png)
 
-To start the publishing process, click the ``Submit``-button.
+To start the publishing process, click the **Submit**-button.
 
 ![Launch Setup](./images/submit.png)
 
-Next, click the ``Publish`` - button.
+Next, click the **Publish** - button.
 
 ![Launch Setup](./images/publish.png)
 
-Click ``Continue`` on the next screen.
+Click **Continue** on the next screen.
 
 ![Launch Setup](./images/continue.png)
 
@@ -37,7 +37,7 @@ Finally, you'll see a confirmation of your publication.
 
 Your GTM Property is now published. The last thing to do now is to setup the GTM Tags on thee SYTYCD-website so that the GTM configuration is being loaded.
 
-Next Step: [Exercise 9.7 - Implement GTM Tag on SYTYCD website](./ex7.md)
+Next Step: [9.7 - Implement GTM Tag on SYTYCD website](./ex7.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

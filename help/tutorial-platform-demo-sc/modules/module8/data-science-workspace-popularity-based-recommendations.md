@@ -49,7 +49,7 @@ Go to [8.1 Data Exploration and Transformation](./ex1.md)
 
 ### 8.2 Model Authoring and Operationalization
 
-In exercise 1 you created the training data required to power your Machine Learning model. In this lesson you'll learn how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
+In 1 you created the training data required to power your Machine Learning model. In this lesson you'll learn how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
 Go to [8.2 Model Authoring and Operationalization](./ex2.md)
 

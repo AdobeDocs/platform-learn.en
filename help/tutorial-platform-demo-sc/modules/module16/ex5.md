@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 16.5 - Analyze Google Analytics Data using Customer Journey Analytics
+# 16.5 - Analyze Google Analytics Data using Customer Journey Analytics
 
 ## Objectives
 
@@ -25,9 +25,9 @@ Thanks to Adobe Experience Platform and the BigQuery Source Connector we can now
 
 Go to [analytics.adobe.com](https://analytics.adobe.com) to access Customer Journey Analytics.
 
-You'll the see the Customer Journey Analytics workspace home page. Please select the project ``ldap - Google Analytics``.
+You'll the see the Customer Journey Analytics workspace home page. Please select the project **ldap - Google Analytics**.
 
-The project ``ldap - Google Analytics`` has been shared to you. However, if you don't see the project with your ldap, please send an email to **sytycd-admins@adobe.com**.
+The project **ldap - Google Analytics** has been shared to you. However, if you don't see the project with your ldap, please send an email to **sytycd-admins@adobe.com**.
 
 ![demo](./images/ex5/4.png)
 
@@ -41,9 +41,9 @@ The Customer Journey Analytics-project has been curated by the team behind the T
 
 The goal of this project is to showcase the analysis we can do using Google Analytics data in combination with the other datasets we have available in Adobe Experience Platform.
 
-We have built a Connection in Customer Journey Analytics that combines the Google Analytics-data that was ingested through the BigQuery Source Connectors (``BigQuery - Website Interactions``-dataset) as part of the previous exercise, and Loyalty Data.
+We have built a Connection in Customer Journey Analytics that combines the Google Analytics-data that was ingested through the BigQuery Source Connectors (**BigQuery - Website Interactions**-dataset) as part of the previous exercise, and Loyalty Data.
 
-This Connection is called: ``all - GA + Loyalty Connection`` and you can review it by going through the ``Connections``-tab in Customer Journey Analytics.
+This Connection is called: **all - GA + Loyalty Connection** and you can review it by going through the **Connections**-tab in Customer Journey Analytics.
 
 ![demo](./images/ex5/connection.png)
 
@@ -51,11 +51,11 @@ When you open this Connection, you'll see these datasets being combined:
 
 ![demo](./images/ex5/6.png)
 
-These 2 datasets are combined thanks to the identifiers they have: ``CRMID``and ``LoyaltyID``. We used these to fields as the Person ID within the data connection.
+These 2 datasets are combined thanks to the identifiers they have: **CRMID**and **LoyaltyID**. We used these to fields as the Person ID within the data connection.
 
 ![demo](./images/ex5/12.png)
 
-Then we created a Data View ``all - GA+Loyalty View`` which is then used for the Customer Journey Analytics-project ``ldap - Google Analytics``.
+Then we created a Data View **all - GA+Loyalty View** which is then used for the Customer Journey Analytics-project **ldap - Google Analytics**.
 
 ![demo](./images/ex5/dataview.png)
 
@@ -65,7 +65,7 @@ To use this project and learn each use case, simply open each panel within Custo
 
 ![demo](./images/ex5/10.png)
 
-The goal in this section, is to read the explanation on the left side within the ``Text visualization`` on each panel and then see the ``visualization-analysis use case`` on the right side.
+The goal in this section, is to read the explanation on the left side within the **Text visualization** on each panel and then see the **visualization-analysis use case** on the right side.
 
 ![demo](./images/ex5/11.png)
 

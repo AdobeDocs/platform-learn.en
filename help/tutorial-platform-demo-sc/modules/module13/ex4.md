@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 13.4 - Data preparation in Analysis Workspace
+# 13.4 - Data preparation in Analysis Workspace
 
 ## Objectives
 
@@ -15,7 +15,7 @@ activity:
 * Understand the concepts of data preparation in Analysis Workspace
 * Learn how to do data calculations
 
-## Exercise 13.4.1 Analysis Workspace UI in CJA
+## 13.4.1 Analysis Workspace UI in CJA
 
 Analysis Workspace removes all of the typical limitations of a single Analytics report. It provides a robust, flexible canvas for building custom analysis projects. Drag-and-drop any number of data tables, visualizations, and components (dimensions, Metrics, segments, and time granularities) to a project. Instantly create breakdowns and segments, create cohorts for analysis, create alerts, compare segments, do flow and fallout analysis, and curate and schedule reports for sharing with anyone in your business.
 
@@ -39,7 +39,7 @@ You'll then see an empty project.
 
 ![demo](./images/premptyprojects.png)
 
-First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is ``vangeluw - Omnichannel Data View``.
+First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is **vangeluw - Omnichannel Data View**.
 
 ![demo](./images/prdvlist.png)
 
@@ -62,22 +62,22 @@ Please use this naming convention:
 | ----------------- |-------------|
 | ldap - Omnichannel Analysis| ldap - Omnichannel Analysis|
 
-Next, click ``Save Project``.
+Next, click **Save Project**.
 
 ![demo](./images/prsave2.png)
 
-## Exercise 13.4.2 Calculated Metrics
+## 13.4.2 Calculated Metrics
 
 Although we have organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis.
 
 If you remember, we didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View.
-However, we do have a dimension called: ``Product Interaction Type``. So, let's derive these interaction types by creating 3 calculated Metrics.
+However, we do have a dimension called: **Product Interaction Type**. So, let's derive these interaction types by creating 3 calculated Metrics.
 
 Back in module 7, [Query Service](./../../modules/module7/query-service.md), you created a SQL query to get the interactions funnel:
 
 **Query & Result**
 
-```text
+**text
 all=>
 all=> select _experienceplatform.productData.productInteraction, count(*)
 all-> from   emea_ee_dataset_api
@@ -93,35 +93,35 @@ all-> group  by _experienceplatform.productData.productInteraction;
 (3 rows)
 
 all=>  
-```
+**
 
 The goal in CJA is to avoid using SQL queries, but still have access to the same components using real analytics power through a User Interface.
 
 ### Product Views
 
-Let's start with first Metric: ``Product Views``. Click on the ``+`` to create your first calculated Metric.
+Let's start with first Metric: **Product Views**. Click on the **+** to create your first calculated Metric.
 
 ![demo](./images/pradd.png)
 
-The ``Calculated Metric Builder`` will show up:
+The **Calculated Metric Builder** will show up:
 
 ![demo](./images/prbuilder.png)
 
-Within the components, on the left side, please search ``Product Interaction Type``.
+Within the components, on the left side, please search **Product Interaction Type**.
 
 ![demo](./images/pr14.png)
 
-Then drag and drop it in to the Calculated Metric's ``Definition`` canvas.
+Then drag and drop it in to the Calculated Metric's **Definition** canvas.
 
-You'll now see a popup. In the popup, in the dropdown, find and select ``productView``.
+You'll now see a popup. In the popup, in the dropdown, find and select **productView**.
 
 ![demo](./images/pr12.png)
 
-Next, click ``Done``.
+Next, click **Done**.
 
 ![demo](./images/prdone.png)
 
-Now we must quantify this interaction. To do this select the Metric ``Events (occurences)``, then drag and drop it inside the filter. This will allow us to understand how many times the ``productView`` interaction has occurred.
+Now we must quantify this interaction. To do this select the Metric **Events (occurences)**, then drag and drop it inside the filter. This will allow us to understand how many times the **productView** interaction has occurred.
 
 ![demo](./images/pr11.png)
 
@@ -135,11 +135,11 @@ You'll then see this:
 
 ![demo](./images/pr10.png)
 
-Click ``Save`` to save your calculated Metric.
+Click **Save** to save your calculated Metric.
 
 ![demo](./images/pr9.png)
 
-Next, repeat the same process for ``productAddToCart`` and ``productPurchase``.
+Next, repeat the same process for **productAddToCart** and **productPurchase**.
 
 ### Add to Cart
 
@@ -161,23 +161,23 @@ The Metric definition should look like this:
 
 ![demo](./images/prpurchase.png)
 
-Don't forget to ``Save`` each Calculated Metric.
+Don't forget to **Save** each Calculated Metric.
 
 ![demo](./images/pr9.png)
 
 ### Conversion Rate
 
-To finish this exercise, let's create a last calculated Metric: ``Conversion Rate``.
+To finish this exercise, let's create a last calculated Metric: **Conversion Rate**.
 
-Find the ``Purchase`` Calculated Metric we've just created in the list of Metrics in the left side menu. Click on the ``info``-icon.
+Find the **Purchase** Calculated Metric we've just created in the list of Metrics in the left side menu. Click on the **info**-icon.
 
 ![demo](./images/prmetricinfo.png)
 
-Now click on the ``edit``-icon.
+Now click on the **edit**-icon.
 
 ![demo](./images/preditmetric.png)
 
-Typically, conversion rate means ``Conversions / Sessions``. So let's do the same calculation in the calculated Metric definition canvas. Find the ``Sessions``-metric and drag and drop it into the definition builder.
+Typically, conversion rate means **Conversions / Sessions**. So let's do the same calculation in the calculated Metric definition canvas. Find the **Sessions**-metric and drag and drop it into the definition builder.
 
 ![demo](./images/pr6.png)
 
@@ -199,15 +199,15 @@ Change the name and description:
 
 ![demo](./images/pr1.png)
 
-Now click ``Save As`` to save your new Calculated Metric without overwriting the original one..
+Now click **Save As** to save your new Calculated Metric without overwriting the original one..
 
 <!--![demo](./images/prsaveas.png)-->
 
-## Exercise 13.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
+## 13.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
 
 ### Filters: Calculated Time Dimensions
 
-Calculations are not meant to be only for Metrics. Before starting any analysis it's also interesting to create some ``Calculated Dimensions``. This basically meant ``segments`` back in Adobe Analytics. In CJA, these segments are called ``Filters``. The change on the name wants to avoid any confusion with Adobe Experience Platform audiences / segments that at some point (roadmap) will be available as well in CJA.
+Calculations are not meant to be only for Metrics. Before starting any analysis it's also interesting to create some **Calculated Dimensions**. This basically meant **segments** back in Adobe Analytics. In CJA, these segments are called **Filters**. The change on the name wants to avoid any confusion with Adobe Experience Platform audiences / segments that at some point (roadmap) will be available as well in CJA.
 
 ![demo](./images/prfilters.png)
 
@@ -233,9 +233,9 @@ These Calculated Time Dimensions we will help analysts and business users to rem
 
 <!--![demo](./images/prtimedimensions.png)-->
 
-You've now finished the data preparation exercise using CJA Analysis Workspace.
+You've now finished the data preparation using CJA Analysis Workspace.
 
-Next Step: [Exercise 13.5 - Visualization using Analysis WorkSpace](./ex5.md)
+Next Step: [13.5 - Visualization using Analysis WorkSpace](./ex5.md)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 

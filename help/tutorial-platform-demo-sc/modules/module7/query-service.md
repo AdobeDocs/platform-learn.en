@@ -53,25 +53,25 @@ Go to [7.0 Pre-requisites](./ex0.md)
 
 ### 7.1 Getting Started
 
-In this exercise you will explore the Adobe Experience Platform Query Service User Interface, learn about data sets, find your queries and finally setup a connection from PSQL.
+In this you will explore the Adobe Experience Platform Query Service User Interface, learn about data sets, find your queries and finally setup a connection from PSQL.
 
 Go to [7.1 Getting Started](./ex1.md)
 
 ### 7.2 Using the Query Service
 
-In this exercise you will learn about the basic Query Service syntax and you can identify the attributes of the XDM schema in your query.
+In this you will learn about the basic Query Service syntax and you can identify the attributes of the XDM schema in your query.
 
 Go to [7.2 Using the Query Service](./ex2.md)
 
 ### 7.3 Queries, queries, queries...  and churn analysis
 
-In this exercise you will be doing queries, you will learn about the Adobe Defined Functions while doing some churn analysis. At the end of this exercise you will write a query to prepare a dataset for use in Microsoft Power BI.
+In this you will be doing queries, you will learn about the Adobe Defined Functions while doing some churn analysis. At the end of this you will write a query to prepare a dataset for use in Microsoft Power BI.
 
 Go to [7.3 Queries, queries, queries...  and churn analysis](./ex3.md)
 
 ### 7.4 Power BI/Tableau
 
-In this exercise you will generate a dataset from a query executed in the previous exercise and you will use this dataset in Power BI or Tableau to to Callcenter Interaction Analysis.
+In this you will generate a dataset from a query executed in the previous and you will use this dataset in Power BI or Tableau to to Callcenter Interaction Analysis.
 
 Go to [7.4 Power BI/Tableau](./ex4.md)
 

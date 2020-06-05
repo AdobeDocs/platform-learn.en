@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 6 - See you Real-time Customer Profile in action in the Call Center
+# 6 - See you Real-time Customer Profile in action in the Call Center
 
 In this exercise, you'll follow a script and walk through the website.
 
@@ -25,11 +25,11 @@ Let's now see how the information on your Customer Profile can be used to impact
 
 Go to to your AEP Demo website.
 
-In the site's menu, click on the 3 dots ``...`` and then select Call Center to go to the Call Center simulator.
+In the site's menu, click on the 3 dots **...** and then select Call Center to go to the Call Center simulator.
 
 ![Demo](./images/dots.png)
 
-You'll see the phone number that you previously used when creating your account. Click the ``Search``-button.
+You'll see the phone number that you previously used when creating your account. Click the **Search**-button.
 
 ![Demo](./images/19.png)
 
@@ -37,20 +37,20 @@ You'll now see the information that would ideally be displayed in the Call Cente
 
 ![Demo](./images/20.png)
 
-To simulate the end of a call with the call center, you should log the call by clicking on the ``Log a call``-button after which a popup window will open.
+To simulate the end of a call with the call center, you should log the call by clicking on the **Log a call**-button after which a popup window will open.
 
 ![Demo](./images/23.png)
 ![Demo](./images/21.png)
 
-Make a random selection of the Call Topic and the Customer Feeling and click ``Save`` to provide Adobe Experience Platform with the information.
+Make a random selection of the Call Topic and the Customer Feeling and click **Save** to provide Adobe Experience Platform with the information.
 
 ![Demo](./images/22.png)
 
-Every choice that you make on the Call Details - screen will have an impact on the Real-time Customer Profile with things like Churn Score or Product Recommendations being impacted by any interaction, which may be negative of positive. You can verify the impact by clicking the ```Search``` - button again on the Call Center screen.
+Every choice that you make on the Call Details - screen will have an impact on the Real-time Customer Profile with things like Churn Score or Product Recommendations being impacted by any interaction, which may be negative of positive. You can verify the impact by clicking the **Search** - button again on the Call Center screen.
 
 ![Demo](./images/check.png)
 
-After clicking the ```Search``` - button again, you'll see a new Experience Event pop up on the Call Center Screen.
+After clicking the **Search** - button again, you'll see a new Experience Event pop up on the Call Center Screen.
 
 ![Demo](./images/24.png)
 

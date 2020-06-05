@@ -7,11 +7,11 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 10.3 - Feature Engineering and Model Building
+# 10.3 - Feature Engineering and Model Building
 
 In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model.
 
-Open the notebook ``Mod10 - Churn Model Feature Engineering and Model Building.ipynb``.
+Open the notebook **Mod10 - Churn Model Feature Engineering and Model Building.ipynb**.
 
 ![DSW](./images/dswchmfe.png)
 
@@ -21,7 +21,7 @@ Follow the step by step process for model building. Notice the independent varia
 
 Two models are outlined in this ExerciseLogistic Regression and Random Forrest Regressor. Depending on the accuracy of the model, one can choose the model and use it to score the data set and build recipe.
 
-Next Step: [Exercise 10.4 - Experimentation - Recipe Building](./ex4.md)
+Next Step: [10.4 - Experimentation - Recipe Building](./ex4.md)
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 

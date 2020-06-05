@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 16.2 - Create your first query in BigQuery
+# 16.2 - Create your first query in BigQuery
 
 ## Objectives
 
@@ -21,17 +21,17 @@ Google Analytics data loaded in BigQuery has a very ugly, however useful, format
 
 The solution to this problem: Let's transform Google Analytics data into a readable format to make the ingestion into Adobe Experience Platform easier.
 
-## Exercise 16.2.1 – Create a dataset to save new BigQuery Tables
+## 16.2.1 – Create a dataset to save new BigQuery Tables
 
 Go to the [BigQuery Console](https://console.cloud.google.com/bigquery).
 
 ![demo](./images/ex3/1.png)
 
-Under ``Resources``, you'll see your Project ID:
+Under **Resources**, you'll see your Project ID:
 
 ![demo](./images/ex3/2.png)
 
-Click your Project ID (don't click on the ``bigquery-public-data``-dataset).
+Click your Project ID (don't click on the **bigquery-public-data**-dataset).
 
 ![demo](./images/ex3/3.png)
 
@@ -39,13 +39,13 @@ You can see that there isn't a dataset yet, so let's create one now.
 
 ![demo](./images/ex3/4.png)
 
-Click ``CREATE DATASET``.
+Click **CREATE DATASET**.
 
 ![demo](./images/ex3/5.png)
 
-On the right side of your screen, you'll see the ``Create dataset``-menu.
+On the right side of your screen, you'll see the **Create dataset**-menu.
 
-For the ``Dataset ID``, use the below naming convention. For the other fields, please leave the default settings.
+For the **Dataset ID**, use the below naming convention. For the other fields, please leave the default settings.
 
 | Naming         | Example |
 | ----------------- | ------------- |
@@ -53,7 +53,7 @@ For the ``Dataset ID``, use the below naming convention. For the other fields, p
 
 ![demo](./images/ex3/6.png)
 
-Next, click ``Create dataset``.
+Next, click **Create dataset**.
 
 ![demo](./images/ex3/7.png)
 
@@ -61,7 +61,7 @@ You'll then be back in the BigQuery Console with your dataset created.
 
 ![demo](./images/ex3/8.png)
 
-## Exercise 16.2.2 – Create your first SQL BigQuery
+## 16.2.2 – Create your first SQL BigQuery
 
 Next, you'll create your first query in BigQuery. The goal of this query is to take the Google Analytics sample data and transform it so that it can be ingested in Adobe Experience Platform.
 
@@ -69,7 +69,7 @@ Next, you'll create your first query in BigQuery. The goal of this query is to t
 
 Please copy the following SQL query and paste it into that Query Editor. Feel free to read the query and understand the GA BigQuery syntax.
 
-```sql
+**sql
 SELECT
   CONCAT(fullVisitorId, CAST(hitTime AS String), '-', hitNumber) AS _id,
   TIMESTAMP(DATETIME(Year_Current, Month_Current, Day_Current, Hour, Minutes, Seconds)) AS timeStamp,
@@ -229,9 +229,9 @@ GROUP BY
   14
 
   ORDER BY 2 DESC
-```
+**
 
-When you are ready, click ``Run`` to run the query:
+When you are ready, click **Run** to run the query:
 
 ![demo](./images/ex3/10.png)
 
@@ -239,21 +239,21 @@ Executing the query can take a couple of minutes.
 
 ![demo](./images/ex3/11.png)
 
-Once the query has finished running, you'll see the below output in the ``Query results``.
+Once the query has finished running, you'll see the below output in the **Query results**.
 
 ![demo](./images/ex3/12.png)
 
-## Exercise 16.2.3 – Save the results of your BigQuery SQL query
+## 16.2.3 – Save the results of your BigQuery SQL query
 
-The next step is to save the output of your query by clicking the ``SAVE RESULTS``-button.
+The next step is to save the output of your query by clicking the **SAVE RESULTS**-button.
 
 ![demo](./images/ex3/13.png)
 
-As the location for your output, select ``BigQuery table``.
+As the location for your output, select **BigQuery table**.
 
 ![demo](./images/ex3/14.png)
 
-You'll then see a new popup, where your ``Project Name`` and ``Dataset Name`` are pre-populated. The dataset name should be the dataset that you created in the beginning of this exercise, with this naming convention:
+You'll then see a new popup, where your **Project Name** and **Dataset Name** are pre-populated. The dataset name should be the dataset that you created in the beginning of this exercise, with this naming convention:
 
 | Naming         | Example |
 | ----------------- | ------------- |
@@ -269,23 +269,23 @@ You now need to enter a Table name. Please use this naming convention:
 
 ![demo](./images/ex3/16.png)
 
-Click ``SAVE``.
+Click **SAVE**.
 
 ![demo](./images/ex3/17.png)
 
-In a real-world scenario, brands typically like to have new data coming in daily into the table that was just created. To do that, brands can use the ``Schedule Query``-option. This feature will schedule the query we created to run every day and save the output in this table.
+In a real-world scenario, brands typically like to have new data coming in daily into the table that was just created. To do that, brands can use the **Schedule Query**-option. This feature will schedule the query we created to run every day and save the output in this table.
 
 ![demo](./images/ex3/18.png)
 
-For this module, it's not required to setup a ``Schedule``.
+For this module, it's not required to setup a **Schedule**.
 
-It takes some time until the data is ready in the table we've created. After a couple of minutes, refresh the browser. You should then see within your dataset the  ``ldap_GAdataTableBigquery``-table under ``Resources`` inside your BigQuery project.
+It takes some time until the data is ready in the table we've created. After a couple of minutes, refresh the browser. You should then see within your dataset the  **ldap_GAdataTableBigquery**-table under **Resources** inside your BigQuery project.
 
 ![demo](./images/ex3/19.png)
 
 You con now continue with the next exercise, where you'll connect this table to Adobe Experience Platform.
 
-Next Step: [Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
+Next Step: [16.3 - Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 

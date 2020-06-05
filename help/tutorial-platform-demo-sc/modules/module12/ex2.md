@@ -7,33 +7,33 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 12.2 - Define an External Data Source
+# 12.2 - Define an External Data Source
 
 In this exercise, you'll create a custom External Data Source by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
-You'll see the ``Adobe Experience Cloud``-homepage.
+You'll see the **Adobe Experience Cloud**-homepage.
 
 ![Demo](./images/aec.png)
 
-Click on ``Journey Orchestration``.
+Click on **Journey Orchestration**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the ``Journey Orchestration``-homepage.
+Next, you'll see the **Journey Orchestration**-homepage.
 
 ![Demo](./images/aecjoh.png)
 
-In the menu, click on ``Data Sources``.
+In the menu, click on **Data Sources**.
 
 ![Demo](./images/menudatasources.png)
 
-You'll then see the ``Data Sources``-list.
+You'll then see the **Data Sources**-list.
 
 ![Demo](./images/dshome.png)
 
-Click ``Add`` to start adding your data source.
+Click **Add** to start adding your data source.
 
 ![Demo](./images/add.png)
 
@@ -41,17 +41,17 @@ You'll see an empty data source popup.
 
 ![Demo](./images/emptyds.png)
 
-Before you can start configuring this, you'll need an account with the ``Open Weather Map``-service. Follow these steps to create your account and get your API-key.
+Before you can start configuring this, you'll need an account with the **Open Weather Map**-service. Follow these steps to create your account and get your API-key.
 
 Go to [https://openweathermap.org/](https://openweathermap.org/).
 
 ![WeatherMap](./images/owm.png)
 
-On the homepage, click ``Sign Up``.
+On the homepage, click **Sign Up**.
 
 ![WeatherMap](./images/owmsu.png)
 
-You'll then see the ``Sign Up``-form.
+You'll then see the **Sign Up**-form.
 
 ![WeatherMap](./images/owm1.png)
 
@@ -59,7 +59,7 @@ Fill out the details.
 
 ![WeatherMap](./images/owm2.png)
 
-Click ``Create Account``.
+Click **Create Account**.
 
 ![WeatherMap](./images/owm3.png)
 
@@ -67,19 +67,19 @@ You'll then be redirected to your Account Page.
 
 ![WeatherMap](./images/owm4.png)
 
-In the menu, click ``API Keys`` to retrieve your API Key, which you'll need to setup your custom External Data Source.
+In the menu, click **API Keys** to retrieve your API Key, which you'll need to setup your custom External Data Source.
 
 ![WeatherMap](./images/owm5.png)
 
-In this example, the ``API Key`` is ``b2c4c36b6bb59c3458d6686b05311dc3``.
+In this example, the **API Key** is **b2c4c36b6bb59c3458d6686b05311dc3**.
 
-You can find the ``API Documentation`` for the ``Current Weather`` [here](https://openweathermap.org/current).
+You can find the **API Documentation** for the **Current Weather** [here](https://openweathermap.org/current).
 
 In our use-case, we'll implement the connection with Open Weather Map based on the city the customer is in.
 
 ![WeatherMap](./images/owm6.png)
 
-Go back to ``Journey Orchestration``, to your empty ``External Data Source``-popup.
+Go back to **Journey Orchestration**, to your empty **External Data Source**-popup.
 
 ![Demo](./images/emptyds.png)
 
@@ -87,7 +87,7 @@ As a Name for the Data Source, use **weatherApiLdap** and replace **Ldap** with 
 
 Set Description to: **Access to the Open Weather Map**.
 
-The URL for the Open Weather Map API is: ``http://api.openweathermap.org/data/2.5/weather?units=metric``
+The URL for the Open Weather Map API is: **http://api.openweathermap.org/data/2.5/weather?units=metric**
 
 ![Demo](./images/dsname.png)
 
@@ -104,11 +104,11 @@ Use these variables:
 
 ![Demo](./images/dsauth.png)
 
-Finally, you need to define a ``FieldGroup``, which is basically the request you'll be sending to the Weather API. In our case, we want to use the name of the City to request the Current Weather for that City.
+Finally, you need to define a **FieldGroup**, which is basically the request you'll be sending to the Weather API. In our case, we want to use the name of the City to request the Current Weather for that City.
 
 ![Demo](./images/fg.png)
 
-According to the Weather API Documentation, we need to send a parameter ``q=City``.
+According to the Weather API Documentation, we need to send a parameter **q=City**.
 
 ![Demo](./images/owmapi.png)
 
@@ -126,7 +126,7 @@ You can find the expected API JSON Response on the API Documentation page [here]
 
 Or you can copy the JSON Response from here:
 
-```json
+**json
 {"coord": { "lon": 139,"lat": 35},
   "weather": [
     {
@@ -166,11 +166,11 @@ Or you can copy the JSON Response from here:
   "name": "Shuzenji",
   "cod": 200
 }
-```
+**
 
 Copy the above JSON Response to your clipboard, then go to your custom Data Source configuration screen.
 
-Click the ``Edit Payload``-icon.
+Click the **Edit Payload**-icon.
 
 ![Demo](./images/owmapi2.png)
 
@@ -182,19 +182,19 @@ Paste your JSON Response.
 
 ![Demo](./images/owmapi4.png)
 
-Click ``Save``.
+Click **Save**.
 
 ![Demo](./images/dssave.png)
 
-Your custom Data Source configuration is now complete. Scroll up and click ``Save``.
+Your custom Data Source configuration is now complete. Scroll up and click **Save**.
 
 ![Demo](./images/dssave2.png)
 
-Your Data Source has now been created successfully and is part of the ``Data Sources``-list.
+Your Data Source has now been created successfully and is part of the **Data Sources**-list.
 
 ![Demo](./images/dslist.png)
 
-Next Step: [Exercise 12.3 - Define a Custom Action](./ex3.md)
+Next Step: [12.3 - Define a Custom Action](./ex3.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 

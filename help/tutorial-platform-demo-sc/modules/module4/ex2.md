@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 4.2: Define your Alexa skill
+# 4.2: Define your Alexa skill
 
 ## Introduction
 
@@ -15,9 +15,9 @@ This module will guide you through all the necessary steps to define and configu
 
 ### Prerequisites
 
-Before you can create and configure an Amazon Alexa skill, ensure you are signed up for an Amazon developer account and signed in. Also, ensure your are signed up for an AWS account and signed in. See [Exercise 1](./ex1.md) for more details.
+Before you can create and configure an Amazon Alexa skill, ensure you are signed up for an Amazon developer account and signed in. Also, ensure your are signed up for an AWS account and signed in. See [1](./ex1.md) for more details.
 
-## Exercise 4.2.1: Create an Alexa skill
+## 4.2.1: Create an Alexa skill
 
 To create a new skill, follow these steps:
 
@@ -31,8 +31,8 @@ In the **alexa developer console**, click the **Create Skill** button.
 
 In the **Create a new skill** screen:
 
-   1. Specify ``AEP`` as the **Skill name**.
-   2. Select ``English (UK)``or ``English (US)`` as the **Default Language**.
+   1. Specify **AEP** as the **Skill name**.
+   2. Select **English (UK)**or **English (US)** as the **Default Language**.
    3. Select **Custom** as the model to use below **Choose a model to add to your skill**.
    ![Create Skill](images/creatskill1.png)
    4. Select **Provision your own** as the method to use below **Choose a method to host your skill's backend** resources.
@@ -52,21 +52,21 @@ You will end up in your **AEP** skill main screen, which should look like this:
 
 ![AEP Skill Main Screen](images/aepskillmainscreen.png)
 
-## Exercise 4.2.2: Define invocation name
+## 4.2.2: Define invocation name
 
 For your skill to be invoked, it needs an invocation name. To define this:
 
 1. Click on **Invocation** in the left rail, or on the **1. Invocation name >** button in the **Skill builder checklist** of the **AEP** skill main screen.
 
-1. In the **Invocation** panel, replace ``aep`` with ``adobe experience platform`` as the **Skill Invocation Name**.
+1. In the **Invocation** panel, replace **aep** with **adobe experience platform** as the **Skill Invocation Name**.
 
 ![Invocation Name](images/invocationname.png)
 
 Click on **Save Model**.
 
-This will update the invocation of your Alexa skill so you can say ``Alexa, open adobe experience platform``.
+This will update the invocation of your Alexa skill so you can say **Alexa, open adobe experience platform**.
 
-## Exercise 4.2.3: Define Intents, Samples and Slots
+## 4.2.3: Define Intents, Samples and Slots
 
 The next step is to configure the interaction with our skill. Interaction with an Alexa skill happens through so called intents, of which Amazon provides 5 built-in intents (e.g. **AMAZON.HelpIntent**, to ask for help). Each intent defines sample utterances; phrases you use to invoke the intent. And each intent can have one or more slot values; values you provide as input to the intent.
 
@@ -76,7 +76,7 @@ Click on **JSON Editor** in the left rail.
 
 ![JSON Editor](images/jsoneditor.png)
 
-Go [here](./downloads/skill/aepskillinteractionmodel.json). Click on ``Raw``.
+Go [here](./downloads/skill/aepskillinteractionmodel.json). Click on **Raw**.
 
    ![Raw](images/raw.png)
 
@@ -96,7 +96,7 @@ Click **Save Model** to save the model.
 
 You will now see the various specific intents for our skill on the left rail, e.g. **LdapIntent**, **GetProductIntent**, .... **UseEmailAddressIntent**. Some of these intents do have a slot, e.g. like **productId** for **GetProductIntent**.
 
-## Exercise 4.2.3: Define the interfaces
+## 4.2.3: Define the interfaces
 
 We will now define the interface for the skill. Interfaces define how you interact with your skill: only through voice or will the skill also support display and touch? As if we  want our skill to use the display and touch events, we need to enable that interface. Also our skill's implementation will use the Amazon Presentation Language (BETA). To properly configure this:
 
@@ -110,7 +110,7 @@ In the **Interfaces** panel, enable **Display Interface** and **Alexa Presentati
 
 Click on **Save Interfaces**.
 
-## Exercise 4.2.4: Setup the implementation
+## 4.2.4: Setup the implementation
 
 Our skill's logic is implemented using the [NodeJS Alexa SDK v2](https://developer.amazon.com/docs/alexa-skills-kit-sdk-for-nodejs/overview.html). See <!----> for more details on the implementation.
 
@@ -120,11 +120,11 @@ Let's first set up our server-less functionality for the skill. To do so:
 
 Ensure you are logged in to your **AWS Management Console** ([https://us-east-2.console.aws.amazon.com/console/home](https://us-east-2.console.aws.amazon.com/console/home)).
 
-Pick a datacenter you prefer from the dropdown listbox at the top right menu. E.g. ``US East (Ohio)`` or ``EU (Ireland)``.
+Pick a datacenter you prefer from the dropdown listbox at the top right menu. E.g. **US East (Ohio)** or **EU (Ireland)**.
 
 ![Data Center](images/datacenter.png)
 
-In **Find Services** type ``lambda``and press Enter.
+In **Find Services** type **lambda**and press Enter.
 
 ![Lambda](images/lambda.png)
 
@@ -140,15 +140,15 @@ In the **Create function** screen:
 
    ![Author From Scratch](images/authorfromscratch.png)
 
-   1. Give your skill function a **Function name**, e.g. ``aep``.
+   1. Give your skill function a **Function name**, e.g. **aep**.
 
    ![Function Name](images/functionname.png)
 
-   1. Select ``Node.js 12.x`` from the **Runtime** dropdown list.
+   1. Select **Node.js 12.x** from the **Runtime** dropdown list.
 
    ![Runtime](images/runtime.png)
 
-   1. Click on **Choose or create an execution role** below **Permissions**. Then select ``Create a new role with basic Lambda permissions``from the **Execution role** dropdown list. Your screen should look like
+   1. Click on **Choose or create an execution role** below **Permissions**. Then select **Create a new role with basic Lambda permissions**from the **Execution role** dropdown list. Your screen should look like
 
    ![Permissions](images/permissions.png)
 
@@ -188,7 +188,7 @@ Continue, in the **aep** definition screen.
 
 ![Select AEP](images/selectaep.png)
 
-1. In the **Function code** panel, from the **Code entry type** dropdown list, select ``Upload a .zip file``.
+1. In the **Function code** panel, from the **Code entry type** dropdown list, select **Upload a .zip file**.
 
 ![Function Code](images/functioncode.png)
 
@@ -251,7 +251,7 @@ Move over to your **alexa developer console**.
 
 * Click on **Save Endpoints**.
 
-## Exercise 4.2.5: Finalizing the skill
+## 4.2.5: Finalizing the skill
 
 After we have setup invocation, intents, interfaces and endpoint, our final step is to build the final version of our skill.
 
@@ -274,7 +274,7 @@ Verify that on your skill's main screen all the items on the **Skill builder che
 
 You have finished this exercise.
 
-Next Step: [Exercise 4.3: Use your Alexa skill](./ex3.md)
+Next Step: [4.3: Use your Alexa skill](./ex3.md)
 
 [Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 

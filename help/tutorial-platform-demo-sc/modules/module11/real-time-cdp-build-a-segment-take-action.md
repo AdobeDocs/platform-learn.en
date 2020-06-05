@@ -55,25 +55,25 @@ Go to [11.2 Review how to configure DV360 Destination using Destinations](./ex2.
 
 ### 11.3 Take Action: send your segment to DV360
 
-In this exercise, you'll connect the segment you built in Exercise 1 to the destination DV360.
+In this exercise, you'll connect the segment you built in 1 to the destination DV360.
 
 Go to [11.3 Take Action: send your segment to DV360](./ex3.md)
 
 ### 11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
 
-In this exercise, you'll connect the segment you built in Exercise 1 to the destination Google Remarketing List for Search Advertising by making use of Adobe Audience Manager.
+In this exercise, you'll connect the segment you built in 1 to the destination Google Remarketing List for Search Advertising by making use of Adobe Audience Manager.
 
 Go to [11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
 
 ### 11.5 Take Action: send your segment to an S3-destination
 
-In this exercise, you'll use the segment you built in Exercise 1 and send it to an S3-destination, typically used for Email Marketing-destinations.
+In this exercise, you'll use the segment you built in 1 and send it to an S3-destination, typically used for Email Marketing-destinations.
 
 Go to [11.5 Take Action: send your segment to an S3-destination](./ex5.md)
 
 ### 11.6 Take Action: send your segment to Adobe Target
 
-In this exercise, you'll use the segment you built in Exercise 1 to configure an Experience Targeting Activity in Adobe Target.
+In this exercise, you'll use the segment you built in 1 to configure an Experience Targeting Activity in Adobe Target.
 
 Go to [11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 

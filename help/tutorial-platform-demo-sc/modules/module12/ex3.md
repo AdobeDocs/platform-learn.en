@@ -7,29 +7,29 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 12.3 - Define Custom Actions
+# 12.3 - Define Custom Actions
 
 In this exercise, you'll create 2 custom Actions by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
 Go to [https://experience.adobe.com/#/@experienceplatform/home](https://experience.adobe.com/#/@experienceplatform/home)
 
-You'll see the ``Adobe Experience Cloud``-homepage.
+You'll see the **Adobe Experience Cloud**-homepage.
 
 ![Demo](./images/aec.png)
 
-Click on ``Journey Orchestration``.
+Click on **Journey Orchestration**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the ``Journey Orchestration``-homepage.
+Next, you'll see the **Journey Orchestration**-homepage.
 
 ![Demo](./images/aecjoh.png)
 
-In the menu, click on ``Actions``.
+In the menu, click on **Actions**.
 
 ![Demo](./images/menuactions.png)
 
-You'll then see the ``Actions``-list.
+You'll then see the **Actions**-list.
 
 ![Demo](./images/acthome.png)
 
@@ -44,7 +44,7 @@ Twilio is a 3rd party provider of SMS Messages. It has an easy-to-use API and we
 
 ![Demo](./images/twilio.png)
 
-Click ``Add`` to start adding your action.
+Click **Add** to start adding your action.
 
 ![Demo](./images/add.png)
 
@@ -58,10 +58,10 @@ Set Description to: **Send SMS using Twilio**.
 
 ![Demo](./images/twilioname.png)
 
-For the ``URL Configuration``, use this:
+For the **URL Configuration**, use this:
 
-* URL: ``https://l1uikl5kog.execute-api.us-west-2.amazonaws.com/prod/``
-* Method: ``POST``
+* URL: **https://l1uikl5kog.execute-api.us-west-2.amazonaws.com/prod/**
+* Method: **POST**
 
 You don't need to change the Header Fields.
 
@@ -69,13 +69,13 @@ You don't need to change the Header Fields.
 
 (For transparency, we're using an AWS API Gateway and AWS Lambda function that sits behind the above URL to handle the authentication and sending of SMSs to Twilio.)
 
-``Authentication`` should be set to ``No Authentication``.
+**Authentication** should be set to **No Authentication**.
 
 ![Demo](./images/twilioauth.png)
 
-For the ``Message Parameters``, you need to define which fields should be sent towards Twilio. Logically, we want Journey Orchestration and Adobe Experience Platform to be the brain of personalization, so the SMS Message Text and the Mobile Number to send the SMS towards should be defined by Journey Orchestration and then sent to Twilio for execution.
+For the **Message Parameters**, you need to define which fields should be sent towards Twilio. Logically, we want Journey Orchestration and Adobe Experience Platform to be the brain of personalization, so the SMS Message Text and the Mobile Number to send the SMS towards should be defined by Journey Orchestration and then sent to Twilio for execution.
 
-So for the ``Message Parameters``, click the ``Edit Payload``-icon.
+So for the **Message Parameters**, click the **Edit Payload**-icon.
 
 ![Demo](./images/twiliomsgp.png)
 
@@ -85,7 +85,7 @@ You'll then see an empty popup-window.
 
 Copy the below text and paste it in the empty popup-window.
 
-```json
+**json
 {
  "body": {
   "textMessage": {
@@ -100,7 +100,7 @@ Copy the below text and paste it in the empty popup-window.
   }
  }
 }
-```
+**
 
 FYI: by specifying the below fields, these fields will become accessible from your Customer Journey and you'll be able to populate them dynamically from the Journey:
 
@@ -114,15 +114,15 @@ You'll then see this:
 
 ![Demo](./images/twiliomsgpopup1.png)
 
-Click ``Save``.
+Click **Save**.
 
 ![Demo](./images/twiliomsgpopup2.png)
 
-Scroll up and click ``Save`` one more time to save your custom Action.
+Scroll up and click **Save** one more time to save your custom Action.
 
 ![Demo](./images/twiliomsgpopup3.png)
 
-Your custom Action is now part of the ``Actions``-list.
+Your custom Action is now part of the **Actions**-list.
 
 ![Demo](./images/twiliodone.png)
 
@@ -134,7 +134,7 @@ We'll now use an existing Slack Channel and send messages to that Slack Channel.
 
 ![Demo](./images/slack.png)
 
-Click ``Add`` to start adding your action.
+Click **Add** to start adding your action.
 
 ![Demo](./images/add.png)
 
@@ -148,22 +148,22 @@ Set Description to: **Send Text to Slack**.
 
 ![Demo](./images/slackname.png)
 
-For the ``URL Configuration``, use this:
+For the **URL Configuration**, use this:
 
-* URL: ``https://hooks.slack.com/services/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``
-* Method: ``POST``
+* URL: **https://hooks.slack.com/services/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**
+* Method: **POST**
 
 You don't need to change the Header Fields.
 
 ![Demo](./images/slackurl.png)
 
-``Authentication`` should be set to ``No Authentication``.
+**Authentication** should be set to **No Authentication**.
 
 ![Demo](./images/slackauth.png)
 
-For the ``Message Parameters``, you need to define which fields should be sent towards Slack. Logically, we want Journey Orchestration and Adobe Experience Platform to be the brain of personalization, so the text to send to Slack should be defined by Journey Orchestration and then sent to Slack for execution.
+For the **Message Parameters**, you need to define which fields should be sent towards Slack. Logically, we want Journey Orchestration and Adobe Experience Platform to be the brain of personalization, so the text to send to Slack should be defined by Journey Orchestration and then sent to Slack for execution.
 
-So for the ``Message Parameters``, click the ``Edit Payload``-icon.
+So for the **Message Parameters**, click the **Edit Payload**-icon.
 
 ![Demo](./images/slackmsgp.png)
 
@@ -173,7 +173,7 @@ You'll then see an empty popup-window.
 
 Copy the below text and paste it in the empty popup-window.
 
-```json
+**json
 {
  "text": {
   "toBeMapped": true,
@@ -181,7 +181,7 @@ Copy the below text and paste it in the empty popup-window.
   "label": "textToSlack"
  }
 }
-```
+**
 
 FYI: by specifying the below fields, these fields will become accessible from your Customer Journey and you'll be able to populate them dynamically from the Journey:
 
@@ -195,21 +195,21 @@ You'll then see this:
 
 ![Demo](./images/slackmsgpopup1.png)
 
-Click ``Save``.
+Click **Save**.
 
 ![Demo](./images/twiliomsgpopup2.png)
 
-Scroll up and click ``Save`` one more time to save your custom Action.
+Scroll up and click **Save** one more time to save your custom Action.
 
 ![Demo](./images/slackmsgpopup3.png)
 
-Your custom Action is now part of the ``Actions``-list.
+Your custom Action is now part of the **Actions**-list.
 
 ![Demo](./images/slackdone.png)
 
 You've now defined Events, Data Sources and Actions - let's consolidate all of that in 1 Orchestrated Journey.
 
-Next Step: [Exercise 12.4 - Design a trigger-based Customer Journey](./ex4.md)
+Next Step: [12.4 - Design a trigger-based Customer Journey](./ex4.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 

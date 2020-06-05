@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 9.4 - Retrieve Datasets in Platform
+# 9.4 - Retrieve Datasets in Platform
 
 As part of the GTM Rule configuration, we'll define rules that will send behavioral and profile data to Platform. When defining a tag and trigger in GTM to send behavioral and/or profile data to Adobe Experience Platform, we'll need to define some variables in GTM:
 
@@ -39,7 +39,7 @@ Behavioral data needs to be mapped against the ExperienceEvent schema.
 
 Profile data needs to be mapped against the Profile XDM schema.
 
-You can consult these schema's by going to ``Schemas`` in the Platform menu.
+You can consult these schema's by going to **Schemas** in the Platform menu.
 
 ![Platform Setup](./images/schemamenu.png)
 
@@ -49,7 +49,7 @@ If you'd like to know more about XDM, please have a look here:
 * [https://github.com/adobe/xdm
 ](https://github.com/adobe/xdm)
 
-Search for ``AEP Demo - GA Website Registrations Schema`` to find the Profile XDM for your Platform Org.
+Search for **AEP Demo - GA Website Registrations Schema** to find the Profile XDM for your Platform Org.
 
 ![Platform Setup](./images/xdmprofile.png)
 
@@ -57,17 +57,17 @@ The AEP Demo - GA Website Registrations Schema looks like this and is using the 
 
 ![Platform Setup](./images/profiledtl.png)
 
-Search for ``AEP Demo - GA Website Interactions Schema`` to find the ExperienceEvent XDM.
+Search for **AEP Demo - GA Website Interactions Schema** to find the ExperienceEvent XDM.
 
 ![Platform Setup](./images/xdmprofileee.png)
 
-The ``AEP Demo - GA Website Interactions Schema`` looks like this and is using the Google ID (GAID) as the Primary Identifier.
+The **AEP Demo - GA Website Interactions Schema** looks like this and is using the Google ID (GAID) as the Primary Identifier.
 
 ![Platform Setup](./images/eedtl.png)
 
 Try to locate these 2 Schema's yourself in the UI of Platform.
 
-To view **Datasets**, navigate to the ``Datasets`` menu option.
+To view **Datasets**, navigate to the **Datasets** menu option.
 
 ![Platform Setup](./images/datasetsmenu.png)
 
@@ -105,91 +105,91 @@ After having consulted the above Schemas and Datasets, you can now fill out the 
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
-Go to ``Variables``.
+Go to **Variables**.
 
-In the ``User-Defined Variables`` - section, click ``New``.
+In the **User-Defined Variables** - section, click **New**.
 
-First, we'll configure the Variable for ``Adobe Organization ID``.
+First, we'll configure the Variable for **Adobe Organization ID**.
 
-* Rename ``Untitled Variable`` to ``imsOrgId``
-* Click on ``Variable Configuration`` and choose ``Utilities - Constant`` as Variable Type
+* Rename **Untitled Variable** to **imsOrgId**
+* Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
 
 ![Platform Setup](./images/constanti.png)
 
-* Enter the constant value for ``Adobe Organization ID`` out of the above table as this Variable.
+* Enter the constant value for **Adobe Organization ID** out of the above table as this Variable.
 
 ![Platform Setup](./images/constantims.png)
 
-* Click ``Save`` to save your Variable.
+* Click **Save** to save your Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Next, we'll configure the Variable for ``DCS Streaming Endpoint``.
+Next, we'll configure the Variable for **DCS Streaming Endpoint**.
 
-* Rename ``Untitled Variable`` to ``dcsStreamingEndpoint``
-* Click on ``Variable Configuration`` and choose ``Utilities - Constant`` as Variable Type
+* Rename **Untitled Variable** to **dcsStreamingEndpoint**
+* Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
 
 ![Platform Setup](./images/constant.png)
 
-* Enter the constant value for ``DCS Streaming Endpoint``  out of the above table for this Variable.
+* Enter the constant value for **DCS Streaming Endpoint**  out of the above table for this Variable.
 
 ![Platform Setup](./images/constantdcs.png)
 
-* Click ``Save`` to save your Variable.
+* Click **Save** to save your Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Next, we'll configure the Variable for ``Profile Dataset ID``.
+Next, we'll configure the Variable for **Profile Dataset ID**.
 
-* Rename ``Untitled Variable`` to ``profileDatasetId``
-* Click on ``Variable Configuration`` and choose ``Utilities - Constant`` as Variable Type
-* Enter the constant value for ``Profile Dataset ID``  out of the above table for this Variable.
+* Rename **Untitled Variable** to **profileDatasetId**
+* Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
+* Enter the constant value for **Profile Dataset ID**  out of the above table for this Variable.
 
 ![Platform Setup](./images/constantpds.png)
 
-* Click ``Save`` to save your Variable.
+* Click **Save** to save your Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Next, we'll configure the Variable for ``Profile Schema Reference``.
+Next, we'll configure the Variable for **Profile Schema Reference**.
 
-* Rename ``Untitled Variable`` to ``profileSchemaRef``
-* Click on ``Variable Configuration`` and choose ``Utilities - Constant`` as Variable Type
-* Enter the constant value for ``Profile Schema Reference`` out of the above table for this Variable.
+* Rename **Untitled Variable** to **profileSchemaRef**
+* Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
+* Enter the constant value for **Profile Schema Reference** out of the above table for this Variable.
 
 ![Platform Setup](./images/constantpdsch.png)
 
-* Click ``Save`` to save your Variable.
+* Click **Save** to save your Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Next, we'll configure the Variable for ``Experience Event Dataset ID``.
+Next, we'll configure the Variable for **Experience Event Dataset ID**.
 
-* Rename ``Untitled Variable`` to ``eeDatasetId``
-* Click on ``Variable Configuration`` and choose ``Utilities - Constant`` as Variable Type
-* Enter the constant value for ``Experience Event Dataset ID`` out of the above table for this Variable.
+* Rename **Untitled Variable** to **eeDatasetId**
+* Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
+* Enter the constant value for **Experience Event Dataset ID** out of the above table for this Variable.
 
 ![Platform Setup](./images/constanteeds.png)
 
-* Click ``Save`` to save your Variable.
+* Click **Save** to save your Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Finally, we'll configure the Variable for ``Experience Event Schema Reference``.
+Finally, we'll configure the Variable for **Experience Event Schema Reference**.
 
-* Rename ``Untitled Variable`` to ``eeSchemaRef``
-* Click on ``Variable Configuration`` and choose ``Utilities - Constant`` as Variable Type
-* Enter the constant value ``Experience Event Schema Reference`` out of the above table for this Variable.
+* Rename **Untitled Variable** to **eeSchemaRef**
+* Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
+* Enter the constant value **Experience Event Schema Reference** out of the above table for this Variable.
 
 ![Platform Setup](./images/constanteedsch.png)
 
-* Click ``Save`` to save your Variable.
+* Click **Save** to save your Variable.
 
 ![GTM Setup](./images/gasave.png)
 
 Congratulations for reaching this point! Let's continue with the GTM Tags and Triggers Configuration now.
 
-Next Step: [Exercise 9.5 - Configure GTM Tags & Triggers](./ex5.md)
+Next Step: [9.5 - Configure GTM Tags & Triggers](./ex5.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

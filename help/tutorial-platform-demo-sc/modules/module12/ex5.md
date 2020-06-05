@@ -7,25 +7,25 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 12.5 - Trigger your Orchestrated Customer Journey
+# 12.5 - Trigger your Orchestrated Customer Journey
 
 In this exercise, you'll test and trigger the Orchestrated Journey you configured in this module.
 
 * Go to your AEP Demo - website.
 
-* You'll be redirected to the ``Admin``-page. Go to ``Select LDAP``.
+* You'll be redirected to the **Admin**-page. Go to **Select LDAP**.
 
 ![Demo](./images/1.png)
 
-* Select your LDAP and click ``Save``.
+* Select your LDAP and click **Save**.
 
 ![Demo](./images/1a.png)
 
-* Back on the ``Admin``-page, click ``Select Brand``.
+* Back on the **Admin**-page, click **Select Brand**.
 
 ![Demo](./images/2.png)
 
-* Select a brand from the list of available brands. Click ``Save``.
+* Select a brand from the list of available brands. Click **Save**.
 
 ![Demo](./images/3.png)
 
@@ -48,17 +48,17 @@ In this exercise, you'll test and trigger the Orchestrated Journey you configure
   
   ![Demo](./images/lb_register.png)
 
-* Fill out your registration details and click ``CREATE ACCOUNT``.
+* Fill out your registration details and click **CREATE ACCOUNT**.
 
 * After login, go to the Homepage of the website and open the X-ray panel, go to Real-time Customer Profile. On the X-ray panel, you should see all of your personal data displayed.
 
 ![Demo](./images/lb_x_loggedin.png)
 
-* In the website's menu, click on the ``3 dots`` and select ``Admin``.
+* In the website's menu, click on the **3 dots** and select **Admin**.
 
 ![Demo](./images/gf10.png)
 
-* You'll then see the ``Admin`` - page. Click ``Send Geofence Event``.
+* You'll then see the **Admin** - page. Click **Send Geofence Event**.
 
 ![Demo](./images/gf13.png)
 
@@ -66,15 +66,15 @@ In this exercise, you'll test and trigger the Orchestrated Journey you configure
 
 ![Demo](./images/gf14.png)
 
-* On the ``Send Geofence Event``-page, click ``Allow`` on the prompt to ``Know your location``.
+* On the **Send Geofence Event**-page, click **Allow** on the prompt to **Know your location**.
 
 ![Demo](./images/gf15.png)
 
-* After 1-2 seconds (sometimes this can take up to 1-2 minutes), you'll see the coordinates, city and country of your approximate location. Once the coordinates are shown, you have to enter your Orchestration eventID from Exercise 1. In this example, the ``eventID`` is ``d9b5069cebd47bb3394e192da031d933a9e10d67046dadde999ec7401eb7bd51``.
+* After 1-2 seconds (sometimes this can take up to 1-2 minutes), you'll see the coordinates, city and country of your approximate location. Once the coordinates are shown, you have to enter your Orchestration eventID from 1. In this example, the **eventID** is **d9b5069cebd47bb3394e192da031d933a9e10d67046dadde999ec7401eb7bd51**.
 
 ![Demo](./images/gf16.png)
 
-* Click ``Send Geofence Event``. You'll get a visual confirmation when the Geofence Event has been sent.
+* Click **Send Geofence Event**. You'll get a visual confirmation when the Geofence Event has been sent.
 
   ![Demo](./images/gf17.png)
 
