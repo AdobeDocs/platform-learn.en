@@ -1,13 +1,13 @@
 ---
-title: Module 16, Exercise
-description: 
+title: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
+description: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: 
 ---
 
-# Module 16: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
+# 16. Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
 
 **Authors: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
@@ -18,18 +18,19 @@ Source Connectors in Adobe Experience Platform make the process of getting data 
 Google Analytics is one of the most used web analytics solutions in the world, however is not the most powerful one. We all know Adobe Analytics and its capabilities. Thanks to Adobe Experience Platform and the BigQuery Source Connector we can now bring Google Analytics data into Analysis Workspace in Customer Journey Analytics. 
 In addition, we can enrich that Google Analytics data by joining it with other data sources such as CRM, Call Center or Loyalty data within Customer Journey Analytics.
 
-## Key Takeaways
+## Learning Objectives
 
-* Become familiar with the Google Cloud Platform and BigQuery User Interface
-* Ingest Google Analytics data into Adobe Experience Platform
-* Use Customer Journey Analytics to perform analysis of Google Analytics data
-* Enrich Google Analytics data with offline data
+- Become familiar with the Google Cloud Platform and BigQuery User Interface
+- Ingest Google Analytics data into Adobe Experience Platform
+- Use Customer Journey Analytics to perform analysis of Google Analytics data
+- Enrich Google Analytics data with offline data
 
-## Prerequisites
+## Resources
 
-* Some familiarity with Customer Journey Analytics is preferred, but not required
-* Access to Adobe Experience Platform, Customer Journey Analytics
-* Understanding of Adobe Experience Platform data sets and XDM
+- Some familiarity with Customer Journey Analytics is preferred, but not required
+- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com) 
+- Access to Customer Journey Analytics
+- Access to Google Cloud Platform and Google BigQuery
 
 >[!IMPORTANT]
 >
@@ -43,37 +44,37 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 >
 >If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
-## Content
+## Exercises
 
-### Exercise 16.1 - Create your Google Cloud Platform Account
-
-[Exercise 16.1 - Create your Google Cloud Platform Account](./ex1.md)
+### 16.1 Create your Google Cloud Platform Account
 
 In this exercise, you'll create your Google Cloud Platform account.
 
-### Exercise 16.2 - Create your first query in BigQuery
+Go to [16.1 Create your Google Cloud Platform Account](./ex1.md)
 
-[Exercise 16.2 - Create your first query in BigQuery](./ex2.md)
+### 16.2 Create your first query in BigQuery
 
 In this exercise, you'll learn how to use BigQuery to prepare the data for loading into AEP.
 
-### Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform
+Go to [16.2 Create your first query in BigQuery](./ex2.md)
 
-[Exercise 16.3 - Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
+### 16.3 Connect GCP & BigQuery to Adobe Experience Platform
 
 In this exercise, you'll learn how to setup the Source Connector in Adobe Experience Platform.
 
-### Exercise 16.4 - Load data from BigQuery into Adobe Experience Platform
+Go to [16.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 
-[Exercise 16.4 - Load data from BigQuery into Adobe Experience Platform](./ex4.md)
+### 16.4 Load data from BigQuery into Adobe Experience Platform
 
 In this exercise, you'll learn how to configure the BigQuery Source Connector in Adobe Experience Platform to ingest your Google Analytics Data.
 
-### Exercise 16.5 - Analyze Google Analytics Data using Customer Journey Analytics
+Go to [16.4 Load data from BigQuery into Adobe Experience Platform](./ex4.md)
 
-[Exercise 16.5 - Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
+### 16.5 Analyze Google Analytics Data using Customer Journey Analytics
 
 In this exercise, you'll learn how to analyze Google Analytics data in Customer Journey Analytics and combine it with Loyalty data.
+
+Go to [16.5 Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
 
 >[!NOTE]
 >

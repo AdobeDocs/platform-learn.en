@@ -1,13 +1,13 @@
 ---
-title: Module 14, Exercise
-description: 
+title: Offer Decisioning
+description: Offer Decisioning
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# Module 14: Offer Decisioning
+# 14. Offer Decisioning
 
 **In Module 14**, you will get a hands-on preview of the Adobe Experience Platform -  Decisioning Service.
 
@@ -17,15 +17,32 @@ Using Decisioning Service, you can determine the best option from a set of avail
 
 In this module we will refer to the **Offers Decisioning Engine** (or simply **Offers**) as the first implementation of the **Decisioning Service** within Adobe Experience Platform.
 
-## Key Takeaways
+## Learning Objectives
 
 - Understand basic terminology used as part of Offer Decisioning,
 
 - Get a feeling what is currently available with respect to next best offer functionality in AEP.
 
+## Resources
+
+- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com) 
+- Access to Offer Decisioning
+
+>[!IMPORTANT]
+>
+>Your Adobe Experience Platform instance
+>
+>This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
+>
+>In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
+>
+>Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
+
 ## Terminology
 
-To get a better understanding and before you start doing the exercises, we highly recommend you to read the [overview](https://www.adobe.io/apis/experienceplatform/home/services/decisioning-service.html#!api-specification/markdown/narrative/technical_overview/decisioning-overview/decisioning-service-overview.md) on how the Decisioning Service works in Adobe Experience Platform.
+To get a better understanding and before you start doing the exercises, we highly recommend you to read the [overview](https://www.adobe.io/apis/experienceplatform/home/services/decisioning-service.html#!api-specification/markdown/narrative/technical_overview/decisioning-overview/decisioning-service-overview.md) on how the Offer Decisioning Application Service works in Adobe Experience Platform.
 
 Working with Offers, you have to understand the following concepts:
 
@@ -43,21 +60,9 @@ Working with Offers, you have to understand the following concepts:
 **Activity** | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.
 **Experience Cloud Library** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform. It is indeed, arguably, the (first visible) incarnation of the content part of Adobe Experience Platform. **Note**: this is a different repository than what is (was previously) known as the Assets Core Service.
 
->[!IMPORTANT]
->
->Your Adobe Experience Platform instance
->
->This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
->
->In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
->
->Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
->
->If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
+## Exercises
 
-## Content
-
-### Content for this module is currently being developed
+### **Exercises for this module are currently being developed**
 
 >[!NOTE]
 >

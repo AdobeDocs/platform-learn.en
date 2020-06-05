@@ -88,13 +88,13 @@ audience: all
   + [12.3 Define a Custom Action](/help/tutorial-platform-demo-sc/modules/module12/ex3.md)
   + [12.4 Design a trigger-based Customer Journey](/help/tutorial-platform-demo-sc/modules/module12/ex4.md)
   + [12.5 Trigger your Journey](/help/tutorial-platform-demo-sc/modules/module12/ex5.md)
-+ 13. Customer Journey Analytics (CJA) - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform{#module13}
++ 13. Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform{#module13}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module13/customer-journey-analytics-build-a-dashboard.md)
   + [13.1 Customer Journey Analytics 101](/help/tutorial-platform-demo-sc/modules/module13/ex1.md)
-  + [13.2 Connect Adobe Experience Platform Data Sets in CJA](/help/tutorial-platform-demo-sc/modules/module13/ex2.md)
+  + [13.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics](/help/tutorial-platform-demo-sc/modules/module13/ex2.md)
   + [13.3 Create a Data View](/help/tutorial-platform-demo-sc/modules/module13/ex3.md)
-  + [13.4 Data Preparation in Analysis Workspace](/help/tutorial-platform-demo-sc/modules/module13/ex4.md)
-  + [13.5 Visualization using Analysis Workspace](/help/tutorial-platform-demo-sc/modules/module13/ex5.md)
+  + [13.4 Data Preparation in Customer Journey Analytics](/help/tutorial-platform-demo-sc/modules/module13/ex4.md)
+  + [13.5 Visualization using Customer Journey Analytics](/help/tutorial-platform-demo-sc/modules/module13/ex5.md)
 + 14. Offer Decisioning{#module14}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module14/offer-decisioning.md)
 + 15. Data Science Workspace - Car Insurance Sales Propensity
