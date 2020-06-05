@@ -1,8 +1,8 @@
 ---
-title: Module 7, Exercise
-description: 
+title: Query Service - Explore the dataset with Tableau
+description: Query Service - Explore the dataset with Tableau
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---

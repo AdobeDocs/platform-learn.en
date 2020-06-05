@@ -1,13 +1,13 @@
 ---
-title: Module 7, Exercise
-description: 
+title: Query Service - Queries, queries, queries...  and churn analysis
+description: Query Service - Queries, queries, queries...  and churn analysis
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---
 
-# 7.3 - Queries, queries, queries...  and churn analysis
+# 7.3 Queries, queries, queries...  and churn analysis
 
 ## Objective
 
@@ -65,7 +65,7 @@ prod:all-> limit 10;
 
 What are the top 5 products viewed?
 
-**SQL**
+#### SQL
 
 ```sql
 select <aepTenantId>.productData.productName, count(*)
@@ -169,7 +169,7 @@ prod:all-> limit 10;
 
 In the next set of queries we will extend the above query, in order to get a complete view on the customers and their behavior that have been visiting the "Cancel Service" page. You will learn how to use the Adobe Defined Function to sessionize information, identify the sequence and timing of events. You will also join datasets together to further enrich and prepare the data for analysis in Microsoft Power BI.
 
-## 7.3.2
+## 7.3.2 Advanced Queries
 
 The majority of the business logic requires gathering the touch-points for a customer and ordering them by time. This support is provided by Spark SQL in the form of window functions. Window functions are part of standard SQL and are supported by many other SQL engines.
 
@@ -177,7 +177,7 @@ The majority of the business logic requires gathering the touch-points for a cus
 
 Adobe has added a set of **Adobe Defined Functions** to the standard SQL syntax that allow you to better understand your experience data. In the next couple of queries you will learn about these ADF functions. You can find more information and the complete list via [Adobe IO](https://www.adobe.io/apis/experienceplatform/home/services/query-service/query-service.html#!acpdr/end-user/markdown/query-service/qs-queries-adobefunctions.md).
 
-### What do people do on the site before reaching the "Cancel Service" page as the 3rd page in a session?
+### What do people do on the site before reaching the "Cancel Service" page as the 3rd page in a session
 
 With this query you will discover the first two Adobe Defined Functions **SESS_TIMEOUT** and **NEXT**
 
@@ -259,7 +259,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (10 rows)
 ```
 
-### How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page?
+### How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page
 
 To answer this kind of query will we use the **TIME_BETWEEN_NEXT_MATCH()** Adobe Defined Function.
 
@@ -309,7 +309,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (15 rows)
 ```
 
-### And what is the outcome of that contact?
+### And what is the outcome of that contact
 
 Explain that we are joining datasets together, in this case we join our **aep_demo_website_interactions** with **aep_demo_call_center_interactions**. We do this to know the outcome of the callcenter interaction.
 
@@ -363,7 +363,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (15 rows)
 ```
 
-### What is the loyalty profile of these customers?
+### What is the loyalty profile of these customers
 
 In this query we join loyalty data that we have onboarded in Adobe Experience Platform. This allows to enrich the churn analysis with loyalty data.
 
@@ -420,7 +420,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (15 rows)
 ```
 
-#### From what region do the visit us?
+#### From what region do they visit us
 
 Lets include the geographical info, like longitude, attitude, city, countrycode, captured by the Adobe Experience Platform in order to get some geographical insights about churning customers.
 

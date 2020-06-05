@@ -1,13 +1,13 @@
 ---
-title: Module 8, Exercise
-description: 
+title: Data Science Workspace - Scoring and Consumption of Insights
+description: Data Science Workspace - Scoring and Consumption of Insights
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 8.4 - Scoring and Consumption of Insights
+# 8.4 Scoring and Consumption of Insights
 
 Now that we’ve experimented with our recommendations model and have determined the optimal run, we can move on to scoring the model to generate product recommendations.
 

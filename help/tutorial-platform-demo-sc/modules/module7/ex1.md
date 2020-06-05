@@ -1,13 +1,13 @@
 ---
-title: Module 7, Exercise
-description: 
+title: Query Service - Getting Started
+description: Query Service - Getting Started
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---
 
-# 7.1 - Getting Started
+# 7.1 Getting Started
 
 ## Objectives
 
@@ -18,8 +18,7 @@ activity:
 
 ## 7.1.1 - Getting familiar with the Adobe Experience Platform UI
 
-Make sure you are logged in into the Adobe Experience Platform UI and navigate to the Navigate to the Adobe Experience Platform Login Page: [https://platform.adobe.com
-](https://platform.adobe.com).
+Make sure you are logged in into the Adobe Experience Platform UI and navigate to the Navigate to the Adobe Experience Platform Login Page: [https://platform.adobe.com](https://platform.adobe.com).
 
 ![platform-login.png](./images/platform-login.png)
 

@@ -1,8 +1,8 @@
 ---
-title: Module 7, Exercise
-description: 
+title: Query Service - Explore the dataset with Power BI
+description: Query Service - Explore the dataset with Power BI
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---
