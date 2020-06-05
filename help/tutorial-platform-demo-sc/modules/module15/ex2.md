@@ -57,7 +57,7 @@ After that, your browser should open and show you the JupyterLab start page.
 
 ![LocalNotebook](./images/jupstart.png)
 
-Download [this notebook](./downloads/Jupyter_QS_LumaInsurance.ipynb.zip) and unzip it to the desktop of your local computer.
+Download the file **Jupyter_QS_LumaInsurance.ipynb.zip** from your **Environment Variables** and unzip it to the desktop of your local computer.
 
 Click the **Upload** - icon in JupyterLab.
 
