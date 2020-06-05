@@ -69,7 +69,6 @@ CRM ID, Declared ID, and Loyalty ID will need to have identity namespaces create
    ![alt_text](assets/image004.png)
 
 
-
     >[!NOTE] The owner is listed as Custom instead of Standard because it was custom created.
 
 6. Create two more Identity namespaces with the following parameters:
@@ -105,13 +104,15 @@ CRM ID, Declared ID, and Loyalty ID will need to have identity namespaces create
 
 
     Add a description for each field if you'd like. When finished, your Identity Namespaces should look like this:
-       ![alt_text](assets/image005.png)
+
+      ![alt_text](assets/image005.png)
 
 
 
 
 7. Scrolling down the list of standard identity namespaces, you should see the standard ones for phone and email that you'll use in a moment:
-       ![alt_text](assets/image006.png)
+
+   ![alt_text](assets/image006.png)
 
 
 
@@ -157,7 +158,6 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
    ![alt_text](assets/image012.png)
 
 
-
     >[!NOTE] The term 'secondary identity' is not an official term used by Adobe (you won't see it in the documentation anywhere). It's a term coined by those who have worked with customers to deploy Platform to help communicate and distinguish this identity to non-primary identity.
 
 9. Click **Apply**. As with the previous identity, you'll see the declaredId field inherit the thumbnail icon and the additional identity appear in the mixin panel:
@@ -166,20 +166,21 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 
 
 10. Map the remaining two identity fields, **emailId and phoneNbr** to the **Email** and **Phone** identity namespaces as secondary identifiers. When finished, your CRM Schema should look like this:
-   ![alt_text](assets/image014.png)
+
+    ![alt_text](assets/image014.png)
 
 
 11. Save the **CRM Schema**. Then, return to the schemas homepage (click on **Schemas** in the left rail)
 12. Click to expand **Offline Purchase** **Schema** and mark the only identity field there, **loyaltyId**, as the primary identity mapped to the custom **Loyalty ID** namespace. When finished, your schema should look like this:
-   ![alt_text](assets/image015.png)
+
+    ![alt_text](assets/image015.png)
 
 
 13. Save the **Offline Purchase** **Schema** then return to the schemas homepage.
 14. Click to expand **Loyalty Schema**. Set the **loyaltyId** field as the **Primary Identifier** mapped to the **Loyalty ID** identity namespace.
 15. Like the CRM Schema, set the **crmId, declaredId, emailId,** and **phoneNbr** field as a secondary identities mapped to their appropriate identity namespaces. Once finished, your **Loyalty Schema** should look like this:
-   ![alt_text](assets/image016.png)
 
-
+    ![alt_text](assets/image016.png)
 
     >[!NOTE] Even though the loyaltyId and cmrid fields appear in the same node, these two fields were created in different mixins (both custom mixins).
 
@@ -217,8 +218,6 @@ With the schemas built and identity fields marked and mapped to identity namespa
 
    ![alt_text](assets/image020.png)
 
-
-
     >[!NOTE] That pencil icon doesn't resize with the rest of the window, so you may need to scroll horizontally or resize your window to find that icon.
 
 8. On the resulting DULE screen, you'll see three groups of governance labels: Identity, Sensitive, and Contract. In the **Identity Labels** section (should be already expanded), check the **I2** option because a lot of this data can identity an individual rather than a device if used in conjunction with other data (more on this in a few steps):
@@ -232,35 +231,36 @@ With the schemas built and identity fields marked and mapped to identity namespa
 
 
 10. Click **Save Changes** to save and close the overlay. You should then see the DULE labels appear next to all of the fields in the dataset:
-   ![alt_text](assets/image023.png)
+
+    ![alt_text](assets/image023.png)
 
 
 11. Scroll through the list of CRM fields in this dataset. Notice that there are some fields that will need a higher restriction. Check the **firstName, fullName,** and **lastName** fields then click the **Edit Governance Labels** to change the DULE settings for just these fields:
-   ![alt_text](assets/image024.png)
-
+ 
+    ![alt_text](assets/image024.png)
 
 12. Since these fields can absolutely be used to identity someone, they will need the I1 setting since the l2 settings aren't restrictive enough. Check the **I1** box then click **Save Changes**. You'll see that these new fields now show the higher level of restriction:
-   ![alt_text](assets/image025.png)
+   
+    ![alt_text](assets/image025.png)
 
+     >[!NOTE] If you scroll through, you'll notice that there are a LOT of fields. If you looked through the governance settings, you'll see a lot of DULE options as well! What you've done is just a small sampling of what could be done for proper data governance. Ultimately, it isn't Adobe's job to determine what DULE settings should be applied to what fields. There are some common ones that make sense that we walked you through here, but ultimately, it's up to the client's legal team to determine what data they capture needs to have what DULE settings applied to it. 
 
-
-    >[!NOTE] If you scroll through, you'll notice that there are a LOT of fields. If you looked through the governance settings, you'll see a lot of DULE options as well! What you've done is just a small sampling of what could be done for proper data governance. Ultimately, it isn't Adobe's job to determine what DULE settings should be applied to what fields. There are some common ones that make sense that we walked you through here, but ultimately, it's up to the client's legal team to determine what data they capture needs to have what DULE settings applied to it. 
-
-
-    The point of this exercise was to show you that DULE could be applied on both the dataset and individual field level. However, it's important to note that individual fields can only be more restrictive than the rules for the entire data set. We can't, for example, make the entire dataset I1 and then make something like birth year I2. As such, when marking an entire dataset, you'll want to apply the lowest level settings to the entire data set and then add more restrictive settings to individual fields as needed. 
+     The point of this exercise was to show you that DULE could be applied on both the dataset and individual field level. However, it's important to note that individual fields can only be more restrictive than the rules for the entire data set. We can't, for example, make the entire dataset I1 and then make something like birth year I2. As such, when marking an entire dataset, you'll want to apply the lowest level settings to the entire data set and then add more restrictive settings to individual fields as needed. 
 
 13. With your DULE settings enabled, you're ready to create datasets for the rest of the schemas. Click on **Datasets** either in the left rail or in the top bread crumb trail (there is no save button to further save the DULE settings)
 14. Using what you just learned create a new Dataset for the **Loyalty** Schema name **Loyalty Data** and because the data is not PII, you only need to apply an I2 DULE setting to the **crmid, emailId,** and **phoneNbr** fields. When finished, your new DULE settings should look like this:
-   ![alt_text](assets/image026.png)
+
+    ![alt_text](assets/image026.png)
 
 
 15. Create another dataset for the **Offline Purchase** schema called **Offline Purchase Data**. This data has no PII, but arguments could be made that the loyalty id could, through the loyalty schema, be tied to crm data. This is where the gray areas come into play because Platform does have the ability to merge this data with crm data. Therefore, should it have an I1 or I2 setting? Or no DULE settings at all? It'll depend on the client's legal team, but for our purposes, we won't need to add DULE setting. When finished, navigate back to the datasets homepage where you should see 3 datasets:
-   ![alt_text](assets/image027.png)
+
+    ![alt_text](assets/image027.png)
 
 
 16. Lastly, create one more dataset for the **Luma Website Schema** called **Luma Website Data**. Since this is website data and Luma had a consent management system, any customer that agrees to use the website also agrees to let Adobe collect data and use it for marketing purposes only. As such, there is also no need for DULE settings for our purposes. However, client legal teams could call out that if someone authenticates, then there is the ability to tie anonymous data to PII via Platform. Again, this is a gray area that would be up to the client's legal team to decide what DULE settings should be enforced. But for now, you just need to verify that that you now have 4 datasets:
 
-   ![alt_text](assets/image028.png)
+    ![alt_text](assets/image028.png)
 
 Once you have all 4 datasets, you've completed this exercise. 
 

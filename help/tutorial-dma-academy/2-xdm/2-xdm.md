@@ -58,7 +58,7 @@ This exercise will introduce you to XDM data modeling structures and terminology
 
 Experience Platform uses schemas to describe the structure of data across systems in a consistent and reusable way. Before data can be ingested into Platform, a schema must be composed to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more mixins. As such, you could say:
 
->**XDM Schema = Class + Mixin(s)**
+      **XDM Schema = Class + Mixin(s)**
 
 
 ### Data Behavior Types and Classes
@@ -150,6 +150,7 @@ As you go through these steps, see if you can determine which CRM fields match t
 3. On the resulting screen you will see a **Schema Properties** in the right rail. Name your schema **by entering CRM Schema** into the **Display name** field.  Give a proper description as well in the **Description** field:
 
    ![alt_text](assets/image003.png)
+
    >[!NOTE] All the schema columns are case sensitive. Please make sure you follow the naming suggestion exactly or you might face errors while ingesting data in next exercise.
 
 4. We now need to assign a class to this schema. Click **Assign** from the **Composition** column
@@ -160,9 +161,7 @@ As you go through these steps, see if you can determine which CRM fields match t
 
    ![alt_text](assets/image005.png)
 
-
-
-    >[!NOTE] Recall that there are two behavior types (record data and times-series) that are used for Platform data.  Since this schema is going to describe a subject or person, it needs to be the record data behavior type.  As mentioned in the introductory sections of this document, the XDM Individual Profile is the best practice for record data for now.
+   >[!NOTE] Recall that there are two behavior types (record data and times-series) that are used for Platform data.  Since this schema is going to describe a subject or person, it needs to be the record data behavior type.  As mentioned in the introductory sections of this document, the XDM Individual Profile is the best practice for record data for now.
 
 
 
@@ -257,9 +256,8 @@ There are also a few reasons to create a custom identity mixin. One is so it can
     | phoneNbr | Phone Number | String | 
 
     When finished, your full identity mixin should look like this:
-       ![alt_text](assets/image016.png)
-
-
+    
+    ![alt_text](assets/image016.png)
 
     >[!NOTE] You may have noticed when you created the email and phone number nodes that the type dropdown had other options/formats that may have appeared to be more appropriate than just a string. For a variety of reasons, any fields that are going to be identity fields need to be strings and not any other type.
 
@@ -267,7 +265,8 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 11. With your custom identity mixin created, you're ready to save your entire schema. Click **Save** in the upper right corner. 
 12. Let's take a moment and discuss the advantages and drawback of creating a custom identity mixin like we just did. Expand the **homePhone** node and notice that there is a **number** field that could also work to contain a phone number, yet we added a **phoneNbr** field in the identities mixin.
-   ![alt_text](assets/image017.png)
+
+    ![alt_text](assets/image017.png)
 
     This is example of what was mentioned in the opening paragraphs of this sub section around whether or not building a custom identity mixin is a good practice. We could simply mark the homePhone > number node as an identity field (we'll be marking fields as identity fields in a later exercise). There is also a mobilePhone > number field. We could mark them both as identity fields. However, having a dedicated identity mixin makes it easy to be reused in other schemas (you'll see that shortly). Additionally, some people don't have a home phone number while others don't have a mobile phone number. As such, having just a primary phone number in an identity schema that can be either a home or mobile phone and yet still ben an identity may still come in handy
 
@@ -287,7 +286,6 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 ### Mixin JSON for APIs
 
 With Experience Platform being an API-first platform, it's important to call out how the UI provides ways to do common tasks with the API. In this case, you can simply copy the JSON that this schema relates to be clicking on the **Copy JSON** button in the upper right corner of the schema definition:
-
 
    ![alt_text](assets/image019.png)
 
@@ -398,8 +396,6 @@ Now it's time to add the other custom fields needed to meet Luma's needs.
 
    ![alt_text](assets/image027.png)
 
-
-
     >[!NOTE] Like the other schema created, you can also use the **Copy JSON** button to retrieve the JSON structure for this new schema if needed.
 
 9. Click on **Schemas** in the left pane to return to the schema homepage and you should now see that you have 2 schemas (the **Browse** tab may already be selected. If not, click on it):
@@ -460,8 +456,6 @@ With that background in mind, let's create this new time-series offline purchase
 4. Click **Assign** to give this schema a class. On the **Assign class** overlay, select the **XDM ExperienceEvent** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
 
    ![alt_text](assets/image029.png)
-
-
 
     >[!NOTE] Recall that there are two behavior types (record data and times-series) that are used for Platform data.  Since this is a schema that is going to capture events as they happen by customers, this needs to be a times-series behavior type. As mentioned in the introductory sections of this document, the XDM ExperienceEvent is the best practice for time-series behaviors for now. 
 
@@ -568,6 +562,7 @@ In this subsection, you're going to create a new mixin and add a field to it tha
     </table>
 
     When finished, your full **Offline Purchase Mixin** should look like this:
+ 
        ![alt_text](assets/image038.png)
 
 
@@ -609,7 +604,7 @@ Like the CRM Schema, there'll be some standard mixins to use as well as a custom
 7. If everything looks good, go ahead and save the schema. 
 
     >[!NOTE] You may be wondering why there weren't any identity mixins added. The answer is that the Experience Cloud ID (ECID) is going to be the identity field for this schema, but since Adobe supplies that, we don't need to add it to the schema. You'll also see in a later exercise how this web data is going to be tied to the offline data collected as part of the Loyalty, CRM, and Offline Purchase data.
-    >
+    
     >[!NOTE] It was mentioned earlier in this document that XDM design and standards are still new and evolving. That is especially true for XDM used for collecting data from the AEP Web SDK. At the time of this writing, there are no other vertical-specific XDM (like the commerce one you just added). Best practices are still being created by a joint team of consultants and product managers, and the mixins you've just added may be out of date in just a few weeks. Again, take in what you’re learning from this exercise, but expect that best practices are going to evolve as customers start to use the web SDK in practice. We will cover more of this in an upcoming exercise on deploying the AEP Web SDK. 
 
 8. Return to the schema homepage and you should now have four schemas:
