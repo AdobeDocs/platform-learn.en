@@ -110,7 +110,7 @@ Click on **Save Interfaces**.
 
 ## Exercise 4.2.4: Setup the implementation
 
-Our skill's logic is implemented using the [NodeJS Alexa SDK v2](https://developer.amazon.com/docs/alexa-skills-kit-sdk-for-nodejs/overview.html). See [here](./lambda/README.md) for more details on the implementation.
+Our skill's logic is implemented using the [NodeJS Alexa SDK v2](https://developer.amazon.com/docs/alexa-skills-kit-sdk-for-nodejs/overview.html). 
 
 We need our functionality deployed in AWS Lambda so that we can invoke it from the skill. And then we also need to tell our skill where to find that serverless functionality so that it can invoke it when so required.
 
