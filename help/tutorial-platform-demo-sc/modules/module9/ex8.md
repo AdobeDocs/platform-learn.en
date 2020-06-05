@@ -167,4 +167,4 @@ If both of these Datasets have successfully received the data coming from your w
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

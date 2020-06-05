@@ -158,4 +158,4 @@ Next Step: [12.2 Define an External Data Source](./ex2.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

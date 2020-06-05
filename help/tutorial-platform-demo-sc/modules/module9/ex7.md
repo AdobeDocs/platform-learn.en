@@ -117,4 +117,4 @@ Next Step: [9.8 Verify Data Ingestion from website into Platform](./ex8.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

@@ -175,4 +175,4 @@ Next Step: [10.3 Feature Engineering and Model Building](./ex3.md)
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

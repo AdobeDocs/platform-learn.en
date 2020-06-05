@@ -261,4 +261,4 @@ Next Step: [11.5 Take Action: send your segment to an S3-destination](./ex5.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

@@ -144,4 +144,4 @@ You'll then get a visual confirmation that your activity is now live.
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

@@ -114,4 +114,4 @@ Next Step: [15.2 Interact with data in Adobe Experience Platform from a local Ju
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

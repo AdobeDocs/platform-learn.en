@@ -188,4 +188,4 @@ Next Step: [13.4 Data Preparation in Customer Journey Analytics](./ex4.md)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

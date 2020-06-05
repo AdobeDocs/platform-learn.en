@@ -506,4 +506,4 @@ Congratulations you have now successfully used Informatica to ingest Profile and
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

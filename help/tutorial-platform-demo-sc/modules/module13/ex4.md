@@ -233,4 +233,4 @@ Next Step: [13.5 Visualization using Customer Journey Analytics](./ex5.md)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

@@ -25,4 +25,4 @@ Next Step: [10.4 Experimentation - Recipe Building](./ex4.md)
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

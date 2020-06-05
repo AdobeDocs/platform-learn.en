@@ -640,4 +640,4 @@ Next Step: [12.5 Trigger your Orchestrated Customer Journey](./ex5.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

@@ -292,4 +292,4 @@ Next Step: [16.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

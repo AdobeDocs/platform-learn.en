@@ -565,4 +565,4 @@ Congratulations, you've now finished Module 16!
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

@@ -356,4 +356,4 @@ Next Step: [16.4 Load data from BigQuery into Adobe Experience Platform](./ex4.m
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

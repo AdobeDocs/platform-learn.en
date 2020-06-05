@@ -92,4 +92,4 @@ If you've received your SMS Message, you've successfully completed this module.
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

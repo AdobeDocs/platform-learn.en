@@ -92,4 +92,4 @@ Next Step: [2.5 - Data Ingestion from Offline Sources](./ex5.md)
 
 [Go Back to Module 2](./data-ingestion.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

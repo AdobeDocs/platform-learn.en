@@ -255,4 +255,4 @@ Next Step: [9.6 Publish GTM Property](./ex6.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

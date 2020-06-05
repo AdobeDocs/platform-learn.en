@@ -91,4 +91,4 @@ From this list, your Recipe can be used to experiment but no coding is required 
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

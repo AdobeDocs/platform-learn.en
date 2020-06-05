@@ -381,4 +381,4 @@ Congratulations, you have finished Module 13.
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

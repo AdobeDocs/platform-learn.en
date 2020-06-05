@@ -73,4 +73,4 @@ With this, you've successfully finished this and this module.
 
 [Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

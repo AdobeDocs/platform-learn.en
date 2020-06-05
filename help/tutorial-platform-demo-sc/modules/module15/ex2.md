@@ -115,4 +115,4 @@ Next Step: [15.3 Operationalize your model using a Recipe](./ex3.md)
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

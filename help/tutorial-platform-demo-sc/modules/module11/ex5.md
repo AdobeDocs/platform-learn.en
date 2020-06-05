@@ -146,4 +146,4 @@ Next Step: [11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

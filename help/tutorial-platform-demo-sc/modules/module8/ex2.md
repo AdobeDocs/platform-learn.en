@@ -310,4 +310,4 @@ Next Step: [8.3 - Model Training and Experimentation](./ex3.md)
 
 [Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

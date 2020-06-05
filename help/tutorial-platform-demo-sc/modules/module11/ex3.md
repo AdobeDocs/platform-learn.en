@@ -64,4 +64,4 @@ Next Step: [11.4 Take Action: Send your segment to Google AdWords RLSA using Ado
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

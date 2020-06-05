@@ -128,4 +128,4 @@ Next Step: [16.2 Create your first query in BigQuery](./ex2.md)
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

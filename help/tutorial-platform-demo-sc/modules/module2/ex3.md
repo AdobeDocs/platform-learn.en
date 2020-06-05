@@ -165,4 +165,4 @@ Next Step: [2.4 - Use Launch and the Adobe Experience Platform Extension](./ex4.
 
 [Go Back to Module 2](./data-ingestion.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

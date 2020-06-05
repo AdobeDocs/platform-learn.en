@@ -68,4 +68,4 @@ Next Step: [9.2 Configure Google Analytics](./ex2.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

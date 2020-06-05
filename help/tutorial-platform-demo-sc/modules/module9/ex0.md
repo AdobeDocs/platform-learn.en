@@ -51,4 +51,4 @@ Next Step: [9.1 Create a Google Tag Manager Property](./ex1.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

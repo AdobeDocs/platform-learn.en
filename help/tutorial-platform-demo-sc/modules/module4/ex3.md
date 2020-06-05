@@ -116,4 +116,4 @@ Next Step: [4.4 Walkthrough of Demo Scenario, now including Alexa](./ex4.md)
 
 [Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

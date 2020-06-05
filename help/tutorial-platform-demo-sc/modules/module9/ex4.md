@@ -192,4 +192,4 @@ Next Step: [9.5 Configure GTM Tags & Triggers](./ex5.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

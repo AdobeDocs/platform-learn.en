@@ -41,4 +41,4 @@ Next Step: [9.7 Implement GTM Tag on AEP Demo website](./ex7.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

@@ -504,4 +504,4 @@ Next Step: [9.4 Retrieve Platform Datasets](./ex4.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

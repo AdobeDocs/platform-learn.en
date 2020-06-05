@@ -183,4 +183,4 @@ Congratulations, you've now finished Module 4.
 
 [Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

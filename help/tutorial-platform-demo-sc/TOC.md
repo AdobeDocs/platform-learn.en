@@ -6,7 +6,7 @@ audience: all
 
 # SC Demo Tutorial {#sc-demo-tutorial}
 
-+ [Overview](/help/tutorial-platform-demo-sc/README.md)
++ [Overview](/help/tutorial-platform-demo-sc/overview.md)
 + 1 - Launch and the WebSDK extension {#module1}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module1/data-ingestion-launch-websdk.md)
 + 2 - Data Ingestion {#module2}

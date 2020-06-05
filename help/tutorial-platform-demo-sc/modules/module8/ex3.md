@@ -100,4 +100,4 @@ Next Step: [8.4 - Scoring and Consumption of Insights](./ex4.md)
 
 [Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

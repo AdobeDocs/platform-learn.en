@@ -81,4 +81,4 @@ Go to [11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)
