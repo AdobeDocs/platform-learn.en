@@ -21,7 +21,7 @@ In this section you will provide yourself access to the product contexts that yo
 
 1. Locate the email you received informing you that you have administrative rights to a WWFO vLab ### Experience Cloud Organization
  
-   >![NOTE] ### # is a 3-digit ID for one of the Platform-enabled Experience Cloud Orgs that you were assigned for these exercises. 
+   >[!NOTE] ### is a 3-digit ID for one of the Platform-enabled Experience Cloud Orgs that you were assigned for these exercises. 
 
 1. Click on the **[!UICONTROL Get Started]** button or just navigate to [adminconsole.adobe.com](https://adminconsole.adobe.com) and login. Make sure you are in the Admin console for the WWFO vLab ### you were assigned (dropdown in the upper right corner)
 1. Locate the **[!UICONTROL Adobe Experience Platform]** card and click on **[!UICONTROL Assign Users]** button:
@@ -82,7 +82,7 @@ If you click on that dropdown, you'll notice that you have no other options for 
 In this section, you're going to create your own Experience Platform Sandbox environment. 
 
 1. If necessary, log into platform.adobe.com and ensure you are in your assigned WWFO vLab### organization.
-2. Click on **[!UICONTROL ADMINISTRATION]** > **[!UICONTROLSandboxes]** in the left menu:
+2. Click on **[!UICONTROL ADMINISTRATION]** > **[!UICONTROL Sandboxes]** in the left menu:
 
    ![alt_text](assets/image007.png)
 

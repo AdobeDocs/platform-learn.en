@@ -116,7 +116,7 @@ CRM ID, Declared ID, and Loyalty ID will need to have identity namespaces create
 
 
 
-    >[!NOTE] You'll also see an ECID identity namespace. That will come into play later when you deploy the AEP Web SDK to the site. If you have an Audience Manager background, you'll also notice several familiar names in this list. One can think of identity namespaces like AAM data sources that were only used for id reconciliation with client or 3<sup>rd</sup> party data. 
+    >[!NOTE] You'll also see an ECID identity namespace. That will come into play later when you deploy the AEP Web SDK to the site. If you have an Audience Manager background, you'll also notice several familiar names in this list. One can think of identity namespaces like AAM data sources that were only used for id reconciliation with client or 3rd party data. 
 
 
 
@@ -269,6 +269,6 @@ Once you have all 4 datasets, you've completed this exercise.
 
 Praveen Sharma and David Woolsey
 
-**Exercise Contributors**:
+**Exercise Contributors:**
 
 Shruti Jagtap
