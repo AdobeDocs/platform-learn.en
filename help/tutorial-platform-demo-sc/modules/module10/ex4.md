@@ -9,7 +9,7 @@ activity:
 
 # 10.4 - Experimentation - Recipe Building
 
-## What is a Recipe?
+## What is a Recipe
 
 A recipe is a proprietary algorithm or an ensemble of algorithms to help solve a specific business problem.
 

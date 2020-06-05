@@ -65,13 +65,13 @@ Next, double-click on the dataset name **EMEA DSW - Churn Input Data**. Jupyter 
 
 Note: The limit in the code snippet is 100. Only 100 values will be read into the data when you execute this code. You can increase the number of records to 200000. The code now should look like
 
-**
+```python
 from platform_sdk.dataset_reader import DatasetReader
 from datetime import date
 dataset_reader = DatasetReader(PLATFORM_SDK_CLIENT_CONTEXT, dataset_id="5dd2ee272a371e18a8fa7ebd")
 df0 = dataset_reader.limit(200000).read()
 df0.head()
-**
+```
 
 ![DSW10](./images/aepjuppynavdscicode200000.png)
 

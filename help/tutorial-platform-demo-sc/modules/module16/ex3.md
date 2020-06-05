@@ -125,7 +125,7 @@ In the next screen, select **Web application**.
 
 ![demo](./images/ex2/12.png)
 
-Several new fields will pop up. You now need to enter the **Name** of the OAuth Client ID and also enter the **Authorised redirect URIs**.
+Several new fields will pop up. You now need to enter the **Name** of the OAuth Client ID and also enter the **Authorized redirect URIs**.
 
 Follow this naming convention:
 
@@ -134,11 +134,11 @@ Follow this naming convention:
 | Name | ldap - AEP BigQuery Connector  |  delaigle - AEP BigQuery Connector  |
 | Authorized redirect URIs | https://developers.google.com/oauthplayground | https://developers.google.com/oauthplayground  |
 
-The **Authorised redirect URIs**-field is a very important field because you'll need it later to get the RefreshToken you need to finish the setup of the BigQuery Source Connector in Adobe Experience Platform.
+The **Authorized redirect URIs**-field is a very important field because you'll need it later to get the RefreshToken you need to finish the setup of the BigQuery Source Connector in Adobe Experience Platform.
 
 ![demo](./images/ex2/12-1.png)
 
-Before you continue, you need to physically push the **Enter**-button after entering the URL to store the value in the **Authorised redirect URIs**-field. If you don't click the **Enter**-button, you'll run into issues at a later stage, in the **OAuth 2.0 Playground**.
+Before you continue, you need to physically push the **Enter**-button after entering the URL to store the value in the **Authorized redirect URIs**-field. If you don't click the **Enter**-button, you'll run into issues at a later stage, in the **OAuth 2.0 Playground**.
 
 Next, click **Create**:
 
@@ -246,7 +246,7 @@ Next, click on **Go to ldap - AEP BigQuery Connector (unsafe)**.
 
 ![demo](./images/ex2/33.png)
 
-Google will now show you 8 different **Permission**-prompts. **Click **Allow** for all 8 permission-requests.** (This is a procedure that has to be followed and confirmed once by a real human being, before the API will allow programmatic requests)
+Google will now show you 8 different **Permission**-prompts. Click **Allow** for all 8 permission-requests.** (This is a procedure that has to be followed and confirmed once by a real human being, before the API will allow programmatic requests)
 
 Again, **8 different popup-windows** will no be shown, you have to click **Allow** for all of them.
 

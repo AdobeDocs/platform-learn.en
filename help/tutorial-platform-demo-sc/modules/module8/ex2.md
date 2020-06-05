@@ -132,12 +132,12 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/anacell5.png)
 
-**
+```python
 user_id = '<aepTenantId>.userId'
 item_id = '<aepTenantId>.itemId'
 interaction_type = '<aepTenantId>.interactionType'
 timestamp = '<aepTenantId>.timestamp'
-**
+```
 
 Click the play - button to execute this cell.
 
