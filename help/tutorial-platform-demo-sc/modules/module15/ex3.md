@@ -34,7 +34,8 @@ Jupyter Notebooks will now be opened inside the Adobe Experience Platform UI.
 
 ![DSWLI](./images/aephnbo.png)
 
-Download the file **LumaCarInsurancePropensityScoringRecipe.ipynb.zip** from your **Environment Variables** and unzip its content to the desktop of your local computer.
+Download this notebook and unzip its content to the desktop of your local computer.
+<!--Download [this notebook](./downloads/LumaCarInsurancePropensityScoringRecipe.ipynb.zip) and unzip its content to the desktop of your local computer.-->
 
 ![DSWLI](./images/dt.png)
 
