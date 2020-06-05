@@ -1,13 +1,13 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics - Create a Google Account
+description: Data Ingestion using Google Tag Manager and Google Analytics - Create a Google Account
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.2.0 - Create a Google Account
+# 9.2.0 Create a Google Account
 
 Go to [https://accounts.google.com/signup](https://accounts.google.com/signup).
 
@@ -47,8 +47,8 @@ Click **Confirm**.
 
 You're done - your Google Account has been created.
 
-Next Step: [9.1 - Create a Google Tag Manager Property](./ex1.md)
+Next Step: [9.1 Create a Google Tag Manager Property](./ex1.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

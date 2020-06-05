@@ -36,4 +36,4 @@ Next Step: [7.1 - Getting Started](./ex1.md)
 
 [Go Back to Module 7](./query-service.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

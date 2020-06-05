@@ -250,4 +250,4 @@ Next Step: [4.3 Use your Alexa skill](./ex3.md)
 
 [Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

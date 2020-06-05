@@ -100,4 +100,4 @@ Next Step: [2.2 - Configure Schema's and Set Identifiers](./ex2.md)
 
 [Go Back to Module 2](./data-ingestion.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

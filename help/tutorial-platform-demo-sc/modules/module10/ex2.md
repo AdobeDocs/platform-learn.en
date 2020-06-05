@@ -1,13 +1,13 @@
 ---
-title: Module 10, Exercise
-description: 
+title: Data Science Workspace - Churn Prediction Model - Churn Prediction Data Preparation
+description: Data Science Workspace - Churn Prediction Model - Churn Prediction Data Preparation
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 10.2 - Churn Prediction: Data Preparation
+# 10.2 Churn Prediction: Data Preparation
 
 ## Open Adobe Experience Platform and Jupyter Notebooks
 
@@ -105,7 +105,7 @@ You'll then have a new, empty cell.
 
 Copy the below code snippet and paste it in your new, empty cell.
 
-**
+```python
 import warnings
 warnings.filterwarnings('ignore')
 from subprocess import check_output
@@ -116,7 +116,7 @@ import seaborn as sns
 from numpy import median
 import matplotlib.pyplot as plt
 %matplotlib inline
-**
+```
 
 ![DSW10](./images/aepjuppynewcellcode.png)
 
@@ -132,9 +132,9 @@ Next, we want to have a look at the summary stats for all the numerical variable
 
 Copy the below code snippet and paste it in the new, empty cell.
 
-**
+```python
 df0.describe()
-**
+```
 
 ![DSW10](./images/aepjuppynavdesc.png)
 
@@ -171,8 +171,8 @@ Open the notebook **Mod10 - Data Exploration.ipynb**.
 
 Execute all cells one by one. The code outlines steps to explore data, build visualizations and gain insights about your data.
 
-Next Step: [10.3 - Feature Engineering and Model Building](./ex3.md)
+Next Step: [10.3 Feature Engineering and Model Building](./ex3.md)
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

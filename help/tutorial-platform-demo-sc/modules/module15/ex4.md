@@ -1,17 +1,17 @@
 ---
-title: Module 15, Exercise
-description: 
+title: Data Science Workspace - Train and Score your Recipe
+description: Data Science Workspace - Train and Score your Recipe
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 15.4 - Train and Score your Recipe
+# 15.4 Train and Score your Recipe
 
 After creating a Recipe, you can now Train and Score your Recipe without having to touch code again.
 
-## 15.4.1 - Train a Model based on a Recipe
+## 15.4.1 Train a Model based on a Recipe
 
 Login to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -84,7 +84,7 @@ Once the Training Run has completed, you'll see an Accuracy Metric that indicate
 Training a model requires more then one run. All Training Runs will be visible on this page and you'll be able to compare their results, so you can decide which one is the most successful.
 ![DSW](./images/multipleruns.png)
 
-## 15.4.2 - Score a Model based on a Recipe
+## 15.4.2 Score a Model based on a Recipe
 
 After training a model, we can use the model to score and as such, have the model calculate Car Insurance Sales Propensity scores which can be activated through targeting.
 
@@ -142,8 +142,8 @@ Next, click the **Preview Scoring Results Dataset**.
 
 ![DSW](./images/previewresults.png)
 
-Next Step: [15.5 - Publish your Recipe as a Scheduled Service](./ex5.md)
+Next Step: [15.5 Publish your Recipe as a Scheduled Service](./ex5.md)
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

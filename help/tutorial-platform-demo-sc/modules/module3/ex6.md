@@ -59,4 +59,4 @@ Congrats, you've successfully finished Module 2 - Real-time Customer Profile!
 
 [Go Back to Module 3](./real-time-customer-profile.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

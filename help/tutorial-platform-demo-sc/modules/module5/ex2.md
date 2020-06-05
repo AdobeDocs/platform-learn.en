@@ -117,4 +117,4 @@ Next Step: [5.3 Ingest Offline Order Events into Adobe Experience Platform](./ex
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

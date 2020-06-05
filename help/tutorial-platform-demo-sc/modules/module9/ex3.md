@@ -1,13 +1,13 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics - Configure GTM Variables
+description: Data Ingestion using Google Tag Manager and Google Analytics - Configure GTM Variables
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.3 - Configure GTM Variables
+# 9.3 Configure GTM Variables
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
@@ -17,8 +17,8 @@ In the GTM UI, go to **Variables**. You'll see the list of built-in Variables an
 
 ![GTM Setup](./images/dataelements.png)
 
-The first Variable we need to add is called **customerEmail**. When a customer creates a profile on the SYTYCD-website, we'll link the customer's email address to his or her customer profile in Platform.
-In the SYTYCD-website, information is often stored in localStorage. To access this we need a Custom Javascript to populate the GTM Variable.
+The first Variable we need to add is called **customerEmail**. When a customer creates a profile on the AEP Demo-website, we'll link the customer's email address to his or her customer profile in Platform.
+In the AEP Demo-website, information is often stored in localStorage. To access this we need a Custom Javascript to populate the GTM Variable.
 
 In the **User-Defined Variables** - section, click **New**:
 
@@ -46,12 +46,12 @@ Choose this one.
 
 This is the custom code to enter in the screen below:
 
-**javascript
+```javascript
 function() {
   var email = localStorage.getItem("email");
   return email;
 }
-**
+```
 
 So after pasting the code your screen looks like this.
 ![GTM Setup](./images/cemail2.png)
@@ -80,12 +80,12 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   var mobilenr = localStorage.getItem("mobilenr");
   return mobilenr;
 }
-**
+```
 
 Your screen should look like this.
 
@@ -103,12 +103,12 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   var firstname = localStorage.getItem("firstname");
   return firstname;
 }
-**
+```
 
 Your screen should look like this.
 
@@ -126,12 +126,12 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   var lastname = localStorage.getItem("lastname");
   return lastname;
 }
-**
+```
 
 Your screen should look like this.
 
@@ -149,12 +149,12 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   var aepTenantId = localStorage.getItem("aepTenantId");
   return aepTenantId;
 }
-**
+```
 
 Your screen should look like this.
 
@@ -172,12 +172,12 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   var loggedin = localStorage.getItem("loggedin");
   return loggedin;
 }
-**
+```
 
 Your screen should look like this.
 ![GTM Setup](./images/loggedin2.png)
@@ -194,12 +194,12 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   var brandName = localStorage.getItem("brandName");
   return brandName;
 }
-**
+```
 
 Your screen should look like this.
 ![GTM Setup](./images/debrandname.png)
@@ -218,12 +218,12 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   var productview = JSON.parse(localStorage.getItem("thisProductView"));
   return productview;
 }
-**
+```
 
 Your screen should look like this.
 
@@ -241,11 +241,11 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   return 1;
 }
-**
+```
 
 Your screen should look like this.
 
@@ -281,7 +281,7 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
 var date = new Date();
 
@@ -301,7 +301,7 @@ var str = date.getFullYear() + "-" + month + "-" + day + "T" +  hour + ":" + min
 
 return str;
 }
-**
+```
 
 ![GTM Setup](./images/timestamp.png)
 
@@ -317,14 +317,14 @@ In the **User-Defined Variables** - section, click **New**.
 * Choose **Custom Javascript** as Variable Type
 * Paste this Custom JavaScript code:
 
-**javascript
+```javascript
 function() {
   var min = 111111111;
   var max = 9999999999999;
   var randomNumber = Math.random() * (max - min) + min;
   return String(randomNumber);
 }
-**
+```
 
 ![GTM Setup](./images/hitid.png)
 
@@ -500,8 +500,8 @@ Your screen should now look like this:
 
 You've finished configuring all required GTM Variables!
 
-Next Step: [9.4 - Retrieve Platform Datasets](./ex4.md)
+Next Step: [9.4 Retrieve Platform Datasets](./ex4.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

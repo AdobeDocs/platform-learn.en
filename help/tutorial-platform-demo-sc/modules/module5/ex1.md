@@ -182,4 +182,4 @@ Next Step: [5.2 Connect Informatica to your AWS S3 bucket](./ex2.md)
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

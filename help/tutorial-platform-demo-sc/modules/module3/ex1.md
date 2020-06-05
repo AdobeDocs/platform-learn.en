@@ -142,4 +142,4 @@ Next Step: [3.2 Visualize your own real-time customer profile - UI](./ex2.md)
 
 [Go Back to Module 3](./real-time-customer-profile.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

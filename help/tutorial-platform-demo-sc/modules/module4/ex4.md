@@ -118,7 +118,7 @@ To use the new mobile app, you need to install the **AEP Demo**-mobile app.
   
 ![Demo](./images/app_men_cat.png)
 
-* Go to the Account-screen and your Real-Time Customer Profile data will be refreshed, after which you'll see the **Proteus Fitness Jackshirt (Orange)** - product be part of your receent browse activity. 
+* Go to the Account-screen and your Real-Time Customer Profile data will be refreshed, after which you'll see the **Proteus Fitness Jackshirt (Orange)** - product be part of your recent browse activity. 
   
 ![Demo](./images/app_after_proteus.png)
 
@@ -163,13 +163,13 @@ Let's put Alexa into the story.
   
 ![Demo](./images/lb_x_afteralexa.png)
   
-### Step 5 - Call the most personal Call Center ever!
+### Step 5 - Call the most personal Call Center ever
 
 * To access the Call Center Dashboard, click on the 3-dots in the desktop site's menu and select **Call Center**.
 
 ![Demo](./images/callcenter.png)
   
-* In the Call Center, you'll notice that the Mobile Number you used to register on the Luma - website has beeen filled out automatically for you. You can also enter any other mobile number of choice to retrieve the customer profile. 
+* In the Call Center, you'll notice that the Mobile Number you used to register on the Luma - website has been filled out automatically for you. You can also enter any other mobile number of choice to retrieve the customer profile. 
   
 ![Demo](./images/callcenter_id.png)
   
@@ -183,4 +183,4 @@ Congratulations, you've now finished Module 4.
 
 [Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
-[Go Back to All Modules](./../../README.md)
+[Go Back to All Modules](./../../overview.md)

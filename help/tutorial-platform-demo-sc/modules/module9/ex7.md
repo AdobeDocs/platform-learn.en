@@ -1,13 +1,13 @@
 ---
-title: Module 9, Exercise
-description: 
+title: Data Ingestion using Google Tag Manager and Google Analytics - Implement GTM Tag on SYTYCD website
+description: Data Ingestion using Google Tag Manager and Google Analytics - Implement GTM Tag on SYTYCD website
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.7 - Implement GTM Tag on SYTYCD website
+# 9.7 Implement GTM Tag on AEP Demo website
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
@@ -19,14 +19,14 @@ Go to **Install Google Tag Manager**.
 
 ![Launch Setup](./images/gtminstall.png)
 
-You now see 2 code fragments that need to be implemented on your SYTYCD - website.
-The first code fragments needs to be implemented in the **<head>** - section of the website, the second code fragments needs to be implemented in the **<body>** - section of the website.
+You now see 2 code fragments that need to be implemented on your AEP Demo - website.
+The first code fragments needs to be implemented in the **\<head>** - section of the website, the second code fragments needs to be implemented in the **\<body>** - section of the website.
 
-To do this dynamically without having to change every individual web page, we created 2 JavaScript files that are part of the SYTYCD - website. These 2 files are named **launch.js** (which you've used before as part of Modulles 1-2-3) and **tags_body.js** (which is a new file).
+To do this dynamically without having to change every individual web page, we created 2 JavaScript files that are part of the AEP Demo - website. These 2 files are named **launch.js** (which you've used before as part of Modules 1-2-3) and **tags_body.js** (which is a new file).
 
 You'll now need to copy some pieces (not all) of these 2 GTM code fragments into those 2 JavaScript - files.
 
-You can find these files in your SYTYCD-website directory in the folder **js**.
+You can find these files in your AEP Demo-website directory in the folder **js**.
 
 ![Launch Setup](./images/gtmjs.png)
 
@@ -41,8 +41,8 @@ Open a new empty text file in your preferred Text Editor. Paste the code you cop
 You now need to remove a number of elements.
 
 * On line 1, delete the text **<!-- Google Tag Manager -->**.
-* On line 2, delete the text **<script>**.
-* On line 6, delete the text **</script>**.
+* On line 2, delete the text **\<script>**.
+* On line 6, delete the text **\</script>**.
 * On line 7, delete the text **<!-- End Google Tag Manager -->**.
 
 You now have this result:
@@ -63,7 +63,7 @@ You now have this result:
 
 Select everything in this file and copy it.
 
-Now open the file **launch.js** which you can find in the folder **js** in your SYTYCD-website directory. The file looks like this:
+Now open the file **launch.js** which you can find in the folder **js** in your AEP Demo-website directory. The file looks like this:
 
 ![Launch Setup](./images/gtmjstxteditlaunchjs.png)
 
@@ -95,7 +95,7 @@ You now have this result:
 
 Select everything in this file and copy it.
 
-Now open the file **tags_body.js** which you can find in the folder **js** in your SYTYCD-website directory. The file looks like this:
+Now open the file **tags_body.js** which you can find in the folder **js** in your AEP Demo-website directory. The file looks like this:
 
 ![Launch Setup](./images/gtmjstxtedittagsbody.png)
 
@@ -113,8 +113,8 @@ FYI: in the **iframe.src** - tag, you can find your **GTM Container ID**. In thi
 
 After this change, your website and configuration are ready for Production!
 
-Next Step: [9.8 - Activate GTM-tag in SYTYCD Admin](./ex8.md)
+Next Step: [9.8 Verify Data Ingestion from website into Platform](./ex8.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

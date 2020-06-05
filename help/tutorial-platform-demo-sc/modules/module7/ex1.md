@@ -112,4 +112,4 @@ Next Step: [7.2 - Using the Query Service](./ex2.md)
 
 [Go Back to Module 7](./query-service.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

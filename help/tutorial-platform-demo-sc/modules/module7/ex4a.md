@@ -67,4 +67,4 @@ Congratulations! You have finished this module.
 
 [Go Back to Module 7](./query-service.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

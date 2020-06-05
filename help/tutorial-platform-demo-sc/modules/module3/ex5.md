@@ -127,4 +127,4 @@ Next Step: [3.6 See you Real-time Customer Profile in action in the Call Center]
 
 [Go Back to Module 3](./real-time-customer-profile.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

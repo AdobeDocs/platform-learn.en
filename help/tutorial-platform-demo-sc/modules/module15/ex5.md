@@ -1,13 +1,13 @@
 ---
-title: Module 15, Exercise
-description: 
+title: Data Science Workspace - Car Insurance Sales Propensity - Publish your Recipe as a Scheduled Service
+description: Data Science Workspace - Car Insurance Sales Propensity - Publish your Recipe as a Scheduled Service
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 15.5 - Publish your Recipe as a Scheduled Service
+# 15.5 Publish your Recipe as a Scheduled Service
 
 Finally, you can select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
 
@@ -93,4 +93,4 @@ Congratulations, you've now finished Module 15!
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

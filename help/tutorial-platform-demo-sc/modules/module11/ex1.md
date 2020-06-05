@@ -1,13 +1,13 @@
 ---
-title: Module 11, Exercise
-description: 
+title: Real-time CDP - Build a segment and take action - Build a segment and enable Streaming Segmentation
+description: Real-time CDP - Build a segment and take action - Build a segment and enable Streaming Segmentation
 kt: 5342
-audience: 
+audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 11.1 - Build a segment and enable Streaming Segmentation
+# 11.1 Build a segment and enable Streaming Segmentation
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
 
@@ -143,12 +143,12 @@ Then, click the **Save** - button to save your segment, after which you'll be ta
 
 ![Segmentation](./images/savedsegment.png)
 
-When you now go back to the SYTYCD - website and refresh the homepage, you should see the Streaming Segment that you just built already qualify for your profile on the Xray-panel.
+When you now go back to the AEP Demo - website and refresh the homepage, you should see the Streaming Segment that you just built already qualify for your profile on the Xray-panel.
 
 ![Segmentation](./images/xraystrseg.png)
 
-Next Step: [11.2 - Review how to configure DV360 Destination using Destinations](./ex2.md)
+Next Step: [11.2 Review how to configure DV360 Destination using Destinations](./ex2.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

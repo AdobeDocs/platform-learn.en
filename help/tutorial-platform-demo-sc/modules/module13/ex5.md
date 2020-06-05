@@ -1,19 +1,19 @@
 ---
-title: Module 13, Exercise
-description: 
+title: Customer Journey Analytics - Visualization using Customer Journey Analytics
+description: Customer Journey Analytics - Visualization using Customer Journey Analytics
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: 
 ---
 
-# 13.5 - Visualization using Analysis WorkSpace
+# 13.5 Visualization using Customer Journey Analytics
 
 ## Objectives
 
-* Understand Analysis Workspace UI
-* Learn some feature that make Analysis Workspace so different.
-* Learn how to analyze in CJA using Analysis Workspace
+- Understand Analysis Workspace UI
+- Learn some feature that make Analysis Workspace so different.
+- Learn how to analyze in CJA using Analysis Workspace
 
 ## Context
 
@@ -21,61 +21,53 @@ In this exercises you will use Analysis Workspace within CJA to analyze product 
 
 We will cover some of the queries done in the Module 7 - Query Service so you can see how easy is to run the same queries and more but without using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
 
-Let's use the project you created in [13.4 - Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
+Let's use the project you created in [Exercise 13.4 - Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
-![demo](./images/module135/home.png)
+![demo](./images/prohome.png)
 
 Open your project **ldap - Omnichannel Analysis**.
 
-In order to have historical data available for your visualization, please change the Data View Selection into this Data View: **all - Omnichannel Analysis**. This Data View has been prepared for you, and has enough data to build meaningful visualizations.
+With your project opened and the Data View **ldap - Omnichannel Analysis** selected, you're ready to start building your first visualizations.
 
-You can change the current data view by clicking on the **Data View Selector** inside a Workspace Project (located on the upper right side of your screen).
-
-![demo](./images/module135/home1.png)
-
-![demo](./images/module135/dataView.png)
-
-With your project opened and the Data View **all - Omnichannel Analysis** selected, you're ready to start building your first visualizations.
-
-![demo](./images/module135/dataView1.png)
+![demo](./images/prodataView1.png)
 
 ## How many product views do we have on a daily basis
 
-First of all, we need to select the right dates to analyze the data. Go to the calendar dropdown on the right side of the canvas. Click on it and select the dates: **30/01/2020 – 31/01/2020**.
+First of all, we need to select the right dates to analyze the data. Go to the calendar dropdown on the right side of the canvas. Click on it and select the applicable date range.
 
-![demo](./images/module135/1.png)
+![demo](./images/pro1.png)
 
 In the left side menu (components area), find the Calculated Metric **Product Views**. Select it and drag and drop it in to the canvas, on the top right within the freeform table.
 
-![demo](./images/module135/2.png)
+![demo](./images/pro2.png)
 
-Automatically the dimension **Day** will be added to create your first table. Now you can see your question answered on the fly. Do you remember the query from <!--[Module 7](./../../modules/module7/exercises/3-queries.md)-->? It wasn't that easy.
+Automatically the dimension **Day** will be added to create your first table. Now you can see your question answered on the fly. 
 
-![demo](./images/module135/3.png)
+![demo](./images/pro3.png)
 
 Next, right-click on the metric summary.
 
-![demo](./images/module135/4.png)
+![demo](./images/pro4.png)
 
 Click on **Visualize** and then select **Line**as visualization.
 
-![demo](./images/module135/5.png)
+![demo](./images/pro5.png)
 
 You’ll see your products views by day and hour.  
 
-![demo](./images/module135/6.png)
+![demo](./images/pro6.png)
 
 You can change the time scope by clicking on **Settings** within the visualization.
 
-![demo](./images/module135/7.png)
+![demo](./images/pro7.png)
 
 Click on the dot next to **Line** to **Manage the Data Source**.
 
-![demo](./images/module135/7a.png)
+![demo](./images/pro7a.png)
 
 Next, click **Lock Selection** to lock this visualization so that it always displays a timeline of Product Views.
 
-![demo](./images/module135/7b.png)
+![demo](./images/pro7b.png)
 
 ## Top 5 Products Viewed
 
@@ -83,38 +75,28 @@ What are the top 5 products viewed?
 
 Remember to save project every now and then.
 
-|  OS        | Short cut      |
-| ----------------- |-------------|
-| Windows | Control + S          |
+|  OS        | Short cut   | 
+| ----------------- |-------------| 
+| Windows | Control + S          | 
 | Mac | Command + S          |
 
-Let's start finding the top 5 products viewed. In the left side menu, find the **Product Name** - Dimension.
+Let's start finding the top 5 products viewed. In the left side menu, find the **SKU** - Dimension.
 
-![demo](./images/module135/8.png)
+![demo](./images/pro8.png)
 
-Now drag and drop it to replace the **Day**dimension:
-
-![demo](./images/module135/10.png)
+Now drag and drop **SKU** to replace the **Day**dimension:
 
 This will be the result
 
-![demo](./images/module135/10a.png)
+![demo](./images/pro10a.png)
 
-To finish, simply filter to see 5 products. Click the number next to **rows**.
+Next, try to breakdown one of the products by Brand Name. Search for **brandName** and drag it under the SKU **LUMA00108**.
 
-![demo](./images/module135/11.png)
+![demo](./images/pro13.png)
 
-Easy right?
+Next, do a breakdown using the ECID. Search for **ECID** and drag it under the brand name **Luma Retail**.
 
-![demo](./images/module135/12.png)
-
-Next, try to breakdown one of the products by Brand Name. Search for **brandName** and drag it under the product name **Nadia Elements Shell**.
-
-![demo](./images/module135/13.png)
-
-Next, do a breakdown using User Agent. Search for **User agent** and drag it under the brand name **Luma Retail**.
-
-![demo](./images/module135/15.png)
+![demo](./images/pro15.png)
 
 Finally you can add more visualizations. On the left side, under visualizations, search for **Donut**. Take **Donut**, drag-and-drop it on the canvas under the **Line**-visualization. It will automatically show all **Product Views**.
 
@@ -140,10 +122,12 @@ Next, click **Lock Selection** to lock this visualization so that it always disp
 
 ![demo](./images/module135/22b.png)
 
-Find out more about visualizations using Analysis Workspace here:
 
-* [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
-* [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
+Find out more about visualizations using Analysis Workspace here: 
+
+- [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
+- [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
+
 
 ## Product Interaction funnel, from viewing to buying
 
@@ -173,7 +157,7 @@ Click on the arrow to open the dimension:
 
 ![demo](./images/module135/27.png)
 
-You'll see all available Product Interaction Types. Select the **productView**and drag and drop it onto the **Add Touchpoint** field inside the **Fallout Visualization**.
+You'll see all available Product Interaction Types. Select the **productView** and drag and drop it onto the **Add Touchpoint** field inside the **Fallout Visualization**.
 
 ![demo](./images/module135/28.png)
 
@@ -197,7 +181,7 @@ Right click on the touchpoint **Product Add To Cart**. Then click on **Breakdown
 
 ![demo](./images/module135/32.png)
 
-A new freeform table will be created to analyze what the people did if they didn't purchase.
+A new freeform table will be created to analyze what the people did if they didn't purchase. 
 
 ![demo](./images/module135/33.png)
 
@@ -269,7 +253,8 @@ You'll then see this:
 
 ![demo](./images/module135/flow.png)
 
-As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion?
+As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion? 
+
 
 ## How are customers with a Positive Callcenter contact performing against the main KPIs
 
@@ -279,13 +264,13 @@ Let's first segment the data to get only users with **positive** calls. In CJA, 
 
 Inside the Filter builder, give a name to the filter
 
-|  Name        | Description    |
-| ----------------- |-------------|
-| Call Feeling - Positive | Call Feeling - Positive          |
+|  Name        | Description    | 
+| ----------------- |-------------| 
+| Call Feeling - Positive | Call Feeling - Positive          | 
 
 ![demo](./images/module135/47.png)
 
-Under the components (inside the Filter Builder), find **Call Feeling**and drag and drop it into the Filter Builder Definition.
+Under the components (inside the Filter Builder), find **Call Feeling** and drag and drop it into the Filter Builder Definition.
 
 ![demo](./images/module135/48.png)
 
@@ -341,7 +326,7 @@ Thanks to the first flow analysis, a new question came to mind. So we decided to
 
 Attribution in CJA enables business users to understand each touch in the customer journey. Attribution showcases how customers move from one touchpoint to another and brands use it to understand how advertising (banners on the website), content, products, etc... impact the customer journey.
 
-With the omnichannel data that is available in Adobe Experience Platform, we can now provide attribution insights across online and offline channels to understand that for instance, a customer became interested in a product through an offline store visit, that the customer called the call-center for information and that the sale was done on the website.
+With the omnichannel data that is available in Adobe Experience Platform, we can now provide attribution insights across online and offline channels to understand that for instance, a customer became interested in a product through an offline store visit, that the customer called the call-center for information and that the sale was done on the website. 
 
 Attribution in Customer Journey Analytics is one of the key differentiators from other BI solutions. Let's see how it works.
 
@@ -361,7 +346,7 @@ After checking the checkbox for **Use non-default attribution model**, you'll se
 
 Here you can change the model and the Look-back Window.
 
-You'll now see all available attribution models. To understand the differences between the attribution models, read this: [Adobe Analytics Attribution](https://www.adobe.com/content/dam/acom/en/data-analytics-cloud/analytics/pdfs/Adobe.Analytics.Attribution.Solution_Brief_Sept.2017.pdf)
+You'll now see all available attribution models. To understand the differences between the attribution models, read this: [Adobe Analytics Attribution] (https://www.adobe.com/content/dam/acom/en/data-analytics-cloud/analytics/pdfs/Adobe.Analytics.Attribution.Solution_Brief_Sept.2017.pdf)
 
 As already mentioned, you can even change the reporting look-back window. Depending on the model you'll have different options.
 
@@ -379,9 +364,9 @@ The **Cohort Table** allows you to understand how segments of users behave over 
 
 Using the omnichannel data that is available thanks to Adobe Experience Platform, the following questions can now be answered:
 
-* How many people who bought offline, came back to buy online after? How long does it take for them to come back?
-* What is the retention of people after having interactions with our call-center? Are they coming back more or less?
-* Since the launch of our Alexa App, how do our customers interact with the various available interaction channels (digital, point of sales, etc.)?
+- How many people who bought offline, came back to buy online after? How long does it take for them to come back?
+- What is the retention of people after having interactions with our call-center? Are they coming back more or less?
+- Since the launch of our Alexa App, how do our customers interact with the various available interaction channels (digital, point of sales, etc.)?
 
 Example:
 
@@ -389,11 +374,11 @@ Example:
 
 ## Customer Journey Analytics and Analysis Workspace recap
 
-As you've learned in this lab, Analysis Workspace stitches data from all channels together to analyze the full customer journey. Also, remember that you can bring in data to the same workspace that is not stitched to the journey.
+As you've learned in this lab, Analysis Workspace stitches data from all channels together to analyze the full customer journey. Also, remember that you can bring in data to the same workspace that is not stitched to the journey. 
 It can be really useful to bring disconnected data into your analysis to give context to the journey. Some examples include things like NPS data, surveys, Facebook Ads events or offline interactions (non identified).
 
 Congratulations, you have finished Module 13.
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](./../../overview.md)

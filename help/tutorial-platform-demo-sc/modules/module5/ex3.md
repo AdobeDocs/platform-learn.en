@@ -525,4 +525,4 @@ Next Step: [5.4 Ingest 2nd and 3rd party data into Adobe Experience Platform](./
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

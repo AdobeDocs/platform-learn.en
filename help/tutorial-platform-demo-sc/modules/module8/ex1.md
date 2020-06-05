@@ -346,4 +346,4 @@ Next Step: [8.2 - Model Authoring and Operationalization](./ex2.md)
 
 [Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

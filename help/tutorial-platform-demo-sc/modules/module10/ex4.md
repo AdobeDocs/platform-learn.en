@@ -1,13 +1,13 @@
 ---
-title: Module 10, Exercise
-description: 
+title: Data Science Workspace - Churn Prediction Model - Experimentation - Recipe Building
+description: Data Science Workspace - Churn Prediction Model - Experimentation - Recipe Building
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 10.4 - Experimentation - Recipe Building
+# 10.4 Experimentation - Recipe Building
 
 ## What is a Recipe
 
@@ -91,4 +91,4 @@ From this list, your Recipe can be used to experiment but no coding is required 
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

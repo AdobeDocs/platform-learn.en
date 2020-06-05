@@ -1,13 +1,13 @@
 ---
-title: Module 11, Exercise
-description: 
+title: Real-time CDP - Build a segment and take action - Send your segment to an S3-destination
+description: Real-time CDP - Build a segment and take action - Send your segment to an S3-destination
 kt: 5342
-audience: 
+audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 11.5 - Take Action: send your segment to an S3-destination
+# 11.5 Take Action: send your segment to an S3-destination
 
 Adobe Experience Platform also has the ability to share Audiences to Email Marketing Destinations such as Salesforce Marketing Cloud, Oracle Eloqua, Oracle Responsys and Adobe Campaign.
 
@@ -43,7 +43,7 @@ Select **New Account** as Account Type. Please use these credentials to connect 
 
 | Access Key ID             | Secret Access Key             |
 |:-----------------------:| :-----------------------:|
-| AKIA3EIEWQ23FDIAWK5D |Cm5Ln5yWDg+B4j0osDvaCtvmAL3EdXAF38jiSfvo|
+| AKIA3EIEWDZXSSDIAWK5D |Cm5Ln5yWDgBGHNGj0osDvaCtvmAL3EdXAF38jiSfvo|
 
 ![RTCDP](./images/rtcdpsfs3.png)
 
@@ -142,8 +142,8 @@ if you'd like to add more segment exports, you can click **Edit Activation** to 
 
 ![RTCDP](./images/s3k.png)
 
-Next Step: [11.6 - Take Action: send your segment to Adobe Target](./ex6.md)
+Next Step: [11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

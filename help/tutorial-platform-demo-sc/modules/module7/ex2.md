@@ -179,4 +179,4 @@ Next Step: [7.3 - Queries, queries, queries...  and churn analysis](./ex3.md)
 
 [Go Back to Module 7](./query-service.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

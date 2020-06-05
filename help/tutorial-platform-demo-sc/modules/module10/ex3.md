@@ -1,13 +1,13 @@
 ---
-title: Module 10, Exercise
-description: 
+title: Data Science Workspace - Churn Prediction Model - Feature Engineering and Model Building
+description: Data Science Workspace - Churn Prediction Model - Feature Engineering and Model Building
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 10.3 - Feature Engineering and Model Building
+# 10.3 Feature Engineering and Model Building
 
 In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model.
 
@@ -21,8 +21,8 @@ Follow the step by step process for model building. Notice the independent varia
 
 Two models are outlined in this ExerciseLogistic Regression and Random Forrest Regressor. Depending on the accuracy of the model, one can choose the model and use it to score the data set and build recipe.
 
-Next Step: [10.4 - Experimentation - Recipe Building](./ex4.md)
+Next Step: [10.4 Experimentation - Recipe Building](./ex4.md)
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

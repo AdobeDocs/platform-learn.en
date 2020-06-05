@@ -588,4 +588,4 @@ Next Step: [7.4 - Power BI/Tableau](./ex4.md)
 
 [Go Back to Module 7](./query-service.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

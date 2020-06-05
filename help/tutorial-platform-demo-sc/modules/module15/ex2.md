@@ -1,13 +1,13 @@
 ---
-title: Module 15, Exercise
-description: 
+title: Data Science Workspace - Interact with data in Adobe Experience Platform from a local JupyterLab environment
+description: Data Science Workspace - Interact with data in Adobe Experience Platform from a local JupyterLab environment
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment
+# 15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment
 
 In this exercise, you'll install Anaconda on your local machine so you can run Jupyter Notebooks on your local machine, to then interact with the data in Adobe Experience Platform through the Query Service.
 
@@ -103,7 +103,7 @@ Go to the next cell. This cell will load all datasets from Adobe Experience Plat
 
 ![LocalNotebook](./images/showtables.png)
 
-Go to the next cell. This cell will load the **AEP Demo - Car Insurance Interactions** - dataset from Adobe Experience Platform into a dataframe. Click the **Play** - icon to execute this cell. This might take 1-2 minutes.
+Go to the next cell. This cell will load the **AEP Demo - Car Insurance Interactions** - dataset from Adobe Experience Platform into a data-frame. Click the **Play** - icon to execute this cell. This might take 1-2 minutes.
 
 ![LocalNotebook](./images/loadee.png)
 
@@ -111,8 +111,8 @@ The **AEP Demo - Car Insurance Interactions** - dataset is now assigned to a dat
 
 ![LocalNotebook](./images/df.png)
 
-Next Step: [15.3 - Operationalize your model using a Recipe](./ex3.md)
+Next Step: [15.3 Operationalize your model using a Recipe](./ex3.md)
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)

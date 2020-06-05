@@ -1,17 +1,17 @@
 ---
-title: Module 12, Exercise
-description: 
+title: Journey Orchestration - External Weather API, SMS Action & more - Define Custom Actions
+description: Journey Orchestration - External Weather API, SMS Action & more - Define Custom Actions
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 12.3 - Define Custom Actions
+# 12.3 Define Custom Actions
 
 In this exercise, you'll create 2 custom Actions by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
-Go to [https://experience.adobe.com/#/@experienceplatform/home](https://experience.adobe.com/#/@experienceplatform/home)
+Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
 You'll see the **Adobe Experience Cloud**-homepage.
 
@@ -85,7 +85,7 @@ You'll then see an empty popup-window.
 
 Copy the below text and paste it in the empty popup-window.
 
-**json
+```json
 {
  "body": {
   "textMessage": {
@@ -100,7 +100,7 @@ Copy the below text and paste it in the empty popup-window.
   }
  }
 }
-**
+```
 
 FYI: by specifying the below fields, these fields will become accessible from your Customer Journey and you'll be able to populate them dynamically from the Journey:
 
@@ -173,7 +173,7 @@ You'll then see an empty popup-window.
 
 Copy the below text and paste it in the empty popup-window.
 
-**json
+```json
 {
  "text": {
   "toBeMapped": true,
@@ -181,7 +181,7 @@ Copy the below text and paste it in the empty popup-window.
   "label": "textToSlack"
  }
 }
-**
+```
 
 FYI: by specifying the below fields, these fields will become accessible from your Customer Journey and you'll be able to populate them dynamically from the Journey:
 
@@ -209,8 +209,8 @@ Your custom Action is now part of the **Actions**-list.
 
 You've now defined Events, Data Sources and Actions - let's consolidate all of that in 1 Orchestrated Journey.
 
-Next Step: [12.4 - Design a trigger-based Customer Journey](./ex4.md)
+Next Step: [12.4 Design a trigger-based Customer Journey](./ex4.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](../../overview.md)
