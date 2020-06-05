@@ -74,7 +74,7 @@ Click on **JSON Editor** in the left rail.
 
 ![JSON Editor](images/jsoneditor.png)
 
-Go [here](../../assets/aws-alexa/aepskillinteractionmodel.json). Click on **Raw**.
+Open the file **aepskillinteractionmodel.json** from your **Environment Variables GitHub repository**. Click on **Raw**.
 
 ![Raw](images/raw.png)
    
@@ -171,7 +171,7 @@ Continue, in the **aep** definition screen.
 ![Select AEP](images/selectaep.png)
 2. In the **Function code** panel, from the **Code entry type** dropdown list, select **Upload a .zip file**.
 ![Function Code](images/functioncode.png)
-3. Go [here](../../assets/aws-lambda/aepskill.zip), download and save the file somewhere on your computer as **aepskill.zip**.
+3. Download **aepskill.zip** from your **Environment Variables GitHub repository** and save the file somewhere on your computer as **aepskill.zip**.
 4. Click on the **Upload** button. Pick the **aepskill.zip** you saved on your computer from the file browser dialog.
 ![AEP Skill ZIP](images/selectaepskillzip.png)
 5. Click **Save**.

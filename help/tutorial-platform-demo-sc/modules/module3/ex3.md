@@ -167,14 +167,14 @@ In Postman, there are 2 concepts: Environments and Collections.
   * 1 Collection for Authentication to Adobe I/0
   * 1 Collection for our Exercises
 
-Please download [postman.zip](../../assets/postman/postman.zip) from the GitHub repository to your local desktop. 
+Please download **postman.zip** from your **Environment Variables GitHub repository** to your local desktop. 
 
-In this [postman.zip](../../assets/postman/postman.zip)-file, you'll find the following files:
+In this **postman.zip** file, you'll find the following files:
 
 * \_Adobe I-O - Token.postman\_collection.json
 * \_Adobe Experience Platform Enablement.postman\_collection.json
   
-Unzip the postman.zip-file and store these 2 files in a folder on your desktop, together with the downloaded Postman environment from Adobe IO. You need to have these 3 files in that folder:
+Unzip the **postman.zip** file and store these 2 files in a folder on your desktop, together with the downloaded Postman environment from Adobe IO. You need to have these 3 files in that folder:
 
 ![Adobe IO New Integration](./images/pmfolder.png)
 
