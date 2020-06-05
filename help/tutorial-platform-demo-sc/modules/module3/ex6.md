@@ -1,16 +1,16 @@
 ---
-title: Module 2, Exercise
-description: 
+title: Foundation - Real-time Customer Profile - See you Real-time Customer Profile in action in the Call Center
+description: Foundation - Real-time Customer Profile - See you Real-time Customer Profile in action in the Call Center
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 6 - See you Real-time Customer Profile in action in the Call Center
+# 3.6 - See you Real-time Customer Profile in action in the Call Center
 
 In this exercise, you'll follow a script and walk through the website.
-
+ 
 ## Story
 
 In this exercise, the goal is to have you walk through the customer journey and act like a real customer.
@@ -20,6 +20,7 @@ On this website, we've implemented Adobe Experience Platform. Every activity is 
 In the journey, you started as an anonymous customer who was browsing the website and after a couple of steps, you became a known customer which hydrated Adobe Experience Platform's Real-time Customer Profile.
 
 Let's now see how the information on your Customer Profile can be used to impact the customer experience & a company's bottom line.
+
 
 ## Customer Journey
 
@@ -56,6 +57,6 @@ After clicking the **Search** - button again, you'll see a new Experience Event 
 
 Congrats, you've successfully finished Module 2 - Real-time Customer Profile!
 
-[Go Back to Module 2](./real-time-customer-profile.md)
+[Go Back to Module 3](./real-time-customer-profile.md)
 
 [Go Back to All Modules](../../README.md)

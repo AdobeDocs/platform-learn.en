@@ -1,13 +1,13 @@
 ---
-title: Module 2, Exercise
-description: 
+title: Foundation - Real-time Customer Profile - Create a segment - UI
+description: Foundation - Real-time Customer Profile - Create a segment - UI
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 4 - Create a segment - UI
+# Exercise 4 - Create a segment - UI
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
 
@@ -45,7 +45,7 @@ Since XDM is the language that powers the experience business, XDM is also the f
 
 Let's build a segment which includes all **male** customers.
 
-To get to the attribute gender, you need to understand and know XDM.
+To get to the attribute gender, you need to understand and know XDM. 
 
 Gender is an attribute of Person, which can be found under Attributes. So to get there, you'll start by clicking on **XDM Individual Profile**.
 
@@ -71,9 +71,9 @@ To build out this segment, you need to add an Experience Event. You can find all
 
 ![Segmentation](./images/findee.png)
 
-Next, you'll see the top level **Experience Events**-node.
+Next, you'll see the top level **Experience Events**-node. 
 
-![Segmentation](./images/see.png)
+![Segmentation](./images/see.png) 
 
 To find customers that have visited the **Proteus Fitness Jackshirt (Orange)** - product, click on **XDM ExperienceEvent**.
 
@@ -100,9 +100,9 @@ When building a segment, we're actually composing a PQL query: Profile Query Lan
 
 Now you can see the full PQL-statement:
 
-**sql
+```sql
 person.gender in ["male"] and (select _Any1 from xEvent, _Any1__Product_list_items1 from _Any1.productListItems where _Any1__Product_list_items1.name.equals("Proteus Fitness Jackshirt (Orange)", false))
-**
+```
 
 You can also preview a sample of the customer profiles that are part of this segment, by clicking on **View Profiles**.
 
@@ -130,10 +130,10 @@ Then, click the **Save** - button to save your segment, after which you'll be ta
 
 ![Segmentation](./images/savedsegment.png)
 
-Let's now continue to the next and build a segment through the API.
+Let's now continue to the next exercise and build a segment through the API.
 
-Next Step: [5 - Create a segment - API](./ex5.md)
+Next Step: [3.5 Create a segment - API](./ex5.md)
 
-[Go Back to Foundation 2](./real-time-customer-profile.md)
+[Go Back to Module 3](./real-time-customer-profile.md)
 
 [Go Back to All Modules](../../README.md)

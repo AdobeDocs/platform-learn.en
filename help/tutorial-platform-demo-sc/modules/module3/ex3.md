@@ -1,24 +1,24 @@
 ---
-title: Module 2, Exercise
-description: 
+title: Foundation - Real-time Customer Profile - Visualize your own real-time customer profile - API
+description: Foundation - Real-time Customer Profile - Visualize your own real-time customer profile - API
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 3 - Visualize your own real-time customer profile - API
+## 3.3 - Visualize your own real-time customer profile - API
 
 In this exercise, you'll use Postman and Adobe I/O to query Adobe Experience Platform's API's to view your own real-time customer profile.
-
-## Story
+ 
+### Story
 
 In the real-time customer profile, all profile data is shown alongside behavioral and transactional data and the view will also be enriched with existing segment memberships. The data that is shown here comes from anywhere, from any Adobe Solution to any external solution. This is the most powerful view of Adobe Experience Platform: the true Experience System of Record.
 The Real-Time Customer Profile can be consumed by all Adobe solutions, but also by external solutions like Call Centers or in-store clienteling apps. The way to do is is to connect those external solutions to Adobe Experience Platform's API's.
 
-## 3.1 - Your Identifiers
+### 3.3.1 - Your Identifiers
 
-On the X-ray panel on the website, you can find multiple identities. Every Identity is linked to a Namespace.
+On the X-ray panel on the website, you can find multiple identities. Every Identity is linked to a Namespace. 
 
 ![Customer Profile](./images/identities.png)
 
@@ -34,21 +34,21 @@ Remember these identifiers for the next exercise.
 
 With these ID's in mind, go to Postman.
 
-## 3.1 - Setup your Adobe IO Project
+#### 3.3.2 - Setup your Adobe IO Project
 
-In this you'll be using Adobe I/O quite intensively to query against Platform's API's. Please follow the below steps to setup Adobe I/O.
+In this exercise you'll be using Adobe I/O quite intensively to query against Platform's API's. Please follow the below steps to setup Adobe I/O.
 
 Go to [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
 ![Adobe IO New Integration](./images/iohome.png)
 
-Make sure to select the correct Adobe Experience Platform-instance in the top right corner of your screen.
+Make sure to select the correct Adobe Experience Platform-instance in the top right corner of your screen. 
 
 ![Adobe IO New Integration](./images/iocomp.png)
 
 Click **Create new project**.
 
-![Adobe IO New Integration](./images/adobe_io_new_integration.png) or
+![Adobe IO New Integration](./images/adobe_io_new_integration.png) or 
 ![Adobe IO New Integration](./images/adobe_io_new_integration1.png)
 
 Select **+ Add to Project** and select **API**.
@@ -100,7 +100,7 @@ Click **Next**.
 
 ![Adobe IO New Integration](./images/next.png)
 
-You now have to select the **Product Profile(s)** for your integration.
+You now have to select the **Product Profile(s)** for your integration. 
 
 Select the required Product Profiles:
 
@@ -145,9 +145,9 @@ Your Adobe IO integration is now finished.
 
 ![Adobe IO New Integration](./images/api16.png)
 
-## 3.3 - Postman authentication to Adobe I/O
+#### Exercise 3.3.3 - Postman authentication to Adobe I/O
 
-Go to [https://www.getpostman.com/](https://www.getpostman.com/).
+Go to [https://www.getpostman.com/](https://www.getpostman.com/). 
 
 Click on **Get Started**.
 
@@ -162,14 +162,14 @@ After installation of Postman, start the application.
 In Postman, there are 2 concepts: Environments and Collections.
 
 * The Environment contains all of your environmental variables which are more or less consistent. In the Environment, you'll find things like the IMSOrg of our Platform environment, alongside security credentials like your Private Key and others. The environment file is the one you downloaded during the Adobe IO setup in the previous exercise, it's name like this: **service.postman_environment.json**.
-
+  
 * The Collection contains a number of API calls that you can use. We will use 2 collections
   * 1 Collection for Authentication to Adobe I/0
   * 1 Collection for our Exercises
 
-Please download [postman.zip](./downloads/postman.zip) from the GitHub repository to your local desktop.
+Please download [postman.zip](../../assets/postman/postman.zip) from the GitHub repository to your local desktop. 
 
-In this [postman.zip](./downloads/postman.zip)-file, you'll find the following files:
+In this [postman.zip](../../assets/postman/postman.zip)-file, you'll find the following files:
 
 * \_Adobe I-O - Token.postman\_collection.json
 * \_Adobe Experience Platform Enablement.postman\_collection.json
@@ -202,7 +202,7 @@ You now have everything you need in Postman to start interacting with Adobe Expe
 
 The first thing to do, is to make sure you're properly authenticated. To be authenticated, you need to request an access token.
 
-Make sure that you've got the right Environment selected before executing any call. You can check the currently selected Environment by verifying the Environment-dropdown list in the top right corner.
+Make sure that you've got the right Environment selected before executing any call. You can check the currently selected Environment by verifying the Environment-dropdown list in the top right corner. 
 
 The selected Environment should have a name similar to this one:
 
@@ -214,13 +214,13 @@ Click the **gear**-icon to update the Private Key in the environment file.
 
 Click the environment in the list:
 
-![Postman](./images/pk1.png)
+![Postman](./images/pk1.png) 
 
 You'll then see this. All fields are pre-populated, except for the field **PRIVATE_KEY**.
 
 ![Postman](./images/pk2.png)
 
-The private key has been generated when you created your Adobe IO Project. It was downloaded as a zip file, named **config.zip**. Extract that zip-file to your desktop.
+The private key has been generated when you created your Adobe IO Project. It was downloaded as a zip-file, named **config.zip**. Extract that zip-file to your desktop.
 
 ![Postman](./images/pk3.png)
 
@@ -259,17 +259,17 @@ Click the blue **Send**-button. After a couple of seconds, you should see a resp
 
 If your configuration was successful, you should see a similar response that contains the following information:
 
-| Key     | Value     |
-|:-------------:| :---------------:|
+| Key     | Value     | 
+|:-------------:| :---------------:| 
 | token_type          | **bearer** |
-| access_token    | **eyJ4NXUiOiJpbXNfbmEx...QT7mqZkumN1tdsPEioOEl4087Dg** |
+| access_token    | **eyJ4NXUiOiJpbXNfbmEx...QT7mqZkumN1tdsPEioOEl4087Dg** | 
 | expires_in          | **86399973** |
 
 Adobe I/O has given you a **bearer**-token, with a specific value (this very long access_token) and an expiration window.
 
 The token that we've received is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to authenticate to Adobe I/O, you will have to generate a new token by running this call again.
 
-## 3.3 - Real-time Customer Profile API, Schema: Profile
+#### Exercise 3.3 - Real-time Customer Profile API, Schema: Profile
 
 Now you can go ahead and send your first call to Platform's Unified Profile Service API's.
 
@@ -283,10 +283,10 @@ In **1. Unified Profile Service**, select the first call with the name **UPS - G
 
 For this call, there are 3 required variables:
 
-| Key     | Value     |
-|:-------------:| :---------------:|
+| Key     | Value     | 
+|:-------------:| :---------------:| 
 | entityId          | **id** |
-| entityIdNS    | **namespace** |
+| entityIdNS    | **namespace** | 
 | schema.name          | **\_xdm.context.profile** |
 
 * entityId = the specific customer ID
@@ -295,10 +295,10 @@ For this call, there are 3 required variables:
 
 So, if you want to ask Platform's API's to give you back all Profile information for your own ECID, you will need to configure the call as follows:
 
-| Key     | Value     |
-|:-------------:| :---------------:|
+| Key     | Value     | 
+|:-------------:| :---------------:| 
 | entityId          | **yourECID** |
-| entityIdNS    | **ecid** |
+| entityIdNS    | **ecid** | 
 | schema.name          | **\_xdm.context.profile** |
 
 ![Postman](./images/callecid.png)
@@ -311,7 +311,7 @@ You should get an immediate response from Platform, showing you something like t
 
 This is the full response from Platform:
 
-**json
+```javascript
 {
     "A2-OOBvy2Ns7YZIkm23k9uoE": {
         "entityId": "A2-OOBvy2Ns7YZIkm23k9uoE",
@@ -475,19 +475,19 @@ This is the full response from Platform:
         "lastModifiedAt": "2020-05-28T12:08:11Z"
     }
 }
-**
+```
 
 This is currently all of the available Profile data in Platform for this ECID.
-You're not required to use the ECID to request Profile data from Platform's Unified Profile, you can use any ID in any namespace to request this data.
+You're not required to use the ECID to request Profile data from Platform's Unified Profile, you can use any ID in any namespace to request this data. 
 
 Let's go back to Postman and pretend we're the call center, and send a call to Platform specifying the namespace of **Phone** and your mobile number.
 
 So, if you want to ask Platform's API's to give you back all Profile information for a specific Phone, you will need to configure the call as follows:
 
-| Key     | Value     |
-|:-------------:| :---------------:|
+| Key     | Value     | 
+|:-------------:| :---------------:| 
 | entityId          | **your phone nr** |
-| entityIdNS    | **mobilenr** \(replace ecid by mobilenr) |
+| entityIdNS    | **mobilenr** \(replace ecid by mobilenr) | 
 | schema.name          | **\_xdm.context.profile** |
 
 If your phonenumber contains special symbols like **+**, you have to select your full phonenumber, do a right-click and click **EncodeURIComponent**.
@@ -506,10 +506,10 @@ Let's do the same thing for your email ID by specifying the namespace of **email
 
 So, if you want to ask Platform's API's to give you back all Profile information for a specific email ID, you will need to configure the call as follows:
 
-| Key     | Value     |
-|:-------------:| :---------------:|
+| Key     | Value     | 
+|:-------------:| :---------------:| 
 | entityId          | **youremail** |
-| entityIdNS    | **email** \(replace Phone with email) |
+| entityIdNS    | **email** \(replace Phone with email) | 
 | schema.name          | **\_xdm.context.profile** |
 
 If your email address contains special symbols like **+**, you have to select your full email address, do a right-click and click **EncodeURIComponent**.
@@ -534,7 +534,7 @@ As an example:
 
 The Call Center doesn't necessarily know what kind of identifier is used in the Loyalty System and the Loyalty System doesn't necessarily know what kind of identifier is used by online applications. Each individual system can use the information that they have and understand to get the information they need, when they need it.
 
-## 3.4 - Real-time Customer Profile API, Schema: Profile and ExperienceEvent
+#### Exercise 3.3.4 - Real-time Customer Profile API, Schema: Profile and ExperienceEvent
 
 After having queried Platform's API's successfully for Profile data, let's now do the same with ExperienceEvent data.
 
@@ -548,26 +548,27 @@ In **1. Unified Profile Service**, select the second call with the name **UPS - 
 
 For this call, there are 4 required variables:
 
-| Key     | Value     |
-|:-------------:| :---------------:|
+| Key     | Value     | 
+|:-------------:| :---------------:| 
 | schema.name          | **\_xdm.context.experienceevent** |
 | relatedSchema.name          | **\_xdm.context.profile** |
 | relatedEntityId          | **id** |
-| relatedEntityIdNS    | **namespace** |
+| relatedEntityIdNS    | **namespace** | 
 
-* schema.name = the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema.
+* schema.name = the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. 
 * relatedSchema.name = While we're looking for data that is mapped against the ExperienceEvent schema, we need to specify an identity for which we want to receive that data. The schema that has access to identity is the Profile-schema, so the relatedSchema here is the Profile-schema.
 * relatedEntityId = the specific customer ID
 * relatedEntityIdNS = the specific namespace that is applicable to the ID
 
+
 So, if you want to ask Platform's API's to give you back all Profile information for your own ecid, you will need to configure the call as follows:
 
-| Key     | Value     |
-|:-------------:| :---------------:|
+| Key     | Value     | 
+|:-------------:| :---------------:| 
 | schema.name          | **\_xdm.context.experienceevent** |
 | relatedSchema.name          | **\_xdm.context.profile** |
 | relatedEntityId          | **yourECID** |
-| relatedEntityIdNS    | **ecid** |
+| relatedEntityIdNS    | **ecid** | 
 
 ![Postman](./images/eecallecid.png)
 
@@ -581,7 +582,7 @@ Below is the full response from Platform. In this example, there are 8 Experienc
 
 Also, when the X-ray panel shows ExperienceEvent information, it is using the below payload to parse and retrieve the information like Product Name (search for productName in the below payload) and Product Image URL (search for productImageUrl in the below payload).
 
-**json
+```javascript
 {
     "_page": {
         "orderby": "timestamp",
@@ -1243,14 +1244,14 @@ Also, when the X-ray panel shows ExperienceEvent information, it is using the be
         }
     }
 }
-**
+```
 
 This is currently all of the available ExperienceEvent data in Platform for this ECID.
 
-You're not required to use the ECID to request ExperienceEvent data from Adobe Experience Platform's Real-time Profile, you can use any ID in any namespace to request this data.
+You're not required to use the ECID to request ExperienceEvent data from Adobe Experience Platform's Real-time Profile, you can use any ID in any namespace to request this data. 
 
-Next Step: [4 - Create a segment - UI](./ex4.md)
+Next Step: [3.4 Create a segment - UI](./ex4.md)
 
-[Go Back to Foundation 2](./real-time-customer-profile.md)
+[Go Back to Module 3](./real-time-customer-profile.md)
 
 [Go Back to All Modules](../../README.md)
