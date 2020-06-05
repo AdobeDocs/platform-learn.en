@@ -1,13 +1,13 @@
 ---
-title: Module 10, Exercise
-description: 
+title: Data Science Workspace - Churn Prediction Model - Introduction to Data Science
+description: Data Science Workspace - Churn Prediction Model - Introduction to Data Science
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 10.1 - Introduction to Data Science
+# 10.1 Introduction to Data Science
 
 ## Introduction to Data Science
 
@@ -64,7 +64,7 @@ Examples: depth of decision tree, number of hidden layers, learning rate, etc.
 
 Let's continue with a hands-on exercise.
 
-Next Step: [10.2 - Churn Prediction: Data Preparation](./ex2.md)
+Next Step: [10.2 Churn Prediction: Data Preparation](./ex2.md)
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
