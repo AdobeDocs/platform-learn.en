@@ -208,7 +208,7 @@ On the top-level of your Schema, next to your Schema - name, click the **+ Add F
 
 ![Data Ingestion](./images/clickaddfield.png)
 
-After clicking the **+ Add Field**-button, you now see a new **object** in your schema. This object represents a custom **object** in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance [here](../../environment.md).
+After clicking the **+ Add Field**-button, you now see a new **object** in your schema. This object represents a custom **object** in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance in your **Environment Variables**.
 
 ![Data Ingestion](./images/tenant.png)
 

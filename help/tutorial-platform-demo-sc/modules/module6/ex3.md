@@ -85,7 +85,7 @@ After clicking the **Save & Build for Development** - button, your Development-l
 (FYI: sometimes the Launch library is cached in your browser so you might have to clear your cache)
 
 Once your Launch - configuration is published, go to your AEP Demo-website, select and load any brand of choice and navigate to the page Login/Register.
-Enter your credentials by following the Demo Best Practices as documented [here](../../bestpractices.md).
+Enter your credentials.
 
 ![Launch Setup](./images/lb_register_dtl.png)
 

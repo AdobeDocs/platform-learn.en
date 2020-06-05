@@ -66,7 +66,7 @@ On Monday May 25 2020, this should be the first set of identifiers of the day.
 
 ![Demo](./images/lb_register.png)
 
-ATTENTION: please remember [the Platform Demo Best Practices guidelines](../../bestpractices.md)
+Fill out the form.
 
 ![Demo](./images/lb_register_dtl.png)
 
