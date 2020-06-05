@@ -47,7 +47,7 @@ XDM provides open, standardized, and extensible schemas to represent an organiza
 This exercise will introduce you to XDM data modeling structures and terminology such as Schema, Class, Mixin, and Datatype while you create a schema to meet Luma's strategic objectives. This diagram outlines the basic relationship between these structures that will become even more clear as you progress through the exercise:
 
 
-   ![alt_text](assets/image001.png)
+![alt_text](assets/image001.png)
 
 >[!NOTE] The term datatype in this diagram can be confusing. A potentially better term would be field. As with a database field, XDM fields have a data type (string, long, double, date, and so forth). So, while the diagram is technically correct, it also helps to think of these data types as fields that contain data.  
 
@@ -267,7 +267,6 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 11. With your custom identity mixin created, you're ready to save your entire schema. Click **Save** in the upper right corner. 
 12. Let's take a moment and discuss the advantages and drawback of creating a custom identity mixin like we just did. Expand the **homePhone** node and notice that there is a **number** field that could also work to contain a phone number, yet we added a **phoneNbr** field in the identities mixin.
-
    ![alt_text](assets/image017.png)
 
     This is example of what was mentioned in the opening paragraphs of this sub section around whether or not building a custom identity mixin is a good practice. We could simply mark the homePhone > number node as an identity field (we'll be marking fields as identity fields in a later exercise). There is also a mobilePhone > number field. We could mark them both as identity fields. However, having a dedicated identity mixin makes it easy to be reused in other schemas (you'll see that shortly). Additionally, some people don't have a home phone number while others don't have a mobile phone number. As such, having just a primary phone number in an identity schema that can be either a home or mobile phone and yet still ben an identity may still come in handy
@@ -610,6 +609,7 @@ Like the CRM Schema, there'll be some standard mixins to use as well as a custom
 7. If everything looks good, go ahead and save the schema. 
 
     >[!NOTE] You may be wondering why there weren't any identity mixins added. The answer is that the Experience Cloud ID (ECID) is going to be the identity field for this schema, but since Adobe supplies that, we don't need to add it to the schema. You'll also see in a later exercise how this web data is going to be tied to the offline data collected as part of the Loyalty, CRM, and Offline Purchase data.
+    >
     >[!NOTE] It was mentioned earlier in this document that XDM design and standards are still new and evolving. That is especially true for XDM used for collecting data from the AEP Web SDK. At the time of this writing, there are no other vertical-specific XDM (like the commerce one you just added). Best practices are still being created by a joint team of consultants and product managers, and the mixins you've just added may be out of date in just a few weeks. Again, take in what you’re learning from this exercise, but expect that best practices are going to evolve as customers start to use the web SDK in practice. We will cover more of this in an upcoming exercise on deploying the AEP Web SDK. 
 
 8. Return to the schema homepage and you should now have four schemas:

@@ -62,6 +62,7 @@ In this section you will provide yourself access to the product contexts that yo
 
    ![alt_text](assets/image005.png)
     >[!TIP] Whenever you switch products, it's always a good idea to make sure you're in the correct Experience Cloud Organization.
+    >
     >[!NOTE] You could also navigate directly to platform.adobe.com or return to the Experience Cloud Overview page and clicked on the Experience Platform link there.
         
 1. Notice in the upper left corner of your screen is a dropdown indicating that you are in the production environment for Platform:
@@ -69,6 +70,7 @@ In this section you will provide yourself access to the product contexts that yo
    ![alt_text](assets/image006.png)
 If you click on that dropdown, you'll notice that you have no other options for changing the environment. Since a production environment is not where you want to learn and practice Platform skills, the next section will walk you through creating a sandbox environment as well as giving yourself permission to that sandbox. For now, though, just being on this screen is enough validation that you've giving yourself access to Platform. 
    >[!TIP] Stay on this screen, quickly move to the next section, and perform the steps needed to request a sandbox as the wait time to provision a sandbox once you request it is about 20 minutes. 
+   >
    >[!NOTE] Even if you were the last person of your group of users assigned to this org to reach this point, you still won't see any sandbox environments. The dropdown only shows you environments that you have access to. 
 
 ## Create a Sandbox for Development

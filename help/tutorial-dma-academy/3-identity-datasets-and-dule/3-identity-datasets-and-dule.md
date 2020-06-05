@@ -185,7 +185,7 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 
 16. Save your schema and you're ready to move on to the next section.
 
-  >[!NOTE] You may be wondering why no identities were mapped in the fourth schema related to site data collection. Syncing data collected from the site with an identity map is done in the JavaScript itself. You'll get an opportunity to do that in a later exercise.
+    >[!NOTE] You may be wondering why no identities were mapped in the fourth schema related to site data collection. Syncing data collected from the site with an identity map is done in the JavaScript itself. You'll get an opportunity to do that in a later exercise.
 
 
 
@@ -251,12 +251,10 @@ With the schemas built and identity fields marked and mapped to identity namespa
 
 13. With your DULE settings enabled, you're ready to create datasets for the rest of the schemas. Click on **Datasets** either in the left rail or in the top bread crumb trail (there is no save button to further save the DULE settings)
 14. Using what you just learned create a new Dataset for the **Loyalty** Schema name **Loyalty Data** and because the data is not PII, you only need to apply an I2 DULE setting to the **crmid, emailId,** and **phoneNbr** fields. When finished, your new DULE settings should look like this:
-
    ![alt_text](assets/image026.png)
 
 
 15. Create another dataset for the **Offline Purchase** schema called **Offline Purchase Data**. This data has no PII, but arguments could be made that the loyalty id could, through the loyalty schema, be tied to crm data. This is where the gray areas come into play because Platform does have the ability to merge this data with crm data. Therefore, should it have an I1 or I2 setting? Or no DULE settings at all? It'll depend on the client's legal team, but for our purposes, we won't need to add DULE setting. When finished, navigate back to the datasets homepage where you should see 3 datasets:
-
    ![alt_text](assets/image027.png)
 
 
@@ -264,9 +262,7 @@ With the schemas built and identity fields marked and mapped to identity namespa
 
    ![alt_text](assets/image028.png)
 
-
-
-    Once you have all 4 datasets, you've completed this exercise. 
+Once you have all 4 datasets, you've completed this exercise. 
 
 
 **Original Exercise Creators:**
