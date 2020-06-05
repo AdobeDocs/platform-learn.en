@@ -180,7 +180,7 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 14. Click to expand **Loyalty Schema**. Set the **loyaltyId** field as the **Primary Identifier** mapped to the **Loyalty ID** identity namespace.
 15. Like the CRM Schema, set the **crmId, declaredId, emailId,** and **phoneNbr** field as a secondary identities mapped to their appropriate identity namespaces. Once finished, your **Loyalty Schema** should look like this:
 
-   ![alt_text](assets/image016.png)
+    ![alt_text](assets/image016.png)
 
     >[!NOTE] Even though the loyaltyId and cmrid fields appear in the same node, these two fields were created in different mixins (both custom mixins).
 
