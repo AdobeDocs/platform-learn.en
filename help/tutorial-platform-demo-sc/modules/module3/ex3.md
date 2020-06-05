@@ -7,16 +7,16 @@ doc-type: tutorial
 activity: 
 ---
 
-## 3.3 - Visualize your own real-time customer profile - API
+# 3.3 - Visualize your own real-time customer profile - API
 
 In this exercise, you'll use Postman and Adobe I/O to query Adobe Experience Platform's API's to view your own real-time customer profile.
  
-### Story
+## Story
 
 In the real-time customer profile, all profile data is shown alongside behavioral and transactional data and the view will also be enriched with existing segment memberships. The data that is shown here comes from anywhere, from any Adobe Solution to any external solution. This is the most powerful view of Adobe Experience Platform: the true Experience System of Record.
 The Real-Time Customer Profile can be consumed by all Adobe solutions, but also by external solutions like Call Centers or in-store clienteling apps. The way to do is is to connect those external solutions to Adobe Experience Platform's API's.
 
-### 3.3.1 - Your Identifiers
+## 3.3.1 - Your Identifiers
 
 On the X-ray panel on the website, you can find multiple identities. Every Identity is linked to a Namespace. 
 
@@ -34,7 +34,7 @@ Remember these identifiers for the next exercise.
 
 With these ID's in mind, go to Postman.
 
-#### 3.3.2 - Setup your Adobe IO Project
+## 3.3.2 - Setup your Adobe IO Project
 
 In this exercise you'll be using Adobe I/O quite intensively to query against Platform's API's. Please follow the below steps to setup Adobe I/O.
 
@@ -145,7 +145,7 @@ Your Adobe IO integration is now finished.
 
 ![Adobe IO New Integration](./images/api16.png)
 
-#### Exercise 3.3.3 - Postman authentication to Adobe I/O
+## Exercise 3.3.3 - Postman authentication to Adobe I/O
 
 Go to [https://www.getpostman.com/](https://www.getpostman.com/). 
 
@@ -269,7 +269,7 @@ Adobe I/O has given you a **bearer**-token, with a specific value (this very lon
 
 The token that we've received is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to authenticate to Adobe I/O, you will have to generate a new token by running this call again.
 
-#### Exercise 3.3 - Real-time Customer Profile API, Schema: Profile
+## Exercise 3.3 - Real-time Customer Profile API, Schema: Profile
 
 Now you can go ahead and send your first call to Platform's Unified Profile Service API's.
 
@@ -534,7 +534,7 @@ As an example:
 
 The Call Center doesn't necessarily know what kind of identifier is used in the Loyalty System and the Loyalty System doesn't necessarily know what kind of identifier is used by online applications. Each individual system can use the information that they have and understand to get the information they need, when they need it.
 
-#### Exercise 3.3.4 - Real-time Customer Profile API, Schema: Profile and ExperienceEvent
+## Exercise 3.3.4 - Real-time Customer Profile API, Schema: Profile and ExperienceEvent
 
 After having queried Platform's API's successfully for Profile data, let's now do the same with ExperienceEvent data.
 
