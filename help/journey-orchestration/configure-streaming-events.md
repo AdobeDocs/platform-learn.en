@@ -20,7 +20,7 @@ Journey Orchestration listens to events and orchestrates the best next actions w
 
 Journey Orchestration Events are XDM Experience Events that are sent to the Adobe Experience Platform via streaming ingestion.
 
->[!NOTE]
+>[!NOTE] 
 >You will  need to be familiar with:
 >
 >* [The Experience Data Model (XDM)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md)

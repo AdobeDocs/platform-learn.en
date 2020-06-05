@@ -56,7 +56,7 @@ CRM ID, Declared ID, and Loyalty ID will need to have identity namespaces create
 
 
 
-    **Note: **The owner is listed as Custom instead of Standard** **because it was custom created.
+    >[!NOTE] The owner is listed as Custom instead of Standard** **because it was custom created.
 
 6. Create two more Identity namespaces with the following parameters:
 
@@ -101,7 +101,7 @@ CRM ID, Declared ID, and Loyalty ID will need to have identity namespaces create
 
 
 
-    **Note:** You'll also see an ECID identity namespace. That will come into play later when you deploy the AEP Web SDK to the site. If you have an Audience Manager background, you'll also notice several familiar names in this list. One can think of identity namespaces like AAM data sources that were only used for id reconciliation with client or 3<sup>rd</sup> party data. 
+    >[!NOTE] You'll also see an ECID identity namespace. That will come into play later when you deploy the AEP Web SDK to the site. If you have an Audience Manager background, you'll also notice several familiar names in this list. One can think of identity namespaces like AAM data sources that were only used for id reconciliation with client or 3<sup>rd</sup> party data. 
 
 
 
@@ -138,7 +138,7 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 
 
 
-    **Note: **The term 'secondary identity' is not an official term used by Adobe (you won't see it in the documentation anywhere). It's a term coined by those who have worked with customers to deploy Platform to help communicate and distinguish this identity to non-primary identity.
+    >[!NOTE] The term 'secondary identity' is not an official term used by Adobe (you won't see it in the documentation anywhere). It's a term coined by those who have worked with customers to deploy Platform to help communicate and distinguish this identity to non-primary identity.
 
 9. Click **Apply**. As with the previous identity, you'll see the declaredId field inherit the thumbnail icon and the additional identity appear in the mixin panel:
 ![alt_text](assets/image013.png)
@@ -160,7 +160,7 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 
 
 
-    **Note:** Even though the loyaltyId and cmrid fields appear in the same node, these two fields were created in different mixins (both custom mixins).
+    >[!NOTE] Even though the loyaltyId and cmrid fields appear in the same node, these two fields were created in different mixins (both custom mixins).
 
 16. Save your schema and you're ready to move on to the next section.
 
@@ -194,7 +194,7 @@ With the schemas built and identity fields marked and mapped to identity namespa
 
 
 
-    **Note: **That pencil icon doesn't resize with the rest of the window, so you may need to scroll horizontally or resize your window to find that icon.
+    >[!NOTE] That pencil icon doesn't resize with the rest of the window, so you may need to scroll horizontally or resize your window to find that icon.
 
 8. On the resulting DULE screen, you'll see three groups of governance labels: Identity, Sensitive, and Contract. In the **Identity Labels **section (should be already expanded), check the **I2** option because a lot of this data can identity an individual rather than a device if used in conjunction with other data (more on this in a few steps):
 ![alt_text](assets/image021.png)
@@ -217,7 +217,7 @@ With the schemas built and identity fields marked and mapped to identity namespa
 
 
 
-    **Note: **If you scroll through, you'll notice that there are a LOT of fields. If you looked through the governance settings, you'll see a lot of DULE options as well! What you've done is just a small sampling of what could be done for proper data governance. Ultimately, it isn't Adobe's job to determine what DULE settings should be applied to what fields. There are some common ones that make sense that we walked you through here, but ultimately, it's up to the client's legal team to determine what data they capture needs to have what DULE settings applied to it. 
+    >[!NOTE] If you scroll through, you'll notice that there are a LOT of fields. If you looked through the governance settings, you'll see a lot of DULE options as well! What you've done is just a small sampling of what could be done for proper data governance. Ultimately, it isn't Adobe's job to determine what DULE settings should be applied to what fields. There are some common ones that make sense that we walked you through here, but ultimately, it's up to the client's legal team to determine what data they capture needs to have what DULE settings applied to it. 
 
 
     The point of this exercise was to show you that DULE could be applied on both the dataset and individual field level. However, it's important to note that individual fields can only be more restrictive than the rules for the entire data set. We can't, for example, make the entire dataset I1 and then make something like birth year I2. As such, when marking an entire dataset, you'll want to apply the lowest level settings to the entire data set and then add more restrictive settings to individual fields as needed. 
