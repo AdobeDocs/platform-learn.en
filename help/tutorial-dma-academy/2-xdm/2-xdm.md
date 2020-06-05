@@ -57,7 +57,7 @@ This exercise will introduce you to XDM data modeling structures and terminology
 
 Experience Platform uses schemas to describe the structure of data across systems in a consistent and reusable way. Before data can be ingested into Platform, a schema must be composed to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more mixins. As such, you could say:
 
- **XDM Schema = Class + Mixin(s)**
+>**XDM Schema = Class + Mixin(s)**
 
 
 ### Data Behavior Types and Classes
@@ -145,11 +145,11 @@ As you go through these steps, see if you can determine which CRM fields match t
 ![alt_text](assets/image002.png)
 
 
-3. On the resulting screen you will see a **Schema Properties** in the right rail. Name your schema** **by entering **CRM Schema **into the **Display name** field.  Give a proper description as well in the **Description** field:
-![alt_text](assets/image003.png "image_tooltip
+3. On the resulting screen you will see a **Schema Properties** in the right rail. Name your schema **by entering CRM Schema** into the **Display name** field.  Give a proper description as well in the **Description** field:
+![alt_text](assets/image003.png)
    >[!NOTE] All the schema columns are case sensitive. Please make sure you follow the naming suggestion exactly or you might face errors while ingesting data in next exercise.
 
-4. We now need to assign a class to this schema. Click **Assign **from the **Composition** column
+4. We now need to assign a class to this schema. Click **Assign** from the **Composition** column
 ![alt_text](assets/image004.png)
 
 5. On the **Assign class** overlay, select the **XDM Individual Profile** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
@@ -182,13 +182,13 @@ As mentioned at the first of this section, CRM data is pretty generic across Ado
 ![alt_text](assets/image008.png)
 
 
-4. Repeat the previous steps to add the **Profile person details** and** Profile personal details** mixins (notice one is person and the other is person*al*). When finished, your schema should look like this:
+4. Repeat the previous steps to add the **Profile person details** and **Profile personal details** mixins (notice one is person and the other is person*al*). When finished, your schema should look like this:
 ![alt_text](assets/image009.png)
 
 5. Click **Save** in the upper right corner to save your schema with the work done thus far.
 
 
-#### **Custom Identity Mixin **
+#### Custom Identity Mixin
 
 The identity mixin you'll create is a custom mixin which will act as a central location and host for most of the customer identifiers across all the data sources and schemas in the organization's instance of Platform. Think of identity fields as fields that you can either link to an identical field in another schema/dataset and as a field we could use in a query to help retrieve a record.  
 
@@ -199,10 +199,10 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 
 1. Click **Add** to add another mixin
-2. On the **Add mixin** overlay, select the **Create new mixin** radio button. Name the mixin** Identities** and give it a proper description:
+2. On the **Add mixin** overlay, select the **Create new mixin** radio button. Name the mixin **Identities** and give it a proper description:
 ![alt_text](assets/image010.png)
 
-3. Once you've named your new custom mixin, click the **Add Mixin **button and you'll see it added to the schema:
+3. Once you've named your new custom mixin, click the **Add Mixin** button and you'll see it added to the schema:
 ![alt_text](assets/image011.png)
 
 
@@ -217,7 +217,7 @@ There are also a few reasons to create a custom identity mixin. One is so it can
     Again, this will make more sense as to why this can be a problem for customers as you progress through the exercises, but for now, it's important to understand that 1) XDM is still new 2) best practices are evolving, and 3) there will be changes and new standards that may come out within months, or even weeks, of this writing. Be flexible with what you're learning now. Take it in but know that things can change quickly on the XDM Schema front. 
 
 5. If not already done, select the **New field** node and the right pane will have the field properties for that node. 
-6. In the **Field name** and **Display name** fields, enter the text **identification **and set the **Type** dropdown to **Object:**
+6. In the **Field name** and **Display name** fields, enter the text **identification** and set the **Type** dropdown to **Object:**
 ![alt_text](assets/image013.png)
 
 
@@ -306,7 +306,7 @@ This section is going to be very similar to the last section. As such, some of t
 
 1. If necessary, login to [https://platform.adobe.com](https://platform.adobe.com) with adobe ID and make sure that you are in your assigned Experience Cloud org and in the sandbox you've created.
 2. Click on the **Schemas** tab in the left rail followed by a click on **Create Schema**.
-3. On the resulting screen, name your schema** **by entering **Loyalty Schema **into the **Display name** field.  Give a proper description as well in the **Description** field.
+3. On the resulting screen, name your schema by entering **Loyalty Schema** into the **Display name** field.  Give a proper description as well in the **Description** field.
 
     >[!NOTE] All the schema columns are case sensitive. Please make sure you follow the naming suggestion exactly or you might face errors while ingesting data in next exercise.
 
@@ -318,18 +318,18 @@ This section is going to be very similar to the last section. As such, some of t
 Now it's time to add the mixins for this schema. We'll use the identity mixin created in the previous section as well as create a net new Loyalty Mixin for the other fields needed.
 
 
-#### **Identity Mixin**
+#### Identity Mixin
 
 Now is an example of how good XDM planning pays off as you can reuse the identity mixin created previously.
 
 
 
-1. Click on **Add** in the **Mixins** section and on the **Add mixin** overlay, ensure that the **Use Existing mixin **radio button is selected.
-2. At the top of the list of available mixins should be the identities mixin you created earlier. Notice how the owner is listed as customer. Select the **identities **mixin then click **Add mixin.**
+1. Click on **Add** in the **Mixins** section and on the **Add mixin** overlay, ensure that the **Use Existing mixin** radio button is selected.
+2. At the top of the list of available mixins should be the identities mixin you created earlier. Notice how the owner is listed as customer. Select the **identities mixin** then click **Add mixin.**
 ![alt_text](assets/image020.png)
 
 
-3. Expand the **_wwfovlab### **> **identification** nodes and notice all of the identity fields are now present and the mixin is shown in the Composition panel:
+3. Expand the **_wwfovlab### > identification** nodes and notice all of the identity fields are now present and the mixin is shown in the Composition panel:
 ![alt_text](assets/image021.png)
 
 
@@ -338,9 +338,9 @@ Now is an example of how good XDM planning pays off as you can reuse the identit
 
 Now it's time to add the other custom fields needed to meet Luma's needs.
 
-1. Click **Add **to add another mixin and on the **Add mixin** overly, select the **Create new mixin** radio button. 
-2. Name the mixin** Loyalty Mixin**, give it a proper description, then click **Add Mixin.**
-3. Once the new mixin is added, we need to add the custom fields. Select the new** Loyalty** **Mixin** in the mixins section and then click the **Add Field** button that is at the root **Loyalty Schema** level: 
+1. Click **Add** to add another mixin and on the **Add mixin** overly, select the **Create new mixin** radio button. 
+2. Name the mixin **Loyalty Mixin**, give it a proper description, then click **Add Mixin.**
+3. Once the new mixin is added, we need to add the custom fields. Select the new **Loyalty Mixin** in the mixins section and then click the **Add Field** button that is at the root **Loyalty Schema** level: 
 ![alt_text](assets/image022.png)
 
     >[!NOTE] Just like before, you'll see the new field appear under the Experience Cloud Org tenant
@@ -362,7 +362,7 @@ Now it's time to add the other custom fields needed to meet Luma's needs.
 
 
 
-6. The only field we're missing is the loyalty Id field. This will be an identity field for this schema. Thinking back on the best practice of grouping identity fields together, we want to add this to the identities node of the schema, but keep it attached to the Loyalty mixin so that we aren't adding it to the identification mixin. To do that, ensure that the **Loyalty Mixin** is still selected in the **Composition** pane then click **Add Field** next to the **identification **object:
+6. The only field we're missing is the loyalty Id field. This will be an identity field for this schema. Thinking back on the best practice of grouping identity fields together, we want to add this to the identities node of the schema, but keep it attached to the Loyalty mixin so that we aren't adding it to the identification mixin. To do that, ensure that the **Loyalty Mixin** is still selected in the **Composition** pane then click **Add Field** next to the **identification** object:
 ![alt_text](assets/image025.png)
 
 
@@ -430,8 +430,8 @@ With that background in mind, let's create this new time-series offline purchase
 
 1. If necessary, log into [https://platform.adobe.com](https://platform.adobe.com) with your adobe ID and make sure that you are in your assigned Experience Cloud org and in the sandbox you've created.
 2. Click on the **Schemas** tab in the left rail and being the process of creating a new schema
-3. Name your schema** Offline Purchase Schema **and give it a proper description
-4. Click **Assign **to give this schema a class. On the **Assign class** overlay, select the **XDM ExperienceEvent** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
+3. Name your schema **Offline Purchase Schema** and give it a proper description
+4. Click **Assign** to give this schema a class. On the **Assign class** overlay, select the **XDM ExperienceEvent** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
 ![alt_text](assets/image029.png)
 
 
@@ -452,18 +452,18 @@ At this point you may be wondering why you're going to create a new identities m
 
 
 1. Click on **Add** in the **Mixins** section.
-2. On the **Add mixin** overly, select the **Create new mixin** radio button. Name the mixin** Event Identities**, give it a proper description, and click the **Add Mixin **button. 
-3. Click on the newly created **Event Identities** mixin in the **Composition **panel then click the only **Add field** button available to you. Like before, you'll see a new tenant node appear:
+2. On the **Add mixin** overly, select the **Create new mixin** radio button. Name the mixin **Event Identities**, give it a proper description, and click the **Add Mixin** button. 
+3. Click on the newly created **Event Identities** mixin in the **Composition** panel then click the only **Add field** button available to you. Like before, you'll see a new tenant node appear:
 ![alt_text](assets/image030.png)
  
 
-4. If not already done, select the **new field** node and in the right pane, name the field and display name **identification. **Then set the **Type** dropdown to **Object.**
+4. If not already done, select the **new field** node and in the right pane, name the field and display name **identification.** Then set the **Type** dropdown to **Object.**
 5. Click **Apply** and you'll see your schema update with the new name and the field is now turned into an object with the Add Field button now visible:
 ![alt_text](assets/image031.png)
 
 
-6. Start adding the specific identity fields we want by clicking **Add Field **next to the **identification** object.
-7. Like before, a new field node will appear with the properties in the right panel. Name the field **loyaltyId** with a display name of **Loyalty Id.** Set the type to **String** (again, because this is going to be an identity field)**. **
+6. Start adding the specific identity fields we want by clicking **Add Field** next to the **identification** object.
+7. Like before, a new field node will appear with the properties in the right panel. Name the field **loyaltyId** with a display name of **Loyalty Id.** Set the type to **String** (again, because this is going to be an identity field).
 ![alt_text](assets/image032.png)
 
 
@@ -473,15 +473,15 @@ At this point you may be wondering why you're going to create a new identities m
 
 
 
-#### **Create Custom Mixin with Standard Data Type Field**
+#### Create Custom Mixin with Standard Data Type Field
 
 In this subsection, you're going to create a new mixin and add a field to it that utilizes a standard data type.
 
 
 
-1. Click **Add **to add another mixin
-2. On the **Add mixin** overly, select the **Create new mixin** radio button, name the mixin** Offline Purchase Mixin,** give it a proper description, and click **Add mixin**.
-3. Select the newly created **Offline Purchase Mixin **and click the top-most** Add field** button:
+1. Click **Add** to add another mixin
+2. On the **Add mixin** overly, select the **Create new mixin** radio button, name the mixin **Offline Purchase Mixin**, give it a proper description, and click **Add mixin**.
+3. Select the newly created **Offline Purchase Mixin** and click the top-most **Add field** button:
 ![alt_text](assets/image034.png)
  
 
@@ -562,7 +562,7 @@ Like the CRM Schema, there'll be some standard mixins to use as well as a custom
 4. The nodes that you see in this mixin describe a lot of the same default things that current JavaScript libraries (like at.js, AppMeasurement, or DIL) do. You'll see these things categorically grouped by the nodes above. Take a moment to explore the **device, environment, place context, and web** nodes to see what they contain. 
 5. While the AEP SDK captures a lot of valuable information, it's not very vertical specific. Since Luma is retailer and has a shopping cart, we will need to add XDM schema to account for that. To do that, add the **ExperienceEvent commerce details** mixin. 
 
-    >[!NOTE] Once the ExperienceEvent commerce details mixin is added, you'll see the new **commerce** and **productListItems **nodes. Does anything about the **productListItems** node seem familiar? It should, because in the Offline Purchase Schema, you created a custom mixin and set one of the fields in that mixin to be of the productListItems type. This is yet another example of how the same datatype can be utilized across different mixins in different schemas.
+    >[!NOTE] Once the ExperienceEvent commerce details mixin is added, you'll see the new **commerce** and **productListItems** nodes. Does anything about the **productListItems** node seem familiar? It should, because in the Offline Purchase Schema, you created a custom mixin and set one of the fields in that mixin to be of the productListItems type. This is yet another example of how the same datatype can be utilized across different mixins in different schemas.
 
 6. At this point, your schema should look like this:
 ![alt_text](assets/image041.png)

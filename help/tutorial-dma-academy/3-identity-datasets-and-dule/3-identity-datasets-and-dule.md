@@ -66,7 +66,7 @@ CRM ID, Declared ID, and Loyalty ID will need to have identity namespaces create
 
 
 
-    >[!NOTE] The owner is listed as Custom instead of Standard** **because it was custom created.
+    >[!NOTE] The owner is listed as Custom instead of Standard because it was custom created.
 
 6. Create two more Identity namespaces with the following parameters:
 
@@ -123,7 +123,7 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 
 1. If necessary, log into platform.adobe.com and ensure you are in your assigned WWFO vLab### organization.
 2. Click on **Schemas** in the left rail to view the 4 schemas you created.
-3. Click into the **CRM Schema. **Next, expand the **wwofvlab### > Identification **nodes and select the **crmid** field. The right pane should show you the properties for this field:
+3. Click into the **CRM Schema.** Next, expand the **wwofvlab### > Identification** nodes and select the **crmid** field. The right pane should show you the properties for this field:
 ![alt_text](assets/image007.png)
 
 
@@ -135,7 +135,7 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 ![alt_text](assets/image009.png)
 
 
-6. This Identity is also going to be the **Primary Identity **for this schema, so you'll want to check the **Primary Identity** checkbox as well:
+6. This Identity is also going to be the **Primary Identity** for this schema, so you'll want to check the **Primary Identity** checkbox as well:
 ![alt_text](assets/image010.png)
 
 
@@ -165,7 +165,7 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 
 13. Save the **Offline Purchase** **Schema** then return to the schemas homepage.
 14. Click to expand **Loyalty Schema**. Set the **loyaltyId** field as the **Primary Identifier** mapped to the **Loyalty ID** identity namespace.
-15. Like the CRM Schema, set the **crmId, declaredId, emailId, **and **phoneNbr** field as a secondary identities mapped to their appropriate identity namespaces. Once finished, your **Loyalty Schema** should look like this:
+15. Like the CRM Schema, set the **crmId, declaredId, emailId,** and **phoneNbr** field as a secondary identities mapped to their appropriate identity namespaces. Once finished, your **Loyalty Schema** should look like this:
 ![alt_text](assets/image016.png)
 
 
@@ -174,7 +174,7 @@ Now that you've created the appropriate Identity Namespaces, you're ready to map
 
 16. Save your schema and you're ready to move on to the next section.
 
-    **Note**: You may be wondering why no identities were mapped in the fourth schema related to site data collection. Syncing data collected from the site with an identity map is done in the JavaScript itself. You'll get an opportunity to do that in a later exercise.
+  >[!NOTE] You may be wondering why no identities were mapped in the fourth schema related to site data collection. Syncing data collected from the site with an identity map is done in the JavaScript itself. You'll get an opportunity to do that in a later exercise.
 
 
 
@@ -206,11 +206,11 @@ With the schemas built and identity fields marked and mapped to identity namespa
 
     >[!NOTE] That pencil icon doesn't resize with the rest of the window, so you may need to scroll horizontally or resize your window to find that icon.
 
-8. On the resulting DULE screen, you'll see three groups of governance labels: Identity, Sensitive, and Contract. In the **Identity Labels **section (should be already expanded), check the **I2** option because a lot of this data can identity an individual rather than a device if used in conjunction with other data (more on this in a few steps):
+8. On the resulting DULE screen, you'll see three groups of governance labels: Identity, Sensitive, and Contract. In the **Identity Labels** section (should be already expanded), check the **I2** option because a lot of this data can identity an individual rather than a device if used in conjunction with other data (more on this in a few steps):
 ![alt_text](assets/image021.png)
 
 
-9. Expand the **Contract Labels** area and check the **C2** and **C5** options because most PII can't be sold to 3<sup>rd</sup> parties or be used for cross-internet advertising:
+9. Expand the **Contract Labels** area and check the **C2** and **C5** options because most PII can't be sold to 3rd parties or be used for cross-internet advertising:
 ![alt_text](assets/image022.png)
 
 
@@ -218,7 +218,7 @@ With the schemas built and identity fields marked and mapped to identity namespa
 ![alt_text](assets/image023.png)
 
 
-11. Scroll through the list of CRM fields in this dataset. Notice that there are some fields that will need a higher restriction. Check the **firstName, fullName, **and** lastName **fields then click the **Edit Governance Labels** to change the DULE settings for just these fields:
+11. Scroll through the list of CRM fields in this dataset. Notice that there are some fields that will need a higher restriction. Check the **firstName, fullName,** and **lastName** fields then click the **Edit Governance Labels** to change the DULE settings for just these fields:
 ![alt_text](assets/image024.png)
 
 
@@ -233,7 +233,7 @@ With the schemas built and identity fields marked and mapped to identity namespa
     The point of this exercise was to show you that DULE could be applied on both the dataset and individual field level. However, it's important to note that individual fields can only be more restrictive than the rules for the entire data set. We can't, for example, make the entire dataset I1 and then make something like birth year I2. As such, when marking an entire dataset, you'll want to apply the lowest level settings to the entire data set and then add more restrictive settings to individual fields as needed. 
 
 13. With your DULE settings enabled, you're ready to create datasets for the rest of the schemas. Click on **Datasets** either in the left rail or in the top bread crumb trail (there is no save button to further save the DULE settings)
-14. Using what you just learned create a new Dataset for the **Loyalty** Schema name **Loyalty Data** and because the data is not PII, you only need to apply an I2 DULE setting to the **crmid, emailId, **and** phoneNbr** fields. When finished, your new DULE settings should look like this:
+14. Using what you just learned create a new Dataset for the **Loyalty** Schema name **Loyalty Data** and because the data is not PII, you only need to apply an I2 DULE setting to the **crmid, emailId,** and **phoneNbr** fields. When finished, your new DULE settings should look like this:
 ![alt_text](assets/image026.png)
 
 
