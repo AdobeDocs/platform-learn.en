@@ -1,13 +1,13 @@
 ---
-title: Module 15, Exercise
-description: 
+title: Data Science Workspace - Car Insurance Sales Propensity - Operationalize your model using a Recipe
+description: Data Science Workspace - Car Insurance Sales Propensity - Operationalize your model using a Recipe
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 15.3 - Operationalize your model using a Recipe
+# 15.3 Operationalize your model using a Recipe
 
 In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a Recipe.
 
@@ -84,7 +84,7 @@ Scoring a model is done by clicking the **Score** - button.
 
 ![DSW](./images/playscore.png)
 
-Click **Score** on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the `pipeline.py` cell).
+Click **Score** on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the **pipeline.py** cell).
 
 After clicking **Score**, the Training Run will start and will need a couple of minutes to complete.
 
@@ -156,7 +156,7 @@ You'll then see all available Recipes, which now includes your Recipe as well.
 
 Now that you've created your recipe, let's continue with the next exercise, in which you'll start scalable training and experimentation.
 
-Next Step: [15.4 - Train and Score your Recipe](./ex4.md)
+Next Step: [15.4 Train and Score your Recipe](./ex4.md)
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 

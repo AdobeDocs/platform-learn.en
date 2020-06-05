@@ -1,13 +1,13 @@
 ---
-title: Module 15, Exercise
-description: 
+title: Data Science Workspace - Car Insurance Sales Propensity - Introduction to Luma Insurance
+description: Data Science Workspace - Car Insurance Sales Propensity - Introduction to Luma Insurance
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 15.1 - Introduction to Luma Insurance
+# 15.1 Introduction to Luma Insurance
 
 In this exercise, you'll learn how to use the Luma Insurance Demo Brand and how to demo the Real-time ML Use-Case.
 
@@ -110,7 +110,7 @@ And finally, based on the calculated propensity score, you'll also see specific 
 
 This segment qualification can then be shared through the Bi-Directional Segment Sharing connector between AEP and AEC, which means that solutions like Adobe Audience Manager and Adobe Target are now able to use that segment qualification and deliver an alternative, more personal experience to the customer.
 
-Next Step: [15.2 - Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
+Next Step: [15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 

@@ -1,8 +1,8 @@
 ---
-title: Module 15, Exercise
-description: 
+title: Data Science Workspace - Car Insurance Sales Propensity - FAQ
+description: Data Science Workspace - Car Insurance Sales Propensity - FAQ
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
@@ -27,7 +27,7 @@ The Model relies on 2 datasets:
 
 When a customer clicks the **Get Quote**-button, this data is collected:
 
-**json
+```json
 {
   "header": {
     "datasetId": "5e18200afe31e818a8d616b6",
@@ -81,11 +81,11 @@ When a customer clicks the **Get Quote**-button, this data is collected:
     }
   }
 }
-**
+```
 
 When a customer purchases a Car Insurance, this data is collected:
 
-**json
+```json
 {
   "header": {
     "datasetId": "5e18200afe31e818a8d616b6",
@@ -126,7 +126,7 @@ When a customer purchases a Car Insurance, this data is collected:
     }
   }
 }
-**
+```
 
 ## How is the training data set created
 
@@ -138,12 +138,12 @@ Data is collected on the website through Launch and **alloy.js**, which streams 
 
 The Target Predictor Variable is the below field. This is the value that indicated the desired behavior, namely a Purchase.
 
-**json
+```json
 "_experienceplatform": {
  "carinsurance": {
   "insurancePurchase": "yes"
 },
-**
+```
 
 ## How is traffic forwarded from Pipeline to the RTML endpoint
 
@@ -164,7 +164,7 @@ The RTML write back into the **EMEA ML Predictions (API)**-dataset which is the 
 
 This is a sample of the XDM payload sent by the RTML endpoint to the DCS Inlet ID:
 
-**json
+```json
 {
   "header": {
     "datasetId": "5d918f445dad97163733422e",
@@ -197,7 +197,7 @@ This is a sample of the XDM payload sent by the RTML endpoint to the DCS Inlet I
     }
   }
 }
-**
+```
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
