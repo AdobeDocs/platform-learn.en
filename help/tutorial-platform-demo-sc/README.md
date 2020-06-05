@@ -1,7 +1,5 @@
 # Adobe Experience Platform - Technical Enablement
 
-![Platform](./platformlogo.png)
-
 ## Overview
 
 This training course is the perfect starting point for Data Engineers, Data Analysts, Data Architects, Data Scientists, Orchestration Engineers and Marketers to gain a full understanding of the business value of Adobe Experience Platform and all of its Application Services. Each lesson focuses on a real challenge businesses face in today's complex ecosystem of personalization, and breaks down the solution to that challenge in various hands-on instructions.
