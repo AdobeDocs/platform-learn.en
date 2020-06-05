@@ -126,7 +126,7 @@ Click on the first cell in the notebook.
 
 ![DSW](./images/cell1.png)
 
-**
+```python
 import pandas as pd
 
 inputDataset="5ea04d5b5c640f18a85a7b6b" # AEP Demo - Website Interactions Dataset
@@ -140,7 +140,7 @@ brand_name = "<aepTenantId>.brand.brandName"
 timestamp = "timestamp"
 
 client_context = PLATFORM_SDK_CLIENT_CONTEXT
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -164,19 +164,19 @@ Don't continue the exercises until the indicator shows that the execution is fin
 
 There is no visual result after this execution. After clicking the play - button, continue to the next step.
 
-#### Read from Platform: Load the input dataset and show an overview of the data
+### Read from Platform: Load the input dataset and show an overview of the data
 
 Click on the next cell in the notebook.
 
 ![DSW](./images/cell2.png)
 
-**
+```python
 from platform_sdk.dataset_reader import DatasetReader
 
 dataset_reader = DatasetReader(client_context, inputDataset)
 df = dataset_reader.limit(50000).read()
 df.head()
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -198,13 +198,13 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/cell3.png)
 
-**
+```python
 # drop nulls
 df = df.dropna(subset=[user_id, item_id, interactionType, brand_name])
 
 # only focus on one brand
 df = df[df[brand_name] == "Luma Telco"]
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -222,7 +222,7 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/cell4.png)
 
-**
+```python
 # vectorized (no loops) solution for splitting in pandas
 # source: https://stackoverflow.com/a/48120674
 def split_df(dataframe, col_name, sep):
@@ -242,7 +242,7 @@ def split_df(dataframe, col_name, sep):
     return df
 
 df2 = split_df(df, item_id, "\|\|")
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -262,7 +262,7 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/cell5.png)
 
-**
+```python
 filtered_column_list = [item_id, user_id, interactionType, brand_name, timestamp]
 
 df2 = df2[filtered_column_list]
@@ -273,7 +273,7 @@ df2.rename(columns={
     interactionType: tenant_id + ".interactionType",
     brand_name: tenant_id + ".brandName"
 }, inplace=True)
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -293,9 +293,9 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/cell6.png)
 
-**
+```python
 df2.head()
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -313,7 +313,7 @@ Click on the seventh cell in the notebook.
 
 ![DSW](./images/cell7.png)
 
-**
+```python
 df2['timestamp'] = pd.to_datetime(df2['timestamp']).apply(lambda x: x.isoformat())
 
 from platform_sdk.models import Dataset
@@ -321,7 +321,7 @@ from platform_sdk.dataset_writer import DatasetWriter
 dataset = Dataset(PLATFORM_SDK_CLIENT_CONTEXT).get_by_id(dataset_id=outputDataset)
 dataset_writer = DatasetWriter(PLATFORM_SDK_CLIENT_CONTEXT, dataset)
 write_tracker = dataset_writer.write(df2, file_format='json')
-**
+```
 
 Click the play - button to execute this cell.
 

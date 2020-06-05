@@ -48,7 +48,7 @@ Click on the first cell in the notebook.
 
 ![DSW](./images/anacell1.png)
 
-**
+```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -61,7 +61,7 @@ import warnings; warnings.simplefilter('ignore')
 sns.set()
 seed = 1234
 inputDataset="5ea04d5b7f917418a8b7994c" # Recommendations Input Dataset
-**
+```
 
 Click the play - button to execute this cell.
 

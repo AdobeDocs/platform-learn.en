@@ -25,7 +25,7 @@ The complexity of your query will impact how long it takes for the Query Service
 
 In the previous you've replaced **enter your name** with your own ldap before executing it in PSQL.
 
-**sql
+```sql
 select /* enter your name */
        e.<aepTenantId>.identification.ecid as ecid,
        e.placeContext.geo.city as city,
@@ -45,7 +45,7 @@ where  e.<aepTenantId>.brand.brandName like 'Luma Telco'
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.<aepTenantId>.identification.ecid = c.<aepTenantId>.identification.ecid
 and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identification.ecid;
-**
+```
 
 Navigate to the Adobe Experience Platform UI - [https://platform.adobe.com](https://platform.adobe.com)
 

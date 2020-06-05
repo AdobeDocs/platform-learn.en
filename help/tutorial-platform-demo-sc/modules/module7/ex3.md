@@ -32,57 +32,61 @@ Data captured in Adobe Experience Platform is time stamped. The **timestamp** at
 How many product views do we have on a daily basis? 
 
 **SQL**
-**sql
+
+```sql
 select date_format( timestamp , 'yyyy-MM-dd') AS Day,
        count(*) AS productViews
 from   aep_demo_website_interactions
-where  \<aepTenantId>.brand.brandName like 'Luma Telco'
-and    \<aepTenantId>.productData.productInteraction = 'productView'
+where  <aepTenantId>.brand.brandName like 'Luma Telco'
+and    <aepTenantId>.productData.productInteraction = 'productView'
 group by Day
 limit 10;
-**
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
-**text
+
+```text
 prod:all=> select date_format( timestamp , 'yyyy-MM-dd') AS Day,
 prod:all->        count(*) AS productViews
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  \<aepTenantId>.brand.brandName like 'Luma Telco'
-prod:all-> and    \<aepTenantId>.productData.productInteraction = 'productView'
+prod:all-> where  <aepTenantId>.brand.brandName like 'Luma Telco'
+prod:all-> and    <aepTenantId>.productData.productInteraction = 'productView'
 prod:all-> group by Day
 prod:all-> limit 10;
     Day     | productViews 
 ------------+--------------
  2020-04-20 |         2138
 (1 row)
-**
+```
 
 ### Top 5 products viewed
 
 What are the top 5 products viewed?
 
 **SQL**
-**sql
-select \<aepTenantId>.productData.productName, count(*)
+
+```sql
+select <aepTenantId>.productData.productName, count(*)
 from   aep_demo_website_interactions
-where  \<aepTenantId>.brand.brandName like 'Luma Telco'
-and    \<aepTenantId>.productData.productInteraction = 'productView'
-group  by \<aepTenantId>.productData.productName
+where  <aepTenantId>.brand.brandName like 'Luma Telco'
+and    <aepTenantId>.productData.productInteraction = 'productView'
+group  by <aepTenantId>.productData.productName
 order  by 2 desc
 limit 5;
-**
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
-**text
-prod:all=> select \<aepTenantId>.productData.productName, count(*)
+
+```text
+prod:all=> select <aepTenantId>.productData.productName, count(*)
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  \<aepTenantId>.brand.brandName like 'Luma Telco'
-prod:all-> and    \<aepTenantId>.productData.productInteraction = 'productView'
-prod:all-> group  by \<aepTenantId>.productData.productName
+prod:all-> where  <aepTenantId>.brand.brandName like 'Luma Telco'
+prod:all-> and    <aepTenantId>.productData.productInteraction = 'productView'
+prod:all-> group  by <aepTenantId>.productData.productName
 prod:all-> order  by 2 desc
 prod:all-> limit 5;
               productname              | count(1)
@@ -92,58 +96,61 @@ prod:all-> limit 5;
  Samsung Galaxy S7 32GB Black          |      431
  SIM Only                              |      413
 (4 rows)
-**
+```
 
 ### Product Interaction funnel, from viewing to buying
 
 **SQL**
-**sql
-select \<aepTenantId>.productData.productInteraction, count(*)
+
+```sql
+select <aepTenantId>.productData.productInteraction, count(*)
 from   aep_demo_website_interactions
-where  \<aepTenantId>.brand.brandName like 'Luma Telco'
-and    \<aepTenantId>.productData.productInteraction is not null
-group  by \<aepTenantId>.productData.productInteraction;
-**
+where  <aepTenantId>.brand.brandName like 'Luma Telco'
+and    <aepTenantId>.productData.productInteraction is not null
+group  by <aepTenantId>.productData.productInteraction;
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
-**text
-prod:all=> select \<aepTenantId>.productData.productInteraction, count(*)
+
+```text
+prod:all=> select <aepTenantId>.productData.productInteraction, count(*)
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  \<aepTenantId>.brand.brandName like 'Luma Telco'
-prod:all-> and    \<aepTenantId>.productData.productInteraction is not null
-prod:all-> group  by \<aepTenantId>.productData.productInteraction;
+prod:all-> where  <aepTenantId>.brand.brandName like 'Luma Telco'
+prod:all-> and    <aepTenantId>.productData.productInteraction is not null
+prod:all-> group  by <aepTenantId>.productData.productInteraction;
  productinteraction | count(1) 
 --------------------+----------
  productView        |     2138
  testdriveSigned    |      262
  testdriveBooked    |      506
 (3 rows)
-**
+```
 
 ### Identify visitors with risk to Churn (visit page => Cancel Service)
 
 **SQL**
-**sql
-select distinct \<aepTenantId>.identification.ecid
+
+```sql
+select distinct <aepTenantId>.identification.ecid
 from   aep_demo_website_interactions
-where  \<aepTenantId>.brand.brandName like 'Luma Telco'
+where  <aepTenantId>.brand.brandName like 'Luma Telco'
 and    web.webPageDetails.name = 'Cancel Service'
-group  by \<aepTenantId>.identification.ecid
+group  by <aepTenantId>.identification.ecid
 limit 10;
-**
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
 
-**text
-prod:all=> select distinct \<aepTenantId>.identification.ecid
+```text
+prod:all=> select distinct <aepTenantId>.identification.ecid
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  \<aepTenantId>.brand.brandName like 'Luma Telco'
+prod:all-> where  <aepTenantId>.brand.brandName like 'Luma Telco'
 prod:all-> and    web.webPageDetails.name = 'Cancel Service'
-prod:all-> group  by \<aepTenantId>.identification.ecid
+prod:all-> group  by <aepTenantId>.identification.ecid
 prod:all-> limit 10;
                ecid               
 ----------------------------------
@@ -158,7 +165,7 @@ prod:all-> limit 10;
  44190333154814000913344976333301
  49093808822916497953751096412772
 (10 rows)
-**
+```
 
 In the next set of queries we will extend the above query, in order to get a complete view on the customers and their behavior that have been visiting the "Cancel Service" page. You will learn how to use the Adobe Defined Function to sessionize information, identify the sequence and timing of events. You will also join datasets together to further enrich and prepare the data for analysis in Microsoft Power BI.
 
@@ -180,7 +187,7 @@ With this query you will discover the first two Adobe Defined Functions **SESS_T
 
 **SQL**
 
-**sql
+```sql
 SELECT
   webPage,
   webPage_2,
@@ -208,19 +215,19 @@ FROM
           AS webPage_4,
         session.depth AS SessionPageDepth
       FROM (
-            select a.\<aepTenantId>.identification.ecid as ecid,
+            select a.<aepTenantId>.identification.ecid as ecid,
                    a.timestamp,
                    web.webPageDetails.name as webPage,
                     SESS_TIMEOUT(timestamp, 60 * 30) 
-                       OVER (PARTITION BY a.\<aepTenantId>.identification.ecid 
+                       OVER (PARTITION BY a.<aepTenantId>.identification.ecid 
                              ORDER BY timestamp 
                              ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) 
                   AS session
             from   aep_demo_website_interactions a
-            where  a.\<aepTenantId>.identification.ecid in ( 
-                select b.\<aepTenantId>.identification.ecid
+            where  a.<aepTenantId>.identification.ecid in ( 
+                select b.<aepTenantId>.identification.ecid
                 from   aep_demo_website_interactions b
-                where  b.\<aepTenantId>.brand.brandName like 'Luma Telco'
+                where  b.<aepTenantId>.brand.brandName like 'Luma Telco'
                 and    b.web.webPageDetails.name = 'Cancel Service'
             )
         )
@@ -230,12 +237,13 @@ and   webpage_3 = 'Cancel Service'
 GROUP BY webPage, webPage_2, webPage_3, webPage_4
 ORDER BY journeys DESC
 LIMIT 10;
-**
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
-**text
+
+```text
                 webPage                |               webPage_2               |   webPage_3    | webPage_4  | journeys 
 ---------------------------------------+---------------------------------------+----------------+------------+----------
  Telco Home                            | TV & Broadband Deals                  | Cancel Service | Call Start |        4
@@ -249,7 +257,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
  Google Pixel XL 32GB Black Smartphone | Luma Telco Sport                      | Cancel Service | Call Start |        1
  Google Pixel XL 32GB Black Smartphone | Luma Telco Shop                       | Cancel Service |            |        1
 (10 rows)
-**
+```
 
 ### How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page?
 
@@ -259,7 +267,7 @@ To answer this kind of query will we use the **TIME_BETWEEN_NEXT_MATCH()** Adobe
 
 **SQL**
 
-**sql
+```sql
 select * from (
        select <aepTenantId>.identification.ecid as ecid,
               web.webPageDetails.name as webPage,
@@ -274,13 +282,13 @@ select * from (
 ) r
 where r.webPage = 'Cancel Service'
 limit 15;
-**
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
 
-**text
+```text
                ecid               |    webPage     | contact_callcenter_after_seconds 
 ----------------------------------+----------------+----------------------------------
  16761464641996441029061082282035 | Cancel Service |                             -199
@@ -299,7 +307,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
  21847925317814042696901094422064 | Cancel Service |                                 
  67170357691539269238490319628276 | Cancel Service |                                 
 (15 rows)
-**
+```
 
 ### And what is the outcome of that contact?
 
@@ -307,7 +315,7 @@ Explain that we are joining datasets together, in this case we join our **aep_de
 
 **SQL**
 
-**sql
+```sql
 select r.*,
        c.<aepTenantId>.callDetails.callFeeling,
        c.<aepTenantId>.callDetails.callTopic,
@@ -328,13 +336,13 @@ from (
 where r.ecid = c.<aepTenantId>.identification.ecid
 and r.webPage = 'Cancel Service'
 limit 15;
-**
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
 
-**text
+```text
                ecid               |    webPage     | contact_callcenter_after_seconds | callfeeling | calltopic | contractcancelled 
 ----------------------------------+----------------+----------------------------------+-------------+-----------+-------------------
  16761464641996441029061082282035 | Cancel Service |                             -199 | negative    | contract  | no
@@ -353,7 +361,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
  21847925317814042696901094422064 | Cancel Service |                                  | none        | none      | no
  67170357691539269238490319628276 | Cancel Service |                                  | none        | none      | no
 (15 rows)
-**
+```
 
 ### What is the loyalty profile of these customers?
 
@@ -361,7 +369,7 @@ In this query we join loyalty data that we have onboarded in Adobe Experience Pl
 
 **SQL**
 
-**sql
+```sql
 select r.*,
        c.<aepTenantId>.callDetails.callFeeling,
        c.<aepTenantId>.callDetails.callTopic,
@@ -385,13 +393,13 @@ where r.ecid = c.<aepTenantId>.identification.ecid
 and r.webPage = 'Cancel Service'
 and l.<aepTenantId>.identification.ecid = r.ecid
 limit 15;
-**
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
 
-**text
+```text
                ecid               |    webPage     | contact_callcenter_after_seconds | callfeeling | calltopic | loyaltystatus |   crmid   
 ----------------------------------+----------------+----------------------------------+-------------+-----------+---------------+-----------
  16761464641996441029061082282035 | Cancel Service |                             -199 | negative    | contract  | Bronze        | 677195942
@@ -410,7 +418,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
  21847925317814042696901094422064 | Cancel Service |                                  | none        | none      | Bronze        | 535538788
  67170357691539269238490319628276 | Cancel Service |                                  | none        | none      | Bronze        | 773572750
 (15 rows)
-**
+```
 
 #### From what region do the visit us?
 
@@ -418,7 +426,7 @@ Lets include the geographical info, like longitude, attitude, city, countrycode,
 
 **SQL**
 
-**sql
+```sql
        select r.ecid,
               r.city,
               r.countrycode,
@@ -452,13 +460,13 @@ Lets include the geographical info, like longitude, attitude, city, countrycode,
        and r.webPage = 'Cancel Service'
        and l.<aepTenantId>.identification.ecid = r.ecid
        limit 15;
-**
+```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
 
 **Query Result**
 
-**text
+```text
                ecid               |   city    | countrycode |  latitude  | longitude | seconds_to_contact_callcenter | callfeeling | calltopic | contractcancelled | loyaltystatus |   crmid   
 ----------------------------------+-----------+-------------+------------+-----------+-------------------------------+-------------+-----------+-------------------+---------------+-----------
  16761464641996441029061082282035 | Ath       | BE          | 50.6302806 | 3.8861843 |                          -199 | negative    | contract  | no                | Bronze        | 677195942
@@ -473,7 +481,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
  49093808822916497953751096412772 | Antwerpen | BE          | 51.2472392 | 4.4403455 |                          -130 | positive    | contract  | yes               | Silver        | 907661997
  98370517719603434123172269831130 | Charleroi | BE          | 50.4315612 | 4.4472854 |                               | none        | none      | no                | Bronze        | 256000335
 
-**
+```
 
 ## Callcenter Interaction Analysis
 
@@ -491,41 +499,41 @@ On Mac
 
 Copy the following statement to notepad/brackets:
 
-**sql
+```sql
 select /* enter your name */
-       e.\<aepTenantId>.identification.ecid as ecid,
+       e.<aepTenantId>.identification.ecid as ecid,
        e.placeContext.geo.city as city,
        e.placeContext.geo._schema.latitude latitude,
        e.placeContext.geo._schema.longitude longitude,
        e.placeContext.geo.countryCode as countrycode,
-       c.\<aepTenantId>.callDetails.callFeeling as callFeeling,
-       c.\<aepTenantId>.callDetails.callTopic as callTopic,
-       c.\<aepTenantId>.callDetails.contractCancelled as contractCancelled,
-       l.\<aepTenantId>.loyalty.loyaltyStatus as loyaltystatus,
-       l.\<aepTenantId>.loyalty.loyaltyPoints as loyaltypoints,
-       l.\<aepTenantId>.identification.crmid as crmid
+       c.<aepTenantId>.callDetails.callFeeling as callFeeling,
+       c.<aepTenantId>.callDetails.callTopic as callTopic,
+       c.<aepTenantId>.callDetails.contractCancelled as contractCancelled,
+       l.<aepTenantId>.loyalty.loyaltyStatus as loyaltystatus,
+       l.<aepTenantId>.loyalty.loyaltyPoints as loyaltypoints,
+       l.<aepTenantId>.identification.crmid as crmid
 from   aep_demo_website_interactions e
       ,aep_demo_call_center_interactions c
       ,aep_demo_loyalty_data l
-where  e.\<aepTenantId>.brand.brandName like 'Luma Telco'
+where  e.<aepTenantId>.brand.brandName like 'Luma Telco'
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
-and    e.\<aepTenantId>.identification.ecid = c.\<aepTenantId>.identification.ecid
-and    l.\<aepTenantId>.identification.ecid = e.\<aepTenantId>.identification.ecid;
-**
+and    e.<aepTenantId>.identification.ecid = c.<aepTenantId>.identification.ecid
+and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identification.ecid;
+```
 
 And replace 
 
-**text
+```text
 enter your name
-**
+```
 
-Do not remove **/\*** and **\*/**. Your modified statement in notepad should look like:
+Do not remove ```/\*``` and ```\*/```. Your modified statement in notepad should look like:
 
 ![edit-query-notepad.png](./images/edit-query-notepad.png)
 
 Copy your modified statement from **notepad** into the **PSQL command line window** and hit enter. You should see the following result in the PSQL command line window:
 
-**text
+```text
 prod:all=> select /* vangeluw */
 prod:all->        e.<aepTenantId>.identification.ecid as ecid,
 prod:all->        e.placeContext.geo.city as city,
@@ -572,7 +580,7 @@ prod:all-> and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identifi
  21257785085666488624247959294728 | Mons      | 50.4271996 |  3.989666 | BE          | positive    | contract  | no                | Bronze        |         337.0 | 210926597
  08069151049227862353292320341420 | Bruxelles | 50.7881573 | 4.4180065 | BE          | neutral     | invoice   | no                | Silver        |         512.0 | 049132258
 :
-**
+```
 
 In the next you will persist your query (also known as **create table as select** or **CTAS**) as a new dataset that you will use in Microsoft Power BI.
 

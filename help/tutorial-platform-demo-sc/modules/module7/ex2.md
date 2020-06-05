@@ -32,7 +32,7 @@ Copy the command **show tables;** and paste it at the **prod:all >** prompt:
 
 You will see the following result:
 
-**text
+```text
 prod:all=> show tables;
                    name                    |        dataSetId         |                  dataSet                  | description | resolved
 -------------------------------------------+--------------------------+-------------------------------------------+-------------+----------
@@ -58,8 +58,7 @@ prod:all=> show tables;
  cross_industry_demo_data_midvalues        | 5e1d3e7512aa2018a880bd66 | Cross-Industry Demo Data midValues        |             | false
  profile_export_for_destinations           | 5e1e4f61f48e2018a81a829e | Profile Export For Destinations           |             | false
 :
-
-**
+```
 
 At the colon, press space bar to see the next page of the resultset, or enter **q** to revert to the command prompt.
 
@@ -73,16 +72,16 @@ To query some information about where a product was viewed, we will select the *
 
 Copy the statement below and paste it at the **prod:all >** prompt in your **PSQL command-line interface** and hit enter:
 
-**sql
+```sql
 select placecontext.geo
 from   aep_demo_website_interactions
 where  <aepTenantId>.productData.productInteraction = 'productView'
 limit 1;
-**
+```
 
 In your query result, you will notice that columns in the Experience Data Model (XDM) can be complex types and not just scalar types. In the query above we would like to identify geo locations where a **productView** did occur. To identify a **productView** we have to navigate through the XDM model using the **.** (dot) notation.
 
-**text
+```text
 prod:all=> select placecontext.geo
 prod:all-> from   aep_demo_website_interactions
 prod:all-> where  <aepTenantId>.productData.productInteraction = 'productView'
@@ -91,7 +90,7 @@ prod:all-> limit 1;
 -------------------------------------
  ("(50.4198861,4.9246444)",Namur,BE)
 (1 row)
-**
+```
 
 Notice the result is a flat object rather than a single value? The **placecontext.geo** object contains four attributes: schema, country and city. And when an object is declared as a column it will return the entire object as a string. The XDM schema may be more complex than what you are familiar with but it's very powerful and was architected to support many solutions, channels, and use cases.
 
@@ -99,7 +98,7 @@ To select the individual properties of an object, you use the **.** (dot) notati
 
 Copy the statement below and paste it at the **prod:all >** prompt in your **PSQL command-line interface**:
 
-**sql
+```sql
 select placecontext.geo._schema.longitude
       ,placecontext.geo._schema.latitude
       ,placecontext.geo.city
@@ -107,12 +106,12 @@ select placecontext.geo._schema.longitude
 from   aep_demo_website_interactions
 where  <aepTenantId>.productData.productInteraction = 'productView'
 limit 1;
-**
+```
 
 The result of the above query should look like this.
 The result is now a set simple values:
 
-**text
+```text
 prod:all=> select placecontext.geo._schema.longitude
 prod:all->       ,placecontext.geo._schema.latitude
 prod:all->       ,placecontext.geo.city
@@ -124,7 +123,7 @@ prod:all-> limit 1;
 -----------+------------+-------+-------------
  4.9246444 | 50.4198861 | Namur | BE
 (1 row)
-**
+```
 
 Don't worry, there is an easy way to obtain the path towards a specific property. In the following part you will learn how. 
 
@@ -142,12 +141,12 @@ Install [Brackets](https://github.com/adobe/brackets/releases/download/release-1
 
 Copy the following statement to notepad or brackets:
 
-**sql
+```sql
 select your_attribute_path_here
 from   aep_demo_website_interactions
 where  <aepTenantId>.productData.productInteraction = 'productView'
 limit 1;
-**
+```
 
 Go back to your Adobe Experience Platform UI (should be open in your browser) or navigate to [http://platform.adobe.com](http://platform.adobe.com).
 
@@ -165,7 +164,7 @@ Copy the modified statement from notepad/brackets and paste it at the **prod:all
 
 The result should look like:
 
-**text
+```text
 prod:all=> select placeContext.geo._schema.longitude
 prod:all-> from   aep_demo_website_interactions
 prod:all-> where  <aepTenantId>.productData.productInteraction = 'productView'
@@ -174,7 +173,7 @@ prod:all-> limit 1;
 -----------
  4.9246444
 (1 row)
-**
+```
 
 Next Step: [7.3 - Queries, queries, queries...  and churn analysis](./ex3.md)
 
