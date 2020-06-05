@@ -1,73 +1,82 @@
 ---
-title: Module 13, Exercise
-description: 
+title: Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
+description: Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: 
 ---
 
-# Module 13: Customer Journey Anaytics (CJA) - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
+# Module 13: Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 
 **Author: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-**In Module 13**, you will get a hands-on preview of the Adobe Experience Platform - Customer Journey Analytics Application Service.
+**In Module 13**, you will get a first hands-on experience with the Adobe Experience Platform - Customer Journey Analytics Application Service.
 
-CJA provides a toolkit to business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within CJA deliver context and clarity to the complex multi-channel customer journeys. The provided context generates actionable insight into how to remove pain points from the customer conversion process and deliver positive experiences in the moments that matter most.
+Customer Journey Analytics provides a toolkit to business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within Customer Journey Analytics deliver context and clarity to the complex multi-channel customer journeys. The provided context generates actionable insight into how to remove pain points from the customer conversion process and deliver positive experiences in the moments that matter most.
 
-More info on CJA here: [https://spark.adobe.com/page/t62eiRu9l6iWJ/](https://spark.adobe.com/page/t62eiRu9l6iWJ/)
+More info on Customer Journey Analytics can be found [here](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
-## Key Takeaways
+## Learning Objectives
 
-* Become familiar with the CJA UI
-* Bring Adobe Experience Platform data sets into CJA
-* Understand the Person ID and data stitching in CJA
-* Understand the concepts of a data connection and a data view
-* Use Analysis Workspace with Adobe Experience Platform data sets
+- Become familiar with the Customer Journey Analytics UI
+- Bring Adobe Experience Platform data sets into Customer Journey Analytics
+- Understand the Person ID and data stitching in Customer Journey Analytics
+- Understand the concepts of a data connection and a data view
+- Use Analysis Workspace with Adobe Experience Platform data sets
 
-## Prerequisites
+## Resources
 
-* Some familiarity with Analysis Workspace is preferred, but not required
-* Access to Adobe Experience Platform and Customer Journey Analytics Application Service
-* Understanding of Adobe Experience Platform datasets, schemas and the Real-time Customer Profile.
+- Some familiarity with Analysis Workspace is preferred, but not required
+- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com) 
+- Access to Customer Journey Analytics Application Service
 
-## Your Environment Variables
+>[!IMPORTANT]
+>
+>Your Adobe Experience Platform instance
+>
+>This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
+>
+>In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
+>
+>Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
-This documentation has been created to be reused across multiple Adobe Experience Platform instances for enablement purposes.
-In order to complete some of the modules, you'll need to change some variables and replace them by your specific ``Environment Variables``.
+## Exercises
 
-You can view these variables [here](../../environment.md).
+### 13.1 Customer Journey Analytics 101
 
-## Content
+In this exercise, you'll learn all about the Customer Journey Analytics concepts.
 
-### Exercise 13.1 - Customer Journey Analytics 101
+Go to [13.1 Customer Journey Analytics 101](./ex1.md)
 
-[Exercise 13.1 - Customer Journey Analytics 101](./ex1.md)
+### 13.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 
-In this exercise, you'll learn all about the Customer Journey Analytics-concepts.
+In this exercise, you'll learn how to consume multiple datasets from Adobe Experience Platform into Customer Journey Analytics.
 
-### Exercise 13.2 - Connect Adobe Experience Platform Data Sets in CJA
+Go to [13.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](./ex2.md)
 
-[Exercise 13.2 - Connect Adobe Experience Platform Data Sets in CJA](./ex2.md)
+### 13.3 Create a Data View
 
-In this exercise, you'll learn how to consume multiple datasets from Adobe Experience Platform into CJA.
+In this exercise, you'll learn how to configure a data view in Customer Journey Analytics.
 
-### Exercise 13.3 - Create a Data View
+Go to [13.3 Create a Data View](./ex3.md)
 
-[Exercise 13.3 - Create a Data View](./ex3.md)
-
-In this exercise, you'll learn how to configure a data view in CJA.
-
-### Exercise 13.4 - Data Preparation in Analysis Workspace
-
-[Exercise 13.4 - Data Preparation in Analysis Workspace](./ex4.md)
+### 13.4 Data Preparation in Customer Journey Analytics
 
 In this exercise, you'll learn how to do some data preparation before continuing with analysis.
 
-### Exercise 13.5 - Visualization using Analysis Workspace
+Go to [13.4 Data Preparation in Customer Journey Analytics](./ex4.md)
 
-[Exercise 13.5 - Visualization using Analysis Workspace](./ex5.md)
+### 13.5 Visualization using Customer Journey Analytics
 
-In this exercise, you'll learn how to visualize Adobe Experience Platform data using Analysis Workspace and CJA.
+In this exercise, you'll learn how to visualize Adobe Experience Platform data using Customer Journey Analytics.
+
+Go to [13.5 Visualization using Customer Journey Analytics](./ex5.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
 
 [Go Back to All Modules](../../README.md)

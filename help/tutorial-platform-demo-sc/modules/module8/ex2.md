@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 8.2 - Model Authoring and Operationalization
+# 8.2 - Model Authoring and Operationalization
 
-In exercise 1 we created the training data required to power our Machine Learning model. In this lesson we will show you how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
+In 1 we created the training data required to power our Machine Learning model. In this lesson we will show you how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -19,19 +19,19 @@ The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](h
 * Explore the Product Recommendations Recipe
 * Learn how the Product Recommendations Recipe can be created
 
-## Exercise 8.2.1 - Analyze the Data
+## 8.2.1 - Analyze the Data
 
-Let's explore the generated training data from the previous exercise to get quick insights using the data exploration notebook (recommendations-data-exploration.ipynb).
+Let's explore the generated training data from the previous to get quick insights using the data exploration notebook (recommendations-data-exploration.ipynb).
 
-In Jupyter Notebooks, open the notebook named ``luma-retail-recommendations-data-exploration.ipynb`` by double-clicking it.
+In Jupyter Notebooks, open the notebook named **luma-retail-recommendations-data-exploration.ipynb** by double-clicking it.
 
 ![DSW](./images/jpanalyze.png)
 
-In Jupyter Notebook's menu, go to ```Run``` and click on ```Run All Cells```. This command will run all cells of the notebook in one go.
+In Jupyter Notebook's menu, go to **Run** and click on **Run All Cells**. This command will run all cells of the notebook in one go.
 
 ![DSW](./images/jprunall.png)
 
-Clicking the ```Run All Cells``` command will execute these steps:
+Clicking the **Run All Cells** command will execute these steps:
 
 * Load Libraries
 * Load Data
@@ -48,7 +48,7 @@ Click on the first cell in the notebook.
 
 ![DSW](./images/anacell1.png)
 
-```
+```python
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
@@ -73,14 +73,14 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/anacell2.png)
 
-```
+**
 from platform_sdk.dataset_reader import DatasetReader
 from datetime import date
 dataset_reader = DatasetReader(PLATFORM_SDK_CLIENT_CONTEXT, dataset_id=inputDataset)
 df = dataset_reader.limit(100).read()
 
 df.head(20)
-```
+**
 
 Click the play - button to execute this cell.
 
@@ -96,9 +96,9 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/anacell3.png)
 
-```
+**
 print("You'll see the number of lines and the number of columns:", df.shape)
-```
+**
 
 Click the play - button to execute this cell.
 
@@ -114,9 +114,9 @@ Click on the fourth cell in the notebook.
 
 ![DSW](./images/anacell4.png)
 
-```
+**
 df.head(20)
-```
+**
 
 Click the play - button to execute this cell.
 
@@ -132,7 +132,7 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/anacell5.png)
 
-```
+```python
 user_id = '<aepTenantId>.userId'
 item_id = '<aepTenantId>.itemId'
 interaction_type = '<aepTenantId>.interactionType'
@@ -147,9 +147,9 @@ Then click on the next cell in the notebook.
 
 ![DSW](./images/anacell6.png)
 
-```
+**
 df.describe()
-```
+**
 
 Click the play - button to execute this cell.
 
@@ -165,9 +165,9 @@ Click on the seventh cell in the notebook.
 
 ![DSW](./images/anacell7.png)
 
-```
+**
 df[[user_id, item_id]].groupby([item_id]).agg(['count'])
-```
+**
 
 Click the play - button to execute this cell.
 
@@ -177,7 +177,7 @@ This is the result:
 
 ![DSW](./images/anareesult7.png)
 
-## Exercise 2.2 - Recipe Builder Notebook
+## 2.2 - Recipe Builder Notebook
 
 The Recipe Builder Notebook is one of our recent innovations that templates your model to automatically package and operationalize it. The notebook has multiple templated cells that you fit your model code into:
 
@@ -188,7 +188,7 @@ The Recipe Builder Notebook is one of our recent innovations that templates your
 
 We have streamlined the steps needed to operationalize a model by giving you the ability to train, evaluate and score it at scale and then package it in one seamless flow on Adobe Experience Platform. Packaging to a Recipe also allows you to use the same code with different datasets to power different use cases in your organizations. Our specific use case revolves around using the recommendations model code for users searching for products to purchase on the website.
 
-In Jupyter Notebooks, open the notebook named ```recommendations-popularity-recipe.ipynb``` by double-clicking it.
+In Jupyter Notebooks, open the notebook named **recommendations-popularity-recipe.ipynb** by double-clicking it.
 
 ![DSW](./images/jprecipe.png)
 
@@ -202,13 +202,13 @@ Let's have a look at all steps in detail...
 
 ### Train a model
 
-Training a model is done by clicking the ```Train``` - button.
+Training a model is done by clicking the **Train** - button.
 
 ![DSW](./images/playtrain.png)
 
-Click ```Train``` on the top toolbar to create a training run in the cell. This executes the training data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the Evaluator - cell).
+Click **Train** on the top toolbar to create a training run in the cell. This executes the training data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the Evaluator - cell).
 
-After clicking ```Train```, the Training Run will start and will need a couple of minutes to complete.
+After clicking **Train**, the Training Run will start and will need a couple of minutes to complete.
 
 ![DSW](./images/tlog1.png)
 ...
@@ -216,7 +216,7 @@ After clicking ```Train```, the Training Run will start and will need a couple o
 ...
 ![DSW](./images/tlog3.png)
 
-When you click ```Train```, the following cells are executed:
+When you click **Train**, the following cells are executed:
 
 * Requirements File
 * Configuration Files - Training
@@ -226,13 +226,13 @@ When you click ```Train```, the following cells are executed:
 
 ### Score a model
 
-Training a model is done by clicking the ```Score``` - button.
+Training a model is done by clicking the **Score** - button.
 
 ![DSW](./images/playscore.png)
 
-Click ```Score``` on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the pipeline.py cell).
+Click **Score** on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the pipeline.py cell).
 
-After clicking ```Score```, the Training Run will start and will need a couple of minutes to complete.
+After clicking **Score**, the Training Run will start and will need a couple of minutes to complete.
 
 ![DSW](./images/slog1.png)
 ...
@@ -240,7 +240,7 @@ After clicking ```Score```, the Training Run will start and will need a couple o
 ...
 ![DSW](./images/slog3.png)
 
-When you click ```Score```, the following cells are executed:
+When you click **Score**, the following cells are executed:
 
 * Requirements File
 * Configuration Files - Scoring
@@ -248,7 +248,7 @@ When you click ```Score```, the following cells are executed:
 * Pipeline File
 * Evaluator File
 
-Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the ```AEP Demo - Recommendations Output```-dataset.
+Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the **AEP Demo - Recommendations Output**-dataset.
 
 You can verify this [by opening the AEP Demo - Recommendations Output-dataset in Adobe Experience Platform](https://platform.adobe.com/dataset).
 
@@ -256,15 +256,15 @@ You can verify this [by opening the AEP Demo - Recommendations Output-dataset in
 
 ### Create a recipe from the model
 
-Creating a recipe is done by clicking the ```Create Recipe``` - button.
+Creating a recipe is done by clicking the **Create Recipe** - button.
 
 ![DSW](./images/playrecipe.png)
 
-When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the ```Create Recipe``` - button to start the process.
+When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** - button to start the process.
 
 Creating a recipe enables you to test your model at scale.
 
-After clicking the ```Create Recipe``` - button, you have to enter a name for your recipe.
+After clicking the **Create Recipe** - button, you have to enter a name for your recipe.
 
 ![DSW](./images/recname.png)
 
@@ -278,7 +278,7 @@ Example: for ldap **vangeluw**, the name of your recipe should be: **vangeluwRec
 
 ![DSW](./images/recname99.png)
 
-After entering a Recipe Name, click ```OK```.
+After entering a Recipe Name, click **OK**.
 
 ![DSW](./images/ok.png)
 
@@ -286,7 +286,7 @@ A second popup is shown, telling you that your Recipe is being created. This cou
 
 ![DSW](./images/popup.png)
 
-For now, click the ```Dismiss``` - button.
+For now, click the **Dismiss** - button.
 
 ![DSW](./images/dismiss.png)
 
@@ -296,7 +296,7 @@ You can view the progress of the recipe creation process in the top right corner
 ...
 ![DSW](./images/progress1.png)
 
-After a couple of minutes, the recipe creation is finished and you can find your recipe in the ```Recipes``` - section. To go there, click on ```Recipes``` in the ``Models`` menu.
+After a couple of minutes, the recipe creation is finished and you can find your recipe in the **Recipes** - section. To go there, click on **Recipes** in the **Models** menu.
 
 ![DSW](./images/menurec.png)
 
@@ -306,7 +306,7 @@ You'll find your recipe in the list.
 
 Now that you've created your recipe, let's continue with the next exercise, in which you'll start scalable training and experimentation.
 
-Next Step: [Exercise 8.3 - Model Training and Experimentation](./ex3.md)
+Next Step: [8.3 - Model Training and Experimentation](./ex3.md)
 
 [Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 

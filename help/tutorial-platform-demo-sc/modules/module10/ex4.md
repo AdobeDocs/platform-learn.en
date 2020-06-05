@@ -7,15 +7,15 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 10.4 - Experimentation - Recipe Building
+# 10.4 - Experimentation - Recipe Building
 
-## What is a Recipe?
+## What is a Recipe
 
 A recipe is a proprietary algorithm or an ensemble of algorithms to help solve a specific business problem.
 
 The feature engineering and model that you have prepared in the previous exercises can be converted into a recipe which can be used to train multiple datasets by changing a set of hyper-parameters, like the learning rate, estimators, etc. to evaluate which training run gives the maximum accuracy and recall.
 
-Open the notebook ``Mod10 - Recipe Builder-Churn Recipe.ipynb``.
+Open the notebook **Mod10 - Recipe Builder-Churn Recipe.ipynb**.
 
 ![DSW](./images/dswchmfe.png)
 
@@ -27,25 +27,25 @@ The recipe has 3 parts for execution - Train, Score and Create Recipe. You shoul
 
 ## Train the model
 
-Click on Train - This will take a few minutes to complete. Once you see ``TRAINING SUCCESSFUL!`` in your file, you can move to the next step.
+Click on Train - This will take a few minutes to complete. Once you see **TRAINING SUCCESSFUL!** in your file, you can move to the next step.
 
 ![DSW](./images/dswchmfetrains.png)
 
 ## Score the model
 
-Click on Score - Wait until you see scoring successful and you see an output of the data with the scores.Once you see ``SCORING SUCCESSFUL!`` in your file, you can move to the next step.
+Click on Score - Wait until you see scoring successful and you see an output of the data with the scores.Once you see **SCORING SUCCESSFUL!** in your file, you can move to the next step.
 
 ![DSW](./images/dswchmfescore.png)
 
 ## Create a recipe from the model
 
-When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the ```Create Recipe``` - button to start the process.
+When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** - button to start the process.
 
 ![DSW](./images/dswchmferecipe.png)
 
 Creating a recipe enables you to test your model at scale.
 
-After clicking the ```Create Recipe``` - button, you have to enter a name for your recipe.
+After clicking the **Create Recipe** - button, you have to enter a name for your recipe.
 
 ![DSW](./images/recname.png)
 
@@ -59,7 +59,7 @@ Example: for ldap **vangeluw**, the name of your recipe should be: **vangeluwChu
 
 ![DSW](./images/recname99.png)
 
-After entering a Recipe Name, click ```OK```.
+After entering a Recipe Name, click **OK**.
 
 ![DSW](./images/ok.png)
 
@@ -67,7 +67,7 @@ A second popup is shown, telling you that your Recipe is being created. This cou
 
 ![DSW](./images/popup.png)
 
-For now, click the ```Dismiss``` - button.
+For now, click the **Dismiss** - button.
 
 ![DSW](./images/dismiss.png)
 
@@ -79,7 +79,7 @@ You can view the progress of the recipe creation process in the top right corner
 
 ![DSW](./images/progress1.png)
 
-After a couple of minutes, the recipe creation is finished and you can find your recipe in the ```Recipes``` - section. To go there, click on ```Recipes``` in the ML Models menu.
+After a couple of minutes, the recipe creation is finished and you can find your recipe in the **Recipes** - section. To go there, click on **Recipes** in the ML Models menu.
 
 ![DSW](./images/menurec.png)
 

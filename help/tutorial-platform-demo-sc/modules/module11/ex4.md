@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
+# 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
 
 Adobe Experience Platform and Adobe Audience Manager are closely connected to each other. The way they are connected is through a Bi-Directional Segment Sharing Connector. This means that all segments built in Adobe Experience Platform are shared to Adobe Audience Manager, and all segments built in Adobe Audience Manager are shared to Adobe Experience Platform.
 
@@ -23,7 +23,7 @@ The URL to login to Adobe Audience Manager is: [http://experiencecloud.adobe.com
 
 ![RTCDP](./images/excl.png)
 
-Click on ``Audience Manager`` to open it.
+Click on **Audience Manager** to open it.
 
 ![RTCDP](./images/aam.png)
 
@@ -31,31 +31,31 @@ You'll then see this page:
 
 ![RTCDP](./images/aam1.png)
 
-Go to ``Audience Data`` and then to ``Segments``.
+Go to **Audience Data** and then to **Segments**.
 
 ![RTCDP](./images/aam2.png)
 
-In ``Segments`` in Adobe Audience Manager, you can now see all the Adobe Experience Platform Segments already available in the folder ``Experience Platform Segments``.
+In **Segments** in Adobe Audience Manager, you can now see all the Adobe Experience Platform Segments already available in the folder **Experience Platform Segments**.
 
 ![RTCDP](./images/aam3a.png)
 
 Search for your AEP segment, which may be on a different page.
 
-Open the segment you built in Exercise 1 by clicking it. In this example, that is the segment ``vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)``. Make sure to copy the ``Segment ID`` as you'll need it in a couple of seconds.
+Open the segment you built in 1 by clicking it. In this example, that is the segment **vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)**. Make sure to copy the **Segment ID** as you'll need it in a couple of seconds.
 
 ![RTCDP](./images/aam4.png)
 
-This segment was built in Adobe Experience Platform and cannot be edited anymore in Adobe Audience Manager. The only thing you can do here is link it to a ``Destination`` that is available in Adobe Audience Manager.
+This segment was built in Adobe Experience Platform and cannot be edited anymore in Adobe Audience Manager. The only thing you can do here is link it to a **Destination** that is available in Adobe Audience Manager.
 
-Click ``Edit``.
+Click **Edit**.
 
 ![RTCDP](./images/aamedit.png)
 
-The screen now defaults to the ``Destinations Mapping``-view, so that you can link a Destination to the Segment.
+The screen now defaults to the **Destinations Mapping**-view, so that you can link a Destination to the Segment.
 
 ![RTCDP](./images/aam5.png)
 
-Click ``Browse All Destinations``.
+Click **Browse All Destinations**.
 
 ![RTCDP](./images/aambrowsedest.png)
 
@@ -63,21 +63,21 @@ You'll see this popup, which makes it possible to link your segment that was bui
 
 ![RTCDP](./images/aambrowsedests.png)
 
-Click the button for the destination ``Google AdWords RLSA``, followed by clicking ``Add Selected Destination``.
+Click the button for the destination **Google AdWords RLSA**, followed by clicking **Add Selected Destination**.
 
 ![RTCDP](./images/aambrowsedestss.png)
 
-Fill out the Destination Value to send to Google AdWords. In this case, AdWords expects the format ``aam=segmentId``. The Segment ID of this segment is ``18717523`` so that gives ``aam=18717523``.
+Fill out the Destination Value to send to Google AdWords. In this case, AdWords expects the format **aam=segmentId**. The Segment ID of this segment is **18717523** so that gives **aam=18717523**.
 
 ![RTCDP](./images/aambrowsedestssdv.png)
 
-Click ``Save``.
+Click **Save**.
 
 You'll then see your destination added to the segment.
 
 ![RTCDP](./images/aambrowsedestssdvok.png)
 
-Click ``Done`` to save your changes.
+Click **Done** to save your changes.
 
 As of this moment, everybody who qualifies for this segment in Adobe Experience Platform, will be sent to a Google AdWords Remarketing List for Search Advertising.
 
@@ -88,22 +88,22 @@ Every segment built in Adobe Experience Platform will also show up in Adobe Audi
 * 2nd Party Data = the 1st Party Data from another company that has been shared to your company because of an established partnership with that company
 * 3rd Party Data = Data that you've purchased in a public Audience Marketplace
 
-Go to ``Audience Data`` and then to ``Traits``.
+Go to **Audience Data** and then to **Traits**.
 
 ![RTCDP](./images/aamt1.png)
 
-In ``Traits`` in Adobe Audience Manager, you can now see all the Adobe Experience Platform Segments already available as Traits, in the folder ``Experience Platform Traits``.
+In **Traits** in Adobe Audience Manager, you can now see all the Adobe Experience Platform Segments already available as Traits, in the folder **Experience Platform Traits**.
 
 ![RTCDP](./images/aamt2.png)
 
-You can also see other Traits, like for instance, ``All Traits`` > ``1st Party Data`` > ``Display Advertising Data`` > ``Impression Pixels``.
+You can also see other Traits, like for instance, **All Traits** > **1st Party Data** > **Display Advertising Data** > **Impression Pixels**.
 Every time a customer is seeing a Display Ad as part of f.i. a Google DV360 Display Ad campaign, an impression pixel can fire and store the fact that a customer has seen this ad in Adobe Audience Manager.
 
 ![RTCDP](./images/aamt3.png)
 
-Our use-case here, will be to configure an Impression Pixel for an imaginary Display Ad Campaign for the product that was selected in exercise 1. In this case, the selected product was ``Zeppelin Yoga Pant`` so an impression pixel needs to be defined for that now. You will then combine the segment of people who are interested in your product with the Impression Pixel, to avoid that a customer is seeing your Display Ad too many times. In our case, too many times is defined as more than 10 in the last 2 weeks.
+Our use-case here, will be to configure an Impression Pixel for an imaginary Display Ad Campaign for the product that was selected in 1. In this case, the selected product was **Zeppelin Yoga Pant** so an impression pixel needs to be defined for that now. You will then combine the segment of people who are interested in your product with the Impression Pixel, to avoid that a customer is seeing your Display Ad too many times. In our case, too many times is defined as more than 10 in the last 2 weeks.
 
-Click ``+ Add New`` and select ``Rule-Based`` to add a new Trait.
+Click **+ Add New** and select **Rule-Based** to add a new Trait.
 
 ![RTCDP](./images/aamt4.png)
 
@@ -119,11 +119,11 @@ Fill out the details like this:
 | Description               | Display Ad Campaign - **Product Name** - ldap, f.i. Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
 | Data Source               | Audience Library              |
 | Event Type               | Delivery Event             |
-| Store In               | ``All Traits`` > ``1st Party Data`` > ``Display Advertising Data`` > ``Impression Pixels``             |
+| Store In               | **All Traits** > **1st Party Data** > **Display Advertising Data** > **Impression Pixels**             |
 
 ![RTCDP](./images/aamt6.png)
 
-Click ``Save``.
+Click **Save**.
 
 ![RTCDP](./images/aamsave.png)
 
@@ -131,11 +131,11 @@ After saving, you'll be on this screen.
 
 ![RTCDP](./images/aamt7.png)
 
-Go back to ``Traits``.
+Go back to **Traits**.
 
 ![RTCDP](./images/aamt8.png)
 
-For completeness, if you'd want to deploy this Impression Pixel, you need the URL or Image Tag to embed in your creative, as part of your Display Ad Campaign. To find the URL or Image Tag, you need to click the little ``cloud``-icon as indicated in the screenshot.
+For completeness, if you'd want to deploy this Impression Pixel, you need the URL or Image Tag to embed in your creative, as part of your Display Ad Campaign. To find the URL or Image Tag, you need to click the little **cloud**-icon as indicated in the screenshot.
 
 You'll then see this. These URLs and Image Tags can used to embed them in the Display Ad Campaign.
 
@@ -143,7 +143,7 @@ You'll then see this. These URLs and Image Tags can used to embed them in the Di
 
 You now have 1 Trait for your AEP Segment, and another Trait for your Impression Pixel. Let's now combine these 2 Traits into a segment in Adobe Audience Manager.
 
-Go to ``Audience Data`` and then to ``Segments``.
+Go to **Audience Data** and then to **Segments**.
 
 ![RTCDP](./images/aams1.png)
 
@@ -151,7 +151,7 @@ You'll see this screen:
 
 ![RTCDP](./images/aams2.png)
 
-Click ``+ Add New``.
+Click **+ Add New**.
 
 ![RTCDP](./images/aams2new.png)
 
@@ -168,17 +168,17 @@ Fill out the Segment Basic Information like this:
 | Data Source               | Audience Library             |
 | Profile Merge Rule               | Use the default Profile Merge Rule            |
 | Status               | Active           |
-| Store In               | ``All Segments`` > ``Enablement Segments``|
+| Store In               | **All Segments** > **Enablement Segments**|
 
 That should look like this:
 
 ![RTCDP](./images/aams4.png)
 
-Go to the ``Traits``-view.
+Go to the **Traits**-view.
 
 ![RTCDP](./images/aams5.png)
 
-Click ``Browse All Traits``.
+Click **Browse All Traits**.
 
 ![RTCDP](./images/aams4browse.png)
 
@@ -190,7 +190,7 @@ Next, navigate the Traits hierarchy to retrieve your Impression Pixel Trait and 
 
 ![RTCDP](./images/aams7.png)
 
-Click ``Add Selected Traits to Segment``.
+Click **Add Selected Traits to Segment**.
 
 ![RTCDP](./images/aams6add.png)
 
@@ -198,11 +198,11 @@ Your screen should now look like this:
 
 ![RTCDP](./images/aams8.png)
 
-Hover over the 3 dots between your 2 Traits. You'll see a dropdown-list open up to define a relationship between your 2 Traits. Select the operator ``AND NOT``.
+Hover over the 3 dots between your 2 Traits. You'll see a dropdown-list open up to define a relationship between your 2 Traits. Select the operator **AND NOT**.
 
 ![RTCDP](./images/aams9.png)
 
-Next, click the little ``clock``-icon next to your Impression Pixel Trait.
+Next, click the little **clock**-icon next to your Impression Pixel Trait.
 
 ![RTCDP](./images/aams10.png)
 
@@ -219,9 +219,9 @@ You should read this as follows:
 
 Include everyone in this segment that qualifies for the AEP Segment of Interest in **product name**, but not those who have had 10 or more Ad Impressions for **productname** in the last 14 days.
 
-Adobe Audience Manager will dynamically and in real-time re-evaluate this expression for every new hit. So at first, a customer will be included in this segment and the destinations linked to this segment will be able to target this customer. For every Ad Impression, a pixel will be fired, and the counter on the Impression Pixel will be incremented. When it reaches 10 or more, the ``AND NOT`` clause will be triggered and will remove that customer from the Segment in Adobe Audience Manager.
+Adobe Audience Manager will dynamically and in real-time re-evaluate this expression for every new hit. So at first, a customer will be included in this segment and the destinations linked to this segment will be able to target this customer. For every Ad Impression, a pixel will be fired, and the counter on the Impression Pixel will be incremented. When it reaches 10 or more, the **AND NOT** clause will be triggered and will remove that customer from the Segment in Adobe Audience Manager.
 
-Next, scroll down and click ``Save`` to save your segment.
+Next, scroll down and click **Save** to save your segment.
 
 ![RTCDP](./images/aamsave.png)
 
@@ -235,9 +235,9 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the ``Production Prod (VA7)``-environment in the blue line on top of your screen.
+Before you continue, make sure you are in the **Production Prod (VA7)**-environment in the blue line on top of your screen.
 
-In the menu on the left side, go to ```Segments```.
+In the menu on the left side, go to **Segments**.
 
 ![Segmentation](./images/menuseg.png)
 
@@ -245,19 +245,19 @@ On this page, you can see an overview of all existing segments.
 
 ![Segmentation](./images/segmentation.png)
 
-Click on the ``Create Segment``-button to start creating a new segment.
+Click on the **Create Segment**-button to start creating a new segment.
 
 ![Segmentation](./images/createnewsegment.png)
 
-Go to ``Audiences`` in the Segment Builder.
+Go to **Audiences** in the Segment Builder.
 
 ![RTCDP](./images/aepsegaud.png)
 
-In the list of available Audiences, you can see ``AAM Traits`` and ``AAM Segments``.
+In the list of available Audiences, you can see **AAM Traits** and **AAM Segments**.
 
 Those lists will dynamically populate with all AAM Traits and AAM Segments, so that they can be reused and enriched in Adobe Experience Platform.
 
-Next Step: [Exercise 11.5 - Take Action: send your segment to an S3-destination](./ex5.md)
+Next Step: [11.5 - Take Action: send your segment to an S3-destination](./ex5.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 

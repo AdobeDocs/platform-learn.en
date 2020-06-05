@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 4 - Create a segment - UI
+# 4 - Create a segment - UI
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
 
@@ -23,9 +23,9 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the ``Production Prod (VA7)``-environment in the blue line on top of your screen.
+Before you continue, make sure you are in the **Production Prod (VA7)**-environment in the blue line on top of your screen.
 
-In the menu on the left side, go to ```Segments```.
+In the menu on the left side, go to **Segments**.
 
 ![Segmentation](./images/menuseg.png)
 
@@ -33,11 +33,11 @@ On this page, you can see an overview of all existing segments.
 
 ![Segmentation](./images/segmentation.png)
 
-Click on the ``Create Segment``-button to start creating a new segment.
+Click on the **Create Segment**-button to start creating a new segment.
 
 ![Segmentation](./images/createnewsegment.png)
 
-Once you're in the new segment builder, you immediately notice the ```Attributes``` - menu option and the ```XDM Individual Profile```-reference.
+Once you're in the new segment builder, you immediately notice the **Attributes** - menu option and the **XDM Individual Profile**-reference.
 
 ![Segmentation](./images/segmentationui.png)
 
@@ -47,7 +47,7 @@ Let's build a segment which includes all **male** customers.
 
 To get to the attribute gender, you need to understand and know XDM.
 
-Gender is an attribute of Person, which can be found under Attributes. So to get there, you'll start by clicking on ``XDM Individual Profile``.
+Gender is an attribute of Person, which can be found under Attributes. So to get there, you'll start by clicking on **XDM Individual Profile**.
 
 ![Segmentation](./images/person.png)
 
@@ -57,54 +57,54 @@ From the XDM Individual Profile-window, you can select Person now.
 
 And in Person, you can find the Gender-attribute. Drag the Gender-attribute on the segment builder.
 
-Now you can choose the specific gender out of the pre-populated options. In this case, let's pick ``Male``.
+Now you can choose the specific gender out of the pre-populated options. In this case, let's pick **Male**.
 
 ![Segmentation](./images/genderselection.png)
 
-After selecting ``Male``, you can get an estimation of the segment's population by pushing the ``Refresh Estimate`` - button. This is very helpful for a business audience, so that they understand the impact of certain attribute selections on segment size and addressable audience.
+After selecting **Male**, you can get an estimation of the segment's population by pushing the **Refresh Estimate** - button. This is very helpful for a business audience, so that they understand the impact of certain attribute selections on segment size and addressable audience.
 
 ![Segmentation](./images/segmentpreview.png)
 
-Next, we should refine our segment a bit. I'd like to build a segment out of all male customers that have viewed the product ``Proteus Fitness Jackshirt (Orange)``.
+Next, we should refine our segment a bit. I'd like to build a segment out of all male customers that have viewed the product **Proteus Fitness Jackshirt (Orange)**.
 
-To build out this segment, you need to add an Experience Event. You can find all Experience Events by clicking on the ```Events``` - icon in the ```Segments``` - menu bar.
+To build out this segment, you need to add an Experience Event. You can find all Experience Events by clicking on the **Events** - icon in the **Segments** - menu bar.
 
 ![Segmentation](./images/findee.png)
 
-Next, you'll see the top level ``Experience Events``-node.
+Next, you'll see the top level **Experience Events**-node.
 
 ![Segmentation](./images/see.png)
 
-To find customers that have visited the ```Proteus Fitness Jackshirt (Orange)``` - product, click on ```XDM ExperienceEvent```.
+To find customers that have visited the **Proteus Fitness Jackshirt (Orange)** - product, click on **XDM ExperienceEvent**.
 
 ![Segmentation](./images/comm_pv.png)
 
-Go to ```Product List Items```.
+Go to **Product List Items**.
 
 ![Segmentation](./images/eeweb.png)
 
-Select ```Name``` and drag and drop the ```Name```-object from the left ```Product List Items``` - menu onto the segment builder canvas into the ```Events```- section.
+Select **Name** and drag and drop the **Name**-object from the left **Product List Items** - menu onto the segment builder canvas into the **Events**- section.
 
 ![Segmentation](./images/eewebpdtlname.png)
 
-The comparison parameter should be ```equals``` and in the input field, enter ```Proteus Fitness Jackshirt (Orange)```.
+The comparison parameter should be **equals** and in the input field, enter **Proteus Fitness Jackshirt (Orange)**.
 
 ![Segmentation](./images/pv.png)
 
-Every time you add an element to the segment builder, you can click the ``Refresh Estimate``-button to get a new estimate of the population in your segment.
+Every time you add an element to the segment builder, you can click the **Refresh Estimate**-button to get a new estimate of the population in your segment.
 
 So far, we've only used the UI to build our segment, but there's also a code-option to build a segment.
-When building a segment, we're actually composing a PQL query: Profile Query Language. To visualize the PQL code, you can click on the ``Code View`` switcher in the upper right corner of the segment builder.
+When building a segment, we're actually composing a PQL query: Profile Query Language. To visualize the PQL code, you can click on the **Code View** switcher in the upper right corner of the segment builder.
 
 ![Segmentation](./images/codeview.png)
 
 Now you can see the full PQL-statement:
 
-```pql
+**sql
 person.gender in ["male"] and (select _Any1 from xEvent, _Any1__Product_list_items1 from _Any1.productListItems where _Any1__Product_list_items1.name.equals("Proteus Fitness Jackshirt (Orange)", false))
-```
+**
 
-You can also preview a sample of the customer profiles that are part of this segment, by clicking on ``View Profiles``.
+You can also preview a sample of the customer profiles that are part of this segment, by clicking on **View Profiles**.
 
 ![Segmentation](./images/previewprofiles.png)
 
@@ -120,19 +120,19 @@ Please replace **ldap** with your ldap.
 
 ![Segmentation](./images/segmentname.png)
 
-It's also important to note the ``Streaming`` - switch.
+It's also important to note the **Streaming** - switch.
 
 ![Segmentation](./images/streaming.png)
 
-By enabling the ``Streaming``-switch, your segment will qualify in real-time and will be available for activation in real-time.
+By enabling the **Streaming**-switch, your segment will qualify in real-time and will be available for activation in real-time.
 
-Then, click the ```Save``` - button to save your segment, after which you'll be taken back to the Segment overview - page.
+Then, click the **Save** - button to save your segment, after which you'll be taken back to the Segment overview - page.
 
 ![Segmentation](./images/savedsegment.png)
 
-Let's now continue to the next exercise and build a segment through the API.
+Let's now continue to the next and build a segment through the API.
 
-Next Step: [Exercise 5 - Create a segment - API](./ex5.md)
+Next Step: [5 - Create a segment - API](./ex5.md)
 
 [Go Back to Foundation 2](./real-time-customer-profile.md)
 

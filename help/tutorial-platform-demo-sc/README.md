@@ -1,7 +1,5 @@
 # Adobe Experience Platform - Technical Enablement
 
-![Platform](./platformlogo.png)
-
 ## Overview
 
 This training course is the perfect starting point for Data Engineers, Data Analysts, Data Architects, Data Scientists, Orchestration Engineers and Marketers to gain a full understanding of the business value of Adobe Experience Platform and all of its Application Services. Each lesson focuses on a real challenge businesses face in today's complex ecosystem of personalization, and breaks down the solution to that challenge in various hands-on instructions.
@@ -20,8 +18,9 @@ This training course doesn't just focus on Adobe applications, but takes into ac
 - Postman
 - Informatica
 - AWS Lambda
-- Amazon Alexa
+- AWS S3
 - AWS Kinesis
+- Amazon Alexa
 - Google Tag Manager
 - Google Analytics
 - Google Cloud Platform
@@ -140,7 +139,7 @@ Go to [9. Data Ingestion using Google Tag Manager and Google Analytics](./module
 
 Go to [10. Data Science Workspace - Churn Prediction Model](./modules/module10/data-science-workspace-churn-prediction-model.md).
 
-### 11. RTCDP - Build a segment and take action
+### 11. Real-time CDP - Build a segment and take action
 
 - **Audience:** Data Architect, Orchestration Engineer, Marketer
 - **Dependencies:** Access to Adobe Experience Platform, Real-time CDP, Adobe Audience Manager, Adobe Target, AWS S3

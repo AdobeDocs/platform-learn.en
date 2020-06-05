@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 13.3 - Create a Data View
+# 13.3 - Create a Data View
 
 ## Objectives
 
@@ -29,15 +29,15 @@ If you want your company to become data-driven, you should adapt how data is vie
 * Use the same names for KPIs and Metrics for Google Analytics as for Customer Journey Analytics so that the digital analytics team can speak 1 language only.
 * Data View filtered to show f.i. data for 1 market only, or 1 brand, or only for Mobile Devices.
 
-On the ``Connections``-screen, check the checkbox in front of the connection you just created.
+On the **Connections**-screen, check the checkbox in front of the connection you just created.
 
 ![demo](./images/exta.png)
 
-Now click ``Create Data View``.
+Now click **Create Data View**.
 
 ![demo](./images/extb.png)
 
-You'll be redirected to the ``Create Data View``-workflow.
+You'll be redirected to the **Create Data View**-workflow.
 
 ![demo](./images/extc.png)
 
@@ -47,13 +47,13 @@ You can now configure the basic definitions for your Data View. Things like Time
 
 ![demo](./images/extc.png)
 
-The ``Connection`` you created in the previous exercise is already selected. Your connection is named ``ldap – Omnichannel data``.
+The **Connection** you created in the previous is already selected. Your connection is named **ldap – Omnichannel data**.
 
 ![demo](./images/ext5.png)
 
-Next, give your Data View a name following this naming convention: ``ldap – Omnichannel Data View``.
+Next, give your Data View a name following this naming convention: **ldap – Omnichannel Data View**.
 
-Enter the same value for the description: ``ldap – Omnichannel Data View``.
+Enter the same value for the description: **ldap – Omnichannel Data View**.
 
 | Name         | Description |
 | ----------------- |-------------|
@@ -61,15 +61,15 @@ Enter the same value for the description: ``ldap – Omnichannel Data View``.
 
 ![demo](./images/ext6.png)
 
-For the ``Time Zone``, select the timezone ``Greenwich Mean Time; Monrovia, Casablanca [GMT]``. This is a really interesting setting as some companies operate in different countries and geographies. Allocating the right time zone for each country will avoid typical data mistakes such as believing that for instance, in Peru, the majority of the people buy T-shirts at 4:00 AM.
+For the **Time Zone**, select the timezone **Greenwich Mean Time; Monrovia, Casablanca [GMT]**. This is a really interesting setting as some companies operate in different countries and geographies. Allocating the right time zone for each country will avoid typical data mistakes such as believing that for instance, in Peru, the majority of the people buy T-shirts at 4:00 AM.
 
 ![demo](./images/ext7.png)
 
-Next, set the ``Session Timeout`` to 30 min. Thanks to every Experience Event's timestamp you can extend the concept of a session across all channels. For instance, what happens if a customer calls the call-center after visiting the website? Using custom Session Timeouts you have loots of flexibility in deciding what a session is, and how that session will merge data together.
+Next, set the **Session Timeout** to 30 min. Thanks to every Experience Event's timestamp you can extend the concept of a session across all channels. For instance, what happens if a customer calls the call-center after visiting the website? Using custom Session Timeouts you have loots of flexibility in deciding what a session is, and how that session will merge data together.
 
 ![demo](./images/ext8.png)
 
-You can also decide yourself when to start a new session, by manually specifying the event that triggers a new visit in the ``Start new visit with event``-field.
+You can also decide yourself when to start a new session, by manually specifying the event that triggers a new visit in the **Start new visit with event**-field.
 
 ![demo](./images/ext9.png)
 
@@ -77,7 +77,7 @@ You should now have the following settings configured:
 
 ![demo](./images/ext12.png)
 
-Click ``Continue``.
+Click **Continue**.
 
 ![demo](./images/ext12c.png)
 
@@ -91,34 +91,34 @@ In this exercise, you'll configure the components you need to analyze the data a
 
 ![demo](./images/ext13.png)
 
-You now have to drag and drop the components you need for the analysis to the ``Components Added``. To do this, you need to select the components in the left menu and drag and drop them onto the canvas in the middle.
+You now have to drag and drop the components you need for the analysis to the **Components Added**. To do this, you need to select the components in the left menu and drag and drop them onto the canvas in the middle.
 
-Let's start with the first component:``Name (web.webPageDetails.name)``. Search for this component, then drag and drop it onto the canvas.
+Let's start with the first component:**Name (web.webPageDetails.name)**. Search for this component, then drag and drop it onto the canvas.
 
 ![demo](./images/ext14.png)
 
-This component is the page name, as you can derive from reading the schema field  (``(web.webPageDetails.name)``).
+This component is the page name, as you can derive from reading the schema field  (**(web.webPageDetails.name)**).
 
-However, using ``Name`` as the name is not the best naming convention for a business user to quickly understand this dimension.
+However, using **Name** as the name is not the best naming convention for a business user to quickly understand this dimension.
 
-Let's change the name to be ``Page Name``. Click on the component and rename it in the ``Component Settings``-area.
+Let's change the name to be **Page Name**. Click on the component and rename it in the **Component Settings**-area.
 
 ![demo](./images/ext15.png)
 
-Something really important is the ``Attribution settings``. The concept of evars and prop doesn't exist in CJA but the attribution settings make a similar behavior possible.
-If you don't change these settings, CJA will interpret the dimension as a ``Prop`` (hit level). Also, we can change the attribution to make the dimension an ``eVar`` (persist the value across the journey).
+Something really important is the **Attribution settings**. The concept of evars and prop doesn't exist in CJA but the attribution settings make a similar behavior possible.
+If you don't change these settings, CJA will interpret the dimension as a **Prop** (hit level). Also, we can change the attribution to make the dimension an **eVar** (persist the value across the journey).
 
 If you aren't familiar with eVars and Props, you can read more about it here: [https://docs.adobe.com/evarsvsprops.html](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/traffic-props-evars/props-vs-evars.html)
 
-Let's leave the Page Name as a Prop. As such, you don't need to change any ``Attribution Settings``.
+Let's leave the Page Name as a Prop. As such, you don't need to change any **Attribution Settings**.
 
 | Component Name to Search           | New Name         | Attribution Settings  |
 | ----------------- |-------------| --------------------|
 | Name (web.webPageDetails.name) | Page Name          |          |
 
-Next, pick the dimension ``mobilenr`` and drop it on the canvas. The new name should be ``Mobile Number``. Finally let's change the attribution settings, as the Mobile Number should persist at user level.
+Next, pick the dimension **mobilenr** and drop it on the canvas. The new name should be **Mobile Number**. Finally let's change the attribution settings, as the Mobile Number should persist at user level.
 
-Click on the model and select ``Last Touch`` at a Person (Reporting window), as we only care about the last mobile number of that person. If the customer doesn't fill out the mobile in future visits, you'll still see this value populated.
+Click on the model and select **Last Touch** at a Person (Reporting window), as we only care about the last mobile number of that person. If the customer doesn't fill out the mobile in future visits, you'll still see this value populated.
 
 | Component Name to Search           | New Name         | Attribution Settings  |
 | ----------------- |-------------| --------------------|
@@ -126,13 +126,13 @@ Click on the model and select ``Last Touch`` at a Person (Reporting window), as 
 
 ![demo](./images/ext16.png)
 
-The next component is ``web.webPageDetails.pageViews.value``.
+The next component is **web.webPageDetails.pageViews.value**.
 
-In the left side menu, search for ``web.webPageDetails.pageViews.value``. Drag and drop this metric onto the canvas.
+In the left side menu, search for **web.webPageDetails.pageViews.value**. Drag and drop this metric onto the canvas.
 
 ![demo](./images/ext17.png)
 
-Change the name to be ``Page Views``.
+Change the name to be **Page Views**.
 
 | Component Name to Search           | New Name         | Attribution Settings  |
 | ----------------- |-------------| --------------------|
@@ -176,7 +176,7 @@ This is the result of your configuration.
 
 ![demo](./images/ext20.png)
 
-Don't forget to ``Save`` your Data View. So click ``Save`` now.
+Don't forget to **Save** your Data View. So click **Save** now.
 
 ![demo](./images/ext19.png)
 
@@ -184,7 +184,7 @@ FYI: You can come back to this Data View afterwards and change settings and comp
 
 You can now continue with the visualization and analysis part!
 
-Next Step: [Exercise 13.4 - Some data preparation in Analysis WorkSpace](./ex4.md)
+Next Step: [13.4 - Some data preparation in Analysis WorkSpace](./ex4.md)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 

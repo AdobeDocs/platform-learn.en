@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 5.1 - Setup an AWS S3 bucket
+# 5.1 - Setup an AWS S3 bucket
 
 In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS environment and how to upload data in that S3 bucket.
 
@@ -21,36 +21,36 @@ Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign 
 
 ![ETL](./images/awshome.png)
 
-After logging in, you'll be redirected to the ``AWS Management Console``.
+After logging in, you'll be redirected to the **AWS Management Console**.
 
 ![ETL](./images/awsconsole.png)
 
-In the ``Find Services``-menu, search for ``s3``.
+In the **Find Services**-menu, search for **s3**.
 
 ![ETL](./images/awsconsoles3.png)
 
-Click the first search result: ``S3 - Scalable Storage in the Cloud``.
+Click the first search result: **S3 - Scalable Storage in the Cloud**.
 
-You'll then see the ``Amazon S3``-homepage.
+You'll then see the **Amazon S3**-homepage.
 
 ![ETL](./images/s3home.png)
 
-Click the ``Create Bucket``-button.
+Click the **Create Bucket**-button.
 
 ![ETL](./images/createbucket.png)
 
-In the ``Create Bucket``-screen, you need to configure 2 things:
+In the **Create Bucket**-screen, you need to configure 2 things:
   
-- Name: use the name ``aepmodule5LDAP`` and replace LDAP by your LDAP. As an example, in this exercise the bucket name is ``aepmodule5vangeluw``
-- Region: use the region ``EU (Frankfurt) eu-central-1``
+- Name: use the name **aepmodule5LDAP** and replace LDAP by your LDAP. As an example, in this the bucket name is **aepmodule5vangeluw**
+- Region: use the region **EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)
 
-Scroll down on the page until you see ``Bucket settings for Block Public Access``. Leave these settings as they are, no need to change them.
+Scroll down on the page until you see **Bucket settings for Block Public Access**. Leave these settings as they are, no need to change them.
 
 ![ETL](./images/bucketsett.png)
 
-Click the ``Create Bucket``-button.
+Click the **Create Bucket**-button.
 
 ![ETL](./images/createbucket.png)
 
@@ -66,7 +66,7 @@ Click on your S3-bucket to open it. You'll then see this page.
 
 ![ETL](./images/s3up.png)
 
-Click ``Upload`` to start uploading the 4 CSV-files.
+Click **Upload** to start uploading the 4 CSV-files.
 
 ![ETL](./images/upload.png)
 
@@ -74,11 +74,11 @@ You'll then see this popup.
 
 ![ETL](./images/upload1.png)
 
-Click ``Add Files``.
+Click **Add Files**.
 
 ![ETL](./images/addfiles.png)
 
-Navigate to the directory ``csvfiles`` on your desktop, select all 4 files and then click ``Open``.
+Navigate to the directory **csvfiles** on your desktop, select all 4 files and then click **Open**.
 
 ![ETL](./images/selectfiles.png)
 
@@ -86,7 +86,7 @@ You'll then see this screen.
 
 ![ETL](./images/selectfilesok.png)
 
-Click ``Upload``.
+Click **Upload**.
 
 ![ETL](./images/upload.png)
 
@@ -106,58 +106,58 @@ You'll now see this page.
 
 ![ETL](./images/iam.png)
 
-In the left menu, click ``Users``.
+In the left menu, click **Users**.
 
 ![ETL](./images/iammenu.png)
 
-You'll then see the ``Users``-screen.
+You'll then see the **Users**-screen.
 
 ![ETL](./images/users.png)
 
-Click ``Add User``.
+Click **Add User**.
 
 ![ETL](./images/adduser.png)
 
 Next, configure your user:
 
-- User Name: use ``s3_ldap`` as a name, so in this example the name is ``s3_vangeluw``.
-- AWS access type: select ``Programmatic access``.
+- User Name: use **s3_ldap** as a name, so in this example the name is **s3_vangeluw**.
+- AWS access type: select **Programmatic access**.
 
 ![ETL](./images/configuser.png)
 
-Click ``Next: Permissions``.
+Click **Next: Permissions**.
 
 ![ETL](./images/nextperm.png)
 
-You'll then see this permissions screen. Click ``Attach existing policies directly``.
+You'll then see this permissions screen. Click **Attach existing policies directly**.
 
 ![ETL](./images/perm1.png)
 
-Enter the search term ``s3`` to see all related S3 policies. Select the policy ``AmazonS3FullAccess``.
+Enter the search term **s3** to see all related S3 policies. Select the policy **AmazonS3FullAccess**.
 
 ![ETL](./images/perm2.png)
 
-Click ``Next: Tags``.
+Click **Next: Tags**.
 
 ![ETL](./images/nexttags.png)
 
-On the ``Tags``-screen, there's no need to configure anything.
+On the **Tags**-screen, there's no need to configure anything.
 
 ![ETL](./images/perm3.png)
 
-Click ``Next: Review``.
+Click **Next: Review**.
 
 Review your configuration.
 
 ![ETL](./images/review.png)
 
-Click ``Create User``.
+Click **Create User**.
 
 Your user is now created and you're seeing your Credentials to access your S3 environment. This is the only time you'll see your credentials so please write them down.
 
 ![ETL](./images/cred.png)
 
-Click ``Show`` to see your Secret access key:
+Click **Show** to see your Secret access key:
 
 ![ETL](./images/cred1.png)
 
@@ -170,15 +170,15 @@ Store your credentials in a text-file in your computer.
 
 **!! IMPORTANT !!**
 
-Once you click ``Close`` you'll never see your credentials again...
+Once you click **Close** you'll never see your credentials again...
 
-Click ``Close``.
+Click **Close**.
 
 ![ETL](./images/close.png)
 
 You've now successfully created an AWS S3 bucket, you've uploaded CSV files into that bucket and you've created a user with permissions to access this bucket.
 
-Next Step: [Exercise 5.2 - Connect Informatica to your AWS S3 bucket](./ex2.md)
+Next Step: [5.2 - Connect Informatica to your AWS S3 bucket](./ex2.md)
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 

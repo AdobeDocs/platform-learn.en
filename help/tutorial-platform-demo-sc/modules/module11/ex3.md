@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 11.3 - Take Action: send your segment to DV360
+# 11.3 - Take Action: send your segment to DV360
 
 Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -15,44 +15,44 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-In the left menu, go to ``Destinations``.
-You'll then see the ``Destinations``-homepage.
+In the left menu, go to **Destinations**.
+You'll then see the **Destinations**-homepage.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 
-In ``Destinations``, click on ``Google Display & Video 360``.
+In **Destinations**, click on **Google Display & Video 360**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Click on ``Browse Destinations``.
+Click on **Browse Destinations**.
 
-You'll then see all available ``Google Display & Video 360``-destinations.
+You'll then see all available **Google Display & Video 360**-destinations.
 
 ![RTCDP](./images/rtcdpgoogledest.png)
 
-Click the ``Destination Name`` of ``DV360 - Advertiser ID: 5701635``.
+Click the **Destination Name** of **DV360 - Advertiser ID: 5701635**.
 
 You'll then see this screen:
 
 ![RTCDP](./images/rtcdpgoogledest1.png)
 
-Click ``Edit Activation``.
+Click **Edit Activation**.
 
 ![RTCDP](./images/rtcdpactivate.png)
 
-You'll then see all available segments in your Adobe Experience Platform instance. Search and select the segment you created in exercise 1.
+You'll then see all available segments in your Adobe Experience Platform instance. Search and select the segment you created in 1.
 
 ![RTCDP](./images/rtcdpactivateseg.png)
 
-Click ``Next``.
+Click **Next**.
 
 ![RTCDP](./images/rtcdpnext.png)
 
-On the next page, click ``Next``.
+On the next page, click **Next**.
 
 ![RTCDP](./images/rtcdpnext1.png)
 
-On the next page, click ``Finish``.
+On the next page, click **Finish**.
 
 ![RTCDP](./images/rtcdpnext2.png)
 
@@ -60,7 +60,7 @@ Your segment is now linked to Google DV360. Every time a customer qualifies for 
 
 ![RTCDP](./images/rtcdpnext3.png)
 
-Next Step: [Exercise 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
+Next Step: [11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 

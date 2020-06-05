@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 5.2 - Connect Informatica to your AWS S3 bucket
+# 5.2 - Connect Informatica to your AWS S3 bucket
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.
 
@@ -23,11 +23,11 @@ You'll then see the Informatica homepage.
 
 ![ETL](./images/inf1.png)
 
-In the upper left corner, click on ``Data Integration``.
+In the upper left corner, click on **Data Integration**.
 
 ![ETL](./images/inf2.png)
 
-You'll then see this popup, click ``Administrator``.
+You'll then see this popup, click **Administrator**.
 
 ![ETL](./images/inf3.png)
 
@@ -35,7 +35,7 @@ You'll then see the Administrator-landing page.
 
 ![ETL](./images/inf4.png)
 
-In the left menu, click ``Connections``.
+In the left menu, click **Connections**.
 
 ![ETL](./images/inf5.png)
 
@@ -43,18 +43,18 @@ You'll then see all available connections. You now have to create a new connecti
 
 ![ETL](./images/inf6.png)
 
-Click ``New Connection``.
+Click **New Connection**.
 
 ![ETL](./images/inf7.png)
 
 In Connection Details, configure the fields like this:
 
-- Connection Name: use the name ``S3 - LDAP`` and replace LDAP by your LDAP. In this example, the Connection Name is ``S3 - vangeluw``.
-- Type: select the type ``Amazon S3 v2``.
+- Connection Name: use the name **S3 - LDAP** and replace LDAP by your LDAP. In this example, the Connection Name is **S3 - vangeluw**.
+- Type: select the type **Amazon S3 v2**.
 
 ![ETL](./images/inf8.png)
 
-In the Amazon S3 v2 Properties, select ``aepEmeaInformatica`` as the Runtime Environment:
+In the Amazon S3 v2 Properties, select **aepEmeaInformatica** as the Runtime Environment:
 
 ![ETL](./images/inf9.png)
 
@@ -65,8 +65,8 @@ In the Connection Section, configure the fields like this:
 As a reminder, here's where you could find the Amazon S3 Access and Secret keys:
 ![ETL](./images/cred1.png)
 
-- Folder Path: folder path should be ``aepmodule5LDAP``, replace LDAP by your LDAP. In this example, the Folder Path is ``aepmodule5vangeluw``.
-- Region Name: select ``EU(Frankfurt)``.
+- Folder Path: folder path should be **aepmodule5LDAP**, replace LDAP by your LDAP. In this example, the Folder Path is **aepmodule5vangeluw**.
+- Region Name: select **EU(Frankfurt)**.
 
 ![ETL](./images/inf10.png)
 
@@ -74,7 +74,7 @@ After filling out these details, your screen should look like this:
 
 ![ETL](./images/inf11.png)
 
-Click ``Save``.
+Click **Save**.
 
 ![ETL](./images/inf12.png)
 
@@ -82,11 +82,11 @@ Your connection is now saved and you'll see this:
 
 ![ETL](./images/inf13.png)
 
-Let's test your connection now, by clicking the ``Test Connection``button in the upper right corner.
+Let's test your connection now, by clicking the **Test Connection**button in the upper right corner.
 
 ![ETL](./images/inf14.png)
 
-If your connection is set up properly, you should see a confirmation message: ``The test for this connection was successful.``.
+If your connection is set up properly, you should see a confirmation message: **The test for this connection was successful.**.
 
 ![ETL](./images/inf15.png)
 
@@ -101,11 +101,11 @@ The connector to write data to Adobe Experience Platform is already configured s
 
 If you'd like to view the setup of the connector, follow these steps:
 
-- In the left menu, click ``Connections``.
+- In the left menu, click **Connections**.
 
   ![ETL](./images/inf20.png)
 
-- Click the connection ``Experience Platform EMEA``
+- Click the connection **Experience Platform EMEA**
 
   ![ETL](./images/inf21.png)
 
@@ -113,7 +113,7 @@ If you'd like to view the setup of the connector, follow these steps:
   
 Please continue with the next exercise.
 
-Next Step: [Exercise 5.3 - Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
+Next Step: [5.3 - Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 

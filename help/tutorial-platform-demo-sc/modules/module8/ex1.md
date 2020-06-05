@@ -7,13 +7,13 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 8.1 - Data Exploration and Transformation
+# 8.1 - Data Exploration and Transformation
 
 To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you will explore purchase data flowing via Adobe Analytics to Platform and transform that data into a Feature dataset that can help train your machine learning model.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
-## Exercise 8.1.1 - Explore the Datasets and XDM Schemas
+## 8.1.1 - Explore the Datasets and XDM Schemas
 
 Experience Data Models (XDM) on Adobe Experience Platform help standardize your data so that it can be used efficiently across your organization.
 
@@ -23,7 +23,7 @@ After logging in, you'll see the homepage of Adobe Experience Platform.
 
 ![DSW](./images/home.png)
 
-From the left menu, click ```Datasets```.
+From the left menu, click **Datasets**.
 
 ![DSW](./images/dsmenu.png)
 
@@ -37,17 +37,17 @@ In this Tech Lab, we'll be using 3 datasets:
 | AEP Demo - Recommendations Input | AEP Demo - Recommendations Input Schema| The clickstream data will be converted into a feature/training dataset using a feature pipeline. This data is used to train the Product Recommendations machine learning model. itemid and userid correspond to a product purchased by that user at time timestamp |
 | AEP Demo - Recommendations Output | AEP Demo - Recommendations Output Schema| Schema This is the dataset that you obtain after scoring. This contains the list of recommended products for each user |
 
-Let's have a look at the ``AEP Demo - Website Interactions``-dataset.
+Let's have a look at the **AEP Demo - Website Interactions**-dataset.
 
-On the Datasets - page, enter ``AEP Demo - Website Interactions`` in the search box.
+On the Datasets - page, enter **AEP Demo - Website Interactions** in the search box.
 
 ![DSW](./images/dssearch.png)
 
-Open the dataset ``AEP Demo - Website Interactions``.
+Open the dataset **AEP Demo - Website Interactions**.
 
 ![DSW](./images/dsview.png)
 
-By clicking the ```Preview Dataset``` - button, you can see what data is sent into that dataset and how the data model looks like.
+By clicking the **Preview Dataset** - button, you can see what data is sent into that dataset and how the data model looks like.
 
 ![DSW](./images/dspreview.png)
 
@@ -57,7 +57,7 @@ Close the preview - window of your dataset.
 
 Let's have a look at the schema that was defined for this dataset.
 
-From the left menu, select ```Schemas```.
+From the left menu, select **Schemas**.
 
 ![DSW](./images/schemamenu.png)
 
@@ -71,19 +71,19 @@ In the Schemas - overview, search to find the 3 schemas you'll be using in this 
 
 ![DSW](./images/schemaoverview.png)
 
-Let's explore the schema for AEP Demo - Website Interactions Schema, click to open the schema named ``AEP Demo - Website Interactions Schema``.
+Let's explore the schema for AEP Demo - Website Interactions Schema, click to open the schema named **AEP Demo - Website Interactions Schema**.
 
 ![DSW](./images/schemadtl.png)
 
-## Exercise 8.1.2 - Open Jupyter Notebooks
+## 8.1.2 - Open Jupyter Notebooks
 
 Let's get our hands dirty now, by going to Jupyter Notebooks.
 
-In the left menu, click on ```Notebooks```.
+In the left menu, click on **Notebooks**.
 
 ![DSW](./images/nb.png)
 
-Click on ``JupyterLab``. You'll now see JupyterLab loading. This may take 1-2 minutes.
+Click on **JupyterLab**. You'll now see JupyterLab loading. This may take 1-2 minutes.
 
 ![DSW](./images/nbstarting.png)
 
@@ -91,7 +91,7 @@ While Jupyter Notebooks is starting, download the zip-file located [here](../../
 
 ![DSW](./images/dswfiles.png)
 
-Open the folder ```dsw```. In this folder, you'll find 3 notebooks.
+Open the folder **dsw**. In this folder, you'll find 3 notebooks.
 
 ![DSW](./images/dswdtl.png)
 
@@ -103,13 +103,13 @@ Once all 3 notebooks appear in Jupyter Notebooks, you can continue with the next
 
 ![DSW](./images/dswdtldragdone.png)
 
-## Exercise 8.1.3 - Transform Clickstream Data
+## 8.1.3 - Transform Clickstream Data
 
 After the previous exercise, you should now see 3 notebooks available in Jupyter Notebooks inside of Adobe Experience Platform.
 
 ![DSW](./images/dswdtldragdone.png)
 
-In Jupyter Notebooks, open the notebook named ```luma-retail-recommendations-feature-transformation.ipynb``` by double-clicking it.
+In Jupyter Notebooks, open the notebook named **luma-retail-recommendations-feature-transformation.ipynb** by double-clicking it.
 
 What you'll do next:
 
@@ -126,7 +126,7 @@ Click on the first cell in the notebook.
 
 ![DSW](./images/cell1.png)
 
-```
+```python
 import pandas as pd
 
 inputDataset="5ea04d5b5c640f18a85a7b6b" # AEP Demo - Website Interactions Dataset
@@ -164,13 +164,13 @@ Don't continue the exercises until the indicator shows that the execution is fin
 
 There is no visual result after this execution. After clicking the play - button, continue to the next step.
 
-#### Read from Platform: Load the input dataset and show an overview of the data
+### Read from Platform: Load the input dataset and show an overview of the data
 
 Click on the next cell in the notebook.
 
 ![DSW](./images/cell2.png)
 
-```
+```python
 from platform_sdk.dataset_reader import DatasetReader
 
 dataset_reader = DatasetReader(client_context, inputDataset)
@@ -198,7 +198,7 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/cell3.png)
 
-```
+```python
 # drop nulls
 df = df.dropna(subset=[user_id, item_id, interactionType, brand_name])
 
@@ -222,7 +222,7 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/cell4.png)
 
-```
+```python
 # vectorized (no loops) solution for splitting in pandas
 # source: https://stackoverflow.com/a/48120674
 def split_df(dataframe, col_name, sep):
@@ -262,7 +262,7 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/cell5.png)
 
-```
+```python
 filtered_column_list = [item_id, user_id, interactionType, brand_name, timestamp]
 
 df2 = df2[filtered_column_list]
@@ -293,7 +293,7 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/cell6.png)
 
-```
+```python
 df2.head()
 ```
 
@@ -313,7 +313,7 @@ Click on the seventh cell in the notebook.
 
 ![DSW](./images/cell7.png)
 
-```
+```python
 df2['timestamp'] = pd.to_datetime(df2['timestamp']).apply(lambda x: x.isoformat())
 
 from platform_sdk.models import Dataset
@@ -335,14 +335,14 @@ The result looks like this:
 
 ![DSW](./images/result7.png)
 
-The result in Adobe Experience Platform is that a new batch of data has been created on the ```AEP Demo - Recommendations Input``` which you can verify by going
+The result in Adobe Experience Platform is that a new batch of data has been created on the **AEP Demo - Recommendations Input** which you can verify by going
 [here](https://platform.adobe.com/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created).
 
 ![DSW](./images/1ds.png)
 
 ![DSW](./images/1dsb.png)
 
-Next Step: [Exercise 8.2 - Model Authoring and Operationalization](./ex2.md)
+Next Step: [8.2 - Model Authoring and Operationalization](./ex2.md)
 
 [Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 

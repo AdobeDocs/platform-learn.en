@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 7.3 - Queries, queries, queries...  and churn analysis
+# 7.3 - Queries, queries, queries...  and churn analysis
 
 ## Objective
 
@@ -21,13 +21,13 @@ In this exercises you will write queries to analyze product views, product funne
 
 All queries listed in this chapter will be executed in your **PSQL command-line interface**. You should copy (CTRL-c) the statement blocks indicated with **SQL** and paste (CTRL-v)them in the **PSQL command-line interface**. The **Query Result** blocks show the pasted SQL statement and the associated query result.
 
-## Exercise 7.3.1
+## 7.3.1
 
 Write basic queries for data analysis
 
 ### Timestamp
 
-Data captured in Adobe Experience Platform is time stamped. The ``timestamp`` attribute allows you to analyze data over time.
+Data captured in Adobe Experience Platform is time stamped. The **timestamp** attribute allows you to analyze data over time.
 
 How many product views do we have on a daily basis? 
 
@@ -169,7 +169,7 @@ prod:all-> limit 10;
 
 In the next set of queries we will extend the above query, in order to get a complete view on the customers and their behavior that have been visiting the "Cancel Service" page. You will learn how to use the Adobe Defined Function to sessionize information, identify the sequence and timing of events. You will also join datasets together to further enrich and prepare the data for analysis in Microsoft Power BI.
 
-## Exercise 7.3.2
+## 7.3.2
 
 The majority of the business logic requires gathering the touch-points for a customer and ordering them by time. This support is provided by Spark SQL in the form of window functions. Window functions are part of standard SQL and are supported by many other SQL engines.
 
@@ -261,7 +261,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 
 ### How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page?
 
-To answer this kind of query will we use the ``TIME_BETWEEN_NEXT_MATCH()`` Adobe Defined Function.
+To answer this kind of query will we use the **TIME_BETWEEN_NEXT_MATCH()** Adobe Defined Function.
 
 > Time-between previous or next match functions provide a new dimension, which measures the time that has elapsed since a particular incident.
 
@@ -311,7 +311,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 
 ### And what is the outcome of that contact?
 
-Explain that we are joining datasets together, in this case we join our ``aep_demo_website_interactions`` with ``aep_demo_call_center_interactions``. We do this to know the outcome of the callcenter interaction.
+Explain that we are joining datasets together, in this case we join our **aep_demo_website_interactions** with **aep_demo_call_center_interactions**. We do this to know the outcome of the callcenter interaction.
 
 **SQL**
 
@@ -527,7 +527,7 @@ And replace
 enter your name
 ```
 
-Do not remove **/\*** and **\*/**. Your modified statement in notepad should look like:
+Do not remove ```/\*``` and ```\*/```. Your modified statement in notepad should look like:
 
 ![edit-query-notepad.png](./images/edit-query-notepad.png)
 
@@ -582,9 +582,9 @@ prod:all-> and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identifi
 :
 ```
 
-In the next exercise you will persist your query (also known as **create table as select** or **CTAS**) as a new dataset that you will use in Microsoft Power BI.
+In the next you will persist your query (also known as **create table as select** or **CTAS**) as a new dataset that you will use in Microsoft Power BI.
 
-Next Step: [Exercise 7.4 - Power BI/Tableau](./ex4.md)
+Next Step: [7.4 - Power BI/Tableau](./ex4.md)
 
 [Go Back to Module 7](./query-service.md)
 

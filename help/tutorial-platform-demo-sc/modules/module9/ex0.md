@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 9.2.0 - Create a Google Account
+# 9.2.0 - Create a Google Account
 
 Go to [https://accounts.google.com/signup](https://accounts.google.com/signup).
 
@@ -21,7 +21,7 @@ Enter your mobile phone number and birthday.
 
 ![GTM Setup](./images/3.png)
 
-Click ``Verify`` to receive a text message.
+Click **Verify** to receive a text message.
 
 ![GTM Setup](./images/4.png)
 
@@ -29,7 +29,7 @@ Enter the code you received from Google to verify your account.
 
 ![GTM Setup](./images/5.png)
 
-Click ``Skip`` (unless you want to get more from your number).
+Click **Skip** (unless you want to get more from your number).
 
 ![GTM Setup](./images/6.png)
 
@@ -37,17 +37,17 @@ Scroll down on the T&C's.
 
 ![GTM Setup](./images/7.png)
 
-Check the 2 checkboxes and click ``Create Account``.
+Check the 2 checkboxes and click **Create Account**.
 
 ![GTM Setup](./images/8.png)
 
-Click ``Confirm``.
+Click **Confirm**.
 
 ![GTM Setup](./images/9.png)
 
 You're done - your Google Account has been created.
 
-Next Step: [Exercise 9.1 - Create a Google Tag Manager Property](./ex1.md)
+Next Step: [9.1 - Create a Google Tag Manager Property](./ex1.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

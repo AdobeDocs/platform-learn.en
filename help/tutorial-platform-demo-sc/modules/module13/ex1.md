@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 13.1 - Customer Journey Analytics 101
+# 13.1 - Customer Journey Analytics 101
 
 ## Objectives
 
@@ -15,7 +15,7 @@ activity:
 * Learn how to position CJA
 * Understand the CJA workflow: from data connection to insights
 
-## Exercise 13.1.1 - What is Customer Journey Analytics
+## 13.1.1 - What is Customer Journey Analytics
 
 Customer Journey Analytics (CJA) provides a toolkit to the business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within CJA deliver context and clarity to the complex multi-channel customer journey. The provided context leads to actionable insight into removing pain points from the customer conversion process and designing and delivering exceptional experiences for the moments that matter most.
 
@@ -24,7 +24,7 @@ Business and Insight teams can talk to CJA, ask questions and get answers on the
 
 ![demo](./images/cja-adv-analysis1.png)
 
-## Exercise 13.1.2 - Key advantages
+## 13.1.2 - Key advantages
 
 The 3 main benefits for customers are:
 
@@ -32,7 +32,7 @@ The 3 main benefits for customers are:
 * The ability to see the customer in a contextual journey (i.e. data can be visualized sequentially, spanning multiple channels both online and offline)
 * The ability to harness the power of data without the need of  (i.e., it lets normal humans use data to unlock deep insights and analysis for marketing activation)
 
-## Exercise 13.1.3 - Why choose Customer Journey Analytics
+## 13.1.3 - Why choose Customer Journey Analytics
 
 CJA isn't intended to replace a current BI application such as Power BI, Microstrategy, Locker or Tableau. These BI applications are meant to visualize data to create corporate dashboards so that everyone in an organization can quickly look at important metrics.  
 CJA's goal is to bring analysis power to Marketing and Business teams making it 'a must have' analysis tool for those personas.
@@ -52,7 +52,7 @@ With CJA you can have a 360 view of the customer journey, using offline and onli
 
 ![demo](./images/cja-use-case.png)
 
-## Exercise 13.1.4 - Understand the Customer Journey Analytics workflow
+## 13.1.4 - Understand the Customer Journey Analytics workflow
 
 Before starting the next exercises it's key to understand what steps are needed to bring data from Adobe Experience Platform into CJA in order to visualize it and get some deep insights. It's what we call CJA Workflow. Let's have a look at it:
 
@@ -62,7 +62,7 @@ Before starting the above steps, don't forget about step 0, which is to understa
 
 **Garbage in, garbage out.** Remember? You must have a clear idea of what data is available and how the schemas in Adobe Experience Platform are configured. Understanding the data that is in Adobe Experience Platform will make things easier, not only on the data connection part, but also when building visualizations and doing analysis.
 
-## Exercise 13.1.5 - Step 0: Understanding Adobe Experience Platform schemas and datasets
+## 13.1.5 - Step 0: Understanding Adobe Experience Platform schemas and datasets
 
 Please have a look a these schemas and datasets in Adobe Experience Platform.
 
@@ -75,7 +75,7 @@ Please have a look a these schemas and datasets in Adobe Experience Platform.
 Make sure to have at least checked things like:
 
 * Identities: CRMID, MobileNr, ECID, emailId. Which identities are the primary identifiers, which ones are the secondary identifiers?
-You can find the identifiers by opening a schema and looking at the object ``<aepTenantId>.identification``. Have a look at the schema [AEP Demo - Website Interactions Schema](https://platform.adobe.com/schema).
+You can find the identifiers by opening a schema and looking at the object ```<aepTenantId>.identification```. Have a look at the schema [AEP Demo - Website Interactions Schema](https://platform.adobe.com/schema).
 
 ![demo](./images/identity.png)
 
@@ -87,7 +87,7 @@ You can find the identifiers by opening a schema and looking at the object ``<ae
 
 You're now ready to start using the Customer Journey Analytics UI.
 
-Next Step: [Exercise 13.2 - Connect AEP datasets in CJA](./ex2.md)
+Next Step: [13.2 - Connect AEP datasets in CJA](./ex2.md)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 

@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 15.3 - Operationalize your model using a Recipe
+# 15.3 - Operationalize your model using a Recipe
 
 In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a Recipe.
 
@@ -22,11 +22,11 @@ We have streamlined the steps needed to operationalize a model by giving you the
 
 Go to [https://platform.adobe.com](https://platform.adobe.com)
 
-You'll see the ``Adobe Experience Platform``-homepage.
+You'll see the **Adobe Experience Platform**-homepage.
 
 ![DSWLI](./images/aeph.png)
 
-In the left menu, click ``Notebooks``.
+In the left menu, click **Notebooks**.
 
 ![DSWLI](./images/aephnb.png)
 
@@ -42,7 +42,7 @@ Drag & drop the notebook from your desktop into the Notebooks-area in Jupyter No
 
 ![DSWLI](./images/dtnb.png)
 
-In Jupyter Notebooks, now open the notebook you just imported, named ```luma-insurance-sales-propensity.ipynb``` by double-clicking it.
+In Jupyter Notebooks, now open the notebook you just imported, named **luma-insurance-sales-propensity.ipynb** by double-clicking it.
 
 ![DSW](./images/jprecipe.png)
 
@@ -56,13 +56,13 @@ Let's have a look at all steps in detail...
 
 ## Train a model
 
-Training a model is done by clicking the ```Train``` - button.
+Training a model is done by clicking the **Train** - button.
 
 ![DSW](./images/playtrain.png)
 
-Click ```Train``` on the top toolbar to create a training run in the notebook. This executes the training data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the Evaluator - cell).
+Click **Train** on the top toolbar to create a training run in the notebook. This executes the training data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the Evaluator - cell).
 
-After clicking ```Train```, the Training Run will start and will need a couple of minutes to complete.
+After clicking **Train**, the Training Run will start and will need a couple of minutes to complete.
 
 ![DSW](./images/tlog1.png)
 ...
@@ -70,7 +70,7 @@ After clicking ```Train```, the Training Run will start and will need a couple o
 ...
 ![DSW](./images/tlog3.png)
 
-When you click ```Train```, the following cells are executed:
+When you click **Train**, the following cells are executed:
 
 * Requirements File
 * Configuration Files - Training
@@ -80,19 +80,19 @@ When you click ```Train```, the following cells are executed:
 
 ## Score a model
 
-Scoring a model is done by clicking the ```Score``` - button.
+Scoring a model is done by clicking the **Score** - button.
 
 ![DSW](./images/playscore.png)
 
-Click ```Score``` on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the `pipeline.py` cell).
+Click **Score** on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the `pipeline.py` cell).
 
-After clicking ```Score```, the Training Run will start and will need a couple of minutes to complete.
+After clicking **Score**, the Training Run will start and will need a couple of minutes to complete.
 
 ![DSW](./images/slog1.png)
 ...
 ![DSW](./images/slog2.png)
 
-When you click ```Score```, the following cells are executed:
+When you click **Score**, the following cells are executed:
 
 * Requirements File
 * Configuration Files - Scoring
@@ -100,7 +100,7 @@ When you click ```Score```, the following cells are executed:
 * Pipeline File
 * Evaluator File
 
-Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the ```AEP Demo - ML Predictions```-Dataset.
+Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the **AEP Demo - ML Predictions**-Dataset.
 
 You can verify this [here](https://platform.adobe.com/dataset).
 
@@ -108,15 +108,15 @@ You can verify this [here](https://platform.adobe.com/dataset).
 
 ## Create a recipe from the model
 
-Creating a recipe is done by clicking the ```Create Recipe``` - button.
+Creating a recipe is done by clicking the **Create Recipe** - button.
 
 ![DSW](./images/playrecipe.png)
 
-When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the ```Create Recipe``` - button to start the process.
+When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** - button to start the process.
 
 Creating a recipe enables you to test your model at scale.
 
-After clicking the ```Create Recipe``` - button, you have to enter a name for your recipe.
+After clicking the **Create Recipe** - button, you have to enter a name for your recipe.
 
 ![DSW](./images/recname.png)
 
@@ -130,13 +130,13 @@ Example: for ldap **vangeluw**, the name of your recipe should be: **vangeluwCar
 
 ![DSW](./images/recname99.png)
 
-After entering a Recipe Name, click ```OK```.
+After entering a Recipe Name, click **OK**.
 
 A second popup is shown, telling you that your Recipe is being created. This could take up to 5 minutes, please wait until the process finishes.
 
 ![DSW](./images/popup.png)
 
-For now, click the ```Dismiss``` - button.
+For now, click the **Dismiss** - button.
 
 You can view the progress of the recipe creation process in the top right corner of Jupyter Notebooks.
 
@@ -146,7 +146,7 @@ Don't do anything else, you need to keep this browser window open on the Noteboo
 
 After a couple of minutes, the recipe creation is finished.
 
-Click ``View Recipes`` on the popup-window.
+Click **View Recipes** on the popup-window.
 
 ![DSW](./images/popup.png)
 
@@ -156,7 +156,7 @@ You'll then see all available Recipes, which now includes your Recipe as well.
 
 Now that you've created your recipe, let's continue with the next exercise, in which you'll start scalable training and experimentation.
 
-Next Step: [Exercise 15.4 - Train and Score your Recipe](./ex4.md)
+Next Step: [15.4 - Train and Score your Recipe](./ex4.md)
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 

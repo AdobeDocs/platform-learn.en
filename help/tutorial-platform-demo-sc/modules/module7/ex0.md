@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 7.0 - Pre-requisites
+# 7.0 - Pre-requisites
 
 ## Install PSQL Command Line Utility
 
@@ -20,7 +20,7 @@ Only for Windows users
 
 [Install Microsoft Power BI](https://docs.adobe.com/content/help/en/experience-platform/query/clients/power-bi.html)
 
-Make sure that you install the exact version of ``npgsql`` as mentioned on the document, otherwise you will not be able to connect Power BI to Adobe Experience Platform Query Service.
+Make sure that you install the exact version of **npgsql** as mentioned on the document, otherwise you will not be able to connect Power BI to Adobe Experience Platform Query Service.
 
 ## Install Tableau
 
@@ -32,7 +32,7 @@ Tableau gives you a 14-day trial period automatically.
 
 If you want to use Tableau beyond those 14 days, you'll need a license key.
 
-Next Step: [Exercise 7.1 - Getting Started](./ex1.md)
+Next Step: [7.1 - Getting Started](./ex1.md)
 
 [Go Back to Module 7](./query-service.md)
 
