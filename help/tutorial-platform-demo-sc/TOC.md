@@ -7,16 +7,16 @@ audience: all
 # SC Demo Tutorial {#sc-demo-tutorial}
 
 + [Overview](/help/tutorial-platform-demo-sc/README.md)
-+ 1. Foundation - Setup of Adobe Experience Platform Launch and the WebSDK extension{#module1}
++ 1. Setup of Adobe Experience Platform Launch and the WebSDK extension{#module1}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module1/data-ingestion-launch-websdk.md)
-+ 2. Foundation: Data Ingestion{#module2}
++ 2. Data Ingestion{#module2}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module2/data-ingestion.md)
   + [2.1 Explore the website](/help/tutorial-platform-demo-sc/modules/module2/ex1.md)
   + [2.2 Configure Schema's and Set Identifiers](/help/tutorial-platform-demo-sc/modules/module2/ex2.md)
   + [2.3 Configure Datasets](/help/tutorial-platform-demo-sc/modules/module2/ex3.md)
   + [2.4 Use Launch and the Adobe Experience Platform Extension](/help/tutorial-platform-demo-sc/modules/module2/ex4.md)
   + [2.5 Data Ingestion from Offline Sources](/help/tutorial-platform-demo-sc/modules/module2/ex5.md)
-+ 3. Foundation: Real-time Customer Profile{#module3}
++ 3. Real-time Customer Profile{#module3}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module3/real-time-customer-profile.md)
   + [3.1 Visit the website](/help/tutorial-platform-demo-sc/modules/module3/ex1.md)
   + [3.2 Visualize your own real-time customer profile - UI](/help/tutorial-platform-demo-sc/modules/module3/ex2.md)
@@ -97,8 +97,7 @@ audience: all
   + [13.5 Visualization using Customer Journey Analytics](/help/tutorial-platform-demo-sc/modules/module13/ex5.md)
 + 14. Offer Decisioning{#module14}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module14/offer-decisioning.md)
-+ 15. Data Science Workspace - Car Insurance Sales Propensity
-{#module15}
++ 15. Data Science Workspace - Car Insurance Sales Propensity{#module15}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
   + [15.1 Introduction to Luma Insurance](/help/tutorial-platform-demo-sc/modules/module15/ex1.md)
   + [15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment](/help/tutorial-platform-demo-sc/modules/module15/ex2.md)
