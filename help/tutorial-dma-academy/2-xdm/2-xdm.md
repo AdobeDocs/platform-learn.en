@@ -1,3 +1,13 @@
+---
+title: XDM | Adobe Experience Platform Tutorial | DMA Academy
+feature:
+topics: 
+kt: 5359
+audience: data-architect,data-engineer
+doc-type: tutorial
+activity: implement
+---
+
 # Adobe Experience Platform: Hands-on Technical Exercise: XDM
 
 ## Experience Data Model (XDM) Criticality
@@ -172,7 +182,7 @@ As mentioned at the first of this section, CRM data is pretty generic across Ado
 ![alt_text](assets/image008.png)
 
 
-4. Repeat the previous steps to add the **Profile person details** and** Profile personal details** mixins (notice one is person and the other is person**<span style="text-decoration:underline;">al</span>**). When finished, your schema should look like this:
+4. Repeat the previous steps to add the **Profile person details** and** Profile personal details** mixins (notice one is person and the other is person*al*). When finished, your schema should look like this:
 ![alt_text](assets/image009.png)
 
 5. Click **Save** in the upper right corner to save your schema with the work done thus far.

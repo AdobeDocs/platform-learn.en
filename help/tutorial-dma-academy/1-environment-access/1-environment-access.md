@@ -1,4 +1,12 @@
-
+---
+title: Environment Access | Adobe Experience Platform Tutorial | DMA Academy
+feature:
+topics: 
+kt: 5359
+audience: data-architect,data-engineer
+doc-type: tutorial
+activity: implement
+---
 # Adobe Experience Platform: Hands-on Technical Exercise: Environment Access
 
 ## Overview

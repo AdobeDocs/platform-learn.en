@@ -1,3 +1,13 @@
+---
+title: Identity Namespaces, Datasets, and DULE | Adobe Experience Platform Tutorial | DMA Academy
+feature:
+topics: 
+kt: 5359
+audience: data-architect,data-engineer
+doc-type: tutorial
+activity: implement
+---
+
 # Adobe Experience Platform: Hands-On Technical Exercise: Identity Namespaces, Datasets, and DULE
 
 ## Overview
