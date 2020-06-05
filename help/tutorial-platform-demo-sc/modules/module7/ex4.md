@@ -1,13 +1,13 @@
 ---
-title: Module 7, Exercise
-description: 
+title: Query Service - Power BI/Tableau
+description: Query Service - Power BI/Tableau
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---
 
-# 7.4 - Power BI/Tableau
+# 7.4 Power BI/Tableau
 
 ## Objective
 

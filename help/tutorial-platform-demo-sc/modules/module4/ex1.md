@@ -1,8 +1,8 @@
 ---
-title: Module 4, Exercise
-description: 
+title: Voice Assistant - Amazon Alexa - Set up an Alexa Developer Account
+description: Voice Assistant - Amazon Alexa - Set up an Alexa Developer Account
 kt: 5342
-audience: 
+audience: Application Developer
 doc-type: tutorial
 activity: 
 ---
@@ -17,13 +17,13 @@ In order to demonstrate how to use such an Alexa skill, you will have to setup y
 
 You also have to sign up for an AWS account, as the skill we will use requires server-less functions deployed in a AWS Lambda environment.
 
-## 4.1.1: Set up Amazon developer account
+## Exercise 4.1.1: Set up Amazon developer account
 
 Go to [https://developer.amazon.com](https://developer.amazon.com).
 
 ![Amazon Sign In](./images/amazonsignin.png)
 
-Click on **Sign In** at the top right. If you already do have an Amazon developer account, skip to 4.1.2.
+Click on **Sign In** at the top right. If you already do have an Amazon developer account, skip to exercise 4.1.2.
 
 Click **Create your Amazon Developer account** to create a new Amazon developer account.
 
@@ -31,7 +31,7 @@ Click **Create your Amazon Developer account** to create a new Amazon developer 
 
 In the **Create Account** screen, provide your **Name**, **Email** and choose a **Password**. Then click **Create your Amazon Developer Account**.
 
-![Create Account](./images/alexadeveloperaccountdetails.png)
+![Create Account](./images/alexadeveloperaccountdetails.png) 
 
 Some additional verification might be required.
 
@@ -54,7 +54,7 @@ You will get a dialog asking whether you want to provide payment details. You ca
 You will see the **Amazon Developer Dashboard** main window.
 ![Alexa Developer Dashboard](./images/alexadeveloperdashboard.png)
 
-## 4.1.2: Setup an Amazon Web Services account
+## Exercise 4.1.2: Setup an Amazon Web Services account
 
 In a new browser window or tab, go to [https://aws.amazon.com/lambda/](https://aws.amazon.com/lambda/). If you already do have an account, skip to step 10.
 
@@ -68,9 +68,9 @@ In the **Create an AWS account** screen, define **Email address**, **Password** 
 
 In the **Contact Information** screen:
 
-* Select **Personal** for the **Account Type**.
-* Provide required details in the **Contact Information** screen, and click on **Create Account and Continue**.
-
+- Select **Personal** for the **Account Type**.
+- Provide required details in the **Contact Information** screen, and click on **Create Account and Continue**.
+   
 ![Contact Information](images/awscontactinformation.png)
 
 Provide your credit card details in the **Payment Information** screen and click on **Secure Submit**.
@@ -118,10 +118,10 @@ You will end up in the **AWS Management Console**.
 
 Leave the browser tab open; we will need it later in the module.
 
-You have finished this exercise.
+You have finished this exercise. 
 
-Next Step: [4.2: Define your Alexa skill](./ex2.md)
+Next Step: [4.2 Define your Alexa skill](./ex2.md)
 
 [Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](./../../README.md)

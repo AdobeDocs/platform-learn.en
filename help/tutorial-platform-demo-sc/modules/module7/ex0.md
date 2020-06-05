@@ -1,13 +1,13 @@
 ---
-title: Module 7, Exercise
-description: 
+title: Query Service - Pre-requisites
+description: Query Service - Pre-requisites
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---
 
-# 7.0 - Pre-requisites
+# 7.0 Pre-requisites
 
 ## Install PSQL Command Line Utility
 

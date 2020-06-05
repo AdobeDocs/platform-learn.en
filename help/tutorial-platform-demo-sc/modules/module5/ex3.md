@@ -1,20 +1,20 @@
 ---
-title: Module 5, Exercise
-description: 
+title: Extract, Transform, Load data using a 3rd party ETL-tool - Ingest Offline Order Events into Adobe Experience Platform
+description: Extract, Transform, Load data using a 3rd party ETL-tool - Ingest Offline Order Events into Adobe Experience Platform
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 5.3: Ingest Offline Order Events into Adobe Experience Platform
+# 5.3 Ingest Offline Order Events into Adobe Experience Platform
 
 In this exercise, you'll learn how to import order data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
 ## Learning Objectives
 
 - Learn how to load data in Informatica
-- Learn how to create a mapper workflow in Informatica.
+- Learn how to create a mapper workflow in Informatica. 
 - Understand the process to join data sets, enrich data and ingest it in Platform.
 
 ## Lab Resources
@@ -32,14 +32,14 @@ In this exercise, you'll learn how to import order data into Informatica, join d
 
 Luma Retail is a fashion brand and in addition to its online presence, has brick and mortar stores all over the world. So far the marketing team has struggled to make use of the offline orders data to optimize their online experience. Recently, they introduced a new loyalty program that allows customers to collect points when purchasing in store using their loyalty card. The marketing team receives regularly a flat file with all the offline orders as well and has a record of all customers who have joined the loyalty program. With the help of Informatica, we will join the two data sources, enrich the result so that it can be ingested into Adobe Experience Platform, then hydrate the profile with the offline order events.
 
-## 5.3.1 - Create Sources in a Mapping Workflow
+## Exercise 5.3.1 - Create Sources in a Mapping Workflow
 
-In this exercise, you'll load two CSV-files from your S3-bucket into Informatica:
+In this exercise, you'll load two CSV-files from your S3-bucket into Informatica: 
 
 - offline_orders.csv
 - loyalty_data.csv
 
-Go to [https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home](https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home).
+Go to [https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home](https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home). 
 
 Login using the credentials that were sent to you by email.
 
@@ -71,19 +71,19 @@ You'll then see this screen:
 
 Let's start by configuring the name of your mapping. For the name of your mapping, use **LDAP - ex3**. In this example, the name is **vangeluw - ex3**.
 
-![ETL](./images/2map6.png)
+![ETL](./images/2map6.png) 
 
 Click **Save** in the upper right corner of the screen to save your changes.
 
-![ETL](./images/save.png)
+![ETL](./images/save.png) 
 
 Next, let's start the creation of your mapping workflow. Your workflow looks like this at the moment.
 
-![ETL](./images/2wf1.png)
+![ETL](./images/2wf1.png) 
 
 Let's start by removing the **Target**-object for the moment. Select the **Target**-object and click the **Delete**-icon.
 
-![ETL](./images/2wf2.png)
+![ETL](./images/2wf2.png) 
 
 Click **Delete**on the popup window.
 
@@ -117,7 +117,7 @@ You'll then see a popup window, which shows your S3-connection. In the **Package
 
 ![ETL](./images/2wf10.png)
 
-After selecting your bucket name, you'll see the 4 CSV-files that you uploaded into your S3-bucket in 1.
+After selecting your bucket name, you'll see the 4 CSV-files that you uploaded into your S3-bucket in exercise 1. 
 
 Select the file **offline_orders.csv** and click OK.
 
@@ -178,7 +178,7 @@ In the **Properties**-window, click **Source**.
 
 Open the **Connection**-dropdown, locate your **S3 - LDAP**-connection and select it.
 
-![ETL](./images/2wf21.png)
+![ETL](./images/2wf21.png) 
 
 You'll then see this.
 
@@ -192,7 +192,7 @@ You'll then see a popup window, which shows your S3-connection. In the **Package
 
 ![ETL](./images/2wf23.png)
 
-After selecting your bucket name, you'll see the 4 CSV-files that you uploaded into your S3-bucket in 1.
+After selecting your bucket name, you'll see the 4 CSV-files that you uploaded into your S3-bucket in exercise 1. 
 
 Select the file **loyalty_data.csv** and click OK.
 
@@ -235,7 +235,7 @@ The file that you just loaded as a source, has these columns:
 
 You have now created the Source connectors required for this exercise!
 
-## 5.3.2 - Join Sources
+## Exercise 5.3.2 - Join Sources
 
 In this exercise, you'll join the above created Sources.
 
@@ -243,7 +243,7 @@ Your mapping workflow looks like this currently:
 
 ![ETL](./images/2wf30.png)
 
-You now need to join those 2 datasets. The way to do that is using a **Joiner**. In the Design-menu, scroll down until you see the **Joiner**-object.
+You now need to join those 2 datasets. The way to do that is using a **Joiner**. In the Design-menu, scroll down until you see the **Joiner**-object. 
 
 ![ETL](./images/2wf31.png)
 
@@ -275,25 +275,25 @@ You'll see this window now.
 
 ![ETL](./images/2wf42.png)
 
-For Master > Source, open the dropdown list for **Bulk Rename Options** and select **Prefix**.
+For Master > Source, open the dropdown list for **Bulk Rename Options** and select **Prefix**. 
 
-Enter the prefix **m_**.
+Enter the prefix **m_**. 
 
 Click **OK**.
 
 ![ETL](./images/2wf43.png)
 
-In the Incoming Fields screen, you can now scroll down and you'll see that all fields form the Master Source now have an **m_**-prefix and the error message is gone.
+In the Incoming Fields screen, you can now scroll down and you'll see that all fields form the Master Source now have an ``m_``-prefix and the error message is gone.
 
 ![ETL](./images/2wf44.png)
 
-Next, you have to define the **Join Condition**. Click on **Join Condition** in the left menu.
+Next, you have to define the ``Join Condition``. Click on ``Join Condition`` in the left menu.
 
 You'll then see this.
 
 ![ETL](./images/2wf45.png)
 
-Click the little **+**-icon.
+Click the little ``+``-icon.
 
 You'll then see a Join Condition appear.
 
@@ -301,80 +301,80 @@ You'll then see a Join Condition appear.
 
 Connect these 2 fields to each other:
 
-**m_account_id (string)** = **account_id (string)**
+``m_account_id (string)`` = ``account_id (string)``
 
 ![ETL](./images/2wf47.png)
 
-When done, click **Save**.
+When done, click ``Save``.
 
 ![ETL](./images/2wf48.png)
 
 Your 2 Sources are now joined with each other.
 
-Don't forget to click **Save** to save your mapping's current state.
+Don't forget to click ``Save`` to save your mapping's current state.
 
 ![ETL](./images/savemapping.png)
 
-## 5.3.3 - Filter Data
+## Exercise 5.3.3 - Filter Data
 
 The next step is filtering data. Specifically, you need to remove potential empty lines like in the case of having an empty account_id.
 
-In order to filter data, you need to add a **Filter**-object onto the canvas. You can find the **Filter**-object in the left menu on the Design workflow.
+In order to filter data, you need to add a ``Filter``-object onto the canvas. You can find the ``Filter``-object in the left menu on the Design workflow.
 
 ![ETL](./images/filter1.png)
 
-Drag and drop the **Filter**-object onto the canvas.
+Drag and drop the ``Filter``-object onto the canvas.
 
 ![ETL](./images/filter2.png)
 
-Next, have a look at the **Properties**-window.
+Next, have a look at the ``Properties``-window.
 
 ![ETL](./images/filter3.png)
 
-In the left menu, go to **Filter**.
+In the left menu, go to ``Filter``.
 
-Click the **+**-icon on the right side to add a Filter.
+Click the ``+``-icon on the right side to add a Filter.
 
 ![ETL](./images/filter4.png)
 
-Change the **Filter Condition** to **Advanced**.
+Change the ``Filter Condition`` to ``Advanced``.
 
 ![ETL](./images/filter5.png)
 
-Click the **Define Filter Condition**-button.
+Click the ``Define Filter Condition``-button.
 
 ![ETL](./images/filter6.png)
 
-In the **Edit Filter**-popup, paste this filter:
-**IIF(ISNULL(account_id),FALSE,TRUE)**
+In the ``Edit Filter``-popup, paste this filter: 
+``IIF(ISNULL(account_id),FALSE,TRUE)``
 
 ![ETL](./images/filter7.png)
 
-Click **OK** to save your Filter.
+Click ``OK`` to save your Filter.
 
 You've now defined your Filter, let's enrich your data.
 
-Don't forget to click **Save** to save your mapping's current state.
+Don't forget to click ``Save`` to save your mapping's current state.
 
 ![ETL](./images/savemapping.png)
 
-## 5.3.4 - Enrich Data
+## Exercise 5.3.4 - Enrich Data
 
-In the enrichment phase, you can add additional fields to your dataset. In this example, we need to provide a unique **hitId** to Adobe Experience Platform when ingesting Experience Event-data. This **hitId** isn't part of the dataset yet, so you'll add it now using an **Expression**.
+In the enrichment phase, you can add additional fields to your dataset. In this example, we need to provide a unique ``hitId`` to Adobe Experience Platform when ingesting Experience Event-data. This ``hitId`` isn't part of the dataset yet, so you'll add it now using an ``Expression``.
 
-In order to enrich data, you need to add an **Expression**-object onto the canvas. You can find the **Expression**-object in the left menu on the Design workflow.
+In order to enrich data, you need to add an ``Expression``-object onto the canvas. You can find the ``Expression``-object in the left menu on the Design workflow.
 
 ![ETL](./images/enrich1.png)
 
-Drag and drop the **Expression**-object onto the canvas.
+Drag and drop the ``Expression``-object onto the canvas.
 
 ![ETL](./images/enrich2.png)
 
-Next, have a look at the **Properties**-window.
+Next, have a look at the ``Properties``-window.
 
-In the left menu, go to **Expression**.
+In the left menu, go to ``Expression``.
 
-Click the **+**-icon on the right side to add a Field/Expression.
+Click the ``+``-icon on the right side to add a Field/Expression.
 
 ![ETL](./images/enrich3.png)
 
@@ -384,33 +384,33 @@ You'll then see this popup:
 
 In the popup, define the Field Name and Type:
 
-- Field Name: **hitId**
-- Type: **bigint**
+- Field Name: ``hitId``
+- Type: ``bigint`` 
 
 ![ETL](./images/enrich5.png)
 
-Click **OK** to save your field.
+Click ``OK`` to save your field.
 
 You'll then see this:
 
 ![ETL](./images/enrich5a.png)
 
-Click **Configure...**
+Click ``Configure...``
 
-In the **Edit Expression**-popup, paste this expression:
-**rand() * 1000000000000**
+In the ``Edit Expression``-popup, paste this expression: 
+``rand() * 1000000000000``
 
 ![ETL](./images/enrich6.png)
 
-Click **OK** to save your expression.
+Click ``OK`` to save your expression.
 
 You've now defined your Expression, let's output your data to Adobe Experience Platform.
 
-Don't forget to click **Save** to save your mapping's current state.
+Don't forget to click ``Save`` to save your mapping's current state.
 
 ![ETL](./images/savemapping.png)
 
-## 5.3.5 - Output Data to Target
+## Exercise 5.3.5 - Output Data to Target
 
 The last step is to add the **Target**-object to the workflow. From the left menu, drag and drop the **Target**-object onto the canvas.
 
@@ -515,13 +515,13 @@ Open the dataset **AEP Demo - ETL Offline Orders**.
 
 ![ETL](./images/run11.png)
 
-Scroll down until you see the Batch IDs and locate your specific batch.
+Scroll down until you see the Batch IDs and locate your specific batch. 
 
 ![ETL](./images/run12.png)
 
-You can now continue with 4.
+You can now continue with exercise 4.
 
-Next Step: [5.4 - Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
+Next Step: [5.4 Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 

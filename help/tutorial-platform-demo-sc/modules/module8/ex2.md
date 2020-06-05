@@ -1,13 +1,13 @@
 ---
-title: Module 8, Exercise
-description: 
+title: Data Science Workspace - Model Authoring and Operationalization
+description: Data Science Workspace - Model Authoring and Operationalization
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 8.2 - Model Authoring and Operationalization
+# 8.2 Model Authoring and Operationalization
 
 In 1 we created the training data required to power our Machine Learning model. In this lesson we will show you how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
@@ -73,14 +73,14 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/anacell2.png)
 
-**
+```python
 from platform_sdk.dataset_reader import DatasetReader
 from datetime import date
 dataset_reader = DatasetReader(PLATFORM_SDK_CLIENT_CONTEXT, dataset_id=inputDataset)
 df = dataset_reader.limit(100).read()
 
 df.head(20)
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -96,9 +96,9 @@ Click on the next cell in the notebook.
 
 ![DSW](./images/anacell3.png)
 
-**
+```python
 print("You'll see the number of lines and the number of columns:", df.shape)
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -114,9 +114,9 @@ Click on the fourth cell in the notebook.
 
 ![DSW](./images/anacell4.png)
 
-**
+```python
 df.head(20)
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -147,9 +147,9 @@ Then click on the next cell in the notebook.
 
 ![DSW](./images/anacell6.png)
 
-**
+```python
 df.describe()
-**
+```
 
 Click the play - button to execute this cell.
 
@@ -165,9 +165,9 @@ Click on the seventh cell in the notebook.
 
 ![DSW](./images/anacell7.png)
 
-**
+```python
 df[[user_id, item_id]].groupby([item_id]).agg(['count'])
-**
+```
 
 Click the play - button to execute this cell.
 

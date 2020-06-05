@@ -1,19 +1,19 @@
 ---
-title: Module 5, Exercise
-description: 
+title: Extract, Transform, Load data using a 3rd party ETL-tool - Connect Informatica to your AWS S3 bucket
+description: Extract, Transform, Load data using a 3rd party ETL-tool - Connect Informatica to your AWS S3 bucket
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 5.2 - Connect Informatica to your AWS S3 bucket
+# Exercise 5.2 - Connect Informatica to your AWS S3 bucket
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.
 
 ## Log in to Informatica
 
-Go to [https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS](https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS).
+Go to [https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS](https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS). 
 
 Login using the credentials that were sent to you by email.
 
@@ -92,12 +92,12 @@ If your connection is set up properly, you should see a confirmation message: **
 
 If the test was successful, you can continue with the next exercise.
 
-## FYI
-
-You just defined the connection for Informatica to read from your Amazon S3-bucket.
-As part of this exercise, you'll also use another connector to write data from Informatica to Adobe Experience Platform.
-
-The connector to write data to Adobe Experience Platform is already configured so you don't need to set it up yourself.
+>[!NOTE]
+>
+>You just defined the connection for Informatica to read from your Amazon S3-bucket.
+>As part of this exercise, you'll also use another connector to write data from Informatica to Adobe Experience Platform.
+>
+>The connector to write data to Adobe Experience Platform is already configured so you don't need to set it up yourself.
 
 If you'd like to view the setup of the connector, follow these steps:
 
@@ -113,7 +113,7 @@ If you'd like to view the setup of the connector, follow these steps:
   
 Please continue with the next exercise.
 
-Next Step: [5.3 - Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
+Next Step: [5.3 Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 

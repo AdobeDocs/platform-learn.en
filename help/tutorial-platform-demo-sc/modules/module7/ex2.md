@@ -1,13 +1,13 @@
 ---
-title: Module 7, Exercise
-description: 
+title: Query Service - Using the Query Service
+description: Query Service - Using the Query Service
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---
 
-# 7.2 - Using the Query Service
+# 7.2 Using the Query Service
 
 ## Objective
 

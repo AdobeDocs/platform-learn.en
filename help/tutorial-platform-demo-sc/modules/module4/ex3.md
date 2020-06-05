@@ -1,13 +1,13 @@
 ---
-title: Module 4, Exercise
-description: 
+title: Voice Assistant - Amazon Alexa - Use your Alexa skill
+description: Voice Assistant - Amazon Alexa - Use your Alexa skill
 kt: 5342
-audience: 
+audience: Application Developer
 doc-type: tutorial
 activity: 
 ---
 
-# 4.3: Use your Alexa skill
+# Exercise 4.3: Use your Alexa skill
 
 You can demonstrate your Alexa skill and its interaction with AEP, even if you do not have a real Alexa device with a display.
 
@@ -15,34 +15,34 @@ To do this, you'll use the Alexa Simulator.
 
 Go to your **AWS Lambda** definition screen for **aep**.
 
-Make sure you have all of these **Environment Variables** properly configured in your Lambda-function before your demonstration, and make sure that these 3 reflect the proper values for your demo: `ldap`, `alexaBrandName`, `emailAddress`.
-
+Make sure you have all of these **Environment Variables** properly configured in your Lambda-function before your demonstration, and make sure that these 3 reflect the proper values for your demo: **ldap**, **alexaBrandName**, **emailAddress**.
+ 
 ![Environment Variables](images/environmentvariables.png)
 
 If needed, update and save the **Environment variables**.
 
-Go to your **alexa developer console** and open the **AEP** skill you created as part of [4.2](./ex2.md).
+Go to your **alexa developer console** and open the **AEP** skill you created as part of [Exercise 4.2](./ex2.md).
 
 ![AEP Skill Main Screen](images/aepskillmainscreen.png)
 
-In the **aep** skill definition screen within the **alexa developer console**, click on **Test**.
+In the **aep** skill definition screen within the **alexa developer console**, click on **Test**. 
 You might be prompted if you want to allow use of the microphone. The instructions here are using text input for simulating the conversation.
 
 ![Initial Test Screen](images/initialtestscreen.png)
 
 Ensure to:
   
-- Select `Development` from **Skill testing is enabled in:**.
+- Select **Development** from **Skill testing is enabled in:**.
 - Select the **Alexa Simulator**.
-- Select the language you have developed your skill in from the language dropdown list (e.g. `English (GB)`)
+- Select the language you have developed your skill in from the language dropdown list (e.g. **English (GB)**)
 - Unselect **Skill I/O**, select **Device Display** and unselect **Device Log**.
-- Select the type of device you want to use for your demonstration, e.g. `Small Hub` (Echo Spot) or `Medium Hub` (Echo Show) or another one from the dropdown list.
+- Select the type of device you want to use for your demonstration, e.g. **Small Hub** (Echo Spot) or **Medium Hub** (Echo Show) or another one from the dropdown list.
 
 Your screen should now look like this:
 
 ![Simulator1](images/simulator1.png)
 
-Open the skill by entering `ask adobe experience platform` in the **Type or click and hold the mic**.
+Open the skill by entering **ask adobe experience platform** in the **Type or click and hold the mic**.
 
 Your screen should look like this:
 
@@ -50,39 +50,39 @@ Your screen should look like this:
 
 You are now all set to demonstrate the brand and product interaction using the simulator.
 
-Type `get products` to get products.
+Type **get products** to get products.
 
-The simulator will respond with `We got 8 products. Use a number between 1 and 8 to get more details about a product. E.g. say Alexa, get product 8`.
+The simulator will respond with **We got 8 products. Use a number between 1 and 8 to get more details about a product. E.g. say Alexa, get product 8**.
 
 Your screen should look like this:
 
 ![Simulator 6](images/simulator6.png)
 
-Type `get product 1` to get product 1.
+Type **get product 1** to get product 1.
 
-The simulator will respond with `You have selected Nadia Elements Shell from the category Women with a price of 69 euro. You can add the product to your shopping cart by saying Alexa, add product to cart`.
+The simulator will respond with **You have selected Nadia Elements Shell from the category Women with a price of 69 euro. You can add the product to your shopping cart by saying Alexa, add product to cart**.
 
 Your screen should look like this:
 
 ![Simulator 7](images/simulator7.png)
 
-Type `add product to cart` to add the product to the cart.
+Type **add product to cart** to add the product to the cart.
 
-The simulator will respond with `We have added Nadia Elements Shell to your shopping cart. Thank you!`.
+The simulator will respond with **We have added Nadia Elements Shell to your shopping cart. Thank you!**.
 
 Your screen should look like this:
 
 ![Simulator 8](images/simulator8.png)
 
-Type `purchase product` to purchase the product.
+Type **purchase product** to purchase the product.
 
-The simulator will respond with `You have purchased Nadia Elements Shell. Thank you so much!`.
+The simulator will respond with **You have purchased Nadia Elements Shell. Thank you so much!**.
 
 Your screen should look like this:
 
 ![Simulator 9](images/simulator9.png)
 
-## 4.3.3: Viewing the result in Adobe Experience Platform
+## Exercise 4.3.3: Viewing the result in Adobe Experience Platform
 
 You can view the experience events generated by your Alexa skill (either the real device or simulator). To do so:
 
@@ -110,10 +110,10 @@ You'll now see an overview of the most recent data that was ingested in this dat
 
 ![Platform Enablements](images/datapreview.png)
 
-You have finished this exercise.
+You have finished this exercise. 
 
-Next Step: [4.4: Walkthrough of Demo Scenario, now including Alexa](./ex4.md)
+Next Step: [4.4 Walkthrough of Demo Scenario, now including Alexa](./ex4.md)
 
 [Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 
-[Go Back to All Modules](../../README.md)
+[Go Back to All Modules](./../../README.md)

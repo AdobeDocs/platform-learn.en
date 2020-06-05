@@ -1,13 +1,13 @@
 ---
-title: Module 8, Exercise
-description: 
+title: Model Training and Experimentation
+description: Model Training and Experimentation
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 8.3 - Model Training and Experimentation
+# 8.3 Model Training and Experimentation
 
 So you’ve prepared your data, authored your model and packaged it to test it at scale as a recipe. Now let’s go ahead and train and test the model.
 

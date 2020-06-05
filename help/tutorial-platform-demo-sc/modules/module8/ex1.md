@@ -1,13 +1,13 @@
 ---
-title: Module 8, Exercise
-description: 
+title: Data Science Workspace - Data Exploration and Transformation
+description: Data Science Workspace - Data Exploration and Transformation
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: 
 ---
 
-# 8.1 - Data Exploration and Transformation
+# 8.1 Data Exploration and Transformation
 
 To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you will explore purchase data flowing via Adobe Analytics to Platform and transform that data into a Feature dataset that can help train your machine learning model.
 

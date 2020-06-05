@@ -1,17 +1,17 @@
 ---
-title: Module 5, Exercise
-description: 
+title: Extract, Transform, Load data using a 3rd party ETL-tool - Setup an AWS S3 bucket
+description: Extract, Transform, Load data using a 3rd party ETL-tool - Setup an AWS S3 bucket
 kt: 5342
-audience: 
+audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 5.1 - Setup an AWS S3 bucket
+# Exercise 5.1 - Setup an AWS S3 bucket
 
 In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS environment and how to upload data in that S3 bucket.
 
-First of all, in this module we'll use 4 CSV-files as datasources in Informatica. Please download [this zip-file](./downloads/csvfiles.zip) to your desktop and unzip its contents on your desktop.
+First of all, in this module we'll use 4 CSV-files as datasources in Informatica. Please download the file **csvfiles.zip** from your **Environment Variables GitHub repository** to your desktop and unzip its contents on your desktop.
 
 ![ETL](./images/csv.png)
 
@@ -41,7 +41,7 @@ Click the **Create Bucket**-button.
 
 In the **Create Bucket**-screen, you need to configure 2 things:
   
-- Name: use the name **aepmodule5LDAP** and replace LDAP by your LDAP. As an example, in this the bucket name is **aepmodule5vangeluw**
+- Name: use the name **aepmodule5LDAP** and replace LDAP by your LDAP. As an example, in this exercise the bucket name is **aepmodule5vangeluw**
 - Region: use the region **EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -58,7 +58,7 @@ You'll then see your bucket being created and will be redirected to the Amazon S
 
 ![ETL](./images/S3homeb.png)
 
-## Upload CSV-files to your S3-bucket
+### Upload CSV-files to your S3-bucket
 
 The next step is to upload the CSV-files we'll use for this module into your S3 bucket.
 
@@ -94,7 +94,7 @@ You'll now see your CSV-files uploaded in your S3-bucket.
 
 ![ETL](./images/s3csv.png)
 
-## Set permissions to access your S3-bucket
+### Set permissions to access your S3-bucket
 
 The next step is to setup access to your S3 bucket.
 
@@ -172,13 +172,13 @@ Store your credentials in a text-file in your computer.
 
 Once you click **Close** you'll never see your credentials again...
 
-Click **Close**.
+Click **Close**. 
 
 ![ETL](./images/close.png)
 
 You've now successfully created an AWS S3 bucket, you've uploaded CSV files into that bucket and you've created a user with permissions to access this bucket.
 
-Next Step: [5.2 - Connect Informatica to your AWS S3 bucket](./ex2.md)
+Next Step: [5.2 Connect Informatica to your AWS S3 bucket](./ex2.md)
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 

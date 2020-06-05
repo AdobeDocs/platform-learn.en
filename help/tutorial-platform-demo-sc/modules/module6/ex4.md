@@ -172,8 +172,6 @@ Then:
 
 Your email template is now ready to be invoked using the event you have specified. As you have seen in the earlier that is exactly what Triggered Journey is doing: taking an AEP event, mapping that to a transactional message event that is coupled to a transactional message template (in our case an email).
 
-If you want you can further beautify your email and/or explore the possibilities of transactional messages (additional parameters) but that is beyond the scope of the Adobe Experience Platform curriculum :-)
-
 You've now finished this and this module!
 
 [Go Back to Module 6](./journey-orchestration-create-account.md)

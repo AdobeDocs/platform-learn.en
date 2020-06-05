@@ -7,7 +7,6 @@ doc-type: tutorial
 activity: 
 ---
 
-
 # 5. Extract, Transform, Load data using a 3rd party ETL-tool
 
 **Authors: [Marius Shehati](https://www.linkedin.com/in/mshehati/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
