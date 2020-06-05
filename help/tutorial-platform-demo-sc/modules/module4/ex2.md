@@ -31,8 +31,8 @@ In the **alexa developer console**, click the **Create Skill** button.
 
 In the **Create a new skill** screen:
 
-1. Specify ``AEP`` as the **Skill name**.
-2. Select ``English (UK)``or ``English (US)`` as the **Default Language**.
+1. Specify **AEP** as the **Skill name**.
+2. Select **English (UK)**or **English (US)** as the **Default Language**.
 3. Select **Custom** as the model to use below **Choose a model to add to your skill**.
 ![Create Skill](images/creatskill1.png)
 4. Select **Provision your own** as the method to use below **Choose a method to host your skill's backend** resources.
@@ -56,13 +56,13 @@ For your skill to be invoked, it needs an invocation name. To define this:
 
 1. Click on **Invocation** in the left rail, or on the **1. Invocation name >** button in the **Skill builder checklist** of the **AEP** skill main screen.
 
-2. In the **Invocation** panel, replace ``aep`` with ``adobe experience platform`` as the **Skill Invocation Name**.
+2. In the **Invocation** panel, replace **aep** with **adobe experience platform** as the **Skill Invocation Name**.
 
 ![Invocation Name](images/invocationname.png)
 
 Click on **Save Model**.
 
-This will update the invocation of your Alexa skill so you can say ``Alexa, open adobe experience platform``.
+This will update the invocation of your Alexa skill so you can say **Alexa, open adobe experience platform**.
 
 ## 4.2.3: Define Intents, Samples and Slots
 
@@ -74,7 +74,7 @@ Click on **JSON Editor** in the left rail.
 
 ![JSON Editor](images/jsoneditor.png)
 
-Go [here](../../assets/aws-alexa/aepskillinteractionmodel.json). Click on ``Raw``.
+Go [here](../../assets/aws-alexa/aepskillinteractionmodel.json). Click on **Raw**.
 
 ![Raw](images/raw.png)
    
@@ -118,11 +118,11 @@ Let's first set up our server-less functionality for the skill. To do so:
 
 Ensure you are logged in to your **AWS Management Console** ([https://us-east-2.console.aws.amazon.com/console/home](https://us-east-2.console.aws.amazon.com/console/home)).
 
-Pick a datacenter you prefer from the dropdown listbox at the top right menu. E.g. ``US East (Ohio)`` or ``EU (Ireland)``.
+Pick a datacenter you prefer from the dropdown listbox at the top right menu. E.g. **US East (Ohio)** or **EU (Ireland)**.
 
 ![Data Center](images/datacenter.png)
 
-In **Find Services** type ``lambda``and press Enter.
+In **Find Services** type **lambda**and press Enter.
 
 ![Lambda](images/lambda.png)
 
@@ -136,11 +136,11 @@ In the **Create function** screen:
 
 1. Select **Author from scratch**.
 ![Author From Scratch](images/authorfromscratch.png)
-2. Give your skill function a **Function name**, e.g. ``aep``.
+2. Give your skill function a **Function name**, e.g. **aep**.
 ![Function Name](images/functionname.png)
-3. Select ``Node.js 12.x`` from the **Runtime** dropdown list.
+3. Select **Node.js 12.x** from the **Runtime** dropdown list.
 ![Runtime](images/runtime.png)
-4. Click on **Choose or create an execution role** below **Permissions**. Then select ``Create a new role with basic Lambda permissions``from the **Execution role** dropdown list. Your screen should look like
+4. Click on **Choose or create an execution role** below **Permissions**. Then select **Create a new role with basic Lambda permissions**from the **Execution role** dropdown list. Your screen should look like
 ![Permissions](images/permissions.png)
 5. Click on **Create function**. It will take a while to finish that creation.
 6. You will end up in your **aep** function definition screen, with the **Configuration** tab active.
@@ -148,7 +148,7 @@ In the **Create function** screen:
 7. In the list of triggers listed below **Add triggers**, select **Alexa Skills Kit**. You will see that the skill is added to the definition screen, with the remark **Configuration required**.
 ![Configuration Required](images/configurationrequired.png)
    
-**Note**: if **Alexa Skills Kit** is not available in the **Add triggers** list, the data center you selected does not support it. Select another datacenter (e.g. `EU (Ireland)`) that provides the **Alexa Skills Kit** trigger.
+**Note**: if **Alexa Skills Kit** is not available in the **Add triggers** list, the data center you selected does not support it. Select another datacenter (e.g. **EU (Ireland)**) that provides the **Alexa Skills Kit** trigger.
 
 Move over to your **Alexa developer console** ([https://developer.amazon.com/alexa/console/ask](https://developer.amazon.com/alexa/console/ask)).
 
@@ -169,10 +169,10 @@ Continue, in the **aep** definition screen.
 
 1. Click on **aep** box in the **Designer** panel.
 ![Select AEP](images/selectaep.png)
-2. In the **Function code** panel, from the **Code entry type** dropdown list, select ``Upload a .zip file``.
+2. In the **Function code** panel, from the **Code entry type** dropdown list, select **Upload a .zip file**.
 ![Function Code](images/functioncode.png)
-3. Go [here](../../assets/aws-lambda/aepskill.zip), download and save the file somewhere on your computer as `aepskill.zip`.
-4. Click on the **Upload** button. Pick the `aepskill.zip` you saved on your computer from the file browser dialog.
+3. Go [here](../../assets/aws-lambda/aepskill.zip), download and save the file somewhere on your computer as **aepskill.zip**.
+4. Click on the **Upload** button. Pick the **aepskill.zip** you saved on your computer from the file browser dialog.
 ![AEP Skill ZIP](images/selectaepskillzip.png)
 5. Click **Save**.
    
@@ -187,20 +187,20 @@ Continue in the **aep** definition screen
 
 Key | Value
 ---------|----------
-`alexaBrandName` | `luma retail`
-```applicationId``` | ```<b4aAppId>```
-```emailAddress``` | ```rmaur@adobe.com```
-```experienceEventPostbackURL``` | `<dcsInletId>`
-```javascriptKey``` | ```<b4aJsKey>```
-```ldap``` | ```rmaur```
-```serverURL``` | ```https://parseapi.back4app.com```
+**alexaBrandName** | **luma retail**
+**applicationId** | **\<b4aAppId>**
+**emailAddress** | **rmaur@adobe.com**
+**experienceEventPostbackURL** | **\<dcsInletId>**
+**javascriptKey** | **\<b4aJsKey>**
+**ldap** | **rmaur**
+**serverURL** | **https://parseapi.back4app.com**
     
-Ensure you replace `alexaBrandName`, `ldap` and `emailAddress` with your specific configuration details.
+Ensure you replace **alexaBrandName**, **ldap** and **emailAddress** with your specific configuration details.
 
 **Also very important**:
 
-- Define your `alexaBrandName` as the lowercase version of your brand name (e.g. Luma Retail as `luma retail`),
-- If your brand name contains an `&` replace it with ` and `. So as an example, H&M becomes `h and m`.
+- Define your **alexaBrandName** as the lowercase version of your brand name (e.g. Luma Retail as **luma retail**),
+- If your brand name contains an **&** replace it with **and**. So as an example, H&M becomes **h and m**.
 
 Click **Save**.
 
