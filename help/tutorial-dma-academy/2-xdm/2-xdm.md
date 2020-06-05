@@ -58,19 +58,19 @@ This exercise will introduce you to XDM data modeling structures and terminology
 
 Experience Platform uses schemas to describe the structure of data across systems in a consistent and reusable way. Before data can be ingested into Platform, a schema must be composed to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more mixins. As such, you could say:
 
-      **XDM Schema = Class + Mixin(s)**
+      **[!UICONTROL XDM Schema = Class + Mixin(s)]**
 
 
 ### Data Behavior Types and Classes
 
-**Behavior:**
+#### Behavior
 
 Data intended for use in Experience Platform is grouped into two behavior types:
 
-* **Record data:** Provides information about the attributes of a subject. A subject could be an organization or an individual. This would be analogous to a noun (person, place, or thing) in the English language.
-* **Time series data:** Provides a snapshot of the system at the time an action was taken either directly or indirectly by a subject. To use language as an analogy, time series data would be a verb, or the action that a noun (your subject) does.
+* **[!UICONTROL Record data:]** Provides information about the attributes of a subject. A subject could be an organization or an individual. This would be analogous to a noun (person, place, or thing) in the English language.
+* **[!UICONTROL Time series data:]** Provides a snapshot of the system at the time an action was taken either directly or indirectly by a subject. To use language as an analogy, time series data would be a verb, or the action that a noun (your subject) does.
 
-**Class:**
+#### Class
 
 The data behavior of a schema is defined by the schema's class. That class (and associated data behavior) is assigned to a schema when it is created. While there are several different types for classes, for now (and for this exercise), It is a recommended best practice that you stick with the “XDM Individual Profile” and “XDM ExperienceEvent” classes for record and time series data, respectively.
 
@@ -100,7 +100,7 @@ As is usually the case, there's a lot more to learn than we have time to cover i
 
 The XDM schemas you're going to build in this exercise, and then utilize in later exercises, will account for the four sources of Luma data and also set Luma up for success later on. We need to ingest these data sources into Platform and, in a later exercise, build a Unified profile and perform segmentation on it. Based on best practices we will create two profile schemas (CRM & Loyalty) and two Experience Event Schema (Purchase events and website data collection)
 
-**Since proper XDM schema creation is crucial for a client to derive value from a successful Experience Platform project, failure at this point in the project will cause a customer to fail with Platform.** To that end, pay close attention to what you're doing in this exercise. Don't rush through it. Keep in mind the customer goals and you'll see how XDM is built to meet those goals. While it will certainly take more practice than just this one exercise to become an XDM expert, you'll be a lot more familiar with XDM and be able to confidently speak with more clients and experienced Adobe Data and Enterprise Architects. 
+**[!UICONTROL Since proper XDM schema creation is crucial for a client to derive value from a successful Experience Platform project, failure at this point in the project will cause a customer to fail with Platform.]** To that end, pay close attention to what you're doing in this exercise. Don't rush through it. Keep in mind the customer goals and you'll see how XDM is built to meet those goals. While it will certainly take more practice than just this one exercise to become an XDM expert, you'll be a lot more familiar with XDM and be able to confidently speak with more clients and experienced Adobe Data and Enterprise Architects. 
 
 
 ## Building Record-Type Schema
@@ -142,22 +142,22 @@ As you go through these steps, see if you can determine which CRM fields match t
 
 
 1. Log into [https://platform.adobe.com](https://platform.adobe.com) with your Adobe ID and ensure that you are in your assigned Experience Cloud org and in the sandbox you've created.
-2. Click on the **Schemas** tab in the left rail followed by a click on **Create Schema** in the upper right.
+2. Click on the **[!UICONTROL Schemas]** tab in the left rail followed by a click on **[!UICONTROL Create Schema]** in the upper right.
 
    ![alt_text](assets/image002.png)
 
 
-3. On the resulting screen you will see a **Schema Properties** in the right rail. Name your schema **by entering CRM Schema** into the **Display name** field.  Give a proper description as well in the **Description** field:
+3. On the resulting screen you will see a **[!UICONTROL Schema Properties]** in the right rail. Name your schema by entering `CRM Schema` into the **[!UICONTROL Display name]** field.  Give a proper description as well in the **[!UICONTROL Description]** field:
 
    ![alt_text](assets/image003.png)
 
    >[!NOTE] All the schema columns are case sensitive. Please make sure you follow the naming suggestion exactly or you might face errors while ingesting data in next exercise.
 
-4. We now need to assign a class to this schema. Click **Assign** from the **Composition** column
+4. We now need to assign a class to this schema. Click **[!UICONTROL Assign]** from the **[!UICONTROL Composition]** column
 
    ![alt_text](assets/image004.png)
 
-5. On the **Assign class** overlay, select the **XDM Individual Profile** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
+5. On the **[!UICONTROL Assign class]** overlay, select the **[!UICONTROL XDM Individual Profile]** option (the **[!UICONTROL Use Existing Class]** radio button at the top should already be selected) then click **[!UICONTROL Assign Class]**. 
 
    ![alt_text](assets/image005.png)
 
@@ -174,26 +174,26 @@ The next step is to identify which mixins contain the XDM fields that map to the
 
 As mentioned at the first of this section, CRM data is pretty generic across Adobe's clients so a few of the standard mixins should give us a good start. 
 
-1. Click on **Add** in the **Mixins** section as shown below:
+1. Click on **[!UICONTROL Add]** in the **[!UICONTROL Mixins]** section as shown below:
 
    ![alt_text](assets/image006.png)
 
 
-2. On the **Add mixin** overlay, ensure that **Use existing mixin** is selected then locate and select the **Profile work details** mixin (you will likely need to scroll down):
+2. On the **[!UICONTROL Add mixin]** overlay, ensure that **[!UICONTROL Use existing mixin]** is selected then locate and select the **[!UICONTROL Profile work details]** mixin (you will likely need to scroll down):
 
    ![alt_text](assets/image007.png)
 
 
-3. Once you’ve selected **Profile work details**, click the **Add mixin** button. You'll see the schema now has the fields of the mixin added:
+3. Once you’ve selected **[!UICONTROL Profile work details]**, click the **[!UICONTROL Add mixin]** button. You'll see the schema now has the fields of the mixin added:
 
    ![alt_text](assets/image008.png)
 
 
-4. Repeat the previous steps to add the **Profile person details** and **Profile personal details** mixins (notice one is person and the other is person*al*). When finished, your schema should look like this:
+4. Repeat the previous steps to add the **[!UICONTROL Profile person details]** and **[!UICONTROL Profile personal details]** mixins (notice one is person and the other is person**al**). When finished, your schema should look like this:
 
    ![alt_text](assets/image009.png)
 
-5. Click **Save** in the upper right corner to save your schema with the work done thus far.
+5. Click **[!UICONTROL Save]** in the upper right corner to save your schema with the work done thus far.
 
 
 #### Custom Identity Mixin
@@ -206,17 +206,17 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 
 
-1. Click **Add** to add another mixin
-2. On the **Add mixin** overlay, select the **Create new mixin** radio button. Name the mixin **Identities** and give it a proper description:
+1. Click **[!UICONTROL Add]** to add another mixin
+2. On the **[!UICONTROL Add mixin]** overlay, select the **[!UICONTROL Create new mixin]** radio button. Name the mixin `Identities` and give it a proper description:
 
    ![alt_text](assets/image010.png)
 
-3. Once you've named your new custom mixin, click the **Add Mixin** button and you'll see it added to the schema:
+3. Once you've named your new custom mixin, click the **[!UICONTROL Add Mixin]** button and you'll see it added to the schema:
 
    ![alt_text](assets/image011.png)
 
 
-4. Select the newly added **Identities** mixin and you'll see new **Add field** buttons appear. Click the one by the root CRM Schema node and you'll see a **New field** node appear (because the identities mixin was selected, this new field will belong to the identities mixin):
+4. Select the newly added `Identities` mixin and you'll see new **[!UICONTROL Add field]** buttons appear. Click the one by the root CRM Schema node and you'll see a **[!UICONTROL New field]** node appear (because the identities mixin was selected, this new field will belong to the identities mixin):
 
    ![alt_text](assets/image012.png)
 
@@ -227,8 +227,8 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
     Again, this will make more sense as to why this can be a problem for customers as you progress through the exercises, but for now, it's important to understand that 1) XDM is still new 2) best practices are evolving, and 3) there will be changes and new standards that may come out within months, or even weeks, of this writing. Be flexible with what you're learning now. Take it in but know that things can change quickly on the XDM Schema front. 
 
-5. If not already done, select the **New field** node and the right pane will have the field properties for that node. 
-6. In the **Field name** and **Display name** fields, enter the text **identification** and set the **Type** dropdown to **Object:**
+5. If not already done, select the **[!UICONTROL New field]** node and the right pane will have the field properties for that node. 
+6. In the **[!UICONTROL Field name]** and **[!UICONTROL Display name]** fields, enter the text  `identification` and set the **[!UICONTROL Type]** dropdown to **[!UICONTROL Object:]**
 
    ![alt_text](assets/image013.png)
 
@@ -236,13 +236,13 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
     >[!NOTE] Since we are building a custom mixin that we want to reuse, we create a parent object for identities, with those identity fields grouped under it. 
 
-7. Click **Apply** and you'll see your schema update with the new name and the field is now turned into an object with the Add Field button now visible:
+7. Click **[!UICONTROL Apply]** and you'll see your schema update with the new name and the field is now turned into an object with the  **[!UICONTROL Add field]** button now visible:
 
    ![alt_text](assets/image014.png)
 
 
-8. Start adding the specific identity fields we want by clicking **Add Field** next to the **identification** object.
-9. Like before, a new field node will appear with the properties in the right panel. Name the field **crmid** with a display name of **CRM ID.** Set the type to **String.** Leave all the other fields as their defaults then scroll down to the bottom and click **Apply**. You should then see your new identity field:
+8. Start adding the specific identity fields we want by clicking **[!UICONTROL Add Field]** next to the `identification` object.
+9. Like before, a new field node will appear with the properties in the right panel. Name the field `crmid` with a display name of `CRM ID`. Set the type to **[!UICONTROL String.]** Leave all the other fields as their defaults then scroll down to the bottom and click **[!UICONTROL Apply]**. You should then see your new identity field:
 
    ![alt_text](assets/image015.png)
 
@@ -263,8 +263,8 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 
 
-11. With your custom identity mixin created, you're ready to save your entire schema. Click **Save** in the upper right corner. 
-12. Let's take a moment and discuss the advantages and drawback of creating a custom identity mixin like we just did. Expand the **homePhone** node and notice that there is a **number** field that could also work to contain a phone number, yet we added a **phoneNbr** field in the identities mixin.
+11. With your custom identity mixin created, you're ready to save your entire schema. Click **[!UICONTROL Save]** in the upper right corner. 
+12. Let's take a moment and discuss the advantages and drawback of creating a custom identity mixin like we just did. Expand the **[!UICONTROL homePhone]** node and notice that there is a **[!UICONTROL number]** field that could also work to contain a phone number, yet we added a `phoneNbr` field in the identities mixin.
 
     ![alt_text](assets/image017.png)
 
@@ -275,8 +275,8 @@ There are also a few reasons to create a custom identity mixin. One is so it can
     This, again, brings to light the point made earlier. There is no perfect, one-way to do XDM. This exercise documents some of the ways XDM has been done successfully for customers. As XDM matures and product enhancements are made, better solutions are bound to surface.
 
 13. Recall from the first part of this section that Luma had a list of fields in their CRM system that they wanted to bring into Platform. Now that you've created the CRM XDM schema, [review that list](#building-record-type-schema-5) and see where each Luma CRM field has its XDM field equivalent. 
-14. Click on **Schemas** in the left pane to return to the schema homepage. 
-15. Click on the **Browse** tab and you should now see the CRM Schema that you just created:
+14. Click on **[!UICONTROL Schemas]** in the left pane to return to the schema homepage. 
+15. Click on the **[!UICONTROL Browse]** tab and you should now see the CRM Schema that you just created:
 
    ![alt_text](assets/image018.png)
 
@@ -285,7 +285,7 @@ There are also a few reasons to create a custom identity mixin. One is so it can
 
 ### Mixin JSON for APIs
 
-With Experience Platform being an API-first platform, it's important to call out how the UI provides ways to do common tasks with the API. In this case, you can simply copy the JSON that this schema relates to be clicking on the **Copy JSON** button in the upper right corner of the schema definition:
+With Experience Platform being an API-first platform, it's important to call out how the UI provides ways to do common tasks with the API. In this case, you can simply copy the JSON that this schema relates to be clicking on the **[!UICONTROL Copy JSON]** button in the upper right corner of the schema definition:
 
    ![alt_text](assets/image019.png)
 
@@ -320,12 +320,12 @@ This section is going to be very similar to the last section. As such, some of t
 
 
 1. If necessary, login to [https://platform.adobe.com](https://platform.adobe.com) with adobe ID and make sure that you are in your assigned Experience Cloud org and in the sandbox you've created.
-2. Click on the **Schemas** tab in the left rail followed by a click on **Create Schema**.
-3. On the resulting screen, name your schema by entering **Loyalty Schema** into the **Display name** field.  Give a proper description as well in the **Description** field.
+2. Click on the **[!UICONTROL Schemas]** tab in the left rail followed by a click on **[!UICONTROL Create Schema]**.
+3. On the resulting screen, name your schema by entering **[!UICONTROL Loyalty Schema]** into the **[!UICONTROL Display name]** field.  Give a proper description as well in the **[!UICONTROL Description]** field.
 
     >[!NOTE] All the schema columns are case sensitive. Please make sure you follow the naming suggestion exactly or you might face errors while ingesting data in next exercise.
 
-4. Click **Assign** from the **Composition** column and on the **Assign class** overlay, select the **XDM Individual Profile** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
+4. Click **[!UICONTROL Assign]** from the **[!UICONTROL Composition]** column and on the **[!UICONTROL Assign class]** overlay, select the **[!UICONTROL XDM Individual Profile]** option (the **[!UICONTROL Use Existing Class]** radio button at the top should already be selected) then click **[!UICONTROL Assign Class]**. 
 
 
 ### Add Mixins
@@ -338,14 +338,13 @@ Now it's time to add the mixins for this schema. We'll use the identity mixin cr
 Now is an example of how good XDM planning pays off as you can reuse the identity mixin created previously.
 
 
-
-1. Click on **Add** in the **Mixins** section and on the **Add mixin** overlay, ensure that the **Use Existing mixin** radio button is selected.
-2. At the top of the list of available mixins should be the identities mixin you created earlier. Notice how the owner is listed as customer. Select the **identities mixin** then click **Add mixin.**
+1. Click on **[!UICONTROL Add]** in the **[!UICONTROL Mixins]** section and on the **[!UICONTROL Add mixin]** overlay, ensure that the **[!UICONTROL Use Existing mixin]** radio button is selected.
+2. At the top of the list of available mixins should be the identities mixin you created earlier. Notice how the owner is listed as customer. Select the `identities` mixin then click **[!UICONTROL Add mixin.]**
 
    ![alt_text](assets/image020.png)
 
 
-3. Expand the **_wwfovlab### > identification** nodes and notice all of the identity fields are now present and the mixin is shown in the Composition panel:
+3. Expand the  `_wwfovlab### > identification` nodes and notice all of the identity fields are now present and the mixin is shown in the Composition panel:
 
    ![alt_text](assets/image021.png)
 
@@ -355,15 +354,15 @@ Now is an example of how good XDM planning pays off as you can reuse the identit
 
 Now it's time to add the other custom fields needed to meet Luma's needs.
 
-1. Click **Add** to add another mixin and on the **Add mixin** overly, select the **Create new mixin** radio button. 
-2. Name the mixin **Loyalty Mixin**, give it a proper description, then click **Add Mixin.**
-3. Once the new mixin is added, we need to add the custom fields. Select the new **Loyalty Mixin** in the mixins section and then click the **Add Field** button that is at the root **Loyalty Schema** level: 
+1. Click **[!UICONTROL Add]** to add another mixin and on the **[!UICONTROL Add mixin]** overly, select the **[!UICONTROL Create new mixin]** radio button. 
+2. Name the mixin `Loyalty Mixin`, give it a proper description, then click **[!UICONTROL Add Mixin.]**
+3. Once the new mixin is added, we need to add the custom fields. Select the new `Loyalty Mixin` in the mixins section and then click the **[!UICONTROL Add Field]** button that is at the root `Loyalty Schema` level: 
 
    ![alt_text](assets/image022.png)
 
     >[!NOTE] Just like before, you'll see the new field appear under the Experience Cloud Org tenant
 
-4. If not already done, select the **new field** node and the right pane give it a **Field name** of **lifeTimeValue** and a **Display name** of **Lifetime Value of Loyalty Points.** Also set the **Type** dropdown to **Long** then click **Apply**. Your new field should look like this in the schema:
+4. If not already done, select the **[!UICONTROL new field]** node and the right pane give it a **[!UICONTROL Field name]** of `lifeTimeValue` and a **[!UICONTROL Display name]** of `Lifetime Value of Loyalty Points`. Also set the **[!UICONTROL Type]** dropdown to **[!UICONTROL Long]** then click **[!UICONTROL Apply]**. Your new field should look like this in the schema:
 
    ![alt_text](assets/image023.png)
 
@@ -382,23 +381,23 @@ Now it's time to add the other custom fields needed to meet Luma's needs.
 
 
 
-6. The only field we're missing is the loyalty Id field. This will be an identity field for this schema. Thinking back on the best practice of grouping identity fields together, we want to add this to the identities node of the schema, but keep it attached to the Loyalty mixin so that we aren't adding it to the identification mixin. To do that, ensure that the **Loyalty Mixin** is still selected in the **Composition** pane then click **Add Field** next to the **identification** object:
+6. The only field we're missing is the loyalty Id field. This will be an identity field for this schema. Thinking back on the best practice of grouping identity fields together, we want to add this to the identities node of the schema, but keep it attached to the Loyalty mixin so that we aren't adding it to the identification mixin. To do that, ensure that the `Loyalty Mixin` is still selected in the **[!UICONTROL Composition]** pane then click **[!UICONTROL Add Field]** next to the `identification` object:
 
    ![alt_text](assets/image025.png)
 
 
-7. Name the new field **loyaltyId** and give it a **Display name** of **Loyalty Id**. This is going to be an identity field, so the **Type** needs to be set as **String**. When finished, your new field should be grouped in with the other identities:
+7. Name the new field `loyaltyId` and give it a **[!UICONTROL Display name]** of `Loyalty Id`. This is going to be an identity field, so the **[!UICONTROL Type]** needs to be set as **[!UICONTROL String]**. When finished, your new field should be grouped in with the other identities:
 
    ![alt_text](assets/image026.png)
 
 
-8. Click **Save** to save your entire Loyalty Schema and the finished product should look like this:
+8. Click **[!UICONTROL Save]** to save your entire Loyalty Schema and the finished product should look like this:
 
    ![alt_text](assets/image027.png)
 
-    >[!NOTE] Like the other schema created, you can also use the **Copy JSON** button to retrieve the JSON structure for this new schema if needed.
+    >[!NOTE] Like the other schema created, you can also use the **[!UICONTROL Copy JSON]** button to retrieve the JSON structure for this new schema if needed.
 
-9. Click on **Schemas** in the left pane to return to the schema homepage and you should now see that you have 2 schemas (the **Browse** tab may already be selected. If not, click on it):
+9. Click on **[!UICONTROL Schemas]** in the left pane to return to the schema homepage and you should now see that you have 2 schemas (the **[!UICONTROL Browse]** tab may already be selected. If not, click on it):
 
    ![alt_text](assets/image028.png)
 
@@ -451,9 +450,9 @@ With that background in mind, let's create this new time-series offline purchase
 
 
 1. If necessary, log into [https://platform.adobe.com](https://platform.adobe.com) with your adobe ID and make sure that you are in your assigned Experience Cloud org and in the sandbox you've created.
-2. Click on the **Schemas** tab in the left rail and being the process of creating a new schema
-3. Name your schema **Offline Purchase Schema** and give it a proper description
-4. Click **Assign** to give this schema a class. On the **Assign class** overlay, select the **XDM ExperienceEvent** option (the **Use Existing Class** radio button at the top should already be selected) then click **Assign Class**. 
+2. Click on the **[!UICONTROL Schemas]** tab in the left rail and being the process of creating a new schema
+3. Name your schema `Offline Purchase Schema` and give it a proper description
+4. Click **[!UICONTROL Assign]** to give this schema a class. On the **[!UICONTROL Assign class]** overlay, select the **[!UICONTROL XDM ExperienceEvent]** option (the **[!UICONTROL Use Existing Class]** radio button at the top should already be selected) then click **[!UICONTROL Assign Class]**. 
 
    ![alt_text](assets/image029.png)
 
@@ -472,26 +471,26 @@ At this point you may be wondering why you're going to create a new identities m
 
 
 
-1. Click on **Add** in the **Mixins** section.
-2. On the **Add mixin** overly, select the **Create new mixin** radio button. Name the mixin **Event Identities**, give it a proper description, and click the **Add Mixin** button. 
-3. Click on the newly created **Event Identities** mixin in the **Composition** panel then click the only **Add field** button available to you. Like before, you'll see a new tenant node appear:
+1. Click on **[!UICONTROL Add]** in the **[!UICONTROL Mixins]** section.
+2. On the **[!UICONTROL Add mixin]** overly, select the **[!UICONTROL Create new mixin]** radio button. Name the mixin `Event Identities`, give it a proper description, and click the **[!UICONTROL Add Mixin]** button. 
+3. Click on the newly created `Event Identities` mixin in the **[!UICONTROL Composition]** panel then click the only **[!UICONTROL Add field]** button available to you. Like before, you'll see a new tenant node appear:
 
    ![alt_text](assets/image030.png)
  
 
-4. If not already done, select the **new field** node and in the right pane, name the field and display name **identification.** Then set the **Type** dropdown to **Object.**
-5. Click **Apply** and you'll see your schema update with the new name and the field is now turned into an object with the Add Field button now visible:
+4. If not already done, select the **[!UICONTROL new field]** node and in the right pane, name the field and display name `identification`. Then set the **[!UICONTROL Type]** dropdown to **[!UICONTROL Object.]**
+5. Click **[!UICONTROL Apply]** and you'll see your schema update with the new name and the field is now turned into an object with the Add Field button now visible:
 
    ![alt_text](assets/image031.png)
 
 
-6. Start adding the specific identity fields we want by clicking **Add Field** next to the **identification** object.
-7. Like before, a new field node will appear with the properties in the right panel. Name the field **loyaltyId** with a display name of **Loyalty Id.** Set the type to **String** (again, because this is going to be an identity field).
+6. Start adding the specific identity fields we want by clicking **[!UICONTROL Add Field]** next to the `identification` object.
+7. Like before, a new field node will appear with the properties in the right panel. Name the field `loyaltyId` with a display name of `Loyalty Id`. Set the type to **[!UICONTROL String]** (again, because this is going to be an identity field).
 
    ![alt_text](assets/image032.png)
 
 
-8. Leave all the other fields as their defaults then scroll down to the bottom and click **Apply**. You should then see your new identity field:
+8. Leave all the other fields as their defaults then scroll down to the bottom and click **[!UICONTROL Apply]**. You should then see your new identity field:
 
    ![alt_text](assets/image033.png)
 
@@ -504,16 +503,16 @@ In this subsection, you're going to create a new mixin and add a field to it tha
 
 
 
-1. Click **Add** to add another mixin
-2. On the **Add mixin** overly, select the **Create new mixin** radio button, name the mixin **Offline Purchase Mixin**, give it a proper description, and click **Add mixin**.
-3. Select the newly created **Offline Purchase Mixin** and click the top-most **Add field** button:
+1. Click **[!UICONTROL Add]** to add another mixin
+2. On the **[!UICONTROL Add mixin]** overly, select the **[!UICONTROL Create new mixin]** radio button, name the mixin `Offline Purchase Mixin`, give it a proper description, and click **[!UICONTROL Add mixin]**.
+3. Select the newly created `Offline Purchase Mixin` and click the top-most **[!UICONTROL Add field]** button:
 
    ![alt_text](assets/image034.png)
  
 
 
 
-4. If not already done, select the **new field** node and the right pane name the field **purchaseEvent** with a **Display name** of **Purchase Event**. Set the type dropdown to **Product list item:**
+4. If not already done, select the **[!UICONTROL new field]** node and the right pane name the field `purchaseEvent` with a **[!UICONTROL Display name]** of `Purchase Event`. Set the type dropdown to **[!UICONTROL Product list item:]**
 
    ![alt_text](assets/image035.png)
 
@@ -521,17 +520,17 @@ In this subsection, you're going to create a new mixin and add a field to it tha
 
     >[!NOTE] The Product list item type tells the schema to automatically add a series of product-related fields to this node. This also indicates to Platform that it should expect this data to be product data.  
 
-5. Since a single purchase event can have multiple products in it, you also need to check the **Array** box:
+5. Since a single purchase event can have multiple products in it, you also need to check the **[!UICONTROL Array]** box:
 
    ![alt_text](assets/image036.png)
 
 
-6. Click **Apply**. You'll see your schema update with the new name and the field and several more product-related nodes:
+6. Click **[!UICONTROL Apply]**. You'll see your schema update with the new name and the field and several more product-related nodes:
 
    ![alt_text](assets/image037.png)
 
 
-7. We need to add two more fields to this mixin. Using the what you've learned earlier in this document, add these two fields to the **Offline Purchase Mixin** mixin: 
+7. We need to add two more fields to this mixin. Using the what you've learned earlier in this document, add these two fields to the **[!UICONTROL Offline Purchase Mixin]** mixin: 
 
     <table>
     <tr>
@@ -561,15 +560,15 @@ In this subsection, you're going to create a new mixin and add a field to it tha
     </tr>
     </table>
 
-    When finished, your full **Offline Purchase Mixin** should look like this:
+    When finished, your full `Offline Purchase Mixin` should look like this:
  
        ![alt_text](assets/image038.png)
 
 
 
 
-8. Click **Save** in the upper right corner. 
-9. Click on **Schemas** in the left pane to return to the schema homepage. You should now see that you have 3 schemas (the **Browse** tab may already be selected. If not, click on it):
+8. Click **[!UICONTROL Save]** in the upper right corner. 
+9. Click on **[!UICONTROL Schemas]** in the left pane to return to the schema homepage. You should now see that you have 3 schemas (the **[!UICONTROL Browse]** tab may already be selected. If not, click on it):
 
    ![alt_text](assets/image039.png)
 
@@ -584,17 +583,17 @@ Like the CRM Schema, there'll be some standard mixins to use as well as a custom
 
 
 
-1. Create a new schema called **Luma Website**. Add a description.
-2. Since this is going to be live, behavioral data collected in real time, assign the schema the **XDM ExperienceEvent** class (time-series data) 
-3. Once the class is assigned, add the **AEP Web SDK ExperienceEvent Mixin** mixin. At this point, your schema should look like this:
+1. Create a new schema called `Luma Website`. Add a description.
+2. Since this is going to be live, behavioral data collected in real time, assign the schema the **[!UICONTROL XDM ExperienceEvent]** class (time-series data) 
+3. Once the class is assigned, add the **[!UICONTROL AEP Web SDK ExperienceEvent Mixin]** mixin. At this point, your schema should look like this:
 
    ![alt_text](assets/image040.png)
 
 
-4. The nodes that you see in this mixin describe a lot of the same default things that current JavaScript libraries (like at.js, AppMeasurement, or DIL) do. You'll see these things categorically grouped by the nodes above. Take a moment to explore the **device, environment, place context, and web** nodes to see what they contain. 
-5. While the AEP SDK captures a lot of valuable information, it's not very vertical specific. Since Luma is retailer and has a shopping cart, we will need to add XDM schema to account for that. To do that, add the **ExperienceEvent commerce details** mixin. 
+4. The nodes that you see in this mixin describe a lot of the same default things that current JavaScript libraries (like at.js, AppMeasurement, or DIL) do. You'll see these things categorically grouped by the nodes above. Take a moment to explore the **[!UICONTROL device]**, **[!UICONTROL environment]**, **[!UICONTROL place]** **[!UICONTROL context]**, and **[!UICONTROL web]** nodes to see what they contain. 
+5. While the AEP SDK captures a lot of valuable information, it's not very vertical specific. Since Luma is retailer and has a shopping cart, we will need to add XDM schema to account for that. To do that, add the **[!UICONTROL ExperienceEvent commerce details]** mixin. 
 
-    >[!NOTE] Once the ExperienceEvent commerce details mixin is added, you'll see the new **commerce** and **productListItems** nodes. Does anything about the **productListItems** node seem familiar? It should, because in the Offline Purchase Schema, you created a custom mixin and set one of the fields in that mixin to be of the productListItems type. This is yet another example of how the same datatype can be utilized across different mixins in different schemas.
+    >[!NOTE] Once the ExperienceEvent commerce details mixin is added, you'll see the new **[!UICONTROL commerce]** and **[!UICONTROL productListItems]** nodes. Does anything about the **[!UICONTROL productListItems]** node seem familiar? It should, because in the Offline Purchase Schema, you created a custom mixin and set one of the fields in that mixin to be of the productListItems type. This is yet another example of how the same datatype can be utilized across different mixins in different schemas.
 
 6. At this point, your schema should look like this:
 
