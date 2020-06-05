@@ -116,9 +116,10 @@ To give yourself access to your newly created sandbox, please perform the follow
 10. With your user added to your newly created profile, return to the Experience Platform interface. If you are still logged in from previous steps, log out of all tabs (including Admin Console) and then log back into Experience Platform so that your new profile settings can take effect. 
 11. As always, ensure you are in the proper organization in the upper right corner. 
 12. Click on the Sandbox selection dropdown. You should be able to see the sandbox you just created:
-![alt_text](assets/image020.png)
-If you haven’t’ already done so, select your new sandbox.
-   >[!NOTE] Even after your sandbox has been created, it can take a few additional minutes for the new permissions to take effect and your sandbox environment to appear in the dropdown. If you're not seeing the sandbox in the dropdown, now would be a great time to take a small break and try again in a few minutes.
+   ![alt_text](assets/image020.png)
+   If you haven’t’ already done so, select your new sandbox.
+
+    >[!NOTE] Even after your sandbox has been created, it can take a few additional minutes for the new permissions to take effect and your sandbox environment to appear in the dropdown. If you're not seeing the sandbox in the dropdown, now would be a great time to take a small break and try again in a few minutes.
 
 13. The resulting page should look very similar to the production sandbox. Take a moment to notice how all of the items in the left rail correspond to both the services you enabled when you created in the profile AND the profile configurations that you added:
 ![alt_text](assets/image021.png)
