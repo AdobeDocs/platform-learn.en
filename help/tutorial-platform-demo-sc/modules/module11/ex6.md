@@ -1,13 +1,13 @@
 ---
-title: Module 11, Exercise
-description: 
+title: Real-time CDP - Build a segment and take action - Send your segment to Adobe Target
+description: Real-time CDP - Build a segment and take action - Send your segment to Adobe Target
 kt: 5342
-audience: 
+audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 11.6 - Take Action: send your segment to Adobe Target
+# 11.6 Take Action: send your segment to Adobe Target
 
 Adobe Experience Platform also has the ability to share Audiences directly with the Adobe Experience Cloud Core Service **People - Audience Library**.
 
@@ -48,9 +48,9 @@ Select **Experience Targeting**.
 ![RTCDP](./images/exclatcrxt.png)
 
 >[!IMPORTANT]
-> Due to the nature of the SYTYCD website, which always redirects every visit to the Admin-page, it's important to already have the SYTYCD website open and your brand already selected in another tab in the same browser-window as the one where you're going to define your Adobe Target Activity. If you don't have the Brand already selected in another tab in the same browser window, you won't be able to continue with the next step.
+> Due to the nature of the AEP Demo - website, which always redirects every visit to the Admin-page, it's important to already have the AEP Demo - website open and your brand already selected in another tab in the same browser-window as the one where you're going to define your Adobe Target Activity. If you don't have the Brand already selected in another tab in the same browser window, you won't be able to continue with the next step.
 >
->[!IMPORTANT] Fill out the details, like the **Activity URL**. **TIP** Adobe Target doesn't like localhost connections, so for this use-case, please use [https://platformdemo.net](https://platformdemo.net) -related web pages as Activity URL
+>[!IMPORTANT] Fill out the details, like the **Activity URL**. **TIP** Adobe Target doesn't like localhost connections, so for this use-case, please use a publicly available website as Activity URL.
 
 ![RTCDP](./images/exclatcrxtdtl.png)
 
@@ -58,7 +58,7 @@ Click **Next**.
 
 ![RTCDP](./images/exclatcrxtdtlnext.png)
 
-You're now in the Visual Experience Composer, and should see the SYTYCD-website with the Brand that you already selected.
+You're now in the Visual Experience Composer, and should see the AEP Demo-website with the Brand that you already selected.
 
 ![RTCDP](./images/exclatvec.png)
 

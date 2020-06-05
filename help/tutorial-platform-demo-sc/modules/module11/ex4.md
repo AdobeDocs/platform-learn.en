@@ -1,8 +1,8 @@
 ---
-title: Module 11, Exercise
-description: 
+title: Real-time CDP - Build a segment and take action - Send your segment to Google AdWords RLSA using Adobe Audience Manager
+description: Real-time CDP - Build a segment and take action - Send your segment to Google AdWords RLSA using Adobe Audience Manager
 kt: 5342
-audience: 
+audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
@@ -257,7 +257,7 @@ In the list of available Audiences, you can see **AAM Traits** and **AAM Segment
 
 Those lists will dynamically populate with all AAM Traits and AAM Segments, so that they can be reused and enriched in Adobe Experience Platform.
 
-Next Step: [11.5 - Take Action: send your segment to an S3-destination](./ex5.md)
+Next Step: [11.5 Take Action: send your segment to an S3-destination](./ex5.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 

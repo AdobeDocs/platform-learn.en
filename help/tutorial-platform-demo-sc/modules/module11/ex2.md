@@ -1,17 +1,18 @@
 ---
-title: Module 11, Exercise
-description: 
+title: Real-time CDP - Build a segment and take action - Configure an Advertising Destination like Google DV360
+description: Real-time CDP - Build a segment and take action - Configure an Advertising Destination like Google DV360
 kt: 5342
-audience: 
+audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
 
-# 11.2 - Configure an Advertising Destination like Google DV360
+# 11.2 Configure an Advertising Destination like Google DV360
 
 >[!IMPORTANT] The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
 >
->[!IMPORTANT] Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+
+Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
@@ -110,7 +111,7 @@ Finally, on the **Review**-page, click **Finish**.
 
 In the next exercise, you'll connect the segment you built in the previous to the Google DV360 destination.
 
-Next Step: [11.3 - Take Action: send your segment to DV360](./ex3.md)
+Next Step: [11.3 Take Action: send your segment to DV360](./ex3.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 

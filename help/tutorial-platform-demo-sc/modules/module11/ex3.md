@@ -1,8 +1,8 @@
 ---
-title: Module 11, Exercise
-description: 
+title: Real-time CDP - Build a segment and take action - Send your segment to DV360
+description: Real-time CDP - Build a segment and take action - Send your segment to DV360
 kt: 5342
-audience: 
+audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: 
 ---
@@ -60,7 +60,7 @@ Your segment is now linked to Google DV360. Every time a customer qualifies for 
 
 ![RTCDP](./images/rtcdpnext3.png)
 
-Next Step: [11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
+Next Step: [11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
