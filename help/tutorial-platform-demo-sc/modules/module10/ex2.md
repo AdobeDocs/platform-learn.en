@@ -1,6 +1,6 @@
 ---
-title: Data Science Workspace - Churn Prediction Model - Churn Prediction: Data Preparation
-description: Data Science Workspace - Churn Prediction Model - Churn Prediction: Data Preparation
+title: Data Science Workspace - Churn Prediction Model - Churn Prediction Data Preparation
+description: Data Science Workspace - Churn Prediction Model - Churn Prediction Data Preparation
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial

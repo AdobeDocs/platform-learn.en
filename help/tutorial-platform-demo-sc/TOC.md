@@ -65,8 +65,7 @@ audience: all
   + [9.5 Configure GTM Tags & Triggers](/help/tutorial-platform-demo-sc/modules/module9/ex5.md)
   + [9.6 Publish your GTM Property](/help/tutorial-platform-demo-sc/modules/module9/ex6.md)
   + [9.7 Implement GTM Tag on AEP Demo website](/help/tutorial-platform-demo-sc/modules/module9/ex7.md)
-  + [9.8 Activate GTM-tag in AEP Demo website](/help/tutorial-platform-demo-sc/modules/module9/ex8.md)
-  + [9.9 Verify Data Ingestion from website into Platform](/help/tutorial-platform-demo-sc/modules/module9/ex9.md)
+  + [9.8 Verify Data Ingestion from website into Platform](/help/tutorial-platform-demo-sc/modules/module9/ex8.md)
 + 10 - Data Science Workspace - Churn Prediction Model {#module10}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module10/data-science-workspace-churn-prediction-model.md)
   + [10.1 Introduction to Data Science](/help/tutorial-platform-demo-sc/modules/module10/ex1.md)
