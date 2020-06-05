@@ -561,8 +561,6 @@ FYI - You can share this project with colleagues to collaborate or to analyze bu
 
 Congratulations, you've now finished Module 16!
 
----
-
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
 [Go Back to All Modules](./../../overview.md)
