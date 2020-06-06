@@ -15,19 +15,13 @@ This tutorial is very diverse and offers clear insights in the following applica
 
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. This means that in several of these lessons, there's a lot of focus on how non-Adobe applications integrate with Adobe Experience Platform. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
+- Amazon: AWS Lambda, AWS S3, AWS Kinesis, AWS SQS, Alexa
+- Google: Google Tag Manager, Google Analytics, Google Cloud Platform, Google BigQuery
+- Microsoft: Azure EventHub, Azure Blob Storage, Dynamics 365, ...
+- Apache Kafka
 - Postman
 - Informatica
-- AWS Lambda
-- AWS S3
-- AWS Kinesis
-- Amazon Alexa
-- Google Tag Manager
-- Google Analytics
-- Google Cloud Platform
-- Google BigQuery
-- Twilio
-- Apache Kafka
-- Microsoft Azure EventHub
+- Stackchat
 - ...
 
 After completing this tutorial, you will be able to:
@@ -58,9 +52,15 @@ After completing this tutorial, you will be able to:
 
 ## About this tutorial
 
-In these lessons, you will implement Adobe Experience Platform and Application Services into a fake AEP Demo website which supports multiple demo industries. The AEP Demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma Retail**, **Luma News**, **Luma Insurance**, **Luma Car** and several others. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger. This will then generate data that is sent into your own Adobe Experience Platform instance.
+In these lessons, you will implement Adobe Experience Platform and Application Services into an AEP Demo website which supports multiple demo industries. The AEP Demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma Retail**, **Luma News**, **Luma Insurance**, **Luma Car** and several others. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted AEP Demo website using the Experience Cloud Debugger. This will then generate data that is sent into your own Adobe Experience Platform instance.
 
 ![Luma Retail](./assets/images/lumaretail.png)
+
+## Architecture
+
+Before you start with the hands-on exercises, have a look at the Architecture behind this tutorial. As you can see in the above Overview, this tutorial will go deep on a number of features and functionalities of Adobe Experience Platform, but will also discuss multiple integrations across a variety of Sources and Destinations. In order for you to properly understand the architecture behind this tutorial and the overall positioning of Adobe Experience Platform into your Enterprise ecosystem, start by reviewing the architecture video and diagram.
+
+Go to [Architecture](./architecture.md).
 
 ## Content
 

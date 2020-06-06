@@ -6,7 +6,8 @@ audience: all
 
 # Comprehensive Technical Tutorial for Adobe Experience Platform {#sc-demo-tutorial}
 
-+ [Overview](/help/tutorial-platform-demo-sc/overview.md)
++ [Tutorial Overview](/help/tutorial-platform-demo-sc/overview.md)
++ [Architecture Overview](/help/tutorial-platform-demo-sc/architecture.md)
 + 1 - Launch and the WebSDK extension {#module1}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module1/data-ingestion-launch-websdk.md)
 + 2 - Data Ingestion {#module2}

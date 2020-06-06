@@ -36,35 +36,25 @@ In this foundational exercise, the goal is to learn all about data ingestion. Yo
 
 ## Exercises
 
-### 2.1 Explore the website
+[2.1 Explore the website](./ex1.md)
 
 In this exercise, you'll explore the website that you'll use as part of this enablement.
 
-Go to [2.1 Explore the website](./ex1.md)
-
-### 2.2 Configure Schema's and Set Identifiers
+[2.2 Configure Schema's and Set Identifiers](./ex2.md)
 
 In this exercise, you'll configure the required XDM schema's to capture profile information and customer behavior. In every XDM schema, you'll also have to configure a primary identifier to link all the information to.
 
-Go to [2.2 Configure Schema's and Set Identifiers](./ex2.md)
-
-### 2.3 Configure Datasets
+[2.3 Configure Datasets](./ex3.md)
 
 In this exercise, you'll retrieve the required datasets to capture and store profile information and customer behavior.
 
-Go to [2.3 Configure Datasets](./ex3.md)
-
-### 2.4 Use Launch and the Adobe Experience Platform Extension
+[2.4 Use Launch and the Adobe Experience Platform Extension](./ex4.md)
 
 In this exercise, you'll learn how to use the Adobe Experience Platform extension in Launch to stream data to Adobe Experience Platform.
 
-Go to [2.4 Use Launch and the Adobe Experience Platform Extension](./ex4.md)
-
-### 2.5 Data Ingestion from Offline Sources
+[2.5 Data Ingestion from Offline Sources](./ex5.md)
 
 In this exercise, you'll go on the website and mobile app and behave like a customer, streaming data to Platform.
-
-Go to [2.5 Data Ingestion from Offline Sources](./ex5.md)
 
 >[!NOTE]
 >

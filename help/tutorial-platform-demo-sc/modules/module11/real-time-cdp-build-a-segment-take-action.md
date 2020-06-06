@@ -34,41 +34,29 @@ In **Module 11**, you'll configure a segment, enable it for Streaming Segmentati
 
 ## Exercises
 
-### 11.1 Build a segment and enable Streaming Segmentation
+[11.1 Build a segment and enable Streaming Segmentation](./ex1.md)
 
 Learn how to build a segment and enable Streaming Segmentation.
 
-Go to [11.1 Build a segment and enable Streaming Segmentation](./ex1.md)
-
-### 11.2 Review how to configure DV360 Destination using Destinations
+[11.2 Review how to configure DV360 Destination using Destinations](./ex2.md)
 
 Learn how to configure an Advertising Destination using the Self-Service UI in Adobe Experience Platform.
 
-Go to [11.2 Review how to configure DV360 Destination using Destinations](./ex2.md)
-
-### 11.3 Take Action: send your segment to DV360
+[11.3 Take Action: send your segment to DV360](./ex3.md)
 
 In this exercise, you'll connect the segment you built in 1 to the destination DV360.
 
-Go to [11.3 Take Action: send your segment to DV360](./ex3.md)
-
-### 11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
+[11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
 
 In this exercise, you'll connect the segment you built in 1 to the destination Google Remarketing List for Search Advertising by making use of Adobe Audience Manager.
 
-Go to [11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
-
-### 11.5 Take Action: send your segment to an S3-destination
+[11.5 Take Action: send your segment to an S3-destination](./ex5.md)
 
 In this exercise, you'll use the segment you built in 1 and send it to an S3-destination, typically used for Email Marketing-destinations.
 
-Go to [11.5 Take Action: send your segment to an S3-destination](./ex5.md)
-
-### 11.6 Take Action: send your segment to Adobe Target
+[11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 
 In this exercise, you'll use the segment you built in 1 to configure an Experience Targeting Activity in Adobe Target.
-
-Go to [11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 
 >[!NOTE]
 >

@@ -40,41 +40,29 @@ In this exercise, we'll do a deep dive into the Real-time Customer Profile and I
 
 ## Exercises
 
-### 3.1 Visit the website
+[3.1 Visit the website](./ex1.md)
 
 In this exercise, you'll follow a script and walk through the website.
 
-Go to [3.1 Visit the website](./ex1.md)
-
-### 3.2 Visualize your own real-time customer profile - UI
+[3.2 Visualize your own real-time customer profile - UI](./ex2.md)
 
 In this exercise, you'll login to Adobe Experience Platform and you'll view your own Real-time Customer Profile in the UI.
 
-Go to [3.2 Visualize your own real-time customer profile - UI](./ex2.md)
-
-### 3.3 Visualize your own real-time customer profile - API
+[3.3 Visualize your own real-time customer profile - API](./ex3.md)
 
 In this exercise, you'll use Postman and Adobe I/O to view your own real-time customer profile, by making use of Adobe Experience Platform's API's.
 
-Go to [3.3 Visualize your own real-time customer profile - API](./ex3.md)
-
-### 3.4 Create a segment - UI
+[3.4 Create a segment - UI](./ex4.md)
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
 
-Go to [3.4 Create a segment - UI](./ex4.md)
-
-### 3.5 Create a segment - API
+[3.5 Create a segment - API](./ex5.md)
 
 In this exercise, you'll use Postman and Adobe I/O to create a segment and store the results of that segment as a dataset, by making use of Adobe Experience Platform's API's.
 
-Go to [3.5 Create a segment - API](./ex5.md)
-
-### 3.6 See your Real-time Customer Profile in action in the Call Center
+[3.6 See your Real-time Customer Profile in action in the Call Center](./ex6.md)
 
 In this exercise, you'll impersonate a call center employee who receives a call from a customer. In order to really make an impact on this customer's experience, you'll need access to all available information in real-time.
-
-Go to [3.6 See your Real-time Customer Profile in action in the Call Center](./ex6.md)
 
 >[!NOTE]
 >
