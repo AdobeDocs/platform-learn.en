@@ -41,10 +41,10 @@ Working with Offers, you have to understand the following concepts:
 
  Term | Explanation
 ---------|----------
- **Offer** | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer does have a status: draft, approved or archived.
- **Container** | Everything you work with in the Offers Decisioning Engine, happens in the context of a container. In our module, we will work in the **Decisioning** container.
- **Placement** | Is the combination of location (or channel) and context (or component type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image Link for Email, Mobile, Web, Social, Instant Messaging, and Non Digital.
- **Decision Rule** | The logic that defines and controls the eligibility of end-users for an offer.
+**Offer** | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer does have a status: draft, approved or archived.
+**Container** | Everything you work with in the Offers Decisioning Engine, happens in the context of a container. In our module, we will work in the **Decisioning** container.
+**Placement** | Is the combination of location (or channel) and context (or component type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image Link for Email, Mobile, Web, Social, Instant Messaging, and Non Digital.
+**Decision Rule** | The logic that defines and controls the eligibility of end-users for an offer.
 **Personalized Offer** | A customizable marketing message based on eligibility rules and constraints.
 **Fallback Offer** | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.
 **Capping** | Used in an offer definition to define how many times an offer can be presented in total and to a specific user.

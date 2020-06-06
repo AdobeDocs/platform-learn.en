@@ -43,29 +43,21 @@ Luma Retail also has a partnership with Survey corp which has agreed to share th
 
 ## Exercises
 
-### 5.1 Setup an AWS S3 bucket
+[5.1 Setup an AWS S3 bucket](./ex1.md)
 
 In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS environment and how to upload data in that S3 bucket.
 
-Go to [5.1 Setup an AWS S3 bucket](./ex1.md)
-
-### 5.2 Connect Informatica to your AWS S3 bucket
+[5.2 Connect Informatica to your AWS S3 bucket](./ex2.md)
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.
 
-Go to [5.2 Connect Informatica to your AWS S3 bucket](./ex2.md)
-
-### 5.3 Ingest Offline Order Events into Adobe Experience Platform
+[5.3 Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
 
 In this exercise, you'll learn how to import order data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
-Go to [5.3 Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
-
-### 5.4 Ingest 2nd and 3rd party data into Adobe Experience Platform
+[5.4 Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
 
 In this exercise, you'll learn how to import 2nd and 3rd party data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
-
-Go to [5.4 Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
 
 >[!NOTE]
 >

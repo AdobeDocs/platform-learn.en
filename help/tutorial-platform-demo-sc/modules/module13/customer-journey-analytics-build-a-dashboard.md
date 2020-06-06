@@ -38,35 +38,25 @@ More info on Customer Journey Analytics can be found [here](https://spark.adobe.
 
 ## Exercises
 
-### 13.1 Customer Journey Analytics 101
+[13.1 Customer Journey Analytics 101](./ex1.md)
 
 In this exercise, you'll learn all about the Customer Journey Analytics concepts.
 
-Go to [13.1 Customer Journey Analytics 101](./ex1.md)
-
-### 13.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
+[13.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](./ex2.md)
 
 In this exercise, you'll learn how to consume multiple datasets from Adobe Experience Platform into Customer Journey Analytics.
 
-Go to [13.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](./ex2.md)
-
-### 13.3 Create a Data View
+[13.3 Create a Data View](./ex3.md)
 
 In this exercise, you'll learn how to configure a data view in Customer Journey Analytics.
 
-Go to [13.3 Create a Data View](./ex3.md)
-
-### 13.4 Data Preparation in Customer Journey Analytics
+[13.4 Data Preparation in Customer Journey Analytics](./ex4.md)
 
 In this exercise, you'll learn how to do some data preparation before continuing with analysis.
 
-Go to [13.4 Data Preparation in Customer Journey Analytics](./ex4.md)
-
-### 13.5 Visualization using Customer Journey Analytics
+[13.5 Visualization using Customer Journey Analytics](./ex5.md)
 
 In this exercise, you'll learn how to visualize Adobe Experience Platform data using Customer Journey Analytics.
-
-Go to [13.5 Visualization using Customer Journey Analytics](./ex5.md)
 
 >[!NOTE]
 >

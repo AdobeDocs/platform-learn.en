@@ -31,29 +31,21 @@ In **Module 6**, we will take you through the steps to use Journey Orchestration
 
 ## Exercises
 
-### 6.1 Journey Orchestration: Setup Event
+[6.1 Journey Orchestration: Setup Event](./ex1.md)
 
 This will guide you through the configuration of an Event.
 
-Go to [6.1 Journey Orchestration: Setup Event](./ex1.md)
-
-### 6.2 Journey Orchestration: Setup Journey
+[6.2 Journey Orchestration: Setup Journey](./ex2.md)
 
 This will guide you through the configuration of an Journey and how to link your Event to that Journey.
 
-Go to [6.2 Journey Orchestration: Setup Journey](./ex2.md)
-
-### 6.3 Configure Launch to trigger your Event
+[6.3 Configure Launch to trigger your Event](./ex3.md)
 
 This will guide you through the configuration of Launch to trigger your Event and provide the right payload and finally, you'll be able to send yourself an email.
 
-Go to [6.3 Configure Launch to trigger your Event](./ex3.md)
-
-### 6.4 How to create your own email in Adobe Campaign Standard
+[6.4 How to create your own email in Adobe Campaign Standard](./ex4.md)
 
 In this optional exercise, you'll learn how to create your own message and event structure in Adobe Campaign Standard to use in combination with the events coming from Adobe Experience Platform.
-
-Go to [6.4 How to create your own email in Adobe Campaign Standard](./ex4.md)
 
 >[!NOTE]
 >

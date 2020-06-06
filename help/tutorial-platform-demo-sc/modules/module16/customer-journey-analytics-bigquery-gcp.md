@@ -39,35 +39,25 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 
 ## Exercises
 
-### 16.1 Create your Google Cloud Platform Account
+[16.1 Create your Google Cloud Platform Account](./ex1.md)
 
 In this exercise, you'll create your Google Cloud Platform account.
 
-Go to [16.1 Create your Google Cloud Platform Account](./ex1.md)
-
-### 16.2 Create your first query in BigQuery
+[16.2 Create your first query in BigQuery](./ex2.md)
 
 In this exercise, you'll learn how to use BigQuery to prepare the data for loading into AEP.
 
-Go to [16.2 Create your first query in BigQuery](./ex2.md)
-
-### 16.3 Connect GCP & BigQuery to Adobe Experience Platform
+[16.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 
 In this exercise, you'll learn how to setup the Source Connector in Adobe Experience Platform.
 
-Go to [16.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
-
-### 16.4 Load data from BigQuery into Adobe Experience Platform
+[16.4 Load data from BigQuery into Adobe Experience Platform](./ex4.md)
 
 In this exercise, you'll learn how to configure the BigQuery Source Connector in Adobe Experience Platform to ingest your Google Analytics Data.
 
-Go to [16.4 Load data from BigQuery into Adobe Experience Platform](./ex4.md)
-
-### 16.5 Analyze Google Analytics Data using Customer Journey Analytics
+[16.5 Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
 
 In this exercise, you'll learn how to analyze Google Analytics data in Customer Journey Analytics and combine it with Loyalty data.
-
-Go to [16.5 Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
 
 >[!NOTE]
 >

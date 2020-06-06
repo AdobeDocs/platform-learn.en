@@ -34,29 +34,21 @@ In **Module 8** you'll learn how to create a simple Machine Learning model that 
 
 ## Exercises
 
-### 8.1 Data Exploration and Transformation
+[8.1 Data Exploration and Transformation](./ex1.md)
 
 To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you'll explore purchase data flowing via Launch and WebSDK to Adobe Experience Platform and transform that data into a feature dataset that will be used to train your machine learning model.
 
-Go to [8.1 Data Exploration and Transformation](./ex1.md)
-
-### 8.2 Model Authoring and Operationalization
+[8.2 Model Authoring and Operationalization](./ex2.md)
 
 In 1 you created the training data required to power your Machine Learning model. In this lesson you'll learn how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
-Go to [8.2 Model Authoring and Operationalization](./ex2.md)
-
-### 8.3 Model Training and Experimentation
+[8.3 Model Training and Experimentation](./ex3.md)
 
 So you’ve prepared your data, authored your model and packaged it to test it at scale as a recipe. Now let’s go ahead and train and test the model at scale.
 
-Go to [8.3 Model Training and Experimentation](./ex3.md)
-
-### 8.4 Scoring and Consumption of Insights
+[8.4 Scoring and Consumption of Insights](./ex4.md)
 
 Now that you've experimented with your recommendations model and have determined the optimal run, you can move on to scoring the model to generate product recommendations for customers.
-
-Go to [8.4 Scoring and Consumption of Insights](./ex4.md)
 
 >[!NOTE]
 >

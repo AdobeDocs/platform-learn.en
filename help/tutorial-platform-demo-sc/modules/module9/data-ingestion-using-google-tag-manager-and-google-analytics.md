@@ -39,59 +39,41 @@ This is to show that brands with an existing Google Analytics and Google Tag Man
 
 ## Exercises
 
-### 9.0 Create a Google Account
+[9.0 Create a Google Account](./ex0.md)
 
 In this exercise, you'll set up a Google User Account. If you already have a Google User Account, you can skip this step.
 
-Go to [9.0 Create a Google Account](./ex0.md)
-
-### 9.1 Create a Google Tag Manager Property
+[9.1 Create a Google Tag Manager Property](./ex1.md)
 
 In this exercise, you'll set up a Google Tag Manager property. You will use this on the AEP Demo website to manage the Google Analytics code and to send data to platform.
 
-Go to [9.1 Create a Google Tag Manager Property](./ex1.md)
-
-### 9.2 Setup Google Analytics & link it to GTM
+[9.2 Setup Google Analytics & link it to GTM](./ex2.md)
 
 In this exercise, you'll set up a Google Analytics property which will be used on your AEP Demo website.
 
-Go to [9.2 Setup Google Analytics & link it to GTM](./ex2.md)
-
-### 9.3 Configure GTM Variables
+[9.3 Configure GTM Variables](./ex3.md)
 
 In this exercise, you'll be configuring Data Elements so you can send data to Google Analytics and to Adobe Experience Platform.
 
-Go to [9.3 Configure GTM Variables](./ex3.md)
-
-### 9.4 Retrieve Data Sets in Platform
+[9.4 Retrieve Data Sets in Platform](./ex4.md)
 
 In this exercise, you'll retrieve data sets in Adobe Experience Platform.
 
-Go to [9.4 Retrieve Data Sets in Platform](./ex4.md)
-
-### 9.5 Configure GTM Tags & Triggers
+[9.5 Configure GTM Tags & Triggers](./ex5.md)
 
 After the configuration of variables in your Google Tag Manager property and retrieving the configuration of your datasets in the Adobe Experience Platform UI, you're now ready to configure your Google Tag Manager Tags to send real data into Adobe Experience Platform.
 
-Go to [9.5 Configure GTM Tags & Triggers](./ex5.md)
-
-### 9.6 Publish your GTM Property
+[9.6 Publish your GTM Property](./ex6.md)
 
 With all GTM configuration done now, let's publish your Google Tag Manager property.
 
-Go to [9.6 Publish your GTM Property](./ex6.md)
-
-### 9.7 Implement GTM Tag on your AEP Demo website
+[9.7 Implement GTM Tag on your AEP Demo website](./ex7.md)
 
 After publishing your Google Tag Manager property, you can now implement it on your AEP Demo website.
 
-Go to [9.7 Implement GTM Tag on your AEP Demo website](./ex7.md)
-
-### 9.8 Verify Data Ingestion from website into Platform
+[9.8 Verify Data Ingestion from website into Platform](./ex8.md)
 
 With the implementation done now, you'll learn how you can verify your full implementation.
-
-Go to [9.8 Verify Data Ingestion from website into Platform](./ex8.md)
 
 >[!NOTE]
 >

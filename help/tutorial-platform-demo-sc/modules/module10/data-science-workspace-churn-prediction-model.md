@@ -34,29 +34,21 @@ In **Module 10** you'll learn how to create a  Machine Learning model that predi
 
 ## Exercises
 
-### 10.1 Introduction to Data Science
+[10.1 - Introduction to Data Science](./ex1.md)
 
 Learn about basic concepts and terminology used in the data science world.
 
-Go to [10.1 - Introduction to Data Science](./ex1.md)
-
-### 10.2 Churn Prediction: Data Preparation
+[10.2 Churn Prediction: Data Preparation](./ex2.md)
 
 One of the first steps in any data science project is Data Preparation. A Data Scientist has to ensure data is correct before feeding it into a model.
 
-Go to [10.2 Churn Prediction: Data Preparation](./ex2.md)
-
-### 10.3 Feature Engineering and Model Building
+[10.3 Feature Engineering and Model Building](./ex3.md)
 
 In this exercise, a Data Scientist creates the Target variable and create some independent, explanatory variables to add as inputs to the model.
 
-Go to [10.3 Feature Engineering and Model Building](./ex3.md)
-
-### 10.4 Experimentation - Recipe Building
+[10.4 Experimentation - Recipe Building](./ex4.md)
 
 In this exercise, you'll convert the feature engineering and model that you have prepared in the above steps into a recipe.
-
-Go to [10.4 Experimentation - Recipe Building](./ex4.md)
 
 >[!NOTE]
 >
