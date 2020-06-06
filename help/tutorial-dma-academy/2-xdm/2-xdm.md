@@ -58,7 +58,7 @@ This exercise will introduce you to XDM data modeling structures and terminology
 
 Experience Platform uses schemas to describe the structure of data across systems in a consistent and reusable way. Before data can be ingested into Platform, a schema must be composed to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more mixins. As such, you could say:
 
-      **[!UICONTROL XDM Schema = Class + Mixin(s)]**
+   **XDM Schema = Class + Mixin(s)**
 
 
 ### Data Behavior Types and Classes
@@ -617,6 +617,6 @@ Like the CRM Schema, there'll be some standard mixins to use as well as a custom
 
 Praveen Sharma and David Woolsey, and the original GABA team
 
-**Exercise Contributors**:
+**Exercise Contributors:**
 
 Shruti Jagtap and Danny Miller
