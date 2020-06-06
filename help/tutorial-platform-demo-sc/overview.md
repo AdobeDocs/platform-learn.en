@@ -64,112 +64,112 @@ Go to [Architecture](./architecture.md).
 
 ## Content
 
-1. [Foundation - Setup of Launch & WebSDK](./modules/module1/data-ingestion-launch-websdk.md)
+[1. Foundation - Setup of Launch & WebSDK](./modules/module1/data-ingestion-launch-websdk.md)
 
 - **Audience:** Data Engineer, Data Architect
 - **Prerequisites:** Access to Adobe Experience Platform and Adobe Experience Platform Launch
 - **Description:** In this foundational module the focus is on configuring Launch by making use of the new WebSDK extension and implementing Launch on the AEP Demo website.
 - **Time Investment:** 120 minutes
 
-1. [Foundation - Data Ingestion](./modules/module2/data-ingestion.md)
+[2. Foundation - Data Ingestion](./modules/module2/data-ingestion.md)
 
 - **Audience:** Data Engineer, Data Architect
 - **Prerequisites:** Access to Adobe Experience Platform and Adobe Experience Platform Launch
 - **Description:** In this foundational module the focus is on data ingestion by making use of the website
 - **Time Investment:** 120 minutes
 
-1. [Foundation - Real-time Customer Profile](./modules/module3/real-time-customer-profile.md)
+[3. Foundation - Real-time Customer Profile](./modules/module3/real-time-customer-profile.md)
 
 - **Audience:** Data Engineer, Data Architect, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform and Postman
 - **Description:** In this foundational module you'll be exploring the Real-time Customer Profile in Adobe Experience Platform by making use of the UI and API.
 - **Time Investment:** 90 minutes
 
-1. [Voice Assistant - Amazon Alexa](./modules/module4/data-ingestion-amazon-alexa.md)
+[4. Voice Assistant - Amazon Alexa](./modules/module4/data-ingestion-amazon-alexa.md)
 
 - **Audience:** Developer
 - **Prerequisites:** Access to Adobe Experience Platform, AWS Lambda and Amazon Alexa
 - **Description:** In this module you'll add an Amazon Alexa Skill to your live demo environment.
 - **Time Investment:** 60 minutes
 
-1. [Extract, Transform, Load data using a 3rd party ETL-tool](./modules/module5/data-ingestion-informatica-etl.md)
+[5. Extract, Transform, Load data using a 3rd party ETL-tool](./modules/module5/data-ingestion-informatica-etl.md)
 
 - **Audience:** Data Engineer, Data Architect
 - **Prerequisites:** Access to Adobe Experience Platform, Informatica ETL
 - **Description:** In this module you'll use an ETL-tool to extract, transform and load data in Adobe Experience Platform.
 - **Time Investment:** 60 minutes
 
-1. [Journey Orchestration](./modules/module6/journey-orchestration-create-account.md)
+[6. Journey Orchestration](./modules/module6/journey-orchestration-create-account.md)
 
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer
 - **Prerequisites:** Access to Adobe Experience Platform, Journey Orchestration and Adobe Campaign with Platform (on Azure)
 - **Description:** In this module you'll use Journey Orchestration to build out a trigger-based journey.
 - **Time Investment:** 60 minutes
 
-1. [Query Service](./modules/module7/query-service.md)
+[7. Query Service](./modules/module7/query-service.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst, BI Expert
 - **Prerequisites:** Access to Adobe Experience Platform, Query Service, Power BI or Tableau
 - **Description:** In this module you'll learn how to use Adobe Experience Platform Query Service.
 - **Time Investment:** 90 minutes
 
-1. [Data Science Workspace - Popularity Based Recommendations](./modules/module8/data-science-workspace-popularity-based-recommendations.md)
+[8. Data Science Workspace - Popularity Based Recommendations](./modules/module8/data-science-workspace-popularity-based-recommendations.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Scientist
 - **Prerequisites:** Access to Adobe Experience Platform and Data Science Workspace
 - **Description:** In this module you'll learn how to use Adobe Experience Platform Data Science Workspace to build a Popularity Based Recommendations Recipe.
 - **Time Investment:** 90 minutes
 
-1. [Data Ingestion using Google Tag Manager and Google Analytics](./modules/module9/data-ingestion-using-google-tag-manager-and-google-analytics.md)
+[9. Data Ingestion using Google Tag Manager and Google Analytics](./modules/module9/data-ingestion-using-google-tag-manager-and-google-analytics.md)
 
 - **Audience:** Data Engineer, Data Architect
 - **Prerequisites:** Access to Adobe Experience Platform, Google Tag Manager and Google Analytics
 - **Description:** In this module you'll learn how to use Google Tag Manager to ingest clickstream data in real-time into Adobe Experience Platform.
 - **Time Investment:** 90 minutes
 
-1. [Data Science Workspace - Churn Prediction Model](./modules/module10/data-science-workspace-churn-prediction-model.md)
+[10. Data Science Workspace - Churn Prediction Model](./modules/module10/data-science-workspace-churn-prediction-model.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Scientist
 - **Prerequisites:** Access to Adobe Experience Platform, Data Science Workspace
 - **Description:** In this module you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Churn Prediction Model.
 - **Time Investment:** 60 minutes
 
-1. [RTCDP - Build a segment and take action](./modules/module11/real-time-cdp-build-a-segment-take-action.md)
+[11. RTCDP - Build a segment and take action](./modules/module11/real-time-cdp-build-a-segment-take-action.md)
 
 - **Audience:** Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform, Real-time CDP, Adobe Audience Manager, Adobe Target, AWS S3
 - **Description:** In this module you'll configure a segment, enable it for Streaming Segmentation and activate the segment to several destinations, including Google DV360, Google AdWords, Adobe Audience Manager, Adobe Target and S3-destinations like Salesforce Marketing Cloud.
 - **Time Investment:** 90 minutes
 
-1. [Journey Orchestration - External Weather API, SMS Action & more](./modules/module12/journey-orchestration-external-weather-api-sms.md)
+[12. Journey Orchestration - External Weather API, SMS Action & more](./modules/module12/journey-orchestration-external-weather-api-sms.md)
 
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform, Journey Orchestration, Open Weather API, Twilio
 - **Description:** In this module you'll use Journey Orchestration to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way over various channels.
 - **Time Investment:** 90 minutes
 
-1. [Customer Journey Analytics (CJA) - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/module13/customer-journey-analytics-build-a-dashboard.md)
+[13. Customer Journey Analytics (CJA) - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/module13/customer-journey-analytics-build-a-dashboard.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform and Customer Journey Analytics
 - **Description:** In this module you'll get Online to Offline insights by configuring a dashboard containing omni-channel data like Website Interactions, Mobile App Interactions, Call Center Interactions, In-Store Interactions and much more.
 - **Time Investment:** 120 minutes
 
-1. [Offer Decisioning](./modules/module14/offer-decisioning.md)
+[14. Offer Decisioning](./modules/module14/offer-decisioning.md)
 
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform and Offer Decisioning
 - **Description:** **This module is not available yet.** In this module you'll get a hands-on preview of the Adobe Experience Platform - Offers/Decisioning Service.
 - **Time Investment:** 90 minutes
 
-1. [Data Science Workspace - Car Insurance Sales Propensity](./modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
+[15. Data Science Workspace - Car Insurance Sales Propensity](./modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Scientist
 - **Prerequisites:** Access to Adobe Experience Platform, Data Science Workspace, Anaconda
 - **Description:** In this module you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Car Insurance Sales Propensity Model, schedule the model to re-train, and prepare the model for Real-time Scoring.
 - **Time Investment:** 120 minutes
 
-1. [Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/module16/customer-journey-analytics-bigquery-gcp.md)
+[16. Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/module16/customer-journey-analytics-bigquery-gcp.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, Customer Journey Analytics, Google Cloud Platform, Google BigQuery
