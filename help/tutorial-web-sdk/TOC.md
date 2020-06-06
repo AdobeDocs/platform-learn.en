@@ -6,5 +6,4 @@ audience: all
 
 # Adobe Experience Platform Web SDK Tutorial {#web-sdk-tutorial}
 
-+ [Overview](overview.md)
 + [Instructions](instructions.md)
