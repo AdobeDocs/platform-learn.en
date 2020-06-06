@@ -19,30 +19,23 @@ In **Module 12** you'll use Journey Orchestration to listen to customer behavior
 - Learn how to consume weather information from the Open Weather API
 - Learn how to use custom action destinations like Twilio and Slack from Journey Orchestration
 
-## Resources
+## Prerequisites
 
 - Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
 - Access to Journey Orchestration
 - Access to the Open Weather API
 - Access to Twilio
+- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+
+>[!NOTE]
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
 ## Business Context
 
 As a brand, you've invested heavily in personalizing online experiences. Now, you want to be as contextual and relevant for offline experiences.
 In this module, you'll use a customer's presence in an offline store to then deliver a personalized experience inside the store by showcasing relevant content to that customer on our in-store screens and at the same time, we want to deliver a personalized Push or SMS Message to that same customer, all in real-time.
 As a brand, you also understand that context greatly impacts a customer's interest, so you want to bring in the current weather information of that customer's location, to decide what content or promotion to display.
-
->[!IMPORTANT]
->
->Your Adobe Experience Platform instance
->
->This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
->
->In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
->
->Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
->
->If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
 ## Exercises
 

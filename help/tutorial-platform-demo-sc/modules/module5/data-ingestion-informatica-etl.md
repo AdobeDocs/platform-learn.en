@@ -24,29 +24,22 @@ In **Module 5**, the following topics will be addressed:
 - Learn how to setup a connector from Informatica to your AWS S3 bucket
 - Learn how to build a mapper workflow to extract data, transform data and eventually, load that data into a dataset in Adobe Experience Platform
 
-## Resources
+## Prerequisites
 
 - Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
 - Access to Informatica ETL
 - Access to AWS S3
+- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+
+>[!NOTE]
+>
+>If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
 ## Business Context
 
 Luma Retail is a fashion brand and in addition to its online presence, has brick and mortar stores all over the world. So far the marketing team has struggled to make use of the offline orders data to optimize their online experience. Recently, they introduced a new loyalty program that allows customers to collect points when purchasing in store using their loyalty card. The marketing team receives regularly a flat file with all the offline orders as well and has a record of all customers who have joined the loyalty program. With the help of Informatica, we will join the two data sources, enrich the result so that it can be ingested into Adobe Experience Platform, then hydrate the profile with the offline order events.
 
 Luma Retail also has a partnership with Survey corp which has agreed to share their latest survey results on people preferences on designers, colors, and brands. Luma Retail has also decided to buy some demographics data from a marketplace from Money Corp, providing details on people income and credit score. By combining these two data sets Luma Retail is aiming to target their customer with more meaningful experiences based on their their preferences as well as income.
-
->[!IMPORTANT]
->
->Your Adobe Experience Platform instance
->
->This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
->
->In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
->
->Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
->
->If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
 ## Exercises
 

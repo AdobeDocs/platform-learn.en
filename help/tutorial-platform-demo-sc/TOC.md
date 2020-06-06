@@ -1,10 +1,10 @@
 ---
-user-guide-title: SC Demo Tutorial
+user-guide-title: Comprehensive Technical Tutorial for Adobe Experience Platform
 user-guide-url: /content/help/en/platform-learn/tutorials/sc-demo-tutorial/overview.html
 audience: all
 ---
 
-# SC Demo Tutorial {#sc-demo-tutorial}
+# Comprehensive Technical Tutorial for Adobe Experience Platform {#sc-demo-tutorial}
 
 + [Overview](/help/tutorial-platform-demo-sc/overview.md)
 + 1 - Launch and the WebSDK extension {#module1}
