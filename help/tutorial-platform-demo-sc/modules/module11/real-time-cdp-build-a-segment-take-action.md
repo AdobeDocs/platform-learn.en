@@ -20,22 +20,15 @@ In **Module 11**, you'll configure a segment, enable it for Streaming Segmentati
 - Learn how to connect a segment to a destination and activate it.
 - Learn how to use Adobe Experience Platform Segments in Adobe Audience Manager, and how to use Adobe Audience Manager Segments in Adobe Experience Platform, thanks to Bi-directional Segment Sharing between Adobe Audience Manager and Adobe Experience Platform.
 
-## Resources
+## Prerequisites
 
 - Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
 - Access to Adobe Audience Manager
 - Access to Adobe Target
 - Access to AWS S3
+- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
->[!IMPORTANT]
->
->Your Adobe Experience Platform instance
->
->This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
->
->In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
->
->Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>[!NOTE]
 >
 >If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 

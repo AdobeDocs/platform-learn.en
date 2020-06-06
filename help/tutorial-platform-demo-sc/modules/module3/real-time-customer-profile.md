@@ -20,7 +20,7 @@ In this exercise, we'll do a deep dive into the Real-time Customer Profile and I
 - Learn how to create a segment and store the segment's results in a dataset through Adobe Experience Platform's API's, by making use of Adobe I/O
 - Learn about the impact of truly having access to a full customer profile, including real-time behavior, in offline environments.
 
-## Resources
+## Prerequisites
 
 - Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
 - Access to an AEP demo website

@@ -23,20 +23,13 @@ In this module we will refer to the **Offers Decisioning Engine** (or simply **O
 
 - Get a feeling what is currently available with respect to next best offer functionality in AEP.
 
-## Resources
+## Prerequisites
 
 - Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com) 
 - Access to Offer Decisioning
+- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
->[!IMPORTANT]
->
->Your Adobe Experience Platform instance
->
->This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to execute these tutorials in a hands-on way, you will need access to an Adobe Experience Platform instance.
->
->In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. 
->
->Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+>[!NOTE]
 >
 >If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
 
