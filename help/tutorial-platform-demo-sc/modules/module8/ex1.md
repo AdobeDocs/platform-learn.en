@@ -87,7 +87,7 @@ Click on **JupyterLab**. You'll now see JupyterLab loading. This may take 1-2 mi
 
 ![DSW](./images/nbstarting.png)
 
-While Jupyter Notebooks is starting, download the zip-file located [here](../../assets/notebooks/module8.zip) and unzip its content to the desktop of your computer.
+While Jupyter Notebooks is starting, download the zip-file **module8.zip** from your environment variables and unzip its content to the desktop of your computer.
 
 ![DSW](./images/dswfiles.png)
 
