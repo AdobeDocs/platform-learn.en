@@ -48,7 +48,7 @@ Select **Experience Targeting**.
 ![RTCDP](./images/exclatcrxt.png)
 
 >[!IMPORTANT]
-> Due to the nature of the AEP Demo - website, which always redirects every visit to the Admin-page, it's important to already have the AEP Demo - website open and your brand already selected in another tab in the same browser-window as the one where you're going to define your Adobe Target Activity. If you don't have the Brand already selected in another tab in the same browser window, you won't be able to continue with the next step.
+> Due to the nature of the Platform Demo - website, which always redirects every visit to the Admin-page, it's important to already have the Platform Demo - website open and your brand already selected in another tab in the same browser-window as the one where you're going to define your Adobe Target Activity. If you don't have the Brand already selected in another tab in the same browser window, you won't be able to continue with the next step.
 >
 >[!IMPORTANT] Fill out the details, like the **Activity URL**. **TIP** Adobe Target doesn't like localhost connections, so for this use-case, please use a publicly available website as Activity URL.
 
@@ -58,7 +58,7 @@ Click **Next**.
 
 ![RTCDP](./images/exclatcrxtdtlnext.png)
 
-You're now in the Visual Experience Composer, and should see the AEP Demo-website with the Brand that you already selected.
+You're now in the Visual Experience Composer, and should see the Platform Demo-website with the Brand that you already selected.
 
 ![RTCDP](./images/exclatvec.png)
 

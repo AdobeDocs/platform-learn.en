@@ -11,11 +11,11 @@ activity:
 
 ## Introduction
 
-This module's objective is to demonstrate how to use an internet of things device (like an Alexa device) with the Adobe Experience Platform. For that purpose, this module guides through the steps to create an Amazon Alexa skill and use it as part of your demo. The ultimate result will be that relevant voice interactions with an Alexa device simulator or real Alexa device will be sent to Adobe Experience Platform and become part of the overall experience event data in the platform.
+The objective of this module is to demonstrate how to use an internet of things device (like an Alexa device) with the Adobe Experience Platform. To that end, this module guides you through the steps to create an Amazon Alexa skill and use it as part of your demo. The ultimate result will be that relevant voice interactions with an Alexa device simulator or real Alexa device will be sent to Adobe Experience Platform and become part of the overall experience event data in Platform.
 
-In order to demonstrate how to use such an Alexa skill, you will have to setup your skill within an Amazon developer account. With an Amazon developer account you can build your skill and, even more important, simulate your skill, which is especially relevant in case you do not own an Alexa device like an Echo Spot or Echo Show. If you do have an Alexa device with a display, it is even more fun...!
+In order to demonstrate how to use such an Alexa skill, you will have to setup your skill within an Amazon developer account. With an Amazon developer account you can build your skill and, even more important, simulate your skill, which is especially relevant in case you do not own an Alexa device like an Echo Spot or Echo Show. If you do have an Alexa device with a display, it is even more fun!
 
-You also have to sign up for an AWS account, as the skill we will use requires server-less functions deployed in a AWS Lambda environment.
+You also have to sign up for an AWS account, as the skill we will use requires serverless functions deployed in a AWS Lambda environment.
 
 ## Exercise 4.1.1: Set up Amazon developer account
 
@@ -116,7 +116,7 @@ You will end up in the **AWS Management Console**.
 
 ![AWS Management Console](images/awsmanagementconsole.png)
 
-Leave the browser tab open; we will need it later in the module.
+Leave the browser tab open, as we will need it later in the module.
 
 You have finished this exercise. 
 

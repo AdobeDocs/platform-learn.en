@@ -19,7 +19,7 @@ activity:
 
 Analysis Workspace removes all of the typical limitations of a single Analytics report. It provides a robust, flexible canvas for building custom analysis projects. Drag-and-drop any number of data tables, visualizations, and components (dimensions, Metrics, segments, and time granularities) to a project. Instantly create breakdowns and segments, create cohorts for analysis, create alerts, compare segments, do flow and fallout analysis, and curate and schedule reports for sharing with anyone in your business.
 
-Customer Journey Analytics brings this solution on top of AEP data. We highly recommend to watch this 4 minute video of CJA overview: [https://www.youtube.com/watch?v=Y2Jo43NM-Oo](https://www.youtube.com/watch?v=Y2Jo43NM-Oo)
+Customer Journey Analytics brings this solution on top of Platform data. We highly recommend to watch this 4 minute video of CJA overview: [https://www.youtube.com/watch?v=Y2Jo43NM-Oo](https://www.youtube.com/watch?v=Y2Jo43NM-Oo)
 
 If you haven't use Adobe Analytics before, we highly recommend to watch this video: [https://www.youtube.com/watch?v=IHOy-QsvVcA](https://www.youtube.com/watch?v=IHOy-QsvVcA)
 

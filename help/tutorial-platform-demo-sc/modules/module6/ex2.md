@@ -9,7 +9,7 @@ activity:
 
 # 6.2: Journey Orchestration: Setup Journey
 
-In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the AEP Demo-website.
+In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the Platform Demo-website.
 
 Login to Journey Orchestration by clicking this link: [https://experience.adobe.com/](https://experience.adobe.com).
 
@@ -25,7 +25,7 @@ You'll be redirected to the **Journeys** - view in Journey Orchestration.
 
 Make sure that you're in the **Home** - view.
 
-Let's create a new journey by clicking the **Create** - button.
+Let's create a new journey by clicking the **Create** button.
 
 ![ACOP](./images/create.png)
 

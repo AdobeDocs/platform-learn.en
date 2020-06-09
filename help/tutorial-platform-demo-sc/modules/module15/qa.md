@@ -25,7 +25,7 @@ The Model relies on 2 datasets:
 
 ## What does the training data look like
 
-When a customer clicks the **Get Quote**-button, this data is collected:
+When a customer clicks the **Get Quote** button, this data is collected:
 
 ```json
 {
@@ -152,13 +152,13 @@ In a future implementation, the correct mechanism to use to stream data to any c
 
 ## What is the latency
 
-The end-to-end latency, from clicking the **Get Quote**-button to delivering an experience by Adobe Target, based on the score calculated by the RTML-endpoint is 1-1,5 seconds.
+The end-to-end latency, from clicking the **Get Quote** button to delivering an experience by Adobe Target, based on the score calculated by the RTML-endpoint is 1-1,5 seconds.
 
-## How does the output from the RTML endpoint get sent back to AEP
+## How does the output from the RTML endpoint get sent back to Platform
 
 Given that this is a custom implementation, the way to send the output of the score back to Adobe Experience Platform is by sending an XDM Payload to a DCS Inlet ID.
 
-We're reusing an existing DCS Inlet ID, that was created through the AEP Extension in Launch.
+We're reusing an existing DCS Inlet ID, that was created through the Platform Extension in Launch.
 
 The RTML write back into the **EMEA ML Predictions (API)**-dataset which is the scoring output dataset. When the ML Model calculates a propensity score, it stores that score in this dataset by sending an XDM payload to the DCS Inlet ID.
 

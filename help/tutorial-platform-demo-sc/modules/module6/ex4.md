@@ -170,7 +170,7 @@ Then:
 15. Click on **Save & Close** to save and close the editor.
 16. Back in the **Transactional email '...'** screen, click on **Publish** to publish your email template.
 
-Your email template is now ready to be invoked using the event you have specified. As you have seen in the earlier that is exactly what Triggered Journey is doing: taking an AEP event, mapping that to a transactional message event that is coupled to a transactional message template (in our case an email).
+Your email template is now ready to be invoked using the event you have specified. As you have seen in the earlier that is exactly what Triggered Journey is doing: taking a Platform event, mapping that to a transactional message event that is coupled to a transactional message template (in our case an email).
 
 You've now finished this and this module!
 

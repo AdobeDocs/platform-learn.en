@@ -15,11 +15,11 @@ In the GTM UI, in the menu option **Workspace** - **Tags**, you should now see 4
 
 ![Launch Setup](./images/workspace.png)
 
-To start the publishing process, click the **Submit**-button.
+To start the publishing process, click the **Submit** button.
 
 ![Launch Setup](./images/submit.png)
 
-Next, click the **Publish** - button.
+Next, click the **Publish** button.
 
 ![Launch Setup](./images/publish.png)
 
@@ -35,9 +35,9 @@ Finally, you'll see a confirmation of your publication.
 
 ![Launch Setup](./images/env.png)
 
-Your GTM Property is now published. The last thing to do now is to setup the GTM Tags on the AEP Demo-website so that the GTM configuration is being loaded.
+Your GTM Property is now published. The last thing to do now is to setup the GTM Tags on the Platform Demo-website so that the GTM configuration is being loaded.
 
-Next Step: [9.7 Implement GTM Tag on AEP Demo website](./ex7.md)
+Next Step: [9.7 Implement GTM Tag on Platform Demo website](./ex7.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

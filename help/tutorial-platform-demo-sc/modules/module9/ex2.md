@@ -171,7 +171,7 @@ Now click **Publish**.
 
 ![GA setup](./images/gapublish.png)
 
-You're then seeing the versions tab in GTM, showing you the summary of what you just published. This will not be active yet, since we have not yet implemented the GTM tag on the AEP Demo-website. We'll be doing that in a later exercise.
+You're then seeing the versions tab in GTM, showing you the summary of what you just published. This will not be active yet, since we have not yet implemented the GTM tag on the Platform Demo-website. We'll be doing that in a later exercise.
 
 ![GA setup](./images/ga-publish3.png)
 

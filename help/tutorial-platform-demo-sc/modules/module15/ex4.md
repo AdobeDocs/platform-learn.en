@@ -37,11 +37,11 @@ Click the **ldapCarInsurancePropensity** - recipe to open it.
 
 You now need to create your own Model, based on the **ldapCarInsurancePropensity** - recipe.
 
-To do that, click on the **Create a Model** - button.
+To do that, click on the **Create a Model** button.
 
 ![DSW](./images/createmodel1.png)
 
-To train this model, you need to provide it with an Input Dataset. In our case, the dataset to use is called **AEP Demo - Car Insurance Interactions**. Select it from the list.
+To train this model, you need to provide it with an Input Dataset. In our case, the dataset to use is called **Platform Demo - Car Insurance Interactions**. Select it from the list.
 
 ![DSW](./images/input.png)
 
@@ -96,11 +96,11 @@ After opening Training Run 1, you'll see a full overview of the Training Run, an
 
 ![DSW](./images/trr1.png)
 
-To score, you have to click the **+ Score** - button in the top right corner of your screen.
+To score, you have to click the **+ Score** button in the top right corner of your screen.
 
 ![DSW](./images/score.png)
 
-In the next step, you again have to select an Input Dataset. Let's choose the **AEP Demo - Car Insurance Interactions**-dataset.
+In the next step, you again have to select an Input Dataset. Let's choose the **Platform Demo - Car Insurance Interactions**-dataset.
 
 ![DSW](./images/scoreinput.png)
 
@@ -108,7 +108,7 @@ After selecting the Input Dataset, click **Next**.
 
 ![DSW](./images/next.png)
 
-In the next step, you need to select a dataset to which Platform will output results. In this case, select the **AEP Demo - ML Predictions**-dataset.
+In the next step, you need to select a dataset to which Platform will output results. In this case, select the **Platform Demo - ML Predictions**-dataset.
 
 ![DSW](./images/scoreoutput.png)
 

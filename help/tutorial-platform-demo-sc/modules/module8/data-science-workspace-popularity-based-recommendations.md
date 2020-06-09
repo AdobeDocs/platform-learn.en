@@ -36,7 +36,7 @@ In **Module 8** you'll learn how to create a simple Machine Learning model that 
 
 [8.1 Data Exploration and Transformation](./ex1.md)
 
-To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you'll explore purchase data flowing via Launch and WebSDK to Adobe Experience Platform and transform that data into a feature dataset that will be used to train your machine learning model.
+To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you'll explore purchase data flowing via Launch and Web SDK to Adobe Experience Platform and transform that data into a feature dataset that will be used to train your machine learning model.
 
 [8.2 Model Authoring and Operationalization](./ex2.md)
 

@@ -39,22 +39,22 @@ prod:all=> show tables;
  aam_profile_dataset_userprofile           | 5e1d3d905f3bbe18a8ed1ca8 | AAM Devices Data                          |             | false
  aam_realtime                              | 5e1d3d8d93db9218a8f3a850 | AAM Realtime                              |             | false
  adobe_target_experience_events            | 5c8b1929bc73871516b71fdf | Adobe Target Experience Events            |             | false
- aep_demo_account_creation                 | 5ea04d5bfbb8fc18a99d8255 | AEP Demo - Account Creation               |             | false
- aep_demo_beacon_store_entry_activity      | 5ea04d5b47f95318a8203a87 | AEP Demo - Beacon Store Entry Activity    |             | false
- aep_demo_call_center_interactions         | 5ea04d5b20c37e18a8aeb17c | AEP Demo - Call Center Interactions       |             | false
- aep_demo_car_insurance_interactions       | 5ea04d5b0fe7df18a8b32790 | AEP Demo - Car Insurance Interactions     |             | false
- aep_demo_flight_booking_interactions      | 5ea04d5b5450d518a85f1e2e | AEP Demo - Flight Booking Interactions    |             | false
- aep_demo_fsi_interactions                 | 5ea04d5b20c37e18a8aeb17d | AEP Demo - FSI Interactions               |             | false
- aep_demo_loyalty_data                     | 5ea04d5b86d86f18a7a6eb2e | AEP Demo - Loyalty Data                   |             | false
- aep_demo_loyalty_data_m16                 | 5ea04d5be365ff18a86bede8 | AEP Demo - Loyalty Data (M16)             |             | false
- aep_demo_media_entertainment              | 5ea04d5b436b0b18a740bef9 | AEP Demo - Media & Entertainment          |             | false
- aep_demo_ml_predictions                   | 5ea04d5b85d1fc18a78a9136 | AEP Demo - ML Predictions                 |             | false
- aep_demo_mobile_app_interactions          | 5ea04d5ba99d6e18a83c59c3 | AEP Demo - Mobile App Interactions        |             | false
- aep_demo_optin_out                        | 5ea04d5b7c61c518a8eae22b | AEP Demo - OptIn/Out                      |             | false
- aep_demo_recommendations_input            | 5ea04d5b7f917418a8b7994c | AEP Demo - Recommendations Input          |             | false
- aep_demo_recommendations_output           | 5ea04d5b07f2c818a9716c64 | AEP Demo - Recommendations Output         |             | false
- aep_demo_website_interactions             | 5ea04d5b5c640f18a85a7b6b | AEP Demo - Website Interactions           |             | false
- aep_demo_website_registrations            | 5ea04d5b005a6e18a8bc88ae | AEP Demo - Website Registrations          |             | false
+ aep_demo_account_creation                 | 5ea04d5bfbb8fc18a99d8255 | Platform Demo - Account Creation               |             | false
+ aep_demo_beacon_store_entry_activity      | 5ea04d5b47f95318a8203a87 | Platform Demo - Beacon Store Entry Activity    |             | false
+ aep_demo_call_center_interactions         | 5ea04d5b20c37e18a8aeb17c | Platform Demo - Call Center Interactions       |             | false
+ aep_demo_car_insurance_interactions       | 5ea04d5b0fe7df18a8b32790 | Platform Demo - Car Insurance Interactions     |             | false
+ aep_demo_flight_booking_interactions      | 5ea04d5b5450d518a85f1e2e | Platform Demo - Flight Booking Interactions    |             | false
+ aep_demo_fsi_interactions                 | 5ea04d5b20c37e18a8aeb17d | Platform Demo - FSI Interactions               |             | false
+ aep_demo_loyalty_data                     | 5ea04d5b86d86f18a7a6eb2e | Platform Demo - Loyalty Data                   |             | false
+ aep_demo_loyalty_data_m16                 | 5ea04d5be365ff18a86bede8 | Platform Demo - Loyalty Data (M16)             |             | false
+ aep_demo_media_entertainment              | 5ea04d5b436b0b18a740bef9 | Platform Demo - Media & Entertainment          |             | false
+ aep_demo_ml_predictions                   | 5ea04d5b85d1fc18a78a9136 | Platform Demo - ML Predictions                 |             | false
+ aep_demo_mobile_app_interactions          | 5ea04d5ba99d6e18a83c59c3 | Platform Demo - Mobile App Interactions        |             | false
+ aep_demo_optin_out                        | 5ea04d5b7c61c518a8eae22b | Platform Demo - OptIn/Out                      |             | false
+ aep_demo_recommendations_input            | 5ea04d5b7f917418a8b7994c | Platform Demo - Recommendations Input          |             | false
+ aep_demo_recommendations_output           | 5ea04d5b07f2c818a9716c64 | Platform Demo - Recommendations Output         |             | false
+ aep_demo_website_interactions             | 5ea04d5b5c640f18a85a7b6b | Platform Demo - Website Interactions           |             | false
+ aep_demo_website_registrations            | 5ea04d5b005a6e18a8bc88ae | Platform Demo - Website Registrations          |             | false
  cross_industry_demo_data_midvalues        | 5e1d3e7512aa2018a880bd66 | Cross-Industry Demo Data midValues        |             | false
  profile_export_for_destinations           | 5e1e4f61f48e2018a81a829e | Profile Export For Destinations           |             | false
 :
@@ -66,7 +66,7 @@ Every dataset in Platform has its corresponding Query Service table. You can fin
 
 ![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
 
-The **aep_demo_website_interactions** table is the Query Service table that corresponds with the **AEP Demo - Website Interactions** dataset.
+The **aep_demo_website_interactions** table is the Query Service table that corresponds with the **Platform Demo - Website Interactions** dataset.
 
 To query some information about where a product was viewed, we will select the **geo** information.
 
@@ -150,7 +150,7 @@ limit 1;
 
 Go back to your Adobe Experience Platform UI (should be open in your browser) or navigate to [http://platform.adobe.com](http://platform.adobe.com).
 
-Select **Schemas**, enter **AEP Demo - Website Interactions** in the **search**-field and select **AEP Demo - Website Interactions Schema** from the list.
+Select **Schemas**, enter **Platform Demo - Website Interactions** in the **search**-field and select **Platform Demo - Website Interactions Schema** from the list.
 
 ![browse-schema.png](./images/browse-schema.png)
 

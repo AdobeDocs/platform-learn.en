@@ -109,7 +109,7 @@ If you'd like to view the setup of the connector, follow these steps:
 
   ![ETL](./images/inf21.png)
 
-  As you can see, this connection uses Adobe IO-credentials to connect to Adobe Experience Platform. It also requires you to upload the private key of your Adobe IO-credentials onto our Informatica-server. This is something only a server admin can do, so you can't setup your integration yourself.
+  As you can see, this connection uses Adobe I/O-credentials to connect to Adobe Experience Platform. It also requires you to upload the private key of your Adobe I/O-credentials onto our Informatica-server. This is something only a server admin can do, so you can't setup your integration yourself.
   
 Please continue with the next exercise.
 

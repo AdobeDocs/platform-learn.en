@@ -248,7 +248,7 @@ Once the query has finished running, you'll see the below output in the **Query 
 
 ## Exercise 16.2.3 – Save the results of your BigQuery SQL query
 
-The next step is to save the output of your query by clicking the **SAVE RESULTS**-button.
+The next step is to save the output of your query by clicking the **SAVE RESULTS** button.
 
 ![demo](./images/ex3/13.png)
 

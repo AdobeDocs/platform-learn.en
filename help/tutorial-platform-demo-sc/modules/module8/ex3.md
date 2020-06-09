@@ -35,12 +35,12 @@ Click your **ldapRecommendations** - recipe to open it.
 ![DSW](./images/prrecipe1.png)
 
 You now need to create your own Model, based on the **ldapRecommendations** - recipe.
-To do that, click on the **Create Model** - button.
+To do that, click on the **Create Model** button.
 
 ![DSW](./images/createmodel1.png)
 
 To train this model, you need to provide it with an Input Dataset. In our case, you generated data for this Input Dataset in 1 and the input dataset now contains information around product purchase data.
-The dataset to use is called **AEP Demo - Recommendations Input**. Select it from the list.
+The dataset to use is called **Platform Demo - Recommendations Input**. Select it from the list.
 
 ![DSW](./images/input.png)
 

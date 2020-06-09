@@ -17,7 +17,7 @@ In **Module 9**, the following topics will be addressed:
 - Basic setup of Google Analytics
 - Stream GA/GTM-data to Adobe Experience Platform in real-time
 
-In this module, the goal is to install and configure Google Tag Manager and Google Analytics and connect that to Adobe Experience Platform by capturing data from your AEP Demo website client-side and streaming it in real-time to Adobe Experience Platform.
+In this module, the goal is to install and configure Google Tag Manager and Google Analytics and connect that to Adobe Experience Platform by capturing data from your Platform Demo website client-side and streaming it in real-time to Adobe Experience Platform.
 This is to show that brands with an existing Google Analytics and Google Tag Manager implementation can also benefit from the power of Adobe Experience Platform, without limitations or latencies.
 
 ## Learning Objectives
@@ -45,11 +45,11 @@ In this exercise, you'll set up a Google User Account. If you already have a Goo
 
 [9.1 Create a Google Tag Manager Property](./ex1.md)
 
-In this exercise, you'll set up a Google Tag Manager property. You will use this on the AEP Demo website to manage the Google Analytics code and to send data to platform.
+In this exercise, you'll set up a Google Tag Manager property. You will use this on the Platform Demo website to manage the Google Analytics code and to send data to platform.
 
 [9.2 Setup Google Analytics & link it to GTM](./ex2.md)
 
-In this exercise, you'll set up a Google Analytics property which will be used on your AEP Demo website.
+In this exercise, you'll set up a Google Analytics property which will be used on your Platform Demo website.
 
 [9.3 Configure GTM Variables](./ex3.md)
 
@@ -67,9 +67,9 @@ After the configuration of variables in your Google Tag Manager property and ret
 
 With all GTM configuration done now, let's publish your Google Tag Manager property.
 
-[9.7 Implement GTM Tag on your AEP Demo website](./ex7.md)
+[9.7 Implement GTM Tag on your Platform Demo website](./ex7.md)
 
-After publishing your Google Tag Manager property, you can now implement it on your AEP Demo website.
+After publishing your Google Tag Manager property, you can now implement it on your Platform Demo website.
 
 [9.8 Verify Data Ingestion from website into Platform](./ex8.md)
 

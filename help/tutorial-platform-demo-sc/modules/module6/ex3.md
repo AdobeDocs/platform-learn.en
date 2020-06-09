@@ -72,24 +72,24 @@ Scroll down to the bottom of the window, where you'll see a button called **+ Ad
 
 ![Launch Setup](./images/addch.png)
 
-Click the **+ Add All Changed Resources** - button.
+Click the **+ Add All Changed Resources** button.
 
 ![Launch Setup](./images/addallchanged.png)
 
-Click the **Save & Build for Development** - button.
+Click the **Save & Build for Development** button.
 
 ![Launch Setup](./images/savebuild.png)
 
-After clicking the **Save & Build for Development** - button, your Development-library will be updated and your changes will be available for testing on your AEP Demo - website. It can take a couple of minutes until your Launch-code is updated, wait until you see a green dot next to your Development-library.
+After clicking the **Save & Build for Development** button, your Development-library will be updated and your changes will be available for testing on your Platform Demo - website. It can take a couple of minutes until your Launch-code is updated, wait until you see a green dot next to your Development-library.
 
 (FYI: sometimes the Launch library is cached in your browser so you might have to clear your cache)
 
-Once your Launch - configuration is published, go to your AEP Demo-website, select and load any brand of choice and navigate to the page Login/Register.
+Once your Launch - configuration is published, go to your Platform Demo-website, select and load any brand of choice and navigate to the page Login/Register.
 Enter your credentials.
 
 ![Launch Setup](./images/lb_register_dtl.png)
 
-Click the **Create Account** - button. If all goes well, you should receive an email a couple of seconds later.
+Click the **Create Account** button. If all goes well, you should receive an email a couple of seconds later.
 
 You've now finished this and this module!
 

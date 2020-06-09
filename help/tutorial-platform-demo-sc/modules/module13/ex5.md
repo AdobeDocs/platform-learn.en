@@ -102,7 +102,7 @@ Finally you can add more visualizations. On the left side, under visualizations,
 
 ![demo](./images/module135/18.png)
 
-Next, in the Table, select 3 **User Agent** - rows from the breakdown we did under **Nadia Elements Shell** > **Luma Retail**. While selecting the 3 rows, hold the **CTRL**-button (on Windows) or the **Command**-button on Mac.
+Next, in the Table, select 3 **User Agent** - rows from the breakdown we did under **Nadia Elements Shell** > **Luma Retail**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button on Mac.
 
 ![demo](./images/module135/20.png)
 

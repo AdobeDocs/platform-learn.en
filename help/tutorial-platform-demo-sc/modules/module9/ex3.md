@@ -17,8 +17,8 @@ In the GTM UI, go to **Variables**. You'll see the list of built-in Variables an
 
 ![GTM Setup](./images/dataelements.png)
 
-The first Variable we need to add is called **customerEmail**. When a customer creates a profile on the AEP Demo-website, we'll link the customer's email address to his or her customer profile in Platform.
-In the AEP Demo-website, information is often stored in localStorage. To access this we need a Custom Javascript to populate the GTM Variable.
+The first Variable we need to add is called **customerEmail**. When a customer creates a profile on the Platform Demo-website, we'll link the customer's email address to his or her customer profile in Platform.
+In the Platform Demo-website, information is often stored in localStorage. To access this we need a Custom Javascript to populate the GTM Variable.
 
 In the **User-Defined Variables** - section, click **New**:
 
@@ -118,7 +118,7 @@ Click **Save** to save your new Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Next: **customerLastName**. When a customer creates a profile on the AEP Demo website, we'll link the customer's last name to his or her customer profile in Platform.
+Next: **customerLastName**. When a customer creates a profile on the Platform Demo website, we'll link the customer's last name to his or her customer profile in Platform.
 
 In the **User-Defined Variables** - section, click **New**.
 
@@ -141,7 +141,7 @@ Click **Save** to save your new Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Next: **aepTenantId**. When a customer creates a profile on the AEP Demo website, we'll link the customer's last name to his or her customer profile in Platform.
+Next: **aepTenantId**. When a customer creates a profile on the Platform Demo website, we'll link the customer's last name to his or her customer profile in Platform.
 
 In the **User-Defined Variables** - section, click **New**.
 
@@ -164,7 +164,7 @@ Click **Save** to save your new Variable.
 
 ![GTM Setup](./images/gasave.png)
 
-Next: **customerLoggedIn**. When a customer is logged in on the AEP Demo website, we'll set this variable to Yes and use that condition in a Launch Rule configuration.
+Next: **customerLoggedIn**. When a customer is logged in on the Platform Demo website, we'll set this variable to Yes and use that condition in a Launch Rule configuration.
 
 In the **User-Defined Variables** - section, click **New**.
 

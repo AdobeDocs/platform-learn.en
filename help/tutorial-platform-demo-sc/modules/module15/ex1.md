@@ -26,7 +26,7 @@ Let's have a look at the demo scenario.
 
 ## Demo Scenario
 
-Open your AEP Demo-website.
+Open your Platform Demo-website.
 
 You'll be redirected to the Admin Homepage.
 
@@ -89,7 +89,7 @@ This unknown, anonymous customer decides to fill out the fields on this form (yo
 By clicking **Get Quote**, the customer is presented with the different Insurance types and their price.
 Also, by clicking **Get Quote**, an Experience Event for this Car Insurance Get Quote-action is sent to Adobe Experience Platform and will be taken into account by the Sales Prediction model in real-time.
 
-If you wish, you may decide to simulate a Car Insurance Purchase by pushing the **Purchase** - button.
+If you wish, you may decide to simulate a Car Insurance Purchase by pushing the **Purchase** button.
 
 ![LumaBank](./images/7cp.png)
 
@@ -98,7 +98,7 @@ As you can see, Sensei has calculated a Car Insurance Sales Prediction score bas
 
 ![LumaBank](./images/7d.png)
 
-Every change in the information you provide on the form will influence the score in real-time, so if you wish, please go back to the **Get Quote**-form and fill out different information, followed by clicking the **Get Quote**-button.
+Every change in the information you provide on the form will influence the score in real-time, so if you wish, please go back to the **Get Quote**-form and fill out different information, followed by clicking the **Get Quote** button.
 
 Additionally, you'll also find your Car Insurance Experience Events in the Experience Events - section of X-ray.
 
@@ -108,7 +108,7 @@ And finally, based on the calculated propensity score, you'll also see specific 
 
 ![LumaBank](./images/8.png)
 
-This segment qualification can then be shared through the Bi-Directional Segment Sharing connector between AEP and AEC, which means that solutions like Adobe Audience Manager and Adobe Target are now able to use that segment qualification and deliver an alternative, more personal experience to the customer.
+This segment qualification can then be shared through the Bi-Directional Segment Sharing connector between Platform and AEC, which means that solutions like Adobe Audience Manager and Adobe Target are now able to use that segment qualification and deliver an alternative, more personal experience to the customer.
 
 Next Step: [15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
 
