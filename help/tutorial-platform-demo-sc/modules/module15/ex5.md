@@ -75,9 +75,9 @@ Configure your schedule so that your Service runs in the weekend, on Saturday or
 
 Next, you need to select the **Scoring Dataset** and the **Scoring Results Dataset**.
 
-The **Scoring Dataset** should be **Platform Demo - Car Insurance Interactions**.
+The **Scoring Dataset** should be **AEP Demo - Car Insurance Interactions**.
 
-The **Scoring Results Dataset** should be **Platform Demo - ML Predictions**.
+The **Scoring Results Dataset** should be **AEP Demo - ML Predictions**.
 
 ![DSW](./images/servsch2.png)
 

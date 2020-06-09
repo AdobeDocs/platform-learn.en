@@ -24,7 +24,7 @@ Log in to Launch by going to this URL: [https://launch.adobe.com](https://launch
 
 ![Data Ingestion](./images/launchhome.png)
 
-In the list of Launch Properties, you'll see a Launch property that is named **Platform Launch Module 1**.
+In the list of Launch Properties, you'll see a Launch property that is named **AEP Launch Module 1**.
 
 Locate that Launch Property and click it to open it. After opening it, you'll see this:
 
@@ -68,7 +68,7 @@ You'll then see this:
 
 ![Launch Setup](./images/beaconconfig.png)
 
-You can see that the dataset that is selected here is **Platform Demo - Website Interactions**, similar to the one you created in the previous exercise.
+You can see that the dataset that is selected here is **AEP Demo - Website Interactions**, similar to the one you created in the previous exercise.
 
 You can also see the Schema Mapping. In Schema Mapping, these fields have been connected to each other. The **Source Value** refers to a Data Element in Launch, while the **Target Value** refers to an XDM field, just like the fields you defined in the previous exercises.
 

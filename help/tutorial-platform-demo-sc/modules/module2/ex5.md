@@ -69,11 +69,11 @@ Open [Adobe Experience Platform
 
 Before you continue, make sure you are in the **PRODUCTION Prod**-environment in the blue line on top of your screen.
 
-We're going to use a shared dataset based in this enablement. The shared dataset has been created already and is called **Platform Demo - CRM Onboarding**.
+We're going to use a shared dataset based in this enablement. The shared dataset has been created already and is called **AEP Demo - CRM Onboarding**.
 
 ![Data Ingestion](./images/emeacrm.png)
 
-Open the dataset **Platform Demo - CRM Onboarding**.
+Open the dataset **AEP Demo - CRM Onboarding**.
 
 ![Data Ingestion](./images/emeacrmoverview.png)
 
@@ -97,7 +97,7 @@ Enabling a dataset for Streaming Ingestion can currently only be done through th
 
 The most important setting here is the link between the dataset and the Schema. The Schema defines what data can be ingested and how that data should look like. 
 
-In this case, we're using the **Platform Demo - CRM Onboarding Schema**, which is mapped against the class of **Profile** and has implemented extensions, also called mixins. 
+In this case, we're using the **AEP Demo - CRM Onboarding Schema**, which is mapped against the class of **Profile** and has implemented extensions, also called mixins. 
 
 ![Data Ingestion](./images/ds_schemalink.png)
 
@@ -143,7 +143,7 @@ Click **Next** to go to the next step. It can take a few seconds while the file 
 
 ![Data Ingestion](./images/next.png)
 
-On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select the **Platform Demo - CRM Onboarding**-dataset as indicated below.
+On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select the **AEP Demo - CRM Onboarding**-dataset as indicated below.
 
 ![Data Ingestion](./images/datasetselection.png)
 
@@ -151,7 +151,7 @@ Click **Next** to go to the next step.
 
 ![Data Ingestion](./images/next.png)
 
-It's now time to map our CSV Column Headers with an XDM-property in our **Platform Demo - CRM Onboarding Schema**.
+It's now time to map our CSV Column Headers with an XDM-property in our **AEP Demo - CRM Onboarding Schema**.
 Platform has already done some guessing for us, by trying to link the Source Attributes with the Target Schema Fields.
 
 ![Data Ingestion](./images/mapschema.png)
@@ -159,7 +159,7 @@ Platform has already done some guessing for us, by trying to link the Source Att
 First of all, we need to add the required mapping for the descriptor field. The descriptor field is a required field in this workflow and expects you to indicate what the main identifier is of the file you're uploading. 
 
 Selecting the descriptor is actually the most important thing: you'll be defining the custom, brand-specific, primary identifier. Within Platform-context, we refer to this custom, brand-specific, primary identifier as the descriptor. The descriptor is a requirement for this data to be onboarded. Without the presence of the descriptor, the ingestion of this CSV-file will fail.
-Our descriptor for the **Platform Demo - CRM Onboarding**-dataset is the **email** as it's the unique identifier for our dataset.
+Our descriptor for the **AEP Demo - CRM Onboarding**-dataset is the **email** as it's the unique identifier for our dataset.
 In our case, based on the selection of the dataset and the schema that is linked to the dataset, the required Target Schema Field in XDM is **\<aepTenantId>.identification.emailId**. You need to map the **email**-field from your CSV file as the source attribute for this required Target Schema Field.
 
 To do this, click the **Add new mapping** button.
@@ -190,7 +190,7 @@ For the Schema Mappings, Platform has tried to link fields together already. How
 
 ![Data Ingestion](./images/schemamap.png)
 
-For the Source Attribute **email**, the Target Schema Field should be **personalEmail.address**. You can either enter **personalEmail.address** in the field, or you can click the icon to visually locate the correct property in the **Platform Demo - CRM Onboarding Schema**.
+For the Source Attribute **email**, the Target Schema Field should be **personalEmail.address**. You can either enter **personalEmail.address** in the field, or you can click the icon to visually locate the correct property in the **AEP Demo - CRM Onboarding Schema**.
 
 ![Data Ingestion](./images/schema_icon.png)
 

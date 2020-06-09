@@ -36,7 +36,7 @@ In the **alexa developer console**, click the **Create Skill** button.
 
 In the **Create a new skill** screen:
 
-1. Specify **Platform** as the **Skill name**.
+1. Specify **AEP** as the **Skill name**.
 2. Select **English (UK)** or **English (US)** as the **Default Language**.
 3. Select **Custom** as the model to use in the **Choose a model to add to your skill** section.
    ![Create Skill](images/creatskill1.png)
@@ -54,7 +54,7 @@ In the **Choose a template** screen:
 ![Choose a template](images/chooseatemplate.png)
 2. Click the **Choose** button.
    
-You will end up in your **Platform** skill main screen, which should look like this:
+You will end up in your **AEP** skill main screen, which should look like this:
 
 ![Platform Skill Main Screen](images/aepskillmainscreen.png)
 
@@ -62,9 +62,9 @@ You will end up in your **Platform** skill main screen, which should look like t
 
 For your skill to be invoked, it needs an invocation name. To define this:
 
-1. Click on **Invocation** in the left rail, or on the **1. Invocation name >** button in the **Skill builder checklist** of the **Platform** skill main screen.
+1. Click on **Invocation** in the left rail, or on the **1. Invocation name >** button in the **Skill builder checklist** of the **AEP** skill main screen.
 
-2. In the **Invocation** panel, replace **Platform** with **adobe experience platform** as the **Skill Invocation Name**.
+2. In the **Invocation** panel, replace **AEP** with **adobe experience platform** as the **Skill Invocation Name**.
 
    ![Invocation Name](images/invocationname.png)
 
@@ -144,14 +144,14 @@ In the **Create function** screen:
 
 1. Select **Author from scratch**.
    ![Author From Scratch](images/authorfromscratch.png)
-2. Give your skill function a **Function name**, e.g. **Platform**.
+2. Give your skill function a **Function name**, e.g. **AEP**.
    ![Function Name](images/functionname.png)
 3. Select **Node.js 12.x** from the **Runtime** dropdown list.
    ![Runtime](images/runtime.png)
 4. Click on **Choose or create an execution role** below **Permissions**. Then select **Create a new role with basic Lambda permissions**from the **Execution role** dropdown list. Your screen should look like
    ![Permissions](images/permissions.png)
 5. Click on **Create function**. It will take a while to finish that creation.
-6. You will end up in your **Platform** function definition screen, with the **Configuration** tab active.
+6. You will end up in your **AEP** function definition screen, with the **Configuration** tab active.
    ![Platform Function Definition](images/aepfunctiondefinition.png)
 7. In the list of triggers listed below **Add triggers**, select **Alexa Skills Kit**. You will see that the skill is added to the definition screen, with the remark **Configuration required**.
    ![Configuration Required](images/configurationrequired.png)
@@ -166,16 +166,16 @@ Click on **Endpoint**. Then select **AWS Lambda ARN**. This will show your skill
 
 Click on **Copy to Clipboard** to copy the skill.
 
-Move back to your **Platform** function definition screen in the **AWS Lambda** home screen.
+Move back to your **AEP** function definition screen in the **AWS Lambda** home screen.
 
 1. Paste the skill id in the **Skill ID** field below the **Skill ID Verification**. Ensure **Enable** is selected, which is the default and recommended setting.
 ![Configure Skill ID](images/pasteskillid.png)
 2. Click on **Add** in the **Configure Triggers** panel.
 3. Then click on **Save**.
 
-Continue, in the **Platform** definition screen.
+Continue, in the **AEP** definition screen.
 
-1. Click on **Platform** box in the **Designer** panel.
+1. Click on **AEP** box in the **Designer** panel.
    ![Select Platform](images/selectaep.png)
 2. In the **Function code** panel, from the **Code entry type** dropdown list, select **Upload a .zip file**.
    ![Function Code](images/functioncode.png)
@@ -184,7 +184,7 @@ Continue, in the **Platform** definition screen.
    ![Platform Skill ZIP](images/selectaepskillzip.png)
 5. Click **Save**.
    
-Continue in the **Platform** definition screen
+Continue in the **AEP** definition screen
 
 1. Scroll down until you see the **Environment Variables** panel.
 ![Environment Variables](images/envvariables.png)
@@ -216,7 +216,7 @@ As a final step, we need to copy the Amazon Resource Name that represents this f
 
 To do so,
 
-- In the **Platform** function definition screen, click on the copy icon right from the **ARN - arm:aws.lambda:.....** text at the top right of the screen.
+- In the **AEP** function definition screen, click on the copy icon right from the **ARN - arm:aws.lambda:.....** text at the top right of the screen.
 
    ![ARN](images/arn.png)
 

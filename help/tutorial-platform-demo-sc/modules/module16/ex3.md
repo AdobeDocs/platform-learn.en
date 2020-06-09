@@ -89,7 +89,7 @@ The only thing to do here is to enter the name of the consent screen in the **Ap
 
 | Naming         | Example|    
 | ----------------- |-------------| 
-| ldap - Platform BigQuery Connector | delaigle - Platform BigQuery Connector |  
+| ldap - AEP BigQuery Connector | delaigle - Platform BigQuery Connector |  
 
 ![demo](./images/ex2/6-3.png)
 
@@ -131,7 +131,7 @@ Follow this naming convention:
 
 | Field         | Value  | Example  |   
 | ----------------- |-------------| -------------| 
-| Name | ldap - Platform BigQuery Connector  |  delaigle - Platform BigQuery Connector  |
+| Name | ldap - AEP BigQuery Connector  |  delaigle - Platform BigQuery Connector  |
 | Authorised redirect URIs | https://developers.google.com/oauthplayground | https://developers.google.com/oauthplayground  | 
 
 The **Authorised redirect URIs**-field is a very important field because you'll need it later to get the RefreshToken you need to finish the setup of the BigQuery Source Connector in Adobe Experience Platform.
@@ -223,7 +223,7 @@ Click **Advanced**.
 
 ![demo](./images/ex2/32.png)
 
-Next, click on **Go to ldap - Platform BigQuery Connector (unsafe)**.
+Next, click on **Go to ldap - AEP BigQuery Connector (unsafe)**.
 
 ![demo](./images/ex2/33.png)
 
@@ -243,7 +243,7 @@ Click **Advanced**.
 
 ![demo](./images/ex2/32.png)
 
-Next, click on **Go to ldap - Platform BigQuery Connector (unsafe)**.
+Next, click on **Go to ldap - AEP BigQuery Connector (unsafe)**.
 
 ![demo](./images/ex2/33.png)
 

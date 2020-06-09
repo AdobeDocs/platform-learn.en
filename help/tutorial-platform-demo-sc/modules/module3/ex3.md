@@ -135,10 +135,10 @@ Click **Edit Project**.
 
 ![Adobe I/O New Integration](./images/api14.png)
 
-Enter a Name and Description for your integration. As a naming convention, we'll use **Platform API ldap**. Replace ldap with your ldap.
+Enter a Name and Description for your integration. As a naming convention, we'll use **AEP API ldap**. Replace ldap with your ldap.
 For instance, if your ldap is vangeluw, the name and description of your integration becomes Platform API vangeluw.
 
-Enter **Platform API ldap** as the **Project Title**. Click **Save**.
+Enter **AEP API ldap** as the **Project Title**. Click **Save**.
 
 ![Adobe I/O New Integration](./images/api15.png)
 

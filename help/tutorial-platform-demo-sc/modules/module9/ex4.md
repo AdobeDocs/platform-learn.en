@@ -48,7 +48,7 @@ If you'd like to know more about XDM, please have a look here:
 * [https://www.adobe.io/open/standards/xdm.html](https://www.adobe.io/open/standards/xdm.html)
 * [https://github.com/adobe/xdm](https://github.com/adobe/xdm)
 
-Search for **Platform Demo - GA Website Registrations Schema** to find the Profile XDM for your Platform Org.
+Search for **AEP Demo - GA Website Registrations Schema** to find the Profile XDM for your Platform Org.
 
 ![Platform Setup](./images/xdmprofile.png)
 
@@ -56,11 +56,11 @@ The Platform Demo - GA Website Registrations Schema looks like this and is using
 
 ![Platform Setup](./images/profiledtl.png)
 
-Search for **Platform Demo - GA Website Interactions Schema** to find the ExperienceEvent XDM.
+Search for **AEP Demo - GA Website Interactions Schema** to find the ExperienceEvent XDM.
 
 ![Platform Setup](./images/xdmprofileee.png)
 
-The **Platform Demo - GA Website Interactions Schema** looks like this and is using the Google ID (GAID) as the Primary Identifier.
+The **AEP Demo - GA Website Interactions Schema** looks like this and is using the Google ID (GAID) as the Primary Identifier.
 
 ![Platform Setup](./images/eedtl.png)
 
@@ -83,12 +83,12 @@ These datasets already exist! Don't recreate them.
 
 * Website Interaction Dataset name:
 
-  * **Platform Demo - GA Website Interactions**
+  * **AEP Demo - GA Website Interactions**
     ![Platform Setup](./images/ee.png)
 
 * Website Registration name:
 
-  * **Platform Demo - GA Website Registrations**
+  * **AEP Demo - GA Website Registrations**
     ![Platform Setup](./images/p.png)
 
 After having consulted the above Schemas and Datasets, you can now fill out the below table:

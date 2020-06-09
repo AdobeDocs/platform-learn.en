@@ -434,9 +434,9 @@ You'll then have this:
 
 Click the **Select** button to select the Adobe Experience Platform-dataset to use.
 
-Enter the search term **Platform Demo - ETL** and click **Search**. You'll then see these datasets being returned.
+Enter the search term **AEP Demo - ETL** and click **Search**. You'll then see these datasets being returned.
 
-Select the dataset **Platform Demo - ETL Offline Orders**.
+Select the dataset **AEP Demo - ETL Offline Orders**.
 
 ![ETL](./images/target6.png)
 
@@ -511,7 +511,7 @@ Go to [Adobe Experience Platform](https://platform.adobe.com/home), to Datasets 
 
 ![ETL](./images/run9.png)
 
-Open the dataset **Platform Demo - ETL Offline Orders**.
+Open the dataset **AEP Demo - ETL Offline Orders**.
 
 ![ETL](./images/run11.png)
 

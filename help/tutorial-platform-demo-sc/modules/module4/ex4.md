@@ -80,11 +80,11 @@ On Monday May 25 2020, this should be the first set of identifiers of the day.
 
    ![Demo](./images/lb_x_loggedin_ee.png)
 
-After becoming a known customer, it's time to install the **Platform Demo**-mobile app on your iPhone and then login to the app. 
+After becoming a known customer, it's time to install the **AEP Demo -**-mobile app on your iPhone and then login to the app. 
 
 ### Step 3 - Known visitor registers on the Luma website
 
-To use the new mobile app, you need to install the **Platform Demo**-mobile app.
+To use the new mobile app, you need to install the **AEP Demo -**-mobile app.
 
 * Open the Platform Demo mobile app.
   

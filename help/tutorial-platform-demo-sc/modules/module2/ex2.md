@@ -84,7 +84,7 @@ After clicking the **+ Create Schema** button, you'll see an empty, new schema.
 Let's first name your schema.
 
 As the name for our schema, we'll use this:
-**Platform Demo - Website Registrations Schema**
+**AEP Demo - Website Registrations Schema**
 
 That should give you something like this:
 
@@ -183,7 +183,7 @@ Instead of reusing an existing Mixin, you'll now create your own Mixin. You can 
 You now need to provide a **Display Name** and **Description** for your new Mixin. 
 
 As the name for our schema, we'll use this:
-**Platform Demo - Profile Identification Mixin**
+**AEP Demo - Profile Identification Mixin**
 
 That should give you something like this:
 
@@ -424,7 +424,7 @@ After clicking the **+ Create Schema** button, you'll see an empty, new schema.
 Let's first name your schema. Please use the following naming for your schema:
 
 As the name for our schema, we'll use this:
-**Platform Demo - Website Interactions Schema**
+**AEP Demo - Website Interactions Schema**
 
 That should give you something like this:
 
@@ -527,7 +527,7 @@ Instead of reusing an existing Mixin, you'll now create your own Mixin. You can 
 You now need to provide a **Display Name** and **Description** for your new Mixin. 
 
 As the name for our schema, we'll use this:
-**Platform Demo - EE Identification**
+**AEP Demo - EE Identification**
 
 That should give you something like this:
 
@@ -584,7 +584,7 @@ We'll now add 1 new field under the  **identification**-object:
   * Display name:  **ecid**
   * Type: **String**
 
-The ECID-field will be defined as type **String** and we'll configure this field as an **Identity**. For the Schema **Platform Demo - Website Interactions Schema**, we assume that a customer will always be identified by their ECID, which means that you have to configure the field **ECID** as a **primary** identifier
+The ECID-field will be defined as type **String** and we'll configure this field as an **Identity**. For the Schema **AEP Demo - Website Interactions Schema**, we assume that a customer will always be identified by their ECID, which means that you have to configure the field **ECID** as a **primary** identifier
 
 To add the fields, click the **Add Field** button next to the **identification**-object.
 

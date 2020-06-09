@@ -25,6 +25,8 @@ activity:
 
 ## Architecture Overview
 
+![Luma Retail](./assets/images/whiteboard.png)
+
 ![Luma Retail](./assets/images/architecture.png)
 
 [Go Back to All Modules](./overview.md)

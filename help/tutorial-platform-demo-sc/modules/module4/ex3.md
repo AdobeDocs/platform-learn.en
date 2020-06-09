@@ -13,7 +13,7 @@ You can demonstrate your Alexa skill and its interaction with Platform, even if 
 
 To do this, you'll use the Alexa Simulator.
 
-Go to your **AWS Lambda** definition screen for **Platform**.
+Go to your **AWS Lambda** definition screen for **AEP**.
 
 Make sure you have all of these **Environment Variables** properly configured in your Lambda-function before your demonstration, and make sure that these three reflect the proper values for your demo: **ldap**, **alexaBrandName**, **emailAddress**.
  
@@ -21,11 +21,11 @@ Make sure you have all of these **Environment Variables** properly configured in
 
 If needed, update and save the **Environment variables**.
 
-Go to your **alexa developer console** and open the **Platform** skill you created as part of [Exercise 4.2](./ex2.md).
+Go to your **alexa developer console** and open the **AEP** skill you created as part of [Exercise 4.2](./ex2.md).
 
 ![Platform Skill Main Screen](images/aepskillmainscreen.png)
 
-In the **Platform** skill definition screen within the **alexa developer console**, click on **Test**. 
+In the **AEP** skill definition screen within the **alexa developer console**, click on **Test**. 
 You might be prompted if you want to allow use of the microphone. The instructions here are using text input for simulating the conversation.
 
 ![Initial Test Screen](images/initialtestscreen.png)
@@ -94,7 +94,7 @@ Click on **Datasets**.
 
 ![Datasets](images/datasets.png)
 
-Select **Platform Demo - Voice Assistant Interactions**.
+Select **AEP Demo - Voice Assistant Interactions**.
 
 ![EMEA Voice](images/selectemeavoice.png)
 

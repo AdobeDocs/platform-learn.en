@@ -414,9 +414,9 @@ You'll then have this:
 
 Click the ``Select``-button to select the Adobe Experience Platform-dataset to use.
 
-Enter the search term ``Platform Demo - ETL`` and click ``Search``. You'll then see these datasets being returned.
+Enter the search term ``AEP Demo - ETL`` and click ``Search``. You'll then see these datasets being returned.
 
-Select the dataset ``Platform Demo - ETL Profile Data``.
+Select the dataset ``AEP Demo - ETL Profile Data``.
 
 ![ETL](./images/4target6.png)
 
@@ -488,7 +488,7 @@ Go to [Adobe Experience Platform](https://platform.adobe.com/home), to Datasets 
 
 ![ETL](./images/run9.png)
 
-Open the dataset ``Platform Demo - ETL Profile Data``.
+Open the dataset ``AEP Demo - ETL Profile Data``.
 
 ![ETL](./images/4run11.png)
 

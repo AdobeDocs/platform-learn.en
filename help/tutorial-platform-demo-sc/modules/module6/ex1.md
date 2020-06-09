@@ -47,7 +47,7 @@ Next, add a description like this **Account Creation Event**.
 
 ![ACOP](./images/eventdescription.png)
 
-Next is the Schema selection. A schema was prepared for this exercise. Please use the schema **Platform Demo - Account Creation Schema v.1**.
+Next is the Schema selection. A schema was prepared for this exercise. Please use the schema **AEP Demo - Account Creation Schema v.1**.
 
 ![ACOP](./images/eventschema.png)
 

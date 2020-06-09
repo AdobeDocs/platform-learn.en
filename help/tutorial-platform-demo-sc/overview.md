@@ -68,7 +68,7 @@ Go to [Architecture](./architecture.md).
 
 - **Audience:** Data Engineer, Data Architect
 - **Prerequisites:** Access to Adobe Experience Platform and Adobe Experience Platform Launch
-- **Description:** In this foundational module, you will configure Launch with the new Web SDK extension and implemen Launch on the Platform Demo website.
+- **Description:** In this foundational module, you will configure Launch with the new Web SDK extension and implement Launch on the Platform Demo website.
 - **Time Investment:** 120 minutes
 
 [2. Foundation - Data Ingestion](./modules/module2/data-ingestion.md)

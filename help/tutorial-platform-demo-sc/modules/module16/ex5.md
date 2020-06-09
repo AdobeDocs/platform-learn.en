@@ -37,7 +37,7 @@ You'll then see the **Create Connection**-UI.
 
 ![demo](./images/5.png)
 
-In the left menu, you can see all available Adobe Experience Platform datasets. Search for the dataset **Platform Demo - BigQuery Website Interactions**. Click **+** to add the dataset to this connection.
+In the left menu, you can see all available Adobe Experience Platform datasets. Search for the dataset **AEP Demo - BigQuery Website Interactions**. Click **+** to add the dataset to this connection.
 
 ![demo](./images/6.png)
 
@@ -51,7 +51,7 @@ You now have to select the **Person ID**. Please select the **crmId** as person 
 
 You'll now enrich the Google Analytics Website Interaction data with another Adobe Experience Platform dataset. 
 
-Search for the dataset **Platform Demo - Loyalty Data (M16)** data set and add it to this connection.
+Search for the dataset **AEP Demo - Loyalty Data (M16)** data set and add it to this connection.
 
 ![demo](./images/10.png)
 
@@ -59,7 +59,7 @@ You'll then see this:
 
 ![demo](./images/10a.png)
 
-In order to merge both datasets, you need to select a **Person ID** that contains the same type of IDs. The dataset **Platform Demo - Loyalty Data (M16)** uses the **loyaltyId** as Person ID, which contains the same type of IDs as the **Platform Demo - BigQuery Website Interactions**, which uses the **crmId** as a Person ID. 
+In order to merge both datasets, you need to select a **Person ID** that contains the same type of IDs. The dataset **AEP Demo - Loyalty Data (M16)** uses the **loyaltyId** as Person ID, which contains the same type of IDs as the **AEP Demo - BigQuery Website Interactions**, which uses the **crmId** as a Person ID. 
 
 ![demo](./images/12.png)
 

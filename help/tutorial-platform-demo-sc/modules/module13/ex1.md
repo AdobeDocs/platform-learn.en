@@ -68,9 +68,9 @@ Please have a look a these schemas and datasets in Adobe Experience Platform.
 
 | Dataset         | Schema|    
 | ----------------- |-------------| 
-| Platform Demo - Website Interactions | Platform Demo - Website Interactions Schema |   
-| Platform Demo - Call Center Interactions | Platform Demo - Call Center Interactions Schema |   
-| Platform Demo - Voice Assistant Interactions| Platform Demo - Voice Assistant Interactions Schema |    
+| AEP Demo - Website Interactions | AEP Demo - Website Interactions Schema |   
+| AEP Demo - Call Center Interactions | AEP Demo - Call Center Interactions Schema |   
+| AEP Demo - Voice Assistant Interactions| AEP Demo - Voice Assistant Interactions Schema |    
 
 Make sure to have at least checked things like:
 

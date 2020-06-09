@@ -30,11 +30,11 @@ Bringing data from different channels is a tough task for any brand. And in this
 
 ![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
-Luma Telco is streaming data into Adobe Experience Platform and this data is available in the platform in **Platform Demo - Website Interactions** dataset. Search for **Platform Demo - Website Interactions**.
+Luma Telco is streaming data into Adobe Experience Platform and this data is available in the platform in **AEP Demo - Website Interactions** dataset. Search for **AEP Demo - Website Interactions**.
 
 ![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
 
-Luma Telco's Callcenter Interaction data is captured in the **Platform Demo - Call Center Interactions** dataset. Search for **Platform Demo - Call Center Interactions** data in search box. Click on the dataset's name to get dataset details.
+Luma Telco's Callcenter Interaction data is captured in the **AEP Demo - Call Center Interactions** dataset. Search for **AEP Demo - Call Center Interactions** data in search box. Click on the dataset's name to get dataset details.
 
 ![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
 
@@ -42,7 +42,7 @@ After clicking the dataset, you will get an overview of the dataset activity suc
 
 ![preview-interaction-dataset.png](./images/preview-interaction-dataset.png)
 
-Click on **Preview Dataset** to see a sample of the data stored in **Platform Demo - Call Center Interactions** dataset. The left panel shows schema structure for this dataset.
+Click on **Preview Dataset** to see a sample of the data stored in **AEP Demo - Call Center Interactions** dataset. The left panel shows schema structure for this dataset.
 
 ![QS](./images/previewds.png)
 

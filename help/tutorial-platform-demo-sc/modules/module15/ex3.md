@@ -100,7 +100,7 @@ When you click **Score**, the following cells are executed:
 * Pipeline File
 * Evaluator File
 
-Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the **Platform Demo - ML Predictions**-Dataset.
+Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the **AEP Demo - ML Predictions**-Dataset.
 
 You can verify this [here](https://platform.adobe.com/dataset).
 

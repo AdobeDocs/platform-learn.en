@@ -73,7 +73,7 @@ Click the dataset icon to select an existing dataset:
 
 ![demo](./images/ex4/5.png)
 
-Search for the dataset named **Platform Demo - BigQuery Website Interactions** and select it.
+Search for the dataset named **AEP Demo - BigQuery Website Interactions** and select it.
 
 ![demo](./images/ex4/6.png)
 

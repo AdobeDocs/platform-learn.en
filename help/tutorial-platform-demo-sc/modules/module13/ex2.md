@@ -50,7 +50,7 @@ On the right side, you'll find the **stitching area`, where you’ll select the 
 
 First, let's bring some datasets to the canvas. There are two ways: one by one or selecting some of them and click on add. We can try both.
 
-Search for the dataset **Platform Demo - Website Interactions**, then click **+**.
+Search for the dataset **AEP Demo - Website Interactions**, then click **+**.
 
 ![demo](./images/cja7.png)
 
@@ -58,7 +58,7 @@ You'll see the dataset being added to the canvas.
 
 ![demo](./images/cja8.png)
 
-Now search and check the checkboxes for **Platform Demo - Voice Assistant Interactions** and **Platform Demo - Call Center Interactions**. 
+Now search and check the checkboxes for **AEP Demo - Voice Assistant Interactions** and **AEP Demo - Call Center Interactions**. 
 
 Next, click **Add**.
 
@@ -80,7 +80,7 @@ Each data source has its own Person ID field. Check each dataset by clicking on 
 
 ![demo](./images/cja12.png)
 
-As you can see, most of them have the Person ID selected automatically. This is because a Primary Identifier is selected in every schema in Adobe Experience Platform. As an example, here's the schema for **Platform Demo - Call Center Interactions**, where you can see that the Primary Identifier is set to **mobilenr**.
+As you can see, most of them have the Person ID selected automatically. This is because a Primary Identifier is selected in every schema in Adobe Experience Platform. As an example, here's the schema for **AEP Demo - Call Center Interactions**, where you can see that the Primary Identifier is set to **mobilenr**.
 
 ![demo](./images/cja13.png)
 
@@ -115,9 +115,9 @@ Once you have stitched the 3 datasets, we are ready to continue.
 
 |  dataset       | Person ID | 
 | ----------------- |-------------| 
-| Platform Demo - Website Interactions | emailId         | 
-| Platform Demo - Voice Assistant Interactions | emailId          | 
-| Platform Demo - Call Center Interactions | emailId         | 
+| AEP Demo - Website Interactions | emailId         | 
+| AEP Demo - Voice Assistant Interactions | emailId          | 
+| AEP Demo - Call Center Interactions | emailId         | 
 
 Click on Next.
 
