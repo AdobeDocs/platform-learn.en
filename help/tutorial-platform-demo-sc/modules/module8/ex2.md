@@ -63,7 +63,7 @@ seed = 1234
 inputDataset="5ea04d5b7f917418a8b7994c" # Recommendations Input Dataset
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -82,7 +82,7 @@ df = dataset_reader.limit(100).read()
 df.head(20)
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -100,7 +100,7 @@ Click on the next cell in the notebook.
 print("You'll see the number of lines and the number of columns:", df.shape)
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -118,7 +118,7 @@ Click on the fourth cell in the notebook.
 df.head(20)
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -139,7 +139,7 @@ interaction_type = '<aepTenantId>.interactionType'
 timestamp = '<aepTenantId>.timestamp'
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -151,7 +151,7 @@ Then click on the next cell in the notebook.
 df.describe()
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -169,7 +169,7 @@ Click on the seventh cell in the notebook.
 df[[user_id, item_id]].groupby([item_id]).agg(['count'])
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -202,7 +202,7 @@ Let's have a look at all steps in detail...
 
 ### Train a model
 
-Training a model is done by clicking the **Train** - button.
+Training a model is done by clicking the **Train** button.
 
 ![DSW](./images/playtrain.png)
 
@@ -226,7 +226,7 @@ When you click **Train**, the following cells are executed:
 
 ### Score a model
 
-Training a model is done by clicking the **Score** - button.
+Training a model is done by clicking the **Score** button.
 
 ![DSW](./images/playscore.png)
 
@@ -250,21 +250,21 @@ When you click **Score**, the following cells are executed:
 
 Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the **AEP Demo - Recommendations Output**-dataset.
 
-You can verify this [by opening the AEP Demo - Recommendations Output-dataset in Adobe Experience Platform](https://platform.adobe.com/dataset).
+You can verify this [by opening the Platform Demo - Recommendations Output-dataset in Adobe Experience Platform](https://platform.adobe.com/dataset).
 
 ![DSW](./images/recoutput.png)
 
 ### Create a recipe from the model
 
-Creating a recipe is done by clicking the **Create Recipe** - button.
+Creating a recipe is done by clicking the **Create Recipe** button.
 
 ![DSW](./images/playrecipe.png)
 
-When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** - button to start the process.
+When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** button to start the process.
 
 Creating a recipe enables you to test your model at scale.
 
-After clicking the **Create Recipe** - button, you have to enter a name for your recipe.
+After clicking the **Create Recipe** button, you have to enter a name for your recipe.
 
 ![DSW](./images/recname.png)
 
@@ -286,7 +286,7 @@ A second popup is shown, telling you that your Recipe is being created. This cou
 
 ![DSW](./images/popup.png)
 
-For now, click the **Dismiss** - button.
+For now, click the **Dismiss** button.
 
 ![DSW](./images/dismiss.png)
 

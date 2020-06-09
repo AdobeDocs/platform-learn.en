@@ -8,8 +8,8 @@ audience: all
 
 + [Tutorial Overview](/help/tutorial-platform-demo-sc/overview.md)
 + [Architecture Overview](/help/tutorial-platform-demo-sc/architecture.md)
-+ 1 - Launch and the WebSDK extension {#module1}
-  + [Overview](/help/tutorial-platform-demo-sc/modules/module1/data-ingestion-launch-websdk.md)
++ 1 - Launch and the Web SDK extension {#module1}
+  + [Overview](/help/tutorial-platform-demo-sc/modules/module1/data-ingestion-launch-web-sdk.md)
 + 2 - Data Ingestion {#module2}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module2/data-ingestion.md)
   + [2.1 Explore the website](/help/tutorial-platform-demo-sc/modules/module2/ex1.md)
@@ -65,7 +65,7 @@ audience: all
   + [9.4 Retrieve Data Sets in Platform](/help/tutorial-platform-demo-sc/modules/module9/ex4.md)
   + [9.5 Configure GTM Tags & Triggers](/help/tutorial-platform-demo-sc/modules/module9/ex5.md)
   + [9.6 Publish your GTM Property](/help/tutorial-platform-demo-sc/modules/module9/ex6.md)
-  + [9.7 Implement GTM Tag on AEP Demo website](/help/tutorial-platform-demo-sc/modules/module9/ex7.md)
+  + [9.7 Implement GTM Tag on Platform Demo website](/help/tutorial-platform-demo-sc/modules/module9/ex7.md)
   + [9.8 Verify Data Ingestion from website into Platform](/help/tutorial-platform-demo-sc/modules/module9/ex8.md)
 + 10 - Data Science Workspace - Churn Prediction Model {#module10}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module10/data-science-workspace-churn-prediction-model.md)

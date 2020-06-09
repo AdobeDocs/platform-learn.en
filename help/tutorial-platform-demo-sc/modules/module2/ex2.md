@@ -19,7 +19,7 @@ Before you start configuring XDM Schema's and setting Primary Identifiers, we ne
 
 * We Want Data
 * We Want to Link Data to a Customer
-* We Want to Build a Progressive, Unified Profile
+* We Want to Build a Progressive, Real-time Customer Profile
 
 There are 2 types of data that we want to capture:
 
@@ -100,7 +100,7 @@ In the **Assign Class**-window, select **XDM Individual Profile**.
 
 ![Data Ingestion](./images/XDMProfile.png)
 
-Click the **Assign Class**-button to assign the class.
+Click the **Assign Class** button to assign the class.
 
 ![Data Ingestion](./images/assignclass.png)
 
@@ -128,43 +128,43 @@ To make that information part of your schema, you need to add the following Mixi
 * Profile Preferences Details (Other Information)
 * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
 
-You can add these Mixins by clicking the **+ Add**-button below the Class that you just defined.
+You can add these Mixins by clicking the **+ Add** button below the Class that you just defined.
 
 ![Data Ingestion](./images/addmixin.png)
 
 Let's start with **Profile Person Details**.
 
-Click the **+ Add**-button to start adding a Mixin.
+Click the **+ Add** button to start adding a Mixin.
 
 In the **Add Mixin**-screen, select the Mixin **Profile Person Details**.
 
 ![Data Ingestion](./images/ppd.png)
 
-Click the **Add Mixin**-button to add the Mixin to your schema.
+Click the **Add Mixin** button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
 Next, add the Mixin **Profile Personal Details**.
 
-Click the **+ Add**-button to start adding a Mixin.
+Click the **+ Add** button to start adding a Mixin.
 
 In the **Add Mixin**-screen, select the Mixin **Profile Personal Details**.
 
 ![Data Ingestion](./images/ppsd.png)
 
-Click the **Add Mixin**-button to add the Mixin to your schema.
+Click the **Add Mixin** button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
 Next, add the Mixin **Profile Preferences Details**.
 
-Click the **+ Add**-button to start adding a Mixin.
+Click the **+ Add** button to start adding a Mixin.
 
 In the **Add Mixin**-screen, select the Mixin **Profile Preferences Details**.
 
 ![Data Ingestion](./images/ppfd.png)
 
-Click the **Add Mixin**-button to add the Mixin to your schema.
+Click the **Add Mixin** button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -172,7 +172,7 @@ Lastly, you need a new Mixin to capture the **Identifier** used for data collect
 
 You will now create your own custom Mixin and as such, you'll be extending the XDM Schema to meet your own company's requirements.
 
-Click the **+ Add**-button to start adding a Mixin.
+Click the **+ Add** button to start adding a Mixin.
 
 ![Data Ingestion](./images/addmixin.png)
 
@@ -189,7 +189,7 @@ That should give you something like this:
 
 ![Data Ingestion](./images/mixinname.png)
 
-Click the **Add Mixin**-button to add the newly created Mixin to your schema.
+Click the **Add Mixin** button to add the newly created Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -204,11 +204,11 @@ In the Mixins-list, click your custom Mixin.
 
 You now see a number of new buttons appear. These buttons are named **+ Add Field**.
 
-On the top-level of your Schema, next to your Schema - name, click the **+ Add Field**-button.
+On the top-level of your Schema, next to your Schema - name, click the **+ Add Field** button.
 
 ![Data Ingestion](./images/clickaddfield.png)
 
-After clicking the **+ Add Field**-button, you now see a new **object** in your schema. This object represents a custom **object** in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance in your **Environment Variables**.
+After clicking the **+ Add Field** button, you now see a new **object** in your schema. This object represents a custom **object** in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance in your **Environment Variables**.
 
 ![Data Ingestion](./images/tenant.png)
 
@@ -251,7 +251,7 @@ You'll now add 3 new fields under the  **identification**-object:
 
 Each field will be defined as type **String** and we'll configure these fields as **Identities**. For the Schema **Website Registration Schema**, we assume that a customer will always be identified by their email-address, which means that you have to configure the field **emailId** as a **primary** identifier, and the other fields as **secondary** identifiers.
 
-To add the fields, click the **Add Field**-button next to the **identification**-object.
+To add the fields, click the **Add Field** button next to the **identification**-object.
 
 ![Data Ingestion](./images/schemaid2.png)
 
@@ -265,7 +265,7 @@ This is how each field should look after your initial field configuration:
 
 ![Data Ingestion](./images/ecidfield.png)
 
-To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply**-button.
+To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply** button.
 
 ![Data Ingestion](./images/apply.png)
 
@@ -273,7 +273,7 @@ To save your field, scroll down in the **Field Properties** until you see the bu
 
 ![Data Ingestion](./images/emailidfield.png)
 
-To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply**-button.
+To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply** button.
 
 ![Data Ingestion](./images/apply.png)
 
@@ -281,7 +281,7 @@ To save your field, scroll down in the **Field Properties** until you see the bu
 
 ![Data Ingestion](./images/mobilenrfield.png)
 
-To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply**-button.
+To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply** button.
 
 ![Data Ingestion](./images/apply.png)
 
@@ -363,7 +363,7 @@ You'll see this message:
 
 ![Data Ingestion](./images/sure.png)
 
-Click **Enable** to enable this schema for Unified Profile.
+Click **Enable** to enable this schema for Profile.
 
 Your Schema is now configured to be part of the Real-time Customer Profile.
 
@@ -439,7 +439,7 @@ In the **Assign Class**-window, select **XDM ExperienceEvent**.
 
 ![Data Ingestion](./images/XDMEE.png)
 
-Click the **Assign Class**-button to assign the class.
+Click the **Assign Class** button to assign the class.
 
 ![Data Ingestion](./images/assignclass.png)
 
@@ -470,43 +470,43 @@ To make that information part of your schema, you need to add the following Mixi
   * ExperienceEvent Environment Details
   * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
 
-You can add these Mixins by clicking the **+ Add**-button below the Class that you just defined.
+You can add these Mixins by clicking the **+ Add** button below the Class that you just defined.
 
 ![Data Ingestion](./images/addmixinee.png)
 
 Let's start with **ExperienceEvent Web Details**.
 
-Click the **+ Add**-button to start adding a Mixin.
+Click the **+ Add** button to start adding a Mixin.
 
 In the **Add Mixin**-screen, select the Mixin **ExperienceEvent Web Details**.
 
 ![Data Ingestion](./images/eewd.png)
 
-Click the **Add Mixin**-button to add the Mixin to your schema.
+Click the **Add Mixin** button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
 Next, add the Mixin **ExperienceEvent Commerce Details**.
 
-Click the **+ Add**-button to start adding a Mixin.
+Click the **+ Add** button to start adding a Mixin.
 
 In the **Add Mixin**-screen, select the Mixin **ExperienceEvent Commerce Details**.
 
 ![Data Ingestion](./images/eecd.png)
 
-Click the **Add Mixin**-button to add the Mixin to your schema.
+Click the **Add Mixin** button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
 Next, add the Mixin **ExperienceEvent Environment Details**.
 
-Click the **+ Add**-button to start adding a Mixin.
+Click the **+ Add** button to start adding a Mixin.
 
 In the **Add Mixin**-screen, select the Mixin **ExperienceEvent Environment Details**.
 
 ![Data Ingestion](./images/eeed.png)
 
-Click the **Add Mixin**-button to add the Mixin to your schema.
+Click the **Add Mixin** button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -516,7 +516,7 @@ You will now create your own custom Mixin and as such, you'll be extending the X
 
 A Mixin is linked to a Class, so that means that we can't simply reuse the previously created Mixin.
 
-Click the **+ Add**-button to start adding a Mixin.
+Click the **+ Add** button to start adding a Mixin.
 
 ![Data Ingestion](./images/addmixinee.png)
 
@@ -533,7 +533,7 @@ That should give you something like this:
 
 ![Data Ingestion](./images/mixinnameee.png)
 
-Click the **Add Mixin**-button to add the newly created Mixin to your schema.
+Click the **Add Mixin** button to add the newly created Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -548,11 +548,11 @@ In the Mixins-list, click your custom Mixin.
 
 You now see a number of new buttons appear. These buttons are named **+ Add Field**.
 
-On the top-level of your Schema, next to your Schema - name, click the **+ Add Field**-button.
+On the top-level of your Schema, next to your Schema - name, click the **+ Add Field** button.
 
 ![Data Ingestion](./images/clickaddfieldee.png)
 
-After clicking the **+ Add Field**-button, you now see a new **object** in your schema. This object represents a custom **object** in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance in your **Environment Variables**.
+After clicking the **+ Add Field** button, you now see a new **object** in your schema. This object represents a custom **object** in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance in your **Environment Variables**.
 
 ![Data Ingestion](./images/tenantee.png)
 
@@ -586,7 +586,7 @@ We'll now add 1 new field under the  **identification**-object:
 
 The ECID-field will be defined as type **String** and we'll configure this field as an **Identity**. For the Schema **AEP Demo - Website Interactions Schema**, we assume that a customer will always be identified by their ECID, which means that you have to configure the field **ECID** as a **primary** identifier
 
-To add the fields, click the **Add Field**-button next to the **identification**-object.
+To add the fields, click the **Add Field** button next to the **identification**-object.
 
 ![Data Ingestion](./images/schemaid2ee.png)
 
@@ -648,7 +648,7 @@ You'll see this message:
 
 ![Data Ingestion](./images/sure.png)
 
-Click **Enable** to enable this schema for Unified Profile.
+Click **Enable** to enable this schema for Profile.
 
 Your Schema is now configured to be part of the Real-time Customer Profile.
 

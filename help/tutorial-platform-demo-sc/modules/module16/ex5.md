@@ -25,7 +25,7 @@ On the Customer Journey Analytics-homepage, go to **Connections**.
 
 ![demo](./images/1.png)
 
-Here you can see all the different connections made between CJA and AEP. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets. 
+Here you can see all the different connections made between CJA and Platform. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets. 
 
 ![demo](./images/2.png)
 
@@ -338,7 +338,7 @@ You can see now that the attribution for that particular metric is now First Tou
 
 You can do as much breakdown as you want, without limits of types of variable, segments, dimension or date ranges.
 
-Something even more special is the ability to bring together other datasets from AEP to enrich the digital behaviour data from Google Analytics. For example, offline, call center, loyalty or CRM data.
+Something even more special is the ability to bring together other datasets from Platform to enrich the digital behaviour data from Google Analytics. For example, offline, call center, loyalty or CRM data.
 
 To showcase that functionality, let's configure your first breakdown thats combines offline data with online data. Pick the dimension **loyaltyStatus** and drag and drop it into any **marketingchannel** for example Organic:
 

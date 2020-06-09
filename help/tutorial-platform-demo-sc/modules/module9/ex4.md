@@ -52,7 +52,7 @@ Search for **AEP Demo - GA Website Registrations Schema** to find the Profile XD
 
 ![Platform Setup](./images/xdmprofile.png)
 
-The AEP Demo - GA Website Registrations Schema looks like this and is using the Google ID as a Secondary Identifier, with Email being the Primary Identifier.
+The Platform Demo - GA Website Registrations Schema looks like this and is using the Google ID as a Secondary Identifier, with Email being the Primary Identifier.
 
 ![Platform Setup](./images/profiledtl.png)
 

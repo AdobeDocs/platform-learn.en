@@ -95,7 +95,7 @@ The result of executing the cell and loading the data from that dataset is that 
 
 Before going further with data exploration, we need to import certain libraries.
 
-In your Jupyter notebook, click the **+** - button to create a new, empty cell.
+In your Jupyter notebook, click the **+** button to create a new, empty cell.
 
 ![DSW10](./images/aepjuppynavdscicodeplus.png)
 

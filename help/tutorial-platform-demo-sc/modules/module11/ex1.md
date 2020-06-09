@@ -9,7 +9,7 @@ activity:
 
 # 11.1 Build a segment and enable Streaming Segmentation
 
-In this exercise, you'll create a segment by making use of Adobe Experience Platform's new unified segmentation experience.
+In this exercise, you'll create a segment by making use of Adobe Experience Platform's Segment Builder.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -19,7 +19,7 @@ In today's world, responding to a customer's behavior needs to be real-time. One
 
 ## Identify the behavior you want to react to
 
-Go to your AEP Demo-website.
+Go to your Platform Demo-website.
 
 You'll be redirected to the **Admin**-page
 
@@ -76,7 +76,7 @@ On this page, you can see an overview of all existing segments.
 
 ![Segmentation](./images/segmentation.png)
 
-Click on the **Create Segment**-button to start creating a new segment.
+Click on the **Create Segment** button to start creating a new segment.
 
 ![Segmentation](./images/createnewsegment.png)
 
@@ -102,7 +102,7 @@ The comparison parameter should be **equals** and in the input field, enter **Ze
 
 ![Segmentation](./images/pv.png)
 
-Every time you add an element to the segment builder, you can click the **Refresh Estimate**-button to get a new estimate of the population in your segment.
+Every time you add an element to the segment builder, you can click the **Refresh Estimate** button to get a new estimate of the population in your segment.
 
 As we're using a shared environment, you also need to add your **ldap** as a filter for this segment.
 
@@ -139,11 +139,11 @@ It's also important to note the **Streaming** - switch.
 
 By enabling the **Streaming**-switch, your segment will qualify in real-time and will be available for activation in real-time.
 
-Then, click the **Save** - button to save your segment, after which you'll be taken back to the Segment overview - page.
+Then, click the **Save** button to save your segment, after which you'll be taken back to the Segment overview - page.
 
 ![Segmentation](./images/savedsegment.png)
 
-When you now go back to the AEP Demo - website and refresh the homepage, you should see the Streaming Segment that you just built already qualify for your profile on the Xray-panel.
+When you now go back to the Platform Demo - website and refresh the homepage, you should see the Streaming Segment that you just built already qualify for your profile on the Xray-panel.
 
 ![Segmentation](./images/xraystrseg.png)
 

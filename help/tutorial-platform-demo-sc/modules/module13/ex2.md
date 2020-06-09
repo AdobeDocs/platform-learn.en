@@ -24,7 +24,7 @@ On the Customer Journey Analytics-homepage, go to **Connections**.
 
 ![demo](./images/cja2.png)
 
-Here you can see all the different connections made between CJA and AEP. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets. 
+Here you can see all the different connections made between CJA and Platform. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets. 
 
 Let's create your first connection. 
 

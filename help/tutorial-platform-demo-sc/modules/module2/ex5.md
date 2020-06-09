@@ -54,7 +54,7 @@ All these fields have been defined to produce data that is compatible with Platf
 
 ![Data Ingestion](./images/dd.png)
 
-To generate your CSV-file, click the **Download Data**-button which will give you a CSV-file with 1000 lines of demo-data. 
+To generate your CSV-file, click the **Download Data** button which will give you a CSV-file with 1000 lines of demo-data. 
 
 Open your CSV-file in Microsoft Excel to visualize its contents.
 
@@ -89,11 +89,11 @@ Second, by scrolling down on the page you can check when batches of data were in
 
 ![Data Ingestion](./images/datasetsettings.png)
 
-Lastly, the Dataset Info tab shows important information like the Dataset ID (again, important from a troubleshooting perspective), the Dataset's Name and whether the dataset was enabled for Unified Profile and Streaming Ingestion. 
+Lastly, the Dataset Info tab shows important information like the Dataset ID (again, important from a troubleshooting perspective), the Dataset's Name and whether the dataset was enabled for Profile and Streaming Ingestion. 
 
 ![Data Ingestion](./images/ds_ups_link.png)
 
-Enabling a dataset for Streaming Ingestion can currently only be done through the API's. 
+Enabling a dataset for Streaming Ingestion can currently only be done through the APIs. 
 
 The most important setting here is the link between the dataset and the Schema. The Schema defines what data can be ingested and how that data should look like. 
 
@@ -105,13 +105,13 @@ By clicking on the name of the schema, you're taken to the Schema overview were 
 
 ![Data Ingestion](./images/schemads.png)
 
-Every schema needs to have a custom, primary descriptor defined. In the case of our CRM dataset, the schema has defined that the field **email** should be the primary identifier. If you want to create a schema and link it to the Unified Profile, you need to define a custom Mixin that refers to your primary descriptor.
+Every schema needs to have a custom, primary descriptor defined. In the case of our CRM dataset, the schema has defined that the field **email** should be the primary identifier. If you want to create a schema and link it to the Real-time Customer Profile, you need to define a custom Mixin that refers to your primary descriptor.
 
 ![Data Ingestion](./images/schema_descriptor.png)
 
 In the above screenshot, you can see that our descriptor is located in **\<aepTenantId>.identification.emailId**, which is set as the Primary Identifier, linked to the namespace of **email**.
 
-Every schema and as such, every dataset that should be used in the Unified Profile should have 1 Primary identifier. This Primary Identifier is the identifier user by the brand for a customer in that dataset. In the case of a CRM dataset it might be the email-address or the CRM ID, in the case of a Call Center dataset it might be the mobile number of a customer.
+Every schema and as such, every dataset that should be used in the Real-time Customer Profile should have 1 Primary identifier. This Primary Identifier is the identifier user by the brand for a customer in that dataset. In the case of a CRM dataset it might be the email-address or the CRM ID, in the case of a Call Center dataset it might be the mobile number of a customer.
 
 It is best practice to create a separate, specific schema for every dataset and to set the descriptor for every dataset specifically to match how the current solutions used by the brand operate.
 
@@ -123,7 +123,7 @@ The goal of this is to onboard CRM data in Platform. All the data that is ingest
 
 The workflow that we'll use here, is the workflow named **Map CSV to XDM Schema** in the Data Ingestion menu.
 
-Click the **Map CSV to XDM Schema**-button.
+Click the **Map CSV to XDM Schema** button.
 
 ![Data Ingestion](./images/mapcsvxdm.png)
 
@@ -162,7 +162,7 @@ Selecting the descriptor is actually the most important thing: you'll be definin
 Our descriptor for the **AEP Demo - CRM Onboarding**-dataset is the **email** as it's the unique identifier for our dataset.
 In our case, based on the selection of the dataset and the schema that is linked to the dataset, the required Target Schema Field in XDM is **\<aepTenantId>.identification.emailId**. You need to map the **email**-field from your CSV file as the source attribute for this required Target Schema Field.
 
-To do this, click the **Add new mapping**-button.
+To do this, click the **Add new mapping** button.
 
 ![Data Ingestion](./images/reqmapping.png)
 
@@ -230,7 +230,7 @@ On the next screen you'll see an overview of what you've done and you can start 
 
 ![Data Ingestion](./images/mapoverview.png)
 
-Click the **Ingest**-button.
+Click the **Ingest** button.
 
 ![Data Ingestion](./images/ingest.png)
 
@@ -242,7 +242,7 @@ After a couple of minutes, the file will be successfully ingested.
 
 ![Data Ingestion](./images/success.png)
 
-Click the **Finish**-button to finish the workflow.
+Click the **Finish** button to finish the workflow.
 
 ![Data Ingestion](./images/finish.png)
 

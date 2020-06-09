@@ -53,7 +53,7 @@ You should create a new dataset. To create a new dataset, click on the button **
 
 ![Data Ingestion](./images/createdataset.png)
 
-After clicking the **+ Create Dataset** - button, you'll see the following screen. 
+After clicking the **+ Create Dataset** button, you'll see the following screen. 
 
 ![Data Ingestion](./images/datasetsetup.png)
 
@@ -92,7 +92,7 @@ You should create a new dataset. To create a new dataset, click on the button **
 
 ![Data Ingestion](./images/createdataset.png)
 
-After clicking the **+ Create Dataset** - button, you'll see the following screen. 
+After clicking the **+ Create Dataset** button, you'll see the following screen. 
 
 ![Data Ingestion](./images/datasetsetup.png)
 
@@ -125,7 +125,7 @@ You should now have created 2 datasets, and you should see both of them in the D
 
 ![Data Ingestion](./images/datasetsoverview.png)
 
-You now have to enable your datasets to be part of Adobe Experience Platform's Unified Profile.
+You now have to enable your datasets to be part of Adobe Experience Platform's Real-time Customer Profile.
 
 Open you dataset **AEP Demo - Website Registrations** by clicking on it.
 

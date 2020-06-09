@@ -95,7 +95,7 @@ Fill out all the fields and click **Create Account**.
 
 ![Verify Calls](./images/createaccount.png)
 
-After clicking the **Create Account** - button, you're sent to the homepage.
+After clicking the **Create Account** button, you're sent to the homepage.
 
 In the Chrome Developer Console, go to the **Console**-view. In the **Filter**, type **GA**.
 

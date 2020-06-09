@@ -70,7 +70,7 @@ You can scroll the window to see the entire query, or you can click on the icon 
 
 ![click-copy-query.png](./images/click-copy-query.png)
 
-You can't just see the queries that have been executed, this User Interface lets you create new datasets from queries. These datasets can be linked to Adobe Experience Platform's Real-Time Customer Profile or can be used as input for Adobe Experience Platform Data Science Workspace.
+You can't just see the queries that have been executed, this User Interface lets you create new datasets from queries. These datasets can be linked to Adobe Experience Platform's Real-time Customer Profile or can be used as input for Adobe Experience Platform Data Science Workspace.
 
 ## 7.1.4 - Connect PSQL Client to Query Service
 

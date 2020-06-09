@@ -47,7 +47,7 @@ Open the dataset **AEP Demo - Website Interactions**.
 
 ![DSW](./images/dsview.png)
 
-By clicking the **Preview Dataset** - button, you can see what data is sent into that dataset and how the data model looks like.
+By clicking the **Preview Dataset** button, you can see what data is sent into that dataset and how the data model looks like.
 
 ![DSW](./images/dspreview.png)
 
@@ -71,7 +71,7 @@ In the Schemas - overview, search to find the 3 schemas you'll be using in this 
 
 ![DSW](./images/schemaoverview.png)
 
-Let's explore the schema for AEP Demo - Website Interactions Schema, click to open the schema named **AEP Demo - Website Interactions Schema**.
+Let's explore the schema for Platform Demo - Website Interactions Schema, click to open the schema named **AEP Demo - Website Interactions Schema**.
 
 ![DSW](./images/schemadtl.png)
 
@@ -113,12 +113,12 @@ In Jupyter Notebooks, open the notebook named **luma-retail-recommendations-feat
 
 What you'll do next:
 
-* Define the input and output datasets for this Notebook
-* Read form Platform: Load the input dataset and describe it
-* Filter out empty values
-* Split the item_id into individual records
-* Create a new data-frame that holds the data that we need for our model
-* Write to Platform: Output that data-frame into a dataset in Adobe Experience Platform
+- Define the input and output datasets for this Notebook
+- Read form Platform: Load the input dataset and describe it
+- Filter out empty values
+- Split the item_id into individual records
+- Create a new data-frame that holds the data that we need for our model
+- Write to Platform: Output that data-frame into a dataset in Adobe Experience Platform
 
 ### Define the input and output datasets for this Notebook
 
@@ -142,7 +142,7 @@ timestamp = "timestamp"
 client_context = PLATFORM_SDK_CLIENT_CONTEXT
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -150,7 +150,7 @@ The execution of this cell might take 1-2 minutes. Just wait and don't do anythi
 
 Every time you push the play-button to execute a cell, you'll see an indicator that tells you whether or not your action is still ongoing.
 
-This is the indicator when you push the play - button to execute a cell:
+This is the indicator when you push the play button to execute a cell:
 
 ![DSW](./images/actionbusy.png)
 
@@ -162,7 +162,7 @@ Don't continue the exercises until the indicator shows that the execution is fin
 
 ![DSW](./images/actionfinished.png)
 
-There is no visual result after this execution. After clicking the play - button, continue to the next step.
+There is no visual result after this execution. After clicking the play button, continue to the next step.
 
 ### Read from Platform: Load the input dataset and show an overview of the data
 
@@ -178,7 +178,7 @@ df = dataset_reader.limit(50000).read()
 df.head()
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 The execution of this cell might take 1-2 minutes. Just wait and don't do anything else in this notebook until you the below result.
 
@@ -206,7 +206,7 @@ df = df.dropna(subset=[user_id, item_id, interactionType, brand_name])
 df = df[df[brand_name] == "Luma Telco"]
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -214,7 +214,7 @@ Wait until the indicator looks like this before continuing:
 
 ![DSW](./images/actionfinished.png)
 
-There is no visual result after this execution. After clicking the play - button, continue to the next step.
+There is no visual result after this execution. After clicking the play button, continue to the next step.
 
 ### Split the items into individual records
 
@@ -244,7 +244,7 @@ def split_df(dataframe, col_name, sep):
 df2 = split_df(df, item_id, "\|\|")
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -254,7 +254,7 @@ Wait until the indicator looks like this before continuing:
 
 ![DSW](./images/actionfinished.png)
 
-There is no visual result after this execution. After clicking the play - button, continue to the next step.
+There is no visual result after this execution. After clicking the play button, continue to the next step.
 
 ### Prep the data before saving it back to Adobe Experience Platform
 
@@ -275,7 +275,7 @@ df2.rename(columns={
 }, inplace=True)
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -285,7 +285,7 @@ Wait until the indicator looks like this before continuing:
 
 ![DSW](./images/actionfinished.png)
 
-There is no visual result after this execution. After clicking the play - button, continue to the next step.
+There is no visual result after this execution. After clicking the play button, continue to the next step.
 
 ### Write to Platform: Output that data-frame into a dataset in Adobe Experience Platform
 
@@ -297,7 +297,7 @@ Click on the next cell in the notebook.
 df2.head()
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -323,7 +323,7 @@ dataset_writer = DatasetWriter(PLATFORM_SDK_CLIENT_CONTEXT, dataset)
 write_tracker = dataset_writer.write(df2, file_format='json')
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 

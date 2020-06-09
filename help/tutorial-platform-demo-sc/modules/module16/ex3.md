@@ -89,7 +89,7 @@ The only thing to do here is to enter the name of the consent screen in the **Ap
 
 | Naming         | Example|    
 | ----------------- |-------------| 
-| ldap - AEP BigQuery Connector | delaigle - AEP BigQuery Connector |  
+| ldap - AEP BigQuery Connector | delaigle - Platform BigQuery Connector |  
 
 ![demo](./images/ex2/6-3.png)
 
@@ -113,7 +113,7 @@ You'll then see this:
 
 ![demo](./images/ex2/8.png)
 
-Click the **+ CREATE CREDENTIALS**-button.
+Click the **+ CREATE CREDENTIALS** button.
 
 ![demo](./images/ex2/9.png)
 
@@ -131,14 +131,14 @@ Follow this naming convention:
 
 | Field         | Value  | Example  |   
 | ----------------- |-------------| -------------| 
-| Name | ldap - AEP BigQuery Connector  |  delaigle - AEP BigQuery Connector  |
+| Name | ldap - AEP BigQuery Connector  |  delaigle - Platform BigQuery Connector  |
 | Authorised redirect URIs | https://developers.google.com/oauthplayground | https://developers.google.com/oauthplayground  | 
 
 The **Authorised redirect URIs**-field is a very important field because you'll need it later to get the RefreshToken you need to finish the setup of the BigQuery Source Connector in Adobe Experience Platform.
 
 ![demo](./images/ex2/12-1.png)
 
-Before you continue, you need to physically push the **Enter**-button after entering the URL to store the value in the **Authorised redirect URIs**-field. If you don't click the **Enter**-button, you'll run into issues at a later stage, in the **OAuth 2.0 Playground**.
+Before you continue, you need to physically push the **Enter** button after entering the URL to store the value in the **Authorised redirect URIs**-field. If you don't click the **Enter** button, you'll run into issues at a later stage, in the **OAuth 2.0 Playground**.
 
 Next, click **Create**:
 
@@ -217,7 +217,7 @@ Once you have selected them, you should see a blue button which says “Authoriz
 
 ![demo](./images/ex2/28.png)
 
-You might see a big warning: **This app isn't verified**. This is happening because your AEP BigQuery Connector hasn't been formally reviewed yet, so Google doesn't know if it's an authentic app or not. You should disregard this notification.
+You might see a big warning: **This app isn't verified**. This is happening because your Platform BigQuery Connector hasn't been formally reviewed yet, so Google doesn't know if it's an authentic app or not. You should disregard this notification.
 
 Click **Advanced**.
 
@@ -237,7 +237,7 @@ If you use 2 Factor Authentication (2FA), enter the verification code sent to yo
 
 ![demo](./images/ex2/30.png)
 
-You might now see a big warning: **This app isn't verified**. This is happening because your AEP BigQuery Connector hasn't been formally reviewed yet, so Google doesn't know if it's an authentic app or not. You should disregard this notification.
+You might now see a big warning: **This app isn't verified**. This is happening because your Platform BigQuery Connector hasn't been formally reviewed yet, so Google doesn't know if it's an authentic app or not. You should disregard this notification.
 
 Click **Advanced**.
 
@@ -286,7 +286,7 @@ Copy the **Refresh token** and paste it in the text-file on your desktop along w
 
 Next, let's setup your Source Connector in Adobe Experience Platform.
 
-## Exercise 16.3.5 - Connect AEP with your own BigQuery table
+## Exercise 16.3.5 - Connect Platform with your own BigQuery table
 
 Go to [Adobe Experience Platform](https://platform.adobe.com/home).
 

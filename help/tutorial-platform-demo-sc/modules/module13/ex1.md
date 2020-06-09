@@ -75,11 +75,11 @@ Please have a look a these schemas and datasets in Adobe Experience Platform.
 Make sure to have at least checked things like:
 
 - Identities: CRMID, MobileNr, ECID, emailId. Which identities are the primary identifiers, which ones are the secondary identifiers?
-You can find the identifiers by opening a schema and looking at the object ``<aepTenantId>.identification``. Have a look at the schema [AEP Demo - Website Interactions Schema](https://platform.adobe.com/schema).
+You can find the identifiers by opening a schema and looking at the object ``<aepTenantId>.identification``. Have a look at the schema [Platform Demo - Website Interactions Schema](https://platform.adobe.com/schema).
 
 ![demo](./images/identity.png)
 
-- Explore the commerce object inside the schema [AEP Demo - Website Interactions Schema](https://platform.adobe.com/schema).
+- Explore the commerce object inside the schema [Platform Demo - Website Interactions Schema](https://platform.adobe.com/schema).
 
 ![demo](./images/commerce.png)
 

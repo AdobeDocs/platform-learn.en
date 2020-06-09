@@ -11,16 +11,16 @@ activity:
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 4**, we will take you through the steps to demonstrate how an Internet of Things device, like an Amazon Alexa device, can send its relevant interactions to Adobe Experience Platform.
+In this module, we will take you through the steps to demonstrate how an Internet of Things device, like an Amazon Alexa device, can send its relevant interactions to Adobe Experience Platform.
 
 >[!NOTE]
 >
->Don't worry; if you're not familiar with configuring, setting up and/or using an Amazon Alexa device. We will guide you through all the necessary steps:
+>Don't worry if you're not familiar with configuring, setting up, and/or using an Amazon Alexa device. We will guide you through all the necessary steps.
 
 ## Learning Objectives
 
 - Learn how to set up your Amazon environment
-- Learn ow to define and configure your Alexa skill, consisting of:
+- Learn how to define and configure your Alexa skill, consisting of:
   - Creation
   - Invocation
   - Interaction Model
@@ -33,9 +33,9 @@ In **Module 4**, we will take you through the steps to demonstrate how an Intern
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
-- Access to an AEP demo website
-- Access to Postman
+- Access to [Adobe Experience Platform](https://platform.adobe.com)
+- Access to a Platform demo website
+- The [Postman application](https://www.postman.com/downloads/)
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!NOTE]
@@ -46,7 +46,7 @@ In **Module 4**, we will take you through the steps to demonstrate how an Intern
 
 [4.1 Set up an Amazon environment](./ex1.md)
 
-In this module, you'll have to setup an Amazon developer account. With an Amazon developer account you can build your Alexa skill and, even more important, simulate your skill, which is especially relevant in case you do not own an Alexa device like an Echo Spot or Echo Show.
+In this module, you'll have to set up an Amazon developer account. With an Amazon developer account you can build your Alexa skill and, even more important, simulate your skill, which is especially relevant in case you do not own an Alexa device like an Echo Spot or Echo Show.
 
 [4.2 Define your Alexa skill](./ex2.md)
 

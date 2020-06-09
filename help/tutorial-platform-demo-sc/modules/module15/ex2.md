@@ -49,7 +49,7 @@ After installing Anaconda, open Anaconda and you'll see the below page.
 
 ![LocalNotebook](./images/nb1.png)
 
-Click on the **Launch** - button for JupyterLab.
+Click on the **Launch** button for JupyterLab.
 
 ![LocalNotebook](./images/launchjn.png)
 

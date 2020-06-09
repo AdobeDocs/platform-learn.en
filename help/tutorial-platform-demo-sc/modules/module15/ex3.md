@@ -56,7 +56,7 @@ Let's have a look at all steps in detail...
 
 ## Train a model
 
-Training a model is done by clicking the **Train** - button.
+Training a model is done by clicking the **Train** button.
 
 ![DSW](./images/playtrain.png)
 
@@ -80,7 +80,7 @@ When you click **Train**, the following cells are executed:
 
 ## Score a model
 
-Scoring a model is done by clicking the **Score** - button.
+Scoring a model is done by clicking the **Score** button.
 
 ![DSW](./images/playscore.png)
 
@@ -108,15 +108,15 @@ You can verify this [here](https://platform.adobe.com/dataset).
 
 ## Create a recipe from the model
 
-Creating a recipe is done by clicking the **Create Recipe** - button.
+Creating a recipe is done by clicking the **Create Recipe** button.
 
 ![DSW](./images/playrecipe.png)
 
-When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** - button to start the process.
+When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** button to start the process.
 
 Creating a recipe enables you to test your model at scale.
 
-After clicking the **Create Recipe** - button, you have to enter a name for your recipe.
+After clicking the **Create Recipe** button, you have to enter a name for your recipe.
 
 ![DSW](./images/recname.png)
 
@@ -136,7 +136,7 @@ A second popup is shown, telling you that your Recipe is being created. This cou
 
 ![DSW](./images/popup.png)
 
-For now, click the **Dismiss** - button.
+For now, click the **Dismiss** button.
 
 You can view the progress of the recipe creation process in the top right corner of Jupyter Notebooks.
 

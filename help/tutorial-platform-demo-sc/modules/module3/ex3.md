@@ -9,12 +9,13 @@ activity:
 
 # 3.3 - Visualize your own real-time customer profile - API
 
-In this exercise, you'll use Postman and Adobe I/O to query Adobe Experience Platform's API's to view your own real-time customer profile.
+In this exercise, you'll use Postman and Adobe I/O to query Adobe Experience Platform's APIs to view your own real-time customer profile.
  
 ## Story
 
-In the real-time customer profile, all profile data is shown alongside behavioral and transactional data and the view will also be enriched with existing segment memberships. The data that is shown here comes from anywhere, from any Adobe Solution to any external solution. This is the most powerful view of Adobe Experience Platform: the true Experience System of Record.
-The Real-Time Customer Profile can be consumed by all Adobe solutions, but also by external solutions like Call Centers or in-store clienteling apps. The way to do is is to connect those external solutions to Adobe Experience Platform's API's.
+In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform&mdash;the experience system of record.
+
+The Real-time Customer Profile can be consumed by all Adobe applications, but also by external solutions like Call Centers or in-store clienteling apps. The way to do this is to connect those external solutions to Adobe Experience Platform's APIs.
 
 ## 3.3.1 - Your Identifiers
 
@@ -22,7 +23,7 @@ On the X-ray panel on the website, you can find multiple identities. Every Ident
 
 ![Customer Profile](./images/identities.png)
 
-On the X-ray panel, we can see 4 different combinations of ID's and Namespaces:
+On the X-ray panel, we can see 4 different combinations of IDs and Namespaces:
 
 | Identity     | Namespace       |
 |:-------------:| :---------------:|
@@ -30,120 +31,120 @@ On the X-ray panel, we can see 4 different combinations of ID's and Namespaces:
 | Email ID          | woutervangeluwe+28052020-10@gmail.com|
 | Mobile Number ID          | +32473622044+28052020-10|
 
-Remember these identifiers for the next exercise.
+Remember these identifiers for the next step.
 
-With these ID's in mind, go to Postman.
+With these IDs in mind, go to Postman.
 
-## 3.3.2 - Setup your Adobe IO Project
+## 3.3.2 - Setup your Adobe I/O Project
 
-In this exercise you'll be using Adobe I/O quite intensively to query against Platform's API's. Please follow the below steps to setup Adobe I/O.
+In this exercise you'll be using Adobe I/O quite intensively to query against Platform's APIs. Please follow the below steps to setup Adobe I/O.
 
 Go to [https://console.adobe.io/projects](https://console.adobe.io/projects)
 
-![Adobe IO New Integration](./images/iohome.png)
+![Adobe I/O New Integration](./images/iohome.png)
 
-Make sure to select the correct Adobe Experience Platform-instance in the top right corner of your screen. 
+Make sure to select the correct Adobe Experience Platform instance in the top right corner of your screen. 
 
-![Adobe IO New Integration](./images/iocomp.png)
+![Adobe I/O New Integration](./images/iocomp.png)
 
 Click **Create new project**.
 
-![Adobe IO New Integration](./images/adobe_io_new_integration.png) or 
-![Adobe IO New Integration](./images/adobe_io_new_integration1.png)
+![Adobe I/O New Integration](./images/adobe_io_new_integration.png) or 
+![Adobe I/O New Integration](./images/adobe_io_new_integration1.png)
 
 Select **+ Add to Project** and select **API**.
 
-![Adobe IO New Integration](./images/adobe_io_access_api.png)
+![Adobe I/O New Integration](./images/adobe_io_access_api.png)
 
 You'll then see this:
 
-![Adobe IO New Integration](./images/api1.png)
+![Adobe I/O New Integration](./images/api1.png)
 
-Click the **Adobe Experience Platform**-icon.
+Click the **Adobe Experience Platform** icon.
 
-![Adobe IO New Integration](./images/api2.png)
+![Adobe I/O New Integration](./images/api2.png)
 
 Click **Experience Platform API**.
 
-![Adobe IO New Integration](./images/api3.png)
+![Adobe I/O New Integration](./images/api3.png)
 
 Click **Next**.
 
-![Adobe IO New Integration](./images/next.png)
+![Adobe I/O New Integration](./images/next.png)
 
-You can now choose to either have Adobe IO generate your security key pair, or upload an existing one. Given that you created your own certificates, let's choose **Option 1 - Generate a key pair**.
+You can now choose to either have Adobe I/O generate your security key pair, or upload an existing one. Given that you created your own certificates, let's choose **Option 1 - Generate a key pair**.
 
-![Adobe IO New Integration](./images/api4.png)
+![Adobe I/O New Integration](./images/api4.png)
 
 Click **Generate keypair**.
 
-![Adobe IO New Integration](./images/generate.png)
+![Adobe I/O New Integration](./images/generate.png)
 
 You'll see a spinner for about 30 seconds.
 
-![Adobe IO New Integration](./images/spin.png)
+![Adobe I/O New Integration](./images/spin.png)
 
 You'll then see this, and your generated keypair will be downloaded as a zip-file: **config.zip**.
 
 Unzip the file **config.zip** on your desktop, you'll see it contains 2 files:
 
-![Adobe IO New Integration](./images/zip.png)
+![Adobe I/O New Integration](./images/zip.png)
 
 * **certificate_pub.crt** is your Public key certificate. From a security perspective, this is the certificate that is freely used to setup integrations with online applications.
 * **private.key** is your Private key. This should never, ever be shared with anyone. The Private Key is what you use to authenticate to your API implementation and is supposed to be a secret. If you share your Private Key with anyone, they can access your implementation and abuse the API to ingest malicious data into Platform and extract all the data that sits in Platform.
 
-![Adobe IO New Integration](./images/config.png)
+![Adobe I/O New Integration](./images/config.png)
 
-Make sure to save the **config.zip**-file in a safe location, as you'll need this for the next steps and for future access to Adobe IO and Adobe Experience Platform APIs.
+Make sure to save the **config.zip** file in a safe location, as you'll need this for the next steps and for future access to Adobe I/O and Adobe Experience Platform APIs.
 
 Click **Next**.
 
-![Adobe IO New Integration](./images/next.png)
+![Adobe I/O New Integration](./images/next.png)
 
 You now have to select the **Product Profile(s)** for your integration. 
 
 Select the required Product Profiles:
 
-![Adobe IO New Integration](./images/api9.png)
+![Adobe I/O New Integration](./images/api9.png)
 
 Click **Save Configured API**.
 
-![Adobe IO New Integration](./images/saveconfig.png)
+![Adobe I/O New Integration](./images/saveconfig.png)
 
 You'll see a spinner for a couple of seconds.
 
-![Adobe IO New Integration](./images/api10.png)
+![Adobe I/O New Integration](./images/api10.png)
 
 And next, you'll see your integration.
 
-![Adobe IO New Integration](./images/api11.png)
+![Adobe I/O New Integration](./images/api11.png)
 
-Click the **Download for Postman**-button to download a Postman environment which is ready to use (wait until the collection is downloaded, this can take a couple of seconds.
+Click the **Download for Postman** button to download a Postman environment (wait until the environment is downloaded, this can take a couple of seconds).
 
-![Adobe IO New Integration](./images/iopm.png)
+![Adobe I/O New Integration](./images/iopm.png)
 
 Scroll down until you see **Service Account (JWT)**, which is where you can find all your integration details that are used to configure the integration with Adobe Experience Platform.
 
-![Adobe IO New Integration](./images/api12.png)
+![Adobe I/O New Integration](./images/api12.png)
 
 Your IO Project currently has a generic name. You need to give a friendly name to your integration. Click on **Project 1** (or similar name) as indicated
 
-![Adobe IO New Integration](./images/api13.png)
+![Adobe I/O New Integration](./images/api13.png)
 
 Click **Edit Project**.
 
-![Adobe IO New Integration](./images/api14.png)
+![Adobe I/O New Integration](./images/api14.png)
 
-Enter a Name and Description for your integration. As a naming convention, we'll use **Platform API ldap**. Replace ldap with your ldap.
+Enter a Name and Description for your integration. As a naming convention, we'll use **AEP API ldap**. Replace ldap with your ldap.
 For instance, if your ldap is vangeluw, the name and description of your integration becomes Platform API vangeluw.
 
-Enter **Platform API ldap** as the **Project Title**. Click **Save**.
+Enter **AEP API ldap** as the **Project Title**. Click **Save**.
 
-![Adobe IO New Integration](./images/api15.png)
+![Adobe I/O New Integration](./images/api15.png)
 
-Your Adobe IO integration is now finished.
+Your Adobe I/O integration is now finished.
 
-![Adobe IO New Integration](./images/api16.png)
+![Adobe I/O New Integration](./images/api16.png)
 
 ## Exercise 3.3.3 - Postman authentication to Adobe I/O
 
@@ -151,17 +152,17 @@ Go to [https://www.getpostman.com/](https://www.getpostman.com/).
 
 Click on **Get Started**.
 
-![Adobe IO New Integration](./images/getstarted.png)
+![Adobe I/O New Integration](./images/getstarted.png)
 
 Next, download and install Postman.
 
-![Adobe IO New Integration](./images/downloadpostman.png)
+![Adobe I/O New Integration](./images/downloadpostman.png)
 
 After installation of Postman, start the application.
 
 In Postman, there are 2 concepts: Environments and Collections.
 
-* The Environment contains all of your environmental variables which are more or less consistent. In the Environment, you'll find things like the IMSOrg of our Platform environment, alongside security credentials like your Private Key and others. The environment file is the one you downloaded during the Adobe IO setup in the previous exercise, it's name like this: **service.postman_environment.json**.
+* The Environment contains all of your environmental variables which are more or less consistent. In the Environment, you'll find things like the IMSOrg of our Platform environment, alongside security credentials like your Private Key and others. The environment file is the one you downloaded during the Adobe I/O setup in the previous exercise, it's name like this: **service.postman_environment.json**.
   
 * The Collection contains a number of API calls that you can use. We will use 2 collections
   * 1 Collection for Authentication to Adobe I/0
@@ -174,29 +175,29 @@ In this **postman.zip** file, you'll find the following files:
 * \_Adobe I-O - Token.postman\_collection.json
 * \_Adobe Experience Platform Enablement.postman\_collection.json
   
-Unzip the **postman.zip** file and store these 2 files in a folder on your desktop, together with the downloaded Postman environment from Adobe IO. You need to have these 3 files in that folder:
+Unzip the **postman.zip** file and store these 2 files in a folder on your desktop, together with the downloaded Postman environment from Adobe I/O. You need to have these 3 files in that folder:
 
-![Adobe IO New Integration](./images/pmfolder.png)
+![Adobe I/O New Integration](./images/pmfolder.png)
 
 Go back to the Postman UI.
 
-![Adobe IO New Integration](./images/postmanui.png)
+![Adobe I/O New Integration](./images/postmanui.png)
 
 In Postman, click on **Import**.
 
-![Adobe IO New Integration](./images/import.png)
+![Adobe I/O New Integration](./images/import.png)
 
 Click on **Choose files**.
 
-![Adobe IO New Integration](./images/choosefiles.png)
+![Adobe I/O New Integration](./images/choosefiles.png)
 
 Navigate to the folder on your desktop in which you extracted the 3 downloaded files. Select these 3 files at the same time and click **Open**.
 
-![Adobe IO New Integration](./images/selectfiles.png)
+![Adobe I/O New Integration](./images/selectfiles.png)
 
 After having clicked **Open**, Postman will show you an overview of the Environment and Collections you're about to import. Click **Import**.
 
-![Adobe IO New Integration](./images/impconfirm.png)
+![Adobe I/O New Integration](./images/impconfirm.png)
 
 You now have everything you need in Postman to start interacting with Adobe Experience Platform through the APIs.
 
@@ -220,7 +221,7 @@ You'll then see this. All fields are pre-populated, except for the field **PRIVA
 
 ![Postman](./images/pk2.png)
 
-The private key has been generated when you created your Adobe IO Project. It was downloaded as a zip-file, named **config.zip**. Extract that zip-file to your desktop.
+The private key has been generated when you created your Adobe I/O Project. It was downloaded as a zip-file, named **config.zip**. Extract that zip-file to your desktop.
 
 ![Postman](./images/pk3.png)
 
@@ -228,7 +229,7 @@ Open the folder **config** and open the file **private.key** with your text edit
 
 ![Postman](./images/pk4.png)
 
-You'll then see this, copy all the text to your clipboard.
+You'll then see something resembling this, copy all the text to your clipboard.
 
 ![Postman](./images/pk5.png)
 
@@ -236,7 +237,7 @@ Go back to Postman and paste the private key in the fields next to the variable 
 
 ![Postman](./images/pk6.png)
 
-Your Postman environment and collections are now configured and working. You can now authenticate from Postman to Adobe IO.
+Your Postman environment and collections are now configured and working. You can now authenticate from Postman to Adobe I/O.
 
 To do that, you need to load an external library that will take care of the encryption and decryption of communication. To load this library, you have to execute the call with the name **INIT: Load Crypto Library for RS256**. Select this call in the **_Adobe I/O - Token collection** and you'll see it displayed in the middle of your screen.
 
@@ -244,16 +245,17 @@ To do that, you need to load an external library that will take care of the encr
 
 ![Postman](./images/cryptolib.png)
 
-Click the blue **Send**-button. After a couple of seconds, you should see a response displayed in the **Body** section of Postman:
+Click the blue **Send** button. After a couple of seconds, you should see a response displayed in the **Body** section of Postman:
 
 ![Postman](./images/cryptoresponse.png)
 
 With the crypto library now loaded, we can authenticate to Adobe I/O.
-In the \_Adobe I/O - Token collection, select the call with the name **IMS: JWT Generate + Auth**. Again, you'll see the call details displayed in the middle of the screen.
+
+In the **\_Adobe I/O - Token collection**, select the call with the name **IMS: JWT Generate + Auth**. Again, you'll see the call details displayed in the middle of the screen.
 
 ![Postman](./images/ioauth.png)
 
-Click the blue **Send**-button. After a couple of seconds, you should see a response displayed in the **Body** section of Postman:
+Click the blue **Send** button. After a couple of seconds, you should see a response displayed in the **Body** section of Postman:
 
 ![Postman](./images/ioauthresp.png)
 
@@ -271,7 +273,7 @@ The token that we've received is now valid for 24 hours. This means that after 2
 
 ## Exercise 3.3 - Real-time Customer Profile API, Schema: Profile
 
-Now you can go ahead and send your first call to Platform's Unified Profile Service API's.
+Now you can go ahead and send your first call to Platform's Real-time Customer Profile APIs.
 
 In Postman, locate the collection **_Adobe Experience Platform Enablement**.
 
@@ -281,25 +283,21 @@ In **1. Unified Profile Service**, select the first call with the name **UPS - G
 
 ![Postman](./images/upscall.png)
 
-For this call, there are 3 required variables:
+For this call, there are three required variables:
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
-| entityId          | **id** |
-| entityIdNS    | **namespace** | 
-| schema.name          | **\_xdm.context.profile** |
+| Key     | Value     | Definition |
+|:-------------:| :---------------:| :---------------:| 
+| entityId          | **id** | the specific customer ID |
+| entityIdNS    | **namespace** | the specific namespace that is applicable to the ID |
+| schema.name          | **_xdm.context.profile** | the specific schema for which you want to receive information |
 
-* entityId = the specific customer ID
-* entityIdNS = the specific namespace that is applicable to the ID
-* schema.name = the specific schema for which you want to receive information
-
-So, if you want to ask Platform's API's to give you back all Profile information for your own ECID, you will need to configure the call as follows:
+So, if you want to ask Platform's APIs to give you back all Profile information for your own ECID, you will need to configure the call as follows:
 
 | Key     | Value     | 
 |:-------------:| :---------------:| 
 | entityId          | **yourECID** |
 | entityIdNS    | **ecid** | 
-| schema.name          | **\_xdm.context.profile** |
+| schema.name          | **_xdm.context.profile** |
 
 ![Postman](./images/callecid.png)
 
@@ -478,19 +476,20 @@ This is the full response from Platform:
 ```
 
 This is currently all of the available Profile data in Platform for this ECID.
-You're not required to use the ECID to request Profile data from Platform's Unified Profile, you can use any ID in any namespace to request this data. 
+
+You're not required to use the ECID to request Profile data from Platform's Real-time Customer Profile, you can use any ID in any namespace to request this data. 
 
 Let's go back to Postman and pretend we're the call center, and send a call to Platform specifying the namespace of **Phone** and your mobile number.
 
-So, if you want to ask Platform's API's to give you back all Profile information for a specific Phone, you will need to configure the call as follows:
+So, if you want to ask Platform's APIs to give you back all Profile information for a specific Phone, you will need to configure the call as follows:
 
 | Key     | Value     | 
 |:-------------:| :---------------:| 
-| entityId          | **your phone nr** |
-| entityIdNS    | **mobilenr** \(replace ecid by mobilenr) | 
-| schema.name          | **\_xdm.context.profile** |
+| entityId          | **your phone number** |
+| entityIdNS    | **mobilenr** (replace ecid by mobilenr) | 
+| schema.name          | **_xdm.context.profile** |
 
-If your phonenumber contains special symbols like **+**, you have to select your full phonenumber, do a right-click and click **EncodeURIComponent**.
+If your phone number contains special symbols like **+**, you have to select your full phone number, do a right-click and click **EncodeURIComponent**.
 
 ![Postman](./images/encodephone.png)
 
@@ -498,19 +497,19 @@ You'll then have this:
 
 ![Postman](./images/callmobilenr.png)
 
-Click the blue **Send**-button and verify the response.
+Click the blue **Send** button and verify the response.
 
 ![Postman](./images/callmobilenrresponse.png)
 
-Let's do the same thing for your email ID by specifying the namespace of **email** and your email ID.
+Let's do the same thing for your email address by specifying the namespace of **email** and your email address.
 
-So, if you want to ask Platform's API's to give you back all Profile information for a specific email ID, you will need to configure the call as follows:
+So, if you want to ask Platform's APIs to give you back all Profile information for a specific email address, you will need to configure the call as follows:
 
 | Key     | Value     | 
 |:-------------:| :---------------:| 
 | entityId          | **youremail** |
-| entityIdNS    | **email** \(replace Phone with email) | 
-| schema.name          | **\_xdm.context.profile** |
+| entityIdNS    | **email** (replace Phone with email) | 
+| schema.name          | **_xdm.context.profile** |
 
 If your email address contains special symbols like **+**, you have to select your full email address, do a right-click and click **EncodeURIComponent**.
 
@@ -520,11 +519,11 @@ You'll then have this:
 
 ![Postman](./images/callemail.png)
 
-Click the blue **Send**-button and verify the response.
+Click the blue **Send** button and verify the response.
 
 ![Postman](./images/callemailresponse.png)
 
-This is a very important kind of flexibility that is offered to brands. This means that any environment can send a request to Platform, using their own ID and namespace, without having to understand the complexity of multiple namespaces and ID's.
+This is a very important kind of flexibility that is offered to brands. This means that any environment can send a request to Platform, using their own ID and namespace, without having to understand the complexity of multiple namespaces and IDs.
 
 As an example:
 
@@ -536,7 +535,7 @@ The Call Center doesn't necessarily know what kind of identifier is used in the 
 
 ## Exercise 3.3.4 - Real-time Customer Profile API, Schema: Profile and ExperienceEvent
 
-After having queried Platform's API's successfully for Profile data, let's now do the same with ExperienceEvent data.
+After having queried Platform's APIs successfully for Profile data, let's now do the same with ExperienceEvent data.
 
 In Postman, locate the collection **_Adobe Experience Platform Enablement**.
 
@@ -546,27 +545,23 @@ In **1. Unified Profile Service**, select the second call with the name **UPS - 
 
 ![Postman](./images/upseecall.png)
 
-For this call, there are 4 required variables:
+For this call, there are four required variables:
+
+| Key     | Value     | Definition | 
+|:-------------:| :---------------:|  :---------------:| 
+| schema.name          | **_xdm.context.experienceevent** | the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. | 
+| relatedSchema.name          | **_xdm.context.profile** | While we're looking for data that is mapped against the ExperienceEvent schema, we need to specify an identity for which we want to receive that data. The schema that has access to identity is the Profile-schema, so the relatedSchema here is the Profile-schema. |
+| relatedEntityId          | **id** | the specific customer I D|
+| relatedEntityIdNS    | **namespace** | the specific namespace that is applicable to the ID | 
+
+
+
+So, if you want to ask Platform's APIs to give you back all Profile information for your own ecid, you will need to configure the call as follows:
 
 | Key     | Value     | 
 |:-------------:| :---------------:| 
-| schema.name          | **\_xdm.context.experienceevent** |
-| relatedSchema.name          | **\_xdm.context.profile** |
-| relatedEntityId          | **id** |
-| relatedEntityIdNS    | **namespace** | 
-
-* schema.name = the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. 
-* relatedSchema.name = While we're looking for data that is mapped against the ExperienceEvent schema, we need to specify an identity for which we want to receive that data. The schema that has access to identity is the Profile-schema, so the relatedSchema here is the Profile-schema.
-* relatedEntityId = the specific customer ID
-* relatedEntityIdNS = the specific namespace that is applicable to the ID
-
-
-So, if you want to ask Platform's API's to give you back all Profile information for your own ecid, you will need to configure the call as follows:
-
-| Key     | Value     | 
-|:-------------:| :---------------:| 
-| schema.name          | **\_xdm.context.experienceevent** |
-| relatedSchema.name          | **\_xdm.context.profile** |
+| schema.name          | **_xdm.context.experienceevent** |
+| relatedSchema.name          | **_xdm.context.profile** |
 | relatedEntityId          | **yourECID** |
 | relatedEntityIdNS    | **ecid** | 
 
@@ -578,7 +573,7 @@ You should get an immediate response from Platform, showing you something like t
 
 ![Postman](./images/eecallecidresponse.png)
 
-Below is the full response from Platform. In this example, there are 8 ExperienceEvents linked to this customer's ECID. Have a look at the below to see the different variables on the call, as what you see below is the direct consequence of your configuration in Launch in previous exercises.
+Below is the full response from Platform. In this example, there are eight ExperienceEvents linked to this customer's ECID. Have a look at the below to see the different variables on the call, as what you see below is the direct consequence of your configuration in Launch in previous exercises.
 
 Also, when the X-ray panel shows ExperienceEvent information, it is using the below payload to parse and retrieve the information like Product Name (search for productName in the below payload) and Product Image URL (search for productImageUrl in the below payload).
 

@@ -38,7 +38,7 @@ From the Launch menu, click on **Extensions**. You'll see these 4 Extensions alr
 
 The goal of this is not to fully configure a Launch property, instead the goal is to zoom in on what needs to happen in Launch to easily ingest data into Adobe Experience Platform. Several extensions, data elements and rules are already prebuilt into your Launch property.
 
-Click the **Configure**-button on the Adobe Experience Platform - extension to open it.
+Click the **Configure** button on the Adobe Experience Platform - extension to open it.
 
 ![Data Ingestion](./images/launchprope.png)
 

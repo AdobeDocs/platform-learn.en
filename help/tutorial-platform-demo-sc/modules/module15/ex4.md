@@ -37,7 +37,7 @@ Click the **ldapCarInsurancePropensity** - recipe to open it.
 
 You now need to create your own Model, based on the **ldapCarInsurancePropensity** - recipe.
 
-To do that, click on the **Create a Model** - button.
+To do that, click on the **Create a Model** button.
 
 ![DSW](./images/createmodel1.png)
 
@@ -96,7 +96,7 @@ After opening Training Run 1, you'll see a full overview of the Training Run, an
 
 ![DSW](./images/trr1.png)
 
-To score, you have to click the **+ Score** - button in the top right corner of your screen.
+To score, you have to click the **+ Score** button in the top right corner of your screen.
 
 ![DSW](./images/score.png)
 

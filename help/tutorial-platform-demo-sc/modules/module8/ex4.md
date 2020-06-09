@@ -25,7 +25,7 @@ After opening Training Run 1, you'll see a full overview of the Training Run, an
 
 ![DSW](./images/trr1.png)
 
-To score, you have to click the **+ Score** - button in the top right corner of your screen.
+To score, you have to click the **+ Score** button in the top right corner of your screen.
 
 ![DSW](./images/score.png)
 

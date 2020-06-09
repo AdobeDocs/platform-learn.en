@@ -9,7 +9,7 @@ activity:
 
 # 6.1: Journey Orchestration: Setup Event
 
-The end goal of this module is to receive an email after creating your account on the AEP Demo-website.
+The end goal of this module is to receive an email after creating your account on the Platform Demo-website.
 
 Login to Journey Orchestration by clicking this link: [https://experience.adobe.com/](https://experience.adobe.com).
 
@@ -31,7 +31,7 @@ In events, you'll see a similar view to this:
 
 ![ACOP](./images/acopeventview.png)
 
-Click the **Add** - button.
+Click the **Add** button.
 
 ![ACOP](./images/add.png)
 
