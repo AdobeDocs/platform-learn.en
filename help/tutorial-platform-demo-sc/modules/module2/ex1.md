@@ -13,7 +13,7 @@ activity:
 
 The journey from unknown to known is one of the most important topics amongst brands these days, as is the customer journey from acquisition to retention. 
 
-Adobe Experience Platform plays a huge role in this journey. Platform is the brains for communication, the Experience System of Record.
+Adobe Experience Platform plays a huge role in this journey. Platform is the brains for communication, the experience system of record.
 
 Platform is an environment in which the word **customer** is broader than just the **known**-customers. This is a very important thing to mention when speaking to brands: an unknown visitor on the website is also a customer from Platform's perspective and as such, all of the behavior as an unknown visitor is also sent to Platform. Thanks to that approach, when this customer eventually becomes a known customer, a brand can visualize what happened before that moment as well. This helps from an attribution and experience optimization perspective.
 
@@ -23,7 +23,7 @@ You will now ingest data into Adobe Experience Platform and that data will be li
 
 ### **Customer Journey flow**
 
-* Go to your AEP Demo website.
+* Go to your Platform Demo website.
 
 * You'll be redirected to the **Admin**-page
 

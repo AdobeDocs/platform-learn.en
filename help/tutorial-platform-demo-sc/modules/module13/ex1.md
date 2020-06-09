@@ -68,18 +68,18 @@ Please have a look a these schemas and datasets in Adobe Experience Platform.
 
 | Dataset         | Schema|    
 | ----------------- |-------------| 
-| AEP Demo - Website Interactions | AEP Demo - Website Interactions Schema |   
-| AEP Demo - Call Center Interactions | AEP Demo - Call Center Interactions Schema |   
-| AEP Demo - Voice Assistant Interactions| AEP Demo - Voice Assistant Interactions Schema |    
+| Platform Demo - Website Interactions | Platform Demo - Website Interactions Schema |   
+| Platform Demo - Call Center Interactions | Platform Demo - Call Center Interactions Schema |   
+| Platform Demo - Voice Assistant Interactions| Platform Demo - Voice Assistant Interactions Schema |    
 
 Make sure to have at least checked things like:
 
 - Identities: CRMID, MobileNr, ECID, emailId. Which identities are the primary identifiers, which ones are the secondary identifiers?
-You can find the identifiers by opening a schema and looking at the object ``<aepTenantId>.identification``. Have a look at the schema [AEP Demo - Website Interactions Schema](https://platform.adobe.com/schema).
+You can find the identifiers by opening a schema and looking at the object ``<aepTenantId>.identification``. Have a look at the schema [Platform Demo - Website Interactions Schema](https://platform.adobe.com/schema).
 
 ![demo](./images/identity.png)
 
-- Explore the commerce object inside the schema [AEP Demo - Website Interactions Schema](https://platform.adobe.com/schema).
+- Explore the commerce object inside the schema [Platform Demo - Website Interactions Schema](https://platform.adobe.com/schema).
 
 ![demo](./images/commerce.png)
 

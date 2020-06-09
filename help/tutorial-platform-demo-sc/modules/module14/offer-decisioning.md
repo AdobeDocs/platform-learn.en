@@ -21,7 +21,7 @@ In this module we will refer to the **Offers Decisioning Engine** (or simply **O
 
 - Understand basic terminology used as part of Offer Decisioning,
 
-- Get a feeling what is currently available with respect to next best offer functionality in AEP.
+- Get a feeling what is currently available with respect to next best offer functionality in Platform.
 
 ## Prerequisites
 

@@ -17,7 +17,7 @@ Please watch this video to understand the value, demo storyline and process: [Lu
 
 In this module, you'll...
 
-- Understand the **Luma Insurance** Real-Time Machine Learning use-case
+- Understand the **Luma Insurance**Real-time Machine Learning use-case
 - Learn how to use Anaconda and a local JupyterLab instance to interact with data in Adobe Experience Platform for building an ML Model
 - Learn how to operationalize a ML Model by creating a Recipe to then train and score that Recipe.
 - Learn how to publish a Recipe as a Service for recurring, automated training.

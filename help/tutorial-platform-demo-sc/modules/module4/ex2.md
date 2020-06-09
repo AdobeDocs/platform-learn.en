@@ -11,11 +11,16 @@ activity:
 
 ## Introduction
 
-This module will guide you through all the necessary steps to define and configure a new Amazon Alexa skill.
+This exercise will guide you through all the necessary steps to define and configure a new Amazon Alexa skill.
 
 ## Prerequisites
 
-Before you can create and configure an Amazon Alexa skill, ensure you are signed up for an Amazon developer account and signed in. Also, ensure your are signed up for an AWS account and signed in. See [Exercise 1](./ex1.md) for more details.
+Before you can create and configure an Amazon Alexa skill, you must:
+
+1. Have an Amazon developer account and be signed in
+1. Have an AWS account and be signed in
+ 
+See [Exercise 4.1](./ex1.md) for more details.
 
 ## 4.2.1: Create an Alexa skill
 
@@ -31,34 +36,37 @@ In the **alexa developer console**, click the **Create Skill** button.
 
 In the **Create a new skill** screen:
 
-1. Specify **AEP** as the **Skill name**.
-2. Select **English (UK)**or **English (US)** as the **Default Language**.
-3. Select **Custom** as the model to use below **Choose a model to add to your skill**.
-![Create Skill](images/creatskill1.png)
-4. Select **Provision your own** as the method to use below **Choose a method to host your skill's backend** resources.
-![Create Skill 2](images/createskill2.png)
-Your screen might look a bit different dependent on the **Default language** you have selected.
+1. Specify **Platform** as the **Skill name**.
+2. Select **English (UK)** or **English (US)** as the **Default Language**.
+3. Select **Custom** as the model to use in the **Choose a model to add to your skill** section.
+   ![Create Skill](images/creatskill1.png)
+4. Select **Provision your own** as the method to use in the **Choose a method to host your skill's backend resources** section.
+   
+   ![Create Skill 2](images/createskill2.png)
+   
+   Your screen might look a bit different dependent on the **Default language** you have selected.
+
 5. Click **Create skill**.
    
 In the **Choose a template** screen:
 
-1. Select **Start from scratch** as the template to use below **Choose a template**.
+1. Select **Start from scratch** as the template to use in the **Choose a template** section.
 ![Choose a template](images/chooseatemplate.png)
-2. Click **Choose**.
+2. Click the **Choose** button.
    
-You will end up in your **AEP** skill main screen, which should look like this:
+You will end up in your **Platform** skill main screen, which should look like this:
 
-![AEP Skill Main Screen](images/aepskillmainscreen.png)
+![Platform Skill Main Screen](images/aepskillmainscreen.png)
 
 ## 4.2.2: Define invocation name
 
 For your skill to be invoked, it needs an invocation name. To define this:
 
-1. Click on **Invocation** in the left rail, or on the **1. Invocation name >** button in the **Skill builder checklist** of the **AEP** skill main screen.
+1. Click on **Invocation** in the left rail, or on the **1. Invocation name >** button in the **Skill builder checklist** of the **Platform** skill main screen.
 
-2. In the **Invocation** panel, replace **aep** with **adobe experience platform** as the **Skill Invocation Name**.
+2. In the **Invocation** panel, replace **Platform** with **adobe experience platform** as the **Skill Invocation Name**.
 
-![Invocation Name](images/invocationname.png)
+   ![Invocation Name](images/invocationname.png)
 
 Click on **Save Model**.
 
@@ -96,7 +104,7 @@ You will now see the various specific intents for our skill on the left rail, e.
 
 ## 4.2.3: Define the interfaces
 
-We will now define the interface for the skill. Interfaces define how you interact with your skill: only through voice or will the skill also support display and touch? As if we  want our skill to use the display and touch events, we need to enable that interface. Also our skill's implementation will use the Amazon Presentation Language (BETA). To properly configure this:
+We will now define the interface for the skill. Interfaces define how you interact with your skill: only through voice or will the skill also support display and touch? If we want our skill to use the display and touch events, we need to enable that interface. Also our skill's implementation will use the Amazon Presentation Language (BETA). To properly configure this:
 
 Click on **Intents** to collapse all intents. Then click on **Interfaces** in the left rail.
 
@@ -122,7 +130,7 @@ Pick a datacenter you prefer from the dropdown listbox at the top right menu. E.
 
 ![Data Center](images/datacenter.png)
 
-In **Find Services** type **lambda**and press Enter.
+In **Find Services** type **lambda** and press Enter.
 
 ![Lambda](images/lambda.png)
 
@@ -135,20 +143,20 @@ Click on **Create a function**.
 In the **Create function** screen:
 
 1. Select **Author from scratch**.
-![Author From Scratch](images/authorfromscratch.png)
-2. Give your skill function a **Function name**, e.g. **aep**.
-![Function Name](images/functionname.png)
+   ![Author From Scratch](images/authorfromscratch.png)
+2. Give your skill function a **Function name**, e.g. **Platform**.
+   ![Function Name](images/functionname.png)
 3. Select **Node.js 12.x** from the **Runtime** dropdown list.
-![Runtime](images/runtime.png)
+   ![Runtime](images/runtime.png)
 4. Click on **Choose or create an execution role** below **Permissions**. Then select **Create a new role with basic Lambda permissions**from the **Execution role** dropdown list. Your screen should look like
-![Permissions](images/permissions.png)
+   ![Permissions](images/permissions.png)
 5. Click on **Create function**. It will take a while to finish that creation.
-6. You will end up in your **aep** function definition screen, with the **Configuration** tab active.
-![AEP Function Definition](images/aepfunctiondefinition.png)
+6. You will end up in your **Platform** function definition screen, with the **Configuration** tab active.
+   ![Platform Function Definition](images/aepfunctiondefinition.png)
 7. In the list of triggers listed below **Add triggers**, select **Alexa Skills Kit**. You will see that the skill is added to the definition screen, with the remark **Configuration required**.
-![Configuration Required](images/configurationrequired.png)
+   ![Configuration Required](images/configurationrequired.png)
    
-**Note**: if **Alexa Skills Kit** is not available in the **Add triggers** list, the data center you selected does not support it. Select another datacenter (e.g. **EU (Ireland)**) that provides the **Alexa Skills Kit** trigger.
+>[!NOTE] If **Alexa Skills Kit** is not available in the **Add triggers** list, the data center you selected does not support it. Select another datacenter (e.g. **EU (Ireland)**) that provides the **Alexa Skills Kit** trigger.
 
 Move over to your **Alexa developer console** ([https://developer.amazon.com/alexa/console/ask](https://developer.amazon.com/alexa/console/ask)).
 
@@ -158,25 +166,25 @@ Click on **Endpoint**. Then select **AWS Lambda ARN**. This will show your skill
 
 Click on **Copy to Clipboard** to copy the skill.
 
-Move back to your **aep** function definition screen in the **AWS Lambda** home screen.
+Move back to your **Platform** function definition screen in the **AWS Lambda** home screen.
 
 1. Paste the skill id in the **Skill ID** field below the **Skill ID Verification**. Ensure **Enable** is selected, which is the default and recommended setting.
 ![Configure Skill ID](images/pasteskillid.png)
 2. Click on **Add** in the **Configure Triggers** panel.
 3. Then click on **Save**.
 
-Continue, in the **aep** definition screen.
+Continue, in the **Platform** definition screen.
 
-1. Click on **aep** box in the **Designer** panel.
-![Select AEP](images/selectaep.png)
+1. Click on **Platform** box in the **Designer** panel.
+   ![Select Platform](images/selectaep.png)
 2. In the **Function code** panel, from the **Code entry type** dropdown list, select **Upload a .zip file**.
-![Function Code](images/functioncode.png)
+   ![Function Code](images/functioncode.png)
 3. Download **aepskill.zip** from your **Environment Variables GitHub repository** and save the file somewhere on your computer as **aepskill.zip**.
 4. Click on the **Upload** button. Pick the **aepskill.zip** you saved on your computer from the file browser dialog.
-![AEP Skill ZIP](images/selectaepskillzip.png)
+   ![Platform Skill ZIP](images/selectaepskillzip.png)
 5. Click **Save**.
    
-Continue in the **aep** definition screen
+Continue in the **Platform** definition screen
 
 1. Scroll down until you see the **Environment Variables** panel.
 ![Environment Variables](images/envvariables.png)
@@ -197,10 +205,10 @@ Key | Value
     
 Ensure you replace **alexaBrandName**, **ldap** and **emailAddress** with your specific configuration details.
 
-**Also very important**:
-
-- Define your **alexaBrandName** as the lowercase version of your brand name (e.g. Luma Retail as **luma retail**),
-- If your brand name contains an **&** replace it with **and**. So as an example, H&M becomes **h and m**.
+>[!IMPORTANT]
+>
+> - Define your **alexaBrandName** as the lowercase version of your brand name (e.g. Luma Retail as **luma retail**),
+> - If your brand name contains an **&** replace it with **and**. So as an example, H&M becomes **h and m**.
 
 Click **Save**.
 
@@ -208,9 +216,9 @@ As a final step, we need to copy the Amazon Resource Name that represents this f
 
 To do so,
 
-- In the **aep** function definition screen, click on the copy icon right from the **ARN - arm:aws.lambda:.....** text at the top right of the screen.
+- In the **Platform** function definition screen, click on the copy icon right from the **ARN - arm:aws.lambda:.....** text at the top right of the screen.
 
-![ARN](images/arn.png)
+   ![ARN](images/arn.png)
 
 - A **copied** will indicate the value has been copied.
  
@@ -219,7 +227,7 @@ Move over to your **alexa developer console**.
 - In the **Endpoint** config screen.
 - Paste the copied ARN from the previous step in the **Default Region (Required)** field.
   
-![Endpoint](images/defaultregion.png)
+   ![Endpoint](images/defaultregion.png)
   
 - Click on **Save Endpoints**.
 
@@ -238,7 +246,7 @@ Verify that on your skill's main screen all the items on the **Skill builder che
 
 - Click on **Build**.
    
-![Finished](images/finished.png)
+   ![Finished](images/finished.png)
   
 - Your **alexa developer console** should display green checkmarks for the first four items in the **Skill builder checklist**.
   

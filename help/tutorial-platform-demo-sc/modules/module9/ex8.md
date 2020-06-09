@@ -95,7 +95,7 @@ Fill out all the fields and click **Create Account**.
 
 ![Verify Calls](./images/createaccount.png)
 
-After clicking the **Create Account** - button, you're sent to the homepage.
+After clicking the **Create Account** button, you're sent to the homepage.
 
 In the Chrome Developer Console, go to the **Console**-view. In the **Filter**, type **GA**.
 
@@ -131,12 +131,12 @@ Go to **Datasets** and locate your 2 Datasets. As a reminder, the shared dataset
 
 * Website Interaction Dataset name:
   
-  * **AEP Demo - GA Website Interactions**
+  * **Platform Demo - GA Website Interactions**
       ![Platform Setup](./images/ee.png)
 
 * Website Registration Dataset name:
   
-  * **AEP Demo - GA Website Registrations**
+  * **Platform Demo - GA Website Registrations**
       ![Platform Setup](./images/p.png)
 
 Datasets in the UI of Platform are usually updated every 15minutes.
@@ -145,7 +145,7 @@ You can immediately see if the ingestion of the last batch of data for this data
 
 ![Verify Calls](./images/datasetstatus.png)
 
-And by opening the **AEP Demo - GA Website Interactions**-dataset you can see all individual ingested batches for this dataset.
+And by opening the **Platform Demo - GA Website Interactions**-dataset you can see all individual ingested batches for this dataset.
 
 ![Verify Calls](./images/alleebatches.png)
 
@@ -155,7 +155,7 @@ By clicking on **Preview**, you can see a preview of the ingested data.
 
 ![Verify Calls](./images/eepreview.png)
 
-You can do the same thing for the **AEP Demo - GA Website Registrations**- dataset:
+You can do the same thing for the **Platform Demo - GA Website Registrations**- dataset:
 
 ![Verify Calls](./images/profilebatches.png)
 

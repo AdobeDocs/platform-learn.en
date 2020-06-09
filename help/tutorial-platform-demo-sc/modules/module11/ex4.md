@@ -17,7 +17,7 @@ When a segment is first built in Adobe Audience Manager, it will take an initial
 
 Let's have a look at Adobe Audience Manager now.
 
-## Use an AEP Segment as a Segment in AAM
+## Use a Platform Segment as a Segment in AAM
 
 The URL to login to Adobe Audience Manager is: [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
 
@@ -39,7 +39,7 @@ In **Segments** in Adobe Audience Manager, you can now see all the Adobe Experie
 
 ![RTCDP](./images/aam3a.png)
 
-Search for your AEP segment, which may be on a different page.
+Search for your Platform segment, which may be on a different page.
 
 Open the segment you built in 1 by clicking it. In this example, that is the segment **vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)**. Make sure to copy the **Segment ID** as you'll need it in a couple of seconds.
 
@@ -81,7 +81,7 @@ Click **Done** to save your changes.
 
 As of this moment, everybody who qualifies for this segment in Adobe Experience Platform, will be sent to a Google AdWords Remarketing List for Search Advertising.
 
-## Use an AEP Segment as a Trait in AAM
+## Use a Platform Segment as a Trait in AAM
 
 Every segment built in Adobe Experience Platform will also show up in Adobe Audience Manager as a Trait. This means that it is possible to enrich Adobe Experience Platform segments with for instance 2nd or 3rd Party Data in Adobe Audience Manager.
 
@@ -141,7 +141,7 @@ You'll then see this. These URLs and Image Tags can used to embed them in the Di
 
 ![RTCDP](./images/aamt9.png)
 
-You now have 1 Trait for your AEP Segment, and another Trait for your Impression Pixel. Let's now combine these 2 Traits into a segment in Adobe Audience Manager.
+You now have 1 Trait for your Platform Segment, and another Trait for your Impression Pixel. Let's now combine these 2 Traits into a segment in Adobe Audience Manager.
 
 Go to **Audience Data** and then to **Segments**.
 
@@ -217,7 +217,7 @@ You can now set a recency and frequency for the Impression Pixel. Set it like th
 
 You should read this as follows:
 
-Include everyone in this segment that qualifies for the AEP Segment of Interest in **product name**, but not those who have had 10 or more Ad Impressions for **productname** in the last 14 days.
+Include everyone in this segment that qualifies for the Platform Segment of Interest in **product name**, but not those who have had 10 or more Ad Impressions for **productname** in the last 14 days.
 
 Adobe Audience Manager will dynamically and in real-time re-evaluate this expression for every new hit. So at first, a customer will be included in this segment and the destinations linked to this segment will be able to target this customer. For every Ad Impression, a pixel will be fired, and the counter on the Impression Pixel will be incremented. When it reaches 10 or more, the **AND NOT** clause will be triggered and will remove that customer from the Segment in Adobe Audience Manager.
 
@@ -245,7 +245,7 @@ On this page, you can see an overview of all existing segments.
 
 ![Segmentation](./images/segmentation.png)
 
-Click on the **Create Segment**-button to start creating a new segment.
+Click on the **Create Segment** button to start creating a new segment.
 
 ![Segmentation](./images/createnewsegment.png)
 

@@ -53,7 +53,7 @@ You should create a new dataset. To create a new dataset, click on the button **
 
 ![Data Ingestion](./images/createdataset.png)
 
-After clicking the **+ Create Dataset** - button, you'll see the following screen. 
+After clicking the **+ Create Dataset** button, you'll see the following screen. 
 
 ![Data Ingestion](./images/datasetsetup.png)
 
@@ -61,7 +61,7 @@ You have to define a dataset from the schema that you defined in the previous st
 
 ![Data Ingestion](./images/datasetfromschema.png)
 
-In the next screen, you have to select the schema that you created in 1, **AEP Demo - Website Registrations Schema**.
+In the next screen, you have to select the schema that you created in 1, **Platform Demo - Website Registrations Schema**.
 
 ![Data Ingestion](./images/schemaselection.png)
 
@@ -72,7 +72,7 @@ After selecting the schema, click **Next** to continue.
 Let's give a name to your dataset. 
 
 As the name for our dataset, we'll use this:
-**AEP Demo - Website Registrations**
+**Platform Demo - Website Registrations**
   
 That should give you something like this:
 
@@ -92,7 +92,7 @@ You should create a new dataset. To create a new dataset, click on the button **
 
 ![Data Ingestion](./images/createdataset.png)
 
-After clicking the **+ Create Dataset** - button, you'll see the following screen. 
+After clicking the **+ Create Dataset** button, you'll see the following screen. 
 
 ![Data Ingestion](./images/datasetsetup.png)
 
@@ -100,7 +100,7 @@ You have to define a dataset from the schema that you defined in the previous st
 
 ![Data Ingestion](./images/datasetfromschema.png)
 
-In the next screen, you have to select the schema that you created in 2.2, **AEP Demo - Website Interactions Schema**.
+In the next screen, you have to select the schema that you created in 2.2, **Platform Demo - Website Interactions Schema**.
 
 ![Data Ingestion](./images/schemaselectionee.png)
 
@@ -111,7 +111,7 @@ After selecting the schema, click **Next** to continue.
 Let's give a name to your dataset. 
 
 As the name for our dataset, we'll use this:
-**AEP Demo - Website Interactions**
+**Platform Demo - Website Interactions**
   
 That should give you something like this:
 
@@ -125,9 +125,9 @@ You should now have created 2 datasets, and you should see both of them in the D
 
 ![Data Ingestion](./images/datasetsoverview.png)
 
-You now have to enable your datasets to be part of Adobe Experience Platform's Unified Profile.
+You now have to enable your datasets to be part of Adobe Experience Platform's Real-time Customer Profile.
 
-Open you dataset **AEP Demo - Website Registrations** by clicking on it.
+Open you dataset **Platform Demo - Website Registrations** by clicking on it.
 
 Locate the Profile switcher icon on the right side of the screen.
 
@@ -143,7 +143,7 @@ Click the **Enable**.
 
 Your dataset is now enabled for Profile.
 
-Open you dataset **AEP Demo - Website Interactions** by clicking on it.
+Open you dataset **Platform Demo - Website Interactions** by clicking on it.
 
 Locate the Profile switcher icon on the right side of the screen.
 

@@ -11,7 +11,7 @@ activity:
 
 In this exercise, you'll test and trigger the Orchestrated Journey you configured in this module.
 
-* Go to your AEP Demo - website.
+* Go to your Platform Demo - website.
 
 * You'll be redirected to the **Admin**-page. Go to **Select LDAP**.
 

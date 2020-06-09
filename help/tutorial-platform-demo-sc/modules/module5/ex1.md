@@ -35,7 +35,7 @@ You'll then see the **Amazon S3**-homepage.
 
 ![ETL](./images/s3home.png)
 
-Click the **Create Bucket**-button.
+Click the **Create Bucket** button.
 
 ![ETL](./images/createbucket.png)
 
@@ -50,7 +50,7 @@ Scroll down on the page until you see **Bucket settings for Block Public Access*
 
 ![ETL](./images/bucketsett.png)
 
-Click the **Create Bucket**-button.
+Click the **Create Bucket** button.
 
 ![ETL](./images/createbucket.png)
 

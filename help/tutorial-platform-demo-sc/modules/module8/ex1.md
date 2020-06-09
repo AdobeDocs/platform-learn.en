@@ -33,21 +33,21 @@ In this Tech Lab, we'll be using 3 datasets:
 
 | Dataset Name                   | Dataset Schema      | Description                                    |
 |:---------------------------:| :---------------:| :-------------------------------------: |
-| AEP Demo - Website Interactions | AEP Demo - Website Interactions Schema | Clickstream data from website |
-| AEP Demo - Recommendations Input | AEP Demo - Recommendations Input Schema| The clickstream data will be converted into a feature/training dataset using a feature pipeline. This data is used to train the Product Recommendations machine learning model. itemid and userid correspond to a product purchased by that user at time timestamp |
-| AEP Demo - Recommendations Output | AEP Demo - Recommendations Output Schema| Schema This is the dataset that you obtain after scoring. This contains the list of recommended products for each user |
+| Platform Demo - Website Interactions | Platform Demo - Website Interactions Schema | Clickstream data from website |
+| Platform Demo - Recommendations Input | Platform Demo - Recommendations Input Schema| The clickstream data will be converted into a feature/training dataset using a feature pipeline. This data is used to train the Product Recommendations machine learning model. itemid and userid correspond to a product purchased by that user at time timestamp |
+| Platform Demo - Recommendations Output | Platform Demo - Recommendations Output Schema| Schema This is the dataset that you obtain after scoring. This contains the list of recommended products for each user |
 
-Let's have a look at the **AEP Demo - Website Interactions**-dataset.
+Let's have a look at the **Platform Demo - Website Interactions**-dataset.
 
-On the Datasets - page, enter **AEP Demo - Website Interactions** in the search box.
+On the Datasets - page, enter **Platform Demo - Website Interactions** in the search box.
 
 ![DSW](./images/dssearch.png)
 
-Open the dataset **AEP Demo - Website Interactions**.
+Open the dataset **Platform Demo - Website Interactions**.
 
 ![DSW](./images/dsview.png)
 
-By clicking the **Preview Dataset** - button, you can see what data is sent into that dataset and how the data model looks like.
+By clicking the **Preview Dataset** button, you can see what data is sent into that dataset and how the data model looks like.
 
 ![DSW](./images/dspreview.png)
 
@@ -65,13 +65,13 @@ In the Schemas - overview, search to find the 3 schemas you'll be using in this 
 
 | Schema Name    |
 | :---------------:|
-| AEP Demo - Recommendations Input Schema|
-| AEP Demo - Recommendations Output Schema|
-| AEP Demo - Website Interactions Schema|
+| Platform Demo - Recommendations Input Schema|
+| Platform Demo - Recommendations Output Schema|
+| Platform Demo - Website Interactions Schema|
 
 ![DSW](./images/schemaoverview.png)
 
-Let's explore the schema for AEP Demo - Website Interactions Schema, click to open the schema named **AEP Demo - Website Interactions Schema**.
+Let's explore the schema for Platform Demo - Website Interactions Schema, click to open the schema named **Platform Demo - Website Interactions Schema**.
 
 ![DSW](./images/schemadtl.png)
 
@@ -129,7 +129,7 @@ Click on the first cell in the notebook.
 ```python
 import pandas as pd
 
-inputDataset="5ea04d5b5c640f18a85a7b6b" # AEP Demo - Website Interactions Dataset
+inputDataset="5ea04d5b5c640f18a85a7b6b" # Platform Demo - Website Interactions Dataset
 outputDataset="5ea04d5b7f917418a8b7994c" # Recommendations Input Dataset
 
 tenant_id = "<aepTenantId>"
@@ -142,7 +142,7 @@ timestamp = "timestamp"
 client_context = PLATFORM_SDK_CLIENT_CONTEXT
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -150,7 +150,7 @@ The execution of this cell might take 1-2 minutes. Just wait and don't do anythi
 
 Every time you push the play-button to execute a cell, you'll see an indicator that tells you whether or not your action is still ongoing.
 
-This is the indicator when you push the play - button to execute a cell:
+This is the indicator when you push the play button to execute a cell:
 
 ![DSW](./images/actionbusy.png)
 
@@ -162,7 +162,7 @@ Don't continue the exercises until the indicator shows that the execution is fin
 
 ![DSW](./images/actionfinished.png)
 
-There is no visual result after this execution. After clicking the play - button, continue to the next step.
+There is no visual result after this execution. After clicking the play button, continue to the next step.
 
 ### Read from Platform: Load the input dataset and show an overview of the data
 
@@ -178,7 +178,7 @@ df = dataset_reader.limit(50000).read()
 df.head()
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 The execution of this cell might take 1-2 minutes. Just wait and don't do anything else in this notebook until you the below result.
 
@@ -206,7 +206,7 @@ df = df.dropna(subset=[user_id, item_id, interactionType, brand_name])
 df = df[df[brand_name] == "Luma Telco"]
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -214,7 +214,7 @@ Wait until the indicator looks like this before continuing:
 
 ![DSW](./images/actionfinished.png)
 
-There is no visual result after this execution. After clicking the play - button, continue to the next step.
+There is no visual result after this execution. After clicking the play button, continue to the next step.
 
 ### Split the items into individual records
 
@@ -244,7 +244,7 @@ def split_df(dataframe, col_name, sep):
 df2 = split_df(df, item_id, "\|\|")
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -254,7 +254,7 @@ Wait until the indicator looks like this before continuing:
 
 ![DSW](./images/actionfinished.png)
 
-There is no visual result after this execution. After clicking the play - button, continue to the next step.
+There is no visual result after this execution. After clicking the play button, continue to the next step.
 
 ### Prep the data before saving it back to Adobe Experience Platform
 
@@ -275,7 +275,7 @@ df2.rename(columns={
 }, inplace=True)
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -285,7 +285,7 @@ Wait until the indicator looks like this before continuing:
 
 ![DSW](./images/actionfinished.png)
 
-There is no visual result after this execution. After clicking the play - button, continue to the next step.
+There is no visual result after this execution. After clicking the play button, continue to the next step.
 
 ### Write to Platform: Output that data-frame into a dataset in Adobe Experience Platform
 
@@ -297,7 +297,7 @@ Click on the next cell in the notebook.
 df2.head()
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -323,7 +323,7 @@ dataset_writer = DatasetWriter(PLATFORM_SDK_CLIENT_CONTEXT, dataset)
 write_tracker = dataset_writer.write(df2, file_format='json')
 ```
 
-Click the play - button to execute this cell.
+Click the play button to execute this cell.
 
 ![DSW](./images/play.png)
 
@@ -335,7 +335,7 @@ The result looks like this:
 
 ![DSW](./images/result7.png)
 
-The result in Adobe Experience Platform is that a new batch of data has been created on the **AEP Demo - Recommendations Input** which you can verify by going
+The result in Adobe Experience Platform is that a new batch of data has been created on the **Platform Demo - Recommendations Input** which you can verify by going
 [here](https://platform.adobe.com/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created).
 
 ![DSW](./images/1ds.png)

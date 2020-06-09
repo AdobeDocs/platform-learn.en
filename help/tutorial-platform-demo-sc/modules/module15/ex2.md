@@ -49,7 +49,7 @@ After installing Anaconda, open Anaconda and you'll see the below page.
 
 ![LocalNotebook](./images/nb1.png)
 
-Click on the **Launch** - button for JupyterLab.
+Click on the **Launch** button for JupyterLab.
 
 ![LocalNotebook](./images/launchjn.png)
 
@@ -103,11 +103,11 @@ Go to the next cell. This cell will load all datasets from Adobe Experience Plat
 
 ![LocalNotebook](./images/showtables.png)
 
-Go to the next cell. This cell will load the **AEP Demo - Car Insurance Interactions** - dataset from Adobe Experience Platform into a data-frame. Click the **Play** - icon to execute this cell. This might take 1-2 minutes.
+Go to the next cell. This cell will load the **Platform Demo - Car Insurance Interactions** - dataset from Adobe Experience Platform into a data-frame. Click the **Play** - icon to execute this cell. This might take 1-2 minutes.
 
 ![LocalNotebook](./images/loadee.png)
 
-The **AEP Demo - Car Insurance Interactions** - dataset is now assigned to a data-frame, and now a data scientist can continue Exploration, Visualization and Model Development based on this data-frame.
+The **Platform Demo - Car Insurance Interactions** - dataset is now assigned to a data-frame, and now a data scientist can continue Exploration, Visualization and Model Development based on this data-frame.
 
 ![LocalNotebook](./images/df.png)
 

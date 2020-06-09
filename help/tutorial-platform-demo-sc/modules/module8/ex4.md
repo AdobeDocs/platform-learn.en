@@ -25,11 +25,11 @@ After opening Training Run 1, you'll see a full overview of the Training Run, an
 
 ![DSW](./images/trr1.png)
 
-To score, you have to click the **+ Score** - button in the top right corner of your screen.
+To score, you have to click the **+ Score** button in the top right corner of your screen.
 
 ![DSW](./images/score.png)
 
-In the next step, you again have to select an Input Dataset. Let's choose the **AEP Demo - Recommendations Input**.
+In the next step, you again have to select an Input Dataset. Let's choose the **Platform Demo - Recommendations Input**.
 
 ![DSW](./images/scoreinput.png)
 
@@ -37,7 +37,7 @@ After selecting the Input Dataset, click **Next**.
 
 ![DSW](./images/next.png)
 
-In the next step, you need to select a dataset to which Platform will output results. In this case, select the **AEP Demo - Recommendations Output**.
+In the next step, you need to select a dataset to which Platform will output results. In this case, select the **Platform Demo - Recommendations Output**.
 
 ![DSW](./images/scoreoutput.png)
 

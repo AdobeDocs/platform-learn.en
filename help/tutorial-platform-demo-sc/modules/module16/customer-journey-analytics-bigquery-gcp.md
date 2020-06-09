@@ -45,7 +45,7 @@ In this exercise, you'll create your Google Cloud Platform account.
 
 [16.2 Create your first query in BigQuery](./ex2.md)
 
-In this exercise, you'll learn how to use BigQuery to prepare the data for loading into AEP.
+In this exercise, you'll learn how to use BigQuery to prepare the data for loading into Platform.
 
 [16.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md)
 

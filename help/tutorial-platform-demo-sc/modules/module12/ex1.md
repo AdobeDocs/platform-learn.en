@@ -70,7 +70,7 @@ In **Schemas**, go to **Browse** to see the list of available Schemas.
 
 ![Data Ingestion](./images/schemas.png)
 
-Open the Schema **AEP Demo - Location Service Geofence Schema**.
+Open the Schema **Platform Demo - Location Service Geofence Schema**.
 
 After opening the Schema, you'll see that the Mixin **Orchestration eventID** is part of the Schema.
 
@@ -86,7 +86,7 @@ Let's go back to our Event configuration in Journey Orchestration.
 
 ![Demo](./images/evschema.png)
 
-In our use-case, we want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema **AEP Demo - Location Service Geofence Schema v.1** as the Schema for your Event.
+In our use-case, we want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema **Platform Demo - Location Service Geofence Schema v.1** as the Schema for your Event.
 
 ![Demo](./images/evschema1.png)
 

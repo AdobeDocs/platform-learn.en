@@ -49,7 +49,7 @@ You'll then see the Informatica homepage.
 
 ![ETL](./images/inf1.png)
 
-On the Informatica homepage, click the **+ New...**-button.
+On the Informatica homepage, click the **+ New...** button.
 
 ![ETL](./images/2map1.png)
 
@@ -432,11 +432,11 @@ You'll then have this:
 
 ![ETL](./images/target5.png)
 
-Click the **Select**-button to select the Adobe Experience Platform-dataset to use.
+Click the **Select** button to select the Adobe Experience Platform-dataset to use.
 
-Enter the search term **AEP Demo - ETL** and click **Search**. You'll then see these datasets being returned.
+Enter the search term **Platform Demo - ETL** and click **Search**. You'll then see these datasets being returned.
 
-Select the dataset **AEP Demo - ETL Offline Orders**.
+Select the dataset **Platform Demo - ETL Offline Orders**.
 
 ![ETL](./images/target6.png)
 
@@ -469,7 +469,7 @@ You now have a finished workflow which can be **Run**.
 
 ![ETL](./images/run1.png)
 
-Click the **Run**-button in the top right corner of the screen.
+Click the **Run** button in the top right corner of the screen.
 
 ![ETL](./images/run0.png)
 
@@ -511,7 +511,7 @@ Go to [Adobe Experience Platform](https://platform.adobe.com/home), to Datasets 
 
 ![ETL](./images/run9.png)
 
-Open the dataset **AEP Demo - ETL Offline Orders**.
+Open the dataset **Platform Demo - ETL Offline Orders**.
 
 ![ETL](./images/run11.png)
 

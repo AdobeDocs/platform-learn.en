@@ -39,13 +39,13 @@ Click on Score - Wait until you see scoring successful and you see an output of 
 
 ## Create a recipe from the model
 
-When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** - button to start the process.
+When you are satisfied with the outputs of training and scoring, you can create a recipe. Click the **Create Recipe** button to start the process.
 
 ![DSW](./images/dswchmferecipe.png)
 
 Creating a recipe enables you to test your model at scale.
 
-After clicking the **Create Recipe** - button, you have to enter a name for your recipe.
+After clicking the **Create Recipe** button, you have to enter a name for your recipe.
 
 ![DSW](./images/recname.png)
 
@@ -67,7 +67,7 @@ A second popup is shown, telling you that your Recipe is being created. This cou
 
 ![DSW](./images/popup.png)
 
-For now, click the **Dismiss** - button.
+For now, click the **Dismiss** button.
 
 ![DSW](./images/dismiss.png)
 
