@@ -13,7 +13,7 @@ In this exercise, you'll create a custom Event by making use of Journey Orchestr
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
-You'll see the **Adobe Experience Cloud**-homepage.
+You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
@@ -21,7 +21,7 @@ Click on **Journey Orchestration**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration**-homepage.
+Next, you'll see the **Journey Orchestration** homepage.
 
 ![Demo](./images/aecjoh.png)
 
@@ -91,7 +91,7 @@ In our use-case, we want to listen to a Geofence Event to understand if a custom
 ![Demo](./images/evschema1.png)
 
 Journey Orchestration will then automatically select some required fields, but you can edit the fields that are made available to Journey Orchestration.
-Click the **pencil**-icon to edit the fields.
+Click the **pencil** icon to edit the fields.
 
 ![Demo](./images/editfields.png)
 
@@ -134,11 +134,11 @@ Open your event again by clicking it in the list of events.
 
 ![Demo](./images/eventlist1.png)
 
-On your Event, click on the **View Payload**-icon next to **Fields**.
+On your Event, click on the **View Payload** icon next to **Fields**.
 
 ![Demo](./images/fieldseye.png)
 
-Clicking the **View Payload**-icon opens up a sample XDM payload for this event.
+Clicking the **View Payload** icon opens up a sample XDM payload for this event.
 
 ![Demo](./images/fieldseyepayload.png)
 

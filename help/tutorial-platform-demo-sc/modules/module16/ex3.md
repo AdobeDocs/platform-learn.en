@@ -58,7 +58,7 @@ Once you are on the home page, go to left menu and click **APIs & Services**, th
 
 ![demo](./images/ex2/4.png)
 
-You'll now see the **APIs & Services**-homepage. 
+You'll now see the **APIs & Services** homepage. 
 
 ![demo](./images/ex2/6.png)
 
@@ -69,7 +69,7 @@ On this page, you're able to see the usage of your various Google API connection
 
 ## 16.3.2 OAuth Consent Screen
 
-Let's start with creating the OAuth Consent Screen. In the left menu on the **APIs & Services**-homepage, click **OAuth consent screen**.
+Let's start with creating the OAuth Consent Screen. In the left menu on the **APIs & Services** homepage, click **OAuth consent screen**.
 
 ![demo](./images/ex2/6-1a.png)
 
@@ -81,7 +81,7 @@ Select the User Type: **External**. Next, click **CREATE**.
 
 ![demo](./images/ex2/6-2.png)
 
-You'll then be on the **OAuth Consent Screen configuration**-window. 
+You'll then be on the **OAuth Consent Screen configuration** window. 
 
 ![demo](./images/ex3/6-3a.png)
 
@@ -168,11 +168,11 @@ However, Google has built something easier to test and play with their APIs, a t
 
 To access **OAuth 2.0 Playground**, go to [https://developers.google.com/oauthplayground](https://developers.google.com/oauthplayground).
 
-You'll then see the **OAuth 2.0 Playground**-homepage.
+You'll then see the **OAuth 2.0 Playground** homepage.
 
 ![demo](./images/ex2/22.png)
 
-Click on the **gear**-icon in the top right side of your screen:
+Click on the **gear** icon in the top right side of your screen:
 
 ![demo](./images/ex2/22-1.png)
 
@@ -294,7 +294,7 @@ In the left menu, go to sources.
 
 ![demo](./images/ex2/1.png)
 
-You'll then see the **Sources**-homepage. In the **Sources**-menu, click on **Databases**.
+You'll then see the **Sources** homepage. In the **Sources**-menu, click on **Databases**.
 
 ![demo](./images/ex2/sourceshome.png)
 

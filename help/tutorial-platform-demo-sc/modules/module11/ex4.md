@@ -135,7 +135,7 @@ Go back to **Traits**.
 
 ![RTCDP](./images/aamt8.png)
 
-For completeness, if you'd want to deploy this Impression Pixel, you need the URL or Image Tag to embed in your creative, as part of your Display Ad Campaign. To find the URL or Image Tag, you need to click the little **cloud**-icon as indicated in the screenshot.
+For completeness, if you'd want to deploy this Impression Pixel, you need the URL or Image Tag to embed in your creative, as part of your Display Ad Campaign. To find the URL or Image Tag, you need to click the little **cloud** icon as indicated in the screenshot.
 
 You'll then see this. These URLs and Image Tags can used to embed them in the Display Ad Campaign.
 
@@ -202,7 +202,7 @@ Hover over the 3 dots between your 2 Traits. You'll see a dropdown-list open up 
 
 ![RTCDP](./images/aams9.png)
 
-Next, click the little **clock**-icon next to your Impression Pixel Trait.
+Next, click the little **clock** icon next to your Impression Pixel Trait.
 
 ![RTCDP](./images/aams10.png)
 

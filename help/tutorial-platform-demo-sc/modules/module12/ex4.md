@@ -13,7 +13,7 @@ In this exercise, you'll create an Orchestrated Journey by making use of Journey
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
-You'll see the **Adobe Experience Cloud**-homepage.
+You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
@@ -21,7 +21,7 @@ Click on **Journey Orchestration**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration**-homepage, which shows all existing Journeys.
+Next, you'll see the **Journey Orchestration** homepage, which shows all existing Journeys.
 
 ![Demo](./images/journeyhome.png)
 
@@ -77,11 +77,11 @@ Click on the **Condition**.
 
 ![Demo](./images/jo5.png)
 
-Click on the **Edit**-icon for the expression of Path1.
+Click on the **Edit** icon for the expression of Path1.
 
 ![Demo](./images/jo6.png)
 
-You'll then see an empty **Simple Editor**-screen.
+You'll then see an empty **Simple Editor** screen.
 
 ![Demo](./images/jo7.png)
 
@@ -135,11 +135,11 @@ Click **Add Path**.
 
 ![Demo](./images/joadd.png)
 
-Click on the **Edit**-icon for the expression of Path2.
+Click on the **Edit** icon for the expression of Path2.
 
 ![Demo](./images/joc6.png)
 
-You'll then see an empty **Simple Editor**-screen.
+You'll then see an empty **Simple Editor** screen.
 
 ![Demo](./images/jo7.png)
 
@@ -191,11 +191,11 @@ Click **Add Path**.
 
 ![Demo](./images/joadd.png)
 
-Click on the **Edit**-icon for the expression of Path3.
+Click on the **Edit** icon for the expression of Path3.
 
 ![Demo](./images/joct6.png)
 
-You'll then see an empty **Simple Editor**-screen.
+You'll then see an empty **Simple Editor** screen.
 
 ![Demo](./images/jo7.png)
 
@@ -253,7 +253,7 @@ Let's take another **Condition**-element and drag it as indicated in the screens
 
 ![Demo](./images/joa1.png)
 
-Click on the **Edit**-icon for the Expression for Path1.
+Click on the **Edit** icon for the Expression for Path1.
 
 ![Demo](./images/joa2.png)
 
@@ -295,7 +295,7 @@ Navigate to the **Action Parameters**.
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit**-icon for the Action Parameter **TEXTMESSAGE**.
+Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
 
 ![Demo](./images/joa12.png)
 
@@ -311,7 +311,7 @@ Select the below code, copy it and paste it in the **Advanced Mode Editor**.
 
 Click **OK**.
 
-Click on the **Edit**-icon for the Action Parameter **MOBILENR**.
+Click on the **Edit** icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/joa15.png)
 
@@ -342,7 +342,7 @@ In the left menu, go back to **Actions**, select the Action **textSlackLdap**, t
 
 ![Demo](./images/joa18.png)
 
-Go to **Action Parameters** and click the **Edit**-icon for the parameter **TEXTTOSLACK**.
+Go to **Action Parameters** and click the **Edit** icon for the parameter **TEXTTOSLACK**.
 
 ![Demo](./images/joa19.png)
 
@@ -380,7 +380,7 @@ Let's take another **Condition**-element and drag it as indicated in the screens
 
 ![Demo](./images/jop1.png)
 
-Click on the **Edit**-icon for the Expression for Path1.
+Click on the **Edit** icon for the Expression for Path1.
 
 ![Demo](./images/joa2.png)
 
@@ -422,7 +422,7 @@ Navigate to the **Action Parameters**.
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit**-icon for the Action Parameter **TEXTMESSAGE**.
+Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
 
 ![Demo](./images/joa12.png)
 
@@ -436,7 +436,7 @@ Select the below code, copy it and paste it in the **Advanced Mode Editor**.
 
 Click **OK**.
 
-Click on the **Edit**-icon for the Action Parameter **MOBILENR**.
+Click on the **Edit** icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/jop15.png)
 
@@ -467,7 +467,7 @@ In the left menu, go back to **Actions**, select the Action **textSlackLdap**, t
 
 ![Demo](./images/jop18.png)
 
-Go to **Action Parameters** and click the **Edit**-icon for the parameter **TEXTTOSLACK**.
+Go to **Action Parameters** and click the **Edit** icon for the parameter **TEXTTOSLACK**.
 
 ![Demo](./images/joa19.png)
 
@@ -505,7 +505,7 @@ Let's take another **Condition**-element and drag it as indicated in the screens
 
 ![Demo](./images/jod1.png)
 
-Click on the **Edit**-icon for the Expression for Path3.
+Click on the **Edit** icon for the Expression for Path3.
 
 ![Demo](./images/joa2.png)
 
@@ -547,7 +547,7 @@ Navigate to the **Action Parameters**.
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit**-icon for the Action Parameter **TEXTMESSAGE**.
+Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
 
 ![Demo](./images/joa12.png)
 
@@ -561,7 +561,7 @@ Select the below code, copy it and paste it in the **Advanced Mode Editor**.
 
 Click **OK**.
 
-Click on the **Edit**-icon for the Action Parameter **MOBILENR**.
+Click on the **Edit** icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/jod15.png)
 
@@ -592,7 +592,7 @@ In the left menu, go back to **Actions**, select the Action **textSlackLdap**, t
 
 ![Demo](./images/jod18.png)
 
-Go to **Action Parameters** and click the **Edit**-icon for the parameter **TEXTTOSLACK**.
+Go to **Action Parameters** and click the **Edit** icon for the parameter **TEXTTOSLACK**.
 
 ![Demo](./images/jod19.png)
 

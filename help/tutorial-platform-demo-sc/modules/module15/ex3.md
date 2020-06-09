@@ -22,7 +22,7 @@ We have streamlined the steps needed to operationalize a model by giving you the
 
 Go to [https://platform.adobe.com](https://platform.adobe.com)
 
-You'll see the **Adobe Experience Platform**-homepage.
+You'll see the **Adobe Experience Platform** homepage.
 
 ![DSWLI](./images/aeph.png)
 

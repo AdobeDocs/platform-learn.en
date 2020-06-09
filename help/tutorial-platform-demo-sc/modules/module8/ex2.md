@@ -9,7 +9,7 @@ activity:
 
 # 8.2 Model Authoring and Operationalization
 
-In 1 we created the training data required to power our Machine Learning model. In this lesson we will show you how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
+In Exercise 8.1 we created the training data required to power our machine learning model. In this lesson we will show you how you can use this data to author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
 The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -21,9 +21,9 @@ The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](h
 
 ## 8.2.1 - Analyze the Data
 
-Let's explore the generated training data from the previous to get quick insights using the data exploration notebook (recommendations-data-exploration.ipynb).
+Let's explore the generated training data from the previous to get quick insights using the data exploration notebook (`recommendations-data-exploration.ipynb`).
 
-In Jupyter Notebooks, open the notebook named **luma-retail-recommendations-data-exploration.ipynb** by double-clicking it.
+In Jupyter Notebooks, open the notebook named `luma-retail-recommendations-data-exploration.ipynb` by double-clicking it.
 
 ![DSW](./images/jpanalyze.png)
 
@@ -188,7 +188,7 @@ The Recipe Builder Notebook is one of our recent innovations that templates your
 
 We have streamlined the steps needed to operationalize a model by giving you the ability to train, evaluate and score it at scale and then package it in one seamless flow on Adobe Experience Platform. Packaging to a Recipe also allows you to use the same code with different datasets to power different use cases in your organizations. Our specific use case revolves around using the recommendations model code for users searching for products to purchase on the website.
 
-In Jupyter Notebooks, open the notebook named **recommendations-popularity-recipe.ipynb** by double-clicking it.
+In Jupyter Notebooks, open the notebook named `recommendations-popularity-recipe.ipynb` by double-clicking it.
 
 ![DSW](./images/jprecipe.png)
 
@@ -248,7 +248,7 @@ When you click **Score**, the following cells are executed:
 * Pipeline File
 * Evaluator File
 
-Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the **AEP Demo - Recommendations Output**-dataset.
+Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the `AEP Demo - Recommendations Output`-dataset.
 
 You can verify this [by opening the Platform Demo - Recommendations Output-dataset in Adobe Experience Platform](https://platform.adobe.com/dataset).
 
@@ -270,11 +270,11 @@ After clicking the **Create Recipe** button, you have to enter a name for your r
 
 As a naming convention, please use:
 
-* **ldap**Recommendations
+* `ldap`Recommendations
 
-Replace **ldap** with your ldap.
+Replace `ldap` with your ldap.
 
-Example: for ldap **vangeluw**, the name of your recipe should be: **vangeluwRecommendations**.
+Example: for ldap `vangeluw`, the name of your recipe should be: `vangeluwRecommendations`.
 
 ![DSW](./images/recname99.png)
 
@@ -296,7 +296,7 @@ You can view the progress of the recipe creation process in the top right corner
 ...
 ![DSW](./images/progress1.png)
 
-After a couple of minutes, the recipe creation is finished and you can find your recipe in the **Recipes** - section. To go there, click on **Recipes** in the **Models** menu.
+After a couple of minutes, the recipe creation is finished and you can find your recipe in the **Recipes** section. To go there, click on **Recipes** in the **Models** menu.
 
 ![DSW](./images/menurec.png)
 

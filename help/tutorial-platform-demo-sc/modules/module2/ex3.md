@@ -111,7 +111,7 @@ After selecting the schema, click **Next** to continue.
 Let's give a name to your dataset. 
 
 As the name for our dataset, we'll use this:
-**AEP Demo - Website Interactions**
+`AEP Demo - Website Interactions`
   
 That should give you something like this:
 
@@ -143,7 +143,7 @@ Click the **Enable**.
 
 Your dataset is now enabled for Profile.
 
-Open you dataset **AEP Demo - Website Interactions** by clicking on it.
+Open you dataset `AEP Demo - Website Interactions` by clicking on it.
 
 Locate the Profile switcher icon on the right side of the screen.
 

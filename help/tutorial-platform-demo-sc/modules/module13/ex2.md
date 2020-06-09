@@ -50,7 +50,7 @@ On the right side, you'll find the **stitching area`, where you’ll select the 
 
 First, let's bring some datasets to the canvas. There are two ways: one by one or selecting some of them and click on add. We can try both.
 
-Search for the dataset **AEP Demo - Website Interactions**, then click **+**.
+Search for the dataset `AEP Demo - Website Interactions`, then click **+**.
 
 ![demo](./images/cja7.png)
 

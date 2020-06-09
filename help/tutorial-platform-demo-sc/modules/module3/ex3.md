@@ -209,7 +209,7 @@ The selected Environment should have a name similar to this one:
 
 ![Postman](./images/envselemea.png)
 
-Click the **gear**-icon to update the Private Key in the environment file.
+Click the **gear** icon to update the Private Key in the environment file.
 
 ![Postman](./images/gear.png)
 

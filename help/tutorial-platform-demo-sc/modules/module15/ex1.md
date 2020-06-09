@@ -26,7 +26,7 @@ Let's have a look at the demo scenario.
 
 ## Demo Scenario
 
-Open your Platform Demo-website.
+Open your Platform Demo website.
 
 You'll be redirected to the Admin Homepage.
 

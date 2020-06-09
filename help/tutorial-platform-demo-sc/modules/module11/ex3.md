@@ -16,7 +16,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 ![Data Ingestion](./images/home.png)
 
 In the left menu, go to **Destinations**.
-You'll then see the **Destinations**-homepage.
+You'll then see the **Destinations** homepage.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 

@@ -13,7 +13,7 @@ Adobe Experience Platform also has the ability to share Audiences to Email Marke
 
 You can use FTP or SFTP as part of the dedicated destinations for each of these Email Marketing Destinations, or you can use AWS S3 to exchange lists of customers between Adobe Experience Platform and these Email Marketing Destinations.
 
-In this module, you'll configure such a destination by making use of an AWS S3-bucket.
+In this module, you'll configure such a destination by making use of an AWS S3 bucket.
 
 Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
 
@@ -27,7 +27,7 @@ In the left menu, go to **Destinations**.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 
-You'll then see the **Destinations**-homepage.
+You'll then see the **Destinations** homepage.
 
 ![RTCDP](./images/rtcdp.png)
 
@@ -39,7 +39,7 @@ Click on **Amazon S3** and then click on **+ Connect Destination**.
 
 ![RTCDP](./images/rtcdpsf.png)
 
-Select **New Account** as Account Type. Please use these credentials to connect to the S3-bucket:
+Select **New Account** as Account Type. Please use these credentials to connect to the S3 bucket:
 
 | Access Key ID             | Secret Access Key             |
 |:-----------------------:| :-----------------------:|
@@ -59,7 +59,7 @@ Click **Next**.
 
 ![RTCDP](./images/next.png)
 
-On the next screen, you have to provide a name and folder so that Adobe Experience Platform can connect to the S3-bucket.
+On the next screen, you have to provide a name and folder so that Adobe Experience Platform can connect to the S3 bucket.
 
 ![RTCDP](./images/rtcdpsfs3connect1.png)
 

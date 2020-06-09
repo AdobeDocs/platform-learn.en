@@ -13,7 +13,7 @@ In this exercise, you'll create a custom External Data Source by making use of J
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
-You'll see the **Adobe Experience Cloud**-homepage.
+You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
@@ -21,7 +21,7 @@ Click on **Journey Orchestration**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration**-homepage.
+Next, you'll see the **Journey Orchestration** homepage.
 
 ![Demo](./images/aecjoh.png)
 
@@ -170,7 +170,7 @@ Or you can copy the JSON Response from here:
 
 Copy the above JSON Response to your clipboard, then go to your custom Data Source configuration screen.
 
-Click the **Edit Payload**-icon.
+Click the **Edit Payload** icon.
 
 ![Demo](./images/owmapi2.png)
 

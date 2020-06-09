@@ -13,7 +13,7 @@ In this exercise, you'll create 2 custom Actions by making use of Journey Orches
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
-You'll see the **Adobe Experience Cloud**-homepage.
+You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
@@ -21,7 +21,7 @@ Click on **Journey Orchestration**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration**-homepage.
+Next, you'll see the **Journey Orchestration** homepage.
 
 ![Demo](./images/aecjoh.png)
 
@@ -75,7 +75,7 @@ You don't need to change the Header Fields.
 
 For the **Message Parameters**, you need to define which fields should be sent towards Twilio. Logically, we want Journey Orchestration and Adobe Experience Platform to be the brain of personalization, so the SMS Message Text and the Mobile Number to send the SMS towards should be defined by Journey Orchestration and then sent to Twilio for execution.
 
-So for the **Message Parameters**, click the **Edit Payload**-icon.
+So for the **Message Parameters**, click the **Edit Payload** icon.
 
 ![Demo](./images/twiliomsgp.png)
 
@@ -163,7 +163,7 @@ You don't need to change the Header Fields.
 
 For the **Message Parameters**, you need to define which fields should be sent towards Slack. Logically, we want Journey Orchestration and Adobe Experience Platform to be the brain of personalization, so the text to send to Slack should be defined by Journey Orchestration and then sent to Slack for execution.
 
-So for the **Message Parameters**, click the **Edit Payload**-icon.
+So for the **Message Parameters**, click the **Edit Payload** icon.
 
 ![Demo](./images/slackmsgp.png)
 

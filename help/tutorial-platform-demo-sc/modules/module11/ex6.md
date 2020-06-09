@@ -17,7 +17,7 @@ Go to the Adobe Experience Cloud homepage by going to [http://experiencecloud.ad
 
 ![RTCDP](./images/excl.png)
 
-Open the menu by clicking the **nine dots**-icon in the upper right corner of your screen. Then click **People** in the menu.
+Open the menu by clicking the **nine dots** icon in the upper right corner of your screen. Then click **People** in the menu.
 
 ![RTCDP](./images/excl1.png)
 
@@ -35,7 +35,7 @@ Click **Adobe Target** to open it.
 
 ![RTCDP](./images/exclat.png)
 
-On the **Adobe Target**-homepage, you'll see all existing Activities.
+On the **Adobe Target** homepage, you'll see all existing Activities.
 
 ![RTCDP](./images/exclatov.png)
 
@@ -58,7 +58,7 @@ Click **Next**.
 
 ![RTCDP](./images/exclatcrxtdtlnext.png)
 
-You're now in the Visual Experience Composer, and should see the Platform Demo-website with the Brand that you already selected.
+You're now in the Visual Experience Composer, and should see the Platform Demo website with the Brand that you already selected.
 
 ![RTCDP](./images/exclatvec.png)
 

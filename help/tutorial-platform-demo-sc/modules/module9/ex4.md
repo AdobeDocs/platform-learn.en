@@ -9,14 +9,14 @@ activity:
 
 # 9.4 Retrieve Datasets in Platform
 
-As part of the GTM Rule configuration, we'll define rules that will send behavioral and profile data to Platform. When defining a tag and trigger in GTM to send behavioral and/or profile data to Adobe Experience Platform, we'll need to define some variables in GTM:
+As part of the Google Tag Manager Rule configuration, we'll define rules that will send behavioral and profile data to Platform. When defining a tag and trigger in Google Tag Manager to send behavioral and/or profile data to Adobe Experience Platform, we'll need to define some variables in Google Tag Manager:
 
-* **Adobe Organization ID/IMS Org ID**
-* **DCS Streaming Endpoint**
-* **Profile Dataset ID** & **Profile Schema Reference**
-* **Experience Event Dataset ID** & **Experience Event Schema Reference**
+* `Adobe Organization ID/IMS Org ID`
+* `DCS Streaming Endpoint`
+* `Profile Dataset ID` & `Profile Schema Reference`
+* `Experience Event Dataset ID` & `Experience Event Schema Reference`
 
-We'll go into Platform to retrieve most of that information, to then fill out the below table and configure it in GTM.
+We'll go into Platform to retrieve most of that information, to then fill out the below table and configure it in Google Tag Manager.
 
 | Name | GTM Variable Name | Constant Value |
 | ------------- | ------------- | ------------- |
@@ -48,23 +48,23 @@ If you'd like to know more about XDM, please have a look here:
 * [https://www.adobe.io/open/standards/xdm.html](https://www.adobe.io/open/standards/xdm.html)
 * [https://github.com/adobe/xdm](https://github.com/adobe/xdm)
 
-Search for **AEP Demo - GA Website Registrations Schema** to find the Profile XDM for your Platform Org.
+Search for `AEP Demo - GA Website Registrations Schema` to find the Profile XDM for your Platform Org.
 
 ![Platform Setup](./images/xdmprofile.png)
 
-The Platform Demo - GA Website Registrations Schema looks like this and is using the Google ID as a Secondary Identifier, with Email being the Primary Identifier.
+The `Platform Demo - GA Website Registrations Schema` looks like this and is using the Google ID as a Secondary Identifier, with Email being the Primary Identifier.
 
 ![Platform Setup](./images/profiledtl.png)
 
-Search for **AEP Demo - GA Website Interactions Schema** to find the ExperienceEvent XDM.
+Search for `AEP Demo - GA Website Interactions Schema` to find the ExperienceEvent XDM.
 
 ![Platform Setup](./images/xdmprofileee.png)
 
-The **AEP Demo - GA Website Interactions Schema** looks like this and is using the Google ID (GAID) as the Primary Identifier.
+The `AEP Demo - GA Website Interactions Schema` looks like this and is using the Google ID (GAID) as the Primary Identifier.
 
 ![Platform Setup](./images/eedtl.png)
 
-Try to locate these 2 Schema's yourself in the UI of Platform.
+Try to locate these two Schemas yourself in the UI of Platform.
 
 To view **Datasets**, navigate to the **Datasets** menu option.
 
@@ -74,7 +74,7 @@ You'll find a number of existing Datasets in Platform.
 
 ![Platform Setup](./images/datasets.png)
 
-At this moment, we'll use 2 datasets, which are linked to the Schema's that you just viewed
+At this moment, we'll use two datasets, which are linked to the Schema's that you just viewed
 
 * 1 Dataset to capture Google Analytics Website Interaction data
 * 1 Dataset to capture Google Analytics Website Registration data
@@ -108,87 +108,87 @@ Go to **Variables**.
 
 In the **User-Defined Variables** - section, click **New**.
 
-First, we'll configure the Variable for **Adobe Organization ID**.
+First, we'll configure the Variable for `Adobe Organization ID`.
 
-* Rename **Untitled Variable** to **imsOrgId**
+* Rename `Untitled Variable` to ``imsOrgId``
 * Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
 
 ![Platform Setup](./images/constanti.png)
 
-* Enter the constant value for **Adobe Organization ID** out of the above table as this Variable.
+* Enter the constant value for `Adobe Organization ID` out of the above table as this Variable.
 
 ![Platform Setup](./images/constantims.png)
 
 * Click **Save** to save your Variable.
 
-![GTM Setup](./images/gasave.png)
+![Google Tag Manager Setup](./images/gasave.png)
 
-Next, we'll configure the Variable for **DCS Streaming Endpoint**.
+Next, we'll configure the Variable for `DCS Streaming Endpoint`.
 
-* Rename **Untitled Variable** to **dcsStreamingEndpoint**
+* Rename `Untitled Variable` to `dcsStreamingEndpoint`
 * Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
 
 ![Platform Setup](./images/constant.png)
 
-* Enter the constant value for **DCS Streaming Endpoint**  out of the above table for this Variable.
+* Enter the constant value for `DCS Streaming Endpoint`  out of the above table for this Variable.
 
 ![Platform Setup](./images/constantdcs.png)
 
 * Click **Save** to save your Variable.
 
-![GTM Setup](./images/gasave.png)
+![Google Tag Manager Setup](./images/gasave.png)
 
-Next, we'll configure the Variable for **Profile Dataset ID**.
+Next, we'll configure the Variable for `Profile Dataset ID`.
 
-* Rename **Untitled Variable** to **profileDatasetId**
+* Rename `Untitled Variable` to `profileDatasetId`
 * Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
-* Enter the constant value for **Profile Dataset ID**  out of the above table for this Variable.
+* Enter the constant value for `Profile Dataset ID`  out of the above table for this Variable.
 
 ![Platform Setup](./images/constantpds.png)
 
 * Click **Save** to save your Variable.
 
-![GTM Setup](./images/gasave.png)
+![Google Tag Manager Setup](./images/gasave.png)
 
-Next, we'll configure the Variable for **Profile Schema Reference**.
+Next, we'll configure the Variable for `Profile Schema Reference`.
 
-* Rename **Untitled Variable** to **profileSchemaRef**
+* Rename `Untitled Variable` to `profileSchemaRef`
 * Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
-* Enter the constant value for **Profile Schema Reference** out of the above table for this Variable.
+* Enter the constant value for `Profile Schema Reference` out of the above table for this Variable.
 
 ![Platform Setup](./images/constantpdsch.png)
 
 * Click **Save** to save your Variable.
 
-![GTM Setup](./images/gasave.png)
+![Google Tag Manager Setup](./images/gasave.png)
 
-Next, we'll configure the Variable for **Experience Event Dataset ID**.
+Next, we'll configure the Variable for `Experience Event Dataset ID`.
 
-* Rename **Untitled Variable** to **eeDatasetId**
-* Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
+* Rename `Untitled Variable` to `eeDatasetId`
+* Click on **Variable Configuration** and choose `Utilities - Constant` as Variable Type
 * Enter the constant value for **Experience Event Dataset ID** out of the above table for this Variable.
 
 ![Platform Setup](./images/constanteeds.png)
 
 * Click **Save** to save your Variable.
 
-![GTM Setup](./images/gasave.png)
+![Google Tag Manager Setup](./images/gasave.png)
 
-Finally, we'll configure the Variable for **Experience Event Schema Reference**.
+Finally, we'll configure the Variable for `Experience Event Schema Reference`.
 
-* Rename **Untitled Variable** to **eeSchemaRef**
+* Rename `Untitled Variable` to `eeSchemaRef`
 * Click on **Variable Configuration** and choose **Utilities - Constant** as Variable Type
-* Enter the constant value **Experience Event Schema Reference** out of the above table for this Variable.
+* Enter the constant value `Experience Event Schema Reference` out of the above table for this Variable.
 
 ![Platform Setup](./images/constanteedsch.png)
 
 * Click **Save** to save your Variable.
 
-![GTM Setup](./images/gasave.png)
+![Google Tag Manager Setup](./images/gasave.png)
 
-Congratulations for reaching this point! Let's continue with the GTM Tags and Triggers Configuration now.
+Congratulations for reaching this point! Let's continue with the Google Tag Manager Tags and Triggers Configuration now.
 
-Next Step: [9.5 Configure GTM Tags & Triggers](./ex5.md)
+Next Step: [9.5 Configure Google Tag Manager Tags & Triggers](./ex5.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

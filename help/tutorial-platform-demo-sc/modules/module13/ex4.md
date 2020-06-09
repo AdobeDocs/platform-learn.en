@@ -167,11 +167,11 @@ Don't forget to **Save** each Calculated Metric.
 
 To finish this exercise, let's create a last calculated Metric: **Conversion Rate**.
 
-Find the **Purchase** Calculated Metric we've just created in the list of Metrics in the left side menu. Click on the **info**-icon.
+Find the **Purchase** Calculated Metric we've just created in the list of Metrics in the left side menu. Click on the **info** icon.
 
 ![demo](./images/prmetricinfo.png)
 
-Now click on the **edit**-icon.
+Now click on the **edit** icon.
 
 Typically, conversion rate means **Conversions / Sessions**. So let's do the same calculation in the calculated Metric definition canvas. Find the **Sessions**-metric and drag and drop it into the definition builder.
 

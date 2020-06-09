@@ -19,7 +19,7 @@ In today's world, responding to a customer's behavior needs to be real-time. One
 
 ## Identify the behavior you want to react to
 
-Go to your Platform Demo-website.
+Go to your Platform Demo website.
 
 You'll be redirected to the **Admin**-page
 
@@ -47,12 +47,12 @@ From Admin Home, click the logo of your brand.
 
 ![Demo](./images/adm_home.png)
 
-You'll then be redirected to the **Luma Retail**-homepage.
+You'll then be redirected to the **Luma Retail** homepage.
 
 ![Demo](./images/lb_home.png)
 
 In this example, I want to respond to a specific customer viewing a specific product.
-By scrolling down on the **Luma Retail**-homepage, I can see multiple products and I'm going to pick the product **Zeppelin Yoga Pant**.
+By scrolling down on the **Luma Retail** homepage, I can see multiple products and I'm going to pick the product **Zeppelin Yoga Pant**.
 
 ![Data Ingestion](./images/homenadia.png)
 
@@ -94,7 +94,7 @@ Scroll down to **Product List Items** and click it.
 
 ![Segmentation](./images/see.png)
 
-Select **Name** and drag and drop the **Name**-object from the left **Product List Items** - menu onto the segment builder canvas into the **Events**- section.
+Select **Name** and drag and drop the **Name** object from the left **Product List Items** - menu onto the segment builder canvas into the **Events**- section.
 
 ![Segmentation](./images/eewebpdtlname1.png)
 

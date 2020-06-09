@@ -25,7 +25,7 @@ After exercise 16.3, you should have this page open in Adobe Experience Platform
 
 **If you don't have it open, go to [Adobe Experience Platform](https://platform.adobe.com/home).**
 
-In the left menu, go to sources. You'll then see the **Sources**-homepage. In the **Sources**-menu, click on **Databases**.
+In the left menu, go to sources. You'll then see the **Sources** homepage. In the **Sources**-menu, click on **Databases**.
 
 ![demo](./images/ex4/0-a.png)
 
@@ -151,7 +151,7 @@ Last but not least, you must define a **delta**-field.
 
 ![demo](./images/ex4/36.png)
 
-The **delta**-field is used to schedule the connection and upload only new rows that come into your BigQuery-dataset. A delta field is typically always a timestamp-column. So for future scheduled data ingestions, only the rows with a new, more recent timestamp will be ingested.
+The **delta**-field is used to schedule the connection and upload only new rows that come into your BigQuery-dataset. A delta field is typically always a timestamp column. So for future scheduled data ingestions, only the rows with a new, more recent timestamp will be ingested.
 
 Select **timeStamp** as the delta-field.
 

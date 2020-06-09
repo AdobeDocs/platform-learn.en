@@ -1,21 +1,21 @@
 ---
-title: Data Ingestion using Google Tag Manager and Google Analytics - Configure GTM Tags & Triggers
-description: Data Ingestion using Google Tag Manager and Google Analytics - Configure GTM Tags & Triggers
+title: Data Ingestion using Google Tag Manager and Google Analytics - Configure Google Tag Manager Tags & Triggers
+description: Data Ingestion using Google Tag Manager and Google Analytics - Configure Google Tag Manager Tags & Triggers
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.5 Configure GTM Tags & Triggers
+# 9.5 Configure Google Tag Manager Tags & Triggers
 
-After creating the extensions and data elements, it's time to build our Rules or **Triggers** as they are called in GTM.
+After creating the extensions and data elements, it's time to build our rules or "triggers" as they are called in Google Tag Manager.
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
 ## 9.5.1 - Configure Trigger: All General Pages
 
-In the GTM menu, go to **Triggers**.
+In the Google Tag Manager menu, go to **Triggers**.
 
 ![Launch Setup](./images/triggers.png)
 
@@ -24,7 +24,7 @@ Click on **New**.
 ![Launch Setup](./images/newtrigger.png)
 
 Our first trigger will fire on All General Pages.
-As a name for this trigger, let's use **All General Pages**.
+As a name for this trigger, let's use `All General Pages`.
 
 ![Launch Setup](./images/newrule.png)
 
@@ -36,11 +36,11 @@ This trigger should be activated on certain Page Views, so let's select **Page V
 
 ![Launch Setup](./images/pvtrigger.png)
 
-Then select **Some Page Views** and specify that the trigger should be fired when **pageType** equals **General**.
+Then select **Some Page Views** and specify that the trigger should be fired when **pageType** equals `General`.
 
 ![Launch Setup](./images/pvtriggersettings.png)
 
-Click **Save**to save your trigger.
+Click **Save** to save your trigger.
 
 ![Launch Setup](./images/gasave.png)
 
@@ -51,7 +51,7 @@ In **Triggers**, click **New**.
 ![Launch Setup](./images/newtrigger.png)
 
 Our second trigger will fire on All Product Pages.
-As a name for this trigger, let's use **All Product Pages**.
+As a name for this trigger, let's use `All Product Pages`.
 
 ![Launch Setup](./images/newrulep.png)
 
@@ -63,11 +63,11 @@ This trigger should be activated on certain Page Views, so let's select **Page V
 
 ![Launch Setup](./images/pvtrigger.png)
 
-Then select **Some Page Views** and specify that the trigger should be fired when **pageType** equals **Products**.
+Then select **Some Page Views** and specify that the trigger should be fired when **pageType** equals `Products`
 
 ![Launch Setup](./images/pvtriggersettingsp.png)
 
-Click **Save**to save your trigger.
+Click **Save** to save your trigger.
 
 ![Launch Setup](./images/gasave.png)
 
@@ -78,7 +78,7 @@ In **Triggers**, click **New**.
 ![Launch Setup](./images/newtrigger.png)
 
 Our third trigger will fire on All Authenticated Pages.
-As a name for this trigger, let's use **All Authenticated Pages**.
+As a name for this trigger, let's use `All Authenticated Pages`.
 
 ![Launch Setup](./images/newruleauth.png)
 
@@ -90,21 +90,21 @@ This trigger should be activated on certain Page Views, so let's select **Page V
 
 ![Launch Setup](./images/pvtrigger.png)
 
-Then select **Some Page Views** and specify that the trigger should be fired when **customerLoggedIn** equals **Yes**.
+Then select **Some Page Views** and specify that the trigger should be fired when **customerLoggedIn** equals `Yes`.
 
 ![Launch Setup](./images/pvtriggersettingsauth.png)
 
-Click **Save**to save your trigger.
+Click **Save** to save your trigger.
 
 ![Launch Setup](./images/gasave.png)
 
-With this, you've successfully finished the setup of your Triggers in GTM.
+With this, you've successfully finished the setup of your Triggers in Google Tag Manager.
 
 Let's now configure the **Tags** to send to Adobe Experience Platform and link the **Triggers** that you just built to those Tags.
 
 ## 9.5.4 - Configure Tag: All General Pages
 
-In the GTM menu, go to **Tags**.
+In the Google Tag Manager menu, go to **Tags**.
 
 ![Launch Setup](./images/tags.png)
 
@@ -113,7 +113,7 @@ Click on **New**.
 ![Launch Setup](./images/newtrigger.png)
 
 Our first tag will fire on All General Pages.
-As a name for this tag, let's use **All General Pages**.
+As a name for this tag, let's use `All General Pages`.
 
 ![Launch Setup](./images/tagsagpname.png)
 
@@ -121,7 +121,7 @@ Click on **Triggering** to link the you created to this tag.
 
 ![Launch Setup](./images/triggering.png)
 
-Choose your **All General Pages** - trigger.
+Choose your `All General Pages` - trigger.
 
 ![Launch Setup](./images/triggeringagp.png)
 
@@ -153,7 +153,7 @@ Your configuration should now look like this:
 
 ## 9.5.5 - Configure Tag: All Product Pages
 
-In the GTM menu, go to **Tags**.
+In the Google Tag Manager menu, go to **Tags**.
 
 ![Launch Setup](./images/tagsapp.png)
 
@@ -162,7 +162,7 @@ Click on **New**.
 ![Launch Setup](./images/newtrigger.png)
 
 Our first tag will fire on All Product Pages.
-As a name for this tag, let's use **All Product Pages**.
+As a name for this tag, let's use `All Product Pages`.
 
 ![Launch Setup](./images/tagsappname.png)
 
@@ -170,7 +170,7 @@ Click on **Triggering** to link the you created to this tag.
 
 ![Launch Setup](./images/triggering.png)
 
-Choose your **All Product Pages** - trigger.
+Choose your `All Product Pages` trigger.
 
 ![Launch Setup](./images/triggeringapp.png)
 
@@ -202,7 +202,7 @@ Your configuration should now look like this:
 
 ## 9.5.6 - Configure Tag: All Authenticated Pages
 
-In the GTM menu, go to **Tags**.
+In the Google Tag Manager menu, go to **Tags**.
 
 ![Launch Setup](./images/tagsauth.png)
 
@@ -211,7 +211,7 @@ Click on **New**.
 ![Launch Setup](./images/newtrigger.png)
 
 Our first tag will fire on All Authenticated Pages.
-As a name for this tag, let's use **All Authenticated Pages**.
+As a name for this tag, let's use `All Authenticated Pages`.
 
 ![Launch Setup](./images/tagsauthname.png)
 
@@ -219,7 +219,7 @@ Click on **Triggering** to link the you created to this tag.
 
 ![Launch Setup](./images/triggering.png)
 
-Choose your **All Authenticated Pages** - trigger.
+Choose your `All Authenticated Pages` trigger.
 
 ![Launch Setup](./images/triggeringauth.png)
 
@@ -251,7 +251,7 @@ Your configuration should now look like this:
 
 You can now publish you configuration in the next exercise.
 
-Next Step: [9.6 Publish GTM Property](./ex6.md)
+Next Step: [9.6 Publish Google Tag Manager Property](./ex6.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

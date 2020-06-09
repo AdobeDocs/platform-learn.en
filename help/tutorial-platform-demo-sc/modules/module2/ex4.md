@@ -68,7 +68,7 @@ You'll then see this:
 
 ![Launch Setup](./images/beaconconfig.png)
 
-You can see that the dataset that is selected here is **AEP Demo - Website Interactions**, similar to the one you created in the previous exercise.
+You can see that the dataset that is selected here is `AEP Demo - Website Interactions`, similar to the one you created in the previous exercise.
 
 You can also see the Schema Mapping. In Schema Mapping, these fields have been connected to each other. The **Source Value** refers to a Data Element in Launch, while the **Target Value** refers to an XDM field, just like the fields you defined in the previous exercises.
 
