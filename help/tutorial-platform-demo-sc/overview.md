@@ -16,8 +16,9 @@ This tutorial is very diverse and offers clear insights in the following applica
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. In order to do that, in some lessons there is a focus on how _non-Adobe_ applications integrate with Adobe Experience Platform. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
 - Amazon: AWS Lambda, AWS S3, AWS Kinesis, AWS SQS, Alexa
-- Google: Google Tag Manager, Google Analytics, Google Cloud Platform, Google BigQuery
-- Microsoft: Azure EventHub, Azure Blob Storage, Dynamics 365, ...
+- Google: Google Tag Manager, Google Analytics, Google Cloud Platform, Google BigQuery, Google Display&Video 360, Google AdWords
+- Microsoft: Power BI, Azure EventHub, Azure Blob Storage, Dynamics 365
+- Salesforce: Tableau
 - Apache Kafka
 - Postman
 - Informatica
@@ -46,9 +47,9 @@ After completing this tutorial, you will be able to:
 - Access to a Platform demo website
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
->[!NOTE]
+>[!IMPORTANT] 
 >
->If you don't have access to your own Adobe Experience Platform instance, don't let it stop you! You'll still learn a lot by reading through these very detailed tutorials.
+>This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
 
 ## About this tutorial
 
