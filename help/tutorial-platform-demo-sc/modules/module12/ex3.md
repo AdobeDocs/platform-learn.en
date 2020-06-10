@@ -9,7 +9,7 @@ activity:
 
 # 12.3 Define Custom Actions
 
-In this exercise, you'll create 2 custom Actions by making use of Journey Orchestration in combination with Adobe Experience Platform.
+In this exercise, you'll create two custom Actions by making use of Journey Orchestration in combination with Adobe Experience Platform.
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
@@ -29,14 +29,14 @@ In the menu, click on **Actions**.
 
 ![Demo](./images/menuactions.png)
 
-You'll then see the **Actions**-list.
+You'll then see the **Actions** list.
 
 ![Demo](./images/acthome.png)
 
-You'll define 2 actions:
+You'll define two actions:
 
-* 1 Action that sends an SMS using an external application, Twilio
-* 1 Action that sends a text to a Slack channel
+* One action that sends an SMS using an external application, Twilio
+* One action that sends a text to a Slack channel
 
 ## Action: Send SMS using Twilio
 
@@ -52,15 +52,15 @@ You'll see an empty Action popup.
 
 ![Demo](./images/emptyact.png)
 
-As a Name for the Action, use **smsTwilioLdap** and replace **Ldap** with your LDAP. In this example, the Action Name is **smsTwilioVangeluw**.
+As a Name for the Action, use `smsTwilioLdap` and replace `Ldap` with your LDAP. In this example, the Action Name is `smsTwilioVangeluw`.
 
-Set Description to: **Send SMS using Twilio**.
+Set Description to: `Send SMS using Twilio`.
 
 ![Demo](./images/twilioname.png)
 
 For the **URL Configuration**, use this:
 
-* URL: **https://l1uikl5kog.execute-api.us-west-2.amazonaws.com/prod/**
+* URL: `https://l1uikl5kog.execute-api.us-west-2.amazonaws.com/prod/`
 * Method: **POST**
 
 You don't need to change the Header Fields.
@@ -122,7 +122,7 @@ Scroll up and click **Save** one more time to save your custom Action.
 
 ![Demo](./images/twiliomsgpopup3.png)
 
-Your custom Action is now part of the **Actions**-list.
+Your custom Action is now part of the **Actions** list.
 
 ![Demo](./images/twiliodone.png)
 
@@ -142,15 +142,15 @@ You'll see an empty Action popup.
 
 ![Demo](./images/emptyact.png)
 
-As a Name for the Action, use **textSlackLdap** and replace **Ldap** with your LDAP. In this example, the Action Name is **textSlackVangeluw**.
+As a Name for the Action, use `textSlackLdap` and replace `Ldap` with your LDAP. In this example, the Action Name is `textSlackVangeluw`.
 
-Set Description to: **Send Text to Slack**.
+Set Description to: `Send Text to Slack`.
 
 ![Demo](./images/slackname.png)
 
 For the **URL Configuration**, use this:
 
-* URL: **https://hooks.slack.com/services/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**
+* URL: `https://hooks.slack.com/services/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`
 * Method: **POST**
 
 You don't need to change the Header Fields.
@@ -171,7 +171,7 @@ You'll then see an empty popup-window.
 
 ![Demo](./images/slackmsgpopup.png)
 
-Copy the below text and paste it in the empty popup-window.
+Copy the below text and paste it in the empty popup window.
 
 ```json
 {
@@ -203,11 +203,11 @@ Scroll up and click **Save** one more time to save your custom Action.
 
 ![Demo](./images/slackmsgpopup3.png)
 
-Your custom Action is now part of the **Actions**-list.
+Your custom Action is now part of the **Actions** list.
 
 ![Demo](./images/slackdone.png)
 
-You've now defined Events, Data Sources and Actions - let's consolidate all of that in 1 Orchestrated Journey.
+You've defined Events, Data Sources and Actions. Now let's consolidate all of that in one Orchestrated Journey.
 
 Next Step: [12.4 Design a trigger-based Customer Journey](./ex4.md)
 

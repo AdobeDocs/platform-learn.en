@@ -21,7 +21,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the **Production Prod (VA7)**-environment in the blue line on top of your screen.
+Before you continue, make sure you are in the `Production Prod (VA7)`-environment in the blue line on top of your screen.
 
 In the left menu, go to **Destinations**.
 

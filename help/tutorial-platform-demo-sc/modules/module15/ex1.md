@@ -9,12 +9,13 @@ activity:
 
 # 15.1 Introduction to Luma Insurance
 
-In this exercise, you'll learn how to use the Luma Insurance Demo Brand and how to demo the Real-time ML Use-Case.
+In this exercise, you'll learn how to use the Luma Insurance Demo Brand and how to demo the real-time ML use-case.
 
 ## Business Context
 
-Luma Insurance is a typical Insurance Company with a big offline dealer-network and a website with lots of traffic.
-Luma Insurance has been trying to personalize their digital communication for years, but it’s very hard to personalize anything if you don’t know who you’re speaking to. As most of the traffic on the website is from unknown, anonymous users who only visit the website once or twice, it’s difficult for Luma Insurance to build out a deep customer profile.
+Luma Insurance is a typical insurance company with a big offline dealer-network and a website with lots of traffic.
+
+Luma Insurance has been trying to personalize their digital communication for years, but it’s very hard to personalize anything if you don’t know to whom you’re speaking. As most of the traffic on the website is from unknown, anonymous users who only visit the website once or twice, it’s difficult for Luma Insurance to build out a deep customer profile.
 
 Most of these unknown, anonymous visitors only come to the website with one goal: get a quick indication of the cost of an insurance, by filling out a form which then gives them an idea of the insurance cost.
 
@@ -60,7 +61,7 @@ From the Luma Insurance homepage, scroll down to see the Luma Insurance **produc
 
 The **Luma Insurance** - demo brand also allows you to visit pages like **Car Insurance**, **Travel Insurance** and **Household Insurance**.
 
-Go to the **Car Insurance**-page.
+Go to the **Car Insurance** page.
 
 ![LumaBank](./images/6.png)
 
@@ -68,13 +69,13 @@ Go back to the Luma Insurance homepage and open the Xray-panel, go to Experience
 
 ![LumaBank](./images/6a.png)
 
-**Luma Insurance**offers a standard template for the Insurance-industry, which includes a Car Insurance Simulator and also, Sensei Services with Real-time Machine Learning (RTML).
+**Luma Insurance** offers a standard template for the Insurance-industry, which includes a Car Insurance Simulator and also, Sensei Services with Real-time Machine Learning (RTML).
 
-Let's have a look at that template. Click on the **Get A Car Insurance Quote** - menu option.
+Let's have a look at that template. Click on the **Get A Car Insurance Quote** menu option.
 
 ![LumaBank](./images/7a.png)
 
-You'll then be redirected to the **Get A Car Insurance Quote** - page and you'll be able to start the Car Insurance process.
+You'll then be redirected to the **Get A Car Insurance Quote** page and you'll be able to start the Car Insurance process.
 
 ![LumaBank](./images/7b.png)
 
@@ -108,7 +109,7 @@ And finally, based on the calculated propensity score, you'll also see specific 
 
 ![LumaBank](./images/8.png)
 
-This segment qualification can then be shared through the Bi-Directional Segment Sharing connector between Platform and AEC, which means that solutions like Adobe Audience Manager and Adobe Target are now able to use that segment qualification and deliver an alternative, more personal experience to the customer.
+This segment qualification can then be shared through the bi-directional segment sharing connector between Adobe Experience Platform and Adobe Experience Cloud, which means that solutions like Adobe Audience Manager and Adobe Target are now able to use that segment qualification and deliver an alternative, more personal experience to the customer.
 
 Next Step: [15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
 

@@ -11,7 +11,7 @@ activity:
 
 **Author: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-**In Module 13**, you will get a first hands-on experience with the Adobe Experience Platform - Customer Journey Analytics Application Service.
+**In Module 13**, you will get hands-on experience with the Customer Journey Analytics application service.
 
 Customer Journey Analytics provides a toolkit to business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within Customer Journey Analytics deliver context and clarity to the complex multi-channel customer journeys. The provided context generates actionable insight into how to remove pain points from the customer conversion process and deliver positive experiences in the moments that matter most.
 
@@ -40,23 +40,23 @@ More info on Customer Journey Analytics can be found [here](https://spark.adobe.
 
 [13.1 Customer Journey Analytics 101](./ex1.md)
 
-In this exercise, you'll learn all about the Customer Journey Analytics concepts.
+Learn all about the Customer Journey Analytics concepts.
 
 [13.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](./ex2.md)
 
-In this exercise, you'll learn how to consume multiple datasets from Adobe Experience Platform into Customer Journey Analytics.
+Learn how to consume multiple datasets from Adobe Experience Platform into Customer Journey Analytics.
 
 [13.3 Create a Data View](./ex3.md)
 
-In this exercise, you'll learn how to configure a data view in Customer Journey Analytics.
+Learn how to configure a data view in Customer Journey Analytics.
 
 [13.4 Data Preparation in Customer Journey Analytics](./ex4.md)
 
-In this exercise, you'll learn how to do some data preparation before continuing with analysis.
+Learn how to do some data preparation before continuing with analysis.
 
 [13.5 Visualization using Customer Journey Analytics](./ex5.md)
 
-In this exercise, you'll learn how to visualize Adobe Experience Platform data using Customer Journey Analytics.
+Learn how to visualize Adobe Experience Platform data using Customer Journey Analytics.
 
 >[!NOTE]
 >

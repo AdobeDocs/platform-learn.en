@@ -34,15 +34,15 @@ Click **Create new connection**.
 
 ![demo](./images/cja4.png)
 
-You'll then see **Create Connection**-UI.
+You'll then see **Create Connection** UI.
 
 ![demo](./images/cja5.png)
 
-There are 3 different areas. Let's start from the left side.
+There are three different areas. Let's start from the left side.
 
 On the left side, you'll find all the available Adobe Experience Platform **datasets**.
 In the middle, you'll find the **drag-and-drop area for the datasets** you want to connect to.
-On the right side, you'll find the **stitching area`, where you’ll select the Person Id.
+On the right side, you'll find the **stitching area**, where you’ll select the Person Id.
 
 ![demo](./images/cja6.png)
 
@@ -58,7 +58,7 @@ You'll see the dataset being added to the canvas.
 
 ![demo](./images/cja8.png)
 
-Now search and check the checkboxes for **AEP Demo - Voice Assistant Interactions** and **AEP Demo - Call Center Interactions**. 
+Now search and check the checkboxes for `AEP Demo - Voice Assistant Interactions` and `AEP Demo - Call Center Interactions`. 
 
 Next, click **Add**.
 
@@ -80,7 +80,7 @@ Each data source has its own Person ID field. Check each dataset by clicking on 
 
 ![demo](./images/cja12.png)
 
-As you can see, most of them have the Person ID selected automatically. This is because a Primary Identifier is selected in every schema in Adobe Experience Platform. As an example, here's the schema for **AEP Demo - Call Center Interactions**, where you can see that the Primary Identifier is set to **mobilenr**.
+As you can see, most of them have the Person ID selected automatically. This is because a Primary Identifier is selected in every schema in Adobe Experience Platform. As an example, here's the schema for `AEP Demo - Call Center Interactions`, where you can see that the Primary Identifier is set to `mobilenr`.
 
 ![demo](./images/cja13.png)
 
@@ -90,16 +90,16 @@ However, you can still influence which identifier will be used to stitch dataset
 
 As mentioned, we can set different Person IDs for each dataset. This allows you to bring different datasets from multiple origins together in CJA. Imagine bringing in NPS or survey data which would be very interesting and helpful to understand the context and why something has happened.
 
-The name of the Person ID field isn't important, as long as the value in the Person ID fields correspond. Let say we have **EMAILID** in one dataset and **EmailAddress** in another dataset defined as Person ID. If **delaigle@adobe.com** is the same value for the Person ID-field on both datasets, CJA will be able to stitch the data.
+The name of the Person ID field isn't important, as long as the value in the Person ID fields correspond. Let say we have `EMAILID` in one dataset and `EmailAddress` in another dataset defined as Person ID. If `delaigle@adobe.com` is the same value for the Person ID-field on both datasets, CJA will be able to stitch the data.
 
 At this point, you may wonder, will the full ID Graph of Adobe Experience Platform's Real-time Customer Profile be available for stitching the data? This is part of the H2 2020 roadmap.
 Currently, CJA brings data directly from the datasets and isn't aware of the Real-time Customer Profile yet. That’s why, at this moment, you have to manually define the Person ID to get to the 360° view of the customer. 
 
-Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ] (https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html). 
+Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html). 
 
 ### Stitching the data using the Person ID
 
-Now that you understand the concept of stitching datasets using the Person ID, let's choose **emailId** as your Person ID for each dataset. 
+Now that you understand the concept of stitching datasets using the Person ID, let's choose `emailId` as your Person ID for each dataset. 
 
 ![demo](./images/cja15.png)
 
@@ -107,11 +107,11 @@ Select each dataset by clicking on it.
 
 ![demo](./images/cja12.png)
 
-Now fill the field Person ID choosing the **emailId** on the dropdown list.
+Now fill the field Person ID choosing the `emailId` on the dropdown list.
 
 ![demo](./images/cja17.png)
 
-Once you have stitched the 3 datasets, we are ready to continue. 
+Once you have stitched the three datasets, we are ready to continue. 
 
 |  dataset       | Person ID | 
 | ----------------- |-------------| 
@@ -127,9 +127,9 @@ Click on Next.
 
 Here you need to give a name to your connection. 
 
-Please use this naming convention: **ldap – Omnichannel Data Connection**. 
+Please use this naming convention: `ldap – Omnichannel Data Connection`. 
 
-Example: **vangeluw - Omnichannel Data Connection**
+Example: `vangeluw - Omnichannel Data Connection`
 
 Before finishing, please also activate **Automatically import all new data for all datasets in this connection, beginning today.** as in the image below. 
 

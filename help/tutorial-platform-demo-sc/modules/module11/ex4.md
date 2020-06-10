@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: 
 ---
 
-# 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
+# 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager (AAM)
 
-Adobe Experience Platform and Adobe Audience Manager are closely connected to each other. The way they are connected is through a Bi-Directional Segment Sharing Connector. This means that all segments built in Adobe Experience Platform are shared to Adobe Audience Manager, and all segments built in Adobe Audience Manager are shared to Adobe Experience Platform.
+Adobe Experience Platform and Adobe Audience Manager are closely connected to each other. The way they are connected is through a bi-directional segment sharing connector. This means that all segments built in Adobe Experience Platform are shared to Adobe Audience Manager, and all segments built in Adobe Audience Manager are shared to Adobe Experience Platform.
 
 When a segment is first built in Adobe Experience Platform, it will take an initial 4-6 hours to synchronize the segment definition and after this initial 4-6 hours, new segment qualifications in Adobe Experience Platform are shared in real-time towards Adobe Audience Manager.
 
@@ -41,7 +41,7 @@ In **Segments** in Adobe Audience Manager, you can now see all the Adobe Experie
 
 Search for your Platform segment, which may be on a different page.
 
-Open the segment you built in 1 by clicking it. In this example, that is the segment **vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)**. Make sure to copy the **Segment ID** as you'll need it in a couple of seconds.
+Open the segment you built in 1 by clicking it. In this example, that is the segment `vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)`. Make sure to copy the **Segment ID** as you'll need it in a couple of seconds.
 
 ![RTCDP](./images/aam4.png)
 
@@ -51,7 +51,7 @@ Click **Edit**.
 
 ![RTCDP](./images/aamedit.png)
 
-The screen now defaults to the **Destinations Mapping**-view, so that you can link a Destination to the Segment.
+The screen now defaults to the **Destinations Mapping** view, so that you can link a Destination to the Segment.
 
 ![RTCDP](./images/aam5.png)
 
@@ -67,7 +67,7 @@ Click the button for the destination **Google AdWords RLSA**, followed by clicki
 
 ![RTCDP](./images/aambrowsedestss.png)
 
-Fill out the Destination Value to send to Google AdWords. In this case, AdWords expects the format **aam=segmentId**. The Segment ID of this segment is **18717523** so that gives **aam=18717523**.
+Fill out the Destination Value to send to Google AdWords. In this case, AdWords expects the format `aam=segmentId`. The Segment ID of this segment is `18717523` so that gives `aam=18717523`.
 
 ![RTCDP](./images/aambrowsedestssdv.png)
 
@@ -174,7 +174,7 @@ That should look like this:
 
 ![RTCDP](./images/aams4.png)
 
-Go to the **Traits**-view.
+Go to the **Traits** view.
 
 ![RTCDP](./images/aams5.png)
 
@@ -235,7 +235,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the **Production Prod (VA7)**-environment in the blue line on top of your screen.
+Before you continue, make sure you are in the `Production Prod (VA7)` environment in the blue line on top of your screen.
 
 In the menu on the left side, go to **Segments**.
 

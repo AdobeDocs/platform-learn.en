@@ -9,9 +9,9 @@ activity:
 
 # 11.6 Take Action: send your segment to Adobe Target
 
-Adobe Experience Platform also has the ability to share Audiences directly with the Adobe Experience Cloud Core Service **People - Audience Library**.
+Adobe Experience Platform also has the ability to share Audiences directly with the Adobe Experience Cloud **People Core Service - Audience Library**.
 
-This means that all segments built in Adobe Experience Platform will popup in the Experience Cloud Core Service **People - Audience Library**.
+This means that all segments built in Adobe Experience Platform will popup in the Experience Cloud **People Core Service - Audience Library**.
 
 Go to the Adobe Experience Cloud homepage by going to [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
 
@@ -21,7 +21,7 @@ Open the menu by clicking the **nine dots** icon in the upper right corner of yo
 
 ![RTCDP](./images/excl1.png)
 
-On the next page, you'll see the **Audience Library**, which will show all available segments, including the Adobe Experience Platform segments. You can also see the segment you created in 1.
+On the next page, you'll see the **Audience Library**, which will show all available segments, including the Adobe Experience Platform segments. You can also see the segment you created in Exercise 11.1.
 
 ![RTCDP](./images/excl2.png)
 
@@ -49,8 +49,10 @@ Select **Experience Targeting**.
 
 >[!IMPORTANT]
 > Due to the nature of the Platform Demo - website, which always redirects every visit to the Admin-page, it's important to already have the Platform Demo - website open and your brand already selected in another tab in the same browser-window as the one where you're going to define your Adobe Target Activity. If you don't have the Brand already selected in another tab in the same browser window, you won't be able to continue with the next step.
->
->[!IMPORTANT] Fill out the details, like the **Activity URL**. **TIP** Adobe Target doesn't like localhost connections, so for this use-case, please use a publicly available website as Activity URL.
+
+>[!IMPORTANT] Fill out the details, like the **Activity URL**. 
+
+>[!TIP] Adobe Target doesn't like localhost connections, so for this use-case, please use a publicly available website as Activity URL.
 
 ![RTCDP](./images/exclatcrxtdtl.png)
 
@@ -100,7 +102,7 @@ Click the title of your Activity in the upper left corner to rename it.
 
 As a naming convention, we'll use:
 
-* ldap - Module 11 - XT
+* `ldap - Module 11 - XT`
 
 Replace **ldap** with your ldap.
 
@@ -126,7 +128,7 @@ Click **Save & Close**.
 
 ![RTCDP](./images/vecsave.png)
 
-You're now on the **Activity Overview**-page.
+You're now on the **Activity Overview** page.
 
 ![RTCDP](./images/vecsave.png)
 
@@ -141,6 +143,8 @@ Click on the field **Inactive** and select **Activate**.
 You'll then get a visual confirmation that your activity is now live.
 
 ![RTCDP](./images/veclive.png)
+
+Congratulations, you have now completed Module 11!
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 

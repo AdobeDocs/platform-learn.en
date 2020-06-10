@@ -9,9 +9,9 @@ activity:
 
 # 15.3 Operationalize your model using a Recipe
 
-In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a Recipe.
+In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a recipe.
 
-The Recipe Builder Notebook is one of our recent innovations that templatizes your model to automatically package and operationalize it. The notebook has multiple templated cells that you fit your model code into:
+The recipe builder notebook templatizes your model to automatically package and operationalize it. The notebook has multiple templated cells that you fit your model code into:
 
 * The requirements and configuration cells allow you to add additional libraries and configure datasets and tuning parameters for your model
 * The evaluator cell enables you to split your data and evaluate the performance of your model
@@ -34,15 +34,15 @@ Jupyter Notebooks will now be opened inside the Adobe Experience Platform UI.
 
 ![DSWLI](./images/aephnbo.png)
 
-Download this notebook **LumaCarInsurancePropensityScoringRecipe.ipynb.zip** from your **Environment Variables** and unzip its content to the desktop of your local computer.
+Download this notebook `LumaCarInsurancePropensityScoringRecipe.ipynb.zip` from your **Environment Variables** and unzip its content to the desktop of your local computer.
 
 ![DSWLI](./images/dt.png)
 
-Drag & drop the notebook from your desktop into the Notebooks-area in Jupyter Notebooks.
+Drag & drop the notebook from your desktop into the Notebooks area in Jupyter Notebooks.
 
 ![DSWLI](./images/dtnb.png)
 
-In Jupyter Notebooks, now open the notebook you just imported, named **luma-insurance-sales-propensity.ipynb** by double-clicking it.
+In Jupyter Notebooks, now open the notebook you just imported, named `luma-insurance-sales-propensity.ipynb` by double-clicking it.
 
 ![DSW](./images/jprecipe.png)
 
@@ -84,7 +84,7 @@ Scoring a model is done by clicking the **Score** button.
 
 ![DSW](./images/playscore.png)
 
-Click **Score** on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the **pipeline.py** cell).
+Click **Score** on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the `pipeline.py` cell).
 
 After clicking **Score**, the Training Run will start and will need a couple of minutes to complete.
 
@@ -100,7 +100,7 @@ When you click **Score**, the following cells are executed:
 * Pipeline File
 * Evaluator File
 
-Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the **AEP Demo - ML Predictions**-Dataset.
+Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the `AEP Demo - ML Predictions` Dataset.
 
 You can verify this [here](https://platform.adobe.com/dataset).
 
@@ -122,11 +122,11 @@ After clicking the **Create Recipe** button, you have to enter a name for your r
 
 As a naming convention, please use:
 
-* **ldap**CarInsurancePropensity
+* `ldap`CarInsurancePropensity
 
-Replace **ldap** with your ldap.
+Replace `ldap` with your ldap.
 
-Example: for ldap **vangeluw**, the name of your recipe should be: **vangeluwCarInsurancePropensity**.
+Example: for ldap `vangeluw`, the name of your recipe should be: `vangeluwCarInsurancePropensity`.
 
 ![DSW](./images/recname99.png)
 

@@ -11,7 +11,7 @@ activity:
 
 ## Objectives
 
-- Map BigQuery data to an XDM Schema
+- Map BigQuery data to an XDM schema
 - Load BigQuery data into Adobe Experience Platform
 - Become familiar with the BigQuery Source Connector UI
 
@@ -25,7 +25,7 @@ After exercise 16.3, you should have this page open in Adobe Experience Platform
 
 **If you don't have it open, go to [Adobe Experience Platform](https://platform.adobe.com/home).**
 
-In the left menu, go to sources. You'll then see the **Sources** homepage. In the **Sources**-menu, click on **Databases**.
+In the left menu, go to Sources. You'll then see the **Sources** homepage. In the **Sources** menu, click on **Databases**.
 
 ![demo](./images/ex4/0-a.png)
 
@@ -41,25 +41,27 @@ Select your account and click **Next**.
 
 ![demo](./images/ex4/0-d.png)
 
-You'll then see the **Add data**-view. You can now continue with exercise 16.4.1.
+You'll then see the **Add data** view.
 
 ![demo](./images/ex2/datasets.png)
 
 ## 16.4.1 BigQuery Table Selection
 
-In the **Add data**-view, select your BigQuery-dataset. 
+In the **Add data** view, select your BigQuery dataset. 
 
 ![demo](./images/ex4/1.png)
 
-You can now see a sample data preview of the Google Analytics-data in BigQuery.
+You can now see a sample data preview of the Google Analytics data in BigQuery.
 
 Click **Next**.
 
 ![demo](./images/ex4/3.png)
 
+
+
 ## 16.4.2 XDM mapping
 
-You'll now see this:
+You'll now see the Mapping screen:
 
 ![demo](./images/ex4/4a.png)
 
@@ -73,7 +75,7 @@ Click the dataset icon to select an existing dataset:
 
 ![demo](./images/ex4/5.png)
 
-Search for the dataset named **AEP Demo - BigQuery Website Interactions** and select it.
+Search for the dataset named `AEP Demo - BigQuery Website Interactions` and select it.
 
 ![demo](./images/ex4/6.png)
 
@@ -128,32 +130,32 @@ Click **Next**.
 
 ## 16.4.3 Connection and the data ingestion scheduling
 
-You'll now see the **Scheduling**-tab:
+You'll now see the **Scheduling** tab:
 
 ![demo](./images/ex4/38a.png)
 
-In the **Scheduling**-tab, you are able to define a frequency for the data ingestion process for this **Mapping** and data. 
+In the **Scheduling** tab, you are able to define a frequency for the data ingestion process for this **Mapping** and data. 
 
 ![demo](./images/ex4/40.png)
 
-As you're using demo-data in Google BigQuery that won't be refreshed, there's no real need for setting a schedule in this exercise. You do have to select something, and to avoid too many useless data ingestion processes, you need to set the frequency like this:
+As you're using demo data in Google BigQuery that won't be refreshed, there's no real need for setting a schedule in this exercise. You do have to select something, and to avoid too many useless data ingestion processes, you need to set the frequency like this:
 
 - Frequency: **Week**
 - Interval: **200**
 
 ![demo](./images/ex4/39.png)
 
-**Important**: be sure you activate the **Backfill**-switch.
+**Important**: be sure you activate the **Backfill** switch.
 
 ![demo](./images/ex4/39a.png)
 
-Last but not least, you must define a **delta**-field. 
+Last but not least, you must define a **delta** field. 
 
 ![demo](./images/ex4/36.png)
 
-The **delta**-field is used to schedule the connection and upload only new rows that come into your BigQuery-dataset. A delta field is typically always a timestamp column. So for future scheduled data ingestions, only the rows with a new, more recent timestamp will be ingested.
+The **delta** field is used to schedule the connection and upload only new rows that come into your BigQuery dataset. A delta field is typically always a timestamp column. So for future scheduled data ingestions, only the rows with a new, more recent timestamp will be ingested.
 
-Select **timeStamp** as the delta-field.
+Select **timeStamp** as the delta field.
 
 ![demo](./images/ex4/37.png)
 
@@ -163,7 +165,7 @@ Click **Next**.
 
 ## 16.4.4 Review and launch connection
 
-In the **Dataset flow detail**-view. you need to name your connection, which will help you to find it later. 
+In the **Dataset flow detail** view. you need to name your connection, which will help you to find it later. 
 
 Please use this naming convention:
 

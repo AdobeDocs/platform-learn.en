@@ -19,21 +19,21 @@ From the left menu, click on **Models**.
 
 ![DSW](./images/mlmodels.png)
 
-In this exercise, we'll use a prebuilt recipe to create a Model for Car Insurance Sales Predictions.
+In this exercise, we'll use a prebuilt recipe to create a model for car insurance sales predictions.
 
 In the top menu, click on **Recipes**.
 
 ![DSW](./images/recipes.png)
 
-In Recipes, you'll find multiple recipes. Look for your own recipe in the list, which should be named **ldapCarInsurancePropensity**.
+In Recipes, you'll find multiple recipes. Look for your own recipe in the list, which should be named `ldapCarInsurancePropensity`.
 
 ![DSW](./images/prrecipe.png)
 
-Click the **ldapCarInsurancePropensity** - recipe to open it.
+Click the `ldapCarInsurancePropensity` recipe to open it.
 
 ![DSW](./images/prservice.png)
 
-Click to open the Model you created in the previous exercise, **ldap - CarInsurancePropensity Model**.
+Click to open the Model you created in the previous exercise, `ldap - CarInsurancePropensity Model`.
 
 You'll then see this:
 
@@ -45,9 +45,9 @@ Click the button **+ Publish**.
 
 You then have to name your Service.
 
-As a name, use **ldap** - Car Insurance Propensity Service.
+As a name, use `ldap` - Car Insurance Propensity Service.
 
-In this example, for ldap **vangeluw**, the name should be **vangeluw - Car Insurance Propensity Service**.
+In this example, for ldap `vangeluw`, the name should be `vangeluw - Car Insurance Propensity Service`.
 
 ![DSW](./images/publishservicename.png)
 
@@ -75,9 +75,9 @@ Configure your schedule so that your Service runs in the weekend, on Saturday or
 
 Next, you need to select the **Scoring Dataset** and the **Scoring Results Dataset**.
 
-The **Scoring Dataset** should be **AEP Demo - Car Insurance Interactions**.
+The **Scoring Dataset** should be `AEP Demo - Car Insurance Interactions`.
 
-The **Scoring Results Dataset** should be **AEP Demo - ML Predictions**.
+The **Scoring Results Dataset** should be `AEP Demo - ML Predictions`.
 
 ![DSW](./images/servsch2.png)
 

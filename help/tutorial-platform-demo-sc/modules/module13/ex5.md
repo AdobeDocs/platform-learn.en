@@ -19,15 +19,15 @@ activity:
 
 In this exercises you will use Analysis Workspace within CJA to analyze product views, product funnels, churn etc.
 
-We will cover some of the queries done in the Module 7 - Query Service so you can see how easy is to run the same queries and more but without using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
+We will cover some of the queries done in  Module 7 - Query Service so you can see how easy is to run the same queries and more but without using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
 
 Let's use the project you created in [Exercise 13.4 - Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demo](./images/prohome.png)
 
-Open your project **ldap - Omnichannel Analysis**.
+Open your project `ldap - Omnichannel Analysis`.
 
-With your project opened and the Data View **ldap - Omnichannel Analysis** selected, you're ready to start building your first visualizations.
+With your project opened and the Data View `ldap - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
 
 ![demo](./images/prodataView1.png)
 
@@ -49,7 +49,7 @@ Next, right-click on the metric summary.
 
 ![demo](./images/pro4.png)
 
-Click on **Visualize** and then select **Line**as visualization.
+Click on **Visualize** and then select **Line** as visualization.
 
 ![demo](./images/pro5.png)
 
@@ -84,25 +84,25 @@ Let's start finding the top 5 products viewed. In the left side menu, find the *
 
 ![demo](./images/pro8.png)
 
-Now drag and drop **SKU** to replace the **Day**dimension:
+Now drag and drop **SKU** to replace the **Day** dimension:
 
 This will be the result
 
 ![demo](./images/pro10a.png)
 
-Next, try to breakdown one of the products by Brand Name. Search for **brandName** and drag it under the SKU **LUMA00108**.
+Next, try to breakdown one of the products by Brand Name. Search for `brandName` and drag it under the SKU `LUMA00108`.
 
 ![demo](./images/pro13.png)
 
-Next, do a breakdown using the ECID. Search for **ECID** and drag it under the brand name **Luma Retail**.
+Next, do a breakdown using the ECID. Search for `ECID` and drag it under the brand name `Luma Retail`.
 
 ![demo](./images/pro15.png)
 
-Finally you can add more visualizations. On the left side, under visualizations, search for **Donut**. Take **Donut**, drag-and-drop it on the canvas under the **Line**-visualization. It will automatically show all **Product Views**.
+Finally you can add more visualizations. On the left side, under visualizations, search for `Donut`. Take `Donut`, drag-and-drop it on the canvas under the **Line** visualization. It will automatically show all **Product Views**.
 
 ![demo](./images/module135/18.png)
 
-Next, in the Table, select 3 **User Agent** - rows from the breakdown we did under **Nadia Elements Shell** > **Luma Retail**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button on Mac.
+Next, in the Table, select 3 **User Agent**  rows from the breakdown we did under **Nadia Elements Shell** > **Luma Retail**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button on Mac.
 
 ![demo](./images/module135/20.png)
 
@@ -110,7 +110,7 @@ You'll see the donut chart changed:
 
 ![demo](./images/module135/21.png)
 
-You can even adapt the design to be more readable, by making both the **Line**-graph and the **Donut**-graph a bit smaller so they can fit next to each other:
+You can even adapt the design to be more readable, by making both the **Line** graph and the **Donut** graph a bit smaller so they can fit next to each other:
 
 ![demo](./images/module135/22.png)
 
@@ -189,7 +189,7 @@ Change the **Product Interaction Type** by **Page Name**, in the new freeform ta
 
 ![demo](./images/module135/34.png)
 
-## What do people do on the site before reaching the "Cancel Service" page
+## What do people do on the site before reaching the "Cancel Service" page?
 
 Again, there are many ways to perform this analysis. However, let's use the flow analysis to start the discovery part.
 
@@ -231,7 +231,7 @@ You'll then see this:
 
 ![demo](./images/module135/40.png)
 
-Let's now analyze if customers who visited the **Cancel Service**-page on the website also called the callcenter, and what the outcome was.
+Let's now analyze if customers who visited the **Cancel Service** page on the website also called the callcenter, and what the outcome was.
 
 Under the dimensions, find **Call Interaction Type**. Drag and drop it to replace the first interaction on the right within the **Flow Visualization**.
 
@@ -256,7 +256,7 @@ You'll then see this:
 As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion? 
 
 
-## How are customers with a Positive Callcenter contact performing against the main KPIs
+## How are customers with a Positive Callcenter contact performing against the main KPIs?
 
 Let's first segment the data to get only users with **positive** calls. In CJA, Segments are called Filters. Go to filters within the component area (on the left-side) and click **+**.
 
@@ -332,7 +332,7 @@ Attribution in Customer Journey Analytics is one of the key differentiators from
 
 We can define attribution logic in almost any metric (except things like **People** or **Sessions**). You can even use it with calculated metrics.
 
-Open the calculated metric you created, called **Purchases**. On the **Events**-metric, filtered  by **ProductInteraction**, click on settings.
+Open the calculated metric you created, called **Purchases**. On the **Events** metric, filtered  by **ProductInteraction**, click on settings.
 
 ![demo](./images/module135/a.png)
 
@@ -346,7 +346,7 @@ After checking the checkbox for **Use non-default attribution model**, you'll se
 
 Here you can change the model and the Look-back Window.
 
-You'll now see all available attribution models. To understand the differences between the attribution models, read this: [Adobe Analytics Attribution] (https://www.adobe.com/content/dam/acom/en/data-analytics-cloud/analytics/pdfs/Adobe.Analytics.Attribution.Solution_Brief_Sept.2017.pdf)
+You'll now see all available attribution models. To understand the differences between the attribution models, read this: [Adobe Analytics Attribution](https://www.adobe.com/content/dam/acom/en/data-analytics-cloud/analytics/pdfs/Adobe.Analytics.Attribution.Solution_Brief_Sept.2017.pdf)
 
 As already mentioned, you can even change the reporting look-back window. Depending on the model you'll have different options.
 
@@ -377,7 +377,7 @@ Example:
 As you've learned in this lab, Analysis Workspace stitches data from all channels together to analyze the full customer journey. Also, remember that you can bring in data to the same workspace that is not stitched to the journey. 
 It can be really useful to bring disconnected data into your analysis to give context to the journey. Some examples include things like NPS data, surveys, Facebook Ads events or offline interactions (non identified).
 
-Congratulations, you have finished Module 13.
+Congratulations, you have finished Module 13!
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 

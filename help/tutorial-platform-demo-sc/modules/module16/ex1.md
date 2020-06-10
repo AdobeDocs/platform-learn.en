@@ -21,13 +21,13 @@ Google Cloud Platform (GCP) is a suite of public cloud computing services offere
 
 BigQuery is one of these services and it is always included with Google Analytics 360. Google Analytics data is frequently sampled when we try to get data directly from it (API for example). That's why Google includes BigQuery to get unsampled data, so brands can do advanced analysis using SQL and benefit from the power of GCP.
 
-Google Analytics data is loaded daily into BigQuery using a batch-mechanism. As such, it doesn't make any sense to use this GCP/BigQuery-integration for Real-time personalization and activation use cases.
+Google Analytics data is loaded daily into BigQuery using a batch-mechanism. As such, it doesn't make any sense to use this GCP/BigQuery integration for Real-time personalization and activation use-cases.
 
 If a brand wants to deliver real-time personalization use-cases based on Google Analytics data, it can collect that data on the website with Google Tag Manager and then stream it to Adobe Experience Platform in real-time ([just like you did in Module 9](../../modules/module9/data-ingestion-using-google-tag-manager-and-google-analytics.md)). 
 
 The GCP/BigQuery Source Connector should be used to...
 
-- track all customer behaviour on the website and load that data in Adobe Experience Platform for analysis, data science and personalization use-cases that don't require real-time activation.
+- track all customer behavior on the website and load that data in Adobe Experience Platform for analysis, data science and personalization use-cases that don't require real-time activation.
 - load Google Analytics historical data into Adobe Experience Platform, again for analysis and data science use-cases
 
 ## 16.1.2 Create your Google Account
@@ -122,7 +122,7 @@ You'll then see your Project ID on the right side:
 
 ![demo](./images/ex1/projetcselection.png)
 
-You can now move to Exercise 2 where you'll get your hands dirty by querying Google Analytics data.
+You can now move to Exercise 16.2 where you'll get your hands dirty by querying Google Analytics data.
 
 Next Step: [16.2 Create your first query in BigQuery](./ex2.md)
 
