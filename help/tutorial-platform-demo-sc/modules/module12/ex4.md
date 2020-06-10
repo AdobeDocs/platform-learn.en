@@ -115,7 +115,7 @@ You then need to find the field that contains the current city of the customer i
 
 You can find the field by navigating to ```geofenceEntryLdap.<aepTenantId>.locationService.currentPoiCity``` (replace Ldap by your LDAP).
 
-By clicking that field, it will be added as the dynamic value for the parameter `q`. This field will be populated by f.i. the geolocation-service that you've implemented in your Mobile App.
+By clicking that field, it will be added as the dynamic value for the parameter `q`. This field will be populated by for instance the geolocation-service that you've implemented in your Mobile App.
 
 ![Demo](./images/jo13.png)
 
@@ -171,7 +171,7 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/joc12.png)
 
-You can find the field by navigating to ```geofenceEntryLdap.<aepTenantId>.locationService.currentPoiCity``` (Replace Ldap by your LDAP). By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by f.i. the geolocation-service that you've implemented in your Mobile App.
+You can find the field by navigating to ```geofenceEntryLdap.<aepTenantId>.locationService.currentPoiCity``` (Replace Ldap by your LDAP). By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your Mobile App.
 
 ![Demo](./images/joc13.png)
 
@@ -227,7 +227,7 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/joct12.png)
 
-You can find the field by navigating to ```geofenceEntryLdap.<aepTenantId>.locationService.currentPoiCity```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by f.i. the geolocation-service that you've implemented in your Mobile App.
+You can find the field by navigating to ```geofenceEntryLdap.<aepTenantId>.locationService.currentPoiCity```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your Mobile App.
 
 ![Demo](./images/joct13.png)
 

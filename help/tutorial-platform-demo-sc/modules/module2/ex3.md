@@ -29,7 +29,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select your own **sandbox**. You can do this by clicking the text **Production Prod (VA7)** in the blue line on top of your screen.
+Before you continue, you need to select your own **sandbox**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 

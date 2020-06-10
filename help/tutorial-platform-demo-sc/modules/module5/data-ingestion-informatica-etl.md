@@ -11,11 +11,7 @@ activity:
 
 **Authors: [Marius Shehati](https://www.linkedin.com/in/mshehati/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 5**, the following topics will be addressed:
-
-- ETL Overview
-- How to set up Adobe Experience Platform - ETL integration
-- Upload data in an ETL tool, join the data, enrich the data and push it to Platform.
+In this module, you'll learn about the positioning of an ETL application into an enterprise ecosystem. Any brand is using multiple applications ranging from data lakes to analytics solutions to machine learning and a number of marketing-specific applications. Each of those applications is using a different way to describe and understand data. When bringing Adobe Experience Platform into your brand's ecosystem, you'll finally have the ability of describing all that data in 1 single language through the Experience Data Model (XDM). When bringing data into Adobe Experience Platform, the source data model needs to be translated into an XDM format. There are a number of ways of doing that either natively in the Adobe Experience Platform user interface through Workflows or Source Connectors. Using an ETL application such as Informatica will also be a great help in that process, given that Informatica has already built an out-of-the-box integration whereby you can extract, transform and load your data easily into Adobe Experience Platform.
 
 ## Learning Objectives
 

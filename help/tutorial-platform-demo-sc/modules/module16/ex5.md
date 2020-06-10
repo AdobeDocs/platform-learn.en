@@ -109,7 +109,7 @@ If you want your company to become data-driven, you should adapt how data is vie
 
 - UX metrics only for the UX Design team
 - Use the same names for KPIs and Metrics for Google Analytics as for Customer Journey Analytics so that the digital analytics team can speak 1 language only.
-- data view filtered to show f.i. data for 1 market only, or 1 brand, or only for Mobile Devices.
+- data view filtered to show for instance data for 1 market only, or 1 brand, or only for Mobile Devices.
 
 On the **Connections** screen, check the checkbox in front of the connection you just created.
 

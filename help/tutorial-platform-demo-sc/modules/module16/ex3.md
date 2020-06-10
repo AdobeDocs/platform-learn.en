@@ -163,7 +163,7 @@ You're still missing the **refreshToken**. The refreshToken is a requirement bec
 
 ## 16.3.4 BigQuery API and the refreshToken
 
-There are many ways to get a refreshToken to access Google Cloud Platform APIs. One of these options is f.i. using Postman.
+There are many ways to get a refreshToken to access Google Cloud Platform APIs. One of these options is for instance using Postman.
 However, Google has built something easier to test and play with their APIs, a tool called **OAuth 2.0 Playground**.
 
 To access **OAuth 2.0 Playground**, go to [https://developers.google.com/oauthplayground](https://developers.google.com/oauthplayground).

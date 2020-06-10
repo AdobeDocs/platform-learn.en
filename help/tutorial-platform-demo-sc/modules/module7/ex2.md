@@ -18,7 +18,7 @@ activity:
 
 In this you will learn how to use PSQL to retrieve information about the available datasets, how to write a queries for Experience Data Model (XDM), and write your first simple reporting queries using the Query Service and Luma Telco datasets.
 
-## 7.2.1
+## 7.2.1 Basic Queries
 
 In this you will learn about the methods to retrieve information about the available datasets and how to properly retrieve data with a query from an XDM dataset.
 

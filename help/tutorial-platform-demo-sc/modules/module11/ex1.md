@@ -137,7 +137,7 @@ It's also important to note the **Streaming** switch.
 
 ![Segmentation](./images/streaming.png)
 
-By enabling the **Streaming** switch, your segment will qualify in real-time and will be available for activation in real-time.
+By enabling the **Streaming** switch, your segment will qualify in real-time (as soon as the data is available in Adobe Experience Platform, data collection using Web SDK is a requirement for this) and will be available for activation in real-time.
 
 Then, click the **Save** button to save your segment, after which you'll be taken back to the Segment overview  page.
 

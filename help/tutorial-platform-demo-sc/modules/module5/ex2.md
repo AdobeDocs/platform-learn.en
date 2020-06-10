@@ -15,7 +15,7 @@ In this exercise, you'll create a connection in Informatica to read data from yo
 
 Go to [https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS](https://apse1.dm-ap.informaticacloud.com/cloudUI/products/administer/main/RuntimeEnvListWS). 
 
-Log in using the credentials that were sent to you by email.
+Log in using your credentials for Informatica.
 
 ![ETL](./images/infhome.png)
 

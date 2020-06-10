@@ -72,7 +72,7 @@ For the next variables, you'll repeat this process:
 * Paste the Java-Script code
 * Click **Save** to save your new Variable.
 
-The next Variable will be `customerMobileNr`. When a customer creates a profile on the SYTYCD website, we'll link the customer's Mobile Number to his or her customer profile in Platform.
+The next Variable will be `customerMobileNr`. When a customer creates a profile on the Platform Demo website, we'll link the customer's Mobile Number to his or her customer profile in Platform.
 
 In the **User-Defined Variables** - section, click **New**.
 
@@ -95,7 +95,7 @@ Click **Save** to save your new Variable.
 
 ![Google Tag Manager Setup](./images/gasave.png)
 
-The next Variable will be `customerFirstName`. When a customer creates a profile on the SYTYCD website, we'll link the customer's first name to his or her customer profile in Platform.
+The next Variable will be `customerFirstName`. When a customer creates a profile on the Platform Demo website, we'll link the customer's first name to his or her customer profile in Platform.
 
 In the **User-Defined Variables** - section, click **New**.
 

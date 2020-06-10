@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# 7.4.2 Explore the dataset with Tableau
+# 7.6 Explore the dataset with Tableau
 
 Open Tableau.
 

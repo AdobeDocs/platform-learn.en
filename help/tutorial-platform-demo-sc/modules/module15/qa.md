@@ -19,9 +19,9 @@ On this page, you'll find answers to common questions related to this specific M
 
 The model relies on two datasets:
 
-- `EMEA Car Insurance Quotes (API)`. This is the training and scoring input dataset. All customer behavior like **Get Quote** and **Purchase Insurance** - events are stored in this dataset.
+- `AEP Demo - Car Insurance Interactions`. This is the training and scoring input dataset. All customer behavior like **Get Quote** and **Purchase Insurance** - events are stored in this dataset.
 
-- `EMEA ML Predictions (API)`. This is the scoring output dataset. When the ML Model calculates a propensity score, it stores that score in this dataset.
+- `AEP Demo - ML Predictions`. This is the scoring output dataset. When the ML Model calculates a propensity score, it stores that score in this dataset.
 
 ## What does the training data look like?
 
@@ -147,8 +147,7 @@ The Target Predictor Variable is the below field. This is the value that indicat
 
 ## How is traffic forwarded from Pipeline to the RTML endpoint?
 
-In this demo environment, Pipeline Smarts is used to forward data from Pipeline to the RTML endpoint.
-In a future implementation, the correct mechanism to use to stream data to any custom endpoint is Launch Server-Side Forwarding when it becomes available later this year.
+In this demo environment, Launch Server Side Forwarding is used to forward data from Pipeline to the RTML endpoint. This functionality is currently in beta and will become available later this year.
 
 ## What is the latency?
 
@@ -156,7 +155,7 @@ The end-to-end latency, from clicking the **Get Quote** button to delivering an 
 
 ## How does the output from the RTML endpoint get sent back to Platform?
 
-Given that this is a custom implementation, the way to send the output of the score back to Adobe Experience Platform is by sending an XDM Payload to a DCS Inlet ID.
+Given that this is a custom implementation, the way to send the output of the score back to Adobe Experience Platform is by sending an XDM Payload to an HTTP API endpoint.
 
 We're reusing an existing DCS Inlet ID, that was created through the Platform Extension in Launch.
 

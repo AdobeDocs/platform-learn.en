@@ -21,7 +21,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the **Production Prod (VA7)** environment in the blue line on top of your screen.
+Before you continue, make sure you are in the **Production Prod** environment in the blue line on top of your screen.
 
 In the menu on the left side, go to **Segments**.
 
@@ -123,7 +123,7 @@ It's also important to note the **Streaming** toggle.
 
 ![Segmentation](./images/streaming.png)
 
-By enabling the **Streaming** toggle, your segment will qualify in real-time and will be available for activation in real-time.
+By enabling the **Streaming** toggle, your segment will qualify in real-time (as soon as the data is available in Adobe Experience Platform, data collection using Web SDK is a requirement for this) and will be available for activation in real-time.
 
 Then, click the **Save** button to save your segment, after which you'll be taken back to the Segment overview  page.
 

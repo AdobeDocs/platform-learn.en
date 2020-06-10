@@ -55,7 +55,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select your own **sandbox**. You can do this by clicking the text **Production Prod (VA7)** in the blue line on top of your screen.
+Before you continue, you need to select your own **sandbox**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -375,7 +375,7 @@ Finally, click **Save** to save your schema.
 
 ### 2.1.2 - What does this customer do
 
-Capturing the answer to **What does this customer do?** for your company is done through f.i. a Product View on a Product Page.
+Capturing the answer to **What does this customer do?** for your company is done through for instance a Product View on a Product Page.
 
 ![Data Ingestion](./images/lb_babars.png)
 
@@ -395,7 +395,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select your own **sandbox**. You can do this by clicking the text **Production Prod (VA7)** in the blue line on top of your screen.
+Before you continue, you need to select your own **sandbox**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -451,7 +451,7 @@ It's important to note that when eventually ingesting data against this schema, 
 For instance, the fields **_id** and **timestamp** are required fields.
 
 * _id needs to contain a unique id for a specific data ingestion
-* timestamp needs to be the timestamp of this hit, in the format **"YYYY-MM-DDTHH:MM:SSZ"**, like f.i.: **"2019-04-08T07:20:00Z"**
+* timestamp needs to be the timestamp of this hit, in the format **"YYYY-MM-DDTHH:MM:SSZ"**, like for instance: **"2019-04-08T07:20:00Z"**
 
 Now you need to define what an answer to the question **What does this customer do?** should look like.
 In the introduction of this lab, we noted the need for following attributes to define what a customer does:

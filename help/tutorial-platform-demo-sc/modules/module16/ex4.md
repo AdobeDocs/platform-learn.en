@@ -180,7 +180,7 @@ Click **Next**.
 
 ![demo](./images/ex4/45.png)
 
-You now see a detailed overview of your connection. Make sure everything is correct before you continue, as some settings can't be changed anymore afterwards, like f.i. the XDM mapping.
+You now see a detailed overview of your connection. Make sure everything is correct before you continue, as some settings can't be changed anymore afterwards, like for instance the XDM mapping.
 
 ![demo](./images/ex4/46.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Data Ingestion using Google Tag Manager and Google Analytics - Implement Google Tag Manager Tag on SYTYCD website
-description: Data Ingestion using Google Tag Manager and Google Analytics - Implement Google Tag Manager Tag on SYTYCD website
+title: Data Ingestion using Google Tag Manager and Google Analytics - Implement Google Tag Manager Tag on Platform Demo website
+description: Data Ingestion using Google Tag Manager and Google Analytics - Implement Google Tag Manager Tag on Platform Demo website
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial

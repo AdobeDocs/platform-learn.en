@@ -55,7 +55,7 @@ Example: for ldap vangeluw, the name become `vangeluw - CarInsurancePropensity M
 
 ![DSW](./images/modelname.png)
 
-We can also hyper-tune the Model by changing the Model Configuration. To do that, you can f.i. change the **n_estimators** or the **max_depth**.
+We can also hyper-tune the Model by changing the Model Configuration. To do that, you can for instance change the **n_estimators** or the **max_depth**.
 
 ![DSW](./images/modelcfg.png)
 
