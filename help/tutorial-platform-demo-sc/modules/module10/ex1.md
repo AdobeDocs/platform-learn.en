@@ -11,7 +11,7 @@ activity:
 
 ## Introduction to Data Science
 
-### What is Data Science
+### What is Data Science?
 
 * Almost everything that has something to do with data
 

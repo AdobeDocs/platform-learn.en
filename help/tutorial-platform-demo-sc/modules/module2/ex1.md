@@ -25,11 +25,11 @@ You will now ingest data into Adobe Experience Platform and that data will be li
 
 * Go to your Platform Demo website.
 
-* You'll be redirected to the **Admin**-page
+* You'll be redirected to the **Admin** page
 
 ![Demo](../module2/images/1.png)
   
-* On the **Admin**-page, click **Select LDAP**.
+* On the **Admin** page, click **Select LDAP**.
   
 ![Demo](../module2/images/1a.png)
   
@@ -37,7 +37,7 @@ You will now ingest data into Adobe Experience Platform and that data will be li
   
 ![Demo](../module2/images/1b.png)
   
-* Back on the **Admin**-page, click **Select Brand**.
+* Back on the **Admin** page, click **Select Brand**.
   
 ![Demo](../module2/images/2.png)
   
@@ -74,7 +74,7 @@ You will now ingest data into Adobe Experience Platform and that data will be li
   
 ![Demo](../module2/images/lb_home1.png)
   
-* On the **Home**-page, click another product. Another Experience Event has been sent to Adobe Experience Platform. 
+* On the **Home** page, click another product. Another Experience Event has been sent to Adobe Experience Platform. 
   
 ![Demo](../module2/images/lb_babars.png)
   

@@ -21,7 +21,7 @@ Go to Adobe Experience Platform, to **Queries** and to **Credentials**.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
-From the **Credentials**-page in Adobe Experience Platform, copy the **Host** and paste it in the **Server**-field, copy the **Database** and paste it in the **Database**-field in Tableau, copy the **Port** and paste it in the field **Port**in Tableau, do the same for **Username** and **Password**. Next, click **Sign In**.
+From the **Credentials** page in Adobe Experience Platform, copy the **Host** and paste it in the **Server** field, copy the **Database** and paste it in the **Database** field in Tableau, copy the **Port** and paste it in the field **Port**in Tableau, do the same for **Username** and **Password**. Next, click **Sign In**.
 
 Sign In:
 

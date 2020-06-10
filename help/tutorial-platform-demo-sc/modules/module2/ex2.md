@@ -96,7 +96,7 @@ Click on the button **+ Assign**
 
 ![Data Ingestion](./images/assign.png)
 
-In the **Assign Class**-window, select **XDM Individual Profile**.
+In the **Assign Class** window, select **XDM Individual Profile**.
 
 ![Data Ingestion](./images/XDMProfile.png)
 
@@ -136,7 +136,7 @@ Let's start with **Profile Person Details**.
 
 Click the **+ Add** button to start adding a Mixin.
 
-In the **Add Mixin**-screen, select the Mixin **Profile Person Details**.
+In the **Add Mixin** screen, select the Mixin **Profile Person Details**.
 
 ![Data Ingestion](./images/ppd.png)
 
@@ -148,7 +148,7 @@ Next, add the Mixin **Profile Personal Details**.
 
 Click the **+ Add** button to start adding a Mixin.
 
-In the **Add Mixin**-screen, select the Mixin **Profile Personal Details**.
+In the **Add Mixin** screen, select the Mixin **Profile Personal Details**.
 
 ![Data Ingestion](./images/ppsd.png)
 
@@ -160,7 +160,7 @@ Next, add the Mixin **Profile Preferences Details**.
 
 Click the **+ Add** button to start adding a Mixin.
 
-In the **Add Mixin**-screen, select the Mixin **Profile Preferences Details**.
+In the **Add Mixin** screen, select the Mixin **Profile Preferences Details**.
 
 ![Data Ingestion](./images/ppfd.png)
 
@@ -228,11 +228,11 @@ Click **Apply** to save your changes.
 
 ![Data Ingestion](./images/apply.png)
 
-After clicking **Apply**, you now see your **identification**-object in the Schema.
+After clicking **Apply**, you now see your **identification** object in the Schema.
 
 ![Data Ingestion](./images/schemaid.png)
 
-You'll now add 3 new fields under the  **identification**-object:
+You'll now add 3 new fields under the  **identification** object:
 
 * ecid:
   * Field name: **ecid**
@@ -251,7 +251,7 @@ You'll now add 3 new fields under the  **identification**-object:
 
 Each field will be defined as type **String** and we'll configure these fields as **Identities**. For the Schema **Website Registration Schema**, we assume that a customer will always be identified by their email-address, which means that you have to configure the field **emailId** as a **primary** identifier, and the other fields as **secondary** identifiers.
 
-To add the fields, click the **Add Field** button next to the **identification**-object.
+To add the fields, click the **Add Field** button next to the **identification** object.
 
 ![Data Ingestion](./images/schemaid2.png)
 
@@ -336,7 +336,7 @@ Next, you have to define the other fields for **ecid** and **mobilenr** as secon
 
   ![Data Ingestion](./images/apply.png)
 
-The **identification**-object should now look like this, with the 3 id-fields now also showing a **fingerprint**-icon to show that they have been defined as identifiers.
+The **identification** object should now look like this, with the 3 id-fields now also showing a **fingerprint** icon to show that they have been defined as identifiers.
 
 ![Data Ingestion](./images/applyiden.png)
 
@@ -435,7 +435,7 @@ Click on the button **+ Assign**
 
 ![Data Ingestion](./images/assignee.png)
 
-In the **Assign Class**-window, select **XDM ExperienceEvent**.
+In the **Assign Class** window, select **XDM ExperienceEvent**.
 
 ![Data Ingestion](./images/XDMEE.png)
 
@@ -478,7 +478,7 @@ Let's start with **ExperienceEvent Web Details**.
 
 Click the **+ Add** button to start adding a Mixin.
 
-In the **Add Mixin**-screen, select the Mixin **ExperienceEvent Web Details**.
+In the **Add Mixin** screen, select the Mixin **ExperienceEvent Web Details**.
 
 ![Data Ingestion](./images/eewd.png)
 
@@ -490,7 +490,7 @@ Next, add the Mixin **ExperienceEvent Commerce Details**.
 
 Click the **+ Add** button to start adding a Mixin.
 
-In the **Add Mixin**-screen, select the Mixin **ExperienceEvent Commerce Details**.
+In the **Add Mixin** screen, select the Mixin **ExperienceEvent Commerce Details**.
 
 ![Data Ingestion](./images/eecd.png)
 
@@ -502,7 +502,7 @@ Next, add the Mixin **ExperienceEvent Environment Details**.
 
 Click the **+ Add** button to start adding a Mixin.
 
-In the **Add Mixin**-screen, select the Mixin **ExperienceEvent Environment Details**.
+In the **Add Mixin** screen, select the Mixin **ExperienceEvent Environment Details**.
 
 ![Data Ingestion](./images/eeed.png)
 
@@ -572,11 +572,11 @@ Click **Apply** to save your changes.
 
 ![Data Ingestion](./images/apply.png)
 
-After clicking **Apply**, you now see your **identification**-object in the Schema.
+After clicking **Apply**, you now see your **identification** object in the Schema.
 
 ![Data Ingestion](./images/schemaidee.png)
 
-We'll now add 1 new field under the  **identification**-object:
+We'll now add 1 new field under the  **identification** object:
 
 * ecid:
 
@@ -586,7 +586,7 @@ We'll now add 1 new field under the  **identification**-object:
 
 The ECID-field will be defined as type **String** and we'll configure this field as an **Identity**. For the Schema **AEP Demo - Website Interactions Schema**, we assume that a customer will always be identified by their ECID, which means that you have to configure the field **ECID** as a **primary** identifier
 
-To add the fields, click the **Add Field** button next to the **identification**-object.
+To add the fields, click the **Add Field** button next to the **identification** object.
 
 ![Data Ingestion](./images/schemaid2ee.png)
 
@@ -621,7 +621,7 @@ To start defining these fields as **Identity**-fields, follow these steps:
 
   ![Data Ingestion](./images/apply.png)
 
-The **identification**-object should now look like this, with the ecid-field now also showing a **fingerprint**-icon to show that they have been defined as identifiers.
+The **identification** object should now look like this, with the ecid-field now also showing a **fingerprint** icon to show that they have been defined as identifiers.
 
 ![Data Ingestion](./images/applyidenee.png)
 

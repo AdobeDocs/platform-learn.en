@@ -12,7 +12,7 @@ activity:
 ## Objective
 
 * Write queries for data analyses
-* Write SQL queries combining online, callcenter and loyalty data available in Adobe Experience Platform
+* Write SQL queries combining online, call center and loyalty data available in Adobe Experience Platform
 * Learn about Adobe Defined Functions
 
 ## Context
@@ -175,9 +175,9 @@ The majority of the business logic requires gathering the touch-points for a cus
 
 ### Adobe Defined Functions
 
-Adobe has added a set of **Adobe Defined Functions** to the standard SQL syntax that allow you to better understand your experience data. In the next couple of queries you will learn about these ADF functions. You can find more information and the complete list via [Adobe I/O](https://www.adobe.io/apis/experienceplatform/home/services/query-service/query-service.html#!acpdr/end-user/markdown/query-service/qs-queries-adobefunctions.md).
+Adobe has added a set of **Adobe Defined Functions** to the standard SQL syntax that allow you to better understand your experience data. In the next couple of queries you will learn about these ADF functions. You can find more information and the complete list [in the documentation](https://docs.adobe.com/content/help/en/experience-platform/query/sql/adobe-defined-functions.html).
 
-### What do people do on the site before reaching the "Cancel Service" page as the 3rd page in a session
+### What do people do on the site before reaching the "Cancel Service" page as the 3rd page in a session?
 
 With this query you will discover the first two Adobe Defined Functions **SESS_TIMEOUT** and **NEXT**
 
@@ -259,7 +259,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (10 rows)
 ```
 
-### How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page
+### How much time do we have before a visitor calls the call center after visiting the "Cancel Service" Page?
 
 To answer this kind of query will we use the **TIME_BETWEEN_NEXT_MATCH()** Adobe Defined Function.
 
@@ -309,9 +309,9 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (15 rows)
 ```
 
-### And what is the outcome of that contact
+### And what is the outcome of that contact?
 
-Explain that we are joining datasets together, in this case we join our **aep_demo_website_interactions** with **aep_demo_call_center_interactions**. We do this to know the outcome of the callcenter interaction.
+Explain that we are joining datasets together, in this case we join our `aep_demo_website_interactions` with `aep_demo_call_center_interactions`. We do this to know the outcome of the call center interaction.
 
 **SQL**
 
@@ -343,7 +343,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 **Query Result**
 
 ```text
-               ecid               |    webPage     | contact_callcenter_after_seconds | callfeeling | calltopic | contractcancelled 
+               ecid               |    webPage     | contact_ call center_after_seconds | callfeeling | calltopic | contractcancelled 
 ----------------------------------+----------------+----------------------------------+-------------+-----------+-------------------
  16761464641996441029061082282035 | Cancel Service |                             -199 | negative    | contract  | no
  93575149630203476634619363680088 | Cancel Service |                             -745 | negative    | contract  | no
@@ -363,7 +363,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (15 rows)
 ```
 
-### What is the loyalty profile of these customers
+### What is the loyalty profile of these customers?
 
 In this query we join loyalty data that we have onboarded in Adobe Experience Platform. This allows to enrich the churn analysis with loyalty data.
 
@@ -420,7 +420,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 (15 rows)
 ```
 
-#### From what region do they visit us
+### From what region do they visit us?
 
 Lets include the geographical info, like longitude, attitude, city, countrycode, captured by the Adobe Experience Platform in order to get some geographical insights about churning customers.
 
@@ -483,9 +483,9 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 
 ```
 
-## Callcenter Interaction Analysis
+## Call Center Interaction Analysis
 
-In the queries above we only looked at the visitors that ended up contacting the callcenter in case of service cancellation. We want to take this a bit broader and take into account all callcenter interaction including (wifi, promo, invoice, complaint and contract).  
+In the queries above we only looked at the visitors that ended up contacting the call center in case of service cancellation. We want to take this a bit broader and take into account all call center interaction including (wifi, promo, invoice, complaint and contract).  
 
 You will need to edit a query, so let's first open notepad or brackets.
 

@@ -11,11 +11,11 @@ activity:
 
 In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS environment and how to upload data in that S3 bucket.
 
-First of all, in this module we'll use 4 CSV-files as datasources in Informatica. Please download the file **csvfiles.zip** from your **Environment Variables GitHub repository** to your desktop and unzip its contents on your desktop.
+First of all, in this module we'll use four CSV files as datasources in Informatica. Please download the file **csvfiles.zip** from your **Environment Variables GitHub repository** to your desktop and unzip its contents on your desktop.
 
 ![ETL](./images/csv.png)
 
-## Create your S3-bucket
+## Create your S3 bucket
 
 Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you created in Module 4.
 
@@ -25,13 +25,13 @@ After logging in, you'll be redirected to the **AWS Management Console**.
 
 ![ETL](./images/awsconsole.png)
 
-In the **Find Services**-menu, search for **s3**.
+In the **Find Services** menu, search for **s3**.
 
 ![ETL](./images/awsconsoles3.png)
 
 Click the first search result: **S3 - Scalable Storage in the Cloud**.
 
-You'll then see the **Amazon S3**-homepage.
+You'll then see the **Amazon S3** homepage.
 
 ![ETL](./images/s3home.png)
 
@@ -39,7 +39,7 @@ Click the **Create Bucket** button.
 
 ![ETL](./images/createbucket.png)
 
-In the **Create Bucket**-screen, you need to configure 2 things:
+In the **Create Bucket** screen, you need to configure two things:
   
 - Name: use the name **aepmodule5LDAP** and replace LDAP by your LDAP. As an example, in this exercise the bucket name is **aepmodule5vangeluw**
 - Region: use the region **EU (Frankfurt) eu-central-1**
@@ -54,19 +54,19 @@ Click the **Create Bucket** button.
 
 ![ETL](./images/createbucket.png)
 
-You'll then see your bucket being created and will be redirected to the Amazon S3-homepage.
+You'll then see your bucket being created and will be redirected to the Amazon S3 homepage.
 
 ![ETL](./images/S3homeb.png)
 
-### Upload CSV-files to your S3-bucket
+### Upload CSV files to your S3 bucket
 
-The next step is to upload the CSV-files we'll use for this module into your S3 bucket.
+The next step is to upload the CSV files we'll use for this module into your S3 bucket.
 
-Click on your S3-bucket to open it. You'll then see this page.
+Click on your S3 bucket to open it. You'll then see this page.
 
 ![ETL](./images/s3up.png)
 
-Click **Upload** to start uploading the 4 CSV-files.
+Click **Upload** to start uploading the four CSV files.
 
 ![ETL](./images/upload.png)
 
@@ -78,7 +78,7 @@ Click **Add Files**.
 
 ![ETL](./images/addfiles.png)
 
-Navigate to the directory **csvfiles** on your desktop, select all 4 files and then click **Open**.
+Navigate to the directory **csvfiles** on your desktop, select all four files and then click **Open**.
 
 ![ETL](./images/selectfiles.png)
 
@@ -90,11 +90,11 @@ Click **Upload**.
 
 ![ETL](./images/upload.png)
 
-You'll now see your CSV-files uploaded in your S3-bucket.
+You'll now see your CSV files uploaded in your S3 bucket.
 
 ![ETL](./images/s3csv.png)
 
-### Set permissions to access your S3-bucket
+### Set permissions to access your S3 bucket
 
 The next step is to setup access to your S3 bucket.
 
@@ -110,7 +110,7 @@ In the left menu, click **Users**.
 
 ![ETL](./images/iammenu.png)
 
-You'll then see the **Users**-screen.
+You'll then see the **Users** screen.
 
 ![ETL](./images/users.png)
 
@@ -123,7 +123,7 @@ Next, configure your user:
 - User Name: use **s3_ldap** as a name, so in this example the name is **s3_vangeluw**.
 - AWS access type: select **Programmatic access**.
 
-![ETL](./images/configuser.png)
+    ![ETL](./images/configuser.png)
 
 Click **Next: Permissions**.
 
@@ -141,7 +141,7 @@ Click **Next: Tags**.
 
 ![ETL](./images/nexttags.png)
 
-On the **Tags**-screen, there's no need to configure anything.
+On the **Tags** screen, there's no need to configure anything.
 
 ![ETL](./images/perm3.png)
 
@@ -161,16 +161,11 @@ Click **Show** to see your Secret access key:
 
 ![ETL](./images/cred1.png)
 
-**!! IMPORTANT !!**
-
-Store your credentials in a text-file in your computer.
-
-- Access key ID: ...
-- Secret access key: ...
-
-**!! IMPORTANT !!**
-
-Once you click **Close** you'll never see your credentials again...
+>[!IMPORTANT] Store your credentials in a text-file in your computer.
+> - Access key ID: ...
+> - Secret access key: ...
+>
+> Once you click **Close** you'll never see your credentials again!
 
 Click **Close**. 
 

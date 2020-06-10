@@ -13,7 +13,7 @@ In this exercise, you'll create a custom Event by making use of Journey Orchestr
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
-You'll see the **Adobe Experience Cloud**-homepage.
+You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
@@ -21,7 +21,7 @@ Click on **Journey Orchestration**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration**-homepage.
+Next, you'll see the **Journey Orchestration** homepage.
 
 ![Demo](./images/aecjoh.png)
 
@@ -29,7 +29,7 @@ In the menu, click on **Events**.
 
 ![Demo](./images/menuevents.png)
 
-You'll then see the **Events**-list.
+You'll then see the **Events** list.
 
 ![Demo](./images/eventshome.png)
 
@@ -41,9 +41,9 @@ You'll see an empty event popup.
 
 ![Demo](./images/emptyevent.png)
 
-As a Name for the Event, use **geofenceEntryLdap** and replace **Ldap** with your LDAP. In this example, the Event Name is **geofenceEntryVangeluw**.
+As a Name for the Event, use `geofenceEntryLdap` and replace `Ldap` with your LDAP. In this example, the Event Name is `geofenceEntryVangeluw`.
 
-Set Description to: **Geofence Entry Event**.
+Set Description to: `Geofence Entry Event`.
 
 ![Demo](./images/evname.png)
 
@@ -52,7 +52,7 @@ Next, you need to select a Schema. All Schemas that are shown here, are Adobe Ex
 ![Demo](./images/evschema.png)
 
 You'll notice that not all Schemas are shown. There are many more Schemas available in Adobe Experience Platform.
-To show up in this list, a Schema needs to have a very specific Mixin linked to it. The Mixin that is needed to show up here is called **Orchestration eventID**.
+To show up in this list, a Schema needs to have a very specific Mixin linked to it. The Mixin that is needed to show up here is called `Orchestration eventID`.
 
 Let's have a quick look how these Schemas are defined in Adobe Experience Platform.
 
@@ -70,13 +70,13 @@ In **Schemas**, go to **Browse** to see the list of available Schemas.
 
 ![Data Ingestion](./images/schemas.png)
 
-Open the Schema **AEP Demo - Location Service Geofence Schema**.
+Open the Schema `AEP Demo - Location Service Geofence Schema`.
 
-After opening the Schema, you'll see that the Mixin **Orchestration eventID** is part of the Schema.
+After opening the Schema, you'll see that the Mixin `Orchestration eventID` is part of the Schema.
 
 ![Data Ingestion](./images/schemageo.png)
 
-This Mixin only has one field, **_experience.campaign.orchestration.eventID**.
+This Mixin only has one field, `_experience.campaign.orchestration.eventID`.
 
 ![Data Ingestion](./images/eventidmixin.png)
 
@@ -86,12 +86,13 @@ Let's go back to our Event configuration in Journey Orchestration.
 
 ![Demo](./images/evschema.png)
 
-In our use-case, we want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema **AEP Demo - Location Service Geofence Schema v.1** as the Schema for your Event.
+In our use-case, we want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema `AEP Demo - Location Service Geofence Schema v.1` as the Schema for your Event.
 
 ![Demo](./images/evschema1.png)
 
 Journey Orchestration will then automatically select some required fields, but you can edit the fields that are made available to Journey Orchestration.
-Click the **pencil**-icon to edit the fields.
+
+Click the **pencil** icon to edit the fields.
 
 ![Demo](./images/editfields.png)
 
@@ -100,6 +101,7 @@ You'll then see a popup-window with a Schema Hierarchy that allows you to select
 ![Demo](./images/popup.png)
 
 Fields like the ECID and the Orchestration eventID are required and as such preselected.
+
 However, a marketeer needs to have flexible access to all data points that provide context to a Journey. So let's make sure to select the following fields as a minimum as well:
 
 * locationService
@@ -128,31 +130,31 @@ Your event will then be part of the list of available events.
 
 ![Demo](./images/eventlist.png)
 
-Finally, you need to recover the **Orchestration eventID** for your custom event.
+Finally, you need to recover the `Orchestration eventID` for your custom event.
 
 Open your event again by clicking it in the list of events.
 
 ![Demo](./images/eventlist1.png)
 
-On your Event, click on the **View Payload**-icon next to **Fields**.
+On your Event, click on the **View Payload** icon next to **Fields**.
 
 ![Demo](./images/fieldseye.png)
 
-Clicking the **View Payload**-icon opens up a sample XDM payload for this event.
+Clicking the **View Payload** icon opens up a sample XDM payload for this event.
 
 ![Demo](./images/fieldseyepayload.png)
 
-Scroll down in the **Payload** until you see the line **eventID**.
+Scroll down in the **Payload** until you see the line `eventID`.
 
 ![Demo](./images/fieldseyepayloadev.png)
 
-Write down the **eventID** as you'll need it in the last to test your configuration.
+Write down the `eventID` as you'll need it in the last to test your configuration.
 
-In this example, the **eventID** is **d9b5069cebd47bb3394e192da031d933a9e10d67046dadde999ec7401eb7bd51**.
+In this example, the `eventID` is `d9b5069cebd47bb3394e192da031d933a9e10d67046dadde999ec7401eb7bd51`.
 
 You've now defined the event that will trigger the Journey we're building. Once the Journey is triggered, the geofence-fields like City, Country, Name, Latitude and Longitude will be made available to the Journey.
 
-As discussed in the use-case description, we then need to provide contextual promotions that depend on the weather. In order to get weather information, we'll need to define an external data sources that will provide us with the weather information for that location. We'll use the **OpenWeather**-service to provide us what that information, as part of 2.
+As discussed in the use-case description, we then need to provide contextual promotions that depend on the weather. In order to get weather information, we'll need to define an external data sources that will provide us with the weather information for that location. We'll use the **OpenWeather** service to provide us what that information, as part of 2.
 
 Next Step: [12.2 Define an External Data Source](./ex2.md)
 

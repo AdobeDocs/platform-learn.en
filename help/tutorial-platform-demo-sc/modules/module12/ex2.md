@@ -13,7 +13,7 @@ In this exercise, you'll create a custom External Data Source by making use of J
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
-You'll see the **Adobe Experience Cloud**-homepage.
+You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
@@ -21,7 +21,7 @@ Click on **Journey Orchestration**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration**-homepage.
+Next, you'll see the **Journey Orchestration** homepage.
 
 ![Demo](./images/aecjoh.png)
 
@@ -29,7 +29,7 @@ In the menu, click on **Data Sources**.
 
 ![Demo](./images/menudatasources.png)
 
-You'll then see the **Data Sources**-list.
+You'll then see the **Data Sources** list.
 
 ![Demo](./images/dshome.png)
 
@@ -41,7 +41,7 @@ You'll see an empty data source popup.
 
 ![Demo](./images/emptyds.png)
 
-Before you can start configuring this, you'll need an account with the **Open Weather Map**-service. Follow these steps to create your account and get your API-key.
+Before you can start configuring this, you'll need an account with the **Open Weather Map** service. Follow these steps to create your account and get your API key.
 
 Go to [https://openweathermap.org/](https://openweathermap.org/).
 
@@ -71,7 +71,7 @@ In the menu, click **API Keys** to retrieve your API Key, which you'll need to s
 
 ![WeatherMap](./images/owm5.png)
 
-In this example, the **API Key** is **b2c4c36b6bb59c3458d6686b05311dc3**.
+In this example, the **API Key** is `b2c4c36b6bb59c3458d6686b05311dc3`.
 
 You can find the **API Documentation** for the **Current Weather** [here](https://openweathermap.org/current).
 
@@ -79,13 +79,13 @@ In our use-case, we'll implement the connection with Open Weather Map based on t
 
 ![WeatherMap](./images/owm6.png)
 
-Go back to **Journey Orchestration**, to your empty **External Data Source**-popup.
+Go back to **Journey Orchestration**, to your empty **External Data Source** popup.
 
 ![Demo](./images/emptyds.png)
 
-As a Name for the Data Source, use **weatherApiLdap** and replace **Ldap** with your LDAP. In this example, the Data Source Name is **weatherApiVangeluw**.
+As a Name for the Data Source, use `weatherApiLdap` and replace `Ldap` with your LDAP. In this example, the Data Source Name is `weatherApiVangeluw`.
 
-Set Description to: **Access to the Open Weather Map**.
+Set Description to: `Access to the Open Weather Map`.
 
 The URL for the Open Weather Map API is: **http://api.openweathermap.org/data/2.5/weather?units=metric**
 
@@ -108,13 +108,13 @@ Finally, you need to define a **FieldGroup**, which is basically the request you
 
 ![Demo](./images/fg.png)
 
-According to the Weather API Documentation, we need to send a parameter **q=City**.
+According to the Weather API Documentation, we need to send a parameter `q=City`.
 
 ![Demo](./images/owmapi.png)
 
 In order to match the expected API Request, configure your FieldGroup as follows:
 
->[!IMPORTANT] The Field group name has to be unique, please use this naming convention: **WeatherByCityLdap** so in this case, the name should be **WeatherByCityVangeluw**
+>[!IMPORTANT] The Field group name has to be unique, please use this naming convention: `WeatherByCityLdap` so in this case, the name should be `WeatherByCityVangeluw`
 
 ![Demo](./images/fg1.png)
 
@@ -170,7 +170,7 @@ Or you can copy the JSON Response from here:
 
 Copy the above JSON Response to your clipboard, then go to your custom Data Source configuration screen.
 
-Click the **Edit Payload**-icon.
+Click the **Edit Payload** icon.
 
 ![Demo](./images/owmapi2.png)
 
@@ -190,7 +190,7 @@ Your custom Data Source configuration is now complete. Scroll up and click **Sav
 
 ![Demo](./images/dssave2.png)
 
-Your Data Source has now been created successfully and is part of the **Data Sources**-list.
+Your Data Source has now been created successfully and is part of the **Data Sources** list.
 
 ![Demo](./images/dslist.png)
 

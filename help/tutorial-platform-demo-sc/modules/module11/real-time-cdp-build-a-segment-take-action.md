@@ -11,14 +11,14 @@ activity:
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 11**, you'll configure a segment, enable it for Streaming Segmentation and activate the segment to multiple destinations.
+In **Module 11**, you'll configure a streaming segment and activate the segment to multiple destinations.
 
 ## Learning Objectives
 
-- Learn how to build a segment and enable Streaming Segmentation.
-- Learn how to configure an Advertising Destination using the Self-Service UI in Adobe Experience Platform.
+- Learn how to build a segment and enable it for streaming.
+- Learn how to configure an advertising destination using the Adobe Experience Platform UI.
 - Learn how to connect a segment to a destination and activate it.
-- Learn how to use Adobe Experience Platform Segments in Adobe Audience Manager, and how to use Adobe Audience Manager Segments in Adobe Experience Platform, thanks to Bi-directional Segment Sharing between Adobe Audience Manager and Adobe Experience Platform.
+- Learn how to use Adobe Experience Platform segments in Adobe Audience Manager, and how to use Adobe Audience Manager segments in Adobe Experience Platform, thanks to bi-directional segment sharing.
 
 ## Prerequisites
 
@@ -36,27 +36,27 @@ In **Module 11**, you'll configure a segment, enable it for Streaming Segmentati
 
 [11.1 Build a segment and enable Streaming Segmentation](./ex1.md)
 
-Learn how to build a segment and enable Streaming Segmentation.
+Learn how to build a segment and enable streaming segmentation.
 
 [11.2 Review how to configure DV360 Destination using Destinations](./ex2.md)
 
-Learn how to configure an Advertising Destination using the Self-Service UI in Adobe Experience Platform.
+Learn how to configure an advertising destination using the Adobe Experience Platform UI.
 
 [11.3 Take Action: send your segment to DV360](./ex3.md)
 
-In this exercise, you'll connect the segment you built in 1 to the destination DV360.
+Connect the segment you built in Exercise 11.1 to the destination DV360.
 
 [11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
 
-In this exercise, you'll connect the segment you built in 1 to the destination Google Remarketing List for Search Advertising by making use of Adobe Audience Manager.
+Connect the segment you built in Exercise 11.1 to the destination Google Remarketing List for Search Advertising by making use of Adobe Audience Manager.
 
 [11.5 Take Action: send your segment to an S3-destination](./ex5.md)
 
-In this exercise, you'll use the segment you built in 1 and send it to an S3-destination, typically used for Email Marketing-destinations.
+Use the segment you built in Exercise 11.1 and send it to an S3-destination, typically used for Email Marketing-destinations.
 
 [11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 
-In this exercise, you'll use the segment you built in 1 to configure an Experience Targeting Activity in Adobe Target.
+Use the segment you built in Exercise 11.1 to configure an Experience Targeting Activity in Adobe Target.
 
 >[!NOTE]
 >

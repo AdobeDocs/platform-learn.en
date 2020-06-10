@@ -84,7 +84,7 @@ You'll see a spinner for about 30 seconds.
 
 ![Adobe I/O New Integration](./images/spin.png)
 
-You'll then see this, and your generated keypair will be downloaded as a zip-file: **config.zip**.
+You'll then see this, and your generated keypair will be downloaded as a zip file: **config.zip**.
 
 Unzip the file **config.zip** on your desktop, you'll see it contains 2 files:
 
@@ -209,7 +209,7 @@ The selected Environment should have a name similar to this one:
 
 ![Postman](./images/envselemea.png)
 
-Click the **gear**-icon to update the Private Key in the environment file.
+Click the **gear** icon to update the Private Key in the environment file.
 
 ![Postman](./images/gear.png)
 
@@ -221,7 +221,7 @@ You'll then see this. All fields are pre-populated, except for the field **PRIVA
 
 ![Postman](./images/pk2.png)
 
-The private key has been generated when you created your Adobe I/O Project. It was downloaded as a zip-file, named **config.zip**. Extract that zip-file to your desktop.
+The private key has been generated when you created your Adobe I/O Project. It was downloaded as a zip file, named **config.zip**. Extract that zip file to your desktop.
 
 ![Postman](./images/pk3.png)
 

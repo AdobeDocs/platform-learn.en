@@ -15,27 +15,28 @@ activity:
 - Learn how to position CJA
 - Understand the CJA workflow: from data connection to insights
 
-## 13.1.1 What is Customer Journey Analytics
+## 13.1.1 What is Customer Journey Analytics?
 
 Customer Journey Analytics (CJA) provides a toolkit to the business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within CJA deliver context and clarity to the complex multi-channel customer journey. The provided context leads to actionable insight into removing pain points from the customer conversion process and designing and delivering exceptional experiences for the moments that matter most.
 
 CJA brings Analysis Workspace on top of Adobe Experience Platform. Adobe Experience Platform is the brain for communication and orchestration and with CJA, brands can now contextualize and visualize all that data, so that Business and Insight teams can learn from it by analyzing the full online to offline customer journey. 
+
 Business and Insight teams can talk to CJA, ask questions and get answers on the fly with the drag-and-drop, point-and-click and user-friendly UI of Analysis Workspace.
 
 ![demo](./images/cja-adv-analysis1.png)
 
 ## 13.1.2 Key advantages
 
-The 3 main benefits for customers are:
+The three main benefits for customers are:
 
 - The ability to make insights available to everyone (i.e., democratizing data access)
 - The ability to see the customer in a contextual journey (i.e. data can be visualized sequentially, spanning multiple channels both online and offline)
 - The ability to harness the power of data without the need of  (i.e., it lets normal humans use data to unlock deep insights and analysis for marketing activation)
 
-## 13.1.3 Why choose Customer Journey Analytics
+## 13.1.3 Why choose Customer Journey Analytics?
 
 CJA isn't intended to replace a current BI application such as Power BI, Microstrategy, Locker or Tableau. These BI applications are meant to visualize data to create corporate dashboards so that everyone in an organization can quickly look at important metrics.  
-CJA's goal is to bring analysis power to Marketing and Business teams making it 'a must have' analysis tool for those personas.
+CJA's goal is to bring analysis power to Marketing and Business teams making it a 'must have' analysis tool for those personas.
 
 Traditionally, BI applications have been incapable of enabling true customer intelligence:
 
@@ -77,11 +78,11 @@ Make sure to have at least checked things like:
 - Identities: CRMID, MobileNr, ECID, emailId. Which identities are the primary identifiers, which ones are the secondary identifiers?
 You can find the identifiers by opening a schema and looking at the object ``<aepTenantId>.identification``. Have a look at the schema [Platform Demo - Website Interactions Schema](https://platform.adobe.com/schema).
 
-![demo](./images/identity.png)
+   ![demo](./images/identity.png)
 
 - Explore the commerce object inside the schema [Platform Demo - Website Interactions Schema](https://platform.adobe.com/schema).
 
-![demo](./images/commerce.png)
+   ![demo](./images/commerce.png)
 
 - Preview all the [datasets](https://platform.adobe.com/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created) and have a look at the data
 

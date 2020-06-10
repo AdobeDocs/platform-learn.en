@@ -166,7 +166,7 @@ To do this, click the **Add new mapping** button.
 
 ![Data Ingestion](./images/reqmapping.png)
 
-In the Source Field, click the **arrow**-icon.
+In the Source Field, click the **arrow** icon.
 
 ![Data Ingestion](./images/emptysource.png)
 
@@ -174,7 +174,7 @@ In the popup, select the field **email**.
 
 ![Data Ingestion](./images/emptysourcepopup.png)
 
-You'll then see this. Click the **schema**-icon.
+You'll then see this. Click the **schema** icon.
 
 ![Data Ingestion](./images/emptytarget.png)
 
@@ -202,7 +202,7 @@ Locate the **home_latitude**-line.
 
 ![Data Ingestion](./images/newmapfield.png)
 
-Click the **schema**-icon:
+Click the **schema** icon:
  
 ![Data Ingestion](./images/schema_icon.png)
 

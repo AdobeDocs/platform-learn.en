@@ -55,11 +55,12 @@ Double-click on **Datasets**.
 ![DSW10](./images/aepjuppynavdatasets.png)
 
 You'll then see a list of datasets.
-In the list of datasets, search for the dataset named **EMEA DSW - Churn Input Data**.
+
+In the list of datasets, search for the dataset named `EMEA DSW - Churn Input Data`.
 
 ![DSW10](./images/aepjuppynavdsci.png)
 
-Next, double-click on the dataset name **EMEA DSW - Churn Input Data**. Jupyter Notebooks will now automatically generate the code needed to read this data from Adobe Experience Platform into this Python notebook.
+Next, double-click on the dataset name `EMEA DSW - Churn Input Data`. Jupyter Notebooks will now automatically generate the code needed to read this data from Adobe Experience Platform into this Python notebook.
 
 ![DSW10](./images/aepjuppynavdscicode.png)
 
@@ -76,7 +77,9 @@ df0.head()
 ![DSW10](./images/aepjuppynavdscicode200000.png)
 
 Execute the code by clicking the play button at the top of the Jupyter notebook. Executing this code will take several minutes.
+
 While the code is running, you should wait until it's finished.
+
 You can see that an action is ongoing by verifying the Python status at the top right of your notebook.
 
 This indicated that a cell is running:
@@ -149,11 +152,11 @@ The result will look like this:
 ## Loading notebooks
 
 For the next exercises, we'll use Jupyter notebooks that have been prepared for you already.
-Download the zip-file located [here](./resources/dsw-mod10.zip) and unzip its content to the desktop of your computer.
+Download the zip file located [here](./resources/dsw-mod10.zip) and unzip its content to the desktop of your computer.
 
 ![DSW](./images/dswfiles.png)
 
-Open the folder **dsw**. In this folder, you'll find 3 notebooks.
+Open the folder `dsw`. In this folder, you'll find 3 notebooks.
 
 ![DSW](./images/dswdtl.png)
 
@@ -165,7 +168,7 @@ Once all 3 notebooks appear in Jupyter Notebooks, you can continue with the next
 
 ![DSW](./images/dswdtlok.png)
 
-Open the notebook **Mod10 - Data Exploration.ipynb**.
+Open the notebook `Mod10 - Data Exploration.ipynb`.
 
 ![DSW](./images/dswdexnb.png)
 

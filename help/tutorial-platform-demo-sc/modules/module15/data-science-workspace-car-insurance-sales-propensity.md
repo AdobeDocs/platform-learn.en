@@ -17,16 +17,16 @@ Please watch this video to understand the value, demo storyline and process: [Lu
 
 In this module, you'll...
 
-- Understand the **Luma Insurance**Real-time Machine Learning use-case
+- Understand the **Luma Insurance** real-time machine Learning use-case
 - Learn how to use Anaconda and a local JupyterLab instance to interact with data in Adobe Experience Platform for building an ML Model
-- Learn how to operationalize a ML Model by creating a Recipe to then train and score that Recipe.
-- Learn how to publish a Recipe as a Service for recurring, automated training.
+- Learn how to operationalize an ML model by creating a recipe to then train and score that recipe.
+- Learn how to publish a recipe as a service for recurring, automated training.
 
 ## Resources
 
 - Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com) 
-- Access to Anaconda
-- Access to the zip-file containing the 2 required notebooks
+- Access to Anaconda (you will install it in Exercise 15.2)
+- Access to the zip file containing the two required notebooks
 
 >[!IMPORTANT]
 >
@@ -43,7 +43,8 @@ In this module, you'll...
 ## Business Context
 
 Luma Insurance is a typical Insurance Company with a big offline dealer-network and a website with lots of traffic.
-Luma Insurance has been trying to personalize their digital communication for years, but it’s very hard to personalize anything if you don’t know who you’re speaking to. As most of the traffic on the website is from unknown, anonymous users who only visit the website once or twice, it’s difficult for Luma Insurance to build out a deep customer profile.
+
+Luma Insurance has been trying to personalize their digital communication for years, but it’s very hard to personalize anything if you don’t know to whom you’re speaking. As most of the traffic on the website is from unknown, anonymous users who only visit the website once or twice, it’s difficult for Luma Insurance to build out a deep customer profile.
 
 Most of these unknown, anonymous visitors only come to the website with one goal: get a quick indication of the cost of an insurance, by filling out a form which then gives them an idea of the insurance cost.
 
@@ -55,23 +56,23 @@ As a consequence, Luma Insurance can’t understand which customer are interesti
 
 [15.1 Introduction to Luma Insurance](./ex1.md)
 
-In this exercise, you'll learn how to use the Luma Insurance Demo Brand and how to demo the Real-time ML Use-Case.
+Learn how to use the Luma Insurance Demo Brand and how to demo the Real-time ML Use-Case.
 
 [15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment](./ex2.md)
 
-In this exercise, you'll install Anaconda on your local machine so you can run Jupyter Notebooks on your local machine, to then interact with the data in Adobe Experience Platform through the Query Service.
+Install Anaconda on your local machine so you can run Jupyter Notebooks on your local machine, to then interact with the data in Adobe Experience Platform through the Query Service.
 
 [15.3 Operationalize your model using a Recipe](./ex3.md)
 
-In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a Recipe.
+Take your model and operationalize it in Adobe Experience Platform by creating a recipe.
 
 [15.4 Train and Score your Recipe](./ex4.md)
 
-After creating a Recipe, you can now Train and Score your Recipe without having to touch code again.
+Train and score your recipe without having to touch code again.
 
 [15.5 Publish your Recipe as a Scheduled Service](./ex5.md)
 
-Finally, you can select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
+Select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
 
 ### FAQ
 

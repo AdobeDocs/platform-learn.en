@@ -16,7 +16,8 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 ![Data Ingestion](./images/home.png)
 
 In the left menu, go to **Destinations**.
-You'll then see the **Destinations**-homepage.
+
+You'll then see the **Destinations** homepage.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 
@@ -26,11 +27,11 @@ In **Destinations**, click on **Google Display & Video 360**.
 
 Click on **Browse Destinations**.
 
-You'll then see all available **Google Display & Video 360**-destinations.
+You'll then see all available **Google Display & Video 360** destinations.
 
 ![RTCDP](./images/rtcdpgoogledest.png)
 
-Click the **Destination Name** of **DV360 - Advertiser ID: 5701635**.
+Click the **Destination Name** of `DV360 - Advertiser ID: 5701635`.
 
 You'll then see this screen:
 
@@ -56,7 +57,7 @@ On the next page, click **Finish**.
 
 ![RTCDP](./images/rtcdpnext2.png)
 
-Your segment is now linked to Google DV360. Every time a customer qualifies for this segment, a signal will be sent to Google DV360 to include that customer in the Audience at Google DV360-side.
+Your segment is now linked to Google DV360. Every time a customer qualifies for this segment, a signal will be sent to Google DV360 to include that customer in the Audience at Google DV360 side.
 
 ![RTCDP](./images/rtcdpnext3.png)
 

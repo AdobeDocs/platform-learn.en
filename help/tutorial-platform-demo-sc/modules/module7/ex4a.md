@@ -25,9 +25,9 @@ Go to Adobe Experience Platform, to **Queries** and to **Credentials**.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
-From the **Credentials**-page in Adobe Experience Platform, copy the **Host** and paste it in the **Server**-field, and copy the **Database** and paste it in the **Database**-field in PowerBI, then click OK (2).
+From the **Credentials** page in Adobe Experience Platform, copy the **Host** and paste it in the **Server** field, and copy the **Database** and paste it in the **Database** field in PowerBI, then click OK (2).
 
-IMPORTANT Make sure to include port **:80** at the end of the Server value because the Query Service does not currently use the default PostgreSQL port of 5432.
+>[!IMPORTANT] Make sure to include port **:80** at the end of the Server value because the Query Service does not currently use the default PostgreSQL port of 5432.
 
 ![power-bi-connect-server.png](./images/power-bi-connect-server.png)
 
@@ -39,7 +39,7 @@ In the Navigator dialog, put your **LDAP** in the search field (1) to locate you
 
 ![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
 
-Make sure the **Report**-tab (1) is selected.
+Make sure the **Report** tab (1) is selected.
 
 ![power-bi-report-tab.png](./images/power-bi-report-tab.png)
 

@@ -21,14 +21,14 @@ With your connection done, you can now progress to influencing visualization. A 
 
 A Data View is similar to the concept of Virtual Report Suites in Adobe Analytics, where you  define context-aware visit definitions, filtering and also, how the components are called. 
 
-You'll need a minimum of 1 Data View per Connection. However, for some use-cases, it's great to have multiple Data Views for the same connection, with the goal of giving different insights to different teams. 
+You'll need a minimum of one Data View per Connection. However, for some use-cases, it's great to have multiple Data Views for the same connection, with the goal of giving different insights to different teams. 
 If you want your company to become data-driven, you should adapt how data is viewed in each team. Some examples:
 
 - UX metrics only for the UX Design team
 - Use the same names for KPIs and Metrics for Google Analytics as for Customer Journey Analytics so that the digital analytics team can speak 1 language only.
-- Data View filtered to show f.i. data for 1 market only, or 1 brand, or only for Mobile Devices.
+- Data View filtered to show f.i. data for one market only, or one brand, or only for Mobile Devices.
 
-On the **Connections**-screen, check the checkbox in front of the connection you just created.
+On the **Connections** screen, check the checkbox in front of the connection you just created.
 
 ![demo](./images/exta.png)
 
@@ -36,7 +36,7 @@ Now click **Create Data View**.
 
 ![demo](./images/extb.png)
 
-You'll be redirected to the **Create Data View**-workflow.
+You'll be redirected to the **Create Data View** workflow.
 
 ![demo](./images/extc.png)
 
@@ -46,13 +46,13 @@ You can now configure the basic definitions for your Data View. Things like Time
 
 ![demo](./images/extc.png)
 
-The **Connection** you created in the previous exercise is already selected. Your connection is named **ldap – Omnichannel data**.
+The **Connection** you created in the previous exercise is already selected. Your connection is named `ldap – Omnichannel data`.
 
 ![demo](./images/ext5.png)
 
-Next, give your Data View a name following this naming convention: **ldap – Omnichannel Data View**. 
+Next, give your Data View a name following this naming convention: `ldap – Omnichannel Data View`. 
 
-Enter the same value for the description: **ldap – Omnichannel Data View**.
+Enter the same value for the description: `ldap – Omnichannel Data View`.
 
 | Name         | Description|    
 | ----------------- |-------------| 
@@ -64,11 +64,11 @@ For the **Time Zone**, select the timezone **Greenwich Mean Time; Monrovia, Casa
 
 ![demo](./images/ext7.png)
 
-Next, set the **Session Timeout** to 30 min. Thanks to every Experience Event's timestamp you can extend the concept of a session across all channels. For instance, what happens if a customer calls the call-center after visiting the website? Using custom Session Timeouts you have loots of flexibility in deciding what a session is, and how that session will merge data together.
+Next, set the **Session Timeout** to 30 min. Thanks to every experience event's timestamp you can extend the concept of a session across all channels. For instance, what happens if a customer calls the call-center after visiting the website? Using custom Session Timeouts you have loots of flexibility in deciding what a session is, and how that session will merge data together.
 
 ![demo](./images/ext8.png)
 
-You can also decide yourself when to start a new session, by manually specifying the event that triggers a new visit in the **Start new visit with event**-field.
+You can also decide yourself when to start a new session, by manually specifying the event that triggers a new visit in the **Start new visit with event** field.
 
 ![demo](./images/ext9.png)
 
@@ -96,11 +96,11 @@ Let's start with the first component:**Name (web.webPageDetails.name)**. Search 
 
 ![demo](./images/ext14.png)
 
-This component is the page name, as you can derive from reading the schema field  (**(web.webPageDetails.name)**). 
+This component is the page name, as you can derive from reading the schema field `(web.webPageDetails.name)`. 
 
 However, using **Name** as the name is not the best naming convention for a business user to quickly understand this dimension. 
 
-Let's change the name to be **Page Name**. Click on the component and rename it in the **Component Settings**-area.
+Let's change the name to be **Page Name**. Click on the component and rename it in the **Component Settings** area.
 
 ![demo](./images/ext15.png)
 
@@ -125,9 +125,9 @@ Click on the model and select **Last Touch** at a Person (Reporting window), as 
 
 ![demo](./images/ext16.png)
 
-The next component is **web.webPageDetails.pageViews.value**.
+The next component is `web.webPageDetails.pageViews.value`.
 
-In the left side menu, search for **web.webPageDetails.pageViews.value**. Drag and drop this metric onto the canvas. 
+In the left side menu, search for `web.webPageDetails.pageViews.value`. Drag and drop this metric onto the canvas. 
 
 ![demo](./images/ext17.png)
 
@@ -180,7 +180,7 @@ Don't forget to **Save** your Data View. So click **Save** now.
 
 ![demo](./images/ext19.png)
 
-FYI: You can come back to this Data View afterwards and change settings and components at any time. Changes will affect how historical data is shown.
+>[!NOTE] You can come back to this Data View afterwards and change settings and components at any time. Changes will affect how historical data is shown.
 
 You can now continue with the visualization and analysis part!
 

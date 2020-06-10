@@ -15,7 +15,7 @@ In **Module 5**, the following topics will be addressed:
 
 - ETL Overview
 - How to set up Adobe Experience Platform - ETL integration
-- Upload data in an ETL-tool, join the data, enrich the data and push it to Platform.
+- Upload data in an ETL tool, join the data, enrich the data and push it to Platform.
 
 ## Learning Objectives
 
@@ -37,9 +37,9 @@ In **Module 5**, the following topics will be addressed:
 
 ## Business Context
 
-Luma Retail is a fashion brand and in addition to its online presence, has brick and mortar stores all over the world. So far the marketing team has struggled to make use of the offline orders data to optimize their online experience. Recently, they introduced a new loyalty program that allows customers to collect points when purchasing in store using their loyalty card. The marketing team receives regularly a flat file with all the offline orders as well and has a record of all customers who have joined the loyalty program. With the help of Informatica, we will join the two data sources, enrich the result so that it can be ingested into Adobe Experience Platform, then hydrate the profile with the offline order events.
+Luma Retail is a fashion brand and in addition to its online presence, has brick and mortar stores all over the world. So far the marketing team has struggled to make use of the offline orders data to optimize their online experience. Recently, they introduced a new loyalty program that allows customers to collect points when purchasing in-store using their loyalty card. The marketing team regularly receives a flat file with all the offline orders. They also have a record of all customers who have joined the loyalty program. With the help of Informatica, we will join the two data sources, enrich the result so that it can be ingested into Adobe Experience Platform, and then hydrate the profile with the offline order events.
 
-Luma Retail also has a partnership with Survey corp which has agreed to share their latest survey results on people preferences on designers, colors, and brands. Luma Retail has also decided to buy some demographics data from a marketplace from Money Corp, providing details on people income and credit score. By combining these two data sets Luma Retail is aiming to target their customer with more meaningful experiences based on their their preferences as well as income.
+Luma Retail also has a partnership with Survey Corp which has agreed to share their latest survey results on people's preferences for designers, colors, and brands. Luma Retail has also decided to buy some demographics data on a marketplace from Money Corp, providing details on people's income and credit scores. By combining these two data sets, Luma Retail is aiming to target their customers with more meaningful experiences based on their preferences as well as income.
 
 ## Exercises
 

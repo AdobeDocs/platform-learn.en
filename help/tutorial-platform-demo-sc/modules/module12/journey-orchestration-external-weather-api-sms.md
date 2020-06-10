@@ -41,23 +41,23 @@ As a brand, you also understand that context greatly impacts a customer's intere
 
 [12.1 Define an Event](./ex1.md)
 
-In this exercise, you'll learn how to define a custom event using Journey Orchestration.
+Learn how to define a custom event using Journey Orchestration.
 
 [12.2 Define an External Data Source](./ex2.md)
 
-In this exercise, you'll learn how to configure an external Data Source using Journey Orchestration.
+Learn how to configure an external Data Source using Journey Orchestration.
 
 [12.3 Define a Custom Action](./ex3.md)
 
-In this exercise, you'll learn how to define an external Action using Journey Orchestration.
+Learn how to define an external Action using Journey Orchestration.
 
 [12.4 Design a trigger-based Customer Journey](./ex4.md)
 
-In this exercise, you'll combine events, data sources and actions into an intelligent and contextual Journey.
+Combine events, data sources and actions into an intelligent and contextual Journey.
 
 [12.5 Trigger your Orchestrated Customer Journey](./ex5.md)
 
-In this exercise, you'll trigger your specific Journey.
+Trigger your specific Journey.
 
 >[!NOTE]
 >

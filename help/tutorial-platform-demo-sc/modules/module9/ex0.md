@@ -11,39 +11,39 @@ activity:
 
 Go to [https://accounts.google.com/signup](https://accounts.google.com/signup).
 
-![GTM Setup](./images/1.png)
+![Google Tag Manager Setup](./images/1.png)
 
 Enter your personal data.
 
-![GTM Setup](./images/2.png)
+![Google Tag Manager Setup](./images/2.png)
 
 Enter your mobile phone number and birthday.
 
-![GTM Setup](./images/3.png)
+![Google Tag Manager Setup](./images/3.png)
 
 Click **Verify** to receive a text message.
 
-![GTM Setup](./images/4.png)
+![Google Tag Manager Setup](./images/4.png)
 
 Enter the code you received from Google to verify your account.
 
-![GTM Setup](./images/5.png)
+![Google Tag Manager Setup](./images/5.png)
 
 Click **Skip** (unless you want to get more from your number).
 
-![GTM Setup](./images/6.png)
+![Google Tag Manager Setup](./images/6.png)
 
 Scroll down on the T&C's.
 
-![GTM Setup](./images/7.png)
+![Google Tag Manager Setup](./images/7.png)
 
-Check the 2 checkboxes and click **Create Account**.
+Check the two checkboxes and click **Create Account**.
 
-![GTM Setup](./images/8.png)
+![Google Tag Manager Setup](./images/8.png)
 
 Click **Confirm**.
 
-![GTM Setup](./images/9.png)
+![Google Tag Manager Setup](./images/9.png)
 
 You're done - your Google Account has been created.
 
