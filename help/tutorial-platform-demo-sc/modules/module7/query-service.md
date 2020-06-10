@@ -56,7 +56,7 @@ In this you will be doing queries, you will learn about the Adobe Defined Functi
 
 [7.4 Power BI/Tableau](./ex4.md)
 
-In this you will generate a dataset from a query executed in the previous and you will use this dataset in Power BI or Tableau to to Callcenter Interaction Analysis.
+In this you will generate a dataset from a query executed in the previous and you will use this dataset in [Power BI](./ex5.md) or [Tableau](./ex6.md) to to Callcenter Interaction Analysis.
 
 >[!NOTE]
 >
