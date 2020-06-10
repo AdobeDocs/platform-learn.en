@@ -28,19 +28,19 @@ In the top menu, click on **Recipes**.
 
 ![DSW](./images/recipes.png)
 
-In Recipes, you'll find multiple recipes. Look for your own recipe in the list, which should be named **ldapRecommendations**.
+In Recipes, you'll find multiple recipes. Look for your own recipe in the list, which should be named `ldapRecommendations`.
 
-Click your **ldapRecommendations** - recipe to open it.
+Click your `ldapRecommendations` recipe to open it.
 
 ![DSW](./images/prrecipe1.png)
 
-You now need to create your own Model, based on the **ldapRecommendations** - recipe.
+You now need to create your own Model, based on the `ldapRecommendations` recipe.
 To do that, click on the **Create Model** button.
 
 ![DSW](./images/createmodel1.png)
 
 To train this model, you need to provide it with an Input Dataset. In our case, you generated data for this Input Dataset in 1 and the input dataset now contains information around product purchase data.
-The dataset to use is called **AEP Demo - Recommendations Input**. Select it from the list.
+The dataset to use is called `AEP Demo - Recommendations Input`. Select it from the list.
 
 ![DSW](./images/input.png)
 
@@ -48,9 +48,9 @@ Click **Next** to continue.
 
 ![DSW](./images/next.png)
 
-In the next step, you need to define a name for your Model. As a naming convention, let's use: **ldap -  Recommendations Model** and replace **ldap** by your ldap.
+In the next step, you need to define a name for your Model. As a naming convention, let's use: `ldap -  Recommendations Model` and replace **ldap** by your ldap.
 
-Example: for ldap vangeluw, the name become **vangeluw - Recommendations Model**.
+Example: for ldap `vangeluw`, the name become `vangeluw - Recommendations Model`.
 
 ![DSW](./images/modelname.png)
 

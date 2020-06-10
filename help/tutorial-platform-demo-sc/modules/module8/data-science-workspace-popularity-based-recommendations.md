@@ -11,7 +11,7 @@ activity:
 
 **Authors: [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 8** you'll learn how to create a simple Machine Learning model that generates product recommendations using Data Science Workspace for retailers like Luma Retail that want to deliver personalized recommendations. When customers visit the website and click on a product, they should be presented with personalized product recommendations afterwards.
+In **Module 8** you'll learn how to create a simple Machine Learning model that generates personalized product recommendations using Data Science Workspace. When customers visit a retail website like Luma and click on a product, they should be presented with personalized product recommendations afterwards.
 
 ## Learning Objectives
 
@@ -25,7 +25,7 @@ In **Module 8** you'll learn how to create a simple Machine Learning model that 
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
-- Access to the zip-file containing the 3 required notebooks
+- Access to the zip file containing the three required notebooks
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!NOTE]
@@ -40,7 +40,7 @@ To create a machine learning model that will recommend products that users might
 
 [8.2 Model Authoring and Operationalization](./ex2.md)
 
-In 1 you created the training data required to power your Machine Learning model. In this lesson you'll learn how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
+In this lesson you'll learn how you can use this data and author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
 [8.3 Model Training and Experimentation](./ex3.md)
 

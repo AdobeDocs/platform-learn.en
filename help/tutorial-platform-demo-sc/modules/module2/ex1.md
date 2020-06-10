@@ -25,11 +25,11 @@ You will now ingest data into Adobe Experience Platform and that data will be li
 
 * Go to your Platform Demo website.
 
-* You'll be redirected to the **Admin**-page
+* You'll be redirected to the **Admin** page
 
 ![Demo](../module2/images/1.png)
   
-* On the **Admin**-page, click **Select LDAP**.
+* On the **Admin** page, click **Select LDAP**.
   
 ![Demo](../module2/images/1a.png)
   
@@ -37,7 +37,7 @@ You will now ingest data into Adobe Experience Platform and that data will be li
   
 ![Demo](../module2/images/1b.png)
   
-* Back on the **Admin**-page, click **Select Brand**.
+* Back on the **Admin** page, click **Select Brand**.
   
 ![Demo](../module2/images/2.png)
   
@@ -74,7 +74,7 @@ You will now ingest data into Adobe Experience Platform and that data will be li
   
 ![Demo](../module2/images/lb_home1.png)
   
-* On the **Home**-page, click another product. Another Experience Event has been sent to Adobe Experience Platform. 
+* On the **Home** page, click another product. Another Experience Event has been sent to Adobe Experience Platform. 
   
 ![Demo](../module2/images/lb_babars.png)
   
@@ -96,7 +96,7 @@ You will now ingest data into Adobe Experience Platform and that data will be li
   
 You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email-addresses. The goal of this is to understand the business context of what you're about to do. In the next exercise, you'll start configuring everything you need to make all that data ingestion possible.
 
-Next Step: [2.2 - Configure Schema's and Set Identifiers](./ex2.md)
+Next Step: [2.2 - Configure Schemas and Set Identifiers](./ex2.md)
 
 [Go Back to Module 2](./data-ingestion.md)
 

@@ -1,17 +1,17 @@
 ---
-title: Data Ingestion using Google Tag Manager and Google Analytics - Publish your GTM Property
-description: Data Ingestion using Google Tag Manager and Google Analytics - Publish your GTM Property
+title: Data Ingestion using Google Tag Manager and Google Analytics - Publish your Google Tag Manager Property
+description: Data Ingestion using Google Tag Manager and Google Analytics - Publish your Google Tag Manager Property
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 9.6 Publish your GTM Property
+# 9.6 Publish your Google Tag Manager Property
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 
-In the GTM UI, in the menu option **Workspace** - **Tags**, you should now see 4 tags. You now need to publish them.
+In the Google Tag Manager UI, in the menu option **Workspace** > **Tags**, you should now see four tags. You now need to publish them.
 
 ![Launch Setup](./images/workspace.png)
 
@@ -35,9 +35,9 @@ Finally, you'll see a confirmation of your publication.
 
 ![Launch Setup](./images/env.png)
 
-Your GTM Property is now published. The last thing to do now is to setup the GTM Tags on the Platform Demo-website so that the GTM configuration is being loaded.
+Your Google Tag Manager Property is now published. The last thing to do now is to setup the Google Tag Manager Tags on the Platform Demo website so that the Google Tag Manager configuration is being loaded.
 
-Next Step: [9.7 Implement GTM Tag on Platform Demo website](./ex7.md)
+Next Step: [9.7 Implement Google Tag Manager Tag on Platform Demo website](./ex7.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

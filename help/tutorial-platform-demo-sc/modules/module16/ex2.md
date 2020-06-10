@@ -17,13 +17,13 @@ activity:
 
 ## Context
 
-Google Analytics data loaded in BigQuery has a very ugly, however useful, format. Dimensions, metrics and other variables are all nested. Also, Google Analytics data is loaded in daily into different tables. This means that trying to connect Google Analytics tables within BigQuery to Adobe Experience Platform directly is very hard and not a good idea.
+When Google Analytics data is in BigQuery, dimensions, metrics and other variables are all nested. Also, Google Analytics data is loaded daily into different tables. This means that trying to connect Google Analytics tables within BigQuery to Adobe Experience Platform directly is very hard and not a good idea.
 
-The solution to this problem: Let's transform Google Analytics data into a readable format to make the ingestion into Adobe Experience Platform easier.
+The solution to this problem is to transform Google Analytics data into a readable format to make the ingestion into Adobe Experience Platform easier.
 
 ## Exercise 16.2.1 – Create a dataset to save new BigQuery Tables
 
-Go to the [BigQuery Console] (https://console.cloud.google.com/bigquery).
+Go to the [BigQuery Console](https://console.cloud.google.com/bigquery).
 
 ![demo](./images/ex3/1.png)
 
@@ -31,7 +31,7 @@ Under **Resources**, you'll see your Project ID:
 
 ![demo](./images/ex3/2.png)
 
-Click your Project ID (don't click on the **bigquery-public-data**-dataset).
+Click your Project ID (don't click on the **bigquery-public-data** dataset).
 
 ![demo](./images/ex3/3.png)
 
@@ -43,7 +43,7 @@ Click **CREATE DATASET**.
 
 ![demo](./images/ex3/5.png)
 
-On the right side of your screen, you'll see the **Create dataset**-menu.
+On the right side of your screen, you'll see the **Create dataset** menu.
 
 For the **Dataset ID**, use the below naming convention. For the other fields, please leave the default settings.
 
@@ -68,7 +68,7 @@ Next, you'll create your first query in BigQuery. The goal of this query is to t
 
 ![demo](./images/ex3/9.png)
 
-Please copy the following SQL query and paste it into that Query Editor. Feel free to read the query and understand the GA BigQuery syntax.
+Please copy the following SQL query and paste it into that Query Editor. Feel free to read the query and understand the Google Analytics BigQuery syntax.
 
 
 ```sql
@@ -276,13 +276,13 @@ Click **SAVE**.
 
 ![demo](./images/ex3/17.png)
 
-In a real-world scenario, brands typically like to have new data coming in daily into the table that was just created. To do that, brands can use the **Schedule Query**-option. This feature will schedule the query we created to run every day and save the output in this table.
+In a real-world scenario, brands typically like to have new data coming in daily into the table that was just created. To do that, brands can use the **Schedule Query** option. This feature will schedule the query we created to run every day and save the output in this table.
 
 ![demo](./images/ex3/18.png)
 
 For this module, it's not required to setup a **Schedule**.
 
-It takes some time until the data is ready in the table we've created. After a couple of minutes, refresh the browser. You should then see within your dataset the  **ldap_GAdataTableBigquery**-table under **Resources** inside your BigQuery project.
+It takes some time until the data is ready in the table we've created. After a couple of minutes, refresh the browser. You should then see within your dataset the  `ldap_GAdataTableBigquery` table under **Resources** inside your BigQuery project.
 
 ![demo](./images/ex3/19.png)
 

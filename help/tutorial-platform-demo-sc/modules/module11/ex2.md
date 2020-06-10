@@ -18,17 +18,17 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the **Production Prod (VA7)**-environment in the blue line on top of your screen.
+Before you continue, make sure you are in the `Production Prod` environment in the blue line on top of your screen.
 
 In the left menu, go to **Destinations**.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 
-You'll then see the **Destinations**-homepage.
+You'll then see the **Destinations** homepage.
 
 ![RTCDP](./images/rtcdp.png)
 
-Set the **Type**-switcher to **Connections**.
+Set the **Type** switcher to **Connections**.
 
 ![RTCDP](./images/rtcdpconn.png)
 
@@ -65,6 +65,7 @@ In the next screen, you'll see the Self-Service UI to configure your destination
 ![RTCDP](./images/rtcdpgooglecreatedest.png)
 
 Enter a value in the fields **Name** and **Description**.
+
 The field **Account ID** is the **Advertiser ID** of the DV360 Account. You can find that here:
 
 ![RTCDP](./images/rtcdpgoogledv360advid.png)
@@ -75,7 +76,7 @@ Now you have something like this:
 
 ![RTCDP](./images/rtcdpgoogldv360new.png)
 
-FYI - If you have configured DV360/DBM integrations in the past for Adobe Audience Manager projects, it was also required to contact Google for this setup and request Google to **whitelist** Adobe to send segments to DV360/DBM. This step is still required and as such, Google needs to whitelist Adobe in order for Adobe Experience Platform to speak with Google DV360.
+FYI - If you have configured DV360/DBM integrations in the past for Adobe Audience Manager projects, it was also required to contact Google for this setup and request Google to **allowlist** Adobe to send segments to DV360/DBM. This step is still required and as such, Google needs to allowlist Adobe in order for Adobe Experience Platform to speak with Google DV360.
 
 Click **Create** to create your destination.
 
@@ -97,13 +98,13 @@ Click **Next**.
 
 ![RTCDP](./images/next.png)
 
-On the **Segment Schedule**-page, click **Next**.
+On the **Segment Schedule** page, click **Next**.
 
 ![RTCDP](./images/rtcdpselseg1.png)
 
 ![RTCDP](./images/next.png)
 
-Finally, on the **Review**-page, click **Finish**.
+Finally, on the **Review** page, click **Finish**.
 
 ![RTCDP](./images/rtcdpselseg2.png)
 

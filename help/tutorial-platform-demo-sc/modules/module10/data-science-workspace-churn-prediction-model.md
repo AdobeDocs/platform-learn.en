@@ -25,7 +25,7 @@ In **Module 10** you'll learn how to create a  Machine Learning model that predi
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
-- Access to the zip-file containing the 3 required notebooks
+- Access to the zip file containing the three required notebooks
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!NOTE]

@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: 
 ---
 
-# 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager
+# 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager (AAM)
 
-Adobe Experience Platform and Adobe Audience Manager are closely connected to each other. The way they are connected is through a Bi-Directional Segment Sharing Connector. This means that all segments built in Adobe Experience Platform are shared to Adobe Audience Manager, and all segments built in Adobe Audience Manager are shared to Adobe Experience Platform.
+Adobe Experience Platform and Adobe Audience Manager are closely connected to each other. The way they are connected is through a bi-directional segment sharing connector. This means that all segments built in Adobe Experience Platform are shared to Adobe Audience Manager, and all segments built in Adobe Audience Manager are shared to Adobe Experience Platform.
 
 When a segment is first built in Adobe Experience Platform, it will take an initial 4-6 hours to synchronize the segment definition and after this initial 4-6 hours, new segment qualifications in Adobe Experience Platform are shared in real-time towards Adobe Audience Manager.
 
@@ -41,7 +41,7 @@ In **Segments** in Adobe Audience Manager, you can now see all the Adobe Experie
 
 Search for your Platform segment, which may be on a different page.
 
-Open the segment you built in 1 by clicking it. In this example, that is the segment **vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)**. Make sure to copy the **Segment ID** as you'll need it in a couple of seconds.
+Open the segment you built in 1 by clicking it. In this example, that is the segment `vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)`. Make sure to copy the **Segment ID** as you'll need it in a couple of seconds.
 
 ![RTCDP](./images/aam4.png)
 
@@ -51,7 +51,7 @@ Click **Edit**.
 
 ![RTCDP](./images/aamedit.png)
 
-The screen now defaults to the **Destinations Mapping**-view, so that you can link a Destination to the Segment.
+The screen now defaults to the **Destinations Mapping** view, so that you can link a Destination to the Segment.
 
 ![RTCDP](./images/aam5.png)
 
@@ -67,7 +67,7 @@ Click the button for the destination **Google AdWords RLSA**, followed by clicki
 
 ![RTCDP](./images/aambrowsedestss.png)
 
-Fill out the Destination Value to send to Google AdWords. In this case, AdWords expects the format **aam=segmentId**. The Segment ID of this segment is **18717523** so that gives **aam=18717523**.
+Fill out the Destination Value to send to Google AdWords. In this case, AdWords expects the format `aam=segmentId`. The Segment ID of this segment is `18717523` so that gives `aam=18717523`.
 
 ![RTCDP](./images/aambrowsedestssdv.png)
 
@@ -97,7 +97,7 @@ In **Traits** in Adobe Audience Manager, you can now see all the Adobe Experienc
 ![RTCDP](./images/aamt2.png)
 
 You can also see other Traits, like for instance, **All Traits** > **1st Party Data** > **Display Advertising Data** > **Impression Pixels**.
-Every time a customer is seeing a Display Ad as part of f.i. a Google DV360 Display Ad campaign, an impression pixel can fire and store the fact that a customer has seen this ad in Adobe Audience Manager.
+Every time a customer is seeing a Display Ad as part of for instance a Google DV360 Display Ad campaign, an impression pixel can fire and store the fact that a customer has seen this ad in Adobe Audience Manager.
 
 ![RTCDP](./images/aamt3.png)
 
@@ -115,8 +115,8 @@ Fill out the details like this:
 
 | Field Name              | Field Name              |
 |:-----------------------:| :-----------------------|
-| Name               | Display Ad Campaign - **Product Name** - ldap, f.i. Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
-| Description               | Display Ad Campaign - **Product Name** - ldap, f.i. Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
+| Name               | Display Ad Campaign - **Product Name** - ldap, for instance Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
+| Description               | Display Ad Campaign - **Product Name** - ldap, for instance Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
 | Data Source               | Audience Library              |
 | Event Type               | Delivery Event             |
 | Store In               | **All Traits** > **1st Party Data** > **Display Advertising Data** > **Impression Pixels**             |
@@ -135,7 +135,7 @@ Go back to **Traits**.
 
 ![RTCDP](./images/aamt8.png)
 
-For completeness, if you'd want to deploy this Impression Pixel, you need the URL or Image Tag to embed in your creative, as part of your Display Ad Campaign. To find the URL or Image Tag, you need to click the little **cloud**-icon as indicated in the screenshot.
+For completeness, if you'd want to deploy this Impression Pixel, you need the URL or Image Tag to embed in your creative, as part of your Display Ad Campaign. To find the URL or Image Tag, you need to click the little **cloud** icon as indicated in the screenshot.
 
 You'll then see this. These URLs and Image Tags can used to embed them in the Display Ad Campaign.
 
@@ -163,8 +163,8 @@ Fill out the Segment Basic Information like this:
 
 | Field Name              | Field Name              |
 |:-----------------------:| :-----------------------|
-| Name               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, f.i. Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw|
-| Description               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, f.i. Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw|
+| Name               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, for instance Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw|
+| Description               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, for instance Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw|
 | Data Source               | Audience Library             |
 | Profile Merge Rule               | Use the default Profile Merge Rule            |
 | Status               | Active           |
@@ -174,7 +174,7 @@ That should look like this:
 
 ![RTCDP](./images/aams4.png)
 
-Go to the **Traits**-view.
+Go to the **Traits** view.
 
 ![RTCDP](./images/aams5.png)
 
@@ -202,7 +202,7 @@ Hover over the 3 dots between your 2 Traits. You'll see a dropdown-list open up 
 
 ![RTCDP](./images/aams9.png)
 
-Next, click the little **clock**-icon next to your Impression Pixel Trait.
+Next, click the little **clock** icon next to your Impression Pixel Trait.
 
 ![RTCDP](./images/aams10.png)
 
@@ -235,7 +235,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the **Production Prod (VA7)**-environment in the blue line on top of your screen.
+Before you continue, make sure you are in the `Production Prod` environment in the blue line on top of your screen.
 
 In the menu on the left side, go to **Segments**.
 

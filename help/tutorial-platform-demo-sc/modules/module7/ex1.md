@@ -18,7 +18,7 @@ activity:
 
 ## 7.1.1 - Getting familiar with the Adobe Experience Platform UI
 
-Make sure you are logged in into the Adobe Experience Platform UI and navigate to the Navigate to the Adobe Experience Platform Login Page: [https://platform.adobe.com](https://platform.adobe.com).
+Make sure you are logged into the [Adobe Experience Platform UI](https://platform.adobe.com).
 
 ![platform-login.png](./images/platform-login.png)
 
@@ -26,15 +26,15 @@ Make sure you are logged in into the Adobe Experience Platform UI and navigate t
 
 Bringing data from different channels is a tough task for any brand. And in this exercise, Luma Telco customers are engaging with Luma Telco on its website, on its mobile app, purchase data is collected by Luma Telco’s Point of Sale system, and they have CRM and Loyalty data. Luma Telco is using Adobe Analytics and Adobe Launch to capture data across its website, mobile app as well as POS system, so this data is already flowing into Adobe Experience Platform. Let's begin with exploring all the data for Luma Telco that already exists in Adobe Experience Platform.
 
-- In the left menu, click **Datasets**.
+In the left menu, click **Datasets**.
 
 ![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
-Luma Telco is streaming data into Adobe Experience Platform and this data is available in the platform in **AEP Demo - Website Interactions** dataset. Search for **AEP Demo - Website Interactions**.
+Luma Telco is streaming data into Adobe Experience Platform and this data is available in the `AEP Demo - Website Interactions` dataset. Search for `AEP Demo - Website Interactions`.
 
 ![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
 
-Luma Telco's Callcenter Interaction data is captured in the **AEP Demo - Call Center Interactions** dataset. Search for **AEP Demo - Call Center Interactions** data in search box. Click on the dataset's name to get dataset details.
+Luma Telco's Callcenter Interaction data is captured in the `AEP Demo - Call Center Interactions` dataset. Search for `AEP Demo - Call Center Interactions` data in search box. Click on the dataset's name to get dataset details.
 
 ![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
 
@@ -42,7 +42,7 @@ After clicking the dataset, you will get an overview of the dataset activity suc
 
 ![preview-interaction-dataset.png](./images/preview-interaction-dataset.png)
 
-Click on **Preview Dataset** to see a sample of the data stored in **AEP Demo - Call Center Interactions** dataset. The left panel shows schema structure for this dataset.
+Click on **Preview Dataset** to see a sample of the data stored in `AEP Demo - Call Center Interactions` dataset. The left panel shows schema structure for this dataset.
 
 ![QS](./images/previewds.png)
 
@@ -50,7 +50,7 @@ You can open the schema structure by clicking on the schema's name in the left p
 
 ![explore-interaction-dataset.png](./images/explore-interaction-dataset.png)
 
-Close the **Preview Dataset** window.
+Click the **Close** button to close the **Preview Dataset** window.
 
 ## 7.1.3 - Introduction to Query Service
 

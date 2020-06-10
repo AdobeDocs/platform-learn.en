@@ -71,9 +71,9 @@ Upon completion, you will see a new entry for **Dataset Created** (you might nee
 
 As soon as you dataset is created (which can take 5-10 minutes), you can continue the exercise.
 
-Next Step - Option A: [7.4.2 Explore the dataset with Power BI](./ex4a.md)
+Next Step - Option A: [7.5 Explore the dataset with Power BI](./ex5.md)
 
-Next Step - Option B: [7.4.2 Explore the dataset with Tableau](./ex4b.md)
+Next Step - Option B: [7.6 Explore the dataset with Tableau](./ex6.md)
 
 [Go Back to Module 7](./query-service.md)
 

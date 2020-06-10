@@ -11,7 +11,7 @@ activity:
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 12** you'll use Journey Orchestration to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way.
+In this module you'll use Journey Orchestration to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way. You've already had an initial hands-on experience with Journey Orchestration in Module 6. In this exercise, you'll go a bit deeper and explore a more advanced use case whereby external data sources are used as part of a journey.
 
 ## Learning Objectives
 
@@ -41,23 +41,23 @@ As a brand, you also understand that context greatly impacts a customer's intere
 
 [12.1 Define an Event](./ex1.md)
 
-In this exercise, you'll learn how to define a custom event using Journey Orchestration.
+Learn how to define a custom event using Journey Orchestration.
 
 [12.2 Define an External Data Source](./ex2.md)
 
-In this exercise, you'll learn how to configure an external Data Source using Journey Orchestration.
+Learn how to configure an external Data Source using Journey Orchestration.
 
 [12.3 Define a Custom Action](./ex3.md)
 
-In this exercise, you'll learn how to define an external Action using Journey Orchestration.
+Learn how to define an external Action using Journey Orchestration.
 
 [12.4 Design a trigger-based Customer Journey](./ex4.md)
 
-In this exercise, you'll combine events, data sources and actions into an intelligent and contextual Journey.
+Combine events, data sources and actions into an intelligent and contextual Journey.
 
 [12.5 Trigger your Orchestrated Customer Journey](./ex5.md)
 
-In this exercise, you'll trigger your specific Journey.
+Trigger your specific Journey.
 
 >[!NOTE]
 >

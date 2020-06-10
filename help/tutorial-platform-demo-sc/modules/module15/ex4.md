@@ -9,7 +9,7 @@ activity:
 
 # 15.4 Train and Score your Recipe
 
-After creating a Recipe, you can now Train and Score your Recipe without having to touch code again.
+After creating a recipe, you can now train and score your recipe without having to touch code again.
 
 ## 15.4.1 Train a Model based on a Recipe
 
@@ -27,21 +27,21 @@ In the top menu, click on **Recipes**.
 
 ![DSW](./images/recipes.png)
 
-In Recipes, you'll find multiple recipes. Look for your own recipe in the list, which should be named **ldapCarInsurancePropensity**.
+In Recipes, you'll find multiple recipes. Look for your own recipe in the list, which should be named `ldapCarInsurancePropensity`.
 
 ![DSW](./images/prrecipe.png)
 
-Click the **ldapCarInsurancePropensity** - recipe to open it.
+Click the `ldapCarInsurancePropensity` recipe to open it.
 
 ![DSW](./images/prrecipe1.png)
 
-You now need to create your own Model, based on the **ldapCarInsurancePropensity** - recipe.
+You now need to create your own Model, based on the `ldapCarInsurancePropensity` recipe.
 
 To do that, click on the **Create a Model** button.
 
 ![DSW](./images/createmodel1.png)
 
-To train this model, you need to provide it with an Input Dataset. In our case, the dataset to use is called **AEP Demo - Car Insurance Interactions**. Select it from the list.
+To train this model, you need to provide it with an Input Dataset. In our case, the dataset to use is called `AEP Demo - Car Insurance Interactions`. Select it from the list.
 
 ![DSW](./images/input.png)
 
@@ -49,13 +49,13 @@ Click **Next** to continue.
 
 ![DSW](./images/next.png)
 
-In the next step, you need to define a name for your Model. As a naming convention, let's use: **ldap -  CarInsurancePropensity Model** and replace **ldap** with your ldap.
+In the next step, you need to define a name for your Model. As a naming convention, let's use: `ldap -  CarInsurancePropensity Model` and replace `ldap` with your ldap.
 
-Example: for ldap vangeluw, the name become **vangeluw - CarInsurancePropensity Model**.
+Example: for ldap vangeluw, the name become `vangeluw - CarInsurancePropensity Model`.
 
 ![DSW](./images/modelname.png)
 
-We can also hyper-tune the Model by changing the Model Configuration. To do that, you can f.i. change the **n_estimators** or the **max_depth**.
+We can also hyper-tune the Model by changing the Model Configuration. To do that, you can for instance change the **n_estimators** or the **max_depth**.
 
 ![DSW](./images/modelcfg.png)
 
@@ -100,7 +100,7 @@ To score, you have to click the **+ Score** button in the top right corner of yo
 
 ![DSW](./images/score.png)
 
-In the next step, you again have to select an Input Dataset. Let's choose the **AEP Demo - Car Insurance Interactions**-dataset.
+In the next step, you again have to select an Input Dataset. Let's choose the `AEP Demo - Car Insurance Interactions` dataset.
 
 ![DSW](./images/scoreinput.png)
 
@@ -108,7 +108,7 @@ After selecting the Input Dataset, click **Next**.
 
 ![DSW](./images/next.png)
 
-In the next step, you need to select a dataset to which Platform will output results. In this case, select the **AEP Demo - ML Predictions**-dataset.
+In the next step, you need to select a dataset to which Platform will output results. In this case, select the `AEP Demo - ML Predictions` dataset.
 
 ![DSW](./images/scoreoutput.png)
 

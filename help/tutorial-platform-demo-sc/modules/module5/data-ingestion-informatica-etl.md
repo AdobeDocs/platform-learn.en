@@ -11,11 +11,7 @@ activity:
 
 **Authors: [Marius Shehati](https://www.linkedin.com/in/mshehati/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 5**, the following topics will be addressed:
-
-- ETL Overview
-- How to set up Adobe Experience Platform - ETL integration
-- Upload data in an ETL-tool, join the data, enrich the data and push it to Platform.
+In this module, you'll learn about the positioning of an ETL application into an enterprise ecosystem. Any brand is using multiple applications ranging from data lakes to analytics solutions to machine learning and a number of marketing-specific applications. Each of those applications is using a different way to describe and understand data. When bringing Adobe Experience Platform into your brand's ecosystem, you'll finally have the ability of describing all that data in 1 single language through the Experience Data Model (XDM). When bringing data into Adobe Experience Platform, the source data model needs to be translated into an XDM format. There are a number of ways of doing that either natively in the Adobe Experience Platform user interface through Workflows or Source Connectors. Using an ETL application such as Informatica will also be a great help in that process, given that Informatica has already built an out-of-the-box integration whereby you can extract, transform and load your data easily into Adobe Experience Platform.
 
 ## Learning Objectives
 
@@ -37,9 +33,9 @@ In **Module 5**, the following topics will be addressed:
 
 ## Business Context
 
-Luma Retail is a fashion brand and in addition to its online presence, has brick and mortar stores all over the world. So far the marketing team has struggled to make use of the offline orders data to optimize their online experience. Recently, they introduced a new loyalty program that allows customers to collect points when purchasing in store using their loyalty card. The marketing team receives regularly a flat file with all the offline orders as well and has a record of all customers who have joined the loyalty program. With the help of Informatica, we will join the two data sources, enrich the result so that it can be ingested into Adobe Experience Platform, then hydrate the profile with the offline order events.
+Luma Retail is a fashion brand and in addition to its online presence, has brick and mortar stores all over the world. So far the marketing team has struggled to make use of the offline orders data to optimize their online experience. Recently, they introduced a new loyalty program that allows customers to collect points when purchasing in-store using their loyalty card. The marketing team regularly receives a flat file with all the offline orders. They also have a record of all customers who have joined the loyalty program. With the help of Informatica, we will join the two data sources, enrich the result so that it can be ingested into Adobe Experience Platform, and then hydrate the profile with the offline order events.
 
-Luma Retail also has a partnership with Survey corp which has agreed to share their latest survey results on people preferences on designers, colors, and brands. Luma Retail has also decided to buy some demographics data from a marketplace from Money Corp, providing details on people income and credit score. By combining these two data sets Luma Retail is aiming to target their customer with more meaningful experiences based on their their preferences as well as income.
+Luma Retail also has a partnership with Survey Corp which has agreed to share their latest survey results on people's preferences for designers, colors, and brands. Luma Retail has also decided to buy some demographics data on a marketplace from Money Corp, providing details on people's income and credit scores. By combining these two data sets, Luma Retail is aiming to target their customers with more meaningful experiences based on their preferences as well as income.
 
 ## Exercises
 

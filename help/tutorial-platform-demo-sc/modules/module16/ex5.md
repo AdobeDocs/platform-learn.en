@@ -7,11 +7,11 @@ doc-type: tutorial
 activity: 
 ---
 
-# 16.5 Analyze Google Analytics Data using Customer Journey Analytics
+# 16.5 Analyze Google Analytics Data using Customer Journey Analytics 
 
 ## Objectives
 
-- Connect our BigQuery Data Set to Customer Journey Analytics
+- Connect our BigQuery Data Set to Customer Journey Analytics (CJA)
 - Connect and join Google Analytics with Loyalty Data.
 - Become familiar with CJA UI
 
@@ -21,7 +21,7 @@ Go to [analytics.adobe.com](https://analytics.adobe.com) to access Customer Jour
 
 ![demo](./images/1a.png)
 
-On the Customer Journey Analytics-homepage, go to **Connections**. 
+On the Customer Journey Analytics homepage, go to **Connections**. 
 
 ![demo](./images/1.png)
 
@@ -33,11 +33,11 @@ Click **Create new connection**.
 
 ![demo](./images/3.png)
 
-You'll then see the **Create Connection**-UI.
+You'll then see the **Create Connection** UI.
 
 ![demo](./images/5.png)
 
-In the left menu, you can see all available Adobe Experience Platform datasets. Search for the dataset **AEP Demo - BigQuery Website Interactions**. Click **+** to add the dataset to this connection.
+In the left menu, you can see all available Adobe Experience Platform datasets. Search for the dataset `AEP Demo - BigQuery Website Interactions`. Click **+** to add the dataset to this connection.
 
 ![demo](./images/6.png)
 
@@ -51,7 +51,7 @@ You now have to select the **Person ID**. Please select the **crmId** as person 
 
 You'll now enrich the Google Analytics Website Interaction data with another Adobe Experience Platform dataset. 
 
-Search for the dataset **AEP Demo - Loyalty Data (M16)** data set and add it to this connection.
+Search for the dataset `AEP Demo - Loyalty Data (M16)` data set and add it to this connection.
 
 ![demo](./images/10.png)
 
@@ -59,7 +59,7 @@ You'll then see this:
 
 ![demo](./images/10a.png)
 
-In order to merge both datasets, you need to select a **Person ID** that contains the same type of IDs. The dataset **AEP Demo - Loyalty Data (M16)** uses the **loyaltyId** as Person ID, which contains the same type of IDs as the **AEP Demo - BigQuery Website Interactions**, which uses the **crmId** as a Person ID. 
+In order to merge both datasets, you need to select a **Person ID** that contains the same type of IDs. The dataset `AEP Demo - Loyalty Data (M16)` uses the **loyaltyId** as Person ID, which contains the same type of IDs as the `AEP Demo - BigQuery Website Interactions`, which uses the **crmId** as a Person ID. 
 
 ![demo](./images/12.png)
 
@@ -73,9 +73,9 @@ You'll then see this:
 
 Here you need to give a name to your connection. 
 
-Please use this naming convention: **ldap - GA + Loyalty Data Connection**. 
+Please use this naming convention: `ldap - GA + Loyalty Data Connection`. 
 
-Example: **vangeluw - GA + Loyalty Data Connection**
+Example: `vangeluw - GA + Loyalty Data Connection`
 
 Before finishing, please also activate **Automatically import all new data for all datasets in this connection, beginning today.** as in the image below. 
 
@@ -97,20 +97,21 @@ You'll then see your connection in the list of available connections.
 
 ![demo](./images/18.png)
 
-## 16.5.2 Create a Data View
+## 16.5.2 Create a data view
 
-With your connection done, you can now progress to influencing visualization. A difference between Adobe Analytics and CJA, is that CJA needs a Data View in order to clean and prepare the data before visualization. 
+With your connection done, you can now progress to influencing visualization. A difference between Adobe Analytics and CJA, is that CJA needs a data view in order to clean and prepare the data before visualization. 
 
-A Data View is similar to the concept of Virtual Report Suites in Adobe Analytics, where you  define context-aware visit definitions, filtering and also, how the components are called. 
+A data view is similar to the concept of virtual report suites in Adobe Analytics, where you define context-aware visit definitions, filtering and also, how the components are called. 
 
-You'll need a minimum of 1 Data View per Connection. However, for some use-cases, it's great to have multiple Data Views for the same connection, with the goal of giving different insights to different teams. 
+You'll need a minimum of one data view per connection. However, for some use-cases, it's great to have multiple data views for the same connection, with the goal of giving different insights to different teams. 
+
 If you want your company to become data-driven, you should adapt how data is viewed in each team. Some examples:
 
 - UX metrics only for the UX Design team
 - Use the same names for KPIs and Metrics for Google Analytics as for Customer Journey Analytics so that the digital analytics team can speak 1 language only.
-- Data View filtered to show f.i. data for 1 market only, or 1 brand, or only for Mobile Devices.
+- data view filtered to show for instance data for 1 market only, or 1 brand, or only for Mobile Devices.
 
-On the **Connections**-screen, check the checkbox in front of the connection you just created.
+On the **Connections** screen, check the checkbox in front of the connection you just created.
 
 ![demo](./images/exta.png)
 
@@ -118,19 +119,19 @@ Now click **Create Data View**.
 
 ![demo](./images/extb.png)
 
-You'll be redirected to the **Create Data View**-workflow.
+You'll be redirected to the **Create Data View** workflow.
 
 ![demo](./images/extc.png)
 
-You can now configure the basic definitions for your Data View. Things like Time zone, Session Timeout or the Data View filtering (the segmentation part similar to Virtual Report Suites in Adobe Analytics).
+You can now configure the basic definitions for your data view. Things like Time zone, Session Timeout or the data view filtering (the segmentation part similar to Virtual Report Suites in Adobe Analytics).
 
-The **Connection** you created in the previous exercise is already selected. Your connection is named **ldap - GA + Loyalty Data Connection**.
+The **Connection** you created in the previous exercise is already selected. Your connection is named `ldap - GA + Loyalty Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Next, give your Data View a name following this naming convention: **ldap - GA + Loyalty Data View**. 
+Next, give your data view a name following this naming convention: `ldap - GA + Loyalty Data View`. 
 
-Enter the same value for the description: **ldap - GA + Loyalty Data View**.
+Enter the same value for the description: `ldap - GA + Loyalty Data View`.
 
 Before doing any analysis or visualization we need to create a data view with all the fields, dimensions and metrics and their attribution settings.
 
@@ -149,7 +150,7 @@ You can now add components to your data view.
 
 ![demo](./images/24.png)
 
-Click **Add All Components** to add all available components to the Data View.
+Click **Add All Components** to add all available components to the data view.
 
 ![demo](./images/25.png)
 
@@ -181,7 +182,7 @@ You should then have this view:
 
 ![demo](./images/27.png)
 
-Your Data View is now configured. Click **Save**.
+Your data view is now configured. Click **Save**.
 
 ![demo](./images/30.png)
 
@@ -226,7 +227,7 @@ Next, click **Save Project**.
 
 ![demo](./images/prsave2.png)
 
-Next, make sure to select the correct Data View in the upper right corner of your screen. This is the Data View you created in the previous exercise, with the naming convention **ldap - GA + Loyalty Data View**. In this example, the Data View to select is **ldap - GA + Loyalty Data View**.
+Next, make sure to select the correct data view in the upper right corner of your screen. This is the data view you created in the previous exercise, with the naming convention `ldap - GA + Loyalty Data View`. In this example, the Data View to select is `ldap - GA + Loyalty Data View`.
 
 ![demo](./images/prdvlist.png)
 

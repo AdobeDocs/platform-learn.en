@@ -23,7 +23,7 @@ For this exercise, we're using **Anaconda Navigator** which you can download and
 
 If you're using a MacBook, please make sure to have **brew** installed. You can find installation instructions for **brew** here: [https://brew.sh/](https://brew.sh/)
 
-Also, after installing **brew**, you'll need to install the **postgres**-package, by running the **brew install postgres**-command in a Terminal window.
+Also, after installing **brew**, you'll need to install the **postgres** package, by running the **brew install postgres** command in a Terminal window.
 
 ![LocalNotebook](./images/terminal.png)
 
@@ -57,25 +57,25 @@ After that, your browser should open and show you the JupyterLab start page.
 
 ![LocalNotebook](./images/jupstart.png)
 
-Download this notebook **Jupyter_QS_LumaInsurance.ipynb.zip** from your **Environment Variables** and unzip it to the desktop of your local computer.
+Download this notebook `Jupyter_QS_LumaInsurance.ipynb.zip` from your **Environment Variables** and unzip it to the desktop of your local computer.
 
-Click the **Upload** - icon in JupyterLab.
+Click the **Upload** icon in JupyterLab.
 
 ![LocalNotebook](./images/jpupload.png)
 
-Select the notebook you just downloaded, **Jupyter_QS.ipynb**,  from your computer's desktop.
+Select the notebook you just downloaded, `Jupyter_QS.ipynb`,  from your computer's desktop.
 
 ![LocalNotebook](./images/jpuploaddesktop.png)
 
-You'll then see the notebook **Jupyter_QS_LumaInsurance.ipynb**.
+You'll then see the notebook `Jupyter_QS_LumaInsurance.ipynb`.
 
 ![LocalNotebook](./images/jpuploaddesktopfile.png)
 
-Double-click the notebook **Jupyter_QS_LumaInsurance.ipynb** to open it.
+Double-click the notebook `Jupyter_QS_LumaInsurance.ipynb` to open it.
 
 ![LocalNotebook](./images/jpuploaddesktopfileopen.png)
 
-Go to the first cell and Go to the first cell and click the **Play** - icon to execute this cell. If you run into an error with this cell, please verify the alternative ways of installing postgres as mentioned above in the section **Prerequisites**.
+Go to the first cell and Go to the first cell and click the **Play** icon to execute this cell. If you run into an error with this cell, please verify the alternative ways of installing postgres as mentioned above in the  **Prerequisites** section.
 
 ![LocalNotebook](./images/jupplay.png)
 
@@ -91,11 +91,11 @@ To retrieve the Query Service password, go into Adobe Experience Platform, to **
 
 ![LocalNotebook](./images/query.png)
 
-Paste the new password by replacing the current password and click the **Play** - icon to execute this cell. This might take 1-2 minutes.
+Paste the new password by replacing the current password and click the **Play** icon to execute this cell. This might take 1-2 minutes.
 
 ![LocalNotebook](./images/queryconn.png)
 
-Go to the next cell. Click the **Play** - icon to execute this cell.
+Go to the next cell. Click the **Play** icon to execute this cell.
 
 ![LocalNotebook](./images/loadsql.png)
 
@@ -103,11 +103,11 @@ Go to the next cell. This cell will load all datasets from Adobe Experience Plat
 
 ![LocalNotebook](./images/showtables.png)
 
-Go to the next cell. This cell will load the **AEP Demo - Car Insurance Interactions** - dataset from Adobe Experience Platform into a data-frame. Click the **Play** - icon to execute this cell. This might take 1-2 minutes.
+Go to the next cell. This cell will load the `AEP Demo - Car Insurance Interactions` dataset from Adobe Experience Platform into a data-frame. Click the **Play** icon to execute this cell. This might take 1-2 minutes.
 
 ![LocalNotebook](./images/loadee.png)
 
-The **AEP Demo - Car Insurance Interactions** - dataset is now assigned to a data-frame, and now a data scientist can continue Exploration, Visualization and Model Development based on this data-frame.
+The `AEP Demo - Car Insurance Interactions` dataset is now assigned to a data-frame, and now a data scientist can continue Exploration, Visualization and Model Development based on this data-frame.
 
 ![LocalNotebook](./images/df.png)
 

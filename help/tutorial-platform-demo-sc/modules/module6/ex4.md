@@ -7,15 +7,15 @@ doc-type: tutorial
 activity: 
 ---
 
-# (Optional) 6.4: How to create your own email in ACwP
+# (Optional) 6.4: How to create your own email in Adobe Campaign
 
-In this optional exercise, you'll learn how to create your own message and event structure in Adobe Campaign with Platform to use in combination with the events coming from Adobe Experience Platform.
+In this optional exercise, you'll learn how to create your own message and event structure in Adobe Campaign with Platform (ACwP) to use in combination with the events coming from Adobe Experience Platform.
 
 You can login to ACwP by clicking this link: [https://experienceplatform-mkt-prod1.campaign.adobe.com/](https://experienceplatform-mkt-prod1.campaign.adobe.com/).
 
 ![ACOP FYI](images/acopfyi.png)
 
-The email you sent following the previous is a so called Adobe Campaign transactional message; i.e. a message not part of a marketing campaign or journey but aimed to be sent immediately. Transactional messages are messages that customers expect to receive instantaneously and as a result always do have priority above any of the marketing campaign journeys being executed in the Adobe Campaign instance.
+The email you sent in the previous exercise is called an Adobe Campaign transactional message; i.e. it wan't part of a marketing campaign or journey but was sent immediately upon a user action. Transactional messages are messages that customers expect to receive instantaneously and as a result always have priority above any of the marketing campaign journeys being executed in the Adobe Campaign instance.
 
 Transactional messages can be of any delivery type supported in Adobe Campaign: email, SMS, mobile push.
 
@@ -35,9 +35,9 @@ To define a transactional message in ACwP:
 ![Event Configuration](images/eventconfiguration.png)
 6. You will see a list of all the events already created. To create a new event, click on **Create**.
 ![Events List](images/eventslist.png)
-7. In the Configure an event** dialog:
-   1. Specify **Label**, e.g. **rmaur - Thanks for signing up**. Make sure you prepend the label with your LDAP name to distinguish it from others.
-   2. Specify **ID**, e.g. **rmaurThanksForSigningUp** (no spaces allowed). Ensure you prepend the ID with your LDAP name to distinguish it from others.
+7. In the **Configure an event** dialog:
+   1. Specify a **Label**, e.g. `rmaur - Thanks for signing up`. Make sure you prepend the label with your LDAP name to distinguish it from others.
+   2. Specify an **ID**, e.g. `rmaurThanksForSigningUp` (no spaces allowed). Be sure you prepend the ID with your LDAP name to distinguish it from others.
    3. Select **Email** as the **Channel** to use.
    4. Select **Real-time event** from the **Targeting dimension** dropdown list.
    ![Configure Event](images/configureevent.png)
@@ -48,26 +48,26 @@ To do so:
     1. Ensure the **Data Structure** tab is active.
     2. Underneath **Field** click on **Create element**.
     3. In the **New field** dialog:
-       1. Specify **Brand Name**as **Label**.
-       2. Specify **brandName** as **ID**.
+       1. Specify `Brand Name` as **Label**.
+       2. Specify `brandName` as **ID**.
        3. Select **Text** as **Type**
        4. Leave value for **Length** unchanged.
        ![New Element](images/newelement.png)
        5. Click on **Add**.
        ![Event Configuration 2](images/eventconfiguration2.png)
     4. Repeat step 2 and 3 for
-       1. **Label** - **Brand Logo URL**,
-       **ID** - **brandLogoUrl**,
+       1. **Label** - `Brand Logo URL`,
+       **ID** - `brandLogoUrl`,
        **Type** - **Text**,
-       **Length** - **127**.
-       2. **Label** - **First Name**,
-       **ID** - **firstName**,
+       **Length** - `127`.
+       2. **Label** - `First Name`,
+       **ID** - `firstName`,
        **Type** - **Text**,
-       **Length** - **127**.
-       3. **Label** - **Last Name**,
-       **ID** - **lastName**,
+       **Length** - `127`.
+       3. **Label** - `Last Name`,
+       **ID** - `lastName`,
        **Type** - **Text**,
-       **Length** - **127**.
+       **Length** - `127`.
     5. Your event configuration screen should now look like
     ![Event Configuration 3](images/eventconfiguration3.png)
     6. Click on **Save** to save your changes.
@@ -102,7 +102,7 @@ To define the details of this message:
 2. You will see the **Transactional email '...'** screen that summarizes the details of your email.
 ![Transactional Email](images/transactionalemail.png)
 Click on the big thumbnail at the bottom of the **Content** pane. **Note**: Do **NOT** click on **Use the legacy editor**.
-3. This will open the email editor **_ldap_ - Thanks For Signing Up**, where you will further define the email.
+3. This will open the email editor `_ldap_ - Thanks For Signing Up`, where you will further define the email.
 ![Email Editor 1](images/emaileditor1.png)
 4. Click on the top title **_ldap_ - Thanks for Signing Up** at the top of the screen. In the dialog that opens up, ensure you specify a **Subject**. E.g. **Thanks for signing up!** If the subject remains empty, the email will **NOT** be sent.
 ![Email Editor 2](images/emaileditor2.png)
@@ -152,18 +152,22 @@ The three structure components define your header, body and footer of your email
      3. Your editor should now look like
     ![Email Editor 13](images/emaileditor13.png)
 12. Click in the top text box and change the text to
-**Dear ,
-Thank you for signing up for**.
-Then:
-    1. Center the text using the toolbar that pops up.
-    ![Email Editor 14](images/emaileditor14.png)
-    2. Format the text using the **Component Settings panel**. E.g. set **padding** to **30**.
-    ![Email Editor 15](images/emaileditor15.png)
-    3. Insert the cursor before the **,**after **Dear**, and click on the **Insert personalization field button**.
-    4. The **Select a personalization field** dialog pops up and allows you to select a field similarly as what you have done in step 10.5 above. In this case select **First Name (firstName)**.
-    ![Email Editor 17](images/emaileditpr17.png)
-    5. Click **Confirm**. The personalization field is inserted in the text.
-    ![Email Editor 18](images/emaileditpr18.png)
+
+    ```
+    Dear,
+    Thank you for signing up for.
+    ```
+
+    Then:
+        1. Center the text using the toolbar that pops up.
+        ![Email Editor 14](images/emaileditor14.png)
+        2. Format the text using the **Component Settings panel**. E.g. set **padding** to `30`.
+        ![Email Editor 15](images/emaileditor15.png)
+        3. Insert the cursor before the **,** after `Dear`, and click on the **Insert personalization field button**.
+        4. The **Select a personalization field** dialog pops up and allows you to select a field similarly as what you have done in step 10.5 above. In this case select **First Name (firstName)**.
+        ![Email Editor 17](images/emaileditpr17.png)
+        5. Click **Confirm**. The personalization field is inserted in the text.
+        ![Email Editor 18](images/emaileditpr18.png)
 13. Now repeat what you have done in step 12 to insert the Brand Name personalization field in the second line of the first Text component as well as in the Text component of the bottom structure component. You should also modify and format that Text component.
 14. Your editor now should look like
 ![Email Editor 19](images/emaileditor19.png)

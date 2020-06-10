@@ -21,7 +21,8 @@ Analysis Workspace removes all of the typical limitations of a single Analytics 
 
 Customer Journey Analytics brings this solution on top of Platform data. We highly recommend to watch this 4 minute video of CJA overview: [https://www.youtube.com/watch?v=Y2Jo43NM-Oo](https://www.youtube.com/watch?v=Y2Jo43NM-Oo)
 
-If you haven't use Adobe Analytics before, we highly recommend to watch this video: [https://www.youtube.com/watch?v=IHOy-QsvVcA](https://www.youtube.com/watch?v=IHOy-QsvVcA)
+If you haven't use Adobe Analytics before, we highly recommend to watch this video:
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### Create Your Project
 
@@ -37,7 +38,7 @@ You'll then see an empty project.
 
 ![demo](./images/premptyprojects.png)
 
-First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is **vangeluw - Omnichannel Data View**.
+First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is `vangeluw - Omnichannel Data View`.
 
 ![demo](./images/prdvlist.png)
 
@@ -167,13 +168,13 @@ Don't forget to **Save** each Calculated Metric.
 
 To finish this exercise, let's create a last calculated Metric: **Conversion Rate**.
 
-Find the **Purchase** Calculated Metric we've just created in the list of Metrics in the left side menu. Click on the **info**-icon.
+Find the **Purchase** Calculated Metric we've just created in the list of Metrics in the left side menu. Click on the **info** icon.
 
 ![demo](./images/prmetricinfo.png)
 
-Now click on the **edit**-icon.
+Now click on the **edit** icon.
 
-Typically, conversion rate means **Conversions / Sessions**. So let's do the same calculation in the calculated Metric definition canvas. Find the **Sessions**-metric and drag and drop it into the definition builder.
+Typically, conversion rate means **Conversions / Sessions**. So let's do the same calculation in the calculated Metric definition canvas. Find the **Sessions** metric and drag and drop it into the definition builder.
 
 ![demo](./images/pr6.png)
 

@@ -9,9 +9,9 @@ activity:
 
 # 14. Offer Decisioning
 
-**In Module 14**, you will get a hands-on preview of the Adobe Experience Platform -  Decisioning Service.
+**In Module 14**, you will get a hands-on preview of the Adobe Experience Platform Decisioning Service.
 
-The Adobe Experience Platform - Offer Decisioning Application Service provides the capability to create personalized, optimized, and orchestrated experiences in applications running on top of Adobe Experience Platform.
+The Adobe Experience Platform Offer Decisioning Application Service provides the capability to create personalized, optimized, and orchestrated experiences in applications running on top of Adobe Experience Platform.
 
 Using Decisioning Service, you can determine the best option from a set of available choices. These options, also called alternatives, could be offers, product recommendations, content components for a web experience, conversation scripts, and actions to take. **Currently** the use case and domain of **offer decisioning** is supported and is referred to as the **Offers Decisioning Engine** (**ODE**), where decision options are modeled specifically as offers (with support for more use cases to come).
 
@@ -35,15 +35,15 @@ In this module we will refer to the **Offers Decisioning Engine** (or simply **O
 
 ## Terminology
 
-To get a better understanding and before you start doing the exercises, we highly recommend you to read the [overview](https://www.adobe.io/apis/experienceplatform/home/services/decisioning-service.html#!api-specification/markdown/narrative/technical_overview/decisioning-overview/decisioning-service-overview.md) on how the Offer Decisioning Application Service works in Adobe Experience Platform.
+To get a better understanding and before you start doing the exercises, we highly recommend you to read the [overview](https://docs.adobe.com/content/help/en/experience-platform/decisioning/home.html) on how the Offer Decisioning Application Service works in Adobe Experience Platform.
 
 Working with Offers, you have to understand the following concepts:
 
  Term | Explanation
 ---------|----------
-**Offer** | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer does have a status: draft, approved or archived.
-**Container** | Everything you work with in the Offers Decisioning Engine, happens in the context of a container. In our module, we will work in the **Decisioning** container.
-**Placement** | Is the combination of location (or channel) and context (or component type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image Link for Email, Mobile, Web, Social, Instant Messaging, and Non Digital.
+**Offer** | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.
+**Container** | Everything in the Offers Decisioning Engine happens in the context of a container. In our module, we will work in the **Decisioning** container.
+**Placement** | The combination of location (or channel) and context (or component type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image Link for Email, Mobile, Web, Social, Instant Messaging, and non-Digital.
 **Decision Rule** | The logic that defines and controls the eligibility of end-users for an offer.
 **Personalized Offer** | A customizable marketing message based on eligibility rules and constraints.
 **Fallback Offer** | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.
@@ -55,7 +55,7 @@ Working with Offers, you have to understand the following concepts:
 
 ## Exercises
 
-### **Exercises for this module are currently being developed**
+_**Exercises for this module are currently being developed**_
 
 >[!NOTE]
 >

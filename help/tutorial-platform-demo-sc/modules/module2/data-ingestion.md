@@ -40,7 +40,7 @@ In this foundational exercise, the goal is to learn all about data ingestion. Yo
 
 In this exercise, you'll explore the website that you'll use as part of this enablement.
 
-[2.2 Configure Schema's and Set Identifiers](./ex2.md)
+[2.2 Configure Schemas and Set Identifiers](./ex2.md)
 
 In this exercise, you'll configure the required XDM schema's to capture profile information and customer behavior. In every XDM schema, you'll also have to configure a primary identifier to link all the information to.
 

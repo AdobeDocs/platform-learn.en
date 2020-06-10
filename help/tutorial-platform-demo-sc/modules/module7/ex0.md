@@ -1,13 +1,13 @@
 ---
-title: Query Service - Pre-requisites
-description: Query Service - Pre-requisites
+title: Query Service - Prerequisites
+description: Query Service - Prerequisites
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: 
 ---
 
-# 7.0 Pre-requisites
+# 7.0 Prerequisites
 
 ## Install PSQL Command Line Utility
 

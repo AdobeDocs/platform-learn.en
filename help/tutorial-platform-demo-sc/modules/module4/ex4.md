@@ -118,11 +118,11 @@ To use the new mobile app, you need to install the **AEP Demo -**-mobile app.
   
    ![Demo](./images/app_men_cat.png)
 
-* Go to the Account-screen and your Real-time Customer Profile data will be refreshed, after which you'll see the **Proteus Fitness Jackshirt (Orange)** - product be part of your recent browse activity. 
+* Go to the Account-screen and your Real-time Customer Profile data will be refreshed, after which you'll see the **Proteus Fitness Jackshirt (Orange)** product be part of your recent browse activity. 
   
    ![Demo](./images/app_after_proteus.png)
 
-* Now go back to your desktop computer and refresh the Luma homepage, after which you'll see the **Proteus Fitness Jackshirt (Orange)** - product also appear there. Please note the fact that the channel on which the browse activity happened is being shown now.
+* Now go back to your desktop computer and refresh the Luma homepage, after which you'll see the **Proteus Fitness Jackshirt (Orange)** product also appear there. Please note the fact that the channel on which the browse activity happened is being shown now.
   
    ![Demo](./images/lb_x_aftermobile.png)
 
@@ -159,7 +159,7 @@ Let's put Alexa into the story.
    ![Demo](./images/alexa_sim_mic.png)
    ![Demo](./images/alexa_ask_purchase.png)
 
-* Now go back to your desktop computer and refresh the Luma homepage, after which you'll see the **Zeppelin Yoga Pant** - product also appear there, in Browse Activity, Add To Cart and Purchase. Please note the fact that the channel on which the activity happened is being shown, so you can clearly indicate which Experience Event happened on which device.
+* Now go back to your desktop computer and refresh the Luma homepage, after which you'll see the **Zeppelin Yoga Pant** product also appear there, in Browse Activity, Add To Cart and Purchase. Please note the fact that the channel on which the activity happened is being shown, so you can clearly indicate which Experience Event happened on which device.
   
 ![Demo](./images/lb_x_afteralexa.png)
   

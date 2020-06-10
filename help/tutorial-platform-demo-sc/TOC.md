@@ -50,6 +50,8 @@ audience: all
   + [7.2 Using the Query Service](/help/tutorial-platform-demo-sc/modules/module7/ex2.md)
   + [7.3 Queries, queries, queries... and churn analysis](/help/tutorial-platform-demo-sc/modules/module7/ex3.md)
   + [7.4 Power BI/Tableau](/help/tutorial-platform-demo-sc/modules/module7/ex4.md)
+  + [7.5 Explore the dataset with Power BI](/help/tutorial-platform-demo-sc/modules/module7/ex5.md)
+  + [7.6 Explore the dataset with Tableau](/help/tutorial-platform-demo-sc/modules/module7/ex6.md)
 + 8 - Data Science Workspace - Popularity Based Recommendations {#module8}
   + [Overview](/help/tutorial-platform-demo-sc/modules/module8/data-science-workspace-popularity-based-recommendations.md)
   + [8.1 Data Exploration and Transformation](/help/tutorial-platform-demo-sc/modules/module8/ex1.md)

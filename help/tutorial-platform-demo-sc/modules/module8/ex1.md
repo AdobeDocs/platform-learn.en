@@ -29,7 +29,7 @@ From the left menu, click **Datasets**.
 
 To develop a product recommendations machine learning model, we are interested in products that users have purchased previously with Luma. To streamline the data required to train our machine learning model, we have created a simple schema called Recommendations Input Schema as outlined in the table below (key fields: userid – the user who interacted with the Luma Website, timestamp – time of interaction, interactiontype – Purchase, itemid – product that the user interacted with).
 
-In this Tech Lab, we'll be using 3 datasets:
+In this tutorial, we'll use three datasets:
 
 | Dataset Name                   | Dataset Schema      | Description                                    |
 |:---------------------------:| :---------------:| :-------------------------------------: |
@@ -37,13 +37,13 @@ In this Tech Lab, we'll be using 3 datasets:
 | AEP Demo - Recommendations Input | AEP Demo - Recommendations Input Schema| The clickstream data will be converted into a feature/training dataset using a feature pipeline. This data is used to train the Product Recommendations machine learning model. itemid and userid correspond to a product purchased by that user at time timestamp |
 | AEP Demo - Recommendations Output | AEP Demo - Recommendations Output Schema| Schema This is the dataset that you obtain after scoring. This contains the list of recommended products for each user |
 
-Let's have a look at the **AEP Demo - Website Interactions**-dataset.
+Let's have a look at the `AEP Demo - Website Interactions` dataset.
 
-On the Datasets - page, enter **AEP Demo - Website Interactions** in the search box.
+On the Datasets - page, enter `AEP Demo - Website Interactions` in the search box.
 
 ![DSW](./images/dssearch.png)
 
-Open the dataset **AEP Demo - Website Interactions**.
+Open the dataset `AEP Demo - Website Interactions`.
 
 ![DSW](./images/dsview.png)
 
@@ -53,7 +53,7 @@ By clicking the **Preview Dataset** button, you can see what data is sent into t
 
 ![DSW](./images/dsdtl.png)
 
-Close the preview - window of your dataset.
+Close the preview window of your dataset.
 
 Let's have a look at the schema that was defined for this dataset.
 
@@ -61,7 +61,7 @@ From the left menu, select **Schemas**.
 
 ![DSW](./images/schemamenu.png)
 
-In the Schemas - overview, search to find the 3 schemas you'll be using in this lab.
+In the Schemas overview, search to find the 3 schemas you'll be using in this lab.
 
 | Schema Name    |
 | :---------------:|
@@ -71,7 +71,7 @@ In the Schemas - overview, search to find the 3 schemas you'll be using in this 
 
 ![DSW](./images/schemaoverview.png)
 
-Let's explore the schema for Platform Demo - Website Interactions Schema, click to open the schema named **AEP Demo - Website Interactions Schema**.
+Click to open the schema named `AEP Demo - Website Interactions Schema`.
 
 ![DSW](./images/schemadtl.png)
 
@@ -87,29 +87,29 @@ Click on **JupyterLab**. You'll now see JupyterLab loading. This may take 1-2 mi
 
 ![DSW](./images/nbstarting.png)
 
-While Jupyter Notebooks is starting, download the zip-file **module8.zip** from your environment variables and unzip its content to the desktop of your computer.
+While Jupyter Notebooks is starting, download the zip file `module8.zip` from your environment variables and unzip its content to the desktop of your computer.
 
 ![DSW](./images/dswfiles.png)
 
-Open the folder **dsw**. In this folder, you'll find 3 notebooks.
+Open the folder `dsw`. In this folder, you'll find three notebooks.
 
 ![DSW](./images/dswdtl.png)
 
-You need to select these 3 notebooks and drag them into Jupyter Notebooks.
+You need to select these three notebooks and drag them into Jupyter Notebooks.
 
 ![DSW](./images/dswdtldrag.png)
 
-Once all 3 notebooks appear in Jupyter Notebooks, you can continue with the next step.
+Once all three notebooks appear in Jupyter Notebooks, you can continue with the next step.
 
 ![DSW](./images/dswdtldragdone.png)
 
 ## 8.1.3 - Transform Clickstream Data
 
-After the previous exercise, you should now see 3 notebooks available in Jupyter Notebooks inside of Adobe Experience Platform.
+After the previous exercise, you should now see three notebooks available in Jupyter Notebooks inside of Adobe Experience Platform.
 
 ![DSW](./images/dswdtldragdone.png)
 
-In Jupyter Notebooks, open the notebook named **luma-retail-recommendations-feature-transformation.ipynb** by double-clicking it.
+In Jupyter Notebooks, open the notebook named `luma-retail-recommendations-feature-transformation.ipynb` by double-clicking it.
 
 What you'll do next:
 
@@ -335,7 +335,7 @@ The result looks like this:
 
 ![DSW](./images/result7.png)
 
-The result in Adobe Experience Platform is that a new batch of data has been created on the **AEP Demo - Recommendations Input** which you can verify by going
+The result in Adobe Experience Platform is that a new batch of data has been created on the `AEP Demo - Recommendations Input` which you can verify by going
 [here](https://platform.adobe.com/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created).
 
 ![DSW](./images/1ds.png)

@@ -18,7 +18,7 @@ activity:
 
 In this you will learn how to use PSQL to retrieve information about the available datasets, how to write a queries for Experience Data Model (XDM), and write your first simple reporting queries using the Query Service and Luma Telco datasets.
 
-## 7.2.1
+## 7.2.1 Basic Queries
 
 In this you will learn about the methods to retrieve information about the available datasets and how to properly retrieve data with a query from an XDM dataset.
 
@@ -60,13 +60,13 @@ prod:all=> show tables;
 :
 ```
 
-At the colon, press space bar to see the next page of the resultset, or enter **q** to revert to the command prompt.
+At the colon, press space bar to see the next page of the resultset, or enter `q` to revert to the command prompt.
 
 Every dataset in Platform has its corresponding Query Service table. You can find a dataset's table via the Datasets ui:
 
 ![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
 
-The **aep_demo_website_interactions** table is the Query Service table that corresponds with the **AEP Demo - Website Interactions** dataset.
+The `aep_demo_website_interactions` table is the Query Service table that corresponds with the `AEP Demo - Website Interactions` dataset.
 
 To query some information about where a product was viewed, we will select the **geo** information.
 
@@ -131,7 +131,7 @@ You will need to edit a query, so let's first open an editor.
 
 On Windows
 
-Click the **search**-icon in the windows toolbar, type **notepad** in the **search**-field, click the **notepad** result:
+Click the **search** icon in the windows toolbar, type **notepad** in the **search** field, click the **notepad** result:
 
 ![windows-start-notepad.png](./images/windows-start-notepad.png)
 
@@ -150,7 +150,7 @@ limit 1;
 
 Go back to your Adobe Experience Platform UI (should be open in your browser) or navigate to [http://platform.adobe.com](http://platform.adobe.com).
 
-Select **Schemas**, enter **AEP Demo - Website Interactions** in the **search**-field and select **AEP Demo - Website Interactions Schema** from the list.
+Select **Schemas**, enter `AEP Demo - Website Interactions` in the **search** field and select `AEP Demo - Website Interactions Schema` from the list.
 
 ![browse-schema.png](./images/browse-schema.png)
 
