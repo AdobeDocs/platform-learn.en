@@ -11,7 +11,9 @@ activity:
 
 **In Module 15**, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Car Insurance Sales Propensity Model, schedule the model to re-train, and prepare the model for Real-time Scoring.
 
-Please watch this video to understand the value, demo storyline and process: [Luma Insurance](http://bit.ly/lumainsurance)
+Please watch this video to understand the value, demo storyline and process:
+
+>[!VIDEO](https://video.tv.adobe.com/v/35112?quality=12&learn=on)
 
 ## Learning Objectives
 
