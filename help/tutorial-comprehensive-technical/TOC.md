@@ -11,7 +11,7 @@ audience: all
 + 1 - Launch and the Web SDK extension {#module1}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module1/data-ingestion-launch-web-sdk.md)
 + 2 - Data Ingestion {#module2}
-  + [Overview](/help/tutorial-comprehensive-technicalmodules/module2/data-ingestion.md)
+  + [Overview](/help/tutorial-comprehensive-technical/modules/module2/data-ingestion.md)
   + [2.1 Explore the website](/help/tutorial-comprehensive-technical/modules/module2/ex1.md)
   + [2.2 Configure Schema's and Set Identifiers](/help/tutorial-comprehensive-technical/modules/module2/ex2.md)
   + [2.3 Configure Datasets](/help/tutorial-comprehensive-technical/modules/module2/ex3.md)
