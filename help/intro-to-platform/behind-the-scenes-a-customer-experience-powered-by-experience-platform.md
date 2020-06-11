@@ -14,7 +14,7 @@ thumbnail: 28144.jpg
 
 In the previous video we saw how an example brand, Luma, was able to create a rich, rewarding and relevant customer experience. This video looks at how Adobe Experience Platform is used to accomplish this journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/28144?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28144?quality=12&learn=on)
 
 ## Additional Resources
 
