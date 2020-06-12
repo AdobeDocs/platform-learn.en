@@ -13,7 +13,7 @@ activity: understand
 
 XDM System is the infrastructure that supports real-time customer profiles, machine learning and customer journey analytics in Adobe Experience Platform. XDM or Experience Data Model is the standard data model to describe customer experiences. When you use XDM to build schemas and ingest data adhering to these schemas you can begin to use XDM system.
 
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
 
 ## Additional Resources
 

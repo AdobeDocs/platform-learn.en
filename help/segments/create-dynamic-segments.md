@@ -13,7 +13,7 @@ activity: setup
 
 Dynamic segments are an advanced segmentation feature in Adobe Experience Platform which solves the scalability problems marketers traditionally face when building segments for marketing campaigns.
 
->[!VIDEO](https://video.tv.adobe.com/v/27428?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27428?quality=12&learn=on)
 
 ## Additional Resources
 

@@ -13,7 +13,7 @@ activity: setup
 
 This video shows you how to create a simple Schema in Adobe Experience Platform using standard classes and mixins.
 
->[!VIDEO](https://video.tv.adobe.com/v/27012?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27012?quality=12&learn=on)
 
 ## Additional Resources
 

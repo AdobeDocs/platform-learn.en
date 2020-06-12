@@ -13,7 +13,7 @@ activity: use
 
 The segment builder in Adobe Experience Platform gives you the power to build segment rules, apply them to your real-time customer profiles and produce the audiences you need to power your customer experiences.
 
->[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
 
 ## Additional Resources
 

@@ -13,7 +13,7 @@ activity: use
 
 Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for Real-time Customer Profile by enabling both the schema and corresponding dataset.
 
->[!VIDEO](https://video.tv.adobe.com/v/27301?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27301?quality=12&learn=on)
 
 ## Additional Resources
 

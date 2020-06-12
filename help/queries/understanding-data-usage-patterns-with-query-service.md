@@ -13,7 +13,7 @@ activity: understand
 
 This video shares tips and best practices for running queries in the query editor interface, PSQL clients, business intelligence (BI) solutions and the HTTP API.
 
->[!VIDEO](https://video.tv.adobe.com/v/29811?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29811?quality=12&learn=on)
 
 ## Additional Resources
 
