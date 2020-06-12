@@ -26,7 +26,7 @@ We will use data that has been injected into platform using either Web Interacti
 ## Prerequisites
 
 - Some familiarity with SQL is preferred, but not required
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Datasets (dataset used during lab, pre-loaded for you)
 - PostgreSQL
 - Tableau or Microsoft Power BI Desktop

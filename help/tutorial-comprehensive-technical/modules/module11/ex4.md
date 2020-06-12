@@ -229,7 +229,7 @@ Next, scroll down and click **Save** to save your segment.
 
 The Bi-directional Segment Sharing - connector works in both ways. That means that if you have a Trait or Segment that was built in Adobe Audience Manager natively, it will be shared towards Adobe Experience Platform.
 
-To view AAM Traits or Segments in Adobe Experience Platform, log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+To view AAM Traits or Segments in Adobe Experience Platform, log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

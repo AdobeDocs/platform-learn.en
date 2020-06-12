@@ -21,7 +21,7 @@ In this exercise, the goal is to onboard external data like CRM Data in Platform
 ## Resources
 
 - Mockaroo UI: [https://www.mockaroo.com/](https://www.mockaroo.com/)
-- Experience Platform UI: [https://platform.adobe.com/](https://platform.adobe.com/)
+- Experience Platform UI: [https://experience.adobe.com/platform/](https://experience.adobe.com/platform/)
 
 ## Tasks
 
@@ -65,7 +65,7 @@ With your CSV-file ready, you can proceed with mapping it against XDM.
 ### 2.5.2 - Verify the CRM Onboarding Dataset in Adobe Experience Platform
 
 Open [Adobe Experience Platform
-](https://platform.adobe.com) and go to **Datasets**. 
+](https://experience.adobe.com/platform) and go to **Datasets**. 
 
 Before you continue, make sure you are in the **PRODUCTION Prod**-environment in the blue line on top of your screen.
 

@@ -15,7 +15,7 @@ In this exercise, you'll create a segment by making use of Adobe Experience Plat
 
 In the Real-time Customer Profile, all profile data is shown alongside event data and existing segment memberships. The data that is shown  can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform&mdash;the experience system of record.
 
-Log into [Adobe Experience Platform](https://platform.adobe.com)
+Log into [Adobe Experience Platform](https://experience.adobe.com/platform)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

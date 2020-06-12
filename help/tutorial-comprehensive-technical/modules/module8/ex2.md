@@ -11,7 +11,7 @@ activity:
 
 In Exercise 8.1 we created the training data required to power our machine learning model. In this lesson we will show you how you can use this data to author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.
 
-The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
+The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 ## Objectives
 
@@ -250,7 +250,7 @@ When you click **Score**, the following cells are executed:
 
 Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the `AEP Demo - Recommendations Output`-dataset.
 
-You can verify this [by opening the Platform Demo - Recommendations Output-dataset in Adobe Experience Platform](https://platform.adobe.com/dataset).
+You can verify this [by opening the Platform Demo - Recommendations Output-dataset in Adobe Experience Platform](https://experience.adobe.com/platform/dataset).
 
 ![DSW](./images/recoutput.png)
 

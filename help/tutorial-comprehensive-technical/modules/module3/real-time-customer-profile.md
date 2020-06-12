@@ -22,7 +22,7 @@ In this module, we'll do a deep dive into the Real-time Customer Profile and Ide
 
 ## Prerequisites
 
-- Access to [Adobe Experience Platform](https://platform.adobe.com)
+- Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
 - Access to a Platform demo website
 - The [Postman application](https://www.postman.com/downloads/)
 

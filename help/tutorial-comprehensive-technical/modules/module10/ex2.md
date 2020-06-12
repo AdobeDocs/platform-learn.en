@@ -11,7 +11,7 @@ activity:
 
 ## Open Adobe Experience Platform and Jupyter Notebooks
 
-To start preparing data for modeling, we must first read the data into Data Science Workspace. To do that, let's go to Adobe Experience Platform. you can login in Adobe Experience Platform by going here: [https://platform.adobe.com](https://platform.adobe.com)
+To start preparing data for modeling, we must first read the data into Data Science Workspace. To do that, let's go to Adobe Experience Platform. you can login in Adobe Experience Platform by going here: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 After logging in with your Adobe ID, you'll be on the homepage of Adobe Experience Platform.
 

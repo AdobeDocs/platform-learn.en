@@ -20,7 +20,7 @@ In **Module 6**, we will take you through the steps to use Journey Orchestration
 
 ## Prerequisites
 
-- Access to [Adobe Experience Platform](https://platform.adobe.com)
+- Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
 - Access to Adobe Campaign Standard
 - Access to Journey Orchestration
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
