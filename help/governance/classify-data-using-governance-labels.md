@@ -13,7 +13,7 @@ activity: understand
 
 Governance labels in Adobe Experience Platform enable you to tag and classify data to reflect corporate policies, contractual obligations, compliance requirements and regional regulations. This is critical to differentiating known and unknown data about your customers, and apply appropriate controls on data usage based on the nature of data.
 
->[!VIDEO](https://video.tv.adobe.com/v/29709?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29709?quality=12&learn=on)
 
 ## Additional Resources
 

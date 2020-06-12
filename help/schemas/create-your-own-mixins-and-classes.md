@@ -13,7 +13,7 @@ activity: setup
 
 Mixins are reusable components that define fields in XDM schemas. Adobe Experience Platform includes many standard mixins and you can also define your own mixins to capture data for your business's use case.
 
->[!VIDEO](https://video.tv.adobe.com/v/27013?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27013?quality=12&learn=on)
 
 ## Additional Resources
 

@@ -13,7 +13,7 @@ activity: understand
 
 Adobe Experience Platform provides an easily extensible Governance framework that is deeply embedded in data usage workflows. We call this the Data Usage and Labeling Enforcement Framework (or DULE) and it provides features for you to take complete control over governing your data from the point it's collected at data sources to when it's syndicated to destinations outside Platform. The framework is built on three key aspects&mdash;Labels, Policies, and Enforcement.
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
 
 ## Additional Resources
 

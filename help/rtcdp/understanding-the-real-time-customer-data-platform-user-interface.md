@@ -13,7 +13,7 @@ activity: understand
 
 This video takes you through Adobe’s Real-time Customer Data Platform (CDP) user interface to show you how schemas, sources, governance, real-time customer profiles, segmentation, destinations, and dashboards come together to provide real-time activation across the digital customer journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/29762?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29762?quality=12&learn=on)
 
 ## Additional Resources
 

@@ -1,6 +1,6 @@
 ---
 title: Demo of Adobe's Real-time Customer Data Platform (RTCDP)
-description: This video shows how Real-time CDP is used to collect data from multiple sources, merge that data into a single real-time customer profile, and activate thaat data to create personalized customer experiences.
+description: This video shows how Real-time CDP is used to collect data from multiple sources, merge that data into a single real-time customer profile, and activate that data to create personalized customer experiences.
 feature: real-time customer data platform
 topics:
 kt: 5291
@@ -11,7 +11,7 @@ activity: understand
 
 # Demo of Real-time Customer Data Platform
 
-This video shows how Real-time CDP is used to collect data from multiple sources, merge that data into a single real-time customer profile, and activate thaat data to create personalized customer experiences.
+This video shows how Real-time CDP is used to collect data from multiple sources, merge that data into a single real-time customer profile, and activate that data to create personalized customer experiences.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34558?quality=12&learn=on)
 

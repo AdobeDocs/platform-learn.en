@@ -13,7 +13,7 @@ activity: understand
 
 Real-Time Customer Profile powers cross-channel personalization at scale through each phase of the customer journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 
 ## Additional Resources
 

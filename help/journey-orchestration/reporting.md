@@ -17,7 +17,7 @@ The following video below explains how to:
 * Customize date ranges for your report
 * Save a reporting template for future use.
 
->[!VIDEO](https://video.tv.adobe.com/v/29321?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29321?quality=12&learn=on)
 
 ## Additional Resources
 
