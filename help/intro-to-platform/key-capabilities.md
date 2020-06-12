@@ -7,6 +7,7 @@ kt: 4332
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32502.jpg
 ---
 
 # Key Capabilities of Experience Platform
