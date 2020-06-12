@@ -13,7 +13,7 @@ After creating a recipe, you can now train and score your recipe without having 
 
 ## 15.4.1 Train a Model based on a Recipe
 
-Login to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+Login to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 ![DSW](./images/aeph.png)
 

@@ -21,7 +21,7 @@ In this module you'll use Journey Orchestration to listen to customer behavior, 
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Journey Orchestration
 - Access to the Open Weather API
 - Access to Twilio

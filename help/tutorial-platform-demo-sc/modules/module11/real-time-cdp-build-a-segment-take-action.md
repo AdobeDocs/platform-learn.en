@@ -22,7 +22,7 @@ In **Module 11**, you'll configure a streaming segment and activate the segment 
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Audience Manager
 - Access to Adobe Target
 - Access to AWS S3

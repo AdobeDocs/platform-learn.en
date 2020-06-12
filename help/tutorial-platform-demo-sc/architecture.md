@@ -13,7 +13,8 @@ activity:
 
 ## Learning Objectives
 
-- Learn how to ...
+- Learn how to describe the architecture behind Adobe Experience Platform and this tutorial
+- Understand the positioning of Adobe Experience Platform in your organization's ecosystem.
 
 ## Prerequisites
 
@@ -25,7 +26,13 @@ activity:
 
 ## Architecture Overview
 
+Here's the image of the whiteboard as you've seen it being created in the above video:
+
 ![Luma Retail](./assets/images/whiteboard.png)
+
+And here's the link to the Lucidchart document which you can copy and reuse if desired:
+
+[Lucidchart Architecture](https://bit.ly/3flr2Nc)
 
 ![Luma Retail](./assets/images/architecture.png)
 

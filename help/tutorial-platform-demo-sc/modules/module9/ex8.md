@@ -121,7 +121,7 @@ If you see all these calls going out to the DCS Endpoint from GTM, that means th
 
 Now we need to verify whether these calls are successfully received by Platform.
 
-To log in to Platform, go to [https://platform.adobe.com/home](https://platform.adobe.com/home).
+To log in to Platform, go to [https://experience.adobe.com/platform/home](https://experience.adobe.com/platform/home).
 
 Go to **Datasets** and locate your two Datasets. As a reminder, the shared datasets we're using are called:
 

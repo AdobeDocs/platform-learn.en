@@ -11,7 +11,7 @@ activity:
 
 Finally, you can select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
 
-Login to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+Login to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 ![DSW](./images/aeph.png)
 

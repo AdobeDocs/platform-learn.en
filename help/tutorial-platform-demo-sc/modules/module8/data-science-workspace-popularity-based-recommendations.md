@@ -9,7 +9,7 @@ activity:
 
 # 8. Data Science Workspace - Popularity Based Recommendations
 
-**Authors: [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+**Authors: [Jo O'Connor](https://www.linkedin.com/in/jcoc17/), [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In **Module 8** you'll learn how to create a simple Machine Learning model that generates personalized product recommendations using Data Science Workspace. When customers visit a retail website like Luma and click on a product, they should be presented with personalized product recommendations afterwards.
 
@@ -24,7 +24,7 @@ In **Module 8** you'll learn how to create a simple Machine Learning model that 
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to the zip file containing the three required notebooks
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 

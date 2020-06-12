@@ -24,7 +24,7 @@ In this foundational exercise, the goal is to learn all about data ingestion. Yo
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Launch: [https://launch.adobe.com](https://launch.adobe.com)
 - Access to a Platform demo website
 - Access Postman

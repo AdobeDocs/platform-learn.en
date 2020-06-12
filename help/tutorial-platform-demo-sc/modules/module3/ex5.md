@@ -70,7 +70,7 @@ Now, click the blue **Send** button to create the segment and view the results o
 
 ![Segmentation](./images/s1_bodydtl_results.png)
 
-After this step, you can view your segment definition in the Platform UI. To check this, log in to Platform and go to [https://platform.adobe.com/segment](https://platform.adobe.com/segment). 
+After this step, you can view your segment definition in the Platform UI. To check this, log in to Platform and go to [https://experience.adobe.com/platform/segment](https://experience.adobe.com/platform/segment). 
 
 ![Segmentation](./images/s1_segmentdef.png)
 

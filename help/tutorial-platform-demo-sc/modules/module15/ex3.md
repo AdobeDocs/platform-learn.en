@@ -20,7 +20,7 @@ The recipe builder notebook templatizes your model to automatically package and 
 
 We have streamlined the steps needed to operationalize a model by giving you the ability to train, evaluate and score it at scale and then package it in one seamless flow on Adobe Experience Platform. Packaging to a Recipe also allows you to use the same code with different datasets to power different use cases in your organizations. Our specific use case revolves around using the recommendations model code for users searching for products to purchase on the website.
 
-Go to [https://platform.adobe.com](https://platform.adobe.com)
+Go to [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 You'll see the **Adobe Experience Platform** homepage.
 
@@ -102,7 +102,7 @@ When you click **Score**, the following cells are executed:
 
 Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the `AEP Demo - ML Predictions` Dataset.
 
-You can verify this [here](https://platform.adobe.com/dataset).
+You can verify this [here](https://experience.adobe.com/platform/dataset).
 
 ![DSW](./images/recoutput.png)
 

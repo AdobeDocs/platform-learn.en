@@ -27,7 +27,7 @@ We'll go into Platform to retrieve most of that information, to then fill out th
 | Experience Event Dataset ID | eeDatasetId |  |
 | Experience Event Schema Reference | eeSchemaRef |  |
 
-To log in to Platform, go to [https://platform.adobe.com/home](https://platform.adobe.com/home).
+To log in to Platform, go to [https://experience.adobe.com/platform/home](https://experience.adobe.com/platform/home).
 
 Log in with your personal Adobe Login credentials.
 

@@ -11,7 +11,7 @@ activity:
 
 In this exercise, you'll configure the required datasets to capture and store profile information and customer behavior. Every dataset that you create in this will use one of the schemas that you built in the previous step.
 
-The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com).
+The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 ## Story
 
@@ -24,7 +24,7 @@ You now need to create 2 datasets:
 * 1 dataset to capture the information that answers the **Who is this customer?** - question.
 * 1 dataset to capture the information that answers the **What does this customer do?** - question.
 
-Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)

@@ -24,7 +24,7 @@ In this module, you'll...
 
 ## Resources
 
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com) 
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
 - Access to Anaconda (you will install it in Exercise 15.2)
 - Access to the zip file containing the two required notebooks
 

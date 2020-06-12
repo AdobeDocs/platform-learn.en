@@ -9,7 +9,7 @@ activity:
 
 # 11.3 - Take Action: send your segment to DV360
 
-Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

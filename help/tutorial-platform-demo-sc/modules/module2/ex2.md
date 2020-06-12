@@ -11,7 +11,7 @@ activity:
 
 In this exercise, you'll configure the required XDM schemas to classify profile information and customer behavior. In every XDM schema, you'll also have to configure a primary identifier to link all the information to.
 
-The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
+The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
  
 ## Story
 
@@ -49,7 +49,7 @@ Lastly, it's important to distinguish the channel on which data was captured. In
 
 Based on the above, you'll need to configure a Schema in Adobe Experience Platform.
 
-Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com).
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
