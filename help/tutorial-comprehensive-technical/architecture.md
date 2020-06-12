@@ -22,7 +22,7 @@ activity:
 
 ## Introduction Video
 
->[!VIDEO](https://video.tv.adobe.com/v/32553?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35266?quality=12&learn=on)
 
 ## Architecture Overview
 
