@@ -11,7 +11,7 @@ activity:
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 6**, we will take you through the steps to use Journey Orchestration. You'll get access to Journey Orchestration and will be able to configure Events and Journeys that start based on a trigger from an experience event sent to Platform.
+In this module, we will take you through the steps to use Journey Orchestration. You'll get access to Journey Orchestration and will be able to configure Events and Journeys that start based on a trigger from an experience event sent to Platform.
 
 ## Learning Objectives
 
@@ -52,6 +52,10 @@ This will guide you through the configuration of Launch to trigger your event an
 [6.4 How to create your own email in Adobe Campaign Standard](./ex4.md)
 
 In this optional exercise, you'll learn how to create your own message and event structure in Adobe Campaign Standard to use in combination with the events coming from Adobe Experience Platform.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

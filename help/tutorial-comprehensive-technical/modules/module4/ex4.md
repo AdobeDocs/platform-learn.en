@@ -179,7 +179,7 @@ Let's put Alexa into the story.
   
 With this, you've successfully completed this exercise.
 
-Congratulations, you've now finished Module 4.
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 4](./data-ingestion-amazon-alexa.md)
 

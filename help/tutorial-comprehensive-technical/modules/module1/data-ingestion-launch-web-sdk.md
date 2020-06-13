@@ -36,4 +36,8 @@ Have a look at the below architecture, which highlights the components that will
 
 ### **Exercises for this module are currently being developed**
 
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
+
 [Go Back to All Modules](../../overview.md)

@@ -11,7 +11,7 @@ activity:
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In this foundational exercise, the goal is to learn all about data ingestion. You'll learn about data ingestion in Streaming and Batch. You'll implement Streaming Data Ingestion by using Launch, so that the customer behavior on the Hands-On Lab website is streamed to Adobe Experience Platform in real-time. You'll learn about Batch Data Ingestion by using an Adobe Experience Platform Workflow to take a CSV-file, map it against an XDM-schema and then ingest it into Adobe Experience Platform. 
+In this module, the goal is to learn all about data ingestion. You'll learn about data ingestion in Streaming and Batch. You'll implement Streaming Data Ingestion by using Launch, so that the customer behavior on the Hands-On Lab website is streamed to Adobe Experience Platform in real-time. You'll learn about Batch Data Ingestion by using an Adobe Experience Platform Workflow to take a CSV-file, map it against an XDM-schema and then ingest it into Adobe Experience Platform. 
 
 ## Learning Objectives
 
@@ -61,6 +61,10 @@ In this exercise, you'll learn how to use the Adobe Experience Platform extensio
 [2.5 Data Ingestion from Offline Sources](./ex5.md)
 
 In this exercise, you'll go on the website and mobile app and behave like a customer, streaming data to Platform.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

@@ -11,7 +11,7 @@ activity:
 
 **Author: [Tina Soni](https://www.linkedin.com/in/tinadsoni/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 10** you'll learn how to create a  Machine Learning model that predicts a customer's likelihood to churn. 
+In this module, you'll learn how to create a  Machine Learning model that predicts a customer's likelihood to churn. 
 
 ## Learning Objectives
 
@@ -55,6 +55,10 @@ In this exercise, a Data Scientist creates the Target variable and create some i
 [10.4 Experimentation - Recipe Building](./ex4.md)
 
 In this exercise, you'll convert the feature engineering and model that you have prepared in the above steps into a recipe.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

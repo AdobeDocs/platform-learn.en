@@ -504,6 +504,8 @@ You can also preview the data that you ingested. You'll also see the output of y
 
 Congratulations you have now successfully used Informatica to ingest Profile and Experience Event data into Adobe Experience Platform!
 
+Next Step: [Summary and benefits](./summary.md)
+
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
 [Go Back to All Modules](../../overview.md)

@@ -11,7 +11,7 @@ activity:
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In this module you'll use Journey Orchestration to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way. You've already had an initial hands-on experience with Journey Orchestration in Module 6. In this exercise, you'll go a bit deeper and explore a more advanced use case whereby external data sources are used as part of a journey.
+In this module, you'll use Journey Orchestration to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way. You've already had an initial hands-on experience with Journey Orchestration in Module 6. In this exercise, you'll go a bit deeper and explore a more advanced use case whereby external data sources are used as part of a journey.
 
 ## Learning Objectives
 
@@ -64,6 +64,10 @@ Combine events, data sources and actions into an intelligent and contextual Jour
 [12.5 Trigger your Orchestrated Customer Journey](./ex5.md)
 
 Trigger your specific Journey.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

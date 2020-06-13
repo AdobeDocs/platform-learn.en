@@ -66,6 +66,10 @@ In this module, we'll show you the different approaches to demoing the Alexa ski
 
 In this module, we'll show you a walkthrough and script of the updated demo talk track and steps to follow.
 
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
+
 >[!NOTE]
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.

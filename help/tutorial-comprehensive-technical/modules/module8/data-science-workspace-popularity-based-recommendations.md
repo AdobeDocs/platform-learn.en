@@ -11,7 +11,7 @@ activity:
 
 **Authors: [Jo O'Connor](https://www.linkedin.com/in/jcoc17/), [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 8** you'll learn how to create a simple Machine Learning model that generates personalized product recommendations using Data Science Workspace. When customers visit a retail website like Luma and click on a product, they should be presented with personalized product recommendations afterwards.
+In this module, you'll learn how to create a simple Machine Learning model that generates personalized product recommendations using Data Science Workspace. When customers visit a retail website like Luma and click on a product, they should be presented with personalized product recommendations afterwards.
 
 ## Learning Objectives
 
@@ -55,6 +55,10 @@ So you’ve prepared your data, authored your model and packaged it to test it a
 [8.4 Scoring and Consumption of Insights](./ex4.md)
 
 Now that you've experimented with your recommendations model and have determined the optimal run, you can move on to scoring the model to generate product recommendations for customers.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

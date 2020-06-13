@@ -11,7 +11,7 @@ activity:
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 11**, you'll configure a streaming segment and activate the segment to multiple destinations.
+In this module, you'll configure a streaming segment and activate the segment to multiple destinations.
 
 ## Learning Objectives
 
@@ -63,6 +63,10 @@ Use the segment you built in Exercise 11.1 and send it to an S3-destination, typ
 [11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 
 Use the segment you built in Exercise 11.1 to configure an Experience Targeting Activity in Adobe Target.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

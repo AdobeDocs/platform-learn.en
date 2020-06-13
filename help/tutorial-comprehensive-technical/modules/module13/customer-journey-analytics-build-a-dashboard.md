@@ -11,7 +11,7 @@ activity:
 
 **Author: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-**In Module 13**, you will get hands-on experience with the Customer Journey Analytics application service.
+In this module, you will get hands-on experience with the Customer Journey Analytics application service.
 
 Customer Journey Analytics provides a toolkit to business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within Customer Journey Analytics deliver context and clarity to the complex multi-channel customer journeys. The provided context generates actionable insight into how to remove pain points from the customer conversion process and deliver positive experiences in the moments that matter most.
 
@@ -63,6 +63,10 @@ Learn how to do some data preparation before continuing with analysis.
 [13.5 Visualization using Customer Journey Analytics](./ex5.md)
 
 Learn how to visualize Adobe Experience Platform data using Customer Journey Analytics.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

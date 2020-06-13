@@ -62,6 +62,10 @@ In this exercise, you'll use Postman and Adobe I/O to create a segment and store
 
 In this exercise, you'll impersonate a call center employee who receives a call from a customer. In order to really make an impact on this customer's experience, you'll need access to all available information in real-time.
 
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
+
 >[!NOTE]
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.

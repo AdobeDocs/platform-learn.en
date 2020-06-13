@@ -9,7 +9,7 @@ activity:
 
 # 14. Offer Decisioning
 
-**In Module 14**, you will get a hands-on preview of the Adobe Experience Platform Decisioning Service.
+In this module, you will get a hands-on preview of the Adobe Experience Platform Decisioning Service.
 
 The Adobe Experience Platform Offer Decisioning Application Service provides the capability to create personalized, optimized, and orchestrated experiences in applications running on top of Adobe Experience Platform.
 
@@ -62,6 +62,10 @@ Working with Offers, you have to understand the following concepts:
 ## Exercises
 
 _**Exercises for this module are currently being developed**_
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

@@ -9,9 +9,9 @@ activity:
 
 # 15. Data Science Workspace - Car Insurance Sales Propensity
 
-**In Module 15**, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Car Insurance Sales Propensity Model, schedule the model to re-train, and prepare the model for Real-time Scoring.
+In this module, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Car Insurance Sales Propensity Model, schedule the model to re-train, and prepare the model for Real-time Scoring.
 
-Please watch this video to understand the value, demo storyline and process:
+Please watch this video to understand the value, customer journey and configuration process:
 
 >[!VIDEO](https://video.tv.adobe.com/v/35112?quality=12&learn=on)
 
@@ -73,6 +73,10 @@ Train and score your recipe without having to touch code again.
 [15.5 Publish your Recipe as a Scheduled Service](./ex5.md)
 
 Select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 ### FAQ
 

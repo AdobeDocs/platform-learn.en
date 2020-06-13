@@ -61,6 +61,10 @@ In this exercise, you'll learn how to import order data into Informatica, join d
 
 In this exercise, you'll learn how to import 2nd and 3rd party data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
+
 >[!NOTE]
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.

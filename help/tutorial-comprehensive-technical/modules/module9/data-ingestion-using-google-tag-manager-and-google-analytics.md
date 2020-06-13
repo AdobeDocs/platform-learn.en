@@ -11,7 +11,7 @@ activity:
 
 **Author: [Gerard Lindeboom](https://www.linkedin.com/in/gerardlindeboom/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 9**, the following topics will be addressed:
+In this module, the following topics will be addressed:
   
 - Configuration of Google Tag Manager
 - Basic setup of Google Analytics
@@ -80,6 +80,10 @@ After publishing your Google Tag Manager property, you can now implement it on y
 [9.8 Verify Data Ingestion from website into Platform](./ex8.md)
 
 With the implementation done now, you'll learn how you can verify your full implementation.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

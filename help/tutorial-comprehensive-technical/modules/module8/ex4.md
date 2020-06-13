@@ -69,7 +69,7 @@ Next, click the **Preview Scoring Results Dataset**.
 
 ![DSW](./images/previewresults.png)
 
-With this, you've successfully finished this module!
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 8](./data-science-workspace-popularity-based-recommendations.md)
 
