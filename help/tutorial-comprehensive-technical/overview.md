@@ -42,7 +42,7 @@ After completing this tutorial, you will be able to:
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Launch: [https://launch.adobe.com](https://launch.adobe.com)
 - Access to a Platform demo website
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
@@ -53,9 +53,9 @@ After completing this tutorial, you will be able to:
 
 ## About this tutorial
 
-In these lessons, you will implement Adobe Experience Platform and Application Services into a Platform Demo website which supports multiple demo industries. The Platform Demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma Retail**, **Luma News**, **Luma Insurance**, **Luma Car** and several others. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Platform Demo website using the Experience Platform Debugger. This will then generate data that is sent into your own Adobe Experience Platform instance.
+In these lessons, you will implement Adobe Experience Platform and Application Services into a Platform Demo website which supports multiple demo industries. The Platform Demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma Retail**, **Luma News**, **Luma Insurance**, **Luma Car** and several others. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Platform Demo website using the Experience Platform Debugger. This will then generate data that is sent into your own Adobe Experience Platform instance. For an introduction to the Platform Demo website, have a look at the below video.
 
-![Luma Retail](./assets/images/lumaretail.png)
+>[!VIDEO](https://video.tv.adobe.com/v/35137?quality=12&enable=on)
 
 ## Architecture
 
@@ -149,7 +149,7 @@ Go to [Architecture](./architecture.md).
 - **Description:** In this module, you'll use Journey Orchestration to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way over various channels.
 - **Time Investment:** 90 minutes
 
-[13. Customer Journey Analytics (CJA) - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/module13/customer-journey-analytics-build-a-dashboard.md)
+[13. Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/module13/customer-journey-analytics-build-a-dashboard.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform and Customer Journey Analytics

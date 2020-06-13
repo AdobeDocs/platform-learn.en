@@ -288,7 +288,7 @@ Next, let's setup your Source Connector in Adobe Experience Platform.
 
 ## Exercise 16.3.5 - Connect Platform with your own BigQuery table
 
-Go to [Adobe Experience Platform](https://platform.adobe.com/home).
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform/home).
 
 In the left menu, go to Sources.
 

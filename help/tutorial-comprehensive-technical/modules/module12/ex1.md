@@ -56,7 +56,7 @@ To show up in this list, a Schema needs to have a very specific Mixin linked to 
 
 Let's have a quick look how these Schemas are defined in Adobe Experience Platform.
 
-Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

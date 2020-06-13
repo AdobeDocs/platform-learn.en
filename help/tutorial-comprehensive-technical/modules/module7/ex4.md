@@ -47,7 +47,7 @@ and    e.<aepTenantId>.identification.ecid = c.<aepTenantId>.identification.ecid
 and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identification.ecid;
 ```
 
-Navigate to the Adobe Experience Platform UI - [https://platform.adobe.com](https://platform.adobe.com)
+Navigate to the Adobe Experience Platform UI - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 You will search for your executed statement in the Adobe Experience Platform Query UI by entering your ldap in the search field:
 

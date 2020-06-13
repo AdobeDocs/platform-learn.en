@@ -89,6 +89,8 @@ You'll find your recipe in the list.
 
 From this list, your Recipe can be used to experiment but no coding is required beyond this stage anymore.
 
+Next Step: [Summary and benefits](./summary.md)
+
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
 [Go Back to All Modules](../../overview.md)

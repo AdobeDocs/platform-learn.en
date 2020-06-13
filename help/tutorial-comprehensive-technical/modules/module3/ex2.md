@@ -19,7 +19,7 @@ In the Real-time Customer Profile, all profile data is shown alongside event dat
 
 Adobe Experience Platform has a feature that brands have been trying to get for years: a single view of the customer!
 
-Log in to [Adobe Experience Platform](https://platform.adobe.com).
+Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

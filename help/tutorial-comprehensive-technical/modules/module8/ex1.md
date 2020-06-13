@@ -11,13 +11,13 @@ activity:
 
 To create a machine learning model that will recommend products that users might like when they are looking at a particular product, you need to analyze previous purchases made by users on the website. In this lesson, you will explore purchase data flowing via Adobe Analytics to Platform and transform that data into a Feature dataset that can help train your machine learning model.
 
-The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
+The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 ## 8.1.1 - Explore the Datasets and XDM Schemas
 
 Experience Data Models (XDM) on Adobe Experience Platform help standardize your data so that it can be used efficiently across your organization.
 
-Go to [https://platform.adobe.com](https://platform.adobe.com) and log in.
+Go to [https://experience.adobe.com/platform](https://experience.adobe.com/platform) and log in.
 
 After logging in, you'll see the homepage of Adobe Experience Platform.
 
@@ -336,7 +336,7 @@ The result looks like this:
 ![DSW](./images/result7.png)
 
 The result in Adobe Experience Platform is that a new batch of data has been created on the `AEP Demo - Recommendations Input` which you can verify by going
-[here](https://platform.adobe.com/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created).
+[here](https://experience.adobe.com/platform/dataset/browse?limit=50&page=1&sortDescending=1&sortField=created).
 
 ![DSW](./images/1ds.png)
 

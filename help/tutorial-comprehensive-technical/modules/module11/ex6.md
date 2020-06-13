@@ -144,7 +144,7 @@ You'll then get a visual confirmation that your activity is now live.
 
 ![RTCDP](./images/veclive.png)
 
-Congratulations, you have now completed Module 11!
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 

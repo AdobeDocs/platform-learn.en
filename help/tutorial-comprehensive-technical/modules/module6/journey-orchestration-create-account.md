@@ -11,7 +11,7 @@ activity:
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 6**, we will take you through the steps to use Journey Orchestration. You'll get access to Journey Orchestration and will be able to configure Events and Journeys that start based on a trigger from an experience event sent to Platform.
+In this module, we will take you through the steps to use Journey Orchestration. You'll get access to Journey Orchestration and will be able to configure Events and Journeys that start based on a trigger from an experience event sent to Platform.
 
 ## Learning Objectives
 
@@ -20,7 +20,7 @@ In **Module 6**, we will take you through the steps to use Journey Orchestration
 
 ## Prerequisites
 
-- Access to [Adobe Experience Platform](https://platform.adobe.com)
+- Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
 - Access to Adobe Campaign Standard
 - Access to Journey Orchestration
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
@@ -28,6 +28,12 @@ In **Module 6**, we will take you through the steps to use Journey Orchestration
 >[!IMPORTANT] 
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
+
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem6.png)
 
 ## Exercises
 
@@ -46,6 +52,10 @@ This will guide you through the configuration of Launch to trigger your event an
 [6.4 How to create your own email in Adobe Campaign Standard](./ex4.md)
 
 In this optional exercise, you'll learn how to create your own message and event structure in Adobe Campaign Standard to use in combination with the events coming from Adobe Experience Platform.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

@@ -55,7 +55,7 @@ After clicking the **Search** button again, you'll see a new experience event po
 
 ![Demo](./images/24.png)
 
-Congratulations, you've successfully finished Module 3 - Real-time Customer Profile!
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 3](./real-time-customer-profile.md)
 

@@ -92,7 +92,7 @@ Enter your credentials.
 
 Click the **Create Account** button. If all goes well, you should receive an email a couple of seconds later.
 
-You've now finished this and this module!
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 6](./journey-orchestration-create-account.md)
 

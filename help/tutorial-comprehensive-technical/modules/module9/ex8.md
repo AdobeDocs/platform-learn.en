@@ -121,7 +121,7 @@ If you see all these calls going out to the DCS Endpoint from GTM, that means th
 
 Now we need to verify whether these calls are successfully received by Platform.
 
-To log in to Platform, go to [https://platform.adobe.com/home](https://platform.adobe.com/home).
+To log in to Platform, go to [https://experience.adobe.com/platform/home](https://experience.adobe.com/platform/home).
 
 Go to **Datasets** and locate your two Datasets. As a reminder, the shared datasets we're using are called:
 
@@ -159,7 +159,7 @@ Also have a look at the **Preview** of Profile Data to retrieve your ingested da
 
 ![Verify Calls](./images/profilepreviewdata.png)
 
-If both of these Datasets have successfully received the data coming from your website, you've finished this module!
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

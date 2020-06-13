@@ -12,7 +12,7 @@ activity:
 >[!IMPORTANT] The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
 >
 
-Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

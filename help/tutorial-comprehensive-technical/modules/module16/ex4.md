@@ -23,7 +23,7 @@ After exercise 16.3, you should have this page open in Adobe Experience Platform
 
 **If you have it open, continue with exercise 16.4.1.**
 
-**If you don't have it open, go to [Adobe Experience Platform](https://platform.adobe.com/home).**
+**If you don't have it open, go to [Adobe Experience Platform](https://experience.adobe.com/platform/home).**
 
 In the left menu, go to Sources. You'll then see the **Sources** homepage. In the **Sources** menu, click on **Databases**.
 

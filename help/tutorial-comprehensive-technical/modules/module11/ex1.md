@@ -11,7 +11,7 @@ activity:
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's segment builder.
 
-The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
+The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 ## Story
 
@@ -62,7 +62,7 @@ So when somebody visits the product page for **Zeppelin Yoga Pant**, I want to b
 
 ## Create the Segment
 
-To create the segment as defined above, log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+To create the segment as defined above, log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

@@ -11,11 +11,11 @@ activity:
 
 So you’ve prepared your data, authored your model and packaged it to test it at scale as a recipe. Now let’s go ahead and train and test the model.
 
-The URL to login to Adobe Experience Platform is: [https://platform.adobe.com](https://platform.adobe.com)
+The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 ## 8.3.1 - Train a Model based on a Recipe
 
-Login to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+Login to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 ![DSW](./images/home.png)
 

@@ -377,7 +377,7 @@ Example:
 As you've learned in this lab, Analysis Workspace stitches data from all channels together to analyze the full customer journey. Also, remember that you can bring in data to the same workspace that is not stitched to the journey. 
 It can be really useful to bring disconnected data into your analysis to give context to the journey. Some examples include things like NPS data, surveys, Facebook Ads events or offline interactions (non identified).
 
-Congratulations, you have finished Module 13!
+Next Step: [Summary & benefits](./summary.md)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 

@@ -15,7 +15,7 @@ You can use FTP or SFTP as part of the dedicated destinations for each of these 
 
 In this module, you'll configure such a destination by making use of an AWS S3 bucket.
 
-Log in to Adobe Experience Platform by going to this URL: [https://platform.adobe.com](https://platform.adobe.com)
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 

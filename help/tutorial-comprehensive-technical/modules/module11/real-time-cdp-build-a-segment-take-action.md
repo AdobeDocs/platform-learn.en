@@ -11,7 +11,7 @@ activity:
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 11**, you'll configure a streaming segment and activate the segment to multiple destinations.
+In this module, you'll configure a streaming segment and activate the segment to multiple destinations.
 
 ## Learning Objectives
 
@@ -22,7 +22,7 @@ In **Module 11**, you'll configure a streaming segment and activate the segment 
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Audience Manager
 - Access to Adobe Target
 - Access to AWS S3
@@ -31,6 +31,12 @@ In **Module 11**, you'll configure a streaming segment and activate the segment 
 >[!IMPORTANT] 
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
+
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem11.png)
 
 ## Exercises
 
@@ -57,6 +63,10 @@ Use the segment you built in Exercise 11.1 and send it to an S3-destination, typ
 [11.6 Take Action: send your segment to Adobe Target](./ex6.md)
 
 Use the segment you built in Exercise 11.1 to configure an Experience Targeting Activity in Adobe Target.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

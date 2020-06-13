@@ -18,7 +18,7 @@ activity:
 
 ## 7.1.1 - Getting familiar with the Adobe Experience Platform UI
 
-Make sure you are logged into the [Adobe Experience Platform UI](https://platform.adobe.com).
+Make sure you are logged into the [Adobe Experience Platform UI](https://experience.adobe.com/platform).
 
 ![platform-login.png](./images/platform-login.png)
 

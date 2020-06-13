@@ -20,7 +20,7 @@ In this exercise, you'll learn how to import 2nd- and 3rd-party data into Inform
 ## Lab Resources
 
 - Informatica: [https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home](https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home)
-- Adobe Experience Platform: [https://platform.adobe.com/](https://platform.adobe.com/)
+- Adobe Experience Platform: [https://experience.adobe.com/platform/](https://experience.adobe.com/platform/)
 
 ## Lab Tasks
 
@@ -484,7 +484,7 @@ Click the **Refresh** button to see updates.
 
 Once your job has finished successfully, your data will be ingested in Adobe Experience Platform.
 
-Go to [Adobe Experience Platform](https://platform.adobe.com/home), to Datasets and enter the search term `etl`. You'll then see these datasets:
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform/home), to Datasets and enter the search term `etl`. You'll then see these datasets:
 
 ![ETL](./images/run9.png)
 
@@ -503,6 +503,8 @@ You can also preview the data that you ingested. You'll also see the output of y
 ![ETL](./images/4run14.png)
 
 Congratulations you have now successfully used Informatica to ingest Profile and Experience Event data into Adobe Experience Platform!
+
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 

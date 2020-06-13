@@ -11,7 +11,7 @@ activity:
 
 **Authors: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-**In Module 7**, you will get a hands-on preview of Adobe Experience Platform Query Service. Query Service lets you perform omnichannel queries across all Adobe Experience Cloud application data, joining and analyzing data across Adobe Campaign, Analytics, Audience Manager, Target, and Advertising Cloud and other customer data loaded/inserted into Adobe Experience Platform.
+In this module, you will get a hands-on preview of Adobe Experience Platform Query Service. Query Service lets you perform omnichannel queries across all Adobe Experience Cloud application data, joining and analyzing data across Adobe Campaign, Analytics, Audience Manager, Target, and Advertising Cloud and other customer data loaded/inserted into Adobe Experience Platform.
 
 Query Service is a serverless tool. It supports SQL queries and connectivity from multiple client applications through its PostgreSQL compatibility.
 We will use data that has been injected into platform using either Web Interaction Data, Call Center Interactions in combination with Customer Loyalty Data uploaded into platform.
@@ -26,7 +26,7 @@ We will use data that has been injected into platform using either Web Interacti
 ## Prerequisites
 
 - Some familiarity with SQL is preferred, but not required
-- Access to Adobe Experience Platform: [https://platform.adobe.com](https://platform.adobe.com)
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Datasets (dataset used during lab, pre-loaded for you)
 - PostgreSQL
 - Tableau or Microsoft Power BI Desktop
@@ -35,6 +35,12 @@ We will use data that has been injected into platform using either Web Interacti
 >[!IMPORTANT] 
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
+
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem7.png)
 
 ## Exercises
 
@@ -57,6 +63,10 @@ In this you will be doing queries, you will learn about the Adobe Defined Functi
 [7.4 Power BI/Tableau](./ex4.md)
 
 In this you will generate a dataset from a query executed in the previous and you will use this dataset in [Power BI](./ex5.md) or [Tableau](./ex6.md) to to Callcenter Interaction Analysis.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >
