@@ -33,6 +33,12 @@ In this module we will refer to the **Offers Decisioning Engine** (or simply **O
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
 
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem14.png)
+
 ## Terminology
 
 To get a better understanding and before you start doing the exercises, we highly recommend you to read the [overview](https://docs.adobe.com/content/help/en/experience-platform/decisioning/home.html) on how the Offer Decisioning Application Service works in Adobe Experience Platform.
