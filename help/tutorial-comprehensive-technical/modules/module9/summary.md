@@ -10,16 +10,17 @@ activity:
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Adobe Experience Platform! 
-In this module, you've learned how to ... . 
+In this module, you've learned how to configure Google Tag Manager to ingest data into Adobe Experience Platform. 
 
 ## Benefits
 
-Let's highlight the benefits of ... :
+Let's highlight the benefits of using Google Tag Manager to ingest data:
 
-- 
+- Adobe Experience Platform Launch is the preferred way of ingesting data into the Adobe ecosystem, but it's not the only way. In this module, you've clearly seen how Google Tag Manager variables can be used by tags to send data towards Adobe Experience Platform.
+- If you've invested in and standardized on the Google ecosystem and are using Google Tag Manager, you can now quite easily implement data collection to Adobe Experience Platform alongside your existing data collection mechanisms.
+- By reusing your existing Google Tag Manager implementation and integrating it into Adobe Experience Platform, your collected data can now power several other activation use cases, and it can also be used by the Customer Journey Analytics application service which provides you with advanced visualization functionality
 
 ## Check this out
-
 
 - AEP Tech Blog: [Streamlining Adobe Audience Manager with Snowflake](https://medium.com/adobetech/streamlining-adobe-audience-manager-with-snowflake-5ff5b484e9c6)
 
