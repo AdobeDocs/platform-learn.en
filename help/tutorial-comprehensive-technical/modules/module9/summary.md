@@ -22,7 +22,7 @@ Let's highlight the benefits of using Google Tag Manager to ingest data:
 
 ## Check this out
 
-- AEP Tech Blog: [Streamlining Adobe Audience Manager with Snowflake](https://medium.com/adobetech/streamlining-adobe-audience-manager-with-snowflake-5ff5b484e9c6)
+- Documentation: [Create a Google Big Query source connector in the UI](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/databases/bigquery.html)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

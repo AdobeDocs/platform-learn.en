@@ -10,13 +10,11 @@ activity:
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Offer Decisioning and Adobe Experience Platform! 
-In this module, you've learned how to ... . 
+In this module, you've learned how to use the Offer Decisioning application service. 
 
 ## Benefits
 
-Let's highlight the benefits of ... :
-
-- 
+Highlights will be mentioned when this exercise is published.
 
 ## Check this out
 
