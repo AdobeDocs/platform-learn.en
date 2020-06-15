@@ -11,7 +11,7 @@ activity:
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In this foundational exercise, the goal is to learn all about data ingestion. You'll learn about data ingestion in Streaming and Batch. You'll implement Streaming Data Ingestion by using Launch, so that the customer behavior on the Hands-On Lab website is streamed to Adobe Experience Platform in real-time. You'll learn about Batch Data Ingestion by using an Adobe Experience Platform Workflow to take a CSV-file, map it against an XDM-schema and then ingest it into Adobe Experience Platform. 
+In this module, the goal is to learn all about data ingestion. You'll learn about data ingestion in Streaming and Batch. You'll implement Streaming Data Ingestion by using Launch, so that the customer behavior on the Hands-On Lab website is streamed to Adobe Experience Platform in real-time. You'll learn about Batch Data Ingestion by using an Adobe Experience Platform Workflow to take a CSV-file, map it against an XDM-schema and then ingest it into Adobe Experience Platform. 
 
 ## Learning Objectives
 
@@ -34,6 +34,12 @@ In this foundational exercise, the goal is to learn all about data ingestion. Yo
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
 
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem2.png)
+
 ## Exercises
 
 [2.1 Explore the website](./ex1.md)
@@ -55,6 +61,10 @@ In this exercise, you'll learn how to use the Adobe Experience Platform extensio
 [2.5 Data Ingestion from Offline Sources](./ex5.md)
 
 In this exercise, you'll go on the website and mobile app and behave like a customer, streaming data to Platform.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

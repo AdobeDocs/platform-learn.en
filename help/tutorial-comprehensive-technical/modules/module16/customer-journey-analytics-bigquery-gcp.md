@@ -11,7 +11,7 @@ activity:
 
 **Authors: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-**In Module 16**, you'll set up your own instance of Google Cloud Platform, load demo data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
+In this module, you'll set up your own instance of Google Cloud Platform, load sample data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
 
 Source connectors in Adobe Experience Platform make the process of getting data into Adobe Experience Platform easy. Google BigQuery is one of the already available connectors. Thanks to Adobe Experience Platform and the BigQuery Source Connector we can now bring Google Analytics data into Analysis Workspace in Customer Journey Analytics. 
 
@@ -36,6 +36,12 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
 
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem16.png)
+
 ## Exercises
 
 [16.1 Create your Google Cloud Platform Account](./ex1.md)
@@ -57,6 +63,10 @@ Learn how to configure the BigQuery source connector in Adobe Experience Platfor
 [16.5 Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md)
 
 Learn how to analyze Google Analytics data in Customer Journey Analytics and combine it with Loyalty data.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

@@ -159,7 +159,7 @@ Also have a look at the **Preview** of Profile Data to retrieve your ingested da
 
 ![Verify Calls](./images/profilepreviewdata.png)
 
-If both of these Datasets have successfully received the data coming from your website, you've finished this module!
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)
 

@@ -11,7 +11,7 @@ activity:
 
 **Authors: [Jo O'Connor](https://www.linkedin.com/in/jcoc17/), [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 8** you'll learn how to create a simple Machine Learning model that generates personalized product recommendations using Data Science Workspace. When customers visit a retail website like Luma and click on a product, they should be presented with personalized product recommendations afterwards.
+In this module, you'll learn how to create a simple Machine Learning model that generates personalized product recommendations using Data Science Workspace. When customers visit a retail website like Luma and click on a product, they should be presented with personalized product recommendations afterwards.
 
 ## Learning Objectives
 
@@ -32,6 +32,12 @@ In **Module 8** you'll learn how to create a simple Machine Learning model that 
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
 
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem8.png)
+
 ## Exercises
 
 [8.1 Data Exploration and Transformation](./ex1.md)
@@ -49,6 +55,10 @@ So you’ve prepared your data, authored your model and packaged it to test it a
 [8.4 Scoring and Consumption of Insights](./ex4.md)
 
 Now that you've experimented with your recommendations model and have determined the optimal run, you can move on to scoring the model to generate product recommendations for customers.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >

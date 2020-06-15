@@ -560,7 +560,7 @@ FYI - You can share this project with colleagues to collaborate or to analyze bu
 
 ![demo](./images/pro100.png)
 
-Congratulations, you've now finished Module 16!
+Next Step: [Summary & benefits](./summary.md)
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 

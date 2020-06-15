@@ -11,7 +11,7 @@ activity:
 
 **Author: [Tina Soni](https://www.linkedin.com/in/tinadsoni/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In **Module 10** you'll learn how to create a  Machine Learning model that predicts a customer's likelihood to churn. 
+In this module, you'll learn how to create a  Machine Learning model that predicts a customer's likelihood to churn. 
 
 ## Learning Objectives
 
@@ -32,6 +32,12 @@ In **Module 10** you'll learn how to create a  Machine Learning model that predi
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
 
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem10.png)
+
 ## Exercises
 
 [10.1 - Introduction to Data Science](./ex1.md)
@@ -49,6 +55,10 @@ In this exercise, a Data Scientist creates the Target variable and create some i
 [10.4 Experimentation - Recipe Building](./ex4.md)
 
 In this exercise, you'll convert the feature engineering and model that you have prepared in the above steps into a recipe.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
 
 >[!NOTE]
 >
