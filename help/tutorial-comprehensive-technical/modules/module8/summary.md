@@ -10,13 +10,16 @@ activity:
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Data Science Workspace and Adobe Experience Platform! 
-In this module, you've learned how to ... . 
+In this module, you've learned how to use Data Science Workspace to read data from Adobe Experience Platform into a data frame in JupyterLab. You've then built a feature pipeline in which you've filtered out the data that was relevant for your model and you've done some visualization of that data. You also created a recipe out of your ML model which could then be reused easily to train and score customers and their behavior. Finally, the output of the model is a list of recommendations for customers, which then became part of their Real-time Customer Profile in Adobe Experience Platform so that the recommendations can be used to personalize the customer experience across online and offline channels. 
 
 ## Benefits
 
-Let's highlight the benefits of ... :
+Let's highlight the benefits of using Data Science Workspace with Adobe Experience Platform :
 
-- 
+- Data scientists today spend a lot of time modeling data from various sources. When asking data scientists about this, they typically reply that 80% of their time is spent on understanding and modeling of data. With Adobe Experience Platform, all data is already modeled against XDM which means that the data scientist will now be able to spend 80% of their time on creating and optimizing the model instead.
+- With Data Science Workspace and Adobe Experience Platform, another problem for data scientists is solved in an elegant way. Today, when a data scientist has built a model that delivers for instance propensity scores, the challenge is to get those propensity scores as fast as possible into the various applications that are used to speak with the customer. That requires a lot of custom workflows and integrations and is often a big hurdle. With Adobe Experience Platform, any output of any model can be written back to the Real-time Customer Profile immediately, from where it can be consumed by any application connected to Adobe Experience Platform. With this, the impact of a model is amplified and guarantees intelligent personalization in an omnichannel world.
+- To accomplish the above points, Data Science Workspace offers data scientists 2 SDKs to read data from Platform and write data back to Platform. 
+- With Adobe Experience Platform, data science becomes a core part of your experience workflow and isn't a separate island in your ecosystem anymore.
 
 ## Check this out
 
