@@ -22,4 +22,8 @@ This video gives an overview of Adobe Experience Platform Web SDK and Edge Netwo
 ## Additional Resources
 
 * [Demo of Adobe Experience Platform Web SDK and Edge Network video](demo-of-web-sdk-and-edge-network.md)
+* [Create a schema, dataset, and streaming source connector for Web SDK data video](create-a-schema-dataset-and-streaming-source-connector-for-web-sdk-data.md)
 * [What is Adobe Experience Platform Web SDK documentation](https://docs.adobe.com/content/help/en/experience-platform/edge/home.html)
+* [Simplifying Customer Workflows with Adobe Experience Platform Web SDK blog post](https://medium.com/adobetech/simplifying-customer-workflows-with-adobe-experience-platform-web-sdk-4e54fe134f4a)
+* [Streamlining Client-Server Integrations with Adobe Experience Platform Experience Edge blog post](https://medium.com/adobetech/streamlining-client-server-integrations-with-adobe-experience-platform-experience-edge-1caaef887172)
+* [Unify Your Adobe Experience Platform Services with Adobe Experience Platform Web SDK blog post](https://medium.com/adobetech/unify-your-adobe-experience-platform-services-with-adobe-experience-platform-web-sdk-75cf6851a9fc)
