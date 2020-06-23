@@ -25,7 +25,7 @@ Let's highlight the benefits of using Customer Journey Analytics together with A
 
 - AEP Help Center: [Source Connectors - Google BigQuery connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/databases/bigquery.html)
 - AEP Tutorials: [Customer Journey Analytics Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/understanding-customer-journey-analytics.html)
-- AEP Help Center: [Customer Journey Analytics - Product Documentation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html )
+- AEP Help Center: [Customer Journey Analytics - Product Documentation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 
