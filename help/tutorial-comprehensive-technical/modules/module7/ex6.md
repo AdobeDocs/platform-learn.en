@@ -51,7 +51,7 @@ To further display the data per **Call Topic**, drag (1) the **Call Topic** dime
 
 ![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
 
-Congratulations! You have finished this module.
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 7](./query-service.md)
 
