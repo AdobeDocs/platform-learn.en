@@ -153,7 +153,7 @@ The three structure components define your header, body and footer of your email
     ![Email Editor 13](images/emaileditor13.png)
 12. Click in the top text box and change the text to
 
-    ```
+    ```text
     Dear,
     Thank you for signing up for.
     ```
@@ -176,7 +176,7 @@ The three structure components define your header, body and footer of your email
 
 Your email template is now ready to be invoked using the event you have specified. As you have seen in the earlier that is exactly what Triggered Journey is doing: taking a Platform event, mapping that to a transactional message event that is coupled to a transactional message template (in our case an email).
 
-You've now finished this and this module!
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 6](./journey-orchestration-create-account.md)
 
