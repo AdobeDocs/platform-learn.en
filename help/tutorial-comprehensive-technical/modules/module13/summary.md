@@ -24,7 +24,8 @@ Let's highlight the benefits of using Customer Journey Analytics together with A
 
 ## Check this out
 
-- AEP Tech Blog: [Adobe Experience Platform Now Offers the Power and Ease of Query Service](https://medium.com/adobetech/adobe-experience-platform-now-offers-the-power-and-ease-of-query-service-8c25ecf8eb1b)
+- AEP Tutorials: [Customer Journey Analytics Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/understanding-customer-journey-analytics.html)
+- AEP Help Center: [Customer Journey Analytics - Product Documentation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
