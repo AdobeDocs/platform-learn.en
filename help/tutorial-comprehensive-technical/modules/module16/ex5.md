@@ -257,7 +257,7 @@ The apply the date range. Remember this step for next exercises.
 
 NOTE. If you just created the **Data connection** and **Data view** you might need to wait a couple of hours. CJA takes some time to import historical data when there is a huge amount of data records. 
 
-Let's drag and drop some dimensions and metrics to analysis the Marketing channels. First use the dimension of **marketingchannel** and drag and drop it to the canvas of the **Freeform table**.
+Let's drag and drop some dimensions and metrics to analysis the Marketing channels. First use the dimension of **marketingchannel** and drag and drop it to the canvas of the **Freeform table**. (Click on **Show All** in case you don't see the metric immediately in the Metrics menu)
 
 ![demo](./images/pro14.png)
 
@@ -285,7 +285,7 @@ You'll end up with a table like this one:
 
 As mentioned above, **Freeform tables** give you the freedom you need to perform deep dive analysis. For instance, you can pick any other Dimension to break down a specific Metric inside the table.
 
-As an example, go to dimensions and open the **landingpage** variable.
+As an example, go to dimensions and open the **landingpage** variable. (Click on **Show All** in case you don't see the dimension immediately in the Dimensions menu)
 
 ![demo](./images/pro17.png)
 
@@ -435,7 +435,7 @@ Resize your Fallout visualization.
 
 Your fallout visualization is now ready.
 
-To start analyzing and documenting the insights, it's always a good idea to a **Text** Visualization: 
+To start analyzing and documenting the insights, it's always a good idea to a **Text** visualization. To add a **Text** visualization, click on the **Graph** icon in the left menu to see all available visualizations. Then drag and drop the **Text** visualization onto the canvas. Resize and move it so that it looks like the below image.
 
 ![demo](./images/pro48.png)
 
@@ -443,7 +443,7 @@ And again, resize it to fit the dashboard:
 
 ![demo](./images/pro49.png)
 
-Fallouts visualizations also allow breakdowns. Use the **device** dimension by opening it and drag and drop some of the values:
+Fallouts visualizations also allow breakdowns. Use the **device** dimension by opening it and drag and drop some of the values on by one onto the visualization:
 
 ![demo](./images/pro50.png)
 
@@ -553,6 +553,9 @@ You have now an advanced flow analysis done in minutes. You can click the differ
 You now have a powerful kit to analyze funnels and explore paths of customer behavior across digital but also, offline touch points.
 
 ## 16.5.4 Share the project
+
+>[!IMPORTANT] The below content is intended as FYI - You do **NOT** have to share your project with anyone else.
+>
 
 FYI - You can share this project with colleagues to collaborate or to analyze business questions together.
 
