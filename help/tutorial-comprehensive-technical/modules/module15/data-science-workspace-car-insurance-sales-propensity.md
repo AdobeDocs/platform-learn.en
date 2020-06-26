@@ -13,7 +13,7 @@ In this module, you'll learn basic Data Science concepts, and also, how to use A
 
 Please watch this video to understand the value, customer journey and configuration process:
 
->[!VIDEO](https://video.tv.adobe.com/v/35112?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35498?quality=12&learn=on)
 
 ## Learning Objectives
 

@@ -63,7 +63,7 @@ Select/unselect **callTopics** to investigate:
 
 ![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
 
-Congratulations! You have finished this module.
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 7](./query-service.md)
 

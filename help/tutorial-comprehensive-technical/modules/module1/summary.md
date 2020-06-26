@@ -14,7 +14,7 @@ In this module, you've learned how to configure Web SDK to collect data from the
 
 ## Benefits
 
-Let's highlight the benefits of ... :
+Let's highlight the benefits of using Web SDK to ingest data into Adobe Experience Platform:
 
 - Web SDK replaces all application-specific legacy JavaScript and as such, simplifies your implementation a lot.
 - Data collection now happens in XDM format immediately, which again simplifies your implementation.

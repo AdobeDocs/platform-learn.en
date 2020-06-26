@@ -26,6 +26,7 @@ Let's highlight the benefits of using Adobe Experience Platform and Query Servic
 
 - AEP Tech Blog: [Adobe Experience Platform Now Offers the Power and Ease of Query Service](https://medium.com/adobetech/adobe-experience-platform-now-offers-the-power-and-ease-of-query-service-8c25ecf8eb1b)
 - AEP Tech Blog: [Accelerating Intelligent Insights with Adobe Experience Platform Data Science Workspace](https://medium.com/adobetech/accelerate-intelligent-insights-with-adobe-experience-platform-data-science-workspace-89538bacbbea)
+- Experience Platform Documentation: [Query Service overview](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)
 
 [Go Back to Module 7](./query-service.md)
 
