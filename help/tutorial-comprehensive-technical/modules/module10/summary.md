@@ -30,6 +30,7 @@ Let's highlight the benefits of using Data Science Workspace with Adobe Experien
 - AEP Tech Blog: [India Hackathon: Streaming Inference For Real-Time Scoring and Anomaly Detection](https://medium.com/adobetech/india-hackathon-streaming-inference-for-real-time-scoring-and-anomaly-detection-c5917b54c75c)
 - AEP Tech Blog: [Understanding Data Science in Adobe Experience Platform](https://medium.com/adobetech/understanding-data-science-in-adobe-experience-platform-5bce5a17b42)
 - AEP Tech Blog: [India Hackathon: Predicting Anonymous Viewer Demographics with Ad Currency Optimization](https://medium.com/adobetech/india-hackathon-predicting-anonymous-viewer-demographics-with-ad-currency-optimization-d1269b8057dd)
+- Experience Platform Documentation: [Data Science Workspace overview](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/home.html)
 
 [Go Back to Module 10](./data-science-workspace-churn-prediction-model.md)
 
