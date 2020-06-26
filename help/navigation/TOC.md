@@ -97,6 +97,7 @@ audience: all
   + [Create Segments](/help/segments/create-segments.md)
   + [Create Dynamic Segments](/help/segments/create-dynamic-segments.md)
   + [Create Segments Across Classes and Include Segment Context](/help/segments/create-segments-across-classes-and-include-segment-context.md)
+  + [Demo of Streaming Segmentation](/help/segments/streaming-segmentation-demo.md)
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](/help/identities/understanding-identity-and-identity-graphs.md)
   + [Label, Ingest, and Verify Identity Data](/help/identities/label-ingest-and-verify-identity-data.md)
