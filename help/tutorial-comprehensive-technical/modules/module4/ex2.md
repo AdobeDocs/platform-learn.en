@@ -198,7 +198,7 @@ Key | Value
 **alexaBrandName** | **luma retail**
 **applicationId** | **--parseAppKey--**
 **emailAddress** | **rmaur@adobe.com**
-**experienceEventPostbackURL** | **<dcsInletId>**
+**experienceEventPostbackURL** | **--dcsInletId--**
 **javascriptKey** | **--parseJavaScriptKey--**
 **ldap** | **rmaur**
 **serverURL** | **https://parseapi.back4app.com**
