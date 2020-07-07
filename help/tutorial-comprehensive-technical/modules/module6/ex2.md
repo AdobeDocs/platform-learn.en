@@ -79,7 +79,7 @@ Click on the name of the event you created to open it.
 
 ![ACOP](./images/eventnode.png)
 
-Navigate to **\<aepTenantId>.accountcreation.email** and click it.
+Navigate to **<aepTenantId>.accountcreation.email** and click it.
 
 ![ACOP](./images/srcemail.png)
 

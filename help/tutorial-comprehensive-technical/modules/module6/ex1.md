@@ -59,11 +59,11 @@ You'll see a **Fields** window popup, in which you need to select the fields tha
 
 ![ACOP](./images/eventfields.png)
 
-In the object **\<aepTenantId>.accountcreation**, please make sure to select the fields **firstName** and **lastName**.
+In the object **<aepTenantId>.accountcreation**, please make sure to select the fields **firstName** and **lastName**.
 
 ![ACOP](./images/eventpayloadac.png)
 
-In the object **\<aepTenantId>.brand**, please make sure to select the fields **brandLogo** en **brandName**.
+In the object **<aepTenantId>.brand**, please make sure to select the fields **brandLogo** en **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
