@@ -35,8 +35,8 @@ How many product views do we have on a daily basis?
 select date_format( timestamp , 'yyyy-MM-dd') AS Day,
        count(*) AS productViews
 from   aep_demo_website_interactions
-where  <aepTenantId>.brand.brandName like 'Luma Telco'
-and    <aepTenantId>.productData.productInteraction = 'productView'
+where  --aepTenantId--.brand.brandName like 'Luma Telco'
+and    --aepTenantId--.productData.productInteraction = 'productView'
 group by Day
 limit 10;
 ```
@@ -49,8 +49,8 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 prod:all=> select date_format( timestamp , 'yyyy-MM-dd') AS Day,
 prod:all->        count(*) AS productViews
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  <aepTenantId>.brand.brandName like 'Luma Telco'
-prod:all-> and    <aepTenantId>.productData.productInteraction = 'productView'
+prod:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+prod:all-> and    --aepTenantId--.productData.productInteraction = 'productView'
 prod:all-> group by Day
 prod:all-> limit 10;
     Day     | productViews 
@@ -66,11 +66,11 @@ What are the top 5 products viewed?
 #### SQL
 
 ```sql
-select <aepTenantId>.productData.productName, count(*)
+select --aepTenantId--.productData.productName, count(*)
 from   aep_demo_website_interactions
-where  <aepTenantId>.brand.brandName like 'Luma Telco'
-and    <aepTenantId>.productData.productInteraction = 'productView'
-group  by <aepTenantId>.productData.productName
+where  --aepTenantId--.brand.brandName like 'Luma Telco'
+and    --aepTenantId--.productData.productInteraction = 'productView'
+group  by --aepTenantId--.productData.productName
 order  by 2 desc
 limit 5;
 ```
@@ -80,11 +80,11 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 **Query Result**
 
 ```text
-prod:all=> select <aepTenantId>.productData.productName, count(*)
+prod:all=> select --aepTenantId--.productData.productName, count(*)
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  <aepTenantId>.brand.brandName like 'Luma Telco'
-prod:all-> and    <aepTenantId>.productData.productInteraction = 'productView'
-prod:all-> group  by <aepTenantId>.productData.productName
+prod:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+prod:all-> and    --aepTenantId--.productData.productInteraction = 'productView'
+prod:all-> group  by --aepTenantId--.productData.productName
 prod:all-> order  by 2 desc
 prod:all-> limit 5;
               productname              | count(1)
@@ -101,11 +101,11 @@ prod:all-> limit 5;
 **SQL**
 
 ```sql
-select <aepTenantId>.productData.productInteraction, count(*)
+select --aepTenantId--.productData.productInteraction, count(*)
 from   aep_demo_website_interactions
-where  <aepTenantId>.brand.brandName like 'Luma Telco'
-and    <aepTenantId>.productData.productInteraction is not null
-group  by <aepTenantId>.productData.productInteraction;
+where  --aepTenantId--.brand.brandName like 'Luma Telco'
+and    --aepTenantId--.productData.productInteraction is not null
+group  by --aepTenantId--.productData.productInteraction;
 ```
 
 Copy the statement above and execute it in your **PSQL command-line interface**.
@@ -113,11 +113,11 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 **Query Result**
 
 ```text
-prod:all=> select <aepTenantId>.productData.productInteraction, count(*)
+prod:all=> select --aepTenantId--.productData.productInteraction, count(*)
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  <aepTenantId>.brand.brandName like 'Luma Telco'
-prod:all-> and    <aepTenantId>.productData.productInteraction is not null
-prod:all-> group  by <aepTenantId>.productData.productInteraction;
+prod:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+prod:all-> and    --aepTenantId--.productData.productInteraction is not null
+prod:all-> group  by --aepTenantId--.productData.productInteraction;
  productinteraction | count(1) 
 --------------------+----------
  productView        |     2138
@@ -131,11 +131,11 @@ prod:all-> group  by <aepTenantId>.productData.productInteraction;
 **SQL**
 
 ```sql
-select distinct <aepTenantId>.identification.ecid
+select distinct --aepTenantId--.identification.ecid
 from   aep_demo_website_interactions
-where  <aepTenantId>.brand.brandName like 'Luma Telco'
+where  --aepTenantId--.brand.brandName like 'Luma Telco'
 and    web.webPageDetails.name = 'Cancel Service'
-group  by <aepTenantId>.identification.ecid
+group  by --aepTenantId--.identification.ecid
 limit 10;
 ```
 
@@ -144,11 +144,11 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 **Query Result**
 
 ```text
-prod:all=> select distinct <aepTenantId>.identification.ecid
+prod:all=> select distinct --aepTenantId--.identification.ecid
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  <aepTenantId>.brand.brandName like 'Luma Telco'
+prod:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
 prod:all-> and    web.webPageDetails.name = 'Cancel Service'
-prod:all-> group  by <aepTenantId>.identification.ecid
+prod:all-> group  by --aepTenantId--.identification.ecid
 prod:all-> limit 10;
                ecid               
 ----------------------------------
@@ -213,19 +213,19 @@ FROM
           AS webPage_4,
         session.depth AS SessionPageDepth
       FROM (
-            select a.<aepTenantId>.identification.ecid as ecid,
+            select a.--aepTenantId--.identification.ecid as ecid,
                    a.timestamp,
                    web.webPageDetails.name as webPage,
                     SESS_TIMEOUT(timestamp, 60 * 30) 
-                       OVER (PARTITION BY a.<aepTenantId>.identification.ecid 
+                       OVER (PARTITION BY a.--aepTenantId--.identification.ecid 
                              ORDER BY timestamp 
                              ROWS BETWEEN UNBOUNDED PRECEDING AND CURRENT ROW) 
                   AS session
             from   aep_demo_website_interactions a
-            where  a.<aepTenantId>.identification.ecid in ( 
-                select b.<aepTenantId>.identification.ecid
+            where  a.--aepTenantId--.identification.ecid in ( 
+                select b.--aepTenantId--.identification.ecid
                 from   aep_demo_website_interactions b
-                where  b.<aepTenantId>.brand.brandName like 'Luma Telco'
+                where  b.--aepTenantId--.brand.brandName like 'Luma Telco'
                 and    b.web.webPageDetails.name = 'Cancel Service'
             )
         )
@@ -267,15 +267,15 @@ To answer this kind of query will we use the **TIME_BETWEEN_NEXT_MATCH()** Adobe
 
 ```sql
 select * from (
-       select <aepTenantId>.identification.ecid as ecid,
+       select --aepTenantId--.identification.ecid as ecid,
               web.webPageDetails.name as webPage,
               TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY <aepTenantId>.identification.ecid
+              OVER(PARTITION BY --aepTenantId--.identification.ecid
                   ORDER BY timestamp
                   ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
               AS contact_callcenter_after_seconds
        from   aep_demo_website_interactions
-       where  <aepTenantId>.brand.brandName like 'Luma Telco'
+       where  --aepTenantId--.brand.brandName like 'Luma Telco'
        and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
 ) r
 where r.webPage = 'Cancel Service'
@@ -315,23 +315,23 @@ Explain that we are joining datasets together, in this case we join our `aep_dem
 
 ```sql
 select r.*,
-       c.<aepTenantId>.callDetails.callFeeling,
-       c.<aepTenantId>.callDetails.callTopic,
-       c.<aepTenantId>.callDetails.contractCancelled
+       c.--aepTenantId--.callDetails.callFeeling,
+       c.--aepTenantId--.callDetails.callTopic,
+       c.--aepTenantId--.callDetails.contractCancelled
 from (
-       select <aepTenantId>.identification.ecid ecid,
+       select --aepTenantId--.identification.ecid ecid,
               web.webPageDetails.name as webPage,
               TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY <aepTenantId>.identification.ecid
+              OVER(PARTITION BY --aepTenantId--.identification.ecid
                   ORDER BY timestamp
                   ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
               AS contact_callcenter_after_seconds
        from   aep_demo_website_interactions
-       where  <aepTenantId>.brand.brandName like 'Luma Telco'
+       where  --aepTenantId--.brand.brandName like 'Luma Telco'
        and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
 ) r
 , aep_demo_call_center_interactions c
-where r.ecid = c.<aepTenantId>.identification.ecid
+where r.ecid = c.--aepTenantId--.identification.ecid
 and r.webPage = 'Cancel Service'
 limit 15;
 ```
@@ -369,27 +369,27 @@ In this query we join loyalty data that we have onboarded in Adobe Experience Pl
 
 ```sql
 select r.*,
-       c.<aepTenantId>.callDetails.callFeeling,
-       c.<aepTenantId>.callDetails.callTopic,
-       l.<aepTenantId>.loyalty.loyaltyStatus,
-       l.<aepTenantId>.identification.crmid
+       c.--aepTenantId--.callDetails.callFeeling,
+       c.--aepTenantId--.callDetails.callTopic,
+       l.--aepTenantId--.loyalty.loyaltyStatus,
+       l.--aepTenantId--.identification.crmid
 from (
-       select <aepTenantId>.identification.ecid ecid,
+       select --aepTenantId--.identification.ecid ecid,
               web.webPageDetails.name as webPage,
               TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-              OVER(PARTITION BY <aepTenantId>.identification.ecid
+              OVER(PARTITION BY --aepTenantId--.identification.ecid
                   ORDER BY timestamp
                   ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
               AS contact_callcenter_after_seconds
        from   aep_demo_website_interactions
-       where  <aepTenantId>.brand.brandName like 'Luma Telco'
+       where  --aepTenantId--.brand.brandName like 'Luma Telco'
        and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
 ) r
 , aep_demo_call_center_interactions c
 , aep_demo_loyalty_data l
-where r.ecid = c.<aepTenantId>.identification.ecid
+where r.ecid = c.--aepTenantId--.identification.ecid
 and r.webPage = 'Cancel Service'
-and l.<aepTenantId>.identification.ecid = r.ecid
+and l.--aepTenantId--.identification.ecid = r.ecid
 limit 15;
 ```
 
@@ -431,32 +431,32 @@ Lets include the geographical info, like longitude, attitude, city, countrycode,
               r.lat as latitude,
               r.lon as longitude,
               r.contact_callcenter_after_seconds as seconds_to_contact_callcenter,
-              c.<aepTenantId>.callDetails.callFeeling,
-              c.<aepTenantId>.callDetails.callTopic,
-              c.<aepTenantId>.callDetails.contractCancelled,
-              l.<aepTenantId>.loyalty.loyaltyStatus,
-              l.<aepTenantId>.identification.crmid
+              c.--aepTenantId--.callDetails.callFeeling,
+              c.--aepTenantId--.callDetails.callTopic,
+              c.--aepTenantId--.callDetails.contractCancelled,
+              l.--aepTenantId--.loyalty.loyaltyStatus,
+              l.--aepTenantId--.identification.crmid
        from (
-              select <aepTenantId>.identification.ecid ecid,
+              select --aepTenantId--.identification.ecid ecid,
                      placeContext.geo._schema.latitude lat,
                      placeContext.geo._schema.longitude lon,
                      placeContext.geo.city,
                      placeContext.geo.countryCode,
                      web.webPageDetails.name as webPage,
                      TIME_BETWEEN_NEXT_MATCH(timestamp, web.webPageDetails.name='Call Start', 'seconds')
-                     OVER(PARTITION BY <aepTenantId>.identification.ecid
+                     OVER(PARTITION BY --aepTenantId--.identification.ecid
                          ORDER BY timestamp
                          ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
                      AS contact_callcenter_after_seconds
               from   aep_demo_website_interactions
-              where  <aepTenantId>.brand.brandName like 'Luma Telco'
+              where  --aepTenantId--.brand.brandName like 'Luma Telco'
               and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
        ) r
        , aep_demo_call_center_interactions c
        , aep_demo_loyalty_data l
-       where r.ecid = c.<aepTenantId>.identification.ecid
+       where r.ecid = c.--aepTenantId--.identification.ecid
        and r.webPage = 'Cancel Service'
-       and l.<aepTenantId>.identification.ecid = r.ecid
+       and l.--aepTenantId--.identification.ecid = r.ecid
        limit 15;
 ```
 
@@ -499,24 +499,24 @@ Copy the following statement to notepad/brackets:
 
 ```sql
 select /* enter your name */
-       e.<aepTenantId>.identification.ecid as ecid,
+       e.--aepTenantId--.identification.ecid as ecid,
        e.placeContext.geo.city as city,
        e.placeContext.geo._schema.latitude latitude,
        e.placeContext.geo._schema.longitude longitude,
        e.placeContext.geo.countryCode as countrycode,
-       c.<aepTenantId>.callDetails.callFeeling as callFeeling,
-       c.<aepTenantId>.callDetails.callTopic as callTopic,
-       c.<aepTenantId>.callDetails.contractCancelled as contractCancelled,
-       l.<aepTenantId>.loyalty.loyaltyStatus as loyaltystatus,
-       l.<aepTenantId>.loyalty.loyaltyPoints as loyaltypoints,
-       l.<aepTenantId>.identification.crmid as crmid
+       c.--aepTenantId--.callDetails.callFeeling as callFeeling,
+       c.--aepTenantId--.callDetails.callTopic as callTopic,
+       c.--aepTenantId--.callDetails.contractCancelled as contractCancelled,
+       l.--aepTenantId--.loyalty.loyaltyStatus as loyaltystatus,
+       l.--aepTenantId--.loyalty.loyaltyPoints as loyaltypoints,
+       l.--aepTenantId--.identification.crmid as crmid
 from   aep_demo_website_interactions e
       ,aep_demo_call_center_interactions c
       ,aep_demo_loyalty_data l
-where  e.<aepTenantId>.brand.brandName like 'Luma Telco'
+where  e.--aepTenantId--.brand.brandName like 'Luma Telco'
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
-and    e.<aepTenantId>.identification.ecid = c.<aepTenantId>.identification.ecid
-and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identification.ecid;
+and    e.--aepTenantId--.identification.ecid = c.--aepTenantId--.identification.ecid
+and    l.--aepTenantId--.identification.ecid = e.--aepTenantId--.identification.ecid;
 ```
 
 And replace 
@@ -533,24 +533,24 @@ Copy your modified statement from **notepad** into the **PSQL command line windo
 
 ```text
 prod:all=> select /* vangeluw */
-prod:all->        e.<aepTenantId>.identification.ecid as ecid,
+prod:all->        e.--aepTenantId--.identification.ecid as ecid,
 prod:all->        e.placeContext.geo.city as city,
 prod:all->        e.placeContext.geo._schema.latitude latitude,
 prod:all->        e.placeContext.geo._schema.longitude longitude,
 prod:all->        e.placeContext.geo.countryCode as countrycode,
-prod:all->        c.<aepTenantId>.callDetails.callFeeling as callFeeling,
-prod:all->        c.<aepTenantId>.callDetails.callTopic as callTopic,
-prod:all->        c.<aepTenantId>.callDetails.contractCancelled as contractCancelled,
-prod:all->        l.<aepTenantId>.loyalty.loyaltyStatus as loyaltystatus,
-prod:all->        l.<aepTenantId>.loyalty.loyaltyPoints as loyaltypoints,
-prod:all->        l.<aepTenantId>.identification.crmid as crmid
+prod:all->        c.--aepTenantId--.callDetails.callFeeling as callFeeling,
+prod:all->        c.--aepTenantId--.callDetails.callTopic as callTopic,
+prod:all->        c.--aepTenantId--.callDetails.contractCancelled as contractCancelled,
+prod:all->        l.--aepTenantId--.loyalty.loyaltyStatus as loyaltystatus,
+prod:all->        l.--aepTenantId--.loyalty.loyaltyPoints as loyaltypoints,
+prod:all->        l.--aepTenantId--.identification.crmid as crmid
 prod:all-> from   aep_demo_website_interactions e
 prod:all->       ,aep_demo_call_center_interactions c
 prod:all->       ,aep_demo_loyalty_data l
-prod:all-> where  e.<aepTenantId>.brand.brandName like 'Luma Telco'
+prod:all-> where  e.--aepTenantId--.brand.brandName like 'Luma Telco'
 prod:all-> and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
-prod:all-> and    e.<aepTenantId>.identification.ecid = c.<aepTenantId>.identification.ecid
-prod:all-> and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identification.ecid;
+prod:all-> and    e.--aepTenantId--.identification.ecid = c.--aepTenantId--.identification.ecid
+prod:all-> and    l.--aepTenantId--.identification.ecid = e.--aepTenantId--.identification.ecid;
                ecid               |   city    |  latitude  | longitude | countrycode | callFeeling | callTopic | contractCancelled | loyaltystatus | loyaltypoints |   crmid   
 ----------------------------------+-----------+------------+-----------+-------------+-------------+-----------+-------------------+---------------+---------------+-----------
  49087868469032502526716380562417 | Namur     | 50.4198861 | 4.9246444 | BE          | neutral     | contract  | no                | Bronze        |         413.0 | 475749237

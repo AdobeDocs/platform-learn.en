@@ -55,7 +55,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select your own **sandbox**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named **Module 2 - Data Ingestion**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -84,7 +84,12 @@ After clicking the **+ Create Schema** button, you'll see an empty, new schema.
 Let's first name your schema.
 
 As the name for our schema, we'll use this:
-**AEP Demo - Website Registrations Schema**
+
+**ldap - AEP Demo - Website Registrations Schema**
+
+Replace **ldap** by your specific ldap. As an example, for ldap **vangeluw**, this should be the name of the schema:
+
+**vangeluw - AEP Demo - Website Registrations Schema**
 
 That should give you something like this:
 
@@ -183,7 +188,12 @@ Instead of reusing an existing Mixin, you'll now create your own Mixin. You can 
 You now need to provide a **Display Name** and **Description** for your new Mixin. 
 
 As the name for our schema, we'll use this:
-**AEP Demo - Profile Identification Mixin**
+
+**ldap - AEP Demo - Profile Identification Mixin**
+
+Replace **ldap** by your specific ldap. As an example, for ldap **vangeluw**, this should be the name of the schema:
+
+**vangeluw - AEP Demo - Profile Identification Mixin**
 
 That should give you something like this:
 
@@ -353,7 +363,7 @@ To do this, let's select the name of your schema.
 
 ![Data Ingestion](./images/schemastructure.png)
 
-In the right tab of your schema, you'll see a **Profile Switcher**, which is currently deactivated.
+In the right tab of your schema, you'll see a **Profile toggle**, which is currently deactivated.
 
 ![Data Ingestion](./images/upswitcher.png)
 
@@ -395,7 +405,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select your own **sandbox**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named **Module 2 - Data Ingestion**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -424,7 +434,11 @@ After clicking the **+ Create Schema** button, you'll see an empty, new schema.
 Let's first name your schema. Please use the following naming for your schema:
 
 As the name for our schema, we'll use this:
-**AEP Demo - Website Interactions Schema**
+**ldap - AEP Demo - Website Interactions Schema**
+
+Replace **ldap** by your specific ldap. As an example, for ldap **vangeluw**, this should be the name of the schema:
+
+**vangeluw - AEP Demo - Website Interactions Schema**
 
 That should give you something like this:
 
@@ -526,8 +540,13 @@ Instead of reusing an existing Mixin, you'll now create your own Mixin. You can 
 
 You now need to provide a **Display Name** and **Description** for your new Mixin. 
 
-As the name for our schema, we'll use this:
-**AEP Demo - EE Identification**
+As the name for our mixin, we'll use this:
+
+**ldap - AEP Demo - EE Identification**
+
+Replace **ldap** by your specific ldap. As an example, for ldap **vangeluw**, this should be the name of the schema:
+
+**vangeluw - AEP Demo - EE Identification**
 
 That should give you something like this:
 
@@ -598,6 +617,10 @@ This is how the ecid-field should look after your initial field configuration:
 
 ![Data Ingestion](./images/ecidfieldee.png)
 
+Scroll down and click **Apply**.
+
+![Data Ingestion](./images/apply.png)
+
 You now have a new field, but this field hasn't been defined as an **Identity**-field yet.
 
 ![Data Ingestion](./images/3fieldsee.png)
@@ -638,7 +661,7 @@ To do this, let's select the name of your schema.
 
 ![Data Ingestion](./images/schemastructureeee.png)
 
-In the right tab of your schema, you'll see a **Profile Switcher**, which is currently deactivated.
+In the right tab of your schema, you'll see a **Profile toggle**, which is currently deactivated.
 
 ![Data Ingestion](./images/upswitcheree.png)
 

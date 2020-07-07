@@ -54,11 +54,7 @@ In this exercise, you'll configure the required XDM schema's to capture profile 
 
 In this exercise, you'll retrieve the required datasets to capture and store profile information and customer behavior.
 
-[2.4 Use Launch and the Adobe Experience Platform Extension](./ex4.md)
-
-In this exercise, you'll learn how to use the Adobe Experience Platform extension in Launch to stream data to Adobe Experience Platform.
-
-[2.5 Data Ingestion from Offline Sources](./ex5.md)
+[2.4 Data Ingestion from Offline Sources](./ex4.md)
 
 In this exercise, you'll go on the website and mobile app and behave like a customer, streaming data to Platform.
 

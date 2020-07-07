@@ -91,30 +91,30 @@ Use the below mapping table for this exercise.
 
 | Source Field        | Target Field |   
 | ----------------- |-------------| 
-| \_id | \_id | 
+| **_id** | _id | 
 | timeStamp | timestamp | 
-| GA\_ID | \<aepTenantId>.identification.gaid | 
-| customerID | \<aepTenantId>.identification.crmId | 
-| Page | \<aepTenantId>.gabqdata.page.pagetitle | 
-| Landing_Page | \<aepTenantId>.gabqdata.page.landingpage | 
-| Exit_Page | \<aepTenantId>.gabqdata.page.exitpage | 
-| Device | \<aepTenantId>.gabqdata.useragent.device | 
-| Browser | \<aepTenantId>.gabqdata.useragent.browser | 
-| MarketingChannel | \<aepTenantId>.gabqdata.traffic.marketingchannel | 
-| TrafficSource | \<aepTenantId>.gabqdata.traffic.trafficsource | 
-| TrafficMedium | \<aepTenantId>.gabqdata.traffic.trafficmedium | 
-| TransactionID | \<aepTenantId>.gabqdata.commerce.transactionid | 
-| Ecommerce\_Action\_Type | \<aepTenantId>.gabqdata.commerce.actiontype | 
-| Entries | \<aepTenantId>.gabqdata.behaviourevents.entries | 
-| Pageviews | \<aepTenantId>.gabqdata.behaviourevents.pageviews | 
-| Exits | \<aepTenantId>.gabqdata.behaviourevents.exits | 
-| Bounces | \<aepTenantId>.gabqdata.behaviourevents.bounces | 
-| Unique\_Purchases | \<aepTenantId>.gabqdata.commerce.commerceevents.purchase | 
-| Product\_Detail\_Views | \<aepTenantId>.gabqdata.commerce.commerceevents.productdetail | 
-| Adds\_To\_Cart | \<aepTenantId>.gabqdata.commerce.commerceevents.addtocart | 
-| Product\_Removes\_From\_Cart | \<aepTenantId>.gabqdata.commerce.commerceevents.removeproduct | 
-| Product\_Checkouts | \<aepTenantId>.gabqdata.commerce.commerceevents.checkout | 
-| Product\_Refunds | \<aepTenantId>.gabqdata.commerce.commerceevents.refund | 
+| GA_ID | --aepTenantId--.identification.gaid | 
+| customerID | --aepTenantId--.identification.crmId | 
+| Page | --aepTenantId--.gabqdata.page.pagetitle | 
+| Landing_Page | --aepTenantId--.gabqdata.page.landingpage | 
+| Exit_Page | --aepTenantId--.gabqdata.page.exitpage | 
+| Device | --aepTenantId--.gabqdata.useragent.device | 
+| Browser | --aepTenantId--.gabqdata.useragent.browser | 
+| MarketingChannel | --aepTenantId--.gabqdata.traffic.marketingchannel | 
+| TrafficSource | --aepTenantId--.gabqdata.traffic.trafficsource | 
+| TrafficMedium | --aepTenantId--.gabqdata.traffic.trafficmedium | 
+| TransactionID | --aepTenantId--.gabqdata.commerce.transactionid | 
+| Ecommerce_Action_Type | --aepTenantId--.gabqdata.commerce.actiontype | 
+| Entries | --aepTenantId--.gabqdata.behaviourevents.entries | 
+| Pageviews | --aepTenantId--.gabqdata.behaviourevents.pageviews | 
+| Exits | --aepTenantId--.gabqdata.behaviourevents.exits | 
+| Bounces | --aepTenantId--.gabqdata.behaviourevents.bounces | 
+| Unique_Purchases | --aepTenantId--.gabqdata.commerce.commerceevents.purchase | 
+| Product_Detail_Views | --aepTenantId--.gabqdata.commerce.commerceevents.productdetail | 
+| Adds_To_Cart | --aepTenantId--.gabqdata.commerce.commerceevents.addtocart | 
+| Product_Removes_From_Cart | --aepTenantId--.gabqdata.commerce.commerceevents.removeproduct | 
+| Product_Checkouts | --aepTenantId--.gabqdata.commerce.commerceevents.checkout | 
+| Product_Refunds | --aepTenantId--.gabqdata.commerce.commerceevents.refund | 
 
 After copying and pasting the above mapping into the Adobe Experience Platform UI, please verify if you don't see any errors due to typos or leading/trailing spaces.
 

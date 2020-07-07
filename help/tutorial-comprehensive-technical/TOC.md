@@ -16,8 +16,7 @@ audience: all
   + [2.1 Explore the website](/help/tutorial-comprehensive-technical/modules/module2/ex1.md)
   + [2.2 Configure Schema's and Set Identifiers](/help/tutorial-comprehensive-technical/modules/module2/ex2.md)
   + [2.3 Configure Datasets](/help/tutorial-comprehensive-technical/modules/module2/ex3.md)
-  + [2.4 Use Launch and the Adobe Experience Platform Extension](/help/tutorial-comprehensive-technical/modules/module2/ex4.md)
-  + [2.5 Data Ingestion from Offline Sources](/help/tutorial-comprehensive-technical/modules/module2/ex5.md)
+  + [2.4 Data Ingestion from Offline Sources](/help/tutorial-comprehensive-technical/modules/module2/ex4.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module2/summary.md)
 + 3 - Real-time Customer Profile {#module3}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module3/real-time-customer-profile.md)
