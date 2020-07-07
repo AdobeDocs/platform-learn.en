@@ -79,7 +79,7 @@ Click on the name of the event you created to open it.
 
 ![ACOP](./images/eventnode.png)
 
-Navigate to **\<aepTenantId>.accountcreation.email** and click it.
+Navigate to **--aepTenantId--.accountcreation.email** and click it.
 
 ![ACOP](./images/srcemail.png)
 
@@ -91,7 +91,7 @@ Click on the **Edit** icon.
 
 ![ACOP](./images/msgbrandlogo.png)
 
-Navigate to `<aepTenantId>.brand.brandLogo` and click it.
+Navigate to `--aepTenantId--.brand.brandLogo` and click it.
 
 ![ACOP](./images/srclogo.png)
 
@@ -103,7 +103,7 @@ Click on the **Edit** icon.
 
 ![ACOP](./images/msgbrandname.png)
 
-Navigate to `<aepTenantId>.brand.brandName` and click it.
+Navigate to `--aepTenantId--.brand.brandName` and click it.
 
 ![ACOP](./images/srcbrandname.png)
 
@@ -115,7 +115,7 @@ Click on the **Edit** icon.
 
 ![ACOP](./images/msgfn.png)
 
-Navigate to `<aepTenantId>.accountcreation.firstName` and click it.
+Navigate to `--aepTenantId--.accountcreation.firstName` and click it.
 
 ![ACOP](./images/srcfn.png)
 
@@ -127,7 +127,7 @@ Click on the **Edit** icon.
 
 ![ACOP](./images/msgln.png)
 
-Navigate to `<aepTenantId>.accountcreation.lastName` and click it.
+Navigate to `--aepTenantId--.accountcreation.lastName` and click it.
 
 ![ACOP](./images/srcln.png)
 

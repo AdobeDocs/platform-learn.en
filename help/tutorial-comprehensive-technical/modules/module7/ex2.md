@@ -75,7 +75,7 @@ Copy the statement below and paste it at the **prod:all >** prompt in your **PSQ
 ```sql
 select placecontext.geo
 from   aep_demo_website_interactions
-where  <aepTenantId>.productData.productInteraction = 'productView'
+where  --aepTenantId--.productData.productInteraction = 'productView'
 limit 1;
 ```
 
@@ -84,7 +84,7 @@ In your query result, you will notice that columns in the Experience Data Model 
 ```text
 prod:all=> select placecontext.geo
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  <aepTenantId>.productData.productInteraction = 'productView'
+prod:all-> where  --aepTenantId--.productData.productInteraction = 'productView'
 prod:all-> limit 1;
                  geo                 
 -------------------------------------
@@ -104,7 +104,7 @@ select placecontext.geo._schema.longitude
       ,placecontext.geo.city
       ,placecontext.geo.countryCode
 from   aep_demo_website_interactions
-where  <aepTenantId>.productData.productInteraction = 'productView'
+where  --aepTenantId--.productData.productInteraction = 'productView'
 limit 1;
 ```
 
@@ -117,7 +117,7 @@ prod:all->       ,placecontext.geo._schema.latitude
 prod:all->       ,placecontext.geo.city
 prod:all->       ,placecontext.geo.countryCode
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  <aepTenantId>.productData.productInteraction = 'productView'
+prod:all-> where  --aepTenantId--.productData.productInteraction = 'productView'
 prod:all-> limit 1;
  longitude |  latitude  | city  | countrycode 
 -----------+------------+-------+-------------
@@ -144,7 +144,7 @@ Copy the following statement to notepad or brackets:
 ```sql
 select your_attribute_path_here
 from   aep_demo_website_interactions
-where  <aepTenantId>.productData.productInteraction = 'productView'
+where  --aepTenantId--.productData.productInteraction = 'productView'
 limit 1;
 ```
 
@@ -167,7 +167,7 @@ The result should look like:
 ```text
 prod:all=> select placeContext.geo._schema.longitude
 prod:all-> from   aep_demo_website_interactions
-prod:all-> where  <aepTenantId>.productData.productInteraction = 'productView'
+prod:all-> where  --aepTenantId--.productData.productInteraction = 'productView'
 prod:all-> limit 1;
  longitude
 -----------

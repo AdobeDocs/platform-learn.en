@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Module 13: Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
+# 13. Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 
 **Author: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 

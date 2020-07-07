@@ -1,94 +1,300 @@
 ---
-title: Foundation - Data Ingestion - Use Launch and the Adobe Experience Platform Extension
-description: Foundation - Data Ingestion - Use Launch and the Adobe Experience Platform Extension
+title: Foundation - Data Ingestion - Data Ingestion from Offline Sources
+description: Foundation - Data Ingestion - Data Ingestion from Offline Sources
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 2.4 Use Launch and the Adobe Experience Platform Extension
+# 2.4: Data Ingestion from Offline Sources
 
-In this exercise, you'll use an existing Launch property and update 1 Launch Rule to capture customer behavior and send it to Adobe Experience Platform using the new Adobe Experience Platform extension.
+In this exercise, the goal is to onboard external data like CRM Data in Platform.
 
-The URL to login to Launch is: [https://launch.adobe.com](https://launch.adobe.com)
+## Learning Objectives
+
+- Learn how to generate test data
+- Learn how to ingest CSV
+- Learn how to use the web UI for data ingestion through Workflows
+- Understand the data governance features of Experience Platform
+
+## Resources
+
+- Mockaroo UI: [https://www.mockaroo.com/](https://www.mockaroo.com/)
+- Experience Platform UI: [https://experience.adobe.com/platform/](https://experience.adobe.com/platform/)
+
+## Tasks
+
+- Create a CSV file with demo date. Ingest the CSV file in the Experience Platform UI by making use of the available workflows.
+- Understand data governance options in Experience Platform UI
+
+## 2.4.1 - Create your CRM Dataset through a data generator tool
+
+For this you need 1000 sample lines of CRM Data.
+
+Open the Mockaroo Template by going to [https://www.mockaroo.com/12674210](https://www.mockaroo.com/12674210).
+
+![Data Ingestion](./images/mockaroo.png)
+
+On the template, you'll notice the following fields:
+
+- id
+- first_name
+- last_name
+- email
+- gender
+- birthDate
+- home_latitude
+- home_longitude
+- country_code
+- city
+- country
+
+All these fields have been defined to produce data that is compatible with Platform. 
+
+![Data Ingestion](./images/dd.png)
+
+To generate your CSV-file, click the **Download Data** button which will give you a CSV-file with 1000 lines of demo-data. 
+
+Open your CSV-file in Microsoft Excel to visualize its contents.
+
+![Data Ingestion](./images/excel.png)
+
+With your CSV-file ready, you can proceed with mapping it against XDM.
+
+### 2.4.2 - Verify the CRM Onboarding Dataset in Adobe Experience Platform
+
+Open [Adobe Experience Platform
+](https://experience.adobe.com/platform) and go to **Datasets**. 
+
+Before you continue, make sure you are in the **PRODUCTION Prod**-environment in the blue line on top of your screen.
+
+We're going to use a shared dataset based in this enablement. The shared dataset has been created already and is called **AEP Demo - CRM Onboarding**.
+
+![Data Ingestion](./images/emeacrm.png)
+
+Open the dataset **AEP Demo - CRM Onboarding**.
+
+![Data Ingestion](./images/emeacrmoverview.png)
+
+On the overview screen, you can see 3 main pieces of information.
+
+![Data Ingestion](./images/dashboard.png)
+
+First of all, the Dataset Activity dashboard shows the total number of CRM records in the dataset and the ingested batches and their status
+
+![Data Ingestion](./images/batchids.png)
+
+Second, by scrolling down on the page you can check when batches of data were ingested, how many records were onboarded and also, whether or not the batch was successfully onboarded. The **Batch ID** is the identifier for a specific batch job, and the **Batch ID** is important as it can be used for troubleshooting why a specific batch was not successfully onboarded. More on that in Enablement Module 2.
+
+![Data Ingestion](./images/datasetsettings.png)
+
+Lastly, the Dataset Info tab shows important information like the Dataset ID (again, important from a troubleshooting perspective), the Dataset's Name and whether the dataset was enabled for Profile and Streaming Ingestion. 
+
+![Data Ingestion](./images/ds_ups_link.png)
+
+Enabling a dataset for Streaming Ingestion can currently only be done through the APIs. 
+
+The most important setting here is the link between the dataset and the Schema. The Schema defines what data can be ingested and how that data should look like. 
+
+In this case, we're using the **AEP Demo - CRM Onboarding Schema**, which is mapped against the class of **Profile** and has implemented extensions, also called mixins. 
+
+![Data Ingestion](./images/ds_schemalink.png)
+
+By clicking on the name of the schema, you're taken to the Schema overview were you can see all the fields that have been activated for this schema.
+
+![Data Ingestion](./images/schemads.png)
+
+Every schema needs to have a custom, primary descriptor defined. In the case of our CRM dataset, the schema has defined that the field **email** should be the primary identifier. If you want to create a schema and link it to the Real-time Customer Profile, you need to define a custom Mixin that refers to your primary descriptor.
+
+![Data Ingestion](./images/schema_descriptor.png)
+
+In the above screenshot, you can see that our descriptor is located in **--aepTenantId--.identification.emailId**, which is set as the Primary Identifier, linked to the namespace of **email**.
+
+Every schema and as such, every dataset that should be used in the Real-time Customer Profile should have 1 Primary identifier. This Primary Identifier is the identifier user by the brand for a customer in that dataset. In the case of a CRM dataset it might be the email-address or the CRM ID, in the case of a Call Center dataset it might be the mobile number of a customer.
+
+It is best practice to create a separate, specific schema for every dataset and to set the descriptor for every dataset specifically to match how the current solutions used by the brand operate.
+
+### 2.4.3 - Using a workflow to map a CSV file to an XDM Schema
+
+The goal of this is to onboard CRM data in Platform. All the data that is ingested in Platform should be mapped against the specific XDM Schema. What you currently have is a CSV dataset with 1000 lines on the one side, and a dataset that is linked to a schema on the other side. To load that CSV file in that dataset, a mapping needs to take place. To facilitate this mapping exercise, we have **Workflows** available in Platform.
+
+![Data Ingestion](./images/workflows.png)
+
+The workflow that we'll use here, is the workflow named **Map CSV to XDM Schema** in the Data Ingestion menu.
+
+Click the **Map CSV to XDM Schema** button.
+
+![Data Ingestion](./images/mapcsvxdm.png)
+
+Click **Launch** to start the process.
+
+![Data Ingestion](./images/launchprocess.png)
+
+Drag & Drop your CSV-file or click **Browse** and navigate on your computer to your desktop and select your CSV-file.
+
+![Data Ingestion](./images/dragdrop.png)
+
+After selecting your CSV-file it will upload immediately and you will see a preview of your file within seconds.
+
+![Data Ingestion](./images/previewcsv.png)
+
+Click **Next** to go to the next step. It can take a few seconds while the file is processed completely.
+
+![Data Ingestion](./images/next.png)
+
+On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select the **AEP Demo - CRM Onboarding**-dataset as indicated below.
+
+![Data Ingestion](./images/datasetselection.png)
+
+Click **Next** to go to the next step.
+
+![Data Ingestion](./images/next.png)
+
+It's now time to map our CSV Column Headers with an XDM-property in our **AEP Demo - CRM Onboarding Schema**.
+Platform has already done some guessing for us, by trying to link the Source Attributes with the Target Schema Fields.
+
+![Data Ingestion](./images/mapschema.png)
+
+First of all, we need to add the required mapping for the descriptor field. The descriptor field is a required field in this workflow and expects you to indicate what the main identifier is of the file you're uploading. 
+
+Selecting the descriptor is actually the most important thing: you'll be defining the custom, brand-specific, primary identifier. Within Platform-context, we refer to this custom, brand-specific, primary identifier as the descriptor. The descriptor is a requirement for this data to be onboarded. Without the presence of the descriptor, the ingestion of this CSV-file will fail.
+Our descriptor for the **AEP Demo - CRM Onboarding**-dataset is the **email** as it's the unique identifier for our dataset.
+In our case, based on the selection of the dataset and the schema that is linked to the dataset, the required Target Schema Field in XDM is **--aepTenantId--.identification.emailId**. You need to map the **email**-field from your CSV file as the source attribute for this required Target Schema Field.
+
+To do this, click the **Add new mapping** button.
+
+![Data Ingestion](./images/reqmapping.png)
+
+In the Source Field, click the **arrow** icon.
+
+![Data Ingestion](./images/emptysource.png)
+
+In the popup, select the field **email**.
+
+![Data Ingestion](./images/emptysourcepopup.png)
+
+You'll then see this. Click the **schema** icon.
+
+![Data Ingestion](./images/emptytarget.png)
+
+In the popup, select the field **--aepTenantId--.identification.emailId**.
+
+![Data Ingestion](./images/emptytargetpopup.png)
+
+The result should look like this:
+
+![Data Ingestion](./images/filledsource.png)
+
+For the Schema Mappings, Platform has tried to link fields together already. However, not all proposals of mapping are correct.
+
+![Data Ingestion](./images/schemamap.png)
+
+For the Source Attribute **email**, the Target Schema Field should be **personalEmail.address**. You can either enter **personalEmail.address** in the field, or you can click the icon to visually locate the correct property in the **AEP Demo - CRM Onboarding Schema**.
+
+![Data Ingestion](./images/schema_icon.png)
+
+![Data Ingestion](./images/schema_viz.png)
+
+You also need to update 2 fields: **home_latitude** and **home_longitude** haven't been filled out by the Mapper tool.
+
+Locate the **home_latitude**-line.
+
+![Data Ingestion](./images/newmapfield.png)
+
+Click the **schema** icon:
  
-## Story
+![Data Ingestion](./images/schema_icon.png)
 
-After defining what the answer to the questions **Who is this customer?** and **What does this customer do?** should look like and creating a bucket to hold the data as answers, you should make sure that that data can be sent somewhere in real-time so that it can be consumed in real-time by Adobe Experience Platform. 
-To send data to Adobe Experience Platform, you'll use Launch.
+Locate the property **homeAddress._schema.latitude** by making use of the visual mapping tool.
 
-## 2.4.1 - Find your Launch Property
+![Data Ingestion](./images/schema_lat.png)
 
-Log in to Launch by going to this URL: [https://launch.adobe.com](https://launch.adobe.com)
+Click **Select** to confirm your choice. You should then see this:
 
-![Data Ingestion](./images/launchhome.png)
+![Data Ingestion](./images/schema_lat_result.png)
 
-In the list of Launch Properties, you'll see a Launch property that is named **AEP Launch Module 1**.
+Repeat the process for the Source Field **home_longitude**, linking it to the Target Field of **homeAddress._schema.longitude** so that you have this as a result:
+ 
+![Data Ingestion](./images/schema_long_result.png)
 
-Locate that Launch Property and click it to open it. After opening it, you'll see this:
+And this should be the overall result of the mapping exercise:
 
-![Data Ingestion](./images/launchprop.png)
+![Data Ingestion](./images/overall.png)
 
-## 2.4.2 - Explore the Adobe Experience Platform Extension for Launch
+Click **Next** to go to the next step.
 
-From the Launch menu, click on **Extensions**. You'll see these 4 Extensions already configured. Let's have a quick look at the **Adobe Experience Platform**-extension.
+![Data Ingestion](./images/next.png)
 
-![Data Ingestion](./images/launchext.png)
+On the next screen you'll see an overview of what you've done and you can start the ingestion. 
 
-The goal of this is not to fully configure a Launch property, instead the goal is to zoom in on what needs to happen in Launch to easily ingest data into Adobe Experience Platform. Several extensions, data elements and rules are already prebuilt into your Launch property.
+![Data Ingestion](./images/mapoverview.png)
 
-Click the **Configure** button on the Adobe Experience Platform - extension to open it.
+Click the **Ingest** button.
 
-![Data Ingestion](./images/launchprope.png)
+![Data Ingestion](./images/ingest.png)
 
-What you see here is the DCS Streaming Endpoint. The DCS Streaming Endpoint is a **door** on the Adobe Pipeline. The Adobe Pipeline is built on Apache Kafka. With this Launch extension, data will be sent directly from the website onto the Adobe Pipeline in real-time.
+Ingestion starts and will be running for a number of seconds/minutes (depending on file-size).
 
-This DCS Streaming Endpoint expects data to be modeled in the XDM Standard. Let's now have a look at how you can use Launch to map client-side data elements to an XDM-Schema, by making use of a rule.
+![Data Ingestion](./images/ingest_running.png)
 
-## 2.4.3 - View Rule: All General Pages
+After a couple of minutes, the file will be successfully ingested.
 
-In the Launch Menu, click on **Rules**.
+![Data Ingestion](./images/success.png)
 
-In the **Rules** - screen, you'll find several already partially configured Launch Rules.
+Click the **Finish** button to finish the workflow.
 
-![Data Ingestion](./images/rulesov.png)
+![Data Ingestion](./images/finish.png)
 
-Open the **All General Pages**-rule that sends a beacon to Adobe Experience Platform.
+After clicking **Finish**, you're taken to your dataset.
 
-Click the **All General Pages** - rule to open it.
+![Data Ingestion](./images/ingestdataset.png)
 
-![Data Ingestion](./images/pppre.png)
+On the dataset, you'll see a Batch ID that was ingested just now, with 1000 records ingested and a status of **Success**.
 
-As you can see, the Event and Condition to trigger the rule are already defined, and also 3 actions.
+![Data Ingestion](./images/batchsuccess.png)
 
-Open the **Action** named **Adobe Experience Platform - Send Beacon**.
+Click on the **Preview Dataset**- button to get a quick view of a small sample of the dataset to ensure that the loaded data is correct.
 
-You'll then see this:
+![Data Ingestion](./images/preview.png)
 
-![Launch Setup](./images/beaconconfig.png)
+![Data Ingestion](./images/previewdata.png)
 
-You can see that the dataset that is selected here is `AEP Demo - Website Interactions`, similar to the one you created in the previous exercise.
+Once data is loaded, we can define the correct data governance approach for our dataset.
+   
+### 2.5.4 - Adding data governance to your dataset 
 
-You can also see the Schema Mapping. In Schema Mapping, these fields have been connected to each other. The **Source Value** refers to a Data Element in Launch, while the **Target Value** refers to an XDM field, just like the fields you defined in the previous exercises.
+![Data Ingestion](./images/ingestdataset.png)
 
-| Source Value                 | Target Schema Field               |
-|:-------------------------------------------| :------------------ |
-|%pageHitId%|_id| 
-|%pageName%|web.webPageDetails.name|
-|%pageTimeStamp%|timestamp|
-|%return1%|web.webPageDetails.pageViews.value|
-|%pageUserAgent%|environment.browserDetails.userAgent|
-|%customerLanguage%|environment.browserDetails.acceptLanguage|
-|%customerECID%|\<aepTenantId>.identification.ecid|
+Now that our customer data is ingested, we want to make sure that this dataset is properly governed for usage and export control. Click on the **Data Governance** tab and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
-![Upgrade Launch](./images/appp_ok.png)
+You can find more info on the different labels and how they will be enforced in the future through the policy framework on this link: [https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html) 
+ 
+![Data Ingestion](./images/dsgovernance.png)
 
-Click **Cancel** to leave this configuration without changing it.
+Let's restrict identity data for the entire dataset. Hover over your dataset name, and click the Pencil icon to edit the settings. 
 
-This gives you an idea on how data is collected from a website and ingested into Adobe Experience Platform, in the XDM-language.
+![Data Ingestion](./images/pencil.png)
 
-Next Step: [2.5 - Data Ingestion from Offline Sources](./ex5.md)
+Go to **Identity Data** and you'll see that the **I2** option is checked - this will assume that all pieces of information in this dataset are _at least_ indirectly identifiable to the person.
+
+![Data Ingestion](./images/identity.png)
+
+Click **Save Changes** and observe that **I2** is now set for all data fields in the dataset. 
+
+You can also set these flags for individual data fields - for example, the **firstName** field is likely to be classified as an **I1** level for directly identifiable information.
+
+Select the field **firstName** by checking the checkbox and click on **Edit Governance Labels** in the upper right corner of your screen.
+
+![Data Ingestion](./images/editfirstname.png)
+
+Go to **Identity Data** and you'll see that the **I2** option is already checked (inherited from the dataset). The field firstName also has a field-specific configuration and is set as **I1 - Directly Identifiable Data**.
+
+![Data Ingestion](./images/fndii.png)
+
+With this, you've now successfully ingested and classified CRM Data in Adobe Experience Platform.
+
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 2](./data-ingestion.md)
 

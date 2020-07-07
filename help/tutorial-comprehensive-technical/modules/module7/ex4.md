@@ -27,24 +27,24 @@ In the previous you've replaced **enter your name** with your own ldap before ex
 
 ```sql
 select /* enter your name */
-       e.<aepTenantId>.identification.ecid as ecid,
+       e.--aepTenantId--.identification.ecid as ecid,
        e.placeContext.geo.city as city,
        e.placeContext.geo._schema.latitude latitude,
        e.placeContext.geo._schema.longitude longitude,
        e.placeContext.geo.countryCode as countrycode,
-       c.<aepTenantId>.callDetails.callFeeling as callFeeling,
-       c.<aepTenantId>.callDetails.callTopic as callTopic,
-       c.<aepTenantId>.callDetails.contractCancelled as contractCancelled,
-       l.<aepTenantId>.loyalty.loyaltyStatus as loyaltystatus,
-       l.<aepTenantId>.loyalty.loyaltyPoints as loyaltypoints,
-       l.<aepTenantId>.identification.crmid as crmid
+       c.--aepTenantId--.callDetails.callFeeling as callFeeling,
+       c.--aepTenantId--.callDetails.callTopic as callTopic,
+       c.--aepTenantId--.callDetails.contractCancelled as contractCancelled,
+       l.--aepTenantId--.loyalty.loyaltyStatus as loyaltystatus,
+       l.--aepTenantId--.loyalty.loyaltyPoints as loyaltypoints,
+       l.--aepTenantId--.identification.crmid as crmid
 from   aep_demo_website_interactions e
       ,aep_demo_call_center_interactions c
       ,aep_demo_loyalty_data l
-where  e.<aepTenantId>.brand.brandName like 'Luma Telco'
+where  e.--aepTenantId--.brand.brandName like 'Luma Telco'
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
-and    e.<aepTenantId>.identification.ecid = c.<aepTenantId>.identification.ecid
-and    l.<aepTenantId>.identification.ecid = e.<aepTenantId>.identification.ecid;
+and    e.--aepTenantId--.identification.ecid = c.--aepTenantId--.identification.ecid
+and    l.--aepTenantId--.identification.ecid = e.--aepTenantId--.identification.ecid;
 ```
 
 Navigate to the Adobe Experience Platform UI - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
