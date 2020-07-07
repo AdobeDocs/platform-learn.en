@@ -109,7 +109,7 @@ Every schema needs to have a custom, primary descriptor defined. In the case of 
 
 ![Data Ingestion](./images/schema_descriptor.png)
 
-In the above screenshot, you can see that our descriptor is located in **<aepTenantId>.identification.emailId**, which is set as the Primary Identifier, linked to the namespace of **email**.
+In the above screenshot, you can see that our descriptor is located in **--aepTenantId--.identification.emailId**, which is set as the Primary Identifier, linked to the namespace of **email**.
 
 Every schema and as such, every dataset that should be used in the Real-time Customer Profile should have 1 Primary identifier. This Primary Identifier is the identifier user by the brand for a customer in that dataset. In the case of a CRM dataset it might be the email-address or the CRM ID, in the case of a Call Center dataset it might be the mobile number of a customer.
 
@@ -160,7 +160,7 @@ First of all, we need to add the required mapping for the descriptor field. The 
 
 Selecting the descriptor is actually the most important thing: you'll be defining the custom, brand-specific, primary identifier. Within Platform-context, we refer to this custom, brand-specific, primary identifier as the descriptor. The descriptor is a requirement for this data to be onboarded. Without the presence of the descriptor, the ingestion of this CSV-file will fail.
 Our descriptor for the **AEP Demo - CRM Onboarding**-dataset is the **email** as it's the unique identifier for our dataset.
-In our case, based on the selection of the dataset and the schema that is linked to the dataset, the required Target Schema Field in XDM is **<aepTenantId>.identification.emailId**. You need to map the **email**-field from your CSV file as the source attribute for this required Target Schema Field.
+In our case, based on the selection of the dataset and the schema that is linked to the dataset, the required Target Schema Field in XDM is **--aepTenantId--.identification.emailId**. You need to map the **email**-field from your CSV file as the source attribute for this required Target Schema Field.
 
 To do this, click the **Add new mapping** button.
 
@@ -178,7 +178,7 @@ You'll then see this. Click the **schema** icon.
 
 ![Data Ingestion](./images/emptytarget.png)
 
-In the popup, select the field **<aepTenantId>.identification.emailId**.
+In the popup, select the field **--aepTenantId--.identification.emailId**.
 
 ![Data Ingestion](./images/emptytargetpopup.png)
 

@@ -449,11 +449,11 @@ Map the Output to the Schema attributes as per below:
 | Field                                    | Element Name                                                 |
 | :---                                      | :---                                                   |
 | m_timestamp | timestamp                                              |
-| m_product   | <aepTenantId>.etl_offline_orders.product_sku   |
-| m_price     | <aepTenantId>.etl_offline_orders.product_price |
-| m_currency  | <aepTenantId>.etl_offline_orders.currency      |
-| email            | <aepTenantId>.identification.emailId                                      |
-| points           | <aepTenantId>.etl_loyalty.points              |
+| m_product   | --aepTenantId--.etl_offline_orders.product_sku   |
+| m_price     | --aepTenantId--.etl_offline_orders.product_price |
+| m_currency  | --aepTenantId--.etl_offline_orders.currency      |
+| email            | --aepTenantId--.identification.emailId                                      |
+| points           | --aepTenantId--.etl_loyalty.points              |
 | hitID                                     | _id                                                    |
 
 Your Field Mapping should look like this (don't forget about the mapping for m_email).

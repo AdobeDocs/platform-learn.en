@@ -196,10 +196,10 @@ Continue in the **AEP** definition screen
 Key | Value
 ---------|----------
 **alexaBrandName** | **luma retail**
-**applicationId** | **<b4aAppId>**
+**applicationId** | **--parseAppKey--**
 **emailAddress** | **rmaur@adobe.com**
 **experienceEventPostbackURL** | **<dcsInletId>**
-**javascriptKey** | **<b4aJsKey>**
+**javascriptKey** | **--parseJavaScriptKey--**
 **ldap** | **rmaur**
 **serverURL** | **https://parseapi.back4app.com**
     

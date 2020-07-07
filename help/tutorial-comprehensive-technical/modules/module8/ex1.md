@@ -132,11 +132,11 @@ import pandas as pd
 inputDataset="5ea04d5b5c640f18a85a7b6b" # AEP Demo - Website Interactions Dataset
 outputDataset="5ea04d5b7f917418a8b7994c" # Recommendations Input Dataset
 
-tenant_id = "<aepTenantId>"
-item_id = "<aepTenantId>.productData.productName"
-interactionType = "<aepTenantId>.productData.productInteraction"
-user_id = "<aepTenantId>.identification.ecid"
-brand_name = "<aepTenantId>.brand.brandName"
+tenant_id = "--aepTenantId--"
+item_id = "--aepTenantId--.productData.productName"
+interactionType = "--aepTenantId--.productData.productInteraction"
+user_id = "--aepTenantId--.identification.ecid"
+brand_name = "--aepTenantId--.brand.brandName"
 timestamp = "timestamp"
 
 client_context = PLATFORM_SDK_CLIENT_CONTEXT
