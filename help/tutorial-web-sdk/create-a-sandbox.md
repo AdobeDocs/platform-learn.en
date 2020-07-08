@@ -165,13 +165,13 @@ To give yourself access to your newly created sandbox, please perform the follow
 
 6. Going down the list of profile options in the left rail, use the **[!UICONTROL + Add All]** option in each to add all of the available profile options to your profile. Do this for all profile options *EXCEPT* for Sandbox Administration. As you do so, take note of what you are enabling. Many of them will be new terms or things you've only heard about, but you will be using almost all of them in the coming exercises:
 
-   ![alt_text](assets/image016.png)
+   ![alt_text](assets/image016.jpg)
 
    >[!NOTE] We're not having you add Sandbox Administration items because we need to keep everyone's sandbox as independent as possible. This will prevent things like accidentally deleting, viewing, or modifying anyone else's sandbox.
 
 7. Once all the options for all of the profiles, except for the Sandbox administration items, have been added to your profile, click **[!UICONTROL Save.]** The profile will then be saved, and you will be redirected to the profile screen. Assuming you gave yourself all the correct permissions, your profile should look similar to this:
 
-   ![alt_text](assets/image017.png)
+   ![alt_text](assets/image017.jpg)
 
 8. Click on the **[!UICONTROL Users]** tab and click the **[!UICONTROL Add User]** button. 
 
@@ -196,7 +196,3 @@ To give yourself access to your newly created sandbox, please perform the follow
     ![alt_text](assets/image021.png)
 
 14. Once you have a sandbox created and have verified that you have access to it and all of the services, tools, and configurations, you've completed this exercise and given yourself access to Adobe Experience Platform!
-
-**Original Exercise Creators:**
-
-Deepak Ranjan Kar and David Woolsey
