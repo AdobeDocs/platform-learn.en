@@ -161,7 +161,10 @@ Click **Show** to see your Secret access key:
 
 ![ETL](./images/cred1.png)
 
->[!IMPORTANT] Store your credentials in a text-file in your computer.
+>[!IMPORTANT]
+>
+>Store your credentials in a text-file in your computer.
+>
 > - Access key ID: ...
 > - Secret access key: ...
 >
