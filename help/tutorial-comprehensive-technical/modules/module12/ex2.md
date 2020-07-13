@@ -114,7 +114,9 @@ According to the Weather API Documentation, we need to send a parameter `q=City`
 
 In order to match the expected API Request, configure your FieldGroup as follows:
 
->[!IMPORTANT] The Field group name has to be unique, please use this naming convention: `WeatherByCityLdap` so in this case, the name should be `WeatherByCityVangeluw`
+>[!IMPORTANT]
+>
+>The Field group name has to be unique, please use this naming convention: `WeatherByCityLdap` so in this case, the name should be `WeatherByCityVangeluw`
 
 ![Demo](./images/fg1.png)
 

@@ -9,8 +9,9 @@ activity:
 
 # 11.2 Configure an Advertising Destination like Google DV360
 
->[!IMPORTANT] The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
+>[!IMPORTANT]
 >
+>The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
