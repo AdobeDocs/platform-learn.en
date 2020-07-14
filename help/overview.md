@@ -10,6 +10,7 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+
 * **[Introduction to Data Governance](/help/segments/introduction-to-data-governance.md)**
     <br>
     *Learn how you can create personalized experiences while maintaining complete control over customer data*
@@ -21,8 +22,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 * **[Introduction to Adobe Experience Platform Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)**
     <br>
     *Learn how Web SDK will simplify your implementations and improve page performance*
-
-
 
 ## Staff Picks
 
