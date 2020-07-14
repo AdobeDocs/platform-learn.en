@@ -77,6 +77,7 @@ audience: all
   + [Ingest Data from Amazon S3](/help/data-ingestion/ingest-data-from-amazon-s3.md)
   + [Ingest Data from Salesforce CRM](/help/data-ingestion/ingest-data-from-salesforce-crm.md)
 + Data Governance{#data-governance}
+  + [Introduction to Data Governance](introduction-to-data-governance.md)
   + [Understanding Data Governance](/help/governance/understanding-data-governance.md)
   + [Classify data using Governance Labels](/help/governance/classify-data-using-governance-labels.md)
   + [Create Data Usage Policies](/help/governance/create-data-usage-policies.md)
