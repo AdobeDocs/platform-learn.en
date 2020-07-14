@@ -7,6 +7,7 @@ kt: 3992
 audience: data-steward, architect
 doc-type: video
 activity: understand
+thumbnail: 29709.jpg
 ---
 
 # Classify Data using Governance Labels
@@ -19,5 +20,6 @@ Governance labels in Adobe Experience Platform enable you to tag and classify da
 
 * [Create Data Usage Policies video](create-data-usage-policies.md)
 * [Enforce Data Usage Policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
+* [Introduction to Data Governance](introduction-to-data-governance.md)
 * [Understanding Data Governance video](understanding-data-governance.md)
 * [Data usage labels documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/labels/overview.html)

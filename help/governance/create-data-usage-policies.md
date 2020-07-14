@@ -7,6 +7,7 @@ kt: 4347
 audience: data-steward, architect
 doc-type: video
 activity: use
+thumbnail: 32977.jpg
 ---
 
 # Create Data Usage Policies
@@ -21,7 +22,8 @@ This video shows how to create and manage Data Usage Policies in Platform, inclu
 
 ## Additional Resources
 
+* [Enforce Data Usage Policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
+* [Introduction to Data Governance](introduction-to-data-governance.md)
 * [Understanding Data Governance video](understanding-data-governance.md)
 * [Classify data using Governance Labels video](classify-data-using-governance-labels.md)
-* [Enforce Data Usage Policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
 * [Data usage policies documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/policies/overview.html)
