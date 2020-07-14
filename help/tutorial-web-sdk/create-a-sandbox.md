@@ -11,7 +11,7 @@ activity: implement
 
 ## Overview
 
-The sandbox feature of Adobe Experience Platform allows you to isolate data and configurations into virtual environments. Experience Platform has two types of sandboxes, a single production and multiple non-production (or development) sandboxes. Non-production sandboxes allow you to test features, run experiments, and make custom configurations without impacting your production sandbox. In this exercise, you will create a non-production sandbox so that you can complete the rest of the tutorial without impacting your production environment.
+The sandbox feature of Adobe Experience Platform allows you to isolate data into virtual environments. Experience Platform has two types of sandboxes, a single production and multiple non-production (or development) sandboxes. Non-production sandboxes allow you to test features, run experiments, and make custom configurations without impacting your production sandbox. In this exercise, you will create a non-production sandbox so that you can complete the rest of the tutorial without impacting your production environment.
 
 Non-production sandboxes have a reset feature that removes all customer-created resources from the sandbox.  After you are done with this tutorial, you can safely delete the sandbox, if you wish. 
 
@@ -58,12 +58,12 @@ In this section you will provide yourself access to the product contexts that yo
 1. Click on the **[!UICONTROL Get Started]** button or just navigate to [adminconsole.adobe.com](https://adminconsole.adobe.com) and login. Make sure you are in the Admin console for the WWFO vLab ### you were assigned (dropdown in the upper right corner)
 1. Locate the **[!UICONTROL Adobe Experience Platform]** card and click on **[!UICONTROL Assign Users]** button:
 
-   ![alt_text](assets/image001.png)
+   ![alt_text](assets/sandbox-image001.png)
 
 1. On the next screen, enter your personal Adobe ID in the search box and select it when it appears.
 1. In the **[!UICONTROL Search or select profiles]** dropdown appears, select the **[!UICONTROL Default Production All Access,]** and **[!UICONTROL Sandbox Administrators]** profiles:
 
-   ![alt_text](assets/image002.png)
+   ![alt_text](assets/sandbox-image002.png)
 
 1. Click **[!UICONTROL Save]** to save the user. You'll be redirected back to the Overview page. You should then receive an email indicating that you've received access to Adobe Experience Platform
 1. While on the overview page, click into the `Adobe Experience Platform Launch – Adobe Internal – vlab###` tile to begin the process of giving yourself access to Launch for this Experience Cloud Org
@@ -73,7 +73,7 @@ In this section you will provide yourself access to the product contexts that yo
 1. Click into the only product profile available to you. Next, click the **[!UICONTROL Add User]** button and select yourself as a user. Once added, you'll be redirected back to the product profile page.
 1. Click on the **[!UICONTROL Permissions]** tab. If you can see that the permission look like this…:
 
-   ![alt_text](assets/image003.png)
+   ![alt_text](assets/sandbox-image003.png)
 …please move on to the next step. If they do NOT look like the above screenshot, please perform the following actions:
 
     1. Click into the **[!UICONTROL Property Rights]** permission group
@@ -86,14 +86,14 @@ In this section you will provide yourself access to the product contexts that yo
 1. Now that you've granted yourself the requisite permissions, open a new tab and navigate to wwfovlab###.experiencecloud.adobe.com. Log in if necessary.
 1. If you’re in the correct Experience Cloud Org, you should have access to **[!UICONTROL Experience Platform]**, **[!UICONTROL Launch]**, **[!UICONTROL Admin Tool]**, **[!UICONTROL Admin console]**, and a few other Adobe Services:
 
-   ![alt_text](assets/image004.png)
+   ![alt_text](assets/sandbox-image004.png)
 
 
 1. Click the **[!UICONTROL Launch]** icon followed by the blue **[!UICONTROL Go to Launch]** button
 1. On the **[!UICONTROL Launch]** landing page, ensure that the **[!UICONTROL Add New Property]** button is active. Do NOT create a new property at this time. This is just a check to make sure you have the right permissions. If the Add New Property button is not active, return to the tab housing your Admin Console and review the previous steps in this section related to Launch permissions. Perform any steps you may have missed then revisit this page. Once you can log into Launch and the Add New Property button is active, you can move on.
 1. Click on the **[!UICONTROL Solution Switcher]** and select **[!UICONTROL Experience Platform.]** You'll be redirected to platform.adobe.com. You should now see the Experience Platform Home screen.
 
-   ![alt_text](assets/image005.png)
+   ![alt_text](assets/sandbox-image005.png)
 
     >[!TIP] Whenever you switch products, it's always a good idea to make sure you're in the correct Experience Cloud Organization.
     
@@ -101,7 +101,7 @@ In this section you will provide yourself access to the product contexts that yo
         
 1. Notice in the upper left corner of your screen is a dropdown indicating that you are in the production environment for Platform:
 
-   ![alt_text](assets/image006.png)
+   ![alt_text](assets/sandbox-image006.png)
 
 If you click on that dropdown, you'll notice that you have no other options for changing the environment. Since a production environment is not where you want to learn and practice Platform skills, the next section will walk you through creating a sandbox environment as well as giving yourself permission to that sandbox. For now, though, just being on this screen is enough validation that you've giving yourself access to Platform. 
  
@@ -116,26 +116,26 @@ In this section, you're going to create your own Experience Platform Sandbox env
 1. If necessary, log into platform.adobe.com and ensure you are in your assigned WWFO vLab### organization.
 2. Click on **[!UICONTROL ADMINISTRATION]** > **[!UICONTROL Sandboxes]** in the left menu:
 
-   ![alt_text](assets/image007.png)
+   ![alt_text](assets/sandbox-image007.png)
 
 3. In the subsequent Sandboxes screen, click on **[!UICONTROL Create sandbox]**:
 
-   ![alt_text](assets/image008.png)
+   ![alt_text](assets/sandbox-image008.png)
 
 4. Give the new sandbox a **[!UICONTROL Name]** and **[!UICONTROL Title]**. Notice that the name field is more like an ID since it has very specific requirements. It's also what'll be used in any API calls that you'd make to programmatically configure a sandbox. The title is what you'll see as the friendly name. As far as naming requirements go for this exercise, be sure to include your ldap somewhere in both the name and title. This will help with troubleshooting and environment cleanup later on. It would also be appropriate (though not required) to mention that this is a development environment for Luma. A good example is something like this:
 
-   ![alt_text](assets/image009.png)
+   ![alt_text](assets/sandbox-image009.png)
 
    >[!NOTE] You may see different sandbox names throughout this and other exercise documents in the screenshots. That's okay. Take note of what you named your sandbox and you'll be able to follow the instructions.
 
 5. Once you've named and titled your sandbox, click the **[!UICONTROL Create]** button. 
 6. Sandbox creation can take a up to 20 minutes. You can monitor the status (along with Sandboxes created by others) by clicking the **[!UICONTROL Browse]** tab:
 
-   ![alt_text](assets/image010.png)
+   ![alt_text](assets/sandbox-image010.png)
 
 7. Refresh the page after some time and you should see your newly created Sandbox STATE as **[!UICONTROL Active]** with a green dot.
 
-   ![alt_text](assets/image011.png)
+   ![alt_text](assets/sandbox-image011.png)
 
 8. Click back on the environment dropdown and you'll notice that even though you just created a sandbox, it is not there for you to see. The Sandbox Administrators permission you gave yourself earlier only allows you _create_ sandboxes, not access them. To do that, you're going to need to return to the Admin Console and give yourself access as outlined in the next section.
 
@@ -147,45 +147,45 @@ To give yourself access to your newly created sandbox, please perform the follow
 1. If not already, sign into your Experience Cloud Org and access the Adobe Admin Console.
 2. Click the **[!UICONTROL Products]** tab at the top, making sure the **Adobe Experience Platform** product is selected. You should see the available product profiles listed. Click on **[!UICONTROL New Profile]**:
 
-   ![alt_text](assets/image012.png)
+   ![alt_text](assets/sandbox-image012.png)
 
    >[!NOTE] You will see a profile for each person you share this org with and who has completed these exercises already. If you are the first, you'll see only the default profiles that you already gave yourself permission to.
 
 3. On the next screen, enter appropriate **[!UICONTROL Profile Name]** and **[!UICONTROL Description]**. Again, it doesn't matter what you call it so long as it *contains your ldap*. Click **[!UICONTROL Next]** when ready:
 
-   ![alt_text](assets/image013.png)
+   ![alt_text](assets/sandbox-image013.png)
 
 4. On the Services screen, leave the available services enabled but take a moment to note what these services are as you'll be using some of them in later exercises (and so you know where and how to enable them for customers). Click **[!UICONTROL Done]**:
 
-   ![alt_text](assets/image014.png)
+   ![alt_text](assets/sandbox-image014.png)
 
 5. In the **[!UICONTROL Configure profile]** screen, find the Sandbox that you just created (and ONLY your sandbox) in the list and click on the **[!UICONTROL +]** sign next to it in order to add it to the profile. 
 
-   ![alt_text](assets/image015.png)
+   ![alt_text](assets/sandbox-image015.png)
 
 6. Going down the list of profile options in the left rail, use the **[!UICONTROL + Add All]** option in each to add all of the available profile options to your profile. Do this for all profile options *EXCEPT* for Sandbox Administration. As you do so, take note of what you are enabling. Many of them will be new terms or things you've only heard about, but you will be using almost all of them in the coming exercises:
 
-   ![alt_text](assets/image016.jpg)
+   ![alt_text](assets/sandbox-image016.jpg)
 
    >[!NOTE] We're not having you add Sandbox Administration items because we need to keep everyone's sandbox as independent as possible. This will prevent things like accidentally deleting, viewing, or modifying anyone else's sandbox.
 
 7. Once all the options for all of the profiles, except for the Sandbox administration items, have been added to your profile, click **[!UICONTROL Save.]** The profile will then be saved, and you will be redirected to the profile screen. Assuming you gave yourself all the correct permissions, your profile should look similar to this:
 
-   ![alt_text](assets/image017.jpg)
+   ![alt_text](assets/sandbox-image017.jpg)
 
 8. Click on the **[!UICONTROL Users]** tab and click the **[!UICONTROL Add User]** button. 
 
-   ![alt_text](assets/image018.png)
+   ![alt_text](assets/sandbox-image018.png)
 
 9. On the next screen, add your user to the profile then click **[!UICONTROL Save]**:
 
-   ![alt_text](assets/image019.png)
+   ![alt_text](assets/sandbox-image019.png)
 
 10. With your user added to your newly created profile, return to the Experience Platform interface. If you are still logged in from previous steps, log out of all tabs (including Admin Console) and then log back into Experience Platform so that your new profile settings can take effect. 
 11. As always, ensure you are in the proper organization in the upper right corner. 
 12. Click on the Sandbox selection dropdown. You should be able to see the sandbox you just created:
 
-    ![alt_text](assets/image020.png)
+    ![alt_text](assets/sandbox-image020.png)
 
     If you haven’t’ already done so, select your new sandbox.
 
@@ -193,6 +193,6 @@ To give yourself access to your newly created sandbox, please perform the follow
 
 13. The resulting page should look very similar to the production sandbox. Take a moment to notice how all of the items in the left rail correspond to both the services you enabled when you created in the profile AND the profile configurations that you added:
 
-    ![alt_text](assets/image021.png)
+    ![alt_text](assets/sandbox-image021.png)
 
 14. Once you have a sandbox created and have verified that you have access to it and all of the services, tools, and configurations, you've completed this exercise and given yourself access to Adobe Experience Platform!

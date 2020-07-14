@@ -41,7 +41,7 @@ Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next s
 
 Although the sandbox is now active, you will not be able to start using it  until you have been assigned access in the Admin Console.
 
-To get access rights to the new sandbox you will need Administrative privileges or you will need the assistance of an administrator at your company. Here is what those the basic steps look like, although the configuration of Product Profiles and users might be different at your company.
+To get access to the new sandbox you will need Administrative privileges or you will need the assistance of an administrator at your company. Here is what those the basic steps look like, although the configuration of Product Profiles and users might be different at your company.
 
 ### Select the Product Profile
 
@@ -65,6 +65,6 @@ To get access rights to the new sandbox you will need Administrative privileges 
 
     ![Save Permissions](assets/sandbox-savePermissions.png)
 
-1. You should now be able to see the new sandbox appear in the sandbox dropdown in the Platform interface:
+1. If you reload the You should now be able to see the new sandbox appear in the sandbox dropdown in the Platform interface:
 
    ![Confirm Sandbox](assets/sandbox-confirmDropdown.png)
