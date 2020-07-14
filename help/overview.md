@@ -22,8 +22,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <br>
     *Learn how Web SDK will simplify your implementations and improve page performance*
 
-
-
 ## Staff Picks
 
 <table>
