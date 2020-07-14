@@ -16,10 +16,6 @@ This video shows how Data Usage Policies are enforced when activating an audienc
 
 >[!VIDEO](https://video.tv.adobe.com/v/33631?quality=12&learn=on)
 
->[!IMPORTANT]
->
->This feature is currently in beta and is not available to all users. It can be enabled upon request. The documentation and the functionality are subject to change.
-
 ## Additional Resources
 
 * [Introduction to Data Governance](introduction-to-data-governance.md)

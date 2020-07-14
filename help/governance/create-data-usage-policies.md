@@ -16,10 +16,6 @@ This video shows how to create and manage Data Usage Policies in Platform, inclu
 
 >[!VIDEO](https://video.tv.adobe.com/v/32977?quality=12&learn=on)
 
->[!IMPORTANT]
->
->This feature is currently in beta and is not available to all users. It can be enabled upon request. The documentation and the functionality are subject to change.
-
 ## Additional Resources
 
 * [Enforce Data Usage Policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
