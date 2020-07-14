@@ -10,18 +10,17 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+* **[Introduction to Data Governance](/help/governance/introduction-to-data-governance.md)**
+    <br>
+    *Learn how you can create personalized experiences while maintaining complete control over customer data*
+
 * **[Demo of Streaming Segmentation (Video)](/help/segments/streaming-segmentation-demo.md)**
     <br>
     *See a demo of a personalized experience using streaming segmentation*
 
-* **[Create a schema, dataset, and streaming source connector for Web SDK data (Video)](/help/data-ingestion/web-sdk/create-a-schema-dataset-and-streaming-source-connector-for-web-sdk-data.md)**
-    <br>
-    *Required steps in Platform to get started with Web SDK*
-
 * **[Introduction to Adobe Experience Platform Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)**
     <br>
     *Learn how Web SDK will simplify your implementations and improve page performance*
-
 
 ## Staff Picks
 

@@ -27,7 +27,9 @@ Go to Adobe Experience Platform, to **Queries** and to **Credentials**.
 
 From the **Credentials** page in Adobe Experience Platform, copy the **Host** and paste it in the **Server** field, and copy the **Database** and paste it in the **Database** field in PowerBI, then click OK (2).
 
->[!IMPORTANT] Make sure to include port **:80** at the end of the Server value because the Query Service does not currently use the default PostgreSQL port of 5432.
+>[!IMPORTANT]
+>
+>Make sure to include port **:80** at the end of the Server value because the Query Service does not currently use the default PostgreSQL port of 5432.
 
 ![power-bi-connect-server.png](./images/power-bi-connect-server.png)
 

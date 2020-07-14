@@ -7,18 +7,22 @@ kt: 4380
 audience: data-steward, architect, marketer
 doc-type: video
 activity: use
+thumbnail: 33631.jpg
 ---
 
 # Enforce Data Usage Policies in Real-time Customer Data Platform
 
 This video shows how Data Usage Policies are enforced when activating an audience using Adobe’s Real-time Customer Data Platform. It goes through all the key workflows including how to add marketing use cases to destinations, how to analyze a policy violation during activation and how to use the data lineage to understand and remediate policy violations. The enforcement capabilities build upon the labeling and policy management features to create the Data Usage Labeling and Enforcement (or DULE) framework for governing data in Adobe Experience Platform.
+
 >[!VIDEO](https://video.tv.adobe.com/v/33631?quality=12&learn=on)
 
 >[!IMPORTANT]
+>
 >This feature is currently in beta and is not available to all users. It can be enabled upon request. The documentation and the functionality are subject to change.
 
 ## Additional Resources
 
+* [Introduction to Data Governance](introduction-to-data-governance.md)
 * [Understanding Data Governance video](understanding-data-governance.md)
 * [Classify data using Governance Labels video](classify-data-using-governance-labels.md)
 * [Create Data Usage Policies video](create-data-usage-policies.md)

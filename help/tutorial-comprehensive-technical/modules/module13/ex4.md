@@ -19,10 +19,12 @@ activity:
 
 Analysis Workspace removes all of the typical limitations of a single Analytics report. It provides a robust, flexible canvas for building custom analysis projects. Drag-and-drop any number of data tables, visualizations, and components (dimensions, Metrics, segments, and time granularities) to a project. Instantly create breakdowns and segments, create cohorts for analysis, create alerts, compare segments, do flow and fallout analysis, and curate and schedule reports for sharing with anyone in your business.
 
-Customer Journey Analytics brings this solution on top of Platform data. We highly recommend watching this four-minute overview video: 
+Customer Journey Analytics brings this solution on top of Platform data. We highly recommend watching this four-minute overview video:
+
 >[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
 
 If you haven't used Analysis Workspace before, we highly recommend watching this video:
+
 >[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
 
 ### Create Your Project
