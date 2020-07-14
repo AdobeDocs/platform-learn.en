@@ -29,23 +29,29 @@ Sandboxes provide isolated environments where you can try out functionality and 
 1. Give your sandbox a **[!UICONTROL Name]** and a **[!UICONTROL Title]**. The **[!UICONTROL Name]** must be all lowercase, alphanumeric characters and hyphens.
    ![](assets/sandbox-nameSandbox.png)
 
-Before you can start using your sandbox
+Sandboxes take approximately fifteen minutes to create and will display a "[!UICONTROL Creating]" status:
+   ![](assets/sandbox-creating.png)
+
+Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next steps:
+   ![](assets/sandbox-active.png)
+
+
 
 ## Get Access to the Sandbox
 
-Behind-the-scenes, the sandbox is being created. However, you will not see the new sandbox in the dropdown until you have been assigned access to it in the Admin Console.
+Although the sandbox is now active, you will not be able to start using it  until you have been assigned access in the Admin Console.
 
 To get access rights to the new sandbox you will need Administrative privileges or you will need the assistance of an administrator at your company. Here is what those the basic steps look like, although the configuration of Product Profiles and users might be different at your company.
 
 ### Select the Product Profile
 
-1. Log into the [Admin Console](adminconsole.adobe.com)
+1. Log into the [Admin Console](https://adminconsole.adobe.com)
 1. Select **[!UICONTROL Products > Adobe Experience Platform]**
-1. Click on the [!UICONTROL Product Profile] containing the users who need access to the Sandbox
+1. Click on the [!UICONTROL Product Profile] containing the users who need access to the Sandbox (you may wish to create a new one)
 
     ![Select the Product Profile](assets/sandbox-selectProfile.png)
 
-1. Click on the **[!UICONTROL Permissions]**
+1. Click on the **[!UICONTROL Permissions]** tab
 
 1. On the [!UICONTROL Sandboxes] row, click **[!UICONTROL Edit]**
 
