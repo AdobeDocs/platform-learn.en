@@ -1,6 +1,6 @@
 ---
 title: Create Data Usage Policies in Adobe Experience Platform
-description: This video shows how to create and manage Data Usage Policies in Platform, including how to view policies provided by Adobe out-of-the-box and how to create custom policies based on your usage needs. Data Usage Policies in Adobe Experience Platform allow you to restrict data usage for specific purposes based on the labeling of data.
+description: Data Usage Policies in Adobe Experience Platform allow you to restrict data usage for specific purposes based on the labeling of data. This video shows how to create and manage Data Usage Policies, including how to view policies provided by Adobe out-of-the-box and how to create custom policies based on your usage needs. 
 feature: governance
 topics:
 kt: 4347
@@ -12,7 +12,7 @@ thumbnail: 32977.jpg
 
 # Create Data Usage Policies
 
-This video shows how to create and manage Data Usage Policies in Platform, including how to view policies provided by Adobe out-of-the-box and how to create custom policies based on your usage needs. Data Usage Policies in Adobe Experience Platform allow you to restrict data usage for specific purposes based on the labeling of data.
+Data Usage Policies in Adobe Experience Platform allow you to restrict data usage for specific purposes based on the labeling of data. This video shows how to create and manage Data Usage Policies, including how to view policies provided by Adobe out-of-the-box and how to create custom policies based on your usage needs. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/32977?quality=12&learn=on)
 
