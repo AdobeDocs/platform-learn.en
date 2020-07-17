@@ -562,10 +562,7 @@ In this subsection, you're going to create a new mixin and add a field to it tha
 
     When finished, your full `Offline Purchase Mixin` should look like this:
  
-       ![alt_text](assets/image038.png)
-
-
-
+    ![alt_text](assets/image038.png)
 
 8. Click **[!UICONTROL Save]** in the upper right corner. 
 9. Click on **[!UICONTROL Schemas]** in the left pane to return to the schema homepage. You should now see that you have 3 schemas (the **[!UICONTROL Browse]** tab may already be selected. If not, click on it):

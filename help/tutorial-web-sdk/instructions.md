@@ -618,9 +618,6 @@ When building traits and segments, Adobe recommends creating a new data source t
 2. If you check the cookies set on the domain, you’ll notice the cookie has also been set: 
 
    ![alt_text](assets/image038.png)
- 
-
-
 
 ## Use Target with the AEP Web SDK
 
