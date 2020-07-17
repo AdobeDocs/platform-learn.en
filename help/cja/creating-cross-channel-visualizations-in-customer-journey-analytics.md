@@ -8,6 +8,7 @@ activity: use
 doc-type: feature video
 team: Technical Marketing
 kt: 3961
+thumbnail: 31771.jpg
 
 ---
 

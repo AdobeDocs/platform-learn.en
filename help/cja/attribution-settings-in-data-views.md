@@ -8,6 +8,7 @@ activity: setup
 doc-type: feature video
 team: Technical Marketing
 kt: 3959
+thumbnail: 30185.jpg
 
 ---
 
@@ -15,7 +16,7 @@ kt: 3959
 
 When configuring [!UICONTROL Data Views] in Customer Journey Analytics, you can choose [!UICONTROL attribution] settings in order to control how [!UICONTROL dimensions] and [!UICONTROL metrics] will work together. This video walks you through the defaults, the options, and how [!UICONTROL metric] and [!UICONTROL dimension] [!UICONTROL attribution] settings interact.
 
->[!VIDEO](https://video.tv.adobe.com/v/30185/?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30185/?quality=12&learn=on)
 
 ## Additional Resources
 

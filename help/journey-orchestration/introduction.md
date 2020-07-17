@@ -23,7 +23,7 @@ The video below introduces
 * The types of use cases it enables
 * The key elements of how Journey Orchestration works
 
->[!VIDEO](https://video.tv.adobe.com/v/29307?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29307?quality=12&learn=on)
 
 ## How to Configure a Journey
 
@@ -33,7 +33,9 @@ The main steps in preparation for building journeys are:
 2. [Configure Data Sources](/help/journey-orchestration/configure-data-sources.md) - This configuration is not required if your journeys only leverage local data coming from an event payload.
 3. [Configure Custom Actions](/help/journey-orchestration/configure-actions.md): Required if you want to use a service from any 3rd party provider that can be called through a REST API with a JSON formatted payload
 
+
 >[!NOTE]
+>
 >These configuration steps require technical knowledge. You will need to be familiar with the [Experience Data Model (XDM)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md) and [how to compose XDM Experience EventSchemas](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md).
 
 ## How to Create, Publish, and Analyze a Journey

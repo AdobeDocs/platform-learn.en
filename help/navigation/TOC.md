@@ -29,10 +29,11 @@ audience: all
   + [How to find help with Adobe Journey Orchestration](/help/journey-orchestration/how-to-find-help-with-journey-orchestration.md)
 + Real-time CDP{#rtcdp}
   + [Understanding Real-time CDP](/help/rtcdp/understanding-the-real-time-customer-data-platform.md)
+  + [Demo of Real-time CDP](/help/rtcdp/demo.md)
   + [Understanding Real-time CDP UI and Workflow](/help/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
   + [Understanding Destinations](/help/rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](/help/rtcdp/create-destinations-and-activate-data.md)
-  + [Enforce Data Usage Policies in Real-time CDP](https://docs.adobe.com/content/help/en/platform-learn/tutorials/governance/enforce-data-usage-policies-in-real-time-cdp.html)
+  + [Enforce Data Usage Policies in Real-time CDP](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
 + Customer Journey Analytics {#cja}
   + [Understanding Customer Journey Analytics](/help/cja/understanding-customer-journey-analytics.md)
   + [New Terms and Concepts](/help/cja/new-terms-and-concepts-in-cja.md)
@@ -64,6 +65,9 @@ audience: all
   + [Create your own Mixins and Classes](/help/schemas/create-your-own-mixins-and-classes.md)
 + Data Ingestion{#data-ingestion}
   + Web SDK{#web-sdk}
+    + [Introduction to Web SDK and Edge Network](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
+    + [Demo of Web SDK and Edge Network](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
+    + [Create a schema, dataset, and streaming source connector](/help/data-ingestion/web-sdk/create-a-schema-dataset-and-streaming-source-connector-for-web-sdk-data.md)
     + [Introduction to the Debugger](/help/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
   + [Understanding Data Ingestion](/help/data-ingestion/understanding-data-ingestion.md)
   + [Understanding Streaming Ingestion](/help/data-ingestion/understanding-streaming-ingestion.md)
@@ -73,6 +77,7 @@ audience: all
   + [Ingest Data from Amazon S3](/help/data-ingestion/ingest-data-from-amazon-s3.md)
   + [Ingest Data from Salesforce CRM](/help/data-ingestion/ingest-data-from-salesforce-crm.md)
 + Data Governance{#data-governance}
+  + [Introduction to Data Governance](/help/governance/introduction-to-data-governance.md)
   + [Understanding Data Governance](/help/governance/understanding-data-governance.md)
   + [Classify data using Governance Labels](/help/governance/classify-data-using-governance-labels.md)
   + [Create Data Usage Policies](/help/governance/create-data-usage-policies.md)
@@ -93,6 +98,7 @@ audience: all
   + [Create Segments](/help/segments/create-segments.md)
   + [Create Dynamic Segments](/help/segments/create-dynamic-segments.md)
   + [Create Segments Across Classes and Include Segment Context](/help/segments/create-segments-across-classes-and-include-segment-context.md)
+  + [Demo of Streaming Segmentation](/help/segments/streaming-segmentation-demo.md)
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs](/help/identities/understanding-identity-and-identity-graphs.md)
   + [Label, Ingest, and Verify Identity Data](/help/identities/label-ingest-and-verify-identity-data.md)
@@ -100,4 +106,3 @@ audience: all
   + [Use Sandboxes](/help/sandboxes/use-sandboxes.md)
 + APIs{#apis}
   + [Postman and Experience Platform APIs](/help/apis/postman.md)
-+ [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://docs-stg.corp.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
