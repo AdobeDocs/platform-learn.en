@@ -7,6 +7,7 @@ kt: 4804
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32797.jpg
 ---
 
 # Overview of Experience Platform

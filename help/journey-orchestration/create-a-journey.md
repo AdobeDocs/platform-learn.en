@@ -17,7 +17,7 @@ The following video below explains how to:
 * Use orchestrations controls to control the flow and timing of a journey
 * Use Actions to engage at points in the journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/29696?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29696?quality=12&learn=on)
 
 ## Additional Resources
 

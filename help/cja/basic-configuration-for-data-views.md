@@ -8,6 +8,7 @@ activity: setup
 doc-type: feature video
 team: Technical Marketing
 kt: 3958
+thumbnail: 30186.jpg
 
 ---
 
@@ -15,7 +16,7 @@ kt: 3958
 
 Once you have created a [!UICONTROL connection] in Customer Journey Analytics to [!UICONTROL datasets] in the Adobe Experience Platform, you need to create a [!UICONTROL Data View] for that [!UICONTROL Connection], so that you can use the data in Analysis Workspace on Platform. This video walks you through the basic configuration of a [!UICONTROL Data View].
 
->[!VIDEO](https://video.tv.adobe.com/v/30186/?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/30186/?quality=12&learn=on)
 
 ## Additional Resources
 

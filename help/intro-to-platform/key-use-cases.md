@@ -7,6 +7,7 @@ kt: 4337
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32806.jpg
 ---
 
 # Key Use Cases of Experience Platform

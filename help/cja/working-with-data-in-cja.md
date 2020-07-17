@@ -8,6 +8,7 @@ activity: understand
 doc-type: technical video
 team: Technical Marketing
 kt: 3964
+thumbnail: 32112.jpg
 
 ---
 
