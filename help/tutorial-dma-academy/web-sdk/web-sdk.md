@@ -508,8 +508,7 @@ In this section you're going to place your development Launch tags on your AEM A
 
     1. Return to the AEM Author UI and paste the code you just copied to the clipboard immediately above the Launch code. When finished, your file should look like this:
         
-        ![alt_text](assets/image037.png)
-
+       ![alt_text](assets/image037.png)
 
     1. Perform a CTRL+S (or command +s) to save your changes (there is also a **[!UICONTROL Save All]** button in the top left corner if needed). 
 
