@@ -9,7 +9,7 @@ doc-type: tutorial
 activity: implement
 ---
 
-# Creating Schemas
+# Model Data in Schemas
 
 ## Intro to XDM
 
@@ -156,7 +156,7 @@ Schemas
 * Relationship schema
 
 
-# Create a Profile-based Schema
+## Create an Event-based Schema
 
 In this tutorial we will be ingesting data from the following sources:
 
