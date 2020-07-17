@@ -4,7 +4,7 @@ description:
 feature: data ingestion
 topics: 
 kt: 4348
-audience: data-architect,data-engineer
+audience: data architect,data engineer
 doc-type: tutorial
 activity: implement
 ---
@@ -125,7 +125,7 @@ Next we need to add fields that are specific to Luma's Loyalty system. As you st
 
 Custom mixins, such as your new Luma Loyalty Details Mixin, can be reused in other schemas, allowing you to enforce standard data definitions for fields used in multiple systems. Mixins, however, are specific to a base class and can only be reused in schemas that share the same base class. So, while the Luma Loyalty Details mixin can be reused in other schemas using the XDM Profile class, it cannot be used in schemas using other classes.
 
-The data type is another multi-field construct which can be reused in schemas across multiple classes. When we specified our loyalty fields with types of "object", "string", "integery", and "date"
+The data type is another multi-field construct which can be reused in schemas across multiple classes. When we specified our loyalty fields with types of "object", "string", "integer", and "date"
 
 Should I just create
 Should i do product data type for online/offline
@@ -135,7 +135,8 @@ Should i do product data type for online/offline
 Now we will create an API using
 
 
-Schemas 
+Schemas
+
 * Luma Loyalty Members (UI)
   * Profile Person Details
   * Profile Personal Details
@@ -160,6 +161,7 @@ Schemas
 In this tutorial we will be ingesting data from the following sources:
 
 Abhishek
+
 * Schema: Luma Loyalty Members
   * Profile Personal Details
   * Profile Person Details
@@ -199,9 +201,10 @@ Abhishek
     * Profile Personal Details
     * Profile Person Details
     * Profile Preferences Details
-    * 
+
 
 DMA
+
 * CRM Schema
   * Profile work details
   * Profile person details
