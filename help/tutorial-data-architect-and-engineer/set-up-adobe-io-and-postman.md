@@ -109,7 +109,7 @@ The first collection we will use works with the Adobe Identity Management Servic
 
 >[!WARNING]
 >
->As noted in the [Adobe I/O Access Token Generation Postman collection documentation](), the denoted generation methods are suitable for non-production use. Local Signing loads a JavaScript library from a 3rd-party host, and Remote signing sends the private key to an Adobe owned and operated web service. While Adobe does not store this private key, production keys should never be shared with anyone.  
+>As noted in the [Adobe I/O Access Token Generation Postman collection documentation](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims), the denoted generation methods are suitable for non-production use. Local Signing loads a JavaScript library from a 3rd-party host, and Remote signing sends the private key to an Adobe owned and operated web service. While Adobe does not store this private key, production keys should never be shared with anyone.  
 
 1.  Download the [Adobe IO Access Token Generation collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Adobe%20IO%20Access%20Token%20Generation.postman_collection.json) to your `Platform Training Assets` folder
 
