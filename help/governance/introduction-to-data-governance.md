@@ -4,7 +4,7 @@ description: This video shows Adobe Experience Platform’s Data Governance capa
 feature: governance
 topics: rtcdp
 kt: 5802
-audience: data-steward, architect, marketer
+audience: data steward, architect, marketer
 doc-type: video
 activity: understand
 thumbnail: 36653.jpg

@@ -4,7 +4,7 @@ description:
 feature:
 topics: 
 kt: 4348
-audience: data-architect,data-engineer
+audience: data architect,data engineer
 doc-type: tutorial
 activity: implement
 ---
