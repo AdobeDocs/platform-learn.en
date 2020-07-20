@@ -4,7 +4,7 @@ description: This video shares tips and best practices for running queries in th
 feature: query-service
 topics:
 kt: 3715
-audience: developer,data-engineer,architect
+audience: developer,data engineer,architect
 doc-type: video
 activity: understand
 ---

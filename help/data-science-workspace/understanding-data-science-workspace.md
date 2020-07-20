@@ -4,7 +4,7 @@ description: The vision of machine learning on Adobe Experience Platform, is to 
 feature: data-science-workspace
 topics:
 kt: 3137
-audience: data-scientist,data-engineer,architect
+audience: data scientist,data engineer,architect
 doc-type: video
 activity: understand
 ---

@@ -5,7 +5,7 @@ feature: segmentation
 topics:
 kt: 5628
 audience: marketer
-doc-type: value-video
+doc-type: value video
 activity: use
 ---
 

@@ -4,7 +4,7 @@ description: This video shows how to run queries in the Adobe Experience Platfor
 feature: query-service
 topics:
 kt: 3140
-audience: developer,data-engineer,architect
+audience: developer,data engineer,architect
 doc-type: video
 activity: setup,use
 ---

@@ -5,7 +5,7 @@ feature: web-sdk
 topics:
 kt: 4351
 audience: engineer
-doc-type: technical-video
+doc-type: technical video
 activity: use
 thumbnail: 35395.jpg
 ---

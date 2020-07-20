@@ -5,7 +5,7 @@ feature: sandbox
 topics: development
 kt: 4018
 audience: all
-doc-type: feature-video
+doc-type: feature video
 activity: use
 ---
 

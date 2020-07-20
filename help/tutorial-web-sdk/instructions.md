@@ -4,7 +4,7 @@ description: This tutorial shows you how to get started with the Web SD
 feature: web-sdk
 topics:
 kt: 5400
-audience: data-architect,data-engineer,developer
+audience: data architect,data engineer,developer
 doc-type: tutorial
 activity: use
 ---

@@ -4,7 +4,7 @@ description: Query Service makes it possible for brands to connect the online-to
 feature: query-service
 topics:
 kt: 3139
-audience: developer,data-engineer,architect
+audience: developer,data engineer,architect
 doc-type: video
 activity: understand
 ---
