@@ -4,13 +4,13 @@ description: Extract, Transform, Load data using a 3rd party ETL-tool - Summary
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity:
 ---
 
 # Summary & benefits
 
-Congratulations and thank you for investing your time in learning about Adobe Experience Platform! 
-In this module, you've learned how to ingest enterprise data into Adobe Experience Platform by making use of an ETL application like Informatica. 
+Congratulations and thank you for investing your time in learning about Adobe Experience Platform!
+In this module, you've learned how to ingest enterprise data into Adobe Experience Platform by making use of an ETL application like Informatica.
 
 ## Benefits
 
@@ -25,6 +25,7 @@ Let's highlight the benefits of integrating Informatica with Adobe Experience Pl
 - Adobe Blog: [New Adobe Experience Platform: Purpose-built for the Experience Business](https://theblog.adobe.com/new-adobe-cloud-platform-way-manage-experience-data-scale/)
 - Unifi: [Unique Audience Experiences Derived from Data - Unifi and Adobe Experience Platform](https://unifisoftware.com/solutions/adobe-experience-platform/)
 - TMMData: [TMMData Announces Deep Integration With Adobe Experience Platform](https://content.tmmdata.com/press/tmmdata-announces-deep-integration-with-adobe-cloud-platform)
+- Medium Article: [Modeling One to Many Relationships in XDM (https://medium.com/adobetech/modeling-one-to-many-in-xdm-on-adobe-experience-platform-a44cbdb5b615)]
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
 
