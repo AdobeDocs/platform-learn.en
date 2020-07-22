@@ -30,7 +30,7 @@ activity: implement
     ![Success Ingestion](assets/ingestion-loyalty-preview.png)
 
 
-1. Download [`luma-offline.json`](assets/ingestion-`luma-offline.json`)
+1. Download [`luma-offline.json`](assets/ingestion-luma-offline.json)
 1. Repeat the step 1-7 for **Luma Offline Purchase Event Dataset** as well. 
 
 
@@ -70,9 +70,9 @@ You may ingest this data for Luma Offline Purchase Event Dataset in other possib
     https://platform.adobe.io/data/foundation/import/batches/BATCH_ID/datasets/DATASET_ID/files/crm.json
     ```
 
-1. Download [crm.json](assets/crm.json)
+1. Download [`luma-crm.json`](assets/luma-crm.json)
 1. In body of POSTMAN request select **binary** options as we want to send file
-1. Browse to downloaded crm.json 
+1. Browse to downloaded `luma-crm.json` 
 1. Click Send and if everything goes well , you should get '1' as response.
 
 ## Retrieve Profile By UI
