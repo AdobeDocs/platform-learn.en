@@ -37,10 +37,8 @@ In this chapter we will learn how to create Merge Policy
 1. Open Postman , Authenticate if you are not authenticated already.
 1. In Platform collection , Go to Profile and select **Create Merge Policy**
 1. Verify URL
-   
-   ```
-   https://platform.adobe.io/data/core/ups/config/mergePolicies
-   ```
+
+   `https://platform.adobe.io/data/core/ups/config/mergePolicies`
 
 1. Verify Body
 
