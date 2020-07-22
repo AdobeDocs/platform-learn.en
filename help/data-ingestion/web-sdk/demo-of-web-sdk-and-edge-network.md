@@ -5,7 +5,7 @@ feature: web-sdk
 topics:
 kt: 5206
 audience: engineer
-doc-type: feature-video
+doc-type: feature video
 activity: use
 ---
 

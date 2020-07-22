@@ -67,9 +67,21 @@ With your CSV-file ready, you can proceed with mapping it against XDM.
 Open [Adobe Experience Platform
 ](https://experience.adobe.com/platform) and go to **Datasets**. 
 
-Before you continue, make sure you are in the **PRODUCTION Prod**-environment in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named **Module 2 - Data Ingestion**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
 
-We're going to use a shared dataset based in this enablement. The shared dataset has been created already and is called **AEP Demo - CRM Onboarding**.
+![Data Ingestion](./images/sb1.png)
+
+From the list of available sandboxes, select the sandbox that matches the number you've been assigned.
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+
+![Data Ingestion](./images/sb2.png)
+
+In Adobe Experience Platform, click on **[!UICONTROL Datasets]** in the menu on the left side of your screen.
+
+![Data Ingestion](./images/menudatasetssb.png)
+
+You're going to use a shared dataset based in this enablement. The shared dataset has been created already and is called **AEP Demo - CRM Onboarding**.
 
 ![Data Ingestion](./images/emeacrm.png)
 
@@ -131,6 +143,14 @@ Click **Launch** to start the process.
 
 ![Data Ingestion](./images/launchprocess.png)
 
+On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select the **AEP Demo - CRM Onboarding**-dataset as indicated below.
+
+![Data Ingestion](./images/datasetselection.png)
+
+Click **Next** to go to the next step.
+
+![Data Ingestion](./images/next.png)
+
 Drag & Drop your CSV-file or click **Browse** and navigate on your computer to your desktop and select your CSV-file.
 
 ![Data Ingestion](./images/dragdrop.png)
@@ -143,15 +163,7 @@ Click **Next** to go to the next step. It can take a few seconds while the file 
 
 ![Data Ingestion](./images/next.png)
 
-On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select the **AEP Demo - CRM Onboarding**-dataset as indicated below.
-
-![Data Ingestion](./images/datasetselection.png)
-
-Click **Next** to go to the next step.
-
-![Data Ingestion](./images/next.png)
-
-It's now time to map our CSV Column Headers with an XDM-property in our **AEP Demo - CRM Onboarding Schema**.
+It's now time to map your CSV Column Headers with an XDM-property in our **AEP Demo - CRM Onboarding Schema**.
 Platform has already done some guessing for us, by trying to link the Source Attributes with the Target Schema Fields.
 
 ![Data Ingestion](./images/mapschema.png)
@@ -218,41 +230,25 @@ Repeat the process for the Source Field **home_longitude**, linking it to the Ta
  
 ![Data Ingestion](./images/schema_long_result.png)
 
-And this should be the overall result of the mapping exercise:
+This should be the overall result of the mapping exercise. If you have additional lines, feel free to delete them as they aren't needed for this exercise.
 
 ![Data Ingestion](./images/overall.png)
-
-Click **Next** to go to the next step.
-
-![Data Ingestion](./images/next.png)
-
-On the next screen you'll see an overview of what you've done and you can start the ingestion. 
-
-![Data Ingestion](./images/mapoverview.png)
-
-Click the **Ingest** button.
-
-![Data Ingestion](./images/ingest.png)
-
-Ingestion starts and will be running for a number of seconds/minutes (depending on file-size).
-
-![Data Ingestion](./images/ingest_running.png)
-
-After a couple of minutes, the file will be successfully ingested.
-
-![Data Ingestion](./images/success.png)
 
 Click the **Finish** button to finish the workflow.
 
 ![Data Ingestion](./images/finish.png)
 
-After clicking **Finish**, you're taken to your dataset.
+After clicking **Finish**, you're taken to your dataset where your ingestion is being processed.
 
 ![Data Ingestion](./images/ingestdataset.png)
 
-On the dataset, you'll see a Batch ID that was ingested just now, with 1000 records ingested and a status of **Success**.
+On the dataset, you'll see a Batch ID that is being ingested just now, with 1000 records ingested and a status of **Processing**.
 
 ![Data Ingestion](./images/batchsuccess.png)
+
+Wait until the status changes into **Success**.
+
+![Data Ingestion](./images/batchsuccess1.png)
 
 Click on the **Preview Dataset**- button to get a quick view of a small sample of the dataset to ensure that the loaded data is correct.
 
@@ -260,13 +256,11 @@ Click on the **Preview Dataset**- button to get a quick view of a small sample o
 
 ![Data Ingestion](./images/previewdata.png)
 
-Once data is loaded, we can define the correct data governance approach for our dataset.
+Once data is loaded, you can define the correct data governance approach for our dataset.
    
 ### 2.5.4 - Adding data governance to your dataset 
 
-![Data Ingestion](./images/ingestdataset.png)
-
-Now that our customer data is ingested, we want to make sure that this dataset is properly governed for usage and export control. Click on the **Data Governance** tab and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
+Now that your customer data is ingested, you need to make sure that this dataset is properly governed for usage and export control. Click on the **Data Governance** tab and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
 You can find more info on the different labels and how they will be enforced in the future through the policy framework on this link: [https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html) 
  

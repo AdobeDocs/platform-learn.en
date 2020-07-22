@@ -5,7 +5,7 @@ seo-title: Use Postman with Adobe Experience Platform APIs
 seo-description:  Postman is a tool allowing developers to quickly and easily interact with Adobe Experience Platform APIs.
 feature: data-catalog, data-governance, data-ingestion, data-science, experience-data-model, gdpr, identity, observability, opt-in, query-service, real-time-customer-profile, segmentation
 topics: 
-doc-type: technical-video
+doc-type: technical video
 activity: develop
 audience: developer, implementer
 team: tm

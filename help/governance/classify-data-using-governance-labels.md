@@ -4,7 +4,7 @@ description: Governance labels in Adobe Experience Platform enable you to tag an
 feature: governance
 topics:
 kt: 3992
-audience: data-steward, architect
+audience: data steward, architect
 doc-type: video
 activity: understand
 thumbnail: 29709.jpg

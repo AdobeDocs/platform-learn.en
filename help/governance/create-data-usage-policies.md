@@ -4,7 +4,7 @@ description: Data Usage Policies in Adobe Experience Platform allow you to restr
 feature: governance
 topics:
 kt: 4347
-audience: data-steward, architect
+audience: data steward, architect
 doc-type: video
 activity: use
 thumbnail: 32977.jpg

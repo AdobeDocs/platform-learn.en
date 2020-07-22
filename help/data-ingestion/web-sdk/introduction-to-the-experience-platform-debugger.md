@@ -5,7 +5,7 @@ feature: debugger
 topics:
 kt: 4723
 audience: engineer
-doc-type: feature-video
+doc-type: feature video
 activity: troubleshoot
 ---
 

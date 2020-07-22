@@ -4,7 +4,7 @@ description: Adobe Experience Platform Data Governance is an easily extensible f
 feature: governance
 topics: rtcdp
 kt: 3991
-audience: data-steward, architect, marketer
+audience: data steward, architect, marketer
 doc-type: video
 activity: understand
 thumbnail: 29708.jpg

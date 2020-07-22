@@ -4,7 +4,7 @@ description: Data Science Workspace helps brands leverage machine learning and a
 feature: data-science-workspace
 topics:
 kt: 3138
-audience: data-scientist,data-engineer,architect
+audience: data scientist,data engineer,architect
 doc-type: video
 activity: use
 ---

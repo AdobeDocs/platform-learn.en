@@ -4,7 +4,7 @@ description: This video shows how Data Usage Policies are enforced when activati
 feature: governance
 topics:
 kt: 4380
-audience: data-steward, architect, marketer
+audience: data steward, architect, marketer
 doc-type: video
 activity: use
 thumbnail: 33631.jpg
