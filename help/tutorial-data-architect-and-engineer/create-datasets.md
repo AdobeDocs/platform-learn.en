@@ -124,7 +124,7 @@ In this video we will apply DULE labels on Schema e.g. Luma Loyalty Schema
 1. Click **Edit Governance labels** pencil icon in right 
 1. Select I1 as address field contains email address and it is directly identifiable data that can identify or contact a specific person, rather than a device.
 
-![Dule Label](assets/datasets-dule.png)
+![Data Governance Label](assets/datasets-dule.png)
 
 1. Click Save changes
 

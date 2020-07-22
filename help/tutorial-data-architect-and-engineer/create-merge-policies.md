@@ -32,7 +32,7 @@ In this chapter we will learn how to create Merge Policy
 
 1. Save changes.
 
-# Merge Policy using API
+## Merge Policy using API
 
 1. Open Postman , Authenticate if you are not authenticated already.
 1. In Platform collection , Go to Profile and select **Create Merge Policy**
@@ -43,7 +43,7 @@ In this chapter we will learn how to create Merge Policy
    ```
 
 1. Verify Body
-   
+
    ```
       {
     "name": "Timestamp Merge Policy",
@@ -61,7 +61,7 @@ In this chapter we will learn how to create Merge Policy
    ```
 
 
-# Handling Opt-Out Requests
+## Handling Opt-Out Requests
 
 ```
 NOTE TO SME : We need to discuss and create exercise for this topic  
