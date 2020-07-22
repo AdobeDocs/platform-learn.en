@@ -26,7 +26,7 @@ activity: implement
 
 1. Click button **[!UICONTROL Create New Project]** in Quickstart menu. 
     
-    ![Create New Project](assets/adobeio-createNewProject2.png)
+    ![Create New Project](assets/adobeio-createNewProject.png)
 
 1. Inside the newly created project, Click button **[!UICONTROL Add to Project]** and then select option **[!UICONTROL API]**
    
