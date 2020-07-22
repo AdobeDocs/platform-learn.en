@@ -30,7 +30,7 @@ activity: implement
 
 1. Inside the newly created project, Click button **[!UICONTROL Add to Project]** and then select option **[!UICONTROL API]**
    
-    ![Adobe IO Project API Config](./assets/adobeio-addAPI.png)
+    ![Adobe IO Project API Config](assets/adobeio-addAPI.png)
 
 1. Filter the list by clicking **[!UICONTROL Adobe Experience Platform]**
 
@@ -66,7 +66,7 @@ activity: implement
 
 ## Set up Postman
 
-1. Download & Install Postman from https://www.postman.com/ 
+1. Download & Install [Postman](https://www.postman.com/)
 1. Open Postman and import downloaded json environment file
    ![Adobe IO Import environment](assets/postman-importEnvironment.png)
 1. In Postman, select your environment in the top-right dropdown and click the **Eye** icon to view the environment variables 
@@ -97,7 +97,7 @@ Now it's time to add the PRIVATE_KEY value to the Postman environment
    * `private.key`
    * `certificate_pub.crt`
 1. Open the `private.key` file in a text editor and copy all the content available.
-1. In Postman, on the Manage Environments > Edit screen which was still open from when you renamted the environment, paste copied values in front of **PRIVATE_KEY** in **initial value** and **current value** column.
+1. In Postman, on the Manage Environments > Edit screen which was still open from when you renamed the environment, paste copied values in front of **PRIVATE_KEY** in **initial value** and **current value** column.
 
     ![Private Key pasted into Postman](assets/postman-privateKey.png)
     

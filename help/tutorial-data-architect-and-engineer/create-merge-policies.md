@@ -11,4 +11,59 @@ activity: implement
 
 # Create Merge Policies
 
-Lorem Ipsum
+Adobe Experience Platform enables you to bring data together from multiple sources and combine it in order to see a complete view of each of your individual customers. When bringing this data together, merge policies are the rules that Platform uses to determine how data will be prioritized and what data will be combined to create that unified view.
+
+In this chapter we will learn how to create Merge Policy
+
+
+## Merge Policy using UI
+
+1. Go to **Profiles** under **Customer** section
+1. Select Merge Policies Tab
+1. Click **Create Merge Policy** button on top right.
+1. Enter Policy Name **Luma Dataset Precedence Merge Policy**
+1. Select Schema as **XDM Profile**
+1. Select Id Stitching as **Private Graph**
+1. Select Attribute Merge as **Dataset ordered**
+1.  .Drag and drop Luma Loyalty Dataset and Luma CRM Dataset to Selected Dataset panel.
+1. Change Order of Luma CRM Dataset by drag and dropping to top in the list of selected dataset.
+
+![Merge Policy](assets/mergepolicy.png)
+
+1. Save changes.
+
+# Merge Policy using API
+
+1. Open Postman , Authenticate if you are not authenticated already.
+1. In Platform collection , Go to Profile and select **Create Merge Policy**
+1. Verify URL
+   
+   ```
+   https://platform.adobe.io/data/core/ups/config/mergePolicies
+   ```
+
+1. Verify Body
+   
+   ```
+      {
+    "name": "Timestamp Merge Policy",
+    "identityGraph" : {
+        "type": "none"
+    },
+    "attributeMerge" : {
+        "type":"timestampOrdered"
+    },
+    "schema": {
+        "name":"_xdm.context.profile"
+    },
+    "default": true
+    }
+   ```
+
+
+# Handling Opt-Out Requests
+
+```
+NOTE TO SME : We need to discuss and create exercise for this topic  
+```
+

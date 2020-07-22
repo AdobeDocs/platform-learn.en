@@ -9,15 +9,28 @@ doc-type: tutorial
 activity: implement
 ---
 
-# Create a Sandbox
+# Create a sandbox
 
-In this tutorial you will be uploading sample data into your Platform account. In order to segregate this sample data from your company's actual production data, we will use the Sandbox feature in Adobe Experience Platform.
+Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
-Sandboxes provide isolated environments where you can try out functionality and then delete them when you are done.
+Later in this tutorial you will upload sample data into your Platform account. In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.  In this tutorial and in the future, we encourage you to use sandboxes to try out new approaches with your Platform implementation.
+
+<!--include note on extent of sandbox support-->
+
 
 ## Pre-requisites
 
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* User-level access to the `Luma Tutorial` product profile
+* Admin-level access to the `Luma Tutorial` product profile
+* Permission item Sandbox Management > Manage Sandboxes
+* Permission item Sandbox Management > View Sandboxes
+* Permission item Sandboxes > (any sandbox)
+
 ## Create a Sandbox
+
+So let's create a sandbox
 
 1. Click **[!UICONTROL Sandboxes]** in the left navigation
    
@@ -26,10 +39,15 @@ Sandboxes provide isolated environments where you can try out functionality and 
 1. Click **[!UICONTROL Create sandbox]** on the top right
    ![](assets/sandbox-createSandbox.png)
 
-1. Give your sandbox a **[!UICONTROL Name]** and a **[!UICONTROL Title]**. The **[!UICONTROL Name]** must be all lowercase, alphanumeric characters and hyphens.
+1. Name your sandbox `luma-tutorial` 
+1. Title your tutorial `Luma Tutorial`
    ![](assets/sandbox-nameSandbox.png)
 
-Sandboxes take approximately fifteen minutes to create and will display a "[!UICONTROL Creating]" status:
+   >[!NOTE]
+   >
+   >While you could use any arbitrary values for your sandbox name and title, sticking to the values suggested is recommended as we will refer to these labels throughout the tutorial
+
+Sandboxes take approximately fifteen minutes to create and "[!UICONTROL Creating]" status will display:
    ![](assets/sandbox-creating.png)
 
 Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next steps:
@@ -37,13 +55,11 @@ Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next s
 
 
 
-## Get Access to the Sandbox
+## Add the new sandbox to the product profile
 
-Although the sandbox is now active, you will not be able to start using it  until you have been assigned access in the Admin Console.
+Although the sandbox is now active, you will not be able to start using it until you have included it in your product profile via the Admin Console.
 
-To get access to the new sandbox you will need Administrative privileges or you will need the assistance of an administrator at your company. Here is what those the basic steps look like, although the configuration of Product Profiles and users might be different at your company.
-
-### Select the Product Profile
+### Update the product profile
 
 1. Log into the [Admin Console](https://adminconsole.adobe.com)
 1. Select **[!UICONTROL Products > Adobe Experience Platform]**

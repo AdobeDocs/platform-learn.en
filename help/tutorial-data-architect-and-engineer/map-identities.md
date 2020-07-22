@@ -11,4 +11,143 @@ activity: implement
 
 # Map Identities
 
-Lorem Ipsum
+## Create Identity Namespace
+
+In this chapter we will create identity namespaces.
+
+
+### Exercise : Mark XDM Fields For Identity
+
+1. Go to **Identities** under **Customer** section.
+1. Click **Create identity namespace** on top-right of the page.
+1. Provide details as following
+   
+    | Label         |  value    |  
+    |---------------|-----------|
+    | Display Name  | Luma Loyalty Id    | 
+    | Identity Symbol| lumaLoyaltyId    |  
+    | Type           | Cross-Device      |  
+
+1. Click Create.
+
+    ![Identity Namespace ](assets/identity-createNamespace.png)
+
+1. Repeat the same process with following details:
+
+    | Label         |  value    |  
+    |---------------|-----------|
+    | Display Name  | Luma Personal Email Id    | 
+    | Identity Symbol| lumaPersonalEmail    |  
+    | Type           | Cross-Device      | 
+
+
+1. Repeat the same process with following details:
+
+    | Label         |  value    |  
+    |---------------|-----------|
+    | Display Name  | Luma Product SKU    | 
+    | Identity Symbol| lumaProductSKU   |  
+    | Type           | Non-People     | 
+
+
+## Create Identity Namespace Using API
+
+In this chapter we will create Identity Namespace **crmId** using API
+
+
+1. In Platform Collection , Go to folder **5-Profile** 
+1. Select request **Create Namespace**
+1. Verify it's URL and body
+
+    URL
+
+    ```
+    https://platform-va7.adobe.io/data/core/idnamespace/identities
+    ```
+
+    BODY
+
+    ```
+    {
+        "name": "Luma CRM ID",
+        "code": "lumaCrmId",
+        "description": "Luma CRM Id ",
+        "idType": "Cross_device"
+    }
+    ```
+
+1. Press send button and you should get  following response with **Status :200 OK** : 
+
+    ```
+    {
+        "updateTime": 1593173280928,
+        "code": "lumaCrmId",
+        "status": "ACTIVE",
+        "description": "Luma CRM Id Number",
+        "id": 10240716,
+        "createTime": 1593173280928,
+        "idType": "Cross_device",
+        "name": "Luma CRM ID",
+        "custom": true
+    }
+    ```
+
+    ![Identity Namespace](assets/identity-createUsingApi.png)
+
+## Identity Service
+
+In this chapter we will mark schemas for primary and secondary namespaces.
+
+### Exercise : Mark XDM Fields For Identity
+
+1. Open schema **Luma Loyalty Members**
+1. Select **Luma Loyalty Details** mixin
+1. Select **loyaltyId** field under **loyalty** object
+1. In Field Properties, Select Identity Checkbox
+1. Check **Primary Identity** checkbox.
+1. Select **Luma Loyalty Id** namespace from **Identity namespaces** dropdown
+
+![Primary Identity ](assets/identity-loyalty-primary.png)
+
+1. Press **Apply** button and then press **Save** Button to save changes
+
+
+### Exercise : Mark XDM Fields For Secondary Identity
+
+1. Open schema **Luma Offline Purchase Event** 
+1. Select **Luma Identities Mixin**
+1. Go to identities object and select **crmId** field under loyalty object
+1. In Field Properties, Select Identity Checkbox
+1. Mark Primary Identity , Select **Luma CRM Id** namespace from Identities namespaces
+   
+1. Select **loyaltyId** field under loyalty object
+1. In Field Properties, Select Identity Checkbox
+1. Do not Mark Primary Identity , Select **Luma Loyalty Id** namespace from Identities namespaces
+    ![Secondary Identity ](assets/identity-offlinePurchase-secondary.png)
+    
+1.  Select **emailId** field under loyalty object
+1. In Field Properties, Select Identity Checkbox
+1. Do not Mark Primary Identity , Select **Luma Personal Email** namespace from Identities namespaces
+
+
+
+
+### Exercise : Mark Identity in Product Class
+
+1. Open **Luma Product Catalog** Schema
+1. Select **Luma Product Class**
+1. Select **productSku** field 
+1. In field properties, Check Identity & Primary Identity
+1. Select **Luma Product SKU** as identifies.
+1. Apply & Save.
+
+    ![Secondary Identity ](assets/identity-products-productSKU.png)
+
+
+### Exercise : Mark Field For Identity using API 
+
+In this exercise , we will be marking **crmId** as primary identity in **LUMA CRM Schema** using API
+
+```
+NOTE TO SME : TODO 
+```

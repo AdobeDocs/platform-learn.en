@@ -121,19 +121,221 @@ Next we need to add fields that are specific to Luma's Loyalty system. As you st
 1. Click **[!UICONTROL Apply]** and **[!UICONTROL Save]** 
 1. Verify your final Schema.
 
-## Exercise: Create an Identities Data type
+## Exercise: Create data types
 
 Custom mixins, such as your new Luma Loyalty Details Mixin, can be reused in other schemas, allowing you to enforce standard data definitions for fields used in multiple systems. Mixins, however, are specific to a base class and can only be reused in schemas that share the same base class. So, while the Luma Loyalty Details mixin can be reused in other schemas using the XDM Profile class, it cannot be used in schemas using other classes.
 
 The data type is another multi-field construct which can be reused in schemas across multiple classes. When we specified our loyalty fields with types of "object", "string", "integer", and "date"
+
+### Create a data type via the UI
+
+### Create a data type via the API
+
+
+```json
+
+{
+        "title":"Luma System Identifiers",
+        "description":"Various identifiers used in Luma's tech stack",
+        "type":"object",
+        "properties": {
+          "loyaltyId": {
+            "type":"string",
+            "title": "Loyalty Id",
+            "description": "The customer's id in the Loyalty system."
+          },
+          "crmId": {
+            "type":"string",
+            "title": "CRM Id",
+            "description": "The customer's id in the CRM system"
+          }
+        }
+} 
+
+```
 
 Should I just create
 Should i do product data type for online/offline
 
 ## Exercise: Create Luma CRM Schema
 
-Now we will create an API using
+Now we will create a schema using the API. 
 
+### Add the schema
+
+1. 
+First we need to create the schema
+
+1. Open Postman
+1. If you haven't made a call in a while your token might have expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens
+1. Open your environment variables and change the value of **CONTAINER_ID** from global to tenant
+1. Open the call **[!DNL Schema Registry API > Schemas > Create a new tenant-defined schema]**
+1. Open the Body tab and paste the following code and click **Send** to make the API call. This will create a new schema using the same `XDM Individual Profile` base class that was used in the Loyalty schema:
+
+    ```json
+    {
+    "type": "object",
+    "title": "Luma CRM",
+    "description": "Schema for CRM data of Luma Retail ",
+    "allOf": [
+      {
+        "$ref": "https://ns.adobe.com/xdm/context/profile"
+      }
+      ]
+    }
+    ```
+
+1. You should get a "201 Created" response
+1. Copy `meta:altId` from Response body. We will use it later in exercise.
+1. The new schema should be visible in the UI but without any mixins
+
+
+    >[!NOTE]
+    > Common issues making this call:
+    >
+    > 1. No auth token
+    >   Run the **IMS: JWT Generate + Auth via User Token** call to generate new tokens
+    > 1. `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`
+    >   Update the **CONTAINER_ID** environment variable from `global` to `tenant`
+    > 1. `403: PALM Access Denied. POST access is denied for this resource from access control`
+
+### Add the Mixins to the Schema
+
+1. In Postman, open the call, open the call **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema]**
+1. In the **Params** tab, paste the `meta:altId` value from the previous response as the `$id`
+1. Open the Body tab and paste the following code and click **Send** to make the API call. This will add the three standard mixins to your `Luma CRM` schema:
+
+    ```json
+    [
+      { 
+        "op": "add",
+        "path": "/allOf/-",
+        "value":  
+        {
+          "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
+          }
+        },
+        { 
+          "op": "add",
+          "path": "/allOf/-",
+          "value":  
+          {
+            "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+          }
+        },
+        { "op": "add",
+        "path": "/allOf/-",
+        "value":  
+          {
+          "$ref": "https://ns.adobe.com/xdm/context/profile-preferences-details"
+          }
+        }
+    ]
+    ```
+
+1. You should get a 200 OK status for the response and the mixins should be visible as part of your schema in the UI
+
+
+## Exercise: Add Offline Purchase Event Schema
+
+
+Now we have required datatype and custom mixin available, we will now create **Luma Offline Purchase Schema** based on **XDM ExperienceEvent** class.
+
+### Create Schema
+
+1. Go to **Schemas** under **Data Management**.
+1. Click **Create Schema** in top left
+1. Provide Display Name **Luma Offline Purchase Event**
+1. Assign class **XDM ExperienceEvent**
+1. Save it and review the difference in base structure, Notice _id and timestamp are required fields in experience event class.
+
+    ![Experience Event Base Structure](assets/schemas-offlinePurchase-experienceEventbase.png)
+
+
+### Add Mixins and Fields
+
+#### Adding Luma Identities Mixin
+
+1. Go to Mixins section, and click Add button.
+1. Search for **Luma Identities Mixin** and press **Add mixin**
+
+##### Adding Luma Purchase Event Mixin
+
+1. Now we will create another mixin for Purchase Event.
+1. Add Mixin > Create New Mixin
+1. Provide Label **Luma Product Purchase Event Mixin** and click **Add mixin**
+1. Select **Luma Product Purchase Event Mixin** and click **Add Field** icon at top of Schema Structure to add field.
+1. Provide following details in field properties
+
+| Field         |  Value          |  
+|---------------|-----------------|
+| Field Name    | purchase_event  | 
+| Display name  | Purchase Event  |  
+| Type          | Object          | 
+
+
+1. Select **purchase_event** object and click **Add Field** icon to add following fields one by one.
+
+**Receipt Number**
+
+| Field         |  Value          |  
+|---------------|-----------------|
+| Field Name    | receipt_number  | 
+| Display name  | Receipt Number  |  
+| Type          | String          | 
+| Required      | Check           | 
+
+
+**Receipt Date**
+
+| Field         |  Value          |  
+|---------------|-----------------|
+| Field Name    | receipt_date    | 
+| Display name  | Receipt Date    |  
+| Type          | DateTime        | 
+| Required      | Check           | 
+
+
+**Products**
+
+| Field         |  Value             |  
+|---------------|--------------------|
+| Field Name    | products           | 
+| Display name  | Purchased products |  
+| Type          | Luma Product Item | 
+| Array         | Check              | 
+
+
+**Receipt Total**
+
+| Field         |  Value          |  
+|---------------|-----------------|
+| Field Name    | receipt_total    | 
+| Display name  | Receipt Total   |  
+| Type          | Double          | 
+
+
+#### Verify Final Schema
+
+Click Apply and Save and your schema should look like following
+
+![Experience Event Final Structure](assets/schemas-offlinePurchase-experienceEventFinalSchema.png)
+
+## Add Web Event Schema
+
+Now we are going to add one more schema for Luma's website data. By this point you should be an expert creating schema. I will keep the 
+
+| Property         |  Value          |  
+|---------------|-----------------|
+| Schema Name    | Luma Web Events    | 
+| Class  | XDM ExperienceEvent   |  
+| Mixin          | AEP Web SDK          | 
+| Mixin          | AEP Web SDK          | 
+
+Luma Identities Mixin ( Custom Mixin)
+Profile Personal Details
+Profile Person Details
+Profile Preferences Details
 
 Schemas
 
