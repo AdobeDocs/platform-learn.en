@@ -30,7 +30,7 @@ activity: implement
     ![Success Ingestion](assets/ingestion-loyalty-preview.png)
 
 
-1. Download [`luma-offline.json`](assets/ingestion-luma-offline.json)
+1. Download [`luma-offline.json`](assets/luma-offline.json)
 1. Repeat the step 1-7 for **Luma Offline Purchase Event Dataset** as well. 
 
 
