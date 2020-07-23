@@ -59,8 +59,6 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ![Data Ingestion](./images/sb1.png)
 
-From the list of available sandboxes, select the sandbox that matches the number you've been assigned.
-
 After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./images/sb2.png)
