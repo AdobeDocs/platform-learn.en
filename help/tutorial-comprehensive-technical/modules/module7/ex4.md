@@ -69,7 +69,7 @@ Upon completion, you will see a new entry for **Dataset Created** (you might nee
 
 ![ctas-dataset-created.png](./images/ctas-dataset-created.png)
 
-As soon as you dataset is created (which can take 5-10 minutes), you can continue the exercise.
+As soon as your dataset is created (which can take 5-10 minutes), you can continue the exercise.
 
 Next Step - Option A: [7.5 Explore the dataset with Power BI](./ex5.md)
 
