@@ -11,7 +11,23 @@ activity: implement
 
 # Ingest Streaming Data
 
-Lorem Ipsum
+Streaming data ingestion allows you to send data from client-side and server-side devices in real-time.
+
+Watch this short video to learn more about streaming data ingestion:
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/understanding-streaming-ingestion.html)
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* Permission Item Datasets > View Datasets
+* Permission Item Datasets > Data Monitoring
+* Permission item Sources > View Sources
+* Permission item Sources > Manage Sources
+* Permission item Sandboxes > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
 
 ## Create a Launch Configuration
 
@@ -34,3 +50,7 @@ Next we’re going to create an Edge Configuration. This configuration will gene
 
 ## Use the Data Layer to XDM Mapper
 
+## Additional Resources
+
+* [Streaming Ingestion documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)
+* [Data Ingestion API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/ingest-api.yaml)

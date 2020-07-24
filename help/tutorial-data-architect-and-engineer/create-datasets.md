@@ -11,6 +11,26 @@ activity: implement
 
 # Create Datasets
 
+All data that is successfully ingested into Adobe Experience Platform is persisted within the Data Lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
+
+In this lesson, you will create datasets so that you can ingest data into them later on.
+
+Watch this short video to learn more about datasets:
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* Permission Item Datasets > View Datasets
+* Permission Item Datasets > Manage Datasets
+* Permission item Sources > View Sources
+* Permission item Sources > Manage Sources
+* Permission item Sandboxes > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
+
 ## Create a dataset in the UI
 
 In this chapter we will create dataset for following Schema using UI.
@@ -135,3 +155,8 @@ Repeat similar steps for other Schemas as well and identify appropriate fields a
 Note For SME : In this video you will be also explain what other labels are and when to use which label. You may ask learners to add more DULE label as they think would be right for the Schema. 
 
 ```
+
+## Additional Resources
+
+* [Datasets documentation](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/overview.html)
+* [Datasets API (part of Catalog Service) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/Datasets)

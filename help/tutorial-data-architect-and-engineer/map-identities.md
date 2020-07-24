@@ -11,6 +11,26 @@ activity: implement
 
 # Map Identities
 
+Adobe Experience Platform Identity Service helps you to gain a better view of your customer and their behavior by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real-time.
+
+Watch this short video to learn more about identity in Adobe Experience Platform:
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html)
+
+>[!IMPORTANT]
+>
+>Probabilistic private graphs is still in development and set to release at a later date.
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* Permission item Identities > Manage Identity Namespaces
+* Permission item Identities > View Identity Namespaces
+* Permission item Sandboxes > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
+
 ## Create Identity Namespace
 
 In this chapter we will create identity namespaces.
@@ -151,3 +171,8 @@ In this exercise , we will be marking **crmId** as primary identity in **LUMA CR
 ```
 NOTE TO SME : TODO 
 ```
+
+## Additional Resources
+
+* [Identity Service documentation](https://docs.adobe.com/content/help/en/experience-platform/identity/home.html)
+* [Identity Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/id-service-api.yaml)

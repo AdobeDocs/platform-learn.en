@@ -14,7 +14,7 @@ thumbnail: 36653.jpg
 
 This video shows Adobe Experience Platform’s Data Governance capabilities and how it helps brands deliver personalized experiences to their customers while providing complete control over customer data.
 
->[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
 
 ## Additional Resources
 

@@ -11,6 +11,24 @@ activity: implement
 
 # Ingest Batch Data
 
+Batch data ingestion allows you to ingest a large amount of data into Adobe Experience Platform at once. You can ingest batch data in a one time upload directly with the Platform interface or API, or you can configure regularly scheduled batch uploads from third-party services such as cloud storage services using Source connectors.
+
+Watch this short video to learn more about data ingestion:
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/understanding-data-ingestion.html)
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* Permission Item Datasets > View Datasets
+* Permission Item Datasets > Data Monitoring
+* Permission item Sources > View Sources
+* Permission item Sources > Manage Sources
+* Permission item Sandboxes > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
+
 ## Ingest data in batches by using Platform UI
 
 1. Download [`luma.json`](assets/luma-loyalty.json) file to **AEP Training Assets** folder.
@@ -98,3 +116,8 @@ You may ingest this data for Luma Offline Purchase Event Dataset in other possib
 1. Send the request and you should get all details of user
 
     ![Retrieve Profile](assets/ingestion-retrieveUsingAPI.png)
+
+## Additional Resources
+
+* [Batch Ingestion documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/batch/overview.html)
+* [Data Ingestion API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/ingest-api.yaml)

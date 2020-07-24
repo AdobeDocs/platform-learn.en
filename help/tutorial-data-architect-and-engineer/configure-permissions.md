@@ -11,35 +11,35 @@ activity: implement
 
 # Configure Permissions
 
-In this lesson, you will learn about how Adobe Experience Platform user permissions are administered using the [!DNL Adobe Admin Console]. 
+In this lesson, you will configure Adobe Experience Platform user permissions using [!DNL Adobe's Admin Console]. 
 
-Access control is a key privacy capability in Experience Platform and we always recommend limiting permissions to whatever individual users need to perform their job functions. 
+Access control is a key privacy capability in Experience Platform and we recommend limiting permissions to what individual roles need to perform their job functions. 
 
-Data Architects and Data Engineers are the power users of Adobe Experience Platform and you will need access to almost all of the permissions available in Platform in order to complete this tutorial, and later, in your day-to-day work. As part of your job, you will likely also be involved in the administration of other Platform users at your company such as marketers, analysts, and data scientists. As you complete this lesson, think about how to use these [!DNL Adobe Admin Console] features to manage other types of users.
+Data Architects and Data Engineers are the power users of Adobe Experience Platform and you will need almost all permissions both in order to complete this tutorial, and later in your day-to-day work. Data Architects are also likely be involved in the administration of *other Platform users* at your company such as marketers, analysts, and data scientists. As you complete this lesson, think about how these [!DNL Adobe Admin Console] features will be useful to manage users at your company.
 
 >[!IMPORTANT]
 >
->A System Administrator of Adobe solutions at your company will need to complete some of the steps in this lesson, which we have called out in the section headings.  If you are not System Administrator, please reach out to one and have them complete these tasks. A System Administrator is also needed after your complete some of the exercises in the Create a Sandbox lesson as well.
-
+>A System Administrator of Adobe Experience Cloud products will need to complete some of the steps in this lesson, which we have called out in the section headings.  If you are not System Administrator, please reach out to one at your company and have them complete these tasks.
+<!--is this the only lesson in which a System Admin needs to be involved?-->
+<!--when to add Launch-->
+<!--who needs to do Adobe IO-->
 
 ## About the Admin Console
 
-The [!DNL Admin Console] is the user interface used to administer user access to Adobe Experience Platform, as well as all Adobe Experience Cloud applications.
+The [!DNL Admin Console] is the interface used to administer user access to all Adobe Experience Cloud products. Some key [!DNL Admin Console] concepts to be aware of:
 
-Some key [!DNL Admin Console] concepts to be aware of:
-
-* A **product profile** is a combination of permissions, roles, and sandbox environments, tied to a specific Adobe application. Multiple product profiles can be created for a single Adobe application. For example, a "Marketer" profile could limit permissions to what a typical marketer would need to complete key tasks in the production instance of Platform. In this lesson, we will create a "Luma Tutorial" product profile with all the permissions a Data Architect and Data Engineer would need to complete this tutorial in a specific developer sandbox environment.
-* An **integration** is a connection to a Project in the Adobe IO Console. Adobe IO is Adobe's developer portal and its Console is the heart of authentication and configuration of Adobe APIs
+* A **product profile** is a combination of permissions, roles, and sandbox environments, tied to a specific Adobe application. Multiple product profiles can be created for a single Adobe product. For example, a "Marketer" profile could limit permissions to what a typical marketer would need to complete key tasks in the production instance of Platform. In this lesson, we will create a "Luma Tutorial" product profile with all the permissions a Data Architect and Data Engineer would need to complete this tutorial in a specific developer sandbox environment. If you are a System Administrator at your company, you should start thinking about how to use product profiles in Platform to accommodate your requirements.
+* An **integration** is a connection to a Project in the Adobe IO Console. Adobe IO is Adobe's developer portal and its Console is the heart of authentication and configuration of Adobe APIs. You will do more with integrations in the Adobe IO and Postman lesson
 
 Also, here is a quick summary of the roles that exist for Platform, as well as any Adobe Experience Cloud application:
 
-* System Administrators can create a product profiles, add permissions and integrations to a product profile
-* Admins of product profile  can add users, additional admins, and developers to the product profile as well as toggle services on and off.
-* Users of a product profile can complete tasks in Platform's user interface according to the permissions in the product profile. Users can also be assigned to User Groups, to streamline management.
-* Developers of a product profile can complete the tasks using Platform's API according to the permissions in the product profile
+* **System Administrators** can create product profiles, add permissions and integrations to a product profile
+* **Admins** of a product profile  can add users, additional admins, and developers to the product profile as well as toggle services on and off.
+* **Users** of a product profile can complete tasks in Platform's user interface according to the permissions in the product profile. Users can also be assigned to User Groups, to streamline management.
+* **Developers** of a product profile can complete the tasks using Platform's API according to the permissions in the product profile
 
 
-## Create a product profile (requires a system administrators)
+## Create a product profile (requires a system administrator)
 
 1. Log into the [Adobe Admin Console](https://adminconsole.adobe.com)
 1. Click **[!UICONTROL Products]** on the top navigation
@@ -75,7 +75,7 @@ At this point, if `Luma Tutorial` was your _only_ Experience Platform product pr
 
 *If you aren't already logged into the [!DNL Adobe Admin Console] as a system administrator*:
 
-1. Log into the [Adobe Admin Console](https://adminconsole.adobe.com)
+1. Log into the [!DNL Adobe Admin Console](https://adminconsole.adobe.com)
 1. Click **[!UICONTROL Products]** on the top navigation
 1. Click **[!UICONTROL Adobe Experience Platform]** on the left navigation
 1. Click on the `Luma Tutorial` profile in the list
@@ -89,8 +89,23 @@ Now add yourself as a user:
     ![Click Add User](assets/adminconsole-addUser.png)
 1. Complete the steps to add yourself as a user to the product profile
 
+## Add yourself as a developer
+
+In order to use the Platform API, you will need add yourself as a developer:
+
+1. Go to the **[!UICONTROL Developers]** tab:
+1. Click the **[!UICONTROL Add Developer]** button
+    ![Click Add User](assets/adminconsole-addDeveloper.png)
+1. Complete the steps to add yourself as a developer to the product profile
+
+Now you have almost all of the user roles and permissions required to complete the tutorial! There will be just one more tweak that you will need to make in the [!DNL Adobe Admin Console] after you add your sandbox in the next lesson. 
+
 >[!NOTE]
 >
->Many of the options in the left navigation might be disabled because we have not given you access to any of the Sandboxes yet. We will do that in the next lesson
+>We will mention the specific set of permissions used for each lesson at the top of the page in the pre-requisites section.
 
-    
+## Additional Resources
+
+* [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-console.html)
+* [Access Control documentation](https://docs.adobe.com/content/help/en/experience-platform/access-control/home.html)
+* [Access Control API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/access-control.yaml)

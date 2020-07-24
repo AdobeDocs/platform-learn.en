@@ -11,11 +11,27 @@ activity: implement
 
 # Set up Adobe IO and Postman
 
+In this lesson, we will guide you through the basic project setup in the Adobe IO console and provide you with a Postman Collection to make the necessary API calls.
+
+Platform is built API-first. While interface methods exist for all major Platform tasks and will be used in the majority of the lessons, it is important that you are familiar with how to use the Platform API. For example, you may wish to use new features before we've built them into the UI. 
+
+Watch these three short videos to learn more about getting set up with Adobe IO and Postman:
+
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* Permission item Sandboxes > `Luma Tutorial`
+* Developer-role access to the `Luma Tutorial` product profile (for API)
+
 ## Set up Adobe IO
  
 1. Create a folder on your local machine named `Platform Training Assets`. 
    
-
    * This folder will be used to save files and configuration required for this training. 
    
    *  It can be named anything but for training purpose let's go with `Platform Training Assets`, so it will be easy to reference throughout the training.
@@ -178,4 +194,13 @@ Hopefully you got a successful 200 response containing a list of the available s
 
 If your call was not successful, take a moment to debug using the error response details of the API call and review the steps above. If you get really stuck, please request help in the Community Forum or use the link in the right side of this page to "Log an issue".
 
+## API Basics
+
+content-type
+container_id
 <!--maybe have a dedicated thread for this page of the tutorial??-->
+
+## Additional Resources
+
+* [Adobe IO Console documentation](https://www.adobe.io/apis/experienceplatform/console/docs.html)
+* [Postman website](https://www.postman.com/)

@@ -13,20 +13,23 @@ activity: implement
 
 Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
-Later in this tutorial you will upload sample data into your Platform account. In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.  In this tutorial and in the future, we encourage you to use sandboxes to try out new approaches with your Platform implementation.
+In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.
 
 <!--include note on extent of sandbox support-->
 
+Watch this short video to learn more about sandboxes:
 
-## Pre-requisites
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?quality=12&learn=on)
+
+## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* User-level access to the `Luma Tutorial` product profile
-* Admin-level access to the `Luma Tutorial` product profile
-* Permission item Sandbox Management > Manage Sandboxes
 * Permission item Sandbox Management > View Sandboxes
+* Permission item Sandbox Management > Manage Sandboxes
 * Permission item Sandboxes > (any sandbox)
+* User-role access to the `Luma Tutorial` product profile
+* Admin-level access to the `Luma Tutorial` product profile
 
 ## Create a Sandbox
 
@@ -84,3 +87,8 @@ Although the sandbox is now active, you will not be able to start using it until
 1. If you reload the You should now be able to see the new sandbox appear in the sandbox dropdown in the Platform interface:
 
    ![Confirm Sandbox](assets/sandbox-confirmDropdown.png)
+
+## Additional Resources
+
+* [Sandboxes documentation](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html)
+* [Sandbox API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/sandbox-api.yaml)

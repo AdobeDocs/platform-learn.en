@@ -1,8 +1,33 @@
+---
+title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+description: 
+feature: data ingestion
+topics: 
+kt: 4348
+audience: data architect,data engineer
+doc-type: tutorial
+activity: implement
+---
 
 # Setup and Run Query
 
-In this chapter we will learn how to setup,write and execute queries.
+In this lesson you will learn how to setup, write and execute queries to validate the data you have ingested.
 
+Adobe Experience Platform Query Service helps you make sense of your data by allowing you to use standard SQL to query data in Platform. Using Query Service, you can join any dataset in the Data Lake and capture the query results as a new dataset for use in reporting, machine learning, or for ingestion into Real-time Customer Profile. 
+
+Watch this short video to learn more about Query Service:
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/queries/understanding-query-service.html)
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* Permission item Sandbox Management > Manage Sandboxes
+* Permission item Sandbox Management > View Sandboxes
+* Permission item Sandboxes > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
 
 1. Go to **Data Management** section and select **Queries**
 1. Go to top-right and click **Create Query** , this will open a textbox to run and execute query.
@@ -78,4 +103,9 @@ In this exercise, we will join two datasets **Luma Loyalty Dataset** & **Luma Of
 1. Click on Output Dataset button
 1. Provide name and description to the dataset
 1. Save.
-1. Go to **Datasets** under **Data Management** to find new dataset created .
+1. Go to **Datasets** under **Data Management** to find new dataset created.
+
+## Additional Resources
+
+* [Query Service documentation](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)
+* [Query Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)

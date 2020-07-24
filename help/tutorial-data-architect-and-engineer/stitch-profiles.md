@@ -11,6 +11,26 @@ activity: implement
 
 # Stitch Profiles
 
+
+In this lesson, you will enable your schemas and datasets for Real-time Customer Profile.
+
+With Real-time Customer Profile, you can see a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction. 
+
+Watch this short video to learn more about Real-time Customer Profile:
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/profiles/understanding-the-real-time-customer-profile.html)
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+
+* Permission item Sandbox Management > View Profiles
+* Permission item Sandbox Management > Manage Profiles
+* Permission item Sandboxes > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
+
 ## UI
 
 In this chapter we will learn how to enable Unified Profile in Schema and Datasets.
@@ -112,3 +132,8 @@ Without these , I am getting Forbidden error as below. Please check with some on
     "detail": "Not permitted to create or modify tags for namespace(adobe/pqs/table)."
 
 ```
+
+## Additional Resources
+
+* [Real-time Customer Profile documentation](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
+* [Real-time Customer Profile API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)

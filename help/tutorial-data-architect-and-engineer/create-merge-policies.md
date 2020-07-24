@@ -13,7 +13,22 @@ activity: implement
 
 Adobe Experience Platform enables you to bring data together from multiple sources and combine it in order to see a complete view of each of your individual customers. When bringing this data together, merge policies are the rules that Platform uses to determine how data will be prioritized and what data will be combined to create that unified view.
 
-In this chapter we will learn how to create Merge Policy
+In this lesson you will learn how to create Merge Policies.
+
+<!--Should this be part of Profile lesson-->
+
+<!-->[!VIDEO]()-->
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+
+* Permission item Sandbox Management > View Sandboxes
+* Permission item Sandbox Management > Manage Sandboxes
+* Permission item Sandboxes > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
 
 
 ## Merge Policy using UI
@@ -65,3 +80,7 @@ In this chapter we will learn how to create Merge Policy
 NOTE TO SME : We need to discuss and create exercise for this topic  
 ```
 
+## Additional Resources
+
+* [Merge Policies documentation](https://docs.adobe.com/help/en/experience-platform/profile/ui/merge-policies.html)
+* [Merge Policies API (part of Real-time Customer Profile API) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/Merge_policies)

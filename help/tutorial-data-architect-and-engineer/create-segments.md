@@ -11,6 +11,27 @@ activity: implement
 
 # Create segments
 
+Once you have Real-time Customer Profiles, you can create segments and audiences to create groups of individuals who share similar traits and might respond similarly to marketing strategies.
+
+While the terms segment and audience are often used interchangeable, in Experience Platform we sometimes make a subtle distinction between:
+
+* **Segment definition**: The rule set used to describe key characteristics or behavior of a target audience. Once conceptualized, the rules outlined in a segment definition are used to determine qualifying audience members for a segment.
+* **Audience**: The resulting set of profiles that meet the criteria of a segment definition.
+
+Watch this short video to learn more about creating segments:
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/segments/create-segments.html)
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* Permission item Sandbox Management > Manage Sandboxes
+* Permission item Sandbox Management > View Sandboxes
+* Permission item Sandboxes > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
+
 ## Create a basic segment
 
 1. Go to **Segments** under **customer** section in platform
@@ -107,8 +128,9 @@ https://platform-va7.adobe.io/data/core/ups/segment/definitions
 
 ```
  NOTE TO SME : All the API body or URL referes to _wwfovlab011 tenant , it may change for learners so please educate them about this in video.
-``
+```
 
+## Additional Resources
 
-
-
+* [Segmentation Service documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html)
+* [Segmentation Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/segmentation.yaml)

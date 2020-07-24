@@ -1,5 +1,5 @@
 ---
-title: Create a Profile-based Schema | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Model data into schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 description: 
 feature: data ingestion
 topics: 
@@ -11,17 +11,44 @@ activity: implement
 
 # Model Data in Schemas
 
-## Intro to XDM
+Standardization and interoperability are key concepts behind Adobe Experience Platform. Experience Data Model (XDM), driven by Adobe, is an effort to standardize customer experience data and define schemas for customer experience management.
+
+XDM is a publicly documented specification designed to improve the power of digital experiences. It provides common structures and definitions for any application to use to communicate with Platform services. By adhering to XDM standards, all customer experience data can be incorporated into a common representation that can deliver insights in a faster, more integrated way. You can gain valuable insights from customer actions, define customer audiences through segments, and express customer attributes for personalization purposes.
+
+XDM is the foundational framework that allows Adobe Experience Cloud, powered by Experience Platform, to deliver the right message to the right person, on the right channel, at exactly the right moment. The methodology on which Experience Platform is built, **XDM System**, operationalizes Experience Data Model schemas for use by Platform services.
 
 Explain Schemas, Mixins, Fields, and Datatypes
 
-Data Type
-Mixin
-Schema
+Key terms:
+
+* **Schema**: a representation of your data. A schema is comprised of a class and optional mixins and is used to create datasets. A schema includes behavioral attributes, timestamp, identity, attribute definitions, and relationships.
+* **XDM Profile Class**: a common schema class used to represent record data
+* **XDM ExperienceEvent Class**: a common schema class used to reporesent time-series data
+* **Mixin**: allows users to extend reusable fields that contain variables defining one or more attribute intended to be included in a schema or added to a class.
+* **Standard Mixin**: an open-source Mixin built to conform to common industry standards, used to accelerate implementation and support repeatable services operating on the data
+* **Data type**: a reusable object with properties in a hierarchical representation. These can be standard types or custom-defined defined types to describe your own data in your own way (for example, a collection of fields that you use to describe your products). Unlike Mixins, data types can be used in schemas regardless of the class.
+* **Field**: a field is the lowest level element of a schema. Each field has a name for referencing and a type to identify the type of data that it contains. Field types can include, integer, number, string, Boolean and schema.
+
+Watch this short video to learn more about schemas and the Experience Data Model (XDM):
+
+>[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/schemas/understanding-the-xdm-system-and-experience-data-model.html)
+
+
+## Permissions required
+
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+
+* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]**
+* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL Manage Schemas]**
+* Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
+* User-role access to the `Luma Tutorial` product profile
+* Developer-role access to the `Luma Tutorial` product profile (for API)
+
+
 
 ## Luma's goals
 
-## Exercise: Create Luma Loyalty Members schema
+## Create Luma Loyalty Members schema
 
 In this exercise we will create a Luma Loyalty Schema to ingest loyalty data of customers.
 
@@ -464,3 +491,12 @@ mobile_phone
 personalEmail
 As you go through these steps, see if you can determine which CRM fields match to which XDM fields.
 
+## Additional Resources
+
+* [Experience Data Model (XDM) System documentation](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html)
+* [Schema Registry API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/schema-registry.yaml)
+
+## Additional Resources
+
+* [Experience Data Model (XDM) System documentation](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html)
+* [Schema Registry API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/schema-registry.yaml)
