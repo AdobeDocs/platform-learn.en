@@ -16,9 +16,8 @@ In this lesson, you will enable your schemas and datasets for Real-time Customer
 
 With Real-time Customer Profile, you can see a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction. 
 
-Watch this short video to learn more about Real-time Customer Profile:
-
->[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/profiles/understanding-the-real-time-customer-profile.html)
+First, watch this short video to learn more about Real-time Customer Profile:
+>[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 
 ## Permissions required
 

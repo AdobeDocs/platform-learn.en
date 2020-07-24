@@ -17,8 +17,7 @@ In this lesson, you will create a development environment sandbox that you can u
 
 <!--include note on extent of sandbox support-->
 
-Watch this short video to learn more about sandboxes:
-
+First, watch this short video to learn more about sandboxes:
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?quality=12&learn=on)
 
 ## Permissions required

@@ -13,9 +13,8 @@ activity: implement
 
 Streaming data ingestion allows you to send data from client-side and server-side devices in real-time.
 
-Watch this short video to learn more about streaming data ingestion:
-
->[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/understanding-streaming-ingestion.html)
+First, watch this short video to learn more about streaming data ingestion:
+>[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 ## Permissions required
 

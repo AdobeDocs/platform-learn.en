@@ -29,9 +29,8 @@ Key terms:
 * **Data type**: a reusable object with properties in a hierarchical representation. These can be standard types or custom-defined defined types to describe your own data in your own way (for example, a collection of fields that you use to describe your products). Unlike Mixins, data types can be used in schemas regardless of the class.
 * **Field**: a field is the lowest level element of a schema. Each field has a name for referencing and a type to identify the type of data that it contains. Field types can include, integer, number, string, Boolean and schema.
 
-Watch this short video to learn more about schemas and the Experience Data Model (XDM):
-
->[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/schemas/understanding-the-xdm-system-and-experience-data-model.html)
+First, watch this short video to learn more about schemas and the Experience Data Model (XDM):
+>[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
 
 
 ## Permissions required

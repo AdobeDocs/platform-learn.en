@@ -13,9 +13,8 @@ activity: implement
 
 Adobe Experience Platform Identity Service helps you to gain a better view of your customer and their behavior by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real-time.
 
-Watch this short video to learn more about identity in Adobe Experience Platform:
-
->[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html)
+First, watch this short video to learn more about identity in Adobe Experience Platform:
+>[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
 
 >[!IMPORTANT]
 >

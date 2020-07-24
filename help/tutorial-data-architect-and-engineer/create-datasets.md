@@ -15,9 +15,8 @@ All data that is successfully ingested into Adobe Experience Platform is persist
 
 In this lesson, you will create datasets so that you can ingest data into them later on.
 
-Watch this short video to learn more about datasets:
-
->[!VIDEO](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-ingestion/create-datasets-and-ingest-data.html)
+First, watch this short video to learn more about datasets:
+>[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
 
 ## Permissions required
 

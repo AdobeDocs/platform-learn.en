@@ -15,8 +15,7 @@ In this lesson, we will guide you through the basic project setup in the Adobe I
 
 Platform is built API-first. While interface methods exist for all major Platform tasks and will be used in the majority of the lessons, it is important that you are familiar with how to use the Platform API. For example, you may wish to use new features before we've built them into the UI. 
 
-Watch these three short videos to learn more about getting set up with Adobe IO and Postman:
-
+First, watch these three short videos to learn more about getting set up with Adobe IO and Postman:
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 >[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)

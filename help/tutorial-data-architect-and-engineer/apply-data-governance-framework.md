@@ -13,6 +13,7 @@ activity: implement
 
 Lorem Ipsum
 
+First, watch these short videos about data governance:
 >[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
 >[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
 
