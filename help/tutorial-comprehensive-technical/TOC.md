@@ -129,3 +129,10 @@ audience: all
   + [16.4 Load data from BigQuery into Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/module16/ex4.md)
   + [16.5 Analyze Google Analytics Data using Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/module16/ex5.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module16/summary.md)
++ 17 - Adobe Experience Platform and Microsoft Dynamics 365 {#module17}
+  + [Overview](/help/tutorial-comprehensive-technical/modules/module17/adobe-experience-platform-microsoft-dynamics-365.md)
+  + [17.1 Create your Microsoft Dynamics 365 account](/help/tutorial-comprehensive-technical/modules/module17/ex1.md)
+  + [17.2 Connect Microsoft Dynamics 365 to Adobe Experience Platform via a Source Connector](/help/tutorial-comprehensive-technical/modules/module17/ex2.md)
+  + [17.3 Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics](/help/tutorial-comprehensive-technical/modules/module17/ex3.md)
+  + [17.4 Update a contact in Microsoft Dynamics 365 and automatically trigger a journey](/help/tutorial-comprehensive-technical/modules/module17/ex4.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module17/summary.md)
