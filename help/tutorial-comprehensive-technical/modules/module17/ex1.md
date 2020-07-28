@@ -92,9 +92,9 @@ You'll then see this.
 
 Use the following values:
 
-- Name: `admin`
-- Password: `Password_1234`
-- Confirm password: `Password_1234 `
+- Name: **admin**
+- Password: **Password_1234**
+- Confirm password: **Password_1234**
 
 ![Sign in](./images/signinno-07.png)
 
@@ -229,7 +229,7 @@ Click **Add permissions**.
 
 ![Create Azure App](./images/app-Auth-11.png)
 
-You'll now see this. Click **Grant admin constent for Adobe**.
+You'll now see this. Click **Grant admin consent for Adobe**.
 
 ![Create Azure App](./images/app-Auth-11a.png)
 
@@ -270,7 +270,7 @@ Where to find these variables?
   
   ![Create Azure App](./images/durl.png)
 
--  **REGION**
+- **REGION**
 
   Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://aepdemovangeluw1.crm4.dynamics.com**. In this case, the field **REGION** is equal to **crm4**.
   

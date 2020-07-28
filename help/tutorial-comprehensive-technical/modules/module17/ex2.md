@@ -29,7 +29,7 @@ A new browser tab will open. You'll see this.
 
 ![iFrame](./images/iframe-01a.png)
 
-In the top meu, click **Settings**, then click **Customizations**.
+In the top menu, click **Settings**, then click **Customizations**.
 
 ![iFrame](./images/iframe-02.png)
 
@@ -69,8 +69,8 @@ A new browser tab will appear.
 
 Enter the following details:
 
-* Display Name: **Sentiment**
-* Data type: **Option Set**
+- Display Name: **Sentiment**
+- Data type: **Option Set**
 
 You'll then have this:
 
@@ -122,11 +122,11 @@ After refreshing the browser window, go to the Field Explorer on the right and s
 
 You now see the new field called **Sentiment** in the list of Custom Fields.
 
-![](./images/newfield-06.png)
+![D365](./images/newfield-06.png)
 
 Now drag your new field **Sentiment** from the Field Explorer window to below the **Address** field.
 
-![](./images/newfield-addsentiment.gif)
+![D365](./images/newfield-addsentiment.gif)
 
 Click **Save**.
 
@@ -134,33 +134,33 @@ Click **Save**.
 
 This will take a few seconds and there will be no warning when completed.
 
-Once your changes have been savec, click **Publish**.
+Once your changes have been saved, click **Publish**.
 
-![](./images/newfield-07.png)
+![D365](./images/newfield-07.png)
 
 This will take a few seconds. You will see the following message but there will be no warning when completed.
 
-![](./images/newfield-08.png)
+![D365](./images/newfield-08.png)
 
 Once your changes have been published, you can now close this window.
 
 You'll then be back here, close this window as well.
 
-![](./images/newfield-09.png)
+![D365](./images/newfield-09.png)
 
 Return to your Microsoft Dynamics 365 dashboard.
 
 In the left menu, click **Contact**. 
 
-![](./images/cthome1.png)
+![D365](./images/cthome1.png)
 
 You now see your list of Contacts. Click any contact to view the Contact record.
 
-![](./images/cthome2.png)
+![D365](./images/cthome2.png)
 
 You should see the new Sentiment field:
 
-![](./images/newfield-incontact.png)
+![D365](./images/newfield-incontact.png)
 
 ## 17.2.2 Connect Adobe Experience Platform to Microsoft Dynamics 365
 
@@ -200,7 +200,7 @@ After filling out all the fields, click **Connect to source**.
 
 ![Connect](./images/connect04.png)
 
-Wait for the connection to be made. When succesful you should see:
+Wait for the connection to be made. When successful you should see:
 
 ![Connect](./images/connect05.png)
 
@@ -298,7 +298,7 @@ Click **Next**.
 
 Review your configuration
 
-![](./images/connect-review.png)
+![D365](./images/connect-review.png)
 
 Click **Finish**.
 

@@ -18,7 +18,7 @@ After creating a journey that will trigger when customer sentiment changes, you'
 
 Go to [https://flow.microsoft.com](https://flow.microsoft.com). Sign in with the Microsoft account you created in exercise 1.
 
-You'll be redirected to the Microsoft Power Automate homescreen.
+You'll be redirected to the Microsoft Power Automate home screen.
 
 ![Automate](./images/automate0-01.png)
 
@@ -126,7 +126,7 @@ Next, you need to enter the **Body** of the HTTP request.
 
 Copy the below payload.
 
-```
+```json
 {
   "header": {
     "datasetId": "--msftProfileDatasetId--",
@@ -169,6 +169,7 @@ Copy the below payload.
   }
 }
 ```
+
 Click **Save**.
 
 ![Automate](./images/automate0-save.png)

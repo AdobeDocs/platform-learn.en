@@ -12,10 +12,10 @@ activity:
 
 In this exercise, you'll be doing the following tasks:
 
--	Modify an existing journey, created in Module 6, to enable creation of contact in Microsoft Dynamics 365. For this modification we will be creating an action in Journey Orchestration.
--	Verify the contact is created in Microsoft Dynamics 365 once you have submitted the Registration form on the AEP Demo website. 
--	Setup a data flow from Microsoft Dynamics 365 to Adobe Experience Platform using Microsoft Power Automate. Power Automate is a service that helps you create automated workflows between your favourite apps and services to synchronize files, get notifications, collect data and more.
--	Lastly, you'll test the complete flow and understand how data flows between applications.
+- Modify an existing journey, created in Module 6, to enable creation of contact in Microsoft Dynamics 365. For this modification we will be creating an action in Journey Orchestration.
+- Verify the contact is created in Microsoft Dynamics 365 once you have submitted the Registration form on the AEP Demo website. 
+- Setup a data flow from Microsoft Dynamics 365 to Adobe Experience Platform using Microsoft Power Automate. Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
+- Lastly, you'll test the complete flow and understand how data flows between applications.
 
 ## 17.3.1 Create Contact in Dynamics 365 using Journey Orchestration 
 
@@ -50,7 +50,7 @@ Fill out the following fields like this:
 - URL: **https://salesvelocity.adobeio-static.net/api/v1/web/d365_prd/crmOperationsBulk**
 - Authentication: **No authentication**
 
-**Note** : Here we are using a Runtime Action for making a call to Micosoft Dynamics 365 APIs. This Runtime call when made via an action consumed in Journey will help us create `Contact` in Microsoft Dynamics 365.
+**Note** : Here we are using a Runtime Action for making a call to Microsoft Dynamics 365 APIs. This Runtime call when made via an action consumed in Journey will help us create `Contact` in Microsoft Dynamics 365.
 
 Your action now looks like this:
 
@@ -60,7 +60,7 @@ Next, under **Message parameters** you will need to add the following payload by
 
 ![JO](./images/createaction-01.png)
 
-The Field configuartion screen will appear.
+The Field configuration screen will appear.
 
 ![JO](./images/createaction-02.png)
 
@@ -68,38 +68,38 @@ Use this payload json, you will need to add the Microsoft Dynamics 365 and Micro
 
 Copy this json:
 
-```
+```json
 {
-	"d365_config": {
-		"webApiUrl": "",
-		"authorityUrl": "",
-		"resource": "",
-		"clientId": "",
-		"username": "",
-		"password": ""
-	},
-	"entity": "contacts",
-	"action": "insert",
-	"response_attributes": "*",
-	"data": [
-		{
-			"emailaddress1": {
-				"toBeMapped": true,
-				"dataType": "string",
-				"label": "email"
-			},
-			"firstname": {
-				"toBeMapped": true,
-				"dataType": "string",
-				"label": "fName"
-			},
-			"lastname": {
-				"toBeMapped": true,
-				"dataType": "string",
-				"label": "lName"
-			}
-		}
-	]
+ "d365_config": {
+ "webApiUrl": "",
+ "authorityUrl": "",
+ "resource": "",
+ "clientId": "",
+ "username": "",
+ "password": ""
+ },
+ "entity": "contacts",
+ "action": "insert",
+ "response_attributes": "*",
+ "data": [
+ {
+ "emailaddress1": {
+ "toBeMapped": true,
+ "dataType": "string",
+ "label": "email"
+ },
+ "firstname": {
+ "toBeMapped": true,
+ "dataType": "string",
+ "label": "fName"
+ },
+ "lastname": {
+ "toBeMapped": true,
+  "dataType": "string",
+ "label": "lName"
+}
+}
+]
 }
 ```
 
