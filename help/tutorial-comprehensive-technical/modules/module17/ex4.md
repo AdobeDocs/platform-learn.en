@@ -107,7 +107,7 @@ Follow these instructions to set the fields of the HTTP expression builder:
 
 Enter the following Header values
 
-| Header | Value
+| Header | Value|
 |--- |--- |
 | **Content-Type** | **application/json** |
 | **Accept-Encoding** | **gzip, deflate, br**|

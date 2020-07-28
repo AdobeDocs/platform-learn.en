@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-## 17. Adobe Experience Platform and Microsoft Dynamics 365
+# 17. Adobe Experience Platform and Microsoft Dynamics 365
 
 **Authors: [Nishant Pithia](https://www.linkedin.com/in/npithia/), [Alastair Malkin](https://www.linkedin.com/in/alastair-malkin-068340/), [Prateek Tewari](https://www.linkedin.com/in/prateektewari/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
