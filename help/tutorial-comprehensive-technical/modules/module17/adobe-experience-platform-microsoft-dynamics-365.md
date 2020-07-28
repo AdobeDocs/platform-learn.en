@@ -24,6 +24,7 @@ Finally, you'll use Journey orchestration to connect directly with Microsoft Dyn
 - Leverage Journey Orchestration to connect directly with Microsoft Dynamics 365 to create a contact record
 
 ## Prerequisites
+
 - You should have completed [Module 6 - Journey Orchestration](../module6/journey-orchestration-create-account.md)
 - Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
 - Access to Journey Orchestration
