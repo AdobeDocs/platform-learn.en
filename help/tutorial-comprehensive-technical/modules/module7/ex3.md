@@ -525,7 +525,7 @@ And replace
 enter your name
 ```
 
-Do not remove ```/\*``` and ```\*/```. Your modified statement in notepad should look like:
+Do not remove `/\*` and `\*/`. Your modified statement in notepad should look like:
 
 ![edit-query-notepad.png](./images/edit-query-notepad.png)
 
