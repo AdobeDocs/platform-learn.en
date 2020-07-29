@@ -10,9 +10,187 @@ activity:
 
 # 17.4 Update a contact in Microsoft Dynamics 365 and automatically trigger a journey
 
-## 17.4.1 Configure a journey to trigger when sentiment changes
+## 17.4.1 Create a segment in Adobe Experience Platform for customers with a negative sentiment
 
-## 17.4.2 Create automation using Microsoft Automate (Flow) to listen to the sentiment change
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform/home).
+
+![demo](./images/home.png)
+
+In the left menu, go to **Segments**.
+
+![demo](./images/segments1.png)
+
+In Segments, click **+ Create Segment**.
+
+![demo](./images/segments2.png)
+
+In Attributes, click **XDM Individual Profile**.
+
+![demo](./images/segments3.png)
+
+Click your tenant specific object, which is similar to **--aepTenantIdSchema--**.
+
+![demo](./images/segments4.png)
+
+Click **sentiment**.
+
+![demo](./images/segments5.png)
+
+Drag and drop **sentiment** onto the canvas.
+
+![demo](./images/segments6.png)
+
+Enter the value **Negative**.
+
+![demo](./images/segments7.png)
+
+Go to **Events** and click **XDM ExperienceEvent**.
+
+![demo](./images/segments8.png)
+
+Click your tenant specific object, which is similar to **--aepTenantIdSchema--**.
+
+![demo](./images/segments9.png)
+
+Click **brand**.
+
+![demo](./images/segments10.png)
+
+Drag and drop **ldap** to the canvas.
+
+![demo](./images/segments11.png)
+
+Enter your ldap.
+
+![demo](./images/segments12.png)
+
+Use this naming convention to name your segment: **ldap - D365 Sentiment: Negative**, in this example that should be **vangeluw - D365 Sentiment: Negative**.
+
+![demo](./images/segments12a.png)
+
+Click **Save**. After clicking Save, you'll be redirected here:
+
+![demo](./images/segments13.png)
+
+
+## 17.4.2 Configure a journey to trigger when sentiment becomes negative
+
+Go to [https://experience.adobe.com/#/home](https://experience.adobe.com/#/home). Click to open **Journey Orchestration**.
+
+![JO](./images/exchome.png)
+
+You'll then be redirected to the Journey Orchestration homepage. Click **Create** to create a new journey.
+
+![JO](./images/jo1.png)
+
+You'll then see this.
+
+![JO](./images/jo2.png)
+
+Enter a name for your journey. Use this naming convention: **ldap - D365 Sentiment: Negative**, which in this example becomes **vangeluw - D365 Sentiment: Negative**. 
+
+Click **OK**.
+
+![JO](./images/jo3.png)
+
+From the left menu, drag and drop the **Segment Qualification** event onto the canvas.
+
+![JO](./images/jo4.png)
+
+Click the **Edit** icon to select a segment.
+
+![JO](./images/jo5.png)
+
+In the popup, select the segment you created in exercise 17.4.1, which was named **ldap - D365 Sentiment: Negative**.
+
+Click **Save**.
+
+![JO](./images/jo6.png)
+
+Click **OK**.
+
+![JO](./images/jo7.png)
+
+In the left menu, go to **Actions** and search for the action **smsTwilioLdap** that you created in module 12.
+
+![JO](./images/jo8.png)
+
+Drag and drop the action **smsTwilioLdap** onto the canvas as the next step in your journey. 
+
+Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
+
+![JO](./images/jo9.png)
+
+You'll see a popup with the **Simple Mode Editor**.
+
+![JO](./images/jo10.png)
+
+In the popup you'll see, click on **Advanced Mode**. You'll then see this.
+
+![JO](./images/jo11.png)
+
+Paste this code in the **Advanced Mode Editor**. Click **OK**.
+
+In this text message, you'll use the customer's first name. You can either select the path to the field First name, or you can copy and paste the below text.
+
+FYI: If you paste the below text, please verify the path as it's possible that in your Adobe Experience Platform instance, the data source and field group are named in a different way. 
+
+`#{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + ", we'd like to apologize for the negative experience you had. We're looking into this and we'll contact you in the next 2 business days."`
+
+![JO](./images/jo12.png)
+
+You should now have this. Click **OK** to save your changes.
+
+![JO](./images/jo13.png)
+
+Next, click on the **Edit** icon for the Action Parameter **MOBILENR**.
+
+![JO](./images/jo14.png)
+
+You'll see a popup with the **Simple Mode Editor**.
+
+![JO](./images/jo15.png)
+
+In the popup you'll see, click on **Advanced Mode**. You'll then see this.
+
+![JO](./images/jo16.png)
+
+Paste this code in the **Advanced Mode Editor**. 
+
+`substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 12)`
+
+FYI: This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044`.
+Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
+
+`substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
+
+Click **OK** to save your changes. You'll then have this.
+
+Click **OK** once more.
+
+![JO](./images/jo17.png)
+
+Next, in the left menu, go to Orchestration.
+
+![JO](./images/jo18.png)
+
+Drag and drop the orchestration event **End** onto the canvas. Click **OK**
+
+![JO](./images/jo19.png)
+
+Your journey is ready to be published now. Click **Publish**.
+
+![JO](./images/jo20.png)
+
+Click **Publish** again.
+
+![JO](./images/jo21.png)
+
+Your journey is now published.
+
+![JO](./images/jo22.png)
+
+## 17.4.3 Create automation using Microsoft Automate (Flow) to listen to the sentiment change
 
 After creating a journey that will trigger when customer sentiment changes, you'll now create a flow in Microsoft Power Automate that will listen to a change to the sentiment field in Microsoft Dynamics 365 and then send an update to the Real-time Customer Profile in Adobe Experience Platform.
 
@@ -174,15 +352,17 @@ Click **Save**.
 
 ![Automate](./images/automate0-save.png)
 
-To test your automation, go back to your Microsoft Dynamics 365 Dashboard, and go to **Contacts**. Open a contact record.
+To test your automation, go back to your Microsoft Dynamics 365 Dashboard, and go to **Contacts**. Open the contact record for the profile you created on the AEP Demo website as part of the previous exercise.
 
-![Automate](./images/contacts.png)
+![JO](./images/aepdemo3.png)
 
-Scroll down to the **Sentiment** field and change the value for that customer. Lastly, save your changes.
+Scroll down to the **Sentiment** field and change the value for that customer to **Negative**. Lastly, save your changes.
 
 ![Automate](./images/contacts1.png)
 
-By saving your changes in Microsoft Dynamics 365, an automated request will be sent from Microsoft Dynamics 365 to Adobe Experience Platform which will update the Real-time Customer Profile in Adobe Experience Platform and as a consequence, a journey in Journey Orchestration will be activated.
+By saving your changes in Microsoft Dynamics 365, an automated request will be sent from Microsoft Dynamics 365 to Adobe Experience Platform which will update the Real-time Customer Profile in Adobe Experience Platform and as a consequence, your journey in Journey Orchestration will be activated. You should now receive the text message within seconds.
+
+![Automate](./images/contactssms.png)
 
 Next Step: [Summary & benefits](./summary.md)
 

@@ -39,12 +39,7 @@ Finally, you'll use Journey orchestration to connect directly with Microsoft Dyn
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architectural Overview](./images/architecture.png)
-
-Flow: 
-
-![Architectural Overview](./images/flow-Module19.gif)
-
+![Architectural Overview](./images/architecturew.png)
 
 ## Exercises
 
