@@ -200,6 +200,10 @@ You'll be redirected to the Microsoft Power Automate home screen.
 
 ![Automate](./images/automate0-01.png)
 
+In the top right menu bar, click **Environments** and select the environment you just created.
+
+![Automate](./images/automate0-01a.png)
+
 In the left menu, click **My Flows**.
 
 ![Automate](./images/automate0-02.png)
@@ -208,7 +212,7 @@ Click **+ New**, then click **Automated - from blank**.
 
 ![Automate](./images/automate0-03.png)
 
-In Choose your flow's trigger, search for **Dynamics**. From the result list, select **When a record is updated**
+In Choose your flow's trigger, search for **common**. From the result list, select **When a record is updated**
 
 ![Automate](./images/automate0-05.png)
 
@@ -220,7 +224,11 @@ You will be redirected to the **Flow creation** screen.
 
 ![Automate](./images/automate0-07.png)
 
-From the **Organization Name** select **Adobe** and in the **Entity Name** type **Contacts** and then select **Contacts**.
+Select these settings:
+
+- **Environment**: select **Adobe(aepdemoldapX)**
+- **Entity Name**: select **Contacts**
+- **Scope**: select **User**
 
 ![Automate](./images/automate0-08.png)
 
@@ -240,7 +248,7 @@ In the **Condition** panel, click the **Choose a value** field and start searchi
 
 ![Automate](./images/automate0-13.png)
 
-Click **Sentiment** and you'll see it assigned into the Condition.
+Click **Sentiment Value** and you'll see it assigned into the Condition.
 
 ![Automate](./images/automate0-14.png)
 
@@ -360,7 +368,7 @@ Scroll down to the **Sentiment** field and change the value for that customer to
 
 ![Automate](./images/contacts1.png)
 
-By saving your changes in Microsoft Dynamics 365, an automated request will be sent from Microsoft Dynamics 365 to Adobe Experience Platform which will update the Real-time Customer Profile in Adobe Experience Platform and as a consequence, your journey in Journey Orchestration will be activated. You should now receive the text message within seconds.
+By saving your changes in Microsoft Dynamics 365, an automated request will be sent from Microsoft Dynamics 365 to Adobe Experience Platform which will update the Real-time Customer Profile in Adobe Experience Platform and as a consequence, your journey in Journey Orchestration will be activated. You should now receive the text message within minutes.
 
 ![Automate](./images/contactssms.png)
 

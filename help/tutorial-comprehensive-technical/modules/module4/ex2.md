@@ -220,12 +220,9 @@ Continue in the **AEP** definition screen
 Key | Value
 ---------|----------
 **alexaBrandName** | **luma retail**
-**applicationId** | **--parseAppKey--**
 **emailAddress** | **rmaur@adobe.com**
-**experienceEventPostbackURL** | **--dcsInletId--**
-**javascriptKey** | **--parseJavaScriptKey--**
-**ldap** | **rmaur**
-**serverURL** | **https://parseapi.back4app.com**
+**ldap** | **--demoProfileLdap--**
+**configurationId** | **--configurationID--**
     
 Ensure you replace **alexaBrandName**, **ldap** and **emailAddress** with your specific configuration details.
 
