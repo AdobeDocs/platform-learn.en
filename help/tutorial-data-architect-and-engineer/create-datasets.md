@@ -22,10 +22,8 @@ First, watch this short video to learn more about datasets:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission Item Datasets > View Datasets
-* Permission Item Datasets > Manage Datasets
-* Permission item Sources > View Sources
-* Permission item Sources > Manage Sources
+* Permission Item Data Management > View Datasets
+* Permission Item Data Management > Manage Datasets
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial` product profile
 * Developer-role access to the `Luma Tutorial` product profile (for API)
@@ -47,14 +45,17 @@ Note to SME : If you want to create dataset using CSV file , you can create one 
 
 1. Go to **Data Management**
 1. Select **Datasets** 
-1. Click **Create Dataset** button in top-left
+1. Click **Create Dataset** button
 1. Click **Create Dataset from Schema** 
 1. Select **Luma Loyalty Members** Schema  and  Press Next
 1. Provide Name **Luma Loyalty Members Dataset**
 1. Click Finish.
 
 
-Follow same steps and create Dataset **Luma Offline Purchase Dataset** for **Luma Offline Purchase Event** Schema.
+Follow same steps and create datasets:
+
+1. `Luma Offline Purchase Dataset` for `Luma Offline Purchase Event** schema
+1. `Luma Web Events` for `Luma Web Events` schema
 
 ```
 Note to SME : Learners not taking API based excersise have to create dataset for LUMA CRM Schema as well. Roles like EA or TC needs to create all datasets using UI . 
@@ -128,32 +129,6 @@ In this chapter we will create Dataset for Luma CRM Schama using API
     ```
 
 1. You can go to AEP User Interface, Go to **Datasets** under **Data Management** and verify availability of new dataset.
-
-## DULE
-
-In this video we will apply DULE labels on Schema e.g. Luma Loyalty Schema
-
-
-### Apply Data Governance Labels
-
-1. Go to Data Management and select Datasets option
-1. Select **Luma Offline Purchase Dataset**
-1. Select **Data Governance** tab for the dataset
-1. Find and select **email_id** field in the list
-1. Click **Edit Governance labels** pencil icon in right 
-1. Select I1 as address field contains email address and it is directly identifiable data that can identify or contact a specific person, rather than a device.
-
-![Data Governance Label](assets/datasets-dule.png)
-
-1. Click Save changes
-
-
-Repeat similar steps for other Schemas as well and identify appropriate fields and appropriate labels.
-
-```
-Note For SME : In this video you will be also explain what other labels are and when to use which label. You may ask learners to add more DULE label as they think would be right for the Schema. 
-
-```
 
 ## Additional Resources
 

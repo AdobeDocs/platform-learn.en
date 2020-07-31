@@ -27,6 +27,31 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * User-role access to the `Luma Tutorial` product profile
 * Developer-role access to the `Luma Tutorial` product profile (for API)
 
+
+In this video we will apply DULE labels on Schema e.g. Luma Loyalty Schema
+
+
+### Apply Data Governance Labels
+
+1. Go to Data Management and select Datasets option
+1. Select **Luma Offline Purchase Dataset**
+1. Select **Data Governance** tab for the dataset
+1. Find and select **email_id** field in the list
+1. Click **Edit Governance labels** pencil icon in right 
+1. Select I1 as address field contains email address and it is directly identifiable data that can identify or contact a specific person, rather than a device.
+
+![Data Governance Label](assets/datasets-dule.png)
+
+1. Click Save changes
+
+
+Repeat similar steps for other Schemas as well and identify appropriate fields and appropriate labels.
+
+```
+Note For SME : In this video you will be also explain what other labels are and when to use which label. You may ask learners to add more DULE label as they think would be right for the Schema. 
+
+```
+
 ## Additional Resources
 
 * [Data Governance documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/home.html)

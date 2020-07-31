@@ -11,7 +11,7 @@ activity: implement
 
 # Map Identities
 
-Adobe Experience Platform Identity Service helps you to gain a better view of your customer and their behavior by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real-time.
+Adobe Experience Platform Identity Service helps you to gain a better view of your customer and their behavior by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real-time. 
 
 First, watch this short video to learn more about identity in Adobe Experience Platform:
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
@@ -20,12 +20,18 @@ First, watch this short video to learn more about identity in Adobe Experience P
 >
 >Probabilistic private graphs is still in development and set to release at a later date.
 
+>[!NOTE]
+>
+>While you can ingest data into Experience Platform's data lake without specifying identity fields, you must label an identity field and primary identity in the schema used by any data that you wish to use in the Real-time Customer Data Platform.
+
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Identities > Manage Identity Namespaces
-* Permission item Identities > View Identity Namespaces
+* Permission item **[!UICONTROL Identities]** > **[!UICONTROL Manage Identity Namespaces]**
+* Permission item **[!UICONTROL Identities]** > **[!UICONTROL View Identity Namespaces]**
+* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]**
+* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL Manage Schemas]**
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial` product profile
 * Developer-role access to the `Luma Tutorial` product profile (for API)
@@ -170,6 +176,10 @@ In this exercise , we will be marking **crmId** as primary identity in **LUMA CR
 ```
 NOTE TO SME : TODO 
 ```
+
+### Label identity for Luma Web Data
+
+Data collected with the Web SDK is an exception to the typical practice of labeling identity fields in the schema. Web SDK uses something called an Identity Map to label identities *on the implementation side* and thus we will get to it when we implement the Web SDK on the Luma website.
 
 ## Additional Resources
 

@@ -9,7 +9,7 @@ doc-type: tutorial
 activity: implement
 ---
 
-# Stitch Profiles
+# Enable Real-time Customer Profiles
 
 
 In this lesson, you will enable your schemas and datasets for Real-time Customer Profile.
@@ -24,8 +24,10 @@ First, watch this short video to learn more about Real-time Customer Profile:
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 
-* Permission item Sandbox Management > View Profiles
-* Permission item Sandbox Management > Manage Profiles
+* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]**
+* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL Manage Schemas]**
+* Permission Item Data Management > View Datasets
+* Permission Item Data Management > Manage Datasets
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial` product profile
 * Developer-role access to the `Luma Tutorial` product profile (for API)

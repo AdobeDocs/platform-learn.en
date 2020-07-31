@@ -13,9 +13,9 @@ activity: implement
 
 In this lesson, you will configure Adobe Experience Platform user permissions using [!DNL Adobe's Admin Console]. 
 
-Access control is a key privacy capability in Experience Platform and we recommend limiting permissions to what individual roles need to perform their job functions. 
+Access control is a key privacy capability in Experience Platform and we recommend limiting permissions to the minimum required for people to perform their job functions. 
 
-Data Architects and Data Engineers are the power users of Adobe Experience Platform and you will need almost all permissions both in order to complete this tutorial, and later in your day-to-day work. Data Architects are also likely be involved in the administration of *other Platform users* at your company such as marketers, analysts, and data scientists. As you complete this lesson, think about how these [!DNL Adobe Admin Console] features will be useful to manage users at your company.
+Data Architects and Data Engineers are the power users of Adobe Experience Platform and you will need almost all permissions in order to complete this tutorial, and later in your day-to-day work. Data Architects are also likely be involved in the administration of *other Platform users* at your company such as marketers, analysts, and data scientists. As you complete this lesson, think about how you will use these features to manage these other users at your company.
 
 >[!IMPORTANT]
 >
@@ -23,82 +23,166 @@ Data Architects and Data Engineers are the power users of Adobe Experience Platf
 <!--is this the only lesson in which a System Admin needs to be involved?-->
 <!--when to add Launch-->
 <!--who needs to do Adobe IO-->
+<!--System Admin should add the DA/DE as Admins of the Product, not of the product profile. The user should then add the product profile. Not clear if they need access to staging or staging and prod-->
 
 ## About the Admin Console
 
 The [!DNL Admin Console] is the interface used to administer user access to all Adobe Experience Cloud products. Some key [!DNL Admin Console] concepts to be aware of:
 
-* A **product profile** is a combination of permissions, roles, and sandbox environments, tied to a specific Adobe application. Multiple product profiles can be created for a single Adobe product. For example, a "Marketer" profile could limit permissions to what a typical marketer would need to complete key tasks in the production instance of Platform. In this lesson, we will create a "Luma Tutorial" product profile with all the permissions a Data Architect and Data Engineer would need to complete this tutorial in a specific developer sandbox environment. If you are a System Administrator at your company, you should start thinking about how to use product profiles in Platform to accommodate your requirements.
-* An **integration** is a connection to a Project in the Adobe IO Console. Adobe IO is Adobe's developer portal and its Console is the heart of authentication and configuration of Adobe APIs. You will do more with integrations in the Adobe IO and Postman lesson
+* A **product profile** is a combination of permissions, roles, and sandbox environments tied to a specific Adobe product. Multiple product profiles can be created for a single Adobe product. For example, a "Marketer" profile could limit permissions to what a typical marketer would need to complete key tasks in the production instance, while a "Data Architect" profile could be used to grant different permissions in multiple environments. In this lesson, we will create a "Luma Tutorial" product profile with all the permissions a Data Architect and Data Engineer would need to complete this tutorial in a sandbox environment. 
+* An **integration** is a connection to a project in the Adobe IO Console. Adobe IO is Adobe's developer portal and its Console is the heart of authentication and configuration of Adobe APIs. You will configure an integration in the Adobe IO and Postman lesson.
 
 Also, here is a quick summary of the roles that exist for Platform, as well as any Adobe Experience Cloud application:
 
-* **System Administrators** can create product profiles, add permissions and integrations to a product profile
-* **Admins** of a product profile  can add users, additional admins, and developers to the product profile as well as toggle services on and off.
-* **Users** of a product profile can complete tasks in Platform's user interface according to the permissions in the product profile. Users can also be assigned to User Groups, to streamline management.
-* **Developers** of a product profile can complete the tasks using Platform's API according to the permissions in the product profile
+* **Users** must be a member of a product profile can complete tasks in Platform's user interface according to the permissions in their product profile(s). Users can also be assigned to User Groups, to streamline management.
+* **Developers** must also be a member of product profile can complete the tasks using Platform's API according to the permissions in the product profile.
+* **Product Profile Admins** can edit *that specific profile's* permissions and services as well as add users, additional profile admins, and developers. Potentially a product profile admin can give themselves access to all capabilities of the product, with the exception of administering other product profiles.
+* **Product Admins** can administer *all product profiles* for that Adobe product and add new product profiles.
+* **System Administrators** can add product admins and administer essentially any permissions for all Adobe Experience Cloud products.
 
+<!--Can a Developer add an Integration to a product profile?-->
 
-## Create a product profile (requires a system administrator)
+## Create product profiles (requires a system administrator or product admin)
+
+All meaningful access to Adobe Experience Platform and Adobe Experience Platform Launch is controlled via product profiles. In this exercise you (or a System Administrator at your company) will create product profiles for both products and add you as product profile admins. After that, you will learn how to manage the user permissions for both products for the purposes of this tutorial.
+
+>[!NOTE]
+>
+>If you are a system administrator of Adobe products facilitating the participation of colleague in the completion of this tutorial, will your colleague be expected to administrate other users of Platform and Launch? If so, perhaps add them as a *product administrator* for Adobe Experience Platform and/or Adobe Experience Platform Launch, in which case they would be able to complete these steps on their own.
+
+### Adobe Experience Platform product profile
+
+In this exercise you will create a product profile for Adobe Experience Platform and add the tutorial participant as a product profile admin:
 
 1. Log into the [Adobe Admin Console](https://adminconsole.adobe.com)
 1. Click **[!UICONTROL Products]** on the top navigation
 1. Click **[!UICONTROL Adobe Experience Platform]** on the left navigation
 1. You probably already have several profiles in your Experience Platform instance. Click the **[!UICONTROL New Profile]** button to add another
     ![Click Add New Profile](assets/adminconsole-newProfile.png)
-1. Name the profile `Luma Tutorial` and click the **[!UICONTROL Next]** button
-    ![Name the profile Luma Tutorial](assets/adminconsole-nameProfile.png)
-1. Now we'll add Platform services to the profile. You may see different options on this screen, depending on your Platform license. The only service required for this tutorial is **[!UICONTROL Query Service]**. Enable Query Service and click the **[!UICONTROL Done]** button.
-    ![Add Query Service to the profile](assets/adminconsole-services.png)
+1. Name the profile `Luma Tutorial Platform` and click the **[!UICONTROL Next]** button
+    ![Name the profile Luma Tutorial Platform](assets/adminconsole-nameProfile.png)
+1. On the Services screen, click the "All on" checkbox to *remove* all services. The tutorial participant will reenable what is needed in a later exercise. 
+    ![Disable services](assets/adminconsole-createProfile-services.png)
     <!--Update to add one arbitrary sandbox, which is required to expose the menu options-->
-1. Include all of the permissions for all of the Platform features, except for **[!UICONTROL Sandboxes]** by clicking on a feature in the left rail and then moving the **[!UICONTROL Permission Items]** to the right column with the **[!UICONTROL Add all]** button
-    ![Add permissions](assets/adminconsole-permissions.png)
-
-    <!--1. At this point in the tutorial we will not add additional Platform permissions. Instead, we will add permissions individually as we proceed with the lessons so that you understand when they are required. So, on the **[!UICONTROL Configure profile]** screen, hit the **[!UICONTROL Cancel]** button.
-    ![Don't configure the profile at this time](assets/adminconsole-configureProfileCancel.png)-->
-
-1. The new profile should appear in the list of Platform product profiles:
-    ![Name the profile Luma Tutorial](assets/adminconsole-newProfileInList.png)
+1. At this point the profile is created. Permission items will be added in a later exercise, so on the **[!UICONTROL Configure profile]** screen, just hit the **[!UICONTROL Cancel]** button.
+    ![Add permissions](assets/adminconsole-configureProfileCancel.png)
 
 
-## Add a product profile admin (requires a system administrator)
+Now you need to add the tutorial participant as an admin of the newly created product profile:
 
-Since there are currently no admins in the product profile a system administrator will need to assign you as the first one. Once you are an admin, you will be able to add additional admins:
+1. Click on the `Luma Tutorial Platform` product profile:
+   
+    ![Open the profile](assets/adminconsole-newProfileInList.png)
 
-1. In the Admin the `Luma Tutorial` profile, click the **[!UICONTROL Admin]** tab and then click the **[!UICONTROL Add Admin]** button
-    ![Click Add Admin](assets/adminconsole-addAdmin.png)
-1. Complete the steps to add the admin taking this tutorial (possibly yourself) to the profile
+1. Click on the **[!UICONTROL Admin]** tab and then click the **[!UICONTROL Add Admin]** button:
 
-## Add yourself as a product profile user
+    ![Go to the Admins tab and click Add Admin](assets/adminconsole-addAdmin.png)
 
-At this point, if `Luma Tutorial` was your _only_ Experience Platform product profile, you still would not be able to log into the Experience Platform user interface. To do that you need to be a _user_ in the product profile. Fortunately, since you are an _admin_ of a product profile, you can add yourself as a _user_!  
+1. Complete the workflow to add the tutorial participant as an admin.
 
-*If you aren't already logged into the [!DNL Adobe Admin Console] as a system administrator*:
+After completing these steps you should see that the `Luma Tutorial Platform` profile is set up with 1 admin.
+![Platform profile created](assets/adminconsole-platform-profileCreated.png)
+
+### Adobe Experience Platform Launch product profile
+
+Now, you are going to create a similar product profile for Adobe Experience Platform Launch. The steps are almost identical
+
+1. In the [!DNL Adobe Admin Console] go to the Adobe Experience Platform Launch product
+1. Add a new profile and name it `Luma Tutorial Launch`
+1. Don't assign any properties or permissions at this point
+1. Add the tutorial participant as an admin of this profile
+
+After completing these steps you should see that the `Luma Tutorial Launch` profile is set up with 1 admin.
+![Launch profile created](assets/adminconsole-launch-profileCreated.png)
+
+## Configure the Experience Platform product profile
+
+Now that you are an admin of the `Luma Tutorial Platform` product profile you can configure the services, permission, and roles you will need to complete the tutorial.
+
+### Add services
+
+There are multiple services built on top of Adobe Experience Platform. Some of them are enabled via Platform's product profiles:
 
 1. Log into the [!DNL Adobe Admin Console](https://adminconsole.adobe.com)
 1. Click **[!UICONTROL Products]** on the top navigation
 1. Click **[!UICONTROL Adobe Experience Platform]** on the left navigation
-1. Click on the `Luma Tutorial` profile in the list
+1. Click on the `Luma Tutorial Platform` profile in the list
+    ![Open the Luma Tutorial Platform profile](assets/adminconsole-platform-openProfile.png)
+1. Click the **[!UICONTROL Settings]** link
+    ![Click settings](assets/adminconsole-platform-clickSettings.png)
+1. Click **[!UICONTROL Services]** on the left
+1. Enable **[!UICONTROL Query Service]** (you may see other options here depending on your product license)
+1. Click the **[!UICONTROL Save]** button
+    ![Click settings](assets/adminconsole-platform-enableQueryService.png)
+   
+### Add permissions
 
-    ![Logged in as an admin](assets/adminconsole-adminView.png)
+Now you will add the individual permission items to the profile. From the product profile screen:
+
+1. Click the **[!UICONTROL Permissions]** tab
+1. Add any one of the sandboxes currently in your account, it doesn't matter which one. We will change this setting later
+1. Add all of the permission items for the categories highlighted in the screenshot below, by opening a category and moving the items to the right column. **[!UICONTROL Destinations]** is a capability of Real-time Customer Data Platform and permissions are not needed for this tutorial
+1. After adding all of the permission items, your screen should look like this:
+
+    ![Click settings](assets/adminconsole-platform-enablePermissions.png)
 
 
-Now add yourself as a user:
+### Add yourself as a user
 
+At this point, if `Luma Tutorial Platform` was your _only_ Experience Platform product profile, you still would not be able to log into the Experience Platform user interface. To do that you need to be a _user_ in the product profile. Fortunately, since you are an _admin_ of a product profile, you can add yourself as a _user_!  
+
+1. Go to the **[!UICONTROL Users]** tab
 1. Click the **[!UICONTROL Add User]** button
     ![Click Add User](assets/adminconsole-addUser.png)
-1. Complete the steps to add yourself as a user to the product profile
+1. Complete the workflow to add yourself as a user to the product profile
 
-## Add yourself as a developer
+### Add yourself as a developer
 
 In order to use the Platform API, you will need add yourself as a developer:
 
-1. Go to the **[!UICONTROL Developers]** tab:
+1. Go to the **[!UICONTROL Developers]** tab
 1. Click the **[!UICONTROL Add Developer]** button
     ![Click Add User](assets/adminconsole-addDeveloper.png)
-1. Complete the steps to add yourself as a developer to the product profile
+1. Complete the workflow to add yourself as a developer to the product profile
+
+## Configure the Launch product profile
+
+Now that you are an admin of the `Luma Tutorial Launch` product profile you can configure the permission, and roles you will need to complete the tutorial.
 
 Now you have almost all of the user roles and permissions required to complete the tutorial! There will be just one more tweak that you will need to make in the [!DNL Adobe Admin Console] after you add your sandbox in the next lesson. 
+
+### Add permissions
+
+Now you will add the individual permission items to the profile. From the product profile screen:
+
+1. In the [Adobe Admin Console](https://adminconsole.adobe.com), go to **[!UICONTROL Products]** > **[!UICONTROL Adobe Experience Platform Launch]**
+1. Open the `Luma Tutorial Launch` profile
+    ![Open Products > Adobe Experience Platform Launch > Luma Tutorial Launch](assets/adminconsole-launch-openProfile.png)
+1. Click on the Permissions tab
+1. Click to open the **[!UICONTROL Properties]** row
+1. Click the **[!UICONTROL Auto-Include]** toggle so that it is in the Off state. This should remove any properties that might already be in the profile (we will add one later).
+1. Click the **[!UICONTROL Save]** button
+    ![Remove properties](assets/adminconsole-launch-removeProperties.png)
+1. Click to open the **[!UICONTROL Property Rights]** row
+1. Click **[!UICONTROL Add all]** to add all of the property rights
+1. Click the **[!UICONTROL Save]** button
+    ![Remove properties](assets/adminconsole-launch-addPropertyRights.png)
+1. Click to open the **[!UICONTROL Company Rights]** row
+1. Add **[!UICONTROL Manage Properties]**
+1. Click the **[!UICONTROL Save]** button
+    ![Remove properties](assets/adminconsole-launch-companyRights.png)
+
+
+### Add yourself as a user
+
+Now just like you did earlier, add yourself as a user to the Launch profile
+
+1. Go to the **[!UICONTROL Users]** tab
+1. Click the **[!UICONTROL Add User]** button
+    ![Click Add User](assets/adminconsole-launch-addUser.png)
+1. Complete the workflow to add yourself as a user to the product profile
+
+You will not need to add yourself as a Developer for Launch.
 
 >[!NOTE]
 >

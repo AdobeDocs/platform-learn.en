@@ -32,19 +32,16 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 ## Create a Sandbox
 
-So let's create a sandbox
+Let's create a sandbox:
 
 1. Click **[!UICONTROL Sandboxes]** in the left navigation
-   
-   ![](assets/sandbox-clickSandboxes.png)
-
 1. Click **[!UICONTROL Create sandbox]** on the top right
    ![](assets/sandbox-createSandbox.png)
 
 1. Name your sandbox `luma-tutorial` 
 1. Title your tutorial `Luma Tutorial`
+1. Click the **[!UICONTROL Create]** button
    ![](assets/sandbox-nameSandbox.png)
-
    >[!NOTE]
    >
    >While you could use any arbitrary values for your sandbox name and title, sticking to the values suggested is recommended as we will refer to these labels throughout the tutorial
@@ -65,7 +62,7 @@ Although the sandbox is now active, you will not be able to start using it until
 
 1. Log into the [Admin Console](https://adminconsole.adobe.com)
 1. Select **[!UICONTROL Products > Adobe Experience Platform]**
-1. Click on the [!UICONTROL Product Profile] containing the users who need access to the Sandbox (you may wish to create a new one)
+1. Click on the [!UICONTROL Product Profile] containing the `Luma Tutorial` profile
 
     ![Select the Product Profile](assets/sandbox-selectProfile.png)
 

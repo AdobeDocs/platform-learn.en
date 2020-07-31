@@ -24,8 +24,7 @@ In this lesson you will learn how to create Merge Policies.
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 
-* Permission item Sandbox Management > View Sandboxes
-* Permission item Sandbox Management > Manage Sandboxes
+* Permission item Profiles > Manage Profiles
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial` product profile
 * Developer-role access to the `Luma Tutorial` product profile (for API)
@@ -39,7 +38,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 1. Enter Policy Name **Luma Dataset Precedence Merge Policy**
 1. Select Schema as **XDM Profile**
 1. Select Id Stitching as **Private Graph**
-1. Select Attribute Merge as **Dataset ordered**
+1. Select Attribute Merge as **Dataset precedence**
 1.  .Drag and drop Luma Loyalty Dataset and Luma CRM Dataset to Selected Dataset panel.
 1. Change Order of Luma CRM Dataset by drag and dropping to top in the list of selected dataset.
 

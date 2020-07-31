@@ -22,11 +22,11 @@ First, watch this short video to learn more about Query Service:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Sandbox Management > Manage Sandboxes
-* Permission item Sandbox Management > View Sandboxes
+* Settings > Services > Query Service
+* Permission Item Data Management > View Datasets
+* Permission Item Data Management > Manage Datasets
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial` product profile
-* Developer-role access to the `Luma Tutorial` product profile (for API)
 
 1. Go to **Data Management** section and select **Queries**
 1. Go to top-right and click **Create Query** , this will open a textbox to run and execute query.

@@ -43,7 +43,7 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 
 ### Sandbox environments
 
-In the tutorial, you will create a sandbox environment and use it to complete the bulk of the tutorial. The sandbox environment makes it safe for you to complete the exercises and experiment with Platform without being concerned about compromising your Production environment.
+In the tutorial, you will create a sandbox environment and use it to complete the exercises. The sandbox environment makes it safe for you to complete the exercises and experiment with Platform without being concerned about compromising your Production environment.
 
 ### API
 

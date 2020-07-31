@@ -17,7 +17,8 @@ XDM is a publicly documented specification designed to improve the power of digi
 
 XDM is the foundational framework that allows Adobe Experience Cloud, powered by Experience Platform, to deliver the right message to the right person, on the right channel, at exactly the right moment. The methodology on which Experience Platform is built, **XDM System**, operationalizes Experience Data Model schemas for use by Platform services.
 
-Explain Schemas, Mixins, Fields, and Datatypes
+<!--
+This seems too lengthy. The video should suffice
 
 Key terms:
 
@@ -28,6 +29,7 @@ Key terms:
 * **Standard Mixin**: an open-source Mixin built to conform to common industry standards, used to accelerate implementation and support repeatable services operating on the data
 * **Data type**: a reusable object with properties in a hierarchical representation. These can be standard types or custom-defined defined types to describe your own data in your own way (for example, a collection of fields that you use to describe your products). Unlike Mixins, data types can be used in schemas regardless of the class.
 * **Field**: a field is the lowest level element of a schema. Each field has a name for referencing and a type to identify the type of data that it contains. Field types can include, integer, number, string, Boolean and schema.
+-->
 
 First, watch this short video to learn more about schemas and the Experience Data Model (XDM):
 >[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
@@ -61,15 +63,23 @@ In this exercise we will create a Luma Loyalty Schema to ingest loyalty data of 
 
 1. In **[!UICONTROL Schema Properties]**, on the right-hand side of the screen, enter **[!UICONTROL Display Name]** `Luma Loyalty Members`
 1. Note that the **[!UICONTROL XDM Individual Profile]** class has already been assigned
+1. Click the Add Mixin button:
+   
+    ![Add Mixin](assets/schemas-loyalty-addMixin.png)
+
 1. In the **[!UICONTROL Mixins]** section,  Add following mixins
    1. **[!UICONTROL Profile Personal Details]**
    1. **[!UICONTROL Profile Person Details]**
 
 1. Click **[!UICONTROL Save]** to save the schema.
 
-  ![Schema with OOTB Mixin](assets/schemas-loyalty-mixins.png)
+    ![Schema with OOTB Mixin](assets/schemas-loyalty-mixins.png)
 
-Now take some time to explore the current state of the schema. Note that these two mixins have added standard fields related to a person and their contact details. You may find these two mixins very useful when you create schemas for your own company's data. It's worth noting, too, that it is okay if a mixin adds a field for a data point that you are not going to upload during the ingestion process. For example, "faxPhone" might be a field for which Luma doesn't actually have data. That's fine. Just because a field is defined in the schema doesn't mean that data for it *needs* to be ingested later on.
+Now take some time to explore the current state of the schema. Note that these two mixins have added standard fields related to a person and their contact details. You may find these two mixins very useful when you create schemas for your own company's data. 
+
+>[!NOTE]
+>
+>It is okay if a mixin adds a field for a data point that you are not going to upload during the ingestion process. For example, "faxPhone" might be a field for which Luma doesn't actually have data. That's fine. Just because a field is defined in the schema doesn't mean that data for it *needs* to be ingested later on.
 
 ### Create & Add Custom Mixin to Schema
 
@@ -105,7 +115,7 @@ Next we need to add fields that are specific to Luma's Loyalty system. As you st
 
 
 
-    **Joining Date**
+    **Member Since**
 
 
       | Variable          |  Value     |  
@@ -490,10 +500,20 @@ mobile_phone
 personalEmail
 As you go through these steps, see if you can determine which CRM fields match to which XDM fields.
 
-## Additional Resources
+### Relationship schemas
 
-* [Experience Data Model (XDM) System documentation](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html)
-* [Schema Registry API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/schema-registry.yaml)
+Firstly we need to establish relationship between **Luma Offline Purchase Event** schema with **Luma Product Catalog** Schema
+
+1. Go to **Luma Offline Purchase Event**
+1. Select **Luma Offline Purchase Event** mixin
+1. Navigate to **_tenant > purchase_event > products** 
+1. Select **productSku**
+1. In field properties, mark checkbox for **Relationship**
+1. In **Reference Schema** , Select **Luma Product Catalog**
+1. **Reference identity namespace** will be automatically selected as **lumaProductSKU**
+   ![Product Relationship](assets/segment-productRelationship.png)
+1. Apply & Save.
+1. Now go back to **Luma Offline Purchase Event** dataset and re-ingest data
 
 ## Additional Resources
 

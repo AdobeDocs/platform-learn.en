@@ -22,15 +22,13 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 * Permission Item Datasets > View Datasets
 * Permission Item Datasets > Data Monitoring
-* Permission item Sources > View Sources
-* Permission item Sources > Manage Sources
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial` product profile
 * Developer-role access to the `Luma Tutorial` product profile (for API)
 
 ## Ingest data in batches by using Platform UI
 
-1. Download [`luma.json`](assets/luma-loyalty.json) file to **AEP Training Assets** folder.
+1. Download [`luma-loyalty.json`](assets/luma-loyalty.json) file to **AEP Training Assets** folder.
 1. Go to Datasets, Select **Luma Loyalty Members Dataset**
 1. In Dataset properties, scroll down to add data section.
 1. Upload `luma-loyalty.json` file.
