@@ -34,6 +34,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 Let's create a sandbox:
 
+1. Log into the [Adobe Experience Platform](https://experience.adobe.com/platform) interface
 1. Click **[!UICONTROL Sandboxes]** in the left navigation
 1. Click **[!UICONTROL Create sandbox]** on the top right
    ![](assets/sandbox-createSandbox.png)
@@ -46,7 +47,7 @@ Let's create a sandbox:
    >
    >While you could use any arbitrary values for your sandbox name and title, sticking to the values suggested is recommended as we will refer to these labels throughout the tutorial
 
-Sandboxes take approximately fifteen minutes to create and "[!UICONTROL Creating]" status will display:
+Sandboxes take approximately fifteen minutes to create and a "[!UICONTROL Creating]" status will display during this time:
    ![](assets/sandbox-creating.png)
 
 Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next steps:
@@ -56,13 +57,11 @@ Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next s
 
 ## Add the new sandbox to the product profile
 
-Although the sandbox is now active, you will not be able to start using it until you have included it in your product profile via the Admin Console.
+Once the sandbox is active, you need to include it in your product profile in order to use it. To add it to your product profile:
 
-### Update the product profile
-
-1. Log into the [Admin Console](https://adminconsole.adobe.com)
-1. Select **[!UICONTROL Products > Adobe Experience Platform]**
-1. Click on the [!UICONTROL Product Profile] containing the `Luma Tutorial` profile
+1. In a separate browser tab, log into the [Admin Console](https://adminconsole.adobe.com)
+1. Go to **[!UICONTROL Products > Adobe Experience Platform]**
+1. Open the `Luma Tutorial Platform` profile
 
     ![Select the Product Profile](assets/sandbox-selectProfile.png)
 
@@ -76,11 +75,14 @@ Although the sandbox is now active, you will not be able to start using it until
 
     ![Move the Sandbox to the other column](assets/sandbox-moveToOtherColumn.png)
 
+1. Remove the arbitrary sandbox you assigned to the profile originally
 1. Click **[!UICONTROL Save]** to save the updated permissions  
 
     ![Save Permissions](assets/sandbox-savePermissions.png)
 
-1. If you reload the You should now be able to see the new sandbox appear in the sandbox dropdown in the Platform interface:
+1. Go back to the browser tab with Experience Platform
+1. Reload the page and you should now either be in the `Luma Tutorial` sandbox or it should appear in your sandbox dropdown
+1. Switch to the `Luma Tutorial` sandbox if you aren't already in it
 
    ![Confirm Sandbox](assets/sandbox-confirmDropdown.png)
 
@@ -88,3 +90,6 @@ Although the sandbox is now active, you will not be able to start using it until
 
 * [Sandboxes documentation](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html)
 * [Sandbox API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/sandbox-api.yaml)
+
+
+Great, you've created your sandbox and are ready to [Set up Adobe IO and Postman](set-up-adobe-io-and-postman.md)!

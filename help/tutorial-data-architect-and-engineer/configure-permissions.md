@@ -193,3 +193,5 @@ You will not need to add yourself as a Developer for Launch.
 * [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-console.html)
 * [Access Control documentation](https://docs.adobe.com/content/help/en/experience-platform/access-control/home.html)
 * [Access Control API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/access-control.yaml)
+
+Great! You've learned quite a bit about the Adobe Admin Console as you added your permissions and are now ready to [create a sandbox](create-a-sandbox.md)!
