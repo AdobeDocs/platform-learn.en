@@ -27,8 +27,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * Permission item Sandbox Management > View Sandboxes
 * Permission item Sandbox Management > Manage Sandboxes
 * Permission item Sandboxes > (any sandbox)
-* User-role access to the `Luma Tutorial` product profile
-* Admin-level access to the `Luma Tutorial` product profile
+* User-role access to the `Luma Tutorial Platform` product profile
+* Admin-level access to the `Luma Tutorial Platform` product profile
 
 ## Create a Sandbox
 
@@ -50,10 +50,10 @@ Let's create a sandbox:
 Sandboxes take approximately fifteen minutes to create and a "[!UICONTROL Creating]" status will display during this time:
    ![](assets/sandbox-creating.png)
 
-Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next steps:
+When the sandbox is fully created it show as "[!UICONTROL Active]":
    ![](assets/sandbox-active.png)
 
-
+Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next exercise.
 
 ## Add the new sandbox to the product profile
 
@@ -72,13 +72,10 @@ Once the sandbox is active, you need to include it in your product profile in or
     ![Click Edit](assets/sandbox-selectSandboxes.png)
 
 1. Click the **[!UICONTROL +]** icon to add the new sandbox to the right hand column
-
-    ![Move the Sandbox to the other column](assets/sandbox-moveToOtherColumn.png)
-
-1. Remove the arbitrary sandbox you assigned to the profile originally
+1. Remove the [!UICONTROL Prod] sandbox you assigned to the profile originally
 1. Click **[!UICONTROL Save]** to save the updated permissions  
 
-    ![Save Permissions](assets/sandbox-savePermissions.png)
+    ![Move the Sandbox to the other column](assets/sandbox-addLumaTutorial.png)
 
 1. Go back to the browser tab with Experience Platform
 1. Reload the page and you should now either be in the `Luma Tutorial` sandbox or it should appear in your sandbox dropdown

@@ -20,10 +20,10 @@ Lorem Ipsum
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 * Permission item Sandbox Management > Manage Sandboxes
-* Permission item Sandbox Management > View Sandboxes
+* Permission item Sandbox Management > View Profiles
 * Permission item Sandboxes > `Luma Tutorial`
-* User-role access to the `Luma Tutorial` product profile
-* Developer-role access to the `Luma Tutorial` product profile (for API)
+* User-role access to the `Luma Tutorial Platform` product profile
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 ## Retrieve Profile By UI
 

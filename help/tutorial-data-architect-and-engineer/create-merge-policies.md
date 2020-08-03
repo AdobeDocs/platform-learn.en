@@ -26,8 +26,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 * Permission item Profiles > Manage Profiles
 * Permission item Sandboxes > `Luma Tutorial`
-* User-role access to the `Luma Tutorial` product profile
-* Developer-role access to the `Luma Tutorial` product profile (for API)
+* User-role access to the `Luma Tutorial Platform` product profile
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 
 ## Merge Policy using UI

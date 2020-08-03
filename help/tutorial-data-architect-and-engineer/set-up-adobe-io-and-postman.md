@@ -11,9 +11,9 @@ activity: implement
 
 # Set up Adobe IO and Postman
 
-In this lesson, we will guide you through the basic project setup in the Adobe IO console and provide you with a Postman Collection to make the necessary API calls.
+In this lesson, we will guide you through the basic project setup in the Adobe IO console and provide you with Postman Collections to make the necessary API calls.
 
-Platform is built API-first. While interface methods exist for all major Platform tasks and will be used in the majority of the lessons, it is important that you are familiar with how to use the Platform API. For example, you may wish to use new features before we've built them into the UI. 
+Platform is built API-first. While interface options also exist for all major tasks and will be used primarily in this tutorial, it is important that you are familiar with the Platform API. For example, you may wish to use new features before we've built them into the UI or automate routine tasks.
 
 First, watch these three short videos to learn more about getting set up with Adobe IO and Postman:
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
@@ -25,25 +25,22 @@ First, watch these three short videos to learn more about getting set up with Ad
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 * Permission item Sandboxes > `Luma Tutorial`
-* Developer-role access to the `Luma Tutorial` product profile (for API)
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 ## Set up Adobe IO
  
-1. Create a folder on your local machine named `Platform Training Assets`. 
+1. Create a folder on your local machine named `Luma Tutorial Assets`. This folder will be used to save files used in the tutorial
    
-   * This folder will be used to save files and configuration required for this training. 
-   
-   *  It can be named anything but for training purpose let's go with `Platform Training Assets`, so it will be easy to reference throughout the training.
 
 1. Open [https://console.adobe.io/](https://console.adobe.io)
 
 1. Log in and confirm that you are in the correct Org
 
-1. Click button **[!UICONTROL Create New Project]** in Quickstart menu. 
+1. Click button **[!UICONTROL Create New Project]** in [!UICONTROL Quick Start] menu. 
     
     ![Create New Project](assets/adobeio-createNewProject.png)
 
-1. Inside the newly created project, Click button **[!UICONTROL Add to Project]** and then select option **[!UICONTROL API]**
+1. In the newly created project, click the **[!UICONTROL Add to Project]** button and then select **[!UICONTROL API]**
    
     ![Adobe IO Project API Config](assets/adobeio-addAPI.png)
 
@@ -53,30 +50,31 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
     ![Adobe IO Project API Config](assets/adobeio-AEPAPI.png)
 
-1. For authentication from external systems like Postman, we require a private-public key pair. To generate new key pair selection **[!UICONTROL Option 1]**  and press the **[!UICONTROL Generate a key pair]** button
+1. For authentication from external systems like Postman, we require a public/private key pair. To generate a new key pair select **[!UICONTROL Option 1]**  and press the **[!UICONTROL Generate keypair]** button
    
    ![Adobe IO Project API Config](assets/adobeio-keypair.png)
 
-1. Once keys are ready, it will prompt you to download keys on your local machine. Save keys packaged in `config.zip` in folder `Platform Training Assets`. We will need it in the next exercise.
+1. Once the keys are ready, it will prompt you to download keys on your local machine. Save keys packaged in `config.zip` in folder `Luma Tutorial Assets`. We will need it in the next exercise.
 
    
-1.  After the key is generated, the public key will automatically be added to your project as shown in the screenshot. Press **[!UICONTROL Next]**
+1.  After the key is generated, the public key will automatically be added to your project as shown in the screenshot. Click the **[!UICONTROL Next]** button.
 
     ![ View After Key is Generated and selected](assets/adobeio-afterKeyIsGenerated.png)
 
-1. Select a Product Profile to which you have access and which contains the permissions you need. For each reader of this tutorial, this will vary depending on how your own Org is managed
+1. Select the `Luma Tutorial Platform` product profile and click the **[!UICONTROL Save Configured API]** button
    
-    <!--what permissions are needed for this lesson? what permissions are needed for this step?-->
-
     ![Select Product Profile](assets/adobeio-selectProductProfile.png)
 
-1.  Click **[!UICONTROL Save Configured API]**. Now your Adobe IO integration is created.
+1. Now your Adobe IO project has been created!
+
+1. In **[!UICONTROL Try it out]** section of the page , Click **[!UICONTROL Download for Postman]** and then click **[!UICONTROL Service Account (JWT)]** to download the Postman environment json file. Save the `service.postman_environment.json` in your `Luma Tutorial Assets` folder.
+
 
     ![Adobe IO Project API Config](assets/adobeio-io-api.png)
 
-1. In **[!UICONTROL Try it out]** section of the page , Click **[!UICONTROL Download for Postman]** and then click **[!UICONTROL Service Account (JWT)]** to download the Postman environment json file. Save the `service.postman_environment.json` in your `Platform Training Assets` folder.
+1. System Administrators of your organization would be able to see the project as an "Integration" in the product profile
 
-1. Name the environment `Luma Tutorial`
+    ![Adobe IO Project API Config](assets/adobeio-io-integrationInAdminConsole.png)
 
 
 ## Set up Postman
@@ -126,7 +124,7 @@ The first collection we will use works with the Adobe Identity Management Servic
 >
 >As noted in the [Adobe I/O Access Token Generation Postman collection documentation](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims), the denoted generation methods are suitable for non-production use. Local Signing loads a JavaScript library from a 3rd-party host, and Remote signing sends the private key to an Adobe owned and operated web service. While Adobe does not store this private key, production keys should never be shared with anyone.  
 
-1.  Download the [Adobe IO Access Token Generation collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Adobe%20IO%20Access%20Token%20Generation.postman_collection.json) to your `Platform Training Assets` folder
+1.  Download the [Adobe IO Access Token Generation collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Adobe%20IO%20Access%20Token%20Generation.postman_collection.json) to your `Luma Tutorial Assets` folder
 
 1.  Select Request **IMS: JWT Generate + Auth via User Token** and Click **Send**
 1.  The **JWT_TOKEN** and **ACCESS_TOKEN** will be auto-populated in the environment variables of Postman.
@@ -182,7 +180,7 @@ Open the other group of Experience Platform postman collections in Github, the [
 
 We will download some of these collections as we need them for this tutorial. This resource will be extremely useful to you after this tutorial as you begin to implement Platform for your company. 
 
-1. Download the [Schema Registry API collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) to your `Platform Training Assets` folder
+1. Download the [Schema Registry API collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) to your `Luma Tutorial Assets` folder
 1. Import it into Postman
 1. Open **Schema Registry API > Classes > List all classes** in the specified container
 1. Look at the **Params** and **Headers** tabs and note how these include some of the environment variables we entered earlier.

@@ -24,8 +24,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * Permission item Sandbox Management > Manage Sandboxes
 * Permission item Sandbox Management > View Sandboxes
 * Permission item Sandboxes > `Luma Tutorial`
-* User-role access to the `Luma Tutorial` product profile
-* Developer-role access to the `Luma Tutorial` product profile (for API)
+* User-role access to the `Luma Tutorial Platform` product profile
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 
 In this video we will apply DULE labels on Schema e.g. Luma Loyalty Schema
@@ -51,6 +51,8 @@ Repeat similar steps for other Schemas as well and identify appropriate fields a
 Note For SME : In this video you will be also explain what other labels are and when to use which label. You may ask learners to add more DULE label as they think would be right for the Schema. 
 
 ```
+
+Use content from Mathieu's demo
 
 ## Additional Resources
 

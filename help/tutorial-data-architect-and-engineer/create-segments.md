@@ -29,8 +29,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * Permission item Profiles > View Profiles
 * Permission item Profiles > Export Audience Segment
 * Permission item Sandboxes > `Luma Tutorial`
-* User-role access to the `Luma Tutorial` product profile
-* Developer-role access to the `Luma Tutorial` product profile (for API)
+* User-role access to the `Luma Tutorial Platform` product profile
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 ## Create a basic segment
 
@@ -63,22 +63,6 @@ With the advanced multi-entity segmentation feature, you can create segments usi
 
 This segment is created by leveraging relationship between multiple XDM Schema - Product Catalog Schema and Offline Purchase Schema.
 
-### Pre-Req
-
-Firstly we need to establish relationship between **Luma Offline Purchase Event** schema with **Luma Product Catalog** Schema
-
-1. Go to **Luma Offline Purchase Event**
-1. Select **Luma Offline Purchase Event** mixin
-1. Navigate to **_tenant > purchase_event > products** 
-1. Select **productSku**
-1. In field properties, mark checkbox for **Relationship**
-1. In **Reference Schema** , Select **Luma Product Catalog**
-1. **Reference identity namespace** will be automatically selected as **lumaProductSKU**
-   ![Product Relationship](assets/segment-productRelationship.png)
-1. Apply & Save.
-1. Now go back to **Luma Offline Purchase Event** dataset and re-ingest data
-
-### Segment
 
 1. Go to **Segments** under customer.
 1. Click on **Create Segment** in top right corner.

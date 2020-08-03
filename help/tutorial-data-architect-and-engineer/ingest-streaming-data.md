@@ -25,8 +25,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * Permission item Sources > View Sources
 * Permission item Sources > Manage Sources
 * Permission item Sandboxes > `Luma Tutorial`
-* User-role access to the `Luma Tutorial` product profile
-* Developer-role access to the `Luma Tutorial` product profile (for API)
+* User-role access to the `Luma Tutorial Platform` product profile
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 ## Create a Launch Configuration
 

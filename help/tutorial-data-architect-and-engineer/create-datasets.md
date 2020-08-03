@@ -25,8 +25,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * Permission Item Data Management > View Datasets
 * Permission Item Data Management > Manage Datasets
 * Permission item Sandboxes > `Luma Tutorial`
-* User-role access to the `Luma Tutorial` product profile
-* Developer-role access to the `Luma Tutorial` product profile (for API)
+* User-role access to the `Luma Tutorial Platform` product profile
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 ## Create a dataset in the UI
 

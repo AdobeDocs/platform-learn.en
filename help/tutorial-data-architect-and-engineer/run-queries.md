@@ -26,7 +26,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * Permission Item Data Management > View Datasets
 * Permission Item Data Management > Manage Datasets
 * Permission item Sandboxes > `Luma Tutorial`
-* User-role access to the `Luma Tutorial` product profile
+* User-role access to the `Luma Tutorial Platform` product profile
 
 1. Go to **Data Management** section and select **Queries**
 1. Go to top-right and click **Create Query** , this will open a textbox to run and execute query.

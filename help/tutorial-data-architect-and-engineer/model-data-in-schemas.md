@@ -42,8 +42,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]**
 * Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
-* User-role access to the `Luma Tutorial` product profile
-* Developer-role access to the `Luma Tutorial` product profile (for API)
+* User-role access to the `Luma Tutorial Platform` product profile
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 
 
