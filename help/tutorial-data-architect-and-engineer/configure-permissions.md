@@ -30,7 +30,7 @@ Data Architects and Data Engineers are the power users of Adobe Experience Platf
 The [!DNL Admin Console] is the interface used to administer user access to all Adobe Experience Cloud products. Some key [!DNL Admin Console] concepts to be aware of:
 
 * A **product profile** is a combination of permissions, roles, and sandbox environments tied to a specific Adobe product. Multiple product profiles can be created for a single Adobe product. For example, a "Marketer" profile could limit permissions to what a typical marketer would need to complete key tasks in the production instance, while a "Data Architect" profile could be used to grant different permissions in multiple environments. In this lesson, we will create a "Luma Tutorial" product profile with all the permissions a Data Architect and Data Engineer would need to complete this tutorial in a sandbox environment. 
-* An **integration** is a connection to a project in the Adobe IO Console. Adobe IO is Adobe's developer portal and its Console is the heart of authentication and configuration of Adobe APIs. You will configure an integration in the Adobe IO and Postman lesson.
+* An **integration** is a connection to a project in the Adobe Developer Console. Adobe IO is Adobe's developer portal and its Console is the heart of authentication and configuration of Adobe APIs. You will configure an integration in the Adobe IO and Postman lesson.
 
 Also, here is a quick summary of the roles that exist for Platform, as well as any Adobe Experience Cloud application:
 
@@ -95,7 +95,7 @@ Now, you are going to create a similar product profile for Adobe Experience Plat
 After completing these steps you should see that the `Luma Tutorial Launch` profile is set up with 1 admin.
 ![Launch profile created](assets/adminconsole-launch-profileCreated.png)
 
-## Configure the Experience Platform product profile
+## Configure Experience Platform product profile
 
 Now that you are an admin of the `Luma Tutorial Platform` product profile you can configure the services, permission, and roles you will need to complete the tutorial.
 
@@ -129,7 +129,7 @@ Now you will add the individual permission items to the profile. From the produc
 
 ### Add yourself as a user
 
-At this point, if `Luma Tutorial Platform` was your _only_ Experience Platform product profile, you still would not be able to log into the Experience Platform user interface. To do that you need to be a _user_ in the product profile. Fortunately, since you are an _admin_ of a product profile, you can add yourself as a _user_!  
+At this point, if `Luma Tutorial Platform` was your _only_ Experience Platform product profile, you still would not be able to log into Experience Platform's user interface. To do that you need to be a _user_ in the product profile. Fortunately, since you are an _admin_ of a product profile, you can add yourself as a _user_!  
 
 1. Go to the **[!UICONTROL Users]** tab
 1. Click the **[!UICONTROL Add User]** button
