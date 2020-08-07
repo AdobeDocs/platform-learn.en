@@ -20,8 +20,8 @@ First, watch this short video to learn more about streaming data ingestion:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission Item Datasets > View Datasets
-* Permission Item Datasets > Data Monitoring
+* Permission item Datasets > View Datasets
+* Permission item Datasets > Data Monitoring
 * Permission item Sources > View Sources
 * Permission item Sources > Manage Sources
 * Permission item Sandboxes > `Luma Tutorial`

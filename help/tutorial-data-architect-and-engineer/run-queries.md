@@ -23,8 +23,8 @@ First, watch this short video to learn more about Query Service:
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 * Settings > Services > Query Service
-* Permission Item Data Management > View Datasets
-* Permission Item Data Management > Manage Datasets
+* Permission item Data Management > View Datasets
+* Permission item Data Management > Manage Datasets
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 

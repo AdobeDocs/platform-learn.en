@@ -13,7 +13,7 @@ audience: all
 + [4. Model Data in Schemas](model-data-in-schemas.md)
 + [5. Map Identities](map-identities.md)
 + [6. Create Datasets](create-datasets.md)
-+ [7. Enable Profiles](stitch-profiles.md)
++ [7. Enable Profiles](enable-profiles.md)
 + [8. Ingest Batch Data](ingest-batch-data.md)
 + [9. Ingest Streaming Data](ingest-streaming-data.md)
 + [10. Create Merge Policies](create-merge-policies.md)

@@ -20,8 +20,8 @@ First, watch this short video to learn more about data ingestion:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission Item Datasets > View Datasets
-* Permission Item Datasets > Data Monitoring
+* Permission item Datasets > View Datasets
+* Permission item Datasets > Data Monitoring
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
