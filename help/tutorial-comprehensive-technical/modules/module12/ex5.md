@@ -80,7 +80,9 @@ In this exercise, you'll test and trigger the Orchestrated Journey you configure
 
 * You should then receive a SMS Message on the Mobile Phone that was attached to your Real-time Customer Profile. The SMS Message will depend on the current weather and the temperature, just like you configured in your Journey.
 
-   >[!NOTE] Twilio doesn't support Indian Mobile Numbers, so if you have an mobile phone number starting with +91, you won't receive any SMS. 
+   >[!NOTE]
+   >
+   >Twilio doesn't support Indian Mobile Numbers, so if you have an mobile phone number starting with +91, you won't receive any SMS. 
 
   ![Demo](./images/gf19.png)
 
