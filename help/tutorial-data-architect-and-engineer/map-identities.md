@@ -11,6 +11,8 @@ activity: implement
 
 # Map Identities
 
+In this video we will add identity fields to our schemas and create some new identity namespaces for our custom identities.
+
 Adobe Experience Platform Identity Service helps you to gain a better view of your customer and their behavior by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real-time. 
 
 First, watch this short video to learn more about identity in Adobe Experience Platform:
