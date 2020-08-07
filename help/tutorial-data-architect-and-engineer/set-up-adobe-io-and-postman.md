@@ -9,13 +9,13 @@ doc-type: tutorial
 activity: implement
 ---
 
-# Set up Adobe IO and Postman
+# Set up Developer Console and Postman
 
 In this lesson, you will set up a project in the Adobe Developer Console and provide you with Postman Collections so you can start using Platform APIs.
 
 Platform is built API-first. While interface options also exist for all major tasks, you will likely want to use the Platform API at some point. For example, to automate routine tasks or to use new Platform features before the UI has been built.
 
-First, watch these three short videos to learn more about getting set up with Adobe IO and Postman:
+First, watch these three short videos to learn more about getting set up with Developer Console and Postman:
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 
@@ -45,17 +45,17 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 1. In the newly created project, click the **[!UICONTROL Add to Project]** button and then select **[!UICONTROL API]**
    
-    ![Adobe IO Project API Config](assets/adobeio-addAPI.png)
+    ![Adobe Developer Console Project API Config](assets/adobeio-addAPI.png)
 
 1. Filter the list by clicking **[!UICONTROL Adobe Experience Platform]**
 
 1. In list of available APIs, select **[!UICONTROL Experience Platform API]** and click **[!UICONTROL Next]**.
 
-    ![Adobe IO Project API Config](assets/adobeio-AEPAPI.png)
+    ![Adobe Developer Console Project API Config](assets/adobeio-AEPAPI.png)
 
 1. For authentication from external systems like Postman, we require a public/private key pair. To generate a new key pair select **[!UICONTROL Option 1]**  and press the **[!UICONTROL Generate keypair]** button
    
-   ![Adobe IO Project API Config](assets/adobeio-keypair.png)
+   ![Adobe Developer Console Project API Config](assets/adobeio-keypair.png)
 
 1. Once the keys are ready, it will prompt you to download the keys onto your local machine. Save the keys packaged in `config.zip` to the folder `Luma Tutorial Assets`. We will need them in the next exercise.
 
@@ -68,16 +68,16 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
    
     ![Select Product Profile](assets/adobeio-selectProductProfile.png)
 
-1. Now your Adobe IO project has been created!
+1. Now your Developer Console project has been created!
 
 1. In **[!UICONTROL Try it out]** section of the page , Click **[!UICONTROL Download for Postman]** and then click **[!UICONTROL Service Account (JWT)]** to download the Postman environment json file. Save the `service.postman_environment.json` in your `Luma Tutorial Assets` folder.
 
 
-    ![Adobe IO Project API Config](assets/adobeio-io-api.png)
+    ![Adobe Developer Console Project API Config](assets/adobeio-io-api.png)
 
 1. System Administrators of your organization would be able to see the project as an "Integration" in the product profile
 
-    ![Adobe IO Project API Config](assets/adobeio-io-integrationInAdminConsole.png)
+    ![Adobe Developer Console Project API Config](assets/adobeio-io-integrationInAdminConsole.png)
 
 You might have noticed that the project was assigned a number:
 
@@ -86,21 +86,21 @@ You might have noticed that the project was assigned a number:
 1. Change the **[!UICONTROL Project Title]** to `Luma Tutorial API Project`
 1. Click the **[!UICONTROL Save]** button
 
-    ![Adobe IO Project API Config](assets/adobeio-renameProject.png)
+    ![Adobe Developer Console Project API Config](assets/adobeio-renameProject.png)
 
 
 ## Set up Postman
 
 1. Download and install [[!DNL Postman]](https://www.postman.com/)
 1. Open [!DNL Postman] and import the downloaded json environment file, `service.postman_environment.json`
-   ![Adobe IO Import environment](assets/postman-importEnvironment.png)
+   ![Adobe Developer Console Import environment](assets/postman-importEnvironment.png)
 1. In [!DNL Postman], select your environment in the top-right dropdown and click the **eye** icon to view the environment variables. You should see that the ACCESS_TOKEN, PRIVATE_KEY, and JWT_TOKEN variables are blank:
 
-   ![Adobe IO Project API Config](assets/postman-PostmanEnvironment.png)
+   ![Adobe Developer Console Project API Config](assets/postman-PostmanEnvironment.png)
 
 ### Update the Environment Name
 
-Since the exported name of the environments from Adobe IO is randomly generated, let's quickly give it a more descriptive name so you don't confuse environments later on when you start working on your real Platform implementation
+Since the exported name of the environments from Developer Console is randomly generated, let's quickly give it a more descriptive name so you don't confuse environments later on when you start working on your real Platform implementation
 
 1. With the environment variables screen still open, click the **Edit** on the top-right
 1. Update the **Environment Name** to `Luma Tutorial`
@@ -112,7 +112,7 @@ Since the exported name of the environments from Adobe IO is randomly generated,
 
 Now it's time to add the PRIVATE_KEY value to the Postman environment
 
-1. Extract the downloaded `config.zip` file which was generated in the previous exercise while creating the Adobe IO Project. This will have two files: 
+1. Extract the downloaded `config.zip` file which was generated in the previous exercise while creating the Developer Console Project. This will have two files: 
    * `private.key`
    * `certificate_pub.crt`
 1. Open the `private.key` file in a text editor and copy all the content available.
@@ -132,7 +132,7 @@ The first collection works with the Adobe Identity Management Service (IMS) APIs
 
 To generate the tokens:
 
-1. Download the [Adobe IO Access Token Generation collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Adobe%20IO%20Access%20Token%20Generation.postman_collection.json) to your `Luma Tutorial Assets` folder
+1. Download the [Developer Console Access Token Generation collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Adobe%20IO%20Access%20Token%20Generation.postman_collection.json) to your `Luma Tutorial Assets` folder
 1. Import the collection into [!DNL Postman]
 1. Select Request **IMS: JWT Generate + Auth via User Token** and click **Send**
     ![Request the tokensoken](assets/postman-requestToken.png)
@@ -143,14 +143,14 @@ To generate the tokens:
 
 
 <!--do i even need this section or does the Postman Collection do this?
-1.  Go to Adobe IO Project, Select **[!UICONTROL Service Account(JWT)]** and select tab **[!UICONTROL Generate JWT]**
+1.  Go to Developer Console Project, Select **[!UICONTROL Service Account(JWT)]** and select tab **[!UICONTROL Generate JWT]**
 1. Paste private key in textbox and click **[!UICONTROL Generate JWT Token]** to generate JWT Token
 
-    ![Adobe IO Project API Config](assets/postman-generateJWT.png)
+    ![Adobe Developer Console Project API Config](assets/postman-generateJWT.png)
 
 1.  Click the **[!UICONTROL Generate Token]** button, and the output will appear in the  **[!UICONTROL Generated JWT]** textbox. 
 
-    ![Adobe IO Project API Config](assets/postman-jwt.png)
+    ![Adobe Developer Console Project API Config](assets/postman-jwt.png)
 
 1.  Copy the generated JWT Token and paste it into the Postman Environment Variables in front of JWT_TOKEN in **INITIAL VALUE** and **CURRENT VALUE** columns.
 

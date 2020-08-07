@@ -11,9 +11,9 @@ activity: implement
 
 # Create a sandbox
 
-Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment.
-
 In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.
+
+Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
 <!--include note on extent of sandbox support-->
 
@@ -89,4 +89,4 @@ Once the sandbox is active, you need to include it in your product profile in or
 * [Sandbox API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/sandbox-api.yaml)
 
 
-Great, you've created your sandbox and are ready to [Set up Adobe IO and Postman](set-up-adobe-io-and-postman.md)!
+Great, you've created your sandbox and are ready to [Set up Developer Console and Postman](set-up-adobe-io-and-postman.md)!

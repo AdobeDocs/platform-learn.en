@@ -22,7 +22,7 @@ Data Architects and Data Engineers need to collaborate closely for a successful 
 
 * Configuring user permissions
 * Creating sandboxes
-* Setting up an Adobe IO project and using the Platform API
+* Setting up a Developer Console project and using the Platform API
 * Data management, including creating schemas, datasets, identities, merge policies, and data governance
 * Data ingestion using batch and streaming modes
 * Capturing web data with Adobe Experience Platform Launch and the Web SDK
