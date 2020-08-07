@@ -135,7 +135,7 @@ To generate the tokens:
 1. Download the [Developer Console Access Token Generation collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Adobe%20IO%20Access%20Token%20Generation.postman_collection.json) to your `Luma Tutorial Assets` folder
 1. Import the collection into [!DNL Postman]
 1. Select Request **IMS: JWT Generate + Auth via User Token** and click **Send**
-    ![Request the tokensoken](assets/postman-requestToken.png)
+    ![Request the tokens](assets/postman-requestToken.png)
 1. The **JWT_TOKEN** and **ACCESS_TOKEN** will auto-populate in the environment variables of Postman.
 
     ![Postman](assets/postman-config.png)
