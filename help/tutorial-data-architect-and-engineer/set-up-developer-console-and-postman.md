@@ -216,5 +216,6 @@ If your call was not successful, take a moment to debug using the error response
 
 * [Adobe Developer Console documentation](https://www.adobe.io/apis/experienceplatform/console/docs.html)
 * [Postman website](https://www.postman.com/)
+* [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples)
 
 Now you have your Platform account and Postman ready to get into the heart of the tutorial! Next, let's get to a data architect task and [model data in schemas](model-data-in-schemas.md)!

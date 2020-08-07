@@ -9,7 +9,7 @@ audience: all
 + [Overview](overview.md)
 + [1. Configure Permissions](configure-permissions.md)
 + [2. Create a Sandbox](create-a-sandbox.md)
-+ [3. Setup Developer Console and Postman](set-up-adobe-io-and-postman.md)
++ [3. Setup Developer Console and Postman](set-up-developer-console-and-postman.md)
 + [4. Model Data in Schemas](model-data-in-schemas.md)
 + [5. Map Identities](map-identities.md)
 + [6. Create Datasets](create-datasets.md)

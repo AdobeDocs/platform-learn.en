@@ -13,7 +13,7 @@ activity: implement
 
 In this video we will add identity fields to our schemas and create some new identity namespaces for our custom identities.
 
-Adobe Experience Platform Identity Service helps you to gain a better view of your customer and their behavior by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real-time. 
+Adobe Experience Platform Identity Service helps you to gain a better view of your customer and their behavior by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real-time. Identity fields and namespaces are the glue that joins different datasources together to build the 360 degree real-time customer profile.
 
 First, watch this short video to learn more about identity in Adobe Experience Platform:
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
@@ -24,7 +24,10 @@ First, watch this short video to learn more about identity in Adobe Experience P
 
 >[!NOTE]
 >
->While you can ingest data into Experience Platform's data lake without specifying identity fields, you must label an identity field and primary identity in the schema used by any data that you wish to use in the Real-time Customer Data Platform.
+>Identity fields are not required if you are only ingesting data into the data lake and are not using real-time customer profiles.
+
+<!--explain identity maps-->
+<!--explain the strategy behind the identity selection, how these identities will join all the data together-->
 
 ## Permissions required
 
@@ -40,16 +43,18 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 ## Create Identity Namespace
 
-In this chapter we will create identity namespaces.
+In this chapter we will create identity namespaces for Luma's custom identity fields, `loyaltyId` and `crmId`. Identity namespaces play a critical role in the building of real-time customer profiles, as two matching values in the same identity namespace allow two data sources to combine to form a robust customer profile.
 
 
-### Exercise : Mark XDM Fields For Identity
+### Create Namespaces in the UI
 
-1. Go to **Identities** under **Customer** section.
-1. Click **Create identity namespace** on top-right of the page.
+Let's start by creating a namespace for the Luma Loyalty Schema:
+
+1. In the Platform UI, click Identities in the left navigation
+1. You will notice there are a number of out-of-the-box identity namespaces available. Click the **[!UICONTROL Create identity namespace]** button
 1. Provide details as following
    
-    | Label         |  value    |  
+    | Field         |  Value    |  
     |---------------|-----------|
     | Display Name  | Luma Loyalty Id    | 
     | Identity Symbol| lumaLoyaltyId    |  
@@ -59,131 +64,105 @@ In this chapter we will create identity namespaces.
 
     ![Identity Namespace ](assets/identity-createNamespace.png)
 
-1. Repeat the same process with following details:
+Now set up another namespace for the Luma Product Catalog Schema with the following details:
+   
+| Field         |  Value    |  
+|---------------|-----------|
+| Display Name  | Luma Product SKU   | 
+| Identity Symbol| lumaProductSKU    |  
+| Type           | Non-People      |  
 
-    | Label         |  value    |  
-    |---------------|-----------|
-    | Display Name  | Luma Personal Email Id    | 
-    | Identity Symbol| lumaPersonalEmail    |  
-    | Type           | Cross-Device      | 
-
-
-1. Repeat the same process with following details:
-
-    | Label         |  value    |  
-    |---------------|-----------|
-    | Display Name  | Luma Product SKU    | 
-    | Identity Symbol| lumaProductSKU   |  
-    | Type           | Non-People     | 
 
 
 ## Create Identity Namespace Using API
 
-In this chapter we will create Identity Namespace **crmId** using API
+We will keep doing all of our CRM tasks via API. Let's create the Identity Namespace `Luma CRM Id`
 
+1. Download [`Identity Service.postman_collection.json`](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) to your `Luma Tutorial Assets` folder
+1. Import the collection into Postman
+1. 1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the Postman lesson.
+1. Select the request **[!DNL Identity Service > Create a new identity namespace. > IMS: JWT Generate + Auth via User Token]**
+1. Paste the following as the [!DNL Body] of the request:
 
-1. In Platform Collection , Go to folder **5-Profile** 
-1. Select request **Create Namespace**
-1. Verify it's URL and body
-
-    URL
-
-    ```
-    https://platform-va7.adobe.io/data/core/idnamespace/identities
-    ```
-
-    BODY
-
-    ```
+    ```json
     {
-        "name": "Luma CRM ID",
+        "name": "Luma CRM Id",
         "code": "lumaCrmId",
-        "description": "Luma CRM Id ",
         "idType": "Cross_device"
     }
     ```
 
-1. Press send button and you should get  following response with **Status :200 OK** : 
+1. Press the **Send** button and you should get a **200 OK** response: 
 
-    ```
-    {
-        "updateTime": 1593173280928,
-        "code": "lumaCrmId",
-        "status": "ACTIVE",
-        "description": "Luma CRM Id Number",
-        "id": 10240716,
-        "createTime": 1593173280928,
-        "idType": "Cross_device",
-        "name": "Luma CRM ID",
-        "custom": true
-    }
-    ```
+    ![Identity Namespace](assets/identity-createUsingApi.png#)
 
-    ![Identity Namespace](assets/identity-createUsingApi.png)
-
-## Identity Service
-
-In this chapter we will mark schemas for primary and secondary namespaces.
-
-### Exercise : Mark XDM Fields For Identity
-
-1. Open schema **Luma Loyalty Members**
-1. Select **Luma Loyalty Details** mixin
-1. Select **loyaltyId** field under **loyalty** object
-1. In Field Properties, Select Identity Checkbox
-1. Check **Primary Identity** checkbox.
-1. Select **Luma Loyalty Id** namespace from **Identity namespaces** dropdown
-
-![Primary Identity ](assets/identity-loyalty-primary.png)
-
-1. Press **Apply** button and then press **Save** Button to save changes
+If you return to the UI, you should now see your three new custom namespaces:
+![Identity Namespace ](assets/identity-newIdentities.png)
 
 
-### Exercise : Mark XDM Fields For Secondary Identity
+## Label identity fields in schemas
 
-1. Open schema **Luma Offline Purchase Event** 
-1. Select **Luma Identities Mixin**
-1. Go to identities object and select **crmId** field under loyalty object
-1. In Field Properties, Select Identity Checkbox
-1. Mark Primary Identity , Select **Luma CRM Id** namespace from Identities namespaces
-   
-1. Select **loyaltyId** field under loyalty object
-1. In Field Properties, Select Identity Checkbox
-1. Do not Mark Primary Identity , Select **Luma Loyalty Id** namespace from Identities namespaces
-    ![Secondary Identity ](assets/identity-offlinePurchase-secondary.png)
-    
-1.  Select **emailId** field under loyalty object
-1. In Field Properties, Select Identity Checkbox
-1. Do not Mark Primary Identity , Select **Luma Personal Email** namespace from Identities namespaces
+Now that we have our namespaces, the next step is to label our identity fields as such in our schemas.
 
+### Label XDM Fields For Primary Identity
 
+Each schema used with the Real-time Customer Profile is required to have a primary identity selected and each record passed in the ingestion process needs to pass a value for that field. Let's start with the Loyalty schema:
 
+1. Open the `Luma Loyalty Schema`
+1. Select `Luma Identity Profile Mixin`
+1. Select `loyaltyId` field
+1. In the **[!UICONTROL Field Properties]** section, check the **[!UICONTROL Required]** box
+1. Check the **[!UICONTROL Identity]** box
+1. Check the **[!UICONTROL Primary Identity]** box, too
+1. Select the `Luma Loyalty Id` namespace from **[!UICONTROL Identity namespaces]** dropdown
+1. Click **[!UICONTROL Apply]** and then press the **[!UICONTROL Save]** button to save your changes
 
-### Exercise : Mark Identity in Product Class
+    ![Primary Identity ](assets/identity-loyalty-primary.png)
 
-1. Open **Luma Product Catalog** Schema
-1. Select **Luma Product Class**
-1. Select **productSku** field 
-1. In field properties, Check Identity & Primary Identity
-1. Select **Luma Product SKU** as identifies.
-1. Apply & Save.
+Repeat the process for some of your other schema:
 
-    ![Secondary Identity ](assets/identity-products-productSKU.png)
+1. In the `Luma CRM Schema`, label the `crmId` field as as the required, primary identity using the `Luma CRM Id` namespace
+1. In the `Luma Offline Purchase Event Schema`, label the `loyaltyId` field as as the required, primary identity using the `Luma Loyalty Id` namespace
+1. In the `Luma Product Catalog Schema`, label the `productSku` field as as the required, primary identity using the `Luma Product SKU` namespace
 
+>[!NOTE]
+>
+>Data collected with the Web SDK is an exception to the typical practice of labeling identity fields in the schema. Web SDK uses something called an Identity Map to label identities *on the implementation side* and thus we will get to it when we implement the Web SDK on the Luma website. (We will eventually collect the Experience Cloud Visitor ID (ECID) as the primary id and crmId as a secondary id. 
 
-### Exercise : Mark Field For Identity using API 
+With our selection of primary identities, it's clear to see how `Luma CRM Schema` can connect to the `Luma Offline Purchase Event Schema` since they both use `loyaltyId` as an identifier. But how can we connect our offline purchases to online behavior? How can we classify the products purchase with our product catalog? To do those we will use additional identity fields and complete the set up of our schema relationship.
 
-In this exercise , we will be marking **crmId** as primary identity in **LUMA CRM Schema** using API
+<!--use a visual-->
 
-```
-NOTE TO SME : TODO 
-```
+### Label XDM Fields For Secondary Identity
 
-### Label identity for Luma Web Data
+To connect offline purchases to online behavior, we will add add the crmId as a secondary identifier to our `Luma Loyalty Schema` and later in our web events data. Let's update the `Luma Loyalty Schema`:
 
-Data collected with the Web SDK is an exception to the typical practice of labeling identity fields in the schema. Web SDK uses something called an Identity Map to label identities *on the implementation side* and thus we will get to it when we implement the Web SDK on the Luma website.
+1. Open the `Luma Loyalty Schema`
+1. Select `Luma Identity Profile Mixin`
+1. Select `crmId` field
+1. Check the **[!UICONTROL Identity]** box
+1. Select the `Luma CRM Id` namespace from **[!UICONTROL Identity namespaces]** dropdown
+1. Click **[!UICONTROL Apply]** and then press the **[!UICONTROL Save]** button to save your changes
+
+    ![Secondary Identity](assets/identity-loyalty-secondaryId.png)
+
+## Complete the schema relationships
+
+1. Open the `Luma Offline Purchase Event Schema`
+1. Select **[!UICONTROL ExperienceEvent commerce details]** mixin
+1. Select **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** field
+1. Check the **[!UICONTROL Relationship]** box
+1. Select `Luma Product Catalog Schema` as the **[!UICONTROL Reference schema]**
+1. Select the `Luma CRM Id` namespace as the **[!UICONTROL Referennce Identity namespaces]**
+1. Click **[!UICONTROL Apply]** and then press the **[!UICONTROL Save]** button to save your changes
+
+    ![Reference field](assets/identity-offlinePurchase-relationship.png)
+
+Repeat this process to create a relationship between the `Luma Web Events Schema` and the `Luma Product Catalog Schema`, too.
 
 ## Additional Resources
 
 * [Identity Service documentation](https://docs.adobe.com/content/help/en/experience-platform/identity/home.html)
 * [Identity Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/id-service-api.yaml)
+
+Now that our identities are in place, we can [create our datasets](create-datasets.md)!

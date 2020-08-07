@@ -89,4 +89,4 @@ Once the sandbox is active, you need to include it in your product profile in or
 * [Sandbox API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/sandbox-api.yaml)
 
 
-Great, you've created your sandbox and are ready to [Set up Developer Console and Postman](set-up-adobe-io-and-postman.md)!
+Great, you've created your sandbox and are ready to [Set up Developer Console and Postman](set-up-developer-console-and-postman.md)!

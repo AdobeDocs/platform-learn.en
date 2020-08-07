@@ -347,3 +347,6 @@ The next step is to define the relationship between the two ExperienceEvent sche
 
 * [Experience Data Model (XDM) System documentation](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html)
 * [Schema Registry API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/schema-registry.yaml)
+
+
+Now that you have your schemas you can [map identities](map-identities.md)!
