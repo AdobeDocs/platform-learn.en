@@ -26,7 +26,7 @@ Key terms:
 
 * **Schema**: a representation of your data. A schema is comprised of a class and optional mixins and is used to create datasets. A schema includes behavioral attributes, timestamp, identity, attribute definitions, and relationships.
 * **XDM Profile Class**: a common schema class used to represent record data
-* **XDM ExperienceEvent Class**: a common schema class used to reporesent time-series data
+* **XDM ExperienceEvent Class**: a common schema class used to represent time-series data
 * **Mixin**: allows users to extend reusable fields that contain variables defining one or more attribute intended to be included in a schema or added to a class.
 * **Standard Mixin**: an open-source Mixin built to conform to common industry standards, used to accelerate implementation and support repeatable services operating on the data
 * **Data type**: a reusable object with properties in a hierarchical representation. These can be standard types or custom-defined defined types to describe your own data in your own way (for example, a collection of fields that you use to describe your products). Unlike Mixins, data types can be used in schemas regardless of the class.
@@ -166,8 +166,8 @@ Now we will create a schema using the API.
 
 First we will create the empty schema:
 
-1. Open Postman
-1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the Postman lesson.
+1. Open [!DNL Postman]
+1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
 1. Open your environment variables and change the value of **CONTAINER_ID** from `global` to `tenant`
 1. Open the call **[!DNL Schema Registry API > Schemas > Create a new tenant-defined schema]**
 1. Open the Body tab and paste the following code and click **Send** to make the API call. This will create a new schema using the same `XDM Individual Profile` base class that was used in the Loyalty schema:
@@ -202,13 +202,13 @@ First we will create the empty schema:
 >
 > * No auth token: Run the **IMS: JWT Generate + Auth via User Token** call to generate new tokens
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Update the **CONTAINER_ID** environment variable from `global` to `tenant`
-> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Verify your user permission in the Admin Console
+> * `403: PALM Access Denied. POST access is denied for this resource from access control`: Verify your user permissions in the Admin Console
 
 ### Add standard mixins
 
 Now it's time to add the mixins to the schema:
 
-1. In Postman, open the call **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema]**
+1. In [!DNL Postman], open the call **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema]**
 1. In the **Params** tab, paste the `meta:altId` value from the previous response as the `$id`
 1. Open the Body tab and paste the following code and click **Send** to make the API call. This will add the three standard mixins to your `Luma CRM Schema`:
 
@@ -255,7 +255,7 @@ Now let's add our Identity Profile Mixin to the schema. Looking at the Body of t
 Now see if you can modify the request Body from the request used to add the standard mixins to add the `Luma Identity Profile Mixin`. It should look something like this (with a different `$ref` value)
   ![Retrieve the list of mixins](assets/schemas-crm-addIdentityMixin.png) 
 
-Verify that the mixin has been added to the schema by checking the UI or, for bonus points, see if you can figure out how to list the mixins in the schema using the **[!DNL Lookup a specific schema by its unique ID]** call in the Postman collection.
+Verify that the mixin has been added to the schema by checking the UI or, for bonus points, see if you can figure out how to list the mixins in the schema using the **[!DNL Lookup a specific schema by its unique ID]** call in the [!DNL Postman] collection.
 
 ## Create Offline Purchase Events Schema
 
@@ -310,10 +310,9 @@ Click on the **[!UICONTROL Consumer ExperienceEvent mixin]** in the **[!UICONTRO
 Notice that we didn't add the `Luma Identity ExperienceEvent Mixin` to this schema. This is because the Web SDK has a different way of collecting identities. If you select the **[!UICONTROL XDM ExperienceEvent]** class in the **[!UICONTROL Composition]** section of the schema editor, you will notice that one of the fields it adds by default is called **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] is used by various Adobe applications to link to Platform. You will see how identities are sent to Platform in the Web SDK lesson.
 
 
-
 ## Create Product Catalog Schema
 
-By using the  [!UICONTROL Experience event commerce details] and [!UICONTROL Consumer ExperienceEvent mixins]), Luma reports details of product-related events via the standard productListItems data type. But they also have additional product detail fields that they would like to send to Platform. Instead of capturing these fields in their point-of-sale and ecommerce systems and ingesting them into Platform using the schemas you just created, Luma would prefer to simply ingest these fields directly from their product catalog system. A "relationship schema" in Platform allows you to define a relationship between two schemas for the purposes of classification. Luma will use a relationship schema to classify their product details. We will begin the process now and complete it at the end of the next lesson.
+By using the  [!UICONTROL Experience event commerce details] and [!UICONTROL Consumer ExperienceEvent mixins]), Luma reports details of product-related events via the standard productListItems data type. But they also have additional product detail fields that they would like to send to Platform. Instead of capturing these fields in their point-of-sale and e-commerce systems and ingesting them into Platform using the schemas you just created, Luma would prefer to simply ingest these fields directly from their product catalog system. A "relationship schema" in Platform allows you to define a relationship between two schemas for the purposes of classification. Luma will use a relationship schema to classify their product details. We will begin the process now and complete it at the end of the next lesson.
 
 >[!NOTE]
 >

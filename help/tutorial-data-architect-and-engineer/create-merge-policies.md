@@ -48,7 +48,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 ## Merge Policy using API
 
-1. Open Postman , Authenticate if you are not authenticated already.
+1. Open [!DNL Postman], Authenticate if you are not authenticated already.
 1. In Platform collection , Go to Profile and select **Create Merge Policy**
 1. Verify URL
 

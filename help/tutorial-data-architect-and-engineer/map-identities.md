@@ -78,8 +78,8 @@ Now set up another namespace for the Luma Product Catalog Schema with the follow
 
 We will keep doing all of our CRM tasks via API. Let's create the Identity Namespace `Luma CRM Id`
 
-1. Download [`Identity Service.postman_collection.json`](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) to your `Luma Tutorial Assets` folder
-1. Import the collection into Postman
+1. Download [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) to your `Luma Tutorial Assets` folder
+1. Import the collection into [!DNL Postman]
 1. 1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the Postman lesson.
 1. Select the request **[!DNL Identity Service > Create a new identity namespace. > IMS: JWT Generate + Auth via User Token]**
 1. Paste the following as the [!DNL Body] of the request:
@@ -153,7 +153,7 @@ To connect offline purchases to online behavior, we will add add the crmId as a 
 1. Select **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** field
 1. Check the **[!UICONTROL Relationship]** box
 1. Select `Luma Product Catalog Schema` as the **[!UICONTROL Reference schema]**
-1. Select the `Luma CRM Id` namespace as the **[!UICONTROL Referennce Identity namespaces]**
+1. Select the `Luma CRM Id` namespace as the **[!UICONTROL Reference Identity namespaces]**
 1. Click **[!UICONTROL Apply]** and then press the **[!UICONTROL Save]** button to save your changes
 
     ![Reference field](assets/identity-offlinePurchase-relationship.png)

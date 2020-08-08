@@ -66,8 +66,8 @@ Now, it's time to enable the `Luma CRM Schema` with the API. If you want to skip
 
 First we need to get the `meta:altId` of the `Luma CRM Schema`:
 
-1. Open Postman
-1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the Postman lesson.
+1. Open [!DNL Postman]
+1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
 1. Open the call **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]**
 1. Update the Accept Header to one of the allowed values, e.g. `application/vnd.adobe.xdm+json`
 1. Click the **Send** button
@@ -116,8 +116,8 @@ Repeat the steps above for these other datasets:
 
 First we need to get the `id` of the `Luma CRM Dataset`:
 
-1. Open Postman
-1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the Postman lesson.
+1. Open [!DNL Postman]
+1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
 1. Open the call **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. Click the **Send** button
 1. You should get a 200 response

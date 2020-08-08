@@ -11,26 +11,29 @@ activity: implement
 
 # Ingest Streaming Data
 
-Streaming data ingestion allows you to send data from client-side and server-side devices in real-time.
+In this lesson we are going to stream data into Platform using the Web SDK.
 
-First, watch this short video to learn more about streaming data ingestion:
+There are two main tasks we need to complete in the Adobe Experience Platform Launch interface:
+
+* First, we need to create an Edge configuration, which tells the Adobe servers where data should go (e.g. Platform, Adobe Analytics, Adobe Target, etc) after it has been sent to the Edge by Web SDK. This step needs to be taken by all Web SDK customers, regardless of how they are deploying Web SDK
+* Second, we need to implement Web SDK. Web SDK can be deployed via the Launch interface or it can be deployed using the raw javascript file, alloy.js. In this tutorial, we will use the Launch interface. This tutorial will just focus on the minimal amount of features needed to deploy a simple Web SDK implementation specifically to stream data into Experience Platform and is not meant to be a complete Launch tutorial.
+
+First, watch these two short video to learn more about streaming data ingestion and Web SDK:
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
+
+>[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
 
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Datasets > View Datasets
-* Permission item Datasets > Data Monitoring
-* Permission item Sources > View Sources
-* Permission item Sources > Manage Sources
-* Permission item Sandboxes > `Luma Tutorial`
-* User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+* Permission item Launch > Property Rights > Approve, Develop, Manage Environments, Manage Extensions, and Publish
+* Permission item Launch > Company Rights > Manage Properties
+* User-role access to the `Luma Tutorial Launch` product profile
 
 ## Create a Launch Configuration
 
-Next we’re going to create an Edge Configuration. This configuration will generate a Configuration ID. This ID will be added to the AEP Web SDK configuration in Launch and will be used to route data appropriately when it hits the Experience Edge.
+First, we are going to create an Edge Configuration. This configuration will generate a Configuration ID. This ID will be added to the AEP Web SDK configuration in Launch and will be used to route data appropriately when it hits the Experience Edge.
 
 1. Navigate to launch.adobe.com
     <!--when will the edge config go live?-->

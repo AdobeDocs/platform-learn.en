@@ -47,7 +47,7 @@ In the tutorial, you will create a sandbox environment and use it to complete th
 
 ### API
 
-Platform is built API-first. While interface methods exist for all major Platform tasks and will be used in the majority of the exercises, this tutorial contains some exercises that use the API. We will guide you through the basic project setup in the Adobe Developer Console and provide you with a Postman Collection to make the necessary API calls. After completing the tutorial, you will find it valuable to be familiar with the Platform API and use it in your own deployment.
+Platform is built API-first. While interface methods exist for all major Platform tasks and will be used in the majority of the exercises, this tutorial contains some exercises that use the API. We will guide you through the basic project setup in the Adobe Developer Console and provide you with a [!DNL Postman] Collection to make the necessary API calls. After completing the tutorial, you will find it valuable to be familiar with the Platform API and use it in your own deployment.
 
 ### Third-party technologies
 

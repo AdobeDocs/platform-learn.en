@@ -81,7 +81,7 @@ This segment is created by leveraging relationship between multiple XDM Schema -
 In this lesson, we will create a new segment of all Luma customer whose loyalty level is Bronze.
 
 
-1. Open Postman
+1. Open [!DNL Postman]
 1. In platform, Go to folder **6-Segmentation**
 1. Select request **Create Segment**
 1. Verify URL and body

@@ -54,7 +54,7 @@ That's it! See, I told you this was going to be quick. Follow same steps and cre
 
 ## Create a dataset using API
 
-Now you will create a Luma CRM Dataset using the API. I think you are catching on how these API exercises work. Basically, we do something in the UI and then do the exact same thing using the API with a Postman collection we've downloaded from the [Adobe Experience Platform Postman Samples
+Now you will create a Luma CRM Dataset using the API. I think you are catching on how these API exercises work. Basically, we do something in the UI and then do the exact same thing using the API with a [!DNL Postman] collection we've downloaded from the [Adobe Experience Platform Postman Samples
 ](https://github.com/adobe/experience-platform-postman-samples). If you want to just skip this exercise and create the `Luma CRM Dataset` in the UI that's fine, I won't tell anyone. :D
 
 
@@ -62,8 +62,8 @@ Now you will create a Luma CRM Dataset using the API. I think you are catching o
 
 First we need to get the `$id` of the `Luma CRM Schema`:
 
-1. Open Postman
-1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the Postman lesson.
+1. Open [!DNL Postman]
+1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
 1. Open the call **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]**
 1. Update the Accept Header to one of the allowed values, e.g. `application/vnd.adobe.xdm+json`
 1. Click the **Send** button
@@ -75,8 +75,8 @@ First we need to get the `$id` of the `Luma CRM Schema`:
 
 Now you can create the dataset:
 
-1. Download [`Catalog Service API.postman_collection.json`](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) to your `Luma Tutorial Assets` folder (The Dataset Service API collection is for managing data usage labels on existing datasets)
-1. Import the collection into Postman
+1. Download [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) to your `Luma Tutorial Assets` folder (The Dataset Service API collection is for managing data usage labels on existing datasets)
+1. Import the collection into [!DNL Postman]
 1. Select the request **[!DNL Identity Service > Create a new identity namespace. > IMS: JWT Generate + Auth via User Token]**
 1. Paste the following as the **Body** of the request, ***replacing the id value with your own***:
 
