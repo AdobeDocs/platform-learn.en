@@ -94,7 +94,7 @@ We will keep doing all of our CRM tasks via API. Let's create the Identity Names
 
 1. Press the **Send** button and you should get a **200 OK** response: 
 
-    ![Identity Namespace](assets/identity-createUsingApi.png#)
+    ![Identity Namespace](assets/identity-createUsingApi.png)
 
 If you return to the UI, you should now see your three new custom namespaces:
 ![Identity Namespace ](assets/identity-newIdentities.png)
