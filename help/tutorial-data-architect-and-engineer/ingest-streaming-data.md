@@ -27,30 +27,294 @@ First, watch these two short video to learn more about streaming data ingestion 
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Launch > Property Rights > Approve, Develop, Manage Environments, Manage Extensions, and Publish
-* Permission item Launch > Company Rights > Manage Properties
+* Permission item **[!UICONTROL Launch]** > **[!UICONTROL Property Rights]** > **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Publish]**
+* Permission item **[!UICONTROL Launch]** > **[!UICONTROL Company Rights]** > **[!UICONTROL Manage Properties]**
 * User-role access to the `Luma Tutorial Launch` product profile
+* Admin-role access to the `Luma Tutorial Launch` product profile
+* Permission item **[!UICONTROL Platform]** > **[!UICONTROL Data Ingestion]** > **[!UICONTROL View Sources]** and **[!UICONTROL Manage Sources]**
+* Permission item **[!UICONTROL Platform]** > **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
+* Permission item **[!UICONTROL Platform]** > **[!UICONTROL Profiles]** > **[!UICONTROL View Profiles]**, **[!UICONTROL Manage Profiles]** and **[!UICONTROL Export Audience Segment]**
+* Permission item **[!UICONTROL Platform]** > **[!UICONTROL Sandbox Administration]** > **[!UICONTROL View Sandboxes]**
+* Permission item **[!UICONTROL Platform]** > **[!UICONTROL Sandboxes]** > `Luma Tutorial`
+* User-role access to the `Luma Tutorial Platform` product profile
+  
+## Create a streaming source
 
-## Create a Launch Configuration
+1. Log into the [Experience Platform  user interface](https://experience.adobe.com/platform/)
+1. Click **[!UICONTROL Sources]** in the left navigation
+1. Filter the list by clicking **[!UICONTROL Streaming]**
+1. In the **[!UICONTROL HTTP API]** section, click the **[!UICONTROL Configure]** button
+    ![Configure an HTTP API streaming source](assets/websdk-source-confiigureHTTPAPI.png)
+1. On the **[!UICONTROL Authentication]** step, enter `Luma Web Events Source` as the **[!UICONTROL Account name]** and click the **[!UICONTROL Connect to source]** button
+    ![Configure an HTTP API streaming source](assets/websdk-source-connectSource.png)
+1. Once connected, click the **[!UICONTROL Next]** button to proceed to the next step in the workflow
+1. On the **[!UICONTROL Select data]** step, choose **[!UICONTROL Existing Dataset]**, select your `Luma Web Events Dataset`, and then click the **[!UICONTROL Next]** button
+    ![Select your dataset](assets/websdk-source-selectDataset.png)
+1. On the **[!UICONTROL Dataflow detail]** step, just click the **[!UICONTROL Next]** button:
+    ![Click Next](assets/websdk-source-dataflowName.png)
+    <!--What is a good practice for naming the data flow vs the source-->
 
-First, we are going to create an Edge Configuration. This configuration will generate a Configuration ID. This ID will be added to the AEP Web SDK configuration in Launch and will be used to route data appropriately when it hits the Experience Edge.
+1. On the **[!UICONTROL Review]** step, review your source details and click the **[!UICONTROL Finish]** button:
+    ![Click Next](assets/websdk-source-review.png)
 
-1. Navigate to launch.adobe.com
+
+## Create an Edge Configuration
+
+Next, we are going to create an Edge Configuration. An Edge Configuration tells the Adobe Edge servers where to send the data after it is collected by the Web SDK. For example, do you want to send the data to Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target? Edge Configurations are managed in the Launch user interface and are critical to Platform data collection with Web SDK, regardless of whether or not you are implementing Web SDK via Launch.
+
+To create your [!UICONTROL Edge Configuration]:
+
+1. Log into the [Experience Platform Launch user interface](https://experience.adobe.com/launch/)
     <!--when will the edge config go live?-->
 
-1. Select the Edge Configuration icon from the left-hand rail
-
-    ![Click Edge Configuration icon in the left navigation](assets/launch-edgeConfig-clickNav.png)
-
+1. Click **[!UICONTROL Edge Configuration]** in the left navigation
 1. Click the **[!UICONTROL New Edge Configuration]** button in the upper-right hand corner
 
-1. Give your Configuration a Name and Description (optional) and click Save
+    ![Click Edge Configuration icon in the left navigation](assets/websdk-edgeConfig-clickNav.png)
+
+
+1. For the **[!UICONTROL Friendly Name]**, enter `Luma Platform Tutorial` and an optional description 
+1. Click the **[!UICONTROL Save]** button
+   
+    ![Name the Edge Configuration and save](assets/websdk-edgeConfig-name.png)
+
+On the next screen you create the environment of the config. Here is where you specify where you want to send data. To send data to Experience Platform only, do the following:
+
+1. Uncheck the **[!UICONTROL ID Sync Enabled]** box. This field enables syncing with third parties, which is useful for Audience Manager, Ad Cloud, Real-time Customer Data Platform, but is not needed in our Platform-only implementation
+1. Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additional fields
+1. For **[!UICONTROL Sandbox]**, select `Luma Tutorial`
+1. For Streaming Inlet, select `Luma Web Events Source`
+1. For Event Dataset, select `Luma Web Events Dataset`
+1. If you use other Adobe applications, feel free to explore the other sections to see which information is required in the Edge Configuration of these other solutions. Remember, Web SDK was developed not only to stream data into Experience Platform, but also to replace all previous JavaScript libraries used by other Adobe applications. The Edge Configuration is used to specify the account details of each application to which you want to send the data.
+1. Click the **[!UICONTROL Save]** button to save your configuration
+    ![Name the Edge Configuration and save](assets/websdk-edgeConfig-addEnvironment.png)
+
+Once the Edge Configuration has saved, on the resulting screen you will notice that three environments have been created for Development, Staging, and Production and that additional Development environments can be added:
+    ![Each Edge Configuration can have multiple environments](assets/websdk-edgeConfig-environments.png)
+If you open up any one of these environments you will see the Platform details you just entered. However, these details can be configured differently per environment. You can have Web SDK send data to different Edge Configuration environments, which will then in turn forward the data to specific application environments, if required as part of your code deployment process. In this tutorial, we will not do any additional customization to our Edge Configuration:
 
 ## Install the Web SDK Extension
 
-## Create Rules to Send Data
+### Add a property
 
-## Use the Data Layer to XDM Mapper
+First we need to create a Launch property. A property is a container for all the JavaScript, rules, and other features needed to collect details from a web page and send it to various locations.
+
+To create a property:
+
+1. Click **[!UICONTROL Properties]** in the left navigation
+1. Click the **[!UICONTROL Add New Property]** button
+    ![Add a new property](assets/websdk-property-addNewProperty.png)
+1. Enter `Luma Platform Tutorial` as the **[!UICONTROL Name]** (if multiple people at your company are taking this tutorial, add your name to the end of the property name to avoid a collision)
+1. Enter `enablementadobe.com` as the **[!UICONTROL Domains]**
+1. Click the **[!UICONTROL Save]** button
+    ![Property details](assets/websdk-property-propertyDetails.png)
+
+After saving the property, you might see an error message like the one below. If so, this is because you don't actually have access to the property you just created. To fix this, we need to go to the Admin Console to give yourself access:
+    ![Error after saving the profile](assets/websdk-property-errorCreating.png)
+
+To give yourself access to the property:
+
+1. In a separate browser tab, log into the [Admin Console](https://adminconsole.adobe.com/)
+1. Go to **[!UICONTROL Products]** from the top navigation
+1. Select **[!UICONTROL Adobe Experience Platform]** on the left navigation
+1. Go to your `Luma Tutorial Launch` product profile
+1. Click on the **[!UICONTROL Permissions]** tab
+1. On the **[!UICONTROL Properties]** row, click **[!UICONTROL Edit]**
+    ![Edit the Property Permissions](assets/websdk-adminconsole-editPermissions.png)
+1. Move the `Luma Platform Tutorial` property to the right hand side and click the **[!UICONTROL Save]** button to update the permissions
+   
+    ![Add the new property](assets/websdk-adminconsole-addProperty.png)
+
+Now switch back to your browser tab with the Launch interface still open. Reload the page and the `Luma Platform Tutorial` property should display in the list. Click to open the property:
+
+![Luma Platform Tutorial should appear](assets/websdk-property-showsInList.png)
+
+## Add the Web SDK extension
+
+Now that we have a property we can add the Web SDK to it. We do this with an extension. To add the extension:
+
+1. Click **[!UICONTROL Extensions]** in the left navigation
+1. Click the **[!UICONTROL Catalog]** tab
+1. There are many extensions available for Launch. Filter the catalog with the term `Web SDK`
+1. In the **[!UICONTROL AEP Web SDK]** extension, click the **[!UICONTROL Install]** button
+    ![](assets/websdk-property-addExtension.png)    
+1. There are a number of configurations available for the Web SDK extension, but there only two we are going to configure for this tutorial. Update the **[!UICONTROL Edge Domain]** to `data.enablementadobe.com`. This setting allows you to set first party cookies with your Web SDK implementation, which is strongly encouraged. The CNAME for the `enablementadobe.com` domain has already been configured so that `data.enablementadobe.com` will forward to Adobe servers.
+1. From the **[!UICONTROL Edge Configuration]** dropdown, select your `Luma Platform Tutorial` configuration.
+1. Click the **[!UICONTROL Save]** button
+    <!--is edge domain required for first party? when will it break?-->
+   <!--any other fields that should be highlighted-->
+    ![](assets/websdk-property-configureExtension.png)
+ 
+    
+
+## Create a rule to send data
+
+Now we will use a rule to send data to Platform. A rule is a combination of events, conditions and actions that tell Launch to do something. To create a rule:
+
+1. Click **[!UICONTROL Rules]** in the left navigation
+1. Click the **[!UICONTROL Create New Rule]** button
+    ![Create a rule](assets/websdk-property-createRule.png)
+1. Name the rule `All Pages - Library Loaded`
+1. Under **[!UICONTROL Events]**, click the **[!UICONTROL Add]** button
+    ![](assets/websdk-property-nameRule.png)   
+1. Use the **[!UICONTROL Core]** **[!UICONTROL Extension]** and select **[!UICONTROL Library Loaded (Page Top)]** as the **[!UICONTROL Event Type]**
+1. Click **[!UICONTROL Keep Changes]** to return to the main rule screen
+    ![Add the Library Loaded event](assets/websdk-property-addEvent.png)    
+1. Leave **[!UICONTROL Conditions]** empty, since we want this rule to fire on all pages, as per the name we gave it
+1. Under **[!UICONTROL Actions]**, click the **[!UICONTROL Add]** button
+1. Use the **[!UICONTROL AEP Web SDK]** **[!UICONTROL Extension]** and select **[!UICONTROL Send Event]** as the **[!UICONTROL Action Type]**
+1. On the right, select **[!UICONTROL web.webpagedetails.pageViews]** from the **[!UICONTROL Type]** dropdown. This is one of the XDM fields in our `Luma Web Events Schema`
+1. Click **[!UICONTROL Keep Changes]** to return to the main rule screen
+    ![Add the Send Event action](assets/websdk-property-addAction.png)
+1. Click **[!UICONTROL Save]** to save the rule    
+    ![Save the rule](assets/websdk-property-saveRule.png)   
+
+## Validate the rule
+
+In order to validate the rule we just created, we need to publish a library containing all of the items in our property. There are a few quick steps we need to take in the **[!UICONTROL Publishing]** section of Launch.
+
+### Create a Host
+
+Launch libraries can be hosted on Adobe's Content Delivery Network (CDN) or on your own servers. In this tutorial we will use Adobe's CDN since it is just must faster to set up:
+
+1. Click **[!UICONTROL Hosts]** in the left navigation
+1. Click the **[!UICONTROL Create New Host]** button
+    ![Create a new host](assets/websdk-property-createHost.png)   
+1. For the **[!UICONTROL Name]**, enter `Adobe CDN`
+1. For the **[!UICONTROL Type]**, select **[!UICONTROL Managed by Adobe]**
+1. Click the **[!UICONTROL Save]** button to complete the setup of the host
+    ![Configure the host](assets/websdk-property-hostDetails.png)   
+
+### Create an environment
+
+Environments allow you to have different versions of a library in different publishing environments to accomodate your publishing workflow. For example, the fully tested version of your library can be published to a Production environment, while new changes are being created in a Development environment. You can also use different hosts for each environment. To create an environment:
+
+1. Click **[!UICONTROL Environments]** in the left navigation
+1. Click the **[!UICONTROL Create New Environment]** button
+    ![Create a new environment](assets/websdk-property-createEnvironment.png) 
+1. Under **[!UICONTROL Development]** click **[!UICONTROL Select]**   
+    ![Select the environment type](assets/websdk-property-selectEnvironment.png) 
+1. For the **[!UICONTROL Name]**, enter `Development`
+1. For the **[!UICONTROL Select Host]** dropdown, select `Adobe CDN`
+1. Click the **[!UICONTROL Save]** button to complete the setup of the environment
+    ![Configure the environment](assets/websdk-property-configureEnv.png)
+1. You will see a modal with URL and other implementation details of this library. These are critical for a real Launch implementation, but we don't need to worry about that for this tutorial. Click the **[!UICONTROL Close]** button to exit the modal.
+
+### Create a library
+
+Now let's bundle the contents of our property&mdash;currently an extension and a rule&mdash;into a library. To create a library:
+
+1. Click **[!UICONTROL Publishing Flow]** in the left navigation
+1. Click the **[!UICONTROL Add New Library]** button
+    ![Click the Add New Library button](assets/websdk-property-pubAddNewLib.png)
+1. For the **[!UICONTROL Name]**, enter `Luma Platform Tutorial`
+1. For the **[!UICONTROL Environment]**, select `Development`
+1. Click the **[!UICONTROL Add All Changed Resources]** button. (In addition to the [!UICONTROL AEP Web SDK] extension and the `All Pages - Library Loaded` rule, you will also see the [!UICONTROL Core] extension added which contains the base JavaScript required by all Launch web properties.)
+1. Click the **[!UICONTROL Save & Build for Development]** button 
+    ![Create and build the library](assets/websdk-property-buildLibrary.png)
+
+The library may take a few minutes to build and when it is complete it will display a green dot to the left of the library name:
+    ![Build complete](assets/websdk-property-buildComplete.png)   
+
+As you can see on the [!UICONTROL Publishing Flow] screen, there is a lot more to the publishing process in Launch which is beyond the scope of this tutorial. We are just going to use a single library in our Development environment.
+
+### Add the Adobe Experience Platform Debugger
+
+The Experience Platform Debugger is an extension available for Chrome and Firefox browsers which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
+
+* [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
+* [Chrome extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj?hl=en)
+
+If you've never used the Debugger before&mdash;and this one is different from the older Adobe Experience Cloud Debugger&mdash;you might want to watch this five minute overview video:
+
+
+>[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+
+
+### Open the Luma website
+
+For this tutorial, we will be using a publicly hosted version of the Luma demo website. Let's open it and bookmark it:
+
+ 1. In a new browser tab, open [https://luma.enablmentadobe.com](https://luma.enablmentadobe.com). 
+ 1. Bookmark the page for use throughout the rest of the tutorial
+
+This is why we used `enablementadobe.com` in the [!UICONTROL Domains] field of our initial Launch property configuration and why we used `data.enablementadobe.com` as our first-party domain in the [!UICONTROL AEP Web SDK] extension. See, I had a plan!
+
+![Luma homepage](assets/websdk-luma-homepage.png)   
+
+### Use the Experience Platform Debugger to map to your Launch property
+
+The Experience Platform Debugger has a cool feature in it that allows your to replace an existing Launch property with a different one (or inject one on a site that doesn't have one). This is really useful for testing purposes and allows us to skip a lot of implementation steps that only your web developers really care about.
+
+1. Make sure you have the Luma site open and click the Experience Platform Debugger extension icon
+1. The Debugger will open and show some details of the hardcoded implementation, which is unrelated to this tutorial
+1. Confirm the Debugger is "**[!UICONTROL Connected to Luma]**" as pictured below and then click the "**[!UICONTROL lock]**" icon to lock the Debugger to the Luma site. If you don't do this, the Debugger will keep switching to expose the implementation details of whatever browser tab is in focus, which can be confusing.
+1. Click the **[!UICONTROL Sign In]** button on the top right to authenticate. If you already have a browser tab open with the Launch interface, the authentication step will be automatic and you won't have to enter your username and password again.
+1. Now click **[!UICONTROL Launch]** in the left navigation
+1. Select the Configuration tab
+1. To the right of where it shows you the **[!UICONTROL Page Embed Codes]**, open the **[!UICONTROL Actions]** dropdown and select **[!UICONTROL Replace]**
+    ![Select Actions > Replace](assets/websdk-debugger-replaceLibrary.png)
+1. Since you are authenticated, the Debugger is going to pull in your available Launch properties and environments. Select your `Luma Platform Tutorial` property
+1. Select your `Development` environment
+1. Click the **[!UICONTROL Apply]** button
+    ![Select the alternate Launch property](assets/websdk-debugger-selectProperty.png)
+1. My website will now reload _with your Launch property_. Help, I've been hacked! Just kidding. The new [!UICONTROL Page Embed Codes] you see are also viewable in the [!UICONTROL Environments] section of the Launch interface.
+    ![Launch property replaced](assets/websdk-debugger-propertyReplaced.png)   
+1. Now click **[!UICONTROL AEP Web SDK]** in the left navigation, to see the **[!UICONTROL Network Requests]**
+1.  and **[!UICONTROL xdm]** rows
+    ![AEP Web SDK request](assets/websdk-debugger-platformNetwork.png)
+1. Click to open the **[!UICONTROL events]** row. Note how we can see the `web.webpagedetails.pageView` event we specified in our [!UICONTROL Send Event] action, as well as other, out-of-the-box variables adhering to the `AEP Web SDK ExperienceEvent Mixin` format
+    ![Event details](assets/websdk-debugger-eventDetails.png)   
+1. Click to open the **[!UICONTROL xdm]** row. Note how we can see the ECID being passed as part of the identityMap&mdash;the Web SDK's alternative way of passing identities.
+    ![ECID in IdentityMap](assets/websdk-debugger-identityMap.png)   
+
+These types of request details are also visible in the Network tab. Filter for calls with "interact" to locate the call and they are in the Request Payload Headers:
+    ![](assets/websdk-debugger-networkTab.png)   
+
+## Validate data in Experience Platform
+
+You can validate that data is landing in Platform by looking at the batches of data arriving in the dataset. I know, it's called streaming data ingestion but now I'm saying it arrives in batches. It does stream in real-time to Profile, but arrives in 15-minute batches to the data lake. 
+
+To validate the data:
+
+1. In the Platform UI, go to **[!UICONTROL Datasets]** in the left navigation
+1. Open the `Luma Web Events Dataset` and confirm that a batch has arrived
+1. Click the **[!UICONTROL Preview dataset]** button
+    ![Open the dataset](assets/websdk-platform-dataset.png)
+1. In the preview modal, note how you can select different fields of the schema on the left to preview those specific data points:
+    ![Preview the fields](assets/websdk-platform-datasetPreview.png)   
+
+You can also confirm that the new profile is showing up:
+
+1. In the Platform UI, go to **[!UICONTROL Profiles]** in the left navigation
+1. Select the **[!UICONTROL ECID]** namespace and search for your ECID value (copy it from the Debugger) 
+1. The profile will will have its own id, separate from the ECID, click it to open the profile
+    ![Find and open the profile](assets/websdk-platform-openProfile.png)
+1. While there may note be much in it, you should at least be able to see the pages you viewed
+    ![Profile Events](assets/websdk-platform-profileEvents.png)   
+    <!--![](assets/websdk-platform-confirmProfile.png)-->  
+
+
+
+## Add custom data to the event
+
+1. In the Launch UI, on the top right corner of your `Luma Platform Tutorial` property, open the **[!UICONTROL Select a Working Library]** dropdown and select your `Luma Platform Tutorial` library. This is going to make it easier to publish additional updates to our library
+1. Now go to **[!UICONTROL Data Elements]** in the left navigation
+1. Click the **[!UICONTROL Create New Data Element]** button
+
+    ![](assets/websdk-property-createNewDataElement.png)   
+1. As the **[!UICONTROL Name]** enter `Page Name` 
+1. As the Data Element Type, select `JavaScript Variable`
+1. As the JavaScript variable name, enter `digitalData.page.pageInfo.pageName`
+1. To help standardize the format of the values, check the boxes for **[!UICONTROL Force lowercase value]** and **[!UICONTROL Clean text]**
+1. Make sure that `Luma Platform Tutorial` is selected as the working library, and click the **[!UICONTROL Save to Library]** button
+    ![](assets/websdk-property-dataElement-pageName.png) 
+    ![](assets/.png)   
+    ![](assets/.png)   
+    ![](assets/.png)   
+    ![](assets/.png)   
+    ![](assets/.png)   
+
 
 ## Additional Resources
 
