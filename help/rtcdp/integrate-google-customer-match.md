@@ -1,0 +1,28 @@
+---
+title: Integrate Google Customer Match with Adobe's Real-time Customer Data Platform
+description: This video shows how Adobe’s Real-Time CDP and Google’s Customer Match capabilities can help brands engage with their customers on Google's owned and operated properties with the business objective increase their outreach campaigns.
+feature: real-time customer data platform
+topics:
+kt: 5948
+audience: marketer
+doc-type: value-video
+activity: use
+thumbnail: 38180.jpg
+---
+
+# Integrate Google Customer Match
+
+This video shows how Adobe’s Real-Time CDP and Google’s Customer Match capabilities can help brands engage with their customers on Google’s owned and operated properties with the business objective increase their outreach campaigns.
+
+>[!VIDEO](https://video.tv.adobe.com/v/38180?quality=12&learn=on)
+
+## Additional Resources
+
+* [Enforce Data Usage Policies in Real-time Customer Data Platform](../governance/enforce-data-usage-policies-in-real-time-cdp.md)
+* [Understanding Adobe's Real-time Customer Data Platform video](understanding-the-real-time-customer-data-platform.md)
+* [Demo of Real-time Customer Data Platform video](demo.md)
+* [Understanding the Real-time Customer Data Platform User Interface and Workflow video](understanding-the-real-time-customer-data-platform-user-interface.md)
+* [Understanding Destinations video](understanding-destinations.md)
+* [Create Destinations and Activate Data video](create-destinations-and-activate-data.md)
+* [How to connect a destination documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
+* [Activate profiles and segments to a destination documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)
