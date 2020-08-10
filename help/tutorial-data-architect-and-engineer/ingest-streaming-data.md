@@ -169,11 +169,11 @@ Now we will use a rule to send data to Platform. A rule is a combination of even
 1. Click **[!UICONTROL Save]** to save the rule    
     ![Save the rule](assets/websdk-property-saveRule.png)   
 
-## Validate the rule
+## Publish the rule in a library
 
 In order to validate the rule we just created, we need to publish a library containing all of the items in our property. There are a few quick steps we need to take in the **[!UICONTROL Publishing]** section of Launch.
 
-### Create a Host
+### Create a host
 
 Launch libraries can be hosted on Adobe's Content Delivery Network (CDN) or on your own servers. In this tutorial we will use Adobe's CDN since it is just must faster to set up:
 
@@ -187,7 +187,7 @@ Launch libraries can be hosted on Adobe's Content Delivery Network (CDN) or on y
 
 ### Create an environment
 
-Environments allow you to have different versions of a library in different publishing environments to accomodate your publishing workflow. For example, the fully tested version of your library can be published to a Production environment, while new changes are being created in a Development environment. You can also use different hosts for each environment. To create an environment:
+Environments allow you to have different versions of a library in different publishing environments to accommodate your publishing workflow. For example, the fully tested version of your library can be published to a Production environment, while new changes are being created in a Development environment. You can also use different hosts for each environment. To create an environment:
 
 1. Click **[!UICONTROL Environments]** in the left navigation
 1. Click the **[!UICONTROL Create New Environment]** button
@@ -200,7 +200,7 @@ Environments allow you to have different versions of a library in different publ
     ![Configure the environment](assets/websdk-property-configureEnv.png)
 1. You will see a modal with URL and other implementation details of this library. These are critical for a real Launch implementation, but we don't need to worry about that for this tutorial. Click the **[!UICONTROL Close]** button to exit the modal.
 
-### Create a library
+### Create and publish the library
 
 Now let's bundle the contents of our property&mdash;currently an extension and a rule&mdash;into a library. To create a library:
 
@@ -218,6 +218,8 @@ The library may take a few minutes to build and when it is complete it will disp
 
 As you can see on the [!UICONTROL Publishing Flow] screen, there is a lot more to the publishing process in Launch which is beyond the scope of this tutorial. We are just going to use a single library in our Development environment.
 
+## Validate the data in the request
+
 ### Add the Adobe Experience Platform Debugger
 
 The Experience Platform Debugger is an extension available for Chrome and Firefox browsers which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
@@ -227,9 +229,7 @@ The Experience Platform Debugger is an extension available for Chrome and Firefo
 
 If you've never used the Debugger before&mdash;and this one is different from the older Adobe Experience Cloud Debugger&mdash;you might want to watch this five minute overview video:
 
-
 >[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
-
 
 ### Open the Luma website
 
@@ -271,7 +271,7 @@ The Experience Platform Debugger has a cool feature in it that allows your to re
 These types of request details are also visible in the Network tab. Filter for calls with "interact" to locate the call and they are in the Request Payload Headers:
     ![](assets/websdk-debugger-networkTab.png)   
 
-## Validate data in Experience Platform
+## Validate the dat in Experience Platform
 
 You can validate that data is landing in Platform by looking at the batches of data arriving in the dataset. I know, it's called streaming data ingestion but now I'm saying it arrives in batches. It does stream in real-time to Profile, but arrives in 15-minute batches to the data lake. 
 
@@ -294,29 +294,129 @@ You can also confirm that the new profile is showing up:
     ![Profile Events](assets/websdk-platform-profileEvents.png)   
     <!--![](assets/websdk-platform-confirmProfile.png)-->  
 
-
-
 ## Add custom data to the event
+
+### Create a data element for page name
 
 1. In the Launch UI, on the top right corner of your `Luma Platform Tutorial` property, open the **[!UICONTROL Select a Working Library]** dropdown and select your `Luma Platform Tutorial` library. This is going to make it easier to publish additional updates to our library
 1. Now go to **[!UICONTROL Data Elements]** in the left navigation
 1. Click the **[!UICONTROL Create New Data Element]** button
 
-    ![](assets/websdk-property-createNewDataElement.png)   
+    ![Create a new data element](assets/websdk-property-createNewDataElement.png)   
 1. As the **[!UICONTROL Name]** enter `Page Name` 
-1. As the Data Element Type, select `JavaScript Variable`
-1. As the JavaScript variable name, enter `digitalData.page.pageInfo.pageName`
+1. As the **[!UICONTROL Data Element Type]**, select `JavaScript Variable`
+1. As the **[!UICONTROL JavaScript variable name]**, enter `digitalData.page.pageInfo.pageName`
 1. To help standardize the format of the values, check the boxes for **[!UICONTROL Force lowercase value]** and **[!UICONTROL Clean text]**
 1. Make sure that `Luma Platform Tutorial` is selected as the working library, and click the **[!UICONTROL Save to Library]** button
-    ![](assets/websdk-property-dataElement-pageName.png) 
-    ![](assets/.png)   
-    ![](assets/.png)   
-    ![](assets/.png)   
-    ![](assets/.png)   
-    ![](assets/.png)   
+    ![Create a data element for page name](assets/websdk-property-dataElement-pageName.png) 
 
+### Map the page name to the XDM Object data element
+
+Now we will map our page name to the Web SDK. 
+
+>[!IMPORTANT]
+>
+>In order to complete this task, we need to make sure your user first has access to the Prod sandbox. If you don't already have access to the Prod sandbox from a different product profile, quickly open your `Luma Tutorial Platform` profile and add the permission item **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]**.
+>![Add the Prod sandbox](assets/websdk-property-permissionToLoadSchema.png)
+
+1. On the **[!UICONTROL Data Elements]** screen in Launch, create another data element with the **[!UICONTROL Name]** of `XDM Object`
+1. As the **[!UICONTROL Extension]**, select `AEP Web SDK`
+1. As the **[!UICONTROL Data Element Type]**, select `XDM Object`
+1. Lists of your Platform sandboxes and schemas are retrieved. As the Sandbox, select your `Luma Tutorial` sandbox
+1. As the **[!UICONTROL Schema]**, select your `Luma Web Events Schema`
+1. Your schema will load in the Launch UI. Select the `web.webPageDetails.name` field
+1. As the **[!UICONTROL Value]**, click the icon to open the data element selection modal and choose your `Page Name` data element
+1. Click the **[!UICONTROL Save to Library]** button
+    ![Map the page name to the XDM Object data element](assets/websdk-property-dataElement-createXDMObject.png)   
+
+This same basic process is used to map all of your custom data on your website to the XDM schema fields.
+
+### Add the XDM data to your Send Event action
+
+Now that you have data mapped to XDM fields, you can include it in your Send Event action:
+
+1. Go to the **[!UICONTROL Rules]** screen and open your `All Pages - Library Loaded` rule
+1. Open the `AEP Web SDK - Send Event` action
+1. As the **[!UICONTROL XDM Data]**, click the icon to open the data element selection modal and choose your `XDM Object` data element
+1. Click the **[!UICONTROL Keep Changes]** button
+    ![Add the XDM data to your Send Event action](assets/websdk-property-addXDMtoSendEvent.png)
+1. Now, since you have had `Luma Platform Tutorial` selected as your working library for the last several exercises, your recent changes have been saving directly to the library. Instead of having to publish our changes via the Publishing Flow screen, you can just open the dropdown on the blue button and select **[!UICONTROL Save to Library and Build]**
+    ![Save to Library and Build](assets/websdk-property-saveAndBuildUpdatedSendEvent.png)
+
+This will start building a new Launch library with the three changes you just made.
+
+### Validate the XDM data
+
+You should now be able to reload the Luma homepage, while mapped to your Launch property using the Debugger as I showed you earlier, and see the page name field populates in the request!
+    ![Validate the XDM data](assets/websdk-debugger-pageName.png)
+
+You can also validate the page name data was received in Platform, by previewing the dataset and profile.
+
+## Send additional identities
+
+Your Web SDK implementation is now sending events with the Experience Cloud ID (ECID) as the primary identifier. The ECID is generated automatically by the Web SDK and is unique per device and browser. A single customer can have multiple ECIDs depending on which device and browser they are using. So how can we get a unified view of this customer and link their online activity to our CRM, Loyalty, and Offline Purchase data? We do that by collecting additional identities during their session and deterministically linking their profile via identity stitching.
+
+If you recall, I mentioned that we would be using the ECID and CRM Id as identities for our web data in the [Map Identities](map-identities.md) lesson. So let's collect the CRM Id with the Web SDK!
+
+### Add Data Element for the CRM Id
+
+First we will store the CRM Id in a data element:
+
+1. Create a new data element named `CRM Id`
+1. As the **[!UICONTROL Data Element Type]**, select **[!UICONTROL JavaScript Variable]**
+1. As the **[!UICONTROL JavaScript variable name]**, enter `digitalData.user[0].profile[0].attributes.username`
+1. Click the **[!UICONTROL Save to Library]** button (`Luma Platform Tutorial` should still be your working library)
+    ![Add Data Element for the CRM Id](assets/websdk-property-dataElement-crmId.png)
+
+### Add the CRM Id to the Identity Map data element
+
+Now that we have captured the CRM Id value, we need to associate it with a special data element type called the [!UICONTROL Identity Map] data element:
+
+1. Create a new data element named `Identities`
+1. As the **[!UICONTROL Extension]**, select **[!UICONTROL AEP Web SDK]**
+1. As the **[!UICONTROL Data Element Type]**, select **[!UICONTROL Identity Map]**
+1. As the Namespace, enter `lumaCRMId`, which is the [!UICONTROL Identity Symbol] we created in an earlier lesson
+1. As the **[!UICONTROL ID]**, click the icon to open the data element selection modal and choose your `CRM Id` data element
+1. As the **[!UICONTROL Authenticated State]**, select **[!UICONTROL Authenticated]**
+1. Leave **[!UICONTROL Primary]** _unchecked_. Since the CRM Id is not present for most visitors to the Luma website, you definitely _do not want to override the ECID as the primary identifier_. It would be a very rare use case to send in anything other than the ECID as the primary identifier.Usually I don't mention the default settings in these instructions, but I am calling this one out to help you avoid headaches later on in your own implementation.
+1. Click the **[!UICONTROL Save to Library]** button (`Luma Platform Tutorial` should still be your working library)
+    ![Add the CRM Id to the Identity Map data element](assets/websdk-property-dataElement-identityMap.png)
+
+>[!NOTE]
+>
+>You can pass multiple identifiers using the [!UICONTROL Identity Map] data type.
+
+### Add the IdentityMap data element to the XDM Object
+
+There is one more data element we need to update&mdash;the XDM Object data element. It may seem weird to have to update three separate data elements to pass this one identity, but this process is designed to scale for multiple identities in multiple states. Don't worry, we're almost done with this lesson!
+
+1. Open your XDM Object data element
+1. Open the IdentityMap XDM field
+1. As the **[!UICONTROL Data element providing object]**, click the icon to open the data element selection modal and choose your `Identities` data element
+1. Now, since you have had `Luma Platform Tutorial` selected as your working library for the last several exercises, your recent changes have been saving directly to the library. Instead of having to publish our changes via the Publishing Flow screen, you can just open the dropdown on the blue button and select **[!UICONTROL Save to Library and Build]**
+    ![Add the IdentityMap data element to the XDM Object](assets/websdk-property-dataElement-addIdentitiesToXDMObject.png)
+
+
+### Validate the identity
+
+To validate that the CRM Id is now being sent by the Web SDK:
+
+1. Open the [Luma website](https://luma.enablementadobe.com/)
+1. Map it to your own Launch property using the Debugger, as per the earlier instructions
+1. Click the **Login** link on the top right of the Luma website
+1. Log in using the credentials `test@adobe.com`/`test`
+1. Once authenticated, inspect the AEP Web SDK call in the Debugger (**[!UICONTROL AEP Web SDK]** > **[!UICONTROL Network Requests]** > **[!UICONTROL events]** of the most recent request) and you should see the `lumaCrmId`:
+    ![Validate the identity in the Debugger](assets/websdk-debugger-confirmIdentity.png)
+1. You should also be able to look up this user profile using the Luma CRM Id namespace in the Platform interface:
+    ![Validate the identity in Platform](assets/websdk-platform-lumaCrmIdProfile.png)
+    
 
 ## Additional Resources
 
 * [Streaming Ingestion documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)
 * [Data Ingestion API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/ingest-api.yaml)
+
+Great job! That was a lot of information about Web SDK and Launch. There is a lot more to it as well which you can explore during your own implementation, but those are the basics to help you get started. 
+
+Now you can move on to [Merge Policies](create-merge-policies.md!
+

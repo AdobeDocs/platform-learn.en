@@ -18,7 +18,7 @@ _Getting Started with Adobe Experience Platform for Data Architects and Data Eng
 
 ## Learning Objectives
 
-Data Architects and Data Engineers need to collaborate closely for a successful Experience Platform deployment. This tutorial takes you through the key tasks executed by both roles so you can see how the efforts come together, including: 
+Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial will teach you the key tasks executed by both roles so you understand how to get started implementing Experience Platform for your own business. Topics include: 
 
 * Configuring user permissions
 * Creating sandboxes
@@ -26,7 +26,7 @@ Data Architects and Data Engineers need to collaborate closely for a successful 
 * Data management, including creating schemas, datasets, identities, merge policies, and data governance
 * Data ingestion using batch and streaming modes
 * Capturing web data with Adobe Experience Platform Launch and the Web SDK
-* Combining data sources into Real-time Customer Profiles
+* Combining data sources into Real-time Customer Profiles via identity stitching
 * Using Query Service to validate data and extract data
 * Building segments
 
@@ -37,7 +37,8 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 ## Pre-requisites
 
 * You have completed the [Introduction to Adobe Experience Platform course](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) on Experience League and are familiar with Platform capabilities
-* You have access to an Adobe Experience Cloud account with Adobe Experience Platform provisioned.  If you are not a System Administrator of that account, you will need one to help get you started by completing some of the steps in the [Configure Permissions](configure-permissions.md) lesson.
+* You have access to an account provisioned with Adobe Experience Platform and Adobe Experience Platform Launch.  
+* You are a System Administrator of that account or can have one complete several tasks in the [Configure Permissions](configure-permissions.md) lesson.
 
 ## Technical notes
 
@@ -47,7 +48,7 @@ In the tutorial, you will create a sandbox environment and use it to complete th
 
 ### API
 
-Platform is built API-first. While interface methods exist for all major Platform tasks and will be used in the majority of the exercises, this tutorial contains some exercises that use the API. We will guide you through the basic project setup in the Adobe Developer Console and provide you with a [!DNL Postman] Collection to make the necessary API calls. After completing the tutorial, you will find it valuable to be familiar with the Platform API and use it in your own deployment.
+Platform is built API-first. While interface workflows exist for all major Platform tasks and will be used in the majority of the exercises, this tutorial contains some API-oriented exercises. We will guide you through the basic project setup in the Adobe Developer Console and provide you with [!DNL Postman] environments and collections to get started with the API. After completing the tutorial, you may find it valuable to be familiar with the Platform API and use it in your own deployment.
 
 ### Third-party technologies
 
