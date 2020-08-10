@@ -15,6 +15,8 @@ In this video we will add identity fields to our schemas and create some new ide
 
 Adobe Experience Platform Identity Service helps you to gain a better view of your customer and their behavior by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real-time. Identity fields and namespaces are the glue that joins different datasources together to build the 360 degree real-time customer profile.
 
+**Data Architects** will need to map identities outside of this tutorial.
+
 First, watch this short video to learn more about identity in Adobe Experience Platform:
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
 

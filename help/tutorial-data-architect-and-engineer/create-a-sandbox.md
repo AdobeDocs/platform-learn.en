@@ -15,6 +15,8 @@ In this lesson, you will create a development environment sandbox that you can u
 
 Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
+**Data Architects** and **Data Engineers** will need to create sandboxes outside of this tutorial.
+
 <!--include note on extent of sandbox support-->
 
 First, watch this short video to learn more about sandboxes:

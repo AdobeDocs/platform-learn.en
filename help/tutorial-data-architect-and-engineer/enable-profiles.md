@@ -21,6 +21,8 @@ With Real-time Customer Profile, you can see a holistic view of each individual 
 As amazing as all that sounds, you don't need to activate *all of your data* for profile. You should  only enable the data you need for activation use cases. Data that you want to use for marketing use cases, call center integrations, etc where you need fast access to a robust customer profile should be enabled. If you are just uploading data for analysis, it might not need to be enabled for profile.
 <!--is this accurate. Are there other considerations to point out? -->
 
+**Data Architects** will need to enable Real-time Customer Profile outside of this tutorial.
+
 First, watch this short video to learn more about Real-time Customer Profile:
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 

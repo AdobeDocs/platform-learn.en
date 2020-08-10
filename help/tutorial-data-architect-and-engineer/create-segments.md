@@ -18,6 +18,8 @@ While the terms segment and audience are often used interchangeable, in Experien
 * **Segment definition**: The rule set used to describe key characteristics or behavior of a target audience. Once conceptualized, the rules outlined in a segment definition are used to determine qualifying audience members for a segment.
 * **Audience**: The resulting set of profiles that meet the criteria of a segment definition.
 
+**Data Architects** will need to create segments outside of this tutorial.
+
 First, watch this short video to learn more about creating segments:
 >[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
 

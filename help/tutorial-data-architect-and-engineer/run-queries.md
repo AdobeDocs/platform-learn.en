@@ -9,11 +9,13 @@ doc-type: tutorial
 activity: implement
 ---
 
-# Setup and Run Query
+# Setup and Run Queries
 
 In this lesson you will learn how to setup, write and execute queries to validate the data you have ingested.
 
 Adobe Experience Platform Query Service helps you make sense of your data by allowing you to use standard SQL to query data in Platform. Using Query Service, you can join any dataset in the Data Lake and capture the query results as a new dataset for use in reporting, machine learning, or for ingestion into Real-time Customer Profile. 
+
+**Data Architects** and **Data Engineers** will need to use query service outside of this tutorial.
 
 First, watch this short video to learn more about Query Service:
 >[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)

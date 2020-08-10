@@ -15,6 +15,8 @@ In this lesson, you will set up a project in the Adobe Developer Console and pro
 
 Platform is built API-first. While interface options also exist for all major tasks, you will likely want to use the Platform API at some point. For example, to automate routine tasks or to use new Platform features before the UI has been built.
 
+**Data Architects** and **Data Engineers** may need to use Platform API outside of this tutorial for certain tasks.
+
 First, watch these three short videos to learn more about getting set up with Developer Console and [!DNL Postman]:
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)

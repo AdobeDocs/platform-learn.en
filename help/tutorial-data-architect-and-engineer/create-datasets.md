@@ -15,6 +15,8 @@ In this lesson, you will create datasets so that you can ingest data into them l
 
 All data that is successfully ingested into Adobe Experience Platform is persisted within the Data Lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
 
+**Data Architects** will need to create datasets outside of this tutorial.
+
 First, watch this short video to learn more about datasets:
 >[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
 

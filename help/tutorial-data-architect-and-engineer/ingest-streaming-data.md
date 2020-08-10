@@ -18,6 +18,8 @@ There are two main tasks we need to complete in the Adobe Experience Platform La
 * First, we need to create an Edge configuration, which tells the Adobe servers where data should go (e.g. Platform, Adobe Analytics, Adobe Target, etc) after it has been sent to the Edge by Web SDK. This step needs to be taken by all Web SDK customers, regardless of how they are deploying Web SDK
 * Second, we need to implement Web SDK. Web SDK can be deployed via the Launch interface or it can be deployed using the raw javascript file, alloy.js. In this tutorial, we will use the Launch interface. This tutorial will just focus on the minimal amount of features needed to deploy a simple Web SDK implementation specifically to stream data into Experience Platform and is not meant to be a complete Launch tutorial.
 
+**Data Engineers** will need to ingest streaming data outside of this tutorial. When implementing Adobe Experience Platform's Web or Mobile SDKs, typically a web or mobile developer will be involved in the tagging and/or Launch steps.
+
 First, watch these two short video to learn more about streaming data ingestion and Web SDK:
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 

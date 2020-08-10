@@ -33,6 +33,8 @@ Key terms:
 * **Field**: a field is the lowest level element of a schema. Each field has a name for referencing and a type to identify the type of data that it contains. Field types can include, integer, number, string, Boolean and schema.
 -->
 
+**Data Architects** will need to create schemas outside of this tutorial, but **Data Engineers** will work very closely with the schemas created by the Data Architect.
+
 First, watch this short video to learn more about schemas and the Experience Data Model (XDM):
 >[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
 

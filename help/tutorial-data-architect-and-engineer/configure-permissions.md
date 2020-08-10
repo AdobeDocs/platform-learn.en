@@ -17,6 +17,8 @@ Access control is a key privacy capability in Experience Platform and we recomme
 
 Data Architects and Data Engineers are the power users of Adobe Experience Platform and you will need almost all permissions in order to complete this tutorial, and later in your day-to-day work. Data Architects are also likely be involved in the administration of *other Platform users* at your company such as marketers, analysts, and data scientists. As you complete this lesson, think about how you will use these features to manage these other users at your company.
 
+**Data Architects** will need to configure permissions outside of this tutorial.
+
 >[!IMPORTANT]
 >
 >A System Administrator of Adobe Experience Cloud products will need to complete some of the steps in this lesson, which we have called out in the section headings.  If you are not System Administrator, please reach out to one at your company and have them complete these tasks.
