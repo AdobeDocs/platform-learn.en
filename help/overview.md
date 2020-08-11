@@ -10,17 +10,18 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+
+* **[Integrate with Google Customer Match (Video)](/help/rtcdp/integrate-with-google-customer-match.md)**
+    <br>
+    *Engage with their customers on Google’s owned and operated properties using Real-time CDP*
+
+* **[Integrate with IAB's Transparency and Consent Framework 2.0 (Video)](/help/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)**
+    <br>
+    *Honor consumer's consent with Real-time CDP*
+
 * **[Introduction to Data Governance](/help/governance/introduction-to-data-governance.md)**
     <br>
     *Learn how you can create personalized experiences while maintaining complete control over customer data*
-
-* **[Demo of Streaming Segmentation (Video)](/help/segments/streaming-segmentation-demo.md)**
-    <br>
-    *See a demo of a personalized experience using streaming segmentation*
-
-* **[Introduction to Adobe Experience Platform Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)**
-    <br>
-    *Learn how Web SDK will simplify your implementations and improve page performance*
 
 ## Staff Picks
 
