@@ -13,11 +13,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 * **[Integrate with Google Customer Match (Video)](/help/rtcdp/integrate-with-google-customer-match.md)**
     <br>
-    *Engage with their customers on Google’s owned and operated properties using Real-time CDP*
+    *Engage with customers on Google’s owned and operated properties using Real-time CDP*
 
 * **[Integrate with IAB's Transparency and Consent Framework 2.0 (Video)](/help/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)**
     <br>
-    *Honor consumer's consent with Real-time CDP*
+    *Honor customers' consent with Real-time CDP*
 
 * **[Introduction to Data Governance](/help/governance/introduction-to-data-governance.md)**
     <br>

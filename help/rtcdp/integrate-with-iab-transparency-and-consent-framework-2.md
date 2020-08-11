@@ -1,6 +1,6 @@
 ---
 title: Integrate IAB's Transparency and Consent Framework 2.0 with Adobe's Real-time Customer Data Platform
-description: This video shows how Adobe's Real-time Customer Data Platform helps brands honor their consumers consent as they engage on their digital properties. Through the support of IAB's Transparency & Consent Framework 2.0, brands gain greater flexibility over how they can engage with their consumers while providing them with increased control on their consent to do so.
+description: This video shows how Adobe's Real-time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties. Through the support of IAB's Transparency & Consent Framework 2.0, brands gain greater flexibility over how they can engage with consumers while providing consumers increased control of their consent to do so.
 topics:
 kt: 5950
 audience: marketer
@@ -9,9 +9,9 @@ activity: understand
 thumbnail: 38346.jpg
 ---
 
-# Integrate with IAB's Transparency and Consent Framework 2.0
+# Integrate with IAB's Transparency & Consent Framework 2.0
 
-This video shows how Adobe's Real-time Customer Data Platform helps brands honor their consumers consent as they engage on their digital properties. Through the support of IAB's Transparency & Consent Framework 2.0, brands gain greater flexibility over how they can engage with their consumers while providing them with increased control on their consent to do so.
+This video shows how Adobe's Real-time Customer Data Platform helps brands honor consumers' consent as they engage on digital properties. Through the support of IAB's Transparency & Consent Framework 2.0, brands gain greater flexibility over how they can engage with consumers while providing consumers increased control of their consent to do so.
 
 >[!VIDEO](https://video.tv.adobe.com/v/38346?quality=12&learn=on)
 
