@@ -76,6 +76,7 @@ audience: all
   + [Understanding Destinations](/help/rtcdp/understanding-destinations.md)
   + [Create Destinations and Activate Data](/help/rtcdp/create-destinations-and-activate-data.md)
   + [Integrate with Google Customer Match](/help/rtcdp/integrate-with-google-customer-match.md)
+  + [Integrate with IAB's Transparency and Consent Framework 2.0](/help/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
   + [Enforce Data Usage Policies in Real-time CDP](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
 + Journey Orchestration{#journey-orchestration}
   + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
