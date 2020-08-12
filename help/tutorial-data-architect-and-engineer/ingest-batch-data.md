@@ -63,8 +63,6 @@ To confirm the data landed in Profile:
 1. Click the `Show profile` button
     ![Confirm a profile from the dataset](assets/ingestion-loyalty-profile.png)
 
-1. Download [luma-offline.json](assets/luma-offline.json)
-
 ## Ingest data in batches by using API
 
 Now we will upload data using the API.  
@@ -178,7 +176,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 
 So let's get started:
 
-1. Download the [luma-offine-purchases.json](assets/luma-offline-purchases.json) file to your local `Luma Tutorial Assets` folder.
+1. Download the [luma-offline-purchases.json](assets/luma-offline-purchases.json) file to your local `Luma Tutorial Assets` folder.
 1. Upload it to one of the [!UICONTROL Sources] in the catalog for which you have an account
 1. Filter the [!UICONTROL Sources] catalog to **[!UICONTROL Cloud storage]**
 1. In the box of your preferred Cloud storage vendor, click the **[!UICONTROL Configure]** button (note there are documentation links if you click the  `...`)
