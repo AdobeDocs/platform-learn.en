@@ -420,5 +420,9 @@ To validate that the CRM Id is now being sent by the Web SDK:
 
 Great job! That was a lot of information about Web SDK and Launch. There is a lot more to it as well which you can explore during your own implementation, but those are the basics to help you get started. 
 
+>[!NOTE]
+>
+>Now that you are done with the Streaming Ingestion lesson, you can remove the [!UICONTROL Prod] sandbox from your `Luma Tutorial Platform` product profile
+
 Now you can move on to [Merge Policies](create-merge-policies.md!
 

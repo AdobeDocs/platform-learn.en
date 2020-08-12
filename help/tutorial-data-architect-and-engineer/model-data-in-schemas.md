@@ -268,15 +268,14 @@ Now let's create a schema based on the **[!UICONTROL XDM ExperienceEvent]** clas
 
     ![Experience Event Base Structure](assets/schemas-offlinePurchase-experienceEventbase.png)
 
-### Add mixins
 
 We will add a standard mixin and a custom mixin.
 
-#### Add standard mixin
+### Add standard mixin
 
 **[!UICONTROL Experience event commerce details]** is a standard mixin for capturing common order details. Go ahead and add it to your schema.
 
-#### Add custom mixin
+### Add custom mixin
 
 Now let's add the identities to our new schema:
 
@@ -336,6 +335,7 @@ First we need to create a schema for Luma's product catalog using a custom class
    1. productColor: String
    1. productSku: String | Required
    1. productSize: String
+   1. productPrice: Double
 1. Save the schema
   
 Your new schema should look like this:
