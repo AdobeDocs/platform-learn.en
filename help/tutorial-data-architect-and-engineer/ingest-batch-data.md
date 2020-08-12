@@ -29,9 +29,22 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
-## Ingest data in batches by using Platform UI
+**Additionally you need access to an (S)FTP server or cloud storage solution for the Source exercise.**
+
+## Ingest data in batches with Platform UI
+
+Data can be uploaded directly into a dataset on the datasets screen in JSON and parquet formats.
+
+### Download and prep the data
+
+First, get the sample data and customize it for your tenant:
 
 1. Download [luma-loyalty.json](assets/luma-loyalty.json) file to your **Luma Tutorial Assets** folder.
+1. Open the file in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant value as seen in your own schemas
+1. Save the updated file
+
+### Ingest the data
+
 1. In the Platform UI, click **[!UICONTROL Datasets]** in the left navigation
 1. Click on your `Luma Loyalty Dataset`
 1. Scroll down until you see the **[!UICONTROL Add Data]** section in the right column
@@ -63,11 +76,15 @@ To confirm the data landed in Profile:
 1. Click the `Show profile` button
     ![Confirm a profile from the dataset](assets/ingestion-loyalty-profile.png)
 
-## Ingest data in batches by using API
+## Ingest data in batches with Platform API
 
 Now we will upload data using the API.  
 
-Download [luma-crm.json](assets/luma-crm.json) into your `Luma Tutorial Assets` folder.
+### Download and prep the data
+
+1. Download [luma-crm.json](assets/luma-crm.json) into your `Luma Tutorial Assets` folder.
+1. Open the file in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant value as seen in your own schemas
+1. Save the updated file
 
 ### Get the dataset id
 
@@ -92,7 +109,10 @@ Now we can create a batch in the dataset:
 
     ```json
     {
-        "datasetId":"5f2db919136181194bcd821d"
+        "datasetId":"5f2db919136181194bcd821d",
+        "inputFormat": {
+            "format": "json"
+        }
     }
     ```
 
@@ -107,23 +127,48 @@ Finally we upload the data into the batch
     
 1. Select the request **[!DNL Data Ingestion API > Batch Ingestion > Upload a file to a dataset in a batch.]**
 1. In the **Params** tab, enter your dataset id and batch id into their respective fields
+1. In the **Params** tab, enter `luma-crm.json` as the **filePath**
 1. In the **Body** tab, select the **binary** option
 1. Select the downloaded `luma-crm.json` from your local `Luma Tutorial Assets` folder
-1. Click Send and if everything goes well , you should get '1' as response.
+1. Click **Send** and you should get a 200 OK response with '1' in the response body
 
     ![Data uploaded](assets/ingestion-crm-uploadFile.png)
+
+At this point, if you look at your batch in the Platform UI, you will see that it is still in a loading status:
+![Batch loading](assets/ingestion-crm-loading.png)
+
+Because the Batch API is often used to upload multiple files, you need need to tell Platform when a batch is complete, which we will do in the next step.
+
+### Complete the batch
+
+To complete the batch:
+
+1. Select the request **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]**
+1. In the **Params** tab, enter `COMPLETE` as the **action**
+1. In the **Params** tab, enter your batch id. Do not worry about dataset id or filePath, if they are present.
+1. Update the URL of the POST remove the dataset id or filePath placeholders, if they are present
+1. Click **Send** and you should get a 200 OK response with '1' in the response body
+
+    ![Batch complete](assets/ingestion-crm-complete.png)
 
 ### Validate the data
 
 Validate the data has landed in the Platform UI just like you did for the Loyalty dataset.
 
-First, confirm the batch using Preview dataset
+First, confirm the batch shows that 1000 records have ingested:
 
-Second, confirm one of your profiles has been created by looking up one of the profiles by the `Luma CRM Id` namespace, e.g. `112ca06ed53d3db37e4cea49cc45b71e`
+![Batch success](assets/ingestion-crm-success.png)
+
+Next, confirm the batch using Preview dataset:
+
+![Batch preview](assets/ingestion-crm-preview.png)
+
+
+Finally, confirm one of your profiles has been created by looking up one of the profiles by the `Luma CRM Id` namespace, e.g. `112ca06ed53d3db37e4cea49cc45b71e`
 
 ![Profile ingested](assets/ingestion-crm-profile.png)
 
-There is one interesting thing that just happened that I want to point out. Open that `Danny Wright` profile. Note that the profile has both a `Lumacrmid` and a `Lumaloyalty` id. Remember the `Luma Loyalty Schema` contained two identity fields, Luma Loyalty Id was the primary identity and CRM Id was a secondary identity. Now that we've uploaded both datasets, they've merged into profile. The Loyalty data had `Daniel` as the first name and "New York City" as the home address, while the CRM data had `Danny` as the first name and `Portland` as the home address for this customer. (We will come back to why the first name displays `Danny` in the lesson on merge policies).
+There is one interesting thing that just happened that I want to point out. Open that `Danny Wright` profile. Note that the profile has both a `Lumacrmid` and a `Lumaloyaltyid`. Remember the `Luma Loyalty Schema` contained two identity fields, Luma Loyalty Id and CRM Id. Now that we've uploaded both datasets, they've merged into a single profile. The Loyalty data had `Daniel` as the first name and "New York City" as the home address, while the CRM data had `Danny` as the first name and `Portland` as the home address for the customer with the same Loyalty Id. We will come back to why the first name displays `Danny` in the lesson on merge policies.
 
 Congratulations, you've just merged profiles!
 
@@ -131,11 +176,18 @@ Congratulations, you've just merged profiles!
 
 ## Ingest data with Workflows
 
-Let's look at another way of uploading data. 
+Let's look at another way of uploading data. The workflows feature allows you to ingest CSV data which is not already modeled in XDM.
 
-Download [luma-products.csv](assets/luma-products.csv) into your `Luma Tutorial Assets` folder.
+### Download and prep the data
 
-Now let's use a workflow:
+1. Download [luma-products.csv](assets/luma-products.csv) into your `Luma Tutorial Assets` folder.
+
+1. Open the file in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant value as seen in your own schemas
+1. Save the updated file
+
+### Create a workflow
+
+Now let's set up workflow:
 
 1. Click **[!UICONTROL Workflows]** in the left navigation
 1. Select **[!UICONTROL Map CSV to XDM schema]** and click the **[!UICONTROL Launch]** button
@@ -148,7 +200,7 @@ Now let's use a workflow:
 1. Click the **[!UICONTROL Finish]** button
     ![Select your dataset](assets/ingestion-products-mapper.png)
 
-### Verify the data
+### Validate the data
 
 When the batch has uploaded, verify the upload by previewing the dataset.
 
@@ -156,7 +208,7 @@ Since the `Luma Product SKU` is a non-people namespace, we won't see any profile
 
 ## Ingest data with Sources
 
-Now let's move into the promised land of _automated_ batch ingestion! 
+Okay, you did things the hard way. Now let's move into the promised land of _automated_ batch ingestion! When I say, "SET IT!" you say, "FORGET IT!" "SET IT!" "FORGET IT!" "SET IT!" "FORGET IT!" Just kidding, you would never do such a thing! Ok, back to work. You're almost done.
 
 Click on **[!UICONTROL Sources]** in the left navigation to open the Sources catalog. Here you will see a variety of out-of-the-box integrations with industry-leading data and storage providers. 
 
@@ -174,17 +226,27 @@ Many of the Sources have a similar configuration workflow, in which you:
 1. Map the fields to your XDM schema
 1. Choose the frequency with which you want to re-ingest data from that location
 
-So let's get started:
+>[!NOTE]
+>
+>The Offline Purchase data we will be using in this exercise contains datetime data. Datetime data should be in either [ISO 8061 formatted strings](https://www.iso.org/iso-8601-date-and-time-format.html) ("2018-07-10T15:05:59.000-08:00") or Unix Time formatted in milliseconds (1531263959000) and are converted at ingestion time to the target XDM type. For more on data conversion and other constraints, see [the Batch Ingestion API documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/batch/api-overview.html#types).
 
-1. Download the [luma-offline-purchases.json](assets/luma-offline-purchases.json) file to your local `Luma Tutorial Assets` folder.
-1. Upload it to one of the [!UICONTROL Sources] in the catalog for which you have an account
-1. Filter the [!UICONTROL Sources] catalog to **[!UICONTROL Cloud storage]**
-1. In the box of your preferred Cloud storage vendor, click the **[!UICONTROL Configure]** button (note there are documentation links if you click the  `...`)
+So let's get started.
+
+### Download, prep, and upload the data to your preferred cloud storage vendor
+
+1. Download [luma-offline-purchases.json](assets/luma-offline-purchases.json) into your `Luma Tutorial Assets` folder.
+1. Open the file in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant value as seen in your own schemas
+1. Choose your preferred cloud storage provider, making sure it is available in the [!UICONTROL Sources] catalog
+1. Upload `luma-offline-purchases.json` to a location in your preferred cloud storage provider
+
+### Ingest the data to your preferred cloud storage location
+
+1. In the Platform UI, filter the [!UICONTROL Sources] catalog to **[!UICONTROL Cloud storage]**
+1. Note there are convenient links to documentation under the `...`
+1. In the box of your preferred Cloud storage vendor, click the **[!UICONTROL Configure]** button 
     ![Click configure](assets/ingestion-offline-selectFTP.png)
-
-![Authenticate to the source](assets/ingestion-offline-authentication.png)
-
-
+1. **[!UICONTROL Authentication]** is the first step. Enter the name for your account, e.g. `Luma's FTP Account` and your authentication details. This step should be fairly similar for all cloud storage sources, although the fields may vary slightly. Once you've entered the authentication details for an account, you can reuse them for other source connections that might be sending different data on different schedules from other files in the same account:
+    ![Authenticate to the source](assets/ingestion-offline-authentication.png)
 
 
 ## Additional Resources
