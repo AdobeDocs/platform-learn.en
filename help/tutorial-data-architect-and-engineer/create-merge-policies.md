@@ -88,6 +88,8 @@ What is going on here? Well, profile merging is not a one time thing. Real-time 
 
 Merge policies also tie into data governance and segmentation, which you will see shortly.
 
+And of course, you can define and use merge policies with the API, as well.
+
 ![Viewing a profile with a different merge policy](assets/mergepolicies-backToDanny.png)
 
 
