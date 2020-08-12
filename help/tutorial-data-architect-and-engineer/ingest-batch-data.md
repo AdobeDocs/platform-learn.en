@@ -182,7 +182,10 @@ So let's get started:
 1. Upload it to one of the [!UICONTROL Sources] in the catalog for which you have an account
 1. Filter the [!UICONTROL Sources] catalog to **[!UICONTROL Cloud storage]**
 1. In the box of your preferred Cloud storage vendor, click the **[!UICONTROL Configure]** button (note there are documentation links if you click the  `...`)
-![Choose your](assets/ingestion-offline-selectFTP.png)
+    ![Click configure](assets/ingestion-offline-selectFTP.png)
+
+![Authenticate to the source](assets/ingestion-offline-authentication.png)
+
 
 
 
