@@ -165,6 +165,14 @@ We will use this data type later in the lesson.
 
 Now we will create a schema using the API. 
 
+>[!NOTE]
+>
+>Data engineers, feel free to just create the CRM schema via the UI method you just used, if you'd like:
+>
+> 1. Use the [!UICONTROL XDM Profile] class
+> 1. Name it `Luma CRM Schema`
+> 1. Use the following mixins: Profile Person Details, Profile Personal Details, Profile Preferences Details and Luma Identity Profile Mixin
+
 First we will create the empty schema:
 
 1. Open [!DNL Postman]

@@ -58,8 +58,8 @@ Let's start by creating a namespace for the Luma Loyalty Schema:
    
     | Field         |  Value    |  
     |---------------|-----------|
-    | Display Name  | Luma Loyalty Id    | 
-    | Identity Symbol| lumaLoyaltyId    |  
+    | Display name  | Luma Loyalty Id    | 
+    | Identity symbol| lumaLoyaltyId    |  
     | Type           | Cross-Device      |  
 
 1. Click Create.
@@ -70,15 +70,25 @@ Now set up another namespace for the Luma Product Catalog Schema with the follow
    
 | Field         |  Value    |  
 |---------------|-----------|
-| Display Name  | Luma Product SKU   | 
-| Identity Symbol| lumaProductSKU    |  
+| Display name  | Luma Product SKU   | 
+| Identity symbol| lumaProductSKU    |  
 | Type           | Non-People      |  
 
 
 
 ## Create Identity Namespace Using API
 
-We will keep doing all of our CRM tasks via API. Let's create the Identity Namespace `Luma CRM Id`
+We will keep doing all of our CRM tasks via API. 
+
+>[!NOTE]
+>
+>Data engineers, feel free to just create the CRM namespace via the UI method you just used, if you'd like:
+>
+> 1. As the **[!UICONTROL Display name]**, use `Luma CRM Id`
+> 1. As the **[!UICONTROL Identity symbol]**, use `lumaCrmId`
+> 1. As the **[!UICONTROL Type]**, use Cross-Device
+
+Let's create the Identity Namespace `Luma CRM Id`:
 
 1. Download [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) to your `Luma Tutorial Assets` folder
 1. Import the collection into [!DNL Postman]

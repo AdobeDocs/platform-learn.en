@@ -62,7 +62,7 @@ Easy right? Repeat the steps above for these other schema:
 
 ## Enable schemas for Real-time Customer Profile using Platform API 
 
-Now, it's time to enable the `Luma CRM Schema` with the API. If you want to skip this exercise and just enable it in the UI, go right ahead/
+Now, it's time to enable the `Luma CRM Schema` with the API. If you want to skip this exercise and just enable it in the UI, go right ahead.
 
 ### Get the meta:altId of the schema
 
@@ -114,6 +114,8 @@ Repeat the steps above for these other datasets:
 
 ## Enable datasets for Real-time Customer Profile using Platform API 
 
+Now you will enable a dataset for Profile using the API. Again, if you want to enable it via the UI using the method above, that's fine, too.
+
 ### Get the id of the dataset
 
 First we need to get the `id` of the `Luma CRM Dataset`:
@@ -158,3 +160,5 @@ You can also confirm that the UI shows the dataset enabled:
 
 * [Real-time Customer Profile documentation](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
 * [Real-time Customer Profile API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)
+
+Now that we've enabled the schemas and datasets for profile, let's [ingest data](ingest-batch-data.md). If you had ingested the data *before enabling the schemas and datasets*, you would have to re-ingest it again.

@@ -424,5 +424,5 @@ Great job! That was a lot of information about Web SDK and Launch. There is a lo
 >
 >Now that you are done with the Streaming Ingestion lesson, you can remove the [!UICONTROL Prod] sandbox from your `Luma Tutorial Platform` product profile
 
-Now you can move on to [Merge Policies](create-merge-policies.md!
+Now you can move on to [Merge Policies](create-merge-policies.md)!
 

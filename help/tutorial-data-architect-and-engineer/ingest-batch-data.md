@@ -80,6 +80,10 @@ To confirm the data landed in Profile:
 
 Now we will upload data using the API.  
 
+>[!NOTE]
+>
+>Data architects, feel free to just upload the CRM data via the UI method you just used, if you'd like.
+
 ### Download and prep the data
 
 1. Download [luma-crm.json](assets/luma-crm.json) into your `Luma Tutorial Assets` folder.
@@ -248,6 +252,9 @@ So let's get started.
 1. **[!UICONTROL Authentication]** is the first step. Enter the name for your account, e.g. `Luma's FTP Account` and your authentication details. This step should be fairly similar for all cloud storage sources, although the fields may vary slightly. Once you've entered the authentication details for an account, you can reuse them for other source connections that might be sending different data on different schedules from other files in the same account:
     ![Authenticate to the source](assets/ingestion-offline-authentication.png)
 
+>[!NOTE]
+>
+>Waiting for bug fix before completing this exercise
 
 ## Additional Resources
 

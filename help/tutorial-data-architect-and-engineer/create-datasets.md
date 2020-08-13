@@ -57,8 +57,11 @@ That's it! See, I told you this was going to be quick. Follow same steps and cre
 ## Create a dataset using API
 
 Now you will create a Luma CRM Dataset using the API. I think you are catching on how these API exercises work. Basically, we do something in the UI and then do the exact same thing using the API with a [!DNL Postman] collection we've downloaded from the [Adobe Experience Platform Postman Samples
-](https://github.com/adobe/experience-platform-postman-samples). If you want to just skip this exercise and create the `Luma CRM Dataset` in the UI that's fine, I won't tell anyone. :D
+](https://github.com/adobe/experience-platform-postman-samples). 
 
+>[!NOTE]
+>
+>If you want to just skip this exercise and create the `Luma CRM Dataset` in the UI that's fine, I won't tell anyone. :D Just name the dataset `Luma CRM Dataset` and use the `Luma CRM Schema`
 
 ### Get the id of the schema to be used in the dataset
 
