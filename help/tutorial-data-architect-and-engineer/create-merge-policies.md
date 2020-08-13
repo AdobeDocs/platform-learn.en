@@ -13,9 +13,9 @@ activity: implement
 
 In this lesson you will learn how to create merge policies to determine how data merges into profiles. 
 
-The good news is that this will be a quick lesson and we'll stick to the UI.
-
 Adobe Experience Platform enables you to bring data together from multiple sources and combine it in order to see a complete view of each of your individual customers. When bringing this data together, merge policies are the rules that Platform uses to determine how data will be prioritized and what data will be combined to create that unified view.
+
+We'll stick to the UI for this lesson, of course API option also exist for creating merge policies.
 
 **Data Architects** will need to create merge policies outside of this tutorial.
 
@@ -64,7 +64,7 @@ Now what if you don't like that default merge policy? What if Luma decides their
 1. Drag and drop `Luma Loyalty Dataset` and `Luma CRM Dataset` to **[!UICONTROL Selected Dataset]** panel.
 1. Make sure `Luma Loyalty Dataset` is on top by drag and dropping it above the `Luma CRM Dataset`
 1. Click the **[!UICONTROL Save]** button
-
+<!--do i need to explain Private Graph? Is that GA?-->
 ![Merge Policy](assets/mergepolicies-newPolicy.png)
 
 ## Validate the merge policy
@@ -80,18 +80,56 @@ Let's see if the merge policy is doing what we would expect:
 
 ![Viewing a profile with a different merge policy](assets/mergepolicies-lookupProfileWithMergePolicy.png)
 
+## Create a merge policy with limited datasets
+
+When creating Merge policies using dataset precedence, only the datasets of the same base class that you include in the right are included in the profile. Let's set up another merge policy
+
+1. On the Merge Policies screen, click the **[!UICONTROL Create Merge Policy]** button on the top right
+1. As the **[!UICONTROL Name]**, enter  `Loyalty Only`
+1. As the **[!UICONTROL Schema]**, select **[!UICONTROL XDM Profile]** 
+1. For **[!UICONTROL Id Stitching]**, select **[!UICONTROL None]**
+1. For **[!UICONTROL Attribute Merge]**, select **[!UICONTROL Dataset precedence]**
+1. Drag and drop only the `Luma Loyalty Dataset` to **[!UICONTROL Selected Dataset]** panel.
+1. Click the **[!UICONTROL Save]** button
+
+![Loyalty Only Merge Policy](assets/mergepolicies-loyaltyOnly.png)
+
+## Validate the merge policy
+
+Now let's look at what this merge policy does:
+
+1. Click the **[!UICONTROL Browse]** tab
+1. Change the **[!UICONTROL Merge policy]** to your new `Loyalty Only` policy
+1. As the **[!UICONTROL Identity namespace]**, use your `Luma CRM Id`
+1. As the **[!UICONTROL Identity value]** use `112ca06ed53d3db37e4cea49cc45b71e`
+1. Click the **[!UICONTROL Show profile]** button
+1. You should see that no profiles are found:
+    ![Loyalty Only no CRM Id lookup.](assets/mergepolicies-loyaltyOnly-noCrmLookup.png)
+
+CRM Id is an identity field in the `Luma Loyalty Dataset`, but only primary identities can be used to look up profiles. So, let's look up the profile using the primary identity, `Luma Loyalty Id`"
+
+1. Change the **[!UICONTROL Identity Namespace]** to `Luma Loyalty Id`
+1. As the **[!UICONTROL Identity value]** use `5625458`
+1. Click the **[!UICONTROL Show profile]** button
+1. Click the profile id to open the profile
+1. Click on the **[!UICONTROL Attributes]** tab
+1. Note that other profile details from the CRM dataset, such as the mobile phone number and email address are not available because we only
+    ![CRM data is not viewable in the Loyalty Only policy](assets/mergepolicies-loyaltyOnly-attributes.png)
+1. Click on the **[!UICONTROL Events]** tab
+1. ExperienceEvent schema data is available despite not explicitly including it in the merge policy datasets:
+    ![Events are viewable in the Loyalty Only policy](assets/mergepolicies-loyaltyOnly-events.png)
+
 ## More about merge policies
 
 In the profile search, change the merge policy used back to `Default Timebased` and click the **[!UICONTROL Show profile]** button. Danny is back!
 
-What is going on here? Well, profile merging is not a one time thing. Real-time customer profiles are assembled on the fly, based on a number of factors, including which merge policy is used. You can create multiple merge policies to use in different contexts, depending on which view of the customer you want.
-
-Merge policies also tie into data governance and segmentation, which you will see shortly.
-
-And of course, you can define and use merge policies with the API, as well.
-
 ![Viewing a profile with a different merge policy](assets/mergepolicies-backToDanny.png)
 
+What is going on here? Well, profile merging is not a one time thing. Real-time customer profiles are assembled on the fly, based on a number of factors, including which merge policy is used. You can create multiple merge policies to use in different contexts, depending on which view of the customer you want.
+
+One use case for merge policies is if you need to replace existing data. For example, say Luma has a new product catalog coming online and they've created a new version of their catalog, `Luma Product Catalog Dataset v2` with updated SKUs and prices. They can use merge policies to exclude this dataset before the cutover data, and then exclude the old dataset after the cutover.
+
+Merge policies also tie into data governance and segmentation, which you will see in the next few lessons.
 
 ## Additional Resources
 

@@ -17,14 +17,6 @@ Platform is built API-first. While interface options also exist for all major ta
 
 **Data Architects** and **Data Engineers** may need to use Platform API outside of this tutorial for certain tasks.
 
-First, watch these three short videos to learn more about getting set up with Developer Console and [!DNL Postman]:
-
->[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
-
->[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
-
->[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
-
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:

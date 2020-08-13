@@ -38,7 +38,6 @@ Key terms:
 First, watch this short video to learn more about schemas and the Experience Data Model (XDM):
 >[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
 
-
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:

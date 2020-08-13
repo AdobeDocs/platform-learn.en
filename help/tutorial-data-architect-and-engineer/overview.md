@@ -18,7 +18,9 @@ _Getting Started with Adobe Experience Platform for Data Architects and Data Eng
 
 ## Learning Objectives
 
-Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial will teach you the key tasks executed by both roles so you understand how to get started implementing Experience Platform for your own business. Topics include: 
+Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial will teach you the key tasks executed by _both roles_ so you understand how to get started implementing Experience Platform for your own business.  
+
+Topics include: 
 
 * Configuring user permissions
 * Creating sandboxes
@@ -40,6 +42,10 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 * You have access to an account provisioned with Adobe Experience Platform and Adobe Experience Platform Launch.  
 * You are a System Administrator of that account or can have one complete several tasks in the [Configure Permissions](configure-permissions.md) lesson.
 
+## Using this tutorial
+
+In each lesson, I call out the primary audience, either Data Architects or Data Engineers. Since this is an introductory level tutorial, you should easily be able to complete the tasks for both roles. Of course, if you want to, you could also tag team the tutorial with a colleague in the other role. If you get stuck, try re-reading the instructions first, and then use the "Log an Issue" link on the top right of each page to contact me. 
+
 ## Technical notes
 
 ### Sandbox environments
@@ -52,5 +58,5 @@ Platform is built API-first. While interface workflows exist for all major Platf
 
 ### Third-party technologies
 
-Although you will use multiple technologies in this tutorial, we will remain almost entirely within the Adobe ecosystem. In your own Platform implementation you will likely integrate Platform with specific third-party technologies. In order to keep this tutorial relevant for all customers, we will stick to a more generic implementation. There are however, other enablement materials which may address the details of specific third-party tools and we will link to those where relevant.
+Although you will use multiple technologies in this tutorial, we will remain almost entirely within the Adobe ecosystem. In your own Platform implementation you will likely integrate Platform with specific third-party technologies. In order to keep this tutorial relevant for all customers, we will stick to a more generic implementation. 
 

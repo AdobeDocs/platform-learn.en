@@ -106,9 +106,12 @@ If you return to the UI, you should now see your three new custom namespaces:
 
 Now that we have our namespaces, the next step is to label our identity fields as such in our schemas.
 
+
 ### Label XDM Fields For Primary Identity
 
-Each schema used with the Real-time Customer Profile is required to have a primary identity selected and each record passed in the ingestion process needs to pass a value for that field. Let's start with the Loyalty schema:
+Each schema used with the Real-time Customer Profile is required to have a primary identity selected and each record passed in the ingestion process needs to pass a value for that field. Additionally, primary identities are the only fields that can be used as keys to look up profiles in the profile browser (we will come back to this later). 
+
+Let's add a primary identity to the `Luma Loyalty Schema`:
 
 1. Open the `Luma Loyalty Schema`
 1. Select `Luma Identity Profile Mixin`
@@ -160,7 +163,7 @@ To connect offline purchases to online behavior, we will add add the crmId as a 
 
     ![Reference field](assets/identity-offlinePurchase-relationship.png)
 
-Repeat this process to create a relationship between the `Luma Web Events Schema` and the `Luma Product Catalog Schema`, too.
+Repeat this process to create a relationship between the `Luma Web Events Schema` and the `Luma Product Catalog Schema`.
 
 ## Additional Resources
 

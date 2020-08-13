@@ -23,7 +23,7 @@ First, watch this short video to learn more about data ingestion:
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 * Permission item **[!UICONTROL Datasets]** > **[!UICONTROL View Datasets]**, **[!UICONTROL Manage Datasets]** and **[!UICONTROL Data Monitoring]**
-* Permission item **[!UICONTROL Data Ingestoin]** > **[!UICONTROL View Sources]** and **[!UICONTROL Manage Sources]**
+* Permission item **[!UICONTROL Data Ingestion]** > **[!UICONTROL View Sources]** and **[!UICONTROL Manage Sources]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile

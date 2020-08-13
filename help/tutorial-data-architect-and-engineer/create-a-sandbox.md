@@ -17,8 +17,6 @@ Sandboxes provide isolated environments where you can try out functionality with
 
 **Data Architects** and **Data Engineers** will need to create sandboxes outside of this tutorial.
 
-<!--include note on extent of sandbox support-->
-
 First, watch this short video to learn more about sandboxes:
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?quality=12&learn=on)
 
@@ -28,9 +26,14 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 * Permission item Sandbox Management > View Sandboxes
 * Permission item Sandbox Management > Manage Sandboxes
-* Permission item Sandboxes > (any sandbox)
+* Permission item Sandboxes > Prod
 * User-role access to the `Luma Tutorial Platform` product profile
 * Admin-level access to the `Luma Tutorial Platform` product profile
+
+
+>[!IMPORTANT]
+>
+>The sandbox feature is currently in Beta. If you do not have the sandbox feature in your account, please reach out to your Adobe representative for early access.
 
 ## Create a Sandbox
 

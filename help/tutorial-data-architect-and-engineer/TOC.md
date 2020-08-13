@@ -18,6 +18,5 @@ audience: all
 + [9. Ingest Streaming Data](ingest-streaming-data.md)
 + [10. Create Merge Policies](create-merge-policies.md)
 + [11. Apply Data Governance Framework](apply-data-governance-framework.md)
-+ [12. Validate Data and Profiles](validate-data-and-profiles.md)
 + [13. Run Queries](run-queries.md)
 + [14. Create Segments](create-segments.md)
