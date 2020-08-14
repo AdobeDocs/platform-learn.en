@@ -19,6 +19,7 @@ First, watch this short video to learn more about data ingestion:
 **Data Engineers** will need to ingest batch data outside of this tutorial.
 
 <!-- should i show how to use IO Events and webhooks-->
+
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
