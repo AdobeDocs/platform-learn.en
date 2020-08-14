@@ -153,10 +153,15 @@ Now that we have the id of the dataset, we can enable it for profile:
 You can also confirm that the UI shows the dataset enabled:
 ![Confirm](assets/profile-crm-confirmEnabled.png) 
 
+>[!IMPORTANT]
+>
+> If you ingest data before enabling the schema and dataset for profile, you will need to re-ingest that data again afterwards.
 
 ## Additional Resources
 
 * [Real-time Customer Profile documentation](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
 * [Real-time Customer Profile API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)
 
-Now that we've enabled the schemas and datasets for profile, let's [ingest data](ingest-batch-data.md). If you had ingested the data *before enabling the schemas and datasets*, you would have to re-ingest it again.
+
+**Data Engineers** should continue to the [Subscribe to data ingestion events](subscribe-to-data-ingestion-events.md) lesson.
+**Data Architects** _can skip ahead_ and go to the [batch ingestion lesson](ingest-batch-data.md), if they wish.

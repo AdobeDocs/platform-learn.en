@@ -18,13 +18,11 @@ First, watch this short video to learn more about data ingestion:
 
 **Data Engineers** will need to ingest batch data outside of this tutorial.
 
-<!-- should i show how to use IO Events and webhooks-->
-
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item **[!UICONTROL Datasets]** > **[!UICONTROL View Datasets]**, **[!UICONTROL Manage Datasets]** and **[!UICONTROL Data Monitoring]**
+* Permission item **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]**, **[!UICONTROL Manage Datasets]** and **[!UICONTROL Data Monitoring]**
 * Permission items **[!UICONTROL Data Ingestion]** > **[!UICONTROL View Sources]** and **[!UICONTROL Manage Sources]**
 * Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
@@ -59,7 +57,9 @@ First, get the sample data and customize it for your tenant:
 
 ### Validate the data
 
-There are a few places to confirm the data landed. In the dataset and in Real-time Customer Profile.
+There are a few ways to confirm the data landed.
+
+#### Validate in the Platform UI
 
 To confirm the data landed in the dataset:
 
@@ -77,6 +77,18 @@ To confirm the data landed in Profile:
 1. The enter one of the `loyaltyId` values from your dataset, e.g. `5625458`
 1. Click the `Show profile` button
     ![Confirm a profile from the dataset](assets/ingestion-loyalty-profile.png)
+
+#### Validate with data ingestion events
+
+If you subscribed to data ingestion events in the previous lesson, check your unique webhook.site URL. You should see three requests come in, with `ps_load_success` usually arriving a few minutes after the first two.
+
+1. `ing_load_success`&mdash;the batch as ingested
+1. `ig_load_success`&mdash;the batch was ingested into identity graph
+1. `ps_load_success`&mdash;the batch was ingested into profile service
+
+![Data ingestion webhook](assets/ingestion-loyalty-webhook.png)
+
+See the [documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
 
 ## Ingest data in batches with Platform API
 
@@ -159,6 +171,8 @@ To complete the batch:
 
 ### Validate the data
 
+#### Validate in the Platform UI
+
 Validate the data has landed in the Platform UI just like you did for the Loyalty dataset.
 
 First, confirm the batch shows that 1000 records have ingested:
@@ -169,7 +183,6 @@ Next, confirm the batch using Preview dataset:
 
 ![Batch preview](assets/ingestion-crm-preview.png)
 
-
 Finally, confirm one of your profiles has been created by looking up one of the profiles by the `Luma CRM Id` namespace, e.g. `112ca06ed53d3db37e4cea49cc45b71e`
 
 ![Profile ingested](assets/ingestion-crm-profile.png)
@@ -179,6 +192,14 @@ There is one interesting thing that just happened that I want to point out. Open
 Congratulations, you've just merged profiles!
 
 ![Profile merged ](assets/ingestion-crm-profileLinkedIdentities.png)
+
+#### Validate with data ingestion events
+
+If you subscribed to data ingestion events in the previous lesson, check your unique webhook.site URL. You should see three requests come in, just like with the loyalty data:
+
+![Data ingestion webhook](assets/ingestion-crm-webhook.png)
+
+See the [documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
 
 ## Ingest data with Workflows
 
