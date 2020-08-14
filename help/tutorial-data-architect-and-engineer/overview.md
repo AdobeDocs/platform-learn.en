@@ -44,7 +44,9 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 
 ## Using this tutorial
 
-In each lesson, I call out the primary audience, either Data Architects or Data Engineers. Since this is an introductory level tutorial, you should easily be able to complete the tasks for both roles. Of course, if you want to, you could also tag team the tutorial with a colleague in the other role. If you get stuck, try re-reading the instructions first, and then use the "Log an Issue" link on the top right of each page to contact me. 
+In each lesson, I call out the primary audience, either Data Architects or Data Engineers. Since this is an introductory level tutorial, you should easily be able to complete the tasks for both roles. Of course, if you want to, you could also tag team the tutorial with a colleague in the other role. And Data Engineers, you only need to complete Lessons 1-9 and then you can skip ahead to lesson 12. 
+
+If you get stuck, try re-reading the instructions first, and then use the "Log an Issue" link on the top right of each page to contact me. 
 
 ## Technical notes
 

@@ -28,10 +28,9 @@ We'll stick to the UI for this lesson, of course API option also exist for creat
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 
-* Permission item Profiles > Manage Profiles
-* Permission item Sandboxes > `Luma Tutorial`
+* Permission item **[!UICONTROL Profiles]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
+* Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
 
 ## About Merge policies and Union Schema

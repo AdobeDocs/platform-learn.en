@@ -24,9 +24,8 @@ First, watch this short video to learn more about sandboxes:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Sandbox Management > View Sandboxes
-* Permission item Sandbox Management > Manage Sandboxes
-* Permission item Sandboxes > Prod
+* Permission items **[!UICONTROL Sandbox Administration]** > **[!UICONTROL View Sandboxes]** and **[!UICONTROL Manage Sandboxes]**
+* Permission item **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]**
 * User-role access to the `Luma Tutorial Platform` product profile
 * Admin-level access to the `Luma Tutorial Platform` product profile
 

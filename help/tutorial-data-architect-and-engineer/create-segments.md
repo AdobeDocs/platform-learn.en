@@ -27,10 +27,8 @@ First, watch this short video to learn more about creating segments:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Profiles > Manage Profiles
-* Permission item Profiles > View Profiles
-* Permission item Profiles > Export Audience Segment
-* Permission item Sandboxes > `Luma Tutorial`
+* Permission items **[!UICONTROL Profiles]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]** and **[!UICONTROL Export Audience Segment]**
+* Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 

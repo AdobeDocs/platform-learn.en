@@ -24,9 +24,8 @@ First, watch this short video to learn more about datasets:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Data Management > View Datasets
-* Permission item Data Management > Manage Datasets
-* Permission item Sandboxes > `Luma Tutorial`
+* Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
+* Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 

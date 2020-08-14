@@ -28,32 +28,68 @@ First, watch these short videos about data governance:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Sandbox Management > View Sandboxes
-* Permission item Sandboxes > `Luma Tutorial`
+* Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
+* Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 
-### Apply data governance labels
+## Business Scenario
 
-1. Go to Data Management and select Datasets option
-1. Select **Luma Offline Purchase Dataset**
-1. Select **Data Governance** tab for the dataset
-1. Find and select **email_id** field in the list
-1. Click **Edit Governance labels** pencil icon in right 
-1. Select I1 as address field contains email address and it is directly identifiable data that can identify or contact a specific person, rather than a device.
+Luma makes a promise to members of their Loyalty program, that Loyalty data will not be shared with any third parties. We will implement this scenario in the rest of the lesson.
 
-![Data Governance Label](assets/datasets-dule.png)
+## Apply data governance labels
 
-1. Click Save changes
+The first step in the data governance process, is to apply governance labels to your data. Before we do that, let's take a quick look at what labels are available:
+
+1. In the Platform UI, click **[!UICONTROL Policies]** in the left navigation
+1. Click the **[!UICONTROL Labels]** tab to see all of the labels in the account.
+
+Note that there are a large number of out-of-the-box labels, plus you can create your own via the [!UICONTROL Create label] button
+There are three main types: [!UICONTROL Contract labels], [!UICONTROL Identity labels], and [!UICONTROL Sensitive labels] that correspond to common reasons data might be restricted. Finally, note how each of the labels has a [!UICONTROL Friendly Name] and a short [!UICONTROL Name] which is just an abbreviation of the type and a number. Finally, note that the [!DNL C1] label is for "No third-party export" which is what we need for our Loyalty policy.
+
+![Data Governance Label](assets/governance-policies.png)
+
+Now it's time to label the data whose usage we want to restrict:
+
+1. In the Platform UI, click **[!UICONTROL Datasets]** in the left navigation
+1. Open the `Luma Loyalty Dataset`
+1. Click on the **[!UICONTROL Data Governance]** tab
+1. You can either apply labels to individual fields or apply them to the entire dataset. We will apply the label to the entire dataset. Click the pencil icon.
+    ![Data Governance](assets/governance-dataset.png)
+1. In the modal, select the C2 label and click the 
+1. Click the **[!UICONTROL Save changes]** button
+    ![Data Governance](assets/governance-applyLabel.png)
+1. Returning to the main [!UICONTROL Data Governance] screen, with the **[!UICONTROL Show inherited labels]** toggle on, you can see how the label has been applied to all of the fields in the dataset.
+    ![Data Governance](assets/governance-labelsAdded.png)
 
 
-Repeat similar steps for other Schemas as well and identify appropriate fields and appropriate labels.
+<!--adding extra, unnecessary fields from mixins makes it harder to see which fields really need labels-->
+<!--Are there any best practices for applying governance labels-->
 
-```
-Note For SME : In this video you will be also explain what other labels are and when to use which label. You may ask learners to add more DULE label as they think would be right for the Schema. 
+## Create data governance policies
 
-```
+Now that our data is labeled, we can create a policy.
 
-Use content from Mathieu's demo
+1. In the Platform UI, click **[!UICONTROL Policies]** in the left navigation
+1. On the Browse tab, note that there is already an out-of-the-box policy called "3rd party export restriction" that associates the C2 label with the marketing action [!UICONTROL Export to Third Party]&mdash;exactly what we need!
+1. Click on the policy and then enable it via the **[!UICONTROL Policy status]** toggle
+    ![Data Governance](assets/governance-enablePolicy.png)
+
+You can also create your own policies by clicking the **[!UICONTROL Create policy]** button. This opens a wizard which allows you can combine multiple labels and marketing action restrictions.
+
+1. Click on the **[!UICONTROL Data Governance]** tab
+1. You can either apply labels to individual fields or apply them to the entire dataset. We will apply the label to the entire dataset. Click the pencil icon.
+1. In the modal, select the C2 label and click the 
+1. Click the **[!UICONTROL Save changes]** button
+    ![Data Governance](assets/governance-applyLabel.png)
+1. Returning to the main [!UICONTROL Data Governance] screen, with the **[!UICONTROL Show inherited labels]** toggle on, you can see how the label has been applied to all of the fields in the dataset.
+    ![Data Governance](assets/governance-labelsAdded.png)
+
+## Enforce governance policies
+
+Enforcement of governance policies is obviously a key component to the framework. Enforcement happens downstream when data is activated and sent out of Platform. Therefore, it's out of the scope of this tutorial. But just so you're not left hanging, you can learn more about how the third step in data governance from this video, which I've queued up to the relevant portion:
+
+>[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
+
 
 ## Additional Resources
 

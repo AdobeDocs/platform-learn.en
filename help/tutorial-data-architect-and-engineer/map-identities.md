@@ -35,11 +35,9 @@ First, watch this short video to learn more about identity in Adobe Experience P
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item **[!UICONTROL Identities]** > **[!UICONTROL Manage Identity Namespaces]**
-* Permission item **[!UICONTROL Identities]** > **[!UICONTROL View Identity Namespaces]**
-* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]**
-* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL Manage Schemas]**
-* Permission item Sandboxes > `Luma Tutorial`
+* Permission items **[!UICONTROL Identities]** > **[!UICONTROL View Identity Namespaces]** and **[!UICONTROL Manage Identity Namespaces]**
+* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
+* Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 

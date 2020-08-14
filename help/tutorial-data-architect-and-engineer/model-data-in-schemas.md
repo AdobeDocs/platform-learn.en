@@ -42,8 +42,7 @@ First, watch this short video to learn more about schemas and the Experience Dat
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]**
-* Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL Manage Schemas]**
+* Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
