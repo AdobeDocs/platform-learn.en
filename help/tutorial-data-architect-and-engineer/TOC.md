@@ -14,7 +14,7 @@ audience: all
 + [5. Map identities](map-identities.md)
 + [6. Create datasets](create-datasets.md)
 + [7. Enable profiles](enable-profiles.md)
-+ [8. Subscribe to data ingestion events](subscribe-to-data-ingestion-events)
++ [8. Subscribe to data ingestion events](subscribe-to-data-ingestion-events.md)
 + [9. Ingest batch data](ingest-batch-data.md)
 + [10. Ingest streaming data](ingest-streaming-data.md)
 + [11. Create merge policies](create-merge-policies.md)
