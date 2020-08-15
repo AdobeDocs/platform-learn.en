@@ -1,7 +1,7 @@
 ---
 title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
-feature: data ingestion
+description: In this lesson you will learn how to setup, write and execute queries to validate the data you have ingested.
+feature: query service
 topics: 
 kt: 4348
 audience: data architect,data engineer

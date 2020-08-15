@@ -1,10 +1,10 @@
 ---
 title: Stitch Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
+description: In this lesson, you will enable your schemas and datasets for Real-time Customer Profile. 
 feature: profile
 topics: 
 kt: 4348
-audience: data architect,data engineer
+audience: data architect
 doc-type: tutorial
 activity: implement
 ---

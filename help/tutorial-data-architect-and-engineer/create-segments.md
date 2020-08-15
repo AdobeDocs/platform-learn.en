@@ -1,15 +1,17 @@
 ---
 title: Create Segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
-feature: data ingestion
+description: In this lesson, we will build some segments based on the profile data we have ingested in the previous lessons.
+feature: segmentation
 topics: 
 kt: 4348
-audience: data architect,data engineer
+audience: data architect
 doc-type: tutorial
 activity: implement
 ---
 
 # Create segments
+
+In this lesson, we will build some segments based on the profile data we have ingested in the previous lessons.
 
 Once you have Real-time Customer Profiles, you can create segments and audiences to create groups of individuals who share similar traits and might respond similarly to marketing strategies.
 

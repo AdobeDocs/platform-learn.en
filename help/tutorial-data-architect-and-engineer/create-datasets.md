@@ -1,10 +1,10 @@
 ---
 title: Create Datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
-feature: data ingestion
+description: In this lesson, you will create datasets so that you can ingest data into them later on.
+feature: datasets
 topics: 
 kt: 4348
-audience: data architect,data engineer
+audience: data architect
 doc-type: tutorial
 activity: implement
 ---

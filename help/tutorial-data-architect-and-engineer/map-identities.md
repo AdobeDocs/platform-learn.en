@@ -1,10 +1,10 @@
 ---
 title: Map Identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
+description: In this video we will add identity fields to our schemas and create some new identity namespaces for our custom identities.
 feature: profile
 topics: 
 kt: 4348
-audience: data architect,data engineer
+audience: data architect
 doc-type: tutorial
 activity: implement
 ---

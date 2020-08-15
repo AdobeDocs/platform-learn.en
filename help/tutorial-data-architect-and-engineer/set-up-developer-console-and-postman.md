@@ -1,7 +1,7 @@
 ---
-title: Create a Sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
-feature: sandbox
+title: Set up Developer Console and Postman | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+description: In this lesson, you will set up a project in the Adobe Developer Console and provide you with [!DNL Postman] Collections so you can start using Platform APIs.
+feature: api
 topics: 
 kt: 4348
 audience: data architect,data engineer

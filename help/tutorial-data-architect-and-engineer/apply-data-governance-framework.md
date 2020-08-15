@@ -1,10 +1,10 @@
 ---
-title: Create Governance Policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
+title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+description: In this lesson you will apply the data governance framework to the data you've ingested into your sandbox. 
 feature: governance
 topics: 
 kt: 4348
-audience: data architect,data engineer
+audience: data architect
 doc-type: tutorial
 activity: implement
 ---

@@ -1,7 +1,7 @@
 ---
-title: Set up Data Monitoring | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
-feature: sandbox
+title: Subscribe to data ingestion events | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+description: In this lesson, you will subscribe to data ingestion events by setting up a webhook with the Adobe Developer Console and an online webhook development tool. You will use these events to monitor the status of your data ingestion jobs in the subsequent lessons.
+feature: data ingestion
 topics: 
 kt: 4348
 audience: data engineer
@@ -11,21 +11,24 @@ activity: implement
 
 # Subscribe to data ingestion events
 
-In this lesson, you will set up a data monitoring web hook in the Adobe Developer Console that you will be able to use to monitor the status of your data ingestion jobs in the subsequent lessons.
+In this lesson, you will subscribe to data ingestion events by setting up a webhook with the Adobe Developer Console and an online webhook development tool. You will use these events to monitor the status of your data ingestion jobs in the subsequent lessons.
 
-**Data Engineers** may want to use Platform's data monitoring features outside of this tutorial.
+**Data Engineers** will want to subscribe to data ingestion events outside of this tutorial.
 **Data Architects** _can skip this lesson_ and go to the [batch ingestion lesson](ingest-batch-data.md).
 
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
-* Permission item Sandboxes > `Luma Tutorial`
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+
+>[!IMPORTANT]
+>
+> These notifications triggered by the data ingestion events will apply to _all of your sandboxes_, not just the `Luma Tutorial` sandbox we are using for the exercises in this tutorial. So, you might see notifications coming from other data ingestion events in your other sandboxes.
 
 ## Set up a webhook
 
-In this exercise we will create a webhook using a free tool called webhook.site:
+In this exercise we will create a webhook using an online tool called webhook.site (feel free to substitute any other webhook development tool you prefer to use):
 
 1. In another browser tab, open the website [https://webhook.site/](https://webhook.site/)
 1. You will be assigned a unique URL, which you should bookmark, as you will need to come back to it later in the data ingestion lessons:

@@ -1,15 +1,17 @@
 ---
 title: Ingest Batch Data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-description: 
+description: In this lesson, you will ingest batch data into Experience Platform using a variety of methods.
 feature: data ingestion
 topics: 
 kt: 4348
-audience: data architect,data engineer
+audience: data engineer
 doc-type: tutorial
 activity: implement
 ---
 
 # Ingest Batch Data
+
+In this lesson, you will ingest batch data into Experience Platform using a variety of methods.
 
 Batch data ingestion allows you to ingest a large amount of data into Adobe Experience Platform at once. You can ingest batch data in a one time upload within Platform's interface or using the API. You can also configure regularly scheduled batch uploads from third-party services such as cloud storage services using Source connectors.
 
