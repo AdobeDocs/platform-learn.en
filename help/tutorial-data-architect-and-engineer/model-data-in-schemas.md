@@ -267,12 +267,28 @@ Now let's add our Identity Profile Mixin to the schema. Looking at the Body of t
 
 1. Open the call **[!DNL Schema Registry API > Schemas > Return a list of all mixins within the specified container.]**
 1. In the **Headers** tab, update the **Accept** header to `application/vnd.adobe.xed-id+json`
-1. Click the **Send** button
-1. Grab the `$id` value (which will be different from this screenshot)
+1. Click the **Send** button to retrieve a list of all of the custom mixins in your account
+1. Grab the `$id` value of the `Identity Profile Mixin` (which will be different from this screenshot)
   ![Retrieve the list of mixins](assets/schemas-crm-getListOfMixins.png) 
+1. Now open the call **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema]** again
+1. The **Params** tab should still have the `$id` of your schema
+1. Open the Body tab and paste the following code, replacing the `$ref` value with the `$id` of your own `Luma Identity Profile Mixin`:
 
-Now see if you can modify the request Body from the request used to add the standard mixins to add the `Luma Identity Profile Mixin`. It should look something like this (with a different `$ref` value)
-  ![Retrieve the list of mixins](assets/schemas-crm-addIdentityMixin.png) 
+    ```json
+    [
+      { 
+        "op": "add",
+        "path": "/allOf/-",
+        "value":  
+        {
+          "$ref": "REPLACE_WITH_YOUR_OWN_MIXIN_ID"
+          }
+        }
+    ]
+    ```
+
+1. Click **Send** to make the API call add the `Luma Identity Profile Mixin` to your `Luma CRM Schema`
+  ![Adding the Identity Mixin](assets/schemas-crm-addIdentityMixin.png) 
 
 Verify that the mixin has been added to the schema by checking the UI or, for bonus points, see if you can figure out how to list the mixins in the schema using the **[!DNL Lookup a specific schema by its unique ID]** call in the [!DNL Postman] collection.
 
