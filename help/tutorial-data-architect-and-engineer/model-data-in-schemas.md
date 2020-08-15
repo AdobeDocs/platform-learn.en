@@ -117,31 +117,37 @@ Next we need to add fields that are specific to Luma's Loyalty system and which 
 
 1.  Repeat Step 8 and 9 to add two more fields within the `loyalty` object:
     1.  Points
-           1. Field Name: `points`
-           1. Display Name: `Points`
+           1. Field name: `points`
+           1. Display name: `Points`
            1. Type: **[!UICONTROL Integer]**
            1. Default: 0
     1. Level
-       1. Field Name: `level`
-       1. Display Name: `Level`
+       1. Field name: `level`
+       1. Display name: `Level`
        1. Type : **[!UICONTROL String]**
        1. Enum: Checked, with the following enum values:
-          | Value              |  Label    |  
-          |-------------------|-----------|
-          | bronze            | Bronze    | 
-          |   silver            | Silver    |  
-          | gold              | Gold      |  
-          | platinum          | Platinum  |  
+            | Value              |  Label    |  
+            |-------------------|-----------|
+            | bronze            | Bronze    | 
+            |   silver            | Silver    |  
+            | gold              | Gold      |  
+            | platinum          | Platinum  |  
 
    
 1. Click **[!UICONTROL Save]** to save the current state of your schema, which should look like this:
 
     ![Loyalty Mixin Complete](assets/schemas-loyaltyMixinComplete.png) 
 
-Now we will create another mixin to contain the loyaltyId field, as well as other identifiers which we will use in the other schemas. Since you are now familiar with how to create mixins, create one named `Luma Identity Profile Mixin` with an object called `systemIdentifier` containing the following fields, *both of type 'string'*:
+Now we will create another mixin to contain the loyaltyId field, as well as other identifiers which we will use in the other schemas. Since you are now familiar with how to create mixins, create one named `Luma Identity Profile Mixin` with an object called `systemIdentifier` containing the following fields:
 
-   1. loyaltyId
-   1. crmId
+   1. Loyalty Id
+      1. Field name: Loyalty Id
+      1. Display name: loyaltyId
+      1. Type: String
+   1. CRM Id
+      1. Field Name: CRM Id
+      1. Display Name: crmId
+      1. Type: String
 
 Your new mixin should look like this. Click the **[!UICONTROL Save]** button to save your schema, but leave the schema open for the next exercise. 
     ![Loyalty Mixin Complete](assets/schemas-loyalty-identityMixinComplete.png) 
@@ -166,7 +172,7 @@ Now we will create a schema using the API.
 
 >[!NOTE]
 >
->Data engineers, feel free to just create the CRM schema via the UI method you just used, if you'd like:
+> You can continue to use the UI method, but next I am going to show you how to do this via the API:
 >
 > 1. Use the [!UICONTROL XDM Profile] class
 > 1. Name it `Luma CRM Schema`
@@ -177,6 +183,7 @@ First we will create the empty schema:
 1. Open [!DNL Postman]
 1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
 1. Open your environment variables and change the value of **CONTAINER_ID** from `global` to `tenant`
+  ![Change the CONTAINER_ID to tenant](assets/schemas-crm-changeContainerId.png)
 1. Open the call **[!DNL Schema Registry API > Schemas > Create a new tenant-defined schema]**
 1. Open the Body tab and paste the following code and click **Send** to make the API call. This will create a new schema using the same `XDM Individual Profile` base class that was used in the Loyalty schema:
 
@@ -192,6 +199,10 @@ First we will create the empty schema:
       ]
     }
     ```
+    
+    >[!NOTE]
+    >
+    >The namespace references for standard class and mixin objects, in this and subsequent code samples, can be obtained by using list API calls such as **[!UICONTROL Schema Registry API > Schemas > List all classes in the specified container.]** or **[!DNL Schema Registry API > Mixins > Return a list of all mixins within the specified container.]** with the **[!DNL CONTAINER_ID]** set to `global` and an accept header `application/vnd.adobe.xdm+json`.
 
 1. You should get a `201 Created` response
 1. Copy `meta:altId` from Response body. We will use it later in another exercise.
@@ -202,7 +213,7 @@ First we will create the empty schema:
 
 >[!NOTE]
 >
-> The `meta:altId` or schema id can also be obtained by making the API request **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]** in the tenant container or by opening the schema in the UI and extracting it from the URL.
+> The `meta:altId` or schema id can also be obtained by making the API request **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]** with the **[!UICONTROL CONTAINER_ID]** set to `tenant` and an accept header `application/vnd.adobe.xdm+json`.
 
 >[!TIP]
 >

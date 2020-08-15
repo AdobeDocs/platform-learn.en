@@ -13,9 +13,11 @@ activity: implement
 
 In this lesson, you will set up a project in the Adobe Developer Console and provide you with [!DNL Postman] Collections so you can start using Platform APIs.
 
-Platform is built API-first. While interface options also exist for all major tasks, you will likely want to use the Platform API at some point. For example, to automate routine tasks or to use new Platform features before the UI has been built.
+In order to complete these exercises successfully, get the Postman app for your operating system. Postman basic is free with account creation. While not required in order to use Experience Platform APIs in general, Postman makes API workflows easier, and Adobe Experience Platform provides dozens of Postman collections to help execute its APIs and learn how they operate. The rest of this tutorial assumes working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.getpostman.com/).
 
-**Data Architects** and **Data Engineers** may need to use Platform API outside of this tutorial for certain tasks.
+Platform is built API-first. While interface options also exist for all major tasks, you will likely want to use the Platform API at some point. For example to ingest data, move items around between sandboxes, automate routine tasks or to use new Platform features before the UI has been built.
+
+**Data Architects** and **Data Engineers** may need to use Platform API outside of this tutorial.
 
 ## Permissions required
 
@@ -69,7 +71,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
     ![Adobe Developer Console Project API Config](assets/adobeio-io-api.png)
 
-1. System Administrators of your organization would be able to see the project as an "Integration" in the product profile
+1. System Administrators of your organization would be able to see the project as an "Integration" in the product profile in the Admin Console
 
     ![Adobe Developer Console Project API Config](assets/adobeio-io-integrationInAdminConsole.png)
 
@@ -85,7 +87,7 @@ You might have noticed that the project was assigned a number:
 
 ## Set up Postman
 
-1. Download and install [[!DNL Postman]](https://www.postman.com/)
+1. Download and install [!DNL Postman](https://www.postman.com/)
 1. Open [!DNL Postman] and import the downloaded json environment file, `service.postman_environment.json`
    ![Adobe Developer Console Import environment](assets/postman-importEnvironment.png)
 1. In [!DNL Postman], select your environment in the top-right dropdown and click the **eye** icon to view the environment variables. You should see that the ACCESS_TOKEN, PRIVATE_KEY, and JWT_TOKEN variables are blank:
@@ -154,11 +156,11 @@ To generate the tokens:
 -->
 
 
-## Add the Sandbox Name and Tenant ID
+### Add the Sandbox Name and Tenant ID
 
 The `SANDBOX_NAME` and `TENANT_ID` and `CONTAINER_ID` variables are not provided in the environment export from the Adobe Developer Console so we will add them manually:
 
-1. Open the **Environment Variables** modal
+1. In [!DNL Postman], open the **Environment Variables** modal
 1. Click the **Edit** link to the right of the environment name
 1. Enter `SANDBOX_NAME` in the **Add new variable field**
 1. Enter `luma-tutorial` into both value fields (the name we gave to our sandbox in the previous lesson)
@@ -173,7 +175,7 @@ The `SANDBOX_NAME` and `TENANT_ID` and `CONTAINER_ID` variables are not provided
 
     >[!NOTE]
     >
-    >`CONTAINER_ID` is a field whose value we will change several times during the tutorial. When `global` is used the API will interact with out-of-the-box, Adobe-provided elements in your Platfomr account. When working with your own custom elements, you will change this value to `tenant`.
+    >`CONTAINER_ID` is a field whose value we will change several times during the tutorial. When `global` is used the API will interact with out-of-the-box, Adobe-provided elements in your Platform account. When working with your own custom elements, you will change this value to `tenant`.
 
 1. Enter `global` into both value fields
 

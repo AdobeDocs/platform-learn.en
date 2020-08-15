@@ -44,17 +44,15 @@ Also, here is a quick summary of the roles that exist for Platform, as well as a
 
 <!--Can a Developer add an Integration to a product profile?-->
 
-## Create product profiles (requires a system administrator or product admin)
+## Create an Experience Platform product profile (requires a system administrator or product admin)
 
-All meaningful access to Adobe Experience Platform and Adobe Experience Platform Launch is controlled via product profiles. In this exercise you (or a System Administrator at your company) will create product profiles for both products and add you as product profile admins. After that, you will learn how to manage the user permissions for both products for the purposes of this tutorial.
+In this exercise you or a System Administrator at your company will create a product profile for Adobe Experience Platform and add the tutorial participant as a product profile admin.
 
 >[!NOTE]
 >
->If you are a system administrator of Adobe products facilitating the participation of colleague in the completion of this tutorial, will your colleague be expected to administrate other users of Platform and Launch? If so, perhaps add them as a *product administrator* for Adobe Experience Platform and/or Adobe Experience Platform Launch, in which case they would be able to complete these steps on their own.
+>If you are a system administrator of Adobe products facilitating the enablement of a colleague with this tutorial, consider adding them as a *product administrator* for Adobe Experience Platform, in which case they would be able to complete these steps on their own and administrate other users of Experience Platform in the future.
 
-### Adobe Experience Platform product profile
-
-In this exercise you will create a product profile for Adobe Experience Platform and add the tutorial participant as a product profile admin:
+To create the product profile:
 
 1. Log into the [Adobe Admin Console](https://adminconsole.adobe.com)
 1. Click **[!UICONTROL Products]** on the top navigation
@@ -84,18 +82,6 @@ Now you need to add the tutorial participant as an admin of the newly created pr
 
 After completing these steps you should see that the `Luma Tutorial Platform` profile is set up with 1 admin.
 ![Platform profile created](assets/adminconsole-platform-profileCreated.png)
-
-### Adobe Experience Platform Launch product profile
-
-Now, you are going to create a similar product profile for Adobe Experience Platform Launch. The steps are almost identical
-
-1. In the [!DNL Adobe Admin Console] go to the Adobe Experience Platform Launch product
-1. Add a new profile and name it `Luma Tutorial Launch`
-1. Don't assign any properties or permissions at this point
-1. Add the tutorial participant as an admin of this profile
-
-After completing these steps you should see that the `Luma Tutorial Launch` profile is set up with 1 admin.
-![Launch profile created](assets/adminconsole-launch-profileCreated.png)
 
 ## Configure Experience Platform product profile
 
@@ -146,6 +132,24 @@ In order to use the Platform API, you will need add yourself as a developer:
 1. Click the **[!UICONTROL Add Developer]** button
     ![Click Add User](assets/adminconsole-addDeveloper.png)
 1. Complete the workflow to add yourself as a developer to the product profile
+
+## Create a Launch product profile (requires a system administrator or product admin)
+
+In this exercise you or a System Administrator at your company will create a product profile for Adobe Experience Platform Launch and add the tutorial participant as a product profile admin.
+
+>[!NOTE]
+>
+>If you are a system administrator of Adobe products facilitating the enablement of a colleague with this tutorial, consider adding them as a *product administrator* for Launch, in which case they would be able to complete these steps on their own and administrate other users of Launch in the future.
+
+To create the product profile:
+
+1. In the [!DNL Adobe Admin Console] go to the Adobe Experience Platform Launch product
+1. Add a new profile and name it `Luma Tutorial Launch`
+1. Don't assign any properties or permissions at this point
+1. Add the tutorial participant as an admin of this profile
+
+After completing these steps you should see that the `Luma Tutorial Launch` profile is set up with 1 admin.
+![Launch profile created](assets/adminconsole-launch-profileCreated.png)
 
 ## Configure the Launch product profile
 
