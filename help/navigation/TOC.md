@@ -78,15 +78,7 @@ audience: all
   + [Integrate with Google Customer Match](/help/rtcdp/integrate-with-google-customer-match.md)
   + [Integrate with IAB's Transparency and Consent Framework 2.0](/help/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
   + [Enforce Data Usage Policies in Real-time CDP](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
-+ Journey Orchestration{#journey-orchestration}
-  + [Understanding Journey Orchestration](/help/journey-orchestration/introduction.md)
-  + [Configure Streaming Events](/help/journey-orchestration/configure-streaming-events.md)
-  + [Configure Data Sources](/help/journey-orchestration/configure-data-sources.md)
-  + [Configure Actions](/help/journey-orchestration/configure-actions.md)
-  + [Create a Journey](/help/journey-orchestration/create-a-journey.md)
-  + [Validate and Publish a Journey](/help/journey-orchestration/validate-and-publish-a-journey.md)
-  + [Analyze a Journey via Reporting Tools](/help/journey-orchestration/reporting.md)
-  + [How to find help with Adobe Journey Orchestration](/help/journey-orchestration/how-to-find-help-with-journey-orchestration.md)
++ [Journey Orchestration](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/overview.html)
 + Customer Journey Analytics {#cja}
   + [Understanding Customer Journey Analytics](/help/cja/understanding-customer-journey-analytics.md)
   + [New Terms and Concepts](/help/cja/new-terms-and-concepts-in-cja.md)
