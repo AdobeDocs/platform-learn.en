@@ -13,12 +13,7 @@ activity: implement
 
 In this lesson, we will build some segments based on the profile data we have ingested in the previous lessons.
 
-Once you have Real-time Customer Profiles, you can create segments and audiences to create groups of individuals who share similar traits and might respond similarly to marketing strategies.
-
-While the terms segment and audience are often used interchangeable, in Experience Platform we sometimes make a subtle distinction between:
-
-* **Segment definition**: The rule set used to describe key characteristics or behavior of a target audience. Once conceptualized, the rules outlined in a segment definition are used to determine qualifying audience members for a segment.
-* **Audience**: The resulting set of profiles that meet the criteria of a segment definition.
+Once you have Real-time Customer Profiles, you can create segments and audiences to create groups of individuals who share similar traits and might respond similarly to marketing strategies. The building blocks of these segments are the XDM fields which you created earlier, enabled for profile, and ingested data.
 
 **Data Architects** will need to create segments outside of this tutorial.
 
@@ -36,87 +31,86 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 ## Create a basic segment
 
-1. Go to **Segments** under **customer** section in platform
-1. In Attributes tab, Enter **loyalty** in search box
-1. You should see **Loyalty** folder , click on the folder and you should see properties available in the loyalty folder
-1. Drag and drop , **level** from attribute fields to canvas 
-1. Select Level equals 'Gold' or 'Platinum'
+Let's create a simple segment for loyalty program customers with a Gold or Platinum Status
+
+1. In the Platform UI, click **[!UICONTROL Segments]** in the left navigation
+1. Click the **[!UICONTROL Create segment]** button 
+1. On the left of the schema builder are three tabs for Attributes (Record data), Events (Time-series data), and Audiences
+1. If you click the gear icon, you will note that the segment builder defaults to only showing you fields with data and that you can also choose different merge policies for your segments
+1. In Attributes tab, navigate to the **XDM Individual Profile > [YOUR TENANT ID] > Loyalty** folder (you could also search for "loyalty")
+1. Drag and drop , `Level` from the attribute fields menu to the segment builder canvas 
+1. Select `Level` equals `Gold` or `Platinum`
 1. Provide name of segment ' Luma : Gold or Above'
-1. Provide description of segment ' Luma customers with level Gold or Above'
-1. Click save to save this segment
+1. As the **[!UICONTROL Name]**, enter `Luma customers with level Gold or Above`
+1. Click the **[!UICONTROL Save]**
    ![Segment](assets/segment-goldOrAbove.png)
-1.  In a few minutes , you should see an estimate of existing customers show up.
+1. In a few minutes, you should see an estimate of existing customers qualifying for this segment
+   ![Segment size estimate](assets/segment-goldOrAbove-estimate.png)
+
+<!--## Create a sequential segment-->
 
 ## Create a dynamic segment
 
-In this we will create a segment where customer has bought same product twice with in 30 days.
+In this we will create a segment where customer has bought same product twice with in 30 days. Dynamic segments allow you to scale your segmentation by using the fields as variables which can be compared against each other.
 
-1. Create Segment 
-1. Drag and Drop **Product Name**
-1. Set **Product Name** as exists
-1. Drag and Drop another  **Product Name** to right of existing field
-1. We need to set it's value to same as product selected in the top. For this we will need to go to events to browse variables in left.
-1. Select Product Name 1 > Product name 
-1. Drag product name to set value in blue box 'operands'
+1. Click **[!UICONTROL Segments]** in the left navigation
+1. Click the **[!UICONTROL Create segment]** button 
+1. Click on the **[!UICONTROL Events]** tab
+1. Filter the list to `purchases`
+1. Drag the **[!UICONTROL Purchases]** event type onto the canvas _twice_
+1. Click the clock icon in between the the events and choose "within 30 days"
+1. Confirm that your segment definition at this point reads **"Include audience who have at least 1 Purchases event then within 30 days have at least 1 Purchases event"**
+   ![Two purchases within 30 days](assets/segment-twoPurchases.png)
+1. Now change the event filter to `sku`
+1. Drag the SKU field to the second purchase event
+   ![Two purchases within 30 days with SKU](assets/segment-twoPurchases-addSku.png)
+1. Now clear the event filter
+1. You should see in the **[!UICONTROL Browse Variables]** section, there are folders for the two purchase events. Click to explore **[!UICONTROL Purchases 1]**   
+   ![Two purchases within 30 days with SKU, browse the first purchase](assets/segment-twoPurchases-browsePurchaseOne.png)
+1. Drill down into the **[!UICONTROL Product list items]** folder, select the **[!UICONTROL SKU]** field and drag it to the right of the **[!UICONTROL equals]** operand. When you are hovering over the area, drop it in the  "Add to compare operands" section
+1. Name your segment `Bought same product within 30 days`
+1. Confirm your audience definition is **"Include audience who have at least 1 Purchases event then within 30 days have at least 1 Purchases event where ((SKU equals Purchases1 SKU))"**
+1. Click the **[!UICONTROL Save]** button
+
+   ![Bought same product in the last 30 days segment](assets/segment-boughtSameProduct.png)
+
+## Create a sequential segment
 
 ## Create a multi-entity segment
 
-With the advanced multi-entity segmentation feature, you can create segments using multiple XDM classes thereby adding extensions to person schemas. As a result, Segmentation Service can access additional fields during segment definition as if they were native to the profile data store
+Remember how we created the relationship between the `Luma Offline Purchase Events Schema` and the `Luma Product Catalog Schema` in earlier lessons? We did that so we could leverage the relationship in our schema using multi-entity segmentation.
+
+With the advanced multi-entity segmentation feature, you can create segments using multiple XDM classes thereby adding extensions to schemas. As a result, Segmentation Service can access additional fields during segment definition as if they were native to the profile data store
 
 This segment is created by leveraging relationship between multiple XDM Schema - Product Catalog Schema and Offline Purchase Schema.
 
+1. Click **[!UICONTROL Segments]** in the left navigation
+1. Click the **[!UICONTROL Create segment]** button 
+1. Click on the **[!UICONTROL Events]** tab
+1. Filter the list to `purchases`
+1. Drag the **[!UICONTROL Purchases]** event type onto the canvas
+1. Click the clock icon in between the the events and choose "in last 30 days"
+1. Filter the list to `category` and then drag the **[!UICONTROL Product Category]** field onto **[!UICONTROL Purchases]**
+1. Change the operator to **[!UICONTROL starts with]** and enter `men` into the text box
+1. As the **[!UICONTROL Name]**, enter `Purchased a Men's product in the last 30 days`
+1. Confirm the audience definition `(Include audience who have at least 1 Purchases event where ((Product Category starts with men)) ) and occurs in last 30 day(s)`
+1. Click the **[!UICONTROL Save]** button
 
-1. Go to **Segments** under customer.
-1. Click on **Create Segment** in top right corner.
-1. Provide Name **Products For Men**
-1. Search for **Product category** under **Events**.
-1. Drag and drop **Product Category** to center of page.
-1. Enter **Men** in textbox after **Product Category** equals.
-1. Save.
+   ![Bought same product in the last 30 days segment](assets/segment-purchasedMens.png)
 
-![Product Category](assets/segment-MultiEntity.png)
+## Batch and Streaming segmentation
 
-## Create a streaming segment
+Let's take a moment to review our three segments:
 
-## Create and evaluate segments using API
-
-In this lesson, we will create a new segment of all Luma customer whose loyalty level is Bronze.
-
-
-1. Open [!DNL Postman]
-1. In platform, Go to folder **6-Segmentation**
-1. Select request **Create Segment**
-1. Verify URL and body
-
-### URL
-
-```
-https://platform-va7.adobe.io/data/core/ups/segment/definitions
-```
-
-### BODY 
-
-```
-{
-    "name" : "Luma Bronze Customer",
-    "description": "Segment dataset into all bronze customers",
-    "expression" : {"type":"PQL", "format":"pql/text", "value":"_wwfovlab011.loyalty.level=\"bronze\""},
-    "schema" : {"name": "_xdm.context.profile", "id": "luma_bronze_customers"} ,
-    "ttlInDays" : 90
-}
-
-```
-
-1. Send Request
-1. If successful, you should get **Status : 200 OK**
-1. Go to AEP UI , and verify you have new segment named **Luma Bronze Customer**
-
-
-```
- NOTE TO SME : All the API body or URL referes to _wwfovlab011 tenant , it may change for learners so please educate them about this in video.
-```
+* Note that two of our segments are batch segments and one is streaming. 
+* Platform will default to streaming segmentation, when possible, which will qualify the customer for a segment immediately when they meet the criteria. When the segment definitions get too complex&mdash;in this case because the look-back window was greater than seven days&mdash;it will save as a batch segment. For a complete list of streaming limitations, see [the documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/streaming-segmentation.html).
+* The batch jobs run on a daily schedule, which can be toggled off.
+  
+![Bought same product in the last 30 days segment](assets/segment-review.png)
 
 ## Additional Resources
 
 * [Segmentation Service documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html)
 * [Segmentation Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/segmentation.yaml)
+
+That's it, you finished the tutorial!

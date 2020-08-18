@@ -284,10 +284,9 @@ Now let's add our Identity Profile Mixin to the schema. Looking at the Body of t
           "$ref": "REPLACE_WITH_YOUR_OWN_MIXIN_ID"
           }
         }
-    ]
-    ```
+    ]```
 
-1. Click **Send** to make the API call add the `Luma Identity Profile Mixin` to your `Luma CRM Schema`
+1. Click **Send**
   ![Adding the Identity Mixin](assets/schemas-crm-addIdentityMixin.png) 
 
 Verify that the mixin has been added to the schema by checking the UI or, for bonus points, see if you can figure out how to list the mixins in the schema using the **[!DNL Lookup a specific schema by its unique ID]** call in the [!DNL Postman] collection.
