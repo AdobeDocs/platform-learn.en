@@ -18,7 +18,7 @@ _Getting Started with Adobe Experience Platform for Data Architects and Data Eng
 
 ## Learning Objectives
 
-Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial will teach you the key tasks executed by _both roles_ so you understand how to get started implementing Experience Platform for your own business.  
+Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial will teach you the key tasks executed by _both roles_ so you know how to get started implementing Experience Platform for your own business.  
 
 Topics include: 
 
@@ -44,7 +44,9 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 
 ## Using this tutorial
 
-In each lesson, I call out the primary audience, either Data Architects or Data Engineers. Since this is an introductory level tutorial, you should easily be able to complete the tasks for both roles. Of course, if you want to, you could also tag team the tutorial with a colleague in the other role. And Data Engineers, you only need to complete Lessons 1-9 and then you can skip ahead to lesson 12. 
+This tutorial combines tasks for both Data Engineers and Data Architects. Since this is an introductory-level tutorial, you should easily be able to complete the tasks for both roles. In each lesson, I call out the primary audience&mdash;Data Architects, Data Engineers, or both roles.  Because many of the lessons build on what was implemented in earlier lessons, you should move through the lessons in order. I will call out which lessons can be skipped. Of course, if you want to, you could also tag team the tutorial with a colleague in the other role.
+
+Try to stick to the names assigned to various elements in the tutorial, as they are constantly referred to by these names. However, there are a few high level containers that you may want to customize the names in case there are multiple people at your organization taking this tutorial. For example, you may want to name the product profile "Luma Tutorial Platform - Fred Bean" instead of just "Luma Tutorial Platform."
 
 If you get stuck, try re-reading the instructions first, and then use the "Log an Issue" link on the top right of each page to contact me. 
 
@@ -52,11 +54,11 @@ If you get stuck, try re-reading the instructions first, and then use the "Log a
 
 ### Sandbox environments
 
-In the tutorial, you will create a sandbox environment and use it to complete the exercises. The sandbox environment makes it safe for you to complete the exercises and experiment with Platform without being concerned about compromising your Production environment.
+In the tutorial, you will create a sandbox environment and use it to complete the exercises. The sandbox environment makes it safe for you to complete the exercises and experiment without being concerned about compromising your production Experience Platform environment.
 
 ### API
 
-Platform is built API-first. While interface workflows exist for all major Platform tasks and will be used in the majority of the exercises, this tutorial contains some API-oriented exercises. We will guide you through the basic project setup in the Adobe Developer Console and provide you with [!DNL Postman] environments and collections to get started with the API. After completing the tutorial, you may find it valuable to be familiar with the Platform API and use it in your own deployment.
+Platform is built API-first. While interface workflows exist for all major Platform tasks and will be used in the majority of the exercises, this tutorial contains some API-oriented exercises. I will guide you through the basic project setup in the Adobe Developer Console and provide you with [!DNL Postman] environments and collections to get started with the API. After completing the tutorial, you may find it valuable to be familiar with the Platform API and use it in your own deployment.
 
 ### Third-party technologies
 

@@ -103,7 +103,9 @@ Now you will add the individual permission items to the profile. From the produc
 1. Click the **[!UICONTROL Permissions]** tab
 1. Under **[!UICONTROL Sandboxes]**, add the **[!UICONTROL Prod]** sandbox to the profile. It is necessary to have access to the [!DNL Prod] sandbox in order to create other sandboxes. Once we have added the tutorial sandbox in the next lesson, we will remove the [!DNL Prod] sandbox from the product profile.
 1. Add all of the permission items for the categories highlighted in the screenshot below, by opening a category and moving the items to the right column. **[!UICONTROL Destinations]** is a capability of Real-time Customer Data Platform and permissions are not needed for this tutorial
-1. After adding all of the permission items, your screen should look like this:
+1. After adding all of the permission items, be sure to click the **[!UICONTROL Save]** button
+
+After saving, your screen should look like this:
 
     ![Click settings](assets/adminconsole-platform-enablePermissions.png)
 

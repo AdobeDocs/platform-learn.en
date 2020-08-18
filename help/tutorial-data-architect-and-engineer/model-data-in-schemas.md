@@ -126,10 +126,11 @@ Next we need to add fields that are specific to Luma's Loyalty system and which 
        1. Display name: `Level`
        1. Type : **[!UICONTROL String]**
        1. Enum: Checked, with the following enum values:
+
           | Value              |  Label    |  
           |-------------------|-----------|
           | bronze            | Bronze    | 
-          |   silver            | Silver    |  
+          | silver            | Silver    |  
           | gold              | Gold      |  
           | platinum          | Platinum  |  
 

@@ -25,6 +25,10 @@ First, watch these two short video to learn more about streaming data ingestion 
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
 
+>[!NOTE]
+>
+>While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the Adobe Mobile SDK, using [Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)
+
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
