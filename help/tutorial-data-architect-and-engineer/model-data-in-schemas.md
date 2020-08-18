@@ -126,12 +126,12 @@ Next we need to add fields that are specific to Luma's Loyalty system and which 
        1. Display name: `Level`
        1. Type : **[!UICONTROL String]**
        1. Enum: Checked, with the following enum values:
-            | Value              |  Label    |  
-            |-------------------|-----------|
-            | bronze            | Bronze    | 
-            |   silver            | Silver    |  
-            | gold              | Gold      |  
-            | platinum          | Platinum  |  
+          | Value              |  Label    |  
+          |-------------------|-----------|
+          | bronze            | Bronze    | 
+          |   silver            | Silver    |  
+          | gold              | Gold      |  
+          | platinum          | Platinum  |  
 
    
 1. Click **[!UICONTROL Save]** to save the current state of your schema, which should look like this:
@@ -189,14 +189,12 @@ First we will create the empty schema:
 
     ```json
     {
-    "type": "object",
-    "title": "Luma CRM Schema",
-    "description": "Schema for CRM data of Luma Retail ",
-    "allOf": [
-      {
+      "type": "object",
+      "title": "Luma CRM Schema",
+      "description": "Schema for CRM data of Luma Retail ",
+      "allOf": [{
         "$ref": "https://ns.adobe.com/xdm/context/profile"
-      }
-      ]
+      }]
     }
     ```
     
@@ -232,30 +230,27 @@ Now it's time to add the mixins to the schema:
 1. Open the Body tab and paste the following code and click **Send** to make the API call. This will add the three standard mixins to your `Luma CRM Schema`:
 
     ```json
-    [
-      { 
+    [{
         "op": "add",
         "path": "/allOf/-",
-        "value":  
-        {
+        "value": {
           "$ref": "https://ns.adobe.com/xdm/context/profile-personal-details"
-          }
-        },
-        { 
-          "op": "add",
-          "path": "/allOf/-",
-          "value":  
-          {
-            "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
-          }
-        },
-        { "op": "add",
-        "path": "/allOf/-",
-        "value":  
-          {
-          "$ref": "https://ns.adobe.com/xdm/context/profile-preferences-details"
-          }
         }
+      },
+      {
+        "op": "add",
+        "path": "/allOf/-",
+        "value": {
+          "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
+        }
+      },
+      {
+        "op": "add",
+        "path": "/allOf/-",
+        "value": {
+          "$ref": "https://ns.adobe.com/xdm/context/profile-preferences-details"
+        }
+      }
     ]
     ```
 
@@ -275,16 +270,14 @@ Now let's add our Identity Profile Mixin to the schema. Looking at the Body of t
 1. Open the Body tab and paste the following code, replacing the `$ref` value with the `$id` of your own `Luma Identity Profile Mixin`:
 
     ```json
-    [
-      { 
-        "op": "add",
-        "path": "/allOf/-",
-        "value":  
-        {
-          "$ref": "REPLACE_WITH_YOUR_OWN_MIXIN_ID"
-          }
-        }
-    ]```
+    [{
+      "op": "add",
+      "path": "/allOf/-",
+      "value": {
+        "$ref": "REPLACE_WITH_YOUR_OWN_MIXIN_ID"
+      }
+    }]
+    ```
 
 1. Click **Send**
   ![Adding the Identity Mixin](assets/schemas-crm-addIdentityMixin.png) 

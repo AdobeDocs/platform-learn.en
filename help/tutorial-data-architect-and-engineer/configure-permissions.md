@@ -22,10 +22,6 @@ Data Architects and Data Engineers are the power users of Adobe Experience Platf
 >[!IMPORTANT]
 >
 >A System Administrator of Adobe Experience Cloud products will need to complete some of the steps in this lesson, which we have called out in the section headings.  If you are not System Administrator, please reach out to one at your company and have them complete these tasks.
-<!--is this the only lesson in which a System Admin needs to be involved?-->
-<!--when to add Launch-->
-<!--who needs to do Developer Console-->
-<!--System Admin should add the DA/DE as Admins of the Product, not of the product profile. The user should then add the product profile. Not clear if they need access to staging or staging and prod-->
 
 ## About the Admin Console
 
@@ -41,8 +37,6 @@ Also, here is a quick summary of the roles that exist for Platform, as well as a
 * **Product Profile Admins** can edit *that specific profile's* permissions and services as well as add users, additional profile admins, and developers. Potentially a product profile admin can give themselves access to all capabilities of the product, with the exception of administering other product profiles.
 * **Product Admins** can administer *all product profiles* for that Adobe product and add new product profiles.
 * **System Administrators** can add product admins and administer essentially any permissions for all Adobe Experience Cloud products.
-
-<!--Can a Developer add an Integration to a product profile?-->
 
 ## Create an Experience Platform product profile (requires a system administrator or product admin)
 
@@ -63,7 +57,6 @@ To create the product profile:
     ![Name the profile Luma Tutorial Platform](assets/adminconsole-nameProfile.png)
 1. On the Services screen, click the "All on" checkbox to *remove* all services. The tutorial participant will reenable what is needed in a later exercise. 
     ![Disable services](assets/adminconsole-createProfile-services.png)
-    <!--Update to add one arbitrary sandbox, which is required to expose the menu options-->
 1. At this point the profile is created. Permission items will be added in a later exercise, so on the **[!UICONTROL Configure profile]** screen, just hit the **[!UICONTROL Cancel]** button.
     ![Add permissions](assets/adminconsole-configureProfileCancel.png)
 

@@ -19,10 +19,6 @@ We'll stick to the UI for this lesson, of course API option also exist for creat
 
 **Data Architects** will need to create merge policies outside of this tutorial.
 
-<!--Should this be part of Profile lesson-->
-
-<!-->[!VIDEO]()-->
-
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
