@@ -11,11 +11,13 @@ activity: implement
 
 # Configure Permissions
 
+<!--30min-->
+
 In this lesson, you will configure Adobe Experience Platform user permissions using [!DNL Adobe's Admin Console]. 
 
 Access control is a key privacy capability in Experience Platform and we recommend limiting permissions to the minimum required for people to perform their job functions. 
 
-Data Architects and Data Engineers are the power users of Adobe Experience Platform and you will need almost all permissions in order to complete this tutorial, and later in your day-to-day work. Data Architects are also likely be involved in the administration of *other Platform users* at your company such as marketers, analysts, and data scientists. As you complete this lesson, think about how you will use these features to manage these other users at your company.
+Data Architects and Data Engineers are  power users of Adobe Experience Platform and you will need almost all permissions in order to complete this tutorial, and later in your day-to-day work. Data Architects are likely be involved in the administration of *other Platform users* at their company such as marketers, analysts, and data scientists. As you complete this lesson, think about how you might use these features to manage other users at your company.
 
 **Data Architects** will need to configure permissions outside of this tutorial.
 
@@ -40,11 +42,11 @@ Also, here is a quick summary of the roles that exist for Platform, as well as a
 
 ## Create an Experience Platform product profile (requires a system administrator or product admin)
 
-In this exercise you or a System Administrator at your company will create a product profile for Adobe Experience Platform and add the tutorial participant as a product profile admin.
+In this exercise you or a System Administrator at your company will create a product profile for Adobe Experience Platform and add you as an admin for that product profile.
 
 >[!NOTE]
 >
->If you are a system administrator of Adobe products facilitating the enablement of a colleague with this tutorial, consider adding them as a *product administrator* for Adobe Experience Platform, in which case they would be able to complete these steps on their own and administrate other users of Experience Platform in the future.
+>If you are a System Administrator facilitating the enablement of a colleague, consider adding them as a *Product Administrator* for Adobe Experience Platform, in which case they would be able to complete these steps on their own and administrate other users of Experience Platform in the future.
 
 To create the product profile:
 
@@ -106,8 +108,7 @@ Now you will add the individual permission items to the profile. From the produc
 1. After adding all of the permission items, be sure to click the **[!UICONTROL Save]** button
 
 After saving, your screen should look like this:
-
-    ![Click settings](assets/adminconsole-platform-enablePermissions.png)
+![Click settings](assets/adminconsole-platform-enablePermissions.png)
 
 
 ### Add yourself as a user
@@ -130,16 +131,17 @@ In order to use the Platform API, you will need add yourself as a developer:
 
 ## Create a Launch product profile (requires a system administrator or product admin)
 
-In this exercise you or a System Administrator at your company will create a product profile for Adobe Experience Platform Launch and add the tutorial participant as a product profile admin.
+In this exercise you or a System Administrator at your company will create a product profile for Adobe Experience Platform Launch and add you as a product profile admin.
 
 >[!NOTE]
 >
->If you are a system administrator of Adobe products facilitating the enablement of a colleague with this tutorial, consider adding them as a *product administrator* for Launch, in which case they would be able to complete these steps on their own and administrate other users of Launch in the future.
+>If you are a System Administrator facilitating the enablement of a colleague with this tutorial, consider adding them as a *Product Administrator* for Launch, in which case they would be able to complete these steps on their own and administrate other users of Launch in the future.
 
 To create the product profile:
 
 1. In the [!DNL Adobe Admin Console] go to the Adobe Experience Platform Launch product
 1. Add a new profile and name it `Luma Tutorial Launch`
+1. Turn off the **[!UICONTROL Properties]** > **[!UICONTROL Auto-include]** setting
 1. Don't assign any properties or permissions at this point
 1. Add the tutorial participant as an admin of this profile
 
@@ -148,20 +150,18 @@ After completing these steps you should see that the `Luma Tutorial Launch` prof
 
 ## Configure the Launch product profile
 
-Now that you are an admin of the `Luma Tutorial Launch` product profile you can configure the permission, and roles you will need to complete the tutorial.
-
-Now you have almost all of the user roles and permissions required to complete the tutorial! There will be just one more tweak that you will need to make in the [!DNL Adobe Admin Console] after you add your sandbox in the next lesson. 
+Now that you are an admin of the `Luma Tutorial Launch` product profile you can configure the permissions and roles you will need to complete the tutorial.
 
 ### Add permissions
 
 Now you will add the individual permission items to the profile. From the product profile screen:
 
-1. In the [Adobe Admin Console](https://adminconsole.adobe.com), go to **[!UICONTROL Products]** > **[!UICONTROL Adobe Experience Platform Launch]**
+1. In the [Adobe Admin Console](https://adminconsole.adobe.com), go to **[!UICONTROL Products]** > **[!UICONTROL Adobe Experience Platform Launch]** (you might need to SHIFT-Reload to see [!UICONTROL Adobe Experience Platform Launch] show up after your permissions were just updated)
 1. Open the `Luma Tutorial Launch` profile
     ![Open Products > Adobe Experience Platform Launch > Luma Tutorial Launch](assets/adminconsole-launch-openProfile.png)
 1. Click on the Permissions tab
 1. Click to open the **[!UICONTROL Properties]** row
-1. Click the **[!UICONTROL Auto-Include]** toggle so that it is in the Off state. This should remove any properties that might already be in the profile (we will add one later).
+1. Make sure the **[!UICONTROL Auto-Include]** toggle so that it is in the Off state so that you don't have access to any properties (we will add one later).
 1. Click the **[!UICONTROL Save]** button
     ![Remove properties](assets/adminconsole-launch-removeProperties.png)
 1. Click to open the **[!UICONTROL Property Rights]** row
@@ -176,7 +176,7 @@ Now you will add the individual permission items to the profile. From the produc
 
 ### Add yourself as a user
 
-Now just like you did earlier, add yourself as a user to the Launch profile
+Now add yourself as a user to the Launch profile:
 
 1. Go to the **[!UICONTROL Users]** tab
 1. Click the **[!UICONTROL Add User]** button
@@ -185,14 +185,10 @@ Now just like you did earlier, add yourself as a user to the Launch profile
 
 You will not need to add yourself as a Developer for Launch.
 
->[!NOTE]
->
->We will mention the specific set of permissions used for each lesson at the top of the page in the pre-requisites section.
-
 ## Additional Resources
 
 * [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-console.html)
 * [Access Control documentation](https://docs.adobe.com/content/help/en/experience-platform/access-control/home.html)
 * [Access Control API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/access-control.yaml)
 
-Great! You've learned quite a bit about the Adobe Admin Console as you added your permissions and are now ready to [create a sandbox](create-a-sandbox.md)!
+Now you have almost all the permissions required to complete the tutorial! There will be just two more tweaks that you will make inside the [!DNL Adobe Admin Console], including one after you [create a sandbox](create-a-sandbox.md)!
