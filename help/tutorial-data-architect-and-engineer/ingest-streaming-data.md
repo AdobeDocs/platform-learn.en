@@ -20,7 +20,7 @@ There are two main tasks we need to complete in the Adobe Experience Platform La
 
 **Data Engineers** will need to ingest streaming data outside of this tutorial. When implementing Adobe Experience Platform's Web or Mobile SDKs, typically a web or mobile developer will be involved in the tagging and/or Launch steps.
 
-First, watch these two short video to learn more about streaming data ingestion and Web SDK:
+Before you begin the exercises, watch these two short video to learn more about streaming data ingestion and Web SDK:
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)

@@ -11,6 +11,7 @@ activity: implement
 
 # Model Data in Schemas
 
+<!-- 60min -->
 In this lesson, you will model Luma's data into schemas. This is one of the longest lessons in the tutorial, so get a glass of water and buckle up!
 
 Standardization and interoperability are key concepts behind Adobe Experience Platform. Experience Data Model (XDM), driven by Adobe, is an effort to standardize customer experience data and define schemas for customer experience management.
@@ -35,7 +36,7 @@ Key terms:
 
 **Data Architects** will need to create schemas outside of this tutorial, but **Data Engineers** will work very closely with the schemas created by the Data Architect.
 
-First, watch this short video to learn more about schemas and the Experience Data Model (XDM):
+Before you begin the exercises, watch this short video to learn more about schemas and the Experience Data Model (XDM):
 >[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
 
 ## Permissions required

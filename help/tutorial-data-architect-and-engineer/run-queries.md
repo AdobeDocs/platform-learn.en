@@ -17,7 +17,7 @@ Adobe Experience Platform Query Service helps you make sense of your data by all
 
 **Data Architects** and **Data Engineers** will need to use query service outside of this tutorial.
 
-First, watch this short video to learn more about Query Service:
+Before you begin the exercises, watch this short video to learn more about Query Service:
 >[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
 
 ## Permissions required

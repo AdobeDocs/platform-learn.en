@@ -14,16 +14,16 @@ activity: implement
 
 In this lesson, you will enable your schemas and datasets for Real-time Customer Profile. 
 
-Okay, I lied when I said the Datasets lesson was the quickest. This one should be even faster! Literally all you are going to do is flip a bunch of toggles. But what happens when you flip these toggles is really, really important so I wanted to dedicate a whole page to it.
+Okay, I lied when I said the datasets lesson was the shortest lesson in this tutorial&mdash;this one should take even less time! Literally all you are going to do is flip a bunch of toggles. But what happens when you flip these toggles is really, really important so I wanted to dedicate a whole page to it.
 
 With Real-time Customer Profile, you can see a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction. 
 
-As amazing as all that sounds, you don't need to activate *all of your data* for profile. You should  only enable the data you need for activation use cases. Data that you want to use for marketing use cases, call center integrations, etc where you need fast access to a robust customer profile should be enabled. If you are just uploading data for analysis, it might not need to be enabled for profile.
+As amazing as all that sounds, you don't need to activate *all of your data* for profile. In fact, you should only enable the data you need for activation use cases. Enable data that you want to use for marketing use cases, call center integrations, etc where you need fast access to a robust customer profile. If you are  uploading data just for analysis, it shouldn't be enabled for profile.
 <!--is this accurate. Are there other considerations to point out? -->
 
 **Data Architects** will need to enable Real-time Customer Profile outside of this tutorial.
 
-First, watch this short video to learn more about Real-time Customer Profile:
+Before you begin the exercises, watch this short video to learn more about Real-time Customer Profile:
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 
 ## Permissions required
@@ -44,19 +44,20 @@ Let's start with the simple task of enabling a schema:
 
 1. In the Platform UI, open the **Luma Loyalty Schema**
 1. In **[!UICONTROL Schema Properties]**, toggle the **Profile** switch
-1. In the confirmation modal, press the Enable button to confirm
+1. In the confirmation modal, press the **[!UICONTROL Enable]** button to confirm
+1. Click the **[!UICONTROL Save]** button to save your changes
+
     >[!IMPORTANT]
     >
-    >Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your own Production environment. You should be using a development sandbox in this tutorial and of course the entire sandbox can be deleted at any time.
-1. Click the **[!UICONTROL Save]** button to save your changes.
+    >Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial and of course the entire sandbox can be deleted at any time.
 
     ![Profile Toggle](assets/profile-loyalty-enableSchema.png)
 
 Easy right? Repeat the steps above for these other schema:
 
+1. Luma Product Catalog Schema
 1. Luma Offline Purchase Event Schema
 1. Luma Web Events Schema (on the confirmation modal, check the box "Data for this schema will contain a primary identity in the identityMap field.")
-1. Luma Product Catalog Schema
 
 ## Enable schemas for Real-time Customer Profile using Platform API 
 
@@ -84,31 +85,39 @@ Now that we have the meta:altId of the schema, we can enable it for profile:
 1. In the **Body** tab, paste the following code
 
     ```json
-    [
-        { "op": "add", "path": "/meta:immutableTags", "value": ["union"]}
-    ]
+    [{
+        "op": "add",
+        "path": "/meta:immutableTags",
+        "value": ["union"]
+    }]
     ```
 
 1. Click the **Send** button
 1. You should get a 200 response
 
-You should be able to see in the UI that all five schemas are enabled for Profile:
+You should be able to see in the UI that all five schemas are enabled for Profile (you might need to SHIFT-Reload to see that `Luma CRM Schema` is enabled):
  ![All schemas enabled](assets/profile-allSchemasEnabled.png) 
 
 
 ## Enable datasets for Real-time Customer Profile using Platform UI 
 
-1. In the Platform UI, open the **Luma Loyalty Dataset**
-1. Toggle the **Profile** switch
-1. In the confirmation modal, press the Enable button to confirm
+The datasets must be enabled for Profile, too, and the process is even simpler:
+
+1. In the Platform UI, open the `Luma Loyalty Dataset`
+1. Toggle the **[!UICONTROL Profile]** switch
+1. In the confirmation modal, press the **[!UICONTROL Enable]** button to confirm
 
     ![ Profile Toggle](assets/profile-loyalty-enableDataset.png)
 
 Repeat the steps above for these other datasets:
 
+1. Luma Product Catalog Dataset
 1. Luma Offline Purchase Event Dataset
 1. Luma Web Events Dataset
-1. Luma Product Catalog Dataset
+
+>[!NOTE]
+>
+>Unlike schemas, you can disable datasets from Profile, however all previously ingested data will remain in Profile.
 
 ## Enable datasets for Real-time Customer Profile using Platform API 
 
@@ -130,7 +139,7 @@ First we need to get the `id` of the `Luma CRM Dataset`:
 
 Now that we have the id of the dataset, we can enable it for profile:
 
-1. Open the call **[!DNL Catalog Service API > Datasets > Modify or update part of a tenant-defined schema.]**
+1. Open the call **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
 1. In the **Params** update the `DATASET_ID` value to your own
 1. In the **Body** tab, paste the following code. Note that the first two values are pre-existing tags that are visible in the previous response. They need to be included in the body, in addition to the two new tags which we are adding:
 

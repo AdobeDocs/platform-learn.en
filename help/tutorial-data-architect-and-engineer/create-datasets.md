@@ -11,13 +11,15 @@ activity: implement
 
 # Create Datasets
 
-In this lesson, you will create datasets so that you can ingest data into them later on. You will be excited to know that this is the shortest lesson in the tutorial!
+<!--10min-->
 
-All data that is successfully ingested into Adobe Experience Platform is persisted within the Data Lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
+In this lesson, you will create datasets to receive your data. You will be excited to know that this is the shortest lesson in the tutorial!
+
+All data that is successfully ingested into Adobe Experience Platform is persisted in the data lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store.
 
 **Data Architects** will need to create datasets outside of this tutorial.
 
-First, watch this short video to learn more about datasets:
+Before you begin the exercises, watch this short video to learn more about datasets:
 >[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
 
 ## Permissions required
@@ -41,26 +43,25 @@ In this exercise we will create datasets in the UI. Let's start with the loyalty
 1. On the next screen, select your `Luma Loyalty Schema` and then click the **[!UICONTROL Next]** button
     ![Select the dataset](assets/datasets-selectSchema.png)
 
-1. Name the dataset `Luma Loyalty Dataset` and then click the **[!UICONTROL Finish]** button
+1. Name the dataset `Luma Loyalty Dataset` and click the **[!UICONTROL Finish]** button
     ![Name the dataset](assets/datasets-nameDataset.png)
 1. When the dataset has saved you will be taken to a screen like this:
     ![Dataset created](assets/datasets-created.png)
 
-That's it! See, I told you this was going to be quick. Follow same steps and create datasets:
+That's it! See, I told you this was going to be quick. Follow the same steps to create these other datasets:
 
 1. `Luma Offline Purchase Event Dataset` for your `Luma Offline Purchase Event Schema`
 1. `Luma Web Events Dataset` for your `Luma Web Events Schema`
-1. `Luma Product Catalog Dataset` for your `Luma Web Events Schema`
+1. `Luma Product Catalog Dataset` for your `Luma Product Catalog Schema`
 
 
 ## Create a dataset using API
 
-Now you will create a Luma CRM Dataset using the API. I think you are catching on how these API exercises work. Basically, we do something in the UI and then do the exact same thing using the API with a [!DNL Postman] collection we've downloaded from the [Adobe Experience Platform Postman Samples
-](https://github.com/adobe/experience-platform-postman-samples). 
+Now you will create the `Luma CRM Dataset` using the API. 
 
 >[!NOTE]
 >
->If you want to just skip this exercise and create the `Luma CRM Dataset` in the UI that's fine, I won't tell anyone. :D Just name the dataset `Luma CRM Dataset` and use the `Luma CRM Schema`
+>If you want to skip the API exercise and create the `Luma CRM Dataset` in the UI that's fine, just name it `Luma CRM Dataset` and use the `Luma CRM Schema`
 
 ### Get the id of the schema to be used in the dataset
 
@@ -79,7 +80,7 @@ First we need to get the `$id` of the `Luma CRM Schema`:
 
 Now you can create the dataset:
 
-1. Download [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) to your `Luma Tutorial Assets` folder (The Dataset Service API collection is for managing data usage labels on existing datasets)
+1. Download [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) to your `Luma Tutorial Assets` folder. (The `Dataset Service API` collection is for managing data usage labels on existing datasets)
 1. Import the collection into [!DNL Postman]
 1. Select the request **[!DNL Catalog Service API > Datasets > Create a new dataset.]**
 1. Paste the following as the **Body** of the request, ***replacing the id value with your own***:

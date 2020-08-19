@@ -19,7 +19,7 @@ Sandboxes provide isolated environments where you can try out functionality with
 
 **Data Architects** and **Data Engineers** will need to create sandboxes outside of this tutorial.
 
-First, watch this short video to learn more about sandboxes:
+Before you begin the exercises, watch this short video to learn more about sandboxes:
 >[!VIDEO](https://video.tv.adobe.com/v/29838/?quality=12&learn=on)
 
 ## Permissions required

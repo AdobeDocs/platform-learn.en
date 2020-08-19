@@ -15,7 +15,7 @@ In this lesson you will apply the data governance framework to the data you've i
 
 Adobe Experience Platform Data Governance allows you to manage customer data and ensure compliance with regulations, restrictions, and policies applicable to data use. It plays a key role within Experience Platform at various levels, including cataloging, data lineage, data usage labeling, data usage policies, and controlling usage of data for marketing actions.
 
-First, watch these short videos about data governance:
+Before you begin the exercises, watch these short videos about data governance:
 >[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)

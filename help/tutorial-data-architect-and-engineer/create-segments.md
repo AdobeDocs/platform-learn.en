@@ -17,7 +17,7 @@ Once you have Real-time Customer Profiles, you can create segments and audiences
 
 **Data Architects** will need to create segments outside of this tutorial.
 
-First, watch this short video to learn more about creating segments:
+Before you begin the exercises, watch this short video to learn more about creating segments:
 >[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
 
 ## Permissions required
