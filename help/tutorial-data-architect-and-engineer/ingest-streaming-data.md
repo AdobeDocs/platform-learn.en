@@ -27,11 +27,11 @@ First, watch these two short video to learn more about streaming data ingestion 
 
 >[!NOTE]
 >
->While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the Adobe Mobile SDK, using [Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect)
+>While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the Adobe Mobile SDK, using [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect), and any 
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
 
 * Permission items **[!UICONTROL Launch]** > **[!UICONTROL Property Rights]** > **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Publish]**
 * Permission item **[!UICONTROL Launch]** > **[!UICONTROL Company Rights]** > **[!UICONTROL Manage Properties]**

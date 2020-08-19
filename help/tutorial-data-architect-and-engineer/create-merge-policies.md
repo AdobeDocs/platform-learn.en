@@ -21,7 +21,7 @@ We'll stick to the UI for this lesson, of course API option also exist for creat
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
 
 
 * Permission item **[!UICONTROL Profiles]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**

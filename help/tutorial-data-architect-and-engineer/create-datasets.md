@@ -22,7 +22,7 @@ First, watch this short video to learn more about datasets:
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
 
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
@@ -81,7 +81,7 @@ Now you can create the dataset:
 
 1. Download [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) to your `Luma Tutorial Assets` folder (The Dataset Service API collection is for managing data usage labels on existing datasets)
 1. Import the collection into [!DNL Postman]
-1. Select the request **[!DNL Identity Service > Create a new identity namespace. > IMS: JWT Generate + Auth via User Token]**
+1. Select the request **[!DNL Catalog Service API > Datasets > Create a new dataset.]**
 1. Paste the following as the **Body** of the request, ***replacing the id value with your own***:
 
     ```json
@@ -89,7 +89,7 @@ Now you can create the dataset:
         "name": "Luma CRM Dataset",
 
         "schemaRef": {
-            "id": "https://ns.adobe.com/wwfovlab011/schemas/82c25e828b29cd1a1b092c641ee4cfeb0202ee1a06ee1e10",
+            "id": "REPLACE_WITH_YOUR_OWN_ID",
             "contentType": "application/vnd.adobe.xed-full+json;version=1"
         },
         "fileDescription": {
