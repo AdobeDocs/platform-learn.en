@@ -11,9 +11,11 @@ activity: implement
 
 # Set up Developer Console and [!DNL Postman]
 
-In this lesson, you will set up a project in the Adobe Developer Console and provide you with [!DNL Postman] Collections so you can start using Platform APIs.
+<!--30min-->
 
-In order to complete these exercises successfully, get the Postman app for your operating system. Postman basic is free with account creation. While not required in order to use Experience Platform APIs in general, Postman makes API workflows easier, and Adobe Experience Platform provides dozens of Postman collections to help execute its APIs and learn how they operate. The rest of this tutorial assumes working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.getpostman.com/).
+In this lesson, you will set up a project in the Adobe Developer Console and download [!DNL Postman] collections so you can start using Platform APIs.
+
+In order to complete the API exercises in this tutorial, [download the Postman app for your operating system.](https://www.postman.com/downloads/) While not required in order to use Experience Platform APIs, Postman makes API workflows easier, and Adobe Experience Platform provides dozens of Postman collections to help you execute API calls and learn how they operate. The rest of this tutorial assumes some working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.getpostman.com/).
 
 Platform is built API-first. While interface options also exist for all major tasks, you will likely want to use the Platform API at some point. For example to ingest data, move items around between sandboxes, automate routine tasks or to use new Platform features before the UI has been built.
 
@@ -24,7 +26,7 @@ Platform is built API-first. While interface options also exist for all major ta
 In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 * Permission item Sandboxes > `Luma Tutorial`
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+* Developer-role access to the `Luma Tutorial Platform` product profile
 
 ## Set up Adobe Developer Console
  
@@ -53,7 +55,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
    
    ![Adobe Developer Console Project API Config](assets/adobeio-keypair.png)
 
-1. Once the keys are ready, it will prompt you to download the keys onto your local machine. Save the keys packaged in `config.zip` to the folder `Luma Tutorial Assets`. We will need them in the next exercise.
+1. Once the keys are ready, you may be prompted to download the keys onto your local machine. Save the keys packaged in `config.zip` to the folder `Luma Tutorial Assets`. We will need them in the next exercise.
 
    
 1.  After the key is generated, the public key will automatically be added to your project as shown in the screenshot. Click the **[!UICONTROL Next]** button.
@@ -66,18 +68,20 @@ In the [Configure Permissions](configure-permissions.md) lesson, you setup all t
 
 1. Now your Developer Console project has been created!
 
-1. In **[!UICONTROL Try it out]** section of the page , Click **[!UICONTROL Download for Postman]** and then click **[!UICONTROL Service Account (JWT)]** to download the [!DNL Postman] environment json file. Save the `service.postman_environment.json` in your `Luma Tutorial Assets` folder.
+1. In the **[!UICONTROL Try it out]** section of the page, click **[!UICONTROL Download for Postman]** and then click **[!UICONTROL Service Account (JWT)]** to download the [!DNL Postman] environment json file. Save the `service.postman_environment.json` in your `Luma Tutorial Assets` folder.
 
 
     ![Adobe Developer Console Project API Config](assets/adobeio-io-api.png)
 
-1. System Administrators of your organization would be able to see the project as an "Integration" in the product profile in the Admin Console
+    >[!NOTE]
+    >
+    >System Administrators of your organization would be able to see the project as an "Integration" in the product profile in the Admin Console
+    >
+    >![Adobe Developer Console Project API Config](assets/adobeio-io-integrationInAdminConsole.png)
 
-    ![Adobe Developer Console Project API Config](assets/adobeio-io-integrationInAdminConsole.png)
+You might have noticed that the project was assigned a number, e.g. "Project 12":
 
-You might have noticed that the project was assigned a number:
-
-1. Click on the Project number in the breadcrumb
+1. Click on the project number in the breadcrumb
 1. Click the **[!UICONTROL Edit Project]** button
 1. Change the **[!UICONTROL Project Title]** to `Luma Tutorial API Project`
 1. Click the **[!UICONTROL Save]** button
@@ -87,7 +91,7 @@ You might have noticed that the project was assigned a number:
 
 ## Set up Postman
 
-1. Download and install [!DNL Postman](https://www.postman.com/)
+1. Download and install [!DNL Postman](https://www.postman.com/downloads/)
 1. Open [!DNL Postman] and import the downloaded json environment file, `service.postman_environment.json`
    ![Adobe Developer Console Import environment](assets/postman-importEnvironment.png)
 1. In [!DNL Postman], select your environment in the top-right dropdown and click the **eye** icon to view the environment variables. You should see that the ACCESS_TOKEN, PRIVATE_KEY, and JWT_TOKEN variables are blank:
@@ -96,7 +100,7 @@ You might have noticed that the project was assigned a number:
 
 ### Update the Environment Name
 
-Since the exported name of the environments from Developer Console is randomly generated, let's quickly give it a more descriptive name so you don't confuse environments later on when you start working on your real Platform implementation
+Since the exported name of the environment from Developer Console is randomly generated, let's quickly give it a more descriptive name so you don't confuse environments later on when you start working on your real Platform implementation
 
 1. With the environment variables screen still open, click the **Edit** on the top-right
 1. Update the **Environment Name** to `Luma Tutorial`
@@ -112,8 +116,8 @@ Now it's time to add the PRIVATE_KEY value to the Postman environment
    * `private.key`
    * `certificate_pub.crt`
 1. Open the `private.key` file in a text editor and copy all the content available.
-1. In Postman, on the **Manage Environments** > **Edit** modal which is still open from the last step, paste copied values in front of **PRIVATE_KEY** in the **Initial Value** and **Current Value** columns.
-
+1. In Postman, on the **Manage Environments** > **Edit** modal which is still open from the last exercise, paste copied values in front of **PRIVATE_KEY** in the **Initial Value** and **Current Value** columns.
+1. Click the **Update** button to save your PRIVATE_KEY and the updated environment name.
     ![Private Key pasted into Postman](assets/postman-privateKey.png)
     
 ### Add the JWT and Access Tokens
@@ -130,31 +134,11 @@ To generate the tokens:
 
 1. Download the [Developer Console Access Token Generation collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/ims/Adobe%20IO%20Access%20Token%20Generation.postman_collection.json) to your `Luma Tutorial Assets` folder
 1. Import the collection into [!DNL Postman]
-1. Select Request **IMS: JWT Generate + Auth via User Token** and click **Send**
+1. Select the request **IMS: JWT Generate + Auth via User Token** and click **Send**
     ![Request the tokens](assets/postman-requestToken.png)
 1. The **JWT_TOKEN** and **ACCESS_TOKEN** will auto-populate in the environment variables of [!DNL Postman].
 
     ![Postman](assets/postman-config.png)
-
-
-
-<!--do i even need this section or does the Postman Collection do this?
-1.  Go to Developer Console Project, Select **[!UICONTROL Service Account(JWT)]** and select tab **[!UICONTROL Generate JWT]**
-1. Paste private key in textbox and click **[!UICONTROL Generate JWT Token]** to generate JWT Token
-
-    ![Adobe Developer Console Project API Config](assets/postman-generateJWT.png)
-
-1.  Click the **[!UICONTROL Generate Token]** button, and the output will appear in the  **[!UICONTROL Generated JWT]** textbox. 
-
-    ![Adobe Developer Console Project API Config](assets/postman-jwt.png)
-
-1.  Copy the generated JWT Token and paste it into the Postman Environment Variables in front of JWT_TOKEN in **INITIAL VALUE** and **CURRENT VALUE** columns.
-
-1. Click the **Update** button to save the changes to your Postman environment details.
-   
-    ![Postman](assets/postman-config.png)[Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples)
--->
-
 
 ### Add the Sandbox Name and Tenant ID
 
@@ -162,22 +146,21 @@ The `SANDBOX_NAME` and `TENANT_ID` and `CONTAINER_ID` variables are not provided
 
 1. In [!DNL Postman], open the **Environment Variables** modal
 1. Click the **Edit** link to the right of the environment name
-1. Enter `SANDBOX_NAME` in the **Add new variable field**
-1. Enter `luma-tutorial` into both value fields (the name we gave to our sandbox in the previous lesson)
-1. Switch to your web browser and look up your company's tenant id by going to Experience Platform's interface and extracting the portion of the URL *after the @ sign*. For example, my Tenant Id is `techmarketingdemos` but yours will be something different:
+1. In the **Add new variable field**, enter `SANDBOX_NAME` 
+1. Into both value fields, enter `luma-tutorial`, the name we gave to our sandbox in the previous lesson. If you used a different name for your sandbox, eg. luma-tutorial-ignatiusjreilly, make sure to use that value.
+1. In the **Add new variable field**, enter `TENANT_ID`
+1. Switch to your web browser and look up your company's tenant id by going to Experience Platform's interface and extracting the portion of the URL *after the @ sign*. For example, my tenant id is `techmarketingdemos` but yours will be something different:
 
     ![Obtaining the tenant id from the Platform interface URL](assets/postman-getTenantId.png)
 
 1. Copy this value and return to the [!DNL Postman] Manage Environments screen
-1. Enter `TENANT_ID` in the **Add new variable field**
-1. Paste your Tenant Id into both value fields
-1. Enter `CONTAINER_ID` in the **Add new variable field**
+1. Paste your tenant id into both value fields
+1. In the **Add new variable field**, enter `CONTAINER_ID`
+1. Enter `global` into both value fields
 
     >[!NOTE]
     >
-    >`CONTAINER_ID` is a field whose value we will change several times during the tutorial. When `global` is used the API will interact with out-of-the-box, Adobe-provided elements in your Platform account. When working with your own custom elements, you will change this value to `tenant`.
-
-1. Enter `global` into both value fields
+    >`CONTAINER_ID` is a field whose value we will change several times during the tutorial. When `global` is used the API will interact with Adobe-provided elements in your Platform account. When `tenant` is used, the API will interact with your own custom elements.
 
 1. Click the **Update** button to save the variables
 
@@ -206,7 +189,7 @@ Hopefully you got a successful `200 OK` response containing a list of the availa
 
 ![First API call in Postman](assets/postman-firstAPICall.png)
 
-If your call was not successful, take a moment to debug using the error response details of the API call and review the steps above. If you get really stuck, please request help in the Community Forum or use the link in the right side of this page to "Log an issue".
+If your call was not successful, take a moment to debug using the error response details of the API call and review the steps above. If you get really stuck, please request help in the [Community Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community) or use the link in the right side of this page to "Log an issue".
 
 ## Additional Resources
 
@@ -214,4 +197,4 @@ If your call was not successful, take a moment to debug using the error response
 * [Postman website](https://www.postman.com/)
 * [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples)
 
-Now you have your Platform account and [!DNL Postman] ready to get into the heart of the tutorial! Next, let's get to a data architect task and [model data in schemas](model-data-in-schemas.md)!
+With your Platform permissions, sandbox, and [!DNL Postman] set up, you are ready to [model data in schemas](model-data-in-schemas.md)!

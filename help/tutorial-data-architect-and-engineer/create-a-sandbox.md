@@ -11,7 +11,9 @@ activity: implement
 
 # Create a sandbox
 
-In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.
+<!--25min-->
+
+In this lesson, you will create a development environment sandbox that you will use for the rest of the tutorial.
 
 Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
@@ -41,21 +43,21 @@ Let's create a sandbox:
 1. Log into the [Adobe Experience Platform](https://experience.adobe.com/platform) interface
 1. Click **[!UICONTROL Sandboxes]** in the left navigation
 1. Click **[!UICONTROL Create sandbox]** on the top right
-   ![](assets/sandbox-createSandbox.png)
+   ![Click Create sandbox](assets/sandbox-createSandbox.png)
 
 1. Name your sandbox `luma-tutorial` 
 1. Title your tutorial `Luma Tutorial`
 1. Click the **[!UICONTROL Create]** button
-   ![](assets/sandbox-nameSandbox.png)
+   ![Create your sandbox](assets/sandbox-nameSandbox.png)
    >[!NOTE]
    >
-   >While you could use any arbitrary values for your sandbox name and title, sticking to the values suggested is recommended as we will refer to these labels throughout the tutorial
+   >While you could use any arbitrary values for your sandbox name and title, sticking to the values suggested is recommended as we will refer to these labels throughout the tutorial. If there are multiple people at your organization completing this tutorial, consider adding your name at the end of the sandbox title and name, e.g. luma-tutorial-ignatiusjreilly.
 
 Sandboxes take approximately fifteen minutes to create and a "[!UICONTROL Creating]" status will display during this time:
-   ![](assets/sandbox-creating.png)
+   ![Creating status](assets/sandbox-creating.png)
 
 When the sandbox is fully created it show as "[!UICONTROL Active]":
-   ![](assets/sandbox-active.png)
+   ![Active status](assets/sandbox-active.png)
 
 Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next exercise.
 
@@ -75,8 +77,8 @@ Once the sandbox is active, you need to include it in your product profile in or
 
     ![Click Edit](assets/sandbox-selectSandboxes.png)
 
-1. Click the **[!UICONTROL +]** icon to add the new sandbox to the right hand column
-1. Remove the [!UICONTROL Prod] sandbox you assigned to the profile originally
+1. _Remove_ the **[!UICONTROL Prod]** sandbox you assigned to the profile originally
+1. Click the **[!UICONTROL +]** icon to add the new `Luma Tutorial` sandbox to the right hand column
 1. Click **[!UICONTROL Save]** to save the updated permissions  
 
     ![Move the Sandbox to the other column](assets/sandbox-addLumaTutorial.png)

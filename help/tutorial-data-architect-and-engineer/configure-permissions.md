@@ -110,6 +110,9 @@ Now you will add the individual permission items to the profile. From the produc
 After saving, your screen should look like this:
 ![Click settings](assets/adminconsole-platform-enablePermissions.png)
 
+>[!IMPORTANT]
+>
+>The sandbox feature is currently in Beta. If you do not see permission categories **[!UICONTROL Sandboxes]** or **[!UICONTROL Sandbox Administration]**, please reach out to your Adobe representative for early access.
 
 ### Add yourself as a user
 
