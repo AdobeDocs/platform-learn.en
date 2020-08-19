@@ -15,10 +15,11 @@ In this lesson, you will ingest batch data into Experience Platform using a vari
 
 Batch data ingestion allows you to ingest a large amount of data into Adobe Experience Platform at once. You can ingest batch data in a one time upload within Platform's interface or using the API. You can also configure regularly scheduled batch uploads from third-party services such as cloud storage services using Source connectors.
 
+**Data Engineers** will need to ingest batch data outside of this tutorial.
+
 Before you begin the exercises, watch this short video to learn more about data ingestion:
 >[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
 
-**Data Engineers** will need to ingest batch data outside of this tutorial.
 
 ## Permissions required
 
@@ -31,7 +32,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
-**Additionally you need access to an (S)FTP server or cloud storage solution for the Source exercise.**
+**Additionally you need access to an (S)FTP server or cloud storage solution for the Sources exercise.**
 
 ## Ingest data in batches with Platform UI
 
@@ -41,8 +42,11 @@ Data can be uploaded directly into a dataset on the datasets screen in JSON and 
 
 First, get the sample data and customize it for your tenant:
 
-1. Download [luma-loyalty.json](assets/luma-loyalty.json) file to your **Luma Tutorial Assets** folder.
-1. Open the file in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant value as seen in your own schemas
+1. Download [luma-data.zip](assets/luma-data.zip) to your **Luma Tutorial Assets** folder.
+1. Unzip the file, to create a folder called `luma-data` which contains the four data files we will use in this lesson
+1. Open `luma-loyalty.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your own schemas:
+    ![Underscore tenant id](assets/ingestion-underscoreTenant.png)
+    
 1. Save the updated file
 
 ### Ingest the data
@@ -102,8 +106,8 @@ Now we will upload data using the API.
 
 ### Download and prep the data
 
-1. Download [luma-crm.json](assets/luma-crm.json) into your `Luma Tutorial Assets` folder.
-1. Open the file in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant value as seen in your own schemas
+1. You should have already downloaded and unzipped [luma-data.zip](assets/luma-data.zip) into your `Luma Tutorial Assets` folder.
+1. Open `luma-crm.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your schemas
 1. Save the updated file
 
 ### Get the dataset id
@@ -209,10 +213,8 @@ Let's look at another way of uploading data. The workflows feature allows you to
 
 ### Download and prep the data
 
-1. Download [luma-products.csv](assets/luma-products.csv) into your `Luma Tutorial Assets` folder.
-
-1. Open the file in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant value as seen in your own schemas
-1. Save the updated file
+1. You should have already downloaded and unzipped [luma-data.zip](assets/luma-data.zip) into your `Luma Tutorial Assets` folder.
+1. Confirm that you have`luma-products.csv`
 
 ### Create a workflow
 
@@ -263,8 +265,8 @@ So let's get started.
 
 ### Download, prep, and upload the data to your preferred cloud storage vendor
 
-1. Download [luma-offline-purchases.json](assets/luma-offline-purchases.json) into your `Luma Tutorial Assets` folder.
-1. Open the file in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant value as seen in your own schemas
+1. You should have already downloaded and unzipped [luma-data.zip](assets/luma-data.zip) into your `Luma Tutorial Assets` folder.
+1. Open `luma-offline-purchases.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your schemas
 1. Choose your preferred cloud storage provider, making sure it is available in the [!UICONTROL Sources] catalog
 1. Upload `luma-offline-purchases.json` to a location in your preferred cloud storage provider
 
