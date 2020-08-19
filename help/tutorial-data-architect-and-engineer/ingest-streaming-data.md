@@ -20,7 +20,7 @@ There are two main tasks we need to complete in the Adobe Experience Platform La
 
 **Data Engineers** will need to ingest streaming data outside of this tutorial. When implementing Adobe Experience Platform's Web or Mobile SDKs, typically a web or mobile developer will be involved in the tagging and/or Launch steps.
 
-Before you begin the exercises, watch these two short video to learn more about streaming data ingestion and Web SDK:
+First, watch these two short video to learn more about streaming data ingestion and Web SDK:
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -31,7 +31,7 @@ Before you begin the exercises, watch these two short video to learn more about 
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you setup all the access controls you need to complete this lesson, specifically:
 
 * Permission items **[!UICONTROL Launch]** > **[!UICONTROL Property Rights]** > **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Publish]**
 * Permission item **[!UICONTROL Launch]** > **[!UICONTROL Company Rights]** > **[!UICONTROL Manage Properties]**
@@ -428,9 +428,6 @@ Great job! That was a lot of information about Web SDK and Launch. There is a lo
 >
 >Now that you are done with the Streaming Ingestion lesson, you can remove the [!UICONTROL Prod] sandbox from your `Luma Tutorial Platform` product profile
 
->[!TIP]
->
->Data Engineers&mdash;.
 
 Data Engineers, if you like you can skip ahead a few lessons to the [query service lesson](run-queries.md)
 

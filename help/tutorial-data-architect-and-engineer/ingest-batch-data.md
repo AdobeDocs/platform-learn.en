@@ -63,14 +63,14 @@ First, get the sample data and customize it for your tenant:
 
 ### Validate the data
 
-There are a few ways to confirm the data landed.
+There are a few ways to confirm the data was successfully ingested.
 
 #### Validate in the Platform UI
 
-To confirm the data landed in the dataset:
+To confirm the data was ingested into the dataset:
 
-1. On the same page where you have uploaded the data, click the **[!UICONTROL Preview dataset]** button on top-right
-1. Click **Preview** button and you should be able to see all the uploaded data in dataset.
+1. On the same page where you have ingested the data, click the **[!UICONTROL Preview dataset]** button on top-right
+1. Click **Preview** button and you should be able to see some of the ingested data.
 
     ![Preview the successful dataset](assets/ingestion-loyalty-preview.png)
 
@@ -86,7 +86,7 @@ To confirm the data landed in Profile:
 
 #### Validate with data ingestion events
 
-If you subscribed to data ingestion events in the previous lesson, check your unique webhook.site URL. You should see three requests come in, with `ps_load_success` usually arriving a few minutes after the first two.
+If you subscribed to data ingestion events in the previous lesson, check your unique webhook.site URL. You should see three requests show up in the following order, with some time in between them, with the following `eventCode` values:
 
 1. `ing_load_success`&mdash;the batch as ingested
 1. `ig_load_success`&mdash;the batch was ingested into identity graph
@@ -102,7 +102,7 @@ Now we will upload data using the API.
 
 >[!NOTE]
 >
->Data architects, feel free to just upload the CRM data via the UI method you just used, if you'd like.
+>Data architects, feel free to just upload the CRM data via the UI method you just used.
 
 ### Download and prep the data
 
@@ -133,7 +133,7 @@ Now we can create a batch in the dataset:
 
     ```json
     {
-        "datasetId":"5f2db919136181194bcd821d",
+        "datasetId":"REPLACE_WITH_YOUR_OWN_DATASETID",
         "inputFormat": {
             "format": "json"
         }
@@ -147,7 +147,7 @@ Now we can create a batch in the dataset:
    
 ### Ingest the data
 
-Finally we upload the data into the batch
+Now we can upload the data into the batch:
     
 1. Select the request **[!DNL Data Ingestion API > Batch Ingestion > Upload a file to a dataset in a batch.]**
 1. In the **Params** tab, enter your dataset id and batch id into their respective fields
@@ -158,7 +158,7 @@ Finally we upload the data into the batch
 
     ![Data uploaded](assets/ingestion-crm-uploadFile.png)
 
-At this point, if you look at your batch in the Platform UI, you will see that it is still in a loading status:
+At this point, if you look at your batch in the Platform UI, you will see that it is in a "[!UICONTROL Loading]" status:
 ![Batch loading](assets/ingestion-crm-loading.png)
 
 Because the Batch API is often used to upload multiple files, you need need to tell Platform when a batch is complete, which we will do in the next step.
@@ -170,7 +170,7 @@ To complete the batch:
 1. Select the request **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]**
 1. In the **Params** tab, enter `COMPLETE` as the **action**
 1. In the **Params** tab, enter your batch id. Do not worry about dataset id or filePath, if they are present.
-1. Update the URL of the POST remove the dataset id or filePath placeholders, if they are present
+1. Make sure the URL of the POST is `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` and that there aren't any unnecessary references to the `datasetId` or `filePath`
 1. Click **Send** and you should get a 200 OK response with '1' in the response body
 
     ![Batch complete](assets/ingestion-crm-complete.png)
@@ -237,6 +237,8 @@ When the batch has uploaded, verify the upload by previewing the dataset.
 
 Since the `Luma Product SKU` is a non-people namespace, we won't see any profiles for our product skus.
 
+You should see the three hits to your webhook.
+
 ## Ingest data with Sources
 
 Okay, you did things the hard way. Now let's move into the promised land of _automated_ batch ingestion! When I say, "SET IT!" you say, "FORGET IT!" "SET IT!" "FORGET IT!" "SET IT!" "FORGET IT!" Just kidding, you would never do such a thing! Ok, back to work. You're almost done.
@@ -247,7 +249,7 @@ Click on **[!UICONTROL Sources]** in the left navigation to open the Sources cat
 
 Okay, let's ingest data using a source connector.
 
-This exercise will be choose-your-own-adventure style. I am going to show the workflow  using the FTP source connector. You can either use a different Cloud Storage source connector that you use at your company, or just upload the json file in the dataset like we did with the loyalty data.
+This exercise will be choose-your-own-adventure style. I am going to show the workflow  using the FTP source connector. You can either use a different Cloud Storage source connector that you use at your company, or just upload the json file using the dataset UI like we did with the loyalty data.
 
 Many of the Sources have a similar configuration workflow, in which you:
 
@@ -260,8 +262,6 @@ Many of the Sources have a similar configuration workflow, in which you:
 >[!NOTE]
 >
 >The Offline Purchase data we will be using in this exercise contains datetime data. Datetime data should be in either [ISO 8061 formatted strings](https://www.iso.org/iso-8601-date-and-time-format.html) ("2018-07-10T15:05:59.000-08:00") or Unix Time formatted in milliseconds (1531263959000) and are converted at ingestion time to the target XDM type. For more on data conversion and other constraints, see [the Batch Ingestion API documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/batch/api-overview.html#types).
-
-So let's get started.
 
 ### Download, prep, and upload the data to your preferred cloud storage vendor
 
@@ -279,9 +279,12 @@ So let's get started.
 1. **[!UICONTROL Authentication]** is the first step. Enter the name for your account, e.g. `Luma's FTP Account` and your authentication details. This step should be fairly similar for all cloud storage sources, although the fields may vary slightly. Once you've entered the authentication details for an account, you can reuse them for other source connections that might be sending different data on different schedules from other files in the same account:
     ![Authenticate to the source](assets/ingestion-offline-authentication.png)
 
->[!NOTE]
->
->Waiting for bug fix before completing this exercise
+1. On the **[!UICONTROL Select data]** step, the UI will:
+    ![Select your dataset](assets/ingestion-offline-mapping.png)
+
+1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Event Dataset` and click the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
+    ![Select your dataset](assets/ingestion-offline-mapping.png)
+
 
 ## Additional Resources
 
