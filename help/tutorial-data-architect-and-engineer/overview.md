@@ -11,6 +11,8 @@ activity: implement
 
 # Overview
 
+<!--5min-->
+
 _Getting Started with Adobe Experience Platform for Data Architects and Data Engineers_ is the perfect starting point for Data Architects and Data Engineers to get hands-on with Experience Platform.
 
 
