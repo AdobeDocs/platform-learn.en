@@ -11,7 +11,7 @@ activity: implement
 
 # Enable Real-time Customer Profiles
 
-
+<!-- 15min--> 
 In this lesson, you will enable your schemas and datasets for Real-time Customer Profile. 
 
 Okay, I lied when I said the datasets lesson was the shortest lesson in this tutorial&mdash;this one should take even less time! Literally all you are going to do is flip a bunch of toggles. But what happens when you flip these toggles is really, really important so I wanted to dedicate a whole page to it.

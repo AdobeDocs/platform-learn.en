@@ -11,6 +11,8 @@ activity: implement
 
 # Subscribe to data ingestion events
 
+<!--25min-->
+
 In this lesson, you will subscribe to data ingestion events by setting up a webhook with the Adobe Developer Console and an online webhook development tool. You will use these events to monitor the status of your data ingestion jobs in the subsequent lessons.
 
 **Data Engineers** will want to subscribe to data ingestion events outside of this tutorial.
@@ -35,7 +37,7 @@ In this exercise we will create a webhook using an online tool called webhook.si
    
     ![Webhook.site](assets/ioevents-webhook-home.png)
 1. Click the **Edit** button in the top navigation
-1. As the Response body, enter `$request.query.challenge`. The Adobe I/O Events notifications we will set up later in this lesson send a challenge to the webhook, and requires that it be included in the response body.
+1. As the Response body, enter `$request.query.challenge$`. The Adobe I/O Events notifications we will set up later in this lesson send a challenge to the webhook, and requires that it be included in the response body.
 1. Click the **Save** button
 
     ![Edit the response](assets/ioevents-webhook-editResponse.png)
@@ -51,7 +53,7 @@ In this exercise we will create a webhook using an online tool called webhook.si
 1. Click to select **[!UICONTROL Platform notifications]**
 1. Click the **[!UICONTROL Next]** button
     ![Add the notifications](assets/ioevents-addNotifications.png)
-1. Click to select all of the subscriptions
+1. Click to select all of the events
 1. Click the **[!UICONTROL Next]** button
     ![Select the subscriptions](assets/ioevents-addSubscriptions.png)
 1. On the next screen for configuring credentials, just click the **[!UICONTROL Next]** button again
