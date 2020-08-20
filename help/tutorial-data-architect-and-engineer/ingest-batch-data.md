@@ -291,6 +291,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 1. On the **[!UICONTROL Select data]** step, the UI will use your credentials to open the folder on your cloud storage solution
 1. Select the file(s) you would like to ingest, e.g. `luma-offline-purchases.json`
 1. As the **[!UICONTROL Data format]**, select `XDM JSON`
+1. You can then preview the json structure and sample data in your file
 1. Click the **[!UICONTROL Next]** button
     ![Select your data file(s)](assets/ingestion-offline-selectData.png)
 

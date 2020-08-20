@@ -83,7 +83,7 @@ You might have noticed that the project was assigned a number, e.g. "Project 12"
 
 1. Click on the project number in the breadcrumb
 1. Click the **[!UICONTROL Edit Project]** button
-1. Change the **[!UICONTROL Project Title]** to `Luma Tutorial API Project`
+1. Change the **[!UICONTROL Project Title]** to `Luma Tutorial API Project` (add your name to the end, if multiple people from your company are taking this tutorial)
 1. Click the **[!UICONTROL Save]** button
 
     ![Adobe Developer Console Project API Config](assets/adobeio-renameProject.png)

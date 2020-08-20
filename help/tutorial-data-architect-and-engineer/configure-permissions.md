@@ -55,7 +55,7 @@ To create the product profile:
 1. Click **[!UICONTROL Adobe Experience Platform]** on the left navigation
 1. You probably already have several profiles in your Experience Platform instance. Click the **[!UICONTROL New Profile]** button to add another
     ![Click Add New Profile](assets/adminconsole-newProfile.png)
-1. Name the profile `Luma Tutorial Platform` and click the **[!UICONTROL Next]** button
+1. Name the profile `Luma Tutorial Platform` (add the tutorial taker's name to the end, if multiple people from your company are taking this tutorial) and click the **[!UICONTROL Next]** button
     ![Name the profile Luma Tutorial Platform](assets/adminconsole-nameProfile.png)
 1. On the Services screen, click the "All on" checkbox to *remove* all services. The tutorial participant will reenable what is needed in a later exercise. 
     ![Disable services](assets/adminconsole-createProfile-services.png)
@@ -143,7 +143,7 @@ In this exercise you or a System Administrator at your company will create a pro
 To create the product profile:
 
 1. In the [!DNL Adobe Admin Console] go to the Adobe Experience Platform Launch product
-1. Add a new profile and name it `Luma Tutorial Launch`
+1. Add a new profile and name it `Luma Tutorial Launch` (add the tutorial taker's name to the end, if multiple people from your company are taking this tutorial)
 1. Turn off the **[!UICONTROL Properties]** > **[!UICONTROL Auto-include]** setting
 1. Don't assign any properties or permissions at this point
 1. Add the tutorial participant as an admin of this profile
