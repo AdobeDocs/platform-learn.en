@@ -61,6 +61,13 @@ First, get the sample data and customize it for your tenant:
     ![Ingestion](assets/ingestion-loyalty-uploadJson.png)
 <!--do i need to explain error diagnostics and partial ingestion-->
 
+>[!NOTE]
+>
+>There are a few options, **[!UICONTROL Error diagnostics]** and **[!UICONTROL Partial ingestion]** that you will see on various screens in this lesson. These options aren't covered in the tutorial. Some quick info:
+>
+>* Enabling error diagnostics generates data about the ingestion of your data, which you can then review using the Data Access API. Learn more about it in [the documentation](https://docs.adobe.com/content/help/en/experience-platform/data-access/home.html).
+>* Partial ingestion allows you to ingest data containing errors, up to a certain threshold which you can specify. Learn more about it in [the documentation](https://docs.adobe.com/help/en/experience-platform/ingestion/batch/partial.html)
+
 ### Validate the data
 
 There are a few ways to confirm the data was successfully ingested.
@@ -276,15 +283,44 @@ Many of the Sources have a similar configuration workflow, in which you:
 1. Note there are convenient links to documentation under the `...`
 1. In the box of your preferred Cloud storage vendor, click the **[!UICONTROL Configure]** button 
     ![Click configure](assets/ingestion-offline-selectFTP.png)
-1. **[!UICONTROL Authentication]** is the first step. Enter the name for your account, e.g. `Luma's FTP Account` and your authentication details. This step should be fairly similar for all cloud storage sources, although the fields may vary slightly. Once you've entered the authentication details for an account, you can reuse them for other source connections that might be sending different data on different schedules from other files in the same account:
+1. **[!UICONTROL Authentication]** is the first step. Enter the name for your account, e.g. `Luma's FTP Account` and your authentication details. This step should be fairly similar for all cloud storage sources, although the fields may vary slightly. Once you've entered the authentication details for an account, you can reuse them for other source connections that might be sending different data on different schedules from other files in the same account
+1. Click the **[!UICONTROL Connect to source button]**
+1. When Platform has successfully connected to the Source, click the **[!UICONTROL Next]** button
     ![Authenticate to the source](assets/ingestion-offline-authentication.png)
 
-1. On the **[!UICONTROL Select data]** step, the UI will:
-    ![Select your dataset](assets/ingestion-offline-mapping.png)
+1. On the **[!UICONTROL Select data]** step, the UI will use your credentials to open the folder on your cloud storage solution
+1. Select the file(s) you would like to ingest, e.g. `luma-offline-purchases.json`
+1. As the **[!UICONTROL Data format]**, select `XDM JSON`
+1. Click the **[!UICONTROL Next]** button
+    ![Select your data file(s)](assets/ingestion-offline-selectData.png)
 
 1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Event Dataset` and click the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
     ![Select your dataset](assets/ingestion-offline-mapping.png)
+1. On the **[!UICONTROL Scheduling]** step, you choose the frequency with which you want to re-ingest data from the Source. Take a moment to look at the options. We are just going to do a one-time ingestion, so leave the **[!UICONTROL Frequency]** on **[!UICONTROL Once]** and click the **[!UICONTROL Next]** button:
+    ![Schedule your data flow](assets/ingestion-offline-scheduling.png)
+1. On the **[!UICONTROL Dataflow detail]** step, you can choose a name for your dataflow, enter an optional description, turn on error diagnostics, and partial ingestion. Leave the settings as they are and click the **[!UICONTROL Next]** button: 
+    ![Edit details of your data flow](assets/ingestion-offline-detail.png)
+1. On the **[!UICONTROL Review]** step, you can review all of your settings together and either edit them or click the **[!UICONTROL Finish]** button
+1. After saving you will land on a screen like this:
+    ![Complete](assets/ingestion-offline-complete.png)
 
+### Validate the data
+
+When the batch has uploaded, verify the upload by previewing the dataset.
+
+Look up the profile with value `5625458` in the `loyaltyId` namespace again to see if there are any purchase events in their profile.
+
+You should see the three hits to your webhook.
+
+## ETL Tools
+
+Adobe partners with multiple ETL vendors to support data ingestion into Experience Platform. Because of the variety of third party vendors, ETL is not covered in this tutorial, although you are welcome to review some of these resources:
+
+* [Developing ETL Integrations for Adobe Experience Platform](https://docs.adobe.com/help/en/experience-platform/etl/home.html)
+* [Informatica Adobe Experience Platform Connector page on Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
+* [Informatica documentation of the Adobe Experience Platform Connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
+* [Unique Audience Experiences Derived from Data:  Unifi and Adobe Experience Platform](https://unifisoftware.com/solutions/adobe-experience-platform/)
+* [Snaplogic Adobe Experience Platform Snap Pack](https://www.snaplogic.com/snaps/adobe-cloud-platform)
 
 ## Additional Resources
 
