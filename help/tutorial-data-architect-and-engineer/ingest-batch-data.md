@@ -308,9 +308,11 @@ Many of the Sources have a similar configuration workflow, in which you:
 
 When the batch has uploaded, verify the upload by previewing the dataset.
 
-Look up the profile with value `5625458` in the `loyaltyId` namespace again to see if there are any purchase events in their profile.
-
 You should see the three hits to your webhook.
+
+Look up the profile with value `5625458` in the `loyaltyId` namespace again to see if there are any purchase events in their profile. You should see one:
+
+![Purchase event in profile](assets/ingestion-offline-eventInProfile.png)
 
 ## ETL Tools
 
