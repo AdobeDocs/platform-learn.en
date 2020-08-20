@@ -310,7 +310,7 @@ When the batch has uploaded, verify the upload by previewing the dataset.
 
 You should see the three hits to your webhook.
 
-Look up the profile with value `5625458` in the `loyaltyId` namespace again to see if there are any purchase events in their profile. You should see one:
+Look up the profile with value `5625458` in the `loyaltyId` namespace again to see if there are any purchase events in their profile. You should see one purchase. You can dig into the details of the purchase by clicking **[!UICONTROL View JSON]**:
 
 ![Purchase event in profile](assets/ingestion-offline-eventInProfile.png)
 
