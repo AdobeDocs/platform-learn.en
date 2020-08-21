@@ -11,6 +11,7 @@ activity: implement
 
 # Ingest Batch Data
 
+<!-- 1hr-->
 In this lesson, you will ingest batch data into Experience Platform using a variety of methods.
 
 Batch data ingestion allows you to ingest a large amount of data into Adobe Experience Platform at once. You can ingest batch data in a one time upload within Platform's interface or using the API. You can also configure regularly scheduled batch uploads from third-party services such as cloud storage services using Source connectors.

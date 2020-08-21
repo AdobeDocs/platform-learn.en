@@ -11,7 +11,7 @@ activity: implement
 
 # Setup and Run Queries
 
-In this lesson you will learn how to setup, write and execute queries to validate the data you have ingested.
+In this lesson, you will learn how to setup, write and execute queries to validate the data you have ingested.
 
 Adobe Experience Platform Query Service helps you make sense of your data by allowing you to use standard SQL to query data in Platform. Using Query Service, you can join any dataset in the Data Lake and capture the query results as a new dataset for use in reporting, machine learning, or for ingestion into Real-time Customer Profile.
 
@@ -29,19 +29,25 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * Permission item Sandboxes > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 
+## Simple Queries
+
+Let's start with some simple queries:
+
 1. In the Platform UI, click **Queries** in the left navigation
-1. Click **Create Query** on the rop right
-1. This will open a textbox to run and execute queries
-1. Enter the following query in the editor and press Shift+Enter or Shift+Return to execute the query. This will show list of available tables
+1. Click the **Create Query** button on the top right
+1. This will open a text box to run and execute queries
+1. Enter the following query in the editor and press Shift+Enter or Shift+Return to execute the query.
 
     ```
     SHOW TABLES
     ```
 
+1. This will show list of available tables
+
     ![SHOW TABLE query](assets/queries-showTables.png)
 
 
-1. Now try this query, replacing `_techmarketingdemos` with your own tenant namespace, which is visible in your schemas if you don't remember (the part after the underscore is also visible in your URL between `@` and `/platform`)
+1. Now try this query, replacing `_techmarketingdemos` with your own tenant namespace, which, if you recall, is visible in your schemas.
    
     ```
     SELECT person.name.lastName,_techmarketingdemos.loyalty.level
@@ -62,6 +68,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Offline Purchase` to get list of gold customers who have spend over $500 dollars in one purchase.
 
+1. Create a new query
 1. Copy and paste following query in query editor and execute, again replacing `_techmarketingdemos` with your own tenant namespace
     
     ```

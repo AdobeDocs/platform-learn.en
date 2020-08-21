@@ -11,7 +11,9 @@ activity: implement
 
 # Apply the data governance framework
 
-In this lesson you will apply the data governance framework to the data you've ingested into your sandbox. 
+<!--15min-->
+
+In this lesson, you will apply the data governance framework to the data you've ingested into your sandbox. 
 
 Adobe Experience Platform Data Governance allows you to manage customer data and ensure compliance with regulations, restrictions, and policies applicable to data use. It plays a key role within Experience Platform at various levels, including cataloging, data lineage, data usage labeling, data usage policies, and controlling usage of data for marketing actions.
 
@@ -19,10 +21,6 @@ Before you begin the exercises, watch these short videos about data governance:
 >[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
-
->[!NOTE]
->
->At the time of writing (Summer 2020), this lesson applies mostly to customers of the Real-time Customer Data Platform application service. I encourage you to complete the lesson regardless of whether you license Real-time CDP, as the data governance framework will likely support additional use cases in the future.
 
 ## Permissions required
 
@@ -53,9 +51,9 @@ Now it's time to label the data whose usage we want to restrict:
 1. In the Platform UI, click **[!UICONTROL Datasets]** in the left navigation
 1. Open the `Luma Loyalty Dataset`
 1. Click on the **[!UICONTROL Data Governance]** tab
-1. You can either apply labels to individual fields or apply them to the entire dataset. We will apply the label to the entire dataset. Click the pencil icon.
+1. You can either apply labels to individual fields or apply them to the entire dataset. We will apply the label to the entire dataset. Click the pencil icon. If you don't see the icon, try making your browser wider or scrolling the middle panel to the right.
     ![Data Governance](assets/governance-dataset.png)
-1. In the modal, select the C2 label and click the 
+1. In the modal, expand the **[!UICONTROL Contract Labels]** section and check the **[!UICONTROL C2]** label
 1. Click the **[!UICONTROL Save changes]** button
     ![Data Governance](assets/governance-applyLabel.png)
 1. Returning to the main [!UICONTROL Data Governance] screen, with the **[!UICONTROL Show inherited labels]** toggle on, you can see how the label has been applied to all of the fields in the dataset.
@@ -76,17 +74,9 @@ Now that our data is labeled, we can create a policy.
 
 You can also create your own policies by clicking the **[!UICONTROL Create policy]** button. This opens a wizard which allows you can combine multiple labels and marketing action restrictions.
 
-1. Click on the **[!UICONTROL Data Governance]** tab
-1. You can either apply labels to individual fields or apply them to the entire dataset. We will apply the label to the entire dataset. Click the pencil icon.
-1. In the modal, select the C2 label and click the 
-1. Click the **[!UICONTROL Save changes]** button
-    ![Data Governance](assets/governance-applyLabel.png)
-1. Returning to the main [!UICONTROL Data Governance] screen, with the **[!UICONTROL Show inherited labels]** toggle on, you can see how the label has been applied to all of the fields in the dataset.
-    ![Data Governance](assets/governance-labelsAdded.png)
-
 ## Enforce governance policies
 
-Enforcement of governance policies is obviously a key component to the framework. Enforcement happens downstream when data is activated and sent out of Platform. Therefore, it's out of the scope of this tutorial. But just so you're not left hanging, you can learn more about how the third step in data governance from this video, which I've queued up to the relevant portion:
+Enforcement of governance policies is obviously a key component to the framework. Enforcement happens downstream when data is activated and sent out of Platform, especially with the Real-time Customer Data Platform, which you may or may not be licensing. Either way, it's out of the scope of this tutorial. But just so you're not left hanging, you can learn more about how policies are enforced in this video, which I've queued up to the relevant portion. It will also show you what happens when a policy is violated.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
 

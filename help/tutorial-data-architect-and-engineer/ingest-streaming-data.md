@@ -11,6 +11,8 @@ activity: implement
 
 # Ingest Streaming Data
 
+<!--1hr-->
+
 In this lesson, you will stream data into Experience Platform using the Web SDK.
 
 There are two main tasks we need to complete in the Adobe Experience Platform Launch interface:
@@ -297,10 +299,10 @@ To validate the data:
 You can also confirm that the new profile is showing up:
 
 1. In the Platform UI, go to **[!UICONTROL Profiles]** in the left navigation
-1. Select the **[!UICONTROL ECID]** namespace and search for your ECID value (copy it from the web developer tools network tab response) 
+1. Select the **[!UICONTROL ECID]** namespace and search for your ECID value (copy it from the response in the web developer tools network tab as noted in the last exercise) 
 1. The profile will will have its own id, separate from the ECID, click it to open the profile
     ![Find and open the profile](assets/websdk-platform-openProfile.png)
-1. While there may note be much in it, you should at least be able to see the pages you viewed
+1. While there may note be much in it, you should at least be able to see the pages you viewed in the **[!UICONTROL Events]** tab
     ![Profile Events](assets/websdk-platform-profileEvents.png)   
     <!--![](assets/websdk-platform-confirmProfile.png)-->  
 
@@ -308,7 +310,7 @@ You can also confirm that the new profile is showing up:
 
 ### Create a data element for page name
 
-1. In the Launch UI, on the top right corner of your `Luma Platform Tutorial` property, open the **[!UICONTROL Select a Working Library]** dropdown and select your `Luma Platform Tutorial` library. This is going to make it easier to publish additional updates to our library
+1. In the Launch UI, on the top right corner of your `Luma Platform Tutorial` property, open the **[!UICONTROL Select a Working Library]** dropdown and select your `Luma Platform Tutorial` library. This is going to make it easier to publish additional updates to our library.
 1. Now go to **[!UICONTROL Data Elements]** in the left navigation
 1. Click the **[!UICONTROL Create New Data Element]** button
 
@@ -329,6 +331,7 @@ Now we will map our page name to the Web SDK.
 >In order to complete this task, we need to make sure your user first has access to the Prod sandbox. If you don't already have access to the Prod sandbox from a different product profile, quickly open your `Luma Tutorial Platform` profile and add the permission item **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]**.
 >![Add the Prod sandbox](assets/websdk-property-permissionToLoadSchema.png)
 
+1. If you just updated your permissions to include the Prod sandbox, do a SHIFT-Reload on the Data Elements page to clear your cache
 1. On the **[!UICONTROL Data Elements]** screen in Launch, create another data element with the **[!UICONTROL Name]** of `XDM Object`
 1. As the **[!UICONTROL Extension]**, select `AEP Web SDK`
 1. As the **[!UICONTROL Data Element Type]**, select `XDM Object`
@@ -372,9 +375,9 @@ If you recall, I mentioned that we would be using the ECID and CRM Id as identit
 
 First we will store the CRM Id in a data element:
 
-1. Create a new data element named `CRM Id`
+1. In the Launch interface, create a new data element named `CRM Id`
 1. As the **[!UICONTROL Data Element Type]**, select **[!UICONTROL JavaScript Variable]**
-1. As the **[!UICONTROL JavaScript variable name]**, enter `digitalData.user[0].profile[0].attributes.username`
+1. As the **[!UICONTROL JavaScript variable name]**, enter `digitalData.user.0.profile.0.attributes.username`
 1. Click the **[!UICONTROL Save to Library]** button (`Luma Platform Tutorial` should still be your working library)
     ![Add Data Element for the CRM Id](assets/websdk-property-dataElement-crmId.png)
 
@@ -388,7 +391,7 @@ Now that we have captured the CRM Id value, we need to associate it with a speci
 1. As the Namespace, enter `lumaCRMId`, which is the [!UICONTROL Identity Symbol] we created in an earlier lesson
 1. As the **[!UICONTROL ID]**, click the icon to open the data element selection modal and choose your `CRM Id` data element
 1. As the **[!UICONTROL Authenticated State]**, select **[!UICONTROL Authenticated]**
-1. Leave **[!UICONTROL Primary]** _unchecked_. Since the CRM Id is not present for most visitors to the Luma website, you definitely _do not want to override the ECID as the primary identifier_. It would be a very rare use case to send in anything other than the ECID as the primary identifier.Usually I don't mention the default settings in these instructions, but I am calling this one out to help you avoid headaches later on in your own implementation.
+1. Leave **[!UICONTROL Primary]** _unchecked_. Since the CRM Id is not present for most visitors to the Luma website, you definitely _do not want to override the ECID as the primary identifier_. It would be a very rare use case to use anything other than the ECID as the primary identifier. Usually I don't mention the default settings in these instructions, but I am calling this one out to help you avoid headaches later on in your own implementation.
 1. Click the **[!UICONTROL Save to Library]** button (`Luma Platform Tutorial` should still be your working library)
     ![Add the CRM Id to the Identity Map data element](assets/websdk-property-dataElement-identityMap.png)
 
@@ -417,7 +420,7 @@ To validate that the CRM Id is now being sent by the Web SDK:
 1. Log in using the credentials `test@adobe.com`/`test`
 1. Once authenticated, inspect the AEP Web SDK call in the Debugger (**[!UICONTROL AEP Web SDK]** > **[!UICONTROL Network Requests]** > **[!UICONTROL events]** of the most recent request) and you should see the `lumaCrmId`:
     ![Validate the identity in the Debugger](assets/websdk-debugger-confirmIdentity.png)
-1. You should also be able to look up this user profile using the Luma CRM Id namespace in the Platform interface:
+1. Look up the user profile using the ECID namespace and value again. Note that in the profile you will not only see the CRM Id, but also the Loyalty Id and the profile details like the name and phone number. All of the identities and data have been stitched together into a single, real-time customer profile!
     ![Validate the identity in Platform](assets/websdk-platform-lumaCrmIdProfile.png)
     
 
@@ -426,14 +429,14 @@ To validate that the CRM Id is now being sent by the Web SDK:
 * [Streaming Ingestion documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)
 * [Data Ingestion API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/ingest-api.yaml)
 
-Great job! That was a lot of information about Web SDK and Launch. There is a lot more to it as well which you can explore during your own implementation, but those are the basics to help you get started. 
+Great job! That was a lot of information about Web SDK and Launch. There is a lot more involved in a full-blown implementation, but those are the basics to help you get started and see the results in Platform.
 
 >[!NOTE]
 >
 >Now that you are done with the Streaming Ingestion lesson, you can remove the [!UICONTROL Prod] sandbox from your `Luma Tutorial Platform` product profile
 
 
-Data Engineers, if you like you can skip ahead a few lessons to the [query service lesson](run-queries.md)
+Data Engineers, if you like you can skip ahead to the [run queries lesson](run-queries.md).
 
 Data Architects, you can move on to [merge policies](create-merge-policies.md)!
 
