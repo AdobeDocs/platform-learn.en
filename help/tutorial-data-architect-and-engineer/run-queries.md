@@ -11,6 +11,7 @@ activity: implement
 
 # Setup and Run Queries
 
+<!-- 15 min-->
 In this lesson, you will learn how to setup, write and execute queries to validate the data you have ingested.
 
 Adobe Experience Platform Query Service helps you make sense of your data by allowing you to use standard SQL to query data in Platform. Using Query Service, you can join any dataset in the Data Lake and capture the query results as a new dataset for use in reporting, machine learning, or for ingestion into Real-time Customer Profile.
@@ -64,6 +65,10 @@ Let's start with some simple queries:
 1. Click the **[!UICONTROL Save]** button
     ![Saving the query](assets/queries-loyaltySelect-save.png)
 
+## Additional Exercises
+
+Additional Query Service exercises will be added to the tutorial at a later date.
+<!--
 ## Join Datasets
 
 In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Offline Purchase` to get list of gold customers who have spend over $500 dollars in one purchase.
@@ -94,6 +99,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 1. Save.
 1. Go to **Datasets** under **Data Management** to find new dataset created.
 
+-->
 <!--Add content for Adobe Defined Functions-->
 
 ## Additional Resources
@@ -101,4 +107,4 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 * [Query Service documentation](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)
 * [Query Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
-And now for the final hands-on lesson, [creating segments](create-segments.md)!
+And now for the final hands-on lesson, [creating segments](build-segments.md)!
