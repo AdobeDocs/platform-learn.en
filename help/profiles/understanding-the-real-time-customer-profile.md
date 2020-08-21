@@ -9,7 +9,7 @@ doc-type: video
 activity: understand
 ---
 
-# UnderstandingReal-time Customer Profile
+# Understanding Real-time Customer Profile
 
 Real-Time Customer Profile powers cross-channel personalization at scale through each phase of the customer journey.
 
