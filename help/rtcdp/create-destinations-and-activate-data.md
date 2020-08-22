@@ -7,6 +7,7 @@ kt:
 audience: 
 doc-type: video
 activity: use
+thumbnail: 29710.png
 ---
 
 # Create Destinations and Activate Data

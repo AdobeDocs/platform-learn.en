@@ -1,5 +1,5 @@
 ---
-title: Build Segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 description: In this lesson, we will build some segments based on the profile data we have ingested in the previous lessons.
 feature: segmentation
 topics: 
@@ -7,6 +7,7 @@ kt: 4348
 audience: data architect
 doc-type: tutorial
 activity: implement
+thumbnail: 4348-build-segments.png
 ---
 
 # Build segments

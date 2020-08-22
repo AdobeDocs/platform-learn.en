@@ -18,6 +18,7 @@ audience: all
   + [Basic Architecture](/help/intro-to-platform/basic-architecture.md)
   + [Interface Tour](/help/intro-to-platform/interface-tour.md)
   + [Roles and Project Phases](/help/intro-to-platform/roles-and-project-phases.md)
++ [Getting Started Tutorial for Data Architects and Data Engineers](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 + Schemas{#schemas}
   + [Understanding the XDM System and Experience Data Model](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create your first Schema](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md)

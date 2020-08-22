@@ -7,6 +7,7 @@ kt: 3138
 audience: data scientist,data engineer,architect
 doc-type: video
 activity: use
+thumbnail: 30575.png
 ---
 
 # Use Data Science Workspace to build and deploy a model

@@ -6,6 +6,7 @@ topics:
 kt: 4943
 doc-type: video
 activity: understanding
+thumbnail: 33600.png
 ---
 
 # Overview Diagram of Real-time Customer Profile

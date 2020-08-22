@@ -7,6 +7,7 @@ kt: 5206
 audience: engineer
 doc-type: feature video
 activity: use
+thumbnail: 34148.png
 ---
 
 # Demo of Adobe Experience Platform Web SDK and Edge Network

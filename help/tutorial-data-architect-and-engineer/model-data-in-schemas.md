@@ -1,5 +1,5 @@
 ---
-title: Model data into schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Model data in schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 description: In this lesson, you will model Luma's data into schemas. This is one of the longest lessons in the tutorial, so get a glass of water and buckle up!
 feature: schemas
 topics: 
@@ -7,9 +7,10 @@ kt: 4348
 audience: data architect,data engineer
 doc-type: tutorial
 activity: implement
+thumbnail: 4348-model-data-in-schemas.png
 ---
 
-# Model Data in Schemas
+# Model data in schemas
 
 <!-- 60min -->
 In this lesson, you will model Luma's data into schemas. This is one of the longest lessons in the tutorial, so get a glass of water and buckle up!

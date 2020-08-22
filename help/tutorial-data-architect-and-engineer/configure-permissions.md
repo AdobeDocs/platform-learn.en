@@ -1,5 +1,5 @@
 ---
-title: Configure Permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console. 
 feature: permission
 topics: 
@@ -7,9 +7,10 @@ kt: 4348
 audience: data architect
 doc-type: tutorial
 activity: implement
+thumbnail: 4348-configure-permissions.png
 ---
 
-# Configure Permissions
+# Configure permissions
 
 <!--30min-->
 

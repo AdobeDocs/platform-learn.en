@@ -7,6 +7,7 @@ kt: 3714
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 28981.png
 ---
 
 # Understanding the Value of Dashboards built with Query Service

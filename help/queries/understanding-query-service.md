@@ -7,6 +7,7 @@ kt: 3139
 audience: developer,data engineer,architect
 doc-type: video
 activity: understand
+thumbnail: 29795.png
 ---
 
 # Understanding Query Service

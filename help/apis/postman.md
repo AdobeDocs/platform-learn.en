@@ -10,6 +10,7 @@ activity: develop
 audience: developer, implementer
 team: tm
 kt: 3688
+thumbnail: 32977.png
 ---
  
 # Use Postman with Experience Platform APIs

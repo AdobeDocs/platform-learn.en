@@ -7,6 +7,7 @@ kt: 2711
 audience: engineer
 doc-type: video
 activity: understand
+thumbnail: 28425.png
 ---
 
 # Understanding Streaming Data Ingestion

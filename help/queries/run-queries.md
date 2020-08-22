@@ -7,6 +7,7 @@ kt: 3140
 audience: developer,data engineer,architect
 doc-type: video
 activity: setup,use
+thumbnail: 29796.png
 ---
 
 # Run Queries with Query Service

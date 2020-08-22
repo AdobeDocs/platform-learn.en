@@ -1,5 +1,5 @@
 ---
-title: Ingest Streaming Data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 description: In this lesson, you will stream data into Experience Platform using the Web SDK.
 feature: data ingestion
 topics: 
@@ -7,9 +7,10 @@ kt: 4348
 audience: data engineer
 doc-type: tutorial
 activity: implement
+thumbnail: 4348-ingest-streaming-data.png
 ---
 
-# Ingest Streaming Data
+# Ingest streaming data
 
 <!--1hr-->
 
