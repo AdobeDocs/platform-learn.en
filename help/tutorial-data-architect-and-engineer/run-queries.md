@@ -9,7 +9,7 @@ doc-type: tutorial
 activity: implement
 ---
 
-# Setup and Run Queries
+# Run Queries
 
 <!-- 15 min-->
 In this lesson, you will learn how to setup, write and execute queries to validate the data you have ingested.
