@@ -11,6 +11,9 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 ## What's New
 
 
+* **[Getting Started with Experience Platform for Data Architects and Data Engineers](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
+    <br>
+    *Get hands-on with multiple Platform features with this multi-page tutorial*
 * **[Integrate with Google Customer Match (Video)](/help/rtcdp/integrate-with-google-customer-match.md)**
     <br>
     *Engage with customers on Google’s owned and operated properties using Real-time CDP*
@@ -19,9 +22,6 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <br>
     *Honor customers' consent with Real-time CDP*
 
-* **[Introduction to Data Governance](/help/governance/introduction-to-data-governance.md)**
-    <br>
-    *Learn how you can create personalized experiences while maintaining complete control over customer data*
 
 ## Staff Picks
 

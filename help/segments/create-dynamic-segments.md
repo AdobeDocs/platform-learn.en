@@ -7,6 +7,7 @@ kt: 2705
 audience: marketer
 doc-type: video
 activity: setup
+thumbnail: 27428.png
 ---
 
 # Create Dynamic Segments

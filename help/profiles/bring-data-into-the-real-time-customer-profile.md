@@ -7,6 +7,7 @@ kt: 2702
 audience: engineer
 doc-type: video
 activity: use
+thumbnail: 27301.png
 ---
 
 # Bring Data into Real-time Customer Profile

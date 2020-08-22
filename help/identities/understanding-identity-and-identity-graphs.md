@@ -8,6 +8,7 @@ kt: 3039
 doc-type: feature video
 activity: understand
 team: TM
+thumbnail: 27841.png
 ---
 
 # Understanding Identity and Identity Graphs

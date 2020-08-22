@@ -7,6 +7,7 @@ kt: 4170
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32654.png
 ---
 
 # Introduction to Intelligent Services

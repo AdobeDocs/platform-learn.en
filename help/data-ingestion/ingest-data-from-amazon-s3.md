@@ -7,6 +7,7 @@ kt: 3827
 audience: 
 doc-type: video
 activity: setup
+thumbnail: 29695.png
 ---
 
 # Ingest data using the Amazon S3 Source connector

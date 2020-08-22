@@ -7,6 +7,7 @@ kt: 4018
 audience: all
 doc-type: feature video
 activity: use
+thumbnail: 29838.png
 ---
 
 # Use Sandboxes

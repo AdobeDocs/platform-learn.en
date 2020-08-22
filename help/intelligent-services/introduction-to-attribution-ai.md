@@ -7,6 +7,7 @@ kt: 4808
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32667.png
 ---
 
 # Introduction to Attribution AI

@@ -7,6 +7,7 @@ kt:
 audience: 
 doc-type: video
 activity: understand
+thumbnail: 29705.png
 ---
 
 # Understanding Adobe's Real-time Customer Data Platform

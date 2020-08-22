@@ -7,6 +7,7 @@ kt: 2701
 audience: engineer
 doc-type: video
 activity: understand
+thumbnail: 27251.png
 ---
 
 # Understanding Real-time Customer Profile

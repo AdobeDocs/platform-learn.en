@@ -7,6 +7,7 @@ kt: 3824
 audience: 
 doc-type: video
 activity: setup
+thumbnail: 29687.png
 ---
 
 # Ingest data using the Adobe Analytics Source connector

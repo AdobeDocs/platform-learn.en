@@ -1,5 +1,5 @@
 ---
-title: Create Merge Policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 description: In this lesson you will learn how to create merge policies to determine how data merges into profiles. 
 feature: profile
 topics: 
@@ -7,9 +7,10 @@ kt: 4348
 audience: data architect
 doc-type: tutorial
 activity: implement
+thumbnail: 4348-create-merge-policies.png
 ---
 
-# Create Merge Policies
+# Create merge policies
 
 <!--20 min-->
 

@@ -7,6 +7,7 @@ kt: 4348
 audience: data architect,data engineer
 doc-type: tutorial
 activity: implement
+thumbnail: 4348-set-up-developer-console-and-postman.png
 ---
 
 # Set up Developer Console and [!DNL Postman]

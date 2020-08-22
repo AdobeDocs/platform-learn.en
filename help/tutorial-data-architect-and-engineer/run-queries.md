@@ -7,9 +7,10 @@ kt: 4348
 audience: data architect,data engineer
 doc-type: tutorial
 activity: implement
+thumbnail: 4348-run-queries.png
 ---
 
-# Run Queries
+# Run queries
 
 <!-- 15 min-->
 In this lesson, you will learn how to setup, write and execute queries to validate the data you have ingested.

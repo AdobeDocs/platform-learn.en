@@ -7,6 +7,7 @@ kt: 4723
 audience: engineer
 doc-type: feature video
 activity: troubleshoot
+thumbnail: 32156.png
 ---
 
 # Introduction to the Adobe Experience Platform Debugger
