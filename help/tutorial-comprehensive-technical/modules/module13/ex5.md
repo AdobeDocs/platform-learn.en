@@ -53,7 +53,7 @@ Click on **Visualize** and then select **Line** as visualization.
 
 ![demo](./images/pro5.png)
 
-You’ll see your products views by day and hour.  
+You’ll see your products views by day.  
 
 ![demo](./images/pro6.png)
 
@@ -80,47 +80,51 @@ Remember to save project every now and then.
 | Windows | Control + S          | 
 | Mac | Command + S          |
 
-Let's start finding the top 5 products viewed. In the left side menu, find the **SKU** - Dimension.
+Let's start finding the top 5 products viewed. In the left side menu, find the **Product Name** - Dimension.
 
 ![demo](./images/pro8.png)
 
-Now drag and drop **SKU** to replace the **Day** dimension:
+Now drag and drop **Product Name** to replace the **Day** dimension:
 
 This will be the result
 
 ![demo](./images/pro10a.png)
 
-Next, try to breakdown one of the products by Brand Name. Search for `brandName` and drag it under the SKU `LUMA00108`.
+Next, try to breakdown one of the products by Brand Name. Search for **brandName** and drag it under the first product name.
 
 ![demo](./images/pro13.png)
 
-Next, do a breakdown using the ECID. Search for `ECID` and drag it under the brand name `Luma Retail`.
+Next, do a breakdown using the User Agent. Search for **User Agent** and drag it under the brand name.
 
 ![demo](./images/pro15.png)
 
-Finally you can add more visualizations. On the left side, under visualizations, search for `Donut`. Take `Donut`, drag-and-drop it on the canvas under the **Line** visualization. It will automatically show all **Product Views**.
+You'll then see this:
 
-![demo](./images/module135/18.png)
+![demo](./images/pro15a.png)
 
-Next, in the Table, select 3 **User Agent**  rows from the breakdown we did under **Nadia Elements Shell** > **Luma Retail**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button on Mac.
+Finally you can add more visualizations. On the left side, under visualizations, search for `Donut`. Take `Donut`, drag-and-drop it on the canvas under the **Line** visualization. It will automatically show all **Product Names**.
 
-![demo](./images/module135/20.png)
+![demo](./images/pro18.png)
+
+Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Luma Telco**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
+
+![demo](./images/pro20.png)
 
 You'll see the donut chart changed:
 
-![demo](./images/module135/21.png)
+![demo](./images/pro21.png)
 
 You can even adapt the design to be more readable, by making both the **Line** graph and the **Donut** graph a bit smaller so they can fit next to each other:
 
-![demo](./images/module135/22.png)
+![demo](./images/pro22.png)
 
 Click on the dot next to **Donut** to **Manage the Data Source**.
 
-![demo](./images/module135/22a.png)
+![demo](./images/pro22a.png)
 
 Next, click **Lock Selection** to lock this visualization so that it always displays a timeline of Product Views.
 
-![demo](./images/module135/22b.png)
+![demo](./images/pro22b.png)
 
 
 Find out more about visualizations using Analysis Workspace here: 
@@ -135,123 +139,120 @@ There are many ways to solve this question. One of them is to use Product Intera
 
 Close the current panel we have by clicking here:
 
-![demo](./images/module135/23.png)
+![demo](./images/pro23.png)
 
 Now add a new blank panel by clicking on **+ Add Blank Panel**.
 
-![demo](./images/module135/24.png)
+![demo](./images/pro24.png)
 
-Find the visualization **Fallout**, on the left-side, and drag and drop it into the canvas:
+Click the visualization **Fallout**.
 
-![demo](./images/module135/25.png)
+![demo](./images/pro25.png)
 
-Select the date range: **30/01/2020 – 10/02/2020**.
+Select the same date range as in the previous exercise.
 
-![demo](./images/module135/datef.png)
+![demo](./images/prodatef.png)
+
+You'll then see this.
+
+![demo](./images/prodatefa.png)
 
 Find the dimension **Product Interaction Type** under the components on the left side:
 
-![demo](./images/module135/26.png)
+![demo](./images/pro26.png)
 
 Click on the arrow to open the dimension:
 
-![demo](./images/module135/27.png)
+![demo](./images/pro27.png)
 
 You'll see all available Product Interaction Types. Select the **productView** and drag and drop it onto the **Add Touchpoint** field inside the **Fallout Visualization**.
 
-![demo](./images/module135/28.png)
+![demo](./images/pro28.png)
 
-![demo](./images/module135/29.png)
+![demo](./images/pro29.png)
 
 Do the same with **productAddtoCart** and **productPurchase** and drop them onto the **Add Touchpoint** field inside the **Fallout Visualization**. You'll then have this:
 
-![demo](./images/module135/ps1.png)
-
-Next, go to the **Fallout Settings** and change the scope from **Person** to **Session** to look at fallout within the same session. This means that from CJA, you can combine a **Person**-view with a **Session** as and when you need it.
-
-![demo](./images/module135/ps.png)
+![demo](./images/props1.png)
 
 Your visualization will now look like this:
 
-![demo](./images/module135/30.png)
+![demo](./images/pro30.png)
 
-We can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if we want to analyze interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
+You can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if we want to analyze interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
 
 Right click on the touchpoint **Product Add To Cart**. Then click on **Breakdown fallout at this touchpoint**.
 
-![demo](./images/module135/32.png)
+![demo](./images/pro32.png)
 
 A new freeform table will be created to analyze what the people did if they didn't purchase. 
 
-![demo](./images/module135/33.png)
+![demo](./images/pro33.png)
 
 Change the **Product Interaction Type** by **Page Name**, in the new freeform table, to see which pages they are going instead of the Purchase Confirmation Page.
 
-![demo](./images/module135/34.png)
+![demo](./images/pro34.png)
 
-## What do people do on the site before reaching the "Cancel Service" page?
+## What do people do on the site before reaching the Cancel Service page?
 
 Again, there are many ways to perform this analysis. However, let's use the flow analysis to start the discovery part.
 
 Close the current panel by clicking here:
 
-![demo](./images/module135/0.png)
+![demo](./images/pro0.png)
 
 Now add a new blank panel by clicking on **+ Add Blank Panel**.
 
-![demo](./images/module135/24.png)
+![demo](./images/pro0a.png)
 
-Remember to select the right dates: **30/01/2020 – 31/01/2020**.
+Select the same date range as in the previous exercise.
 
-Find the visualization **Flow**, on the left-side, and drag and drop it into the canvas:
+![demo](./images/pro0b.png)
 
-![demo](./images/module135/35.png)
+Click the visualization **Flow**.
+
+![demo](./images/pro35.png)
 
 You'll then see this:
 
-![demo](./images/module135/351.png)
+![demo](./images/pro351.png)
 
 Find the dimension **Page Name** under the components on the left side:
 
-![demo](./images/module135/36.png)
+![demo](./images/pro36.png)
 
 Click on the arrow to open the dimension:
 
-![demo](./images/module135/37.png)
+![demo](./images/pro37.png)
 
-You'll find all page viewed. Find the page name: **Cancel Service**.
+You'll find all pages viewed. Find the page name: **Cancel Service**.
 
-![demo](./images/module135/38.png)
+![demo](./images/pro38.png)
 
 Drag and drop **Cancel Service** into the Flow Visualization on the middle field:
 
-![demo](./images/module135/39.png)
+![demo](./images/pro39.png)
 
 You'll then see this:
 
-![demo](./images/module135/40.png)
+![demo](./images/pro40.png)
 
 Let's now analyze if customers who visited the **Cancel Service** page on the website also called the callcenter, and what the outcome was.
 
-Under the dimensions, find **Call Interaction Type**. Drag and drop it to replace the first interaction on the right within the **Flow Visualization**.
+Under the dimensions, go back and then find **Call Interaction Type**. 
+![demo](./images/pro43.png)
 
-![demo](./images/module135/43.png)
+Drag and drop **Call Interaction Type** to replace the first interaction on the right within the **Flow Visualization**. You're now seeing which customers called the call center after visiting the **Cancel Service** page.
 
-Click on the first **Call Interaction Type** to expand the flow of this customer.
+![demo](./images/pro44.png)
 
-![demo](./images/module135/44.png)
+Next, under the dimensions, search for **Call Feeling**.  Drag and drop it to replace the first interaction on the right within the **Flow Visualization**.
 
-You'll then see this:
-
-![demo](./images/module135/45.png)
-
-Under the dimensions, search for **Call Feeling**.  Drag and drop it to replace the first interaction on the right within the **Flow Visualization**.
-
-![demo](./images/module135/46.png)
+![demo](./images/pro46.png)
 
 You'll then see this:
 
-![demo](./images/module135/flow.png)
+![demo](./images/flow.png)
 
 As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion? 
 
@@ -260,7 +261,7 @@ As you can see, we have run an omnichannel analysis using the Flow Visualization
 
 Let's first segment the data to get only users with **positive** calls. In CJA, Segments are called Filters. Go to filters within the component area (on the left-side) and click **+**.
 
-![demo](./images/module135/58.png)
+![demo](./images/pro58.png)
 
 Inside the Filter builder, give a name to the filter
 
@@ -268,57 +269,51 @@ Inside the Filter builder, give a name to the filter
 | ----------------- |-------------| 
 | Call Feeling - Positive | Call Feeling - Positive          | 
 
-![demo](./images/module135/47.png)
+![demo](./images/pro47.png)
 
 Under the components (inside the Filter Builder), find **Call Feeling** and drag and drop it into the Filter Builder Definition.
 
-![demo](./images/module135/48.png)
+![demo](./images/pro48.png)
 
 Now select positive as value for the filter.
 
-![demo](./images/module135/49.png)
+![demo](./images/pro49.png)
 
 Change the scope to be **Person** level.
 
-![demo](./images/module135/50.png)
+![demo](./images/pro50.png)
 
 To finish, simply click on save.
 
-![demo](./images/module135/51.png)
+![demo](./images/pro51.png)
 
-Close the current panel we have by clicking here:
+You'll then be back here. Close the current panel we have by clicking here:
 
-![demo](./images/module135/0.png)
+![demo](./images/pro0c.png)
 
 Now add a new blank panel by clicking on **+ Add Blank Panel**.
 
-![demo](./images/module135/24.png)
+![demo](./images/pro24c.png)
 
-Remember to select the right dates: **30/01/2020 – 31/01/2020**.
+Select the same date range as in the previous exercise.
 
-Click on **Freeform table** to create one.
+![demo](./images/pro24d.png)
 
-![demo](./images/module135/52.png)
+Click on **Freeform table**.
+
+![demo](./images/pro52.png)
 
 Now drag and drop the filter we've just created.
 
-![demo](./images/module135/53.png)
+![demo](./images/pro53.png)
 
-Time to add some metrics. Start with **Product Views**. Drag and drop into the freeform table.
+Time to add some metrics. Start with **Product Views**. Drag and drop into the freeform table. You can also delete the **Events** metric.
 
-![demo](./images/module135/54.png)
+![demo](./images/pro54.png)
 
 Do the same with **People**,  **Add to Cart** and **Purchases**. You'll end up with a table like this.
 
-![demo](./images/module135/55.png)
-
-Like segments in Adobe Analytics, you can also breakdown a filter. Let's drag-and-drop the dimension **Mobile Number** onto the **Call Feeling - Positive**-filter to check which Mobile Numbers are calling with positive feeling.
-
-![demo](./images/module135/56.png)
-
-You'll then see this:
-
-![demo](./images/module135/57.png)
+![demo](./images/pro55.png)
 
 Thanks to the first flow analysis, a new question came to mind. So we decided to create this table and check some KPIs against a segment to answer that question. As you can see, time to insight is much faster than using SQL or using other BI solutions.
 
@@ -334,15 +329,15 @@ We can define attribution logic in almost any metric (except things like **Peopl
 
 Open the calculated metric you created, called **Purchases**. On the **Events** metric, filtered  by **ProductInteraction**, click on settings.
 
-![demo](./images/module135/a.png)
+![demo](./images/a.png)
 
 The default attribution model is **Last Touch**. Check the checkbox for **Use non-default attribution model**.
 
-![demo](./images/module135/b.png)
+![demo](./images/b.png)
 
 After checking the checkbox for **Use non-default attribution model**, you'll see this popup:
 
-![demo](./images/module135/c.png)
+![demo](./images/c.png)
 
 Here you can change the model and the Look-back Window.
 
@@ -350,17 +345,17 @@ You'll now see all available attribution models. To understand the differences b
 
 As already mentioned, you can even change the reporting look-back window. Depending on the model you'll have different options.
 
-![demo](./images/module135/f.png)
+![demo](./images/f.png)
 
 Make your choice and click **Apply**.
 
-![demo](./images/module135/apply.png)
+![demo](./images/apply.png)
 
 ## Cohort Analysis
 
 The **Cohort Table** allows you to understand how segments of users behave over a certain period of time. With CJA, this complicated query is made easy. With Cohort Analysis, you can now understand key KPIs such as **MAU** (Monthly Active Users) or **WAU** (Weekly Active Users).
 
-![demo](./images/module135/cohortAnalysis2.png)
+![demo](./images/cohortAnalysis2.png)
 
 Using the omnichannel data that is available thanks to Adobe Experience Platform, the following questions can now be answered:
 
@@ -370,7 +365,7 @@ Using the omnichannel data that is available thanks to Adobe Experience Platform
 
 Example:
 
-![demo](./images/module135/cohortAnalysis.png)
+![demo](./images/cohortAnalysis.png)
 
 ## Customer Journey Analytics and Analysis Workspace recap
 

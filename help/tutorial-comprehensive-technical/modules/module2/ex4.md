@@ -64,8 +64,7 @@ With your CSV-file ready, you can proceed with mapping it against XDM.
 
 ### 2.4.2 - Verify the CRM Onboarding Dataset in Adobe Experience Platform
 
-Open [Adobe Experience Platform
-](https://experience.adobe.com/platform) and go to **Datasets**. 
+Open [Adobe Experience Platform](https://experience.adobe.com/platform) and go to **Datasets**. 
 
 Before you continue, you need to select a **sandbox**. The sandbox to select is named **Module 2 - Data Ingestion**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
 

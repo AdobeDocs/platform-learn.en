@@ -46,13 +46,13 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 **Query Result**
 
 ```text
-prod:all=> select date_format( timestamp , 'yyyy-MM-dd') AS Day,
-prod:all->        count(*) AS productViews
-prod:all-> from   aep_demo_website_interactions
-prod:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
-prod:all-> and    --aepTenantId--.productData.productInteraction = 'productView'
-prod:all-> group by Day
-prod:all-> limit 10;
+module7:all=> select date_format( timestamp , 'yyyy-MM-dd') AS Day,
+module7:all->        count(*) AS productViews
+module7:all-> from   aep_demo_website_interactions
+module7:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> and    --aepTenantId--.productData.productInteraction = 'productView'
+module7:all-> group by Day
+module7:all-> limit 10;
     Day     | productViews 
 ------------+--------------
  2020-04-20 |         2138
@@ -80,13 +80,13 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 **Query Result**
 
 ```text
-prod:all=> select --aepTenantId--.productData.productName, count(*)
-prod:all-> from   aep_demo_website_interactions
-prod:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
-prod:all-> and    --aepTenantId--.productData.productInteraction = 'productView'
-prod:all-> group  by --aepTenantId--.productData.productName
-prod:all-> order  by 2 desc
-prod:all-> limit 5;
+module7:all=> select --aepTenantId--.productData.productName, count(*)
+module7:all-> from   aep_demo_website_interactions
+module7:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> and    --aepTenantId--.productData.productInteraction = 'productView'
+module7:all-> group  by --aepTenantId--.productData.productName
+module7:all-> order  by 2 desc
+module7:all-> limit 5;
               productname              | count(1)
 ---------------------------------------+----------
  Google Pixel XL 32GB Black Smartphone |      838
@@ -113,11 +113,11 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 **Query Result**
 
 ```text
-prod:all=> select --aepTenantId--.productData.productInteraction, count(*)
-prod:all-> from   aep_demo_website_interactions
-prod:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
-prod:all-> and    --aepTenantId--.productData.productInteraction is not null
-prod:all-> group  by --aepTenantId--.productData.productInteraction;
+module7:all=> select --aepTenantId--.productData.productInteraction, count(*)
+module7:all-> from   aep_demo_website_interactions
+module7:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> and    --aepTenantId--.productData.productInteraction is not null
+module7:all-> group  by --aepTenantId--.productData.productInteraction;
  productinteraction | count(1) 
 --------------------+----------
  productView        |     2138
@@ -144,12 +144,12 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 **Query Result**
 
 ```text
-prod:all=> select distinct --aepTenantId--.identification.ecid
-prod:all-> from   aep_demo_website_interactions
-prod:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
-prod:all-> and    web.webPageDetails.name = 'Cancel Service'
-prod:all-> group  by --aepTenantId--.identification.ecid
-prod:all-> limit 10;
+module7:all=> select distinct --aepTenantId--.identification.ecid
+module7:all-> from   aep_demo_website_interactions
+module7:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> and    web.webPageDetails.name = 'Cancel Service'
+module7:all-> group  by --aepTenantId--.identification.ecid
+module7:all-> limit 10;
                ecid               
 ----------------------------------
  93575149630203476634619363680088
@@ -525,32 +525,32 @@ And replace
 enter your name
 ```
 
-Do not remove ```/\*``` and ```\*/```. Your modified statement in notepad should look like:
+Do not remove `/\*` and `\*/`. Your modified statement in notepad should look like:
 
 ![edit-query-notepad.png](./images/edit-query-notepad.png)
 
 Copy your modified statement from **notepad** into the **PSQL command line window** and hit enter. You should see the following result in the PSQL command line window:
 
 ```text
-prod:all=> select /* vangeluw */
-prod:all->        e.--aepTenantId--.identification.ecid as ecid,
-prod:all->        e.placeContext.geo.city as city,
-prod:all->        e.placeContext.geo._schema.latitude latitude,
-prod:all->        e.placeContext.geo._schema.longitude longitude,
-prod:all->        e.placeContext.geo.countryCode as countrycode,
-prod:all->        c.--aepTenantId--.callDetails.callFeeling as callFeeling,
-prod:all->        c.--aepTenantId--.callDetails.callTopic as callTopic,
-prod:all->        c.--aepTenantId--.callDetails.contractCancelled as contractCancelled,
-prod:all->        l.--aepTenantId--.loyalty.loyaltyStatus as loyaltystatus,
-prod:all->        l.--aepTenantId--.loyalty.loyaltyPoints as loyaltypoints,
-prod:all->        l.--aepTenantId--.identification.crmid as crmid
-prod:all-> from   aep_demo_website_interactions e
-prod:all->       ,aep_demo_call_center_interactions c
-prod:all->       ,aep_demo_loyalty_data l
-prod:all-> where  e.--aepTenantId--.brand.brandName like 'Luma Telco'
-prod:all-> and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
-prod:all-> and    e.--aepTenantId--.identification.ecid = c.--aepTenantId--.identification.ecid
-prod:all-> and    l.--aepTenantId--.identification.ecid = e.--aepTenantId--.identification.ecid;
+module7:all=> select /* vangeluw */
+module7:all->        e.--aepTenantId--.identification.ecid as ecid,
+module7:all->        e.placeContext.geo.city as city,
+module7:all->        e.placeContext.geo._schema.latitude latitude,
+module7:all->        e.placeContext.geo._schema.longitude longitude,
+module7:all->        e.placeContext.geo.countryCode as countrycode,
+module7:all->        c.--aepTenantId--.callDetails.callFeeling as callFeeling,
+module7:all->        c.--aepTenantId--.callDetails.callTopic as callTopic,
+module7:all->        c.--aepTenantId--.callDetails.contractCancelled as contractCancelled,
+module7:all->        l.--aepTenantId--.loyalty.loyaltyStatus as loyaltystatus,
+module7:all->        l.--aepTenantId--.loyalty.loyaltyPoints as loyaltypoints,
+module7:all->        l.--aepTenantId--.identification.crmid as crmid
+module7:all-> from   aep_demo_website_interactions e
+module7:all->       ,aep_demo_call_center_interactions c
+module7:all->       ,aep_demo_loyalty_data l
+module7:all-> where  e.--aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+module7:all-> and    e.--aepTenantId--.identification.ecid = c.--aepTenantId--.identification.ecid
+module7:all-> and    l.--aepTenantId--.identification.ecid = e.--aepTenantId--.identification.ecid;
                ecid               |   city    |  latitude  | longitude | countrycode | callFeeling | callTopic | contractCancelled | loyaltystatus | loyaltypoints |   crmid   
 ----------------------------------+-----------+------------+-----------+-------------+-------------+-----------+-------------------+---------------+---------------+-----------
  49087868469032502526716380562417 | Namur     | 50.4198861 | 4.9246444 | BE          | neutral     | contract  | no                | Bronze        |         413.0 | 475749237
@@ -587,3 +587,4 @@ Next Step: [7.4 - Power BI/Tableau](./ex4.md)
 [Go Back to Module 7](./query-service.md)
 
 [Go Back to All Modules](../../overview.md)
+module7:all

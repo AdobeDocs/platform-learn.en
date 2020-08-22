@@ -18,9 +18,20 @@ activity:
 
 ## 7.1.1 - Getting familiar with the Adobe Experience Platform UI
 
-Make sure you are logged into the [Adobe Experience Platform UI](https://experience.adobe.com/platform).
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+
+After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![platform-login.png](./images/platform-login.png)
+
+Before you continue, you need to select a **sandbox**. The sandbox to select is named **Module 7 - Query Service**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+
+![Data Ingestion](./images/sb2.png)
+
 
 ## 7.1.2 - Explore data on the platform
 
@@ -98,7 +109,7 @@ Windows:
 
 ![command-prompt-connected.png](./images/command-prompt-connected.png)
 
-OSX:
+MacOS:
 
 ![command-prompt-paste-osx.png](./images/command-prompt-paste-osx.png)
 

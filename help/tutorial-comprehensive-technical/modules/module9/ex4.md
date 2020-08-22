@@ -98,9 +98,9 @@ After having consulted the above Schemas and Datasets, you can now fill out the 
 | Adobe Organization ID | imsOrgId |--aepImsOrgId--|
 | DCS Streaming Endpoint | dcsStreamingEndpoint |--dcsInletId--|
 | Profile Dataset ID | profileDatasetId | 5ea04d5b005a6e18a8bc88af |
-| Profile Schema Reference | profileSchemaRef |https://ns.adobe.com/--aepTenantId--/schemas/18c20233e055248c013f76df48c47670|
+| Profile Schema Reference | profileSchemaRef |https://ns.adobe.com/--aepTenantIdSchema--/schemas/18c20233e055248c013f76df48c47670|
 | Experience Event Dataset ID | eeDatasetId | 5ea04d5b25b79d18aa3b5f93 |
-| Experience Event Schema Reference | eeSchemaRef |https://ns.adobe.com/--aepTenantId--/schemas/226a6fc8e72fc7d7f0d9844c117d5006|
+| Experience Event Schema Reference | eeSchemaRef |https://ns.adobe.com/--aepTenantIdSchema--/schemas/226a6fc8e72fc7d7f0d9844c117d5006|
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.
 

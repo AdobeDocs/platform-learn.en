@@ -103,7 +103,9 @@ Click **Next**.
 
 You now have to select the **Product Profile(s)** for your integration. 
 
-Select the required Product Profiles:
+Select the required Product Profiles. 
+
+**FYI**: in your Adobe Experience Platform instance, the Product Profiles will have a different naming. You need to select at least one product profile with the proper access rights, which are set up in the Adobe Admin Console.
 
 ![Adobe I/O New Integration](./images/api9.png)
 

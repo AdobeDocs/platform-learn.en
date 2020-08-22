@@ -15,9 +15,13 @@ This video gives an overview of Adobe Experience Platform Web SDK and Edge Netwo
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
 
->[!IMPORTANT] The server-side forwarding capability discussed in this video is currently in alpha and is not available to all users.
+>[!IMPORTANT]
+>
+>The server-side forwarding capability discussed in this video is currently in alpha and is not available to all users.
 
->[!NOTE] This video is an excerpt from the the Adobe Summit 2020 session *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://www.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
+>[!NOTE]
+>
+>This video is an excerpt from the the Adobe Summit 2020 session *[Meet Alloy.js and Never Tag for an eVar or Mbox Again](https://www.adobe.com/summit/2020/with-alloy-js-never-tag-for-an-evar-or-mbox-again.html)*.
 
 ## Additional Resources
 
