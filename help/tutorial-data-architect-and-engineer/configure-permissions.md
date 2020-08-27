@@ -87,7 +87,7 @@ Now that you are an admin of the `Luma Tutorial Platform` product profile you ca
 
 There are multiple services built on top of Adobe Experience Platform. Some of them are enabled via Platform's product profiles:
 
-1. Log into the [!DNL Adobe Admin Console](https://adminconsole.adobe.com)
+1. Log into the [Adobe Admin Console](https://adminconsole.adobe.com)
 1. Click **[!UICONTROL Products]** on the top navigation
 1. Click **[!UICONTROL Adobe Experience Platform]** on the left navigation
 1. Click on the `Luma Tutorial Platform` profile in the list

@@ -92,7 +92,7 @@ You might have noticed that the project was assigned a number, e.g. "Project 12"
 
 ## Set up Postman
 
-1. Download and install [!DNL Postman](https://www.postman.com/downloads/)
+1. Download and install [[!DNL Postman]](https://www.postman.com/downloads/)
 1. Open [!DNL Postman] and import the downloaded json environment file, `service.postman_environment.json`
    ![Adobe Developer Console Import environment](assets/postman-importEnvironment.png)
 1. In [!DNL Postman], select your environment in the top-right dropdown and click the **eye** icon to view the environment variables. You should see that the ACCESS_TOKEN, PRIVATE_KEY, and JWT_TOKEN variables are blank:
