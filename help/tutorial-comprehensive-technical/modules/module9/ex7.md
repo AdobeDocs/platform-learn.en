@@ -21,7 +21,7 @@ Go to **Install Google Tag Manager**.
 
 You now see two code fragments that need to be implemented on your Platform Demo website.
 
-The first code fragments needs to be implemented in the **<head>** section of the website, the second code fragments needs to be implemented in the **<body>** section of the website.
+The first code fragments needs to be implemented in the `<head>` section of the website, the second code fragments needs to be implemented in the `<body>` section of the website.
 
 To do this dynamically without having to change every individual web page, we created two JavaScript files that are part of the Platform Demo website. These two files are named `launch.js` and `tags_body.js`.
 
