@@ -8,6 +8,13 @@ audience: all
 
 + [Tutorial Overview](/help/tutorial-comprehensive-technical/overview.md)
 + [Architecture Overview](/help/tutorial-comprehensive-technical/architecture.md)
++ 0 - Getting started {#module0}
+  + [Overview](/help/tutorial-comprehensive-technical/modules/module0/getting-started.md)
+  + [0.1 Use Demo System Next to setup your Launch property](/help/tutorial-comprehensive-technical/modules/module0/ex1.md)
+  + [0.2 Create your Configuration ID](/help/tutorial-comprehensive-technical/modules/module0/ex2.md)
+  + [0.3 Use the website](/help/tutorial-comprehensive-technical/modules/module0/ex3.md)
+  + [0.4 Use the mobile app](/help/tutorial-comprehensive-technical/modules/module0/ex4.md)
+  + [0.5 Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical/modules/module0/ex5.md)
 + 1 - Launch and the Web SDK extension {#module1}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module1/data-ingestion-launch-web-sdk.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module1/summary.md)
