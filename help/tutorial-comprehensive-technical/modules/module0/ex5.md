@@ -31,7 +31,7 @@ This results in the documentation looking like this, which gives you a lot of ma
 
 In order to make this process easier, a Chrome extension was built to automatically load and translate those keys into your specific values, based on the Configuration ID you created in [Exercise 0.2](./ex2.md).
 
-Download [this Chrome extension](./assets/extension/chrome_extension.zip) to your computer's desktop and unzip it.
+Download [this Chrome extension](./assets/chrome_extension.zip) to your computer's desktop and unzip it.
 
 ![DSN](./images/unzip.png)
 
