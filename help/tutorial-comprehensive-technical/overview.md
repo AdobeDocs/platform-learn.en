@@ -63,6 +63,12 @@ Before you start with the hands-on exercises, have a look at the Architecture be
 
 Go to [Architecture](./architecture.md).
 
+## Videos
+
+Several videos have been created that showcase elements of the enablement and powerful integrations between Adobe Experience Platform and non-Adobe applications. Click the below link to find an overview of those videos.
+
+Go to [Videos](./videos.md).
+
 ## Content
 
 [1. Foundation - Setup of Launch & Web SDK](./modules/module1/data-ingestion-launch-web-sdk.md)
