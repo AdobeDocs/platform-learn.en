@@ -71,6 +71,13 @@ Go to [Videos](./videos.md).
 
 ## Content
 
+[0. Getting started](./modules/module0/getting-started.md)
+
+- **Audience:** All participants of the Comprehensive Technical Tutorial for Adobe Experience Platform
+- **Prerequisites:** Access to Demo System Next, Adobe Experience Platform and Adobe Experience Platform Launch. Access to the default Configuration ID of your Adobe Experience Platform environment.
+- **Description:** In this foundational module, you will setup everything so that you can access and use the demo environment.
+- **Time Investment:** 20 minutes
+
 [1. Foundation - Setup of Launch & Web SDK](./modules/module1/data-ingestion-launch-web-sdk.md)
 
 - **Audience:** Data Engineer, Data Architect
