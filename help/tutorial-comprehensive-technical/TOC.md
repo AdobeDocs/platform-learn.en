@@ -8,6 +8,7 @@ audience: all
 
 + [Tutorial Overview](/help/tutorial-comprehensive-technical/overview.md)
 + [Architecture Overview](/help/tutorial-comprehensive-technical/architecture.md)
++ [Video Overview](/help/tutorial-comprehensive-technical/videos.md)
 + 0 - Getting started {#module0}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module0/getting-started.md)
   + [0.1 Use Demo System Next to setup your Launch property](/help/tutorial-comprehensive-technical/modules/module0/ex1.md)
