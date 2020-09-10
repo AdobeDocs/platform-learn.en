@@ -144,3 +144,13 @@ audience: all
   + [17.3 Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics](/help/tutorial-comprehensive-technical/modules/module17/ex3.md)
   + [17.4 Update a contact in Microsoft Dynamics 365 and automatically trigger a journey](/help/tutorial-comprehensive-technical/modules/module17/ex4.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module17/summary.md)
++ 18 - Segment Activation to Microsoft Azure Event Hub {#module18}
+  + [Overview](/help/tutorial-comprehensive-technical/modules/module18/segment-activation-microsoft-azure-eventhub.md)
+  + [18.0 Configure your Microsoft Azure environment](/help/tutorial-comprehensive-technical/modules/module18/ex1.md)
+  + [18.1 Configure your Microsoft Azure EventHub environment](/help/tutorial-comprehensive-technical/modules/module18/ex1.md)
+  + [18.2 Configure your Real-time CDP Destination connector for Microsoft Azure EventHub](/help/tutorial-comprehensive-technical/modules/module18/ex2.md)
+  + [18.3 Create your Microsoft Azure Project](/help/tutorial-comprehensive-technical/modules/module18/ex3.md)
+  + [18.4 Create Streaming Segments](/help/tutorial-comprehensive-technical/modules/module18/ex4.md)
+  + [18.5 Activate Segment](/help/tutorial-comprehensive-technical/modules/module18/ex5.md)
+  + [18.6 End-to-end scenario](/help/tutorial-comprehensive-technical/modules/module18/ex6.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module18/summary.md)

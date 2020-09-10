@@ -58,6 +58,7 @@ Copy the statement below and paste it at the **module7:all >** prompt in your **
 select placecontext.geo
 from   aep_demo_website_interactions
 where  --aepTenantId--.productData.productInteraction = 'productView'
+and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
@@ -67,6 +68,7 @@ In your query result, you will notice that columns in the Experience Data Model 
 module7:all=> select placecontext.geo
 module7:all-> from   aep_demo_website_interactions
 module7:all-> where  --aepTenantId--.productData.productInteraction = 'productView'
+module7:all-> and placecontext.geo.countryCode <> ''
 module7:all-> limit 1;
                  geo                 
 -------------------------------------
@@ -87,6 +89,7 @@ select placecontext.geo._schema.longitude
       ,placecontext.geo.countryCode
 from   aep_demo_website_interactions
 where  --aepTenantId--.productData.productInteraction = 'productView'
+and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
@@ -100,6 +103,7 @@ module7:all->       ,placecontext.geo.city
 module7:all->       ,placecontext.geo.countryCode
 module7:all-> from   aep_demo_website_interactions
 module7:all-> where  --aepTenantId--.productData.productInteraction = 'productView'
+module7:all-> and placecontext.geo.countryCode <> ''
 module7:all-> limit 1;
  longitude |  latitude  | city  | countrycode 
 -----------+------------+-------+-------------
@@ -127,6 +131,7 @@ Copy the following statement to notepad or brackets:
 select your_attribute_path_here
 from   aep_demo_website_interactions
 where  --aepTenantId--.productData.productInteraction = 'productView'
+and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
@@ -150,6 +155,7 @@ The result should look like:
 module7:all=> select placeContext.geo._schema.longitude
 module7:all-> from   aep_demo_website_interactions
 module7:all-> where  --aepTenantId--.productData.productInteraction = 'productView'
+module7:all-> and placecontext.geo.countryCode <> ''
 module7:all-> limit 1;
  longitude
 -----------
