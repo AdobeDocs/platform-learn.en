@@ -9,7 +9,7 @@ activity:
 
 # Exercise 0.2 - Create your Configuration ID
 
-Open an incognito browser window and go to [https://public.aepdemo.net/admin\_configuration\_view.html](https://public.aepdemo.net/admin_configuration_view.html).
+Open an incognito browser window and go to [https://public.aepdemo.net/admin_configuration_view.html](https://public.aepdemo.net/admin_configuration_view.html).
 
 You'll see the **View Configuration ID** page:
 

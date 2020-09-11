@@ -177,8 +177,6 @@ Click Enable.
 
 Your dataset is now enabled for Profile.
 
-With the datasets created and configured for Profile, you can now continue with the Launch configuration to capture data on your website.
-
 Next Step: [2.4 - Data Ingestion from Offline Sources](./ex4.md)
 
 [Go Back to Module 2](./data-ingestion.md)
