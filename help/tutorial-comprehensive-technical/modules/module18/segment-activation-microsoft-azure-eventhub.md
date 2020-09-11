@@ -69,7 +69,7 @@ In this exercise you will create a streaming segment in Adobe Experience Platfor
 
 In this exercise you'll activate your streaming segment to your Real-time CDP EventHub destination.
 
-[18.6 - End-to-end scenario](./ex7)
+[18.6 - End-to-end scenario](./ex6.md)
 
 At this point, everything is setup. You can now do some browsing on your AEP Demo website and get segment qualifications delivered to your Microsoft Azure EventHub Trigger function.  
 

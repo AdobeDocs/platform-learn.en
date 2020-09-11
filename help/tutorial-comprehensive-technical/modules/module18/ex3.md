@@ -30,7 +30,7 @@ Visual Studio Code makes it easy to...
 
 ### Open Visual Studio Code
 
-To open Visual Studio Code enter **visual** in your operating system's search (Spotlight search on OSX, Search in Window's Taskbar). If you do not find it, you need to repeat the steps outlined in [Exercise 0 - Pre-requisites](exercises/0-prereq.md). 
+To open Visual Studio Code enter **visual** in your operating system's search (Spotlight search on OSX, Search in Window's Taskbar). If you do not find it, you need to repeat the steps outlined in [Exercise 0 - Pre-requisites](./ex0.md). 
 
 ![visual-studio-code-icon.png](./images/visual-studio-code-icon.png)
 

@@ -18,7 +18,7 @@ To define an Event Hub destination in Adobe Experience Platform you need your:
 - Azure SAS Key name
 - Azure SAS Key
 
-Event Hub and EventHub namespace have been defined in the previous exercise: [Exercise 1 - Setup Event Hub in Azure](exercises/1-setup-event-hub-azure.md)
+Event Hub and EventHub namespace have been defined in the previous exercise: [Exercise 1 - Setup Event Hub in Azure](./ex1.md)
 
 ### Event Hubs Namespace
   

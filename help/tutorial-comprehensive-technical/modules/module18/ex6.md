@@ -19,7 +19,7 @@ To show the payload send by Adobe Experience Platform Real-time CDP to our Azure
 
 ### Launch Visual Studio Code and start project
 
-Refer to [Exercise 3 - Create Azure Project](exercises/3-create-azure-project.md) to start Visual Code Studio, logon to Azure and start your function:
+Refer to [Exercise 3 - Create Azure Project](./ex3.md) to start Visual Code Studio, logon to Azure and start your function:
 
 - Exercise 18.3.2 - Open Visual Studio Code and Logon to Azure
 - Exercise 18.3.4 - Run Azure Project
@@ -40,21 +40,21 @@ Application started. Press Ctrl+C to shut down.
 [22/06/2020 12:55:03] Debugger attached.
 ```
 
-![6-01-vsc-ready.png](../resources/6-01-vsc-ready.png)
+![6-01-vsc-ready.png](./images/6-01-vsc-ready.png)
 
 ## Exercise 18.6.2 - Start Luma Telco
 
 Navigate to https://public.aepdemo.net/, select your **ldap** (1), select "Luma Telco" (2) as your brand and launch (3) Luma Telco:
 
-![6-02-start-luma-telco.png](../resources/6-02-start-luma-telco.png)
+![6-02-start-luma-telco.png](./images/6-02-start-luma-telco.png)
 
 When you open **Adobe Experience Platform X-RAY** you should be anonymous (you only have an ECID identity) and you should be member of only one segment **Homepage Visitors**:
 
-![6-03-start-luma-telco-xray.png](../resources/6-03-start-luma-telco-xray.png)
+![6-03-start-luma-telco-xray.png](./images/6-03-start-luma-telco-xray.png)
 
 Switch back to Visual Studio Code and look at your 'TERMINAL' tab, nothing changed. This is normal because our destination will only trigger when your profile will qualify for **Luma Telco Sports Fan**.
 
-![6-03b-visual-studio-code.png](../resources/6-03b-visual-studio-code.png)
+![6-03b-visual-studio-code.png](./images/6-03b-visual-studio-code.png)
 
 
 ## Exercise 18.6.3 - Let's qualify for Luma Telco Sports Fan
@@ -67,7 +67,7 @@ To verify let's open another page to make sure that the X-Ray panel refreshes. I
 
 Instead open 'BROADBAND DEALS' and open the X-Ray panel, you should now be a member of both the **Luma Telco Sports Fan**  and the **Homepage Visitor** segments. If you segment memberships are not yet updated in your X-Ray panel, reload the page.  
 
-![6-05-luma-telco-nav-broadband.png](../resources/6-05-luma-telco-nav-broadband.png)
+![6-05-luma-telco-nav-broadband.png](./images/6-05-luma-telco-nav-broadband.png)
 
 Switch back to Visual Studio Code and look at your 'TERMINAL' tab, you should see a list of segments for your specific **ECID**. This activation payload is delivered to your event hub as soon as you qualify for the **Luma Telco Sports Fan** streaming segment. Note that the segment name in the payload has been added by our Azure function because Adobe Experience Platform Real-time CDP only includes the segmentId.
 
@@ -77,17 +77,17 @@ A segment status of **realized** means that our profile is entering the segment.
 
 Although this is our first activation, **Homepage Visitors** already is in status **existing**. The reason is that **Luma Telco Sports Fan** is triggering the activation because we are entering the segment. When a segment triggers an  activation, all segments for which our profile qualifies are included into the activation payload. The segments for which we already qualified before are listed with a status **existing** because our profile continues to be in the segment.
 
-![6-06-vsc-activation-realized.png](../resources/6-06-vsc-activation-realized.png)
+![6-06-vsc-activation-realized.png](./images/6-06-vsc-activation-realized.png)
 
 ## Exercise 18.6.4 - Let's visit the Sports page for a second time
 
 From the **Broadband deals** page navigate back to the **Sports** page.
 
-![6-07-back-to-sports.png](../resources/6-07-back-to-sports.png)
+![6-07-back-to-sports.png](./images/6-07-back-to-sports.png)
 
 And Switch back to Visual Studio Code and verify your 'TERMINAL' tab. You will see that we still have our two segments, but now in status **existing** which means that our profile continues to be in the segment.
 
-![6-08-vsc-activation-existing.png](../resources/6-08-vsc-activation-existing.png)
+![6-08-vsc-activation-existing.png](./images/6-08-vsc-activation-existing.png)
 
 ## Exercise 18.6.5 - Let's visit the Home page for a third time
 
@@ -95,7 +95,7 @@ If you would revisit the **Sports** page for a third time, no activation will ta
 
 Segment activations only happen when the segment's status changes:
 
-![6-09-segment-state-change.png](../resources/6-09-segment-state-change.png)
+![6-09-segment-state-change.png](./images/6-09-segment-state-change.png)
 
 ## Exercise 18.6.6 - Activation payload for a known profile
 
@@ -105,15 +105,15 @@ Close you browser and open Luma Telco again in an incognito window.
 
 Navigate to **Login/Register** and create a profile:
 
-![6-10-create-profile.png](../resources/6-10-create-profile.png)
+![6-10-create-profile.png](./images/6-10-create-profile.png)
 
 Navigate to the **Sports** page, this will make your known profile qualify for **Luma Telco Sports Fan**. After the page loaded, navigate to the home page and open X-Ray to validate your segment qualifications:
 
-![6-11-check-segment-qualif.png](../resources/6-11-check-segment-qualif.png)
+![6-11-check-segment-qualif.png](./images/6-11-check-segment-qualif.png)
 
 If you see the qualifications, switch to Visual Studio Code and look at your 'TERMINAL' tab. The output of the azure function will include the segments and a full identity map of your profile. These identities can be used by the azure function to link the segments to customer in a third party application using that application's customer identifier:
 
-![6-12-profile-identities.png](../resources/6-12-profile-identities.png)
+![6-12-profile-identities.png](./images/6-12-profile-identities.png)
 
 Payload detail:
 
