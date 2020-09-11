@@ -71,7 +71,7 @@ At this point you should have identified all the values needed to define the Azu
 
 ## 18.2.2 Create Azure Event Hub Destination in Adobe Experience Platform
 
-Go to [https://platform.adobe.com](https://platform.adobe.com), navigate to **Destinations**, select **Cloud Storage** and hover over **Azure Eventhubs** and click **Activate**:
+Go to [https://platform.adobe.com](https://platform.adobe.com), navigate to **Destinations**, select **Cloud Storage** and hover over **Azure Event Hubs** and click **Activate**:
 
 ![2-08-list-destinations.png](./images/2-08-list-destinations.png)
 
@@ -89,7 +89,7 @@ In the next screen, enter the name and description in the format **ldap-aep-enab
   
 ![2-10-create-destination.png](./images/2-10-create-destination.png)
 
-We wil skip segment activation for now. You can hit the **Save &amp; exit** button:
+We will skip segment activation for now. You can hit the **Save &amp; exit** button:
 
 ![2-11-save-exit-activation.png](./images/2-11-save-exit-activation.png)
 

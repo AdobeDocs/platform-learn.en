@@ -19,7 +19,7 @@ You'll create a simple segment:
 
 Adobe Experience Platform Real-time CDP will trigger an activation to a destination when you qualify for a segment that is part of that destination's activation list. When that is the case, the segment qualification payload that will be send to that destination will contain **all the segments for which your profile qualifies**. 
 
-The goal of this module is to show that your Customer Profile's segment qualification is sent to **your** event hub destination in real-time. As a result our segment defintion will have to include your **ldap** so that it only indentifies your profiles. If we would not do that, and everyone doing this enablement would create a segment with the exact same definition, you would potentially get a lot of segment qualification messages on your event hub. 
+The goal of this module is to show that your Customer Profile's segment qualification is sent to **your** event hub destination in real-time. As a result our segment definition will have to include your **ldap** so that it only identifies your profiles. If we would not do that, and everyone doing this enablement would create a segment with the exact same definition, you would potentially get a lot of segment qualification messages on your event hub. 
 
 To avoid that and to keep the qualification payload small, we will only look at experience events that have a **brand.ldap** equals to **your ldap**
 
@@ -43,11 +43,11 @@ Let's start with adding the profile email address expression to make sure we are
 
 Name your segment **ldap - Luma Telco Sports Fan** and add the page name experience event:
 
-Click on **Events** (1), and drag and drop **XDM ExperienceEvent &gt; Web &gt; Web page details &gt; Name** (2). Enter **Sports** (3) as the value:
+Click on **Events** (1), and drag and drop **XDM ExperienceEvent > Web > Web page details > Name** (2). Enter **Sports** (3) as the value:
 
 ![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
 
-Drag and drop **XDM ExperienceEvent &gt; Brand &gt; ldap** (2). Enter &lt;your ldap&gt; (3) as the value and click save (4):
+Drag and drop **XDM ExperienceEvent > Brand > ldap** (2). Enter your **ldap** (3) as the value and click save (4):
 
 ![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
 

@@ -16,7 +16,7 @@ In this module, you learnt how to set up an Azure Event Hub instance and how to 
 
 Let's highlight the benefits of integrating Adobe Experience Platform with Microsoft Dynamics 365:
 
-- Microsoft Azure Event Hubs as an Adobe Experience Plaform Destination let's you capture segment qualification in realtime and process them using an azure event hub function. With such an azure event hub function you can virtually build any kind of custom segment activation handler. And a such integrate any kind of third party destination.
+- Microsoft Azure Event Hubs as an Adobe Experience Platform Destination let's you capture segment qualification in realtime and process them using an azure event hub function. With such an azure event hub function you can virtually build any kind of custom segment activation handler. And a such integrate any kind of third party destination.
 
 - Although destinations are triggered only by specified segments, the activation payload will include all segments for which given profile qualifies.
 

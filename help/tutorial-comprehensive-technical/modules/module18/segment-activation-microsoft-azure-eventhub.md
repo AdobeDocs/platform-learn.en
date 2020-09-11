@@ -11,13 +11,13 @@ activity:
 
 **Authors: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In this module, you'll setup a Microsoft Azure EventHub destination as a real-time destination for Adobe Experience Platform Real-time CDP. You will also setup and deploy an Azure function that will be triggered in real-time whenever Adobe Experience Plaform delivers a segment payload to your Azure EventHub destination. The Azure Function that you'll trigger will show the mechanism of Adobe Experience Platform Real-time CDP's activation capabilities.
+In this module, you'll setup a Microsoft Azure EventHub destination as a real-time destination for Adobe Experience Platform Real-time CDP. You will also setup and deploy an Azure function that will be triggered in real-time whenever Adobe Experience Platform delivers a segment payload to your Azure EventHub destination. The Azure Function that you'll trigger will show the mechanism of Adobe Experience Platform Real-time CDP's activation capabilities.
 
-As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a paylaod to a specified destination. We will also discuss the status of a segment qualification and how it relates to activation.
+As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a payload to a specified destination. We will also discuss the status of a segment qualification and how it relates to activation.
 
 Adobe Experience Platform Real-time CDP supports data activation to streaming cloud storage destinations, allowing you to export audience data and events in real-time to these destinations in JSON format. You can then describe business logic on top of these events in your destinations
 
-Microsft Azure Event Hubs is a fully managed, real-time data ingestion service that’s simple, trusted, and scalable. Stream millions of events per second from any source to build dynamic data pipelines and immediately respond to business challenges.
+Microsoft Azure Event Hubs is a fully managed, real-time data ingestion service that’s simple, trusted, and scalable. Stream millions of events per second from any source to build dynamic data pipelines and immediately respond to business challenges.
 
 ## Learning Objectives
 
@@ -25,7 +25,7 @@ Microsft Azure Event Hubs is a fully managed, real-time data ingestion service t
 - Setup an RTCDP destination to your Microsoft Azure Event Hub
 - Understand when Real-time CDP activates and what the activation payload looks like
 - Setup Visual Studio Code to develop, test and deploy your Azure project
-- Create and deploy an Azure function that consumes segments qualifications deliverd in real-time by RTCDP
+- Create and deploy an Azure function that consumes segments qualifications delivered in real-time by RTCDP
 
 ## Prerequisites
 

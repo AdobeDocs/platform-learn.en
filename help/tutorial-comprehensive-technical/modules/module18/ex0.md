@@ -19,7 +19,7 @@ Go to [https://portal.azure.com](https://portal.azure.com) and login with your A
 
 ![02-azure-portal-email.png](./images/02-azure-portal-email.png)
 
-After sucessful login you'll see the following screen:
+After successful login you'll see the following screen:
 
 ![03-azure-logged-in.png](./images/03-azure-logged-in.png)
 
@@ -40,7 +40,7 @@ When the subscription process is finished you are good to go:
 
 You'll use Microsoft Visual Code Studio to manage your Azure Project. You can download it via [this link](https://code.visualstudio.com/download). Follow the installation instructions for your specific OS on that same website.
 
-## 18.0.3 Install Visual Code Extenstions
+## 18.0.3 Install Visual Code Extensions
 
 Install the Azure Functions for Visual Studio Code from [https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions). Click the install button:
 

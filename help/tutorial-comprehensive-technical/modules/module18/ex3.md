@@ -21,7 +21,8 @@ Azure Event Hubs integrates with Azure Functions for a serverless architecture.
 
 ## 18.3.2 Open Visual Studio Code and Logon to Azure
 
-Visual Studio Code makes it easy to
+Visual Studio Code makes it easy to...
+
 - define and bind Azure functions to Event Hubs
 - test locally 
 - deploy to Azure
@@ -37,7 +38,7 @@ To open Visual Studio Code enter **visual** in your operating system's search (S
 
 When you logon with your Azure account that you used to register in [Exercise 0 - Pre-requisites](./ex0.md), Visual Studio Code will let you find and bind all Event Hub resources. 
 
-Click the **Azure** icon in Visual Studio Code. If you do not have that option, something might have gone wrong with the installaton of the required extensions.
+Click the **Azure** icon in Visual Studio Code. If you do not have that option, something might have gone wrong with the installation of the required extensions.
 
 Next select **Sign in to Azure** (2):
 
@@ -81,7 +82,7 @@ Select **Create new local app setting**:
 
 ![3-10-vsc-function-local-app-setting.png](./images/3-10-vsc-function-local-app-setting.png)
 
-Select an ecent hub namespace, you should see the Event Hub that you defined in **Excercise 2**. In this example the Event Hub namespace is **mmeewis-aep-enablement**:
+Select an event hub namespace, you should see the Event Hub that you defined in **Exercise 2**. In this example the Event Hub namespace is **mmeewis-aep-enablement**:
 
 ![3-11-vsc-function-select-namespace.png](./images/3-11-vsc-function-select-namespace.png)
 
@@ -109,27 +110,27 @@ The payload send by Adobe Experience Platform to our Event Hub will only include
 
 ```json
 [{
-	"segmentMembership": {
-		"ups": {
-			"ca114007-4122-4ef6-a730-4d98e56dce45": {
-				"lastQualificationTime": "2020-08-31T10:59:43Z",
-				"status": "realized"
-			},
-			"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
-				"lastQualificationTime": "2020-08-31T10:59:56Z",
-				"status": "realized"
-			},
-			"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-				"lastQualificationTime": "2020-08-31T10:59:56Z",
-				"status": "realized"
-			}
-		}
-	},
-	"identityMap": {
-		"ecid": [{
-			"id": "08130494355355215032117568021714632048"
-		}]
-	}
+"segmentMembership": {
+"ups": {
+"ca114007-4122-4ef6-a730-4d98e56dce45": {
+"lastQualificationTime": "2020-08-31T10:59:43Z",
+"status": "realized"
+},
+"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+},
+"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+}
+}
+},
+"identityMap": {
+"ecid": [{
+"id": "08130494355355215032117568021714632048"
+}]
+}
 }]
 ```
 
@@ -141,7 +142,7 @@ You can test the function to see if it returns your segments (next to the **all*
 https://adobeioruntime.net/api/v1/web/mmeewis-ns/aep-segment/getSegmentDefinitionsForLdapIncludingAll.json?ldap=<your ldap>
 ```
 
-The response will have quite a few segments that start with **all**, it should also include **&lt;your ldap&gt; - Luma Sports Fan** segment. If not, then you naming of the segment is probably not correct:
+The response will have quite a few segments that start with **all**, it should also include **your ldap - Luma Sports Fan** segment. If not, then you naming of the segment is probably not correct:
 
 ```json
 {
@@ -178,7 +179,7 @@ module.exports = async function (context, eventHubMessages) {
     
     if (!segmentResponse.ok) {
       throw new Error(`request to '${apiEndpoint}' failed with status code '${segmentResponse.status}'`)
-	}
+    }
 
     const segmentDefinitions = await segmentResponse.json();
     
@@ -234,7 +235,7 @@ In the storage account wizard select + Create new storage account:
 
 ![3-18-vsc-run-storage-account.png](./images/3-18-vsc-run-storage-account.png)
 
-Enter the name of the storage account, use the format ldapaepstorage, for example **mmeewisaepstorage** and hit enter:
+Enter the name of the storage account, use the format **ldapaepstorage**, for example **mmeewisaepstorage** and hit enter:
 
 ![3-19-vsc-run-storage-account-name.png](./images/3-19-vsc-run-storage-account-name.png)
 

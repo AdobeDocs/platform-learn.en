@@ -54,7 +54,7 @@ Click **Create**.
 
 ![1-07-namespace-create.png](./images/1-07-namespace-create.png)
 
-The deployment of your resource group can take 1-2 minutes, when succesful you will see the following screen:
+The deployment of your resource group can take 1-2 minutes, when successful you will see the following screen:
 
 ![1-08-namespace-deploy.png](./images/1-08-namespace-deploy.png)
 
