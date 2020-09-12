@@ -1,5 +1,6 @@
 ---
 user-guide-title: Getting Started with Experience Platform for Data Architects and Data Engineers
+breadcrumb-title: Getting Started Guide for Data Architects
 user-guide-url: /content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html
 audience: all
 ---
