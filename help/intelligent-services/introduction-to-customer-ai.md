@@ -14,7 +14,7 @@ thumbnail: 32664.jpg
 
 A high-level overview of how marketers can leverage Customer AI to generate customer predictions.
 
->[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32664?quality=12&learn=on)
 
 ## Additional Resources
 

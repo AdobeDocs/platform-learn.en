@@ -14,7 +14,7 @@ thumbnail: 32667.jpg
 
 A high-level overview of how marketers and analysts can leverage Attribution AI to understand the impact of their marketing channels and campaigns.
 
->[!VIDEO](https://video.tv.adobe.com/v/32667?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32667?quality=12&learn=on)
 
 ## Additional Resources
 

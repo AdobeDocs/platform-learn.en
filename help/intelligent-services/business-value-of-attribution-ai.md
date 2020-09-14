@@ -15,7 +15,7 @@ thumbnail: 40375.jpg
 This video shows how marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers’ journeys with Attribution AI. Attribution AI, as part of Intelligent Services is a multi-channel, algorithmic attribution service that calculates the influence and incremental impact of customer interactions against specified outcomes. 
 
 
->[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40375?quality=12&learn=on)
 
 ## Additional Resources
 

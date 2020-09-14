@@ -14,7 +14,7 @@ thumbnail: 40374.jpg
 
 This video shows how Customer AI enriches customer profiles with AI-based propensities and empowers customer segmentation and targeting efforts.
 
->[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40374?quality=12&learn=on)
 
 ## Additional Resources
 
