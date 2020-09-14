@@ -7,7 +7,7 @@ kt: 2696
 audience: architect
 doc-type: video
 activity: understand
-thumbnail: 27105.png
+thumbnail: 27105.jpg
 ---
 
 # Understanding the XDM System & Experience Data Model

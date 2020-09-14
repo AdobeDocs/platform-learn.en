@@ -7,7 +7,7 @@ kt: 3800
 audience: 
 doc-type: video
 activity: understand
-thumbnail: 29694.png
+thumbnail: 29694.jpg
 ---
 
 # Understanding Source Connectors

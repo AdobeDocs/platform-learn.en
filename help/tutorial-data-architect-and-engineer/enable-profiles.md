@@ -7,7 +7,7 @@ kt: 4348
 audience: data architect
 doc-type: tutorial
 activity: implement
-thumbnail: 4348-enable-profiles.png
+thumbnail: 4348-enable-profiles.jpg
 ---
 
 # Enable Real-time Customer Profiles

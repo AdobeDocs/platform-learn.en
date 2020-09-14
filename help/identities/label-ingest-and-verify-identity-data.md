@@ -8,7 +8,7 @@ kt: 2707
 doc-type: feature video
 activity: use
 team: TM
-thumbnail: 28167.png
+thumbnail: 28167.jpg
 ---
 
 # Label, Ingest, and Verify Identity Data

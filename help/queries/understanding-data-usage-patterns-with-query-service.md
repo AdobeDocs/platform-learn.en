@@ -7,7 +7,7 @@ kt: 3715
 audience: developer,data engineer,architect
 doc-type: video
 activity: understand
-thumbnail: 29811.png
+thumbnail: 29811.jpg
 ---
 
 # Understanding Data Usage Patterns with Query Service

@@ -7,7 +7,7 @@ kt: 3821
 audience: implementer, developer, architect, marketer
 doc-type: video
 activity: understand
-thumbnail: 29762.png
+thumbnail: 29762.jpg
 ---
 
 # Understanding the Real-time Customer Data Platform User Interface and Workflow

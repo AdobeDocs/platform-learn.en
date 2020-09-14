@@ -7,7 +7,7 @@ kt: 2697
 audience: architect
 doc-type: video
 activity: setup
-thumbnail: 27012.png
+thumbnail: 27012.jpg
 ---
 
 # Create your first Schema with out-of-the-box components

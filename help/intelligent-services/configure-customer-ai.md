@@ -7,7 +7,7 @@ kt: 4172
 audience: all
 doc-type: use
 activity: understand
-thumbnail: 32665.png
+thumbnail: 32665.jpg
 ---
 
 # Configure Customer AI
@@ -20,5 +20,6 @@ Learn how to create an instance of Customer AI to predict customer behavior.
 
 * [Introduction to Intelligent Services (video)](introduction-to-intelligent-services.md)
 * [Introduction to Customer AI (video)](introduction-to-customer-ai.md)
+* [Business Value of Customer AI (video)](business-value-of-customer-ai.md)
 * [Use Customer AI Scores and Insights (video)](use-customer-ai-scores-and-insights.md)
 * [Customer AI (documentation)](https://docs.adobe.com/content/help/en/experience-platform/intelligent-services/customer-ai/overview.html)

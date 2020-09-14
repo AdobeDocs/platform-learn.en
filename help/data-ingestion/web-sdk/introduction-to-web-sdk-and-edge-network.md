@@ -7,7 +7,7 @@ kt: 5205
 audience: engineer
 doc-type: feature video
 activity: understand
-thumbnail: 34141.png
+thumbnail: 34141.jpg
 ---
 
 # Introduction to the Adobe Experience Platform Web SDK and Edge Network

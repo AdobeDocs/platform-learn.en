@@ -6,7 +6,7 @@ kt: 3826
 audience: 
 doc-type: video
 activity: setup
-thumbnail: 29711.png
+thumbnail: 29711.jpg
 ---
 
 # Ingest Data using the Salesforce CRM Source Connector

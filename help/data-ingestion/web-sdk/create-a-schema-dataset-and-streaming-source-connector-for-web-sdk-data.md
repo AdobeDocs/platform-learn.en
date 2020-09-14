@@ -7,7 +7,7 @@ kt: 4351
 audience: engineer
 doc-type: technical video
 activity: use
-thumbnail: 35395.png
+thumbnail: 35395.jpg
 ---
 
 # Create a schema, dataset, and streaming source connector for Web SDK data

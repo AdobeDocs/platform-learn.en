@@ -7,7 +7,7 @@ kt: 4348
 audience: data architect
 doc-type: tutorial
 activity: implement
-thumbnail: 4348-create-merge-policies.png
+thumbnail: 4348-create-merge-policies.jpg
 ---
 
 # Create merge policies

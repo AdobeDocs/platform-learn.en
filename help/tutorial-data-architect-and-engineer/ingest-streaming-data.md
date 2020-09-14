@@ -7,7 +7,7 @@ kt: 4348
 audience: data engineer
 doc-type: tutorial
 activity: implement
-thumbnail: 4348-ingest-streaming-data.png
+thumbnail: 4348-ingest-streaming-data.jpg
 ---
 
 # Ingest streaming data

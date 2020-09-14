@@ -7,7 +7,7 @@ kt: 2700
 audience: engineer
 doc-type: video
 activity: use
-thumbnail: 27269.png
+thumbnail: 27269.jpg
 ---
 
 # Create Datasets and Ingest Data

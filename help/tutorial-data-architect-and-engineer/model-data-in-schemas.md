@@ -7,7 +7,7 @@ kt: 4348
 audience: data architect,data engineer
 doc-type: tutorial
 activity: implement
-thumbnail: 4348-model-data-in-schemas.png
+thumbnail: 4348-model-data-in-schemas.jpg
 ---
 
 # Model data in schemas

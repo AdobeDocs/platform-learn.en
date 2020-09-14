@@ -7,7 +7,7 @@ kt: 2698
 audience: architect
 doc-type: video
 activity: setup
-thumbnail: 27013.png
+thumbnail: 27013.jpg
 ---
 
 # Create your own Mixins and Classes

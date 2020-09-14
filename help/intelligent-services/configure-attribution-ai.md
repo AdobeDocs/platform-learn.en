@@ -7,7 +7,7 @@ kt: 4174
 audience: all
 doc-type: video
 activity: use
-thumbnail: 32668.png
+thumbnail: 32668.jpg
 ---
 
 # Configure Attribution AI
@@ -20,5 +20,6 @@ Learn how to create an instance of Attribution AI to understand the impact of yo
 
 * [Introduction to Intelligent Services (video)](introduction-to-intelligent-services.md)
 * [Introduction to Attribution AI (video)](introduction-to-attribution-ai.md)
+* [Business Value of Attribution AI (video)](business-value-of-attribution-ai.md)
 * [Use Attribution AI Scores and Insights (video)](use-attribution-ai-scores-and-insights.md)rm/intelligent-services/customer-ai/overview.html)
 * [Attribution AI (documentation)](https://docs.adobe.com/content/help/en/experience-platform/intelligent-services/attribution-ai/overview.html)

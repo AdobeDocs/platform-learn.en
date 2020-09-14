@@ -7,7 +7,7 @@ kt: 3797
 audience: implementer, developer, architect, marketer
 doc-type: feature video
 activity: understand
-thumbnail: 29707.png
+thumbnail: 29707.jpg
 ---
 
 # Understanding Destinations

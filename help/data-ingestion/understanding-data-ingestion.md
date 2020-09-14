@@ -7,7 +7,7 @@ kt: 2699
 audience: engineer
 doc-type: video
 activity: understand
-thumbnail: 27106.png
+thumbnail: 27106.jpg
 ---
 
 # Understanding Data Ingestion
