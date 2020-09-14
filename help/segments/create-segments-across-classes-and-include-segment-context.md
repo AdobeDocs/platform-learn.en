@@ -7,7 +7,7 @@ kt: 3697
 audience: marketer
 doc-type: video
 activity: use
-thumbnail: 28947.png
+thumbnail: 28947.jpg
 ---
 
 # Create Segments Across Classes and Include Segment Context

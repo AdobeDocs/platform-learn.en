@@ -7,7 +7,7 @@ kt: 4173
 audience: all
 doc-type: video
 activity: use
-thumbnail: 32669.png
+thumbnail: 32669.jpg
 ---
 
 # Use Attribution AI Scores and Insights

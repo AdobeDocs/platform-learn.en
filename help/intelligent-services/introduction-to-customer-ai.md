@@ -7,7 +7,7 @@ kt: 4807
 audience: all
 doc-type: video
 activity: understand
-thumbnail: 32664.png
+thumbnail: 32664.jpg
 ---
 
 # Introduction to Customer AI

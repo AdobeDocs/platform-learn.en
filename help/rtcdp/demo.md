@@ -7,7 +7,7 @@ kt: 5291
 audience: 
 doc-type: video
 activity: understand
-thumbnail: 34558.png
+thumbnail: 34558.jpg
 ---
 
 # Demo of Real-time Customer Data Platform

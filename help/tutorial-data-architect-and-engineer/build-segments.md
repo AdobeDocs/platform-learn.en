@@ -7,7 +7,7 @@ kt: 4348
 audience: data architect
 doc-type: tutorial
 activity: implement
-thumbnail: 4348-build-segments.png
+thumbnail: 4348-build-segments.jpg
 ---
 
 # Build segments

@@ -7,7 +7,7 @@ kt: 3137
 audience: data scientist,data engineer,architect
 doc-type: video
 activity: understand
-thumbnail: 30567.png
+thumbnail: 30567.jpg
 ---
 
 # Understanding Data Science Workspace

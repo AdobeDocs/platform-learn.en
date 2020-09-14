@@ -7,7 +7,7 @@ kt: 4348
 audience: data engineer
 doc-type: tutorial
 activity: implement
-thumbnail: 4348-ingest-batch-data.png
+thumbnail: 4348-ingest-batch-data.jpg
 ---
 
 # Ingest batch data

@@ -7,7 +7,7 @@ kt: 2704
 audience: marketer
 doc-type: video
 activity: use
-thumbnail: 27254.png
+thumbnail: 27254.jpg
 ---
 
 # Create Segments

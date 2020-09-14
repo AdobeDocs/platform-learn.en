@@ -7,7 +7,7 @@ kt: 4348
 audience: data architect,data engineer
 doc-type: tutorial
 activity: implement
-thumbnail: 4348-run-queries.png
+thumbnail: 4348-run-queries.jpg
 ---
 
 # Run queries

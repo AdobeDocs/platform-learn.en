@@ -7,7 +7,7 @@ kt: 4348
 audience: data engineer
 doc-type: tutorial
 activity: implement
-thumbnail: 4348-subscribe-to-data-ingestion-events.png
+thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
 ---
 
 # Subscribe to data ingestion events

@@ -7,7 +7,7 @@ kt: 5628
 audience: marketer
 doc-type: value video
 activity: use
-thumbnail: 36184.png
+thumbnail: 36184.jpg
 ---
 
 # Demo of streaming segmentation

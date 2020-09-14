@@ -7,7 +7,7 @@ kt: 4174
 audience: all
 doc-type: video
 activity: use
-thumbnail: 32668.png
+thumbnail: 32668.jpg
 ---
 
 # Configure Attribution AI

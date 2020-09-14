@@ -7,7 +7,7 @@ kt: 4171
 audience: all
 doc-type: video
 activity: use
-thumbnail: 32666.png
+thumbnail: 32666.jpg
 ---
 
 # Use Customer AI Scores and Insights

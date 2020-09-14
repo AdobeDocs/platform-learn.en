@@ -7,7 +7,7 @@ kt: 4172
 audience: all
 doc-type: use
 activity: understand
-thumbnail: 32665.png
+thumbnail: 32665.jpg
 ---
 
 # Configure Customer AI
