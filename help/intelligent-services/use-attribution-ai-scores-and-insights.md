@@ -14,7 +14,7 @@ thumbnail: 32669.jpg
 
 Learn how to use the Attribution AI insights page to understand the ROI of marketing channels and campaigns.
 
->[!VIDEO](https://video.tv.adobe.com/v/32669?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32669?quality=12&learn=on)
 
 
 ## Additional Resources

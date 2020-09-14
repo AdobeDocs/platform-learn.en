@@ -1,6 +1,6 @@
 ---
-title: Introduction to Attribution AI in Adobe Experience Platform
-description: This video shows how marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers’ journeys with Attribution AI. Attribution AI, as part of Intelligent Services is a multi-channel, algorithmic attribution service that calculates the influence and incremental impact of customer interactions against specified outcomes.
+title: Business Value of Attribution AI
+description: This video shows how marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers’ journeys with Attribution AI.
 feature: intelligent-services, attribution-ai
 topics:
 kt: 6248
@@ -10,12 +10,11 @@ activity: understand
 thumbnail: 40375.jpg
 ---
 
-# Introduction to Attribution AI
+# Business Value of Attribution AI
 
-This video shows how marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers’ journeys with Attribution AI. Attribution AI, as part of Intelligent Services is a multi-channel, algorithmic attribution service that calculates the influence and incremental impact of customer interactions against specified outcomes. 
+This video shows how marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers’ journeys with Attribution AI.
 
-
->[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40375?quality=12&learn=on)
 
 ## Additional Resources
 

@@ -14,7 +14,7 @@ thumbnail: 32668.jpg
 
 Learn how to create an instance of Attribution AI to understand the impact of your marketing channels and campaigns.
 
->[!VIDEO](https://video.tv.adobe.com/v/32668?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32668?quality=12&learn=on)
 
 ## Additional Resources
 

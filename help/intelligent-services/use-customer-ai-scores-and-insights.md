@@ -14,7 +14,7 @@ thumbnail: 32666.jpg
 
 Learn how to use Customer AI propensity scores and insights to convert and retain customers.
 
->[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
 
 
 ## Additional Resources
