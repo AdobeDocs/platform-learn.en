@@ -150,7 +150,7 @@ Set Description to: `Send Text to Slack`.
 
 For the **URL Configuration**, use this:
 
-* URL: `https://hooks.slack.com/services/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`
+* URL: `https://hooks.slack.com/services/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`
 * Method: **POST**
 
 You don't need to change the Header Fields.
