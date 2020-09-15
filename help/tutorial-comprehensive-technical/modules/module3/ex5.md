@@ -19,7 +19,7 @@ In the Real-time Customer Profile, all profile data is shown alongside event dat
 
 Go to Postman.
 
-Locate the collection: **_Adobe Experience Platform Enablement**. In this collection, you'll see a folder **2. Segmentation**. We'll be using these calls in this exercise.
+Locate the collection: **_Adobe Experience Platform Enablement**. In this collection, you'll see a folder **2. Segmentation**. We'll be using these requests in this exercise.
 
 ![Segmentation](./images/pmdtl.png)
 
@@ -27,22 +27,22 @@ What we'll do next is follow all the required steps to create a segment through 
 
 ### Step 1 - Create a Segment Definition
 
-Click on the call named **Step 1 - Profile: Create A Segment Definition**.
+Click on the request named **Step 1 - Profile: Create A Segment Definition**.
 
 ![Segmentation](./images/s1_call.png)
 
-Go the the **Body** section of this call.
+Go the the **Body** section of this request.
 
 ![Segmentation](./images/s1_body.png)
 
-In the **Body** of this call, you'll see the following:
+In the **Body** of this request, you'll see the following:
 
 ![Segmentation](./images/s1_bodydtl.png)
 
-The language used for this call is called Profile Query Language, or **PQL**.
+The language used for this request is called Profile Query Language, or **PQL**.
 You can find more info and documentation about PQL [here](https://docs.adobe.com/help/en/experience-platform/segmentation/pql/overview.html). 
 
-Attention: please update the variable **name** in the below call by replacing **ldap** with your specific **ldap**.
+Attention: please update the variable **name** in the below request by replacing **ldap** with your specific **ldap**.
 
 ```json
 {
@@ -66,6 +66,14 @@ After adding your specific **ldap**, the Body should look similar to this:
 }
 ```
 
+You should also verify the **Header** - fields of your request. Go to **Headers**. You'll then see this:
+
+![Postman](./images/s1headers.png)
+
+>[!NOTE]
+>
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. If you're using the **Production** sandbox, the value for the key **x-sandbox-name** should be set to **prod**. If you're using another sandbox, please verify what the sandbox name by viewing the details of your Configuration ID.
+
 Now, click the blue **Send** button to create the segment and view the results of that.
 
 ![Segmentation](./images/s1_bodydtl_results.png)
@@ -84,9 +92,17 @@ Go to Postman.
 
 ![Segmentation](./images/pmdtl.png)
 
-In your Postman collection, click on the call named **Step 2 - POST Segment Job** to open it.
+In your Postman collection, click on the request named **Step 2 - POST Segment Job** to open it.
 
 ![Segmentation](./images/s2_call.png)
+
+You should also verify the **Header** - fields of your request. Go to **Headers**. You'll then see this:
+
+![Postman](./images/s2headers.png)
+
+>[!NOTE]
+>
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. If you're using the **Production** sandbox, the value for the key **x-sandbox-name** should be set to **prod**. If you're using another sandbox, please verify what the sandbox name by viewing the details of your Configuration ID.
 
 Click on the blue **Send** button.
 
@@ -103,9 +119,17 @@ Go to Postman.
 
 ![Segmentation](./images/pmdtl.png)
 
-In your Postman collection, click on the call named **Step 3 - GET Segment Job status**.
+In your Postman collection, click on the request named **Step 3 - GET Segment Job status**.
 
 ![Segmentation](./images/s3_call.png)
+
+You should also verify the **Header** - fields of your request. Go to **Headers**. You'll then see this:
+
+![Postman](./images/s3headers.png)
+
+>[!NOTE]
+>
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. If you're using the **Production** sandbox, the value for the key **x-sandbox-name** should be set to **prod**. If you're using another sandbox, please verify what the sandbox name by viewing the details of your Configuration ID.
 
 Click on the blue **Send** button.
 
@@ -115,7 +139,7 @@ You should see a similar result:
 
 In this example, the **status** of the job is set to **QUEUED**.
 
-Repeat this call by clicking the blue **Send** button every couple of minutes until the **status** is set to **SUCCEEDED**.
+Repeat this request by clicking the blue **Send** button every couple of minutes until the **status** is set to **SUCCEEDED**.
 
 ![Segmentation](./images/s3_status_succeeded.png)
 
