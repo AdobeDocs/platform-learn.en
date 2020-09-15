@@ -7,13 +7,14 @@ kt: 2697
 audience: architect
 doc-type: video
 activity: setup
+thumbnail: 27012.jpg
 ---
 
 # Create your first Schema with out-of-the-box components
 
 This video shows you how to create a simple Schema in Adobe Experience Platform using standard classes and mixins.
 
->[!VIDEO](https://video.tv.adobe.com/v/27012?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27012?quality=12&learn=on)
 
 ## Additional Resources
 

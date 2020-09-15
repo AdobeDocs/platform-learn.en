@@ -5,8 +5,9 @@ feature: debugger
 topics:
 kt: 4723
 audience: engineer
-doc-type: feature-video
+doc-type: feature video
 activity: troubleshoot
+thumbnail: 32156.jpg
 ---
 
 # Introduction to the Adobe Experience Platform Debugger

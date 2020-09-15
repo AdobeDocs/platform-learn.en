@@ -1,5 +1,6 @@
 ---
 user-guide-title: Comprehensive Technical Tutorial for Adobe Experience Platform
+breadcrumb-title: Platform Comprehensive Tutorial
 user-guide-url: /content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html
 audience: all
 ---

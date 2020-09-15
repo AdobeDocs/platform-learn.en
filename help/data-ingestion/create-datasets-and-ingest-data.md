@@ -7,13 +7,14 @@ kt: 2700
 audience: engineer
 doc-type: video
 activity: use
+thumbnail: 27269.jpg
 ---
 
 # Create Datasets and Ingest Data
 
 Data ingestion gives you the ability to bring your data together into one open and scalable platform. When your data is mapped to schemas it becomes easy to combine data from multiple sources and create real-time customer profiles.
 
->[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
 
 ## Additional Resources
 
