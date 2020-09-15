@@ -47,6 +47,10 @@ Next, add a description like this `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
+Next is the **Event ID Type** selection. Select **System Generated**
+
+![ACOP](./images/eventidtype.png) 
+
 Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `AEP Demo - Account Creation Schema v.1`.
 
 ![ACOP](./images/eventschema.png)
@@ -57,7 +61,7 @@ After selecting the Schema, you'll see a number of fields being selected in the 
 
 You'll see a **Fields** window popup, in which you need to select the fields that we need to personalize the email.
 
-![ACOP](./images/eventfields.png)
+![ACOP](./images/eventfields.png) 
 
 In the object **--aepTenantId--.accountcreation**, please make sure to select the fields **firstName** and **lastName**.
 
@@ -70,6 +74,10 @@ In the object **--aepTenantId--.brand**, please make sure to select the fields *
 Click **Save** to save your changes.
 
 ![ACOP](./images/save.png)
+
+You should then see this:
+
+![ACOP](./images/eventdoned.png) 
 
 Click **Save** once more to save your changes.
 

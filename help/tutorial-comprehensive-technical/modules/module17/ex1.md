@@ -44,69 +44,47 @@ In the popup, click **No, continue signing up**.
 
 ![Sign in](./images/signinno.png)
 
-Enter your **email address**. Click Next.
+You'll then see this:
 
 ![Sign in](./images/signinno-01.png)
 
-If you are prompted that an account exists already with another Microsoft service, click **Create a new account instead**. Do not reuse an existing account as that may generate conflicts and will block you in future exercises.
+Fill out the required fields and click **Next**.
 
 ![Sign in](./images/signinno-02.png)
-
-Enter your name, a real mobile number, your company details and country. Click **Next**.
-
-![Sign in](./images/signinno-03.png)
-
-You're now asked to verify your account through a text message. Click **Send Verification Code**.
-
-![Sign in](./images/signinno-04.png)
-
-You will receive a text message with a Verification code. Enter the code and click **Verify**.
-
-![Sign in](./images/signinno-05.png)
 
 You now need to create your business identity.
 
 ![Sign in](./images/signinno-05a.png)
 
-You need to enter a custom domain for your business. For the domain, follow this naming convention:
+For the **User ID**, enter **admin**.
+
+For the password, use: **Password_1234**
+
+You also need to enter a custom domain for your business. For the domain, follow this naming convention:
 
 - aepdemo**ldap**X
 
 Replace **ldap** by your ldap.
 
-Replace X by a number. For instance, 1.
+Replace X by a number. For instance, 5.
 
-In this example, the custom domain should be named: **aepdemovangeluw1**. Click **Check availability**.
+In this example, the custom domain should be named: **aepdemovangeluw5**. 
 
-![Sign in](./images/signinno-06.png)
+If your custom domain is available, click **Create my account**.
 
-If your custom domain is available, click **Next**.
+You're now asked to verify your account through a text message. Click **Text me**.
 
-![Sign in](./images/next.png)
+![Sign in](./images/signinno-04.png)
+
+You will receive a text message with a Verification code. Enter the code and click **Next**.
+
+![Sign in](./images/signinno-05.png)
 
 Store the custom domain in a text file on your computer for future reference as you'll need the custom domain in future exercises.
 
-You'll then see this.
+![Sign in](./images/signinno-05b.png)
 
-![Sign in](./images/admin.png)
-
-Use the following values:
-
-- Name: **admin**
-- Password: **Password_1234**
-- Confirm password: **Password_1234**
-
-![Sign in](./images/signinno-07.png)
-
-Click **Sign up**.
-
-Your account is now being created, this might take 1-2 minutes.
-
-![Sign in](./images/signinno-08.png)
-
-Finally, click **Let’s go**.
-
-![Sign in](./images/signinno-08a.png)
+Click **Set up**.
 
 You may be asked to sign-in. If you need to sign in, make sure to use the User ID you received by email.
 

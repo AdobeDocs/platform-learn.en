@@ -11,84 +11,126 @@ activity:
 
 In this exercise, you'll test and trigger the Orchestrated Journey you configured in this module.
 
-* Go to your Platform Demo website.
+## Update your Configuration ID
 
-* You'll be redirected to the **Admin** page. Go to **Select LDAP**.
+Before you can test your journey, you'll need to update your Configuration ID settings and enter the EventID of the **geofenceEntryLdap** event on the **Update Configuration ID** page of the AEP Demo website Admin pages.
 
-   ![Demo](./images/1.png)
+Go to [https://public.aepdemo.net/admin_configuration_update.html](https://public.aepdemo.net/admin_configuration_update.html).
 
-* Select your LDAP and click **Save**.
+You'll then see this:
 
-   ![Demo](./images/1a.png)
+![Launch Setup](./images/cfgid1.png)
 
-* Back on the **Admin** page, click **Select Brand**.
+Click **Load Configuration**. After clicking **Load Configuration**, scroll down until you see the fields **EventID - Geofence**.
 
-   ![Demo](./images/2.png)
+![Launch Setup](./images/cfgid2.png)
 
-* Select a brand from the list of available brands. Click **Save**.
+In exercise 12.1, you created your event and collected the EventID. You can find it here:
 
-   ![Demo](./images/3.png)
+![Demo](./images/fieldseyepayloadev.png)
 
-* Wait 10 seconds for the brand to load.
+In this example, the `eventID` is `d9b5069cebd47bb3394e192da031d933a9e10d67046dadde999ec7401eb7bd51`.
 
-* From the Admin homepage, click the logo of your brand.
+Go back to the **Update Configuration ID** screen and paste the code that you copied in the field **EventID - Geofence**.
 
-   ![Demo](./images/3a.png)
+![Launch Setup](./images/cfgid3.png)
 
-* You're now on the homepage of your brand.
+Next, scroll down and click **Update Configuration ID**.
+
+![Launch Setup](./images/cfgid5.png)
+
+After this change, your Configuration ID is ready for testing!
+
+## Trigger your journey
+
+For every demonstration, you'll need to use a fresh, incognito browser window. After opening a fresh, incognito browser window, go to [https://public.aepdemo.net/](https://public.aepdemo.net/).
+
+You'll be redirected to this page:
+
+![DSN](../module0/images/web1.png)
+
+Enter the Configuration ID you created in the previous step. Click **Load Configuration**.
+
+![DSN](../module0/images/web2.png)
+
+You'll then see this:
+
+![DSN](../module0/images/web3.png)
+
+Scroll down so you can see the **Save Configuration** button. Click **Save Configuration**.
+
+![DSN](../module0/images/web4.png)
+
+After a couple of seconds you'll be redirected to the Admin homepage and you'll see this:
+
+![DSN](../module0/images/cfg6a.png)
+
+Go to **Select LDAP** in the left side menu, select your LDAP in the list and click **Save**.
+
+![DSN](../module0/images/web61.png)
+
+Go to **Select Brand** in the left side menu, select a brand of choice and click **Save**.
+
+![DSN](../module0/images/web7.png)
+
+You'll now see a similar Admin homepage. Click the brand logo to go to the demo website.
+
+![DSN](../module0/images/web8.png)
+
+You'll then be redirected to the **Luma Retail** homepage.
 
    ![Demo](./images/lb_home.png)
 
-* Go to the Register/Login page
+Go to the Register/Login page
   
-   >[!IMPORTANT]
-   >
-   > Please use the following naming convention for your Mobile Phone Number:
-   > If your number is 0473622044, you have to enter **+32473622044+DDMMYYYY-XX** as a number, otherwise the sending of SMSs doesn't work. For instance, **+32473622044+26052020-1**
+>[!IMPORTANT]
+>
+> Please use the following naming convention for your Mobile Phone Number:
+> If your number is 0473622044, you have to enter **+32473622044+DDMMYYYY-XX** as a number, otherwise the sending of SMSs doesn't work. For instance, **+32473622044+26052020-1**
   
-  ![Demo](./images/lb_register.png)
+![Demo](./images/lb_register.png)
 
-* Fill out your registration details and click **CREATE ACCOUNT**.
+Fill out your registration details and click **CREATE ACCOUNT**.
 
-* After login, go to the Homepage of the website and open the X-ray panel, go to Real-time Customer Profile. On the X-ray panel, you should see all of your personal data displayed.
+After login, go to the Homepage of the website and open the X-ray panel, go to Real-time Customer Profile. On the X-ray panel, you should see all of your personal data displayed.
 
-   ![Demo](./images/lb_x_loggedin.png)
+![Demo](./images/lb_x_loggedin.png)
 
-* In the website's menu, click on the **3 dots** and select **Admin**.
+In the website's menu, click on the **3 dots** and select **Admin**.
 
-   ![Demo](./images/gf10.png)
+![Demo](./images/gf10.png)
 
-* You'll then see the **Admin** page. Click **Send Geofence Event**.
+You'll then see the **Admin** page. Click **Send Geofence Event**.
 
-   ![Demo](./images/gf13.png)
+![Demo](./images/gf13.png)
 
-* You'll then see this:
+You'll then see this:
 
-   ![Demo](./images/gf14.png)
+![Demo](./images/gf14.png)
 
-* On the **Send Geofence Event** page, click **Allow** on the prompt to **Know your location**.
+On the **Send Geofence Event** page, click **Allow** on the prompt to **Know your location**.
 
-   ![Demo](./images/gf15.png)
+![Demo](./images/gf15.png)
 
-* After 1-2 seconds (sometimes this can take up to 1-2 minutes), you'll see the coordinates, city and country of your approximate location. Once the coordinates are shown, you have to enter your Orchestration eventID from 1. In this example, the **eventID** is **d9b5069cebd47bb3394e192da031d933a9e10d67046dadde999ec7401eb7bd51**.
+After 1-2 seconds (sometimes this can take up to 1-2 minutes), you'll see the coordinates, city and country of your approximate location. Once the coordinates are shown, you have to enter your Orchestration eventID from 1. In this example, the **eventID** is **d9b5069cebd47bb3394e192da031d933a9e10d67046dadde999ec7401eb7bd51**.
 
-   ![Demo](./images/gf16.png)
+![Demo](./images/gf16.png)
 
-* Click **Send Geofence Event**. You'll get a visual confirmation when the Geofence Event has been sent.
+Click **Send Geofence Event**. You'll get a visual confirmation when the Geofence Event has been sent.
 
-  ![Demo](./images/gf17.png)
+![Demo](./images/gf17.png)
 
-* You should then receive a SMS Message on the Mobile Phone that was attached to your Real-time Customer Profile. The SMS Message will depend on the current weather and the temperature, just like you configured in your Journey.
+You should then receive a SMS Message on the Mobile Phone that was attached to your Real-time Customer Profile. The SMS Message will depend on the current weather and the temperature, just like you configured in your Journey.
 
-   >[!NOTE]
-   >
-   >Twilio doesn't support Indian Mobile Numbers, so if you have an mobile phone number starting with +91, you won't receive any SMS. 
+>[!NOTE]
+>
+>Twilio doesn't support Indian Mobile Numbers, so if you have an mobile phone number starting with +91, you won't receive any SMS. 
 
-  ![Demo](./images/gf19.png)
+![Demo](./images/gf19.png)
 
-* The same message will also be sent to the Adobe Hands-On Lab Slack channel. Your trainer is able to show you the received messages in the Slack channel.
+The same message will also be sent to the Adobe Hands-On Lab Slack channel. Your trainer is able to show you the received messages in the Slack channel.
   
-  ![Demo](./images/gf18.png)
+![Demo](./images/gf18.png)
 
 Next Step: [Summary and benefits](./summary.md)
 
