@@ -77,7 +77,7 @@ Now you have something like this:
 
 ![RTCDP](./images/rtcdpgoogldv360new.png)
 
-FYI - If you have configured DV360/DBM integrations in the past for Adobe Audience Manager projects, it was also required to contact Google for this setup and request Google to **allowlist** Adobe to send segments to DV360/DBM. This step is still required and as such, Google needs to allowlist Adobe in order for Adobe Experience Platform to speak with Google DV360.
+FYI - If you have configured DV360/DBM integrations in the past for Adobe Audience Manager projects, it was also required to contact Google for this setup and request Google to **allow-list** Adobe to send segments to DV360/DBM. This step is still required and as such, Google needs to allow-list Adobe in order for Adobe Experience Platform to speak with Google DV360.
 
 Click **Create** to create your destination.
 

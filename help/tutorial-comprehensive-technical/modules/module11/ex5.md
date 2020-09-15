@@ -15,6 +15,129 @@ You can use FTP or SFTP as part of the dedicated destinations for each of these 
 
 In this module, you'll configure such a destination by making use of an AWS S3 bucket.
 
+## Create your S3 bucket
+
+Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you created in Module 4.
+
+![ETL](./images/awshome.png) 
+
+After logging in, you'll be redirected to the **AWS Management Console**.
+
+![ETL](./images/awsconsole.png)
+
+In the **Find Services** menu, search for **s3**.
+
+![ETL](./images/awsconsoles3.png)
+
+Click the first search result: **S3 - Scalable Storage in the Cloud**.
+
+You'll then see the **Amazon S3** homepage.
+
+![ETL](./images/s3home.png)
+
+Click the **Create Bucket** button.
+
+![ETL](./images/createbucket.png)
+
+In the **Create Bucket** screen, you need to configure two things:
+  
+- Name: use the name **aepmodule11LDAP** and replace LDAP by your LDAP. As an example, in this exercise the bucket name is **aepmodule11vangeluw**
+- Region: use the region **EU (Frankfurt) eu-central-1**
+
+![ETL](./images/bucketname.png) 
+
+Click the **Create** button.
+
+![ETL](./images/createbucket.png)
+
+You'll then see your bucket being created and will be redirected to the Amazon S3 homepage.
+
+![ETL](./images/S3homeb.png)
+
+### Set permissions to access your S3 bucket
+
+The next step is to setup access to your S3 bucket.
+
+To do that, go to [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home).
+
+Access to AWS resources is controlled by Amazon Identity and Access Management (IAM).
+
+You'll now see this page.
+
+![ETL](./images/iam.png)
+
+In the left menu, click **Users**.
+
+![ETL](./images/iammenu.png)
+
+You'll then see the **Users** screen.
+
+![ETL](./images/users.png)
+
+Click **Add User**.
+
+![ETL](./images/adduser.png)
+
+Next, configure your user:
+
+- User Name: use **s3_ldap_module11** as a name, so in this example the name is **s3_vangeluw_module11**.
+- AWS access type: select **Programmatic access**.
+
+![ETL](./images/configuser.png)
+
+Click **Next: Permissions**.
+
+![ETL](./images/nextperm.png)
+
+You'll then see this permissions screen. Click **Attach existing policies directly**.
+
+![ETL](./images/perm1.png) 
+
+Enter the search term **s3** to see all related S3 policies. Select the policy **AmazonS3FullAccess**.
+
+![ETL](./images/perm2.png)
+
+Click **Next: Tags**.
+
+![ETL](./images/nexttags.png) 
+
+On the **Tags** screen, there's no need to configure anything.
+
+![ETL](./images/perm3.png)
+
+Click **Next: Review**.
+
+Review your configuration.
+
+![ETL](./images/review.png)
+
+Click **Create User**.
+
+Your user is now created and you're seeing your Credentials to access your S3 environment. This is the only time you'll see your credentials so please write them down.
+
+![ETL](./images/cred.png)
+
+Click **Show** to see your Secret access key:
+
+![ETL](./images/cred1.png)
+
+>[!IMPORTANT]
+>
+>Store your credentials in a text-file in your computer.
+>
+> - Access key ID: ...
+> - Secret access key: ...
+>
+> Once you click **Close** you'll never see your credentials again!
+
+Click **Close**. 
+
+![ETL](./images/close.png)
+
+You've now successfully created an AWS S3 bucket and you've created a user with permissions to access this bucket.
+
+### Configure Destination in Adobe Experience Platform
+
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
@@ -39,11 +162,11 @@ Click on **Amazon S3** and then click on **+ Connect Destination**.
 
 ![RTCDP](./images/rtcdpsf.png)
 
-Select **New Account** as Account Type. Please use these credentials to connect to the S3 bucket:
+Select **New Account** as Account Type. Please use the S3 credentials that were given to you in the previous step:
 
 | Access Key ID             | Secret Access Key             |
 |:-----------------------:| :-----------------------:|
-| AKIA3EIEWDZXSSDIAWK5D |Cm5Ln5yWDgBGHNGj0osDvaCtvmAL3EdXAF38jiSfvo|
+| AKIA..... |Cm5Ln.....|
 
 ![RTCDP](./images/rtcdpsfs3.png)
 
@@ -69,8 +192,8 @@ As a naming convention, please use the following:
 |:-----------------------:| :-----------------------:|
 | Name |AWS - S3 - ldap, replace **ldap** with your ldap.|
 | Description |AWS - S3 - ldap, replace **ldap** with your ldap.|
-| Bucket Name |aepsfmc|
-| Folder Path |arn:aws:s3:::aepsfmc|
+| Bucket Name |aepmodule11vangeluw|
+| Folder Path |/|
 
 ![RTCDP](./images/rtcdpsfs3connect2.png)
 
@@ -90,7 +213,7 @@ After creating the destination, you can select segments to send to your AWS S3 d
 
 ![RTCDP](./images/rtcdpsfs3connect2created1.png)
 
-In the list of segments, search for the segment you created in 1 and select it.
+In the list of segments, search for the segment you created in exercise 1 and select it.
 
 ![RTCDP](./images/s3a.png)
 
