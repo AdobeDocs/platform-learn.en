@@ -19,33 +19,39 @@ In today's world, responding to a customer's behavior needs to be real-time. One
 
 ## Identify the behavior you want to react to
 
-Go to your Platform Demo website.
+For every demonstration, you'll need to use a fresh, incognito browser window. After opening a fresh, incognito browser window, go to [https://public.aepdemo.net/](https://public.aepdemo.net/).
 
-You'll be redirected to the **Admin** page
+You'll be redirected to this page:
 
-![Demo](./images/1.png)
-  
-On the **Admin** page, go to **Select LDAP** (for Module 11, selecting an LDAP is a requirement). Select your LDAP and click **Save**.
+![DSN](../module0/images/web1.png)
 
-![Demo](./images/ldap.png)
+Enter the Configuration ID you created in the previous step. Click **Load Configuration**.
 
-Go back to the **Admin** page.
+![DSN](../module0/images/web2.png)
 
-![Demo](./images/1a.png)
+You'll then see this:
 
-Go to **Select Brand**.
-  
-![Demo](./images/2.png)
-  
-Select a brand from the list of available brands. Click **Save**. In this example, we'll use **Luma Retail**.
-  
-![Demo](./images/3.png)
-  
-Wait 10 seconds for the brand to load. You'll be redirect to the Admin Home.
-  
-From Admin Home, click the logo of your brand.
+![DSN](../module0/images/web3.png)
 
-![Demo](./images/adm_home.png)
+Scroll down so you can see the **Save Configuration** button. Click **Save Configuration**.
+
+![DSN](../module0/images/web4.png)
+
+After a couple of seconds you'll be redirected to the Admin homepage and you'll see this:
+
+![DSN](../module0/images/cfg6a.png)
+
+Go to **Select LDAP** in the left side menu, select your LDAP in the list and click **Save**.
+
+![DSN](../module0/images/web61.png)
+
+Go to **Select Brand** in the left side menu, select a brand of choice and click **Save**.
+
+![DSN](../module0/images/web7.png)
+
+You'll now see a similar Admin homepage. Click the brand logo to go to the demo website.
+
+![DSN](../module0/images/web8.png)
 
 You'll then be redirected to the **Luma Retail** homepage.
 
@@ -106,7 +112,7 @@ Every time you add an element to the segment builder, you can click the **Refres
 
 As we're using a shared environment, you also need to add your **ldap** as a filter for this segment.
 
-In the **Events** search box, enter **ldap**. Take the second result, which references the path **XDM ExperienceEvent > Apac Sc > brand > ldap**.
+In the **Events** search box, enter **ldap**. Take the second result, which references the path **XDM ExperienceEvent > --aepTenantIdSchema-- > brand > ldap**.
 
 ![Segmentation](./images/ldap1.png)
 
@@ -126,20 +132,14 @@ Finally, let's give your segment a name and save it.
 
 As a naming convention, we'll use:
 
-* `dap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)`
+* `ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)`
 
 Please replace **ldap** with your assigned number, like this:
 `vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)`
 
 ![Segmentation](./images/segmentname.png)
 
-It's also important to note the **Streaming** switch.
-
-![Segmentation](./images/streaming.png)
-
-By enabling the **Streaming** switch, your segment will qualify in real-time (as soon as the data is available in Adobe Experience Platform, data collection using Web SDK is a requirement for this) and will be available for activation in real-time.
-
-Then, click the **Save** button to save your segment, after which you'll be taken back to the Segment overview  page.
+Next, click the **Save** button to save your segment, after which you'll be taken back to the Segment overview  page.
 
 ![Segmentation](./images/savedsegment.png)
 
