@@ -47,6 +47,10 @@ Set Description to: `Geofence Entry Event`.
 
 ![Demo](./images/evname.png)
 
+Next is the **Event ID Type** selection. Select **System Generated**.
+
+![ACOP](./images/eventidtype.png) 
+
 Next, you need to select a Schema. All Schemas that are shown here, are Adobe Experience Platform Schemas.
 
 ![Demo](./images/evschema.png)
@@ -82,11 +86,11 @@ This Mixin only has one field, `_experience.campaign.orchestration.eventID`.
 
 Once this Mixin and this specific field are part of a Schema, that Schema will be available for usage by Journey Orchestration.
 
-Let's go back to our Event configuration in Journey Orchestration.
+Go back to your Event configuration in Journey Orchestration.
 
 ![Demo](./images/evschema.png)
 
-In our use-case, we want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema `AEP Demo - Location Service Geofence Schema v.1` as the Schema for your Event.
+In this use-case, you want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema `AEP Demo - Location Service Geofence Schema v.1` as the Schema for your Event.
 
 ![Demo](./images/evschema1.png)
 
