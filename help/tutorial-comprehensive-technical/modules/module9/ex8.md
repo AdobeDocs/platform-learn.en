@@ -9,11 +9,13 @@ activity:
 
 # 9.8 Verify Data Ingestion from website into Platform
 
-After implementing the Google Tag Manager Tag on your website, you should start to see calls being sent towards Adobe Experience Platform.
+Open a new, clean incognito window and navigate to [https://public.aepdemo.net](https://public.aepdemo.net). Enter your Configuration ID and save it.
 
-These calls are sent to the DCS Endpoint that you configured in Exercise 9.4.
+After updating the configuration of your Configuration ID and loading the AEP Demo website in a new, clean incognito browser window, you should start to see requests being sent towards Adobe Experience Platform.
 
-To verify if calls are being sent, open your website by going to [http://localhost:8888/index.html](http://localhost:8888/index.html) in Chrome and at the same time open the Chrome Developer Tools.
+These requests are sent to the DCS Endpoint that you configured in Exercise 9.4.
+
+To verify if requests are being sent, open your website by going to [https://public.aepdemo.net/index.html](https://public.aepdemo.net/index.html) in Chrome and at the same time open the Chrome Developer Tools.
 
 ![Verify Calls](./images/devtools.png)
 
@@ -21,7 +23,7 @@ Open the Chrome Developer Tools on the **Network** view and then refresh your pa
 
 ![Verify Calls](./images/sitedevtools.png)
 
-By refreshing your page, you'll see all the calls being sent from the page to various servers, including the calls to the DCS Endpoint of Platform.
+By refreshing your page, you'll see all the requests being sent from the page to various servers, including the requests to the DCS Endpoint of Platform.
 
 ![Verify Calls](./images/sitecalls.png)
 
@@ -33,23 +35,23 @@ In the **Filter**, type `GA`.
 
 ![Verify Calls](./images/sitecallsconsolega.png)
 
-You should now see a log entry that says `>>>>> GA - All General Pages - Sending PageView to DCS`. This indicates that the call from your Google Tag Manager tag `All General Pages` has fired.
+You should now see a log entry that says `>>>>> GA - All General Pages - Sending PageView to DCS`. This indicates that the request from your Google Tag Manager tag `All General Pages` has fired.
 
 Go back to the **Network** view.
 
 ![Verify Calls](./images/sitecalls.png)
 
-To easily find the calls to Platform, you can apply a filter by entering `dcs` in the Filter field.
+To easily find the requests to Platform, you can apply a filter by entering `dcs` in the Filter field.
 
 ![Verify Calls](./images/dcsfilter.png)
 
-This should give you two calls to Platform, which are the calls that sends in ExperienceEvent data on every page load, now sent by Adobe Experience Platform Launch and also, Google Tag Manager.
+This should give you two requests to Platform, which are the requests that sends in ExperienceEvent data on every page load, now sent by Adobe Experience Platform Launch and also, Google Tag Manager.
 
-The first call is the call sent by Google Tag Manager. Click on it and scroll down until you see **Request Payload**.
+The first request is the request sent by Google Tag Manager. Click on it and scroll down until you see **Request Payload**.
 
 ![Verify Calls](./images/payload.png)
 
-Click on **view source** to view the full raw call to Platform. Select the full raw text and copy it.
+Click on **view source** to view the full raw request to Platform. Select the full raw text and copy it.
 
 ![Verify Calls](./images/rawcall.png)
 
@@ -57,7 +59,7 @@ Go to [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/js
 
 ![Verify Calls](./images/makepretty.png)
 
-Click on **Make Pretty** to see a readable version of the call to Platform. You now see the full payload as sent by Google Tag Manager to Adobe Experience Platform, and you can also see that the only identifier on this call, the Primary Identifier, is the Google `GAID`. This also means that with Platform, the presence of the ECID isn't a hard requirement anymore. Any identifier, including non-Adobe identifiers, can be the Primary Identifier, it's up to the customer to choose.
+Click on **Make Pretty** to see a readable version of the request to Platform. You now see the full payload as sent by Google Tag Manager to Adobe Experience Platform, and you can also see that the only identifier on this request, the Primary Identifier, is the Google `GAID`. This also means that with Platform, the presence of the ECID isn't a hard requirement anymore. Any identifier, including non-Adobe identifiers, can be the Primary Identifier, it's up to the customer to choose.
 
 ![Verify Calls](./images/prettycall.png)
 
@@ -67,15 +69,15 @@ Go to the **Console** view. In the **Filter**, type `GA`.
 
 ![Verify Calls](./images/sitecallsconsolegapp.png)
 
-You should now see a log entry that says `>>>>> GA - All Product Pages - Sending PageView to DCS`. This indicates that the call from your Google Tag Manager Tag `All Product Pages` has fired.
+You should now see a log entry that says `>>>>> GA - All Product Pages - Sending PageView to DCS`. This indicates that the request from your Google Tag Manager Tag `All Product Pages` has fired.
 
-Go back to the **Network** view. To easily find the calls to Platform, you can apply a filter by entering `dcs` in the Filter field.
+Go back to the **Network** view. To easily find the requests to Platform, you can apply a filter by entering `dcs` in the Filter field.
 
-This should give you two calls to Platform, which are the calls that sends in ExperienceEvent-data for a Product View, now sent by Adobe Experience Platform Launch and also, Google Tag Manager.
+This should give you two requests to Platform, which are the requests that sends in ExperienceEvent-data for a Product View, now sent by Adobe Experience Platform Launch and also, Google Tag Manager.
 
-The first call is the call sent by Google Tag Manager. Click on it and scroll down until you see **Request Payload**.
+The first request is the request sent by Google Tag Manager. Click on it and scroll down until you see **Request Payload**.
 
-Click on **view source** to view the full raw call to Platform. Select the full raw text and copy it.
+Click on **view source** to view the full raw request to Platform. Select the full raw text and copy it.
 
 ![Verify Calls](./images/rawcallpp.png)
 
@@ -83,11 +85,11 @@ Go to [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/js
 
 ![Verify Calls](./images/makepretty.png)
 
-Click on **Make Pretty** to see a readable version of the call to Platform. You now see the full Product Page  payload as sent by Google Tag Manager to Adobe Experience Platform, and you can also see that the only identifier on this call, the Primary Identifier, is the Google `GAID`. This also means that with Platform, the presence of the ECID isn't a hard requirement anymore. Any identifier, including non-Adobe identifiers, can be the Primary Identifier, it's up to the customer to choose.
+Click on **Make Pretty** to see a readable version of the request to Platform. You now see the full Product Page  payload as sent by Google Tag Manager to Adobe Experience Platform, and you can also see that the only identifier on this request, the Primary Identifier, is the Google `GAID`. This also means that with Platform, the presence of the ECID isn't a hard requirement anymore. Any identifier, including non-Adobe identifiers, can be the Primary Identifier, it's up to the customer to choose.
 
 ![Verify Calls](./images/prettycallpp.png)
 
-Next, go to to the Login/Register-page [http://localhost:8888/login-register.html](http://localhost:8888/login-register.html).
+Next, go to to the Login/Register-page [https://public.aepdemo.net/login-register.html](http://public.aepdemo.net/login-register.html).
 
 Fill out all the fields and click **Create Account**.
 
@@ -99,15 +101,15 @@ In the Chrome Developer Console, go to the **Console** view. In the **Filter**, 
 
 ![Verify Calls](./images/sitecallsconsolegauth.png)
 
-You should now see a log entry that says `>>>>> GA - All General Pages - Sending PageView to DCS` and also another log entry that says `>>>>> GA - All Authenticated Pages - Sending PageView to DCS`. This indicates that the call from your Google Tag Manager Tag `All General Pages` and the GTL Tag for `All Authenticated Pages` has fired.
+You should now see a log entry that says `>>>>> GA - All General Pages - Sending PageView to DCS` and also another log entry that says `>>>>> GA - All Authenticated Pages - Sending PageView to DCS`. This indicates that the request from your Google Tag Manager Tag `All General Pages` and the GTL Tag for `All Authenticated Pages` has fired.
 
-Go back to the **Network** view. To easily find the calls to Platform, you can apply a filter by entering `dcs` in the Filter field.
+Go back to the **Network** view. To easily find the requests to Platform, you can apply a filter by entering `dcs` in the Filter field.
 
-This should give you four calls to Platform, which are two calls that send in ExperienceEvent-data for a General Page View and two calls that send in Profile-data, now sent by Adobe Experience Platform Launch and also, Google Tag Manager.
+This should give you four requests to Platform, which are two requests that send in ExperienceEvent-data for a General Page View and two requests that send in Profile-data, now sent by Adobe Experience Platform Launch and also, Google Tag Manager.
 
-The 3rd call is the call sent by Google Tag Manager containing Profile Data. Click on it and scroll down until you see **Request Payload**.
+The 3rd request is the request sent by Google Tag Manager containing Profile Data. Click on it and scroll down until you see **Request Payload**.
 
-Click on **view source** to view the full raw call to Platform. Select the full raw text and copy it.
+Click on **view source** to view the full raw request to Platform. Select the full raw text and copy it.
 
 ![Verify Calls](./images/rawcallauth.png)
 
@@ -115,11 +117,11 @@ Go to [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/js
 
 ![Verify Calls](./images/prettyprofile.png)
 
-Again you notice that the identifiers-object contains a Google `GAID`. In this case, for Profile data, the Primary Identifier is `emailId`, with `GAID` being a secondary identifier. By having both of these identities on the same call, including the `mobilenr`, ID-syncs have now been done and have connected these 3 identities to each other in Adobe Experience Platform's Unified Identity Service.
+Again you notice that the identifiers-object contains a Google `GAID`. In this case, for Profile data, the Primary Identifier is `emailId`, with `GAID` being a secondary identifier. By having both of these identities on the same request, including the `mobilenr`, ID-syncs have now been done and have connected these 3 identities to each other in Adobe Experience Platform's Unified Identity Service.
 
-If you see all these calls going out to the DCS Endpoint from GTM, that means that GTM is correctly configured.
+If you see all these requests going out to the DCS Endpoint from GTM, that means that GTM is correctly configured.
 
-Now we need to verify whether these calls are successfully received by Platform.
+Now we need to verify whether these requests are successfully received by Platform.
 
 To log in to Platform, go to [https://experience.adobe.com/platform/home](https://experience.adobe.com/platform/home).
 
