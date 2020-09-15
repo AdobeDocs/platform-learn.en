@@ -102,7 +102,7 @@ You'll now see an overview of all ingested data in this dataset.
 
 ![Platform Enablements](images/emeavoiceassistantinteractions.png)
 
-Click **Preview Dataset**.
+Click **Preview Dataset**. (Depending on the setup of Adobe Experience Platform's Role Based Access Controls, it's possible that you don't have access to the **Preview Dataset** button. If that's the case, please skip the preview exercise and continue with the next exercise.)
 
 ![Platform Enablements](images/previewdataset.png)
 
