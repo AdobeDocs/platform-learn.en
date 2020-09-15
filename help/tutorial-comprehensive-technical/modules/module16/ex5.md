@@ -554,8 +554,9 @@ You now have a powerful kit to analyze funnels and explore paths of customer beh
 
 ## 16.5.4 Share the project
 
->[!IMPORTANT] The below content is intended as FYI - You do **NOT** have to share your project with anyone else.
+>[!IMPORTANT]
 >
+>The below content is intended as FYI - You do **NOT** have to share your project with anyone else.
 
 FYI - You can share this project with colleagues to collaborate or to analyze business questions together.
 

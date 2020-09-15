@@ -7,6 +7,7 @@ kt: 4334
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32553.jpg
 ---
 
 # Integrations with Experience Cloud Applications

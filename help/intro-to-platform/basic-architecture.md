@@ -7,6 +7,7 @@ kt: 4336
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32456.jpg
 ---
 
 # Basic Architecture of Experience Platform

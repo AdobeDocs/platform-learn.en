@@ -7,6 +7,7 @@ kt: 4338
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32807.jpg
 ---
 
 # Roles and Project Phases

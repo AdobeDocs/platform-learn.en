@@ -7,13 +7,14 @@ kt: 2701
 audience: engineer
 doc-type: video
 activity: understand
+thumbnail: 27251.jpg
 ---
 
-# UnderstandingReal-time Customer Profile
+# Understanding Real-time Customer Profile
 
 Real-Time Customer Profile powers cross-channel personalization at scale through each phase of the customer journey.
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 
 ## Additional Resources
 

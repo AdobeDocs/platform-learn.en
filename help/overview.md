@@ -10,17 +10,15 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-* **[Demo of Real-time Customer Data Platform (Video)](/help/rtcdp/demo.md)**
-    <br>
-    *See a demo of a personalized experience build with Real-time CDP*
 
-* **[Introduction to Adobe Experience Platform Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)**
-    <br>
-    *Learn how Web SDK will simplify your implementations and improve page performance*
-
-* **[Demo of Adobe Experience Platform Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)**
-    <br>
-    *See a demo of Web SDK and a single call being sent to Platform, Analytics, Audience Manager, and Target*
+* **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
+    *Get hands-on with multiple Platform features with this multi-page tutorial*
+* **[Business Value of Experience Platform and Magento Commerce (Video)](/help/experience-cloud/business-value-of-platform-and-magento.md)**
+    *Power intelligent commerce with Platform and Magento*
+* **[Business Value of Attribution AI (Video)](/help/intelligent-services/business-value-of-attribution-ai.md)**
+    *Measure and optimize marketing and advertising spend*
+* **[Business Value of Customer AI (Video)](/help/intelligent-services/business-value-of-customer-ai.md)**
+    *Enrich customer profiles with AI-based propensities*
 
 ## Staff Picks
 
@@ -40,16 +38,16 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
   </td>
   <td>
-    <a href="rtcdp/understanding-the-real-time-customer-data-platform.md">
-      <img alt="thumbnail image for the 'Understanding the Real-time Customer Data Platform' video" src="assets/thumb_RTCDP.png" />
+    <a href="https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+      <img alt="thumbnail image for the 'Getting Started with Experience Platform for Data Architects and Data Engineers' tutorial" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="rtcdp/understanding-the-real-time-customer-data-platform.md">
-    <strong>Understanding the Real-time Customer Data Platform (CDP)</strong>
+      <a href="https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+    <strong>Getting Started for Data Architects and Data Engineers</strong>
     </a>
     </div>
     <p>
-    <em>Activate your profiles with Real-time CDP</em>
+    <em>Hands-on exercises to get started</em>
     <p>
   </td>
   <td>

@@ -7,13 +7,14 @@ kt: 4170
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32654.jpg
 ---
 
 # Introduction to Intelligent Services
 
 A high-level introduction to Intelligent Services, which empower marketing analysts and practitioners to leverage the power of Artificial Intelligence and Machine Learning in customer experience use cases without data science expertise.
 
->[!VIDEO](https://video.tv.adobe.com/v/32654?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32654?quality=12&learn=on)
 
 ## Additional Resources
 

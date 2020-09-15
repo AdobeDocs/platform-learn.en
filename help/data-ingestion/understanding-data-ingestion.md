@@ -7,13 +7,14 @@ kt: 2699
 audience: engineer
 doc-type: video
 activity: understand
+thumbnail: 27106.jpg
 ---
 
 # Understanding Data Ingestion
 
 Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing real-time customer profiles.
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&enable10seconds=on&speedcontrol=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
 
 ## Additional Resources
 

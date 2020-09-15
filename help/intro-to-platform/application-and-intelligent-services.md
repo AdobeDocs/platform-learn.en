@@ -7,6 +7,7 @@ kt: 4333
 audience: all
 doc-type: video
 activity: understand
+thumbnail: 32554.jpg
 ---
 
 # Application and Intelligent Services built on Experience Platform

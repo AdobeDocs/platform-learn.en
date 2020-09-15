@@ -180,7 +180,9 @@ Don't forget to **Save** your Data View. So click **Save** now.
 
 ![demo](./images/ext19.png)
 
->[!NOTE] You can come back to this Data View afterwards and change settings and components at any time. Changes will affect how historical data is shown.
+>[!NOTE]
+>
+>You can come back to this Data View afterwards and change settings and components at any time. Changes will affect how historical data is shown.
 
 You can now continue with the visualization and analysis part!
 

@@ -143,20 +143,33 @@ Click on **Create a function**.
 In the **Create function** screen:
 
 1. Select **Author from scratch**.
+
    ![Author From Scratch](images/authorfromscratch.png)
-2. Give your skill function a **Function name**, e.g. **AEP**.
+
+1. Give your skill function a **Function name**, e.g. **AEP**.
+
    ![Function Name](images/functionname.png)
-3. Select **Node.js 12.x** from the **Runtime** dropdown list.
+
+1. Select **Node.js 12.x** from the **Runtime** dropdown list.
+
    ![Runtime](images/runtime.png)
-4. Click on **Choose or create an execution role** below **Permissions**. Then select **Create a new role with basic Lambda permissions**from the **Execution role** dropdown list. Your screen should look like
+
+1. Click on **Choose or create an execution role** below **Permissions**. Then select **Create a new role with basic Lambda permissions**from the **Execution role** dropdown list. Your screen should look like
+
    ![Permissions](images/permissions.png)
-5. Click on **Create function**. It will take a while to finish that creation.
-6. You will end up in your **AEP** function definition screen, with the **Configuration** tab active.
+
+1. Click on **Create function**. It will take a while to finish that creation.
+1. You will end up in your **AEP** function definition screen, with the **Configuration** tab active.
+
    ![Platform Function Definition](images/aepfunctiondefinition.png)
-7. In the list of triggers listed below **Add triggers**, select **Alexa Skills Kit**. You will see that the skill is added to the definition screen, with the remark **Configuration required**.
+
+1. In the list of triggers listed below **Add triggers**, select **Alexa Skills Kit**. You will see that the skill is added to the definition screen, with the remark **Configuration required**.
+
    ![Configuration Required](images/configurationrequired.png)
    
->[!NOTE] If **Alexa Skills Kit** is not available in the **Add triggers** list, the data center you selected does not support it. Select another datacenter (e.g. **EU (Ireland)**) that provides the **Alexa Skills Kit** trigger.
+>[!NOTE]
+>
+>If **Alexa Skills Kit** is not available in the **Add triggers** list, the data center you selected does not support it. Select another datacenter (e.g. **EU (Ireland)**) that provides the **Alexa Skills Kit** trigger.
 
 Move over to your **Alexa developer console** ([https://developer.amazon.com/alexa/console/ask](https://developer.amazon.com/alexa/console/ask)).
 
@@ -169,28 +182,39 @@ Click on **Copy to Clipboard** to copy the skill.
 Move back to your **AEP** function definition screen in the **AWS Lambda** home screen.
 
 1. Paste the skill id in the **Skill ID** field below the **Skill ID Verification**. Ensure **Enable** is selected, which is the default and recommended setting.
-![Configure Skill ID](images/pasteskillid.png)
-2. Click on **Add** in the **Configure Triggers** panel.
-3. Then click on **Save**.
+
+   ![Configure Skill ID](images/pasteskillid.png)
+
+1. Click on **Add** in the **Configure Triggers** panel.
+1. Then click on **Save**.
 
 Continue, in the **AEP** definition screen.
 
 1. Click on **AEP** box in the **Designer** panel.
+
    ![Select Platform](images/selectaep.png)
-2. In the **Function code** panel, from the **Code entry type** dropdown list, select **Upload a .zip file**.
+
+1. In the **Function code** panel, from the **Code entry type** dropdown list, select **Upload a .zip file**.
+
    ![Function Code](images/functioncode.png)
-3. Download **aepskill.zip** from your **Environment Variables GitHub repository** and save the file somewhere on your computer as **aepskill.zip**.
-4. Click on the **Upload** button. Pick the **aepskill.zip** you saved on your computer from the file browser dialog.
+
+1. Download **aepskill.zip** from your **Environment Variables GitHub repository** and save the file somewhere on your computer as **aepskill.zip**.
+1. Click on the **Upload** button. Pick the **aepskill.zip** you saved on your computer from the file browser dialog.
+
    ![Platform Skill ZIP](images/selectaepskillzip.png)
-5. Click **Save**.
+
+1. Click **Save**.
    
 Continue in the **AEP** definition screen
 
 1. Scroll down until you see the **Environment Variables** panel.
-![Environment Variables](images/envvariables.png)
-2. Add the key value pairs from the table below, so your **Environment variables** panel will look like below.
-![Environment Variables](images/environmentvariables.png)
-    
+
+   ![Environment Variables](images/envvariables.png)
+
+1. Add the key value pairs from the table below, so your **Environment variables** panel will look like below.
+
+   ![Environment Variables](images/environmentvariables.png)
+
 ### Environment variables
 
 Key | Value
