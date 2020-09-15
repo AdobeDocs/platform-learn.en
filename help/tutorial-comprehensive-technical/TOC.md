@@ -146,7 +146,7 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module17/summary.md)
 + 18 - Segment Activation to Microsoft Azure Event Hub {#module18}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module18/segment-activation-microsoft-azure-eventhub.md)
-  + [18.0 Configure your Microsoft Azure environment](/help/tutorial-comprehensive-technical/modules/module18/ex1.md)
+  + [18.0 Configure your Microsoft Azure environment](/help/tutorial-comprehensive-technical/modules/module18/ex0.md)
   + [18.1 Configure your Microsoft Azure EventHub environment](/help/tutorial-comprehensive-technical/modules/module18/ex1.md)
   + [18.2 Configure your Real-time CDP Destination connector for Microsoft Azure EventHub](/help/tutorial-comprehensive-technical/modules/module18/ex2.md)
   + [18.3 Create your Microsoft Azure Project](/help/tutorial-comprehensive-technical/modules/module18/ex3.md)
