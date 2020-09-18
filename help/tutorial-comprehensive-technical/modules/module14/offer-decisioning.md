@@ -20,8 +20,7 @@ With Offer Decisioning, you can determine the best option from a set of availabl
 ## Learning Objectives
 
 - Understand basic terminology used as part of Offer Decisioning,
-
-- Get a feeling what is currently available with respect to next best offer functionality in Platform.
+- Understand how to configure the Offer Decisioning application service to impact real-life customer journeys.
 
 ## Prerequisites
 
