@@ -120,6 +120,9 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module13/summary.md)
 + 14 - Offer Decisioning {#module14}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module14/offer-decisioning.md)
+  + [14.1 Offer Decisioning 101](/help/tutorial-comprehensive-technical/modules/module14/ex1.md)
+  + [14.2 Configure your Offers and Offer Activity](/help/tutorial-comprehensive-technical/modules/module14/ex2.md)
+  + [14.3 Test your Offer Activity](/help/tutorial-comprehensive-technical/modules/module14/ex3.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module14/summary.md)
 + 15 - Data Science Workspace - Car Insurance Sales Propensity {#module15}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module15/data-science-workspace-car-insurance-sales-propensity.md)

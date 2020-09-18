@@ -9,13 +9,13 @@ activity:
 
 # 14. Offer Decisioning
 
-In this module, you will get a hands-on preview of the Adobe Experience Platform Decisioning Service.
+**Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-The Adobe Experience Platform Offer Decisioning Application Service provides the capability to create personalized, optimized, and orchestrated experiences in applications running on top of Adobe Experience Platform.
+In this module, you will get a hands-on walkthrough of Adobe Experience Platform Offer Decisioning.
 
-Using Decisioning Service, you can determine the best option from a set of available choices. These options, also called alternatives, could be offers, product recommendations, content components for a web experience, conversation scripts, and actions to take. **Currently** the use case and domain of **offer decisioning** is supported and is referred to as the **Offers Decisioning Engine** (**ODE**), where decision options are modeled specifically as offers (with support for more use cases to come).
+The Adobe Experience Platform Offer Decisioning Application Service provides the ability to create personalized offers and deliver them in an orchestrated way to all destinations that are linked to Adobe Experience Platform.
 
-In this module we will refer to the **Offers Decisioning Engine** (or simply **Offers**) as the first implementation of the **Decisioning Service** within Adobe Experience Platform.
+With Offer Decisioning, you can determine the best option from a set of available choices. These options could be offers, product recommendations, content components for a web experience, conversation scripts, and actions to take. 
 
 ## Learning Objectives
 
@@ -39,29 +39,19 @@ Have a look at the below architecture, which highlights the components that will
 
 ![Architecture Overview](../../assets/images/architecturem14.png)
 
-## Terminology
-
-To get a better understanding and before you start doing the exercises, we highly recommend you to read the [overview](https://docs.adobe.com/content/help/en/experience-platform/decisioning/home.html) on how the Offer Decisioning Application Service works in Adobe Experience Platform.
-
-Working with Offers, you have to understand the following concepts:
-
- Term | Explanation
----------|----------
-**Offer** | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.
-**Container** | Everything in the Offers Decisioning Engine happens in the context of a container. In our module, we will work in the **Decisioning** container.
-**Placement** | The combination of location (or channel) and context (or component type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image Link for Email, Mobile, Web, Social, Instant Messaging, and non-Digital.
-**Decision Rule** | The logic that defines and controls the eligibility of end-users for an offer.
-**Personalized Offer** | A customizable marketing message based on eligibility rules and constraints.
-**Fallback Offer** | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.
-**Capping** | Used in an offer definition to define how many times an offer can be presented in total and to a specific user.
-**Priority** | Level to determine the priority rank from a result set of offers.
-**Offer Filter** | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.
-**Activity** | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.
-**Experience Cloud Library** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform. It is indeed, arguably, the (first visible) incarnation of the content part of Adobe Experience Platform. **Note**: this is a different repository than what is (was previously) known as the Assets Core Service.
-
 ## Exercises
 
-_**Exercises for this module are currently being developed**_
+[14.1 Offer Decisioning 101](./ex1.md)
+
+In this exercise you'll get a better understanding of all the different concepts of Offer Decisioning, and how to access Offer Decisioning in Adobe Experience Platform.
+
+[14.2 Configure your Offers and Offer Activity](./ex2.md)
+
+In this exercise you'll configure your own Personalized Offers and your own Activity, which will then be published.
+
+[14.3 Test your Offer Activity](./ex3.md)
+
+In this exercise you'll use the AEP Demo website to test your Offer Activity.
 
 [Summary and benefits](./summary.md)
 
