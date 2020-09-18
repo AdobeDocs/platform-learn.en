@@ -312,7 +312,7 @@ You'll now see this:
 
 ## 14.2.4 Create your Offer Activity
 
-An activity combines Placements, a Collection of Personalized Offers and a Fallback Offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalised offer characteristics like priority, eligibility constraint and total / user capping.
+An activity combines Placements, a Collection of Personalized Offers and a Fallback Offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
 
 To configure your **Activity**, go to **Activities** in the left menu in Adobe Experience Platform.
 
@@ -406,7 +406,7 @@ And finally, you'll now see your Offer Activity in the overview:
 
 ![Decision Rule](./images/activity13.png)
 
-You've now successfully configured your Offer Activity. Your Offer Activity is now live, and can be used to deliver optimised and personalized offers to your customers, in real-time.
+You've now successfully configured your Offer Activity. Your Offer Activity is now live, and can be used to deliver optimized and personalized offers to your customers, in real-time.
 
 Next Step: [14.3 - Offers API](./ex3.md)
 

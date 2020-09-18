@@ -9,7 +9,7 @@ Working with Offer Decisioning, you need to understand the following concepts:
  Term | Explanation
 ---------|----------
 **Offer** | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.
-**Placement** | The combination of location (or channel) and context (or component type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image Link for Email, Mobile, Web, Social, Instant Messaging, and non-Digital.
+**Placement** | The combination of location (or Channel Type) and context (or Content Type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image, JSON in Mobile, Web, Social, Instant Messaging, and non-Digital channels.
 **Rule** | The logic that defines and controls the eligibility of end-users for an offer.
 **Personalized Offer** | A customizable marketing message based on eligibility rules and constraints.
 **Fallback Offer** | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.
@@ -125,7 +125,7 @@ A Fallback Offer is an offer that is shown if the criteria for Personalized Offe
 
 ## 14.1.6 Activities
 
-An Offer Activity combines placements, a collection of personalized offers and a fallback offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalised offer characteristics like priority, eligibility constraint and total / user capping.
+An Offer Activity combines placements, a collection of personalized offers and a fallback offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
 
 To configure your **Activity**, go to **Activities** in the left menu in Adobe Experience Platform.
 
