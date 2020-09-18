@@ -408,7 +408,7 @@ And finally, you'll now see your Offer Activity in the overview:
 
 You've now successfully configured your Offer Activity. Your Offer Activity is now live, and can be used to deliver optimized and personalized offers to your customers, in real-time.
 
-Next Step: [14.3 - Offers API](./ex3.md)
+Next Step: [14.3 Test your Offer Activity](./ex3.md)
 
 [Go Back to Module 14](./offer-decisioning.md)
 
