@@ -1,3 +1,12 @@
+---
+title: Offer Decisioning - Configure your Offers and Offer Activity
+description: Offer Decisioning - Configure your Offers and Offer Activity
+kt: 5342
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
+doc-type: tutorial
+activity: 
+---
+
 # 14.2 Configure your Offers and Offer Activity
 
 ## 14.2.1 Create your Personalized Offers

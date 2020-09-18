@@ -1,3 +1,13 @@
+---
+title: Offer Decisioning - Test your Offer Activity
+description: Offer Decisioning - Test your Offer Activity
+kt: 5342
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
+doc-type: tutorial
+activity: 
+---
+
+
 # 14.3 Test your Offer Activity
 
 ## 14.3.1 Test your Offer Activity with the Web App

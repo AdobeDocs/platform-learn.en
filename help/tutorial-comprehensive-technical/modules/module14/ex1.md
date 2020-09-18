@@ -1,3 +1,12 @@
+---
+title: Offer Decisioning - Offer Decisioning 101
+description: Offer Decisioning - Offer Decisioning 101
+kt: 5342
+audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
+doc-type: tutorial
+activity: 
+---
+
 # 14.1 Offer Decisioning 101
 
 ## 14.1.1 Terminology
