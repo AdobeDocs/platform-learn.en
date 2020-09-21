@@ -15,7 +15,7 @@ activity:
 >
 >If you already have an Azure Subscription, you can skip this step. Please continue with exercise 18.0.2 in that case.
 
-Go to [https://portal.azure.com](https://portal.azure.com) and login with your Azure account.
+Go to [https://portal.azure.com](https://portal.azure.com) and login with your Azure account. If you don't have one, please use your personal email address to create your Azure account.
 
 ![02-azure-portal-email.png](./images/02-azure-portal-email.png)
 
