@@ -176,7 +176,7 @@ Click **+ Create Offer**.
 
 ![Decision Rule](./images/createoffer.png)
 
-You'll then see this popup. Select **Falback offer** and click **Next**.
+You'll then see this popup. Select **Fallback offer** and click **Next**.
 
 ![Decision Rule](./images/foffers2.png)
 
