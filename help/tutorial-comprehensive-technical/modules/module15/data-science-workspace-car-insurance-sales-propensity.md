@@ -52,6 +52,14 @@ Because of this limited amount of information, Luma Insurance has a hard time op
 
 As a consequence, Luma Insurance can’t understand which customer are interesting targets and which customers aren’t, they’re unable to optimize their ad spend and they’re unable to understand which channels are best used to interact with any given customer.
 
+## Sandbox to use
+
+For this module, please use this sandbox: **--aepSandboxId--**.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+
 ## Exercises
 
 [15.1 Introduction to Luma Insurance](./ex1.md)

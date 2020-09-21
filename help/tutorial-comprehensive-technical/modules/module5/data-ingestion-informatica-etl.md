@@ -43,6 +43,14 @@ Luma Retail is a fashion brand and in addition to its online presence, has brick
 
 Luma Retail also has a partnership with Survey Corp which has agreed to share their latest survey results on people's preferences for designers, colors, and brands. Luma Retail has also decided to buy some demographics data on a marketplace from Money Corp, providing details on people's income and credit scores. By combining these two data sets, Luma Retail is aiming to target their customers with more meaningful experiences based on their preferences as well as income.
 
+## Sandbox to use
+
+For this module, please use this sandbox: **--aepSandboxId--**.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+
 ## Exercises
 
 [5.1 Setup an AWS S3 bucket](./ex1.md)

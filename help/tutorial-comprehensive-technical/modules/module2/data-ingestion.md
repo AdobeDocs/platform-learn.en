@@ -40,6 +40,14 @@ Have a look at the below architecture, which highlights the components that will
 
 ![Architecture Overview](../../assets/images/architecturem2.png)
 
+## Sandbox to use
+
+For this module, please use this sandbox: **--module2sandbox--**.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+
 ## Exercises
 
 [2.1 Explore the website](./ex1.md)

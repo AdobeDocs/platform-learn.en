@@ -1,59 +1,358 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub - Activate Segment
-description: Segment Activation to Microsoft Azure Event Hub - Activate Segment
+title: Segment Activation to Microsoft Azure Event Hub - Define an Azure Function
+description: Segment Activation to Microsoft Azure Event Hub - Define an Azure Function
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: 
 ---
 
-# Exercise 18.5: Activate Segment
+# 18.5 Create your Microsoft Azure Project
 
-## Objectives
+## 18.5.1 Getting familiar with Azure Event Hub functions
 
-- Add "Luma Telco Sports Fan" to Azure Event hub RT-CDP destination 
+Azure Functions allows you to run small pieces of code (called **functions**) without worrying about application infrastructure. With Azure Functions, the cloud infrastructure provides all the up-to-date servers you need to keep your application running at scale.
 
-## Exercise 18.5.1 - Add Segment to Azure Event Hub Destination
+A function is **triggered** by a specific type of event. Supported triggers include responding to changes in data, responding to messages (for example Event Hubs), running on a schedule, or as the result of an HTTP request.
 
-In this exercise you will add your "**ldap - Luma Telco Sports Fan**" to your "ldap-aep-enablement" Azure Event Hub destination.
+Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure. 
 
-Navigate to https://platform.adobe.com and select "Destinations" (1), select "Cloud storage" (2) and click the "Destinations" link (3) in the Azure EventHubs card:
+Azure Event Hubs integrates with Azure Functions for a serverless architecture.
 
-![5-01-select-destination.png](./images/5-01-select-destination.png)
+## 18.5.2 Open Visual Studio Code and Logon to Azure
 
-From the list of Event Hub destinations select your Event Hub, if you followed the naming conventions: **ldap-aep-enablement**, in my case that is **mmeewis-aep-enablement**:
+Visual Studio Code makes it easy to...
 
-![5-02-select-event-hub.png](./images/5-02-select-event-hub.png)
+- define and bind Azure functions to Event Hubs
+- test locally 
+- deploy to Azure
+- remote log function execution
 
-Click "Activate":
+### Open Visual Studio Code
 
-![5-03-destination-activate.png](./images/5-03-destination-activate.png)
+To open Visual Studio Code enter **visual** in your operating system's search (Spotlight search on OSX, Search in Window's Taskbar). If you do not find it, you need to repeat the steps outlined in [Exercise 0 - Pre-requisites](./ex0.md). 
 
-Search (1) for your segment using your ldap and select **ldap - Luma Telco Sports Fan** (2) from the list of segments and click "Next" (3):
+![visual-studio-code-icon.png](./images/visual-studio-code-icon.png)
 
-![5-04-select-segment.png](./images/5-04-select-segment.png)
+### Logon to Azure
 
-Adobe Experience Platform Real-time CDP can deliver a payload to two types of destinations, segment destinations and profile destinations.
+When you logon with your Azure account that you used to register in [Exercise 0 - Pre-requisites](./ex0.md), Visual Studio Code will let you find and bind all Event Hub resources. 
 
-Segment destinations will receive a predefined segment qualification payload that will be discussed later. Such a payload contains **all** the segment qualifications for a specific profile. Even for segments that are not in de destination's activation list. An example of such a segment destination are **Azure Event Hubs**, **Google DV360**
+Click the **Azure** icon in Visual Studio Code. If you do not have that option, something might have gone wrong with the installation of the required extensions.
 
-Profile based destinations let you pick any attribute (firstName, lastName, ...) from the XDM Profile Union Schema and include it in the activation payload. An example of such destination is the **Email Marketing**
+Next select **Sign in to Azure** (2):
 
-Because our Azure Event Hub destination is a **segment** destination, we just need to select for example the **_experienceplatform.identification.ecid**. 
+![3-01-vsc-open.png](./images/3-01-vsc-open.png)
 
-Click "Add new field" (1), click browse schema (2) and select the **_experienceplatform.identification.ecid** and click "Next" (3):
+You will be redirected to you browser to login. Remember to select the Azure account that you used to register.
 
-![5-05-select-attributes.png](./images/5-05-select-attributes.png)
+![3-02-vsc-pick-account.png](./images/3-02-vsc-pick-account.png)
 
-Click "Finish":
+When you see the following screen in your browser, you are logged in with Visual Code Studio:
 
-![5-06-destination-finish.png](./images/5-06-destination-finish.png)
+![3-03-vsc-login-ok.png](./images/3-03-vsc-login-ok.png)
 
-Your segment is activated:
+Return to Visual Code Studio (you will see the name of your Azure subscription, for example **Azure subscription 1**):
 
-![5-07-destination-segment-added.png](./images/5-07-destination-segment-added.png)
+![3-04-vsc-logged-in.png](./images/3-04-vsc-logged-in.png)
 
-Next Step: [Exercise 6 - Action!](./ex6.md)
+## 18.5.3 Create an Azure Project
+
+When you hover over **Azure subscription 1**, a menu will appear above the section, select **Create New Project...** (2):
+
+![3-05-vsc-create-project.png](./images/3-05-vsc-create-project.png)
+
+Select a local folder of your choice to save the project and click **Select**:
+
+![3-06-vsc-select-folder.png](./images/3-06-vsc-select-folder.png)
+
+You will now enter the project creation wizard. Select **Javascript** as the language for your project:
+
+![3-07-vsc-select-language.png](./images/3-07-vsc-select-language.png)
+
+Select **Azure Event Hub trigger** as your project's first function template:
+
+![3-08-vsc-function-template.png](./images/3-08-vsc-function-template.png)
+
+Enter a name for your function, use the following format **ldap-aep-event-hub-trigger** and press enter:
+  
+![3-09-vsc-function-name.png](./images/3-09-vsc-function-name.png)
+
+Select **Create new local app setting**:
+
+![3-10-vsc-function-local-app-setting.png](./images/3-10-vsc-function-local-app-setting.png)
+
+Select an event hub namespace, you should see the Event Hub that you defined in **Exercise 2**. In this example the Event Hub namespace is **mmeewis-aep-enablement**:
+
+![3-11-vsc-function-select-namespace.png](./images/3-11-vsc-function-select-namespace.png)
+
+Select your Event Hub, you should see the Event Hub that you defined in **Exercise 2**. In my case that is **mmeewis-aep-enablement-event-hub**:
+
+![3-12-vsc-function-select-eventhub.png](./images/3-12-vsc-function-select-eventhub.png)
+
+Select **RootManageSharedAccessKey** as your Event Hub policy:
+
+![3-13-vsc-function-select-eventhub-policy.png](./images/3-13-vsc-function-select-eventhub-policy.png)
+
+Enter to use **Default**:
+
+![3-14-vsc-eventhub-consumer-group.png](./images/3-14-vsc-eventhub-consumer-group.png)
+
+Select **Add to workspace** on how to open your project:
+
+![3-15-vsc-project-add-to-workspace.png](./images/3-15-vsc-project-add-to-workspace.png)
+
+After you project is created, click on **index.js** to have the file open in the editor:
+
+![3-16-vsc-open-index-js.png](./images/3-16-vsc-open-index-js.png)
+
+The payload send by Adobe Experience Platform to our Event Hub will only include segment id's:
+
+```json
+[{
+"segmentMembership": {
+"ups": {
+"ca114007-4122-4ef6-a730-4d98e56dce45": {
+"lastQualificationTime": "2020-08-31T10:59:43Z",
+"status": "realized"
+},
+"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+},
+"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+}
+}
+},
+"identityMap": {
+"ecid": [{
+"id": "08130494355355215032117568021714632048"
+}]
+}
+}]
+```
+
+Our Event Hub function will add the segment name for each of the segments in the AEP response payload. To do so, our azure function will invoke an Adobe IO Runtime function to fetch segment definitions from Adobe Experience Platform. This runtime function will return segment definitions of which the segment names starts with **all** and your **ldap**. The segments prefixed with **all** are default segments used by your Adobe Experience Platform environment, for example **all - Homepage Visitor**.
+
+You can test the function to see if it returns your segments (next to the **all**), make sure that you replace **ldap**:
+
+```http
+--jwtSegment--?ldap=yourldap&sandboxId=--sandboxId--
+```
+
+The response will have quite a few segments that start with **all**, it should also include **your ldap - Luma Sports Fan** segment. If not, then you naming of the segment is probably not correct:
+
+```json
+{
+  "segments": {
+    "39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
+      "description": "mmeewis - Luma Telco Sports Fan",
+      "name": "mmeewis - Luma Telco Sports Fan"
+    },
+    "a77d96aa-d166-43b1-baba-005d35261b8a": {
+      "description": "all - Interest in Nadia Elements Shell",
+      "name": "all - Interest in Nadia Elements Shell"
+    },
+    "ca114007-4122-4ef6-a730-4d98e56dce45": {
+      "description": "all - Homepage Visitors",
+      "name": "all - Homepage Visitors"
+    }
+  }
+}
+```
+
+Replace the code in your Visual Studio Code's index.js with the code below. This code will be executed each time Adobe Experience Platform Real-time CDP sends segment qualifications to your Event Hub destination. In our example, the code is just about displaying and enhancing the received payload. But you can imagine any kind of function to process segment qualifications in real-time.
+
+```javascript
+// Marc Meewis - Solution Consultant Adobe - 2020
+// Adobe Experience Platform Enablement - Module 18
+
+const fetch = require('node-fetch'); 
+const request = require('request');
+
+const sandbox = "prod";
+const ldap = "mmeewis";
+const segmentDefAPIEndpoint = "--jwtSegment--";
+
+// Main function
+// -------------
+// This azure function is fired for each segment activated to the Adobe Exeperience Platform Real-time CDP Azure 
+// Eventhub destination
+// This function enriched the received segment payload with the name fo the segment. 
+// You can replace this function with any logic that is require to process and deliver
+// Adobe Experience Platform segments in real-time to any application or platform that 
+// would need to act upon an AEP segment qualiification.
+// 
+
+module.exports = async function (context, eventHubMessages) {
+
+    return new Promise (function (resolve, reject) {
+
+        // fetch aep segment definitions first
+
+        getAEPSegmentInfo().then(function(segments) {
+        
+            eventHubMessages.forEach((message, index) => {
+
+                // process each eventhub message
+
+                var segmentKeys = Object.keys(message.segmentMembership.ups);
+
+                for (var segmentKey of segmentKeys) {
+
+                    // lookup the segment-id in the segment definitions and add the 
+                    // the segment name to the eventhub payload
+
+                    var segmentContent = "";
+
+                    if (segments.hasOwnProperty(segmentKey)) {
+                        segmentName = segments[segmentKey].name;
+                    }
+                    else {
+                        segmentName = "Not Found";
+                    }
+
+                    // add the segment name to the payload
+
+                    message.segmentMembership.ups[segmentKey].segmentName = segmentName;
+                    
+                }
+
+            });
+
+            // output the enriched Adobe Experience Platform payload send to Azure Eventhub
+
+            context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
+
+            resolve();
+
+        });
+
+    });    
+
+};
+
+
+// helper functions
+
+function extractSegmentDenitions(segments, segmentdata) {
+
+    for (var s=0; s < segmentdata.length; s++) {
+        var segmentDef = segmentdata[s];
+
+        var segment = {};
+
+        segment.name = segmentDef.name;
+        segment.description = "";
+        if (segmentDef.hasOwnProperty("description")) {
+            segment.description = segmentDef.description;
+        }
+
+        segments[segmentDef.id] = segment;
+
+    }
+
+    return segments;
+
+}
+
+
+
+async function getAEPSegmentDefinitions(segmentFilter, segments) {
+
+    return new Promise (function (resolve, reject) {
+
+        const allSegmentsAPICall = segmentDefAPIEndpoint + "?segmentFilter=" + segmentFilter + "&sandboxId=" + sandbox;
+
+        var options = {
+            method:'get',
+            url:allSegmentsAPICall
+        };
+        
+        request(options, function (error, response, body) {
+            if (error) 
+                reject(error);
+            else {
+                
+                segmentsResponse = JSON.parse(body)
+
+                segments = extractSegmentDenitions(segments, segmentsResponse.segmentData.segments);
+
+                resolve(segments);
+            }
+
+        });
+
+    });
+
+}
+
+async function getAEPSegmentInfo() {
+
+    var segments = {};
+
+    return new Promise (async function (resolve, reject) {
+
+        segments = await getAEPSegmentDefinitions("all", segments);
+
+        segments = await getAEPSegmentDefinitions(ldap, segments);
+                
+        resolve(segments);
+
+    });
+
+}
+```
+
+After pasting the code below in your index.js, make sure to modify **line 4** to reflect your ldap, in this example that is **mmeewis**:
+
+```javascript
+const ldap = "mmeewis";
+```
+
+The result should look like:
+
+![3-16b-vsc-edit-index-js.png](./images/3-16b-vsc-edit-index-js.png)
+
+## 18.5.4 Run Azure Project
+
+Now it is time to run your project. At this stage we will not deploy the project to Azure. We will run it locally in debug mode. Select the Run icon, click the green arrow. The first time you run you project in debug mode, you will need to attach a Azure storage account, hit Select storage account.
+
+![3-17-vsc-run-project.png](./images/3-17-vsc-run-project.png)
+
+In the storage account wizard select + Create new storage account:
+
+![3-18-vsc-run-storage-account.png](./images/3-18-vsc-run-storage-account.png)
+
+Enter the name of the storage account, use the format **ldapaepstorage**, for example **mmeewisaepstorage** and hit enter:
+
+![3-19-vsc-run-storage-account-name.png](./images/3-19-vsc-run-storage-account-name.png)
+
+Select the resource group that you created as part of **exercise 1**. If you followed the naming conventions it will look like **ldap-aep-enablement**, for example **mmeewis-aep-enablement**
+  
+![3-20-vsc-run-storage-resource-group.png](./images/3-20-vsc-run-storage-resource-group.png)
+
+Select West Europe as the location for new resources:
+
+![3-21-vsc-run-storage-resource-location.png](./images/3-21-vsc-run-storage-resource-location.png)
+
+Let the storage account creation finish (can take 1-2 minutes):
+
+![3-22-vsc-create-storage-account.png](./images/3-22-vsc-create-storage-account.png)
+
+Your project is now up and running and is listing for events in the Event Hub. In the next exercise we will activate segments and demonstrate behavior in Luma Telco that will qualify us. As a result you will receive a segment qualification payload in the terminal of your Event Hub trigger function:
+
+![3-23-vsc-application-started.png](./images/3-23-vsc-application-started.png)
+
+## 18.5.5 Stop Azure Project
+
+To stop your project, select the **Terminal** tab, click in the terminal window and press **CMD-C** on OSX or **CTRL-C** on Windows:
+
+![3-24-vsc-application-stop.png](./images/3-24-vsc-application-stop.png)
+
+Next Step: [18.6 End-to-end scenario](./ex6.md)
 
 [Go Back to Module 18](./segment-activation-microsoft-azure-eventhub.md)
 

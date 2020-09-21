@@ -42,6 +42,14 @@ Have a look at the below architecture, which highlights the components that will
 
 ![Architecture Overview](../../assets/images/architecturem13.png)
 
+## Sandbox to use
+
+For this module, please use this sandbox: **--aepSandboxId--**.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+
 ## Exercises
 
 [13.1 Customer Journey Analytics 101](./ex1.md)

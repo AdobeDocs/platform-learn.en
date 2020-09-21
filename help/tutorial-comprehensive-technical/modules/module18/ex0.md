@@ -13,9 +13,9 @@ activity:
 
 >[!NOTE]
 >
->If you already have an Azure Subscription, you can skip this step.
+>If you already have an Azure Subscription, you can skip this step. Please continue with exercise 18.0.2 in that case.
 
-Go to [https://portal.azure.com](https://portal.azure.com) and login with your Azure account.
+Go to [https://portal.azure.com](https://portal.azure.com) and login with your Azure account. If you don't have one, please use your personal email address to create your Azure account.
 
 ![02-azure-portal-email.png](./images/02-azure-portal-email.png)
 
@@ -50,7 +50,76 @@ Install Azure Account and Sign-In for Visual Studio Code from [https://marketpla
 
 ![08-azure-account-extension-install.png](./images/08-azure-account-extension-install.png)
 
-Next Step: [Exercise 1 - Get Started](./ex1.md)
+## 18.0.4 Install node.js
+
+>[!NOTE]
+>
+>If you already have node.js installed, you can skip this step. Please continue with exercise 18.0.5 in that case.
+
+### macOS
+
+Make sure to have [Homebrew](https://brew.sh/) installed first. Follow the instructions [here](https://brew.sh/).
+
+![Node](./images/brew.png)
+
+Once you've installed Homebrew, run this command:
+
+```
+brew install node
+```
+
+### Windows
+
+Download the [Windows Installer](https://nodejs.org/en/#home-downloadhead) directly from the [nodejs.org](https://nodejs.org/en/) web site.
+
+## 18.0.5 Verify node.js version
+
+For this module, you need to have node.js version 12 installed. Any other version of node.js may cause issues with exercise 18.5.
+
+Before you continue, please verify your version of node.js now.
+
+Run this command to verify your node.js version:
+
+```javascript
+node -v
+```
+
+If your version is below or above 12, you need to upgrade or downgrade.
+
+### Upgrade/Downgrade node.js version on macOS
+
+Ensure that you have the package **n** installed.
+
+To install the package **n**, run this command:
+
+```javascript
+sudo npm install -g n
+```
+
+If you version is below or above version 12, run this command to upgrade or downgrade:
+
+```javascript
+sudo n 12.6.0
+```
+
+### Upgrade/Downgrade node.js version on Windows
+
+Uninstall node.js from Windows > Control Panel > Add or remove programs.
+
+Installing the required version from the [nodejs.org](https://nodejs.org/en/) website.
+
+## 18.0.6 Install NPM package: request
+
+You need to install the package **request** as part of your node.js setup.
+
+To install the package **request**, run this command:
+
+```javascript
+npm install request
+```
+
+
+Next Step: [18.1 Configure your Microsoft Azure EventHub environment](./ex1.md)
 
 [Go Back to Module 18](./segment-activation-microsoft-azure-eventhub.md)
 

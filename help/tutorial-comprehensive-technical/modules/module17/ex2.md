@@ -17,7 +17,7 @@ You'll then see this. Click on **Dynamics 365 - custom**.
 
 ![iFrame](./images/azure21.png)
 
-You'll then see this. CLick the **gear** icon.
+You'll then see this. Click the **gear** icon.
 
 ![iFrame](./images/azure22.png)
 

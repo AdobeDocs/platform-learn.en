@@ -43,6 +43,14 @@ Have a look at the below architecture, which highlights the components that will
 
 ![Architecture Overview](../../assets/images/architecturem18.png)
 
+## Sandbox to use
+
+For this module, please use this sandbox: **--aepSandboxId--**.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+
 ## Exercises
 
 [18.0 Configure your environment](./ex0.md)
@@ -57,19 +65,19 @@ In this exercise you'll setup your Microsoft Azure EventHub environment.
 
 In this exercise you'll setup your Real-time CDP destination connection that will deliver segments in real-time to the EventHub that you've configured in the previous exercise.
 
-[18.3 Create your Microsoft Azure Project](./ex3.md)
-
-In this exercise you will create an Azure function that will be triggered in real-time when Adobe Experience platform activates segment qualifications to the corresponding Azure Event Hub destination.
-
-[18.4 Create Streaming Segments](./ex4.md)
+[18.3 Create Streaming Segments](./ex3.md)
 
 In this exercise you will create a streaming segment in Adobe Experience Platform
 
-[18.5 - Activate Segment](./ex5.md)
+[18.4 Activate Segment](./ex4.md)
 
 In this exercise you'll activate your streaming segment to your Real-time CDP EventHub destination.
 
-[18.6 - End-to-end scenario](./ex6.md)
+[18.5 Create your Microsoft Azure Project](./ex5.md)
+
+In this exercise you will create an Azure function that will be triggered in real-time when Adobe Experience platform activates segment qualifications to the corresponding Azure Event Hub destination.
+
+[18.6 End-to-end scenario](./ex6.md)
 
 At this point, everything is setup. You can now do some browsing on your AEP Demo website and get segment qualifications delivered to your Microsoft Azure EventHub Trigger function.  
 

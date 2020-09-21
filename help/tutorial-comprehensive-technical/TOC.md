@@ -120,6 +120,9 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module13/summary.md)
 + 14 - Offer Decisioning {#module14}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module14/offer-decisioning.md)
+  + [14.1 Offer Decisioning 101](/help/tutorial-comprehensive-technical/modules/module14/ex1.md)
+  + [14.2 Configure your Offers and Offer Activity](/help/tutorial-comprehensive-technical/modules/module14/ex2.md)
+  + [14.3 Test your Offer Activity](/help/tutorial-comprehensive-technical/modules/module14/ex3.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module14/summary.md)
 + 15 - Data Science Workspace - Car Insurance Sales Propensity {#module15}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
@@ -147,11 +150,11 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module17/summary.md)
 + 18 - Segment Activation to Microsoft Azure Event Hub {#module18}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module18/segment-activation-microsoft-azure-eventhub.md)
-  + [18.0 Configure your Microsoft Azure environment](/help/tutorial-comprehensive-technical/modules/module18/ex0.md)
+  + [18.0 Configure your environment](/help/tutorial-comprehensive-technical/modules/module18/ex0.md)
   + [18.1 Configure your Microsoft Azure EventHub environment](/help/tutorial-comprehensive-technical/modules/module18/ex1.md)
-  + [18.2 Configure your Real-time CDP Destination connector for Microsoft Azure EventHub](/help/tutorial-comprehensive-technical/modules/module18/ex2.md)
-  + [18.3 Create your Microsoft Azure Project](/help/tutorial-comprehensive-technical/modules/module18/ex3.md)
-  + [18.4 Create Streaming Segments](/help/tutorial-comprehensive-technical/modules/module18/ex4.md)
-  + [18.5 Activate Segment](/help/tutorial-comprehensive-technical/modules/module18/ex5.md)
+  + [18.2 Configure your Azure Event Hub Destination in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/module18/ex2.md)
+  + [18.3 Create Streaming Segments](/help/tutorial-comprehensive-technical/modules/module18/ex3.md)
+  + [18.4 Activate Segment](/help/tutorial-comprehensive-technical/modules/module18/ex4.md)
+  + [18.5 Create your Microsoft Azure Project](/help/tutorial-comprehensive-technical/modules/module18/ex5.md)
   + [18.6 End-to-end scenario](/help/tutorial-comprehensive-technical/modules/module18/ex6.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module18/summary.md)

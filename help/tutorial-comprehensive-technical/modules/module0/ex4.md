@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 0.4 - Use the mobile app
+# 0.4 Use the mobile app
 
 The mobile application that is used in the context of this demo and enablement environment is only available for **iOS**.
 
@@ -73,7 +73,7 @@ And finally, you'll see the Luma Retail homepage in the app, which means you're 
 
 ![DSN](./images/mobileapp14.png)
 
-[Next Step: Exercise 0.5 - Install the Chrome extension for the Experience League documentation](./ex5.md)
+Next Step: [0.5 Install the Chrome extension for the Experience League documentation](./ex5.md)
 
 [Go Back to Module 0](./getting-started.md)
 

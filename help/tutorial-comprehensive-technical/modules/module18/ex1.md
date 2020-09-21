@@ -84,7 +84,7 @@ Click **Event Hubs** in your event hub namespace. You should now see your **Even
 
 ![1-14-event-hub-list.png](./images/1-14-event-hub-list.png)
 
-Next Step: [Exercise 2 - Define an Event Hub Function](./ex2.md)
+Next Step: [18.2 Configure your Azure Event Hub Destination in Adobe Experience Platform](./ex2.md)
 
 [Go Back to Module 18](./segment-activation-microsoft-azure-eventhub.md)
 

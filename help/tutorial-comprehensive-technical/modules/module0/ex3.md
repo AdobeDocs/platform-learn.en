@@ -7,9 +7,9 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 0.3 - Use the website
+# 0.3 Use the website
 
-## Exercise 0.3.1 - Option 1: Continue from previous exercise
+## 0.3.1 Option 1: Continue from previous exercise
 
 After exercise 0.2, you now see this:
 
@@ -35,7 +35,7 @@ You'll now see the homepage of your demo brand and you're now ready to start you
 
 ![DSN](./images/web9.png)
 
-## Exercise 0.3.2 - Option 2: Start with a new incognito browser window
+## 0.3.2 Option 2: Start with a new incognito browser window
 
 For every demonstration, you'll need to use a fresh, incognito browser window. After opening a fresh, incognito browser window, go to [https://public.aepdemo.net/](https://public.aepdemo.net/).
 
@@ -76,7 +76,7 @@ You'll now see the homepage of your demo brand and you're now ready to start you
 ![DSN](./images/web9.png)
 
 
-[Next Step: Exercise 0.4 - Use the mobile app](./ex4.md)
+Next Step: [0.4 Use the mobile app](./ex4.md)
 
 [Go Back to Module 0](./getting-started.md)
 
