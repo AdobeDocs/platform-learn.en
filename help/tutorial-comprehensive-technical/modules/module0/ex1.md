@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 0.1 - Use Demo System Next to setup your Launch property
+# 0.1 Use Demo System Next to setup your Launch property
 
 After signing up for the Comprehensive Technical Tutorial for Adobe Experience Platform, there's an automated process that will provide you with access to Demo System Next, so that you can access and run the below configuration.
 
@@ -84,7 +84,7 @@ Enter your LDAP as search term. You should now see the two Launch properties tha
 
 In order to use the Launch properties, you'll need to create a Configuration ID in the next exercise.
 
-[Next Step: Exercise 0.2 - Create your Configuration ID](./ex2.md)
+Next Step: [0.2 Create your Configuration ID](./ex2.md)
 
 [Go Back to Module 0](./getting-started.md)
 

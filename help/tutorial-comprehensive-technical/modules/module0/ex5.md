@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 0.5 - Install the Chrome extension for the Experience League documentation
+# 0.5 Install the Chrome extension for the Experience League documentation
 
 All documentation is available on Experience League by going [here](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html).
 

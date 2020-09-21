@@ -43,6 +43,14 @@ As a brand, you've invested heavily in personalizing online experiences. Now, yo
 In this module, you'll use a customer's presence in an offline store to then deliver a personalized experience inside the store by showcasing relevant content to that customer on our in-store screens and at the same time, we want to deliver a personalized Push or SMS Message to that same customer, all in real-time.
 As a brand, you also understand that context greatly impacts a customer's interest, so you want to bring in the current weather information of that customer's location, to decide what content or promotion to display.
 
+## Sandbox to use
+
+For this module, please use this sandbox: **--aepSandboxId--**.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+
 ## Exercises
 
 [12.1 Define an Event](./ex1.md)

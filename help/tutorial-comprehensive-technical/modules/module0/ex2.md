@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# Exercise 0.2 - Create your Configuration ID
+# 0.2 Create your Configuration ID
 
 Open an incognito browser window and go to [https://public.aepdemo.net/admin_configuration_view.html](https://public.aepdemo.net/admin_configuration_view.html).
 
@@ -97,7 +97,7 @@ After a couple of seconds, you'll get a confirmation that your Configuration ID 
 
 Your Configuration ID is visible on the admin page, please ensure to write down your Configuration ID as you'll need it to use the website, mobile application and several other applications and also, during the enablement modules. Write it down so you don't forget it.
 
-[Next Step: Exercise 0.3 - Use the website](./ex3.md)
+Next Step: [0.3 Use the website](./ex3.md)
 
 [Go Back to Module 0](./getting-started.md)
 
