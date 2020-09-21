@@ -40,7 +40,7 @@ When you logon with your Azure account that you used to register in [Exercise 0 
 
 Click the **Azure** icon in Visual Studio Code. If you do not have that option, something might have gone wrong with the installation of the required extensions.
 
-Next select **Sign in to Azure** (2):
+Next select **Sign in to Azure**:
 
 ![3-01-vsc-open.png](./images/3-01-vsc-open.png)
 
@@ -58,7 +58,7 @@ Return to Visual Code Studio (you will see the name of your Azure subscription, 
 
 ## 18.5.3 Create an Azure Project
 
-When you hover over **Azure subscription 1**, a menu will appear above the section, select **Create New Project...** (2):
+When you hover over **Azure subscription 1**, a menu will appear above the section, select **Create New Project...**:
 
 ![3-05-vsc-create-project.png](./images/3-05-vsc-create-project.png)
 
@@ -172,8 +172,8 @@ Replace the code in your Visual Studio Code's index.js with the code below. This
 const fetch = require('node-fetch'); 
 const request = require('request');
 
-const sandbox = "prod";
-const ldap = "mmeewis";
+const sandbox = "--module18sandbox--";
+const ldap = "--demoProfileLdap--";
 const segmentDefAPIEndpoint = "--jwtSegment--";
 
 // Main function
