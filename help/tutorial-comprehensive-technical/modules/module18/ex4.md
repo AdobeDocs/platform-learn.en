@@ -1,65 +1,59 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub - Create a Streaming Segment
-description: Segment Activation to Microsoft Azure Event Hub - Create a Streaming Segment
+title: Segment Activation to Microsoft Azure Event Hub - Activate Segment
+description: Segment Activation to Microsoft Azure Event Hub - Activate Segment
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: 
 ---
 
-# 18.3 Create a Streaming Segment
+# 18.4 Activate Segment
 
-## 18.3.1 Introduction
+## 18.4.1 Add Segment to Azure Event Hub Destination
 
-You'll create a simple segment:
+In this exercise you will add your segment **ldap - Luma Telco Sports Fan** to your **ldap-aep-enablement** Azure Event Hub destination.
 
-- **Luma Telco Sports Fan** for which customer profiles will qualify when they visit the **Sports** page of the Luma Telco brand. 
+Go to [https://platform.adobe.com](https://platform.adobe.com) and navigate to **Destinations**, select **Cloud storage** and click the **Destinations** link in the Azure EventHubs card:
 
-### Good to know
+![5-01-select-destination.png](./images/5-01-select-destination.png)
 
-Adobe Experience Platform Real-time CDP will trigger an activation to a destination when you qualify for a segment that is part of that destination's activation list. When that is the case, the segment qualification payload that will be send to that destination will contain **all the segments for which your profile qualifies**. 
+From the list of Event Hub destinations select your Event Hub, which looks like this: **ldap-aep-enablement**. In this case that is **mmeewis-aep-enablement**:
 
-The goal of this module is to show that your Customer Profile's segment qualification is sent to **your** event hub destination in real-time. As a result our segment definition will have to include your **ldap** so that it only identifies your profiles. If we would not do that, and everyone doing this enablement would create a segment with the exact same definition, you would potentially get a lot of segment qualification messages on your event hub. 
+![5-02-select-event-hub.png](./images/5-02-select-event-hub.png)
 
-To avoid that and to keep the qualification payload small, we will only look at experience events that have a **brand.ldap** equals to **your ldap**
+Click **Activate**.
 
-### Segment Status
+![5-03-destination-activate.png](./images/5-03-destination-activate.png)
 
-A segment qualification in Adobe Experience Platform always has a **status**-property and can be one of the following:
+Search for your segment using your ldap and select **ldap - Luma Telco Sports Fan** from the list of segments.
 
-- **realized**: this indicates a new segment qualification
-- **existing**: this indicates an existing segment qualification
-- **exited**: this indicates that the profile does no longer qualify for the segment
+Click **Next**.
 
-## 18.3.2 Build the segment
+![5-04-select-segment.png](./images/5-04-select-segment.png)
 
-Building a segment in explained in detail in [Module 11](../module11/real-time-cdp-build-a-segment-take-action.md).
+Adobe Experience Platform Real-time CDP can deliver a payload to two types of destinations, segment destinations and profile destinations.
 
-### Create Segment
+Segment destinations will receive a predefined segment qualification payload that will be discussed later. Such a payload contains **all** the segment qualifications for a specific profile. Even for segments that are not in de destination's activation list. An example of such a segment destination are **Azure Event Hubs** and **AWS Kinesis**.
 
-![4-01-create-segment.png](./images/4-01-create-segment.png)
+Profile based destinations let you pick any attribute (firstName, lastName, ...) from the XDM Profile Union Schema and include it in the activation payload. An example of such destination is the **Email Marketing**.
 
-Let's start with adding the profile email address expression to make sure we are only qualifying for our own segments:
+Because your Azure Event Hub destination is a **segment** destination, select for example the field **--aepTenantId--.identification.ecid**. 
 
-Name your segment **ldap - Luma Telco Sports Fan** and add the page name experience event:
+Click **Add new field**, click browse schema and select the field **--aepTenantId--identification.ecid**.
 
-Click on **Events** (1), and drag and drop **XDM ExperienceEvent > Web > Web page details > Name** (2). Enter **Sports** (3) as the value:
+Click **Next**.
 
-![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
+![5-05-select-attributes.png](./images/5-05-select-attributes.png)
 
-Drag and drop **XDM ExperienceEvent > Brand > ldap** (2). Enter your **ldap** (3) as the value and click save (4):
+Click **Finish**.
 
-![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
+![5-06-destination-finish.png](./images/5-06-destination-finish.png)
 
-### PQL Definition
+Your segment is now activated towards your Microsoft Event Hub destination.
 
-The PQL of our segment looks like:
+![5-07-destination-segment-added.png](./images/5-07-destination-segment-added.png)
 
-```code
-select _Any1 from xEvent where _Any1.web.webPageDetails.name.equals("Sports", false) and _Any1._experienceplatform.brand.ldap.equals("<your ldap>", false)
-```
-
-Next Step: [Exercise 4 - Activate Segment](./ex4.md)
+Next Step: [18.5 Create your Microsoft Azure Project](./ex5.md)
 
 [Go Back to Module 18](./segment-activation-microsoft-azure-eventhub.md)
 

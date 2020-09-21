@@ -13,7 +13,7 @@ activity:
 
 >[!NOTE]
 >
->If you already have an Azure Subscription, you can skip this step.
+>If you already have an Azure Subscription, you can skip this step. Please continue with exercise 18.0.2 in that case.
 
 Go to [https://portal.azure.com](https://portal.azure.com) and login with your Azure account.
 
@@ -50,7 +50,7 @@ Install Azure Account and Sign-In for Visual Studio Code from [https://marketpla
 
 ![08-azure-account-extension-install.png](./images/08-azure-account-extension-install.png)
 
-Next Step: [Exercise 1 - Get Started](./ex1.md)
+Next Step: [18.1 Configure your Microsoft Azure EventHub environment](./ex1.md)
 
 [Go Back to Module 18](./segment-activation-microsoft-azure-eventhub.md)
 

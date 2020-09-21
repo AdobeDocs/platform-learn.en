@@ -48,7 +48,7 @@ Select **Shared access policies** for your **Event Hubs Namespace**
 
 ![2-05-select-sas.png](./images/2-05-select-sas.png)
 
-You will see a list of Shared access policies. The SAS Key that we are looking for is **RootManageSharedAccessKey**. This is the SAS Key name. Take a not of it.
+You will see a list of Shared access policies. The SAS Key that we are looking for is **RootManageSharedAccessKey**. This is the SAS Key name. Write it down.
 
 ![2-06-sas-overview.png](./images/2-06-sas-overview.png)
 
@@ -97,7 +97,7 @@ Your destination is now created and available in Adobe Experience Platform.
 
 ![2-12-destination-created.png](./images/2-12-destination-created.png)
 
-Next Step: [Exercise 3 - Create Azure Project](./ex3.md)
+Next Step: [18.3 Create a Streaming Segment](./ex3.md)
 
 [Go Back to Module 18](./segment-activation-microsoft-azure-eventhub.md)
 
