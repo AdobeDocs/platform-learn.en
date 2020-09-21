@@ -40,7 +40,7 @@ When you logon with your Azure account that you used to register in [Exercise 0 
 
 Click the **Azure** icon in Visual Studio Code. If you do not have that option, something might have gone wrong with the installation of the required extensions.
 
-Next select **Sign in to Azure** (2):
+Next select **Sign in to Azure**:
 
 ![3-01-vsc-open.png](./images/3-01-vsc-open.png)
 
@@ -58,7 +58,7 @@ Return to Visual Code Studio (you will see the name of your Azure subscription, 
 
 ## 18.5.3 Create an Azure Project
 
-When you hover over **Azure subscription 1**, a menu will appear above the section, select **Create New Project...** (2):
+When you hover over **Azure subscription 1**, a menu will appear above the section, select **Create New Project...**:
 
 ![3-05-vsc-create-project.png](./images/3-05-vsc-create-project.png)
 
@@ -136,13 +136,7 @@ The payload send by Adobe Experience Platform to our Event Hub will only include
 
 Our Event Hub function will add the segment name for each of the segments in the AEP response payload. To do so, our azure function will invoke an Adobe IO Runtime function to fetch segment definitions from Adobe Experience Platform. This runtime function will return segment definitions of which the segment names starts with **all** and your **ldap**. The segments prefixed with **all** are default segments used by your Adobe Experience Platform environment, for example **all - Homepage Visitor**.
 
-You can test the function to see if it returns your segments (next to the **all**), make sure that you replace **ldap**:
-
-```http
---jwtSegment--?ldap=yourldap&sandboxId=--sandboxId--
-```
-
-The response will have quite a few segments that start with **all**, it should also include **your ldap - Luma Sports Fan** segment. If not, then you naming of the segment is probably not correct:
+The response that you'll receive in Visual Studio Code will have quite a few segments that start with **all**, it should also include **your ldap - Luma Sports Fan** segment. If not, then you naming of the segment is probably not correct:
 
 ```json
 {
@@ -172,8 +166,8 @@ Replace the code in your Visual Studio Code's index.js with the code below. This
 const fetch = require('node-fetch'); 
 const request = require('request');
 
-const sandbox = "prod";
-const ldap = "mmeewis";
+const sandbox = "--module18sandbox--";
+const ldap = "--demoProfileLdap--";
 const segmentDefAPIEndpoint = "--jwtSegment--";
 
 // Main function

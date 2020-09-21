@@ -13,12 +13,12 @@ activity:
 
 In this exercise, you'll create four **Personalized Offers**. Here are the details to take into account when creating those offers:
 
-|Name | Date Range | Image Link | Priority | Eligibility | Total Cap |  Cap/User | Language| 
+|Name | Date Range | Image Link | Priority | Eligibility  |  Cap/User | Language| 
 |-----|------------|------------|:--------:|-------------|:---------:|:---------:|---------|
-|**ldap** - Nadia Elements Shell | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg | 25 | all - Female Profiles | 100 | 10 | English | 
-|**ldap** - Radiant Tee | now - 1 month later  | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/58ae7e91a9bac17cdf92a178d6e25186_1.jpg | 15 | all - Female Profiles | 100 | 10 | English |
-|**ldap** - Zeppelin Yoga Pant | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/108da1111c1a0ce5dbf80fdf9c84508e_1.jpg | 25 | all - Male Profiles | 100 | 10 | English |
-|**ldap** - Proteus Fitness Jackshirt | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/7bb37821cae9587a969c713a34f92490_1.jpg | 15 | all - Male Profiles | 100 | 10 | English |
+|**ldap** - Nadia Elements Shell | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg | 25 | all - Female Profiles  | 10 | English | 
+|**ldap** - Radiant Tee | now - 1 month later  | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/58ae7e91a9bac17cdf92a178d6e25186_1.jpg | 15 | all - Female Profiles  | 10 | English |
+|**ldap** - Zeppelin Yoga Pant | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/108da1111c1a0ce5dbf80fdf9c84508e_1.jpg | 25 | all - Male Profiles | 10 | English |
+|**ldap** - Proteus Fitness Jackshirt | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/7bb37821cae9587a969c713a34f92490_1.jpg | 15 | all - Male Profiles | 10 | English |
  
 >[!NOTE]
 >
@@ -70,7 +70,7 @@ You'll then see this popup.
 Fill out these fields:
 
 - Name: use **ldap** - Nadia Elements Shell
-- Pubic Location: use the Image Link from the above table, in this case: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg
+- Public Location: use the Image Link from the above table, in this case: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg
 - Language: English
 
 You should now see this:
@@ -107,7 +107,7 @@ You'll then see this popup.
 Fill out these fields:
 
 - Name: use **ldap** - Nadia Elements Shell
-- Pubic Location: use the Image Link from the above table, in this case: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg
+- Public Location: use the Image Link from the above table, in this case: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg
 - Language: English
 
 You should now see this:
@@ -134,7 +134,7 @@ Select **Segment of visitors** and click the **+** icon for the Rule **all - Fem
 
 ![Decision Rule](./images/constraints1.png)
 
- You'll then see this. Fill out the **Priority** and the **Capping** as indicated in the above table.
+ You'll then see this. Fill out the **Priority** and the **Cap/User** as indicated in the above table.
 
 ![Decision Rule](./images/constraints2.png)
 
@@ -212,7 +212,7 @@ You'll then see this popup.
 Fill out these fields:
 
 - Name: use **ldap** - Set of Sprite Yoga Straps
-- Pubic Location: use this Image Link: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/747f7399476859141d760fa122aca600_1.jpg
+- Public Location: use this Image Link: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/747f7399476859141d760fa122aca600_1.jpg
 - Language: English
 
 You should now see this:
@@ -245,7 +245,7 @@ You'll then see this popup.
 Fill out these fields:
 
 - Name: use **ldap** - Set of Sprite Yoga Straps
-- Pubic Location: use this Image Link: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/747f7399476859141d760fa122aca600_1.jpg
+- Public Location: use this Image Link: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/747f7399476859141d760fa122aca600_1.jpg
 - Language: English
 
 You should now see this:
