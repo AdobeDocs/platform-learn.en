@@ -136,13 +136,7 @@ The payload send by Adobe Experience Platform to our Event Hub will only include
 
 Our Event Hub function will add the segment name for each of the segments in the AEP response payload. To do so, our azure function will invoke an Adobe IO Runtime function to fetch segment definitions from Adobe Experience Platform. This runtime function will return segment definitions of which the segment names starts with **all** and your **ldap**. The segments prefixed with **all** are default segments used by your Adobe Experience Platform environment, for example **all - Homepage Visitor**.
 
-You can test the function to see if it returns your segments (next to the **all**), make sure that you replace **ldap**:
-
-```http
---jwtSegment--?ldap=yourldap&sandboxId=--sandboxId--
-```
-
-The response will have quite a few segments that start with **all**, it should also include **your ldap - Luma Sports Fan** segment. If not, then you naming of the segment is probably not correct:
+The response that you'll receive in Visual Studio Code will have quite a few segments that start with **all**, it should also include **your ldap - Luma Sports Fan** segment. If not, then you naming of the segment is probably not correct:
 
 ```json
 {
