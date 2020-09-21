@@ -102,7 +102,7 @@ If you version is below or above version 12, run this command to upgrade or down
 sudo n 12.6.0
 ```
 
-###  Upgrade/Downgrade node.js version on Windows
+### Upgrade/Downgrade node.js version on Windows
 
 Uninstall node.js from Windows > Control Panel > Add or remove programs.
 
