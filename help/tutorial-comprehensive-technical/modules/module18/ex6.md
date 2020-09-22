@@ -37,7 +37,13 @@ Application started. Press Ctrl+C to shut down.
 
 ## 18.6.2 Luma Telco
 
-Go to [https://public.aepdemo.net/](https://public.aepdemo.net/). Load and save your Configuration ID. Then, select your **ldap**, select the brand **Luma Telco** and go to the Luma Telco homepage:
+Go to [https://public.aepdemo.net/](https://public.aepdemo.net/). Load and save your Configuration ID. 
+
+>[!NOTE]
+>
+>Please ensure you're using a Configuration ID that is ingesting data into this sandbox: --module18sandbox--
+
+Then, select your **ldap**, select the brand **Luma Telco** and go to the Luma Telco homepage:
 
 ![6-02-start-luma-telco.png](./images/6-02-start-luma-telco.png)
 
@@ -82,7 +88,7 @@ And Switch back to Visual Studio Code and verify your **TERMINAL** tab. You will
 
 ![6-08-vsc-activation-existing.png](./images/6-08-vsc-activation-existing.png)
 
-## 18.6.5 Visit the Home page for a third time
+## 18.6.5 Visit the Sports page for a third time
 
 If you would revisit the **Sports** page for a third time, no activation will take place, because there is no state change from a segment point of view. 
 

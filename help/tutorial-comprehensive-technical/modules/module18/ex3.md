@@ -45,11 +45,11 @@ Let's start with adding the profile email address expression to make sure you're
 
 Name your segment **ldap - Luma Telco Sports Fan** and add the page name experience event:
 
-Click on **Events**, and drag and drop **XDM ExperienceEvent > --aepTenantIdSchema-- > Web > Web page details > Name**. Enter **Sports** as the value:
+Click on **Events**, and drag and drop **XDM ExperienceEvent > Web > Web page details > Name**. Enter **Sports** as the value:
 
 ![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
 
-Drag and drop **XDM ExperienceEvent > Brand > ldap**. Enter your **ldap** as the value and click **Save**:
+Drag and drop **XDM ExperienceEvent > --aepTenantIdSchema-- > Brand > ldap**. Enter your **ldap** as the value and click **Save**:
 
 ![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
 

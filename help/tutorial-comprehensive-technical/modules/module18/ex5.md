@@ -106,7 +106,7 @@ After you project is created, click on **index.js** to have the file open in the
 
 ![3-16-vsc-open-index-js.png](./images/3-16-vsc-open-index-js.png)
 
-The payload send by Adobe Experience Platform to our Event Hub will only include segment id's:
+The payload sent by Adobe Experience Platform to your Event Hub will include segment id's:
 
 ```json
 [{
@@ -163,7 +163,6 @@ Replace the code in your Visual Studio Code's index.js with the code below. This
 // Marc Meewis - Solution Consultant Adobe - 2020
 // Adobe Experience Platform Enablement - Module 18
 
-const fetch = require('node-fetch'); 
 const request = require('request');
 
 const sandbox = "--module18sandbox--";
