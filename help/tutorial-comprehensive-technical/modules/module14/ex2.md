@@ -14,7 +14,7 @@ activity:
 In this exercise, you'll create four **Personalized Offers**. Here are the details to take into account when creating those offers:
 
 |Name | Date Range | Image Link | Priority | Eligibility  |  Cap/User | Language| 
-|-----|------------|------------|:--------:|-------------|:---------:|:---------:|---------|
+|-----|------------|------------|:--------:|--------------|:---------:|:-------:|
 |**ldap** - Nadia Elements Shell | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg | 25 | all - Female Profiles  | 10 | English | 
 |**ldap** - Radiant Tee | now - 1 month later  | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/58ae7e91a9bac17cdf92a178d6e25186_1.jpg | 15 | all - Female Profiles  | 10 | English |
 |**ldap** - Zeppelin Yoga Pant | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/108da1111c1a0ce5dbf80fdf9c84508e_1.jpg | 25 | all - Male Profiles | 10 | English |
