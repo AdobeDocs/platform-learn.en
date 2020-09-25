@@ -138,6 +138,12 @@ audience: all
   + [Business Value of Customer AI (Video)](/help/intelligent-services/business-value-of-customer-ai.md)
   + [Configure Customer AI (Video)](/help/intelligent-services/configure-customer-ai.md)
   + [Use Customer AI Scores and Insights (Video)](/help/intelligent-services/use-customer-ai-scores-and-insights.md)
++ Web SDK{#web-sdk}
+  + [Introduction to Web SDK and Edge Network](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
+  + [Demo of Web SDK and Edge Network](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
+  + [Create a schema, dataset, and streaming source connector](/help/data-ingestion/web-sdk/create-a-schema-dataset-and-streaming-source-connector-for-web-sdk-data.md)
++ Experience Platform Debugger{#debugger}
+  + [Introduction to Debugger](/help/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Integrations with Experience Cloud Applications](/help/intro-to-platform/integrations-with-experience-cloud-applications.md)
   + [Business Value of Platform and Magento (Video)](/help/experience-cloud/business-value-of-platform-and-magento.md)
