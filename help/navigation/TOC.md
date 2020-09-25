@@ -9,22 +9,20 @@ audience: all
 
 + [Overview](/help/overview.md)
 + Introduction to Platform{#intro-to-platform}
-  + [A Customer Experience Powered by Experience Platform](/help/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
-  + [Behind the Scenes: A Customer Experience Powered by Experience Platform](/help/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
-  + [Overview](/help/intro-to-platform/overview.md)
-  + [Key Capabilities](/help/intro-to-platform/key-capabilities.md)
-  + [Application and Intelligent Services](/help/intro-to-platform/application-and-intelligent-services.md)
-  + [Integrations with Experience Cloud Applications](/help/intro-to-platform/integrations-with-experience-cloud-applications.md)
-  + [Key Use Cases](/help/intro-to-platform/key-use-cases.md)
-  + [Basic Architecture](/help/intro-to-platform/basic-architecture.md)
-  + [Roles and Project Phases](/help/intro-to-platform/roles-and-project-phases.md)
+  + [A Customer Experience Powered by Experience Platform (Video)](/help/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
+  + [Behind the Scenes: A Customer Experience Powered by Experience Platform (Video)](/help/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
+  + [Experience Platform Overview (Video)](/help/intro-to-platform/overview.md)
+  + [Platform Key Capabilities (Video)](/help/intro-to-platform/key-capabilities.md)
+  + [Key Use Cases (Video)](/help/intro-to-platform/key-use-cases.md)
+  + [Basic Architecture (Video)](/help/intro-to-platform/basic-architecture.md)
+  + [Roles and Project Phases (Video)](/help/intro-to-platform/roles-and-project-phases.md)
 + Getting started with Platform{#getting-started}
-  + [Using the Platform UI](/help/intro-to-platform/interface-tour.md)
+  + [Using the Platform UI (Video)](/help/intro-to-platform/interface-tour.md)
   + [Authenticate to Experience Platform APIs]()
   + [Postman and Experience Platform APIs (Video)](/help/apis/postman.md)
   + [Getting Started for Data Architects and Data Engineers](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
   + Sandboxes{#sandboxes}
-    + [Use Sandboxes](/help/sandboxes/use-sandboxes.md)
+    + [Use Sandboxes (Video)](/help/sandboxes/use-sandboxes.md)
 + Schemas{#schemas}
   + [Understanding Experience Data Model (Video)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create a schema (API)](tutorials/create-schema-api.md)
@@ -39,14 +37,14 @@ audience: all
   + [Understanding Streaming Ingestion (Video)](/help/data-ingestion/understanding-streaming-ingestion.md)
   + [Create and populate a dataset (API)](datasets/create.md)
   + [Create Datasets and Ingest Data (Video)](/help/data-ingestion/create-datasets-and-ingest-data.md)
-  + [Map a CSV file to XDM](tutorials/map-a-csv-file.md)
-  + [Ingest batch data using the UI](tutorials/ingest-batch-data.md)
-  + [Create an authenticated streaming connection](tutorials/create-authenticated-streaming-connection.md)
+  + [Map a CSV file to XDM (UI)](tutorials/map-a-csv-file.md)
+  + [Ingest batch data (UI)](tutorials/ingest-batch-data.md)
+  + [Create an authenticated streaming connection (API)](tutorials/create-authenticated-streaming-connection.md)
   + [Create a streaming connection (API)](tutorials/create-streaming-connection.md)
   + [Create a streaming connection (UI)](tutorials/create-streaming-connection-ui.md)
-  + [Streaming record data](tutorials/streaming-record-data.md)
-  + [Streaming time series data](tutorials/streaming-time-series-data.md)
-  + [Streaming multiple messages](tutorials/streaming-multiple-messages.md)
+  + [Streaming record data (API)](tutorials/streaming-record-data.md)
+  + [Streaming time series data (API)](tutorials/streaming-time-series-data.md)
+  + [Streaming multiple messages (API)](tutorials/streaming-multiple-messages.md)
   + Sources{#sources}
     + [Understanding Source Connectors (Video)](/help/data-ingestion/understanding-source-connectors.md)
     + [Sources API and UI Tutorials](NET-NEW-DOC)
@@ -87,7 +85,7 @@ audience: all
   + [Demo of Streaming Segmentation (Video)](/help/segments/streaming-segmentation-demo.md)
 + Destinations{#destinations}
   + [Understanding Destinations (Video)](/help/rtcdp/understanding-destinations.md)
-  + [Create Destinations and Activate Data](/help/rtcdp/create-destinations-and-activate-data.md)
+  + [Create Destinations and Activate Data (Video)](/help/rtcdp/create-destinations-and-activate-data.md)
   + [Connect to a destination (UI)](/help/rtcdp/destinations/connect-destination.md)
   + [Activate profiles and segments to a destination (UI)](destinations/activate-destinations.md)
   + [Integrate with Google Customer Match (Video)](/help/rtcdp/integrate-with-google-customer-match.md)
@@ -117,7 +115,20 @@ audience: all
   + [Publish a model as a service (UI)](models-recipes/publish-model-service-ui.md)
   + [Publish a model as a service (API)](models-recipes/publish-model-service-api.md)
   + [Schedule automated training and scoring on a service (UI)](models-recipes/schedule-models-ui.md)
++ Application Services{#application-services}
+  + [Customer Journey Analytics](https://docs.adobe.com/content/help/en/customer-journey-analytics-learn/tutorials/overview.html)  
+  + [Journey Orchestration](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/overview.html)
+  + Offer Decisioning{#offer-decisioning}
+    + [Work with Offer Decisioning runtime (API)](tutorials/runtime.md)
+    + [Manage Offer Decisioning entities (API)](tutorials/entities.md)
+  + Real-time CDP{#rtcdp}
+    + [Understanding Real-time CDP (Video)](/help/rtcdp/understanding-the-real-time-customer-data-platform.md)
+    + [Demo of Real-time CDP (Video)](/help/rtcdp/demo.md)
+    + [Real-time CDP UI and Workflow (Video)](/help/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+    + [Integrate with IAB Transparency and Consent Framework 2.0 (Video)](/help/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
+    + [Enforce Data Usage Policies in Real-time CDP (Video)](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
 + Intelligent Services {#intelligent-services}
+  + [Application and Intelligent Services](/help/intro-to-platform/application-and-intelligent-services.md)
   + [Intro to Intelligent Services (Video)](/help/intelligent-services/introduction-to-intelligent-services.md)
   + [Intro to Attribution AI (Video)](/help/intelligent-services/introduction-to-attribution-ai.md)
   + [Business Value of Attribution AI (Video)](/help/intelligent-services/business-value-of-attribution-ai.md)
@@ -127,23 +138,7 @@ audience: all
   + [Business Value of Customer AI (Video)](/help/intelligent-services/business-value-of-customer-ai.md)
   + [Configure Customer AI (Video)](/help/intelligent-services/configure-customer-ai.md)
   + [Use Customer AI Scores and Insights (Video)](/help/intelligent-services/use-customer-ai-scores-and-insights.md)
-+ Decisioning{#decisioning}
-  + [Work with Decisioning Service runtime (API)](tutorials/runtime.md)
-  + [Manage Decisioning Service entities (API)](tutorials/entities.md)
-+ Real-time CDP{#rtcdp}
-  + [Understanding Real-time CDP (Video)](/help/rtcdp/understanding-the-real-time-customer-data-platform.md)
-  + [Demo of Real-time CDP (Video)](/help/rtcdp/demo.md)
-  + [Real-time CDP UI and Workflow (Video)](/help/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-  + [Integrate with IAB's Transparency and Consent Framework 2.0 (Video)](/help/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-  + [Enforce Data Usage Policies in Real-time CDP (Video)](https://docs.adobe.com/content/help/en/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
-+ Web SDK{#web-sdk}
-  + [Introduction to Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
-  + [Demo of Web SDK and Edge Network (Video)](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
-  + [Create a schema, dataset, and streaming source connector (Video)](/help/data-ingestion/web-sdk/create-a-schema-dataset-and-streaming-source-connector-for-web-sdk-data.md)
-  + [Introduction to the Debugger (Video)](/help/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
-+ Application Services{#application-services}
-  + [Journey Orchestration](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/overview.html)
-  + [Customer Journey Analytics](https://docs.adobe.com/content/help/en/customer-journey-analytics-learn/tutorials/overview.html)  
 + Experience Cloud Integrations {#experience-cloud}
+  + [Integrations with Experience Cloud Applications](/help/intro-to-platform/integrations-with-experience-cloud-applications.md)
   + [Business Value of Platform and Magento (Video)](/help/experience-cloud/business-value-of-platform-and-magento.md)
   
