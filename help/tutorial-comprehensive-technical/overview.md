@@ -198,6 +198,15 @@ Go to [Videos](./videos.md).
 - **Time Investment:** 90 minutes
 
 
+[18. Segment Activation to Microsoft Azure Event Hub](./modules/module18/segment-activation-microsoft-azure-eventhub.md)
+
+- **Audience:** Data Engineer, Data Architect, Data Analyst
+- **Prerequisites:** Access to Adobe Experience Platform, Real-time CDP and Microsoft Azure
+- **Description:** In this module, you'll setup a Microsoft Azure EventHub destination as a real-time destination for Adobe Experience Platform Real-time CDP. You will also setup and deploy an Azure function that will be triggered in real-time whenever Adobe Experience Platform delivers a segment payload to your Azure EventHub destination. The Azure Function that you'll trigger will show the mechanism of Adobe Experience Platform Real-time CDP's activation capabilities.
+As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a payload to a specified destination. We will also discuss the status of a segment qualification and how it relates to activation.
+- **Time Investment:** 90 minutes
+
+
 >[!NOTE]
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
