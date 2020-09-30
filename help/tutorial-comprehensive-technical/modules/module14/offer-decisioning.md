@@ -13,6 +13,6 @@ In this module, you will get a hands-on walkthrough of Adobe Experience Platform
 
 ## Exercises
 
-Exercises for this content are currently being developed.
+Exercises for this module are currently being developed.
 
 [Go Back to All Modules](../../overview.md)
