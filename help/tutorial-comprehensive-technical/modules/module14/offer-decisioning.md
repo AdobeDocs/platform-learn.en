@@ -9,7 +9,7 @@ activity:
 
 # 14. Offer Decisioning
 
-In this module, you will get a hands-on walkthrough of Adobe Experience Platform Offer Decisioning.
+In this module, you will get a hands-on walkthrough of Offer Decisioning.
 
 ## Exercises
 
