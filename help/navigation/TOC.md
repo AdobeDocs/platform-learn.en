@@ -17,24 +17,23 @@ audience: all
   + [Basic Architecture (Video)](/help/intro-to-platform/basic-architecture.md)
   + [Roles and Project Phases (Video)](/help/intro-to-platform/roles-and-project-phases.md)
 + Getting started with Platform{#getting-started}
+  + [Getting Started for Data Architects and Data Engineers](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
   + [Using the Platform UI (Video)](/help/intro-to-platform/interface-tour.md)
   + [Authenticate to Experience Platform APIs]()
   + [Postman and Experience Platform APIs (Video)](/help/apis/postman.md)
-  + [Getting Started for Data Architects and Data Engineers](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
   + Sandboxes{#sandboxes}
     + [Use Sandboxes (Video)](/help/sandboxes/use-sandboxes.md)
 + Schemas{#schemas}
   + [Understanding Experience Data Model (Video)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md)
   + [Create a schema (API)](tutorials/create-schema-api.md)
   + [Create a schema (UI)](tutorials/create-schema-ui.md)
-  + [Create your first Schema (Video)](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md)
-  + [Create your own Mixins and Classes (Video)](/help/schemas/create-your-own-mixins-and-classes.md)
+  + [Create a schema (Video)](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md)
+  + [Create mixins and classes (Video)](/help/schemas/create-your-own-mixins-and-classes.md)
   + [Define a relationship between two schemas (API)](tutorials/relationship-api.md)
   + [Define a relationship between two schemas (UI)](tutorials/relationship-ui.md)
   + [Create an ad-hoc schema (API)](tutorials/ad-hoc.md)
 + Data Ingestion{#data-ingestion}
   + [Understanding Data Ingestion (Video)](/help/data-ingestion/understanding-data-ingestion.md)
-  + [Understanding Streaming Ingestion (Video)](/help/data-ingestion/understanding-streaming-ingestion.md)
   + [Create and populate a dataset (API)](datasets/create.md)
   + [Create Datasets and Ingest Data (Video)](/help/data-ingestion/create-datasets-and-ingest-data.md)
   + [Map a CSV file to XDM (UI)](tutorials/map-a-csv-file.md)
@@ -45,6 +44,7 @@ audience: all
   + [Streaming record data (API)](tutorials/streaming-record-data.md)
   + [Streaming time series data (API)](tutorials/streaming-time-series-data.md)
   + [Streaming multiple messages (API)](tutorials/streaming-multiple-messages.md)
+  + [Understanding Streaming Ingestion (Video)](/help/data-ingestion/understanding-streaming-ingestion.md)
   + Sources{#sources}
     + [Understanding Source Connectors (Video)](/help/data-ingestion/understanding-source-connectors.md)
     + [Sources API and UI Tutorials](NET-NEW-DOC)
@@ -58,6 +58,7 @@ audience: all
 + Identities{#identities}
   + [Understanding Identity and Identity Graphs (Video)](/help/identities/understanding-identity-and-identity-graphs.md)
   + [Label, Ingest, and Verify Identity Data (Video)](/help/identities/label-ingest-and-verify-identity-data.md)
+  + [Configure a dataset for [!DNL Profile] & [!DNL Identity] service (API)](tutorials/dataset-configuration.md)
 + Profiles{#profiles}
   + [Understanding Real-time Customer Profile (Video)](/help/profiles/understanding-the-real-time-customer-profile.md)
   + [Overview Diagram](/help/profiles/overview-diagram.md)
@@ -69,9 +70,9 @@ audience: all
   + [Understanding Data Governance (Video)](/help/governance/understanding-data-governance.md)
   + [Manage data usage labels (UI)](labels/user-guide.md)
   + [Manage labels for datasets and fields (API)](labels/dataset-api.md)
-  + [Classify data using Governance Labels (Video)](/help/governance/classify-data-using-governance-labels.md)
+  + [Classify data using Governance Labels in the UI (Video)](/help/governance/classify-data-using-governance-labels.md)
   + [Create a data usage policy (API)](policies/create.md)
-  + [Create Data Usage Policies (Video)](/help/governance/create-data-usage-policies.md)
+  + [Create a data usage policy in the UI (Video)](/help/governance/create-data-usage-policies.md)
   + [Enforce Data Usage Policies in Real-time CDP (Video)](/help/governance/enforce-data-usage-policies-in-real-time-cdp.md)
   + [Enforce data usage policies (API)](enforcement/api-enforcement.md)
 + Segments{#segments}
@@ -95,8 +96,8 @@ audience: all
   + [Understanding Query Service (Video)](/help/queries/understanding-query-service.md)
   + [Creating queries (UI)](creating-queries/creating-queries.md)
   + [Data Usage Patterns (Video)](/help/queries/understanding-data-usage-patterns-with-query-service.md)
-  + [Run Queries (Video)](/help/queries/run-queries.md)
-  + [Build Dashboards (Video)](/help/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
+  + [Run Queries in the UI (Video)](/help/queries/run-queries.md)
+  + [Build Dashboards using BI tools (Video)](/help/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
 + Data Science Workspace{#data-science-workspace}
   + [Understanding Data Science Workspace (Video)](/help/data-science-workspace/understanding-data-science-workspace.md)
   + [Create and publish a machine learning model](models-recipes/create-publish-model.md)
@@ -104,16 +105,16 @@ audience: all
   + [Create the Retail Sales schema and dataset](models-recipes/create-retails-sales-dataset.md)
   + [Preview schemas and datasets](models-recipes/preview-schema-data.md)
   + [Package source files into a recipe](models-recipes/package-source-files-recipe.md)
-  + [Import a packaged recipe (UI)](models-recipes/import-packaged-recipe-ui.md)
   + [Import a packaged recipe (API)](models-recipes/import-packaged-recipe-api.md)
-  + [Train and evaluate a model (UI)](models-recipes/train-evaluate-model-ui.md)
+  + [Import a packaged recipe (UI)](models-recipes/import-packaged-recipe-ui.md)
   + [Train and evaluate a model (API)](models-recipes/train-evaluate-model-api.md)
-  + [Score a model (UI)](models-recipes/score-model-ui.md)
+  + [Train and evaluate a model (UI)](models-recipes/train-evaluate-model-ui.md)
   + [Score a model (API)](models-recipes/score-model-api.md)
+  + [Score a model (UI)](models-recipes/score-model-ui.md)
   + [Optimize a model](models-recipes/optimize-model.md)
   + [Enrich Real-time Customer Profile with machine learning insights](models-recipes/enrich-profile.md)
-  + [Publish a model as a service (UI)](models-recipes/publish-model-service-ui.md)
   + [Publish a model as a service (API)](models-recipes/publish-model-service-api.md)
+  + [Publish a model as a service (UI)](models-recipes/publish-model-service-ui.md)
   + [Schedule automated training and scoring on a service (UI)](models-recipes/schedule-models-ui.md)
 + Application Services{#application-services}
   + [Customer Journey Analytics](https://docs.adobe.com/content/help/en/customer-journey-analytics-learn/tutorials/overview.html)  
@@ -139,8 +140,8 @@ audience: all
   + [Configure Customer AI (Video)](/help/intelligent-services/configure-customer-ai.md)
   + [Use Customer AI Scores and Insights (Video)](/help/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Web SDK{#web-sdk}
-  + [Introduction to Web SDK and Edge Network](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
-  + [Demo of Web SDK and Edge Network](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
+  + [Introduction to Web SDK](/help/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
+  + [Demo of Web SDK](/help/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
   + [Create a schema, dataset, and streaming source connector](/help/data-ingestion/web-sdk/create-a-schema-dataset-and-streaming-source-connector-for-web-sdk-data.md)
 + Experience Platform Debugger{#debugger}
   + [Introduction to Debugger](/help/data-ingestion/web-sdk/introduction-to-the-experience-platform-debugger.md)
