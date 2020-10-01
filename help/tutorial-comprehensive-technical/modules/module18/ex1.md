@@ -84,6 +84,44 @@ Click **Event Hubs** in your event hub namespace. You should now see your **Even
 
 ![1-14-event-hub-list.png](./images/1-14-event-hub-list.png)
 
+## 18.1.4 Setup your Azure Storage Account
+
+To debug your Azure Event Hub function in later exercises, you'll need to provide an Azure Storage Account as part of your Visual Studio Code project setup. You'll now create that Azure Storage Account.
+
+Go to [https://portal.azure.com/#home](https://portal.azure.com/#home) and select **Create a Resource**.
+
+![1-15-event-hub-storage.png](./images/1-15-event-hub-storage.png)
+
+Enter **storage** in the search and select **Storage Account** from the list.
+
+![1-16-event-hub-search-storage.png](./images/1-16-event-hub-search-storage.png)
+
+Select **Create**.
+
+![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
+
+Specify your **Resource Group** (created in the beginning of this exercise), use **ldapaepstorage** as your Storage account name, for example **mmeewisaepstorage**, and select **Locally-redundant storage (LRS)**, then click **Review + create**.
+
+![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
+
+Click **Create**.
+
+![1-19-event-hub-submit-storage.png](./images/1-19-event-hub-submit-storage.png)
+
+Your Storage Account creation will take a couple seconds:
+
+![1-20-event-hub-deploy-storage.png](./images/1-20-event-hub-deploy-storage.png)
+
+When finished your screen will display the **Go to resource** button. 
+
+Click **Microsoft Azure**.
+
+![1-21-event-hub-deploy-ready-storage.png](./images/1-21-event-hub-deploy-ready-storage.png)
+
+Your Storage Account is now visible under **Recent Recources**.
+
+![1-22-event-hub-deploy-resources-list.png](./images/1-22-event-hub-deploy-resources-list.png)
+
 Next Step: [18.2 Configure your Azure Event Hub Destination in Adobe Experience Platform](./ex2.md)
 
 [Go Back to Module 18](./segment-activation-microsoft-azure-eventhub.md)

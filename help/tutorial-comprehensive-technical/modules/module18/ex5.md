@@ -311,31 +311,15 @@ The result should look like:
 
 ## 18.5.4 Run Azure Project
 
-Now it is time to run your project. At this stage we will not deploy the project to Azure. We will run it locally in debug mode. Select the Run icon, click the green arrow. The first time you run you project in debug mode, you will need to attach a Azure storage account, hit Select storage account.
+Now it is time to run your project. At this stage we will not deploy the project to Azure. We will run it locally in debug mode. Select the Run icon, click the green arrow. The first time you run you project in debug mode, you will need to attach a Azure storage account, click **Select storage account**.
 
 ![3-17-vsc-run-project.png](./images/3-17-vsc-run-project.png)
 
-In the storage account wizard select + Create new storage account:
+From the list of storage accounts, select the one that you have created as part of [18.1.4 Setup your Azure Storage Account](./ex1.md). Your storage account is named **ldapaepstorage**, for instance: **mmeewisaepstorage**.
 
-![3-18-vsc-run-storage-account.png](./images/3-18-vsc-run-storage-account.png)
+![3-22-vsc-select-storage-account.png](./images/3-22-vsc-select-storage-account.png)
 
-Enter the name of the storage account, use the format **ldapaepstorage**, for example **mmeewisaepstorage** and hit enter:
-
-![3-19-vsc-run-storage-account-name.png](./images/3-19-vsc-run-storage-account-name.png)
-
-Select the resource group that you created as part of **exercise 1**. If you followed the naming conventions it will look like **ldap-aep-enablement**, for example **mmeewis-aep-enablement**
-  
-![3-20-vsc-run-storage-resource-group.png](./images/3-20-vsc-run-storage-resource-group.png)
-
-Select West Europe as the location for new resources:
-
-![3-21-vsc-run-storage-resource-location.png](./images/3-21-vsc-run-storage-resource-location.png)
-
-Let the storage account creation finish (can take 1-2 minutes):
-
-![3-22-vsc-create-storage-account.png](./images/3-22-vsc-create-storage-account.png)
-
-Your project is now up and running and is listing for events in the Event Hub. In the next exercise we will activate segments and demonstrate behavior in Luma Telco that will qualify us. As a result you will receive a segment qualification payload in the terminal of your Event Hub trigger function:
+Your project is now up and running and is listing for events in the Event Hub. In the next exercise you'll demonstrate behavior on the Luma Telco website that will qualify you for those segments. As a result you will receive a segment qualification payload in the terminal of your Event Hub trigger function:
 
 ![3-23-vsc-application-started.png](./images/3-23-vsc-application-started.png)
 
