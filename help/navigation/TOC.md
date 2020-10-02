@@ -19,7 +19,7 @@ audience: all
   + [Basic architecture (Video)](/help/intro-to-platform/basic-architecture.md)
   + [Using the Platform user interface (Video)](/help/intro-to-platform/interface-tour.md)
   + [Roles and project phases (Video)](/help/intro-to-platform/roles-and-project-phases.md)
-+ [Authenticate to Experience Platform APIs](http://www.adobe.com/go/platform-api-authentication-en)
++ [Authenticate to Experience Platform APIs](/help/authentication/platform-api-authentication.md)
 + [Getting started: Data Architects and Data Engineers](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 + Data Governance {#data-governance}
   + [Introduction to Data Governance (Video)](/help/governance/introduction-to-data-governance.md)
@@ -33,10 +33,10 @@ audience: all
   + [Enforce data usage policies in Real-time CDP (Video)](/help/governance/enforce-data-usage-policies-in-real-time-cdp.md)
 + Data Ingestion {#data-ingestion}
   + [Understanding Data Ingestion (Video)](/help/data-ingestion/understanding-data-ingestion.md)
-  + [Create and populate a dataset (API)](http://www.adobe.com/go/data-configure-dataset-en)
+  + [Create and populate a dataset (API)](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/create.html)
   + [Create and populate a dataset in the UI (Video)](/help/data-ingestion/create-datasets-and-ingest-data.md)
-  + [Map a CSV file to XDM (UI)](http://www.adobe.com/go/batch-ingestion-map-data-ui-tutorial-en)
-  + [Ingest batch data (UI)](http://www.adobe.com/go/batch-ingestion-ingest-data-ui-tutorial-en)
+  + [Map a CSV file to XDM (UI)](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/map-a-csv-file.html)
+  + [Ingest batch data (UI)](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/ingest-batch-data.html)
   + [Understanding streaming ingestion (Video)](/help/data-ingestion/understanding-streaming-ingestion.md)
   + [Create an authenticated streaming connection (API)](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/create-authenticated-streaming-connection.html)
   + [Create a streaming connection (API)](https://docs.adobe.com/content/help/en/experience-platform/ingestion/tutorials/create-streaming-connection.html)
@@ -99,13 +99,13 @@ audience: all
   + [Using sandboxes (Video)](/help/sandboxes/use-sandboxes.md)
 + Schemas {#schemas}
   + [Understanding Experience Data Model and the XDM System (Video)](/help/schemas/understanding-the-xdm-system-and-experience-data-model.md)
-  + [Create a schema (API)](https://www.adobe.com/go/xdm-schema-registry-api-tutorial)
-  + [Create a schema (UI)](https://www.adobe.com/go/xdm-schema-editor-tutorial-en)
+  + [Create a schema (API)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-api.html)
+  + [Create a schema (UI)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html)
   + [Create a schema in the UI (Video)](/help/schemas/create-your-first-schema-with-out-of-the-box-components.md)
   + [Create mixins and classes in the UI (Video)](/help/schemas/create-your-own-mixins-and-classes.md)
-  + [Define a relationship between two schemas (API)](https://www.adobe.com/go/xdm-relationship-api-en)
-  + [Define a relationship between two schemas (UI)](https://www.adobe.com/go/xdm-relationship-ui-en)
-  + [Create an ad-hoc schema (API)](https://www.adobe.com/go/xdm-ad-hoc-schema-en)
+  + [Define a relationship between two schemas (API)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/relationship-api.html)
+  + [Define a relationship between two schemas (UI)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/relationship-ui.html)
+  + [Create an ad-hoc schema (API)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/ad-hoc.html)
 + Segments {#segments}
   + [Create a segment (API)](https://docs.adobe.com/content/help/en/experience-platform/segmentation/tutorials/create-a-segment.html)
   + [Create a segment (UI)](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html)
@@ -117,7 +117,7 @@ audience: all
   + [Enforce data usage compliance for segments (API)](https://docs.adobe.com/content/help/en/experience-platform/segmentation/tutorials/governance.html)
   + [Demo of streaming segmentation (Video)](/help/segments/streaming-segmentation-demo.md)
 + Sources {#sources}
-  + [Sources API and UI tutorials](../sources/sources-tutorials.md)
+  + [Sources API and UI tutorials](/help/sources/sources-tutorials.md)
 + Application Services {#application-services}
   + [Customer Journey Analytics tutorials](https://docs.adobe.com/content/help/en/customer-journey-analytics-learn/tutorials/overview.html)
   + [Journey Orchestration tutorials](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/overview.html)
