@@ -86,7 +86,7 @@ audience: all
   + [Add data to Real-time Customer Profile (API and UI)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/add-profile-data.html)
   + [Bring data into Real-time Customer Profile (Video)](/help/profiles/bring-data-into-the-real-time-customer-profile.md)
   + [Customizing profile view details (UI)](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/profile-customization.html)
-  + [Configure a dataset for [!DNL Profile] & [!DNL Identity] service (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
+  + [Configure a dataset for Profile & Identity service (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
 + Queries {#queries}
   + [Understanding Query Service (Video)](/help/queries/understanding-query-service.md)
   + [Creating queries (UI)](https://docs.adobe.com/content/help/en/experience-platform/query/creating-queries/creating-queries.html)
