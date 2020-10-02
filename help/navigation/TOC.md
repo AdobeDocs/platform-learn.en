@@ -79,7 +79,7 @@ audience: all
 + Identities {#identities}
   + [Understanding Identity Service and identity graphs (Video)](/help/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data (Video)](/help/identities/label-ingest-and-verify-identity-data.md)
-  + [Configure a dataset for [!DNL Profile] & [!DNL Identity] service (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
+  + [Configure a dataset for Profile & Identity service (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
 + Profiles {#profiles}
   + [Understanding Real-time Customer Profile (Video)](/help/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram (Video)](/help/profiles/overview-diagram.md)
