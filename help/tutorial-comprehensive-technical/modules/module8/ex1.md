@@ -138,6 +138,7 @@ interactionType = "--aepTenantId--.productData.productInteraction"
 user_id = "--aepTenantId--.identification.ecid"
 brand_name = "--aepTenantId--.brand.brandName"
 timestamp = "timestamp"
+idcolumn = "_id"
 
 client_context = PLATFORM_SDK_CLIENT_CONTEXT
 ```
@@ -203,7 +204,7 @@ Click on the next cell in the notebook.
 df = df.dropna(subset=[user_id, item_id, interactionType, brand_name])
 
 # only focus on one brand
-df = df[df[brand_name] == "Luma Telco"]
+df = df[df[brand_name] == "Luma Retail"]
 ```
 
 Click the play button to execute this cell.
@@ -263,7 +264,7 @@ Click on the next cell in the notebook.
 ![DSW](./images/cell5.png)
 
 ```python
-filtered_column_list = [item_id, user_id, interactionType, brand_name, timestamp]
+filtered_column_list = [idcolumn, item_id, user_id, interactionType, brand_name, timestamp]
 
 df2 = df2[filtered_column_list]
 

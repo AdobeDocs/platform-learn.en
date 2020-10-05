@@ -1,6 +1,6 @@
 ---
-title: Understanding Adobe's Real-time Customer Data Platform (RTCDP)
-description: Adobe’s Real-time Customer Data Platform (CDP) is an application service built on top of Adobe Experience Platform that brings together known and unknown customer data to create trusted customer profiles with simplified integration, intelligent segmentation, and real-time activation across the digital customer journey.
+title: Understanding Adobe's Real-time Customer Data Platform
+description: Learn how Adobe’s Real-time Customer Data Platform (CDP) brings together known and unknown customer data to create and activate trusted customer profiles.
 feature: 
 topics: rtcdp
 kt: 
