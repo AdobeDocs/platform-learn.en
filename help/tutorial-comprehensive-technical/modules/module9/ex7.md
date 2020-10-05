@@ -43,11 +43,11 @@ Go back to the **Update Configuration ID** screen and paste the code that you co
 
 Next, go back to Google Tag Manager.
 
-Copy the second code fragment.
+In the second code fragment, copy the URL of the iFrame src. Make sure you copy everything between the brackets as indicated in the screenshot:
 
 ![Launch Setup](./images/gtmjs2.png)
 
-Go back to the **Update Configuration ID** screen and paste the code that you copied in the field **GTM Body Tag**.
+Go back to the **Update Configuration ID** screen and paste the iFrame src URL that you copied into the field **GTM Body Tag**. Make sure to only paste the iFrame src URL as indicated in the below screenshot.
 
 ![Launch Setup](./images/cfgid4.png)
 
