@@ -15,9 +15,9 @@ The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/
 
 ## Objectives
 
-* Analyze your training data using Notebooks
-* Explore the Product Recommendations Recipe
-* Learn how the Product Recommendations Recipe can be created
+- Analyze your training data using Notebooks
+- Explore the Product Recommendations Recipe
+- Learn how the Product Recommendations Recipe can be created
 
 ## 8.2.1 Analyze the Data
 
@@ -370,7 +370,7 @@ Replace that code by this code:
 >
 >The environment variables **aepRecommendationsInputDatasetId**, **aepRecommendationsOutputDatasetId** and **aepRecommendationsOutputSchemaRef** refer to dataset IDs of datasets and Schema Ref ID of schemas that have been created in your Adobe Experience Platform instance. 
 >
->**aepRecommendationsInputDatasetId** refers to the dataset ID of the dataset **AEP Demo - Recommendations Input**, ** aepRecommendationsOutputDatasetId** refers to the dataset ID of the dataset **AEP Demo - Recommendations Output**, ** aepRecommendationsOutputSchemaRef** refers to the Schema Ref ID of the schema **AEP Demo - Recommendations Output Schema**. Replace the environment variables by the dataset ID and Schema Ref ID when you paste the code in the **Scoring Configuration** cell in your notebook.
+>**aepRecommendationsInputDatasetId** refers to the dataset ID of the dataset **AEP Demo - Recommendations Input**, **aepRecommendationsOutputDatasetId** refers to the dataset ID of the dataset **AEP Demo - Recommendations Output**, **aepRecommendationsOutputSchemaRef** refers to the Schema Ref ID of the schema **AEP Demo - Recommendations Output Schema**. Replace the environment variables by the dataset ID and Schema Ref ID when you paste the code in the **Scoring Configuration** cell in your notebook.
 
 You should now have something similar in the **Scoring Configuration** cell:
 
@@ -919,11 +919,11 @@ After clicking **Train**, the Training Run will start and will need a couple of 
 
 When you click **Train**, the following cells are executed:
 
-* Requirements File
-* Configuration Files - Training
-* Training Data Loader File
-* Pipeline File
-* Evaluator File
+- Requirements File
+- Configuration Files - Training
+- Training Data Loader File
+- Pipeline File
+- Evaluator File
 
 ### Score a model
 
@@ -945,11 +945,11 @@ After clicking **Score**, the Training Run will start and will need a couple of 
 
 When you click **Score**, the following cells are executed:
 
-* Requirements File
-* Configuration Files - Scoring
-* Scoring Data Loader File
-* Pipeline File
-* Evaluator File
+- Requirements File
+- Configuration Files - Scoring
+- Scoring Data Loader File
+- Pipeline File
+- Evaluator File
 
 Additionally, at the end of the Scoring Run, the output with recommendations is stored in Adobe Experience Platform, in the **AEP Demo - Recommendations Output**-dataset.
 
@@ -973,7 +973,7 @@ After clicking the **Create Recipe** button, you have to enter a name for your r
 
 As a naming convention, please use:
 
-* **ldap**Recommendations
+- **ldap**Recommendations
 
 Replace **ldap** with your ldap.
 
