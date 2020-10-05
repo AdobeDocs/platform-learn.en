@@ -1,7 +1,8 @@
 ---
 user-guide-title: Adobe Experience Platform Tutorials
-breadcrumb-title: Experience Platform Tutorials
+breadcrumb-title: Tutorials
 user-guide-url: /content/help/en/platform-learn/tutorials/overview.html
+user-guide-description: Learn the many components of Experience Platform.
 audience: all
 ---
 
