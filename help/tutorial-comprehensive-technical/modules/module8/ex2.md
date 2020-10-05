@@ -339,7 +339,7 @@ Click in the cell for **Scoring Configuration**.
 Before you do anything, please pay attention!! Whatever you do, don't delete or overwrite the line that starts with **%%writefile**. This line is required by the Recipe Builder notebook.
 
 ```python
-%%writefile ~/my-workspace/.recipes/recipe-pt9c03C_w/training.conf
+%%writefile ~/my-workspace/.recipes/recipe-pt9c03C_w/scoring.conf
 ```
 
 ![DSW](./images/define3.png)
