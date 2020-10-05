@@ -80,14 +80,14 @@ audience: all
 + Identities {#identities}
   + [Understanding Identity Service and identity graphs (Video)](/help/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data (Video)](/help/identities/label-ingest-and-verify-identity-data.md)
-  + [Configure a dataset for Profile & Identity service (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
+  + [Configure a dataset for Identity service (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
 + Profiles {#profiles}
   + [Understanding Real-time Customer Profile (Video)](/help/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram (Video)](/help/profiles/overview-diagram.md)
   + [Add data to Real-time Customer Profile (API and UI)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/add-profile-data.html)
   + [Bring data into Real-time Customer Profile (Video)](/help/profiles/bring-data-into-the-real-time-customer-profile.md)
   + [Customizing profile view details (UI)](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/profile-customization.html)
-  + [Configure a dataset for Profile & Identity service (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
+  + [Configure a dataset for Profile (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
 + Queries {#queries}
   + [Understanding Query Service (Video)](/help/queries/understanding-query-service.md)
   + [Creating queries (UI)](https://docs.adobe.com/content/help/en/experience-platform/query/creating-queries/creating-queries.html)
