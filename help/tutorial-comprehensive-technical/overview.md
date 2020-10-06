@@ -44,7 +44,7 @@ After completing this tutorial, you will be able to:
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Launch: [https://launch.adobe.com](https://launch.adobe.com)
-- Access to a Platform demo website
+- Access to the AEP Demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
@@ -98,6 +98,8 @@ Go to [Videos](./videos.md).
 - **Prerequisites:** Access to Adobe Experience Platform and Postman
 - **Description:** In this foundational module, you will explore the Real-time Customer Profile in Adobe Experience Platform by making use of the UI and API.
 - **Time Investment:** 90 minutes
+- **Download these assets**: 
+  - [Postman collections](./assets/postman/postman_module3.zip)
 
 [4. Voice Assistant - Amazon Alexa](./modules/module4/data-ingestion-amazon-alexa.md)
 
@@ -105,6 +107,9 @@ Go to [Videos](./videos.md).
 - **Prerequisites:** Access to Adobe Experience Platform, AWS Lambda and Amazon Alexa
 - **Description:** In this module, you'll add an Amazon Alexa Skill to your live demo environment.
 - **Time Investment:** 60 minutes
+- **Download these assets**: 
+  - [AWS Alexa Interaction Model](./assets/aws-alexa/aepskillinteractionmodel.json)
+  - [AWS Alexa Lambda Code](./assets/aws-lambda/aepskill.zip)
 
 [5. Extract, Transform, Load data using a 3rd party ETL-tool](./modules/module5/data-ingestion-informatica-etl.md)
 
@@ -112,6 +117,8 @@ Go to [Videos](./videos.md).
 - **Prerequisites:** Access to Adobe Experience Platform, Informatica ETL
 - **Description:** In this module, you'll use an ETL-tool to extract, transform and load data in Adobe Experience Platform.
 - **Time Investment:** 60 minutes
+- **Download these assets**: 
+  - [CSV files](./assets/csv/module5/csvfiles.zip)
 
 [6. Journey Orchestration](./modules/module6/journey-orchestration-create-account.md)
 
@@ -126,6 +133,10 @@ Go to [Videos](./videos.md).
 - **Prerequisites:** Access to Adobe Experience Platform, Query Service, Power BI or Tableau
 - **Description:** In this module, you'll learn how to use Adobe Experience Platform Query Service.
 - **Time Investment:** 90 minutes
+- **Download these assets**: 
+  - [JSON - Sample Data: AEP Demo - Website Interactions](./assets/json/m7_ee.json)
+  - [JSON - Sample Data: AEP Demo - Call Center Interactions](./assets/json/m7_callcenter.json)
+  - [JSON - Sample Data: AEP Demo - Loyalty](./assets/json/m7_loyalty.json)
 
 [8. Data Science Workspace - Popularity-based Recommendations](./modules/module8/data-science-workspace-popularity-based-recommendations.md)
 
@@ -182,6 +193,8 @@ Go to [Videos](./videos.md).
 - **Prerequisites:** Access to Adobe Experience Platform, Data Science Workspace, Anaconda
 - **Description:** In this module, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Car Insurance Sales Propensity Model, schedule the model to re-train, and prepare the model for Real-time Scoring.
 - **Time Investment:** 120 minutes
+- **Download these assets**: 
+  - [JSON - Sample Data: AEP Demo - Car Insurance Interactions](./assets/json/m15_carinsurance.json)
 
 [16. Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/module16/customer-journey-analytics-bigquery-gcp.md)
 
@@ -189,6 +202,8 @@ Go to [Videos](./videos.md).
 - **Prerequisites:** Access to Adobe Experience Platform, Customer Journey Analytics, Google Cloud Platform, Google BigQuery
 - **Description:** In this module, you'll set up your own instance of Google Cloud Platform, load demo data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
 - **Time Investment:** 120 minutes
+- **Download these assets**: 
+  - [JSON - Sample Data: AEP Demo - Loyalty Data (M16)](./assets/json/m16_bqLoyalty.json)
 
 [17. Adobe Experience Platform and Microsoft Dynamics 365](./modules/module17/adobe-experience-platform-microsoft-dynamics-365.md)
 
@@ -196,7 +211,6 @@ Go to [Videos](./videos.md).
 - **Prerequisites:** Access to Adobe Experience Platform, Customer Journey Analytics, Microsoft Dynamics 365 and Microsoft Azure
 - **Description:** In this module, you'll set up your instance of Dynamics 365 for Sales and load sample customer data. You will then use the Dynamics 365 Source Connector in Adobe Experience Platform to ingest that data from Microsoft Dynamics 365 into Adobe Experience Platform. Finally, you'll use Journey orchestration to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the AEP Demo website and you'll configure Journey orchestration to communicate directly to a customer based on the on a change in sentiment. In addition, you'll also learn how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Journey Orchestration based on the Contact record change in Microsoft Dynamics 365. 
 - **Time Investment:** 90 minutes
-
 
 [18. Segment Activation to Microsoft Azure Event Hub](./modules/module18/segment-activation-microsoft-azure-eventhub.md)
 

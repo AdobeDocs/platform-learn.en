@@ -105,6 +105,7 @@ select --aepTenantId--.productData.productInteraction, count(*)
 from   aep_demo_website_interactions
 where  --aepTenantId--.brand.brandName like 'Luma Telco'
 and    --aepTenantId--.productData.productInteraction is not null
+and    --aepTenantId--.productData.productInteraction <> ''
 group  by --aepTenantId--.productData.productInteraction;
 ```
 
@@ -121,8 +122,8 @@ module7:all-> group  by --aepTenantId--.productData.productInteraction;
  productinteraction | count(1) 
 --------------------+----------
  productView        |     2138
- testdriveSigned    |      262
- testdriveBooked    |      506
+ productAddToCart   |      262
+ productPurchase    |      506
 (3 rows)
 ```
 

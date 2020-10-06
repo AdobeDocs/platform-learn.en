@@ -1,6 +1,6 @@
 ---
 title: Understanding Destinations in Adobe's Real-time Customer Data Platform (RTCDP)
-description: Destinations are pre-built integrations with destination platforms supported by Adobe’s Real-time Customer Data Platform that activate data to those partners in a seamless way. This video defines the two types of destinations&mdash;Profile Exports and Segment Exports&mdash;and gives examples/use cases for each destination type.
+description: This video defines the two types of destinations&mdash;Profile Exports and Segment Exports&mdash;and gives examples/use cases for each destination type.
 feature: destinations
 topics: rtcdp
 kt: 3797
