@@ -145,35 +145,11 @@ This is the result:
 
 ![DSW](./images/anareesult3.png)
 
-### Peeking at the Data
-
-Click in the next empty cell in your notebook.
-
-![DSW](./images/anacell4.png)
-
-Copy the below code and paste it in the first cell in your notebook.
-
-```python
-df.head(20)
-```
-
-You'll then have this in that cell:
-
-![DSW](./images/anacell4done.png)
-
-Click the play button to execute this cell.
-
-![DSW](./images/play.png)
-
-This is the result:
-
-![DSW](./images/anareesult4.png)
-
 ### Statistical Summary
 
 Click in the next empty cell in your notebook.
 
-![DSW](./images/anacell5.png)
+![DSW](./images/anacell4.png)
 
 Copy the below code and paste it in the first cell in your notebook.
 
@@ -973,7 +949,7 @@ After clicking the **Create Recipe** button, you have to enter a name for your r
 
 As a naming convention, please use:
 
-- **ldap**Recommendations
+- **ldapRecommendations**
 
 Replace **ldap** with your ldap.
 
