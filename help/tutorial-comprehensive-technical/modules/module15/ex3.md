@@ -98,7 +98,7 @@ Replace that code by this code:
 
 >[!IMPORTANT]
 >
->The environment variables **aepCarInsuranceInteractionsDatasetId** and **aepCarInsuranceInteractionsSchemaRef** refer to dataset IDs of datasets that have been created in your Adobe Experience Platform instance. 
+>The environment variables **aepCarInsuranceInteractionsDatasetId** and **aepCarInsuranceInteractionsSchemaRef** refer to a dataset ID of dataset that has been created in your Adobe Experience Platform instance and to a schema ref ID of a schema that has been created in your Adobe Experience Platform Instance. 
 >
 >**aepCarInsuranceInteractionsDatasetId** refers to the dataset ID of the dataset **AEP Demo - Car Insurance Interactions**, **aepCarInsuranceInteractionsSchemaRef** refers to the Schema Ref ID of the schema **AEP Demo - Car Insurance Application Schema**. Replace the environment variables by the dataset ID and Schema Ref ID when you paste the code in the **Training Configuration** cell in your notebook.
 
@@ -1007,8 +1007,6 @@ After entering a Recipe Name, click **OK**.
 A second popup is shown, telling you that your Recipe is being created. This could take up to 5 minutes, please wait until the process finishes.
 
 ![DSW](./images/popup.png)
-
-For now, click the **Dismiss** button.
 
 You can view the progress of the recipe creation process in the top right corner of Jupyter Notebooks.
 

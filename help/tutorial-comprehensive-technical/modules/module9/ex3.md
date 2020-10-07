@@ -297,7 +297,7 @@ hour = (hour < 10 ? "0" : "") + hour;
 min = (min < 10 ? "0" : "") + min;
 sec = (sec < 10 ? "0" : "") + sec;
 
-var str = date.getFullYear() + "-" + month + "-" + day + "T" +  hour + ":" + min + ":" + sec + "Z";
+var str = date.getFullYear() + "-" + month + "-" + day + "T" +  hour + ":" + min + ":" + sec + ".000Z";
 
 return str;
 }
