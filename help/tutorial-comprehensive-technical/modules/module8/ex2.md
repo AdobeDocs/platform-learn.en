@@ -315,7 +315,7 @@ Replace that code by this code:
 ```python
 {
    "tenant_id": "--aepTenantId--",
-   "trainingDataSetId": "--aepRecommendationsInputDatasetId--", # AEP Demo - Recommendations Input Dataset
+   "trainingDataSetId": "--aepRecommendationsInputDatasetId--",
    "ACP_DSW_TRAINING_XDM_SCHEMA": "https://ns.adobe.com/--aepTenantIdSchema--/schemas/--aepRecommendationsInputSchemaRef--", # AEP Demo - Recommendations Input Schema Ref
    "num_recommendations": "5",
    "sampling_fraction": "0.5"
@@ -360,9 +360,9 @@ Replace that code by this code:
 ```python
 {
    "tenant_id": "--aepTenantId--",
-   "scoringDataSetId": "--aepRecommendationsInputDatasetId--", # AEP Demo - Recommendations Input Dataset
-   "scoringResultsDataSetId": "--aepRecommendationsOutputDatasetId--", # AEP Demo - Recommendations Output Dataset
-   "ACP_DSW_SCORING_RESULTS_XDM_SCHEMA": "https://ns.adobe.com/--aepTenantIdSchema--/schemas/--aepRecommendationsOutputSchemaRef--" # AEP Demo - Recommendations Output Schema Ref
+   "scoringDataSetId": "--aepRecommendationsInputDatasetId--",
+   "scoringResultsDataSetId": "--aepRecommendationsOutputDatasetId--",
+   "ACP_DSW_SCORING_RESULTS_XDM_SCHEMA": "https://ns.adobe.com/--aepTenantIdSchema--/schemas/--aepRecommendationsOutputSchemaRef--" 
 }
 ```
 
@@ -927,13 +927,13 @@ When you click **Train**, the following cells are executed:
 
 ### Score a model
 
-Training a model is done by clicking the **Score** button.
+Scoring a model is done by clicking the **Score** button.
 
 ![DSW](./images/playscore.png)
 
-Click **Score** on the top toolbar to create a training run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the training script will appear in the notebook (under the pipeline.py cell).
+Click **Score** on the top toolbar to create a scoring run in the cell. This executes the scoring data loader, pipeline and evaluator cells and generates evaluation metrics to gauge model performance. A log of commands and outputs from the scoring script will appear in the notebook (under the pipeline.py cell).
 
-After clicking **Score**, the Training Run will start and will need a couple of minutes to complete.
+After clicking **Score**, the Scoring Run will start and will need a couple of minutes to complete.
 
 ![DSW](./images/slog1.png)
 ...

@@ -47,7 +47,7 @@ Open the dataset **AEP Demo - Website Interactions**.
 
 ![DSW](./images/dsview.png)
 
-By clicking the **Preview Dataset** button, you can see what data is sent into that dataset and how the data model looks like.
+By clicking the **Preview Dataset** button, you can see what data is sent into that dataset and how the data model looks like. FYI - your data in your dataset may look different. That's normal and expected.
 
 ![DSW](./images/dspreview.png)
 

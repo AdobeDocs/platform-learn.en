@@ -211,9 +211,9 @@ You'll then see all available datasets in Adobe Experience Platform being return
 
 ![DSW](./images/jupstart5result.png)
 
-### Load Car Insurance Interactions into a dataframe-
+### Load Car Insurance Interactions into a data-frame-
 
-Go to the next cell. In this cell you'll load specific fields from the **AEP Demo - Car Insurance Interactions** dataset from Adobe Experience Platform into a dataframe. 
+Go to the next cell. In this cell you'll load specific fields from the **AEP Demo - Car Insurance Interactions** dataset from Adobe Experience Platform into a data-frame. 
 
 Scroll down and click in the next empty cell.
 
@@ -256,7 +256,7 @@ You'll then see a similar result:
 
 ![DSW](./images/jupstart6result.png)
 
-The **AEP Demo - Car Insurance Interactions** dataset is now assigned to a dataframe, and now a data scientist can continue Exploration, Visualization and Model Development based on this dataframe on their local computer using Anaconda and Query Service.
+The **AEP Demo - Car Insurance Interactions** dataset is now assigned to a data-frame, and now a data scientist can continue Exploration, Visualization and Model Development based on this data-frame on their local computer using Anaconda and Query Service.
 
 Next Step: [15.3 Operationalize your model using a Recipe](./ex3.md)
 

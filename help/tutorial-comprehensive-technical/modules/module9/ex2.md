@@ -40,7 +40,7 @@ You can fill in these fields:
 | Form field                | Value               |
 |:-------------------------------------------| :------------------ |
 |Website Name|SYTYCD - **ldap**|
-|Website URL|www.platformdemo.net|
+|Website URL|www.aepdemo.net|
 |Industry Category|Shopping|
 |Reporting Time Zone|the timezone where you work|
 
