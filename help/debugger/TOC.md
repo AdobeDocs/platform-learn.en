@@ -7,7 +7,7 @@ solution: Data Collection
 audience: end-user
 ---
 
-# Adobe Experience Platform Debugger Tutorials {#tutorials}
+# Adobe Experience Platform Debugger Tutorials {#debugger}
 
 + [Overview](overview.md)
 + Experience Platform Debugger{#experience-platform-debugger}

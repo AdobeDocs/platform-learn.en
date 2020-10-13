@@ -7,7 +7,7 @@ solution: Data Collection
 audience: end-user
 ---
 
-# Adobe Experience Platform Mobile SDK Tutorials {#tutorials}
+# Adobe Experience Platform Mobile SDK Tutorials {#mobile-sdk}
 
 + [Overview](overview.md)
 + Fundamentals{#fundamentals}

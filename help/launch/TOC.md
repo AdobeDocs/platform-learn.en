@@ -7,7 +7,7 @@ solution: Data Collection
 audience: end-user
 ---
 
-# Adobe Experience Platform Launch Tutorials {#tutorials}
+# Adobe Experience Platform Launch Tutorials {#launch}
 
 + [Overview](../overview.md)
 + Fundamentals{#fundamentals}
