@@ -39,4 +39,4 @@ You can now:
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
-[Go Back to All Modules](../../../overview.md)
+[Go Back to All Modules](../../overview.md)

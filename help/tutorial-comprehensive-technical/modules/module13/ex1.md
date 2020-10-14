@@ -92,4 +92,4 @@ Next Step: [13.2 Connect Adobe Experience Platform Datasets in Customer Journey 
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
-[Go Back to All Modules](../../../overview.md)
+[Go Back to All Modules](../../overview.md)
