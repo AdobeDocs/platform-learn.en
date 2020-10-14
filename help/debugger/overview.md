@@ -7,7 +7,7 @@ description: A collection of how-to videos and tutorials to make you a power-use
 
 ## What's New
 
-* **[Introduction to the Experience Platform Debugger (Video)](/help/debugger/platform-debugger/introduction-to-the-experience-platform-debugger.md)**
+* **[Introduction to the Experience Platform Debugger (Video)](platform-debugger/introduction-to-the-experience-platform-debugger.md)**
     *Power end-to-end engagement in your mobile apps.*
 
 * **[Debug a Launch Implementation (Tutorial)](https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html)**
@@ -19,11 +19,11 @@ description: A collection of how-to videos and tutorials to make you a power-use
 <table>
 <tr>
   <td>
-    <a href="/help/debugger/platform-debugger/introduction-to-the-experience-platform-debugger.md">
-      <img alt="Introduction to the Experience Platform Debugger video" src="/help/debugger/assets/32156.jpg" />
+    <a href="platform-debugger/introduction-to-the-experience-platform-debugger.md">
+      <img alt="Introduction to the Experience Platform Debugger video" src="assets/32156.jpg" />
     </a>
     <div>
-      <a href="/help/debugger/platform-debugger/introduction-to-the-experience-platform-debugger.md">
+      <a href="platform-debugger/introduction-to-the-experience-platform-debugger.md">
     <strong>Introduction to the Experience Platform Debugger</strong>
     </a>
     </div>
@@ -33,7 +33,7 @@ description: A collection of how-to videos and tutorials to make you a power-use
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html">
-      <img alt="Debug a Launch Implementation" src="/help/debugger/assets/38567.jpg" />
+      <img alt="Debug a Launch Implementation" src="assets/38567.jpg" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/experience-manager-learn/sites/integrations/experience-platform-launch/debug-launch-implementation.html">
@@ -45,11 +45,11 @@ description: A collection of how-to videos and tutorials to make you a power-use
     <p>
   </td>
   <td>
-    <a href="/help/debugger/cloud-debugger/use-the-experience-cloud-debugger.md">
-      <img alt="thumbnail image for the 'Use the Adobe Experience Cloud Debugger' video" src="/help/debugger/assets/thumb_debugger.png" />
+    <a href="cloud-debugger/use-the-experience-cloud-debugger.md">
+      <img alt="thumbnail image for the 'Use the Adobe Experience Cloud Debugger' video" src="assets/thumb_debugger.png" />
     </a>
     <div>
-      <a href="/help/debugger/cloud-debugger/use-the-experience-cloud-debugger.md">
+      <a href="cloud-debugger/use-the-experience-cloud-debugger.md">
     <strong>Use the Adobe Experience Cloud Debugger</strong>
     </a>
     </div>
