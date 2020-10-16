@@ -50,7 +50,15 @@ Let's start with the simple task of enabling a schema:
 
     >[!IMPORTANT]
     >
-    >Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial and of course the entire sandbox can be deleted at any time.
+    >Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial and of course the entire sandbox can be deleted at any time. 
+    >
+    >In the controlled environment of this tutorial, you will enable your schemas and datasets for profile, _before ingesting any data_. When working with your own data, we recommend you do things in the following order:
+    >
+    > 1. First, ingest some data into your datasets
+    > 1. Address any issues that arise during the data ingestion process (e.g. data validation or mapping issues)
+    > 1. Now that you have verified the data ingestion, enable your datasets and schemas for Profile
+    > 1. Then re-ingest the data so that it lands in Profile
+
 
     ![Profile Toggle](assets/profile-loyalty-enableSchema.png)
 
