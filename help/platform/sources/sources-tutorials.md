@@ -1,7 +1,7 @@
 ---
 keywords: Experience Platform;home;popular topics;source connectors;source connector;sources;data sources;data source;data source connection
-solution: Experience Platform
 title: Sources tutorials
+feature: data ingestion
 topic: tutorial
 type: Tutorial
 description: Ingest data from a variety of sources and structure, label, and enhance incoming data using Platform services. 
