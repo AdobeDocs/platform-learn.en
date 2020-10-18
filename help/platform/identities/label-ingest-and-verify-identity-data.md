@@ -1,6 +1,6 @@
 ---
 title: Label, Ingest, and Verify Identity Data in Adobe Experience Platform
-description: This video shows you how to label data fields as identities, ingest Identity data and then verify that the data has made it to the Adobe Experience Platform Identity Service Private Graph.
+description: This video shows you how to label data fields as identities, ingest Identity data and then verify that the data has made it to the private graph.
 audience: architect
 feature: identity
 topics:
