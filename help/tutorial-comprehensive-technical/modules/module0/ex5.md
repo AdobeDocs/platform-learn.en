@@ -31,35 +31,29 @@ This results in the documentation looking like this, which gives you a lot of ma
 
 In order to make this process easier, a Chrome extension was built to automatically load and translate those keys into your specific values, based on the Configuration ID you created in [Exercise 0.2](./ex2.md).
 
-Download [this Chrome extension](./assets/chrome_extension.zip) to your computer's desktop and unzip it.
-
-![DSN](./images/unzip.png)
-
-Open your Chrome browser.
+To install that Chrome extension, open your Chrome browser.
 
 ![DSN](./images/c1.png)
 
-In the address bar, enter: `chrome://extensions/` and hit enter.
+Go to: [https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&authuser=0](https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&authuser=0). You'll then see this. 
+
+Click **Add to Chrome**. 
 
 ![DSN](./images/c2.png)
 
-You'll then see this. Click **Load unpacked**.
+You'll then see this. Click **Add extension**.
 
 ![DSN](./images/c3.png)
 
-In the popup, navigate to the **chrome_extension** folder on your desktop. Click **Select**.
+The extension will then be installed, and you'll see a similar notification.
 
 ![DSN](./images/c4.png)
-
-You'll then see a **Platform Learn** extension.
-
-![DSN](./images/c5.png)
 
 In the **extensions** menu, click the **puzzle piece** icon and pin the **Platform Learn - Configuration** extension to the extension menu.
 
 ![DSN](./images/c6.png)
 
-Go [here](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html) and then click the extension icon to open it.
+Go to [https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html) and then click the extension icon to open it.
 
 ![DSN](./images/tuthome.png)
 
