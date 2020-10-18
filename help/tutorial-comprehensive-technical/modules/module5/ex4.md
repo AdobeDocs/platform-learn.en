@@ -131,7 +131,7 @@ Click **Formatting Options** to define the structure of the template.
 
 ![ETL](./images/2wf13.png)
 
-In the popup, change the Format Type from **None** to **Flat**.
+In the popup, change the Format Type from **None** to **Delimited**.
 
 ![ETL](./images/2wf14.png)
 
@@ -195,7 +195,7 @@ Click **Formatting Options** to define the structure of the template.
 
 ![ETL](./images/2wf13.png)
 
-In the popup, change the Format Type from **None** to **Flat**.
+In the popup, change the Format Type from **None** to **Delimited**.
 
 ![ETL](./images/2wf14.png)
 
