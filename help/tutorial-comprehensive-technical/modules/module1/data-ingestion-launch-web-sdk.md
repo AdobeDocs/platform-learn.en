@@ -19,7 +19,7 @@ activity:
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Launch: [https://launch.adobe.com](https://launch.adobe.com)
-- Access to a Platform demo website
+- Access to [https://public.aepdemo.net](https://public.aepdemo.net)
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]

@@ -24,10 +24,12 @@ In this module, you'll...
 - Learn how to operationalize an ML model by creating a recipe to then train and score that recipe.
 - Learn how to publish a recipe as a service for recurring, automated training.
 
-## Resources
+## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
 - Access to Anaconda (you will install it in Exercise 15.2)
+- **Download these assets**: 
+  - [JSON - Sample Data: AEP Demo - Car Insurance Interactions](./../../assets/json/m15_carinsurance.json)
 
 >[!IMPORTANT]
 >

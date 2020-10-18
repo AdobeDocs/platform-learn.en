@@ -292,7 +292,7 @@ Replace that code by this code:
 {
    "tenant_id": "--aepTenantId--",
    "trainingDataSetId": "--aepRecommendationsInputDatasetId--",
-   "ACP_DSW_TRAINING_XDM_SCHEMA": "https://ns.adobe.com/--aepTenantIdSchema--/schemas/--aepRecommendationsInputSchemaRef--", # AEP Demo - Recommendations Input Schema Ref
+   "ACP_DSW_TRAINING_XDM_SCHEMA": "https://ns.adobe.com/--aepTenantIdSchema--/schemas/--aepRecommendationsInputSchemaRef--",
    "num_recommendations": "5",
    "sampling_fraction": "0.5"
 }

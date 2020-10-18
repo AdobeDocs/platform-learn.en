@@ -34,8 +34,11 @@ In this module, we will take you through the steps to demonstrate how an Interne
 ## Prerequisites
 
 - Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
-- Access to a Platform demo website
+- Access to [https://public.aepdemo.net](https://public.aepdemo.net)
 - The [Postman application](https://www.postman.com/downloads/)
+- **Download these assets**: 
+  - [AWS Alexa Interaction Model](./../../assets/aws-alexa/aepskillinteractionmodel.json)
+  - [AWS Alexa Lambda Code](./../../assets/aws-lambda/aepskill.zip)
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
