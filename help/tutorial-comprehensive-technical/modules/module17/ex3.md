@@ -80,6 +80,7 @@ Then add the following payload by clicking on the pencil icon. Roll over the **i
 The payload screen will appear. Use this payload json. You will need to add your own connection credentials, as created in exercise 17.1.
 
 Copy and paste this json:
+
 ```json
 {
     "type": "customAuthorization",
@@ -115,7 +116,7 @@ You'll now add values to the fields with empty strings in this json as based on 
 
 - **password**: The password you use to connect to Dynamics 365, in this example **Password_1234**
 
-- **resouce**: The URL of the Dynamics instance, which looks like this: **https://ldapaepdemoXX.crmX.dynamics.com**, in this example **https://joconnoraepdemo2209.crm4.dynamics.com**
+- **resource**: The URL of the Dynamics instance, which looks like this: **https://ldapaepdemoXX.crmX.dynamics.com**, in this example **https://joconnoraepdemo2209.crm4.dynamics.com**
 
 ![JO](./images/createaction-01e.png)
 
@@ -140,21 +141,21 @@ Copy this json:
 
 ```json
 {
-	"emailaddress1": {
-		"toBeMapped": true,
-		"dataType": "string",
-		"label": "email"
-	},
-	"firstname": {
-		"toBeMapped": true,
-		"dataType": "string",
-		"label": "fName"
-	},
-	"lastname": {
-		"toBeMapped": true,
-		"dataType": "string",
-		"label": "lName"
-	}
+    "emailaddress1": {
+        "toBeMapped": true,
+        "dataType": "string",
+        "label": "email"
+    },
+    "firstname": {
+        "toBeMapped": true,
+        "dataType": "string",
+        "label": "fName"
+    },
+    "lastname": {
+        "toBeMapped": true,
+        "dataType": "string",
+        "label": "lName"
+    }
 }
 ```
 
