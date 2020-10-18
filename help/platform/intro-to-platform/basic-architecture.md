@@ -1,6 +1,6 @@
 ---
 title: Basic Architecture of Adobe Experience Platform
-description: This video walks through an overview diagram and explains the primary components of Adobe Experience Platform.
+description: This video walks through an overview diagram and explains the primary components of Experience Platform.
 feature: platform
 topics:
 kt: 4336
