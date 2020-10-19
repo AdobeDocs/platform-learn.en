@@ -20,6 +20,13 @@ audience: all
   + [0.6 Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical/modules/module0/ex6.md)
 + 1 - Launch and the Web SDK extension {#module1}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module1/data-ingestion-launch-web-sdk.md)
+  + [1.1 Understanding Adobe Experience Platform Launch](/help/tutorial-comprehensive-technical/modules/module1/ex1.md)
+  + [1.2 Edge Network and Server Side Data Collection](/help/tutorial-comprehensive-technical/modules/module1/ex2.md)
+  + [1.3 Introduction to Launch](/help/tutorial-comprehensive-technical/modules/module1/ex3.md)
+  + [1.4 Client-side Web Data Collection](/help/tutorial-comprehensive-technical/modules/module1/ex4.md)
+  + [1.5 Implement Adobe Analytics and Adobe Audience Manager](/help/tutorial-comprehensive-technical/modules/module1/ex5.md)
+  + [1.6 Implement Adobe Target](/help/tutorial-comprehensive-technical/modules/module1/ex6.md)
+  + [1.7 XDM Schema requirements in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/module1/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module1/summary.md)
 + 2 - Data Ingestion {#module2}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module2/data-ingestion.md)

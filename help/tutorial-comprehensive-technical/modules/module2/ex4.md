@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# 2.4: Data Ingestion from Offline Sources
+# 2.4 Data Ingestion from Offline Sources
 
 In this exercise, the goal is to onboard external data like CRM Data in Platform.
 
@@ -28,7 +28,7 @@ In this exercise, the goal is to onboard external data like CRM Data in Platform
 - Create a CSV file with demo date. Ingest the CSV file in the Experience Platform UI by making use of the available workflows.
 - Understand data governance options in Experience Platform UI
 
-## 2.4.1 - Create your CRM Dataset through a data generator tool
+## 2.4.1 Create your CRM Dataset through a data generator tool
 
 For this you need 1000 sample lines of CRM Data.
 
@@ -62,7 +62,7 @@ Open your CSV-file in Microsoft Excel to visualize its contents.
 
 With your CSV-file ready, you can proceed with mapping it against XDM.
 
-### 2.4.2 - Verify the CRM Onboarding Dataset in Adobe Experience Platform
+### 2.4.2 Verify the CRM Onboarding Dataset in Adobe Experience Platform
 
 Open [Adobe Experience Platform](https://experience.adobe.com/platform) and go to **Datasets**. 
 
@@ -126,7 +126,7 @@ Every schema and as such, every dataset that should be used in the Real-time Cus
 
 It is best practice to create a separate, specific schema for every dataset and to set the descriptor for every dataset specifically to match how the current solutions used by the brand operate.
 
-### 2.4.3 - Using a workflow to map a CSV file to an XDM Schema
+### 2.4.3 Using a workflow to map a CSV file to an XDM Schema
 
 The goal of this is to onboard CRM data in Platform. All the data that is ingested in Platform should be mapped against the specific XDM Schema. What you currently have is a CSV dataset with 1000 lines on the one side, and a dataset that is linked to a schema on the other side. To load that CSV file in that dataset, a mapping needs to take place. To facilitate this mapping exercise, we have **Workflows** available in Platform.
 
@@ -257,7 +257,7 @@ Click on the **Preview Dataset**- button to get a quick view of a small sample o
 
 Once data is loaded, you can define the correct data governance approach for our dataset.
    
-### 2.5.4 - Adding data governance to your dataset 
+### 2.5.4 Adding data governance to your dataset 
 
 Now that your customer data is ingested, you need to make sure that this dataset is properly governed for usage and export control. Click on the **Data Governance** tab and observe that we can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
