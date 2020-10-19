@@ -56,8 +56,6 @@ As part of the Postman collection you imported, you'll see a folder **3. Query S
 
 Open that folder and get to know the Query Service API calls to execute, monitor and download the query resultset.
 
-![QS](./images/qsapi1.png)
-
 A POST call to [/query/queries] with the following payload will trigger the execution of our query;
 
 ### 7.7.3.1 Create Query
@@ -122,8 +120,6 @@ When successful the POST call will return the following response:
 The current **state** of the query is **SUBMITTED**, once executed its state will become **SUCCESS**.
 
 You can also lookup submitted queries via Adobe Experience Platform UI, open [Adobe Experience Platform](https://experience.adobe.com/#/@experienceplatform/platform/home) and navigate to queries (1) and select your query:
-
-![7-qs-api-queries-ui.png](./images/7-qs-api-queries-ui.png)
 
 ### 7.7.3.2 Monitor Query
 

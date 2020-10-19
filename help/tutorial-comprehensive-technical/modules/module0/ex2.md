@@ -49,7 +49,7 @@ For Event Dataset, select **AEP Demo - Website Interactions** and for Profile Da
 
 ![Name the Edge Configuration and save](./images/edgeconfig7.png)
 
-That's it for now. In [Module 1](./../data-ingestion-launch-web-sdk.md) you'll learn more about Web SDK and how to configure all of its capabilities.
+That's it for now. In [Module 1](./../module1/data-ingestion-launch-web-sdk.md) you'll learn more about Web SDK and how to configure all of its capabilities.
 
 You now have this. Click **Save**.
 
