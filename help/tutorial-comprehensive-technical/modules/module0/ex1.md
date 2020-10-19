@@ -84,7 +84,7 @@ Enter your LDAP as search term. You should now see the two Launch properties tha
 
 In order to use the Launch properties, you'll need to create a Configuration ID in the next exercise.
 
-Next Step: [0.2 Create your Configuration ID](./ex2.md)
+Next Step: [0.2 Create your Edge Configuration ID](./ex2.md)
 
 [Go Back to Module 0](./getting-started.md)
 

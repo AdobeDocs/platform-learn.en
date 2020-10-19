@@ -1,79 +1,82 @@
 ---
-title: Getting Started - Use the mobile app
-description: Getting Started - Use the mobile app
+title: Getting Started - Use the website
+description: Getting Started - Use the website
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 0.4 Use the mobile app
+# 0.4 Use the website
 
-The mobile application that is used in the context of this demo and enablement environment is only available for **iOS**.
+## 0.4.1 Option 1: Continue from previous exercise
 
-Take your **iOS** device, open the **AppStore** and search for **Platform - SYTYCD**.
+After exercise 0.2, you now see this:
 
-![DSN](./images/appstore.png)
+![DSN](./images/cfg6a.png)
 
-You'll then see this.
+Go to **Select LDAP** in the left side menu, select your LDAP in the list and click **Save**.
 
-![DSN](./images/mobileapp1.png)
+![DSN](./images/web61.png)
 
-Click the **INSTALL** button.
+Your LDAP will now be loaded and you'll be redirected to the Admin homepage.
 
-![DSN](./images/mobileapp1a.png)
+Next, go to **Select Brand** in the left side menu, select a brand of choice and click **Save**.
 
-Next, click **OPEN**.
+![DSN](./images/web7.png)
 
-![DSN](./images/mobileapp2.png)
+Your selected brand will now be loaded and you'll be redirected to the Admin homepage.
 
-You'll then see a couple of notifications.
+You'll now see a similar Admin homepage. Click the brand logo to go to the demo website.
 
-Click **Allow While Using App**.
+![DSN](./images/web8.png)
 
-![DSN](./images/mobileapp3.png)
+You'll now see the homepage of your demo brand and you're now ready to start your demo.
 
-Click **Allow**.
+![DSN](./images/web9.png)
 
-![DSN](./images/mobileapp4.png)
+## 0.4.2 Option 2: Start with a new incognito browser window
 
-Click **OK**.
+For every demonstration, you'll need to use a fresh, incognito browser window. After opening a fresh, incognito browser window, go to [https://public.aepdemo.net/](https://public.aepdemo.net/).
 
-![DSN](./images/mobileapp5.png)
+You'll be redirected to this page:
 
-You'll now see this screen. You can either manually enter the **Configuration ID** you created, or else, you can click the **QR code scan** icon to scan a QR code.
+![DSN](./images/web1.png)
 
-![DSN](./images/mobileapp8.png)
+Enter the Configuration ID you created in the previous step. Click **Load Configuration**.
 
-On the Admin homepage of your demo website, you'll find a QR code you can scan. 
+![DSN](./images/web2.png)
 
-![DSN](./images/adminhomeqr.png)
+You'll then see this:
 
-After clicking the **QR code scan** in the app, you'll see this. Click **OK** to scan a QR code.
+![DSN](./images/web3.png)
 
-![DSN](./images/mobileapp9.png)
+Scroll down so you can see the **Save Configuration** button. Click **Save Configuration**.
 
-After scanning the QR code, you'll be back in this screen, with the Configuration ID filled out for you. Click **Load Configuration**.
+![DSN](./images/web4.png)
 
-![DSN](./images/mobileapp10.png)
+After a couple of seconds you'll be redirected to the Admin homepage and you'll see this:
 
-You'll then see a confirmation of which environment you'll be loading. Click **Save Configuration**.
+![DSN](./images/cfg6a.png)
 
-![DSN](./images/mobileapp11.png)
+Go to **Select LDAP** in the left side menu, select your LDAP in the list and click **Save**.
 
-After a couple of seconds, you'll be presented with the **Select LDAP** screen. Select your LDAP and click **Save**.
+![DSN](./images/web61.png)
 
-![DSN](./images/mobileapp12.png)
+Go to **Select Brand** in the left side menu, select a brand of choice and click **Save**.
 
-After a couple of seconds, you'll see that the demo brand **Luma Retail** is being loaded automatically.
+![DSN](./images/web7.png)
 
-![DSN](./images/mobileapp13.png)
+You'll now see a similar Admin homepage. Click the brand logo to go to the demo website.
 
-And finally, you'll see the Luma Retail homepage in the app, which means you're ready for your demo and enablement.
+![DSN](./images/web8.png)
 
-![DSN](./images/mobileapp14.png)
+You'll now see the homepage of your demo brand and you're now ready to start your demo.
 
-Next Step: [0.5 Install the Chrome extension for the Experience League documentation](./ex5.md)
+![DSN](./images/web9.png)
+
+
+Next Step: [0.5 Use the mobile app](./ex5.md)
 
 [Go Back to Module 0](./getting-started.md)
 

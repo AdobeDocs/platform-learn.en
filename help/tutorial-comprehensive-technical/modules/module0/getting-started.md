@@ -36,19 +36,23 @@ activity:
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
-[0.2 Create your Configuration ID](./ex2.md)
+[0.2 Create your Edge Configuration ID](./ex1.md)
+
+In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
+
+[0.3 Create your Enablement Configuration ID](./ex3.md)
 
 In this exercise you'll configure your own Configuration ID, which is required to access the demo website and mobile application.
 
-[0.3 Use the website](./ex3.md)
+[0.4 Use the website](./ex4.md)
 
 In this exercise you'll setup the website so you can use it for demonstrations and enablement.
 
-[0.4 Use the mobile app](./ex4.md)
+[0.5 Use the mobile app](./ex5.md)
 
 In this exercise you'll setup the mobile application so you can use it for demonstrations and enablement.
 
-[0.5 Install the Chrome extension for the Experience League documentation](./ex5.md)
+[0.6 Install the Chrome extension for the Experience League documentation](./ex6.md)
 
 In this exercise you'll setup the mobile application so you can use it for demonstrations and enablement.
 

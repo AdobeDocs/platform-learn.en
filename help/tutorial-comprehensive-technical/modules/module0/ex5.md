@@ -1,91 +1,79 @@
 ---
-title: Getting Started - Install the Chrome extension for the Experience League documentation
-description: Getting Started - Install the Chrome extension for the Experience League documentation
+title: Getting Started - Use the mobile app
+description: Getting Started - Use the mobile app
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 0.5 Install the Chrome extension for the Experience League documentation
+# 0.5 Use the mobile app
 
-All documentation is available on Experience League by going [here](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html).
+The mobile application that is used in the context of this demo and enablement environment is only available for **iOS**.
 
-The documentation has been made generic so that it can easily be reused by anyone, using any Adobe Experience Platform instance. 
-By making the documentation reusable, **Environment Variables** were introduced in the documentation, which means that you'll find the below **keys** in the documentation. When you see one of those keys, you should change that into the specific value for your specific Adobe Experience Platform instance.
+Take your **iOS** device, open the **AppStore** and search for **Platform - SYTYCD**.
 
-| Name     | Key | 
-|:-------------:| :---------------:|
-| AEP IMS Org ID         | --aepImsOrgId-- |
-| AEP Tenant ID         | --aepTenantId-- |
-| DCS Inlet ID         | --dcsInletId-- | 
-| Back4App Application ID        | --parseAppKey-- | 
-| Back4App Javascript Key       | --parseJavaScriptKey-- | 
-| X-ray Adobe I/O Profile URL       | --jwtProfile-- | 
-| X-ray Adobe I/O Experience Event URL       | --jwtExperienceEvent-- | 
-| X-ray Adobe I/O Segment URL       | --jwtSegment-- | 
+![DSN](./images/appstore.png)
 
-This results in the documentation looking like this, which gives you a lot of manual copy and paste work to replace those variables by their real values.
+You'll then see this.
 
-![DSN](./images/mod7.png)
+![DSN](./images/mobileapp1.png)
 
-In order to make this process easier, a Chrome extension was built to automatically load and translate those keys into your specific values, based on the Configuration ID you created in [Exercise 0.2](./ex2.md).
+Click the **INSTALL** button.
 
-To install that Chrome extension, open your Chrome browser.
+![DSN](./images/mobileapp1a.png)
 
-![DSN](./images/c1.png)
+Next, click **OPEN**.
 
-Go to: [https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&authuser=0](https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&authuser=0). You'll then see this. 
+![DSN](./images/mobileapp2.png)
 
-Click **Add to Chrome**. 
+You'll then see a couple of notifications.
 
-![DSN](./images/c2.png)
+Click **Allow While Using App**.
 
-You'll then see this. Click **Add extension**.
+![DSN](./images/mobileapp3.png)
 
-![DSN](./images/c3.png)
+Click **Allow**.
 
-The extension will then be installed, and you'll see a similar notification.
+![DSN](./images/mobileapp4.png)
 
-![DSN](./images/c4.png)
+Click **OK**.
 
-In the **extensions** menu, click the **puzzle piece** icon and pin the **Platform Learn - Configuration** extension to the extension menu.
+![DSN](./images/mobileapp5.png)
 
-![DSN](./images/c6.png)
+You'll now see this screen. You can either manually enter the **Configuration ID** you created, or else, you can click the **QR code scan** icon to scan a QR code.
 
-Go to [https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html) and then click the extension icon to open it.
+![DSN](./images/mobileapp8.png)
 
-![DSN](./images/tuthome.png)
+On the Admin homepage of your demo website, you'll find a QR code you can scan. 
 
-You'll then see this popup.
+![DSN](./images/adminhomeqr.png)
 
-![DSN](./images/c7.png)
+After clicking the **QR code scan** in the app, you'll see this. Click **OK** to scan a QR code.
 
-Enter your name and the Configuration ID you created in [Exercise 0.2](./ex2.md). Click **Create New**.
+![DSN](./images/mobileapp9.png)
 
-![DSN](./images/c8.png)
+After scanning the QR code, you'll be back in this screen, with the Configuration ID filled out for you. Click **Load Configuration**.
 
-In the left menu of the extension, you'll now see an icon with your initials. Click it. You'll then see the mapping between the **Environment Variables** and your specific Adobe Experience Platform instance values.
+![DSN](./images/mobileapp10.png)
 
-![DSN](./images/c9.png)
+You'll then see a confirmation of which environment you'll be loading. Click **Save Configuration**.
 
-Scroll down (or make the popup a bit bigger) until you see the button **Activate Configuration**. Click the button **Activate Configuration**.
+![DSN](./images/mobileapp11.png)
 
-![DSN](./images/c10.png)
+After a couple of seconds, you'll be presented with the **Select LDAP** screen. Select your LDAP and click **Save**.
 
-You'll then see a green dot next to your initials. This means that your Configuration ID is now active.
+![DSN](./images/mobileapp12.png)
 
-![DSN](./images/c11.png)
+After a couple of seconds, you'll see that the demo brand **Luma Retail** is being loaded automatically.
 
-Close the popup.
+![DSN](./images/mobileapp13.png)
 
-As a test, go to [this page](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/module7/ex3.html).
+And finally, you'll see the Luma Retail homepage in the app, which means you're ready for your demo and enablement.
 
-You should now see that all **Environment Variables** have been replaced by their true values, based on the Configuration ID in the chrome extension.
+![DSN](./images/mobileapp14.png)
 
-You should now have a similar view to the below, where the environment variables **--aepTenantId--** has been replaced by your Tenant ID, which in this case is **_experienceplatform**. 
-
-![DSN](./images/c12.png)
+Next Step: [0.6 Install the Chrome extension for the Experience League documentation](./ex6.md)
 
 [Go Back to Module 0](./getting-started.md)
 
