@@ -1,5 +1,6 @@
 ---
-title: Run queries
+title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+breadcrumb-title: Run queries
 description: In this lesson you will learn how to setup, write and execute queries to validate the data you have ingested.
 feature: query service
 topics: 
