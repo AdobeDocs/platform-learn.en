@@ -67,6 +67,10 @@ In this exercise, see and use web data collected with the Web SDK in Adobe Analy
 
 In this exercise, set-up an activity in Adobe Target, implemented via the Web SDK.
 
+[1.7 XDM Schema requirements in Adobe Experience Platform](./ex7.md)
+
+To ensure Web SDK and alloy.js are able to ingest data into Adobe Experience Platform, there is a requirement for a specific XDM Mixin to be part of the XDM Schema in Adobe Experience Platform.
+
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.

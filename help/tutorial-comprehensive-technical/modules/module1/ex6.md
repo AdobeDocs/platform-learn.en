@@ -33,7 +33,7 @@ Copy the value for Client Code and paste it in your Edge Configuration. Don't fo
 
 ![AEP Debugger](./images/at3.png)
 
-Next Step: [Summary and benefits](./summary.md)
+Next Step: [1.7 XDM Schema requirements in Adobe Experience Platform](./ex7.md)
 
 [Go Back to Module 1](./data-ingestion-launch-web-sdk.md)
 

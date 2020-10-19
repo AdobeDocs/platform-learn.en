@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# 2.2 - Configure Schemas and Set Identifiers
+# 2.2 Configure Schemas and Set Identifiers
 
 In this exercise, you'll configure the required XDM schemas to classify profile information and customer behavior. In every XDM schema, you'll also have to configure a primary identifier to link all the information to.
 
@@ -683,7 +683,7 @@ You've now finished building schemas that are activated to be used in the Real-t
 
 Let's have a look at datasets in the next exercise.
 
-Next Step: [2.3 - Configure Datasets](./ex3.md)
+Next Step: [2.3 Configure Datasets](./ex3.md)
 
 [Go Back to Module 2](./data-ingestion.md)
 

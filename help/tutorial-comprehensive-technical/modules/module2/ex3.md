@@ -177,7 +177,7 @@ Click Enable.
 
 Your dataset is now enabled for Profile.
 
-Next Step: [2.4 - Data Ingestion from Offline Sources](./ex4.md)
+Next Step: [2.4 Data Ingestion from Offline Sources](./ex4.md)
 
 [Go Back to Module 2](./data-ingestion.md)
 
