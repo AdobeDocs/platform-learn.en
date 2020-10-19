@@ -92,15 +92,11 @@ Click to open the **[!UICONTROL events]** row.
 
 ![Events value](./images/validate6.png)
 
-You'll now see this:
-
-![Events value](./images/validate7.png)
-
-Note how we can see the `web.webpagedetails.pageViews` event, as well as other, out-of-the-box variables adhering to the `AEP Web SDK ExperienceEvent Mixin` format.
+Note how we can see the **web.webpagedetails.pageViews** event, as well as other, out-of-the-box variables adhering to the **AEP Web SDK ExperienceEvent Mixin** format.
 
 ![Events value](./images/validate8.png)
 
-These types of request details are also visible in the Network tab. Filter for calls with "interact" to locate the call and they are in the Request Payload Headers:
+These types of request details are also visible in the Network tab. Filter for requests with **interact** to locate the requests sent by Web SDK. You can find all the details of the XDM payload in the Request Payload Headers:
 
 ![Network tab](./images/validate9.png)
 

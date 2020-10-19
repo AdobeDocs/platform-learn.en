@@ -20,7 +20,7 @@ Adobe Experience Platform Launch is used by brands for a number of use cases. It
 
 ## Explore the UI
 
-Go to [Adobe Experience Platform Launch](https://experience.adobe.com/#/@experienceplatform/launch/).
+Go to [Adobe Experience Platform Launch](https://launch.adobe.com/).
 
 You're in the **[!UICONTROL Properties]** view. Properties listed here are for tutorial management. These properties represent...
 
@@ -42,7 +42,7 @@ Now, take a look at the left rail.
 
 ## Further Information
 
-Launch is a very advanced tool that has scope beyond an Adobe Experience Platform tutorial. Organizations might not use Launch for its tag management capabilities and instead use non-Adobe tag management solutions for injecting code and managing tags. Using a non-Adobe tag management solution is supported by Adobe and Adobe Professional Services. In this Comprehensive Technical Tutorial for Adobe Experience Platform, you'll also learn how to use for instance Google Tag Manager to ingest data into Adobe Experience Platform, as part of [Module 9. Data Ingestion using Google Tag Manager and Google Analytics](./modules/module9/data-ingestion-using-google-tag-manager-and-google-analytics.md).
+Launch is a very advanced tool that has scope beyond an Adobe Experience Platform tutorial. Organizations might not use Launch for its tag management capabilities and instead use non-Adobe tag management solutions for injecting code and managing tags. Using a non-Adobe tag management solution is supported by Adobe and Adobe Professional Services. In this Comprehensive Technical Tutorial for Adobe Experience Platform, you'll also learn how to use for instance Google Tag Manager to ingest data into Adobe Experience Platform, as part of [Module 9. Data Ingestion using Google Tag Manager and Google Analytics](./../module9/data-ingestion-using-google-tag-manager-and-google-analytics.md).
 
 Some further reading for those interested in understanding Launch further are included below.
 

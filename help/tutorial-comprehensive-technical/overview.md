@@ -82,8 +82,8 @@ Go to [Videos](./videos.md).
 
 - **Audience:** Data Engineer, Data Architect
 - **Prerequisites:** Access to Adobe Experience Platform and Adobe Experience Platform Launch
-- **Description:** In this foundational module, you will configure Launch with the new Web SDK extension and implement Launch on the Platform Demo website.
-- **Time Investment:** 120 minutes
+- **Description:** In this foundational module, you will learn about Launch and the new Web SDK extension.
+- **Time Investment:** 30 minutes
 
 [2. Foundation - Data Ingestion](./modules/module2/data-ingestion.md)
 
