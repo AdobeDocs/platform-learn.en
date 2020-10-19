@@ -1,103 +1,103 @@
 ---
-title: Getting Started - Create your Configuration ID
-description: Getting Started - Create your Configuration ID
+title: Getting Started - Install the Chrome extension for the Experience League documentation
+description: Getting Started - Install the Chrome extension for the Experience League documentation
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: 
 ---
 
-# 0.2 Create your Configuration ID
+# 0.2 Create your Edge Configuration ID
 
-Open an incognito browser window and go to [https://public.aepdemo.net/admin_configuration_view.html](https://public.aepdemo.net/admin_configuration_view.html).
+Go to [https://launch.adobe.com/](https://launch.adobe.com/). After the previous exercise, you now have two Launch properties: one for web and one for mobile.
 
-You'll see the **View Configuration ID** page:
+![DSN](./images/launchprop.png)
 
-![DSN](./images/confighome.png)
+These properties are almost ready to be used, but before you can start collecting data using these properties you need to set up an Edge Configuration ID. You'll get more information around the concept of what an Edge Configuration ID is and what it means in Exercise 1.2.
 
-Enter your default Configuration ID (you can find this on the homepage of your GitHub repo) and click **Load Configuration**. You're now seeing the default configuration for this Adobe Experience Platform instance in the context of the enablement.
+For now, please follow these steps.
 
-![DSN](./images/cfg2.png)
+Click **[!UICONTROL Edge Configuration]** in the left menu, then click the **[!UICONTROL New Edge Configuration]**.
 
-To create your own Configuration ID, click **Save As...**
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-![DSN](./images/cfg3.png)
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter **ldap - Edge Configuration** and replace **ldap** with your ldap.
 
-You'll be taken to the **Create a new Configuration ID** page.
+![Name the Edge Configuration and save](./images/edgeconfig2.png)
 
-![DSN](./images/cfg4.png)
+Click the **[!UICONTROL Save]** button
 
-All default variables are already filled out for you. The first thing to do is to add the Launch tags for your desktop and mobile app Launch properties.
+![Name the Edge Configuration and save](./images/save.png)
 
-![DSN](./images/cfg5.png)
+You'll then see this:
 
-You can find the tags for your Launch properties here:
+![Name the Edge Configuration and save](./images/edgeconfig3.png)
 
-## Web
+Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additional fields. You'll then see this:
 
-Go to [http://launch.adobe.com/](http://launch.adobe.com/) and search for your properties with the search term **ldap - AEP Demo**. Open your **Web** property.
+![Name the Edge Configuration and save](./images/edgeconfig4.png)
 
-![DSN](./images/l1.png)
+For **[!UICONTROL Sandbox]**, select **--aepSandboxId--**.
 
-You'll then see this, go to **Environments**.
+![Name the Edge Configuration and save](./images/edgeconfig5.png)
 
-![DSN](./images/l2.png)
+For Streaming Inlet, select **Demo System Next Streaming Endpoint**.
 
-In Environments, click the **Install** icon for the Development environment.
+![Name the Edge Configuration and save](./images/edgeconfig6.png)
 
-![DSN](./images/l3.png)
+For Event Dataset, select **AEP Demo - Website Interactions** and for Profile Dataset, select **AEP Demo - Website Registrations**.
 
-In the popup, you need to select the tag. Don't copy all the code, only copy the url of the tag which is all text between the quotes.
+![Name the Edge Configuration and save](./images/edgeconfig7.png)
 
-![DSN](./images/l4.png)
+That's it for now. In [Module 1](./../module1/data-ingestion-launch-web-sdk.md) you'll learn more about Web SDK and how to configure all of its capabilities.
 
-The tag that you need to copy, needs to look like this:
-**//assets.adobedtm.com/b754ed1bed61/842ab719abd7/launch-8cbe9004fe3c-development.min.js**
+You now have this. Click **Save**.
 
-Paste this value in the **Create New Configuration ID** screen, in the field **Launch Website Tag URL**.
+![Name the Edge Configuration and save](./images/edgeconfig8.png)
 
-![DSN](./images/l5.png)
+You'll then see that your Edge Configuration consists of 3 environments.
 
-## Mobile 
+![Name the Edge Configuration and save](./images/edgeconfig9.png)
 
-Go to [http://launch.adobe.com/](http://launch.adobe.com/) and search for your properties with the search term **ldap - AEP Demo**. Open your **Mobile** property.
+Click **Properties** and filter the search results to see your two Launch properties.
 
-![DSN](./images/l1.png)
+![Name the Edge Configuration and save](./images/edgeconfig10.png) 
 
-You'll then see this, go to **Environments**.
+Open the Launch property for **Web** by clicking it. You'll then see this.
 
-![DSN](./images/m2.png)
+![Name the Edge Configuration and save](./images/edgeconfig11.png)
 
-In Environments, click the **Install** icon for the Development environment.
+In the left menu, go to **Extensions**. On the AEP Web SDK, click **Configure**.
 
-![DSN](./images/m3.png)
+![Name the Edge Configuration and save](./images/edgeconfig12.png) 
 
-In the popup, you need to select the tag. Don't copy all the code, only copy the url of the tag which is all text between the quotes.
+You'll then see this. For the **Edge Configurations**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Edge Configuration ID you created earlier.
 
-![DSN](./images/m4.png)
+![Name the Edge Configuration and save](./images/edgeconfig13.png)
 
-The tag that you need to copy, needs to look like this:
-**b754ed1bed61/31d3cea907e2/launch-7e36532fdad4-development**
+Make sure to have selected your **Edge Configuration ID**.
 
-Paste this value in the **Create New Configuration ID** screen, in the field **Launch Mobile App Tag URL**.
+![Name the Edge Configuration and save](./images/edgeconfig14.png) 
 
-![DSN](./images/m5.png)
+Go to **Publishing Flow**.
 
-Next, you need to enter your Demo Profile information. This will be used on the website to simplify the **Create Account** flow. Fill out the fields as indicated in the screenshot. Please enter a real phone number and a real email address, as they will be used to send text messages and emails.
+![Name the Edge Configuration and save](./images/edgeconfig15.png) 
 
-![DSN](./images/m5a.png)
+Click the **...** for the **Content Library**, then click **Edit**.
 
-Finally, scroll down and click **Create New Configuration ID**
+![Name the Edge Configuration and save](./images/edgeconfig16.png) 
 
-![DSN](./images/cfg6.png)
+Click **Add All Changed Resources**.
 
-After a couple of seconds, you'll get a confirmation that your Configuration ID has been created. The website will now automatically load the Configuration ID in the website, which will take 10-15 seconds. You'll then see this:
+![Name the Edge Configuration and save](./images/edgeconfig17.png) 
 
-![DSN](./images/cfg6a.png)
+Finally, click **Save & Build for Development**.
 
-Your Configuration ID is visible on the admin page, please ensure to write down your Configuration ID as you'll need it to use the website, mobile application and several other applications and also, during the enablement modules. Write it down so you don't forget it.
+![Name the Edge Configuration and save](./images/edgeconfig18.png) 
 
-Next Step: [0.3 Use the website](./ex3.md)
+Your changes are now being published and will be ready in a couple of minutes.
+
+Next Step: [0.3 Create your Enablement Configuration ID](./ex3.md)
 
 [Go Back to Module 0](./getting-started.md)
 
