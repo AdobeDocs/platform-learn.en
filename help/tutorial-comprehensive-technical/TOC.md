@@ -26,6 +26,7 @@ audience: all
   + [1.4 Client-side Web Data Collection](/help/tutorial-comprehensive-technical/modules/module1/ex4.md)
   + [1.5 Implement Adobe Analytics and Adobe Audience Manager](/help/tutorial-comprehensive-technical/modules/module1/ex5.md)
   + [1.6 Implement Adobe Target](/help/tutorial-comprehensive-technical/modules/module1/ex6.md)
+  + [1.7 XDM Schema requirements in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/module1/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module1/summary.md)
 + 2 - Data Ingestion {#module2}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module2/data-ingestion.md)
