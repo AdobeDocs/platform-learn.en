@@ -1,5 +1,5 @@
 ---
-title: Overview | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Overview
 description: 
 feature:
 topics: 
@@ -10,7 +10,7 @@ activity: implement
 thumbnail: 4348-overview.jpg
 ---
 
-# Overview
+# Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 
 <!--5min-->
 

@@ -1,5 +1,5 @@
 ---
-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Ingest batch data
 description: In this lesson, you will ingest batch data into Experience Platform using a variety of methods.
 feature: data ingestion
 topics: 

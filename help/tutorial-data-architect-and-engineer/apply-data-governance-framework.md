@@ -1,5 +1,5 @@
 ---
-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Apply the data governance framework
 description: In this lesson you will apply the data governance framework to the data you've ingested into your sandbox. 
 feature: governance
 topics: 
