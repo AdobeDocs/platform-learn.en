@@ -3,7 +3,7 @@ title: Create Destinations and Activate Data in Adobe's Real-time Customer Data 
 description: 
 feature: real-time customer data platform
 topics:
-kt: 
+kt: 3798
 audience: 
 doc-type: video
 activity: use
