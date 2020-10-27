@@ -74,6 +74,7 @@ audience: all
   + [7.4 Power BI/Tableau](/help/tutorial-comprehensive-technical/modules/module7/ex4.md)
   + [7.5 Explore the dataset with Power BI](/help/tutorial-comprehensive-technical/modules/module7/ex5.md)
   + [7.6 Explore the dataset with Tableau](/help/tutorial-comprehensive-technical/modules/module7/ex6.md)
+  + [7.7 Query Service API](/help/tutorial-comprehensive-technical/modules/module7/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module7/summary.md)
 + 8 - Data Science Workspace - Popularity Based Recommendations {#module8}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module8/data-science-workspace-popularity-based-recommendations.md)
