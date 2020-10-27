@@ -105,7 +105,7 @@ If you'd like to view the setup of the connector, follow these steps:
 
   ![ETL](./images/inf20.png)
 
-- Click the connection **Experience Platform EMEA**
+- Click the connection **Experience Platform International**
 
   ![ETL](./images/inf21.png)
 

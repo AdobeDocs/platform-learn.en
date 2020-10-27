@@ -11,7 +11,7 @@ activity:
 
 In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS environment and how to upload data in that S3 bucket.
 
-First of all, in this module we'll use four CSV files as datasources in Informatica. Please download the file **csvfiles.zip** from your **Environment Variables GitHub repository** to your desktop and unzip its contents on your desktop.
+First of all, in this module we'll use four CSV files as datasources in Informatica. Please download the file **csvfiles.zip** here: [CSV files](./../../assets/csv/module5/csvfiles.zip)
 
 ![ETL](./images/csv.png)
 

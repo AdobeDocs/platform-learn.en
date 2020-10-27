@@ -74,6 +74,7 @@ audience: all
   + [7.4 Power BI/Tableau](/help/tutorial-comprehensive-technical/modules/module7/ex4.md)
   + [7.5 Explore the dataset with Power BI](/help/tutorial-comprehensive-technical/modules/module7/ex5.md)
   + [7.6 Explore the dataset with Tableau](/help/tutorial-comprehensive-technical/modules/module7/ex6.md)
+  + [7.7 Query Service API](/help/tutorial-comprehensive-technical/modules/module7/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module7/summary.md)
 + 8 - Data Science Workspace - Popularity Based Recommendations {#module8}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module8/data-science-workspace-popularity-based-recommendations.md)
@@ -162,3 +163,13 @@ audience: all
   + [18.5 Create your Microsoft Azure Project](/help/tutorial-comprehensive-technical/modules/module18/ex5.md)
   + [18.6 End-to-end scenario](/help/tutorial-comprehensive-technical/modules/module18/ex6.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module18/summary.md)
++ 19 - Adobe Experience Platform and ServiceNow: connecting service to marketing and sales {#module19}
+  + [Overview](/help/tutorial-comprehensive-technical/modules/module19/call-center-servicenow.md)
+  + [19.1 Setup your ServiceNow developer instance](/help/tutorial-comprehensive-technical/modules/module19/ex1.md)
+  + [19.2 Install and configure the integration between ServiceNow and Adobe Experience Platform through Adobe I/O](/help/tutorial-comprehensive-technical/modules/module19/ex2.md)
+  + [19.3 Setup your ServiceNow environment](/help/tutorial-comprehensive-technical/modules/module19/ex3.md)
+  + [19.4 Setup your ServiceNow UI](/help/tutorial-comprehensive-technical/modules/module19/ex4.md)
+  + [19.5 Setup your ServiceNow Flow](/help/tutorial-comprehensive-technical/modules/module19/ex5.md)
+  + [19.6 Prepare End-to-end Demo](/help/tutorial-comprehensive-technical/modules/module19/ex6.md)
+  + [19.7 End-to-end Demo](/help/tutorial-comprehensive-technical/modules/module19/ex7.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module19/summary.md)

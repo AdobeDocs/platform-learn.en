@@ -220,6 +220,13 @@ Go to [Videos](./videos.md).
 As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a payload to a specified destination. We will also discuss the status of a segment qualification and how it relates to activation.
 - **Time Investment:** 90 minutes
 
+[19. Adobe Experience Platform and ServiceNow: connecting service to marketing and sales](./modules/module19/call-center-servicenow.md)
+
+- **Audience:** Data Engineer, Data Architect, Data Analyst
+- **Prerequisites:** Access to Adobe Experience Platform
+- **Description:** In this module you'll implement the bi-directional integration between Adobe Experience Platform and ServiceNow. 
+- **Time Investment:** 120 minutes
+
 
 >[!NOTE]
 >
