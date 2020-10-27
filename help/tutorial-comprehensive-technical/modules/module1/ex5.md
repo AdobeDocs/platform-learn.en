@@ -56,7 +56,7 @@ All data collected by the edge network can be accessed via [processing rules](ht
 
 Server-side forwarding is a not a new concept for Audience Manager, and the same process as before applies. You can also sync identities.
 
-## 1.5.3 Update your Edge Configuration to send data to Adobe Analytics
+## 1.5.3 Review your Edge Configuration to send data to Adobe Analytics
 
 In case you want to send data collected by Web SDK to Adobe Analytics and Adobe Audience Manager, follow these steps.
 
@@ -74,7 +74,7 @@ You'll then see this, which means that you need to add the report suite in Adobe
 
 ![AEP Debugger](./images/aa3.png)
 
-## 1.5.4 Update your Edge Configuration to send data to Adobe Audience Manager
+## 1.5.4 Review your Edge Configuration to send data to Adobe Audience Manager
 
 Click to open your **Development Environment**.
 
