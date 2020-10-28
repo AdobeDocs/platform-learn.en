@@ -27,14 +27,16 @@ activity:
 |Google Cloud Platform|Connecting Google Cloud Platform’s Real-time Machine Learning capabilities to Adobe Experience Platform |[VIDEO](https://video.tv.adobe.com/v/36638?quality=12&learn=on)|
 |ServiceNow| Connect sales, marketing and service in one single Real-time Customer Profile and use that information for intelligent omni-channel personalization|[VIDEO](https://video.tv.adobe.com/v/39483?quality=12&learn=on) |
 |Showpad|Closing the loop between online and in-person customer engagement with Adobe Experience Platform and Showpad|[VIDEO](https://video.tv.adobe.com/v/36363?quality=12&learn=on)|
-|Smart Digital|Connecting Smart Digital’s Real-time Machine Learning service to Adobe Experience Platform |[VIDEO](https://video.tv.adobe.com/v/36324?quality=12&learn=on)|
+|Smart Digital|Connecting Smart Digital’s Real-time Machine Learning service to Adobe Experience Platform (Part 1) |[VIDEO](https://video.tv.adobe.com/v/36324?quality=12&learn=on)|
+|Smart Digital|Connecting Smart Digital’s Real-time Machine Learning service to Adobe Experience Platform Real-time CDP (Part 2)|[VIDEO](https://video.tv.adobe.com/v/327187?quality=12&learn=on)|
 |Stackchat| Contextual, bi-directional personalization between FB Messenger, WeChat, … and AEP | [VIDEO](https://video.tv.adobe.com/v/35846?quality=12&learn=on) |
 
 ## Demo Videos
 
 | Application| Link | 
 |:-------------|:---------------:|
-|Architecture whiteboard of AEP| [VIDEO](https://video.tv.adobe.com/v/35266?quality=12&learn=on)|
+|Architecture whiteboard of Adobe Experience Platform| [VIDEO](https://video.tv.adobe.com/v/35266?quality=12&learn=on)|
+| Customer Journey Analytics - Omnichannel Customer Journey Analysis| [VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)|
 |Introduction to Luma Telco| [VIDEO](https://video.tv.adobe.com/v/35138?quality=12&learn=on)|
 |Introduction to Luma Insurance| [VIDEO](https://video.tv.adobe.com/v/35498?quality=12&learn=on)|
 |Introduction to Luma Retail| [VIDEO](https://video.tv.adobe.com/v/35137?quality=12&learn=on)|
