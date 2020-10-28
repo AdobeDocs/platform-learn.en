@@ -18,7 +18,7 @@ Customer Journey Analytics provides a toolkit to business intelligence and data 
 
 Have a look at this video to understand the value, customer journey and configuration process:
 
->[VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
 
 More info on Customer Journey Analytics can be found [here](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
