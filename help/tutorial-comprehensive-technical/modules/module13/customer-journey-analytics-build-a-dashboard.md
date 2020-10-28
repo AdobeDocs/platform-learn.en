@@ -15,6 +15,11 @@ In this module, you will get hands-on experience with the Customer Journey Analy
 
 Customer Journey Analytics provides a toolkit to business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within Customer Journey Analytics deliver context and clarity to the complex multi-channel customer journeys. The provided context generates actionable insight into how to remove pain points from the customer conversion process and deliver positive experiences in the moments that matter most.
 
+
+Have a look at this video to understand the value, customer journey and configuration process:
+
+>[VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+
 More info on Customer Journey Analytics can be found [here](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 
 ## Learning Objectives
