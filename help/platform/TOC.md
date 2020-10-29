@@ -121,6 +121,7 @@ audience: all
 + Application Services {#application-services}
   + [Customer Journey Analytics tutorials](https://docs.adobe.com/content/help/en/customer-journey-analytics-learn/tutorials/overview.html)
   + [Journey Orchestration tutorials](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/overview.html)
+  + [Offer Decisioning tutorials](https://docs.adobe.com/content/help/en/offer-decisioning-learn/tutorials/overview.html)
 + Real-time CDP {#rtcdp}
   + [Understanding Real-time CDP (Video)](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
   + [Demo of Real-time CDP (Video)](/help/platform/rtcdp/demo.md)
