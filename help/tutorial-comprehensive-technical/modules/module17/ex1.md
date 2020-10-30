@@ -48,59 +48,93 @@ You'll then see this:
 
 ![Sign in](./images/signinno-01.png)
 
-Fill out the required fields and click **Next**.
+Enter your email address and click **Next**. If you already have already created a Microsoft Account, select the option to **Create a New Account**.
+
 
 ![Sign in](./images/signinno-02.png)
 
-You now need to create your business identity.
+Enter your personal information in the next screen, and click **Next**.
+
+![Sign in](./images/signinno-03.png)
+
+You're now asked to verify your account through a text message. Select **Text me**, and click "Send Verification Code**.
+
+![Sign in](./images/signinno-04a.png)
+
+Enter the code that has been texted to you and click **Verify**
+
+![Sign in](./images/signinno-04b.png)
+
+You now need to create your business identity.  The first step is create a custom domain for your business. 
 
 ![Sign in](./images/signinno-05a.png)
 
-For the **User ID**, enter **admin**.
-
-For the password, use: **Password_1234**
-
-You also need to enter a custom domain for your business. For the domain, follow this naming convention:
+For the domain, follow this naming convention:
 
 - aepdemo**ldap**X
 
 Replace **ldap** by your ldap.
 
-Replace X by a number. For instance, 5.
+Replace X by a number. For instance, 30.
 
-In this example, the custom domain should be named: **aepdemovangeluw5**. 
-
-If your custom domain is available, click **Create my account**.
-
-You're now asked to verify your account through a text message. Click **Text me**.
-
-![Sign in](./images/signinno-04.png)
-
-You will receive a text message with a Verification code. Enter the code and click **Next**.
-
-![Sign in](./images/signinno-05.png)
-
-Store the custom domain in a text file on your computer for future reference as you'll need the custom domain in future exercises.
+In this example, the custom domain has been named: **aepdemojoconnor30**. 
 
 ![Sign in](./images/signinno-05b.png)
 
-Click **Set up**.
+If your custom domain is available, click **Next**.
+
+For the **User ID**, enter **admin**.
+
+For the password, use: **Password_1234**
+
+![Sign in](./images/signinno-06.png)
+
+Click **Sign up**.
+
+Wait for a couple of minutes without refreshing or closing the window until you see this screen.
+
+![Sign in](.images/../images/signinno-07.png)
+
+Store the user id in a text file on your computer for future reference as you'll need this in future exercises.
+
+**Note** You will receive an email with details of your trial subscription, including your custom domain and user ID. You should keep this mail, or make sure that you record the domain information for use later in this exercise.
+
+![Sign in](./images/signinno-07a.png)
+
+Back in the browser, click **Let's go**.
 
 You may be asked to sign-in. If you need to sign in, make sure to use the User ID you received by email.
 
-![Sign in](./images/email.png)
+You will be brought to the Power platform admin center where you can see the environment that has been created for you. In this case it is called Adobe (default).
 
-You'll then see this screen. Make sure that the scenario for **Sales** is selected.
+![Sign in](.images/../images/signinno-08.png)
 
-![Sign in](./images/signinno-09.png)
+You now need to create your Microsoft Dynamics Environment that will be used in this exercise. 
+In the right hand side enter the New environment settings.
 
-Click **Complete Setup**.
+For the name custom domain that you created earlier - in this case **aepdemojoconnor30**.
 
-Your account is then being set up. This may take a 3-4 minutes.
+![Sign in](./images/signinno-08a.png)
 
-![Sign in](./images/signinno-10.png)
+Leave the other settings as the defaults and click **Next**.
 
-Once the setup has been completed, you'll be redirected to your Microsoft Dynamics 365 account.
+You can now choose your database settings. 
+
+For the URL again use the custom domain you created earlier - in this case **aepdemojoconnor30**. Note the whole URL **aepdemojoconnor30.crm4.dynamics.com** as this is how you will access Dynamics.
+
+Select **Sales Pro** from the list under **Automatically deploy these apps**.
+
+![Sign in](./images/signinno-08b.png)
+
+Click **Save**. Your account is then being set up. This may take a 3-4 minutes.  Wait until the state changes from **PreparingInstance** to **Ready**.
+
+![Sign in](./images/signinno-08c.png)
+
+If you click on this environment, you are brought to a screen with all your environment details.
+
+![Sign in](./images/signinno-08d.png)
+
+Click **Open environment** in the top bar. This will open a new tab with your Microsoft Dynamics 365 account.
 
 You'll then see this. Click **Dynamics 365 – custom**.
 
