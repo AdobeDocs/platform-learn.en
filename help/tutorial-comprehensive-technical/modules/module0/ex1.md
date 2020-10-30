@@ -19,7 +19,7 @@ You'll see a similar homepage:
 
 ![DSN](./images/dsnhome.png)
 
-Click on the card for the Adobe Experience Platform instance with this name:
+Click on the card for your specific Adobe Experience Platform instance, in this case:
 
 - **Experience Platform International**
 - IMS Org ID: **907075E95BF479EC0A495C73@AdobeOrg**
