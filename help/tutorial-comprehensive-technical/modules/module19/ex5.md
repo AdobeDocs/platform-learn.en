@@ -125,11 +125,11 @@ These fields need to be added:
 
 | Key |  Value |
 |---|---|
-| --aepTenantId-- > identification > emailId | 3 > Consumer Record > Email |
-| --aepTenantId-- > identification > mobilenr | 3 > Consumer Record > Mobile Phone |
-| Person > Full Name > First Name | 3 > Consumer Record > First Name |
-| Person > Full Name > Last Name | 3 > Consumer Record > Last Name |
-| Identifier | Trigger > Case Record > ID for AEP|
+| --aepTenantId-- > identification > emailId | 3 - Update Record > Consumer Record > Email |
+| --aepTenantId-- > identification > mobilenr | 3 - Update Record > Consumer Record > Mobile Phone |
+| Person > Full Name > First Name | 3 - Update Record > Consumer Record > First Name |
+| Person > Full Name > Last Name | 3 - Update Record > Consumer Record > Last Name |
+| Identifier | Trigger - Record Created or Updated > Case Record > ID for AEP|
 
 Here's how to find the above fields to map (values in the above table):
 
@@ -181,16 +181,16 @@ These fields need to be added:
 
 | Key |  Value |
 |---|---|
-| --aepTenantId-- > callDetails > callFeeling | Trigger > Case Record > Call Feeling |
-| --aepTenantId-- > callDetails > callInteractionType | Trigger > Case Record > Number |
-| --aepTenantId-- > callDetails > callTopic | Trigger > Case Record > Short Description |
-| --aepTenantId-- > callDetails > callChannel | Trigger > Case Record > Channel |
-| --aepTenantId-- > callDetails > callPriority | Trigger > Case Record > Priority |
-| --aepTenantId-- > identification > mobilenr | Trigger > Case Record > Consumer > Mobile Phone |
-| --aepTenantId-- > identification > emailId | Trigger > Case Record > Consumer > Email |
+| --aepTenantId-- > callDetails > callFeeling | Trigger - Record Created or Updated > Case Record > Call Feeling |
+| --aepTenantId-- > callDetails > callInteractionType | Trigger - Record Created or Updated > Case Record > Number |
+| --aepTenantId-- > callDetails > callTopic | Trigger - Record Created or Updated > Case Record > Short Description |
+| --aepTenantId-- > callDetails > callChannel | Trigger - Record Created or Updated > Case Record > Channel |
+| --aepTenantId-- > callDetails > callPriority | Trigger - Record Created or Updated > Case Record > Priority |
+| --aepTenantId-- > identification > mobilenr | Trigger - Record Created or Updated > Case Record > Consumer > Mobile Phone |
+| --aepTenantId-- > identification > emailId | Trigger - Record Created or Updated > Case Record > Consumer > Email |
 | Event Type | serviceNow_CSMCase |
-| Identifier | Trigger > Case Record > ID for AEP |
-| Timestamp | Trigger > Case Record > Timestamp for AEP |
+| Identifier | Trigger - Record Created or Updated  > Case Record > ID for AEP |
+| Timestamp | Trigger - Record Created or Updated  > Case Record > Timestamp for AEP |
 
 Here's how to find the above fields to map (values in the above table):
   

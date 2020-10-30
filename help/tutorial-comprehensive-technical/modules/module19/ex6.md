@@ -58,11 +58,11 @@ Scroll down until you see the fields **ServiceNow Instance URL**, **ServiceNow U
 
 You now need to enter the values for these three fields.
 
-- **ServiceNow Instance URL** can be found in the URL of your browser. The URL looks like this: **https://devXXXXX.service-now.com/**.
+- **ServiceNow Instance URL** can be found in the URL of your browser. The URL looks like this: **https://devXXXXX.service-now.com**.
 
   ![Launch Setup](./images/cfgid3.png)
 
-  Copy the ServiceNow Instance URL and paste it in the corresponding field on your Configuration ID update page.
+  Copy the ServiceNow Instance URL and paste it in the corresponding field on your Configuration ID update page. Add this to the URL: **/api/now/consumer**.
 
   ![Launch Setup](./images/cfgid4.png)
 
@@ -70,9 +70,9 @@ You now need to enter the values for these three fields.
 
   ![Launch Setup](./images/cfgid5.png)
 
-- **ServiceNow Password** is the password you entered in [Exercise 19.1.1](./ex1.md) when creating your ServiceNow developer instance. You entered that password on this page:
+- **ServiceNow Password** is the password you entered in [Exercise 19.1.1](./ex1.md) when creating your ServiceNow developer instance. It was sent to you by email:
 
-  ![Launch Setup](./images/snow16.png)
+  ![Launch Setup](./images/snow13e.png)
   
   Enter your admin password in the corresponding field on your Configuration ID update page.
   

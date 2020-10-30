@@ -184,7 +184,7 @@ Next, click the **back** button as indicated below.
 
 Your form fields are now defined, you can now continue with setting up the business rules needed to populate those fields.
 
-## 19.4.3 Create Adobe-specific business rules in ServiceNow Case table
+## 19.4.4 Create Adobe-specific business rules in ServiceNow Case table
 
 In ServiceNow, in the Filter Navigator, enter the search term **Case**. Click **All**.
 
@@ -204,7 +204,7 @@ You'll then see this.
 
 Fill out the form fields as follows:
 
-- Type: **Populate Random ID For AEP**
+- Name: **Populate Random ID For AEP**
 - Table: **Case [sn_customerservice_case]**
 - Check the checkbox for **Advanced**
 - In **When to run**, make sure to:
@@ -241,7 +241,7 @@ You'll then see this.
 
 Fill out the form fields as follows:
 
-- Type: **Populate Timestamp For AEP**
+- Name: **Populate Timestamp For AEP**
 - Table: **Case [sn_customerservice_case]**
 - Check the checkbox for **Advanced**
 - In **When to run**, make sure to:
