@@ -11,7 +11,7 @@ activity:
 
 ## 19.1.1 Create your ServiceNow account and instance
 
-Go to [https://developer.servicenow.com/dev.do#!/home](https://developer.servicenow.com/dev.do#!/home) and select **Create an account**. 
+Go to [https://developer.servicenow.com/dev.do#!/home](https://developer.servicenow.com/dev.do#!/home) and select **Sign up and start building**. 
 
 ![ServiceNow](./images/snow1.png)
 
@@ -51,35 +51,35 @@ Check the checkbox to accept the ServiceNow Developer Agreement and click **Subm
 
 ![ServiceNow](./images/snow10.png)
 
-You'll then see the developer homepage of ServiceNow. Click **Request an instance** to get your own personal ServiceNow instance.
+You'll then see the developer homepage of ServiceNow. Click **Request Instance** to get your own personal ServiceNow instance.
 
 ![ServiceNow](./images/snow11.png)
 
-In the **Choose your release** window, you have to select **Paris**. Click **Request**.
+You'll then see this popup.
+
+![ServiceNow](./images/snow11a.png)
+
+Your instance is now being created, which might take a couple of minutes. After closing the popup, you'll see this on your Developer homepage.
 
 ![ServiceNow](./images/snow12.png)
 
-You'll then see this. Click **Close**.
+After a couple of seconds/minutes, you'll see this message. You can see that the username for logging in to your ServiceNow developer instance is **admin**, and you'll also see a default password which you'll need in the next step. You'll have to change that default password in the next step. You'll also get a confirmation email with your login credentials and Service URL. Keep this email as you'll need it in one of the next exercises.
 
-![ServiceNow](./images/snow13.png)
-
-After a couple of seconds/minutes, you'll see this message. You can see that the username for logging in to your ServiceNow developer instance is **admin**, and you'll also see a default password which you'll need in the next step. You'll have to change that default password in the next step.
+![ServiceNow](./images/snow13e.png)
 
 Click **Open Instance**.
 
-![ServiceNow](./images/snow14.png)
-
-You then first need to change your password. 
-
-![ServiceNow](./images/snow15.png)
-
-Enter the default password from the previous step in the **Current Password**. After entering your new password and confirming it, click **Submit**.
-
-![ServiceNow](./images/snow16.png)
+![ServiceNow](./images/snow13.png)
 
 You've now successfully logged in to your ServiceNow instance. 
 
 ![ServiceNow](./images/snow17.png)
+
+>[!NOTE]
+>
+>You now have access to a ServiceNow developer instance. A developer instance is intended for testing and development. If you don't use your instance for 10 days, your instance will be reclaimed by ServiceNow and you'll lose access to it. If you want to keep using your ServiceNow instance, you'll have to make sure to log in to [https://developer.servicenow.com/](https://developer.servicenow.com/) at least once every 10 days and then click the **Refresh Status** button.
+
+![ServiceNow](./images/snow17a.png)
 
 ## 19.1.2 Activate Customer Service Management in ServiceNow
 
@@ -93,13 +93,21 @@ You'll then see this. Search for the plugin **Customer Service Management** and 
 
 ![ServiceNow](./images/csmplugin2.png)
 
-In the search field, enter **Adobe Experience Platform**. Next, click **Install**.
+You'll then see this popup. Scroll down until you see the **Activate** button.
+
+![ServiceNow](./images/csmplugin2a.png)
 
 You'll then see a confirmation window. Click **Activate**.
 
-![ServiceNow](./images/csmplugin3.png)
+![ServiceNow](./images/csmplugin2b.png)
 
-You'll then see a progress bar. After a couple of minutes, the **Customer Service Management** plugin will be activated and available.
+You'll then see a progress bar. 
+
+![ServiceNow](./images/csmplugin3a.png)
+
+After a couple of minutes, the **Customer Service Management** plugin will be activated and available. Click **Close & Reload Form**.
+
+![ServiceNow](./images/csmplugin4.png)
 
 ## 19.1.3 Activate ServiceNow IntegrationHub Enterprise Pack Installer
 

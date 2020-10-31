@@ -111,7 +111,7 @@ Next, enter the following command in Terminal:
 openssl pkcs12 -export -inkey private.key -in certificate_pub.crt -out aep.p12
 ```
 
-You'll have to enter an **Export Password** - you can choose whichever password you prefer but choose something that is easy to remember as you'll need to use that password several times in the next steps.
+You'll have to enter an **Export Password** - you can choose whichever password you prefer but choose something that is easy to remember as you'll need to use that password several times in the next steps. Also, make sure to have a minimum of 6 characters for your password as that's required by Java Keystore.
 
 ![ServiceNow](./images/jks7.png)
 

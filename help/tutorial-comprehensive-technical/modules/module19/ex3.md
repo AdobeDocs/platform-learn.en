@@ -146,11 +146,11 @@ You'll then see this. In the **JWT Payload**, you'll find the values you need to
 
 Enter those values into the ServiceNow JWT Provider screen, as indicated below.
 
+- aud: **https://ims-na1.adobelogin.com/c/f2bea01fc9414913bae8e0564e6c81cd** (this URL is used to authenticate to Adobe I/O and references your Client ID)
+
 - iss: **A71C5A0C536804740A490D44@AdobeOrg** (this is your IMS Org ID)
 
-- sub: **22502BA85ECFB0890A495FF4@techacct.adobe.com** (this is the Technical Account ID of your Adobe I/O project)
-
-- aud: **https://ims-na1.adobelogin.com/c/99885d769f944e568ce8088e5dd204d6** (this URL is used to authenticate to Adobe I/O and references your Client ID)
+- sub: **CF2377955F96EBC90A495E88@techacct.adobe.com** (this is the Technical Account ID of your Adobe I/O project)
 
 You should now have this.
 
@@ -170,7 +170,7 @@ Double-click in every column on the row that has the text **Insert a new row...*
 
 Enter the following values:
 
-- Claim Name: **https://ims-na1.adobelogin com/s/entdataservices_sdk**
+- Claim Name: **https://ims-na1.adobelogin.com/s/ent_dataservices_sdk**
 - Claim Value Type: **true|false**
 - Claim Value: **true**
 
@@ -259,7 +259,7 @@ In ServiceNow, in the Filter Navigator, enter the search term **Credentials**. C
 
 You'll then see this. You now need to create two credential records, one for **Data Inlet** and another one for **Data Ingestion**.
 
-### Data Inlet
+### AEP_Ingestion
 
 Click **New**.
 
@@ -296,7 +296,7 @@ You'll then see this popup which should have the message **OAuth token flow comp
 
 ![ServiceNow](./images/cred7.png)
 
-### Data Ingestion
+### AEP
 
 Click **New**.
 
@@ -325,7 +325,7 @@ Next, right-click on the form header as indicated in the screenshot. Click **Sav
 
 ![ServiceNow](./images/cred10.png)
 
-You'll then see this. The error message is expected. To fi the error message, click **Get OAuth Token**.
+You'll then see this. The error message is expected. To fix the error message, click **Get OAuth Token**.
 
 ![ServiceNow](./images/cred11.png)
 
