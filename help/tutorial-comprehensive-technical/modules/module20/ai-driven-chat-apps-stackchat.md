@@ -1,6 +1,6 @@
 ---
 title: AI-Driven Chat Apps & Live Chat powered by Stackchat
-description: AI-Driven Chat Apps & Live Chat powered by Stackchat
+description: In this tutorial, you'll build an AI-driven chatbot deploy it to the Luma website and integrate it with Adobe Experience Platform and other Experience Cloud products.
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
