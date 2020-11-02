@@ -227,6 +227,12 @@ As part of this module you will also get an understanding of what triggers Real-
 - **Description:** In this module you'll implement the bi-directional integration between Adobe Experience Platform and ServiceNow. 
 - **Time Investment:** 120 minutes
 
+[20. AI-Driven Chat Apps & Live Chat powered by Stackchat](./modules/module20/ai-driven-chat-apps-stackchat.md)
+
+- **Audience:** Data Engineer, Data Architect, Data Analyst
+- **Prerequisites:** Access to Adobe Experience Platform, a Facebook and / or WeChat account
+- **Description:** In this module, you'll build your own chatbot using Stackchat's AI-Driven Chat Apps & Live Chat
+- **Time Investment:** 120 minutes
 
 >[!NOTE]
 >
