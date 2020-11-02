@@ -1,6 +1,6 @@
 ---
-title: AI-Driven Chat Apps & Live Chat powered by Stackchat - Build your Luma Bot
-description: AI-Driven Chat Apps & Live Chat powered by Stackchat - Build your Luma Bot
+title: AI-Driven Chat Apps and Live Chat powered by Stackchat - Build your Luma Bot
+description: In this exercise you'll build your Luma bot.
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial

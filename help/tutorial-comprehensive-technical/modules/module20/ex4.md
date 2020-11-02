@@ -1,6 +1,6 @@
 ---
-title: AI-Driven Chat Apps & Live Chat powered by Stackchat - Use Journey Orchestration to trigger an email follow up after interacting with your chatbot
-description: AI-Driven Chat Apps & Live Chat powered by Stackchat - Use Journey Orchestration to trigger an email follow up after interacting with your chatbot
+title: AI-Driven Chat Apps and Live Chat powered by Stackchat - Use Journey Orchestration to trigger an email follow up after interacting with your chatbot
+description: In this exercise you'll use Journey Orchestration to trigger an email follow up after interacting with your chatbot
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial

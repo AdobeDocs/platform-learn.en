@@ -1,3 +1,12 @@
+---
+title: AI-Driven Chat Apps and Live Chat powered by Stackchat - Connect your chatbot to Facebook Messenger
+description: In this exercise you'll connect your chatbot to Facebook Messenger
+kt: 5342
+audience: Data Engineer, Data Architect, Data Analyst
+doc-type: tutorial
+activity: 
+---
+
 # 20.7 Connect your chatbot to Facebook Messenger
 
 ![FB_Messenger_logo](./images/FB_Messenger_logo-crunch.png)

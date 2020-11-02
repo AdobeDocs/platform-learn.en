@@ -1,6 +1,6 @@
 ---
-title: AI-Driven Chat Apps & Live Chat powered by Stackchat - Onboard to Stackchat
-description: AI-Driven Chat Apps & Live Chat powered by Stackchat - Onboard to Stackchat
+title: AI-Driven Chat Apps and Live Chat powered by Stackchat - Onboard to Stackchat
+description: In this exercise you'll create your Stackchat account.
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial

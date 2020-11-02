@@ -1,6 +1,6 @@
 ---
-title: AI-Driven Chat Apps & Live Chat powered by Stackchat - Test your chatbot on the demo website
-description: AI-Driven Chat Apps & Live Chat powered by Stackchat - Configure the integration between Stackchat and Adobe Experience Platform
+title: AI-Driven Chat Apps and Live Chat powered by Stackchat - Test your chatbot on the demo website
+description: In this exercise you'll test your chatbot on the demo website
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial

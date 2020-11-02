@@ -1,3 +1,12 @@
+---
+title: AI-Driven Chat Apps and Live Chat powered by Stackchat - Test the WeChat Integration (Optional)
+description: In this exercise you'll test the WeChat Integration
+kt: 5342
+audience: Data Engineer, Data Architect, Data Analyst
+doc-type: tutorial
+activity: 
+---
+
 # 20.8 Test the WeChat Integration (Optional)
 
 ![WeChat-logo](./images/wechat-logo-crunch.png)
