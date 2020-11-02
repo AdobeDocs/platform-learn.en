@@ -253,7 +253,7 @@ You'll then see that the chatbot is using your first name in the call to action:
 
 ![demo](./images/webdemo3.png)
 
-This can be achieved this by attaching user information to message metadata in the **beforeSend** delegate in [helper.ts](./web-messenger/src/messenger/helpers.ts), so that the chatbot doesn't have to ask for info we already know. You can learn more about [message metadata here](https://docs.stackchat.com/Cloud-Functions/Reference-and-Examples/Filtering-and-Transforming-Messages-with-Metadata.html).
+This can be achieved this by attaching user information to message metadata in the **beforeSend** delegate in the file helper.ts, so that the chatbot doesn't have to ask for info we already know. You can learn more about [message metadata here](https://docs.stackchat.com/Cloud-Functions/Reference-and-Examples/Filtering-and-Transforming-Messages-with-Metadata.html).
 
 Open the chat widget and click **Let's go!**. 
 

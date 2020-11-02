@@ -109,7 +109,7 @@ Having a CDML representation of your bot provides the following advantages:
 
 ## 20.2.4 Import Luma Bot CDML
 
-Lucky for you, we've already created the Luma Bot content and can share it with you as CDML. Download [this CDML file](./../../assets/stackchat/cdml.zip) to your local desktop and unzip it. 
+Lucky for you, we've already created the Luma Bot content and can share it with you as CDML. Download this CDML file to your local desktop and unzip it. 
 
 ![demo](./images/cdmlzip.png)
 
