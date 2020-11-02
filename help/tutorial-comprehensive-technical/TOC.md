@@ -177,7 +177,7 @@ audience: all
   + [19.6 Prepare End-to-end Demo](/help/tutorial-comprehensive-technical/modules/module19/ex6.md)
   + [19.7 End-to-end Demo](/help/tutorial-comprehensive-technical/modules/module19/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module19/summary.md)
-+ 20 - AI-Driven Chat Apps & Live Chat powered by Stackchat {#module20}
++ 20 - AI-Driven Chat Apps and Live Chat powered by Stackchat {#module20}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module20/ai-driven-chat-apps-stackchat.md)
   + [20.1 Onboard to Stackchat](/help/tutorial-comprehensive-technical/modules/module20/ex1.md)
   + [20.2 Build your Luma Bot](/help/tutorial-comprehensive-technical/modules/module20/ex2.md)
