@@ -135,7 +135,7 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module14/summary.md)
 + 15 - Data Science Workspace - Car Insurance Sales Propensity {#module15}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
-  + [15.1 Introduction to Luma Insurance](/help/tutorial-comprehensive-technical/modules/module15/ex1.md)
+  + [15.1 Introduction to MUTUAL365](/help/tutorial-comprehensive-technical/modules/module15/ex1.md)
   + [15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment](/help/tutorial-comprehensive-technical/modules/module15/ex2.md)
   + [15.3 Operationalize your model using a Recipe](/help/tutorial-comprehensive-technical/modules/module15/ex3.md)
   + [15.4 Train and Score your Recipe](/help/tutorial-comprehensive-technical/modules/module15/ex4.md)
