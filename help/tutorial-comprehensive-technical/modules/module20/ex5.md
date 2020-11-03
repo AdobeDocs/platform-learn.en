@@ -205,7 +205,7 @@ export const CUSTOM_EVENT_DATASET_ID = 'XXXX';
 export const CUSTOM_EVENT_ORCHESTRATION_EVENT_ID = 'XXXX';
 ```
 
-### CUSTOM\_EVENT\_SCHEMA\_ID
+### CUSTOM_EVENT_SCHEMA_ID
 
 You can obtain the CUSTOM_EVENT_SCHEMA_ID id by opening up the Adobe Experience Platform user interface, going the **Schemas** page and searching for **AEP Demo - Stackchat Interactions Schema** and click to open the schema. 
 
@@ -225,7 +225,7 @@ Your file **_constants.ts** should now look like this:
 
 ![VSC](./images/vsc4.png)
 
-### CUSTOM\_EVENT\_DATASET\_ID
+### CUSTOM_EVENT_DATASET_ID
 
 Now let's do the same for the dataset. Bring up the Adobe Experience Platform user interface, open the **Datasets** page and search for **AEP Demo - Stackchat Interactions** and click on the resulting dataset result.
 
@@ -241,7 +241,7 @@ Your file **_constants.ts** should now look like this:
 
 ![VSC](./images/vsc6.png)
 
-### CUSTOM\_EVENT\_ORCHESTRATION\_EVENT\_ID
+### CUSTOM_EVENT_ORCHESTRATION_EVENT_ID
 
 One last item remaining: your Journey Orchestration Id from the previous step! In [20.4 Use Journey Orchestration to trigger an email follow up after interacting with your chatbot](./ex4.md) you created your own event in Journey Orchestration. Copy the orchestration eventID you created and paste it into this field in the **_constants.ts** file. 
 

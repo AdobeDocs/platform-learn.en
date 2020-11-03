@@ -97,11 +97,11 @@ Pretty nifty, but Luma Bot isn't very useful with a bunch of cloud functions tha
 
 ## 20.3.3 Set Up the Cloud Functions Project in VSCode
 
-First, download [this zip file](https://github.com/stackchat-ai/adobe-experience-league-module/archive/v1.0.0.zip) to your local desktop and unzip it. 
+In one of the previous exercises, you downloaded [the latest release of the Stackchat assets here, as a zip file](https://github.com/stackchat-ai/adobe-experience-league-module/releases), to your local desktop where you unzipped it. You have this folder on your desktop:
 
 ![demo](./images/cloudfunctionszip.png)
 
-Next, open the folder **adobe-experience-league-module-1.0.0** in Visual Studio Code by dragging and dropping it in the Visual Studio Code UI.
+Next, open the folder **adobe-experience-league-module-X.X.X** in Visual Studio Code by dragging and dropping it in the Visual Studio Code UI.
 
 ![demo](./images/cloudfunctionszip1.png)
 

@@ -109,9 +109,23 @@ Having a CDML representation of your bot provides the following advantages:
 
 ## 20.2.4 Import Luma Bot CDML
 
-Lucky for you, we've already created the Luma Bot content and can share it with you as CDML. Download this CDML file to your local desktop and unzip it. 
+Lucky for you, we've already created the Luma Bot content and can share it with you as CDML. 
 
-![demo](./images/cdmlzip.png)
+First, download [the latest release of the Stackchat assets here, as a zip file](https://github.com/stackchat-ai/adobe-experience-league-module/releases) to your local desktop and unzip it. 
+
+![demo](./images/cloudfunctionszip1a.png)
+
+After unzipping it you'll have this:
+
+![demo](./images/cloudfunctionszip.png)
+
+Open the folder **adobe-experience-league-module-X.X.X**. 
+
+![demo](./images/cloudfunctionszip3.png)
+
+Next, open the folder **cdml**.
+
+![demo](./images/cloudfunctionszip4.png)
 
 In there, you'll find a file named **luma-bot.cdml**. Open it using any Text Editor of choice.
 
