@@ -51,10 +51,6 @@ You'll be redirected to this page:
 
 Enter the Configuration ID you created in the previous step. Click **Load Configuration**.
 
-![DSN](../module0/images/web2.png)
-
-You'll then see this:
-
 ![DSN](../module0/images/web3.png)
 
 Scroll down so you can see the **Save Configuration** button. Click **Save Configuration**.

@@ -7,90 +7,114 @@ doc-type: tutorial
 activity: 
 ---
 
-# 6.3: Configure Launch to trigger your Event
+# 6.3 Update your Configuration ID and Test your Journey
 
-In this exercise, you'll configure Launch so that the Event you created in Exercise 6.1 is now triggered, and activates the Journey that you built in Exercise 6.2.
+## 6.3.1 Update your Configuration ID
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/) and login with your personal login details.
+Before you can test your journey, you'll need to update your Configuration ID settings and enter the EventID of the **ldapAccountCreationEvent** event on the **Update Configuration ID** page of the demo website Admin pages.
 
-Select your Launch property.
+Open a clean, fresh incognito browser window and go to [https://public.aepdemo.net/admin\_configuration\_update.html](https://public.aepdemo.net/admin_configuration_update.html).
 
-## 6.3.1 - Edit Rule: Create Account
+You'll then see this. 
 
-In the Launch UI, go to Rules.
+![Launch Setup](./images/cfgid1.png)
 
-![Upgrade Launch](./images/rules.png)
+Enter your Configuration ID and click **Load Configuration**.
 
-Click to open the rule `Create Account`.
+![Launch Setup](./images/cfgid2.png)
 
-![Upgrade Launch](./images/newrulecracc.png)
+ After clicking **Load Configuration**, scroll down until you see the fields **EventID - Account Creation**.
 
-Open the action `Adobe Experience Platform - Send Beacon`. You'll then see this:
+![Launch Setup](./images/cfgid2a.png)
 
-![Launch Setup](./images/beaconconfig.png)
+In exercise 6.1, you created your event and collected the EventID. You can find it here:
 
-In Schema Mapping, you need to add the following Keys and Values to the Send Beacon action:
+![Demo](./images/payloadeventID.png)
 
-| Source Value                 | Target Schema Field               |
-|:-------------------------------------------| :------------------ |
-|**YourEventID**|_experience.campaign.orchestration.eventID|
+In this example, the `eventID` is `71d98ef80980453e03a3bfc6aab57d15663784265a9363c097b6b9608f1a54bf `.
 
-The reference to **YourEventID** refers specifically to the EventID of the Event that you configured in 1. Retrieve the Event ID as indicated in 1 and paste it by replacing **YourEventID** with your Event ID.
+Go back to the **Update Configuration ID** screen and paste the code that you copied in the field **EventID - Account Creation**.
 
-Go to Journey Orchestration, to Events. Select your event and view the payload, scroll down to your eventID:
+![Launch Setup](./images/cfgid3.png)
 
-![ACOP](./images/payloadeventID.png)
+Next, scroll down and click **Update Configuration ID**.
 
-Scroll down in the Schema Mapping and click **Add Another**.
+![Launch Setup](./images/cfgid5.png)
 
-![ACOP](./images/payloadeventID1.png)
+After this change, your Configuration ID is ready for testing!
 
-Configure your mapping with your eventID, as indicated below:
+## 6.3.2 Test your Journey
 
-![ACOP](./images/payloadeventID2.png)
+Open a clean, fresh incognito browser window and go to [https://public.aepdemo.net](https://public.aepdemo.net).
 
-After the above configuration, your rule looks like this:
+You'll be redirected to this page:
 
-![Upgrade Launch](./images/cracc_ok.png)
+![DSN](./images/web1.png)
 
-Click **Keep Changes** to save your Action.
+Enter the Configuration ID you created in the previous step. Click **Load Configuration**.
 
-Click **Save** to save your changes.
+![DSN](./images/web2.png)
 
-You can now publish these changes into your development environment.
+You'll then see this:
 
-In the Launch UI, navigate to the menu option **Publishing**.
+![DSN](./images/web3.png)
 
-![Launch Setup](./images/publ.png)
+Scroll down so you can see the **Save Configuration** button. Click **Save Configuration**.
 
-Under Development, you'll see your current Development environment.
+![DSN](./images/web4.png)
 
-Click on little arrow to open a dropdown list and click Edit to make changes to your Development library.
+After a couple of seconds you'll be redirected to the Admin homepage and you'll see this:
 
-![Launch Setup](./images/editv1.png)
+![DSN](./images/cfg6a.png)
 
-Scroll down to the bottom of the window, where you'll see a button called **+ Add All Changed Resources**.
+Go to **Select LDAP** in the left side menu, select your LDAP in the list and click **Save**.
 
-![Launch Setup](./images/addch.png)
+![DSN](./images/web61.png)
 
-Click the **+ Add All Changed Resources** button.
+Go to **Select Brand** in the left side menu, select a brand of choice and click **Save**.
 
-![Launch Setup](./images/addallchanged.png)
+![DSN](./images/web7.png)
 
-Click the **Save & Build for Development** button.
+You'll now see a similar Admin homepage. Click the brand logo to go to the demo website.
 
-![Launch Setup](./images/savebuild.png)
+![DSN](./images/web8.png)
 
-After clicking the **Save & Build for Development** button, your Development library will be updated and your changes will be available for testing on your Platform Demo website. It can take a couple of minutes for your Launch library to update, wait until you see a green dot next to your Development library.
+You'll then be redirected to the **Luma Retail** homepage.
 
-(FYI: sometimes the Launch library is cached in your browser so you might have to clear your cache)
+![Demo](./images/lb_home.png)
 
-Once your Launch configuration is published, go to your Platform Demo website, select and load any brand of choice and navigate to the page Login/Register.
-Enter your credentials.
+Go to the **Login/Register** page. Fill out your registration details and click **CREATE ACCOUNT**.
+  
+>[!IMPORTANT]
+>
+> Please use the following naming convention for your Mobile Phone Number:
+> If your number is 0473622044, you have to enter **+32473622044+DDMMYYYY-XX** as a number, otherwise the sending of SMSs doesn't work. For instance, **+32473622044+26052020-1**
+  
+![Demo](./images/lb_register.png)
 
-![Launch Setup](./images/lb_register_dtl.png)
+You'll then be redirected to the Homepage of the website. Open the X-ray panel, go to Real-time Customer Profile. On the X-ray panel, you should see all of your personal data displayed.
 
-Click the **Create Account** button. If all goes well, you should receive an email a couple of seconds later.
+![Demo](./images/lb_x_loggedin.png)
+
+When you clicked the **CREATE ACCOUNT** button, your **ldapAccountCreationEvent** has been triggered. In your Launch property, there's a Launch rule named **Create Account**. This rule is triggered when you click the **CREATE ACCOUNT** button.
+
+![Demo](./images/launchweb1.png)
+
+The **AEP Web SDK** - **Send Event** action is then sending the payload to Adobe Experience Platform.
+
+![Demo](./images/launchweb2.png)
+
+The **AEP Web SDK** - **Send Event** action is referring to the data element **ruleCreateAccount**, which is configured like this:
+
+![Demo](./images/launchweb3.png)
+
+Specifically, the data element **ruleCreateAccount** refers to another data element **eventIdAccountCreation** which picks up the orchestration ID you configured in your Configuration ID. This is how the journey is eventually triggered.
+
+![Demo](./images/launchweb4.png)
+
+As a result, you should now have received an email:
+
+![DSN](./images/web9.png)
 
 Next Step: [Summary and benefits](./summary.md)
 

@@ -52,13 +52,9 @@ This will guide you through the configuration of an event.
 
 This will guide you through the configuration of an Journey and how to link your event to that Journey.
 
-[6.3 Configure Launch to trigger your Event](./ex3.md)
+[6.3 Update your Configuration ID and Test your Journey](./ex3.md)
 
 This will guide you through the configuration of Launch to trigger your event and provide the right payload and finally, you'll be able to send yourself an email.
-
-[6.4 How to create your own email in Adobe Campaign Standard](./ex4.md)
-
-In this optional exercise, you'll learn how to create your own message and event structure in Adobe Campaign Standard to use in combination with the events coming from Adobe Experience Platform.
 
 [Summary and benefits](./summary.md)
 
