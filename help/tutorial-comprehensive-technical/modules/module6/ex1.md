@@ -7,9 +7,7 @@ doc-type: tutorial
 activity: 
 ---
 
-# 6.1: Journey Orchestration: Setup Event
-
-The end goal of this module is to receive an email after creating your account on the Platform Demo website.
+# 6.1 Journey Orchestration: Setup Event
 
 Login to Journey Orchestration by going to [Adobe Experience Cloud](https://experience.adobe.com).
 
@@ -19,9 +17,17 @@ Click on **Journey Orchestration**.
 
 ![ACOP](./images/acoptrig.png)
 
-You'll be redirected to the **Home** screen in Journey Orchestration.
+You'll be redirected to the **Home** view in Journey Orchestration.
 
 ![ACOP](./images/acoptriglp.png)
+
+First, make sure you're using the correct sandbox. The sandbox to use is called **--aepSandboxId--**. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
+
+![ACOP](./images/sb.png)
+
+You'll then be in the **Home** view of your sandbox --aepSandboxId--.
+
+![ACOP](./images/home.png)
 
 In the menu, click **Events**.
 
@@ -110,7 +116,7 @@ Click **Close**.
 
 You've now finished this exercise.
 
-Next Step: [6.2: Journey Orchestration: Setup Journey](./ex2.md)
+Next Step: [6.2 Journey Orchestration: Setup Journey](./ex2.md)
 
 [Go Back to Module 6](./journey-orchestration-create-account.md)
 

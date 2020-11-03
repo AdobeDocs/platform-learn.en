@@ -62,8 +62,7 @@ audience: all
   + [Overview](/help/tutorial-comprehensive-technical/modules/module6/journey-orchestration-create-account.md)
   + [6.1 Journey Orchestration: Setup Event](/help/tutorial-comprehensive-technical/modules/module6/ex1.md)
   + [6.2 Journey Orchestration: Setup Journey](/help/tutorial-comprehensive-technical/modules/module6/ex2.md)
-  + [6.3 Configure Launch to trigger your Event](/help/tutorial-comprehensive-technical/modules/module6/ex3.md)
-  + [6.4 How to create your own email in Adobe Campaign Standard](/help/tutorial-comprehensive-technical/modules/module6/ex4.md)
+  + [6.3 Update your Configuration ID and Test your Journey](/help/tutorial-comprehensive-technical/modules/module6/ex3.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module6/summary.md)
 + 7 - Query Service {#module7}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module7/query-service.md)
