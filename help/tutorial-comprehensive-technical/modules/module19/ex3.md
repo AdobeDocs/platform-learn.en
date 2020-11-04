@@ -360,7 +360,7 @@ Fill out the form fields as follows:
 - Name: **AEP Platform**
 - Credential: select **AEP**
 - Connection URL: enter **https://platform.adobe.io/** 
-- **Attributes** Sandbox: enter the name of your Adobe Experience Platform (do not enter the ID of your sandbox). If you sandbox is PROD, then enter **PROD**.
+- **Attributes** Sandbox: enter the name of your Adobe Experience Platform (do not enter the ID of your sandbox). Your sandbox is **--aepSandboxId--**.
 - **Attributes** API Key: paste your Adobe I/O integration's API Key, in this case: **f2bea01fc9414913bae8e0564e6c81cd**
 - **Attributes** Organization ID: enter the IMS Org ID of your Adobe Experience Platform instance, in this example: **A71C5A0C536804740A490D44@AdobeOrg**
 
@@ -403,7 +403,7 @@ Fill out the form fields as follows:
 - Name: **AEP dcs**
 - Credential: select **AEP_Ingestion**
 - Connection URL: enter **https://dcs.adobedc.net** 
-- **Attributes** Sandbox: enter the name of your Adobe Experience Platform (do not enter the ID of your sandbox). If you sandbox is PROD, then enter **PROD**.
+- **Attributes** Sandbox: enter the name of your Adobe Experience Platform (do not enter the ID of your sandbox). Your sandbox is **--aepSandboxId--**.
 - **Attributes** Organization ID: enter the IMS Org ID of your Adobe Experience Platform instance, in this example: **A71C5A0C536804740A490D44@AdobeOrg**
 
 Your HTTP(s) Connection form should now look like this:
