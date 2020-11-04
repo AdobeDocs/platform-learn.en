@@ -35,7 +35,7 @@ Application started. Press Ctrl+C to shut down.
 
 ![6-01-vsc-ready.png](./images/6-01-vsc-ready.png)
 
-## 18.6.2 Luma Telco
+## 18.6.2 Citi Signal
 
 Go to [https://public.aepdemo.net/](https://public.aepdemo.net/). Load and save your Configuration ID. 
 
@@ -128,22 +128,22 @@ Payload detail:
 "39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
 "lastQualificationTime": "2020-08-31T15:25:36Z",
 "status": "realized",
-"segmentName": "mmeewis - Citi Signal Sports Fan"
+"segmentName": "vangeluw - Citi Signal Sports Fan"
 }
 }
 },
 "identityMap": {
 "ecid": [{
-"id": "34053798168136392521859077594127725521"
+"id": "55881428918195475651175884970765451906"
 }],
 "email_lc_sha256": [{
 "id": "81dcaeb579a699d7a5f8a59b921b8c7901365193bc55ef38f2770208ff940626"
 }],
 "mobilenr": [{
-"id": "+32476892710-31082020-1"
+"id": "+32473622044+04112020-7"
 }],
 "email": [{
-"id": "mmeewis+marc-31082020-1@adobetest.com"
+"id": "woutervangeluwe+04112020-7@gmail.com"
 }]
 }
 }]

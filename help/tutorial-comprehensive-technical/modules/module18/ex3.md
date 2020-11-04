@@ -37,11 +37,19 @@ Building a segment in explained in detail in [Module 11](../module11/real-time-c
 
 ### Create Segment
 
-Go to [https://platform.adobe.com](https://platform.adobe.com) and navigate to **Segment**. Click the **+ Create segment** button.
+Go to [https://platform.adobe.com](https://platform.adobe.com).
+
+Before you continue, you need to select a **sandbox**. The sandbox to select is named **--aepSandboxId--**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox. Go to **Segment**. 
+
+![Data Ingestion](./images/sb2.png)
+
+Click the **+ Create segment** button.
 
 ![4-01-create-segment.png](./images/4-01-create-segment.png)
-
-Let's start with adding the profile email address expression to make sure you're only qualifying for your own segments:
 
 Name your segment **ldap - Citi Signal Sports Fan** and add the page name experience event:
 
