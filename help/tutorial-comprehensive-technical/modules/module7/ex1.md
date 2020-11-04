@@ -35,17 +35,17 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ## 7.1.2 - Explore data on the platform
 
-Bringing data from different channels is a tough task for any brand. And in this exercise, Luma Telco customers are engaging with Luma Telco on its website, on its mobile app, purchase data is collected by Luma Telco’s Point of Sale system, and they have CRM and Loyalty data. Luma Telco is using Adobe Analytics and Adobe Launch to capture data across its website, mobile app as well as POS system, so this data is already flowing into Adobe Experience Platform. Let's begin with exploring all the data for Luma Telco that already exists in Adobe Experience Platform.
+Bringing data from different channels is a tough task for any brand. And in this exercise, Citi Signal customers are engaging with Citi Signal on its website, on its mobile app, purchase data is collected by Citi Signal’s Point of Sale system, and they have CRM and Loyalty data. Citi Signal is using Adobe Analytics and Adobe Launch to capture data across its website, mobile app as well as POS system, so this data is already flowing into Adobe Experience Platform. Let's begin with exploring all the data for Citi Signal that already exists in Adobe Experience Platform.
 
 In the left menu, click **Datasets**.
 
 ![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
-Luma Telco is streaming data into Adobe Experience Platform and this data is available in the `AEP Demo - Website Interactions` dataset. Search for `AEP Demo - Website Interactions`.
+Citi Signal is streaming data into Adobe Experience Platform and this data is available in the `AEP Demo - Website Interactions` dataset. Search for `AEP Demo - Website Interactions`.
 
 ![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
 
-Luma Telco's Callcenter Interaction data is captured in the `AEP Demo - Call Center Interactions` dataset. Search for `AEP Demo - Call Center Interactions` data in search box. Click on the dataset's name to get dataset details.
+Citi Signal's Callcenter Interaction data is captured in the `AEP Demo - Call Center Interactions` dataset. Search for `AEP Demo - Call Center Interactions` data in search box. Click on the dataset's name to get dataset details.
 
 ![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
 

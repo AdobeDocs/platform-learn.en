@@ -208,7 +208,7 @@ The result will look like this (but won't be identical - you may have more or le
 
 ![DSW](./images/result2.png)
 
-### Filter out empty values and select data for brand Luma Telco
+### Filter out empty values and select data for brand Luma
 
 Click in the next empty cell in the notebook.
 
@@ -221,7 +221,7 @@ Copy the below code and paste it in the next empty cell in your notebook.
 df = df.dropna(subset=[user_id, item_id, interactionType, brand_name])
 
 # only focus on one brand
-df = df[df[brand_name] == "Luma Retail"]
+df = df[df[brand_name] == "Luma"]
 ```
 
 You'll then have this in that cell:
