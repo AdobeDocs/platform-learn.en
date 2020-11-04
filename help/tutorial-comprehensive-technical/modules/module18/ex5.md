@@ -142,8 +142,8 @@ The response that you'll receive in Visual Studio Code will have quite a few seg
 {
   "segments": {
     "39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
-      "description": "mmeewis - Luma Telco Sports Fan",
-      "name": "mmeewis - Luma Telco Sports Fan"
+      "description": "mmeewis - Citi Signal Sports Fan",
+      "name": "mmeewis - Citi Signal Sports Fan"
     },
     "a77d96aa-d166-43b1-baba-005d35261b8a": {
       "description": "all - Interest in Nadia Elements Shell",
@@ -319,7 +319,7 @@ From the list of storage accounts, select the one that you have created as part 
 
 ![3-22-vsc-select-storage-account.png](./images/3-22-vsc-select-storage-account.png)
 
-Your project is now up and running and is listing for events in the Event Hub. In the next exercise you'll demonstrate behavior on the Luma Telco website that will qualify you for those segments. As a result you will receive a segment qualification payload in the terminal of your Event Hub trigger function:
+Your project is now up and running and is listing for events in the Event Hub. In the next exercise you'll demonstrate behavior on the Citi Signal website that will qualify you for those segments. As a result you will receive a segment qualification payload in the terminal of your Event Hub trigger function:
 
 ![3-23-vsc-application-started.png](./images/3-23-vsc-application-started.png)
 

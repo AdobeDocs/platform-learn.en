@@ -40,7 +40,7 @@ How many product views do we have on a daily basis?
 select date_format( timestamp , 'yyyy-MM-dd') AS Day,
        count(*) AS productViews
 from   aep_demo_website_interactions
-where  --aepTenantId--.brand.brandName like 'Luma Telco'
+where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 and    --aepTenantId--.productData.productInteraction = 'productView'
 group by Day
 limit 10;
@@ -64,10 +64,10 @@ A POST call to [/query/queries] with the following payload will trigger the exec
 
 ```sql
 {
-    "name" : "mmeewis - QS API demo - Luma Telco - Product Views Per Day",
-    "description": "mmeewis - QS API demo - Luma Telco - Product Views Per Day",
+    "name" : "mmeewis - QS API demo - Citi Signal - Product Views Per Day",
+    "description": "mmeewis - QS API demo - Citi Signal - Product Views Per Day",
     "dbName": "--aepSandboxId--",
-    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where _experienceplatform.brand.brandName like 'Luma Telco' and _experienceplatform.productData.productInteraction = 'productView' group by Day limit 10"
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal') and --aepTenantId--.productData.productInteraction = 'productView' group by Day limit 10"
 }
 ```
 
@@ -82,9 +82,9 @@ When successful the POST call will return the following response:
     "isInsertInto": false,
     "request": {
         "dbName": "all",
-        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where _experienceplatform.brand.brandName like 'Luma Telco' and _experienceplatform.productData.productInteraction = 'productView' group by Day limit 10",
-        "name": "mmeewis - QS API demo - Luma Telco - Product Views Per Day",
-        "description": "mmeewis - QS API demo - Luma Telco - Product Views Per Day"
+        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal') and --aepTenantId--.productData.productInteraction = 'productView' group by Day limit 10",
+        "name": "mmeewis - QS API demo - Citi Signal - Product Views Per Day",
+        "description": "mmeewis - QS API demo - Citi Signal - Product Views Per Day"
     },
     "clientId": "140cf1483216478396e7b5568cd2181d",
     "state": "SUBMITTED",
@@ -152,9 +152,9 @@ It might take a couple of minutes before the query starts executing, it will cha
     "isInsertInto": false,
     "request": {
         "dbName": "all",
-        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where _experienceplatform.brand.brandName like 'Luma Telco' and _experienceplatform.productData.productInteraction = 'productView' group by Day limit 10",
-        "name": "mmeewis - QS API demo - Luma Telco - Product Views Per Day",
-        "description": "mmeewis - QS API demo - Luma Telco - Product Views Per Day"
+        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal') and --aepTenantId--.productData.productInteraction = 'productView' group by Day limit 10",
+        "name": "mmeewis - QS API demo - Citi Signal - Product Views Per Day",
+        "description": "mmeewis - QS API demo - Citi Signal - Product Views Per Day"
     },
     "clientId": "140cf1483216478396e7b5568cd2181d",
     "state": "SUCCESS",

@@ -24,6 +24,10 @@ Click on the card for your specific Adobe Experience Platform instance, in this 
 - **Experience Platform International**
 - IMS Org ID: **907075E95BF479EC0A495C73@AdobeOrg**
 
+>[!NOTE]
+>
+> You can find your IMS Org ID, Org Name and your Adobe Experience Platform sandbox on your company's github repository that was set up by your Adobe contact.
+
 ![DSN](./images/dsn1.png)
 
 In the menu on the right side, click **Apply Configuration**.
@@ -46,7 +50,12 @@ Click **Next**.
 
 ![DSN](./images/next.png)
 
-In the next screen, you'll see a screen like the below. Demo System Next offers two steps: setup an AEP instance with schemas, mixins, datasets and more, and also, setup Launch properties for Web and Mobile. In this case, the setup of schemas, mixins and datasets has already been done so you can only create the Launch properties you'll use.
+In the next screen, you'll see a screen like the below. Demo System Next offers two steps: 
+
+- Setup an AEP instance with schemas, mixins, datasets and more
+- Setup Launch properties for Web and Mobile. 
+
+In this case, the setup of schemas, mixins and datasets has already been done so you can only create the Launch properties you'll use.
 
 ![DSN](./images/dsn5.png)
 
@@ -66,7 +75,11 @@ Click **Next**.
 
 ![DSN](./images/next.png)
 
-You'll then see this screen. Don't click any of the buttons as these options aren't available for the Team International Demo & Enablement environment.
+You'll then see this screen. 
+
+>[!IMPORTANT] 
+>
+>Don't click any of the buttons as these options aren't available for the Team International Demo & Enablement environment.
 
 ![DSN](./images/dsn9.png)
 

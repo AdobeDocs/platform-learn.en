@@ -11,21 +11,23 @@ activity:
 
 ## 18.4.1 Add Segment to Azure Event Hub Destination
 
-In this exercise you will add your segment **ldap - Luma Telco Sports Fan** to your **ldap-aep-enablement** Azure Event Hub destination.
+In this exercise you will add your segment **ldap - Citi Signal Sports Fan** to your **ldap-aep-enablement** Azure Event Hub destination.
 
-Go to [https://platform.adobe.com](https://platform.adobe.com) and navigate to **Destinations**, select **Cloud storage** and click the **Destinations** link in the Azure EventHubs card:
+Go to [https://platform.adobe.com](https://platform.adobe.com).
+
+Before you continue, you need to select a **sandbox**. The sandbox to select is named **--aepSandboxId--**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox. Go to **Destinations**. 
+
+![Data Ingestion](./images/sb2a.png)
+
+In **Destinations**, click **Browse**. You'll then see all available destinations. Locate your destination and click the **+** iocn as indicated below.
 
 ![5-01-select-destination.png](./images/5-01-select-destination.png)
 
-From the list of Event Hub destinations select your Event Hub, which looks like this: **ldap-aep-enablement**. In this case that is **mmeewis-aep-enablement**:
-
-![5-02-select-event-hub.png](./images/5-02-select-event-hub.png)
-
-Click **Activate**.
-
-![5-03-destination-activate.png](./images/5-03-destination-activate.png)
-
-Search for your segment using your ldap and select **ldap - Luma Telco Sports Fan** from the list of segments.
+You'll then see this. Search for your segment using your ldap and select **ldap - Citi Signal Sports Fan** from the list of segments.
 
 Click **Next**.
 
@@ -39,7 +41,7 @@ Profile based destinations let you pick any attribute (firstName, lastName, ...)
 
 Because your Azure Event Hub destination is a **segment** destination, select for example the field **--aepTenantId--.identification.ecid**. 
 
-Click **Add new field**, click browse schema and select the field **--aepTenantId--identification.ecid**.
+Click **Add new field**, click browse schema and select the field **--aepTenantId--identification.ecid** (delete any other field that would be displayed automatically).
 
 Click **Next**.
 

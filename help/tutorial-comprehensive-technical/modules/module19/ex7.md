@@ -132,7 +132,7 @@ Finally, click **Save**.
 
 ![Launch Setup](./images/democase6.png)
 
-You'll then see this:
+You'll then see this. Please note the component **Customer Insights from AEP** which showcases the available customer churn score that was calculated in Adobe Experience Platform inside the ServiceNow user interface.
 
 ![Launch Setup](./images/democase7.png)
 

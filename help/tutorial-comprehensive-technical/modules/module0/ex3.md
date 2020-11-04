@@ -47,7 +47,11 @@ In Environments, click the **Install** icon for the Development environment.
 
 ![DSN](./images/l3.png)
 
-In the popup, you need to select the tag. Don't copy all the code, only copy the url of the tag which is all text between the quotes.
+In the popup, you need to select the tag. 
+
+>[!IMPORTANT] 
+>
+>Don't copy all the code, only copy the url of the tag which is all text between the quotes.
 
 ![DSN](./images/l4.png)
 
@@ -72,7 +76,7 @@ In Environments, click the **Install** icon for the Development environment.
 
 ![DSN](./images/m3.png)
 
-In the popup, you need to select the tag. Don't copy all the code, only copy the url of the tag which is all text between the quotes.
+In the popup, copy the Environment File ID as indicated below. 
 
 ![DSN](./images/m4.png)
 
@@ -83,7 +87,7 @@ Paste this value in the **Create New Configuration ID** screen, in the field **L
 
 ![DSN](./images/m5.png)
 
-Next, you need to enter your Demo Profile information. This will be used on the website to simplify the **Create Account** flow. Fill out the fields as indicated in the screenshot. Please enter a real phone number and a real email address, as they will be used to send text messages and emails.
+Next, you need to enter your Demo Profile information. This will be used on the website to simplify the **Create Account** flow. Fill out the fields as indicated in the screenshot. Please enter a real phone number (including the + and your countrycode, for instance: +32473622044) and a real email address, as they will be used to send text messages and emails.
 
 ![DSN](./images/m5a.png)
 

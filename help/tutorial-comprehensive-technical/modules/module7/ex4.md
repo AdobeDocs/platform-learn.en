@@ -41,7 +41,7 @@ select /* enter your name */
 from   aep_demo_website_interactions e
       ,aep_demo_call_center_interactions c
       ,aep_demo_loyalty_data l
-where  e.--aepTenantId--.brand.brandName like 'Luma Telco'
+where  e.--aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.ecid = c.--aepTenantId--.identification.ecid
 and    l.--aepTenantId--.identification.ecid = e.--aepTenantId--.identification.ecid;

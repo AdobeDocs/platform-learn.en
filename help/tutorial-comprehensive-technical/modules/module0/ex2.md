@@ -37,7 +37,11 @@ Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additiona
 
 ![Name the Edge Configuration and save](./images/edgeconfig4.png)
 
-For **[!UICONTROL Sandbox]**, select **--aepSandboxId--**.
+For **[!UICONTROL Sandbox]**, select your sandbox name.
+
+>[!NOTE]
+>
+> You can find your IMS Org ID, Org Name and your Adobe Experience Platform sandbox name on your company's github repository that was set up by your Adobe contact.
 
 ![Name the Edge Configuration and save](./images/edgeconfig5.png)
 
