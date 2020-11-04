@@ -267,6 +267,30 @@ Click **Submit**.
 
 ![ServiceNow](./images/case20.png)
 
+## 19.4.5 Enable Adobe Experience Platform Ribbon on Consumer Overview
+
+You now need to run a script to ensure that a specific component will be shown on the Consumer Case Overview.
+
+In ServiceNow, in the Filter Navigator, enter the search term **Scripts - Background**. Click **Retrieved Update Sets**.
+
+![ServiceNow](./images/scr1.png)
+
+You'l then see this.
+
+![ServiceNow](./images/scr2.png)
+
+Copy the below code and paste it in the **Run Script** input form.
+
+```javascript
+var grSULSS = new GlideRecord('sys_ux_lib_source_script'); if (grSULSS.get('5acc97d956dc670d624ef4a31f70b919')) {   grSULSS.inner_components = "223be0881a4988fcbe7112c23bf93c75,38a40eb364f0ac980c697fa64444f1e8,c817fad3b052fbd2443137d58b9b5024,3f9425191bf9c41091bf0d8cdc4bcb2e";   grSULSS.update(); }
+```
+
+![ServiceNow](./images/scr3.png)
+
+Click **Run script**. You'll then see this.
+
+![ServiceNow](./images/scr4.png)
+
 You've now defined all the required components to visualize Adobe Experience Platform data in the ServiceNow User Interface, and in the other direction, to send case data from ServiceNow into Adobe Experience Platform.
 
 Next Step: [19.5 Setup your ServiceNow Flow](./ex5.md)
