@@ -43,7 +43,7 @@ Go to [https://public.aepdemo.net/](https://public.aepdemo.net/). Load and save 
 >
 >Please ensure you're using a Configuration ID that is ingesting data into this sandbox: --module18sandbox--
 
-Then, select your **ldap**, select the brand **Luma Telco** and go to the Luma Telco homepage:
+Then, select your **ldap**, select the brand **Citi Signal** and go to the Citi Signal homepage:
 
 ![6-02-start-luma-telco.png](./images/6-02-start-luma-telco.png)
 
@@ -51,30 +51,30 @@ When you open **Adobe Experience Platform X-RAY** you should be anonymous (you o
 
 ![6-03-start-luma-telco-xray.png](./images/6-03-start-luma-telco-xray.png)
 
-Switch back to Visual Studio Code and look at your **TERMINAL** tab, nothing changed. This is normal because our destination will only trigger when your profile will qualify for **Luma Telco Sports Fan**.
+Switch back to Visual Studio Code and look at your **TERMINAL** tab, nothing changed. This is normal because our destination will only trigger when your profile will qualify for **Citi Signal Sports Fan**.
 
 ![6-03b-visual-studio-code.png](./images/6-03b-visual-studio-code.png)
 
 
-## 18.6.3 Qualify for your Luma Telco Sports Fan segment
+## 18.6.3 Qualify for your Citi Signal Sports Fan segment
 
-Navigate to the **Sports** page once, and **do not reload or refresh it**. This action should qualify you for your **ldap - Luma Telco Sports Fan** segment. 
+Navigate to the **Sports** page once, and **do not reload or refresh it**. This action should qualify you for your **ldap - Citi Signal Sports Fan** segment. 
 
 ![6-04-luma-telco-nav-sports.png](./images/6-04-luma-telco-nav-sports.png)
 
 To verify, open another page to make sure that the X-Ray panel refreshes. If you would reload the **Sports** page to refresh the X-Ray panel, the segment qualification status would change and that is not what we want at this moment. 
 
-Instead open **BROADBAND DEALS** and open the X-Ray panel, you should now be a member of both the **Luma Telco Sports Fan**  and the **Homepage Visitor** segments. If you segment memberships are not yet updated in your X-Ray panel, reload the page.  
+Instead open **BROADBAND DEALS** and open the X-Ray panel, you should now be a member of both the **Citi Signal Sports Fan**  and the **Homepage Visitor** segments. If you segment memberships are not yet updated in your X-Ray panel, reload the page.  
 
 ![6-05-luma-telco-nav-broadband.png](./images/6-05-luma-telco-nav-broadband.png)
 
-Switch back to Visual Studio Code and look at your **TERMINAL** tab, you should see a list of segments for your specific **ECID**. This activation payload is delivered to your event hub as soon as you qualify for the **Luma Telco Sports Fan** streaming segment. Note that the segment name in the payload has been added by our Azure function because Adobe Experience Platform Real-time CDP only includes the segmentId.
+Switch back to Visual Studio Code and look at your **TERMINAL** tab, you should see a list of segments for your specific **ECID**. This activation payload is delivered to your event hub as soon as you qualify for the **Citi Signal Sports Fan** streaming segment. Note that the segment name in the payload has been added by our Azure function because Adobe Experience Platform Real-time CDP only includes the segmentId.
 
-When you take a closer look a the segment payload, you can see that **Homepage Visitor** is in status **existing** and **Luma Telco Sports Fan** is in status **realized**. 
+When you take a closer look a the segment payload, you can see that **Homepage Visitor** is in status **existing** and **Citi Signal Sports Fan** is in status **realized**. 
 
 A segment status of **realized** means that our profile is entering the segment. While the **existing** status means that our profile continues to be in the segment.
 
-Although this is our first activation, **Homepage Visitors** already is in status **existing**. The reason is that **Luma Telco Sports Fan** is triggering the activation because we are entering the segment. When a segment triggers an  activation, all segments for which our profile qualifies are included into the activation payload. The segments for which we already qualified before are listed with a status **existing** because our profile continues to be in the segment.
+Although this is our first activation, **Homepage Visitors** already is in status **existing**. The reason is that **Citi Signal Sports Fan** is triggering the activation because we are entering the segment. When a segment triggers an  activation, all segments for which our profile qualifies are included into the activation payload. The segments for which we already qualified before are listed with a status **existing** because our profile continues to be in the segment.
 
 ![6-06-vsc-activation-realized.png](./images/6-06-vsc-activation-realized.png)
 
@@ -100,13 +100,13 @@ Segment activations only happen when the segment's status changes:
 
 In the previous exercises you saw segment activations streamed to Azure Event Hub for anonymous profiles and as a consequence only the **ECID** was included as part of the identity map in the activation payload that was delivered to your Azure Event Hub function. In this last exercise you'll take a look at the activation payload for a known profile.
 
-Quit you browser completely and open Luma Telco again in an incognito window.
+Quit you browser completely and open Citi Signal again in an incognito window.
 
 Navigate to **Login/Register** and create a profile:
 
 ![6-10-create-profile.png](./images/6-10-create-profile.png)
 
-Navigate to the **Sports** page, this will make your known profile qualify for **Luma Telco Sports Fan**. After the page loaded, navigate to the home page and open X-Ray to validate your segment qualifications:
+Navigate to the **Sports** page, this will make your known profile qualify for **Citi Signal Sports Fan**. After the page loaded, navigate to the home page and open X-Ray to validate your segment qualifications:
 
 ![6-11-check-segment-qualif.png](./images/6-11-check-segment-qualif.png)
 
@@ -128,7 +128,7 @@ Payload detail:
 "39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
 "lastQualificationTime": "2020-08-31T15:25:36Z",
 "status": "realized",
-"segmentName": "mmeewis - Luma Telco Sports Fan"
+"segmentName": "mmeewis - Citi Signal Sports Fan"
 }
 }
 },

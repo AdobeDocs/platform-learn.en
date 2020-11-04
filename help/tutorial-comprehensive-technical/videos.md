@@ -37,8 +37,8 @@ activity:
 |:-------------|:---------------:|
 |Architecture whiteboard of Adobe Experience Platform| [VIDEO](https://video.tv.adobe.com/v/35266?quality=12&learn=on)|
 | Customer Journey Analytics - Omnichannel Customer Journey Analysis| [VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)|
-|Introduction to Luma Telco| [VIDEO](https://video.tv.adobe.com/v/35138?quality=12&learn=on)|
-|Introduction to Luma Insurance| [VIDEO](https://video.tv.adobe.com/v/35498?quality=12&learn=on)|
-|Introduction to Luma Retail| [VIDEO](https://video.tv.adobe.com/v/35137?quality=12&learn=on)|
+|Introduction to Citi Signal| [VIDEO](https://video.tv.adobe.com/v/35138?quality=12&learn=on)|
+|Introduction to MUTUAL365| [VIDEO](https://video.tv.adobe.com/v/35498?quality=12&learn=on)|
+|Introduction to Luma| [VIDEO](https://video.tv.adobe.com/v/35137?quality=12&learn=on)|
 
 [Go Back to All Modules](./overview.md)

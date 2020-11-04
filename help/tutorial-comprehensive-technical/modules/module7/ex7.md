@@ -67,7 +67,7 @@ A POST call to [/query/queries] with the following payload will trigger the exec
     "name" : "mmeewis - QS API demo - Citi Signal - Product Views Per Day",
     "description": "mmeewis - QS API demo - Citi Signal - Product Views Per Day",
     "dbName": "--aepSandboxId--",
-    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where _experienceplatform.brand.brandName IN ('Luma Telco', 'Citi Signal') and _experienceplatform.productData.productInteraction = 'productView' group by Day limit 10"
+    "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal') and --aepTenantId--.productData.productInteraction = 'productView' group by Day limit 10"
 }
 ```
 
@@ -82,7 +82,7 @@ When successful the POST call will return the following response:
     "isInsertInto": false,
     "request": {
         "dbName": "all",
-        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where _experienceplatform.brand.brandName IN ('Luma Telco', 'Citi Signal') and _experienceplatform.productData.productInteraction = 'productView' group by Day limit 10",
+        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal') and --aepTenantId--.productData.productInteraction = 'productView' group by Day limit 10",
         "name": "mmeewis - QS API demo - Citi Signal - Product Views Per Day",
         "description": "mmeewis - QS API demo - Citi Signal - Product Views Per Day"
     },
@@ -152,7 +152,7 @@ It might take a couple of minutes before the query starts executing, it will cha
     "isInsertInto": false,
     "request": {
         "dbName": "all",
-        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where _experienceplatform.brand.brandName IN ('Luma Telco', 'Citi Signal') and _experienceplatform.productData.productInteraction = 'productView' group by Day limit 10",
+        "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from aep_demo_website_interactions where --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal') and --aepTenantId--.productData.productInteraction = 'productView' group by Day limit 10",
         "name": "mmeewis - QS API demo - Citi Signal - Product Views Per Day",
         "description": "mmeewis - QS API demo - Citi Signal - Product Views Per Day"
     },

@@ -13,7 +13,7 @@ activity:
 
 You'll create a simple segment:
 
-- **Luma Telco Sports Fan** for which customer profiles will qualify when they visit the **Sports** page of the Luma Telco brand. 
+- **Citi Signal Sports Fan** for which customer profiles will qualify when they visit the **Sports** page of the Citi Signal brand. 
 
 ### Good to know
 
@@ -43,7 +43,7 @@ Go to [https://platform.adobe.com](https://platform.adobe.com) and navigate to *
 
 Let's start with adding the profile email address expression to make sure you're only qualifying for your own segments:
 
-Name your segment **ldap - Luma Telco Sports Fan** and add the page name experience event:
+Name your segment **ldap - Citi Signal Sports Fan** and add the page name experience event:
 
 Click on **Events**, and drag and drop **XDM ExperienceEvent > Web > Web page details > Name**. Enter **Sports** as the value:
 
@@ -58,7 +58,7 @@ Drag and drop **XDM ExperienceEvent > --aepTenantIdSchema-- > Brand > ldap**. En
 The PQL of your segment looks like:
 
 ```code
-select _Any1 from xEvent where _Any1.web.webPageDetails.name.equals("Sports", false) and _Any1._experienceplatform.brand.ldap.equals("ldap", false)
+select _Any1 from xEvent where _Any1.web.webPageDetails.name.equals("Sports", false) and _Any1.--aepTenantId--.brand.ldap.equals("ldap", false)
 ```
 
 Next Step: [18.4 Activate Segment](./ex4.md)

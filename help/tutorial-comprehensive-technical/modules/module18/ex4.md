@@ -11,7 +11,7 @@ activity:
 
 ## 18.4.1 Add Segment to Azure Event Hub Destination
 
-In this exercise you will add your segment **ldap - Luma Telco Sports Fan** to your **ldap-aep-enablement** Azure Event Hub destination.
+In this exercise you will add your segment **ldap - Citi Signal Sports Fan** to your **ldap-aep-enablement** Azure Event Hub destination.
 
 Go to [https://platform.adobe.com](https://platform.adobe.com) and navigate to **Destinations**, select **Cloud storage** and click the **Destinations** link in the Azure EventHubs card:
 
@@ -25,7 +25,7 @@ Click **Activate**.
 
 ![5-03-destination-activate.png](./images/5-03-destination-activate.png)
 
-Search for your segment using your ldap and select **ldap - Luma Telco Sports Fan** from the list of segments.
+Search for your segment using your ldap and select **ldap - Citi Signal Sports Fan** from the list of segments.
 
 Click **Next**.
 

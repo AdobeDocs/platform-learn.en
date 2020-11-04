@@ -57,7 +57,7 @@ When a customer clicks the **Get Quote** button, this data is collected:
       },
       "eventType": "carInsuranceGetQuote",
       "timestamp": "2020-03-12T22:55:26Z",
-      "_experienceplatform": {
+      "--aepTenantId--": {
         "carinsurance": {
           "insuranceKm": "+50000",
           "insuranceAge": "37",
@@ -115,7 +115,7 @@ When a customer purchases car insurance, this data is collected:
       },
       "eventType": "carInsurancePurchase",
       "timestamp": "2020-03-12T22:56:30Z",
-      "_experienceplatform": {
+      "--aepTenantId--": {
         "carinsurance": {
           "insurancePurchase": "yes"
         },

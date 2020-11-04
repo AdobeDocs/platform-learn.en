@@ -83,7 +83,7 @@ Back in module 7, [Query Service](./../../modules/module7/query-service.md), you
 all=> 
 all=> select --aepTenantId--.productData.productInteraction, count(*)
 all-> from   aep_demo_website_interactions
-all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+all-> where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 all-> and    --aepTenantId--.productData.productInteraction is not null
 all-> group  by --aepTenantId--.productData.productInteraction;
 
