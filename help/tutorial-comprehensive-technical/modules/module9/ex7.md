@@ -33,7 +33,7 @@ Click **Load Configuration**. After clicking **Load Configuration**, scroll down
 
 ![Launch Setup](./images/cfgid2.png)
 
-Go back to Google Tag Manager. First of all, copy the code between the **<script>** and the **</script>** tags as indicated below. Don't copy all the code as that will generate errors and will cause your GTM configuration to not load correctly.
+Go back to Google Tag Manager. First of all, copy the code between the **script** tags as indicated below. Don't copy all the code as that will generate errors and will cause your GTM configuration to not load correctly.
 
 ![Launch Setup](./images/gtmjs1.png)
 
