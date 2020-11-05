@@ -4,7 +4,7 @@ seo-title: Adobe Experience Platform Tutorials
 description: Learn about Adobe Experience Platform
 ---
 
-# Overview
+# Adobe Experience Platform Tutorials
 
 Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences. Use these videos and tutorials to learn the many components of Experience Platform.
 
@@ -13,11 +13,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 * **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
     *Get hands-on with multiple Platform features with this multi-page tutorial*
-* **[Business Value of Experience Platform and Magento Commerce (Video)](/help/experience-cloud/business-value-of-platform-and-magento.md)**
+* **[Business Value of Experience Platform and Magento Commerce (Video)](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)**
     *Power intelligent commerce with Platform and Magento*
-* **[Business Value of Attribution AI (Video)](/help/intelligent-services/business-value-of-attribution-ai.md)**
+* **[Business Value of Attribution AI (Video)](/help/platform/intelligent-services/business-value-of-attribution-ai.md)**
     *Measure and optimize marketing and advertising spend*
-* **[Business Value of Customer AI (Video)](/help/intelligent-services/business-value-of-customer-ai.md)**
+* **[Business Value of Customer AI (Video)](/help/platform/intelligent-services/business-value-of-customer-ai.md)**
     *Enrich customer profiles with AI-based propensities*
 
 ## Staff Picks

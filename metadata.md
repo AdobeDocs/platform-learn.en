@@ -1,6 +1,7 @@
 ---
-cloud: experience-cloud
-product: adobe experience platform
+cloud: experience platform
+product: experience platform
+solution: Experience Platform
 solution-title: Documentation
 solution-hub-url: https://docs.adobe.com/content/help/en/experience-platform/landing/home.html
 getting-started-title: Experience League

@@ -315,7 +315,7 @@ Explain that we are joining datasets together, in this case we join our `aep_dem
 **SQL**
 
 ```sql
-select r.*,
+select distinct r.*,
        c.--aepTenantId--.callDetails.callFeeling,
        c.--aepTenantId--.callDetails.callTopic,
        c.--aepTenantId--.callDetails.contractCancelled

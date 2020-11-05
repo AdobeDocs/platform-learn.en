@@ -1,7 +1,7 @@
 ---
 user-guide-title: Comprehensive Technical Tutorial for Adobe Experience Platform
-breadcrumb-title: Platform Comprehensive Tutorial
-user-guide-url: /content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html
+breadcrumb-title: Comprehensive Technical Tutorial
+user-guide-description: A hands-on tutorial covering many aspects of Platform, including connections to third-party systems.
 audience: all
 ---
 
@@ -128,10 +128,6 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module13/summary.md)
 + 14 - Offer Decisioning {#module14}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module14/offer-decisioning.md)
-  + [14.1 Offer Decisioning 101](/help/tutorial-comprehensive-technical/modules/module14/ex1.md)
-  + [14.2 Configure your Offers and Offer Activity](/help/tutorial-comprehensive-technical/modules/module14/ex2.md)
-  + [14.3 Test your Offer Activity](/help/tutorial-comprehensive-technical/modules/module14/ex3.md)
-  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module14/summary.md)
 + 15 - Data Science Workspace - Car Insurance Sales Propensity {#module15}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
   + [15.1 Introduction to MUTUAL365](/help/tutorial-comprehensive-technical/modules/module15/ex1.md)

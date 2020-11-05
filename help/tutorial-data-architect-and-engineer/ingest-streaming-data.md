@@ -1,5 +1,6 @@
 ---
 title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+breadcrumb-title: Ingest streaming data
 description: In this lesson, you will stream data into Experience Platform using the Web SDK.
 feature: data ingestion
 topics: 
@@ -89,14 +90,13 @@ To create your [!UICONTROL Edge Configuration]:
 
 On the next screen you create the environment of the config. Here is where you specify where you want to send data. To send data to Experience Platform only, do the following:
 
-1. Uncheck the **[!UICONTROL ID Sync Enabled]** box. This field enables syncing with third parties, which is useful for Audience Manager, Ad Cloud, Real-time Customer Data Platform, but is not needed in our Platform-only implementation
 1. Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additional fields
 1. For **[!UICONTROL Sandbox]**, select `Luma Tutorial`
 1. For **[!UICONTROL Streaming Inlet]**, select `Luma Web Events Source`
 1. For **[!UICONTROL Event Dataset]**, select `Luma Web Events Dataset`
 1. If you use other Adobe applications, feel free to explore the other sections to see which information is required in the Edge Configuration of these other solutions. Remember, Web SDK was developed not only to stream data into Experience Platform, but also to replace all previous JavaScript libraries used by other Adobe applications. The Edge Configuration is used to specify the account details of each application to which you want to send the data.
 1. Click the **[!UICONTROL Save]** button to save your configuration
-    ![Name the Edge Configuration and save](assets/websdk-edgeConfig-addEnvironment.png)
+    ![Configure the Edge Configuration and save](assets/websdk-edgeConfig-addEnvironment.png)
 
 Once the Edge Configuration has saved, on the resulting screen you will notice that three environments have been created for Development, Staging, and Production and that additional Development environments can be added:
     ![Each Edge Configuration can have multiple environments](assets/websdk-edgeConfig-environments.png)
@@ -390,6 +390,11 @@ Now that we have captured the CRM Id value, we need to associate it with a speci
 1. As the **[!UICONTROL Extension]**, select **[!UICONTROL AEP Web SDK]**
 1. As the **[!UICONTROL Data Element Type]**, select **[!UICONTROL Identity Map]**
 1. As the Namespace, enter `lumaCRMId`, which is the [!UICONTROL Identity Symbol] we created in an earlier lesson
+
+   >[!WARNING]
+   >
+   >The AEP Web SDK extension version 2.2 allows you to select Namepsace from a pre-populated dropdown using the actual values in your Platform account. Unfortunately, this feature is not yet "sandbox aware" and thus the `lumaCRMId` value may not appear in the dropdown. This may prevent you from completing this exercise. We will post a workaround once confirmed.
+
 1. As the **[!UICONTROL ID]**, click the icon to open the data element selection modal and choose your `CRM Id` data element
 1. As the **[!UICONTROL Authenticated State]**, select **[!UICONTROL Authenticated]**
 1. Leave **[!UICONTROL Primary]** _unchecked_. Since the CRM Id is not present for most visitors to the Luma website, you definitely _do not want to override the ECID as the primary identifier_. It would be a very rare use case to use anything other than the ECID as the primary identifier. Usually I don't mention the default settings in these instructions, but I am calling this one out to help you avoid headaches later on in your own implementation.
