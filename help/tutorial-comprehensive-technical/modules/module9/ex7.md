@@ -23,6 +23,8 @@ You now see two code fragments that need to be implemented on your Platform Demo
 
 You'll need to update your Configuration ID settings and enter those two code fragments on the **Update Configuration ID** page of the AEP Demo website Admin pages.
 
+## GTM Head Tag
+
 Go to [https://public.aepdemo.net/admin_configuration_update.html](https://public.aepdemo.net/admin_configuration_update.html).
 
 You'll then see this:
@@ -42,6 +44,8 @@ Go back to the **Update Configuration ID** screen and paste the code that you co
 ![Launch Setup](./images/cfgid3.png)
 
 Next, go back to Google Tag Manager.
+
+## GTM Body Tag
 
 In the second code fragment, copy the URL of the iFrame src. Make sure you copy everything between the brackets as indicated in the screenshot:
 
