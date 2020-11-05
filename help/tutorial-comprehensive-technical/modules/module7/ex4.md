@@ -4,7 +4,7 @@ description: Query Service - Power BI/Tableau
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 7.4 Power BI/Tableau

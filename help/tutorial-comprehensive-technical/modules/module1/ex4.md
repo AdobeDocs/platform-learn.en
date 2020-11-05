@@ -4,7 +4,7 @@ description: Foundation - Setup of Adobe Experience Platform Launch and the Web 
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 1.4 Client-side Web Data Collection

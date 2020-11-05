@@ -4,7 +4,7 @@ description:
 kt: 5342
 audience: 
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # (Optional) 6.4: How to create your own email in Adobe Campaign

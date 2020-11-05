@@ -4,7 +4,7 @@ description: Journey Orchestration - External Weather API, SMS Action & more
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 12. Journey Orchestration - External Weather API, SMS Action & more

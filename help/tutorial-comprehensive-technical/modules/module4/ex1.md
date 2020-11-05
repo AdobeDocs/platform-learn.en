@@ -4,7 +4,7 @@ description: Voice Assistant - Amazon Alexa - Set up an Alexa Developer Account
 kt: 5342
 audience: Application Developer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 4.1 Set up an Alexa Developer Account

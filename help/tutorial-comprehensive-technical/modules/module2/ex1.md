@@ -4,7 +4,7 @@ description: Foundation - Data Ingestion - From unknown to known on the website
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 2.1 - From unknown to known on the website

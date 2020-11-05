@@ -4,7 +4,7 @@ description: Segment Activation to Microsoft Azure Event Hub
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 18. Segment Activation to Microsoft Azure Event Hub

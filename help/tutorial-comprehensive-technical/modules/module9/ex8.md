@@ -4,7 +4,7 @@ description: Data Ingestion using Google Tag Manager and Google Analytics - Veri
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 9.8 Verify Data Ingestion from website into Platform

@@ -4,7 +4,7 @@ description: Connect Dynamics to Adobe Experience Platform via RTCDP and Journey
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 17.2 Connect Dynamics to Adobe Experience Platform via RTCDP and Journey Orchestration

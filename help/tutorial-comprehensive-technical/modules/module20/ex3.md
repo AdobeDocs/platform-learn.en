@@ -4,7 +4,7 @@ description: In this exercise you'll continue building yuor Luma bot by adding c
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 20.3 Build your Luma Bot - Cloud Functions

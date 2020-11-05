@@ -4,7 +4,7 @@ description: In this exercise you'll use Journey Orchestration to trigger an ema
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 20.4 Use Journey Orchestration to trigger an email follow up after interacting with your chatbot

@@ -4,7 +4,7 @@ description:
 kt: 5342
 audience: 
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 6.3 Update your Configuration ID and Test your Journey

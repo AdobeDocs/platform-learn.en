@@ -4,7 +4,7 @@ description: Data Science Workspace - Data Exploration and Transformation
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 8.1 Data Exploration and Transformation

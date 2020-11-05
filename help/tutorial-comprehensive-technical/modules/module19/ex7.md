@@ -4,7 +4,7 @@ description: Adobe Experience Platform and ServiceNow - Setup your ServiceNow Fl
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 19.7 End-to-end Demo

@@ -4,7 +4,7 @@ description: Journey Orchestration
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 6. Journey Orchestration

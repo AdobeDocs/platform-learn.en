@@ -4,7 +4,7 @@ description: Real-time CDP - Build a segment and take action - Send your segment
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 11.6 Take Action: send your segment to Adobe Target

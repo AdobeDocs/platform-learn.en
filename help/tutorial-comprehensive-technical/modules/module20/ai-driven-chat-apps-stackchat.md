@@ -4,7 +4,7 @@ description: In this tutorial, you'll build an AI-driven chatbot deploy it to th
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 20. AI-Driven Chat Apps & Live Chat powered by Stackchat

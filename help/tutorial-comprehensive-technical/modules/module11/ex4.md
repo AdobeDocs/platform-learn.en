@@ -4,7 +4,7 @@ description: Real-time CDP - Build a segment and take action - Send your segment
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager (AAM)

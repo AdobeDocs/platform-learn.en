@@ -4,7 +4,7 @@ description: In this exercise you'll test the WeChat Integration
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 20.8 Test the WeChat Integration (Optional)

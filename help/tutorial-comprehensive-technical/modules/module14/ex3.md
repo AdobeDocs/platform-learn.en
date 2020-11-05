@@ -4,7 +4,7 @@ description: Offer Decisioning - Test your Offer Activity
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 

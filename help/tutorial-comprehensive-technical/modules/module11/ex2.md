@@ -4,7 +4,7 @@ description: Real-time CDP - Build a segment and take action - Configure an Adve
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 11.2 Configure an Advertising Destination like Google DV360

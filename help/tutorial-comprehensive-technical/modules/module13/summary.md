@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Summary
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # Summary & benefits

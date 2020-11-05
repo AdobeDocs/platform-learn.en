@@ -4,7 +4,7 @@ description: Foundation - Data Ingestion - Configure Schemas and Set Identifiers
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 2.2 Configure Schemas and Set Identifiers

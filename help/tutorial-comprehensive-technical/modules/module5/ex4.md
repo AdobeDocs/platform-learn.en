@@ -4,7 +4,7 @@ description: Extract, Transform, Load data using a 3rd party ETL-tool - Ingest 2
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 5.4 Ingest 2nd- and 3rd-party data into Adobe Experience Platform

@@ -4,7 +4,7 @@ description: Data Science Workspace - Churn Prediction Model - Churn Prediction 
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 10.2 Churn Prediction: Data Preparation

@@ -4,7 +4,7 @@ description: In this exercise, you'll configure the integration between Stackcha
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 20.5 Configure the integration between Stackchat and Adobe Experience Platform

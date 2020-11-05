@@ -4,7 +4,7 @@ description: Adobe Experience Platform and ServiceNow - Setup your ServiceNow UI
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 19.4 Setup your ServiceNow UI

@@ -4,7 +4,7 @@ description: Data Science Workspace - Scoring and Consumption of Insights
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 8.4 Scoring and Consumption of Insights

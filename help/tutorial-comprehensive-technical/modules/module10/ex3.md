@@ -4,7 +4,7 @@ description: Data Science Workspace - Churn Prediction Model - Feature Engineeri
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 10.3 Feature Engineering and Model Building

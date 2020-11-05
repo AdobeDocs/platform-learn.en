@@ -4,7 +4,7 @@ description: Voice Assistant - Amazon Alexa - Define your Alexa skill
 kt: 5342
 audience: Application Developer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 4.2: Define your Alexa skill
