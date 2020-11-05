@@ -35,8 +35,6 @@ Click **Load Configuration**. After clicking **Load Configuration**, scroll down
 
 ![Launch Setup](./images/cfgid2.png)
 
-Go back to Google Tag Manager. First of all, copy the code between the tags as indicated below. Don't copy all the code as that will generate errors and will cause your GTM configuration to not load correctly.
-
 ![Launch Setup](./images/gtmjs1.png)
 
 Go back to the **Update Configuration ID** screen and paste the code that you copied in the field **GTM Head Tag**.
