@@ -16,7 +16,7 @@ activity:
 
 ## 14.3.2 Test your Offer Activity with the API
 
-Download [this Postman Collection for Offer Decisoning](./../../assets/postman/postman_module14_offer-decisioning.zip) to your desktop and unzip it. You'll then have this:
+Download [this Postman Collection for Offer Decisioning](./../../assets/postman/postman_module14_offer-decisioning.zip) to your desktop and unzip it. You'll then have this:
 
 ![OD API](./images/unzip.png)
 
