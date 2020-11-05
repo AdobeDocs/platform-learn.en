@@ -4,7 +4,7 @@ description: Voice Assistant - Amazon Alexa - Use your Alexa skill
 kt: 5342
 audience: Application Developer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # Exercise 4.3: Use your Alexa skill

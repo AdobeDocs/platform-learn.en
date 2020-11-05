@@ -4,7 +4,7 @@ description: In this exercise you'll create your Stackchat account.
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 20.1 Onboard to Stackchat

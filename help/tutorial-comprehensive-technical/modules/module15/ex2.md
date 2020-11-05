@@ -4,7 +4,7 @@ description: Data Science Workspace - Interact with data in Adobe Experience Pla
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment

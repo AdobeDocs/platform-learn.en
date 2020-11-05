@@ -4,7 +4,7 @@ description: Voice Assistant - Summary
 kt: 5342
 audience: Application Developer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # Summary & benefits

@@ -4,7 +4,7 @@ description: Ingest & Analyze Google Analytics data in Adobe Experience Platform
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 16.4 Load data from BigQuery into Adobe Experience Platform

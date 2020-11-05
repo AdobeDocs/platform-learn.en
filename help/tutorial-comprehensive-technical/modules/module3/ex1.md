@@ -4,7 +4,7 @@ description: Foundation - Real-time Customer Profile - From unknown to known on 
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 3.1 - From unknown to known on the website

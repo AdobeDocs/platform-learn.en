@@ -4,7 +4,7 @@ description: Extract, Transform, Load data using a 3rd party ETL-tool - Ingest O
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 5.3 Ingest Offline Order Events into Adobe Experience Platform

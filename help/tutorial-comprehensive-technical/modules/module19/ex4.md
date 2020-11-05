@@ -4,7 +4,7 @@ description: Adobe Experience Platform and ServiceNow - Setup your ServiceNow UI
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 19.4 Setup your ServiceNow UI
@@ -271,7 +271,7 @@ Click **Submit**.
 
 You now need to run a script to ensure that a specific component will be shown on the Consumer Case Overview.
 
-In ServiceNow, in the Filter Navigator, enter the search term **Scripts - Background**. Click **Retrieved Update Sets**.
+In ServiceNow, in the Filter Navigator, enter the search term **Scripts - Background**. Click **Scripts - Background**.
 
 ![ServiceNow](./images/scr1.png)
 

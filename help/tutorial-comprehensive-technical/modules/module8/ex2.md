@@ -4,7 +4,7 @@ description: Data Science Workspace - Model Authoring and Operationalization
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 8.2 Model Authoring and Operationalization

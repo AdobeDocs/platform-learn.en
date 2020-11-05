@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Data preparation in Analysis Workspace
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 13.4 Data preparation in Analysis Workspace

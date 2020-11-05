@@ -4,7 +4,7 @@ description: Adobe Experience Platform and ServiceNow
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 19. Adobe Experience Platform and ServiceNow: connecting service to marketing and sales

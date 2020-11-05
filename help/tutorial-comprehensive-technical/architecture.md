@@ -4,7 +4,7 @@ description: Architecture
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, Data Scientist, Orchestration Engineer, BI Expert, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # Architecture

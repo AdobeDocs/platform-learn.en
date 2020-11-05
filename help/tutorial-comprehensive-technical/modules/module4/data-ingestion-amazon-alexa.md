@@ -4,7 +4,7 @@ description: Voice Assistant - Amazon Alexa
 kt: 5342
 audience: Developer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 4. Voice Assistant - Amazon Alexa

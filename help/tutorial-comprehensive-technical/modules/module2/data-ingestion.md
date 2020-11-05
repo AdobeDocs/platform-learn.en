@@ -4,7 +4,7 @@ description: Foundation - Data Ingestion
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 2. Foundation - Data Ingestion

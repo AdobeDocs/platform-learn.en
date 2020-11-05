@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Create a Data View
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 13.3 Create a Data View

@@ -4,7 +4,7 @@ description: Adobe Experience Platform and ServiceNow - Install and configure th
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 19.2 Install and configure the integration between ServiceNow and Adobe Experience Platform through Adobe I/O

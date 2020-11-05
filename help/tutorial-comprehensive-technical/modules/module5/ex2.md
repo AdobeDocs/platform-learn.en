@@ -4,7 +4,7 @@ description: Extract, Transform, Load data using a 3rd party ETL-tool - Connect 
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # Exercise 5.2 - Connect Informatica to your AWS S3 bucket

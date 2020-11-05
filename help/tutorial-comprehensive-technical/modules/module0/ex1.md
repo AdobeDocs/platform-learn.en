@@ -4,7 +4,7 @@ description: Getting Started - Use Demo System Next to setup your Launch propert
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 0.1 Use Demo System Next to setup your Launch property

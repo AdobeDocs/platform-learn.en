@@ -4,7 +4,7 @@ description: Data Ingestion using Google Tag Manager and Google Analytics - Conf
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 9.5 Configure Google Tag Manager Tags & Triggers

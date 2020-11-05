@@ -4,7 +4,7 @@ description: Adobe Experience Platform and ServiceNow - Setup your ServiceNow Fl
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 19.7 End-to-end Demo
@@ -142,7 +142,7 @@ Go back to your website. Open your Xray panel and have a look at your Experience
 
 ![Launch Setup](./images/demo21.png)
 
-Next Step: [19.7 End-to-end Demo](./ex7.md)
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 19](./call-center-servicenow.md)
 

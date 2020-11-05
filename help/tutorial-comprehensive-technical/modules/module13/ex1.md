@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Customer Journey Analytics 101
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 13.1 Customer Journey Analytics 101

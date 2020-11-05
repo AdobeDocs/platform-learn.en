@@ -4,7 +4,7 @@ description: Foundation - Real-time Customer Profile - Create a segment - API
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 3.5 - Create a segment - API

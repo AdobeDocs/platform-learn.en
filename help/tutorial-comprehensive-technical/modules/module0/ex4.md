@@ -4,7 +4,7 @@ description: Getting Started - Use the website
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 0.4 Use the website

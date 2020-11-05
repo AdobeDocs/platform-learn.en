@@ -4,7 +4,7 @@ description: Getting Started - Create your Configuration ID
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 0.3 Create your Enablement Configuration ID

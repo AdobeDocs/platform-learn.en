@@ -4,7 +4,7 @@ description: Query Service - Getting Started
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 7.1 Getting Started

@@ -4,7 +4,7 @@ description: Data Ingestion using Google Tag Manager and Google Analytics - Impl
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 9.7 Implement Google Tag Manager Tag on Platform Demo website
@@ -33,7 +33,7 @@ Click **Load Configuration**. After clicking **Load Configuration**, scroll down
 
 ![Launch Setup](./images/cfgid2.png)
 
-Go back to Google Tag Manager. First of all, copy the code between the **`<script>`** and the **`</script>`** tags as indicated below. Don't copy all the code as that will generate errors and will cause your GTM configuration to not load correctly.
+Go back to Google Tag Manager. First of all, copy the first code fragment.
 
 ![Launch Setup](./images/gtmjs1.png)
 
@@ -43,11 +43,11 @@ Go back to the **Update Configuration ID** screen and paste the code that you co
 
 Next, go back to Google Tag Manager.
 
-In the second code fragment, copy the URL of the iFrame src. Make sure you copy everything between the brackets as indicated in the screenshot:
+Copy the second code fragment.
 
 ![Launch Setup](./images/gtmjs2.png)
 
-Go back to the **Update Configuration ID** screen and paste the iFrame src URL that you copied into the field **GTM Body Tag**. Make sure to only paste the iFrame src URL as indicated in the below screenshot.
+Go back to the **Update Configuration ID** screen and paste the code that you copied in the field **GTM Body Tag**.
 
 ![Launch Setup](./images/cfgid4.png)
 

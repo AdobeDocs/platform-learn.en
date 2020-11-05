@@ -4,7 +4,7 @@ description: Extract, Transform, Load data using a 3rd party ETL-tool
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 5. Extract, Transform, Load data using a 3rd party ETL-tool

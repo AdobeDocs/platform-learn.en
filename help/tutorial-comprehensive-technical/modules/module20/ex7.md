@@ -4,7 +4,7 @@ description: In this exercise you'll connect your chatbot to Facebook Messenger
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 20.7 Connect your chatbot to Facebook Messenger

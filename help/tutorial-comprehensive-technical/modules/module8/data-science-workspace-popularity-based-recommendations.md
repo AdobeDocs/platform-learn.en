@@ -4,7 +4,7 @@ description: Data Science Workspace - Popularity Based Recommendations
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 8. Data Science Workspace - Popularity Based Recommendations

@@ -4,7 +4,7 @@ description: Query Service - Summary
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # Summary & benefits

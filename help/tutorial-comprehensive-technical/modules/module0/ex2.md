@@ -4,7 +4,7 @@ description: Getting Started - Install the Chrome extension for the Experience L
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 0.2 Create your Edge Configuration ID

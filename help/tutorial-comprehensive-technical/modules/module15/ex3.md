@@ -4,7 +4,7 @@ description: Data Science Workspace - Car Insurance Sales Propensity - Operation
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 15.3 Operationalize your model using a Recipe

@@ -4,7 +4,7 @@ description: Data Ingestion using Google Tag Manager and Google Analytics - Crea
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 9.2.0 Create a Google Account

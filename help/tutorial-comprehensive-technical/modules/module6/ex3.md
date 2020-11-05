@@ -4,7 +4,7 @@ description:
 kt: 5342
 audience: 
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 6.3 Update your Configuration ID and Test your Journey
@@ -31,7 +31,7 @@ In exercise 6.1, you created your event and collected the EventID. You can find 
 
 ![Demo](./images/payloadeventID.png)
 
-In this example, the `eventID` is `71d98ef80980453e03a3bfc6aab57d15663784265a9363c097b6b9608f1a54bf `.
+In this example, the `eventID` is `71d98ef80980453e03a3bfc6aab57d15663784265a9363c097b6b9608f1a54bf`.
 
 Go back to the **Update Configuration ID** screen and paste the code that you copied in the field **EventID - Account Creation**.
 
