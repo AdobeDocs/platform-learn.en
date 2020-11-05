@@ -22,6 +22,7 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 - Apache Kafka
 - Postman
 - Informatica
+- ServiceNow
 - Stackchat
 - ...
 

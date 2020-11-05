@@ -64,7 +64,7 @@ You'll now see all fields of the Placement:
 - **Content Type** of the Placement, which can be **Text**, **HTML**, **Image** or **JSON**
 - **Description** field allowing to add additional description for the Placement
 
-## 14.1.4 Rules
+## 14.1.4 Decision Rules
 
 A Rule (also called eligibility rule) is the equivalent of a **Segment**. A Rule is in fact a Segment itself with the only difference that a Rule can be used with an Offer to provide the best offer to a profile in Adobe Experience Platform.
 

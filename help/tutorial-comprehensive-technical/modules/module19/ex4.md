@@ -271,7 +271,7 @@ Click **Submit**.
 
 You now need to run a script to ensure that a specific component will be shown on the Consumer Case Overview.
 
-In ServiceNow, in the Filter Navigator, enter the search term **Scripts - Background**. Click **Retrieved Update Sets**.
+In ServiceNow, in the Filter Navigator, enter the search term **Scripts - Background**. Click **Scripts - Background**.
 
 ![ServiceNow](./images/scr1.png)
 
