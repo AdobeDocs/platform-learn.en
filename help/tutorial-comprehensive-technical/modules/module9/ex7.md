@@ -35,8 +35,6 @@ Click **Load Configuration**. After clicking **Load Configuration**, scroll down
 
 ![Launch Setup](./images/cfgid2.png)
 
-![Launch Setup](./images/gtmjs1.png)
-
 Go back to the **Update Configuration ID** screen and paste the code that you copied in the field **GTM Head Tag**.
 
 ![Launch Setup](./images/cfgid3.png)
