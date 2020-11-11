@@ -16,14 +16,14 @@ By making the documentation reusable, **Environment Variables** were introduced 
 
 | Name     | Key | 
 |:-------------:| :---------------:|
-| AEP IMS Org ID         | --aepImsOrgId-- |
-| AEP Tenant ID         | --aepTenantId-- |
-| DCS Inlet ID         | --dcsInletId-- | 
-| Back4App Application ID        | --parseAppKey-- | 
-| Back4App Javascript Key       | --parseJavaScriptKey-- | 
-| X-ray Adobe I/O Profile URL       | --jwtProfile-- | 
-| X-ray Adobe I/O Experience Event URL       | --jwtExperienceEvent-- | 
-| X-ray Adobe I/O Segment URL       | --jwtSegment-- | 
+| AEP IMS Org ID         | `--aepImsOrgId--` |
+| AEP Tenant ID         | `--aepTenantId--` |
+| DCS Inlet ID         | `--dcsInletId--` | 
+| Back4App Application ID        | `--parseAppKey--` | 
+| Back4App Javascript Key       | `--parseJavaScriptKey--` | 
+| X-ray Adobe I/O Profile URL       | `--jwtProfile--` | 
+| X-ray Adobe I/O Experience Event URL       | `--jwtExperienceEvent--` | 
+| X-ray Adobe I/O Segment URL       | `--jwtSegment--` | 
 
 This results in the documentation looking like this, which gives you a lot of manual copy and paste work to replace those variables by their real values.
 

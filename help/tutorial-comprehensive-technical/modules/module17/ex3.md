@@ -213,7 +213,7 @@ For the **EMAIL** Parameter, click the pencil/edit icon.
 
 ![JO](./images/createaction-09.png)
 
-Search for **email** and select the email field under **ldapAccountCreationEvent**.--aepTenantId--.accountcreation.email.
+Search for **email** and select the email field under **ldapAccountCreationEvent**.``--aepTenantId--``.accountcreation.email.
 
 ![JO](./images/createaction-10.png)
 
@@ -221,7 +221,7 @@ For the **FNAME** Parameter, click the pencil/edit icon.
 
 ![JO](./images/createaction-09b.png)
 
-Search for **firstName** and select the email field under **ldapAccountCreationEvent**.--aepTenantId--.accountcreation.firstName.
+Search for **firstName** and select the email field under **ldapAccountCreationEvent**.``--aepTenantId--``.accountcreation.firstName.
 
 ![JO](./images/createaction-10b.png)
 
@@ -229,7 +229,7 @@ For the **LNAME** Parameter, click the pencil/edit icon.
 
 ![JO](./images/createaction-09c.png)
 
-Search for **lastName** and select the email field under **ldapAccountCreationEvent**.--aepTenantId--.accountcreation.lastName.
+Search for **lastName** and select the email field under **ldapAccountCreationEvent**.``--aepTenantId--``.accountcreation.lastName.
 
 ![JO](./images/createaction-10c.png)
 

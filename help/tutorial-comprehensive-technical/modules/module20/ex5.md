@@ -80,7 +80,7 @@ After pasting your private.key into Stackchat Studio, you should now have this:
 
 The Connection ID is the last portion of the DCS Inlet ID, which is already saved in your configuration ID [here](https://public.aepdemo.net/admin_configuration.html). But to save you the click, your DCS Inlet ID is as follows:
 
--—dcsInletId—-
+`--dcsInletId--`
 
 You now just need to copy every character after the final **/** in the URL and paste the value into the **Connection ID** field in Stackchat Studio, in this example: **684b70ada4897b5babd8f77aebceffed2fda391352262a2b9e04f5c9e4797f81**.
 
@@ -129,12 +129,12 @@ Next, you need to add several optional mappings. Here's a table of what to map a
 
 | Slot Name       | Schema Mapping  |
 |-----------------|-----------------|
-| ECID            | --aepTenantId--.identification.ecid |
-| Email           | --aepTenantId--.identification.emailId |
+| ECID            | ``--aepTenantId--``.identification.ecid |
+| Email           | ``--aepTenantId--``.identification.emailId |
 | FirstName       | person.name.firstName |
-| NpsScore        | --aepTenantId--.customerSatisfactionScore.score |
-| NpsFeedback     | --aepTenantId--.customerSatisfactionScore.feedback |
-| NPSFeedbackText | --aepTenantId--.customerSatisfactionScore.detailedFeedback |
+| NpsScore        | ``--aepTenantId--``.customerSatisfactionScore.score |
+| NpsFeedback     | ``--aepTenantId--``.customerSatisfactionScore.feedback |
+| NPSFeedbackText | ``--aepTenantId--``.customerSatisfactionScore.detailedFeedback |
 
 For each of the mappings, click the **+** button to add a new mapping.
 
@@ -160,9 +160,9 @@ Add the following mappings in your Event Mapping tab.
 
 | Slot Name       | Schema Mapping  |
 |-----------------|-----------------|
-| User Id         | --aepTenantId--.identification.stackchatId |
-| ECID            | --aepTenantId--.identification.ecid |
-| Email           | --aepTenantId--.identification.emailId |
+| User Id         | ``--aepTenantId--``.identification.stackchatId |
+| ECID            | ``--aepTenantId--``.identification.ecid |
+| Email           | ``--aepTenantId--``.identification.emailId |
 
 Your final mapping should look like this:
 
