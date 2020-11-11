@@ -15,7 +15,7 @@ Go to [https://experience.adobe.com/platform](https://experience.adobe.com/platf
 
 ![AEP Debugger](./images/exp1.png)
 
-After logging in, select the appropriate sandbox by clicking the text **Production Prod** in the blue line on top of your screen. Select the sandbox **--aepSandboxId--**.
+After logging in, select the appropriate sandbox by clicking the text **Production Prod** in the blue line on top of your screen. Select the sandbox `--aepSandboxId--`.
 
 After selecting your sandbox, you'll see the screen change and now you're in your sandbox.
 

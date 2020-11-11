@@ -40,7 +40,7 @@ Have a look at the below architecture, which highlights the components that will
 
 ## Sandbox to use
 
-For this module, please use this sandbox: **--module11sandbox--**.
+For this module, please use this sandbox: `--module11sandbox--`.
 
 >[!NOTE]
 >

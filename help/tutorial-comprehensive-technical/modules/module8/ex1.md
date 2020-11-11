@@ -221,7 +221,7 @@ Copy the below code and paste it in the next empty cell in your notebook.
 df = df.dropna(subset=[user_id, item_id, interactionType, brand_name])
 
 # only focus on one brand
-df = df[df[brand_name] == "Luma"]
+df = df[df[brand_name].isin(["Luma", "Luma Retail"])]
 ```
 
 You'll then have this in that cell:

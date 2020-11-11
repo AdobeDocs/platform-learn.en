@@ -77,7 +77,7 @@ Next, click the little arrow icon on the field **Entity Information**. You'll th
 
 ![ServiceNow](./images/flow10.png)
 
-Next, click the little arrow icon on the field **--aepTenantId--**. You'll then see this:
+Next, click the little arrow icon on the field `--aepTenantId--`. You'll then see this:
 
 ![ServiceNow](./images/flow11.png)
 
@@ -89,11 +89,11 @@ Finally, click to select the field **churnScore**.
 
 Repeat this process to select the values for the fields **Product Affinity** and **Product Usage**.
 
-- Product Affinity should be linked to the field **--aepTenantId--**.**productInformation**.**productAffinity**.
+- Product Affinity should be linked to the field `--aepTenantId--`.**productInformation**.**productAffinity**.
 
 ![ServiceNow](./images/flow13.png)
 
-- Product Usage should be linked to the field **--aepTenantId--**.**productInformation**.**productUsage**.
+- Product Usage should be linked to the field `--aepTenantId--`.**productInformation**.**productUsage**.
 
 ![ServiceNow](./images/flow14.png)
 

@@ -55,7 +55,7 @@ As a consequence, MUTUAL365 can’t understand which customer are interesting ta
 
 ## Sandbox to use
 
-For this module, please use this sandbox: **--aepSandboxId--**.
+For this module, please use this sandbox: `--aepSandboxId--`.
 
 >[!NOTE]
 >

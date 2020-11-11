@@ -47,7 +47,7 @@ Luma Retail also has a partnership with Survey Corp which has agreed to share th
 
 ## Sandbox to use
 
-For this module, please use this sandbox: **--aepSandboxId--**.
+For this module, please use this sandbox: `--aepSandboxId--`.
 
 >[!NOTE]
 >

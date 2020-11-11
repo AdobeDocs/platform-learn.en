@@ -83,7 +83,7 @@ As a test, go to [this page](https://docs.adobe.com/content/help/en/platform-lea
 
 You should now see that all **Environment Variables** have been replaced by their true values, based on the Configuration ID in the chrome extension.
 
-You should now have a similar view to the below, where the environment variables **--aepTenantId--** has been replaced by your Tenant ID, which in this case is **_experienceplatform**. 
+You should now have a similar view to the below, where the environment variables `--aepTenantId--` has been replaced by your Tenant ID, which in this case is **_experienceplatform**. 
 
 ![DSN](./images/c12.png)
 
