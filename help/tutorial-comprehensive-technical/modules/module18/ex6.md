@@ -41,7 +41,7 @@ Go to [https://public.aepdemo.net/](https://public.aepdemo.net/). Load and save 
 
 >[!NOTE]
 >
->Please ensure you're using a Configuration ID that is ingesting data into this sandbox: --module18sandbox--
+>Please ensure you're using a Configuration ID that is ingesting data into this sandbox: `--module18sandbox--`
 
 Then, select your **ldap**, select the brand **Citi Signal** and go to the Citi Signal homepage:
 
