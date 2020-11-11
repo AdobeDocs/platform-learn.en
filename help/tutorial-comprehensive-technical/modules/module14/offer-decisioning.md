@@ -26,6 +26,7 @@ With Offer Decisioning, you can determine the best option from a set of availabl
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
 - Access to Offer Decisioning
+- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
 >
@@ -47,6 +48,24 @@ For this module, please use this sandbox: **--aepSandboxId--**.
 
 ## Exercises
 
-Exercises for this module are currently being developed.
+[14.1 Offer Decisioning 101](./ex1.md)
+
+In this exercise you'll get a better understanding of all the different concepts of Offer Decisioning, and how to access Offer Decisioning in Adobe Experience Platform.
+
+[14.2 Configure your Offers and Offer Activity](./ex2.md)
+
+In this exercise you'll configure your own Personalized Offers and your own Activity, which will then be published.
+
+[14.3 Test your Offer Activity](./ex3.md)
+
+In this exercise you'll use the AEP Demo website to test your Offer Activity.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
 
 [Go Back to All Modules](../../overview.md)
