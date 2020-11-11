@@ -21,7 +21,7 @@ You'll be redirected to the **Home** view in Journey Orchestration.
 
 ![ACOP](./images/acoptriglp.png)
 
-First, make sure you're using the correct sandbox. The sandbox to use is called **--aepSandboxId--**. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
 
 ![ACOP](./images/sb.png)
 
@@ -69,11 +69,11 @@ You'll see a **Fields** window popup, in which you need to select the fields tha
 
 ![ACOP](./images/eventfields.png) 
 
-In the object **--aepTenantId--.accountcreation**, please make sure to select the fields **firstName** and **lastName**.
+In the object `--aepTenantId--.accountcreation`, please make sure to select the fields **firstName** and **lastName**.
 
 ![ACOP](./images/eventpayloadac.png)
 
-In the object **--aepTenantId--.brand**, please make sure to select the fields **brandLogo** en **brandName**.
+In the object `--aepTenantId--.brand`, please make sure to select the fields **brandLogo** and **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 

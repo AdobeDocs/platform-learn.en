@@ -39,7 +39,7 @@ Building a segment in explained in detail in [Module 11](../module11/real-time-c
 
 Go to [https://platform.adobe.com](https://platform.adobe.com).
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named **--aepSandboxId--**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named `--aepSandboxId--`. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
 
 ![Data Ingestion](./images/sb1.png)
 

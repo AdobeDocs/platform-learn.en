@@ -45,7 +45,7 @@ As a brand, you also understand that context greatly impacts a customer's intere
 
 ## Sandbox to use
 
-For this module, please use this sandbox: **--aepSandboxId--**.
+For this module, please use this sandbox: `--aepSandboxId--`.
 
 >[!NOTE]
 >

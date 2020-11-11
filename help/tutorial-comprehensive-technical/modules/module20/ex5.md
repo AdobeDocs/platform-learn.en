@@ -100,7 +100,7 @@ If your credentials in the previous step are correct, you'll be automatically sw
 
 ![Stackchat Adobe Experience Platform integration](./images/ui_add_aep_fetch.png)
 
-After the sandboxes have been fetched, search for your sandbox name and select it. Your sandbox to use is **--aepSandboxId--**. In this example, the sandbox is called **AEP Enablement**.
+After the sandboxes have been fetched, search for your sandbox name and select it. Your sandbox to use is `--aepSandboxId--`. In this example, the sandbox is called **AEP Enablement**.
 
 ![Stackchat Adobe Experience Platform integration](./images/ui_add_aep_sb_search.png)
 
@@ -154,7 +154,7 @@ Once these are all mapped, hit **Update Mapping** in the top right.
 
 ## 20.5.5 Event Mapping
 
-In this tab, you'll map Stackchat slots to the behavioral events that Stackchat sends to Adobe Experience Platform. The Schema you selected in step 20.5.2 (**AEP Demo - Stackchat Interactions Schema**) has a **--aepTenantId--.chatbotInteraction** mixin that will be automatically populated by Stackchat with information like which conversation flow the user is in, or when a cloud function gets executed. Your only job here is to map the identification slots so that Adobe Experience Platform can attribute this behavior to the correct user.
+In this tab, you'll map Stackchat slots to the behavioral events that Stackchat sends to Adobe Experience Platform. The Schema you selected in step 20.5.2 (**AEP Demo - Stackchat Interactions Schema**) has a `--aepTenantId--.chatbotInteraction` mixin that will be automatically populated by Stackchat with information like which conversation flow the user is in, or when a cloud function gets executed. Your only job here is to map the identification slots so that Adobe Experience Platform can attribute this behavior to the correct user.
 
 Add the following mappings in your Event Mapping tab.
 

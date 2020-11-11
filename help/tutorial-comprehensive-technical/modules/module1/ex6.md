@@ -23,7 +23,7 @@ You'll then see this. To enable Adobe Analytics, click the toggle for Adobe Anal
 
 ![AEP Debugger](./images/at1.png)
 
-You now need to enter your Adobe Target client code. Your Adobe Target client code is: **--atClientCode--**.
+You now need to enter your Adobe Target client code. Your Adobe Target client code is: `--atClientCode--`.
 
 You can find your Adobe Target client code yourself by going to Adobe Target, to Administration and then to Implementation, where you'll find this:
 

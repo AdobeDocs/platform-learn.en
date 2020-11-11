@@ -45,7 +45,6 @@ Customers have high expectations when it comes to brand interactions. They want 
 - Understanding of Adobe Experience Platform API's
 - Access to Facebook and / or WeChat account
 - Latest version of [Node.js](https://nodejs.org/en/download/) installed. Please make sure you’re running Node v12 or above.
-- Latest version of [Github for Desktop](https://desktop.github.com/).
 
 >[!IMPORTANT] 
 >
@@ -59,7 +58,7 @@ Have a look at the below architecture, which highlights the components that will
 
 ## Sandbox to use
 
-For this module, please use this sandbox: **--aepSandboxId--**.
+For this module, please use this sandbox: `--aepSandboxId--`.
 
 >[!NOTE]
 >

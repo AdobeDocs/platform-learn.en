@@ -39,7 +39,7 @@ You'll then see the Extensions page. Click the **[!UICONTROL Configure]** button
 
 Welcome to the the AEP Web SDK! Here you can configure the extension with the Edge Configuration you created in [Exercise 0.2](./../module0/ex2.md) as well as some more advanced configuration. You're only going to configure two settings for this exercise.
 
-The default Edge Domain is always **edge.adobedc.net**. If you've implemented a CNAME configuration in your Adobe Experience Cloud or Adobe Experience Platform environment, you'll need to update the **[!UICONTROL Edge Domain]**. Your Adobe Experience Platform instance is using this Edge Domain: **--webSdkEdgeDomain--**. 
+The default Edge Domain is always **edge.adobedc.net**. If you've implemented a CNAME configuration in your Adobe Experience Cloud or Adobe Experience Platform environment, you'll need to update the **[!UICONTROL Edge Domain]**. Your Adobe Experience Platform instance is using this Edge Domain: `--webSdkEdgeDomain--`. 
 
 If your instance's Edge Domain is different from default one, please update the Edge Domain. An Edge Domain makes it possible to configure a 1st party tracking server, which then uses a CNAME configuration in the backend to ensure data is collected into Adobe.
 
