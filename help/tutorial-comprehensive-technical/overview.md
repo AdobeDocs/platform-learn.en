@@ -155,10 +155,11 @@ Go to [Videos](./videos.md).
 
 [10. Data Science Workspace - Churn Prediction Model](./modules/module10/data-science-workspace-churn-prediction-model.md)
 
+**This module is currently being updated and will be released in December 2020**
+
 - **Audience:** Data Engineer, Data Architect, Data Scientist
 - **Prerequisites:** Access to Adobe Experience Platform, Data Science Workspace
-- **Description:** In this module, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Churn Prediction Model.
-- **Time Investment:** 60 minutes
+- **Description:** **This module is currently being updated and will be released in December 2020**
 
 [11. RTCDP - Build a segment and take action](./modules/module11/real-time-cdp-build-a-segment-take-action.md)
 

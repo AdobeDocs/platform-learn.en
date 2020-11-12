@@ -96,11 +96,6 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module9/summary.md)
 + 10 - Data Science Workspace - Churn Prediction Model {#module10}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module10/data-science-workspace-churn-prediction-model.md)
-  + [10.1 Introduction to Data Science](/help/tutorial-comprehensive-technical/modules/module10/ex1.md)
-  + [10.2 Churn Prediction: Data Preparation](/help/tutorial-comprehensive-technical/modules/module10/ex2.md)
-  + [10.3 Feature Engineering and Model Building](/help/tutorial-comprehensive-technical/modules/module10/ex3.md)
-  + [10.4 Experimentation - Recipe Building](/help/tutorial-comprehensive-technical/modules/module10/ex4.md)
-  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module10/summary.md)
 + 11 - Real-time CDP - Build a segment and take action! {#module11}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module11/real-time-cdp-build-a-segment-take-action.md)
   + [11.1 Build a segment and enable Streaming Segmentation](/help/tutorial-comprehensive-technical/modules/module11/ex1.md)
