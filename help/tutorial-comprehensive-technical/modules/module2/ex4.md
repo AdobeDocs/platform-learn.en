@@ -138,7 +138,7 @@ The goal of this is to onboard CRM data in Platform. All the data that is ingest
 
 ![Data Ingestion](./images/workflows.png)
 
-The [!DNL workflow] that we'll use here, is the [!DNL workflow named **[!DNL Map CSV to XDM Schema]** in the [!DNL Data Ingestion] menu.
+The [!DNL workflow] that we'll use here, is the [!DNL workflow] named **[!DNL Map CSV to XDM Schema]** in the [!DNL Data Ingestion] menu.
 
 Click the **[!DNL Map CSV to XDM Schema]** button.
 
@@ -213,7 +213,7 @@ For the [!DNL Schema Mappings], Adobe Experience Platform has tried to link fiel
 
 ![Data Ingestion](./images/schemamap.png)
 
-For the [!DNL Source Attribute **[!DNL email]**, the Target Schema Field should be **[!DNL personalEmail.address]**. You can either enter **[!DNL personalEmail.address]** in the field, or you can click the icon to visually locate the correct property in the **[!DNL Demo System - Profile Dataset for CRM Schema]**.
+For the [!DNL Source Attribute] **[!DNL email]**, the Target Schema Field should be **[!DNL personalEmail.address]**. You can either enter **[!DNL personalEmail.address]** in the field, or you can click the icon to visually locate the correct property in the **[!DNL Demo System - Profile Dataset for CRM Schema]**.
 
 ![Data Ingestion](./images/schema_icon.png)
 
