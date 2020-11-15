@@ -36,11 +36,11 @@ Capturing the answer to **Who is this customer?** for your company is done throu
 
 ![Data Ingestion](./images/lb_register_dtl.png)
 
-From a Schema perspective, we look at this as a **Class**. The question: **Who is this customer?** is something that we define in the Class **XDM Individual Profile**.
+From a Schema perspective, we look at this as a **Class**. The question: **Who is this customer?** is something that we define in the Class **[!DNL XDM Individual Profile]**.
 
-So when you create an XDM Schema to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **XDM Individual Profile**.
+So when you create an XDM Schema to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!DNL XDM Individual Profile]**.
 
-To specify what kind of answers can be given to that question, you'll need to define Mixins. Mixins are extensions of the Profile-class, and have very specific configurations. For instance, demographic information like First Name, Last Name, Gender and Birthday are part of the Mixin: **Profile Person Details**.
+To specify what kind of answers can be given to that question, you'll need to define [!DNL Mixins]. [!DNL Mixins] are extensions of the Profile-class, and have very specific configurations. For instance, demographic information like First Name, Last Name, Gender and Birthday are part of the [!DNL Mixin]: **[!DNL Demographic Details]**.
 
 Secondly, your company needs to decide how to identify this customer. In the case of your company, the main identifier for a known customer might be a specific customer ID, like for instance an email address. But technically, there are other ways of identifying a customer at your company, like using a mobile phone number.
 In this lab, we'll define the email address as the primary identifier and the phone number as a secondary identifier.
@@ -55,7 +55,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named **Module 2 - Data Ingestion**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!DNL Production Prod]** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -63,19 +63,19 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen.
+In Adobe Experience Platform, click on **[!DNL Schemas]** in the menu on the left side of your screen.
 
 ![Data Ingestion](./images/menuschemas.png)
 
-Your list of Schemas is currently empty. 
+You'll see the list of available [!DNL Schemas]. 
 
 ![Data Ingestion](./images/schemas.png)
 
-You should create a new schema. To create a new schema, click on the button **+ Create Schema**.
+You should create a new schema. To create a new schema, click on the button **[!DNL + Create Schema]** and select **[!DNL XDM Individual Profile]**.
 
 ![Data Ingestion](./images/createschema.png)
 
-After clicking the **+ Create Schema** button, you'll see an empty, new schema. 
+After clicking the **[!DNL + Create Schema]** button, you'll see a new schema. 
 
 ![Data Ingestion](./images/emptyschema.png)
 
@@ -83,36 +83,26 @@ Let's first name your schema.
 
 As the name for our schema, we'll use this:
 
-**ldap - AEP Demo - Website Registrations Schema**
+**[!DNL ldap - Demo System - Profile Schema for Website]**
 
-Replace **ldap** by your specific ldap. As an example, for ldap **vangeluw**, this should be the name of the schema:
+Replace **[!DNL ldap]** by your specific ldap. As an example, for ldap **[!DNL vangeluw]**, this should be the name of the schema:
 
-**vangeluw - AEP Demo - Website Registrations Schema**
+**[!DNL vangeluw - Demo System - Profile Schema for Website]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/schemaname.png)
 
-Next, you need to select the class of your schema. As indicated before, the class of your schema should be **XDM Individual Profile**. 
-
-Click on the button **+ Assign**
-
-![Data Ingestion](./images/assign.png)
-
-In the **Assign Class** window, select **XDM Individual Profile**.
+The class of your schema is already selected and should be **[!DNL XDM Individual Profile]**. 
 
 ![Data Ingestion](./images/XDMProfile.png)
 
-Click the **Assign Class** button to assign the class.
-
-![Data Ingestion](./images/assignclass.png)
-
-You'll now see an overview of the minimal structure of your schema.
+Based on that selected class, you already see an overview of the minimal structure of your schema.
 
 ![Data Ingestion](./images/classoverview.png)
 
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the field **_id** is a required field.
+For instance, the field **[!DNL _id]** is a required field.
 
 * _id needs to contain a unique id for a specific data ingestion
 
@@ -124,142 +114,122 @@ In the introduction of this lab, we noted the need for following attributes to d
 * Other Information linked to Language, OptIn/OptOut and maybe even Profile Pictures. 
 * Primary Identifier for a customer
 
-To make that information part of your schema, you need to add the following Mixins to your schema:
+To make that information part of your schema, you need to add the following [!DNL Mixins] to your schema:
 
-* Profile Person Details (Demographic Information)
-* Profile Personal Details (Contact Information)
-* Profile Preferences Details (Other Information)
+* Demographic Details (Demographic Information)
+* Personal Contact Details (Contact Information)
+* Preference Details (Other Information)
 * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
 
-You can add these Mixins by clicking the **+ Add** button below the Class that you just defined.
+You can add these [!DNL Mixin] by clicking the **[!DNL + Add]** button below the Class that you just defined.
 
 ![Data Ingestion](./images/addmixin.png)
 
-Let's start with **Profile Person Details**.
+Let's start with **[!DNL Demographic Details]**.
 
-Click the **+ Add** button to start adding a Mixin.
+Click the **[!DNL + Add]** button to start adding a Mixin.
 
-In the **Add Mixin** screen, select the Mixin **Profile Person Details**.
-
-![Data Ingestion](./images/ppd.png)
-
-Click the **Add Mixin** button to add the Mixin to your schema.
-
-![Data Ingestion](./images/addmixin1.png)
-
-Next, add the Mixin **Profile Personal Details**.
-
-Click the **+ Add** button to start adding a Mixin.
-
-In the **Add Mixin** screen, select the Mixin **Profile Personal Details**.
-
-![Data Ingestion](./images/ppsd.png)
-
-Click the **Add Mixin** button to add the Mixin to your schema.
-
-![Data Ingestion](./images/addmixin1.png)
-
-Next, add the Mixin **Profile Preferences Details**.
-
-Click the **+ Add** button to start adding a Mixin.
-
-In the **Add Mixin** screen, select the Mixin **Profile Preferences Details**.
+In the **[!DNL Add Mixin]** screen, select the [!DNL Mixin] **[!DNL Demographic Details]**, **[!DNL Personal Contact Details]** and **[!DNL Preference Details]**.
 
 ![Data Ingestion](./images/ppfd.png)
 
-Click the **Add Mixin** button to add the Mixin to your schema.
+Click the **[!DNL Add Mixin]** button to add the [!DNL Mixin] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
-Lastly, you need a new Mixin to capture the **Identifier** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
+You'll now have this:
 
-You will now create your own custom Mixin and as such, you'll be extending the XDM Schema to meet your own company's requirements.
+![Data Ingestion](./images/schemathis.png)
 
-Click the **+ Add** button to start adding a Mixin.
+Lastly, you need a new [!DNL Mixin] to capture the **[!DNL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
 
-![Data Ingestion](./images/addmixin.png)
+You will now create your own custom [!DNL Mixin] and as such, you'll be extending the [!DNL XDM Schema] to meet your own company's requirements.
 
-Instead of reusing an existing Mixin, you'll now create your own Mixin. You can do that by selecting **Create New Mixin**.
+Click the **[!DNL + Add]** button to start adding a [!DNL Mixin].
+
+![Data Ingestion](./images/addmixin2.png)
+
+Instead of reusing an existing [!DNL Mixin], you'll now create your own [!DNL Mixin]. You can do that by selecting **[!DNL Create New Mixin]**.
 
 ![Data Ingestion](./images/createmixin.png)
 
-You now need to provide a **Display Name** and **Description** for your new Mixin. 
+You now need to provide a **[!DNL Display Name]** and **[!DNL Description]** for your new [!DNL Mixin]. 
 
 As the name for our schema, we'll use this:
 
-**ldap - AEP Demo - Profile Identification Mixin**
+**[!DNL ldap - Profile Identification Mixin]**
 
-Replace **ldap** by your specific ldap. As an example, for ldap **vangeluw**, this should be the name of the schema:
+Replace **[!DNL ldap]** by your specific ldap. As an example, for ldap **[!DNL vangeluw]**, this should be the name of the schema:
 
-**vangeluw - AEP Demo - Profile Identification Mixin**
+**[!DNL vangeluw - Profile Identification Mixin]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/mixinname.png)
 
-Click the **Add Mixin** button to add the newly created Mixin to your schema.
+Click the **[!DNL Add Mixin]** button to add the newly created [!DNL Mixin] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
-You should now have this Schema structure in place.
+You should now have this schema structure in place.
 
 ![Data Ingestion](./images/schemastructurem.png)
 
-Your new Mixin is still empty, so now you'll have to add fields to that Mixin.
-In the Mixins-list, click your custom Mixin.
+Your new [!DNL Mixin] is still empty, so now you'll have to add fields to that [!DNL Mixin].
+In the [!DNL Mixin]-list, click your custom [!DNL Mixin].
 
-![Data Ingestion](./images/mixinselected.png)
+![Data Ingestion](./images/schemastructurem.png)
 
-You now see a number of new buttons appear. These buttons are named **+ Add Field**.
+You now see a number of new buttons appear. These buttons are named **[!DNL + Add Field]**.
 
-On the top-level of your Schema, next to your Schema - name, click the **+ Add Field** button.
+On the top-level of your Schema, next to your Schema - name, click the **[!DNL + Add Field]** button.
 
 ![Data Ingestion](./images/clickaddfield.png)
 
-After clicking the **+ Add Field** button, you now see a new **object** in your schema. This object represents a custom **object** in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance in your **Environment Variables**.
+After clicking the **[!DNL + Add Field]** button, you now see a new **[!DNL object]** in your schema. This object represents a custom **[!DNL object]** in your Schema and is named after your Adobe Experience Platform Tenant ID. Your Adobe Experience Platform tenant id is `--aepTenantId--`.
 
 ![Data Ingestion](./images/tenant.png)
 
-We'll now add a new object under that tenant. To do that, click the field **New Field** under the tenant-object.
+We'll now add a new object under that tenant. To do that, click the field **[!DNL New Field]** under the tenant-object.
 
 ![Data Ingestion](./images/tenantfield.png)
 
 Use these object-definitions:
 
-* Field name: **identification**
-* Display name:  **identification**
-* Type: **Object**
+* Field name: **[!DNL identification]**
+* Display name:  **[!DNL identification]**
+* Type: **[!DNL Object]**
 
 ![Data Ingestion](./images/tenantfielddef.png)
 
-Click **Apply** to save your changes.
+Click **[!DNL Apply]** to save your changes.
 
 ![Data Ingestion](./images/apply.png)
 
-After clicking **Apply**, you now see your **identification** object in the Schema.
+After clicking **[!DNL Apply]**, you now see your **[!DNL identification]** object in the Schema.
 
 ![Data Ingestion](./images/schemaid.png)
 
-You'll now add 3 new fields under the  **identification** object:
+You'll now add 3 new fields under the  **[!DNL identification]** object:
 
 * ecid:
-  * Field name: **ecid**
-  * Display name:  **ecid**
-  * Type: **String**
+  * Field name: **[!DNL ecid]**
+  * Display name:  **[!DNL ecid]**
+  * Type: **[!DNL String]**
 
 * emailId
-  * Field name: **emailId**
-  * Display name:  **emailId**
-  * Type: **String**
+  * Field name: **[!DNL emailId]**
+  * Display name:  **[!DNL emailId]**
+  * Type: **[!DNL String]**
   
 * mobilenr
-  * Field name: **mobilenr**
-  * Display name:  **mobilenr**
-  * Type: **String**
+  * Field name: **[!DNL mobilenr]**
+  * Display name:  **[!DNL mobilenr]**
+  * Type: **[!DNL String]**
 
-Each field will be defined as type **String** and we'll configure these fields as **Identities**. For the Schema **Website Registration Schema**, we assume that a customer will always be identified by their email-address, which means that you have to configure the field **emailId** as a **primary** identifier, and the other fields as **secondary** identifiers.
+Each field will be defined as type **[!DNL String]** and we'll configure these fields as **[!DNL Identities]**. For the Schema **[!DNL Website Registration Schema]**, we assume that a customer will always be identified by their email-address, which means that you have to configure the field **[!DNL emailId]** as a **[!DNL primary]** identifier, and the other fields as **[!DNL secondary]** identifiers.
 
-To add the fields, click the **Add Field** button next to the **identification** object.
+To add the fields, click the **[!DNL +]** button next to the **[!DNL identification]** object.
 
 ![Data Ingestion](./images/schemaid2.png)
 
@@ -267,143 +237,149 @@ You now have an empty field. You need to configure the above 3 fields as indicat
 
 ![Data Ingestion](./images/emptyfield.png)
 
-This is how each field should look after your initial field configuration:
+This is how each field should look after your initial field configuration.
+
+Click the **[!DNL +]** button next to the **[!DNL identification]** object to create a new field and fill out the fields as indicated.
 
 * ecid
 
 ![Data Ingestion](./images/ecidfield.png)
 
-To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply** button.
+To save your field, scroll down in the **[!DNL Field Properties]** until you see the button **[!DNL Apply]**. Click the **[!DNL Apply]** button.
 
 ![Data Ingestion](./images/apply.png)
+
+Click the **[!DNL +]** button next to the **[!DNL identification]** object to create a new field and fill out the fields as indicated.
 
 * emailId
 
 ![Data Ingestion](./images/emailidfield.png)
 
-To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply** button.
+To save your field, scroll down in the **[!DNL Field Properties]** until you see the button **[!DNL Apply]**. Click the **[!DNL Apply]** button.
 
 ![Data Ingestion](./images/apply.png)
+
+Click the **[!DNL +]** button next to the **[!DNL identification]** object to create a new field and fill out the fields as indicated.
 
 * mobilenr
 
 ![Data Ingestion](./images/mobilenrfield.png)
 
-To save your field, scroll down in the **Field Properties** until you see the button **Apply**. Click the **Apply** button.
+To save your field, scroll down in the **[!DNL Field Properties]** until you see the button **[!DNL Apply]**. Click the **[!DNL Apply]** button.
 
 ![Data Ingestion](./images/apply.png)
 
-You now have 3 fields, but these fields haven't been defined as **Identity**-fields yet.
+You now have 3 fields, but these fields haven't been defined as **[!DNL Identity]**-fields yet.
 
 ![Data Ingestion](./images/3fields.png)
 
-To start defining these fields as **Identity**-fields, follow these steps:
+To start defining these fields as **[!DNL Identity]**-fields, follow these steps:
 
-* Select the field **emailId**.
-* On the right side, in the field properties, scroll down until you see **Identity**. Check the checkbox for **Identity**. 
+* Select the field **[!DNL emailId]**.
+* On the right side, in the field properties, scroll down until you see **[!DNL Identity]**. Check the checkbox for **[!DNL Identity]**. 
 
   ![Data Ingestion](./images/emailidid.png)
 
-* Now check the checkbox for **Primary Identity**.
+* Now check the checkbox for **[!DNL Primary Identity]**.
 
   ![Data Ingestion](./images/emailidprimid.png)
   
-* Lastly, select the namespace **Email** from the list of **Namespaces**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+* Lastly, select the namespace **[!DNL Email]** from the list of **[!DNL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/emailidprimidns.png)
 
-* Finally, click **Apply** to save your changes.
+* Finally, click **[!DNL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
   
-Next, you have to define the other fields for **ecid** and **mobilenr** as secondary identifiers.
+Next, you have to define the other fields for **[!DNL ecid]** and **[!DNL mobilenr]** as secondary identifiers.
 
-* Select the field **ecid**.
-* On the right side, in the field properties, scroll down until you see **Identity**. Check the checkbox for **Identity**. 
+* Select the field **[!DNL ecid]**.
+* On the right side, in the field properties, scroll down until you see **[!DNL Identity]**. Check the checkbox for **[!DNL Identity]**. 
 
   ![Data Ingestion](./images/ecidid.png)
 
-* Next, select the namespace **ECID** from the list of **Namespaces**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+* Next, select the namespace **[!DNL ECID]** from the list of **[!DNL Namespaces]**. A [!DNL Namespace] is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/ecidprimidns.png)
 
-* Click **Apply** to save your changes.
+* Click **[!DNL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
-* Select the field **mobilenr**.
-* On the right side, in the field properties, scroll down until you see **Identity**. Check the checkbox for **Identity**. 
+* Select the field **[!DNL mobilenr]**.
+* On the right side, in the field properties, scroll down until you see **[!DNL Identity]**. Check the checkbox for **[!DNL Identity]**. 
 
   ![Data Ingestion](./images/mobid.png)
 
-* Next, select the namespace **Phone** from the list of **Namespaces**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+* Next, select the namespace **[!DNL Phone]** from the list of **[!DNL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/mobprimidns.png)
 
-* Click **Apply** to save your changes.
+* Click **[!DNL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
-The **identification** object should now look like this, with the 3 id-fields now also showing a **fingerprint** icon to show that they have been defined as identifiers.
+The **[!DNL identification]** object should now look like this, with the 3 id-fields now also showing a **[!DNL fingerprint]** icon to show that they have been defined as identifiers.
 
 ![Data Ingestion](./images/applyiden.png)
 
-You have now defined a Schema, linked existing and newly created mixins and have defined identifiers.
+You have now defined a Schema, linked existing and newly created [!DNL Mixin] and have defined identifiers.
 
-Click **Save** to save your changes.
+Click **[!DNL Save]** to save your changes.
 
 ![Data Ingestion](./images/save.png)
 
-The last thing to do here, is to activate the Schema to be linked to the **Profile**.
+The last thing to do here, is to activate the Schema to be linked to the **[!DNL Profile]**.
 By enabling your schema for Profile, you're making sure that all data sent to Adobe Experience Platform against this schema will be part of the Real-time Customer Profile environment, which makes sure that all that data can be used in real-time for querying, segmentation and activation.
 
 To do this, let's select the name of your schema.
 
 ![Data Ingestion](./images/schemastructure.png)
 
-In the right tab of your schema, you'll see a **Profile toggle**, which is currently deactivated.
+In the right tab of your schema, you'll see a **[!DNL Profile toggle]**, which is currently deactivated.
 
 ![Data Ingestion](./images/upswitcher.png)
 
-Activate the Profile - switch by clicking it.
+Activate the [!DNL Profile] - switch by clicking it.
 
 You'll see this message:
 
 ![Data Ingestion](./images/sure.png)
 
-Click **Enable** to enable this schema for Profile.
+Click **[!DNL Enable]** to enable this schema for Profile.
 
-Your Schema is now configured to be part of the Real-time Customer Profile.
+Your Schema is now configured to be part of the [!DNL Real-time Customer Profile].
 
 ![Data Ingestion](./images/surey.png)
 
-Finally, click **Save** to save your schema.
+Finally, click **[!DNL Save]** to save your schema.
 
 ![Data Ingestion](./images/save.png)
 
 ### 2.1.2 - What does this customer do
 
-Capturing the answer to **What does this customer do?** for your company is done through for instance a Product View on a Product Page.
+Capturing the answer to the question **What does this customer do?** for your company is done through for instance a product view on a product page.
 
 ![Data Ingestion](./images/lb_babars.png)
 
-From a Schema perspective, we look at this as a **Class**. The question: **What does this customer do?**is something that we've defined in the Class **ExperienceEvent**.
+From a schema perspective, we look at this as a **[!DNL Class]**. The question: **What does this customer do?**is something that we've defined in the class **[!DNL ExperienceEvent]**.
 
-So when you create an XDM Schema to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **ExperienceEvent**.
+So when you create an [!DNL XDM Schema] to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!DNL ExperienceEvent]**.
 
-To specify what kind of answers can be given to that question, you'll need to define Mixins. Mixins are extensions of the Experience Event-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the Mixin **ExperienceEvent Commerce Details**.
+To specify what kind of answers can be given to that question, you'll need to define [!DNL Mixin]. [!DNL Mixins] are extensions of the [!DNL ExperienceEvent]-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the [!DNL Mixin] **Commerce Details**.
 
-Secondly, your company needs to decide how you'll identify the behavior of this customer. Since we're talking about interactions on a website, it's possible that your company knows the customer but it's equally possible that an unknown, anonymous visitor is active on the website. So we can't use an identifier like email-address. In this case, your company will probably decide to use the Experience Cloud ID (ECID) as the primary identifier.
+Secondly, your company needs to decide how you'll identify the behavior of this customer. Since we're talking about interactions on a website, it's possible that your company knows the customer but it's equally possible that an unknown, anonymous visitor is active on the website. So we can't use an identifier like email-address. In this case, your company will probably decide to use the [!DNL Experience Cloud ID (ECID)] as the primary identifier.
 
 Lastly, it's important to distinguish the channel on which data was captured. In this case, we'll be talking about Website Interactions and the schema that needs to be defined needs to reflect **where** the interaction data was captured. The channel will also have an important role in influencing what data is captured. As such, it's a best practice to define schema's for every combination of channel, primary identifier and type of data collected.
 
-Based on the above, you'll need to configure a Schema in Adobe Experience Platform.
+Based on the above, you'll need to configure a schema in Adobe Experience Platform.
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named **Module 2 - Data Ingestion**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen.
+Before you continue, you need to select a **[!DNL sandbox]**. The [!DNL sandbox] to select is named ``--module2sandbox--``. You can do this by clicking the text **[!DNL Production Prod]** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -413,57 +389,48 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In Adobe Experience Platform, click on **Schemas** in the menu on the left side of your screen.
+In Adobe Experience Platform, click on **[!DNL Schemas]** in the menu on the left side of your screen.
 
 ![Data Ingestion](./images/menuschemas.png)
 
-In Schemas, you'll see your previously defined schema. 
+In [!DNL Schemas], you'll see your previously defined schema. 
 
 ![Data Ingestion](./images/schemasee.png)
 
-You should create a new schema. To create a new schema, click on the button **+ Create Schema**.
+You should create a new schema. To create a new schema, click on the button **[!DNL + Create Schema]** and select **[!DNL XDM ExperienceEvent]**.
 
-![Data Ingestion](./images/createschema.png)
+![Data Ingestion](./images/createschema1.png)
 
-After clicking the **+ Create Schema** button, you'll see an empty, new schema. 
+After clicking the **[!DNL + Create Schema]** button, you'll see an empty, new schema. 
 
-![Data Ingestion](./images/emptyschema.png)
+![Data Ingestion](./images/emptyschemaee.png)
 
 Let's first name your schema. Please use the following naming for your schema:
 
 As the name for our schema, we'll use this:
-**ldap - AEP Demo - Website Interactions Schema**
+**[!DNL ldap - Demo System - Event Schema for Website]**
 
-Replace **ldap** by your specific ldap. As an example, for ldap **vangeluw**, this should be the name of the schema:
+Replace **[!DNL ldap]** by your specific ldap. As an example, for ldap **[!DNL vangeluw]**, this should be the name of the schema:
 
-**vangeluw - AEP Demo - Website Interactions Schema**
+**[!DNL vangeluw - Demo System - Event Schema for Website]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/schemanameee.png)
 
-Next, you need to select the class of your schema. As indicated before, the class of your schema should be **XDM ExperienceEvent**. 
-Click on the button **+ Assign**
-
-![Data Ingestion](./images/assignee.png)
-
-In the **Assign Class** window, select **XDM ExperienceEvent**.
+The class of your schema is already selected and should be **[!DNL XDM ExperienceEvent]**. 
 
 ![Data Ingestion](./images/XDMEE.png)
 
-Click the **Assign Class** button to assign the class.
-
-![Data Ingestion](./images/assignclass.png)
-
-You'll now see an overview of the minimal structure of your schema.
+Based on that selected class, you already see an overview of the minimal structure of your schema.
 
 ![Data Ingestion](./images/classoverviewee.png)
 
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the fields **_id** and **timestamp** are required fields.
+For instance, the fields **[!DNL _id]** and **[!DNL timestamp]** are required fields.
 
 * _id needs to contain a unique id for a specific data ingestion
-* timestamp needs to be the timestamp of this hit, in the format **"YYYY-MM-DDTHH:MM:SSZ"**, like for instance: **"2019-04-08T07:20:00Z"**
+* timestamp needs to be the timestamp of this hit, in the format **[!DNL "YYYY-MM-DDTHH:MM:SSSZ"]**, like for instance: **[!DNL "2019-04-08T07:20:000Z"]**
 
 Now you need to define what an answer to the question **What does this customer do?** should look like.
 In the introduction of this lab, we noted the need for following attributes to define what a customer does:
@@ -475,207 +442,185 @@ In the introduction of this lab, we noted the need for following attributes to d
 * Primary Identifier for a customer
 
 
-To make that information part of your schema, you need to add the following Mixins to your schema:
+To make that information part of your schema, you need to add the following [!DNL Mixin] to your schema:
 
-* ExperienceEvent Web Details
-  * ExperienceEvent Commerce Details
-  * ExperienceEvent Environment Details
-  * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
+* Web Details
+* Commerce Details
+* Environment Details
+* your company's custom Profile Identification [!DNL Mixin] (Primary and Secondary Identifiers)
 
-You can add these Mixins by clicking the **+ Add** button below the Class that you just defined.
+You can add these [!DNL Mixin] by clicking the **[!DNL + Add]** button below the Class.
 
 ![Data Ingestion](./images/addmixinee.png)
 
-Let's start with **ExperienceEvent Web Details**.
+Let's start with **[!DNL Web Details]**.
 
-Click the **+ Add** button to start adding a Mixin.
+Click the **[!DNL + Add]** button to start adding a [!DNL Mixin].
 
-In the **Add Mixin** screen, select the Mixin **ExperienceEvent Web Details**.
-
-![Data Ingestion](./images/eewd.png)
-
-Click the **Add Mixin** button to add the Mixin to your schema.
-
-![Data Ingestion](./images/addmixin1.png)
-
-Next, add the Mixin **ExperienceEvent Commerce Details**.
-
-Click the **+ Add** button to start adding a Mixin.
-
-In the **Add Mixin** screen, select the Mixin **ExperienceEvent Commerce Details**.
-
-![Data Ingestion](./images/eecd.png)
-
-Click the **Add Mixin** button to add the Mixin to your schema.
-
-![Data Ingestion](./images/addmixin1.png)
-
-Next, add the Mixin **ExperienceEvent Environment Details**.
-
-Click the **+ Add** button to start adding a Mixin.
-
-In the **Add Mixin** screen, select the Mixin **ExperienceEvent Environment Details**.
+In the **[!DNL Add Mixin]** screen, select the [!DNL Mixins] **[!DNL Web Details]**, **[!DNL Commerce Details]** and **[!DNL Environment Details]**.
 
 ![Data Ingestion](./images/eeed.png)
 
-Click the **Add Mixin** button to add the Mixin to your schema.
+Click the **[!DNL Add Mixin]** button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
-Lastly, you need a new Mixin to capture the **Identifier** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
+You'll then have this:
 
-You will now create your own custom Mixin and as such, you'll be extending the XDM Schema to meet your own company's requirements.
+![Data Ingestion](./images/eethis.png)
 
-A Mixin is linked to a Class, so that means that we can't simply reuse the previously created Mixin.
+Lastly, you need a new [!DNL Mixin] to capture the **[!DNL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
 
-Click the **+ Add** button to start adding a Mixin.
+You will now create your own custom [!DNL Mixin] and as such, you'll be extending the [!DNL XDM Schema] to meet your own company's requirements.
 
-![Data Ingestion](./images/addmixinee.png)
+A [!DNL Mixin] is linked to a [!DNL Class], so that means that you can't simply reuse the previously created [!DNL Mixin].
 
-Instead of reusing an existing Mixin, you'll now create your own Mixin. You can do that by selecting **Create New Mixin**.
+Click the **[!DNL + Add]** button to start adding a [!DNL Mixin].
+
+![Data Ingestion](./images/addmixinee2.png)
+
+Instead of reusing an existing [!DNL Mixin], you'll now create your own [!DNL Mixin]. You can do that by selecting **[!DNL Create New Mixin]**.
 
 ![Data Ingestion](./images/createmixin.png)
 
-You now need to provide a **Display Name** and **Description** for your new Mixin. 
+You now need to provide a **[!DNL Display Name]** and **[!DNL Description]** for your new Mixin. 
 
 As the name for our mixin, we'll use this:
 
-**ldap - AEP Demo - EE Identification**
+**[!DNL ldap - ExperienceEvent Identification Mixin]**
 
-Replace **ldap** by your specific ldap. As an example, for ldap **vangeluw**, this should be the name of the schema:
+Replace **[!DNL ldap]** by your specific ldap. As an example, for ldap **[!DNL vangeluw]**, this should be the name of the schema:
 
-**vangeluw - AEP Demo - EE Identification**
+**[!DNL vangeluw - ExperienceEvent Identification Mixin]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/mixinnameee.png)
 
-Click the **Add Mixin** button to add the newly created Mixin to your schema.
+Click the **[!DNL Add Mixin]** button to add the newly created [!DNL Mixin] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
-You should now have this Schema structure in place.
+You should now have this [!DNL Schema] structure in place.
 
 ![Data Ingestion](./images/schemastructuremee.png)
 
-Your new Mixin is still empty, so now you'll have to add fields to that Mixin.
-In the Mixins-list, click your custom Mixin.
+Your new [!DNL Mixin] is still empty, so now you'll have to add fields to that Mixin.
+In the [!DNL Mixin]-list, click your custom [!DNL Mixin].
 
 ![Data Ingestion](./images/mixinselectedee.png)
 
-You now see a number of new buttons appear. These buttons are named **+ Add Field**.
+You now see a number of new buttons appear. 
 
-On the top-level of your Schema, next to your Schema - name, click the **+ Add Field** button.
+On the top-level of your Schema, next to your Schema - name, click the **[!DNL +]** button.
 
 ![Data Ingestion](./images/clickaddfieldee.png)
 
-After clicking the **+ Add Field** button, you now see a new **object** in your schema. This object represents a custom **object** in your Schema and is named after your Adobe Experience Platform Tenant ID. You can view the Tenant ID for your Adobe Experience Platform instance in your **Environment Variables**.
+After clicking the **[!DNL +]** button, you now see a new **[!DNL object]** in your schema. This object represents a custom **[!DNL object]** in your [!DNL Schema] and is named after your Adobe Experience Platform Tenant ID. Your Adobe Experience Platform tenant id is `--aepTenantId--`.
 
 ![Data Ingestion](./images/tenantee.png)
 
-We'll now add a new object under that tenant. To do that, click the field **New Field** under the tenant-object.
+You'll now add a new object under that tenant. To do that, click the field **[!DNL New Field]** under the tenant-object.
 
 ![Data Ingestion](./images/tenantfieldee.png)
 
 Use these object-definitions:
 
-* Field name: **identification**
-* Display name:  **identification**
-* Type: **Object**
+* Field name: **[!DNL identification]**
+* Display name:  **[!DNL identification]**
+* Type: **[!DNL Object]**
 
 ![Data Ingestion](./images/tenantfielddefee.png)
 
-Click **Apply** to save your changes.
+Click **[!DNL Apply]** to save your changes.
 
 ![Data Ingestion](./images/apply.png)
 
-After clicking **Apply**, you now see your **identification** object in the Schema.
+After clicking **[!DNL Apply]**, you now see your **[!DNL identification]** object in the Schema.
 
 ![Data Ingestion](./images/schemaidee.png)
 
-We'll now add 1 new field under the  **identification** object:
+You'll now add 1 new field under the  **[!DNL identification]** object.
 
-* ecid:
+Click the **[!DNL +]** button next to the **[!DNL identification]** object to create a new field.
 
-  * Field name: **ecid**
-  * Display name:  **ecid**
-  * Type: **String**
+![Data Ingestion](./images/schemaideeplus.png)
 
-The ECID-field will be defined as type **String** and we'll configure this field as an **Identity**. For the Schema **AEP Demo - Website Interactions Schema**, we assume that a customer will always be identified by their ECID, which means that you have to configure the field **ECID** as a **primary** identifier
-
-To add the fields, click the **Add Field** button next to the **identification** object.
-
-![Data Ingestion](./images/schemaid2ee.png)
+The ECID-field will be defined as type **[!DNL String]** and you'll configure this field as an **[!DNL Identity]**. For the Schema **[!DNL Demo System - Event Schema for Website]**, we assume that a customer will always be identified by their [!DNL ECID], which means that you have to configure the field **[!DNL ECID]** as a **primary** identifier
 
 You now have an empty field. You need to configure the above field as indicated.
 
-![Data Ingestion](./images/emptyfieldee.png)
+* ecid:
 
-This is how the ecid-field should look after your initial field configuration:
+  * Field name: **[!DNL ecid]**
+  * Display name:  **[!DNL ecid]**
+  * Type: **[!DNL String]**
+
+This is how the [!DNL ecid]-field should look after your initial field configuration:
 
 ![Data Ingestion](./images/ecidfieldee.png)
 
-Scroll down and click **Apply**.
+Scroll down and click **[!DNL Apply]**.
 
 ![Data Ingestion](./images/apply.png)
 
-You now have a new field, but this field hasn't been defined as an **Identity**-field yet.
+You now have a new field, but this field hasn't been defined as an **[!DNL Identity]**-field yet.
 
 ![Data Ingestion](./images/3fieldsee.png)
 
-To start defining these fields as **Identity**-fields, follow these steps:
+To start defining these fields as **[!DNL Identity]**-fields, follow these steps:
 
-* Select the field **ecid**.
-* On the right side, in the field properties, scroll down until you see **Identity**. Check the checkbox for **Identity**. 
+* Select the field **[!DNL ecid]**.
+* On the right side, in the field properties, scroll down until you see **[!DNL Identity]**. Check the checkbox for **[!DNL Identity]**. 
 
-  ![Data Ingestion](./images/ecididee.png)
+![Data Ingestion](./images/ecididee.png)
 
-* Now check the checkbox for **Primary Identity**.
+* Now check the checkbox for **[!DNL Primary Identity]**.
 
-  ![Data Ingestion](./images/ecidprimidee.png)
+![Data Ingestion](./images/ecidprimidee.png)
   
-* Lastly, select the namespace **ECID** from the list of **Namespaces**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+* Lastly, select the namespace **[!DNL ECID]** from the list of **[!DNL Namespaces]**. A [!DNL Namespace] is used by the [!DNL Identity Graph] in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/ecidprimidnsee.png)
 
-* Finally, click **Apply** to save your changes.
+* Finally, click **[!DNL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
-The **identification** object should now look like this, with the ecid-field now also showing a **fingerprint** icon to show that they have been defined as identifiers.
+The **[!DNL identification]** object should now look like this, with the ecid-field now also showing a **fingerprint** icon to show that they have been defined as identifiers.
 
 ![Data Ingestion](./images/applyidenee.png)
 
-You have now defined a Schema, linked existing and newly created mixins and have defined identifiers.
+You have now defined a schema, linked existing and newly created [!DNL Mixins] and have defined identifiers.
 
-Click **Save** to save your changes.
+Click **[!DNL Save]** to save your changes.
 
 ![Data Ingestion](./images/save.png)
 
-The last thing to do here, is to activate the Schema to be linked to the **Profile**.
-By enabling your schema for Profile, you're making sure that all data sent to Adobe Experience Platform against this schema will be part of the Real-time Customer Profile environment, which makes sure that all that data can be used in real-time for querying, segmentation and activation.
+The last thing to do here, is to activate the Schema to be linked to the **[!DNL Profile]**.
+By enabling your schema for [!DNL Profile], you're making sure that all data sent to Adobe Experience Platform against this schema will be part of the Real-time Customer Profile, which makes sure that all that data can be used in real-time for querying, segmentation and activation.
 
 To do this, let's select the name of your schema.
 
 ![Data Ingestion](./images/schemastructureeee.png)
 
-In the right tab of your schema, you'll see a **Profile toggle**, which is currently deactivated.
+In the right tab of your schema, you'll see a **[!DNL Profile] toggle**, which is currently deactivated.
 
 ![Data Ingestion](./images/upswitcheree.png)
 
-Activate the Profile - switch by clicking it.
+Activate the [!DNL Profile] - switch by clicking it.
 
 You'll see this message:
 
 ![Data Ingestion](./images/sure.png)
 
-Click **Enable** to enable this schema for Profile.
+Click **[!DNL Enable]** to enable this schema for Profile.
 
-Your Schema is now configured to be part of the Real-time Customer Profile.
+Your schema is now configured to be part of the Real-time Customer Profile.
 
 ![Data Ingestion](./images/surey.png)
 
-Finally, click **Save** to save your schema.
+Finally, click **[!DNL Save]** to save your schema.
 
 ![Data Ingestion](./images/save.png)
 
