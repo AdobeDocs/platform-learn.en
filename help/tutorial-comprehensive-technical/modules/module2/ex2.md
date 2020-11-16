@@ -36,11 +36,11 @@ Capturing the answer to **Who is this customer?** for your company is done throu
 
 ![Data Ingestion](./images/lb_register_dtl.png)
 
-From a Schema perspective, we look at this as a **Class**. The question: **Who is this customer?** is something that we define in the Class **[!DNL XDM Individual Profile]**.
+From a Schema perspective, we look at this as a **Class**. The question: **Who is this customer?** is something that we define in the Class **[!UICONTROL XDM Individual Profile]**.
 
-So when you create an XDM Schema to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!DNL XDM Individual Profile]**.
+So when you create an XDM Schema to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!UICONTROL XDM Individual Profile]**.
 
-To specify what kind of answers can be given to that question, you'll need to define [!DNL Mixins]. [!DNL Mixins] are extensions of the Profile-class, and have very specific configurations. For instance, demographic information like First Name, Last Name, Gender and Birthday are part of the [!DNL Mixin]: **[!DNL Demographic Details]**.
+To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Mixins]. [!UICONTROL Mixins] are extensions of the Profile-class, and have very specific configurations. For instance, demographic information like First Name, Last Name, Gender and Birthday are part of the [!UICONTROL Mixin]: **[!UICONTROL Demographic Details]**.
 
 Secondly, your company needs to decide how to identify this customer. In the case of your company, the main identifier for a known customer might be a specific customer ID, like for instance an email address. But technically, there are other ways of identifying a customer at your company, like using a mobile phone number.
 In this lab, we'll define the email address as the primary identifier and the phone number as a secondary identifier.
@@ -55,7 +55,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!DNL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -63,19 +63,19 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In Adobe Experience Platform, click on **[!DNL Schemas]** in the menu on the left side of your screen.
+In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen.
 
 ![Data Ingestion](./images/menuschemas.png)
 
-You'll see the list of available [!DNL Schemas]. 
+You'll see the list of available [!UICONTROL Schemas]. 
 
 ![Data Ingestion](./images/schemas.png)
 
-You should create a new schema. To create a new schema, click on the button **[!DNL + Create Schema]** and select **[!DNL XDM Individual Profile]**.
+You should create a new schema. To create a new schema, click on the button **[!UICONTROL + Create Schema]** and select **[!UICONTROL XDM Individual Profile]**.
 
 ![Data Ingestion](./images/createschema.png)
 
-After clicking the **[!DNL + Create Schema]** button, you'll see a new schema. 
+After clicking the **[!UICONTROL + Create Schema]** button, you'll see a new schema. 
 
 ![Data Ingestion](./images/emptyschema.png)
 
@@ -83,17 +83,17 @@ Let's first name your schema.
 
 As the name for our schema, we'll use this:
 
-**[!DNL ldap - Demo System - Profile Schema for Website]**
+**[!UICONTROL ldap - Demo System - Profile Schema for Website]**
 
-Replace **[!DNL ldap]** by your specific ldap. As an example, for ldap **[!DNL vangeluw]**, this should be the name of the schema:
+Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
-**[!DNL vangeluw - Demo System - Profile Schema for Website]**
+**[!UICONTROL vangeluw - Demo System - Profile Schema for Website]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/schemaname.png)
 
-The class of your schema is already selected and should be **[!DNL XDM Individual Profile]**. 
+The class of your schema is already selected and should be **[!UICONTROL XDM Individual Profile]**. 
 
 ![Data Ingestion](./images/XDMProfile.png)
 
@@ -102,7 +102,7 @@ Based on that selected class, you already see an overview of the minimal structu
 ![Data Ingestion](./images/classoverview.png)
 
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the field **[!DNL _id]** is a required field.
+For instance, the field **[!UICONTROL _id]** is a required field.
 
 * _id needs to contain a unique id for a specific data ingestion
 
@@ -114,26 +114,26 @@ In the introduction of this lab, we noted the need for following attributes to d
 * Other Information linked to Language, OptIn/OptOut and maybe even Profile Pictures. 
 * Primary Identifier for a customer
 
-To make that information part of your schema, you need to add the following [!DNL Mixins] to your schema:
+To make that information part of your schema, you need to add the following [!UICONTROL Mixins] to your schema:
 
 * Demographic Details (Demographic Information)
 * Personal Contact Details (Contact Information)
 * Preference Details (Other Information)
 * your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
 
-You can add these [!DNL Mixin] by clicking the **[!DNL + Add]** button below the Class that you just defined.
+You can add these [!UICONTROL Mixin] by clicking the **[!UICONTROL + Add]** button below the Class that you just defined.
 
 ![Data Ingestion](./images/addmixin.png)
 
-Let's start with **[!DNL Demographic Details]**.
+Let's start with **[!UICONTROL Demographic Details]**.
 
-Click the **[!DNL + Add]** button to start adding a Mixin.
+Click the **[!UICONTROL + Add]** button to start adding a Mixin.
 
-In the **[!DNL Add Mixin]** screen, select the [!DNL Mixin] **[!DNL Demographic Details]**, **[!DNL Personal Contact Details]** and **[!DNL Preference Details]**.
+In the **[!UICONTROL Add Mixin]** screen, select the [!UICONTROL Mixin] **[!UICONTROL Demographic Details]**, **[!UICONTROL Personal Contact Details]** and **[!UICONTROL Preference Details]**.
 
 ![Data Ingestion](./images/ppfd.png)
 
-Click the **[!DNL Add Mixin]** button to add the [!DNL Mixin] to your schema.
+Click the **[!UICONTROL Add Mixin]** button to add the [!UICONTROL Mixin] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -141,33 +141,33 @@ You'll now have this:
 
 ![Data Ingestion](./images/schemathis.png)
 
-Lastly, you need a new [!DNL Mixin] to capture the **[!DNL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
+Lastly, you need a new [!UICONTROL Mixin] to capture the **[!UICONTROL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
 
-You will now create your own custom [!DNL Mixin] and as such, you'll be extending the [!DNL XDM Schema] to meet your own company's requirements.
+You will now create your own custom [!UICONTROL Mixin] and as such, you'll be extending the [!UICONTROL XDM Schema] to meet your own company's requirements.
 
-Click the **[!DNL + Add]** button to start adding a [!DNL Mixin].
+Click the **[!UICONTROL + Add]** button to start adding a [!UICONTROL Mixin].
 
 ![Data Ingestion](./images/addmixin2.png)
 
-Instead of reusing an existing [!DNL Mixin], you'll now create your own [!DNL Mixin]. You can do that by selecting **[!DNL Create New Mixin]**.
+Instead of reusing an existing [!UICONTROL Mixin], you'll now create your own [!UICONTROL Mixin]. You can do that by selecting **[!UICONTROL Create New Mixin]**.
 
 ![Data Ingestion](./images/createmixin.png)
 
-You now need to provide a **[!DNL Display Name]** and **[!DNL Description]** for your new [!DNL Mixin]. 
+You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Description]** for your new [!UICONTROL Mixin]. 
 
 As the name for our schema, we'll use this:
 
-**[!DNL ldap - Profile Identification Mixin]**
+**[!UICONTROL ldap - Profile Identification Mixin]**
 
-Replace **[!DNL ldap]** by your specific ldap. As an example, for ldap **[!DNL vangeluw]**, this should be the name of the schema:
+Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
-**[!DNL vangeluw - Profile Identification Mixin]**
+**[!UICONTROL vangeluw - Profile Identification Mixin]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/mixinname.png)
 
-Click the **[!DNL Add Mixin]** button to add the newly created [!DNL Mixin] to your schema.
+Click the **[!UICONTROL Add Mixin]** button to add the newly created [!UICONTROL Mixin] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -175,61 +175,61 @@ You should now have this schema structure in place.
 
 ![Data Ingestion](./images/schemastructurem.png)
 
-Your new [!DNL Mixin] is still empty, so now you'll have to add fields to that [!DNL Mixin].
-In the [!DNL Mixin]-list, click your custom [!DNL Mixin].
+Your new [!UICONTROL Mixin] is still empty, so now you'll have to add fields to that [!UICONTROL Mixin].
+In the [!UICONTROL Mixin]-list, click your custom [!UICONTROL Mixin].
 
 ![Data Ingestion](./images/schemastructurem.png)
 
-You now see a number of new buttons appear. These buttons are named **[!DNL + Add Field]**.
+You now see a number of new buttons appear. These buttons are named **[!UICONTROL + Add Field]**.
 
-On the top-level of your Schema, next to your Schema - name, click the **[!DNL + Add Field]** button.
+On the top-level of your Schema, next to your Schema - name, click the **[!UICONTROL + Add Field]** button.
 
 ![Data Ingestion](./images/clickaddfield.png)
 
-After clicking the **[!DNL + Add Field]** button, you now see a new **[!DNL object]** in your schema. This object represents a custom **[!DNL object]** in your Schema and is named after your Adobe Experience Platform Tenant ID. Your Adobe Experience Platform tenant id is `--aepTenantId--`.
+After clicking the **[!UICONTROL + Add Field]** button, you now see a new **[!UICONTROL object]** in your schema. This object represents a custom **[!UICONTROL object]** in your Schema and is named after your Adobe Experience Platform Tenant ID. Your Adobe Experience Platform tenant id is `--aepTenantId--`.
 
 ![Data Ingestion](./images/tenant.png)
 
-We'll now add a new object under that tenant. To do that, click the field **[!DNL New Field]** under the tenant-object.
+We'll now add a new object under that tenant. To do that, click the field **[!UICONTROL New Field]** under the tenant-object.
 
 ![Data Ingestion](./images/tenantfield.png)
 
 Use these object-definitions:
 
-* Field name: **[!DNL identification]**
-* Display name:  **[!DNL identification]**
-* Type: **[!DNL Object]**
+* Field name: **[!UICONTROL identification]**
+* Display name:  **[!UICONTROL identification]**
+* Type: **[!UICONTROL Object]**
 
 ![Data Ingestion](./images/tenantfielddef.png)
 
-Click **[!DNL Apply]** to save your changes.
+Click **[!UICONTROL Apply]** to save your changes.
 
 ![Data Ingestion](./images/apply.png)
 
-After clicking **[!DNL Apply]**, you now see your **[!DNL identification]** object in the Schema.
+After clicking **[!UICONTROL Apply]**, you now see your **[!UICONTROL identification]** object in the Schema.
 
 ![Data Ingestion](./images/schemaid.png)
 
-You'll now add 3 new fields under the  **[!DNL identification]** object:
+You'll now add 3 new fields under the  **[!UICONTROL identification]** object:
 
 * ecid:
-  * Field name: **[!DNL ecid]**
-  * Display name:  **[!DNL ecid]**
-  * Type: **[!DNL String]**
+  * Field name: **[!UICONTROL ecid]**
+  * Display name:  **[!UICONTROL ecid]**
+  * Type: **[!UICONTROL String]**
 
 * emailId
-  * Field name: **[!DNL emailId]**
-  * Display name:  **[!DNL emailId]**
-  * Type: **[!DNL String]**
+  * Field name: **[!UICONTROL emailId]**
+  * Display name:  **[!UICONTROL emailId]**
+  * Type: **[!UICONTROL String]**
   
 * mobilenr
-  * Field name: **[!DNL mobilenr]**
-  * Display name:  **[!DNL mobilenr]**
-  * Type: **[!DNL String]**
+  * Field name: **[!UICONTROL mobilenr]**
+  * Display name:  **[!UICONTROL mobilenr]**
+  * Type: **[!UICONTROL String]**
 
-Each field will be defined as type **[!DNL String]** and we'll configure these fields as **[!DNL Identities]**. For the Schema **[!DNL Website Registration Schema]**, we assume that a customer will always be identified by their email-address, which means that you have to configure the field **[!DNL emailId]** as a **[!DNL primary]** identifier, and the other fields as **[!DNL secondary]** identifiers.
+Each field will be defined as type **[!UICONTROL String]** and we'll configure these fields as **[!UICONTROL Identities]**. For the Schema **[!UICONTROL Website Registration Schema]**, we assume that a customer will always be identified by their email-address, which means that you have to configure the field **[!UICONTROL emailId]** as a **[!UICONTROL primary]** identifier, and the other fields as **[!UICONTROL secondary]** identifiers.
 
-To add the fields, click the **[!DNL +]** button next to the **[!DNL identification]** object.
+To add the fields, click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object.
 
 ![Data Ingestion](./images/schemaid2.png)
 
@@ -239,121 +239,121 @@ You now have an empty field. You need to configure the above 3 fields as indicat
 
 This is how each field should look after your initial field configuration.
 
-Click the **[!DNL +]** button next to the **[!DNL identification]** object to create a new field and fill out the fields as indicated.
+Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
 * ecid
 
 ![Data Ingestion](./images/ecidfield.png)
 
-To save your field, scroll down in the **[!DNL Field Properties]** until you see the button **[!DNL Apply]**. Click the **[!DNL Apply]** button.
+To save your field, scroll down in the **[!UICONTROL Field Properties]** until you see the button **[!UICONTROL Apply]**. Click the **[!UICONTROL Apply]** button.
 
 ![Data Ingestion](./images/apply.png)
 
-Click the **[!DNL +]** button next to the **[!DNL identification]** object to create a new field and fill out the fields as indicated.
+Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
 * emailId
 
 ![Data Ingestion](./images/emailidfield.png)
 
-To save your field, scroll down in the **[!DNL Field Properties]** until you see the button **[!DNL Apply]**. Click the **[!DNL Apply]** button.
+To save your field, scroll down in the **[!UICONTROL Field Properties]** until you see the button **[!UICONTROL Apply]**. Click the **[!UICONTROL Apply]** button.
 
 ![Data Ingestion](./images/apply.png)
 
-Click the **[!DNL +]** button next to the **[!DNL identification]** object to create a new field and fill out the fields as indicated.
+Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
 * mobilenr
 
 ![Data Ingestion](./images/mobilenrfield.png)
 
-To save your field, scroll down in the **[!DNL Field Properties]** until you see the button **[!DNL Apply]**. Click the **[!DNL Apply]** button.
+To save your field, scroll down in the **[!UICONTROL Field Properties]** until you see the button **[!UICONTROL Apply]**. Click the **[!UICONTROL Apply]** button.
 
 ![Data Ingestion](./images/apply.png)
 
-You now have 3 fields, but these fields haven't been defined as **[!DNL Identity]**-fields yet.
+You now have 3 fields, but these fields haven't been defined as **[!UICONTROL Identity]**-fields yet.
 
 ![Data Ingestion](./images/3fields.png)
 
-To start defining these fields as **[!DNL Identity]**-fields, follow these steps:
+To start defining these fields as **[!UICONTROL Identity]**-fields, follow these steps:
 
-* Select the field **[!DNL emailId]**.
-* On the right side, in the field properties, scroll down until you see **[!DNL Identity]**. Check the checkbox for **[!DNL Identity]**. 
+* Select the field **[!UICONTROL emailId]**.
+* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/emailidid.png)
 
-* Now check the checkbox for **[!DNL Primary Identity]**.
+* Now check the checkbox for **[!UICONTROL Primary Identity]**.
 
   ![Data Ingestion](./images/emailidprimid.png)
   
-* Lastly, select the namespace **[!DNL Email]** from the list of **[!DNL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+* Lastly, select the namespace **[!UICONTROL Email]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/emailidprimidns.png)
 
-* Finally, click **[!DNL Apply]** to save your changes.
+* Finally, click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
   
-Next, you have to define the other fields for **[!DNL ecid]** and **[!DNL mobilenr]** as secondary identifiers.
+Next, you have to define the other fields for **[!UICONTROL ecid]** and **[!UICONTROL mobilenr]** as secondary identifiers.
 
-* Select the field **[!DNL ecid]**.
-* On the right side, in the field properties, scroll down until you see **[!DNL Identity]**. Check the checkbox for **[!DNL Identity]**. 
+* Select the field **[!UICONTROL ecid]**.
+* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/ecidid.png)
 
-* Next, select the namespace **[!DNL ECID]** from the list of **[!DNL Namespaces]**. A [!DNL Namespace] is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+* Next, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/ecidprimidns.png)
 
-* Click **[!DNL Apply]** to save your changes.
+* Click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
-* Select the field **[!DNL mobilenr]**.
-* On the right side, in the field properties, scroll down until you see **[!DNL Identity]**. Check the checkbox for **[!DNL Identity]**. 
+* Select the field **[!UICONTROL mobilenr]**.
+* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/mobid.png)
 
-* Next, select the namespace **[!DNL Phone]** from the list of **[!DNL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+* Next, select the namespace **[!UICONTROL Phone]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/mobprimidns.png)
 
-* Click **[!DNL Apply]** to save your changes.
+* Click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
-The **[!DNL identification]** object should now look like this, with the 3 id-fields now also showing a **[!DNL fingerprint]** icon to show that they have been defined as identifiers.
+The **[!UICONTROL identification]** object should now look like this, with the 3 id-fields now also showing a **[!UICONTROL fingerprint]** icon to show that they have been defined as identifiers.
 
 ![Data Ingestion](./images/applyiden.png)
 
-You have now defined a Schema, linked existing and newly created [!DNL Mixin] and have defined identifiers.
+You have now defined a Schema, linked existing and newly created [!UICONTROL Mixin] and have defined identifiers.
 
-Click **[!DNL Save]** to save your changes.
+Click **[!UICONTROL Save]** to save your changes.
 
 ![Data Ingestion](./images/save.png)
 
-The last thing to do here, is to activate the Schema to be linked to the **[!DNL Profile]**.
+The last thing to do here, is to activate the Schema to be linked to the **[!UICONTROL Profile]**.
 By enabling your schema for Profile, you're making sure that all data sent to Adobe Experience Platform against this schema will be part of the Real-time Customer Profile environment, which makes sure that all that data can be used in real-time for querying, segmentation and activation.
 
 To do this, let's select the name of your schema.
 
 ![Data Ingestion](./images/schemastructure.png)
 
-In the right tab of your schema, you'll see a **[!DNL Profile toggle]**, which is currently deactivated.
+In the right tab of your schema, you'll see a **[!UICONTROL Profile toggle]**, which is currently deactivated.
 
 ![Data Ingestion](./images/upswitcher.png)
 
-Activate the [!DNL Profile] - switch by clicking it.
+Activate the [!UICONTROL Profile] - switch by clicking it.
 
 You'll see this message:
 
 ![Data Ingestion](./images/sure.png)
 
-Click **[!DNL Enable]** to enable this schema for Profile.
+Click **[!UICONTROL Enable]** to enable this schema for Profile.
 
-Your Schema is now configured to be part of the [!DNL Real-time Customer Profile].
+Your Schema is now configured to be part of the [!UICONTROL Real-time Customer Profile].
 
 ![Data Ingestion](./images/surey.png)
 
-Finally, click **[!DNL Save]** to save your schema.
+Finally, click **[!UICONTROL Save]** to save your schema.
 
 ![Data Ingestion](./images/save.png)
 
@@ -363,13 +363,13 @@ Capturing the answer to the question **What does this customer do?** for your co
 
 ![Data Ingestion](./images/lb_babars.png)
 
-From a schema perspective, we look at this as a **[!DNL Class]**. The question: **What does this customer do?**is something that we've defined in the class **[!DNL ExperienceEvent]**.
+From a schema perspective, we look at this as a **[!UICONTROL Class]**. The question: **What does this customer do?**is something that we've defined in the class **[!UICONTROL ExperienceEvent]**.
 
-So when you create an [!DNL XDM Schema] to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!DNL ExperienceEvent]**.
+So when you create an [!UICONTROL XDM Schema] to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!UICONTROL ExperienceEvent]**.
 
-To specify what kind of answers can be given to that question, you'll need to define [!DNL Mixin]. [!DNL Mixins] are extensions of the [!DNL ExperienceEvent]-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the [!DNL Mixin] **Commerce Details**.
+To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Mixin]. [!UICONTROL Mixins] are extensions of the [!UICONTROL ExperienceEvent]-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the [!UICONTROL Mixin] **Commerce Details**.
 
-Secondly, your company needs to decide how you'll identify the behavior of this customer. Since we're talking about interactions on a website, it's possible that your company knows the customer but it's equally possible that an unknown, anonymous visitor is active on the website. So we can't use an identifier like email-address. In this case, your company will probably decide to use the [!DNL Experience Cloud ID (ECID)] as the primary identifier.
+Secondly, your company needs to decide how you'll identify the behavior of this customer. Since we're talking about interactions on a website, it's possible that your company knows the customer but it's equally possible that an unknown, anonymous visitor is active on the website. So we can't use an identifier like email-address. In this case, your company will probably decide to use the [!UICONTROL Experience Cloud ID (ECID)] as the primary identifier.
 
 Lastly, it's important to distinguish the channel on which data was captured. In this case, we'll be talking about Website Interactions and the schema that needs to be defined needs to reflect **where** the interaction data was captured. The channel will also have an important role in influencing what data is captured. As such, it's a best practice to define schema's for every combination of channel, primary identifier and type of data collected.
 
@@ -379,7 +379,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **[!DNL sandbox]**. The [!DNL sandbox] to select is named ``--module2sandbox--``. You can do this by clicking the text **[!DNL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **[!UICONTROL sandbox]**. The [!UICONTROL sandbox] to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -389,36 +389,36 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In Adobe Experience Platform, click on **[!DNL Schemas]** in the menu on the left side of your screen.
+In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen.
 
 ![Data Ingestion](./images/menuschemas.png)
 
-In [!DNL Schemas], you'll see your previously defined schema. 
+In [!UICONTROL Schemas], you'll see your previously defined schema. 
 
 ![Data Ingestion](./images/schemasee.png)
 
-You should create a new schema. To create a new schema, click on the button **[!DNL + Create Schema]** and select **[!DNL XDM ExperienceEvent]**.
+You should create a new schema. To create a new schema, click on the button **[!UICONTROL + Create Schema]** and select **[!UICONTROL XDM ExperienceEvent]**.
 
 ![Data Ingestion](./images/createschema1.png)
 
-After clicking the **[!DNL + Create Schema]** button, you'll see an empty, new schema. 
+After clicking the **[!UICONTROL + Create Schema]** button, you'll see an empty, new schema. 
 
 ![Data Ingestion](./images/emptyschemaee.png)
 
 Let's first name your schema. Please use the following naming for your schema:
 
 As the name for our schema, we'll use this:
-**[!DNL ldap - Demo System - Event Schema for Website]**
+**[!UICONTROL ldap - Demo System - Event Schema for Website]**
 
-Replace **[!DNL ldap]** by your specific ldap. As an example, for ldap **[!DNL vangeluw]**, this should be the name of the schema:
+Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
-**[!DNL vangeluw - Demo System - Event Schema for Website]**
+**[!UICONTROL vangeluw - Demo System - Event Schema for Website]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/schemanameee.png)
 
-The class of your schema is already selected and should be **[!DNL XDM ExperienceEvent]**. 
+The class of your schema is already selected and should be **[!UICONTROL XDM ExperienceEvent]**. 
 
 ![Data Ingestion](./images/XDMEE.png)
 
@@ -427,10 +427,10 @@ Based on that selected class, you already see an overview of the minimal structu
 ![Data Ingestion](./images/classoverviewee.png)
 
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the fields **[!DNL _id]** and **[!DNL timestamp]** are required fields.
+For instance, the fields **[!UICONTROL _id]** and **[!UICONTROL timestamp]** are required fields.
 
 * _id needs to contain a unique id for a specific data ingestion
-* timestamp needs to be the timestamp of this hit, in the format **[!DNL "YYYY-MM-DDTHH:MM:SSSZ"]**, like for instance: **[!DNL "2019-04-08T07:20:000Z"]**
+* timestamp needs to be the timestamp of this hit, in the format **[!UICONTROL "YYYY-MM-DDTHH:MM:SSSZ"]**, like for instance: **[!UICONTROL "2019-04-08T07:20:000Z"]**
 
 Now you need to define what an answer to the question **What does this customer do?** should look like.
 In the introduction of this lab, we noted the need for following attributes to define what a customer does:
@@ -442,26 +442,26 @@ In the introduction of this lab, we noted the need for following attributes to d
 * Primary Identifier for a customer
 
 
-To make that information part of your schema, you need to add the following [!DNL Mixin] to your schema:
+To make that information part of your schema, you need to add the following [!UICONTROL Mixin] to your schema:
 
 * Web Details
 * Commerce Details
 * Environment Details
-* your company's custom Profile Identification [!DNL Mixin] (Primary and Secondary Identifiers)
+* your company's custom Profile Identification [!UICONTROL Mixin] (Primary and Secondary Identifiers)
 
-You can add these [!DNL Mixin] by clicking the **[!DNL + Add]** button below the Class.
+You can add these [!UICONTROL Mixin] by clicking the **[!UICONTROL + Add]** button below the Class.
 
 ![Data Ingestion](./images/addmixinee.png)
 
-Let's start with **[!DNL Web Details]**.
+Let's start with **[!UICONTROL Web Details]**.
 
-Click the **[!DNL + Add]** button to start adding a [!DNL Mixin].
+Click the **[!UICONTROL + Add]** button to start adding a [!UICONTROL Mixin].
 
-In the **[!DNL Add Mixin]** screen, select the [!DNL Mixins] **[!DNL Web Details]**, **[!DNL Commerce Details]** and **[!DNL Environment Details]**.
+In the **[!UICONTROL Add Mixin]** screen, select the [!UICONTROL Mixins] **[!UICONTROL Web Details]**, **[!UICONTROL Commerce Details]** and **[!UICONTROL Environment Details]**.
 
 ![Data Ingestion](./images/eeed.png)
 
-Click the **[!DNL Add Mixin]** button to add the Mixin to your schema.
+Click the **[!UICONTROL Add Mixin]** button to add the Mixin to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -469,158 +469,158 @@ You'll then have this:
 
 ![Data Ingestion](./images/eethis.png)
 
-Lastly, you need a new [!DNL Mixin] to capture the **[!DNL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
+Lastly, you need a new [!UICONTROL Mixin] to capture the **[!UICONTROL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
 
-You will now create your own custom [!DNL Mixin] and as such, you'll be extending the [!DNL XDM Schema] to meet your own company's requirements.
+You will now create your own custom [!UICONTROL Mixin] and as such, you'll be extending the [!UICONTROL XDM Schema] to meet your own company's requirements.
 
-A [!DNL Mixin] is linked to a [!DNL Class], so that means that you can't simply reuse the previously created [!DNL Mixin].
+A [!UICONTROL Mixin] is linked to a [!UICONTROL Class], so that means that you can't simply reuse the previously created [!UICONTROL Mixin].
 
-Click the **[!DNL + Add]** button to start adding a [!DNL Mixin].
+Click the **[!UICONTROL + Add]** button to start adding a [!UICONTROL Mixin].
 
 ![Data Ingestion](./images/addmixinee2.png)
 
-Instead of reusing an existing [!DNL Mixin], you'll now create your own [!DNL Mixin]. You can do that by selecting **[!DNL Create New Mixin]**.
+Instead of reusing an existing [!UICONTROL Mixin], you'll now create your own [!UICONTROL Mixin]. You can do that by selecting **[!UICONTROL Create New Mixin]**.
 
 ![Data Ingestion](./images/createmixin.png)
 
-You now need to provide a **[!DNL Display Name]** and **[!DNL Description]** for your new Mixin. 
+You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Description]** for your new Mixin. 
 
 As the name for our mixin, we'll use this:
 
-**[!DNL ldap - ExperienceEvent Identification Mixin]**
+**[!UICONTROL ldap - ExperienceEvent Identification Mixin]**
 
-Replace **[!DNL ldap]** by your specific ldap. As an example, for ldap **[!DNL vangeluw]**, this should be the name of the schema:
+Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
-**[!DNL vangeluw - ExperienceEvent Identification Mixin]**
+**[!UICONTROL vangeluw - ExperienceEvent Identification Mixin]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/mixinnameee.png)
 
-Click the **[!DNL Add Mixin]** button to add the newly created [!DNL Mixin] to your schema.
+Click the **[!UICONTROL Add Mixin]** button to add the newly created [!UICONTROL Mixin] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
-You should now have this [!DNL Schema] structure in place.
+You should now have this [!UICONTROL Schema] structure in place.
 
 ![Data Ingestion](./images/schemastructuremee.png)
 
-Your new [!DNL Mixin] is still empty, so now you'll have to add fields to that Mixin.
-In the [!DNL Mixin]-list, click your custom [!DNL Mixin].
+Your new [!UICONTROL Mixin] is still empty, so now you'll have to add fields to that Mixin.
+In the [!UICONTROL Mixin]-list, click your custom [!UICONTROL Mixin].
 
 ![Data Ingestion](./images/mixinselectedee.png)
 
 You now see a number of new buttons appear. 
 
-On the top-level of your Schema, next to your Schema - name, click the **[!DNL +]** button.
+On the top-level of your Schema, next to your Schema - name, click the **[!UICONTROL +]** button.
 
 ![Data Ingestion](./images/clickaddfieldee.png)
 
-After clicking the **[!DNL +]** button, you now see a new **[!DNL object]** in your schema. This object represents a custom **[!DNL object]** in your [!DNL Schema] and is named after your Adobe Experience Platform Tenant ID. Your Adobe Experience Platform tenant id is `--aepTenantId--`.
+After clicking the **[!UICONTROL +]** button, you now see a new **[!UICONTROL object]** in your schema. This object represents a custom **[!UICONTROL object]** in your [!UICONTROL Schema] and is named after your Adobe Experience Platform Tenant ID. Your Adobe Experience Platform tenant id is `--aepTenantId--`.
 
 ![Data Ingestion](./images/tenantee.png)
 
-You'll now add a new object under that tenant. To do that, click the field **[!DNL New Field]** under the tenant-object.
+You'll now add a new object under that tenant. To do that, click the field **[!UICONTROL New Field]** under the tenant-object.
 
 ![Data Ingestion](./images/tenantfieldee.png)
 
 Use these object-definitions:
 
-* Field name: **[!DNL identification]**
-* Display name:  **[!DNL identification]**
-* Type: **[!DNL Object]**
+* Field name: **[!UICONTROL identification]**
+* Display name:  **[!UICONTROL identification]**
+* Type: **[!UICONTROL Object]**
 
 ![Data Ingestion](./images/tenantfielddefee.png)
 
-Click **[!DNL Apply]** to save your changes.
+Click **[!UICONTROL Apply]** to save your changes.
 
 ![Data Ingestion](./images/apply.png)
 
-After clicking **[!DNL Apply]**, you now see your **[!DNL identification]** object in the Schema.
+After clicking **[!UICONTROL Apply]**, you now see your **[!UICONTROL identification]** object in the Schema.
 
 ![Data Ingestion](./images/schemaidee.png)
 
-You'll now add 1 new field under the  **[!DNL identification]** object.
+You'll now add 1 new field under the  **[!UICONTROL identification]** object.
 
-Click the **[!DNL +]** button next to the **[!DNL identification]** object to create a new field.
+Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field.
 
 ![Data Ingestion](./images/schemaideeplus.png)
 
-The ECID-field will be defined as type **[!DNL String]** and you'll configure this field as an **[!DNL Identity]**. For the Schema **[!DNL Demo System - Event Schema for Website]**, we assume that a customer will always be identified by their [!DNL ECID], which means that you have to configure the field **[!DNL ECID]** as a **primary** identifier
+The ECID-field will be defined as type **[!UICONTROL String]** and you'll configure this field as an **[!UICONTROL Identity]**. For the Schema **[!UICONTROL Demo System - Event Schema for Website]**, we assume that a customer will always be identified by their [!UICONTROL ECID], which means that you have to configure the field **[!UICONTROL ECID]** as a **primary** identifier
 
 You now have an empty field. You need to configure the above field as indicated.
 
 * ecid:
 
-  * Field name: **[!DNL ecid]**
-  * Display name:  **[!DNL ecid]**
-  * Type: **[!DNL String]**
+  * Field name: **[!UICONTROL ecid]**
+  * Display name:  **[!UICONTROL ecid]**
+  * Type: **[!UICONTROL String]**
 
-This is how the [!DNL ecid]-field should look after your initial field configuration:
+This is how the [!UICONTROL ecid]-field should look after your initial field configuration:
 
 ![Data Ingestion](./images/ecidfieldee.png)
 
-Scroll down and click **[!DNL Apply]**.
+Scroll down and click **[!UICONTROL Apply]**.
 
 ![Data Ingestion](./images/apply.png)
 
-You now have a new field, but this field hasn't been defined as an **[!DNL Identity]**-field yet.
+You now have a new field, but this field hasn't been defined as an **[!UICONTROL Identity]**-field yet.
 
 ![Data Ingestion](./images/3fieldsee.png)
 
-To start defining these fields as **[!DNL Identity]**-fields, follow these steps:
+To start defining these fields as **[!UICONTROL Identity]**-fields, follow these steps:
 
-* Select the field **[!DNL ecid]**.
-* On the right side, in the field properties, scroll down until you see **[!DNL Identity]**. Check the checkbox for **[!DNL Identity]**. 
+* Select the field **[!UICONTROL ecid]**.
+* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
 ![Data Ingestion](./images/ecididee.png)
 
-* Now check the checkbox for **[!DNL Primary Identity]**.
+* Now check the checkbox for **[!UICONTROL Primary Identity]**.
 
 ![Data Ingestion](./images/ecidprimidee.png)
   
-* Lastly, select the namespace **[!DNL ECID]** from the list of **[!DNL Namespaces]**. A [!DNL Namespace] is used by the [!DNL Identity Graph] in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+* Lastly, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the [!UICONTROL Identity Graph] in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/ecidprimidnsee.png)
 
-* Finally, click **[!DNL Apply]** to save your changes.
+* Finally, click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
-The **[!DNL identification]** object should now look like this, with the ecid-field now also showing a **fingerprint** icon to show that they have been defined as identifiers.
+The **[!UICONTROL identification]** object should now look like this, with the ecid-field now also showing a **fingerprint** icon to show that they have been defined as identifiers.
 
 ![Data Ingestion](./images/applyidenee.png)
 
-You have now defined a schema, linked existing and newly created [!DNL Mixins] and have defined identifiers.
+You have now defined a schema, linked existing and newly created [!UICONTROL Mixins] and have defined identifiers.
 
-Click **[!DNL Save]** to save your changes.
+Click **[!UICONTROL Save]** to save your changes.
 
 ![Data Ingestion](./images/save.png)
 
-The last thing to do here, is to activate the Schema to be linked to the **[!DNL Profile]**.
-By enabling your schema for [!DNL Profile], you're making sure that all data sent to Adobe Experience Platform against this schema will be part of the Real-time Customer Profile, which makes sure that all that data can be used in real-time for querying, segmentation and activation.
+The last thing to do here, is to activate the Schema to be linked to the **[!UICONTROL Profile]**.
+By enabling your schema for [!UICONTROL Profile], you're making sure that all data sent to Adobe Experience Platform against this schema will be part of the Real-time Customer Profile, which makes sure that all that data can be used in real-time for querying, segmentation and activation.
 
 To do this, let's select the name of your schema.
 
 ![Data Ingestion](./images/schemastructureeee.png)
 
-In the right tab of your schema, you'll see a **[!DNL Profile] toggle**, which is currently deactivated.
+In the right tab of your schema, you'll see a **[!UICONTROL Profile] toggle**, which is currently deactivated.
 
 ![Data Ingestion](./images/upswitcheree.png)
 
-Activate the [!DNL Profile] - switch by clicking it.
+Activate the [!UICONTROL Profile] - switch by clicking it.
 
 You'll see this message:
 
 ![Data Ingestion](./images/sure.png)
 
-Click **[!DNL Enable]** to enable this schema for Profile.
+Click **[!UICONTROL Enable]** to enable this schema for Profile.
 
 Your schema is now configured to be part of the Real-time Customer Profile.
 
 ![Data Ingestion](./images/surey.png)
 
-Finally, click **[!DNL Save]** to save your schema.
+Finally, click **[!UICONTROL Save]** to save your schema.
 
 ![Data Ingestion](./images/save.png)
 
