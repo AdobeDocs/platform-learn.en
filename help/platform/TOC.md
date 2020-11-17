@@ -72,6 +72,7 @@ audience: all
   + [Publish a model as a service (UI)](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/publish-model-service-ui.html)
   + [Schedule automated training and scoring on a service (UI)](https://docs.adobe.com/content/help/en/experience-platform/data-science-workspace/models-recipes/schedule-models-ui.html)
 + Destinations {#destinations}
+  + [Configuring File-based Cloud Storage or Email Marketing Destinations](destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Connect to a destination (UI)](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
   + [Activate profiles and segments to a destination (UI)](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)
   + [Connect to streaming destinations (AWS Kinesis and Azure Event Hubs) and activate data (API)](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html)
