@@ -18,7 +18,8 @@ Highlights will be mentioned when this exercise is published.
 
 ## Check this out
 
-- AEP Tech Blog: 
+- Product documentation: [Offer Decisioning Glossary](https://experienceleague.adobe.com/docs/offer-decisioning/using/get-started/glossary.html?lang=en#get-started)
+- Product documentation: [Web SDK - Offer Decisioning Overview](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/offer-decisioning/offer-decisioning-overview.html?lang=en#offer-decisioning-overview)
 
 [Go Back to Module 14](./offer-decisioning.md)
 

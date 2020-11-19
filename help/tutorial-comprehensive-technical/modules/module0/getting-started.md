@@ -36,7 +36,7 @@ activity: develop
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
-[0.2 Create your Edge Configuration ID](./ex1.md)
+[0.2 Create your Edge Configuration ID](./ex2.md)
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
