@@ -18,19 +18,19 @@ Download [this Postman Collection for Offer Decisioning](./../../assets/postman/
 
 You now have this file on your desktop:
 
-- \_Module 14- Decisioning Service.postman_collection.json
+- [!UICONTROL _Module 14- Decisioning Service.postman_collection.json]
 
 In [Exercise 3.3.3 - Postman authentication to Adobe I/O](./../../modules/module3/ex3.md) you installed Postman. You'll need to use Postman again for this exercise.
 
-Open Postman. Click **Import**.
+Open Postman. Click **[!UICONTROL Import]**.
 
 ![Adobe I/O New Integration](./images/postmanui.png)
 
-Click on **Upload files**.
+Click on **[!UICONTROL Upload files]**.
 
 ![Adobe I/O New Integration](./images/pm1.png)
 
-Select the file **_Module 14- Decisioning Service.postman_collection.json** and click **Open**.
+Select the file **[!UICONTROL _Module 14- Decisioning Service.postman_collection.json]** and click **[!UICONTROL Open]**.
 
 ![Adobe I/O New Integration](./images/pm2.png)
 
@@ -40,23 +40,27 @@ You'll then have this collection available in Postman.
 
 You now have everything you need in Postman to start interacting with Adobe Experience Platform through the APIs.
 
-Click to open the request **GET - List Containers**. 
+### 14.5.1.1 List Containers
 
-Under **Params**, you'll see this: 
+Click to open the request **[!UICONTROL GET - List Containers]**. 
+
+Under **[!UICONTROL Params]**, you'll see this: 
 
 - property: `_instance.parentName==aepenablement`
 
-In that parameter, **aepenablement** is the name of the sandbox that is used in Adobe Experience Platform. The sandbox you should use is --aepSandboxId--. Replace the text **aepenablement** by --aepSandboxId--.
+In that parameter, **[!UICONTROL aepenablement]** is the name of the sandbox that is used in Adobe Experience Platform. The sandbox you should use is `--aepSandboxId--`. Replace the text **[!UICONTROL aepenablement]** by `--aepSandboxId--`.
 
-After replacing the sandbox name, click **Send**.
+After replacing the sandbox name, click **[!UICONTROL Send]**.
 
 ![OD API](./images/api2.png)
 
-This is the response, which shows the offer container for the sandbox that you specified.
+This is the response, which shows the offer container for the sandbox that you specified. Please copy the **[!UICONTROL container instanceId]** as indicated below and write it down in a text file on your computer. You'll need to use this **[!UICONTROL container instanceId]** for the next exercise!
 
 ![OD API](./images/api3.png)
 
-Click to open the request **GET - List Placements**. Click **Send**.
+### 14.5.1.2 List Placements
+
+Click to open the request **[!UICONTROL GET - List Placements]**. Click **[!UICONTROL Send]**.
 
 ![OD API](./images/api4.png)
 
@@ -64,7 +68,9 @@ You're now seeing all available placements in your offer container. The placemen
 
 ![OD API](./images/api5.png)
 
-Click to open the request **GET - List Decision Rules**. Click **Send**.
+### 14.5.1.3 List Decision Rules
+
+Click to open the request **[!UICONTROL GET - List Decision Rules]**. Click **[!UICONTROL Send]**.
 
 ![OD API](./images/api6.png)
 
@@ -72,7 +78,9 @@ In the response, you'll see the Decision Rules that you defined in the Adobe Exp
 
 ![OD API](./images/api7.png)
 
-Click to open the request **GET - List Personalized Offers**. Click **Send**.
+### 14.5.1.4 List Personalized Offers
+
+Click to open the request **[!UICONTROL GET - List Personalized Offers]**. Click **[!UICONTROL Send]**.
 
 ![OD API](./images/api8.png)
 
@@ -80,7 +88,9 @@ In the response, you'll see the Personalized Offers that you defined in the Adob
 
 ![OD API](./images/api9.png)
 
-Click to open the request **GET - List Fallback Offers**. Click **Send**.
+### 14.5.1.5 List Fallback Offers
+
+Click to open the request **[!UICONTROL GET - List Fallback Offers]**. Click **[!UICONTROL Send]**.
 
 ![OD API](./images/api10.png)
 
@@ -88,7 +98,9 @@ In the response, you'll see the Fallback Offer that you defined in the Adobe Exp
 
 ![OD API](./images/api11.png)
 
-Click to open the request **GET - List Collections**.
+### 14.5.1.6 List Collections
+
+Click to open the request **[!UICONTROL GET - List Collections]**.
 
 ![OD API](./images/api12.png)
 
@@ -96,13 +108,15 @@ In the response, you'll see the Collection that you defined in the Adobe Experie
 
 ![OD API](./images/api13.png)
 
-Click to open the request **GET - List Activities**.
+### 14.5.1.7 List Activities
+
+Click to open the request **[!UICONTROL GET - List Activities]**.
 
 ![OD API](./images/api14.png)
 
 In the response, you'll see the Activity that you defined in the Adobe Experience Platform UI in [Exercise 14.2.4](./ex2.md).
 
-In order to send the next API requests, you now need to search for and then copy the field **@id** for your Offer Activity ID. 
+In order to send the next API requests, you now need to search for and then copy the field **[!UICONTROL @id]** for your Offer Activity ID. 
 
 ![OD API](./images/api15.png)
 
@@ -114,11 +128,13 @@ Next, edit your Postman environment.
 
 ![OD API](./images/api16.png)
 
-Create the variable **OFFER_ACTIVITY_ID** and assign the value of your Offer Activity ID to it. Click **Update** to save your changes.
+Create the variable **[!UICONTROL OFFER_ACTIVITY_ID]** and assign the value of your Offer Activity ID to it. Click **[!UICONTROL Update]** to save your changes.
 
 ![OD API](./images/api17.png)
 
-Click to open the request **GET - Get Offers by Activity Id**. 
+### 14.5.1.8 Get Offers by Activity Id
+
+Click to open the request **[!UICONTROL GET - Get Offers by Activity Id]**. 
 
 ![OD API](./images/api18.png)
 
@@ -126,11 +142,11 @@ In the response, you'll then see the offers that are part of your activity.
 
 ![OD API](./images/api19.png)
 
-Click to open the request **POST - Get Offers for Customer Profile**. With this request, you're able to enter for instance, the email address of a customer to retrieve the offer that should be presented to that customer.
+Click to open the request **[!UICONTROL POST - Get Offers for Customer Profile]**. With this request, you're able to enter for instance, the email address of a customer to retrieve the offer that should be presented to that customer.
 
 ![OD API](./images/api20.png)
 
-Go to **Body** and enter the email address of the customer for whom you'd like to request an offer. Click **Send**.
+Go to **[!UICONTROL Body]** and enter the email address of the customer for whom you'd like to request an offer. Click **[!UICONTROL Send]**.
 
 ![OD API](./images/api21.png)
 
@@ -138,19 +154,21 @@ You'll then get the response from Offer Decisioning with the id's of the persona
 
 ![OD API](./images/api22.png)
 
-Click to open the request **POST - Get Detailed Offers for Customer Profile**. This request is similar to the previous one, but will actually return details like image URLs, text etc.
+### 14.5.1.9 Get Detailed Offers for Customer Profile
+
+Click to open the request **[!UICONTROL POST - Get Detailed Offers for Customer Profile]**. This request is similar to the previous one, but will actually return details like image URLs, text etc.
 
 ![OD API](./images/api23.png)
 
-For this request, similar to the previous exercise which has similar requirements, you need to provide the values for **xdm:placementId** and **xdm:activityId** to retrieve the specific offer details for a customer.
+For this request, similar to the previous exercise which has similar requirements, you need to provide the values for **[!UICONTROL xdm:placementId]** and **[!UICONTROL xdm:activityId]** to retrieve the specific offer details for a customer.
 
-The field **xdm:activityId** is already populated as the result of a previous request you sent, after which you stored the key **OFFER_ACTIVITY_ID** in your Postman environment.
+The field **[!UICONTROL xdm:activityId]** is already populated as the result of a previous request you sent, after which you stored the key **[!UICONTROL OFFER_ACTIVITY_ID]** in your Postman environment.
 
-The field **xdm:placementId** needs to be filled out. You can retrieve that in the Adobe Experience Platform UI, as indicated below. In the below example, you can see the placementId for the placement **Web - Image**.
+The field **[!UICONTROL xdm:placementId]** needs to be filled out. You can retrieve that in the Adobe Experience Platform UI, as indicated below. In the below example, you can see the placementId for the placement **[!UICONTROL Web - Image]**.
 
 ![OD API](./images/placementid.png)
 
-Go to **Body** and enter the email address of the customer for whom you'd like to request an offer. Click **Send**.
+Go to **[!UICONTROL Body]** and enter the email address of the customer for whom you'd like to request an offer. Click **[!UICONTROL Send]**.
 
 ![OD API](./images/api24.png)
 
@@ -158,9 +176,136 @@ Finally, you'll then see the result of what kind of personalized offer and what 
 
 ![OD API](./images/api25.png)
 
-
 ## 14.5.2 Use the Offer Decisioning API to showcase offers on Xray
 
+In the previous exercise you used the API to retrieve information from Adobe Experience Platform and Offer Decisioning. Let's now have a look at a practical example.
+
+You've seen the Xray panel on the website before. The Xray panel is using the Adobe Experience Platform API's to retrieve information on every payload. Let's now add the response from the Offer Decisioning API on Xray.
+
+In order to make this possible, you'll need three values:
+
+- [!UICONTROL Offer Decisioning Container ID]
+- [!UICONTROL Offer Decisioning Placement ID]
+- [!UICONTROL Offer Decisioning Activity ID]
+
+Where can you find these values?
+
+### 14.5.2.1 [!UICONTROL Offer Decisioning Container ID]
+
+The container instanceId was returned by the first API call you sent as part of this exercise. Scroll back up  you see the **[!UICONTROL List Containers]** step. Follow the instructions there to collect the container instanceId. 
+
+The format of the container instanceId looks like this: **[!UICONTROL 02068be3-17ae-3ca6-bed6-0daf0084c5a1]** and it was part of the output of the **[!UICONTROL List Containers]** request:
+
+![OD API](./images/api3.png)
+
+### 14.5.2.2 [!UICONTROL Offer Decisioning Placement ID]
+
+The [!UICONTROL Offer Placement ID] identifies the location and type of asset that is required. For instance, the hero image on the Luma website homepage corresponds with the [!UICONTROL Offer Placement ID] for [!UICONTROL Web - Image].
+
+![WebSDK](./images/launch5.png)
+
+To find the [!UICONTROL Offer Placement ID] for [!UICONTROL Web - Image] go to [https://platform.adobe.com](https://platform.adobe.com). 
+
+Next, go to [!UICONTROL Offers] and then to [!UICONTROL Placements]. Click the [!UICONTROL Web - Image] placement to see its details.
+
+![WebSDK](./images/launch6.png)
+
+As you can see in the above image, in this example the [!UICONTROL Offer Placement ID] is `xcore:offer-placement:127075c49bb0df30`. Write down the [!UICONTROL Offer Placement ID] for your placement for [!UICONTROL Web - Image] as you'll need it in the next exercise.
+
+### 14.5.2.3 [!UICONTROL Offer Decisioning Activity ID]
+
+The [!UICONTROL Offer Activity ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Offer Activity] and named it **[!UICONTROL ldap - Luma Offer Activity]**.
+
+To find the [!UICONTROL Offer Activity ID] for your **[!UICONTROL ldap - Luma Offer Activity]**, go to [https://platform.adobe.com](https://platform.adobe.com). 
+
+Next, go to [!UICONTROL Activities] and click to select your [!UICONTROL Offer Activity], which is named **[!UICONTROL ldap - Luma Offer Activity]**.
+
+![WebSDK](./images/launch7.png)
+
+As you can see in the above image, in this example the [!UICONTROL Offer Activity ID] is `xcore:offer-activity:1272b0c7aee6156b`. Write down the [!UICONTROL Offer Activity ID] for your activity [!UICONTROL ldap - Luma Offer Activity] as you'll need it in the next exercise.
+
+### 14.5.2.4 Update your Enablement Configuration ID
+
+Before you can test your end-to-end demonstration, you'll need to update your Configuration ID settings and update the fields for **[!UICONTROL Offer Decisioning Container ID]**, **[!UICONTROL Offer Decisioning Placement ID]** and **[!UICONTROL Offer Decisioning Activity ID]** on the **Update Configuration ID** page of the demo website.
+
+Go to [https://public.aepdemo.net/admin_configuration_update.html](https://public.aepdemo.net/admin_configuration_update.html).
+
+You'll then see this:
+
+![Launch Setup](./images/cfgid1.png)
+
+Enter your Configuration ID and then click **[!UICONTROL Load Configuration]**. You'll see your Configuration ID values being loaded.
+
+![Launch Setup](./images/cfgid2.png)
+
+Scroll down until you see the fields **[!UICONTROL Offer Decisioning Container ID]**, **[!UICONTROL Offer Decisioning Placement ID]** and **[!UICONTROL Offer Decisioning Activity ID]**.
+
+![Launch Setup](./images/cfgid2a.png)
+
+You now need to enter the values for these three fields. You collected these values a couple of minutes ago in the previous step.
+
+![Launch Setup](./images/cfgid4.png)
+  
+Next, on the Update Configuration ID page, scroll down and click **[!UICONTROL Update Configuration ID]**.
+
+![Launch Setup](./images/cfgid5.png)
+
+After this change, the Offer Decisioning API response will be showcased on Xray!
+
+## 14.5.2 Text Xray
+
+### 14.5.2.1 Load website and brand
+
+Open a new, clean incognito browser window and go to [https://public.aepdemo.net](https://public.aepdemo.net). 
+
+You'll then see this. 
+
+![Launch Setup](./images/demo1.png)
+
+Enter your Configuration ID and click **Load Configuration**. Your configuration is then loaded.
+
+![Launch Setup](./images/demo2.png)
+
+Scroll down and click **Save Configuration**.
+
+![Launch Setup](./images/cfgid5.png)
+
+You'll then be redirected to the Admin homepage. Go to **Select LDAP**. Select your LDAP and click **Save**.
+
+![Launch Setup](./images/demo5.png)
+
+You'll then be redirected to the Admin homepage. Go to **Select Brand** and select the brand **Luma**, click **Save**.
+
+![Launch Setup](./images/demo7.png)
+
+You'll then be redirected to the Admin homepage. Click the **Luma** logo.
+
+![Launch Setup](./images/demo8.png)
+
+### 14.5.2.2 Customer browses the website
+
+You'll then see the Luma homepage. You should immediately see your hero image change, and you should see the Fallback Offer that was defined as part of your Offer Activity, just like in the previous exercise. Additionally, when you open the Xray panel and have a look at the Offer Decisioning panel, you'll now also see the applicable offer being displayed there.
+
+It's important to understand the difference:
+
+- the hero image in the website is being delivered by Web SDK, thanks to the integration between Web SDK, Edge and Offer Decisioning
+- the Xray panel, and the offer being shown on Xray, is made possible by consuming the Offer Decisioning APIs
+
+This means that there are two ways of getting the offer in the context where it is needed, which offers you a lot of flexibility!
+
+![Launch Setup](./images/xray1.png)
+
+Go to the page **Login/Register**. Fill out the fields and then click **CREATE ACCOUNT** to create your account.
+
+![Launch Setup](./images/xray1a.png)
+
+As part of the configuration of your Personalized Offers, you defined offers for either male customers or female customers. Based on the gender selection you made on the **Login/Register** page, you'll now see another offer on the Luma homepage. This time it isn't a Fallback Offer anymore, but instead a Personalized Offer. You can now again see the same offer on the hero image and on Xray.
+
+In this example, the gender selection is male. For male customers, the highest priority offer is the offer for the Zeppelin Yoga Pant.
+
+![Launch Setup](./images/xray2.png)
+
+Thanks to the integration between Web SDK and Adobe Experience Platform, offers can be delivered in a nice and easy way, with a limited amount of configuration.
 
 You've now completed this exercise.
 

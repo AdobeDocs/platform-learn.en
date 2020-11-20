@@ -90,7 +90,7 @@ For every request sent to the Edge and to Adobe Experience Platform, it's possib
 
 Let's first have a look where you can find those two elements.
 
-### Retrieve your [!UICONTROL Offer Placement ID]
+### 14.3.2.1 Retrieve your [!UICONTROL Offer Placement ID]
 
 The [!UICONTROL Offer Placement ID] identifies the location and type of asset that is required. For instance, the hero image on the Luma website homepage corresponds with the [!UICONTROL Offer Placement ID] for [!UICONTROL Web - Image].
 
@@ -104,7 +104,7 @@ Next, go to [!UICONTROL Offers] and then to [!UICONTROL Placements]. Click the [
 
 As you can see in the above image, in this example the [!UICONTROL Offer Placement ID] is `xcore:offer-placement:127075c49bb0df30`. Write down the [!UICONTROL Offer Placement ID] for your placement for [!UICONTROL Web - Image] as you'll need it in the next exercise.
 
-### Retrieve your [!UICONTROL Offer Activity ID]
+### 14.3.2.2 Retrieve your [!UICONTROL Offer Activity ID]
 
 The [!UICONTROL Offer Activity ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Offer Activity] and named it **[!UICONTROL ldap - Luma Offer Activity]**.
 
@@ -118,7 +118,7 @@ As you can see in the above image, in this example the [!UICONTROL Offer Activit
 
 Now that you've retrieved the two elements you need to create a **[!UICONTROL Decision Scopes]**, you can continue with the next step, which involves encoding the decision scope.
 
-### BASE64 Encoding
+### 14.3.2.3 BASE64 Encoding
 
 The **[!UICONTROL Decision Scope]** you need to enter is a BASE64-encoded string. This BASE64-encoded string is a combination of the [!UICONTROL Offer Placement ID] and the [!UICONTROL Offer Activity ID], as you can see below. 
 
@@ -135,7 +135,7 @@ The **[!UICONTROL Decision Scope]** can be generated in two ways:
 
   ![WebSDK](./images/launch8.png)
 
-- Retrieve the BASE64 encoded string from Adobe Experience Platform. To do so, go to [https://platform.adobe.com](https://platform.adobe.com). Next, go to [!UICONTROL Activities] and click to ope, your [!UICONTROL Offer Activity], which is named **[!UICONTROL ldap - Luma Offer Activity]**.
+- Retrieve the BASE64 encoded string from Adobe Experience Platform. To do so, go to [https://platform.adobe.com](https://platform.adobe.com). Next, go to [!UICONTROL Activities] and click to open your [!UICONTROL Offer Activity], which is named **[!UICONTROL ldap - Luma Offer Activity]**.
 
   ![WebSDK](./images/launch9.png)
   
@@ -183,7 +183,7 @@ As the name for your rule, use **Homepage - Decision Received**.
 
 ![WebSDK](./images/decrec2.png)
 
-### Event
+### 14.3.3.1 Event
 
 Click **[!UICONTROL + Add]** under **[!UICONTROL EVENTS]** to add a new event.
 
@@ -200,7 +200,7 @@ Click **[!UICONTROL Keep Changes]**.
 
 ![WebSDK](./images/keepchanges.png)
 
-### Condition
+### 14.3.3.2 Condition
 
 You'll now see this. Click **[!UICONTROL + Add]** under **[!UICONTROL CONDITIONS]** to add a new condition.
 
@@ -223,7 +223,7 @@ Click **[!UICONTROL Keep Changes]**.
 
 ![WebSDK](./images/keepchanges.png)
 
-### Action
+### 14.3.3.3 Action
 
 You'll then see this. Click **[!UICONTROL + Add]** under **[!UICONTROL ACTIONS]** to add a new action.
 
@@ -278,7 +278,7 @@ And instead of the default Luma hero image, you will now see an offer like this 
 
 ![WebSDK](./images/decrec10.png)
 
-Don't test it yet. In the next exercise, you'll go through a step-by-step demo scenario.
+In the next exercise, you'll go through a step-by-step demo scenario.
 
 Next Step: [14.4 Test your Offer Activity using the demo website](./ex4.md)
 
