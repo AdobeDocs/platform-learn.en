@@ -187,7 +187,7 @@ Go to [Videos](./videos.md).
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform and Offer Decisioning
 - **Description:** In this module, you'll use the Adobe Experience Platform - Offers/Decisioning application service in a hands-on way to configure Personalized Offers and your own Offer Activity.
-- **Time Investment:** 90 minutes
+- **Time Investment:** 120 minutes
 
 [15. Data Science Workspace - Car Insurance Sales Propensity](./modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
 
