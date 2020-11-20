@@ -246,7 +246,7 @@ You now need to enter the values for these three fields. You collected these val
 
 ![Launch Setup](./images/cfgid4.png)
   
-Next, on the Update Configuration ID page, scroll down and click **[!UICONTROLUpdate Configuration ID]**.
+Next, on the Update Configuration ID page, scroll down and click **[!UICONTROL Update Configuration ID]**.
 
 ![Launch Setup](./images/cfgid5.png)
 
