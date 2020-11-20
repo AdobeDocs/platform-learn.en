@@ -192,7 +192,7 @@ Where can you find these values?
 
 ### 14.5.2.1 [!UICONTROL Offer Decisioning Container ID]
 
-The container instaceId was returned by the first API call you sent as part of this exercise. Scroll back up untill you see the **[!UICONTROL List Containers]** step. Follow the instructions there to collect the container instanceId. 
+The container instanceId was returned by the first API call you sent as part of this exercise. Scroll back up  you see the **[!UICONTROL List Containers]** step. Follow the instructions there to collect the container instanceId. 
 
 The format of the container instanceId looks like this: **[!UICONTROL 02068be3-17ae-3ca6-bed6-0daf0084c5a1]** and it was part of the output of the **[!UICONTROL List Containers]** request:
 

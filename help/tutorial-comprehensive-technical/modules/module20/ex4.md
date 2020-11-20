@@ -29,7 +29,7 @@ First, make sure you're using the correct sandbox. The sandbox to use is called 
 
 ![ACOP](./images/sb.png)
 
-You'll then be in the **Home** view of your sandbox --aepSandboxId--.
+You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/home.png)
 
