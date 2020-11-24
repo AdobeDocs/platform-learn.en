@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 ---
 
-# 9.2.0 Create a Google Account
+# 9.0 Create a Google Account
 
 Go to [https://accounts.google.com/signup](https://accounts.google.com/signup).
 
