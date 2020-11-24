@@ -30,43 +30,43 @@ Verify that these 2 settings are enabled:
 - Developer Mode
 - Allow in incognito
 
-![Luma News Homepage](./images/ext1.png)
+![EXP News Homepage](./images/ext1.png)
 
-### Open the Luma News website
+### Open the EXP News website
 
-For this exercise, you'll be using the Luma News website.
+For this exercise, you'll be using the EXP News website.
 
 In a new incognito/private browser tab, open [https://public.aepdemo.net/](https://public.aepdemo.net/).
 
-![Luma News Homepage](./images/web1.png)
+![EXP News Homepage](./images/web1.png)
 
 Enter the Configuration ID you created in [Module 0](./../module0/ex1.md) and click **[!UICONTROL Load Configuration]**.
 
 Scroll down and click **[!UICONTROL Save Configuration]**.
 
-![Luma News Homepage](./images/web2.png)
+![EXP News Homepage](./images/web2.png)
 
-Go to **Select LDAP**, select your LDAP and click **Save**.
+Go to **[!UICONTROL Select LDAP]**, select your LDAP and click **[!UICONTROL Save]**.
 
-![Luma News Homepage](./images/web3.png)
+![EXP News Homepage](./images/web3.png)
 
-Next, go to **Select Brand** , select **Luma News** and click **Save**.
+Next, go to **[!UICONTROL Select Brand]** , select **[!UICONTROL EXP News]** and click **[!UICONTROL Save]**.
 
-![Luma News Homepage](./images/web4.png)
+![EXP News Homepage](./images/web4.png)
 
-On the **Admin** homepage, click the logo to open the website.
+On the **[!UICONTROL Admin]** homepage, click the logo to open the website.
 
-![Luma News Homepage](./images/web5.png)
+![EXP News Homepage](./images/web5.png)
 
-You'll now see the **Luma News** homepage.
+You'll now see the **[!UICONTROL EXP News]** homepage.
 
-![Luma News Homepage](./images/validate1.png)
+![EXP News Homepage](./images/validate1.png)
 
 ### Use the Experience Platform Debugger to see the calls going to the Experience Edge
 
-Make sure you have the Luma News site open and click the Experience Platform Debugger extension icon. 
+Make sure you have the EXP News site open and click the Experience Platform Debugger extension icon. 
 
-![Luma News Homepage](./images/ext2.png)
+![EXP News Homepage](./images/ext2.png)
 
 The Debugger will open and show the details of the implementation created in your Launch Property. Remember that you're debugging the Extension and rules that you have just been editing.
 
@@ -74,25 +74,21 @@ Click the **[!UICONTROL Sign In]** button on the top right to authenticate. If y
 
 ![AEP Debugger](./images/validate2.png)
 
-Confirm the Debugger is **[!UICONTROL Connected to Home]** as pictured above and then click the **[!UICONTROL lock]** icon to lock the Debugger to the Luma site. If you don't do this, the Debugger will keep switching to expose the implementation details of whatever browser tab is in focus, which can be confusing.
+Confirm the Debugger is **[!UICONTROL Connected to Home]** as pictured above and then click the **[!UICONTROL lock]** icon to lock the Debugger to the demo website. If you don't do this, the Debugger will keep switching to expose the implementation details of whatever browser tab is in focus, which can be confusing.
 
 ![AEP Debugger](./images/validate3.png)
 
-Next, click any random article on the Luma News homepage.
+Next, click any random article on the EXP News homepage.
 
 ![AEP Debugger AEP Web SDK extension](./images/validate4.png)
 
-Now click **[!UICONTROL AEP Web SDK]** in the left navigation, to see the **[!UICONTROL Network Requests]**
+Now click **[!UICONTROL AEP Web SDK]** in the left navigation, to see the **[!UICONTROL Network Requests]**.
 
-Each request contains **[!UICONTROL events]** rows
+Each request contains an **[!UICONTROL events]** row.
 
 ![AEP Debugger AEP Web SDK extension](./images/validate5.png)
 
-Click to open the **[!UICONTROL events]** row. 
-
-![Events value](./images/validate6.png)
-
-Note how we can see the **web.webpagedetails.pageViews** event, as well as other, out-of-the-box variables adhering to the **AEP Web SDK ExperienceEvent Mixin** format.
+Click to open the **[!UICONTROL events]** row. Note how you can see the **web.webpagedetails.pageViews** event, as well as other, out-of-the-box variables adhering to the **AEP Web SDK ExperienceEvent Mixin** format.
 
 ![Events value](./images/validate8.png)
 
