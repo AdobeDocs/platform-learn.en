@@ -133,7 +133,7 @@ Merge policies also tie into data governance and segmentation, which you will se
 
 ## Additional Resources
 
-* [Merge Policies documentation](https://docs.adobe.com/help/en/experience-platform/profile/ui/merge-policies.html)
+* [Merge Policies documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html)
 * [Merge Policies API (part of Real-time Customer Profile API) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/Merge_policies)
 
 Now let's move on to the [data governance framework](apply-data-governance-framework.md).

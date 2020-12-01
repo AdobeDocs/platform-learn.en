@@ -89,7 +89,7 @@ Once the sandbox is active, you need to include it in your product profile in or
 
 ## Additional Resources
 
-* [Sandboxes documentation](https://docs.adobe.com/content/help/en/experience-platform/sandbox/home.html)
+* [Sandboxes documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)
 * [Sandbox API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/sandbox-api.yaml)
 
 

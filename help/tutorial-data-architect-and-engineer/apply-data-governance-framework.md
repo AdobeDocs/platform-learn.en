@@ -87,7 +87,7 @@ Enforcement of governance policies is obviously a key component to the framework
 
 ## Additional Resources
 
-* [Data Governance documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/home.html)
+* [Data Governance documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)
 * [Dataset Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/dataset-service.yaml)
 * [Governance Policy Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/dule-policy-service.yaml)
 
