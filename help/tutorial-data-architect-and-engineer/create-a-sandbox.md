@@ -1,5 +1,6 @@
 ---
-title: Create a sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Create a sandbox
+seo-title: Create a sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Create a sandbox
 description: In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.
 feature: sandboxes
@@ -32,11 +33,6 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * Permission item **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]**
 * User-role access to the `Luma Tutorial Platform` product profile
 * Admin-level access to the `Luma Tutorial Platform` product profile
-
-
->[!IMPORTANT]
->
->The sandbox feature is currently in Beta. If you do not have the sandbox feature in your account, please reach out to your Adobe representative for early access.
 
 ## Create a Sandbox
 
