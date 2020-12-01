@@ -29,6 +29,7 @@ Before you begin the exercises, watch these short videos about data governance:
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
 
+* Permission items **[!UICONTROL Data Governance]** > **[!UICONTROL Manage Usage Labels]**, **[!UICONTROL Manage Data Usage Policies]** and **[!UICONTROL View Data Usage Policies]**
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -86,7 +87,7 @@ Enforcement of governance policies is obviously a key component to the framework
 
 ## Additional Resources
 
-* [Data Governance documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/home.html)
+* [Data Governance documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)
 * [Dataset Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/dataset-service.yaml)
 * [Governance Policy Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/dule-policy-service.yaml)
 

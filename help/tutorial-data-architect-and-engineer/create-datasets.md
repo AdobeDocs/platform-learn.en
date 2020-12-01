@@ -124,7 +124,7 @@ You can go back to the **[!UICONTROL Datasets]** screen in the Platform user int
 
 ## Additional Resources
 
-* [Datasets documentation](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/overview.html)
-* [Datasets API (part of Catalog Service) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/Datasets)
+* [Datasets documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)
+* [Datasets API (part of Catalog Service) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/catalog.yaml)
 
 Now that all of our schemas, identities, and datasets are in place, we can [enable them for Real-time Customer Profile](enable-profiles.md).

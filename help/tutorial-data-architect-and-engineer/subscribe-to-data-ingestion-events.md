@@ -76,7 +76,7 @@ That's it for now, you will learn more about these notifications in the next les
 ## Additional Resources
 
 * [Webhook.site](https://webhook.site/)
-* [Data ingestion notifications documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/quality/subscribe-events.html)
+* [Data ingestion notifications documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
 * [Getting Started with Adobe I/O Events documentation](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, let's finally start [ingesting data](ingest-batch-data.md)!

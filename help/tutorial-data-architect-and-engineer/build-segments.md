@@ -28,7 +28,8 @@ Before you begin the exercises, watch this short video to learn more about creat
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
 
-* Permission items **[!UICONTROL Profiles]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]** and **[!UICONTROL Export Audience Segment]**
+* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL Manage Segments]**, **[!UICONTROL View Segments]** and **[!UICONTROL Export Audience Segment]**
+* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]** 
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
@@ -111,7 +112,7 @@ Click on **[!UICONTROL Segments]** in the left navigation and let's take a momen
 
 ## Additional Resources
 
-* [Segmentation Service documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html)
+* [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
 * [Segmentation Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/segmentation.yaml)
 
 There is more to segmentation, especially with activating segments. Those topics will be addressed in another tutorial.

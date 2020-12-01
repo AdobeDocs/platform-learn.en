@@ -107,7 +107,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## Additional Resources
 
-* [Query Service documentation](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)
+* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
 * [Query Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 And now for the final hands-on lesson, [creating segments](build-segments.md)!
