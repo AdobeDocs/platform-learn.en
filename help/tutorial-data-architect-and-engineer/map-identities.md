@@ -1,5 +1,6 @@
 ---
-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Map identities
+seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Map identities
 description: In this lesson, we will create identity namespaces and add identity fields to our schemas.
 feature: profile

@@ -1,5 +1,6 @@
 ---
-title: Set up Developer Console and Postman | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Set up Developer Console and Postman
+seo-title: Set up Developer Console and Postman | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Set up Developer Console and Postman
 description: In this lesson, you will set up a project in the Adobe Developer Console and provide you with [!DNL Postman] Collections so you can start using Platform APIs.
 feature: api
