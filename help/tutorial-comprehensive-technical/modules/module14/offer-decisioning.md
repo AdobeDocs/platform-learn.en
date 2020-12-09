@@ -17,6 +17,10 @@ The Adobe Experience Platform Offer Decisioning Application Service provides the
 
 With Offer Decisioning, you can determine the best option from a set of available choices. These options could be offers, product recommendations, content components for a web experience, conversation scripts, and actions to take. 
 
+Please watch this video to understand the value and customer journey:
+
+>[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
+
 ## Learning Objectives
 
 - Understand basic terminology used as part of Offer Decisioning,

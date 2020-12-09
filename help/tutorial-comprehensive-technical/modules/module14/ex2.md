@@ -139,9 +139,9 @@ You'll then see this:
 For **Representation 3**, select:
 
 - Channel: Non-digital
-- Placement: Non-digital - Image
+- Placement: Non-digital - Text
 
-Next, you need to add content. In this case that means adding the Image Link.
+Next, you need to add content. In this case that means adding the text to be used as a call to action.
 
 Click **Add Content**.
 
