@@ -1,8 +1,8 @@
 ---
-title: Module 6, Journey Orchestration: Setup Event
-description: Journey Orchestration: Setup Event
+title: Module 6 Journey Orchestration Setup Event
+description: Journey Orchestration Setup Event
 kt: 5342
-audience: 
+audience: developer
 doc-type: tutorial
 activity: develop
 ---

@@ -1,8 +1,8 @@
 ---
-title: Module 6, Update your Configuration ID and Test your Journey
+title: Module 6 Update your Configuration ID and Test your Journey
 description: Update your Configuration ID and Test your Journey
 kt: 5342
-audience: 
+audience: developer
 doc-type: tutorial
 activity: develop
 ---

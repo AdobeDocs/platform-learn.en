@@ -1,8 +1,8 @@
 ---
-title: Module 6, How to create your own email in Adobe Campaign
+title: Module 6 How to create your own email in Adobe Campaign
 description: How to create your own email in Adobe Campaign
 kt: 5342
-audience: 
+audience: developer
 doc-type: tutorial
 activity: develop
 ---
