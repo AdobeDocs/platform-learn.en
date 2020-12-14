@@ -119,6 +119,7 @@ audience: all
   + [Demo of streaming segmentation (Video)](/help/platform/segments/streaming-segmentation-demo.md)
 + Sources {#sources}
   + [Sources API and UI tutorials](/help/platform/sources/sources-tutorials.md)
+  + [Ingest data from Databases](/help/platform/sources/ingest-data-from-databases.md)
 + Application Services {#application-services}
   + [Customer Journey Analytics tutorials](https://docs.adobe.com/content/help/en/customer-journey-analytics-learn/tutorials/overview.html)
   + [Journey Orchestration tutorials](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/overview.html)
