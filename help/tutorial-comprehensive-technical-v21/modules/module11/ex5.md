@@ -138,13 +138,19 @@ You've now successfully created an AWS S3 bucket and you've created a user with 
 
 ### Configure Destination in Adobe Experience Platform
 
-Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the `Production Prod`-environment in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+
+![Data Ingestion](./images/sb2.png)
 
 In the left menu, go to **Destinations**.
 
@@ -154,11 +160,11 @@ You'll then see the **Destinations** homepage.
 
 ![RTCDP](./images/rtcdp.png)
 
-Select the type **Connections**.
+Click **Cloud Storage**.
 
 ![RTCDP](./images/rtcdp2.png)
 
-Click on **Amazon S3** and then click on **+ Connect Destination**.
+Click the **Configure** button on the **Amazon S3** card.
 
 ![RTCDP](./images/rtcdpsf.png)
 
@@ -184,15 +190,13 @@ Click **Next**.
 
 On the next screen, you have to provide a name and folder so that Adobe Experience Platform can connect to the S3 bucket.
 
-![RTCDP](./images/rtcdpsfs3connect1.png)
-
 As a naming convention, please use the following:
 
 | Access Key ID             | Secret Access Key             |
 |:-----------------------:| :-----------------------:|
 | Name |AWS - S3 - ldap, replace **ldap** with your ldap.|
 | Description |AWS - S3 - ldap, replace **ldap** with your ldap.|
-| Bucket Name |aepmodule11vangeluw|
+| Bucket Name |aepmodule11ldap|
 | Folder Path |/|
 
 ![RTCDP](./images/rtcdpsfs3connect2.png)
@@ -221,31 +225,25 @@ Click **Next**.
 
 ![RTCDP](./images/s3b.png)
 
-You can now select attributes for the export towards AWS S3. Click **+ Add New Field**.
+You'll then see this. Click **Edit Schedule**.
+
+![RTCDP](./images/s3bb.png)
+
+Define your schedule of choice.
+
+![RTCDP](./images/s3bbc.png)
+
+You'll then have this. Click **Next**.
+
+![RTCDP](./images/s3bbca.png)
+
+You can now select attributes for the export towards AWS S3. Accept the default fields.
 
 ![RTCDP](./images/s3c.png)
 
-Click the icon as indicated in the screenshot to open the Union Schema with all available fields.
-
-![RTCDP](./images/s3d.png)
-
-In the popup, you'll see the Union Schema and you can select any field from the Union Schema to include it in the export. In this example, the field **personalEmail.address** is selected to be part of the export.
-
-Click **Select** to add the field.
-
-![RTCDP](./images/s3e.png)
-
-You can add as many fields as required.
+You can add as many other fields as required.
 
 Once you've added all fields, click **Next**.
-
-![RTCDP](./images/s3b.png)
-
-The export to AWS S3 will run once every 24 hours.
-
-![RTCDP](./images/s3f.png)
-
-Click **Next**.
 
 ![RTCDP](./images/s3b.png)
 
@@ -261,7 +259,7 @@ You'll then be back at the Destination Activation screen and you'll see your seg
 
 ![RTCDP](./images/s3j.png)
 
-if you'd like to add more segment exports, you can click **Edit Activation** to restart the process and add more segments.
+If you'd like to add more segment exports, you can click **Activate** to restart the process and add more segments.
 
 ![RTCDP](./images/s3k.png)
 

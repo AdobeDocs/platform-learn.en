@@ -13,37 +13,27 @@ activity: develop
 >
 >The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
 
-Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, make sure you are in the `Production Prod` environment in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
 
-In the left menu, go to **Destinations**.
+![Data Ingestion](./images/sb1.png)
 
-![RTCDP](./images/rtcdpmenudest.png)
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-You'll then see the **Destinations** homepage.
+![Data Ingestion](./images/sb2.png)
+
+In the left menu, go to **Destinations**. You'll then see the **Destinations** homepage.
 
 ![RTCDP](./images/rtcdp.png)
 
-Set the **Type** switcher to **Connections**.
-
-![RTCDP](./images/rtcdpconn.png)
-
-You'll now see this:
-
-![RTCDP](./images/rtcdpconn1.png)
-
-In **Destinations**, click on **Google Display & Video 360**.
+In **Destinations**, click on **Google Display & Video 360** and then click **+ Configure**.
 
 ![RTCDP](./images/rtcdpgoogle.png)
-
-Click on **Connect Destination**.
-
-![RTCDP](./images/rtcdpgooglecreate.png)
 
 You'll then see this:
 
