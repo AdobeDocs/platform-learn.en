@@ -71,7 +71,7 @@ After a couple of seconds, you'll see that the demo brand **Luma** is being load
 
 And finally, you'll see the Luma homepage in the app, which means you're ready for your demo and enablement.
 
-![DSN](./images/mobileapp14.png)
+![DSN](./images/mobileapp14a.png)
 
 Next Step: [0.6 Install the Chrome extension for the Experience League documentation](./ex6.md)
 
