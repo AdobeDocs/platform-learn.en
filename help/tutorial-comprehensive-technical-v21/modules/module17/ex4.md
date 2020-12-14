@@ -125,7 +125,7 @@ In this text message, you'll use the customer's first name. You can either selec
 
 Paste this code in the **Advanced Mode Editor**. Click **OK**.
 
->[!NOTE ] If you paste the below text, please verify the path as it's possible that in your Adobe Experience Platform instance, the data source and field group are named in a different way. 
+>[!NOTE] If you paste the below text, please verify the path as it's possible that in your Adobe Experience Platform instance, the data source and field group are named in a different way. 
 
 `#{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + ", we'd like to apologize for the negative experience you had. We're looking into this and we'll contact you in the next 2 business days."`
 
