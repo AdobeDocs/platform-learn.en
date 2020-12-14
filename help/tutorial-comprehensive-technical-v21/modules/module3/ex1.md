@@ -59,7 +59,7 @@ You'll now see a similar Admin homepage. Click the brand logo to go to the demo 
   
 Click the **Luma**-logo to go to the demo website. You'll then see this:
   
-![Demo](.//images/lb_home.png)
+![Demo](./images/lb_home.png)
   
 ### Navigate the website
 
