@@ -125,7 +125,9 @@ In this text message, you'll use the customer's first name. You can either selec
 
 Paste this code in the **Advanced Mode Editor**. Click **OK**.
 
->[!NOTE] If you paste the below text, please verify the path as it's possible that in your Adobe Experience Platform instance, the data source and field group are named in a different way. 
+>[!NOTE]
+>
+>If you paste the below text, please verify the path as it's possible that in your Adobe Experience Platform instance, the data source and field group are named in a different way. 
 
 `#{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + ", we'd like to apologize for the negative experience you had. We're looking into this and we'll contact you in the next 2 business days."`
 
@@ -151,7 +153,9 @@ You'll then see this.
 
 ![JO](./images/jo16.png)
 
->[!NOTE] This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044**.
+>[!NOTE]
+>
+>This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044**.
 >Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
 >
 >`substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
