@@ -9,19 +9,25 @@ activity: develop
 
 # 11.3 - Take Action: send your segment to DV360
 
-Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-In the left menu, go to **Destinations**.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
 
-You'll then see the **Destinations** homepage.
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+
+![Data Ingestion](./images/sb2.png)
+
+In the left menu, go to **Destinations**. You'll then see the **Destinations** homepage.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 
-In **Destinations**, click on **Google Display & Video 360**.
+In **Destinations**, click the 3 dots on **Google Display & Video 360** and then click **View dataflow**.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
@@ -31,17 +37,11 @@ You'll then see all available **Google Display & Video 360** destinations.
 
 ![RTCDP](./images/rtcdpgoogledest.png)
 
-Click the **Destination Name** of `DV360 - Advertiser ID: 5701635`.
+Click the **+** icon on the **Destination Name** of `DV360 - Advertiser ID: 5701635`.
 
-You'll then see this screen:
+![RTCDP](./images/rtcdpgoogledestb.png)
 
-![RTCDP](./images/rtcdpgoogledest1.png)
-
-Click **Edit Activation**.
-
-![RTCDP](./images/rtcdpactivate.png)
-
-You'll then see all available segments in your Adobe Experience Platform instance. Search and select the segment you created in 1.
+You'll then see all available segments in your Adobe Experience Platform instance. Search and select the segment you created in exercise 1.
 
 ![RTCDP](./images/rtcdpactivateseg.png)
 

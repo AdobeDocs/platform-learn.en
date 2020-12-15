@@ -53,11 +53,11 @@ Click on **Visualize** and then select **Line** as visualization.
 
 ![demo](./images/pro5.png)
 
-You’ll see your products views by day.  
+You’ll see your products views by hour.  
 
 ![demo](./images/pro6.png)
 
-You can change the time scope by clicking on **Settings** within the visualization.
+You can change the time scope to day by clicking on **Settings** within the visualization.
 
 ![demo](./images/pro7.png)
 
@@ -65,7 +65,7 @@ Click on the dot next to **Line** to **Manage the Data Source**.
 
 ![demo](./images/pro7a.png)
 
-Next, click **Lock Selection** to lock this visualization so that it always displays a timeline of Product Views.
+Next, click **Lock Selection** and select **Selected Items** to lock this visualization so that it always displays a timeline of Product Views.
 
 ![demo](./images/pro7b.png)
 
@@ -106,7 +106,7 @@ Finally you can add more visualizations. On the left side, under visualizations,
 
 ![demo](./images/pro18.png)
 
-Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Citi Signal/Luma Telco**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
+Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
 
 ![demo](./images/pro20.png)
 
@@ -126,12 +126,10 @@ Next, click **Lock Selection** to lock this visualization so that it always disp
 
 ![demo](./images/pro22b.png)
 
-
 Find out more about visualizations using Analysis Workspace here: 
 
 - [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
-
 
 ## Product Interaction funnel, from viewing to buying
 
@@ -157,7 +155,7 @@ You'll then see this.
 
 ![demo](./images/prodatefa.png)
 
-Find the dimension **Product Interaction Type** under the components on the left side:
+Find the dimension **Event Type** under the components on the left side:
 
 ![demo](./images/pro26.png)
 
@@ -165,13 +163,13 @@ Click on the arrow to open the dimension:
 
 ![demo](./images/pro27.png)
 
-You'll see all available Product Interaction Types. Select the **productView** and drag and drop it onto the **Add Touchpoint** field inside the **Fallout Visualization**.
+You'll see all available Product Interaction Types. Select the item **commerce.productViews** and drag and drop it onto the **Add Touchpoint** field inside the **Fallout Visualization**.
 
 ![demo](./images/pro28.png)
 
 ![demo](./images/pro29.png)
 
-Do the same with **productAddtoCart** and **productPurchase** and drop them onto the **Add Touchpoint** field inside the **Fallout Visualization**. You'll then have this:
+Do the same with **commerce.productListAdds** and **commerce.purchases** and drop them onto the **Add Touchpoint** field inside the **Fallout Visualization**. You'll then have this:
 
 ![demo](./images/props1.png)
 
@@ -181,7 +179,7 @@ Your visualization will now look like this:
 
 You can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if we want to analyze interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
 
-Right click on the touchpoint **Product Add To Cart**. Then click on **Breakdown fallout at this touchpoint**.
+Right click on the touchpoint **commerce.productListAdds**. Then click on **Breakdown fallout at this touchpoint**.
 
 ![demo](./images/pro32.png)
 
@@ -189,7 +187,7 @@ A new freeform table will be created to analyze what the people did if they didn
 
 ![demo](./images/pro33.png)
 
-Change the **Product Interaction Type** by **Page Name**, in the new freeform table, to see which pages they are going instead of the Purchase Confirmation Page.
+Change the **Event Type** by **Page Name**, in the new freeform table, to see which pages they are going instead of the Purchase Confirmation Page.
 
 ![demo](./images/pro34.png)
 
@@ -205,10 +203,6 @@ Now add a new blank panel by clicking on **+ Add Blank Panel**.
 
 ![demo](./images/pro0a.png)
 
-Select the same date range as in the previous exercise.
-
-![demo](./images/pro0b.png)
-
 Click the visualization **Flow**.
 
 ![demo](./images/pro35.png)
@@ -216,6 +210,10 @@ Click the visualization **Flow**.
 You'll then see this:
 
 ![demo](./images/pro351.png)
+
+Select the same date range as in the previous exercise.
+
+![demo](./images/pro0b.png)
 
 Find the dimension **Page Name** under the components on the left side:
 
@@ -240,6 +238,7 @@ You'll then see this:
 Let's now analyze if customers who visited the **Cancel Service** page on the website also called the callcenter, and what the outcome was.
 
 Under the dimensions, go back and then find **Call Interaction Type**. 
+
 ![demo](./images/pro43.png)
 
 Drag and drop **Call Interaction Type** to replace the first interaction on the right within the **Flow Visualization**. You're now seeing which customers called the call center after visiting the **Cancel Service** page.
@@ -275,7 +274,7 @@ Under the components (inside the Filter Builder), find **Call Feeling** and drag
 
 ![demo](./images/pro48.png)
 
-Now select positive as value for the filter.
+Now select **positive** as value for the filter.
 
 ![demo](./images/pro49.png)
 
@@ -283,11 +282,11 @@ Change the scope to be **Person** level.
 
 ![demo](./images/pro50.png)
 
-To finish, simply click on save.
+To finish, simply click **Save**.
 
 ![demo](./images/pro51.png)
 
-You'll then be back here. Close the current panel we have by clicking here:
+You'll then be back here. If not done yet, close the previous panel.
 
 ![demo](./images/pro0c.png)
 
@@ -303,7 +302,7 @@ Click on **Freeform table**.
 
 ![demo](./images/pro52.png)
 
-Now drag and drop the filter we've just created.
+Now drag and drop the filter you've just created.
 
 ![demo](./images/pro53.png)
 
@@ -327,7 +326,7 @@ Attribution in Customer Journey Analytics is one of the key differentiators from
 
 We can define attribution logic in almost any metric (except things like **People** or **Sessions**). You can even use it with calculated metrics.
 
-Open the calculated metric you created, called **Purchases**. On the **Events** metric, filtered  by **ProductInteraction**, click on settings.
+Open the calculated metric you created, called **Purchases**. On the **Events** metric, filtered by **Event Type**, click on settings.
 
 ![demo](./images/a.png)
 

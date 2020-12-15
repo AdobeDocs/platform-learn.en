@@ -11,9 +11,7 @@ activity: develop
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's segment builder.
 
-The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-
-## Story
+## Context
 
 In today's world, responding to a customer's behavior needs to be real-time. One of the ways of responding to customer behavior in real-time is by using a segment, on the condition that the segment qualifies in real-time. In this exercise, you need to build out a segment, taking into account real activity on the website that we've been using.
 
@@ -53,12 +51,12 @@ You'll now see a similar Admin homepage. Click the brand logo to go to the demo 
 
 ![DSN](../module0/images/web8.png)
 
-You'll then be redirected to the **Luma Retail** homepage.
+You'll then be redirected to the **Luma** homepage.
 
 ![Demo](./images/lb_home.png)
 
 In this example, I want to respond to a specific customer viewing a specific product.
-By scrolling down on the **Luma Retail** homepage, I can see multiple products and I'm going to pick the product **Zeppelin Yoga Pant**.
+By scrolling down on the **Luma** homepage, I can see multiple products and I'm going to pick the product **Zeppelin Yoga Pant**.
 
 ![Data Ingestion](./images/homenadia.png)
 
@@ -68,19 +66,23 @@ So when somebody visits the product page for **Zeppelin Yoga Pant**, I want to b
 
 ## Create the Segment
 
-To create the segment as defined above, log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-In the menu on the left side, go to **Segments**.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+
+![Data Ingestion](./images/sb2.png)
+
+In the menu on the left side, go to **Segments** where you can see an overview of all existing segments.
 
 ![Segmentation](./images/menuseg.png)
-
-On this page, you can see an overview of all existing segments.
-
-![Segmentation](./images/segmentation.png)
 
 Click on the **Create Segment** button to start creating a new segment.
 
@@ -110,15 +112,13 @@ The comparison parameter should be **equals** and in the input field, enter `Zep
 
 Every time you add an element to the segment builder, you can click the **Refresh Estimate** button to get a new estimate of the population in your segment.
 
-As we're using a shared environment, you also need to add your **ldap** as a filter for this segment.
+As you're using a shared environment, you also need to add your **ldap** as a filter for this segment.
 
-In the **Events** search box, enter **ldap**. Take the second result, which references the path **XDM ExperienceEvent > --aepTenantIdSchema-- > brand > ldap**.
-
-![Segmentation](./images/ldap1.png)
+In the **Events** search box, enter **ldap**. Take the second result, which references the path **XDM ExperienceEvent > --aepTenantIdSchema-- > demoEnvironment > ldap**.
 
 Drag and drop **ldap** onto your Segment Rule, under the `Zeppelin Yoga Pant` rule.
 
-![Segmentation](./images/ldap2.png)
+![Segmentation](./images/ldap1.png)
 
 Enter your ldap:
 
@@ -143,7 +143,7 @@ Next, click the **Save** button to save your segment, after which you'll be take
 
 ![Segmentation](./images/savedsegment.png)
 
-When you now go back to the Platform Demo - website and refresh the homepage, you should see the Streaming Segment that you just built already qualify for your profile on the X-Ray panel.
+When you now go back to the demo website and refresh the homepage, you should see the Streaming Segment that you just built already qualify for your profile on the X-Ray panel.
 
 ![Segmentation](./images/xraystrseg.png)
 
