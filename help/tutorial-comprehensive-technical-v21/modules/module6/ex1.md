@@ -17,11 +17,11 @@ Click on **Journey Orchestration**.
 
 ![ACOP](./images/acoptrig.png)
 
-You'll be redirected to the **Home** view in Journey Orchestration.
+You'll be redirected to the **Journeys**  view in Journey Orchestration.
 
 ![ACOP](./images/acoptriglp.png)
 
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
 
 ![ACOP](./images/sb.png)
 
@@ -33,11 +33,7 @@ In the menu, click **Events**.
 
 ![ACOP](./images/acopmenu.png)
 
-On the **Events** screen, you'll see a view similar to this:
-
-![ACOP](./images/acopeventview.png)
-
-Click the **Add** button.
+On the **Events** screen, you'll see a view similar to this. Click the **Add** button.
 
 ![ACOP](./images/add.png)
 
@@ -73,13 +69,17 @@ In the object `--aepTenantId--.demoEnvironment`, please make sure to select the 
 
 ![ACOP](./images/eventpayloadbr.png)
 
+In the object `--aepTenantId--.identification.core`, please make sure to select the field **email**.
+
+![ACOP](./images/eventpayloadbrid.png)
+
 Click **Ok** to save your changes.
 
-![ACOP](./images/save.png)
+![ACOP](./images/saveok.png)
 
 You should then see this:
 
-![ACOP](./images/eventsave.png) 
+![ACOP](./images/eventsave.png)
 
 Click **Save** once more to save your changes.
 
@@ -97,7 +97,7 @@ Hover over the **Payload** field again to see the 3 icons again.
 
 ![ACOP](./images/hover.png)
 
-Click on the **View** icon. You'll now see an example of the expected payload.
+Click on the **View Payload** icon. You'll now see an example of the expected payload.
 
 ![ACOP](./images/fullpayload.png)
 
@@ -106,7 +106,7 @@ Your Event has a unique orchestration eventID, which you can find by scrolling d
 ![ACOP](./images/payloadeventID.png)
 
 The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in Exercise 6.2. Remember this eventID, as you'll need it in Exercise 6.3.
-`"eventID": "71d98ef80980453e03a3bfc6aab57d15663784265a9363c097b6b9608f1a54bf"`
+`"eventID": "801dccf3d3ce2afbed286b4fbd15ae8120758dcd7b0d487128342285b3732121"`
 
 Click **Close**.
 

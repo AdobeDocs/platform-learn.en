@@ -23,7 +23,7 @@ You'll be redirected to the **Home** view in Journey Orchestration.
 
 ![ACOP](./images/acoptriglp.png)
 
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
 
 ![ACOP](./images/sb.png)
 
@@ -51,7 +51,7 @@ Select your event, drag and drop it on the Journey  canvas. Your Journey now loo
 
 ![ACOP](./images/journeyevent.png)
 
-As the second step in the journey, you need to add a short **Wait** step. Go to the left side of your screen to the **Orchestration** section to find this. We will be using profile attributes and need to make sure they are populated into the Unified Profile. 
+As the second step in the journey, you need to add a short **Wait** step. Go to the left side of your screen to the **Orchestration** section to find this. You'll be using profile attributes and need to make sure they are populated into the Real-time Customer Profile. 
 
 ![ACOP](./images/journeywait.png)
 
@@ -68,10 +68,6 @@ Click **Ok** to save your changes.
 As the third step in the journey, you need to add an **Email** action. Go to the left side of your screen to **Actions**, select the **Email** action, then drag and drop it on the second node in your journey.
 
 ![ACOP](./images/journeyactions.png)
-
-Your journey now looks like this:
-
-![ACOP](./images/journeyemailaction.png)
 
 On the right side of your screen, you now need to configure the email.
 
@@ -95,11 +91,11 @@ You'll then see a window to select a source field to use as Email Source.
 
 ![ACOP](./images/emptylink.png)
 
-Click on the Experience Platform data source (in this case called ExperiencePlatform).
+Click on the **vangeluwAccountCreationEvent** data source.
 
 ![ACOP](./images/eventnode.png)
 
-Navigate to `ProfileFieldGroup.profile.personalEmail.address` and click it.
+Navigate to `vangeluwAccountCreationEvent.--aepTenantId--.identification.core.email` and select it.
 
 ![ACOP](./images/srcemail.png)
 
@@ -113,9 +109,9 @@ Click on the **Edit** icon.
 
 Click on the name of the event you created to open it.
 
-![ACOP](./images/myeventnode.png)
+![ACOP](./images/eventnode.png)
 
-Navigate to `--aepTenantId--.demoEnvironment.brandLogo` and click it.
+Navigate to `vangeluwAccountCreationEvent.--aepTenantId--.demoEnvironment.brandLogo` and select it.
 
 ![ACOP](./images/srclogo.png)
 
@@ -127,7 +123,11 @@ Click on the **Edit** icon.
 
 ![ACOP](./images/msgbrandname.png)
 
-Navigate to `--aepTenantId--.demoEnvironment.brandName` and click it.
+Click on the name of the event you created to open it.
+
+![ACOP](./images/eventnode.png)
+
+Navigate to `vangeluwAccountCreationEvent.--aepTenantId--.demoEnvironment.brandName` and click it.
 
 ![ACOP](./images/srcbrandname.png)
 
@@ -170,10 +170,6 @@ For this exercise, our Journey is fine like it is now.
 Let's add an Orchestration Event to **End** the Journey. In the left side of the screen, go to **Orchestration** and select **End**. Drag and Drop this onto the 3rd step of the Journey.
 
 ![ACOP](./images/orch.png)
-
-Your Journey now looks like this.
-
-![ACOP](./images/journeyfinal.png)
 
 You still need to give your Journey a Name. You can do that by clicking the **Edit** icon in the top right side of your screen.
 
