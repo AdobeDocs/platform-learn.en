@@ -56,7 +56,7 @@ In the popup, you need to select the tag.
 ![DSN](./images/l4.png)
 
 The tag that you need to copy, needs to look like this:
-**//assets.adobedtm.com/b754ed1bed61/3fa8ee880669/launch-dadddddddd106a3f-development.min.js**
+`//assets.adobedtm.com/b754ed1bed61/3fa8ee880669/launch-dadddddddd106a3f-development.min.js`.
 
 Paste this value in the **Create New Configuration ID** screen, in the field **Launch Website Tag URL**.
 
