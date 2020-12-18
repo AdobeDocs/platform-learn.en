@@ -3,6 +3,8 @@ user-guide-title: Comprehensive Technical Tutorial for Adobe Experience Platform
 breadcrumb-title: Comprehensive Technical Tutorial - v21
 user-guide-description: A hands-on tutorial covering many aspects of Platform, including connections to third-party systems.
 audience: all
+index: no
+hide: yes
 ---
 
 # Comprehensive Technical Tutorial for Adobe Experience Platform {#comprehensive-technical-tutorial-v21}
