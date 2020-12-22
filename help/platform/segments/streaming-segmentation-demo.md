@@ -19,7 +19,7 @@ This videos shows how Adobe Experience Platform's streaming segmentation feature
 ## Additional Resources
 
 * [Create dynamic segments video](create-dynamic-segments.md)
-* [Create multi-entity segments across classes and include segment context video](create-multi-entity-segments.md)
+* [Create multi-entity segments video](create-multi-entity-segments.md)
 * [Understanding the Real-time Customer Profile video](../profiles/bring-data-into-the-real-time-customer-profile.md)
 * [Segment Builder documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html)
 * [Streaming segments in the UI documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html#streaming-segmentation)
