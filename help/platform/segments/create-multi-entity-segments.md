@@ -12,7 +12,7 @@ thumbnail: 28947.jpg
 
 # Create multi-entity segments
 
-This video shows you how to build multi-entity segments in Adobe Experience Platform's Segment Builder.  Multi-entity segmentation, or segmentation across classes, allows you to build segments combining data based on *multiple XDM classes*. For example, you could have a dataset built on the XDM ExperienceEvent class capturing only product ids when customers make a purchase and another dataset built on a custom product class containing the catalog details of each product id (e.g. color, size, category, etc). If you establish a relationship between the schemas, you can then build segments based on fields existing in both schemas (e.g. people who bought jackets in the last 30 days).
+This video shows you how to build multi-entity segments in Adobe Experience Platform's Segment Builder.  Multi-entity segmentation, or segmentation across classes, allows you to build segments combining data based on *multiple XDM classes*. For example, you could have a dataset built on the XDM ExperienceEvent class capturing product ids when customers make a purchase and another dataset built on a custom product class, containing the catalog details of each product id (e.g. color, size, category, etc). If you establish a relationship between the schemas, you can then build segments based on fields existing in both schemas (e.g. people who bought jackets).
 
 <!--Segment context (segment payload) allows you to provide key contextual details, such as a visitor's abandoned cart contents, in your segment definition so you can send personalized messages.--> 
 
