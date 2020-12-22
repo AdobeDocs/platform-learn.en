@@ -7,7 +7,7 @@ kt: 3697
 audience: marketer
 doc-type: video
 activity: use
-thumbnail: 28947.jpg
+thumbnail: 32179.jpg
 ---
 
 # Create multi-entity segments
@@ -16,7 +16,7 @@ This video shows you how to build multi-entity segments in Adobe Experience Plat
 
 <!--Segment context (segment payload) allows you to provide key contextual details, such as a visitor's abandoned cart contents, in your segment definition so you can send personalized messages.--> 
 
->[!VIDEO](https://video.tv.adobe.com/v/28947?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32179?quality=12&learn=on)
 
 ## Additional Resources
 
