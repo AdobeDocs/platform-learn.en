@@ -113,7 +113,6 @@ audience: all
   + [Create a segment in the UI (Video)](/help/platform/segments/create-segments.md)
   + [Create dynamic segments (Video)](/help/platform/segments/create-dynamic-segments.md)
   + [Create multi-entity segments (Video)](/help/platform/segments/create-multi-entity-segments.md)
-  + [Create segments across classes and include segment context (Video)](/help/platform/segments/create-segments-across-classes-and-include-segment-context.md)
   + [Evaluate a segment (API)](https://docs.adobe.com/content/help/en/experience-platform/segmentation/tutorials/evaluate-a-segment.html)
   + [Create a dataset to export data (UI)](https://docs.adobe.com/content/help/en/experience-platform/segmentation/tutorials/create-dataset-export-segment.html)
   + [Enforce data usage compliance for segments (API)](https://docs.adobe.com/content/help/en/experience-platform/segmentation/tutorials/governance.html)
