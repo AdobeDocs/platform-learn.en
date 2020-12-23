@@ -18,7 +18,7 @@ Real-Time Customer Profile powers cross channel personalization at scale through
 
 ## Additional Resources
 
-* [UnderstandingReal-time Customer Profile video](understanding-the-real-time-customer-profile.md)
-* [Overview Diagram ofReal-time Customer Profile video](overview-diagram.md)
+* [Understanding Real-time Customer Profile video](understanding-the-real-time-customer-profile.md)
+* [Overview Diagram of Real-time Customer Profile video](overview-diagram.md)
 * [Create Segments](../segments/create-segments.md)
 * [Real-time Customer Profile documentation](https://www.adobe.com/go/profile-overview-en)
