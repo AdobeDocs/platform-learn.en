@@ -88,6 +88,7 @@ audience: all
   + [Bring data into Real-time Customer Profile (Video)](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
   + [Customizing profile view details (UI)](https://docs.adobe.com/content/help/en/experience-platform/profile/ui/profile-customization.html)
   + [Configure a dataset for Profile (API)](https://docs.adobe.com/content/help/en/experience-platform/profile/tutorials/dataset-configuration.html)
+  + [Union schemas overview](profiles/union-schemas-overview.md)
 + Queries {#queries}
   + [Understanding Query Service (Video)](/help/platform/queries/understanding-query-service.md)
   + [Creating queries (UI)](https://docs.adobe.com/content/help/en/experience-platform/query/creating-queries/creating-queries.html)
