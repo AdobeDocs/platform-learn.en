@@ -9,6 +9,10 @@ activity: develop
 
 # 14.3 Prepare your Launch and Web SDK setup for Offer Decisioning
 
+>[!NOTE]
+>
+>The use of Offer Decisioning in Adobe Experience Platform Web SDK is currently available in early access to select users. This functionality is not available to all IMS organizations.
+
 ## 14.3.1 Update your Edge Config ID
 
 In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICONTROL Edge Configuration ID]**. You then used the name **ldap - Edge Configuration** and replaced **ldap** with your ldap.

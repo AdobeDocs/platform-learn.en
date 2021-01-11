@@ -108,53 +108,7 @@ In the response, you'll see the Collection that you defined in the Adobe Experie
 
 ![OD API](./images/api13.png)
 
-### 14.5.1.7 List Activities
-
-Click to open the request **[!UICONTROL GET - List Activities]**.
-
-![OD API](./images/api14.png)
-
-In the response, you'll see the Activity that you defined in the Adobe Experience Platform UI in [Exercise 14.2.4](./ex2.md).
-
-In order to send the next API requests, you now need to search for and then copy the field **[!UICONTROL @id]** for your Offer Activity ID. 
-
-![OD API](./images/api15.png)
-
-You can see the Offer Activity ID in the above response, or you can take it from the Adobe Experience Platform UI as indicated below. 
-
-![OD API](./images/api15a.png)
-
-Next, edit your Postman environment.
-
-![OD API](./images/api16.png)
-
-Create the variable **[!UICONTROL OFFER_ACTIVITY_ID]** and assign the value of your Offer Activity ID to it. Click **[!UICONTROL Update]** to save your changes.
-
-![OD API](./images/api17.png)
-
-### 14.5.1.8 Get Offers by Activity Id
-
-Click to open the request **[!UICONTROL GET - Get Offers by Activity Id]**. 
-
-![OD API](./images/api18.png)
-
-In the response, you'll then see the offers that are part of your activity.
-
-![OD API](./images/api19.png)
-
-Click to open the request **[!UICONTROL POST - Get Offers for Customer Profile]**. With this request, you're able to enter for instance, the email address of a customer to retrieve the offer that should be presented to that customer.
-
-![OD API](./images/api20.png)
-
-Go to **[!UICONTROL Body]** and enter the email address of the customer for whom you'd like to request an offer. Click **[!UICONTROL Send]**.
-
-![OD API](./images/api21.png)
-
-You'll then get the response from Offer Decisioning with the id's of the personalized offer and fallback offer. If you need more detail, continue to the next request.
-
-![OD API](./images/api22.png)
-
-### 14.5.1.9 Get Detailed Offers for Customer Profile
+### 14.5.1.7 Get Detailed Offers for Customer Profile
 
 Click to open the request **[!UICONTROL POST - Get Detailed Offers for Customer Profile]**. This request is similar to the previous one, but will actually return details like image URLs, text etc.
 

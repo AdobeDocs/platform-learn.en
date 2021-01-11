@@ -178,52 +178,101 @@ Adobe Experience Platform has already done some guessing for you, by trying to l
 
 ![Data Ingestion](./images/mapschema.png)
 
-First of all, you need to add the required mapping for the primary identifier field. The primary identifier field is a required field in this workflow and expects you to indicate what the primary identifier is of the file you're uploading, as defined in the schema that is linked to this dataset. 
+For the [!UICONTROL Schema Mappings], Adobe Experience Platform has tried to link fields together already. However, not all proposals of mapping are correct. You now need to **Accept target fields** one-by-one.
 
-Selecting the primary identifier is actually the most important thing: you'll be defining the custom, brand-specific, primary identifier. The primary identifier is a requirement for this data to be onboarded. Without the presence of the primary identifier, the ingestion of this CSV-file will fail.
+#### birthDate
 
-The primary identifier for the **[!UICONTROL Demo System - Profile Dataset for CRM]**-dataset is the **[!UICONTROL email]** as it's the unique identifier for this dataset.
-In this case, based on the selection of the dataset and the schema that is linked to the dataset, the required [!UICONTROL Target Schema Field] in XDM is `--aepTenantId--.identification.emailId`. You need to map the **[!UICONTROL email]**-field from your CSV file as the source attribute for this required [!UICONTROL Target Schema Field].
+The Source Schema field **birthDate** should be linked to the target field **person.birthDate**. Check the checkbox. 
 
-To do this, click the **[!UICONTROL Add new mapping]** button.
+![Data Ingestion](./images/tfbd.png)
 
-![Data Ingestion](./images/reqmapping.png)
+#### city
 
-In the [!UICONTROL Source Field], click the **[!UICONTROL arrow]** icon.
+The Source Schema field **city** should be linked to the target field **homeAddress.city**. Check the checkbox. 
 
-![Data Ingestion](./images/emptysource.png)
+![Data Ingestion](./images/tfcity.png)
 
-In the popup, select the field **[!UICONTROL email]**.
+#### country
 
-![Data Ingestion](./images/emptysourcepopup.png)
+The Source Schema field **country** should be linked to the target field **homeAddress.country**. Check the checkbox. 
 
-You'll then see this. Click the **[!UICONTROL schema]** icon.
+![Data Ingestion](./images/tfcountry.png)
 
-![Data Ingestion](./images/emptytarget.png)
+#### country_code
 
-In the popup, select the field `--aepTenantId--.identification.emailId`.
+The Source Schema field **country_code** should be linked to the target field **homeAddress.countryCode**. Check the checkbox. 
 
-![Data Ingestion](./images/emptytargetpopup.png)
+![Data Ingestion](./images/tfcountrycode.png)
 
-The result should look like this:
+#### email
 
-![Data Ingestion](./images/filledsource.png)
+The Source Schema field **email** should be linked to the target field **--aepTenandId--.identification.emailId**. Hover over the line **email** and click the **+** icon.
 
-For the [!UICONTROL Schema Mappings], Adobe Experience Platform has tried to link fields together already. However, not all proposals of mapping are correct.
+![Data Ingestion](./images/tfemail1.png)
 
-![Data Ingestion](./images/schemamap.png)
+You'll then see this:
 
-For the [!UICONTROL Source Attribute] **[!UICONTROL email]**, the Target Schema Field should be **[!UICONTROL --aepTenantId--.identification.emailId]**. You can either enter **[!UICONTROL --aepTenantId--.identification.emailId]** in the field, or you can click the icon to visually locate the correct property in the **[!UICONTROL Demo System - Profile Dataset for CRM Schema]**.
+![Data Ingestion](./images/tfemail2.png)
 
-As such, you need to verify the mapping of all the below fields and ensure the mapping is identical to the mapping below.
+Navigate to and select the field **--aepTenandId--.identification.emailId**. Click **Save**.
 
-![Data Ingestion](./images/newmapping.png)
+![Data Ingestion](./images/tfemail3.png)
 
->[!NOTE]
->
->If the proposed mapping of a field isn't correct, first click the **minus** button to delete the Target Field, and then click the **plus** icon to add a new mapping.
+You'll then see this:
 
-![Data Ingestion](./images/newmappingminusplus.png)
+![Data Ingestion](./images/tfemail4.png)
+
+#### first_name
+
+The Source Schema field **first_name** should be linked to the target field **person.name.firstName**. Check the checkbox. 
+
+![Data Ingestion](./images/tffname.png)
+
+#### gender
+
+The Source Schema field **gender** should be linked to the target field **person.gender**. Check the checkbox. 
+
+![Data Ingestion](./images/tfgender.png)
+
+#### home_latitude
+
+The Source Schema field **home_latitude** should be linked to the target field **homeAddress._schema.latitude**. Check the checkbox. 
+
+![Data Ingestion](./images/tflat.png)
+
+#### home_longitude
+
+The Source Schema field **home_longitude** should be linked to the target field **homeAddress._schema.longitude**. Check the checkbox. 
+
+![Data Ingestion](./images/tflon.png)
+
+#### id
+
+The Source Schema field **id** should be linked to the target field **_id**. Hover over the line **id** and click the **+** icon.
+
+![Data Ingestion](./images/tfid1.png)
+
+You'll then see this:
+
+![Data Ingestion](./images/tfid2.png)
+
+Navigate to and select the field **_id**. Click **Save**.
+
+![Data Ingestion](./images/tfid3.png)
+
+You'll then see this:
+
+![Data Ingestion](./images/tfid4.png)
+
+#### last_name
+
+The Source Schema field **last_name** should be linked to the target field **person.name.lastName**. Check the checkbox. 
+
+![Data Ingestion](./images/tflname.png)
+
+You should now have this:
+
+![Data Ingestion](./images/overview.png)
 
 Click the **[!UICONTROL Finish]** button to finish the workflow.
 
