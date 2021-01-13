@@ -206,7 +206,7 @@ The Source Schema field **country_code** should be linked to the target field **
 
 #### email
 
-The Source Schema field **email** should be linked to the target field **--aepTenandId--.identification.emailId**. Hover over the line **email** and click the **+** icon.
+The Source Schema field **email** should be linked to the target field **`--aepTenantId--`.identification.emailId**. Hover over the line **email** and click the **+** icon.
 
 ![Data Ingestion](./images/tfemail1.png)
 
@@ -214,7 +214,7 @@ You'll then see this:
 
 ![Data Ingestion](./images/tfemail2.png)
 
-Navigate to and select the field **--aepTenandId--.identification.emailId**. Click **Save**.
+Navigate to and select the field **`--aepTenandId--`.identification.emailId**. Click **Save**.
 
 ![Data Ingestion](./images/tfemail3.png)
 
