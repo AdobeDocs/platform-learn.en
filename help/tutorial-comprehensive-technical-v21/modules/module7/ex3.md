@@ -36,7 +36,7 @@ select date_format( timestamp , 'yyyy-MM-dd') AS Day,
        count(*) AS productViews
 from   demo_system_event_dataset_for_website_global_v1_1
 where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-and    eventType = 'productView'
+and eventType = 'commerce.productViews'
 group by Day
 limit 10;
 ```
@@ -50,7 +50,7 @@ aepenablementfy21:all=> select date_format( timestamp , 'yyyy-MM-dd') AS Day,
 aepenablementfy21:all->        count(*) AS productViews
 aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
 aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy21:all-> and    eventType = 'productView'
+aepenablementfy21:all-> and    eventType = 'commerce.productViews'
 aepenablementfy21:all-> group by Day
 aepenablementfy21:all-> limit 10;
     Day     | productViews 
@@ -69,7 +69,7 @@ What are the top 5 products viewed?
 select productListItems.name, count(*)
 from   demo_system_event_dataset_for_website_global_v1_1
 where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-and    eventType = 'productView'
+and    eventType = 'commerce.productViews'
 group  by productListItems.name
 order  by 2 desc
 limit 5;
@@ -83,7 +83,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 aepenablementfy21:all=> select productListItems.name, count(*)
 aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
 aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy21:all-> and    eventType = 'productView'
+aepenablementfy21:all-> and    eventType = 'commerce.productViews'
 aepenablementfy21:all-> group  by productListItems.name
 aepenablementfy21:all-> order  by 2 desc
 aepenablementfy21:all-> limit 5;
