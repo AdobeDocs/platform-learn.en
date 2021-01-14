@@ -4,7 +4,7 @@ description: Data Ingestion using Google Tag Manager and Google Analytics - Crea
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 9.1 Create a Google Tag Manager Property
@@ -27,7 +27,7 @@ Fill in these details:
 |:-------------------------------------------| :------------------ |
 |Account Name|SYTYCD - **ldap**|
 |Country|Choose the country where you work, or where your demo website runs|
-|Container name|www.platformdemo.net|
+|Container name|www.aepdemo.net|
 |Target platform|Web|
 
 After filling in the details your screen should look like this

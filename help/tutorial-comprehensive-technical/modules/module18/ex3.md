@@ -4,7 +4,7 @@ description: Segment Activation to Microsoft Azure Event Hub - Create a Streamin
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 18.3 Create a Streaming Segment
@@ -13,7 +13,7 @@ activity:
 
 You'll create a simple segment:
 
-- **Luma Telco Sports Fan** for which customer profiles will qualify when they visit the **Sports** page of the Luma Telco brand. 
+- **Citi Signal Sports Fan** for which customer profiles will qualify when they visit the **Sports** page of the Citi Signal brand. 
 
 ### Good to know
 
@@ -37,13 +37,21 @@ Building a segment in explained in detail in [Module 11](../module11/real-time-c
 
 ### Create Segment
 
-Go to [https://platform.adobe.com](https://platform.adobe.com) and navigate to **Segment**. Click the **+ Create segment** button.
+Go to [https://platform.adobe.com](https://platform.adobe.com).
+
+Before you continue, you need to select a **sandbox**. The sandbox to select is named `--aepSandboxId--`. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox. Go to **Segment**. 
+
+![Data Ingestion](./images/sb2.png)
+
+Click the **+ Create segment** button.
 
 ![4-01-create-segment.png](./images/4-01-create-segment.png)
 
-Let's start with adding the profile email address expression to make sure you're only qualifying for your own segments:
-
-Name your segment **ldap - Luma Telco Sports Fan** and add the page name experience event:
+Name your segment **ldap - Citi Signal Sports Fan** and add the page name experience event:
 
 Click on **Events**, and drag and drop **XDM ExperienceEvent > Web > Web page details > Name**. Enter **Sports** as the value:
 
@@ -58,7 +66,7 @@ Drag and drop **XDM ExperienceEvent > --aepTenantIdSchema-- > Brand > ldap**. En
 The PQL of your segment looks like:
 
 ```code
-select _Any1 from xEvent where _Any1.web.webPageDetails.name.equals("Sports", false) and _Any1._experienceplatform.brand.ldap.equals("ldap", false)
+select _Any1 from xEvent where _Any1.web.webPageDetails.name.equals("Sports", false) and _Any1.--aepTenantId--.brand.ldap.equals("ldap", false)
 ```
 
 Next Step: [18.4 Activate Segment](./ex4.md)

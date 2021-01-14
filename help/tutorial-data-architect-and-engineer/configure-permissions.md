@@ -1,5 +1,7 @@
 ---
-title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Configure permissions
+seo-title: Configure permissions | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+breadcrumb-title: Configure permissions
 description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console. 
 feature: permission
 topics: 
@@ -20,7 +22,7 @@ Access control is a key privacy capability in Experience Platform and we recomme
 
 Data Architects and Data Engineers are  power users of Adobe Experience Platform and you will need almost all permissions in order to complete this tutorial, and later in your day-to-day work. Data Architects are likely be involved in the administration of *other Platform users* at their company such as marketers, analysts, and data scientists. As you complete this lesson, think about how you might use these features to manage other users at your company.
 
-**Data Architects** will need to configure permissions outside of this tutorial.
+**Data Architects** typically need to configure permissions for other users outside of this tutorial.
 
 >[!IMPORTANT]
 >
@@ -58,13 +60,13 @@ To create the product profile:
     ![Click Add New Profile](assets/adminconsole-newProfile.png)
 1. Name the profile `Luma Tutorial Platform` (add the tutorial taker's name to the end, if multiple people from your company are taking this tutorial) and click the **[!UICONTROL Next]** button
     ![Name the profile Luma Tutorial Platform](assets/adminconsole-nameProfile.png)
-1. On the Services screen, click the "All on" checkbox to *remove* all services. The tutorial participant will reenable what is needed in a later exercise. 
+1. Depending on the details of your product license, you may or may not see this second **[!UICONTROL Services]** screen. We will not be using any of these services in this tutorial, so click the **[!UICONTROL All on]** checkbox to *remove* all services and click **[!UICONTROL Done]**.
     ![Disable services](assets/adminconsole-createProfile-services.png)
 1. At this point the profile is created. Permission items will be added in a later exercise, so on the **[!UICONTROL Configure profile]** screen, just hit the **[!UICONTROL Cancel]** button.
     ![Add permissions](assets/adminconsole-configureProfileCancel.png)
 
 
-Now you need to add the tutorial participant as an admin of the newly created product profile:
+Now you need to add the tutorial participant as an admin of the newly created product profile. If you yourself are the tutorial participant, you can skip ahead to the "Configure Experience Platform product profile" exercise:
 
 1. Click on the `Luma Tutorial Platform` product profile:
    
@@ -81,39 +83,20 @@ After completing these steps you should see that the `Luma Tutorial Platform` pr
 
 ## Configure Experience Platform product profile
 
-Now that you are an admin of the `Luma Tutorial Platform` product profile you can configure the services, permission, and roles you will need to complete the tutorial.
-
-### Add services
-
-There are multiple services built on top of Adobe Experience Platform. Some of them are enabled via Platform's product profiles:
-
-1. Log into the [Adobe Admin Console](https://adminconsole.adobe.com)
-1. Click **[!UICONTROL Products]** on the top navigation
-1. Click **[!UICONTROL Adobe Experience Platform]** on the left navigation
-1. Click on the `Luma Tutorial Platform` profile in the list
-    ![Open the Luma Tutorial Platform profile](assets/adminconsole-platform-openProfile.png)
-1. Click the **[!UICONTROL Settings]** link
-    ![Click settings](assets/adminconsole-platform-clickSettings.png)
-1. Click **[!UICONTROL Services]** on the left
-1. Enable **[!UICONTROL Query Service]** (you may see other options here depending on your product license)
-1. Click the **[!UICONTROL Save]** button
-    ![Click settings](assets/adminconsole-platform-enableQueryService.png)
+Now that you are an admin of the `Luma Tutorial Platform` product profile you can configure the permissions and roles you will need to complete the tutorial.
    
 ### Add permissions
 
-Now you will add the individual permission items to the profile. From the product profile screen:
+Now you will add the individual permission items to the profile:
 
+1. Open the `Luma Tutorial Platform` product profile
 1. Click the **[!UICONTROL Permissions]** tab
-1. Under **[!UICONTROL Sandboxes]**, add the **[!UICONTROL Prod]** sandbox to the profile. It is necessary to have access to the [!DNL Prod] sandbox in order to create other sandboxes. Once we have added the tutorial sandbox in the next lesson, we will remove the [!DNL Prod] sandbox from the product profile.
-1. Add all of the permission items for the categories highlighted in the screenshot below, by opening a category and moving the items to the right column. **[!UICONTROL Destinations]** is a capability of Real-time Customer Data Platform and permissions are not needed for this tutorial
+1. Under **[!UICONTROL Sandboxes]**, add the **[!UICONTROL Prod]** sandbox to the profile. It is necessary to have access to the [!DNL Prod] sandbox in order to create additional sandboxes. Once we have added the tutorial sandbox in the next lesson, we will remove the [!DNL Prod] sandbox from the product profile.
+1. Add all of the permission items for the categories highlighted in the screenshot below, by opening a category and moving the items to the right column. The [!UICONTROL Destinations], [!UICONTROL Decisioning] and [!UICONTROL Data Science Workspace] features are not covered in  this tutorial
 1. After adding all of the permission items, be sure to click the **[!UICONTROL Save]** button
 
 After saving, your screen should look like this:
 ![Click settings](assets/adminconsole-platform-enablePermissions.png)
-
->[!IMPORTANT]
->
->The sandbox feature is currently in Beta. If you do not see permission categories **[!UICONTROL Sandboxes]** or **[!UICONTROL Sandbox Administration]**, please reach out to your Adobe representative for early access.
 
 ### Add yourself as a user
 
@@ -164,17 +147,21 @@ Now you will add the individual permission items to the profile. From the produc
 1. Open the `Luma Tutorial Launch` profile
     ![Open Products > Adobe Experience Platform Launch > Luma Tutorial Launch](assets/adminconsole-launch-openProfile.png)
 1. Click on the Permissions tab
-1. Click to open the **[!UICONTROL Properties]** row
+1. Click to open **[!UICONTROL Platforms]**
+1. Click **[!UICONTROL Add all]** so you can create both [!UICONTROL Web] and [!UICONTROL Mobile] properties.
+    ![Add platforms](assets/adminconsole-launch-addPlatforms.png)
+1. Click **[!UICONTROL Save]**
+1. Click to open **[!UICONTROL Properties]**
 1. Make sure the **[!UICONTROL Auto-Include]** toggle so that it is in the Off state so that you don't have access to any properties (we will add one later).
-1. Click the **[!UICONTROL Save]** button
+1. Click **[!UICONTROL Save]**
     ![Remove properties](assets/adminconsole-launch-removeProperties.png)
 1. Click to open the **[!UICONTROL Property Rights]** row
 1. Click **[!UICONTROL Add all]** to add all of the property rights
-1. Click the **[!UICONTROL Save]** button
+1. Click **[!UICONTROL Save]**
     ![Remove properties](assets/adminconsole-launch-addPropertyRights.png)
 1. Click to open the **[!UICONTROL Company Rights]** row
 1. Add **[!UICONTROL Manage Properties]**
-1. Click the **[!UICONTROL Save]** button
+1. Click **[!UICONTROL Save]**
     ![Remove properties](assets/adminconsole-launch-companyRights.png)
 
 
@@ -192,7 +179,7 @@ You will not need to add yourself as a Developer for Launch.
 ## Additional Resources
 
 * [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-console.html)
-* [Access Control documentation](https://docs.adobe.com/content/help/en/experience-platform/access-control/home.html)
+* [Access Control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html)
 * [Access Control API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/access-control.yaml)
 
 Now you have almost all the permissions required to complete the tutorial! There will be just two more tweaks that you will make inside the [!DNL Adobe Admin Console], including one after you [create a sandbox](create-a-sandbox.md)!

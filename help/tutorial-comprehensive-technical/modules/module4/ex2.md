@@ -4,7 +4,7 @@ description: Voice Assistant - Amazon Alexa - Define your Alexa skill
 kt: 5342
 audience: Application Developer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 4.2: Define your Alexa skill
@@ -221,8 +221,8 @@ Key | Value
 ---------|----------
 **alexaBrandName** | **luma retail**
 **emailAddress** | **rmaur@adobe.com**
-**ldap** | **--demoProfileLdap--**
-**configurationId** | **--configurationID--**
+**ldap** | `--demoProfileLdap--`
+**configurationId** | `--configurationID--`
     
 Ensure you replace **alexaBrandName**, **ldap** and **emailAddress** with your specific configuration details.
 

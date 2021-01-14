@@ -4,7 +4,7 @@ description: Foundation - Real-time Customer Profile - Visualize your own Real-t
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 3.2 - Visualize your own Real-time Customer Profile - UI

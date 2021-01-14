@@ -4,7 +4,7 @@ description: Segment Activation to Microsoft Azure Event Hub - Setup the Event H
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 18.2 Configure your Azure Event Hub Destination in Adobe Experience Platform
@@ -71,7 +71,17 @@ At this point you should have identified all the values needed to define the Azu
 
 ## 18.2.2 Create Azure Event Hub Destination in Adobe Experience Platform
 
-Go to [https://platform.adobe.com](https://platform.adobe.com), navigate to **Destinations**, select **Cloud Storage** and hover over **Azure Event Hubs** and click **Activate**:
+Go to [https://platform.adobe.com](https://platform.adobe.com).
+
+Before you continue, you need to select a **sandbox**. The sandbox to select is named `--aepSandboxId--`. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox. Go to **Destinations**. 
+
+![Data Ingestion](./images/sb2a.png)
+
+Select **Cloud Storage** and go to **Azure Event Hubs** and click **Configure**:
 
 ![2-08-list-destinations.png](./images/2-08-list-destinations.png)
 
@@ -89,7 +99,7 @@ In the next screen, enter the name and description in the format **ldap-aep-enab
   
 ![2-10-create-destination.png](./images/2-10-create-destination.png)
 
-We will skip segment activation for now. You can hit the **Save &amp; exit** button:
+You can skip segment activation for now. You can hit the **Save &amp; exit** button:
 
 ![2-11-save-exit-activation.png](./images/2-11-save-exit-activation.png)
 

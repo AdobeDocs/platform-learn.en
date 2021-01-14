@@ -1,5 +1,7 @@
 ---
-title: Subscribe to data ingestion events | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Subscribe to data ingestion events
+seo-title: Subscribe to data ingestion events | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+breadcrumb-title: Subscribe to data ingestion events
 description: In this lesson, you will subscribe to data ingestion events by setting up a webhook with the Adobe Developer Console and an online webhook development tool. You will use these events to monitor the status of your data ingestion jobs in the subsequent lessons.
 feature: data ingestion
 topics: 
@@ -74,7 +76,7 @@ That's it for now, you will learn more about these notifications in the next les
 ## Additional Resources
 
 * [Webhook.site](https://webhook.site/)
-* [Data ingestion notifications documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/quality/subscribe-events.html)
+* [Data ingestion notifications documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html)
 * [Getting Started with Adobe I/O Events documentation](https://www.adobe.io/apis/experienceplatform/events/docs.html)
 
 Ok, let's finally start [ingesting data](ingest-batch-data.md)!

@@ -4,7 +4,7 @@ description: Update a contact in Microsoft Dynamics 365 and automatically trigge
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 
@@ -28,7 +28,7 @@ In Attributes, click **XDM Individual Profile**.
 
 ![demo](./images/segments3.png)
 
-Click your tenant specific object, which is similar to **--aepTenantIdSchema--**.
+Click your tenant specific object, which is similar to `--aepTenantIdSchema--`.
 
 ![demo](./images/segments4.png)
 
@@ -48,7 +48,7 @@ Go to **Events** and click **XDM ExperienceEvent**.
 
 ![demo](./images/segments8.png)
 
-Click your tenant specific object, which is similar to **--aepTenantIdSchema--**.
+Click your tenant specific object, which is similar to `--aepTenantIdSchema--`.
 
 ![demo](./images/segments9.png)
 
@@ -289,7 +289,7 @@ You'll now see the expression builder options.
 Follow these instructions to set the fields of the HTTP expression builder:
 
 - Method: **POST**
-- URI: **--dcsInletId--**
+- URI: `--dcsInletId--`
 
 Enter the following Header values
 

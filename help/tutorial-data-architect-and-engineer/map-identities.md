@@ -1,5 +1,7 @@
 ---
-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Map identities
+seo-title: Map identities | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+breadcrumb-title: Map identities
 description: In this lesson, we will create identity namespaces and add identity fields to our schemas.
 feature: profile
 topics: 
@@ -38,7 +40,7 @@ Before you begin the exercises, watch this short video to learn more about ident
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
 
-* Permission items **[!UICONTROL Identities]** > **[!UICONTROL View Identity Namespaces]** and **[!UICONTROL Manage Identity Namespaces]**
+* Permission items **[!UICONTROL Identity Management]** > **[!UICONTROL View Identity Namespaces]** and **[!UICONTROL Manage Identity Namespaces]**
 * Permission item **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
@@ -63,7 +65,7 @@ Let's start by creating a namespace for the Luma Loyalty Schema:
     | Identity symbol| lumaLoyaltyId    |  
     | Type           | Cross-Device      |  
 
-1. Click Create.
+1. Click Create
 
     ![Identity Namespace ](assets/identity-createNamespace.png)
 
@@ -73,7 +75,7 @@ Now set up another namespace for the Luma Product Catalog Schema with the follow
 |---------------|-----------|
 | Display name  | Luma Product SKU   | 
 | Identity symbol| lumaProductSKU    |  
-| Type           | Non-People      |  
+| Type           | Non-people identifier      |  
 
 
 
@@ -120,7 +122,7 @@ Now that we have our namespaces, the next step is to label our identity fields a
 
 ### Label XDM Fields For Primary Identity
 
-Each schema used with the Real-time Customer Profile is required to have a primary identity specified. And each record ingested must have a value for that field. Additionally, primary identities are used as keys to look up profiles in the profile browser (we will come back to this later). 
+Each schema used with Real-time Customer Profile is required to have a primary identity specified. And each record ingested must have a value for that field. Additionally, primary identities are used as keys to look up profiles in the profile browser (we will come back to this later). 
 
 Let's add a primary identity to the `Luma Loyalty Schema`:
 
@@ -142,9 +144,9 @@ Repeat the process for some of your other schema:
 
 >[!NOTE]
 >
->Data collected with the Web SDK is an exception to the typical practice of labeling identity fields in the schema. Web SDK uses something called an Identity Map to label identities *on the implementation side* and thus we will determine the identities for the `Luma Web Events Schema` when we implement the Web SDK on the Luma website. (We will collect the Experience Cloud Visitor ID (ECID) as the primary id and crmId as a secondary id. 
+>Data collected with the Web SDK is an exception to the typical practice of labeling identity fields in the schema. Web SDK uses something called an Identity Map to label identities *on the implementation side* and thus we will determine the identities for the `Luma Web Events Schema` when we implement the Web SDK on the Luma website. In that later lesson, we will collect the Experience Cloud Visitor ID (ECID) as the primary id and crmId as a secondary id. 
 
-With our selection of primary identities, it's clear to see how `Luma CRM Schema` can connect to the `Luma Offline Purchase Event Schema` since they both use `loyaltyId` as an identifier. But how can we connect our offline purchases to online behavior? How can we classify the products purchase with our product catalog? To do those we will use additional identity fields and complete the set up of our schema relationship.
+With our selection of primary identities, it's clear to see how `Luma CRM Schema` can connect to the `Luma Offline Purchase Event Schema` since they both use `loyaltyId` as an identifier. But how can we connect our offline purchases to online behavior? How can we classify the products purchased with our product catalog? To do so we will use additional identity fields and a schema relationship.
 
 <!--use a visual-->
 
@@ -166,7 +168,7 @@ Multiple identity fields can be added to a single schema. Additional identities 
 Now that we have our identity fields labeled, we can complete the setup of the schema relationships between Luma's product catalog and the event schemas:
 
 1. Open the `Luma Offline Purchase Event Schema`
-1. Select **[!UICONTROL ExperienceEvent commerce details]** mixin
+1. Select **[!UICONTROL Commerce Details]** mixin
 1. Select **[!UICONTROL productListItems]** > **[!UICONTROL SKU]** field
 1. Check the **[!UICONTROL Relationship]** box
 1. Select `Luma Product Catalog Schema` as the **[!UICONTROL Reference schema]**
@@ -175,13 +177,13 @@ Now that we have our identity fields labeled, we can complete the setup of the s
 
     ![Reference field](assets/identity-offlinePurchase-relationship.png)
 
-Repeat this process to create a relationship between the `Luma Web Events Schema` and the `Luma Product Catalog Schema`.
+Repeat this process to create a relationship between the `Luma Web Events Schema` and the `Luma Product Catalog Schema` ([!UICONTROL SKU] is a field in the [!UICONTROL Consumer Experience Event] mixin).
 
 <!--need to verify that the relationship schema works-->
 
 ## Additional Resources
 
-* [Identity Service documentation](https://docs.adobe.com/content/help/en/experience-platform/identity/home.html)
+* [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
 * [Identity Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/id-service-api.yaml)
 
 Now that our identities are in place, we can [create our datasets](create-datasets.md)!

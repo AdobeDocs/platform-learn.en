@@ -4,7 +4,7 @@ description: Query Service - Using the Query Service
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 7.2 Using the Query Service
@@ -16,7 +16,7 @@ activity:
 
 ## Context
 
-In this you will learn how to use PSQL to retrieve information about the available datasets, how to write a queries for Experience Data Model (XDM), and write your first simple reporting queries using the Query Service and Luma Telco datasets.
+In this you will learn how to use PSQL to retrieve information about the available datasets, how to write a queries for Experience Data Model (XDM), and write your first simple reporting queries using the Query Service and Citi Signal datasets.
 
 ## 7.2.1 Basic Queries
 

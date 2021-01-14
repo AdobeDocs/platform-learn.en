@@ -4,7 +4,7 @@ description: Data Ingestion using Google Tag Manager and Google Analytics - Setu
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 9.2 Setup Google Analytics & link it to GTM
@@ -40,7 +40,7 @@ You can fill in these fields:
 | Form field                | Value               |
 |:-------------------------------------------| :------------------ |
 |Website Name|SYTYCD - **ldap**|
-|Website URL|www.platformdemo.net|
+|Website URL|www.aepdemo.net|
 |Industry Category|Shopping|
 |Reporting Time Zone|the timezone where you work|
 

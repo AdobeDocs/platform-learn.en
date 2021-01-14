@@ -4,7 +4,7 @@ description: Query Service - Queries, queries, queries...  and churn analysis
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 7.3 Queries, queries, queries...  and churn analysis
@@ -35,7 +35,7 @@ How many product views do we have on a daily basis?
 select date_format( timestamp , 'yyyy-MM-dd') AS Day,
        count(*) AS productViews
 from   aep_demo_website_interactions
-where  --aepTenantId--.brand.brandName like 'Luma Telco'
+where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 and    --aepTenantId--.productData.productInteraction = 'productView'
 group by Day
 limit 10;
@@ -49,7 +49,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 module7:all=> select date_format( timestamp , 'yyyy-MM-dd') AS Day,
 module7:all->        count(*) AS productViews
 module7:all-> from   aep_demo_website_interactions
-module7:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 module7:all-> and    --aepTenantId--.productData.productInteraction = 'productView'
 module7:all-> group by Day
 module7:all-> limit 10;
@@ -68,7 +68,7 @@ What are the top 5 products viewed?
 ```sql
 select --aepTenantId--.productData.productName, count(*)
 from   aep_demo_website_interactions
-where  --aepTenantId--.brand.brandName like 'Luma Telco'
+where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 and    --aepTenantId--.productData.productInteraction = 'productView'
 group  by --aepTenantId--.productData.productName
 order  by 2 desc
@@ -82,7 +82,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 ```text
 module7:all=> select --aepTenantId--.productData.productName, count(*)
 module7:all-> from   aep_demo_website_interactions
-module7:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 module7:all-> and    --aepTenantId--.productData.productInteraction = 'productView'
 module7:all-> group  by --aepTenantId--.productData.productName
 module7:all-> order  by 2 desc
@@ -103,7 +103,7 @@ module7:all-> limit 5;
 ```sql
 select --aepTenantId--.productData.productInteraction, count(*)
 from   aep_demo_website_interactions
-where  --aepTenantId--.brand.brandName like 'Luma Telco'
+where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 and    --aepTenantId--.productData.productInteraction is not null
 and    --aepTenantId--.productData.productInteraction <> ''
 group  by --aepTenantId--.productData.productInteraction;
@@ -116,7 +116,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 ```text
 module7:all=> select --aepTenantId--.productData.productInteraction, count(*)
 module7:all-> from   aep_demo_website_interactions
-module7:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 module7:all-> and    --aepTenantId--.productData.productInteraction is not null
 module7:all-> group  by --aepTenantId--.productData.productInteraction;
  productinteraction | count(1) 
@@ -134,7 +134,7 @@ module7:all-> group  by --aepTenantId--.productData.productInteraction;
 ```sql
 select distinct --aepTenantId--.identification.ecid
 from   aep_demo_website_interactions
-where  --aepTenantId--.brand.brandName like 'Luma Telco'
+where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 and    web.webPageDetails.name = 'Cancel Service'
 group  by --aepTenantId--.identification.ecid
 limit 10;
@@ -147,7 +147,7 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
 ```text
 module7:all=> select distinct --aepTenantId--.identification.ecid
 module7:all-> from   aep_demo_website_interactions
-module7:all-> where  --aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 module7:all-> and    web.webPageDetails.name = 'Cancel Service'
 module7:all-> group  by --aepTenantId--.identification.ecid
 module7:all-> limit 10;
@@ -226,7 +226,7 @@ FROM
             where  a.--aepTenantId--.identification.ecid in ( 
                 select b.--aepTenantId--.identification.ecid
                 from   aep_demo_website_interactions b
-                where  b.--aepTenantId--.brand.brandName like 'Luma Telco'
+                where  b.--aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
                 and    b.web.webPageDetails.name = 'Cancel Service'
             )
         )
@@ -251,10 +251,10 @@ Copy the statement above and execute it in your **PSQL command-line interface**.
  Samsung Galaxy S7 32GB Black          | Google Pixel XL 32GB Black Smartphone | Cancel Service | Call Start |        2
  Google Pixel XL 32GB Black Smartphone | Google Pixel XL 32GB Black Smartphone | Cancel Service |            |        2
  Google Pixel XL 32GB Black Smartphone | Broadband Deals                       | Cancel Service | Call Start |        2
- Telco Home                            | Luma Telco Sport                      | Cancel Service |            |        2
+ Telco Home                            | Citi Signal Sport                      | Cancel Service |            |        2
  Google Pixel XL 32GB Black Smartphone | Broadband Deals                       | Cancel Service |            |        1
- Google Pixel XL 32GB Black Smartphone | Luma Telco Sport                      | Cancel Service | Call Start |        1
- Google Pixel XL 32GB Black Smartphone | Luma Telco Shop                       | Cancel Service |            |        1
+ Google Pixel XL 32GB Black Smartphone | Citi Signal Sport                      | Cancel Service | Call Start |        1
+ Google Pixel XL 32GB Black Smartphone | Citi Signal Shop                       | Cancel Service |            |        1
 (10 rows)
 ```
 
@@ -276,7 +276,7 @@ select * from (
                   ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
               AS contact_callcenter_after_seconds
        from   aep_demo_website_interactions
-       where  --aepTenantId--.brand.brandName like 'Luma Telco'
+       where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
        and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
 ) r
 where r.webPage = 'Cancel Service'
@@ -315,7 +315,7 @@ Explain that we are joining datasets together, in this case we join our `aep_dem
 **SQL**
 
 ```sql
-select r.*,
+select distinct r.*,
        c.--aepTenantId--.callDetails.callFeeling,
        c.--aepTenantId--.callDetails.callTopic,
        c.--aepTenantId--.callDetails.contractCancelled
@@ -328,7 +328,7 @@ from (
                   ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
               AS contact_callcenter_after_seconds
        from   aep_demo_website_interactions
-       where  --aepTenantId--.brand.brandName like 'Luma Telco'
+       where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
        and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
 ) r
 , aep_demo_call_center_interactions c
@@ -383,7 +383,7 @@ from (
                   ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
               AS contact_callcenter_after_seconds
        from   aep_demo_website_interactions
-       where  --aepTenantId--.brand.brandName like 'Luma Telco'
+       where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
        and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
 ) r
 , aep_demo_call_center_interactions c
@@ -450,7 +450,7 @@ Lets include the geographical info, like longitude, attitude, city, countrycode,
                          ROWS BETWEEN CURRENT ROW AND UNBOUNDED FOLLOWING)
                      AS contact_callcenter_after_seconds
               from   aep_demo_website_interactions
-              where  --aepTenantId--.brand.brandName like 'Luma Telco'
+              where  --aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
               and    web.webPageDetails.name in ('Cancel Service', 'Call Start')
        ) r
        , aep_demo_call_center_interactions c
@@ -514,7 +514,7 @@ select /* enter your name */
 from   aep_demo_website_interactions e
       ,aep_demo_call_center_interactions c
       ,aep_demo_loyalty_data l
-where  e.--aepTenantId--.brand.brandName like 'Luma Telco'
+where  e.--aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.ecid = c.--aepTenantId--.identification.ecid
 and    l.--aepTenantId--.identification.ecid = e.--aepTenantId--.identification.ecid;
@@ -548,7 +548,7 @@ module7:all->        l.--aepTenantId--.identification.crmid as crmid
 module7:all-> from   aep_demo_website_interactions e
 module7:all->       ,aep_demo_call_center_interactions c
 module7:all->       ,aep_demo_loyalty_data l
-module7:all-> where  e.--aepTenantId--.brand.brandName like 'Luma Telco'
+module7:all-> where  e.--aepTenantId--.brand.brandName IN ('Luma Telco', 'Citi Signal')
 module7:all-> and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 module7:all-> and    e.--aepTenantId--.identification.ecid = c.--aepTenantId--.identification.ecid
 module7:all-> and    l.--aepTenantId--.identification.ecid = e.--aepTenantId--.identification.ecid;

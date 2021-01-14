@@ -4,7 +4,7 @@ description: Query Service - Explore the dataset with Power BI
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 7.5 Explore the dataset with Power BI
@@ -65,7 +65,7 @@ Select/unselect **callTopics** to investigate:
 
 ![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
 
-Next Step: [Summary and benefits](./summary.md)
+Next Step: [7.7 Query Service API](./ex7.md)
 
 [Go Back to Module 7](./query-service.md)
 

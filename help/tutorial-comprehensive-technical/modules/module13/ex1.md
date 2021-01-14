@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Customer Journey Analytics 101
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 13.1 Customer Journey Analytics 101
@@ -76,7 +76,7 @@ Please have a look a these schemas and datasets in Adobe Experience Platform.
 Make sure to have at least checked things like:
 
 - Identities: CRMID, MobileNr, ECID, emailId. Which identities are the primary identifiers, which ones are the secondary identifiers?
-You can find the identifiers by opening a schema and looking at the object ``--aepTenantId--.identification``. Have a look at the schema [Platform Demo - Website Interactions Schema](https://experience.adobe.com/platform/schema).
+You can find the identifiers by opening a schema and looking at the object `--aepTenantId--.identification`. Have a look at the schema [Platform Demo - Website Interactions Schema](https://experience.adobe.com/platform/schema).
 
    ![demo](./images/identity.png)
 
@@ -92,4 +92,4 @@ Next Step: [13.2 Connect Adobe Experience Platform Datasets in Customer Journey 
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
-[Go Back to All Modules](../../../overview.md)
+[Go Back to All Modules](../../overview.md)

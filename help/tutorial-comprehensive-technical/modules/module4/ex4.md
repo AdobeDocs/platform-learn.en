@@ -4,7 +4,7 @@ description: Voice Assistant - Walkthrough of Demo Scenario, now including Alexa
 kt: 5342
 audience: Application Developer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 4.4 Walkthrough of Demo Scenario, now including Alexa

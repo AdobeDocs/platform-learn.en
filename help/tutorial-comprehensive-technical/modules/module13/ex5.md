@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Visualization using Customer Journey A
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 13.5 Visualization using Customer Journey Analytics
@@ -106,7 +106,7 @@ Finally you can add more visualizations. On the left side, under visualizations,
 
 ![demo](./images/pro18.png)
 
-Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Luma Telco**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
+Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Citi Signal/Luma Telco**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
 
 ![demo](./images/pro20.png)
 

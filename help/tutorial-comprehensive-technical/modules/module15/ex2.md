@@ -4,7 +4,7 @@ description: Data Science Workspace - Interact with data in Adobe Experience Pla
 kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment
@@ -43,7 +43,7 @@ Run these 2 commands in a Terminal window:
 - **$ /opt/anaconda3/bin/python -m pip install ipykernel**
 - **$ /opt/anaconda3/bin/python -m  ipykernel install**
 
-## Exercise
+## Use Anaconda
 
 After installing Anaconda, open Anaconda and you'll see the below page.
 
@@ -54,62 +54,209 @@ Click on the **Launch** button for JupyterLab.
 ![LocalNotebook](./images/launchjn.png)
 
 After that, your browser should open and show you the JupyterLab start page.
+Open a new **Python 3** notebook by clicking the below button as indicated.
 
 ![LocalNotebook](./images/jupstart.png)
 
-Download this notebook `Jupyter_QS_LumaInsurance.ipynb.zip` from your **Environment Variables** and unzip it to the desktop of your local computer.
+You'll then have a new, empty notebook.
 
-Click the **Upload** icon in JupyterLab.
+![LocalNotebook](./images/jupstart1.png)
 
-![LocalNotebook](./images/jpupload.png)
+You'll then have a blank, empty new Python 3 notebook. Before you continue, give your notebook a descriptive name. Right-click on the **Untitled.ipynb** file and click **Rename**.
 
-Select the notebook you just downloaded, `Jupyter_QS.ipynb`,  from your computer's desktop.
+![DSW](./images/jupstart1a.png)
 
-![LocalNotebook](./images/jpuploaddesktop.png)
+Enter **luma-insurance-anaconda.ipynb** as the name for your notebook and hit **Enter**. You'll then have this:
 
-You'll then see the notebook `Jupyter_QS_LumaInsurance.ipynb`.
+![DSW](./images/jupstart1b.png)
 
-![LocalNotebook](./images/jpuploaddesktopfile.png)
-
-Double-click the notebook `Jupyter_QS_LumaInsurance.ipynb` to open it.
-
-![LocalNotebook](./images/jpuploaddesktopfileopen.png)
-
-Go to the first cell and Go to the first cell and click the **Play** icon to execute this cell. If you run into an error with this cell, please verify the alternative ways of installing postgres as mentioned above in the  **Prerequisites** section.
-
-![LocalNotebook](./images/jupplay.png)
+### Load Libraries
 
 This cell will download and install 2 external libraries that are required to support **PostgreSQL**. Executing this cell the first time may take a couple of minutes.
 
 FYI: if you get an error on loading **psycopg2**, you will need to install **postgres** on your computer by opening a terminal window and executing the command **brew install postgres** (which assumes you have 'brew' already installed on your MacBook).
 
-![LocalNotebook](./images/cell12.png)
+Click in the first empty cell in the notebook.
 
-You'll see all the packages being loaded and then you can go to the next cell, which will connect to Adobe Experience Platform Query Service. In order to connect, you'll have to update the **password** in the next cell as the password is only valid 24 hours.
+![DSW](./images/jupstart2.png)
 
-To retrieve the Query Service password, go into Adobe Experience Platform, to **Queries** > **Credentials** > **Postgres Credentials**.
+Copy the below code and paste it in the first cell in your notebook.
+
+```python
+!pip install --user psycopg2-binary
+!pip install --user sql_magic
+
+import sys
+import pprint
+import psycopg2
+```
+
+You'll then have this in cell 1:
+
+![DSW](./images/jup1done.png)
+
+Click the **Play** icon to execute this cell. If you run into an error with this cell, please verify the alternative ways of installing postgres as mentioned above in the  **Prerequisites** section.
+
+![LocalNotebook](./images/jupplay.png)
+
+Wait until the indicator looks like this before continuing:
+
+![DSW](./images/actionfinished.png)
+
+The result looks like this:
+
+![DSW](./images/jup1result.png)
+
+### Configure Query Service Connection Details
+
+In this step, you need to connect to Query Service. 
+
+Scroll down and click in the next empty cell.
+
+![DSW](./images/jupstart3.png)
+
+Copy the below code and paste it in the first cell in your notebook.
+
+```python
+# Copy these settings from https://platform.adobe.com/query/configuration
+connection = psycopg2.connect(
+    sslmode='require',
+     host='',
+     port='80',
+     dbname='prod:all',
+     user='',
+     password='')
+```
+
+In order to connect, you'll have to update the following fields in the above code based on the information you can find inside Adobe Experience Platform.
+
+- host
+- port
+- dbname
+- user
+- password
+
+To retrieve these settings from Query Service, go into Adobe Experience Platform, to **Queries** > **Credentials** > **Postgres Credentials**.
 
 ![LocalNotebook](./images/query.png)
 
-Paste the new password by replacing the current password and click the **Play** icon to execute this cell. This might take 1-2 minutes.
+After copying the above code and updating the fields as indicated, you should have something like this:
 
-![LocalNotebook](./images/queryconn.png)
+![DSW](./images/jupstart3done.png)
 
-Go to the next cell. Click the **Play** icon to execute this cell.
+Click the **Play** icon to execute this cell. This might take a couple of seconds.
 
-![LocalNotebook](./images/loadsql.png)
+![LocalNotebook](./images/jupplay.png)
 
-Go to the next cell. This cell will load all datasets from Adobe Experience Platform. Click the **Play** - icon to execute this cell. This might take 1-2 minutes.
+Wait until the indicator looks like this before continuing:
 
-![LocalNotebook](./images/showtables.png)
+![DSW](./images/actionfinished.png)
 
-Go to the next cell. This cell will load the `AEP Demo - Car Insurance Interactions` dataset from Adobe Experience Platform into a data-frame. Click the **Play** icon to execute this cell. This might take 1-2 minutes.
+### Enable SQL
 
-![LocalNotebook](./images/loadee.png)
+In this step, you'll enable SQL in your notebook. 
 
-The `AEP Demo - Car Insurance Interactions` dataset is now assigned to a data-frame, and now a data scientist can continue Exploration, Visualization and Model Development based on this data-frame.
+Scroll down and click in the next empty cell.
 
-![LocalNotebook](./images/df.png)
+![DSW](./images/jupstart4.png)
+
+Copy the below code and paste it in the first cell in your notebook.
+
+```python
+# Enable sql magic
+%load_ext sql_magic
+%config SQL.conn_name = 'connection'
+```
+
+You should now have something like this:
+
+![DSW](./images/jupstart4done.png)
+
+Click the **Play** icon to execute this cell. This might take a couple of seconds.
+
+![LocalNotebook](./images/jupplay.png)
+
+Wait until the indicator looks like this before continuing:
+
+![DSW](./images/actionfinished.png)
+
+### Show Tables
+
+In this step, you'll start interacting with datasets in Adobe Experience Platform from your local Anaconda environment and Jupyter Notebook. 
+
+Scroll down and click in the next empty cell.
+
+![DSW](./images/jupstart5.png)
+
+Copy the below code and paste it in the first cell in your notebook.
+
+```python
+%%read_sql
+show tables
+```
+
+You should now have something like this:
+
+![DSW](./images/jupstart5done.png)
+
+Click the **Play** icon to execute this cell. This might take a couple of seconds.
+
+![LocalNotebook](./images/jupplay.png)
+
+Wait until the indicator looks like this before continuing:
+
+![DSW](./images/actionfinished.png)
+
+You'll then see all available datasets in Adobe Experience Platform being returned on your local Anaconda environment and Jupyter Notebook.
+
+![DSW](./images/jupstart5result.png)
+
+### Load Car Insurance Interactions into a data-frame-
+
+Go to the next cell. In this cell you'll load specific fields from the **AEP Demo - Car Insurance Interactions** dataset from Adobe Experience Platform into a data-frame. 
+
+Scroll down and click in the next empty cell.
+
+![DSW](./images/jupstart6.png)
+
+Copy the below code and paste it in the first cell in your notebook.
+
+```python
+%%read_sql df_result
+SELECT  --aepTenantId--.identification.ecid as ecid,
+        --aepTenantId--.carinsurance.insuranceKm as km,
+        --aepTenantId--.carinsurance.insuranceCarType as cartype,
+        --aepTenantId--.carinsurance.insuranceAge as age,
+        --aepTenantId--.carinsurance.insuranceGender as gender,
+        --aepTenantId--.carinsurance.insuranceCarBrand as carbrand,
+        --aepTenantId--.carinsurance.insuranceLeasing as leasing,
+        --aepTenantId--.carinsurance.insuranceCity as city,
+        --aepTenantId--.carinsurance.insuranceCountry as country,
+        --aepTenantId--.carinsurance.insuranceNationality as nationality,
+        --aepTenantId--.carinsurance.insurancePrimaryDriver as primaryuser,
+        --aepTenantId--.carinsurance.insurancePurchase as purchase,
+        --aepTenantId--.carinsurance.insuranceBasicPrice as pricequote,
+        timestamp
+FROM aep_demo_car_insurance_interactions
+```
+
+You should now have something like this:
+
+![DSW](./images/jupstart6done.png)
+
+Click the **Play** icon to execute this cell. This might take a couple of minutes.
+
+![LocalNotebook](./images/jupplay.png)
+
+Wait until the indicator looks like this before continuing:
+
+![DSW](./images/actionfinished.png)
+
+You'll then see a similar result:
+
+![DSW](./images/jupstart6result.png)
+
+The **AEP Demo - Car Insurance Interactions** dataset is now assigned to a data-frame, and now a data scientist can continue Exploration, Visualization and Model Development based on this data-frame on their local computer using Anaconda and Query Service.
 
 Next Step: [15.3 Operationalize your model using a Recipe](./ex3.md)
 

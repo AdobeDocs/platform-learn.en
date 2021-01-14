@@ -4,7 +4,7 @@ description: Query Service
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 7. Query Service
@@ -30,6 +30,10 @@ We will use data that has been injected into platform using either Web Interacti
 - Datasets (dataset used during lab, pre-loaded for you)
 - PostgreSQL
 - Tableau or Microsoft Power BI Desktop
+- **Download these assets**: 
+  - [JSON - Sample Data: AEP Demo - Website Interactions](./../../assets/json/m7_ee.json)
+  - [JSON - Sample Data: AEP Demo - Call Center Interactions](./../../assets/json/m7_callcenter.json)
+  - [JSON - Sample Data: AEP Demo - Loyalty](./../../assets/json/m7_loyalty.json)
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
@@ -44,7 +48,7 @@ Have a look at the below architecture, which highlights the components that will
 
 ## Sandbox to use
 
-For this module, please use this sandbox: **--module7sandbox--**.
+For this module, please use this sandbox: `--module7sandbox--`.
 
 >[!NOTE]
 >

@@ -4,7 +4,7 @@ description: Ingest & Analyze Google Analytics data in Adobe Experience Platform
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 16. Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
@@ -30,6 +30,8 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
 - Access to Customer Journey Analytics
 - Access to Google Cloud Platform and Google BigQuery
+- **Download these assets**: 
+  - [JSON - Sample Data: AEP Demo - Loyalty Data (M16)](./../../assets/json/m16_bqLoyalty.json)
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
@@ -44,7 +46,7 @@ Have a look at the below architecture, which highlights the components that will
 
 ## Sandbox to use
 
-For this module, please use this sandbox: **--aepSandboxId--**.
+For this module, please use this sandbox: `--aepSandboxId--`.
 
 >[!NOTE]
 >

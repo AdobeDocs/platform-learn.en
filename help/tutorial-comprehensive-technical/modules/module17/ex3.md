@@ -4,7 +4,7 @@ description: Create a Contact in Microsoft Dynamics 365 using Journey Orchestrat
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 
@@ -45,18 +45,89 @@ You'll then see this:
 
 Fill out the following fields like this:
 
-- Name: **ldapD365ContactCreation**, in this example: **vangeluwD365ContactCreation**
+- Name: **ldapD365ContactCreation**, in this example: **joconnorD365ContactCreation**
 - Description: **Create a Contact in Dynamics 365**
-- URL: **https://salesvelocity.adobeio-static.net/api/v1/web/d365_prd/crmOperationsBulk**
-- Authentication: **No authentication**
+- URL: **Your Web API URL/contacts**, which looks like this: **https://ldapaepdemoXX.crmX.dynamics.com/api/data/v9.1/contacts**, in this example: **https://joconnoraepdemo2209.crm4.dynamics.com/api/data/v9.1/contacts**
 
-**Note** : Here we are using a Runtime Action for making a call to Microsoft Dynamics 365 APIs. This Runtime call when made via an action consumed in Journey will help us create `Contact` in Microsoft Dynamics 365.
+
+**Note** : Make sure that the Web API URL uses https, or the call will be refused but Microsoft Dynamics
 
 Your action now looks like this:
 
 ![JO](./images/createaction-01a.png)
 
-Next, under **Message parameters** you will need to add the following payload by clicking on the pencil icon. Role over the i icon to display the icon to edit the payload
+Next, under **Headers** you will need to add the following fields:
+
+| Key | Value |
+|----------|-------------|
+|If-None-Match | null |
+| OData-Version | 4.0 |
+| Accept | application/json|
+| OData-MaxVersion | 4.0 |
+
+Your action now looks like this:
+
+![JO](./images/createaction-01b.png)
+
+Next, under **Authentication** you will add how you connect to Microsoft Dynamics. In this case we will use OAuth2.0. 
+
+For **TYPE**, choose **Custom** from the drop-down list.
+
+Then add the following payload by clicking on the pencil icon. Roll over the **i** icon to display the icon to edit the payload.
+
+![JO](./images/createaction-01c.png)
+
+The payload screen will appear. Use this payload json. You will need to add your own connection credentials, as created in exercise 17.1.
+
+Copy and paste this json:
+
+```json
+{
+    "type": "customAuthorization",
+    "authorizationType": "Bearer",
+    "endpoint": "https://login.microsoftonline.com/common/oauth2/token",
+    "method": "POST",
+    "headers": {
+        "content-type": "application/x-www-form-urlencoded"
+    },
+    "body": {
+        "bodyType": "form",
+        "bodyParams": {
+            "grant_type": "password",
+            "client_id": "",
+            "username": "",
+            "password": "",
+            "resource": ""
+        }
+    },
+    "tokenInResponse": "json://access_token"
+}
+```
+
+You should now have this:
+
+![JO](./images/createaction-01d.png)
+
+You'll now add values to the fields with empty strings in this json as based on exercise 17.1:
+
+- **client_id**: The Application (client) ID of the Azure SyncContact app, in this example **b21da897-49bb-4f6c-8589-306e42bd366f**
+
+- **username**: The username you use to connect to Microsoft Dynamics 365, which looks like this: **admin@aepdemoldapX.onmicrosoft.com**, in this example **admin@aepdemojoconnor2209.onmicrosoft.com**
+
+- **password**: The password you use to connect to Dynamics 365, in this example **Password_1234**
+
+- **resource**: The URL of the Dynamics instance, which looks like this: **https://ldapaepdemoXX.crmX.dynamics.com**, in this example **https://joconnoraepdemo2209.crm4.dynamics.com**
+
+![JO](./images/createaction-01e.png)
+
+Click **Save**
+
+Click **Click to test the authentication**, and if your payload is correct it should turn green and say that the Authentication was successful.
+
+![JO](./images/createaction-01f.png)
+
+
+Next, under **Message parameters** you will need to add the following payload by clicking on the pencil icon. Roll over the **i** icon to display the icon to edit the payload.
 
 ![JO](./images/createaction-01.png)
 
@@ -64,63 +135,35 @@ The Field configuration screen will appear.
 
 ![JO](./images/createaction-02.png)
 
-Use this payload json, you will need to add the Microsoft Dynamics 365 and Microsoft Azure app credentials you created as part of exercise 17.1.
+Use this payload json.
 
 Copy this json:
 
 ```json
 {
- "d365_config": {
- "webApiUrl": "",
- "authorityUrl": "",
- "resource": "",
- "clientId": "",
- "username": "",
- "password": ""
- },
- "entity": "contacts",
- "action": "insert",
- "response_attributes": "*",
- "data": [
- {
- "emailaddress1": {
- "toBeMapped": true,
- "dataType": "string",
- "label": "email"
- },
- "firstname": {
- "toBeMapped": true,
- "dataType": "string",
- "label": "fName"
- },
- "lastname": {
- "toBeMapped": true,
-  "dataType": "string",
- "label": "lName"
-}
-}
-]
+    "emailaddress1": {
+        "toBeMapped": true,
+        "dataType": "string",
+        "label": "email"
+    },
+    "firstname": {
+        "toBeMapped": true,
+        "dataType": "string",
+        "label": "fName"
+    },
+    "lastname": {
+        "toBeMapped": true,
+        "dataType": "string",
+        "label": "lName"
+    }
 }
 ```
 
-You will need to go through the settings with your values:
+Paste it into the Payload window.
+
 
 ![JO](./images/createaction-03.png)
 
-As a reminder, you populated this table as part of exercise 17.1.
-
-| Attribute | Description | Example |
-|----------|-------------|-------------|
-| Web API URL | https://**NAME**.**REGION**.dynamics.com/api/data/v9.1/ |https://aepdemovangeluw1.crm4.dynamics.com/api/data/v9.1/|
-| Authority URL | https://login.microsoftonline.com/**Directory (tenant) ID**/oauth2/token |https://login.microsoftonline.com/459cea37-2ca1-4431-9a2b-1abfcf33e32b/oauth2/token|
-| Resource | The URL of the Dynamics instance, for example https://**NAME**.**REGION**.dynamics.com |https://aepdemovangeluw1.crm4.dynamics.com|
-| Application (client) ID | The **Application (client) ID** of the Azure SyncContact app |9a86216a-b8c3-4b7e-a873-305d429eb90d|
-| Username | The username you use to connect to Microsoft Dynamics 365|admin@aepdemovangeluw1.onmicrosoft.com|
-| Password | The password you use to connect to Microsoft Dynamics 365|Password_1234|
-
-Once you have update the configuration fields, you'll see this:
-
-![JO](./images/createaction-save1.png)
 
 Click **Save** on the Field Configuration window.
 
@@ -154,11 +197,11 @@ Click **Confirm**.
 
 ![JO](./images/createaction-08.png)
 
-Now search for your Action from the left panel. Search for **ldapD365** and your Action should appear under **Actions**.
+Now search for your Action from the left panel. Search for **ldapMSD365** and your Action should appear under **Actions**.
 
 ![JO](./images/createaction-06.png)
 
-Drag your **ldapD365ContactCreation** action onto the canvas, after the **Email - Simple Mail** object.
+Drag your **ldapMSD365ContactCreation** action onto the canvas, after the **Email - Simple Mail** object.
 
 You'll then see this.
 
@@ -170,7 +213,7 @@ For the **EMAIL** Parameter, click the pencil/edit icon.
 
 ![JO](./images/createaction-09.png)
 
-Search for **email** and select the email field under **ldapAccountCreationEvent**.--aepTenantId--.accountcreation.email.
+Search for **email** and select the email field under **ldapAccountCreationEvent**.``--aepTenantId--``.accountcreation.email.
 
 ![JO](./images/createaction-10.png)
 
@@ -178,7 +221,7 @@ For the **FNAME** Parameter, click the pencil/edit icon.
 
 ![JO](./images/createaction-09b.png)
 
-Search for **firstName** and select the email field under **ldapAccountCreationEvent**.--aepTenantId--.accountcreation.firstName.
+Search for **firstName** and select the email field under **ldapAccountCreationEvent**.``--aepTenantId--``.accountcreation.firstName.
 
 ![JO](./images/createaction-10b.png)
 
@@ -186,7 +229,7 @@ For the **LNAME** Parameter, click the pencil/edit icon.
 
 ![JO](./images/createaction-09c.png)
 
-Search for **lastName** and select the email field under **ldapAccountCreationEvent**.--aepTenantId--.accountcreation.lastName.
+Search for **lastName** and select the email field under **ldapAccountCreationEvent**.``--aepTenantId--``.accountcreation.lastName.
 
 ![JO](./images/createaction-10c.png)
 

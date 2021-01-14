@@ -4,7 +4,7 @@ description: Foundation - Real-time Customer Profile - Create a segment - UI
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # Exercise 4 - Create a segment - UI

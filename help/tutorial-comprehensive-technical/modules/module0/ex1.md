@@ -4,7 +4,7 @@ description: Getting Started - Use Demo System Next to setup your Launch propert
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 0.1 Use Demo System Next to setup your Launch property
@@ -19,10 +19,14 @@ You'll see a similar homepage:
 
 ![DSN](./images/dsnhome.png)
 
-Click on the card for the Adobe Experience Platform instance with this name:
+Click on the card for your specific Adobe Experience Platform instance, in this case:
 
 - **Experience Platform International**
 - IMS Org ID: **907075E95BF479EC0A495C73@AdobeOrg**
+
+>[!NOTE]
+>
+> You can find your IMS Org ID, Org Name and your Adobe Experience Platform sandbox on your company's github repository that was set up by your Adobe contact.
 
 ![DSN](./images/dsn1.png)
 
@@ -46,7 +50,12 @@ Click **Next**.
 
 ![DSN](./images/next.png)
 
-In the next screen, you'll see a screen like the below. Demo System Next offers two steps: setup an AEP instance with schemas, mixins, datasets and more, and also, setup Launch properties for Web and Mobile. In this case, the setup of schemas, mixins and datasets has already been done so you can only create the Launch properties you'll use.
+In the next screen, you'll see a screen like the below. Demo System Next offers two steps: 
+
+- Setup an AEP instance with schemas, mixins, datasets and more
+- Setup Launch properties for Web and Mobile. 
+
+In this case, the setup of schemas, mixins and datasets has already been done so you can only create the Launch properties you'll use.
 
 ![DSN](./images/dsn5.png)
 
@@ -66,7 +75,11 @@ Click **Next**.
 
 ![DSN](./images/next.png)
 
-You'll then see this screen. Don't click any of the buttons as these options aren't available for the Team International Demo & Enablement environment.
+You'll then see this screen. 
+
+>[!IMPORTANT] 
+>
+>Don't click any of the buttons as these options aren't available for the Team International Demo & Enablement environment.
 
 ![DSN](./images/dsn9.png)
 
@@ -84,7 +97,7 @@ Enter your LDAP as search term. You should now see the two Launch properties tha
 
 In order to use the Launch properties, you'll need to create a Configuration ID in the next exercise.
 
-Next Step: [0.2 Create your Configuration ID](./ex2.md)
+Next Step: [0.2 Create your Edge Configuration ID](./ex2.md)
 
 [Go Back to Module 0](./getting-started.md)
 

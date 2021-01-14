@@ -4,7 +4,7 @@ description: Foundation - Real-time Customer Profile - Visualize your own real-t
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 3.3 - Visualize your own real-time customer profile - API
@@ -72,7 +72,9 @@ Click **Next**.
 
 ![Adobe I/O New Integration](./images/next.png)
 
-You can now choose to either have Adobe I/O generate your security key pair, or upload an existing one. Given that you created your own certificates, let's choose **Option 1 - Generate a key pair**.
+You can now choose to either have Adobe I/O generate your security key pair, or upload an existing one. 
+
+Choose **Option 1 - Generate a key pair**.
 
 ![Adobe I/O New Integration](./images/api4.png)
 

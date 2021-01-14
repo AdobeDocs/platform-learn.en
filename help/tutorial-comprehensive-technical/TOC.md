@@ -1,9 +1,10 @@
 ---
 user-guide-title: Comprehensive Technical Tutorial for Adobe Experience Platform
 breadcrumb-title: Comprehensive Technical Tutorial
-user-guide-url: /content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html
 user-guide-description: A hands-on tutorial covering many aspects of Platform, including connections to third-party systems.
 audience: all
+index: no
+hide: yes
 ---
 
 # Comprehensive Technical Tutorial for Adobe Experience Platform {#comprehensive-technical-tutorial}
@@ -14,12 +15,20 @@ audience: all
 + 0 - Getting started {#module0}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module0/getting-started.md)
   + [0.1 Use Demo System Next to setup your Launch property](/help/tutorial-comprehensive-technical/modules/module0/ex1.md)
-  + [0.2 Create your Configuration ID](/help/tutorial-comprehensive-technical/modules/module0/ex2.md)
-  + [0.3 Use the website](/help/tutorial-comprehensive-technical/modules/module0/ex3.md)
-  + [0.4 Use the mobile app](/help/tutorial-comprehensive-technical/modules/module0/ex4.md)
-  + [0.5 Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical/modules/module0/ex5.md)
+  + [0.2 Create your Edge Config ID](/help/tutorial-comprehensive-technical/modules/module0/ex2.md)
+  + [0.3 Create your Enablement Configuration ID](/help/tutorial-comprehensive-technical/modules/module0/ex3.md)
+  + [0.4 Use the website](/help/tutorial-comprehensive-technical/modules/module0/ex4.md)
+  + [0.5 Use the mobile app](/help/tutorial-comprehensive-technical/modules/module0/ex5.md)
+  + [0.6 Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical/modules/module0/ex6.md)
 + 1 - Launch and the Web SDK extension {#module1}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module1/data-ingestion-launch-web-sdk.md)
+  + [1.1 Understanding Adobe Experience Platform Launch](/help/tutorial-comprehensive-technical/modules/module1/ex1.md)
+  + [1.2 Edge Network and Server Side Data Collection](/help/tutorial-comprehensive-technical/modules/module1/ex2.md)
+  + [1.3 Introduction to Launch](/help/tutorial-comprehensive-technical/modules/module1/ex3.md)
+  + [1.4 Client-side Web Data Collection](/help/tutorial-comprehensive-technical/modules/module1/ex4.md)
+  + [1.5 Implement Adobe Analytics and Adobe Audience Manager](/help/tutorial-comprehensive-technical/modules/module1/ex5.md)
+  + [1.6 Implement Adobe Target](/help/tutorial-comprehensive-technical/modules/module1/ex6.md)
+  + [1.7 XDM Schema requirements in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/module1/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module1/summary.md)
 + 2 - Data Ingestion {#module2}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module2/data-ingestion.md)
@@ -55,8 +64,7 @@ audience: all
   + [Overview](/help/tutorial-comprehensive-technical/modules/module6/journey-orchestration-create-account.md)
   + [6.1 Journey Orchestration: Setup Event](/help/tutorial-comprehensive-technical/modules/module6/ex1.md)
   + [6.2 Journey Orchestration: Setup Journey](/help/tutorial-comprehensive-technical/modules/module6/ex2.md)
-  + [6.3 Configure Launch to trigger your Event](/help/tutorial-comprehensive-technical/modules/module6/ex3.md)
-  + [6.4 How to create your own email in Adobe Campaign Standard](/help/tutorial-comprehensive-technical/modules/module6/ex4.md)
+  + [6.3 Update your Configuration ID and Test your Journey](/help/tutorial-comprehensive-technical/modules/module6/ex3.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module6/summary.md)
 + 7 - Query Service {#module7}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module7/query-service.md)
@@ -67,6 +75,7 @@ audience: all
   + [7.4 Power BI/Tableau](/help/tutorial-comprehensive-technical/modules/module7/ex4.md)
   + [7.5 Explore the dataset with Power BI](/help/tutorial-comprehensive-technical/modules/module7/ex5.md)
   + [7.6 Explore the dataset with Tableau](/help/tutorial-comprehensive-technical/modules/module7/ex6.md)
+  + [7.7 Query Service API](/help/tutorial-comprehensive-technical/modules/module7/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module7/summary.md)
 + 8 - Data Science Workspace - Popularity Based Recommendations {#module8}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module8/data-science-workspace-popularity-based-recommendations.md)
@@ -89,11 +98,6 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module9/summary.md)
 + 10 - Data Science Workspace - Churn Prediction Model {#module10}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module10/data-science-workspace-churn-prediction-model.md)
-  + [10.1 Introduction to Data Science](/help/tutorial-comprehensive-technical/modules/module10/ex1.md)
-  + [10.2 Churn Prediction: Data Preparation](/help/tutorial-comprehensive-technical/modules/module10/ex2.md)
-  + [10.3 Feature Engineering and Model Building](/help/tutorial-comprehensive-technical/modules/module10/ex3.md)
-  + [10.4 Experimentation - Recipe Building](/help/tutorial-comprehensive-technical/modules/module10/ex4.md)
-  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module10/summary.md)
 + 11 - Real-time CDP - Build a segment and take action! {#module11}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module11/real-time-cdp-build-a-segment-take-action.md)
   + [11.1 Build a segment and enable Streaming Segmentation](/help/tutorial-comprehensive-technical/modules/module11/ex1.md)
@@ -121,9 +125,16 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module13/summary.md)
 + 14 - Offer Decisioning {#module14}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module14/offer-decisioning.md)
+  + [14.1 Offer Decisioning 101](/help/tutorial-comprehensive-technical/modules/module14/ex1.md)
+  + [14.2 Configure your Offers and Offer Activity](/help/tutorial-comprehensive-technical/modules/module14/ex2.md)
+  + [14.3 Prepare your Launch and Web SDK setup for Offer Decisioning](/help/tutorial-comprehensive-technical/modules/module14/ex3.md)
+  + [14.4 Test your Offer Activity using the demo website](/help/tutorial-comprehensive-technical/modules/module14/ex4.md)
+  + [14.5 Test your Offer Activity using the API](/help/tutorial-comprehensive-technical/modules/module14/ex5.md)
+  + [14.6 Test your Offer Activity using Journey Orchestration](/help/tutorial-comprehensive-technical/modules/module14/ex6.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module14/summary.md)
 + 15 - Data Science Workspace - Car Insurance Sales Propensity {#module15}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
-  + [15.1 Introduction to Luma Insurance](/help/tutorial-comprehensive-technical/modules/module15/ex1.md)
+  + [15.1 Introduction to MUTUAL365](/help/tutorial-comprehensive-technical/modules/module15/ex1.md)
   + [15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment](/help/tutorial-comprehensive-technical/modules/module15/ex2.md)
   + [15.3 Operationalize your model using a Recipe](/help/tutorial-comprehensive-technical/modules/module15/ex3.md)
   + [15.4 Train and Score your Recipe](/help/tutorial-comprehensive-technical/modules/module15/ex4.md)
@@ -155,3 +166,24 @@ audience: all
   + [18.5 Create your Microsoft Azure Project](/help/tutorial-comprehensive-technical/modules/module18/ex5.md)
   + [18.6 End-to-end scenario](/help/tutorial-comprehensive-technical/modules/module18/ex6.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module18/summary.md)
++ 19 - Adobe Experience Platform and ServiceNow: connecting service to marketing and sales {#module19}
+  + [Overview](/help/tutorial-comprehensive-technical/modules/module19/call-center-servicenow.md)
+  + [19.1 Setup your ServiceNow developer instance](/help/tutorial-comprehensive-technical/modules/module19/ex1.md)
+  + [19.2 Install and configure the integration between ServiceNow and Adobe Experience Platform through Adobe I/O](/help/tutorial-comprehensive-technical/modules/module19/ex2.md)
+  + [19.3 Setup your ServiceNow environment](/help/tutorial-comprehensive-technical/modules/module19/ex3.md)
+  + [19.4 Setup your ServiceNow UI](/help/tutorial-comprehensive-technical/modules/module19/ex4.md)
+  + [19.5 Setup your ServiceNow Flow](/help/tutorial-comprehensive-technical/modules/module19/ex5.md)
+  + [19.6 Prepare End-to-end Demo](/help/tutorial-comprehensive-technical/modules/module19/ex6.md)
+  + [19.7 End-to-end Demo](/help/tutorial-comprehensive-technical/modules/module19/ex7.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module19/summary.md)
++ 20 - AI-Driven Chat Apps and Live Chat powered by Stackchat {#module20}
+  + [Overview](/help/tutorial-comprehensive-technical/modules/module20/ai-driven-chat-apps-stackchat.md)
+  + [20.1 Onboard to Stackchat](/help/tutorial-comprehensive-technical/modules/module20/ex1.md)
+  + [20.2 Build your Luma Bot](/help/tutorial-comprehensive-technical/modules/module20/ex2.md)
+  + [20.3 Build your Luma Bot - Cloud Functions](/help/tutorial-comprehensive-technical/modules/module20/ex3.md)
+  + [20.4 Use Journey Orchestration to trigger an email follow up after interacting with your chatbot](/help/tutorial-comprehensive-technical/modules/module20/ex4.md)
+  + [20.5 Configure the integration between Stackchat and Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/module20/ex5.md)
+  + [20.6 Test your chatbot on the demo website](/help/tutorial-comprehensive-technical/modules/module20/ex6.md)
+  + [20.7 Connect your chatbot to Facebook Messenger](/help/tutorial-comprehensive-technical/modules/module20/ex7.md)
+  + [20.8 Test the WeChat Integration](/help/tutorial-comprehensive-technical/modules/module20/ex8.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module20/summary.md)

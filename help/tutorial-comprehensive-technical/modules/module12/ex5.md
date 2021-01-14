@@ -4,7 +4,7 @@ description: Journey Orchestration - External Weather API, SMS Action & more - T
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 12.5 Trigger your Orchestrated Customer Journey
@@ -50,10 +50,6 @@ You'll be redirected to this page:
 ![DSN](../module0/images/web1.png)
 
 Enter the Configuration ID you created in the previous step. Click **Load Configuration**.
-
-![DSN](../module0/images/web2.png)
-
-You'll then see this:
 
 ![DSN](../module0/images/web3.png)
 

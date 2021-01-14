@@ -4,7 +4,7 @@ description: Foundation - Real-time Customer Profile - See you Real-time Custome
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 3.6 - See you Real-time Customer Profile in action in the Call Center

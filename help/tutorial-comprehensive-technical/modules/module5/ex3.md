@@ -4,7 +4,7 @@ description: Extract, Transform, Load data using a 3rd party ETL-tool - Ingest O
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 5.3 Ingest Offline Order Events into Adobe Experience Platform
@@ -131,7 +131,7 @@ Click **Formatting Options** to define the structure of the template.
 
 ![ETL](./images/2wf13.png)
 
-In the popup, change the Format Type from **None** to **Flat**.
+In the popup, change the Format Type from **None** to **Delimited**.
 
 ![ETL](./images/2wf14.png)
 
@@ -206,7 +206,7 @@ Click **Formatting Options** to define the structure of the template.
 
 ![ETL](./images/2wf13.png)
 
-In the popup, change the Format Type from **None** to **Flat**.
+In the popup, change the Format Type from **None** to **Delimited**.
 
 ![ETL](./images/2wf14.png)
 
@@ -449,11 +449,11 @@ Map the Output to the Schema attributes as per below:
 | Field                                    | Element Name                                                 |
 | :---                                      | :---                                                   |
 | m_timestamp | timestamp                                              |
-| m_product   | --aepTenantId--.etl_offline_orders.product_sku   |
-| m_price     | --aepTenantId--.etl_offline_orders.product_price |
-| m_currency  | --aepTenantId--.etl_offline_orders.currency      |
-| email            | --aepTenantId--.identification.emailId                                      |
-| points           | --aepTenantId--.etl_loyalty.points              |
+| m_product   | ``--aepTenantId--``.etl_offline_orders.product_sku   |
+| m_price     | ``--aepTenantId--``.etl_offline_orders.product_price |
+| m_currency  | ``--aepTenantId--``.etl_offline_orders.currency      |
+| email            | ``--aepTenantId--``.identification.emailId                                      |
+| points           | ``--aepTenantId--``.etl_loyalty.points              |
 | hitID                                     | _id                                                    |
 
 Your Field Mapping should look like this (don't forget about the mapping for m_email).

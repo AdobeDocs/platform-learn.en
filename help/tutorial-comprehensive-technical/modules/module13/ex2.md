@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Connect Adobe Experience Platform Data
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
-activity: 
+activity: develop
 ---
 
 # 13.1 Connect Adobe Experience Platform Datasets in Customer Journey Analytics

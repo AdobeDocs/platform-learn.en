@@ -1,5 +1,7 @@
 ---
-title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Create merge policies
+seo-title: Create merge policies | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+breadcrumb-title: Create merge policies
 description: In this lesson you will learn how to create merge policies to determine how data merges into profiles. 
 feature: profile
 topics: 
@@ -26,8 +28,8 @@ We'll stick to the UI for this lesson, but API options also exist for creating m
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
 
-
-* Permission item **[!UICONTROL Profiles]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
+* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Merge Policies]** and **[!UICONTROL Manage Merge Policies]**
+* Permission item **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 
@@ -131,7 +133,7 @@ Merge policies also tie into data governance and segmentation, which you will se
 
 ## Additional Resources
 
-* [Merge Policies documentation](https://docs.adobe.com/help/en/experience-platform/profile/ui/merge-policies.html)
+* [Merge Policies documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/merge-policies.html)
 * [Merge Policies API (part of Real-time Customer Profile API) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/Merge_policies)
 
 Now let's move on to the [data governance framework](apply-data-governance-framework.md).
