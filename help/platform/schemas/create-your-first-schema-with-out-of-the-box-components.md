@@ -1,6 +1,7 @@
 ---
-title: Create your first Schema with out-of-the-box components in Adobe Experience Platform
-description: This video shows you how to create a simple Schema in Adobe Experience Platform using standard classes and mixins.
+title: Create schemas with out-of-the-box components in Adobe Experience Platform
+seo-title: Create schemas in Adobe Experience Platform
+description: This video shows you how to create a simple schema in Adobe Experience Platform using standard classes and mixins.
 feature: xdm
 topics:
 kt: 2697
@@ -10,16 +11,17 @@ activity: setup
 thumbnail: 27012.jpg
 ---
 
-# Create your first Schema with out-of-the-box components
+# Create schemas
 
-This video shows you how to create a simple Schema in Adobe Experience Platform using standard classes and mixins.
+This video shows you how to create a simple schema in Adobe Experience Platform using standard classes and mixins. 
+
+For additional written tutorials, see [create a schema in the UI)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html) and [create a schema with the API](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-api.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27012?quality=12&learn=on)
 
 ## Additional Resources
 
-* [Understanding the XDM System & Experience Data Model](understanding-the-xdm-system-and-experience-data-model.md)
-* [Create your own Mixins and Classes video](create-your-own-mixins-and-classes.md)
-* [Schema documentation](https://www.adobe.io/apis/experienceplatform/home/xdm.html)
+* [Schema documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
 * [Basics of schema composition documentation](https://www.adobe.com/go/xdm-schema-composition-basics-en)
-* [Schema Editor tutorial](https://www.adobe.com/go/xdm-schema-editor-tutorial-en)
+* [Overview of see the XDM System & Experience Data Model](understanding-the-xdm-system-and-experience-data-model.md)
+* [Create your own mixins and classes video](create-your-own-mixins-and-classes.md)
