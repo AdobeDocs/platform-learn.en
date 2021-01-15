@@ -1,6 +1,7 @@
 ---
-title: Create Data Usage Policies in Adobe Experience Platform
-description: Data Usage Policies in Adobe Experience Platform allow you to restrict data usage for specific purposes based on the labeling of data. This video shows how to create and manage Data Usage Policies, including how to view policies provided by Adobe out-of-the-box and how to create custom policies based on your usage needs. 
+title: Create data usage policies in Adobe Experience Platform
+seo-title: Create data usage policies
+description: This video shows how to create and manage data usage policies in the Adobe Experience Platform user interface. Data usage policies allow you to restrict data usage for specific purposes based on the labeling of data. 
 feature: governance
 topics:
 kt: 4347
@@ -10,16 +11,17 @@ activity: use
 thumbnail: 32977.jpg
 ---
 
-# Create Data Usage Policies
+# Create data usage policies
 
-Data Usage Policies in Adobe Experience Platform allow you to restrict data usage for specific purposes based on the labeling of data. This video shows how to create and manage Data Usage Policies, including how to view policies provided by Adobe out-of-the-box and how to create custom policies based on your usage needs. 
+This video shows how to create and manage data usage policies in the Adobe Experience Platform user interface. Data usage policies allow you to restrict data usage for specific purposes based on the labeling of data. See also [Create data usage policies with the API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32977?quality=12&learn=on)
 
 ## Additional Resources
 
-* [Enforce Data Usage Policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
-* [Introduction to Data Governance](introduction-to-data-governance.md)
-* [Understanding Data Governance video](understanding-data-governance.md)
-* [Classify data using Governance Labels video](classify-data-using-governance-labels.md)
-* [Data usage policies documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/policies/overview.html)
+* [Data usage policies documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html)
+* [Create data usage policies with the API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html)
+* [Enforce data usage policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
+* [Data governance end-to-end-demo video](introduction-to-data-governance.md)
+* [Data governance overview video](understanding-data-governance.md)
+* [Classify data using governance labels video](classify-data-using-governance-labels.md)
