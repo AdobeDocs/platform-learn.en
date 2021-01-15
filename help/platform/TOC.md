@@ -44,6 +44,7 @@ audience: all
   + [Ingest data from Adobe Analytics (Video)](/help/platform/data-ingestion/ingest-data-from-adobe-analytics.md)
   + [Ingest data from Amazon S3 (Video)](/help/platform/data-ingestion/ingest-data-from-amazon-s3.md)
   + [Ingest data from Salesforce CRM (Video)](/help/platform/data-ingestion/ingest-data-from-salesforce-crm.md)
+  + [Dataflow monitoring (Video)](/help/platform/data-ingestion/data-monitoring.md)
   + Web SDK {#web-sdk}
     + [Introduction to Web SDK and Edge Network](/help/platform/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
     + [Demo of Web SDK and Edge Network](/help/platform/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
