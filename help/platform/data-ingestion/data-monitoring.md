@@ -18,8 +18,7 @@ Understand how to monitor and track data that gets ingested into Adobe Experienc
 
 ## Additional Resources
 
-* [Adobe Experience Platform Postman Samples
-](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/mapping-service-api.yaml)
+* [Adobe Experience Platform Postman Samples](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/mapping-service-api.yaml)
 * [Experience Platform API postman collection]([understanding-data-ingestion.md](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform))
 * [Flow Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/flow-service.yaml)
 * [Observability Insights API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/observability-insights.yaml)
