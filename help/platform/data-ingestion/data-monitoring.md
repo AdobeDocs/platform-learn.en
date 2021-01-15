@@ -1,5 +1,5 @@
 ---
-title: Monitor data flow in Adobe Experience platform
+title: Monitor data flow in Adobe Experience Platform
 description: Understand how to monitor and track data that gets ingested into Adobe Experience Platform using platform UI and API
 feature: data ingestion
 topics:
@@ -10,7 +10,7 @@ activity: understand
 thumbnail: 330549.jpg
 ---
 
-# Monitor data flow in Adobe Experience platform
+# Monitor data flow in Adobe Experience Platform
 
 Understand how to monitor and track data that gets ingested into Adobe Experience Platform using platform UI and API
 
