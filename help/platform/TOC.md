@@ -101,14 +101,11 @@ audience: all
 + Sandboxes {#sandboxes}
   + [Using sandboxes (Video)](/help/platform/sandboxes/use-sandboxes.md)
 + Schemas {#schemas}
-  + [Understanding Experience Data Model and the XDM System (Video)](/help/platform/schemas/understanding-the-xdm-system-and-experience-data-model.md)
-  + [Create a schema (API)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-api.html)
-  + [Create a schema (UI)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/create-schema-ui.html)
-  + [Create a schema in the UI (Video)](/help/platform/schemas/create-your-first-schema-with-out-of-the-box-components.md)
-  + [Create mixins and classes in the UI (Video)](/help/platform/schemas/create-your-own-mixins-and-classes.md)
-  + [Define a relationship between two schemas (API)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/relationship-api.html)
-  + [Define a relationship between two schemas (UI)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/relationship-ui.html)
-  + [Create an ad-hoc schema (API)](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/ad-hoc.html)
+  + [Overview](/help/platform/schemas/understanding-the-xdm-system-and-experience-data-model.md)
+  + [Create a schema](/help/platform/schemas/create-your-first-schema-with-out-of-the-box-components.md)
+  + [Create mixins and classes](/help/platform/schemas/create-your-own-mixins-and-classes.md)
+  + [Define a relationship between two schemas](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/relationship-ui.html)
+  + [Create an ad-hoc schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/tutorials/ad-hoc.html)
 + Segments {#segments}
   + [Create a segment (API)](https://docs.adobe.com/content/help/en/experience-platform/segmentation/tutorials/create-a-segment.html)
   + [Create a segment (UI)](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/overview.html)
