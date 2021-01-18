@@ -13,7 +13,7 @@ In this exercise, you'll use Postman and Adobe I/O to create a segment and store
 
 ## Story
 
-In the Real-time Customer Profile, all profile data is shown alongside event data and existing segment memberships. The data that is shown  can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform&mdash;the experience system of record.
+In the Real-time Customer Profile, all profile data is shown alongside event data and existing segment memberships. The data that is shown  can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the experience system of record.
 
 ## Exercise 3.5.1 - Create a segment through the Platform API
 

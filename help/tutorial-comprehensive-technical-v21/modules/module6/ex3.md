@@ -15,7 +15,7 @@ Before you can test your journey, you'll need to update your Configuration ID se
 
 Open a clean, fresh incognito browser window and go to [https://public.aepdemo.net/admin\_configuration\_update.html](https://public.aepdemo.net/admin_configuration_update.html).
 
-You'll then see this. 
+You'll then see this.
 
 ![Launch Setup](./images/cfgid1.png)
 

@@ -97,7 +97,7 @@ For Windows: Open the command line by hitting the windows key and typing cmd  an
 
 ![open-command-prompt.png](./images/open-command-prompt.png)
 
-For OSX: Open the terminal.app via spotlight search:
+For macOS: Open the terminal.app via spotlight search:
 
 ![open-terminal-osx.png](./images/open-terminal-osx.png)
 

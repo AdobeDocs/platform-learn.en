@@ -9,8 +9,8 @@ activity: develop
 
 # Summary & benefits
 
-Congratulations and thank you for investing your time in learning about Data Science Workspace and Adobe Experience Platform! 
-In this module, you've learned how to ... . 
+Congratulations and thank you for investing your time in learning about Data Science Workspace and Adobe Experience Platform!
+In this module, you've learned how to ... .
 
 ## Benefits
 
@@ -18,7 +18,7 @@ Let's highlight the benefits of using Data Science Workspace with Adobe Experien
 
 - Data scientists today spend a lot of time modeling data from various sources. When asking data scientists about this, they typically reply that 80% of their time is spent on understanding and modeling of data. With Adobe Experience Platform, all data is already modeled against XDM which means that the data scientist will now be able to spend 80% of their time on creating and optimizing the model instead.
 - With Data Science Workspace and Adobe Experience Platform, another problem for data scientists is solved in an elegant way. Today, when a data scientist has built a model that delivers for instance propensity scores, the challenge is to get those propensity scores as fast as possible into the various applications that are used to speak with the customer. That requires a lot of custom workflows and integrations and is often a big hurdle. With Adobe Experience Platform, any output of any model can be written back to the Real-time Customer Profile immediately, from where it can be consumed by any application connected to Adobe Experience Platform. With this, the impact of a model is amplified and guarantees intelligent personalization in an omnichannel world.
-- To accomplish the above points, Data Science Workspace offers data scientists 2 SDKs to read data from Platform and write data back to Platform. 
+- To accomplish the above points, Data Science Workspace offers data scientists 2 SDKs to read data from Platform and write data back to Platform.
 - With Adobe Experience Platform, data science becomes a core part of your experience workflow and isn't a separate island in your ecosystem anymore.
 - Training and scoring of models can be scheduled in Adobe Experience Platform.
 
