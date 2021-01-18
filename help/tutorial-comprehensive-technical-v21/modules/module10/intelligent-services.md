@@ -9,7 +9,7 @@ activity: develop
 
 # 10. Intelligent Services
 
-**Authors: [Diptiman Badajena](www.linkedin.com/in/diptiman-badajena-1b178019), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+**Authors: [Diptiman Badajena](https://www.linkedin.com/in/diptiman-badajena-1b178019/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
 In this module, you'll learn how to setup, configure and use Adobe Experience Platform Intelligent Services.
 

@@ -31,7 +31,7 @@ Let's highlight the benefits of using Data Science Workspace with Adobe Experien
 - AEP Tech Blog: [Understanding Data Science in Adobe Experience Platform](https://medium.com/adobetech/understanding-data-science-in-adobe-experience-platform-5bce5a17b42)
 - AEP Tech Blog: [India Hackathon: Predicting Anonymous Viewer Demographics with Ad Currency Optimization](https://medium.com/adobetech/india-hackathon-predicting-anonymous-viewer-demographics-with-ad-currency-optimization-d1269b8057dd)
 - Module 8: [Data Science Workspace - Popularity Based Recommendations](../module8/data-science-workspace-popularity-based-recommendations.md)
-- Module 10: [Data Science Workspace - Churn Prediction Model](../module10/data-science-workspace-churn-prediction-model.md)
+- Module 10: [Intelligent Services](../module10/intelligent-services.md)
 
 [Go Back to Module 15](./data-science-workspace-car-insurance-sales-propensity.md)
 
