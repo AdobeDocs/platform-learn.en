@@ -45,15 +45,15 @@ For this module, please use this sandbox: `--module10sandbox--`.
 
 ## Exercises
 
-[10.1 Customer AI: Data Preparation (Ingest)](./ex1.md)
+[10.1 Customer AI - Data Preparation (Ingest)](./ex1.md)
 
 Customer data is ingested and transformed with the Experience Data Model (XDM) on Adobe Experience Platform. Specifically, all datasets that are used in Intelligent Services must conform to the Consumer ExperienceEvent (CEE) XDM schema.
 
-[10.2 Customer AI: Create a New Instance (Configure)](./ex2.md)
+[10.2 Customer AI - Create a New Instance (Configure)](./ex2.md)
 
 The marketing analyst configures the desired predictions by specifying business rules and identifying relevant data. After configuring the model, schedule executions and review scores.
 
-[10.3 Customer AI: Scoring Dashboard and Segmentation (Predict & Take Action)](./ex3.md)
+[10.3 Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)](./ex3.md)
 
 After the models have finished training and scoring, the scores are written back into Platform. You can decide what actions to take with the predictions, such as defining segments, building custom dashboards etc.
 

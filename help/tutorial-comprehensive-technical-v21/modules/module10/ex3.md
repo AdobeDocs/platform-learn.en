@@ -1,13 +1,13 @@
 ---
 title: Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
-description: Customer AI: Scoring Dashboard and Segmentation (Predict & Take Action)
+description: Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 ---
 
-# 10.3 Customer AI: Scoring Dashboard and Segmentation (Predict & Take Action)
+# 10.3 Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
 
 Once your Customer AI instance completes a model run, it'll enable you to visualize the propensity score that is evaluated to predict a customer performing a purchase in the next 30 days.
 

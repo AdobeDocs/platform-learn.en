@@ -1,13 +1,13 @@
 ---
 title: Intelligent Services - Customer AI Data Preparation (Ingest)
-description: Customer AI: Data Preparation (Ingest)
+description: Customer AI - Data Preparation (Ingest)
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 ---
 
-# 10.1 Customer AI: Data Preparation Ingest
+# 10.1 Customer AI - Data Preparation (Ingest)
 
 In order for Intelligent Services to discover insights from your marketing events data, the data must be semantically enriched and maintained in a standard structure. Intelligent Services leverages Adobe's Experience Data Model (XDM) schemas in order to achieve this.
 Specifically, all datasets that are used in Intelligent Services must conform to the **Consumer Experience Event** XDM schema.
@@ -178,7 +178,7 @@ Once data ingestion is successful, the batch status will change to **Success**.
 
 ![Dataset](./images/ingest8.png)
 
-Next Step: [10.2 Customer AI: Create a New Instance (Configure)](./ex2.md)
+Next Step: [10.2 Customer AI - Create a New Instance (Configure)](./ex2.md)
 
 [Go Back to Module 10](./intelligent-services.md)
 

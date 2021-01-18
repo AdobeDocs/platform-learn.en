@@ -1,13 +1,13 @@
 ---
 title: Intelligent Services - Customer AI Create a New Instance (Configure)
-description: Customer AI: Create a New Instance (Configure)
+description: Customer AI - Create a New Instance (Configure)
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 ---
 
-# 10.2 Customer AI Create a New Instance (Configure)
+# 10.2 Customer AI - Create a New Instance (Configure)
 
 Customer AI works by analyzing existing Consumer Experience Event data to predict churn or conversion propensity scores. Creating a new Customer AI instance allows marketeers to define goals and measures.
 
@@ -71,7 +71,7 @@ After you configure the instance, you can see it in the Customer AI instance lis
 >
 >You can modify any definition or attribute as long as your Customer AI instance's status is either **Awaiting training** or **Error**
 
-Next Step: [10.3 Customer AI: Scoring Dashboard and Segmentation (Predict & Take Action)](./ex3.md)
+Next Step: [10.3 Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)](./ex3.md)
 
 [Go Back to Module 10](./intelligent-services.md)
 
