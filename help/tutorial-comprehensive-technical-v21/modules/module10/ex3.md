@@ -1,5 +1,5 @@
 ---
-title: Customer AI: Scoring Dashboard and Segmentation (Predict & Take Action)
+title: Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
 description: Customer AI: Scoring Dashboard and Segmentation (Predict & Take Action)
 kt: 5342
 audience: Data Engineer, Data Architect

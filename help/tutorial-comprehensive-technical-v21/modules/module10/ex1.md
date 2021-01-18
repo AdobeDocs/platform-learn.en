@@ -1,5 +1,5 @@
 ---
-title: Intelligent Services - Customer AI: Data Preparation (Ingest)
+title: Intelligent Services - Customer AI Data Preparation (Ingest)
 description: Customer AI: Data Preparation (Ingest)
 kt: 5342
 audience: Data Engineer, Data Architect
