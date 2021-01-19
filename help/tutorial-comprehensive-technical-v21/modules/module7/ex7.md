@@ -73,7 +73,7 @@ A POST call to [/query/queries] with the following payload will trigger the exec
 
 >[!NOTE]
 >
->The key **dbName** in the above JSON code refers to the sandbox that is used in your Adobe Experience Platform instance. If you're using the PROD sandbox, the dbName should be **prod:all**, if you use another sandbox like for instance **aepenablement**, the dbName should be equal to **aepenablement:all**.
+>The key **dbName** in the above JSON code refers to the sandbox that is used in your Adobe Experience Platform instance. If you're using the PROD sandbox, the dbName should be **prod:all**, if you use another sandbox like for instance **aepenablementfy21**, the dbName should be equal to **aepenablementfy21:all**.
 
 When successful the POST call will return the following response:
 
@@ -131,7 +131,7 @@ https://platform.adobe.io/data/foundation/query/queries?orderby=-created
 
 - Postman **1.3 QS - Get Query Status**, which will return the status for the query that was create in **7.7.3.1 Create Query**. Just add the query Id (**id** property in your create query response). Postman does this for you automatically. 
 
-It might take a couple of minutes before the query starts executing, it will change state from "****SUBMITTED****", to "****IN_PROGRESS****" to "****SUCCESS****" (SUBMITTED and IN_PROGRESS responses are simplified but they are identical to th SUCCESS response)
+It might take a couple of minutes before the query starts executing, it will change state from "****SUBMITTED****", to "****IN_PROGRESS****" to "****SUCCESS****" (SUBMITTED and IN_PROGRESS responses are simplified but they are identical to the SUCCESS response)
 
 ```json
 {

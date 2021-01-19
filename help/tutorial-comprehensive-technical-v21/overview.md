@@ -153,13 +153,12 @@ Go to [Videos](./videos.md).
 - **Description:** In this module, you'll learn how to use Google Tag Manager to ingest clickstream data in real-time into Adobe Experience Platform.
 - **Time Investment:** 90 minutes
 
-[10. Data Science Workspace - Churn Prediction Model](./modules/module10/data-science-workspace-churn-prediction-model.md)
-
-**This module is currently being updated and will be released in December 2020**
+[10. Intelligent Services](./modules/module10/intelligent-services.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Scientist
-- **Prerequisites:** Access to Adobe Experience Platform, Data Science Workspace
-- **Description:** **This module is currently being updated and will be released in December 2020**
+- **Prerequisites:** Access to Adobe Experience Platform, Intelligent Services
+- **Description:** In this module, you'll learn how to setup, configure and use Adobe Experience Platform Intelligent Services.
+- **Time Investment:** 60 minutes
 
 [11. RTCDP - Build a segment and take action](./modules/module11/real-time-cdp-build-a-segment-take-action.md)
 

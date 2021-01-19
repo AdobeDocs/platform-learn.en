@@ -171,7 +171,7 @@ In the Call Center, you'll notice that the Mobile Number you used to register on
   
 ![Demo](./images/callcenter_id.png)
   
-Click the **Check** button. After 1-2 seconds, your Real-time Customer Profile data is being shown to the call center employee, including your browsing behaviour from the last couple of seconds.
+Click the **Check** button. After 1-2 seconds, your Real-time Customer Profile data is being shown to the call center employee, including your browsing behavior from the last couple of seconds.
   
 ![Demo](./images/callcenter_response.png)
   

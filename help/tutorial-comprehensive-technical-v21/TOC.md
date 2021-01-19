@@ -97,7 +97,11 @@ hide: yes
   + [9.8 Verify Data Ingestion from website into Platform](/help/tutorial-comprehensive-technical-v21/modules/module9/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module9/summary.md)
 + 10 - Data Science Workspace - Churn Prediction Model {#module10}
-  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module10/data-science-workspace-churn-prediction-model.md)
+  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module10/intelligent-services.md)
+  + [10.1 Customer AI: Data Preparation (Ingest)](/help/tutorial-comprehensive-technical-v21/modules/module10/ex1.md)
+  + [10.2 Customer AI: Create a New Instance (Configure)](/help/tutorial-comprehensive-technical-v21/modules/module10/ex2.md)
+  + [10.3 Customer AI: Scoring Dashboard and Segmentation (Predict & Take Action)](/help/tutorial-comprehensive-technical-v21/modules/module10/ex3.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module10/summary.md)
 + 11 - Real-time CDP - Build a segment and take action! {#module11}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module11/real-time-cdp-build-a-segment-take-action.md)
   + [11.1 Build a segment and enable Streaming Segmentation](/help/tutorial-comprehensive-technical-v21/modules/module11/ex1.md)

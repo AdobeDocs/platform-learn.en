@@ -51,7 +51,7 @@ Next, add a description like this `Account Creation Event`.
 
 Next is the **Event ID Type** selection. Select **System Generated**
 
-![ACOP](./images/eventidtype.png) 
+![ACOP](./images/eventidtype.png)
 
 Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
@@ -63,7 +63,7 @@ After selecting the Schema, you'll see a number of fields being selected in the 
 
 You'll see a **Fields** window popup, in which you need to select some of the fields that we need to personalize the email.  We will choose other profile attributes later, using the data already in Adobe Experience Platform.
 
-![ACOP](./images/eventfields.png) 
+![ACOP](./images/eventfields.png)
 
 In the object `--aepTenantId--.demoEnvironment`, please make sure to select the fields **brandLogo** and **brandName**.
 
