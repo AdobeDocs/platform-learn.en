@@ -18,5 +18,4 @@ Explore how Experience Platform sandboxes provide data isolation and environment
 
 ## Additional Resources
 
-* [Sandbox overview](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/sandboxes/sandboxes-overview.md)
-* [Sandbox access control user guide](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-user-guide.md)
+* [Sandboxes user guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)

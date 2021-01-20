@@ -1,5 +1,6 @@
 ---
-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Enable Real-time Customer Profiles
+seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Enable Real-time Customer Profiles
 description: In this lesson, you will enable your schemas and datasets for Real-time Customer Profile. 
 feature: profile
@@ -178,7 +179,7 @@ You can also confirm that the UI shows the dataset enabled:
 
 ## Additional Resources
 
-* [Real-time Customer Profile documentation](https://docs.adobe.com/content/help/en/experience-platform/profile/home.html)
+* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
 * [Real-time Customer Profile API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/real-time-customer-profile.yaml)
 
 
