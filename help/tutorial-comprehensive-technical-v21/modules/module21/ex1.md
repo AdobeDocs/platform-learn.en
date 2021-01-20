@@ -17,7 +17,7 @@ activity: develop
 
 Typically, when data is collected using Launch, it is collected on the **Client Side**. The **Client Side** is an environment such as a website or a mobile application. In Module 0 and Module 1, the configuration of a Launch Client Side property was discussed in depth and you implemented that Launch Client Side property onto your website and mobile application, so that data could be collected there when a customer was interacting with the website and mobile application.
 
-When that interaction data is collected by the Launch Client Side property, a request is sent by the website or mobile app to Adobe's Edge. The Edge is Adobe's Data Collection environment and is the entrypoint for clickstream data into the Adobe ecosystem. From the Edge, that collected data is then sent to applications like Adobe Experience Platform, Adobe Analytics, Adobe Audience Manager or Adobe Target. 
+When that interaction data is collected by the Launch Client Side property, a request is sent by the website or mobile app to Adobe's Edge. The Edge is Adobe's Data Collection environment and is the entry-point for clickstream data into the Adobe ecosystem. From the Edge, that collected data is then sent to applications like Adobe Experience Platform, Adobe Analytics, Adobe Audience Manager or Adobe Target. 
 
 With the addition of a Launch Server Side property, it's now possible to configure a Launch property that listens to incoming data on the Edge. When that Launch Server Side property that is running on the Edge sees incoming data, it has the ability to use that data and forward it to somewhere else. That somewhere else can now also be a non-Adobe external webhook, which makes it possible to send that data to for instance, your data lake of choice, a decisioning application, or any other application that has the ability to open up a webhook.
 
@@ -35,7 +35,7 @@ In the top left corned, click **Client Side** and in the dropdown menu, click **
 
 ![Launch SSF](./images/launchhome1.png)
 
-You'll then see an overview of all avaiable Server Side Launch properties. Click the **New Property** button.
+You'll then see an overview of all available Server Side Launch properties. Click the **New Property** button.
 
 ![Launch SSF](./images/launchhome2.png)
 

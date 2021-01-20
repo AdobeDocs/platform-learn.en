@@ -47,7 +47,7 @@ You can then select your **[!DNL Launch Server Side property ID]** from the drop
 
 ![WebSDK](./images/websdk5.png)
 
-Seach and select the **[!DNL Launch Server Side property]** you created in the previous step.
+Search and select the **[!DNL Launch Server Side property]** you created in the previous step.
 
 ![WebSDK](./images/websdk6.png)
 
