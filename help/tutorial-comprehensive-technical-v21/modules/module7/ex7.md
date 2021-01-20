@@ -28,9 +28,9 @@ The Query Service API lets you manage non-interactive queries against the Adobe 
 
 Non-interactive means that a request to execute a query will not result in an immediate response. The query will be processed and its resultset will be stored in an implicit or explicit (CTAS: create table as select) dataset. 
 
-## 7.7.2 Example Query
+## 7.7.2 Sample Query
 
-As an example query we will use the first query listed in [7.3 - Queries, queries, queries...  and churn analysis](./ex3.md):
+As a sample query you'll use the first query listed in [7.3 - Queries, queries, queries...  and churn analysis](./ex3.md):
 
 How many product views do we have on a daily basis? 
 
@@ -72,11 +72,11 @@ Let's focus on this header field:
 
 | Key      | Value |
 | ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| x-sandbox-name      |`--module7sandbox--`|
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. The header field **x-sandbox-name** should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. The header field **x-sandbox-name** should be `--module7sandbox--`.
 
 Go the the **Body** section of this request. In the **Body** of this request, you'll see the following:
 
@@ -86,7 +86,7 @@ Go the the **Body** section of this request. In the **Body** of this request, yo
 {
     "name" : "ldap - QS API demo - Citi Signal - Product Views Per Day",
 	"description": "ldap - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "aepenablementfy21:all",
+	"dbName": "module7:all",
 	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
@@ -99,14 +99,14 @@ After adding your specific **ldap**, the Body should look similar to this:
 {
     "name" : "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
 	"description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
-	"dbName": "aepenablementfy21:all",
+	"dbName": "module7:all",
 	"sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10"
 }
 ```
 
 >[!NOTE]
 >
->The key **dbName** in the above JSON body refers to the sandbox that is used in your Adobe Experience Platform instance. If you're using the PROD sandbox, the dbName should be **prod:all**, if you use another sandbox like for instance **aepenablementfy21**, the dbName should be equal to **aepenablementfy21:all**.
+>The key **dbName** in the above JSON body refers to the sandbox that is used in your Adobe Experience Platform instance. If you're using the PROD sandbox, the dbName should be **prod:all**, if you use another sandbox like for instance **module7**, the dbName should be equal to **module7:all**.
 
 Next, click the blue **Send** button to create the segment and view the results of that.
 
@@ -118,7 +118,7 @@ When successful the POST request will return the following response:
 {
     "isInsertInto": false,
     "request": {
-        "dbName": "aepenablementfy21:all",
+        "dbName": "module7:all",
         "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
         "name": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
         "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day"
@@ -129,24 +129,24 @@ When successful the POST request will return the following response:
     "errors": [],
     "isCTAS": false,
     "version": 1,
-    "id": "7fe0a689-6b65-4a7e-97cc-dd849611246a",
+    "id": "8f0d7f25-f7aa-493b-9792-290f884a7e5b",
     "elapsedTime": 0,
-    "updated": "2021-01-20T07:17:40.137Z",
+    "updated": "2021-01-20T13:23:13.951Z",
     "client": "API",
     "userId": "A3392DB95FFF08EE0A495E87@techacct.adobe.com",
-    "created": "2021-01-20T07:17:40.137Z",
+    "created": "2021-01-20T13:23:13.951Z",
     "_links": {
         "self": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/7fe0a689-6b65-4a7e-97cc-dd849611246a",
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
             "method": "GET"
         },
         "soft_delete": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/7fe0a689-6b65-4a7e-97cc-dd849611246a",
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
             "method": "PATCH",
             "body": "{ \"op\": \"soft_delete\"}"
         },
         "cancel": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/7fe0a689-6b65-4a7e-97cc-dd849611246a",
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
             "method": "PATCH",
             "body": "{ \"op\": \"cancel\"}"
         }
@@ -170,11 +170,11 @@ Let's focus on this header field:
 
 | Key      | Value |
 | ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| x-sandbox-name      |`--module7sandbox--`|
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. The header field **x-sandbox-name** should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. The header field **x-sandbox-name** should be `--module7sandbox--`.
 
 Go to **Params**. You'll then see this:
 
@@ -194,37 +194,37 @@ When successful the request will return a response similar to the below one. The
         {
             "isInsertInto": false,
             "request": {
-                "dbName": "aepenablementfy21:all",
+                "dbName": "module7:all",
                 "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
                 "name": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
                 "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day"
             },
             "clientId": "5a143b5ae4aa4631a1f3b09cd051333f",
             "state": "SUCCESS",
-            "rowCount": 10,
+            "rowCount": 1,
             "errors": [],
             "isCTAS": false,
             "version": 1,
-            "id": "7fe0a689-6b65-4a7e-97cc-dd849611246a",
-            "elapsedTime": 299612,
-            "updated": "2021-01-20T07:22:39.749Z",
+            "id": "8f0d7f25-f7aa-493b-9792-290f884a7e5b",
+            "elapsedTime": 217481,
+            "updated": "2021-01-20T13:26:51.432Z",
             "client": "API",
             "userId": "A3392DB95FFF08EE0A495E87@techacct.adobe.com",
-            "created": "2021-01-20T07:17:40.137Z",
+            "created": "2021-01-20T13:23:13.951Z",
             "_links": {
                 "self": {
-                    "href": "https://platform-va7.adobe.io/data/foundation/query/queries/7fe0a689-6b65-4a7e-97cc-dd849611246a",
+                    "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
                     "method": "GET"
                 },
                 "soft_delete": {
-                    "href": "https://platform-va7.adobe.io/data/foundation/query/queries/7fe0a689-6b65-4a7e-97cc-dd849611246a",
+                    "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
                     "method": "PATCH",
                     "body": "{ \"op\": \"soft_delete\"}"
                 },
                 "referenced_datasets": [
                     {
-                        "id": "5fd1a9dee3224d194cdfe786",
-                        "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/5fd1a9dee3224d194cdfe786"
+                        "id": "60080ace62c49a19490c5870",
+                        "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/60080ace62c49a19490c5870"
                     }
                 ]
             }
@@ -247,11 +247,11 @@ Let's focus on this header field:
 
 | Key      | Value |
 | ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| x-sandbox-name      |`--module7sandbox--`|
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. The header field **x-sandbox-name** should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. The header field **x-sandbox-name** should be `--module7sandbox--`.
 
 Next, click the blue **Send** button to create the segment and view the results of that.
 
@@ -263,37 +263,37 @@ When successful the request will return a response similar to the below one.
 {
     "isInsertInto": false,
     "request": {
-        "dbName": "aepenablementfy21:all",
+        "dbName": "module7:all",
         "sql": "select date_format( timestamp , 'yyyy-MM-dd') AS Day, count(*) AS productViews from demo_system_event_dataset_for_website_global_v1_1 where _experienceplatform.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal') and eventType = 'commerce.productViews' group by Day limit 10",
         "name": "vangeluw - QS API demo - Citi Signal - Product Views Per Day",
         "description": "vangeluw - QS API demo - Citi Signal - Product Views Per Day"
     },
     "clientId": "5a143b5ae4aa4631a1f3b09cd051333f",
     "state": "SUCCESS",
-    "rowCount": 10,
+    "rowCount": 1,
     "errors": [],
     "isCTAS": false,
     "version": 1,
-    "id": "7fe0a689-6b65-4a7e-97cc-dd849611246a",
-    "elapsedTime": 299612,
-    "updated": "2021-01-20T07:22:39.749Z",
+    "id": "8f0d7f25-f7aa-493b-9792-290f884a7e5b",
+    "elapsedTime": 217481,
+    "updated": "2021-01-20T13:26:51.432Z",
     "client": "API",
     "userId": "A3392DB95FFF08EE0A495E87@techacct.adobe.com",
-    "created": "2021-01-20T07:17:40.137Z",
+    "created": "2021-01-20T13:23:13.951Z",
     "_links": {
         "self": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/7fe0a689-6b65-4a7e-97cc-dd849611246a",
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
             "method": "GET"
         },
         "soft_delete": {
-            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/7fe0a689-6b65-4a7e-97cc-dd849611246a",
+            "href": "https://platform-va7.adobe.io/data/foundation/query/queries/8f0d7f25-f7aa-493b-9792-290f884a7e5b",
             "method": "PATCH",
             "body": "{ \"op\": \"soft_delete\"}"
         },
         "referenced_datasets": [
             {
-                "id": "5fd1a9dee3224d194cdfe786",
-                "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/5fd1a9dee3224d194cdfe786"
+                "id": "60080ace62c49a19490c5870",
+                "href": "https://platform-va7.adobe.io/data/foundation/catalog/dataSets/60080ace62c49a19490c5870"
             }
         ]
     }
@@ -314,24 +314,24 @@ Let's focus on this header field:
 
 | Key      | Value |
 | ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| x-sandbox-name      |`--module7sandbox--`|
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. The header field **x-sandbox-name** should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. The header field **x-sandbox-name** should be `--module7sandbox--`.
 
 Next, click the blue **Send** button to create the segment and view the results of that.
+
+![Segmentation](./images/s4_bodydtl_results.png)
 
 The response of this request will point to the dataset files:
 
 ```json
 {
-    "5fd1a9dee3224d194cdfe786": {
+    "60080ace62c49a19490c5870": {
+        "name": "Demo System - Event Dataset for Website (Global v1.1)",
         "description": "Demo System - Event Dataset for Website (Global v1.1)",
         "enableErrorDiagnostics": false,
-        "name": "Demo System - Event Dataset for Website (Global v1.1)",
-        "namespace": "ACP",
-        "state": "DRAFT",
         "tags": {
             "adobe/siphon/partition/definition": [
                 "day(timestamp, _ACP_DATE)",
@@ -355,13 +355,10 @@ The response of this request will point to the dataset files:
                 "demo_system_event_dataset_for_website_global_v1_1"
             ],
             "aep/siphon/expire-snapshot-timestamp": [
-                "1611033992486"
+                "1611141272703"
             ],
             "acp_granular_validation_flags": [
                 "requiredFieldCheck:enabled"
-            ],
-            "aep/siphon/cleanup/trash/timestamp": [
-                "1611039313990"
             ],
             "acp_validationContext": [
                 "enabled"
@@ -371,41 +368,39 @@ The response of this request will point to the dataset files:
             ],
             "unifiedProfile": [
                 "enabled:true",
-                "enabledAt:2020-12-10 04:53:54"
-            ],
-            "aep/siphon/cleanup/meta/timestamp": [
-                "1611039314278"
+                "enabledAt:2021-01-20 10:49:51"
             ],
             "unifiedIdentity": [
                 "enabled:true"
             ]
         },
+        "namespace": "ACP",
+        "state": "DRAFT",
         "imsOrg": "907075E95BF479EC0A495C73@AdobeOrg",
-        "sandboxId": "68b9c64d-0dde-4db5-b9c6-4d0ddebdb5a7",
-        "lastBatchId": "01EWFBKKT7GAYH8F9VMXQB7XBD",
-        "lastBatchStatus": "loading",
-        "lastSuccessfulBatch": "01EWEW2G4PP4RFPXB9BJS4SYT9",
-        "lastFailedBatch": "01ES98DJS4CY7NYNTS86K0DFE6",
-        "version": "1.0.99",
-        "created": 1607576030348,
-        "updated": 1611128229696,
+        "sandboxId": "62cd9f38-8529-4b05-8d9f-388529db0540",
+        "lastBatchId": "01EWFQZ15XRNNB1FPKPW5ETRVP",
+        "lastBatchStatus": "success",
+        "lastSuccessfulBatch": "01EWFQZ15XRNNB1FPKPW5ETRVP",
+        "version": "1.0.6",
+        "created": 1611139790698,
+        "updated": 1611149266031,
         "createdClient": "750e24ee855b4ac18ccc4f4817f96ee1",
         "createdUser": "3A260B485E909A170A495E76@techacct.adobe.com",
         "updatedUser": "acp_foundation_dataTracker@AdobeID",
-        "viewId": "5fd1a9dee3224d194cdfe787",
+        "viewId": "60080ace62c49a19490c5871",
         "fileDescription": {
+            "persisted": true,
             "containerFormat": "parquet",
-            "format": "parquet",
-            "persisted": true
+            "format": "parquet"
         },
-        "files": "@/dataSets/5fd1a9dee3224d194cdfe786/views/5fd1a9dee3224d194cdfe787/files",
+        "files": "@/dataSets/60080ace62c49a19490c5870/views/60080ace62c49a19490c5871/files",
         "schemaMetadata": {
             "delta": [],
             "gdpr": []
         },
         "schemaRef": {
-            "contentType": "application/vnd.adobe.xed-full+json;version=1",
-            "id": "https://ns.adobe.com/experienceplatform/schemas/d9b88a044ad96154637965a97ed63c7b20bdf2ab3b4f642e"
+            "id": "https://ns.adobe.com/experienceplatform/schemas/d9b88a044ad96154637965a97ed63c7b20bdf2ab3b4f642e",
+            "contentType": "application/vnd.adobe.xed-full+json;version=1"
         }
     }
 }
