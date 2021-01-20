@@ -17,7 +17,7 @@ This video walks you through an overview diagram illustrating the Real-time Cust
 
 ## Additional Resources
 
-* [UnderstandingReal-time Customer Profile video](understanding-the-real-time-customer-profile.md)
+* [Understanding Real-time Customer Profile video](understanding-the-real-time-customer-profile.md)
 * [Bring Data into Real-time Customer Profile video](bring-data-into-the-real-time-customer-profile.md)
 * [Create Segments video](../segments/create-segments.md)
 * [Real-time Customer Profile documentation](https://www.adobe.com/go/profile-overview-en)
