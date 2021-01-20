@@ -1,5 +1,5 @@
 ---
-title: Data Collection & Real-time Server Side Forwarding: Create and configure a Google Cloud Function
+title: Data Collection & Real-time Server Side Forwarding - Create and configure a Google Cloud Function
 description: Create and configure a Google Cloud Function
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
@@ -17,6 +17,6 @@ This content is currently being developed and will be added soon.
 
 Next Step: [21.5 Create and configure a Microsoft Azure Function](./ex5.md)
 
-[Go Back to Module 21](./aep_data_collection_ssf.md)
+[Go Back to Module 21](./aep-data-collection-ssf.md)
 
 [Go Back to All Modules](./../../overview.md)

@@ -1,5 +1,5 @@
 ---
-title: Data Collection & Real-time Server Side Forwarding: Create and configure a custom webhook
+title: Data Collection & Real-time Server Side Forwarding - Create and configure a custom webhook
 description: Create and configure a custom webhook
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
@@ -188,6 +188,6 @@ You've now configured the Server Side Forwarding of Web SDK/XDM payloads to an e
 
 Next Step: [21.4 Create and configure a Google Cloud Function](./ex4.md)
 
-[Go Back to Module 21](./aep_data_collection_ssf.md)
+[Go Back to Module 21](./aep-data-collection-ssf.md)
 
 [Go Back to All Modules](./../../overview.md)

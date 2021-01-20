@@ -1,5 +1,5 @@
 ---
-title: Data Collection & Real-time Server Side Forwarding: Create a Launch Server Side property
+title: Data Collection & Real-time Server Side Forwarding - Create a Launch Server Side property
 description: Create a Launch Server Side property
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
@@ -85,6 +85,6 @@ Finally your library will be built and ready.
 
 Next Step: [21.2 Update your Edge Configuration to make data available to your Launch Server Side property](./ex2.md)
 
-[Go Back to Module 21](./aep_data_collection_ssf.md)
+[Go Back to Module 21](./aep-data-collection-ssf.md)
 
 [Go Back to All Modules](./../../overview.md)

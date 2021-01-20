@@ -235,7 +235,7 @@ As part of this module you will also get an understanding of what triggers Real-
 - **Description:** In this module, you'll build your own chatbot using Stackchat's AI-Driven Chat Apps & Live Chat
 - **Time Investment:** 120 minutes
 
-[21. Data Collection & Real-time Server Side Forwarding with Launch](./modules/module21/aep_data_collection_ssf.md)
+[21. Data Collection & Real-time Server Side Forwarding with Launch](./modules/module21/aep-data-collection-ssf.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, Launch and Launch Server Side properties

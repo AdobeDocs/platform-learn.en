@@ -190,7 +190,7 @@ audience: all
   + [20.8 Test the WeChat Integration](/help/tutorial-comprehensive-technical-v21/modules/module20/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module20/summary.md)
 + 21 - Data Collection & Real-time Server Side Forwarding with Launch {#module21}
-  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module21/ai-driven-chat-apps-stackchat.md)
+  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module21/aep-data-collection-ssf.md)
   + [21.1 Create a Launch Server Side property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex1.md)
   + [21.2 Update your Edge Configuration to make data available to your Launch Server Side property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex2.md)
   + [21.3 Create and configure a custom webhook](/help/tutorial-comprehensive-technical-v21/modules/module21/ex3.md)

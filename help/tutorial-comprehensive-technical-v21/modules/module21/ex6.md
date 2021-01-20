@@ -1,5 +1,5 @@
 ---
-title: Data Collection & Real-time Server Side Forwarding: Test your data collection and Server Side Forwarding
+title: Data Collection & Real-time Server Side Forwarding - Test your data collection and Server Side Forwarding
 description: Test your data collection and Server Side Forwarding
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
@@ -17,6 +17,6 @@ This content is currently being developed and will be added soon.
 
 Next Step: [Summary and benefits](./summary.md)
 
-[Go Back to Module 21](./aep_data_collection_ssf.md)
+[Go Back to Module 21](./aep-data-collection-ssf.md)
 
 [Go Back to All Modules](./../../overview.md)

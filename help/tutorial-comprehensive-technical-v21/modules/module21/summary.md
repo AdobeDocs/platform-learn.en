@@ -1,5 +1,5 @@
 ---
-title: AI-Driven Chat Apps and Live Chat powered by Stackchat - Summary and benefits
+title: Data Collection & Real-time Server Side Forwarding - Summary and benefits
 description: Summary and benefits
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
@@ -23,6 +23,6 @@ Let's highlight the benefits of using Adobe Experience Platform and Stackchat to
 
 - Tech Blog: [Adobe Tech Blog](https://medium.com/adobetech)
 
-[Go Back to Module 21](./aep_data_collection_ssf.md)
+[Go Back to Module 21](./aep-data-collection-ssf.md)
 
 [Go Back to All Modules](./../../overview.md)
