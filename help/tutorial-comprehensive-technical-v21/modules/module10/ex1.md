@@ -144,6 +144,8 @@ Please download the file containing sample data from this location: [https://das
 
 ![Dataset](./images/dsn1.png)
 
+Alternatively, if you can't access the above link, you can download the file also from this location: [https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip).
+
 You've now downloaded a file named **retail-v1-dec2020-xl.json.zip**. Place the file on your computer's desktop and unzip it, after which you'll see a file named **retail-v1.json**. You'll need this file in the next exercise.
 
 ![Dataset](./images/ingest.png)
