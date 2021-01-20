@@ -135,9 +135,9 @@ Go to [Videos](./videos.md).
 - **Description:** In this module, you'll learn how to use Adobe Experience Platform Query Service.
 - **Time Investment:** 90 minutes
 - **Download these assets**: 
-  - [JSON - Sample Data: AEP Demo - Website Interactions](./assets/json/m7_ee.json)
-  - [JSON - Sample Data: AEP Demo - Call Center Interactions](./assets/json/m7_callcenter.json)
-  - [JSON - Sample Data: AEP Demo - Loyalty](./assets/json/m7_loyalty.json)
+  - [JSON - Sample Data: Demo System - Event Dataset for Website](./assets/json/m7_ee.json)
+  - [JSON - Sample Data: Demo System - Event Dataset for Call Center](./assets/json/m7_callcenter.json)
+  - [JSON - Sample Data: Demo System - Profile Dataset for Loyalty](./assets/json/m7_loyalty.json)
 
 [8. Data Science Workspace - Popularity-based Recommendations](./modules/module8/data-science-workspace-popularity-based-recommendations.md)
 
@@ -195,7 +195,7 @@ Go to [Videos](./videos.md).
 - **Description:** In this module, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Car Insurance Sales Propensity Model, schedule the model to re-train, and prepare the model for Real-time Scoring.
 - **Time Investment:** 120 minutes
 - **Download these assets**: 
-  - [JSON - Sample Data: AEP Demo - Car Insurance Interactions](./assets/json/m15_carinsurance.json)
+  - [JSON - Sample Data: Demo System - Event Dataset for Website](./assets/json/m15_carinsurance.json)
 
 [16. Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/module16/customer-journey-analytics-bigquery-gcp.md)
 

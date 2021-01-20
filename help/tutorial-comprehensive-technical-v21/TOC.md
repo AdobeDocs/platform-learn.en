@@ -70,9 +70,9 @@ audience: all
   + [7.1 Getting Started](/help/tutorial-comprehensive-technical-v21/modules/module7/ex1.md)
   + [7.2 Using the Query Service](/help/tutorial-comprehensive-technical-v21/modules/module7/ex2.md)
   + [7.3 Queries, queries, queries... and churn analysis](/help/tutorial-comprehensive-technical-v21/modules/module7/ex3.md)
-  + [7.4 Power BI/Tableau](/help/tutorial-comprehensive-technical-v21/modules/module7/ex4.md)
-  + [7.5 Explore the dataset with Power BI](/help/tutorial-comprehensive-technical-v21/modules/module7/ex5.md)
-  + [7.6 Explore the dataset with Tableau](/help/tutorial-comprehensive-technical-v21/modules/module7/ex6.md)
+  + [7.4 Generate a dataset from a query](/help/tutorial-comprehensive-technical-v21/modules/module7/ex4.md)
+  + [7.5 Query Service and Power BI](/help/tutorial-comprehensive-technical-v21/modules/module7/ex5.md)
+  + [7.6 Query Service and Tableau](/help/tutorial-comprehensive-technical-v21/modules/module7/ex6.md)
   + [7.7 Query Service API](/help/tutorial-comprehensive-technical-v21/modules/module7/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module7/summary.md)
 + 8 - Data Science Workspace - Popularity Based Recommendations {#module8}
@@ -94,7 +94,7 @@ audience: all
   + [9.7 Implement GTM Tag on Platform Demo website](/help/tutorial-comprehensive-technical-v21/modules/module9/ex7.md)
   + [9.8 Verify Data Ingestion from website into Platform](/help/tutorial-comprehensive-technical-v21/modules/module9/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module9/summary.md)
-+ 10 - Data Science Workspace - Churn Prediction Model {#module10}
++ 10 - Intelligent Services {#module10}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module10/intelligent-services.md)
   + [10.1 Customer AI: Data Preparation (Ingest)](/help/tutorial-comprehensive-technical-v21/modules/module10/ex1.md)
   + [10.2 Customer AI: Create a New Instance (Configure)](/help/tutorial-comprehensive-technical-v21/modules/module10/ex2.md)
