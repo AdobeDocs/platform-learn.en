@@ -338,7 +338,7 @@ Paste this code in the **Advanced Mode Editor**. Click **OK**.
 FYI: This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: +32463622044.
 Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
 
-`substr(#{ExperiencePlatformDataSource.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
+`substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
 
 ![Demo](./images/joa16.png)
 
