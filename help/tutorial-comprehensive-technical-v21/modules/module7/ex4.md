@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 ---
 
-# 7.4 Power BI/Tableau
+# 7.4 Generate a dataset from a query
 
 ## Objective
 
@@ -73,9 +73,9 @@ Upon completion, you will see a new entry for **Dataset Created** (you might nee
 
 As soon as your dataset is created (which can take 5-10 minutes), you can continue the exercise.
 
-Next Step - Option A: [7.5 Explore the dataset with Power BI](./ex5.md)
+Next Step - Option A: [7.5 Query Service and Power BI](./ex5.md)
 
-Next Step - Option B: [7.6 Explore the dataset with Tableau](./ex6.md)
+Next Step - Option B: [7.6 Query Service and Tableau](./ex6.md)
 
 [Go Back to Module 7](./query-service.md)
 

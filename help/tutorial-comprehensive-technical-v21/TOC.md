@@ -72,9 +72,9 @@ hide: yes
   + [7.1 Getting Started](/help/tutorial-comprehensive-technical-v21/modules/module7/ex1.md)
   + [7.2 Using the Query Service](/help/tutorial-comprehensive-technical-v21/modules/module7/ex2.md)
   + [7.3 Queries, queries, queries... and churn analysis](/help/tutorial-comprehensive-technical-v21/modules/module7/ex3.md)
-  + [7.4 Power BI/Tableau](/help/tutorial-comprehensive-technical-v21/modules/module7/ex4.md)
-  + [7.5 Explore the dataset with Power BI](/help/tutorial-comprehensive-technical-v21/modules/module7/ex5.md)
-  + [7.6 Explore the dataset with Tableau](/help/tutorial-comprehensive-technical-v21/modules/module7/ex6.md)
+  + [7.4 Generate a dataset from a query](/help/tutorial-comprehensive-technical-v21/modules/module7/ex4.md)
+  + [7.5 Query Service and Power BI](/help/tutorial-comprehensive-technical-v21/modules/module7/ex5.md)
+  + [7.6 Query Service and Tableau](/help/tutorial-comprehensive-technical-v21/modules/module7/ex6.md)
   + [7.7 Query Service API](/help/tutorial-comprehensive-technical-v21/modules/module7/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module7/summary.md)
 + 8 - Data Science Workspace - Popularity Based Recommendations {#module8}
@@ -96,7 +96,7 @@ hide: yes
   + [9.7 Implement GTM Tag on Platform Demo website](/help/tutorial-comprehensive-technical-v21/modules/module9/ex7.md)
   + [9.8 Verify Data Ingestion from website into Platform](/help/tutorial-comprehensive-technical-v21/modules/module9/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module9/summary.md)
-+ 10 - Data Science Workspace - Churn Prediction Model {#module10}
++ 10 - Intelligent Services {#module10}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module10/intelligent-services.md)
   + [10.1 Customer AI: Data Preparation (Ingest)](/help/tutorial-comprehensive-technical-v21/modules/module10/ex1.md)
   + [10.2 Customer AI: Create a New Instance (Configure)](/help/tutorial-comprehensive-technical-v21/modules/module10/ex2.md)
@@ -191,3 +191,12 @@ hide: yes
   + [20.7 Connect your chatbot to Facebook Messenger](/help/tutorial-comprehensive-technical-v21/modules/module20/ex7.md)
   + [20.8 Test the WeChat Integration](/help/tutorial-comprehensive-technical-v21/modules/module20/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module20/summary.md)
++ 21 - Data Collection & Real-time Server Side Forwarding with Launch {#module21}
+  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module21/aep-data-collection-ssf.md)
+  + [21.1 Create a Launch Server Side property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex1.md)
+  + [21.2 Update your Edge Configuration to make data available to your Launch Server Side property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex2.md)
+  + [21.3 Create and configure a custom webhook](/help/tutorial-comprehensive-technical-v21/modules/module21/ex3.md)
+  + [21.4 Create and configure a Google Cloud Function](/help/tutorial-comprehensive-technical-v21/modules/module21/ex4.md)
+  + [21.5 Create and configure a Microsoft Azure Function](/help/tutorial-comprehensive-technical-v21/modules/module21/ex5.md)
+  + [21.6 Test and troubleshoot your data collection](/help/tutorial-comprehensive-technical-v21/modules/module21/ex6.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module21/summary.md)

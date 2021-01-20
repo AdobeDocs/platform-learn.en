@@ -1,0 +1,88 @@
+---
+title: Data Collection & Real-time Server Side Forwarding
+description: In this module, you'll use the previously configured datasets, schemas and Launch property to collect data, and then forward that data server-side to an endpoint of choice.
+kt: 5342
+audience: Data Engineer, Data Architect, Data Analyst
+doc-type: tutorial
+activity: develop
+---
+
+# 21. Data Collection & Real-time Server Side Forwarding with Launch
+
+**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+
+In this module, you'll use the previously configured datasets, schemas and Launch property to collect data, and then forward that data server-side to an endpoint of choice.
+
+In this module, you'll:
+
+- Create a Launch Server-Side property
+- Install and use the Adobe Cloud Connector extension in Launch
+- Create a Google Function endpoint and stream data to it
+- Create a Microsoft Azure Function endpoint and stream data to it
+
+>[!VIDEO](https://video.tv.adobe.com/v/XXXXX?quality=12&learn=on)
+
+## Learning Objectives
+
+- Become familiar with Launch Server Side properties and the new Adobe Cloud Connector extension 
+- Understand how to reuse Adobe Experience Platform Web SDK data in 3rd party solutions like Google and Microsoft
+- Understand the architecture behind Edge Data Collection and Server Side Forwarding.
+
+## Prerequisites
+
+- Access to Adobe Experience Platform and Launch
+- Understanding of Adobe Experience Platform datasets and XDM
+
+>[!IMPORTANT] 
+>
+>This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
+
+## Architecture Overview
+
+Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
+
+![Architecture Overview](../../assets/images/architecturem21.png)
+
+## Sandbox to use
+
+For this module, please use this sandbox: `--aepSandboxId--`.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+
+## Exercises
+
+[21.1 Create a Launch Server Side property](./ex1.md)
+
+In this exercise, you'll create your Launch Server Side property.
+
+[21.2 Update your Edge Configuration to make data available to your Launch Server Side property](./ex2.md)
+
+In this exercise, you'll update your existing Edge Configuration to make data that is collected by your Launch Client Side property available to your Launch Server Side property.
+
+[21.3 Create and configure a custom webhook](./ex3.md)
+
+In this exercise, you'll create and configure a custom webhook and you'll start forwarding data that is collected by Web SDK to that custom webhook.
+
+[21.4 Create and configure a Google Cloud Function](./ex4.md)
+
+In this exercise, you'll create and configure a Google Cloud Function and you'll start forwarding data that is collected by Web SDK to Google.
+
+[21.5 Create and configure a Microsoft Azure Function](./ex5.md)
+
+In this exercise, you'll create and configure a Microsoft Azure Function and you'll start forwarding data that is collected by Web SDK to Microsoft Azure.
+
+[21.6 Test and troubleshoot your data collection](./ex6.md)
+
+In this exercise, you'll test and troubleshoot your data collection using the Adobe Experience Platform debugger extension for Chrome.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
+
+[Go Back to All Modules](../../overview.md)
