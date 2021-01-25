@@ -11,7 +11,7 @@ activity: develop
 
 ## 14.1.1 Terminology
 
-To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://docs.adobe.com/content/help/en/experience-platform/decisioning/home.html) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
+To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/offer-decisioning/using/get-started/starting-offer-decisioning.html?lang=en#offer-decisioning-service-architecture) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
 
 Working with Offer Decisioning, you need to understand the following concepts:
 
