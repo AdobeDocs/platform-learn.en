@@ -1,13 +1,9 @@
 ---
 title: Classify data using governance labels
-seo-title: Classify data using governance labels in Adobe Experience Platform
 description: Governance labels in Adobe Experience Platform enable you to tag and classify data to reflect corporate policies, contractual obligations, compliance requirements and regional regulations. This is critical to differentiating known and unknown data about your customers, and apply appropriate controls on data usage based on the nature of data.
-feature: governance
-topics:
+role: Data Architect
+feature: Data Governance
 kt: 3992
-audience: data steward, architect
-doc-type: video
-activity: use
 thumbnail: 29709.jpg
 ---
 

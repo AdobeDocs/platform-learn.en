@@ -1,12 +1,9 @@
 ---
 title: Understanding Destinations in Adobe's Real-time Customer Data Platform (RTCDP)
 description: This video defines the two types of destinations&mdash;Profile Exports and Segment Exports&mdash;and gives examples/use cases for each destination type.
-feature: destinations
-topics: rtcdp
+role: Business Practitioner
+feature: Destinations
 kt: 3797
-audience: implementer, developer, architect, marketer
-doc-type: feature video
-activity: understand
 thumbnail: 29707.jpg
 ---
 

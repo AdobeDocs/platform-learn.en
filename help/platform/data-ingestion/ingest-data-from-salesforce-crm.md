@@ -1,11 +1,9 @@
 ---
 title: Ingest Data using the Salesforce CRM Source connector in Adobe Experience Platform
 description: The Salesforce CRM Source ￼connector allows you to easily batch ingest data from Salesforce CRM into Adobe Experience Platform's Real-time Customer Profile and Experience Data Lake, in a seamless and scalable manner.
-topics: rtcdp
+role: Data Engineer, Data Architect
+feature: Data Ingestion
 kt: 3826
-audience: 
-doc-type: video
-activity: setup
 thumbnail: 29711.jpg
 ---
 

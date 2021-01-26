@@ -3,12 +3,9 @@ title: Apply the data governance framework
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Apply the data governance framework
 description: In this lesson you will apply the data governance framework to the data you've ingested into your sandbox. 
-feature: governance
-topics: 
+role: Data Architect
+feature: Data Governance
 kt: 4348
-audience: data architect
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-apply-data-governance-framework.jpg
 ---
 

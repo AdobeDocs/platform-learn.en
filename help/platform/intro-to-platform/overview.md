@@ -1,12 +1,9 @@
 ---
 title: Overview of Adobe Experience Platform
 description: This video gives a quick overview of what Adobe Experience Platform is and the business challenges it solves.
-feature:
-topics:
+role: Leader,Architect,Developer,Data Architect,Data Engineer,Administrator,Business Practitioner
+feature: 
 kt: 4804
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 32797.jpg
 ---
 

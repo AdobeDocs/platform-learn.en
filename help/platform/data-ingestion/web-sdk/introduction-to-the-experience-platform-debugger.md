@@ -1,12 +1,9 @@
 ---
 title: Introduction to the Adobe Experience Platform Debugger
 description: The Adobe Experience Platform Debugger is a Chrome extension and Firefox add-on that helps you debug your web implementations of the Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, Launch and more.
+role: Data Engineer
 feature: debugger
-topics:
 kt: 4723
-audience: engineer
-doc-type: feature video
-activity: troubleshoot
 thumbnail: 32156.jpg
 ---
 

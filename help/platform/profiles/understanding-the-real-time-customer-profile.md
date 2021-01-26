@@ -1,12 +1,9 @@
 ---
 title: Understanding Real-time Customer Profile in Adobe Experience Platform
 description: This video explains how Adobe Experience Platform assembles and updates Real-Time Customer Profiles and how you can access and use these profiles.
-feature: profile
-topics:
+role: Data Architect,Data Engineer
+feature: Profiles
 kt: 2701
-audience: architect
-doc-type: video
-activity: understand
 thumbnail: 27251.jpg
 ---
 

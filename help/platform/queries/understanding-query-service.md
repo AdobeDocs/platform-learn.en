@@ -1,12 +1,9 @@
 ---
 title: Understanding Query Service
 description: Query Service makes it possible for brands to connect the online-to-offline customer journey and understand  omni-channel attribution. This video shows how an experience business can leverage Query Service to address key use cases and how Query Service works.
-feature: query-service
-topics:
+role: Data Engineer,Business Practitioner
+feature: Queries
 kt: 3139
-audience: developer,data engineer,architect
-doc-type: video
-activity: understand
 thumbnail: 29795.jpg
 ---
 
