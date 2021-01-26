@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 ---
 
-# 7.5 Explore the dataset with Power BI
+# 7.5 Query Service and Power BI
 
 Open Microsoft Power BI Desktop.
 

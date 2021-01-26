@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 ---
 
-# 7.6 Explore the dataset with Tableau
+# 7.6 Query Service and Tableau
 
 Open Tableau.
 

@@ -24,13 +24,13 @@ Click on **Journey Orchestration**.
 
 You'll be redirected to the **Journeys** view in Journey Orchestration.
 
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
 
 ![ACOP](./images/sb.png)
 
 You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-![ACOP](./images/home.png)
+![ACOP](./images/homejo.png)
 
 In the menu, click **Events**.
 
@@ -52,7 +52,7 @@ Next is the **Event ID Type** selection. Select **System Generated**
 
 ![ACOP](./images/eventidtype.png)
 
-Next is the Schema selection. A schema was prepared for this exercise. Please use the schema **AEP Demo - Website Interactions Schema v.1**.
+Next is the Schema selection. A schema was prepared for this exercise. Please use the schema **Demo System - Event Schema for Website (Global v1.1) v.1**.
 
 ![ACOP](./images/eventschema.png)
 
@@ -80,7 +80,7 @@ Your Event has a unique orchestration eventID, which you can find by scrolling d
 ![ACOP](./images/payloadeventID.png)
 
 The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build next. Remember this eventID, as you'll need it in one of the next exercises.
-**"eventID": "a91633a0817759d2ef7a7a41a8b849329e6092cdf3a21b56b7914486db5fab02"**
+**"eventID": "8f38f6c9bc62d0617d0cf8d151921ad537f00c138cc4420a27624d9231e27aae"**
 
 Click **Ok** and click **Save** to close your event popup.
 
@@ -354,11 +354,11 @@ You now need to configure the 5 dynamic parameters as indicated on the right sid
 
 Click the parameter `dynamic val.: eventId`. For `eventId`, you need to select the ECID. To do that, paste the below code. Replace `ldap` by your own ldap.
 
-`@{ldpapAddToCartEvent._experienceplatform.identification.ecid}`
+`@{ldapAddToCartEvent.--aepTenantId--.identification.core.ecid}`
 
 ![Demo](./images/dyn1.png)
 
-Next, click the parameter `dynamic val.: eventNS`. For `eventNS`, you need to select the ECID. To do that, paste the below code. Replace `ldap` by your own ldap.
+Next, click the parameter `dynamic val.: eventNS`. For `eventNS`, you need to select the ECID. To do that, paste the below text. 
 
 `"ecid"`
 
@@ -370,7 +370,7 @@ Next, click the parameter `dynamic val.: placementId`. For `placementId`, you ne
 
 Copy the [!UICONTROL Placement ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Placement ID]. It should look like this:
 
-`"xcore:offer-placement:12729df1e87caffa"`
+`"xcore:offer-placement:12904821b6d8626f"`
 
 ![Demo](./images/dyn4.png)
 
@@ -380,13 +380,13 @@ Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need
 
 Copy the [!UICONTROL Activity ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
 
-`"xcore:offer-activity:1272b0c7aee6156b"`
+`"xcore:offer-activity:1290525f4441fd6e"`
 
 ![Demo](./images/dyn6.png)
 
 Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
 
-`"02068be3-17ae-3ca6-bed6-0daf0084c5a1"`
+`"32a2cb0f-63f8-3388-b156-94f4d917abe7"`
 
 ![Demo](./images/dyn7.png)
 
@@ -525,7 +525,7 @@ You now need to configure the 5 dynamic parameters as indicated on the right sid
 
 Click the parameter `dynamic val.: eventId`. For `eventId`, you need to select the ECID. To do that, paste the below code. Replace `ldap` by your own ldap.
 
-`@{ldpapAddToCartEvent._experienceplatform.identification.ecid}`
+`@{ldapAddToCartEvent.--aepTenantId--.identification.core.ecid}`
 
 ![Demo](./images/dyn1a.png)
 
@@ -541,7 +541,7 @@ Next, click the parameter `dynamic val.: placementId`. For `placementId`, you ne
 
 Copy the [!UICONTROL Placement ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Placement ID]. It should look like this:
 
-`"xcore:offer-placement:1270759fed831304"`
+`"xcore:offer-placement:1290486b19d86276"`
 
 ![Demo](./images/dyn4a.png)
 
@@ -551,13 +551,13 @@ Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need
 
 Copy the [!UICONTROL Activity ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
 
-`"xcore:offer-activity:1272b0c7aee6156b"`
+`"xcore:offer-activity:1290525f4441fd6e"`
 
 ![Demo](./images/dyn6a.png)
 
 Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
 
-`"02068be3-17ae-3ca6-bed6-0daf0084c5a1"`
+`"32a2cb0f-63f8-3388-b156-94f4d917abe7"`
 
 ![Demo](./images/dyn7a.png)
 
@@ -593,7 +593,7 @@ You now need to configure the 5 dynamic parameters as indicated on the right sid
 
 Click the parameter `dynamic val.: eventId`. For `eventId`, you need to select the ECID. To do that, paste the below code. Replace `ldap` by your own ldap.
 
-`@{ldpapAddToCartEvent._experienceplatform.identification.ecid}`
+`@{ldapAddToCartEvent.--aepTenantId--.identification.core.ecid}`
 
 ![Demo](./images/dyn1.png)
 
@@ -609,7 +609,7 @@ Next, click the parameter `dynamic val.: placementId`. For `placementId`, you ne
 
 Copy the [!UICONTROL Placement ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Placement ID]. It should look like this:
 
-`"xcore:offer-placement:12729df1e87caffa"`
+`"xcore:offer-placement:12904821b6d8626f"`
 
 ![Demo](./images/dyn4.png)
 
@@ -619,13 +619,13 @@ Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need
 
 Copy the [!UICONTROL Activity ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
 
-`"xcore:offer-activity:1272b0c7aee6156b"`
+`"xcore:offer-activity:1290525f4441fd6e"`
 
 ![Demo](./images/dyn6.png)
 
 Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
 
-`"02068be3-17ae-3ca6-bed6-0daf0084c5a1"`
+`"32a2cb0f-63f8-3388-b156-94f4d917abe7"`
 
 ![Demo](./images/dyn7.png)
 
@@ -669,7 +669,7 @@ Click **Publish** again.
 
 ![ACOP](./images/journeyname2.png)
 
-You'll then see a green confirmation bar saying that your Journey is now Publish.
+You'll then see a green confirmation bar saying that your Journey is now published.
 
 ![ACOP](./images/published.png)
 

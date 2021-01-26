@@ -105,10 +105,10 @@ After having consulted the above Schemas and Datasets, you can now fill out the 
 | ------------- | ------------- | ------------- |
 | Adobe Organization ID | imsOrgId |`--aepImsOrgId--`|
 | DCS Streaming Endpoint | dcsStreamingEndpoint |`--dcsInletId--`|
-| Profile Dataset ID | profileDatasetId | 5fd1a9de34d710194c455119 |
-| Profile Schema Reference | profileSchemaRef |https://ns.adobe.com/`--aepTenantIdSchema--`/schemas/6ab7b59a057f94ab83f083e6b53672ef29dc7289f4513ca4|
-| Experience Event Dataset ID | eeDatasetId | 5fd1a9de1cc3da194c04e04e |
-| Experience Event Schema Reference | eeSchemaRef |https://ns.adobe.com/`--aepTenantIdSchema--`/schemas/a838479e399a56719f38c85967dbba96e626b9e90443261|
+| Profile Dataset ID | profileDatasetId | Your Profile Dataset ID |
+| Profile Schema Reference | profileSchemaRef |https://ns.adobe.com/`--aepTenantIdSchema--`/schemas/...|
+| Experience Event Dataset ID | eeDatasetId | Your Experience Event Dataset ID |
+| Experience Event Schema Reference | eeSchemaRef |https://ns.adobe.com/`--aepTenantIdSchema--`/schemas/...|
 
 >[!NOTE]
 >

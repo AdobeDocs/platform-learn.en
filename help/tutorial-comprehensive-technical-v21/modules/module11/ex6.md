@@ -27,6 +27,11 @@ On the next page, you'll see the **Audience Library**, which will show all avail
 
 Now that all Adobe Experience Platform segments are available in the Adobe Experience Cloud **Audience Library**, this also means that they can be used by Adobe Experience Cloud solutions for activation.
 
+>[!IMPORTANT]
+>
+>Before you configure your Adobe Target activity, you need to ensure that the Adobe Target library is being loaded on the website. To do that, go to [http://launch.adobe.com/](http://launch.adobe.com/) and make sure the Adobe Target extension is installed in your web property, and make sure that the  
+
+
 Let's go back to the Adobe Experience Cloud homepage by going to [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
 
 ![RTCDP](./images/excl.png)

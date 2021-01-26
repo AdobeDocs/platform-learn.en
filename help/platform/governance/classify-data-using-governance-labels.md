@@ -9,7 +9,7 @@ thumbnail: 29709.jpg
 
 # Classify data using governance labels
 
-This video shows how to apply governance labels to your datasets. Governance labels in Adobe Experience Platform enable you to tag and classify data to reflect corporate policies, contractual obligations, compliance requirements and regional regulations. This is critical to differentiating known and unknown data about your customers, and apply appropriate controls on data usage based on the nature of data. See also [Manage data usage labels in the UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html) and [Manage data usage labels with API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/dataset-api.html)
+This video shows how to apply governance labels to your datasets. Governance labels enable you to tag and classify data to reflect corporate policies, contractual obligations, compliance requirements and regional regulations in Adobe Experience Platform. This is critical to differentiating known and unknown data about your customers, and apply appropriate controls on data usage based on the nature of data. For detailed product documentation, see [manage data usage labels in the UI](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/user-guide.html) and [manage data usage labels with API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/dataset-api.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/29709?quality=12&learn=on)
 
