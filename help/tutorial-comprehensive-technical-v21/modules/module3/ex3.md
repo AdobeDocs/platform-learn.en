@@ -13,7 +13,7 @@ In this exercise, you'll use Postman and Adobe I/O to query Adobe Experience Pla
  
 ## Story
 
-In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform&mdash;the experience system of record.
+In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the experience system of record.
 
 The Real-time Customer Profile can be consumed by all Adobe applications, but also by external solutions like Call Centers or in-store clienteling apps. The way to do this is to connect those external solutions to Adobe Experience Platform's APIs.
 
@@ -572,7 +572,7 @@ For this request, there are four required variables:
 
 | Key     | Value     | Definition | 
 |:-------------:| :---------------:|  :---------------:| 
-| schema.name          | **_xdm.context.experienceevent** | the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. | 
+| schema.name          | **_xdm.context.s** | the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. | 
 | relatedSchema.name          | **_xdm.context.profile** | While we're looking for data that is mapped against the ExperienceEvent schema, we need to specify an identity for which we want to receive that data. The schema that has access to identity is the Profile-schema, so the relatedSchema here is the Profile-schema. |
 | relatedEntityId          | **id** | the specific customer I D|
 | relatedEntityIdNS    | **namespace** | the specific namespace that is applicable to the ID | 

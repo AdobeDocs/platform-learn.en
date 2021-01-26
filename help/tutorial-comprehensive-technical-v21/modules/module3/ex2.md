@@ -13,7 +13,7 @@ In this exercise, you'll login to Adobe Experience Platform and view your own Re
  
 ## Story
 
-In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform&mdash;the true experience system of record.
+In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the true experience system of record.
 
 ## 3.2.1 - Use the Customer Profile View in Adobe Experience Platform
 

@@ -42,6 +42,7 @@ audience: all
   + [Ingest data from Adobe Analytics](/help/platform/data-ingestion/ingest-data-from-adobe-analytics.md)
   + [Ingest data from Amazon S3](/help/platform/data-ingestion/ingest-data-from-amazon-s3.md)
   + [Ingest data from Salesforce CRM](/help/platform/data-ingestion/ingest-data-from-salesforce-crm.md)
+  + [Dataflow monitoring](/help/platform/data-ingestion/data-monitoring.md)
   + Web SDK {#web-sdk}
     + [Introduction to Web SDK and Edge Network](/help/platform/data-ingestion/web-sdk/introduction-to-web-sdk-and-edge-network.md)
     + [Demo of Web SDK and Edge Network](/help/platform/data-ingestion/web-sdk/demo-of-web-sdk-and-edge-network.md)
@@ -66,7 +67,7 @@ audience: all
   + [Publish a model as a service (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/publish-model-service-ui.html)
   + [Schedule automated training and scoring on a service (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/schedule-models-ui.html)
 + Destinations {#destinations}
-  + [Configuring File-based Cloud Storage or Email Marketing Destinations](destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
+  + [Configure file-based cloud storage or email marketing destinations](destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Connect to a destination (UI)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
   + [Activate profiles and segments to a destination (UI)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)
   + [Connect to streaming destinations (AWS Kinesis and Azure Event Hubs) and activate data (API)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html)

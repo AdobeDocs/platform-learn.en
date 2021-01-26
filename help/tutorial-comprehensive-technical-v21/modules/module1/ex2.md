@@ -51,7 +51,7 @@ For this Edge Configuration...
 
 - all data that is collected will be stored in the `--aepSandboxId--`sandbox in Adobe Experience Platform
 - when data is ingested into Adobe Experience Platform, it is forwarded by Edge to the selected **Streaming Inlet**
-- all Experience Event data is collected by default into the dataset **Demo System - Event Dataset for Website (Global v1.1) **
+- all Experience Event data is collected by default into the dataset **Demo System - Event Dataset for Website (Global v1.1)**
 - all Profile data will be collected by default into the dataset **Demo System - Profile Dataset for Website (Global v1.1)** (this feature currently isn't supported yet by Web SDK, and will be made available at a later stage)
 - if you want to use the **Offer Decisioning** application service for this Edge Configuration, you need to check the box for Offer Decisioning. (This will be part of [Module 14](./../module14/offer-decisioning.md))
 

@@ -51,7 +51,7 @@ Select your event, drag and drop it on the Journey  canvas. Your Journey now loo
 
 ![ACOP](./images/journeyevent.png)
 
-As the second step in the journey, you need to add a short **Wait** step. Go to the left side of your screen to the **Orchestration** section to find this. You'll be using profile attributes and need to make sure they are populated into the Real-time Customer Profile. 
+As the second step in the journey, you need to add a short **Wait** step. Go to the left side of your screen to the **Orchestration** section to find this. You'll be using profile attributes and need to make sure they are populated into the Real-time Customer Profile.
 
 ![ACOP](./images/journeywait.png)
 

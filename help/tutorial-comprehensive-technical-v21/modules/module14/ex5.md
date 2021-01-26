@@ -46,9 +46,9 @@ Click to open the request **[!UICONTROL GET - List Containers]**.
 
 Under **[!UICONTROL Params]**, you'll see this: 
 
-- property: `_instance.parentName==aepenablement`
+- property: `_instance.parentName==aepenablementfy21`
 
-In that parameter, **[!UICONTROL aepenablement]** is the name of the sandbox that is used in Adobe Experience Platform. The sandbox you should use is `--aepSandboxId--`. Replace the text **[!UICONTROL aepenablement]** by `--aepSandboxId--`.
+In that parameter, **[!UICONTROL aepenablementfy21]** is the name of the sandbox that is used in Adobe Experience Platform. The sandbox you should use is `--aepSandboxId--`. Replace the text **[!UICONTROL aepenablementfy21]** by `--aepSandboxId--`.
 
 After replacing the sandbox name, click **[!UICONTROL Send]**.
 
@@ -206,7 +206,7 @@ Next, on the Update Configuration ID page, scroll down and click **[!UICONTROL U
 
 After this change, the Offer Decisioning API response will be showcased on Xray!
 
-## 14.5.2 Text Xray
+## 14.5.2 Test Xray
 
 ### 14.5.2.1 Load website and brand
 
