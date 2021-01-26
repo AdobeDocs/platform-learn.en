@@ -1,12 +1,9 @@
 ---
 title: Demo of Streaming Segmentation in Adobe Experience Platform
 description: This videos shows how Adobe Experience Platform's streaming segmentation feature allows brands to personalize customer experiences based on real-time data. It shows an example customer experience followed by a quick tour of key features in the Platform interface.
-feature: segmentation
-topics:
+role: Business Practitioner
+feature: Segments
 kt: 5628
-audience: marketer
-doc-type: value video
-activity: use
 thumbnail: 36184.jpg
 ---
 

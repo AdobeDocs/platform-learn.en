@@ -1,12 +1,9 @@
 ---
 title: Understanding the Value of Dashboards built with Adobe Experience Platform Query Service
 description: With Adobe Experience Platform, brands can ingest, store, structure, and pull all stored datasets&mdash;including behavioral, CRM, point-of-sale data, and more. Using Experience Platform's Query Service, brands can query on these datasets and answer specific questions about the business and then start generating impactful insights. This video demonstrates the value of building dashboards in business intelligence (BI) tools using Query Service.
-feature: query-service
-topics:
+role: Data Engineer,Business Practitioner
+feature: Queries
 kt: 3714
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 28981.jpg
 ---
 

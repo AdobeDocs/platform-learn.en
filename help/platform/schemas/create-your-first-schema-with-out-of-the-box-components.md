@@ -1,13 +1,9 @@
 ---
-title: Create schemas with out-of-the-box components in Adobe Experience Platform
-seo-title: Create schemas in Adobe Experience Platform
+title: Create schemas
 description: This video shows you how to create a simple schema in Adobe Experience Platform using standard classes and mixins.
-feature: xdm
-topics:
+role: Data Architect
+feature: Schemas
 kt: 2697
-audience: architect
-doc-type: video
-activity: setup
 thumbnail: 27012.jpg
 ---
 

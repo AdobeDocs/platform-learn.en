@@ -1,13 +1,9 @@
 ---
 title: Create data usage policies in Adobe Experience Platform
-seo-title: Create data usage policies
 description: This video shows how to create and manage data usage policies in the Adobe Experience Platform user interface. Data usage policies allow you to restrict data usage for specific purposes based on the labeling of data. 
-feature: governance
-topics:
+role: Data Architect
+feature: Data Governance
 kt: 4347
-audience: data steward, architect
-doc-type: video
-activity: use
 thumbnail: 32977.jpg
 ---
 

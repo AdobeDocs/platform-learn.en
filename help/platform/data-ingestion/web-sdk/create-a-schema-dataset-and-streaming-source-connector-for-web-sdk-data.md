@@ -1,12 +1,9 @@
 ---
 title: Create a schema, dataset, and streaming source connector for Web SDK data
 description: This video shows the steps that need to be accomplished in Adobe Experience Platform to get started with the Web SDK. Before the Edge Network can be configured and before the Web SDK can be implemented, the schema, dataset, and streaming source connector for the incoming website data should be configured in the Platform interface or using Platform API.
+role: Data Engineer
 feature: web-sdk
-topics:
 kt: 4351
-audience: engineer
-doc-type: technical video
-activity: use
 thumbnail: 35395.jpg
 ---
 

@@ -1,12 +1,9 @@
 ---
 title: Create merge policies
-seo-title: Create merge policies in Adobe Experience Platform
 description: This video shows how to create merge policies in Adobe Experience Platform. Merge policies are the rules that Platform uses to determine which data will be used and prioritized when combining datasets from disparate sources, in order to create customer profiles.
-feature: profile
+role: Data Architect
+feature: Profiles
 kt: 4345
-audience: architect
-doc-type: video
-activity: understand
 thumbnail: 330433.jpg
 ---
 

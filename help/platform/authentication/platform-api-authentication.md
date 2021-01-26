@@ -1,10 +1,8 @@
 ---
-keywords: Experience Platform;home;popular topics;Authenticate;access
-solution: Experience Platform
 title: Authenticate and Access Experience Platform APIs
-topic: tutorial
-type: Tutorial
 description: This document provides a link to the step-by-step tutorial for gaining access to Adobe Experience Platform APIs. 
+role: Developer
+feature: API
 ---
 
 # Authenticate and access [!DNL Experience Platform] APIs

@@ -1,12 +1,9 @@
 ---
 title: Introduction to Adobe Experience Platform Data Governance
 description: This video shows Adobe Experience Platform’s Data Governance capabilities and how it helps brands deliver personalized experiences to their customers while providing complete control over customer data.
-feature: governance
-topics: rtcdp
+role: Data Architect
+feature: Data Governance
 kt: 5802
-audience: data steward, architect, marketer
-doc-type: video
-activity: understand
 thumbnail: 36653.jpg
 ---
 

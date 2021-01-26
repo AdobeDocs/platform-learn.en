@@ -1,12 +1,9 @@
 ---
 title: Ingest data using a database source connector
 description: This video walks through how to perform a batch ingest of data from a database source into Adobe Experience Platform's Real-time Customer Profile and Experience Data Lake, in a seamless and scalable manner.
-feature: sources
-topics:
+role: Data Engineer
+feature: Sources
 kt: 6546
-audience: 
-doc-type: video
-activity: setup
 thumbnail: 329317.jpg
 ---
 

@@ -1,12 +1,9 @@
 ---
 title: Business Value of Customer AI in Adobe Experience Platform
 description: This video shows how Customer AI enriches customer profiles with AI-based propensities and empowers customer segmentation and targeting efforts.
-feature: intelligent-services, customer-ai
-topics:
+role: Business Practitioner
+feature: Intelligent Services
 kt: 6247
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 40374.jpg
 ---
 
