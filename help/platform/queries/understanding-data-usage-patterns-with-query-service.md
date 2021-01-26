@@ -7,7 +7,7 @@ kt: 3715
 thumbnail: 29811.jpg
 ---
 
-# Understanding Data Usage Patterns with Query Service
+# Understanding data usage patterns with Query Service
 
 This video shares tips and best practices for running queries in the query editor interface, PSQL clients, business intelligence (BI) solutions and the HTTP API.
 
@@ -18,4 +18,4 @@ This video shares tips and best practices for running queries in the query edito
 * [Understanding Query Service video](understanding-query-service.md)
 * [Understanding the Value of Dashboards built with Query Service](understanding-the-value-of-dashboards-built-with-query-service.md)
 * [Run Queries video](run-queries.md)
-* [Query Service documentation](https://www.adobe.io/apis/experienceplatform/home/query-service/overview.html)
+* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)

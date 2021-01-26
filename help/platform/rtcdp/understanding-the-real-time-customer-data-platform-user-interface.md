@@ -7,7 +7,7 @@ kt: 3989
 thumbnail: 29762.jpg
 ---
 
-# Understanding the Real-time Customer Data Platform User Interface and Workflow
+# Understanding the Real-time Customer Data Platform user interface and workflow
 
 This video takes you through Adobe’s Real-time Customer Data Platform (CDP) user interface to show you how schemas, sources, governance, real-time customer profiles, segmentation, destinations, and dashboards come together to provide real-time activation across the digital customer journey.
 

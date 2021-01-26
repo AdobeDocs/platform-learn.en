@@ -7,7 +7,7 @@ kt: 4943
 thumbnail: 33600.jpg
 ---
 
-# Overview Diagram of Real-time Customer Profile
+# Overview diagram of Real-time Customer Profile
 
 This video walks you through an overview diagram illustrating the Real-time Customer Profile capability of Adobe Experience Platform.
 
