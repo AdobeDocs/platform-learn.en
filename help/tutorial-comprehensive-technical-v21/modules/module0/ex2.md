@@ -79,9 +79,17 @@ You'll then see this. For the **Edge Configurations**, you'll currently see a du
 
 ![Name the Edge Configuration and save](./images/edgeconfig13.png)
 
-Make sure to have selected your **Edge Configuration ID**. Click **Save** to save your changes.
+Make sure to have selected your **Edge Configuration ID**. 
 
 ![Name the Edge Configuration and save](./images/edgeconfig14.png)
+
+Scroll down until you see **Data Collection**.
+
+![Name the Edge Configuration and save](./images/edgeconfig14a.png)
+
+Uncheck the checkbox for **Enable click data collection**. Click **Save** to save your changes.
+
+![Name the Edge Configuration and save](./images/edgeconfig14b.png)
 
 Go to **Publishing Flow**.
 
