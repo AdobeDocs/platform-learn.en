@@ -2,7 +2,6 @@
 title: Application and Intelligent Services built on Adobe Experience Platform
 description: This video gives an overview of the Application Services and Intelligent Services built on top of Adobe Experience Platform, which complement the Experience Cloud Applications&mdash;Real-time Customer Data Platform, Journey Orchestration, Customer Journey Analytics, Attribution AI, and Customer AI.
 role: Leader,Architect,Developer,Data Architect,Data Engineer,Administrator,Business Practitioner
-feature: 
 kt: 4333
 thumbnail: 32554.jpg
 ---

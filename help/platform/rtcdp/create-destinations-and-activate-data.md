@@ -6,7 +6,7 @@ kt: 3798
 thumbnail: 29710.jpg
 ---
 
-# Create Destinations and Activate Data
+# Create destinations and activate data
 
 >[!VIDEO](https://video.tv.adobe.com/v/29710?quality=12&learn=on)
 

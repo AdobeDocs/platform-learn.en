@@ -1,5 +1,5 @@
 ---
-title: Understanding Streaming Ingestion in Adobe Experience Platform
+title: Streaming data ingestion in Adobe Experience Platform overview
 description: Using Experience Platform's Streaming Ingestion you can be sure that any data you send will be available in the real-time Customer Profile in under a second. This data can be captured on your website or mobile apps, from CRM and ERP systems, or from any other source which is able to communicate over HTTP or public cloud streaming infrastructure. Data sent through streaming to Experience Platform is stitched together with existing data in the Real-time Customer Profile in real-time. You can then use this data for real-time segmentation and to activate other marketing processes.
 role: Data Engineer, Data Architect
 feature: Data Ingestion
@@ -7,7 +7,7 @@ kt: 2711
 thumbnail: 28425.jpg
 ---
 
-# Understanding Streaming Data Ingestion
+# Streaming data ingestion overview
 
 Using Experience Platform's Streaming Ingestion you can be sure that any data you send will be available in the real-time Customer Profile in under a second. This data can be captured on your website or mobile apps, from CRM and ERP systems, or from any other source which is able to communicate over HTTP or public cloud streaming infrastructure. Data sent through streaming to Experience Platform is stitched together with existing data in the Real-time Customer Profile in real-time. You can then use this data for real-time segmentation and to activate other marketing processes.
 

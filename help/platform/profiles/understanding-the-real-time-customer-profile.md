@@ -7,7 +7,7 @@ kt: 2701
 thumbnail: 27251.jpg
 ---
 
-# Understanding Real-time Customer Profile
+# Real-time Customer Profile overview
 
 This video explains how Adobe Experience Platform assembles and updates Real-Time Customer Profiles and how you can access and use these profiles.
 

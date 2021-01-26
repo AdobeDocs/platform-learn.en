@@ -2,12 +2,11 @@
 title: Basic Architecture of Adobe Experience Platform
 description: This video walks through an overview diagram and explains the primary components of Experience Platform.
 role: Leader,Architect,Developer,Data Architect,Data Engineer,Administrator,Business Practitioner
-feature: 
 kt: 4336
 thumbnail: 32456.jpg
 ---
 
-# Basic Architecture of Experience Platform
+# Basic architecture of Adobe Experience Platform
 
 This video walks through an overview diagram and explains the primary components of Experience Platform.
 

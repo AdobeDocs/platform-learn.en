@@ -1,5 +1,5 @@
 ---
-title: Understanding Data Ingestion in Adobe Experience Platform
+title: Overview of data ingestion in Adobe Experience Platform
 description: Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing a unified profile.
 role: Data Engineer, Data Architect
 feature: Data Ingestion
@@ -7,7 +7,7 @@ kt: 2699
 thumbnail: 27106.jpg
 ---
 
-# Understanding Data Ingestion
+# Overview of data ingestion
 
 Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing real-time customer profiles.
 

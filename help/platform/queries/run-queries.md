@@ -7,9 +7,9 @@ kt: 3140
 thumbnail: 29796.jpg
 ---
 
-# Run Queries with Query Service
+# Run queries
 
-This video shows how to run queries in the Adobe Experience Platform interface and in a PSQL client. Additionally, using individual properties in an XDM object, using Adobe-defined functions, and using CREATE TABLE AS SELECT (CTAS) are demonstrated.
+This video shows how to run queries in the Adobe Experience Platform interface and in a PSQL client. Additionally, using individual properties in an XDM object, using Adobe-defined functions, and using CREATE TABLE AS SELECT (CTAS) are demonstrated. For detailed product documentation, see [creating queries](https://experienceleague.adobe.com/docs/experience-platform/query/creating-queries/creating-queries.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29796?quality=12&learn=on)
 
