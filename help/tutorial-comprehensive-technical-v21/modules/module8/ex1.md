@@ -192,7 +192,7 @@ Copy the below code and paste it in the next empty cell in your notebook.
 from platform_sdk.dataset_reader import DatasetReader
 
 dataset_reader = DatasetReader(client_context, inputDataset)
-df = dataset_reader.limit(50000).read()
+df = dataset_reader.limit(1000).read()
 df.head()
 ```
 
