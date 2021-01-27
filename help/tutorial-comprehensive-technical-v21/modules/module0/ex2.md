@@ -87,29 +87,11 @@ Scroll down until you see **Data Collection**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig14a.png)
 
-Click **Open Editor**.
-
-Paste this code in the popup:
-
-```javascript
-// Modify content.xdm as necessary. There is no need to wrap the code in a function
-// or return a value. For example:
-// content.xdm.web.webPageDetails.name = "Checkout";
-console.log("ecid: _____", _satellite.getVar("customerECID"));
-
-content.xdm.--aepTenantId-- = {
-    identification: {
-      core: {
-        ecid: _satellite.getVar('customerECID')
-      }
-    }
-  };
-```
+Uncheck the checkbox for **Enable click data collection**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig14b.png)
 
 Click **Save** to save your changes.
-
 
 Go to **Publishing Flow**.
 
