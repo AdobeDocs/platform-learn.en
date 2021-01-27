@@ -192,8 +192,8 @@ Next, you need to change the friendly name of some of the above metrics and dime
 
 ![demo](./images/25a.png)
 
-| Component Original Name     | Display Name       | 
-| -----------------|-----------------|-----------------|
+| Component Original Name   | Display Name       | 
+| -----------------|-----------------|
 | level | Loyalty Level |
 | points | Loyalty Points |
 | commerce.checkouts.value | Checkouts |
@@ -206,7 +206,7 @@ Next, you need to change the friendly name of some of the above metrics and dime
 | channel.typeAtSource | Traffic Source | 
 | Tracking code | Marketing Channel | 
 | gaid | Google Analytics ID | 
-| Name | Page Name | 
+| Name | Page Title | 
 | Vendor | Browser | 
 | Type | Device Type | 
 | loyaltyId | Loyalty ID |
@@ -300,7 +300,7 @@ Freeform tables are almost limitless. You can do (almost) anything and this brin
 
 Let see two examples where you need to use SQL, BigQuery and some time to answer simple questions that are not possible to do within the Google Analytics UI or Google Data Studio:
 
-- How many people arrive to the checkout from my main landing page split by marketing channel? Please see that the checkout metric is being filtered by the Google Online Store LandingPage. We just dragged and dropped the variable landingpage = Google Online Store on top of the checkout column.
+- How many people arrive to the checkout from Safari Browser split by marketing channel? Please see that the checkout metric is being filtered by the Safari Browser. We just dragged and dropped the variable Browser = Safari on top of the checkout column.
 
 - As an analyst, I can see the Social Marketing Channel has low conversions. I'm using Last Touch attribution as default, but what about First touch? Hovering over any metric, the metric settings are displayed. There I can select the attribution model I want. You can do Attribution in GA (not in data studio) as a standalone activity, but you can't have other metrics or dimensions not related to attribution analysis within the same table.
 
@@ -346,47 +346,43 @@ You'll end up with a table like this one:
 
 As mentioned above, **Freeform tables** give you the freedom you need to perform deep dive analysis. For instance, you can pick any other Dimension to break down a specific Metric inside the table.
 
-As an example, go to dimensions and open the **landingpage** variable. (Click on **Show All** in case you don't see the dimension immediately in the Dimensions menu)
+As an example, go to dimensions and search and select the **Browser** variable. 
 
-![demo](./images/pro17.png)
+![demo](./images/new1.png)
 
 You'll then see an overview of available values for this Dimension.
 
-![demo](./images/pro18.png)
+![demo](./images/new2.png)
 
-Pick the Dimension **Google Online Store** and drag and drop it on top of a Metric, for example **checkout**.
+Pick the Dimension **Safari** and drag and drop it on top of a Metric, for example **Checkouts**. You'll then see this: 
 
-![demo](./images/pro19.png)
+![demo](./images/new3.png)
 
-You'll then see this:
-
-![demo](./images/pro19a.png)
-
-Doing this, we just answered the first question we had: How many people arrive to the checkout from the main landing page, split by Marketing Channel?
+Doing this, you just answered a potential question you had: How many people arrive to the checkout page using Safari, split by Marketing Channel?
 
 Let's now answer the Attribution question.
 
 Find the **Purchase** metric in the table.
 
-![demo](./images/pro20.png) 
+![demo](./images/pro20.png)
 
 Hover over the metric and a **Settings** icon will appear. Click it.
 
 ![demo](./images/pro21.png)
 
-A contextual menu will appear. Please use a **non-default attribution model**.
+A contextual menu will appear. Check the checkbox for **non-default attribution model**.
 
 ![demo](./images/pro22.png)
 
-Within the new layer that will appear you can change easily the attribution models and lookback window. Something quite complicated with SQL by the way.
+In the popup you'll see, you can easily change the attribution models and lookback window (which is quite complex to achieve with SQL).
 
 ![demo](./images/pro23.png)
 
-Now choose the **First Touch** model.
+Select **First Touch** as your attribution model.
 
 ![demo](./images/pro24.png)
 
-An choose **Person** as lookback window.
+Choose **Person** for the Lookback Window.
 
 ![demo](./images/pro25.png)
 
@@ -394,27 +390,23 @@ Now click **Apply**.
 
 ![demo](./images/pro26.png)
 
-You can see now that the attribution for that particular metric is now First Touch. 
+You can now see that the attribution model for that particular metric is now First Touch. 
 
 ![demo](./images/pro27.png)
 
 You can do as much breakdown as you want, without limits of types of variable, segments, dimension or date ranges.
 
-Something even more special is the ability to bring together other datasets from Platform to enrich the digital behaviour data from Google Analytics. For example, offline, call center, loyalty or CRM data.
+Something even more special is the ability to join any dataset from Adobe Experience Platform to enrich the digital behavioural data from Google Analytics. For example, offline, call center, loyalty or CRM data.
 
-To showcase that functionality, let's configure your first breakdown thats combines offline data with online data. Pick the dimension **loyaltyStatus** and drag and drop it into any **marketingchannel** for example Organic:
+To showcase that functionality, let's configure your first breakdown thats combines offline data with online data. Pick the dimension **Loyalty Level** and drag and drop it onto any **Marketing Channel**, for instance, **Organic Search**:
 
 ![demo](./images/pro28.png)
 
-Next, let's analyze which **device** is used by customers that came to the site using **Organic Search** with a **loyaltyStatus** that is **Bronze**. Take the Dimension **device** and drag and drop it onto **Bronze**.
+Next, let's analyze which **Device Type** is used by customers that came to the site using **Organic Search** with a **Loyalty Level** that is **Bronze**. Take the Dimension **Device Type** and drag and drop it onto **Bronze**. You'll then see this:
 
 ![demo](./images/pro29.png)
 
-You'll then see this:
-
-![demo](./images/pro30.png)
-
-You can see that for your first breakdown, loyalty status is used. This dimension comes from a different dataset and different schema than the one that you used for the BigQuery connector. The Person ID **crmId** (BigQuery Schema) and **loyaltyID** (Loyalty Schema) match with each other. Therefore, we can combine Experience Events from Google Analytics with Profile Data from the Loyalty System.
+You can see that for your first breakdown, Loyalty Level is used. This dimension comes from a different dataset and different schema than the one that you used for the BigQuery connector. The Person ID **loyaltyID** (Demo System - Event Schema for BigQuery (Global v1.1)) and **loyaltyID** (Demo System - Profile Schema for Loyalty (Global v1.1)) match with each other. Therefor, you can combine Experience Events from Google Analytics with Profile Data from the Loyalty Schema.
 
 We can keep splitting the rows with segments or specific date ranges (maybe to reflect particular TV campaigns) to ask questions to Customer Journey Analytics and get the answers on the go.
 
@@ -456,9 +448,9 @@ Now select the **Fallout** Visualization.
 
 ![demo](./images/pro36.png)
 
-As an analyst, you want to understand what's happening with your main ecommerce funnel: Home > Internal Search > Product Detail > Checkout > Purchase.
+As an analyst, imagine that you want to understand what's happening with your main ecommerce funnel: Home > Internal Search > Product Detail > Checkout > Purchase.
 
-Let's start by adding some new steps to the funnel. To do that, open the **pagetitle** dimension.
+Let's start by adding some new steps to the funnel. To do that, open the **Page Name** dimension.
 
 ![demo](./images/pro37.png) 
 
@@ -468,25 +460,21 @@ You'll then see all available pages that have been visited.
 
 Drag and drop **Home** to the first step.
 
-![demo](./images/pro39.png) 
+![demo](./images/pro39.png)
 
 As second step, use the **Store search results**
 
 ![demo](./images/pro40.png)
 
-Now you need to add some ecommerce actions. In the Dimensions, search for the Dimension **actiontype** dimension.
+Now you need to add some ecommerce actions. In the Dimensions, search for the Dimension **Event Type** dimension. Click to open the dimension.
 
-![demo](./images/pro41.png) 
-
-Open the dimension.
-
-![demo](./images/pro42.png) 
+![demo](./images/pro41.png)
 
 Select **Product_Detail_Views** and drag and drop it into the next step.
 
 ![demo](./images/pro43.png)
 
-Do the same with **Product_Checkouts**.
+Select **Product_Checkouts** and drag and drop it into the next step.
 
 ![demo](./images/pro44.png)
 
@@ -504,14 +492,13 @@ And again, resize it to fit the dashboard:
 
 ![demo](./images/pro49.png)
 
-Fallouts visualizations also allow breakdowns. Use the **device** dimension by opening it and drag and drop some of the values on by one onto the visualization:
+Fallouts visualizations also allow breakdowns. Use the **Device Type** dimension by opening it and drag and drop some of the values on by one onto the visualization:
 
 ![demo](./images/pro50.png)
 
 You'll end up with a more advanced visualization:
 
 ![demo](./images/pro51.png)
-
 
 Customer Journey Analytics allows you to do that and much more. By right-clicking anywhere in the fallout, you can...
 
@@ -523,8 +510,6 @@ Customer Journey Analytics allows you to do that and much more. By right-clickin
 As an example, do a right-click in any step of the fallout to see some of these analysis options. 
 
 ![demo](./images/pro52.png)
-
-Building this out within Google Analytics isn't no possible, or if it is, functionality is limited and presents analysts with a big challenge. So using Customer Journey Analytics to analyze data collected by Google Analytics is a great idea that add lots of value!
 
 ## 16.5.3.3 Flow Analysis & Visualization
 
@@ -545,7 +530,7 @@ Now select the **Flow** visualization.
 
 ![demo](./images/pro54.png)
 
-Let's now setup a multi-path Marketing Channel Flow Analysis. Drag and drop the **marketingchannel** dimension onto the **Entry Dimensions** area.
+Let's now setup a multi-path Marketing Channel Flow Analysis. Drag and drop the **Marketing Channel** dimension onto the **Entry Dimensions** area.
 
 ![demo](./images/pro55.png)
 
@@ -569,13 +554,13 @@ Now you should see the visualization like this:
 
 ![demo](./images/pro61.png)
 
-Let's complicate things. Imagine you want to analyze what the landing page was after two marketing paths? To do this you can use a secondary dimension to change the last path. Find the **landingpage** dimension and drag and drop it like this:
+Let's complicate things. Imagine you want to analyze what the landing page was after two marketing paths? To do this you can use a secondary dimension to change the last path. Find the **Page Name** dimension and drag and drop it like this:
 
-![demo](./images/pro62.png)
+![demo](./images/pro62n.png)
 
 You'll now see this:
 
-![demo](./images/pro63.png)
+![demo](./images/pro63n.png)
 
 Let's do another flow analysis. This time you'll analyze what happened after a specific exit point. Other Analytics-solutions require the use of SQL/ETL and again, a third-party visualization tool to achieve the same thing. 
 
@@ -587,11 +572,11 @@ You'll then have this:
 
 ![demo](./images/pro64a.png)
 
-Find the Dimension **actiontype** and drag and drop it to the **Exit dimension** area. 
+Find the Dimension **Event Type** and drag and drop it to the **Exit dimension** area. 
 
 ![demo](./images/pro65.png)
 
-Now you can see which **actiontype**-paths drove customers to the exit. 
+Now you can see which **Event Type**-paths drove customers to the exit. 
 
 ![demo](./images/pro66.png)
 
@@ -603,7 +588,7 @@ A new action path will appear with some data that is not insightful.
 
 ![demo](./images/pro68.png)
 
-Let's analyze further! Search the Dimension **pagetitle** and drag and drop it to the new generated path.
+Let's analyze further! Search the Dimension **Page Name** and drag and drop it to the new generated path.
 
 ![demo](./images/pro69.png)
 
@@ -612,6 +597,8 @@ You have now an advanced flow analysis done in minutes. You can click the differ
 ![demo](./images/pro70.png)
 
 You now have a powerful kit to analyze funnels and explore paths of customer behavior across digital but also, offline touch points.
+
+Don't forget to save your changes!
 
 ## 16.5.4 Share the project
 
