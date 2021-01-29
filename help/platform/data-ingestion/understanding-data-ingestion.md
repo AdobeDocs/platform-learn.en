@@ -15,7 +15,7 @@ Adobe Experience Platform's data ingestion capabilities let you bring your data 
 
 ## Additional Resources
 
-* [Understanding Source Connectors video](understanding-source-connectors.md)
+* [Source Connectors overview video](overview.md)
 * [Understanding Streaming Ingestion video](understanding-streaming-ingestion.md)
 * [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
 * [Data Ingestion documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion.html)

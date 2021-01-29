@@ -38,10 +38,6 @@ audience: all
   + [Streaming record data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
   + [Streaming time series data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
   + [Streaming multiple messages](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
-  + [Sources overview](/help/platform/data-ingestion/understanding-source-connectors.md)
-  + [Ingest data from Adobe Analytics](/help/platform/data-ingestion/ingest-data-from-adobe-analytics.md)
-  + [Ingest data from Amazon S3](/help/platform/data-ingestion/ingest-data-from-amazon-s3.md)
-  + [Ingest data from Salesforce CRM](/help/platform/data-ingestion/ingest-data-from-salesforce-crm.md)
   + [Dataflow monitoring](/help/platform/data-ingestion/data-monitoring.md)
   + [Web SDK tutorials](https://experienceleague.adobe.com/docs/web-sdk-learn/tutorials/overview.html)
   + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/mobile-sdk-learn/tutorials/overview.html)
@@ -104,8 +100,11 @@ audience: all
   + [Evaluate a segment](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html)
   + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html)
   + [Enforce data usage compliance for segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/governance.html)
-+ Sources {#sources}
-  + [Sources API and UI tutorials](/help/platform/sources/sources-tutorials.md)
++ Sources {#sources}  
+  + [Sources overview](/help/platform/sources/overview.md)
+  + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
+  + [Ingest data from cloud storage](/help/platform/sources/ingest-data-from-cloud-storage.md)
+  + [Ingest data from CRM](/help/platform/sources/ingest-data-from-crm.md)
   + [Ingest data from databases](/help/platform/sources/ingest-data-from-databases.md)
 + Application Services {#application-services}
   + [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html)

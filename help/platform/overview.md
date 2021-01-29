@@ -51,11 +51,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
   </td>
   <td>
-    <a href="data-ingestion/understanding-source-connectors.md">
+    <a href="sources/overview.md">
       <img alt="thumbnail image for the 'Understanding Source connectors' video" src="assets/thumb_Sources.png" />
     </a>
     <div>
-      <a href="data-ingestion/understanding-source-connectors.md">
+      <a href="sources/overview.md">
     <strong>Understanding Source Connectors</strong>
     </a>
     </div>
