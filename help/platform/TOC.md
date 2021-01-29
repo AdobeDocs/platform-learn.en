@@ -132,5 +132,3 @@ audience: all
   + [Use Customer AI Scores and Insights](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-+ APIs {#apis}
-  + [Postman and Experience Platform APIs](/help/platform/apis/postman.md)
