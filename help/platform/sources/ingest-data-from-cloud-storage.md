@@ -16,6 +16,5 @@ This video shows how to easily batch ingest data from cloud storage services int
 ## Additional Resources
 
 * [Source Connectors overview video](overview.md)
-* [Understanding Data Ingestion video](understanding-data-ingestion.md)
 * [Create a Amazon S3 source connector in the UI documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
 * [Source connectors documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)

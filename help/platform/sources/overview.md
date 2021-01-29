@@ -15,4 +15,5 @@ This video gives an overview of Sources, or Source connectors, in the Adobe Expe
 
 ## Additional Resources
 
+* [Data ingestion overview video](../data-ingestion/understanding-data-ingestion.md)
 * [Source connectors documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
