@@ -11,7 +11,7 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 ## What's New
 
 
-* **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
+* **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
     *Get hands-on with multiple Platform features with this multi-page tutorial*
 * **[Business Value of Experience Platform and Magento Commerce (Video)](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)**
     *Power intelligent commerce with Platform and Magento*
@@ -38,11 +38,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
       <img alt="thumbnail image for the 'Getting Started with Experience Platform for Data Architects and Data Engineers' tutorial" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
     <strong>Getting Started for Data Architects and Data Engineers</strong>
     </a>
     </div>

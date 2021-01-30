@@ -17,9 +17,9 @@ You now know that XDM data is flowing into platform. You'll explore more about w
 
 The Adobe Experience Platform [!DNL Web SDK] maps certain values automatically, making a new implementation of Analytics via the Web SDK as quick as possible. The automatically mapped variables are listed [here](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
 
-For XDM data that is not automatically mapped to [!DNL Adobe Analytics], you can use [context data](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/contextdata.html) to match your [schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html). Then it can be mapped into [!DNL Analytics] using [processing rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) to populate [!DNL Analytics] variables. Context Data and Processing Rules will be concepts familiar to those that have worked with Analytics in the past, but don't worry about the details for now if they are new concepts.
+For XDM data that is not automatically mapped to [!DNL Adobe Analytics], you can use [context data](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/contextdata.html) to match your [schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html). Then it can be mapped into [!DNL Analytics] using [processing rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) to populate [!DNL Analytics] variables. Context Data and Processing Rules will be concepts familiar to those that have worked with Analytics in the past, but don't worry about the details for now if they are new concepts.
 
-You can also use a default set of actions and product lists to send or retrieve data with the AEP [!DNL Web SDK]. To do this, see [Products](https://docs.adobe.com/content/help/en/experience-platform/edge/implement/commerce.html).
+You can also use a default set of actions and product lists to send or retrieve data with the AEP [!DNL Web SDK]. To do this, see [Products](https://experienceleague.adobe.com/docs/experience-platform/edge/implement/commerce.html).
 
 ### Context data
 
@@ -50,7 +50,7 @@ To be used by [!DNL Analytics], XDM data is flattened using dot notation and mad
 
 ### Processing rules
 
-All data collected by the edge network can be accessed via [processing rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). In [!DNL Analytics], you can use processing rules to incorporate context data into [!DNL Analytics] variables.
+All data collected by the edge network can be accessed via [processing rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). In [!DNL Analytics], you can use processing rules to incorporate context data into [!DNL Analytics] variables.
 
 ## 1.5.2 Audience Manager on the Experience Platform Edge Network
 

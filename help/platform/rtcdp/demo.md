@@ -22,4 +22,4 @@ This video shows how Real-time CDP is used to collect data from multiple sources
 * [Integrate with Google Customer Match](/help/platform/rtcdp/integrate-with-google-customer-match.md)
 * [Enforce Data Usage Policies in Real-time Customer Data Platform](../governance/enforce-data-usage-policies-in-real-time-cdp.md)
 * [Understanding Adobe's Real-time Customer Data Platform video](understanding-the-real-time-customer-data-platform.md)
-* [Getting started with Adobe Real-time Customer Data Platform documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/intro/get-started.html)
+* [Getting started with Adobe Real-time Customer Data Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/get-started.html)

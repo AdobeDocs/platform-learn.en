@@ -47,7 +47,7 @@ The key resources:
 
 Here is another tutorial which you can review to learn more about connections to third party applications:
 
-* [Comprehensive Technical Tutorial for Adobe Experience Platform](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Comprehensive Technical Tutorial for Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 
 Thanks for your efforts and good luck on your journey with Adobe Experience Platform!
 

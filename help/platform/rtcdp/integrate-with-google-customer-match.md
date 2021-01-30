@@ -24,5 +24,5 @@ This video shows how Adobe’s Real-Time Customer Data Platform and Google’s C
 * [Create Destinations and Activate Data video](create-destinations-and-activate-data.md)
 * [Integrate with IAB's Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
 * [Integrate with Google Customer Match](/help/platform/rtcdp/integrate-with-google-customer-match.md)
-* [How to connect a destination documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
-* [Activate profiles and segments to a destination documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)
+* [How to connect a destination documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
+* [Activate profiles and segments to a destination documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)

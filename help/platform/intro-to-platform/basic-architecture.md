@@ -23,4 +23,4 @@ This video walks through an overview diagram and explains the primary components
 * [Application and Intelligent Services (video)](application-and-intelligent-services.md)
 * [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
-* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

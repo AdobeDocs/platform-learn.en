@@ -23,4 +23,4 @@ In the previous video we saw how an example brand, Luma, was able to create a ri
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
 * [Roles and Project Phases (video)](roles-and-project-phases.md)
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
-* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

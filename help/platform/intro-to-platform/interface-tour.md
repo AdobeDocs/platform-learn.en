@@ -24,4 +24,4 @@ This video gives a quick tour of Experience Platform's user interface to show yo
 * [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
-* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

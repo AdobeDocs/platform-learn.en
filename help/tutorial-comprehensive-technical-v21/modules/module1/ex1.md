@@ -46,9 +46,9 @@ Launch is a very advanced tool that has scope beyond an Adobe Experience Platfor
 
 Some further reading for those interested in understanding Launch further are included below.
 
-- [Launch User Guide](https://docs.adobe.com/content/help/en/launch/using/overview.html)
-- [Implementing the Experience Cloud in Websites with Launch](https://docs.adobe.com/content/help/en/core-services-learn/implementing-in-websites-with-launch/index.html)
-- [Set-up user permissions](https://docs.adobe.com/content/help/en/launch/using/reference/admin/user-permissions.html)
+- [Launch User Guide](https://experienceleague.adobe.com/docs/launch/using/overview.html)
+- [Implementing the Experience Cloud in Websites with Launch](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/index.html)
+- [Set-up user permissions](https://experienceleague.adobe.com/docs/launch/using/reference/admin/user-permissions.html)
 - [API documentation](https://developer.adobelaunch.com/api/)
 
 Next Step: [1.2 Edge Network and Server Side Data Collection](./ex2.md)
