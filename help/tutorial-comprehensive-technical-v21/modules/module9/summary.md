@@ -22,7 +22,7 @@ Let's highlight the benefits of using Google Tag Manager to ingest data:
 
 ## Check this out
 
-- Documentation: [Create a Google Big Query source connector in the UI](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/databases/bigquery.html)
+- Documentation: [Create a Google Big Query source connector in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html)
 - Module 16: [Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](../module16/customer-journey-analytics-bigquery-gcp.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)

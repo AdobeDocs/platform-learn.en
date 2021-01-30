@@ -20,4 +20,4 @@ Learn how to use the Attribution AI insights page to understand the ROI of marke
 * [Introduction to Attribution AI (video)](introduction-to-attribution-ai.md)
 * [Business Value of Attribution AI (video)](business-value-of-attribution-ai.md)
 * [Configure Attribution AI (video)](configure-attribution-ai.md)
-* [Attribution AI (documentation)](https://docs.adobe.com/content/help/en/experience-platform/intelligent-services/attribution-ai/overview.html)
+* [Attribution AI (documentation)](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)

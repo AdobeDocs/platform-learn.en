@@ -102,7 +102,7 @@ You will create the next segment by leveraging the relationship you built betwee
 Click on **[!UICONTROL Segments]** in the left navigation and let's take a moment to review our three segments:
 
 * Note that two of our segments are batch segments and one is a streaming segment. 
-* Platform will default to streaming segmentation, whenever possible, qualifying the customer for a segment as soon as they meet the criteria. When segment definitions are too complex for streaming, they will automatically convert to batch. In this case, the two segments defaulted to batch because the look-back window of the purchase events was greater than seven days. For a complete and current list of streaming limitations, see [the documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/streaming-segmentation.html).
+* Platform will default to streaming segmentation, whenever possible, qualifying the customer for a segment as soon as they meet the criteria. When segment definitions are too complex for streaming, they will automatically convert to batch. In this case, the two segments defaulted to batch because the look-back window of the purchase events was greater than seven days. For a complete and current list of streaming limitations, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html).
 * The batch jobs run on a daily schedule, which can be toggled off.
   
 ![Bought same product in the last 30 days segment](assets/segment-review.png)

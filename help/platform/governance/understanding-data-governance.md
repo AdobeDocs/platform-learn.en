@@ -15,8 +15,8 @@ This video gives an overview of data governance in Adobe Experience Platform. Da
 
 ## Additional Resources
 
-* [Data governance documentation](https://docs.adobe.com/content/help/en/experience-platform/data-governance/home.html)
-* [Data governance in Real-time CDP documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/privacy/data-governance-overview.html)
+* [Data governance documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)
+* [Data governance in Real-time CDP documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/privacy/data-governance-overview.html)
 * [Data governance end-to-end-demo video](introduction-to-data-governance.md)
 * [Classify data using governance labels video](classify-data-using-governance-labels.md)
 * [Create data usage policies video](create-data-usage-policies.md)

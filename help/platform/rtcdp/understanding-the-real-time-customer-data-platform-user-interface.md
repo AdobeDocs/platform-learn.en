@@ -23,4 +23,4 @@ This video takes you through Adobe’s Real-time Customer Data Platform (CDP) us
 * [Enforce Data Usage Policies in Real-time Customer Data Platform](../governance/enforce-data-usage-policies-in-real-time-cdp.md)
 * [Understanding the Real-time Customer Data Platform video](understanding-the-real-time-customer-data-platform.md)
 * [Source connectors overview video](../sources/overview.md)
-* [Real-time Customer Data Platform metrics overview documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/intro/home-page-dashboards.html)
+* [Real-time Customer Data Platform metrics overview documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/home-page-dashboards.html)

@@ -98,7 +98,7 @@ As mentioned, we can set different Person IDs for each dataset. This allows you 
 
 The name of the Person ID field isn't important, as long as the value in the Person ID fields correspond. Let say we have `email` in one dataset and `emailAddress` in another dataset defined as Person ID. If `delaigle@adobe.com` is the same value for the Person ID-field on both datasets, CJA will be able to stitch the data.
 
-Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html). 
+Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html). 
 
 ### Stitching the data using the Person ID
 

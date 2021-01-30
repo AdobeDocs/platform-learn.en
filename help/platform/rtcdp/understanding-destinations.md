@@ -22,4 +22,4 @@ Destinations are pre-built integrations with destination platforms supported by 
 * [Integrate with Google Customer Match](/help/platform/rtcdp/integrate-with-google-customer-match.md)
 * [Integrate with IAB's Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
 * [Enforce Data Usage Policies in Real-time Customer Data Platform](../governance/enforce-data-usage-policies-in-real-time-cdp.md)
-* [Destinations Overview documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/destinations-overview.html)
+* [Destinations Overview documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/destinations-overview.html)

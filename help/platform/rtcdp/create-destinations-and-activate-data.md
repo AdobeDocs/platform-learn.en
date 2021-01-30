@@ -22,5 +22,5 @@ Learn how to create destinations and activate data in Adobe's Real-time Customer
 * [Demo of Real-time Customer Data Platform video](demo.md)
 * [Understanding the Real-time Customer Data Platform User Interface and Workflow video](understanding-the-real-time-customer-data-platform-user-interface.md)
 * [Understanding Destinations video](understanding-destinations.md)
-* [How to connect a destination documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
-* [Activate profiles and segments to a destination documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)
+* [How to connect a destination documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
+* [Activate profiles and segments to a destination documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)

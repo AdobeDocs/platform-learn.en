@@ -23,4 +23,4 @@ Adobe’s Real-time Customer Data Platform (CDP) is an application service built
 * [Integrate with IAB's Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
 * [Enforce Data Usage Policies in Real-time Customer Data Platform](../governance/enforce-data-usage-policies-in-real-time-cdp.md)
 * [Source connectors overview video](../sources/overview.md)
-* [Getting started with Adobe Real-time Customer Data Platform documentation](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/intro/get-started.html)
+* [Getting started with Adobe Real-time Customer Data Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/get-started.html)

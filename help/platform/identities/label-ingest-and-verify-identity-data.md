@@ -16,4 +16,4 @@ This video shows you how to label data fields as identities, ingest identity dat
 ## Additional Resources
 
 * [Understanding Identity and Identity Graphs video](understanding-identity-and-identity-graphs.md)
-* [Identity Service documentation](https://docs.adobe.com/content/help/en/experience-platform/identity/home.html)
+* [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
