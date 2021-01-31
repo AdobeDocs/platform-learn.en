@@ -15,6 +15,4 @@ The vision of machine learning on Adobe Experience Platform, is to democratize d
 
 ## Additional Resources
 
-* [Use Data Science Workspace to build and deploy a model video](build-and-deploy-a-model.md)
 * [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html)
-* [Data Science Workspace Tutorials](https://www.adobe.io/apis/experienceplatform/home/tutorials/data-science-workspace/dsw-tutorials.html)
