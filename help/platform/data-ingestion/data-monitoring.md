@@ -1,18 +1,16 @@
 ---
 title: Monitor data flow in Adobe Experience Platform
-description: Understand how to monitor and track data that gets ingested into Adobe Experience Platform using platform UI and API
-feature: data ingestion
-topics:
+description: Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Platform's UI and API
+feature: Data Ingestion
+role: Data Engineer
 kt: 6547
-audience: marketer, engineer
-doc-type: video
-activity: understand
+
 thumbnail: 330549.jpg
 ---
 
 # Monitor data flow in Adobe Experience Platform
 
-Understand how to monitor and track data that gets ingested into Adobe Experience Platform using platform UI and API
+Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Platform's UI and API
 
 >[!VIDEO](https://video.tv.adobe.com/v/330549?quality=12&learn=on)
 

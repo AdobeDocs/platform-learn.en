@@ -1,6 +1,5 @@
 ---
 title: Adobe Experience Platform Tutorials
-seo-title: Adobe Experience Platform Tutorials
 description: Learn about Adobe Experience Platform
 ---
 
@@ -10,15 +9,15 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-
+* **[Data monitoring (Video)](/help/platform/data-ingestion/data-monitoring.md)**
+    *Monitor and track data that gets ingested into Platform*
+* **[Create merge policies (Video)](/help/platform/profiles/create-merge-policies.md)**
+    *Combine datasets from disparate sources*
+* **[Union schemas overview (Video)](/help/platform/profiles/union-schemas-overview.md)**
+    *See all of the fields contained within schemas of the same class*
 * **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
     *Get hands-on with multiple Platform features with this multi-page tutorial*
-* **[Business Value of Experience Platform and Magento Commerce (Video)](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)**
-    *Power intelligent commerce with Platform and Magento*
-* **[Business Value of Attribution AI (Video)](/help/platform/intelligent-services/business-value-of-attribution-ai.md)**
-    *Measure and optimize marketing and advertising spend*
-* **[Business Value of Customer AI (Video)](/help/platform/intelligent-services/business-value-of-customer-ai.md)**
-    *Enrich customer profiles with AI-based propensities*
+
 
 ## Staff Picks
 
