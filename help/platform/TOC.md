@@ -45,6 +45,8 @@ audience: all
 + Data Science Workspace {#data-science-workspace}
   + [Data Science Workspace overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
   + [Build and deploy a model](/help/platform/data-science-workspace/build-and-deploy-a-model.md)
+  + [Read and Write Datasets in JupyterLab Notebooks](data-science-workspace/read-and-write-datasets-in-jupyterlab-notebooks.md)
+  + [Train, score and productize models with the recipe builder template](data-science-workspace/train-score-and-productize-models.md)
   + [Create and publish a machine learning model](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/create-publish-model.html)
   + [Create the Retail Sales schema and dataset](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/create-retails-sales-dataset.html)
   + [Preview schemas and datasets](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/preview-schema-data.html)
