@@ -44,17 +44,14 @@ audience: all
   + [Debugger tutorials](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/overview.html)
 + Data Science Workspace {#data-science-workspace}
   + [Data Science Workspace overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-  + [Build and deploy a model](/help/platform/data-science-workspace/build-and-deploy-a-model.md)
+  + [Load data in JupyterLab notebooks](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
+  + [Train, score and productize models with the recipe builder template](data-science-workspace/train-score-and-productize-models.md)
   + [Create and publish a machine learning model](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/create-publish-model.html)
   + [Create the Retail Sales schema and dataset](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/create-retails-sales-dataset.html)
   + [Preview schemas and datasets](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/preview-schema-data.html)
   + [Package source files into a recipe](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html)
   + [Import a packaged recipe (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html)
   + [Import a packaged recipe (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html)
-  + [Train and evaluate a model (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/train-evaluate-model-ui.html)
-  + [Train and evaluate a model (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/train-evaluate-model-api.html)
-  + [Score a model (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/score-model-ui.html)
-  + [Score a model (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/score-model-api.html)
   + [Optimize a model](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/optimize-model.html)
   + [Enrich Real-time Customer Profile with machine learning insights](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/enrich-profile.html)
   + [Publish a model as a service (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/publish-model-service-ui.html)
@@ -132,5 +129,3 @@ audience: all
   + [Use Customer AI Scores and Insights](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-+ APIs {#apis}
-  + [Postman and Experience Platform APIs](/help/platform/apis/postman.md)
