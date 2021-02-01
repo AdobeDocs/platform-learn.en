@@ -17,5 +17,5 @@ Mixins are reusable components that define fields in XDM schemas. Adobe Experien
 
 * [Understanding the XDM System & Experience Data Model](understanding-the-xdm-system-and-experience-data-model.md)
 * [Create your first Schema with out-of-the-box components video](create-your-first-schema-with-out-of-the-box-components.md)
-* [Schema documentation](https://www.adobe.io/apis/experienceplatform/home/xdm.html)
+* [Schema documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
 * [Schema Editor tutorial](https://www.adobe.com/go/xdm-schema-editor-tutorial-en)

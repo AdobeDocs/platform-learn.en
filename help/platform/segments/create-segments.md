@@ -20,4 +20,3 @@ The segment builder in Adobe Experience Platform gives you the power to build se
 * [Demo of streaming segmentation](streaming-segmentation-demo.md)
 * [Understanding the Real-time Customer Profile video](../profiles/bring-data-into-the-real-time-customer-profile.md)
 * [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html)
-* [Creating segments via API tutorial](https://www.adobe.io/apis/experienceplatform/home/tutorials/alltutorials.html#!api-specification/markdown/narrative/tutorials/creating_a_segment_tutorial/creating_a_segment_tutorial.md)

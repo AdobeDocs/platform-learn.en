@@ -18,4 +18,4 @@ This video shows how to run queries in the Adobe Experience Platform interface a
 * [Understanding Query Service video](understanding-query-service.md)
 * [Understanding the Value of Dashboards built with Query Service](understanding-the-value-of-dashboards-built-with-query-service.md)
 * [Understanding Data Usage Patterns with Query Service video](understanding-data-usage-patterns-with-query-service.md)
-* [Query Service documentation](https://www.adobe.io/apis/experienceplatform/home/query-service/overview.html)
+* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
