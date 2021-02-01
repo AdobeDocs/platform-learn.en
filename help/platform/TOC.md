@@ -29,6 +29,7 @@ audience: all
   + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies-in-real-time-cdp.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
+  + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
   + [Create and populate a dataset](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
   + [Map a CSV file to XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html)
   + [Streaming ingestion overview](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
