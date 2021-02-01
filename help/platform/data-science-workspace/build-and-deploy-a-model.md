@@ -16,5 +16,4 @@ Data Science Workspace helps brands leverage machine learning and artificial int
 ## Additional Resources
 
 * [Understanding Data Science Workspace video](understanding-data-science-workspace.md)
-* [Data Science Workspace documentation](https://www.adobe.io/apis/experienceplatform/home/data-science-workspace.html)
-* [Data Science Workspace Tutorials](https://www.adobe.io/apis/experienceplatform/home/tutorials/data-science-workspace/dsw-tutorials.html)
+* [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html)

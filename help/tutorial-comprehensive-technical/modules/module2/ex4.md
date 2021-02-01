@@ -277,7 +277,7 @@ Once data is loaded, you can define the correct data governance approach for our
 
 Now that your customer data is ingested, you need to make sure that this dataset is properly governed for usage and export control. Click on the **[!UICONTROL Data Governance]** tab and observe that you can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
-You can find more info on the different labels and how they will be enforced in the future through the policy framework on this link: [https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html](https://www.adobe.io/apis/experienceplatform/home/dule/duleservices.html) 
+You can find more info on the different labels and how they will be enforced in the future through the policy framework on this link: [https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html) 
  
 ![Data Ingestion](./images/dsgovernance.png)
 

@@ -16,4 +16,4 @@ Adobe Experience Platform provides a rich set of Identity resolution capabilitie
 ## Additional Resources
 
 * [Label, Ingest, and Verify Identity Data](label-ingest-and-verify-identity-data.md)
-* [Identity Service documentation](https://www.adobe.io/apis/experienceplatform/home/profile-identity-segmentation/profile-identity-segmentation-services.html#!api-specification/markdown/narrative/technical_overview/identity_services_architectural_overview/identity_services_architectural_overview.md)
+* [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
