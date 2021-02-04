@@ -64,6 +64,7 @@ doc-type: video
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
+  + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
