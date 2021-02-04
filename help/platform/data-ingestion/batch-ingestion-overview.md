@@ -1,5 +1,5 @@
 ---
-title: Overview of data ingestion in Adobe Experience Platform
+title: Batch Data Ingestion Overview
 description: This video gives an overview of batch ingestion in Adobe Experience Platform and shows how to ingest batch data using the API.
 role: Data Engineer, Data Architect
 feature: Data Ingestion
@@ -7,7 +7,7 @@ kt: 7022
 thumbnail: 330995.jpg
 ---
 
-# Overview of data ingestion
+# Batch data ingestion overview
 
 This video gives an overview of batch data ingestion in Adobe Experience Platform and shows how to ingest batch data using the API.
 
