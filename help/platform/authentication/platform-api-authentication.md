@@ -13,17 +13,17 @@ In order to make calls to Adobe Experience Platform APIs, you must first gain ac
 
 For step-by-step instructions outlining how to gain access to a developer account, please visit the [Experience Platform API authentication tutorial](https://www.adobe.com/go/platform-api-authentication-en). 
 
-## Export Adobe I/O Integration Details to Postman
+## Create and export Experience Platform API to Postman
 
 [Postman](https://www.getpostman.com/) is a tool allowing developers to quickly and easily interact with Adobe Experience Platform APIs.
 
-Adobe I/O Console's **Export Details for Postman** capability provides an easy way to export all the account details required to access and interact with an Experience Platform API in a single Postman Environment file, removing the need to copy and paste values from the Adobe I/O Console into Postman.
+Adobe Developer Console's **Export Details for Postman** capability provides an easy way to export all the account details required to access and interact with an Experience Platform API in a single Postman Environment file, removing the need to copy and paste values from Adobe Developer Console into Postman.
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 
 ## Generate an Access Token with Postman
 
-Use the [Adobe I/O Access Token Generation Postman collection](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) in conjunction with Adobe I/O's Postman Environment to quickly and easily generate an Adobe I/O Access Token that can be used to authenticate to Adobe Experience Platform, and any other Adobe I/O API.
+Use the [Adobe Identity Management Service APIs](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) to obtain an Access Token to access the Adobe Experience Platform APIs for Non-production Use
 
 >[!VIDEO](https://video.tv.adobe.com/v/29698/?quality=12&learn=on)
 
