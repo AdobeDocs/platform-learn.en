@@ -60,11 +60,10 @@ doc-type: video
   + [Publish a model as a service (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/publish-model-service-api.html)
   + [Schedule automated training and scoring on a service](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/schedule-models-ui.html)
 + Destinations {#destinations}
-  + [Configure file-based cloud storage or email marketing destinations](destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
-  + [Connect to a destination](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
-  + [Activate profiles and segments to a destination](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)
-  + [Connect to streaming destinations (AWS Kinesis and Azure Event Hubs) and activate data (API)](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html)
-  + [Connect to email marketing destinations and activate data](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/email-marketing-api.html)
+  + [Destinations overview](/help/platform/destinations/understanding-destinations.md)
+  + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
+  + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
+  + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
@@ -109,16 +108,12 @@ doc-type: video
   + [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html)
   + [Journey Orchestration tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html)
   + [Offer Decisioning tutorials](https://experienceleague.adobe.com/docs/offer-decisioning-learn/tutorials/overview.html)
-  + [Real-time CDP tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/understanding-the-real-time-customer-data-platform.html)
-+ Real-time CDP {#rtcdp}
-  + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-  + [End-to-end demo](/help/platform/rtcdp/demo.md)
-  + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-  + [Integrate with IAB Transparency and Consent Framework 2.0 (Video)](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-  + [Enforce Data Usage Policies](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
-  + [Destinations overview](/help/platform/rtcdp/understanding-destinations.md)
-  + [Create destinations and activate data](/help/platform/rtcdp/create-destinations-and-activate-data.md)
-  + [Integrate with Google Customer Match](/help/platform/rtcdp/integrate-with-google-customer-match.md)
+  + Real-time CDP tutorials{#rtcdp}
+    + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+    + [End-to-end demo](/help/platform/rtcdp/demo.md)
+    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+    + [Integrate with IAB Transparency and Consent Framework 2.0 (Video)](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
+    + [Enforce Data Usage Policies](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
 + Intelligent Services {#intelligent-services}
   + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
   + [Attribution AI overview](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
