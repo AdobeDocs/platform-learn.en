@@ -201,7 +201,7 @@ hide: yes
   + [21.6 Test and troubleshoot your data collection](/help/tutorial-comprehensive-technical-v21/modules/module21/ex6.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module21/summary.md)
 + 22 - Build your own real-time dashboard using Adobe I/O - Project Firefly and Adobe Experience Platform {#module22}
-  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module22/adobe-io-firefly.md
+  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module22/adobe-io-firefly.md)
   + [22.1 Set up your environment](/help/tutorial-comprehensive-technical-v21/modules/module22/ex1.md)
   + [22.2 Introduction to Project Firefly](/help/tutorial-comprehensive-technical-v21/modules/module22/ex2.md)
   + [22.3 Build your EXP News real-time dashboard](/help/tutorial-comprehensive-technical-v21/modules/module22/ex3.md)
