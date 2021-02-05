@@ -68,6 +68,7 @@ doc-type: video
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
+  + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
   + [Configure a dataset for Identity service](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html)
 + Profiles {#profiles}
   + [Understanding Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
