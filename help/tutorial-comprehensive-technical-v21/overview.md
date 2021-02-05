@@ -242,6 +242,13 @@ As part of this module you will also get an understanding of what triggers Real-
 - **Description:** In this module, you'll use the previously configured datasets, schemas and Launch property to collect data, and then forward that data server-side to an endpoint of choice.
 - **Time Investment:** 90 minutes
 
+[22. Build your own real-time dashboard using Adobe I/O - Project Firefly and Adobe Experience Platform](./modules/module22/adobe-io-firefly.md)
+
+- **Audience:** Data Engineer, Data Architect, Data Analyst, Developer
+- **Prerequisites:** Access to Adobe Experience Platform and Adobe I/O Runtime
+- **Description:** In this module, you'll use Adobe I/O - Project Firefly to build your own real-time dashboard that consumes data from Adobe Experience Platform in real-time. 
+- **Time Investment:** 90 minutes
+
 >[!NOTE]
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
