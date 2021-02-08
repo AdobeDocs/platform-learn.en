@@ -29,8 +29,7 @@ Now that all Adobe Experience Platform segments are available in the Adobe Exper
 
 >[!IMPORTANT]
 >
->Before you configure your Adobe Target activity, you need to ensure that the Adobe Target library is being loaded on the website. To do that, go to [http://launch.adobe.com/](http://launch.adobe.com/) and make sure the Adobe Target extension is installed in your web property, and make sure that the  
-
+>Before you configure your Adobe Target activity, you need to ensure that the Adobe Target library is being loaded on the website. To do that, go to [http://launch.adobe.com/](http://launch.adobe.com/) and verify that your Edge Configuration is loading Adobe Target.
 
 Let's go back to the Adobe Experience Cloud homepage by going to [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
 
@@ -60,7 +59,7 @@ Fill out the details, like the **Activity URL**.
 
 >[!TIP]
 >
->Adobe Target doesn't like localhost connections, so for this use-case, please use a publicly available website as Activity URL.
+>Adobe Target doesn't like localhost connections, so for this use-case, please use a publicly available website as Activity URL, like in the case of the demo website environment, [https://public.aepdemo.net/index.html](https://public.aepdemo.net/index.html)
 
 ![RTCDP](./images/exclatcrxtdtl.png)
 
