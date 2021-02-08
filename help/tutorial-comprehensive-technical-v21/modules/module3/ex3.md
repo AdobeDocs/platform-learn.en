@@ -123,7 +123,7 @@ And next, you'll see your integration.
 
 ![Adobe I/O New Integration](./images/api11.png)
 
-Click the **Download for Postman** button to download a Postman environment (wait until the environment is downloaded, this can take a couple of seconds).
+Click the **Download for Postman** button and then click **Service Account (JWT)** to download a Postman environment (wait until the environment is downloaded, this can take a couple of seconds).
 
 ![Adobe I/O New Integration](./images/iopm.png)
 
