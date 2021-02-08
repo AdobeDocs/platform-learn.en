@@ -75,6 +75,7 @@ audience: all
   + [Configuring File-based Cloud Storage or Email Marketing Destinations](destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Connect to a destination (UI)](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/connect-destination.html)
   + [Activate profiles and segments to a destination (UI)](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/dest-tutorials/activate-destinations.html)
+  + [Configure the Azure Blob Destination](destinations/configure-the-azure-blob-destination.md)
   + [Connect to streaming destinations (AWS Kinesis and Azure Event Hubs) and activate data (API)](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/api-tutorials/streaming-destinations-api-tutorial.html)
   + [Connect to email marketing destinations and activate data (API)](https://docs.adobe.com/content/help/en/experience-platform/rtcdp/destinations/api-tutorials/email-marketing-api.html)
 + Identities {#identities}
