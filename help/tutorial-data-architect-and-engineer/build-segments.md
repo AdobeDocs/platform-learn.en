@@ -1,13 +1,11 @@
 ---
-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Build segments
+seo-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Build segments
 description: In this lesson, we will build some segments based on the profile data we have ingested in the previous lessons.
-feature: segmentation
-topics: 
+role: Data Architect
+feature: Data Governance
 kt: 4348
-audience: data architect
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-build-segments.jpg
 ---
 
@@ -27,7 +25,8 @@ Before you begin the exercises, watch this short video to learn more about creat
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
 
-* Permission items **[!UICONTROL Profiles]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]** and **[!UICONTROL Export Audience Segment]**
+* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL Manage Segments]**, **[!UICONTROL View Segments]** and **[!UICONTROL Export Audience Segment]**
+* Permission items **[!UICONTROL Profile Management]** > **[!UICONTROL View Profiles]** and **[!UICONTROL Manage Profiles]** 
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
@@ -103,14 +102,14 @@ You will create the next segment by leveraging the relationship you built betwee
 Click on **[!UICONTROL Segments]** in the left navigation and let's take a moment to review our three segments:
 
 * Note that two of our segments are batch segments and one is a streaming segment. 
-* Platform will default to streaming segmentation, whenever possible, qualifying the customer for a segment as soon as they meet the criteria. When segment definitions are too complex for streaming, they will automatically convert to batch. In this case, the two segments defaulted to batch because the look-back window of the purchase events was greater than seven days. For a complete and current list of streaming limitations, see [the documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/streaming-segmentation.html).
+* Platform will default to streaming segmentation, whenever possible, qualifying the customer for a segment as soon as they meet the criteria. When segment definitions are too complex for streaming, they will automatically convert to batch. In this case, the two segments defaulted to batch because the look-back window of the purchase events was greater than seven days. For a complete and current list of streaming limitations, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html).
 * The batch jobs run on a daily schedule, which can be toggled off.
   
 ![Bought same product in the last 30 days segment](assets/segment-review.png)
 
 ## Additional Resources
 
-* [Segmentation Service documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/home.html)
+* [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
 * [Segmentation Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/segmentation.yaml)
 
 There is more to segmentation, especially with activating segments. Those topics will be addressed in another tutorial.

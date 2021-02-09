@@ -1,12 +1,8 @@
 ---
 title: Roles and Project Phases
 description: This video gives an overview of the roles, phases, and key outcomes involved in a successful Experience Platform project.
-feature:
-topics:
+role: Leader,Architect,Developer,Data Architect,Data Engineer,Administrator,Business Practitioner
 kt: 4338
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 32807.jpg
 ---
 
@@ -27,4 +23,4 @@ This video gives an overview of the roles, phases, and key outcomes involved in 
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
-* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

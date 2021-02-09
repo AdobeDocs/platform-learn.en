@@ -11,7 +11,7 @@ activity: develop
 
 ## 14.1.1 Terminology
 
-To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://docs.adobe.com/content/help/en/experience-platform/decisioning/home.html) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
+To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/experience-platform/decisioning/home.html) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
 
 Working with Offer Decisioning, you need to understand the following concepts:
 
@@ -32,7 +32,13 @@ Working with Offer Decisioning, you need to understand the following concepts:
 
 Go to [https://platform.adobe.com](https://platform.adobe.com).
 
-![Placements](./images/home.png)
+Before you continue, you need to select a **sandbox**. The sandbox you need to select is named `--aepSandboxId--`. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox. Go to **Segment**. 
+
+![Data Ingestion](./images/sb2.png)
 
 In the left menu, scroll down until you see the **Decisioning** menu.
 

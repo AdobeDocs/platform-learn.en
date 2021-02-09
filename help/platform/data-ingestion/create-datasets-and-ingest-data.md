@@ -1,18 +1,15 @@
 ---
 title: Create Datasets and Ingest Data in Adobe Experience Platform
-description: Data ingestion gives you the ability to bring your data together into one open and scalable platform. When your data is mapped to schemas it becomes easy to combine data from multiple sources and create a unified profile.
-feature: data ingestion
-topics:
+description: This video shows how to create datasets and ingest data in the Adobe Experience Platform interface.
+role: Data Engineer, Data Architect
+feature: Data Ingestion
 kt: 2700
-audience: engineer
-doc-type: video
-activity: use
 thumbnail: 27269.jpg
 ---
 
-# Create Datasets and Ingest Data
+# Create datasets and ingest data
 
-Data ingestion gives you the ability to bring your data together into one open and scalable platform. When your data is mapped to schemas it becomes easy to combine data from multiple sources and create real-time customer profiles.
+This video shows how to create datasets and ingest data in the Adobe Experience Platform interface. For more detailed product documentation, see [ingest batch data using the UI](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/ingest-batch-data.html) and [create a dataset using APIs](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/create.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27269?quality=12&learn=on)
 
@@ -20,5 +17,5 @@ Data ingestion gives you the ability to bring your data together into one open a
 
 * [Understanding Data Ingestion video](understanding-data-ingestion.md)
 * [Understanding Streaming Ingestion video](understanding-streaming-ingestion.md)
-* [Data Ingestion documentation](https://www.adobe.io/apis/experienceplatform/home/data-ingestion.html)
+* [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)
 * [Configuring a Dataset with Platform API tutorial](https://www.adobe.com/go/data-configure-dataset-en)

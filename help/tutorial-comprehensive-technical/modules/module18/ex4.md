@@ -15,7 +15,7 @@ In this exercise you will add your segment **ldap - Citi Signal Sports Fan** to 
 
 Go to [https://platform.adobe.com](https://platform.adobe.com).
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named **--aepSandboxId--**. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named `--aepSandboxId--`. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
 
 ![Data Ingestion](./images/sb1.png)
 
@@ -39,9 +39,9 @@ Segment destinations will receive a predefined segment qualification payload tha
 
 Profile based destinations let you pick any attribute (firstName, lastName, ...) from the XDM Profile Union Schema and include it in the activation payload. An example of such destination is the **Email Marketing**.
 
-Because your Azure Event Hub destination is a **segment** destination, select for example the field **--aepTenantId--.identification.ecid**. 
+Because your Azure Event Hub destination is a **segment** destination, select for example the field `--aepTenantId--.identification.ecid`. 
 
-Click **Add new field**, click browse schema and select the field **--aepTenantId--identification.ecid** (delete any other field that would be displayed automatically).
+Click **Add new field**, click browse schema and select the field `--aepTenantId--identification.ecid` (delete any other field that would be displayed automatically).
 
 Click **Next**.
 

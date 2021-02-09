@@ -19,7 +19,7 @@ In this exercise you will execute API calls to manage query templates and query 
 
 ## Documentation
 
-- [Adobe Experience Platform Query Service Help](https://docs.adobe.com/content/help/en/experience-platform/query/api/getting-started.html)
+- [Adobe Experience Platform Query Service Help](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
 - [Query Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## 7.7.1 Query Service API

@@ -23,7 +23,7 @@ You'll be redirected to the **Home** view in Journey Orchestration.
 
 ![ACOP](./images/acoptriglp.png)
 
-First, make sure you're using the correct sandbox. The sandbox to use is called **--aepSandboxId--**. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
 
 ![ACOP](./images/sb.png)
 
@@ -85,7 +85,7 @@ Click on the name of the event you created to open it.
 
 ![ACOP](./images/eventnode.png)
 
-Navigate to **--aepTenantId--.accountcreation.email** and click it.
+Navigate to `--aepTenantId--.accountcreation.email` and click it.
 
 ![ACOP](./images/srcemail.png)
 

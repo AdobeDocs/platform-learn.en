@@ -1,16 +1,12 @@
 ---
 title: Basic Architecture of Adobe Experience Platform
 description: This video walks through an overview diagram and explains the primary components of Experience Platform.
-feature: platform
-topics:
+role: Leader,Architect,Developer,Data Architect,Data Engineer,Administrator,Business Practitioner
 kt: 4336
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 32456.jpg
 ---
 
-# Basic Architecture of Experience Platform
+# Basic architecture of Adobe Experience Platform
 
 This video walks through an overview diagram and explains the primary components of Experience Platform.
 
@@ -27,4 +23,4 @@ This video walks through an overview diagram and explains the primary components
 * [Application and Intelligent Services (video)](application-and-intelligent-services.md)
 * [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
-* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

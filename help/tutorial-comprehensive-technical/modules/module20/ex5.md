@@ -80,7 +80,7 @@ After pasting your private.key into Stackchat Studio, you should now have this:
 
 The Connection ID is the last portion of the DCS Inlet ID, which is already saved in your configuration ID [here](https://public.aepdemo.net/admin_configuration.html). But to save you the click, your DCS Inlet ID is as follows:
 
--—dcsInletId—-
+`--dcsInletId--`
 
 You now just need to copy every character after the final **/** in the URL and paste the value into the **Connection ID** field in Stackchat Studio, in this example: **684b70ada4897b5babd8f77aebceffed2fda391352262a2b9e04f5c9e4797f81**.
 
@@ -100,7 +100,7 @@ If your credentials in the previous step are correct, you'll be automatically sw
 
 ![Stackchat Adobe Experience Platform integration](./images/ui_add_aep_fetch.png)
 
-After the sandboxes have been fetched, search for your sandbox name and select it. Your sandbox to use is **--aepSandboxId--**. In this example, the sandbox is called **AEP Enablement**.
+After the sandboxes have been fetched, search for your sandbox name and select it. Your sandbox to use is `--aepSandboxId--`. In this example, the sandbox is called **AEP Enablement**.
 
 ![Stackchat Adobe Experience Platform integration](./images/ui_add_aep_sb_search.png)
 
@@ -129,12 +129,12 @@ Next, you need to add several optional mappings. Here's a table of what to map a
 
 | Slot Name       | Schema Mapping  |
 |-----------------|-----------------|
-| ECID            | --aepTenantId--.identification.ecid |
-| Email           | --aepTenantId--.identification.emailId |
+| ECID            | ``--aepTenantId--``.identification.ecid |
+| Email           | ``--aepTenantId--``.identification.emailId |
 | FirstName       | person.name.firstName |
-| NpsScore        | --aepTenantId--.customerSatisfactionScore.score |
-| NpsFeedback     | --aepTenantId--.customerSatisfactionScore.feedback |
-| NPSFeedbackText | --aepTenantId--.customerSatisfactionScore.detailedFeedback |
+| NpsScore        | ``--aepTenantId--``.customerSatisfactionScore.score |
+| NpsFeedback     | ``--aepTenantId--``.customerSatisfactionScore.feedback |
+| NPSFeedbackText | ``--aepTenantId--``.customerSatisfactionScore.detailedFeedback |
 
 For each of the mappings, click the **+** button to add a new mapping.
 
@@ -154,15 +154,15 @@ Once these are all mapped, hit **Update Mapping** in the top right.
 
 ## 20.5.5 Event Mapping
 
-In this tab, you'll map Stackchat slots to the behavioral events that Stackchat sends to Adobe Experience Platform. The Schema you selected in step 20.5.2 (**AEP Demo - Stackchat Interactions Schema**) has a **--aepTenantId--.chatbotInteraction** mixin that will be automatically populated by Stackchat with information like which conversation flow the user is in, or when a cloud function gets executed. Your only job here is to map the identification slots so that Adobe Experience Platform can attribute this behavior to the correct user.
+In this tab, you'll map Stackchat slots to the behavioral events that Stackchat sends to Adobe Experience Platform. The Schema you selected in step 20.5.2 (**AEP Demo - Stackchat Interactions Schema**) has a `--aepTenantId--.chatbotInteraction` mixin that will be automatically populated by Stackchat with information like which conversation flow the user is in, or when a cloud function gets executed. Your only job here is to map the identification slots so that Adobe Experience Platform can attribute this behavior to the correct user.
 
 Add the following mappings in your Event Mapping tab.
 
 | Slot Name       | Schema Mapping  |
 |-----------------|-----------------|
-| User Id         | --aepTenantId--.identification.stackchatId |
-| ECID            | --aepTenantId--.identification.ecid |
-| Email           | --aepTenantId--.identification.emailId |
+| User Id         | ``--aepTenantId--``.identification.stackchatId |
+| ECID            | ``--aepTenantId--``.identification.ecid |
+| Email           | ``--aepTenantId--``.identification.emailId |
 
 Your final mapping should look like this:
 

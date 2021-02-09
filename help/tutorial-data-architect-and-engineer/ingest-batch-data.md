@@ -1,13 +1,11 @@
 ---
-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Ingest batch data
+seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Ingest batch data
 description: In this lesson, you will ingest batch data into Experience Platform using a variety of methods.
-feature: data ingestion
-topics: 
+role: Data Engineer
+feature: Data Ingestion
 kt: 4348
-audience: data engineer
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-ingest-batch-data.jpg
 ---
 
@@ -68,7 +66,7 @@ First, get the sample data and customize it for your tenant:
 >
 >There are a few options, **[!UICONTROL Error diagnostics]** and **[!UICONTROL Partial ingestion]** that you will see on various screens in this lesson. These options aren't covered in the tutorial. Some quick info:
 >
->* Enabling error diagnostics generates data about the ingestion of your data, which you can then review using the Data Access API. Learn more about it in [the documentation](https://docs.adobe.com/content/help/en/experience-platform/data-access/home.html).
+>* Enabling error diagnostics generates data about the ingestion of your data, which you can then review using the Data Access API. Learn more about it in [the documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
 >* Partial ingestion allows you to ingest data containing errors, up to a certain threshold which you can specify. Learn more about it in [the documentation](https://docs.adobe.com/help/en/experience-platform/ingestion/batch/partial.html)
 
 ### Validate the data
@@ -85,13 +83,13 @@ To confirm the data was ingested into the dataset:
     ![Preview the successful dataset](assets/ingestion-loyalty-preview.png)
 
 
-To confirm the data landed in Profile:
+To confirm the data landed in Profile (may take a few minutes for the data to land):
 
 1. Click **[!UICONTROL Profiles]** in the left navigation
 1. Click the icon next to the **[!UICONTROL Select identity namespace]** field to open the modal
 1. Select your `Luma Loyalty Id` namespace
 1. The enter one of the `loyaltyId` values from your dataset, e.g. `5625458`
-1. Click the `Show profile` button
+1. Click **[!UICONTROL View]**
     ![Confirm a profile from the dataset](assets/ingestion-loyalty-profile.png)
 
 #### Validate with data ingestion events
@@ -104,7 +102,7 @@ If you subscribed to data ingestion events in the previous lesson, check your un
 
 ![Data ingestion webhook](assets/ingestion-loyalty-webhook.png)
 
-See the [documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
+See the [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
 
 ## Ingest data in batches with Platform API
 
@@ -215,7 +213,7 @@ If you subscribed to data ingestion events in the previous lesson, check your un
 
 ![Data ingestion webhook](assets/ingestion-crm-webhook.png)
 
-See the [documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
+See the [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
 
 ## Ingest data with Workflows
 
@@ -271,7 +269,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 
 >[!NOTE]
 >
->The Offline Purchase data we will be using in this exercise contains datetime data. Datetime data should be in either [ISO 8061 formatted strings](https://www.iso.org/iso-8601-date-and-time-format.html) ("2018-07-10T15:05:59.000-08:00") or Unix Time formatted in milliseconds (1531263959000) and are converted at ingestion time to the target XDM type. For more on data conversion and other constraints, see [the Batch Ingestion API documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/batch/api-overview.html#types).
+>The Offline Purchase data we will be using in this exercise contains datetime data. Datetime data should be in either [ISO 8061 formatted strings](https://www.iso.org/iso-8601-date-and-time-format.html) ("2018-07-10T15:05:59.000-08:00") or Unix Time formatted in milliseconds (1531263959000) and are converted at ingestion time to the target XDM type. For more on data conversion and other constraints, see [the Batch Ingestion API documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
 
 ### Download, prep, and upload the data to your preferred cloud storage vendor
 
@@ -322,7 +320,7 @@ Look up the profile with value `5625458` in the `loyaltyId` namespace again to s
 
 Adobe partners with multiple ETL vendors to support data ingestion into Experience Platform. Because of the variety of third party vendors, ETL is not covered in this tutorial, although you are welcome to review some of these resources:
 
-* [Developing ETL Integrations for Adobe Experience Platform](https://docs.adobe.com/help/en/experience-platform/etl/home.html)
+* [Developing ETL Integrations for Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Informatica Adobe Experience Platform Connector page on Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Informatica documentation of the Adobe Experience Platform Connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [Unique Audience Experiences Derived from Data:  Unifi and Adobe Experience Platform](https://unifisoftware.com/solutions/adobe-experience-platform/)
@@ -330,7 +328,7 @@ Adobe partners with multiple ETL vendors to support data ingestion into Experien
 
 ## Additional Resources
 
-* [Batch Ingestion documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/batch/overview.html)
+* [Batch Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
 * [Data Ingestion API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/ingest-api.yaml)
 
 Now let's [stream data using the Web SDK](ingest-streaming-data.md)

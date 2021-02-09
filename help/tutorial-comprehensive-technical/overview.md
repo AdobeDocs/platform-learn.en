@@ -54,7 +54,7 @@ After completing this tutorial, you will be able to:
 
 ## About this tutorial
 
-In these lessons, you will implement Adobe Experience Platform and Application Services into a Platform Demo website which supports multiple demo industries. The Platform Demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma Retail**, **Luma News**, **Luma Insurance**, **Luma Car** and several others. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Platform Demo website using the Experience Platform Debugger. This will then generate data that is sent into your own Adobe Experience Platform instance. For an introduction to the Platform Demo website, have a look at the below video.
+In these lessons, you will implement Adobe Experience Platform and Application Services into a Platform Demo website which supports multiple demo industries. The Platform Demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma**, **Citi Signal**, **EXP News**, **MUTUAL365**, **Carvelo** and several others. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Platform Demo website using the Experience Platform Debugger. This will then generate data that is sent into your own Adobe Experience Platform instance. For an introduction to the Platform Demo website, have a look at the below video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35137?quality=12&enable=on)
 
@@ -155,10 +155,11 @@ Go to [Videos](./videos.md).
 
 [10. Data Science Workspace - Churn Prediction Model](./modules/module10/data-science-workspace-churn-prediction-model.md)
 
+**This module is currently being updated and will be released in December 2020**
+
 - **Audience:** Data Engineer, Data Architect, Data Scientist
 - **Prerequisites:** Access to Adobe Experience Platform, Data Science Workspace
-- **Description:** In this module, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Churn Prediction Model.
-- **Time Investment:** 60 minutes
+- **Description:** **This module is currently being updated and will be released in December 2020**
 
 [11. RTCDP - Build a segment and take action](./modules/module11/real-time-cdp-build-a-segment-take-action.md)
 
@@ -186,7 +187,7 @@ Go to [Videos](./videos.md).
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform and Offer Decisioning
 - **Description:** In this module, you'll use the Adobe Experience Platform - Offers/Decisioning application service in a hands-on way to configure Personalized Offers and your own Offer Activity.
-- **Time Investment:** 90 minutes
+- **Time Investment:** 120 minutes
 
 [15. Data Science Workspace - Car Insurance Sales Propensity](./modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
 

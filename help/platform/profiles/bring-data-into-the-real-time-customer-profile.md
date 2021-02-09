@@ -1,24 +1,21 @@
 ---
-title: Bring Data into Real-time Customer Profile in Adobe Experience Platform
+title: Bring Data into Real-time Customer Profile
 description: Real-time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for the Real-time Customer Profile by enabling both the schema and corresponding dataset.
-feature: profile
-topics:
+role: Data Architect, Data Engineer
+feature: Profiles
 kt: 2702
-audience: engineer
-doc-type: video
-activity: use
 thumbnail: 27301.jpg
 ---
 
-# Bring Data into Real-time Customer Profile
+# Bring data into Real-time Customer Profile
 
-Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for Real-time Customer Profile by enabling both the schema and corresponding dataset.
+Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for Real-time Customer Profile by enabling both the schema and corresponding dataset. For detailed product documentation, see [add data to Real-time Customer Profile](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/add-profile-data.html) and [configure a dataset for Profile with API](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27301?quality=12&learn=on)
 
 ## Additional Resources
 
-* [UnderstandingReal-time Customer Profile video](understanding-the-real-time-customer-profile.md)
-* [Overview Diagram ofReal-time Customer Profile video](overview-diagram.md)
+* [Understanding Real-time Customer Profile video](understanding-the-real-time-customer-profile.md)
+* [Overview Diagram of Real-time Customer Profile video](overview-diagram.md)
 * [Create Segments](../segments/create-segments.md)
 * [Real-time Customer Profile documentation](https://www.adobe.com/go/profile-overview-en)

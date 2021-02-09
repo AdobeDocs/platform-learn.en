@@ -41,7 +41,7 @@ You will now ingest data into Adobe Experience Platform and that data will be li
   
 ![Demo](../module2/images/2.png)
   
-* Select the brand **Luma Retail** from the list of available brands. Click **Save**.
+* Select the brand **Luma** from the list of available brands. Click **Save**.
   
 ![Demo](../module2/images/3.png)
   

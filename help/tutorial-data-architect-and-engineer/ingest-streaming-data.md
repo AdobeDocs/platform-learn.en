@@ -1,13 +1,11 @@
 ---
-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Ingest streaming data
+seo-title: Ingest streaming data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Ingest streaming data
 description: In this lesson, you will stream data into Experience Platform using the Web SDK.
-feature: data ingestion
-topics: 
+role: Data Engineer
+feature: Data Ingestion
 kt: 4348
-audience: data engineer
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-ingest-streaming-data.jpg
 ---
 
@@ -432,7 +430,7 @@ To validate that the CRM Id is now being sent by the Web SDK:
 
 ## Additional Resources
 
-* [Streaming Ingestion documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/streaming/overview.html)
+* [Streaming Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
 * [Data Ingestion API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/ingest-api.yaml)
 
 Great job! That was a lot of information about Web SDK and Launch. There is a lot more involved in a full-blown implementation, but those are the basics to help you get started and see the results in Platform.

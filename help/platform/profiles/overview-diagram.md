@@ -1,15 +1,13 @@
 ---
 title: Overview Diagram of Real-time Customer Profile
 description: This video walks you through an overview diagram illustrating the Real-time Customer Profile capability of Adobe Experience Platform.
-feature: profile
-topics:
+role: Data Architect,Data Engineer
+feature: Profiles
 kt: 4943
-doc-type: video
-activity: understanding
 thumbnail: 33600.jpg
 ---
 
-# Overview Diagram of Real-time Customer Profile
+# Overview diagram of Real-time Customer Profile
 
 This video walks you through an overview diagram illustrating the Real-time Customer Profile capability of Adobe Experience Platform.
 
@@ -17,7 +15,7 @@ This video walks you through an overview diagram illustrating the Real-time Cust
 
 ## Additional Resources
 
-* [UnderstandingReal-time Customer Profile video](understanding-the-real-time-customer-profile.md)
+* [Understanding Real-time Customer Profile video](understanding-the-real-time-customer-profile.md)
 * [Bring Data into Real-time Customer Profile video](bring-data-into-the-real-time-customer-profile.md)
 * [Create Segments video](../segments/create-segments.md)
 * [Real-time Customer Profile documentation](https://www.adobe.com/go/profile-overview-en)

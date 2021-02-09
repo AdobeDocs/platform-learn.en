@@ -3,6 +3,9 @@ user-guide-title: Comprehensive Technical Tutorial for Adobe Experience Platform
 breadcrumb-title: Comprehensive Technical Tutorial
 user-guide-description: A hands-on tutorial covering many aspects of Platform, including connections to third-party systems.
 audience: all
+index: no
+hide: yes
+doc-type: tutorial
 ---
 
 # Comprehensive Technical Tutorial for Adobe Experience Platform {#comprehensive-technical-tutorial}
@@ -96,11 +99,6 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module9/summary.md)
 + 10 - Data Science Workspace - Churn Prediction Model {#module10}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module10/data-science-workspace-churn-prediction-model.md)
-  + [10.1 Introduction to Data Science](/help/tutorial-comprehensive-technical/modules/module10/ex1.md)
-  + [10.2 Churn Prediction: Data Preparation](/help/tutorial-comprehensive-technical/modules/module10/ex2.md)
-  + [10.3 Feature Engineering and Model Building](/help/tutorial-comprehensive-technical/modules/module10/ex3.md)
-  + [10.4 Experimentation - Recipe Building](/help/tutorial-comprehensive-technical/modules/module10/ex4.md)
-  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module10/summary.md)
 + 11 - Real-time CDP - Build a segment and take action! {#module11}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module11/real-time-cdp-build-a-segment-take-action.md)
   + [11.1 Build a segment and enable Streaming Segmentation](/help/tutorial-comprehensive-technical/modules/module11/ex1.md)
@@ -128,6 +126,13 @@ audience: all
   + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module13/summary.md)
 + 14 - Offer Decisioning {#module14}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module14/offer-decisioning.md)
+  + [14.1 Offer Decisioning 101](/help/tutorial-comprehensive-technical/modules/module14/ex1.md)
+  + [14.2 Configure your Offers and Offer Activity](/help/tutorial-comprehensive-technical/modules/module14/ex2.md)
+  + [14.3 Prepare your Launch and Web SDK setup for Offer Decisioning](/help/tutorial-comprehensive-technical/modules/module14/ex3.md)
+  + [14.4 Test your Offer Activity using the demo website](/help/tutorial-comprehensive-technical/modules/module14/ex4.md)
+  + [14.5 Test your Offer Activity using the API](/help/tutorial-comprehensive-technical/modules/module14/ex5.md)
+  + [14.6 Test your Offer Activity using Journey Orchestration](/help/tutorial-comprehensive-technical/modules/module14/ex6.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/module14/summary.md)
 + 15 - Data Science Workspace - Car Insurance Sales Propensity {#module15}
   + [Overview](/help/tutorial-comprehensive-technical/modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
   + [15.1 Introduction to MUTUAL365](/help/tutorial-comprehensive-technical/modules/module15/ex1.md)

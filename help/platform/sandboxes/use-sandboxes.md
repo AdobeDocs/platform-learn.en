@@ -1,16 +1,13 @@
 ---
 title: Use Sandboxes
 description: Explore how Experience Platform Sandboxes provide data isolation and environments where they can try out new or existing functionality, work with a 'fail fast' approach and be able to reset and restart the development initiatives.
-feature: sandbox
-topics: development
+role: Data Architect,Data Engineer
+feature: Sandboxes
 kt: 4018
-audience: all
-doc-type: feature video
-activity: use
 thumbnail: 29838.jpg
 ---
 
-# Use Sandboxes
+# Use sandboxes
 
 Explore how Experience Platform sandboxes provide data isolation and environments where they can try out new or existing functionality, work with a "fail fast" approach and be able to reset and restart the development initiatives.
 
@@ -18,5 +15,4 @@ Explore how Experience Platform sandboxes provide data isolation and environment
 
 ## Additional Resources
 
-* [Sandbox overview](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/sandboxes/sandboxes-overview.md)
-* [Sandbox access control user guide](https://www.adobe.io/apis/experienceplatform/home/permissions-and-sandboxes/permissions-and-sandboxes.html#!api-specification/markdown/narrative/technical_overview/access-control/access-control-user-guide.md)
+* [Sandboxes user guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)

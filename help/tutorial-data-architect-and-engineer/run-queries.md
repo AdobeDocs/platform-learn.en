@@ -1,13 +1,11 @@
 ---
-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Run queries
+seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Run queries
 description: In this lesson you will learn how to setup, write and execute queries to validate the data you have ingested.
-feature: query service
-topics: 
+role: Data Architect,Data Engineer
+feature: Queries
 kt: 4348
-audience: data architect,data engineer
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-run-queries.jpg
 ---
 
@@ -106,7 +104,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## Additional Resources
 
-* [Query Service documentation](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)
+* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
 * [Query Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 And now for the final hands-on lesson, [creating segments](build-segments.md)!

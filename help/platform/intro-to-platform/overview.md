@@ -1,12 +1,8 @@
 ---
 title: Overview of Adobe Experience Platform
 description: This video gives a quick overview of what Adobe Experience Platform is and the business challenges it solves.
-feature:
-topics:
+role: Leader,Architect,Developer,Data Architect,Data Engineer,Administrator,Business Practitioner
 kt: 4804
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 32797.jpg
 ---
 
@@ -27,4 +23,4 @@ This video gives a quick overview of what Experience Platform is and the busines
 * [Roles and Project Phases (video)](roles-and-project-phases.md)
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
-* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

@@ -1,13 +1,10 @@
 ---
-title: Conclusion | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Conclusion
+seo-title: Conclusion | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Conclusion
 description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console. 
-feature: 
-topics: 
+role: Data Architect,Data Engineer
 kt: 4348
-audience: data architect, data engineer
-doc-type: tutorial
-activity: implement
 ---
 
 # Conclusion
@@ -44,13 +41,13 @@ I suggest you keep it and use it for further experimentation with Platform. We h
 
 The key resources:
 
-* [Experience Platform Video Tutorials](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html)
-* [Experience Platform Documenation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Experience Platform Video Tutorials](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Experience Platform Documenation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
 * [Experience League Courses](https://experienceleague.adobe.com/#dashboard/learning)
 
 Here is another tutorial which you can review to learn more about connections to third party applications:
 
-* [Comprehensive Technical Tutorial for Adobe Experience Platform](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Comprehensive Technical Tutorial for Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 
 Thanks for your efforts and good luck on your journey with Adobe Experience Platform!
 

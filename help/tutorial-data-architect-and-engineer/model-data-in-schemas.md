@@ -1,13 +1,11 @@
 ---
-title: Model data in schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Model data in schemas
+seo-title: Model data in schemas | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Model data in schemas
 description: In this lesson, you will model Luma's data into schemas. This is one of the longest lessons in the tutorial, so get a glass of water and buckle up!
-feature: schemas
-topics: 
+role: Data Architect
+feature: Schemas
 kt: 4348
-audience: data architect,data engineer
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-model-data-in-schemas.jpg
 ---
 
@@ -59,7 +57,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 In this exercise we will create a Luma Loyalty Schema to ingest loyalty data of customers.
 
-1. In the Platform UI and ensure your sandbox is selected.
+1. Go to the Platform UI and ensure your sandbox is selected.
 1. Click **[!UICONTROL Schemas]** in the left navigation
 1. Click the **[!UICONTROL Create Schema]** button on the top right
 1. From the dropdown menu, select **[!UICONTROL XDM Individual Profile]**
@@ -78,8 +76,8 @@ To add mixins:
     ![Add Mixin](assets/schemas-loyalty-addMixin.png)
 
 1. In the **[!UICONTROL Mixins]** modal, select following mixins
-   1. **[!UICONTROL Profile Personal Details]**
-   1. **[!UICONTROL Profile Person Details]**
+   1. **[!UICONTROL Demographic Details]**
+   1. **[!UICONTROL Personal Contact Details]**
 1. Note that you can preview the fields in the mixin by clicking the icon on the right side of the row. 
 1. Click **[!UICONTROL Add mixin]** to add the mixins to the schema
     ![Add out-of-the-box mixins to loyalty schema](assets/schemas-loyalty-saveOotbMixins.png)
@@ -101,8 +99,8 @@ Next we need to add fields that are specific to Luma's Loyalty system and which 
 1.  Select **[!UICONTROL Create new mixin]** radio button
 1.  Enter the Display name as `Luma Loyalty Mixin` and click the **[!UICONTROL Add mixin]** button
     ![Add Field To Mixin](assets/schemas-loyalty-addCustomMixin.png)
-1.  In the **Mixins** section of the schema editor, click on the name of the new mixin so that the **[!UICONTROL Add field]** buttons appear on in the **[!UICONTROL Structure]** section
-1.  In **[!UICONTROL Structure]** section, click **[!UICONTROL Add field]** at top level in structure of Schema. It will create an object with your tenant id (prefixed with an underscore) and a field _'New field'_.
+1.  In the **Mixins** section of the schema editor, click on the name of the new mixin so that the **[!UICONTROL +]** buttons appear on in the **[!UICONTROL Structure]** section
+1.  In **[!UICONTROL Structure]** section, click **[!UICONTROL +]** at top level in structure of Schema. It will create an object with your tenant id (prefixed with an underscore) and a field _'New field'_.
 
 1. In **[!UICONTROL Field properties]** section, enter the following
    1. Field Name: `loyalty`
@@ -112,7 +110,7 @@ Next we need to add fields that are specific to Luma's Loyalty system and which 
 
     ![Add Field To Mixin](assets/schemas-loyalty-customMixin.png)
 
-1.  Select the newly created `loyalty` object and click **[!UICONTROL Add Field]** button next to it to add a field within the object
+1.  Select the newly created `loyalty` object and click **[!UICONTROL +]** button next to it to add a field within the object
 1.  Create a field with following values
        1. Field Name: `memberSince`
        1. Display Name: `Member Since`
@@ -127,7 +125,7 @@ Next we need to add fields that are specific to Luma's Loyalty system and which 
     1. Level
        1. Field name: `level`
        1. Display name: `Level`
-       1. Type : **[!UICONTROL String]**
+       1. Type: **[!UICONTROL String]**
        1. Enum: Checked, with the following enumeration values:
 
           | Value              |  Label    |  
@@ -145,20 +143,20 @@ Next we need to add fields that are specific to Luma's Loyalty system and which 
 Now we will create another mixin to contain the loyaltyId field, as well as other identifiers which we will use in the other schemas. Since you are now familiar with how to create mixins, create one named `Luma Identity Profile Mixin` with the following fields:
 
    1. System Identifier
-      1. Field name: systemIdentifier
-      1. Display name: System Identifier
-      1. Type: Object
+      1. Field name: `systemIdentifier`
+      1. Display name: `System Identifier`
+      1. Type: **[!UICONTROL Object]**
    1. Loyalty Id (put in the systemIdentifier object)
-      1. Field name: loyaltyId
-      1. Display name: Loyalty Id
-      1. Type: String
+      1. Field name: `loyaltyId`
+      1. Display name: `Loyalty Id`
+      1. Type: **[!UICONTROL String]**
    1. CRM Id (put in the systemIdentifier object)
-      1. Field Name: crmId
-      1. Display Name: CRM Id
-      1. Type: String
+      1. Field Name: `crmId`
+      1. Display Name: `CRM Id`
+      1. Type: **[!UICONTROL String]**
 
 Your new mixin should look like this. Click the **[!UICONTROL Save]** button to save your schema, but leave the schema open for the next exercise. 
-    ![Loyalty Mixin Complete](assets/schemas-loyalty-identityMixinComplete.png) 
+    ![Loyalty Mixin Complete](assets/schemas-loyalty-identityMixinComplete.png)
 
 
 ## Create a data type
@@ -184,7 +182,7 @@ Now we will create a schema using the API.
 >
 > 1. Use the [!UICONTROL XDM Individual Profile] class
 > 1. Name it `Luma CRM Schema`
-> 1. Use the following mixins: Profile Person Details, Profile Personal Details, Profile Preferences Details and Luma Identity Profile Mixin
+> 1. Use the following mixins: Demographic Details, Personal Contact Details and Luma Identity Profile Mixin
 
 First we will create the empty schema:
 
@@ -235,7 +233,7 @@ Now it's time to add the mixins to the schema:
 
 1. In [!DNL Postman], open the call **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema]**
 1. In the **Params** tab, paste the `meta:altId` value from the previous response as the `$id`
-1. Open the Body tab and paste the following code and click **Send** to make the API call. This will add the three standard mixins to your `Luma CRM Schema`:
+1. Open the Body tab and paste the following code and click **Send** to make the API call. This will add the standard mixins to your `Luma CRM Schema`:
 
     ```json
     [{
@@ -250,13 +248,6 @@ Now it's time to add the mixins to the schema:
         "path": "/allOf/-",
         "value": {
           "$ref": "https://ns.adobe.com/xdm/context/profile-person-details"
-        }
-      },
-      {
-        "op": "add",
-        "path": "/allOf/-",
-        "value": {
-          "$ref": "https://ns.adobe.com/xdm/context/profile-preferences-details"
         }
       }
     ]
@@ -300,7 +291,7 @@ Verify that the mixin has been added to the schema by checking the UI or, for bo
 Now let's create a schema based on the **[!UICONTROL XDM ExperienceEvent]** class for Luma's offline purchase data. Since you are now getting familiar with the schema editor UI, I will reduce the number of screenshots in the instructions:
 
 1. Create a schema with the **[!UICONTROL XDM ExperienceEvent]** class named `Luma Offline Purchase Events Schema`
-1. Save it and review the difference in base structure from the XDM Profile class schemas. Notice _id and timestamp are required fields in experience event class.
+1. Save it and review the difference in base structure from the XDM Profile class schemas. Notice _id and timestamp are required fields when using the XDM ExperienceEvent class.
 
     ![Experience Event Base Structure](assets/schemas-offlinePurchase-experienceEventbase.png)
 
@@ -309,7 +300,7 @@ Next we will add a standard mixin and a custom mixin.
 
 ### Add standard mixin
 
-**[!UICONTROL Experience event commerce details]** is a standard mixin for capturing common order details. Go ahead and add it to your schema. Spend a few minutes exploring the objects inside.
+**[!UICONTROL Commerce Details]** is a standard mixin for capturing common order details. Go ahead and add it to your schema. Spend a few minutes exploring the objects inside.
 
 ### Add custom mixin
 
@@ -319,11 +310,11 @@ Now let's add the identities to our new schema:
 1. Search for `Luma Identity Profile Mixin`. Note that it is not available! Remember that mixins are specific to a class, and this schema uses the XDM ExperienceEvent class instead of the XDM Individual Profile class. We will add a new mixin for the XDM ExperienceEvent class that contains the same exact identity fields thanks to our data type
 1. Select the **[!UICONTROL Create new mixin]** radio button
 1. Enter the **[!UICONTROL Display name]** as `Luma Identity ExperienceEvent Mixin` and click the **[!UICONTROL Add mixin]** button
-1.  In the **Mixins** section of the schema editor, click on the name of the new mixin so that the **[!UICONTROL Add field]** buttons appear on in the **[!UICONTROL Structure]** section
-1. In **[!UICONTROL Structure]** section, click **[!UICONTROL Add field]** at top level of the schema
+1.  Make sure the **[!UICONTROL +]** buttons appear on in the **[!UICONTROL Structure]** section so you can add new fields
+1. In **[!UICONTROL Structure]** section, click **[!UICONTROL +]** at top level of the schema
 1. As the **[!UICONTROL Field Name]**, enter `systemIdentifier`
 1. As the **[!UICONTROL Display Name]**, enter `System Identifier` 
-1. As the **[!UICONTROL Type]**, select **System Identifier** 
+1. As the **[!UICONTROL Type]**, select **System Identifier** which is the custom data type you created earlier
 1. Click the **[!UICONTROL Apply]** button 
 1. Click the **[!UICONTROL Save]** button to save your schema
 
@@ -340,16 +331,16 @@ Now we are going to add one more schema for Luma's website data. By this point y
 | Schema Name    | Luma Web Events Schema   | 
 | Class  | XDM ExperienceEvent   |  
 | Mixin          | AEP Web SDK ExperienceEvent Mixin  | 
-| Mixin          | Consumer ExperienceEvent mixin       | 
+| Mixin          | Consumer Experience Event mixin       | 
 
-Click on the **[!UICONTROL Consumer ExperienceEvent mixin]** in the **[!UICONTROL Composition]** section of the schema editor. Note that this mixin contains the commerce and productListItems objects that were also in the **[!UICONTROL Experience event commerce details]**. Indeed **[!UICONTROL Consumer ExperienceEvent mixin]** is a combination of several other standard mixins that are also available separately.
+Click on the **[!UICONTROL Consumer Experience Event mixin]** in the **[!UICONTROL Composition]** section of the schema editor. Note that this mixin contains the commerce and productListItems objects that were also in the **[!UICONTROL Commerce Details]**. Indeed **[!UICONTROL Consumer Experience Event mixin]** is a combination of several other standard mixins that are also available separately.
 
 Notice that we didn't add the `Luma Identity ExperienceEvent Mixin` to this schema. This is because the Web SDK has a different way of collecting identities. If you select the **[!UICONTROL XDM ExperienceEvent]** class in the **[!UICONTROL Composition]** section of the schema editor, you will notice that one of the fields it adds by default is called **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] is used by various Adobe applications to link to Platform. You will see how identities are sent to Platform via identityMap in the streaming ingestion lesson.
 
 
 ## Create Product Catalog Schema
 
-By using the  [!UICONTROL Experience event commerce details] and [!UICONTROL Consumer ExperienceEvent mixins], Luma reports details of product-related events via the standard productListItems data type. But they also have additional product detail fields that they would like to send to Platform. Instead of capturing all of these fields in their point-of-sale and e-commerce systems and ingesting them into Platform using the schemas you just created, Luma would prefer to simply ingest these fields directly from their product catalog system. A "relationship schema" in Platform allows you to define a relationship between two schemas for the purposes of classification. Luma will use a relationship schema to classify their product details. We will begin the process now and complete it at the end of the next lesson.
+By using the  [!UICONTROL Experience event commerce details] and [!UICONTROL Consumer Experience Event mixins], Luma reports details of product-related events via the standard productListItems data type. But they also have additional product detail fields that they would like to send to Platform. Instead of capturing all of these fields in their point-of-sale and e-commerce systems and ingesting them into Platform using the schemas you just created, Luma would prefer to simply ingest these fields directly from their product catalog system. A "relationship schema" in Platform allows you to define a relationship between two schemas for the purposes of classification. Luma will use a relationship schema to classify their product details. We will begin the process now and complete it at the end of the next lesson.
 
 >[!NOTE]
 >
@@ -364,7 +355,7 @@ First we need to create a schema for Luma's product catalog using a custom class
 1. Leave the **[!UICONTROL Behavior]** as **[!UICONTROL Record]**
 1. Click the **[!UICONTROL Assign Class]** button
   ![Create new Class](assets/schemas-productClass.png)
-1. Name the schema `Luma Product Catalog Schema`
+1. Name the schema `Luma Product Catalog Schema` (be sure to update the correct field and not update the class name)
 1. Add a new mixin called `Luma Product Catalog Mixin` with the following fields:
    1. productName: Product Name: String
    1. productCategory: Product Category: String
@@ -374,15 +365,15 @@ First we need to create a schema for Luma's product catalog using a custom class
    1. productPrice: Product Price: Double
 1. Save the schema
   
-Your new schema should look like this:
-  ![Product Schema](assets/schemas-productSchema.png)
+Your new schema should look like this. Note how the `productSku` field is listed in the [!UICONTROL Required fields] section:
+  ![Product Schema](assets/schemas-productSchema.png) 
 
 The next step is to define the relationship between the two ExperienceEvent schemas and the `Luma Product Catalog Schema`, however there are a few additional steps that we need to take in the next lesson before we can do that.
 
 
 ## Additional Resources
 
-* [Experience Data Model (XDM) System documentation](https://docs.adobe.com/content/help/en/experience-platform/xdm/home.html)
+* [Experience Data Model (XDM) System documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
 * [Schema Registry API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/schema-registry.yaml)
 
 

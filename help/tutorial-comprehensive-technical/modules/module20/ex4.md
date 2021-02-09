@@ -25,11 +25,11 @@ You'll be redirected to the **Journeys**  view in Journey Orchestration.
 
 ![ACOP](./images/acoptriglp.png)
 
-First, make sure you're using the correct sandbox. The sandbox to use is called **--aepSandboxId--**. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement**.
 
 ![ACOP](./images/sb.png)
 
-You'll then be in the **Home** view of your sandbox --aepSandboxId--.
+You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/home.png)
 
@@ -65,11 +65,11 @@ You'll see a **Fields** window popup, in which you need to select the fields tha
 
 ![ACOP](./images/eventfields.png)
 
-Scroll down to the object **--aepTenantId--.identification**, please make sure to select all fields.
+Scroll down to the object `--aepTenantId--.identification`, please make sure to select all fields.
 
 ![ACOP](./images/eventpayloadac.png)
 
-Scroll down to the object **--aepTenantId--.productData**, please make sure to select all fields. Click **Ok**.
+Scroll down to the object `--aepTenantId--.productData`, please make sure to select all fields. Click **Ok**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
@@ -159,7 +159,7 @@ Click on the name of the event you created, which is named **ldapStackchatEvent*
 
 ![ACOP](./images/eventnode.png)
 
-Navigate to **--aepTenantId--.identification.emailId** and select it. Click **OK** to save your configuration.
+Navigate to `--aepTenantId--.identification.emailId` and select it. Click **OK** to save your configuration.
 
 ![ACOP](./images/srcemail.png)
 
@@ -203,7 +203,7 @@ Click on the **Edit** icon.
 
 ![ACOP](./images/msgfn.png)
 
-Navigate to **--aepTenantId--.profile.person.name.firstName** and select it. Click **OK** to save your configuration.
+Navigate to `--aepTenantId--.profile.person.name.firstName` and select it. Click **OK** to save your configuration.
 
 ![ACOP](./images/srcfn.png)
 
@@ -217,7 +217,7 @@ Click on the name of the event you created, which is named **ldapStackchatEvent*
 
 ![ACOP](./images/eventnode.png)
 
-Navigate to **--aepTenantId--.productData.productUrl** and select it.
+Navigate to `--aepTenantId--.productData.productUrl` and select it.
 
 ![ACOP](./images/srcln.png)
 
@@ -233,7 +233,7 @@ Click on the name of the event you created, which is named **ldapStackchatEvent*
 
 ![ACOP](./images/eventnode.png)
 
-Navigate to **--aepTenantId--.productData.productName** and select it. Click **OK** to save your configuration.
+Navigate to `--aepTenantId--.productData.productName` and select it. Click **OK** to save your configuration.
 
 ![ACOP](./images/srcln1.png)
 
@@ -247,7 +247,7 @@ Click on the name of the event you created, which is named **ldapStackchatEvent*
 
 ![ACOP](./images/eventnode.png)
 
-Navigate to **--aepTenantId--.productData.productPageUrl** and select it. Click **OK** to save your configuration.
+Navigate to `--aepTenantId--.productData.productPageUrl` and select it. Click **OK** to save your configuration.
 
 ![ACOP](./images/srcln2.png)
 

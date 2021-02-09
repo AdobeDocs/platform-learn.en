@@ -428,12 +428,12 @@ Map the Output to the Schema attributes as per below:
 
 | Field                                    | Element Name                                                 |
 | :---                                      | :---                                                   |
-| m_credit_score | --aepTenantId--.etl_profile_attributes.creditScore                   |
-| m_income   | --aepTenantId--.etl_profile_attributes.income   |
-| fav_designer     | --aepTenantId--.etl_customer_preferences.favDesigner |
-| fav_shop  | --aepTenantId--.etl_customer_preferences.favBrand    |
-| fav_color           | --aepTenantId--.etl_customer_preferences.favColor             |
-| m_email            | --aepTenantId--.identification.emailId                                      |
+| m_credit_score | ``--aepTenantId--``.etl_profile_attributes.creditScore                   |
+| m_income   | ``--aepTenantId--``.etl_profile_attributes.income   |
+| fav_designer     | ``--aepTenantId--``.etl_customer_preferences.favDesigner |
+| fav_shop  | ``--aepTenantId--``.etl_customer_preferences.favBrand    |
+| fav_color           | ``--aepTenantId--``.etl_customer_preferences.favColor             |
+| m_email            | ``--aepTenantId--``.identification.emailId                                      |
 
 Your Field Mapping should look like this (don't forget about the mapping for m_email).
 

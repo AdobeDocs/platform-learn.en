@@ -13,18 +13,28 @@ activity: develop
 
 In this exercise, you'll create four **Personalized Offers**. Here are the details to take into account when creating those offers:
 
-|Name | Date Range | Image Link | Priority | Eligibility  |  Cap/User | Language| 
-|-----|------------|------------|:--------:|--------------|:---------:|:-------:|
-|**ldap** - Nadia Elements Shell | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg | 25 | all - Female Profiles  | 10 | English | 
-|**ldap** - Radiant Tee | now - 1 month later  | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/58ae7e91a9bac17cdf92a178d6e25186_1.jpg | 15 | all - Female Profiles  | 10 | English |
-|**ldap** - Zeppelin Yoga Pant | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/108da1111c1a0ce5dbf80fdf9c84508e_1.jpg | 25 | all - Male Profiles | 10 | English |
-|**ldap** - Proteus Fitness Jackshirt | now - 1 month later | https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/7bb37821cae9587a969c713a34f92490_1.jpg | 15 | all - Male Profiles | 10 | English |
+|Name | Date Range | Image Link for Email | Image Link for Web | Text | Priority | Eligibility  | Language| 
+|-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
+|**ldap** - Nadia Elements Shell | today - 1 month later | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt |10% discount on Nadia Elements Shell| 25 | all - Female Customers   | English (United States) | 
+|**ldap** - Radiant Tee | today - 1 month later  | https://bit.ly/2HfA17v |https://bit.ly/3pEIdzn|5% discount on Radiant Tee| 15 | all - Female Customers   | English (United States) |
+|**ldap** - Zeppelin Yoga Pant | today - 1 month later | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd|10% discount on Zeppelin Yoga Pant| 25 | all - Male Customers | English (United States) |
+|**ldap** - Proteus Fitness Jackshirt | today - 1 month later | https://bit.ly/330a43n |https://bit.ly/36USaQW| 5% discount on Proteus Fitness Jackshirt| 15 | all - Male Customers  | English (United States) |
  
 >[!NOTE]
 >
 >Just like in previous modules, whenever you see **ldap**, you need to replace that by your own specific ldap. 
 
-Go to **Browse**.
+Go to [https://platform.adobe.com](https://platform.adobe.com).
+
+Before you continue, you need to select a **sandbox**. The sandbox to select is named `--aepSandboxId--`. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement**.
+
+![Data Ingestion](./images/sb1.png)
+
+After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox. 
+
+![Data Ingestion](./images/sb2.png)
+
+In the left menu, go to **Offers** and make sure you're in **Browse**.
 
 ![Decision Rule](./images/offers1.png)
 
@@ -69,9 +79,9 @@ You'll then see this popup.
 
 Fill out these fields:
 
-- Name: use **ldap** - Nadia Elements Shell
-- Public Location: use the Image Link from the above table, in this case: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg
-- Language: English
+- Name: use **ldap** - Nadia Elements Shell Web Image
+- Public Location: use the Image Link from the above table, in this case: `https://bit.ly/2INwXjt`
+- Language: English (United States)
 
 You should now see this:
 
@@ -106,9 +116,9 @@ You'll then see this popup.
 
 Fill out these fields:
 
-- Name: use **ldap** - Nadia Elements Shell
-- Public Location: use the Image Link from the above table, in this case: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg
-- Language: English
+- Name: use **ldap** - Nadia Elements Shell Email Image
+- Public Location: use the Image Link from the above table, in this case: `https://bit.ly/3nPiwdZ`
+- Language: English (United States)
 
 You should now see this:
 
@@ -118,9 +128,46 @@ Click **Save**.
 
 ![Decision Rule](./images/save.png)
 
+Next, click **+ Add representation**.
+
+![Decision Rule](./images/addrep.png)
+
 You'll then see this:
 
-![Decision Rule](./images/addcontentrep3.png)
+![Decision Rule](./images/addcontentrep30.png)
+
+For **Representation 3**, select:
+
+- Channel: Non-digital
+- Placement: Non-digital - Text
+
+Next, you need to add content. In this case that means adding the text to be used as a call to action.
+
+Click **Add Content**.
+
+![Decision Rule](./images/addcontentrep31.png)
+
+You'll then see this popup.
+
+![Decision Rule](./images/addcontent3text.png)
+
+Select **Custom text** and fill out these fields:
+
+- Name: use **ldap** - Nadia Elements Shell Non-Digital Text
+- Content: look at the Text field from the above table and enter that field, in this case: `10% discount on Nadia Elements Shell`
+- Language: English (United States)
+
+You'll then see this:
+
+![Decision Rule](./images/addcontentrep3text.png)
+
+Click **Save**.
+
+![Decision Rule](./images/save.png)
+
+You now have this:
+
+![Decision Rule](./images/addcontentrep3textdone.png)
 
 Click **Next**.
 
@@ -130,11 +177,11 @@ You'll then see this:
 
 ![Decision Rule](./images/constraints.png)
 
-Select **Segment of visitors** and click the **+** icon for the Rule **all - Female Customers**.
+Select **Decision Rule** and click the **+** icon for the Rule **all - Female Customers**.
 
 ![Decision Rule](./images/constraints1.png)
 
- You'll then see this. Fill out the **Priority** and the **Cap/User** as indicated in the above table.
+ You'll then see this. Fill out the **Priority** as indicated in the above table.
 
 ![Decision Rule](./images/constraints2.png)
 
@@ -156,7 +203,7 @@ Finally, click **Save and approve**.
 
 You'll then see your newly created Personalized Offer become available in the Offers Overview:
 
-![Decision Rule](./images/offeroverview.png)  
+![Decision Rule](./images/offeroverview1.png)
 
 You should now repeat the above steps to create the three other Personalized Offers for the products Radiant Tee, Zeppelin Yoga Pant and Proteus Fitness Jackshirt.
 
@@ -184,7 +231,7 @@ You'll then see this:
 
 ![Decision Rule](./images/foffers3.png)
 
-Provide a name for your fallback offer: `ldap - Fallback Offer`, where `ldap` is your LDAP id, e.g. `vangeluw`.
+Provide a name for your fallback offer: `ldap - Luma Fallback Offer`, where `ldap` is your LDAP id, e.g. `vangeluw`.
 
 ![Decision Rule](./images/foffers4.png)
 
@@ -211,9 +258,9 @@ You'll then see this popup.
 
 Fill out these fields:
 
-- Name: use **ldap** - Set of Sprite Yoga Straps
-- Public Location: use this Image Link: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/747f7399476859141d760fa122aca600_1.jpg
-- Language: English
+- Name: use **ldap** - Set of Sprite Yoga Straps Web Image
+- Public Location: use this Image Link: `https://bit.ly/3nBOt9h`
+- Language: English (United States)
 
 You should now see this:
 
@@ -244,13 +291,46 @@ You'll then see this popup.
 
 Fill out these fields:
 
-- Name: use **ldap** - Set of Sprite Yoga Straps
-- Public Location: use this Image Link: https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/747f7399476859141d760fa122aca600_1.jpg
-- Language: English
+- Name: use **ldap** - Set of Sprite Yoga Straps Email Image
+- Public Location: use this Image Link: `https://bit.ly/3nF4qvE`
+- Language: English (United States)
 
 You should now see this:
 
 ![Decision Rule](./images/faddcontent3.png)
+
+Click **Save**.
+
+![Decision Rule](./images/save.png)
+
+Next, click **+ Add representation**.
+
+![Decision Rule](./images/addrep.png)
+
+For **Representation 3**, select:
+
+- Channel: Non-digital
+- Placement: Non-digital - Text
+
+Next, you need to add content. In this case that means adding the Image Link.
+
+Click **Add Content**.
+
+![Decision Rule](./images/addcontentrep21text.png)
+
+You'll then see this popup.
+
+![Decision Rule](./images/addcontent2text.png)
+
+Select **Custom text** and fill out these fields:
+
+- Name: use **ldap** - Set of Sprite Yoga Straps Non-Digital Text
+- Content: look at the Text field from the above table and enter that field, in this case: `Discover our Sprite Yoga Straps`
+- Language: English (United States)
+
+You should now see this:
+
+![Decision Rule](./images/faddcontent3text.png)
 
 Click **Save**.
 
@@ -288,7 +368,7 @@ Go to **Collections**.
 
 ![Decision Rule](./images/collections.png)
 
-Click **+Create Collection**.
+Click **+ Create Collection**.
 
 ![Decision Rule](./images/createcollection.png)
 
@@ -298,7 +378,7 @@ You'l then see this popup:
 
 Configure your Collection like this:
 
-- Collection name: use **ldap** - Luma Retail Collection
+- Collection name: use **ldap** - Luma Collection
 - Select **Create static collection**.
 
 ![Decision Rule](./images/createcollectionpopup1.png)
@@ -337,31 +417,47 @@ You'll then see this:
 
 Fill out the fields like this:
 
-- Name: **ldap** - Luma Retail Offer Activity
+- Name: **ldap** - Luma Offer Activity
 - Start date and time: today
 - End date and time: today + 1 month
 
-![Decision Rule](./images/activity2.png) 
+![Decision Rule](./images/activity2.png)
 
 Click **Next**.
 
 ![Decision Rule](./images/next.png)
 
-In the next screen, you need to add Placements to the canvas. Select the Placements **Web - Image** and **Email - Image** by clicking the **+** icon on the Placement.
+In the next screen, you need to add Placements to the canvas. Select the Placements **Web - Image**, **Email - Image** and **Non-digital - Text** by clicking the **+** icon on the Placement.
 
 ![Decision Rule](./images/addplacements.png)
 
 You'll then see this:
 
-![Decision Rule](./images/activity3.png) 
+![Decision Rule](./images/activity3.png)
+
+In the **Decision for placement Non-digital - Text**, click **Add collection**.
+
+![Decision Rule](./images/activity4text.png)
+
+Select your collection **ldap** - Luma Collection.
+
+![Decision Rule](./images/activity5text.png)
+
+Click **Add**.
+
+![Decision Rule](./images/add.png)
+
+You'll then see this:
+
+![Decision Rule](./images/activity6text.png)
 
 In the **Decision for placement Web - Image**, click **Add collection**.
 
 ![Decision Rule](./images/activity4.png) 
 
-Select your collection **ldap** - Luma Retail Collection.
+Select your collection **ldap** - Luma Collection.
 
-![Decision Rule](./images/activity5.png) 
+![Decision Rule](./images/activity5.png)
 
 Click **Add**.
 
@@ -375,9 +471,9 @@ Next, in the **Decision for placement Email - Image**, click **Add collection**.
 
 ![Decision Rule](./images/activity7.png) 
 
-Select your collection **ldap** - Luma Retail Collection.
+Select your collection **ldap** - Luma Collection.
 
-![Decision Rule](./images/activity8.png) 
+![Decision Rule](./images/activity8.png)
 
 Click **Add**.
 
@@ -417,7 +513,7 @@ And finally, you'll now see your Offer Activity in the overview:
 
 You've now successfully configured your Offer Activity. Your Offer Activity is now live, and can be used to deliver optimized and personalized offers to your customers, in real-time.
 
-Next Step: [14.3 Test your Offer Activity](./ex3.md)
+Next Step: [14.3 Prepare your Launch and Web SDK setup for Offer Decisioning](./ex3.md)
 
 [Go Back to Module 14](./offer-decisioning.md)
 

@@ -1,13 +1,11 @@
 ---
-title: Create datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+title: Create datasets
+seo-title: Create datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Create datasets
 description: In this lesson, you will create datasets so that you can ingest data into them later on.
-feature: datasets
-topics: 
+role: Data Architect,Data Engineer
+feature: Data Management
 kt: 4348
-audience: data architect
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-create-datasets.jpg
 ---
 
@@ -123,7 +121,7 @@ You can go back to the **[!UICONTROL Datasets]** screen in the Platform user int
 
 ## Additional Resources
 
-* [Datasets documentation](https://docs.adobe.com/content/help/en/experience-platform/catalog/datasets/overview.html)
-* [Datasets API (part of Catalog Service) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/Datasets)
+* [Datasets documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html)
+* [Datasets API (part of Catalog Service) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/catalog.yaml)
 
 Now that all of our schemas, identities, and datasets are in place, we can [enable them for Real-time Customer Profile](enable-profiles.md).

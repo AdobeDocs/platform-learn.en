@@ -49,7 +49,7 @@ You should interpret the below fields like this:
 
 For this Edge Configuration...
 
-- all data that is collected will be stored in the --aepSandboxId-- sandbox in Adobe Experience Platform
+- all data that is collected will be stored in the `--aepSandboxId--`sandbox in Adobe Experience Platform
 - when data is ingested into Adobe Experience Platform, it is forwarded by Edge to the selected **Streaming Inlet**
 - all Experience Event data is collected by default into the dataset **AEP Demo - Website Interactions**
 - all Profile data will be collected by default into the dataset **AEP Demo - Website Registrations** (this feature currently isn't supported yet by Web SDK, and will be made available at a later stage)

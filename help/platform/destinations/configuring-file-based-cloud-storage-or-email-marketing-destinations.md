@@ -1,19 +1,19 @@
 ---
-title: Configuring File-based Cloud Storage or Email Marketing Destinations
-description: Get tips during a walkthrough of the configuration of a file-based destination in Adobe's Real-time CDP. This applies to Cloud Storage Destinations (E.g. S3 or SFTP) and also Email Marketing Destinations.
-feature: destinations
-topics: 
-audience: marketer
-activity: setup
-doc-type: feature video
-team: Technical Marketing
-thumbnail: 328175.jpg
+title: Configuring file-based cloud storage or email marketing destinations
+description: Get tips during a walkthrough of the configuration of a file-based destination in Adobe's Real-time CDP. This applies to cloud storage destinations (E.g. S3 or SFTP) and also email marketing destinations.
+role: Business Practitioner
+feature: Destinations
 kt: 6624
-
+thumbnail: 328175.jpg
 ---
 
-# Configuring File-based [!UICONTROL Cloud Storage] or [!UICONTROL Email Marketing] Destinations
+# Configuring file-based [!UICONTROL cloud storage] or [!UICONTROL email marketing] destinations
 
-Get tips during a walkthrough of the configuration of a file-based destination in Adobe's Real-time CDP. This applies to [!UICONTROL Cloud Storage] Destinations (E.g. S3 or SFTP) and also [!UICONTROL Email Marketing] Destinations.
+Get tips during a walkthrough of the configuration of a file-based destination in Adobe's Real-time Customer Data Platform (CDP). This applies to [!UICONTROL cloud storage] destinations (E.g. S3 or SFTP) and also [!UICONTROL email marketing] destinations. For more detailed product documentation, see [connect to email marketing destinations and activate data](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/email-marketing-api.html)
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?quality=12&learn=on)
+
+## Additional Resources
+
+* [Understanding Destinations video](/help/platform/destinations/understanding-destinations.md)
+* [Create Destinations and Activate Data video](/help/platform/destinations/create-destinations-and-activate-data.md)
