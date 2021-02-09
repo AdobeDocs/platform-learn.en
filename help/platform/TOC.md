@@ -63,6 +63,7 @@ doc-type: video
   + [Destinations overview](/help/platform/destinations/understanding-destinations.md)
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
+  + [Configure the Azure Blob Destination](destinations/configure-the-azure-blob-destination.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
@@ -115,7 +116,7 @@ doc-type: video
     + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
     + [End-to-end demo](/help/platform/rtcdp/demo.md)
     + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-    + [Integrate with IAB Transparency and Consent Framework 2.0 (Video)](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
+    + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
     + [Enforce Data Usage Policies](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
 + Intelligent Services {#intelligent-services}
   + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
