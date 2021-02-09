@@ -1,6 +1,7 @@
 ---
 title: Activate Data to non-Adobe Applications
 description: Learn how Adobe’s Real-Time CDP helps you not only create true personalization strategies with your audiences but also how it folds into your existing eco-system and non-Adobe applications from Microsoft, Google, and Facebook.
+solution: Experience Platform, Real-time Customer Data Platform
 role: Business Practitioner
 feature: Destinations
 kt: 7035

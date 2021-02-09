@@ -1,6 +1,7 @@
 ---
 title: Configuring file-based cloud storage or email marketing destinations
 description: Get tips during a walkthrough of the configuration of a file-based destination in Adobe's Real-time CDP. This applies to cloud storage destinations (E.g. S3 or SFTP) and also email marketing destinations.
+solution: Experience Platform, Real-time Customer Data Platform
 role: Business Practitioner
 feature: Destinations
 kt: 6624

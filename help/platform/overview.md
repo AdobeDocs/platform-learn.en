@@ -1,6 +1,7 @@
 ---
 title: Adobe Experience Platform Tutorials
 description: Learn about Adobe Experience Platform
+doc-type: overview-page
 ---
 
 # Adobe Experience Platform Tutorials
