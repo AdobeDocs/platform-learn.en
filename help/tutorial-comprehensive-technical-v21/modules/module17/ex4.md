@@ -32,11 +32,15 @@ Click your tenant specific object, which is similar to `--aepTenantIdSchema--`.
 
 ![demo](./images/segments4.png)
 
-Search for **sentiment**.
+Go to **individualScoring**.
 
 ![demo](./images/segments5.png)
 
-Drag and drop **sentiment** onto the canvas. Enter the value **Negative**.
+Select **sentiment** and drag and drop it on the canvas.
+
+![demo](./images/segments6.png)
+
+Enter the values **0** and **Negative**.
 
 ![demo](./images/segments7.png)
 
@@ -331,11 +335,13 @@ Copy the below payload.
     "xdmEntity": {
       "--aepTenantId--": {
         "identification": {
-          "crmId": "@{triggerOutputs()?['body/contactid']}",
-          "emailId": "@{triggerOutputs()?['body/emailaddress1']}"
+          "core": {
+            "email": "@{triggerOutputs()?['body/emailaddress1']}",
+            "d365": "@{triggerOutputs()?['body/contactid']}"
+          }
         },
-        "sentiment": {
-          "sentiment": "@{triggerOutputs()?['body/_new_sentiment_label']}"
+        "individualScoring": {
+          "sentiment": "@{triggerOutputs()?['body/new_sentiment']}"
         }
       },
       "person": {
