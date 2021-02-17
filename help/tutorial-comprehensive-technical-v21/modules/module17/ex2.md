@@ -323,14 +323,14 @@ For each of the required mappings, click the **Add new mapping** button.
 
 | Source Field | Target Field|
 |--- |--- |
-| contactid |--aepTenantId--.identification.core.d365|
-| emailaddress1 |--aepTenantId--.identification.core.email|
+| contactid |`--aepTenantId--`.identification.core.d365|
+| emailaddress1 |`--aepTenantId--`.identification.core.email|
 | emailaddress1 |personalEmail.address|
 | firstname |person.name.firstName|
 | lastname |person.name.lastName|
 | birthdate |person.birthDate|
 | mobilephone |mobilePhone.number|
-| new_sentiment |--aepTenantId--.individualScoring.sentiment|
+| new_sentiment |`--aepTenantId--`.individualScoring.sentiment|
 
 Your final mapping should look like:
 
