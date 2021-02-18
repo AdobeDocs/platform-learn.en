@@ -104,6 +104,7 @@ doc-type: video
 + Sources {#sources}  
   + [Sources overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
+  + [Ingest data from Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
   + [Ingest data from cloud storage](/help/platform/sources/ingest-data-from-cloud-storage.md)
   + [Ingest data from CRM](/help/platform/sources/ingest-data-from-crm.md)
   + [Ingest data from databases](/help/platform/sources/ingest-data-from-databases.md)
