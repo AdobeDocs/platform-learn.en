@@ -1,6 +1,6 @@
 ---
 title: Monitoring dashboard
-description: Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Monitoring Dashboard. The monitoring dashboard provides you with a visual representation of the journey of a data flow.
+description: Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Monitoring Dashboard. This monitoring dashboard provides a top-down view of source data processing through data lake to Profile and Identity Services on the source, dataflow, and dataflow run levels, with actionable advisories in a timely manner.
 feature: Data Ingestion
 role: Data Engineer
 kt: 7104
@@ -9,7 +9,7 @@ thumbnail: 330549.jpg
 
 # Monitoring dashboard
 
-Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Monitoring Dashboard. The monitoring dashboard provides you with a visual representation of the journey of a data flow.
+Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Monitoring Dashboard. This monitoring dashboard provides a top-down view of source data processing through data lake to Profile and Identity Services on the source, dataflow, and dataflow run levels, with actionable advisories in a timely manner.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331776?quality=12&learn=on)
 
