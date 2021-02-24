@@ -41,6 +41,7 @@ doc-type: video
   + [Streaming time series data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
   + [Streaming multiple messages](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
   + [Dataflow monitoring](/help/platform/data-ingestion/data-monitoring.md)
+  + [Monitoring dashboard](/help/platform/data-ingestion/monitoring-dashboard.md)
   + [Web SDK tutorials](https://experienceleague.adobe.com/docs/web-sdk-learn/tutorials/overview.html)
   + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/mobile-sdk-learn/tutorials/overview.html)
   + [Debugger tutorials](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/overview.html)
