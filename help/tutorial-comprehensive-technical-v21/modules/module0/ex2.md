@@ -17,7 +17,11 @@ These properties are almost ready to be used, but before you can start collectin
 
 For now, please follow these steps.
 
-Click **[!UICONTROL Edge Configuration]** in the left menu, then click the **[!UICONTROL New Edge Configuration]**.
+Open the dropdown menu and click **[!UICONTROL Edge Configuration]**.
+
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png)
+
+Click **[!UICONTROL New Edge Configuration]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
@@ -45,10 +49,6 @@ For **[!UICONTROL Sandbox]**, select your sandbox name.
 
 ![Name the Edge Configuration and save](./images/edgeconfig5.png)
 
-For Streaming Inlet, select **Demo System Next Streaming Endpoint**.
-
-![Name the Edge Configuration and save](./images/edgeconfig6.png)
-
 For Event Dataset, select **Demo System - Event Dataset for Website (Global v1.1)** and for Profile Dataset, select **Demo System - Profile Dataset for Website (Global v1.1)**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig7.png)
@@ -63,7 +63,11 @@ You'll then see that your Edge Configuration consists of 3 environments.
 
 ![Name the Edge Configuration and save](./images/edgeconfig9.png)
 
-Click **Properties** and filter the search results to see your two Launch properties.
+Open the dropdown menu and click **[!UICONTROL Client Side]**.
+
+![Name the Edge Configuration and save](./images/edgeconfig10a.png)
+
+Filter the search results to see your two Launch properties.
 
 ![Name the Edge Configuration and save](./images/edgeconfig10.png)
 
@@ -73,7 +77,7 @@ Open the Launch property for **Web** by clicking it. You'll then see this.
 
 In the left menu, go to **Extensions**. On the AEP Web SDK, click **Configure**.
 
-![Name the Edge Configuration and save](./images/edgeconfig12.png) 
+![Name the Edge Configuration and save](./images/edgeconfig12.png)
 
 You'll then see this. For the **Edge Configurations**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Edge Configuration ID you created earlier.
 
@@ -103,7 +107,7 @@ Click the **...** for the **Content Library**, then click **Edit**.
 
 Click **Add All Changed Resources**.
 
-![Name the Edge Configuration and save](./images/edgeconfig17.png) 
+![Name the Edge Configuration and save](./images/edgeconfig17.png)
 
 Finally, click **Save & Build for Development**.
 

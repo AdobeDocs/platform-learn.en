@@ -150,8 +150,12 @@ Set Description to: `Send Text to Slack`.
 
 For the **URL Configuration**, use this:
 
-* URL: `https://hooks.slack.com/services/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`
+* URL: `https://2mnbfjyrre.execute-api.us-west-2.amazonaws.com/prod`
 * Method: **POST**
+
+>[!NOTE]
+>
+>The above URL refers to an AWS Lambda function which will then forward your request to the Slack channel as mentioned above. This is done to protect access to an Adobe-owned Slack channel. If you have your own Slack channel, you should create a Slack App through [https://api.slack.com/](https://api.slack.com/), you then need to create an Incoming Webhook in that Slack App, and then replace the above URL by your Incoming Webhook URL.
 
 You don't need to change the Header Fields.
 
