@@ -29,7 +29,9 @@ activity: develop
 |Showpad|Closing the loop between online and in-person customer engagement with Adobe Experience Platform and Showpad|[VIDEO](https://video.tv.adobe.com/v/36363?quality=12&learn=on)|
 |Smart Digital|Connecting Smart Digital’s Real-time Machine Learning service to Adobe Experience Platform (Part 1) |[VIDEO](https://video.tv.adobe.com/v/36324?quality=12&learn=on)|
 |Smart Digital|Connecting Smart Digital’s Real-time Machine Learning service to Adobe Experience Platform Real-time CDP (Part 2)|[VIDEO](https://video.tv.adobe.com/v/327187?quality=12&learn=on)|
+|Sprinklr| Closing the loop between customer behavior across social media (modern channels) and owned media (website/app) with Adobe Experience Platform and Sprinklr | [VIDEO](https://video.tv.adobe.com/v/331779?quality=12&learn=on) |
 |Stackchat| Contextual, bi-directional personalization between FB Messenger, WeChat, … and AEP | [VIDEO](https://video.tv.adobe.com/v/35846?quality=12&learn=on) |
+
 
 ## Demo Videos
 
