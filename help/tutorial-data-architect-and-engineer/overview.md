@@ -3,7 +3,7 @@ title: Overview
 seo-title: Overview | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Overview
 description: Getting Started with Adobe Experience Platform for Data Architects and Data Engineers is the perfect starting point for Data Architects and Data Engineers to get hands-on with Experience Platform.
-role: Data Architect,Data Engineer
+role: Data Architect, Data Engineer
 kt: 4348
 thumbnail: 4348-overview.jpg
 ---

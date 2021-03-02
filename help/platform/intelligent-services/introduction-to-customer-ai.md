@@ -2,7 +2,8 @@
 title: Introduction to Customer AI in Adobe Experience Platform
 description: A high-level overview of how marketers can leverage Customer AI to generate customer predictions.
 role: Business Practitioner
-feature: Intelligent Services
+solution: Experience Platform, Intelligent Services
+feature: Customer AI
 kt: 4807
 thumbnail: 32664.jpg
 ---
