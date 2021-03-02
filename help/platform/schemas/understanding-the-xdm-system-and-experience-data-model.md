@@ -1,7 +1,7 @@
 ---
 title: Understanding the Experience Data Model (XDM)
 description: Learn about Experience Data Model (XDM), the standard data model to describe customer experiences.
-role: Data Architect,Data Engineer
+role: Data Architect, Data Engineer
 feature: Schemas
 kt: 2696
 thumbnail: 27105.jpg

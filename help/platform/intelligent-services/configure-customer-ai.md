@@ -2,7 +2,8 @@
 title: Configure Customer AI in Adobe Experience Platform
 description: Learn how to create an instance of Customer AI to predict customer behavior.
 role: Business Practitioner
-feature: Intelligent Services
+solution: Experience Platform, Intelligent Services
+feature: Customer AI
 kt: 4172
 thumbnail: 32665.jpg
 ---

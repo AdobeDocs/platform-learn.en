@@ -1,7 +1,7 @@
 ---
 title: Union schemas overview
 description: Real-time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for the Real-time Customer Profile by enabling both the schema and corresponding dataset.
-role: Data Architect,Data Engineer
+role: Data Architect, Data Engineer
 feature: Profiles
 kt: 6754
 thumbnail: 329940.jpg
