@@ -110,6 +110,7 @@ doc-type: video
   + [Ingest data from CRM](/help/platform/sources/ingest-data-from-crm.md)
   + [Ingest data from databases](/help/platform/sources/ingest-data-from-databases.md)
   + [Stream data with HTTP API](/help/platform/sources/streaming-ingestion-http-api.md)
+  + [Stream data using Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
 + Application Services {#application-services}
   + [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html)
   + [Journey Orchestration tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html)
