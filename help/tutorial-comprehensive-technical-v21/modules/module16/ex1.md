@@ -86,7 +86,7 @@ Click on **Add Data** on the left side menu, followed by clicking **Explore publ
 
 You'll then see this window: 
 
-![demo](./images/ex1/19.png) 
+![demo](./images/ex1/19.png)
 
 Enter the search term **Google Analytics Sample** in the search bar and select the first result.
 
@@ -96,23 +96,24 @@ You'll see the following screen with a description of the dataset. Click on **VI
 
 ![demo](./images/ex1/21.png)
 
-You'll then be redirected to BigQuery. 
+You'll then be redirected to BigQuery where you'll see this **bigquery-public-data** dataset under **Explorer**.
+
+![demo](./images/ex1/22a.png)
+
+In **Explorer**, you should now see a number of tables. Feel free to explore them. Go to `google_analytics_sample`.
 
 ![demo](./images/ex1/22.png)
 
-Under **Resources**, you should now see a number of tables. Feel free to explore them. 
-
-The table we will use in this module is **google_analytics_sample**.
+Click to open the table `ga_sessions`.
 
 ![demo](./images/ex1/23.png)
-
 
 Before you continue with the next exercise, please write down the following things in a separate text file on your computer:
 
 | Credential         | Naming| Example|   
 | ----------------- |-------------| -------------|
-| Project Name | ldap-googlecloud | delaigle-googlecloud  |
-| Project ID | random | apt-summer-273608 |
+| Project Name | ldap-googlecloud | vangeluw-googlecloud  |
+| Project ID | random | composed-task-306413 |
 
 You can find your Project Name and Project ID by clicking on your **Project Name** in the top menu bar:
 

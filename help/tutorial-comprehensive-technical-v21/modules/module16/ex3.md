@@ -32,7 +32,7 @@ Please copy project id in a separated text file.
 
 | Credential         | Naming| Example|   
 | ----------------- |-------------| -------------|
-| Project ID | random | apt-summer-273608 |
+| Project ID | random | composed-task-306413 |
 
 You can check your Project ID any time by clicking on your **Project Name** in the top menu bar:
 
@@ -83,35 +83,53 @@ Select the User Type: **External**. Next, click **CREATE**.
 
 You'll then be on the **OAuth Consent Screen configuration** window. 
 
-![demo](./images/ex3/6-3a.png)
-
-The only thing to do here is to enter the name of the consent screen in the **Application name** field. For the Application name, use this naming convention:
+The only thing to do here is to enter the name of the consent screen in the **Application name** field and select the **User support email**. For the Application name, use this naming convention:
 
 | Naming         | Example|    
 | ----------------- |-------------| 
-| ldap - AEP BigQuery Connector | delaigle - Platform BigQuery Connector |  
+| ldap - AEP BigQuery Connector | vangeluw - Platform BigQuery Connector |  
 
 ![demo](./images/ex2/6-3.png)
 
-Next, scroll down and click **Save**:
+Next, scroll down until you see **Developer contact information** and fill out an email address. 
+
+![demo](./images/ex2/6-3a.png)
+
+Click **SAVE AND CONTINUE**.
 
 ![demo](./images/ex2/6-4.png)
 
-You'll then see this confirmation screen:
+You'll then see this. Click **SAVE AND CONTINUE**.
 
-![demo](./images/ex3/6-4a.png)
+![demo](./images/ex2/o1.png)
+
+You'll then see this. Click **SAVE AND CONTINUE**.
+
+![demo](./images/ex2/o2.png)
+
+You'll then see this. Click **BACK TO DASHBOARD**.
+
+![demo](./images/ex2/o3.png)
+
+You'll then see this. Click **PUBLISH APP**.
+
+![demo](./images/ex2/o4.png)
+
+Click **CONFIRM**.
+
+![demo](./images/ex2/o5.png)
+
+You'll then see this.
+
+![demo](./images/ex2/o6.png)
 
 In the next step step, you'll finish the API setup and get your API credentials.
 
 ## 16.3.3 Google API Credentials: Client Secret and Client Id
 
-In the left menu, click **Credentials**.
+In the left menu, click **Credentials**. You'll then see this:
 
 ![demo](./images/ex2/7.png)
-
-You'll then see this:
-
-![demo](./images/ex2/8.png)
 
 Click the **+ CREATE CREDENTIALS** button.
 
@@ -131,7 +149,7 @@ Follow this naming convention:
 
 | Field         | Value  | Example  |   
 | ----------------- |-------------| -------------| 
-| Name | ldap - AEP BigQuery Connector  |  delaigle - Platform BigQuery Connector  |
+| Name | ldap - AEP BigQuery Connector  |  vangeluw - Platform BigQuery Connector  |
 | Authorised redirect URIs | https://developers.google.com/oauthplayground | https://developers.google.com/oauthplayground  | 
 
 The **Authorised redirect URIs** field is a very important field because you'll need it later to get the RefreshToken you need to finish the setup of the BigQuery Source Connector in Adobe Experience Platform.
@@ -154,7 +172,7 @@ As recap for your BigQuery Source Connector setup in Adobe Experience Platform, 
 
 | BigQuery Connector Credentials         | Value |  
 | ----------------- |-------------| 
-| Project ID | your own Project ID (ex.: apt-summer-273608)| 
+| Project ID | your own Project ID (ex.: composed-task-306413)| 
 | clientid | yourclientid| 
 | cilentsecret | yourclientsecret |
 
@@ -201,7 +219,7 @@ Copy the **Client ID** and **Client Secret** from the text file you created on y
 
 ![demo](./images/ex2/20.png)
 
-Once you fill these, please click **Close**
+Once you've fill out your credentials, please click **Close**
 
 ![demo](./images/ex2/23-1.png)
 
@@ -213,9 +231,11 @@ Next, select the scope as indicated in the below image:
 
 ![demo](./images/ex2/26.png)
 
-Once you have selected them, you should see a blue button which says “Authorize APIs”. Click on it.
+Once you have selected them, you should see a blue button which says **Authorize APIs**. Click on it.
 
 ![demo](./images/ex2/28.png)
+
+Select the Google Account you used for setting up GCP and BigQuery.
 
 You might see a big warning: **This app isn't verified**. This is happening because your Platform BigQuery Connector hasn't been formally reviewed yet, so Google doesn't know if it's an authentic app or not. You should disregard this notification.
 
@@ -229,29 +249,17 @@ Next, click on **Go to ldap - AEP BigQuery Connector (unsafe)**.
 
 You'll be redirected to our OAuth Consent Screen that you created. 
 
-Select the Google Account you used for setting up GCP and BigQuery.
-
 ![demo](./images/ex2/29.png)
 
 If you use Two-Factor Authentication (2FA), enter the verification code sent to you.
 
 ![demo](./images/ex2/30.png)
 
-You might now see a big warning: **This app isn't verified**. This is happening because your Platform BigQuery Connector hasn't been formally reviewed yet, so Google doesn't know if it's an authentic app or not. You should disregard this notification.
-
-Click **Advanced**.
-
-![demo](./images/ex2/32.png)
-
-Next, click on **Go to ldap - AEP BigQuery Connector (unsafe)**.
-
-![demo](./images/ex2/33.png)
-
 Google will now show you eight different **Permission** prompts. Click **Allow** for all eight permission-requests. (This is a procedure that has to be followed and confirmed once by a real human being, before the API will allow programmatic requests)
 
 Again, **eight different popup-windows** will not be shown, you have to click **Allow** for all of them. 
 
-![demo](./images/ex2/34.png)
+![demo](./images/ex2/29.png)
 
 After the eight permission requests, you'll see this overview. Click **Allow** to finish the process.
 

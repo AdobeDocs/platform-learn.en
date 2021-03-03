@@ -65,7 +65,26 @@ First, click the **X** icon on each of those three mapped fields to remove the c
 
 ![ServiceNow](./images/flow7a.png)
 
-To do so, click the **data pill** icon next to each field. You'll then see this:
+In order to link the field **Churn Value**, click the **f(x)** button as indicated.
+
+Paste the below code in the editor:
+
+```javascript
+/*
+**Access Flow/Action data using the fd_data object. Script must return a value.
+**example: var shortDesc = fd_data.trigger.current.short_description;
+**return shortDesc;
+*/
+var churnSc = fd_data._1__get_entity_information.entityinformation._experienceplatform.individualScoring.churn.churnPrediction;
+var res = churnSc.toString();
+return res;
+```
+
+You'll then have this:
+
+![ServiceNow](./images/flow7b.png)
+
+Next, for the field **Product Affinity**, click the **data pill** icon. You'll then see this:
 
 ![ServiceNow](./images/flow8.png)
 
@@ -85,17 +104,13 @@ Next, scroll down and click the little arrow icon on the field **individualScori
 
 ![ServiceNow](./images/flow12.png)
 
-Next, scroll down and click the little arrow icon on the field **churn**. You'll then see this:
+Next, scroll down and click the little arrow icon on the field **product**. You'll then see this:
 
 ![ServiceNow](./images/flow12a.png)
 
-Finally, click to select the field **churnPrediction**.
+Finally, click to select the field **affinity**.
 
-Repeat this process to select the values for the fields **Product Affinity** and **Product Usage**.
-
-- Product Affinity should be linked to the field `--aepTenantId--`.**individualScoring**.**product**.**affinity**.
-
-![ServiceNow](./images/flow13.png)
+Repeat this process to select the value for the field **Product Usage**.
 
 - Product Usage should be linked to the field `--aepTenantId--`.**individualScoring**.**product**.**usage**.
 
@@ -129,8 +144,8 @@ These fields need to be added:
 
 | Key |  Value |
 |---|---|
-| --aepTenantId-- > identification > core > email | 3 - Update Record > Consumer Record > Email |
-| --aepTenantId-- > identification > core > phoneNumber | 3 - Update Record > Consumer Record > Mobile Phone |
+| `--aepTenantId--` > identification > core > email | 3 - Update Record > Consumer Record > Email |
+| `--aepTenantId--` > identification > core > phoneNumber | 3 - Update Record > Consumer Record > Mobile Phone |
 | Person > Full Name > First Name | 3 - Update Record > Consumer Record > First Name |
 | Person > Full Name > Last Name | 3 - Update Record > Consumer Record > Last Name |
 | Identifier | Trigger - Record Created or Updated > Case Record > ID for AEP|
@@ -185,13 +200,13 @@ These fields need to be added:
 
 | Key |  Value |
 |---|---|
-| --aepTenantId-- > interactionDetails > core > callCenterAgent > callFeeling | Trigger - Record Created or Updated > Case Record > Call Feeling |
-| --aepTenantId-- > interactionDetails > core > callCenterAgent > call ID | Trigger - Record Created or Updated > Case Record > Number |
-| --aepTenantId-- > interactionDetails > core > callCenterAgent > call Topic | Trigger - Record Created or Updated > Case Record > Short Description |
-| --aepTenantId-- > interactionDetails > core > callCenterAgent > callChannel | Trigger - Record Created or Updated > Case Record > Channel |
-| --aepTenantId-- > interactionDetails > core > callCenterAgent > callPriority | Trigger - Record Created or Updated > Case Record > Priority |
-| --aepTenantId-- > identification > core > phoneNumber | Trigger - Record Created or Updated > Case Record > Consumer > Mobile Phone |
-| --aepTenantId-- > identification > core > email | Trigger - Record Created or Updated > Case Record > Consumer > Email |
+| `--aepTenantId--` > interactionDetails > core > callCenterAgent > callFeeling | Trigger - Record Created or Updated > Case Record > Call Feeling |
+| `--aepTenantId--` > interactionDetails > core > callCenterAgent > call ID | Trigger - Record Created or Updated > Case Record > Number |
+| `--aepTenantId--` > interactionDetails > core > callCenterAgent > call Topic | Trigger - Record Created or Updated > Case Record > Short Description |
+| `--aepTenantId--` > interactionDetails > core > callCenterAgent > callChannel | Trigger - Record Created or Updated > Case Record > Channel |
+| `--aepTenantId--` > interactionDetails > core > callCenterAgent > callPriority | Trigger - Record Created or Updated > Case Record > Priority |
+| `--aepTenantId--` > identification > core > phoneNumber | Trigger - Record Created or Updated > Case Record > Consumer > Mobile Phone |
+| `--aepTenantId--` > identification > core > email | Trigger - Record Created or Updated > Case Record > Consumer > Email |
 | Event Type | serviceNow_CSMCase |
 | Identifier | Trigger - Record Created or Updated  > Case Record > ID for AEP |
 | Timestamp | Trigger - Record Created or Updated  > Case Record > Timestamp for AEP |
