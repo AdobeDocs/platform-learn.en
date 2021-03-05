@@ -337,16 +337,16 @@ Replace that code by this code:
 {
    "tenant_id": "--aepTenantId--",
    "scoringDataSetId": "--aepRecommendationsInputDatasetId--",
-   "scoringResultsDataSetId": "--aepRecommendationsOutputDatasetId--",
-   "ACP_DSW_SCORING_RESULTS_XDM_SCHEMA": "https://ns.adobe.com/--aepTenantIdSchema--/schemas/--aepRecommendationsOutputSchemaRef--" 
+   "scoringResultsDataSetId": "--aepMlPredictionsDatasetId--",
+   "ACP_DSW_SCORING_RESULTS_XDM_SCHEMA": "https://ns.adobe.com/--aepTenantIdSchema--/schemas/--aepMlPredictionsSchemaRef--" 
 }
 ```
 
 >[!IMPORTANT]
 >
->The environment variables **aepRecommendationsInputDatasetId**, **aepRecommendationsOutputDatasetId** and **aepRecommendationsOutputSchemaRef** refer to dataset IDs of datasets and Schema Ref ID of schemas that have been created in your Adobe Experience Platform instance. 
+>The environment variables **aepRecommendationsInputDatasetId**, **aepMlPredictionsDatasetId** and **aepMlPredictionsSchemaRef** refer to dataset IDs of datasets and Schema Ref ID of schemas that have been created in your Adobe Experience Platform instance. 
 >
->**aepRecommendationsInputDatasetId** refers to the dataset ID of the dataset **Demo System - Event Dataset for Recommendations Model Input (Global v1.1)**, **aepRecommendationsOutputDatasetId** refers to the dataset ID of the dataset **Demo System - Profile Dataset for ML Predictions (Global v1.1)**, **aepRecommendationsOutputSchemaRef** refers to the Schema Ref ID of the schema **Demo System - Profile Schema for ML Predictions (Global v1.1)**. Replace the environment variables by the dataset ID and Schema Ref ID when you paste the code in the **Scoring Configuration** cell in your notebook.
+>**aepRecommendationsInputDatasetId** refers to the dataset ID of the dataset **Demo System - Event Dataset for Recommendations Model Input (Global v1.1)**, **aepMlPredictionsDatasetId** refers to the dataset ID of the dataset **Demo System - Profile Dataset for ML Predictions (Global v1.1)**, **aepMlPredictionsSchemaRef** refers to the Schema Ref ID of the schema **Demo System - Profile Schema for ML Predictions (Global v1.1)**. Replace the environment variables by the dataset ID and Schema Ref ID when you paste the code in the **Scoring Configuration** cell in your notebook.
 
 You should now have something similar in the **Scoring Configuration** cell:
 

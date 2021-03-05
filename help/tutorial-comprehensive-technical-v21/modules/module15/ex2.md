@@ -221,7 +221,7 @@ Scroll down and click in the next empty cell.
 
 Copy the below code and paste it in the first cell in your notebook.
 
-```python
+```sql
 %%read_sql df_result
 SELECT  --aepTenantId--.identification.core.ecid as ecid,
         --aepTenantId--.interactionDetails.insurance.car.numberKm as km,
