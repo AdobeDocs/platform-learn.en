@@ -20,6 +20,10 @@ In this module, you'll:
 - Create a Google Function endpoint and stream data to it
 - Create a Microsoft Azure Function endpoint and stream data to it
 
+Watch this video to understand the value, customer journey and configuration process:
+
+>[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
+
 ## Learning Objectives
 
 - Become familiar with Launch Server Side properties and the new Adobe Cloud Connector extension 

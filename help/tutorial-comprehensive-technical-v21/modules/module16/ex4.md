@@ -98,7 +98,7 @@ Use the below mapping table for this exercise.
 | TrafficMedium | channel.mediaType | 
 | TransactionID | commerce.order.payments.transactionID | 
 | Ecommerce_Action_Type | eventType | 
-| Pageviews | ``--aepTenantId--``.gabqdata.behaviourevents.pageviews | 
+| Pageviews | web.webPageDetails.pageViews.value| 
 | Unique_Purchases | commerce.purchases.value | 
 | Product_Detail_Views | commerce.productViews.value | 
 | Adds_To_Cart | commerce.productListAdds.value | 

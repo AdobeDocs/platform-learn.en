@@ -9,19 +9,26 @@ activity: develop
 
 # Summary and benefits
 
-Congratulations and thank you for investing your time in learning about Adobe Experience Platform Data Collection and Server Side Forwarding using Launch.
+Congratulations and thank you for investing your time in learning about Adobe Experience Platform Data Collection and Launch Server Side Forwarding.
 
-In this module, you've learned how to use the previously configured datasets, schemas and Launch property to collect data, and then forward that data server-side to an endpoint of choice.
+In this module, you've learned how to use the previously configured datasets, schemas and Launch property to collect data, and then forward that data server side to an endpoint of choice.
 
 ## Benefits
 
-Let's highlight the benefits of using Adobe Experience Platform and Stackchat to build conversational experiences :
+Let's highlight the benefits of using Adobe Experience Platform Data Collection, Web SDK and Launch Server Side.
 
-- 
+Direct revenue can easily be lost due to less performant websites and apps, caused by too much code being executed on the client side. Privacy and consent laws are evolving and changing quickly and can drastically impact data collection. And overall, brands have an increasing number of applications to manage and send data to.
+
+Managing all of these streams of data is getting more difficult every day. Website and app performance needs to be increased by moving the work done in a browser to a server side environment and at the same time, data collection needs to be simplified.
+
+Thanks to Adobe Experience Platform Data Collection, you as a brand are now finally able to break data out of their silos, and let that data flow across your ecosystem as freely as needed, so you can design and deliver exceptional and contextual customer experiences everywhere, in real-time!
 
 ## Check this out
 
-- Tech Blog: [Adobe Tech Blog](https://medium.com/adobetech)
+- Tech Blog: [Solving Implementation Pain Points with Adobe Experience Platform Web SDK and Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
+- Tech Blog: [Boosting Website Performance with Adobe Experience Platform Web SDK and Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
+- Documentation: [Adobe Experience Platform Launch Server Side overview](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=en#server-side-info)
+- Video: [Implement Edge and Launch Server Side using a non-Adobe Tag Management Solution](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
 
 [Go Back to Module 21](./aep-data-collection-ssf.md)
 
