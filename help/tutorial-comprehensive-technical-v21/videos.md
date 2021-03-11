@@ -35,12 +35,15 @@ activity: develop
 
 ## Demo Videos
 
-| Application| Link | 
-|:-------------|:---------------:|
-|Architecture whiteboard of Adobe Experience Platform| [VIDEO](https://video.tv.adobe.com/v/35266?quality=12&learn=on)|
-| Customer Journey Analytics - Omnichannel Customer Journey Analysis| [VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)|
-|Introduction to Citi Signal| [VIDEO](https://video.tv.adobe.com/v/35138?quality=12&learn=on)|
-|Introduction to MUTUAL365| [VIDEO](https://video.tv.adobe.com/v/35498?quality=12&learn=on)|
-|Introduction to Luma| [VIDEO](https://video.tv.adobe.com/v/35137?quality=12&learn=on)|
+| Topic|Description| Link | 
+|:-------------|:---------------|:---------------:|
+|Architecture whiteboard of Adobe Experience Platform|Understand the functional architecture behind Adobe Experience Platform| [VIDEO](https://video.tv.adobe.com/v/35266?quality=12&learn=on)|
+| Customer Journey Analytics - Omnichannel Customer Journey Analysis|Discover how to perform omni channel customer journey analysis| [VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)|
+|Introduction to Citi Signal|Understand how Adobe Experience Platform helps brands in the telco industry| [VIDEO](https://video.tv.adobe.com/v/35138?quality=12&learn=on)|
+|Introduction to MUTUAL365|Understand how Adobe Experience Platform helps brands in the FSI/insurance industry| [VIDEO](https://video.tv.adobe.com/v/35498?quality=12&learn=on)|
+|Introduction to Luma|Understand how Adobe Experience Platform helps brands in the retail industry| [VIDEO](https://video.tv.adobe.com/v/35137?quality=12&learn=on)|
+|Offer Decisioning| Understand the value proposition of Offer Decisioning and its impact on the customer journey|[VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)|
+|Launch Client Side, Web SDK and Launch Server Side| Implement Launch Client Side, Edge and Launch Server Side|[VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)|
+|Tealium IQ, Web SDK and Launch Server Side| Implement Edge and Launch Server Side using a non-Adobe Tag Management Solution|[VIDEO](https://video.tv.adobe.com/v/331986?quality=12&learn=on)|
 
 [Go Back to All Modules](./overview.md)
