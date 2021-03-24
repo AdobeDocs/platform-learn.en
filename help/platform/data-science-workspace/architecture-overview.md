@@ -11,7 +11,7 @@ thumbnail: 329612.jpg
 
 This video walks through an overview diagram and explains the primary components of Experience Platform as it relates to Data Science Workspace.
 
->[!VIDEO]()
+>[!VIDEO](https://video.tv.adobe.com/v/332368)
 
 ## Additional Resources
 
