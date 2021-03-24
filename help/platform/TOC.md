@@ -46,7 +46,8 @@ doc-type: video
   + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/mobile-sdk-learn/tutorials/overview.html)
   + [Debugger tutorials](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/overview.html)
 + Data Science Workspace {#data-science-workspace}
-  + [Data Science Workspace overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
+  + [Overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
+  + [Architecture](data-science-workspace/architecture-overview.md)
   + [Load data in JupyterLab notebooks](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
   + [Train, score and productize models with the recipe builder template](data-science-workspace/train-score-and-productize-models.md)
   + [Create and publish a machine learning model](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/create-publish-model.html)

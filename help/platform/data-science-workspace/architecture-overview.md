@@ -4,7 +4,7 @@ description: This video describes the overarching architecture and illustrates t
 role: Business Practitioner
 feature: Data Science Workspace
 kt: 7181
-thumbnail: 329612.jpg
+thumbnail: 332368.jpg
 ---
 
 # Data Science Workspace architecture overview
