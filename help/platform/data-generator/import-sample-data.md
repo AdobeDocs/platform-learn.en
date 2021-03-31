@@ -13,7 +13,7 @@ In this tutorial, we will be covering how to get your Experience Platform sandbo
 
 ## Pre-requisites
 
-* You have authenticated and have access to Experience Platform APIs. If not, you can quickly set it up by following this [tutorial](authentication/platform-api-authentication.md).
+* You have authenticated and have access to Experience Platform APIs. If not, you can quickly set it up by following this [tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html).
 * You have access to Experience Platform sandbox environment. 
 
 ## Using Postman
