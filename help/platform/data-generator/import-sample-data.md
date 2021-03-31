@@ -4,19 +4,27 @@ description: In this tutorial, we will be covering how to get your Experience Pl
 role: Developer
 feature: API
 kt: 7349
-thumbnail: 32977.jpg
+thumbnail: 7349.jpg
 ---
 
 # Import sample data to Adobe Experience Platform
 
 In this tutorial, we will be covering how to get your Experience Platform sandbox environment set up with some sample data for you to explore. Using a postman collection you can create mixins, schemas, datasets, and then import sample data into Experience Platform.
 
+## Sample data use case 
+
+Experience Platform business users often have to go through a series of steps that includes identifying mixins, creating schemas, preparing data, creating datasets, and then ingesting data before they can explore some of the capabilities offered by Experience Platform . In this tutorial, you can find an easy way to automate some of the steps and get data in Platform as soon as possible. 
+
+This tutorial focuses on a fictional retail brand called Luma. Luma operates brick-and-mortar stores in multiple countries and also has an online presence with a website and mobile apps. They are investing in Adobe Experience Platform to combine loyalty, CRM, web, and offline purchase data into real-time customer profiles and activate these profiles to take their marketing to the next level. We have sample data generated for Luma and in the next section, you can explore how to import data to Experience Platform.
+
+To complete this tutorial, you can either use the [Postman application's UI](#postman) or use command line [Collection Runner for Postman (Newman)](#newman)
+
 ## Pre-requisites
 
 * You have authenticated and have access to Experience Platform APIs. If not, you can quickly set it up by following this [tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html).
 * You have access to Experience Platform sandbox environment. 
 
-## Using Postman
+## Using Postman {#postman}
 
 ### Import Postman Collection and set up environment variables
 
@@ -117,7 +125,7 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
     *   `Luma-Offline-Purchase-Events.postman_collection.json`: collection run would create a schema to contain offline purchase event data of customers. The schema is based on XDM ExperienceEvent class and comprises mixins to capture customer loyalty information and their offline purchase events. Collection also creates a dataset using the schema and uploads offline purchase events data to Adobe Experience Platform.
 
 
-## Using Newman 
+## Using Newman {#newman}
 
 Before you follow the steps, please make sure that you have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment as it provides an isolated environment where you can try out functionality without mixing resources and data with your Production environment.
 
@@ -147,7 +155,7 @@ Before you follow the steps, please make sure that you have access to Experience
     * Run `Luma-Offline-Purchase-Events.postman_collection.json` to build mixins, schema, dataset, and to ingest sample product data to Adobe Experience Platform
       * `newman run Luma-Offline-Purchase-Events.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
 
-## Reset Sandbox environment
+## Reset Sandbox environment {#reset-sandbox}
 
 Resetting a non-production sandbox deletes all resources associated with that sandbox (schemas, datasets, and so on), while maintaining the sandbox’s name and associated permissions. This “clean” sandbox continues to be available under the same name for users that have access to it.
 
