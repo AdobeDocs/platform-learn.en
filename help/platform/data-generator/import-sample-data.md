@@ -16,9 +16,9 @@ In this tutorial, we will be covering how to get your Experience Platform sandbo
 * You have authenticated and have access to Experience Platform APIs. If not, you can quickly set it up by following this [tutorial](authentication/platform-api-authentication.md).
 * You have access to Experience Platform sandbox environment. 
 
-# Using Postman
+## Using Postman
 
-## Import Postman Collection and set up environment variables
+### Import Postman Collection and set up environment variables
 
 Before you follow the steps, please make sure that you have downloaded the [Postman](https://www.postman.com/downloads/) application and have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment as it provides an isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
@@ -117,11 +117,11 @@ Before you follow the steps, please make sure that you have downloaded the [Post
     *   `Luma-Offline-Purchase-Events.postman_collection.json`: collection run would create a schema to contain offline purchase event data of customers. The schema is based off XDM ExperienceEvent class and comprises of mixins to capture customer loyalty information and their offline purchase events. Collection also creates a dataset using the schema and uploads offline purchase events data to Adobe Experience Platform.
 
 
-# Using Newman 
+## Using Newman 
 
 Before you follow the steps, please make sure that you have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment as it provides an isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
-## Install NodeJs and Newman
+### Install NodeJs and Newman
 
 1. To run Newman, ensure that you have Node.js >= v10. [Install Node.js via package manager](https://nodejs.org/en/download/package-manager/).
 2. Run the command `node -v` to make sure that node is installed. 
@@ -147,7 +147,7 @@ Before you follow the steps, please make sure that you have access to Experience
     * Run `Luma-Offline-Purchase-Events.postman_collection.json` to build mixins, schema, dataset, and to ingest sample product data to Adobe Experience Platform
       * `newman run Luma-Offline-Purchase-Events.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
 
-# Reset Sandbox environment
+## Reset Sandbox environment
 
 Resetting a non-production sandbox deletes all resources associated with that sandbox (schemas, datasets, and so on), while maintaining the sandbox’s name and associated permissions. This “clean” sandbox continues to be available under the same name for users that have access to it.
 
