@@ -9,7 +9,7 @@ thumbnail: 32977.jpg
 
 # Import sample data to Adobe Experience Platform
 
-In this tutorial, we will be covering how to get your Experience Platform sandbox environment setup with some sample data for you to explore. Using a postman collection you can create mixins, schemas, datasets, and then import sample data into Experience Platform.
+In this tutorial, we will be covering how to get your Experience Platform sandbox environment set up with some sample data for you to explore. Using a postman collection you can create mixins, schemas, datasets, and then import sample data into Experience Platform.
 
 ## Pre-requisites
 
@@ -20,30 +20,30 @@ In this tutorial, we will be covering how to get your Experience Platform sandbo
 
 ### Import Postman Collection and set up environment variables
 
-Before you follow the steps, please make sure that you have downloaded the [Postman](https://www.postman.com/downloads/) application and have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment as it provides an isolated environments where you can try out functionality without mixing resources and data with your Production environment.
+Before you follow the steps, please ensure that you have downloaded the [Postman](https://www.postman.com/downloads/) application and have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment. It provides an isolated environment where you can try out functionality without mixing resources and data with your Production environment. Let's get started.
 
-1. Create a folder on your local machine named `DataInExperiencePlatform`. This folder will be used to save files used in the tutorial
+1. Create a folder on your local machine named `DataInExperiencePlatform` and will be used to save files used in the tutorial
 2. Download the [data.zip](../assets/data-generator/images/data.zip) file which contains files required for this tutorial. 
 3. Unzip and save it under the `DataInExperiencePlatform` folder.
-4. Make a note of the location, as we might need it later when setting up the `file_path` environment variable
+4. Please make a note of the location, as we might need it later when setting up the `file_path` environment variable
 5. Launch Postman and create a new workspace.
 6. To create a new workspace, use the **Workspaces** dropdown menu at the left of Postman. You can select an existing workspace or create a new workspace for your project. 
     ![Create workspace](../assets/data-generator/images/create-workspace.png)
 7. Enter a **Name** and optional **Summary** for your workspace and click **Create Workspace**. Postman will switch to your new workspace when you create it.
    ![Save workspace](../assets/data-generator/images/save-workspace.png)
-8. Now lets perform some additional settings to run our postman collections in this workspace. In the header of Postman, click the wrench icon and select "**Settings**" to open the settings modal. You can also use the keyboard shortcut (CMD/CTRL + ,) to open the modal.
-9. Under general tab, lets update the request time out in ms to `5000` ms and enable `allow reading file outside this directory`
+8. Now let's perform some additional settings to run our postman collections in this workspace. In the header of Postman, click the wrench icon and select **Settings** to open the settings modal. You can also use the keyboard shortcut (CMD/CTRL + ,) to open the modal.
+9. Under general tab, let's update the request time out in ms to `5000` ms and enable `allow reading file outside this directory`
     ![Settings](../assets/data-generator/images/settings.png)
 
 10. Select the environments option and click on the import option. 
     ![Environment Import](../assets/data-generator/images/env-import.png)
 
-11. Lets import the downloaded json environment file, `DataInExperiencePlatform.postman_environment` and click **Import**
+11. Let's import the downloaded json environment file, `DataInExperiencePlatform.postman_environment`, and click **Import**
     ![Environment Import](../assets/data-generator/images/env-import.png)
 12. In Postman, select your environment in the top-right dropdown and click the eye icon to view the environment variables.
     ![Environment Selection](../assets/data-generator/images/env-selection.png)
 
-13. Make sure that the following environment variables are populated. Value for the below environment variables can be obtained from your [Adobe Developer Console](https://console.adobe.io/home) project
+13. Make sure that the following environment variables are populated. For below environment variables, value can be obtained from your [Adobe Developer Console](https://console.adobe.io/home) project
     
     *  `CLIENT_SECRET` 
     *  `API_KEY`
@@ -62,7 +62,7 @@ Before you follow the steps, please make sure that you have downloaded the [Post
 14. Update the `FILE_PATH` variable to the local folder where you have downloaded the `zip.file`. You can edit variables either by opening an environment from Environments on the left, or by opening the environment quick look (eye button) at the top right of Postman, and clicking Edit.
     ![File Path](../assets/data-generator/images/file-path.png)
 
-15. Now, we need to populate the values for the following environment variables. In order to do that we need to upload the collection files to our workspace.
+15. Now, we need to populate the values for the following environment variables. To do that we need to upload the collection files to our workspace.
 
     *  `JWT_TOKEN`
     *  `ACCESS_TOKEN`
@@ -86,40 +86,40 @@ Before you follow the steps, please make sure that you have downloaded the [Post
     
     ![Collections Import](../assets/data-generator/images/authentication.png)
 
-19. Review the environment variables and you can notice that the `JWT_TOKEN` and `ACCESS_TOKEN` are now populated.
+19. Review the environment variables, and you can notice that the `JWT_TOKEN` and `ACCESS_TOKEN` are now populated.
 20. Open the `Luma-Loyalty-Data` collection and click **Run** on the overview tab to start a Collection Runner.
 
     ![Collections Import](../assets/data-generator/images/loyalty.png)
 
-21. In the collection runner window, make sure to select the environment from the dropdown, provide a delay of 4000ms, check the save responses option, and make sure that run order is correct. Click the **Run Luma Loyalty Data** button
+21. In the collection runner window, make sure to select the environment from the dropdown, provide a delay of 4000ms, check the save responses option, and make sure that the run order is correct. Click the **Run Luma Loyalty Data** button
 
     ![Collections Import](../assets/data-generator/images/loyalty-run.png)
 
     >[!NOTE]
     >
-    >**Luma-Loyalty-Data** collection run would create a schema  to contain customer loyalty data. The schema is based off XDM Individual Profile class that comprises of custom mixins and dataypes. Collection also creates a dataset using the schema and uploads sample customer loyalty data to Adobe Experience Platform.
+    >**Luma-Loyalty-Data** collection run would create a schema  to contain customer loyalty data. The schema is based on XDM Individual Profile class that comprises custom mixins and dataypes. Collection also creates a dataset using the schema and uploads sample customer loyalty data to Adobe Experience Platform.
 
     >[!NOTE]
     >
-    >If any of the collection request fails during postman collection runner, stop the execution and run the collection requests one by one. 
+    >If any of the collection requests fails during the postman collection runner, stop the execution and run the collection requests one by one. 
 
 
 22. If everything goes well, all requests in the `Luma-Loyalty-Data` collection should pass. 
 
     ![Loyalty Result](../assets/data-generator/images/loyalty-result.png)
 
-23. Now lets login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
-24. Open the `Luma Loyalty Dataset` dataset and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested.
+23. Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
+24. Open the `Luma Loyalty Dataset` dataset, and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested.
      ![Loyalty Dataset](../assets/data-generator/images/loyalty-dataset.png)
-25. Repeat steps 21 - 23 to run below collections:
-    *   `Luma-CRM-Data.postman_collection.json` : collection run would create a schema to contain CRM data of customers. The schema is based off XDM Individual Profile class that comprises of Demographic Details, Personal Contact Details and Luma Identity Profile mixins. Collection also creates a dataset using the schema and uploads sample customer CRM data to Adobe Experience Platform.
-    *   `Luma-Product-Catalog.postman_collection.json` : collection run would create a schema to contain product catalog information. The schema is based off a custom class that comprises of product catalo mixin, Commerce details and Consumer Experience Event mixin. Collection also creates a dataset using the schema and uploads product data to Adobe Experience Platform.
-    *   `Luma-Offline-Purchase-Events.postman_collection.json`: collection run would create a schema to contain offline purchase event data of customers. The schema is based off XDM ExperienceEvent class and comprises of mixins to capture customer loyalty information and their offline purchase events. Collection also creates a dataset using the schema and uploads offline purchase events data to Adobe Experience Platform.
+25. Repeat steps 21 - 23 to run the below collections:
+    *   `Luma-CRM-Data.postman_collection.json` : collection run would create a schema to contain CRM data of customers. The schema is based on XDM Individual Profile class that comprises Demographic Details, Personal Contact Details and Luma Identity Profile mixins. Collection also creates a dataset using the schema and uploads sample customer CRM data to Adobe Experience Platform.
+    *   `Luma-Product-Catalog.postman_collection.json` : collection run would create a schema to contain product catalog information. The schema is based on a custom class comprising product catalog mixin, Commerce details, and Consumer Experience Event mixin. Collection also creates a dataset using the schema and uploads product data to Adobe Experience Platform.
+    *   `Luma-Offline-Purchase-Events.postman_collection.json`: collection run would create a schema to contain offline purchase event data of customers. The schema is based on XDM ExperienceEvent class and comprises mixins to capture customer loyalty information and their offline purchase events. Collection also creates a dataset using the schema and uploads offline purchase events data to Adobe Experience Platform.
 
 
 ## Using Newman 
 
-Before you follow the steps, please make sure that you have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment as it provides an isolated environments where you can try out functionality without mixing resources and data with your Production environment.
+Before you follow the steps, please make sure that you have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment as it provides an isolated environment where you can try out functionality without mixing resources and data with your Production environment.
 
 ### Install NodeJs and Newman
 
@@ -128,14 +128,14 @@ Before you follow the steps, please make sure that you have access to Experience
 3. The easiest way to install Newman is using NPM. If you have Node.js installed, it is most likely that you have NPM installed as well.
 4. Follow the steps [here](https://www.npmjs.com/package/newman#using-newman-cli) to install newman for your system
 5. Run the command `newman -v` to make sure that newman is installed. 
-6. Create a folder on your local machine named `DataInExperiencePlatform`. This folder will be used to save files required in the tutorial
-7. Download the [data.zip](../assets/data-generator/images/data.zip) file which contains files required for this tutorial. 
-8. Unzip and save it under the `DataInExperiencePlatform` folder.
+6. Create a folder on your local machine named `DataInExperiencePlatform` and will be used to save files required in the tutorial
+7. Download the [data.zip](../assets/data-generator/images/data.zip) file, which contains files required for this tutorial. 
+8. Unzip and keep it under the `DataInExperiencePlatform` folder.
 9. Open the `DataInExperiencePlatform` folder in a terminal window.
 10. Run `Luma-Loyalty-Data.postman_collection.json` to build mixins, schema, dataset, and to ingest sample loyalty data to Adobe Experience Platform
     * `newman run Luma-Loyalty-Data.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json —insecure --delay-request 4000`
 11. If everything goes well, all requests in the `Luma-Loyalty-Data` collection should pass. 
-12. Now lets login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
+12. Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
 13. Open the `Luma Loyalty Dataset` dataset and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested.
      ![Loyalty Dataset](../assets/data-generator/images/loyalty-dataset.png)
     
