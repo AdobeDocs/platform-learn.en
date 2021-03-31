@@ -22,6 +22,7 @@ doc-type: video
   + [Roles and project phases](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
++ [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
