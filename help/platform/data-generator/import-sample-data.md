@@ -23,7 +23,7 @@ In this tutorial, we will be covering how to get your Experience Platform sandbo
 Before you follow the steps, please make sure that you have downloaded the [Postman](https://www.postman.com/downloads/) application and have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment as it provides an isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
 1. Create a folder on your local machine named `DataInExperiencePlatform`. This folder will be used to save files used in the tutorial
-2. Download the [data.zip](..assets/data-generator/data-in-experience-platform.zip) file which contains files required for this tutorial. 
+2. Download the [data.zip](..assets/data-generator/data.zip) file which contains files required for this tutorial. 
 3. Unzip and save it under the `DataInExperiencePlatform` folder.
 4. Make a note of the location, as we might need it later when setting up the `file_path` environment variable
 5. Launch Postman and create a new workspace.
@@ -129,7 +129,7 @@ Before you follow the steps, please make sure that you have access to Experience
 4. Follow the steps [here](https://www.npmjs.com/package/newman#using-newman-cli) to install newman for your system
 5. Run the command `newman -v` to make sure that newman is installed. 
 6. Create a folder on your local machine named `DataInExperiencePlatform`. This folder will be used to save files required in the tutorial
-7. Download the [data.zip](..assets/data-generator/data-in-experience-platform.zip) file which contains files required for this tutorial. 
+7. Download the [data.zip](..assets/data-generator/data.zip) file which contains files required for this tutorial. 
 8. Unzip and save it under the `DataInExperiencePlatform` folder.
 9. Open the `DataInExperiencePlatform` folder in a terminal window.
 10. Run `Luma-Loyalty-Data.postman_collection.json` to build mixins, schema, dataset, and to ingest sample loyalty data to Adobe Experience Platform
