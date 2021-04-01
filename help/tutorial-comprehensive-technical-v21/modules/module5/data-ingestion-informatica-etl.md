@@ -9,7 +9,7 @@ activity: develop
 
 # 5. Extract, Transform, Load data using a 3rd party ETL-tool
 
-**Authors: [Marius Shehati](https://www.linkedin.com/in/mshehati/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+**Authors: [Marius Shehati](https://www.linkedin.com/in/mshehati/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Artur Rutkiewicz (diva-e)](https://www.linkedin.com/in/artur-rutkiewicz-99b14b128/)**
 
 In this module, you'll learn about the positioning of an ETL application into an enterprise ecosystem. Any brand is using multiple applications ranging from data lakes to analytics solutions to machine learning and a number of marketing-specific applications. Each of those applications is using a different way to describe and understand data. When bringing Adobe Experience Platform into your brand's ecosystem, you'll finally have the ability of describing all that data in 1 single language through the Experience Data Model (XDM). When bringing data into Adobe Experience Platform, the source data model needs to be translated into an XDM format. There are a number of ways of doing that either natively in the Adobe Experience Platform user interface through Workflows or Source Connectors. Using an ETL application such as Informatica will also be a great help in that process, given that Informatica has already built an out-of-the-box integration whereby you can extract, transform and load your data easily into Adobe Experience Platform.
 
@@ -55,19 +55,23 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 ## Exercises
 
-[5.1 Setup an AWS S3 bucket](./ex1.md)
+[5.1 Create and configure your Informatica account](./ex1.md)
+
+In this exercise, you'll create and configure Informatica trial account.
+
+[5.2 Setup an AWS S3 bucket](./ex2.md)
 
 In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS environment and how to upload data in that S3 bucket.
 
-[5.2 Connect Informatica to your AWS S3 bucket](./ex2.md)
+[5.3 Connect Informatica to your AWS S3 bucket](./ex3.md)
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.
 
-[5.3 Ingest Offline Order Events into Adobe Experience Platform](./ex3.md)
+[5.4 Ingest Offline Order Events into Adobe Experience Platform](./ex4.md)
 
 In this exercise, you'll learn how to import order data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
-[5.4 Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex4.md)
+[5.5 Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex5.md)
 
 In this exercise, you'll learn how to import 2nd and 3rd party data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.
 
