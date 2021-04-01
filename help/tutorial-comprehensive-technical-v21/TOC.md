@@ -56,10 +56,11 @@ doc-type: tutorial
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module4/summary.md)
 + 5 - ETL Tools {#module5}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module5/data-ingestion-informatica-etl.md)
-  + [5.1 Setup an AWS S3 bucket](/help/tutorial-comprehensive-technical-v21/modules/module5/ex1.md)
-  + [5.2 Connect Informatica to your AWS S3 bucket](/help/tutorial-comprehensive-technical-v21/modules/module5/ex2.md)
-  + [5.3 Ingest Offline Order Events into Adobe Experience Platform](/help/tutorial-comprehensive-technical-v21/modules/module5/ex3.md)
-  + [5.4 Ingest 2nd and 3rd party data into Adobe Experience Platform](/help/tutorial-comprehensive-technical-v21/modules/module5/ex4.md)
+  + [5.1 Create and configure your Informatica account](/help/tutorial-comprehensive-technical-v21/modules/module5/ex1.md)
+  + [5.2 Setup an AWS S3 bucket](/help/tutorial-comprehensive-technical-v21/modules/module5/ex2.md)
+  + [5.3 Connect Informatica to your AWS S3 bucket](/help/tutorial-comprehensive-technical-v21/modules/module5/ex3.md)
+  + [5.4 Ingest Offline Order Events into Adobe Experience Platform](/help/tutorial-comprehensive-technical-v21/modules/module5/ex4.md)
+  + [5.5 Ingest 2nd and 3rd party data into Adobe Experience Platform](/help/tutorial-comprehensive-technical-v21/modules/module5/ex5.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module5/summary.md)
 + 6 - Journey Orchestration {#module6}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module6/journey-orchestration-create-account.md)
