@@ -107,7 +107,7 @@ You'll then see this.
 
 >[!NOTE]
 >
->If you're using Microsoft Windows, make sure to have **OpenSSL** installed on your computer before continuing. You can find [instructions to install OpenSSL here](../module5/install-openssl.md)
+>If you're using Microsoft Windows, make sure to have **OpenSSL** installed on your computer before continuing. You can find [instructions to install OpenSSL here](../module5/install-openssl.md).
 
 Next, enter the following command in Terminal:
 
@@ -129,8 +129,7 @@ A this moment, after the previous command, you should now see a new file in your
 
 >[!NOTE]
 >
->If you're using Windows, the below command won't work yet. You need to install Java JDK first, which you can find here: [https://www.oracle.com/de/java/technologies/javase-jdk15-downloads.html
-](https://www.oracle.com/de/java/technologies/javase-jdk15-downloads.html). 
+>If you're using Windows, the below command won't work yet. You need to install Java JDK first, which you can find here: [https://www.oracle.com/de/java/technologies/javase-jdk15-downloads.html](https://www.oracle.com/de/java/technologies/javase-jdk15-downloads.html). 
 
 Next, enter the following command in Terminal:
 
