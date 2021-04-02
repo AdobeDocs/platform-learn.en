@@ -230,7 +230,7 @@ You'll now need to upload a file into your Adobe I/O project. In the following s
 
 >[!NOTE]
 >
->If you're using Microsoft Windows, make sure to have **OpenSSL** installed on your computer before continuing.
+>If you're using Microsoft Windows, make sure to have **OpenSSL** installed on your computer before continuing. You can find [instructions to install OpenSSL here](./install-openssl.md)
 
 Create a new folder on your desktop with the name **Certificate**.
 
