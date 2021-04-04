@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: 4581f786-a63a-4e12-9874-7966fbd6058a
 ---
-
 # 7.5 Query Service and Power BI
 
 Open Microsoft Power BI Desktop.

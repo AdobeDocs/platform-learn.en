@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 859bd528-710c-4b47-9930-ae79e82442e3
 ---
-
 # 5.2 Setup an AWS S3 bucket
 
 In this exercise, you'll learn how to setup an AWS S3 bucket in your own AWS environment and how to upload data in that S3 bucket.

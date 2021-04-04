@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 96c71c7c-2544-4ca4-bad2-5751f3ff6ed0
 ---
-
 # 2.3 Configure Datasets
 
 In this exercise, you'll configure the required datasets to capture and store profile information and customer behavior. Every dataset that you create in this will use one of the schemas that you built in the previous step.

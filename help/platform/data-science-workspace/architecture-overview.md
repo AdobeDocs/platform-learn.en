@@ -5,8 +5,8 @@ role: Business Practitioner
 feature: Data Science Workspace
 kt: 7181
 thumbnail: 332368.jpg
+exl-id: de40f58b-36bd-458c-b792-c8963546f42e
 ---
-
 # Data Science Workspace architecture overview
 
 This video walks through an overview diagram and explains the primary components of Experience Platform as it relates to Data Science Workspace.

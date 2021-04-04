@@ -1,3 +1,7 @@
+---
+
+exl-id: b63230ec-4820-4851-ad45-ea2b0f3e5d54
+---
 # Comprehensive Technical Tutorial for Adobe Experience Platform
 
 ## Overview

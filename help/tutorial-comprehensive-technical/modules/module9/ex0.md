@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 2d9445ba-ec92-401c-857d-297fa141d535
 ---
-
 # 9.0 Create a Google Account
 
 Go to [https://accounts.google.com/signup](https://accounts.google.com/signup).

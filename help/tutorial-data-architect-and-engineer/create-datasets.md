@@ -7,8 +7,8 @@ role: Data Architect, Data Engineer
 feature: Data Management
 kt: 4348
 thumbnail: 4348-create-datasets.jpg
+exl-id: 80227af7-4976-4fd2-b1d4-b26bc4626fa0
 ---
-
 # Create datasets
 
 <!--15min-->

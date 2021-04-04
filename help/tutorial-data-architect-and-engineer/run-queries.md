@@ -7,8 +7,8 @@ role: Data Architect, Data Engineer
 feature: Queries
 kt: 4348
 thumbnail: 4348-run-queries.jpg
+exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 ---
-
 # Run queries
 
 <!-- 15 min-->

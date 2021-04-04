@@ -6,8 +6,8 @@ role: Business Practitioner
 feature: Destinations
 kt: 6624
 thumbnail: 328175.jpg
+exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
 ---
-
 # Configuring file-based [!UICONTROL cloud storage] or [!UICONTROL email marketing] destinations
 
 Get tips during a walkthrough of the configuration of a file-based destination in Adobe's Real-time Customer Data Platform (CDP). This applies to [!UICONTROL cloud storage] destinations (E.g. S3 or SFTP) and also [!UICONTROL email marketing] destinations. For more detailed product documentation, see [connect to email marketing destinations and activate data](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/api-tutorials/email-marketing-api.html)

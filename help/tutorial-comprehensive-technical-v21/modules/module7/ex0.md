@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: c8aae361-8299-4c7a-9e5c-83cfbb2df1b6
 ---
-
 # 7.0 Prerequisites
 
 ## Install PSQL Command Line Utility

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 126eb9a0-7dbf-4c96-8bf6-4c12fe813fa5
 ---
-
 # 9.5 Configure Google Tag Manager Tags & Triggers
 
 After creating the extensions and data elements, it's time to build our rules or "triggers" as they are called in Google Tag Manager.

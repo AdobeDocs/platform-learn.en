@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 68ebd24f-0cb0-4ef6-8b8b-b0e139d798f4
 ---
-
 # Summary and benefits
 
 Congratulations and thank you for investing your time in learning about Adobe Experience Platform Data Collection and Launch Server Side Forwarding.

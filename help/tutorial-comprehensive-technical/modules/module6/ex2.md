@@ -5,8 +5,8 @@ kt: 5342
 audience: 
 doc-type: tutorial
 activity: develop
+exl-id: b8052c08-4215-49c5-9fa0-6fa6687a9877
 ---
-
 # 6.2 Journey Orchestration: Setup Journey
 
 In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the Platform Demo website.

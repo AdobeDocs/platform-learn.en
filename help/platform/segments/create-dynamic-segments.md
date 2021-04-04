@@ -5,8 +5,8 @@ role: Business Practitioner
 feature: Segments
 kt: 2705
 thumbnail: 27428.jpg
+exl-id: 5e3b7d65-10e6-418f-98ab-99a3ac47e839
 ---
-
 # Create dynamic segments
 
 Dynamic segments are an advanced segmentation feature in Adobe Experience Platform which solves the scalability problems marketers traditionally face when building segments for marketing campaigns.

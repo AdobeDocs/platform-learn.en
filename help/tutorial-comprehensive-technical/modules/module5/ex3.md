@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: b86006f0-b7e1-41d8-8e02-8537230f3f31
 ---
-
 # 5.3 Ingest Offline Order Events into Adobe Experience Platform
 
 In this exercise, you'll learn how to import order data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.

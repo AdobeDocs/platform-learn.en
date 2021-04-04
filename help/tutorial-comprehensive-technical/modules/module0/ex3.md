@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: ea9e3879-aeab-4eda-835a-17cb29725f90
 ---
-
 # 0.3 Create your Enablement Configuration ID
 
 Open an incognito browser window and go to [https://public.aepdemo.net/admin_configuration_view.html](https://public.aepdemo.net/admin_configuration_view.html).

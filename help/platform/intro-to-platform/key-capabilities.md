@@ -4,8 +4,8 @@ description: This video reviews the key capabilities of Adobe Experience Platfor
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 kt: 4332
 thumbnail: 32502.jpg
+exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
 ---
-
 # Key capabilities of Adobe Experience Platform
 
 This video reviews the key capabilities of Experience Platform:

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: bedd223c-06a4-4906-8f83-48019e3a9d2d
 ---
-
 # 10. Data Science Workspace - Churn Prediction Model
 
 This module is currently being updated. Please come back later.

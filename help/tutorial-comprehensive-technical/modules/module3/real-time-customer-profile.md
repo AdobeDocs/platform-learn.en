@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 767233a4-61a5-4944-8471-e9899bd65e3d
 ---
-
 # 3. Foundation - Real-time Customer Profile
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

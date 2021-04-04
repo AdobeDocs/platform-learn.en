@@ -4,8 +4,8 @@ description: In the previous video we saw how an example brand, Luma, was able t
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 kt: 4340
 thumbnail: 28144.jpg
+exl-id: 5ae7707d-799d-4979-9e53-b882e74324ad
 ---
-
 # Behind the scenes: A customer experience powered by Adobe Experience Platform
 
 In the previous video we saw how an example brand, Luma, was able to create a rich, rewarding and relevant customer experience. This video looks at how Adobe Experience Platform is used to accomplish this journey.

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 0fb670da-64d5-4d78-b597-5ec6a043a7ba
 ---
-
 # 0.2 Create your Edge Configuration ID
 
 Go to [https://launch.adobe.com/](https://launch.adobe.com/). After the previous exercise, you now have two Launch properties: one for web and one for mobile.

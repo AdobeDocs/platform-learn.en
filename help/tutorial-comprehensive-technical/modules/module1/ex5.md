@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: bea2cab0-ebe5-48e5-9a30-6fece9283fd1
 ---
-
 # 1.5 - Implement Adobe Analytics and Adobe Audience Manager
 
 ## Context

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: 56aa43c5-79c5-4111-973f-85c663ce73ba
 ---
-
 # 7.7 Query Service API
 
 ## Objective
@@ -281,4 +281,3 @@ Next Step: [Summary and benefits](./summary.md)
 [Go Back to Module 7](./query-service.md)
 
 [Go Back to All Modules](../../overview.md)
-

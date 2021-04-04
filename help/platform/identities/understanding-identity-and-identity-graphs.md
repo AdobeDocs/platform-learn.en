@@ -5,8 +5,8 @@ role: Data Architect
 feature: Identities
 kt: 3039
 thumbnail: 27841.jpg
+exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
 ---
-
 # Identity and identity graphs overview
 
 Adobe Experience Platform provides a rich set of Identity resolution capabilities, which are built from the ground up to link disconnected identities to deliver a consistent connected experience by referencing a unified profile. This video covers the three capabilities of Identity Collection, Identity Graphs, and the APIs, describes how deterministic and probabilistic algorithms are used to construct private identity graphs, and discusses the role of private identity graphs, Adobe Experience Platform Identity Service Co-Op Graph, and third-party graphs.

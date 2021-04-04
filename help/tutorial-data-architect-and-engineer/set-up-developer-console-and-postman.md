@@ -7,8 +7,8 @@ role: Data Architect, Data Engineer
 feature: API
 kt: 4348
 thumbnail: 4348-set-up-developer-console-and-postman.jpg
+exl-id: 72b541fa-3ea1-4352-b82b-c5b79ff98491
 ---
-
 # Set up Developer Console and [!DNL Postman]
 
 <!--30min-->

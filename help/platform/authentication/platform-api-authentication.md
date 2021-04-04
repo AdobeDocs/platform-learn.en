@@ -5,8 +5,8 @@ role: Developer
 feature: API
 kt: 3688
 thumbnail: 32977.jpg
+exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
 ---
-
 # Authenticate and access [!DNL Experience Platform] APIs
 
 In order to make calls to Adobe Experience Platform APIs, you must first gain access to an Experience Platform developer account.

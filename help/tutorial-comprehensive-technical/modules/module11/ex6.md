@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: b514313a-9c11-42f5-b925-bb2c7a222126
 ---
-
 # 11.6 Take Action: send your segment to Adobe Target
 
 Adobe Experience Platform also has the ability to share Audiences directly with the Adobe Experience Cloud **People Core Service - Audience Library**.

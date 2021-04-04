@@ -5,8 +5,8 @@ role: Data Engineer,Business Practitioner
 feature: Queries
 kt: 3715
 thumbnail: 29811.jpg
+exl-id: 8d99063a-5107-4bee-a0a4-6778b56aeac0
 ---
-
 # Understanding data usage patterns with Query Service
 
 This video shares tips and best practices for running queries in the query editor interface, PSQL clients, business intelligence (BI) solutions and the HTTP API.

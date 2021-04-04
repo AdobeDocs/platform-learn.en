@@ -4,8 +4,8 @@ description: This video gives an overview of the Application Services and Intell
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 kt: 4333
 thumbnail: 32554.jpg
+exl-id: 24333697-56fe-4398-b3e0-33b68a2dc8ad
 ---
-
 # Application and Intelligent Services built on Experience Platform
 
 This video gives an overview of the Application Services and Intelligent Services built on top of Experience Platform, which complement the Experience Cloud Applications&mdash;Real-time Customer Data Platform, Journey Orchestration, Customer Journey Analytics, Attribution AI, and Customer AI.

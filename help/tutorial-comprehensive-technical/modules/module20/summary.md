@@ -1,3 +1,7 @@
+---
+
+exl-id: 64f02529-d331-46cc-8abd-d7e247168cb8
+---
 # Summary and benefits
 
 Congratulations and thank you for investing your time in learning about automated & live chat with [Stackchat](https://stackchat.com/enterprise) and Adobe Experience Platform! 

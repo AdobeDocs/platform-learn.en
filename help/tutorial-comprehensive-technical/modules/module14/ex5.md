@@ -5,9 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 62c37abf-8e2a-47a6-af99-0cf80d7ea2dc
 ---
-
-
 # 14.5 Test your Offer Activity using the API
 
 ## 14.5.1 Work with the Offer Decisioning API using Postman

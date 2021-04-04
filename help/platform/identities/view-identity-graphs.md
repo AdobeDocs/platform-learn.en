@@ -5,8 +5,8 @@ role: Data Engineer
 feature: Identities
 kt: 7046
 thumbnail: 331030.jpg
+exl-id: 1e289250-6b9c-4e43-84a4-7376044b3db6
 ---
-
 # View identity graphs
 
 This video shows how to use the identity graph viewer feature to search, explore, and filter identity graphs for validation and debugging.

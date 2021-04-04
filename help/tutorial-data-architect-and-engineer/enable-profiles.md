@@ -7,8 +7,8 @@ role: Data Architect
 feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
+exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 ---
-
 # Enable Real-time Customer Profiles
 
 <!-- 15min--> 

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 9d93886c-5007-4d7a-9208-74c75bd3b74c
 ---
-
 # 22.3 Build your EXP News real-time dashboard
 
 ## Objectives

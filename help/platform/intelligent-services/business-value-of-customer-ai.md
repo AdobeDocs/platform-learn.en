@@ -6,8 +6,8 @@ solution: Experience Platform, Intelligent Services
 feature: Customer AI
 kt: 6247
 thumbnail: 40374.jpg
+exl-id: 2dc34425-62e7-4d56-ab13-6855371b1d7d
 ---
-
 # Business Value of Customer AI
 
 This video shows how Customer AI enriches customer profiles with AI-based propensities and empowers customer segmentation and targeting efforts.

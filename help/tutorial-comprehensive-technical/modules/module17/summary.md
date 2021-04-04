@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 91880863-5f89-4967-ad26-ecbf767603bc
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Microsoft Dynamics 365, Journey Orchestration and Adobe Experience Platform! 

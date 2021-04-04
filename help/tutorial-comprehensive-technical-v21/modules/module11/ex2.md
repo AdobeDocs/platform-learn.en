@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 4ca8f6da-2252-4b29-8e05-8f3b8d7b5781
 ---
-
 # 11.2 Configure an Advertising Destination like Google DV360
 
 >[!IMPORTANT]

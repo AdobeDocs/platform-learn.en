@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: 2af0dede-2589-45d4-ab81-946de8c57355
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Query Service and Adobe Experience Platform! 

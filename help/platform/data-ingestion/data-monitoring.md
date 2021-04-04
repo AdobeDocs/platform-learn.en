@@ -6,8 +6,8 @@ role: Data Engineer
 kt: 6547
 
 thumbnail: 330549.jpg
+exl-id: 8c257e96-2c89-4191-a33c-a91860bcef0b
 ---
-
 # Monitor data flow in Adobe Experience Platform
 
 Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Platform's UI and API

@@ -5,8 +5,8 @@ kt: 5342
 audience: Application Developer
 doc-type: tutorial
 activity: develop
+exl-id: 6ff6e173-5b9e-4624-b359-83c2f10d60e5
 ---
-
 # 4.4 Walkthrough of Demo Scenario, now including Alexa
 
 In order to use the demo website, follow the steps in [0.4.2 - Start with a new incognito browser window](../module0/ex4.md) and load the demo brand **Luma**.

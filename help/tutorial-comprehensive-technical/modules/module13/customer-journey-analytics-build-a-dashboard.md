@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: ce5db3e3-383c-4ac6-bdaf-b8272cd10b59
 ---
-
 # 13. Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 
 **Author: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

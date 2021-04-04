@@ -6,8 +6,8 @@ role: Business Practitioner
 feature: Destinations
 kt: 3821
 thumbnail: 29705.jpg
+exl-id: 790ff110-f74b-4b05-a2d4-e447c2a8ff34
 ---
-
 # Understanding Adobe's Real-time Customer Data Platform
 
 Adobe’s Real-time Customer Data Platform (CDP) is an application service built on top of Adobe Experience Platform that brings together known and unknown customer data to create trusted customer profiles with simplified integration, intelligent segmentation, and real-time activation across the digital customer journey.

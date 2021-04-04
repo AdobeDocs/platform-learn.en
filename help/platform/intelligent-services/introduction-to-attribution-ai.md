@@ -6,8 +6,8 @@ solution: Experience Platform, Intelligent Services
 feature: Attribution AI
 kt: 4808
 thumbnail: 32667.jpg
+exl-id: abb4a09d-7cb6-4cb8-a49d-9a6f4a654a52
 ---
-
 # Introduction to Attribution AI
 
 A high-level overview of how marketers and analysts can leverage Attribution AI to understand the impact of their marketing channels and campaigns.

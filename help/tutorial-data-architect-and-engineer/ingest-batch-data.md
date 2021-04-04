@@ -7,8 +7,8 @@ role: Data Engineer
 feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-batch-data.jpg
+exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
 ---
-
 # Ingest batch data
 
 <!-- 1hr-->

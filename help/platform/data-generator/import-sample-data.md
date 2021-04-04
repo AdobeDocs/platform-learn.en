@@ -5,8 +5,8 @@ role: Developer
 feature: API
 kt: 7349
 thumbnail: 7349.jpg
+exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
 ---
-
 # Import sample data to Adobe Experience Platform
 
 In this tutorial, we will be covering how to get your Experience Platform sandbox environment set up with some sample data for you to explore. Using a postman collection you can create mixins, schemas, datasets, and then import sample data into Experience Platform.
@@ -159,6 +159,4 @@ Before you follow the steps, please make sure that you have access to Experience
 
 Resetting a non-production sandbox deletes all resources associated with that sandbox (schemas, datasets, and so on), while maintaining the sandbox’s name and associated permissions. This “clean” sandbox continues to be available under the same name for users that have access to it.
 
-Follow the steps [here](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) to reset a sandbox environment. 
-
-
+Follow the steps [here](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) to reset a sandbox environment.

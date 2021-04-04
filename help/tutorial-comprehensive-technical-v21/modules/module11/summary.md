@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 02ccae72-d41a-4be8-b311-a4ec4c44188b
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Real-time CDP and Adobe Experience Platform! 

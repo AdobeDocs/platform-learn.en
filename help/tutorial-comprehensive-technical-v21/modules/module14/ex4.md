@@ -5,9 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 0febdc53-66eb-44c4-aa0b-5569cc496901
 ---
-
-
 # 14.4 Test your Offer Activity using the demo website
 
 ## 14.4.1 Load website and brand

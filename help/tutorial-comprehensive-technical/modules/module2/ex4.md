@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: a5bd1edc-ec0f-4b6f-8c4a-86df6ec0ae66
 ---
-
 # 2.4 Data Ingestion from Offline Sources
 
 In this exercise, the goal is to onboard external data like CRM Data in Platform.

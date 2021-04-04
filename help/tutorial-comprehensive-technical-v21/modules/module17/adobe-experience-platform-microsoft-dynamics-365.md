@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: a83f6a0a-287c-4415-af8e-1743f8cf89c0
 ---
-
 # 17. Adobe Experience Platform and Microsoft Dynamics 365
 
 **Authors: [Nishant Pithia](https://www.linkedin.com/in/npithia/), [Alastair Malkin](https://www.linkedin.com/in/alastair-malkin-068340/), [Prateek Tewari](https://www.linkedin.com/in/prateektewari/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

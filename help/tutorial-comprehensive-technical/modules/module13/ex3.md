@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 05a01f88-35f0-4695-b09c-95cf75224fbf
 ---
-
 # 13.3 Create a Data View
 
 ## Objectives

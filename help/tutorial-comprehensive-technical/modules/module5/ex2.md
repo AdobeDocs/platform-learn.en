@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 1f851a08-74be-4df6-ab99-b0cbaee5c0dd
 ---
-
 # Exercise 5.2 - Connect Informatica to your AWS S3 bucket
 
 In this exercise, you'll create a connection in Informatica to read data from your AWS S3 bucket.

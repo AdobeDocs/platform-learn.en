@@ -7,8 +7,8 @@ role: Data Engineer
 feature: Data Ingestion
 kt: 4348
 thumbnail: 4348-ingest-streaming-data.jpg
+exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 ---
-
 # Ingest streaming data
 
 <!--1hr-->
@@ -443,4 +443,3 @@ Great job! That was a lot of information about Web SDK and Launch. There is a lo
 Data Engineers, if you like you can skip ahead to the [run queries lesson](run-queries.md).
 
 Data Architects, you can move on to [merge policies](create-merge-policies.md)!
-

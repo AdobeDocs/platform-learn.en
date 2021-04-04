@@ -7,8 +7,8 @@ role: Data Architect
 feature: Profiles
 kt: 4348
 thumbnail: 4348-map-identities.jpg
+exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
 ---
-
 # Map identities
 
 <!-- 30 min-->

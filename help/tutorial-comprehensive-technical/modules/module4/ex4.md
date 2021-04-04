@@ -5,8 +5,8 @@ kt: 5342
 audience: Application Developer
 doc-type: tutorial
 activity: develop
+exl-id: 80ae492f-4047-4fb0-a6c0-135092447eeb
 ---
-
 # 4.4 Walkthrough of Demo Scenario, now including Alexa
 
 Below is a standard script to walk through the demo scenario in the context of Luma Retail. The same script can be applied to any other brand of choice, like Luma Retail or your own custom brand.

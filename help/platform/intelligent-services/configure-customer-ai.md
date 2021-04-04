@@ -6,8 +6,8 @@ solution: Experience Platform, Intelligent Services
 feature: Customer AI
 kt: 4172
 thumbnail: 32665.jpg
+exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16
 ---
-
 # Configure Customer AI
 
 Learn how to create an instance of Customer AI to predict customer behavior.

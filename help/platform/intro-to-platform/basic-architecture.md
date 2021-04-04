@@ -4,8 +4,8 @@ description: This video walks through an overview diagram and explains the prima
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 kt: 4336
 thumbnail: 32456.jpg
+exl-id: f7cf85c9-aba1-474f-88fb-b247a92c9c48
 ---
-
 # Basic architecture of Adobe Experience Platform
 
 This video walks through an overview diagram and explains the primary components of Experience Platform.

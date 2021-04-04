@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: b45b6524-1ddf-4a18-89d8-2bec9083fd0f
 ---
-
 # 20.5 Configure the integration between Stackchat and Adobe Experience Platform
 
 In order for Stackchat to send and receive events from Adobe Experience Platform, you need to create and configure an integration in Stackchat Studio. Before setting up the integration in Stackchat Studio, you need to have created an Adobe I/O project that allows you to interact with the Adobe Experience Platform APIs.

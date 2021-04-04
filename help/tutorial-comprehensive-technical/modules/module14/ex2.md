@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 99fa846f-aae6-422f-a604-53cb625e08e0
 ---
-
 # 14.2 Configure your Offers and Offer Activity
 
 ## 14.2.1 Create your Personalized Offers

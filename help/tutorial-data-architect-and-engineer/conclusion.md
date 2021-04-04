@@ -5,8 +5,8 @@ breadcrumb-title: Conclusion
 description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console. 
 role: Data Architect, Data Engineer
 kt: 4348
+exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
 ---
-
 # Conclusion
 
 <!--5min-->
@@ -50,5 +50,3 @@ Here is another tutorial which you can review to learn more about connections to
 * [Comprehensive Technical Tutorial for Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
 
 Thanks for your efforts and good luck on your journey with Adobe Experience Platform!
-
-

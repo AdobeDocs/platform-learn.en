@@ -4,8 +4,8 @@ breadcrumb-title: Overview
 role: Data Architect, Data Engineer
 kt: 4348
 thumbnail: 4348-overview.jpg
+exl-id: fabbc591-840b-40dc-89af-305626a16338
 ---
-
 # Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 
 <!--5min-->

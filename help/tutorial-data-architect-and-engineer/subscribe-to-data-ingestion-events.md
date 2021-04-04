@@ -7,8 +7,8 @@ role: Data Engineer
 feature: Data Management
 kt: 4348
 thumbnail: 4348-subscribe-to-data-ingestion-events.jpg
+exl-id: f4b90832-4415-476f-b496-2f079b4fcbbc
 ---
-
 # Subscribe to data ingestion events
 
 <!--25min-->

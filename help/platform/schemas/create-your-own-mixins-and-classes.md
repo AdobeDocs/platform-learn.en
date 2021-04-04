@@ -5,8 +5,8 @@ role: Data Architect
 feature: Schemas
 kt: 2698
 thumbnail: 27013.jpg
+exl-id: 411a96d5-4b03-4775-8eca-9c9d444c255b
 ---
-
 # Create your own schema mixins and classes
 
 Mixins are reusable components that define fields in XDM schemas. Adobe Experience Platform includes many standard mixins and you can also define your own mixins to capture data for your business's use case.

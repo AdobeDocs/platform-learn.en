@@ -5,8 +5,8 @@ role: Data Architect, Data Engineer
 feature: Profiles
 kt: 4943
 thumbnail: 33600.jpg
+exl-id: 1cff5492-82bb-484c-a96a-3417288d4766
 ---
-
 # Overview diagram of Real-time Customer Profile
 
 This video walks you through an overview diagram illustrating the Real-time Customer Profile capability of Adobe Experience Platform.

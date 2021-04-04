@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: ee7066cf-0899-457f-a261-9abaeb7f2d81
 ---
-
 # 19.1 Setup your ServiceNow developer instance
 
 ## 19.1.1 Create your ServiceNow account and instance

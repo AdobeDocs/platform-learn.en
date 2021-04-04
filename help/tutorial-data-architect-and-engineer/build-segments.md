@@ -7,8 +7,8 @@ role: Data Architect
 feature: Data Governance
 kt: 4348
 thumbnail: 4348-build-segments.jpg
+exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
 ---
-
 # Build segments
 
 <!-- 30 min-->

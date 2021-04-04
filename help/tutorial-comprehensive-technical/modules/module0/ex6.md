@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 62c8a5a9-e7f5-43bf-8daf-b14c1b7548dd
 ---
-
 # 0.6 Install the Chrome extension for the Experience League documentation
 
 All documentation is available on Experience League by going [here](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html).

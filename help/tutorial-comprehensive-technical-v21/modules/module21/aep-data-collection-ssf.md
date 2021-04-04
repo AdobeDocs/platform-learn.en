@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: dc49f49e-d410-49cf-8d0c-bef252260032
 ---
-
 # 21. Data Collection & Real-time Server Side Forwarding with Launch
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

@@ -6,8 +6,8 @@ role: Business Practitioner
 feature: Destinations
 kt: 3989
 thumbnail: 29762.jpg
+exl-id: bc9fdedd-ce95-4bd2-8b14-30fd74604ea8
 ---
-
 # Understanding the Real-time Customer Data Platform user interface and workflow
 
 This video takes you through Adobe’s Real-time Customer Data Platform (CDP) user interface to show you how schemas, sources, governance, real-time customer profiles, segmentation, destinations, and dashboards come together to provide real-time activation across the digital customer journey.

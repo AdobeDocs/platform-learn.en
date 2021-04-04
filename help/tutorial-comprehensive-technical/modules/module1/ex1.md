@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 5f405c23-cd04-466b-89a0-083ccfcab405
 ---
-
 # 1.1 Understanding Adobe Experience Platform Launch
 
 ## Context

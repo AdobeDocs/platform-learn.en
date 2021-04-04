@@ -7,8 +7,8 @@ role: Data Architect
 feature: Schemas
 kt: 4348
 thumbnail: 4348-model-data-in-schemas.jpg
+exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
 ---
-
 # Model data in schemas
 
 <!-- 60min -->

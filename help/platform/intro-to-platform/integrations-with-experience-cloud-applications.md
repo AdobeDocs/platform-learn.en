@@ -4,8 +4,8 @@ description: This video gives an overview of how Adobe Experience Platform integ
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 kt: 4334
 thumbnail: 32553.jpg
+exl-id: 5135bbc5-dd74-4dca-8449-53f4f424c468
 ---
-
 # Integrations between Adobe Experience Platform and Adobe Experience Cloud Applications
 
 This video gives an overview of how Experience Platform integrates with Experience Cloud applications and capabilities such as Adobe Analytics, Adobe Target, Adobe Campaign, Adobe Experience Manager, Customer Attributes, Audience Library, and Experience Platform Launch.

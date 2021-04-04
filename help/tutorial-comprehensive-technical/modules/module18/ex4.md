@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: aaa6d338-474a-4bc3-b637-08244a641f7c
 ---
-
 # 18.4 Activate Segment
 
 ## 18.4.1 Add Segment to Azure Event Hub Destination

@@ -4,8 +4,8 @@ description: This video gives a quick overview of what Adobe Experience Platform
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 kt: 4804
 thumbnail: 32797.jpg
+exl-id: ce870a27-4ae4-4132-8e21-ef82be32c94f
 ---
-
 # Overview of Experience Platform
 
 This video gives a quick overview of what Experience Platform is and the business challenges it solves.

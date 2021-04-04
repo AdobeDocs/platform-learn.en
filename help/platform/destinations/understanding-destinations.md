@@ -6,8 +6,8 @@ role: Business Practitioner
 feature: Destinations
 kt: 3797
 thumbnail: 29707.jpg
+exl-id: d6e78ec2-f9e0-4794-b585-9bebef9b036b
 ---
-
 # Destinations overview
 
 Destinations are pre-built integrations with destination platforms supported by Adobe’s Real-time Customer Data Platform that activate data to those partners in a seamless way. This video defines the two types of destinations&mdash;Profile Exports and Segment Exports&mdash;and gives examples/use cases for each destination type.

@@ -5,8 +5,8 @@ kt: 5342
 audience: 
 doc-type: tutorial
 activity: develop
+exl-id: eee69a74-1351-4003-ae2e-df23afa4b078
 ---
-
 # 6.1 Journey Orchestration: Setup Event
 
 Login to Journey Orchestration by going to [Adobe Experience Cloud](https://experience.adobe.com).

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 8f777b46-6511-4aa3-9c02-aca7a7dd7911
 ---
-
 # 12.5 Trigger your Orchestrated Customer Journey
 
 In this exercise, you'll test and trigger the Orchestrated Journey you configured in this module.

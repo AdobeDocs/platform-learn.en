@@ -7,8 +7,8 @@ role: Data Architect, Data Engineer
 feature: Sandboxes
 kt: 4348
 thumbnail: 4348-create-a-sandbox.jpg
+exl-id: a04afada-52a1-4812-8fa2-14be72e68614
 ---
-
 # Create a sandbox
 
 <!--25min-->

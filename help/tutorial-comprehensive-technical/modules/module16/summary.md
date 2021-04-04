@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: cf60db7a-e51d-41b9-b8af-4657f5e0ddaf
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Customer Journey Analytics and Adobe Experience Platform! 

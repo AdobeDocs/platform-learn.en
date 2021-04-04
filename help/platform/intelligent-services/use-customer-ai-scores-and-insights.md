@@ -6,8 +6,8 @@ solution: Experience Platform, Intelligent Services
 feature: Customer AI
 kt: 4171
 thumbnail: 32666.jpg
+exl-id: f3f628ef-223a-48d9-979e-86f038268923
 ---
-
 # Use Customer AI Scores and Insights
 
 Learn how to use Customer AI propensity scores and insights to convert and retain customers.

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: ce8dd0ec-f538-4f57-b4b1-69dc3ef9a064
 ---
-
 # 13.1 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 
 ## Objectives
@@ -152,5 +152,3 @@ Next Step: [13.3 Create a Data View](./ex3.md)
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
 [Go Back to All Modules](./../../overview.md)
-
-

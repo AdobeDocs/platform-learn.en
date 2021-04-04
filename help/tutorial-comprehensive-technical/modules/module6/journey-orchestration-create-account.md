@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer
 doc-type: tutorial
 activity: develop
+exl-id: e7a8a370-2c71-451b-89fe-67bbdf72d5a7
 ---
-
 # 6. Journey Orchestration
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

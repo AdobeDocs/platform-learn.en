@@ -6,8 +6,8 @@ role: Business Practitioner
 feature: Destinations
 kt: 5291
 thumbnail: 34558.jpg
+exl-id: 1e766a0f-7b4f-4c3d-a908-5cb4cba8b334
 ---
-
 # Demo of Real-time Customer Data Platform
 
 This video shows how Real-time CDP is used to collect data from multiple sources, merge that data into a single real-time customer profile, and activate that data to create personalized customer experiences.

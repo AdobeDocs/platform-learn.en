@@ -10,8 +10,8 @@ audience: data architect
 doc-type: tutorial
 activity: implement
 thumbnail: 4348-create-merge-policies.jpg
+exl-id: ec862bb2-7aa2-4157-94eb-f5af3a94295f
 ---
-
 # Create merge policies
 
 <!--20 min-->

@@ -5,9 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: d36d3204-3212-4492-bf29-3a21af2ee572
 ---
-
-
 # 14.6 Test your Offer Activity using Journey Orchestration
 
 In this exercise, you'll configure the event and the journey that needs to be triggered when someone likes a product as part of the chatbot flow.

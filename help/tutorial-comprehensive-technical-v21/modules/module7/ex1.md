@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: d53bb890-f4f5-4539-86f0-b0c6cb520474
 ---
-
 # 7.1 Getting Started
 
 ## Objectives
