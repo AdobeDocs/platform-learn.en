@@ -105,6 +105,10 @@ You'll then see this.
 
 ![ServiceNow](./images/jks6.png)
 
+>[!NOTE]
+>
+>If you're using Microsoft Windows, make sure to have **OpenSSL** installed on your computer before continuing. You can find [instructions to install OpenSSL here](../module5/install-openssl.md).
+
 Next, enter the following command in Terminal:
 
 ```javascript
@@ -123,11 +127,24 @@ A this moment, after the previous command, you should now see a new file in your
 
 ![ServiceNow](./images/jks9.png)
 
+>[!NOTE]
+>
+>If you're using Windows, the below command won't work yet. You need to install Java JDK first, which you can find here: [https://www.oracle.com/de/java/technologies/javase-jdk15-downloads.html](https://www.oracle.com/de/java/technologies/javase-jdk15-downloads.html). 
+
 Next, enter the following command in Terminal:
+
+**On macOS:**
 
 ```javascript
 keytool -v -importkeystore -srckeystore aep.p12 -srcstoretype PKCS12 -destkeystore aep.jks -deststoretype JKS
 ```
+
+**On Windows:**
+
+```javascript
+"C:\Program Files\Java\jdk-15.0.1\bin\keytool.exe" -v -importkeystore -srckeystore aep.p12 -srcstoretype PKCS12 -destkeystore aep.jks -deststoretype JKS
+```
+
 
 ![ServiceNow](./images/jks10.png)
 
