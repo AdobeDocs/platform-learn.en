@@ -52,7 +52,7 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
     ![Environment Selection](../assets/data-generator/images/env-selection.png)
 
 13. Make sure that the following environment variables are populated. For below environment variables, value can be obtained from your [Adobe Developer Console](https://console.adobe.io/home) project
-    
+
     *  `CLIENT_SECRET` 
     *  `API_KEY`
     *  `TECHNICAL_ACCOUNT_ID`
@@ -74,7 +74,7 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
 
     *  `JWT_TOKEN`
     *  `ACCESS_TOKEN`
-    
+
 16. Select collections and then choose the import option
 
     ![Collections](../assets/data-generator/images/collections.png)
@@ -86,12 +86,12 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
     *   `Luma-CRM-Data.postman_collection.json`
     *   `Luma-Product-Catalog.postman_collection.json`
     *   `Luma-Offline-Purchase-Events.postman_collection.json`
-   
+
     ![Collections Import](../assets/data-generator/images/collection-files.png)
 
 
 18. Open the `Authentication` collection, Select the `IMS: JWT Generate + Auth via User Token` POST request, and click `SEND` to authenticate and obtain the access token.
-    
+
     ![Collections Import](../assets/data-generator/images/authentication.png)
 
 19. Review the environment variables, and you can notice that the `JWT_TOKEN` and `ACCESS_TOKEN` are now populated.
@@ -146,7 +146,7 @@ Before you follow the steps, please make sure that you have access to Experience
 12. Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
 13. Open the `Luma Loyalty Dataset` dataset and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested.
      ![Loyalty Dataset](../assets/data-generator/images/loyalty-dataset.png)
-    
+
 14. Repeat steps 10 - 13 to run below collections:
     * Run `Luma-CRM-Data.postman_collection.json` to build mixins, schema, dataset, and to ingest sample CRM data to Adobe Experience Platform
       * `newman run Luma-CRM-Data.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
