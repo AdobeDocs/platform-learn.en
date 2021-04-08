@@ -68,6 +68,7 @@ doc-type: video
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
   + [Configure the Azure Blob Destination](destinations/configure-the-azure-blob-destination.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
+  + [How to configure a Social destination](destinations/configure-a-social-destination.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
