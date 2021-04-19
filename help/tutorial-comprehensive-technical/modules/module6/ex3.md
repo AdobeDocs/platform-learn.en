@@ -1,6 +1,6 @@
 ---
 title: Module 6, Exercise
-description: 
+description: Module 6.3 - Update your Configuration ID and Test your Journey
 kt: 5342
 audience: 
 doc-type: tutorial

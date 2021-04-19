@@ -1,6 +1,6 @@
 ---
 title: Use the Recipe Builder template
-description: 
+description: Use the Recipe Builder template
 role: Business Practitioner
 feature: Data Science Workspace
 kt: 6787

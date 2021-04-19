@@ -1,6 +1,6 @@
 ---
 title: Module 6, Exercise
-description: 
+description: Module 6.1 Journey Orchestration - Setup Event
 kt: 5342
 audience: 
 doc-type: tutorial
