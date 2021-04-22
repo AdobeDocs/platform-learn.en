@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: aa91b9d0-dfb5-43d1-9410-b80e7a33d1da
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Query Service and Adobe Experience Platform! 
@@ -36,7 +36,7 @@ You can now:
 
 - AEP Tech Blog: [Adobe Experience Platform Now Offers the Power and Ease of Query Service](https://medium.com/adobetech/adobe-experience-platform-now-offers-the-power-and-ease-of-query-service-8c25ecf8eb1b)
 - AEP Tech Blog: [Accelerating Intelligent Insights with Adobe Experience Platform Data Science Workspace](https://medium.com/adobetech/accelerate-intelligent-insights-with-adobe-experience-platform-data-science-workspace-89538bacbbea)
-- Experience Platform Documentation: [Query Service overview](https://docs.adobe.com/content/help/en/experience-platform/query/home.html)
+- Experience Platform Documentation: [Query Service overview](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
 
 [Go Back to Module 7](./query-service.md)
 

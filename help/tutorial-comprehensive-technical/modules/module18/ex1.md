@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: dab2bb50-a582-46ed-9c8c-7ba5f189e239
 ---
-
 # 18.1 Configure your Microsoft Azure EventHub environment
 
 Azure Event Hubs is a highly scalable publish-subscribe service that can ingest millions of events per second and stream them into multiple applications. This lets you process and analyze the massive amounts of data produced by your connected devices and applications.

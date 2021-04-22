@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: d99b938f-98ef-48d0-80f0-b90fc975047a
 ---
-
 # 7.5 Explore the dataset with Power BI
 
 Open Microsoft Power BI Desktop.

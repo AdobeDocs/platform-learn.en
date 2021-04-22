@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 9172aa5b-dc60-44dd-ac33-bcf1557ccffb
 ---
-
 # 17.2 Connect Dynamics to Adobe Experience Platform via RTCDP and Journey Orchestration
 
 ## 17.2.1 Update the Contact Entity in Microsoft Dynamics 365

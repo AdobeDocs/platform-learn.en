@@ -3,12 +3,13 @@ cloud: experience platform
 product: experience platform
 solution: Experience Platform
 solution-title: Documentation
-solution-hub-url: https://docs.adobe.com/content/help/en/experience-platform/landing/home.html
+solution-hub-url: https://experienceleague.adobe.com/docs/experience-platform/landing/home.html
 getting-started-title: Experience League
 getting-started-url: https://experienceleague.adobe.com/#recommended/solutions/experience-platform
 tutorials-title: Tutorials
 tutorials-url: /content/help/en/platform-learn/tutorials/overview.html
 git-repo: https://github.com/AdobeDocs/platform-learn.en
+feature-set: Platform
 index: yes
 mini-toc-levels: 2
 type: Tutorial

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 16c15cbd-7bbd-415c-a5fc-1681db08c11c
 ---
-
 # 0.1 Use Demo System Next to setup your Launch property
 
 After signing up for the Comprehensive Technical Tutorial for Adobe Experience Platform, there's an automated process that will provide you with access to Demo System Next, so that you can access and run the below configuration.

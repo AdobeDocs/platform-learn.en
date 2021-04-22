@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: 4f1d615b-92bb-4675-8b3c-4b3a0ca69797
 ---
-
 # 15. Data Science Workspace - Car Insurance Sales Propensity
 
 In this module, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Car Insurance Sales Propensity Model, schedule the model to re-train, and prepare the model for Real-time Scoring.

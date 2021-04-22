@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: e226b0eb-0e0d-4ac4-b2ec-658effc48530
 ---
-
 # 8. Data Science Workspace - Popularity Based Recommendations
 
 **Authors: [Jo O'Connor](https://www.linkedin.com/in/jcoc17/), [Jonathan Lancar](https://www.linkedin.com/in/jonathanlancar/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

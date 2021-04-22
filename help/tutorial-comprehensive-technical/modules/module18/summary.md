@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: eeeaa7e0-6521-406a-ad37-6174e9eb0bcd
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Microsoft Azure Event Hub and Adobe Experience Platform! 

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 1ddea7ea-bea7-4695-9fca-cd5270babcb2
 ---
-
 # 9.4 Retrieve Datasets in Platform
 
 As part of the Google Tag Manager Rule configuration, we'll define rules that will send behavioral and profile data to Platform. When defining a tag and trigger in Google Tag Manager to send behavioral and/or profile data to Adobe Experience Platform, we'll need to define some variables in Google Tag Manager:

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: b2906476-bc2c-4d1e-ba5c-ee20b7f87510
 ---
-
 # 7.4 Power BI/Tableau
 
 ## Objective

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 857de74d-64d4-43fe-92e2-d474dc300b2d
 ---
-
 # 12. Journey Orchestration - External Weather API, SMS Action & more
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

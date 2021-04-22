@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: fcef20e0-2afb-4982-b4fb-504f63d95893
 ---
-
 # 13.1 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 
 ## Objectives
@@ -98,7 +98,7 @@ As mentioned, we can set different Person IDs for each dataset. This allows you 
 
 The name of the Person ID field isn't important, as long as the value in the Person ID fields correspond. Let say we have `email` in one dataset and `emailAddress` in another dataset defined as Person ID. If `delaigle@adobe.com` is the same value for the Person ID-field on both datasets, CJA will be able to stitch the data.
 
-Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html). 
+Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html). 
 
 ### Stitching the data using the Person ID
 
@@ -155,5 +155,3 @@ Next Step: [13.3 Create a Data View](./ex3.md)
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
 [Go Back to All Modules](./../../overview.md)
-
-

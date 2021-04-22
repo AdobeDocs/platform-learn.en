@@ -1,16 +1,12 @@
 ---
 title: Behind the Scenes&#58; A Customer Experience Powered by Adobe Experience Platform
 description: In the previous video we saw how an example brand, Luma, was able to create a rich, rewarding and relevant customer experience. This video looks at how Adobe Experience Platform is used to accomplish this journey.
-feature: platform
-topics:
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 kt: 4340
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 28144.jpg
+exl-id: 5ae7707d-799d-4979-9e53-b882e74324ad
 ---
-
-# Behind the Scenes: A Customer Experience Powered by Experience Platform
+# Behind the scenes: A customer experience powered by Adobe Experience Platform
 
 In the previous video we saw how an example brand, Luma, was able to create a rich, rewarding and relevant customer experience. This video looks at how Adobe Experience Platform is used to accomplish this journey.
 
@@ -27,4 +23,4 @@ In the previous video we saw how an example brand, Luma, was able to create a ri
 * [Interface Tour of Experience Platform (video)](interface-tour.md)
 * [Roles and Project Phases (video)](roles-and-project-phases.md)
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
-* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

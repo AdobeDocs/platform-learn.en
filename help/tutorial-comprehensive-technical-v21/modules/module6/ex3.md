@@ -5,8 +5,8 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: 43010729-1e1b-482b-95a4-1e1077986158
 ---
-
 # 6.3 Update your Configuration ID and Test your Journey
 
 ## 6.3.1 Update your Configuration ID

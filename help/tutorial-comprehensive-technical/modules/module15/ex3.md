@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: e5c5533c-4732-467c-8a76-c6489e435991
 ---
-
 # 15.3 Operationalize your model using a Recipe
 
 In this exercise, you'll take your model and operationalize it in Adobe Experience Platform by creating a recipe.

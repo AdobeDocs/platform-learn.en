@@ -1,6 +1,6 @@
 ---
 title: Module 6, Exercise
-description: 
+description: Module 6.4 - How to create your own email in Adobe Campaign
 kt: 5342
 audience: 
 doc-type: tutorial

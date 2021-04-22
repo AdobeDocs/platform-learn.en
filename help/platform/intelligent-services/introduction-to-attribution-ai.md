@@ -1,15 +1,13 @@
 ---
 title: Introduction to Attribution AI in Adobe Experience Platform
 description: A high-level overview of how marketers and analysts can leverage Attribution AI to understand the impact of their marketing channels and campaigns.
-feature: intelligent-services, attribution-ai
-topics:
+role: Business Practitioner
+solution: Experience Platform, Intelligent Services
+feature: Attribution AI
 kt: 4808
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 32667.jpg
+exl-id: abb4a09d-7cb6-4cb8-a49d-9a6f4a654a52
 ---
-
 # Introduction to Attribution AI
 
 A high-level overview of how marketers and analysts can leverage Attribution AI to understand the impact of their marketing channels and campaigns.
@@ -22,4 +20,4 @@ A high-level overview of how marketers and analysts can leverage Attribution AI 
 * [Business Value of Attribution AI (video)](business-value-of-attribution-ai.md)
 * [Configure Attribution AI (video)](configure-attribution-ai.md)
 * [Use Attribution AI Scores and Insights (video)](use-attribution-ai-scores-and-insights.md)
-* [Attribution AI (documentation)](https://docs.adobe.com/content/help/en/experience-platform/intelligent-services/attribution-ai/overview.html)
+* [Attribution AI (documentation)](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)

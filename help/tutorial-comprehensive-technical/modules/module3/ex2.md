@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 0246060e-e162-4362-9162-e68d25d97f73
 ---
-
 # 3.2 - Visualize your own Real-time Customer Profile - UI
 
 In this exercise, you'll login to Adobe Experience Platform and view your own Real-time Customer Profile in the UI.

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: d7341057-2292-4d93-91ec-cf6095223cfb
 ---
-
 # 2. Foundation - Data Ingestion
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

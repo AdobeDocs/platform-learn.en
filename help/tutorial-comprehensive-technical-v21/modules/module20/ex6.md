@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 8e1da14c-85d7-49a4-97fa-34c0b6da753c
 ---
-
 # 20.6 Test your chatbot on the demo website
 
 Stackchat's [web messenger widget](https://www.npmjs.com/package/@stackchat/web-messenger) allows you to add your Luma bot to your Luma demo site. In this section, you'll configure the integration in Stackchat Studio, build the website project and then add the JavaScript to your Luma demo site to enable real-time web chat.

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: d0d2cc42-c5d0-4310-a1a1-224097127bad
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Customer Journey Analytics and Adobe Experience Platform! 
@@ -34,8 +34,8 @@ You can now:
 
 ## Check this out
 
-- AEP Tutorials: [Customer Journey Analytics Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/understanding-customer-journey-analytics.html)
-- Experience Platform Documentation: [Customer Journey Analytics - Product Documentation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)
+- AEP Tutorials: [Customer Journey Analytics Tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/cja/understanding-customer-journey-analytics.html)
+- Experience Platform Documentation: [Customer Journey Analytics - Product Documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 

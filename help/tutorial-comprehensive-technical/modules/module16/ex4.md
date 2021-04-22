@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 94ee64a1-4e80-48e1-9442-ff30f6285045
 ---
-
 # 16.4 Load data from BigQuery into Adobe Experience Platform
 
 ## Objectives

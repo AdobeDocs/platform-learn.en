@@ -1,25 +1,22 @@
 ---
 title: Monitor data flow in Adobe Experience Platform
-description: Understand how to monitor and track data that gets ingested into Adobe Experience Platform using platform UI and API
-feature: data ingestion
-topics:
+description: Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Platform's UI and API
+feature: Data Ingestion
+role: Data Engineer
 kt: 6547
-audience: marketer, engineer
-doc-type: video
-activity: understand
-thumbnail: 330549.jpg
----
 
+thumbnail: 330549.jpg
+exl-id: 8c257e96-2c89-4191-a33c-a91860bcef0b
+---
 # Monitor data flow in Adobe Experience Platform
 
-Understand how to monitor and track data that gets ingested into Adobe Experience Platform using platform UI and API
+Learn how to monitor and track data that gets ingested into Adobe Experience Platform using Platform's UI and API
 
 >[!VIDEO](https://video.tv.adobe.com/v/330549?quality=12&learn=on)
 
 ## Additional Resources
 
-* [Adobe Experience Platform Postman Samples](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/mapping-service-api.yaml)
-* [Experience Platform API postman collection](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
+* [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
 * [Flow Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/flow-service.yaml)
 * [Observability Insights API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/observability-insights.yaml)
 * [Postman documentation](https://learning.postman.com/docs/getting-started/introduction/)

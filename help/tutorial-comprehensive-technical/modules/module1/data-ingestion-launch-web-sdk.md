@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: fe95697e-9122-41d7-9440-3cba1945e10b
 ---
-
 # 1. Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension
 
 **Author: [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

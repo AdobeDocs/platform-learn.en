@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: bfae4690-d75b-4ee7-936b-578198b2cabb
 ---
-
 # 21.2 Update your Edge Configuration to make data available to your Launch Server Side property
 
 >[!NOTE]

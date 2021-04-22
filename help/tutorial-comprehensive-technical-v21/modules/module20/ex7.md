@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 149148c7-fe7e-4207-9942-29708327df1d
 ---
-
 # 20.7 Connect your chatbot to Facebook Messenger
 
 ![FB_Messenger_logo](./images/FB_Messenger_logo-crunch.png)

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: 6f1e321c-4d78-4492-99e2-ec178c924334
 ---
-
 # FAQ
 
 On this page, you'll find answers to common questions related to this specific ML model.

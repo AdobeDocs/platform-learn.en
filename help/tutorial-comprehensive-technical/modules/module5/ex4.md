@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 551a332a-6ef8-42ff-8397-6b3f4e9efe9f
 ---
-
 # 5.4 Ingest 2nd- and 3rd-party data into Adobe Experience Platform
 
 In this exercise, you'll learn how to import 2nd- and 3rd-party data into Informatica, join datasets and ingest transformed data into Adobe Experience Platform as Experience Events.

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 92bd76a8-d3fc-4d33-81d8-b3da70a6ac94
 ---
-
 # 9.2 Setup Google Analytics & link it to GTM
 
 Go to [https://analytics.google.com/](https://analytics.google.com/) and login with your Google Account.

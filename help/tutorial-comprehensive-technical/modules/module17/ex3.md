@@ -5,9 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 8b0b33e8-c273-4d91-8d58-1be77fbfa8de
 ---
-
-
 # 17.3 Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics
 
 In this exercise, you'll be doing the following tasks:

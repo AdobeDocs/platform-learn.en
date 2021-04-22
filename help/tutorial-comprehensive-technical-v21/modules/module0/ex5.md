@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 83e55ecd-24e9-4460-ba0a-885b8df049e0
 ---
-
 # 0.5 Use the mobile app
 
 The mobile application that is used in the context of this demo and enablement environment is only available for **iOS**.

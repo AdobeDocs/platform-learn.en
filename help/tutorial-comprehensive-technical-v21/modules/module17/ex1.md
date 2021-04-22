@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 780a50a7-cd60-4394-9a6b-53434c534a43
 ---
-
 # 17.1 Create your Microsoft Dynamics 365 account
 
 In this exercise you'll create your Microsoft Azure and Dynamics 365 account.

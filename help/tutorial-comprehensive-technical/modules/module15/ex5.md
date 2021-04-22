@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: 19261ef0-f717-435b-b806-709d88fb3a92
 ---
-
 # 15.5 Publish your Recipe as a Scheduled Service
 
 Finally, you can select your best experiment and Publish it as a Scheduled Service which will score customers and their propensity to buy on a recurring basis.

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 71f6ac98-8f1c-443a-b117-bebb950661b5
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Journey Orchestration and Adobe Experience Platform! 
@@ -24,8 +24,8 @@ Let's highlight the benefits of using Journey Orchestration and Adobe Experience
 
 - AEP Tech Blog: [Journey Orchestration in an Omnichannel World](https://medium.com/adobetech/journey-orchestration-in-an-omnichannel-world-3a2d32d556d9)
 - AEP Tech Blog: [Demonstrating the Power of Adobe’s New Journey Orchestration Service to Build Personalized Omnichannel Experiences in Real-Time](https://medium.com/adobetech/demonstrating-the-power-of-adobes-new-journey-orchestration-service-to-build-personalized-aa60d88cd34)
-- AEP Tutorials: [Journey Orchestration Tutorials](https://docs.adobe.com/content/help/en/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html)
-- Experience Platform Documentation: [Journey Orchestration Help](https://docs.adobe.com/content/help/en/journeys/using/journey-orchestration-home.html)
+- AEP Tutorials: [Journey Orchestration Tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/understanding-journey-orchestration.html)
+- Experience Platform Documentation: [Journey Orchestration Help](https://experienceleague.adobe.com/docs/journeys/using/journey-orchestration-home.html)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 

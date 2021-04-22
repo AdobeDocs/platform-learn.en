@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 3e3a5049-926c-460f-b233-35974702f00a
 ---
-
 # 0. Getting started
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

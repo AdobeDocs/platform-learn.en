@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: bada506a-dc19-4978-9628-88a0e9a682f2
 ---
-
 # 20.1 Onboard to Stackchat
 
 ## 20.1.1 - Create Your Stackchat Account

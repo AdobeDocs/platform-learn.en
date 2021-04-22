@@ -5,8 +5,8 @@ kt: 5342
 audience: Developer
 doc-type: tutorial
 activity: develop
+exl-id: 973ac61a-cd76-4f9b-9c8b-0202eeabe871
 ---
-
 # 4. Voice Assistant - Amazon Alexa
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

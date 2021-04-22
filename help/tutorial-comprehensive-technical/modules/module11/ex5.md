@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 9fc940fd-da61-428e-b091-41a91e4fb7e8
 ---
-
 # 11.5 Take Action: send your segment to an S3-destination
 
 Adobe Experience Platform also has the ability to share Audiences to Email Marketing Destinations such as Salesforce Marketing Cloud, Oracle Eloqua, Oracle Responsys and Adobe Campaign.

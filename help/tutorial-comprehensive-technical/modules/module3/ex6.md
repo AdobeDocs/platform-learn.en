@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 7bbeef89-742d-49f1-9393-535618761b8a
 ---
-
 # 3.6 - See you Real-time Customer Profile in action in the Call Center
 
 In this exercise, you'll follow a script and complete some tasks on the website.

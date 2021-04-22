@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: 6f05f54d-390b-4b42-9b79-be6f5d686b5a
 ---
-
 # 7.3 Queries, queries, queries...  and churn analysis
 
 ## Objective
@@ -174,7 +174,7 @@ The majority of the business logic requires gathering the touch-points for a cus
 
 ### Adobe Defined Functions
 
-Adobe has added a set of **Adobe Defined Functions** to the standard SQL syntax that allow you to better understand your experience data. In the next couple of queries you will learn about these ADF functions. You can find more information and the complete list [in the documentation](https://docs.adobe.com/content/help/en/experience-platform/query/sql/adobe-defined-functions.html).
+Adobe has added a set of **Adobe Defined Functions** to the standard SQL syntax that allow you to better understand your experience data. In the next couple of queries you will learn about these ADF functions. You can find more information and the complete list [in the documentation](https://experienceleague.adobe.com/docs/experience-platform/query/sql/adobe-defined-functions.html).
 
 ### What do people do on the site before reaching the "Cancel Service" page as the 3rd page in a session?
 

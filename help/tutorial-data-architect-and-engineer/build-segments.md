@@ -3,15 +3,12 @@ title: Build segments
 seo-title: Build segments | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Build segments
 description: In this lesson, we will build some segments based on the profile data we have ingested in the previous lessons.
-feature: segmentation
-topics: 
+role: Data Architect
+feature: Data Governance
 kt: 4348
-audience: data architect
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-build-segments.jpg
+exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
 ---
-
 # Build segments
 
 <!-- 30 min-->
@@ -105,7 +102,7 @@ You will create the next segment by leveraging the relationship you built betwee
 Click on **[!UICONTROL Segments]** in the left navigation and let's take a moment to review our three segments:
 
 * Note that two of our segments are batch segments and one is a streaming segment. 
-* Platform will default to streaming segmentation, whenever possible, qualifying the customer for a segment as soon as they meet the criteria. When segment definitions are too complex for streaming, they will automatically convert to batch. In this case, the two segments defaulted to batch because the look-back window of the purchase events was greater than seven days. For a complete and current list of streaming limitations, see [the documentation](https://docs.adobe.com/content/help/en/experience-platform/segmentation/ui/streaming-segmentation.html).
+* Platform will default to streaming segmentation, whenever possible, qualifying the customer for a segment as soon as they meet the criteria. When segment definitions are too complex for streaming, they will automatically convert to batch. In this case, the two segments defaulted to batch because the look-back window of the purchase events was greater than seven days. For a complete and current list of streaming limitations, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/streaming-segmentation.html).
 * The batch jobs run on a daily schedule, which can be toggled off.
   
 ![Bought same product in the last 30 days segment](assets/segment-review.png)

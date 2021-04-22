@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 873097f2-33ed-41b8-a4b1-01af72a83d07
 ---
-
 # Exercise 4 - Create a segment - UI
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's Segment Builder.

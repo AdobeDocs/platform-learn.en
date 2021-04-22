@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 3bebba80-3833-43b7-8d5a-5f409cfb60e4
 ---
-
 # 1.4 Client-side Web Data Collection
 
 ## 1.4.1 Validate the data in the request

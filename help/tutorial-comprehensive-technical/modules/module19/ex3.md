@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 91277b78-bfd0-4bce-b8ba-1b6dd00adc12
 ---
-
 # 19.3 Setup your ServiceNow environment
 
 >[!NOTE] 

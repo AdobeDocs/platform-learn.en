@@ -1,24 +1,24 @@
 ---
 title: Adobe Experience Platform Tutorials
-seo-title: Adobe Experience Platform Tutorials
 description: Learn about Adobe Experience Platform
+doc-type: overview-page
+exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 ---
-
 # Adobe Experience Platform Tutorials
 
 Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences. Use these videos and tutorials to learn the many components of Experience Platform.
 
 ## What's New
 
-
-* **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
+* **[Data monitoring (Video)](/help/platform/data-ingestion/data-monitoring.md)**
+    *Monitor and track data that gets ingested into Platform*
+* **[Create merge policies (Video)](/help/platform/profiles/create-merge-policies.md)**
+    *Combine datasets from disparate sources*
+* **[Union schemas overview (Video)](/help/platform/profiles/union-schemas-overview.md)**
+    *See all of the fields contained within schemas of the same class*
+* **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
     *Get hands-on with multiple Platform features with this multi-page tutorial*
-* **[Business Value of Experience Platform and Magento Commerce (Video)](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)**
-    *Power intelligent commerce with Platform and Magento*
-* **[Business Value of Attribution AI (Video)](/help/platform/intelligent-services/business-value-of-attribution-ai.md)**
-    *Measure and optimize marketing and advertising spend*
-* **[Business Value of Customer AI (Video)](/help/platform/intelligent-services/business-value-of-customer-ai.md)**
-    *Enrich customer profiles with AI-based propensities*
+
 
 ## Staff Picks
 
@@ -38,11 +38,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
   </td>
   <td>
-    <a href="https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
       <img alt="thumbnail image for the 'Getting Started with Experience Platform for Data Architects and Data Engineers' tutorial" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
-      <a href="https://docs.adobe.com/content/help/en/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
     <strong>Getting Started for Data Architects and Data Engineers</strong>
     </a>
     </div>
@@ -51,11 +51,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
     <p>
   </td>
   <td>
-    <a href="data-ingestion/understanding-source-connectors.md">
+    <a href="sources/overview.md">
       <img alt="thumbnail image for the 'Understanding Source connectors' video" src="assets/thumb_Sources.png" />
     </a>
     <div>
-      <a href="data-ingestion/understanding-source-connectors.md">
+      <a href="sources/overview.md">
     <strong>Understanding Source Connectors</strong>
     </a>
     </div>

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 621e5bad-8224-4f1c-9f46-a8c3eb8d6a7f
 ---
-
 # 20.3 Build your Luma Bot - Cloud Functions
 
 Cloud Functions allow your bot to execute custom [Node.js](https://nodejs.org/) code at runtime, giving your bot the power to display dynamic chat content. Let's add some cloud functions to your Luma Bot that will, among other things, display Luma product data that we fetch from an API.

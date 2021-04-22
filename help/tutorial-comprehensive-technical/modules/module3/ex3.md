@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 551b43b4-4930-406e-b38b-05827cac409b
 ---
-
 # 3.3 - Visualize your own real-time customer profile - API
 
 In this exercise, you'll use Postman and Adobe I/O to query Adobe Experience Platform's APIs to view your own real-time customer profile.

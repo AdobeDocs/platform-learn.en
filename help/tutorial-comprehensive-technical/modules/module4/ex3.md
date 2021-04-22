@@ -5,8 +5,8 @@ kt: 5342
 audience: Application Developer
 doc-type: tutorial
 activity: develop
+exl-id: bb129b4c-e05b-4455-8127-f93b20f2fa56
 ---
-
 # Exercise 4.3: Use your Alexa skill
 
 You can demonstrate your Alexa skill and its interaction with Platform, even if you do not have a real Alexa device with a display.

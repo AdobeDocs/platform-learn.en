@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 32bd0370-52f1-44ab-bdc9-b7559a0f68d0
 ---
-
 # 20.2 Build your Luma Bot
 
 ## 20.2.1 Create a new bot

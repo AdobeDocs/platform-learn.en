@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: e27d283c-4ad5-4c2a-b008-69de7754c22c
 ---
-
 # 7. Query Service
 
 **Authors: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

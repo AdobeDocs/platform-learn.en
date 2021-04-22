@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: cf60db7a-e51d-41b9-b8af-4657f5e0ddaf
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Customer Journey Analytics and Adobe Experience Platform! 
@@ -32,9 +32,9 @@ You can now:
 
 ## Check this out
 
-- AEP Help Center: [Source Connectors - Google BigQuery connector](https://docs.adobe.com/content/help/en/experience-platform/sources/connectors/databases/bigquery.html)
-- AEP Tutorials: [Customer Journey Analytics Tutorials](https://docs.adobe.com/content/help/en/platform-learn/tutorials/cja/understanding-customer-journey-analytics.html)
-- Experience Platform Documentation: [Customer Journey Analytics - Product Documentation](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-landing.html)
+- AEP Help Center: [Source Connectors - Google BigQuery connector](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/databases/bigquery.html)
+- AEP Tutorials: [Customer Journey Analytics Tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/cja/understanding-customer-journey-analytics.html)
+- Experience Platform Documentation: [Customer Journey Analytics - Product Documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
 
 [Go Back to Module 16](./customer-journey-analytics-bigquery-gcp.md)
 

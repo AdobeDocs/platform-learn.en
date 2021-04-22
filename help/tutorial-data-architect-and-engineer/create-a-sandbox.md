@@ -3,15 +3,12 @@ title: Create a sandbox
 seo-title: Create a sandbox | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Create a sandbox
 description: In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.
-feature: sandboxes
-topics: 
+role: Data Architect, Data Engineer
+feature: Sandboxes
 kt: 4348
-audience: data architect,data engineer
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-create-a-sandbox.jpg
+exl-id: a04afada-52a1-4812-8fa2-14be72e68614
 ---
-
 # Create a sandbox
 
 <!--25min-->

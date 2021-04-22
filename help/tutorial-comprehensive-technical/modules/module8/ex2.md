@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: f4925510-954a-405e-b628-14df27006b72
 ---
-
 # 8.2 Model Authoring and Operationalization
 
 In Exercise 8.1 you generated the training data required to power your machine learning model. In this lesson you'll learn you how you can use this data to author a machine learning model. In the real world, creating a dataset and a machine learning model will be an iterative process.

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 5d6a141f-46b4-4c5e-b913-9f1454335370
 ---
-
 # 18.5 Create your Microsoft Azure Project
 
 ## 18.5.1 Getting familiar with Azure Event Hub functions

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 96a5ab1f-0ebb-469b-99c0-8efb4ea012e2
 ---
-
 # 9.3 Configure Google Tag Manager Variables
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.

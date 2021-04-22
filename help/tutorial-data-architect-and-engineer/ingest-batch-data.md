@@ -3,15 +3,12 @@ title: Ingest batch data
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Ingest batch data
 description: In this lesson, you will ingest batch data into Experience Platform using a variety of methods.
-feature: data ingestion
-topics: 
+role: Data Engineer
+feature: Data Ingestion
 kt: 4348
-audience: data engineer
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-ingest-batch-data.jpg
+exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
 ---
-
 # Ingest batch data
 
 <!-- 1hr-->
@@ -69,7 +66,7 @@ First, get the sample data and customize it for your tenant:
 >
 >There are a few options, **[!UICONTROL Error diagnostics]** and **[!UICONTROL Partial ingestion]** that you will see on various screens in this lesson. These options aren't covered in the tutorial. Some quick info:
 >
->* Enabling error diagnostics generates data about the ingestion of your data, which you can then review using the Data Access API. Learn more about it in [the documentation](https://docs.adobe.com/content/help/en/experience-platform/data-access/home.html).
+>* Enabling error diagnostics generates data about the ingestion of your data, which you can then review using the Data Access API. Learn more about it in [the documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
 >* Partial ingestion allows you to ingest data containing errors, up to a certain threshold which you can specify. Learn more about it in [the documentation](https://docs.adobe.com/help/en/experience-platform/ingestion/batch/partial.html)
 
 ### Validate the data
@@ -105,7 +102,7 @@ If you subscribed to data ingestion events in the previous lesson, check your un
 
 ![Data ingestion webhook](assets/ingestion-loyalty-webhook.png)
 
-See the [documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
+See the [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
 
 ## Ingest data in batches with Platform API
 
@@ -216,7 +213,7 @@ If you subscribed to data ingestion events in the previous lesson, check your un
 
 ![Data ingestion webhook](assets/ingestion-crm-webhook.png)
 
-See the [documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
+See the [documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/quality/subscribe-events.html#available-status-notification-events) for more details on the notifications.
 
 ## Ingest data with Workflows
 
@@ -272,7 +269,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 
 >[!NOTE]
 >
->The Offline Purchase data we will be using in this exercise contains datetime data. Datetime data should be in either [ISO 8061 formatted strings](https://www.iso.org/iso-8601-date-and-time-format.html) ("2018-07-10T15:05:59.000-08:00") or Unix Time formatted in milliseconds (1531263959000) and are converted at ingestion time to the target XDM type. For more on data conversion and other constraints, see [the Batch Ingestion API documentation](https://docs.adobe.com/content/help/en/experience-platform/ingestion/batch/api-overview.html#types).
+>The Offline Purchase data we will be using in this exercise contains datetime data. Datetime data should be in either [ISO 8061 formatted strings](https://www.iso.org/iso-8601-date-and-time-format.html) ("2018-07-10T15:05:59.000-08:00") or Unix Time formatted in milliseconds (1531263959000) and are converted at ingestion time to the target XDM type. For more on data conversion and other constraints, see [the Batch Ingestion API documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/api-overview.html#types).
 
 ### Download, prep, and upload the data to your preferred cloud storage vendor
 

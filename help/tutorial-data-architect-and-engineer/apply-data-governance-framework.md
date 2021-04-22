@@ -2,23 +2,20 @@
 title: Apply the data governance framework
 seo-title: Apply the data governance framework | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Apply the data governance framework
-description: In this lesson you will apply the data governance framework to the data you've ingested into your sandbox. 
-feature: governance
-topics: 
+description: In this lesson, you will apply the data governance framework to the data you've ingested into your sandbox. 
+role: Data Architect
+feature: Data Governance
 kt: 4348
-audience: data architect
-doc-type: tutorial
-activity: implement
 thumbnail: 4348-apply-data-governance-framework.jpg
+exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
 ---
-
 # Apply the data governance framework
 
 <!--15min-->
 
 In this lesson, you will apply the data governance framework to the data you've ingested into your sandbox. 
 
-Adobe Experience Platform Data Governance allows you to manage customer data and ensure compliance with regulations, restrictions, and policies applicable to data use. It plays a key role within Experience Platform at various levels, including cataloging, data lineage, data usage labeling, data usage policies, and controlling usage of data for marketing actions.
+Adobe Experience Platform Data Governance allows you to manage customer data and ensure compliance with regulations, restrictions, and policies applicable to data use. It plays a key role within Experience Platform at various levels, including  controlling usage of data.
 
 Before you begin the exercises, watch these short videos about data governance:
 >[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
@@ -32,7 +29,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * Permission items **[!UICONTROL Data Governance]** > **[!UICONTROL Manage Usage Labels]**, **[!UICONTROL Manage Data Usage Policies]** and **[!UICONTROL View Data Usage Policies]**
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
-* User-role access to the `Luma Tutorial Platform` product profile
+* User-role access to the `Luma Tutorial Platform` Product Profile
 
 ## Business Scenario
 
@@ -45,8 +42,7 @@ The first step in the data governance process, is to apply governance labels to 
 1. In the Platform UI, click **[!UICONTROL Policies]** in the left navigation
 1. Click the **[!UICONTROL Labels]** tab to see all of the labels in the account.
 
-Note that there are a large number of out-of-the-box labels, plus you can create your own via the [!UICONTROL Create label] button
-There are three main types: [!UICONTROL Contract labels], [!UICONTROL Identity labels], and [!UICONTROL Sensitive labels] that correspond to common reasons data might be restricted. Finally, note how each of the labels has a [!UICONTROL Friendly Name] and a short [!UICONTROL Name] which is just an abbreviation of the type and a number. Finally, note that the [!DNL C1] label is for "No third-party export" which is what we need for our Loyalty policy.
+Note that there are many out-of-the-box labels, plus you can create your own via the [!UICONTROL Create label] button. There are three main types: [!UICONTROL Contract labels], [!UICONTROL Identity labels], and [!UICONTROL Sensitive labels] that correspond to common reasons data might be restricted. Finally, note how each of the labels has a [!UICONTROL Friendly Name] and a short [!UICONTROL Name] which is just an abbreviation of the type and a number. Finally, note that the [!DNL C1] label is for "No third-party export" which is what we need for our Loyalty policy.
 
 ![Data Governance Label](assets/governance-policies.png)
 

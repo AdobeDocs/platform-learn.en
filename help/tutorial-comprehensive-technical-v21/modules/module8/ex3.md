@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: 38dc47f1-67c8-4c81-9f2f-e57c2d5f3cf9
 ---
-
 # 8.3 Model Training and Experimentation
 
 So you’ve prepared your data, authored your model and packaged it to test it at scale as a recipe. Now let’s go ahead and train and test the model.
