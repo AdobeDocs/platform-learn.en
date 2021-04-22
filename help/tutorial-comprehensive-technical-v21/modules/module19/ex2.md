@@ -142,9 +142,12 @@ keytool -v -importkeystore -srckeystore aep.p12 -srcstoretype PKCS12 -destkeysto
 **On Windows:**
 
 ```javascript
-"C:\Program Files\Java\jdk-15.0.1\bin\keytool.exe" -v -importkeystore -srckeystore aep.p12 -srcstoretype PKCS12 -destkeystore aep.jks -deststoretype JKS
+"C:\Program Files\Java\jdk-15.0.2\bin\keytool.exe" -v -importkeystore -srckeystore aep.p12 -srcstoretype PKCS12 -destkeystore aep.jks -deststoretype JKS
 ```
 
+>[!NOTE]
+>
+> The path to your Java JDK directory may be different depending on what version of Java JDK you have installed. If this command doesn't work, verify the full path exists and update as needed.
 
 ![ServiceNow](./images/jks10.png)
 

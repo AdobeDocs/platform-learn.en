@@ -177,11 +177,11 @@ You'll then see this:
 
 ![Decision Rule](./images/constraints.png)
 
-Select **Decision Rule** and click the **+** icon for the Rule **all - Female Customers**.
+Select **By defined decision rule** and click the **+** icon to add the rule **all - Female Customers**.
 
 ![Decision Rule](./images/constraints1.png)
 
- You'll then see this. Fill out the **Priority** as indicated in the above table.
+You'll then see this. Fill out the **Priority** as indicated in the above table.
 
 ![Decision Rule](./images/constraints2.png)
 
