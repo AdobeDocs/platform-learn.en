@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: 212de9cf-4b25-4209-a997-2bf2bbd5ea38
 ---
-
 # 7.6 Explore the dataset with Tableau
 
 Open Tableau.

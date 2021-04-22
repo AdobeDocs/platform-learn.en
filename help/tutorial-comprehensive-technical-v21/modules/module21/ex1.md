@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 8a9c59c5-531e-4469-b8b9-58b5b0ba5d77
 ---
-
 # 21.1 Create a Launch Server Side property
 
 >[!NOTE]

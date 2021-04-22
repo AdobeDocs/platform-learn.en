@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: e6340f57-6f2b-4bb1-acc6-46d1a44353d2
 ---
-
 # 20.8 Test the WeChat Integration (Optional)
 
 ![WeChat-logo](./images/wechat-logo-crunch.png)

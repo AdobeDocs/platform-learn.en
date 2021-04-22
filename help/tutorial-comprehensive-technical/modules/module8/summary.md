@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: f77a9f4b-1045-4361-a4df-f40b38eb3b1d
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Data Science Workspace and Adobe Experience Platform! 

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: ec3e195a-de59-4506-a971-3e86c1c0c090
 ---
-
 # 2.2 Configure Schemas and Set Identifiers
 
 In this exercise, you'll configure the required XDM schemas to classify profile information and customer behavior. In every XDM schema, you'll also have to configure a primary identifier to link all the information to.

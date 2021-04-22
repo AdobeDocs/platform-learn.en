@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: be2a154e-c5ef-46be-b3f7-1da37bd5821b
 ---
-
 # 10.2 Customer AI - Create a New Instance (Configure)
 
 Customer AI works by analyzing existing Consumer Experience Event data to predict churn or conversion propensity scores. Creating a new Customer AI instance allows marketeers to define goals and measures.

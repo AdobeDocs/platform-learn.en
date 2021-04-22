@@ -1,6 +1,12 @@
+---
+title: Summary and benefits
+description: Module conclusion
+exl-id: 64f02529-d331-46cc-8abd-d7e247168cb8
+---
 # Summary and benefits
 
-Congratulations and thank you for investing your time in learning about automated & live chat with [Stackchat](https://stackchat.com/enterprise) and Adobe Experience Platform! 
+Congratulations and thank you for investing your time in learning about automated & live chat with [Stackchat](https://stackchat.com/enterprise) and Adobe Experience Platform!
+
 In this module, you've learned how to easily build a chat bot with Stackchat, deploy it within social channels, such as Facebook and WeChat, capture profile attributes and behavioral events and, in turn, personalize the customer's experience as an outcome.
 
 ## Benefits

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: bf074390-bb6a-4b8a-9d31-077c5bbae420
 ---
-
 # 12.1 Define an Event
 
 In this exercise, you'll create a custom Event by making use of Journey Orchestration in combination with Adobe Experience Platform.

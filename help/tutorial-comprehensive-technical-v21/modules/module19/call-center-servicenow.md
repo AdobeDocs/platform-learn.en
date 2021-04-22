@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 9d284ba0-6821-4065-a24b-50962397d86f
 ---
-
 # 19. Adobe Experience Platform and ServiceNow: connecting service to marketing and sales
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
@@ -87,4 +87,3 @@ Summary of this module and overview of the benefits.
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
 
 [Go Back to All Modules](../../overview.md)
-

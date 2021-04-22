@@ -5,6 +5,7 @@ user-guide-description: A hands-on tutorial covering many aspects of Platform, i
 audience: all
 index: no
 hide: yes
+doc-type: tutorial
 ---
 
 # Comprehensive Technical Tutorial for Adobe Experience Platform {#comprehensive-technical-tutorial-v21}

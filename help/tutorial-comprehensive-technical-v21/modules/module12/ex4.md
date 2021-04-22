@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 6bec303b-b58a-4b9f-8ded-5e7354cf06b6
 ---
-
 # 12.4 Design a trigger-based Customer Journey
 
 In this exercise, you'll create an orchestrated journey by making use of Journey Orchestration in combination with Adobe Experience Platform.

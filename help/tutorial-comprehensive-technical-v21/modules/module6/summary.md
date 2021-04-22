@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer
 doc-type: tutorial
 activity: develop
+exl-id: 41c785f5-e75a-4b14-8432-2d50a2374eed
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Journey Orchestration and Adobe Experience Platform! 

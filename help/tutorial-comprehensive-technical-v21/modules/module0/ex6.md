@@ -5,11 +5,11 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 7e300af0-2d41-4cbb-a46a-f0197c500d31
 ---
-
 # 0.6 Install the Chrome extension for the Experience League documentation
 
-All documentation is available on Experience League by going [here](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html).
+All documentation is available on Experience League by going [here](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html).
 
 The documentation has been made generic so that it can easily be reused by anyone, using any Adobe Experience Platform instance. 
 By making the documentation reusable, **Environment Variables** were introduced in the documentation, which means that you'll find the below **keys** in the documentation. When you see one of those keys, you should change that into the specific value for your specific Adobe Experience Platform instance.
@@ -53,7 +53,7 @@ In the **extensions** menu, click the **puzzle piece** icon and pin the **Platfo
 
 ![DSN](./images/c6.png)
 
-Go to [https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/overview.html) and then click the extension icon to open it.
+Go to [https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html) and then click the extension icon to open it.
 
 ![DSN](./images/tuthome.png)
 
@@ -79,7 +79,7 @@ You'll then see a green dot next to your initials. This means that your Configur
 
 Close the popup.
 
-As a test, go to [this page](https://docs.adobe.com/content/help/en/platform-learn/comprehensive-technical-tutorial/module7/ex3.html).
+As a test, go to [this page](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/module7/ex3.html).
 
 You should now see that all **Environment Variables** have been replaced by their true values, based on the Configuration ID in the chrome extension.
 

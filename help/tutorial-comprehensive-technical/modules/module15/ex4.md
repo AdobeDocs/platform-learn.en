@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: 359f69de-92f1-4435-abf6-2c9561029739
 ---
-
 # 15.4 Train and Score your Recipe
 
 After creating a recipe, you can now train and score your recipe without having to touch code again.

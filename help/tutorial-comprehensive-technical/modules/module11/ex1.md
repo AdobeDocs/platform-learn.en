@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 388b666a-f939-4b32-92f9-055e72989cbf
 ---
-
 # 11.1 Build a segment and enable Streaming Segmentation
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's segment builder.

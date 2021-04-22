@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 1db7d9a9-0f9e-4eb2-bcd5-129946a7c6ab
 ---
-
 # 18.0 Configure your environment
 
 ## 18.0.1 Create an Azure Subscription

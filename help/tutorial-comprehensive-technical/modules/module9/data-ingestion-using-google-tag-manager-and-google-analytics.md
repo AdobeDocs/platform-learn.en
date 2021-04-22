@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: ec34878a-d9a8-4124-963b-9d33bd0445a2
 ---
-
 # 9. Data Ingestion using Google Tag Manager and Google Analytics
 
 **Author: [Gerard Lindeboom](https://www.linkedin.com/in/gerardlindeboom/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

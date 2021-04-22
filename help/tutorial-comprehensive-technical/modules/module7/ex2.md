@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: 67a502a0-493c-4e20-a6c6-d9c4bf665667
 ---
-
 # 7.2 Using the Query Service
 
 ## Objective

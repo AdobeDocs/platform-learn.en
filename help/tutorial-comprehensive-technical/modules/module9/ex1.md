@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: aca871b4-41a5-472d-bee0-508ecdbd23df
 ---
-
 # 9.1 Create a Google Tag Manager Property
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your Google Account.

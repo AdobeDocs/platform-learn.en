@@ -5,8 +5,8 @@ kt: 5342
 audience: Application Developer
 doc-type: tutorial
 activity: develop
+exl-id: 8187176c-5ade-4193-83fe-fdbe81914b9b
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Adobe Experience Platform! 

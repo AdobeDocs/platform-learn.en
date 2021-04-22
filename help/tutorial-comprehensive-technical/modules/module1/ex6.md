@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 728305c5-da1f-43ac-bc58-dcea6a8455d7
 ---
-
 # 1.6 Implement Adobe Target
 
 ## 1.6. Update your Edge Configuration to use Adobe Target

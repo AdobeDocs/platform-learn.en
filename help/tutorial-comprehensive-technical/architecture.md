@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, Data Scientist, Orchestration Engineer, BI Expert, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: c86bb61b-43de-44ab-8de7-e58027066cc2
 ---
-
 # Architecture
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

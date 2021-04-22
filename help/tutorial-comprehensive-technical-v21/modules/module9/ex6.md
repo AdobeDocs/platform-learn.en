@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 87296ccd-f327-447b-b52d-f7343199450d
 ---
-
 # 9.6 Publish your Google Tag Manager Property
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.

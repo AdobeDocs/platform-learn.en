@@ -5,9 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 3209e36d-a196-47e0-967c-a73d082406f9
 ---
-
-
 # 17.4 Update a contact in Microsoft Dynamics 365 and automatically trigger a journey
 
 ## 17.4.1 Create a segment in Adobe Experience Platform for customers with a negative sentiment

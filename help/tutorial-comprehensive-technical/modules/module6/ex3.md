@@ -1,12 +1,12 @@
 ---
 title: Module 6, Exercise
-description: 
+description: Module 6.3 - Update your Configuration ID and Test your Journey
 kt: 5342
 audience: 
 doc-type: tutorial
 activity: develop
+exl-id: 8f88677f-d03c-4e19-8b52-deae09c7e36d
 ---
-
 # 6.3 Update your Configuration ID and Test your Journey
 
 ## 6.3.1 Update your Configuration ID

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: cd6fc8a8-c20f-417f-8d3e-847a3bc0fb2a
 ---
-
 # 14.3 Prepare your Launch and Web SDK setup for Offer Decisioning
 
 ## 14.3.1 Update your Edge Config ID

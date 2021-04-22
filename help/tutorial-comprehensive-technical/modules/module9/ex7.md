@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 1b9c0020-9a08-46cb-b552-ca0d800b52b2
 ---
-
 # 9.7 Implement Google Tag Manager Tag on Platform Demo website
 
 Go to [https://tagmanager.google.com/](https://tagmanager.google.com/) and login with your personal login details.

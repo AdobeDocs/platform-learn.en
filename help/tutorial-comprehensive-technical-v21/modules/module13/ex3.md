@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 850d346c-7883-469c-b6cc-d373e9b4359e
 ---
-
 # 13.3 Create a Data View
 
 ## Objectives
@@ -107,7 +107,7 @@ Let's change the name to be **Page Name**. Click on the component and rename it 
 Something really important is the **Attribution settings**. The concept of evars and prop doesn't exist in CJA but the attribution settings make a similar behavior possible. 
 If you don't change these settings, CJA will interpret the dimension as a **Prop** (hit level). Also, we can change the attribution to make the dimension an **eVar** (persist the value across the journey).
 
-If you aren't familiar with eVars and Props, you can read more about it here: [https://docs.adobe.com/evarsvsprops.html](https://docs.adobe.com/content/help/en/analytics/implementation/analytics-basics/traffic-props-evars/props-vs-evars.html)
+If you aren't familiar with eVars and Props, you can read more about it here: [https://docs.adobe.com/evarsvsprops.html](https://experienceleague.adobe.com/docs/analytics/implementation/analytics-basics/traffic-props-evars/props-vs-evars.html)
 
 Let's leave the Page Name as a Prop. As such, you don't need to change any **Attribution Settings**.
 

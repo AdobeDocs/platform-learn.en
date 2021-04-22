@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: ecc6aed4-f893-4e66-b896-caaecaac7cac
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Offer Decisioning and Adobe Experience Platform! 

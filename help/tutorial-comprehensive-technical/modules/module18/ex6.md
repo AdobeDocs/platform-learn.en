@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: d0f0b213-7fab-4939-a360-c8191948c08c
 ---
-
 # 18.6 End-to-end scenario
 
 ## 18.6.1 Start Azure Event Hub trigger

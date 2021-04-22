@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: a8d6077e-e386-427c-a797-c279ad1ab504
 ---
-
 # 12.3 Define Custom Actions
 
 In this exercise, you'll create two custom Actions by making use of Journey Orchestration in combination with Adobe Experience Platform.

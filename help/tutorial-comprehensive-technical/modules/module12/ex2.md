@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 03452d50-09f2-4eb7-b7eb-7b6c2bfb4fc0
 ---
-
 # 12.2 Define an External Data Source
 
 In this exercise, you'll create a custom External Data Source by making use of Journey Orchestration in combination with Adobe Experience Platform.

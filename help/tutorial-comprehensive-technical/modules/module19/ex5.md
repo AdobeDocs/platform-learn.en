@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: f5294e61-d85c-45c3-9b8e-1e46d044658b
 ---
-
 # 19.5 Setup your ServiceNow Flow
 
 ## 19.5.1 Open the Flow 

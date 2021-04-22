@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: c03b3edb-fed9-4f68-9577-c52bbbb2ca54
 ---
-
 # 7.7 Query Service API
 
 ## Objective
@@ -19,7 +19,7 @@ In this exercise you will execute API calls to manage query templates and query 
 
 ## Documentation
 
-- [Adobe Experience Platform Query Service Help](https://docs.adobe.com/content/help/en/experience-platform/query/api/getting-started.html)
+- [Adobe Experience Platform Query Service Help](https://experienceleague.adobe.com/docs/experience-platform/query/api/getting-started.html)
 - [Query Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/qs-api.yaml)
 
 ## 7.7.1 Query Service API
@@ -415,4 +415,3 @@ Next Step: [Summary and benefits](./summary.md)
 [Go Back to Module 7](./query-service.md)
 
 [Go Back to All Modules](../../overview.md)
-

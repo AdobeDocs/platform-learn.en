@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: deb0f80c-cc6d-4caf-a3f2-d01cb3fdac3a
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about the integration between ServiceNow and Adobe Experience Platform! 

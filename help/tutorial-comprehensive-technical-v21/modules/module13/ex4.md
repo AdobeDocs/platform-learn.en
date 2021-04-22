@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 1cad6d76-11c0-4a94-a1d6-059a4f633c72
 ---
-
 # 13.4 Data preparation in Analysis Workspace
 
 ## Objectives

@@ -5,8 +5,8 @@ kt: 5342
 audience: Application Developer
 doc-type: tutorial
 activity: develop
+exl-id: 27470f19-c17f-4f2f-a866-0869f3f1f339
 ---
-
 # 4.1 Set up an Alexa Developer Account
 
 ## Introduction

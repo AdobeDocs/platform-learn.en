@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: ce8dd0ec-f538-4f57-b4b1-69dc3ef9a064
 ---
-
 # 13.1 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 
 ## Objectives
@@ -95,7 +95,7 @@ The name of the Person ID field isn't important, as long as the value in the Per
 At this point, you may wonder, will the full ID Graph of Adobe Experience Platform's Real-time Customer Profile be available for stitching the data? This is part of the H2 2020 roadmap.
 Currently, CJA brings data directly from the datasets and isn't aware of the Real-time Customer Profile yet. That’s why, at this moment, you have to manually define the Person ID to get to the 360° view of the customer. 
 
-Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://docs.adobe.com/content/help/en/analytics-platform/using/cja-overview/cja-faq.html). 
+Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html). 
 
 ### Stitching the data using the Person ID
 
@@ -152,5 +152,3 @@ Next Step: [13.3 Create a Data View](./ex3.md)
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)
 
 [Go Back to All Modules](./../../overview.md)
-
-

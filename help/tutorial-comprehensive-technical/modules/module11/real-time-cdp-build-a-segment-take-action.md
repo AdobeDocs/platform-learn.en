@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: b6126343-5461-40de-9340-89ecd1f6df3a
 ---
-
 # 11. Real-time CDP - Build a segment and take action
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**

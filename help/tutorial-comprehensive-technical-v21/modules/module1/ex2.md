@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: cb9725ec-3809-49bf-975e-cfe6edd63d01
 ---
-
 # 1.2 Edge Network and Server Side Data Collection
 
 ## Context

@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: bac82b35-4f44-42ee-8b4b-0cba3c637310
 ---
-
 # Summary and benefits
 
 Congratulations and thank you for investing your time in learning about Adobe Experience Platform Intelligent Services.

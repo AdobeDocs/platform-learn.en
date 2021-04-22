@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 3d5b5686-a0d4-4d39-958e-4a3a6084fcd2
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Adobe Experience Platform! 
@@ -22,7 +22,7 @@ Let's highlight the benefits of using Google Tag Manager to ingest data:
 
 ## Check this out
 
-- Documentation: [Create a Google Big Query source connector in the UI](https://docs.adobe.com/content/help/en/experience-platform/sources/ui-tutorials/create/databases/bigquery.html)
+- Documentation: [Create a Google Big Query source connector in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html)
 - Module 16: [Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](../module16/customer-journey-analytics-bigquery-gcp.md)
 
 [Go Back to Module 9](./data-ingestion-using-google-tag-manager-and-google-analytics.md)

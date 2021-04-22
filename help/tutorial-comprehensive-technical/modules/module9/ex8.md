@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: fbabb928-5bfb-4302-81e6-3da090744ae8
 ---
-
 # 9.8 Verify Data Ingestion from website into Platform
 
 Open a new, clean incognito window and navigate to [https://public.aepdemo.net](https://public.aepdemo.net). Enter your Configuration ID and save it.

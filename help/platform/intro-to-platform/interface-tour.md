@@ -1,16 +1,12 @@
 ---
 title: Interface Tour of Adobe Experience Platform
 description: This video gives a quick tour of Adobe Experience Platform's user interface to show you how to navigate to Experience Platform from Experience Cloud, the homepage dashboard, the interface's enablement features, the sandbox switcher and navigation elements.
-feature: interface
-topics:
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
 kt: 4821
-audience: all
-doc-type: video
-activity: understand
 thumbnail: 32792.jpg
+exl-id: 2d7af2cb-7222-4f87-8bd5-cb0c341cdd33
 ---
-
-# Interface Tour of Experience Platform
+# Interface tour of Adobe Experience Platform
 
 This video gives a quick tour of Experience Platform's user interface to show you how to navigate to Experience Platform from Experience Cloud, the homepage dashboard, the interface's enablement features, the sandbox switcher and navigation elements.
 
@@ -18,7 +14,7 @@ This video gives a quick tour of Experience Platform's user interface to show yo
 
 ## Additional Resources
 
-* [Use Postman and Experience Platform APIs](../apis/postman.md)
+* [Use Postman and Experience Platform APIs](../authentication/platform-api-authentication.md)
 * [Roles and Project Phases (video)](roles-and-project-phases.md)
 * [A Customer Experience Powered by Experience Platform (video)](a-customer-experience-powered-by-experience-platform.md)
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
@@ -28,4 +24,4 @@ This video gives a quick tour of Experience Platform's user interface to show yo
 * [Integrations with Experience Cloud Applications (video)](integrations-with-experience-cloud-applications.md)
 * [Key Use Cases of Experience Platform (video)](key-use-cases.md)
 * [Basic Architecture of Experience Platform (video)](basic-architecture.md)
-* [Adobe Experience Platform Documentation](https://docs.adobe.com/content/help/en/experience-platform/landing/home.html)
+* [Adobe Experience Platform Documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)

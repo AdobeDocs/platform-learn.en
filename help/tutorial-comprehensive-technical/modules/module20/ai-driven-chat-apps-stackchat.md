@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 6e472b01-fd89-4154-b182-86f0540d3118
 ---
-
 # 20. AI-Driven Chat Apps & Live Chat powered by Stackchat
 
 ![demo](./images/stackchat.jpeg)

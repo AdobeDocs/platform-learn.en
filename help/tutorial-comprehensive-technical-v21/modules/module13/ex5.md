@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: cebf5d69-11b5-4c34-8506-9dfa5b3d10a0
 ---
-
 # 13.5 Visualization using Customer Journey Analytics
 
 ## Objectives
@@ -128,8 +128,8 @@ Next, click **Lock Selection** to lock this visualization so that it always disp
 
 Find out more about visualizations using Analysis Workspace here: 
 
-- [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
-- [https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
+- [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
 ## Product Interaction funnel, from viewing to buying
 

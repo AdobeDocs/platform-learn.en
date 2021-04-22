@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
+exl-id: d70b1e8d-8aae-44bc-8065-2874d8108024
 ---
-
 # 15.2 Interact with data in Adobe Experience Platform from a local JupyterLab environment
 
 In this exercise, you'll install Anaconda on your local machine so you can run Jupyter Notebooks on your local machine, to then interact with the data in Adobe Experience Platform through the Query Service.

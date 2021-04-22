@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 663b0e49-d76a-4cab-8829-0f850f88a298
 ---
-
 # 11.3 - Take Action: send your segment to DV360
 
 Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).

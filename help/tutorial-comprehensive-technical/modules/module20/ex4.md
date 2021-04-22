@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: c291e51c-9dcc-49d8-b31c-4bbdd25741e3
 ---
-
 # 20.4 Use Journey Orchestration to trigger an email follow up after interacting with your chatbot
 
 In this exercise, you'll configure the event and the journey that needs to be triggered when someone likes a product as part of the chatbot flow.
