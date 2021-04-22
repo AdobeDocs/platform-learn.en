@@ -12,6 +12,7 @@ hide: yes
 + [Tutorial Overview](/help/tutorial-comprehensive-technical-v21/overview.md)
 + [Architecture Overview](/help/tutorial-comprehensive-technical-v21/architecture.md)
 + [Video Overview](/help/tutorial-comprehensive-technical-v21/videos.md)
++ [Measuring completion](/help/tutorial-comprehensive-technical-v21/completion.md)
 + 0 - Getting started {#module0}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module0/getting-started.md)
   + [0.1 Use Demo System Next to setup your Launch property](/help/tutorial-comprehensive-technical-v21/modules/module0/ex1.md)

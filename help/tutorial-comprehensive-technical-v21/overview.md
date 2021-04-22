@@ -70,6 +70,12 @@ Several videos have been created that showcase elements of the enablement and po
 
 Go to [Videos](./videos.md).
 
+## How is your completion of the Comprehensive Technical Tutorial for Adobe Experience Platform measured?
+
+If you're participating in this tutorial as an Adobe partner or Adobe employee, you need to submit your progress after completing every enablement module.
+
+You can find the requirements and process for submitting completion here: [Measuring Completion](./completion.md)
+
 ## Content
 
 [0. Getting started](./modules/module0/getting-started.md)

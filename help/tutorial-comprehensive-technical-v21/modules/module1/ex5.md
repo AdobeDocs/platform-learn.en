@@ -19,7 +19,7 @@ The Adobe Experience Platform [!DNL Web SDK] maps certain values automatically, 
 
 For XDM data that is not automatically mapped to [!DNL Adobe Analytics], you can use [context data](https://docs.adobe.com/content/help/en/analytics/implementation/vars/page-vars/contextdata.html) to match your [schema](https://docs.adobe.com/content/help/en/experience-platform/xdm/schema/composition.html). Then it can be mapped into [!DNL Analytics] using [processing rules](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html) to populate [!DNL Analytics] variables. Context Data and Processing Rules will be concepts familiar to those that have worked with Analytics in the past, but don't worry about the details for now if they are new concepts.
 
-You can also use a default set of actions and product lists to send or retrieve data with the AEP [!DNL Web SDK]. To do this, see [Products](https://docs.adobe.com/content/help/en/experience-platform/edge/implement/commerce.html).
+You can also use a default set of actions and product lists to send or retrieve data with the AEP [!DNL Web SDK]. To do this, see [Products](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/collect-commerce-data.html?lang=en#data-collection).
 
 ### Context data
 
