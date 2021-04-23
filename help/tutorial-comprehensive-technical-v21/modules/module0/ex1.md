@@ -52,7 +52,7 @@ Click **Next**.
 
 In the next screen, you'll see a screen like the below. Demo System Next offers two steps: 
 
-- Setup an AEP instance with schemas, mixins, datasets and more
+- Setup an Adobe Experience Platform instance with schemas, mixins, datasets and more
 - Setup Launch properties for Web and Mobile. 
 
 In this case, the setup of schemas, mixins and datasets has already been done so you can only create the Launch properties you'll use.
@@ -95,9 +95,9 @@ Enter your LDAP as search term. You should now see the two Launch properties tha
 
 ![DSN](./images/launchprop.png)
 
-In order to use the Launch properties, you'll need to create a Configuration ID in the next exercise.
+In order to use the Launch properties, you'll need to create a Datastream in the next exercise.
 
-Next Step: [0.2 Create your Edge Configuration ID](./ex2.md)
+Next Step: [0.2 Create your Datastream](./ex2.md)
 
 [Go Back to Module 0](./getting-started.md)
 

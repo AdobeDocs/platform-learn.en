@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: 146e9e4e-2726-46e2-a6ca-62c4ce6f8ba1
 ---
-# 0.2 Create your Edge Configuration ID
+# 0.2 Create your Datastream
 
 Go to [https://launch.adobe.com/](https://launch.adobe.com/). After the previous exercise, you now have two Launch properties: one for web and one for mobile.
 
@@ -17,15 +17,15 @@ These properties are almost ready to be used, but before you can start collectin
 
 For now, please follow these steps.
 
-Open the dropdown menu and click **[!UICONTROL Edge Configuration]**.
+Click **[!UICONTROL Datastreams]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png)
 
-Click **[!UICONTROL New Edge Configuration]**.
+Click **[!UICONTROL New Datastream]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter **ldap - Demo System Edge Configuration** and replace **ldap** with your ldap.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter **ldap - Demo System Datastream** and replace **ldap** with your ldap.
 
 ![Name the Edge Configuration and save](./images/edgeconfig2.png)
 
@@ -63,27 +63,28 @@ You'll then see that your Edge Configuration consists of 3 environments.
 
 ![Name the Edge Configuration and save](./images/edgeconfig9.png)
 
-Open the dropdown menu and click **[!UICONTROL Client Side]**.
+In the left menu, clik **[!UICONTROL Client]**.
+Filter the search results to see your two Launch properties.
 
 ![Name the Edge Configuration and save](./images/edgeconfig10a.png)
 
-Filter the search results to see your two Launch properties.
-
-![Name the Edge Configuration and save](./images/edgeconfig10.png)
-
-Open the Launch property for **Web** by clicking it. You'll then see this.
+Open the Launch property for **Web** by clicking it. You'll then see this. Click **Extensions**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig11.png)
 
-In the left menu, go to **Extensions**. On the AEP Web SDK, click **Configure**.
+On the AEP Web SDK extension, click **Configure**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig12.png)
 
-You'll then see this. For the **Edge Configurations**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Edge Configuration ID you created earlier.
+You'll then see this. For the **Edge Configurations**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Datastream you created earlier.
+
+>[!NOTE]
+>
+>If you can't see your Datastream in the dropdown list, it's probably because the dropdown is only showing the first 100 results. If you want to select your Datastream out of this list, you need to rename your Datastream to start with a **0** or an **a**. Alternatively, you can simply paste the Environment ID manually.
 
 ![Name the Edge Configuration and save](./images/edgeconfig13.png)
 
-Make sure to have selected your **Edge Configuration ID**. 
+Make sure to have selected your **Datastream**. 
 
 ![Name the Edge Configuration and save](./images/edgeconfig14.png)
 
@@ -103,7 +104,7 @@ Go to **Publishing Flow**.
 
 Click the **...** for the **Content Library**, then click **Edit**.
 
-![Name the Edge Configuration and save](./images/edgeconfig16.png) 
+![Name the Edge Configuration and save](./images/edgeconfig16.png)
 
 Click **Add All Changed Resources**.
 
