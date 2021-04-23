@@ -15,6 +15,6 @@ XDM System is the infrastructure that supports real-time customer profiles, mach
 
 ## Additional Resources
 
-* [Create your first Schema with out-of-the-box components video](create-your-first-schema-with-out-of-the-box-components.md)
-* [Create your own Mixins and Classes video](create-your-own-mixins-and-classes.md)
+* [Create a schema video](create-a-schema.md)
+* [Create your own mixins and classes video](create-your-own-mixins-and-classes.md)
 * [Schema documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)

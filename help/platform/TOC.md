@@ -68,7 +68,7 @@ doc-type: video
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
   + [Configure the Azure Blob Destination](destinations/configure-the-azure-blob-destination.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
-  + [How to configure a Social destination](destinations/configure-a-social-destination.md)
+  + [Configure a social destination](destinations/configure-a-social-destination.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
@@ -93,7 +93,7 @@ doc-type: video
   + [Use sandboxes](/help/platform/sandboxes/use-sandboxes.md)
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/understanding-the-xdm-system-and-experience-data-model.md)
-  + [Create a schema](/help/platform/schemas/create-your-first-schema-with-out-of-the-box-components.md)
+  + [Create a schema](/help/platform/schemas/create-a-schema.md)
   + [Create mixins and classes](/help/platform/schemas/create-your-own-mixins-and-classes.md)
   + [Define a relationship between two schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html)
   + [Create an ad-hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html)
