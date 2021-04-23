@@ -1,6 +1,6 @@
 ---
-title: Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension - Client-side Web Data Collection
-description: Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension - Client-side Web Data Collection
+title: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Client-side Web Data Collection
+description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Client-side Web Data Collection
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -68,9 +68,9 @@ Make sure you have the EXP News site open and click the Experience Platform Debu
 
 ![EXP News Homepage](./images/ext2.png)
 
-The Debugger will open and show the details of the implementation created in your Launch Property. Remember that you're debugging the Extension and rules that you have just been editing.
+The Debugger will open and show the details of the implementation created in your Adobe Experience Platform Data Collection Property. Remember that you're debugging the Extension and rules that you have just been editing.
 
-Click the **[!UICONTROL Sign In]** button on the top right to authenticate. If you already have a browser tab open with the Launch interface, the authentication step will be automatic and you won't have to enter your username and password again.
+Click the **[!UICONTROL Sign In]** button on the top right to authenticate. If you already have a browser tab open with the Adobe Experience Platform Data Collection interface, the authentication step will be automatic and you won't have to enter your username and password again.
 
 ![AEP Debugger](./images/validate2.png)
 
