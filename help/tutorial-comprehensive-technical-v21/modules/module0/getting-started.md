@@ -36,7 +36,7 @@ exl-id: 8ad761de-eec7-4a3f-a366-ef71f9e1ace2
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
-[0.2 Create your Edge Configuration ID](./ex2.md)
+[0.2 Create your Datastream](./ex2.md)
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 

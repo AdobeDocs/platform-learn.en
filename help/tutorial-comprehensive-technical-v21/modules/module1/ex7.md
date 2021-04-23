@@ -1,6 +1,6 @@
 ---
-title: Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension - Implement Adobe Target
-description: Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension - Implement Adobe Target
+title: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Implement Adobe Target
+description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Implement Adobe Target
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial

@@ -1,6 +1,6 @@
 ---
-title: Setup of Adobe Experience Platform Launch and the Web SDK extension - Summary
-description: Setup of Adobe Experience Platform Launch and the Web SDK extension - Summary
+title: Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Summary
+description: Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Summary
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -10,7 +10,7 @@ exl-id: 5fcb5eb7-0364-41a9-ab68-d79fd9e42355
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Adobe Experience Platform! 
-In this module, you've learned how to configure Web SDK to collect data from the Platform Demo website in XDM format just once, to then reuse that data by sharing it with multiple applications like Adobe Audience Manager and Adobe Experience Platform. 
+In this module, you've learned how to configure Web SDK to collect data from the demo website in XDM format just once, to then reuse that data by sharing it with multiple applications like Adobe Audience Manager and Adobe Experience Platform. 
 
 ## Benefits
 

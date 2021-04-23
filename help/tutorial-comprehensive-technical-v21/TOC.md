@@ -17,7 +17,7 @@ doc-type: tutorial
 + 0 - Getting started {#module0}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module0/getting-started.md)
   + [0.1 Use Demo System Next to setup your Launch property](/help/tutorial-comprehensive-technical-v21/modules/module0/ex1.md)
-  + [0.2 Create your Edge Config ID](/help/tutorial-comprehensive-technical-v21/modules/module0/ex2.md)
+  + [0.2 Create your Datastream](/help/tutorial-comprehensive-technical-v21/modules/module0/ex2.md)
   + [0.3 Create your Enablement Configuration ID](/help/tutorial-comprehensive-technical-v21/modules/module0/ex3.md)
   + [0.4 Use the website](/help/tutorial-comprehensive-technical-v21/modules/module0/ex4.md)
   + [0.5 Use the mobile app](/help/tutorial-comprehensive-technical-v21/modules/module0/ex5.md)

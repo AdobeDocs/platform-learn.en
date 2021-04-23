@@ -1,6 +1,6 @@
 ---
-title: Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension - Implement Adobe Analytics and Adobe Audience Manager
-description: Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension - Implement Adobe Analytics and Adobe Audience Manager
+title: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Implement Adobe Analytics and Adobe Audience Manager
+description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Implement Adobe Analytics and Adobe Audience Manager
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
@@ -11,7 +11,7 @@ exl-id: ed374b1d-f54c-4069-9266-9b2723f62cb0
 
 ## Context
 
-You now know that XDM data is flowing into platform. You'll explore more about what XDM is in [Module 2](./../module2/data-ingestion.md), as well as how to build your own schema to track custom variables. For now you're going to look at what happens when we set our Edge Configuration data to forward data to Analytics and Audience Manager.
+You now know that XDM data is flowing into platform. You'll explore more about what XDM is in [Module 2](./../module2/data-ingestion.md), as well as how to build your own schema to track custom variables. For now you're going to look at what happens when you set your Datastream to forward data to Analytics and Audience Manager.
 
 ## 1.5.1 Mapping variables in Analytics
 
@@ -56,11 +56,11 @@ All data collected by the edge network can be accessed via [processing rules](ht
 
 Server-side forwarding is a not a new concept for Audience Manager, and the same process as before applies. You can also sync identities.
 
-## 1.5.3 Review your Edge Configuration to send data to Adobe Analytics
+## 1.5.3 Review your Datastream to send data to Adobe Analytics
 
 In case you want to send data collected by Web SDK to Adobe Analytics and Adobe Audience Manager, follow these steps.
 
-Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) and go to **Edge Configurations**. Open your specific Edge Configuration.
+Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) and go to **Datastreams**. Open your specific Datastream.
 
 Click to open your **Development Environment**.
 
@@ -74,9 +74,9 @@ You'll then see this, which means that you need to add the report suite in Adobe
 
 ![AEP Debugger](./images/aa3.png)
 
-## 1.5.4 Review your Edge Configuration to send data to Adobe Audience Manager
+## 1.5.4 Review your Datastream to send data to Adobe Audience Manager
 
-Click to open your **Development Environment**.
+Click to open your Datastream's **Development Environment**.
 
 ![AEP Debugger](./images/aa1.png)
 
