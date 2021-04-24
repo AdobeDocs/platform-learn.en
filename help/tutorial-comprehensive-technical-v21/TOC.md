@@ -195,7 +195,7 @@ doc-type: tutorial
   + [20.7 Connect your chatbot to Facebook Messenger](/help/tutorial-comprehensive-technical-v21/modules/module20/ex7.md)
   + [20.8 Test the WeChat Integration](/help/tutorial-comprehensive-technical-v21/modules/module20/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module20/summary.md)
-+ 21 - Data Collection & Real-time Server Side Forwarding with Adobe Experience Platform Data Collection {#module21}
++ 21 - Adobe Experience Platform Data Collection & Real-time Server Side Forwarding with Adobe Experience Platform Data Collection {#module21}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module21/aep-data-collection-ssf.md)
   + [21.1 Create an Adobe Experience Platform Data Collection Server property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex1.md)
   + [21.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex2.md)
