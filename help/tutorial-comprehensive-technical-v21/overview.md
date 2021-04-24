@@ -50,7 +50,7 @@ After completing this tutorial, you will be able to:
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Data Collection: [https://launch.adobe.com](https://launch.adobe.com)
-- Access to the AEP Demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
+- Access to the demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
@@ -215,13 +215,13 @@ You can find the requirements and process for submitting completion here: [Measu
 - **Description:** In this module, you'll set up your own instance of Google Cloud Platform, load demo data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
 - **Time Investment:** 120 minutes
 - **Download these assets**: 
-  - [JSON - Sample Data: AEP Demo - Loyalty Data (M16)](./assets/json/m16_bqLoyalty.json)
+  - [JSON - Sample Data: Demo - Loyalty Data (M16)](./assets/json/m16_bqLoyalty.json)
 
 [17. Adobe Experience Platform and Microsoft Dynamics 365](./modules/module17/adobe-experience-platform-microsoft-dynamics-365.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, Customer Journey Analytics, Microsoft Dynamics 365 and Microsoft Azure
-- **Description:** In this module, you'll set up your instance of Dynamics 365 for Sales and load sample customer data. You will then use the Dynamics 365 Source Connector in Adobe Experience Platform to ingest that data from Microsoft Dynamics 365 into Adobe Experience Platform. Finally, you'll use Journey orchestration to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the AEP Demo website and you'll configure Journey orchestration to communicate directly to a customer based on the on a change in sentiment. In addition, you'll also learn how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Journey Orchestration based on the Contact record change in Microsoft Dynamics 365. 
+- **Description:** In this module, you'll set up your instance of Dynamics 365 for Sales and load sample customer data. You will then use the Dynamics 365 Source Connector in Adobe Experience Platform to ingest that data from Microsoft Dynamics 365 into Adobe Experience Platform. Finally, you'll use Journey orchestration to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the demo website and you'll configure Journey orchestration to communicate directly to a customer based on the on a change in sentiment. In addition, you'll also learn how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Journey Orchestration based on the Contact record change in Microsoft Dynamics 365. 
 - **Time Investment:** 90 minutes
 
 [18. Segment Activation to Microsoft Azure Event Hub](./modules/module18/segment-activation-microsoft-azure-eventhub.md)

@@ -9,12 +9,6 @@ exl-id: 63f95306-4ca9-4feb-bf15-c70b89b64507
 ---
 # 21.4 Create and configure a Google Cloud Function
 
-This content is currently being developed and will be added soon.
-
->[!NOTE]
->
->The Adobe Experience Platform Edge mobile extension is currently in BETA. Use of this extension is by invitation only. Please contact your Adobe Customer Success Manager to learn more and get access to the materials for this tutorial.
-
 ## 21.4.1 Create your Google Cloud Function
 
 Go to [https://console.cloud.google.com/](https://console.cloud.google.com/). Go to **Cloud Functions**.
@@ -113,7 +107,7 @@ You'll then see this. Go to **TRIGGER**. You'll then see the **Trigger URL** whi
 
 Copy the Trigger URL, which looks like this: **https://us-central1-launch-server-side-gcp.cloudfunctions.net/vangeluw-launch-ssf**.
 
-In the next steps, you'll configure Launch Server Side to stream specific information about **Page Views** to your Google Cloud Function. Instead of just forwarding the full payload as-is, you'll only send things like **ECID**, **timestamp** and **Page Name** to your Google Cloud Function.
+In the next steps, you'll configure Adobe Experience Platform Data Collection Server to stream specific information about **Page Views** to your Google Cloud Function. Instead of just forwarding the full payload as-is, you'll only send things like **ECID**, **timestamp** and **Page Name** to your Google Cloud Function.
 
 Here's an example of a payload that you'll need to parse to filter out the above mentioned variables:
 
@@ -179,54 +173,50 @@ These are the fields that contain the information that needs to be parsed out:
 - timestamp: **timestamp**
 - Page Name: **events.xdm.web.webPageDetails.name**
 
-Let's go to Launch Server Side now, to configure the data elements to make that possible.
+Let's go to Adobe Experience Platform Data Collection Server now, to configure the data elements to make that possible.
 
-## 21.4.2 Update your Launch Server Side property: Data Elements
+## 21.4.2 Update your Adobe Experience Platform Data Collection Server property: Data Elements
 
 Go to [https://launch.adobe.com](https://launch.adobe.com).
 
-![Launch SSF](./images/launchhome.png)
+![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 
-In the top left corned, click **Client Side** and in the dropdown menu, click **Server Side**.
+In the top left corned, click **Client Side** and in the dropdown menu, click **Server Side**. You'll then see an overview of all available Adobe Experience Platform Data Collection Server properties. Click to open the property you created in [exercise 21.1](./ex1.md).
 
-![Launch SSF](./images/launchhome1.png)
-
-You'll then see an overview of all available Server Side Launch properties. Click to open the property you created in [exercise 21.1](./ex1.md).
-
-![Launch SSF](./images/webhookssf1.png)
+![Adobe Experience Platform Data Collection SSF](./images/launchhome1.png)
 
 In the left menu, go to **Data Elements**. Click **Add Data Element**.
 
-![Launch SSF](./images/de1gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/de1gcp.png)
 
 You'll then see a new data element to configure.
 
-![Launch SSF](./images/de2gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
 
 Make the following selection:
 
 - As the **Name**, enter **customerECID**.
 - As the **Extension**, select **Core**.
 - As the **Data Element Type**, select **Path**.
-- As the **Path**, enter **arc.event.xdm._experienceplatform.identification.core.ecid**. By entering this path, you'll be filtering out the field **ecid** from the event payload that is sent by the website or mobile app into the Adobe Edge.
+- As the **Path**, enter `arc.event.xdm.--aepTenantId--.identification.core.ecid`. By entering this path, you'll be filtering out the field **ecid** from the event payload that is sent by the website or mobile app into the Adobe Edge.
 
 >[!NOTE]
 >
->In the above and below paths, a reference is made to **arc**. **arc** stands for Adobe Resource Context and **arc** always stands for the highest available object that is available in the Server Side context. Enrichments and transformations may be added to that **arc** object using Launch Server Side functions.
+>In the above and below paths, a reference is made to **arc**. **arc** stands for Adobe Resource Context and **arc** always stands for the highest available object that is available in the Server Side context. Enrichments and transformations may be added to that **arc** object using Adobe Experience Platform Data Collection Server functions.
 >
->In the above and below paths, a reference is made to **event**. **event** stands for a unique event and Launch Server Side will always evaluate every event individually. Sometimes, you may see a reference to **events** in the payload sent by Web SDK Client Side, but in Launch Server Side, every event is evaluated individually.
+>In the above and below paths, a reference is made to **event**. **event** stands for a unique event and Adobe Experience Platform Data Collection Server will always evaluate every event individually. Sometimes, you may see a reference to **events** in the payload sent by Web SDK Client Side, but in Adobe Experience Platform Data Collection Server, every event is evaluated individually.
 
 You'll now have this. Click **Save**.
 
-![Launch SSF](./images/gcdpde1.png)
+![Adobe Experience Platform Data Collection SSF](./images/gcdpde1.png)
 
 Click **Add Data Element**.
 
-![Launch SSF](./images/addde.png)
+![Adobe Experience Platform Data Collection SSF](./images/addde.png)
 
 You'll then see a new data element to configure.
 
-![Launch SSF](./images/de2gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
 
 Make the following selection:
 
@@ -237,14 +227,15 @@ Make the following selection:
 
 You'll now have this. Click **Save**.
 
-![Launch SSF](./images/gcdpde2.png)
+![Adobe Experience Platform Data Collection SSF](./images/gcdpde2.png)
+
 Click **Add Data Element**.
 
-![Launch SSF](./images/addde.png)
+![Adobe Experience Platform Data Collection SSF](./images/addde.png)
 
 You'll then see a new data element to configure.
 
-![Launch SSF](./images/de2gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
 
 Make the following selection:
 
@@ -255,25 +246,25 @@ Make the following selection:
 
 You'll now have this. Click **Save**.
 
-![Launch SSF](./images/gcdpde3.png)
+![Adobe Experience Platform Data Collection SSF](./images/gcdpde3.png)
 
 You now have these data elements created:
 
-![Launch SSF](./images/de3gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/de3gcp.png)
 
-## 21.4.3 Update your Launch Server Side property: Update a Rule
+## 21.4.3 Update your Adobe Experience Platform Data Collection Server property: Update a Rule
 
 In the left menu, go to **Rules**. In the previous exercise, you created the rule **All Pages**. Click that rule to open it.
 
-![Launch SSF](./images/rl1gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl1gcp.png)
 
 You'll then this. Click the **+** icon under **Actions** to add a new action. 
 
-![Launch SSF](./images/rl2gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl2gcp.png)
 
 You'll then see this.
 
-![Launch SSF](./images/rl4gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl4gcp.png)
 
 Make the following selection:
 
@@ -282,7 +273,7 @@ Make the following selection:
 
 That should give you this **Name**: **Adobe Cloud Connector - Make Fetch Call**. You should now see this:
 
-![Launch SSF](./images/rl5gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl5gcp.png)
 
 Next, configure the following:
 
@@ -291,15 +282,11 @@ Next, configure the following:
 
 You should now have this. Next, go to **Body**.
 
-![Launch SSF](./images/rl6gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl6gcp.png)
 
 You'll then see this. Click the radio button for **JSON**.
 
-![Launch SSF](./images/rl7gcp.png)
-
-You'll then see this:
-
-![Launch SSF](./images/rl8gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl7gcp.png)
 
 Configure the **Body** as follows:
 
@@ -311,24 +298,23 @@ Configure the **Body** as follows:
 
 You'll then see this. Click **Keep Changes**.
 
-![Launch SSF](./images/rl9gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl9gcp.png)
 
 You'll then see this. Click **Save**.
 
-![Launch SSF](./images/rl10gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl10gcp.png)
 
-You've now update your existing rule in a Launch Server Side property. Go to **Publishing Flow** to publish your changes. Open your Development library **v1** by clicking **Edit** as indicated.
+You've now update your existing rule in a Adobe Experience Platform Data Collection Server property. Go to **Publishing Flow** to publish your changes. Open your Development library **v1** by clicking **Edit** as indicated.
 
-![Launch SSF](./images/rl12gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl12gcp.png)
 
 Click the **Add All Changed Resources** button, after which you'll see your Rule and Data Element appear in this library. Next, click **Save & Build for Development**. Your changes are now being deployed.
 
-![Launch SSF](./images/rl13gcp.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl13gcp.png)
 
 After a couple of minutes, you'll see that the deployment is done and ready to be tested.
 
-![Launch SSF](./images/rl14.png)
-
+![Adobe Experience Platform Data Collection SSF](./images/rl14.png)
 
 ## 21.3.4 Test your configuration
 
@@ -336,47 +322,47 @@ Open a new, clean incognito browser window and go to [https://public.aepdemo.net
 
 You'll then see this. 
 
-![Launch Setup](./images/demo1.png)
+![Adobe Experience Platform Data Collection Setup](./images/demo1.png)
 
 Enter your Configuration ID and click **Load Configuration**. Your configuration is then loaded.
 
-![Launch Setup](./images/demo2.png)
+![Adobe Experience Platform Data Collection Setup](./images/demo2.png)
 
 Scroll down and click **Save Configuration**.
 
-![Launch Setup](./images/demo3.png)
+![Adobe Experience Platform Data Collection Setup](./images/demo3.png)
 
 You'll then be redirected to the Admin homepage. Go to **Select LDAP**. Select your LDAP and click **Save**.
 
-![Launch Setup](./images/demo5.png)
+![Adobe Experience Platform Data Collection Setup](./images/demo5.png)
 
 You'll then be redirected to the Admin homepage. Go to **Select Brand** and select the brand **Luma**, click **Save**.
 
-![Launch Setup](./images/demo7.png)
+![Adobe Experience Platform Data Collection Setup](./images/demo7.png)
 
 You'll then be redirected to the Admin homepage. Click the **Luma** logo.
 
-![Launch Setup](./images/demo8.png)
+![Adobe Experience Platform Data Collection Setup](./images/demo8.png)
 
 You'll then see the Luma homepage.
 
-![Launch Setup](./images/demo9.png)
+![Adobe Experience Platform Data Collection Setup](./images/demo9.png)
 
-When you open up your browser Developer View, you can inspect Network requests as indicated below. When you use the filter **interact**, you'll see the network requests that are sent by Launch Client Side to the Adobe Edge.
+When you open up your browser Developer View, you can inspect Network requests as indicated below. When you use the filter **interact**, you'll see the network requests that are sent by Adobe Experience Platform Data Collection Client to the Adobe Edge.
 
-![Launch Setup](./images/hook1.png)
+![Adobe Experience Platform Data Collection Setup](./images/hook1.png)
 
 Switch your view to your Google Cloud Function and go to **LOGS**. You should now have a view similar to this one, with a number of log entries being shown. Every time you see **Function execution started**, it means that incoming traffic was received in your Google Cloud Function.
 
-![Launch Setup](./images/hook3gcp.png)
+![Adobe Experience Platform Data Collection Setup](./images/hook3gcp.png)
 
-Let's update your function a bit to work with the incoming data, and display the information that was received from Launch Server Side. Go to **SOURCE** and click **EDIT**.
+Let's update your function a bit to work with the incoming data, and display the information that was received from Adobe Experience Platform Data Collection Server. Go to **SOURCE** and click **EDIT**.
 
-![Launch Setup](./images/hook4gcp.png)
+![Adobe Experience Platform Data Collection Setup](./images/hook4gcp.png)
 
 In the next screen, click **NEXT**.
 
-![Launch Setup](./images/gcf1.png)
+![Adobe Experience Platform Data Collection Setup](./images/gcf1.png)
 
 Update your code like this:
 
@@ -398,23 +384,23 @@ exports.helloAEP = (req, res) => {
 
 You'll then have this. Click **DEPLOY**.
 
-![Launch Setup](./images/gcf2.png)
+![Adobe Experience Platform Data Collection Setup](./images/gcf2.png)
 
 After a couple of minutes, your function will be deployed again. Click your function name to open it.
 
-![Launch Setup](./images/gcf3.png)
+![Adobe Experience Platform Data Collection Setup](./images/gcf3.png)
 
 On your demo website, navigate to a product, like for instance **Nadia Elements Shell**.
 
-![Launch Setup](./images/gcf3a.png)
+![Adobe Experience Platform Data Collection Setup](./images/gcf3a.png)
 
 Switch your view to your Google Cloud Function and go to **LOGS**. You should now have a view similar to this one, with a number of log entries being shown.
 
 For every page view on your demo website, you should now see a new log entry pop up in your Google Cloud Function's logs, which shows the received information.
 
-![Launch Setup](./images/gcf4.png)
+![Adobe Experience Platform Data Collection Setup](./images/gcf4.png)
 
-You've now successfully sent data that was collected by Launch, in real-time, to a Google Cloud Function endpoint. From there, that data can be used by any Google Cloud Platform application, such as BigQuery for storage and reporting or for Machine Learning use cases.
+You've now successfully sent data that was collected by Adobe Experience Platform Data Collection, in real-time, to a Google Cloud Function endpoint. From there, that data can be used by any Google Cloud Platform application, such as BigQuery for storage and reporting or for Machine Learning use cases.
 
 Next Step: [21.5 Create and configure a Microsoft Azure Function](./ex5.md)
 

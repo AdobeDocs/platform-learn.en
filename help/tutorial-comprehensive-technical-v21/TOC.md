@@ -195,10 +195,10 @@ doc-type: tutorial
   + [20.7 Connect your chatbot to Facebook Messenger](/help/tutorial-comprehensive-technical-v21/modules/module20/ex7.md)
   + [20.8 Test the WeChat Integration](/help/tutorial-comprehensive-technical-v21/modules/module20/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module20/summary.md)
-+ 21 - Data Collection & Real-time Server Side Forwarding with Launch {#module21}
++ 21 - Data Collection & Real-time Server Side Forwarding with Adobe Experience Platform Data Collection {#module21}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module21/aep-data-collection-ssf.md)
-  + [21.1 Create a Launch Server Side property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex1.md)
-  + [21.2 Update your Edge Configuration to make data available to your Launch Server Side property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex2.md)
+  + [21.1 Create an Adobe Experience Platform Data Collection Server property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex1.md)
+  + [21.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property](/help/tutorial-comprehensive-technical-v21/modules/module21/ex2.md)
   + [21.3 Create and configure a custom webhook](/help/tutorial-comprehensive-technical-v21/modules/module21/ex3.md)
   + [21.4 Create and configure a Google Cloud Function](/help/tutorial-comprehensive-technical-v21/modules/module21/ex4.md)
   + [21.5 Create and configure a Microsoft Azure Function](/help/tutorial-comprehensive-technical-v21/modules/module21/ex5.md)
