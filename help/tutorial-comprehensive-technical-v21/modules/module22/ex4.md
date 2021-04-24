@@ -11,7 +11,7 @@ exl-id: 2fa39d1b-0300-46be-85e4-b56fa1747c5a
 
 ## Objectives
 
-- Understand how to connect our Project Firefly EXP News Realtime dashboard app to real-time streaming information, from the EXP News website, using Adobe Launch Server Side Forwarding.
+- Understand how to connect our Project Firefly EXP News Realtime dashboard app to real-time streaming information, from the EXP News website, using Adobe Experience Platform Data Collection Server Side Forwarding.
 
 ## Prerequisites
 
@@ -21,19 +21,21 @@ Before you start this exercise, ensure you have installed and setup NodeJS and A
 
 We need to figure out the webhook we can connect streaming events from the EXP News website to our dashboard app. Actually, you should already have spotted it as output of your `aio app deploy` from exercise 22.3.2. You can copy it straight from here; it is the first line in the list of **Your deployed action**; the one ending with **webhook**. ![Deploy](images/deploy.png) E.g. `https://133309-rmaurexpnews-development.adobeio-static.net/api/v1/web/poc-platform-realtime-0.0.1/webhook`. Copy the URL for **webhook** and save it somewhere so you can use it later.
 
-## 22.4.2 Set up Adobe Launch Server Side Forwarding
+## 22.4.2 Set up Adobe Experience Platform Data Collection Server Side Forwarding
 
 We will now set up the server side forwarding for our Project Firefly EXP News Firefly dashboard app using the webhook we discovered in the previous exercise.
 
-Go to [https://launch.adobe.com](https://launch.adobe.com). Ensure you are in the correct organization. at the right top: `--envName--`. 
+Go to [https://launch.adobe.com](https://launch.adobe.com). Ensure you are in the correct organization, verify that in the upper right corner: `--envName--`. 
 
-![Launch SSF](./images/launchhome.png)
+![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 
-In the top left corner, click **Client Side** and in the dropdown menu, select **Server Side**. You will see an overview  of the server side properties. 
+In the left menu, click **Server**. You'll see an overview of the server properties. 
 
-![Launch SSF](./images/launchhomeserverside.png) 
+![Adobe Experience Platform Data Collection SSF](./images/launchhomeserverside.png)
 
-Search for your server side property you created as part of Module 21 (e.g. **rmaur - Demo System (21/01/2021) (Edge)**) and click to open it.
+Search for your server side property you created as part of Module 21 (e.g. **vangeluw - Demo System (24/04/2021) (Edge)**) and click to open it.
+
+![Adobe Experience Platform Data Collection SSF](./images/launchhomeserverside1.png)
 
 Click on **Data Elements** in the left rail, and then click on **Add Data Element** to add a new data element. In the data element definition screen provide the following information:
    
@@ -42,23 +44,21 @@ Click on **Data Elements** in the left rail, and then click on **Add Data Elemen
 - **Data Element Type**: select `Path` from the list.
 - **Path (required)**: `arc.event.xdm.--aepTenantId--.demoEnvironment.brandName`
 
-![Launch SSF data element](./images/launchssfdataelement.png)
+![Adobe Experience Platform Data Collection SSF data element](./images/launchssfdataelement.png)
 
 Click on **Save** to save the data element.
 
-Click on **Rules** in the left rail. You will see an overview of the rules created for this property, with the **All Pages** rule from Exercise 21 listed. 
+Click on **Rules** in the left rail. You will see an overview of the rules created for this property, with the **All Pages** rule from Exercise 21 listed. Click **Add Rule**. 
 
-![Launch Rules](images/rule1.png)
-
-Click on **Add Rule**. 
+![Adobe Experience Platform Data Collection Rules](images/rule1a.png)
 
 In the **Create Rule** screen:
 
-Provide a **Name**, e.g. `All Pages EXP News`. 
+Provide a **Name**, e.g. `All Pages EXP News`. Click on **+ Add** to add a new Condition.
 
-![Launch Rule Name](images/launchrulename.png)
+![Adobe Experience Platform Data Collection Rule Name](images/launchrulename.png)
 
-Click on **Add** below **CONDITIONS**. In the **Condition Configuration** screen and provide the following information:
+In the **Condition Configuration** screen and provide the following information:
 
 - **Logic Type**: select `Regular`
 - **Extension**: select `Core`
@@ -68,50 +68,47 @@ Click on **Add** below **CONDITIONS**. In the **Condition Configuration** screen
 - **Operator**: select `Equals`
 - **Right Operand**: type `EXP News`.
       
-![Launch SSF Rule](./images/rule2.png)
+![Adobe Experience Platform Data Collection SSF Rule](./images/rule2.png)
 
-Click on **Keep Changes** to return to the **Create Rule** screen.
+Click on **Keep Changes** to return to the **Create Rule** screen. You'll then be back here, click on **+ Add** to add a new action.
+
+![Adobe Experience Platform Data Collection SSF Rule](./images/rule3.png)
   
-Click on **Add** below **ACTIONS**. In the **Action Configuration** screen provide the following information on the left panel.
+ In the **Action Configuration** screen provide the following information on the left panel.
 
 - **Extension**: select `Adobe Cloud Connector`
 - **Action Type**: select `Make Fetch Call`
 - **Name**: `Adobe Cloud Connector - Make Fetch Call`
 - **Method (required)**: select `POST`
 - **URL (required)**: paste here the webhook you copied and saved from exercise 22.4.1, e.g. `https://133309-rmaurexpnews-development.adobeio-static.net/api/v1/web/poc-platform-realtime-0.0.1/webhook`
-      
-![Launch SSF Rule 3](images/rules3a.png)
+
+Click **Body**. 
+
+![Adobe Experience Platform Data Collection SSF Rule 3](images/rules3a.png)
   
-Click on **Body** tab
+Makes ure the **Body** looks like this:
 
 - Ensure **Raw** is selected as **Body Format**
 - select **XDM Event** from the dialog that shows up when clicking the three cylinder icon behind the field below **Body (Raw)**. This will insert `{{XDM Event}}`.
 
-![Launch SSF Rule 3b](images/rule3b.png) 
+![Adobe Experience Platform Data Collection SSF Rule 3b](images/rule3b.png)
   
-Click on **Keep Changes**. Your screen should look like
+Click on **Keep Changes**. Your screen should look like this. Click **Save**.
   
-![Launch SSF Rule 4](images/rule4.png)
-  
-Click on **Save** to save the rule.
+![Adobe Experience Platform Data Collection SSF Rule 4](images/rule4.png)
 
-Click on **Publishing Flow** on the left to deploy the changes in your Launch Server Side configuration.
+Click on **Publishing Flow** on the left to deploy the changes in your Adobe Experience Platform Data Collection Server configuration.
+Click on **...** right from **v1** in your **Development** column and click **Edit**.
 
-![Launch SSF Rule 5](images/publishing.png)
+![Adobe Experience Platform Data Collection SSF Rule 5](images/publishing.png)
 
-Click on **...** right from **v1** in your **Development** column. ![Launch SSF Rule 5](images/pubedit.png) 
+In the **Edit Library** screen, click **Add All Changed Resources**. You will see an overview of the latest changes. Click on **Save & Build for Development**. 
 
-Click on **Edit**.
+![Adobe Experience Platform Data Collection SSF Rule 6](images/resourcechanges.png)
 
-In the **Edit Library** screen 
+After a while you will return to the previous screen. Wait until the circle before **v1** stops spinning and turns solid green. Your updated server side forwarding rules for EXP News pages are now deployed. 
 
-![Launch SSF Rule 6](images/resourcechanges.png) 
-
-click on **Add All Changed Resources**. You will see an overview of the latest changes. 
-
-![Launch SSF Rule 7](images/changedresources.png)
-
-Click on **Save & Build for Development**. After a while you will return to the previous screen. Wait until the circle before **v1** stops spinning and turns solid green. Your updated server side forwarding rules for EXP News pages are now deployed. ![Launch SSF Rule 7](images/rulesdeployed.png)
+![Adobe Experience Platform Data Collection SSF Rule 7](images/rulesdeployed.png)
 
 ## 22.4.3 Demonstrate the EXP News Real-time dashboard
 
