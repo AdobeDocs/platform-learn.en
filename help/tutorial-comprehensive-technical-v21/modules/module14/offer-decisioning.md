@@ -60,7 +60,7 @@ In this exercise you'll get a better understanding of all the different concepts
 
 In this exercise you'll configure your own Personalized Offers and your own Activity, which will then be published.
 
-[14.3 Prepare your Launch and Web SDK setup for Offer Decisioning](./ex3.md)
+[14.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](./ex3.md)
 
 In this exercise you'll use the demo website to test your Offer Activity.
 
