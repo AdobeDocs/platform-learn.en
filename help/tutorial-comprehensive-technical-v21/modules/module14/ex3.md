@@ -7,25 +7,21 @@ doc-type: tutorial
 activity: develop
 exl-id: 6d81d454-5bf6-48c6-a005-980e03d14f29
 ---
-# 14.3 Prepare your Launch and Web SDK setup for Offer Decisioning
+# 14.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning
 
 >[!NOTE]
 >
 >The use of Offer Decisioning in Adobe Experience Platform Web SDK is currently available in early access to select users. This functionality is not available to all IMS organizations.
 
-## 14.3.1 Update your Edge Config ID
+## 14.3.1 Update your Datastream
 
-In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICONTROL Edge Configuration ID]**. You then used the name **ldap - Edge Configuration** and replaced **ldap** with your ldap.
+In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name **ldap - Demo System Datastream** and replaced **ldap** with your ldap.
 
-In this exercise, you need to configure that **[!UICONTROL Edge Configuration ID]** to work with **[!DNL Offer Decisioning]**.
+In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with **[!DNL Offer Decisioning]**.
 
-To do that, go to [https://launch.adobe.com/](https://launch.adobe.com/). You'll then see this. Click **[!UICONTROL Edge Configurations]**.
+To do that, go to [https://launch.adobe.com/](https://launch.adobe.com/). You'll then see this. Click **[!UICONTROL Datastreams]**. Search for your **[!UICONTROL Datastream]**. Click your **[!UICONTROL Datastream]** to open it. 
 
 ![WebSDK](./images/websdk1.png)
-
-Search for your **[!UICONTROL Edge Configuration]**. Click your **[!UICONTROL Edge Configuration]** to open it.
-
-![WebSDK](./images/websdk2.png)
 
 You'll then see this. Click **[!UICONTROL Development Environment]**.
 
@@ -67,11 +63,11 @@ Click **[!UICONTROL Save]**
 
 ![WebSDK](./images/save.png)
 
-Your **[!UICONTROL Edge Configuration ID]** is now ready to work with **[!DNL Offer Decisioning]**.
+Your **[!UICONTROL Datastream]** is now ready to work with **[!DNL Offer Decisioning]**.
 
-## 14.3.2 Configure your Launch property to request Personalized Offers
+## 14.3.2 Configure your Adobe Experience Platform Data Collection Client property to request Personalized Offers
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Properties]**. Search for your Launch properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Launch property for web.
+Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Client]**. Search for your Adobe Experience Platform Data Collection Client properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Adobe Experience Platform Data Collection Client property for web.
 
 ![WebSDK](./images/launch1.png)
 
@@ -163,15 +159,15 @@ Next, click **[!UICONTROL Save]** or **[!UICONTROL Save to Library]**
 
 ![WebSDK](./images/launch12.png)
 
-In Launch, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
+In Adobe Experience Platform Data Collection, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
 
 ![WebSDK](./images/launch13.png)
 
 Every time you're loading a **General Page** now, like for instance the homepage of the demo website, Offer Decisioning will evaluate what the applicable offer is and will return a response back to the website with the details of the the offer to show. Showing the offer on the website requires additional configuration, which you'll do in the next step.
 
-## 14.3.3 Configure your Launch property to receive and apply Personalized Offers
+## 14.3.3 Configure your Adobe Experience Platform Data Collection Client property to receive and apply Personalized Offers
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Properties]**. Search for your Launch properties, which are named **ldap - AEP Demo (DD/MM/YYYY)**. Open your Launch property for web.
+Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Properties]**. Search for your Adobe Experience Platform Data Collection Client properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Adobe Experience Platform Data Collection Client property for web.
 
 ![WebSDK](./images/launch1.png)
 
@@ -268,11 +264,11 @@ Next, click **[!UICONTROL Save]** or **[!UICONTROL Save to Library]**
 
 ![WebSDK](./images/decrec8.png)
 
-In Launch, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
+In Adobe Experience Platform Data Collection, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
 
 ![WebSDK](./images/decrec9.png)
 
-With this change, this rule in Launch will now be listening to the response from Offer Decisioning which is part of the Web SDK response, and when the response is received, the image of the offer will be displayed on the homepage.
+With this change, this rule in Adobe Experience Platform Data Collection will now be listening to the response from Offer Decisioning which is part of the Web SDK response, and when the response is received, the image of the offer will be displayed on the homepage.
 
 Looking at the Luma demo website, you'll see that this image will be replaced now:
 

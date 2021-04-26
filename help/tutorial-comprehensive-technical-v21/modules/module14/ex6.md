@@ -83,7 +83,7 @@ The event ID is what needs to be sent to Adobe Experience Platform in order to t
 
 Click **Ok** and click **Save** to close your event popup.
 
-## 14.6.2 Update your Launch property - Add To Cart Rule 
+## 14.6.2 Update your Adobe Experience Platform Data Collection Client property - Add To Cart Rule 
 
 Go to [https://launch.adobe.com](https://launch.adobe.com) and open your web property.
 
@@ -101,7 +101,7 @@ Click **Save** or **Save to Library**.
 
 ![ACOP](./images/savetolib.png)
 
-In Launch, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
+In Adobe Experience Platform Data Collection, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
 
 ![WebSDK](./images/launch13.png)
 

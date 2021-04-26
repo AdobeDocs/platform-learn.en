@@ -32,7 +32,7 @@ exl-id: 8ad761de-eec7-4a3f-a366-ef71f9e1ace2
 
 ## Exercises
 
-[0.1 Use Demo System Next to setup your Launch property](./ex1.md)
+[0.1 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex1.md)
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
