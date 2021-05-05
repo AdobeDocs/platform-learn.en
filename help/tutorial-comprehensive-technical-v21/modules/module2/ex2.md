@@ -17,14 +17,14 @@ The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/
 
 Before you start configuring XDM Schema's and setting Primary Identifiers, we need to think about the business context of what we're trying to do: 
 
-* You want data
-* You want to link data to a customer
-* You want to build a progressive, Real-time Customer Profile
+- You want data
+- You want to link data to a customer
+- You want to build a progressive, Real-time Customer Profile
 
 There are 2 types of data that we want to capture:
 
-* Who is this customer?
-* What does this customer do?
+- Who is this customer?
+- What does this customer do?
 
 However, the question **Who is this customer?** is a very open question that has many answers. When your company wants to see this question answered, you're looking for demographic information like First Name, Last Name and Address. But also for contact information like an Email Address or a Mobile Phone Number. And also for information linked to Language, OptIn/OptOut and maybe even Profile Pictures. And finally, what you really need to know, is how we'll be identifying this customer in the various systems that your company uses.
 
@@ -161,9 +161,9 @@ You'll now add a new object under that tenant. To do that, click the field **[!U
 
 Use these object-definitions:
 
-* Field name: **[!UICONTROL identification]**
-* Display name:  **[!UICONTROL identification]**
-* Type: **[!UICONTROL Object]**
+- Field name: **[!UICONTROL identification]**
+- Display name:  **[!UICONTROL identification]**
+- Type: **[!UICONTROL Object]**
 
 ![Data Ingestion](./images/tenantfielddef.png)
 
@@ -177,20 +177,20 @@ After clicking **[!UICONTROL Apply]**, you now see your **[!UICONTROL identifica
 
 You'll now add 3 new fields under the  **[!UICONTROL identification]** object:
 
-* ecid:
-  * Field name: **[!UICONTROL ecid]**
-  * Display name:  **[!UICONTROL ecid]**
-  * Type: **[!UICONTROL String]**
+- ecid:
+  - Field name: **[!UICONTROL ecid]**
+  - Display name:  **[!UICONTROL ecid]**
+  - Type: **[!UICONTROL String]**
 
-* emailId
-  * Field name: **[!UICONTROL emailId]**
-  * Display name:  **[!UICONTROL emailId]**
-  * Type: **[!UICONTROL String]**
+- emailId
+  - Field name: **[!UICONTROL emailId]**
+  - Display name:  **[!UICONTROL emailId]**
+  - Type: **[!UICONTROL String]**
   
-* mobilenr
-  * Field name: **[!UICONTROL mobilenr]**
-  * Display name:  **[!UICONTROL mobilenr]**
-  * Type: **[!UICONTROL String]**
+- mobilenr
+  - Field name: **[!UICONTROL mobilenr]**
+  - Display name:  **[!UICONTROL mobilenr]**
+  - Type: **[!UICONTROL String]**
 
 Each field will be defined as type **[!UICONTROL String]** and we'll configure these fields as **[!UICONTROL Identities]**. For the Schema **[!UICONTROL Website Registration Schema]**, we assume that a customer will always be identified by their email-address, which means that you have to configure the field **[!UICONTROL emailId]** as a **[!UICONTROL primary]** identifier, and the other fields as **[!UICONTROL secondary]** identifiers.
 
@@ -206,7 +206,7 @@ This is how each field should look after your initial field configuration.
 
 Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
-* ecid
+- ecid
 
 ![Data Ingestion](./images/ecidfield.png)
 
@@ -216,7 +216,7 @@ To save your field, scroll down in the **[!UICONTROL Field Properties]** until y
 
 Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
-* emailId
+- emailId
 
 ![Data Ingestion](./images/emailidfield.png)
 
@@ -226,7 +226,7 @@ To save your field, scroll down in the **[!UICONTROL Field Properties]** until y
 
 Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
-* mobilenr
+- mobilenr
 
 ![Data Ingestion](./images/mobilenrfield.png)
 
@@ -240,48 +240,48 @@ You now have 3 fields, but these fields haven't been defined as **[!UICONTROL Id
 
 To start defining these fields as **[!UICONTROL Identity]**-fields, follow these steps:
 
-* Select the field **[!UICONTROL emailId]**.
-* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+- Select the field **[!UICONTROL emailId]**.
+- On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/emailidid.png)
 
-* Now check the checkbox for **[!UICONTROL Primary Identity]**.
+- Now check the checkbox for **[!UICONTROL Primary Identity]**.
 
   ![Data Ingestion](./images/emailidprimid.png)
   
-* Lastly, select the namespace **[!UICONTROL Email]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+- Lastly, select the namespace **[!UICONTROL Email]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/emailidprimidns.png)
 
-* Finally, click **[!UICONTROL Apply]** to save your changes.
+- Finally, click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
   
 Next, you have to define the other fields for **[!UICONTROL ecid]** and **[!UICONTROL mobilenr]** as secondary identifiers.
 
-* Select the field **[!UICONTROL ecid]**.
-* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+- Select the field **[!UICONTROL ecid]**.
+- On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/ecidid.png)
 
-* Next, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+- Next, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/ecidprimidns.png)
 
-* Click **[!UICONTROL Apply]** to save your changes.
+- Click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
-* Select the field **[!UICONTROL mobilenr]**.
-* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+- Select the field **[!UICONTROL mobilenr]**.
+- On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/mobid.png)
 
-* Make sure to select the namespace **[!UICONTROL Phone]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+- Make sure to select the namespace **[!UICONTROL Phone]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/mobprimidns.png)
 
-* Click **[!UICONTROL Apply]** to save your changes.
+- Click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
@@ -389,19 +389,19 @@ After clicking the **[!UICONTROL + Create Schema]** button, a new schema is crea
 Now you need to define what an answer to the question **What does this customer do?** should look like.
 In the introduction of this lab, we noted the need for following attributes to define what a customer does:
 
-* Which pages or products have been visited? 
-* Has this customer added a product to his cart or even purchased an item? 
-* What device and browser has been used to browse the website? 
-* What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer?
-* Primary Identifier for a customer
+- Which pages or products have been visited? 
+- Has this customer added a product to his cart or even purchased an item? 
+- What device and browser has been used to browse the website? 
+- What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer?
+- Primary Identifier for a customer
 
 
 To make that information part of your schema, you need to add the following [!UICONTROL Field Group] to your schema:
 
-* Web Details
-* Commerce Details
-* Environment Details
-* your company's custom Profile Identification [!UICONTROL Field Group] (Primary and Secondary Identifiers)
+- Web Details
+- Commerce Details
+- Environment Details
+- your company's custom Profile Identification [!UICONTROL Field Group] (Primary and Secondary Identifiers)
 
 In the **[!UICONTROL Add Field Group]** screen, select the [!UICONTROL Field Groups] **[!UICONTROL Web Details]**, **[!UICONTROL Commerce Details]** and **[!UICONTROL Environment Details]**.
 
@@ -472,9 +472,9 @@ You'll now add a new object under that tenant. To do that, click the field **[!U
 
 Use these object-definitions:
 
-* Field name: **[!UICONTROL identification]**
-* Display name:  **[!UICONTROL identification]**
-* Type: **[!UICONTROL Object]**
+- Field name: **[!UICONTROL identification]**
+- Display name:  **[!UICONTROL identification]**
+- Type: **[!UICONTROL Object]**
 
 ![Data Ingestion](./images/tenantfielddefee.png)
 
@@ -496,11 +496,11 @@ The ECID-field will be defined as type **[!UICONTROL String]** and you'll config
 
 You now have an empty field. You need to configure the above field as indicated.
 
-* ecid:
+- ecid:
 
-  * Field name: **[!UICONTROL ecid]**
-  * Display name:  **[!UICONTROL ecid]**
-  * Type: **[!UICONTROL String]**
+  - Field name: **[!UICONTROL ecid]**
+  - Display name:  **[!UICONTROL ecid]**
+  - Type: **[!UICONTROL String]**
 
 This is how the [!UICONTROL ecid]-field should look after your initial field configuration:
 
@@ -516,20 +516,20 @@ You now have a new field, but this field hasn't been defined as an **[!UICONTROL
 
 To start defining these fields as **[!UICONTROL Identity]**-fields, follow these steps:
 
-* Select the field **[!UICONTROL ecid]**.
-* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+- Select the field **[!UICONTROL ecid]**.
+- On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
 ![Data Ingestion](./images/ecididee.png)
 
-* Now check the checkbox for **[!UICONTROL Primary Identity]**.
+- Now check the checkbox for **[!UICONTROL Primary Identity]**.
 
 ![Data Ingestion](./images/ecidprimidee.png)
   
-* Lastly, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the [!UICONTROL Identity Graph] in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+- Lastly, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the [!UICONTROL Identity Graph] in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/ecidprimidnsee.png)
 
-* Finally, click **[!UICONTROL Apply]** to save your changes.
+- Finally, click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
@@ -559,8 +559,8 @@ Click **[!UICONTROL Save]** to save your changes.
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
 For instance, the fields **[!UICONTROL _id]** and **[!UICONTROL timestamp]** are required fields.
 
-* _id needs to contain a unique id for a specific data ingestion
-* timestamp needs to be the timestamp of this hit, in the format **[!UICONTROL "YYYY-MM-DDTHH:MM:SSSZ"]**, like for instance: **[!UICONTROL "2019-04-08T07:20:000Z"]**
+- _id needs to contain a unique id for a specific data ingestion
+- timestamp needs to be the timestamp of this hit, in the format **[!UICONTROL "YYYY-MM-DDTHH:MM:SSSZ"]**, like for instance: **[!UICONTROL "2019-04-08T07:20:000Z"]**
 
 You have now defined a schema, linked existing and newly created [!UICONTROL Field Groups] and have defined identifiers.
 
