@@ -28,8 +28,7 @@ This foundational module introduces you to Adobe's data collection vision and ex
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Data Collection: [https://launch.adobe.com](https://launch.adobe.com)
-- Access to a Platform demo website
-- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+- Access to the demo website
 
 >[!IMPORTANT]
 >
@@ -40,6 +39,14 @@ This foundational module introduces you to Adobe's data collection vision and ex
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
 ![Architecture Overview](../../assets/images/architecturem1.png)
+
+## Sandbox to use
+
+For this module, please use this sandbox: `--aepSandboxId--`.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.6 - Install the Chrome extension for the Experience League documentation](../module0/ex6.md)
 
 ## Exercises
 

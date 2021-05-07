@@ -1,13 +1,13 @@
 ---
-title: Offer Decisioning - Test your Offer Activity using Journey Orchestration
-description: Test your Offer Activity using Journey Orchestration
+title: Offer Decisioning - Test your Decision using Journey Orchestration
+description: Test your Decision using Journey Orchestration
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: d36d3204-3212-4492-bf29-3a21af2ee572
 ---
-# 14.6 Test your Offer Activity using Journey Orchestration
+# 14.6 Test your Decision using Journey Orchestration
 
 In this exercise, you'll configure the event and the journey that needs to be triggered when someone likes a product as part of the chatbot flow.
 
@@ -363,7 +363,7 @@ Next, click the parameter `dynamic val.: eventNS`. For `eventNS`, you need to se
 
 ![Demo](./images/dyn2.png)
 
-Next, click the parameter `dynamic val.: placementId`. For `placementId`, you need to enter the **[!UICONTROL Offer Decisioning Placement ID]** for the placement [!UICONTROL Non-digital - Text]. You can find the **[!UICONTROL Offer Decisioning Placement ID]** by going into Adobe Experience Platform, to Offers, to Placements, and by selecting the placement [!UICONTROL Non-digital - Text].
+Next, click the parameter `dynamic val.: placementId`. For `placementId`, you need to enter the **[!UICONTROL Offer Decisioning Placement ID]** for the placement [!UICONTROL Non-digital - Text]. You can find the **[!UICONTROL Offer Decisioning Placement ID]** by going into Adobe Experience Platform, to Components, to Placements, and by selecting the placement [!UICONTROL Non-digital - Text].
 
 ![Demo](./images/dyn3.png)
 
@@ -373,17 +373,17 @@ Copy the [!UICONTROL Placement ID] and paste it into the popup in Journey Orches
 
 ![Demo](./images/dyn4.png)
 
-Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need to enter the **[!UICONTROL Offer Decisioning Activity ID]**. You can find the **[!UICONTROL Offer Decisioning Activity ID]** by going into Adobe Experience Platform, to Offers, to Activities, and by selecting your Activity.
+Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need to enter the **[!UICONTROL Offer Decisioning Decision ID]**. You can find the **[!UICONTROL Offer Decisioning Decision ID]** by going into Adobe Experience Platform, to Offers, to Decisions, and by selecting your Decision.
 
 ![Demo](./images/dyn5.png)
 
-Copy the [!UICONTROL Activity ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
+Copy the [!UICONTROL Decision ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Decision ID]. It should look like this:
 
 `"xcore:offer-activity:1290525f4441fd6e"`
 
 ![Demo](./images/dyn6.png)
 
-Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
+Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Decision ID]. It should look like this:
 
 `"32a2cb0f-63f8-3388-b156-94f4d917abe7"`
 
@@ -534,7 +534,7 @@ Next, click the parameter `dynamic val.: eventNS`. For `eventNS`, you need to se
 
 ![Demo](./images/dyn2a.png)
 
-Next, click the parameter `dynamic val.: placementId`. For `placementId`, you need to enter the **[!UICONTROL Offer Decisioning Placement ID]** for the placement [!UICONTROL Email - Image]. You can find the **[!UICONTROL Offer Decisioning Placement ID]** by going into Adobe Experience Platform, to Offers, to Placements, and by selecting the placement [!UICONTROL Email - Image].
+Next, click the parameter `dynamic val.: placementId`. For `placementId`, you need to enter the **[!UICONTROL Offer Decisioning Placement ID]** for the placement [!UICONTROL Email - Image]. You can find the **[!UICONTROL Offer Decisioning Placement ID]** by going into Adobe Experience Platform, to Components, to Placements, and by selecting the placement [!UICONTROL Email - Image].
 
 ![Demo](./images/dyn3a.png)
 
@@ -544,17 +544,17 @@ Copy the [!UICONTROL Placement ID] and paste it into the popup in Journey Orches
 
 ![Demo](./images/dyn4a.png)
 
-Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need to enter the **[!UICONTROL Offer Decisioning Activity ID]**. You can find the **[!UICONTROL Offer Decisioning Activity ID]** by going into Adobe Experience Platform, to Offers, to Activities, and by selecting your Activity.
+Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need to enter the **[!UICONTROL Offer Decisioning Decision ID]**. You can find the **[!UICONTROL Offer Decisioning Decision ID]** by going into Adobe Experience Platform, to Offers, to Decisions, and by selecting your Decision.
 
 ![Demo](./images/dyn5.png)
 
-Copy the [!UICONTROL Activity ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
+Copy the [!UICONTROL Decision ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Decision ID]. It should look like this:
 
 `"xcore:offer-activity:1290525f4441fd6e"`
 
 ![Demo](./images/dyn6a.png)
 
-Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
+Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Decision ID]. It should look like this:
 
 `"32a2cb0f-63f8-3388-b156-94f4d917abe7"`
 
@@ -602,7 +602,7 @@ Next, click the parameter `dynamic val.: eventNS`. For `eventNS`, you need to se
 
 ![Demo](./images/dyn2.png)
 
-Next, click the parameter `dynamic val.: placementId`. For `placementId`, you need to enter the **[!UICONTROL Offer Decisioning Placement ID]** for the placement [!UICONTROL Non-digital - Text]. You can find the **[!UICONTROL Offer Decisioning Placement ID]** by going into Adobe Experience Platform, to Offers, to Placements, and by selecting the placement [!UICONTROL Non-digital - Text].
+Next, click the parameter `dynamic val.: placementId`. For `placementId`, you need to enter the **[!UICONTROL Offer Decisioning Placement ID]** for the placement [!UICONTROL Non-digital - Text]. You can find the **[!UICONTROL Offer Decisioning Placement ID]** by going into Adobe Experience Platform, to Components, to Placements, and by selecting the placement [!UICONTROL Non-digital - Text].
 
 ![Demo](./images/dyn3.png)
 
@@ -612,17 +612,17 @@ Copy the [!UICONTROL Placement ID] and paste it into the popup in Journey Orches
 
 ![Demo](./images/dyn4.png)
 
-Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need to enter the **[!UICONTROL Offer Decisioning Activity ID]**. You can find the **[!UICONTROL Offer Decisioning Activity ID]** by going into Adobe Experience Platform, to Offers, to Activities, and by selecting your Activity.
+Next, click the parameter `dynamic val.: activityId`. For `activityId`, you need to enter the **[!UICONTROL Offer Decisioning Decision ID]**. You can find the **[!UICONTROL Offer Decisioning Decision ID]** by going into Adobe Experience Platform, to Offers, to Decisions, and by selecting your Decision.
 
 ![Demo](./images/dyn5.png)
 
-Copy the [!UICONTROL Activity ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
+Copy the [!UICONTROL Decision ID] and paste it into the popup in Journey Orchestration, and don't forget to add `"` at the beginning and ending of the [!UICONTROL Decision ID]. It should look like this:
 
 `"xcore:offer-activity:1290525f4441fd6e"`
 
 ![Demo](./images/dyn6.png)
 
-Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Activity ID]. It should look like this:
+Next, click the parameter `dynamic val.: containerId`. For `containerId`, you need to enter the **container instanceId**, which you retrieved through the API in the previous exercise. Copy the container instanceId and don't forget to add `"` at the beginning and ending of the [!UICONTROL Decision ID]. It should look like this:
 
 `"32a2cb0f-63f8-3388-b156-94f4d917abe7"`
 
@@ -687,7 +687,6 @@ Clicking the **Add To Cart** button will trigger your journey, and you should no
 ![ACOP](./images/lumaw4.png)
 
 ![ACOP](./images/lumaw3.jpg)
-
 
 You've now finished this exercise.
 

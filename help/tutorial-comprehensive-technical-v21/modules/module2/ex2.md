@@ -17,14 +17,14 @@ The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/
 
 Before you start configuring XDM Schema's and setting Primary Identifiers, we need to think about the business context of what we're trying to do: 
 
-* We Want Data
-* We Want to Link Data to a Customer
-* We Want to Build a Progressive, Real-time Customer Profile
+- You want data
+- You want to link data to a customer
+- You want to build a progressive, Real-time Customer Profile
 
 There are 2 types of data that we want to capture:
 
-* Who is this customer?
-* What does this customer do?
+- Who is this customer?
+- What does this customer do?
 
 However, the question **Who is this customer?** is a very open question that has many answers. When your company wants to see this question answered, you're looking for demographic information like First Name, Last Name and Address. But also for contact information like an Email Address or a Mobile Phone Number. And also for information linked to Language, OptIn/OptOut and maybe even Profile Pictures. And finally, what you really need to know, is how we'll be identifying this customer in the various systems that your company uses.
 
@@ -40,7 +40,7 @@ From a Schema perspective, we look at this as a **Class**. The question: **Who i
 
 So when you create an XDM Schema to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!UICONTROL XDM Individual Profile]**.
 
-To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Mixins]. [!UICONTROL Mixins] are extensions of the Profile-class, and have very specific configurations. For instance, demographic information like First Name, Last Name, Gender and Birthday are part of the [!UICONTROL Mixin]: **[!UICONTROL Demographic Details]**.
+To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Field Groups]. [!UICONTROL Field Groups] are extensions of the Profile-class, and have very specific configurations. For instance, demographic information like First Name, Last Name, Gender and Birthday are part of the [!UICONTROL Field Group]: **[!UICONTROL Demographic Details]**.
 
 Secondly, your company needs to decide how to identify this customer. In the case of your company, the main identifier for a known customer might be a specific customer ID, like for instance an email address. But technically, there are other ways of identifying a customer at your company, like using a mobile phone number.
 In this lab, we'll define the email address as the primary identifier and the phone number as a secondary identifier.
@@ -75,65 +75,30 @@ You should create a new schema. To create a new schema, click on the button **[!
 
 ![Data Ingestion](./images/createschema.png)
 
-After clicking the **[!UICONTROL + Create Schema]** button, you'll see a new schema. 
+After clicking the **[!UICONTROL + Create Schema]** button, a new schema is created and you'll be prompted to select or create **field groups**. 
 
 ![Data Ingestion](./images/emptyschema.png)
-
-Let's first name your schema.
-
-As the name for our schema, we'll use this:
-
-**[!UICONTROL ldap - Demo System - Profile Schema for Website]**
-
-Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
-
-**[!UICONTROL vangeluw - Demo System - Profile Schema for Website]**
-
-That should give you something like this:
-
-![Data Ingestion](./images/schemaname.png)
-
-The class of your schema is already selected and should be **[!UICONTROL XDM Individual Profile]**. 
-
-![Data Ingestion](./images/XDMProfile.png)
-
-Based on that selected class, you already see an overview of the minimal structure of your schema.
-
-![Data Ingestion](./images/classoverview.png)
-
-It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the field **[!UICONTROL _id]** is a required field.
-
-* _id needs to contain a unique id for a specific data ingestion
 
 Now you need to define what an answer to the question **Who is this customer?** should look like.
 In the introduction of this lab, we noted the need for following attributes to define a customer:
 
-* Demographic information like First Name, Last Name and Address
-* Contact information like a Home Address, Email Address or a Mobile Phone Number
-* Other Information linked to Language, OptIn/OptOut and maybe even Profile Pictures. 
-* Primary Identifier for a customer
+- Demographic information like First Name, Last Name and Address
+- Contact information like a Home Address, Email Address or a Mobile Phone Number
+- Other Information linked to Language, OptIn/OptOut and maybe even Profile Pictures. 
+- Primary Identifier for a customer
 
-To make that information part of your schema, you need to add the following [!UICONTROL Mixins] to your schema:
+To make that information part of your schema, you need to add the following [!UICONTROL Field Groups] to your schema:
 
-* Demographic Details (Demographic Information)
-* Personal Contact Details (Contact Information)
-* Preference Details (Other Information)
-* your company's custom Profile Identification Mixin (Primary and Secondary Identifiers)
+- Demographic Details (Demographic Information)
+- Personal Contact Details (Contact Information)
+- Preference Details (Other Information)
+- your company's custom Profile Identification Field Group (Primary and Secondary Identifiers)
 
-You can add these [!UICONTROL Mixin] by clicking the **[!UICONTROL + Add]** button below the Class that you just defined.
-
-![Data Ingestion](./images/addmixin.png)
-
-Let's start with **[!UICONTROL Demographic Details]**.
-
-Click the **[!UICONTROL + Add]** button to start adding a Mixin.
-
-In the **[!UICONTROL Add Mixin]** screen, select the [!UICONTROL Mixin] **[!UICONTROL Demographic Details]**, **[!UICONTROL Personal Contact Details]** and **[!UICONTROL Preference Details]**.
+In the **[!UICONTROL Add Field Group]** screen, select the [!UICONTROL Field Group] **[!UICONTROL Demographic Details]**, **[!UICONTROL Personal Contact Details]** and **[!UICONTROL Preference Details]**.
 
 ![Data Ingestion](./images/ppfd.png)
 
-Click the **[!UICONTROL Add Mixin]** button to add the [!UICONTROL Mixin] to your schema.
+Click the **[!UICONTROL Add Field Groups]** button to add the [!UICONTROL Field Group] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -141,33 +106,33 @@ You'll now have this:
 
 ![Data Ingestion](./images/schemathis.png)
 
-Lastly, you need a new [!UICONTROL Mixin] to capture the **[!UICONTROL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
+Next, you need a new [!UICONTROL Field Group] to capture the **[!UICONTROL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
 
-You will now create your own custom [!UICONTROL Mixin] and as such, you'll be extending the [!UICONTROL XDM Schema] to meet your own company's requirements.
+You will now create your own custom [!UICONTROL Field Group] and as such, you'll be extending the [!UICONTROL XDM Schema] to meet your own company's requirements.
 
-Click the **[!UICONTROL + Add]** button to start adding a [!UICONTROL Mixin].
+Click the **[!UICONTROL + Add]** button to start adding a [!UICONTROL Field Group].
 
 ![Data Ingestion](./images/addmixin2.png)
 
-Instead of reusing an existing [!UICONTROL Mixin], you'll now create your own [!UICONTROL Mixin]. You can do that by selecting **[!UICONTROL Create New Mixin]**.
+Instead of reusing an existing [!UICONTROL Field Group], you'll now create your own [!UICONTROL Field Group]. You can do that by selecting **[!UICONTROL Create New Field Group]**.
 
 ![Data Ingestion](./images/createmixin.png)
 
-You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Description]** for your new [!UICONTROL Mixin]. 
+You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Description]** for your new [!UICONTROL Field Group]. 
 
 As the name for our schema, we'll use this:
 
-**[!UICONTROL ldap - Profile Identification Mixin]**
+**[!UICONTROL ldap - Profile Identification Field Group]**
 
 Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
-**[!UICONTROL vangeluw - Profile Identification Mixin]**
+**[!UICONTROL vangeluw - Profile Identification Field Group]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/mixinname.png)
 
-Click the **[!UICONTROL Add Mixin]** button to add the newly created [!UICONTROL Mixin] to your schema.
+Click the **[!UICONTROL Add Field Groups]** button to add the newly created [!UICONTROL Field Group] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -175,14 +140,14 @@ You should now have this schema structure in place.
 
 ![Data Ingestion](./images/schemastructurem.png)
 
-Your new [!UICONTROL Mixin] is still empty, so now you'll have to add fields to that [!UICONTROL Mixin].
-In the [!UICONTROL Mixin]-list, click your custom [!UICONTROL Mixin].
+Your new [!UICONTROL Field Group] is still empty, so now you'll have to add fields to that [!UICONTROL Field Group].
+In the [!UICONTROL Field Group]-list, click your custom [!UICONTROL Field Group].
 
 ![Data Ingestion](./images/schemastructurem.png)
 
-You now see a number of new buttons appear. These buttons are named **[!UICONTROL + Add Field]**.
+You now see a number of new buttons appear.
 
-On the top-level of your Schema, next to your Schema - name, click the **[!UICONTROL + Add Field]** button.
+On the top-level of your Schema, click the **[!UICONTROL + Add Field]** button.
 
 ![Data Ingestion](./images/clickaddfield.png)
 
@@ -190,15 +155,15 @@ After clicking the **[!UICONTROL + Add Field]** button, you now see a new **[!UI
 
 ![Data Ingestion](./images/tenant.png)
 
-We'll now add a new object under that tenant. To do that, click the field **[!UICONTROL New Field]** under the tenant-object.
+You'll now add a new object under that tenant. To do that, click the field **[!UICONTROL New Field]** under the tenant-object.
 
 ![Data Ingestion](./images/tenantfield.png)
 
 Use these object-definitions:
 
-* Field name: **[!UICONTROL identification]**
-* Display name:  **[!UICONTROL identification]**
-* Type: **[!UICONTROL Object]**
+- Field name: **[!UICONTROL identification]**
+- Display name:  **[!UICONTROL identification]**
+- Type: **[!UICONTROL Object]**
 
 ![Data Ingestion](./images/tenantfielddef.png)
 
@@ -212,20 +177,20 @@ After clicking **[!UICONTROL Apply]**, you now see your **[!UICONTROL identifica
 
 You'll now add 3 new fields under the  **[!UICONTROL identification]** object:
 
-* ecid:
-  * Field name: **[!UICONTROL ecid]**
-  * Display name:  **[!UICONTROL ecid]**
-  * Type: **[!UICONTROL String]**
+- ecid:
+  - Field name: **[!UICONTROL ecid]**
+  - Display name:  **[!UICONTROL ecid]**
+  - Type: **[!UICONTROL String]**
 
-* emailId
-  * Field name: **[!UICONTROL emailId]**
-  * Display name:  **[!UICONTROL emailId]**
-  * Type: **[!UICONTROL String]**
+- emailId
+  - Field name: **[!UICONTROL emailId]**
+  - Display name:  **[!UICONTROL emailId]**
+  - Type: **[!UICONTROL String]**
   
-* mobilenr
-  * Field name: **[!UICONTROL mobilenr]**
-  * Display name:  **[!UICONTROL mobilenr]**
-  * Type: **[!UICONTROL String]**
+- mobilenr
+  - Field name: **[!UICONTROL mobilenr]**
+  - Display name:  **[!UICONTROL mobilenr]**
+  - Type: **[!UICONTROL String]**
 
 Each field will be defined as type **[!UICONTROL String]** and we'll configure these fields as **[!UICONTROL Identities]**. For the Schema **[!UICONTROL Website Registration Schema]**, we assume that a customer will always be identified by their email-address, which means that you have to configure the field **[!UICONTROL emailId]** as a **[!UICONTROL primary]** identifier, and the other fields as **[!UICONTROL secondary]** identifiers.
 
@@ -241,7 +206,7 @@ This is how each field should look after your initial field configuration.
 
 Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
-* ecid
+- ecid
 
 ![Data Ingestion](./images/ecidfield.png)
 
@@ -251,7 +216,7 @@ To save your field, scroll down in the **[!UICONTROL Field Properties]** until y
 
 Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
-* emailId
+- emailId
 
 ![Data Ingestion](./images/emailidfield.png)
 
@@ -261,7 +226,7 @@ To save your field, scroll down in the **[!UICONTROL Field Properties]** until y
 
 Click the **[!UICONTROL +]** button next to the **[!UICONTROL identification]** object to create a new field and fill out the fields as indicated.
 
-* mobilenr
+- mobilenr
 
 ![Data Ingestion](./images/mobilenrfield.png)
 
@@ -275,48 +240,48 @@ You now have 3 fields, but these fields haven't been defined as **[!UICONTROL Id
 
 To start defining these fields as **[!UICONTROL Identity]**-fields, follow these steps:
 
-* Select the field **[!UICONTROL emailId]**.
-* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+- Select the field **[!UICONTROL emailId]**.
+- On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/emailidid.png)
 
-* Now check the checkbox for **[!UICONTROL Primary Identity]**.
+- Now check the checkbox for **[!UICONTROL Primary Identity]**.
 
   ![Data Ingestion](./images/emailidprimid.png)
   
-* Lastly, select the namespace **[!UICONTROL Email]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+- Lastly, select the namespace **[!UICONTROL Email]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/emailidprimidns.png)
 
-* Finally, click **[!UICONTROL Apply]** to save your changes.
+- Finally, click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
   
 Next, you have to define the other fields for **[!UICONTROL ecid]** and **[!UICONTROL mobilenr]** as secondary identifiers.
 
-* Select the field **[!UICONTROL ecid]**.
-* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+- Select the field **[!UICONTROL ecid]**.
+- On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/ecidid.png)
 
-* Next, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+- Next, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/ecidprimidns.png)
 
-* Click **[!UICONTROL Apply]** to save your changes.
+- Click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
-* Select the field **[!UICONTROL mobilenr]**.
-* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+- Select the field **[!UICONTROL mobilenr]**.
+- On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
   ![Data Ingestion](./images/mobid.png)
 
-* Next, select the namespace **[!UICONTROL Phone]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+- Make sure to select the namespace **[!UICONTROL Phone]** from the list of **[!UICONTROL Namespaces]**. A Namespace is used by the Identity Graph in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/mobprimidns.png)
 
-* Click **[!UICONTROL Apply]** to save your changes.
+- Click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
@@ -324,7 +289,23 @@ The **[!UICONTROL identification]** object should now look like this, with the 3
 
 ![Data Ingestion](./images/applyiden.png)
 
-You have now defined a Schema, linked existing and newly created [!UICONTROL Mixin] and have defined identifiers.
+Let's now give your schema a name. Select the field **Untitled schema**.
+
+![Data Ingestion](./images/schemaname1.png)
+
+As the name for our schema, you'll use this:
+
+**[!UICONTROL ldap - Demo System - Profile Schema for Website]**
+
+Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
+
+**[!UICONTROL vangeluw - Demo System - Profile Schema for Website]**
+
+That should give you something like this:
+
+![Data Ingestion](./images/schemaname.png)
+
+You have now defined a Schema, linked existing and newly created [!UICONTROL Field Groups] and have defined identifiers.
 
 Click **[!UICONTROL Save]** to save your changes.
 
@@ -367,7 +348,7 @@ From a schema perspective, we look at this as a **[!UICONTROL Class]**. The ques
 
 So when you create an [!UICONTROL XDM Schema] to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!UICONTROL ExperienceEvent]**.
 
-To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Mixin]. [!UICONTROL Mixins] are extensions of the [!UICONTROL ExperienceEvent]-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the [!UICONTROL Mixin] **Commerce Details**.
+To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Field Group]. [!UICONTROL Field Groups] are extensions of the [!UICONTROL ExperienceEvent]-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the [!UICONTROL Field Group] **Commerce Details**.
 
 Secondly, your company needs to decide how you'll identify the behavior of this customer. Since we're talking about interactions on a website, it's possible that your company knows the customer but it's equally possible that an unknown, anonymous visitor is active on the website. So we can't use an identifier like email-address. In this case, your company will probably decide to use the [!UICONTROL Experience Cloud ID (ECID)] as the primary identifier.
 
@@ -393,7 +374,7 @@ In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on t
 
 ![Data Ingestion](./images/menuschemas.png)
 
-In [!UICONTROL Schemas], you'll see your previously defined schema. 
+In [!UICONTROL Schemas], you'll see all existing schemas. 
 
 ![Data Ingestion](./images/schemasee.png)
 
@@ -401,67 +382,32 @@ You should create a new schema. To create a new schema, click on the button **[!
 
 ![Data Ingestion](./images/createschema1.png)
 
-After clicking the **[!UICONTROL + Create Schema]** button, you'll see an empty, new schema. 
+After clicking the **[!UICONTROL + Create Schema]** button, a new schema is created and you'll be prompted to select or create **field groups**.
 
 ![Data Ingestion](./images/emptyschemaee.png)
-
-Let's first name your schema. Please use the following naming for your schema:
-
-As the name for our schema, we'll use this:
-**[!UICONTROL ldap - Demo System - Event Schema for Website]**
-
-Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
-
-**[!UICONTROL vangeluw - Demo System - Event Schema for Website]**
-
-That should give you something like this:
-
-![Data Ingestion](./images/schemanameee.png)
-
-The class of your schema is already selected and should be **[!UICONTROL XDM ExperienceEvent]**. 
-
-![Data Ingestion](./images/XDMEE.png)
-
-Based on that selected class, you already see an overview of the minimal structure of your schema.
-
-![Data Ingestion](./images/classoverviewee.png)
-
-It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the fields **[!UICONTROL _id]** and **[!UICONTROL timestamp]** are required fields.
-
-* _id needs to contain a unique id for a specific data ingestion
-* timestamp needs to be the timestamp of this hit, in the format **[!UICONTROL "YYYY-MM-DDTHH:MM:SSSZ"]**, like for instance: **[!UICONTROL "2019-04-08T07:20:000Z"]**
 
 Now you need to define what an answer to the question **What does this customer do?** should look like.
 In the introduction of this lab, we noted the need for following attributes to define what a customer does:
 
-* Which pages or products have been visited? 
-* Has this customer added a product to his cart or even purchased an item? 
-* What device and browser has been used to browse the website? 
-* What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer?
-* Primary Identifier for a customer
+- Which pages or products have been visited? 
+- Has this customer added a product to his cart or even purchased an item? 
+- What device and browser has been used to browse the website? 
+- What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer?
+- Primary Identifier for a customer
 
 
-To make that information part of your schema, you need to add the following [!UICONTROL Mixin] to your schema:
+To make that information part of your schema, you need to add the following [!UICONTROL Field Group] to your schema:
 
-* Web Details
-* Commerce Details
-* Environment Details
-* your company's custom Profile Identification [!UICONTROL Mixin] (Primary and Secondary Identifiers)
+- Web Details
+- Commerce Details
+- Environment Details
+- your company's custom Profile Identification [!UICONTROL Field Group] (Primary and Secondary Identifiers)
 
-You can add these [!UICONTROL Mixin] by clicking the **[!UICONTROL + Add]** button below the Class.
-
-![Data Ingestion](./images/addmixinee.png)
-
-Let's start with **[!UICONTROL Web Details]**.
-
-Click the **[!UICONTROL + Add]** button to start adding a [!UICONTROL Mixin].
-
-In the **[!UICONTROL Add Mixin]** screen, select the [!UICONTROL Mixins] **[!UICONTROL Web Details]**, **[!UICONTROL Commerce Details]** and **[!UICONTROL Environment Details]**.
+In the **[!UICONTROL Add Field Group]** screen, select the [!UICONTROL Field Groups] **[!UICONTROL Web Details]**, **[!UICONTROL Commerce Details]** and **[!UICONTROL Environment Details]**.
 
 ![Data Ingestion](./images/eeed.png)
 
-Click the **[!UICONTROL Add Mixin]** button to add the Mixin to your schema.
+Click the **[!UICONTROL Add Field Groups]** button to add the Field Group to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -469,35 +415,35 @@ You'll then have this:
 
 ![Data Ingestion](./images/eethis.png)
 
-Lastly, you need a new [!UICONTROL Mixin] to capture the **[!UICONTROL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
+Next, you need to create a new [!UICONTROL Field Group] to capture the **[!UICONTROL Identifier]** used for data collection. As you've seen in the previous exercise, there's a concept of Primary and Secondary Identifiers. A Primary Identifier is the most important one, as all collected data will be linked to this Identifier.
 
-You will now create your own custom [!UICONTROL Mixin] and as such, you'll be extending the [!UICONTROL XDM Schema] to meet your own company's requirements.
+You will now create your own custom [!UICONTROL Field Group] and as such, you'll be extending the [!UICONTROL XDM Schema] to meet your own company's requirements.
 
-A [!UICONTROL Mixin] is linked to a [!UICONTROL Class], so that means that you can't simply reuse the previously created [!UICONTROL Mixin].
+A [!UICONTROL Field Group] is linked to a [!UICONTROL Class], so that means that you can't simply reuse the previously created [!UICONTROL Field Group].
 
-Click the **[!UICONTROL + Add]** button to start adding a [!UICONTROL Mixin].
+Click the **[!UICONTROL + Add]** button to start adding a [!UICONTROL Field Group].
 
 ![Data Ingestion](./images/addmixinee2.png)
 
-Instead of reusing an existing [!UICONTROL Mixin], you'll now create your own [!UICONTROL Mixin]. You can do that by selecting **[!UICONTROL Create New Mixin]**.
+Instead of reusing an existing [!UICONTROL Field Group], you'll now create your own [!UICONTROL Field Group]. You can do that by selecting **[!UICONTROL Create New Field Group]**.
 
 ![Data Ingestion](./images/createmixin.png)
 
-You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Description]** for your new Mixin. 
+You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Description]** for your new Field Group. 
 
-As the name for our mixin, we'll use this:
+As the name for your Field Group, use this:
 
-**[!UICONTROL ldap - ExperienceEvent Identification Mixin]**
+**[!UICONTROL ldap - ExperienceEvent Identification Field Group]**
 
 Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
-**[!UICONTROL vangeluw - ExperienceEvent Identification Mixin]**
+**[!UICONTROL vangeluw - ExperienceEvent Identification Field Group]**
 
 That should give you something like this:
 
 ![Data Ingestion](./images/mixinnameee.png)
 
-Click the **[!UICONTROL Add Mixin]** button to add the newly created [!UICONTROL Mixin] to your schema.
+Click the **[!UICONTROL Add Field Group]** button to add the newly created [!UICONTROL Field Group] to your schema.
 
 ![Data Ingestion](./images/addmixin1.png)
 
@@ -505,10 +451,10 @@ You should now have this [!UICONTROL Schema] structure in place.
 
 ![Data Ingestion](./images/schemastructuremee.png)
 
-Your new [!UICONTROL Mixin] is still empty, so now you'll have to add fields to that Mixin.
-In the [!UICONTROL Mixin]-list, click your custom [!UICONTROL Mixin].
+Your new [!UICONTROL Field Group] is still empty, so now you'll have to add fields to that Field Group.
+In the [!UICONTROL Field Group]-list, click your custom [!UICONTROL Field Group].
 
-![Data Ingestion](./images/mixinselectedee.png)
+![Data Ingestion](./images/schemastructuremee.png)
 
 You now see a number of new buttons appear. 
 
@@ -526,9 +472,9 @@ You'll now add a new object under that tenant. To do that, click the field **[!U
 
 Use these object-definitions:
 
-* Field name: **[!UICONTROL identification]**
-* Display name:  **[!UICONTROL identification]**
-* Type: **[!UICONTROL Object]**
+- Field name: **[!UICONTROL identification]**
+- Display name:  **[!UICONTROL identification]**
+- Type: **[!UICONTROL Object]**
 
 ![Data Ingestion](./images/tenantfielddefee.png)
 
@@ -550,11 +496,11 @@ The ECID-field will be defined as type **[!UICONTROL String]** and you'll config
 
 You now have an empty field. You need to configure the above field as indicated.
 
-* ecid:
+- ecid:
 
-  * Field name: **[!UICONTROL ecid]**
-  * Display name:  **[!UICONTROL ecid]**
-  * Type: **[!UICONTROL String]**
+  - Field name: **[!UICONTROL ecid]**
+  - Display name:  **[!UICONTROL ecid]**
+  - Type: **[!UICONTROL String]**
 
 This is how the [!UICONTROL ecid]-field should look after your initial field configuration:
 
@@ -570,20 +516,20 @@ You now have a new field, but this field hasn't been defined as an **[!UICONTROL
 
 To start defining these fields as **[!UICONTROL Identity]**-fields, follow these steps:
 
-* Select the field **[!UICONTROL ecid]**.
-* On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+- Select the field **[!UICONTROL ecid]**.
+- On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
 ![Data Ingestion](./images/ecididee.png)
 
-* Now check the checkbox for **[!UICONTROL Primary Identity]**.
+- Now check the checkbox for **[!UICONTROL Primary Identity]**.
 
 ![Data Ingestion](./images/ecidprimidee.png)
   
-* Lastly, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the [!UICONTROL Identity Graph] in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
+- Lastly, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. A [!UICONTROL Namespace] is used by the [!UICONTROL Identity Graph] in Adobe Experience Platform to classify identifiers in namespaces and define the relationship between those namespaces.
 
   ![Data Ingestion](./images/ecidprimidnsee.png)
 
-* Finally, click **[!UICONTROL Apply]** to save your changes.
+- Finally, click **[!UICONTROL Apply]** to save your changes.
 
   ![Data Ingestion](./images/apply.png)
 
@@ -591,11 +537,32 @@ The **[!UICONTROL identification]** object should now look like this, with the e
 
 ![Data Ingestion](./images/applyidenee.png)
 
-You have now defined a schema, linked existing and newly created [!UICONTROL Mixins] and have defined identifiers.
+Let's now give your schema a name. Select the field **Untitled schema**.
+
+![Data Ingestion](./images/schemaname1ee.png)
+
+As the name for our schema, we'll use this:
+**[!UICONTROL ldap - Demo System - Event Schema for Website]**
+
+Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
+
+**[!UICONTROL vangeluw - Demo System - Event Schema for Website]**
+
+That should give you something like this:
+
+![Data Ingestion](./images/schemanameee.png)
 
 Click **[!UICONTROL Save]** to save your changes.
 
 ![Data Ingestion](./images/save.png)
+
+It's important to note that when eventually ingesting data against this schema, that some fields are required.
+For instance, the fields **[!UICONTROL _id]** and **[!UICONTROL timestamp]** are required fields.
+
+- _id needs to contain a unique id for a specific data ingestion
+- timestamp needs to be the timestamp of this hit, in the format **[!UICONTROL "YYYY-MM-DDTHH:MM:SSSZ"]**, like for instance: **[!UICONTROL "2019-04-08T07:20:000Z"]**
+
+You have now defined a schema, linked existing and newly created [!UICONTROL Field Groups] and have defined identifiers.
 
 The last thing to do here, is to activate the Schema to be linked to the **[!UICONTROL Profile]**.
 By enabling your schema for [!UICONTROL Profile], you're making sure that all data sent to Adobe Experience Platform against this schema will be part of the Real-time Customer Profile, which makes sure that all that data can be used in real-time for querying, segmentation and activation.

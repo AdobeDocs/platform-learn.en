@@ -110,7 +110,7 @@ Lastly, the [!UICONTROL Dataset Info] tab shows important information like the [
 
 The most important setting here is the link between the dataset and the Schema. The Schema defines what data can be ingested and how that data should look like. 
 
-In this case, we're using the **[!UICONTROL Demo System - Profile Schema for CRM]**, which is mapped against the class of **[!UICONTROL Profile]** and has implemented extensions, also called mixins. 
+In this case, we're using the **[!UICONTROL Demo System - Profile Schema for CRM]**, which is mapped against the class of **[!UICONTROL Profile]** and has implemented extensions, also called field groups. 
 
 >[!NOTE]
 >
@@ -122,7 +122,7 @@ By clicking on the name of the schema, you're taken to the [!UICONTROL Schema] o
 
 ![Data Ingestion](./images/schemads.png)
 
-Every schema needs to have a custom, primary descriptor defined. In the case of our CRM dataset, the schema has defined that the field **[!UICONTROL email]** should be the primary identifier. If you want to create a schema and link it to the [!UICONTROL Real-time Customer Profile], you need to define a custom [!UICONTROL Mixin] that refers to your primary descriptor.
+Every schema needs to have a custom, primary descriptor defined. In the case of our CRM dataset, the schema has defined that the field **[!UICONTROL email]** should be the primary identifier. If you want to create a schema and link it to the [!UICONTROL Real-time Customer Profile], you need to define a custom [!UICONTROL Field Group] that refers to your primary descriptor.
 
 ![Data Ingestion](./images/schema_descriptor.png)
 

@@ -1,6 +1,6 @@
 ---
-title: Offer Decisioning - Test your Offer Activity
-description: Offer Decisioning - Test your Offer Activity
+title: Offer Decisioning - Test your Decision
+description: Offer Decisioning - Test your Decision
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
@@ -85,42 +85,42 @@ You'll then see this. You'll notice the menu option for **[!UICONTROL Decision S
 
 For every request sent to the Edge and to Adobe Experience Platform, it's possible to provide one or more **[!UICONTROL Decision Scopes]**. A **[!UICONTROL Decision Scope]** is a combination of two elements:
 
-- [!UICONTROL Offer Activity ID]
-- [!UICONTROL Offer Placement ID]
+- [!UICONTROL Decision ID]
+- [!UICONTROL Placement ID]
 
 Let's first have a look where you can find those two elements.
 
-### 14.3.2.1 Retrieve your [!UICONTROL Offer Placement ID]
+### 14.3.2.1 Retrieve your [!UICONTROL Placement ID]
 
-The [!UICONTROL Offer Placement ID] identifies the location and type of asset that is required. For instance, the hero image on the Luma website homepage corresponds with the [!UICONTROL Offer Placement ID] for [!UICONTROL Web - Image].
+The [!UICONTROL Placement ID] identifies the location and type of asset that is required. For instance, the hero image on the Luma website homepage corresponds with the [!UICONTROL Placement ID] for [!UICONTROL Web - Image].
 
 ![WebSDK](./images/launch5.png)
 
-To find the [!UICONTROL Offer Placement ID] for [!UICONTROL Web - Image] go to [https://platform.adobe.com](https://platform.adobe.com). 
+To find the [!UICONTROL Placement ID] for [!UICONTROL Web - Image] go to [https://platform.adobe.com](https://platform.adobe.com). 
 
-Next, go to [!UICONTROL Offers] and then to [!UICONTROL Placements]. Click the [!UICONTROL Web - Image] placement to see its details.
+Next, go to [!UICONTROL Components] and then to [!UICONTROL Placements]. Click the [!UICONTROL Web - Image] placement to see its details.
 
 ![WebSDK](./images/launch6.png)
 
-As you can see in the above image, in this example the [!UICONTROL Offer Placement ID] is `xcore:offer-placement:129048460001fd30`. Write down the [!UICONTROL Offer Placement ID] for your placement for [!UICONTROL Web - Image] as you'll need it in the next exercise.
+As you can see in the above image, in this example the [!UICONTROL Placement ID] is `xcore:offer-placement:129048460001fd30`. Write down the [!UICONTROL Placement ID] for your placement for [!UICONTROL Web - Image] as you'll need it in the next exercise.
 
-### 14.3.2.2 Retrieve your [!UICONTROL Offer Activity ID]
+### 14.3.2.2 Retrieve your [!UICONTROL Decision ID]
 
-The [!UICONTROL Offer Activity ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Offer Activity] and named it **[!UICONTROL ldap - Luma Offer Activity]**.
+The [!UICONTROL Decision ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Decision] and named it **[!UICONTROL ldap - Luma Decision]**.
 
-To find the [!UICONTROL Offer Activity ID] for your **[!UICONTROL ldap - Luma Offer Activity]**, go to [https://platform.adobe.com](https://platform.adobe.com). 
+To find the [!UICONTROL Decision ID] for your **[!UICONTROL ldap - Luma Decision]**, go to [https://platform.adobe.com](https://platform.adobe.com). 
 
-Next, go to [!UICONTROL Activities] and click to select your [!UICONTROL Offer Activity], which is named **[!UICONTROL ldap - Luma Offer Activity]**.
+Next, go to [!UICONTROL Offers] and then go to [!UICONTROL Decisions]. Click to select your [!UICONTROL Decision], which is named **[!UICONTROL ldap - Luma Decision]**.
 
 ![WebSDK](./images/launch7.png)
 
-As you can see in the above image, in this example the [!UICONTROL Offer Activity ID] is `xcore:offer-activity:1290525f4441fd6e`. Write down the [!UICONTROL Offer Activity ID] for your activity [!UICONTROL ldap - Luma Offer Activity] as you'll need it in the next exercise.
+As you can see in the above image, in this example the [!UICONTROL Decision ID] is `xcore:offer-activity:1290525f4441fd6e`. Write down the [!UICONTROL Decision ID] for your decision [!UICONTROL ldap - Luma Decision] as you'll need it in the next exercise.
 
 Now that you've retrieved the two elements you need to create a **[!UICONTROL Decision Scopes]**, you can continue with the next step, which involves encoding the decision scope.
 
 ### 14.3.2.3 BASE64 Encoding
 
-The **[!UICONTROL Decision Scope]** you need to enter is a BASE64-encoded string. This BASE64-encoded string is a combination of the [!UICONTROL Offer Placement ID] and the [!UICONTROL Offer Activity ID], as you can see below. 
+The **[!UICONTROL Decision Scope]** you need to enter is a BASE64-encoded string. This BASE64-encoded string is a combination of the [!UICONTROL Placement ID] and the [!UICONTROL Decision ID], as you can see below. 
 
 ```json
 {
@@ -135,11 +135,11 @@ The **[!UICONTROL Decision Scope]** can be generated in two ways:
 
   ![WebSDK](./images/launch8.png)
 
-- Retrieve the BASE64 encoded string from Adobe Experience Platform. To do so, go to [https://platform.adobe.com](https://platform.adobe.com). Next, go to [!UICONTROL Activities] and click to open your [!UICONTROL Offer Activity], which is named **[!UICONTROL ldap - Luma Offer Activity]**.
+- Retrieve the BASE64 encoded string from Adobe Experience Platform. To do so, go to [https://platform.adobe.com](https://platform.adobe.com). Next, go to [!UICONTROL Decisions] and click to open your [!UICONTROL Decision], which is named **[!UICONTROL ldap - Luma Decision]**.
 
   ![WebSDK](./images/launch9.png)
   
-  After opening your **[!UICONTROL ldap - Luma Offer Activity]**, you'll see this. Locate the placement [!UICONTROL Web - Image] and click the **[!UICONTROL Copy]** button. Next, click **[!UICONTROL Decision scope as base 64]**. The **[!UICONTROL Decision Scope]** is now copied to your clipboard.
+  After opening your **[!UICONTROL ldap - Luma Decision]**, you'll see this. Locate the placement [!UICONTROL Web - Image] and click the **[!UICONTROL Copy]** button. Next, click **[!UICONTROL Encoded decision scope]**. The **[!UICONTROL Decision Scope]** is now copied to your clipboard.
     
   ![WebSDK](./images/launch10.png)
 
@@ -280,7 +280,7 @@ And instead of the default Luma hero image, you will now see an offer like this 
 
 In the next exercise, you'll go through a step-by-step demo scenario.
 
-Next Step: [14.4 Test your Offer Activity using the demo website](./ex4.md)
+Next Step: [14.4 Test your Decision using the demo website](./ex4.md)
 
 [Go Back to Module 14](./offer-decisioning.md)
 
