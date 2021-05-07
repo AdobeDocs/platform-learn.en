@@ -114,7 +114,7 @@ Next, go to [!UICONTROL Offers] and then go to [!UICONTROL Decisions]. Click to 
 
 ![WebSDK](./images/launch7.png)
 
-As you can see in the above image, in this example the [!UICONTROL Decision ID] is `xcore:offer-activity:1290525f4441fd6e`. Write down the [!UICONTROL Decision ID] for your activity [!UICONTROL ldap - Luma Decision] as you'll need it in the next exercise.
+As you can see in the above image, in this example the [!UICONTROL Decision ID] is `xcore:offer-activity:1290525f4441fd6e`. Write down the [!UICONTROL Decision ID] for your decision [!UICONTROL ldap - Luma Decision] as you'll need it in the next exercise.
 
 Now that you've retrieved the two elements you need to create a **[!UICONTROL Decision Scopes]**, you can continue with the next step, which involves encoding the decision scope.
 

@@ -25,7 +25,7 @@ Working with Offer Decisioning, you need to understand the following concepts:
 **Capping** | Used in an offer definition to define how many times an offer can be presented in total and to a specific user.
 **Priority** | Level to determine the priority rank from a result set of offers.
 **Collection** | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.
-**Activity** | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.
+**Decision** | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.
 **AEM Assets Essentials** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform. 
 
 ## 14.1.2 Offer Decisioning
@@ -58,7 +58,7 @@ Go to **Placements**.
 
 ![Placements](./images/placements.png)
 
-In the **Placements** tab you can define your placements for your offers. When you define an activity the placement defines where the resulting offer will appear (Channel Type) and in what shape or form (Content Type).
+In the **Placements** tab you can define your placements for your offers. When you define a decision the placement defines where the resulting offer will appear (Channel Type) and in what shape or form (Content Type).
 
 If you don't see any placements in your Adobe Experience Platform instance, please create them as indicated below and in the screenshot.
 
@@ -166,7 +166,7 @@ To configure your **Decision**, click **Decisions**.
 
 ![Decision Rule](./images/activity.png)
 
-In the next exercise, you'll configure your own offers and activity.
+In the next exercise, you'll configure your own offers and decision.
 
 Next Step: [14.2 Configure your Offers and Decision](./ex2.md)
 

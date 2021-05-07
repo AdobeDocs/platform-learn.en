@@ -401,7 +401,7 @@ You'll now see this:
 
 ## 14.2.4 Create your Decision
 
-An activity combines Placements, a Collection of Personalized Offers and a Fallback Offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
+A Decision combines Placements, a Collection of Personalized Offers and a Fallback Offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
 
 To configure your **Decision**, go to **Decisions**.
 

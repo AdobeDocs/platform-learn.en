@@ -57,7 +57,7 @@ In this exercise you'll get a better understanding of all the different concepts
 
 [14.2 Configure your Offers and Decision](./ex2.md)
 
-In this exercise you'll configure your own Personalized Offers and your own Activity, which will then be published.
+In this exercise you'll configure your own Personalized Offers and your own Decision, which will then be published.
 
 [14.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](./ex3.md)
 
