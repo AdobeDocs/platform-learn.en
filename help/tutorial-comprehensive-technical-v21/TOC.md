@@ -134,11 +134,11 @@ doc-type: tutorial
 + 14 - Offer Decisioning {#module14}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module14/offer-decisioning.md)
   + [14.1 Offer Decisioning 101](/help/tutorial-comprehensive-technical-v21/modules/module14/ex1.md)
-  + [14.2 Configure your Offers and Offer Activity](/help/tutorial-comprehensive-technical-v21/modules/module14/ex2.md)
+  + [14.2 Configure your Offers and Decision](/help/tutorial-comprehensive-technical-v21/modules/module14/ex2.md)
   + [14.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](/help/tutorial-comprehensive-technical-v21/modules/module14/ex3.md)
-  + [14.4 Test your Offer Activity using the demo website](/help/tutorial-comprehensive-technical-v21/modules/module14/ex4.md)
-  + [14.5 Test your Offer Activity using the API](/help/tutorial-comprehensive-technical-v21/modules/module14/ex5.md)
-  + [14.6 Test your Offer Activity using Journey Orchestration](/help/tutorial-comprehensive-technical-v21/modules/module14/ex6.md)
+  + [14.4 Test your Decision using the demo website](/help/tutorial-comprehensive-technical-v21/modules/module14/ex4.md)
+  + [14.5 Test your Decision using the API](/help/tutorial-comprehensive-technical-v21/modules/module14/ex5.md)
+  + [14.6 Test your Decision using Journey Orchestration](/help/tutorial-comprehensive-technical-v21/modules/module14/ex6.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module14/summary.md)
 + 15 - Data Science Workspace - Car Insurance Sales Propensity {#module15}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module15/data-science-workspace-car-insurance-sales-propensity.md)

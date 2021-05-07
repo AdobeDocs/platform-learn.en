@@ -1,13 +1,13 @@
 ---
-title: Offer Decisioning - Configure your Offers and Offer Activity ID
-description: Offer Decisioning - Configure your Offers and Offer Activity ID
+title: Offer Decisioning - Configure your Offers and Decision ID
+description: Offer Decisioning - Configure your Offers and Decision ID
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a58536ff-a098-4c7f-8d7a-be9512ec082b
 ---
-# 14.2 Configure your Offers and Offer Activity
+# 14.2 Configure your Offers and Decision
 
 ## 14.2.1 Create your Personalized Offers
 
@@ -34,7 +34,7 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In the left menu, go to **Offers** and make sure you're in **Browse**.
+In the left menu, click **Offers** and then go to **Offers**.
 
 ![Decision Rule](./images/offers1.png)
 
@@ -199,7 +199,7 @@ Click **Finish**.
 
 Finally, click **Save and approve**.
 
-![Decision Rule](./images/saveapprove.png) 
+![Decision Rule](./images/saveapprove.png)
 
 You'll then see your newly created Personalized Offer become available in the Offers Overview:
 
@@ -215,7 +215,7 @@ When done, your **Offer Overviews** screen for **Personalized Offers** should sh
 
 After having created four Personalized Offers, you should now configure a **Fallback Offer**.
 
-Make sure you're in the **Browse** view:
+Make sure you're in the **Offers** view:
 
 ![Final Offers](./images/finaloffers.png)
 
@@ -362,7 +362,7 @@ In your **Offer Overviews** screen, you'll now see this:
 
 ## 14.2.3 Create your Collection
 
-A Collection is used to **filter** out a sub-set of offers from the personalized offer list and use that as part of an offer activity in order to speed up the decision process. 
+A Collection is used to **filter** out a sub-set of offers from the personalized offer list and use that as part of an Decision in order to speed up the decision process. 
 
 Go to **Collections**.
 
@@ -399,11 +399,11 @@ You'll now see this:
 
 ![Decision Rule](./images/colldone.png)
 
-## 14.2.4 Create your Offer Activity
+## 14.2.4 Create your Decision
 
 An activity combines Placements, a Collection of Personalized Offers and a Fallback Offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
 
-To configure your **Activity**, go to **Activities** in the left menu in Adobe Experience Platform.
+To configure your **Decision**, go to **Decisions**.
 
 ![Decision Rule](./images/activity.png)
 
@@ -417,7 +417,7 @@ You'll then see this:
 
 Fill out the fields like this:
 
-- Name: **ldap** - Luma Offer Activity
+- Name: **ldap** - Luma Decision
 - Start date and time: today
 - End date and time: today + 1 month
 
@@ -491,7 +491,7 @@ Click **Next**.
 
 ![Decision Rule](./images/next.png)
 
-Review your offer activity.
+Review your Decision.
 
 ![Decision Rule](./images/activity11.png)
 
@@ -503,11 +503,11 @@ In the popup, click **Save and activate**.
 
 ![Decision Rule](./images/activity12.png)
 
-And finally, you'll now see your Offer Activity in the overview:
+And finally, you'll now see your Decision in the overview:
 
 ![Decision Rule](./images/activity13.png)
 
-You've now successfully configured your Offer Activity. Your Offer Activity is now live, and can be used to deliver optimized and personalized offers to your customers, in real-time.
+You've now successfully configured your Decision. Your Decision is now live, and can be used to deliver optimized and personalized offers to your customers, in real-time.
 
 Next Step: [14.3 Prepare your Launch and Web SDK setup for Offer Decisioning](./ex3.md)
 

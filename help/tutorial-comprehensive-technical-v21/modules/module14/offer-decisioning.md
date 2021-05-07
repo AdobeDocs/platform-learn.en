@@ -30,7 +30,6 @@ Please watch this video to understand the value and customer journey:
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
 - Access to Offer Decisioning
-- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
 >
@@ -56,25 +55,25 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 In this exercise you'll get a better understanding of all the different concepts of Offer Decisioning, and how to access Offer Decisioning in Adobe Experience Platform.
 
-[14.2 Configure your Offers and Offer Activity](./ex2.md)
+[14.2 Configure your Offers and Decision](./ex2.md)
 
 In this exercise you'll configure your own Personalized Offers and your own Activity, which will then be published.
 
 [14.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](./ex3.md)
 
-In this exercise you'll use the demo website to test your Offer Activity.
+In this exercise you'll use the demo website to test your Decision.
 
-[14.4 Test your Offer Activity using the demo website](./ex4.md)
+[14.4 Test your Decision using the demo website](./ex4.md)
 
-In this exercise you'll use the demo website to test your Offer Activity.
+In this exercise you'll use the demo website to test your Decision.
 
-[14.5 Test your Offer Activity using the API](./ex5.md)
+[14.5 Test your Decision using the API](./ex5.md)
 
-In this exercise you'll use Postman and the Adobe Experience Platform API's to test your Offer Activity.
+In this exercise you'll use Postman and the Adobe Experience Platform API's to test your Decision.
 
-[14.6 Test your Offer Activity using Journey Orchestration](./ex6.md)
+[14.6 Test your Decision using Journey Orchestration](./ex6.md)
 
-In this exercise you'll use Postman and the Adobe Experience Platform API's to test your Offer Activity.
+In this exercise you'll use Postman and the Adobe Experience Platform API's to test your Decision.
 
 [Summary and benefits](./summary.md)
 

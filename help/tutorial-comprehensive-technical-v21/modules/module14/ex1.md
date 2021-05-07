@@ -26,7 +26,7 @@ Working with Offer Decisioning, you need to understand the following concepts:
 **Priority** | Level to determine the priority rank from a result set of offers.
 **Collection** | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.
 **Activity** | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.
-**Experience Cloud Library** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform. 
+**AEM Assets Essentials** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform. 
 
 ## 14.1.2 Offer Decisioning
 
@@ -40,13 +40,17 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In the left menu, scroll down until you see the **Decisioning** menu.
+In the left menu, scroll down until you see the **Decision Management** menu.
 
 ![Placements](./images/homedec.png)
 
-Click **Offers**. You'll now see the Offers menu, which contains things like Offers, Collections, Placements, Rules and Tags.
+Click **Offers**. You'll now see the Offers menu, which contains things like Offers, Collections and Decisions.
 
 ![Placements](./images/offers.png)
+
+Click **Components**. You'll now see the Offers menu, which contains things like Placements, Tags, Rules and Rankings.
+
+![Placements](./images/components.png)
 
 ## 14.1.3 Placements
 
@@ -131,7 +135,7 @@ As an example, here's the rule definition for the rule **all - Female Customers*
 
 ## 14.1.5 Offers
 
-To access the Offers, go to **Browse**.
+To access the Offers, go to **Offers** and select **Offers**.
 
 ![Decision Rule](./images/offers1.png)
 
@@ -154,17 +158,17 @@ A Personalized Offer is specific content that should be shown in a specific situ
 
 A Fallback Offer is an offer that is shown if the criteria for Personalized Offers aren't met. 
 
-## 14.1.6 Activities
+## 14.1.6 Decisions
 
-An Offer Activity combines placements, a collection of personalized offers and a fallback offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
+A Decision combines placements, a collection of personalized offers and a fallback offer to ultimately be used by the Offer Decisioning engine to find the best offer for a specific profile, based on each of the individual personalized offer characteristics like priority, eligibility constraint and total / user capping.
 
-To configure your **Activity**, go to **Activities** in the left menu in Adobe Experience Platform.
+To configure your **Decision**, click **Decisions**.
 
 ![Decision Rule](./images/activity.png)
 
 In the next exercise, you'll configure your own offers and activity.
 
-Next Step: [14.2 Configure your Offers and Offer Activity](./ex2.md)
+Next Step: [14.2 Configure your Offers and Decision](./ex2.md)
 
 [Go Back to Module 14](./offer-decisioning.md)
 
