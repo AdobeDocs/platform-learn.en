@@ -31,7 +31,6 @@ This is to show that brands with an existing Google Analytics and Google Tag Man
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Google Tag Manager and Google Analytics
-- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
 >
@@ -49,7 +48,7 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 >[!NOTE]
 >
->Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.6 - Install the Chrome extension for the Experience League documentation](../module0/ex6.md)
 
 ## Exercises
 

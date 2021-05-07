@@ -26,7 +26,6 @@ In this module, you'll configure a streaming segment and activate the segment to
 - Access to Adobe Audience Manager
 - Access to Adobe Target
 - Access to AWS S3
-- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
 >
@@ -44,7 +43,7 @@ For this module, please use this sandbox: `--module11sandbox--`.
 
 >[!NOTE]
 >
->Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.6 - Install the Chrome extension for the Experience League documentation](../module0/ex6.md)
 
 ## Exercises
 
