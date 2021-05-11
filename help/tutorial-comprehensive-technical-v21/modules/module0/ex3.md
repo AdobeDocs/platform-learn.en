@@ -35,7 +35,7 @@ You can find the tags for your Launch properties here:
 
 ## Web
 
-Go to [http://launch.adobe.com/](http://launch.adobe.com/) and search for your properties with the search term **ldap - Demo System**. Open your **Web** property.
+Go to [http://launch.adobe.com/](http://launch.adobe.com/), click **Client** and search for your properties with the search term **ldap - Demo System**. Open your **Web** property.
 
 ![DSN](./images/l1.png)
 

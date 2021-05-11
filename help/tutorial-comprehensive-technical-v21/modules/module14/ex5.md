@@ -1,13 +1,13 @@
 ---
-title: Offer Decisioning - Test your Offer Activity using the API
-description: Test your Offer Activity using the API
+title: Offer Decisioning - Test your Decision using the API
+description: Test your Decision using the API
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 244ffd3e-5bbf-49cf-9ee9-01a5288ce9fe
 ---
-# 14.5 Test your Offer Activity using the API
+# 14.5 Test your Decision using the API
 
 ## 14.5.1 Work with the Offer Decisioning API using Postman
 
@@ -139,7 +139,7 @@ In order to make this possible, you'll need three values:
 
 - [!UICONTROL Offer Decisioning Container ID]
 - [!UICONTROL Offer Decisioning Placement ID]
-- [!UICONTROL Offer Decisioning Activity ID]
+- [!UICONTROL Offer Decisioning Decision ID]
 
 Where can you find these values?
 
@@ -159,27 +159,27 @@ The [!UICONTROL Offer Placement ID] identifies the location and type of asset th
 
 To find the [!UICONTROL Offer Placement ID] for [!UICONTROL Web - Image] go to [https://platform.adobe.com](https://platform.adobe.com). 
 
-Next, go to [!UICONTROL Offers] and then to [!UICONTROL Placements]. Click the [!UICONTROL Web - Image] placement to see its details.
+Next, go to [!UICONTROL Components] and then to [!UICONTROL Placements]. Click the [!UICONTROL Web - Image] placement to see its details.
 
 ![WebSDK](./images/launch6.png)
 
 As you can see in the above image, in this example the [!UICONTROL Offer Placement ID] is `xcore:offer-placement:129048460001fd30`. Write down the [!UICONTROL Offer Placement ID] for your placement for [!UICONTROL Web - Image] as you'll need it in the next exercise.
 
-### 14.5.2.3 [!UICONTROL Offer Decisioning Activity ID]
+### 14.5.2.3 [!UICONTROL Offer Decisioning Decision ID]
 
-The [!UICONTROL Offer Activity ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Offer Activity] and named it **[!UICONTROL ldap - Luma Offer Activity]**.
+The [!UICONTROL Decision ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Decision] and named it **[!UICONTROL ldap - Luma Decision]**.
 
-To find the [!UICONTROL Offer Activity ID] for your **[!UICONTROL ldap - Luma Offer Activity]**, go to [https://platform.adobe.com](https://platform.adobe.com). 
+To find the [!UICONTROL Decision ID] for your **[!UICONTROL ldap - Luma Decision]**, go to [https://platform.adobe.com](https://platform.adobe.com). 
 
-Next, go to [!UICONTROL Activities] and click to select your [!UICONTROL Offer Activity], which is named **[!UICONTROL ldap - Luma Offer Activity]**.
+Next, go to [!UICONTROL Offers], then go to [!UICONTROL Decisions] and click to select your [!UICONTROL Decision], which is named **[!UICONTROL ldap - Luma Decision]**.
 
 ![WebSDK](./images/launch7.png)
 
-As you can see in the above image, in this example the [!UICONTROL Offer Activity ID] is `xcore:offer-activity:1290525f4441fd6e`. Write down the [!UICONTROL Offer Activity ID] for your activity [!UICONTROL ldap - Luma Offer Activity] as you'll need it in the next exercise.
+As you can see in the above image, in this example the [!UICONTROL Decision ID] is `xcore:offer-activity:1290525f4441fd6e`. Write down the [!UICONTROL Decision ID] for your Decision [!UICONTROL ldap - Luma Decision] as you'll need it in the next exercise.
 
 ### 14.5.2.4 Update your Enablement Configuration ID
 
-Before you can test your end-to-end demonstration, you'll need to update your Configuration ID settings and update the fields for **[!UICONTROL Offer Decisioning Container ID]**, **[!UICONTROL Offer Decisioning Placement ID]** and **[!UICONTROL Offer Decisioning Activity ID]** on the **Update Configuration ID** page of the demo website.
+Before you can test your end-to-end demonstration, you'll need to update your Configuration ID settings and update the fields for **[!UICONTROL Offer Decisioning Container ID]**, **[!UICONTROL Offer Decisioning Placement ID]** and **[!UICONTROL Offer Decisioning Decision ID]** on the **Update Configuration ID** page of the demo website.
 
 Go to [https://public.aepdemo.net/admin_configuration_update.html](https://public.aepdemo.net/admin_configuration_update.html).
 
@@ -191,7 +191,7 @@ Enter your Configuration ID and then click **[!UICONTROL Load Configuration]**. 
 
 ![Launch Setup](./images/cfgid2.png)
 
-Scroll down until you see the fields **[!UICONTROL Offer Decisioning Container ID]**, **[!UICONTROL Offer Decisioning Placement ID]** and **[!UICONTROL Offer Decisioning Activity ID]**.
+Scroll down until you see the fields **[!UICONTROL Offer Decisioning Container ID]**, **[!UICONTROL Offer Decisioning Placement ID]** and **[!UICONTROL Offer Decisioning Decision ID]**.
 
 ![Launch Setup](./images/cfgid2a.png)
 
@@ -237,7 +237,7 @@ You'll then be redirected to the Admin homepage. Click the **Luma** logo.
 
 ### 14.5.2.2 Customer browses the website
 
-You'll then see the Luma homepage. You should immediately see your hero image change, and you should see the Fallback Offer that was defined as part of your Offer Activity, just like in the previous exercise. Additionally, when you open the Xray panel and have a look at the Offer Decisioning panel, you'll now also see the applicable offer being displayed there.
+You'll then see the Luma homepage. You should immediately see your hero image change, and you should see the Fallback Offer that was defined as part of your Decision, just like in the previous exercise. Additionally, when you open the Xray panel and have a look at the Offer Decisioning panel, you'll now also see the applicable offer being displayed there.
 
 It's important to understand the difference:
 
@@ -262,7 +262,7 @@ Thanks to the integration between Web SDK and Adobe Experience Platform, offers 
 
 You've now completed this exercise.
 
-Next Step: [14.6 Test your Offer Activity using Journey Orchestration](./ex6.md)
+Next Step: [14.6 Test your Decision using Journey Orchestration](./ex6.md)
 
 [Go Back to Module 14](./offer-decisioning.md)
 

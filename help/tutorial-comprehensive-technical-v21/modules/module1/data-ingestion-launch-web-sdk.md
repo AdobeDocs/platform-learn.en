@@ -1,21 +1,21 @@
 ---
-title: 1. Setup of Adobe Experience Platform Launch and the Web SDK extension
-description: Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension
+title: 1. Setup of Adobe Experience Platform Data Collection and the Web SDK extension
+description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 exl-id: 1ef1ad34-a2b8-481f-bf78-39045c9b62dd
 ---
-# 1. Foundation - Setup of Adobe Experience Platform Launch and the Web SDK extension
+# 1. Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension
 
 **Author: [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-This foundational module introduces you to Adobe's data collection vision and explains how to get data from a website and mobile application into Adobe Experience Platform and other applications via Adobe Experience Platform Launch, the Adobe Experience Platform SDKs and Adobe Experience Platform Edge Network. This module introduces some concepts and technologies that have an impact beyond the scope of an Adobe Experience Platform technical tutorial. It should be clear which parts of these exercises are foundational to the rest of the comprehensive tutorial, which teach you more about Experience Edge and its capabilities, and where to go for further information and tutorials.
+This foundational module introduces you to Adobe's data collection vision and explains how to get data from a website and mobile application into Adobe Experience Platform and other applications via Adobe Experience Platform Data Collection, the Adobe Experience Platform SDKs and Adobe Experience Platform Edge Network. This module introduces some concepts and technologies that have an impact beyond the scope of an Adobe Experience Platform technical tutorial. It should be clear which parts of these exercises are foundational to the rest of the comprehensive tutorial, which teach you more about Experience Edge and its capabilities, and where to go for further information and tutorials.
 
 ## Learning Objectives
 
-- Learn how a brand uses Adobe Experience Platform Launch as their Tag Management System (TMS).
+- Learn how a brand uses Adobe Experience Platform Data Collection as their Tag Management System (TMS).
 - Learn the data flows used by a brand to ingest data to their Adobe products.
 - Learn how to send data to the Adobe Experience Platform and other products via the Adobe Experience Platform Edge Network.
 - Learn how to create Data Elements and Rules that collect data from Web and Mobile.
@@ -27,9 +27,8 @@ This foundational module introduces you to Adobe's data collection vision and ex
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Launch: [https://launch.adobe.com](https://launch.adobe.com)
-- Access to a Platform demo website
-- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
+- Access to Adobe Experience Platform Data Collection: [https://launch.adobe.com](https://launch.adobe.com)
+- Access to the demo website
 
 >[!IMPORTANT]
 >
@@ -41,17 +40,25 @@ Have a look at the below architecture, which highlights the components that will
 
 ![Architecture Overview](../../assets/images/architecturem1.png)
 
+## Sandbox to use
+
+For this module, please use this sandbox: `--aepSandboxId--`.
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.6 - Install the Chrome extension for the Experience League documentation](../module0/ex6.md)
+
 ## Exercises
 
-[1.1 Understanding Adobe Experience Platform Launch](./ex1.md)
+[1.1 Understanding Adobe Experience Platform Data Collection](./ex1.md)
 
-In this exercise, explore the Adobe Experience Platform UI and get an understanding of its capabilities.
+In this exercise, explore the Adobe Experience Platform Data Collection UI and get an understanding of its capabilities.
 
-[1.2 Edge Network and Server Side Data Collection](./ex2.md)
+[1.2 Edge Network, Datastreams and Server Side Data Collection](./ex2.md)
 
-In this exercise, you'll learn how to forward data to Adobe products in the Adobe Experience Platform Launch interface and investigate the data flows used by the demo website.
+In this exercise, you'll learn how to forward data to Adobe products in the Adobe Experience Platform Data Collection interface and investigate the data streams used by the demo website.
 
-[1.3 Introduction to Launch](./ex3.md)
+[1.3 Introduction to Adobe Experience Platform Data Collection](./ex3.md)
 
 In this exercise, you'll learn how to set-up an Extension, build Data Elements and Rules and publish them to the web.
 

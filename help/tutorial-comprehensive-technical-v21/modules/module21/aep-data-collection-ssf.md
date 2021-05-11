@@ -1,22 +1,22 @@
 ---
-title: Data Collection & Real-time Server Side Forwarding
-description: In this module, you'll use the previously configured datasets, schemas and Launch property to collect data, and then forward that data server-side to an endpoint of choice.
+title: Adobe Experience Platform Data Collection & Real-time Server Side Forwarding
+description: In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection Server property to collect data, and then forward that data server-side to an endpoint of choice.
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: dc49f49e-d410-49cf-8d0c-bef252260032
 ---
-# 21. Data Collection & Real-time Server Side Forwarding with Launch
+# 21. Data Collection & Real-time Server Side Forwarding with Adobe Experience Platform Data Collection
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In this module, you'll use the previously configured datasets, schemas and Launch property to collect data, and then forward that data server-side to an endpoint of choice.
+In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection Client property to collect data, and then forward that data server-side to an endpoint of choice.
 
 In this module, you'll:
 
-- Create a Launch Server-Side property
-- Install and use the Adobe Cloud Connector extension in Launch
+- Create a Adobe Experience Platform Data Collection Server property
+- Install and use the Adobe Cloud Connector extension in Adobe Experience Platform Data Collection
 - Create a Google Function endpoint and stream data to it
 - Create a Microsoft Azure Function endpoint and stream data to it
 
@@ -26,13 +26,13 @@ Watch this video to understand the value, customer journey and configuration pro
 
 ## Learning Objectives
 
-- Become familiar with Launch Server Side properties and the new Adobe Cloud Connector extension 
+- Become familiar with Adobe Experience Platform Data Collection Server properties and the new Adobe Cloud Connector extension 
 - Understand how to reuse Adobe Experience Platform Web SDK data in 3rd party solutions like Google and Microsoft
-- Understand the architecture behind Edge Data Collection and Server Side Forwarding.
+- Understand the architecture behind Adobe Experience Platform Data Collection and Server Side Forwarding.
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform and Launch
+- Access to Adobe Experience Platform and Adobe Experience Platform Data Collection
 - Understanding of Adobe Experience Platform datasets and XDM
 
 >[!IMPORTANT] 
@@ -51,17 +51,17 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 >[!NOTE]
 >
->Don't forget to install, configure and use the Chrome Extension as referenced in [0.5 - Install the Chrome extension for the Experience League documentation](../module0/ex5.md)
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.6 - Install the Chrome extension for the Experience League documentation](../module0/ex6.md)
 
 ## Exercises
 
-[21.1 Create a Launch Server Side property](./ex1.md)
+[21.1 Create an Adobe Experience Platform Data Collection Server property](./ex1.md)
 
-In this exercise, you'll create your Launch Server Side property.
+In this exercise, you'll create your Adobe Experience Platform Data Collection Server property.
 
-[21.2 Update your Edge Configuration to make data available to your Launch Server Side property](./ex2.md)
+[21.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property](./ex2.md)
 
-In this exercise, you'll update your existing Edge Configuration to make data that is collected by your Launch Client Side property available to your Launch Server Side property.
+In this exercise, you'll update your existing Datastream to make data that is collected by your Adobe Experience Platform Data Collection Client property available to your Adobe Experience Platform Data Collection Server property.
 
 [21.3 Create and configure a custom webhook](./ex3.md)
 

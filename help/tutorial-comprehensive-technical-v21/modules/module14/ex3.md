@@ -1,31 +1,27 @@
 ---
-title: Offer Decisioning - Test your Offer Activity
-description: Offer Decisioning - Test your Offer Activity
+title: Offer Decisioning - Test your Decision
+description: Offer Decisioning - Test your Decision
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 6d81d454-5bf6-48c6-a005-980e03d14f29
 ---
-# 14.3 Prepare your Launch and Web SDK setup for Offer Decisioning
+# 14.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning
 
 >[!NOTE]
 >
 >The use of Offer Decisioning in Adobe Experience Platform Web SDK is currently available in early access to select users. This functionality is not available to all IMS organizations.
 
-## 14.3.1 Update your Edge Config ID
+## 14.3.1 Update your Datastream
 
-In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICONTROL Edge Configuration ID]**. You then used the name **ldap - Edge Configuration** and replaced **ldap** with your ldap.
+In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name **ldap - Demo System Datastream** and replaced **ldap** with your ldap.
 
-In this exercise, you need to configure that **[!UICONTROL Edge Configuration ID]** to work with **[!DNL Offer Decisioning]**.
+In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with **[!DNL Offer Decisioning]**.
 
-To do that, go to [https://launch.adobe.com/](https://launch.adobe.com/). You'll then see this. Click **[!UICONTROL Edge Configurations]**.
+To do that, go to [https://launch.adobe.com/](https://launch.adobe.com/). You'll then see this. Click **[!UICONTROL Datastreams]**. Search for your **[!UICONTROL Datastream]**. Click your **[!UICONTROL Datastream]** to open it. 
 
 ![WebSDK](./images/websdk1.png)
-
-Search for your **[!UICONTROL Edge Configuration]**. Click your **[!UICONTROL Edge Configuration]** to open it.
-
-![WebSDK](./images/websdk2.png)
 
 You'll then see this. Click **[!UICONTROL Development Environment]**.
 
@@ -67,11 +63,11 @@ Click **[!UICONTROL Save]**
 
 ![WebSDK](./images/save.png)
 
-Your **[!UICONTROL Edge Configuration ID]** is now ready to work with **[!DNL Offer Decisioning]**.
+Your **[!UICONTROL Datastream]** is now ready to work with **[!DNL Offer Decisioning]**.
 
-## 14.3.2 Configure your Launch property to request Personalized Offers
+## 14.3.2 Configure your Adobe Experience Platform Data Collection Client property to request Personalized Offers
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Properties]**. Search for your Launch properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Launch property for web.
+Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Client]**. Search for your Adobe Experience Platform Data Collection Client properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Adobe Experience Platform Data Collection Client property for web.
 
 ![WebSDK](./images/launch1.png)
 
@@ -89,42 +85,42 @@ You'll then see this. You'll notice the menu option for **[!UICONTROL Decision S
 
 For every request sent to the Edge and to Adobe Experience Platform, it's possible to provide one or more **[!UICONTROL Decision Scopes]**. A **[!UICONTROL Decision Scope]** is a combination of two elements:
 
-- [!UICONTROL Offer Activity ID]
-- [!UICONTROL Offer Placement ID]
+- [!UICONTROL Decision ID]
+- [!UICONTROL Placement ID]
 
 Let's first have a look where you can find those two elements.
 
-### 14.3.2.1 Retrieve your [!UICONTROL Offer Placement ID]
+### 14.3.2.1 Retrieve your [!UICONTROL Placement ID]
 
-The [!UICONTROL Offer Placement ID] identifies the location and type of asset that is required. For instance, the hero image on the Luma website homepage corresponds with the [!UICONTROL Offer Placement ID] for [!UICONTROL Web - Image].
+The [!UICONTROL Placement ID] identifies the location and type of asset that is required. For instance, the hero image on the Luma website homepage corresponds with the [!UICONTROL Placement ID] for [!UICONTROL Web - Image].
 
 ![WebSDK](./images/launch5.png)
 
-To find the [!UICONTROL Offer Placement ID] for [!UICONTROL Web - Image] go to [https://platform.adobe.com](https://platform.adobe.com). 
+To find the [!UICONTROL Placement ID] for [!UICONTROL Web - Image] go to [https://platform.adobe.com](https://platform.adobe.com). 
 
-Next, go to [!UICONTROL Offers] and then to [!UICONTROL Placements]. Click the [!UICONTROL Web - Image] placement to see its details.
+Next, go to [!UICONTROL Components] and then to [!UICONTROL Placements]. Click the [!UICONTROL Web - Image] placement to see its details.
 
 ![WebSDK](./images/launch6.png)
 
-As you can see in the above image, in this example the [!UICONTROL Offer Placement ID] is `xcore:offer-placement:129048460001fd30`. Write down the [!UICONTROL Offer Placement ID] for your placement for [!UICONTROL Web - Image] as you'll need it in the next exercise.
+As you can see in the above image, in this example the [!UICONTROL Placement ID] is `xcore:offer-placement:129048460001fd30`. Write down the [!UICONTROL Placement ID] for your placement for [!UICONTROL Web - Image] as you'll need it in the next exercise.
 
-### 14.3.2.2 Retrieve your [!UICONTROL Offer Activity ID]
+### 14.3.2.2 Retrieve your [!UICONTROL Decision ID]
 
-The [!UICONTROL Offer Activity ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Offer Activity] and named it **[!UICONTROL ldap - Luma Offer Activity]**.
+The [!UICONTROL Decision ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Decision] and named it **[!UICONTROL ldap - Luma Decision]**.
 
-To find the [!UICONTROL Offer Activity ID] for your **[!UICONTROL ldap - Luma Offer Activity]**, go to [https://platform.adobe.com](https://platform.adobe.com). 
+To find the [!UICONTROL Decision ID] for your **[!UICONTROL ldap - Luma Decision]**, go to [https://platform.adobe.com](https://platform.adobe.com). 
 
-Next, go to [!UICONTROL Activities] and click to select your [!UICONTROL Offer Activity], which is named **[!UICONTROL ldap - Luma Offer Activity]**.
+Next, go to [!UICONTROL Offers] and then go to [!UICONTROL Decisions]. Click to select your [!UICONTROL Decision], which is named **[!UICONTROL ldap - Luma Decision]**.
 
 ![WebSDK](./images/launch7.png)
 
-As you can see in the above image, in this example the [!UICONTROL Offer Activity ID] is `xcore:offer-activity:1290525f4441fd6e`. Write down the [!UICONTROL Offer Activity ID] for your activity [!UICONTROL ldap - Luma Offer Activity] as you'll need it in the next exercise.
+As you can see in the above image, in this example the [!UICONTROL Decision ID] is `xcore:offer-activity:1290525f4441fd6e`. Write down the [!UICONTROL Decision ID] for your decision [!UICONTROL ldap - Luma Decision] as you'll need it in the next exercise.
 
 Now that you've retrieved the two elements you need to create a **[!UICONTROL Decision Scopes]**, you can continue with the next step, which involves encoding the decision scope.
 
 ### 14.3.2.3 BASE64 Encoding
 
-The **[!UICONTROL Decision Scope]** you need to enter is a BASE64-encoded string. This BASE64-encoded string is a combination of the [!UICONTROL Offer Placement ID] and the [!UICONTROL Offer Activity ID], as you can see below. 
+The **[!UICONTROL Decision Scope]** you need to enter is a BASE64-encoded string. This BASE64-encoded string is a combination of the [!UICONTROL Placement ID] and the [!UICONTROL Decision ID], as you can see below. 
 
 ```json
 {
@@ -139,11 +135,11 @@ The **[!UICONTROL Decision Scope]** can be generated in two ways:
 
   ![WebSDK](./images/launch8.png)
 
-- Retrieve the BASE64 encoded string from Adobe Experience Platform. To do so, go to [https://platform.adobe.com](https://platform.adobe.com). Next, go to [!UICONTROL Activities] and click to open your [!UICONTROL Offer Activity], which is named **[!UICONTROL ldap - Luma Offer Activity]**.
+- Retrieve the BASE64 encoded string from Adobe Experience Platform. To do so, go to [https://platform.adobe.com](https://platform.adobe.com). Next, go to [!UICONTROL Decisions] and click to open your [!UICONTROL Decision], which is named **[!UICONTROL ldap - Luma Decision]**.
 
   ![WebSDK](./images/launch9.png)
   
-  After opening your **[!UICONTROL ldap - Luma Offer Activity]**, you'll see this. Locate the placement [!UICONTROL Web - Image] and click the **[!UICONTROL Copy]** button. Next, click **[!UICONTROL Decision scope as base 64]**. The **[!UICONTROL Decision Scope]** is now copied to your clipboard.
+  After opening your **[!UICONTROL ldap - Luma Decision]**, you'll see this. Locate the placement [!UICONTROL Web - Image] and click the **[!UICONTROL Copy]** button. Next, click **[!UICONTROL Encoded decision scope]**. The **[!UICONTROL Decision Scope]** is now copied to your clipboard.
     
   ![WebSDK](./images/launch10.png)
 
@@ -163,15 +159,15 @@ Next, click **[!UICONTROL Save]** or **[!UICONTROL Save to Library]**
 
 ![WebSDK](./images/launch12.png)
 
-In Launch, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
+In Adobe Experience Platform Data Collection, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
 
 ![WebSDK](./images/launch13.png)
 
 Every time you're loading a **General Page** now, like for instance the homepage of the demo website, Offer Decisioning will evaluate what the applicable offer is and will return a response back to the website with the details of the the offer to show. Showing the offer on the website requires additional configuration, which you'll do in the next step.
 
-## 14.3.3 Configure your Launch property to receive and apply Personalized Offers
+## 14.3.3 Configure your Adobe Experience Platform Data Collection Client property to receive and apply Personalized Offers
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Properties]**. Search for your Launch properties, which are named **ldap - AEP Demo (DD/MM/YYYY)**. Open your Launch property for web.
+Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Properties]**. Search for your Adobe Experience Platform Data Collection Client properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Adobe Experience Platform Data Collection Client property for web.
 
 ![WebSDK](./images/launch1.png)
 
@@ -268,11 +264,11 @@ Next, click **[!UICONTROL Save]** or **[!UICONTROL Save to Library]**
 
 ![WebSDK](./images/decrec8.png)
 
-In Launch, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
+In Adobe Experience Platform Data Collection, go to **[!UICONTROL Publishing Flow]** and open your **[!UICONTROL Development Library]** which is named **[!UICONTROL Content Library]**. Click **[!UICONTROL + Add All Changed Resources]** and then click **[!UICONTROL Save & Build for Development]**. Your changes will now be published to your demo website.
 
 ![WebSDK](./images/decrec9.png)
 
-With this change, this rule in Launch will now be listening to the response from Offer Decisioning which is part of the Web SDK response, and when the response is received, the image of the offer will be displayed on the homepage.
+With this change, this rule in Adobe Experience Platform Data Collection will now be listening to the response from Offer Decisioning which is part of the Web SDK response, and when the response is received, the image of the offer will be displayed on the homepage.
 
 Looking at the Luma demo website, you'll see that this image will be replaced now:
 
@@ -284,7 +280,7 @@ And instead of the default Luma hero image, you will now see an offer like this 
 
 In the next exercise, you'll go through a step-by-step demo scenario.
 
-Next Step: [14.4 Test your Offer Activity using the demo website](./ex4.md)
+Next Step: [14.4 Test your Decision using the demo website](./ex4.md)
 
 [Go Back to Module 14](./offer-decisioning.md)
 

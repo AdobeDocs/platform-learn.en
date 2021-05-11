@@ -1,13 +1,13 @@
 ---
-title: Offer Decisioning - Test your Offer Activity using the demo website
-description: Test your Offer Activity using the demo website
+title: Offer Decisioning - Test your Decision using the demo website
+description: Test your Decision using the demo website
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 0febdc53-66eb-44c4-aa0b-5569cc496901
 ---
-# 14.4 Test your Offer Activity using the demo website
+# 14.4 Test your Decision using the demo website
 
 ## 14.4.1 Load website and brand
 
@@ -39,7 +39,7 @@ You'll then be redirected to the Admin homepage. Click the **Luma** logo.
 
 ## 14.4.2 Customer browses the website
 
-You'll then see the Luma homepage. You should immediately see your hero image change, and you should see the Fallback Offer that was defined as part of your Offer Activity.
+You'll then see the Luma homepage. You should immediately see your hero image change, and you should see the Fallback Offer that was defined as part of your Decision.
 
 ![Launch Setup](./images/demo9.png)
 
@@ -59,7 +59,7 @@ Thanks to the integration between Web SDK and Adobe Experience Platform, offers 
 
 In the next exercise, you'll see how to work with offers using the API.
 
-Next Step: [14.5 Test your Offer Activity using the API](./ex5.md)
+Next Step: [14.5 Test your Decision using the API](./ex5.md)
 
 [Go Back to Module 14](./offer-decisioning.md)
 

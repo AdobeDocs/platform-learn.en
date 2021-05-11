@@ -12,7 +12,7 @@ This tutorial is the perfect starting point for Data Engineers, Data Analysts, D
 This tutorial is very diverse and offers clear insights in the following applications:
 
 - Adobe Experience Platform
-- Adobe Experience Platform Launch
+- Adobe Experience Platform Data Collection
 - Real-time CDP
 - Journey Orchestration
 - Customer Journey Analytics
@@ -34,8 +34,8 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 After completing this tutorial, you will be able to:
 
 - Configure Schemas, Mixins, Datasets, and Identities
-- Configure a Launch property and setup the new Web SDK extension in Launch
-- Stream data into Adobe Experience Platform in real-time using Launch, Google Tag Manager or Amazon Alexa
+- Configure an Adobe Experience Platform Data Collection property and setup the new Web SDK extension in Adobe Experience Platform Data Collection
+- Stream data into Adobe Experience Platform in real-time using Adobe Experience Platform Data Collection, Google Tag Manager or Amazon Alexa
 - Batch ingest data into Adobe Experience Platform using a workflow or by using an extract, transform, load (ETL) application
 - Visualize and use the Real-time Customer Profile in Adobe Experience Platform
 - Create segments
@@ -49,8 +49,8 @@ After completing this tutorial, you will be able to:
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Launch: [https://launch.adobe.com](https://launch.adobe.com)
-- Access to the AEP Demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
+- Access to Adobe Experience Platform Data Collection: [https://launch.adobe.com](https://launch.adobe.com)
+- Access to the demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
 - This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
@@ -59,7 +59,7 @@ After completing this tutorial, you will be able to:
 
 ## About this tutorial
 
-In these lessons, you will implement Adobe Experience Platform and Application Services into a Platform Demo website which supports multiple demo industries. The Platform Demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma**, **Citi Signal**, **EXP News**, **MUTUAL365**, **Carvelo** and several others. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Platform Demo website using the Experience Platform Debugger. This will then generate data that is sent into your own Adobe Experience Platform instance. For an introduction to the Platform Demo website, have a look at the below video.
+In these lessons, you will implement Adobe Experience Platform and Application Services into a Platform Demo website which supports multiple demo industries. The Platform Demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma**, **Citi Signal**, **EXP News**, **MUTUAL365**, **Carvelo** and several others. You will build your own Adobe Experience Platform Data Collection Client property, in your own Experience Cloud organization, and map it to our hosted Platform Demo website using the Experience Platform Debugger. This will then generate data that is sent into your own Adobe Experience Platform instance. For an introduction to the Platform Demo website, have a look at the below video.
 
 >[!VIDEO](https://video.tv.adobe.com/v/35137?quality=12&enable=on)
 
@@ -75,26 +75,32 @@ Several videos have been created that showcase elements of the enablement and po
 
 Go to [Videos](./videos.md).
 
+## How is your completion of the Comprehensive Technical Tutorial for Adobe Experience Platform measured?
+
+If you're participating in this tutorial as an Adobe partner or Adobe employee, you need to submit your progress after completing every enablement module.
+
+You can find the requirements and process for submitting completion here: [Measuring Completion](./completion.md)
+
 ## Content
 
 [0. Getting started](./modules/module0/getting-started.md)
 
 - **Audience:** All participants of the Comprehensive Technical Tutorial for Adobe Experience Platform
-- **Prerequisites:** Access to Demo System Next, Adobe Experience Platform and Adobe Experience Platform Launch. Access to the default Configuration ID of your Adobe Experience Platform environment.
+- **Prerequisites:** Access to Demo System Next, Adobe Experience Platform and Adobe Experience Platform Data Collection. Access to the default Configuration ID of your Adobe Experience Platform environment.
 - **Description:** In this foundational module, you will setup everything so that you can access and use the demo environment.
 - **Time Investment:** 20 minutes
 
-[1. Foundation - Setup of Launch & Web SDK](./modules/module1/data-ingestion-launch-web-sdk.md)
+[1. Foundation - Setup of Adobe Experience Platform Data Collection & Web SDK](./modules/module1/data-ingestion-launch-web-sdk.md)
 
 - **Audience:** Data Engineer, Data Architect
-- **Prerequisites:** Access to Adobe Experience Platform and Adobe Experience Platform Launch
-- **Description:** In this foundational module, you will learn about Launch and the new Web SDK extension.
+- **Prerequisites:** Access to Adobe Experience Platform and Adobe Experience Platform Data Collection.
+- **Description:** In this foundational module, you will learn about Adobe Experience Platform Data Collection and the new Web SDK extension.
 - **Time Investment:** 30 minutes
 
 [2. Foundation - Data Ingestion](./modules/module2/data-ingestion.md)
 
 - **Audience:** Data Engineer, Data Architect
-- **Prerequisites:** Access to Adobe Experience Platform and Adobe Experience Platform Launch
+- **Prerequisites:** Access to Adobe Experience Platform and Adobe Experience Platform Data Collection.
 - **Description:** In this foundational module, you will ingest data from the website into Platform
 - **Time Investment:** 120 minutes
 
@@ -209,13 +215,13 @@ Go to [Videos](./videos.md).
 - **Description:** In this module, you'll set up your own instance of Google Cloud Platform, load demo data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
 - **Time Investment:** 120 minutes
 - **Download these assets**: 
-  - [JSON - Sample Data: AEP Demo - Loyalty Data (M16)](./assets/json/m16_bqLoyalty.json)
+  - [JSON - Sample Data: Demo - Loyalty Data (M16)](./assets/json/m16_bqLoyalty.json)
 
 [17. Adobe Experience Platform and Microsoft Dynamics 365](./modules/module17/adobe-experience-platform-microsoft-dynamics-365.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, Customer Journey Analytics, Microsoft Dynamics 365 and Microsoft Azure
-- **Description:** In this module, you'll set up your instance of Dynamics 365 for Sales and load sample customer data. You will then use the Dynamics 365 Source Connector in Adobe Experience Platform to ingest that data from Microsoft Dynamics 365 into Adobe Experience Platform. Finally, you'll use Journey orchestration to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the AEP Demo website and you'll configure Journey orchestration to communicate directly to a customer based on the on a change in sentiment. In addition, you'll also learn how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Journey Orchestration based on the Contact record change in Microsoft Dynamics 365. 
+- **Description:** In this module, you'll set up your instance of Dynamics 365 for Sales and load sample customer data. You will then use the Dynamics 365 Source Connector in Adobe Experience Platform to ingest that data from Microsoft Dynamics 365 into Adobe Experience Platform. Finally, you'll use Journey orchestration to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the demo website and you'll configure Journey orchestration to communicate directly to a customer based on the on a change in sentiment. In addition, you'll also learn how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Journey Orchestration based on the Contact record change in Microsoft Dynamics 365. 
 - **Time Investment:** 90 minutes
 
 [18. Segment Activation to Microsoft Azure Event Hub](./modules/module18/segment-activation-microsoft-azure-eventhub.md)
@@ -240,11 +246,11 @@ As part of this module you will also get an understanding of what triggers Real-
 - **Description:** In this module, you'll build your own chatbot using Stackchat's AI-Driven Chat Apps & Live Chat
 - **Time Investment:** 120 minutes
 
-[21. Data Collection & Real-time Server Side Forwarding with Launch](./modules/module21/aep-data-collection-ssf.md)
+[21. Data Collection & Real-time Server Side Forwarding with Adobe Experience Platform Data Collection](./modules/module21/aep-data-collection-ssf.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
-- **Prerequisites:** Access to Adobe Experience Platform, Launch and Launch Server Side properties
-- **Description:** In this module, you'll use the previously configured datasets, schemas and Launch property to collect data, and then forward that data server-side to an endpoint of choice.
+- **Prerequisites:** Access to Adobe Experience Platform Data Collection, Client and Server properties
+- **Description:** In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection Client property to collect data, and then forward that data server-side to an endpoint of choice.
 - **Time Investment:** 90 minutes
 
 [22. Build your own real-time dashboard using Adobe I/O - Project Firefly and Adobe Experience Platform](./modules/module22/adobe-io-firefly.md)

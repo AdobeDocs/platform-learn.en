@@ -1,6 +1,6 @@
 ---
-title: Architecture
-description: Architecture
+title: Videos
+description: Videos
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, Data Scientist, Orchestration Engineer, BI Expert, Marketer
 doc-type: tutorial

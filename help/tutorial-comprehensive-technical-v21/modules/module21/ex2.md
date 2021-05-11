@@ -1,33 +1,25 @@
 ---
-title: Data Collection & Real-time Server Side Forwarding - Update your Edge Configuration to make data available to your Launch Server Side property
-description: Update your Edge Configuration to make data available to your Launch Server Side property
+title: Adobe Experience Platform Data Collection & Real-time Server Side Forwarding - Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property
+description: Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: bfae4690-d75b-4ee7-936b-578198b2cabb
 ---
-# 21.2 Update your Edge Configuration to make data available to your Launch Server Side property
+# 21.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property
 
->[!NOTE]
->
->The Adobe Experience Platform Edge mobile extension is currently in BETA. Use of this extension is by invitation only. Please contact your Adobe Customer Success Manager to learn more and get access to the materials for this tutorial.
+## 21.2.1 Update your Datastream
 
-## 21.2.1 Update your Edge Configuration ID
+In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name **ldap - Demo System Datastream** and replaced **ldap** with your ldap.
 
-In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICONTROL Edge Configuration ID]**. You then used the name **ldap - Demo System Edge Configuration** and replaced **ldap** with your ldap.
+In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with your **[!DNL Adobe Experience Platform Data Collection Server property]**.
 
-In this exercise, you need to configure that **[!UICONTROL Edge Configuration ID]** to work with **[!DNL Launch Server Side Forwarding]**.
-
-To do that, go to [https://launch.adobe.com/](https://launch.adobe.com/). You'll then see this. 
+To do that, go to [https://launch.adobe.com/](https://launch.adobe.com/). You'll then see this. In the left menu, click **[!UICONTROL Datastreams]**.
 
 ![WebSDK](./images/websdk0.png)
 
-Click **[!UICONTROL Client Side]**. In the dropdown menu, click **[!UICONTROL Edge Configurations]**.
-
-![WebSDK](./images/websdk1.png)
-
-Search for your **[!UICONTROL Edge Configuration]**. Click your **[!UICONTROL Edge Configuration]** to open it.
+Search for your **[!UICONTROL Datastream]**. Click your **[!UICONTROL Datastream]** to open it.
 
 ![WebSDK](./images/websdk2.png)
 
@@ -43,13 +35,9 @@ Scroll down to **[!DNL Launch Server Side]** and toggle the button to turn [!DNL
 
 ![WebSDK](./images/websdk4a.png)
 
-You can then select your **[!DNL Launch Server Side property ID]** from the dropdown list.
+You can then select your **[!DNL Launch Server Side Property ID]** from the dropdown list. Search and select the **[!DNL Launch Server Side property]** you created in the previous step.
 
 ![WebSDK](./images/websdk5.png)
-
-Search and select the **[!DNL Launch Server Side property]** you created in the previous step.
-
-![WebSDK](./images/websdk6.png)
 
 After selecting the **[!DNL Launch Server Side property]**, you need to select the Environment ID. Select **[!DNL Development]**.
 
@@ -73,7 +61,7 @@ And this should be your configuration for the **[!DNL Production Environment]**.
 
 ![WebSDK](./images/websdk10.png)
 
-Your Edge Configuration is now ready to work with your **[!DNL Launch Server Side property]**.
+Your Datastream is now ready to work with your **[!DNL Launch Server Side property]**.
 
 Next Step: [21.3 Create and configure a custom webhook](./ex3.md)
 
