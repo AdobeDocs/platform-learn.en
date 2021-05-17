@@ -98,7 +98,12 @@ doc-type: video
   + [Define a relationship between two schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html)
   + [Create an ad-hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html)
 + Segments {#segments}
+  + [Segment Builder Overview](/help/platform/segments/segment-builder-overview.md)
   + [Create segments](/help/platform/segments/create-segments.md)
+  + [Create content-based segments](/help/platform/segments/create-content-based-segments.md)
+  + [Create conversion segments](/help/platform/segments/create-conversion-segments.md)
+  + [Create segments from existing segments](/help/platform/segments/create-segments-from-existing-segments.md)
+  + [Create sequential segments](/help/platform/segments/create-sequential-segments.md)
   + [Create dynamic segments](/help/platform/segments/create-dynamic-segments.md)
   + [Create multi-entity segments](/help/platform/segments/create-multi-entity-segments.md)
   + [Demo of streaming segmentation](/help/platform/segments/streaming-segmentation-demo.md)
