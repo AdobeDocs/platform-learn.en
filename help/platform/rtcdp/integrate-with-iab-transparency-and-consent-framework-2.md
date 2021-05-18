@@ -17,7 +17,7 @@ This video shows how Adobe's Real-time Customer Data Platform helps brands honor
 ## Additional Resources
 
 * [Understanding Adobe's Real-time Customer Data Platform video](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-* [Enforce Data Usage Policies in Real-time Customer Data Platform](../governance/enforce-data-usage-policies-in-real-time-cdp.md)
+* [Enforce data usage policies video](../governance/enforce-data-usage-policies.md)
 * [Understanding Adobe's Real-time Customer Data Platform video](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
 * [Demo of Real-time Customer Data Platform video](demo.md)
 * [Understanding the Real-time Customer Data Platform User Interface and Workflow video](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
