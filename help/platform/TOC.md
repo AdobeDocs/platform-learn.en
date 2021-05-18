@@ -28,7 +28,7 @@ doc-type: video
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
   + [Classify data using governance labels](/help/platform/governance/classify-data-using-governance-labels.md)
   + [Create data usage policies](/help/platform/governance/create-data-usage-policies.md)
-  + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies-in-real-time-cdp.md)
+  + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
