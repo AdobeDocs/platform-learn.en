@@ -21,7 +21,7 @@ This video takes you through Adobe’s Real-time Customer Data Platform (CDP) us
 * [Create Destinations and Activate Data video](/help/platform/destinations/create-destinations-and-activate-data.md)
 * [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
 * [Integrate with IAB's Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-* [Enforce Data Usage Policies in Real-time Customer Data Platform](../governance/enforce-data-usage-policies-in-real-time-cdp.md)
+* [Enforce data usage policies video](../governance/enforce-data-usage-policies.md)
 * [Understanding the Real-time Customer Data Platform video](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
 * [Source connectors overview video](../sources/overview.md)
 * [Real-time Customer Data Platform metrics overview documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/intro/home-page-dashboards.html)
