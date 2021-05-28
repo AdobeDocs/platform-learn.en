@@ -13,3 +13,7 @@ This video shows you how to create schemas in Adobe Experience Platform using th
 
 >[!VIDEO](https://video.tv.adobe.com/v/27012?quality=12&learn=on)
 
+## Additional Resources
+
+* [Schemas and Experience Data Model (XDM) overview video](schemas-and-experience-data-model.md)
+* [Schemas documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
