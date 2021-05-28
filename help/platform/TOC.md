@@ -50,7 +50,7 @@ doc-type: video
   + [Overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
   + [Architecture](data-science-workspace/architecture-overview.md)
   + [Load data in JupyterLab notebooks](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-  + [Train, score and productize models with the recipe builder template](data-science-workspace/train-score-and-productize-models.md)
+  + [Train, score, and productize models with the recipe builder template](data-science-workspace/train-score-and-productize-models.md)
   + [Create and publish a machine learning model](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/create-publish-model.html)
   + [Create the Retail Sales schema and dataset](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/create-retails-sales-dataset.html)
   + [Preview schemas and datasets](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/preview-schema-data.html)
@@ -86,7 +86,7 @@ doc-type: video
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Data usage patterns](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
   + [Run queries](/help/platform/queries/run-queries.md)
-  + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/create-datasets.html)
+  + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html)
 + Sandboxes {#sandboxes}
@@ -102,7 +102,7 @@ doc-type: video
   + [Create data types](/help/platform/schemas/create-data-types.md)
   + [Configure relationships between schemas](/help/platform/schemas/configure-relationships-between-schemas.md)
   + [Copy schemas between sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
-  + [Create an ad-hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html)
+  + [Create an ad hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html)
 + Segments {#segments}
   + [Segment Builder Overview](/help/platform/segments/segment-builder-overview.md)
   + [Create segments](/help/platform/segments/create-segments.md)
@@ -134,7 +134,7 @@ doc-type: video
     + [End-to-end demo](/help/platform/rtcdp/demo.md)
     + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
     + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-    + [Enforce Data Usage Policies](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies-in-real-time-cdp.html)
+    + [Enforce Data Usage Policies](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
 + Intelligent Services {#intelligent-services}
   + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
   + [Attribution AI overview](/help/platform/intelligent-services/introduction-to-attribution-ai.md)

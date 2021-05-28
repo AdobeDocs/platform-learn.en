@@ -8,7 +8,7 @@ thumbnail: 333592.jpg
 ---
 # Copy schemas between sandboxes
 
-This video shows how to copy a schema from one sandbox to another in Adobe Experience Platform using the Export/Import Schema API. We recommend you to build and test your schemas in development sandboxes before using them in production.
+This video shows how to copy a schema from one sandbox to another in Adobe Experience Platform using the Export/Import Schema API. Build and test your schemas in development sandboxes and then copy them to production.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333592?quality=12&learn=on)
 
