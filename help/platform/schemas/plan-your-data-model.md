@@ -1,6 +1,6 @@
 ---
 title: Plan your data model
-description: This video reviews what to do before you start building your schemas in Adobe Experience Platform. It covers key tasks like document your business use cases, understand your Platform license, know the product guardrails, and identify what data to ingest.
+description: Do these things before you start building your schemas in Adobe Experience Platform.
 role: Data Architect
 feature: Schemas
 kt: 7932
@@ -8,7 +8,7 @@ thumbnail: 333478.jpg
 ---
 # Plan your data model
 
-This video reviews what to do before you start building your schemas in Adobe Experience Platform. It covers key tasks like document your business use cases, understand your Platform license, know the product guardrails, and identify what data to ingest.
+This video reviews what to do before you start building your schemas in Adobe Experience Platform. Document your business use cases, understand your Platform license, know the product guardrails, and identify what data to ingest before finalizing your data model.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333478?quality=12&learn=on)
 
