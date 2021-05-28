@@ -92,10 +92,16 @@ doc-type: video
 + Sandboxes {#sandboxes}
   + [Use sandboxes](/help/platform/sandboxes/use-sandboxes.md)
 + Schemas {#schemas}
-  + [Overview](/help/platform/schemas/understanding-the-xdm-system-and-experience-data-model.md)
-  + [Create a schema](/help/platform/schemas/create-a-schema.md)
-  + [Create mixins and classes](/help/platform/schemas/create-your-own-mixins-and-classes.md)
-  + [Define a relationship between two schemas](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/relationship-ui.html)
+  + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
+  + [Building blocks](/help/platform/schemas/schema-building-blocks.md)
+  + [Plan your data model](/help/platform/schemas/plan-your-data-model.md)
+  + [Convert your data model to XDM](/help/platform/schemas/plan-your-data-model.md)
+  + [Create schemas](/help/platform/schemas/create-schemas.md)
+  + [Create classes](/help/platform/schemas/create-classes.md)
+  + [Create field groups](/help/platform/schemas/create-schema-field-groups.md)
+  + [Create data types](/help/platform/schemas/create-data-types.md)
+  + [Configure relationships between schemas](/help/platform/schemas/configure-a-relationship-between-schemas.md)
+  + [Copy schemas between sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
   + [Create an ad-hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html)
 + Segments {#segments}
   + [Segment Builder Overview](/help/platform/segments/segment-builder-overview.md)
