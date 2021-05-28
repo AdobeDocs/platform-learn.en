@@ -14,5 +14,5 @@ This video shows how to configure a relationship between two schemas in Adobe Ex
 
 ## Additional Resources
 
-* [Schemas and Experience Data Model (XDM) overview video](understanding-the-xdm-system-and-experience-data-model.md)
+* [Schemas and Experience Data Model (XDM) overview video](schemas-and-experience-data-model.md)
 * [Schemas documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)

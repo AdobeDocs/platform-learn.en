@@ -14,5 +14,5 @@ This video shows how to copy a schema from one sandbox to another in Adobe Exper
 
 ## Additional Resources
 
-* [Schemas and Experience Data Model (XDM) overview video](understanding-the-xdm-system-and-experience-data-model.md)
+* [Schemas and Experience Data Model (XDM) overview video](schemas-and-experience-data-model.md)
 * [Schemas documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html)
