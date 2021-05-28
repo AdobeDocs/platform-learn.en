@@ -102,6 +102,7 @@ doc-type: video
   + [Create data types](/help/platform/schemas/create-data-types.md)
   + [Configure relationships between schemas](/help/platform/schemas/configure-relationships-between-schemas.md)
   + [Copy schemas between sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
+  + [Update schemas](/help/platform/schemas/update-schemas.md)
   + [Create an ad hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html)
 + Segments {#segments}
   + [Segment Builder Overview](/help/platform/segments/segment-builder-overview.md)
