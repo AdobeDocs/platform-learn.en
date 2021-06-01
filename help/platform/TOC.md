@@ -84,9 +84,15 @@ doc-type: video
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
 + Queries {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
+  + [Query Service UI](/help/platform/queries/query-service-ui)
+  + [Query Service API](/help/platform/queries/query-service-api)
+  + [Explore Data](/help/platform/queries/explore-data)
+  + [Prepare Data](/help/platform/queries/prepare-data)
+  + [Adobe Defined Functions](/help/platform/queries/adobe-defined-functions)
   + [Data usage patterns](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
   + [Run queries](/help/platform/queries/run-queries.md)
   + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html)
+  + [Tableau](/help/platform/queries/tableau)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html)
 + Sandboxes {#sandboxes}
