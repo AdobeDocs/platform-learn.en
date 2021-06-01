@@ -40,7 +40,7 @@ In the **Body** of this request, you'll see the following:
 ![Segmentation](./images/s1_bodydtl.png)
 
 The language used for this request is called Profile Query Language, or **PQL**.
-You can find more info and documentation about PQL [here](https://docs.adobe.com/help/en/experience-platform/segmentation/pql/overview.html). 
+You can find more info and documentation about PQL [here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html). 
 
 Attention: please update the variable **name** in the below request by replacing **ldap** with your specific **ldap**.
 
@@ -70,9 +70,9 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 ![Postman](./images/s1_h.png)
 
-| Key      | Value |
-| ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| Key            | Value              |
+| -------------- | ------------------ |
+| x-sandbox-name | `--aepSandboxId--` |
 
 >[!NOTE]
 >
@@ -104,9 +104,9 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 ![Postman](./images/s2headers.png)
 
-| Key      | Value |
-| ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| Key            | Value              |
+| -------------- | ------------------ |
+| x-sandbox-name | `--aepSandboxId--` |
 
 >[!NOTE]
 >
@@ -135,9 +135,9 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 ![Postman](./images/s3headers.png)
 
-| Key      | Value |
-| ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| Key            | Value              |
+| -------------- | ------------------ |
+| x-sandbox-name | `--aepSandboxId--` |
 
 >[!NOTE]
 >

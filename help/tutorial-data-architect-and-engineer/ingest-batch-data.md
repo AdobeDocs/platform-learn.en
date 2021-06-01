@@ -67,7 +67,7 @@ First, get the sample data and customize it for your tenant:
 >There are a few options, **[!UICONTROL Error diagnostics]** and **[!UICONTROL Partial ingestion]** that you will see on various screens in this lesson. These options aren't covered in the tutorial. Some quick info:
 >
 >* Enabling error diagnostics generates data about the ingestion of your data, which you can then review using the Data Access API. Learn more about it in [the documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
->* Partial ingestion allows you to ingest data containing errors, up to a certain threshold which you can specify. Learn more about it in [the documentation](https://docs.adobe.com/help/en/experience-platform/ingestion/batch/partial.html)
+>* Partial ingestion allows you to ingest data containing errors, up to a certain threshold which you can specify. Learn more about it in [the documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### Validate the data
 
