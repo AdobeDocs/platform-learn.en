@@ -92,7 +92,7 @@ doc-type: video
   + [Data usage patterns](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
   + [Run queries](/help/platform/queries/run-queries.md)
   + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html)
-  + [Tableau](/help/platform/queries/tableau)
+  + [Tableau](/help/platform/queries/tableau.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html)
 + Sandboxes {#sandboxes}
