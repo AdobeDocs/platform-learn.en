@@ -52,7 +52,7 @@ doc-type: video
   + [Load data in JupyterLab notebooks](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
   + [Query and discover data in JupyterLab notebooks](data-science-workspace/dsw-query-service.md)
   + [Exploratory Data Analysis](data-science-workspace/eda.md)
-  + [Recipes, models, and services overview](data-science-workspace/recipes-models-services.md)
+  + [Recipes, models, and services overview](data-science-workspace/recipes-models-services-overview.md)
   + [Build a model using the recipe builder template](data-science-workspace/recipe-builder-template.md)
   + [Analyze model performance](data-science-workspace/analyze-model-performance.md)
   + [Create and publish a trained model (UI)](data-science-workspace/create-model-ui.md)
