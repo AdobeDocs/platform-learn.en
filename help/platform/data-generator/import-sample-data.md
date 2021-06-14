@@ -142,14 +142,15 @@ Before you follow the steps, please make sure that you have access to Experience
 7. From your downloads folder, move the `platform-utils-main.zip` file to the desired location on your computer, and unzip it.
 8. Please make a note of the location of the unzipped file, as we might need it later when setting up the `FILE_PATH` postman environment variable
 9.  Open the `platform-utils-main` folder in a terminal window.
-10.  Run `Luma-Loyalty-Data.postman_collection.json` to build mixins, schema, dataset, and to ingest sample loyalty data to Adobe Experience Platform
+10. Run `Luma-Loyalty-Data.postman_collection.json` to build mixins, schema, dataset, and to ingest sample loyalty data to Adobe Experience Platform
     * `newman run Luma-Loyalty-Data.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json —insecure --delay-request 4000`
-11.  If everything goes well, all requests in the `Luma-Loyalty-Data` collection should pass. 
-12.  Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
-13.  Open the `Luma Loyalty Dataset` dataset, and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested.
+11. If everything goes well, all requests in the `Luma-Loyalty-Data` collection should pass. 
+12. Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
+13. Open the `Luma Loyalty Dataset` dataset, and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested.
+     
      ![Loyalty Dataset](../assets/data-generator/images/loyalty-dataset.png)
 
-14.  Repeat steps 10 - 13 to run below collections:
+14. Repeat steps 10 - 13 to run below collections:
     * Run `Luma-CRM-Data.postman_collection.json` to build mixins, schema, dataset, and to ingest sample CRM data to Adobe Experience Platform
       * `newman run Luma-CRM-Data.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
     * Run `Luma-Product-Catalog.postman_collection.json` to build mixins, schema, dataset, and to ingest sample product data to Adobe Experience Platform
