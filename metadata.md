@@ -9,7 +9,7 @@ getting-started-url: https://experienceleague.adobe.com/#recommended/solutions/e
 tutorials-title: Tutorials
 tutorials-url: /content/help/en/platform-learn/tutorials/overview.html
 git-repo: https://github.com/AdobeDocs/platform-learn.en
-feature-set: Platform
+feature-set: Experience Platform
 index: yes
 mini-toc-levels: 2
 type: Tutorial
