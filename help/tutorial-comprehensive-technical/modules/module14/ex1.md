@@ -11,7 +11,7 @@ exl-id: 86890628-1e78-4225-bc3c-65884b1b24fd
 
 ## 14.1.1 Terminology
 
-To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/experience-platform/decisioning/home.html) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
+To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/offer-decisioning/using/offer-decisioning-home.html) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
 
 Working with Offer Decisioning, you need to understand the following concepts:
 
