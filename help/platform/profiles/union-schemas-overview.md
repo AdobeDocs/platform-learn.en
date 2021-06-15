@@ -15,6 +15,6 @@ This video gives you an overview of union schemas used by Adobe Experience Platf
 
 ## Additional Resources
 
-* [Union schema documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/union-schema.html)
+* [Union schema UI documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html)
 * [Understanding Real-time Customer Profile video](understanding-the-real-time-customer-profile.md)
 * [Overview Diagram of Real-time Customer Profile video](overview-diagram.md)

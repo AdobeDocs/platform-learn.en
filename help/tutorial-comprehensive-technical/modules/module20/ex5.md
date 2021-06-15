@@ -144,7 +144,7 @@ As an example, let's start by mapping the user's Experience Cloud Id. Select ECI
 
 ![Stackchat Adobe Experience Platform integration](./images/ui_add_profile_ecid.png)
 
-You're doing great! Now just repeat this process for the following slots you created in [exercise 20.2.2](./ex2.md). They will all have corresponding schema properties set up for you.
+You're doing great! Now just repeat this process for the following slots you created in [exercise 20.2.2](ex2.md). They will all have corresponding schema properties set up for you.
 
 Your final mapping should look like this:
 
