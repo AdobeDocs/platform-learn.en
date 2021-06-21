@@ -172,7 +172,7 @@ In Postman, there are 2 concepts: Environments and Collections.
   * 1 Collection for Authentication to Adobe I/0
   * 1 Collection for our Exercises
 
-Please download **postman.zip** from your **Environment Variables GitHub repository** to your local desktop. 
+Please download **postman.zip** from the [Module 3 Prerequisites ](./real-time-customer-profile.md) to your local desktop. 
 
 In this **postman.zip** file, you'll find the following files:
 
