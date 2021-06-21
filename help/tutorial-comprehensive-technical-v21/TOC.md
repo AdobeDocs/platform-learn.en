@@ -211,3 +211,13 @@ doc-type: tutorial
   + [22.3 Build your EXP News real-time dashboard](/help/tutorial-comprehensive-technical-v21/modules/module22/ex3.md)
   + [22.4 Connect EXP News data collection to your EXP News real-time dashboard](/help/tutorial-comprehensive-technical-v21/modules/module22/ex4.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module22/summary.md)
++ 23 - Adobe Journey Optimizer {#module23}
+  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module23/journeyoptimizer.md)
+  + [23.1 Introduction to Adobe Journey Optimizer: build an email message](/help/tutorial-comprehensive-technical-v21/modules/module23/ex1.md)
+  + [23.2 Configure a trigger-based journey - Account Creation](/help/tutorial-comprehensive-technical-v21/modules/module23/ex2.md)
+  + [23.3 Configure a trigger-based journey - Order Confirmation](/help/tutorial-comprehensive-technical-v21/modules/module23/ex3.md)
+  + [23.4 Configure a batch-based newsletter journey](/help/tutorial-comprehensive-technical-v21/modules/module23/ex4.md)
+  + [23.5 Apply personalization in an email message](/help/tutorial-comprehensive-technical-v21/modules/module23/ex5.md)
+  + [23.6 Setup and use push notifications for iOS](/help/tutorial-comprehensive-technical-v21/modules/module23/ex6.md)
+  + [23.7 Create a business event journey](/help/tutorial-comprehensive-technical-v21/modules/module23/ex7.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module23/summary.md)

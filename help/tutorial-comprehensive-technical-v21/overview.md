@@ -259,6 +259,13 @@ As part of this module you will also get an understanding of what triggers Real-
 - **Description:** In this module, you'll use Adobe I/O - Project Firefly to build your own real-time dashboard that consumes data from Adobe Experience Platform in real-time. 
 - **Time Investment:** 90 minutes
 
+[23. Adobe Journey Optimizer](./modules/module23/journeyoptimizer.md)
+
+- **Audience:** Email Marketer, Orchestration Specialist, Data Engineer, Data Architect, Data Analyst
+- **Prerequisites:** Access to Adobe Experience Platform and Journey Optimizer
+- **Description:** In this module, you'll learn everything there is to know about Journey Optimizer, which helps companies design and deliver connected, contextual, and personalized experiences to their customers.
+- **Time Investment:** 120 minutes
+
 >[!NOTE]
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
