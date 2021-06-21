@@ -14,7 +14,7 @@ This tutorial is very diverse and offers clear insights in the following applica
 - Adobe Experience Platform
 - Adobe Experience Platform Data Collection
 - Real-time CDP
-- Journey Orchestration
+- Adobe Journey Optimizer
 - Customer Journey Analytics
 - Offer Decisioning
 
@@ -51,7 +51,6 @@ After completing this tutorial, you will be able to:
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Data Collection: [https://launch.adobe.com](https://launch.adobe.com)
 - Access to the demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
-- This documentation has been created to facilitate hands-on, technical enablement around Adobe Experience Platform. In order to complete some of the modules, you'll need to change some variables and replace them by your specific **Environment Variables**. Please contact your Adobe contact who will provide you with the required **Environment Variables** of your specific Adobe Experience Platform instance.
 
 >[!IMPORTANT]
 >
