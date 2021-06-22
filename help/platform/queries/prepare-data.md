@@ -4,6 +4,7 @@ description: Learn how to clean, prepare, and combine data from multiple dataset
 feature: Queries
 kt: 8005
 thumbnail: 333699.jpg
+exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
 ---
 # Prepare data
 

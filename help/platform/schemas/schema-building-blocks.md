@@ -5,6 +5,7 @@ role: Data Architect
 feature: Schemas
 kt: 7937
 thumbnail: 333469.jpg
+exl-id: 8b74c923-e629-42dc-8e4a-9289a61fe4cf
 ---
 # Schema building blocks
 

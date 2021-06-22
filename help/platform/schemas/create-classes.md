@@ -5,6 +5,7 @@ role: Data Architect
 feature: Schemas
 kt: 7936
 thumbnail: 333538.jpg
+exl-id: b106691e-8c41-494e-97a1-d0230d61c597
 ---
 # Create classes
 

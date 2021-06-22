@@ -7,9 +7,8 @@ level: Beginner
 doc-type: feature video
 thumbnail: 333304.jpg
 kt: 7891
-
+exl-id: a98e43e1-4b5e-42fa-8806-aab702947da5
 ---
-
 # Create segments from existing segments
 
 The Segment Builder in Platform allows you to use existing segments as part of a new segment definition. Watch this video to see tips on how to do it.

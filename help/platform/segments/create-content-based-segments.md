@@ -7,9 +7,8 @@ level: Beginner
 doc-type: feature video
 thumbnail: 333302.jpg
 kt: 7889
-
+exl-id: bafe275e-19f3-4b86-9fcd-0516fada55ec
 ---
-
 # Create content-based segments
 
 Learn the basics on creating a content affinity segment in the Segment Builder in platform.

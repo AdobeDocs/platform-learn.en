@@ -5,6 +5,7 @@ role: Data Engineer, Business Practitioner
 feature: Queries
 kt: 7682
 thumbnail: 333700.jpg
+exl-id: dd9a2521-e1e5-44b4-bd10-c460ed895e52
 ---
 # Query Service API
 

@@ -5,6 +5,7 @@ role: Data Architect
 feature: Schemas
 kt: 7934
 thumbnail: 333537.jpg
+exl-id: 00239ee1-db57-4bd0-acfc-5ba27a9c8fb6
 ---
 # Create data types
 

@@ -5,8 +5,8 @@ role: Business Practitioner
 feature: Data Science Workspace
 kt: 7286
 thumbnail: 333311.jpg
+exl-id: c946d462-42bc-4adf-a4db-47a61fa6bbff
 ---
-
 # Query and discover data in Data Science Workspace
 
 Adobe Experience Platform allows you to use Structured Query Language (SQL) in Data Science Workspace by integrating Query Service into JupyterLab as a standard feature. This tutorial demonstrates some common use cases to explore, transform, and analyze data.

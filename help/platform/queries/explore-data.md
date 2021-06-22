@@ -4,6 +4,7 @@ description: Learn how to validate ingested data, preview data, and explore stat
 feature: Queries
 kt: 7684
 thumbnail: 333415.jpg
+exl-id: 7288da8f-4646-4519-81cc-dae33d79b86e
 ---
 # Explore data
 

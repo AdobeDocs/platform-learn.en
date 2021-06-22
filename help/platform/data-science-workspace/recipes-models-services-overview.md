@@ -1,12 +1,12 @@
 ---
-title: Recipes, models, and services overview 
+title: Recipes, models, and services overview
 description: Learn about recipes, models, and services in Adobe Experience Platform Data Science Workspace.
 role: Business Practitioner
 feature: Data Science Workspace
 kt: 7807
 thumbnail: 30567.jpg
+exl-id: 1aa07a46-5997-4288-959d-2d255fd76983
 ---
-
 # Recipes, models, and services overview
 
 Learn about recipes, models, and services in Adobe Experience Platform Data Science Workspace.

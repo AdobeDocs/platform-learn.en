@@ -5,6 +5,7 @@ role: Data Architect
 feature: Schemas
 kt: 7939
 thumbnail: 333592.jpg
+exl-id: d0d23739-3a3a-4938-a400-684f36b0ae82
 ---
 # Copy schemas between sandboxes
 

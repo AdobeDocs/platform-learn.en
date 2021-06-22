@@ -5,6 +5,7 @@ role: Data Architect
 feature: Schemas
 kt: 7935
 thumbnail: 333536.jpg
+exl-id: e52cacce-bcf7-4583-9125-113634250e19
 ---
 # Configure relationships between schemas
 

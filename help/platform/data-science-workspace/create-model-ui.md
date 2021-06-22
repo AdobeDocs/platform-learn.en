@@ -5,8 +5,8 @@ role: Business Practitioner
 feature: Data Science Workspace
 kt: 7291
 thumbnail: 333595.jpg
+exl-id: 149909cf-8294-45ed-b854-b9db5582858e
 ---
-
 # Create and publish a trained model in the UI
 
 In Adobe Experience Platform Data Science Workspace, a machine learning Model is created by incorporating an existing recipe that is appropriate for the model’s intent. The model is then trained and evaluated to optimize its operating efficiency and efficacy by fine-tuning its associated Hyperparameters. Recipes are reusable, meaning that multiple Models can be created and tailored to specific purposes with a single Recipe.
