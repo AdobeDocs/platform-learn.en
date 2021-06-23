@@ -32,9 +32,9 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
 
 >[!NOTE]
 >
->User data contained in the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file is fictitious and is to be used for demonstration purposes only.
+>User data contained in the [platform-utils-main.zip](assets/data-generator/platform-utils-main.zip) file is fictitious and is to be used for demonstration purposes only.
 
-1. Download the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file, which contains all files required for this tutorial. 
+1. Download the [platform-utils-main.zip](assets/data-generator/platform-utils-main.zip) file, which contains all files required for this tutorial. 
 2. From your downloads folder, move the `platform-utils-main.zip` file to the desired location on your computer, and unzip it.
 3. Please make a note of the location of the unzipped file, as we might need it later when setting up the `FILE_PATH` postman environment variable
     
