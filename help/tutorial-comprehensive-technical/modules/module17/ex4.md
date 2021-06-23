@@ -158,7 +158,7 @@ Paste this code in the **Advanced Mode Editor**.
 
 `substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 12)`
 
-FYI: This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044`.
+FYI: This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: `+32463622044`.
 Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
 
 `substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
@@ -292,12 +292,12 @@ Follow these instructions to set the fields of the HTTP expression builder:
 
 Enter the following Header values
 
-| Header | Value|
-|--- |--- |
-| **Content-Type** | **application/json** |
-| **Accept-Encoding** | **gzip, deflate, br**|
-| **Connection** | **keep-alive** |
-| **Accept** |\*/*|
+| Header              | Value                 |
+| ------------------- | --------------------- |
+| **Content-Type**    | **application/json**  |
+| **Accept-Encoding** | **gzip, deflate, br** |
+| **Connection**      | **keep-alive**        |
+| **Accept**          | \*/*                  |
 
 You should now have this:
 
