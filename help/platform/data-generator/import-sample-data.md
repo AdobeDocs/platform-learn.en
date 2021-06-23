@@ -30,7 +30,11 @@ To complete this tutorial, you can either use the [Postman application's UI](#po
 
 Before you follow the steps, please ensure that you have downloaded the [Postman](https://www.postman.com/downloads/) application and have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment. It provides an isolated environment where you can try out functionality without mixing resources and data with your Production environment. Let's get started.
 
-1. Download the [platform-utils-main.zip](https://github.com/AdobeDocs/platform-utils/archive/refs/heads/main.zip) file, which contains all files required for this tutorial. 
+>[!NOTE]
+>
+>User data contained in the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file is fictitious and is to be used for demonstration purposes only.
+
+1. Download the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file, which contains all files required for this tutorial. 
 2. From your downloads folder, move the `platform-utils-main.zip` file to the desired location on your computer, and unzip it.
 3. Please make a note of the location of the unzipped file, as we might need it later when setting up the `FILE_PATH` postman environment variable
     
@@ -59,9 +63,7 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
 9.  Close the settings panel.
 10. Select the environments option and click on the import option. 
     ![Environment Import](../assets/data-generator/images/env-import.png)
-
 11. Let's import the downloaded json environment file, `DataInExperiencePlatform.postman_environment`, and click **Import**
-    ![Environment Import](../assets/data-generator/images/env-import.png)
 12. In Postman, select your environment in the top-right dropdown and click the eye icon to view the environment variables.
     ![Environment Selection](../assets/data-generator/images/env-selection.png)
 
