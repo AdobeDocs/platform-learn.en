@@ -35,7 +35,7 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
 3. Please make a note of the location of the unzipped file, as we might need it later when setting up the `FILE_PATH` postman environment variable
     
     >[!NOTE]
-    > To obtain file path on your mac, navigate to the `platform-utils-main` folder, right click on the folder and select **Get Info** option.
+    > To obtain file path on your Mac, navigate to the `platform-utils-main` folder, right click on the folder and select **Get Info** option.
 
     ![MAC file path](../assets/data-generator/images/mac-file-path.png)
 
