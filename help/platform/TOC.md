@@ -49,6 +49,7 @@ doc-type: video
 + Data Science Workspace {#data-science-workspace}
   + [Overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
   + [Architecture](data-science-workspace/architecture-overview.md)
+  + [Create the course schema and dataset](data-science-workspace/create-the-course-schema-and-dataset.md)
   + [Load data in JupyterLab notebooks](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
   + [Query and discover data in JupyterLab notebooks](data-science-workspace/dsw-query-service.md)
   + [Exploratory Data Analysis](data-science-workspace/eda.md)
