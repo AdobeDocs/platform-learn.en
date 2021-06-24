@@ -11,7 +11,7 @@ exl-id: 1aa07a46-5997-4288-959d-2d255fd76983
 
 Learn about recipes, models, and services in Adobe Experience Platform Data Science Workspace.
 
->[!VIDEO](https://video.tv.adobe.com/v/333380)
+>[!VIDEO](https://video.tv.adobe.com/v/333380?quality=12&learn=on)
 
 ## Additional Resources
 

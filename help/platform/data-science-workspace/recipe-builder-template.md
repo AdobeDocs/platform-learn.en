@@ -11,7 +11,7 @@ exl-id: 49b86450-d49a-4467-805d-02bd65e7ca95
 
 This video showcases using the recipe builder template in the JupyterLab launcher to train and score a propensity model and create a recipe.
 
->[!VIDEO](https://video.tv.adobe.com/v/333570)
+>[!VIDEO](https://video.tv.adobe.com/v/333570?quality=12&learn=on)
 
 ## Additional Resources
 
