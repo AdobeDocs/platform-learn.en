@@ -90,7 +90,7 @@ Go back to your Event configuration in Journey Orchestration.
 
 ![Demo](./images/evschema.png)
 
-In this use-case, you want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema ``Demo System - Event Schema for Website (Global v1.1)` as the Schema for your Event.
+In this use-case, you want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema `Demo System - Event Schema for Website (Global v1.1)` as the Schema for your Event.
 
 ![Demo](./images/evschema1.png)
 

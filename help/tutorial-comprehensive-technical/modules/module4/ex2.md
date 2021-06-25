@@ -217,12 +217,12 @@ Continue in the **AEP** definition screen
 
 ### Environment variables
 
-Key | Value
----------|----------
-**alexaBrandName** | **luma retail**
-**emailAddress** | **rmaur@adobe.com**
-**ldap** | `--demoProfileLdap--`
-**configurationId** | `--configurationID--`
+| Key                 | Value                 |
+| ------------------- | --------------------- |
+| **alexaBrandName**  | **luma retail**       |
+| **emailAddress**    | **rmaur@adobe.com**   |
+| **ldap**            | `--demoProfileLdap--` |
+| **configurationId** | `--configurationID--` |
     
 Ensure you replace **alexaBrandName**, **ldap** and **emailAddress** with your specific configuration details.
 
