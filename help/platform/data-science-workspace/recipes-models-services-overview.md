@@ -4,7 +4,7 @@ description: Learn about recipes, models, and services in Adobe Experience Platf
 role: Business Practitioner
 feature: Data Science Workspace
 kt: 7807
-thumbnail: 30567.jpg
+thumbnail: 333380.jpg
 exl-id: 1aa07a46-5997-4288-959d-2d255fd76983
 ---
 # Recipes, models, and services overview
