@@ -1,6 +1,6 @@
 ---
-title: Journey Orchestration - Summary
-description: Journey Orchestration - Summary
+title: Adobe Journey Optimizer - Summary
+description: Adobe Journey Optimizer - Summary
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer
 doc-type: tutorial
@@ -9,23 +9,23 @@ exl-id: 41c785f5-e75a-4b14-8432-2d50a2374eed
 ---
 # Summary & benefits
 
-Congratulations and thank you for investing your time in learning about Journey Orchestration and Adobe Experience Platform! 
-In this module, you've learned how to configure an account creation journey by using Journey Orchestration which is triggered in real-time when the customer creates an account on the website. 
+Congratulations and thank you for investing your time in learning about Adobe Journey Optimizer and Adobe Experience Platform! 
+In this module, you've learned how to configure an account creation journey by using Adobe Journey Optimizer which is triggered in real-time when the customer creates an account on the website. 
 
-Journey Orchestration is your one stop shop for creating seamless, 1:1 omnichannel experiences. By listening to real-time customer interaction or location events you can now orchestrate 1:1 journeys, leveraging the Real-time Customer Profile along with optional 3rd party data sources to deliver the right message within the right channel at the right time.
+Adobe Journey Optimizer is your one stop shop for creating seamless, 1:1 omnichannel experiences. By listening to real-time customer interaction or location events you can now orchestrate 1:1 journeys, leveraging the Real-time Customer Profile along with optional 3rd party data sources to deliver the right message within the right channel at the right time.
 
 ## Benefits
 
-Let's highlight the benefits of defining journeys in Journey Orchestration in combination with Adobe Experience Platform:
+Let's highlight the benefits of defining journeys in Adobe Journey Optimizer in combination with Adobe Experience Platform:
 
-- Communication with customers needs to be real-time and contextual. With Journey Orchestration, you now have the ability to listen for specific customer-initiated events and carefully curate a contextual journey if and when the customer is going through that specific journey.
-- Orchestrating a journey can involve wait times, conditions whereby data in Adobe Experience Platform is verified to then send the journey into a different path and also, custom actions whereby any application with an API can receive instructions from Journey Orchestration on what content to show to which customer.
+- Communication with customers needs to be real-time and contextual. With Adobe Journey Optimizer, you now have the ability to listen for specific customer-initiated events and carefully curate a contextual journey if and when the customer is going through that specific journey.
+- Orchestrating a journey can involve wait times, conditions whereby data in Adobe Experience Platform is verified to then send the journey into a different path and also, custom actions whereby any application with an API can receive instructions from Adobe Journey Optimizer on what content to show to which customer.
 - Personalizing engagements can now truly happen across any channel that is used to interact with the customer.
 
 For example, you can now –
 
 - Tailor the experience based on the real time customer data profile, contextual data received from the event, or other proprietary / 3rd party data sources.
-- Deliver a consistent message through broader Adobe applications such as Adobe Campaign or leverage any third party service such as chatbots or smart devices.
+- Deliver a consistent message through broader Adobe applications or leverage any third party service such as chatbots or smart devices.
 - Use insights to further understand your customers’ needs in the moment, and use a mix of tactics to create frictionless opportunities for conversion, along with the data to support attribution efforts. 
 - Continue to develop the relationship by understanding what the customer needs at that point in time and coordinating a timely and contextual follow up which will drive repeat purchases and increase customer lifetime value
 

@@ -131,11 +131,11 @@ You can find the requirements and process for submitting completion here: [Measu
 - **Download these assets**: 
   - [CSV files](./assets/csv/module5/csvfiles.zip)
 
-[6. Journey Orchestration](./modules/module6/journey-orchestration-create-account.md)
+[6. Adobe Journey Optimizer: Orchestration](./modules/module6/journey-orchestration-create-account.md)
 
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer
-- **Prerequisites:** Access to Adobe Experience Platform, Journey Orchestration and Adobe Campaign with Platform (on Azure)
-- **Description:** In this module, you'll use Journey Orchestration to build out a trigger-based journey.
+- **Prerequisites:** Access to Adobe Experience Platform and Adobe Journey Optimizer
+- **Description:** In this module, you'll use Adobe Journey Optimizer to build out a trigger-based journey.
 - **Time Investment:** 60 minutes
 
 [7. Query Service](./modules/module7/query-service.md)
