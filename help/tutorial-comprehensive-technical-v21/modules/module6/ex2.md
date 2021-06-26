@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: b86fd37a-8e66-4b7d-b5b8-0138fdcec61b
 ---
-# 6.2 Journey Optimizer: Create your email message
+# 6.2 Journey Optimizer - Create your email message
 
 In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the demo website.
 

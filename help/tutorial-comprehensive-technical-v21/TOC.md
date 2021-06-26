@@ -66,9 +66,9 @@ doc-type: tutorial
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module5/summary.md)
 + 6 - Adobe Journey Optimizer: Orchestration {#module6}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module6/journey-orchestration-create-account.md)
-  + [6.1 Journey Optimizer: Create your Event](/help/tutorial-comprehensive-technical-v21/modules/module6/ex1.md)
-  + [6.2 Journey Optimizer: Create your email message](/help/tutorial-comprehensive-technical-v21/modules/module6/ex2.md)
-  + [6.3 Journey Optimizer: Create your Journey](/help/tutorial-comprehensive-technical-v21/modules/module6/ex3.md)
+  + [6.1 Journey Optimizer - Create your Event](/help/tutorial-comprehensive-technical-v21/modules/module6/ex1.md)
+  + [6.2 Journey Optimizer - Create your email message](/help/tutorial-comprehensive-technical-v21/modules/module6/ex2.md)
+  + [6.3 Journey Optimizer - Create your Journey](/help/tutorial-comprehensive-technical-v21/modules/module6/ex3.md)
   + [6.4 Update your Configuration ID and Test your Journey](/help/tutorial-comprehensive-technical-v21/modules/module6/ex4.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module6/summary.md)
 + 7 - Query Service {#module7}
