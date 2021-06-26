@@ -43,15 +43,15 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 ## Exercises
 
-[6.1 Journey Optimizer - Create your Event](./ex1.md)
+[6.1 Create your event](./ex1.md)
 
 In this exercise, you'll learn how to configure an event.
 
-[6.2 Journey Optimizer - Create your email message](./ex2.md)
+[6.2 Create your email message](./ex2.md)
 
 In this exercise, you'll learn how to configure an email message.
 
-[6.3 Journey Optimizer - Create your Journey](./ex3.md)
+[6.3 Create your journey](./ex3.md)
 
 In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
 
