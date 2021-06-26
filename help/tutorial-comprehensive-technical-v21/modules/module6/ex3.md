@@ -1,6 +1,6 @@
 ---
-title: Module 6 Journey Orchestration Setup Journey
-description: Journey Orchestration Setup Journey
+title: Journey Optimizer Create your journey
+description: Journey Optimizer Create your journey
 kt: 5342
 audience: developer
 doc-type: tutorial

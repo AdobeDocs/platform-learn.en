@@ -1,6 +1,6 @@
 ---
-title: Journey Optimizer: Create your email message
-description: Journey Optimizer: Create your email message
+title: Journey Optimizer Create your email message
+description: Journey Optimizer Create your email message
 kt: 5342
 audience: developer
 doc-type: tutorial

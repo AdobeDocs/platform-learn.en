@@ -1,6 +1,6 @@
 ---
-title: Module 6 Journey Orchestration Setup Event
-description: Journey Orchestration Setup Event
+title: Journey Optimizer Create your event
+description: Journey Optimizer Create your event
 kt: 5342
 audience: developer
 doc-type: tutorial
