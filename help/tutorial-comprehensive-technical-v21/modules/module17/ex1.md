@@ -244,7 +244,7 @@ You now need to add the Microsoft Dynamics 365 Export Data. Click **Add a permis
 
 ![Create Azure App](./images/app-Auth-06b.png)
 
-The **Request API permissions** panel will appear on the right. Click **Data Export Service for Microsoft Dynamics 365**.
+The **Request API permissions** panel will appear on the right again. Click **Data Export Service for Microsoft Dynamics 365**.
 
 ![Create Azure App](./images/app-Auth-07b.png)
 
@@ -281,7 +281,7 @@ Click **New client secret**.
 
 ![Create Azure App](./images/app-Auth-cs1.png)
 
-Add a description of **Demo System Integration**, and have it never expire.
+Add a description of **Demo System Integration**, and set the field **Expires** to 24 months.
 
 ![Create Azure App](./images/app-Auth-cs2.png)
 
@@ -326,13 +326,13 @@ Where to find these variables?
 
 - **NAME**
 
-  Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://demosystemjoconnor1312.crm4.dynamics.com**. In this case, the field **NAME** is equal to **demosystemjoconnor1312**.
+  Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://demosystemvangeluw101.crm4.dynamics.com**. In this case, the field **NAME** is equal to **demosystemvangeluw101**.
   
   ![Create Azure App](./images/durl.png)
 
 - **REGION**
 
-  Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://demosystemjoconnor1312.crm4.dynamics.com**. In this case, the field **REGION** is equal to **crm4**.
+  Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://demosystemvangeluw101.crm4.dynamics.com**. In this case, the field **REGION** is equal to **crm4**.
   
   ![Create Azure App](./images/durl.png)
 

@@ -15,7 +15,7 @@ To get a better understanding about Offer Decisioning, we highly recommend you t
 
 Working with Offer Decisioning, you need to understand the following concepts:
 
-|Term | Explanation|
+| Term | Explanation|
 |---------|----------|
 |**Offer**| An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.|
 |**Placement**| The combination of location (or Channel Type) and context (or Content Type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image, JSON in Mobile, Web, Social, Instant Messaging, and non-Digital channels.|
