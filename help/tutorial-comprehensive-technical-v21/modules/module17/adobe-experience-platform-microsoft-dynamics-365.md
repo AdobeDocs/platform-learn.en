@@ -13,7 +13,7 @@ exl-id: a83f6a0a-287c-4415-af8e-1743f8cf89c0
 
 In this module, you'll set up your instance of Dynamics 365 for Sales and load sample customer data. You will then use the Dynamics 365 Source Connector in Adobe Experience Platform to ingest that data from Microsoft Dynamics 365 into Adobe Experience Platform.
 
-Finally, you'll use Journey orchestration to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the AEP Demo website and you'll configure Journey orchestration to communicate directly to a customer based on the on a change in sentiment. In addition, you'll also learn how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Journey Orchestration based on the Contact record change in Microsoft Dynamics 365. To illustrate the end result, please check out the following video:
+Finally, you'll use Adobe Journey Optimizer to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the demo website and you'll configure Adobe Journey Optimizer to communicate directly to a customer based on the on a change in sentiment. In addition, you'll also learn how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Adobe Journey Optimizer based on the Contact record change in Microsoft Dynamics 365. To illustrate the end result, please check out the following video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/328350?quality=12&learn=on)
 
@@ -22,14 +22,14 @@ Finally, you'll use Journey orchestration to connect directly with Microsoft Dyn
 - Become familiar with the Microsoft Dynamics 365 for Sales 
 - Ingest data from Microsoft Dynamics 365 for Sales into Adobe Experience Platform
 - Add a custom field in Microsoft Dynamics 365 
-- Use Microsoft Power Automate to set up a trigger-based flow towards Journey Orchestration
-- Leverage Journey Orchestration to connect directly with Microsoft Dynamics 365 to create a contact record
+- Use Microsoft Power Automate to set up a trigger-based flow towards Adobe Journey Optimizer
+- Leverage Adobe Journey Optimizer to connect directly with Microsoft Dynamics 365 to create a contact record
 
 ## Prerequisites
 
-- You should have completed [Module 6 - Journey Orchestration](../module6/journey-orchestration-create-account.md)
+- You should have completed [Module 6 - Adobe Journey Optimizer: Orchestration](../module6/journey-orchestration-create-account.md)
 - Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
-- Access to Journey Orchestration
+- Access to Adobe Journey Optimizer
 - Access to Microsoft Dynamics 365 for Sales, Microsoft Power Automate and Azure Data Lake Storage
 
 >[!IMPORTANT]

@@ -1,12 +1,13 @@
 ---
-title: Getting Started - Install the Chrome extension for the Experience League documentation
-description: Getting Started - Install the Chrome extension for the Experience League documentation
+title: Getting Started - Create your Datastream
+description: Getting Started - Create your Datastream
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 exl-id: 146e9e4e-2726-46e2-a6ca-62c4ce6f8ba1
 ---
+
 # 0.2 Create your Datastream
 
 Go to [https://launch.adobe.com/](https://launch.adobe.com/). After the previous exercise, you now have two Launch properties: one for web and one for mobile.

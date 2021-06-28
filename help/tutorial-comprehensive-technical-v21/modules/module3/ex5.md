@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: 7bf6f18a-eed1-497c-9f13-1984a664c20b
 ---
-# 3.5 - Create a segment - API
+# 3.5 Create a segment - API
 
 In this exercise, you'll use Postman and Adobe I/O to create a segment and store the results of that segment as a dataset, by making use of Adobe Experience Platform's APIs.
 

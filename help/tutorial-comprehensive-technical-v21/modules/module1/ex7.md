@@ -1,6 +1,6 @@
 ---
-title: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Implement Adobe Target
-description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Implement Adobe Target
+title: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - XDM Schema requirements in Adobe Experience Platform
+description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - XDM Schema requirements in Adobe Experience Platform
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
