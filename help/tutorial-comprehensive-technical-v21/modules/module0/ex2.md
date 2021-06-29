@@ -10,17 +10,17 @@ exl-id: 146e9e4e-2726-46e2-a6ca-62c4ce6f8ba1
 
 # 0.2 Create your Datastream
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/). After the previous exercise, you now have two Launch properties: one for web and one for mobile.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). After the previous exercise, you now have two Data Collection properties: one for web and one for mobile.
 
 ![DSN](./images/launchprop.png)
 
-These properties are almost ready to be used, but before you can start collecting data using these properties you need to set up an Edge Configuration ID. You'll get more information around the concept of what an Edge Configuration ID is and what it means in Exercise 1.2.
+These properties are almost ready to be used, but before you can start collecting data using these properties you need to set up a datastream. You'll get more information around the concept of what a datastream is and what it means in Exercise 1.2.
 
 For now, please follow these steps.
 
 Click **[!UICONTROL Datastreams]**.
 
-![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png)
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png) 
 
 Click **[!UICONTROL New Datastream]**.
 
@@ -60,16 +60,16 @@ You now have this. Click **Save**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig8.png)
 
-You'll then see that your Edge Configuration consists of 3 environments.
+You'll then see that your datastream consists of 3 environments.
 
 ![Name the Edge Configuration and save](./images/edgeconfig9.png)
 
-In the left menu, clik **[!UICONTROL Client]**.
-Filter the search results to see your two Launch properties.
+In the left menu, clik **[!UICONTROL Tags]**.
+Filter the search results to see your two Data Collection properties.
 
 ![Name the Edge Configuration and save](./images/edgeconfig10a.png)
 
-Open the Launch property for **Web** by clicking it. You'll then see this. Click **Extensions**.
+Open the property for **Web** by clicking it. You'll then see this. Click **Extensions**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig11.png)
 
@@ -122,3 +122,4 @@ Next Step: [0.3 Create your Enablement Configuration ID](./ex3.md)
 [Go Back to Module 0](./getting-started.md)
 
 [Go Back to All Modules](./../../overview.md)
+https://experience.adobe.com/#/data-collection/

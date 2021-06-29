@@ -89,7 +89,7 @@ Click **Finish**.
 
 Two Launch properties have now been created and are ready to be used.
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/).
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
 Enter your LDAP as search term. You should now see the two Launch properties that have been created.
 
