@@ -17,8 +17,8 @@ This exercise will guide you through all the necessary steps to define and confi
 
 Before you can create and configure an Amazon Alexa skill, you must:
 
-1. Have an Amazon developer account and be signed in
-1. Have an AWS account and be signed in
+1.  Have an Amazon developer account and be signed in
+2.  Have an AWS account and be signed in
  
 See [Exercise 4.1](./ex1.md) for more details.
 
@@ -215,12 +215,12 @@ Continue in the **AEP** definition screen
 
 ### Environment variables
 
-| Key | Value |
-|---------|----------|
-|**alexaBrandName** | **luma**|
-|**emailAddress** | **rmaur@adobe.com**|
-|**ldap** | `--demoProfileLdap--`|
-|**configurationId** | `--configurationID--`|
+| Key                 | Value                 |
+| ------------------- | --------------------- |
+| **alexaBrandName**  | **luma**              |
+| **emailAddress**    | **rmaur@adobe.com**   |
+| **ldap**            | `--demoProfileLdap--` |
+| **configurationId** | `--configurationID--` |
     
 Ensure you replace **alexaBrandName**, **ldap** and **emailAddress** with your specific configuration details.
 

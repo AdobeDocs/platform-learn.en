@@ -17,7 +17,7 @@ This video shows how to create and manage data usage policies in the Adobe Exper
 
 * [Data usage policies documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html)
 * [Create data usage policies with the API documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html)
-* [Enforce data usage policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
+* [Enforce data usage policies video](enforce-data-usage-policies.md)
 * [Data governance end-to-end-demo video](introduction-to-data-governance.md)
 * [Data governance overview video](understanding-data-governance.md)
 * [Classify data using governance labels video](classify-data-using-governance-labels.md)

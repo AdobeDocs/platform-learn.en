@@ -15,18 +15,18 @@ To get a better understanding about Offer Decisioning, we highly recommend you t
 
 Working with Offer Decisioning, you need to understand the following concepts:
 
-| Term | Explanation|
-|---------|----------|
-|**Offer**| An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.|
-|**Placement**| The combination of location (or Channel Type) and context (or Content Type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image, JSON in Mobile, Web, Social, Instant Messaging, and non-Digital channels.|
-|**Rule**|The logic that defines and controls the eligibility of end-users for an offer.|
-|**Personalized Offer**|A customizable marketing message based on eligibility rules and constraints.|
-|**Fallback Offer**|The default offer displayed when an end-user is not eligible for any of the offers in the collection used.|
-|**Capping**|Used in an offer definition to define how many times an offer can be presented in total and to a specific user.|
-|**Priority**|Level to determine the priority rank from a result set of offers.|
-|**Collection**| Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.|
-|**Decision**|A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.|
-|**AEM Assets Essentials** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform.|
+| Term                      | Explanation                                                                                                                                                                                                                                              |
+| ------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Offer**                 | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.                                                                                |
+| **Placement**             | The combination of location (or Channel Type) and context (or Content Type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image, JSON in Mobile, Web, Social, Instant Messaging, and non-Digital channels. |
+| **Rule**                  | The logic that defines and controls the eligibility of end-users for an offer.                                                                                                                                                                           |
+| **Personalized Offer**    | A customizable marketing message based on eligibility rules and constraints.                                                                                                                                                                             |
+| **Fallback Offer**        | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.                                                                                                                                               |
+| **Capping**               | Used in an offer definition to define how many times an offer can be presented in total and to a specific user.                                                                                                                                          |
+| **Priority**              | Level to determine the priority rank from a result set of offers.                                                                                                                                                                                        |
+| **Collection**            | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.                                                                                                                                       |
+| **Decision**              | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.                                                                                                                            |
+| **AEM Assets Essentials** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform.                                                                                                 |
 
 ## 14.1.2 Offer Decisioning
 
@@ -62,17 +62,17 @@ In the **Placements** tab you can define your placements for your offers. When y
 
 If you don't see any placements in your Adobe Experience Platform instance, please create them as indicated below and in the screenshot.
 
-| Name | Channel Type| Content Type|
-|---------|----------|----------|
-|**Non-digital - Text** | Non-digital| Text |
-|**Web - JSON** | Web| JSON|
-|**Web - HTML** | Web| HTML |
-|**Web - Text** | Web| Text |
-|**Web - Image** | Web| Image |
-|**Email - JSON** | Email | JSON|
-|**Email - HTML** | Email | HTML |
-|**Email - Text** | Email | Text |
-|**Email - Image** | Email | Image |
+| Name                   | Channel Type | Content Type |
+| ---------------------- | ------------ | ------------ |
+| **Non-digital - Text** | Non-digital  | Text         |
+| **Web - JSON**         | Web          | JSON         |
+| **Web - HTML**         | Web          | HTML         |
+| **Web - Text**         | Web          | Text         |
+| **Web - Image**        | Web          | Image        |
+| **Email - JSON**       | Email        | JSON         |
+| **Email - HTML**       | Email        | HTML         |
+| **Email - Text**       | Email        | Text         |
+| **Email - Image**      | Email        | Image        |
 
 **Note**: Please do not change anything to the placements already available.
 

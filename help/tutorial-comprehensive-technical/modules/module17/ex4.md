@@ -292,12 +292,12 @@ Follow these instructions to set the fields of the HTTP expression builder:
 
 Enter the following Header values
 
-| Header | Value|
-|--- |--- |
-| **Content-Type** | **application/json** |
-| **Accept-Encoding** | **gzip, deflate, br**|
-| **Connection** | **keep-alive** |
-| **Accept** |\*/*|
+| Header              | Value                 |
+| ------------------- | --------------------- |
+| **Content-Type**    | **application/json**  |
+| **Accept-Encoding** | **gzip, deflate, br** |
+| **Connection**      | **keep-alive**        |
+| **Accept**          | \*/*                  |
 
 You should now have this:
 

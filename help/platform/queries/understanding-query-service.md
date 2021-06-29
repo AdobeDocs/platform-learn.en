@@ -1,17 +1,17 @@
 ---
-title: Understanding Query Service
-description: Query Service makes it possible for brands to connect the online-to-offline customer journey and understand  omni-channel attribution. This video shows how an experience business can leverage Query Service to address key use cases and how Query Service works.
-role: Data Engineer,Business Practitioner
+title: Overview
+description: In this video, you will learn about Query Service in Adobe Experience Platform and how it helps to understand customer behavior and generate impactful insights. 
+role: Data Engineer, Business Practitioner
 feature: Queries
-kt: 3139
-thumbnail: 29795.jpg
+kt: 7679
+thumbnail: 333402.jpg
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
 ---
 # Query Service overview
 
-Query Service makes it possible for brands to connect the online-to-offline customer journey and understand  omni-channel attribution. This video shows how an experience business can leverage Query Service to address key use cases and how Query Service works.
+In this video, you will learn about Query Service in Adobe Experience Platform and how it helps to understand customer behavior and generate impactful insights. 
 
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333402?quality=12&learn=on)
 
 ## Additional Resources
 

@@ -43,6 +43,10 @@ Data can be uploaded directly into a dataset on the datasets screen in JSON and 
 
 First, get the sample data and customize it for your tenant:
 
+>[!NOTE]
+>
+>Data contained in the [luma-data.zip](assets/luma-data.zip) file is fictitious and is to be used for demonstration purposes only.
+
 1. Download [luma-data.zip](assets/luma-data.zip) to your **Luma Tutorial Assets** folder.
 1. Unzip the file, to create a folder called `luma-data` which contains the four data files we will use in this lesson
 1. Open `luma-loyalty.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your own schemas:
@@ -67,7 +71,7 @@ First, get the sample data and customize it for your tenant:
 >There are a few options, **[!UICONTROL Error diagnostics]** and **[!UICONTROL Partial ingestion]** that you will see on various screens in this lesson. These options aren't covered in the tutorial. Some quick info:
 >
 >* Enabling error diagnostics generates data about the ingestion of your data, which you can then review using the Data Access API. Learn more about it in [the documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
->* Partial ingestion allows you to ingest data containing errors, up to a certain threshold which you can specify. Learn more about it in [the documentation](https://docs.adobe.com/help/en/experience-platform/ingestion/batch/partial.html)
+>* Partial ingestion allows you to ingest data containing errors, up to a certain threshold which you can specify. Learn more about it in [the documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### Validate the data
 
@@ -115,8 +119,8 @@ Now we will upload data using the API.
 ### Download and prep the data
 
 1. You should have already downloaded and unzipped [luma-data.zip](assets/luma-data.zip) into your `Luma Tutorial Assets` folder.
-1. Open `luma-crm.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your schemas
-1. Save the updated file
+2. Open `luma-crm.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your schemas
+3. Save the updated file
 
 ### Get the dataset id
 
