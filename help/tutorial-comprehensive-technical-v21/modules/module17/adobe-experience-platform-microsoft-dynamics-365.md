@@ -60,13 +60,13 @@ In this exercise you'll create your Microsoft Azure and Dynamics 365 account.
 
 In this exercise you'll learn how to connect Microsoft Dynamics 365 to Adobe Experience Platform.
 
-[17.3 Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics](./ex3.md)
+[17.3 Create a Contact in Microsoft Dynamics 365 using Adobe Journey Optimizer & Import data from Microsoft Dynamics](./ex3.md)
 
 In this exercise you'll learn how to create a Contact in Microsoft Dynamics 365.
 
 [17.4 Update a contact in Microsoft Dynamics 365 and automatically trigger a journey](./ex4.md)
 
-In this exercise you'll learn how to update a Contact in Microsoft Dynamics 365 and automatically trigger a journey in Adobe Experience Platform and Journey Orchestration.
+In this exercise you'll learn how to update a Contact in Microsoft Dynamics 365 and automatically trigger a journey in Adobe Experience Platform and Adobe Journey Optimizer.
 
 [Summary and benefits](./summary.md)
 

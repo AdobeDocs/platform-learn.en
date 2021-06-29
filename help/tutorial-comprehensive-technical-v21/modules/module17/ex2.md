@@ -11,7 +11,7 @@ exl-id: ff5db388-6ae2-44ed-a30a-b5127e6cbd31
 
 ## 17.2.1 Update the Contact Entity in Microsoft Dynamics 365
 
-Login to your Microsoft Dynamics 365 account. The URL of your Microsoft Dynamics 365 account looks like this: https://**NAME**.**REGION**.dynamics.com, for instance, [https://aepdemovangeluw1.crm4.dynamics.com/](https://aepdemovangeluw1.crm4.dynamics.com/).
+Login to your Microsoft Dynamics 365 account. The URL of your Microsoft Dynamics 365 account looks like this: https://**NAME**.**REGION**.dynamics.com, for instance, [https://demosystemvangeluw101.crm4.dynamics.com](https://demosystemvangeluw101.crm4.dynamics.com).
 
 You'll then see this. Click on **Dynamics 365 - custom**.
 
@@ -154,7 +154,11 @@ In the left menu, click **Contact**.
 
 ![D365](./images/cthome1.png)
 
-You now see your list of Contacts. Click any contact to view the Contact record.
+You now see your list of Contacts. Instead of only showing **My Active Contacts**, change that to **All Contacts**.
+
+![D365](./images/cthome2a.png)
+
+You'll then have this. Click any contact to view the Contact record.
 
 ![D365](./images/cthome2.png)
 
@@ -164,7 +168,7 @@ You should see the new Sentiment field:
 
 ## 17.2.3 Create a Microsoft Dynamics 365 User that has permission to access the Azure Sync Contact App via external System
 
-Adobe Experience Platform uses source connectors to synchronize data from systems such as Microsoft Dynamics 365. In the previous exercise we created an Azure application called SyncContact. As part of this we created permissions on this app, including a client secret. We need to create a user that can use this credential - such a user is called an *Application User**.
+Adobe Experience Platform uses source connectors to synchronize data from systems such as Microsoft Dynamics 365. In the previous exercise we created an Azure application called SyncContact. As part of this we created permissions on this app, including a client secret. We need to create a user that can use this credential - such a user is called an **Application User**.
 
 Return to your Microsoft Dynamics 365 dashboard. You'll then see this. Click the **gear** icon.
 
@@ -178,7 +182,7 @@ A new browser tab will open. You'll see this.
 
 ![iFrame](./images/iframe-01a.png)
 
-In the top menu, click **Settings**, then click **Customizations**.
+In the top menu, click **Settings**, then click **Security**.
 
 ![iFrame](./images/iframe-security.png)
 
@@ -200,20 +204,15 @@ If selector in the top left does not say **USER: APPLICATION USER** select this 
 
 ![iFrame](./images/iframe-security-usersnew.png)
 
-Enter your details like this:
+Enter your Application ID. This is the Application (Client) ID that you created in the previous exercise. This can be found on the overview screen of the SyncContact app you created and looks like this: **1dc2c2a1-ca26-4ab7-afa7-057acf441415**.
 
-| Key | Description | Example |
-|--- |--- |--- |
-| User Name | A username for this user. Use your email address | joconnor@adobe.com |
-| Application ID | The Application (Client) ID that you noted in the previous exercise. This can be found on the overview screen of the SyncContact app you created | 2e62d7e7-ffdb-41f5-8457-d2d1f3676546 |
-| Full Name | Enter your first and last name | Jo O'Connor |
-| Primary Email | Enter your primary email | joconnor@adobe.com |
+![iFrame](./images/appuserappid.png)
 
-And click **Save**.
+Click **Save**.
 
 ![iFrame](./images/iframe-security-usersnew2.png)
 
-After you save you will see that the **Application ID URI** has been populated, as has the **Azure AD Object ID**.
+After clicking save, it'll take 1-2 minutes (don't close your window, just wait). You'll then see that several other fields are populated automatically.
 
 ![iFrame0](./images/iframe-security-usersnew3.png)
 
@@ -230,7 +229,6 @@ Click **OK**.  Wait for the role to be updated.
 ![iFrame0](./images/iframe-security-roles2.png)
 
 Your user has now been set up, and you can close this window.
-
 
 ## 17.2.3 Connect Adobe Experience Platform to Microsoft Dynamics 365
 
@@ -256,8 +254,8 @@ Enter your details like this:
 
 | Key | Description| Example|
 |--- |--- |--- |
-| Account name | **ldap** Demo System Dynamics 365 Account | joconnor System Demo Dynamics 365 Account | 
-| Description | **ldap** Demo System Dynamics 365 Account | joconnor System Demo Dynamics 365 Account | 
+| Account name | **ldap** Demo System Dynamics 365 Account | vangeluw Demo System Dynamics 365 Account | 
+| Description | **ldap** Demo System Dynamics 365 Account | vangeluw Demo System Dynamics 365 Account | 
 | Authentication type | How to connect to Dynamics | Service-principal and key authentication |
 | serviceUri | https://**NAME**.**REGION**.dynamics.com/ | https://demosystemjoconnor1312.crm4.dynamics.com/| 
 | Service principal ID | The Application (Client) ID that you created in the previous exercise. You can see this in the Overview screen for the SyncContact App | 7651719a-7f3e-4bc5-af8f-679ead1d2730 | 
@@ -356,7 +354,7 @@ Click **Next**.
 
 Now you will need to name your **Flow**.
 
-Set the **Dataflow name** to: **ldap Dynamics Contact Dataflow**. For instance, in this example, the Dataflow Name is **joconnor Dynamics Contact Dataflow**.
+Set the **Dataflow name** to: **ldap Dynamics Contact Dataflow**. For instance, in this example, the Dataflow Name is **vangeluw Dynamics Contact Dataflow**.
 
 ![Connect](./images/connect-dataset.png)
 
@@ -386,7 +384,7 @@ And you can click through to see the batches of data that have been brought thro
 
 ![Connect](./images/msd-dataset.png)
 
-Next Step: [17.3 Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics](./ex3.md)
+Next Step: [17.3 Create a Contact in Microsoft Dynamics 365 using Adobe Journey Optimizer & Import data from Microsoft Dynamics](./ex3.md)
 
 [Go Back to Module 17](./adobe-experience-platform-microsoft-dynamics-365.md)
 
