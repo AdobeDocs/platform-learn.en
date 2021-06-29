@@ -34,7 +34,7 @@ To do that, go to **Configurations** in the left menu and click **Manage** under
 
 ![JO](./images/johomeact.png)
 
-Click **Add** to add a new action.
+Click **Create Action** to add a new action.
 
 ![JO](./images/createaction-add.png)
 
@@ -44,10 +44,9 @@ You'll then see this:
 
 Fill out the following fields like this:
 
-- Name: **ldapD365ContactCreation**, in this example: **joconnorD365ContactCreation**
+- Name: **ldapD365ContactCreation**, in this example: **vangeluwD365ContactCreation**
 - Description: **Create a Contact in Dynamics 365**
-- URL: **Your Web API URL/contacts**, which looks like this: **https://demosystemldapXX.crmX.dynamics.com/api/data/v9.1/contacts**, in this example: **https://demosystemjoconnor1312.crm4.dynamics.com/api/data/v9.1/contacts**
-
+- URL: **Your Web API URL/contacts**, which looks like this: **https://demosystemldapXX.crmX.dynamics.com/api/data/v9.1/contacts**, in this example: **https://demosystemvangeluw101.crm4.dynamics.com/api/data/v9.1/contacts**
 
 **Note** : Make sure that the Web API URL uses https, or the call will be refused by Microsoft Dynamics
 
@@ -72,11 +71,17 @@ Next, under **Authentication** you will add how you connect to Microsoft Dynamic
 
 For **TYPE**, choose **Custom** from the drop-down list.
 
-Then add the following payload by clicking on the pencil icon. Roll over the **i** icon to display the icon to edit the payload.
-
 ![JO](./images/createaction-01c.png)
 
-The payload screen will appear. Use this payload json. You will need to add your own connection credentials, as created in exercise 17.1.  Note, we are not using the client secret in this authentication.
+Then add the following payload by clicking on the pencil icon. 
+
+![JO](./images/createaction-01ca.png)
+
+The payload screen will appear and you'll see this default payload sample.
+
+![JO](./images/createaction-01cb.png)
+
+Replace the default payload sample by the below payload. You will need to add your own connection credentials, as created in exercise 17.1.  Note, we are not using the client secret in this authentication.
 
 Copy and paste this json:
 
@@ -111,11 +116,10 @@ You'll now populate the fields with empty strings in this json with values as ba
 
 | Field | Description | Example Value |
 |--- |--- |--- |
-|**client_id** | The Application (Client) ID of the Azure SyncContact app | 2e62d7e7-ffdb-41f5-8457-d2d1f3676546 |
-| **username** | The username you use to connect to Microsoft Dynamics 365 which will look like **admin@demosystemldapXX.onmicrosoft.com** | **admin@demosystemjoconnor1312.onmicrosoft.com** |
+|**client_id** | The Application (Client) ID of the Azure SyncContact app | 1dc2c2a1-ca26-4ab7-afa7-057acf441415 |
+| **username** | The username you use to connect to Microsoft Dynamics 365 which will look like **admin@demosystemldapXX.onmicrosoft.com** | **admin@demosystemvangeluw101.onmicrosoft.com** |
 | password | the password you use to connect to Microsoft Dynamics 365 | **Password_1234** |
-| resource | The URL of the Microsoft Dynamics instance which looks like **https://ldapaepdemoXX.crmX.dynamics.com** | https://demosystemjoconnor1312.crm4.dynamics.com/ |
-
+| resource | The URL of the Microsoft Dynamics instance which looks like **https://ldapaepdemoXX.crmX.dynamics.com** | https://demosystemvangeluw101.crm4.dynamics.com/ |
 
 ![JO](./images/createaction-01e.png)
 
@@ -124,7 +128,6 @@ Click **Save**
 Click **Click to test the authentication**, and if your payload is correct it should turn green and say that the Authentication was successful.
 
 ![JO](./images/createaction-01f.png)
-
 
 Next, under **Action parameters** you will need to add the following payload by clicking on the pencil icon. Roll over the **i** icon to display the icon to edit the payload.
 
@@ -163,7 +166,6 @@ Paste it into the Payload window.
 
 ![JO](./images/createaction-03.png)
 
-
 Click **Save** on the Field Configuration window.
 
 Click **Save** to save your action.
@@ -172,13 +174,9 @@ Click **Save** to save your action.
 
 Now you are ready to edit the **ldap - Account Creation Journey**.
 
-In the top menu, click **Home** and search for your **ldap - Account Creation Journey** that you created in Module 6.
+In the left menu, click **Journeys** and search for your **ldap - Account Creation Journey** that you created in Module 6. Click to open the journey and edit it.
 
 ![JO](./images/johome.png)
-
-Click to open the journey and edit it.
-
-![JO](./images/johome1.png)
 
 Click the arrow next to the **Duplicate** button to see the drop-down. Select **Create a new version**.
 
@@ -188,13 +186,9 @@ Click **Create a new version** in the pop-up.
 
 ![JO](./images/createaction-05.png)
 
-First you will need to remove the **End** orchestration step. Click **End** and click the bin icon in the right panel.
+First you will need to remove the **End** orchestration step. Click **End** and click the bin icon in the right panel. Click **Confirm**.
 
 ![JO](./images/createaction-07.png)
-
-Click **Confirm**.
-
-![JO](./images/createaction-08.png)
 
 Now search for your Action from the left panel. Search for **ldapD365** and your Action should appear under **Actions**.
 
@@ -242,7 +236,6 @@ Click **OK**.
 
 Re-add the **End** orchestration. Clear the search term and under **ORCHESTRATION**, drag **End** to the next step in the Journey.
 
-
 ![JO](./images/createaction-12a.png)
 
 Click **Ok**.
@@ -265,7 +258,7 @@ After a couple of seconds, your journey will be published and live.
 
 ## 17.3.2 Create your account to test
 
-Open your AEP Demo website and load a brand of choice. Go to the **Login/Register**-page.
+Open your demo website and load a brand of choice. Go to the **Login/Register**-page.
 
 Fill out the form fields and finish by clicking **CREATE ACCOUNT**.
 
