@@ -17,6 +17,6 @@ This video shows how to apply governance labels to your datasets. Governance lab
 
 * [Data usage labels documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html)
 * [Create data usage policies video](create-data-usage-policies.md)
-* [Enforce data usage policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
+* [Enforce data usage policies video](enforce-data-usage-policies.md)
 * [Data governance end-to-end-demo video](introduction-to-data-governance.md)
 * [Data governance overview video](understanding-data-governance.md)

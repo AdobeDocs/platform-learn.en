@@ -20,4 +20,4 @@ This video gives an overview of data governance in Adobe Experience Platform. Da
 * [Data governance end-to-end-demo video](introduction-to-data-governance.md)
 * [Classify data using governance labels video](classify-data-using-governance-labels.md)
 * [Create data usage policies video](create-data-usage-policies.md)
-* [Enforce data usage policies in Real-time CDP video](enforce-data-usage-policies-in-real-time-cdp.md)
+* [Enforce data usage policies video](enforce-data-usage-policies.md)

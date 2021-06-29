@@ -11,22 +11,22 @@ exl-id: 86890628-1e78-4225-bc3c-65884b1b24fd
 
 ## 14.1.1 Terminology
 
-To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/experience-platform/decisioning/home.html) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
+To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/offer-decisioning/using/offer-decisioning-home.html) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
 
 Working with Offer Decisioning, you need to understand the following concepts:
 
-| Term | Explanation|
----------|----------
-|**Offer** | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.|
-|**Placement** | The combination of location (or Channel Type) and context (or Content Type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image, JSON in Mobile, Web, Social, Instant Messaging, and non-Digital channels.|
-|**Rule** | The logic that defines and controls the eligibility of end-users for an offer.|
-|**Personalized Offer** | A customizable marketing message based on eligibility rules and constraints.|
-|**Fallback Offer** | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.|
-|**Capping** | Used in an offer definition to define how many times an offer can be presented in total and to a specific user.|
-|**Priority** | Level to determine the priority rank from a result set of offers.|
-|**Collection** | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.|
-|**Activity** | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.|
-|**Experience Cloud Library** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform.|
+| Term                         | Explanation                                                                                                                                                                                                                                              |
+| ---------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| **Offer**                    | An offer is a marketing message that may have rules associated with it that specify who is eligible to see the offer. An offer has a status: draft, approved or archived.                                                                                |
+| **Placement**                | The combination of location (or Channel Type) and context (or Content Type) in which an offer appears for an end-user. Effectively it is the combination of Text, HTML, Image, JSON in Mobile, Web, Social, Instant Messaging, and non-Digital channels. |
+| **Rule**                     | The logic that defines and controls the eligibility of end-users for an offer.                                                                                                                                                                           |
+| **Personalized Offer**       | A customizable marketing message based on eligibility rules and constraints.                                                                                                                                                                             |
+| **Fallback Offer**           | The default offer displayed when an end-user is not eligible for any of the offers in the collection used.                                                                                                                                               |
+| **Capping**                  | Used in an offer definition to define how many times an offer can be presented in total and to a specific user.                                                                                                                                          |
+| **Priority**                 | Level to determine the priority rank from a result set of offers.                                                                                                                                                                                        |
+| **Collection**               | Used to filter out a sub-set of offers from the personalized offer list to speed up the offer decisioning process.                                                                                                                                       |
+| **Activity**                 | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.                                                                                                                            |
+| **Experience Cloud Library** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform.                                                                                                 |
 
 ## 14.1.2 Offer Decisioning
 
