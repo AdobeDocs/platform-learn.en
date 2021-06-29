@@ -1,36 +1,36 @@
 ---
-title: Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics
-description: Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics
+title: Create a Contact in Microsoft Dynamics 365 using Adobe Journey Optimizer & Import data from Microsoft Dynamics
+description: Create a Contact in Microsoft Dynamics 365 using Adobe Journey Optimizer & Import data from Microsoft Dynamics
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 228b8a40-f7a1-4786-b058-7be7b7c2e1b0
 ---
-# 17.3 Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics
+# 17.3 Create a Contact in Microsoft Dynamics 365 using Adobe Journey Optimizer & Import data from Microsoft Dynamics
 
 In this exercise, you'll be doing the following tasks:
 
-- Modify an existing journey, created in Module 6, to enable creation of contact in Microsoft Dynamics 365. For this modification we will be creating an action in Journey Orchestration.
+- Modify an existing journey, created in Module 6, to enable creation of contact in Microsoft Dynamics 365. For this modification we will be creating an action in Adobe Journey Optimizer.
 - Verify the contact is created in Microsoft Dynamics 365 once you have submitted the Registration form on the AEP Demo website. 
 - Setup a data flow from Microsoft Dynamics 365 to Adobe Experience Platform using Microsoft Power Automate. Power Automate is a service that helps you create automated workflows between your favorite apps and services to synchronize files, get notifications, collect data and more.
 - Lastly, you'll test the complete flow and understand how data flows between applications.
 
-## 17.3.1 Create Contact in Dynamics 365 using Journey Orchestration 
+## 17.3.1 Create Contact in Dynamics 365 using Adobe Journey Optimizer 
 
 In this exercise, you'll edit your existing Journey created in Module 6 of Enablement. This new version of Journey will then create a Contact in Microsoft Dynamics 365 whenever a customer creates an account on the Demo System Next website. 
 
-Go to [https://experience.adobe.com/#/home](https://experience.adobe.com/#/home). Click to open **Journey Orchestration**.
+Go to [https://experience.adobe.com/#/home](https://experience.adobe.com/#/home). Click to open **Adobe Journey Optimizer**.
 
 ![JO](./images/exchome.png)
 
-You'll then be redirected to the Journey Orchestration homepage. Search for your Account Creation journey, which is named by this naming convention: **ldap - Account Creation Journey**. This is the journey that you'll update in a couple of minutes. 
+You'll then be redirected to the Adobe Journey Optimizer homepage. In the left menu, go to **Journeys** and search for your Account Creation journey, which is named by this naming convention: **ldap - Account Creation Journey**. This is the journey that you'll update in a couple of minutes. 
 
 ![JO](./images/johome.png)
 
-Before you can update your journey, you need to create a new **Action** in Journey Orchestration which will update Microsoft Dynamics 365.
+Before you can update your journey, you need to create a new **Action** in Adobe Journey Optimizer which will update Microsoft Dynamics 365.
 
-To do that, go to **Actions**.
+To do that, go to **Configurations** in the left menu and click **Manage** under **Actions**.
 
 ![JO](./images/johomeact.png)
 

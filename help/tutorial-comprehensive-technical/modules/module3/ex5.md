@@ -42,6 +42,7 @@ In the **Body** of this request, you'll see the following:
 The language used for this request is called Profile Query Language, or **PQL**.
 You can find more info and documentation about PQL [here](https://experienceleague.adobe.com/docs/experience-platform/segmentation/pql/overview.html). 
 
+
 Attention: please update the variable **name** in the below request by replacing **ldap** with your specific **ldap**.
 
 ```json

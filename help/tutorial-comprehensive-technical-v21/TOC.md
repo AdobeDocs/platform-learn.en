@@ -64,11 +64,12 @@ doc-type: tutorial
   + [5.5 Ingest 2nd and 3rd party data into Adobe Experience Platform](/help/tutorial-comprehensive-technical-v21/modules/module5/ex5.md)
   + [Optional: Install OpenSSL on Windows](/help/tutorial-comprehensive-technical-v21/modules/module5/install-openssl.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module5/summary.md)
-+ 6 - Journey Orchestration {#module6}
++ 6 - Adobe Journey Optimizer: Orchestration {#module6}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module6/journey-orchestration-create-account.md)
-  + [6.1 Journey Orchestration: Setup Event](/help/tutorial-comprehensive-technical-v21/modules/module6/ex1.md)
-  + [6.2 Journey Orchestration: Setup Journey](/help/tutorial-comprehensive-technical-v21/modules/module6/ex2.md)
-  + [6.3 Update your Configuration ID and Test your Journey](/help/tutorial-comprehensive-technical-v21/modules/module6/ex3.md)
+  + [6.1 Create your event](/help/tutorial-comprehensive-technical-v21/modules/module6/ex1.md)
+  + [6.2 Create your email message](/help/tutorial-comprehensive-technical-v21/modules/module6/ex2.md)
+  + [6.3 Create your journey](/help/tutorial-comprehensive-technical-v21/modules/module6/ex3.md)
+  + [6.4 Update your Configuration ID and Test your Journey](/help/tutorial-comprehensive-technical-v21/modules/module6/ex4.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module6/summary.md)
 + 7 - Query Service {#module7}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module7/query-service.md)

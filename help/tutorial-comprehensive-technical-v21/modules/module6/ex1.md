@@ -1,23 +1,19 @@
 ---
-title: Module 6 Journey Orchestration Setup Event
-description: Journey Orchestration Setup Event
+title: Journey Optimizer Create your event
+description: Journey Optimizer Create your event
 kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 98e2ea4b-3c9a-445c-9474-8f3461d33cd2
 ---
-# 6.1 Journey Orchestration: Setup Event
+# 6.1 Create your event
 
-Login to Journey Orchestration by going to [Adobe Experience Cloud](https://experience.adobe.com).
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Click on **Journey Orchestration**.
-
-![ACOP](./images/acoptrig.png)
-
-You'll be redirected to the **Journeys**  view in Journey Orchestration.
+You'll be redirected to the **Home**  view in Journey Optimizer.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -29,17 +25,17 @@ You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/home.png)
 
-In the menu, click **Events**.
+In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Events**.
 
 ![ACOP](./images/acopmenu.png)
 
-On the **Events** screen, you'll see a view similar to this. Click the **Add** button.
-
-![ACOP](./images/add.png)
-
-You'll then see an empty event configuration.
+You'll then see an overview of all available events. Click **Create Event** to start creating your own event.
 
 ![ACOP](./images/emptyevent.png)
+
+A new, empty event window will then pop up.
+
+![ACOP](./images/emptyevent1.png)
 
 First of all, give your Event a Name like this: `ldapAccountCreationEvent` and replace `ldap` with your ldap.
 
@@ -49,7 +45,7 @@ Next, add a description like this `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Next is the **Event ID Type** selection. Select **System Generated**
+Next, make sure the **Type** is set to **Unitary**, and for the **Event ID Type** selection, select **System Generated**
 
 ![ACOP](./images/eventidtype.png)
 
@@ -85,19 +81,15 @@ Click **Save** once more to save your changes.
 
 ![ACOP](./images/save1.png)
 
-Your Event is now configured and saved.
+Your event is now configured and saved.
 
 ![ACOP](./images/eventdone.png)
 
-Click on your event again to open up the **Edit Event** screen again.
+Click your event again to open up the **Edit Event** screen again. Hover over the **Payload** field again to see the 3 icons again. Click on the **View Payload** icon. 
 
 ![ACOP](./images/viewevent.png)
 
-Hover over the **Payload** field again to see the 3 icons again.
-
-![ACOP](./images/hover.png)
-
-Click on the **View Payload** icon. You'll now see an example of the expected payload.
+You'll now see an example of the expected payload.
 
 ![ACOP](./images/fullpayload.png)
 
@@ -106,13 +98,13 @@ Your Event has a unique orchestration eventID, which you can find by scrolling d
 ![ACOP](./images/payloadeventID.png)
 
 The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in Exercise 6.2. Remember this eventID, as you'll need it in Exercise 6.3.
-`"eventID": "801dccf3d3ce2afbed286b4fbd15ae8120758dcd7b0d487128342285b3732121"`
+`"eventID": "239990879187cb19bed14525736cbdd1204fea3e2452bc5080a9aca27062a485"`
 
-Click **Close**.
+Click **Ok**, followed by clicking **Cancel**.
 
 You've now finished this exercise.
 
-Next Step: [6.2 Journey Orchestration: Setup Journey](./ex2.md)
+Next Step: [6.2 Journey Optimizer: Create your email message](./ex2.md)
 
 [Go Back to Module 6](./journey-orchestration-create-account.md)
 

@@ -1,25 +1,21 @@
 ---
-title: Module 6 Journey Orchestration Setup Journey
-description: Journey Orchestration Setup Journey
+title: Journey Optimizer Create your email message
+description: Journey Optimizer Create your email message
 kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: b86fd37a-8e66-4b7d-b5b8-0138fdcec61b
 ---
-# 6.2 Journey Orchestration: Setup Journey
+# 6.2 Create your email message
 
-In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the Platform Demo website.
+In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the demo website.
 
-Login to Journey Orchestration by going to [Adobe Experience Cloud](https://experience.adobe.com).
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-Click on **Journey Orchestration**.
-
-![ACOP](./images/acoptrig.png)
-
-You'll be redirected to the **Home** view in Journey Orchestration.
+You'll be redirected to the **Home**  view in Journey Optimizer.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -31,177 +27,275 @@ You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/home.png)
 
-Let's create a new journey by clicking the **Create** button.
+In the left menu, click **Messages**. 
 
-![ACOP](./images/create.png)
+On the Messages screen, you’ll see a view similar to this. Click **Create Message**.
 
-You'll then see an empty Journey screen.
+![Journey Optimizer](./images/msg1.png)
 
-![ACOP](./images/journeyempty.png)
+Give your Message a title following this naming convention **ldap - Registration Email** and replace **ldap** by your own ldap, select the **CJM Alpha Preset** and enable the **Email** channel. 
 
-In the previous exercise, you created a new **Event**. You named it like this `ldapAccountCreationEvent` and replaced `ldap` with your ldap. This was the result of the Event creation:
+![Journey Optimizer](./images/msg2.png)
 
-![ACOP](./images/eventdone.png)
+Click on the **Create** button to create your Registration Email message.
 
-You now need to take this event as the start of this Journey. You can do this by going to the left side of your screen and searching for your event in the list of events.
+The next screen is the message dashboard, from there you will be able to see the email thumbnail when the content will be provided.
 
-![ACOP](./images/eventlist.png)
+![Journey Optimizer](./images/msg3.png)
 
-Select your event, drag and drop it on the Journey  canvas. Your Journey now looks like this:
+On the right-hand side are the Email properties:
 
-![ACOP](./images/journeyevent.png)
+- **From email**: the email address from whom the recipient will receive email message. Note that this value is specified by the **preset** given in the previous step and is read-only.
+- **From name**: the sender name  from whom the recipient will receive email message. Note that this value is specified by the **preset** given in the previous step and is read-only.
+- **Subject line**: the mandatory subject of the message which will be edited in the next step. 
+- **Body**: a button brings you to the Email Designer to create and edit the email content.
+- **Optional features**: these two checkboxes allow to disable the tracking of the email's opens and email's clicks and therefore, prevent the message from measuring metrics like open rate, click-through rate,...
 
-As the second step in the journey, you need to add a short **Wait** step. Go to the left side of your screen to the **Orchestration** section to find this. You'll be using profile attributes and need to make sure they are populated into the Real-time Customer Profile.
+First, make sure that the 2 checkboxes under **Optional features** are checked. If not, please **make sure they are both activated**. 
 
-![ACOP](./images/journeywait.png)
+![Journey Optimizer](./images/msg4.png)
 
-Your journey now looks like this:
+Click the **Subject line** text field.
 
-![ACOP](./images/journeywait1.png)
+![Journey Optimizer](./images/msg5.png)
 
-On the right side of the screen you need to configure the wait time. Set it to 10 seconds. This will give plenty of time for the profile attributes to be available after the event fires.
+In the text area start writing **Hi**
 
-![ACOP](./images/journeywait2.png)
+![Journey Optimizer](./images/msg6.png)
 
-Click **Ok** to save your changes.
+The subject line is not done yet. Next you need to bring in the personalization token for the field **First name** which is stored under `profile.person.name.firstName`. In the left menu, scroll down to find the **Person** element and click on the arrow to go a level deeper.
 
-As the third step in the journey, you need to add an **Email** action. Go to the left side of your screen to **Actions**, select the **Email** action, then drag and drop it on the second node in your journey.
+![Journey Optimizer](./images/msg7.png)
 
-![ACOP](./images/journeyactions.png)
+Now find the **Full name** element and click on the arrow to go a level deeper.
 
-On the right side of your screen, you now need to configure the email.
+![Journey Optimizer](./images/msg8.png)
 
-![ACOP](./images/emptymsg.png)
+Finally, find the **First name** field and click on the **+** sign next to it. You'll then see the personalization token appear in the text field.
 
-Go to **Message** and open the dropdown list. In that list, you need to select the template with the name **Thanks for Signing Up**.
+![Journey Optimizer](./images/msg9.png)
 
-![ACOP](./images/emailmsglist.png)
+Next, add the text **, thank you for signing up!**. Click **Save**.
 
-Selecting this message automatically opens up a number of additional fields. These are the fields that. have been configured to be dynamic field in the email template. You now need to link each of the expected dynamic fields to a field coming from the Payload that is sent to Platform.
+![Journey Optimizer](./images/msg10.png)
 
-![ACOP](./images/emailpersdata.png)
+You'll then be back here. Click **Email Designer** to create the email's content. 
 
-Let's start with the **Email** field.
+![Journey Optimizer](./images/msg11.png)
 
-Click on the **Edit** icon.
+In the next screen you will be prompted with 3 different methods to provide the email's content:
 
-![ACOP](./images/msgemail.png)
+- **Design from scratch**: Start with a blank canvas and use the WYSIWYG-editor to drag and drop structure and content components to visually build up the email's content.
+- **Code your own**: Create your own email template by coding it using HTML
+- **Import HTML**: Import an existing HTML template, which you'll be able to edit.
 
-You'll then see a window to select a source field to use as Email Source.
+Click **Design from scratch**.
 
-![ACOP](./images/emptylink.png)
+![Journey Optimizer](./images/msg12.png)
 
-Click on the **vangeluwAccountCreationEvent** data source.
+In the left menu, you'll find the structure components that you can use to define the structure of the email (rows and columns).
 
-![ACOP](./images/eventnode.png)
+![Journey Optimizer](./images/msg13.png)
 
-Navigate to `vangeluwAccountCreationEvent.--aepTenantId--.identification.core.email` and select it.
+Drag and drop a **1:2 column Left** from the menu into the canvas. This will be the placeholder for the logo image.
 
-![ACOP](./images/srcemail.png)
+![Journey Optimizer](./images/msg14.png)
 
-Click **OK** to save your configuration.
+Drag and drop a **1:1 column** underneath the previous component. This will be the banner block.
 
-Next, let's configure the Brand Logo field. This field has to be configured as you'll be doing many personalized demo's in the future and you probably want those emails to also reference the same brand logo as what is used on the website, mobile app and Alexa. This is where you can make that happen.
+![Journey Optimizer](./images/msg15.png)
 
-Click on the **Edit** icon.
+Drag and drop a **1:2 column Left** underneath the previous component. This will be the actual content with an image on the left side and text on the right side.
 
-![ACOP](./images/msgbrandlogo.png)
+![Journey Optimizer](./images/msg16.png)
 
-Click on the name of the event you created to open it.
+Next, drag and drop a **1:1 column** underneath the previous component. This will be email's footer. Your canvas should now look like this:
 
-![ACOP](./images/eventnode.png)
+![Journey Optimizer](./images/msg17.png)
 
-Navigate to `vangeluwAccountCreationEvent.--aepTenantId--.demoEnvironment.brandLogo` and select it.
+Next, let's use Content Components to add content inside these blocks. Click on the **Content Components** menu item
 
-![ACOP](./images/srclogo.png)
+![Journey Optimizer](./images/msg18.png)
 
-Click **OK** to save your configuration.
+Drag and drop an **HTML** component in the first cell on the first row. 
 
-Next, let's configure the Brand Name field. This field has to be configured as you'll be doing many personalized demos in the future and you probably want those emails to also reference the same Brand Name as that used on the website, mobile app and Alexa. This is where you can make that happen.
+![Journey Optimizer](./images/msg19.png)
 
-Click on the **Edit** icon.
+Click the HTML component and then click **Show the source code**.
 
-![ACOP](./images/msgbrandname.png)
+![Journey Optimizer](./images/msg20.png)
 
-Click on the name of the event you created to open it.
+You'll then see this:
 
-![ACOP](./images/eventnode.png)
+![Journey Optimizer](./images/msg21.png)
 
-Navigate to `vangeluwAccountCreationEvent.--aepTenantId--.demoEnvironment.brandName` and click it.
+Paste this code there: `<img src="{%=  %}" width="100px%">`.
 
-![ACOP](./images/srcbrandname.png)
+![Journey Optimizer](./images/msg22.png)
 
-Click **OK** to save your configuration.
+Then put the cursor, as indicated in the screenshot:
 
-Next, let's configure the First Name field. Personalization requires the usage of First Name.  In this case we will pull these from the profile that has been created in Adobe Experience Platform as part of the registration process.
+![Journey Optimizer](./images/msg23.png)
 
-Click on the **Edit** icon.
+Next, navigate to the field `--aepTenantId--.demoEnvironment.brandLogo`. Click the **+** icon to insert the personalization token. Next, click **Save**.
 
-![ACOP](./images/msgfn.png)
+![Journey Optimizer](./images/msg24.png)
 
-Navigate to `ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName` and click it.
+You've now configured this HTML component to dynamically take the image URL from a field within Adobe Experience Platform's Real-time Customer Profile.
 
-![ACOP](./images/srcfn.png)
+You're now back here:
 
-Click **OK** to save your configuration.
+![Journey Optimizer](./images/msg25.png)
 
-Next, let's configure the Last Name field. Personalization may also require the usage of Last Name.
+Go to **Content Components** and drag and drop an **Image** component in the first cell on the first row. 
 
-Click on the **Edit** icon.
+![Journey Optimizer](./images/msg26.png)
 
-![ACOP](./images/msgln.png)
+Click **Browse**.
 
-Navigate to `ExperiencePlatform.ProfileFieldGroup.profile.person.name.lastName` and click it.
+![Journey Optimizer](./images/msg27.png)
 
-![ACOP](./images/srcln.png)
+In the **Assets** pop-up, double-click the **module-23** folder. In this folder, you'll find all assets previously prepared and uploaded by the creative team.
 
-Click **OK** to save your configuration.
+![Journey Optimizer](./images/msg28.png)
 
-Your configuration now looks like this.
+Select **module23-thankyou-new.png** and click **Select**. 
 
-![ACOP](./images/srcoverview.png)
+![Journey Optimizer](./images/msg29.png)
 
-Click **OK** again to save your configuration.
+You'll then have this:
 
-![ACOP](./images/ok.png)
+![Journey Optimizer](./images/msg30.png)
 
-For this exercise, our Journey is fine like it is now.
+Select your image and in the right menu, scroll down until you see the **Size** width slider component.
 
-Let's add an Orchestration Event to **End** the Journey. In the left side of the screen, go to **Orchestration** and select **End**. Drag and Drop this onto the 3rd step of the Journey.
+![Journey Optimizer](./images/msg31.png)
 
-![ACOP](./images/orch.png)
+Use the slider to change the width to f.i. **60%**.
 
-You still need to give your Journey a Name. You can do that by clicking the **Edit** icon in the top right side of your screen.
+![Journey Optimizer](./images/msg32.png)
 
-![ACOP](./images/journeyname.png)
+Next, go to **Content Components** and drag and drop a **Text** component in the structure component on the fourth row. 
 
-You can then enter the Journey's name here. Please use `ldap - Account Creation Journey` as a naming convention and replace `ldap` with your LDAP.
-  
-![ACOP](./images/journeyname1.png)
+![Journey Optimizer](./images/msg33.png)
 
-Click **OK** to save your changes.
+Select the default text **Please type your text here.** as you would do with any text editor. Write **Dear** instead. Notice the text toolbar displayed when you are in text mode.
 
-![ACOP](./images/ok.png)
+![Journey Optimizer](./images/msg34.png)
 
-You now see this in the top of your screen.
+In the toolbar click the **Add personalization** icon.
 
-![ACOP](./images/journeyname2.png)
+![Journey Optimizer](./images/msg35.png)
 
-You can now publish your journey by clicking **Publish**.
+Next, you need to bring the **First name** personalization token which is stored under `profile.person.name.firstName`. In the menu, find the **Person** element, drill down to the **Full Name** element, and then click the **+** icon to add the First Name field onto to expression editor.
 
-![ACOP](./images/publish.png)
+Click **Save**.
+
+![Journey Optimizer](./images/msg36.png)
+
+You'll now notice how the personalization field has been added to your text. 
+
+![Journey Optimizer](./images/msg37.png)
+
+In the same text field, hit **Enter** twice to add two lines and write **Thank you for signing up for**.
+
+![Journey Optimizer](./images/msg38.png)
+
+Click **Add personalization** again.
+
+![Journey Optimizer](./images/msg39.png)
+
+Next, you need to bring in the **Brand Name** personalization token which is stored under `--aepTenantId--.demoEnvironment.brandName`. In the left hand-side list find the `--aepTenantId--` element and click on the arrow to go a level deeper.
+
+![Journey Optimizer](./images/msg40.png)
+
+Next, find the **demoEnvironment** element and click the arrow to go a level deeper.
+
+![Journey Optimizer](./images/msg41.png)
+
+Finally, find the field **brandName** and click on the **+** sign next to it. You'll then see the personalization token appear in the text field. Click **Save**.
+
+![Journey Optimizer](./images/msg42.png)
+
+You'll now notice how the personalization field has been added to your text. 
+
+![Journey Optimizer](./images/msg43.png)
+
+In the left menu, go back to **Structure Components**.
+
+Drag and drop a **1:1 column** underneath the previous component. This will be the banner block.
+
+![Journey Optimizer](./images/msg44.png)
+
+Next, go to **Content Components** and drag and drop a **Text** component in the fifth row.
+
+![Journey Optimizer](./images/msg45.png)
+
+Replace the default text by **Not interested anymore? Unsubscribe instantly.**
+
+![Journey Optimizer](./images/msg46.png)
+
+Now select the word **Unsubscribe** and click on the **Insert link** icon in the toolbar.
+
+![Journey Optimizer](./images/msg47.png)
+
+In the Link type dropdown select **Unsubscription link** and put the following url inside the Unsubscription page URL textfield **https://public.aepdemo.net/unsubscribe.html**. Click **Save**.
+
+![Journey Optimizer](./images/msg48.png)
+
+The registration confirmation email now has content. For deliverability (best practices around email sending to ensure they land in the recipient's mailbox instead of the Spam folder) purposes it is also important that this email has a text version.
+
+Click the **Plain text** button at the top of the Email Designer to see how Journey Optimizer has automatically synchronized the HTML with the text version, so you don't have to write the text one more time.
+
+![Journey Optimizer](./images/msg49.png)
+
+The final check to perform to ensure your email is ready is to preview it, click on the **Preview** button.
+
+![Journey Optimizer](./images/msg50.png)
+
+Start by identifying which profile you want to use for the preview. Select the **email** namespace by clicking on the icon next to **Enter identity namespace** field.
+
+![Journey Optimizer](./images/msg51.png)
+
+In the list of identity namespaces, select the **Email** namespace. Click **Select**.
+
+![Journey Optimizer](./images/msg52.png)
+
+In the **Identity value** field, enter the email address of a previous demo profile that is already stored in the Real-time Customer Profile. For example **woutervangeluwe+31052021-10@gmail.com** and click on the **Find Test Profile** button
+
+![Journey Optimizer](./images/msg53.png)
+
+Once your profile shows up in the table, click on the **Preview** tab to access the preview screen.
+
+When the preview is ready, validate that the personalization is correct in the subject line, the body text as well as the unsubscription link is highlighted as an hyperlink.
+
+Click **Close** to close the preview.
+
+![Journey Optimizer](./images/msg54.png)
+
+Click **Save** to save your message.
+
+![Journey Optimizer](./images/msg55.png)
+
+Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
+
+![Journey Optimizer](./images/msg56.png)
+
+You've now completed the draft version of your registration email. Click **Publish** to publish your message so you can use it in a journey.
+
+![Journey Optimizer](./images/msg57.png)
 
 Click **Publish** again.
 
-![ACOP](./images/publish1.png)
+![Journey Optimizer](./images/msg58.png)
 
-You'll then see a green confirmation bar saying that your Journey is now Published.
+Wait until you see a green confirmation pop-up at the bottom of the screen indicating that the message is published. 
 
-![ACOP](./images/published.png)
+![Journey Optimizer](./images/msg59.png)
 
-You've now finished this exercise.
+You have finished this exercise.
 
-Next Step: [6.3 Update your Configuration ID and Test your Journey](./ex3.md)
+Next Step: [6.3 Journey Optimizer: Setup Journey](./ex3.md)
 
 [Go Back to Module 6](./journey-orchestration-create-account.md)
 

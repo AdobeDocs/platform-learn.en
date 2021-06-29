@@ -44,12 +44,11 @@ In the popup, click **No, continue signing up**.
 
 ![Sign in](./images/signinno.png)
 
-You'll then see this:
+You'll then see this. Enter your email address and click **Next**.
 
 ![Sign in](./images/signinno-01.png)
 
-Enter your email address and click **Next**. If you already have already created a Microsoft Account, select the option to **Create a New Account**.
-
+If you already have already created a Microsoft Account, select the option to **Create a New Account**.
 
 ![Sign in](./images/signinno-02.png)
 
@@ -75,9 +74,9 @@ For the domain, follow this naming convention:
 
 Replace **ldap** by your ldap.
 
-Replace X by a number. For instance, 1312.
+Replace X by a number. For instance, 101.
 
-In this example, the custom domain has been named: **demosystemjoconnor1312**. 
+In this example, the custom domain has been named: **demosystemvangeluw101**. 
 
 ![Sign in](./images/signinno-05b.png)
 
@@ -97,11 +96,11 @@ Wait for a couple of minutes without refreshing or closing the window until you 
 
 Store the user id in a text file on your computer for future reference as you'll need this in future exercises.
 
-**Note** You will receive an email with details of your trial subscription, including your custom domain and user ID. You should keep this mail, or make sure that you record the domain information for use later in this exercise.
+**Note:** You will receive an email with details of your trial subscription, including your custom domain and user ID. You should keep this mail, or make sure that you record the domain information for use later in this exercise.
 
 ![Sign in](./images/signinno-07a.png)
 
-Back in the browser, click **Go to Setup**.
+Back in the browser, click **Get Started**.
 
 You may be asked to sign-in. If you need to sign in, make sure to use the User ID you received by email.
 
@@ -112,7 +111,7 @@ You will be brought to the Power platform admin center where you can see the env
 You now need to create your Microsoft Dynamics Environment that will be used in this exercise. 
 In the right hand side enter the New environment settings.
 
-For the name custom domain that you created earlier - in this case **demosystemjoconnor1312**.
+For the name, use the same name as before, in this case: **demosystemvangeluw101**.
 
 ![Sign in](./images/signinno-08a.png)
 
@@ -120,9 +119,9 @@ Leave the other settings as the defaults and click **Next**.
 
 You can now choose your database settings. 
 
-For the URL again use the custom domain you created earlier - in this case **demosystemjoconnor1312**. Note the whole URL **demosystemjoconnor1312.crm4.dynamics.com** as this is how you will access Microsoft Dynamics.
+For the URL again use the custom domain you created earlier - in this case **demosystemvangeluw101**. Note the whole URL **demosystemvangeluw101.crm4.dynamics.com** as this is how you will access Microsoft Dynamics.
 
-Select **Sales Pro** from the list under **Automatically deploy these apps**.
+Enable the toggle for **Enable Dynamics 365 apps** and select **All enterprise applications** from the list under **Automatically deploy these apps**.
 
 ![Sign in](./images/signinno-08b.png)
 
@@ -130,7 +129,7 @@ Click **Save**. Your account is then being set up. This may take a 3-4 minutes. 
 
 ![Sign in](./images/signinno-08c.png)
 
-If you click on this environment, you are brought to a screen with all your environment details.
+When the status changes to **Ready**, click the name of your environment after which you are brought to a screen with all your environment details.
 
 ![Sign in](./images/signinno-08d.png)
 
@@ -245,7 +244,7 @@ You now need to add the Microsoft Dynamics 365 Export Data. Click **Add a permis
 
 ![Create Azure App](./images/app-Auth-06b.png)
 
-The **Request API permissions** panel will appear on the right. Click **Data Export Service for Microsoft Dynamics 365**.
+The **Request API permissions** panel will appear on the right again. Click **Data Export Service for Microsoft Dynamics 365**.
 
 ![Create Azure App](./images/app-Auth-07b.png)
 
@@ -282,7 +281,7 @@ Click **New client secret**.
 
 ![Create Azure App](./images/app-Auth-cs1.png)
 
-Add a description of **Demo System Integration**, and have it never expire.
+Add a description of **Demo System Integration**, and set the field **Expires** to 24 months.
 
 ![Create Azure App](./images/app-Auth-cs2.png)
 
@@ -327,13 +326,13 @@ Where to find these variables?
 
 - **NAME**
 
-  Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://demosystemjoconnor1312.crm4.dynamics.com**. In this case, the field **NAME** is equal to **demosystemjoconnor1312**.
+  Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://demosystemvangeluw101.crm4.dynamics.com**. In this case, the field **NAME** is equal to **demosystemvangeluw101**.
   
   ![Create Azure App](./images/durl.png)
 
 - **REGION**
 
-  Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://demosystemjoconnor1312.crm4.dynamics.com**. In this case, the field **REGION** is equal to **crm4**.
+  Have a look at the URL of your Microsoft Dynamics 365 homepage. In this example, the URL is **https://demosystemvangeluw101.crm4.dynamics.com**. In this case, the field **REGION** is equal to **crm4**.
   
   ![Create Azure App](./images/durl.png)
 

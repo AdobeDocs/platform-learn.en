@@ -1,13 +1,13 @@
 ---
-title: Foundation - Real-time Customer Profile - See you Real-time Customer Profile in action in the Call Center
-description: Foundation - Real-time Customer Profile - See you Real-time Customer Profile in action in the Call Center
+title: See your Real-time Customer Profile in action in the Call Center
+description: See your Real-time Customer Profile in action in the Call Center
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: eecc8f26-e90c-4a04-8f65-6760bac8a742
 ---
-# 3.6 - See you Real-time Customer Profile in action in the Call Center
+# 3.6 See your Real-time Customer Profile in action in the Call Center
 
 In this exercise, you'll follow a script and complete some tasks on the website.
  

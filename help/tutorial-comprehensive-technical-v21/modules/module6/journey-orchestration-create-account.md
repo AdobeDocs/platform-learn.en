@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: 25a16d70-1ff7-48e5-85b9-764e2bfc032a
 ---
-# 6. Journey Orchestration
+# 6. Adobe Journey Optimizer: Orchestration
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
@@ -16,13 +16,12 @@ In this module, we will take you through the steps to use Journey Orchestration.
 ## Learning Objectives
 
 - Learn how to configure Journey Orchestration events, journeys and actions
-- Learn how to create your own transactional message template in Adobe Campaign Standard
+- Learn how to create your own email message using Adobe Journey Optimizer
 
 ## Prerequisites
 
 - Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
-- Access to Adobe Campaign Standard
-- Access to Journey Orchestration
+- Access to Adobe Journey Optimizer
 
 >[!IMPORTANT]
 >
@@ -44,15 +43,19 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 ## Exercises
 
-[6.1 Journey Orchestration: Setup Event](./ex1.md)
+[6.1 Create your event](./ex1.md)
 
-This will guide you through the configuration of an event.
+In this exercise, you'll learn how to configure an event.
 
-[6.2 Journey Orchestration: Setup Journey](./ex2.md)
+[6.2 Create your email message](./ex2.md)
 
-This will guide you through the configuration of an Journey and how to link your event to that Journey.
+In this exercise, you'll learn how to configure an email message.
 
-[6.3 Update your Configuration ID and Test your Journey](./ex3.md)
+[6.3 Create your journey](./ex3.md)
+
+In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
+
+[6.4 Update your Configuration ID and Test your Journey](./ex4.md)
 
 This will guide you through the configuration of Launch to trigger your event and provide the right payload and finally, you'll be able to send yourself an email.
 
