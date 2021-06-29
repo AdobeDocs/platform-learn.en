@@ -1,6 +1,6 @@
 ---
-title: Journey Orchestration
-description: Journey Orchestration
+title: Adobe Journey Optimizer
+description: Adobe Journey Optimizer
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer
 doc-type: tutorial
@@ -11,11 +11,11 @@ exl-id: 25a16d70-1ff7-48e5-85b9-764e2bfc032a
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In this module, we will take you through the steps to use Journey Orchestration. You'll get access to Journey Orchestration and will be able to configure Events and Journeys that start based on a trigger from an experience event sent to Platform.
+In this module, we will take you through the steps to use Adobe Journey Optimizer. You'll get access to Adobe Journey Optimizer and will be able to configure Events and Journeys that start based on a trigger from an experience event sent to Platform.
 
 ## Learning Objectives
 
-- Learn how to configure Journey Orchestration events, journeys and actions
+- Learn how to configure Adobe Journey Optimizer events, journeys and actions
 - Learn how to create your own email message using Adobe Journey Optimizer
 
 ## Prerequisites

@@ -162,7 +162,7 @@ doc-type: tutorial
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module17/adobe-experience-platform-microsoft-dynamics-365.md)
   + [17.1 Create your Microsoft Dynamics 365 account](/help/tutorial-comprehensive-technical-v21/modules/module17/ex1.md)
   + [17.2 Connect Microsoft Dynamics 365 to Adobe Experience Platform via a Source Connector](/help/tutorial-comprehensive-technical-v21/modules/module17/ex2.md)
-  + [17.3 Create a Contact in Microsoft Dynamics 365 using Journey Orchestration & Import data from Microsoft Dynamics](/help/tutorial-comprehensive-technical-v21/modules/module17/ex3.md)
+  + [17.3 Create a Contact in Microsoft Dynamics 365 using Adobe Journey Optimizer & Import data from Microsoft Dynamics](/help/tutorial-comprehensive-technical-v21/modules/module17/ex3.md)
   + [17.4 Update a contact in Microsoft Dynamics 365 and automatically trigger a journey](/help/tutorial-comprehensive-technical-v21/modules/module17/ex4.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module17/summary.md)
 + 18 - Segment Activation to Microsoft Azure Event Hub {#module18}

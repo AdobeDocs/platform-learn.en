@@ -27,15 +27,15 @@ You'll be taken to the **Create a new Configuration ID** page.
 
 ![DSN](./images/cfg4.png)
 
-All default variables are already filled out for you. The first thing to do is to add the Launch tags for your desktop and mobile app Launch properties.
+All default variables are already filled out for you. The first thing to do is to add the Data Collection tags for your desktop and mobile app Data Collection properties.
 
 ![DSN](./images/cfg5.png)
 
-You can find the tags for your Launch properties here:
+You can find the tags for your Data Collection properties here:
 
 ## Web
 
-Go to [http://launch.adobe.com/](http://launch.adobe.com/), click **Client** and search for your properties with the search term **ldap - Demo System**. Open your **Web** property.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), click **Tags** and search for your properties with the search term **ldap - Demo System**. Open your **Web** property.
 
 ![DSN](./images/l1.png)
 
@@ -64,7 +64,7 @@ Paste this value in the **Create New Configuration ID** screen, in the field **L
 
 ## Mobile 
 
-Go to [http://launch.adobe.com/](http://launch.adobe.com/) and search for your properties with the search term **ldap - AEP Demo**. Open your **Mobile** property.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and search for your properties with the search term **ldap - AEP Demo**. Open your **Mobile** property.
 
 ![DSN](./images/l1.png)
 
@@ -106,3 +106,4 @@ Next Step: [0.4 Use the website](./ex4.md)
 [Go Back to Module 0](./getting-started.md)
 
 [Go Back to All Modules](./../../overview.md)
+https://experience.adobe.com/#/data-collection/
