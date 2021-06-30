@@ -245,11 +245,11 @@ As part of this module you will also get an understanding of what triggers Real-
 - **Description:** In this module, you'll build your own chatbot using Stackchat's AI-Driven Chat Apps & Live Chat
 - **Time Investment:** 120 minutes
 
-[21. Data Collection & Real-time Server Side Forwarding with Adobe Experience Platform Data Collection](./modules/module21/aep-data-collection-ssf.md)
+[21. Data Collection & Real-time Event Forwarding with Adobe Experience Platform Data Collection](./modules/module21/aep-data-collection-ssf.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
-- **Prerequisites:** Access to Adobe Experience Platform Data Collection, Client and Server properties
-- **Description:** In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection Client property to collect data, and then forward that data server-side to an endpoint of choice.
+- **Prerequisites:** Access to Adobe Experience Platform Data Collection, Tags and Event Forwarding properties
+- **Description:** In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection property to collect data, and then forward that data server-side to an endpoint of choice.
 - **Time Investment:** 90 minutes
 
 [22. Build your own real-time dashboard using Adobe I/O - Project Firefly and Adobe Experience Platform](./modules/module22/adobe-io-firefly.md)
