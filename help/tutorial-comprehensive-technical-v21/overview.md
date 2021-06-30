@@ -49,7 +49,7 @@ After completing this tutorial, you will be able to:
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Data Collection: [https://launch.adobe.com](https://launch.adobe.com)
+- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Access to the demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
 
 >[!IMPORTANT]

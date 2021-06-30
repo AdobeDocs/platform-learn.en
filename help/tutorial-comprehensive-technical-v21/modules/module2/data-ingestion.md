@@ -25,7 +25,7 @@ In this module, the goal is to learn all about data ingestion. You'll learn abou
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Launch: [https://launch.adobe.com](https://launch.adobe.com)
+- Access to Adobe Experience Platform Launch: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Access to [https://public.aepdemo.net](https://public.aepdemo.net)
 - Access to Postman
 

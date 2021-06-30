@@ -29,7 +29,7 @@ Now that all Adobe Experience Platform segments are available in the Adobe Exper
 
 >[!IMPORTANT]
 >
->Before you configure your Adobe Target activity, you need to ensure that the Adobe Target library is being loaded on the website. To do that, go to [http://launch.adobe.com/](http://launch.adobe.com/) and verify that your Edge Configuration is loading Adobe Target.
+>Before you configure your Adobe Target activity, you need to ensure that the Adobe Target library is being loaded on the website. To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and verify that your Edge Configuration is loading Adobe Target.
 
 Let's go back to the Adobe Experience Cloud homepage by going to [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
 

@@ -25,7 +25,7 @@ We need to figure out the webhook we can connect streaming events from the EXP N
 
 We will now set up the server side forwarding for our Project Firefly EXP News Firefly dashboard app using the webhook we discovered in the previous exercise.
 
-Go to [https://launch.adobe.com](https://launch.adobe.com). Ensure you are in the correct organization, verify that in the upper right corner: `--envName--`. 
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Ensure you are in the correct organization, verify that in the upper right corner: `--envName--`. 
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 

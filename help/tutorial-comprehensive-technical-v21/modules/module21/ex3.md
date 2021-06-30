@@ -21,7 +21,7 @@ This website has now created this webhook for you, and you'll be able to configu
 
 ## 21.3.2 Update your Adobe Experience Platform Data Collection Server property: Create a Data Element
 
-Go to [https://launch.adobe.com](https://launch.adobe.com).
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 

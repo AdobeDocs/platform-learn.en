@@ -177,7 +177,7 @@ Let's go to Adobe Experience Platform Data Collection Server now, to configure t
 
 ## 21.4.2 Update your Adobe Experience Platform Data Collection Server property: Data Elements
 
-Go to [https://launch.adobe.com](https://launch.adobe.com).
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 

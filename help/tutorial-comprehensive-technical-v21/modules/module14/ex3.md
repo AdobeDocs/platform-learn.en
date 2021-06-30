@@ -19,7 +19,7 @@ In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICO
 
 In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with **[!DNL Offer Decisioning]**.
 
-To do that, go to [https://launch.adobe.com/](https://launch.adobe.com/). You'll then see this. Click **[!UICONTROL Datastreams]**. Search for your **[!UICONTROL Datastream]**. Click your **[!UICONTROL Datastream]** to open it. 
+To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). You'll then see this. Click **[!UICONTROL Datastreams]**. Search for your **[!UICONTROL Datastream]**. Click your **[!UICONTROL Datastream]** to open it. 
 
 ![WebSDK](./images/websdk1.png)
 
@@ -67,7 +67,7 @@ Your **[!UICONTROL Datastream]** is now ready to work with **[!DNL Offer Decisio
 
 ## 14.3.2 Configure your Adobe Experience Platform Data Collection Client property to request Personalized Offers
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Client]**. Search for your Adobe Experience Platform Data Collection Client properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Adobe Experience Platform Data Collection Client property for web.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), to **[!UICONTROL Client]**. Search for your Adobe Experience Platform Data Collection Client properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Adobe Experience Platform Data Collection Client property for web.
 
 ![WebSDK](./images/launch1.png)
 
@@ -167,7 +167,7 @@ Every time you're loading a **General Page** now, like for instance the homepage
 
 ## 14.3.3 Configure your Adobe Experience Platform Data Collection Client property to receive and apply Personalized Offers
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/), to **[!UICONTROL Properties]**. Search for your Adobe Experience Platform Data Collection Client properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Adobe Experience Platform Data Collection Client property for web.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), to **[!UICONTROL Properties]**. Search for your Adobe Experience Platform Data Collection Client properties, which are named **ldap - Demo System (DD/MM/YYYY)**. Open your Adobe Experience Platform Data Collection Client property for web.
 
 ![WebSDK](./images/launch1.png)
 

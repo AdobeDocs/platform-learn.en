@@ -27,7 +27,7 @@ Let's start by creating the Adobe Experience Platform Data Collection Server pro
 
 ## 21.1.2 Create a Adobe Experience Platform Data Collection Server property
 
-Go to [https://launch.adobe.com](https://launch.adobe.com). In the left menu, click **Server**.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). In the left menu, click **Server**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 

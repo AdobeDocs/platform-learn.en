@@ -463,7 +463,7 @@ Your journey is now published and can be triggered. Before you can trigger it th
 
 ## 23.3.5 Update your Adobe Experience Platform Data Collection Client property
 
-Go to [https://launch.adobe.com](https://launch.adobe.com). In the left menu, make sure you're in **Client**. Search for your Client properties, and open the property for **Web**.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). In the left menu, make sure you're in **Client**. Search for your Client properties, and open the property for **Web**.
 
 ![Journey Optimizer](./images/oc90.png)
 
