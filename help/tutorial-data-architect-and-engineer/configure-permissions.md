@@ -53,9 +53,9 @@ To create the product profile:
 1. Log into the [Adobe Admin Console](https://adminconsole.adobe.com)
 1. Select **[!UICONTROL Products]** on the top navigation
 1. Select **[!UICONTROL Adobe Experience Platform]** on the left navigation (you may need to expand the **[!UICONTROL Experience Cloud]** section)
-1. You may have several profiles in your Experience Platform instance already. Click the **[!UICONTROL New Profile]** button to add another
-    ![Click Add New Profile](assets/adminconsole-newProfile.png)
-1. Name the profile `Luma Tutorial Platform` (add the tutorial taker's name to the end, if multiple people from your company are taking this tutorial) and click the **[!UICONTROL Next]** button
+1. You may have several profiles in your Experience Platform instance already. Select the **[!UICONTROL New Profile]** button to add another
+    ![Select Add New Profile](assets/adminconsole-newProfile.png)
+1. Name the profile `Luma Tutorial Platform` (add the tutorial taker's name to the end, if multiple people from your company are taking this tutorial) and select the **[!UICONTROL Next]** button
     ![Name the profile Luma Tutorial Platform](assets/adminconsole-nameProfile.png)
 1. Depending on the details of your product license, you may or may not see this second **[!UICONTROL Services]** screen. We will not be using any of these services in this tutorial, so uncheck **[!UICONTROL Enable all services]** to *remove* all services and select **[!UICONTROL Save]**.
     ![Disable services](assets/adminconsole-createProfile-services.png)
@@ -68,11 +68,11 @@ Now, add the tutorial participant as an admin of the newly created product profi
 
 1. Select the **[!UICONTROL Admins]** tab and then select the **[!UICONTROL Add Admin]** button:
 
-    ![Go to the Admins tab and click Add Admin](assets/adminconsole-addAdmin.png)
+    ![Go to the Admins tab and select Add Admin](assets/adminconsole-addAdmin.png)
 
 1. Complete the workflow to add the tutorial participant as an admin.
 
-After completing these steps you should see that the `Luma Tutorial Platform` profile is set up with one admin.
+After completing these steps, you should see that the `Luma Tutorial Platform` profile is set up with one admin.
 ![Platform profile created](assets/adminconsole-platform-profileCreated.png)
 
 ## Configure Experience Platform product profile
@@ -99,7 +99,7 @@ At this point, if `Luma Tutorial Platform` was your _only_ Experience Platform p
 
 1. Go to the **[!UICONTROL Users]** tab
 1. Select the **[!UICONTROL Add User]** button
-    ![Click Add User](assets/adminconsole-addUser.png)
+    ![Select Add User](assets/adminconsole-addUser.png)
 1. Complete the workflow to add yourself as a user to the product profile
 
 ### Add yourself as a developer
@@ -108,7 +108,7 @@ In order to use the Platform API, add yourself as a developer:
 
 1. Go to the **[!UICONTROL Developers]** tab
 1. Select the **[!UICONTROL Add Developer]** button
-    ![Click Add User](assets/adminconsole-addDeveloper.png)
+    ![Select Add User](assets/adminconsole-addDeveloper.png)
 1. Complete the workflow to add yourself as a developer to the product profile
 
 ## Create a Launch product profile (requires a system administrator or product admin)
@@ -156,7 +156,7 @@ Now you will add the individual permission items to the profile:
     ![Remove properties](assets/adminconsole-launch-addPropertyRights.png)
 1. Open **[!UICONTROL Company Rights]** 
 1. Add **[!UICONTROL Manage Properties]**
-1. Click **[!UICONTROL Save]**
+1. Select **[!UICONTROL Save]**
     ![Remove properties](assets/adminconsole-launch-companyRights.png)
 
 
@@ -166,7 +166,7 @@ Now add yourself as a user to the Launch profile:
 
 1. Go to the **[!UICONTROL Users]** tab
 1. Select the **[!UICONTROL Add User]** button
-    ![Click Add User](assets/adminconsole-launch-addUser.png)
+    ![Select Add User](assets/adminconsole-launch-addUser.png)
 1. Complete the workflow to add yourself as a user to the product profile
 
 You will not need to add yourself as a Developer for Launch.
