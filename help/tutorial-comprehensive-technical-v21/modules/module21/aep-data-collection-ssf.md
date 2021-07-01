@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: dc49f49e-d410-49cf-8d0c-bef252260032
 ---
-# 21. Data Collection & Real-time Server Side Forwarding with Adobe Experience Platform Data Collection
+# 21. Data Collection & Real-time Event Forwarding with Adobe Experience Platform Data Collection
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
@@ -55,9 +55,9 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 ## Exercises
 
-[21.1 Create an Adobe Experience Platform Data Collection Server property](./ex1.md)
+[21.1 Create an Adobe Experience Platform Data Collection Event Forwarding property](./ex1.md)
 
-In this exercise, you'll create your Adobe Experience Platform Data Collection Server property.
+In this exercise, you'll create your Adobe Experience Platform Data Collection Event Forwarding property.
 
 [21.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property](./ex2.md)
 

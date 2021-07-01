@@ -15,7 +15,7 @@ In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICO
 
 In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with your **[!DNL Adobe Experience Platform Data Collection Server property]**.
 
-To do that, go to [https://launch.adobe.com/](https://launch.adobe.com/). You'll then see this. In the left menu, click **[!UICONTROL Datastreams]**.
+To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). You'll then see this. In the left menu, click **[!UICONTROL Datastreams]**.
 
 ![WebSDK](./images/websdk0.png)
 

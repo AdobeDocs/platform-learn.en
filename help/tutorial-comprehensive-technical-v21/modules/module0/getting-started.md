@@ -21,7 +21,7 @@ exl-id: 8ad761de-eec7-4a3f-a366-ef71f9e1ace2
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Launch: [https://launch.adobe.com](https://launch.adobe.com)
+- Access to Adobe Experience Platform Launch: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Access to Demo System Next: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
 
 >[!IMPORTANT] 

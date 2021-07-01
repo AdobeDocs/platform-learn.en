@@ -85,7 +85,7 @@ Click **Ok** and click **Save** to close your event popup.
 
 ## 14.6.2 Update your Adobe Experience Platform Data Collection Client property - Add To Cart Rule 
 
-Go to [https://launch.adobe.com](https://launch.adobe.com) and open your web property.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and open your web property.
 
 ![ACOP](./images/atc1.png)
 

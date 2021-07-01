@@ -89,7 +89,7 @@ You can now continue setting up your Datastream and Adobe Experience Platform Da
 
 ## 23.6.3 Create Datastream for Mobile
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/). 
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
 Open the dropdown menu and click **[!UICONTROL Datastream]**.
 
@@ -132,7 +132,7 @@ Your Datastream is now ready to be used in your Adobe Experience Platform Data C
 
 ## 23.6.4 Create a new Adobe Experience Platform Data Collection Client property for Mobile
 
-Go to [https://launch.adobe.com/](https://launch.adobe.com/). After completing previous modules, you already have two Adobe Experience Platform Data Collection Client properties: one for web and one for mobile.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). After completing previous modules, you already have two Adobe Experience Platform Data Collection Client properties: one for web and one for mobile.
 
 ![DSN](./images/launchprop.png)
 

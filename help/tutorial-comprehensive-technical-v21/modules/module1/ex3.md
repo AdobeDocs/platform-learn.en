@@ -17,7 +17,7 @@ Now let's take a deeper look at the building blocks of Adobe Experience Platform
 
 An extension is a packaged set of code that extends the Adobe Experience Platform Data Collection interface and the library functionality. Adobe Experience Platform Data Collection is the platform, and extensions are like apps that run on the platform. All of the extensions used in the tutorial are created and managed by Adobe, but 3rd-parties can create their own extensions to limit the amount of custom code Adobe Experience Platform Data Collection users have to manage.
 
-Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/launch/) and click **Client**.
+Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/launch/) and select **Tags**.
 
 This is the Adobe Experience Platform Data Collection Properties page you saw before.
 
