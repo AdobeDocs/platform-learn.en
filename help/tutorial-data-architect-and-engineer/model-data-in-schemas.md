@@ -73,7 +73,7 @@ To add field groups:
 
 1. On the left side of the schema editor, in the **[!UICONTROL Field group]** section, select the **[!UICONTROL Add]** button:
    
-    ![Add Field group](assets/schemas-loyalty-addField group.png)
+    ![Add Field group](assets/schemas-loyalty-addMixin.png)
 
 1. In the **[!UICONTROL Field groups]** modal, select following field groups
    1. **[!UICONTROL Demographic Details]**
@@ -98,7 +98,7 @@ Next we must add fields that are specific to Luma's Loyalty system and which don
 1. In the **Field groups** section of the schema editor, select the **[!UICONTROL Add]** button again
 1.  Select **[!UICONTROL Create new field group]** radio button
 1.  Enter the Display name as `Luma Loyalty Field group` and select the **[!UICONTROL Add field group]** button
-    ![Add Field To Field group](assets/schemas-loyalty-addCustomField group.png)
+    ![Add Field To Field group](assets/schemas-loyalty-addCustomMixin.png)
 1.  In the **Field groups** section of the schema editor, select the name of the new field group so that the **[!UICONTROL +]** buttons appear on in the **[!UICONTROL Structure]** section
 1.  In **[!UICONTROL Structure]** section, select **[!UICONTROL +]** at top level in structure of Schema. It creates an object with your tenant id (prefixed with an underscore) and a field _'New field'_.
 
@@ -108,7 +108,7 @@ Next we must add fields that are specific to Luma's Loyalty system and which don
    1. Type: **[!UICONTROL Object]**
 1.  Select **[!UICONTROL Apply]** to add the field
 
-    ![Add Field To Field group](assets/schemas-loyalty-customField group.png)
+    ![Add Field To Field group](assets/schemas-loyalty-customMixin.png)
 
 1.  Select the newly created `loyalty` object and select **[!UICONTROL +]** button next to it to add a field within the object
 1.  Create a field with following values
@@ -282,7 +282,7 @@ Now let's add our Identity Profile Field group to the schema. Looking at the Bod
     ```
 
 1. Select **Send**
-  ![Adding the Identity Field group](assets/schemas-crm-addIdentityField group.png) 
+  ![Adding the Identity Field group](assets/schemas-crm-addIdentityMixin.png) 
 
 Verify that the field group has been added to the schema by checking the UI. For bonus points, see if you can figure out how to list the field groups in the schema using the **[!DNL Lookup a specific schema by its unique ID]** call in the [!DNL Postman] collection.
 
