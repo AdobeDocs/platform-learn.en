@@ -80,12 +80,12 @@ To add field groups:
    1. **[!UICONTROL Personal Contact Details]**
 1. You can preview the fields in the field group by selecting the icon on the right side of the row. 
 1. Select **[!UICONTROL Add field group]** to add the field groups to the schema
-    ![Add out-of-the-box field groups to loyalty schema](assets/schemas-loyalty-saveOotbField groups.png)
+    ![Add out-of-the-box field groups to loyalty schema](assets/schemas-loyalty-saveOotbMixins.png)
 
 
 Now take some time to explore the current state of the schema. These two field groups have added standard fields related to a person and their contact details. You may find these two field groups useful when you create schemas for your own company's data. Select a specific field group row or check the box next to the field group name to see how the visualization changes. 
 
-![Schema with OOTB Field group](assets/schemas-loyalty-field groups.png)
+![Schema with OOTB Field group](assets/schemas-loyalty-mixins.png)
 
 >[!NOTE]
 >
@@ -138,7 +138,7 @@ Next we must add fields that are specific to Luma's Loyalty system and which don
    
 1. Select **[!UICONTROL Save]** to save the current state of your schema, which should look like this:
 
-    ![Loyalty Field group Complete](assets/schemas-loyaltyField groupComplete.png) 
+    ![Loyalty Field group Complete](assets/schemas-loyaltyMixinComplete.png) 
 
 Now we will create another field group to contain the loyaltyId field and other identifiers which we will use in the other schemas. Since you are now familiar with how to create field groups, create one named `Luma Identity Profile Field group` with the following fields:
 
@@ -156,7 +156,7 @@ Now we will create another field group to contain the loyaltyId field and other 
       1. Type: **[!UICONTROL String]**
 
 Your new field group should look like this. Select the **[!UICONTROL Save]** button to save your schema, but leave the schema open for the next exercise. 
-    ![Loyalty Field group Complete](assets/schemas-loyalty-identityField groupComplete.png)
+    ![Loyalty Field group Complete](assets/schemas-loyalty-identityMixinComplete.png)
 
 
 ## Create a data type
@@ -255,7 +255,7 @@ Now it's time to add the field groups to the schema:
 
 1. You should get a 200 OK status for the response and the field groups should be visible as part of your schema in the UI
 
-    ![Standard field groups added](assets/schemas-crm-addField groups.png) 
+    ![Standard field groups added](assets/schemas-crm-addMixins.png) 
 
 
 ### Add custom field group
@@ -266,7 +266,7 @@ Now let's add our Identity Profile Field group to the schema. Looking at the Bod
 1. In the **Headers** tab, update the **Accept** header to `application/vnd.adobe.xed-id+json`
 1. Select the **Send** button to retrieve a list of all of the custom field groups in your account
 1. Grab the `$id` value of the `Luma Identity Profile Field group` (yours will be different from the value in this screenshot)
-  ![Retrieve the list of field groups](assets/schemas-crm-getListOfField groups.png) 
+  ![Retrieve the list of field groups](assets/schemas-crm-getListOfMixins.png) 
 1. Now Open the request **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema]** again
 1. The **Params** tab should still have the `$id` of your schema
 1. Open the **Body** tab and paste the following code, replacing the `$ref` value with the `$id` of your own `Luma Identity Profile Field group`:
