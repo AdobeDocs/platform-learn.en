@@ -15,6 +15,14 @@ exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 
 In this lesson, you will stream data into Experience Platform using the Web SDK.
 
+>[!NOTE]
+>
+>Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
+>
+> * Platform Launch (Client Side) is now **[[!DNL tags]](https://experienceleague.adobe.com/docs/launch/using/home.html)** 
+> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html)** 
+> * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
+
 There are two main tasks we must complete in the Adobe Experience Platform Launch interface:
 
 * First, we must create an Edge configuration, which tells the Adobe servers where data should go (for example, Platform, Adobe Analytics, Adobe Target, and so on) after it has been sent to the Edge network by Web SDK. This step must be taken by all Web SDK customers, regardless of how they are deploying Web SDK

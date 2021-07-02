@@ -41,12 +41,13 @@ Before you begin the exercises, watch this short video to learn more about schem
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson. 
+<!--, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+* Developer-role access to the `Luma Tutorial Platform` product profile (for API)-->
 
 
 <!--
@@ -54,6 +55,11 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 -->
 
 ## Create Loyalty Schema via UI
+
+>[!NOTE]
+>
+>The term "mixin" was recently updated to "field group" in the Platform interface, might still appear in some of these screenshots.
+
 
 In this exercise, we will create a Luma Loyalty Schema to ingest loyalty data of customers.
 
@@ -97,7 +103,7 @@ Next we must add fields that are specific to Luma's Loyalty system and which don
 
 1. In the **Field groups** section of the schema editor, select the **[!UICONTROL Add]** button again
 1.  Select **[!UICONTROL Create new field group]** radio button
-1.  Enter the Display name as `Luma Loyalty Field group` and select the **[!UICONTROL Add field group]** button
+1.  Enter the Display name as `Luma Loyalty field group` and select the **[!UICONTROL Add field group]** button
     ![Add Field To Field group](assets/schemas-loyalty-addCustomMixin.png)
 1.  In the **Field groups** section of the schema editor, select the name of the new field group so that the **[!UICONTROL +]** buttons appear on in the **[!UICONTROL Structure]** section
 1.  In **[!UICONTROL Structure]** section, select **[!UICONTROL +]** at top level in structure of Schema. It creates an object with your tenant id (prefixed with an underscore) and a field _'New field'_.
@@ -138,9 +144,9 @@ Next we must add fields that are specific to Luma's Loyalty system and which don
    
 1. Select **[!UICONTROL Save]** to save the current state of your schema, which should look like this:
 
-    ![Loyalty Field group Complete](assets/schemas-loyaltyMixinComplete.png) 
+    ![Loyalty field group Complete](assets/schemas-loyaltyMixinComplete.png) 
 
-Now we will create another field group to contain the loyaltyId field and other identifiers which we will use in the other schemas. Since you are now familiar with how to create field groups, create one named `Luma Identity Profile Field group` with the following fields:
+Now we will create another field group to contain the loyaltyId field and other identifiers which we will use in the other schemas. Since you are now familiar with how to create field groups, create one named `Luma Identity Profile field group` with the following fields:
 
    1. System Identifier
       1. Field name: `systemIdentifier`
@@ -156,18 +162,18 @@ Now we will create another field group to contain the loyaltyId field and other 
       1. Type: **[!UICONTROL String]**
 
 Your new field group should look like this. Select the **[!UICONTROL Save]** button to save your schema, but leave the schema open for the next exercise. 
-    ![Loyalty Field group Complete](assets/schemas-loyalty-identityMixinComplete.png)
+    ![Loyalty field group Complete](assets/schemas-loyalty-identityMixinComplete.png)
 
 
 ## Create a data type
 
-Field groups, such as your new `Luma Loyalty Field group`, can be reused in other schemas, allowing you to enforce standard data definitions across multiple systems. Field groups however can only be reused _in schemas that share classes_, in this case the XDM Profile Class.
+Field groups, such as your new `Luma Loyalty field group`, can be reused in other schemas, allowing you to enforce standard data definitions across multiple systems. Field groups however can only be reused _in schemas that share classes_, in this case the XDM Profile Class.
 
 The data type is another multi-field construct which can be reused in schemas _across multiple classes_. Let's convert our new `systemIdentifier` object into a data type:
 
 With the `Luma Loyalty Schema` still open, select the `systemIdentifier` object and select  **[!UICONTROL Convert to new data type]**
 
-![Loyalty Field group Complete](assets/schemas-loyalty-convertToDataType.png) 
+![Loyalty field group Complete](assets/schemas-loyalty-convertToDataType.png) 
 
 We will use this data type later in the lesson.
 
@@ -182,7 +188,7 @@ Now we will create a schema using the API.
 >
 > 1. Use the [!UICONTROL XDM Individual Profile] class
 > 1. Name it `Luma CRM Schema`
-> 1. Use the following field groups: Demographic Details, Personal Contact Details, and Luma Identity Profile Field group
+> 1. Use the following field groups: Demographic Details, Personal Contact Details, and Luma Identity Profile field group
 
 First we create the empty schema:
 
@@ -265,11 +271,11 @@ Now let's add our Identity Profile Field group to the schema. Looking at the Bod
 1. Open the request **[!DNL Schema Registry API > Field groups > Return a list of all field groups within the specified container.]**
 1. In the **Headers** tab, update the **Accept** header to `application/vnd.adobe.xed-id+json`
 1. Select the **Send** button to retrieve a list of all of the custom field groups in your account
-1. Grab the `$id` value of the `Luma Identity Profile Field group` (yours will be different from the value in this screenshot)
+1. Grab the `$id` value of the `Luma Identity Profile field group` (yours will be different from the value in this screenshot)
   ![Retrieve the list of field groups](assets/schemas-crm-getListOfMixins.png) 
 1. Now Open the request **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema]** again
 1. The **Params** tab should still have the `$id` of your schema
-1. Open the **Body** tab and paste the following code, replacing the `$ref` value with the `$id` of your own `Luma Identity Profile Field group`:
+1. Open the **Body** tab and paste the following code, replacing the `$ref` value with the `$id` of your own `Luma Identity Profile field group`:
 
     ```json
     [{
@@ -307,7 +313,7 @@ Next we will add a standard field group and a custom field group.
 Now let's add the identities to our new schema:
 
 1. In the **[!UICONTROL Field groups]** section, and select the **[!UICONTROL Add]** button.
-1. Search for `Luma Identity Profile Field group`. It is not available! Remember that field groups are specific to a class, and this schema uses the XDM ExperienceEvent class instead of the XDM Individual Profile class. We will add a new field group for the XDM ExperienceEvent class that contains the same exact identity fields thanks to our data type
+1. Search for `Luma Identity Profile field group`. It is not available! Remember that field groups are specific to a class, and this schema uses the XDM ExperienceEvent class instead of the XDM Individual Profile class. We will add a new field group for the XDM ExperienceEvent class that contains the same exact identity fields thanks to our data type
 1. Select the **[!UICONTROL Create new field group]** radio button
 1. Enter the **[!UICONTROL Display name]** as `Luma Identity ExperienceEvent Field group` and select the **[!UICONTROL Add field group]** button
 1.  Make sure the **[!UICONTROL +]** buttons appear on in the **[!UICONTROL Structure]** section so you can add new fields
