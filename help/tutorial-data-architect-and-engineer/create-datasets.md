@@ -2,7 +2,7 @@
 title: Create datasets
 seo-title: Create datasets | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Create datasets
-description: In this lesson, you will create datasets so that you can ingest data into them later on.
+description: In this lesson, you will create datasets to receive your data.
 role: Data Architect, Data Engineer
 feature: Data Management
 kt: 4348
@@ -24,7 +24,7 @@ Before you begin the exercises, watch this short video to learn more about datas
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
 
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
 * Permission item **[!UICONTROL Sandboxes]** > `Luma Tutorial`
@@ -33,22 +33,22 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 ## Create datasets in the UI
 
-In this exercise we will create datasets in the UI. Let's start with the loyalty system:
+In this exercise, we will create datasets in the UI. Let's start with the loyalty system:
 
-1. Click **[!UICONTROL Datasets]** in the Platform UI's left navigation
-1. Click the **[!UICONTROL Create Dataset]** button on the top right
+1. Go to **[!UICONTROL Datasets]** in the Platform UI's left navigation
+1. Select the **[!UICONTROL Create Dataset]** button
     ![Create a dataset](assets/datasets-createDataset.png)
 
-1. On the next screen, click **Create Dataset from schema** 
-1. On the next screen, select your `Luma Loyalty Schema` and then click the **[!UICONTROL Next]** button
+1. On the next screen, select **Create Dataset from schema** 
+1. On the next screen, select your `Luma Loyalty Schema` and then select the **[!UICONTROL Next]** button
     ![Select the dataset](assets/datasets-selectSchema.png)
 
-1. Name the dataset `Luma Loyalty Dataset` and click the **[!UICONTROL Finish]** button
+1. Name the dataset `Luma Loyalty Dataset` and select the **[!UICONTROL Finish]** button
     ![Name the dataset](assets/datasets-nameDataset.png)
-1. When the dataset has saved you will be taken to a screen like this:
+1. When the dataset has saved, you will be taken to a screen like this:
     ![Dataset created](assets/datasets-created.png)
 
-That's it! See, I told you this was going to be quick. Follow the same steps to create these other datasets:
+That's it! I told you this was going to be quick. Create these other datasets using the same steps:
 
 1. `Luma Offline Purchase Event Dataset` for your `Luma Offline Purchase Event Schema`
 1. `Luma Web Events Dataset` for your `Luma Web Events Schema`
@@ -57,21 +57,21 @@ That's it! See, I told you this was going to be quick. Follow the same steps to 
 
 ## Create a dataset using API
 
-Now you will create the `Luma CRM Dataset` using the API. 
+Now create the `Luma CRM Dataset` using the API. 
 
 >[!NOTE]
 >
->If you want to skip the API exercise and create the `Luma CRM Dataset` in the UI that's fine, just name it `Luma CRM Dataset` and use the `Luma CRM Schema`
+>If you want to skip the API exercise and create the `Luma CRM Dataset` in the UI that's fine. Name it `Luma CRM Dataset` and use the `Luma CRM Schema`.
 
 ### Get the id of the schema to be used in the dataset
 
 First we need to get the `$id` of the `Luma CRM Schema`:
 
 1. Open [!DNL Postman]
-1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
-1. Open the call **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]**
-1. Update the Accept Header to one of the allowed values, e.g. `application/vnd.adobe.xdm+json`
-1. Click the **Send** button
+1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. Open the request **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]**
+1. Update the Accept Header to one of the allowed values, for example `application/vnd.adobe.xdm+json`
+1. Select the **Send** button
 1. You should get a 200 response
 1. Look in the response for the `Luma CRM Schema` item and copy the `$id` value
  ![Copy the $id](assets/dataset-crm-getSchemaId.png) 
@@ -101,13 +101,13 @@ Now you can create the dataset:
     }
     ```
 
-1. Click the **Send** button
+1. Select the **Send** button
 1. You should get a 201 Created response containing the id of your new dataset!
     ![Copy the $id](assets/datasets-crm-created.png) 
    
 >[!TIP]
 >
-> Common issues making this call and likely fixes:
+> Common issues making this request and likely fixes:
 >
 > * `400: There was a problem retrieving xdm schema`. Make sure you have replaced the id in the sample above with the id of your own `Luma CRM Schema`
 > * No auth token: Run the **IMS: JWT Generate + Auth via User Token** call to generate new tokens
