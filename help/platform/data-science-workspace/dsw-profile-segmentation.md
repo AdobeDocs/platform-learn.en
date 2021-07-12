@@ -1,7 +1,7 @@
 ---
 title: Create machine learned segments using Real-time Customer Profile
 description: Learn how Data Science Workspace model outputs can be used in Real-time Customer Profile and how to create a streaming segment with your model output data.
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 7296
 thumbnail: 333711.jpg

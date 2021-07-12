@@ -1,7 +1,7 @@
 ---
 title: Analyze model performance
 description: Learn about some of the different methods used to analyze the performance of a model such as a confusion matrix, Accuracy, Recall, and Precision.
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 7288
 thumbnail: 333427.jpg

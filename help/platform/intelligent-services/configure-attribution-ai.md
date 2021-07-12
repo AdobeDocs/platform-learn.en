@@ -1,7 +1,7 @@
 ---
 title: Configure Attribution AI in Adobe Experience Platform
 description: Learn how to create an instance of Attribution AI to understand the impact of your marketing channels and campaigns.
-role: Business Practitioner
+role: User
 solution: Experience Platform, Intelligent Services
 feature: Attribution AI
 kt: 4174

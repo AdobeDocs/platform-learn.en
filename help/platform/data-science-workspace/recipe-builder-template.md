@@ -1,7 +1,7 @@
 ---
 title: Build a model using the recipe builder template
 description: This video showcases using the recipe builder template in the JupyterLab launcher to train and score a propensity model and create a recipe.
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 7290
 thumbnail: 333570.jpg

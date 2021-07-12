@@ -2,7 +2,7 @@
 title: Create content-based segments
 description: Learn the basics on creating a content affinity segment in the Segment Builder in platform.
 feature: Segments
-role: Business Practitioner
+role: User
 level: Beginner
 doc-type: feature video
 thumbnail: 333302.jpg

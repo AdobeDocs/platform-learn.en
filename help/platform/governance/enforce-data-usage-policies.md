@@ -1,7 +1,7 @@
 ---
 title: Enforce data usage policies
 description: This video shows how data usage policies are enforced when activating an audience to a destination. It shows how to add marketing actions to destinations, how to analyze a policy violation during activation and how to use the data lineage to understand and remediate policy violations. 
-role: Data Architect, Business Practitioner
+role: Data Architect, User
 feature: Data Governance
 kt: 4380
 thumbnail: 33631.jpg

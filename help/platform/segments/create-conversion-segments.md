@@ -2,7 +2,7 @@
 title: Create conversion segments
 description: In this video, learn how to use the Segment Builder in Platform to create an audience segment that has performed a conversion event, either on a Web site or in other data systems.
 feature: Segments
-role: Business Practitioner
+role: User
 level: Beginner
 doc-type: feature video
 thumbnail: 333303.jpg

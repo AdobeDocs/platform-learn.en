@@ -1,7 +1,7 @@
 ---
 title: Business Value of Attribution AI
 description: This video shows how marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers’ journeys with Attribution AI.
-role: Business Practitioner
+role: User
 solution: Experience Platform, Intelligent Services
 feature: Attribution AI
 kt: 6248

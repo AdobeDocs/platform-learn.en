@@ -1,7 +1,7 @@
 ---
 title: Exploratory Data Analysis in Data Science Workspace
 description: The exploratory data analysis (EDA) notebook is designed to assist you with discovering patterns in data, checking data sanity, and summarizing the relevant data for predictive models.
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 7288
 thumbnail: 333310.jpg
