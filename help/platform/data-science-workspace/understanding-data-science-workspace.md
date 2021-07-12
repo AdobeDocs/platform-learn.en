@@ -1,7 +1,7 @@
 ---
 title: Data Science Workspace overview
 description: The vision of machine learning on Adobe Experience Platform is to democratize data science by leveraging the domain expertise of Adobe products, customers, and partners to create an ecosystem of intelligent services to power the next generation of customer experiences. Data Science Workspace makes it easy to access omni-channel data, build models, operationalize models with a one-click deployment, and consume model insights by sharing them via real-time customer profiles. This video gives an overview of what Data Science Workspace is and the value it provides to businesses.
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 3137
 thumbnail: 30567.jpg

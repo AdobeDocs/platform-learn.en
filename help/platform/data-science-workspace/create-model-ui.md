@@ -1,7 +1,7 @@
 ---
 title: Create and publish a trained model
 description: This tutorial walks through the steps to create, train, evaluate, and publish a model using a recipe made with the JupyterLab recipe builder notebook.
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 7291
 thumbnail: 333595.jpg

@@ -1,7 +1,7 @@
 ---
 title: Roles and Project Phases
 description: This video gives an overview of the roles, phases, and key outcomes involved in a successful Experience Platform project.
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 kt: 4338
 thumbnail: 32807.jpg
 exl-id: a800886b-e9a6-4271-921c-2cc6d4033a1a

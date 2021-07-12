@@ -2,7 +2,7 @@
 title: Create sequential segments
 description: In this video, learn how to add Experience Events to a timeline in your segment, in order to create an audience that has performed actions in a certain order within a certain amount of time.
 feature: Segments
-role: Business Practitioner
+role: User
 level: Beginner
 doc-type: feature video
 thumbnail: 333305.jpg

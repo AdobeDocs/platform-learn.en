@@ -2,7 +2,7 @@
 title: Create segments from existing segments
 description: The Segment Builder in Platform allows you to use existing segments as part of a new segment definition. Watch this video to see tips on how to do it.
 feature: Segments
-role: Business Practitioner
+role: User
 level: Beginner
 doc-type: feature video
 thumbnail: 333304.jpg

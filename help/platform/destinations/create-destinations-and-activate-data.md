@@ -2,7 +2,7 @@
 title: Create Destinations and Activate Data in Adobe's Real-time Customer Data Platform (RTCDP)
 description: Learn how to create destinations and activate data in Adobe's Real-time Customer Data Platform
 solution: Experience Platform, Real-time Customer Data Platform
-role: Business Practitioner
+role: User
 feature: Destinations
 kt: 3798
 thumbnail: 29710.jpg

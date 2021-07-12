@@ -1,7 +1,7 @@
 ---
 title: Schedule automated training and scoring for a service
 description: Learn how to set up automated training and scoring for a service in Data Science Workspace.
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 7293
 thumbnail: 333596.jpg

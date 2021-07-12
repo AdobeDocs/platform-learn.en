@@ -1,7 +1,7 @@
 ---
 title: Data Science Workspace architecture overview
 description: This video describes the overarching architecture and illustrates the primary components of Data Science Workspace in Adobe Experience Platform. 
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 7181
 thumbnail: 332368.jpg

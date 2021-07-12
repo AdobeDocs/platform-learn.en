@@ -1,7 +1,7 @@
 ---
 title: A Customer Experience Powered by Adobe Experience Platform
 description: This video follows a hypothetical experience built with Adobe Experience Platform, as seen from the perspective of a customer. See how Experience Platform creates a rich, relevant and real-time experience.
-role: Leader, Architect, Developer, Data Architect, Data Engineer, Administrator, Business Practitioner
+role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 kt: 4339
 thumbnail: 27361.jpg
 exl-id: a8acbcc9-d500-4e7a-a2b4-015617f25bdc
