@@ -11,35 +11,13 @@ exl-id: 83e55ecd-24e9-4460-ba0a-885b8df049e0
 
 The mobile application that is used in the context of this demo and enablement environment is only available for **iOS**.
 
-Take your **iOS** device, open the **AppStore** and search for **Platform - SYTYCD**.
-
-![DSN](./images/appstore.png)
-
-You'll then see this.
+Take your **iOS** device, open the **AppStore** and search for **Platform - Edge**. Click the **DOWNLOAD/INSTALL** button.
 
 ![DSN](./images/mobileapp1.png)
 
-Click the **INSTALL** button.
-
-![DSN](./images/mobileapp1a.png)
-
 Next, click **OPEN**.
 
-![DSN](./images/mobileapp2.png)
-
-You'll then see a couple of notifications.
-
-Click **Allow While Using App**.
-
-![DSN](./images/mobileapp3.png)
-
-Click **Allow**.
-
-![DSN](./images/mobileapp4.png)
-
-Click **OK**.
-
-![DSN](./images/mobileapp5.png)
+![DSN](./images/mobileapp1a.png)
 
 You'll now see this screen. You can either manually enter the **Configuration ID** you created, or else, you can click the **QR code scan** icon to scan a QR code.
 
@@ -69,7 +47,23 @@ After a couple of seconds, you'll see that the demo brand **Luma** is being load
 
 ![DSN](./images/mobileapp13.png)
 
-And finally, you'll see the Luma homepage in the app, which means you're ready for your demo and enablement.
+And finally, you'll see the Luma homepage in the app.
+
+![DSN](./images/mobileapp14a.png)
+
+Kill the app by swiping the app up, and swiping it up completely so that the app is killed.
+
+![DSN](./images/griffon2.png)
+
+>[!NOTE]
+>
+> After restarting the app, you'll be asked to accept up to 3 permission prompts. Accept those prompts by clicking **OK**, **Allow while using the app** or **Allow** as they are required by the app.
+
+![DSN](./images/prompt1.png)
+![DSN](./images/prompt2.png)
+![DSN](./images/prompt3.png)
+
+You'll then see the Luma homepage in the app again, which means you're ready for your demo and enablement.
 
 ![DSN](./images/mobileapp14a.png)
 

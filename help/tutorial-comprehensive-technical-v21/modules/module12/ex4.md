@@ -1,41 +1,43 @@
 ---
-title: Journey Orchestration - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
-description: Journey Orchestration - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
+title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
+description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 6bec303b-b58a-4b9f-8ded-5e7354cf06b6
 ---
-# 12.4 Design a trigger-based Customer Journey
+# 12.4 Design a trigger-based journey
 
-In this exercise, you'll create an orchestrated journey by making use of Journey Orchestration in combination with Adobe Experience Platform.
+In this exercise, you'll create a journey by making use of Adobe Journey Optimizer.
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/)
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-You'll see the **Adobe Experience Cloud** homepage.
+![ACOP](./images/acophome.png)
 
-![Demo](./images/aec.png)
+You'll be redirected to the **Home**  view in Journey Optimizer.
 
-Click on **Journey Orchestration**.
+![ACOP](./images/acoptriglp.png)
 
-![Demo](./images/aecjo.png)
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
 
-Next, you'll see the **Journey Orchestration** homepage, which shows all existing Journeys.
+![ACOP](./images/sb.png)
 
-![Demo](./images/journeyhome.png)
+You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+
+![ACOP](./images/home.png)
 
 Click **Create** to start creating your Journey.
 
 ![Demo](./images/jocreate.png)
 
-You'll then see a new, blank Journey.
+In the left menu, go to **Journeys**. Next, click **Create Journey**.
 
 ![Demo](./images/jonew.png)
 
 You should first name your Journey.
 
-As a Name for the Journey, use `LDAP Geofence Entry Journey` and replace `LDAP` with your LDAP. In this example, the Journey Name is `joconnor Geofence Entry Journey`. No other values must be set at this moment.
+As a Name for the Journey, use `ldap Geofence Entry Journey` and replace `ldap` with your ldap. In this example, the Journey Name is `vangeluw Geofence Entry Journey`. No other values must be set at this moment.
 
 ![Demo](./images/joname.png)
 
@@ -43,52 +45,31 @@ Click **OK**.
 
 ![Demo](./images/jonameok.png)
 
-On the left side of your screen, have a look at **Events**. You should see your previously created Event in that list. Select it, then drag and drop it on the Journey Canvas.
+On the left side of your screen, have a look at **Events**. You should see your previously created event in that list. Select it, then drag and drop it on the journey canvas. Your journey then looks like this:
 
 ![Demo](./images/joevents.png)
 
-Your Journey then looks like this:
-
-![Demo](./images/jo1.png)
-
-Next, click on **Orchestration**.
+Next, click on **Orchestration**. You now see the available **Orchestration** capabilities. Select **Condition**, then drag and drop it on the Journey Canvas.
 
 ![Demo](./images/jo2.png)
 
-You now see **Orchestration** capabilities.
-
-![Demo](./images/jo3.png)
-
-Select **Condition**, then drag and drop it on the Journey Canvas.
-
-![Demo](./images/jo4.png)
-
 You now have to define three conditions:
 
-* It's colder than 10° Celsius
-* It's between 10° and 25° Celsius
-* It's warmer than 25° Celsius
+- It's colder than 10° Celsius
+- It's between 10° and 25° Celsius
+- It's warmer than 25° Celsius
 
 Let's define the first condition.
 
 ## Condition 1: Colder than 10° Celsius
 
-Click on the **Condition**.  Click on **Path1** and edit the name of the path to **Colder than 10 C**
+Click on the **Condition**.  Click on **Path1** and edit the name of the path to **Colder than 10 C**. Click on the **Edit** icon for the expression of Path1.
 
 ![Demo](./images/jo5.png)
 
-Click on the **Edit** icon for the expression of Path1.
-
-![Demo](./images/jo6.png)
-
-You'll then see an empty **Simple Editor** screen.
+You'll then see an empty **Simple Editor** screen. Your query will be a bit more advanced, so you'll need the **Advanced Mode**. Click **Advanced Mode**.
 
 ![Demo](./images/jo7.png)
-
-Our query will be a bit more advanced, so we'll need the **Advanced Mode**.
-Click **Advanced Mode**.
-
-![Demo](./images/jo8.png)
 
 You'll then see the **Advanced Editor** which allows code entry.
 
@@ -96,13 +77,13 @@ You'll then see the **Advanced Editor** which allows code entry.
 
 Select the below code and paste it in the **Advanced Editor**.
 
-`#{ldapWeatherApi.ldapWeatherByCity.main.temp} <= 10` (replace Ldap by your LDAP)
+`#{ldapWeatherApi.ldapWeatherByCity.main.temp} <= 10` (replace ldap by your ldap)
 
 You'll then see this.
 
 ![Demo](./images/jo10.png)
 
-In order to retrieve the temperature as part of this Condition, you need to provide the city in which the customer currently is.
+In order to retrieve the temperature as part of this condition, you need to provide the city in which the customer currently is.
 The **City** needs to be linked to the dynamic parameter `q`, just like we saw previously in the Open Weather API Documentation.
 
 Click the field **dynamic val: q** as indicated in the screenshot.
@@ -113,40 +94,25 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to ```ldapGeofenceEntry.placeContext.geo.city``` (replace Ldap by your LDAP).
+You can find the field by navigating to ```ldapGeofenceEntry.placeContext.geo.city``` (replace ldap by your ldap).
 
-By clicking that field, it will be added as the dynamic value for the parameter `q`. This field will be populated by for instance the geolocation-service that you've implemented in your Mobile App.  In our case we will simulate this with the admin console of public.aepdemo.net.
+By clicking that field, it will be added as the dynamic value for the parameter `q`. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 
-Click **OK**.
-
-![Demo](./images/jook.png)
-
-Next, we'll add the 2nd condition.
-
 ## Condition 2: Between 10° and 25° Celsius
 
-After having added the first condition, you'll see this screen.
+After having added the first condition, you'll see this screen. Click **Add Path**.
 
 ![Demo](./images/joc2.png)
 
-Click **Add Path**.
-
-![Demo](./images/joadd.png)
-
-Double click on **Path1** and edit the path name to **Between 10 and 25 C**. Then click on the **Edit** icon for the expression this path.
+Double click on **Path1** and edit the path name to **Between 10 and 25 C**. Click the **Edit** icon for the expression this path.
 
 ![Demo](./images/joc6.png)
 
-You'll then see an empty **Simple Editor** screen.
+You'll then see an empty **Simple Editor** screen. Your query will be a bit more advanced, so you'll need the **Advanced Mode**. Click **Advanced Mode**.
 
 ![Demo](./images/jo7.png)
-
-Our query will be a bit more advanced, so we'll need the **Advanced Mode**.
-Click **Advanced Mode**.
-
-![Demo](./images/jo8.png)
 
 You'll then see the **Advanced Editor** which allows code entry.
 
@@ -154,7 +120,7 @@ You'll then see the **Advanced Editor** which allows code entry.
 
 Select the below code and paste it in the **Advanced Editor**.
 
-`#{ldapWeatherApi.ldapWeatherByCity.main.temp} > 10 and #{ldapWeatherApi.ldapWeatherByCity.main.temp} <= 25` (Replace ldap by your LDAP)
+`#{ldapWeatherApi.ldapWeatherByCity.main.temp} > 10 and #{ldapWeatherApi.ldapWeatherByCity.main.temp} <= 25` (Replace ldap by your ldap)
 
 You'll then see this.
 
@@ -171,39 +137,26 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to ```ldapGeofenceEntry.placeContext.geo.city``` (Replace ldap by your LDAP). By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your Mobile App.
+You can find the field by navigating to ```ldapGeofenceEntry.placeContext.geo.city``` (Replace ldap by your LDAP). By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 
-Click **OK**.
-
-![Demo](./images/jook.png)
-
-Next, we'll add the 3rd condition.
+Next, you'll add the 3rd condition.
 
 ## Condition 3: Warmer than 25° Celsius
 
-After having added the second condition, you'll see this screen.
+After having added the second condition, you'll see this screen. Click **Add Path**.
 
 ![Demo](./images/joct2.png)
-
-Click **Add Path**.
-
-![Demo](./images/joadd.png)
 
 Double click on Path1 to change the name to **Warmer than 25 C**. 
 Then click on the **Edit** icon for the expression this path.
 
 ![Demo](./images/joct6.png)
 
-You'll then see an empty **Simple Editor** screen.
+You'll then see an empty **Simple Editor** screen. Your query will be a bit more advanced, so you'll need the **Advanced Mode**. Click **Advanced Mode**.
 
 ![Demo](./images/jo7.png)
-
-Our query will be a bit more advanced, so we'll need the **Advanced Mode**.
-Click **Advanced Mode**.
-
-![Demo](./images/jo8.png)
 
 You'll then see the **Advanced Editor** which allows code entry.
 
@@ -228,22 +181,13 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to ```ldapGeofenceEntry.placeContext.geo.city```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your Mobile App.
+You can find the field by navigating to ```ldapGeofenceEntry.placeContext.geo.city```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 
-Click **OK**.
-
-![Demo](./images/jook.png)
-
-You now have three configured paths.
+You now have three configured paths. Click **Ok**.
 
 ![Demo](./images/jo3path.png)
-
-Click **Ok**.
-
-![Demo](./images/joblueok.png)
-
 
 As this is a journey for learning purpose, we'll now configure a couple of actions to showcase the variety of options marketeers now have to deliver messages.
 
@@ -683,7 +627,7 @@ Your Journey is now published.
 
 In the next exercise, you'll be able to test your Journey.
 
-Next Step: [12.5 Trigger your Orchestrated Customer Journey](./ex5.md)
+Next Step: [12.5 Trigger your journey](./ex5.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
