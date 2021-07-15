@@ -191,7 +191,7 @@ You now have three configured paths. Click **Ok**.
 
 As this is a journey for learning purpose, we'll now configure a couple of actions to showcase the variety of options marketeers now have to deliver messages.
 
-## Send messages for **Colder than 10° Celsius** Path
+## Send messages for path Colder than 10° Celsius
 
 For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
 
@@ -203,9 +203,9 @@ Let's take another **Condition** element and drag it as indicated in the screens
 
 ![Demo](./images/joa1.png)
 
-As this is just an example, we are only configuring the option where the customer has a mobile number available. So, first add a label of **Has mobile?** and then double click on **Path1** and edit the text to **Yes**.
+As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
 
-Click on the **Edit** icon for the Expression for the **Yes** path.
+Click on the **Edit** icon for the Expression for the **Path1** path.
 
 ![Demo](./images/joa2.png)
 
@@ -215,27 +215,19 @@ In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileF
 
 Select the field **Number**, then drag and drop it to the Condition Canvas.
 
-Select the operator **is not empty**.
+Select the operator **is not empty**. Click **Ok**.
 
 ![Demo](./images/joa4.png)
-
-Click **Ok**.
-
-![Demo](./images/josmallblueok.png)
 
 You'll then see this:
 
 ![Demo](./images/joa6.png)
 
-Click **OK**.
-
-![Demo](./images/joblueok.png)
-
-Your Journey will then look like this. Click on **Actions** as indicated in the screenshot.
+Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
 
 ![Demo](./images/joa8.png)
 
-Select the `ldapSmsTwilio - action` (verify your LDAP), then drag and drop it after the condition you just added.
+Select the action `ldapSmsTwilio` (verify your ldap), then drag and drop it after the condition you just added.
 
 ![Demo](./images/joa9.png)
 
@@ -243,63 +235,46 @@ You'll see a panel on the right hand side where you can configure the action.
 
 ![Demo](./images/joa10.png)
 
-Navigate to the **Action Parameters**.
+Navigate to the **Action Parameters**. Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
+You'll then see this. Click on **Advanced Mode**.
 
 ![Demo](./images/joa12.png)
 
-In the popup you'll see, click on **Advanced Mode**.
-
-![Demo](./images/jo8.png)
-
-Select the below code, copy it and paste it in the **Advanced Mode Editor**.
+Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **OK**.
 
 `"Brrrr..." + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " It's freezing. 20% discount on Jackets today!"`
 
 ![Demo](./images/joa14.png)
 
-Click **OK**.
-
-Click on the **Edit** icon for the Action Parameter **MOBILENR**.
+You'll then be back here. Click on the **Edit** icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/joa15.png)
 
-You'll see a popup with the **Simple Mode Editor**.
+You'll see a popup with the **Simple Mode Editor**. Click on **Advanced Mode**.
 
 ![Demo](./images/joasm.png)
-
-In the popup you'll see, click on **Advanced Mode**.
-
-![Demo](./images/jo8.png)
 
 Paste this code in the **Advanced Mode Editor**. Click **OK**.
 
 `substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 12)`
 
-FYI: This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: +32463622044.
+>[!NOTE]
+>
+>This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: +32463622044.
 Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
 
 `substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
 
 ![Demo](./images/joa16.png)
 
-Click **Ok**.
-
-![Demo](./images/joblueok.png)
-
-And you will see your completed action.
+You'll now see your completed action. Click **Ok**.
 
 ![Demo](./images/joa17.png)
 
-Click **Ok** in the top right to save your action.
-
-![Demo](./images/joblueok.png)
-
-
-In the left menu, go back to **Actions**, select the Action **ldapTextSlack**, then drag and drop it after the **ldapSmsTwilio**-Action (Replace ldap by your LDAP).
+In the left menu, go back to **Actions**, select the Action **ldapTextSlack**, then drag and drop it after the **ldapSmsTwilio**-Action (Replace ldap by your ldap).
 
 ![Demo](./images/joa18.png)
 
@@ -311,29 +286,21 @@ In the popup-window, click **Advanced Mode**.
 
 ![Demo](./images/joa20.png)
 
-Select the below code, copy it and paste it in the **Advanced Mode Editor**.
+Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
 
 `"Brrrr..." + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " It's freezing. 20% discount on Jackets today!"`
 
 ![Demo](./images/joa21.png)
 
-Click **Ok**.
-
-![Demo](./images/joblueok.png)
-
-You will see your completed action.
+You will see your completed action. Click **Ok**.
 
 ![Demo](./images/joa22.png)
 
-Click **Ok** in the top right to save the action.
-
-![Demo](./images/joblueok.png)
-
-In the left menu, go to **Orchestration**, select **End**, then drag and drop **End** after the `joconnorTextSlack` action.
+In the left menu, go to **Orchestration**, select **End**, then drag and drop **End** after the `ldapTextSlack` action.
 
 ![Demo](./images/joa23.png)
 
-## Send Messages for **Between 10° and 25° Celsius** Path
+## Send messages for path Between 10° and 25° Celsius
 
 For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
 
@@ -345,11 +312,11 @@ Let's take another **Condition** element and drag it as indicated in the screens
 
 ![Demo](./images/jop1.png)
 
-As this is just an example, we are only configuring the option where the customer has a mobile number available. So, first add a label of **Has mobile?** and then double click on **Path1** and edit the text to **Yes**.
+As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
 
-Click on the **Edit** icon for the Expression for the **Yes** path.
+Click on the **Edit** icon for the Expression for the **Path1** path.
 
-![Demo](./images/joa2.png)
+![Demo](./images/joa2p2.png)
 
 In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. You're now reading the mobile phone number directly from Adobe Experience Platform's Real-time Customer Profile.
 
@@ -357,27 +324,19 @@ In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileF
 
 Select the field **Number**, then drag and drop it to the Condition Canvas.
 
-Select the operator **is not empty**.
+Select the operator **is not empty**. Click **Ok**.
 
 ![Demo](./images/joa4.png)
 
-Click **Ok**.
-
-![Demo](./images/josmallblueok.png)
-
-You'll then see this:
+You'll then see this. Click **Ok**.
 
 ![Demo](./images/joa6.png)
 
-Click **OK**.
-
-![Demo](./images/joblueok.png)
-
-Your Journey will then look like this. Click on **Actions** as indicated in the screenshot.
+Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
 
 ![Demo](./images/jop8.png)
 
-Select the `ldapSmsTwilio - action` (verify your LDAP), then drag and drop it after the condition you just added.
+Select the action `ldapSmsTwilio` (verify your ldap), then drag and drop it after the condition you just added.
 
 ![Demo](./images/jop9.png)
 
@@ -385,17 +344,13 @@ You'll see a panel on the right hand side where you can configure the action.
 
 ![Demo](./images/joa10.png)
 
-Navigate to the **Action Parameters**.
+Navigate to the **Action Parameters**. Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**. 
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
-
-![Demo](./images/joa12.png)
-
 In the popup you'll see, click on **Advanced Mode**.
 
-![Demo](./images/jo8.png)
+![Demo](./images/joa12.png)
 
 Select the below code, copy it and paste it in the **Advanced Mode Editor**.
 
@@ -409,33 +364,26 @@ Click on the **Edit** icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/jop15.png)
 
-You'll see a popup with the **Simple Mode Editor**.
+You'll see a popup with the **Simple Mode Editor**. Click on **Advanced Mode**.
 
 ![Demo](./images/joasm.png)
-
-In the popup you'll see, click on **Advanced Mode**.
-
-![Demo](./images/jo8.png)
 
 Paste this code in the **Advanced Mode Editor**. Click **OK**.
 
 `substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 12)`
 
-FYI: This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044**.
+>[!NOTE]
+>
+>This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044**.
 Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
 
 `substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
 
 ![Demo](./images/joa16.png)
 
-Click **OK**.
+Click **Ok**.
 
 ![Demo](./images/jop17.png)
-
-Click **Ok** in the top right to save your action.
-
-![Demo](./images/joblueok.png)
-
 
 In the left menu, go back to **Actions**, select the Action **ldapTextSlack**, then drag and drop it after the **ldapSmsTwilio**-Action (Replace ldap by your LDAP).
 
@@ -449,29 +397,21 @@ In the popup-window, click **Advanced Mode**.
 
 ![Demo](./images/joa20.png)
 
-Select the below code, copy it and paste it in the **Advanced Mode Editor**.
+Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
 
 `"What nice weather for the time of year, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " 20% discount on Sweaters today!"`
 
 ![Demo](./images/jop21.png)
 
-Click **Ok**.
-
-![Demo](./images/joblueok.png)
-
-You will see your completed action.
+You will see your completed action. CLick **Ok**.
 
 ![Demo](./images/jop22.png)
-
-Click **Ok** in the top right to save the action.
-
-![Demo](./images/joblueok.png)
 
 In the left menu, go to **Orchestration**, select **End**, then drag and drop **End** after the `joconnorTextSlack` action.
 
 ![Demo](./images/jop23.png)
 
-## Send messages for **Warmer than 25° Celsius** Path
+## Send messages for path Warmer than 25° Celsius
 
 For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
 
@@ -479,15 +419,15 @@ Let's focus on **Warmer than 25 C** path.
 
 ![Demo](./images/p3steps.png)
 
-Let's take another **Condition** element and drag it as indicated in the screenshot above. We'll verify if for this customer, we have a mobile number available.
+Let's take another **Condition** element and drag it as indicated in the screenshot above. You'll verify if for this customer, you have a mobile number available.
 
 ![Demo](./images/jod1.png)
 
-As this is just an example, we are only configuring the option where the customer has a mobile number available. So, first add a label of **Has mobile?** and then double click on **Path1** and edit the text to **Yes**.
+As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
 
-Click on the **Edit** icon for the Expression for the **Yes** path.
+Click on the **Edit** icon for the Expression for the **Path1** path.
 
-![Demo](./images/joa2.png)
+![Demo](./images/joa2p3.png)
 
 In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. You're now reading the mobile phone number directly from Adobe Experience Platform's Real-time Customer Profile.
 
@@ -495,27 +435,19 @@ In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileF
 
 Select the field **Number**, then drag and drop it to the Condition Canvas.
 
-Select the operator **is not empty**.
+Select the operator **is not empty**. Click **Ok**.
 
 ![Demo](./images/joa4.png)
 
-Click **Ok**.
-
-![Demo](./images/josmallblueok.png)
-
-You'll then see this:
+You'll then see this. Click **OK**.
 
 ![Demo](./images/joa6.png)
 
-Click **OK**.
-
-![Demo](./images/joblueok.png)
-
-Your Journey will then look like this. Click on **Actions** as indicated in the screenshot.
+Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
 
 ![Demo](./images/jod8.png)
 
-Select the `ldapSmsTwilio - action` (verify your LDAP), then drag and drop it after the condition you just added.
+Select the action `ldapSmsTwilio` (verify your ldap), then drag and drop it after the condition you just added.
 
 ![Demo](./images/jod9.png)
 
@@ -523,43 +455,35 @@ You'll see a panel on the right hand side where you can configure the action.
 
 ![Demo](./images/joa10.png)
 
-Navigate to the **Action Parameters**.
+Navigate to the **Action Parameters**. Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
 
 ![Demo](./images/joa11.png)
 
-Click on the **Edit** icon for the Action Parameter **TEXTMESSAGE**.
+In the popup you'll see, click on **Advanced Mode**.
 
 ![Demo](./images/joa12.png)
 
-In the popup you'll see, click on **Advanced Mode**.
-
-![Demo](./images/jo8.png)
-
-Select the below code, copy it and paste it in the **Advanced Mode Editor**.
+Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **OK**.
 
 `"So warm, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + "! 20% discount on swimwear today!"`
 
 ![Demo](./images/jod14.png)
 
-Click **OK**.
-
 Click on the **Edit** icon for the Action Parameter **MOBILENR**.
 
 ![Demo](./images/jod15.png)
 
-You'll see a popup with the **Simple Mode Editor**.
+You'll see a popup with the **Simple Mode Editor**. Click on **Advanced Mode**.
 
 ![Demo](./images/joasm.png)
-
-In the popup you'll see, click on **Advanced Mode**.
-
-![Demo](./images/jo8.png)
 
 Paste this code in the **Advanced Mode Editor**. Click **OK**.
 
 `substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 12)`
 
-FYI: This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044**.
+>[!NOTE]
+>
+>This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044**.
 Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
 
 `substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
@@ -570,12 +494,7 @@ Click **OK**.
 
 ![Demo](./images/jod17.png)
 
-Click **Ok** in the top right to save your action.
-
-![Demo](./images/joblueok.png)
-
-
-In the left menu, go back to **Actions**, select the Action **ldapTextSlack**, then drag and drop it after the **ldapSmsTwilio**-Action (Replace ldap by your LDAP).
+In the left menu, go back to **Actions**, select the Action **ldapTextSlack**, then drag and drop it after the **ldapSmsTwilio**-Action (Replace ldap by your ldap).
 
 ![Demo](./images/jod18.png)
 
@@ -587,41 +506,29 @@ In the popup-window, click **Advanced Mode**.
 
 ![Demo](./images/joa20.png)
 
-Select the below code, copy it and paste it in the **Advanced Mode Editor**.
+Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
 
 `"So warm, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + "! 20% discount on swimwear today!"`
 
 ![Demo](./images/jod21.png)
 
-Click **Ok**.
-
-![Demo](./images/joblueok.png)
-
-You will see your completed action.
+You will see your completed action. Click **Ok**.
 
 ![Demo](./images/jod22.png)
 
-Click **Ok** in the top right to save the action.
-
-![Demo](./images/joblueok.png)
-
-In the left menu, go to **Orchestration**, select **End**, then drag and drop **End** after the `joconnorTextSlack` action.
+In the left menu, go to **Orchestration**, select **End**, then drag and drop **End** after the `ldapTextSlack` action.
 
 ![Demo](./images/jod23.png)
 
-Your Journey is now fully configured.
+Your journey is now fully configured.
 
 ![Demo](./images/jodone.png)
 
-Click **Publish**.
-
-![Demo](./images/jopublish.png)
-
-Click **Publish**.
+Click **Publish** again.
 
 ![Demo](./images/jopublish1.png)
 
-Your Journey is now published.
+Your journey is now published.
 
 ![Demo](./images/jopublish2.png)
 
