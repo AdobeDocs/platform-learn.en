@@ -11,19 +11,21 @@ exl-id: 6bec303b-b58a-4b9f-8ded-5e7354cf06b6
 
 In this exercise, you'll create an orchestrated journey by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/)
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-You'll see the **Adobe Experience Cloud** homepage.
+![ACOP](./images/acophome.png)
 
-![Demo](./images/aec.png)
+You'll be redirected to the **Home**  view in Journey Optimizer.
 
-Click on **Adobe Journey Optimizer**.
+![ACOP](./images/acoptriglp.png)
 
-![Demo](./images/aecjo.png)
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
 
-Next, you'll see the **Adobe Journey Optimizer** homepage, which shows all existing Journeys.
+![ACOP](./images/sb.png)
 
-![Demo](./images/journeyhome.png)
+You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+
+![ACOP](./images/home.png)
 
 Click **Create** to start creating your Journey.
 

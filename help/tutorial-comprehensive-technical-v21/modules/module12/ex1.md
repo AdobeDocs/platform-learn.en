@@ -9,47 +9,43 @@ exl-id: b08a065d-c9a3-4f66-9386-4cf62eafc6c4
 ---
 # 12.1 Define an event
 
-In this exercise, you'll create a custom Event by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/)
+![ACOP](./images/acophome.png)
 
-You'll see the **Adobe Experience Cloud** homepage.
+You'll be redirected to the **Home**  view in Journey Optimizer.
 
-![Demo](./images/aec.png)
+![ACOP](./images/acoptriglp.png)
 
-Click on **Adobe Journey Optimizer**.
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
 
-![Demo](./images/aecjo.png)
+![ACOP](./images/sb.png)
 
-Next, you'll see the **Adobe Journey Optimizer** homepage.
+You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-![Demo](./images/aecjoh.png)
+![ACOP](./images/home.png)
 
-In the menu, click on **Events**.
+In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Events**.
 
-![Demo](./images/menuevents.png)
+![ACOP](./images/acopmenu.png)
 
-You'll then see the **Events** list.
+You'll then see an overview of all available events. Click **Create Event** to start creating your own event.
 
-![Demo](./images/eventshome.png)
+![ACOP](./images/emptyevent.png)
 
-Click **Add** to start adding your event.
+A new, empty event window will then pop up.
 
-![Demo](./images/add.png)
+![ACOP](./images/emptyevent1.png)
 
-You'll see an empty event popup.
-
-![Demo](./images/emptyevent.png)
-
-As a Name for the Event, use `ldapGeofenceEntry` and replace `Ldap` with your LDAP. In this example, the Event Name is `joconnorGeofenceEntry`.
+As a Name for the Event, use `ldapGeofenceEntry` and replace `Ldap` with your LDAP. In this example, the Event Name is `vangeluwGeofenceEntry`.
 
 Set Description to: `Geofence Entry Event`.
 
 ![Demo](./images/evname.png)
 
-Next is the **Event ID Type** selection. Select **System Generated**.
+Next, make sure the **Type** is set to **Unitary**, and for the **Event ID Type** selection, select **System Generated**
 
-![ACOP](./images/eventidtype.png) 
+![ACOP](./images/eventidtype.png)
 
 Next, you need to select a Schema. All Schemas that are shown here, are Adobe Experience Platform Schemas.
 
@@ -60,37 +56,23 @@ To show up in this list, a Schema needs to have a very specific Mixin linked to 
 
 Let's have a quick look how these Schemas are defined in Adobe Experience Platform.
 
-Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-
-After logging in, you'll land on the homepage of Adobe Experience Platform.
-
-![Data Ingestion](./images/home.png)
-
-In the left menu, go to **Schemas**.
-
-![Data Ingestion](./images/menuschemas.png)
-
-In **Schemas**, go to **Browse** to see the list of available Schemas.
+In the left menu, go to **Schemas** and open this in a new browser tab. In **Schemas**, go to **Browse** to see the list of available Schemas.
+Open the Schema `Demo System - Event Schema for Website (Global v1.1)`.
 
 ![Data Ingestion](./images/schemas.png)
 
-Open the Schema `Demo System - Event Schema for Website (Global v1.1)`.
-
-After opening the Schema, you'll see that the Mixin `Orchestration eventID` is part of the Schema.
+After opening the Schema, you'll see that the field group `Orchestration eventID` is part of the schema.
+This field group only has two fields, `_experience.campaign.orchestration.eventID` and `originJourneyID`.
 
 ![Data Ingestion](./images/schemageo.png)
 
-This Mixin only has two fields, `_experience.campaign.orchestration.eventID` and   `originJourneyID`.
+Once this field group and this specific eventID field are part of a schema, that schema will be available for usage by Adobe Journey Optimizer.
 
-![Data Ingestion](./images/eventidmixin.png)
-
-Once this Mixin and this specific eventID field are part of a Schema, that Schema will be available for usage by Adobe Journey Optimizer.
-
-Go back to your Event configuration in Adobe Journey Optimizer.
+Go back to your event configuration in Adobe Journey Optimizer.
 
 ![Demo](./images/evschema.png)
 
-In this use-case, you want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema `Demo System - Event Schema for Website (Global v1.1)` as the Schema for your Event.
+In this use case, you want to listen to a Geofence Event to understand if a customer is in a specific location, so now, select the Schema `Demo System - Event Schema for Website (Global v1.1)` as the Schema for your Event.
 
 ![Demo](./images/evschema1.png)
 
@@ -100,7 +82,7 @@ Click the **pencil** icon to edit the fields.
 
 ![Demo](./images/editfields.png)
 
-You'll then see a popup-window with a Schema Hierarchy that allows you to select fields.
+You'll then see a popup-window with a schema hierarchy that allows you to select fields.
 
 ![Demo](./images/popup.png)
 
@@ -108,9 +90,7 @@ Fields like the ECID and the Orchestration eventID are required and as such pres
 
 However, a marketeer needs to have flexible access to all data points that provide context to a Journey. So let's make sure to select the following fields as a minimum as well (found within the Place context node):
 
-* City
-
-![Demo](./images/popupls.png)
+- City
 
 Once that's done, click **OK**.
 
@@ -132,12 +112,9 @@ Your event will then be part of the list of available events.
 Finally, you need to recover the `Orchestration eventID` for your custom event.
 
 Open your event again by clicking it in the list of events.
-
-![Demo](./images/eventlist1.png)
-
 On your Event, click on the **View Payload** icon next to **Fields**.
 
-![Demo](./images/fieldseye.png)
+![Demo](./images/eventlist1.png)
 
 Clicking the **View Payload** icon opens up a sample XDM payload for this event.
 
@@ -149,11 +126,11 @@ Scroll down in the **Payload** until you see the line `eventID`.
 
 Write down the `eventID` as you'll need it in the last to test your configuration.
 
-In this example, the `eventID` is `7cfd3b394bbe3fa3a74815628f1499896f92dc39237bd1e6b866795f5c18c093`.
+In this example, the `eventID` is `ee2d17c4e2b9aaefcc2ecaa8b7de56e1c88bb23e8160bc658e0de33160b20bec`.
 
 You've now defined the event that will trigger the Journey we're building. Once the Journey is triggered, the geofence-fields like City, and any others you may have chosen (like Country, Latitude and Longitude) will be made available to the Journey.
 
-As discussed in the use-case description, we then need to provide contextual promotions that depend on the weather. In order to get weather information, we'll need to define an external data sources that will provide us with the weather information for that location. We'll use the **OpenWeather** service to provide us what that information, as part of 2.
+As discussed in the use-case description, we then need to provide contextual promotions that depend on the weather. In order to get weather information, we'll need to define an external data sources that will provide us with the weather information for that location. You'll use the **OpenWeather** service to provide us what that information, as part of 2.
 
 Next Step: [12.2 Define an external data source](./ex2.md)
 

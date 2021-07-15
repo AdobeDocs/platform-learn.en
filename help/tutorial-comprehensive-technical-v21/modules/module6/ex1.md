@@ -45,7 +45,7 @@ Next, add a description like this `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Next, make sure the **Type** is set to **Unitary**, and for the **Event ID Type** selection, select **System Generated**
+Next, make sure the **Type** is set to **Unitary**, and for the **Event ID Type** selection, select **System Generated**.
 
 ![ACOP](./images/eventidtype.png)
 

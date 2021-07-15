@@ -11,19 +11,21 @@ exl-id: a8d6077e-e386-427c-a797-c279ad1ab504
 
 In this exercise, you'll create two custom Actions by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/)
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-You'll see the **Adobe Experience Cloud** homepage.
+![ACOP](./images/acophome.png)
 
-![Demo](./images/aec.png)
+You'll be redirected to the **Home**  view in Journey Optimizer.
 
-Click on **Adobe Journey Optimizer**.
+![ACOP](./images/acoptriglp.png)
 
-![Demo](./images/aecjo.png)
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
 
-Next, you'll see the **Adobe Journey Optimizer** homepage.
+![ACOP](./images/sb.png)
 
-![Demo](./images/aecjoh.png)
+You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+
+![ACOP](./images/home.png)
 
 In the menu, click on **Actions**.
 

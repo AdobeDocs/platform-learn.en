@@ -1,6 +1,6 @@
 ---
-title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define an External Data Source
-description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define an External Data Source
+title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define an external data source
+description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define an external data source
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
@@ -9,33 +9,32 @@ exl-id: 0b46729e-cc3c-414f-b8bf-c25bb02da56e
 ---
 # 12.2 Define an external data source
 
-In this exercise, you'll create a custom External Data Source by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
+In this exercise, you'll create a custom external data source by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/)
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-You'll see the **Adobe Experience Cloud** homepage.
+![ACOP](./images/acophome.png)
 
-![Demo](./images/aec.png)
+You'll be redirected to the **Home**  view in Journey Optimizer.
 
-Click on **Adobe Journey Optimizer**.
+![ACOP](./images/acoptriglp.png)
 
-![Demo](./images/aecjo.png)
+First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
 
-Next, you'll see the **Adobe Journey Optimizer** homepage.
+![ACOP](./images/sb.png)
 
-![Demo](./images/aecjoh.png)
+You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-In the menu, click on **Data Sources**.
+![ACOP](./images/home.png)
+
+In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Data Sources**.
 
 ![Demo](./images/menudatasources.png)
 
 You'll then see the **Data Sources** list.
+Click **Create Data Source** to start adding your data source.
 
 ![Demo](./images/dshome.png)
-
-Click **Add** to start adding your data source.
-
-![Demo](./images/add.png)
 
 You'll see an empty data source popup.
 
@@ -43,15 +42,11 @@ You'll see an empty data source popup.
 
 Before you can start configuring this, you'll need an account with the **Open Weather Map** service. Follow these steps to create your account and get your API key.
 
-Go to [https://openweathermap.org/](https://openweathermap.org/).
+Go to [https://openweathermap.org/](https://openweathermap.org/). On the homepage, click **Sign In**.
 
 ![WeatherMap](./images/owm.png)
 
-On the homepage, click **Sign Up**.
-
-![WeatherMap](./images/owmsu.png)
-
-You'll then see the **Sign Up**-form.
+Click **Create an Account**.
 
 ![WeatherMap](./images/owm1.png)
 
@@ -67,11 +62,11 @@ You'll then be redirected to your Account Page.
 
 ![WeatherMap](./images/owm4.png)
 
-In the menu, click **API Keys** to retrieve your API Key, which you'll need to setup your custom External Data Source.
+In the menu, click **API Keys** to retrieve your API Key, which you'll need to setup your custom external data source.
 
 ![WeatherMap](./images/owm5.png)
 
-In this example, the **API Key** is `b2c4c36b6bb59c3458d6686b05311dc3`.
+An **API Key** looks like this: `b2c4c36b6bb59c3458d6686b05311dc3`.
 
 You can find the **API Documentation** for the **Current Weather** [here](https://openweathermap.org/current).
 
@@ -83,7 +78,7 @@ Go back to **Adobe Journey Optimizer**, to your empty **External Data Source** p
 
 ![Demo](./images/emptyds.png)
 
-As a Name for the Data Source, use `joconnorWeatherApi` and replace `Ldap` with your LDAP. In this example, the Data Source Name is `weatherApiVangeluw`.
+As a Name for the data source, use `ldapWeatherApi` and replace `Ldap` with your LDAP. In this example, the data source Name is `vangeluwWeatherApi `.
 
 Set Description to: `Access to the Open Weather Map`.
 
@@ -116,7 +111,7 @@ In order to match the expected API Request, configure your FieldGroup as follows
 
 >[!IMPORTANT]
 >
->The Field group name has to be unique, please use this naming convention: `ldapWeatherByCity` so in this case, the name should be `joconnorWeatherByCity`
+>The Field group name has to be unique, please use this naming convention: `ldapWeatherByCity` so in this case, the name should be `vangeluwWeatherByCity`
 
 ![Demo](./images/fg1.png)
 
@@ -170,7 +165,7 @@ Or you can copy the JSON Response from here:
 }
 ```
 
-Copy the above JSON Response to your clipboard, then go to your custom Data Source configuration screen.
+Copy the above JSON Response to your clipboard, then go to your custom data source configuration screen.
 
 Click the **Edit Payload** icon.
 
@@ -180,17 +175,15 @@ You'll see a popup where you now have to paste the above JSON Response.
 
 ![Demo](./images/owmapi3.png)
 
-Paste your JSON Response.
+Paste your JSON Response, after which you'll see this. Click **Save**.
 
 ![Demo](./images/owmapi4.png)
 
-Click **Save**.
-
-Your custom Data Source configuration is now complete. Scroll up and click **Save**.
+Your custom data source configuration is now complete. Scroll up and click **Save**.
 
 ![Demo](./images/dssave.png)
 
-Your Data Source has now been created successfully and is part of the **Data Sources** list.
+Your data source has now been created successfully and is part of the **Data Sources** list.
 
 ![Demo](./images/dslist.png)
 
@@ -199,4 +192,3 @@ Next Step: [12.3 Define a custom action](./ex3.md)
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
 [Go Back to All Modules](../../overview.md)
-Adobe Journey Optimizer
