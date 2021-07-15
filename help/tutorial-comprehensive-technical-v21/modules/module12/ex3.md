@@ -9,7 +9,7 @@ exl-id: a8d6077e-e386-427c-a797-c279ad1ab504
 ---
 # 12.3 Define a custom action
 
-In this exercise, you'll create two custom Actions by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
+In this exercise, you'll create two custom actions by making use of Adobe Journey Optimizer in combination.
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
@@ -27,7 +27,7 @@ You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/home.png)
 
-In the menu, click on **Actions**.
+In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Actions**.
 
 ![Demo](./images/menuactions.png)
 
@@ -37,18 +37,18 @@ You'll then see the **Actions** list.
 
 You'll define two actions:
 
-* One action that sends an SMS using an external application, Twilio
-* One action that sends a text to a Slack channel
+- One action that sends an SMS using an external application, Twilio
+- One action that sends a text to a Slack channel
 
-## Action: Send SMS using Twilio
+## 12.3.1 Action: Send SMS using Twilio
 
 Twilio is a 3rd party provider of SMS Messages. It has an easy-to-use API and we'll use Adobe Journey Optimizer to trigger their API.
 
 ![Demo](./images/twilio.png)
 
-Click **Add** to start adding your action.
+Click **Create Action** to start adding your action.
 
-![Demo](./images/add.png)
+![Demo](./images/adda.png)
 
 You'll see an empty Action popup.
 
@@ -69,7 +69,9 @@ You don't need to change the Header Fields.
 
 ![Demo](./images/twiliourl.png)
 
-(For transparency, we're using an AWS API Gateway and AWS Lambda function that sits behind the above URL to handle the authentication and sending of SMSs to Twilio.)
+>[!NOTE]
+>
+>For transparency, we're using an AWS API Gateway and AWS Lambda function that sits behind the above URL to handle the authentication and sending of SMSs to Twilio.
 
 **Authentication** should be set to **No Authentication**.
 
@@ -130,15 +132,15 @@ Your custom Action is now part of the **Actions** list.
 
 Let's define your second action now.
 
-## Action: Send Text to Slack Channel
+## 12.3.2 Action: Send Text to Slack Channel
 
 We'll now use an existing Slack Channel and send messages to that Slack Channel. Slack has an easy-to-use API and we'll use Adobe Journey Optimizer to trigger their API.
 
 ![Demo](./images/slack.png)
 
-Click **Add** to start adding your action.
+Click **Create Action** to start adding a new action.
 
-![Demo](./images/add.png)
+![Demo](./images/adda.png)
 
 You'll see an empty Action popup.
 
@@ -213,7 +215,7 @@ Your custom Action is now part of the **Actions** list.
 
 ![Demo](./images/slackdone.png)
 
-You've defined Events, Data Sources and Actions. Now let's consolidate all of that in one Orchestrated Journey.
+You've defined events, an external data sources and actions. Now let's consolidate all of that in one journey.
 
 Next Step: [12.4 Design a trigger-based journey](./ex4.md)
 

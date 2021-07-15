@@ -9,7 +9,7 @@ exl-id: 0b46729e-cc3c-414f-b8bf-c25bb02da56e
 ---
 # 12.2 Define an external data source
 
-In this exercise, you'll create a custom external data source by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
+In this exercise, you'll create a custom external data source by making use of Adobe Journey Optimizer.
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
