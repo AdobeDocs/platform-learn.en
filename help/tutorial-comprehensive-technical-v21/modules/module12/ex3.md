@@ -62,8 +62,8 @@ Set Description to: `Send SMS using Twilio`.
 
 For the **URL Configuration**, use this:
 
-* URL: `https://l1uikl5kog.execute-api.us-west-2.amazonaws.com/prod/`
-* Method: **POST**
+- URL: `https://l1uikl5kog.execute-api.us-west-2.amazonaws.com/prod/`
+- Method: **POST**
 
 You don't need to change the Header Fields.
 
@@ -154,8 +154,8 @@ Set Description to: `Send Text to Slack`.
 
 For the **URL Configuration**, use this:
 
-* URL: `https://2mnbfjyrre.execute-api.us-west-2.amazonaws.com/prod`
-* Method: **POST**
+- URL: `https://2mnbfjyrre.execute-api.us-west-2.amazonaws.com/prod`
+- Method: **POST**
 
 >[!NOTE]
 >
