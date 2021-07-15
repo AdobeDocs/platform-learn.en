@@ -1,15 +1,15 @@
 ---
-title: Journey Orchestration - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
-description: Journey Orchestration - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
+title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
+description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 6bec303b-b58a-4b9f-8ded-5e7354cf06b6
 ---
-# 12.4 Design a trigger-based Customer Journey
+# 12.4 Design a trigger-based journey
 
-In this exercise, you'll create an orchestrated journey by making use of Journey Orchestration in combination with Adobe Experience Platform.
+In this exercise, you'll create an orchestrated journey by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
@@ -17,11 +17,11 @@ You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
-Click on **Journey Orchestration**.
+Click on **Adobe Journey Optimizer**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration** homepage, which shows all existing Journeys.
+Next, you'll see the **Adobe Journey Optimizer** homepage, which shows all existing Journeys.
 
 ![Demo](./images/journeyhome.png)
 
@@ -683,7 +683,7 @@ Your Journey is now published.
 
 In the next exercise, you'll be able to test your Journey.
 
-Next Step: [12.5 Trigger your Orchestrated Customer Journey](./ex5.md)
+Next Step: [12.5 Trigger your journey](./ex5.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 

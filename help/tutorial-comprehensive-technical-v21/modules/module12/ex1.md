@@ -1,15 +1,15 @@
 ---
-title: Journey Orchestration - External Weather API, SMS Action & more - Define an Event
-description: Journey Orchestration - External Weather API, SMS Action & more
+title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define an Event
+description: Adobe Journey Optimizer - External Weather API, SMS Action & more
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: b08a065d-c9a3-4f66-9386-4cf62eafc6c4
 ---
-# 12.1 Define an Event
+# 12.1 Define an event
 
-In this exercise, you'll create a custom Event by making use of Journey Orchestration in combination with Adobe Experience Platform.
+In this exercise, you'll create a custom Event by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
@@ -17,11 +17,11 @@ You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
-Click on **Journey Orchestration**.
+Click on **Adobe Journey Optimizer**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration** homepage.
+Next, you'll see the **Adobe Journey Optimizer** homepage.
 
 ![Demo](./images/aecjoh.png)
 
@@ -84,9 +84,9 @@ This Mixin only has two fields, `_experience.campaign.orchestration.eventID` and
 
 ![Data Ingestion](./images/eventidmixin.png)
 
-Once this Mixin and this specific eventID field are part of a Schema, that Schema will be available for usage by Journey Orchestration.
+Once this Mixin and this specific eventID field are part of a Schema, that Schema will be available for usage by Adobe Journey Optimizer.
 
-Go back to your Event configuration in Journey Orchestration.
+Go back to your Event configuration in Adobe Journey Optimizer.
 
 ![Demo](./images/evschema.png)
 
@@ -94,7 +94,7 @@ In this use-case, you want to listen to a Geofence Event to understand if a cust
 
 ![Demo](./images/evschema1.png)
 
-Journey Orchestration will then automatically select some required fields, but you can edit the fields that are made available to Journey Orchestration.
+Adobe Journey Optimizer will then automatically select some required fields, but you can edit the fields that are made available to Adobe Journey Optimizer.
 
 Click the **pencil** icon to edit the fields.
 
@@ -116,8 +116,8 @@ Once that's done, click **OK**.
 
 ![Demo](./images/popupok.png)
 
-Journey Orchestration also needs an Identifier to identify the customer. Since Journey Orchestration is linked to Adobe Experience Platform, the Primary Identifier of a Schema is automatically taken as the Identifier for the Journey.
-The Primary Identifier will also automatically take into account the full Identity Graph of Adobe Experience Platform and will link all behavior across all available identities, devices and channels to the same profile, so that Journey Orchestration is contextual, relevant and consistent.
+Adobe Journey Optimizer also needs an Identifier to identify the customer. Since Adobe Journey Optimizer is linked to Adobe Experience Platform, the Primary Identifier of a Schema is automatically taken as the Identifier for the Journey.
+The Primary Identifier will also automatically take into account the full Identity Graph of Adobe Experience Platform and will link all behavior across all available identities, devices and channels to the same profile, so that Adobe Journey Optimizer is contextual, relevant and consistent.
 
 ![Demo](./images/eventidentifier.png)
 
@@ -155,7 +155,7 @@ You've now defined the event that will trigger the Journey we're building. Once 
 
 As discussed in the use-case description, we then need to provide contextual promotions that depend on the weather. In order to get weather information, we'll need to define an external data sources that will provide us with the weather information for that location. We'll use the **OpenWeather** service to provide us what that information, as part of 2.
 
-Next Step: [12.2 Define an External Data Source](./ex2.md)
+Next Step: [12.2 Define an external data source](./ex2.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 

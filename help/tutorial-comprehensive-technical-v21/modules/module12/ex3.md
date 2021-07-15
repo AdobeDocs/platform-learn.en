@@ -1,15 +1,15 @@
 ---
-title: Journey Orchestration - External Weather API, SMS Action & more - Define Custom Actions
-description: Journey Orchestration - External Weather API, SMS Action & more - Define Custom Actions
+title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define Custom Actions
+description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define Custom Actions
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: a8d6077e-e386-427c-a797-c279ad1ab504
 ---
-# 12.3 Define Custom Actions
+# 12.3 Define a custom action
 
-In this exercise, you'll create two custom Actions by making use of Journey Orchestration in combination with Adobe Experience Platform.
+In this exercise, you'll create two custom Actions by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
@@ -17,11 +17,11 @@ You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
-Click on **Journey Orchestration**.
+Click on **Adobe Journey Optimizer**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration** homepage.
+Next, you'll see the **Adobe Journey Optimizer** homepage.
 
 ![Demo](./images/aecjoh.png)
 
@@ -40,7 +40,7 @@ You'll define two actions:
 
 ## Action: Send SMS using Twilio
 
-Twilio is a 3rd party provider of SMS Messages. It has an easy-to-use API and we'll use Journey Orchestration to trigger their API.
+Twilio is a 3rd party provider of SMS Messages. It has an easy-to-use API and we'll use Adobe Journey Optimizer to trigger their API.
 
 ![Demo](./images/twilio.png)
 
@@ -73,7 +73,7 @@ You don't need to change the Header Fields.
 
 ![Demo](./images/twilioauth.png)
 
-For the **Action Parameters**, you need to define which fields should be sent towards Twilio. Logically, we want Journey Orchestration and Adobe Experience Platform to be the brain of personalization, so the SMS Message Text and the Mobile Number to send the SMS towards should be defined by Journey Orchestration and then sent to Twilio for execution.
+For the **Action Parameters**, you need to define which fields should be sent towards Twilio. Logically, we want Adobe Journey Optimizer and Adobe Experience Platform to be the brain of personalization, so the SMS Message Text and the Mobile Number to send the SMS towards should be defined by Adobe Journey Optimizer and then sent to Twilio for execution.
 
 So for the **Action Parameters**, click the **Edit Payload** icon.
 
@@ -130,7 +130,7 @@ Let's define your second action now.
 
 ## Action: Send Text to Slack Channel
 
-We'll now use an existing Slack Channel and send messages to that Slack Channel. Slack has an easy-to-use API and we'll use Journey Orchestration to trigger their API.
+We'll now use an existing Slack Channel and send messages to that Slack Channel. Slack has an easy-to-use API and we'll use Adobe Journey Optimizer to trigger their API.
 
 ![Demo](./images/slack.png)
 
@@ -165,7 +165,7 @@ You don't need to change the Header Fields.
 
 ![Demo](./images/slackauth.png)
 
-For the **Action Parameters**, you need to define which fields should be sent towards Slack. Logically, we want Journey Orchestration and Adobe Experience Platform to be the brain of personalization, so the text to send to Slack should be defined by Journey Orchestration and then sent to Slack for execution.
+For the **Action Parameters**, you need to define which fields should be sent towards Slack. Logically, we want Adobe Journey Optimizer and Adobe Experience Platform to be the brain of personalization, so the text to send to Slack should be defined by Adobe Journey Optimizer and then sent to Slack for execution.
 
 So for the **Action Parameters**, click the **Edit Payload** icon.
 
@@ -213,7 +213,7 @@ Your custom Action is now part of the **Actions** list.
 
 You've defined Events, Data Sources and Actions. Now let's consolidate all of that in one Orchestrated Journey.
 
-Next Step: [12.4 Design a trigger-based Customer Journey](./ex4.md)
+Next Step: [12.4 Design a trigger-based journey](./ex4.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 

@@ -177,11 +177,11 @@ You can find the requirements and process for submitting completion here: [Measu
 - **Description:** In this module, you'll configure a segment, enable it for Streaming Segmentation and activate the segment to several destinations, including Google DV360, Google AdWords, Adobe Audience Manager, Adobe Target and S3-destinations like Salesforce Marketing Cloud.
 - **Time Investment:** 90 minutes
 
-[12. Journey Orchestration - External Weather API, SMS Action & more](./modules/module12/journey-orchestration-external-weather-api-sms.md)
+[12. Adobe Journey Optimizer: External data sources and custom actions](./modules/module12/journey-orchestration-external-weather-api-sms.md)
 
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer, Marketer
-- **Prerequisites:** Access to Adobe Experience Platform, Journey Orchestration, Open Weather API, Twilio
-- **Description:** In this module, you'll use Journey Orchestration to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way over various channels.
+- **Prerequisites:** Access to Adobe Experience Platform, Adobe Journey Optimizer, Open Weather API, Twilio
+- **Description:** In this module, you'll use Adobe Journey Optimizer to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way over various channels.
 - **Time Investment:** 90 minutes
 
 [13. Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/module13/customer-journey-analytics-build-a-dashboard.md)

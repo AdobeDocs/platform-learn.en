@@ -1,28 +1,28 @@
 ---
-title: Journey Orchestration - External Weather API, SMS Action & more
-description: Journey Orchestration - External Weather API, SMS Action & more
+title: Adobe Journey Optimizer - External Weather API, SMS Action & more
+description: Adobe Journey Optimizer - External Weather API, SMS Action & more
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 7b9440bc-d14b-43fb-83ad-b0fefabea863
 ---
-# 12. Journey Orchestration - External Weather API, SMS Action & more
+# 12. Adobe Journey Optimizer: External data sources and custom actions
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In this module, you'll use Journey Orchestration to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way. You've already had an initial hands-on experience with Journey Orchestration in Module 6. In this exercise, you'll go a bit deeper and explore a more advanced use case whereby external data sources are used as part of a journey.
+In this module, you'll use Adobe Journey Optimizer to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way. You've already had an initial hands-on experience with Adobe Journey Optimizer in Module 6. In this exercise, you'll go a bit deeper and explore a more advanced use case whereby external data sources are used as part of a journey.
 
 ## Learning Objectives
 
-- Learn how to create events, external data sources and journeys in Journey Orchestration
+- Learn how to create events, external data sources and journeys in Adobe Journey Optimizer
 - Learn how to consume weather information from the Open Weather API
-- Learn how to use custom action destinations like Twilio and Slack from Journey Orchestration
+- Learn how to use custom action destinations like Twilio and Slack from Adobe Journey Optimizer
 
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Journey Orchestration
+- Access to Adobe Journey Optimizer
 - Access to the Open Weather API
 - Access to Twilio
 
@@ -52,25 +52,25 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 ## Exercises
 
-[12.1 Define an Event](./ex1.md)
+[12.1 Define an event](./ex1.md)
 
-Learn how to define a custom event using Journey Orchestration.
+Learn how to define a custom event using Adobe Journey Optimizer.
 
-[12.2 Define an External Data Source](./ex2.md)
+[12.2 Define an external data source](./ex2.md)
 
-Learn how to configure an external Data Source using Journey Orchestration.
+Learn how to configure an external data source using Adobe Journey Optimizer.
 
-[12.3 Define a Custom Action](./ex3.md)
+[12.3 Define a custom action](./ex3.md)
 
-Learn how to define an external Action using Journey Orchestration.
+Learn how to define an external action using Adobe Journey Optimizer.
 
-[12.4 Design a trigger-based Customer Journey](./ex4.md)
+[12.4 Design a trigger-based journey](./ex4.md)
 
 Combine events, data sources and actions into an intelligent and contextual Journey.
 
-[12.5 Trigger your Orchestrated Customer Journey](./ex5.md)
+[12.5 Trigger your journey](./ex5.md)
 
-Trigger your specific Journey.
+Trigger your specific journey.
 
 [Summary and benefits](./summary.md)
 

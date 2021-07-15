@@ -1,15 +1,15 @@
 ---
-title: Journey Orchestration - External Weather API, SMS Action & more - Define an External Data Source
-description: Journey Orchestration - External Weather API, SMS Action & more - Define an External Data Source
+title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define an External Data Source
+description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define an External Data Source
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: 0b46729e-cc3c-414f-b8bf-c25bb02da56e
 ---
-# 12.2 Define an External Data Source
+# 12.2 Define an external data source
 
-In this exercise, you'll create a custom External Data Source by making use of Journey Orchestration in combination with Adobe Experience Platform.
+In this exercise, you'll create a custom External Data Source by making use of Adobe Journey Optimizer in combination with Adobe Experience Platform.
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/)
 
@@ -17,11 +17,11 @@ You'll see the **Adobe Experience Cloud** homepage.
 
 ![Demo](./images/aec.png)
 
-Click on **Journey Orchestration**.
+Click on **Adobe Journey Optimizer**.
 
 ![Demo](./images/aecjo.png)
 
-Next, you'll see the **Journey Orchestration** homepage.
+Next, you'll see the **Adobe Journey Optimizer** homepage.
 
 ![Demo](./images/aecjoh.png)
 
@@ -79,7 +79,7 @@ In our use-case, we'll implement the connection with Open Weather Map based on t
 
 ![WeatherMap](./images/owm6.png)
 
-Go back to **Journey Orchestration**, to your empty **External Data Source** popup.
+Go back to **Adobe Journey Optimizer**, to your empty **External Data Source** popup.
 
 ![Demo](./images/emptyds.png)
 
@@ -194,8 +194,9 @@ Your Data Source has now been created successfully and is part of the **Data Sou
 
 ![Demo](./images/dslist.png)
 
-Next Step: [12.3 Define a Custom Action](./ex3.md)
+Next Step: [12.3 Define a custom action](./ex3.md)
 
 [Go Back to Module 12](journey-orchestration-external-weather-api-sms.md)
 
 [Go Back to All Modules](../../overview.md)
+Adobe Journey Optimizer
