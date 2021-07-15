@@ -13,7 +13,7 @@ In this exercise, you'll test and trigger the journey you configured in this mod
 
 ## Update your Configuration ID
 
-Before you can test your journey, you'll need to update your Configuration ID settings and enter the EventID of the **geofenceEntryLdap** event on the **Update Configuration ID** page of the AEP Demo website Admin pages.
+Before you can test your journey, you'll need to update your Configuration ID settings and enter the EventID of the **geofenceEntryLdap** event on the **Update Configuration ID** page of the demo website, on the admin page.
 
 Go to [https://public.aepdemo.net/admin_configuration_update.html](https://public.aepdemo.net/admin_configuration_update.html).
 
@@ -110,13 +110,15 @@ On the **Send Geofence Event** page, click **Allow** on the prompt to **Know you
 
 After 1-2 seconds (sometimes this can take up to 1-2 minutes), you'll see the coordinates, city and country of your approximate location. Once the coordinates are shown, you have to enter your Orchestration eventID from 1. In this example, the **eventID** is **d9b5069cebd47bb3394e192da031d933a9e10d67046dadde999ec7401eb7bd51**.
 
+If it takes too long to get your location dynamically, or if it doesn't work, you can also fill out your city manually in the input field.
+
 ![Demo](./images/gf16.png)
 
 Click **Send Geofence Event**. You'll get a visual confirmation when the Geofence Event has been sent.
 
 ![Demo](./images/gf17.png)
 
-You should then receive a SMS Message on the Mobile Phone that was attached to your Real-time Customer Profile. The SMS Message will depend on the current weather and the temperature, just like you configured in your Journey.
+You should then receive an SMS on the mobile phone number that was attached to your Real-time Customer Profile. The SMS will depend on the current weather and the temperature, just like you configured in your Journey.
 
 >[!NOTE]
 >
