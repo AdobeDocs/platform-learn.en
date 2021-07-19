@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: fcef20e0-2afb-4982-b4fb-504f63d95893
 ---
-# 13.1 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
+# 13.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 
 ## Objectives
 
