@@ -66,7 +66,7 @@ Learn how to define an external action using Adobe Journey Optimizer.
 
 [12.4 Design a trigger-based journey](./ex4.md)
 
-Combine events, data sources and actions into an intelligent and contextual Journey.
+Combine events, data sources and actions into an intelligent and contextual journey.
 
 [12.5 Trigger your journey](./ex5.md)
 

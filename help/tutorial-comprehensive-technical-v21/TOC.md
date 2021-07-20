@@ -46,7 +46,7 @@ doc-type: tutorial
   + [3.3 Visualize your own real-time customer profile - API](/help/tutorial-comprehensive-technical-v21/modules/module3/ex3.md)
   + [3.4 Create a segment - UI](/help/tutorial-comprehensive-technical-v21/modules/module3/ex4.md)
   + [3.5 Create a segment - API](/help/tutorial-comprehensive-technical-v21/modules/module3/ex5.md)
-  + [3.6 See you Real-time Customer Profile in action in the Call Center](/help/tutorial-comprehensive-technical-v21/modules/module3/ex6.md)
+  + [3.6 See your Real-time Customer Profile in action in the call center](/help/tutorial-comprehensive-technical-v21/modules/module3/ex6.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module3/summary.md)
 + 4 - Voice Assistant - Amazon Alexa {#module4}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module4/data-ingestion-amazon-alexa.md)
