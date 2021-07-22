@@ -12,7 +12,7 @@ In the previous video we saw how an example brand, Luma, was able to create a ri
 
 >[!VIDEO](https://video.tv.adobe.com/v/28144?quality=12&learn=on)
 
->[!TIP]
+>[!INFO]
 >
 > This video is part of a course [Introduction to Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), available for free on Experience League!
 

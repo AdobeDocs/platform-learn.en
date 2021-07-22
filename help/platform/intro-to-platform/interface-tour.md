@@ -12,7 +12,7 @@ This video gives a quick tour of Experience Platform's user interface to show yo
 
 >[!VIDEO](https://video.tv.adobe.com/v/32792?quality=12&learn=on)
 
->[!TIP]
+>[!INFO]
 >
 > This video is part of a course [Introduction to Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), available for free on Experience League!
 
