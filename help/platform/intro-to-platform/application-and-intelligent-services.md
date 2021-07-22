@@ -12,7 +12,9 @@ This video gives an overview of the Application Services and Intelligent Service
 
 >[!VIDEO](https://video.tv.adobe.com/v/32554?quality=12&learn=on)
 
->[!TIP] This video is part of a course [Introduction to Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), available for free on Experience League!
+>[!TIP]
+>
+> This video is part of a course [Introduction to Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), available for free on Experience League!
 
 ## Additional Resources
 
