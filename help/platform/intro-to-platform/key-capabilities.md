@@ -1,6 +1,6 @@
 ---
 title: Key Capabilities of Adobe Experience Platform
-description: This video reviews the key capabilities of Adobe Experience Platform&mdash;Create actionable, intelligent, real-time customer profiles; Enrich data and derive more insights with AI/ML models and data queries; Innovate with open and composable components; Enhance delivery and personalization of real-time experiences; and Gain trust with governance, security and privacy controls.
+description: This video reviews the key capabilities of Adobe Experience Platform.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 kt: 4332
 thumbnail: 32502.jpg
@@ -14,7 +14,7 @@ This video reviews the key capabilities of Experience Platform:
 1. Enrich data and derive more insights with AI/ML models and data queries
 1. Innovate with open and composable components
 1. Enhance delivery and personalization of real-time experiences
-1. Gain trust with governance, security and privacy controls
+1. Gain trust with governance, security, and privacy controls
 
 >[!VIDEO](https://video.tv.adobe.com/v/32502?quality=12&learn=on)
 
