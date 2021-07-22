@@ -12,6 +12,8 @@ This video follows a hypothetical experience built with Adobe Experience Platfor
 
 >[!VIDEO](https://video.tv.adobe.com/v/27361?quality=12&learn=on)
 
+>[!INFO] This video is part of a course [Introduction to Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), available for free on Experience League!
+
 ## Additional Resources
 
 * [Behind the Scenes: A Customer Experience Powered by Experience Platform (video)](behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
