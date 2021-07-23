@@ -20,4 +20,4 @@ Learn about recipes, models, and services in Adobe Experience Platform Data Scie
 ## Additional Resources
 
 * [Data Science Workspace overview video](understanding-data-science-workspace.md)
-* [Data Science Workspace documentation](https://www.adobe.com/go/data-science-overview-en)
+* [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html)

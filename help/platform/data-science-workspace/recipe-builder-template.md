@@ -21,4 +21,4 @@ This video showcases using the recipe builder template in the JupyterLab launche
 
 * [Data Science Workspace overview video](understanding-data-science-workspace.md)
 * [Analyze model performance video](analyze-model-performance.md)
-* [Data Science Workspace documentation](https://www.adobe.com/go/data-science-overview-en)
+* [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html)
