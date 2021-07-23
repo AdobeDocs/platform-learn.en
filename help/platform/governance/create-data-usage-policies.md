@@ -13,6 +13,10 @@ This video shows how to create and manage data usage policies in the Adobe Exper
 
 >[!VIDEO](https://video.tv.adobe.com/v/32977?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course, [Getting Started with Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.dgov.gs), available for free on Experience League!
+
 ## Additional Resources
 
 * [Data usage policies documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/overview.html)

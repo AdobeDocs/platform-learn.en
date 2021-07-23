@@ -14,9 +14,13 @@ Learn how to create an instance of Customer AI to predict customer behavior.
 
 >[!TIP]
 >
->Customer AI supports both Adobe Analytics and Adobe Audience Manager datasets without the need to ETL your data to conform to the Consumer Experience Event (CEE) schema. To learn more, visit the [Intelligent Services data preparation guide](http://www.adobe.com/go/intelligent-services-data-prep-en).
+>Customer AI supports both Adobe Analytics and Adobe Audience Manager datasets without the need to ETL your data to conform to the Consumer Experience Event (CEE) schema. To learn more, visit the [Intelligent Services data preparation guide](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/data-preparation.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/32665?quality=12&learn=on)
+
+>[!INFO]
+>
+> This video is part of a course, [Getting Started with Intelligent Services for Marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), available for free on Experience League!
 
 ## Additional Resources
 

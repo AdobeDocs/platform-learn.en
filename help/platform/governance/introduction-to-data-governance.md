@@ -13,6 +13,10 @@ This video shows Adobe Experience Platform’s Data Governance capabilities and 
 
 >[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course, [Getting Started with Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.dgov.gs), available for free on Experience League!
+
 ## Additional Resources
 
 * [Data governance in Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html)

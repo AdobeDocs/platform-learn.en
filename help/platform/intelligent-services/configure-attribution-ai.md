@@ -14,6 +14,10 @@ Learn how to create an instance of Attribution AI to understand the impact of yo
 
 >[!VIDEO](https://video.tv.adobe.com/v/32668?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course, [Getting Started with Intelligent Services for Marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), available for free on Experience League!
+
 ## Additional Resources
 
 * [Introduction to Intelligent Services (video)](introduction-to-intelligent-services.md)

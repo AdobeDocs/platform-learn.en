@@ -13,6 +13,10 @@ The Exploratory Data Analysis (EDA) tutorial is designed to assist you with unde
 
 >[!VIDEO](https://video.tv.adobe.com/v/333310)
 
+>[!INFO]
+>
+> This video is part of a course, [Getting Started with Data Science Workspace for Data Scientists](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw), available for free on Experience League!
+
 ## Additional Resources
 
 * [JupyterLab data access guide](https://www.adobe.com/go/jupyterlab-notebook-data-access-en)
