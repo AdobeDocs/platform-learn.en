@@ -16,11 +16,11 @@ In this module, you've learned ...
 
 Let's highlight the benefits of ...
 
-- 
-
 ## Check this out
 
+<!--
 - Tech Blog: [xxx](https://medium.com/xxx)
+-->
 
 [Go Back to Module 22](./adobe-io-firefly.md)
 

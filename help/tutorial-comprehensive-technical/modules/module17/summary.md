@@ -18,11 +18,7 @@ Finally, you used Journey orchestration to connect directly with Microsoft Dynam
 
 Let's highlight the benefits of integrating Adobe Experience Platform with Microsoft Dynamics 365:
 
-- 
-
 ## Check this out
-
-- 
 
 [Go Back to Module 17](./adobe-experience-platform-microsoft-dynamics-365.md)
 
