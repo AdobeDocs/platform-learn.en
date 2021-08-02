@@ -34,7 +34,7 @@ Topics include:
 
 ## Business Scenario
 
-Adobe Experience Platform is a technical platform designed to help you achieve marketing objectives. The business use cases should drive how you design and implement the technology. This tutorial focuses on a fictional retail brand called Luma. Luma operates brick-and-mortar stores in multiple countries and also has an online presence with a website and mobile apps. They are investing in Adobe Experience Platform to combine loyalty, CRM, web, and offline purchase data into real-time customer profiles and activate these profiles to take their marketing to the next level. The business objectives of Luma may or may not align with those of your company, but you should be able to relate the hands-on steps in this tutorial to your own business objectives.
+Adobe Experience Platform is a technical platform designed to help you achieve marketing objectives. The business use cases should drive how you design and implement the technology. This tutorial focuses on a fictional retail brand called Luma. Luma operates brick-and-mortar stores in multiple countries and also has an online presence with a website and mobile apps. They are investing in Adobe Experience Platform to combine loyalty, CRM, web, and offline purchase data into real-time customer profiles and activate these profiles to take their marketing to the next level. The business objectives of Luma may or may not align with the objectives of your company, but you should be able to relate the hands-on steps in this tutorial to your own business objectives.
 
 ## Pre-requisites
 
@@ -44,11 +44,11 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 
 ## Using this tutorial
 
-This tutorial combines tasks for both Data Engineers and Data Architects. Since this is an introductory-level tutorial, you should easily be able to complete the tasks for both roles. In each lesson, I call out the primary audience&mdash;Data Architects, Data Engineers, or both roles.  Because many of the lessons build on what was implemented in earlier lessons, you should move through the lessons in order. I will call out which lessons can be skipped. Of course, if you want to, you could also tag team the tutorial with a colleague in the other role.
+This tutorial combines tasks for both Data Engineers and Data Architects. Since it's an introductory-level tutorial, you should be able to complete the tasks for both roles. In each lesson, I call out the primary audience&mdash;Data Architects, Data Engineers, or both roles. Because many of the lessons build on what was implemented in earlier lessons, you should move through the lessons in order. I will call out which lessons can be skipped. If you want to, you could also tag team the tutorial with a colleague in the other role.
 
 Try to stick to the names assigned to various elements in the tutorial, as they are constantly referred to by these names. However, there are a few high-level containers that you may want to customize the names in case there are multiple people at your organization taking this tutorial. For example, you may want to name the Product Profile "Luma Tutorial Platform - Fred Bean" instead of just "Luma Tutorial Platform."
 
-If you get stuck, try re-reading the instructions first, and then use the "Log an Issue" link on the upper-right of each page to contact me. 
+If you get stuck, try re-reading the instructions first, and then use the ![Log an issue](https://experienceleague.adobe.com/assets/img/feedback.svg) link on the sidebar of each page to contact me. 
 
 ## Technical notes
 
@@ -62,6 +62,6 @@ Platform is built API-first. While interface workflows exist for all major Platf
 
 ### Third-party technologies
 
-Although you will use multiple technologies in this tutorial, we will remain almost entirely within the Adobe ecosystem. In your own Platform implementation, you will likely integrate Platform with specific third-party technologies. To keep this tutorial relevant for all customers, we will stick to a more generic implementation. 
+Although you will use multiple technologies in this tutorial, you will remain almost entirely within the Adobe ecosystem. In your own Platform implementation, you will likely integrate Platform with specific third-party technologies. To keep this tutorial relevant for all customers, we will use a more generic implementation. 
 
 Now let's move on to the first lesson&mdash;[configure permissions](configure-permissions.md).

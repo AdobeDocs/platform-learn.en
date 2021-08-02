@@ -2,7 +2,7 @@
 title: Run queries
 seo-title: Run queries | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Run queries
-description: In this lesson you will learn how to setup, write and execute queries to validate the data you have ingested.
+description: In this lesson you will learn how to setup, write, and execute queries to validate the data you have ingested.
 role: Data Architect, Data Engineer
 feature: Queries
 kt: 4348
@@ -12,7 +12,7 @@ exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 # Run queries
 
 <!-- 15 min-->
-In this lesson, you will learn how to setup, write and execute queries to validate the data you have ingested.
+In this lesson, you will learn how to setup, write, and execute queries to validate the data you have ingested.
 
 Adobe Experience Platform Query Service helps you make sense of your data by allowing you to use standard SQL to query data in Platform. Using Query Service, you can join any dataset in the Data Lake and capture the query results as a new dataset for use in reporting, machine learning, or for ingestion into Real-time Customer Profile.
 
@@ -23,7 +23,7 @@ Before you begin the exercises, watch this short video to learn more about Query
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
 
 * Settings > **[!UICONTROL Services]** > **[!UICONTROL Query Service]**
 * Permission items Data Management > **[!UICONTROL View Datasets]** and  **[!UICONTROL Manage Datasets]**
@@ -34,16 +34,15 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 Let's start with some simple queries:
 
-1. In the Platform UI, click **Queries** in the left navigation
-1. Click the **Create Query** button on the top right
-1. This will open a text box to run and execute queries
+1. In the Platform UI, go to **Queries** in the left navigation
+1. Select the **Create Query** button on the top right to open a text box to run and execute queries
 1. Enter the following query in the editor and press Shift+Enter or Shift+Return to execute the query.
 
     ```
     SHOW TABLES
     ```
 
-1. This will show list of available tables
+1. This shows the list of available tables
 
     ![SHOW TABLE query](assets/queries-showTables.png)
 
@@ -58,11 +57,11 @@ Let's start with some simple queries:
 
     ![SELECT data from the loyalty dataset](assets/queries-loyaltySelect.png)
 
-1. If there is any error you detailed messages will appear in the **[!UICONTROL Console]** tab, as pictured below
+1. If there is any error, detailed messages will appear in the **[!UICONTROL Console]** tab, as pictured below
     ![Error in the query](assets/queries-error.png)
 
 1. With your successful query, **[!UICONTROL Name]** it `Luma Gold Level Customers`
-1. Click the **[!UICONTROL Save]** button
+1. Select the **[!UICONTROL Save]** button
     ![Saving the query](assets/queries-loyaltySelect-save.png)
 
 ## Additional Exercises
@@ -94,7 +93,7 @@ In this exercise, we will join two datasets `Luma Loyalty Dataset` and `Luma Off
 
 ## Output datasets
 
-1. Click on Output Dataset button
+1. Select on Output Dataset button
 1. Provide name and description to the dataset
 1. Save.
 1. Go to **Datasets** under **Data Management** to find new dataset created.

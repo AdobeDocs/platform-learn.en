@@ -1,7 +1,7 @@
 ---
 title: Create and publish a trained model
 description: This tutorial walks through the steps to create, train, evaluate, and publish a model using a recipe made with the JupyterLab recipe builder notebook.
-role: Business Practitioner
+role: User
 feature: Data Science Workspace
 kt: 7291
 thumbnail: 333595.jpg
@@ -14,6 +14,10 @@ In Adobe Experience Platform Data Science Workspace, a machine learning Model is
 This tutorial walks through the steps to create, train, evaluate, and publish a model using a recipe made with the JupyterLab recipe builder notebook.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333595)
+
+>[!INFO]
+>
+> This video is part of a course, [Getting Started with Data Science Workspace for Data Scientists](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw), available for free on Experience League!
 
 ## Additional Resources
 

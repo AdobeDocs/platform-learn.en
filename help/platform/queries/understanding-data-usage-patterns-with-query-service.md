@@ -1,7 +1,7 @@
 ---
 title: Understanding Data Usage Patterns with Query Service
 description: This video shares tips and best practices for running queries in the query editor interface, PSQL clients, business intelligence (BI) solutions and the HTTP API.
-role: Data Engineer,Business Practitioner
+role: Data Engineer,User
 feature: Queries
 kt: 3715
 thumbnail: 29811.jpg
