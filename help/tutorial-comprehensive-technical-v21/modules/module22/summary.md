@@ -10,17 +10,6 @@ exl-id: 5a0f4c64-636c-4fd3-88e1-25d4502e4184
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Adobe I/O Project Firefly and Adobe Experience Platform! 
-In this module, you've learned ... 
-
-## Benefits
-
-Let's highlight the benefits of ...
-
-## Check this out
-
-<!--
-- Tech Blog: [xxx](https://medium.com/xxx)
--->
 
 [Go Back to Module 22](./adobe-io-firefly.md)
 

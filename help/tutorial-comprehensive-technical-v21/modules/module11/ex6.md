@@ -13,7 +13,7 @@ Adobe Experience Platform also has the ability to share Audiences directly with 
 
 This means that all segments built in Adobe Experience Platform will popup in the Experience Cloud **People Core Service - Audience Library**.
 
-Go to the Adobe Experience Cloud homepage by going to [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
+Go to the Adobe Experience Cloud homepage by going to [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/).
 
 ![RTCDP](./images/excl.png)
 
@@ -31,7 +31,7 @@ Now that all Adobe Experience Platform segments are available in the Adobe Exper
 >
 >Before you configure your Adobe Target activity, you need to ensure that the Adobe Target library is being loaded on the website. To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and verify that your Edge Configuration is loading Adobe Target.
 
-Let's go back to the Adobe Experience Cloud homepage by going to [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
+Let's go back to the Adobe Experience Cloud homepage by going to [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/).
 
 ![RTCDP](./images/excl.png)
 

@@ -19,7 +19,7 @@ Let's have a look at Adobe Audience Manager now.
 
 ## Use a Platform Segment as a Segment in AAM
 
-The URL to login to Adobe Audience Manager is: [http://experiencecloud.adobe.com/](http://experiencecloud.adobe.com/).
+The URL to login to Adobe Audience Manager is: [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/).
 
 ![RTCDP](./images/excl.png)
 

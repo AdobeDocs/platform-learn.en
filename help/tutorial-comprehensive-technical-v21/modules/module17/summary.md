@@ -14,12 +14,6 @@ In this module, you learnt how to set up your instance of Dynamics 365 for Sales
 
 Finally, you used Adobe Journey Optimizer to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the AEP Demo website and you configured Adobe Journey Optimizer to communicate directly to a customer based on the on a change in sentiment. In addition, you also learnt how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Adobe Journey Optimizer based on the Contact record change in Microsoft Dynamics 365.
 
-## Benefits
-
-Let's highlight the benefits of integrating Adobe Experience Platform with Microsoft Dynamics 365:
-
-## Check this out
-
 [Go Back to Module 17](./adobe-experience-platform-microsoft-dynamics-365.md)
 
 [Go Back to All Modules](../../overview.md)
