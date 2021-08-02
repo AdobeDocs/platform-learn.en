@@ -11,7 +11,7 @@ exl-id: ff5db388-6ae2-44ed-a30a-b5127e6cbd31
 
 ## 17.2.1 Update the Contact Entity in Microsoft Dynamics 365
 
-Login to your Microsoft Dynamics 365 account. The URL of your Microsoft Dynamics 365 account looks like this: https://**NAME**.**REGION**.dynamics.com, for instance, [https://demosystemvangeluw101.crm4.dynamics.com](https://demosystemvangeluw101.crm4.dynamics.com).
+Login to your Microsoft Dynamics 365 account. The URL of your Microsoft Dynamics 365 account looks like this: https://**NAME**.**REGION**.dynamics.com, for instance, https://demosystemvangeluw101.crm4.dynamics.com.
 
 You'll then see this. Click on **Dynamics 365 - custom**.
 

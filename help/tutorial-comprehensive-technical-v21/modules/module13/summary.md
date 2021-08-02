@@ -34,7 +34,6 @@ You can now:
 
 ## Check this out
 
-- AEP Tutorials: [Customer Journey Analytics Tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/cja/understanding-customer-journey-analytics.html)
 - Experience Platform Documentation: [Customer Journey Analytics - Product Documentation](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-landing.html)
 
 [Go Back to Module 13](./customer-journey-analytics-build-a-dashboard.md)

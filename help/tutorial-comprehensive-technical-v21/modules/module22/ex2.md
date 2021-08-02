@@ -173,7 +173,7 @@ Go into your newly created app directory `[ladp]HelloWorld` and list the generat
 
 ## 21.2.4 Building and deploying the app
 
-There are numerous ways to build / test / deploy the application but for this enablement we keep it simple and will deploy the app straight away using the Experience Cloud Shell. If you want to explore other alternatives, please check out the [public documentation](https://github.com/AdobeDocs/project-firefly/blob/master/getting_started/first_app.md).
+There are numerous ways to build / test / deploy the application but for this enablement we keep it simple and will deploy the app straight away using the Experience Cloud Shell. 
 
 To build and deploy the app:
 

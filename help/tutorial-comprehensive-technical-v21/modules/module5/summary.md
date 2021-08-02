@@ -24,7 +24,6 @@ Let's highlight the benefits of integrating Informatica with Adobe Experience Pl
 
 - Adobe Blog: [New Adobe Experience Platform: Purpose-built for the Experience Business](https://theblog.adobe.com/new-adobe-cloud-platform-way-manage-experience-data-scale/)
 - Unifi: [Unique Audience Experiences Derived from Data - Unifi and Adobe Experience Platform](https://unifisoftware.com/solutions/adobe-experience-platform/)
-- TMMData: [TMMData Announces Deep Integration With Adobe Experience Platform](https://content.tmmdata.com/press/tmmdata-announces-deep-integration-with-adobe-cloud-platform)
 - Medium Article: [Modeling One to Many Relationships in XDM (https://medium.com/adobetech/modeling-one-to-many-in-xdm-on-adobe-experience-platform-a44cbdb5b615)]
 
 [Go Back to Module 5](./data-ingestion-informatica-etl.md)
