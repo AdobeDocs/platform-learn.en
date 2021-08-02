@@ -736,7 +736,7 @@ Replace that code (without overwriting the **%%writefile** line) with this code:
 
 ```python
 from ml.runtime.python.Interfaces.AbstractEvaluator import AbstractEvaluator
-from data_access_sdk_python.reader import DataSetReader
+from platform_sdk.dataset_reader import DatasetReader
 import numpy as np
 import pandas as pd
 
