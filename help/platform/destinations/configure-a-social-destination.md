@@ -3,7 +3,7 @@ title: How to configure a social destination
 description: In this video, we walk through the configuration of a social destination in Adobe Experience Platform, including authentication, segment assignment, ID mapping, etc.
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Destinations
-role: Business Practitioner
+role: User
 level: Beginner
 kt: 7206
 thumbnail: 332599.jpg

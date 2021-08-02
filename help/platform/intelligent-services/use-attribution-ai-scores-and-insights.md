@@ -1,7 +1,7 @@
 ---
 title: Use Attribution AI Scores and Insights
 description: Learn how to use the Attribution AI insights page to understand the ROI of marketing channels and campaigns
-role: Business Practitioner
+role: User
 solution: Experience Platform, Intelligent Services
 feature: Attribution AI
 kt: 4173
@@ -13,6 +13,10 @@ exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
 Learn how to use the Attribution AI insights page to understand the ROI of marketing channels and campaigns.
 
 >[!VIDEO](https://video.tv.adobe.com/v/32669?quality=12&learn=on)
+
+>[!INFO]
+>
+> This video is part of a course, [Getting Started with Intelligent Services for Marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), available for free on Experience League!
 
 
 ## Additional Resources

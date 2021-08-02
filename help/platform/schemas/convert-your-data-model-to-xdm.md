@@ -13,6 +13,10 @@ This video shows how data architects can take their existing transactional data 
 
 >[!VIDEO](https://video.tv.adobe.com/v/333483?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course, [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), available for free on Experience League!
+
 ## Additional Resources
 
 * [Best practices for data modeling documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html)

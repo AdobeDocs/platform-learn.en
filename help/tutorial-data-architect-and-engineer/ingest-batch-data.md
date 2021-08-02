@@ -2,7 +2,7 @@
 title: Ingest batch data
 seo-title: Ingest batch data | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
 breadcrumb-title: Ingest batch data
-description: In this lesson, you will ingest batch data into Experience Platform using a variety of methods.
+description: In this lesson, you will ingest batch data into Experience Platform using various methods.
 role: Data Engineer
 feature: Data Ingestion
 kt: 4348
@@ -12,7 +12,7 @@ exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
 # Ingest batch data
 
 <!-- 1hr-->
-In this lesson, you will ingest batch data into Experience Platform using a variety of methods.
+In this lesson, you will ingest batch data into Experience Platform using various methods.
 
 Batch data ingestion allows you to ingest a large amount of data into Adobe Experience Platform at once. You can ingest batch data in a one time upload within Platform's interface or using the API. You can also configure regularly scheduled batch uploads from third-party services such as cloud storage services using Source connectors.
 
@@ -24,7 +24,7 @@ Before you begin the exercises, watch this short video to learn more about data 
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
 
 * Permission item **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]**, **[!UICONTROL Manage Datasets]** and **[!UICONTROL Data Monitoring]**
 * Permission items **[!UICONTROL Data Ingestion]** > **[!UICONTROL View Sources]** and **[!UICONTROL Manage Sources]**
@@ -33,7 +33,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * User-role access to the `Luma Tutorial Platform` product profile
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 
-**Additionally you need access to an (S)FTP server or cloud storage solution for the Sources exercise.**
+**Also you need access to an (S)FTP server or cloud storage solution for the Sources exercise.**
 
 ## Ingest data in batches with Platform UI
 
@@ -48,7 +48,7 @@ First, get the sample data and customize it for your tenant:
 >Data contained in the [luma-data.zip](assets/luma-data.zip) file is fictitious and is to be used for demonstration purposes only.
 
 1. Download [luma-data.zip](assets/luma-data.zip) to your **Luma Tutorial Assets** folder.
-1. Unzip the file, to create a folder called `luma-data` which contains the four data files we will use in this lesson
+1. Unzip the file, creating a folder called `luma-data` which contains the four data files we will use in this lesson
 1. Open `luma-loyalty.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your own schemas:
     ![Underscore tenant id](assets/ingestion-underscoreTenant.png)
     
@@ -56,11 +56,11 @@ First, get the sample data and customize it for your tenant:
 
 ### Ingest the data
 
-1. In the Platform UI, click **[!UICONTROL Datasets]** in the left navigation
-1. Click on your `Luma Loyalty Dataset`
+1. In the Platform UI, select **[!UICONTROL Datasets]** in the left navigation
+1. Select on your `Luma Loyalty Dataset`
 1. Scroll down until you see the **[!UICONTROL Add Data]** section in the right column
 1. Upload the `luma-loyalty.json` file.
-1. Once the file uploads a row for the batch will appear
+1. Once the file uploads, a row for the batch will appear
 1. If you reload the page after a few minutes, you should see that the batch has successfully uploaded with 1000 records and 1000 profile fragments.
 
     ![Ingestion](assets/ingestion-loyalty-uploadJson.png)
@@ -68,32 +68,32 @@ First, get the sample data and customize it for your tenant:
 
 >[!NOTE]
 >
->There are a few options, **[!UICONTROL Error diagnostics]** and **[!UICONTROL Partial ingestion]** that you will see on various screens in this lesson. These options aren't covered in the tutorial. Some quick info:
+>There are a few options, **[!UICONTROL Error diagnostics]** and **[!UICONTROL Partial ingestion]**, that you will see on various screens in this lesson. These options aren't covered in the tutorial. Some quick info:
 >
 >* Enabling error diagnostics generates data about the ingestion of your data, which you can then review using the Data Access API. Learn more about it in [the documentation](https://experienceleague.adobe.com/docs/experience-platform/data-access/home.html).
 >* Partial ingestion allows you to ingest data containing errors, up to a certain threshold which you can specify. Learn more about it in [the documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/partial.html)
 
 ### Validate the data
 
-There are a few ways to confirm the data was successfully ingested.
+There are a few ways to confirm that the data was successfully ingested.
 
 #### Validate in the Platform UI
 
-To confirm the data was ingested into the dataset:
+To confirm that the data was ingested into the dataset:
 
-1. On the same page where you have ingested the data, click the **[!UICONTROL Preview dataset]** button on top-right
-1. Click **Preview** button and you should be able to see some of the ingested data.
+1. On the same page where you have ingested the data, select the **[!UICONTROL Preview dataset]** button on top-right
+1. Select the **Preview** button and you should be able to see some of the ingested data.
 
     ![Preview the successful dataset](assets/ingestion-loyalty-preview.png)
 
 
-To confirm the data landed in Profile (may take a few minutes for the data to land):
+To confirm that the data landed in Profile (may take a few minutes for the data to land):
 
-1. Click **[!UICONTROL Profiles]** in the left navigation
-1. Click the icon next to the **[!UICONTROL Select identity namespace]** field to open the modal
+1. Go to **[!UICONTROL Profiles]** in the left navigation
+1. Select the icon next to the **[!UICONTROL Select identity namespace]** field to open the modal
 1. Select your `Luma Loyalty Id` namespace
-1. The enter one of the `loyaltyId` values from your dataset, e.g. `5625458`
-1. Click **[!UICONTROL View]**
+1. Then enter one of the `loyaltyId` values from your dataset,  `5625458`
+1. Select **[!UICONTROL View]**
     ![Confirm a profile from the dataset](assets/ingestion-loyalty-profile.png)
 
 #### Validate with data ingestion events
@@ -110,11 +110,11 @@ See the [documentation](https://experienceleague.adobe.com/docs/experience-platf
 
 ## Ingest data in batches with Platform API
 
-Now we will upload data using the API.  
+Now let's upload data using the API.  
 
 >[!NOTE]
 >
->Data architects, feel free to just upload the CRM data via the UI method you just used.
+>Data architects, feel free to upload the CRM data via the UI method.
 
 ### Download and prep the data
 
@@ -124,12 +124,12 @@ Now we will upload data using the API.
 
 ### Get the dataset id
 
-First we need to get the id of the dataset id of the dataset into which we want to ingest data:
+First we let's get the id of the dataset id of the dataset into which we want to ingest data:
 
 1. Open [!DNL Postman]
-1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
 1. Open your environment variables and make sure the value of **CONTAINER_ID** is still `tenant`
-1. Open the call **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** and click **Send**
+1. Open the request **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** and select **Send**
 1. You should get a `200 OK` response
 1. Copy the id of the `Luma CRM Dataset` from the Response body
   ![Get the dataset id](assets/ingestion-crm-getDatasetId.png) 
@@ -152,7 +152,7 @@ Now we can create a batch in the dataset:
     }
     ```
 
-1. Click the **Send** button
+1. Select the **Send** button
 1. You should get a 201 Created response containing the id of your new batch!
 1. Copy the `id` of the new batch
     ![Batch Created](assets/ingestion-crm-createBatch.png)
@@ -166,7 +166,7 @@ Now we can upload the data into the batch:
 1. In the **Params** tab, enter `luma-crm.json` as the **filePath**
 1. In the **Body** tab, select the **binary** option
 1. Select the downloaded `luma-crm.json` from your local `Luma Tutorial Assets` folder
-1. Click **Send** and you should get a 200 OK response with '1' in the response body
+1. Select **Send** and you should get a 200 OK response with '1' in the response body
 
     ![Data uploaded](assets/ingestion-crm-uploadFile.png)
 
@@ -182,8 +182,8 @@ To complete the batch:
 1. Select the request **[!DNL Data Ingestion API > Batch Ingestion > Finish uploading a file to a dataset in a batch.]**
 1. In the **Params** tab, enter `COMPLETE` as the **action**
 1. In the **Params** tab, enter your batch id. Do not worry about dataset id or filePath, if they are present.
-1. Make sure the URL of the POST is `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` and that there aren't any unnecessary references to the `datasetId` or `filePath`
-1. Click **Send** and you should get a 200 OK response with '1' in the response body
+1. Make sure that the URL of the POST is `https://platform.adobe.io/data/foundation/import/batches/:batchId?action=COMPLETE` and that there aren't any unnecessary references to the `datasetId` or `filePath`
+1. Select **Send** and you should get a 200 OK response with '1' in the response body
 
     ![Batch complete](assets/ingestion-crm-complete.png)
 
@@ -201,11 +201,11 @@ Next, confirm the batch using Preview dataset:
 
 ![Batch preview](assets/ingestion-crm-preview.png)
 
-Finally, confirm one of your profiles has been created by looking up one of the profiles by the `Luma CRM Id` namespace, e.g. `112ca06ed53d3db37e4cea49cc45b71e`
+Finally, confirm one of your profiles has been created by looking up one of the profiles by the `Luma CRM Id` namespace, for example `112ca06ed53d3db37e4cea49cc45b71e`
 
 ![Profile ingested](assets/ingestion-crm-profile.png)
 
-There is one interesting thing that just happened that I want to point out. Open that `Danny Wright` profile. Note that the profile has both a `Lumacrmid` and a `Lumaloyaltyid`. Remember the `Luma Loyalty Schema` contained two identity fields, Luma Loyalty Id and CRM Id. Now that we've uploaded both datasets, they've merged into a single profile. The Loyalty data had `Daniel` as the first name and "New York City" as the home address, while the CRM data had `Danny` as the first name and `Portland` as the home address for the customer with the same Loyalty Id. We will come back to why the first name displays `Danny` in the lesson on merge policies.
+There is one interesting thing that just happened that I want to point out. Open that `Danny Wright` profile. The profile has both a `Lumacrmid` and a `Lumaloyaltyid`. Remember the `Luma Loyalty Schema` contained two identity fields, Luma Loyalty Id and CRM Id. Now that we've uploaded both datasets, they've merged into a single profile. The Loyalty data had `Daniel` as the first name and "New York City" as the home address, while the CRM data had `Danny` as the first name and `Portland` as the home address for the customer with the same Loyalty Id. We will come back to why the first name displays `Danny` in the lesson on merge policies.
 
 Congratulations, you've just merged profiles!
 
@@ -232,22 +232,22 @@ Let's look at another way of uploading data. The workflows feature allows you to
 
 Now let's set up workflow:
 
-1. Click **[!UICONTROL Workflows]** in the left navigation
-1. Select **[!UICONTROL Map CSV to XDM schema]** and click the **[!UICONTROL Launch]** button
+1. Go to **[!UICONTROL Workflows]** in the left navigation
+1. Select **[!UICONTROL Map CSV to XDM schema]** and select the **[!UICONTROL Launch]** button
     ![Launch the workflow](assets/ingestion-products-launchWorkflow.png)
-1. Select your `Luma Product Catalog Dataset` and click the **[!UICONTROL Next]** button
+1. Select your `Luma Product Catalog Dataset` and select the **[!UICONTROL Next]** button
     ![Select your dataset](assets/ingestion-products-selectDataset.png)
-1. Add the `luma-products.csv` file  you just downloaded and click the **[!UICONTROL Next]** button 
+1. Add the `luma-products.csv` file you downloaded and select the **[!UICONTROL Next]** button 
     ![Select your dataset](assets/ingestion-products-selectData.png)
-1. Now you are in our mapper interface, in which you can map a field from the source data (one of the column names in our `luma-products.csv` file) to XDM fields in the target schema. In our example, the column names are close enough to the schema field names that the mapper is able to auto-detect the right mapping! If the mapper was unable to auto-detect the right field, you would click the icon to the right of the target field to select the correct XDM field. Also, if you didn't want to ingest one of the columns from the CSV, you could delete the row from the mapper. Feel free to play around and change column headings in the `luma-products.csv` to get familiar with how the mapper works.
-1. Click the **[!UICONTROL Finish]** button
+1. Now you are in the mapper interface, in which you can map a field from the source data (one of the column names in the `luma-products.csv` file) to XDM fields in the target schema. In our example, the column names are close enough to the schema field names that the mapper is able to auto-detect the right mapping! If the mapper was unable to auto-detect the right field, you would select the icon to the right of the target field to select the correct XDM field. Also, if you didn't want to ingest one of the columns from the CSV, you could delete the row from the mapper. Feel free to play around and change column headings in the `luma-products.csv` to get familiar with how the mapper works.
+1. Select the **[!UICONTROL Finish]** button
     ![Select your dataset](assets/ingestion-products-mapper.png)
 
 ### Validate the data
 
 When the batch has uploaded, verify the upload by previewing the dataset.
 
-Since the `Luma Product SKU` is a non-people namespace, we won't see any profiles for our product skus.
+Since the `Luma Product SKU` is a non-people namespace, we won't see any profiles for the product skus.
 
 You should see the three hits to your webhook.
 
@@ -255,13 +255,13 @@ You should see the three hits to your webhook.
 
 Okay, you did things the hard way. Now let's move into the promised land of _automated_ batch ingestion! When I say, "SET IT!" you say, "FORGET IT!" "SET IT!" "FORGET IT!" "SET IT!" "FORGET IT!" Just kidding, you would never do such a thing! Ok, back to work. You're almost done.
 
-Click on **[!UICONTROL Sources]** in the left navigation to open the Sources catalog. Here you will see a variety of out-of-the-box integrations with industry-leading data and storage providers. 
+Go to **[!UICONTROL Sources]** in the left navigation to open the Sources catalog. Here you will see various out-of-the-box integrations with industry-leading data and storage providers. 
 
 ![Source catalog](assets/ingestion-offline-sourceCatalog.png)
 
 Okay, let's ingest data using a source connector.
 
-This exercise will be choose-your-own-adventure style. I am going to show the workflow  using the FTP source connector. You can either use a different Cloud Storage source connector that you use at your company, or just upload the json file using the dataset UI like we did with the loyalty data.
+This exercise will be choose-your-own-adventure style. I am going to show the workflow  using the FTP source connector. You can either use a different Cloud Storage source connector that you use at your company, or upload the json file using the dataset UI like we did with the loyalty data.
 
 Many of the Sources have a similar configuration workflow, in which you:
 
@@ -269,7 +269,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 1. Select the data you want to ingest
 1. Select the Platform dataset into which you want to ingest it
 1. Map the fields to your XDM schema
-1. Choose the frequency with which you want to re-ingest data from that location
+1. Choose the frequency with which you want to reingest data from that location
 
 >[!NOTE]
 >
@@ -285,28 +285,28 @@ Many of the Sources have a similar configuration workflow, in which you:
 ### Ingest the data to your preferred cloud storage location
 
 1. In the Platform UI, filter the [!UICONTROL Sources] catalog to **[!UICONTROL Cloud storage]**
-1. Note there are convenient links to documentation under the `...`
-1. In the box of your preferred Cloud storage vendor, click the **[!UICONTROL Configure]** button 
-    ![Click configure](assets/ingestion-offline-selectFTP.png)
-1. **[!UICONTROL Authentication]** is the first step. Enter the name for your account, e.g. `Luma's FTP Account` and your authentication details. This step should be fairly similar for all cloud storage sources, although the fields may vary slightly. Once you've entered the authentication details for an account, you can reuse them for other source connections that might be sending different data on different schedules from other files in the same account
-1. Click the **[!UICONTROL Connect to source button]**
-1. When Platform has successfully connected to the Source, click the **[!UICONTROL Next]** button
+1. Note that there are convenient links to documentation under the `...`
+1. In the box of your preferred Cloud storage vendor, select the **[!UICONTROL Configure]** button 
+    ![Select configure](assets/ingestion-offline-selectFTP.png)
+1. **[!UICONTROL Authentication]** is the first step. Enter the name for your account, for example `Luma's FTP Account` and your authentication details. This step should be fairly similar for all cloud storage sources, although the fields may vary slightly. Once you've entered the authentication details for an account, you can reuse them for other source connections that might be sending different data on different schedules from other files in the same account
+1. Select the **[!UICONTROL Connect to source button]**
+1. When Platform has successfully connected to the Source, select the **[!UICONTROL Next]** button
     ![Authenticate to the source](assets/ingestion-offline-authentication.png)
 
 1. On the **[!UICONTROL Select data]** step, the UI will use your credentials to open the folder on your cloud storage solution
-1. Select the file(s) you would like to ingest, e.g. `luma-offline-purchases.json`
+1. Select the files you would like to ingest, for example `luma-offline-purchases.json`
 1. As the **[!UICONTROL Data format]**, select `XDM JSON`
 1. You can then preview the json structure and sample data in your file
-1. Click the **[!UICONTROL Next]** button
+1. Select the **[!UICONTROL Next]** button
     ![Select your data file(s)](assets/ingestion-offline-selectData.png)
 
-1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Event Dataset` and click the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
+1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Event Dataset` and select the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
     ![Select your dataset](assets/ingestion-offline-mapping.png)
-1. On the **[!UICONTROL Scheduling]** step, you choose the frequency with which you want to re-ingest data from the Source. Take a moment to look at the options. We are just going to do a one-time ingestion, so leave the **[!UICONTROL Frequency]** on **[!UICONTROL Once]** and click the **[!UICONTROL Next]** button:
+1. On the **[!UICONTROL Scheduling]** step, you choose the frequency with which you want to reingest data from the Source. Take a moment to look at the options. We are just going to do a one-time ingestion, so leave the **[!UICONTROL Frequency]** on **[!UICONTROL Once]** and select the **[!UICONTROL Next]** button:
     ![Schedule your data flow](assets/ingestion-offline-scheduling.png)
-1. On the **[!UICONTROL Dataflow detail]** step, you can choose a name for your dataflow, enter an optional description, turn on error diagnostics, and partial ingestion. Leave the settings as they are and click the **[!UICONTROL Next]** button: 
+1. On the **[!UICONTROL Dataflow detail]** step, you can choose a name for your dataflow, enter an optional description, turn on error diagnostics, and partial ingestion. Leave the settings as they are and select the **[!UICONTROL Next]** button: 
     ![Edit details of your data flow](assets/ingestion-offline-detail.png)
-1. On the **[!UICONTROL Review]** step, you can review all of your settings together and either edit them or click the **[!UICONTROL Finish]** button
+1. On the **[!UICONTROL Review]** step, you can review all of your settings together and either edit them or select the **[!UICONTROL Finish]** button
 1. After saving you will land on a screen like this:
     ![Complete](assets/ingestion-offline-complete.png)
 
@@ -316,19 +316,19 @@ When the batch has uploaded, verify the upload by previewing the dataset.
 
 You should see the three hits to your webhook.
 
-Look up the profile with value `5625458` in the `loyaltyId` namespace again to see if there are any purchase events in their profile. You should see one purchase. You can dig into the details of the purchase by clicking **[!UICONTROL View JSON]**:
+Look up the profile with value `5625458` in the `loyaltyId` namespace again to see if there are any purchase events in their profile. You should see one purchase. You can dig into the details of the purchase by selecting **[!UICONTROL View JSON]**:
 
 ![Purchase event in profile](assets/ingestion-offline-eventInProfile.png)
 
 ## ETL Tools
 
-Adobe partners with multiple ETL vendors to support data ingestion into Experience Platform. Because of the variety of third party vendors, ETL is not covered in this tutorial, although you are welcome to review some of these resources:
+Adobe partners with multiple ETL vendors to support data ingestion into Experience Platform. Because of the variety of third-party vendors, ETL is not covered in this tutorial, although you are welcome to review some of these resources:
 
 * [Developing ETL Integrations for Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Informatica Adobe Experience Platform Connector page on Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Informatica documentation of the Adobe Experience Platform Connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [Unique Audience Experiences Derived from Data:  Unifi and Adobe Experience Platform](https://unifisoftware.com/solutions/adobe-experience-platform/)
-* [Snaplogic Adobe Experience Platform Snap Pack](https://www.snaplogic.com/snaps/adobe-cloud-platform)
+* [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Additional Resources
 

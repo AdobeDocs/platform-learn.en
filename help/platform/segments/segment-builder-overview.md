@@ -2,7 +2,7 @@
 title: Segment Builder Overview
 description: Get an introduction to the Segment Builder in Platform, including the building blocks of segments, the user interface, and a few tips on getting started building segments.
 feature: Segments
-role: Business Practitioner
+role: User
 level: Beginner
 doc-type: feature video
 thumbnail: 333301.jpg

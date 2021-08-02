@@ -14,11 +14,11 @@ exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 <!-- 15min--> 
 In this lesson, you will enable your schemas and datasets for Real-time Customer Profile. 
 
-Okay, I lied when I said the datasets lesson was the shortest lesson in this tutorial&mdash;this one should take even less time! Literally all you are going to do is flip a bunch of toggles. But what happens when you flip these toggles is really, really important so I wanted to dedicate a whole page to it.
+Okay, I lied when I said that the datasets lesson was the shortest lesson in this tutorial&mdash;this one should take even less time! Literally all you are going to do is flip a bunch of toggles. But what happens when you flip these toggles is _really_ important so I wanted to dedicate a whole page to it.
 
-With Real-time Customer Profile, you can see a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction. 
+With Real-time Customer Profile, you can see a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third-party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction. 
 
-As amazing as all that sounds, you don't need to activate *all of your data* for profile. In fact, you should only enable the data you need for activation use cases. Enable data that you want to use for marketing use cases, call center integrations, etc where you need fast access to a robust customer profile. If you are  uploading data just for analysis, it shouldn't be enabled for profile.
+As amazing as all that sounds, you don't need to activate *all of your data* for profile. In fact, you should only enable the data you need for activation use cases. Enable data that you want to use for marketing use cases, call center integrations, and so on, where you need fast access to a robust customer profile. If you are  uploading data just for analysis, it shouldn't be enabled for profile.
 <!--is this accurate. Are there other considerations to point out? -->
 
 **Data Architects** will need to enable Real-time Customer Profile outside of this tutorial.
@@ -28,7 +28,7 @@ Before you begin the exercises, watch this short video to learn more about Real-
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls you need to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
 
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**
@@ -45,18 +45,18 @@ Let's start with the simple task of enabling a schema:
 1. In the Platform UI, open the **Luma Loyalty Schema**
 1. In **[!UICONTROL Schema Properties]**, toggle the **Profile** switch
 1. In the confirmation modal, press the **[!UICONTROL Enable]** button to confirm
-1. Click the **[!UICONTROL Save]** button to save your changes
+1. Select the **[!UICONTROL Save]** button to save your changes
 
     >[!IMPORTANT]
     >
-    >Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial and of course the entire sandbox can be deleted at any time. 
+    >Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial, which can be deleted at any time. 
     >
     >In the controlled environment of this tutorial, you will enable your schemas and datasets for profile, _before ingesting any data_. When working with your own data, we recommend you do things in the following order:
     >
     > 1. First, ingest some data into your datasets
-    > 1. Address any issues that arise during the data ingestion process (e.g. data validation or mapping issues)
+    > 1. Address any issues that arise during the data ingestion process (for example, data validation or mapping issues)
     > 1. Now that you have verified the data ingestion, enable your datasets and schemas for Profile
-    > 1. Then re-ingest the data so that it lands in Profile
+    > 1. Then reingest the data so that it lands in Profile
 
 
     ![Profile Toggle](assets/profile-loyalty-enableSchema.png)
@@ -73,13 +73,13 @@ Now, it's time to enable the `Luma CRM Schema` with the API. If you want to skip
 
 ### Get the meta:altId of the schema
 
-First we need to get the `meta:altId` of the `Luma CRM Schema`:
+First let's get the `meta:altId` of the `Luma CRM Schema`:
 
 1. Open [!DNL Postman]
-1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
-1. Open the call **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]**
-1. Update the Accept Header to one of the allowed values, e.g. `application/vnd.adobe.xdm+json`
-1. Click the **Send** button
+1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. Open the request **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]**
+1. Update the Accept Header to one of the allowed values, for example `application/vnd.adobe.xdm+json`
+1. Select the **Send** button
 1. You should get a 200 response
 1. Look in the response for the `Luma CRM Schema` item and copy the `meta:altId` value
  ![Copy the meta:altIid](assets/profile-crm-getMetaAltId.png) 
@@ -88,7 +88,7 @@ First we need to get the `meta:altId` of the `Luma CRM Schema`:
 
 Now that we have the meta:altId of the schema, we can enable it for profile:
 
-1. Open the call **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema.]**
+1. Open the request **[!DNL Schema Registry API > Schemas > Modify or update part of a tenant-defined schema.]**
 1. In the **Params** paste your `meta:altId` value as the `$id` value
 1. In the **Body** tab, paste the following code
 
@@ -100,7 +100,7 @@ Now that we have the meta:altId of the schema, we can enable it for profile:
     }]
     ```
 
-1. Click the **Send** button
+1. Select the **Send** button
 1. You should get a 200 response
 
 You should be able to see in the UI that all five schemas are enabled for Profile (you might need to SHIFT-Reload to see that `Luma CRM Schema` is enabled):
@@ -136,9 +136,9 @@ Now you will enable a dataset for Profile using the API. Again, if you want to e
 First we need to get the `id` of the `Luma CRM Dataset`:
 
 1. Open [!DNL Postman]
-1. If you haven't made a call in the last 24 hours, your authorization tokens have probably expired. Open the call **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and click **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
-1. Open the call **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
-1. Click the **Send** button
+1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. Open the request **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
+1. Select the **Send** button
 1. You should get a 200 response
 1. Look in the response for the `Luma CRM Dataset` item and copy the id:
  ![Copy the id](assets/profile-crm-copyDatasetId.png) 
@@ -147,7 +147,7 @@ First we need to get the `id` of the `Luma CRM Dataset`:
 
 Now that we have the id of the dataset, we can enable it for profile:
 
-1. Open the call **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
+1. Open the request **[!DNL Catalog Service API > Datasets > Update one or more attributes of a dataset specified by ID.]**
 1. In the **Params** update the `DATASET_ID` value to your own
 1. In the **Body** tab, paste the following code. Note that the first two values are pre-existing tags that are visible in the previous response. They need to be included in the body, in addition to the two new tags which we are adding:
 
@@ -162,7 +162,7 @@ Now that we have the id of the dataset, we can enable it for profile:
     }
     ```
 
-1. Click the **Send** button
+1. Select the **Send** button
 1. You should get a 200 response
 
     ![Copy the id](assets/profile-crm-enableDataset.png) 
@@ -172,7 +172,7 @@ You can also confirm that the UI shows the dataset enabled:
 
 >[!IMPORTANT]
 >
-> If you ingest data before enabling the schema and dataset for profile, you will need to re-ingest that data again afterwards.
+> If you ingest data before enabling the schema and dataset for profile, you will need to reingest that data again afterwards.
 
 ## Additional Resources
 

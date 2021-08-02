@@ -13,7 +13,7 @@ exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
 
 Congratulations, you made it through the entire tutorial!
 
-You now have hands-on experience with all of the Platform capabilities commonly used by both Data Architects and Data Engineers. I understand that your role is just one of the two and that you did a lot of work that is often done by a colleague. I hope by doing so you can appreciate how all of the pieces fit together and appreciate the teamwork required to implement Experience Platform successfully.
+You now have hands-on experience with the Platform capabilities commonly used by both Data Architects and Data Engineers. I understand that your role is just one of the two and that you did a _lot_ of work that is often done by a colleague. I hope by doing so you can appreciate how all of the pieces fit together and appreciate the teamwork required to implement Experience Platform successfully.
 
 You've learned how to:
 
@@ -26,7 +26,7 @@ You've learned how to:
 * Enable schemas and datasets for real-time customer profiles, another task for **Data Architects**
 * Subscribe to data ingestion events, which **Data Engineers** can use for ingestion monitoring
 * Ingest batch data through multiple methods, which is one of the core tasks of **Data Engineers**
-* Stream data using the Adobe Experience Platform Web SDK, which **Data Engineers** typically need to do in conjunction with their web developers
+* Stream data using the Adobe Experience Platform Web SDK, which **Data Engineers** typically need to coordinate with their web developers
 * Create merge policies to prioritize datasets, another tool for the **Data Architect**
 * Run queries to validate data, a capability useful to both **Data Architects** and **Data Engineers**
 * Build segments, which **Data Architects** will need to understand in order to support Platform's business users
@@ -41,12 +41,12 @@ I suggest you keep it and use it for further experimentation with Platform. We h
 
 The key resources:
 
-* [Experience Platform Video Tutorials](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
-* [Experience Platform Documenation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
-* [Experience League Courses](https://experienceleague.adobe.com/#dashboard/learning)
+* [Experience Platform tutorials](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
+* [Experience League courses](https://experienceleague.adobe.com/#dashboard/learning)
 
-Here is another tutorial which you can review to learn more about connections to third party applications:
+Here is another tutorial which you can review to learn more about connections to third-party applications:
 
-* [Comprehensive Technical Tutorial for Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Comprehensive Technical Tutorial for Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Thanks for your efforts and good luck on your journey with Adobe Experience Platform!
