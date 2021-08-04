@@ -23,10 +23,12 @@ Platform is built API-first. While interface options also exist for all major ta
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson.
 
+<!--
 * Permission item Sandboxes > `Luma Tutorial`
 * Developer-role access to the `Luma Tutorial Platform` product profile
+-->
 
 ## Set up Adobe Developer Console
  
@@ -75,7 +77,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
     >[!NOTE]
     >
-    >System Administrators of your organization would be able to see the project as an "Integration" in the product profile in the Admin Console
+    >System Administrators of your organization can see the project as an "API Credential" in the product profile in the Admin Console
     >
     >![Adobe Developer Console Project API Config](assets/adobeio-io-integrationInAdminConsole.png)
 
@@ -115,7 +117,7 @@ Now it's time to add the PRIVATE_KEY value to the Postman environment
 1. Extract the downloaded `config.zip` file which was generated in the previous exercise while creating the Developer Console Project. This zip contains two files: 
    * `private.key`
    * `certificate_pub.crt`
-1. Open the `private.key` file in a text editor and copy all the content available.
+1. Open the `private.key` file in a text editor and copy the contents.
 1. In Postman, on the **Manage Environments** > **Edit** modal which is still open from the last exercise, paste copied values in front of **PRIVATE_KEY** in the **Initial Value** and **Current Value** columns.
 1. Select the **Update** button to save your PRIVATE_KEY and the updated environment name.
     ![Private Key pasted into Postman](assets/postman-privateKey.png)
@@ -128,7 +130,7 @@ The first collection works with the Adobe Identity Management Service (IMS) APIs
 
 >[!WARNING]
 >
->As noted in the [Adobe I/O Access Token Generation Postman collection README](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims), the denoted generation methods are suitable for non-production use. Local Signing loads a JavaScript library from a 3rd-party host, and Remote signing sends the private key to an Adobe owned and operated web service. While Adobe does not store this private key, production keys should never be shared with anyone.  
+>As noted in the [Adobe Identity Management Service APIs README](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims), the denoted generation methods are suitable for non-production use. Local Signing loads a JavaScript library from a 3rd-party host, and Remote signing sends the private key to an Adobe owned and operated web service. While Adobe does not store this private key, production keys should never be shared with anyone.  
 
 To generate the tokens:
 

@@ -27,7 +27,7 @@ Topics include:
 * Setting up a Developer Console project and using the Platform API
 * Data management, including creating schemas, datasets, identities, merge policies, and data governance
 * Data ingestion using batch and streaming modes
-* Capturing web data with Adobe Experience Platform Launch and the Web SDK
+* Capturing web data with Adobe Experience Platform Web SDK
 * Combining data sources into Real-time Customer Profiles via identity stitching
 * Using Query Service to validate data and extract data
 * Building segments
@@ -39,14 +39,14 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 ## Pre-requisites
 
 * You have completed the [Introduction to Adobe Experience Platform course](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) on Experience League and are familiar with Platform capabilities
-* You have access to an account provisioned with Adobe Experience Platform and Adobe Experience Platform Launch.  
+* You have access to an account provisioned with Adobe Experience Platform and Adobe Experience Platform Data Collection (formerly Launch).  
 * You are a System Administrator of that account or can have one complete several tasks in the [Configure Permissions](configure-permissions.md) lesson.
 
 ## Using this tutorial
 
 This tutorial combines tasks for both Data Engineers and Data Architects. Since it's an introductory-level tutorial, you should be able to complete the tasks for both roles. In each lesson, I call out the primary audience&mdash;Data Architects, Data Engineers, or both roles. Because many of the lessons build on what was implemented in earlier lessons, you should move through the lessons in order. I will call out which lessons can be skipped. If you want to, you could also tag team the tutorial with a colleague in the other role.
 
-Try to stick to the names assigned to various elements in the tutorial, as they are constantly referred to by these names. However, there are a few high-level containers that you may want to customize the names in case there are multiple people at your organization taking this tutorial. For example, you may want to name the Product Profile "Luma Tutorial Platform - Fred Bean" instead of just "Luma Tutorial Platform."
+As you create various Platform elements during this tutorial, try to stick to the names I recommend as much as possible. However, there are a few high-level element names that you may want to customize in case there are multiple people at your organization taking this tutorial simultaneously. For example, you may want to name the Platform sandbox "Luma Tutorial Platform - Fred Bean" instead of just "Luma Tutorial Platform."
 
 If you get stuck, try re-reading the instructions first, and then use the ![Log an issue](https://experienceleague.adobe.com/assets/img/feedback.svg) link on the sidebar of each page to contact me. 
 
@@ -54,11 +54,11 @@ If you get stuck, try re-reading the instructions first, and then use the ![Log 
 
 ### Sandbox environments
 
-In the tutorial, you will create a sandbox environment and use it to complete the exercises. The sandbox environment makes it safe for you to complete the exercises and experiment without being concerned about compromising your production Experience Platform environment.
+In the tutorial, you will create a sandbox environment and use it to complete the exercises. The sandbox environment makes it safe for you to complete the exercises and experiment without being concerned about compromising your production data.
 
 ### API
 
-Platform is built API-first. While interface workflows exist for all major Platform tasks and will be used in most exercises, this tutorial contains some API-oriented exercises. I will guide you through the basic project setup in the Adobe Developer Console and provide you with [!DNL Postman] environments and collections to get started. After completing the tutorial, you may find it valuable to be familiar with the Platform API and use it in your own deployment.
+Platform is built API-first. While interface workflows exist for all major Platform workflows and will be used primarily, the tutorial contains some API-oriented exercises. I will guide you through the basic project setup in the Adobe Developer Console and provide you with [!DNL Postman] environments and collections to get started with the Platform API. After completing the tutorial, you may find it valuable to be familiar with the Platform API and use it in your own deployment.
 
 ### Third-party technologies
 
