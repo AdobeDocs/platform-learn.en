@@ -15,7 +15,7 @@ exl-id: a04afada-52a1-4812-8fa2-14be72e68614
 
 In this lesson, you will create a development environment sandbox that you will use for the rest of the tutorial.
 
-Sandboxes provide isolated environments where you can try out functionality without field groupg resources and data with your Production environment.
+Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment.
 
 **Data Architects** and **Data Engineers** will need to create sandboxes outside of this tutorial.
 
@@ -24,12 +24,14 @@ Before you begin the exercises, watch this short video to learn more about sandb
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson.
 
+<!--
 * Permission items **[!UICONTROL Sandbox Administration]** > **[!UICONTROL View Sandboxes]** and **[!UICONTROL Manage Sandboxes]**
 * Permission item **[!UICONTROL Sandboxes]** > **[!UICONTROL Prod]**
 * User-role access to the `Luma Tutorial Platform` product profile
 * Admin-level access to the `Luma Tutorial Platform` product profile
+-->
 
 ## Create a Sandbox
 
@@ -40,8 +42,9 @@ Let's create a sandbox:
 1. Select **[!UICONTROL Create sandbox]** on the top right
    ![Select Create sandbox](assets/sandbox-createSandbox.png)
 
-1. Name your sandbox `luma-tutorial` 
-1. Title your tutorial `Luma Tutorial`
+1. Select **[!UICONTROL Development]** as the **[!UICONTROL Type]**
+1. Name your sandbox `luma-tutorial` (consider adding your name to the end)
+1. Title your tutorial `Luma Tutorial` (consider adding your name to the end)
 1. Select the **[!UICONTROL Create]** button
    ![Create your sandbox](assets/sandbox-nameSandbox.png)
    >[!NOTE]
@@ -79,7 +82,7 @@ Once the sandbox is active, you must include it in your product profile in order
     ![Move the Sandbox to the other column](assets/sandbox-addLumaTutorial.png)
 
 1. Go back to the browser tab with Experience Platform
-1. Reload the page and you should now either be in the `Luma Tutorial` sandbox or it should appear in your sandbox dropdown
+1. Reload (or Shift-reload) the page and you should now either be in the `Luma Tutorial` sandbox or it should appear in your sandbox dropdown
 1. Switch to the `Luma Tutorial` sandbox if you aren't already in it
 
    ![Confirm Sandbox](assets/sandbox-confirmDropdown.png)
