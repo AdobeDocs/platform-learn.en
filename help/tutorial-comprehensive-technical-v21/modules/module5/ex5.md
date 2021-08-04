@@ -319,7 +319,7 @@ Change the **Filter Condition** to **Advanced**.
 
 ![ETL](./images/filter5.png)
 
-Click the **Define Filter Condition** button.
+Click the **Edit Filter Condition** button.
 
 ![ETL](./images/filter6.png)
 
@@ -404,7 +404,7 @@ Have a look at the **Properties** windows.
 
 ![ETL](./images/target3.png)
 
-In the left menu, go to **Target**. In the Connection-dropdown, select `Experience Platform International (Adobe Experience Platform)`.
+In the left menu, go to **Target**. In the Connection-dropdown, select your Adobe Experience Platform connection.
 
 ![ETL](./images/target4.png)
 
@@ -510,11 +510,11 @@ Scroll down until you see the Batch IDs and locate your specific batch.
 
 Write down the Batch ID as you'll need it so submit completion of Module 5.
 
-You can also preview the data that you ingested. You'll also see the output of your Expression/Transformation in the column `--aepTenantId--.etl_profile_attributes.income`.
+You can also preview the data that you ingested.
 
 ![ETL](./images/4run14.png)
 
-Congratulations you have now successfully used Informatica to ingest Profile and Experience Event data into Adobe Experience Platform!
+Congratulations, you have now successfully used Informatica to ingest Profile and Experience Event data into Adobe Experience Platform!
 
 Next Step: [Summary and benefits](./summary.md)
 
