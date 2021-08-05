@@ -143,41 +143,35 @@ Select **Data Integration Server**.
 
 ![ETL](./images/crinf23.png)
 
-Scroll down until you see **DVM JVMOption1** and click the edit icon.
+Scroll down until you see **INFA_MEMORY** and click the edit icon.
+
+![ETL](./images/crinf23a.png)
+
+Replace/paste this value in the inout field:
+
+`'-Xms32m -Xmx2048m'`
+
+Scroll down until you see **DTM JVMOption1** and click the edit icon.
 
 ![ETL](./images/crinf24.png)
 
 Paste this value in the input field:
 
-`-Dhadoop.home.dir="C:\\\Program Files\\\Informatica Cloud Secure Agent"` 
+`-Dhadoop.home.dir="C:\\\Program Files\\\Informatica Cloud Secure Agent\\\jdk"` 
 
 ![ETL](./images/crinf25.png)
+
+Update the values for the fields **DTM JVMOption2** and **DTM JVMOption3** with these values:
+
+`'-XX:-UseGCOverheadLimit'`
+
+`'-Xmx2048m'`
+
+![ETL](./images/crinf24a.png)
 
 >[!NOTE]
 >
 >For more information, please consult: [https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/introduction-to-adobe-experience-platform-connector/administration-of-adobe-experience-platform-connector.html](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/introduction-to-adobe-experience-platform-connector/administration-of-adobe-experience-platform-connector.html)
-
-Next, scroll down until you see **Custom Configuration Details**.
-
-![ETL](./images/crinf26.png)
-
->[!NOTE]
->
->This step is needed in case you want to connect your Informatica environment to a sandbox in Adobe Experience Platform. If you're connecting this environment to the **PROD** sandbox of your Adobe Experience Platform instance, then you can skip this step. If your Adobe Experience Platform sandbox isn't named **PROD**, then please execute this step.
-
-To add your Adobe Experience Platform sandbox, you need to add a new custom service here.
-
-Select the following values:
-
-- Service:
-- Type: **Tomcat**
-- Subtype: (leave empty)
-- Name: **sandboxname**
-- Value: `--aepSandboxId--`
-
-Which should look like this:
-
-![ETL](./images/crinf27.png)
 
 Click **Save** to save your changes. Click the black/white cross icon to close the edit mode.
 
@@ -320,8 +314,9 @@ In the next fields, you need to fill out the following values:
 - Client Secret:
 - Account Id:
 - IMS Org: 
+- Sandbox Name: 
 
-You can retrieve the values for **Client Id**, **Client Secret**, **Account Id**, **IMS Org** from your Adobe I/O project:
+You can retrieve the values for **Client Id**, **Client Secret**, **Account Id**, **IMS Org** from your Adobe I/O project. Sandbox Name should be `--aepSandboxId--`.
 
 ![ETL](./images/crinf53.png)
 

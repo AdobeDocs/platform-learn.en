@@ -337,7 +337,7 @@ Change the **Filter Condition** to **Advanced**.
 
 ![ETL](./images/filter5.png)
 
-Click the **Define Filter Condition** button.
+Click the **Edit Filter Condition** button.
 
 ![ETL](./images/filter6.png)
 
@@ -523,7 +523,7 @@ Open the dataset `Demo System - Event Dataset for ETL (Global v1.1)`. Scroll dow
 
 ![ETL](./images/run12.png)
 
-You can now continue with Exercise 5.4.
+You can now continue with the next exercise.
 
 Next Step: [5.5 Ingest 2nd and 3rd party data into Adobe Experience Platform](./ex5.md)
 
