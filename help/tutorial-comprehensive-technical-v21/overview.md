@@ -266,6 +266,13 @@ As part of this module you will also get an understanding of what triggers Real-
 - **Description:** In this module, you'll learn everything there is to know about Journey Optimizer, which helps companies design and deliver connected, contextual, and personalized experiences to their customers.
 - **Time Investment:** 120 minutes
 
+[24. Stream data from Apache Kafka into Adobe Experience Platform](./modules/module24/aep-apache-kafka.md)
+
+- **Audience:** Data Analyst, Data Engineer, Data Architect
+- **Prerequisites:** Access to Adobe Experience Platform
+- **Description:** In this module, you'll learn how to setup your own Apache Kafka cluster, define topics, producers and consumers and stream data into Adobe Experience Platform using the Adobe Experience Platform Sink Connector for Kafka Connect.
+- **Time Investment:** 90 minutes
+
 >[!NOTE]
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.
