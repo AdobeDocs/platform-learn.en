@@ -169,7 +169,7 @@ Let's change that and send in a Callcenter experience event from Kafka into Adob
 
 Take the below sample experience event payload and copy it into a Text Editor.
 
-``json
+```json
 {
   "header": {
     "datasetId": "5fd1a9dea30603194baeea43",
@@ -212,7 +212,7 @@ Take the below sample experience event payload and copy it into a Text Editor.
     }
   }
 }
-``
+```
 
 You'll then see this. You need to manually update 2 fields:
 
