@@ -51,8 +51,6 @@ In the left menu, you can see all available Adobe Experience Platform datasets. 
 
 After adding it, you'll see the dataset inside the connection.
 
-![demo](./images/7.png)
-
 You now have to select the **Person ID**. Please ensure the **loyaltyId** is selected as Person ID.
 
 ![demo](./images/8.png)
@@ -150,11 +148,11 @@ Before doing any analysis or visualization we need to create a data view with al
 
 ![demo](./images/22.png)
 
-Click **Continue**.
+Click **Save and continue**.
 
 ![demo](./images/23.png)
 
-You can now add components to your data view.
+You can now add components to your data view. As you can see, some metrics and dimensions are added automatically.
 
 ![demo](./images/24.png)
 
@@ -178,7 +176,6 @@ Add the following components to the data view:
 | web.webPageDetails.name | Dimension | web.webPageDetails.name|
 | Event Type | Dimension | eventType|
 | Vendor | Dimension | environment.browserDetails.vendor|
-| Platform Batch ID | Dimension | platformbatchid |
 | Identifier | Dimension |_id |
 | Timestamp | Dimension | timestamp|
 | Type | Dimension | device.type|
