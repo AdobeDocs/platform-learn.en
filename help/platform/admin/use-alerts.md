@@ -14,4 +14,5 @@ Learn how to subscribe to and administer alerts in Adobe Experience Platform. Al
 
 ## Additional Resources
 
-* [Alerts documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/home.html)
+* [Observability documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/home.html)
+* [Observability API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/access-control.yaml)
