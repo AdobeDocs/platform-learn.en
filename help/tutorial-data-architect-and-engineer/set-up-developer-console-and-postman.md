@@ -172,19 +172,17 @@ You can now close the Manage Environments modal.
 
 ## Make a Platform API Call
 
-Now let's confirm that we've configured everything correctly by making an API call.
+Now let's make a Platform API call to confirm that we've configured everything correctly.
 
-Open the other group of Experience Platform [!DNL Postman] collections in GitHub, the [experience-platform-postman-samples](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform). There are many collections on this page, related to various Platform features.
-
-We download collections as needed for this tutorial. This GitHub repository will be useful to you after this tutorial as you begin to implement Platform for your company, so I strongly recommend you bookmark it.
+Open the [Experience Platform [!DNL Postman] collections in GitHub](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform). There are many collections on this page, for various Platform APIs, and you will download these collections as needed for the tutorial. This GitHub repository will be useful to you after this tutorial, so I strongly recommend bookmarking it.
 
 Now, let's make our first API call:
 
 1. Download the [Schema Registry API collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) to your `Luma Tutorial Assets` folder
 1. Import it into [!DNL Postman]
-1. Open **Schema Registry API > Classes > List all classes in the specified container**
+1. Open **Schema Registry API > Classes > Retrieve a list of classes within the specified container.**
 1. Look at the **Params** and **Headers** tabs and note how they include some of the environment variables we entered earlier.
-1. Select the **Headers > Accept value field** and change it to `application/vnd.adobe.xed-id+json`. The Schema Registry APIs require one of these [specified Accept header values](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) which provide different formats in the response.
+1. Note that the **Headers > Accept value field** is set to `application/vnd.adobe.xed-id+json`. The Schema Registry APIs require one of these [specified Accept header values](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) which provide different formats in the response.
 1. Select **Send** to make your first Platform API call!
    
 Hopefully you got a successful `200 OK` response containing a list of the available standard XDM classes in your sandbox, as pictured below. 
@@ -196,7 +194,7 @@ If your call was not successful, take a moment to debug using the error response
 ## Additional Resources
 
 * [Adobe Developer Console documentation](https://www.adobe.io/apis/experienceplatform/console/docs.html)
-* [Postman website](https://www.postman.com/)
+* [[!DNL Postman] website](https://www.postman.com/)
 * [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples)
 
 With your Platform permissions, sandbox, and [!DNL Postman] set up, you are ready to [model data in schemas](model-data-in-schemas.md)!
