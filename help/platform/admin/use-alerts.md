@@ -1,14 +1,14 @@
 ---
-title: Use Alerts
-description: Learn how to subscribe to and administer alerts to monitor various processes in Experience Platform to make sure your implementation is running smoothly.
+title: Use alerts
+description: Learn how to subscribe to and administer alerts in Adobe Experience Platform. Alerts help you monitor various processes to make sure your Platform implementation is running smoothly.
 role: Data Engineer, User
 feature: Alerts
 kt: 8324
 thumbnail: 336218.jpg
 ---
-# Use sandboxes
+# Use alerts
 
-Learn how to subscribe to and administer alerts to monitor various processes in Experience Platform to make sure your implementation is running smoothly.
+Learn how to subscribe to and administer alerts in Adobe Experience Platform. Alerts help you monitor various processes to make sure your Platform implementation is running smoothly.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336218?quality=12&learn=on)
 
