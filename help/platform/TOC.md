@@ -24,8 +24,8 @@ doc-type: video
 + [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-  +[Use alerts](/help/platform/admin/use-alerts.md)
-  +[Use sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Use alerts](/help/platform/admin/use-alerts.md)
+  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
