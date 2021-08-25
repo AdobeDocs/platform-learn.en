@@ -23,6 +23,9 @@ doc-type: video
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
++ Administration {#admin}
+  + [Use alerts](/help/platform/admin/use-alerts.md)
+  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
@@ -96,8 +99,6 @@ doc-type: video
   + [Tableau](/help/platform/queries/psql-client-tableau.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html)
-+ Sandboxes {#sandboxes}
-  + [Use sandboxes](/help/platform/sandboxes/use-sandboxes.md)
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
   + [Building blocks](/help/platform/schemas/schema-building-blocks.md)
