@@ -86,6 +86,15 @@ doc-type: video
   + [Customize profile view details](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html)
   + [Create merge policies](/help/platform/profiles/create-merge-policies.md)
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
++ Privacy {#privacy}
+  + [Introduction to Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
+  + [Identity Data in Privacy Requests](/help/platform/privacy/identity-data-in-privacy-requests.md)
+  + [Using the Privacy JavaScript library](/help/platform/privacy/using-privacy-javascript-library.md)
+  + [Privacy labels in Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
+  + [Getting started with the Privacy Service API](/help/platform/privacy/getting-started-with-privacy-services-api.md)
+  + [Using the Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
+  + [Using the Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
+  + [Subscribing to Privacy Events](/help/platform/privacy/subscribe-to-privacy-events.md)
 + Queries {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Query Service UI](/help/platform/queries/query-service-ui.md)
