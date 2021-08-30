@@ -5,6 +5,9 @@
         },
         {
             "pattern": "^.*example-end.com"
-        }          
+        },
+        {
+            "pattern": "^.*linkedin.com"
+        }                 
     ]
 }
