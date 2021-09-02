@@ -150,7 +150,7 @@ Before you follow the steps, please make sure that you have access to Experience
 1. The easiest way to install Newman is using NPM. If you have Node.js installed, it is most likely that you have NPM installed as well.
 1. Follow the steps [here](https://www.npmjs.com/package/newman#using-newman-cli) to install newman for your system
 1. Run the command `newman -v` to make sure that newman is installed. 
-1. Download the [platform-utils-main.zip](https://github.com/AdobeDocs/platform-utils/archive/refs/heads/main.zip) file, which contains all files required for this tutorial. 
+1. Download the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file, which contains all files required for this tutorial. 
 1. From your downloads folder, move the `platform-utils-main.zip` file to the desired location on your computer, and unzip it.
 1. Please make a note of the location of the unzipped file, as we might need it later when setting up the `FILE_PATH` postman environment variable
 1. Open the `platform-utils-main` folder in a terminal window.
