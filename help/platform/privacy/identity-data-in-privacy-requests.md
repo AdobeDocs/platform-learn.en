@@ -1,5 +1,5 @@
 ---
-title: Identity Data in Privacy Requests
+title: Identity data in Privacy requests
 description: This video covers key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.
 role: Data Engineer, Data Architect
 feature: Privacy
@@ -7,7 +7,7 @@ kt: 7717
 thumbnail: 336076.png
 ---
 
-# Identity Data in Privacy Requests
+# Identity data in Privacy requests
 
 This video covers key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.
 

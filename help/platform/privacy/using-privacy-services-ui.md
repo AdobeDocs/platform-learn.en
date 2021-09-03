@@ -1,5 +1,5 @@
 ---
-title: Using the Privacy Service UI
+title: Using Privacy Service UI
 description: Learn how to create privacy requests in the UI and monitor/review their status in the dashboard.
 role: Data Engineer, Data Architect
 feature: Privacy
@@ -7,7 +7,7 @@ kt: 7719
 thumbnail: 336079.png
 ---
 
-# Using the Privacy Service UI
+# Using Privacy Service UI
 
 Learn how to create privacy requests in the UI and monitor/review their status in the dashboard.
 
