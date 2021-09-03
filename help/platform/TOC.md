@@ -28,7 +28,6 @@ doc-type: video
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
   + [Admin console](/help/platform/admin/admin-console.md)
   + [Managing Product profiles](/help/platform/admin/managing-product-profiles.md)
-  + [Sandboxes](/help/platform/admin/sandboxes.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
