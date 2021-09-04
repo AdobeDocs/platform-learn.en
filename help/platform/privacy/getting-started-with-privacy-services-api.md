@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect
 feature: Privacy
 kt: 7720
 thumbnail: 336075.png
+exl-id: fdf80326-0406-4bb5-b863-deed9029144a
 ---
-
 # Getting started with the Privacy Service API
 
 Learn how to set up and authenticate to the Privacy Service API.

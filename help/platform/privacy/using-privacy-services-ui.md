@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect
 feature: Privacy
 kt: 7719
 thumbnail: 336079.png
+exl-id: 8436345a-7e0b-40af-8bd8-534fdf1f8e44
 ---
-
 # Using Privacy Service UI
 
 Learn how to create privacy requests in the UI and monitor/review their status in the dashboard.
