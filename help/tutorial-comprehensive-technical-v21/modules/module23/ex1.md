@@ -1,12 +1,12 @@
 ---
 title: Introduction to Journey Optimizer
-description: This section describes the overall Journey Optimizer user interface and explains how to create email messages. An account creation email will be created and used for the triggered journey, a newsletter email will be created and used in a batch email campaign in a later exercise. 
+description: This section describes the overall Journey Optimizer user interface and explains how to create email messages. An account creation email will be created and used for the triggered journey, a newsletter email will be created and used in a batch email campaign in a later exercise.
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: bcc6ef9f-fc99-492b-8721-5d05f04b7f54
 ---
-
 # 23.1 Introduction to Adobe Journey Optimizer: build an email message
 
 Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.

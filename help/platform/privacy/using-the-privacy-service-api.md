@@ -5,6 +5,7 @@ role: Data Engineer, Data Architect
 feature: Privacy
 kt: 8189
 thumbnail: 336080.png
+exl-id: a6a82217-d717-49e1-9d20-ed2dacd218ab
 ---
 
 # Privacy Service API

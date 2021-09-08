@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 9d80408d-ccd6-4ebb-b57b-1f3f81714eb1
 ---
-
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Journey Optimizer! 

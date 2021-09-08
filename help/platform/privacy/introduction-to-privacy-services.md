@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect
 feature: Privacy
 kt: 7713
 thumbnail: 336074.png
+exl-id: ead028e3-8bdd-406e-8176-1b250809ce94
 ---
-
 # Introduction to Privacy Service
 
 Introduction to privacy regulations and their effect on data operations, and how Privacy Service addresses these challenges.

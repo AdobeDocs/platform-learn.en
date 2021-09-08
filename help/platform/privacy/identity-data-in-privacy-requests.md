@@ -5,8 +5,8 @@ role: Data Engineer, Data Architect
 feature: Privacy
 kt: 7717
 thumbnail: 336076.png
+exl-id: c5533831-5bba-45c6-8ff8-eb38accf0d42
 ---
-
 # Identity data in Privacy requests
 
 This video covers key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.

@@ -5,6 +5,7 @@ role: Data Engineer, User
 feature: Alerts
 kt: 8324
 thumbnail: 336218.jpg
+exl-id: 56f927db-1f16-4c0b-a0e0-a25e43f1a535
 ---
 # Use alerts
 
