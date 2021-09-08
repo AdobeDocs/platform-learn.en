@@ -1,5 +1,5 @@
 ---
-title: Subscribing to Privacy Events
+title: Subscribe to Privacy Events
 description: Learn how to subscribe to Privacy Events to automate job-status-based workflows.
 role: Data Engineer, Data Architect
 feature: Privacy
@@ -7,7 +7,7 @@ kt: 7721
 thumbnail: 336073.png
 ---
 
-# Subscribing to Privacy Events
+# Subscribe to Privacy Events
 
 Learn how to subscribe to Privacy Events to automate job-status-based workflows.
 
