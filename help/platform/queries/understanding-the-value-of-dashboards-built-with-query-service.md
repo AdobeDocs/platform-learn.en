@@ -15,7 +15,7 @@ With Adobe Experience Platform, brands can ingest, store, structure, and pull al
 
 >[!INFO]
 >
-> This video is part of a course [Create Dashboards Using Query Service](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.qsvc.dash), available for free on Experience League!
+> This video is part of a course [Getting Started with Adobe Experience Platform for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), available for free on Experience League!
 
 ## Additional Resources
 
