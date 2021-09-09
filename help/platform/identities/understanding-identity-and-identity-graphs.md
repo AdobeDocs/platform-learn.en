@@ -13,6 +13,10 @@ Adobe Experience Platform provides a rich set of Identity resolution capabilitie
 
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course [Getting Started with Adobe Experience Platform for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), available for free on Experience League!
+
 ## Additional Resources
 
 * [Label, Ingest, and Verify Identity Data](label-ingest-and-verify-identity-data.md)

@@ -13,6 +13,10 @@ In this video, you will learn about Query Service in Adobe Experience Platform a
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course [Create Dashboards Using Query Service](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.qsvc.dash), available for free on Experience League!
+
 ## Additional Resources
 
 * [Understanding the Value of Dashboards built with Query Service](understanding-the-value-of-dashboards-built-with-query-service.md)
