@@ -14,6 +14,10 @@ Learn how to monitor and track data that gets ingested into Adobe Experience Pla
 
 >[!VIDEO](https://video.tv.adobe.com/v/330549?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
+
 ## Additional Resources
 
 * [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)

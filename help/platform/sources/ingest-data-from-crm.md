@@ -13,6 +13,10 @@ This video shows how to easily batch ingest data from CRM sources into Adobe Exp
 
 >[!VIDEO](https://video.tv.adobe.com/v/29711?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
+
 ## Additional Resources
 
 * [Understanding Source Connectors video](overview.md)
