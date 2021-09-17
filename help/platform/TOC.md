@@ -97,6 +97,7 @@ doc-type: video
   + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
   + [Subscribe to Privacy Events](/help/platform/privacy/subscribe-to-privacy-events.md)
+  + [10 considerations for Responsible Customer Data Management](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
 + Queries {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Query Service UI](/help/platform/queries/query-service-ui.md)
@@ -167,3 +168,8 @@ doc-type: video
   + [Use Customer AI Scores and Insights](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
++ Industry Trends {#industry}
+  + [The Future of Data Management and the Changing Environment](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
+  + [A Tale of Two Perceptions - Brands vs. Consumers](/help/platform/industry/brands-vs-consumers.md)
+  + [Evolving Your Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
+  + [Building better experiences with customer profiles](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
