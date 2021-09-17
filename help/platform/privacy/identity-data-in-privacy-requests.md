@@ -1,15 +1,15 @@
 ---
-title: Identity data in Privacy requests
-description: This video covers key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.
+title: Auditing your stored personal data
+description: Learn key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.
 role: Data Engineer, Data Architect
 feature: Privacy
 kt: 7717
 thumbnail: 336076.png
 exl-id: c5533831-5bba-45c6-8ff8-eb38accf0d42
 ---
-# Identity data in Privacy requests
+# Auditing your stored personal data
 
-This video covers key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.
+Learn key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336076?quality=12&learn=on)
 
