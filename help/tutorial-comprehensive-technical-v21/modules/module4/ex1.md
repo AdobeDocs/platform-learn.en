@@ -17,7 +17,7 @@ In order to demonstrate how to use such an Alexa skill, you will have to setup y
 
 You also have to sign up for an AWS account, as the skill we will use requires serverless functions deployed in a AWS Lambda environment.
 
-## Exercise 4.1.1: Set up Amazon developer account
+## 4.1.1 Set up Amazon developer account
 
 Go to [https://developer.amazon.com](https://developer.amazon.com).
 
@@ -53,7 +53,7 @@ Your account is now created and you'll see the **Amazon Developer Portal**.
 
 ![Alexa Developer Dashboard](./images/alexadeveloperdashboard.png)
 
-## Exercise 4.1.2: Setup an Amazon Web Services account
+## 4.1.2 Setup an Amazon Web Services account
 
 In a new browser window or tab, go to [https://aws.amazon.com/lambda/](https://aws.amazon.com/lambda/). If you already do have an account, skip to step 10.
 
