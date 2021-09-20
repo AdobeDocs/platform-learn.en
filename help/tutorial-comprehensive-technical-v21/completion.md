@@ -359,6 +359,18 @@ Then go to the **Complete Module**-page, select **M23. Project Sierra**, enter y
 
 ![12](./assets/images/completemodule23dtl.png)
 
+## Module 24
+
+The expected proof of completion for module 24 is the Flow ID of your **ldap - Kafka Dataflow**.
+
+The Flow ID looks like this **48fc1361-96f2-4903-8a30-56efd405824a**, and you can find it here:
+
+![14](./assets/images/kafkaflowid.png)
+
+Then go to the **Complete Module**-page, select **M24. Apache Kafka**, enter your **Flow ID** in the input field and click the **Submit** - button.
+
+![12](./assets/images/completemodule24dtl.png)
+
 You should get a confirmation email within minutes.
 
 [Go Back to All Modules](./overview.md)

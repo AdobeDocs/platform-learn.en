@@ -1,12 +1,12 @@
 ---
 title: Adobe Journey Optimizer - Business Events
-description: This section explains how to use the business events capability in order to perform an "item back in stock" use case 
+description: This section explains how to use the business events capability in order to perform an "item back in stock" use case
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 4d729786-ad2b-4b76-8c4a-d15e25e58c63
 ---
-
 # 23.7 Create a business event journey
 
 Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.

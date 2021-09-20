@@ -140,7 +140,7 @@ and placecontext.geo.countryCode <> ''
 limit 1;
 ```
 
-Go back to your Adobe Experience Platform UI (should be open in your browser) or navigate to [http://platform.adobe.com](http://platform.adobe.com).
+Go back to your Adobe Experience Platform UI (should be open in your browser) or navigate to [https://platform.adobe.com](https://platform.adobe.com).
 
 Select **Schemas**, enter `Demo System - Event Schema for Website (Global v1.1)` in the **search** field and select `Demo System - Event Schema for Website (Global v1.1) Schema` from the list.
 

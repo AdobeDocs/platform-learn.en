@@ -13,6 +13,10 @@ Learn how to write and execute queries, view previously executed queries, and ac
 
 >[!VIDEO](https://video.tv.adobe.com/v/333403?quality=12&learn=on)
 
+>[!INFO]
+>
+> This video is part of a course [Create Dashboards Using Query Service](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.qsvc.dash), available for free on Experience League!
+
 ## Additional Resources
 
 * [Understanding Query Service video](understanding-query-service.md)

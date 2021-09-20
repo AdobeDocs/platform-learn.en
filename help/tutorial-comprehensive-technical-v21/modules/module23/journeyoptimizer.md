@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 11318263-ae78-480d-9e32-7669601c639f
 ---
-
 # 23. Adobe Journey Optimizer
 
 **Authors: [Maxime Foutrel](https://www.linkedin.com/in/maximefoutrel/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
@@ -24,6 +24,8 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 ## Prerequisites
 
 - Access to Adobe Journey Optimizer
+- **Download these assets**:
+  - [Assets](./../../assets/ajo/ajo_assets.zip)
 
 ## Architecture Overview
 

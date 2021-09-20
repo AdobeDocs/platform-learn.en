@@ -17,7 +17,7 @@ In order to demonstrate how to use such an Alexa skill, you will have to setup y
 
 You also have to sign up for an AWS account, as the skill we will use requires serverless functions deployed in a AWS Lambda environment.
 
-## Exercise 4.1.1: Set up Amazon developer account
+## 4.1.1 Set up Amazon developer account
 
 Go to [https://developer.amazon.com](https://developer.amazon.com).
 
@@ -31,7 +31,11 @@ Click **Create your Amazon Developer account** to create a new Amazon developer 
 
 In the **Create Account** screen, provide your **Name**, **Email** and choose a **Password**. Then click **Create your Amazon Developer Account**.
 
-![Create Account](./images/alexadeveloperaccountdetails.png) 
+>[!NOTE]
+>
+>Don't use a corporate email address like @adobe.com. Use your personal email address instead as this is an account for training purpose.
+
+![Create Account](./images/alexadeveloperaccountdetails.png)
 
 Some additional verification might be required.
 
@@ -41,26 +45,25 @@ You will receive a verification code on the provided email address. Use that on 
 
 Provide all required details on the **Profile** tab the **Registration** screen, then click on **Save and Continue**.
 
+Read all details on the **Amazon Delivery Services Agreement** tab and then click **Submit**.
+
 ![Registration Details](images/registrationdetails.png)
 
-Read all details on the **Amazon Delivery Services Agreement** tab and then click **Accept and Continue**.
+Your account is now created and you'll see the **Amazon Developer Portal**.
 
-[Service Agreement](images/serviceagreement.png)
-
-You will get a dialog asking whether you want to provide payment details. You can (obviously) skip that by closing the dialog. Click on the X at the right top of the dialog.
-
-![Payment Details](images/paymentdetails.png)
-
-You will see the **Amazon Developer Dashboard** main window.
 ![Alexa Developer Dashboard](./images/alexadeveloperdashboard.png)
 
-## Exercise 4.1.2: Setup an Amazon Web Services account
+## 4.1.2 Setup an Amazon Web Services account
 
 In a new browser window or tab, go to [https://aws.amazon.com/lambda/](https://aws.amazon.com/lambda/). If you already do have an account, skip to step 10.
 
+Click **Create an AWS Account** orange button on the top right.
+
 ![AWS main screen](images/awsmainscreen.png)
 
-Click on **Sign Up** or **Sign In to the Console** or **Create an AWS Account** orange button on the top right. It's a bit unpredictable what Amazon shows there...
+>[!NOTE]
+>
+>Depending on your location/geo you may see a different experience.
 
 In the **Create an AWS account** screen, define **Email address**, **Password** and an **AWS account name**. Then click on **Continue**.
 
@@ -69,15 +72,17 @@ In the **Create an AWS account** screen, define **Email address**, **Password** 
 In the **Contact Information** screen:
 
 - Select **Personal** for the **Account Type**.
-- Provide required details in the **Contact Information** screen, and click on **Create Account and Continue**.
+- Provide required details in the **Contact Information** screen, and click **Continue**.
    
 ![Contact Information](images/awscontactinformation.png)
 
-Provide your credit card details in the **Payment Information** screen and click on **Secure Submit**.
+Provide your credit card details in the **Payment Information** screen and click on **Verify and Continue**.
+
+>[!NOTE]
+>
+>You won't be charged unless you exceed the AWS Free Tier Limits, which is extremely unlikely using your Alexa skill for demonstration purposes. However you have to provide payment details to continue.
 
 ![Payment Information](images/awspaymentinformation.png)
-
-Note that you will not be charged unless you exceed the AWS Free Tier Limits, which is extremely unlikely using your Alexa skill for demonstration purposes. However you have to provide payment details to continue.
 
 Provide details on how to confirm your identity, by selecting **Text Message (SMS)** in the **Confirm your identity** screen, and click on **Send SMS**.
 
@@ -85,38 +90,35 @@ Provide details on how to confirm your identity, by selecting **Text Message (SM
 
 Use the verification code you will receive as an SMS in the **Enter verification code** dialog and click **Verify Code**.
 
+Next, click on **Continue**.
+
 ![AWS Verification Code](images/awsverificationcode.png)
 
-You will get a confirmation saying **Your identity has been verified successfully.**.
-
-![AWS Verified Successfully](images/awsverifiedsuccessfully.png)
-
-Click on **Continue**.
-
-In the **Select a Support Plan**, select **Basic Plan** as the plan by clicking on the **Free** button.
+In the **Select a Support Plan**, select **Basic support - free**. Click **Complete sign up**.
 
 ![AWS Support Plan](images/awssupportplan.png)
 
-You can provide more details in the **Welcome to Amazon Web Services** screen but that is not required.
+Your AWS account is now created. Click **Go to the AWS Management Console**.
 
 ![AWS Welcome Screen](images/awswelcomescreen.png)
 
-Click on **Sign In to the Console**.
-
-In the **Sign in** screen, provide your AWS email address to login.
+In the **Sign in** screen, select **Root User** and provide your email address to login. Click **Next**.
 
 ![AWS Sign In](images/awssigninemail.png)
 
-Click on **Next**
-In the **Root user sign in** screen, provide your **Password** and click on **Sign in**.
+Complete the security check and click **Submit**.
 
 ![AWS Sign In Password](images/awssigninpassword.png)
+
+Provide your **Password** and click on **Sign in**.
+
+![AWS Sign In Password](images/awssigninpassword1.png)
 
 You will end up in the **AWS Management Console**.
 
 ![AWS Management Console](images/awsmanagementconsole.png)
 
-Leave the browser tab open, as we will need it later in the module.
+Leave the browser tab open, as you'll need it later in the module.
 
 You have finished this exercise. 
 

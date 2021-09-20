@@ -89,7 +89,7 @@ Click on **Make Pretty** to see a readable version of the request to Platform. Y
 
 ![Verify Calls](./images/prettycallpp.png)
 
-Next, go to to the Login/Register-page [https://public.aepdemo.net/login-register.html](http://public.aepdemo.net/login-register.html).
+Next, go to to the Login/Register-page [https://public.aepdemo.net/login-register.html](https://public.aepdemo.net/login-register.html).
 
 Fill out all the fields and click **Create Account**.
 

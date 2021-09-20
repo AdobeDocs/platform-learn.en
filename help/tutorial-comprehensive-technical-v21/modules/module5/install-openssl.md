@@ -7,11 +7,16 @@ doc-type: tutorial
 activity: develop
 exl-id: c2042aaa-988f-45a7-9d6a-e7a72839f9e3
 ---
+
 # Install OpenSSL for Windows
 
 In this exercise, you'll learn how to install OpenSSL for Windows.
 
-Download OpenSSL from this link: [https://slproweb.com/download/Win64OpenSSL-1_1_1k.exe](https://slproweb.com/download/Win64OpenSSL-1_1_1k.exe)
+Download OpenSSL from this link: [https://slproweb.com/products/Win32OpenSSL.html](https://slproweb.com/products/Win32OpenSSL.html)
+
+Select the appropriate download, in this case: **Win64 OpenSSL v3.0.0**.
+
+![SSL](./images/ssl0.png)
 
 After downloading OpenSSL, you'll find the executable in your Downloads folder. Double-click to run the installer.
 

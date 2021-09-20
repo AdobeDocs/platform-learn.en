@@ -23,6 +23,11 @@ doc-type: video
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
++ Administration {#admin}
+  + [Use alerts](/help/platform/admin/use-alerts.md)
+  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Admin console](/help/platform/admin/admin-console.md)
+  + [Managing Product profiles](/help/platform/admin/managing-product-profiles.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
@@ -65,6 +70,7 @@ doc-type: video
 + Destinations {#destinations}
   + [Destinations overview](/help/platform/destinations/understanding-destinations.md)
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
+  + [Activate profiles and segments to a destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
   + [Configure the Azure Blob Destination](destinations/configure-the-azure-blob-destination.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
@@ -82,6 +88,16 @@ doc-type: video
   + [Customize profile view details](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html)
   + [Create merge policies](/help/platform/profiles/create-merge-policies.md)
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
++ Privacy {#privacy}
+  + [Introduction to Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
+  + [Identity data in Privacy requests](/help/platform/privacy/identity-data-in-privacy-requests.md)
+  + [Privacy JavaScript library](/help/platform/privacy/using-privacy-javascript-library.md)
+  + [Privacy labels in Adobe Analytics](/help/platform/privacy/privacy-labels-in-adobe-analytics.md)
+  + [Getting started with the Privacy Service API](/help/platform/privacy/getting-started-with-privacy-services-api.md)
+  + [Privacy Service UI](/help/platform/privacy/using-privacy-services-ui.md)
+  + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
+  + [Subscribe to Privacy Events](/help/platform/privacy/subscribe-to-privacy-events.md)
+  + [10 considerations for Responsible Customer Data Management](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
 + Queries {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Query Service UI](/help/platform/queries/query-service-ui.md)
@@ -95,8 +111,6 @@ doc-type: video
   + [Tableau](/help/platform/queries/psql-client-tableau.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html)
-+ Sandboxes {#sandboxes}
-  + [Use sandboxes](/help/platform/sandboxes/use-sandboxes.md)
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
   + [Building blocks](/help/platform/schemas/schema-building-blocks.md)
@@ -154,3 +168,8 @@ doc-type: video
   + [Use Customer AI Scores and Insights](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
++ Industry Trends {#industry}
+  + [The Future of Data Management and the Changing Environment](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
+  + [A Tale of Two Perceptions - Brands vs. Consumers](/help/platform/industry/brands-vs-consumers.md)
+  + [Evolving Your Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
+  + [Building better experiences with customer profiles](/help/platform/industry/building-better-experiences-with-customer-profiles.md)

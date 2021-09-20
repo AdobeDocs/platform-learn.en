@@ -107,7 +107,7 @@ Hit the **Add Integration** button and you're done!
 
 ## 20.7.4 Test the integration
 
-To begin the demo, login to [Facebook](http://www.facebook.com) and navigate to the Facebook Page you created in the previous steps. For this tutorial we will be using our [Luma Retail](https://www.facebook.com/lumachat) demo page.
+To begin the demo, login to [Facebook](https://www.facebook.com) and navigate to the Facebook Page you created in the previous steps. For this tutorial we will be using our [Luma Retail](https://www.facebook.com/lumachat) demo page.
 
 ![Facebook_LumaRetail_HP](./images/Facebook_LumaRetail_HP-crunch.png)
 

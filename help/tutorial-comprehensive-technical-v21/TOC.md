@@ -222,3 +222,10 @@ doc-type: tutorial
   + [23.6 Setup and use push notifications for iOS](/help/tutorial-comprehensive-technical-v21/modules/module23/ex6.md)
   + [23.7 Create a business event journey](/help/tutorial-comprehensive-technical-v21/modules/module23/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module23/summary.md)
++ 24 - Stream data from Apache Kafka into Adobe Experience Platform {#module24}
+  + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module24/aep-apache-kafka.md)
+  + [24.1 Introduction to Apache Kafka](/help/tutorial-comprehensive-technical-v21/modules/module24/ex1.md)
+  + [24.2 Install and configure your Kafka cluster](/help/tutorial-comprehensive-technical-v21/modules/module24/ex2.md)
+  + [24.3 Configure HTTP API Streaming endpoint in Adobe Experience Platform](/help/tutorial-comprehensive-technical-v21/modules/module24/ex3.md)
+  + [24.4 Install and configure Kafka Connect and the Adobe Experience Platform Sink Connector](/help/tutorial-comprehensive-technical-v21/modules/module24/ex4.md)
+  + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module24/summary.md)
