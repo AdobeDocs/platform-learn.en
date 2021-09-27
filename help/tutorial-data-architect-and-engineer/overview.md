@@ -18,7 +18,7 @@ _Getting Started with Adobe Experience Platform for Data Architects and Data Eng
 
 ## Learning Objectives
 
-Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial teaches you the key tasks executed by _both roles_ so you know how to start implementing Platform for your own business.
+Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial teaches you the key tasks executed by _both roles_ so you know how to start implementing Platform for your own business. You will be guided through exercises that will introduce you to the key terminology, features, interface, and API of Experience Platform. Customers of Adobe Experience Cloud applications like Real-time Customer Data Platform, Customer Journey Analytics, and Journey Optimizer will also find this content useful, as Platform services are critical foundations of those applications.
 
 Topics include: 
 
@@ -44,9 +44,9 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 
 ## Using this tutorial
 
-This tutorial combines tasks for both Data Engineers and Data Architects. Since it's an introductory-level tutorial, you should be able to complete the tasks for both roles. In each lesson, I call out the primary audience&mdash;Data Architects, Data Engineers, or both roles. Because many of the lessons build on what was implemented in earlier lessons, you should move through the lessons in order. I will call out which lessons can be skipped. If you want to, you could also tag team the tutorial with a colleague in the other role.
+This tutorial combines tasks for both Data Engineers and Data Architects. Since it's an introductory-level tutorial, you should be able to complete the tasks for both roles. Because many of the lessons build on what was implemented in earlier lessons, you should move through the lessons in order. I will call out which lessons can be skipped.
 
-As you create various Platform elements during this tutorial, try to stick to the names I recommend as much as possible. However, there are a few high-level element names that you may want to customize in case there are multiple people at your organization taking this tutorial simultaneously. For example, you may want to name the Platform sandbox "Luma Tutorial Platform - Fred Bean" instead of just "Luma Tutorial Platform."
+As you create various Platform elements during this tutorial, try to stick to the names I recommend as much as possible. However, there are a few high-level element names that you may want to customize in case there are multiple people at your organization taking this tutorial simultaneously. For example, you may want to name the Platform sandbox "Luma Tutorial Platform - Ignatius J Reilly" instead of just "Luma Tutorial Platform."
 
 If you get stuck, try re-reading the instructions first, and then use the ![Log an issue](https://experienceleague.adobe.com/assets/img/feedback.svg) link on the sidebar of each page to contact me. 
 
