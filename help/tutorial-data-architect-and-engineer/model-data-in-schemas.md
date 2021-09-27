@@ -46,6 +46,7 @@ Before you begin the exercises, watch this short video to learn more about schem
 ## Permissions required
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson. 
+
 <!--, specifically:
 
 * Permission items **[!UICONTROL Data Modeling]** > **[!UICONTROL View Schemas]** and **[!UICONTROL Manage Schemas]**

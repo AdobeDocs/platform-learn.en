@@ -41,8 +41,9 @@ Before you begin the exercises, watch these two short videos to learn more about
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson.
 
+<!--
 * Permission items **[!UICONTROL Launch]** > **[!UICONTROL Property Rights]** > **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Publish]**
 * Permission item **[!UICONTROL Launch]** > **[!UICONTROL Company Rights]** > **[!UICONTROL Manage Properties]**
 * User-role access to the `Luma Tutorial Launch` product profile
@@ -53,7 +54,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * Permission item **[!UICONTROL Platform]** > **[!UICONTROL Sandbox Administration]** > **[!UICONTROL View Sandboxes]**
 * Permission item **[!UICONTROL Platform]** > **[!UICONTROL Sandboxes]** > `Luma Tutorial`
 * User-role access to the `Luma Tutorial Platform` product profile
-  
+-->  
+
 ## Create a streaming source
 
 1. Log into the [Experience Platform  user interface](https://experience.adobe.com/platform/)

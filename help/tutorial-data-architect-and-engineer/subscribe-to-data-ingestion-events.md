@@ -22,11 +22,13 @@ In this lesson, you will subscribe to data ingestion events by setting up a webh
 
 In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson, specifically:
 
-* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+<!--* Developer-role access to the `Luma Tutorial Platform` product profile (for API)
+-->
 
 >[!IMPORTANT]
 >
-> These notifications triggered by the data ingestion events will apply to _all of your sandboxes_, not just the `Luma Tutorial` sandbox we are using for the exercises in this tutorial. So, you might see notifications coming from other data ingestion events in your other sandboxes.
+> These notifications triggered by the data ingestion events will apply to _all of your sandboxes_, not just your `Luma Tutorial`. You might see notifications originating from other data ingestion events in your account, as well.
+
 
 ## Set up a webhook
 
