@@ -19,7 +19,7 @@ In this exercise, you'll learn how to import order data into Informatica, join d
 
 ## Lab Resources
 
-- Informatica: [https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home](https://apse1.dm-ap.informaticacloud.com/diUI/products/integrationDesign/main/home)
+- Informatica: [https://usw5.dm-us.informaticacloud.com/diUI/products/integrationDesign/main/home](https://usw5.dm-us.informaticacloud.com/diUI/products/integrationDesign/main/home)
 - Adobe Experience Platform: [https://experience.adobe.com/platform/](https://experience.adobe.com/platform/)
 
 ## Lab Tasks

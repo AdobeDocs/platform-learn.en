@@ -44,7 +44,7 @@ Click **Continue**.
 
 ![ETL](./images/crinf8.png) 
 
-Click **Don't show again**.
+Click **Don't show this again**.
 
 ![ETL](./images/crinf9.png) 
 
@@ -126,6 +126,18 @@ You'll then have this. Click **Register**.
 Finally, the Informatica Cloud Secure Agent screen will be shown. Wait a couple of minutes until you see that the Secure Agent and all its services are up and running.
 
 ![ETL](./images/w8.png)
+
+Next, you need to copy a specific file, **winutils.exe** to a specific folder on your Windows machine. First, copy the file [winutils.exe](../../assets/windows/winutils.exe.zip) to the desktop of your Windows machine and uncompress it.
+
+![ETL](./images/winutils0.png)
+
+Go to the folder `C:\Program Files\Informatica Cloud Secure Agent\jdk\bin\`.
+
+![ETL](./images/winutils1.png)
+
+Paste the file **winutils.exe** into this folder.
+
+![ETL](./images/winutils2.png)
 
 After installation of the **Cloud Secure Agent**, you'll see your runtime environment pop up in the list of available environments. Click your newly created **Runtime Environment**.
 
