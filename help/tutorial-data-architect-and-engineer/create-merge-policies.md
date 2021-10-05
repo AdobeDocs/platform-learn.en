@@ -43,7 +43,7 @@ You may recall, in the lesson on batch ingestion, we uploaded two records with s
 
 So, why did `Danny` win out as the first name? Let's take a look:
 
-1. In the Platform UI, select **[!UICONTROL Profiles]** in the left navigation
+1. In the Platform user interface, select **[!UICONTROL Profiles]** in the left navigation
 1. Go to the **[!UICONTROL Merge Polices]** tab
 1. The default Merge Policy is timestamp ordered. Because you uploaded the CRM data after the Loyalty data, `Danny` won out as the first name in the profile:
 

@@ -63,7 +63,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 In this exercise, we will create a schema for Luma's loyalty data.
 
-1. Go to the Platform UI and ensure that your sandbox is selected.
+1. Go to the Platform user interface and ensure that your sandbox is selected.
 1. Go to **[!UICONTROL Schemas]** in the left navigation
 1. Select the **[!UICONTROL Create Schema]** button on the top right
 1. From the dropdown menu, select **[!UICONTROL XDM Individual Profile]**, since we will be modeling attributes of an individual customer (points, status, and so on).

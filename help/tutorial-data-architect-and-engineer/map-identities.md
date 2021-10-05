@@ -50,7 +50,7 @@ In this exercise, we'll create identity namespaces for Luma's custom identity fi
 
 Let's start by creating a namespace for the Luma Loyalty Schema:
 
-1. In the Platform UI, go to **[!UICONTROL Identities]** in the left navigation
+1. In the Platform user interface, go to **[!UICONTROL Identities]** in the left navigation
 1. You will notice that there are several out-of-the-box identity namespaces available. Select the **[!UICONTROL Create identity namespace]** button
 1. Provide details as following
    
