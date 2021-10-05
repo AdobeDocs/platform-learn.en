@@ -82,7 +82,7 @@ Remember how we created the relationship between the `Luma Offline Purchase Even
 
 With the advanced multi-entity segmentation feature, you can create segments using multiple XDM classes to extend your schemas. As a result, the segment builder can access additional fields as if they were native to the profile data store
 
-You will create the next segment by applying the relationship you built between your `Luma Product Catalog Schema` and your `Luma Offline Purchase Event Schema`.
+You will create the next segment by applying the relationship you built between your `Luma Product Catalog Schema` and your `Luma Offline Purchase Events Schema`.
 
 1. Go to **[!UICONTROL Segments]** in the left navigation
 1. Select the **[!UICONTROL Create segment]** button 
