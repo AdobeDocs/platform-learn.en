@@ -162,7 +162,7 @@ If you **[!UICONTROL Cancel]** out of the schema and navigate to the **[!UICONTR
 
 Now we will create a schema using the API. 
 
->[!NOTE]
+>[!TIP]
 >
 > If you prefer to skip the API exercise, you can create the following schema using the UI method:
 >
@@ -193,7 +193,7 @@ First we create the empty schema:
     
     >[!NOTE]
     >
-    >The namespace references in this and subsequent code samples (for example `https://ns.adobe.com/xdm/context/profile`), can be obtained by using list API calls with the **[!DNL CONTAINER_ID]** and accept header set to the correct values.
+    >The namespace references in this and subsequent code samples (for example `https://ns.adobe.com/xdm/context/profile`), can be obtained by using list API calls with the **[!DNL CONTAINER_ID]** and accept header set to the correct values. Some are also easily accessible in the user interface.
 
 1. You should get a `201 Created` response
 1. Copy `meta:altId` from Response body. We will use it later in another exercise.
