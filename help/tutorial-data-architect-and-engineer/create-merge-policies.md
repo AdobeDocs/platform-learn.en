@@ -130,9 +130,7 @@ In the profile search, change the merge policy used back to `Default Timebased` 
 
 What is going on here? Well, profile merging is not a one time thing. Real-time customer profiles are assembled on the fly, based on various factors, including which merge policy is used. You can create multiple merge policies to use in different contexts, depending on which view of the customer you want.
 
-One use case for merge policies is if you need to replace existing data. For example, say Luma has a new product catalog coming online and they've created a new version of their catalog, `Luma Product Catalog Dataset v2` with updated SKUs and prices. They can use merge policies to hide this dataset before the cutover date. Afterwards, they can hide the old dataset and show the new one.
-
-Merge policies also tie into data governance and segmentation, which you will see in the next few lessons.
+A key use case for merge policies is for data governance. For example, say you ingest third-party data into Platform which cannot be used for personalization use cases, but _can_ be used for advertising use cases. You can create a merge policy that excludes this third-party dataset and use this merge policy to build segments for your advertising use cases.
 
 ## Additional Resources
 
