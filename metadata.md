@@ -1,5 +1,5 @@
 ---
-cloud: experience platform
+cloud: experience cloud
 product: experience platform
 solution: Experience Platform
 solution-title: Documentation
