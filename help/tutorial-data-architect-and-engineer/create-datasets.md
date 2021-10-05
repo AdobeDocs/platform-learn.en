@@ -24,7 +24,7 @@ Before you begin the exercises, watch this short video to learn more about datas
 
 ## Permissions required
 
-In the [Configure Permissions](configure-permissions.md) lesson, you set up all the 
+In the [Configure Permissions](configure-permissions.md) lesson, you set up all the access controls required to complete this lesson.
 
 <!--
 * Permission items **[!UICONTROL Data Management]** > **[!UICONTROL View Datasets]** and **[!UICONTROL Manage Datasets]**
@@ -35,9 +35,9 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 ## Create datasets in the UI
 
-In this exercise, we will create datasets in the UI. Let's start with the loyalty system:
+In this exercise, we will create datasets in the UI. Let's start with the loyalty data:
 
-1. Go to **[!UICONTROL Datasets]** in the Platform UI's left navigation
+1. Go to **[!UICONTROL Datasets]** in the Platform user interface's left navigation
 1. Select the **[!UICONTROL Create Dataset]** button
     ![Create a dataset](assets/datasets-createDataset.png)
 
@@ -52,7 +52,7 @@ In this exercise, we will create datasets in the UI. Let's start with the loyalt
 
 That's it! I told you this was going to be quick. Create these other datasets using the same steps:
 
-1. `Luma Offline Purchase Event Dataset` for your `Luma Offline Purchase Event Schema`
+1. `Luma Offline Purchase Events Dataset` for your `Luma Offline Purchase Events Schema`
 1. `Luma Web Events Dataset` for your `Luma Web Events Schema`
 1. `Luma Product Catalog Dataset` for your `Luma Product Catalog Schema`
 
@@ -71,8 +71,7 @@ First we need to get the `$id` of the `Luma CRM Schema`:
 
 1. Open [!DNL Postman]
 1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
-1. Open the request **[!DNL Schema Registry API > Schemas > List all schemas within the specified container.]**
-1. Update the Accept Header to one of the allowed values, for example `application/vnd.adobe.xdm+json`
+1. Open the request **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Select the **Send** button
 1. You should get a 200 response
 1. Look in the response for the `Luma CRM Schema` item and copy the `$id` value
@@ -82,7 +81,7 @@ First we need to get the `$id` of the `Luma CRM Schema`:
 
 Now you can create the dataset:
 
-1. Download [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) to your `Luma Tutorial Assets` folder. (The `Dataset Service API` collection is for managing data usage labels on existing datasets)
+1. Download [Catalog Service API.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Catalog%20Service%20API.postman_collection.json) to your `Luma Tutorial Assets` folder.
 1. Import the collection into [!DNL Postman]
 1. Select the request **[!DNL Catalog Service API > Datasets > Create a new dataset.]**
 1. Paste the following as the **Body** of the request, ***replacing the id value with your own***:

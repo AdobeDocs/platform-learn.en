@@ -37,7 +37,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 You will need access to an (S)FTP server or cloud storage solution for the Sources exercise. There is a workaround if you do not have one.
 
-## Ingest data in batches with Platform UI
+## Ingest data in batches with Platform user interface
 
 Data can be uploaded directly into a dataset on the datasets screen in JSON and parquet formats.
 
@@ -58,7 +58,7 @@ First, get the sample data and customize it for your tenant:
 
 ### Ingest the data
 
-1. In the Platform UI, select **[!UICONTROL Datasets]** in the left navigation
+1. In the Platform user interface, select **[!UICONTROL Datasets]** in the left navigation
 1. Select on your `Luma Loyalty Dataset`
 1. Scroll down until you see the **[!UICONTROL Add Data]** section in the right column
 1. Upload the `luma-loyalty.json` file.
@@ -79,7 +79,7 @@ First, get the sample data and customize it for your tenant:
 
 There are a few ways to confirm that the data was successfully ingested.
 
-#### Validate in the Platform UI
+#### Validate in the Platform user interface
 
 To confirm that the data was ingested into the dataset:
 
@@ -172,7 +172,7 @@ Now we can upload the data into the batch:
 
     ![Data uploaded](assets/ingestion-crm-uploadFile.png)
 
-At this point, if you look at your batch in the Platform UI, you will see that it is in a "[!UICONTROL Loading]" status:
+At this point, if you look at your batch in the Platform user interface, you will see that it is in a "[!UICONTROL Loading]" status:
 ![Batch loading](assets/ingestion-crm-loading.png)
 
 Because the Batch API is often used to upload multiple files, you need need to tell Platform when a batch is complete, which we will do in the next step.
@@ -191,9 +191,9 @@ To complete the batch:
 
 ### Validate the data
 
-#### Validate in the Platform UI
+#### Validate in the Platform user interface
 
-Validate the data has landed in the Platform UI just like you did for the Loyalty dataset.
+Validate the data has landed in the Platform user interface just like you did for the Loyalty dataset.
 
 First, confirm the batch shows that 1000 records have ingested:
 
@@ -286,7 +286,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 
 ### Ingest the data to your preferred cloud storage location
 
-1. In the Platform UI, filter the [!UICONTROL Sources] catalog to **[!UICONTROL Cloud storage]**
+1. In the Platform user interface, filter the [!UICONTROL Sources] catalog to **[!UICONTROL Cloud storage]**
 1. Note that there are convenient links to documentation under the `...`
 1. In the box of your preferred Cloud storage vendor, select the **[!UICONTROL Configure]** button 
     ![Select configure](assets/ingestion-offline-selectFTP.png)
@@ -302,7 +302,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 1. Select the **[!UICONTROL Next]** button
     ![Select your data file(s)](assets/ingestion-offline-selectData.png)
 
-1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Event Dataset` and select the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
+1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Events Dataset` and select the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
     ![Select your dataset](assets/ingestion-offline-mapping.png)
 1. On the **[!UICONTROL Scheduling]** step, you choose the frequency with which you want to reingest data from the Source. Take a moment to look at the options. We are just going to do a one-time ingestion, so leave the **[!UICONTROL Frequency]** on **[!UICONTROL Once]** and select the **[!UICONTROL Next]** button:
     ![Schedule your data flow](assets/ingestion-offline-scheduling.png)

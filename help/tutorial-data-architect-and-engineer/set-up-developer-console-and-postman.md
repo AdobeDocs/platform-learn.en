@@ -33,7 +33,6 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 ## Set up Adobe Developer Console
  
 1. Create a folder on your local machine named `Luma Tutorial Assets` for files used in the tutorial.
-   
 
 1. Open the [Adobe Developer Console](https://console.adobe.io)
 
@@ -93,10 +92,18 @@ You might have noticed that the project was assigned a number, for example, "Pro
 
 ## Set up Postman
 
+>[!CAUTION]
+>
+>The Postman interface is regularly updated. The screenshots in this tutorial were taken with Postman v9.0.5 for Mac, but interface options may have changed.
+
+
 1. Download and install [[!DNL Postman]](https://www.postman.com/downloads/)
 1. Open [!DNL Postman] and import the downloaded json environment file, `service.postman_environment.json`
-   ![Adobe Developer Console Import environment](assets/postman-importEnvironment.png)
-1. In [!DNL Postman], select your environment in the top-right dropdown and select the **eye** icon to view the environment variables. You should see that the ACCESS_TOKEN, PRIVATE_KEY, and JWT_TOKEN variables are blank:
+   ![Import environment](assets/postman-importEnvironment.png)
+1. In [!DNL Postman], select your environment in the dropdown
+
+   ![Change environment](assets/postman-changeEnvironment.png)
+1. Select the **eye** icon to view the environment variables:
 
    ![Adobe Developer Console Project API Config](assets/postman-PostmanEnvironment.png)
 
@@ -119,7 +126,8 @@ Now it's time to add the PRIVATE_KEY value to the Postman environment
    * `certificate_pub.crt`
 1. Open the `private.key` file in a text editor and copy the contents.
 1. In Postman, on the **Manage Environments** > **Edit** modal which is still open from the last exercise, paste copied values in front of **PRIVATE_KEY** in the **Initial Value** and **Current Value** columns.
-1. Select the **Update** button to save your PRIVATE_KEY and the updated environment name.
+1. Select **Save**
+
     ![Private Key pasted into Postman](assets/postman-privateKey.png)
     
 ### Add the JWT and Access Tokens
@@ -144,9 +152,9 @@ To generate the tokens:
 
 ### Add the Sandbox Name and Tenant ID
 
-The `SANDBOX_NAME` and `TENANT_ID` and `CONTAINER_ID` variables are not provided in the environment export from the Adobe Developer Console so we add them manually:
+The `SANDBOX_NAME` and `TENANT_ID` and `CONTAINER_ID` variables are not included in the Adobe Developer Console export, so we add them manually:
 
-1. In [!DNL Postman], open the **Environment Variables** modal
+1. In [!DNL Postman], open the **Environment Variables**
 1. Select the **Edit** link to the right of the environment name
 1. In the **Add new variable field**, enter `SANDBOX_NAME` 
 1. Into both value fields, enter `luma-tutorial`, the name we gave to our sandbox in the previous lesson. If you used a different name for your sandbox, for example, luma-tutorial-ignatiusjreilly, make sure to use that value.
@@ -164,17 +172,16 @@ The `SANDBOX_NAME` and `TENANT_ID` and `CONTAINER_ID` variables are not provided
     >
     >`CONTAINER_ID` is a field whose value we change several times during the tutorial. When `global` is used, the API interacts with Adobe-provided elements in your Platform account. When `tenant` is used, the API interacts with your own custom elements.
 
-1. Select the **Update** button to save the variables
+1. Select **Save**
 
     ![SANDBOX_NAME, TENANT_ID, and CONTAINER_ID fields added as environment variables](assets/postman-addEnvFields.png)
 
-You can now close the Manage Environments modal.
 
 ## Make a Platform API Call
 
 Now let's make a Platform API call to confirm that we've configured everything correctly.
 
-Open the [Experience Platform [!DNL Postman] collections in GitHub](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform). There are many collections on this page, for various Platform APIs, and you will download these collections as needed for the tutorial. This GitHub repository will be useful to you after this tutorial, so I strongly recommend bookmarking it.
+Open the [Experience Platform [!DNL Postman] collections in GitHub](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform). There are many collections on this page, for various Platform APIs. I strongly recommend bookmarking it.
 
 Now, let's make our first API call:
 
