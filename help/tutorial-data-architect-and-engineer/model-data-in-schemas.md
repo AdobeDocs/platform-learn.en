@@ -14,7 +14,7 @@ exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
 <!-- 60min -->
 In this lesson, you will model Luma's data into schemas. This is one of the longest lessons in the tutorial, so get a glass of water and buckle up!
 
-Standardization and interoperability are key concepts behind Adobe Experience Platform. Experience Data Model (XDM), driven by Adobe, is an effort to standardize customer experience data and define schemas for customer experience management.
+Standardization and interoperability are key concepts behind Adobe Experience Platform. Experience Data Model (XDM) is an effort to standardize customer experience data and define schemas for customer experience management.
 
 XDM is a publicly documented specification designed to improve the power of digital experiences. It provides common structures and definitions for any application to use to communicate with Platform services. By adhering to XDM standards, all customer experience data can be incorporated into a common representation that can deliver insights in a faster, more integrated way. You can gain valuable insights from customer actions, define customer audiences through segments, and express customer attributes for personalization purposes.
 
@@ -61,12 +61,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 ## Create Loyalty Schema via UI
 
->[!NOTE]
->
->The term "mixin" was recently updated to "field group" in the Platform interface, might still appear in some of these screenshots.
-
-
-In this exercise, we will create a Luma Loyalty Schema to ingest loyalty data of customers.
+In this exercise, we will create a schema for Luma's loyalty data.
 
 1. Go to the Platform UI and ensure that your sandbox is selected.
 1. Go to **[!UICONTROL Schemas]** in the left navigation
@@ -78,7 +73,7 @@ In this exercise, we will create a Luma Loyalty Schema to ingest loyalty data of
 
 Next you will be prompted to add field groups to the schema. All fields must be added to schemas using groups. You can choose from a large set of industry-standard field groups provided by Adobe or create your own. As you start modeling your own data in Experience Platform, it is good to become familiar with the industry-standard field groups provided by Adobe. Whenever possible, it is a best practice to use them as they sometimes power downstream services, such as Customer AI, Attribution AI, and Adobe Analytics.
 
-When working with your own data, a big initial step will be to determine which of your own data should be captured in Platform and how it should be modeled. This large topic is discussed in more depth in the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In this tutorial, I will just be guiding you through the implementation of pre-determined schemas.
+When working with your own data, a big step will be to determine which of your own data should be captured in Platform and how it should be modeled. This large topic is discussed in more depth in the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In this tutorial, I will just be guiding you through the implementation of some pre-determined schemas.
 
 To add field groups:
 
@@ -118,8 +113,8 @@ Field groups must be created in the schema workflow. To create the field group:
 1. Select **[!UICONTROL Add]** under the **[!UICONTROL Schema Field Groups]** heading
 ![Add a new field group](assets/schemas-loyalty-addFieldGroup.png)
 1. Select **[!UICONTROL Create new field group]**
-1. Add `Luma Identity profile field group` as the **[!UICONTROL Display name]**
-1. Add a `system identifiers for XDM Individual Profile class` as the **[!UICONTROL Description]**
+1. Use `Luma Identity profile field group` as the **[!UICONTROL Display name]**
+1. Use `system identifiers for XDM Individual Profile class` as the **[!UICONTROL Description]**
 1. Select **[!UICONTROL Add field groups]**
 ![Add a new field group](assets/schemas-loyalty-nameFieldGroup.png)
 
@@ -130,9 +125,9 @@ The new, empty field group is added to your schema. The **[!UICONTROL +]** butto
       1. **[!UICONTROL Field name]**: `systemIdentifier`
       1. **[!UICONTROL Display name]**: `System Identifier`
       1. **[!UICONTROL Type]**: **[!UICONTROL Object]**
+      1. Select **[!UICONTROL Apply]**
 
     ![Add a new field group](assets/schemas-loyalty-addSystemIdentifier.png)
-1. Select **[!UICONTROL Apply]**
 
 Now add two fields under the `systemIdentifier` object:
 
@@ -180,9 +175,10 @@ First we create the empty schema:
 1. Open [!DNL Postman]
 1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens.
 1. Open your environment variables and change the value of **CONTAINER_ID** from `global` to `tenant`. Remember, you must use `tenant` whenever you want to interact with your own custom elements in Platform, such as creating a schema.
+1. Select **Save**
   ![Change the CONTAINER_ID to tenant](assets/schemas-crm-changeContainerId.png)
 1. Open the request **[!DNL Schema Registry API > Schemas > Create a new custom schema.]**
-1. Open the **Body** tab and paste the following code and select **Send** to make the API call. This call creates a new schema using the same `XDM Individual Profile` base class that was used in the Loyalty schema:
+1. Open the **Body** tab and paste the following code and select **Send** to make the API call. This call creates a new schema using the same `XDM Individual Profile` base class:
 
     ```json
     {
@@ -197,7 +193,7 @@ First we create the empty schema:
     
     >[!NOTE]
     >
-    >The namespace references for standard class and field group objects, in this and subsequent code samples, can be obtained by using list API calls such as **[!DNL Retrieve a list of classes within the specified container.]** or **[!DNL Retrieve a list of field groups within the specified container.]** with the **[!DNL CONTAINER_ID]** set to `global` and an accept header `application/vnd.adobe.xdm+json`.
+    >The namespace references in this and subsequent code samples (for example `https://ns.adobe.com/xdm/context/profile`), can be obtained by using list API calls with the **[!DNL CONTAINER_ID]** and accept header set to the correct values.
 
 1. You should get a `201 Created` response
 1. Copy `meta:altId` from Response body. We will use it later in another exercise.
@@ -257,7 +253,7 @@ Now let's add our `Luma Identity profile field group` to the schema. First, we n
 1. Select the **Send** button to retrieve a list of all of the custom field groups in your account
 1. Grab the `$id` value of the `Luma Identity profile field group` (yours will be different from the value in this screenshot)
   ![Retrieve the list of field groups](assets/schemas-crm-getListOfMixins.png) 
-1. Now Open the request **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** again
+1. Open the request **[!DNL Schema Registry API > Schemas > Update one or more attributes of a custom schema specified by ID.]** again
 1. The **Params** tab should still have the `$id` of your schema
 1. Open the **Body** tab and paste the following code, replacing the `$ref` value with the `$id` of your own `Luma Identity profile field group`:
 
@@ -274,14 +270,14 @@ Now let's add our `Luma Identity profile field group` to the schema. First, we n
 1. Select **Send**
   ![Adding the Identity Field group](assets/schemas-crm-addIdentityMixin.png) 
 
-Verify that the field group has been added to the schema by checking the UI. For bonus points, see if you can figure out how to list the field groups in the schema using the **[!DNL Lookup a specific schema by its unique ID]** call in the [!DNL Postman] collection.
+Verify that the field group has been added to the schema by checking both the API response and in the interface.
 
 ## Create Offline Purchase Events Schema
 
 Now let's create a schema based on the **[!UICONTROL XDM ExperienceEvent]** class for Luma's offline purchase data. Since you are now getting familiar with the schema editor UI, I will reduce the number of screenshots in the instructions:
 
-1. Create a schema with the **[!UICONTROL XDM ExperienceEvent]** class named `Luma Offline Purchase Events Schema`
-1. **[!UICONTROL Commerce Details]** is a standard field group for capturing common order details. Go ahead and add it to your schema. Spend a few minutes exploring the objects inside.
+1. Create a schema with the **[!UICONTROL XDM ExperienceEvent]** class
+1. Add the standard field group **[!UICONTROL Commerce Details]** to capture common order details. Spend a few minutes exploring the objects inside.
 1. Search for `Luma Identity profile field group`. It is not available! Remember that field groups are tied to a class, and since we are using a different class for this schema we can't use it. We we need to add a new field group for the XDM ExperienceEvent class containing the identity fields. Our data type will make that really easy! 
 1. Select the **[!UICONTROL Create new field group]** radio button
 1. Enter the **[!UICONTROL Display name]** as `Luma Identity ExperienceEvent field group` and select the **[!UICONTROL Add field groups]** button
@@ -291,7 +287,7 @@ Now let's create a schema based on the **[!UICONTROL XDM ExperienceEvent]** clas
 1. As the **[!UICONTROL Display Name]**, enter `System Identifier` 
 1. As the **[!UICONTROL Type]**, select **System Identifier** which is the custom data type you created earlier
 1. Select the **[!UICONTROL Apply]** button 
-1. Name your schema `Luma Offline Purchase Event Schema`
+1. Name your schema `Luma Offline Purchase Events Schema`
 1. Select the **[!UICONTROL Save]** button
 
 Note how the data type added all of the fields!
@@ -309,8 +305,8 @@ Now we are going to create one more schema for Luma's website data. By this poin
 | Property         |  Value          |  
 |---------------|-----------------|
 | Class  | XDM ExperienceEvent   |  
-| Field group          | AEP Web SDK ExperienceEvent Mixin  | 
-| Field group          | Consumer Experience Event field group       | 
+| Field group          | AEP Web SDK ExperienceEvent Mixin | 
+| Field group          | Consumer Experience Event | 
 | Schema Name    | Luma Web Events Schema   | 
 
 Select the **[!UICONTROL Consumer Experience Event]** field group. This field group contains the commerce and productListItems objects that were also in [!UICONTROL Commerce Details]. Indeed [!UICONTROL Consumer Experience Event] is a combination of several other standard field groups that are also available separately. [!UICONTROL AEP Web SDK ExperienceEvent Mixin] field group also contains other field groups, including some of the same ones in [!UICONTROL Consumer Experience Event]. Fortunately, they blend together seamlessly.
@@ -320,18 +316,16 @@ Notice that we didn't add the `Luma Identity ExperienceEvent field group` to thi
 
 ## Create Product Catalog Schema
 
-By using the  [!UICONTROL Experience event commerce details] and [!UICONTROL Consumer Experience Event field groups], Luma reports details of product-related events via the standard productListItems data type. But they also have additional product detail fields that they would like to send to Platform. Instead of capturing all of these fields in their point-of-sale and e-commerce systems and ingesting them into Platform using the schemas you created, Luma would prefer to simply ingest these fields directly from their product catalog system. A "schema relationship" in Platform allows you to define a relationship between two schemas for the purposes of classification or lookups. Luma will use a relationship to classify their product details. We will begin the process now and complete it at the end of the next lesson.
+By using the  [!UICONTROL Commerce Details] and [!UICONTROL Consumer Experience Event] field groups, Luma reports some details of product-related events via the standard productListItems data type. But they also have additional product detail fields that they would like to send to Platform. Instead of capturing all of these fields in their point-of-sale and e-commerce systems, Luma would prefer to ingest these fields directly from their product catalog system. A "schema relationship" allows you to define a relationship between two schemas for the purposes of classification or lookups. Luma will use a relationship to classify their product details. We will begin the process now and complete it at the end of the next lesson.
 
 >[!NOTE]
 >
->If you are an existing Analytics or Target customer, classifying entities with relationship schema is analogous to SAINT classifications or uploading your product catalog for Recommendations
+>If you are an existing Analytics or Target customer, classifying entities with schema relationships is analogous to SAINT classifications or uploading your product catalog for Recommendations
 
 First we must create a schema for Luma's product catalog using a custom class:
 
 1. Select the **[!UICONTROL Create schema]** button and select the **[!UICONTROL Browse]** option from the dropdown
   ![Create new Schema](assets/schemas-newSchema-browseClasses.png)
-1. Select **[!UICONTROL Assign]**
-  ![Assign](assets/schemas-newSchema-assign.png)
 1. Select the **[!UICONTROL Create new class]** radio button
 1. Name it `Luma Product Catalog Class`
 1. Leave the **[!UICONTROL Behavior]** as **[!UICONTROL Record]**
