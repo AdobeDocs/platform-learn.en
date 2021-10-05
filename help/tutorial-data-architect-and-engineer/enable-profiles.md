@@ -20,8 +20,7 @@ With Real-time Customer Profile, you can see a holistic view of each individual 
 
 As amazing as all that sounds, you don't need to activate *all of your data* for profile. In fact, you should only enable the data you need for activation use cases. Enable data that you want to use for marketing use cases, call center integrations, and so on, where you need fast access to a robust customer profile. If you are  uploading data only for analysis, it probably shouldn't be enabled for profile.
 
-There are important [guardrails for Real-time Customer Profile data
-](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) which you should review when deciding which of your own data you should enable for profile.
+There are important [guardrails for Real-time Customer Profile data](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) which you should review when deciding which of your own data you should enable for profile. 
 
 <!--is this accurate. Are there other considerations to point out? -->
 
@@ -177,7 +176,7 @@ You can also confirm that the UI shows the dataset enabled:
 
 >[!IMPORTANT]
 >
-> If you ingest data before enabling the schema and dataset for profile, you will need to reingest that data again afterwards.
+> If you ingest data before enabling the schema and dataset for profile, you will need to re-ingest that data again afterwards.
 
 ## Additional Resources
 
