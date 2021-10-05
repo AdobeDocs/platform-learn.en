@@ -302,7 +302,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 1. Select the **[!UICONTROL Next]** button
     ![Select your data file(s)](assets/ingestion-offline-selectData.png)
 
-1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Event Dataset` and select the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
+1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Events Dataset` and select the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
     ![Select your dataset](assets/ingestion-offline-mapping.png)
 1. On the **[!UICONTROL Scheduling]** step, you choose the frequency with which you want to reingest data from the Source. Take a moment to look at the options. We are just going to do a one-time ingestion, so leave the **[!UICONTROL Frequency]** on **[!UICONTROL Once]** and select the **[!UICONTROL Next]** button:
     ![Schedule your data flow](assets/ingestion-offline-scheduling.png)

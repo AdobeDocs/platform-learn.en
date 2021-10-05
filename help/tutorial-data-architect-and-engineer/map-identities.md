@@ -142,7 +142,7 @@ Repeat the process for some of your other schema:
 >
 >Data collected with the Web SDK is an exception to the typical practice of labeling identity fields in the schema. Web SDK uses the Identity Map to label identities *on the implementation side* and thus we'll determine the identities for the `Luma Web Events Schema` when we implement the Web SDK on the Luma website. In that later lesson, we'll collect the Experience Cloud Visitor ID (ECID) as the primary id and crmId as a secondary id. 
 
-With our selection of primary identities, it's clear to see how `Luma CRM Schema` can connect to the `Luma Offline Purchase Event Schema` since they both use `loyaltyId` as an identifier. But how can we connect our offline purchases to online behavior? How can we classify the products purchased with our product catalog? We will use additional identity fields and schema relationships.
+With our selection of primary identities, it's clear to see how `Luma CRM Schema` can connect to the `Luma Offline Purchase Events Schema` since they both use `loyaltyId` as an identifier. But how can we connect our offline purchases to online behavior? How can we classify the products purchased with our product catalog? We will use additional identity fields and schema relationships.
 
 <!--use a visual-->
 
