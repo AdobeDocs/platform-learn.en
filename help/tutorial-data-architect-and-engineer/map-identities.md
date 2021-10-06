@@ -80,7 +80,7 @@ We will create our CRM namespace via API.
 
 >[!NOTE]
 >
->If you'd prefer to skip the API exercises, feel free to create the CRM namespace via the UI method you used with the following details:
+>If you'd prefer to skip the API exercises, feel free to create the CRM namespace via the user interface method you used with the following details:
 >
 > 1. As the **[!UICONTROL Display name]**, use `Luma CRM Id`
 > 1. As the **[!UICONTROL Identity symbol]**, use `lumaCrmId`
@@ -106,7 +106,7 @@ Let's create the Identity Namespace `Luma CRM Id`:
 
     ![Identity Namespace](assets/identity-createUsingApi.png)
 
-If you return to the UI, you should now see your three new custom namespaces:
+If you return to the user interface, you should now see your three new custom namespaces:
 ![Identity Namespace ](assets/identity-newIdentities.png)
 
 

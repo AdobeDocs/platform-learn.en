@@ -36,7 +36,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 Let's create a simple segment for loyalty program customers with a Gold or Platinum Status
 
-1. In the Platform UI, go to **[!UICONTROL Segments]** in the left navigation
+1. In the Platform user interface, go to **[!UICONTROL Segments]** in the left navigation
 1. Select the **[!UICONTROL Create segment]** button 
 1. On the left of the schema builder are three tabs for Attributes (Record data), Events (Time-series data), and Audiences
 1. If you select the gear icon, the segment builder defaults to only showing you fields with data and that you can also choose different merge policies for your segments

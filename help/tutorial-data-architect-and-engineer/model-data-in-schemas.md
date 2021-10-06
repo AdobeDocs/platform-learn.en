@@ -164,7 +164,7 @@ Now we will create a schema using the API.
 
 >[!TIP]
 >
-> If you prefer to skip the API exercise, you can create the following schema using the UI method:
+> If you prefer to skip the API exercise, you can create the following schema using the user interface method:
 >
 > 1. Use the [!UICONTROL XDM Individual Profile] class
 > 1. Name it `Luma CRM Schema`
@@ -199,7 +199,7 @@ First we create the empty schema:
 1. Copy `meta:altId` from Response body. We will use it later in another exercise.
   ![Create the CRM schema](assets/schemas-crm-createSchemaCall.png) 
 
-1. The new schema should be visible in the UI but without any field groups
+1. The new schema should be visible in the user interface but without any field groups
   ![Create the CRM schema](assets/schemas-loyalty-emptySchemaInTheUI.png) 
 
 >[!NOTE]
@@ -274,7 +274,7 @@ Verify that the field group has been added to the schema by checking both the AP
 
 ## Create Offline Purchase Events Schema
 
-Now let's create a schema based on the **[!UICONTROL XDM ExperienceEvent]** class for Luma's offline purchase data. Since you are now getting familiar with the schema editor UI, I will reduce the number of screenshots in the instructions:
+Now let's create a schema based on the **[!UICONTROL XDM ExperienceEvent]** class for Luma's offline purchase data. Since you are now getting familiar with the schema editor user interface, I will reduce the number of screenshots in the instructions:
 
 1. Create a schema with the **[!UICONTROL XDM ExperienceEvent]** class
 1. Add the standard field group **[!UICONTROL Commerce Details]** to capture common order details. Spend a few minutes exploring the objects inside.

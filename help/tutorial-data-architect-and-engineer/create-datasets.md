@@ -38,10 +38,10 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 In this exercise, we will create datasets in the UI. Let's start with the loyalty data:
 
 1. Go to **[!UICONTROL Datasets]** in the Platform user interface's left navigation
-1. Select the **[!UICONTROL Create Dataset]** button
+1. Select the **[!UICONTROL Create dataset]** button
     ![Create a dataset](assets/datasets-createDataset.png)
 
-1. On the next screen, select **Create Dataset from schema** 
+1. On the next screen, select **Create dataset from schema** 
 1. On the next screen, select your `Luma Loyalty Schema` and then select the **[!UICONTROL Next]** button
     ![Select the dataset](assets/datasets-selectSchema.png)
 
@@ -63,7 +63,7 @@ Now create the `Luma CRM Dataset` using the API.
 
 >[!NOTE]
 >
->If you want to skip the API exercise and create the `Luma CRM Dataset` in the UI that's fine. Name it `Luma CRM Dataset` and use the `Luma CRM Schema`.
+>If you want to skip the API exercise and create the `Luma CRM Dataset` in the user interface that's fine. Name it `Luma CRM Dataset` and use the `Luma CRM Schema`.
 
 ### Get the id of the schema to be used in the dataset
 
@@ -104,7 +104,7 @@ Now you can create the dataset:
 
 1. Select the **Send** button
 1. You should get a 201 Created response containing the id of your new dataset!
-    ![Copy the $id](assets/datasets-crm-created.png) 
+    ![Dataset created with API, your custom $id used in the body](assets/datasets-crm-created.png) 
    
 >[!TIP]
 >

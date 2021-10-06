@@ -41,7 +41,7 @@ Luma makes a promise to members of their Loyalty program, that Loyalty data will
 
 The first step in the data governance process, is to apply governance labels to your data. Before we do that, let's take a quick look at what labels are available:
 
-1. In the Platform UI, select **[!UICONTROL Policies]** in the left navigation
+1. In the Platform user interface, select **[!UICONTROL Policies]** in the left navigation
 1. Go to the **[!UICONTROL Labels]** tab to see all labels in the account.
 
 There are many out-of-the-box labels, plus you can create your own via the [!UICONTROL Create label] button. There are three main types: [!UICONTROL Contract labels], [!UICONTROL Identity labels], and [!UICONTROL Sensitive labels] that correspond to common reasons data might be restricted. Each of the labels has a [!UICONTROL Friendly Name] and a short [!UICONTROL Name] which is just an abbreviation of the type and a number. For example, the [!DNL C1] label is for "No third-party export" which is what we need for our Loyalty policy.
@@ -50,7 +50,7 @@ There are many out-of-the-box labels, plus you can create your own via the [!UIC
 
 Now it's time to label the data whose usage we want to restrict:
 
-1. In the Platform UI, select **[!UICONTROL Datasets]** in the left navigation
+1. In the Platform user interface, select **[!UICONTROL Datasets]** in the left navigation
 1. Open the `Luma Loyalty Dataset`
 1. Go to the **[!UICONTROL Data Governance]** tab
 1. You can either apply labels to individual fields or apply them to the entire dataset. We will apply the label to the entire dataset. Click the pencil icon. If you don't see the icon, try making your browser wider or scrolling the middle panel to the right.
@@ -69,7 +69,7 @@ Now it's time to label the data whose usage we want to restrict:
 
 Now that our data is labeled, we can create a policy.
 
-1. In the Platform UI, select **[!UICONTROL Policies]** in the left navigation
+1. In the Platform user interface, select **[!UICONTROL Policies]** in the left navigation
 1. On the Browse tab, there is already an out-of-the-box policy called "3rd party export restriction" that associates the C2 label with the marketing action [!UICONTROL Export to Third Party]&mdash;exactly what we need!
 1. Select the policy and then enable it via the **[!UICONTROL Policy status]** toggle
     ![Data Governance](assets/governance-enablePolicy.png)
