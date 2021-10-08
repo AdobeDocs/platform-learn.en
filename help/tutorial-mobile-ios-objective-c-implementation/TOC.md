@@ -1,14 +1,15 @@
 ---
-user-guide-title: Implementing the Experience Cloud in mobile iOS Objective-C applications
+user-guide-title: Implement the Experience Cloud in mobile iOS Objective-C applications
 breadcrumb-title: iOS Objective-C Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud solutions in mobile iOS Objective-C apps with tags in Experience Platform.
 user-guide-url: /content/help/en/core-services-learn/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html
-solution: Experience Platform Launch, Tags, Data Collection
+solution: Experience Platform, Data Collection
+feature: Tags
 kt: 2797
 thumbnail: kt-2797.jpg
 ---
 
-# Implementing the Experience Cloud in Mobile iOS Objective-C Applications {#implementing-in-mobile-ios-objective-c-apps-with-launch}
+# Implement the Experience Cloud in Mobile iOS Objective-C Applications {#implement-in-mobile-ios-objective-c-apps}
 
 + [Overview](overview.md)
 + Configuring Launch{#configure-launch}
