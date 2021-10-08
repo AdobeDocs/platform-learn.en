@@ -8,7 +8,7 @@ exl-id: 63a578d3-1220-4588-b289-7310f4905d52
 ---
 # Create an event forwarding property
 
-Learn how to create a event forwarding property in Adobe Experience Platform Data Collection.
+Learn how to create an event forwarding property in Adobe Experience Platform Data Collection.
 
 >[!NOTE]
 >

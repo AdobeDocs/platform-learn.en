@@ -1,6 +1,6 @@
 ---
 title: Build rules in tags
-description: This video shows how to create rules so you can execute commands in tags. Events and conditions determine *when* to do stuff and actions determine *what* to do.
+description: Learn how to create rules so you can execute commands in tags. Events and conditions determine *when* to do stuff and actions determine *what* to do.
 feature: Tags
 kt: 3530
 thumbnail:
@@ -8,7 +8,7 @@ exl-id: 789ce4d8-4c20-4690-9907-57e924a0c586
 ---
 # Build rules in tags
 
-This video shows how to create rules so you can execute commands in tags. Events and conditions determine *when* to do stuff and actions determine *what* to do.
+Learn how to create rules so you can execute commands in tags. Events and conditions determine *when* to do stuff and actions determine *what* to do.
 
 >[!NOTE]
 >

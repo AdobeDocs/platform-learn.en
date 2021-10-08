@@ -1,6 +1,6 @@
 ---
 title: Event forwarding overview
-description: Get an overview of event forwarding.
+description: Learn how event forwarding centralizes data collection, reduces the amount of code required in your web and mobile apps, and streams data to non-Adobe solutions via Adobe Experience Platform Edge Network.
 feature: Event Forwarding
 kt: 6419
 thumbnail: 331937
@@ -8,7 +8,7 @@ exl-id: bd1a7414-b232-4ae3-98e8-b0ec1c60361b
 ---
 # Event forwarding overview
 
-Get an overview of event forwarding. Event forwarding centralizes data collection, reduces the amount of code required in your web and mobile apps, and streams data to non-Adobe solutions via Adobe Experience Platform Edge Network.
+Learn how event forwarding centralizes data collection, reduces the amount of code required in your web and mobile apps, and streams data to non-Adobe solutions via Adobe Experience Platform Edge Network.
 
 >[!NOTE]
 >

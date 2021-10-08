@@ -5,11 +5,11 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 ---
 # Adobe Experience Platform Data Collection Tutorials
 
-Adobe Experience Platform Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Experience Platform Data Collection gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help master this critical technology.
+Adobe Experience Platform Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Data Collection gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help master this critical technology.
 
 >[!NOTE]
 >
->Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
+>Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
 >
 > * Launch is now **[!DNL tags]** 
 > * Launch Server Side is now **[!DNL event forwarding]** 

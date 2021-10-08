@@ -1,5 +1,5 @@
 ---
-title: Tags overview and create properties
+title: Tags overview and create a property
 description: Get a quick overview of tags in Adobe Experience Platform Data Collection and learn how to create new properties to house the code for your site.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
 feature: Tags
@@ -7,7 +7,7 @@ kt: 3524
 thumbnail:
 exl-id: db2e1818-81bb-4d4c-b6ee-b537b48d3b21
 ---
-# Tags overview and create properties
+# Tags overview and create a property
 
 Get a quick overview of tags in Adobe Experience Platform Data Collection and learn how to create new properties to house the code for your site.
 
