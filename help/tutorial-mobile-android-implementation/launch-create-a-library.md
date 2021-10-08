@@ -54,4 +54,4 @@ After configuring your extensions, you need to package them into a library that 
 
     ![Library Built](images/mobile-launch-libraryBuilt.png)
 
-[Next "Install the Launch Property and the SDK" >](launch-install-the-mobile-sdk.md)
+[Next "Install the tags property and the SDK" >](launch-install-the-mobile-sdk.md)

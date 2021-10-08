@@ -1,10 +1,10 @@
 ---
-title: Publish your Launch Property
+title: Publish your tags property
 description: Learn how to publish your Launch property from the Development environment to the Staging and Production environments. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications with Launch tutorial.
 feature: Tags
 exl-id: 67991466-b558-4994-98bd-40920ff1138b
 ---
-# Publish your Launch Property
+# Publish your tags property
 
 Now that you have implemented some key solutions of the Adobe Experience Cloud in your Development environment, it's time to learn the publishing workflow.
 

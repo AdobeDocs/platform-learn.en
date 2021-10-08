@@ -1,10 +1,10 @@
 ---
-title: Publish your Launch Property
+title: Publish your tags property
 description: Learn how to publish your Launch property from the Development environment to the Staging and Production environments. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications with Launch tutorial.
 feature: Tags
 exl-id: 0a28c58f-beff-4ce6-9785-5a8d7d38cc1a
 ---
-# Publish your Launch Property
+# Publish your tags property
 
 Now that you have implemented some key solutions of the Adobe Experience Cloud in your Development environment, it's time to learn the publishing workflow.
 

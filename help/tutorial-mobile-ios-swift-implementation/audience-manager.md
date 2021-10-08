@@ -32,7 +32,7 @@ At the end of this lesson, you will be able to:
 
 In order to complete this lesson, you will need:
 
-1. To have completed the lessons under the Configuring Launch section, namely [Create a Launch Property](launch-create-a-property.md), [Add Extensions](launch-add-extensions.md), [Create a Library](launch-create-a-library.md), and [Install the Mobile SDK](launch-install-the-mobile-sdk.md).
+1. To have completed the lessons under the Configuring Launch section, namely [Create a tags property](launch-create-a-property.md), [Add Extensions](launch-add-extensions.md), [Create a Library](launch-create-a-library.md), and [Install the Mobile SDK](launch-install-the-mobile-sdk.md).
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 

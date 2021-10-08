@@ -1,10 +1,10 @@
 ---
-title: Create a Launch Property for Mobile Apps
+title: Create a tags property for Mobile Apps
 description: Learn how to log into the Launch interface and create a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 feature: Tags
 exl-id: 9d34680b-bd87-4ab2-b110-ed87b7a08cad
 ---
-# Create a Launch Property
+# Create a tags property
 
 Adobe Experience Platform Launch is the next generation of mobile SDK and website tag management capabilities. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available to any Adobe Experience Cloud customer.
 

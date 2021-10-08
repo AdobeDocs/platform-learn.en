@@ -1,19 +1,19 @@
 ---
-title: Implementing the Experience Cloud in Websites with Launch
-description: Implementing the Experience Cloud in Websites with Launch is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
+title: Implementing the Experience Cloud in Websites with tags
+description: Implementing the Experience Cloud in Websites with tags is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 ---
 # Overview
 
-_Implementing the Experience Cloud in Websites with Launch_ is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
+_Implementing the Experience Cloud in Websites with tags is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Callouts are provided to highlight information which might be useful to customers migrating from our older tag manager&mdash;Dynamic Tag Management. Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch on your own website.
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch on your own website.
 
 After completing this you will be able to:
 
-* Create a Launch Property
+* Create a tags property
 
-* Install a Launch Property on a website
+* Install a tags property on a website
 
 * Add the following Adobe Experience Cloud solutions:
   * **[Adobe Experience Platform Identity Service](id-service.md)**
@@ -25,7 +25,7 @@ After completing this you will be able to:
 
 * Validate the implementation using the Adobe Experience Cloud Debugger
 
-* Publish changes in Launch through development, staging, and production environments
+* Publish changes through development, staging, and production environments
 
 >[!NOTE]
 >
@@ -47,25 +47,25 @@ After completing this you will be able to:
 
 In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you may need to reach out to your Experience Cloud Administrator to request access.
 
-* For Launch, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on Launch permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* For tags, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 * For Audience Manager, you must know your Audience Manager Subdomain (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”)
 
 Also, it is assumed that you are familiar with front-end development languages like HTML and JavaScript. You do not need to be an expert in these languages to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
-## About Launch
+## About tags
 
-Adobe Experience Platform Launch is the next generation of website tag and mobile SDK management capabilities from Adobe. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available for any Adobe Experience Cloud customer.
+The tags feature of Adobe Experience Platform Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Tags gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Tags. It is available for any Adobe Experience Cloud customer.
 
-Launch for websites allows you to centrally manage all of the JavaScript related to analytics, marketing, and advertising solutions used on your desktop and mobile sites. For example, if you deploy Adobe Analytics, Launch will manage the AppMeasurement JavaScript library, populate variables, and fire requests.
+Tags for websites allows you to centrally manage all of the JavaScript related to analytics, marketing, and advertising solutions used on your desktop and mobile sites. For example, if you deploy Adobe Analytics, tags will manage the AppMeasurement JavaScript library, populate variables, and fire requests.
 
-The Launch container tag is 60% lighter than DTM and 40% lighter than Google Tag Manager. The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact.
+The content of your container is minified, including your custom code. Everything is modular. If you don't need an item, it is not included in your library. The result is an implementation that is fast and compact.
 
-Launch is also a platform that allows third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code (JavaScript, HTML, and CSS) that extends the Launch UI and client functionality. You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+Tags is also a platform that allows third-party vendors to create extensions to make it easy to deploy their solutions through tags. An extension is a package of code (JavaScript, HTML, and CSS) that extends the tags interface and client functionality. You can think of tags as an operating system, and extensions are the apps you use to achieve your tasks.
 
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own Launch property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
+In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own tags property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
 
 [![Luma website](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -79,8 +79,8 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 
 >[!NOTE]
 >
->You might find it easier to complete this tutorial with the Luma site open in Chrome, while you read this tutorial and complete the Launch interface steps in a different browser.
+>You might find it easier to complete this tutorial with the Luma site open in Chrome, while you read this tutorial and complete the Data Collection interface steps in a different browser.
 
 Let's get started!
 
-[Next "Create a Launch Property" >](launch.md)
+[Next "Create a tags property" >](create-a-tags-property.md)
