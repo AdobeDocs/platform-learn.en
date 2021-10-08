@@ -49,9 +49,9 @@ Adobe Experience Platform Data Collection is a very advanced tool that has scope
 
 Some further reading for those interested in understanding Adobe Experience Platform Data Collection further are included below.
 
-- [Adobe Experience Platform Data Collection User Guide](https://experienceleague.adobe.com/docs/launch/using/overview.html)
+- [Adobe Experience Platform Data Collection User Guide](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
 - [Implementing the Experience Cloud in Websites with Adobe Experience Platform Data Collection](https://experienceleague.adobe.com/docs/core-services-learn/implementing-in-websites-with-launch/index.html)
-- [Set-up user permissions](https://experienceleague.adobe.com/docs/launch/using/reference/admin/user-permissions.html)
+- [Set-up user permissions](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html)
 - [API documentation](https://developer.adobelaunch.com/api/)
 
 Next Step: [1.2 Edge Network, Datastreams and Server Side Data Collection](./ex2.md)
