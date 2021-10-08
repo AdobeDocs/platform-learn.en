@@ -1,6 +1,6 @@
 ---
 title: Introduction to Adobe Experience Platform Web SDK and Edge Network
-description: This video gives an overview of Adobe Experience Platform Web SDK and Edge Network. Experience Platform Web SDK is a client-side JavaScript library that allows customers to use one JavaScript library, one beacon type, one data stream, one and server-side destination to send data to all Adobe applications and to third-party destinations.
+description: Learn how Adobe Experience Platform Web SDK and Edge Network allows customers to use one JavaScript library, one beacon, one datastream, one and server-side destination to send data to all Adobe applications and to third-party destinations.
 landing-page-description: Get an overview of Web SDK and Edge Network. 
 kt: 5205
 thumbnail: 34141.jpg
@@ -8,7 +8,7 @@ exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 ---
 # Adobe Experience Platform Web SDK and Edge Network overview
 
-Get an overview of Adobe Experience Platform Web SDK and Edge Network. Experience Platform Web SDK is a client-side JavaScript library that allows customers to use one JavaScript library, one beacon, one datastream, one and server-side destination to send data to all Adobe applications and to third-party destinations.
+Learn how Adobe Experience Platform Web SDK and Edge Network allows customers to use one JavaScript library, one beacon, one datastream, one and server-side destination to send data to all Adobe applications and to third-party destinations.
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
 
