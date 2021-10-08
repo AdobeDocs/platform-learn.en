@@ -5,7 +5,7 @@ user-guide-description: How-to videos and tutorials to make you a power-user of 
 solution: Experience Platform, Data Collection
 ---
 
-# Adobe Experience Platform Data Collection Tutorials{#tutorials}
+# Adobe Experience Platform Data Collection Tutorials{#data-collection-tutorials}
 
 + [Overview](overview.md)
 + Tags{#tags}
