@@ -10,7 +10,7 @@ thumbnail: kt-2798.jpg
 
 # Implementing the Experience Cloud in Mobile Android Applications {#implementing-in-mobile-android-apps-with-launch}
 
-+ [Overview](index.md)
++ [Overview](overview.md)
 + Configuring Launch{#configure-launch}
   + [Create a Property](launch-create-a-property.md)
   + [Add Extensions](launch-add-extensions.md)

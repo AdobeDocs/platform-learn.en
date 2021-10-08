@@ -37,9 +37,9 @@ After completing this tutorial you will be able to:
 >
 >Similar multi-solution tutorials are also available for the following platforms:
 >
->* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/index.md)
->* [Implementing the Experience Cloud in Mobile Android&trade; Applications](/help/mobile-android-implementation/index.md)
->* [Implementing the Experience Cloud in Websites with Launch](/help/tutorial-website-implementation/index.md)
+>* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
+>* [Implementing the Experience Cloud in Mobile Android&trade; Applications](/help/tutorial-mobile-android-implementation/overview.md)
+>* [Implementing the Experience Cloud in Websites with Launch](/help/tutorial-website-implementation/overview.md)
 
 ## Prerequisites
 

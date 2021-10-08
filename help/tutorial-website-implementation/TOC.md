@@ -10,7 +10,7 @@ thumbnail:
 
 # Implementing the Experience Cloud in Websites with Launch {#implementing-in-websites-with-launch}
 
-+ [Overview](index.md)
++ [Overview](overview.md)
 + Configuring Launch{#configure-launch}
   + [Create a Launch Property](launch.md)
   + [Add the Launch Embed Code](launch-add-embed.md)
