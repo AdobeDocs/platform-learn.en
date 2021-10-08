@@ -83,4 +83,4 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 
 Let's get started!
 
-[Next "Create a tags property" >](create-a-tags-property.md)
+[Next "Create a tags property" >](create-a-property.md)
