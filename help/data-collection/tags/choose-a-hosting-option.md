@@ -1,0 +1,17 @@
+---
+title: Choose a hosting option
+description: Learn how to choose the best hosting option for your tags library.
+feature: Tags
+kt: 3526
+thumbnail:
+exl-id: adc00363-7490-44ab-95e2-46f9f630021c
+---
+# Choose a hosting option
+
+Learn how to choose the best hosting option for your tags library.
+
+>[!NOTE]
+>
+> Launch is now **[!DNL tags]**
+
+>[!VIDEO](https://video.tv.adobe.com/v/28728/?quality=12&learn=on)

@@ -27,7 +27,7 @@ Thanks to Adobe Experience Platform Data Collection, you as a brand are now fina
 
 - Tech Blog: [Solving Implementation Pain Points with Adobe Experience Platform Web SDK and Edge Network](https://medium.com/adobetech/solving-implementation-pain-points-with-adobe-experience-platform-web-sdk-and-edge-network-880b635e6819)
 - Tech Blog: [Boosting Website Performance with Adobe Experience Platform Web SDK and Edge Network](https://medium.com/adobetech/boosting-website-performance-with-adobe-experience-platform-web-sdk-and-edge-network-329fcf70fdf9)
-- Documentation: [Adobe Experience Platform Data Collection Server Side overview](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html?lang=en#server-side-info)
+- Documentation: [Adobe Experience Platform Data Collection Server Side overview](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en#server-side-info)
 - Video: [Implement Edge and Adobe Experience Platform Data Collection Server using a non-Adobe Tag Management Solution](https://video.tv.adobe.com/v/331986?quality=12&learn=on)
 
 [Go Back to Module 21](./aep-data-collection-ssf.md)
