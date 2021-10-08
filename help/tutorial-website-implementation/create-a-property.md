@@ -1,17 +1,17 @@
 ---
-title: Create a Launch Property
-description: Learn how to log into the Launch interface and create a Launch property. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
+title: Create a tags property
+description: Learn how to log into the Data Collection interface and create a tags property. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 exl-id: f83d374a-a831-4598-b9d3-6f183224b589
 ---
-# Create a Launch Property
+# Create a tags property
 
-In this lesson, you will create your first Launch property.
+In this lesson, you will create your first tags property.
 
 A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site.
 
 ## Prerequisites
 
-In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in Launch. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on Launch permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in tags. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 >[!NOTE]
 >
@@ -25,29 +25,23 @@ In order to complete the next few lessons, you must have permission to Develop, 
 
 At the end of this lesson, you will be able to:
 
-* Log into the Launch user interface
-* Create a new Launch property
-* Configure a Launch property
+* Log into the Data Collection user interface
+* Create a new tags property
+* Configure a tags property
 
-## Go to Launch
+## Go to the Data Collection interface
 
-**To get to Launch**
+**To get to Data Collection**
 
 1. Log into the [Adobe Experience Cloud](https://experiencecloud.adobe.com)
 
 1. Click the ![Solution Switcher Icon](images/launch-solutionSwitcher.png) icon to open the app switcher
 
-1. Select **[!UICONTROL Launch]** from the menu ![Open the solution switcher using the icon and click Activation](images/launch-solutionSwitcherActivation.png)
+1. Select **[!UICONTROL Launch/Data Collection]** from the menu ![Open the solution switcher using the icon and click Launch/Data Collection](images/launch-solutionSwitcherActivation.png)
 
-1. Under **[!UICONTROL Adobe Experience Platform Launch]**, click the **[!UICONTROL Go to Launch]** button
-
-   ![Click the Launch button](images/launch-goToLaunch.png)
-
-You should now see the `Properties` screen (if no properties have ever been created in the account, this screen might be empty):
+You should now see the `Tags Properties` screen (if no properties have ever been created in the account, this screen might be empty):
 
 ![Properties Screen](images/launch-propertiesScreen.png)
-
-If you use Launch frequently, you can also bookmark the following URL and log in directly [https://launch.adobe.com](https://launch.adobe.com)
 
 ## Create a Property
 
@@ -60,7 +54,7 @@ A property is basically a container that you fill with extensions, rules, data e
     ![Click New Property](images/launch-addNewProperty.png)
 
 1. Name your property (e.g. `Luma Tutorial` or `Luma Tutorial - Daniel`)
-1. As the domain, enter `enablementadobe.com` since this is the domain where the Luma demo site is hosted. Although the "Domain" field is required, the Launch property will work on any domain where it's implemented. The main purpose of this field is to pre-populate menu options in the Rule builder.
+1. As the domain, enter `enablementadobe.com` since this is the domain where the Luma demo site is hosted. Although the "Domain" field is required, the tags property will work on any domain where it's implemented. The main purpose of this field is to pre-populate menu options in the Rule builder.
 1. Expand the **[!UICONTROL Advanced Options]** section and check the box to **[!UICONTROL Run rule components in sequence]**
 1. Click the **[!UICONTROL Save]** button
 
@@ -69,4 +63,4 @@ A property is basically a container that you fill with extensions, rules, data e
 Your new property should display on the Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Luma Tutorial`) to open the `Overview` screen.
 ![Click the name of the property to open it](images/launch-openProperty.png)
 
-[Next "Add the Launch Embed Code" >](launch-add-embed.md)
+[Next "Add the Embed Code" >](add-embed-code.md)

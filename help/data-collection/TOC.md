@@ -46,4 +46,4 @@ solution: Experience Platform, Data Collection
     + [Install the Debugger](debugger/experience-cloud-debugger/add-the-extension.md)
     + [Use the Debugger](debugger/experience-cloud-debugger/use-the-experience-cloud-debugger.md)
     + [Troubleshoot Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html)
-    + [Switch tags environments](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-switch-environments.html)
+    + [Switch tags environments](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-tags/launch-switch-environments.html)

@@ -1,12 +1,11 @@
 ---
 title: Install the Adobe Mobile SDK in a Mobile Android app
-description: Learn how to get your Launch property's embed codes and implement them in your website. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
-feature: Tags
+description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
 exl-id: 89d6aa9c-126a-45f1-bf71-1e0ef62fbd78
 ---
 # Install the Mobile SDK
 
-In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your Launch property's Development environment.
+In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your tags property's Development environment.
 
 
 >[!NOTE]
@@ -28,7 +27,7 @@ In this lesson we will start adding code to the Bus Booking app, so if you haven
 
 At the end of this lesson, you will be able to:
 
-* Obtain the installation instructions for your mobile Launch property
+* Obtain the installation instructions for your mobile tags property
 * Understand the difference between a Development, Staging, and Production environment
 * Update your `build.gradle` file to add the Mobile SDK
 * Import the Mobile SDK into your app
@@ -37,11 +36,11 @@ At the end of this lesson, you will be able to:
 
 ## Get the Installation Instructions
 
-The Installation Instructions for mobile Launch properties are a collection of code snippets that you add to specific locations in your mobile app.
+The Installation Instructions for mobile tags properties are a collection of code snippets that you add to specific locations in your mobile app.
 
 Click on the `Environments` tab in the top navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you. These correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they download your app.  
 
-Launch permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
+Tags permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
 
 Development, Staging, and Production are the only environments we need to complete the tutorial.  
 
@@ -55,7 +54,7 @@ Let's go through the instructions step-by-step.
 
 ## Update the build.gradle file
 
-If you have previously used Launch in websites, one of the first things you will notice is that there are a lot more installation instructions for mobile apps than for websites.
+If you have previously used tags properties in websites, one of the first things you will notice is that there are a lot more installation instructions for mobile apps than for websites.
 
 The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its various components. One of the first things we will do is add the Adobe Mobile SDK dependencies to the Bus Booking app's build.gradle file.
 
@@ -78,11 +77,11 @@ The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its 
 
    ![Open Android > bus > build.gradle](images/android/mobile-launch-install-openGradle.png)
 
-1. In the Launch interface, make sure the operating system is set to `Android`
+1. In the Data Collection interface, make sure the operating system is set to `Android`
 
 1. Copy the dependencies to your clipboard, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
 
-   ![Copy dependencies to your clipboard in the Launch interface](images/android/mobile-launch-install-copyDependencies.png)
+   ![Copy dependencies to your clipboard in the Data Collection interface](images/android/mobile-launch-install-copyDependencies.png)
 
 1. In Android Studio, paste the dependencies from your clipboard right after the existing dependencies (but before the closing `}`)
 
@@ -100,7 +99,7 @@ Now it's time to update the App to import the SDK
 
    ![Open DemoApplication](images/android/mobile-launch-install-openDemoApplication.png)
 
-1. In the Launch interface, scroll to the **[!UICONTROL Add Initialization Code]** section.
+1. In the Data Collection interface, scroll to the **[!UICONTROL Add Initialization Code]** section.
 1. Copy the import statements, by clicking the first ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section:
 
    ![Copy the import statements to your clipboard](images/android/mobile-launch-install-copyImports.png)
@@ -109,7 +108,7 @@ Now it's time to update the App to import the SDK
 
     ![Paste the import statements into your DemoApplication file](images/android/mobile-launch-install-pasteImports.png)
 
-1. In the Launch interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The second line turns on console logging statements (available options are "DEBUG", "VERBOSE", "WARNING", and "ERROR").
+1. In the Data Collection interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The second line turns on console logging statements (available options are "DEBUG", "VERBOSE", "WARNING", and "ERROR").
 
    ![Copy the Core statements to your clipboard](images/android/mobile-launch-install-copyCore.png)
 
@@ -118,17 +117,17 @@ Now it's time to update the App to import the SDK
 
    ![Paste the Core statements into your DemoApplication file](images/android/mobile-launch-install-pasteCore.png)
 
-1. In the Launch interface, copy the extension statements, by clicking the third ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section.
+1. In the Data Collection interface, copy the extension statements, by clicking the third ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section.
 
    ![Copy the Extension statements to your clipboard](images/android/mobile-launch-install-copyExtensions.png)
 
-1. In Android Studio, paste these extension statements into the `try` section. Note that `MobileCore.configureWithAppID` contains the identifier of the Launch development environment of your property. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+1. In Android Studio, paste these extension statements into the `try` section. Note that `MobileCore.configureWithAppID` contains the identifier of the tags development environment of your property. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
 
    ![Paste the Extension statements into your DemoApplication file](images/android/mobile-launch-install-pasteExtensions.png)
 
 >[!NOTE]
 >
->The Mobile Install Instructions provided in the Launch interface include the import and registration statements for Identity, Lifecycle, and Signal extensions, as well as the initialization of the Lifecyle metrics. These extensions are considered part of the Mobile Core extension. If you do not wish to use these extensions in your app, you do not need to import, register, or implement other code associated with these extensions.
+>The Mobile Install Instructions provided in the Data Collection interface include the import and registration statements for Identity, Lifecycle, and Signal extensions, as well as the initialization of the Lifecyle metrics. These extensions are considered part of the Mobile Core extension. If you do not wish to use these extensions in your app, you do not need to import, register, or implement other code associated with these extensions.
 >
 >Also, there are additional implementation options which should be considered when using these extensions (for example, you could pause/restart Lifecycle collection when the user backgrounds/foregrounds the app). You can read more about this in [the Mobile Core extension documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core)
 
@@ -149,7 +148,7 @@ Now it's time to update the App to import the SDK
 
 Here are examples of some specific calls you can look for:
 
-1. **Calls to retrieve the Launch configuration** (filter Logcat to `adobedtm.com`). Note the extension configurations which you entered in the earlier lesson. While adding the extension requires an update to the app, these settings can be managed externally in Launch and changed at any time:
+1. **Calls to retrieve the tags configuration** (filter Logcat to `adobedtm.com`). Note the extension configurations which you entered in the earlier lesson. While adding the extension requires an update to the app, these settings can be managed externally in tags and changed at any time:
 
     ```java
     03-14 16:30:29.484 24869-24930/com.adobe.busbooking D/ADBMobile: ConfigurationExtension - Cached configuration loaded.

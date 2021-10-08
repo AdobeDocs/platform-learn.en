@@ -1,8 +1,7 @@
 ---
-title: Implement Adobe Analytics with Launch
-description: Learn how to implement Adobe Analytics using the Adobe Analytics Launch extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
+title: Implement Adobe Analytics with tags
+description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 solution: Experience Platform, Data Collection, Analytics
-feature: Tags
 exl-id: a92cf494-50ca-4d6a-ba66-161267c9b4b0
 ---
 # Add Adobe Analytics
@@ -11,7 +10,7 @@ In this lesson, you will enable Adobe Analytics tracking in your app.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
-In the [Add Extensions](launch-add-extensions.md) and [Install the Mobile SDK](launch-install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your Launch property and imported it into the sample application.  Now all you have to do is add code to track the states and actions in your app!
+In the [Add Extensions](add-extensions.md) and [Install the Mobile SDK](install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your tags property and imported it into the sample application.  Now all you have to do is add code to track the states and actions in your app!
 
 
 >[!NOTE]
@@ -30,11 +29,11 @@ At the end of this lesson, you will be able to:
 * Add code to track states in your app with additional data
 * Add code to track actions in your app with additional data
 
-There are many things that could be implemented for Analytics in Launch. This lesson is not exhaustive, but should give you a solid overview of the main techniques you will need for implementing in your own app.
+There are many things that could be implemented for Analytics in tags. This lesson is not exhaustive, but should give you a solid overview of the main techniques you will need for implementing in your own app.
 
 ## Prerequisites
 
-You should have already completed the lessons in the [Configure Launch](launch-create-a-property.md) section. In that section, you added the Analytics extension and  configured your tracking server and report suite ID(s).
+You should have already completed the lessons in the [Configure tags](create-a-property.md) section. In that section, you added the Analytics extension and  configured your tracking server and report suite ID(s).
 
 ## Lifecycle Metrics and Adobe Analytics
 
@@ -225,8 +224,8 @@ Nice work! You have completed the Analytics lesson. Of course, there are many ot
 
 ## Additional Benefits of trackState and trackAction
 
-In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in Launch, there are many more things that you can do in the Launch interface leveraging the code you just added.
+In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in tags, there are many more things that you can do in the Data Collection interface leveraging the code you just added.
 
-In Launch you are able to create Rules triggered by the trackState and trackAction APIs, and have them execute additional actions, such as making requests to other Adobe solutions or external partners.
+In tags, you are able to create Rules triggered by the trackState and trackAction APIs, and have them execute additional actions, such as making requests to other Adobe solutions or external partners.
 
 [Next "Add Adobe Audience Manager" >](audience-manager.md)

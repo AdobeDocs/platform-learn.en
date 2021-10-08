@@ -1,14 +1,13 @@
 ---
-title: Create a Launch Property for Mobile Apps
-description: Learn how to log into the Launch interface and create a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
-feature: Tags
+title: Create a tags property for Mobile Apps
+description: Learn how to log into the Data Collection interface and create a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
 exl-id: e250b9b9-a6df-47cb-8e09-13124cb19624
 ---
-# Create a Launch Property
+# Create a tags property
 
-Adobe Experience Platform Launch is the next generation of mobile SDK and website tag management capabilities. Launch gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Launch. It is available to any Adobe Experience Cloud customer.
+Adobe Experience Platform Data Collection is the next generation of mobile SDK and website tag management capabilities. The tags feature gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for tags. It is available to any Adobe Experience Cloud customer.
 
-In this lesson, you will create a Launch property for mobile apps.
+In this lesson, you will create a tags property for mobile apps.
 
 
 >[!NOTE]
@@ -21,37 +20,34 @@ In this lesson, you will create a Launch property for mobile apps.
 
 ## Prerequisites
 
-In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in Launch. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on Launch permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in tags. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
-* Log into the Launch user interface
-* Create a new Launch mobile property
-* Configure a Launch mobile property
+* Log into the Data Collection user interface
+* Create a new mobile tags property
+* Configure a mobile tags property
 
-## Go to Launch
+## Go to Data Collection
 
-**To get to Launch**
+**To get to Data Collection**
 
 1. Log into the [Adobe Experience Cloud](https://experiencecloud.adobe.com)
 
 1. Click the ![Solution Switcher Icon](images/mobile-launch-solutionSwitcher.png) icon to open the solution switcher
 
-1. Select **[!UICONTROL Launch]** from the menu
+1. Select **[!UICONTROL Launch/Data Collection]** from the menu
 
     ![Open the solution switcher using the icon and click Activation](images/mobile-launch-solutionSwitcherActivation.png)
 
-1. Under **[!UICONTROL Adobe Experience Cloud Launch]**, click the **[!UICONTROL Go to Launch]** button
 
-   ![Click the Launch button](images/mobile-launch-goToLaunch.png)
 
-You should now see the `Properties` screen (if no properties have ever been created in the account, this screen might be empty):
+You should now see the `Tags Properties` screen (if no properties have ever been created in the account, this screen might be empty):
 
 ![Properties Screen](images/mobile-launch-propertiesScreen.png)
 
-If you use Launch frequently, you can also bookmark the following URL and log in directly [https://launch.adobe.com](https://launch.adobe.com)
 
 ## Create a Property
 
@@ -72,4 +68,4 @@ A property is basically a container that you fill with extensions, rules, data e
 Your new property should display on Properties page. Note that if you check the box next to the property name, options to **[!UICONTROL Configure]** or **[!UICONTROL Delete]** the property appear above the property list. Click on the name of your property (e.g. `Mobile Tutorial`) to open the `Overview` screen.
 ![Click the name of the property to open it](images/mobile-launch-openProperty.png)
 
-[Next "Add Extensions" >](launch-add-extensions.md)
+[Next "Add Extensions" >](add-extensions.md)

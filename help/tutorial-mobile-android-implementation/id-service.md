@@ -1,8 +1,7 @@
 ---
-title: Implement the Adobe Experience Platform Identity Service with Launch
-description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
+title: Implement the Adobe Experience Platform Identity Service with tags
+description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
 solution: Experience Platform, Data Collection, Experience Cloud Services
-feature: Tags
 exl-id: 80d58079-ec87-44e4-8712-347fb4dde603
 ---
 # Add the Adobe Experience Platform Identity Service

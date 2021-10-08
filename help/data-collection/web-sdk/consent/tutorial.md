@@ -17,7 +17,7 @@ Many legal privacy regulations have introduced requirements for active and speci
 > * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)** 
 > * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
-This tutorial demonstrates how to implement and activate consent data obtained from a Consent Management Platform (CMP) using the Platform Web SDK extension in Adobe Experience Platform Launch. We’ll do this using both of the Adobe standards and the IAB TCF 2.0 consent standard, with OneTrust or Sourcepoint as example CMPs.
+This tutorial demonstrates how to implement and activate consent data obtained from a Consent Management Platform (CMP) using the Platform Web SDK extension in Adobe Experience Platform Data Collection. We’ll do this using both of the Adobe standards and the IAB TCF 2.0 consent standard, with OneTrust or Sourcepoint as example CMPs.
  
 This tutorial uses the Platform Web SDK extension to send consent data to Platform. For an overview of the Web SDK, see [this page](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html?lang=en).
  
@@ -31,7 +31,7 @@ On that page, there's a requirement for an "Event Dataset" and, just like it sou
 
 For the Platform consent standard v2.0, we’ll also need access to Adobe Experience Profile to create an XDM Individual Profile schema and dataset. For a tutorial on schema creation, see [Create a schema using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#tutorials) and for the required Preference Details profile mixin see [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en).
 
-This tutorial assumes you have access to Platform Launch and have created a client-side Property with the Web SDK extension installed and a working library created and built for development. These topics are detailed and demonstrated in these documents:
+This tutorial assumes you have access to Data Collection and have created a client-side tags property with the Web SDK extension installed and a working library created and built for development. These topics are detailed and demonstrated in these documents:
 
 * [Create or configure a property](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
 * [Overview of libraries](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
@@ -51,7 +51,7 @@ For more information on these standards, see [Supporting customer consent prefer
  
 ### Step 1: Configure Consent in the Web SDK extension
  
-After we've installed the Platform Web SDK extension in a Platform Launch property, we can configure the options for addressing consent data on the extension configuration screen:
+After we've installed the Platform Web SDK extension in a tags property, we can configure the options for addressing consent data on the extension configuration screen:
  
 ![](./images/pending.png)
  
@@ -72,7 +72,7 @@ With this “Pending” setting, attempting to execute any commands that require
  
 Once a CMP collects the user’s preferences, then we can communicate those preferences to the SDK. In a later section below, we'll see how to obtain that opt-in data and use it with the Web SDK extension.
 
-“Provided by data element” allows us to access a Platform Launch data element containing any consent preference data captured by custom code or a CMP on your site, or in your data layer. A data element used for this purpose should resolve to “in”, “out”, or “pending”.
+“Provided by data element” allows us to access a tags data element containing any consent preference data captured by custom code or a CMP on your site, or in your data layer. A data element used for this purpose should resolve to “in”, “out”, or “pending”.
 
 Please note: this configuration setting for the SDK is not persisted to users’ profiles, it is specific to setting the behavior of the SDK before explicit consent preferences are provided by the visitor.
  
@@ -82,11 +82,11 @@ For this example, let’s choose the option for “Pending” and select **Save*
 
 ### Step 2: Communicating Consent Preferences 
 
-Now that we’ve set the default behavior of the SDK, we can use Platform Launch to send a visitor’s explicit consent preferences to Platform. Sending consent data using the Adobe 1.0 or 2.0 standard is easily implemented using the setConsent action of the Web SDK in your Platform Launch rules.
+Now that we’ve set the default behavior of the SDK, we can use tags to send a visitor’s explicit consent preferences to Platform. Sending consent data using the Adobe 1.0 or 2.0 standard is easily implemented using the setConsent action of the Web SDK in your tags rules.
 
 #### Setting Consent with the Platform Consent Standard 1.0
 
-Let's create a rule to demonstrate this. In your Platform Launch property, select Rules, then on the blue Add Rules button. Let's name the Rule "setAdobeConsent" and select to add an Event. For the Event Type, choose "Window Loaded" which will trigger this rule whenever a page is loaded on our website. Next, under “Actions” select "Add" to open the action configuration screen. This is where we'll set the consent data. Select the "Extension" dropdown and select "Platform Web SDK", then select the "Action Type" and select "Set Consent".
+Let's create a rule to demonstrate this. In your Platform tags property, select Rules, then on the blue Add Rules button. Let's name the Rule "setAdobeConsent" and select to add an Event. For the Event Type, choose "Window Loaded" which will trigger this rule whenever a page is loaded on our website. Next, under “Actions” select "Add" to open the action configuration screen. This is where we'll set the consent data. Select the "Extension" dropdown and select "Platform Web SDK", then select the "Action Type" and select "Set Consent".
 
 Under "Consent Information", choose "Fill out a form". In this rule action, we’ll use the Web SDK to set consent for the Adobe 1.0 consent standard by filling in the form displayed:
  
@@ -98,7 +98,7 @@ In this example, we'll select "In" to indicate the visitor has consented to allo
 
 Note:  Once a website visitor has opted out, the SDK will not allow you to set the users consent to in.
  
-Your Platform Launch rules can be triggered by a variety of built-in or custom [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=en) which can be used to pass this consent data at the appropriate time during a visitor session. In the above example, we used the window loaded event to trigger the rule. In a later section, we’ll use a consent preference event from a CMP to trigger a Set Consent action. You can use a Set Consent action in a rule triggered by any event you prefer that indicates an opt-in preference setting.
+Your tags rules can be triggered by a variety of built-in or custom [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=en) which can be used to pass this consent data at the appropriate time during a visitor session. In the above example, we used the window loaded event to trigger the rule. In a later section, we’ll use a consent preference event from a CMP to trigger a Set Consent action. You can use a Set Consent action in a rule triggered by any event you prefer that indicates an opt-in preference setting.
 
 #### Setting Consent with the Platform Consent Standard 2.0
 
@@ -149,11 +149,11 @@ This mixin contains the consent preference fields required by the IAB TCF 2.0 st
 
 ### Step 1: Create a Consent Data Element
  
-In order to send consent event data from Platform Launch using the IAB TCF 2.0 consent standard, we first set up an xdm data element with the required consent fields:
+In order to send consent event data from tags using the IAB TCF 2.0 consent standard, we first set up an xdm data element with the required consent fields:
  
 ![](./images/data-element.png)
  
-In your Platform Launch client-side property, select Data Elements and the blue "Add Data Element" button. We'll name this data element "xdm-consentStrings" for this example. These xdm fields will contain the user consent data required for the IAB TCF 2.0 standard.
+In your tags client-side property, select Data Elements and the blue "Add Data Element" button. We'll name this data element "xdm-consentStrings" for this example. These xdm fields will contain the user consent data required for the IAB TCF 2.0 standard.
  
 In the Extension dropdown menu, choose "Platform Web SDK", and for Data Element Type, choose "XDM Object". The xdm mapper should appear, allowing you to select and expand the "consentStrings" item as shown in the screenshot above.
  
@@ -167,7 +167,7 @@ We'll set each of the consentStrings as follows:
  
 The consentStandard and consentStandardVersion are both just strings of text for the standard we're using, which is IAB TCF version 2.0. The consentStringValue references a data element named "IAB TCF Consent String". The percent signs surrounding the text indicate the name of a data element, and we'll look at that in a moment. The containsPersonalData property indicates whether the IAB TCF 2.0 consent string contains any personal data with either "True" or "False". The gdprApplies field indicates either "true" for GDPR applies, "false" for GDPR does not apply, or "undefined" for unknown whether GDPR applies. Currently, the Web SDK will treat "undefined" as "true", so consent data sent with "gdprApplies: undefined" will be treated as if the visitor is located in an area where GDPR does apply.
 
-See the [consent documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=en#getting-started) for more on these properties and on IAB TCF 2.0 in Platform Launch.
+See the [consent documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/iab-tcf/with-launch.html?lang=en#getting-started) for more on these properties and on IAB TCF 2.0 in tags.
  
 ### Step 2: Create a Rule to Set Consent with the IAB TCF 2.0 Standard
  
@@ -175,7 +175,7 @@ Next, we create a rule to set consent with the Web SDK when consent data for thi
  
 #### Add a rule event
  
-Select the Rules section in your Platform Launch property, then on the blue Add Rule button. Let's name the rule setConsent – IAB and select Add under Events. Let's name this event tcfapi addEventListener and select Open Editor to open the custom code editor.
+Select the Rules section in your Platform tags property, then on the blue Add Rule button. Let's name the rule setConsent – IAB and select Add under Events. Let's name this event tcfapi addEventListener and select Open Editor to open the custom code editor.
  
 Copy and paste the following code into your editor window:
 
@@ -199,7 +199,7 @@ function addEventListener() {
 addEventListener();
 ```
 
-This code simply creates and executes a function called addEventListener. The function checks to see if the window.__tcfapi object exists, and if it does, it adds an event listener according to the specifications of the API. You can read more about those specs in the [IAB repo](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) on GitHub. If this event listener is added successfully, and the website visitor has completed their consent and preferences choices, the code sets Platform Launch custom variables for the tcData tcString, and the indicator for GDPR regions. Again, to learn more about the IAB TCF, see the IAB [website](https://iabeurope.eu/transparency-consent-framework/) and [GitHub repo](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) for technical details. After setting those values, the code executes the trigger function which triggers this rule to run.
+This code simply creates and executes a function called addEventListener. The function checks to see if the window.__tcfapi object exists, and if it does, it adds an event listener according to the specifications of the API. You can read more about those specs in the [IAB repo](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) on GitHub. If this event listener is added successfully, and the website visitor has completed their consent and preferences choices, the code sets tags custom variables for the tcData tcString, and the indicator for GDPR regions. Again, to learn more about the IAB TCF, see the IAB [website](https://iabeurope.eu/transparency-consent-framework/) and [GitHub repo](https://github.com/InteractiveAdvertisingBureau/GDPR-Transparency-and-Consent-Framework) for technical details. After setting those values, the code executes the trigger function which triggers this rule to run.
  
 If the window.__tcfapi object did not exist the first time this function was executed, the function will check for it again every 100 milliseconds, so the event listener can be added. The last line of code simply executes the addEventListener function defined in the lines of code above it.
 
@@ -219,17 +219,17 @@ Under GDPR Contains Personal Data, select the option to indicate whether or not 
 
 ![](./images/data-element-2-0.png)
  
-Select the blue Save button to save the action and the blue Save (or Save to Library) button to save the rule. At this point you have successfully implemented the data element and rule in Platform Launch to set consent using the Web SDK extension with the IAB TCF 2.0 consent standard.
+Select the blue Save button to save the action and the blue Save (or Save to Library) button to save the rule. At this point you have successfully implemented the data element and rule in tags to set consent using the Web SDK extension with the IAB TCF 2.0 consent standard.
  
 ### Step 3: Save to Library and Build
  
-If you're using the [working library](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-launch/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) prerequisite, you have already saved these changes and built your development library:
+If you're using the [working library](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-tags/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) prerequisite, you have already saved these changes and built your development library:
  
 ![](./images/save-library.png)
  
 ### Step 4: Inspect and validate data collection
  
-On our site, we refresh the page and confirm the library build in the [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Chrome extension, in the Platform Launch menu section:
+On our site, we refresh the page and confirm the library build in the [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Chrome extension, in the tags menu section:
  
 ![](./images/build-date.png)
  
@@ -245,9 +245,9 @@ After selecting "I Accept", we can inspect the setConsent call for the IAB TCF 2
 
 ![](./images/inspect-2-0.png)
  
-Here we see the data we set up earlier in our data elements and Platform Launch rule. The value property contains the encoded tcString data we saw earlier.
+Here we see the data we set up earlier in our data elements and tags rule. The value property contains the encoded tcString data we saw earlier.
 
-OneTrust, Sourcepoint and other CMPs that implement the IAB TCF 2.0 standard will all produce similar data in our pages. We can capture that data and use it with the Web SDK extension in Platform Launch using the custom code event in the rule we created above. The custom code will be the same regardless of the CMP used to generate the IAB TCF 2.0 data. The custom code can also be used with either of the Platform Consent standards (1.0 or 2.0).
+OneTrust, Sourcepoint and other CMPs that implement the IAB TCF 2.0 standard will all produce similar data in our pages. We can capture that data and use it with the Web SDK extension in tags using the custom code event in the rule we created above. The custom code will be the same regardless of the CMP used to generate the IAB TCF 2.0 data. The custom code can also be used with either of the Platform Consent standards (1.0 or 2.0).
 
 ## Sending Consent Data with Experience Events 
 

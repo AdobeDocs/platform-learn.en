@@ -1,14 +1,13 @@
 ---
 title: Add a Data Element, a Rule and a Library
-description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-feature: Tags
+description: Learn how to create Data Elements, Rules, and a Library in tags. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
 ---
 # Add a Data Element, a Rule and a Library
 
 In this lesson, you will create your first Data Element, Rule, and Library.
 
-Data Elements and Rules are the basic building blocks of Launch. Data Elements store the attributes you want to send to your marketing and advertising solutions, while Rules fire the requests to those solutions under the right conditions.  Libraries are the JavaScript files that load on the page to do all of the work. In this lesson, you will use all three to make our sample page do something.
+Data Elements and Rules are the basic building blocks of tags. Data Elements store the attributes you want to send to your marketing and advertising solutions, while Rules fire the requests to those solutions under the right conditions.  Libraries are the JavaScript files that load on the page to do all of the work. In this lesson, you will use all three to make our sample page do something.
 
 >[!NOTE]
 >
@@ -31,7 +30,7 @@ At the end of this lesson, you will be able to:
 
 ## Create a Data Element for Page Name
 
-Data elements are Launch’s version of a data layer. They can store values from your own data layer object, cookies, local storage objects, query string parameters, page elements, meta tags, etc. In this exercise, you will create a data element for Page Name, which you will use later in your Target and Analytics implementations.
+Data elements are tags' version of a data layer. They can store values from your own data layer object, cookies, local storage objects, query string parameters, page elements, meta tags, etc. In this exercise, you will create a data element for Page Name, which you will use later in your Target and Analytics implementations.
 
 **To create a data element**
 
@@ -57,15 +56,11 @@ Data elements are Launch’s version of a data layer. They can store values from
 
 >[!NOTE]
 >
->**DTM Migrators:** New data element types have been added to Launch, which did not exist in DTM. Some of the new data element types include Local Storage, Session Storage, Page Info, and Random Number
-
->[!NOTE]
->
 >Data element capabilities _can be extended with Extensions_. For example, the ContextHub extension allows you to add data elements using features of the extension.
 
 ## Create a Rule
 
-Next you will use this data element in a simple rule. Rules are one of the most powerful features in Launch and allow you to specify what should happen as the visitor interacts with your website. When the criteria outlined in your rules are met, the rule triggers the action you have specified.
+Next you will use this data element in a simple rule. Rules are one of the most powerful features in tags and allow you to specify what should happen as the visitor interacts with your website. When the criteria outlined in your rules are met, the rule triggers the action you have specified.
 
 You are going to create a rule that outputs the Page Name data element value to the browser console.
 
@@ -79,13 +74,13 @@ You are going to create a rule that outputs the Page Name data element value to 
 
    ![Click the Create New Rule button](images/launch-newRule.png)
 
-1. Name the Rule `All Pages - Library Loaded`. This naming convention indicates where and when the rule will fire, making it easier to identify and re-use as your Launch property matures.
+1. Name the Rule `All Pages - Library Loaded`. This naming convention indicates where and when the rule will fire, making it easier to identify and re-use as your tags property matures.
 
-1. Under Events, click **[!UICONTROL Add]**. The Event tells Launch when the rule should fire and can be many things, including a page load, a click, a custom JavaScript event, etc.
+1. Under Events, click **[!UICONTROL Add]**. The Event tells tags when the rule should fire and can be many things, including a page load, a click, a custom JavaScript event, etc.
 
    ![Name the Rule and Add an event](images/launch-addEventToRule.png)
   
-   1. As the Event Type, select **[!UICONTROL Library Loaded (Page Top)]**. Note that when you select the Event Type, Launch pre-populates a name for the event using your selection. Also note that the default order for the event is 50. Ordering is a powerful feature in Launch which gives you precise control over the sequence of actions when you have multiple rules that are triggered by the same event. You will use this feature later in the tutorial.
+   1. As the Event Type, select **[!UICONTROL Library Loaded (Page Top)]**. Note that when you select the Event Type, tags pre-populates a name for the event using your selection. Also note that the default order for the event is 50. Ordering is a powerful feature in tags which gives you precise control over the sequence of actions when you have multiple rules that are triggered by the same event. You will use this feature later in the tutorial.
 
    1. Click the **[!UICONTROL Keep Changes]** button
   
@@ -118,24 +113,11 @@ You are going to create a rule that outputs the Page Name data element value to 
 On the Rules page, you should see your new rule:
 ![Rule appears on page](images/launch-savedRule.png)
 
-
->[!NOTE]
->
->**DTM Migrators:** In Launch, rules are required in order to fire most marketing pixels. For example, in order to fire the Adobe Analytics beacon, you must use a rule to instruct Launch to do so.
->
->The Rule builder has been dramatically redesigned and rebuilt in Launch. Some of the main changes are:
->
->* There is just one Rule builder. DTM rule-types like "Page Bottom", "Click", and "Direct Call" are all just event-types in the Rule builder. This makes it much easier to update a rule should you need to change the trigger from, say, a DOM Ready event to a custom event.
->* There is a new "Custom Code" event-type
->* Extensions can add new event types to the Rule builder. For example, the Target extension could eventually add built-in support for its [at.js custom events](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/atjs-custom-events.html), so custom code wouldn't be needed to use this feature.
->* Extensions can add new actions to the Rule builder, reducing issues by deprecating reliance on custom code. You will be using many of these extension actions in this Tutorial.
->* Rules are required to fire requests associated with most marketing tools. This will require a mindset adjustment, especially for things like setting Customer IDs, firing Analytics beacons, and firing Target requests.
-
 ## Save Your Changes to a Library
 
-After configuring a collection of extensions, data elements, and rules in the Launch interface, you need to package these capabilities and logic into a set of JavaScript code that you can deploy on your website so that marketing tags will fire when visitors come to the site. A library is the set of JavaScript code that will do this.
+After configuring a collection of extensions, data elements, and rules in the Data Collection interface, you need to package these capabilities and logic into a set of JavaScript code that you can deploy on your website so that marketing tags will fire when visitors come to the site. A library is the set of JavaScript code that will do this.
 
-In an earlier lesson, you implemented the embed code of your development environment on the sample page. When you loaded the sample page a 404 error was returned for the embed code URL because a Launch library had not been built yet and assigned to the environment. Now you will put your new data element and rule in a library so that your sample page can do something.
+In an earlier lesson, you implemented the embed code of your development environment on the sample page. When you loaded the sample page a 404 error was returned for the embed code URL because a tags library had not been built yet and assigned to the environment. Now you will put your new data element and rule in a library so that your sample page can do something.
 
 **To add and build a library**
 
@@ -153,7 +135,7 @@ In an earlier lesson, you implemented the embed code of your development environ
 
    ![Add All Changed Resources](images/launch-addAllChangedResources.png)
 
-1. Note that after clicking **[!UICONTROL Add All Changed Resources]** Launch summarizes the changes you just made.
+1. Note that after clicking **[!UICONTROL Add All Changed Resources]** tags summarizes the changes you just made.
 
 1. Click **[!UICONTROL Save & Build for Development]**
 
@@ -167,7 +149,7 @@ After a few moments, the status dot will turn green indicating the library succe
 
 Now validate that your rule is working as expected.
 
-Reload your sample page. If you look at the Developer Tools -> Network tab, you should now see a 200 response for your Launch Library!
+Reload your sample page. If you look at the Developer Tools -> Network tab, you should now see a 200 response for your tags Library!
 
 ![Library loads with 200 response](images/samplepage-200.png)
 
@@ -175,11 +157,11 @@ If you look at the Developer Tools -> Console, you should see the text "The page
 
 ![Console Message](images/samplepage-console.png)
 
-Congratulations, you created your first data element and rule and built your first Launch library!
+Congratulations, you created your first data element and rule and built your first tags library!
 
 ## Use the Working Library Feature
 
-When you are making a lot of changes in Launch, it is inconvenient to have to come to the Publishing tab, add changes, and build the library each time you want to see the result.  Now that you have created your "Initial Setup" library, you can use a feature called "Working Library" to rapidly save your changes and rebuild the library in a single step.
+When you are making a lot of changes in tags, it is inconvenient to have to come to the Publishing tab, add changes, and build the library each time you want to see the result.  Now that you have created your "Initial Setup" library, you can use a feature called "Working Library" to rapidly save your changes and rebuild the library in a single step.
 
 Make a small change to your "All Pages - Library Loaded" rule. In the left navigation, click **[!UICONTROL Rules]** and then click on the `All Pages - Library Loaded` rule to open it up.
 
@@ -189,7 +171,7 @@ On the `Edit Rule` page, click the ***[!UICONTROL Working Library]*** dropdown a
 
 ![Select Initial Setup as the Working Library](images/launch-setWorkingLibrary.png)
 
-Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save to Library]**. When you make a change in Launch, you can use this option to automatically add the change directly to your working library and/or rebuild it.
+Once you've selected the library, you should see that the **[!UICONTROL Save]** button now defaults to **[!UICONTROL Save to Library]**. When you make a change in tags, you can use this option to automatically add the change directly to your working library and/or rebuild it.
 
 Test it out. Open your Custom Code action and just add a colon after the text "The page name is" so the entire code block reads:
 
@@ -207,4 +189,4 @@ Wait a moment until the green dot reappears next to the [!UICONTROL Working Libr
 
 This is a much faster way of working and you will use this approach for the rest of the tutorial.
 
-[Next "Switch Environments with the Experience Cloud Debugger" >](launch-switch-environments.md)
+[Next "Switch Environments with the Experience Cloud Debugger" >](switch-environments.md)
