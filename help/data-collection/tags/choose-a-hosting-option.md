@@ -1,6 +1,6 @@
 ---
 title: Choose a hosting option
-description: Understand the options that you should consider as you are choosing a hosting option for the tags libraries. 
+description: Learn the pros and cons of the various a hosting options for your tags libraries. 
 feature: Tags
 kt: 3526
 thumbnail:
@@ -8,7 +8,7 @@ exl-id: adc00363-7490-44ab-95e2-46f9f630021c
 ---
 # Choose a hosting option
 
-Understand the options that you should consider as you are choosing a hosting option for your tags libraries. 
+Learn the pros and cons of the various a hosting options for your tags libraries. 
 
 >[!NOTE]
 >

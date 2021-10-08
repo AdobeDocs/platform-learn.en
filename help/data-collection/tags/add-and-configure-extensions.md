@@ -1,6 +1,6 @@
 ---
 title: Add and configure tags extensions
-description: Extensions are the "apps" that you install on your site, in order to give you the tracking, tag firing, or any other functionality that you need. The marketplace of available extensions is always growing, as Adobe, partners, and customers can and are creating new extensions that you can implement on your site. Learn the basics about extensions, and see a few examples.
+description: Learn how to add and configure extensions in your tags property.
 feature: Tags
 kt: 3528
 thumbnail:
@@ -8,7 +8,7 @@ exl-id: c4115da3-d779-4fe8-90e5-32581fb968cb
 ---
 # Add and configure tags extensions
 
-Extensions are the "apps" that you install on your site, in order to give you the tracking, tag firing, or any other functionality that you need. The marketplace of available extensions is always growing, as Adobe, partners, and customers can and are creating new extensions that you can implement on your site. Learn the basics about extensions, and see a few examples.
+Learn how to add and configure extensions in your tags property. Extensions are pre-packaged "apps" you install on your site to give you the tracking, personalization or other capabilities you need. The extension marketplace is always growing, as Adobe, partners, and customers create new extensions to power use cases.
 
 >[!NOTE]
 >
