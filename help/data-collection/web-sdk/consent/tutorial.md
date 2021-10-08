@@ -1,11 +1,11 @@
 ---
-title: Implement Consent with a Consent Management Platform
-description: Learn how to implement and activate consent data obtained from a Consent Management Platform (CMP) using the Adobe Experience Platform Web SDK extension in Adobe Experience Platform Platform Launch.
+title: Implement consent with a consent management platform (CMP) using the Platform Web SDK extension
+description: Learn how to implement and activate consent data obtained from a Consent Management Platform (CMP) using the Adobe Experience Platform Web SDK extension in Adobe Experience Platform Data Collection.
 feature: Web SDK, Tags
 role: Developer, Data Engineer
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
 ---
-# Implement consent with a Consent Management Platform using the Platform Web SDK extension
+# Implement consent with a consent management platform (CMP) using the Platform Web SDK extension
 
 Many legal privacy regulations have introduced requirements for active and specific consent when it comes to data collection, personalization, and other marketing use cases. In order to meet these requirements, Adobe Experience Platform allows you to capture consent information in individual customer profiles and use those preferences as a determining factor in how each customer’s data is used in downstream Platform workflows.  
 
