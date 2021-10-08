@@ -1,7 +1,7 @@
 ---
 title: Create a Launch Property for Mobile Apps
 description: Learn how to log into the Launch interface and create a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
-feature: Properties
+feature: Tags
 exl-id: e250b9b9-a6df-47cb-8e09-13124cb19624
 ---
 # Create a Launch Property

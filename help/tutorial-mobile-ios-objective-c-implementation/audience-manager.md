@@ -1,8 +1,8 @@
 ---
 title: Implement Adobe Audience Manager
 description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and Launch. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
-solution: Experience Platform Launch, Data Collection, Audience Manager
-feature: Extensions
+solution: Experience Platform, Data Collection, Audience Manager
+feature: Tags
 exl-id: 4adbea13-9f53-4c63-acbc-f1eae7ea4305
 ---
 # Add Adobe Audience Manager

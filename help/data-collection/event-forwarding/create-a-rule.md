@@ -2,7 +2,7 @@
 title: Create an event forwarding rule
 description: Learn how to create a event forwarding rule.
 feature: Event Forwarding
-feature: Properties
+feature: Tags
 kt: 6423
 thumbnail: 331942
 exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824

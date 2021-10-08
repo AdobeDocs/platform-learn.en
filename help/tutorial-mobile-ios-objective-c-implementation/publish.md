@@ -1,7 +1,7 @@
 ---
 title: Publish your Launch Property
 description: Learn how to publish your Launch property from the Development environment to the Staging and Production environments. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications with Launch tutorial.
-feature: Publishing
+feature: Tags
 exl-id: 67991466-b558-4994-98bd-40920ff1138b
 ---
 # Publish your Launch Property

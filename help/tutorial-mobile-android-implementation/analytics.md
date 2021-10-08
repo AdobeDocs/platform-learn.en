@@ -1,8 +1,8 @@
 ---
 title: Implement Adobe Analytics with Launch
 description: Learn how to implement Adobe Analytics using the Adobe Analytics Launch extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
-solution: Experience Platform Launch, Data Collection, Analytics
-feature: Extensions
+solution: Experience Platform, Data Collection, Analytics
+feature: Tags
 exl-id: a89aea7d-bf69-424b-bb6c-e22200e9686c
 ---
 # Add Adobe Analytics

@@ -2,7 +2,7 @@
 title: Implement Target with Launch
 description: Learn how to implement Adobe Target using Launch with at.js, a page load request, parameters, an order request, and custom header/footer code. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
 solution: Experience Platform Launch, Target
-feature: Extensions
+feature: Tags
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee
 ---
 # Add Adobe Target

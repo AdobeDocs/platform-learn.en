@@ -1,7 +1,7 @@
 ---
 title: Inspect and Validate Consent Signals
 description: This video shows you how to validate that processes consent settings are properly applied to your data in Adobe Experience Platform.
-feature: Consent
+feature: Web SDK, Tags
 role: Developer, Data Engineer
 kt: 7571
 exl-id: d7534d2d-6a64-4189-bc35-0de8c6c8bf5a

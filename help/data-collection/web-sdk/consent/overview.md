@@ -1,7 +1,7 @@
 ---
 title: Consent Introduction
 description: This video provides an introduction to consent management using the Adobe Experience Platform Web SDK extension in Adobe Experience Platform Launch.
-feature: Consent
+feature: Web SDK, Tags
 role: Developer, Data Engineer
 kt: 7543
 exl-id: 485de3fb-c394-4f98-8bd8-22b88a4a9f93

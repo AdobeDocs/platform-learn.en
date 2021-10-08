@@ -2,7 +2,7 @@
 title: Implement Adobe Audience Manager
 description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
 solution: Experience Platform Launch, Audience Manager
-feature: Extensions
+feature: Tags
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
 ---
 # Add Adobe Audience Manager

@@ -1,7 +1,7 @@
 ---
 title: Add Extensions to a Mobile Launch property
 description: Learn how to add extensions to a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
-feature: Extensions
+feature: Tags
 exl-id: 0492561c-a902-4433-9289-204db15e282c
 ---
 # Add Extensions

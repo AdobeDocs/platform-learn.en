@@ -2,7 +2,7 @@
 title: Implement the Adobe Experience Platform Identity Service with Launch
 description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
 solution: Experience Platform Launch, Experience Cloud Services
-feature: Extensions
+feature: Tags
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
 ---
 # Add the Adobe Experience Platform Identity Service

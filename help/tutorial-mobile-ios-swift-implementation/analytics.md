@@ -1,8 +1,8 @@
 ---
 title: Implement Adobe Analytics with Launch
 description: Learn how to implement Adobe Analytics using the Adobe Analytics Launch extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
-solution: Experience Platform Launch, Data Collection, Analytics
-feature: Extensions
+solution: Experience Platform, Data Collection, Analytics
+feature: Tags
 exl-id: f70e1644-721c-429b-9fc1-e22dea521f44
 ---
 # Add Adobe Analytics

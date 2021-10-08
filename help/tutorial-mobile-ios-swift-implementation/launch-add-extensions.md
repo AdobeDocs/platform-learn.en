@@ -1,7 +1,7 @@
 ---
 title: Add Extensions to a Mobile Launch property
 description: Learn how to add extensions to a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Swift Applications tutorial.
-feature: Extensions
+feature: Tags
 exl-id: 51c2ede0-b8bd-469e-83f1-827ed30df58f
 ---
 # Add Extensions

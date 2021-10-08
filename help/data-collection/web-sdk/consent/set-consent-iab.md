@@ -1,7 +1,7 @@
 ---
 title: Set Consent using the IAB TCF 2.0 Standard
 description: This video shows you how to use the Adobe Experience Platform Web SDK to set consent values according to the IAB TCF 2.0 standard.
-feature: Consent
+feature: Web SDK, Tags
 role: Developer, Data Engineer
 kt: 7572
 exl-id: 341a4e01-02a9-4e21-b3d6-b2657d75c233
