@@ -7,7 +7,7 @@ exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 ---
 # Add Adobe Analytics
 
-In this lesson, you will implement the [Adobe Analytics extension](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/analytics-extension/overview.html) and create rules to send data to Adobe Analytics.
+In this lesson, you will implement the [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) and create rules to send data to Adobe Analytics.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 

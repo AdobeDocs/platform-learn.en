@@ -2,11 +2,12 @@
 user-guide-title: Adobe Experience Platform Data Collection Tutorials
 breadcrumb-title: Tutorials
 user-guide-description: How-to videos and tutorials to make you a power-user of Data Collection in Experience Platform.
+solution: Experience Platform, Data Collection
 ---
 
-# Adobe Experience Platform Data Collection Tutorials {#tutorials}
+# Adobe Experience Platform Data Collection Tutorials{#tutorials}
 
-+ [Overview](../overview.md)
++ [Overview](overview.md)
 + Tags{#tags}
   + [Overview and Create Properties](tags/overview-and-create-properties.md)
   + [Choose a Hosting Option](tags/choose-a-hosting-option.md)
@@ -17,7 +18,6 @@ user-guide-description: How-to videos and tutorials to make you a power-user of 
   + [Build and Publish a Library](tags/build-and-publish-a-library.md)
   + [Users and Permissions](tags/users-and-permissions.md)
   + [Implement the Experience Cloud with tags](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html)
-<!--+ Datastreams-->
 + Web SDK{#web-sdk}
   + [Overview](web-sdk/overview.md)
   + [Demo](web-sdk/demo.md)
@@ -34,7 +34,7 @@ user-guide-description: How-to videos and tutorials to make you a power-user of 
   + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)
   + [Implement in iOS Objective-C Apps](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)
   + [Implement in Android Apps](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html)
-+ Event Forwarding
++ Event Forwarding{#event-forwarding}
   + [Overview](event-forwarding/overview.md)
   + [Create a property](event-forwarding/create-a-property.md)
   + [Set up Edge Configuration](event-forwarding/set-up-edge-configuration.md)

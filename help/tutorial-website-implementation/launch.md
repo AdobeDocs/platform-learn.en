@@ -51,7 +51,7 @@ If you use Launch frequently, you can also bookmark the following URL and log in
 
 ## Create a Property
 
-A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site. A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains. For more information on creating properties, see ["Companies and Properties"](https://experienceleague.adobe.com/docs/launch/using/reference/admin/companies-and-properties.html) in the product documentation.
+A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site. A property can be any grouping of one or more domains and subdomains. You can manage and track these assets similarly. For example, suppose that you have multiple websites based on one template, and you want to track the same assets on all of them. You can apply one property to multiple domains. For more information on creating properties, see ["Companies and Properties"](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html) in the product documentation.
 
 **To Create a Property**
 

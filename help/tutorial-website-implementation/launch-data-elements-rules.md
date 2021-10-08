@@ -1,7 +1,7 @@
 ---
 title: Add a Data Element, a Rule and a Library
 description: Learn how to create Data Elements, Rules, and a Library in Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-feature: Rules
+feature: Tags
 exl-id: 4d9eeb52-144a-4876-95d3-83d8eec4832f
 ---
 # Add a Data Element, a Rule and a Library
