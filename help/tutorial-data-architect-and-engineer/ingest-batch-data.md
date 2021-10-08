@@ -39,7 +39,7 @@ You will need access to an (S)FTP server or cloud storage solution for the Sourc
 
 ## Ingest data in batches with Platform user interface
 
-Data can be uploaded directly into a dataset on the datasets screen in JSON and parquet formats.
+Data can be uploaded directly into a dataset on the datasets screen in JSON and parquet formats. This is a great way to test ingestion of some of your data after creating a
 
 ### Download and prep the data
 
@@ -59,7 +59,7 @@ First, get the sample data and customize it for your tenant:
 ### Ingest the data
 
 1. In the Platform user interface, select **[!UICONTROL Datasets]** in the left navigation
-1. Select on your `Luma Loyalty Dataset`
+1. Open your `Luma Loyalty Dataset`
 1. Scroll down until you see the **[!UICONTROL Add Data]** section in the right column
 1. Upload the `luma-loyalty.json` file.
 1. Once the file uploads, a row for the batch will appear

@@ -1,4 +1,4 @@
-SKU,Name,Category,Color,Size,Price
+wdfe34,SOME_COLUMN_NAME_I_JUST_MADE_UP_FOR_YOU_TO_GUESS,isThisTheCategory,somethingWithColor,fewf3232,amount
 LLMH09,Abominable Hoodie,men:tops:hoodies_sweatshirts,blue,s,69
 LLWJ08,Adrienne Trek Jacket,women:tops:jackets,,,57
 LLMS01,Aero Daily Fitness Tee,men:tops:tees,black,s,24
@@ -21,7 +21,7 @@ LLMP12,Cronus Yoga Pant,men:bottoms:pants,black,32,38.4
 LLWH06,Daphne Full-Zip Hoodie,women:tops:hoodies,purple,xs,59
 LLWP10,Daria Bikram Pant,women:bottoms:pants,gray,28,40.8
 24-MG02,Dash Digital Watch,products:gear:watches,,,92
-LLMS07,Deion Long-Sleeve EverCoolª Tee,men:tops:tees,gray,s,39
+LLMS07,Deion Long-Sleeve EverCoolï¿½ Tee,men:tops:tees,gray,s,39
 LLWP12,Deirdre Relaxed-Fit Capri,women:bottoms:pants,gray,28,50.4
 LLWS05,Desiree Fitness Tee,women:tops:tees,yellow,xs,24
 24-WG02,Didi Sport Watch,products:gear:watches,,,99
@@ -36,7 +36,7 @@ Luma-24-MB02,Fusion Backpack,products:gear:bags,,,59
 24-UG05,Go-Get'r Pushup Grips,products:gear:fitness,,,19
 LLMH11,Grayson Crewneck Sweatshirt,men:tops:hoodies_sweatshirts,white,s,64
 LLWS01,Gwyn Endurance Tee,women:tops:tees,black,xs,24
-24-UG03,Harmony Lumaflexª Strength Band Kit,products:gear:fitness,,,22
+24-UG03,Harmony Lumaflexï¿½ Strength Band Kit,products:gear:fitness,,,22
 LLWH10,Helena Hooded Fleece,women:tops:hoodies,gray,xs,55
 24-UB02,Impulse Duffle,products:gear:bags,,,74
 LLWSH11,Ina Compression Short,women:bottoms:shorts,blue,28,49
@@ -44,12 +44,12 @@ LLWJ09,Jade Yoga Jacket,women:tops:jackets,blue,xs,32
 LLWJ06,Juno Jacket,women:tops:jackets,purple,xs,77
 LLMJ06,Jupiter All-Weather Trainer,men:tops:jackets,blue,s,56.99
 LLWS10,Karissa V-Neck Tee,women:tops:tees,red,xs,32
-LLMS10,Logan HeatTec¨ Tee,men:tops:tees,blue,s,24
+LLMS10,Logan HeatTecï¿½ Tee,men:tops:tees,blue,s,24
 LLWB05,Lucia Cross-Fit Bra,women:tops:bras_tanks,black,xs,39
 24-WG09,Luma Analog Watch,products:gear:watches,,,43
 LLMH10,Mach Street Sweatshirt,men:tops:hoodies_sweatshirts,blue,s,62
 LLMH13,Marco Lightweight Active Hoodie,men:tops:hoodies_sweatshirts,blue,s,74
-LLMJ10,Mars HeatTechª Pullover,men:tops:jackets,red,s,66
+LLMJ10,Mars HeatTechï¿½ Pullover,men:tops:jackets,red,s,66
 LLWH04,Miko Pullover Hoodie,women:tops:hoodies,blue,xs,69
 LLWSH09,Mimi All-Purpose Short,women:bottoms:shorts,gray,28,44
 LLMJ03,Montana Wind Jacket,men:tops:jackets,black,s,49
@@ -62,11 +62,11 @@ LLMSH12,Pierce Gym Short,men:bottoms:shorts,red,32,27
 LLWP13,Portia Capri,women:bottoms:pants,blue,28,39.2
 LLWB04,Prima Compete Bra Top,women:tops:bras_tanks,blue,xs,24
 LLMJ12,Proteus Fitness Jackshirt,men:tops:jackets,orange,s,45
-24-UG02,Pursuit Lumaflexª Tone Band,products:gear:fitness,,,16
+24-UG02,Pursuit Lumaflexï¿½ Tone Band,products:gear:fitness,,,16
 24-WB04,Push It Messenger Bag,products:gear:bags,,,45
-24-UG01,Quest Lumaflexª Band,products:gear:fitness,,,19
+24-UG01,Quest Lumaflexï¿½ Band,products:gear:fitness,,,19
 LLWS12,Radiant Tee,women:tops:tees,orange,xs,22
-LLMS02,Ryker LumaTechª Tee (V-neck),men:tops:tees,gray,s,28
+LLMS02,Ryker LumaTechï¿½ Tee (V-neck),men:tops:tees,gray,s,28
 24-WB05,Savvy Shoulder Tote,products:gear:bags,,,24
 LLWH05,Selene Yoga Hoodie,women:tops:hoodies,white,xs,42
 LLMT09,Sinbad Fitness Tank,men:tops:tanks,blue,s,29
