@@ -1,7 +1,6 @@
 ---
 title: Switch tags Environments with the Adobe Experience Cloud Debugger
 description: Learn how to use the Experience Cloud Debugger to load different tags embed codes. This lesson is part of the Implement the Experience Cloud in websites tutorial.
-feature: Tags
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
 ---
 # Switch tags Environments with the Experience Cloud Debugger

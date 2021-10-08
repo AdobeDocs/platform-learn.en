@@ -1,7 +1,6 @@
 ---
 title: Publish your tags property
 description: Learn how to publish your tags property from the Development environment to the Staging and Production environments. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
-feature: Tags
 exl-id: eaca9b17-2f65-47fd-a1f6-26b28ad4eef7
 ---
 # Publish your tags property

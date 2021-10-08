@@ -1,7 +1,6 @@
 ---
 title: Implement Experience Cloud Integrations with tags
 description: Learn how to validate the Audiences, A4T, and Customer Attributes integrations in your Adobe Experience Cloud implementation. This lesson is part of the Implement the Experience Cloud in websites tutorial.
-feature: Tags
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 ---
 # Experience Cloud Integrations

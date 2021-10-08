@@ -1,7 +1,6 @@
 ---
 title: Add Extensions to a Mobile tags property
 description: Learn how to add extensions to a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
-feature: Tags
 exl-id: 51c2ede0-b8bd-469e-83f1-827ed30df58f
 ---
 # Add Extensions

@@ -1,7 +1,6 @@
 ---
 title: Install the Adobe Mobile SDK in a Mobile iOS Swift app
 description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
-feature: Tags
 exl-id: 90bdd606-5e50-4b02-a57c-aa080f7b3f67
 ---
 # Install the Mobile SDK

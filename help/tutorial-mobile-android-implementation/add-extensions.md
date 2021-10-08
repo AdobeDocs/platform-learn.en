@@ -1,7 +1,6 @@
 ---
 title: Add Extensions to a Mobile tags property
 description: Learn how to add extensions to a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
-feature: Tags
 exl-id: 0492561c-a902-4433-9289-204db15e282c
 ---
 # Add Extensions

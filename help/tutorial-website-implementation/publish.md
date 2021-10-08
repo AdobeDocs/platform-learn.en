@@ -1,7 +1,6 @@
 ---
 title: Publish your tags property
 description: Learn how to publish your tags property from the Development environment to the Staging and Production environments. This lesson is part of the Implement the Experience Cloud in websites tutorial.
-feature: Tags
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
 ---
 # Publish your tags property

@@ -2,7 +2,6 @@
 title: Implement Adobe Analytics with tags
 description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send the page view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 solution: Experience Platform, Data Collection, Analytics
-feature: Tags
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 ---
 # Add Adobe Analytics

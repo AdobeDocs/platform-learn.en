@@ -2,7 +2,6 @@
 title: Implement Adobe Analytics with tags
 description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
 solution: Experience Platform, Data Collection, Analytics
-feature: Tags
 exl-id: f70e1644-721c-429b-9fc1-e22dea521f44
 ---
 # Add Adobe Analytics

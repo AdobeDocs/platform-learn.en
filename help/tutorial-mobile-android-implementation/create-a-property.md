@@ -1,7 +1,6 @@
 ---
 title: Create a tags property for Mobile Apps
 description: Learn how to log into the Data Collection interface and create a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
-feature: Tags
 exl-id: e250b9b9-a6df-47cb-8e09-13124cb19624
 ---
 # Create a tags property

@@ -1,7 +1,6 @@
 ---
 title: Create a tags library
 description: Learn how to create a tags library in Adobe Experience Platform Data Collection. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
-feature: Tags
 exl-id: 13bcc345-1b15-4aa1-ac0b-6d56edeb0ac8
 ---
 # Add a Library

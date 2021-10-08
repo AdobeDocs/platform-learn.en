@@ -1,7 +1,6 @@
 ---
 title: Publish your tags property
 description: Learn how to publish your tags property from the Development environment to the Staging and Production environments. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
-feature: Tags
 exl-id: 0a28c58f-beff-4ce6-9785-5a8d7d38cc1a
 ---
 # Publish your tags property

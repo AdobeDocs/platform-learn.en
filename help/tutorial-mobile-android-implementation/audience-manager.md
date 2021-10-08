@@ -2,7 +2,6 @@
 title: Implement Adobe Audience Manager with tags
 description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and tags. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
 solution: Experience Platform, Data Collection, Audience Manager
-feature: Tags
 exl-id: a61c67b8-7787-46e6-8077-f1b2f868c0d3
 ---
 # Add Adobe Audience Manager

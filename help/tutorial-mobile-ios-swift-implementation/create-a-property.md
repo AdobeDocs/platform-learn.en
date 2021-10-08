@@ -1,7 +1,6 @@
 ---
 title: Create a tags property for Mobile Apps
 description: Learn how to log into the Data Collection interface and create a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
-feature: Tags
 exl-id: 658f3c4c-c5e6-4aef-8511-833b7a813d77
 ---
 # Create a tags property

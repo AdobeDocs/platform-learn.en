@@ -1,7 +1,6 @@
 ---
 title: Publish your tags property
 description: Learn how to publish your tags property from the Development environment to the Staging and Production environments. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
-feature: Tags
 exl-id: 67991466-b558-4994-98bd-40920ff1138b
 ---
 # Publish your tags property

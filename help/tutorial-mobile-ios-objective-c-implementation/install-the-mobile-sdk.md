@@ -1,7 +1,6 @@
 ---
 title: Install the Adobe Mobile SDK in a Mobile iOS Objective-C app
 description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
-feature: Tags
 exl-id: 97a9bdce-d1f0-46b7-a2e8-4a6d4cd4884c
 ---
 # Install the Mobile SDK

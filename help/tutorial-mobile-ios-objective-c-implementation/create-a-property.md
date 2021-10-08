@@ -1,7 +1,6 @@
 ---
 title: Create a tags property for Mobile Apps
 description: Learn how to log into the Data Collection interface and create a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
-feature: Tags
 exl-id: 9d34680b-bd87-4ab2-b110-ed87b7a08cad
 ---
 # Create a tags property
