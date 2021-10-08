@@ -38,7 +38,7 @@ To complete the lessons in this section, you must first complete the lessons in 
 
 ## Add the Target Pre-Hiding Snippet
 
-Before we get started, we need to make a slight update to the tags embed codes. When the tags embed codes are loaded asynchronously, the page may finish rendering before the Target library is fully loaded and has performed its content swap. This can lead to what is known as "flicker" where  default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we strongly recommend hardcoding a special pre-hiding snippet immediately before tags's asynchronous embed codes.
+Before we get started, we need to make a slight update to the tags embed codes. When the tags embed codes are loaded asynchronously, the page may finish rendering before the Target library is fully loaded and has performed its content swap. This can lead to what is known as "flicker" where  default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we strongly recommend hardcoding a special pre-hiding snippet immediately before tags' asynchronous embed codes.
 
 This has already been done on the Luma site, but let's go ahead and do this on the sample page so you understand the implementation. Copy the following lines of code:
 

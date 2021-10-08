@@ -259,7 +259,7 @@ Now, confirm the customer id is sent to the Service using the Debugger extension
 
 Tags also has rich console logging features. To turn them on, go to the **[!UICONTROL Tools]** tab in the Debugger and turn on the **[!UICONTROL tags Console Logging]** toggle.
 
-![Toggle on tags's Console Logging](images/idservice-debugger-logging.png)
+![Toggle on tags' Console Logging](images/idservice-debugger-logging.png)
 
 This will turn on console logging both in your browser console and in the Logs tab of the Debugger. You should see the logging of all of the rules you have created so far! Note that new log entries are added to the top of the list, so your rule "All Pages - Library Loaded - Authenticated - 10" should fire before the "All Pages - Library Loaded" rule and appear below it in the Debugger's Console Logging:
 
