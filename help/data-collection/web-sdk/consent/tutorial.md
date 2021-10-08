@@ -13,8 +13,8 @@ Many legal privacy regulations have introduced requirements for active and speci
 >
 >Adobe Experience Platform Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
 >
-> * Platform Launch (Client Side) is now **[[!DNL tags]](https://experienceleague.adobe.com/docs/launch/using/home.html)** 
-> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/launch/using/server-side-info/server-side-overview.html)** 
+> * Platform Launch (Client Side) is now **[[!DNL tags]](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)** 
+> * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)** 
 > * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
 This tutorial demonstrates how to implement and activate consent data obtained from a Consent Management Platform (CMP) using the Platform Web SDK extension in Adobe Experience Platform Launch. We’ll do this using both of the Adobe standards and the IAB TCF 2.0 consent standard, with OneTrust or Sourcepoint as example CMPs.
