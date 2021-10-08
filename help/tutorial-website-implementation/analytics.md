@@ -1,7 +1,7 @@
 ---
-title: Implement Adobe Analytics with Launch
-description: Learn how to implement Adobe Analytics using the Adobe Analytics Launch extension, send the page view beacon, add variables, track events, and add plugins. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-solution: Experience Platform Launch, Analytics
+title: Implement Adobe Analytics with tags
+description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send the page view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in websites tutorial.
+solution: Experience Platform, Data Collection, Analytics
 feature: Tags
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 ---
@@ -30,11 +30,11 @@ At the end of this lesson, you will be able to:
 1. Add click-tracking and other event-based beacons
 1. Add Analytics plugins
 
-There are many things that could be implemented for Analytics in Launch. This lesson is not exhaustive, but should give you a solid overview of the main techniques you will need for implementing in your own site.
+There are many things that could be implemented for Analytics in tags. This lesson is not exhaustive, but should give you a solid overview of the main techniques you will need for implementing in your own site.
 
 ## Prerequisites
 
-You should have already completed the lessons in [Configure Launch](launch.md) and [Add the Identity Service](id-service.md).
+You should have already completed the lessons in [Configure tags](create-a-property.md) and [Add the Identity Service](id-service.md).
 
 Additionally, you will need at least one report suite ID and your tracking server. If you don't have a test/dev report suite that you can use for this tutorial, please create one. If you are unsure how to do that, see [the documentation](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html). You can retrieve your tracking server from your current implementation, Adobe Consultant or Customer Care representative.
 
@@ -56,7 +56,7 @@ The Analytics extension consists of two main parts:
 
    ![Install the Analytics extension](images/analytics-catalog-install.png)
 
-1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each Launch environment. If your users has access to Adobe Analytics, note that as you start typing in the box, you will see a pre-populated list of all of your report suites. (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
+1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each tags environment. If your users has access to Adobe Analytics, note that as you start typing in the box, you will see a pre-populated list of all of your report suites. (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
 
    ![Enter the report suite ids](images/analytics-config-reportSuite.png)
 
@@ -76,13 +76,13 @@ The Analytics extension consists of two main parts:
 
 >[!NOTE]
 >
->Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined *before* the Launch embed codes.
+>Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined *before* the tags embed codes.
 
 ## Send the Page View Beacon
 
 Now you will create a rule to fire the Analytics beacon, which will send the [!UICONTROL Page Name] variable set in the extension configuration.
 
-You have already created an "All Pages - Library Loaded" rule in the [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the Launch library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the Launch embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
+You have already created an "All Pages - Library Loaded" rule in the [Add a Data Element, a Rule and a Library](add-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the tags library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the tags embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
 
 **To Send the Page View Beacon**
 
@@ -123,9 +123,9 @@ Now that you have created a rule to send an Analytics beacon, you should be able
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Click to open the Analytics tab
 1. Expand your Report Suite name to show all of the requests made to it
@@ -139,7 +139,7 @@ Now that you have created a rule to send an Analytics beacon, you should be able
 
 ## Add Variables with Rules
 
-When you configured the Analytics Extension, you populated the `pageName` variable in the extension configuration. This is a fine location to populate other global variables such as eVars and props, provided the value is available on the page before the Launch embed code loads.
+When you configured the Analytics Extension, you populated the `pageName` variable in the extension configuration. This is a fine location to populate other global variables such as eVars and props, provided the value is available on the page before the tags embed code loads.
 
 A more flexible location to set variables&mdash;as well as events&mdash;is in rules using the `Set Variables` action. Rules allow you to set different Analytics variables and events under different conditions. For example, you could set the `prodView` only on product detail pages and the `purchase` event only on order confirmation pages. This section will teach you how to set variables using rules.
 
@@ -191,7 +191,7 @@ Next, you will collect the product id of the current Product Detail page with a 
 
 ### Add the Adobe Analytics Product String Extension
 
-If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in Launch, three additional extensions have already been created in the Launch extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
+If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in tags, three additional extensions have already been created in the tags extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
 
 **To add the add the `Adobe Analytics Product String` extension**
 
@@ -287,7 +287,7 @@ You  just created a rule that sets variables before the beacon is sent. You shou
 
 When a page loads, you typically fire a page load beacon triggered by the `s.t()` function. This automatically increments a `page view` metric for the page listed in the `pageName` variable.
 
-However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request. Even though it is referred to as a track link request, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you in the Launch rule builder, including your own custom JavaScript.
+However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request. Even though it is referred to as a track link request, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you in the tags rule builder, including your own custom JavaScript.
 
 In this tutorial, you will trigger an `s.tl()` call using one of the coolest JavaScript events, an `Enters Viewport` event.
 
@@ -295,7 +295,7 @@ In this tutorial, you will trigger an `s.tl()` call using one of the coolest Jav
 
 For this use case, you want to know if people are scrolling down on our Luma home page far enough to see the *Featured Products* section of our page. There is some internal discord at our company about whether people are even seeing that section or not, so you want to use Analytics to determine the truth.
 
-### Create the Rule in Launch
+### Create the Rule in tags
 
 1. Go to the **[!UICONTROL Rules]** section in the left navigation and then click **[!UICONTROL Add Rule]**
    ![Add Rule](images/analytics-addRule3.png)
@@ -312,8 +312,8 @@ For this use case, you want to know if people are scrolling down on our Luma hom
 
       ![Configure the Enters Viewport Event](images/analytics-copyElementSelector.png)
 
-1. Go back to Launch, and paste this value from the clipboard into the field labeled `Elements matching the CSS selector`.
-   1. On a side note, it is up to you to decide how to identify CSS selectors. This method is a bit fragile, as certain changes on the page may break this selector. Please consider this when using any CSS selectors in Launch.
+1. Go back to tags, and paste this value from the clipboard into the field labeled `Elements matching the CSS selector`.
+   1. On a side note, it is up to you to decide how to identify CSS selectors. This method is a bit fragile, as certain changes on the page may break this selector. Please consider this when using any CSS selectors in tags.
 1. Click **[!UICONTROL Keep Changes]**
    ![Configure the Enters Viewport Event](images/analytics-configEntersViewportEvent.png)
 

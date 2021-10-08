@@ -106,7 +106,7 @@ All three environments contain the Platform details you just entered. However, t
 
 ### Add a property
 
-First we must create a tags property (formerly a Launch property). A property is a container for all the JavaScript, rules, and other features required to collect details from a web page and send it to various locations.
+First we must create a tags property (formerly a tags property). A property is a container for all the JavaScript, rules, and other features required to collect details from a web page and send it to various locations.
 
 To create a property:
 
@@ -135,7 +135,7 @@ To give yourself access to the property:
    
     ![Add the new property](assets/websdk-adminconsole-addProperty.png)
 
-Now switch back to your browser tab with the Launch interface still open. Reload the page and the `Luma Platform Tutorial` property should display in the list. Select to open the property:
+Now switch back to your browser tab with the Data Collection interface still open. Reload the page and the `Luma Platform Tutorial` property should display in the list. Select to open the property:
 
 ![Luma Platform Tutorial should appear](assets/websdk-property-showsInList.png)
 -->
@@ -150,7 +150,7 @@ Now that you have a property you can add the Web SDK using an extension. An exte
 1. There are many extensions available for tags. Filter the catalog with the term `Web SDK`
 1. In the **[!UICONTROL Adobe Experience Platform Web SDK]** extension, select the **[!UICONTROL Install]** button
     ![Install the Adobe Experience Platform Web SDK extension](assets/websdk-property-addExtension.png)    
-1. There are several configurations available for the Web SDK extension, but there only two we are going to configure for this tutorial. Update the **[!UICONTROL Edge Domain]** to `data.enablementadobe.com`. This setting allows you to set first party cookies with your Web SDK implementation, which is encouraged. Later in this lesson, you will map a website on the `enablementadobe.com` domain to your Launch property. The CNAME for the `enablementadobe.com` domain has already been configured so that `data.enablementadobe.com` will forward to Adobe servers. When you implement Web SDK on your own website, you will need to create a CNAME for your own data collection purposes, for example, `data.YOUR_DOMAIN.com`
+1. There are several configurations available for the Web SDK extension, but there only two we are going to configure for this tutorial. Update the **[!UICONTROL Edge Domain]** to `data.enablementadobe.com`. This setting allows you to set first party cookies with your Web SDK implementation, which is encouraged. Later in this lesson, you will map a website on the `enablementadobe.com` domain to your tags property. The CNAME for the `enablementadobe.com` domain has already been configured so that `data.enablementadobe.com` will forward to Adobe servers. When you implement Web SDK on your own website, you will need to create a CNAME for your own data collection purposes, for example, `data.YOUR_DOMAIN.com`
 1. From the **[!UICONTROL Datastream]** dropdown, select your `Luma Platform Tutorial` datastream.
 1. Feel free to look at the other configuration options (but don't change them!) and then select **[!UICONTROL Save]**
     <!--is edge domain required for first party? when will it break?-->
@@ -257,7 +257,7 @@ For this tutorial, we use a publicly hosted version of the Luma demo website. Le
  1. In a new browser tab, open the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html). 
  1. Bookmark the page for use throughout the rest of the tutorial
 
-This hosted website is why we used `enablementadobe.com` in the [!UICONTROL Domains] field of our initial Launch property configuration and why we used `data.enablementadobe.com` as our first-party domain in the [!UICONTROL Adobe Experience Platform Web SDK] extension. See, I had a plan!
+This hosted website is why we used `enablementadobe.com` in the [!UICONTROL Domains] field of our initial tags property configuration and why we used `data.enablementadobe.com` as our first-party domain in the [!UICONTROL Adobe Experience Platform Web SDK] extension. See, I had a plan!
 
 ![Luma homepage](assets/websdk-luma-homepage.png)   
 
@@ -276,7 +276,7 @@ The Experience Platform Debugger has a cool feature that allows you to replace a
 1. Since you are authenticated, the Debugger is going to pull in your available Launch properties and environments. Select your `Luma Platform Tutorial` property
 1. Select your `Development` environment
 1. Select the **[!UICONTROL Apply]** button
-    ![Select the alternate Launch property](assets/websdk-debugger-selectProperty.png)
+    ![Select the alternate tags property](assets/websdk-debugger-selectProperty.png)
 1. The Luma website will now reload _with your tags property_. Help, I've been hacked! Just kidding.
     ![tags property replaced](assets/websdk-debugger-propertyReplaced.png)
 1. Go to **[!UICONTROL Summary]** in the left navigation, to see the details of your [!UICONTROL Launch] property

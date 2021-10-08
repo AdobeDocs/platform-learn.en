@@ -1,12 +1,12 @@
 ---
-title: Add Extensions to a Mobile Launch property
-description: Learn how to add extensions to a mobile Launch property. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
+title: Add Extensions to a Mobile tags property
+description: Learn how to add extensions to a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 feature: Tags
 exl-id: b54331d9-02fe-451b-b038-07f6fc58e4c0
 ---
 # Add Extensions
 
-In this lesson, you will add extensions to your Launch property.
+In this lesson, you will add extensions to your tags property.
 
 
 >[!NOTE]
@@ -17,17 +17,17 @@ In this lesson, you will add extensions to your Launch property.
 > * Platform Launch Server Side is now **[[!DNL event forwarding]](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)** 
 > * Edge configurations  are now **[[!DNL datastreams]](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html)**
 
-Launch is a platform that allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions through Launch. An extension is a package of code that extends the Launch interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app.  You can think of Launch as an operating system, and extensions are the apps you use to achieve your tasks.
+Tags allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions. An extension is a package of code that extends the Data Collection interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app.  You can think of tags as an operating system, and extensions are the apps you use to achieve your tasks.
 
 Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
 >[!WARNING]
 >
->Adding and removing Extensions in mobile Launch properties requires you to update your app. This is different from web Launch properties, in which you can add or remove extensions at any time, without having to update your website.
+>Adding and removing Extensions in mobile tags properties requires you to update your app. This is different from web tags properties, in which you can add or remove extensions at any time, without having to update your website.
 
 ## Prerequisites
 
-Your Launch user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on Launch permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+Your tags user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 You will need the following solution details:
 
@@ -39,7 +39,7 @@ You will need the following solution details:
 
 At the end of this lesson, you will be able to:
 
-* Add Extensions to a mobile Launch property
+* Add Extensions to a mobile tags property
 * Configure the Analytics extension
 * Configure the Target extension
 
@@ -69,13 +69,13 @@ At the end of this lesson, you will be able to:
 
 ## Add the Solution Extensions
 
-Now it's time to get to the fun part and start adding the extensions for the solutions you will be implementing in this tutorial. When using Launch with mobile applications, the app must be updated every time an extension is added or removed. In order to save time later, we will add all of the extensions in this lesson. Just skip any solutions which your company has not licensed.
+Now it's time to get to the fun part and start adding the extensions for the solutions you will be implementing in this tutorial. When using tags with mobile applications, the app must be updated every time an extension is added or removed. In order to save time later, we will add all of the extensions in this lesson. Just skip any solutions which your company has not licensed.
 
 ### Add the Adobe Analytics extension
 
 >[!NOTE]
 >
->If you do not have a license for Adobe Analytics, you can skip this section. At this time, the Analytics extension for mobile properties is used solely to manage SDK settings and does not add interface options to Launch, such as Rule actions.
+>If you do not have a license for Adobe Analytics, you can skip this section. At this time, the Analytics extension for mobile properties is used solely to manage SDK settings and does not add interface options to tags, such as Rule actions.
 
 **To add the extension**
 
@@ -100,7 +100,7 @@ The Adobe Target extension supports all of the API familiar to users of our earl
 
 >[!NOTE]
 >
->If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and do not add interface options to Launch, such as Rule actions.
+>If you do not have a license for Adobe Target, you can skip this section. At this time, the Target extension for mobile properties is used solely to manage SDK settings and do not add interface options to tags, such as Rule actions.
 
 **To add the extension**
 
@@ -120,4 +120,4 @@ The Adobe Target extension supports all of the API familiar to users of our earl
 
 That's it! Now that you have added the extensions to your property, you can add them to a library:
 
-[Next "Create a Library" >](launch-create-a-library.md)
+[Next "Create a Library" >](create-a-library.md)

@@ -13,9 +13,9 @@ Each lesson contains how-to exercises and foundational information to help you i
 
 After completing this tutorial you will be able to:
 
-* Create a mobile Launch property
+* Create a mobile tags property
 
-* Install a Launch property in a Android app
+* Install a tags property in a Android app
 
 * Implement the following Adobe Experience Cloud solutions:
   * **[Adobe Experience Platform Identity Service](id-service.md)**
@@ -23,7 +23,7 @@ After completing this tutorial you will be able to:
   * **[Adobe Analytics](analytics.md)**
   * **[Adobe Audience Manager](audience-manager.md)**
 
-* Publish changes in Launch through development, staging, and production environments
+* Publish changes in tags through development, staging, and production environments
 
 
 >[!NOTE]
@@ -40,13 +40,13 @@ After completing this tutorial you will be able to:
 >
 >* [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
 >* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
->* [Implementing the Experience Cloud in Websites with Launch](/help/tutorial-website-implementation/overview.md)
+>* [Implement the Experience Cloud in websites](/help/tutorial-website-implementation/overview.md)
 
 ## Prerequisites
 
 In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you may need to reach out to your Experience Cloud Administrator to request access.
 
-* For Launch, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on Launch permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* For tags, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * For Target, you must have approver-level access to the Adobe Target interface
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 
@@ -65,6 +65,6 @@ In these lessons, you will implement the Adobe Experience Cloud into a demo app 
 
 Let's get started!
 
-[Next "Create a tags property" >](launch-create-a-property.md)
+[Next "Create a tags property" >](create-a-property.md)
 
 _Android is a trademark of Google LLC._

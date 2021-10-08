@@ -7,7 +7,7 @@ exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 
 _Implementing the Experience Cloud in Websites with tags is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Launch on your own website.
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through tags on your own website.
 
 After completing this you will be able to:
 

@@ -1,6 +1,6 @@
 ---
-title: Implement the Adobe Experience Platform Identity Service with Launch
-description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
+title: Implement the Adobe Experience Platform Identity Service with tags
+description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 solution: Experience Platform, Data Collection, Experience Cloud Services
 feature: Tags
 exl-id: 9b1e8ea0-3766-4bd4-8364-0619e1ea12ef
