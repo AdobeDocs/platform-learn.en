@@ -2,7 +2,6 @@
 title: Implement Consent with a Consent Management Platform
 description: Learn how to implement and activate consent data obtained from a Consent Management Platform (CMP) using the Adobe Experience Platform Web SDK extension in Adobe Experience Platform Platform Launch.
 role: Developer, Data Engineer
-solution: Experience Platform Launch,Data Collection,Experience Platform
 exl-id: bee792c3-17b7-41fb-a422-289ca018097d
 ---
 # Implement consent with a Consent Management Platform using the Platform Web SDK extension
@@ -33,9 +32,9 @@ For the Platform consent standard v2.0, we’ll also need access to Adobe Experi
 
 This tutorial assumes you have access to Platform Launch and have created a client-side Property with the Web SDK extension installed and a working library created and built for development. These topics are detailed and demonstrated in these documents:
 
-* [Create or configure a property](https://experienceleague.adobe.com/docs/launch/using/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
-* [Overview of libraries](https://experienceleague.adobe.com/docs/launch/using/publish/libraries.html?lang=en#publish)
-* [Publishing overview](https://experienceleague.adobe.com/docs/launch/using/publish/overview.html?lang=en#publish)
+* [Create or configure a property](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/companies-and-properties.html?lang=en#create-or-configure-a-property)
+* [Overview of libraries](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/libraries.html)
+* [Publishing overview](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html)
  
 We'll also use the [Platform Debugger](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome extension to inspect and validate our implementation.
  
@@ -98,11 +97,11 @@ In this example, we'll select "In" to indicate the visitor has consented to allo
 
 Note:  Once a website visitor has opted out, the SDK will not allow you to set the users consent to in.
  
-Your Platform Launch rules can be triggered by a variety of built-in or custom [events](https://experienceleague.adobe.com/docs/launch/using/extensions-ref/adobe-extension/core-extension/overview.html?lang=en#extensions-ref) which can be used to pass this consent data at the appropriate time during a visitor session. In the above example, we used the window loaded event to trigger the rule. In a later section, we’ll use a consent preference event from a CMP to trigger a Set Consent action. You can use a Set Consent action in a rule triggered by any event you prefer that indicates an opt-in preference setting.
+Your Platform Launch rules can be triggered by a variety of built-in or custom [events](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html?lang=en) which can be used to pass this consent data at the appropriate time during a visitor session. In the above example, we used the window loaded event to trigger the rule. In a later section, we’ll use a consent preference event from a CMP to trigger a Set Consent action. You can use a Set Consent action in a rule triggered by any event you prefer that indicates an opt-in preference setting.
 
 #### Setting Consent with the Platform Consent Standard 2.0
 
-Version 2.0 of the Platform consent standard works with [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/understanding-the-xdm-system-and-experience-data-model.html?lang=en#schemas) data. It also requires adding a Privacy Details mixin to your profile schema in Platform. See [Consent processing in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) for more information on the Adobe standard version 2.0 and this mixin.
+Version 2.0 of the Platform consent standard works with [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) data. It also requires adding a Privacy Details mixin to your profile schema in Platform. See [Consent processing in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) for more information on the Adobe standard version 2.0 and this mixin.
 
 We’ll create a custom code data element to pass data to the collect and metadata properties of the consents object shown in the schema below:
 

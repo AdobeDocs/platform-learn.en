@@ -29,7 +29,7 @@ user-guide-description: How-to videos and tutorials to make you a power-user of 
     + [Consent processing end-to-end tutorial](web-sdk/consent/tutorial.md)
 + Mobile SDK{#mobile-sdk}
   + [Overview](mobile-sdk/overview.md)
-  + [Create Mobile Properties](mobile-sdk/create-mobile-properties-in-launch.md)
+  + [Create Mobile Properties](mobile-sdk/create-mobile-properties.md)
   + [Use Dependency Managers](mobile-sdk/use-dependency-managers-with-mobile-sdk.md)
   + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html)
   + [Implement in iOS Objective-C Apps](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-objective-c-apps-with-launch/index.html)
