@@ -18,10 +18,10 @@ doc-type: video
   + [Build rules](tags/build-rules.md)
   + [Build and publish a library](tags/build-and-publish-a-library.md)
   + [Users and permissions](tags/users-and-permissions.md)
-  + [Implement in Websites](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)
-  + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-swift-apps/overview.html)
-  + [Implement in iOS Objective-C Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-objective-c-apps/overview.html)
-  + [Implement in Android Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-android-apps/overview.html)
+  + [Implement in Websites](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
+  + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-swift-apps/overview.html){target="_blank"}
+  + [Implement in iOS Objective-C Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-objective-c-apps/overview.html){target="_blank"}
+  + [Implement in Android Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-android-apps/overview.html){target="_blank"}
 + Web SDK{#web-sdk}
   + [Overview](web-sdk/overview.md)
   + [Demo](web-sdk/demo.md)
@@ -35,9 +35,9 @@ doc-type: video
   + [Overview](mobile-sdk/overview.md)
   + [Create mobile properties](mobile-sdk/create-mobile-properties.md)
   + [Use dependency managers](mobile-sdk/use-dependency-managers.md)
-  + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-swift-apps/overview.html)
-  + [Implement in iOS Objective-C Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-objective-c-apps/overview.html)
-  + [Implement in Android Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-android-apps/overview.html)
+  + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-swift-apps/overview.html){target="_blank"}
+  + [Implement in iOS Objective-C Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-objective-c-apps/overview.html){target="_blank"}
+  + [Implement in Android Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-android-apps/overview.html){target="_blank"}
 + Event Forwarding{#event-forwarding}
   + [Overview](event-forwarding/overview.md)
   + [Create a property](event-forwarding/create-a-property.md)
@@ -49,5 +49,5 @@ doc-type: video
   + Experience Cloud Debugger{#experience-cloud}
     + [Install the Debugger](debugger/experience-cloud/add-the-extension.md)
     + [Use the Debugger](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-    + [Troubleshoot Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html)
-    + [Switch tags environments](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html)
+    + [Troubleshoot Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
+    + [Switch tags environments](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}
