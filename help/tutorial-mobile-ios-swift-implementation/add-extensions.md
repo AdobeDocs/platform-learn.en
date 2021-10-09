@@ -1,11 +1,11 @@
 ---
-title: Add extensions to a mobile tags property
-description: Learn how to add extensions to a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
+title: Add extensions to a mobile tag property
+description: Learn how to add extensions to a mobile tag property. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
 exl-id: 51c2ede0-b8bd-469e-83f1-827ed30df58f
 ---
 # Add extensions
 
-In this lesson, you will add extensions to your tags property.
+In this lesson, you will add extensions to your tag property.
 
 Tags allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions. An extension is a package of code that extends the Data Collection interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app. You can think of tags as an operating system, and extensions are the apps you use to achieve your tasks.
 
@@ -22,11 +22,11 @@ Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and 
 
 >[!WARNING]
 >
->Adding and removing Extensions in mobile tags properties requires you to update your app. This is different from web tags properties, in which you can add or remove extensions at any time, without having to update your website.
+>Adding and removing Extensions in mobile tag properties requires you to update your app. This is different from web tag properties, in which you can add or remove extensions at any time, without having to update your website.
 
 ## Prerequisites
 
-Your tags user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+Your tags user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on tag user permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 You will need the following solution details:
 
@@ -38,7 +38,7 @@ You will need the following solution details:
 
 At the end of this lesson, you will be able to:
 
-* Add Extensions to a mobile tags property
+* Add Extensions to a mobile tag property
 * Configure the Analytics extension
 * Configure the Target extension
 

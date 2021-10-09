@@ -15,13 +15,13 @@ exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 
 In this lesson, you will stream data using the Adobe Experience Platform Web SDK.
 
-There are two main tasks we must complete in the Adobe Experience Platform Data Collection interface:
+There are two main tasks we must complete in the Data Collection interface:
 
 * We must implement Web SDK on the Luma website to send data about visitor activity from the website to the Adobe Edge network. We will do a simple implementation using tags (formerly Launch)
 
 * We must configure a datastream, which tells the Edge network where to forward the data. We will configure it to send the data to our `Luma Web Events` dataset in our Platform sandbox.
 
-**Data Engineers** will need to ingest streaming data outside of this tutorial. When implementing Adobe Experience Platform's Web or Mobile SDKs, typically a web or mobile developer is involved in the data layer creation and tags property configuration.
+**Data Engineers** will need to ingest streaming data outside of this tutorial. When implementing Adobe Experience Platform's Web or Mobile SDKs, typically a web or mobile developer is involved in the data layer creation and tag property configuration.
 
 Before you begin the exercises, watch these two short videos to learn more about streaming data ingestion and Web SDK:
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
@@ -106,7 +106,7 @@ All three environments contain the Platform details you just entered. However, t
 
 ### Add a property
 
-First we must create a tags property (formerly a tags property). A property is a container for all the JavaScript, rules, and other features required to collect details from a web page and send it to various locations.
+First we must create a tag property (formerly a tag property). A property is a container for all the JavaScript, rules, and other features required to collect details from a web page and send it to various locations.
 
 To create a property:
 
@@ -150,7 +150,7 @@ Now that you have a property you can add the Web SDK using an extension. An exte
 1. There are many extensions available for tags. Filter the catalog with the term `Web SDK`
 1. In the **[!UICONTROL Adobe Experience Platform Web SDK]** extension, select the **[!UICONTROL Install]** button
     ![Install the Adobe Experience Platform Web SDK extension](assets/websdk-property-addExtension.png)    
-1. There are several configurations available for the Web SDK extension, but there only two we are going to configure for this tutorial. Update the **[!UICONTROL Edge Domain]** to `data.enablementadobe.com`. This setting allows you to set first party cookies with your Web SDK implementation, which is encouraged. Later in this lesson, you will map a website on the `enablementadobe.com` domain to your tags property. The CNAME for the `enablementadobe.com` domain has already been configured so that `data.enablementadobe.com` will forward to Adobe servers. When you implement Web SDK on your own website, you will need to create a CNAME for your own data collection purposes, for example, `data.YOUR_DOMAIN.com`
+1. There are several configurations available for the Web SDK extension, but there only two we are going to configure for this tutorial. Update the **[!UICONTROL Edge Domain]** to `data.enablementadobe.com`. This setting allows you to set first party cookies with your Web SDK implementation, which is encouraged. Later in this lesson, you will map a website on the `enablementadobe.com` domain to your tag property. The CNAME for the `enablementadobe.com` domain has already been configured so that `data.enablementadobe.com` will forward to Adobe servers. When you implement Web SDK on your own website, you will need to create a CNAME for your own data collection purposes, for example, `data.YOUR_DOMAIN.com`
 1. From the **[!UICONTROL Datastream]** dropdown, select your `Luma Platform Tutorial` datastream.
 1. Feel free to look at the other configuration options (but don't change them!) and then select **[!UICONTROL Save]**
     <!--is edge domain required for first party? when will it break?-->
@@ -257,13 +257,13 @@ For this tutorial, we use a publicly hosted version of the Luma demo website. Le
  1. In a new browser tab, open the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html). 
  1. Bookmark the page for use throughout the rest of the tutorial
 
-This hosted website is why we used `enablementadobe.com` in the [!UICONTROL Domains] field of our initial tags property configuration and why we used `data.enablementadobe.com` as our first-party domain in the [!UICONTROL Adobe Experience Platform Web SDK] extension. See, I had a plan!
+This hosted website is why we used `enablementadobe.com` in the [!UICONTROL Domains] field of our initial tag property configuration and why we used `data.enablementadobe.com` as our first-party domain in the [!UICONTROL Adobe Experience Platform Web SDK] extension. See, I had a plan!
 
 ![Luma homepage](assets/websdk-luma-homepage.png)   
 
-### Use the Experience Platform Debugger to map to your tags property
+### Use the Experience Platform Debugger to map to your tag property
 
-The Experience Platform Debugger has a cool feature that allows you to replace an existing tags property with a different one. This is useful for validation and allows us to skip many implementation steps in this tutorial.
+The Experience Platform Debugger has a cool feature that allows you to replace an existing tag property with a different one. This is useful for validation and allows us to skip many implementation steps in this tutorial.
 
 1. Make sure you have the Luma site open and select the Experience Platform Debugger extension icon
 1. The Debugger will open and show some details of the hardcoded implementation, which is unrelated to this tutorial (you may need to reload the Luma site after opening the Debugger)
@@ -276,9 +276,9 @@ The Experience Platform Debugger has a cool feature that allows you to replace a
 1. Since you are authenticated, the Debugger is going to pull in your available Launch properties and environments. Select your `Luma Platform Tutorial` property
 1. Select your `Development` environment
 1. Select the **[!UICONTROL Apply]** button
-    ![Select the alternate tags property](assets/websdk-debugger-selectProperty.png)
-1. The Luma website will now reload _with your tags property_. Help, I've been hacked! Just kidding.
-    ![tags property replaced](assets/websdk-debugger-propertyReplaced.png)
+    ![Select the alternate tag property](assets/websdk-debugger-selectProperty.png)
+1. The Luma website will now reload _with your tag property_. Help, I've been hacked! Just kidding.
+    ![tag property replaced](assets/websdk-debugger-propertyReplaced.png)
 1. Go to **[!UICONTROL Summary]** in the left navigation, to see the details of your [!UICONTROL Launch] property
     ![Summary tab](assets/websdk-debugger-summary.png)
 1. Now go to **[!UICONTROL AEP Web SDK]** in the left navigation to see the **[!UICONTROL Network Requests]**
@@ -371,11 +371,11 @@ Now that you have data mapped to XDM fields, you can include it in your Send Eve
 1. Now, since you have had `Luma Platform Tutorial` selected as your working library for the last several exercises, your recent changes have been saving directly to the library. Instead of having to publish our changes via the Publishing Flow screen, you can just open the dropdown on the blue button and select **[!UICONTROL Save to Library and Build]**
     ![Save to Library and Build](assets/websdk-property-saveAndBuildUpdatedSendEvent.png)
 
-This starts building a new tags library with the three changes you just made.
+This starts building a new tag library with the three changes you just made.
 
 ### Validate the XDM data
 
-You should now be able to reload the Luma homepage, while mapped to your tags property using the Debugger as you learned earlier, and see that the page name field populates in the request!
+You should now be able to reload the Luma homepage, while mapped to your tag property using the Debugger as you learned earlier, and see that the page name field populates in the request!
     ![Validate the XDM data](assets/websdk-debugger-pageName.png)
 
 You can also validate the page name data was received in Platform, by previewing the dataset and profile.
@@ -435,7 +435,7 @@ There is one more data element we must update&mdash;the XDM Object data element.
 To validate that the CRM Id is now being sent by the Web SDK:
 
 1. Open the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html)
-1. Map it to your tags property using the Debugger, as per the earlier instructions
+1. Map it to your tag property using the Debugger, as per the earlier instructions
 1. Select the **Login** link on the top right of the Luma website
 1. Log in using the credentials `test@adobe.com`/`test`
 1. Once authenticated, inspect the Experience Platform Web SDK call in the Debugger (**[!UICONTROL Adobe Experience Platform Web SDK]** > **[!UICONTROL Network Requests]** > **[!UICONTROL events]** of the most recent request) and you should see the `lumaCrmId`:

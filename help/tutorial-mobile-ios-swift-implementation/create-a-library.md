@@ -1,11 +1,11 @@
 ---
-title: Add a tags library
-description: Learn how to create a tags library in Adobe Experience Platform Data Collection. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
+title: Add a tag library
+description: Learn how to create a tag library in Data Collection. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
 exl-id: 13bcc345-1b15-4aa1-ac0b-6d56edeb0ac8
 ---
 # Add a library
 
-In this lesson, you will create a library for your new tags property. A library packages together all of the desired tags settings and generates the specific implementation instructions required to install the library in your mobile app.
+In this lesson, you will create a library for your new tag property. A library packages together all of the desired tags settings and generates the specific implementation instructions required to install the library in your mobile app.
 
 >[!NOTE]
 >
@@ -53,4 +53,4 @@ After configuring your extensions, you need to package them into a library that 
 
     ![Library Built](images/mobile-launch-libraryBuilt.png)
 
-[Next "Install the tags property and the SDK" >](install-the-mobile-sdk.md)
+[Next "Install the tag property and the SDK" >](install-the-mobile-sdk.md)

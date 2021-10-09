@@ -1,6 +1,6 @@
 ---
 title: Add Adobe Analytics
-description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send the page view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in websites tutorial.
+description: Learn how to implement Adobe Analytics using the Adobe Analytics tag extension, send the page view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 solution: Experience Platform, Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 ---
@@ -55,7 +55,7 @@ The Analytics extension consists of two main parts:
 
    ![Install the Analytics extension](images/analytics-catalog-install.png)
 
-1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each tags environment. If your users has access to Adobe Analytics, note that as you start typing in the box, you will see a pre-populated list of all of your report suites. (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
+1. Under [!UICONTROL Library Management > Report Suites], enter the report suite ids you would like to use with each tag environment. If your users has access to Adobe Analytics, note that as you start typing in the box, you will see a pre-populated list of all of your report suites. (It's okay to use one report suite for all environments in this tutorial, but in real life you would want to use separate report suites, as shown in the image below)
 
    ![Enter the report suite ids](images/analytics-config-reportSuite.png)
 
@@ -75,13 +75,13 @@ The Analytics extension consists of two main parts:
 
 >[!NOTE]
 >
->Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined *before* the tags embed codes.
+>Global variables can be set in the extension configuration or in rule actions. Be aware that when setting variables in the extension configuration, the data layer must be defined *before* the tag embed codes.
 
 ## Send the Page View Beacon
 
 Now you will create a rule to fire the Analytics beacon, which will send the [!UICONTROL Page Name] variable set in the extension configuration.
 
-You have already created an "All Pages - Library Loaded" rule in the [Add a data element, a rule and a library](add-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the tags library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the tags embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
+You have already created an "All Pages - Library Loaded" rule in the [Add a data element, a rule and a library](add-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the tag library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the tag embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
 
 **To Send the Page View Beacon**
 
@@ -122,7 +122,7 @@ Now that you have created a rule to send an Analytics beacon, you should be able
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) in your Chrome browser
 1. Click the Debugger icon ![Open the Experience Cloud Debugger](images/analytics-debuggerIcon.png) to open the **[!UICONTROL Adobe Experience Cloud Debugger]**
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -138,7 +138,7 @@ Now that you have created a rule to send an Analytics beacon, you should be able
 
 ## Add Variables with Rules
 
-When you configured the Analytics Extension, you populated the `pageName` variable in the extension configuration. This is a fine location to populate other global variables such as eVars and props, provided the value is available on the page before the tags embed code loads.
+When you configured the Analytics Extension, you populated the `pageName` variable in the extension configuration. This is a fine location to populate other global variables such as eVars and props, provided the value is available on the page before the tag embed code loads.
 
 A more flexible location to set variables&mdash;as well as events&mdash;is in rules using the `Set Variables` action. Rules allow you to set different Analytics variables and events under different conditions. For example, you could set the `prodView` only on product detail pages and the `purchase` event only on order confirmation pages. This section will teach you how to set variables using rules.
 
@@ -190,7 +190,7 @@ Next, you will collect the product id of the current Product Detail page with a 
 
 ### Add the Adobe Analytics Product String Extension
 
-If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in tags, three additional extensions have already been created in the tags extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
+If you are already familiar with Adobe Analytics implementations, you are probably familiar with the [products variable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html). The products variable has a very specific syntax and gets used slightly different ways depending on the context. To help make the population of the products variable easier in tags, three additional extensions have already been created in the tag extension marketplace! In this section you will add an extension created by Adobe Consulting to use on the Product Detail page.
 
 **To add the add the `Adobe Analytics Product String` extension**
 
@@ -286,7 +286,7 @@ You  just created a rule that sets variables before the beacon is sent. You shou
 
 When a page loads, you typically fire a page load beacon triggered by the `s.t()` function. This automatically increments a `page view` metric for the page listed in the `pageName` variable.
 
-However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request. Even though it is referred to as a track link request, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you in the tags rule builder, including your own custom JavaScript.
+However, sometimes you don't want to increment page views on your site, because the action that is taking place is "smaller" (or maybe just different) than a page view. In this case, you will use the `s.tl()` function, which is commonly referred to as a "track link" request. Even though it is referred to as a track link request, it doesn't have to be triggered on a link click. It can be triggered by *any* of the events that are available to you in the tag rule builder, including your own custom JavaScript.
 
 In this tutorial, you will trigger an `s.tl()` call using one of the coolest JavaScript events, an `Enters Viewport` event.
 

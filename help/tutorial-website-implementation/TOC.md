@@ -12,7 +12,7 @@ thumbnail:
 
 + [Overview](overview.md)
 + Configure tags{#configure-tags}
-  + [Create a tags property](create-a-property.md)
+  + [Create a tag property](create-a-property.md)
   + [Add the embed code](add-embed-code.md)
   + [Add a data element, a rule and a library](add-data-elements-rules.md)
   + [Switch environments with the Debugger](switch-environments.md)

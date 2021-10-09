@@ -74,7 +74,7 @@ You are going to create a rule that outputs the Page Name data element value to 
 
    ![Click the Create New Rule button](images/launch-newRule.png)
 
-1. Name the Rule `All Pages - Library Loaded`. This naming convention indicates where and when the rule will fire, making it easier to identify and re-use as your tags property matures.
+1. Name the Rule `All Pages - Library Loaded`. This naming convention indicates where and when the rule will fire, making it easier to identify and re-use as your tag property matures.
 
 1. Under Events, click **[!UICONTROL Add]**. The Event tells tags when the rule should fire and can be many things, including a page load, a click, a custom JavaScript event, etc.
 
@@ -117,7 +117,7 @@ On the Rules page, you should see your new rule:
 
 After configuring a collection of extensions, data elements, and rules in the Data Collection interface, you need to package these capabilities and logic into a set of JavaScript code that you can deploy on your website so that marketing tags will fire when visitors come to the site. A library is the set of JavaScript code that will do this.
 
-In an earlier lesson, you implemented the embed code of your development environment on the sample page. When you loaded the sample page a 404 error was returned for the embed code URL because a tags library had not been built yet and assigned to the environment. Now you will put your new data element and rule in a library so that your sample page can do something.
+In an earlier lesson, you implemented the embed code of your development environment on the sample page. When you loaded the sample page a 404 error was returned for the embed code URL because a tag library had not been built yet and assigned to the environment. Now you will put your new data element and rule in a library so that your sample page can do something.
 
 **To add and build a library**
 
@@ -157,7 +157,7 @@ If you look at the Developer Tools -> Console, you should see the text "The page
 
 ![Console Message](images/samplepage-console.png)
 
-Congratulations, you created your first data element and rule and built your first tags library!
+Congratulations, you created your first data element and rule and built your first tag library!
 
 ## Use the Working Library Feature
 

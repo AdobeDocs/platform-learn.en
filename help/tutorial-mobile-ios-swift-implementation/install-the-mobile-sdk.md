@@ -1,11 +1,11 @@
 ---
 title: Install the Adobe Experience Platform Mobile SDK in a Mobile iOS Swift app
-description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
+description: Learn how to get your tag property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
 exl-id: 90bdd606-5e50-4b02-a57c-aa080f7b3f67
 ---
 # Install the Adobe Experience Platform Mobile SDK
 
-In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your tags property's Development environment.
+In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your tag property's Development environment.
 
 >[!NOTE]
 >
@@ -19,7 +19,7 @@ In this lesson, you will implement the Mobile SDK with the extensions and settin
 
 At the end of this lesson, you will be able to:
 
-* Obtain the installation instructions for your mobile tags property
+* Obtain the installation instructions for your mobile tag property
 * Understand the difference between a Development, Staging, and Production environment
 * Create and edit the Podfile
 * Import the Mobile SDK into your AppDelegate file
@@ -27,7 +27,7 @@ At the end of this lesson, you will be able to:
 
 ## Get the Installation Instructions
 
-The Installation Instructions for mobile tags properties are a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
+The Installation Instructions for mobile tag properties are a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
 
 Click on the `Environments` tab in the top navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you. These correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they download your app.  
 
@@ -45,7 +45,7 @@ Let's go through the instructions step-by-step.
 
 ## Create the Podfile and Install the Pods
 
-If you have previously used tags properties in websites, one of the first things you will notice is that there is a lot more information in this modal than for web properties.
+If you have previously used tag properties in websites, one of the first things you will notice is that there is a lot more information in this modal than for web properties.
 
 The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between its various components. If you don't already have [CocoaPods](https://cocoapods.org/) installed in your development environment, follow the installation instructions on their website. Also, if you haven't already downloaded the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps), save it to your local machine and extract the zip archive to your desktop.
 
@@ -125,7 +125,7 @@ Now it's time to update the App to import the SDK
 
    ![Paste the Swift import statements into your AppDelegate file](images/ios/swift/mobile-launch-install-pasteImports.png)
 
-1. In the Data Collection interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the tags environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+1. In the Data Collection interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the tag environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
 
    ![Copy the Core statements to your clipboard](images/ios/swift/mobile-launch-install-copyCore.png)
 

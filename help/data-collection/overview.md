@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Platform Data Collection tutorials 
-description: How-to videos and tutorials to make you a power-user of Adobe Experience Platform Data Collection
+title: Data Collection tutorials 
+description: How-to videos and tutorials to make you a power-user of Data Collection
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 ---
-# Adobe Experience Platform Data Collection tutorials
+# Data Collection tutorials
 
-Adobe Experience Platform Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Data Collection gives customers a simple way to deploy and manage the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help learn this critical technology.
+Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Data Collection gives customers a simple way to deploy and manage the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help learn this critical technology.
 
 >[!NOTE]
 >
@@ -24,7 +24,7 @@ Adobe Experience Platform Data Collection is the next generation of website tag 
     *Forward data to non-Adobe solutions from Experience Platform Edge Network.*
 
 * **[Implement the Adobe Experience Cloud in Websites (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)**
-    *Implement Experience Cloud applications with Experience Platform Data Collection tags.*
+    *Implement Experience Cloud applications with tags.*
 
 ## Staff Picks
 

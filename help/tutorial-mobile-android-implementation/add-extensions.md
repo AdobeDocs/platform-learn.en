@@ -1,11 +1,11 @@
 ---
-title: Add extensions to a mobile tags property
-description: Learn how to add extensions to a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
+title: Add extensions to a mobile tag property
+description: Learn how to add extensions to a mobile tag property. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
 exl-id: 0492561c-a902-4433-9289-204db15e282c
 ---
 # Add extensions
 
-In this lesson, you will add extensions to your tags property.
+In this lesson, you will add extensions to your tag property.
 
 
 
@@ -23,11 +23,11 @@ Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and 
 
 >[!CAUTION]
 >
->Adding and removing Extensions in mobile tags properties requires you to update your app. This is different from web tags properties, in which you can add or remove extensions at any time, without having to update your website.
+>Adding and removing Extensions in mobile tag properties requires you to update your app. This is different from web tag properties, in which you can add or remove extensions at any time, without having to update your website.
 
 ## Prerequisites
 
-Your tags user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+Your tags user account needs permission to "Manage Extensions" in order to complete this lesson. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator for access. For more information on tag user permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 You will need the following solution details:
 
@@ -39,7 +39,7 @@ You will need the following solution details:
 
 At the end of this lesson, you will be able to:
 
-* Add Extensions to a mobile tags property
+* Add Extensions to a mobile tag property
 * Configure the Analytics extension
 * Configure the Target extension
 

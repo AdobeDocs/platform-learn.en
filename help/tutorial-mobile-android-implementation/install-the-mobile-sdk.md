@@ -1,11 +1,11 @@
 ---
 title: Install the Adobe Experience Platform Mobile SDK in a mobile Android™ app
-description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
+description: Learn how to get your tag property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
 exl-id: 89d6aa9c-126a-45f1-bf71-1e0ef62fbd78
 ---
 # Install the Adobe Experience Platform Mobile SDK
 
-In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your tags property's Development environment.
+In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your tag property's Development environment.
 
 
 >[!NOTE]
@@ -27,7 +27,7 @@ In this lesson we will start adding code to the Bus Booking app, so if you haven
 
 At the end of this lesson, you will be able to:
 
-* Obtain the installation instructions for your mobile tags property
+* Obtain the installation instructions for your mobile tag property
 * Understand the difference between a Development, Staging, and Production environment
 * Update your `build.gradle` file to add the Mobile SDK
 * Import the Mobile SDK into your app
@@ -36,7 +36,7 @@ At the end of this lesson, you will be able to:
 
 ## Get the Installation Instructions
 
-The Installation Instructions for mobile tags properties are a collection of code snippets that you add to specific locations in your mobile app.
+The Installation Instructions for mobile tag properties are a collection of code snippets that you add to specific locations in your mobile app.
 
 Click on the `Environments` tab in the top navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you. These correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they download your app.  
 
@@ -54,7 +54,7 @@ Let's go through the instructions step-by-step.
 
 ## Update the build.gradle file
 
-If you have previously used tags properties in websites, one of the first things you will notice is that there are a lot more installation instructions for mobile apps than for websites.
+If you have previously used tag properties in websites, one of the first things you will notice is that there are a lot more installation instructions for mobile apps than for websites.
 
 The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its various components. One of the first things we will do is add the Adobe Mobile SDK dependencies to the Bus Booking app's build.gradle file.
 

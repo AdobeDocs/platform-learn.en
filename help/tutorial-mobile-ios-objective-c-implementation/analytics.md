@@ -1,6 +1,6 @@
 ---
 title: Add Adobe Analytics
-description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
+description: Learn how to implement Adobe Analytics using the Adobe Analytics tag extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 solution: Experience Platform, Data Collection, Analytics
 exl-id: a92cf494-50ca-4d6a-ba66-161267c9b4b0
 ---
@@ -10,7 +10,7 @@ In this lesson, you will enable Adobe Analytics tracking in your app.
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
-In the [Add Extensions](add-extensions.md) and [Install the Mobile SDK](install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your tags property and imported it into the sample application. Now all you have to do is add code to track the states and actions in your app!
+In the [Add Extensions](add-extensions.md) and [Install the Mobile SDK](install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your tag property and imported it into the sample application. Now all you have to do is add code to track the states and actions in your app!
 
 
 >[!NOTE]

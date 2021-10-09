@@ -1,11 +1,11 @@
 ---
 title: Add the embed code
-description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in websites tutorial.
+description: Learn how to get your tag property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 ---
 # Add the embed code
 
-In this lesson, you will implement the asynchronous embed code of your tags property's Development environment. Along the way, you will learn about two main concepts of tags&mdash;Environments and Embed Codes.
+In this lesson, you will implement the asynchronous embed code of your tag property's Development environment. Along the way, you will learn about two main concepts of tags&mdash;Environments and Embed Codes.
 
 >[!NOTE]
 >
@@ -19,14 +19,14 @@ In this lesson, you will implement the asynchronous embed code of your tags prop
 
 At the end of this lesson, you will be able to:
 
-* Obtain the embed code for your tags property
+* Obtain the embed code for your tag property
 * Understand the difference between a Development, Staging, and Production environment
-* Add a tags embed code to an html document
-* Explain the optimal location of the tags embed code in relation to other code in the `<head>` of an html document
+* Add a tag embed code to an html document
+* Explain the optimal location of the tag embed code in relation to other code in the `<head>` of an html document
 
 ## Copy the Embed Code
 
-The embed code is a `<script>` tag that you put on your webpages to load and execute the logic you build in tags. If you load the library asynchronously, the browser continues to load the page, retrieves the tags library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. (When tags is deployed synchronously, there are two embed codes, one which you put in the `<head>` and another which you put before the `</body>`).
+The embed code is a `<script>` tag that you put on your webpages to load and execute the logic you build in tags. If you load the library asynchronously, the browser continues to load the page, retrieves the tag library, and executes it in parallel. In this case, there is only one embed code, which you put in the `<head>`. (When tags is deployed synchronously, there are two embed codes, one which you put in the `<head>` and another which you put before the `</body>`).
 
 From the property Overview screen, click **[!UICONTROL Environments]** in the left navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you.
 
@@ -64,7 +64,7 @@ Replace the existing embed code on or around line 34 with with the one on your c
     <!--/Tags Header Embed Code-->
 ```
 
-Open your web browser's developer tools and go to the Network tab. At this point you should see a 404 error for the tags environment URL:
+Open your web browser's developer tools and go to the Network tab. At this point you should see a 404 error for the tag environment URL:
 ![404 error](images/samplepage-404.png)
 
 The 404 error is expected because you haven't yet built a library in this Tags environment. You will do that in the next lesson. If you see a "failed" message instead of a 404 error, you probably forgot to add the `https://` protocol in the embed code. Again, you only need to specify the `https://` protocol if you are loading the sample page using the `file://` protocol. Make that change and reload the page until the 404 error appears.
@@ -77,7 +77,7 @@ Let's take a moment to review some of the Tags implementation best practices whi
 
   * We *strongly* recommend creating a data layer on your site containing all of the attributes needed to populate variables in Analytics, Target, and other marketing solutions. This sample page only contains a very simple data layer, but a real data layer might contain many more details about the page, the visitor, their shopping cart details, etc. For more info on data layers, please see [Customer Experience Digital Data Layer 1.0](https://www.w3.org/2013/12/ceddl-201312.pdf)
 
-  * Define your data layer before the tags embed code, in order to maximize what you can do with Experience Cloud solutions.
+  * Define your data layer before the tag embed code, in order to maximize what you can do with Experience Cloud solutions.
 
 * **JavaScript helper libraries**: If you already have a library like JQuery implemented in the `<head>` of your pages, load it before tags in order to leverage its syntax in tags and Target
 
@@ -85,7 +85,7 @@ Let's take a moment to review some of the Tags implementation best practices whi
 
 * **preconnect and dns-prefetch**: Use preconnect and dns-prefetch to improve the page load time. See also: [https://w3c.github.io/resource-hints/](https://w3c.github.io/resource-hints/)
 
-* **pre-hiding snippet for asynchronous Target implementations**: You will learn more about this in the Target lesson, but when Target is deployed via asynchronous tags embed codes, you should hardcode a pre-hiding snippet on your pages before the tags embed codes in order to manage content flicker
+* **pre-hiding snippet for asynchronous Target implementations**: You will learn more about this in the Target lesson, but when Target is deployed via asynchronous tag embed codes, you should hardcode a pre-hiding snippet on your pages before the tag embed codes in order to manage content flicker
 
 Here is a summary what these best practices look like in the suggested order. Note that there are some placeholders for account specific details:  
 
@@ -138,6 +138,6 @@ Here is a summary what these best practices look like in the suggested order. No
 </html>
 ```
 
-Now you know how to add the tags embed code to your site!
+Now you know how to add the tag embed code to your site!
 
 [Next "Add a data element, a rule and a library" >](add-data-elements-rules.md)

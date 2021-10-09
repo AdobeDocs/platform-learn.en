@@ -22,7 +22,7 @@ In this lesson, we will implement the [Adobe Target extension](https://experienc
 
 At the end of this lesson, you will be able to:
 
-* Add the pre-hiding snippet used to manage flicker when using Target with asynchronous tags embed codes
+* Add the pre-hiding snippet used to manage flicker when using Target with asynchronous tag embed codes
 * Add the Target v2 extension
 * Fire the page load request (formerly called the "global mbox")
 * Add parameters to the page load request
@@ -37,7 +37,7 @@ To complete the lessons in this section, you must first complete the lessons in 
 
 ## Add the Target Pre-Hiding Snippet
 
-Before we get started, we need to make a slight update to the tags embed codes. When the tags embed codes are loaded asynchronously, the page may finish rendering before the Target library is fully loaded and has performed its content swap. This can lead to what is known as "flicker" where  default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we strongly recommend hardcoding a special pre-hiding snippet immediately before tags' asynchronous embed codes.
+Before we get started, we need to make a slight update to the tag embed codes. When the tag embed codes are loaded asynchronously, the page may finish rendering before the Target library is fully loaded and has performed its content swap. This can lead to what is known as "flicker" where  default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, we strongly recommend hardcoding a special pre-hiding snippet immediately before tags' asynchronous embed codes.
 
 This has already been done on the Luma site, but let's go ahead and do this on the sample page so you understand the implementation. Copy the following lines of code:
 
@@ -48,7 +48,7 @@ This has already been done on the Luma site, but let's go ahead and do this on t
 </script>
 ```
 
-Open the sample page and paste it just before your tags embed code as pictured below (don't worry if the line numbers are different):
+Open the sample page and paste it just before your tag embed code as pictured below (don't worry if the line numbers are different):
 
    ![Hover over the extension](images/target-prehidingSnippet.png)
 
@@ -144,7 +144,7 @@ With the `Load Target` action added, at.js will load on the page. However, no Ta
 
 ### Validate the Page Load Request
 
-Now that you have added the Target v2 extension and fired the `Load Target` and `Fire Page Load Request` actions, there should be a page load request made on all pages where your tags property is used.
+Now that you have added the Target v2 extension and fired the `Load Target` and `Fire Page Load Request` actions, there should be a page load request made on all pages where your tag property is used.
 
 **To validate the Load Target and Fire Page Load Request actions**
 
@@ -152,7 +152,7 @@ Now that you have added the Target v2 extension and fired the `Load Target` and 
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -172,7 +172,7 @@ Congratulations! You've implemented Target!
 
 ## Add Parameters
 
-Passing parameters in the Target request adds powerful capabilities to your targeting, testing, and personalization activities. The tags extension provides two actions to pass parameters:
+Passing parameters in the Target request adds powerful capabilities to your targeting, testing, and personalization activities. The tag extension provides two actions to pass parameters:
 
 1. `Add Params to Page Load Request`, which adds parameters to page load requests (equivalent to the [targetPageParams()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/cmp-atjs-functions.html) method)
 
@@ -229,7 +229,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
 **To validate the pageName request parameter**
 
-1. Reload the Luma site, making sure it is mapped to your own tags property
+1. Reload the Luma site, making sure it is mapped to your own tag property
 1. Open your browser's developer tools
 1. Click on the Network tab
 1. Filter the requests to `tt.omtrdc` (or your CNAME'd domain for Target requests)
@@ -282,7 +282,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -317,10 +317,10 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
 The property token is a reserved parameter used with the Target Premium [Enterprise User Permissions](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html) feature. It is used to define different digital properties so that different members of an Experience Cloud Organization can be assigned different permissions on each property. For example, you might want one group of users to be able to set up Target activities on your web site, but not in your mobile application.
 
-Target properties are analogous to tags properties and Analytics report suites. An enterprise with multiple brands, websites, and marketing teams might use a different Target property, tags property and Analytics report suite for each website or mobile app. Tags properties are differentiated by their embed codes, Analytics report suites are differentiated by their report suite id, and Target properties are differentiated by their property token parameter.
+Target properties are analogous to tag properties and Analytics report suites. An enterprise with multiple brands, websites, and marketing teams might use a different Target property, tag property and Analytics report suite for each website or mobile app. Tags properties are differentiated by their embed codes, Analytics report suites are differentiated by their report suite id, and Target properties are differentiated by their property token parameter.
 
 
-The property token must be implemented using a custom code action in tags with the `targetPageParams()` function. If you are implementing multiple sites with different using different at_property values with a single tags property, you could manage the at_property value via a data element.
+The property token must be implemented using a custom code action in tags with the `targetPageParams()` function. If you are implementing multiple sites with different using different at_property values with a single tag property, you could manage the at_property value via a data element.
 
 Here is an optional exercise, if you are a Target Premium customer and would like to implement a property token in your Tutorial property:
 
@@ -366,7 +366,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 **To validate the Property Token parameter**
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -498,7 +498,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -528,7 +528,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
 ### Custom requests
 
-There rare instances when you need to make Target requests other than the page load and order confirmation request. For example, sometimes important data you would like to use for personalization is not defined on the page before the tags embed codes&mdash;it might be hardcoded on the bottom of the page or get returned from an asynchronous API request. This data can still be sent to Target using an additional request, although it will not be optimal to use this request for content delivery since the page will already visible. It can be used to enrich the visitor profile for later use (using profile parameters) or to populate the Recommendations catalog.
+There rare instances when you need to make Target requests other than the page load and order confirmation request. For example, sometimes important data you would like to use for personalization is not defined on the page before the tag embed codes&mdash;it might be hardcoded on the bottom of the page or get returned from an asynchronous API request. This data can still be sent to Target using an additional request, although it will not be optimal to use this request for content delivery since the page will already visible. It can be used to enrich the visitor profile for later use (using profile parameters) or to populate the Recommendations catalog.
 
 In these circumstances, use the Custom Code action in the Core extension to fire a request using the [getOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-getoffer.html)/[applyOffer()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-applyoffer.html) and [trackEvent()](https://experienceleague.adobe.com/docs/target/using/implement-target/client-side/functions-overview/adobe-target-trackevent.html) methods. This is very similar to what you just did in the [Order Confirmation request](#order-confirmation-request) exercise, but you will just use a different request name and will not use the special order parameters. Be sure to use the **[!UICONTROL Load Target]** action before making Target requests from custom code.
 

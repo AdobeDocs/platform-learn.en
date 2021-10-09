@@ -11,9 +11,9 @@ Each lesson contains how-to exercises and foundational information to help you i
 
 After completing this you will be able to:
 
-* Create a tags property
+* Create a tag property
 
-* Install a tags property on a website
+* Install a tag property on a website
 
 * Add the following Adobe Experience Cloud solutions:
   * **[Adobe Experience Platform Identity Service](id-service.md)**
@@ -47,7 +47,7 @@ After completing this you will be able to:
 
 In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you may need to reach out to your Experience Cloud Administrator to request access.
 
-* For tags, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* For tags, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments. For more information on tag user permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * For Adobe Analytics, you must know your tracking server and which report suites you will use to complete this tutorial
 * For Audience Manager, you must know your Audience Manager Subdomain (also known as the “Partner Name” “Partner ID,” or “Partner Subdomain”)
 
@@ -55,7 +55,7 @@ Also, it is assumed that you are familiar with front-end development languages l
 
 ## About tags
 
-The tags feature of Adobe Experience Platform Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Tags gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Tags. It is available for any Adobe Experience Cloud customer.
+The tags feature of Adobe Experience Platform is the next generation of website tag and mobile SDK management capabilities from Adobe. Tags gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for Tags. It is available for any Adobe Experience Cloud customer.
 
 Tags for websites allows you to centrally manage all of the JavaScript related to analytics, marketing, and advertising solutions used on your desktop and mobile sites. For example, if you deploy Adobe Analytics, tags will manage the AppMeasurement JavaScript library, populate variables, and fire requests.
 
@@ -65,7 +65,7 @@ Tags is also a platform that allows third-party vendors to create extensions to 
 
 ## About the Lessons
 
-In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own tags property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
+In these lessons, you will implement the Adobe Experience Cloud into a fake retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that will allow you to build a realistic implementation. You will build your own tag property, in your own Experience Cloud organization, and map it to our hosted Luma site using the Experience Cloud Debugger.
 
 [![Luma website](images/overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -83,4 +83,4 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 
 Let's get started!
 
-[Next "Create a tags property" >](create-a-property.md)
+[Next "Create a tag property" >](create-a-property.md)
