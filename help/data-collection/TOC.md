@@ -3,6 +3,8 @@ user-guide-title: Adobe Experience Platform Data Collection Tutorials
 breadcrumb-title: Data Collection Tutorials
 user-guide-description: How-to videos and tutorials to make you a power-user of Data Collection in Experience Platform.
 solution: Experience Platform, Data Collection
+index: no
+hide: yes
 ---
 
 # Adobe Experience Platform Data Collection Tutorials{#data-collection-tutorials}

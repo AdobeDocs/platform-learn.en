@@ -6,6 +6,8 @@ solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2179
 thumbnail: 
+index: no
+hide: yes
 ---
 
 # Implement the Experience Cloud in websites {#implement-in-websites}
