@@ -25,11 +25,11 @@ This tutorial uses the Platform Web SDK extension to send consent data to Platfo
  
 The prerequisites for using the Web SDK are listed [here](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/prerequisite.html?lang=en#fundamentals). 
  
-On that page, there's a requirement for an "Event Dataset" and, just like it sounds, this is a dataset to hold your experience event data. To send consent information with events, the [Privacy Details mixin](https://github.com/adobe/xdm/blob/master/docs/reference/mixins/experience-event/experienceevent-privacy.schema.md) needs to be added to your Experience Event schema:
+On that page, there's a requirement for an "Event Dataset" and, just like it sounds, this is a dataset to hold your experience event data. To send consent information with events, the [Privacy Details field group](https://github.com/adobe/xdm/blob/master/docs/reference/field groups/experience-event/experienceevent-privacy.schema.md) needs to be added to your Experience Event schema:
 
 ![](./images/event-schema.png)
 
-For the Platform consent standard v2.0, we’ll also need access to Adobe Experience Profile to create an XDM Individual Profile schema and dataset. For a tutorial on schema creation, see [Create a schema using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#tutorials) and for the required Preference Details profile mixin see [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en).
+For the Platform consent standard v2.0, we’ll also need access to Adobe Experience Profile to create an XDM Individual Profile schema and dataset. For a tutorial on schema creation, see [Create a schema using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#tutorials) and for the required Preference Details profile field group see [XDM documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/overview.html?lang=en).
 
 This tutorial assumes you have access to Data Collection and have created a client-side tags property with the Web SDK extension installed and a working library created and built for development. These topics are detailed and demonstrated in these documents:
 
@@ -64,7 +64,7 @@ The "Privacy" section sets the consent level for the SDK if the user has not pre
  
 If the default consent setting is "In", this tells the SDK that it should not wait for explicit consent and it should collect the events that occur before the user provides consent preferences. These preferences are typically handled and stored in a CMP.
 
-If the default consent setting is “Out”, this tells the SDK that it should not collect any events that occur before the user opt-in preferences are set. Visitor activity that occurs before setting the consent preference will not be included in any data sent by the SDK after consent is set.  For example, if you scroll and view a web page before you select the consent banner, and this “Out” setting is used, that scroll activity and viewing time will not be sent if the user later provides explicit consent for data collection.
+If the default consent setting is “Out”, this tells the SDK that it should not collect any events that occur before the user opt-in preferences are set. Visitor activity that occurs before setting the consent preference will not be included in any data sent by the SDK after consent is set. For example, if you scroll and view a web page before you select the consent banner, and this “Out” setting is used, that scroll activity and viewing time will not be sent if the user later provides explicit consent for data collection.
 
 If the default consent setting is "Pending", the SDK will queue any events that occur before the user provides consent preferences, so the events may be sent after consent preferences are set, and after the SDK is initially configured during a visit.
  
@@ -76,7 +76,7 @@ Once a CMP collects the user’s preferences, then we can communicate those pref
 
 Please note: this configuration setting for the SDK is not persisted to users’ profiles, it is specific to setting the behavior of the SDK before explicit consent preferences are provided by the visitor.
  
-To learn more about configuring the Web SDK extension see the [Platform Web SDK extension overview](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension.html?lang=en#configure-the-extension) and [Supporting customer consent preferences](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
+To learn more about configuring the Web SDK extension see the [Platform Web SDK extension overview](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html?lang=en#configure-the-extension) and [Supporting customer consent preferences](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html).
  
 For this example, let’s choose the option for “Pending” and select **Save** to save our configuration settings.
 
@@ -102,13 +102,13 @@ Your tags rules can be triggered by a variety of built-in or custom [events](htt
 
 #### Setting Consent with the Platform Consent Standard 2.0
 
-Version 2.0 of the Platform consent standard works with [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) data. It also requires adding a Privacy Details mixin to your profile schema in Platform. See [Consent processing in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) for more information on the Adobe standard version 2.0 and this mixin.
+Version 2.0 of the Platform consent standard works with [XDM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/schemas/schemas-and-experience-data-model.html) data. It also requires adding a Privacy Details field group to your profile schema in Platform. See [Consent processing in Platform](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/consent/adobe/overview.html) for more information on the Adobe standard version 2.0 and this field group.
 
 We’ll create a custom code data element to pass data to the collect and metadata properties of the consents object shown in the schema below:
 
 ![](./images/collect-metadata.png)
 
-This Preference Details mixin contains fields for the [Consents & Preferences XDM data type](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=en#prerequisites) which will contain the consent preference data we send to Platform with the Platform Web SDK extension in our rule action. Currently, the only required properties to implement the Platform Consent Standard 2.0 are the collect value (val) and the metadata time value, highlighted above in red.
+This Preference Details field group contains fields for the [Consents & Preferences XDM data type](https://experienceleague.adobe.com/docs/experience-platform/xdm/data-types/consents.html?lang=en#prerequisites) which will contain the consent preference data we send to Platform with the Platform Web SDK extension in our rule action. Currently, the only required properties to implement the Platform Consent Standard 2.0 are the collect value (val) and the metadata time value, highlighted above in red.
 
 Let’s create a data element for this data. Select Data Elements and the blue Add Data Element button. Let’s call this “xdm-consent 2.0” and using the Core extension, we’ll select a Custom Code type. You can enter or copy and paste the following data into the custom code editor window:
 
@@ -141,11 +141,11 @@ We now have two rules, one for each of the Platform Consent standards. In practi
  
 You can learn more about version 2.0 of the IAB Transparency and Consent Framework at the [IAB Europe website](https://iabeurope.eu/transparency-consent-framework/).
 
-To set the consent preference data using this standard, we need to add the Privacy Details mixin to our Experience Event schema in Platform:
+To set the consent preference data using this standard, we need to add the Privacy Details field group to our Experience Event schema in Platform:
 
 ![](./images/consentStrings.png)
 
-This mixin contains the consent preference fields required by the IAB TCF 2.0 standard. For more on schemas and mixins, see the [XDM System Overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en).
+This field group contains the consent preference fields required by the IAB TCF 2.0 standard. For more on schemas and field groups, see the [XDM System Overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en).
 
 ### Step 1: Create a Consent Data Element
  

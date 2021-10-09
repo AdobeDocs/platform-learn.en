@@ -1,9 +1,9 @@
 ---
-title: Install the Adobe Mobile SDK in a Mobile Android app
-description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
+title: Install the Adobe Experience Platform Mobile SDK in a mobile Android™ app
+description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
 exl-id: 89d6aa9c-126a-45f1-bf71-1e0ef62fbd78
 ---
-# Install the Mobile SDK
+# Install the Adobe Experience Platform Mobile SDK
 
 In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your tags property's Development environment.
 
@@ -20,7 +20,7 @@ In this lesson, you will implement the Mobile SDK with the extensions and settin
 
 In this lesson we will start adding code to the Bus Booking app, so if you haven't already done so:
 
-1. Download and Install [Android Studio](https://developer.android.com/studio)
+1. Download and Install [Android™ Studio](https://developer.android.com/studio)
 1. Download the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps)
 
 ## Learning Objectives
@@ -60,14 +60,14 @@ The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its 
 
 **To update the build.gradle file**
 
-1. Open Android Studio
-1. Select "Open an existing Android Studio Project"
+1. Open Android™ Studio
+1. Select "Open an existing Android™ Studio Project"
 
-   ![Select "Open an existing Android Studio Project"](images/android/mobile-launch-install-openProject.png)
+   ![Select "Open an existing Android™ Studio Project"](images/android/mobile-launch-install-openProject.png)
 
-1. Open the build.gradle file at the root of the Bus Booking Android folder:
+1. Open the build.gradle file at the root of the Bus Booking Android™ folder:
 
-   ![Open the build.gradle file at the root of the Bus Booking Android folder](images/android/mobile-launch-install-openApp.png)
+   ![Open the build.gradle file at the root of the Bus Booking Android™ folder](images/android/mobile-launch-install-openApp.png)
 
 1. Open the dropdown and switch to the Project view
 
@@ -83,7 +83,7 @@ The Adobe Mobile SDK for Android uses Gradle to manage dependencies between its 
 
    ![Copy dependencies to your clipboard in the Data Collection interface](images/android/mobile-launch-install-copyDependencies.png)
 
-1. In Android Studio, paste the dependencies from your clipboard right after the existing dependencies (but before the closing `}`)
+1. In Android™ Studio, paste the dependencies from your clipboard right after the existing dependencies (but before the closing `}`)
 
 1. Click the "Sync Now" link to sync the project
 
@@ -104,7 +104,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the import statements to your clipboard](images/android/mobile-launch-install-copyImports.png)
 
-1. In Android Studio, paste these import statements *before* the existing imports in the `DemoApplication` file. Note that the Core extension includes libraries to support callbacks, the identity service, lifecycle metrics, and console logging among other features.
+1. In Android™ Studio, paste these import statements *before* the existing imports in the `DemoApplication` file. Note that the Core extension includes libraries to support callbacks, the identity service, lifecycle metrics, and console logging among other features.
 
     ![Paste the import statements into your DemoApplication file](images/android/mobile-launch-install-pasteImports.png)
 
@@ -112,7 +112,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Core statements to your clipboard](images/android/mobile-launch-install-copyCore.png)
 
-1. In Android Studio, paste these Core statements into the `DemoApplication` file right after `super.onCreate()`
+1. In Android™ Studio, paste these Core statements into the `DemoApplication` file right after `super.onCreate()`
 1. Remove the `//` comments before the `try` and `catch` lines
 
    ![Paste the Core statements into your DemoApplication file](images/android/mobile-launch-install-pasteCore.png)
@@ -121,7 +121,7 @@ Now it's time to update the App to import the SDK
 
    ![Copy the Extension statements to your clipboard](images/android/mobile-launch-install-copyExtensions.png)
 
-1. In Android Studio, paste these extension statements into the `try` section. Note that `MobileCore.configureWithAppID` contains the identifier of the tags development environment of your property. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+1. In Android™ Studio, paste these extension statements into the `try` section. Note that `MobileCore.configureWithAppID` contains the identifier of the tags development environment of your property. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
 
    ![Paste the Extension statements into your DemoApplication file](images/android/mobile-launch-install-pasteExtensions.png)
 
@@ -133,7 +133,7 @@ Now it's time to update the App to import the SDK
 
 ## Verify the implementation
 
-1. Save your Android Studio project
+1. Save your Android™ Studio project
 1. Run the app and launch it in the Emulator. If you don't have any emulator devices configured, configure one now, being sure to configure a device running Android 4.1 (API 16) or later.
 
    ![Run the app and launch it in the emulator](images/android/mobile-launch-install-buildAndLaunch.png)
@@ -142,7 +142,7 @@ Now it's time to update the App to import the SDK
 
    ![Wait for the app to fully open](images/android/mobile-launch-install-simulator.png)
 
-1. Confirm that calls are being made to the Adobe servers in the Android Studio Logcat
+1. Confirm that calls are being made to the Adobe servers in the Android™ Studio Logcat
 
    ![Wait for the app to fully open](images/android/mobile-launch-install-console.png)
 
@@ -155,7 +155,7 @@ Here are examples of some specific calls you can look for:
      {"target.propertyToken":"","target.timeout":5,"global.privacy":"optedin","analytics.backdatePreviousSessionInfo":true,"analytics.offlineEnabled":true,"build.environment":"dev","rules.url":"https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip","experienceCloud.org":"7ABB3E6A5A7491460A495D61@AdobeOrg","target.clientCode":"techmarketingdemos","target.autoFetch":true,"target.fetchBackground":false,"lifecycle.sessionTimeout":300,"target.environmentId":"busbookingapp","analytics.server":"tmd.sc.omtrdc.net","analytics.rsids":"tmd-mobile-dev1","analytics.batchLimit":0,"property.id":"PRb4881271498b4f2cbaf67d38a8f3891a","global.ssl":true,"analytics.aamForwardingEnabled":true}
     ```
 
-1. **Request to the Identity Service** (filter Logcat to `IdentityExtension`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
+1. **Request to the Identity Service** (filter Logcat to `IdentityExtension`) In this example, the ID (`d_mid`) has already been set and is just being reported up again)
 
     ```java
     03-14 17:01:18.526 7743-7803/com.adobe.busbooking D/ADBMobile: IdentityExtension - Sending request (https://dpm.demdex.net/id?d_mid=59651426340521082405908216148091920022&d_ver=2&d_orgid=7ABB3E6A5A7491460A495D61%40AdobeOrg)
@@ -177,7 +177,7 @@ Lifecycle metrics are environment-based metrics and dimensions that can be easil
 
 In order to make API calls via the Adobe Experience Platform Mobile SDK, you need to import the libraries into the appropriate files. In this case, to utilize the Lifecycle API call, we need to import the Core library.
 
-1. With your app open in Android Studio, open the BusBookingActivity file, which is in the same directory as the DemoApplication file that you've been working in.
+1. With your app open in Android™ Studio, open the BusBookingActivity file, which is in the same directory as the DemoApplication file that you've been working in.
 1. At the top of the file, add the following MobileCore import statement so that you can use the associated API calls
     `import com.adobe.marketing.mobile.MobileCore;`
 
@@ -200,10 +200,10 @@ You will now add the Lifecycle code to the main onResume() function in the app, 
 
 ### Validate the Lifecycle Hit
 
-When you run your app, you should now get one or more Lifecycle messages in the debug section of Android Studio.
+When you run your app, you should now get one or more Lifecycle messages in the debug section of Android™ Studio.
 
 1. Run a build, and choose a simulator to run the app
-1. After the simulator is up and running, click to the "Run" section of the debugger in Android Studio
+1. After the simulator is up and running, click to the "Run" section of the debugger in Android™ Studio
 1. Do a search for `internalaction=Lifecycle`
 1. See that there are lines that include this key/value pair, as well as the other Lifecycle metrics.
 

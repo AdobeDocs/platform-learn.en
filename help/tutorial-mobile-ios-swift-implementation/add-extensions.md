@@ -1,13 +1,13 @@
 ---
-title: Add Extensions to a Mobile tags property
+title: Add extensions to a mobile tags property
 description: Learn how to add extensions to a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
 exl-id: 51c2ede0-b8bd-469e-83f1-827ed30df58f
 ---
-# Add Extensions
+# Add extensions
 
 In this lesson, you will add extensions to your tags property.
 
-Tags allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions. An extension is a package of code that extends the Data Collection interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app.  You can think of tags as an operating system, and extensions are the apps you use to achieve your tasks.
+Tags allows Adobe and third-party vendors to create extensions to make it easy to deploy their solutions. An extension is a package of code that extends the Data Collection interface and client functionality. Extensions give you the ability to choose only the parts of the Adobe Experience Platform Mobile SDK that you need for your specific app. You can think of tags as an operating system, and extensions are the apps you use to achieve your tasks.
 
 Since you will be implementing the Adobe solutions (e.g. Target, Analytics, and Audience Manager), you will add the necessary extensions required to support them.
 
@@ -54,7 +54,7 @@ At the end of this lesson, you will be able to:
 
    ![Go to the extensions tab](images/mobile-extensions-installed-default.png)
 
-1. The Mobile Core extension represents the core Adobe Experience Platform Mobile SDK required for any app implementation. The core contains common set of functionality and frameworks such as a Experience Cloud Identity services, data event hub, rules engine, reusable networking, disk access routines, etc., which is required by all Adobe and third-party extensions.  For more information on the Mobile Core extension, see [the documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core).
+1. The Mobile Core extension represents the core Adobe Experience Platform Mobile SDK required for any app implementation. The core contains common set of functionality and frameworks such as an Experience Cloud Identity services, data event hub, rules engine, reusable networking, disk access routines, etc., which is required by all Adobe and third-party extensions.  For more information on the Mobile Core extension, see [the documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core).
 
    1. Note that your Experience Cloud Org ID is detected automatically and pre-populated
    1. The Experience Cloud Server field allows you to specify a custom endpoint for Visitor ID Service requests. Use the default setting (leave it blank) for this tutorial.
@@ -87,7 +87,7 @@ Now it's time to get to the fun part and start adding the extensions for the sol
 1. Select your **[!UICONTROL Report Suites]** from the pre-populated lists. These are the Report Suites to which the app will send data. You can select different report suites for your Development, Staging, and Production Environments.
 1. Your **[!UICONTROL Analytics Tracking Server]** may be pre-populated or you may need to select it from a pre-populated list or enter it manually. This is the domain to which the beacons will be sent, typically in the format `yoursite.sc.omtrdc.net`.
 1. Check the box for **[!UICONTROL Offline Enabled]**. When the Offline Enabled check box is selected, Analytics hits are queued when your device is offline and are sent later when your device is back online. To use offline tracking, **ensure** that your report suite is timestamp enabled. For more information, see the [documentation](https://experienceleague.adobe.com/docs/analytics/implementation/vars/config-vars/trackoffline.html).
-1. Check the box for **[!UICONTROL Audience Manager Forwarding]**. This will forward Analytics data to Audience Manager, so you won't have to make an additional call from the app to Audience Manager. In this exercise we will assume that you have Audience Manager, and are therefore forwarding the data from Analytics. If you do not have Audience Manager, do not check this box as you set up Analytics for your own implementation.
+1. Check the box for **[!UICONTROL Audience Manager Forwarding]**. This will forward Analytics data to Audience Manager, so you won't have to make an extra call from the app to Audience Manager. In this exercise we will assume that you have Audience Manager, and are therefore forwarding the data from Analytics. If you do not have Audience Manager, do not check this box as you set up Analytics for your own implementation.
 1. Check the box to **[!UICONTROL Backdate Previous Session Info]**
 1. Click the **[!UICONTROL Save]** button
   

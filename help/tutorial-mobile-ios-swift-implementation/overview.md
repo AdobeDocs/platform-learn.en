@@ -9,9 +9,9 @@ _Implement the Experience Cloud in Mobile iOS Swift&trade; Applications_ is the 
 
 ![Swift logo](images/ios/swift/Swift_logo_horz_lockup_color_rgb.png)
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Swift app!
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value. A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Swift app!
 
-After completing this tutorial you will be able to:
+After completing this tutorial, you will be able to:
 
 * Create a mobile tags property
 

@@ -7,9 +7,9 @@ exl-id: 5520cfb7-dd3e-4764-a022-99440b552045
 
 _Implement the Experience Cloud in Mobile iOS Objective-C Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Objective-C apps.
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Objective-C app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Objective-C app!
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value. A demo Objective-C app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Objective-C app!
 
-After completing this tutorial you will be able to:
+After completing this tutorial, you will be able to:
 
 * Create a mobile tags property
 

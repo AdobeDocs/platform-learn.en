@@ -1,9 +1,9 @@
 ---
-title: Switch tags Environments with the Adobe Experience Cloud Debugger
+title: Switch tags environments with the Adobe Experience Cloud Debugger
 description: Learn how to use the Experience Cloud Debugger to load different tags embed codes. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
 ---
-# Switch tags Environments with the Experience Cloud Debugger
+# Switch tags environments with the Experience Cloud Debugger
 
 In this lesson you will use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the tags property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
 

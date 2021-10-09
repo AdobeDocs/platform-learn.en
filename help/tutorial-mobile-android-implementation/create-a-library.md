@@ -1,9 +1,9 @@
 ---
-title: Create a Library
-description: Learn how to create a tags library in Adobe Experience Platform Data Collection. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
+title: Add a library
+description: Learn how to create a tags library in Adobe Experience Platform Data Collection. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
 exl-id: ee283267-53ae-4ecb-9a4d-50882a6ad2ff
 ---
-# Add a Library
+# Add a library
 
 In this lesson, you will create a library for your new tags property. A library packages together all of the desired tags settings and generates the specific implementation instructions required to install the library in your mobile app.
 

@@ -1,5 +1,5 @@
 ---
-user-guide-title: Implement the Experience Cloud in websites
+user-guide-title: Implement the Experience Cloud in Websites with Tags
 breadcrumb-title: Web Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud solutions on a website with tags.
 solution: Experience Platform, Data Collection
@@ -10,13 +10,13 @@ index: no
 hide: yes
 ---
 
-# Implement the Experience Cloud in websites {#implement-in-websites}
+# Implement the Experience Cloud in Websites with Tags {#implement-in-websites}
 
 + [Overview](overview.md)
 + Configure tags{#configure-tags}
   + [Create a tags property](create-a-property.md)
   + [Add the Embed Code](add-embed-code.md)
-  + [Add a Data Element, a Rule and a Library](add-data-elements-rules.md)
+  + [Add a data element, a rule and a library](add-data-elements-rules.md)
   + [Switch Environments with the Debugger](switch-environments.md)
 + Implementing Solutions{#implement-solutions}
   + [Add the Identity Service](id-service.md)

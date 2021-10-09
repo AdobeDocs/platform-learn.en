@@ -1,5 +1,5 @@
 ---
-title: Implement Target with tags
+title: Add Adobe Target with tags
 description: Learn how to implement Adobe Target using tags with at.js, a page load request, parameters, an order request, and custom header/footer code. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 solution: Experience Platform, Data Collection, Target
 exl-id: aa22e51a-67c2-4b54-b582-6f34f8c68aee

@@ -1,6 +1,6 @@
 ---
 title: Create an event forwarding property
-description: Learn how to create a event forwarding property in Adobe Experience Platform Data Collection.
+description: Learn how to create an event forwarding property in Adobe Experience Platform Data Collection.
 feature: Event Forwarding
 kt: 6420
 thumbnail: 331938

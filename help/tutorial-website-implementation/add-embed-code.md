@@ -1,9 +1,9 @@
 ---
-title: Implement the Embed Code
+title: Add the embed code
 description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 exl-id: a2959553-2d6a-4c94-a7df-f62b720fd230
 ---
-# Add the Embed Code
+# Add the embed code
 
 In this lesson, you will implement the asynchronous embed code of your tags property's Development environment. Along the way, you will learn about two main concepts of tags&mdash;Environments and Embed Codes.
 
@@ -140,4 +140,4 @@ Here is a summary what these best practices look like in the suggested order. No
 
 Now you know how to add the tags embed code to your site!
 
-[Next "Add a Data Element, a Rule and a Library" >](add-data-elements-rules.md)
+[Next "Add a data element, a rule and a library" >](add-data-elements-rules.md)

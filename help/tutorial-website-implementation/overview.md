@@ -41,7 +41,7 @@ After completing this you will be able to:
 >
 >* [Implement the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
 >* [Implement the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
->* [Implement the Experience Cloud in Mobile Android Applications](/help/tutorial-mobile-android-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile Android™ Applications](/help/tutorial-mobile-android-implementation/overview.md)
 
 ## Prerequisites
 

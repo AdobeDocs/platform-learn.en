@@ -1,7 +1,7 @@
 ---
-user-guide-title: Implement the Experience Cloud in Mobile Android Applications
+user-guide-title: Implement the Experience Cloud in Mobile Android™ Applications
 breadcrumb-title: Android Tutorial
-user-guide-description: Learn how to implement Adobe Experience Cloud solutions in Android apps with tags in Experience Platform.
+user-guide-description: Learn how to implement Adobe Experience Cloud solutions in Android™ apps with tags in Experience Platform.
 solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2798
@@ -10,7 +10,7 @@ index: no
 hide: yes
 ---
 
-# Implement the Experience Cloud in Mobile Android Applications {#implement-in-mobile-android-apps}
+# Implement the Experience Cloud in Mobile Android™ Applications{#implement-in-mobile-android-apps}
 
 + [Overview](overview.md)
 + Configuring Launch{#configure-tags}
