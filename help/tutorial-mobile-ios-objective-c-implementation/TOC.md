@@ -7,8 +7,6 @@ solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2797
 thumbnail: kt-2797.jpg
-index: no
-hide: yes
 ---
 
 # Implement the Experience Cloud in Mobile iOS Objective-C Applications {#implement-in-mobile-ios-objective-c-apps}

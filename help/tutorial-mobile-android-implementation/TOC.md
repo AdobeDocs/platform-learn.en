@@ -6,8 +6,6 @@ solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2798
 thumbnail: kt-2798.jpg
-index: no
-hide: yes
 ---
 
 # Implement the Experience Cloud in Mobile Android™ Applications{#implement-in-mobile-android-apps}
