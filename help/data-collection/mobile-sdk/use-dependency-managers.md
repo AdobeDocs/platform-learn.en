@@ -1,14 +1,14 @@
 ---
-title: Use dependency managers for the Adobe Experience Platform Mobile SDK
+title: Use dependency managers
 description: Learn how to use CocoaPods and Gradle to manage Mobile SDK extensions and dependencies. 
 feature: Mobile SDK
 kt: 
 thumbnail:
 exl-id: 92b8c63a-0ce5-493e-8ebd-2fabfa88d37e
 ---
-# Use dependency managers for the Adobe Experience Platform Mobile SDK
+# Use dependency managers
 
-Learn how to use CocoaPods and Gradle to manage Platform Mobile SDK extensions and dependencies. 
+Learn how to use CocoaPods and Gradle to manage Adobe Experience Platform Mobile SDK extensions and dependencies. 
 
 >[!NOTE]
 >

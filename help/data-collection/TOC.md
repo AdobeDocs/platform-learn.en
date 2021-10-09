@@ -50,5 +50,5 @@ hide: yes
   + Experience Cloud Debugger{#experience-cloud}
     + [Install the Debugger](debugger/experience-cloud/add-the-extension.md)
     + [Use the Debugger](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-    + [Troubleshoot Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html)
-    + [Switch tags environments](https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/configure-tags/launch-switch-environments.html)
+    + [Troubleshoot Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
+    + [Switch tags environments](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}

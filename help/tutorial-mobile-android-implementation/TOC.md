@@ -13,15 +13,15 @@ hide: yes
 # Implement the Experience Cloud in Mobile Android™ Applications{#implement-in-mobile-android-apps}
 
 + [Overview](overview.md)
-+ Configuring Launch{#configure-tags}
-  + [Create a Property](create-a-property.md)
-  + [Add Extensions](add-extensions.md)
-  + [Create a Library](create-a-library.md)
-  + [Install the Mobile SDK](install-the-mobile-sdk.md)
-+ Implementing Solutions{#implement-solutions}
++ Configure tags{#configure-tags}
+  + [Create a property](create-a-property.md)
+  + [Add extensions](add-extensions.md)
+  + [Create a library](create-a-library.md)
+  + [Install the mobile SDK](install-the-mobile-sdk.md)
++ Implement solutions{#implement-solutions}
   + [Add the Identity Service](id-service.md)
   + [Add Adobe Target](target.md)
   + [Add Adobe Analytics](analytics.md)
   + [Add Adobe Audience Manager](audience-manager.md)
-+ Publishing your Property{#publishing}
-  + [Publish your Property](publish.md)
++ Publish your property{#publish}
+  + [Publish your property](publish.md)
