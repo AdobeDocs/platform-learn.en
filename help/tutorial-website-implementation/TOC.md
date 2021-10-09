@@ -5,9 +5,7 @@ user-guide-description: Learn how to implement Adobe Experience Cloud solutions 
 solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2179
-thumbnail: 
-index: no
-hide: yes
+thumbnail:
 ---
 
 # Implement the Experience Cloud in Websites with Tags {#implement-in-websites}

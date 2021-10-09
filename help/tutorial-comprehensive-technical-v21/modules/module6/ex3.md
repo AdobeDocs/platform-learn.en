@@ -5,7 +5,6 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: b86fd37a-8e66-4b7d-b5b8-0138fdcec61b
 ---
 # 6.3 Create your journey
 

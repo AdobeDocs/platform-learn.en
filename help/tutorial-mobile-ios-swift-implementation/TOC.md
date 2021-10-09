@@ -6,8 +6,6 @@ solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2196
 thumbnail: kt-2796.jpg
-index: no
-hide: yes
 ---
 
 # Implement the Experience Cloud in Mobile iOS Swift Applications {#implement-in-mobile-ios-swift-apps}
