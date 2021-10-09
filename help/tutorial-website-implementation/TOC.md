@@ -15,14 +15,14 @@ hide: yes
 + [Overview](overview.md)
 + Configure tags{#configure-tags}
   + [Create a tags property](create-a-property.md)
-  + [Add the Embed Code](add-embed-code.md)
+  + [Add the embed code](add-embed-code.md)
   + [Add a data element, a rule and a library](add-data-elements-rules.md)
-  + [Switch Environments with the Debugger](switch-environments.md)
-+ Implementing Solutions{#implement-solutions}
+  + [Switch environments with the Debugger](switch-environments.md)
++ Implement Solutions{#implement-solutions}
   + [Add the Identity Service](id-service.md)
   + [Add Adobe Target](target.md)
   + [Add Adobe Analytics](analytics.md)
   + [Add Adobe Audience Manager](audience-manager.md)
   + [Experience Cloud Integrations](integrations.md)
-+ Publishing your Property{#publishing}
++ Publish your property{#publish}
   + [Publish your Property](publish.md)
