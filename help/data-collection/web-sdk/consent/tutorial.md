@@ -223,7 +223,7 @@ Select the blue Save button to save the action and the blue Save (or Save to Lib
  
 ### Step 3: Save to Library and Build
  
-If you're using the [working library](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/configure-tags/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) prerequisite, you have already saved these changes and built your development library:
+If you're using the [working library](https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/configure-tags/launch-data-elements-rules.html?lang=en#use-the-working-library-feature) prerequisite, you have already saved these changes and built your development library:
  
 ![](./images/save-library.png)
  

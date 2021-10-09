@@ -1,11 +1,11 @@
 ---
-title: Implementing the Experience Cloud in Mobile iOS Objective-C Applications
-description: Implementing the Experience Cloud in Mobile iOS Objective-C Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Objective-C apps.
+title: Implement the Experience Cloud in Mobile iOS Objective-C Applications
+description: Implement the Experience Cloud in Mobile iOS Objective-C Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Objective-C apps.
 exl-id: 5520cfb7-dd3e-4764-a022-99440b552045
 ---
 # Overview
 
-_Implementing the Experience Cloud in Mobile iOS Objective-C Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Objective-C apps.
+_Implement the Experience Cloud in Mobile iOS Objective-C Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Objective-C apps.
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Objective-C app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Objective-C app!
 
@@ -36,8 +36,8 @@ After completing this tutorial you will be able to:
 >
 >Similar multi-solution tutorials are also available for the following platforms:
 >
->* [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
->* [Implementing the Experience Cloud in Mobile Android&trade; Applications](/help/tutorial-mobile-android-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile Android&trade; Applications](/help/tutorial-mobile-android-implementation/overview.md)
 >* [Implement the Experience Cloud in websites](/help/tutorial-website-implementation/overview.md)
 
 ## Prerequisites

@@ -1,11 +1,11 @@
 ---
-title: Implementing the Experience Cloud in Mobile Android Applications
-description: Implementing the Experience Cloud in Mobile Android Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile Android apps.
+title: Implement the Experience Cloud in Mobile Android Applications
+description: Implement the Experience Cloud in Mobile Android Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile Android apps.
 exl-id: 471e4860-2207-4f4d-a888-6839e754f1e9
 ---
 # Overview
 
-_Implementing the Experience Cloud in Mobile Android&trade; Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their Android apps.
+_Implement the Experience Cloud in Mobile Android&trade; Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their Android apps.
 
 ![Android logo](images/android/Android_Robot.png)
 
@@ -38,8 +38,8 @@ After completing this tutorial you will be able to:
 >
 >Similar multi-solution tutorials are also available for the following platforms:
 >
->* [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
->* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
 >* [Implement the Experience Cloud in websites](/help/tutorial-website-implementation/overview.md)
 
 ## Prerequisites

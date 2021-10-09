@@ -23,7 +23,7 @@ Adobe Experience Platform Data Collection is the next generation of website tag 
 * **[Event forwarding overview (Video)](event-forwarding/overview.md)**
     *Forward data to non-Adobe solutions from Experience Platform Edge Network.*
 
-* **[Implement the Adobe Experience Cloud in websites with tags (Tutorial)](https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html)**
+* **[Implement the Adobe Experience Cloud in websites with tags (Tutorial)](https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/index.html)**
     *A step-by-step tutorial to learn how to implement Experience Cloud applications with Experience Platform Data Collection tags.*
 
 ## Staff Picks
@@ -31,11 +31,11 @@ Adobe Experience Platform Data Collection is the next generation of website tag 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html">
+    <a href="https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/index.html">
       <img alt="Implement in Websites with tags" src="assets/launch_referencearchitectureguides.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-websites-with-launch/index.html">
+      <a href="https://experienceleague.adobe.com/docs/launch-learn/implement-in-websites-with-launch/index.html">
     <strong>Implement in Websites with tags</strong>
     </a>
     </div>
@@ -44,11 +44,11 @@ Adobe Experience Platform Data Collection is the next generation of website tag 
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html">
+    <a href="https://experienceleague.adobe.com/docs/launch-learn/implement-in-mobile-android-apps-with-launch/index.html">
       <img alt="Implement in Android apps with tags" src="assets/thumb_android.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-android-apps-with-launch/index.html">
+      <a href="https://experienceleague.adobe.com/docs/launch-learn/implement-in-mobile-android-apps-with-launch/index.html">
     <strong>Implement in Android&trade; Apps</strong>
     </a>
     </div>
@@ -57,11 +57,11 @@ Adobe Experience Platform Data Collection is the next generation of website tag 
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
+    <a href="https://experienceleague.adobe.com/docs/launch-learn/implement-in-mobile-ios-swift-apps-with-launch/index.html">
       <img alt="Implement in iOS Swift apps with tags" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/launch-learn/implementing-in-mobile-ios-swift-apps-with-launch/index.html">
+      <a href="https://experienceleague.adobe.com/docs/launch-learn/implement-in-mobile-ios-swift-apps-with-launch/index.html">
     <strong>Implement in iOS Swift&trade; Apps</strong>
     </a>
     </div>

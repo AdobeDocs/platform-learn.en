@@ -10,7 +10,7 @@ index: no
 hide: yes
 ---
 
-# Implementing the Experience Cloud in Mobile Android Applications {#implement-in-mobile-android-apps}
+# Implement the Experience Cloud in Mobile Android Applications {#implement-in-mobile-android-apps}
 
 + [Overview](overview.md)
 + Configuring Launch{#configure-tags}

@@ -1,11 +1,11 @@
 ---
-title: Implementing the Experience Cloud in Websites with tags
-description: Implementing the Experience Cloud in Websites with tags is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
+title: Implement the Experience Cloud in Websites with Tags
+description: Implement the Experience Cloud in Websites with Tags is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 ---
 # Overview
 
-_Implementing the Experience Cloud in Websites with tags is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
+_Implement the Experience Cloud in Websites with Tags_ is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through tags on your own website.
 
@@ -39,9 +39,9 @@ After completing this you will be able to:
 >
 >Similar multi-solution tutorials are also available for the following platforms:
 >
->* [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
->* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
->* [Implementing the Experience Cloud in Mobile Android Applications](/help/tutorial-mobile-android-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile Android Applications](/help/tutorial-mobile-android-implementation/overview.md)
 
 ## Prerequisites
 
