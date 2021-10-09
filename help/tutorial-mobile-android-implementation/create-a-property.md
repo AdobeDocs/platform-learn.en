@@ -1,13 +1,13 @@
 ---
-title: Create a tags property for a mobile app
-description: Learn how to log into the Data Collection interface and create a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
+title: Create a tag property for a mobile app
+description: Learn how to log into the Data Collection interface and create a mobile tag property. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
 exl-id: e250b9b9-a6df-47cb-8e09-13124cb19624
 ---
-# Create a tags property
+# Create a tag property
 
-Adobe Experience Platform Data Collection is the next generation of mobile SDK and website tag management capabilities. The tags feature gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for tags. It is available to any Adobe Experience Cloud customer.
+Data Collection is the next generation of mobile SDK and website tag management capabilities. The tags capability gives customers a simple way to deploy and manage all of the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. There is no additional charge for tags. It is available to any Adobe Experience Cloud customer.
 
-In this lesson, you will create a tags property for mobile apps.
+In this lesson, you will create a tag property for mobile apps.
 
 
 >[!NOTE]
@@ -20,15 +20,15 @@ In this lesson, you will create a tags property for mobile apps.
 
 ## Prerequisites
 
-In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in tags. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in tags. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on tag user permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 ## Learning Objectives
 
 At the end of this lesson, you will be able to:
 
 * Log into the Data Collection user interface
-* Create a new mobile tags property
-* Configure a mobile tags property
+* Create a new mobile tag property
+* Configure a mobile tag property
 
 ## Go to Data Collection
 

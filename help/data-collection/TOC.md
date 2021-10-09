@@ -1,12 +1,12 @@
 ---
-user-guide-title: Adobe Experience Platform Data Collection tutorials
+user-guide-title: Data Collection tutorials
 breadcrumb-title: Data Collection Tutorials
 user-guide-description: How-to videos and tutorials to make you a power-user of Data Collection in Experience Platform.
 solution: Experience Platform, Data Collection
 doc-type: video
 ---
 
-# Adobe Experience Platform Data Collection tutorials{#data-collection}
+# Data Collection tutorials{#data-collection}
 
 + [Overview](overview.md)
 + Tags{#tags}
@@ -50,4 +50,4 @@ doc-type: video
     + [Install the Debugger](debugger/experience-cloud/add-the-extension.md)
     + [Use the Debugger](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
     + [Troubleshoot Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
-    + [Switch tags environments](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}
+    + [Switch tag environments](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}

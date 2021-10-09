@@ -31,7 +31,7 @@ At the end of this lesson, you will be able to:
 
 In order to complete this lesson, you will need:
 
-1. To have completed the lessons under the [Configure tags](create-a-property.md) section, namely [Create a tags property](create-a-property.md), [Add Extensions](add-extensions.md), [Create a Library](create-a-library.md), and [Install the Mobile SDK](install-the-mobile-sdk.md).
+1. To have completed the lessons under the [Configure tags](create-a-property.md) section, namely [Create a tag property](create-a-property.md), [Add Extensions](add-extensions.md), [Create a Library](create-a-library.md), and [Install the Mobile SDK](install-the-mobile-sdk.md).
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 
@@ -43,7 +43,7 @@ There are two ways to implement Audience Manager in an app:
 
 * Server-Side Forwarding (SSF)&mdash;for customers with Adobe Analytics, this is the easiest and recommended way to implement. Adobe Analytics forwards data to AAM on Adobe's backend, so that you don't have to make requests from the app directly to Audience Manager. This also enables key integration features and conforms with our best practices for Audience Manager code implementation and deployment.
 
-* Client-Side DIL&mdash;This approach is for customers who do not have Adobe Analytics. Audience Manager methods in the app send data directly into Audience Manager. In this case you would use the Audience Manager extension in tags when you are setting up your mobile tags property.
+* Client-Side DIL&mdash;This approach is for customers who do not have Adobe Analytics. Audience Manager methods in the app send data directly into Audience Manager. In this case you would use the Audience Manager extension in tags when you are setting up your mobile tag property.
 
 When you previously set up the Analytics extension in the [Add Extensions](add-extensions.md) section of this tutorial, you checked the box to initiate server-side forwarding of data from Analytics to Audience Manager. This will dynamically insert the code needed to handle the response of Audience Manager segments back into your app. We will not be adding the Audience Manager extension in this tutorial, because again, this is only for the use case of when you do NOT have Adobe Analytics.
 

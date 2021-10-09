@@ -61,13 +61,13 @@ Since this is the first extension you are adding, here is a quick overview of ex
 
 ### Validate the Extension
 
-The Identity Service extension is one of the few tags extensions that makes a request without having to use a rule action. The extension will automatically make a request to the Identity Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
+The Identity Service extension is one of the few tag extensions that makes a request without having to use a rule action. The extension will automatically make a request to the Identity Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
 
 **To validate the Identity Service extension**
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md).
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md).
 
 1. On the Summary tab of the Debugger, the tags section should indicate that the Adobe Experience Platform Identity Service extension is implemented.
 
@@ -83,7 +83,7 @@ The Identity Service extension is one of the few tags extensions that makes a re
     1. Go to the `Application` tab
     1. Expand `Cookies` on the left side
     1. Click on the domain `https://luma.enablementadobe.com`
-    1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the Luma site using both it's hardcoded tags property as well as mapped to your own.
+    1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the Luma site using both it's hardcoded tag property as well as mapped to your own.
     ![Verify the AMCV_ cookie](images/idservice-AMCVCookie.png)
 
 That's it! You've added your first extension! For more details on the configuration options of the Identity Service, see [the documentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
@@ -222,7 +222,7 @@ To validate your work, you will log into the Luma site to confirm the behavior o
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 

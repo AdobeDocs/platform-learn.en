@@ -44,7 +44,7 @@ These validation steps will focus on the critical part visible in the client-sid
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
@@ -83,7 +83,7 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the tags property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 

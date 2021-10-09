@@ -1,17 +1,17 @@
 ---
-title: Create a tags property
-description: Learn how to log into the Data Collection interface and create a tags property. This lesson is part of the Implement the Experience Cloud in websites tutorial.
+title: Create a tag property
+description: Learn how to log into the Data Collection interface and create a tag property. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 exl-id: f83d374a-a831-4598-b9d3-6f183224b589
 ---
-# Create a tags property
+# Create a tag property
 
-In this lesson, you will create your first tags property.
+In this lesson, you will create your first tag property.
 
 A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your site.
 
 ## Prerequisites
 
-In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in tags. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+In order to complete the next few lessons, you must have permission to Develop, Approve, Publish, Manage Extensions, and Manage Environments in tags. If you are unable to complete any of these steps because the user interface options are not available to you, reach out to your Experience Cloud Administrator to request access. For more information on tag user permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 
 >[!NOTE]
 >
@@ -26,8 +26,8 @@ In order to complete the next few lessons, you must have permission to Develop, 
 At the end of this lesson, you will be able to:
 
 * Log into the Data Collection user interface
-* Create a new tags property
-* Configure a tags property
+* Create a new tag property
+* Configure a tag property
 
 ## Go to the Data Collection interface
 
@@ -54,7 +54,7 @@ A property is basically a container that you fill with extensions, rules, data e
     ![Click New Property](images/launch-addNewProperty.png)
 
 1. Name your property (e.g. `Luma Tutorial` or `Luma Tutorial - Daniel`)
-1. As the domain, enter `enablementadobe.com` since this is the domain where the Luma demo site is hosted. Although the "Domain" field is required, the tags property will work on any domain where it's implemented. The main purpose of this field is to pre-populate menu options in the Rule builder.
+1. As the domain, enter `enablementadobe.com` since this is the domain where the Luma demo site is hosted. Although the "Domain" field is required, the tag property will work on any domain where it's implemented. The main purpose of this field is to pre-populate menu options in the Rule builder.
 1. Expand the **[!UICONTROL Advanced Options]** section and check the box to **[!UICONTROL Run rule components in sequence]**
 1. Click the **[!UICONTROL Save]** button
 

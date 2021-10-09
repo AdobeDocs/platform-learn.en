@@ -1,6 +1,6 @@
 ---
 title: Choose a hosting option
-description: Learn how to choose the best hosting option for your tags library.
+description: Learn how to choose the best hosting option for your tag library.
 feature: Tags
 kt: 3526
 thumbnail:
@@ -8,7 +8,7 @@ exl-id: adc00363-7490-44ab-95e2-46f9f630021c
 ---
 # Choose a hosting option
 
-Learn how to choose the best hosting option for your tags library.
+Learn how to choose the best hosting option for your tag library.
 
 >[!NOTE]
 >
