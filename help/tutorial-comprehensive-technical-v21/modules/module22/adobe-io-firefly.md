@@ -16,7 +16,7 @@ In this module, you'll use Adobe I/O - Project Firefly to build your own real-ti
 Project Firefly is a complete framework that enables enterprise developers to build and deploy custom web applications that extend Adobe Experience Cloud solutions and run on Adobe infrastructure. It leverages modern technologies (JAM stack, serverless computing, Node, and React) and ensures best practices when building applications (event-driven architecture, micro-services, continuous integration, and delivery).
 You can read a lot more details on what Project Firefly is [here](https://www.adobe.io/apis/experienceplatform/project-firefly/docs.html#!AdobeDocs/project-firefly/master/overview/what_is.md). 
 
-In this tutorial you'll learn how to build your first Project Firefly application. You'll closely follow the official Project Firefly documentation, and you'll ensure your setup is specific to our Adobe Experience Platform instance.
+In this tutorial, you'll learn how to build your first Project Firefly application. You'll closely follow the official Project Firefly documentation, and you'll ensure your setup is specific to our Adobe Experience Platform instance.
 
 You'll then use code developed for the purpose of this tutorial to demonstrate a Project Firefly app that provides a real-time content consumption dashboard for EXP News, a fictitious media company.
 

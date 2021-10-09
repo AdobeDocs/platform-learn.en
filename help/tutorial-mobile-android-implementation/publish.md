@@ -1,6 +1,6 @@
 ---
 title: Publish your tags property
-description: Learn how to publish your tags property from the Development environment to the Staging and Production environments. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
+description: Learn how to publish your tags property from the Development environment to the Staging and Production environments. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
 exl-id: 0a28c58f-beff-4ce6-9785-5a8d7d38cc1a
 ---
 # Publish your tags property
@@ -90,7 +90,7 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
    ![Published](images/mobile-publishing-published.png)
 
-Again, notice that the Production environment uses a tags reference in the Core Configuration, as highlighted in the screenshot below.  If you use a different project for your Production app, you would need to make sure that this project has all of the app updates that you made throughout this tutorial.
+Again, notice that the Production environment uses a tags reference in the Core Configuration, as highlighted in the screenshot below. If you use a different project for your Production app, you would need to make sure that this project has all of the app updates that you made throughout this tutorial.
   
   ![Go to the Environments page and click to open the modal](images/android/mobile-publishing-getProductionCode.png)
 

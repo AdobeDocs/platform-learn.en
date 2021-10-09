@@ -89,7 +89,7 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
    ![Published](images/mobile-publishing-published.png)
 
-Again, notice that the Production environment uses a tags reference in the Core Configuration, as highlighted in the screenshot below.  If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial.
+Again, notice that the Production environment uses a tags reference in the Core Configuration, as highlighted in the screenshot below. If you use a different workspace for your Staging app, you would need to make sure that this workspace has all of the Pods and app updates that you made throughout this tutorial.
    ![Go to the Environments page and click to open the modal](images/ios/swift/mobile-publishing-getProductionCode.png)
 
 >[!WARNING]

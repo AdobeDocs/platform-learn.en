@@ -1,5 +1,5 @@
 ---
-title: Create a tags property for Mobile Apps
+title: Create a tags property for a mobile app
 description: Learn how to log into the Data Collection interface and create a mobile tags property. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
 exl-id: 658f3c4c-c5e6-4aef-8511-833b7a813d77
 ---
@@ -50,7 +50,7 @@ You should now see the `Tags Properties` screen (if no properties have ever been
 
 ## Create a Property
 
-A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app. A single mobile property can be used across multiple app platforms (e.g. iOS and Android) provided the apps contain similar functionality and require the same solutions to be implemented.  For more information on creating properties, see ["Set up a mobile property"](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property) in the product documentation.
+A property is basically a container that you fill with extensions, rules, data elements, and libraries as you deploy tags to your app. A single mobile property can be used across multiple app platforms (e.g. iOS and Android™) provided the apps contain similar functionality and require the same solutions to be implemented. For more information on creating properties, see ["Set up a mobile property"](https://aep-sdks.gitbook.io/docs/getting-started/create-a-mobile-property) in the product documentation.
 
 **To Create a Property**
 

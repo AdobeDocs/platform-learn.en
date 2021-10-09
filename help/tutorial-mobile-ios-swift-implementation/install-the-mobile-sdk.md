@@ -1,9 +1,9 @@
 ---
-title: Install the Adobe Mobile SDK in a Mobile iOS Swift app
+title: Install the Adobe Experience Platform Mobile SDK in a Mobile iOS Swift app
 description: Learn how to get your tags property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
 exl-id: 90bdd606-5e50-4b02-a57c-aa080f7b3f67
 ---
-# Install the Mobile SDK
+# Install the Adobe Experience Platform Mobile SDK
 
 In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your tags property's Development environment.
 
@@ -172,7 +172,7 @@ Here are examples of some specific calls you can look for:
     {"target.propertyToken":"","target.timeout":5,"global.privacy":"optedin","analytics.backdatePreviousSessionInfo":true,"analytics.offlineEnabled":true,"build.environment":"dev","rules.url":"https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip","target.clientCode":"techmarketingdemos","experienceCloud.org":"7ABB3E6A5A7491460A495D61@AdobeOrg","target.autoFetch":true,"target.fetchBackground":true,"lifecycle.sessionTimeout":300,"target.environmentId":"busbookingapp","analytics.server":"tmd.sc.omtrdc.net","analytics.rsids":"tmd-mobile-dev1","analytics.batchLimit":0,"property.id":"PRb4881271498b4f2cbaf67d38a8f3891a","global.ssl":true,"analytics.aamForwardingEnabled":true}
     ```
 
-1. **Request to the Identity Service** (filter your console to `demdex.net`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
+1. **Request to the Identity Service** (filter your console to `demdex.net`) In this example, the ID (`d_mid`) has already been set and is just being reported up again)
 
     ```swift
     2019-01-15 12:11:45.164590-0500 BusDemoSwift[52399:5056322] [AMSDK DEBUG <com.adobe.module.identity>]:

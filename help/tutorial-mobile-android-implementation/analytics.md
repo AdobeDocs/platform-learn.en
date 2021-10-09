@@ -1,6 +1,6 @@
 ---
-title: Implement Adobe Analytics with tags
-description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in Mobile Android Applications tutorial.
+title: Add Adobe Analytics
+description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
 solution: Experience Platform, Data Collection, Analytics
 exl-id: a89aea7d-bf69-424b-bb6c-e22200e9686c
 ---
@@ -8,9 +8,9 @@ exl-id: a89aea7d-bf69-424b-bb6c-e22200e9686c
 
 In this lesson, you will enable Adobe Analytics tracking in your app.
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
-In the [Add Extensions](add-extensions.md) and [Install the Mobile SDK](install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your tags property and imported it into the sample application.  Now all you have to do is add code to track the states and actions in your app!
+In the [Add Extensions](add-extensions.md) and [Install the Mobile SDK](install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your tags property and imported it into the sample application. Now all you have to do is add code to track the states and actions in your app!
 
 
 >[!NOTE]
@@ -43,13 +43,13 @@ You already enabled Lifecycle metrics when you added the Core extension to your 
 
 ## Importing the ACPCore Library
 
-In the earlier lesson called ["Install the Mobile SDK"](install-the-mobile-sdk.md), you added an import statement to make the AdobeCore library available in the BusBookingActivity file. This same library will be used for additional API calls in the activities in this lesson. In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app, which are defined in the AdobeCore library.  In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to leverage these APIs for purposes other than just Adobe Analytics tracking.
+In the earlier lesson called ["Install the Mobile SDK"](install-the-mobile-sdk.md), you added an import statement to make the AdobeCore library available in the BusBookingActivity file. This same library will be used for additional API calls in the activities in this lesson. In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app, which are defined in the AdobeCore library. In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to use these APIs for purposes other than just Adobe Analytics tracking.
 
 ## Track States
 
 In your app, you may have many different screens of content that you are providing for your users. These are the equivalent of pages on a website. Adobe Analytics provides a method for you to send in these "page view hits" and view them in the same reports that you are used to for your web properties. This method is called "trackState."
 
-In this tutorial you will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app.
+In this tutorial, you will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app.
 
 Below are syntax and a code example from the documentation you can copy-and-paste in this tutorial or in your own app.
 
@@ -69,7 +69,7 @@ MobileCore.trackState("state name",contextData);
 
 ### Track a State without Data
 
-1. With the sample app open in Android Studio, go to BusBookingActivity, and scroll down near the bottom to the onResume function
+1. With the sample app open in Android™ Studio, go to BusBookingActivity, and scroll down near the bottom to the onResume function
 1. Add a trackState method call
 1. Set the `state name` to "Booking Screen"
 1. Instead of adding any extra data, add `null` as a placeholder in the API call
@@ -84,7 +84,7 @@ MobileCore.trackState("state name",contextData);
 **To validate the trackState**
 
 1. Save, build and run the project
-1. When the simulator runs and opens the home screen of the app, view the Android Studio Logcat debugging console
+1. When the simulator runs and opens the home screen of the app, view the Android™ Studio Logcat debugging console
 1. Search the console for `pageName=Booking%20Screen`
 1. Note that pageName variable is set to `Booking Screen` (with the %20 as an encoded space), and there are no other custom data pairs. Although technically you are setting a "state name" and not a "page name," the parameter name used is `pageName` in order to provide consistency with website implementations.
 
@@ -111,7 +111,7 @@ MobileCore.trackState("state name",contextData);
 **To validate the trackState with data**
 
 1. Save, build and run the project again
-1. When the simulator runs and opens the home screen of the app, view the Android Studio Logcat debugging console
+1. When the simulator runs and opens the home screen of the app, view the Android™ Studio Logcat debugging console
 1. Search for `subSection` (or any of the keys or values that you entered into the code)
 1. Now see that in addition to the pageName being set, you also have the key/value pairs that were sent in on the hit
 
@@ -123,7 +123,7 @@ MobileCore.trackState("state name",contextData);
 
 ## Track Actions
 
-Similar to tracking non-page-load actions on a website, you often want to track an action that a user takes in your app, E.g. clicks on things that don't load another screen. This is handled very similarly to the trackState you used above, except that this method is called `trackAction`.
+Similar to tracking non-page-load actions on a website, you often want to track an action that a user takes in your app, E.g. clicks on things that don't load another screen. This is handled similarly to the trackState you used above, except that this method is called `trackAction`.
 
 Below are syntax and a code example from the documentation.
 
@@ -143,7 +143,7 @@ MobileCore.trackAction("action taken", contextData);
 
 ### Track Interaction with the Destination Switcher
 
-In this sample bus booking app, you can switch the origin city with the destination city by clicking on the arrow between these two values. You've decided that you want to track the interaction with this feature in Adobe Analytics.
+In this sample bus booking app, you can switch the origin city with the destination city by clicking the arrow between these two values. You've decided that you want to track the interaction with this feature in Adobe Analytics.
 
 ![Destination Switcher](images/android/mobile-analytics-destinationSwitcher.png)
 
@@ -151,7 +151,7 @@ This switcher is controlled in the BusBookingActivity file in the sample project
 
 #### To add the trackAction code
 
-1. With the sample project open in Android Studio, go to BusBookingActivity
+1. With the sample project open in Android™ Studio, go to BusBookingActivity
 1. Locate the "mBtnFlip.setOnClickListener" function, on or around line 57
 1. Expand the function if needed, so that you can see all of the code
 1. In the onClick function, under the call to `flipSourceDesti()`, add a `trackAction()` call
@@ -177,11 +177,11 @@ The function now looks like this:
 
     <!--![trackAction Result in Debugger](images/android/mobile-analytics-trackActionResult1.png)-->
 
-Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
+Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills to tackle the rest of your needs.
 
 ## Additional Benefits of trackState and trackAction
 
-In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in tags, there are many more things that you can do in the Data Collection interface leveraging the code you just added.
+In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in tags, there are many more things that you can do in the Data Collection interface using the code you just added.
 
 In tags, you are able to create Rules triggered by the trackState and trackAction APIs, and have them execute additional actions, such as making requests to other Adobe solutions or external partners.
 

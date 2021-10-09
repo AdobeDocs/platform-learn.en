@@ -8,7 +8,7 @@ exl-id: c4115da3-d779-4fe8-90e5-32581fb968cb
 ---
 # Add and configure tags extensions
 
-Learn how to add and configure extensions in your tags property. Extensions are pre-packaged "apps" you install on your site to give you the tracking, personalization or other capabilities you need. The extension marketplace is always growing, as Adobe, partners, and customers create new extensions to power use cases.
+Learn how to add and configure extensions in your tags property. Extensions are pre-packaged "apps" you install on your site to give you the tracking, personalization, or other capabilities you need. The extension marketplace is always growing, as Adobe, partners, and customers create extensions to power use cases.
 
 >[!NOTE]
 >

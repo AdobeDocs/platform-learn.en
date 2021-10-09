@@ -1,5 +1,5 @@
 ---
-title: Implement Adobe Analytics with tags
+title: Add Adobe Analytics
 description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send the page view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 solution: Experience Platform, Data Collection, Analytics
 exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
@@ -8,7 +8,7 @@ exl-id: dababaf2-ff8f-4178-8eaf-04a707b4ab05
 
 In this lesson, you will implement the [Adobe Analytics extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/analytics/overview.html) and create rules to send data to Adobe Analytics.
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
 >[!NOTE]
 >
@@ -81,7 +81,7 @@ The Analytics extension consists of two main parts:
 
 Now you will create a rule to fire the Analytics beacon, which will send the [!UICONTROL Page Name] variable set in the extension configuration.
 
-You have already created an "All Pages - Library Loaded" rule in the [Add a Data Element, a Rule and a Library](add-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the tags library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the tags embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
+You have already created an "All Pages - Library Loaded" rule in the [Add a data element, a rule and a library](add-data-elements-rules.md) lesson of this tutorial, which is triggered on every page when the tags library loads. You *could* use this rule for Analytics as well, however this setup requires all data layer attributes used in the Analytics beacon to be defined before the tags embed codes. To allow more flexibility with the data collection, you will create a new "all pages" rule triggered on DOM Ready to fire the Analytics beacon.
 
 **To Send the Page View Beacon**
 
@@ -494,6 +494,6 @@ Now you can make sure that the plug-ins are working.
    >
    >There are actually a few different ways to grab a parameter out of the query string of the URL, including in the Analytics extension configuration. However, in these other non-plug-in options, they don't provide the ability to stop unnecessary duplication, as you have done here with the getValOnce plug-in. This is the author's favorite method, but you should determine which method works best for you and your needs.
 
-Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
+Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills to tackle the rest of your needs.
 
 [Next "Add Adobe Audience Manager" >](audience-manager.md)

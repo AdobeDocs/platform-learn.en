@@ -1,17 +1,17 @@
 ---
-title: Implementing the Experience Cloud in Mobile iOS Swift Applications
-description: Implementing the Experience Cloud in Mobile iOS Swift Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Swift apps.
+title: Implement the Experience Cloud in Mobile iOS Swift Applications
+description: Implement the Experience Cloud in Mobile iOS Swift Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Swift apps.
 exl-id: aa1a5d0a-abf2-47b5-a966-a9d96d096d61
 ---
 # Overview
 
-_Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Swift apps.
+_Implement the Experience Cloud in Mobile iOS Swift&trade; Applications_ is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their iOS Swift apps.
 
 ![Swift logo](images/ios/swift/Swift_logo_horz_lockup_color_rgb.png)
 
-Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Swift app!
+Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value. A demo Swift app is provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your Experience Cloud solutions in your own iOS Swift app!
 
-After completing this tutorial you will be able to:
+After completing this tutorial, you will be able to:
 
 * Create a mobile tags property
 
@@ -37,8 +37,8 @@ After completing this tutorial you will be able to:
 >
 >Similar multi-solution tutorials are also available for the following platforms:
 >
->* [Implementing the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
->* [Implementing the Experience Cloud in Mobile Android&trade; Applications](/help/tutorial-mobile-android-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
+>* [Implement the Experience Cloud in Mobile Android&trade; Applications](/help/tutorial-mobile-android-implementation/overview.md)
 >* [Implement the Experience Cloud in websites](/help/tutorial-website-implementation/overview.md)
 
 ## Prerequisites

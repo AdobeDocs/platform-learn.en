@@ -1,6 +1,6 @@
 ---
 title: Create an event forwarding rule
-description: Learn how to create a event forwarding rule.
+description: Learn how to create an event forwarding rule.
 feature: Event Forwarding
 feature: Tags
 kt: 6423
@@ -9,7 +9,7 @@ exl-id: 35c76ce1-c7c0-47cc-bed8-86ab7656c824
 ---
 # Create an event forwarding rule
 
-Learn how to create a event forwarding rule in Adobe Experience Platform Data Collection.
+Learn how to create an event forwarding rule in Adobe Experience Platform Data Collection.
 
 >[!NOTE]
 >

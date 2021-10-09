@@ -1,5 +1,5 @@
 ---
-title: Implement Adobe Analytics with tags
+title: Add Adobe Analytics
 description: Learn how to implement Adobe Analytics using the Adobe Analytics tags extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 solution: Experience Platform, Data Collection, Analytics
 exl-id: a92cf494-50ca-4d6a-ba66-161267c9b4b0
@@ -8,9 +8,9 @@ exl-id: a92cf494-50ca-4d6a-ba66-161267c9b4b0
 
 In this lesson, you will enable Adobe Analytics tracking in your app.
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics/landing/home.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
+[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) is an industry-leading solution that empowers you to understand your customers as people and steer your business with customer intelligence.
 
-In the [Add Extensions](add-extensions.md) and [Install the Mobile SDK](install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your tags property and imported it into the sample application.  Now all you have to do is add code to track the states and actions in your app!
+In the [Add Extensions](add-extensions.md) and [Install the Mobile SDK](install-the-mobile-sdk.md) lessons, you added the Adobe Analytics extension to your tags property and imported it into the sample application. Now all you have to do is add code to track the states and actions in your app!
 
 
 >[!NOTE]
@@ -54,7 +54,7 @@ Although you can see the Lifecycle hits in any debugging program/packet sniffer,
 
 ## Import the ACPCore Library
 
-In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app. In order to use these APIs, you need to import the library which contains them.  In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to leverage these APIs for purposes other than just Adobe Analytics tracking.  
+In the next exercises, you will use APIs to track states ("trackState") and actions ("trackAction") in your app. In order to use these APIs, you need to import the library which contains them.  In the new Experience Cloud Platform Mobile SDK, the trackState and trackAction APIs have been moved from the Analytics library to the Core library, making it possible to use these APIs for purposes other than just Adobe Analytics tracking.  
 
 In this tutorial, you will only track one state, however in your actual app, you will want to track multiple states.
 
@@ -71,7 +71,7 @@ In this tutorial, you will only track one state, however in your actual app, you
 
 In your app, you may have many different screens of content that you are providing for your users. These are the equivalent of pages on a website. Adobe Analytics provides a method for you to send in these "page view hits" and view them in the same reports that you are used to for your web properties. This method is called "trackState."
 
-In this tutorial you will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app. You will also explore a few different ways of sending data (key/value pairs) with the hit.
+In this tutorial, you will place the code for a trackState call into only one screen (page) in your app. In real life, you will replicate this on all of the other screens/states in your app. You will also explore a few different ways of sending data (key/value pairs) with the hit.
 
 Below is syntax and a code example from the documentation you can copy-and-paste in this tutorial or in your own app.
 
@@ -220,11 +220,11 @@ The function now looks like this:
 
     ![trackAction Result in Debugger](images/ios/objective-c/mobile-analytics-trackActionResult1.png)
 
-Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills you will need to tackle the rest of your needs.
+Nice work! You have completed the Analytics lesson. Of course, there are many other things that you can do to enhance our Analytics implementation, but hopefully this has given you some of the core skills to tackle the rest of your needs.
 
 ## Additional Benefits of trackState and trackAction
 
-In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in tags, there are many more things that you can do in the Data Collection interface leveraging the code you just added.
+In these last exercises, you were able to send data from the app into Adobe Analytics by using the trackState and trackAction APIs. Because the Experience Platform Mobile SDK is rooted in tags, there are many more things that you can do in the Data Collection interface using the code you just added.
 
 In tags, you are able to create Rules triggered by the trackState and trackAction APIs, and have them execute additional actions, such as making requests to other Adobe solutions or external partners.
 
