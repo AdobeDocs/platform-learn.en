@@ -1,5 +1,5 @@
 ---
-title: Use environments
+title: Use tag environments (formerly Launch environments)
 description: Learn how to use development, staging, and production environments to develop and validate your tag property.
 feature: Tags
 kt: 3527

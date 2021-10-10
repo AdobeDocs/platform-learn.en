@@ -1,5 +1,5 @@
 ---
-title: Choose a hosting option
+title: Choose a hosting option for your tag library (formerly Launch library)
 description: Learn how to choose the best hosting option for your tag library.
 feature: Tags
 kt: 3526

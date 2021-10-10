@@ -1,5 +1,5 @@
 ---
-title: Build and publish a tag library
+title: Build and publish a tag library (formerly Launch library)
 description: Learn how to create a library in your tag property and push changes through your development, staging, and production environments.
 feature: Tags
 kt: 3531
