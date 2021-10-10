@@ -1,6 +1,5 @@
 ---
-title: Create Data Elements
-seo-title: Create Data Elements
+title: Create tag data elements (formerly Launch data elements)
 description: Learn how to create data elements to store values pulled from your data layer and make them available to rules and extensions in your tag property.
 feature: Tags
 kt: 3529

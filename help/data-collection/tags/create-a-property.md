@@ -1,5 +1,5 @@
 ---
-title: Tags overview and create a property
+title: Tags overview and create a property (formerly Launch)
 description: Get a quick overview of tags in Data Collection and learn how to create properties to house the code for your site.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/launch-web/launch-overview-and-creating-properties.html
 feature: Tags

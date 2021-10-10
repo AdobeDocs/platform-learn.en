@@ -1,5 +1,5 @@
 ---
-title: Users and permissions
+title: Users and permissions (formerly Launch permissions)
 description: Learn how to use the Adobe Admin Console to control permissions in tags so employees at your company have the access they need to do their jobs.
 role: Admin
 feature: Tags

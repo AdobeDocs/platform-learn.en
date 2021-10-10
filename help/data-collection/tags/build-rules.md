@@ -1,5 +1,5 @@
 ---
-title: Build tag rules
+title: Build tag rules (formerly Launch rules)
 description: Learn how to create rules so you can execute commands in tags. Events and conditions determine *when* to do stuff while actions determine *what* to do.
 feature: Tags
 kt: 3530

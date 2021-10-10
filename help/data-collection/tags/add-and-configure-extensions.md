@@ -1,5 +1,5 @@
 ---
-title: Add and configure tag extensions
+title: Add and configure tag extensions (formerly Launch extensions)
 description: Learn how to add and configure extensions in your tag property.
 feature: Tags
 kt: 3528
