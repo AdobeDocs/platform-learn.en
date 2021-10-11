@@ -80,15 +80,11 @@ In Adobe Experience Platform, click on **[!UICONTROL Datasets]** in the menu on 
 
 ![Data Ingestion](./images/menudatasetssb.png)
 
-You're going to use a shared dataset based in this enablement. The shared dataset has been created already and is called **[!UICONTROL Demo System - Profile Dataset for CRM]**. 
-
->[!NOTE]
->
-> Depending on the Adobe Experience Platform template that was installed in your environment, the dataset may also be named **[!UICONTROL AEP Demo - CRM Onboarding]**. If that is the case, please proceed by using the dataset **[!UICONTROL AEP Demo - CRM Onboarding]**.
+You're going to use a shared dataset based in this enablement. The shared dataset has been created already and is called **[!UICONTROL Demo System - Profile Dataset for CRM (Global v1.1)]**. 
 
 ![Data Ingestion](./images/emeacrm.png)
 
-Open the dataset **[!UICONTROL Demo System - Profile Dataset for CRM]**.
+Open the dataset **[!UICONTROL Demo System - Profile Dataset for CRM (Global v1.1)]**.
 
 ![Data Ingestion](./images/emeacrmoverview.png)
 
@@ -100,7 +96,7 @@ First of all, the [!UICONTROL Dataset Activity] dashboard shows the total number
 
 ![Data Ingestion](./images/batchids.png)
 
-Second, by scrolling down on the page you can check when batches of data were ingested, how many records were onboarded and also, whether or not the batch was successfully onboarded. The **[!UICONTROL Batch ID]** is the identifier for a specific batch job, and the **[!UICONTROL Batch ID]** is important as it can be used for troubleshooting why a specific batch was not successfully onboarded. More on that in Enablement Module 2.
+Second, by scrolling down on the page you can check when batches of data were ingested, how many records were onboarded and also, whether or not the batch was successfully onboarded. The **[!UICONTROL Batch ID]** is the identifier for a specific batch job, and the **[!UICONTROL Batch ID]** is important as it can be used for troubleshooting why a specific batch was not successfully onboarded. 
 
 ![Data Ingestion](./images/datasetsettings.png)
 
@@ -110,11 +106,7 @@ Lastly, the [!UICONTROL Dataset Info] tab shows important information like the [
 
 The most important setting here is the link between the dataset and the Schema. The Schema defines what data can be ingested and how that data should look like. 
 
-In this case, we're using the **[!UICONTROL Demo System - Profile Schema for CRM]**, which is mapped against the class of **[!UICONTROL Profile]** and has implemented extensions, also called field groups. 
-
->[!NOTE]
->
-> Depending on the Adobe Experience Platform template that was installed in your environment, the dataset may also be named **[!UICONTROL AEP Demo - CRM Onboarding Schema]**. If that is the case, please proceed by using the dataset **[!UICONTROL AEP Demo - CRM Onboarding Schema]**.
+In this case, we're using the **[!UICONTROL Demo System - Profile Schema for CRM (Global v1.1)]**, which is mapped against the class of **[!UICONTROL Profile]** and has implemented extensions, also called field groups. 
 
 ![Data Ingestion](./images/ds_schemalink.png)
 
@@ -122,11 +114,11 @@ By clicking on the name of the schema, you're taken to the [!UICONTROL Schema] o
 
 ![Data Ingestion](./images/schemads.png)
 
-Every schema needs to have a custom, primary descriptor defined. In the case of our CRM dataset, the schema has defined that the field **[!UICONTROL email]** should be the primary identifier. If you want to create a schema and link it to the [!UICONTROL Real-time Customer Profile], you need to define a custom [!UICONTROL Field Group] that refers to your primary descriptor.
+Every schema needs to have a custom, primary descriptor defined. In the case of our CRM dataset, the schema has defined that the field **[!UICONTROL crmId]** should be the primary identifier. If you want to create a schema and link it to the [!UICONTROL Real-time Customer Profile], you need to define a custom [!UICONTROL Field Group] that refers to your primary descriptor.
 
 ![Data Ingestion](./images/schema_descriptor.png)
 
-In the above screenshot, you can see that our descriptor is located in `--aepTenantId--.identification.emailId`, which is set as the [!UICONTROL Primary Identifier], linked to the [!UICONTROL namespace] of **[!UICONTROL email]**.
+In the above screenshot, you can see that our descriptor is located in `--aepTenantId--.identification.core.crmId`, which is set as the [!UICONTROL Primary Identifier], linked to the [!UICONTROL namespace] of **[!UICONTROL Demo System - CRMID]**.
 
 Every schema and as such, every dataset that should be used in the [!UICONTROL Real-time Customer Profile] should have one [!UICONTROL Primary identifier]. This [!UICONTROL Primary Identifier] is the identifier user by the brand for a customer in that dataset. In the case of a CRM dataset it might be the email-address or the CRM ID, in the case of a Call Center dataset it might be the mobile number of a customer.
 
@@ -148,11 +140,7 @@ Click **[!UICONTROL Launch]** to start the process.
 
 ![Data Ingestion](./images/launchprocess.png)
 
-On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select **[!UICONTROL Demo System - Profile Dataset for CRM]** as indicated below.
-
->[!NOTE]
->
-> Depending on the Adobe Experience Platform template that was installed in your environment, the dataset may also be named **[!UICONTROL AEP Demo - CRM Onboarding]**. If that is the case, please proceed by using the dataset **[!UICONTROL AEP Demo - CRM Onboarding]**.
+On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select **[!UICONTROL Demo System - Profile Dataset for CRM (Global v1.1)]** as indicated below and leave the other settings set to default.
 
 ![Data Ingestion](./images/datasetselection.png)
 
@@ -278,15 +266,15 @@ Click the **[!UICONTROL Finish]** button to finish the workflow.
 
 ![Data Ingestion](./images/finish.png)
 
-After clicking **[!UICONTROL Finish]**, you're taken to your dataset where your ingestion is being processed.
+After clicking **[!UICONTROL Finish]**, you'll then see the **Dataflow** overview, and after a couple of minutes you can refresh your screen to see if your workflow completed successfully. Click your **Target dataset name**. 
+
+![Data Ingestion](./images/dfsuccess.png)
+
+You'll then see the dataset where your ingestion has processed.
 
 ![Data Ingestion](./images/ingestdataset.png)
 
-On the dataset, you'll see a [!UICONTROL Batch ID] that is being ingested just now, with 1000 records ingested and a status of **[!UICONTROL Processing]**.
-
-![Data Ingestion](./images/batchsuccess.png)
-
-Wait until the status changes into **[!UICONTROL Success]**.
+On the dataset, you'll see a [!UICONTROL Batch ID] that has been ingested just now, with 1000 records ingested and a status of **[!UICONTROL Success]**.
 
 ![Data Ingestion](./images/batchsuccess1.png)
 
@@ -299,10 +287,6 @@ Click on the **[!UICONTROL Preview Dataset]**- button to get a quick view of a s
 Once data is loaded, you can define the correct data governance approach for our dataset.
    
 ### 2.5.4 Adding data governance to your dataset 
-
->[!NOTE]
->
-> Depending on the Adobe Experience Platform template that was installed in your environment, the dataset to use may also be named **[!UICONTROL AEP Demo - CRM Onboarding]**. If that is the case, please proceed by using the dataset **[!UICONTROL AEP Demo - CRM Onboarding]**.
 
 Now that your customer data is ingested, you need to make sure that this dataset is properly governed for usage and export control. Click on the **[!UICONTROL Data Governance]** tab and observe that you can set three types of restrictions: Contractual, Identity, and Sensitive Data.
 
