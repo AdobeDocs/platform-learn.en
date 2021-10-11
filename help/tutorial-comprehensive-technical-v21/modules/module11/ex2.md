@@ -27,7 +27,7 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In the left menu, go to **Destinations**. You'll then see the **Destinations** homepage.
+In the left menu, go to **Destinations**, then go to **Catalog**. You'll then see the **Destinations Catalog**.
 
 ![RTCDP](./images/rtcdp.png)
 
@@ -35,21 +35,13 @@ In **Destinations**, click on **Google Display & Video 360** and then click **+ 
 
 ![RTCDP](./images/rtcdpgoogle.png)
 
-You'll then see this:
+You'll then see this. Click the data icon.
 
 ![RTCDP](./images/rtcdpgooglecreate1.png)
 
-Click **Connect to destination**.
+Click **Configure new destination**.
 
 ![RTCDP](./images/rtcdpgooglecreate2.png)
-
-You'll then see a visual confirmation.
-
-![RTCDP](./images/rtcdpgooglecreate3.png)
-
-Click **Next**.
-
-![RTCDP](./images/next.png)
 
 In the next screen, you'll see the Self-Service UI to configure your destination to Google DV360.
 
@@ -63,44 +55,19 @@ The field **Account ID** is the **Advertiser ID** of the DV360 Account. You can 
 
 The **Account Type** should be set to **Invite Advertiser**.
 
-Now you have something like this:
+Now you have this. Click **Next**.
 
 ![RTCDP](./images/rtcdpgoogldv360new.png)
 
-FYI - If you have configured DV360/DBM integrations in the past for Adobe Audience Manager projects, it was also required to contact Google for this setup and request Google to **allow-list** Adobe to send segments to DV360/DBM. This step is still required and as such, Google needs to allow-list Adobe in order for Adobe Experience Platform to speak with Google DV360.
+>[!NOTE]
+>
+>Google needs to allow-list Adobe in order for Adobe Experience Platform to send data to Google DV360. Contact your Google Account Manager to enable this dataflow.
 
-Click **Create** to create your destination.
-
-![RTCDP](./images/rtcdpcreatedest.png)
-
-After creating the destination, you'll see this:
+After creating the destination, you'll see this. You can optionally select a data governance policy. Next, click **Create**.
 
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
-Click **Next**.
-
-![RTCDP](./images/next.png)
-
-You can then select segments to be sent to this destination:
-
-![RTCDP](./images/rtcdpselseg.png)
-
-Click **Next**.
-
-![RTCDP](./images/next.png)
-
-On the **Segment Schedule** page, click **Next**.
-
-![RTCDP](./images/rtcdpselseg1.png)
-
-![RTCDP](./images/next.png)
-
-Finally, on the **Review** page, click **Finish**.
-
-![RTCDP](./images/rtcdpselseg2.png)
-
-![RTCDP](./images/finish.png)
-
+You'll then see a list of available destinations. 
 In the next exercise, you'll connect the segment you built in the previous to the Google DV360 destination.
 
 Next Step: [11.3 Take Action: send your segment to DV360](./ex3.md)
