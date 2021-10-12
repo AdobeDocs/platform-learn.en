@@ -1,6 +1,6 @@
 ---
 title: Query Service overview
-description: In this video, you will learn about Query Service in Adobe Experience Platform and how it helps to understand customer behavior and generate impactful insights. 
+description: Learn how Query Service in Adobe Experience Platform can help you Understand customer behavior and generate impactful insights. 
 role: Data Engineer, User
 feature: Queries
 kt: 3139
@@ -9,7 +9,7 @@ exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
 ---
 # Query Service overview
 
-In this video, you will learn about Query Service in Adobe Experience Platform and how it helps to understand customer behavior and generate impactful insights. 
+Learn how Query Service in Adobe Experience Platform can help you Understand customer behavior and generate impactful insights. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
 
