@@ -21,7 +21,7 @@ doc-type: video
   + [Using the Platform user interface](/help/platform/intro-to-platform/interface-tour.md)
   + [Roles and project phases](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
-+ [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
++ [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
   + [Use alerts](/help/platform/admin/use-alerts.md)
@@ -48,9 +48,9 @@ doc-type: video
   + [Streaming multiple messages](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
   + [Dataflow monitoring](/help/platform/data-ingestion/data-monitoring.md)
   + [Monitoring dashboard](/help/platform/data-ingestion/monitoring-dashboard.md)
-  + [Web SDK tutorials](https://experienceleague.adobe.com/docs/web-sdk-learn/tutorials/overview.html)
-  + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/mobile-sdk-learn/tutorials/overview.html)
-  + [Debugger tutorials](https://experienceleague.adobe.com/docs/debugger-learn/tutorials/overview.html)
+  + [Web SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
+  + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+  + [Debugger tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
   + [Overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
   + [Architecture](data-science-workspace/architecture-overview.md)
@@ -123,7 +123,7 @@ doc-type: video
   + [Configure relationships between schemas](/help/platform/schemas/configure-relationships-between-schemas.md)
   + [Copy schemas between sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
   + [Update schemas](/help/platform/schemas/update-schemas.md)
-  + [Create an ad hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html)
+  + [Create an ad hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Segments {#segments}
   + [Segment Builder Overview](/help/platform/segments/segment-builder-overview.md)
   + [Create segments](/help/platform/segments/create-segments.md)
@@ -147,9 +147,9 @@ doc-type: video
   + [Stream data with HTTP API](/help/platform/sources/streaming-ingestion-http-api.md)
   + [Stream data using Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
 + Application Services {#application-services}
-  + [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html)
-  + [Journey Orchestration tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html)
-  + [Offer Decisioning tutorials](https://experienceleague.adobe.com/docs/offer-decisioning-learn/tutorials/overview.html)
+  + [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
+  + [Journey Orchestration tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
+  + [Offer Decisioning tutorials](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target="_blank"}
   + Real-time CDP tutorials{#rtcdp}
     + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
     + [End-to-end demo](/help/platform/rtcdp/demo.md)

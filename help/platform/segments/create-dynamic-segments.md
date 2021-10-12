@@ -1,5 +1,5 @@
 ---
-title: Create Dynamic Segments in Adobe Experience Platform
+title: Create Dynamic Segments
 description: Dynamic segments are an advanced segmentation feature in Adobe Experience Platform which solves the scalability problems marketers traditionally face when building segments for marketing campaigns.
 role: User
 feature: Segments
