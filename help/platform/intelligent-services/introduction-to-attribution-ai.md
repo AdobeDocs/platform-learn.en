@@ -1,5 +1,5 @@
 ---
-title: Introduction to Attribution AI in Adobe Experience Platform
+title: Introduction to Attribution AI
 description: A high-level overview of how marketers and analysts can use Attribution AI to understand the impact of their marketing channels and campaigns.
 role: User
 solution: Experience Platform, Intelligent Services

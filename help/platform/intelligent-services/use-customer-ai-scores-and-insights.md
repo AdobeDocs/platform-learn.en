@@ -1,5 +1,5 @@
 ---
-title: Use Customer AI Scores and Insights in Adobe Experience Platform
+title: Use Customer AI Scores and Insights
 description: Learn how to use Customer AI propensity scores and insights to convert and retain customers.
 role: User
 solution: Experience Platform, Intelligent Services

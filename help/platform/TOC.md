@@ -21,7 +21,7 @@ doc-type: video
   + [Using the Platform user interface](/help/platform/intro-to-platform/interface-tour.md)
   + [Roles and project phases](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
-+ [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
++ [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
   + [Use alerts](/help/platform/admin/use-alerts.md)

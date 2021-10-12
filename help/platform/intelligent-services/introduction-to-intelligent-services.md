@@ -1,5 +1,5 @@
 ---
-title: Introduction to Intelligent Services in Adobe Experience Platform
+title: Introduction to Intelligent Services
 description: A high-level introduction to Intelligent Services, which empower marketing analysts and practitioners to use the power of Artificial Intelligence and Machine Learning in customer experience use cases without data science expertise.
 role: User
 solution: Experience Platform, Intelligent Services

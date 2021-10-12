@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Query Service overview
 description: In this video, you will learn about Query Service in Adobe Experience Platform and how it helps to understand customer behavior and generate impactful insights. 
 role: Data Engineer, User
 feature: Queries
