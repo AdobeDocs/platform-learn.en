@@ -1,6 +1,6 @@
 ---
 title: Real-time Customer Data Platform user interface and workflow
-description: Learn how to navigate the Real-time Customer Data Platform (CDP) user interface to see how schemas, sources, governance, real-time customer profiles, segmentation, destinations, and dashboards come together to provide real-time activation across the digital customer journey.
+description: Learn how to navigate the Real-time Customer Data Platform (CDP) user interface to see how its features come together to provide real-time activation across the digital customer journey.
 solution: Experience Platform, Real-time Customer Data Platform
 role: User
 feature: Destinations
@@ -10,7 +10,7 @@ exl-id: bc9fdedd-ce95-4bd2-8b14-30fd74604ea8
 ---
 # Real-time Customer Data Platform user interface and workflow
 
-Learn how to navigate the Real-time Customer Data Platform (CDP) user interface to see how schemas, sources, governance, real-time customer profiles, segmentation, destinations, and dashboards come together to provide real-time activation across the digital customer journey.
+Learn how to navigate the Real-time Customer Data Platform (CDP) user interface to see how its features come together to provide real-time activation across the digital customer journey.
 
 >[!VIDEO](https://video.tv.adobe.com/v/29762?quality=12&learn=on)
 
