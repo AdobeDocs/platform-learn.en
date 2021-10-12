@@ -15,4 +15,4 @@ The Segment Builder in Platform allows you to use existing segments as part of a
 
 >[!VIDEO](https://video.tv.adobe.com/v/333304/?quality=12&learn=on)
 
-For more information about the Segment Builder, please see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences).
+For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).

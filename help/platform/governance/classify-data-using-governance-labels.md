@@ -17,10 +17,4 @@ This video shows how to apply governance labels to your datasets. Governance lab
 >
 > This video is part of a course, [Getting Started with Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.dgov.gs), available for free on Experience League!
 
-## Additional Resources
-
-* [Data usage labels documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html)
-* [Create data usage policies video](create-data-usage-policies.md)
-* [Enforce data usage policies video](enforce-data-usage-policies.md)
-* [Data governance end-to-end-demo video](introduction-to-data-governance.md)
-* [Data governance overview video](understanding-data-governance.md)
+For  more information, please visit the [data usage labels documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/labels/overview.html).

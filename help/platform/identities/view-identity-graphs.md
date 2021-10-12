@@ -13,7 +13,4 @@ This video shows how to use the identity graph viewer feature to search, explore
 
 >[!VIDEO](https://video.tv.adobe.com/v/331030?quality=12&learn=on)
 
-## Additional Resources
-
-* [Identity and identity graphs overview](understanding-identity-and-identity-graphs.md)
-* [Identity graph viewer documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html)
+For  more information, please visit the [identity graph viewer documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/ui/identity-graph-viewer.html)

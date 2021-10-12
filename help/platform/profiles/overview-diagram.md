@@ -17,9 +17,5 @@ This video walks you through an overview diagram illustrating the Real-time Cust
 >
 > This video is part of a course [Getting Started with Adobe Experience Platform for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), available for free on Experience League!
 
-## Additional Resources
+For  more information, please visit the [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html).
 
-* [Understanding Real-time Customer Profile video](understanding-the-real-time-customer-profile.md)
-* [Bring Data into Real-time Customer Profile video](bring-data-into-the-real-time-customer-profile.md)
-* [Create Segments video](../segments/create-segments.md)
-* [Real-time Customer Profile documentation](https://www.adobe.com/go/profile-overview-en)

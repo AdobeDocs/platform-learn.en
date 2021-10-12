@@ -14,7 +14,3 @@ Get tips during a walkthrough of the configuration of a file-based destination i
 
 >[!VIDEO](https://video.tv.adobe.com/v/328175/?quality=12&learn=on)
 
-## Additional Resources
-
-* [Understanding Destinations video](/help/platform/destinations/understanding-destinations.md)
-* [Create Destinations and Activate Data video](/help/platform/destinations/create-destinations-and-activate-data.md)

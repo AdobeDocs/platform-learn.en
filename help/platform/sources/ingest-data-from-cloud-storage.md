@@ -17,8 +17,4 @@ This video shows how to easily batch ingest data from cloud storage services int
 >
 > This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
 
-## Additional Resources
-
-* [Source Connectors overview video](overview.md)
-* [Create a Amazon S3 source connector in the UI documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html)
-* [Source connectors documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
+For more information, please see the [Amazon S3 source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/s3.html).

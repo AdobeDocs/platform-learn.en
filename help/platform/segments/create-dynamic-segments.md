@@ -13,10 +13,4 @@ Dynamic segments are an advanced segmentation feature in Adobe Experience Platfo
 
 >[!VIDEO](https://video.tv.adobe.com/v/27428?quality=12&learn=on)
 
-## Additional Resources
-
-* [Create segments video](create-segments.md)
-* [Create multi-entity segments video](create-multi-entity-segments.md)
-* [Demo of streaming segmentation](streaming-segmentation-demo.md)
-* [Understanding the Real-time Customer Profile video](../profiles/bring-data-into-the-real-time-customer-profile.md)
-* [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html)
+For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).

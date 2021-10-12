@@ -17,7 +17,4 @@ The Adobe Analytics Source connector allows you to easily stream data from Adobe
 >
 > This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
 
-## Additional Resources
-
-* [Source Connectors overview video](overview.md)
-* [Create an Adobe Analytics source connector in the UI documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html)
+For more information, please see the [Adobe Analytics source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).

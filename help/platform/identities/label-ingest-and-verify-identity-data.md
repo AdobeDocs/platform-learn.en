@@ -17,7 +17,5 @@ This video shows you how to label data fields as identities, ingest identity dat
 >
 > This video is part of a course, [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), available for free on Experience League!
 
-## Additional Resources
+For  more information, please visit the [identity service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
 
-* [Understanding Identity and Identity Graphs video](understanding-identity-and-identity-graphs.md)
-* [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)

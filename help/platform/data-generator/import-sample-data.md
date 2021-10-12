@@ -1,6 +1,6 @@
 ---
 title: Import sample data to Adobe Experience Platform
-description: In this tutorial, we will be covering how to get your Experience Platform environment setup with some sample data for you to explore. Using a postman collection you can create field groups, schemas, datasets, and then import sample data into Experience Platform.
+description: Learn how to set up an Experience Platform sandbox environment with some sample data.
 role: Developer
 feature: API
 kt: 7349
@@ -9,7 +9,7 @@ exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
 ---
 # Import sample data to Adobe Experience Platform
 
-In this tutorial, we will be covering how to get your Experience Platform sandbox environment set up with some sample data for you to explore. Using a postman collection, you can create field groups, schemas, datasets and then import sample data into Experience Platform.
+Learn how to set up an Experience Platform sandbox environment with some sample data. Using a postman collection, you can create field groups, schemas, datasets and then import sample data into Experience Platform.
 
 ## Sample data use case 
 

@@ -17,8 +17,4 @@ This video walks through how to perform a batch ingest of data from a database s
 >
 > This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
 
-## Additional Resources
-
-* [Source Connectors overview video](overview.md)
-* [Create a Google Big Query source connector in the UI documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html)
-* [Source connectors documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/home.html)
+For more information, please see the [Google Big Query source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/databases/bigquery.html).
