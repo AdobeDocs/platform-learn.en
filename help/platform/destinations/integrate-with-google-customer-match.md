@@ -6,8 +6,8 @@ role: User
 feature: Destinations
 kt: 5948
 thumbnail: 38180.jpg
+exl-id: 6888eeed-e091-4dd4-a34f-f00be887ab21
 ---
-
 # Integrate Google Customer Match
 
 This video shows how Adobe’s Real-Time Customer Data Platform and Google’s Customer Match capabilities help brands engage with customers on Google’s owned and operated properties to scale their outreach campaigns.
