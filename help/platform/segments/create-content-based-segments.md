@@ -15,4 +15,4 @@ Learn the basics on creating a content affinity segment in the Segment Builder i
 
 >[!VIDEO](https://video.tv.adobe.com/v/333302/?quality=12&learn=on)
 
-For more information about the Segment Builder, please see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences).
+For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).

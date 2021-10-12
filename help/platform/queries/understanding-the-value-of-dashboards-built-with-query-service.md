@@ -17,9 +17,5 @@ With Adobe Experience Platform, brands can ingest, store, structure, and pull al
 >
 > This video is part of a course [Getting Started with Adobe Experience Platform for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), available for free on Experience League!
 
-## Additional Resources
+For  more information, please visit the [query service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
 
-* [Run Queries video](run-queries.md)
-* [Understanding Query Service video](understanding-query-service.md)
-* [Understanding Data Usage Patterns with Query Service video](understanding-data-usage-patterns-with-query-service.md)
-* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)

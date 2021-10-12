@@ -17,10 +17,4 @@ This video shows how data usage policies are enforced when activating an audienc
 >
 > This video is part of a course, [Getting Started with Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.dgov.gs), available for free on Experience League!
 
-## Additional Resources
-
-* [Data governance in Real-time CDP documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/privacy/data-governance-overview.html)
-* [Data governance end-to-end-demo video](introduction-to-data-governance.md)
-* [Data governance overview video](understanding-data-governance.md)
-* [Classify data using governance labels video](classify-data-using-governance-labels.md)
-* [Create data usage policies video](create-data-usage-policies.md)
+For  more information, please visit the [policy enforcement documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/overview.html)

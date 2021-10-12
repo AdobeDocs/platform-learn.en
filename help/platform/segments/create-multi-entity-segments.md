@@ -15,8 +15,4 @@ This video shows you how to build multi-entity segments in Adobe Experience Plat
 
 >[!VIDEO](https://video.tv.adobe.com/v/32179?quality=12&learn=on)
 
-## Additional Resources
-
-* [Multi-entity segmentation (documentation)](https://experienceleague.adobe.com/docs/experience-platform/segmentation/multi-entity-segmentation.html)
-* [Create Segments (video)](create-segments.md)
-* [Segment Builder documentation (documentation)](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html)
+For more information, please see the [Multi-entity segmentation (documentation)](https://experienceleague.adobe.com/docs/experience-platform/segmentation/multi-entity-segmentation.html).

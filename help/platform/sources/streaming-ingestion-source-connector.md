@@ -20,7 +20,6 @@ This video shows how to stream data in real-time from a cloud storage source to 
 
 ## Additional Resources
 
-* [Understanding Source Connectors video](overview.md)
 * [Create an Amazon Kinesis source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)
 * [Create an Azure Event Hubs source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/eventhub.html)
 * [Azure Event Hubs documentation](https://docs.microsoft.com/en-us/azure/event-hubs/)

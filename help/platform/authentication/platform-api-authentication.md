@@ -1,5 +1,5 @@
 ---
-title: Authenticate and Access Experience Platform APIs
+title: Authenticate and access Experience Platform APIs
 description: This document provides a link to the step-by-step tutorial for gaining access to Adobe Experience Platform APIs. 
 role: Developer
 feature: API

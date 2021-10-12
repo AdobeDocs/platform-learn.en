@@ -15,6 +15,4 @@ Using Experience Platform's streaming ingestion you can be sure that any data yo
 
 ## Additional Resources
 
-* [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
-* [Understanding Data Ingestion video](understanding-data-ingestion.md)
 * [Streaming Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)

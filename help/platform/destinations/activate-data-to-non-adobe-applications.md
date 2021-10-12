@@ -15,7 +15,4 @@ This webinar shows how Adobe’s Real-Time CDP helps you not only create true pe
 
 >[!VIDEO](https://video.tv.adobe.com/v/331022/?quality=12&learn=on)
 
-## Additional Resources
 
-* [Understanding Destinations video](/help/platform/destinations/understanding-destinations.md)
-* [Create Destinations and Activate Data video](/help/platform/destinations/create-destinations-and-activate-data.md)

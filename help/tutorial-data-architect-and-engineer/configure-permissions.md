@@ -113,7 +113,7 @@ In order to use the Platform API, add yourself as a developer:
 
 ## Create a Launch product profile (requires a system administrator or product admin)
 
-In this exercise, you or a System Administrator at your company will create a product profile for Adobe Experience Platform Data Collection (formerly known as Adobe Experience Platform Launch) and add you as a product profile admin.
+In this exercise, you or a System Administrator at your company will create a product profile for Data Collection (formerly known as Adobe Experience Platform Launch) and add you as a product profile admin.
 
 >[!NOTE]
 >
