@@ -90,7 +90,7 @@ Once the sandbox is active, you must include it in your product profile in order
 ## Additional Resources
 
 * [Sandboxes documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)
-* [Sandbox API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/sandbox-api.yaml)
+* [Sandbox API reference](https://www.adobe.io/experience-platform-apis/references/sandbox/)
 
 
 Great, you've created your sandbox and are ready to [Set up Developer Console and Postman](set-up-developer-console-and-postman.md)!

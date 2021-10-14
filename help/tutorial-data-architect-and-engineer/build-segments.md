@@ -111,7 +111,7 @@ Click on **[!UICONTROL Segments]** in the left navigation and let's take a momen
 ## Additional Resources
 
 * [Segmentation Service documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/home.html)
-* [Segmentation Service API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/segmentation.yaml)
+* [Segmentation Service API reference](https://www.adobe.io/experience-platform-apis/references/segmentation/)
 
 There is more to segmentation, especially with activating segments. Those topics will be addressed in another tutorial.
 

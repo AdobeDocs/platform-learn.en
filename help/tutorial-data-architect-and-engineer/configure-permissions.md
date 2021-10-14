@@ -175,6 +175,6 @@ You do not need to add yourself as a Developer for Launch.
 
 * [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-console.html)
 * [Access Control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html)
-* [Access Control API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/access-control.yaml)
+* [Access Control API](https://www.adobe.io/experience-platform-apis/references/access-control/)
 
 Now you have almost all the permissions required to complete the tutorial! There will be just two more tweaks that you will make inside the [!DNL Adobe Admin Console], including one after you [create a sandbox](create-a-sandbox.md)!

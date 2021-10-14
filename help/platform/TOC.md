@@ -45,7 +45,7 @@ doc-type: video
   + [Ingest data from cloud storage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
   + [Ingest data from CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
   + [Ingest data from databases](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
-  + [Streaming ingestion overview](/help/platform/data-ingestion/understanding-streaming-ingestion.html)
+  + [Streaming ingestion overview](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
   + [Stream data with HTTP API](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
   + [Stream data using Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
   + [Dataflow monitoring](/help/platform/data-ingestion/data-monitoring.md)
