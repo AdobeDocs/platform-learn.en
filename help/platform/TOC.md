@@ -26,7 +26,7 @@ doc-type: video
 + Administration {#admin}
   + [Use alerts](/help/platform/admin/use-alerts.md)
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
-  + [Admin console](/help/platform/admin/admin-console.md)
+  + [Admin Console](/help/platform/admin/admin-console.md)
   + [Managing Product profiles](/help/platform/admin/managing-product-profiles.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
@@ -38,19 +38,20 @@ doc-type: video
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
   + [Create and populate a dataset](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-  + [Map a CSV file to XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html)
+  + [Map a CSV file to XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target="_blank"}
+  + [Sources overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
+  + [Ingest data from Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+  + [Ingest data from Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+  + [Ingest data from cloud storage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
+  + [Ingest data from CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
+  + [Ingest data from databases](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
   + [Streaming ingestion overview](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-  + [Create an authenticated streaming connection](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/create-authenticated-streaming-connection.html)
-  + [Create a streaming connection (UI)](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/create-streaming-connection-ui.html)
-  + [Create a streaming connection (API)](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/create-streaming-connection.html)
-  + [Streaming record data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
-  + [Streaming time series data](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
-  + [Streaming multiple messages](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
+  + [Stream data with HTTP API](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
+  + [Stream data using Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
   + [Dataflow monitoring](/help/platform/data-ingestion/data-monitoring.md)
   + [Monitoring dashboard](/help/platform/data-ingestion/monitoring-dashboard.md)
   + [Web SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
   + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
-  + [Debugger tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
   + [Overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
   + [Architecture](data-science-workspace/architecture-overview.md)
@@ -64,28 +65,27 @@ doc-type: video
   + [Create and publish a trained model (UI)](data-science-workspace/create-model-ui.md)
   + [Schedule automated training and scoring for a service](data-science-workspace/schedule-training-scoring.md)
   + [Enrich Real-time Customer Profiles with machine learning insights](data-science-workspace/dsw-profile-segmentation.md)
-  + [Package source files into a recipe](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html)
-  + [Import a packaged recipe (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html)
-  + [Import a packaged recipe (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html)
+  + [Package source files into a recipe](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
+  + [Import a packaged recipe (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
+  + [Import a packaged recipe (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Destinations {#destinations}
   + [Destinations overview](/help/platform/destinations/understanding-destinations.md)
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
   + [Activate profiles and segments to a destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
-  + [Configure the Azure Blob Destination](destinations/configure-the-azure-blob-destination.md)
+  + [Configure the Azure Blob Destination](/help/platform/destinations/configure-the-azure-blob-destination.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
-  + [Configure a social destination](destinations/configure-a-social-destination.md)
+  + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
   + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
-  + [Configure a dataset for Identity service](https://experienceleague.adobe.com/docs/experience-platform/profile/tutorials/dataset-configuration.html)
 + Profiles {#profiles}
   + [Understanding Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
   + [Bring data into Profile](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-  + [Customize profile view details](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html)
+  + [Customize profile view details](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
   + [Create merge policies](/help/platform/profiles/create-merge-policies.md)
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
 + Privacy {#privacy}
@@ -107,10 +107,10 @@ doc-type: video
   + [Adobe Defined Functions](/help/platform/queries/adobe-defined-functions.md)
   + [Data usage patterns](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
   + [Run queries](/help/platform/queries/run-queries.md)
-  + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html)
+  + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
   + [Tableau](/help/platform/queries/psql-client-tableau.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
-  + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html)
+  + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
   + [Building blocks](/help/platform/schemas/schema-building-blocks.md)
@@ -134,9 +134,8 @@ doc-type: video
   + [Create dynamic segments](/help/platform/segments/create-dynamic-segments.md)
   + [Create multi-entity segments](/help/platform/segments/create-multi-entity-segments.md)
   + [Demo of streaming segmentation](/help/platform/segments/streaming-segmentation-demo.md)
-  + [Evaluate a segment](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html)
-  + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html)
-  + [Enforce data usage compliance for segments](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/governance.html)
+  + [Evaluate a segment](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+  + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
 + Sources {#sources}  
   + [Sources overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)

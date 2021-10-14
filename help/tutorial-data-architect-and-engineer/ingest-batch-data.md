@@ -335,6 +335,6 @@ Adobe partners with multiple ETL vendors to support data ingestion into Experien
 ## Additional Resources
 
 * [Batch Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Data Ingestion API reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/ingest-api.yaml)
+* [Batch Ingestion API reference](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
 
 Now let's [stream data using the Web SDK](ingest-streaming-data.md)
