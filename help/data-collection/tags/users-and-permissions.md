@@ -4,7 +4,6 @@ description: Learn how to use the Adobe Admin Console to control permissions in 
 role: Admin
 feature: Tags
 kt: 3532
-thumbnail:
 exl-id: 8db9d937-289f-4570-b602-5656abc75295
 ---
 # Users and permissions in tags
