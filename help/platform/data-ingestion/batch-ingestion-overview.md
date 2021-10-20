@@ -19,7 +19,4 @@ This video gives an overview of batch data ingestion in Adobe Experience Platfor
 
 ## Additional Resources
 
-* [Data Ingestion overview video](understanding-data-ingestion.md)
-* [Streaming Ingestion overview video](understanding-streaming-ingestion.md)
-* [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
 * [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)

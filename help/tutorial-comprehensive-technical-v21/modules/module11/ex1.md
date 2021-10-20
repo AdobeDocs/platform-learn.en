@@ -1,21 +1,21 @@
 ---
-title: Real-time CDP - Build a segment and take action - Build a segment and enable Streaming Segmentation
-description: Real-time CDP - Build a segment and take action - Build a segment and enable Streaming Segmentation
+title: Real-time CDP - Build a segment and take action - Build a segment
+description: Real-time CDP - Build a segment and take action - Build a segment
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 exl-id: e8619175-e0b4-4cf5-bf5b-8ff3af1fb75e
 ---
-# 11.1 Build a segment and enable Streaming Segmentation
+# 11.1 Build a segment
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's segment builder.
 
-## Context
+## 11.1.1 Context
 
 In today's world, responding to a customer's behavior needs to be real-time. One of the ways of responding to customer behavior in real-time is by using a segment, on the condition that the segment qualifies in real-time. In this exercise, you need to build out a segment, taking into account real activity on the website that we've been using.
 
-## Identify the behavior you want to react to
+## 11.1.2 Identify the behavior you want to react to
 
 For every demonstration, you'll need to use a fresh, incognito browser window. After opening a fresh, incognito browser window, go to [https://public.aepdemo.net/](https://public.aepdemo.net/).
 
@@ -64,7 +64,7 @@ So when somebody visits the product page for **Zeppelin Yoga Pant**, I want to b
 
 ![Data Ingestion](./images/homenadiapp.png)
 
-## Create the Segment
+## 11.1.3 Create the Segment
 
 Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
 
@@ -110,21 +110,7 @@ The comparison parameter should be **equals** and in the input field, enter `Zep
 
 ![Segmentation](./images/pv.png)
 
-Every time you add an element to the segment builder, you can click the **Refresh Estimate** button to get a new estimate of the population in your segment.
-
-As you're using a shared environment, you also need to add your **ldap** as a filter for this segment.
-
-In the **Events** search box, enter **ldap**. Take the second result, which references the path **XDM ExperienceEvent > --aepTenantIdSchema-- > demoEnvironment > ldap**.
-
-Drag and drop **ldap** onto your Segment Rule, under the `Zeppelin Yoga Pant` rule.
-
-![Segmentation](./images/ldap1.png)
-
-Enter your ldap:
-
-![Segmentation](./images/ldap3.png)
-
-Your **Rules** should now look like this:
+Your **Event Rules** should now look like this. Every time you add an element to the segment builder, you can click the **Refresh Estimate** button to get a new estimate of the population in your segment.
 
 ![Segmentation](./images/ldap4.png)
 
@@ -139,11 +125,11 @@ Please replace **ldap** with your assigned number, like this:
 
 ![Segmentation](./images/segmentname.png)
 
-Next, click the **Save** button to save your segment, after which you'll be taken back to the Segment overview  page.
+Next, click the **Save** button to save your segment, after which you'll be taken back to the segment overview page.
 
 ![Segmentation](./images/savedsegment.png)
 
-When you now go back to the demo website and refresh the homepage, you should see the Streaming Segment that you just built already qualify for your profile on the X-Ray panel.
+When you now go back to the demo website and refresh the homepage, you should see the segment that you just built already qualify for your profile on the X-Ray panel.
 
 ![Segmentation](./images/xraystrseg.png)
 

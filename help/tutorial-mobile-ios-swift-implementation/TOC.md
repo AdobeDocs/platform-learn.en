@@ -6,20 +6,21 @@ solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2196
 thumbnail: kt-2796.jpg
+doc-type: multipage
 ---
 
 # Implement the Experience Cloud in Mobile iOS Swift Applications {#implement-in-mobile-ios-swift-apps}
 
 + [Overview](overview.md)
-+ Configuring Launch{#configure-launch}
-  + [Create a Property](launch-create-a-property.md)
-  + [Add Extensions](launch-add-extensions.md)
-  + [Create a Library](launch-create-a-library.md)
-  + [Install the Mobile SDK](launch-install-the-mobile-sdk.md)
-+ Implementing Solutions{#implement-solutions}
++ Configure tags{#configure-tags}
+  + [Create a property](create-a-property.md)
+  + [Add extensions](add-extensions.md)
+  + [Create a library](create-a-library.md)
+  + [Install the mobile SDK](install-the-mobile-sdk.md)
++ Implement solutions{#implement-solutions}
   + [Add the Identity Service](id-service.md)
   + [Add Adobe Target](target.md)
   + [Add Adobe Analytics](analytics.md)
   + [Add Adobe Audience Manager](audience-manager.md)
-+ Publishing your Property{#publishing}
-  + [Publish your Property](publish.md)
++ Publish your property{#publish}
+  + [Publish your property](publish.md)

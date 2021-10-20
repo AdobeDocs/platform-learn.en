@@ -23,39 +23,29 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In the left menu, go to **Destinations**. You'll then see the **Destinations** homepage.
+In the left menu, go to **Destinations**, then go to **Catalog**. You'll then see the **Destinations Catalog**.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 
-In **Destinations**, click the 3 dots on **Google Display & Video 360** and then click **View dataflow**.
+In **Destinations**, click the **Activate Segments** on the **Google Display & Video 360** card.
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Click on **Browse Destinations**.
+Select your destination and click **Next**.
 
-You'll then see all available **Google Display & Video 360** destinations.
+![RTCDP](./images/rtcdpcreatedest2.png)
 
-![RTCDP](./images/rtcdpgoogledest.png)
+In the list of available segments, select the segment you created in the previous exercise. Click **Next**.
 
-Click the **+** icon on the **Destination Name** of `DV360 - Advertiser ID: 5701635`.
+![RTCDP](./images/rtcdpcreatedest3.png)
 
-![RTCDP](./images/rtcdpgoogledestb.png)
+On the **Segment Schedule** page, click **Next**.
 
-You'll then see all available segments in your Adobe Experience Platform instance. Search and select the segment you created in exercise 1.
+![RTCDP](./images/rtcdpcreatedest4.png)
 
-![RTCDP](./images/rtcdpactivateseg.png)
+Finally, on the **Review** page, click **Finish**.
 
-Click **Next**.
-
-![RTCDP](./images/rtcdpnext.png)
-
-On the next page, click **Next**.
-
-![RTCDP](./images/rtcdpnext1.png)
-
-On the next page, click **Finish**.
-
-![RTCDP](./images/rtcdpnext2.png)
+![RTCDP](./images/rtcdpcreatedest5.png)
 
 Your segment is now linked to Google DV360. Every time a customer qualifies for this segment, a signal will be sent to Google DV360 to include that customer in the Audience at Google DV360 side.
 

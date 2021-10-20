@@ -19,7 +19,4 @@ This video shows how to create datasets and ingest data in the Adobe Experience 
 
 ## Additional Resources
 
-* [Understanding Data Ingestion video](understanding-data-ingestion.md)
-* [Understanding Streaming Ingestion video](understanding-streaming-ingestion.md)
 * [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)
-* [Configuring a Dataset with Platform API tutorial](https://www.adobe.com/go/data-configure-dataset-en)

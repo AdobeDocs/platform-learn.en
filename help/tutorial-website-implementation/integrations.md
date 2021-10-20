@@ -1,7 +1,6 @@
 ---
-title: Implement Experience Cloud Integrations with Launch
-description: Learn how to validate the Audiences, A4T, and Customer Attributes integrations in your Adobe Experience Cloud implementation. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-feature: Tags
+title: Implement Experience Cloud Integrations with tags
+description: Learn how to validate the Audiences, A4T, and Customer Attributes integrations in your Adobe Experience Cloud implementation. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 exl-id: 1d02efce-a50a-4f4d-a0cf-eb8275cf0faa
 ---
 # Experience Cloud Integrations
@@ -45,9 +44,9 @@ These validation steps will focus on the critical part visible in the client-sid
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Go to the Network tab of the Debugger
 
@@ -84,9 +83,9 @@ The best way to validate the A4T integration is to actually build a Target activ
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Go to the Network tab of the Debugger
 
@@ -111,7 +110,7 @@ If you make additional Target requests in the scope of a page load (not includin
 The main requirements to implement Customer Attributes&mdash;which you have already done&mdash;are to:
 
 1. Implement the Adobe Experience Platform Identity Service
-1. Set Customer Ids via the Id Service *before* Target and Analytics fire their requests (which you accomplished using the rule ordering feature in Launch)
+1. Set Customer Ids via the Id Service *before* Target and Analytics fire their requests (which you accomplished using the rule ordering feature in tags)
 
 ### Validate the Customer Attributes Implementation
 

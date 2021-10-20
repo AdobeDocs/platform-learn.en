@@ -1,14 +1,14 @@
 ---
-title: Add an extension in event forwarding
-description: Learn how to add an event forwarding extension in Adobe Experience Platform Data Collection.
+title: Add an event-forwarding extension
+description: Learn how to add an event-forwarding extension in Data Collection.
 feature: Event Forwarding
 kt: 6422
 thumbnail: 331941
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
 ---
-# Add an extension in event forwarding
+# Add an event-forwarding extension
 
-Learn how to add an event forwarding extension in Adobe Experience Platform Data Collection.
+Learn how to add an event-forwarding extension in Data Collection.
 
 >[!NOTE]
 >

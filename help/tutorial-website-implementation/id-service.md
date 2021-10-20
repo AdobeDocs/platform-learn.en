@@ -1,15 +1,14 @@
 ---
-title: Implement the Adobe Experience Platform Identity Service with Launch
-description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-solution: Experience Platform Launch, Experience Cloud Services
-feature: Tags
+title: Add the Adobe Experience Platform Identity Service with tags
+description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implement the Experience Cloud in websites tutorial.
+solution: Experience Platform, Data Collection, Experience Cloud Services
 exl-id: f226c171-2bd2-44fa-ae2e-cbfa2fe882f0
 ---
 # Add the Adobe Experience Platform Identity Service
 
 This lesson will guide your through the steps required to implement the [Adobe Experience Platform Identity Service extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/id-service/overview.html) and send customer ids.
 
-The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions.  You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
+The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) sets a common visitor id across all Adobe solutions in order to power Experience Cloud capabilities such as audience-sharing between solutions. You can also send your own customer ids to the Service to enable cross-device targeting and integrations with your Customer Relationship Management (CRM) system.
 
 >[!NOTE]
 >
@@ -30,11 +29,11 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-You should have already completed the lessons in the [Configure Launch](launch.md) section.
+You should have already completed the lessons in the [Configure tags](create-a-property.md) section.
 
 ## Add the Identity Service Extension
 
-Since this is the first extension you are adding, here is a quick overview of extensions. Extensions are one of the core features of Launch. An extension is an integration built by Adobe, an Adobe partner, or any Adobe customer that adds new and endless options for the tags that you can deploy to your website. If you think of Launch as an operating system, extensions are the apps that you install so Launch can do the things you need it to do.
+Since this is the first extension you are adding, here is a quick overview of extensions. Extensions are one of the core features of tags. An extension is an integration built by Adobe, an Adobe partner, or any Adobe customer that adds new and endless options for the tags that you can deploy to your website. If you think of tags as an operating system, extensions are the apps that you install so tags can do the things you need it to do.
 
 **To add the Identity Service Extension**
 
@@ -62,17 +61,17 @@ Since this is the first extension you are adding, here is a quick overview of ex
 
 ### Validate the Extension
 
-The Identity Service extension is one of the few Launch extensions that makes a request without having to use a rule action. The extension will automatically make a request to the Identity Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
+The Identity Service extension is one of the few tag extensions that makes a request without having to use a rule action. The extension will automatically make a request to the Identity Service on the first page load of the first visit to a website. Once the ID has been requested, it will be stored in a first party cookie beginning with "AMCV_".
 
 **To validate the Identity Service extension**
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md).
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md).
 
-1. On the Summary tab of the Debugger, the Launch section should indicate that the Adobe Experience Platform Identity Service extension is implemented.
+1. On the Summary tab of the Debugger, the tags section should indicate that the Adobe Experience Platform Identity Service extension is implemented.
 
-1. Also, on the Summary tab, the Identity Service section should populate with the same Org ID that was on your extension configuration screen in the Launch interface:
+1. Also, on the Summary tab, the Identity Service section should populate with the same Org ID that was on your extension configuration screen in the Data Collection interface:
 
    ![Check that the Adobe Experience Platform Identity Service extension is implemented](images/idservice-debugger-summary.png)
 
@@ -84,7 +83,7 @@ The Identity Service extension is one of the few Launch extensions that makes a 
     1. Go to the `Application` tab
     1. Expand `Cookies` on the left side
     1. Click on the domain `https://luma.enablementadobe.com`
-    1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the Luma site using both it's hardcoded Launch property as well as mapped to your own.
+    1. Look for the AMCV_ cookie on the right hand side. You might see several since have loaded the Luma site using both it's hardcoded tag property as well as mapped to your own.
     ![Verify the AMCV_ cookie](images/idservice-AMCVCookie.png)
 
 That's it! You've added your first extension! For more details on the configuration options of the Identity Service, see [the documentation](https://experienceleague.adobe.com/docs/id-service/using/id-service-api/configurations/function-vars.html).
@@ -93,7 +92,7 @@ That's it! You've added your first extension! For more details on the configurat
 
 Next, you will send a [Customer ID](https://experienceleague.adobe.com/docs/id-service/using/reference/authenticated-state.html) to the Identity Service. This will allow you to [integrate your CRM](https://experienceleague.adobe.com/docs/core-services/interface/customer-attributes/attributes.html) with the Experience Cloud as well as track visitors across devices.
 
-In the earlier lesson, [Add Data Elements, Rules, and Libraries](launch-data-elements-rules.md) you created a data element and used it in a rule. Now, you will use those same techniques to send a Customer ID when the visitor is authenticated.  
+In the earlier lesson, [Add Data Elements, Rules, and Libraries](add-data-elements-rules.md) you created a data element and used it in a rule. Now, you will use those same techniques to send a Customer ID when the visitor is authenticated.  
 
 ### Create Data Elements for Customer IDs
 
@@ -213,7 +212,7 @@ The Adobe Experience Platform Identity Service passes the Customer IDs in rules 
 
    ![Save the Rule](images/idservice-customerId-saveRule.png)
 
-You've now created a rule that will send the Customer ID as a variable `crm_id` when the visitor is Authenticated. Since you specified the Order as `10` this rule will fire before your `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](launch-data-elements-rules.md) lesson which uses the default Order value of `50`.
+You've now created a rule that will send the Customer ID as a variable `crm_id` when the visitor is Authenticated. Since you specified the Order as `10` this rule will fire before your `All Pages - Library Loaded` rule created in the [Add Data Elements, Rules and Libraries](add-data-elements-rules.md) lesson which uses the default Order value of `50`.
 
 ### Validate the Customer IDs
 
@@ -223,9 +222,9 @@ To validate your work, you will log into the Luma site to confirm the behavior o
 
 1. Open the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html)
 
-1. Make sure the Debugger is mapping the Launch property to *your* Development environment, as described in the [earlier lesson](launch-switch-environments.md)
+1. Make sure the Debugger is mapping the tag property to *your* Development environment, as described in the [earlier lesson](switch-environments.md)
 
-   ![Your Launch development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
+   ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
 1. Click the **[!UICONTROL LOGIN]** link in the top right corner of the Luma site
 
@@ -257,9 +256,9 @@ Now, confirm the customer id is sent to the Service using the Debugger extension
 
 ### Additional Validation Tips
 
-Launch also has rich console logging features. To turn them on, go to the **[!UICONTROL Tools]** tab in the Debugger and turn on the **[!UICONTROL Launch Console Logging]** toggle.
+Tags also has rich console logging features. To turn them on, go to the **[!UICONTROL Tools]** tab in the Debugger and turn on the **[!UICONTROL tags Console Logging]** toggle.
 
-![Toggle on Launch's Console Logging](images/idservice-debugger-logging.png)
+![Toggle on tags' Console Logging](images/idservice-debugger-logging.png)
 
 This will turn on console logging both in your browser console and in the Logs tab of the Debugger. You should see the logging of all of the rules you have created so far! Note that new log entries are added to the top of the list, so your rule "All Pages - Library Loaded - Authenticated - 10" should fire before the "All Pages - Library Loaded" rule and appear below it in the Debugger's Console Logging:
 

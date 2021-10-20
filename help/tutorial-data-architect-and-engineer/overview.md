@@ -5,6 +5,7 @@ breadcrumb-title: Overview
 role: Data Architect, Data Engineer
 kt: 4348
 thumbnail: 4348-overview.jpg
+doc-type: multipage-overview
 exl-id: fabbc591-840b-40dc-89af-305626a16338
 ---
 # Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
@@ -39,7 +40,7 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 ## Pre-requisites
 
 * You have completed the [Introduction to Adobe Experience Platform course](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) on Experience League and are familiar with Platform capabilities
-* You have access to an account provisioned with Adobe Experience Platform and Adobe Experience Platform Data Collection (formerly Launch).  
+* You have access to an account provisioned with Adobe Experience Platform and Data Collection (formerly Launch).  
 * You are a System Administrator of that account or can have one complete several tasks in the [Configure Permissions](configure-permissions.md) lesson.
 
 ## Using this tutorial

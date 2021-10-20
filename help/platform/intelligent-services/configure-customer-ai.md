@@ -1,5 +1,5 @@
 ---
-title: Configure Customer AI in Adobe Experience Platform
+title: Configure Customer AI
 description: Learn how to create an instance of Customer AI to predict customer behavior.
 role: User
 solution: Experience Platform, Intelligent Services
@@ -22,10 +22,4 @@ Learn how to create an instance of Customer AI to predict customer behavior.
 >
 > This video is part of a course, [Getting Started with Intelligent Services for Marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), available for free on Experience League!
 
-## Additional Resources
-
-* [Introduction to Intelligent Services (video)](introduction-to-intelligent-services.md)
-* [Introduction to Customer AI (video)](introduction-to-customer-ai.md)
-* [Business Value of Customer AI (video)](business-value-of-customer-ai.md)
-* [Use Customer AI Scores and Insights (video)](use-customer-ai-scores-and-insights.md)
-* [Customer AI (documentation)](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)
+For  more information, please visit the [Customer AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)

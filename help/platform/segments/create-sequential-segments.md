@@ -15,4 +15,4 @@ In this video, learn how to add Experience Events to a timeline in your segment,
 
 >[!VIDEO](https://video.tv.adobe.com/v/333305/?quality=12&learn=on)
 
-For more information about the Segment Builder, please see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html?lang=en#audiences).
+For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).

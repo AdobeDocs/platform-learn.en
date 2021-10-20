@@ -1,8 +1,7 @@
 ---
-title: Implement Adobe Audience Manager
-description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and Launch. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-solution: Experience Platform Launch, Audience Manager
-feature: Tags
+title: Add Adobe Audience Manager
+description: Learn how to implement Adobe Audience Manager on your website using Server-Side Forwarding and tags. This lesson is part of the Implement the Experience Cloud in websites tutorial.
+solution: Experience Platform, Data Collection, Audience Manager
 exl-id: ddc77dc5-bfb5-4737-b6b6-47d37c9f0528
 ---
 # Add Adobe Audience Manager
@@ -31,7 +30,7 @@ At the end of this lesson, you will be able to:
 
 In order to complete this lesson, you will need:
 
-1. To have completed the lessons in [Configure Launch](launch.md), [Add Adobe Analytics](analytics.md), and [Add the Identity Service](id-service.md).
+1. To have completed the lessons in [Configure tags](create-a-property.md), [Add Adobe Analytics](analytics.md), and [Add the Identity Service](id-service.md).
 
 1. Admin access to Adobe Analytics so that you can enable Server-Side Forwarding for the report suite you are using for this tutorial. Alternatively, you can ask an existing admin at your organization to do this for you, following the instructions below.
 
@@ -56,7 +55,7 @@ Since you have already deployed Adobe Analytics in this tutorial, you will deplo
 There are two main steps in doing a SSF implementation:
 
 1. Turning on a "switch" in the Analytics Admin Console to forward data from Analytics to Audience Manager *per report suite*.
-1. Putting the code in place, which is done via Launch. In order for this to work correctly, you will need to have the Adobe Experience Platform Identity Service extension installed, as well as the Analytics extension (You will actually *not* need the AAM extension, which is explained below).
+1. Putting the code in place, which is done via tags. In order for this to work correctly, you will need to have the Adobe Experience Platform Identity Service extension installed, as well as the Analytics extension (You will actually *not* need the AAM extension, which is explained below).
 
 ### Enable Server-Side Forwarding in the Analytics Admin Console
 
@@ -92,17 +91,17 @@ A configuration in the Adobe Analytics Admin Console is required to start forwar
 >
 >Also, if the SSF option is grayed out, you will need to "map the report suite(s) to your Experience Cloud Org in order to enable the option. This is explained in [the documentation](https://experienceleague.adobe.com/docs/analytics/admin/data-governance/gdpr-view-settings.html).
 
-Once this step has been completed, and if you have the Adobe Experience Platform Identity Service enabled, data will be forwarded from Analytics to AAM. However, to complete the process so that the response comes back correctly from AAM to the page (and also to Analytics via the Audience Analytics feature), you must complete the following step in Launch as well. Don't worry, it's super easy.
+Once this step has been completed, and if you have the Adobe Experience Platform Identity Service enabled, data will be forwarded from Analytics to AAM. However, to complete the process so that the response comes back correctly from AAM to the page (and also to Analytics via the Audience Analytics feature), you must complete the following step in tags as well. Don't worry, it's super easy.
 
-### Enable Server-Side Forwarding in Launch
+### Enable Server-Side Forwarding in tags
 
-This is the second of two steps for enabling SSF. You have already flipped the switch in the Analytics Admin Console, and now you just need to add the code, which Launch will do for you if you simply check the right box.
+This is the second of two steps for enabling SSF. You have already flipped the switch in the Analytics Admin Console, and now you just need to add the code, which tags will do for you if you simply check the right box.
 
 >[!NOTE]
 >
->To implement Server-Side Forwarding of Analytics data into AAM, we will actually edit/configure the Analytics extension in Launch, **not** the AAM extension. The AAM extension is used exclusively for Client-Side DIL implementations, for those who do not have Adobe Analytics. So the following steps are correct when they send you into the Analytics extension to set this up.
+>To implement Server-Side Forwarding of Analytics data into AAM, we will actually edit/configure the Analytics extension in tags, **not** the AAM extension. The AAM extension is used exclusively for Client-Side DIL implementations, for those who do not have Adobe Analytics. So the following steps are correct when they send you into the Analytics extension to set this up.
 
-#### To enable SSF in Launch
+#### To enable SSF in tags
 
 1. Go to **[!UICONTROL Extensions > Installed]** and click to configure the Analytics extension.
 
@@ -126,7 +125,7 @@ The main way to validate that the Server-Side Forwarding is up and running is by
 
 #### Verify that the Code is Loading Correctly
 
-The code that Adobe Launch installs to handle the forwarding, and especially the response from AAM to the page, is called the Audience Manager
+The code that tags installs to handle the forwarding, and especially the response from AAM to the page, is called the Audience Manager
 "Module." We can use the Experience Cloud Debugger to ensure that it has loaded.
 
 1. Open the Luma site
@@ -170,7 +169,7 @@ Unfortunately, at this time, the Experience Cloud debugger does not support show
 
 >[!WARNING]
 >
->Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed this second step (the code in Launch), but that the forwarding in the Analytics Admin Console (first step of this section) has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient.
+>Beware the False "Success" - If there is a response, and everything seems to be working, make **sure** that you have that "stuff" object. If you don't, you may see a message in the response that says "status":"SUCCESS". As crazy as this sounds, this is actually proof that it is **NOT** working correctly. If you see this, it means that you have completed this second step (the code in tags), but that the forwarding in the Analytics Admin Console (first step of this section) has not yet completed. In this case you need to verify that you have enabled SSF in the Analytics Admin Console. If you have, and it hasn't been 4 hours yet, be patient.
 
 ![AA response - false success](images/aam-responseFalseSuccess.png)
 

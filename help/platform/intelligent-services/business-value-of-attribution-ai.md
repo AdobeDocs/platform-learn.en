@@ -18,10 +18,5 @@ This video shows how marketers can measure and optimize marketing and advertisin
 >
 > This video is part of a course, [Getting Started with Intelligent Services for Marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), available for free on Experience League!
 
-## Additional Resources
+For  more information, please visit the [Attribution AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)
 
-* [Introduction to Intelligent Services (video)](introduction-to-intelligent-services.md)
-* [Introduction to Attribution AI (video)](introduction-to-attribution-ai.md)
-* [Configure Attribution AI (video)](configure-attribution-ai.md)
-* [Use Attribution AI Scores and Insights (video)](use-attribution-ai-scores-and-insights.md)
-* [Attribution AI (documentation)](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html)

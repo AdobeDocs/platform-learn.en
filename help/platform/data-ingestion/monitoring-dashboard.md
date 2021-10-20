@@ -22,5 +22,5 @@ Learn how to monitor and track data that gets ingested into Adobe Experience Pla
 * [Monitor dataflows for sources in the UI](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html)
 * [Data monitoring using API](./data-monitoring.md)
 * [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform)
-* [Flow Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/flow-service.yaml)
-* [Observability Insights API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/observability-insights.yaml)
+* [Flow Service API](https://www.adobe.io/experience-platform-apis/references/flow-service/)
+* [Observability Insights API](https://www.adobe.io/experience-platform-apis/references/observability-insights/)

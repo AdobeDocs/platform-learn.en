@@ -1,12 +1,11 @@
 ---
-title: Create a Library
-description: Learn how to create a library in Adobe Experience Platform Launch. This lesson is part of the Implementing the Experience Cloud in Mobile Android Applications tutorial.
-feature: Tags
-exl-id: ee283267-53ae-4ecb-9a4d-50882a6ad2ff
+title: Add a tag library
+description: Learn how to create a tag library in Data Collection. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
+exl-id: 13bcc345-1b15-4aa1-ac0b-6d56edeb0ac8
 ---
-# Add a Library
+# Add a library
 
-In this lesson, you will create a library for your new Launch property. A library packages together all of the desired Launch settings and generates  the specific implementation instructions required to install the library in your mobile app.
+In this lesson, you will create a library for your new tag property. A library packages together all of the desired tags settings and generates the specific implementation instructions required to install the library in your mobile app.
 
 >[!NOTE]
 >
@@ -44,7 +43,7 @@ After configuring your extensions, you need to package them into a library that 
 
    ![Add All Changed Resources](images/mobile-launch-addAllChangedResources.png)
 
-1. Note that after clicking **[!UICONTROL Add All Changed Resources]** Launch summarizes the changes you just made when adding extensions.
+1. Note that after clicking **[!UICONTROL Add All Changed Resources]** tags summarizes the changes you just made when adding extensions.
 
 1. Click **[!UICONTROL Save & Build for Development]**
 
@@ -54,4 +53,4 @@ After configuring your extensions, you need to package them into a library that 
 
     ![Library Built](images/mobile-launch-libraryBuilt.png)
 
-[Next "Install the Launch Property and the SDK" >](launch-install-the-mobile-sdk.md)
+[Next "Install the tag property and the SDK" >](install-the-mobile-sdk.md)

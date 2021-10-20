@@ -17,9 +17,4 @@ This video shows how to run queries in the Adobe Experience Platform interface a
 >
 > This video is part of a course [Create Dashboards Using Query Service](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.qsvc.dash), available for free on Experience League!
 
-## Additional Resources
-
-* [Understanding Query Service video](understanding-query-service.md)
-* [Understanding the Value of Dashboards built with Query Service](understanding-the-value-of-dashboards-built-with-query-service.md)
-* [Understanding Data Usage Patterns with Query Service video](understanding-data-usage-patterns-with-query-service.md)
-* [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
+For  more information, please visit the [query service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).

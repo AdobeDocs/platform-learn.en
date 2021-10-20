@@ -19,5 +19,4 @@ This video walks through an overview diagram and explains the primary components
 
 ## Additional Resources
 
-* [Data Science Workspace overview video](understanding-data-science-workspace.md)
 * [Data Science Workspace documentation](http://www.adobe.com/go/data-science-overview-en)

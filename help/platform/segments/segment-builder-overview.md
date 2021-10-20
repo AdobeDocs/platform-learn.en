@@ -15,4 +15,4 @@ Get an introduction to the Segment Builder in Platform, including the building b
 
 >[!VIDEO](https://video.tv.adobe.com/v/333301/?quality=12&learn=on)
 
-For more information, please see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/overview.html?lang=en#ui).
+For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).

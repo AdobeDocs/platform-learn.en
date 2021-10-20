@@ -113,7 +113,7 @@ In order to use the Platform API, add yourself as a developer:
 
 ## Create a Launch product profile (requires a system administrator or product admin)
 
-In this exercise, you or a System Administrator at your company will create a product profile for Adobe Experience Platform Data Collection (formerly known as Adobe Experience Platform Launch) and add you as a product profile admin.
+In this exercise, you or a System Administrator at your company will create a product profile for Data Collection (formerly known as Adobe Experience Platform Launch) and add you as a product profile admin.
 
 >[!NOTE]
 >
@@ -175,6 +175,6 @@ You do not need to add yourself as a Developer for Launch.
 
 * [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-console.html)
 * [Access Control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html)
-* [Access Control API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/access-control.yaml)
+* [Access Control API](https://www.adobe.io/experience-platform-apis/references/access-control/)
 
 Now you have almost all the permissions required to complete the tutorial! There will be just two more tweaks that you will make inside the [!DNL Adobe Admin Console], including one after you [create a sandbox](create-a-sandbox.md)!

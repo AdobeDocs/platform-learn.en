@@ -1,26 +1,26 @@
 ---
-user-guide-title: Implement the Experience Cloud in websites
+user-guide-title: Implement the Experience Cloud in Websites with Tags
 breadcrumb-title: Web Tutorial
-user-guide-description: Learn how to implement Adobe Experience Cloud solutions on a website with Experience Platform Launch.
+user-guide-description: Learn how to implement Adobe Experience Cloud solutions on a website with tags.
 solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2179
-thumbnail: 
+doc-type: multipage
 ---
 
-# Implement the Experience Cloud in websites {#implement-in-websites}
+# Implement the Experience Cloud in Websites with Tags {#implement-in-websites}
 
 + [Overview](overview.md)
-+ Configuring Launch{#configure-launch}
-  + [Create a Launch Property](launch.md)
-  + [Add the Launch Embed Code](launch-add-embed.md)
-  + [Add a Data Element, a Rule and a Library](launch-data-elements-rules.md)
-  + [Switch Environments with the Debugger](launch-switch-environments.md)
-+ Implementing Solutions{#implement-solutions}
++ Configure tags{#configure-tags}
+  + [Create a tag property](create-a-property.md)
+  + [Add the embed code](add-embed-code.md)
+  + [Add a data element, a rule and a library](add-data-elements-rules.md)
+  + [Switch environments with the Debugger](switch-environments.md)
++ Implement Solutions{#implement-solutions}
   + [Add the Identity Service](id-service.md)
   + [Add Adobe Target](target.md)
   + [Add Adobe Analytics](analytics.md)
   + [Add Adobe Audience Manager](audience-manager.md)
   + [Experience Cloud Integrations](integrations.md)
-+ Publishing your Property{#publishing}
++ Publish your property{#publish}
   + [Publish your Property](publish.md)

@@ -16,3 +16,5 @@ As you reconfigure your processes and personnel to move from Adobe Audience Mana
 >[!INFO]
 >
 > This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
+
+For more information, please see the [Audience Manager source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).

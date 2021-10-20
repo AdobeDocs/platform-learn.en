@@ -185,6 +185,6 @@ Note that after defining the relationship, it is indicated in both the **[!UICON
 ## Additional Resources
 
 * [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)
-* [Identity Service API](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#!acpdr/swagger-specs/id-service-api.yaml)
+* [Identity Service API](https://www.adobe.io/experience-platform-apis/references/identity-service/)
 
 Now that our identities are in place, we can [create our datasets](create-datasets.md)!

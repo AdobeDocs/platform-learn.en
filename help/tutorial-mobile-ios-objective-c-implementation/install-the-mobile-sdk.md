@@ -1,12 +1,11 @@
 ---
-title: Install the Adobe Mobile SDK in a Mobile iOS Objective-C app
-description: Learn how to get your Launch property's embed codes and implement them in your website. This lesson is part of the Implementing the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
-feature: Tags
+title: Install the Adobe Experience Platform Mobile SDK in a Mobile iOS Objective-C app
+description: Learn how to get your tag property's embed codes and implement them in your website. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
 exl-id: 97a9bdce-d1f0-46b7-a2e8-4a6d4cd4884c
 ---
-# Install the Mobile SDK
+# Install the Adobe Experience Platform Mobile SDK
 
-In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your Launch property's Development environment.
+In this lesson, you will implement the Mobile SDK with the extensions and settings corresponding to your tag property's Development environment.
 
 >[!NOTE]
 >
@@ -20,7 +19,7 @@ In this lesson, you will implement the Mobile SDK with the extensions and settin
 
 At the end of this lesson, you will be able to:
 
-* Obtain the installation instructions for your mobile Launch property
+* Obtain the installation instructions for your mobile tag property
 * Understand the difference between a Development, Staging, and Production environment
 * Create and edit the Podfile
 * Import the Mobile SDK into your AppDelegate file
@@ -28,11 +27,11 @@ At the end of this lesson, you will be able to:
 
 ## Get the Installation Instructions
 
-The Installation Instructions for mobile Launch properties are a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
+The Installation Instructions for mobile tag properties are a collection of code snippets that you either run in your Terminal or add to specific locations in your mobile app.
 
 Click on the `Environments` tab in the top navigation to go to the environments page. Note that Development, Staging, and Production environments have been pre-created for you. These correspond to the typical environments in the code development and release process. Code is first written by a developer in a Development environment. When they have completed their work, they send it to a Staging environment for QA and other teams to review. Once the QA and other teams are satisfied, the code is then published to the Production environment, which is the public-facing environment  which your visitors experience when they download your app.  
 
-Launch permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
+Tags permits additional Development environments, which is useful in large organizations in which multiple developers are working on different projects at the same time.
 
 Development, Staging, and Production are the only environments we need to complete the tutorial.  
 
@@ -46,7 +45,7 @@ Let's go through the instructions step-by-step.
 
 ## Create the Podfile and Install the Pods
 
-If you have previously used Launch in websites, one of the first things you will notice is that there is a lot more information in this modal than for web properties.
+If you have previously used tag properties in websites, one of the first things you will notice is that there is a lot more information in this modal than for web properties.
 
 The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between its various components. If you don't already have [CocoaPods](https://cocoapods.org/) installed in your development environment, follow the installation instructions on their website. Also, if you haven't already downloaded the [Bus Booking app](https://github.com/Adobe-Marketing-Cloud/busbooking-mobileapps), save it to your local machine and extract the zip archive to your desktop.
 
@@ -58,11 +57,11 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
    ![navigate to the project directory](images/ios/objective-c/mobile-launch-install-goToProjectDirectory.png)
 
-1. In the Launch interface, change the operating system to `iOS`
+1. In the Data Collection interface, change the operating system to `iOS`
 
 1. Copy the first iOS instruction `pod init`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
 
-   ![Copy pod init to your clipboard in the Launch interface](images/ios/mobile-launch-install-copyPodInit.png)
+   ![Copy pod init to your clipboard in the Data Collection interface](images/ios/mobile-launch-install-copyPodInit.png)
 
 1. In your Terminal app, run the `pod init` command and wait for it to complete
 
@@ -74,9 +73,9 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 1. Your computer may open a dialog asking with which application you would like to open the podfile. Choose any text editor, like `TextEdit`
 
-1. In the Launch interface, copy the list of dependencies by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon. Note how there is a line corresponding to each one of the extensions you added in the earlier lesson. Each extension has its own set of code which builds on the Mobile Core extension and can only be added or removed with an app update:
+1. In the Data Collection interface, copy the list of dependencies by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon. Note how there is a line corresponding to each one of the extensions you added in the earlier lesson. Each extension has its own set of code which builds on the Mobile Core extension and can only be added or removed with an app update:
 
-   ![Copy dependencies to your clipboard in the Launch interface](images/ios/mobile-launch-install-copyDependencies.png)
+   ![Copy dependencies to your clipboard in the Data Collection interface](images/ios/mobile-launch-install-copyDependencies.png)
 
 1. In your text editor, paste the dependencies from your clipboard right after the  line `# Pods for BusBookingObjectiveC`
 
@@ -86,7 +85,7 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
 1. You can now close your text editor
 
-1. In the Launch interface, copy the next iOS instruction `pod repo update`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+1. In the Data Collection interface, copy the next iOS instruction `pod repo update`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
 
    ![Copy pod repo update](images/ios/mobile-launch-install-copyPodRepoUpdate.png)
 
@@ -94,9 +93,9 @@ The Adobe Mobile SDK for iOS uses the CocoaPods to manage dependencies between i
 
    ![Run pod repo update](images/ios/objective-c/mobile-launch-install-podRepoUpdate.png)
 
-1. In the Launch interface, copy the next iOS instruction `pod install`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
+1. In the Data Collection interface, copy the next iOS instruction `pod install`, by clicking the ![Copy](images/mobile-launch-copyIcon.png) icon
 
-   ![Copy pod install to your clipboard in the Launch interface](images/ios/mobile-launch-install-copyPodInstall.png)
+   ![Copy pod install to your clipboard in the Data Collection interface](images/ios/mobile-launch-install-copyPodInstall.png)
 
 1. In your Terminal app, run the `pod install` command and wait for it to complete
 
@@ -117,7 +116,7 @@ Now it's time to update the App to import the SDK:
 
    ![Open the AppDelegate file](images/ios/objective-c/mobile-launch-install-openAppDelegate.png)
 
-1. In the Launch interface, scroll to the **[!UICONTROL Add Initialization Code]** section and choose **[!UICONTROL Objective C]** as the iOS language you are using.
+1. In the Data Collection interface, scroll to the **[!UICONTROL Add Initialization Code]** section and choose **[!UICONTROL Objective C]** as the iOS language you are using.
 1. Copy the import statements, by clicking the first ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section:
 
    ![Copy the import statements to your clipboard](images/ios/objective-c/mobile-launch-install-copyImports.png)
@@ -126,7 +125,7 @@ Now it's time to update the App to import the SDK:
 
    ![Paste the import statements into your AppDelegate file](images/ios/objective-c/mobile-launch-install-pasteImports.png)
 
-1. In the Launch interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the Launch environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
+1. In the Data Collection interface, copy the two lines related to the Core extension, by clicking the second ![Copy](images/mobile-launch-copyIcon.png) icon in the **[!UICONTROL Add Initialization Code]** section. The first line turns on console logging statements (available options are "debug", "verbose", "warning", and "error"). The second line points to the unique identifier of the tag environment. This is important, as you will need to update this value when we are ready to deploy the app to the production environment.
 
    ![Copy the Core statements to your clipboard](images/ios/objective-c/mobile-launch-install-copyCore.png)
 
@@ -134,7 +133,7 @@ Now it's time to update the App to import the SDK:
 
    ![Paste the Core statements into your AppDelegate file](images/ios/objective-c/mobile-launch-install-pasteCore.png)
 
-1. In the Launch interface, copy the extension statements, by clicking the third ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section:
+1. In the Data Collection interface, copy the extension statements, by clicking the third ![Copy](images/mobile-launch-copyIcon.png) icon in the [!UICONTROL Add Initialization Code] section:
 
    ![Copy the Extension statements to your clipboard](images/ios/objective-c/mobile-launch-install-copyExtensions.png)
 
@@ -144,7 +143,7 @@ Now it's time to update the App to import the SDK:
 
 >[!NOTE]
 >
->The Mobile Install Instructions provided in the Launch interface include the import and registration statements for Identity, Lifecycle, and Signal extensions, as well as the initialization of the Lifecyle metrics. These extensions are considered part of the Mobile Core extension. If you do not wish to use these extensions in your app, you do not need to import, register, or implement other code associated with these extensions.
+>The Mobile Install Instructions provided in the Data Collection interface include the import and registration statements for Identity, Lifecycle, and Signal extensions, as well as the initialization of the Lifecyle metrics. These extensions are considered part of the Mobile Core extension. If you do not wish to use these extensions in your app, you do not need to import, register, or implement other code associated with these extensions.
 >
 >Also, there are additional implementation options which should be considered when using these extensions (for example, you could pause/restart Lifecycle collection when the user backgrounds/foregrounds the app). You can read more about this in [the Mobile Core extension documentation](https://aep-sdks.gitbook.io/docs/using-mobile-extensions/mobile-core)
 
@@ -165,7 +164,7 @@ Now it's time to update the App to import the SDK:
 
 Here are examples of some specific calls you can look for:
 
-1. **Calls to retrieve the Launch configuration** (filter your console to `adobedtm.com`). Note the extension configurations which you entered in the earlier lesson. While adding the extension requires an update to the app, these settings can be managed externally in Launch and changed at any time:
+1. **Calls to retrieve the tags configuration** (filter your console to `adobedtm.com`). Note the extension configurations which you entered in the earlier lesson. While adding the extension requires an update to the app, these settings can be managed externally in tags and changed at any time:
 
     ```objective-c
     2019-03-13 16:53:26.633816-0400 BusBookingObjectiveC[56630:3854917] [AMSDK DEBUG <RulesDownloader>]: Successfully downloaded Rules from 'https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip'
@@ -173,7 +172,7 @@ Here are examples of some specific calls you can look for:
     {"target.propertyToken":"","target.timeout":5,"global.privacy":"optedin","analytics.backdatePreviousSessionInfo":true,"analytics.offlineEnabled":true,"build.environment":"dev","rules.url":"https://assets.adobedtm.com/launch-EN360aefc739b04410816f751a95861744-development-rules.zip","experienceCloud.org":"7ABB3E6A5A7491460A495D61@AdobeOrg","target.clientCode":"techmarketingdemos","target.autoFetch":true,"target.fetchBackground":false,"lifecycle.sessionTimeout":300,"target.environmentId":"busbookingapp","analytics.server":"tmd.sc.omtrdc.net","analytics.rsids":"tmd-mobile-dev1","analytics.batchLimit":0,"property.id":"PRb4881271498b4f2cbaf67d38a8f3891a","global.ssl":true,"analytics.aamForwardingEnabled":true}
     ```
 
-1. **Request to the Identity Service** (filter your console to `demdex.net`) In this example, the ID (`d_mid`)has already been set and is just being reported up again)
+1. **Request to the Identity Service** (filter your console to `demdex.net`) In this example, the ID (`d_mid`) has already been set and is just being reported up again)
 
     ```objective-c
     2019-03-13 16:53:26.655908-0400 BusBookingObjectiveC[56630:3854937] [AMSDK DEBUG <com.adobe.module.identity>]:

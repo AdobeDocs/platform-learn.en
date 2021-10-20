@@ -1,6 +1,6 @@
 ---
-title: Overview of Identity and Identity Graphs in Adobe Experience Platform
-description: Adobe Experience Platform provides a rich set of Identity resolution capabilities, which are built from the ground up to link disconnected identities to deliver a consistent connected experience by referencing a unified profile. This video covers the three capabilities of Identity Collection, Identity Graphs, and the APIs, describes how deterministic and probabilistic algorithms are used to construct private identity graphs, and discusses the role of private identity graphs, Adobe Device Co-Op, and third-party graphs.
+title: Identity and identity graphs overview
+description: Learn about the key capabilities of identity resolution in Adobe Experience Platform&mdash;identity collection, identity graphs, and the APIs. Learn how the Identity Service links disconnected identities to deliver a consistent connected experience by constructing a unified profile.
 role: Data Architect
 feature: Identities
 kt: 3039
@@ -9,7 +9,7 @@ exl-id: 5e54cae9-9c78-4296-a28a-d043570811d4
 ---
 # Identity and identity graphs overview
 
-Adobe Experience Platform provides a rich set of Identity resolution capabilities, which are built from the ground up to link disconnected identities to deliver a consistent connected experience by referencing a unified profile. This video covers the three capabilities of Identity Collection, Identity Graphs, and the APIs, describes how deterministic and probabilistic algorithms are used to construct private identity graphs, and discusses the role of private identity graphs, Adobe Experience Platform Identity Service Co-Op Graph, and third-party graphs.
+Learn about the key capabilities of identity resolution in Adobe Experience Platform&mdash;identity collection, identity graphs, and the APIs. Learn how the Identity Service links disconnected identities to deliver a consistent connected experience by constructing a unified profile. For  more information, please visit the [identity service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
 
@@ -17,7 +17,3 @@ Adobe Experience Platform provides a rich set of Identity resolution capabilitie
 >
 > This video is part of a course [Getting Started with Adobe Experience Platform for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), available for free on Experience League!
 
-## Additional Resources
-
-* [Label, Ingest, and Verify Identity Data](label-ingest-and-verify-identity-data.md)
-* [Identity Service documentation](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html)

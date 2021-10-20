@@ -14,13 +14,5 @@ Destinations are pre-built integrations with destination platforms supported by 
 
 >[!VIDEO](https://video.tv.adobe.com/v/29707?quality=12&learn=on)
 
-## Additional Resources
+For  more information, please visit the [documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/destinations-overview.html).
 
-* [Understanding Adobe's Real-time Customer Data Platform video](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-* [Demo of Real-time Customer Data Platform video](/help/platform/rtcdp/demo.md)
-* [Understanding the Real-time Customer Data Platform User Interface and Workflow video](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-* [Create Destinations and Activate Data video](/help/platform/destinations/create-destinations-and-activate-data.md)
-* [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
-* [Integrate with IAB's Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-* [Enforce data usage policies video](../governance/enforce-data-usage-policies.md)
-* [Destinations Overview documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/destinations/destinations-overview.html)

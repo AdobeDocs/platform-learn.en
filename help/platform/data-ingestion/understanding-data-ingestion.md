@@ -19,6 +19,4 @@ Adobe Experience Platform's data ingestion capabilities let you bring your data 
 
 ## Additional Resources
 
-* [Understanding Streaming Ingestion video](understanding-streaming-ingestion.md)
-* [Create Datasets and Ingest Data video](create-datasets-and-ingest-data.md)
 * [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)

@@ -33,7 +33,7 @@ You've learned how to:
 
 
 
-## What should I do with my sandbox and Launch property?
+## What should I do with my sandbox and tag property?
 
 I suggest you keep it and use it for further experimentation with Platform. We hope to create additional tutorials that build on the schemas and data used here. If you've used all of the sandboxes in your account, and it's needed for another purpose, you can reset or delete it.
 

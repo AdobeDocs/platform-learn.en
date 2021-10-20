@@ -135,6 +135,6 @@ A key use case for merge policies is for data governance. For example, say you i
 ## Additional Resources
 
 * [Merge Policies documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
-* [Merge Policies API (part of Real-time Customer Profile API) reference](https://www.adobe.io/apis/experienceplatform/home/api-reference.html#/Merge_policies)
+* [Merge Policies API (part of Real-time Customer Profile API) reference](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Now let's move on to the [data governance framework](apply-data-governance-framework.md).

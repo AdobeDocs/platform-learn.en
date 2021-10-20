@@ -1,10 +1,9 @@
 ---
-title: Publish your Launch Property
-description: Learn how to publish your Launch property from the Development environment to the Staging and Production environments. This lesson is part of the Implementing the Experience Cloud in Websites with Launch tutorial.
-feature: Tags
+title: Publish your tag property
+description: Learn how to publish your tag property from the Development environment to the Staging and Production environments. This lesson is part of the Implement the Experience Cloud in websites tutorial.
 exl-id: dec70472-cecc-4630-b68e-723798f17a56
 ---
-# Publish your Launch Property
+# Publish your tag property
 
 Now that you have implemented some key solutions of the Adobe Experience Cloud in your Development environment, it's time to learn the publishing workflow.
 
@@ -50,7 +49,7 @@ In a real-life scenario, the next step in the process would typically be to have
 
 **To Validate the Changes in the Staging Library**
 
-1. In your Launch property, open the [!UICONTROL Environments] page
+1. In your tag property, open the [!UICONTROL Environments] page
 
 1. In the [!UICONTROL Staging] row, click the Install icon ![Install icon](images/launch-installIcon.png) to open the modal
 
@@ -75,11 +74,11 @@ In a real-life scenario, the next step in the process would typically be to have
 
 1. Click the disk icon to save
 
-   ![Launch environment shown in Debugger](images/switchEnvironments-debugger-save.png)
+   ![tag environment shown in Debugger](images/switchEnvironments-debugger-save.png)
 
-1. Reload and check the Summary tab of the Debugger. Under the Launch section, you should now see your Staging Property is implemented, showing your property name (I.e. "Launch Tutorial" or whatever you named your property)!
+1. Reload and check the Summary tab of the Debugger. Under the Launch section, you should now see your Staging Property is implemented, showing your property name (I.e. "tags Tutorial" or whatever you named your property)!
 
-   ![Launch environment shown in Debugger](images/publishing-debugger-staging.png)
+   ![tag environment shown in Debugger](images/publishing-debugger-staging.png)
 
 In real-life, once your QA team has signed off by reviewing the changes in the Staging environment it is time to publish to production.
 
@@ -109,4 +108,4 @@ In real-life, once your QA team has signed off by reviewing the changes in the S
 
    ![Published](images/publishing-published.png)
 
-That’s it! You've completed the tutorial and published your first property in Launch!
+That’s it! You've completed the tutorial and published your first property in tags!
