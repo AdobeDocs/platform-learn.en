@@ -20,7 +20,7 @@ In this lesson, you will create merge policies to prioritize how multiple data s
 
 Adobe Experience Platform enables you to bring data together from multiple sources and combine it to see a complete view of each individual customer. When bringing this data together, merge policies determine how data is prioritized and what data is combined to create that unified view.
 
-We'll stick to the UI for this lesson, but API options also exist for creating merge policies.
+We'll stick to the user interface for this lesson, but API options also exist for creating merge policies.
 
 **Data Architects** will need to create merge policies outside of this tutorial.
 

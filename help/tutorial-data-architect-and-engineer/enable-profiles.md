@@ -41,7 +41,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
 
-## Enable schemas for Real-time Customer Profile using Platform UI 
+## Enable schemas for Real-time Customer Profile using Platform user interface 
 
 Let's start with the simple task of enabling a schema:
 
@@ -72,7 +72,7 @@ Easy right? Repeat the steps above for these other schema:
 
 ## Enable schemas for Real-time Customer Profile using Platform API 
 
-Now, it's time to enable the `Luma CRM Schema` with the API. If you want to skip this exercise and just enable it in the UI, go right ahead.
+Now, it's time to enable the `Luma CRM Schema` with the API. If you want to skip this exercise and just enable it in the user interface, go right ahead.
 
 ### Get the meta:altId of the schema
 
@@ -107,11 +107,11 @@ Now that we have the meta:altId of the schema, we can enable it for profile:
 
     ![Enable the CRM schema for profile with your custom meta:altIid used as the SCHEMA_ID param](assets/profile-crm-enableProfile.png) 
 
-You should be able to see in the UI that all five schemas are enabled for Profile (you might need to SHIFT-Reload to see that `Luma CRM Schema` is enabled):
+You should be able to see in the user interface that all five schemas are enabled for Profile (you might need to SHIFT-Reload to see that `Luma CRM Schema` is enabled):
  ![All schemas enabled](assets/profile-allSchemasEnabled.png) 
 
 
-## Enable datasets for Real-time Customer Profile using Platform UI 
+## Enable datasets for Real-time Customer Profile using Platform user interface 
 
 The datasets must be enabled for Profile, too, and the process is even simpler:
 
@@ -133,7 +133,7 @@ Repeat the steps above for these other datasets:
 
 ## Enable datasets for Real-time Customer Profile using Platform API 
 
-Now you will enable a dataset for Profile using the API. Again, if you want to enable it via the UI using the method above, that's fine, too.
+Now you will enable a dataset for Profile using the API. Again, if you want to enable it via the user interface using the method above, that's fine, too.
 
 ### Get the id of the dataset
 
@@ -171,7 +171,7 @@ Now that we have the id of the dataset, we can enable it for profile:
 
     ![Enable the CRM dataset for profile, making sure to use your custom dataset id as the DATASET_ID param](assets/profile-crm-enableDataset.png) 
 
-You can also confirm that the UI shows the dataset enabled:
+You can also confirm that the user interface shows the dataset enabled:
 ![Confirm](assets/profile-crm-confirmEnabled.png) 
 
 >[!IMPORTANT]

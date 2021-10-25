@@ -39,7 +39,7 @@ You will need access to an (S)FTP server or cloud storage solution for the Sourc
 
 ## Ingest data in batches with Platform user interface
 
-Data can be uploaded directly into a dataset on the datasets screen in JSON and parquet formats.
+Data can be uploaded directly into a dataset on the datasets screen in JSON and parquet formats. This is a great way to test ingestion of some of your data after creating a
 
 ### Download and prep the data
 
@@ -59,7 +59,7 @@ First, get the sample data and customize it for your tenant:
 ### Ingest the data
 
 1. In the Platform user interface, select **[!UICONTROL Datasets]** in the left navigation
-1. Select on your `Luma Loyalty Dataset`
+1. Open your `Luma Loyalty Dataset`
 1. Scroll down until you see the **[!UICONTROL Add Data]** section in the right column
 1. Upload the `luma-loyalty.json` file.
 1. Once the file uploads, a row for the batch will appear
@@ -116,7 +116,7 @@ Now let's upload data using the API.
 
 >[!NOTE]
 >
->Data architects, feel free to upload the CRM data via the UI method.
+>Data architects, feel free to upload the CRM data via the user interface method.
 
 ### Download and prep the data
 
@@ -263,7 +263,7 @@ Go to **[!UICONTROL Sources]** in the left navigation to open the Sources catalo
 
 Okay, let's ingest data using a source connector.
 
-This exercise will be choose-your-own-adventure style. I am going to show the workflow  using the FTP source connector. You can either use a different Cloud Storage source connector that you use at your company, or upload the json file using the dataset UI like we did with the loyalty data.
+This exercise will be choose-your-own-adventure style. I am going to show the workflow  using the FTP source connector. You can either use a different Cloud Storage source connector that you use at your company, or upload the json file using the dataset user interface like we did with the loyalty data.
 
 Many of the Sources have a similar configuration workflow, in which you:
 
@@ -295,14 +295,14 @@ Many of the Sources have a similar configuration workflow, in which you:
 1. When Platform has successfully connected to the Source, select the **[!UICONTROL Next]** button
     ![Authenticate to the source](assets/ingestion-offline-authentication.png)
 
-1. On the **[!UICONTROL Select data]** step, the UI will use your credentials to open the folder on your cloud storage solution
+1. On the **[!UICONTROL Select data]** step, the user interface will use your credentials to open the folder on your cloud storage solution
 1. Select the files you would like to ingest, for example `luma-offline-purchases.json`
 1. As the **[!UICONTROL Data format]**, select `XDM JSON`
 1. You can then preview the json structure and sample data in your file
 1. Select the **[!UICONTROL Next]** button
     ![Select your data file(s)](assets/ingestion-offline-selectData.png)
 
-1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Events Dataset` and select the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping UI on this step:
+1. On the **[!UICONTROL Mapping]** step, select your `Luma Offline Purchase Events Dataset` and select the **[!UICONTROL Next]** button. Note in the message that since the data we are ingesting is a JSON file, there is no mapping step where we map source field to target field. JSON data must be in XDM already. If you were ingesting a CSV, you would see the full mapping user interface on this step:
     ![Select your dataset](assets/ingestion-offline-mapping.png)
 1. On the **[!UICONTROL Scheduling]** step, you choose the frequency with which you want to reingest data from the Source. Take a moment to look at the options. We are just going to do a one-time ingestion, so leave the **[!UICONTROL Frequency]** on **[!UICONTROL Once]** and select the **[!UICONTROL Next]** button:
     ![Schedule your data flow](assets/ingestion-offline-scheduling.png)

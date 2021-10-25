@@ -17,7 +17,7 @@ In this lesson, you will set up a project in the Adobe Developer Console and dow
 
 In order to complete the API exercises in this tutorial, [download the Postman app for your operating system.](https://www.postman.com/downloads/) While not required in order to use Experience Platform APIs, Postman makes API workflows easier, and Adobe Experience Platform provides dozens of Postman collections to help you execute API calls and learn how they operate. The rest of this tutorial assumes some working knowledge of Postman. For assistance, please reference the [Postman documentation](https://learning.postman.com/).
 
-Platform is built API-first. While interface options also exist for all major tasks, you might want to use the Platform API at some point. For example to ingest data, move items around between sandboxes, automate routine tasks or to use new Platform features before the UI has been built.
+Platform is built API-first. While interface options also exist for all major tasks, you might want to use the Platform API at some point. For example to ingest data, move items around between sandboxes, automate routine tasks or to use new Platform features before the user interface has been built.
 
 **Data Architects** and **Data Engineers** may need to use Platform API outside of this tutorial.
 

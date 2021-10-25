@@ -35,7 +35,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 
 Let's start with some simple queries:
 
-1. In the Platform UI, go to **Queries** in the left navigation
+1. In the Platform user interface, go to **Queries** in the left navigation
 1. Select the **Create Query** button on the top right to open a text box to run and execute queries
 1. Enter the following query in the editor and press Shift+Enter or Shift+Return to execute the query.
 
