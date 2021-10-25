@@ -3,7 +3,6 @@ title: Choose a hosting option for your tag library (formerly Launch library)
 description: Learn how to choose the best hosting option for your tag library.
 feature: Tags
 kt: 3526
-thumbnail:
 exl-id: adc00363-7490-44ab-95e2-46f9f630021c
 ---
 # Choose a hosting option

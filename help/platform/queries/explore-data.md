@@ -1,5 +1,5 @@
 ---
-title: Query Service API
+title: Explore data
 description: Learn how to validate ingested data, preview data, and explore statistical and analytical properties of data using SQL functions.
 feature: Queries
 kt: 7684

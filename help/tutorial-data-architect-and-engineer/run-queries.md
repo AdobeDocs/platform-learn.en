@@ -51,9 +51,9 @@ Let's start with some simple queries:
 1. Now try this query, replacing `_techmarketingdemos` with your own tenant namespace, which, if you recall, is visible in your schemas.
    
     ```
-    SELECT person.name.lastName,_techmarketingdemos.loyalty.level
+    SELECT person.name.lastName,loyalty.tier
     FROM luma_loyalty_dataset
-    WHERE _techmarketingdemos.loyalty.level ='gold'
+    WHERE loyalty.tier ='gold'
     ```
 
     ![SELECT data from the loyalty dataset](assets/queries-loyaltySelect.png)
@@ -64,6 +64,15 @@ Let's start with some simple queries:
 1. With your successful query, **[!UICONTROL Name]** it `Luma Gold Level Customers`
 1. Select the **[!UICONTROL Save]** button
     ![Saving the query](assets/queries-loyaltySelect-save.png)
+
+
+<!--SELECT COUNT(DISTINCT (_techmarketingdemos.systemIdentifier.loyaltyId)) FROM luma_loyalty_dataset 
+
+
+SELECT _techmarketingdemos.systemIdentifier.loyaltyId, COUNT(_techmarketingdemos.systemIdentifier.loyaltyId)
+FROM luma_loyalty_dataset 
+GROUP BY _techmarketingdemos.systemIdentifier.loyaltyId
+HAVING COUNT(_techmarketingdemos.systemIdentifier.loyaltyId) > 1;-->
 
 ## Additional Exercises
 
