@@ -2,7 +2,7 @@
 title: Create segments with B2B data
 description: Learn how to create segments with B2B data.
 solution: Experience Platform, Real-time Customer Data Platform
-feature: Segmentation
+feature: Segments
 role: User
 kt: 9261
 thumbnail: 338252.jpg
