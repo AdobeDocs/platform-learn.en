@@ -1,0 +1,18 @@
+---
+title: Create segments with B2B data
+description: Learn how to create segments with B2B data.
+solution: Experience Platform, Real-time Customer Data Platform
+feature: Segmentation
+role: User
+kt: 9261
+thumbnail: 338252.jpg
+---
+# Create segments with B2B data
+
+Learn how to create segments with your B2B data in Real-time Customer Data Platform B2B Edition and Adobe Experience Platform. Use account profiles and opportunities in segment definitions.
+
+>[!VIDEO](https://video.tv.adobe.com/v/338252?quality=12&learn=on)
+
+
+
+For more information, please see the [Segmentation documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).

@@ -73,7 +73,8 @@ doc-type: video
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
   + [Activate profiles and segments to a destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
-  + [Configure the Azure Blob Destination](/help/platform/destinations/configure-the-azure-blob-destination.md)
+  + [Configure the Azure Blob destination](/help/platform/destinations/configure-the-azure-blob-destination.md)
+  + [Configure the Marketo destination](/help/platform/destinations/configure-the-marketo-destination.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
@@ -86,6 +87,7 @@ doc-type: video
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
   + [Bring data into Profile](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
   + [Customize profile view details](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+  + [View account profiles](/help/platform/profiles/view-account-profiles.md)
   + [Create merge policies](/help/platform/profiles/create-merge-policies.md)
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
 + Privacy {#privacy}
@@ -117,6 +119,7 @@ doc-type: video
   + [Plan your data model](/help/platform/schemas/plan-your-data-model.md)
   + [Convert your data model to XDM](/help/platform/schemas/convert-your-data-model-to-xdm.md)
   + [Create schemas](/help/platform/schemas/create-schemas.md)
+  + [Create schemas for B2B data](/help/platform/schemas/create-schemas-for-b2b-data.md)
   + [Create classes](/help/platform/schemas/create-classes.md)
   + [Create field groups](/help/platform/schemas/create-schema-field-groups.md)
   + [Create data types](/help/platform/schemas/create-data-types.md)
@@ -133,6 +136,7 @@ doc-type: video
   + [Create sequential segments](/help/platform/segments/create-sequential-segments.md)
   + [Create dynamic segments](/help/platform/segments/create-dynamic-segments.md)
   + [Create multi-entity segments](/help/platform/segments/create-multi-entity-segments.md)
+  + [Create segments with B2B data](/help/platform/segments/create-segments-with-b2b-data.md)
   + [Demo of streaming segmentation](/help/platform/segments/streaming-segmentation-demo.md)
   + [Evaluate a segment](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
   + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
@@ -140,6 +144,7 @@ doc-type: video
   + [Sources overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
   + [Ingest data from Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
+  + [Ingest data from Marketo](/help/platform/sources/ingest-data-from-marketo.md)
   + [Ingest data from cloud storage](/help/platform/sources/ingest-data-from-cloud-storage.md)
   + [Ingest data from CRM](/help/platform/sources/ingest-data-from-crm.md)
   + [Ingest data from databases](/help/platform/sources/ingest-data-from-databases.md)
@@ -151,8 +156,10 @@ doc-type: video
   + [Offer Decisioning tutorials](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target="_blank"}
   + Real-time CDP tutorials{#rtcdp}
     + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+    + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
     + [End-to-end demo](/help/platform/rtcdp/demo.md)
     + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+    + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
     + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
     + [Enforce Data Usage Policies](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
 + Intelligent Services {#intelligent-services}
@@ -167,6 +174,7 @@ doc-type: video
   + [Use Customer AI Scores and Insights](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
+  + [Orchestrate campaigns with Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
 + Industry Trends {#industry}
   + [The Future of Data Management and the Changing Environment](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
   + [A Tale of Two Perceptions - Brands vs. Consumers](/help/platform/industry/brands-vs-consumers.md)
