@@ -100,6 +100,7 @@ doc-type: video
   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
   + [Subscribe to Privacy Events](/help/platform/privacy/subscribe-to-privacy-events.md)
   + [10 considerations for Responsible Customer Data Management](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
+  + [Elevating the Marketer’s Role as a Data Steward](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + Queries {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Query Service UI](/help/platform/queries/query-service-ui.md)
