@@ -6,9 +6,9 @@ role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 338292.jpg
-kt: 7334
+kt: 9301
 type: Event
-exl-id: 00664b18-f230-44b8-a963-7ef0298ea39b
+
 ---
 # Elevating the Marketer’s Role as a Data Steward
 
