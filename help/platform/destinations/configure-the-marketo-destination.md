@@ -11,6 +11,10 @@ thumbnail: 338248.jpg
 
 Learn how configure the Marketo destination in Adobe Experience Platform so you can activate your Platform segments to your Marketo Engage instance.
 
+>[!IMPORTANT]
+>
+>Real-time CDP B2B Edition is currently in beta. The documentation and the functionality are subject to change.
+
 >[!VIDEO](https://video.tv.adobe.com/v/338248?quality=12&learn=on)
 
 

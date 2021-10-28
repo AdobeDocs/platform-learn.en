@@ -11,6 +11,10 @@ thumbnail: 338251.jpg
 
 Learn how view account profiles and opportunities in Real-time Customer Data Platform B2B Edition and Adobe Experience Platform.
 
+>[!IMPORTANT]
+>
+>Real-time CDP B2B Edition is currently in beta. The documentation and the functionality are subject to change.
+
 >[!VIDEO](https://video.tv.adobe.com/v/338251?quality=12&learn=on)
 
 

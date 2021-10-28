@@ -11,6 +11,10 @@ thumbnail: 338252.jpg
 
 Learn how to create segments with your B2B data in Real-time Customer Data Platform B2B Edition and Adobe Experience Platform. Use account profiles and opportunities in segment definitions.
 
+>[!IMPORTANT]
+>
+>Real-time CDP B2B Edition is currently in beta. The documentation and the functionality are subject to change.
+
 >[!VIDEO](https://video.tv.adobe.com/v/338252?quality=12&learn=on)
 
 

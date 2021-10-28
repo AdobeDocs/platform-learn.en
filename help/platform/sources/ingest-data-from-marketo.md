@@ -11,6 +11,10 @@ thumbnail: 338250.jpg
 
 Learn how to ingest data from Marketo Engage into Real-time Customer Data Platform B2B Edition and Adobe Experience Platform using the source connector.
 
+>[!IMPORTANT]
+>
+>Real-time CDP B2B Edition is currently in beta. The documentation and the functionality are subject to change.
+
 >[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
 
 

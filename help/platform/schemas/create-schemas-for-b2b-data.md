@@ -12,6 +12,10 @@ thumbnail: 338241.jpg
 Learn how to create schemas for your business data with Real-time Customer Data Platform B2B Edition. Learn about the business classes, field groups, and identity namespaces and how to auto-create them in your account with the Postman utility.
 
 
+>[!IMPORTANT]
+>
+>Real-time CDP B2B Edition is currently in beta. The documentation and the functionality are subject to change.
+
 >[!VIDEO](https://video.tv.adobe.com/v/338241?quality=12&learn=on)
 
 

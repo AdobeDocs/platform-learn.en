@@ -10,6 +10,9 @@ thumbnail: 338249.jpg
 
 Learn how to business-to-business (B2B) marketers can unify people and account profiles across systems and get a full understanding of their customers for the very first time.
 
+>[!IMPORTANT]
+>
+>Real-time CDP B2B Edition is currently in beta. The documentation and the functionality are subject to change.
 
 >[!VIDEO](https://video.tv.adobe.com/v/338249?quality=12&learn=on)
 
