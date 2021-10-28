@@ -1,6 +1,6 @@
 ---
 title: Configure the Marketo destination
-description: Learn how configure the Marketo destination in Adobe Experience Platform so you can activate your Platform segments to your Marketo Engage instance.
+description: Learn how to configure the Marketo destination in Adobe Experience Platform so you can activate your Platform segments to your Marketo Engage instance.
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Destinations
 role: User, Admin
@@ -9,7 +9,7 @@ thumbnail: 338248.jpg
 ---
 # Configure the Marketo destination
 
-Learn how configure the Marketo destination in Adobe Experience Platform so you can activate your Platform segments to your Marketo Engage instance.
+Learn how to configure the Marketo destination in Adobe Experience Platform so you can activate your Platform segments to your Marketo Engage instance.
 
 >[!IMPORTANT]
 >
