@@ -8,7 +8,7 @@ doc-type: video
 
 # Data Collection tutorials{#data-collection}
 
-+ [Overview](overview.md)
++ [Data Collection Tutorials](overview.md)
 + Tags{#tags}
   + [Overview and create a property](tags/create-a-property.md)
   + [Choose a hosting option](tags/choose-a-hosting-option.md)

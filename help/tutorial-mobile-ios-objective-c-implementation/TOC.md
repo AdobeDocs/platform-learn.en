@@ -12,7 +12,7 @@ doc-type: multipage
 
 # Implement the Experience Cloud in Mobile iOS Objective-C Applications {#implement-in-mobile-ios-objective-c-apps}
 
-+ [Overview](overview.md)
++ [Mobile SDK in Objective-C Tutorial](overview.md)
 + Configure tags{#configure-tags}
   + [Create a property](create-a-property.md)
   + [Add extensions](add-extensions.md)
