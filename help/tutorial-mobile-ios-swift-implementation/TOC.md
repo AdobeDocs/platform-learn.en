@@ -11,7 +11,7 @@ doc-type: multipage
 
 # Implement the Experience Cloud in Mobile iOS Swift Applications {#implement-in-mobile-ios-swift-apps}
 
-+ [Overview](overview.md)
++ [Mobile SDK in Swift Tutorial](overview.md)
 + Configure tags{#configure-tags}
   + [Create a property](create-a-property.md)
   + [Add extensions](add-extensions.md)

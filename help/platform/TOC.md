@@ -8,7 +8,7 @@ doc-type: video
 
 # Adobe Experience Platform Tutorials {#tutorials}
 
-+ [Overview](/help/platform/overview.md)
++ [Platform Tutorials](/help/platform/overview.md)
 + Introduction to Platform {#intro-to-platform}
   + [A customer experience powered by Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the scenes: A customer experience powered by Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
