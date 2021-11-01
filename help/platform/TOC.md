@@ -159,6 +159,7 @@ doc-type: video
     + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
     + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
     + [End-to-end demo](/help/platform/rtcdp/demo.md)
+    + [Tour](https://rtcdpshowcase.adobe.com/){target="_blank"}
     + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
     + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
     + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
