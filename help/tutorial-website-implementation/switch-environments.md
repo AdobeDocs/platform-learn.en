@@ -49,13 +49,9 @@ At the end of this lesson, you will be able to:
    ![tag environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail-prod.png)
 
 1. Go to the Tools tab
-
 1. Scroll to the section **[!UICONTROL Replace Launch Embed Code]**
-
 1. Make sure the Chrome tab with the Luma site is in focus behind the Debugger (not the tab with this tutorial or the tab with the Data Collection interface).  Paste the embed code that is in your clipboard into the input field
-
 1. Toggle on the "Apply across luma.enablementadobe.com" feature so that all pages on the Luma site will map to your tag property
-
 1. Click the **[!UICONTROL Save]** button
 
    ![tag environment shown in Debugger](images/switchEnvironments-debugger-save.png)
