@@ -17,4 +17,4 @@ Learn how to create schemas for your business data with Real-time Customer Data 
 >
 > This video is part of a course, [Getting started with Real-time CDP, B2B Edition for marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), available for free on Experience League!
 
-For  more information, please visit the [schemas documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
+For more information, please visit the [schemas documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
