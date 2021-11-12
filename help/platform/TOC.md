@@ -8,7 +8,7 @@ doc-type: video
 
 # Adobe Experience Platform Tutorials {#tutorials}
 
-+ [Overview](/help/platform/overview.md)
++ [Platform Tutorials](/help/platform/overview.md)
 + Introduction to Platform {#intro-to-platform}
   + [A customer experience powered by Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
   + [Behind the scenes: A customer experience powered by Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
@@ -100,6 +100,7 @@ doc-type: video
   + [Privacy Service API](/help/platform/privacy/using-the-privacy-service-api.md)
   + [Subscribe to Privacy Events](/help/platform/privacy/subscribe-to-privacy-events.md)
   + [10 considerations for Responsible Customer Data Management](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
+  + [Elevating the Marketer’s Role as a Data Steward](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + Queries {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Query Service UI](/help/platform/queries/query-service-ui.md)
@@ -158,6 +159,7 @@ doc-type: video
     + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
     + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
     + [End-to-end demo](/help/platform/rtcdp/demo.md)
+    + [Tour](https://rtcdpshowcase.adobe.com/){target="_blank"}
     + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
     + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
     + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)

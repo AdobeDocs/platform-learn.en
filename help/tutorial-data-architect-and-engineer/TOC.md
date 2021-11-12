@@ -8,7 +8,7 @@ doc-type: multipage
 
 # Getting Started with Experience Platform for Data Architects and Data Engineers {#getting-started-for-data-architects-and-data-engineers}
 
-+ [Overview](overview.md)
++ [Data Architect and Engineer Tutorial](overview.md)
 + [1. Configure permissions](configure-permissions.md)
 + [2. Create a sandbox](create-a-sandbox.md)
 + [3. Set up Developer Console and Postman](set-up-developer-console-and-postman.md)
