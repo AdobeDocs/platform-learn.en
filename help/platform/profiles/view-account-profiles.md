@@ -6,6 +6,7 @@ feature: Profiles
 role: User, Data Engineer, Data Architect
 kt: 9260
 thumbnail: 338251.jpg
+exl-id: 2b739872-0f15-429c-8d19-f3bcc81f2f89
 ---
 # View account profiles
 

@@ -6,6 +6,7 @@ feature: Segments
 role: User
 kt: 9261
 thumbnail: 338252.jpg
+exl-id: 8432f6d5-bc96-404b-ae5f-7cbef7e16abb
 ---
 # Create segments with B2B data
 

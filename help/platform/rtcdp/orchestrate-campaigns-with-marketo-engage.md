@@ -5,6 +5,7 @@ solution: Experience Platform, Real-time Customer Data Platform
 role: User
 kt: 9263
 thumbnail: 338254.jpg
+exl-id: 1e5b951a-2b14-4e28-a2f2-818db7a8b376
 ---
 # Orchestrate campaigns with Marketo Engage and Real-time Customer Data Platform (CDP), B2B Edition.
 

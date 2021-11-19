@@ -5,6 +5,7 @@ solution: Experience Platform, Real-time Customer Data Platform
 role: User
 kt: 9257
 thumbnail: 338249.jpg
+exl-id: a1bde52d-33f7-4de2-953e-ff7abcc7ef84
 ---
 # Overview of Real-time Customer Data Platform (CDP), B2B Edition
 

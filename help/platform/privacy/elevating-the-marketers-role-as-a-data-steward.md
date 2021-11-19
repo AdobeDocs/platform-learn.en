@@ -8,7 +8,7 @@ doc-type: Event
 thumbnail: 338292.jpg
 kt: 9301
 type: Event
-
+exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
 ---
 # Elevating the Marketer’s Role as a Data Steward
 
