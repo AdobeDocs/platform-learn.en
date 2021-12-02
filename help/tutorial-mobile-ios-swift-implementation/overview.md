@@ -1,7 +1,7 @@
 ---
 title: Implement the Experience Cloud in Mobile iOS Swift Applications
 description: Implement the Experience Cloud in Mobile iOS Swift Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Swift apps.
-doc-type: multipage-overview
+recommendations: disable
 exl-id: aa1a5d0a-abf2-47b5-a966-a9d96d096d61
 ---
 # Overview

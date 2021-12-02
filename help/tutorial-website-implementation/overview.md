@@ -1,7 +1,7 @@
 ---
 title: Implement the Experience Cloud in Websites with Tags
 description: Implement the Experience Cloud in Websites with Tags is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
-doc-type: multipage-overview
+recommendations: disable
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 ---
 # Overview

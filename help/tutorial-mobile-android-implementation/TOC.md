@@ -7,6 +7,7 @@ feature: Tags
 kt: 2798
 thumbnail: kt-2798.jpg
 doc-type: multipage
+recommendations: exclude,disable
 ---
 
 # Implement the Experience Cloud in Mobile Android™ Applications{#implement-in-mobile-android-apps}
