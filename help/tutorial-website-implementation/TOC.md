@@ -6,6 +6,7 @@ solution: Experience Platform, Data Collection
 feature: Tags
 kt: 2179
 doc-type: multipage
+recommendations: exclude,disable
 ---
 
 # Implement the Experience Cloud in Websites with Tags {#implement-in-websites}
