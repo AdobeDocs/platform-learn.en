@@ -150,65 +150,42 @@ You can find the requirements and process for submitting completion here: [Measu
   - [JSON - Sample Data: Demo System - Event Dataset for Call Center](./assets/json/m7_callcenter.json)
   - [JSON - Sample Data: Demo System - Profile Dataset for Loyalty](./assets/json/m7_loyalty.json)
 
-[8. Data Science Workspace - Popularity-based Recommendations](./modules/module8/data-science-workspace-popularity-based-recommendations.md)
-
-- **Audience:** Data Engineer, Data Architect, Data Scientist
-- **Prerequisites:** Access to Adobe Experience Platform and Data Science Workspace
-- **Description:** In this module, you'll learn how to use Adobe Experience Platform Data Science Workspace to build a Popularity-based Recommendations Recipe.
-- **Time Investment:** 90 minutes
-
-[9. Data Ingestion using Google Tag Manager and Google Analytics](./modules/module9/data-ingestion-using-google-tag-manager-and-google-analytics.md)
-
-- **Audience:** Data Engineer, Data Architect
-- **Prerequisites:** Access to Adobe Experience Platform, Google Tag Manager and Google Analytics
-- **Description:** In this module, you'll learn how to use Google Tag Manager to ingest clickstream data in real-time into Adobe Experience Platform.
-- **Time Investment:** 90 minutes
-
-[10. Intelligent Services](./modules/module10/intelligent-services.md)
+[8. Intelligent Services](./modules/module10/intelligent-services.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Scientist
 - **Prerequisites:** Access to Adobe Experience Platform, Intelligent Services
 - **Description:** In this module, you'll learn how to setup, configure and use Adobe Experience Platform Intelligent Services.
 - **Time Investment:** 60 minutes
 
-[11. RTCDP - Build a segment and take action](./modules/module11/real-time-cdp-build-a-segment-take-action.md)
+[9. RTCDP - Build a segment and take action](./modules/module11/real-time-cdp-build-a-segment-take-action.md)
 
 - **Audience:** Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform, Real-time CDP, Adobe Audience Manager, Adobe Target, AWS S3
 - **Description:** In this module, you'll configure a segment, enable it for Streaming Segmentation and activate the segment to several destinations, including Google DV360, Google AdWords, Adobe Audience Manager, Adobe Target and S3-destinations like Salesforce Marketing Cloud.
 - **Time Investment:** 90 minutes
 
-[12. Adobe Journey Optimizer: External data sources and custom actions](./modules/module12/journey-orchestration-external-weather-api-sms.md)
+[10. Adobe Journey Optimizer: External data sources and custom actions](./modules/module12/journey-orchestration-external-weather-api-sms.md)
 
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform, Adobe Journey Optimizer, Open Weather API, Twilio
 - **Description:** In this module, you'll use Adobe Journey Optimizer to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way over various channels.
 - **Time Investment:** 90 minutes
 
-[13. Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/module13/customer-journey-analytics-build-a-dashboard.md)
+[11. Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/module13/customer-journey-analytics-build-a-dashboard.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform and Customer Journey Analytics
 - **Description:** In this module, you'll get Online to Offline insights by configuring a dashboard containing omni-channel data like Website Interactions, Mobile App Interactions, Call Center Interactions, In-Store Interactions and much more.
 - **Time Investment:** 120 minutes
 
-[14. Offer Decisioning](./modules/module14/offer-decisioning.md)
+[12. Adobe Journey Optimizer: Offer Decisioning](./modules/module14/offer-decisioning.md)
 
 - **Audience:** Data Engineer, Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform and Offer Decisioning
 - **Description:** In this module, you'll use the Adobe Experience Platform - Offers/Decisioning application service in a hands-on way to configure Personalized Offers and your own Offer Activity.
 - **Time Investment:** 120 minutes
 
-[15. Data Science Workspace - Car Insurance Sales Propensity](./modules/module15/data-science-workspace-car-insurance-sales-propensity.md)
-
-- **Audience:** Data Engineer, Data Architect, Data Scientist
-- **Prerequisites:** Access to Adobe Experience Platform, Data Science Workspace, Anaconda
-- **Description:** In this module, you'll learn basic Data Science concepts, and also, how to use Adobe Experience Platform Data Science Workspace to build a Car Insurance Sales Propensity Model, schedule the model to re-train, and prepare the model for Real-time Scoring.
-- **Time Investment:** 120 minutes
-- **Download these assets**: 
-  - [JSON - Sample Data: Demo System - Event Dataset for Website](./assets/json/m15_carinsurance.json)
-
-[16. Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/module16/customer-journey-analytics-bigquery-gcp.md)
+[13. Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/module16/customer-journey-analytics-bigquery-gcp.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, Customer Journey Analytics, Google Cloud Platform, Google BigQuery
@@ -217,14 +194,14 @@ You can find the requirements and process for submitting completion here: [Measu
 - **Download these assets**: 
   - [JSON - Sample Data: Demo - Loyalty Data (M16)](./assets/json/m16_bqLoyalty.json)
 
-[17. Adobe Experience Platform and Microsoft Dynamics 365](./modules/module17/adobe-experience-platform-microsoft-dynamics-365.md)
+[14. Adobe Experience Platform and Microsoft Dynamics 365](./modules/module17/adobe-experience-platform-microsoft-dynamics-365.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, Customer Journey Analytics, Microsoft Dynamics 365 and Microsoft Azure
 - **Description:** In this module, you'll set up your instance of Dynamics 365 for Sales and load sample customer data. You will then use the Dynamics 365 Source Connector in Adobe Experience Platform to ingest that data from Microsoft Dynamics 365 into Adobe Experience Platform. Finally, you'll use Journey orchestration to connect directly with Microsoft Dynamics 365 APIs to create a contract record from the demo website and you'll configure Journey orchestration to communicate directly to a customer based on the on a change in sentiment. In addition, you'll also learn how to set up and configure Microsoft Power Automate (Flow) and trigger a custom action directly into Journey Orchestration based on the Contact record change in Microsoft Dynamics 365. 
 - **Time Investment:** 90 minutes
 
-[18. Segment Activation to Microsoft Azure Event Hub](./modules/module18/segment-activation-microsoft-azure-eventhub.md)
+[15. Segment Activation to Microsoft Azure Event Hub](./modules/module18/segment-activation-microsoft-azure-eventhub.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, Real-time CDP and Microsoft Azure
@@ -232,42 +209,42 @@ You can find the requirements and process for submitting completion here: [Measu
 As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a payload to a specified destination. We will also discuss the status of a segment qualification and how it relates to activation.
 - **Time Investment:** 90 minutes
 
-[19. Adobe Experience Platform and ServiceNow: connecting service to marketing and sales](./modules/module19/call-center-servicenow.md)
+[16. Adobe Experience Platform and ServiceNow: connecting service to marketing and sales](./modules/module19/call-center-servicenow.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform
 - **Description:** In this module you'll implement the bi-directional integration between Adobe Experience Platform and ServiceNow. 
 - **Time Investment:** 120 minutes
 
-[20. AI-Driven Chat Apps & Live Chat powered by Stackchat](./modules/module20/ai-driven-chat-apps-stackchat.md)
+[17. AI-Driven Chat Apps & Live Chat powered by Stackchat](./modules/module20/ai-driven-chat-apps-stackchat.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, a Facebook and / or WeChat account
 - **Description:** In this module, you'll build your own chatbot using Stackchat's AI-Driven Chat Apps & Live Chat
 - **Time Investment:** 120 minutes
 
-[21. Data Collection & Real-time Event Forwarding with Adobe Experience Platform Data Collection](./modules/module21/aep-data-collection-ssf.md)
+[18. Data Collection & Real-time Event Forwarding with Adobe Experience Platform Data Collection](./modules/module21/aep-data-collection-ssf.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform Data Collection, Tags and Event Forwarding properties
 - **Description:** In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection property to collect data, and then forward that data server-side to an endpoint of choice.
 - **Time Investment:** 90 minutes
 
-[22. Build your own real-time dashboard using Adobe I/O - Project Firefly and Adobe Experience Platform](./modules/module22/adobe-io-firefly.md)
+[19. Build your own real-time dashboard using Adobe I/O - Project Firefly and Adobe Experience Platform](./modules/module22/adobe-io-firefly.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst, Developer
 - **Prerequisites:** Access to Adobe Experience Platform and Adobe I/O Runtime
 - **Description:** In this module, you'll use Adobe I/O - Project Firefly to build your own real-time dashboard that consumes data from Adobe Experience Platform in real-time. 
 - **Time Investment:** 90 minutes
 
-[23. Adobe Journey Optimizer](./modules/module23/journeyoptimizer.md)
+[20. Adobe Journey Optimizer: event-based journeys](./modules/module23/journeyoptimizer.md)
 
 - **Audience:** Email Marketer, Orchestration Specialist, Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform and Journey Optimizer
 - **Description:** In this module, you'll learn everything there is to know about Journey Optimizer, which helps companies design and deliver connected, contextual, and personalized experiences to their customers.
 - **Time Investment:** 120 minutes
 
-[24. Stream data from Apache Kafka into Adobe Experience Platform](./modules/module24/aep-apache-kafka.md)
+[21. Stream data from Apache Kafka into Adobe Experience Platform](./modules/module24/aep-apache-kafka.md)
 
 - **Audience:** Data Analyst, Data Engineer, Data Architect
 - **Prerequisites:** Access to Adobe Experience Platform
