@@ -127,31 +127,31 @@ Open a new, clean incognito browser window and go to [https://public.aepdemo.net
 
 You'll then see this. 
 
-![Launch Setup](../module23/images/cdemo1.png)
+![Launch Setup](./images/cdemo1.png)
 
 Enter your Configuration ID and click **Load Configuration**. Your configuration is then loaded.
 
-![Launch Setup](../module23/images/cdemo2.png)
+![Launch Setup](./images/cdemo2.png)
 
 Scroll down and click **Save Configuration**.
 
-![Launch Setup](../module23/images/cdemo3.png)
+![Launch Setup](./images/cdemo3.png)
 
 You'll then be redirected to the Admin homepage. Go to **Select LDAP**. Select your LDAP and click **Save**.
 
-![Launch Setup](../module23/images/cdemo5.png)
+![Launch Setup](./images/cdemo5.png)
 
 You'll then be redirected to the Admin homepage. Go to **Select Brand** and select the brand **Luma**, click **Save**.
 
-![Launch Setup](../module23/images/cdemo7.png)
+![Launch Setup](./images/cdemo7.png)
 
 You'll then be redirected to the Admin homepage. Click the **Luma** logo.
 
-![Launch Setup](../module23/images/cdemo8.png)
+![Launch Setup](./images/cdemo8.png)
 
 You'll then see the Luma homepage.
 
-![Launch Setup](../module23/images/cdemo9.png)
+![Launch Setup](./images/cdemo9.png)
 
 Go to **Login/Register**. Fill out the form and click **Create Account**. Don't forget to check the checkbox for **Test Profile**.
 

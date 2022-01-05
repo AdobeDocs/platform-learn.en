@@ -65,7 +65,7 @@ doc-type: multipage
   + [5.2 Customer AI: Create a New Instance (Configure)](/help/tutorial-comprehensive-technical-v22/modules/module5/ex2.md)
   + [5.3 Customer AI: Scoring Dashboard and Segmentation (Predict & Take Action)](/help/tutorial-comprehensive-technical-v22/modules/module5/ex3.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module5/summary.md)
-+ 6 - Real-Time CDP: Build a segment and take action! {#module11}
++ 6 - Real-Time CDP: Build a segment and take action! {#module6}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module6/real-time-cdp-build-a-segment-take-action.md)
   + [6.1 Build a segment and enable Streaming Segmentation](/help/tutorial-comprehensive-technical-v22/modules/module6/ex1.md)
   + [6.2 Review how to configure DV360 Destination using Destinations](/help/tutorial-comprehensive-technical-v22/modules/module6/ex2.md)
@@ -73,6 +73,7 @@ doc-type: multipage
   + [6.4 Take Action: send your segment to an S3-destination](/help/tutorial-comprehensive-technical-v22/modules/module6/ex4.md)
   + [6.5 Take Action: send your segment to Adobe Target](/help/tutorial-comprehensive-technical-v22/modules/module6/ex5.md)
   + [6.6 Data Landing Zone](/help/tutorial-comprehensive-technical-v22/modules/module6/ex6.md)
+  + [6.7 Segment Match](/help/tutorial-comprehensive-technical-v22/modules/module6/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module6/summary.md)
 + 7 - Adobe Journey Optimizer: Orchestration {#module7}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module7/journey-orchestration-create-account.md)
@@ -126,7 +127,7 @@ doc-type: multipage
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module12/summary.md)
 + 13 - Real-Time CDP: Segment Activation to Microsoft Azure Event Hub {#module13}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module13/segment-activation-microsoft-azure-eventhub.md)
-  + [13.0 Configure your environment](/help/tutorial-comprehensive-technical-v22/modules/module18/ex0.md)
+  + [13.0 Configure your environment](/help/tutorial-comprehensive-technical-v22/modules/module13/ex0.md)
   + [13.1 Configure your Microsoft Azure EventHub environment](/help/tutorial-comprehensive-technical-v22/modules/module13/ex1.md)
   + [13.2 Configure your Azure Event Hub Destination in Adobe Experience Platform](/help/tutorial-comprehensive-technical-v22/modules/module13/ex2.md)
   + [13.3 Create Streaming Segments](/help/tutorial-comprehensive-technical-v22/modules/module13/ex3.md)
