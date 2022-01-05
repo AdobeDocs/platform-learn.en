@@ -31,7 +31,7 @@ Search for your **ldap**.
 
 ![Journey Optimizer](./images/23.2-2.png)
 
-Search and find the Account Creation Journey that you created in [Module 6 - Journey Orchestration](../module6/journey-orchestration-create-account.md) and which you updated in [Module 17 - Adobe Experience Platform and Microsoft Dynamics 365](../module17/adobe-experience-platform-microsoft-dynamics-365.md). It should be named **ldap - Account Creation Journey**. Click the journey name to open it.
+Search and find the Account Creation Journey that you created in [Module 7 - Adobe Journey Optimizer: Orchestration](../module7/journey-orchestration-create-account.md). It should be named **ldap - Account Creation Journey**. Click the journey name to open it.
 
 ![Journey Optimizer](./images/23.2-2.png)
 

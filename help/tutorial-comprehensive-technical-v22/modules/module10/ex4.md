@@ -142,7 +142,7 @@ Select **Read Segment**. Click **Select a segment**.
 
 ![Journey Optimizer](./images/23.3-4.png)
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 11 - Real-time CDP - Build a segment and take action](../module11/real-time-cdp-build-a-segment-take-action.md) named **ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)**. for example: vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw). Click **Save**.
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named **ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)**. for example: vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw). Click **Save**.
 
 ![Journey Optimizer](./images/23.3-5.png)
 

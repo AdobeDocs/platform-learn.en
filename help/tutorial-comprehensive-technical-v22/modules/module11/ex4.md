@@ -73,7 +73,7 @@ Although we have organized all the components in the Data View, you still need t
 If you remember, we didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View. 
 However, we do have a dimension called: **Product Interaction Type**. So, let's derive these interaction types by creating 3 calculated Metrics.
 
-Back in module 7, [Query Service](./../../modules/module7/query-service.md), you created a SQL query to get the interactions funnel:
+Back in module 4, [Query Service](./../../modules/module4/query-service.md), you created a SQL query to get the interactions funnel:
 
 **Query & Result**
 

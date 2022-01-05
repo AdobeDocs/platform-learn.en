@@ -23,7 +23,7 @@ BigQuery is one of these services and it is always included with Google Analytic
 
 Google Analytics data is loaded daily into BigQuery using a batch-mechanism. As such, it doesn't make any sense to use this GCP/BigQuery integration for Real-time personalization and activation use-cases.
 
-If a brand wants to deliver real-time personalization use-cases based on Google Analytics data, it can collect that data on the website with Google Tag Manager and then stream it to Adobe Experience Platform in real-time ([just like you did in Module 9](../../modules/module9/data-ingestion-using-google-tag-manager-and-google-analytics.md)). 
+If a brand wants to deliver real-time personalization use-cases based on Google Analytics data, it can collect that data on the website with Google Tag Manager and then stream it to Adobe Experience Platform in real-time. 
 
 The GCP/BigQuery Source Connector should be used to...
 
@@ -32,9 +32,7 @@ The GCP/BigQuery Source Connector should be used to...
 
 ## 12.1.2 Create your Google Account
 
-In order to get a Google Cloud Platform account you need a Google account. If you are here, you've finished Module 9 already so you should have a Google account. 
-
-If you don't have it, please go to Module 9 to learn how to create your Google Account: [Exercise 9.2.0 - Create a Google Account](../../modules/module9/ex0.md)
+In order to get a Google Cloud Platform account you need a Google account.
 
 ## 12.1.3 Activate your Google Cloud Platform Account
 

@@ -180,7 +180,7 @@ Your basic newsletter journey is now published. Your newsletter email message wi
 
 ## 10.5.2 Offer-based personalization
 
-In this exercise you'll improve your newsletter email message with a personalized offer based on the Offer Activity you created as part of [Module 14 - Offer Decisioning](../module14/offer-decisioning.md).
+In this exercise you'll improve your newsletter email message with a personalized offer based on the Offer Activity you created as part of [Module 9 - Offer Decisioning](../module9/offer-decisioning.md).
 
 Go to **Messages**. Find the newsletter email that you have created in the previous exercise. Search for **ldap - Newsletter**. Click your message to open it. 
 
@@ -214,7 +214,7 @@ First, let's select the type of placement that you want to include in the email.
 
 ![Journey Optimizer](./images/23.1-79.png)
 
-Next, you'll see the list of applicable **Offer Decisions** that are available for that placement. Retrieve the Decision that you configured in [Module 14 - Offer Decisioning](../module14/offer-decisioning.md) (you can use the search box and type your ldap). Select your Decision and click **Add**.
+Next, you'll see the list of applicable **Offer Decisions** that are available for that placement. Retrieve the Decision that you configured in [Module 9 - Offer Decisioning](../module9/offer-decisioning.md) (you can use the search box and type your ldap). Select your Decision and click **Add**.
 
 ![Journey Optimizer](./images/23.1-80.png)
 

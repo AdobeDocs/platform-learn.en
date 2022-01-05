@@ -113,7 +113,7 @@ The **Read Segment** configuration expects you to select the segment that you wa
 
 ![Journey Optimizer](./images/23.8-16.png)
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 11 - Real-time CDP - Build a segment and take action](../module11/real-time-cdp-build-a-segment-take-action.md) named **ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)**. for example: vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw). Click **Save**.
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named **ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)**. for example: vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw). Click **Save**.
 
 ![Journey Optimizer](./images/23.8-17.png)
 
@@ -121,7 +121,7 @@ Next, click **Ok**.
 
 ![Journey Optimizer](./images/23.8-18.png)
 
-The next step is to drag and drop the action that we want to perform in this journey. In the menu, go to **Actions** and find the action named **ldapSmsTwilio** that you created in [Module 12 - Journey Orchestration - External Weather API, SMS Action & more](../module12/journey-orchestration-external-weather-api-sms.md). 
+The next step is to drag and drop the action that we want to perform in this journey. In the menu, go to **Actions** and find the action named **ldapSmsTwilio** that you created in [Module 8 - Adobe Journey Optimizer: External data sources and custom actions](../module8/journey-orchestration-external-weather-api-sms.md). 
 
 You’ll then see a panel on the right-hand side where you can configure the action.
 

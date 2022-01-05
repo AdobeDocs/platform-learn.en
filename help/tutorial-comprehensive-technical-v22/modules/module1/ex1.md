@@ -39,14 +39,13 @@ Now, take a look at the left rail.
 - **[!UICONTROL Tags]** gives an overview of all client-side properties
 - **[!UICONTROL App Configurations]** gives an overview of all App Configurations to enable Push Notifications (which is used/enabled in combination with Project Sierra)
 - **[!UICONTROL Datastreams]** are explored in the [next exercise](./ex2.md)
-- **[!UICONTROL Event Forwarding]** gives an overview of all server-side properties which are explored in [Module 21 - Data Collection & Real-time Server Side Forwarding with Launch](../module21/aep-data-collection-ssf.md)
+- **[!UICONTROL Event Forwarding]** gives an overview of all server-side properties which are explored in [Module 14 - Real-Time CDP Connections: Event Forwarding](../module14/aep-data-collection-ssf.md)
 - **[!UICONTROL Identities]** gives you an overview of all available identity namespaces
 - **[!UICONTROL Schemas]** gives you an overview of all available XDM schemas, along with the ability to create and update XDM schemas
 
 ## Further Information
 
-Adobe Experience Platform Data Collection is a very advanced tool that has scope beyond an Adobe Experience Platform tutorial. Organizations might not use Adobe Experience Platform Data Collection for its tag management capabilities and instead use non-Adobe tag management solutions for injecting code and managing tags. Using a non-Adobe tag management solution is supported by Adobe and Adobe Professional Services. In this Comprehensive Technical Tutorial for Adobe Experience Platform, you'll also learn how to use for instance Google Tag Manager to ingest data into Adobe Experience Platform, as part of [Module 9. Data Ingestion using Google Tag Manager and Google Analytics](./../module9/data-ingestion-using-google-tag-manager-and-google-analytics.md).
-
+Adobe Experience Platform Data Collection is a very advanced tool that has scope beyond an Adobe Experience Platform tutorial. Organizations might not use Adobe Experience Platform Data Collection for its tag management capabilities and instead use non-Adobe tag management solutions for injecting code and managing tags. Using a non-Adobe tag management solution is supported by Adobe and Adobe Professional Services. 
 Some further reading for those interested in understanding Adobe Experience Platform Data Collection further are included below.
 
 - [Adobe Experience Platform Data Collection User Guide](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html)
