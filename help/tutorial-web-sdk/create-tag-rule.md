@@ -2,6 +2,7 @@
 title: Create a tag rule
 description: Learn how to send an event to the Platform Edge Network with your XDM object using a tag rule. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Tags
+exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
 ---
 # Create a tag rule
 

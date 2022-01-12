@@ -2,8 +2,8 @@
 title: Configure a datastream
 description: Learn how to enable a datastream and configure Experience Cloud solutions. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Datastreams
+exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
 ---
-
 # Configure a datastream
 
 Learn how to enable a datastream and configure Experience Cloud solutions.

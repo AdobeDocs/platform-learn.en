@@ -2,6 +2,7 @@
 title: Configure an identity namespace
 description: Learn how to configure identity namespaces to use with Adobe Experience Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Identities
+exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
 ---
 # Configure an identity namespace
 
