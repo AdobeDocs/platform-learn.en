@@ -563,6 +563,8 @@ In this exercise, you map one XDM variable to a prop so you can view in Real-Tim
 
     ![Full e-commerce flow](assets/analytics-workspace-ecommerce.png)   
 
+To learn more about mapping XDM fields to Analytics variables, see the video [Map Web SDK variables into Adobe Analytics](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/analysis-use-cases/internal-site-search/map-web-sdk-variables-into-adobe-analytics.html).
+
 Congratulations! This is the end of the lesson and now you are ready to implement Adobe Analytics with Platform Web SDK for your own website.
 
 [Next: **Add Adobe Audience Manager**](setup-audience-manager.md)
