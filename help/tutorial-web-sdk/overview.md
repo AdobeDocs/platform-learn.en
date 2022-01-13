@@ -1,7 +1,7 @@
 ---
 title: Implement Adobe Experience Cloud with Web SDK tutorial
 description: Learn how to implement Experience Cloud applications using Adobe Experience Platform Web SDK.
-recommendations: catalog
+recommendations: catalog, noDisplay
 ---
 # Implement Adobe Experience Cloud with Web SDK tutorial
 
