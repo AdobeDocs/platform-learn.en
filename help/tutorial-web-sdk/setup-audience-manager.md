@@ -174,7 +174,7 @@ First, confirm that you can qualify for the segment
 
 Finally, you should open the segment in the Audience Manager interface and ensure that the **Segment Populations** has incremented:
 
-![Adobe Experience Platform Audience Manager Add Trait](assets/segment-population.jpg)
+![Audience Manager Segment Populations incremented](assets/segment-population.jpg)
 
 
 Now that you have completed this lesson, you should be able to see how the Platform Web SDK passes data to Audience Manager and can set a segment-specific first-party cookie with a cookie destination.
