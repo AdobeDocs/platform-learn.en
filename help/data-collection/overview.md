@@ -17,30 +17,31 @@ Data Collection is the next generation of website tag and mobile SDK management 
 
 ## What's New
 
+* **[Implement Adobe Experience Cloud with Web SDK (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)**
+    *Implement Experience Cloud applications with Web SDK.*
+
 * **[Web SDK overview (Video)](web-sdk/overview.md)**
     *Power end-to-end engagement in your web sites.*
 
 * **[Event forwarding overview (Video)](event-forwarding/overview.md)**
     *Forward data to non-Adobe solutions from Experience Platform Edge Network.*
 
-* **[Implement the Adobe Experience Cloud in Websites (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html)**
-    *Implement Experience Cloud applications with tags.*
 
 ## Staff Picks
 
 <table>
 <tr>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html" target="_blank">
-      <img alt="Implement in Websites with tags" src="assets/launch_referencearchitectureguides.png" />
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
+      <img alt="Implement Adobe Experience Cloud with Web SDK" src="assets/thumb_websdk.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html" target="_blank">
-    <strong>Implement in Websites with tags</strong>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
+    <strong>Implement Adobe Experience Cloud with Web SDK</strong>
     </a>
     </div>
     <p>
-    <em>Implement the Adobe Experience Cloud solutions in your website</em>
+    <em>Implement the Adobe Experience Cloud applications in your website</em>
     <p>
   </td>
   <td>
@@ -53,7 +54,7 @@ Data Collection is the next generation of website tag and mobile SDK management 
     </a>
     </div>
     <p>
-    <em>Use tags to implement the new mobile SDK</em>
+    <em>Use tags to implement Platform Mobile SDK</em>
     <p>
   </td>
   <td>
@@ -66,7 +67,7 @@ Data Collection is the next generation of website tag and mobile SDK management 
     </a>
     </div>
     <p>
-    <em>Use tags to implement the new mobile SDK</em>
+    <em>Use tags to implement Platform Mobile SDK</em>
     <p>
   </td>
 </tr>
