@@ -8,7 +8,7 @@ feature: Tags
 kt: 2797
 thumbnail: kt-2797.jpg
 doc-type: multipage
-recommendations: exclude,disable
+recommendations: noDisplay,noCatalog
 ---
 
 # Implement the Experience Cloud in Mobile iOS Objective-C Applications {#implement-in-mobile-ios-objective-c-apps}

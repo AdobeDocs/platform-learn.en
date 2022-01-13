@@ -1,7 +1,7 @@
 ---
 title: Implement the Experience Cloud in Mobile Android™ Applications
 description: Implement the Experience Cloud in Mobile Android™ Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile Android™ apps.
-recommendations: disable
+recommendations: catalog, noDisplay
 exl-id: 471e4860-2207-4f4d-a888-6839e754f1e9
 ---
 # Overview
