@@ -2,6 +2,7 @@
 title: Configure permissions for the tutorial
 description: Learn how to request access to Experience Platform Web SDK and configure the permission required to complete the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Access Control
+exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
 ---
 # Configure permissions for the tutorial
 
