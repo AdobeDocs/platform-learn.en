@@ -18,9 +18,9 @@ At the end of this lesson, you will be able to:
 * Configure a datastream to enable Adobe Analytics
 * Map individual or entire array data elements to the XDM object
 * Capture page views in Adobe Analytics with the XDM object
-* Capture e-commerce data in the Adobe Analytics product string with the XDM object
+* Capture e-commerce data with the XDM object for the Adobe Analytics product string
 * Validate Adobe Analytics variables are set with the XDM object using Experience Platform Debugger
-* Use Adobe Analytics processing rules to set custom reports
+* Use Adobe Analytics processing rules to set custom variables
 * Validate data is captured by Adobe Analytics using Real-Time Reports
 
 ## Prerequisites
@@ -42,9 +42,11 @@ You must have completed all the steps from the previous sections in the tutorial
   * [Create a tag rule](create-tag-rule.md)
   * [Validate with Adobe Experience Platform debugger](validate-with-debugger.md)
 
-## Configure an XDM schema for Adobe Analytics
+## XDM schemas and Analytics' variables
 
-Congratulations! You already did configured one in the [Configure a schema](configure-schemas.md) lesson. Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics this means that mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
+Congratulations! You already configured a schema compatible with Adobe Analytics in the [Configure a schema](configure-schemas.md) lesson!
+
+Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
 
 1. Automatically mapped variables using reserved XDM fields
 1. Manually mapped variables using Analytics Processing Rules
@@ -75,7 +77,7 @@ The schema created in the [Configure a schema](configure-schemas.md) lesson cont
 >The individual sections of the Analytics product string are set through different XDM variables under the `productListItems` object. 
 
 
-## Configure Adobe Analytics datastream
+## Configure the datastream
 
 Platform Web SDK sends data from your website to Platform Edge Network. Your datastream then tells Platform Edge Network where to forward that data, in this case, which of your Adobe Analytics report suites.
 
@@ -115,7 +117,7 @@ Next, capture additional data from the Luma data layer and send it to the Platfo
 
 ### Create e-commerce data elements
 
-During the Create data elements lesson, you [created JavaScript data elements](create-data-elements.md#create-data-elements-to-capture-the-data-layer) that captured content and identity details. Now you will create additional data elements to capture e-commerce data for Adobe Analytics. The [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} uses different data layer structures for product detail pages and for checking-out products that are added in the cart. For that reason, you must create additional data elements for each scenario. Use the provided code snippets below:
+During the Create data elements lesson, you [created JavaScript data elements](create-data-elements.md#create-data-elements-to-capture-the-data-layer) that captured content and identity details. Now you will create additional data elements to capture e-commerce data. Because the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} uses different data layer structures for product detail pages and products in the cart, you must create data elements for each scenario. Use the provided code snippets below:
 
 1. Open the tag property you are using for the tutorial
 1. Go to **[!UICONTROL Data Elements]**
@@ -193,14 +195,14 @@ After adding these data elements and having  created the previous ones in the [C
 
 >[!IMPORTANT]
 >
->In this tutorial, you will create a different XDM object for each event. That means you must remap variables that would be considered to be "globally" available on every hit, such as page name and the **[!UICONTROL identityMap]** variable. However, you may [Merge Objects](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html#merged-objects) or use [Mapping Tables](https://exchange.adobe.com/experiencecloud.details.103136.mapping-table.html) to manage your XDM objects more efficiently in a real-life situation. For this lesson, the global variables are considered as:
+>In this tutorial, you will create a different XDM object for each event. That means you must remap variables that would be considered to be "globally" available on every hit, such as page name and identityMap. However, you may [Merge Objects](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/core/overview.html#merged-objects) or use [Mapping Tables](https://exchange.adobe.com/experiencecloud.details.103136.mapping-table.html) to manage your XDM objects more efficiently in a real-life situation. For this lesson, the global variables are considered as:
 >
 >* **[!UICONTROL identityMap]** to capture the authenticated ID as per the [Create Identity Map Data Element](create-data-elements.md#create-identity-map-data-element) exercise in the [Create Data Elements](create-data-elements.md) lesson.
 >* **[!UICONTROL web]** object to capture content as per the [content XDM object](create-data-elements.md#map-content-data-elements-to-XDM-Schema-individually) exercise in the [Create Data Elements](create-data-elements.md) lesson on every data element above. 
 
 ### Increment page views
 
-In the Create Data Elements lesson, you [created an `xdm.content` data element](create-data-elements.md#map-content-data-elements-to-xdm-schema-individually) to capture content dimensions. Since you are now sending data to Adobe Analytics, you must also map an additional XDM field to indicate that a beacon should be processed as an Analytics' page view.
+In the Create Data Elements lesson, you [created an `xdm.content` data element](create-data-elements.md#map-content-data-elements-to-xdm-schema-individually) to capture content dimensions. Since you are now sending data to Adobe Analytics, you must also map an extra XDM field to indicate that a beacon should be processed as an Analytics' page view.
 
 1. Open your `xdm.content` data element
 1. Scroll down and select to open until `web.webPageDetails`
@@ -217,7 +219,7 @@ In the Create Data Elements lesson, you [created an `xdm.content` data element](
 
 ### Set the product string
 
-Before you map to the product string, it is important to understand there are two main objects within the XDM schema that are used for capturing e-commerce data:
+Before you map to the product string, it is important to understand there are two main objects within the XDM schema that are used for capturing e-commerce data which have special relationships with Adobe Analytics:
 
 1. The `commerce` object sets Analytics events such as `prodView`, `scView`, and `purchase`
 1. The `productListItems` object sets Analytics dimensions such as `productID`.
@@ -230,7 +232,7 @@ It is also important to understand that you can **[!UICONTROL provide individual
 
 ### Map individual attributes to an XDM object
 
-You can map to individual variables to capture data on the product details page of the Luma Demo site.
+You can map to individual variables to capture data on the product details page of the Luma Demo site:
 
 1. Create an **[!UICONTROL XDM object]** **[!UICONTROL Data Element Type]** named **`xdm.commerce.prodView`**
 1. Select the same Platform development sandbox and XDM schema used in previous lessons
@@ -260,16 +262,14 @@ You can map to individual variables to capture data on the product details page 
     * **`productListItems.item1.SKU`** to `%product.productInfo.sku%`
     * **`productListItems.item1.name`** to `%product.productInfo.title%`
 
+    ![Product SKU XDM object Variable](assets/data-element-xdm-productlistitem-sku.png)
+
     >[!IMPORTANT]
     >
-    >Before you save this XDM Object, make sure you set the "global" variables, as noted earlier in the lesson, within the XDM Object as well:
-    >
-    >Your XDM object should have the [!UICONTROL **identityMap**] and **[!UICONTROL web]** objects mapped like this
-    >![Re-setting global variables in XDM](assets/analytics-global-xdm-prodView.png)
+    >Before you save this XDM object, make sure you set the "global" variables and page view incrementer as well:
+    >![Re-setting global variables in XDM](assets/analytics-global-xdm.png)
 
 1. Select **[!UICONTROL Save]**
-
-    ![Product SKU XDM object Variable](assets/data-element-xdm-productlistitem-sku.png)
 
 ### Map an entire array to an XDM object
 
@@ -283,13 +283,13 @@ Compare the data element to the `productListItems` structure (hint, it should ma
 
 >[!IMPORTANT]
 >
->Note how number variables names are translated, and values such a `price` and `qty` are reformatted to numbers even though they were string format in the data layer. These format requirements are important for collecting data in Platform and are determined during the [configure schemas](configure-schemas.md) step. In the example **[!UICONTROL quantity]** is **[!UICONTROL Type Integer]** data.
+>Note how numeric variables are translated, with string values in the data layer such as `price` and `qty` reformatted to numbers in the data element. These format requirements are important for data integrity in Platform and are determined during the [configure schemas](configure-schemas.md) step. In the example, **[!UICONTROL quantity]** uses the **[!UICONTROL Integer]** data type.
 > ![XDM schema data type](assets/schema-data-type.png)
 
-Now back to mapping the XDM object to an entire array, you must create an XDM Data Element for capturing products on the cart page:
+Now back to mapping the XDM object to an entire array. Create an XDM object data element to capture products on the cart page:
 
 1. Create an **[!UICONTROL XDM object]** **[!UICONTROL Data Element Type]** named **`xdm.commerce.cartView`**
-1. Select the same Platform Sandbox and XDM schema as previously selected
+1. Select the same Platform sandbox and XDM schema you are using for this tutorial
 1. Open the **[!UICONTROL commerce]** object
 1. Open the **[!UICONTROL productListViews]** object and set `value` to `1`
 
@@ -300,11 +300,17 @@ Now back to mapping the XDM object to an entire array, you must create an XDM Da
 1. Scroll down to and select **[!UICONTROL productListItems]** array
 1. Select **[!UICONTROL Provide entire array]**
 1. Map to **`cart.productInfo`** data element
-1. Select **[!UICONTROL Save]**
-    
+
     ![Entire array mapping to XDM object](assets/data-element-xdm-provide-array.png)
 
-Create another **[!UICONTROL XDM object]**  **[!UICONTROL Data Element Type]** for checkouts called `xdm.commerce.checkout` following the same steps as above, but this time set the **[!UICONTROL commerce.checkouts.value]** to `1`. 
+    >[!IMPORTANT]
+    >
+    >Before you save this XDM object, make sure you set the "global" variables and page view incrementer as well:
+    >![Re-setting global variables in XDM](assets/analytics-global-xdm.png)
+
+1. Select **[!UICONTROL Save]**
+
+Create another **[!UICONTROL XDM object]**  **[!UICONTROL Data Element Type]** for checkouts called `xdm.commerce.checkout`. This time set the **[!UICONTROL commerce.checkouts.value]** to `1`, map **[!UICONTROL productListItems]** to **`cart.productInfo`** like you just did, and add the "global" variables and page view counter.
 
 >[!TIP]
 >
@@ -332,10 +338,8 @@ There are additional steps for capturing the `purchase` event:
 
     >[!IMPORTANT]
     >
-    >Before you save this XDM Object, make sure you set the "global" variables within the XDM Object as well:
-    >
-    >Your XDM object should have the [!UICONTROL **identityMap**] and **[!UICONTROL web]** objects mapped like this
-    >![Re-setting global variables in XDM](assets/analytics-commerce-purchase-xdm.png)
+    >Before you save this XDM object, make sure you set the "global" variables and page view incrementer as well:
+    >![Re-setting global variables in XDM](assets/analytics-global-xdm.png)
 
 1. Select **[!UICONTROL Save]**
 
@@ -424,7 +428,7 @@ Add your new data elements and rules to your `Luma Web SDK Tutorial` tag library
 
 ## Validate Adobe Analytics for Platform Web SDK
 
-In the [Validate with Adobe Experience Platform Debugger](validate-with-debugger.md) lesson, you learned how to inspect the client-side XDM object beacon with the Platform Debugger and browser developer console; which is similar to how you debug an Analytics implementation using `AppMeasurement.js`. To validate Analytics is capturing data properly through Platform Web SDK, you must go two steps further to:
+In the [Debugger](validate-with-debugger.md) lesson, you learned how to inspect the client-side XDM object beacon with the Platform Debugger and browser developer console, which is similar to how you debug an `AppMeasurement.js` Analytics implementation. To validate Analytics is capturing data properly through Platform Web SDK, you must go two steps further to:
 
 1. Validate how data is processed by the XDM object on the Platform Edge Network, using Experience Platform Debugger's Edge Trace feature
 1. Validate how data is processed by Analytics using Processing Rules and Real-Time reports.
@@ -540,7 +544,7 @@ In this exercise, you map one XDM variable to a prop so you can view in Real-Tim
     >
     >The first time you map to a processing rule the UI does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
-1. Go to Edit Settings > Real-Time Reports. Configure all three with the following parameters shown below so that you can validate content page views, product views, and purchases
+1. Go to [!UICONTROL Edit Settings] >  [!UICONTROL Real-Time]. Configure all three with the following parameters shown below so that you can validate content page views, product views, and purchases
     
     ![Analytics Purchase](assets/analytics-debugger-real-time.png)   
 

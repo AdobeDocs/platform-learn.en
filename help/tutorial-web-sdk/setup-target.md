@@ -105,7 +105,7 @@ The pre-hiding style for synchronous implementations can be configured as follow
 To learn more about how the Platform Web SDK can manage flicker, you can refer to the guide section: [managing flicker for personalized experiences](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html).
 
 
-## Enable Target in the datastream
+## Configure the datastream
 
 Target must be enabled in the datastream configuration before any Target activities can be delivered by Platform Web SDK.
 

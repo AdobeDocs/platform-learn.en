@@ -68,7 +68,7 @@ In this exercise, you create a dataset to track content and e-commerce details f
 
 A dataset is now configured to start collecting data from your Platform Web SDK implementation.
 
-## Enable Platform in the datastream
+## Configure the datastream
 
 Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL Adobe Experience Platform]. The datastream is the link between your tag property, the Platform Edge Network, and the Experience Platform dataset.
 
