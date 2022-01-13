@@ -71,7 +71,7 @@ Begin by creating an event-forwarding property:
 1. Select **[!UICONTROL Save]**.
     ![event-forwarding property save](assets/event-forwarding-save.png)
 
-## Link an event-forwarding property to a datastream
+## Configure the datastream
 
 For event forwarding to use the data you send to the Edge network, you must link the newly created event-forwarding property to the same datastream used to send data to Adobe solutions. 
 
@@ -100,7 +100,7 @@ Repeat these steps for Staging and Production environments when you are ready to
 
 ## Forward data from the Platform Edge Network to a non-Adobe solution
 
-In this exercise you will learn to set up an event-forwarding data element, configure an event-forwarding rule, and validate using a third-part tool called [Webhook.site](https://webhook.site/).
+In this exercise you will learn how to set up an event-forwarding data element, configure an event-forwarding rule, and validate using a third-part tool called [Webhook.site](https://webhook.site/).
 
 >[!NOTE]
 >
@@ -111,7 +111,7 @@ In this exercise you will learn to set up an event-forwarding data element, conf
 >You must have already created and mapped data elements to an XDM Object, as well as configured tag rules and built those changes within a library to a tag environment to proceed further. If you have not, refer to the **Tags Configuration** steps in the [prerequisites](setup-event-forwarding.md#prerequisites) section. Those steps ensure that data is sent to the Platform Edge Network, and from there you can configure an event-forwarding property to forward data to a non-Adobe solution. 
 
 
-## Create an event-forwarding data element
+### Create an event-forwarding data element
 
 The XDM object you previously configured using the Platform Web SDK tag extension becomes the data source for data elements in an event-forwarding property. You use the same data that you have already configured in the tag property as a data source for event-forwarding. 
 
@@ -176,7 +176,7 @@ In this exercise, you will forward the browser viewport height and the Experienc
     >When working with your own website, you can find the XDM object path with your web browser network tools, filtering for `/ee` requests, opening the beacon [!UICONTROL **Payload**] and drilling down to the variable you are looking for. Then right-click with your mouse and select "Copy property path". Here is an example for the Browser Viewport Height:
     > ![Event Forwarding XDM Path](assets/event-forwarding-xdm-path.png)
 
-## Install Adobe Cloud Connector extension
+### Install Adobe Cloud Connector extension
 
 To send data to third-party locations, you will first install the [!UICONTROL Adobe Cloud Connector] extension. 
 
@@ -190,7 +190,7 @@ To send data to third-party locations, you will first install the [!UICONTROL Ad
 
 There is no extension configuration needed. With this extension, you can now forward data to a non-Adobe solution!
 
-## Create an event-forwarding rule 
+### Create an event-forwarding rule 
 
 There are a few main differences between configuring rules in a tag property and a rule in an event-forwarding property:
 
@@ -262,7 +262,7 @@ To configure a rule to forward data to your webhook, you must first obtain your 
 
     ![Save event-forwarding rule](assets/event-forwarding-rule-save.png)
 
-## Build rule to a development environment
+### Create and build the library
 
 Create a library and build all the changes to your event-forwarding development environment as you normally would in a tag property. 
 
