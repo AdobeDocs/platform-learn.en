@@ -112,9 +112,8 @@ doc-type: multipage
   + [11.1 Build a segment and enable Streaming Segmentation](/help/tutorial-comprehensive-technical-v21/modules/module11/ex1.md)
   + [11.2 Review how to configure DV360 Destination using Destinations](/help/tutorial-comprehensive-technical-v21/modules/module11/ex2.md)
   + [11.3 Take Action: send your segment to DV360](/help/tutorial-comprehensive-technical-v21/modules/module11/ex3.md)
-  + [11.4 Take Action: send your segment to Google AdWords RLSA using Adobe Audience Manager](/help/tutorial-comprehensive-technical-v21/modules/module11/ex4.md)
-  + [11.5 Take Action: send your segment to an S3-destination](/help/tutorial-comprehensive-technical-v21/modules/module11/ex5.md)
-  + [11.6 Take Action: send your segment to Adobe Target](/help/tutorial-comprehensive-technical-v21/modules/module11/ex6.md)
+  + [11.4 Take Action: send your segment to an S3-destination](/help/tutorial-comprehensive-technical-v21/modules/module11/ex4.md)
+  + [11.5 Take Action: send your segment to Adobe Target](/help/tutorial-comprehensive-technical-v21/modules/module11/ex5.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v21/modules/module11/summary.md)
 + 12 - Adobe Journey Optimizer: External data sources and custom actions {#module12}
   + [Overview](/help/tutorial-comprehensive-technical-v21/modules/module12/journey-orchestration-external-weather-api-sms.md)

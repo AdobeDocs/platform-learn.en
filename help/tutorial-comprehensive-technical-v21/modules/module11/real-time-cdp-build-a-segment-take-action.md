@@ -59,15 +59,11 @@ Learn how to configure an advertising destination using the Adobe Experience Pla
 
 Connect the segment you built in Exercise 11.1 to the destination DV360.
 
-[11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
-
-Connect the segment you built in Exercise 11.1 to the destination Google Remarketing List for Search Advertising by making use of Adobe Audience Manager.
-
-[11.5 Take Action: send your segment to an S3-destination](./ex5.md)
+[11.4 Take Action: send your segment to an S3-destination](./ex4.md)
 
 Use the segment you built in Exercise 11.1 and send it to an S3-destination, typically used for Email Marketing-destinations.
 
-[11.6 Take Action: send your segment to Adobe Target](./ex6.md)
+[11.5 Take Action: send your segment to Adobe Target](./ex5.md)
 
 Use the segment you built in Exercise 11.1 to configure an Experience Targeting Activity in Adobe Target.
 

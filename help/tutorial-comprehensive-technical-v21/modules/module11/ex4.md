@@ -1,233 +1,120 @@
 ---
-title: Real-time CDP - Build a segment and take action - Send your segment to Google AdWords RLSA using Adobe Audience Manager
-description: Real-time CDP - Build a segment and take action - Send your segment to Google AdWords RLSA using Adobe Audience Manager
+title: Real-time CDP - Build a segment and take action - Send your segment to an S3-destination
+description: Real-time CDP - Build a segment and take action - Send your segment to an S3-destination
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: b47928f6-fd94-4d32-a4a0-70f1b184343b
+exl-id: 5c205895-27a2-4c7d-ab08-0798d028866d
 ---
-# 11.4 - Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager (AAM)
+# 11.4 Take Action: send your segment to an S3-destination
 
-Adobe Experience Platform and Adobe Audience Manager are closely connected to each other. The way they are connected is through a bi-directional segment sharing connector. This means that all segments built in Adobe Experience Platform are shared to Adobe Audience Manager, and all segments built in Adobe Audience Manager are shared to Adobe Experience Platform.
+Adobe Experience Platform also has the ability to share Audiences to Email Marketing Destinations such as Salesforce Marketing Cloud, Oracle Eloqua, Oracle Responsys and Adobe Campaign.
 
-When a segment is first built in Adobe Experience Platform, it will take an initial 4-6 hours to synchronize the segment definition and after this initial 4-6 hours, new segment qualifications in Adobe Experience Platform are shared in real-time towards Adobe Audience Manager.
+You can use FTP or SFTP as part of the dedicated destinations for each of these Email Marketing Destinations, or you can use AWS S3 to exchange lists of customers between Adobe Experience Platform and these Email Marketing Destinations.
 
-When a segment is first built in Adobe Audience Manager, it will take an initial 2-3 hours to synchronize the segment definition and after this initial 2-3 hours, new segment qualifications in Adobe Audience Manager are shared with an 30-60 minute delay towards Adobe Experience Platform.
+In this module, you'll configure such a destination by making use of an AWS S3 bucket.
 
-Let's have a look at Adobe Audience Manager now.
+## 11.4.1 Create your S3 bucket
 
-## Use a Platform Segment as a Segment in AAM
+Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you created in Module 5.
 
-The URL to login to Adobe Audience Manager is: [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/).
+![ETL](./images/awshome.png)
 
-![RTCDP](./images/excl.png)
+After logging in, you'll be redirected to the **AWS Management Console**.
 
-Click on **Audience Manager** to open it.
+![ETL](./images/awsconsole.png)
 
-![RTCDP](./images/aam.png)
+In the **Find Services** menu, search for **s3**.
 
-You'll then see this page:
+![ETL](./images/awsconsoles3.png)
 
-![RTCDP](./images/aam1.png)
+Click the first search result: **S3 - Scalable Storage in the Cloud**.
 
-Go to **Audience Data** and then to **Segments**.
+You'll then see the **Amazon S3** homepage. Click **Create Bucket**.
 
-![RTCDP](./images/aam2.png)
+![ETL](./images/s3home.png)
 
-In **Segments** in Adobe Audience Manager, you can now see all the Adobe Experience Platform Segments already available in the folder **Experience Platform Segments**.
+In the **Create Bucket** screen, you need to configure two things:
+  
+- Name: use the name **aepmodule11LDAP** and replace LDAP by your LDAP. As an example, in this exercise the bucket name is **aepmodule11vangeluw**
+- Region: use the region **EU (Frankfurt) eu-central-1**
 
-![RTCDP](./images/aam3a.png)
+![ETL](./images/bucketname.png)
 
-Search for your Platform segment, which may be on a different page.
+Leave all the other default settings as they are. Scroll down and click **Create bucket**.
 
-Open the segment you built in 1 by clicking it. In this example, that is the segment `vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)`. Make sure to copy the **Segment ID** as you'll need it in a couple of seconds.
+![ETL](./images/createbucket.png)
 
-![RTCDP](./images/aam4.png)
+You'll then see your bucket being created and will be redirected to the Amazon S3 homepage.
 
-This segment was built in Adobe Experience Platform and cannot be edited anymore in Adobe Audience Manager. The only thing you can do here is link it to a **Destination** that is available in Adobe Audience Manager.
+![ETL](./images/S3homeb.png)
 
-Click **Edit**.
+## 11.4.2 Set permissions to access your S3 bucket
 
-![RTCDP](./images/aamedit.png)
+The next step is to setup access to your S3 bucket.
 
-The screen now defaults to the **Destinations Mapping** view, so that you can link a Destination to the Segment.
+To do that, go to [https://console.aws.amazon.com/iam/home](https://console.aws.amazon.com/iam/home).
 
-![RTCDP](./images/aam5.png)
+Access to AWS resources is controlled by Amazon Identity and Access Management (IAM).
 
-Click **Browse All Destinations**.
+You'll now see this page.
 
-![RTCDP](./images/aambrowsedest.png)
+![ETL](./images/iam.png)
 
-You'll see this popup, which makes it possible to link your segment that was built in Adobe Experience Platform to Google Adwords.
+In the left menu, click **Users**. You'll then see the **Users** screen. Click **Add Users**.
 
-![RTCDP](./images/aambrowsedests.png)
+![ETL](./images/iammenu.png)
 
-Click the button for the destination **Google AdWords RLSA**, followed by clicking **Add Selected Destination**.
+Next, configure your user:
 
-![RTCDP](./images/aambrowsedestss.png)
+- User Name: use `s3_ldap_module11` as a name, so in this example the name is `s3_vangeluw_module11`.
+- AWS access type: select **Access key - Programmatic access**.
 
-Fill out the Destination Value to send to Google AdWords. In this case, AdWords expects the format `aam=segmentId`. The Segment ID of this segment is `18717523` so that gives `aam=18717523`.
+Click **Next: Permissions**.
 
-![RTCDP](./images/aambrowsedestssdv.png)
+![ETL](./images/configuser.png)
 
-Click **Save**.
+You'll then see this permissions screen. Click **Attach existing policies directly**.
 
-You'll then see your destination added to the segment.
+![ETL](./images/perm1.png)
 
-![RTCDP](./images/aambrowsedestssdvok.png)
+Enter the search term **s3** to see all related S3 policies. Select the policy **AmazonS3FullAccess**. Click **Next: Tags**.
 
-Click **Done** to save your changes.
+![ETL](./images/perm2.png)
 
-As of this moment, everybody who qualifies for this segment in Adobe Experience Platform, will be sent to a Google AdWords Remarketing List for Search Advertising.
+On the **Tags** screen, there's no need to configure anything. Click **Next: Review**.
 
-## Use a Platform Segment as a Trait in AAM
+![ETL](./images/perm3.png)
 
-Every segment built in Adobe Experience Platform will also show up in Adobe Audience Manager as a Trait. This means that it is possible to enrich Adobe Experience Platform segments with for instance 2nd or 3rd Party Data in Adobe Audience Manager.
+Review your configuration. Click **Create User**.
 
-* 2nd Party Data = the 1st Party Data from another company that has been shared to your company because of an established partnership with that company
-* 3rd Party Data = Data that you've purchased in a public Audience Marketplace
+![ETL](./images/review.png)
 
-Go to **Audience Data** and then to **Traits**.
+Your user is now created and you're seeing your credentials to access your S3 environment. This is the only time you'll see your credentials so please write them down.
 
-![RTCDP](./images/aamt1.png)
+![ETL](./images/cred.png)
 
-In **Traits** in Adobe Audience Manager, you can now see all the Adobe Experience Platform Segments already available as Traits, in the folder **Experience Platform Traits**.
+Click **Show** to see your Secret access key:
 
-![RTCDP](./images/aamt2.png)
+![ETL](./images/cred1.png)
 
-You can also see other Traits, like for instance, **All Traits** > **1st Party Data** > **Display Advertising Data** > **Impression Pixels**.
-Every time a customer is seeing a Display Ad as part of for instance a Google DV360 Display Ad campaign, an impression pixel can fire and store the fact that a customer has seen this ad in Adobe Audience Manager.
+>[!IMPORTANT]
+>
+>Store your credentials in a text-file in your computer.
+>
+> - Access key ID: ...
+> - Secret access key: ...
+>
+> Once you click **Close** you'll never see your credentials again!
 
-![RTCDP](./images/aamt3.png)
+Click **Close**. 
 
-Our use-case here, will be to configure an Impression Pixel for an imaginary Display Ad Campaign for the product that was selected in 1. In this case, the selected product was **Zeppelin Yoga Pant** so an impression pixel needs to be defined for that now. You will then combine the segment of people who are interested in your product with the Impression Pixel, to avoid that a customer is seeing your Display Ad too many times. In our case, too many times is defined as more than 10 in the last 2 weeks.
+![ETL](./images/close.png)
 
-Click **+ Add New** and select **Rule-Based** to add a new Trait.
+You've now successfully created an AWS S3 bucket and you've created a user with permissions to access this bucket.
 
-![RTCDP](./images/aamt4.png)
-
-You now have an empty Trait to be configured.
-
-![RTCDP](./images/aamt5.png)
-
-Fill out the details like this:
-
-| Field Name              | Field Name              |
-|:-----------------------:| :-----------------------|
-| Name               | Display Ad Campaign - **Product Name** - ldap, for instance Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
-| Description               | Display Ad Campaign - **Product Name** - ldap, for instance Display Ad Campaign - Zeppelin Yoga Pant - vangeluw|
-| Data Source               | Audience Library              |
-| Event Type               | Delivery Event             |
-| Store In               | **All Traits** > **1st Party Data** > **Display Advertising Data** > **Impression Pixels**             |
-
-![RTCDP](./images/aamt6.png)
-
-Click **Save**.
-
-![RTCDP](./images/aamsave.png)
-
-After saving, you'll be on this screen.
-
-![RTCDP](./images/aamt7.png)
-
-Go back to **Traits**.
-
-![RTCDP](./images/aamt8.png)
-
-For completeness, if you'd want to deploy this Impression Pixel, you need the URL or Image Tag to embed in your creative, as part of your Display Ad Campaign. To find the URL or Image Tag, you need to click the little **cloud** icon as indicated in the screenshot.
-
-You'll then see this. These URLs and Image Tags can used to embed them in the Display Ad Campaign.
-
-![RTCDP](./images/aamt9.png)
-
-You now have 1 Trait for your Platform Segment, and another Trait for your Impression Pixel. Let's now combine these 2 Traits into a segment in Adobe Audience Manager.
-
-Go to **Audience Data** and then to **Segments**.
-
-![RTCDP](./images/aams1.png)
-
-You'll see this screen:
-
-![RTCDP](./images/aams2.png)
-
-Click **+ Add New**.
-
-![RTCDP](./images/aams2new.png)
-
-You'll then see an empty segment.
-
-![RTCDP](./images/aams3.png)
-
-Fill out the Segment Basic Information like this:
-
-| Field Name              | Field Name              |
-|:-----------------------:| :-----------------------|
-| Name               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, for instance Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw|
-| Description               | Display Campaign **Product Name** - 10 impressions/2 weeks - ldap, for instance Display Campaign Zeppelin Yoga Pant - 10 impressions/2 weeks - vangeluw|
-| Data Source               | Audience Library             |
-| Profile Merge Rule               | Use the default Profile Merge Rule            |
-| Status               | Active           |
-| Store In               | **All Segments** > **Enablement Segments**|
-
-That should look like this:
-
-![RTCDP](./images/aams4.png)
-
-Go to the **Traits** view.
-
-![RTCDP](./images/aams5.png)
-
-Click **Browse All Traits**.
-
-![RTCDP](./images/aams4browse.png)
-
-In the popup, navigate the Traits hierarchy to retrieve the Trait for your Adobe Experience Platform segment and select it.
-
-![RTCDP](./images/aams6.png)
-
-Next, navigate the Traits hierarchy to retrieve your Impression Pixel Trait and select it.
-
-![RTCDP](./images/aams7.png)
-
-Click **Add Selected Traits to Segment**.
-
-![RTCDP](./images/aams6add.png)
-
-Your screen should now look like this:
-
-![RTCDP](./images/aams8.png)
-
-Hover over the 3 dots between your 2 Traits. You'll see a dropdown-list open up to define a relationship between your 2 Traits. Select the operator **AND NOT**.
-
-![RTCDP](./images/aams9.png)
-
-Next, click the little **clock** icon next to your Impression Pixel Trait.
-
-![RTCDP](./images/aams10.png)
-
-You can now set a recency and frequency for the Impression Pixel. Set it like this:
-
-| Field               | Value              |
-|:-----------------------:| :-----------------------|
-| >=             | **10** times in            |
-| <=             | **14** days ago         |
-
-![RTCDP](./images/aams11.png)
-
-You should read this as follows:
-
-Include everyone in this segment that qualifies for the Platform Segment of Interest in **product name**, but not those who have had 10 or more Ad Impressions for **productname** in the last 14 days.
-
-Adobe Audience Manager will dynamically and in real-time re-evaluate this expression for every new hit. So at first, a customer will be included in this segment and the destinations linked to this segment will be able to target this customer. For every Ad Impression, a pixel will be fired, and the counter on the Impression Pixel will be incremented. When it reaches 10 or more, the **AND NOT** clause will be triggered and will remove that customer from the Segment in Adobe Audience Manager.
-
-Next, scroll down and click **Save** to save your segment.
-
-![RTCDP](./images/aamsave.png)
-
-### Use an AAM Trait or Segment in Adobe Experience Platform
-
-The Bi-directional Segment Sharing - connector works in both ways. That means that if you have a Trait or Segment that was built in Adobe Audience Manager natively, it will be shared towards Adobe Experience Platform.
+## 11.4.3 Configure Destination in Adobe Experience Platform
 
 Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
 
@@ -243,27 +130,96 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In the menu on the left side, go to **Segments**.
+In the left menu, go to **Destinations**, then go to **Catalog**. You'll then see the **Destinations Catalog**.
 
-![Segmentation](./images/menuseg.png)
+![RTCDP](./images/rtcdpmenudest.png)
 
-On this page, you can see an overview of all existing segments.
+Click **Cloud Storage**, then click the **Activate Segments** button on the **Amazon S3** card.
 
-![Segmentation](./images/segmentation.png)
+![RTCDP](./images/rtcdp2.png)
 
-Click on the **Create Segment** button to start creating a new segment.
+Next, click **+ Configure new destination**.
 
-![Segmentation](./images/createnewsegment.png)
+![RTCDP](./images/rtcdp2a.png)
 
-Go to **Audiences** in the Segment Builder.
+Select **New Account** as Account Type. Please use the S3 credentials that were given to you in the previous step:
 
-![RTCDP](./images/aepsegaud.png)
+| Access Key ID             | Secret Access Key             |
+|:-----------------------:| :-----------------------:|
+| AKIA..... |Cm5Ln.....|
 
-In the list of available Audiences, you can see **AAM Traits** and **AAM Segments**.
+Click **Connect to destination**.
 
-Those lists will dynamically populate with all AAM Traits and AAM Segments, so that they can be reused and enriched in Adobe Experience Platform.
+![RTCDP](./images/rtcdpsfs3.png)
 
-Next Step: [11.5 Take Action: send your segment to an S3-destination](./ex5.md)
+You'll then see a visual confirmation that this destination is now connected.
+
+![RTCDP](./images/rtcdpsfs3connected.png)
+
+You have to provide a name and folder so that Adobe Experience Platform can connect to the S3 bucket.
+
+As a naming convention, please use the following:
+
+| Access Key ID             | Secret Access Key             |
+|:-----------------------:| :-----------------------:|
+| Name |AWS - S3 - ldap, replace **ldap** with your ldap.|
+| Description |AWS - S3 - ldap, replace **ldap** with your ldap.|
+| Bucket Name |aepmodule11ldap|
+| Folder Path |/|
+
+Click **Next**.
+
+![RTCDP](./images/rtcdpsfs3connect2.png)
+
+You can now optionally attach a Data Governance Policy to your new destination. Click **Create**.
+
+![RTCDP](./images/rtcdpsfs3connect2gov.png)
+
+Your destination is now created and you'll see it in the list of available destinations.
+
+![RTCDP](./images/rtcdpsfs3connect2created.png)
+
+After creating the destination, you can select segments to send to your AWS S3 destination. First, select your destination and then click **Next**.
+
+![RTCDP](./images/rtcdpsfs3connect2created1.png)
+
+In the list of segments, search for the segment you created in exercise 1 and select it. Click **Next**.
+
+![RTCDP](./images/s3a.png)
+
+You'll then see this. Click **Create Schedule**.
+
+![RTCDP](./images/s3bb.png)
+
+Define your schedule of choice. Select **Export incremental files** and set the frequency to **Hourly** every **3 hours**. Click **Create**.
+
+![RTCDP](./images/s3bbc.png)
+
+You'll then have this. Click **Next**.
+
+![RTCDP](./images/s3bbca.png)
+
+You can now select attributes for the export towards AWS S3. Click **Add new field** and ensure the field `--aepTenantId--.identification.core.ecid` is added and marked as **Deduplication Key**.
+
+Optionally, you can add as many other fields as required.
+
+Once you've added all fields, click **Next**.
+
+![RTCDP](./images/s3c.png)
+
+Review your configuration. Click **Finish** to finish your configuration.
+
+![RTCDP](./images/s3g.png)
+
+You'll then be back at the Destination Activation screen and you'll see your segment added to this destination.
+
+![RTCDP](./images/s3j.png)
+
+If you'd like to add more segment exports, you can click **Activate Segments** to restart the process and add more segments.
+
+![RTCDP](./images/s3k.png)
+
+Next Step: [11.5 Take Action: send your segment to Adobe Target](./ex5.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
