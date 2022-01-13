@@ -2,6 +2,7 @@
 title: Create data elements
 description: Learn how to create an XDM object and map data elements to it in tags. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Tags
+exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 ---
 # Create data elements
 
