@@ -76,7 +76,7 @@ This has already been done on the Luma site, but let's go ahead and do this on t
 </script>
 ```
 
-Open the sample page and paste it just before your tag embed code as pictured below (don't worry if the line numbers are different):
+Open the sample page and paste it just before your tag embed code as pictured below (don't worry if the line numbers are different). In this screenshot the pre-hiding snippet has been minified:
 
    ![Hover over the extension](images/target-prehidingSnippet.png)
 
