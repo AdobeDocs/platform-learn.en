@@ -51,7 +51,7 @@ Your segment is now linked to Google DV360. Every time a customer qualifies for 
 
 ![RTCDP](./images/rtcdpnext3.png)
 
-Next Step: [11.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
+Next Step: [11.4 Take Action: send your segment to an S3-destination](./ex4.md)
 
 [Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
