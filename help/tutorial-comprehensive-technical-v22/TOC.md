@@ -37,7 +37,8 @@ doc-type: multipage
   + [2.1 Explore the website](/help/tutorial-comprehensive-technical-v22/modules/module2/ex1.md)
   + [2.2 Configure Schema's and Set Identifiers](/help/tutorial-comprehensive-technical-v22/modules/module2/ex2.md)
   + [2.3 Configure Datasets](/help/tutorial-comprehensive-technical-v22/modules/module2/ex3.md)
-  + [2.4 Data Ingestion from Offline Sources](/help/tutorial-comprehensive-technical-v22/modules/module2/ex4.md)
+  + [2.4 Data Ingestion from Offline Sources](/help/tutorial-comprehensive-technical-v22/modules/module2/ex4.md)  
+  + [2.5 Data Landing Zone](/help/tutorial-comprehensive-technical-v22/modules/module2/ex5.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module2/summary.md)
 + 3 - Real-time Customer Profile {#module3}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module3/real-time-customer-profile.md)
@@ -72,8 +73,7 @@ doc-type: multipage
   + [6.3 Take Action: send your segment to DV360](/help/tutorial-comprehensive-technical-v22/modules/module6/ex3.md)
   + [6.4 Take Action: send your segment to an S3-destination](/help/tutorial-comprehensive-technical-v22/modules/module6/ex4.md)
   + [6.5 Take Action: send your segment to Adobe Target](/help/tutorial-comprehensive-technical-v22/modules/module6/ex5.md)
-  + [6.6 Data Landing Zone](/help/tutorial-comprehensive-technical-v22/modules/module6/ex6.md)
-  + [6.7 Segment Match](/help/tutorial-comprehensive-technical-v22/modules/module6/ex7.md)
+  + [6.6 Segment Match](/help/tutorial-comprehensive-technical-v22/modules/module6/ex6.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module6/summary.md)
 + 7 - Adobe Journey Optimizer: Orchestration {#module7}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module7/journey-orchestration-create-account.md)

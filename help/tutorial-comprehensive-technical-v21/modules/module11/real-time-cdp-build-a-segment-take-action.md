@@ -47,9 +47,9 @@ For this module, please use this sandbox: `--module11sandbox--`.
 
 ## Exercises
 
-[11.1 Build a segment and enable Streaming Segmentation](./ex1.md)
+[11.1 Create a segment](./ex1.md)
 
-Learn how to build a segment and enable streaming segmentation.
+Learn how to create a segment.
 
 [11.2 Review how to configure DV360 Destination using Destinations](./ex2.md)
 

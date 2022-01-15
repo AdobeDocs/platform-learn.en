@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: 5c205895-27a2-4c7d-ab08-0798d028866d
 ---
-# 6.5 Take Action: send your segment to an S3-destination
+# 6.4 Take Action: send your segment to an S3-destination
 
 Adobe Experience Platform also has the ability to share Audiences to Email Marketing Destinations such as Salesforce Marketing Cloud, Oracle Eloqua, Oracle Responsys and Adobe Campaign.
 
@@ -15,7 +15,7 @@ You can use FTP or SFTP as part of the dedicated destinations for each of these 
 
 In this module, you'll configure such a destination by making use of an AWS S3 bucket.
 
-## 6.5.1 Create your S3 bucket
+## 6.4.1 Create your S3 bucket
 
 Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you created in Module 5.
 
@@ -50,7 +50,7 @@ You'll then see your bucket being created and will be redirected to the Amazon S
 
 ![ETL](./images/S3homeb.png)
 
-## 6.5.2 Set permissions to access your S3 bucket
+## 6.4.2 Set permissions to access your S3 bucket
 
 The next step is to setup access to your S3 bucket.
 
@@ -114,7 +114,7 @@ Click **Close**.
 
 You've now successfully created an AWS S3 bucket and you've created a user with permissions to access this bucket.
 
-## 6.5.3 Configure Destination in Adobe Experience Platform
+## 6.4.3 Configure Destination in Adobe Experience Platform
 
 Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
 
@@ -219,7 +219,7 @@ If you'd like to add more segment exports, you can click **Activate Segments** t
 
 ![RTCDP](./images/s3k.png)
 
-Next Step: [6.6 Take Action: send your segment to Adobe Target](./ex6.md)
+Next Step: [6.5 Take Action: send your segment to Adobe Target](./ex5.md)
 
 [Go Back to Module 6](./real-time-cdp-build-a-segment-take-action.md)
 
