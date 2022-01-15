@@ -53,6 +53,7 @@ Make sure to surround your SASUri with double quotes.
 ```command
 ./azcopy copy journey-citys-global-context-websiteinteractions.csv "https://sndbxdtlndemxdz3v9p7mlfm.blob.core.windows.net/dlz-user-container?sv=2020-04-08&si=dlz-eaf19e1f-06c2-4ce1-9abc-0141ef5d137c&sr=c&sp=racwdlm&sig=TZ9Tq3GD8wo3BiAETwpWj9xxxxxxxxxxxxxxxxxxxxxxxx"
 ```
+
 After executing the above command in your terminal, you will see copy result:
 
 ![dlz-exec-copy-command.png](./images/dlz-exec-copy-command.png)
