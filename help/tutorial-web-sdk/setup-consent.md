@@ -43,15 +43,21 @@ Before you jump into the tag configurations, learn more about the consent manage
     * For CCPA, the default consent is commonly set to `true`. You are going to reference this scenario as **Implied opt-in** throughout this tutorial
     * For GDPR, the default consent is commonly set to `false`. You are going to reference this scenario as **Implied opt-out** throughout this tutorial.
 
+<!--
     This consent value can be verified by returning the JavaScript object ```klaro.getManager().consents``` in the browser's developer console.
-
+-->
     >[!NOTE]
     > 
     >Generally, the above mentioned steps are done and taken care by the team or individual who is responsible for handling the CMP such as OneTrust or TrustArc. 
 
 ## Inject a CMP
 
-Now, once you are done with the Klaro's configurations, you must create a tag rule with the following configurations:
+>[!WARNING]
+>
+>The best practice to implement a Consent Management Platform is typically to load the CMP _before_ loading your tag manager. To facilitate this tutorial, you will load the CMP _with_ the tag manager. This lesson is designed to show you how to use the consent features in Platform Web SDK and its tag extension and is not intended to be a lesson on how to configure Klaro or any other CMP.
+
+
+Now, once you are done with the Klaro's configurations, create a tag rule with the following configurations:
 
 * [!UICONTROL Name]: `all pages - library load - Klaro`
 * [!UICONTROL Event]: [!UICONTROL Library Loaded (Page Top)] with [!UICONTROL Advanced Options] > [!UICONTROL Order] set to 1 
@@ -115,6 +121,7 @@ Now you will configure and implement consent for this scenario:
    
 If a visitor decides to opt out (reject the tracking cookies), you must change the consent to **[!UICONTROL Out]**. Change the consent setting by following these steps:
 
+<!--
 1. Create a data element to store the consent value of the visitor. Let's call it `klaro consent value`. Use the code snippet to create a custom code type data element:
     
     ```javascript
@@ -132,25 +139,21 @@ If a visitor decides to opt out (reject the tracking cookies), you must change t
     ```
 
     ![Data Element consent confirmed](assets/consent-data-element-confirmed.png)
+-->
 
-1. Now, create a rule that triggers when the `klaro consent value` data element changes. (This is an alternative to triggering off of clicks on the consent banner). Name this rule as: `all pages - data element change - set consent "out"`
+1. Create a rule that triggers when the visitor clicks **I decline**.  Name this rule as: `all pages - click consent banner - set consent "out"`
 
-1. Add two conditions to the rule:
-    * Fire only when a visitor has declined the cookies. Create a condition to check the value of data element `klaro consent value` is `false`:
+1. As the **[!UICONTROL Event]**, use **[!UICONTROL Click]** on **[!UICONTROL Elements matching the CSS selector]** `#klaro .cn-decline`
 
-        ![Rule Condition klaro consent value is false](assets/consent-rule-condition-2.png)
-
-    * Fire only when this was a visitor's manual selection and not the default consent value. Create a condition to check the value of data element `consent confirmed` is `true`:
-
-        ![Rule Condition consent confirmed is true](assets/consent-rule-condition-1.png)
+    ![Rule Condition user clicks "I decline"](assets/consent-optOut-clickEvent.png)
 
 1. Now, use the Experience Platform Web SDK, [!UICONTROL Set consent] [!UICONTROL action type] to set the consent as "out":
 
     ![Consent Rule Opt-out Action](assets/consent-rule-optout-action.png)
 
-1. After all these steps, your rule now should look like this:
+1. Select **[!UICONTROL Save to Library and Build]**:
 
-    ![Consent Rule opt out](assets/consent-rule-optout.png)
+    ![Save and build your library](assets/consent-rule-optout-saveAndBuild.png)
 
 Now, when a visitor opts-out, the rule configured in the above fashion would fire and sets the Web SDK consent as **[!UICONTROL Out]**. 
 
@@ -165,7 +168,7 @@ Here is how you can set up the configuration for an implied opt-out scenario:
 
 1. In Klaro, toggle off the **Service Default State** in your `aep web sdk` service and save the updated configuration.
 
-1. In **[!UICONTROL Privacy]** section of Experience Platform Web SDK extension, set default consent to **[!UICONTROL Out]** or "Pending" as required.
+1. In **[!UICONTROL Privacy]** section of Experience Platform Web SDK extension, set default consent to **[!UICONTROL Out]** or **[!UICONTROL Pending]** as required.
 
     ![Consent AEP Extension Privacy Config](assets/consent-implied-opt-out.png)
 
@@ -182,15 +185,11 @@ Here is how you can set up the configuration for an implied opt-out scenario:
    
 In case a visitor decides to opt in (accept the tracking cookies), you must change the consent and set it to **[!UICONTROL In]**. Here is how you can do this with a rule:
 
-1. Create a rule that triggers on a change to the `klaro consent value` data element. Name the rule `all pages - data element change - set consent "in"`
-1. Add two conditions in the rule:
-    * Fire only when a visitor has accepted the cookies and permission has changed. Create a condition to check the value of data element `klaro consent value` is `true`
+1. Create a rule that triggers when the visitor clicks **That's ok**.  Name this rule as: `all pages - click consent banner - set consent "in"`
 
-        ![Rule2 Condition 1](assets/consent-rule2-condition-1.png)
+1. As the **[!UICONTROL Event]**, use **[!UICONTROL Click]** on **[!UICONTROL Elements matching the CSS selector]** `#klaro .cm-btn-success`
 
-    * Fire only when this was a visitor's manual selection and not the default consent value. Create a condition in the rule as data element `consent confirmed` is `true`.
-
-        ![Rule2 Condition 2](assets/consent-rule2-condition-2.png)
+    ![Rule Condition user clicks "That's ok"](assets/consent-optIn-clickEvent.png)
 
 1. Add an action using the Experience Platform Web SDK [!UICONTROL Extension], **[!UICONTROL Action Type]** of **[!UICONTROL Set consent]**, **[!UICONTROL General consent]** as **[!UICONTROL In]**. 
 
@@ -198,9 +197,9 @@ In case a visitor decides to opt in (accept the tracking cookies), you must chan
 
     One thing to note here is that this [!UICONTROL Set consent] action is going to be the first request that goes out and establishes identity. Because of this, it may be important to sync identities on the first request itself. The identity map can be added to [!UICONTROL Set consent] action by passing an identity type data element.
 
-1.  Now, your rule should look like this:
+1.  Select **[!UICONTROL Save to Library and Build]**:
 
-    ![Consent Rule opt out](assets/consent-rule-optin.png)
+    ![Consent Rule opt out](assets/consent-rule-optin-saveAndBuild.png)
 
 1. **[!UICONTROL Save]** the rule to your library and rebuild it.
 
@@ -212,6 +211,6 @@ Once you have this rule in place, events collection should begin when a visitor 
 For more information on consent in Web SDK, see [Supporting customer consent preferences](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
 
 
-For more information on the Set consent action, see [Set consent](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+For more information on the [!UICONTROL Set consent] action, see [Set consent](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
 
 [Next: **Set up Event Forwarding**](setup-event-forwarding.md)
