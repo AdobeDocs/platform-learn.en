@@ -54,7 +54,7 @@ Before you jump into the tag configurations, learn more about the consent manage
 
 >[!WARNING]
 >
->The best practice to implement a Consent Management Platform is typically to load the CMP _before_ loading your tag manager. To facilitate this tutorial, you will load the CMP _with_ the tag manager. This lesson is designed to show you how to use the consent features in Platform Web SDK and its tag extension and is not intended to be a lesson on how to configure Klaro or any other CMP.
+>The best practice to implement a Consent Management Platform is typically to load the CMP _before_ loading your tag manager. To facilitate this tutorial, you will load the CMP _with_ the tag manager. This lesson is designed to show you how to use the consent features in Platform Web SDK  and should not be used as a guide to correctly configure Klaro or any other CMP.
 
 
 Now, once you are done with the Klaro's configurations, create a tag rule with the following configurations:
