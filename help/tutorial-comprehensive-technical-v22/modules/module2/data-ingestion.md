@@ -65,6 +65,10 @@ In this exercise, you'll retrieve the required datasets to capture and store pro
 
 In this exercise, you'll go on the website and mobile app and behave like a customer, streaming data to Platform.
 
+[2.5 Data Landing Zone](./ex5.md)
+
+Setup your Data Landing Zone Source connector with Azure Blob storage.
+
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.

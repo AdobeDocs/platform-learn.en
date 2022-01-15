@@ -316,7 +316,7 @@ Go to **[!UICONTROL Identity Data]** and you'll see that the **[!UICONTROL I2]**
 
 With this, you've now successfully ingested and classified CRM Data in Adobe Experience Platform.
 
-Next Step: [Summary and benefits](./summary.md)
+Next Step: [2.5 Data Landing Zone](./ex5.md)
 
 [Go Back to Module 2](./data-ingestion.md)
 
