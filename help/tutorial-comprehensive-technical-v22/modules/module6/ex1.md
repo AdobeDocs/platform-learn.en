@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: e8619175-e0b4-4cf5-bf5b-8ff3af1fb75e
 ---
-# 6.1 Build a segment
+# 6.1 Create a segment
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's segment builder.
 
@@ -80,7 +80,7 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In the menu on the left side, go to **Segments** where you can see an overview of all existing segments.
+In the menu on the left side, go to **Segments** and then go to **Browse** where you can see an overview of all existing segments.
 
 ![Segmentation](./images/menuseg.png)
 
@@ -116,12 +116,12 @@ Your **Event Rules** should now look like this. Every time you add an element to
 
 Finally, let's give your segment a name and save it.
 
-As a naming convention, we'll use:
+As a naming convention, use:
 
-* `ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)`
+- `--demoProfileLdap-- - Interest in Zeppelin Yoga Pant`
 
 Please replace **ldap** with your assigned number, like this:
-`vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw)`
+`vangeluw - Interest in Zeppelin Yoga Pant`
 
 ![Segmentation](./images/segmentname.png)
 
@@ -135,6 +135,6 @@ When you now go back to the demo website and refresh the homepage, you should se
 
 Next Step: [6.2 Review how to configure DV360 Destination using Destinations](./ex2.md)
 
-[Go Back to Module 6](./real-time-cdp-build-a-segment-take-action.md)
+[Go Back to Module 11](./real-time-cdp-build-a-segment-take-action.md)
 
 [Go Back to All Modules](../../overview.md)

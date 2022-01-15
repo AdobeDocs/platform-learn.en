@@ -67,11 +67,7 @@ Use the segment you built in exercise 6.1 and send it to an S3-destination, typi
 
 Use the segment you built in exercise 6.1 to configure an Experience Targeting Activity in Adobe Target.
 
-[6.6 Data Landing Zone](./ex6.md)
-
-Setup your Data Landing Zone Source connector with Azure Blob storage.
-
-[6.7 Segment Match](./ex7.md)
+[6.6 Segment Match](./ex6.md)
 
 Configure and use Segment Match to exchange segments between sandboxes and/or Adobe Experience Platform instances.
 

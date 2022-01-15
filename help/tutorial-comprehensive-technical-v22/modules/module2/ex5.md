@@ -24,7 +24,7 @@ To copy blobs or files to your AEP Data Landing Zone we will use AzCopy, a comma
 
 * Unzip the downloade file
 
-* Download a sample data file [journey-citys-global-context-websiteinteractions.csv](./files/journey-citys-global-context-websiteinteractions.csv), which contains City Signal's website interactions and save it to the unzip location of azcopy.
+* Download a sample data file [journey-citys-global-context-websiteinteractions.csv](../../assets/csv/data-ingestion/journey-citys-global-context-websiteinteractions.csv), which contains City Signal's website interactions and save it to the unzip location of azcopy.
 
 * Open a terminal window and navigate to your "unzip" folder, you should see the following content (azcopy and citys-pages-s2-app.csv), for example on OSX:
 
