@@ -22,7 +22,8 @@ To complete this tutorial, you can either use the [Postman application's UI](#po
 ## Pre-requisites
 
 * You have authenticated and have access to Experience Platform APIs. If not, you can quickly set it up by following this [tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html).
-* You have access to Experience Platform sandbox environment. 
+* You have access to Experience Platform sandbox environment.
+* Know your Experience Platform tenant id. Your tenant id should appear in the URL when you log into your Platform account. In the following URL, the tenant is "`techmarketingdemos`" `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`. You can also obtain it by making an authenticated [API request](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id).
 
 ## Using Postman {#postman}
 
@@ -110,6 +111,8 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
     ![Collections Import](../assets/data-generator/images/authentication.png)
 
 1. Review the environment variables, and you can notice that the `JWT_TOKEN` and `ACCESS_TOKEN` are now populated.
+1. In the `luma-data` folder, open all of the `json` files in a text editor and replace all instances of `_techmarketingdemos` with your own tenant id, preceded by an underscore.
+
 1. Open the `Luma-Loyalty-Data` collection and click **Run** on the overview tab to start a Collection Runner.
 
     ![Collections Import](../assets/data-generator/images/loyalty.png)
