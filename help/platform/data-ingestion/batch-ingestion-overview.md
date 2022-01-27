@@ -17,6 +17,4 @@ This video gives an overview of batch data ingestion in Adobe Experience Platfor
 >
 > This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
 
-## Additional Resources
-
-* [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)
+For more information, please visit the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html).

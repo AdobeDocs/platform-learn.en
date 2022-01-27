@@ -13,7 +13,3 @@ This video shows Adobe Experience Platform can be used with Magento Commerce to 
 
 >[!VIDEO](https://video.tv.adobe.com/v/40376?quality=12&learn=on)
 
-
-## Additional Resources
-
-* [Integrations with Experience Cloud Applications (video)](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)

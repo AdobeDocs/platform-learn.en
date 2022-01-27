@@ -20,6 +20,4 @@ Learn how event forwarding centralizes data collection, reduces the amount of co
 
 >[!VIDEO](https://video.tv.adobe.com/v/331937?quality=12&learn=on)
 
-## Additional Resources
-
-* [Event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+For more information, please visit the [Event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).

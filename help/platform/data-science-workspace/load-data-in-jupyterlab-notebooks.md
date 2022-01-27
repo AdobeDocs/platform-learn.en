@@ -17,8 +17,4 @@ This video shows how to create a JupyterLab notebook and load data from Adobe Ex
 >
 > This video is part of a course, [Getting Started with Data Science Workspace for Data Scientists](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw), available for free on Experience League!
 
-## Additional Resources
-
-* [Data access in Jupyterlab notebooks](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/access-notebook-data.html)
-* [Data Science Workspace overview video](understanding-data-science-workspace.md)
-* [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html)
+For more information, please visit the [Data access in Jupyterlab notebooks documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/access-notebook-data.html).
