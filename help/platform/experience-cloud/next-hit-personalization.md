@@ -1,6 +1,6 @@
 ---
 title: Learn how to personalize on the next hit with Real-time Customer Data Platform and Adobe Target.
-description: Learn how to personalize on the next hit with Real-time CDP and Adobe Target.
+description: Learn how to personalize on the next hit with Real-time Customer Data Platform (CDP) and Adobe Target
 role: User
 solution: Experience Platform,Target
 feature-set: Experience Platform,Target
