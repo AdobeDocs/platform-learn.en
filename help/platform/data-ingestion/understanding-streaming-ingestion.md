@@ -13,6 +13,4 @@ Using Experience Platform's streaming ingestion you can be sure that any data yo
 
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
-## Additional Resources
-
-* [Streaming Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
+For more information, please visit the [Streaming Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html).

@@ -19,10 +19,4 @@ In Adobe Experience Platform Data Science Workspace, a machine learning Model is
 >
 > This video is part of a course, [Getting Started with Data Science Workspace for Data Scientists](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw), available for free on Experience League!
 
-## Additional Resources
-
-* [Build a model using the recipe builder template](recipe-builder-template.md)
-* [Data Science Workspace documentation](https://www.adobe.com/go/data-science-train-model-en)
-* [Train a model using the API](https://www.adobe.com/go/data-science-train-model-API-tutorial-en)
-* [Score a model using the API](https://www.adobe.com/go/data-science-score-model-API-tutorial-en)
-* [Publish a model using the API](https://www.adobe.com/go/data-science-publish-model-service-api-en)
+For more information, please visit the [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).

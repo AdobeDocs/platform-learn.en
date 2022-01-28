@@ -12,3 +12,5 @@ exl-id: f29d8a20-9af9-4f87-949e-bb9393ccf049
 Learn how to create a product profile and assign users, developers, admins, and permissions.
 
 >[!VIDEO](https://video.tv.adobe.com/v/336081?quality=12&learn=on)
+
+For more information, please visit the [Access control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).

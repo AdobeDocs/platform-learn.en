@@ -20,6 +20,4 @@ Learn how to create an event-forwarding property in Data Collection.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331938?quality=12&learn=on)
 
-## Additional Resources
-
-* [Create an event forwarding property documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property)
+For more information, please visit the [Create an event forwarding property documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-an-event-forwarding-property).
