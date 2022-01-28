@@ -1,6 +1,6 @@
 ---
-title: Learn how to personalize on the next hit with Real-time Customer Data Platform and Adobe Target.
-description: Learn how to personalize on the next hit with Real-time Customer Data Platform (CDP) and Adobe Target
+title: Next-hit personalization with Real-time CDP and Adobe Target
+description: Learn how to personalize on the next hit with Real-time Customer Data Platform (CDP) and Adobe Target.
 role: User
 solution: Experience Platform,Target
 feature-set: Experience Platform,Target
@@ -10,7 +10,7 @@ thumbnail: 340091.jpg
 ---
 # Next-hit personalization with Real-time CDP and Adobe Target
 
-Learn how to personalize on the next hit with Real-time Customer Data Platform (CDP) and Adobe Target. The Adobe Target destination in Real-time CDP allows you to use Experience Platform segments in Adobe Target for same page and next-page personalization with governance and privacy support.
+Learn how to personalize on the next hit with Real-time Customer Data Platform and Adobe Target. The Adobe Target destination in Real-time CDP allows you to use Experience Platform segments in Adobe Target for same page and next-page personalization with governance and privacy support.
 
 >[!VIDEO](https://video.tv.adobe.com/v/340091?quality=12&learn=on)
 
