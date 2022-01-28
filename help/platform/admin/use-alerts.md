@@ -13,7 +13,4 @@ Learn how to subscribe to and administer alerts in Adobe Experience Platform. Al
 
 >[!VIDEO](https://video.tv.adobe.com/v/336218?quality=12&learn=on)
 
-## Additional Resources
-
-* [Alerts documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html)
-* [Observability API](https://www.adobe.io/experience-platform-apis/references/observability-insights/)
+For more information, please visit the [Alerts documentation](https://experienceleague.adobe.com/docs/experience-platform/observability/alerts/overview.html).

@@ -15,10 +15,8 @@ Explore how Experience Platform sandboxes provide data isolation and environment
 
 >[!NOTE]
 >
->Since the recording of this video, the sandbox switcher has moved to the top right of the Experience Cloud interface to provide more vertical space for you to focus on your work
+>Since the recording of this video, the sandbox switcher has moved to the top right of the Experience Cloud interface to provide more vertical space for you to focus on your work:
+>
+> ![Sandbox switcher relocation](../assets/sandbox-switcher.gif)
 
-![Sandbox switcher relocation](assets/sandbox-switcher.gif)
-
-## Additional Resources
-
-* [Sandboxes user guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)
+For more information, please visit the [Sandboxes user guide](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html).
