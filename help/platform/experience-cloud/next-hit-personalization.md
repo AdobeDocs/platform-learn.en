@@ -7,6 +7,7 @@ feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
 kt: 9629
 thumbnail: 340091.jpg
+exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
 ---
 # Next-hit personalization with Real-time CDP and Adobe Target
 
