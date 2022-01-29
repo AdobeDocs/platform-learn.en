@@ -10,12 +10,10 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-* **[Data monitoring (Video)](/help/platform/data-ingestion/data-monitoring.md)**
-    *Monitor and track data that gets ingested into Platform*
+* **[Next-hit personalization with Real-time CDP and Adobe Target(Video)](/help/platform/experience-cloud/next-hit-personalization.md)**
+    *Personalize on the next hit with governance and privacy*
 * **[Create merge policies (Video)](/help/platform/profiles/create-merge-policies.md)**
     *Combine datasets from disparate sources*
-* **[Union schemas overview (Video)](/help/platform/profiles/union-schemas-overview.md)**
-    *See all of the fields contained within schemas of the same class*
 * **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
     *Get hands-on with multiple Platform features with this multi-page tutorial*
 
