@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 64b731f9-8fc1-458b-bb58-27f6c8ca63d0
 ---
 # 2.1 - From unknown to known on the website
 

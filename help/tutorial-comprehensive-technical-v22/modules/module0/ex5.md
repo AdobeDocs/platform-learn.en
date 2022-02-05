@@ -9,63 +9,69 @@ exl-id: 83e55ecd-24e9-4460-ba0a-885b8df049e0
 ---
 # 0.5 Use the mobile app
 
-The mobile application that is used in the context of this demo and enablement environment is only available for **iOS**.
+## 0.5.1 Download the app
 
-Take your **iOS** device, open the **AppStore** and search for **Platform - Edge**. Click the **DOWNLOAD/INSTALL** button.
+Go to [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) on your computer. You'll then see this.
 
-![DSN](./images/mobileapp1.png)
+![DSN](./images/mobileapp.png)
 
-Next, click **OPEN**.
-
-![DSN](./images/mobileapp1a.png)
-
-You'll now see this screen. You can either manually enter the **Configuration ID** you created, or else, you can click the **QR code scan** icon to scan a QR code.
-
-![DSN](./images/mobileapp8.png)
-
-On the Admin homepage of your demo website, you'll find a QR code you can scan. 
-
-![DSN](./images/adminhomeqr.png)
-
-After clicking the **QR code scan** in the app, you'll see this. Click **OK** to scan a QR code.
-
-![DSN](./images/mobileapp9.png)
-
-After scanning the QR code, you'll be back in this screen, with the Configuration ID filled out for you. Click **Load Configuration**.
-
-![DSN](./images/mobileapp10.png)
-
-You'll then see a confirmation of which environment you'll be loading. Click **Save Configuration**.
-
-![DSN](./images/mobileapp11.png)
-
-After a couple of seconds, you'll be presented with the **Select LDAP** screen. Select your LDAP and click **Save**.
-
-![DSN](./images/mobileapp12.png)
-
-After a couple of seconds, you'll see that the demo brand **Luma** is being loaded automatically.
-
-![DSN](./images/mobileapp13.png)
-
-And finally, you'll see the Luma homepage in the app.
-
-![DSN](./images/mobileapp14a.png)
-
-Kill the app by swiping the app up, and swiping it up completely so that the app is killed.
-
-![DSN](./images/griffon2.png)
+Use the **Camera** app on your smartphone to install the mobile app for your device's OS. For this enablement, you need to install the **Version 2.x** which uses the Adobe Experience Platform Mobile SDK's.
 
 >[!NOTE]
 >
-> After restarting the app, you'll be asked to accept up to 3 permission prompts. Accept those prompts by clicking **OK**, **Allow while using the app** or **Allow** as they are required by the app.
+>After installing the app for the first time on an iOS device, you might get an error message when trying to open the app which says: **Untrusted Enterprise Developer**. In order to fix this, you need to go to **Settings > General > Device Management > Adobe Systems Inc.** and click **Trust Adobe Systems Inc.**.
 
-![DSN](./images/prompt1.png)
-![DSN](./images/prompt2.png)
-![DSN](./images/prompt3.png)
+Once the app is installed, you'll find it on your device's home screen. Click the icon to open the app.
 
-You'll then see the Luma homepage in the app again, which means you're ready for your demo and enablement.
+![DSN](./images/mobileappn1.png)
 
-![DSN](./images/mobileapp14a.png)
+When you're using the app the first time, you'll be requested to log in using your Adobe ID. Complete the login process.
+
+![DSN](./images/mobileappn2.png)
+
+After logging in, you'll see a notification requesting your permission to send notifications. We'll send notifications as part of the tutorial, so click **Allow**.
+
+![DSN](./images/mobileappn3.png)
+
+You'll then see the app's homepage. Go to **Settings**.
+
+![DSN](./images/mobileappn4.png)
+
+In settings, you'll see that currently a **Public Project** is loaded in the app. Click **Custom Project**.
+
+![DSN](./images/mobileappn5.png)
+
+You can now load a custom project. Click the QR code to easily load your project.
+
+![DSN](./images/mobileappn6.png)
+
+After exercise 0.1, you had this result. Click to open the **Mobile Retail project** that was created for you.
+
+![DSN](./images/dsn5b.png)
+
+In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your mobile app project to open it.
+
+![DSN](./images/web8a.png)
+
+You'll then see this. Click **Integrations**.
+
+![DSN](./images/web8aa.png)
+
+You need to select the Data Collection property for mobile that was created in exercise 0.1. Next, click **Run**.
+
+![DSN](./images/web8b.png)
+
+You'll then see this popup, which contains a QR code. Scan this QR-code from within the mobile app.
+
+![DSN](./images/web8c.png)
+
+You'll then see your project ID show in the app, after which you can click **Save**.
+
+![DSN](./images/mobileappn7.png)
+
+Now, go back to **Home** in the app. Your app is now ready to be used.
+
+![DSN](./images/mobileappn8.png)
 
 Next Step: [0.6 Install the Chrome extension for the Experience League documentation](./ex6.md)
 

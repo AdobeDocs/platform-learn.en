@@ -22,19 +22,15 @@ For now, please follow these steps.
 
 Click **[!UICONTROL Datastreams]**.
 
-![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png) 
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png)
 
 Click **[!UICONTROL New Datastream]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter **ldap - Demo System Datastream** and replace **ldap** with your ldap.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap--` - Demo System Datastream and click **Save**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig2.png)
-
-Click the **[!UICONTROL Save]** button
-
-![Name the Edge Configuration and save](./images/save.png)
 
 You'll then see this:
 
@@ -44,11 +40,7 @@ Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additiona
 
 ![Name the Edge Configuration and save](./images/edgeconfig4.png)
 
-For **[!UICONTROL Sandbox]**, select your sandbox name.
-
->[!NOTE]
->
-> You can find your IMS Org ID, Org Name and your Adobe Experience Platform sandbox name on your company's github repository that was set up by your Adobe contact. If you don't know which sandbox to use, verify if you can see a sandbox named **AEP Enablement FY21**. If you can see that sandbox, please select it.
+For **[!UICONTROL Sandbox]**, select your sandbox name, which should be `--aepSandboxId--`.
 
 ![Name the Edge Configuration and save](./images/edgeconfig5.png)
 
@@ -68,55 +60,41 @@ You'll then see that your datastream consists of 3 environments.
 
 In the left menu, clik **[!UICONTROL Tags]**.
 
-Filter the search results to see your two Data Collection properties.
+Filter the search results to see your two Data Collection properties. Open the property for **Web** by clicking it.
 
 ![Name the Edge Configuration and save](./images/edgeconfig10a.png)
 
-Open the property for **Web** by clicking it. You'll then see this. Click **Extensions**.
+You'll then see this. Click **Extensions**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig11.png)
 
-On the AEP Web SDK extension, click **Configure**.
+On the Adobe Experience Platform Web SDK extension, click **Configure**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig12.png)
 
-You'll then see this. For the **Edge Configurations**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Datastream you created earlier.
-
->[!NOTE]
->
->If you can't see your Datastream in the dropdown list, it's probably because the dropdown is only showing the first 100 results. If you want to select your Datastream out of this list, you need to rename your Datastream to start with a **0** or an **a**. Alternatively, you can simply paste the Environment ID manually.
+You'll then see this. For **Datastreams**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Datastream you created earlier.
 
 ![Name the Edge Configuration and save](./images/edgeconfig13.png)
 
-Make sure to have selected your **Datastream**. 
+Make sure to have selected your **Datastream**. TIP: You can filter the results in the dropdown easily by typing your `--demoProfileLdap--`.
 
 ![Name the Edge Configuration and save](./images/edgeconfig14.png)
 
-Scroll down until you see **Data Collection**.
+Scroll down until you see **Data Collection**. Please ensure that the checkbox for **Enable click data collection** is not enabled. Click **Save** to save your changes.
 
 ![Name the Edge Configuration and save](./images/edgeconfig14a.png)
-
-Uncheck the checkbox for **Enable click data collection**.
-
-![Name the Edge Configuration and save](./images/edgeconfig14b.png)
-
-Click **Save** to save your changes.
 
 Go to **Publishing Flow**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig15.png)
 
-Click the **...** for the **Content Library**, then click **Edit**.
+Click the **...** for **Main**, then click **Edit**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig16.png)
 
-Click **Add All Changed Resources**.
+Click **Add All Changed Resources** and then click **Save & Build for Development**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig17.png)
-
-Finally, click **Save & Build for Development**.
-
-![Name the Edge Configuration and save](./images/edgeconfig18.png) 
 
 Your changes are now being published and will be ready in a couple of minutes.
 
@@ -132,7 +110,7 @@ Click **[!UICONTROL New Datastream]**.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter **ldap - Demo System Datastream (Mobile)** and replace **ldap** with your ldap.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap--` - Demo System Datastream (Mobile).
 Click **[!UICONTROL Save]**.
 
 ![Name the Datastream and save](./images/edgeconfig2m.png)
@@ -147,10 +125,6 @@ Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additiona
 
 For **[!UICONTROL Sandbox]**, select your sandbox name.
 
->[!NOTE]
->
-> You can find your IMS Org ID, Org Name and your Adobe Experience Platform sandbox name on your company's github repository that was set up by your Adobe contact. If you don't know which sandbox to use, verify if you can see a sandbox named **AEP Enablement FY21**. If you can see that sandbox, please select it.
-
 ![Name the Datastream Configuration and save](./images/edgeconfig5m.png)
 
 For Event Dataset, select **Demo System - Event Dataset for Mobile App (Global v1.1)** and for Profile Dataset, select **Demo System - Profile Dataset for Mobile App (Global v1.1)**. Click **Save**.
@@ -163,11 +137,11 @@ You'll then see that your Datastream consists of 3 environments.
 
 Your Datastream is now ready to be used in your Adobe Experience Platform Data Collection Client property for Mobile.
 
-Go to **Tags** and filter the search results to see your two Data Collection properties.
+Go to **Tags** and filter the search results to see your two Data Collection properties. Open the property for **Mobile** by clicking it. 
 
-![Name the Edge Configuration and save](./images/edgeconfig10a.png)
+![Name the Edge Configuration and save](./images/edgeconfig10am.png)
 
-Open the property for **Mobile** by clicking it. You'll then see this. Click **Extensions**.
+You'll then see this. Click **Extensions**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig11m.png)
 
@@ -175,34 +149,21 @@ On the **Adobe Experience Platform Edge Network** extension, click **Configure**
 
 ![Name the Edge Configuration and save](./images/edgeconfig12m.png)
 
-You'll then see this. For the **Edge Configurations**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Datastream you created earlier.
-
->[!NOTE]
->
->If you can't see your Datastream in the dropdown list, it's probably because the dropdown is only showing the first 100 results. If you want to select your Datastream out of this list, you need to rename your Datastream to start with a **0** or an **a**. Alternatively, you can simply paste the Environment ID manually.
+You'll then see this. For the **Datastreams**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Datastream you created earlier. Click **Save** to save your changes.
 
 ![Name the Edge Configuration and save](./images/edgeconfig13m.png)
-
-Make sure to have selected your **Datastream**. 
-Click **Save** to save your changes.
-
-![Name the Edge Configuration and save](./images/edgeconfig14m.png)
 
 Go to **Publishing Flow**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig15m.png)
 
-Click the **...** for the **Content Library**, then click **Edit**.
+Click the **...** next to **Main**, then click **Edit**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig16m.png)
 
-Click **Add All Changed Resources**.
+Click **Add All Changed Resources**, then click **Save & Build for Development**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig17m.png)
-
-Finally, click **Save & Build for Development**.
-
-![Name the Edge Configuration and save](./images/edgeconfig18.png) 
 
 Your changes are now being published and will be ready in a couple of minutes.
 
