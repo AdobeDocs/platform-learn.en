@@ -5,13 +5,10 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 28761b3e-f491-4696-9561-91ff66f2b39f
 ---
 # 2.2 Configure Schemas and Set Identifiers
 
 In this exercise, you'll configure the required XDM schemas to classify profile information and customer behavior. In every XDM schema, you'll also have to configure a primary identifier to link all the information to.
-
-The URL to login to Adobe Experience Platform is: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
  
 ## Story
 
@@ -63,13 +60,9 @@ After selecting the appropriate sandbox, you'll see the screen change and now yo
 
 ![Data Ingestion](./images/sb2.png)
 
-In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen.
+In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen. You'll see the list of available [!UICONTROL Schemas]. 
 
 ![Data Ingestion](./images/menuschemas.png)
-
-You'll see the list of available [!UICONTROL Schemas]. 
-
-![Data Ingestion](./images/schemas.png)
 
 You should create a new schema. To create a new schema, click on the button **[!UICONTROL + Create Schema]** and select **[!UICONTROL XDM Individual Profile]**.
 
