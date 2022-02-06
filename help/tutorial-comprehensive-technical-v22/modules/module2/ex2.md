@@ -31,7 +31,7 @@ The same thing goes for the question **What does this customer do?**. It's a ver
 
 Capturing the answer to **Who is this customer?** for your company is done through the Login/Registration-page.
 
-![Data Ingestion](./images/lb_register_dtl.png)
+![Data Ingestion](./images/pv10.png)
 
 From a Schema perspective, we look at this as a **Class**. The question: **Who is this customer?** is something that we define in the Class **[!UICONTROL XDM Individual Profile]**.
 
@@ -52,13 +52,9 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
 
 In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen. You'll see the list of available [!UICONTROL Schemas]. 
 
@@ -114,10 +110,9 @@ Instead of reusing an existing [!UICONTROL Field Group], you'll now create your 
 You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Description]** for your new [!UICONTROL Field Group]. 
 
 As the name for our schema, we'll use this:
+`--demoProfileLdap--` - Profile Identification Field Group
 
-**[!UICONTROL ldap - Profile Identification Field Group]**
-
-Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
+As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
 **[!UICONTROL vangeluw - Profile Identification Field Group]**
 
@@ -288,7 +283,7 @@ Let's now give your schema a name. Select the field **Untitled schema**.
 
 As the name for our schema, you'll use this:
 
-**[!UICONTROL ldap - Demo System - Profile Schema for Website]**
+`--demoProfileLdap--` - Demo System - Profile Schema for Website
 
 Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
@@ -335,7 +330,7 @@ Finally, click **[!UICONTROL Save]** to save your schema.
 
 Capturing the answer to the question **What does this customer do?** for your company is done through for instance a product view on a product page.
 
-![Data Ingestion](./images/lb_babars.png)
+![Data Ingestion](./images/pv7.png)
 
 From a schema perspective, we look at this as a **[!UICONTROL Class]**. The question: **What does this customer do?**is something that we've defined in the class **[!UICONTROL ExperienceEvent]**.
 

@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: cb9725ec-3809-49bf-975e-cfe6edd63d01
 ---
 # 1.2 Edge Network, Datastreams and Server Side Data Collection
 
@@ -31,7 +30,7 @@ Click **[!UICONTROL Datastreams]** in the left menu.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
-Search for your Datastream, which is named **ldap - Demo System Datastream** (replace **ldap** with your ldap).
+Search for your Datastream, which is named `--demoProfileLdap--` - Demo System Datastream.
 
 ![Name the Datastream and save](./images/edgeconfig2.png)
 
@@ -54,10 +53,8 @@ For this Datastream...
 - All Profile data will be collected by default into the dataset **Demo System - Profile Dataset for Website (Global v1.1)** (ingesting profile data natively with Web SDK currently isn't supported yet by Web SDK, and will be made available at a later stage)
 - If you want to use the **Offer Decisioning** application service for this Datastream, you need to check the box for Offer Decisioning. (This will be part of [Module 9](./../module9/offer-decisioning.md))
 - If you want to use the **Edge Segmentation**, you need to check the box for Edge Segmentation.
+- If you want to use the **Personalization Destinations**, you need to check the box for Personalization Destinations.
 
->[!NOTE]
->
-> The options to enable Offer Decisioning and Edge Segmentation are currently available in early access to select users. This functionality is not available to all IMS organizations.
 
 ![Name the Datastream and save](./images/edgecfg2.png)
 

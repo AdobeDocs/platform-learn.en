@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 146e9e4e-2726-46e2-a6ca-62c4ce6f8ba1
 ---
 
 # 0.2 Create your Datastream
