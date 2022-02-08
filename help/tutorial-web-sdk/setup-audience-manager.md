@@ -102,7 +102,8 @@ The next step is to create a **segment**, and assign your newly defined trait to
 1. Select **[!UICONTROL Add New]** in the top left of the page to open the segment builder
 1. Give your segment a friendly name and description, such as `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Select a Folder]** where your segment will be saved in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
-1. Add an integration code, which in this case is a random set of numbers. 1. In the **[!UICONTROL Data Source]** section, select **[!UICONTROL Audience Manager]** and the data source you created earlier
+1. Add an integration code, which in this case is a random set of numbers. 
+1. In the **[!UICONTROL Data Source]** section, select **[!UICONTROL Audience Manager]** and the data source you created earlier
 1. Expand the **[!UICONTROL Traits]** section and search for the trait you created
 1. Select **[!UICONTROL Add Trait]**. 
 1. Select **[!UICONTROL Save]** at the bottom of the page
