@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: e9a2732d-bc72-45a4-b421-d89bee0f052d
 ---
 # 3.2 Visualize your own Real-time Customer Profile - UI
 
@@ -15,33 +14,21 @@ In this exercise, you'll login to Adobe Experience Platform and view your own Re
 
 In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the true experience system of record.
 
-## 3.2.1 - Use the Customer Profile View in Adobe Experience Platform
+## 3.2.1 Use the Customer Profile View in Adobe Experience Platform
 
-Adobe Experience Platform has a feature that brands have been trying to get for years: a single view of the customer!
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
+![Data Ingestion](../module2/images/home.png)
 
-After logging in, you'll land on the homepage of Adobe Experience Platform.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-![Data Ingestion](./images/home.png)
+![Data Ingestion](../module2/images/sb1.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
-
-![Data Ingestion](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
-
-In the menu on the left side, go to **Profiles**.
+In the left menu, go to **Profiles** and to **Browse**.
 
 ![Customer Profile](./images/homemenu.png)
 
-Go to **Browse**.
-
-![Customer Profile](./images/findaprofile.png)
-
-On the X-ray panel on your website, you can find multiple identities. Every Identity is linked to a namespace. 
+On the Profile Viewer panel on your website, you can find multiple identities. Every Identity is linked to a namespace. 
 
 ![Customer Profile](./images/identities.png)
 
@@ -49,25 +36,17 @@ On the X-ray panel, we can see 4 different combinations of IDs and Namespaces:
 
 | Identity     | Namespace       |
 |:-------------:| :---------------:|
-| Experience Cloud ID (ECID)          | 34113965854450796644316155105296901017 |
-| Email ID          | woutervangeluwe+10122020-15@gmail.com|
-| Mobile Number ID          | +32473622044+10122020-15|
+| Experience Cloud ID (ECID)          | 12507560687324495704459439363261812234 |
+| Email ID          | woutervangeluwe+06022022-01@gmail.com|
+| Mobile Number ID          | +32473622044+06022022-01|
 
 With Adobe Experience Platform, all IDs are equally important. Previously, the ECID was the most important ID in the Adobe context and all other IDs were linked to the ECID in a hierarchical relation. With Adobe Experience Platform this is no longer the case, and every ID can be considered a primary identifier. 
 
 Typically, the primary identifier depends on the context. If you ask your Call Center, **What is the most important ID?** they will probably answer, **the phone number!** But if you ask your CRM team, they will answer, **The email address!**  Adobe Experience Platform understands this complexity and manages it for you. Every application, whether an Adobe application or non-Adobe application, will speak with Adobe Experience Platform by referring to the ID they consider primary. And it simply works.
 
-For the field **Identity namespace**, select **Email** and for the field **Identity Value** enter the email address you used to register in the previous exercise.
+For the field **Identity namespace**, select **Email** and for the field **Identity Value** enter the email address you used to register in the previous exercise. Click **View**. You'll then see your profile in the list. Click the **Profile ID** to open your profile.
 
 ![Customer Profile](./images/popupecid.png)
-
-Click **View**.
-
-![Customer Profile](./images/showprofile.png)
-
-You'll then see your profile in the list. Click the **Profile ID** to open your profile.
-
-![Customer Profile](./images/showprofileid.png)
 
 You now see an overview of a couple of important **Profile Attributes** of your customer profile.
 

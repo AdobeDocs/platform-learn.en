@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: e4d2cb92-0332-417d-a567-e84973e48a14
 ---
 # 0.1 Use Demo System to setup your Launch property
 

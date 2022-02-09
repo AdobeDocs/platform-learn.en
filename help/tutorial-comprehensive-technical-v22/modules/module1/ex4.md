@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 3bebba80-3833-43b7-8d5a-5f409cfb60e4
 ---
 # 1.4 Client-side Web Data Collection
 
@@ -32,39 +31,39 @@ Verify that these 2 settings are enabled:
 
 ![EXP News Homepage](./images/ext1.png)
 
-### Open the EXP News website
+### Open the demo website
 
-For this exercise, you'll be using the EXP News website.
+Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
 
-In a new incognito/private browser tab, open [https://public.aepdemo.net/admin.html](https://public.aepdemo.net/admin.html).
+![DSN](../module0/images/web8.png)
 
-![EXP News Homepage](./images/web1.png)
+On the **Screens** page, click **Run**. 
 
-Enter the Configuration ID you created in [Module 0](./../module0/ex1.md) and click **[!UICONTROL Load Configuration]**.
+![DSN](./images/web2.png)
 
-Scroll down and click **[!UICONTROL Save Configuration]**.
+You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-![EXP News Homepage](./images/web2.png)
+![DSN](../module0/images/web3.png)
 
-Go to **[!UICONTROL Select LDAP]**, select your LDAP and click **[!UICONTROL Save]**.
+Open a new incognito browser window.
 
-![EXP News Homepage](./images/web3.png)
+![DSN](../module0/images/web4.png)
 
-Next, go to **[!UICONTROL Select Brand]** , select **[!UICONTROL EXP News]** and click **[!UICONTROL Save]**.
+Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-![EXP News Homepage](./images/web4.png)
+![DSN](../module0/images/web5.png)
 
-On the **[!UICONTROL Admin]** homepage, click the logo to open the website.
+Select your account type and complete the login process.
 
-![EXP News Homepage](./images/web5.png)
+![DSN](../module0/images/web6.png)
 
-You'll now see the **[!UICONTROL EXP News]** homepage.
+You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
-![EXP News Homepage](./images/validate1.png)
+![DSN](../module0/images/web7.png)
 
-### Use the Experience Platform Debugger to see the calls going to the Experience Edge
+### Use the Experience Platform Debugger to see the calls going to the Edge
 
-Make sure you have the EXP News site open and click the Experience Platform Debugger extension icon. 
+Make sure you have the demo website open and click the Experience Platform Debugger extension icon. 
 
 ![EXP News Homepage](./images/ext2.png)
 
@@ -74,21 +73,25 @@ Click the **[!UICONTROL Sign In]** button on the top right to authenticate. If y
 
 ![AEP Debugger](./images/validate2.png)
 
+Hit the reload button on your demo website to connect the debugger to that specific tab.
+
+![AEP Debugger](./images/validate2a.png)
+
 Confirm the Debugger is **[!UICONTROL Connected to Home]** as pictured above and then click the **[!UICONTROL lock]** icon to lock the Debugger to the demo website. If you don't do this, the Debugger will keep switching to expose the implementation details of whatever browser tab is in focus, which can be confusing.
 
 ![AEP Debugger](./images/validate3.png)
 
-Next, click any random article on the EXP News homepage.
+Next, go to any page on the demo website like for instance, the **Men** category page.
 
 ![AEP Debugger AEP Web SDK extension](./images/validate4.png)
 
-Now click **[!UICONTROL AEP Web SDK]** in the left navigation, to see the **[!UICONTROL Network Requests]**.
+Now click **[!UICONTROL Experience Platform Web SDK]** in the left navigation, to see the **[!UICONTROL Network Requests]**.
 
 Each request contains an **[!UICONTROL events]** row.
 
 ![AEP Debugger AEP Web SDK extension](./images/validate5.png)
 
-Click to open the **[!UICONTROL events]** row. Note how you can see the **web.webpagedetails.pageViews** event, as well as other, out-of-the-box variables adhering to the **AEP Web SDK ExperienceEvent Mixin** format.
+Click to open the **[!UICONTROL events]** row. Note how you can see the **web.webpagedetails.pageViews** event, as well as other, out-of-the-box variables adhering to the **Web SDK ExperienceEvent XDM** format.
 
 ![Events value](./images/validate8.png)
 

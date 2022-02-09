@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: a11bdf22-9d27-4c52-97b9-cf682d03a8e0
 ---
 # 0.3 Create your Enablement Configuration ID
 

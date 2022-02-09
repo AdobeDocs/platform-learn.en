@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 75602640-7738-4d73-aa27-767fcaa54fbc
 ---
 # 2.4 Data Ingestion from Offline Sources
 
@@ -52,9 +51,9 @@ On the template, you'll notice the following fields:
 
 All these fields have been defined to produce data that is compatible with Platform. 
 
-![Data Ingestion](./images/dd.png)
-
 To generate your CSV-file, click the **[!UICONTROL Download Data]** button which will give you a CSV-file with 1000 lines of demo-data. 
+
+![Data Ingestion](./images/dd.png)
 
 Open your CSV-file in Microsoft Excel to visualize its contents.
 
@@ -66,15 +65,9 @@ With your CSV-file ready, you can proceed with mapping it against XDM.
 
 Open [Adobe Experience Platform](https://experience.adobe.com/platform) and go to **[!UICONTROL Datasets]**. 
 
-Before you continue, you need to select a **[!UICONTROL sandbox]**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **[!UICONTROL sandbox]**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
 ![Data Ingestion](./images/sb1.png)
-
-From the list of available [!UICONTROL sandboxes], select the [!UICONTROL sandbox] that matches the number you've been assigned.
-
-After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
-
-![Data Ingestion](./images/sb2.png)
 
 In Adobe Experience Platform, click on **[!UICONTROL Datasets]** in the menu on the left side of your screen.
 
@@ -132,13 +125,9 @@ The goal of this is to onboard CRM data in Platform. All the data that is ingest
 
 The [!UICONTROL workflow] that we'll use here, is the [!UICONTROL workflow] named **[!UICONTROL Map CSV to XDM Schema]** in the [!UICONTROL Data Ingestion] menu.
 
-Click the **[!UICONTROL Map CSV to XDM Schema]** button.
+Click the **[!UICONTROL Map CSV to XDM Schema]** button. Click **[!UICONTROL Launch]** to start the process.
 
 ![Data Ingestion](./images/mapcsvxdm.png)
-
-Click **[!UICONTROL Launch]** to start the process.
-
-![Data Ingestion](./images/launchprocess.png)
 
 On the next screen, you need to select a dataset to ingest your file in. You have the choice between selecting an already existing dataset or creating a new one. For this exercise, we'll reuse an existing one: please select **[!UICONTROL Demo System - Profile Dataset for CRM (Global v1.1)]** as indicated below and leave the other settings set to default.
 
@@ -160,9 +149,9 @@ Click **[!UICONTROL Next]** to go to the next step. It can take a few seconds wh
 
 ![Data Ingestion](./images/next.png)
 
-It's now time to map your CSV Column Headers with an XDM-property in your **[!UICONTROL Demo System - Profile Dataset for CRM]**.
+You now need to map your CSV Column Headers with an XDM-property in your **[!UICONTROL Demo System - Profile Dataset for CRM]**.
 
-Adobe Experience Platform has already done some guessing for you, by trying to link the [!UICONTROL Source Attributes] with the [!UICONTROL Target Schema Fields].
+Adobe Experience Platform has already made some proposals for you, by trying to link the [!UICONTROL Source Attributes] with the [!UICONTROL Target Schema Fields].
 
 ![Data Ingestion](./images/mapschema.png)
 
@@ -170,91 +159,73 @@ For the [!UICONTROL Schema Mappings], Adobe Experience Platform has tried to lin
 
 #### birthDate
 
-The Source Schema field **birthDate** should be linked to the target field **person.birthDate**. Check the checkbox. 
+The Source Schema field **birthDate** should be linked to the target field **person.birthDate**. 
 
 ![Data Ingestion](./images/tfbd.png)
 
 #### city
 
-The Source Schema field **city** should be linked to the target field **homeAddress.city**. Check the checkbox. 
+The Source Schema field **city** should be linked to the target field **homeAddress.city**. 
 
 ![Data Ingestion](./images/tfcity.png)
 
 #### country
 
-The Source Schema field **country** should be linked to the target field **homeAddress.country**. Check the checkbox. 
+The Source Schema field **country** should be linked to the target field **homeAddress.country**. 
 
 ![Data Ingestion](./images/tfcountry.png)
 
 #### country_code
 
-The Source Schema field **country_code** should be linked to the target field **homeAddress.countryCode**. Check the checkbox. 
+The Source Schema field **country_code** should be linked to the target field **homeAddress.countryCode**.  
 
 ![Data Ingestion](./images/tfcountrycode.png)
 
 #### email
 
-The Source Schema field **email** should be linked to the target field **`--aepTenantId--`.identification.core.crmId**. Hover over the line **email** and click the **+** icon.
+The Source Schema field **email** should be linked to the target field **personalEmail.address**. 
+
+![Data Ingestion](./images/tfemail.png)
+
+#### crmid
+
+The Source Schema field ** crmid** should be linked to the target field **`--aepTenantId--`.identification.core.crmId**. 
 
 ![Data Ingestion](./images/tfemail1.png)
 
-You'll then see this:
-
-![Data Ingestion](./images/tfemail2.png)
-
-Navigate to and select the field **`--aepTenantId--`.identification.core.crmId**. Click **Save**.
-
-![Data Ingestion](./images/tfemail3.png)
-
-You'll then see this:
-
-![Data Ingestion](./images/tfemail4.png)
-
 #### first_name
 
-The Source Schema field **first_name** should be linked to the target field **person.name.firstName**. Check the checkbox. 
+The Source Schema field **first_name** should be linked to the target field **person.name.firstName**. 
 
 ![Data Ingestion](./images/tffname.png)
 
 #### gender
 
-The Source Schema field **gender** should be linked to the target field **person.gender**. Check the checkbox. 
+The Source Schema field **gender** should be linked to the target field **person.gender**. 
 
 ![Data Ingestion](./images/tfgender.png)
 
 #### home_latitude
 
-The Source Schema field **home_latitude** should be linked to the target field **homeAddress._schema.latitude**. Check the checkbox. 
+The Source Schema field **home_latitude** should be linked to the target field **homeAddress._schema.latitude**. 
 
 ![Data Ingestion](./images/tflat.png)
 
 #### home_longitude
 
-The Source Schema field **home_longitude** should be linked to the target field **homeAddress._schema.longitude**. Check the checkbox. 
+The Source Schema field **home_longitude** should be linked to the target field **homeAddress._schema.longitude**.  
 
 ![Data Ingestion](./images/tflon.png)
 
 #### id
 
-The Source Schema field **id** should be linked to the target field **_id**. Hover over the line **id** and click the **+** icon.
+The Source Schema field **id** should be linked to the target field **_id**. 
 
 ![Data Ingestion](./images/tfid1.png)
 
-You'll then see this:
-
-![Data Ingestion](./images/tfid2.png)
-
-Navigate to and select the field **_id**. Click **Save**.
-
-![Data Ingestion](./images/tfid3.png)
-
-You'll then see this:
-
-![Data Ingestion](./images/tfid4.png)
-
 #### last_name
 
-The Source Schema field **last_name** should be linked to the target field **person.name.lastName**. Check the checkbox. 
+The Source Schema field **last_name** should be linked to the target field **person.name.lastName**. 
 
 ![Data Ingestion](./images/tflname.png)
 
