@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 050e5d99-544d-4a86-a7f6-9f103381dca5
 ---
 # 3. Foundation - Real-time Customer Profile
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 0d79f013-042a-4d2e-a031-c81319a8955d
 ---
 # 2.4 Data Ingestion from Offline Sources
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 4aee8ae2-38ca-49a3-8f1b-57713d16f5b5
 ---
 # 1.6 Implement Adobe Target
 
