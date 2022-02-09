@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 818e4dda-5e56-4444-9ecf-a7cc6776e693
 ---
 # 3.3 Visualize your own real-time customer profile - API
 
@@ -17,7 +16,7 @@ In the Real-time Customer Profile, all profile data is shown alongside event dat
 
 The Real-time Customer Profile can be consumed by all Adobe applications, but also by external solutions like Call Centers or in-store clienteling apps. The way to do this is to connect those external solutions to Adobe Experience Platform's APIs.
 
-## 3.3.1 - Your Identifiers
+## 3.3.1 Your Identifiers
 
 On the X-ray panel on the website, you can find multiple identities. Every Identity is linked to a Namespace. 
 
@@ -27,15 +26,15 @@ On the X-ray panel, we can see 4 different combinations of IDs and Namespaces:
 
 | Identity     | Namespace       |
 |:-------------:| :---------------:|
-| Experience Cloud ID (ECID)          | 70064353701262275980354366981653865618 |
-| Email ID          | woutervangeluwe+28052020-10@gmail.com|
-| Mobile Number ID          | +32473622044+28052020-10|
+| Experience Cloud ID (ECID)          | 12507560687324495704459439363261812234 |
+| Email ID          | woutervangeluwe+06022022-01@gmail.com|
+| Mobile Number ID          | +32473622044+06022022-01|
 
 Remember these identifiers for the next step.
 
 With these IDs in mind, go to Postman.
 
-## 3.3.2 - Setup your Adobe I/O Project
+## 3.3.2 Setup your Adobe I/O Project
 
 In this exercise you'll be using Adobe I/O quite intensively to query against Platform's APIs. Please follow the below steps to setup Adobe I/O.
 
@@ -92,8 +91,8 @@ Unzip the file **config.zip** on your desktop, you'll see it contains 2 files:
 
 ![Adobe I/O New Integration](./images/zip.png)
 
-* **certificate_pub.crt** is your Public key certificate. From a security perspective, this is the certificate that is freely used to setup integrations with online applications.
-* **private.key** is your Private key. This should never, ever be shared with anyone. The Private Key is what you use to authenticate to your API implementation and is supposed to be a secret. If you share your Private Key with anyone, they can access your implementation and abuse the API to ingest malicious data into Platform and extract all the data that sits in Platform.
+- **certificate_pub.crt** is your Public key certificate. From a security perspective, this is the certificate that is freely used to setup integrations with online applications.
+- **private.key** is your Private key. This should never, ever be shared with anyone. The Private Key is what you use to authenticate to your API implementation and is supposed to be a secret. If you share your Private Key with anyone, they can access your implementation and abuse the API to ingest malicious data into Platform and extract all the data that sits in Platform.
 
 ![Adobe I/O New Integration](./images/config.png)
 
@@ -150,7 +149,7 @@ Your Adobe I/O integration is now finished.
 
 ![Adobe I/O New Integration](./images/api16.png)
 
-## Exercise 3.3.3 - Postman authentication to Adobe I/O
+## 3.3.3 Postman authentication to Adobe I/O
 
 Go to [https://www.getpostman.com/](https://www.getpostman.com/). 
 
@@ -166,18 +165,18 @@ After installation of Postman, start the application.
 
 In Postman, there are 2 concepts: Environments and Collections.
 
-* The Environment contains all of your environmental variables which are more or less consistent. In the Environment, you'll find things like the IMSOrg of our Platform environment, alongside security credentials like your Private Key and others. The environment file is the one you downloaded during the Adobe I/O setup in the previous exercise, it's name like this: **service.postman_environment.json**.
+- The Environment contains all of your environmental variables which are more or less consistent. In the Environment, you'll find things like the IMSOrg of our Platform environment, alongside security credentials like your Private Key and others. The environment file is the one you downloaded during the Adobe I/O setup in the previous exercise, it's name like this: **service.postman_environment.json**.
   
-* The Collection contains a number of API requests that you can use. We will use 2 collections
-  * 1 Collection for Authentication to Adobe I/0
-  * 1 Collection for our Exercises
+- The Collection contains a number of API requests that you can use. We will use 2 collections
+  - 1 Collection for Authentication to Adobe I/0
+  - 1 Collection for our Exercises
 
 Please download **postman.zip** from the [Module 3 Prerequisites ](./real-time-customer-profile.md) to your local desktop. 
 
 In this **postman.zip** file, you'll find the following files:
 
-* _Adobe I-O - Token.postman_collection.json
-* _Adobe Experience Platform Enablement.postman_collection.json
+- _Adobe I-O - Token.postman_collection.json
+- _Adobe Experience Platform Enablement.postman_collection.json
   
 Unzip the **postman.zip** file and store these 2 files in a folder on your desktop, together with the downloaded Postman environment from Adobe I/O. You need to have these 3 files in that folder:
 
@@ -275,7 +274,7 @@ Adobe I/O has given you a **bearer**-token, with a specific value (this very lon
 
 The token that we've received is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to authenticate to Adobe I/O, you will have to generate a new token by running this request again.
 
-## Exercise 3.3 - Real-time Customer Profile API, Schema: Profile
+## 3.3.4 Real-time Customer Profile API, Schema: Profile
 
 Now you can go ahead and send your first request to Platform's Real-time Customer Profile APIs.
 
@@ -550,13 +549,13 @@ This is a very important kind of flexibility that is offered to brands. This mea
 
 As an example:
 
-* the Call Center will request data from Platform using the namespace **mobilenr**
-* the Loyalty System will request data from Platform using the namespace **email**
-* online applications might use the namespace **ecid**
+- the Call Center will request data from Platform using the namespace **mobilenr**
+- the Loyalty System will request data from Platform using the namespace **email**
+- online applications might use the namespace **ecid**
 
 The Call Center doesn't necessarily know what kind of identifier is used in the Loyalty System and the Loyalty System doesn't necessarily know what kind of identifier is used by online applications. Each individual system can use the information that they have and understand to get the information they need, when they need it.
 
-## Exercise 3.3.4 - Real-time Customer Profile API, Schema: Profile and ExperienceEvent
+## 3.3.5 Real-time Customer Profile API, Schema: Profile and ExperienceEvent
 
 After having queried Platform's APIs successfully for Profile data, let's now do the same with ExperienceEvent data.
 

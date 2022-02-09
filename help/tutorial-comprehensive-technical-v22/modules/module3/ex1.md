@@ -5,152 +5,127 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: b1bd9a23-d8fb-41dd-bc9f-2ad0f0a80ea0
 ---
 # 3.1 From unknown to known on the website
 
-## **Context**
+## Context
 
 The journey from unknown to known is one of the most important topics amongst brands these days, as is the customer journey from acquisition to retention. 
 
 Adobe Experience Platform plays a huge role in this journey. Platform is the brains for communication, the "experience system of record."
 
-Platform is an environment in which the word *customer* is broader than just the *known*-customers. An unknown visitor on the website is also a customer from Platform's perspective and as such, all of the behavior as an unknown visitor is also sent to Platform. Thanks to that approach, when this visitor eventually becomes a known customer, a brand can visualize what happened before that moment as well. This helps from an attribution and experience optimization perspective.
+Platform is an environment in which the word customer is broader than just the known customers. An unknown visitor on the website is also a customer from Platform's perspective and as such, all of the behavior as an unknown visitor is also sent to Platform. Thanks to that approach, when this visitor eventually becomes a known customer, a brand can visualize what happened before that moment as well. This helps from an attribution and experience optimization perspective.
 
-## **What are you going to do?**
+## Customer journey flow
 
-You will now ingest data into Adobe Experience Platform and that data will be linked to identifiers like ECIDs and email-addresses. The goal of this exercise is to understand the business context of what you're about to do from a configuration perspective. In the next exercise, you'll start configuring everything you need to make all that data ingestion possible in your own sandbox environment.
+Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
 
-## **Customer journey flow**
+![DSN](../module0/images/web8.png)
 
-For every demonstration, you'll need to use a fresh, incognito browser window. After opening a fresh, incognito browser window, go to [https://public.aepdemo.net/](https://public.aepdemo.net/).
+On the **Screens** page, click **Run**. 
 
-You'll be redirected to this page:
+![DSN](../module1/images/web2.png)
 
-![DSN](./images/web1.png)
+You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-Enter the Configuration ID you created in the previous step. Click **Load Configuration**.
+![DSN](../module0/images/web3.png)
 
-![DSN](./images/web2.png)
+Open a new incognito browser window.
 
-You'll then see this:
+![DSN](../module0/images/web4.png)
 
-![DSN](./images/web3.png)
+Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-Scroll down so you can see the **Save Configuration** button. Click **Save Configuration**.
+![DSN](../module0/images/web5.png)
 
-![DSN](./images/web4.png)
+Select your account type and complete the login process.
 
-After a couple of seconds you'll be redirected to the Admin homepage and you'll see this:
+![DSN](../module0/images/web6.png)
 
-![DSN](./images/cfg6a.png)
+You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
-Go to **Select LDAP** in the left side menu, select your LDAP in the list and click **Save**.
+![DSN](../module0/images/web7.png)
 
-![DSN](./images/web61.png)
-
-Go to **Select Brand** in the left side menu, select a brand of choice and click **Save**.
-
-![DSN](./images/web7.png)
-
-You'll now see a similar Admin homepage. Click the brand logo to go to the demo website.
-
-![DSN](./images/web8.png)
+Click the Adobe logo icon in the top left corner of your screen to open the Profile Viewer.
   
-Click the **Luma**-logo to go to the demo website. You'll then see this:
-  
-![Demo](./images/lb_home.png)
-  
-### Navigate the website
+![Demo](../module2/images/pv1.png)
 
-Have a look at the X-ray panel and the Real-time Customer Profile:
-  
-* **Experience Cloud ID (ECID)** is the internal Adobe identifier
+Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for thi currently unknown customer.
       
-![Demo](../module2/images/lb_home_xup.png)
+![Demo](../module2/images/pv2.png)
 
-You'll also see **Experience Events**
+You can also see all the Experience Events that were collected based on the customer's behaviour. The list is currently empty but that will change soon.
 
-![Demo](../module2/images/lb_home_xee.png)
-  
-Scroll down on the page until you see the products, click on the product **Nadia Elements Shell**.
-  
-![Demo](../module2/images/lb_homep.png)
-  
-Have a look at the product. An experience event of type **Product View** has been sent to Adobe Experience Platform. 
-  
-![Demo](../module2/images/lb_els_dtl.png)
-  
-Next, go to the Homepage. Open the X-ray panel and have a look at your **Experience Events**.
-  
-![Demo](../module2/images/lb_home1.png)
-  
-On the Homepage, click another product. Another Experience Event has been sent to Adobe Experience Platform. 
-  
-![Demo](../module2/images/lb_babars.png)
-  
-Go back to the Homepage and open the X-ray panel. You'll now see 2 experience events of type **Product View**. While the behavior is anonymous, we're able to track every click and store it in in Adobe Experience Platform. Once the anonymous customer becomes known, we'll be able to merge all anonymous behavior automatically to the known profile.
-  
-![Demo](../module2/images/lb_home2.png)
+![Demo](../module2/images/pv3.png)
 
-Go to the Register/Login page. Fill out your registration details and click **CREATE ACCOUNT**.
-  
-![Demo](../module2/images/lb_register_dtl.png) 
-  
-After clicking **Create Account**, you'll be redirected to the homepage. Open the X-ray panel and go to Real-time Customer Profile. On the X-ray panel, you should see all of your personal data displayed.
-  
-![Demo](../module2/images/lb_x_loggedin.png)
+Go to the **Men** product category. Next, click on the product **Montana Wind Jacket**.
 
-On the X-ray panel, go to Experience Events. You should see the two products that you viewed previously on the X-ray panel.
+![Demo](../module2/images/pv4.png)
 
-![Demo](../module2/images/lb_home_xee_dtl.png)
+You'll then see the product detail page. An Experience Event of type **Product View** has now been sent to Adobe Experience Platform using the Web SDK implementation that you reviewed in Module 1. 
+  
+![Demo](../module2/images/pv5.png)
+  
+Open the Provile Viewer panel and have a look at your **Experience Events**.
+  
+![Demo](../module2/images/pv6.png)
+  
+Go back to the **Women** category page, and click another product. Another Experience Event has been sent to Adobe Experience Platform. 
+  
+![Demo](../module2/images/pv7.png)
+  
+Open the Profile Viewer panel. You'll now see 2 Experience Events of type **Product View**. While the behavior is anonymous, we're able to track every click and store it in in Adobe Experience Platform. Once the anonymous customer becomes known, we'll be able to merge all anonymous behavior automatically to the know profile.
+  
+![Demo](../module2/images/pv8.png)
+
+Go to the Register/Login page. Click **CREATE AN ACCOUNT**.
+  
+![Demo](../module2/images/pv9.png)
+  
+Fill out your details and click **Register** after which you'll be redirected to the previous page. 
+
+![Demo](../module2/images/pv10.png)
+
+Open the Profile Viewer panel and go to Real-time Customer Profile. On the Profile Viewer panel, you should see all of your personal data displayed, like your newly added email and phone identifiers.
+  
+![Demo](../module2/images/pv11.png)
+
+On the Profile Viewer panel, go to Experience Events. You'll see the 2 products that you viewed before on the Profile Viewer panel. Both of these events are now also connected to your 'known' profile.
+
+![Demo](../module2/images/pv12.png)
+  
+You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email-addresses. The goal of this is to understand the business context of what you're about to do. In the next exercise, you'll start configuring everything you need to make all that data ingestion possible.
 
 ### Navigate the mobile app
 
-After becoming a known customer, it's time to start using the mobile app. Open the mobile app on your iPhone and then login to the app. 
+After becoming a known customer, it's time to start using the mobile app. Open the mobile app on your iPhone and then login to the app.
 
 If you don't have the app installed anymore, or if you can't remember how to install it, please have a look here: [0.5 Use the mobile app](../module0/ex5.md)
 
-After installing the app as instructed, you'll see the landing page of the app with the Luma brand loaded.
+After installing the app as instructed, you'll see the landing page of the app with the Luma brand loaded. Click the account icon in the top-left part of your screen.
   
 ![Demo](./images/app_hp.png)
 
-Go to the Account screen.
+On the Login screen, log in with the email address you used on the desktop website. Click **Login**.
   
 ![Demo](./images/app_acc.png)
 
-Click Login and then login with the email address you used in the website steps and the password of 1234.
-  
-![Demo](./images/app_acc_login.png)
-
-You'll now see your Real-time Customer Profile data appear in the mobile application, along with your Desktop Product Views.
-
-![Demo](./images/app_up.png)
-
-Go to the app's Home screen.
+Go to the app's home screen and click to open any product.
   
 ![Demo](./images/app_hp.png)
 
-Go to any category.
-  
-![Demo](./images/app_men_cat.png)
-
-Click on a product to view it.
+You'll then see the product detail page.
   
 ![Demo](./images/app_carst.png)
 
-Go back to the previous screen
-  
-![Demo](./images/app_men_cat.png)
-
-Go to the Account screen and your Real-time Customer Profile data will be refreshed, after which you'll see the product you just viewed in the **Your recent browse** section.
-  
+Go to the home screen in the app and swipe left on the screen to view the Profile Viewer panel. You'll then see the product you just viewed in the **Experience Events** section, along with all the product views from the website session before.
+ 
 ![Demo](./images/app_after_carst.png)
 
 Now go back to your desktop computer and refresh the homepage, after which you'll see the product appear there, too.
   
 ![Demo](./images/lb_x_aftermobile.png)
-  
+
 You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email addresses. The goal of this exercise was to understand the business context of what you're about to do. You've now effectively built a real-time, cross-device customer profile. In the next exercise, you'll go ahead and visualize your profile in Adobe Experience Platform.
 
 Next Step: [3.2 Visualize your own real-time customer profile - UI](./ex2.md)

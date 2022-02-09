@@ -18,8 +18,8 @@ After defining what the answer to the questions **Who is this customer?** and **
 
 You now need to create 2 datasets:
 
-* 1 dataset to capture the information that answers the **Who is this customer?** - question.
-* 1 dataset to capture the information that answers the **What does this customer do?** - question.
+- 1 dataset to capture the information that answers the **Who is this customer?** - question.
+- 1 dataset to capture the information that answers the **What does this customer do?** - question.
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 

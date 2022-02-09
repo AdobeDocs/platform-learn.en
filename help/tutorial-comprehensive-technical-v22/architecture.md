@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, Data Scientist, Orchestration Engineer, BI Expert, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: e0340cb6-9349-4dc5-aa15-9e609ebf6880
 ---
 # Architecture
 
