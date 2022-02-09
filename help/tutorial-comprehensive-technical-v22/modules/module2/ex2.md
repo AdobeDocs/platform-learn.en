@@ -348,15 +348,9 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **[!UICONTROL sandbox]**. The [!UICONTROL sandbox] to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **[!UICONTROL sandbox]**. The [!UICONTROL sandbox] to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./images/sb1.png)
-
-From the list of available sandboxes, select the sandbox that matches the number you've been assigned.
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
 
 In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen.
 
@@ -421,9 +415,9 @@ You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Descri
 
 As the name for your Field Group, use this:
 
-**[!UICONTROL ldap - ExperienceEvent Identification Field Group]**
+`--demoProfileLdap--` - ExperienceEvent Identification Field Group
 
-Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
+As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
 **[!UICONTROL vangeluw - ExperienceEvent Identification Field Group]**
 
@@ -442,7 +436,7 @@ You should now have this [!UICONTROL Schema] structure in place.
 Your new [!UICONTROL Field Group] is still empty, so now you'll have to add fields to that Field Group.
 In the [!UICONTROL Field Group]-list, click your custom [!UICONTROL Field Group].
 
-![Data Ingestion](./images/schemastructuremee.png)
+![Data Ingestion](./images/schemastructuremee1.png)
 
 You now see a number of new buttons appear. 
 
@@ -466,7 +460,7 @@ Use these object-definitions:
 
 ![Data Ingestion](./images/tenantfielddefee.png)
 
-Click **[!UICONTROL Apply]** to save your changes.
+Scroll down and click **[!UICONTROL Apply]** to save your changes.
 
 ![Data Ingestion](./images/apply.png)
 
@@ -530,9 +524,9 @@ Let's now give your schema a name. Select the field **Untitled schema**.
 ![Data Ingestion](./images/schemaname1ee.png)
 
 As the name for our schema, we'll use this:
-**[!UICONTROL ldap - Demo System - Event Schema for Website]**
+`--demoProfileLdap--` - Demo System - Event Schema for Website
 
-Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
+As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
 **[!UICONTROL vangeluw - Demo System - Event Schema for Website]**
 
