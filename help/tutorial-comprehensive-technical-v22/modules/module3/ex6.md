@@ -9,50 +9,59 @@ activity: develop
 
 # 3.6 See your Real-time Customer Profile in action in the Call Center
 
-In this exercise, you'll follow a script and complete some tasks on the website.
- 
-## Story
-
 In this exercise, the goal is to have you walk through the customer journey and act like a real customer.
 
 On this website, we've implemented Adobe Experience Platform. Every action is considered an experience event and is sent to Adobe Experience Platform in real-time, hydrating the Real-time Customer Profile.
 
 In an earlier exercise, you started as an anonymous customer who was browsing the site, and after a couple of steps, you became a known customer.
 
-Now, let's see how the information in your profile can be used to impact the customer experience and a brand's bottom line.
+When that same customer eventually picks up their phone and calls your call center, it's crucial that the information from other channels is available immediately, so that the call center experience can be relevant and personalized.
 
-## Customer journey
+## 3.6.1 Create your CX App
 
-Go to to your Platform Demo website.
+As part of our Demo System, we've created a CX App template which can be used to simulate a call center environment. Follow these steps to create such a CX App project.
 
-In the site's menu, click on the 3 dots **...** and then select Call Center to go to the Call Center simulator.
+Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Click **New Project**.
 
-![Demo](./images/dots.png)
+![Demo](./images/cxapp1.png)
 
-You'll see the phone number that you previously used when creating your account. Please ensure to have the namespace **PHONE** selected. Click the **Search** button.
+You'll then see this. Enter **CX App** as the **Title** and select **Customer Experience App** as **Type**. Click **Create**.
+
+![Demo](./images/cxapp2.png)
+
+You'll then see your CX App project. Click the project to open it.
+
+![Demo](./images/cxapp3.png)
+
+In your CX App project, go to **Integrations**. Select the Adobe Experience Platform Data Collection property that was created in Module 0. You need to select the property that has **(enablement)** in its name. Then, click **Run**.
+
+![Demo](./images/cxapp4.png)
+
+You'll then see this.
+
+![Demo](./images/cxapp5.png)
+
+## 3.6.1 Use your CX App
+
+On the Profile Viewer panel, you can see these combinations of IDs and Namespaces:
+
+![Customer Profile](./images/identities.png)
+
+| Identity     | Namespace       |
+|:-------------:| :---------------:|
+| Experience Cloud ID (ECID)          | 12507560687324495704459439363261812234 |
+| Email ID          | woutervangeluwe+06022022-01@gmail.com|
+| Mobile Number ID          | +32473622044+06022022-01|
+
+When the customer calls your call center, the phone number can be used to identify the customer. So in this exercise, you'll use the phone number to retrieve the customer's profile in the CX App.
+
+Select **Phone number** in the dropdown and enter the phone number that you used on the website. Hit **Enter**.
 
 ![Demo](./images/19.png)
 
 You'll now see the information that would ideally be displayed in the Call Center, so that the Call Center employees have all relevant information available immediately when speaking to a customer.
 
 ![Demo](./images/20.png)
-
-To simulate the end of a call with the call center, you should log the call by clicking on the **Log a call** button after which a popup window will open.
-
-![Demo](./images/23.png)
-![Demo](./images/21.png)
-
-Make a random selection of the Call Topic and the Customer Feeling and click **Save** to provide Adobe Experience Platform with the information.
-
-![Demo](./images/22.png)
-
-Every choice that you make on the Call Details - screen will have an impact on the Real-time Customer Profile with things like Churn Score or Product Recommendations being impacted by any interaction, which may be negative of positive. You can verify the impact by clicking the **Search** button again on the Call Center screen.
-
-![Demo](./images/check.png)
-
-After clicking the **Search** button again, you'll see a new experience event pop up on the Call Center Screen.
-
-![Demo](./images/24.png)
 
 Next Step: [Summary and benefits](./summary.md)
 

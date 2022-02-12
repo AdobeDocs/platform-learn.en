@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: b3d54c3c-135e-4566-a382-4829618e9c65
 ---
 # 4.4 Generate a dataset from a query
 
@@ -59,7 +58,7 @@ Select your query and click **Output Dataset**.
 
 ![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-Enter **ldap Callcenter Interaction Analysis** as name and description for the dataset and press the **Run Query** button
+Enter `--demoProfileLdap-- Callcenter Interaction Analysis` as name and description for the dataset and press the **Run Query** button
 
 ![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 

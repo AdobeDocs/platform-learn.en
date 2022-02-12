@@ -18,7 +18,7 @@ The Real-time Customer Profile can be consumed by all Adobe applications, but al
 
 ## 3.3.1 Your Identifiers
 
-On the X-ray panel on the website, you can find multiple identities. Every Identity is linked to a Namespace. 
+On the Profile Viewer panel on the website, you can find multiple identities. Every Identity is linked to a Namespace. 
 
 ![Customer Profile](./images/identities.png)
 
@@ -38,11 +38,11 @@ With these IDs in mind, go to Postman.
 
 In this exercise you'll be using Adobe I/O quite intensively to query against Platform's APIs. Please follow the below steps to setup Adobe I/O.
 
-Go to [https://console.adobe.io/projects](https://console.adobe.io/projects)
+Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
 
 ![Adobe I/O New Integration](./images/iohome.png)
 
-Make sure to select the correct Adobe Experience Platform instance in the top right corner of your screen. 
+Make sure to select the correct Adobe Experience Platform instance in the top right corner of your screen. Your instance is `--envName--`.
 
 ![Adobe I/O New Integration](./images/iocomp.png)
 
@@ -138,10 +138,10 @@ Click **Edit Project**.
 
 ![Adobe I/O New Integration](./images/api14.png)
 
-Enter a Name and Description for your integration. As a naming convention, we'll use **AEP API ldap**. Replace ldap with your ldap.
-For instance, if your ldap is vangeluw, the name and description of your integration becomes Platform API vangeluw.
+Enter a Name and Description for your integration. As a naming convention, we'll use `AEP API --demoProfileLdap--`. Replace ldap with your ldap.
+For instance, if your ldap is vangeluw, the name and description of your integration becomes AEP API vangeluw.
 
-Enter **AEP API ldap** as the **Project Title**. Click **Save**.
+Enter `AEP API --demoProfileLdap--` as the **Project Title**. Click **Save**.
 
 ![Adobe I/O New Integration](./images/api15.png)
 
@@ -326,104 +326,77 @@ This is the full response from Platform:
 
 ```javascript
 {
-    "A29wOm-_HrdXL5njtUYzEOY7": {
-        "entityId": "A29wOm-_HrdXL5njtUYzEOY7",
+    "A28iM3aJBJRbEQpOnUh5HOM9": {
+        "entityId": "A28iM3aJBJRbEQpOnUh5HOM9",
         "mergePolicy": {
-            "id": "e9804b8f-a222-4b4f-9886-10437023eea6"
+            "id": "e632ccb8-882a-4b5e-8375-96a1ba3df1aa"
         },
         "sources": [
-            "5fd1a9de42a61c194dd7b810",
+            "61fe23c5be4b5f19485dc379",
             "profile-streaming-segment",
-            "5fd1a9de241f58194b0cb117",
-            ""
+            "61fe23cfa07c1219489b3ba4"
         ],
         "tags": [
-            "710bd243-8559-4e5d-9345-ab85939ee234",
-            "",
-            "1607667023680:6739:84",
-            "1607667488804:2012:187"
+            "1644130566774:1542:232:va7",
+            "0a1e9dd4-940a-46ec-9114-7e371cf5c4d0",
+            "aep_ups_partitioned_profile_cdc_low_lag_sla_0:106:1090888313",
+            "a6fed09e-2c56-403e-8692-4e99e4779dfa:IRL1",
+            "1644419616318:2989:31:va7",
+            "aep_ups_profile_change_event_prod_va7:71:7946633524-8361f22c-c09e-4364-b24b-b57435c4d14f"
         ],
         "identityGraph": [
-            "A29wOm-_HrdXL5njtUYzEOY7",
-            "A2_bse0jTMN5DqeAHLrpovti",
-            "CkF9rzLXMeI7bLh0LCef-IthzOCv71dY8wseCYosB3C73EMKhA",
-            "BUF9zMKLrXq72p4HpbsHv1SCJHOaLTE1QGdtYWlsLmNvbQ",
-            "BkFuK4QcJpSPByuCJHOaLTE1"
+            "BUF9zMKLrXq72p4HpbsHv1SSBnr0LTAxQGdtYWlsLmNvbQ",
+            "GkicrkFjgmCjUg",
+            "GtCbrkFjgkSOFg",
+            "A2-AP9zOsakzNTe9Rqwf7Wse",
+            "BkFuK4QcJpSPByuSBnr0LTAx",
+            "A28jSB484ziuECF3fEoXmFlF",
+            "A28iM3aJBJRbEQpOnUh5HOM9"
         ],
         "entity": {
             "_experienceplatform": {
+                "individualCharacteristics": {},
+                "loyaltyDetails": {
+                    "level": "Basic",
+                    "points": 0
+                },
                 "identification": {
                     "core": {
-                        "ecid": "34113965854450796644316155105296901017",
-                        "phoneNumber": "+32473622044+10122020-15",
-                        "email": "woutervangeluwe+10122020-15@gmail.com",
-                        "emailIdSha256": "32d731e23b6cb8742c279ff88b61cce0ef5758f30b1e098a2c0770bbdc430a84"
-                    }
-                },
-                "individualCharacteristics": {
-                    "retail": {
-                        "shirtSize": "L",
-                        "favoriteColor": "black",
-                        "shoeSize": "43"
-                    },
-                    "grocery": {
-                        "allergies": {
-                            "soy": false,
-                            "dairy": false,
-                            "gluten": false,
-                            "nuts": false,
-                            "shellfish": false
-                        }
-                    }
-                },
-                "loyaltyDetails": {
-                    "level": "Bronze",
-                    "points": 0.0
-                },
-                "demoEnvironment": {
-                    "brandName": "Luma",
-                    "ldap": "vangeluw",
-                    "tms": "Launch"
-                },
-                "individualScoring": {
-                    "churn": {
-                        "churnPrediction": 0.15
+                        "phoneNumber": "+32473622044+06022022-01",
+                        "email": "woutervangeluwe+06022022-01@gmail.com",
+                        "loyaltyId": "5415776",
+                        "ecid": "12019606991718502754997192487345616673",
+                        "crmId": "1478212"
                     }
                 }
             },
             "personalEmail": {
-                "address": "woutervangeluwe+10122020-15@gmail.com"
+                "address": "woutervangeluwe+06022022-01@gmail.com"
             },
-            "_id": "5859709492881.192",
+            "_repo": {
+                "createDate": "2022-02-06T06:56:06.424Z"
+            },
+            "testProfile": true,
             "homeAddress": {
                 "postalCode": "1831",
                 "city": "Diegem",
-                "country": "Belgium",
-                "street1": "Culliganlaan 2a"
+                "street1": "Culliganlaan 2F"
             },
             "mobilePhone": {
-                "number": "+32473622044+10122020-15"
-            },
-            "optInOut": {
-                "_channels": {
-                    "directMail": "out",
-                    "sms": "in",
-                    "email": "in",
-                    "phone": "in"
-                }
+                "number": "+32473622044+06022022-01"
             },
             "segmentMembership": {
                 "ups": {
-                    "207d9c3f-6513-474c-a300-5fbb2eb11f0b": {
-                        "lastQualificationTime": "2020-12-10T23:29:21Z",
-                        "status": "realized"
+                    "bc999ded-b6d7-40d4-87a7-d3a280b950e3": {
+                        "lastQualificationTime": "2022-02-09T20:38:33Z",
+                        "status": "exited"
                     },
-                    "97b66496-25fc-434b-92d4-df2155cddcaf": {
-                        "lastQualificationTime": "2020-12-11T06:18:10Z",
-                        "status": "existing"
+                    "23b1cd4e-d62f-44bd-8392-3095a33109c4": {
+                        "lastQualificationTime": "2022-02-09T20:38:33Z",
+                        "status": "exited"
                     },
-                    "3a4ec8f1-5612-47b5-b58a-0b15a91cc7e6": {
-                        "lastQualificationTime": "2020-12-11T06:06:20Z",
+                    "f0807704-a1c8-4ac4-85dd-60db2fbf18f1": {
+                        "lastQualificationTime": "2022-02-09T20:38:33Z",
                         "status": "existing"
                     }
                 }
@@ -433,42 +406,49 @@ This is the full response from Platform:
                     "lastName": "Van Geluwe",
                     "firstName": "Wouter"
                 },
-                "gender": "male",
-                "birthDate": "1982-01-01"
+                "gender": "female",
+                "birthDate": "1982-07-08"
             },
             "userActivityRegions": {
                 "IRL1": {
-                    "captureTimestamp": "2020-12-11T06:10:23Z"
+                    "captureTimestamp": "2022-02-09T15:21:11Z"
                 }
             },
-            "profilePictureLink": "https://s7e4a.scene7.com/is/image/OmniPS/adobelogo?$fmt=alpha-png",
             "identityMap": {
-                "ecid": [
-                    {
-                        "id": "10430795205006914197132473559604822183"
-                    },
-                    {
-                        "id": "34113965854450796644316155105296901017"
-                    }
-                ],
                 "email": [
                     {
-                        "id": "woutervangeluwe+10122020-15@gmail.com"
+                        "id": "woutervangeluwe+06022022-01@gmail.com"
                     }
                 ],
-                "email_lc_sha256": [
+                "crmid": [
                     {
-                        "id": "32d731e23b6cb8742c279ff88b61cce0ef5758f30b1e098a2c0770bbdc430a84"
+                        "id": "1478212"
+                    }
+                ],
+                "ecid": [
+                    {
+                        "id": "12507560687324495704459439363261812234"
+                    },
+                    {
+                        "id": "12019606991718502754997192487345616673"
+                    },
+                    {
+                        "id": "38335942889672702722192106363935964471"
                     }
                 ],
                 "phone": [
                     {
-                        "id": "+32473622044+10122020-15"
+                        "id": "+32473622044+06022022-01"
+                    }
+                ],
+                "loyaltyid": [
+                    {
+                        "id": "5415776"
                     }
                 ]
             }
         },
-        "lastModifiedAt": "2020-12-11T06:18:10Z"
+        "lastModifiedAt": "2022-02-09T20:38:36Z"
     }
 }
 ```
@@ -549,7 +529,7 @@ This is a very important kind of flexibility that is offered to brands. This mea
 
 As an example:
 
-- the Call Center will request data from Platform using the namespace **mobilenr**
+- the Call Center will request data from Platform using the namespace **phone**
 - the Loyalty System will request data from Platform using the namespace **email**
 - online applications might use the namespace **ecid**
 
@@ -571,7 +551,7 @@ For this request, there are four required variables:
 
 | Key     | Value     | Definition | 
 |:-------------:| :---------------:|  :---------------:| 
-| schema.name          | **_xdm.context.s** | the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. | 
+| schema.name          | **_xdm.context.experienceevent** | the specific schema for which you want to receive information. In this case, we're looking for data that is mapped against the ExperienceEvent schema. | 
 | relatedSchema.name          | **_xdm.context.profile** | While we're looking for data that is mapped against the ExperienceEvent schema, we need to specify an identity for which we want to receive that data. The schema that has access to identity is the Profile-schema, so the relatedSchema here is the Profile-schema. |
 | relatedEntityId          | **id** | the specific customer I D|
 | relatedEntityIdNS    | **namespace** | the specific namespace that is applicable to the ID | 
@@ -613,395 +593,813 @@ Also, when the X-ray panel shows ExperienceEvent information, it is using the be
 {
     "_page": {
         "orderby": "timestamp",
-        "start": "710bd243-8559-4e5d-9345-ab85939ee234-0",
-        "count": 44,
+        "start": "d686ab8a-2d0c-4722-9ff5-bfc1020b0b55-0",
+        "count": 31,
         "next": ""
     },
     "children": [
         {
-            "relatedEntityId": "A29wOm-_HrdXL5njtUYzEOY7",
-            "entityId": "710bd243-8559-4e5d-9345-ab85939ee234-0",
-            "timestamp": 1607634623789,
+            "relatedEntityId": "A28iM3aJBJRbEQpOnUh5HOM9",
+            "entityId": "d686ab8a-2d0c-4722-9ff5-bfc1020b0b55-0",
+            "timestamp": 1644127126596,
             "entity": {
                 "environment": {
-                    "ipV4": "213.118.237.49",
+                    "ipV4": "213.118.129.117",
                     "type": "browser",
                     "browserDetails": {
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
-                        "acceptLanguage": "en",
-                        "viewportHeight": 969.0,
-                        "viewportWidth": 1920.0
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
                     }
                 },
                 "web": {
                     "webPageDetails": {
-                        "name": "Luma Home",
-                        "URL": "https://public.aepdemo.net/index.html"
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "vangeluw-OCUC",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC"
                     },
                     "webReferrer": {
-                        "URL": "https://public.aepdemo.net/admin.html"
+                        "URL": "https://adobe.okta.com/"
                     }
                 },
                 "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
                     "demoEnvironment": {
-                        "brandIndustry": "retail",
-                        "brandName": "Luma",
-                        "tms": "Launch",
-                        "brandLogo": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/d632e769791f0a4dbe0b84058d282d45_logo.png",
-                        "ldap": "vangeluw"
+                        "brandName": "vangeluw-OCUC"
                     },
                     "identification": {
                         "core": {
-                            "ecid": "34113965854450796644316155105296901017"
+                            "ecid": "12507560687324495704459439363261812234"
                         }
                     }
                 },
                 "implementationDetails": {
                     "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.3.0+2.2.0",
+                    "version": "2.8.0+2.9.0",
                     "environment": "browser"
                 },
                 "identityMap": {
-                    "CORE": [
-                        {
-                            "id": "34343827312771250614258373109911428140",
-                            "authenticatedState": "ambiguous",
-                            "primary": false
-                        }
-                    ],
                     "ECID": [
                         {
-                            "id": "34113965854450796644316155105296901017",
+                            "id": "12507560687324495704459439363261812234",
                             "authenticatedState": "ambiguous",
                             "primary": true
                         }
                     ]
                 },
                 "eventType": "web.webpagedetails.pageViews",
-                "_id": "710bd243-8559-4e5d-9345-ab85939ee234-0",
+                "_id": "d686ab8a-2d0c-4722-9ff5-bfc1020b0b55-0",
                 "placeContext": {
-                    "localTime": "2020-12-10T22:10:23.789+01:00",
-                    "localTimezoneOffset": -60.0
+                    "localTime": "2022-02-06T06:58:46.596+01:00",
+                    "localTimezoneOffset": -60
                 },
                 "device": {
                     "screenOrientation": "landscape",
-                    "screenWidth": 1920.0,
-                    "screenHeight": 1080.0
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
                 },
-                "timestamp": "2020-12-10T21:10:23.789Z"
+                "timestamp": "2022-02-06T05:58:46.596Z"
             },
-            "lastModifiedAt": "2020-12-10T21:10:25Z"
+            "lastModifiedAt": "2022-02-06T05:59:48Z"
         },
         {
-            "relatedEntityId": "A29wOm-_HrdXL5njtUYzEOY7",
-            "entityId": "c02b8be3-b220-4c2b-92fd-96ac7f5aa3f4-0",
-            "timestamp": 1607639281610,
+            "relatedEntityId": "A28iM3aJBJRbEQpOnUh5HOM9",
+            "entityId": "919a46bf-a591-4c32-9201-b72250d5f5d9-0",
+            "timestamp": 1644127129876,
             "entity": {
                 "environment": {
-                    "ipV4": "213.118.237.49",
+                    "ipV4": "213.118.129.117",
                     "type": "browser",
                     "browserDetails": {
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
-                        "acceptLanguage": "en",
-                        "viewportHeight": 1001.0,
-                        "viewportWidth": 1920.0
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
                     }
                 },
                 "web": {
                     "webPageDetails": {
-                        "name": "Luma Home",
-                        "URL": "https://public.aepdemo.net/index.html"
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "vangeluw-OCUC#",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC#"
                     },
                     "webReferrer": {
-                        "URL": "https://public.aepdemo.net/admin.html"
+                        "URL": "https://adobe.okta.com/"
                     }
                 },
                 "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
                     "demoEnvironment": {
-                        "brandIndustry": "retail",
-                        "brandName": "Luma",
-                        "tms": "Launch",
-                        "brandLogo": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/d632e769791f0a4dbe0b84058d282d45_logo.png",
-                        "ldap": "vangeluw"
+                        "brandName": "vangeluw-OCUC"
                     },
                     "identification": {
                         "core": {
-                            "ecid": "34113965854450796644316155105296901017"
+                            "ecid": "12507560687324495704459439363261812234"
                         }
                     }
                 },
                 "implementationDetails": {
                     "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.3.0+2.2.0",
+                    "version": "2.8.0+2.9.0",
                     "environment": "browser"
                 },
                 "identityMap": {
                     "ECID": [
                         {
-                            "id": "34113965854450796644316155105296901017",
+                            "id": "12507560687324495704459439363261812234",
                             "authenticatedState": "ambiguous",
                             "primary": true
                         }
                     ]
                 },
                 "eventType": "web.webpagedetails.pageViews",
-                "_id": "c02b8be3-b220-4c2b-92fd-96ac7f5aa3f4-0",
+                "_id": "919a46bf-a591-4c32-9201-b72250d5f5d9-0",
                 "placeContext": {
-                    "localTime": "2020-12-10T23:28:01.610+01:00",
-                    "localTimezoneOffset": -60.0
+                    "localTime": "2022-02-06T06:58:49.876+01:00",
+                    "localTimezoneOffset": -60
                 },
                 "device": {
                     "screenOrientation": "landscape",
-                    "screenWidth": 1920.0,
-                    "screenHeight": 1080.0
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
                 },
-                "timestamp": "2020-12-10T22:28:01.610Z"
+                "timestamp": "2022-02-06T05:58:49.876Z"
             },
-            "lastModifiedAt": "2020-12-10T22:28:03Z"
+            "lastModifiedAt": "2022-02-06T05:59:48Z"
         },
         {
-            "relatedEntityId": "A29wOm-_HrdXL5njtUYzEOY7",
-            "entityId": "db1f1dca-5882-4b99-95af-8fe18f8bb663-0",
-            "timestamp": 1607639409017,
+            "relatedEntityId": "A28iM3aJBJRbEQpOnUh5HOM9",
+            "entityId": "41a80489-00d4-446c-b456-8cb19c3f309a-0",
+            "timestamp": 1644130597134,
             "entity": {
                 "environment": {
-                    "ipV4": "213.118.237.49",
+                    "ipV4": "213.118.129.117",
                     "type": "browser",
                     "browserDetails": {
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
-                        "acceptLanguage": "en",
-                        "viewportHeight": 1001.0,
-                        "viewportWidth": 1920.0
+                        "viewportHeight": 1001,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
                     }
                 },
                 "web": {
                     "webPageDetails": {
-                        "name": "Nadia Elements Shell",
-                        "URL": "https://public.aepdemo.net/p1.html"
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "login",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/login"
                     },
                     "webReferrer": {
-                        "URL": "https://public.aepdemo.net/index.html"
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/login"
                     }
                 },
                 "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
                     "demoEnvironment": {
-                        "brandIndustry": "retail",
-                        "brandName": "Luma",
-                        "tms": "Launch",
-                        "brandLogo": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/d632e769791f0a4dbe0b84058d282d45_logo.png",
-                        "ldap": "vangeluw"
+                        "brandName": "vangeluw-OCUC"
                     },
                     "identification": {
                         "core": {
-                            "ecid": "34113965854450796644316155105296901017"
+                            "ecid": "12507560687324495704459439363261812234"
                         }
                     }
                 },
                 "implementationDetails": {
                     "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.3.0+2.2.0",
+                    "version": "2.8.0+2.9.0",
                     "environment": "browser"
                 },
                 "identityMap": {
                     "ECID": [
                         {
-                            "id": "34113965854450796644316155105296901017",
+                            "id": "12507560687324495704459439363261812234",
+                            "authenticatedState": "ambiguous",
+                            "primary": true
+                        }
+                    ]
+                },
+                "eventType": "web.webpagedetails.pageViews",
+                "_id": "41a80489-00d4-446c-b456-8cb19c3f309a-0",
+                "placeContext": {
+                    "localTime": "2022-02-06T07:56:37.134+01:00",
+                    "localTimezoneOffset": -60
+                },
+                "device": {
+                    "screenOrientation": "landscape",
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
+                },
+                "timestamp": "2022-02-06T06:56:37.134Z"
+            },
+            "lastModifiedAt": "2022-02-06T06:56:38Z"
+        },
+        {
+            "relatedEntityId": "A28jSB484ziuECF3fEoXmFlF",
+            "entityId": "8ACC7B6C-2320-4865-B414-3B0CFA01F628",
+            "timestamp": 1644419615000,
+            "entity": {
+                "environment": {
+                    "ipV4": "213.118.129.117",
+                    "browserDetails": {
+                        "userAgent": "Mozilla/5.0 (iPhone; CPU OS 15_3 like Mac OS X; en_BE)"
+                    }
+                },
+                "eventType": "application.login",
+                "_id": "8ACC7B6C-2320-4865-B414-3B0CFA01F628",
+                "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "mobile"
+                        }
+                    },
+                    "demoEnvironment": {
+                        "brandName": "vangeluw-2L6V"
+                    },
+                    "identification": {
+                        "core": {
+                            "ecid": "12019606991718502754997192487345616673",
+                            "email": "woutervangeluwe+06022022-01@gmail.com"
+                        }
+                    }
+                },
+                "timestamp": "2022-02-09T15:13:35Z",
+                "identityMap": {
+                    "ECID": [
+                        {
+                            "id": "12019606991718502754997192487345616673",
+                            "authenticatedState": "ambiguous",
+                            "primary": true
+                        }
+                    ]
+                }
+            },
+            "lastModifiedAt": "2022-02-09T15:13:38Z"
+        },
+        {
+            "relatedEntityId": "A28jSB484ziuECF3fEoXmFlF",
+            "entityId": "54F68CE5-E9E1-4AD0-91B1-7B607A9285C4",
+            "timestamp": 1644419658000,
+            "entity": {
+                "environment": {
+                    "ipV4": "213.118.129.117",
+                    "browserDetails": {
+                        "userAgent": "Mozilla/5.0 (iPhone; CPU OS 15_3 like Mac OS X; en_BE)"
+                    }
+                },
+                "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "mobile"
+                        }
+                    },
+                    "demoEnvironment": {
+                        "brandName": "vangeluw-2L6V"
+                    },
+                    "identification": {
+                        "core": {
+                            "ecid": "12019606991718502754997192487345616673"
+                        }
+                    }
+                },
+                "identityMap": {
+                    "ECID": [
+                        {
+                            "id": "12019606991718502754997192487345616673",
                             "authenticatedState": "ambiguous",
                             "primary": true
                         }
                     ]
                 },
                 "eventType": "commerce.productViews",
-                "_id": "db1f1dca-5882-4b99-95af-8fe18f8bb663-0",
+                "_id": "54F68CE5-E9E1-4AD0-91B1-7B607A9285C4",
                 "commerce": {
                     "productViews": {
-                        "value": 1.0
+                        "value": 1
                     }
                 },
                 "productListItems": [
                     {
-                        "product": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg",
-                        "quantity": 1.0,
-                        "productAddMethod": "Desktop",
+                        "quantity": 1,
+                        "productAddMethod": "Mobile",
                         "_experienceplatform": {
                             "core": {
-                                "productURL": "https://public.aepdemo.net/p1.html",
-                                "imageURL": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/2d46bee7e82aa3583a103ac6405fb3b4_1.jpg"
+                                "mainCategory": "Women",
+                                "productURL": "product1",
+                                "imageURL": "https://contentviewer.s3.amazonaws.com/helium/wh08-white_main.jpg"
                             }
                         },
-                        "priceTotal": 69.0,
-                        "name": "Nadia Elements Shell",
-                        "SKU": "LLWJ10.1-XS"
+                        "priceTotal": 42,
+                        "name": "Cassia Funnel Sweatshirt",
+                        "SKU": "product1",
+                        "currencyCode": "USD"
                     }
                 ],
-                "placeContext": {
-                    "localTime": "2020-12-10T23:30:09.017+01:00",
-                    "localTimezoneOffset": -60.0
-                },
-                "device": {
-                    "screenOrientation": "landscape",
-                    "screenWidth": 1920.0,
-                    "screenHeight": 1080.0
-                },
-                "timestamp": "2020-12-10T22:30:09.017Z"
+                "timestamp": "2022-02-09T15:14:18Z"
             },
-            "lastModifiedAt": "2020-12-10T22:30:10Z"
+            "lastModifiedAt": "2022-02-09T15:14:21Z"
         },
         {
-            "relatedEntityId": "A29wOm-_HrdXL5njtUYzEOY7",
-            "entityId": "eab8818b-438a-4e4e-8129-ac7adc0b6d2a-0",
-            "timestamp": 1607639509214,
+            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
+            "entityId": "bfe26684-bc3b-40c5-9fe5-5aba854c3227-0",
+            "timestamp": 1644420036035,
             "entity": {
                 "environment": {
-                    "ipV4": "213.118.237.49",
+                    "ipV4": "193.105.139.131",
                     "type": "browser",
                     "browserDetails": {
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
-                        "acceptLanguage": "en",
-                        "viewportHeight": 1001.0,
-                        "viewportWidth": 1920.0
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
                     }
                 },
                 "web": {
                     "webPageDetails": {
-                        "name": "Luma Home",
-                        "URL": "https://public.aepdemo.net/index.html"
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "vangeluw-OCUC",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC"
                     },
                     "webReferrer": {
-                        "URL": "https://public.aepdemo.net/p1.html"
+                        "URL": "https://adobe.okta.com/"
                     }
                 },
                 "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
                     "demoEnvironment": {
-                        "brandIndustry": "retail",
-                        "brandName": "Luma",
-                        "tms": "Launch",
-                        "brandLogo": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/d632e769791f0a4dbe0b84058d282d45_logo.png",
-                        "ldap": "vangeluw"
+                        "brandName": "vangeluw-OCUC"
                     },
                     "identification": {
                         "core": {
-                            "ecid": "34113965854450796644316155105296901017"
+                            "ecid": "38335942889672702722192106363935964471"
                         }
                     }
                 },
                 "implementationDetails": {
                     "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.3.0+2.2.0",
+                    "version": "2.8.0+2.9.0",
                     "environment": "browser"
                 },
                 "identityMap": {
                     "ECID": [
                         {
-                            "id": "34113965854450796644316155105296901017",
+                            "id": "38335942889672702722192106363935964471",
                             "authenticatedState": "ambiguous",
                             "primary": true
                         }
                     ]
                 },
                 "eventType": "web.webpagedetails.pageViews",
-                "_id": "eab8818b-438a-4e4e-8129-ac7adc0b6d2a-0",
+                "_id": "bfe26684-bc3b-40c5-9fe5-5aba854c3227-0",
                 "placeContext": {
-                    "localTime": "2020-12-10T23:31:49.214+01:00",
-                    "localTimezoneOffset": -60.0
+                    "localTime": "2022-02-09T16:20:36.035+01:00",
+                    "localTimezoneOffset": -60
                 },
                 "device": {
                     "screenOrientation": "landscape",
-                    "screenWidth": 1920.0,
-                    "screenHeight": 1080.0
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
                 },
-                "timestamp": "2020-12-10T22:31:49.214Z"
+                "timestamp": "2022-02-09T15:20:36.035Z"
             },
-            "lastModifiedAt": "2020-12-10T22:31:50Z"
+            "lastModifiedAt": "2022-02-09T15:20:39Z"
         },
         {
-            "relatedEntityId": "A29wOm-_HrdXL5njtUYzEOY7",
-            "entityId": "63996797-d4ad-46e4-95d2-0a32a687295d-0",
-            "timestamp": 1607639513538,
+            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
+            "entityId": "0480c434-8fcd-4a80-b298-c561276ac989-0",
+            "timestamp": 1644420037078,
             "entity": {
                 "environment": {
-                    "ipV4": "213.118.237.49",
+                    "ipV4": "193.105.139.131",
                     "type": "browser",
                     "browserDetails": {
-                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_0_1) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36",
-                        "acceptLanguage": "en",
-                        "viewportHeight": 1001.0,
-                        "viewportWidth": 1920.0
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
                     }
                 },
                 "web": {
                     "webPageDetails": {
-                        "name": "Radiant Tee - (Orange)",
-                        "URL": "https://public.aepdemo.net/p4.html"
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "vangeluw-OCUC#",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC#"
                     },
                     "webReferrer": {
-                        "URL": "https://public.aepdemo.net/index.html"
+                        "URL": "https://adobe.okta.com/"
                     }
                 },
                 "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
                     "demoEnvironment": {
-                        "brandIndustry": "retail",
-                        "brandName": "Luma",
-                        "tms": "Launch",
-                        "brandLogo": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/d632e769791f0a4dbe0b84058d282d45_logo.png",
-                        "ldap": "vangeluw"
+                        "brandName": "vangeluw-OCUC"
                     },
                     "identification": {
                         "core": {
-                            "ecid": "34113965854450796644316155105296901017"
+                            "ecid": "38335942889672702722192106363935964471"
                         }
                     }
                 },
                 "implementationDetails": {
                     "name": "https://ns.adobe.com/experience/alloy/reactor",
-                    "version": "2.3.0+2.2.0",
+                    "version": "2.8.0+2.9.0",
                     "environment": "browser"
                 },
                 "identityMap": {
                     "ECID": [
                         {
-                            "id": "34113965854450796644316155105296901017",
+                            "id": "38335942889672702722192106363935964471",
                             "authenticatedState": "ambiguous",
                             "primary": true
                         }
                     ]
                 },
-                "eventType": "commerce.productViews",
-                "_id": "63996797-d4ad-46e4-95d2-0a32a687295d-0",
-                "commerce": {
-                    "productViews": {
-                        "value": 1.0
-                    }
-                },
-                "productListItems": [
-                    {
-                        "product": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/58ae7e91a9bac17cdf92a178d6e25186_1.jpg",
-                        "quantity": 1.0,
-                        "productAddMethod": "Desktop",
-                        "_experienceplatform": {
-                            "core": {
-                                "productURL": "https://public.aepdemo.net/p4.html",
-                                "imageURL": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/58ae7e91a9bac17cdf92a178d6e25186_1.jpg"
-                            }
-                        },
-                        "priceTotal": 22.0,
-                        "name": "Radiant Tee - (Orange)",
-                        "SKU": "LUMA-24-CXV14"
-                    }
-                ],
+                "eventType": "web.webpagedetails.pageViews",
+                "_id": "0480c434-8fcd-4a80-b298-c561276ac989-0",
                 "placeContext": {
-                    "localTime": "2020-12-10T23:31:53.538+01:00",
-                    "localTimezoneOffset": -60.0
+                    "localTime": "2022-02-09T16:20:37.078+01:00",
+                    "localTimezoneOffset": -60
                 },
                 "device": {
                     "screenOrientation": "landscape",
-                    "screenWidth": 1920.0,
-                    "screenHeight": 1080.0
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
                 },
-                "timestamp": "2020-12-10T22:31:53.538Z"
+                "timestamp": "2022-02-09T15:20:37.078Z"
             },
-            "lastModifiedAt": "2020-12-10T22:31:54Z"
+            "lastModifiedAt": "2022-02-09T15:20:39Z"
         },
+        {
+            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
+            "entityId": "6b1b3983-6966-4551-a711-6b6e410fd819-0",
+            "timestamp": 1644420045993,
+            "entity": {
+                "environment": {
+                    "ipV4": "193.105.139.131",
+                    "type": "browser",
+                    "browserDetails": {
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+                    }
+                },
+                "web": {
+                    "webPageDetails": {
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "login",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/login"
+                    },
+                    "webReferrer": {
+                        "URL": "https://adobe.okta.com/"
+                    }
+                },
+                "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
+                    "demoEnvironment": {
+                        "brandName": "vangeluw-OCUC"
+                    },
+                    "identification": {
+                        "core": {
+                            "ecid": "38335942889672702722192106363935964471"
+                        }
+                    }
+                },
+                "implementationDetails": {
+                    "name": "https://ns.adobe.com/experience/alloy/reactor",
+                    "version": "2.8.0+2.9.0",
+                    "environment": "browser"
+                },
+                "identityMap": {
+                    "ECID": [
+                        {
+                            "id": "38335942889672702722192106363935964471",
+                            "authenticatedState": "ambiguous",
+                            "primary": true
+                        }
+                    ]
+                },
+                "eventType": "web.webpagedetails.pageViews",
+                "_id": "6b1b3983-6966-4551-a711-6b6e410fd819-0",
+                "placeContext": {
+                    "localTime": "2022-02-09T16:20:45.993+01:00",
+                    "localTimezoneOffset": -60
+                },
+                "device": {
+                    "screenOrientation": "landscape",
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
+                },
+                "timestamp": "2022-02-09T15:20:45.993Z"
+            },
+            "lastModifiedAt": "2022-02-09T15:20:47Z"
+        },
+        {
+            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
+            "entityId": "ae0f3551-7753-4467-8547-8fdbb66c2214-0",
+            "timestamp": 1644420058565,
+            "entity": {
+                "environment": {
+                    "ipV4": "193.105.139.131",
+                    "type": "browser",
+                    "browserDetails": {
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+                    }
+                },
+                "web": {
+                    "webPageDetails": {
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/home"
+                    },
+                    "webReferrer": {
+                        "URL": "https://adobe.okta.com/"
+                    }
+                },
+                "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
+                    "demoEnvironment": {
+                        "brandName": "vangeluw-OCUC"
+                    },
+                    "identification": {
+                        "core": {
+                            "ecid": "38335942889672702722192106363935964471",
+                            "email": "woutervangeluwe+06022022-01@gmail.com"
+                        }
+                    }
+                },
+                "implementationDetails": {
+                    "name": "https://ns.adobe.com/experience/alloy/reactor",
+                    "version": "2.8.0+2.9.0",
+                    "environment": "browser"
+                },
+                "identityMap": {
+                    "ECID": [
+                        {
+                            "id": "38335942889672702722192106363935964471",
+                            "authenticatedState": "ambiguous",
+                            "primary": true
+                        }
+                    ]
+                },
+                "eventType": "web.login",
+                "_id": "ae0f3551-7753-4467-8547-8fdbb66c2214-0",
+                "placeContext": {
+                    "localTime": "2022-02-09T16:20:58.565+01:00",
+                    "localTimezoneOffset": -60
+                },
+                "device": {
+                    "screenOrientation": "landscape",
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
+                },
+                "timestamp": "2022-02-09T15:20:58.565Z"
+            },
+            "lastModifiedAt": "2022-02-09T15:20:59Z"
+        },
+        {
+            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
+            "entityId": "5e67a9c9-b201-4e21-bd3a-4d10475f6156-0",
+            "timestamp": 1644420058653,
+            "entity": {
+                "environment": {
+                    "ipV4": "193.105.139.131",
+                    "type": "browser",
+                    "browserDetails": {
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+                    }
+                },
+                "web": {
+                    "webPageDetails": {
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "home",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/home"
+                    },
+                    "webReferrer": {
+                        "URL": "https://adobe.okta.com/"
+                    }
+                },
+                "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
+                    "demoEnvironment": {
+                        "brandName": "vangeluw-OCUC"
+                    },
+                    "identification": {
+                        "core": {
+                            "ecid": "38335942889672702722192106363935964471"
+                        }
+                    }
+                },
+                "implementationDetails": {
+                    "name": "https://ns.adobe.com/experience/alloy/reactor",
+                    "version": "2.8.0+2.9.0",
+                    "environment": "browser"
+                },
+                "identityMap": {
+                    "ECID": [
+                        {
+                            "id": "38335942889672702722192106363935964471",
+                            "authenticatedState": "ambiguous",
+                            "primary": true
+                        }
+                    ]
+                },
+                "eventType": "web.webpagedetails.pageViews",
+                "_id": "5e67a9c9-b201-4e21-bd3a-4d10475f6156-0",
+                "placeContext": {
+                    "localTime": "2022-02-09T16:20:58.653+01:00",
+                    "localTimezoneOffset": -60
+                },
+                "device": {
+                    "screenOrientation": "landscape",
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
+                },
+                "timestamp": "2022-02-09T15:20:58.653Z"
+            },
+            "lastModifiedAt": "2022-02-09T15:21:00Z"
+        },
+        {
+            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
+            "entityId": "33253c5a-6a7e-4858-a7d2-4e6d4a1c7901-0",
+            "timestamp": 1644420061804,
+            "entity": {
+                "environment": {
+                    "ipV4": "193.105.139.131",
+                    "type": "browser",
+                    "browserDetails": {
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+                    }
+                },
+                "web": {
+                    "webPageDetails": {
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "vangeluw-OCUC",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC"
+                    },
+                    "webReferrer": {
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/home"
+                    }
+                },
+                "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
+                    "demoEnvironment": {
+                        "brandName": "vangeluw-OCUC"
+                    },
+                    "identification": {
+                        "core": {
+                            "ecid": "38335942889672702722192106363935964471"
+                        }
+                    }
+                },
+                "implementationDetails": {
+                    "name": "https://ns.adobe.com/experience/alloy/reactor",
+                    "version": "2.8.0+2.9.0",
+                    "environment": "browser"
+                },
+                "identityMap": {
+                    "ECID": [
+                        {
+                            "id": "38335942889672702722192106363935964471",
+                            "authenticatedState": "ambiguous",
+                            "primary": true
+                        }
+                    ]
+                },
+                "eventType": "web.webpagedetails.pageViews",
+                "_id": "33253c5a-6a7e-4858-a7d2-4e6d4a1c7901-0",
+                "placeContext": {
+                    "localTime": "2022-02-09T16:21:01.804+01:00",
+                    "localTimezoneOffset": -60
+                },
+                "device": {
+                    "screenOrientation": "landscape",
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
+                },
+                "timestamp": "2022-02-09T15:21:01.804Z"
+            },
+            "lastModifiedAt": "2022-02-09T15:21:03Z"
+        },
+        {
+            "relatedEntityId": "A2-AP9zOsakzNTe9Rqwf7Wse",
+            "entityId": "d8e81fb7-6de9-44c1-b9c6-60d93b520209-0",
+            "timestamp": 1644420071737,
+            "entity": {
+                "environment": {
+                    "ipV4": "193.105.139.131",
+                    "type": "browser",
+                    "browserDetails": {
+                        "viewportHeight": 969,
+                        "viewportWidth": 1920,
+                        "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/98.0.4758.80 Safari/537.36"
+                    }
+                },
+                "web": {
+                    "webPageDetails": {
+                        "pageViews": {
+                            "value": 1
+                        },
+                        "name": "vangeluw-OCUC",
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC"
+                    },
+                    "webReferrer": {
+                        "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/home"
+                    }
+                },
+                "_experienceplatform": {
+                    "interactionDetails": {
+                        "core": {
+                            "channel": "web"
+                        }
+                    },
+                    "demoEnvironment": {
+                        "brandName": "vangeluw-OCUC"
+                    },
+                    "identification": {
+                        "core": {
+                            "ecid": "38335942889672702722192106363935964471"
+                        }
+                    }
+                },
+                "implementationDetails": {
+                    "name": "https://ns.adobe.com/experience/alloy/reactor",
+                    "version": "2.8.0+2.9.0",
+                    "environment": "browser"
+                },
+                "identityMap": {
+                    "ECID": [
+                        {
+                            "id": "38335942889672702722192106363935964471",
+                            "authenticatedState": "ambiguous",
+                            "primary": true
+                        }
+                    ]
+                },
+                "eventType": "web.webpagedetails.pageViews",
+                "_id": "d8e81fb7-6de9-44c1-b9c6-60d93b520209-0",
+                "placeContext": {
+                    "localTime": "2022-02-09T16:21:11.737+01:00",
+                    "localTimezoneOffset": -60
+                },
+                "device": {
+                    "screenOrientation": "landscape",
+                    "screenWidth": 1920,
+                    "screenHeight": 1080
+                },
+                "timestamp": "2022-02-09T15:21:11.737Z"
+            },
+            "lastModifiedAt": "2022-02-09T15:21:14Z"
+        }
     ],
     "_links": {
         "next": {

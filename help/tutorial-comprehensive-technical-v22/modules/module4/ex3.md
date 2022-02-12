@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: 98d79b61-83e8-4868-82dc-94977f22a0dd
 ---
 # 4.3 Queries, queries, queries...  and churn analysis
 
@@ -598,7 +597,7 @@ aepenablementfy21:all-> and    l._experienceplatform.identification.core.ecid = 
 
 In the next you will persist your query (also known as **create table as select** or **CTAS**) as a new dataset that you will use in Microsoft Power BI.
 
-Next Step: [4.4 - Power BI/Tableau](./ex4.md)
+Next Step: [4.4 Generate a dataset from a query](./ex4.md)
 
 [Go Back to Module 4](./query-service.md)
 

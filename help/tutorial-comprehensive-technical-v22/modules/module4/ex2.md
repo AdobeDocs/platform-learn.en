@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: 6605c4b9-e98d-462a-83b5-f52acd160ef5
 ---
 # 4.2 Using the Query Service
 
@@ -167,7 +166,7 @@ aepenablementfy21:all-> limit 1;
  -3.1269422
 ```
 
-Next Step: [4.3 - Queries, queries, queries...  and churn analysis](./ex3.md)
+Next Step: [4.3 Queries, queries, queries...  and churn analysis](./ex3.md)
 
 [Go Back to Module 4](./query-service.md)
 

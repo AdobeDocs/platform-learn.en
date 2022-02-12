@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: c8aae361-8299-4c7a-9e5c-83cfbb2df1b6
 ---
 # 4.0 Prerequisites
 
@@ -32,7 +31,7 @@ Tableau gives you a 14-day trial period automatically.
 
 If you want to use Tableau beyond those 14 days, you'll need a license key.
 
-Next Step: [4.1 - Getting Started](./ex1.md)
+Next Step: [4.1 Getting Started](./ex1.md)
 
 [Go Back to Module 4](./query-service.md)
 

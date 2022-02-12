@@ -32,7 +32,7 @@ On the Profile Viewer panel on your website, you can find multiple identities. E
 
 ![Customer Profile](./images/identities.png)
 
-On the X-ray panel, we can see 4 different combinations of IDs and Namespaces:
+On the Profile Viewer panel, you can see these combinations of IDs and Namespaces:
 
 | Identity     | Namespace       |
 |:-------------:| :---------------:|

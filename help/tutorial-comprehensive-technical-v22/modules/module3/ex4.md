@@ -13,33 +13,17 @@ In this exercise, you'll create a segment by making use of Adobe Experience Plat
 
 ## Story
 
-In the Real-time Customer Profile, all profile data is shown alongside event data and existing segment memberships. The data that is shown  can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the experience system of record.
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
+![Data Ingestion](../module2/images/home.png)
 
-After logging in, you'll land on the homepage of Adobe Experience Platform.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-![Data Ingestion](./images/home.png)
+![Data Ingestion](../module2/images/sb1.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
-
-![Data Ingestion](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
-
-In the menu on the left side, go to **Segments**.
+In the menu on the left side, go to **Segments**. On this page, you can see an overview of all existing segments. Click on the **+ Create segment** button to start creating a new segment.
 
 ![Segmentation](./images/menuseg.png)
-
-On this page, you can see an overview of all existing segments.
-
-![Segmentation](./images/segmentation.png)
-
-Click on the **Create segment** button to start creating a new segment.
-
-![Segmentation](./images/createnewsegment.png)
 
 Once you're in the new segment builder, you immediately notice the **Attributes** menu option and the **XDM Individual Profile** reference.
 
@@ -51,15 +35,13 @@ Let's build a segment which includes all **male** customers.
 
 To get to the gender attribute, you need to understand and know XDM. 
 
-Gender is an attribute of Person, which can be found under Attributes. So to get there, you'll start by clicking on **XDM Individual Profile**. You'll then see this.
+Gender is an attribute of Person, which can be found under Attributes. So to get there, you'll start by clicking on **XDM Individual Profile**. You'll then see this. From the **XDM Individual Profile** window, select **Person**. 
 
 ![Segmentation](./images/person.png)
 
-From the **XDM Individual Profile** window, select **Person**. You'll then see this.
+You'll then see this. In **Person**, you can find the **Gender** attribute. Drag the Gender attribute onto the segment builder.
 
 ![Segmentation](./images/gender.png)
-
-And in **Person**, you can find the **Gender** attribute. Drag the Gender attribute onto the segment builder.
 
 Now you can choose the specific gender out of the pre-populated options. In this case, let's pick **Male**.
 
@@ -75,27 +57,27 @@ You'll then see an estimation such as the one below:
 
 Next, you should refine your segment a bit. You need to build out a segment of all male customers that have viewed the product **Proteus Fitness Jackshirt (Orange)**.
 
-To build out this segment, you need to add an Experience Event. You can find all Experience Events by clicking on the **Events** icon in the **Segments** menu bar.
+To build out this segment, you need to add an Experience Event. You can find all Experience Events by clicking on the **Events** icon in the **Fields** menu bar.
 
 ![Segmentation](./images/findee.png)
 
-Next, you'll see the top-level, **ExperienceEvents** node. 
+Next, you'll see the top-level, **XDM ExperienceEvents** node. Click on **XDM ExperienceEvent**.
 
 ![Segmentation](./images/see.png)
 
-To find customers that have visited the **Proteus Fitness Jackshirt (Orange)** product, click on **XDM ExperienceEvent**. You'll then see this.
-
-![Segmentation](./images/comm_pv.png)
-
 Go to **Product List Items**.
 
-![Segmentation](./images/eeweb.png)
+![Segmentation](./images/plitems.png) 
 
 Select **Name** and drag and drop the **Name** object from the left menu onto the segment builder canvas into the **Events** section.
 
+![Segmentation](./images/eeweb.png)
+
+You'll then see this:
+
 ![Segmentation](./images/eewebpdtlname.png)
 
-The comparison parameter should be **equals** and in the input field, enter **Proteus Fitness Jackshirt (Orange)**.
+The comparison parameter should be **equals** and in the input field, enter **MONTANA WIND JACKET**.
 
 ![Segmentation](./images/pv.png)
 
@@ -110,7 +92,7 @@ When building a segment, you're actually composing a Profile Query Language (PQL
 Now you can see the full PQL statement:
 
 ```sql
-person.gender in ["male"] and (select _Any1 from xEvent, _Any1__Product_list_items1 from _Any1.productListItems where _Any1__Product_list_items1.name.equals("Proteus Fitness Jackshirt (Orange)", false))
+person.gender in ["male"] and CHAIN(xEvent, timestamp, [C0: WHAT(productListItems.exists(name.equals("MONTANA WIND JACKET", false)))])
 ```
 
 You can also preview a sample of the customer profiles that are part of this segment, by clicking on **View Profiles**.
@@ -123,13 +105,11 @@ Finally, let's give your segment a name and save it.
 
 As a naming convention, use:
 
-* `ldap - Male customers with interest in Proteus Fitness Jackshirt (Orange) - ldap`
-
-Please replace **ldap** with your ldap.
+- `--demoProfileLdap-- - Male customers with interest in Montana Wind Jacket`
 
 ![Segmentation](./images/segmentname.png)
 
-Then, click the **Save** button to save your segment, after which you'll be taken back to the Segment overview  page.
+Then, click the **Save and Close** button to save your segment, after which you'll be taken back to the Segment overview  page.
 
 ![Segmentation](./images/savedsegment.png)
 
