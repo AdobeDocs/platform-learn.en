@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 4ca8f6da-2252-4b29-8e05-8f3b8d7b5781
 ---
 # 6.2 Configure an Advertising Destination like Google DV360
 
@@ -13,37 +12,27 @@ exl-id: 4ca8f6da-2252-4b29-8e05-8f3b8d7b5781
 >
 >The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
 
-Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-After logging in, you'll land on the homepage of Adobe Experience Platform.
+![Data Ingestion](../module2/images/home.png)
 
-![Data Ingestion](./images/home.png)
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
-
-![Data Ingestion](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
+![Data Ingestion](../module2/images/sb1.png)
 
 In the left menu, go to **Destinations**, then go to **Catalog**. You'll then see the **Destinations Catalog**.
 
 ![RTCDP](./images/rtcdp.png)
 
-In **Destinations**, click on **Google Display & Video 360** and then click **+ Configure**.
+In **Destinations**, click on **Google Display & Video 360** and then click **+ Set Up**.
 
 ![RTCDP](./images/rtcdpgoogle.png)
 
-You'll then see this. Click the data icon.
+You'll then see this. Click **Connect to destination**.
 
 ![RTCDP](./images/rtcdpgooglecreate1.png)
 
-Click **Configure new destination**.
-
-![RTCDP](./images/rtcdpgooglecreate2.png)
-
-In the next screen, you'll see the Self-Service UI to configure your destination to Google DV360.
+In the next screen, you can configure your destination to Google DV360.
 
 ![RTCDP](./images/rtcdpgooglecreatedest.png)
 
@@ -63,12 +52,12 @@ Now you have this. Click **Next**.
 >
 >Google needs to allow-list Adobe in order for Adobe Experience Platform to send data to Google DV360. Contact your Google Account Manager to enable this dataflow.
 
-After creating the destination, you'll see this. You can optionally select a data governance policy. Next, click **Create**.
+After creating the destination, you'll see this. You can optionally select a data governance policy. Next, click **Save & exit**.
 
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 You'll then see a list of available destinations. 
-In the next exercise, you'll connect the segment you built in the previous to the Google DV360 destination.
+In the next exercise, you'll connect the segment you built in the previous exercise to the Google DV360 destination.
 
 Next Step: [6.3 Take Action: send your segment to DV360](./ex3.md)
 

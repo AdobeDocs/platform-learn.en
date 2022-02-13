@@ -5,11 +5,10 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 07b597dd-81f3-4241-a075-afed29ee5f45
 ---
 # 6.6 Segment Match
 
-
+This content is under construction.
 
 Next Step: [Summary and benefits](./summary.md)
 

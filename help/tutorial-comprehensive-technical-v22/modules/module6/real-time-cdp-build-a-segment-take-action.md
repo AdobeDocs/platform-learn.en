@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 0a3a363a-a374-4910-b5d1-cc8dd17e0e02
 ---
+
 # 6. Real-time CDP - Build a segment and take action
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
@@ -23,7 +23,6 @@ In this module, you'll configure a streaming segment and activate the segment to
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Audience Manager
 - Access to Adobe Target
 - Access to AWS S3
 
