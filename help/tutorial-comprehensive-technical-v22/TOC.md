@@ -74,6 +74,8 @@ doc-type: multipage
   + [6.4 Take Action: send your segment to an S3-destination](/help/tutorial-comprehensive-technical-v22/modules/module6/ex4.md)
   + [6.5 Take Action: send your segment to Adobe Target](/help/tutorial-comprehensive-technical-v22/modules/module6/ex5.md)
   + [6.6 Segment Match](/help/tutorial-comprehensive-technical-v22/modules/module6/ex6.md)
+  + [6.7 External Audiences](/help/tutorial-comprehensive-technical-v22/modules/module6/ex7.md)
+  + [6.8 Destinations SDK](/help/tutorial-comprehensive-technical-v22/modules/module6/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module6/summary.md)
 + 7 - Adobe Journey Optimizer: Orchestration {#module7}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module7/journey-orchestration-create-account.md)

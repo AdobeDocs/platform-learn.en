@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer
 doc-type: tutorial
 activity: develop
-exl-id: 25a16d70-1ff7-48e5-85b9-764e2bfc032a
 ---
 # 7. Adobe Journey Optimizer: Orchestration
 

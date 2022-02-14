@@ -5,7 +5,6 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: 98e2ea4b-3c9a-445c-9474-8f3461d33cd2
 ---
 # 7.1 Create your event
 
@@ -13,17 +12,9 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/acoptriglp.png)
-
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
-
-![ACOP](./images/sb.png)
-
-You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
-
-![ACOP](./images/home.png)
 
 In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Events**.
 
@@ -37,7 +28,7 @@ A new, empty event window will then pop up.
 
 ![ACOP](./images/emptyevent1.png)
 
-First of all, give your Event a Name like this: `ldapAccountCreationEvent` and replace `ldap` with your ldap.
+First of all, give your Event a Name like this: `--demoProfileLdap--AccountCreationEvent`.
 
 ![ACOP](./images/eventname.png)
 
@@ -98,7 +89,7 @@ Your Event has a unique orchestration eventID, which you can find by scrolling d
 ![ACOP](./images/payloadeventID.png)
 
 The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in Exercise 7.2. Remember this eventID, as you'll need it in Exercise 7.3.
-`"eventID": "239990879187cb19bed14525736cbdd1204fea3e2452bc5080a9aca27062a485"`
+`"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`
 
 Click **Ok**, followed by clicking **Cancel**.
 

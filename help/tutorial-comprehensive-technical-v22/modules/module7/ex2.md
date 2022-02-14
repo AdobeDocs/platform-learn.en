@@ -5,7 +5,6 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: b86fd37a-8e66-4b7d-b5b8-0138fdcec61b
 ---
 # 7.2 Create your email message
 
@@ -15,17 +14,9 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/acoptriglp.png)
-
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
-
-![ACOP](./images/sb.png)
-
-You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
-
-![ACOP](./images/home.png)
 
 In the left menu, click **Messages**. 
 
@@ -33,11 +24,9 @@ On the Messages screen, you’ll see a view similar to this. Click **Create Mess
 
 ![Journey Optimizer](./images/msg1.png)
 
-Give your Message a title following this naming convention **ldap - Registration Email** and replace **ldap** by your own ldap, select the **CJM Alpha Preset** and enable the **Email** channel. 
+Give your Message a title following this naming convention `--demoProfileLdap-- - Registration Email` and select the **Email Preset** and enable the **Email** channel. Click on the **Create** button to create your Registration Email message.
 
 ![Journey Optimizer](./images/msg2.png)
-
-Click on the **Create** button to create your Registration Email message.
 
 The next screen is the message dashboard, from there you will be able to see the email thumbnail when the content will be provided.
 

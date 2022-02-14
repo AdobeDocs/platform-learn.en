@@ -70,6 +70,14 @@ Use the segment you built in exercise 6.1 to configure an Experience Targeting A
 
 Configure and use Segment Match to exchange segments between sandboxes and/or Adobe Experience Platform instances.
 
+[6.7 External Audiences](./ex7.md)
+
+Import audiences from an external source system into Adobe Experience Platform.
+
+[6.8 Destinations SDK](./ex8.md)
+
+Configure your own destination using Destinations SDK.
+
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.

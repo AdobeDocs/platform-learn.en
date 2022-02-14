@@ -5,7 +5,6 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: 43010729-1e1b-482b-95a4-1e1077986158
 ---
 # 7.3 Create your journey
 
@@ -15,17 +14,9 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/acoptriglp.png)
-
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
-
-![ACOP](./images/sb.png)
-
-You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
-
-![ACOP](./images/home.png)
 
 In the left menu, click **Journeys**. Next, click **Create Journey** to create a new journey.
 

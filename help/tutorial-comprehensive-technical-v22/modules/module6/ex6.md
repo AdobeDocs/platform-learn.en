@@ -10,7 +10,7 @@ activity: develop
 
 This content is under construction.
 
-Next Step: [Summary and benefits](./summary.md)
+Next Step: [6.7 External Audiences](./ex7.md)
 
 [Go Back to Module 6](./real-time-cdp-build-a-segment-take-action.md)
 
