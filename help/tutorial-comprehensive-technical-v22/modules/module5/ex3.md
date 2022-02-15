@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 2087d50b-9ecf-4e26-9ce3-2c4a083524c5
 ---
 # 5.3 Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
 
@@ -45,7 +44,7 @@ You'll see that a segment definition is created automatically.
 
 ![Segment rule](./images/caicreatesegment.png)
 
-Give your segment a name, following this naming convention: **ldap - Customer AI High Propensity**. Click **Save**.
+Give your segment a name, following this naming convention: `--demoProfileLdap-- - Customer AI High Propensity`. Click **Save**.
 
 ![Segment rule](./images/caicreatesegment1.png)
 
@@ -57,7 +56,7 @@ Since the Customer AI propensity score becomes part of the Real-time Customer Pr
 
 In Adobe Experience Platform, go to **Profiles** in the left menu and select **Browse**.
 
-Search for a profile using any of the identifiers, like for instance **ECID 17416178332558723511413705105123510430**, that are available in the JSON file which you ingested. Click the **Profile ID** to open the profile.
+Search for a profile using any of the identifiers, like for instance **EMAIL hbirkenshawa@businessweek.com**, that are available in the JSON file which you ingested. Click the **Profile ID** to open the profile.
 
 ![Profile](./images/profile1.png)
 

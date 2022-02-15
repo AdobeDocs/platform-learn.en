@@ -5,23 +5,16 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 663b0e49-d76a-4cab-8829-0f850f88a298
 ---
 # 6.3 Take Action: send your segment to DV360
 
-Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-After logging in, you'll land on the homepage of Adobe Experience Platform.
+![Data Ingestion](../module2/images/home.png)
 
-![Data Ingestion](./images/home.png)
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
-
-![Data Ingestion](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
+![Data Ingestion](../module2/images/sb1.png)
 
 In the left menu, go to **Destinations**, then go to **Catalog**. You'll then see the **Destinations Catalog**.
 
@@ -49,9 +42,7 @@ Finally, on the **Review** page, click **Finish**.
 
 Your segment is now linked to Google DV360. Every time a customer qualifies for this segment, a signal will be sent to Google DV360 to include that customer in the Audience at Google DV360 side.
 
-![RTCDP](./images/rtcdpnext3.png)
-
-Next Step: [6.4 Take Action: Send your segment to Google AdWords RLSA using Adobe Audience Manager](./ex4.md)
+Next Step: [6.4 Take Action: send your segment to an S3-destination](./ex4.md)
 
 [Go Back to Module 6](./real-time-cdp-build-a-segment-take-action.md)
 

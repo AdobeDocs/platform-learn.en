@@ -5,7 +5,6 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: 43010729-1e1b-482b-95a4-1e1077986158
 ---
 # 7.3 Create your journey
 
@@ -15,17 +14,9 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/acoptriglp.png)
-
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
-
-![ACOP](./images/sb.png)
-
-You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
-
-![ACOP](./images/home.png)
 
 In the left menu, click **Journeys**. Next, click **Create Journey** to create a new journey.
 
@@ -51,7 +42,7 @@ As the second step in the journey, you need to add a short **Wait** step. Go to 
 
 ![ACOP](./images/journeywait.png)
 
-Your journey now looks like this. On the right side of the screen you need to configure the wait time. Set it to 20 seconds. This will give plenty of time for the profile attributes to be available after the event fires.
+Your journey now looks like this. On the right side of the screen you need to configure the wait time. Set it to 1 minute. This will give plenty of time for the profile attributes to be available after the event fires.
 
 ![ACOP](./images/journeywait1.png)
 
@@ -65,7 +56,7 @@ On the right side of your screen, you now need to configure the email. Click the
 
 ![ACOP](./images/emptymsg.png)
 
-You'll then see the **Select a message** popup. In that list, you need to select the template with the name **ldap - Registration Email**.
+You'll then see the **Select a message** popup. In that list, you need to select the template with the name `--demoProfileLdap-- - Registration Email`.
 
 ![ACOP](./images/emailmsglist.png)
 
@@ -83,13 +74,9 @@ You still need to give your Journey a Name. You can do that by clicking the **Pr
 
 ![ACOP](./images/journeyname.png)
 
-You can then enter the Journey's name here. Please use `ldap - Account Creation Journey` as a naming convention and replace `ldap` with your LDAP.
-  
+You can then enter the Journey's name here. Please use `--demoProfileLdap-- - Account Creation Journey`. Click **OK** to save your changes.
+
 ![ACOP](./images/journeyname1.png)
-
-Click **OK** to save your changes.
-
-![ACOP](./images/ok.png)
 
 You can now publish your journey by clicking **Publish**.
 
@@ -105,7 +92,7 @@ You'll then see a green confirmation bar saying that your Journey is now Publish
 
 You've now finished this exercise.
 
-Next Step: [7.4 Update your Configuration ID and Test your Journey](./ex4.md)
+Next Step: [7.4 Update your Data Collection property and test your Journey](./ex4.md)
 
 [Go Back to Module 7](./journey-orchestration-create-account.md)
 

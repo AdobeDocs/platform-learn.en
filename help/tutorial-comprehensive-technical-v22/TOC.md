@@ -74,13 +74,15 @@ doc-type: multipage
   + [6.4 Take Action: send your segment to an S3-destination](/help/tutorial-comprehensive-technical-v22/modules/module6/ex4.md)
   + [6.5 Take Action: send your segment to Adobe Target](/help/tutorial-comprehensive-technical-v22/modules/module6/ex5.md)
   + [6.6 Segment Match](/help/tutorial-comprehensive-technical-v22/modules/module6/ex6.md)
+  + [6.7 External Audiences](/help/tutorial-comprehensive-technical-v22/modules/module6/ex7.md)
+  + [6.8 Destinations SDK](/help/tutorial-comprehensive-technical-v22/modules/module6/ex8.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module6/summary.md)
 + 7 - Adobe Journey Optimizer: Orchestration {#module7}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module7/journey-orchestration-create-account.md)
   + [7.1 Create your event](/help/tutorial-comprehensive-technical-v22/modules/module7/ex1.md)
   + [7.2 Create your email message](/help/tutorial-comprehensive-technical-v22/modules/module7/ex2.md)
   + [7.3 Create your journey](/help/tutorial-comprehensive-technical-v22/modules/module7/ex3.md)
-  + [7.4 Update your Configuration ID and Test your Journey](/help/tutorial-comprehensive-technical-v22/modules/module7/ex4.md)
+  + [7.4 Update your Data Collection property and test your Journey](/help/tutorial-comprehensive-technical-v22/modules/module7/ex4.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module7/summary.md)
 + 8 - Adobe Journey Optimizer: External data sources and custom actions {#module8}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module8/journey-orchestration-external-weather-api-sms.md)
