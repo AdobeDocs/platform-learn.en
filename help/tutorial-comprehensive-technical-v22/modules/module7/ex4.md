@@ -63,6 +63,7 @@ Finally, you need to publish your changes. Go to **Publishing Flow** in the left
 Your library will then be updated and after 1-2 minutes you can then go ahead and test your configuration.
 
 ## 7.4.2 Test your Journey
+
 Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
 
 ![DSN](../module0/images/web8.png)
