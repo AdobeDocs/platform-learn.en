@@ -54,7 +54,7 @@ In this exercise, you'll learn how to configure an email message.
 
 In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
 
-[7.4 Update your Configuration ID and Test your Journey](./ex4.md)
+[7.4 Update your Data Collection property and test your Journey](./ex4.md)
 
 This will guide you through the configuration of Launch to trigger your event and provide the right payload and finally, you'll be able to send yourself an email.
 
