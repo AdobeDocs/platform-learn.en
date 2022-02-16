@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 38489c2b-69d4-4ddc-9a75-84bd54b4c823
 ---
 # 6.7 External Audiences
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: d9377c97-efed-427a-a063-aa9c6bd1a78a
 ---
 # 5.2 Customer AI - Create a New Instance (Configure)
 

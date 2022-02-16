@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 57d6c714-5d41-4ac1-8e60-3000da45b76e
 ---
 # 5.3 Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
 
