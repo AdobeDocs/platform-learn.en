@@ -1,7 +1,6 @@
 ---
 title: Generate first-party device IDs
 description: Learn how to generate first-party device IDs
-feature: 
 kt: 9728
 ---
 
