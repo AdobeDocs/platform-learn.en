@@ -19,7 +19,7 @@ This video shows how to stream data to Adobe Experience Platform in real-time us
 
 ## Additional information
 
-* [Create a streaming connection using the API API documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
+* [Create a streaming connection using the API documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/api-tutorials/create/streaming/http.html).
 * [Stream record data using Streaming Ingestion APIs documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-record-data.html)
 * [Stream time-series data using Streaming Ingestion APIs documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-time-series-data.html)
 * [Send multiple messages in a single HTTP request documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/streaming-multiple-messages.html)
