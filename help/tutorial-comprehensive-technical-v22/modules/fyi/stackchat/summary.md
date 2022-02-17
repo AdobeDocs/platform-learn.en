@@ -1,7 +1,6 @@
 ---
 title: Summary and benefits
 description: Build a chat bot with Stackchat, deploy it within social channels, such as Facebook and WeChat, capture profile attributes and behavioral events and, in turn, personalize the customer's experience as an outcome.
-exl-id: 481f582b-37d8-462b-8ec5-0ac764595982
 ---
 # Summary and benefits
 

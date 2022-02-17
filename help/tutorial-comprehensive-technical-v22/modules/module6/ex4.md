@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 5b0bcd69-7131-48a3-bd3e-773ba95cc42b
 ---
 # 6.4 Take Action: send your segment to an S3-destination
 

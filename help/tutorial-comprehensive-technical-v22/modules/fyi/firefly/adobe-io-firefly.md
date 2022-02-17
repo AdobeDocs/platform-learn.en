@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: d689a7fe-485d-465c-99ab-46cda5aecc0d
 ---
 # 22. Build your own real-time dashboard using Adobe I/O - Project Firefly and Adobe Experience Platform
 

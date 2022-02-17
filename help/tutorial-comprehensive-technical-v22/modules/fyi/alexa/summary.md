@@ -5,7 +5,6 @@ kt: 5342
 audience: Application Developer
 doc-type: tutorial
 activity: develop
-exl-id: 5948f791-beea-4bcb-afe4-c199f9fc3f2d
 ---
 # Summary & benefits
 

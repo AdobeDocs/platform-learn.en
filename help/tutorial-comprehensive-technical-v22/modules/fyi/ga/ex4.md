@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: d80a17d0-3525-4654-93af-6c20942749d0
 ---
 # 9.4 Retrieve Datasets in Platform
 

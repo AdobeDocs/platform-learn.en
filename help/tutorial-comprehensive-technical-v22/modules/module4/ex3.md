@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: 8ef8441d-6169-4c37-9f71-5de1dbfa8a21
 ---
 # 4.3 Queries, queries, queries...  and churn analysis
 

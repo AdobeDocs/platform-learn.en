@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
-exl-id: 0482ffb7-ee4a-475a-9b6c-cf1ec4b594df
 ---
 # 8.1 Data Exploration and Transformation
 

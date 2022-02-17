@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
-exl-id: 4f1d615b-92bb-4675-8b3c-4b3a0ca69797
 ---
 # 15. Data Science Workspace - Car Insurance Sales Propensity
 

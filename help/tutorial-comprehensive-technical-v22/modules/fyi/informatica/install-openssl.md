@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: c2042aaa-988f-45a7-9d6a-e7a72839f9e3
 ---
 
 # Install OpenSSL for Windows

@@ -5,7 +5,6 @@ kt: 5342
 audience: Developer
 doc-type: tutorial
 activity: develop
-exl-id: 65810045-8328-46ad-ab11-e8f70c863305
 ---
 # 4. Voice Assistant - Amazon Alexa
 

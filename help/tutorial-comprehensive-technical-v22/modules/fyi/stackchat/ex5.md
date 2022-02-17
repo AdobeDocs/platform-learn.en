@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: f9616fe6-c64f-4093-a3ec-d2333268b2c8
 ---
 # 20.5 Configure the integration between Stackchat and Adobe Experience Platform
 

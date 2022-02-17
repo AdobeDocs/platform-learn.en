@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 5afd987b-ccf8-414d-98aa-a485d6130c2e
 ---
 # 2.3 Configure Datasets
 

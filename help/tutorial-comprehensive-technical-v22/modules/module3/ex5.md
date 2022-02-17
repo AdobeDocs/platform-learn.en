@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 3f537efd-7281-4c0c-b809-97f266a2a337
 ---
 # 3.5 Create a segment - API
 

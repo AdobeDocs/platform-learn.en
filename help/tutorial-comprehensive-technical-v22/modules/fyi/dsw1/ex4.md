@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
-exl-id: 0283863b-95cb-48f4-93b0-0e4853322dec
 ---
 # 8.4 Scoring and Consumption of Insights
 
