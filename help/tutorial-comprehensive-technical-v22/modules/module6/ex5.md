@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 7883cfa9-0119-47c2-a300-3ff0f741191a
 ---
 # 6.5 Take Action: send your segment to Adobe Target
 

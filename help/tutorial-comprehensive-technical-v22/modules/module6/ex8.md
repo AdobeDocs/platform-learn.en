@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 9585f858-569b-421e-a21d-aa623cd6c819
 ---
 # 6.8 Destinations SDK
 

@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: ccba6d34-a407-4ad2-9b35-d5cb22eeb26e
 ---
 # 5. Extract, Transform, Load data using a 3rd party ETL-tool
 

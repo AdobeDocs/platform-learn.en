@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 078b1751-505f-4877-b557-c3d52c18a4df
 ---
 # 17.4 Update a contact in Microsoft Dynamics 365 and automatically trigger a journey
 

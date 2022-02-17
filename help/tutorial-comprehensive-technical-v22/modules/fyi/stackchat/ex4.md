@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 35290ae9-d6a7-4dad-8d73-59058778a89f
 ---
 # 20.4 Use Journey Orchestration to trigger an email follow up after interacting with your chatbot
 

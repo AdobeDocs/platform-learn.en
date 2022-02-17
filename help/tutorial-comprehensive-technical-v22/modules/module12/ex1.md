@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 94d696b7-292d-48c6-951b-4bcac83af4ba
 ---
 # 12.1 Create your Google Cloud Platform Account
 

@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 367ad179-d9e8-4e68-84c6-d4badd47eceb
 ---
 # 5.1 Create and configure your Informatica account
 

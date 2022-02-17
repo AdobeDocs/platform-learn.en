@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 9031d318-18c9-4738-adc6-731d2da95232
 ---
 # 13.3 Create a Streaming Segment
 

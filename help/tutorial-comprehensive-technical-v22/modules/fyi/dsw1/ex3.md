@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
-exl-id: 38dc47f1-67c8-4c81-9f2f-e57c2d5f3cf9
 ---
 # 8.3 Model Training and Experimentation
 

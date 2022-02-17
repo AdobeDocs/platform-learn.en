@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 7fde17de-f9e0-4882-9617-3b532296c8ea
 ---
 # 19.4 Setup your ServiceNow UI
 

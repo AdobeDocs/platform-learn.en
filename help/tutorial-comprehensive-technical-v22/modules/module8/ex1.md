@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: b08a065d-c9a3-4f66-9386-4cf62eafc6c4
 ---
 # 8.1 Define an event
 

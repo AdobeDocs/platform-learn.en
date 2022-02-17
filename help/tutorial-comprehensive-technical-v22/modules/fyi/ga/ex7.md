@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: a5f9597a-2c4c-452b-a71c-76b2f3c403e1
 ---
 # 9.7 Implement Google Tag Manager Tag on Platform Demo website
 

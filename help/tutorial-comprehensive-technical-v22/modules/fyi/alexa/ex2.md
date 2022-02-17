@@ -5,7 +5,6 @@ kt: 5342
 audience: Application Developer
 doc-type: tutorial
 activity: develop
-exl-id: 90e616f7-fd4e-452e-8664-9cc33a4d954a
 ---
 # 4.2 Define your Alexa skill
 

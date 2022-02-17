@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 96a5ab1f-0ebb-469b-99c0-8efb4ea012e2
 ---
 # 9.3 Configure Google Tag Manager Variables
 

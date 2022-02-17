@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: c29befaf-8ffe-4b8a-863e-643b741b77c4
 ---
 # 19.2 Install and configure the integration between ServiceNow and Adobe Experience Platform through Adobe I/O
 

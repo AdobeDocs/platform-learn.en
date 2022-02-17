@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
-exl-id: bc6d277f-2292-4e16-b6ac-780611719933
 ---
 # 15.1 Introduction to MUTUAL365
 

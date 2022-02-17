@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 93d9f4ef-9cbd-4310-879e-d69106b70404
 ---
 # 2.5 Data Landing Zone
 
