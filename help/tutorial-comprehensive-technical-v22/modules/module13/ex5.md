@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 8c4dfe00-1350-4b67-8f91-0c9a891c1d12
 ---
 # 13.5 Create your Microsoft Azure Project
 

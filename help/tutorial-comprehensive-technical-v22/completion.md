@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, Data Scientist, Orchestration Engineer, BI Expert, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: d2bd01fb-bff0-439e-88b6-9b2149983ab7
 ---
 # Comprehensive Technical Tutorial for Adobe Experience Platform - How is Completion Measured?
 

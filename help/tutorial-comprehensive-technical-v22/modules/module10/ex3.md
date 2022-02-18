@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: e52537c1-9909-49f2-9aeb-7701acfe95c4
 ---
 # 10.3 Configure a trigger-based journey - Order Confirmation
 

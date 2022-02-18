@@ -1,10 +1,11 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub 
+title: Segment Activation to Microsoft Azure Event Hub
 description: Segment Activation to Microsoft Azure Event Hub
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 1fe8a3c9-1718-4168-83bd-6b54102c3b7b
 ---
 # 13. Real-Time CDP: Segment Activation to Microsoft Azure Event Hub
 

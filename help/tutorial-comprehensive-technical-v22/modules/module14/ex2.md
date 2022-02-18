@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: bfae4690-d75b-4ee7-936b-578198b2cabb
 ---
 # 14.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property
 

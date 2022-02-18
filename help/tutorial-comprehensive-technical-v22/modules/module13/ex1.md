@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: f826ba3d-bea3-4595-94eb-02959fa37243
 ---
 # 13.1 Configure your Microsoft Azure EventHub environment
 

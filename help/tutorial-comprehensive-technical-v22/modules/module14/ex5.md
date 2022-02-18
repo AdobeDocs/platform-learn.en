@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: ae04160d-580a-4d1e-a951-cf7e655fedff
 ---
 # 14.5 Create and configure a Microsoft Azure Function
 

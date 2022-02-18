@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: a6a5d752-ffc5-4b18-8401-003a3e7f6781
 ---
 # 10.2 Configure a trigger-based journey - Account Creation
 
