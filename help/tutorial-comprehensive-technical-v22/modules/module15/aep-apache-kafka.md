@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: b2f8db00-3392-457b-a310-fb1cf17c5c22
 ---
 # 15. Stream data from Apache Kafka into Adobe Experience Platform
 

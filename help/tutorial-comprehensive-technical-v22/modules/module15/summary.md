@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: f22f507f-0c0e-4ac0-ac7a-50f3ac83f385
 ---
 # Summary & benefits
 

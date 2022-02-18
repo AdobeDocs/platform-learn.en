@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 1cecc7ce-e7d7-4f6c-8b7c-83aceeb670ef
 ---
 # Summary & benefits
 

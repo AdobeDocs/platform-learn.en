@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: a58536ff-a098-4c7f-8d7a-be9512ec082b
 ---
 # 9.2 Configure your Offers and Decision
 
