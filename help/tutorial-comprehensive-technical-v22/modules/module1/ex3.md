@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 16d97ec0-9ad9-41c6-b1a1-a0e688aa95df
 ---
 # 1.3 - Introduction to Adobe Experience Platform Data Collection
 

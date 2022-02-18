@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: a02647ee-fe0d-4079-a02f-6a32c3838e37
 ---
 # 4.0 Prerequisites
 

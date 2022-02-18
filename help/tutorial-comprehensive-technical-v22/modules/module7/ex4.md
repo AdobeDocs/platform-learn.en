@@ -5,6 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: d3ceb676-d7f5-4f52-85a4-deaa5ef24034
 ---
 # 7.4 Update your Data Collection property and test your Journey
 

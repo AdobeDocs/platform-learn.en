@@ -17,8 +17,4 @@ Adobe Experience Platform allows you to use Structured Query Language (SQL) in D
 >
 > This video is part of a course, [Getting Started with Data Science Workspace for Data Scientists](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw), available for free on Experience League!
 
-## Additional Resources
-
-* [JupyterLab data access guide](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/access-notebook-data.html)
-* [Query Service in Data Science Workspace](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/query-service.html)
-* [Query Service overview](https://experienceleague.adobe.com/docs/experience-platform/query/home.html)
+For more information, please visit the [Query Service in Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/jupyterlab/query-service.html).

@@ -1,7 +1,7 @@
 ---
 title: Implement the Experience Cloud in Websites with Tags
 description: Implement the Experience Cloud in Websites with Tags is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
-recommendations: disable
+recommendations: catalog, noDisplay
 exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 ---
 # Overview
@@ -9,6 +9,11 @@ exl-id: 1b95f0b2-3062-49d1-9b0b-e6824a54008f
 _Implement the Experience Cloud in Websites with Tags_ is the perfect starting point for front-end developers or technical marketers who want to learn how to implement the Adobe Experience Cloud solutions on their website.
 
 Each lesson contains how-to exercises and foundational information to help you implement the Experience Cloud and understand its value.  Demo sites are provided for you to complete the tutorial, so you can learn the underlying techniques in a safe environment. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through tags on your own website.
+
+>[!INFO]
+>
+>This tutorial uses application-specific extensions and libraries (AppMeasurement.js for Adobe Analytics, at.js for Adobe Target). If you are looking to implement Adobe Experience Platform Web SDK, please see the [Implement Adobe Experience Cloud with Web SDK](/help/tutorial-web-sdk/overview.md) tutorial.
+
 
 After completing this you will be able to:
 
@@ -40,6 +45,7 @@ After completing this you will be able to:
 >
 >Similar multi-solution tutorials are also available for the following platforms:
 >
+>* [Implement Adobe Experience Cloud with Web SDK](/help/tutorial-web-sdk/overview.md)
 >* [Implement the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
 >* [Implement the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
 >* [Implement the Experience Cloud in Mobile Android™ Applications](/help/tutorial-mobile-android-implementation/overview.md)

@@ -17,6 +17,4 @@ This video shows how to create datasets and ingest data in the Adobe Experience 
 >
 > This video is part of a course [Getting Started with Adobe Experience Platform for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.2), available for free on Experience League!
 
-## Additional Resources
-
-* [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html)
+For more information, please visit the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html).

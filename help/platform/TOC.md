@@ -77,6 +77,7 @@ doc-type: video
   + [Configure the Marketo destination](/help/platform/destinations/configure-the-marketo-destination.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
+  + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
@@ -176,9 +177,11 @@ doc-type: video
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
   + [Orchestrate campaigns with Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+  + [Next-hit personalization with Adobe Target](/help/platform/experience-cloud/next-hit-personalization.md)
 + Industry Trends {#industry}
   + [The Future of Data Management and the Changing Environment](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
   + [A Tale of Two Perceptions - Brands vs. Consumers](/help/platform/industry/brands-vs-consumers.md)
   + [Evolving Your Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
   + [Building better experiences with customer profiles](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
   + [Data Collaboration in the First-party Data Context](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
+  + [Translate](translate.md)

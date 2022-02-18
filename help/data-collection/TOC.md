@@ -18,6 +18,7 @@ doc-type: video
   + [Build rules](tags/build-rules.md)
   + [Build and publish a library](tags/build-and-publish-a-library.md)
   + [Users and permissions](tags/users-and-permissions.md)
+  + [Implement Web SDK with tags](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
   + [Implement in Websites](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
   + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-swift-apps/overview.html){target="_blank"}
   + [Implement in iOS Objective-C Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-objective-c-apps/overview.html){target="_blank"}
@@ -25,6 +26,7 @@ doc-type: video
 + Web SDK{#web-sdk}
   + [Overview](web-sdk/overview.md)
   + [Demo](web-sdk/demo.md)
+  + [End-to-end-tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
   + Consent{#consent}
     + [Overview](web-sdk/consent/overview.md)
     + [Set consent values using the Adobe standard](web-sdk/consent/set-consent-adobe.md)

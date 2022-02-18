@@ -17,8 +17,4 @@ Learn about some of the different methods used to analyze the performance of a m
 >
 > This video is part of a course, [Getting Started with Data Science Workspace for Data Scientists](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw), available for free on Experience League!
 
-
-## Additional Resources
-
-* [Recipes, models, and services overview](recipes-models-services-overview.md)
-* [Data Science Workspace documentation](https://www.adobe.com/go/data-science-overview-en)
+For more information, please visit the [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).

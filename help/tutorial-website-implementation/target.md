@@ -43,19 +43,47 @@ This has already been done on the Luma site, but let's go ahead and do this on t
 
 ```html
 <script>
-    //prehiding snippet for Adobe Target with asynchronous tags deployment
-    (function(g,b,d,f){(function(a,c,d){if(a){var e=b.createElement("style");e.id=c;e.innerHTML=d;a.appendChild(e)}})(b.getElementsByTagName("head")[0],"at-body-style",d);setTimeout(function(){var a=b.getElementsByTagName("head")[0];if(a){var c=b.getElementById("at-body-style");c&&a.removeChild(c)}},f)})(window,document,"body {opacity: 0 !important}",3E3);
+   //prehiding snippet for Adobe Target with asynchronous tags deployment
+   ;(function(win, doc, style, timeout) {
+   var STYLE_ID = 'at-body-style';
+   function getParent() {
+      return doc.getElementsByTagName('head')[0];
+   }
+   function addStyle(parent, id, def) {
+      if (!parent) {
+      return;
+      }
+      var style = doc.createElement('style');
+      style.id = id;
+      style.innerHTML = def;
+      parent.appendChild(style);
+   }
+   function removeStyle(parent, id) {
+      if (!parent) {
+      return;
+      }
+      var style = doc.getElementById(id);
+      if (!style) {
+      return;
+      }
+      parent.removeChild(style);
+   }
+   addStyle(getParent(), STYLE_ID, style);
+   setTimeout(function() {
+      removeStyle(getParent(), STYLE_ID);
+   }, timeout);
+   }(window, document, "body {opacity: 0 !important}", 3000));
 </script>
 ```
 
-Open the sample page and paste it just before your tag embed code as pictured below (don't worry if the line numbers are different):
+Open the sample page and paste it just before your tag embed code as pictured below (don't worry if the line numbers are different). In this screenshot the pre-hiding snippet has been minified:
 
    ![Hover over the extension](images/target-prehidingSnippet.png)
 
 Reload your sample page. You will notice that the page will be hidden for three seconds before it shown. This behavior is temporary and will go away after you have deployed Target. This pre-hiding behavior is controlled by two configurations at the very end of the snippet, which can be customized but are usually best left on the default settings:
 
 * `body {opacity: 0 !important}` specifies the css definition to use for the pre-hiding until Target loads. By default, the entire body will be hidden. If you have a consistent DOM structure with an easily identifiable container element wrapping all of the content below your navigation, for example, and you never wanted to test or personalize your navigation, you could use this setting to limit the pre-hiding to that container element.
-* `3E3` which specifies the timeout setting for the pre-hiding. By default, if Target hasn't loaded in three seconds the page will be shown. This should be extremely rare.
+* `3000` which specifies the timeout setting for the pre-hiding. By default, if Target hasn't loaded in three seconds the page will be shown. This should be extremely rare.
 
 For more details and to obtain the un-minified pre-hiding snippet, please see [the Adobe Target extension with an asynchronous deployment​](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/target/overview.html#adobe-target-extension-with-an-asynchronous-deployment).
 

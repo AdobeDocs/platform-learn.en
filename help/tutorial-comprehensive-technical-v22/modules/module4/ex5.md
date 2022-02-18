@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
+exl-id: 0f9e6719-056b-4858-8c86-04b3beaa950e
 ---
 # 4.5 Query Service and Power BI
 

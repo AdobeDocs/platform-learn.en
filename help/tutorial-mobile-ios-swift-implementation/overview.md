@@ -1,7 +1,7 @@
 ---
 title: Implement the Experience Cloud in Mobile iOS Swift Applications
 description: Implement the Experience Cloud in Mobile iOS Swift Applications is the perfect starting point for mobile app developers who want to learn how to implement the Adobe Experience Cloud solutions in their mobile iOS Swift apps.
-recommendations: disable
+recommendations: catalog, noDisplay
 exl-id: aa1a5d0a-abf2-47b5-a966-a9d96d096d61
 ---
 # Overview
@@ -38,6 +38,7 @@ After completing this tutorial, you will be able to:
 >
 >Similar multi-solution tutorials are also available for the following platforms:
 >
+>* [Implement Adobe Experience Cloud with Web SDK](/help/tutorial-web-sdk/overview.md)
 >* [Implement the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
 >* [Implement the Experience Cloud in Mobile Android&trade; Applications](/help/tutorial-mobile-android-implementation/overview.md)
 >* [Implement the Experience Cloud in websites](/help/tutorial-website-implementation/overview.md)

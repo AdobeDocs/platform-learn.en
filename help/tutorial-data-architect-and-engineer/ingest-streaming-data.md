@@ -446,6 +446,7 @@ To validate that the CRM Id is now being sent by the Web SDK:
 
 ## Additional Resources
 
+* [Implement Adobe Experience Cloud with Web SDK](/help/tutorial-web-sdk/overview.md)
 * [Streaming Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
 * [Streaming Ingestion API reference](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
 

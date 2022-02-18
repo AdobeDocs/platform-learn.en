@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 6f7c540f-3804-483d-90f9-b26b4a252b8b
 ---
 # 1.2 Edge Network, Datastreams and Server Side Data Collection
 
