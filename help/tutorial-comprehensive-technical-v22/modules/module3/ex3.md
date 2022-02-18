@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: eecc2ff7-c5f9-45c9-b06b-3aa523543a54
 ---
 # 3.3 Visualize your own real-time customer profile - API
 

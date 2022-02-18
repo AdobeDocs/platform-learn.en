@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: 11525d05-1c19-4d41-8f47-4feb3e8aed66
 ---
 # 4.4 Generate a dataset from a query
 

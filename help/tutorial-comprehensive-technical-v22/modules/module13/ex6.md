@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: a05d5a66-8efc-4230-804d-f879d8863dce
 ---
 # 13.6 End-to-end scenario
 

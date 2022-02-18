@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 63f95306-4ca9-4feb-bf15-c70b89b64507
 ---
 # 14.4 Create and configure a Google Cloud Function
 

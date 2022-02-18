@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 8e17129c-633d-45bd-aa70-78cc3d3a2108
 ---
 # 1.7 XDM Schema requirements in Adobe Experience Platform
 
