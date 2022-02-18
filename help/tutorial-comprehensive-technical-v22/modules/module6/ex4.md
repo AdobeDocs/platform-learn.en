@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 5c205895-27a2-4c7d-ab08-0798d028866d
+exl-id: 5b0bcd69-7131-48a3-bd3e-773ba95cc42b
 ---
 # 6.4 Take Action: send your segment to an S3-destination
 
@@ -17,7 +17,7 @@ In this module, you'll configure such a destination by making use of an AWS S3 b
 
 ## 6.4.1 Create your S3 bucket
 
-Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you created in Module 5.
+Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you previously created.
 
 ![ETL](./images/awshome.png)
 
@@ -25,11 +25,9 @@ After logging in, you'll be redirected to the **AWS Management Console**.
 
 ![ETL](./images/awsconsole.png)
 
-In the **Find Services** menu, search for **s3**.
+In the **Find Services** menu, search for **s3**. Click the first search result: **S3 - Scalable Storage in the Cloud**.
 
 ![ETL](./images/awsconsoles3.png)
-
-Click the first search result: **S3 - Scalable Storage in the Cloud**.
 
 You'll then see the **Amazon S3** homepage. Click **Create Bucket**.
 
@@ -37,7 +35,7 @@ You'll then see the **Amazon S3** homepage. Click **Create Bucket**.
 
 In the **Create Bucket** screen, you need to configure two things:
   
-- Name: use the name **aepmodule11LDAP** and replace LDAP by your LDAP. As an example, in this exercise the bucket name is **aepmodule11vangeluw**
+- Name: use the name `aepmodulertcdp--demoProfileLdap--`. As an example, in this exercise the bucket name is **aepmodule11vangeluw**
 - Region: use the region **EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -68,7 +66,7 @@ In the left menu, click **Users**. You'll then see the **Users** screen. Click *
 
 Next, configure your user:
 
-- User Name: use `s3_ldap_module11` as a name, so in this example the name is `s3_vangeluw_module11`.
+- User Name: use `s3_--demoProfileLdap--_rtcdp` as a name, so in this example the name is `s3_vangeluw_rtcdp`.
 - AWS access type: select **Access key - Programmatic access**.
 
 Click **Next: Permissions**.
@@ -116,29 +114,23 @@ You've now successfully created an AWS S3 bucket and you've created a user with 
 
 ## 6.4.3 Configure Destination in Adobe Experience Platform
 
-Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-After logging in, you'll land on the homepage of Adobe Experience Platform.
+![Data Ingestion](../module2/images/home.png)
 
-![Data Ingestion](./images/home.png)
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
-
-![Data Ingestion](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
+![Data Ingestion](../module2/images/sb1.png)
 
 In the left menu, go to **Destinations**, then go to **Catalog**. You'll then see the **Destinations Catalog**.
 
 ![RTCDP](./images/rtcdpmenudest.png)
 
-Click **Cloud Storage**, then click the **Activate Segments** button on the **Amazon S3** card.
+Click **Cloud Storage**, then click the **Set up** button (or on **Activate Segments**, depending on your environment) on the **Amazon S3** card.
 
 ![RTCDP](./images/rtcdp2.png)
 
-Next, click **+ Configure new destination**.
+Depending on your environment, you might have to click **+ Configure new destination** to start creating your destination.
 
 ![RTCDP](./images/rtcdp2a.png)
 
@@ -162,32 +154,24 @@ As a naming convention, please use the following:
 
 | Access Key ID             | Secret Access Key             |
 |:-----------------------:| :-----------------------:|
-| Name |AWS - S3 - ldap, replace **ldap** with your ldap.|
-| Description |AWS - S3 - ldap, replace **ldap** with your ldap.|
-| Bucket Name |aepmodule11ldap|
+| Name |`AWS - S3 - --demoProfileLdap--`|
+| Description |`AWS - S3 - --demoProfileLdap--`|
+| Bucket Name |`aepmodulertcdp--demoProfileLdap--`|
 | Folder Path |/|
 
 Click **Next**.
 
 ![RTCDP](./images/rtcdpsfs3connect2.png)
 
-You can now optionally attach a Data Governance Policy to your new destination. Click **Create**.
+You can now optionally attach a Data Governance Policy to your new destination. Click **Next**.
 
 ![RTCDP](./images/rtcdpsfs3connect2gov.png)
-
-Your destination is now created and you'll see it in the list of available destinations.
-
-![RTCDP](./images/rtcdpsfs3connect2created.png)
-
-After creating the destination, you can select segments to send to your AWS S3 destination. First, select your destination and then click **Next**.
-
-![RTCDP](./images/rtcdpsfs3connect2created1.png)
 
 In the list of segments, search for the segment you created in exercise 1 and select it. Click **Next**.
 
 ![RTCDP](./images/s3a.png)
 
-You'll then see this. Click **Create Schedule**.
+You'll then see this. If you wish, you can edit the schedule by clicking the **pencil** icon. **Create Schedule**.
 
 ![RTCDP](./images/s3bb.png)
 

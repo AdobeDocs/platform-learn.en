@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer
 doc-type: tutorial
 activity: develop
-exl-id: 25a16d70-1ff7-48e5-85b9-764e2bfc032a
+exl-id: 1ac4bb23-007a-4a6a-809a-581405293f70
 ---
 # 7. Adobe Journey Optimizer: Orchestration
 
@@ -55,7 +55,7 @@ In this exercise, you'll learn how to configure an email message.
 
 In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
 
-[7.4 Update your Configuration ID and Test your Journey](./ex4.md)
+[7.4 Update your Data Collection property and test your Journey](./ex4.md)
 
 This will guide you through the configuration of Launch to trigger your event and provide the right payload and finally, you'll be able to send yourself an email.
 

@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: b0069db8-f0d0-4782-8f67-41d51ffc37ee
 ---
 # 9.1 Create a Google Tag Manager Property
 

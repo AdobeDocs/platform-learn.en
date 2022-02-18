@@ -1,5 +1,5 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub 
+title: Segment Activation to Microsoft Azure Event Hub
 description: Segment Activation to Microsoft Azure Event Hub
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst

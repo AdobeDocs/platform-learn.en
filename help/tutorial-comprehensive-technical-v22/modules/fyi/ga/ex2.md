@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 5fb87cab-b7b3-4945-8dd0-9d85b6a99979
 ---
 # 9.2 Setup Google Analytics & link it to GTM
 

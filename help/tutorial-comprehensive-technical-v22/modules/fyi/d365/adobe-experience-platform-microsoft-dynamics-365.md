@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: a83f6a0a-287c-4415-af8e-1743f8cf89c0
 ---
 # 17. Adobe Experience Platform and Microsoft Dynamics 365
 

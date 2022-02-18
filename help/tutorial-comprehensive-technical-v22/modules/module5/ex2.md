@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: be2a154e-c5ef-46be-b3f7-1da37bd5821b
+exl-id: d9377c97-efed-427a-a063-aa9c6bd1a78a
 ---
 # 5.2 Customer AI - Create a New Instance (Configure)
 
@@ -27,11 +27,9 @@ You'll then see this.
 
 Enter the required details for the Customer AI instance:
 
-- Name: use **[!UICONTROL ldap Product Purchase Propensity]** and replace ldap by your ldap
+- Name: use `--demoProfileLdap-- Product Purchase Propensity`
 - Description: use: **Predict the likelihood for customers to purchase a product**
 - Propensity type: select **Conversion**
-- Data source: select **Custom**, and then select the dataset you created in the previous exercise, which is named **[!UICONTROL ldap - Demo System - Customer Experience Event Dataset]**
-- Eligible population: this is optional and not needed for this exercise
 
 ![Setup page 1](./images/setuppage1.png)
 
@@ -39,7 +37,7 @@ Click **Next**.
 
 ![Setup page 1](./images/next.png)
 
-You'll then see this.
+You'll then see this. Select the dataset you created in the previous exercise which is named `--demoProfileLdap - Demo System - Customer Experience Event Dataset`. Click **Next**.
 
 ![Setup page 1](./images/custai2.png)
 
@@ -51,7 +49,7 @@ Click **Next**.
 
 ![Setup page 1](./images/next.png)
 
-Next, set your schedule to run **Weekly** and set the time as close as possible to your current time.
+Next, set your schedule to run **Weekly** and set the time as close as possible to your current time. Ensure that the toggle **Enable scores for Profile** is enabled.
 
 ![Define CAI advance](./images/caiadvancepage.png)
 

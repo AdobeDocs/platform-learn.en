@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 79835a2d-13e7-4398-a28d-bbde5c8c5d39
 ---
 # 19.7 End-to-end Demo
 

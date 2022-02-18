@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: aea330a1-78bc-455a-82d4-408c5a4373c9
+exl-id: 60996e70-b033-4932-b614-b37014232f6e
 ---
 # 5.1 Customer AI - Data Preparation (Ingest)
 
@@ -16,19 +16,15 @@ Specifically, all datasets that are used in Intelligent Services must conform to
 
 In this exercise, you'll create a schema that contains the **Consumer Experience Event mixin**, which is required by the **Customer AI** Intelligent Service.
 
-Log in to [Adobe Experience Platform](https://experience.adobe.com/).
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Platform Home page](./images/home.png)
+![Data Ingestion](../module2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module10sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module10sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-![Platform Home - Sandbox listing](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Platform Home page - Sandbox](./images/sb2.png)
+![Data Ingestion](../module2/images/sb1.png)
 
 From the left menu, click **Schemas** and go to **Browse**. Click **Create Schema**.
 
@@ -42,20 +38,6 @@ You'll then see this.
 
 ![Create new schema](./images/xdmee1.png)
 
-Let's first name your schema.
-
-As the name for our schema, we'll use this:
-
-- **[!UICONTROL ldap - Demo System - Customer Experience Event]**
-
-Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
-
-- **[!UICONTROL vangeluw - Demo System - Customer Experience Event]**
-
-That should give you something like this. Click the **+ Add** button to add new **Mixins**.
-
-![Create new schema](./images/xdmee2.png)
-
 Search and select the following **Mixins** to add to this Schema:
 
 - Consumer Experience Event
@@ -66,7 +48,7 @@ Search and select the following **Mixins** to add to this Schema:
 
   ![New CEE schema](./images/identitymap.png)
 
-Click **Add Mixin**.
+Click **Add Field Groups**.
 
 ![Identity key defn](./images/addmixin.png)
 
@@ -82,17 +64,27 @@ In the right menu for the field **endUserIDs._experience.emailid.id**, scroll do
 
 ![Create new schema](./images/eui3.png)
 
-Navigate to the field **endUserIDs._experience.mcid.id**. Check the checkbox for **Identity** and select the **Identity namespace** of **ECID**. Click **Apply** followed by clicking **Save**.
+Navigate to the field **endUserIDs._experience.mcid.id**. Check the checkbox for **Identity** and select the **Identity namespace** of **ECID**. Click **Apply**.
 
 ![Create new schema](./images/eui4.png)
 
-Select the name of your schema.
+Give your schema a name now.
+
+As the name for our schema, you'll use this:
+
+- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+
+As an example, for ldap **vangeluw**, this should be the name of the schema:
+
+- **vangeluw - Demo System - Customer Experience Event**
+
+That should give you something like this. Click the **+ Add** button to add new **Mixins**.
+
+![Create new schema](./images/xdmee2.png)
+
+Select the name of your schema. You should now enable your schema for **Profile**, by clicking the **Profile** toggle.
 
 ![Create new schema](./images/xdmee3.png)
-
-You should now enable your schema for **Profile**, by clicking the **Profile** toggle.
-
-![Enable Profile mapping](./images/enableprofilemapping.png)
 
 You'll then see this. Click **Enable**.
 
@@ -116,7 +108,7 @@ In the next screen, select the dataset you created in the previous exercise, whi
 
 ![Dataset](./images/createds1.png)
 
-As a name for your dataset, use **[!UICONTROL ldap - Demo System - Customer Experience Event Dataset]** and replace **[!UICONTROL ldap]** by your specific ldap. Click **Finish**.
+As a name for your dataset, use `--demoProfileLdap-- - Demo System - Customer Experience Event Dataset`. Click **Finish**.
 
 ![Dataset](./images/createds2.png)
 
@@ -164,7 +156,7 @@ In the popup, select the file **retail-v1.json** and click **Open**.
 
 ![Dataset](./images/ingest3.png)
 
-You'll then see the data being imported, and a new batch is created in the **Loading** state.
+You'll then see the data being imported, and a new batch is created in the **Loading** state. Don't navigate away from this page until the file is uploaded.
 
 ![Dataset](./images/ingest4.png)
 

@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 9d284ba0-6821-4065-a24b-50962397d86f
 ---
 # 19. Adobe Experience Platform and ServiceNow: connecting service to marketing and sales
 

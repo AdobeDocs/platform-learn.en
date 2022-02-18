@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
-exl-id: 7adc9328-f41f-47c6-b489-5ba0e83acb68
 ---
 # 15.5 Publish your Recipe as a Scheduled Service
 

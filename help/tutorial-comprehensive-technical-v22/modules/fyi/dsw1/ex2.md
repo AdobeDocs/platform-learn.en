@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
-exl-id: 76610762-4249-4280-a6c4-9811de9366ac
 ---
 # 8.2 Model Authoring and Operationalization
 

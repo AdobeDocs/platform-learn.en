@@ -5,7 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: b86fd37a-8e66-4b7d-b5b8-0138fdcec61b
+exl-id: 2b7333c3-5b6a-41c5-a7a7-b048d1579ddd
 ---
 # 7.2 Create your email message
 
@@ -15,17 +15,9 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
 ![ACOP](./images/acoptriglp.png)
-
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
-
-![ACOP](./images/sb.png)
-
-You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
-
-![ACOP](./images/home.png)
 
 In the left menu, click **Messages**. 
 
@@ -33,11 +25,9 @@ On the Messages screen, you’ll see a view similar to this. Click **Create Mess
 
 ![Journey Optimizer](./images/msg1.png)
 
-Give your Message a title following this naming convention **ldap - Registration Email** and replace **ldap** by your own ldap, select the **CJM Alpha Preset** and enable the **Email** channel. 
+Give your Message a title following this naming convention `--demoProfileLdap-- - Registration Email` and select the **Email Preset** and enable the **Email** channel. Click on the **Create** button to create your Registration Email message.
 
 ![Journey Optimizer](./images/msg2.png)
-
-Click on the **Create** button to create your Registration Email message.
 
 The next screen is the message dashboard, from there you will be able to see the email thumbnail when the content will be provided.
 
@@ -117,63 +107,33 @@ Next, let's use Content Components to add content inside these blocks. Click on 
 
 ![Journey Optimizer](./images/msg18.png)
 
-Drag and drop an **HTML** component in the first cell on the first row. 
+Drag and drop an **Image** component in the first cell on the first row. Click **Browse**.
 
 ![Journey Optimizer](./images/msg19.png)
 
-Click the HTML component and then click **Show the source code**.
-
-![Journey Optimizer](./images/msg20.png)
-
-You'll then see this:
+You'll then see this. Navigate to the folder **enablement-assets** and select the file **luma-logo.png**. Click **Select**.
 
 ![Journey Optimizer](./images/msg21.png)
-
-Paste this code there: `<img src="{%=  %}" width="100px%">`.
-
-![Journey Optimizer](./images/msg22.png)
-
-Then put the cursor, as indicated in the screenshot:
-
-![Journey Optimizer](./images/msg23.png)
-
-Next, navigate to the field `--aepTenantId--.demoEnvironment.brandLogo`. Click the **+** icon to insert the personalization token. Next, click **Save**.
-
-![Journey Optimizer](./images/msg24.png)
-
-You've now configured this HTML component to dynamically take the image URL from a field within Adobe Experience Platform's Real-time Customer Profile.
 
 You're now back here:
 
 ![Journey Optimizer](./images/msg25.png)
 
-Go to **Content Components** and drag and drop an **Image** component in the first cell on the first row. 
+Go to **Content Components** and drag and drop an **Image** component in the first cell on the first row. Click **Browse**.
 
 ![Journey Optimizer](./images/msg26.png)
 
-Click **Browse**.
-
-![Journey Optimizer](./images/msg27.png)
-
-In the **Assets** pop-up, double-click the **module-23** folder. In this folder, you'll find all assets previously prepared and uploaded by the creative team.
+In the **Assets** pop-up, go to the **enablement-assets** folder. In this folder, you'll find all assets previously prepared and uploaded by the creative team. Select **module23-thankyou-new.png** and click **Select**. 
 
 ![Journey Optimizer](./images/msg28.png)
-
-Select **module23-thankyou-new.png** and click **Select**. 
-
-![Journey Optimizer](./images/msg29.png)
 
 You'll then have this:
 
 ![Journey Optimizer](./images/msg30.png)
 
-Select your image and in the right menu, scroll down until you see the **Size** width slider component.
+Select your image and in the right menu, scroll down until you see the **Size** width slider component. Use the slider to change the width to f.i. **60%**.
 
 ![Journey Optimizer](./images/msg31.png)
-
-Use the slider to change the width to f.i. **60%**.
-
-![Journey Optimizer](./images/msg32.png)
 
 Next, go to **Content Components** and drag and drop a **Text** component in the structure component on the fourth row. 
 
@@ -197,57 +157,9 @@ You'll now notice how the personalization field has been added to your text.
 
 ![Journey Optimizer](./images/msg37.png)
 
-In the same text field, hit **Enter** twice to add two lines and write **Thank you for signing up for**.
+In the same text field, hit **Enter** twice to add two lines and write **Thank you for creating your account with Luma!**.
 
 ![Journey Optimizer](./images/msg38.png)
-
-Click **Add personalization** again.
-
-![Journey Optimizer](./images/msg39.png)
-
-Next, you need to bring in the **Brand Name** personalization token which is stored under `--aepTenantId--.demoEnvironment.brandName`. In the left hand-side list find the `--aepTenantId--` element and click on the arrow to go a level deeper.
-
-![Journey Optimizer](./images/msg40.png)
-
-Next, find the **demoEnvironment** element and click the arrow to go a level deeper.
-
-![Journey Optimizer](./images/msg41.png)
-
-Finally, find the field **brandName** and click on the **+** sign next to it. You'll then see the personalization token appear in the text field. Click **Save**.
-
-![Journey Optimizer](./images/msg42.png)
-
-You'll now notice how the personalization field has been added to your text. 
-
-![Journey Optimizer](./images/msg43.png)
-
-In the left menu, go back to **Structure Components**.
-
-Drag and drop a **1:1 column** underneath the previous component. This will be the banner block.
-
-![Journey Optimizer](./images/msg44.png)
-
-Next, go to **Content Components** and drag and drop a **Text** component in the fifth row.
-
-![Journey Optimizer](./images/msg45.png)
-
-Replace the default text by **Not interested anymore? Unsubscribe instantly.**
-
-![Journey Optimizer](./images/msg46.png)
-
-Now select the word **Unsubscribe** and click on the **Insert link** icon in the toolbar.
-
-![Journey Optimizer](./images/msg47.png)
-
-In the Link type dropdown select **Unsubscription link** and put the following url inside the Unsubscription page URL textfield **https://public.aepdemo.net/unsubscribe.html**. Click **Save**.
-
-![Journey Optimizer](./images/msg48.png)
-
-The registration confirmation email now has content. For deliverability (best practices around email sending to ensure they land in the recipient's mailbox instead of the Spam folder) purposes it is also important that this email has a text version.
-
-Click the **Plain text** button at the top of the Email Designer to see how Journey Optimizer has automatically synchronized the HTML with the text version, so you don't have to write the text one more time.
-
-![Journey Optimizer](./images/msg49.png)
 
 The final check to perform to ensure your email is ready is to preview it, click on the **Preview** button.
 
@@ -255,13 +167,9 @@ The final check to perform to ensure your email is ready is to preview it, click
 
 Start by identifying which profile you want to use for the preview. Select the **email** namespace by clicking on the icon next to **Enter identity namespace** field.
 
-![Journey Optimizer](./images/msg51.png)
+In the list of identity namespaces, select the **Email** namespace.
 
-In the list of identity namespaces, select the **Email** namespace. Click **Select**.
-
-![Journey Optimizer](./images/msg52.png)
-
-In the **Identity value** field, enter the email address of a previous demo profile that is already stored in the Real-time Customer Profile. For example **woutervangeluwe+31052021-10@gmail.com** and click on the **Find Test Profile** button
+In the **Identity value** field, enter the email address of a previous demo profile that is already stored in the Real-time Customer Profile. For example **woutervangeluwe+06022022-01@gmail.com** and click on the **Find Test Profile** button
 
 ![Journey Optimizer](./images/msg53.png)
 

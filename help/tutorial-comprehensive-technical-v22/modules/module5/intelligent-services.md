@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Scientist
 doc-type: tutorial
 activity: develop
-exl-id: f669c46d-55be-4a3c-ae5f-8f63a8faa9f5
+exl-id: 99b56722-95bf-4c51-b4d6-8b5a8e5fd936
 ---
 # 5. Intelligent Services
 

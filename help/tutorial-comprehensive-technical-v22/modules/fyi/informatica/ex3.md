@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 8c835657-dd84-4c2f-81d2-eec1f92cc033
 ---
 # 5.3 Connect Informatica to your AWS S3 bucket
 

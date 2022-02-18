@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: 6b24aba2-43dc-455e-a725-7fcf185469cf
+exl-id: 04209eb4-b054-4a2e-885e-61f601c3fc2c
 ---
 # 4.6 Query Service and Tableau
 

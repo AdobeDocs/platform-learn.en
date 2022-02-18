@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: ff5db388-6ae2-44ed-a30a-b5127e6cbd31
 ---
 # 17.2 Connect Dynamics to Adobe Experience Platform via RTCDP and Journey Orchestration
 

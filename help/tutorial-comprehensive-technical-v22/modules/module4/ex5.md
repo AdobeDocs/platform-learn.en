@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: 4581f786-a63a-4e12-9874-7966fbd6058a
+exl-id: 0f9e6719-056b-4858-8c86-04b3beaa950e
 ---
 # 4.5 Query Service and Power BI
 
@@ -35,7 +35,7 @@ From the **Credentials** page in Adobe Experience Platform, copy the **Host** an
 
 In the next dialog populate the User name and Password with your Username and Password found in the **Credentials** of Queries in Adobe Experience Platform.
 
-![query-service-credentials.png](./images/query-service-credentials1.png)
+![query-service-credentials.png](./images/query-service-credentials.png)
 
 In the Navigator dialog, put your **LDAP** in the search field (1) to locate your CTAS datasets and check the box next to each (2). Then click Load (3).
 

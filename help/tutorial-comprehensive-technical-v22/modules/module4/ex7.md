@@ -5,7 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 activity: develop
-exl-id: c03b3edb-fed9-4f68-9577-c52bbbb2ca54
+exl-id: 6f437bd3-b134-4509-8e32-ad6f7b70608e
 ---
 # 4.7 Query Service API
 
