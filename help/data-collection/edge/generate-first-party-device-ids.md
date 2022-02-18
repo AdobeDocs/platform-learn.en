@@ -12,7 +12,7 @@ Adobe Experience Cloud applications have traditionally generated cookies to stor
 1. First-party cookies set by an Adobe server using a domain name's CNAME configuration
 1. First-party cookies set by JavaScript
 
-Recent browser changes restrict the duration of these types of cookies. First-party cookies are most effective when they are set using a customer-owned server using a DNS A-record as opposed to a DNS CNAME. The first-party device ID (FPID) functionality allows customers implementing Adobe Experience Platform Web SDK to use device IDs in cookies from servers using DNS A-records. These IDs can then be sent to Adobe and used as seeds to generate Experience Cloud IDs (ECIDs), which will continue to be the primary identifier in Adobe Experience Cloud applications.
+Recent browser changes restrict the duration of these types of cookies. First-party cookies are most effective when they are set using a customer-owned server using a DNS A-record as opposed to a DNS CNAME. The first-party device ID (FPID) functionality allows customers implementing Adobe Experience Platform Web SDK to use device IDs in cookies from servers using DNS A-records. These IDs can then be sent to Adobe and used as seeds to generate Experience Cloud IDs (ECIDs), which remains the primary identifier in Adobe Experience Cloud applications.
 
 Here is a quick example of how the functionality works:
 
@@ -25,9 +25,9 @@ Here is a quick example of how the functionality works:
 1. Experience Platform Edge Network receives the FPID and uses it to generate an Experience Cloud ID (ECID).
 1. Platform Web SDK response sends the ECID back to the end-user's browser.
 1. Platform Web SDK uses JavaScript to store the ECID as the `AMCV_` cookie in the end-user's browser.
-1. In the event the `AMCV_` cookie expires, the process repeats itself. As long as the same first-party device ID is available, a new `AMCV_` cookie will be created with the same ECID value as before.
+1. In the event the `AMCV_` cookie expires, the process repeats itself. As long as the same first-party device ID is available, a new `AMCV_` cookie is created with the same ECID value as before.
 
-For this tutorial, a specific example using the PHP scripting language will be used to show how to: 
+For this tutorial, a specific example using the PHP scripting language is used to show how to: 
 
 * Generate a UUIDv4
 * Write UUIDv4 value to a cookie 
@@ -38,10 +38,10 @@ Further documentation related to first-party device IDs can be found in the prod
 
 ## Generate a UUIDv4
 
-PHP does not have a native library for UUID generation, so these code examples will be more extensive than what would likely be required if another programming language was used. PHP was chosen for this example because it is a widely supported server-side language. 
+PHP does not have a native library for UUID generation, so these code examples are more extensive than what would likely be required if another programming language was used. PHP was chosen for this example because it is a widely supported server-side language. 
 
 
-When the following function is called, it will generate a random UUID version-4:
+When the following function is called, it generates a random UUID version-4:
 
 ```
 <?php
@@ -97,7 +97,7 @@ The following code makes a request to the function above to generate a UUID. It 
 
 >[!NOTE]
 >
->The cookie which contains the first-party device ID does not need to be called `FPID` but can have any name. 
+>The cookie which contains the first-party device ID can have any name. 
 
 ## Include the Cookie Value in the Identity Map
 
@@ -127,14 +127,14 @@ The final step is to use PHP to echo the cookie value to the Identity Map.
 
 ## Validate ECID generation
 
-Validate the implementation by confirming that the same ECID will be generated from your first-party device ID:
+Validate the implementation by confirming that the same ECID is generated from your first-party device ID:
 
 1. Generate an FPID cookie.
 1. Send a request to Platform Edge Network using Platform Web SDK.
-1. A cookie with the format `AMCV_<IMSORGID@AdobeOrg>` will be generated. This cookie contains the ECID. 
+1. A cookie with the format `AMCV_<IMSORGID@AdobeOrg>` is generated. This cookie contains the ECID. 
 1. Make a note the cookie value that is generated and then delete all cookies for your site except the `FPID` cookie. 
 1. Send another request to Platform Edge Network.
-1. Confirm the value in the `AMCV_<IMSORGID@AdobeOrg>` cookie is the same `ECID` value as in the `AMCV_` cookie that was just deleted. If the cookie value is the same for a given FPID, you can assume the seeding process for the ECID was successful. 
+1. Confirm the value in the `AMCV_<IMSORGID@AdobeOrg>` cookie is the same `ECID` value as in the `AMCV_` cookie that was deleted. If the cookie value is the same for a given FPID, the seeding process for the ECID was successful. 
 
 <!--
 // how to pass with the tag extension
