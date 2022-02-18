@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 60996e70-b033-4932-b614-b37014232f6e
 ---
 # 5.1 Customer AI - Data Preparation (Ingest)
 

@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 86da7132-cb06-4be3-b6b8-ea3ab937e6dc
 ---
 # 1. Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension
 

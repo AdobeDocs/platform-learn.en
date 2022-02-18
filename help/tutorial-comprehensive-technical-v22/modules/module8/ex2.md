@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 0b46729e-cc3c-414f-b8bf-c25bb02da56e
 ---
 # 8.2 Define an external data source
 

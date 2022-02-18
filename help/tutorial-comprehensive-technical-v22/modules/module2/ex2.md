@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 40a50618-ecbb-4ada-b1ca-90bcb2257ed6
 ---
 # 2.2 Configure Schemas and Set Identifiers
 

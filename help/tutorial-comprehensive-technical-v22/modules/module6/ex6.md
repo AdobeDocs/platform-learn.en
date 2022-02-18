@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 9ce1aaf9-d321-4d57-8879-ef5a5db14f15
 ---
 # 6.6 Segment Match
 

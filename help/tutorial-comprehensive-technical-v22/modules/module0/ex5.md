@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 8f5e6d82-e375-4264-8eef-9ea2bdf1bd22
 ---
 # 0.5 Use the mobile app
 

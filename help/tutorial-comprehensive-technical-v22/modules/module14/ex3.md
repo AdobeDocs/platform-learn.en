@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 294e6557-9243-4486-a5d5-e77beb46703c
 ---
 # 14.3 Create and configure a custom webhook
 

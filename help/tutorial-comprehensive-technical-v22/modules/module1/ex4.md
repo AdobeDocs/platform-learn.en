@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: c4ebca8d-93e0-4056-8553-c0d7e342beca
 ---
 # 1.4 Client-side Web Data Collection
 

@@ -5,7 +5,6 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: 2b7333c3-5b6a-41c5-a7a7-b048d1579ddd
 ---
 # 7.2 Create your email message
 

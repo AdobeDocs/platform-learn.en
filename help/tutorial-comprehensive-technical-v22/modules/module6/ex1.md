@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: c0778e81-4282-433d-9e02-37e32bf370ef
 ---
 # 6.1 Create a segment
 

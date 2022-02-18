@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 7a78260f-cd25-4ed0-801b-87174babaffe
 ---
 # 6.3 Take Action: send your segment to DV360
 
