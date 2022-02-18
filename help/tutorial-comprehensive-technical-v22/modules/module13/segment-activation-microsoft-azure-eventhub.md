@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 73c2576d-0a69-4d56-a671-9ae1f75580b9
 ---
 # 13. Real-Time CDP: Segment Activation to Microsoft Azure Event Hub
 

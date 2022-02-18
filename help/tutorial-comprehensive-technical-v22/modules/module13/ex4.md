@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 250f8536-b6bd-4c64-a552-80d5c6fb6358
 ---
 # 13.4 Activate Segment
 

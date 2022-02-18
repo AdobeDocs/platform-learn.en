@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 73154afc-c3e3-420c-9471-5bb106dbfd02
 ---
 # 12.2 Create your first query in BigQuery
 

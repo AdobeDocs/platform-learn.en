@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: b2b29cb7-dd5c-48f2-b881-3e10d9f1a0df
 ---
 # 12.3 Connect GCP & BigQuery to Adobe Experience Platform
 

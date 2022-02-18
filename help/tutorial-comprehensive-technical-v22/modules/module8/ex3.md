@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 7ee5aee9-3740-4eee-9f53-a44fdb564a00
 ---
-
 # 8.3 Define a custom action
 
 In this exercise, you'll create two custom actions by making use of Adobe Journey Optimizer in combination.

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 0091c31f-0b54-4d40-a82b-3bf688db8a1f
 ---
 # 9.6 Test your Decision using Journey Orchestration
 

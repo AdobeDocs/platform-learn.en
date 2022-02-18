@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 3346c57b-3a78-40b1-a891-053fc8781659
 ---
 # 15.3 Configure HTTP API Streaming endpoint in Adobe Experience Platform
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: e80fc8f8-e1f7-4ec9-a046-c4cb71f2feeb
 ---
 # 10.7 Create a business event journey
 

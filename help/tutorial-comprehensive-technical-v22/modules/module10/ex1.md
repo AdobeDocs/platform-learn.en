@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 69bb9eca-3942-4c31-a3d2-0b218143e1eb
 ---
 # 10.1 Introduction to Adobe Journey Optimizer: build an email message
 

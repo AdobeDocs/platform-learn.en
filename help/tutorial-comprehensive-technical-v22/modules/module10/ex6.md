@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 44c33711-3f79-407c-81fa-7f3eb98171ae
 ---
 # 10.6 Setup and use push notifications for iOS
 

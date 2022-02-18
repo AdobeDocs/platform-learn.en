@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
 ---
 # 15.2 Install and configure your Kafka cluster
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: c85fc4ca-cdf8-463d-b0ad-e84036033d16
 ---
 # 10. Adobe Journey Optimizer
 

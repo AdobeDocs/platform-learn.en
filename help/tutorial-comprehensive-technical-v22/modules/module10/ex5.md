@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: cc06d847-a405-4223-836c-c22ad6c9caca
 ---
 # 10.5 Apply personalization in an email message
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: b42b4ccb-1952-480b-b538-c1bd661e29eb
 ---
 # 13.2 Configure your Azure Event Hub Destination in Adobe Experience Platform
 

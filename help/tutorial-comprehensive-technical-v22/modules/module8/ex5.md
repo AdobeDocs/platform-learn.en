@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 46aa9a27-ec2e-4118-ac12-0bc44c5e0ad2
 ---
 # 8.5 Design a trigger-based journey
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: c14c50fc-e76d-4dcf-9cf5-ac38ae74b48d
 ---
 # 9.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 1a08f666-4ea3-43bc-ace7-5dc9854b89ad
 ---
 # 8.4 Create your SMS messages
 

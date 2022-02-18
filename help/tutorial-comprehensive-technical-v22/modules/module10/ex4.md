@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 14a2306a-eb2f-47ee-ad3c-1169412811ca
 ---
 # 10.4 Configure a batch-based newsletter journey 
 

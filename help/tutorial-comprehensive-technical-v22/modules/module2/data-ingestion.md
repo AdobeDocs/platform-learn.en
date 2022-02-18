@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: dbbc0539-ae1b-488d-b312-76a74d4d361f
 ---
 # 2. Foundation - Data Ingestion
 

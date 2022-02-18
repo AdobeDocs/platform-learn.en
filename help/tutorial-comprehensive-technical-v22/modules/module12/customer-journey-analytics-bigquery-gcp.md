@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: c9c28b5a-d158-49fa-9533-1a295876f6c4
 ---
 # 12. Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
 
