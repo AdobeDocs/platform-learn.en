@@ -41,17 +41,21 @@ Now you can create a datastream to tell Platform Edge Network where to send data
 
 1. Go to **[!UICONTROL Datastreams]** in the left navigation
 1. Select **[!UICONTROL New Datastream]** on the right hand-side of the screen.
-1. Enter `Luma Web SDK` as the **[!UICONTROL Friendly Name]**. This name is referenced later when you configure the Web SDK extension in your tag property.
+1. Enter `Luma Web SDK` as the **[!UICONTROL Name]**. This name is referenced later when you configure the Web SDK extension in your tag property.
+1. Select your `Luma Web Event Data` as the **[!UICONTROL Event Schema]** 
 1. Select **[!UICONTROL Save]**
-1. Without configuring any applications, select **[!UICONTROL Save]** again
 
-   >[!NOTE]
+   ![Create the datastream](assets/datastream-create-datastream.png)
+
+   >[!AVAILABILITY]
    >
-   > In this exercise, you do not enable any applications. You will do so later in the lessons [Set up Experience Platform](setup-experience-platform.md), [Set up Analytics](setup-analytics.md), [Set up Audience Manager](setup-audience-manager.md), [Setup Target](setup-target.md), or [Event Forwarding](setup-event-forwarding.md).
+   >The mapping feature will be incorporated into this tutorial at a later date.
+
+On the next screen, you are able to add services such as Adobe applications to the datastream, however you will not add any services at this point in the tutorial. You will do so later in the lessons [Set up Experience Platform](setup-experience-platform.md), [Set up Analytics](setup-analytics.md), [Set up Audience Manager](setup-audience-manager.md), [Setup Target](setup-target.md), or [Event Forwarding](setup-event-forwarding.md).
 
    ![data-stream-environments](assets/datastream-create-environments.png)
 
-On the next screen, you are able to map Adobe applications in different ways based on the development, staging, and production environments of your tag property. For example, you could use a different Analytics report suite for each environment.
+
 
 
    ![Datastream Environments](assets/datastream-environments.png)

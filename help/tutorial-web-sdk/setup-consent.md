@@ -71,8 +71,8 @@ The custom code block should look similar to the below:
 
 Now save and build this rule to your development library, validate the consent banner is showing up by switching the tag library from Luma site to your own. You should see a CMP banner on the website as below. And to check the current visitor's consent permission you can use following snippet on the browser's console.
 
-``` javaScript
-klaro.getManager().consents 
+```javascript
+    klaro.getManager().consents 
 ```
 
 ![Consent Banner](assets/consent-cmp-banner.png)
