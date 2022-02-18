@@ -6,25 +6,18 @@ audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 ---
+
 # 8.2 Define an external data source
 
 In this exercise, you'll create a custom external data source by making use of Adobe Journey Optimizer.
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./images/acophome.png)
+![ACOP](../module7/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-![ACOP](./images/acoptriglp.png)
-
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
-
-![ACOP](./images/sb.png)
-
-You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
-
-![ACOP](./images/home.png)
+![ACOP](../module7/images/acoptriglp.png)
 
 In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Data Sources**.
 
@@ -77,7 +70,7 @@ Go back to **Adobe Journey Optimizer**, to your empty **External Data Source** p
 
 ![Demo](./images/emptyds.png)
 
-As a Name for the data source, use `ldapWeatherApi` and replace `Ldap` with your LDAP. In this example, the data source Name is `vangeluwWeatherApi `.
+As a Name for the data source, use `--demoProfileLdap--WeatherApi`. In this example, the data source Name is `vangeluwWeatherApi `.
 
 Set Description to: `Access to the Open Weather Map`.
 
@@ -110,7 +103,7 @@ In order to match the expected API Request, configure your FieldGroup as follows
 
 >[!IMPORTANT]
 >
->The Field group name has to be unique, please use this naming convention: `ldapWeatherByCity` so in this case, the name should be `vangeluwWeatherByCity`
+>The Field group name has to be unique, please use this naming convention: `--demoProfileLdap--WeatherByCity` so in this case, the name should be `vangeluwWeatherByCity`
 
 ![Demo](./images/fg1.png)
 

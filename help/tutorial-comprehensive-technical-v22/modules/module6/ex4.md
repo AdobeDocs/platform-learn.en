@@ -34,7 +34,7 @@ You'll then see the **Amazon S3** homepage. Click **Create Bucket**.
 
 In the **Create Bucket** screen, you need to configure two things:
   
-- Name: use the name `aepmodulertcdp--demoProfileLdap--`. As an example, in this exercise the bucket name is **aepmodule11vangeluw**
+- Name: use the name `aepmodulertcdp--demoProfileLdap--`. As an example, in this exercise the bucket name is **aepmodulertcdpvangeluw**
 - Region: use the region **EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)

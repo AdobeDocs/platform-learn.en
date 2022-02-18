@@ -9,7 +9,7 @@ activity: develop
 # Summary & benefits
 
 Congratulations and thank you for investing your time in learning about Adobe Journey Optimizer and Adobe Experience Platform! 
-In this module, you've learned how to use Adobe Journey Optimizer to configure a journey that is triggered when a customer enters a specific geofence around a Point Of Interest (POI). When that happens, you've configured and consumed an external data source that gives you access, in real-time, to that POI's current weather data which then influences the path of the journey and the message being sent to the customer. That message was delivered to two custom actions, a non-Adobe SMS provider named Twilio and a Slack channel. Both of these environments have APIs, which Adobe Journey Optimizer can consume through a custom action.
+In this module, you've learned how to use Adobe Journey Optimizer to configure a journey that is triggered when a customer enters a specific geofence around a Point Of Interest (POI). When that happens, you've configured and consumed an external data source that gives you access, in real-time, to that POI's current weather data which then influences the path of the journey and the message being sent to the customer. That message was delivered to two actions, an SMS using Journey Optimizer and a Slack channel. 
 
 ## Benefits
 

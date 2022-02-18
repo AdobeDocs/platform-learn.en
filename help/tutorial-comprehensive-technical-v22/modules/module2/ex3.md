@@ -49,7 +49,7 @@ You have to define a dataset from the schema that you defined in the previous st
 
 ![Data Ingestion](./images/datasetfromschema.png)
 
-In the next screen, you have to select the schema that you created in 1, `--demoProfileLdap--`- Demo System - Profile Schema for Website.
+In the next screen, you have to select the schema that you created in 1, `--demoProfileLdap-- - Demo System - Profile Schema for Website`.
 
 ![Data Ingestion](./images/schemaselection.png)
 
@@ -61,7 +61,7 @@ Let's give a name to your dataset.
 
 As the name for our dataset, use this:
 
-`--demoProfileLdap--` - Demo System - Profile Dataset for Website
+`--demoProfileLdap-- - Demo System - Profile Dataset for Website`
 
 As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
@@ -97,7 +97,7 @@ You have to define a dataset from the schema that you defined in the previous st
 
 ![Data Ingestion](./images/datasetfromschema.png)
 
-In the next screen, you have to select the schema that you created in 2.2, `--demoProfileLdap--` - Demo System - Event Schema for Website.
+In the next screen, you have to select the schema that you created in 2.2, `--demoProfileLdap-- - Demo System - Event Schema for Website`.
 
 ![Data Ingestion](./images/schemaselectionee.png)
 
@@ -109,7 +109,7 @@ Let's give a name to your dataset.
 
 As the name for our dataset, we'll use this:
 
-`--demoProfileLdap--`- Demo System - Event Dataset for Website
+`--demoProfileLdap-- - Demo System - Event Dataset for Website`
 
 As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
@@ -149,7 +149,7 @@ Click the **[!UICONTROL Enable]**.
 
 Your dataset is now enabled for [!UICONTROL Profile].
 
-Go back to the datasets overview and open your dataset `--demoProfileLdap--` - Demo System - Event Dataset for Website by clicking it.
+Go back to the datasets overview and open your dataset `--demoProfileLdap-- - Demo System - Event Dataset` for Website by clicking it.
 
 Locate the [!UICONTROL Profile] toggle icon on the right side of the screen.
 
