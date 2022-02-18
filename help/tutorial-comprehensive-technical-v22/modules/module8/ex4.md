@@ -1,6 +1,7 @@
 ---
 title: Adobe Journey Optimizer - Configure and use the SMS channel within Adobe Journey Optimizer
-description: Adobe Journey Optimizer - Configure and use the SMS channel within Adobe Journey Optimizerkt: 5342
+description: Adobe Journey Optimizer - Configure and use the SMS channel within Adobe Journey Optimizer
+kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
