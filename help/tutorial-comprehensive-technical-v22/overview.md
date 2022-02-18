@@ -20,9 +20,9 @@ This tutorial is very diverse and offers clear insights in the following applica
 
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. In order to do that, in some lessons there is a focus on how _non-Adobe_ applications integrate with Adobe Experience Platform. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
-- Amazon: AWS Lambda, AWS S3, AWS Kinesis, AWS SQS, Alexa
-- Google: Google Tag Manager, Google Analytics, Google Cloud Platform, Google BigQuery, Google Display&Video 360, Google AdWords
-- Microsoft: Power BI, Azure EventHub, Azure Blob Storage, Dynamics 365
+- Amazon: AWS Lambda, AWS S3, AWS Kinesis
+- Google: Google Cloud Platform, Google BigQuery, Google Display&Video 360, Google AdWords
+- Microsoft: Power BI, Azure EventHub, Azure Blob Storage
 - Salesforce: Tableau
 - Apache Kafka
 - Postman
@@ -47,6 +47,7 @@ After completing this tutorial, you will be able to:
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Access to Demo System: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
 - Access to the demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
 
 >[!IMPORTANT]

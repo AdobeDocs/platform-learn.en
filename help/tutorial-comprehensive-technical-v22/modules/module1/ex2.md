@@ -30,7 +30,7 @@ Click **[!UICONTROL Datastreams]** in the left menu.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
-Search for your Datastream, which is named `--demoProfileLdap--` - Demo System Datastream.
+Search for your Datastream, which is named `--demoProfileLdap-- - Demo System Datastream`.
 
 ![Name the Datastream and save](./images/edgeconfig2.png)
 

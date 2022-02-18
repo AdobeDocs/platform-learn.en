@@ -22,6 +22,7 @@ Under **General** - **Environment**, select your Adobe Experience Platform insta
 
 - **Experience Platform International**
 - **aepenablementfy22**
+- Configuration: please select **Global v2.0**
 
 ![DSN](./images/dsn1.png)
 

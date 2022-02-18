@@ -14,7 +14,7 @@ You'll see the **View Configuration ID** page:
 
 ![DSN](./images/confighome.png)
 
-Enter your default Configuration ID (you can find this on the homepage of your GitHub repo) and click **Load Configuration**. You're now seeing the default configuration for this Adobe Experience Platform instance in the context of the enablement.
+Enter your default Configuration ID (you can find this on the homepage of your GitHub repo, or if you’re Adobe Solution Partner please contact **spphelp@adobe.com**) and click **Load Configuration**. You're now seeing the default configuration for this Adobe Experience Platform instance in the context of the enablement.
 
 ![DSN](./images/cfg2.png)
 

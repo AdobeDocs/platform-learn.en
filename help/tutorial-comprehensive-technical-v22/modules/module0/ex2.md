@@ -27,7 +27,7 @@ Click **[!UICONTROL New Datastream]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap--` - Demo System Datastream and click **Save**.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream` and click **Save**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig2.png)
 
@@ -109,7 +109,7 @@ Click **[!UICONTROL New Datastream]**.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap--` - Demo System Datastream (Mobile).
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream (Mobile)`.
 Click **[!UICONTROL Save]**.
 
 ![Name the Datastream and save](./images/edgeconfig2m.png)

@@ -5,25 +5,17 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: b08a065d-c9a3-4f66-9386-4cf62eafc6c4
 ---
+
 # 8.1 Define an event
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./images/acophome.png)
+![ACOP](../module7/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-![ACOP](./images/acoptriglp.png)
-
-First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY21**.
-
-![ACOP](./images/sb.png)
-
-You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
-
-![ACOP](./images/home.png)
+![ACOP](../module7/images/acoptriglp.png)
 
 In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Events**.
 
@@ -37,7 +29,7 @@ A new, empty event window will then pop up.
 
 ![ACOP](./images/emptyevent1.png)
 
-As a Name for the Event, use `ldapGeofenceEntry` and replace `Ldap` with your LDAP. In this example, the Event Name is `vangeluwGeofenceEntry`.
+As a Name for the Event, use `--demoProfileLdap--GeofenceEntry`. In this example, the Event Name is `vangeluwGeofenceEntry`.
 
 Set Description to: `Geofence Entry Event`.
 
@@ -47,14 +39,14 @@ Next, make sure the **Type** is set to **Unitary**, and for the **Event ID Type*
 
 ![ACOP](./images/eventidtype.png)
 
-Next, you need to select a Schema. All Schemas that are shown here, are Adobe Experience Platform Schemas.
+Next, you need to select a schema. All schemas that are shown here, are Adobe Experience Platform Schemas.
 
 ![Demo](./images/evschema.png)
 
-You'll notice that not all Schemas are shown. There are many more Schemas available in Adobe Experience Platform.
-To show up in this list, a Schema needs to have a very specific Mixin linked to it. The Mixin that is needed to show up here is called `Orchestration eventID`.
+You'll notice that not all schemas are shown. There are many more schemas available in Adobe Experience Platform.
+To show up in this list, a schema needs to have a very specific field group linked to it. The field group that is needed to show up here is called `Orchestration eventID`.
 
-Let's have a quick look how these Schemas are defined in Adobe Experience Platform.
+Let's have a quick look how these schemas are defined in Adobe Experience Platform.
 
 In the left menu, go to **Schemas** and open this in a new browser tab. In **Schemas**, go to **Browse** to see the list of available Schemas.
 Open the Schema `Demo System - Event Schema for Website (Global v1.1)`.
@@ -126,9 +118,9 @@ Scroll down in the **Payload** until you see the line `eventID`.
 
 Write down the `eventID` as you'll need it in the last to test your configuration.
 
-In this example, the `eventID` is `ee2d17c4e2b9aaefcc2ecaa8b7de56e1c88bb23e8160bc658e0de33160b20bec`.
+In this example, the `eventID` is `fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934`.
 
-You've now defined the event that will trigger the Journey we're building. Once the Journey is triggered, the geofence-fields like City, and any others you may have chosen (like Country, Latitude and Longitude) will be made available to the Journey.
+You've now defined the event that will trigger the journey we're building. Once the journey is triggered, the geofence-fields like City, and any others you may have chosen (like Country, Latitude and Longitude) will be made available to the journey.
 
 As discussed in the use-case description, we then need to provide contextual promotions that depend on the weather. In order to get weather information, we'll need to define an external data sources that will provide us with the weather information for that location. You'll use the **OpenWeather** service to provide us what that information, as part of 2.
 

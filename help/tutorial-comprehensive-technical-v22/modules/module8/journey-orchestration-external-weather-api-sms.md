@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 7b9440bc-d14b-43fb-83ad-b0fefabea863
 ---
 # 8. Adobe Journey Optimizer: External data sources and custom actions
 
@@ -64,11 +63,15 @@ Learn how to configure an external data source using Adobe Journey Optimizer.
 
 Learn how to define an external action using Adobe Journey Optimizer.
 
-[8.4 Design a trigger-based journey](./ex4.md)
+[8.4 Create your SMS messages](./ex4.md)
+
+Learn how to setup and use the SMS channel within Adobe Journey Optimizer.
+
+[8.5 Design a trigger-based journey](./ex4.md)
 
 Combine events, data sources and actions into an intelligent and contextual journey.
 
-[8.5 Trigger your journey](./ex5.md)
+[8.6 Update your Data Collection property and test your Journey](./ex5.md)
 
 Trigger your specific journey.
 

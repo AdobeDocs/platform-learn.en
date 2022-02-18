@@ -16,7 +16,7 @@ This is the Adobe Experience Platform Data Collection Properties page you saw be
 
 ![Properties page](../module1/images/launch1.png) 
 
-In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--demoPropfileLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
+In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--demoProfileLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
 
 ![Search box](../module1/images/property6.png)
 
@@ -57,6 +57,8 @@ After pasting your eventID, your screen should look like this. Next, click **Sav
 Finally, you need to publish your changes. Go to **Publishing Flow** in the left menu.
 
 ![Launch Setup](./images/rule8.png)
+
+Click **Add All Changed Resources** and then click **Save & Build to Development**.
 
 ![Launch Setup](./images/rule9.png)
 
