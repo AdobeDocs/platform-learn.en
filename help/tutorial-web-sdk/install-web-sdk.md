@@ -71,6 +71,12 @@ Now that you have installed Platform Web SDK and associated it to the datastream
 
 >[!NOTE]
 >
+>During this tutorial, you configure just one datastream and associate it with all tag environments (development, stage, and production). When you implement Platform Web SDK on your own website, you should configure a separate datastream for each environment and map them to your tag environments using the **[!UICONTROL Input method]** > **[!UICONTROL Enter values]**
+>
+>    ![Datastream selection](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+
+>[!NOTE]
+>
 >While you did not configure a CNAME in the [!UICONTROL Edge domain] setting in this lesson, Adobe recommends you use a CNAME when you implement Platform Web SDK on your own website. While a CNAME implementation does not provide any benefits in terms of cookie lifetime, there may be some other benefits. These benefits include ad blockers and less-common browsers preventing data from being sent to domains they classify as trackers. In these cases, using a CNAME can prevent your data collection from being disrupted for users employing these tools.
 
 For more information on each section of the extension, see [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/web-sdk-extension-configuration.html)

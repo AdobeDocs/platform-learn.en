@@ -85,31 +85,24 @@ Platform Web SDK sends data from your website to Platform Edge Network. Your dat
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
 1. Select the previously created `Luma Web SDK` datastream
 
-    ![Datastream Select Luma Web SDK](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
 
-1. Select the **[!UICONTROL Development Environment]**
+1. Select **[!UICONTROL Add Service]**
+     ![Add a service to the datastream](assets/analytics-addService.png)
+1. Select **[!UICONTROL Adobe Analytics]** as the **[!UICONTROL Service]**
+1. Enter the  **[!UICONTROL Report Suite ID]** of your development report suite
+1. Select **[!UICONTROL Save]**
 
-    ![Datastream development environment](assets/analytics-datastream-development.png)
-
-1. On this screen, you see every Adobe application to which you can send data collected by Platform Web SDK. Toggle the switch for **[!UICONTROL Adobe Analytics]** to stream data to Analytics. 
-1. Select **[!UICONTROL Add Report Suite]** and enter your development report suite ID in the field
-
-    ![Datastream enable analytics](assets/analytics-datastream-dev-reportsuite.png)
+    ![Datastream save analytics](assets/analytics-datastream-save.png)
 
     >[!TIP]
     >
     >Adding more report suites by selecting **[!UICONTROL Add Report Suite]** is equivalent to multi-suite tagging.
 
-1. Scroll to the bottom and select **[!UICONTROL Save]**
-
-    ![Datastream save analytics](assets/analytics-datastream-save.png)
-
 >[!WARNING]
 >
->In this tutorial, you only configure the development Adobe Analytics report suite. When you create a datastream for your own website, you would add your staging and production report suites in the staging and production environments of the datastream.
->
->
->Each datastream environment maps to a tag environment. Sending data to Adobe Analytics with Platform Web SDK is determined by both the datastream configuration and the tag publishing workflow. To collect production data for Adobe Analytics, you typically must publish a tag library to Production **and also** enable Analytics in the production datastream.
+>In this tutorial, you only configure the development Adobe Analytics report suite. When you create datastreams for your own website, you would create additional datastreams and report suites for your staging and production environments.
+
 
 ## Create additional data elements
 

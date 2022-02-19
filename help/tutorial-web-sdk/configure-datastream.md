@@ -51,21 +51,15 @@ Now you can create a datastream to tell Platform Edge Network where to send data
    >
    >The mapping feature will be incorporated into this tutorial at a later date.
 
+   
+
+
 On the next screen, you are able to add services such as Adobe applications to the datastream, however you will not add any services at this point in the tutorial. You will do so later in the lessons [Set up Experience Platform](setup-experience-platform.md), [Set up Analytics](setup-analytics.md), [Set up Audience Manager](setup-audience-manager.md), [Setup Target](setup-target.md), or [Event Forwarding](setup-event-forwarding.md).
 
-   ![data-stream-environments](assets/datastream-create-environments.png)
-
-
-
-
-   ![Datastream Environments](assets/datastream-environments.png)
-
->[!WARNING]
+>[!NOTE]
 >
-> While configuring the Adobe Experience Platform section of the datastream, it is important to know that once you select a **[!UICONTROL Sandbox]** the setting is permanent and cannot be changed. It is an intentional design-choice made to protect production datastreams, as any change to this setting has the potential to break data collection for a production use-case. 
->
->  ![Experience Platform datastream](assets/datastream-platform-prod.png)
+>When implementing Platform Web SDK on your own website, you should create three datastreams to map to your three tag environments (development, stage, and production). If you are using Platform Web SDK with Platform-based applications such as Adobe Real-time Customer Data Platform or Adobe Journey Optimizer, you should be sure to create those datastreams in the appropriate Platform sandboxes.
 
-With the XDM schema defined, an identity namespace created, and a datastream configured, you are ready to install the Platform Web SDK extension in your tag property!
+You are now ready to install the Platform Web SDK extension in your tag property!
 
 [Next: **Install Platform Web SDK extension in tags**](install-web-sdk.md)
