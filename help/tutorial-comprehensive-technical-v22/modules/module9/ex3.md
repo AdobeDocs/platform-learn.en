@@ -75,7 +75,6 @@ The [!UICONTROL Placement ID] identifies the location and type of asset that is 
 
 ![WebSDK](./images/launch5.png)
 
-
 To find the [!UICONTROL Placement ID] for [!UICONTROL Web - Image] go to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
 ![ACOP](../module7/images/acophome.png)
@@ -242,8 +241,8 @@ And instead of the default Luma website images, you will now see an offer like t
 
 You've now configured 2 types of personalization:
 
-  - 1 Experience Targeting activity using Adobe Target in Module 6
-  - 1 Offer decisioning implementation using your Data Collection property
+- 1 Experience Targeting activity using Adobe Target in Module 6
+- 1 Offer decisioning implementation using your Data Collection property
 
 In the next exercise you'll see how you can combine your offers and decisions that were created in Adobe Journey Optimizer with an Adobe Target Experience Targeting activity.
 

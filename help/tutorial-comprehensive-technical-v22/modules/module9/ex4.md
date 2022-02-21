@@ -78,7 +78,7 @@ You'll then see this. Click **Next**.
 
 ![RTCDP](./images/vec7.png)
 
-Enter a name for your offer, use this name: `--demoProfileLdap-- - XT with Offers (VEC)'. Click **Next**.
+Enter a name for your offer, use this name: `--demoProfileLdap-- - XT with Offers (VEC)`. Click **Next**.
 
 ![RTCDP](./images/vec8.png)
 
