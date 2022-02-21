@@ -17,7 +17,7 @@ In today's world, responding to a customer's behavior needs to be real-time. One
 
 ## 6.1.2 Identify the behavior you want to react to
 
-going to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
 
 ![DSN](../module0/images/web8.png)
 

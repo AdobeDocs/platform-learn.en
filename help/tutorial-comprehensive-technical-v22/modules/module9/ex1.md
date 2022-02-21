@@ -10,7 +10,7 @@ activity: develop
 
 ## 9.1.1 Terminology
 
-To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/offer-decisioning/using/get-started/starting-offer-decisioning.html?lang=en#offer-decisioning-service-architecture) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
+To get a better understanding about Offer Decisioning, we highly recommend you to read the [overview](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioniong/get-started-decision/starting-offer-decisioning.html?lang=en) on how the Offer Decisioning Application Service works with Adobe Experience Platform.
 
 Working with Offer Decisioning, you need to understand the following concepts:
 
@@ -29,23 +29,17 @@ Working with Offer Decisioning, you need to understand the following concepts:
 
 ## 9.1.2 Offer Decisioning
 
-Go to [https://platform.adobe.com](https://platform.adobe.com).
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-Before you continue, you need to select a **sandbox**. The sandbox you need to select is named `--aepSandboxId--`. You can do this by clicking the text **Production Prod** in the blue line on top of your screen. In this example, the sandbox to select is **AEP Enablement FY21**.
+![ACOP](../module7/images/acophome.png)
 
-![Data Ingestion](./images/sb1.png)
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox. Go to **Segment**. 
+![ACOP](../module7/images/acoptriglp.png)
 
-![Data Ingestion](./images/sb2.png)
-
-In the left menu, scroll down until you see the **Decision Management** menu.
+In the left menu, click **Offers**. You'll now see the Offers menu, which contains things like Offers, Collections and Decisions.
 
 ![Placements](./images/homedec.png)
-
-Click **Offers**. You'll now see the Offers menu, which contains things like Offers, Collections and Decisions.
-
-![Placements](./images/offers.png)
 
 Click **Components**. You'll now see the Offers menu, which contains things like Placements, Tags, Rules and Rankings.
 
@@ -93,13 +87,9 @@ A Rule (also called eligibility rule) is the equivalent of a **Segment**. A Rule
 
 As you already know how to define Segments based on the previous enablement modules, let's just quickly revisit the Segmentation Environment:
 
-Go to **Rules**.
+Go to **Rules**. Click **+ Create Rule**.
 
 ![Decision Rules](./images/rules.png)
-
-In the **Rules** screen, click **+ Create Rule**.
-
-![Decision Rules](./images/createrule.png)
 
 You'll then see the Segmentation environment of Adobe Experience Platform.
 
@@ -134,13 +124,9 @@ As an example, here's the rule definition for the rule **all - Female Customers*
 
 ## 9.1.5 Offers
 
-To access the Offers, go to **Offers** and select **Offers**.
+Go to **Offers** and select **Offers**. Click **+ Create Offer**.
 
 ![Decision Rule](./images/offers1.png)
-
-Click **+ Create Offer**.
-
-![Decision Rule](./images/createoffer.png)
 
 You'll then see this popup. 
 
