@@ -54,7 +54,7 @@ In this exercise, you'll configure a batch-based journey to send out the email m
 
 In this exercise, you'll use segment memberships to define what content will be shown inside an email.
 
-[10.4 Setup and use push notifications for iOS](./ex6.md)
+[10.4 Setup and use push notifications](./ex6.md)
 
 In this exercise you'll install a mobile application on your iOS device and you'll configure and deliver a push notification to your device.
 
