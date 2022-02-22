@@ -1,251 +1,283 @@
 ---
-title: Adobe Journey Optimizer - Apply personalization in an email message
-description: This exercise explain how to use segment personalization within an email content
+title: Adobe Journey Optimizer - Business Events
+description: This section explains how to use the business events capability in order to perform an "item back in stock" use case
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 ---
-# 10.5 Apply personalization in an email message
+# 10.5 Create a business event journey
 
-Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![Journey Optimizer](./images/23.1-1.png)
+![ACOP](../module7/images/acophome.png)
 
-You'll be redirected to the **Home** view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-![Journey Optimizer](./images/23.1-3.png)
+![ACOP](../module7/images/acoptriglp.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepTenantId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+## 10.5.1 Create a business event
 
-![Journey Optimizer](./images/23.1-3a.png)
+In the left menu, click **Configurations**.
 
-## 10.5.1 Segment-based personalization
+![Journey Optimizer](./images/23.8-1.png)
 
-In this exercise you'll improve your newsletter email message with a personalized text based on segment membership.
+Click on the **Manage** button inside the **Events** card.
 
-Go to **Messages**. Find the newsletter email that you have created in the previous exercise. Search for **ldap - Newsletter**. Click your message to open it. 
+![Journey Optimizer](./images/23.8-2.png)
 
-![Journey Optimizer](./images/23.4-20.png)
+Business events are a new type of event you can create inside Journey Optimizer. Unlike the **Unitary** events that you have created in previous modules, the business events are not triggered by the customer but by the organization. You'll now create your business event. 
 
-You'll then see the message dashboard. Click **Modify**. 
+Click **Create Event**.
 
-![Journey Optimizer](./images/23.4-21.png)
+![Journey Optimizer](./images/23.8-3.png)
 
-Click **Confirm**.
+Enter the following values in the Event creation form:
 
-![Journey Optimizer](./images/23.4-22.png)
+- **Name**: **ldapItemBackInStock** and replace **ldap** by your ldap. For instance: vangeluwItemBackInStock
+- **Description**: This event is triggered when a product is back in stock
+- **Type**: select **Business** in the drop down
 
-Click **Email Designer**.
+![Journey Optimizer](./images/evde.png)
 
-![Journey Optimizer](./images/23.4-23.png)
+- Schema: Select **Demo System - Event Schema for JO Business Events (Global v1.1) v.1**. You now need to select the fields in the schema that you require for our use case. 
 
-You'll then see this.
+  ![Journey Optimizer](./images/evdes.png)
 
-![Journey Optimizer](./images/23.4-24.png)
+  Follow these steps:
 
-Open **Content Components** and drag a **Text** component below the current newsletter content. 
+  Click the **pencil** icon on the field where it says **1 field selected**.
 
-![Journey Optimizer](./images/23.4-24a.png)
+  ![Journey Optimizer](./images/23.8-4.png)
 
-Select the whole default text and delete it. Then click on the **Add personalization** button in the toolbar.
+  Select all available fields in the schema, then click **OK**.
 
-![Journey Optimizer](./images/23.4-25.png)
+  ![Journey Optimizer](./images/23.8-5.png)
 
-You'll then see this:
+- Condition: you need to specify which records in this schema will be triggering the business event. 
+  
+  Follow these steps:
 
-![Journey Optimizer](./images/seg1.png)
+  Click the **pencil** icon on the field where it says **Add a condition**.
 
-Open the dropdown menu and select **Segment Membership**.
+  ![Journey Optimizer](./images/23.8-6.png)
 
-![Journey Optimizer](./images/seg2.png)
+  On the left-hand side, expand the `--aepTenantId--` object, expand the object **joBusinessEvents** and drag and drop the field **eventName** onto the canvas.
+
+  ![Journey Optimizer](./images/23.8-7.png)
+
+  For the field **eventName**, enter the following value: **ldapItemBackInStock** and replace **ldap** by your ldap. For instance: vangeluwItemBackInStock.
+  Click **OK**.
+
+  ![Journey Optimizer](./images/23.8-8.png)
+
+  Click **OK**.
+
+  ![Journey Optimizer](./images/23.8-9.png)
+
+Finally your event creation form should look like this. Click **Save** to save your business event.
+
+![Journey Optimizer](./images/23.8-10.png)
+
+## 10.5.2 Create a business event journey
+
+You can now leverage this business event inside a journey. Go to **Journeys**. Click **Create Journey**.
+
+![Journey Optimizer](./images/23.8-11.png)
+
+On the right-hand side you will see a form where you need to specify the journey name and description. Enter the following values:
+
+- **Name**: **ldap - Item back in stock**. Replace **ldap** by your ldap. For instance: vangeluw - Item back in stock
+- **Description**: This journey sends an SMS when an item is back in stock to visitor who have shown an interest.
+
+Click **OK**. 
+
+![Journey Optimizer](./images/23.8-13.png)
+
+In the left menu, under **Events**, search for your ldap. You'll find the previously created business event **ldapItemBackInStock**. Drag and drop this event onto the canvas as this will be the starting point of the journey. 
+
+![Journey Optimizer](./images/23.8-14.png)
+
+As you can see, a **Read Segment** activity has automatically been added to the canvas. This is because the business events only send a trigger for the journey to read a specific segment, which will then retrieve the list of profiles for that journey.
+
+Click the **Read Segment** activity.
+
+![Journey Optimizer](./images/23.8-15.png)
+
+The **Read Segment** configuration expects you to select the segment that you want to notify of the business event that just happened. Click the **Select a segment** field.
+
+![Journey Optimizer](./images/23.8-16.png)
+
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named **ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)**. for example: vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw). Click **Save**.
+
+![Journey Optimizer](./images/23.8-17.png)
+
+Next, click **Ok**. 
+
+![Journey Optimizer](./images/23.8-18.png)
+
+The next step is to drag and drop the action that we want to perform in this journey. In the menu, go to **Actions** and find the action named **ldapSmsTwilio** that you created in [Module 8 - Adobe Journey Optimizer: External data sources and custom actions](../module8/journey-orchestration-external-weather-api-sms.md). 
+
+You’ll then see a panel on the right-hand side where you can configure the action.
+
+![Journey Optimizer](./images/23.8-19.png)
+
+Navigate to the Action Parameters and click on the **pencil** icon for the Action Parameter **TEXTMESSAGE**.
+
+![Journey Optimizer](./images/23.8-22.png)
+
+In the popup you’ll see, click on **Advanced Mode**.
+
+![Journey Optimizer](./images/23.8-23.png)
+
+Select the below code, copy it and paste it in the Advanced Mode Editor.
+
+```
+'Hi ' + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + ' the Zeppelin Yoga pant is back in stock at ' + #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.at(0)._experienceplatform.demoEnvironment.brandName}
+```
+
+Click **Ok**.
+
+![Journey Optimizer](./images/23.8-24.png)
+
+Click on the **pencil** icon for the Action Parameter **MOBILENR**.
+
+![Journey Optimizer](./images/23.8-26.png)
+
+In the popup you’ll see, click on **Advanced Mode**.
+
+![Journey Optimizer](./images/23.8-27.png)
+
+Paste this code in the Advanced Mode Editor. Click OK.
+
+`substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 12)`
 
 >[!NOTE]
 >
->If you can't find your segment in this list, scroll down a bit to find instructions on how to retrieve the segment ID manually.
+>This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044**.
+>Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
 
-If you're able to see the segment named **ldap - API - All Female Customer**, which you created as part of Module 3, select it and click the **+** icon, which should look like this:
+`substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
 
-![Journey Optimizer](./images/seg3.png)
+Click **Ok**.
 
-You should then leave the first line as it is, and replace line 2 and 3 by this code:
+![Journey Optimizer](./images/23.8-28.png)
 
-``
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
-{%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
-{%/if%}
-``
+Click **Ok**.
 
-You'll then have this:
+![Journey Optimizer](./images/23.8-30.png)
 
-![Journey Optimizer](./images/seg4.png)
+In the menu, click **Orchestration** and drag and drop **End** onto the canvas. Click **Ok**.
 
->[!NOTE]
->
->If you can't see your segment in the list, you'll need to retrieve the Segment ID manually. Please follow these steps:
+![Journey Optimizer](./images/23.8-31.png)
 
-Go to **Segments**.
+Your journey is now ready to be published. Click **Publish**.
 
-![Journey Optimizer](./images/23.4-50.png)
-
-Search for the segment you have created in a previous module named **ldap - API - All Female Customer** and replace **ldap** by your ldap. For instance, **vangeluw - API - All Female Customer**. Click to open the segment.
-
-![Journey Optimizer](./images/23.4-51.png)
-
-You'll find the segment ID in the **Segment summary**. Copy the value, in this example **9c767aca-1dc5-4a65-a5fb-c71dae6ded3b** and keep it handy as you will need it shortly. 
-
-![Journey Optimizer](./images/23.4-52.png)
-
-Copy the below code and paste it into the editor. This code is a basic if/else statement that uses the segmentMembership status to find out if the profile is qualified for that specific segment.
-
->[!NOTE]
->
->Replace **9c767aca-1dc5-4a65-a5fb-c71dae6ded3b** in the below code by the segment ID of your segment named **ldap - API - All Female Customer**, which you retrieved in the previous exercise.
-
-``
-{%#if profile.segmentMembership.get("ups").get("9c767aca-1dc5-4a65-a5fb-c71dae6ded3b").status = "existing"%}
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
-{%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
-{%/if%}
-``
-
-After having either automatically or manually retrieved your segment ID and having completed the personalization code, continue with the next steps.
-
-Click **Validate** to make sure the code is correct.
-
-![Journey Optimizer](./images/23.4-26.png)
-
-Click **Save**.
-
-![Journey Optimizer](./images/23.4-28.png)
-
->[!NOTE]
->
->There currently is an issue with the **Preview** feature, which currently will show an error when you try to use it in this context.
-
-You can now save this message by clicking the **Save** button in the top-right corner.
-
-![Journey Optimizer](./images/23.1-84.png)
-
-Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
-
-![Journey Optimizer](./images/23.1-85.png)
-
-You now need to re-publish your journey. Click **Publish**. 
-
-![Journey Optimizer](./images/23.1-86.png)
+![Journey Optimizer](./images/23.8-34.png)
 
 Click **Publish** again.
 
-![Journey Optimizer](./images/23.1-87.png)
+![Journey Optimizer](./images/23.8-35.png)
 
-Wait until you see a green confirmation pop-up at the bottom of the screen indicating that the message is published. 
+Your journey is now published, you can now test it!
 
-![Journey Optimizer](./images/23.1-88.png)
+## 10.5.3 Test your business event journey
 
-Go to **Journeys**. Find the newsletter journey you just created (you can search for **ldap - Newsletter**). The journey status could be **Live**, or **Closed** if the journey has already run. A closed journey can't be changed anymore. 
+You'll now simulate the re-stock of a product by ingesting a new event against the **Demo System - Event Schema for JO Business Events (Global v1.1) v.1** using Postman.
 
-![Journey Optimizer](./images/23.4-1.png)
+In the left menu, click **Sources**.
 
-Click on the 3 dots next to your journey name and click on **Duplicate**. This will create a copy of your journey.
+![Journey Optimizer](./images/23.8-36.png)
 
-![Journey Optimizer](./images/23.4-2.png)
+Click on the **Accounts** tab, find the account named **Journey Optimizer Business Events** and click on the name to open it.
 
-You'll now see your duplicated journey in the list which is named like the initial journey with a **_Copy** suffix. For example vangeluw - Newsletter_Copy. Click to open this journey.
+![Journey Optimizer](./images/23.8-38.png)
 
-![Journey Optimizer](./images/23.4-3.png)
+This account only has one dataflow, click on the dataflow name to select it.
 
-First let's change the name of this journey. Click the **pencil** icon to edit your journey properties.
+![Journey Optimizer](./images/23.8-42.png)
 
-![Journey Optimizer](./images/23.4-4.png)
+Click **Copy schema payload** in the right menu. This option copies the entire **curl** command to insert a record against the **Demo System - Event Schema for JO Business Events (Global v1.1) v.1** to your clipboard.
 
-Rename your journey, use this new name: **ldap - Newsletter with segment-based personalization** and replace **ldap** by your ldap. For example: vangeluw - Newsletter with segment-based personalization. 
+![Journey Optimizer](./images/23.8-43.png)
 
-Change your **Schedule** to **As soon as possible**. Click **Ok**.
+Paste the Curl command inside a text editor
 
-![Journey Optimizer](./images/23.4-5.png)
+![Journey Optimizer](./images/23.8-44.png)
 
-Click on the **Publish** button in the journey.
+Let's have a closer look to this request,
 
-![Journey Optimizer](./images/23.3-12.png)
+- The POST request is sent to the DCS Inlet ID
+- The request references the schema, the dataset and the Organization ID.
+- Finally it contains the xdmEntity node which represents the data that we want to create inside the dataset. 
 
-In the pop-up window, click on the **Publish button**
+You now need to replace the following `xdmEntity` line...
 
-![Journey Optimizer](./images/23.3-13.png)
+```json
+"xdmEntity": {
+  "_experienceplatform": {
+    "joBusinessEvents": {
+      "eventDescription": "string",
+      "eventName": "string",
+      "stockEventId": "string"
+    }
+  },
+  "_id": "/uri-reference",
+  "eventType": "advertising.completes",
+  "timestamp": "2018-11-12T20:20:39+00:00"
+}
+```
 
-Your basic newsletter journey is now published. Your newsletter email message will be sent immediately, and your journey will stop as soon as the last email has been sent.
+...by this line, make sure you replace **ldap** by your ldap as **ldap**ItemBackInStock represents the condition you have specified in your business event to trigger your journey.
 
-## 10.5.2 Offer-based personalization
+```json
+"xdmEntity": {
+  "_experienceplatform": {
+    "joBusinessEvents": {
+      "eventDescription": "Product Zeppelin Yoga pant is back in stock",
+      "eventName": "ldapItemBackInStock",
+      "stockEventId": "1"
+    }
+  },
+  "_id": "/uri-reference",
+  "eventType": "productBackInStock",
+  "timestamp": "2021-04-19T15:25:39+00:00"
+}
+```
 
-In this exercise you'll improve your newsletter email message with a personalized offer based on the Offer Activity you created as part of [Module 9 - Offer Decisioning](../module9/offer-decisioning.md).
+The updated **curl** command should look like this:
 
-Go to **Messages**. Find the newsletter email that you have created in the previous exercise. Search for **ldap - Newsletter**. Click your message to open it. 
+![Journey Optimizer](./images/23.8-45.png)
 
-![Journey Optimizer](./images/23.4-20.png)
+Select all of it and copy it to your clipboard.
 
-You'll then see the message dashboard. Click **Modify**. 
+Open Postman. On the left-hand side of Postman, click **Import**.
 
-![Journey Optimizer](./images/23.4-21a.png)
+![Journey Optimizer](./images/23.8-46.png)
 
-Click **Confirm**.
+Select the **Raw text** tab and paste the command previously copied here. Click **Continue**.
 
-![Journey Optimizer](./images/23.4-22a.png)
+![Journey Optimizer](./images/23.8-48.png)
 
-Click **Email Designer**.
+Click **Import**.
 
-![Journey Optimizer](./images/23.4-23a.png)
+![Journey Optimizer](./images/23.8-50.png)
 
-You'll then see this.
+Postman has automatically converted the **curl** command into a REST command ready to be triggered, simply press the **Send** button to request the creation of that record inside the dataset.
 
-![Journey Optimizer](./images/23.4-24ab.png)
+![Journey Optimizer](./images/23.8-51.png)
 
-In the menu, go to **Content Components**. Select the **Offer decision** component and drag and drop this component in the email's content offer placeholder as indicated.
+Verify that your request has been successfully received. Look for a **200 OK** status in postman.
 
-![Journey Optimizer](./images/23.1-75.png)
+![Journey Optimizer](./images/23.8-52.png)
 
-Click on the **Offer decision** component that you just dragged and dropped inside the email content. You'll then see a similar menu on the right-hand side. Click **Select Offer decision**.
+The SMS may take a couple of minutes to arrive on your mobile phone. If it does not, your **Interest in Zeppelin Yoga Pant** segment may not contain a profile with a correct mobile phone. If so, go on the Luma website, visit the **Zeppelin Yoga Pant** product and register while making sure you provide the correct mobile phone number.
 
-![Journey Optimizer](./images/23.1-77.png)
+![Journey Optimizer](./images/23.8-53.png)
 
-First, let's select the type of placement that you want to include in the email. In the **Placements** dropdown menu select **Email - Image**
+You have now finished this exercise.
 
-![Journey Optimizer](./images/23.1-79.png)
-
-Next, you'll see the list of applicable **Offer Decisions** that are available for that placement. Retrieve the Decision that you configured in [Module 9 - Offer Decisioning](../module9/offer-decisioning.md) (you can use the search box and type your ldap). Select your Decision and click **Add**.
-
-![Journey Optimizer](./images/23.1-80.png)
-
-You now see all Personalized Offers and the Fallback Offer being visualized inside the email designer. Click  **Preview** to preview the email message with a real customer profile.
-
-![Journey Optimizer](./images/23.1-81.png)
-
-Start by identifying which profile you want to use for the preview. Select the **email** namespace by clicking on the icon next to **Enter identity namespace** field.
-
-![Journey Optimizer](./images/23.1-51.png)
-
-In the list of identity namespaces, select the **Email** namespace. Click **Select**.
-
-![Journey Optimizer](./images/23.1-52.png)
-
-In the **Identity value** field, enter the email address of a previous demo profile that is already stored in the Real-time Customer Profile. For example **woutervangeluwe+19042021-22@gmail.com** and click on the **Find Test Profile** button.
-
-![Journey Optimizer](./images/23.1-54.png)
-
-Next, click **Preview**.
-
-Once the email has been displayed and the offer is correctly displayed click on the **Close** button.
-
-![Journey Optimizer](./images/23.1-83.png)
-
-Finally, click **Save**.
-
-![Journey Optimizer](./images/odsave.png)
-
-You have finished this exercise.
-
-Next Step: [10.6 Setup and use push notifications for iOS](./ex6.md)
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 10](./journeyoptimizer.md)
 
