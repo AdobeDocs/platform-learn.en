@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 2ca908a3-28b9-48d4-b96e-00951de530ba
 ---
 # 14.1 Create an Adobe Experience Platform Data Collection Event Forwarding property
 

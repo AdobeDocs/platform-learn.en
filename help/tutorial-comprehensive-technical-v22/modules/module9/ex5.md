@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 0fb8c244-1025-479f-b82e-374d1aa5e4dc
 ---
 # 9.5 Use your decision in an email
 

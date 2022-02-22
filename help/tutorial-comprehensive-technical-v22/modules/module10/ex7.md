@@ -5,19 +5,23 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: cc06d847-a405-4223-836c-c22ad6c9caca
+exl-id: e80fc8f8-e1f7-4ec9-a046-c4cb71f2feeb
 ---
-# 10.5 Create a business event journey
+# 10.7 Create a business event journey
 
-Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
+Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.
 
-![ACOP](../module7/images/acophome.png)
+![Journey Optimizer](./images/23.1-1.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home** view in Journey Optimizer.
 
-![ACOP](../module7/images/acoptriglp.png)
+![Journey Optimizer](./images/23.1-3.png)
 
-## 10.5.1 Create a business event
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+
+![Journey Optimizer](./images/23.1-3a.png)
+
+## 10.7.1 Create a business event
 
 In the left menu, click **Configurations**.
 
@@ -80,7 +84,7 @@ Finally your event creation form should look like this. Click **Save** to save y
 
 ![Journey Optimizer](./images/23.8-10.png)
 
-## 10.5.2 Create a business event journey
+## 10.7.2 Create a business event journey
 
 You can now leverage this business event inside a journey. Go to **Journeys**. Click **Create Journey**.
 
@@ -182,7 +186,7 @@ Click **Publish** again.
 
 Your journey is now published, you can now test it!
 
-## 10.5.3 Test your business event journey
+## 10.7.3 Test your business event journey
 
 You'll now simulate the re-stock of a product by ingesting a new event against the **Demo System - Event Schema for JO Business Events (Global v1.1) v.1** using Postman.
 

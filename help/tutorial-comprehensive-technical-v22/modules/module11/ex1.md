@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 3bfa32a7-cf7a-43ad-a375-0d8c8cdb52fc
 ---
 # 11.1 Customer Journey Analytics 101
 

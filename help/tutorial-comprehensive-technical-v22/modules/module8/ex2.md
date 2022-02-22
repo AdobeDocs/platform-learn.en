@@ -5,8 +5,8 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: e3e04415-4258-4ad7-a227-0e68dfcba235
 ---
-
 # 8.2 Define an external data source
 
 In this exercise, you'll create a custom external data source by making use of Adobe Journey Optimizer.

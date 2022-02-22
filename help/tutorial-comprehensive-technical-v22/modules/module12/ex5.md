@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 600bd26a-aa5a-413a-8221-8e6e74ad6259
 ---
 # 12.5 Analyze Google Analytics Data using Customer Journey Analytics 
 

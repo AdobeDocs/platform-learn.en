@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 5a0e3584-05ff-4d4d-9e8f-fcf28d349f93
 ---
 # 14.6 Test and troubleshoot your data collection
 

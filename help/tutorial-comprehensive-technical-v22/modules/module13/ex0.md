@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 79711c1a-674c-4233-9c6c-af3bad6d0e0c
 ---
 # 13.0 Configure your environment
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 7f3d6dcb-845d-4ff1-97c3-8e93b8d2c624
 ---
 # 8. Adobe Journey Optimizer: External data sources and custom actions
 

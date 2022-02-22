@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 7b600c79-03c5-46fc-9ac9-a15599608c35
 ---
 # 15.1 Introduction to Apache Kafka
 

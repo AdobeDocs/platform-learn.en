@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 4d92877d-8fdc-4902-ad32-7fa068bc1395
 ---
 # 8.6 Trigger your journey
 

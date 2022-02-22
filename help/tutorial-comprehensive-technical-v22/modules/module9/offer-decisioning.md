@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
 ---
 # 9. Offer Decisioning
 

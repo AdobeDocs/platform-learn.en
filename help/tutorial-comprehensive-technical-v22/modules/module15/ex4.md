@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 6a7c91c2-bc92-4b9b-bd11-18cef86294d3
 ---
 # 15.4 Install and configure Kafka Connect and the Adobe Experience Platform Sink Connector
 

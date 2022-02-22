@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: c157ca52-c84f-4398-a658-2b6067e41707
 ---
 # 14. Real-Time CDP Connections: Event Forwarding
 
