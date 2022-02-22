@@ -51,15 +51,15 @@ In this exercise, you'll configure a trigger-based journey to send out the email
 
 In this exercise, you'll configure a batch-based journey to send out the email message you created in the previous exercise.
 
-[10.3 Apply personalization in an email message](./ex5.md)
+[10.3 Apply personalization in an email message](./ex3.md)
 
 In this exercise, you'll use segment memberships to define what content will be shown inside an email.
 
-[10.4 Setup and use push notifications](./ex6.md)
+[10.4 Setup and use push notifications](./ex4.md)
 
 In this exercise you'll install a mobile application on your iOS device and you'll configure and deliver a push notification to your device.
 
-[10.5 Create a business event journey](./ex7.md)
+[10.5 Create a business event journey](./ex5.md)
 
 In this exercise, you'll define a business event which will deliver a back-in-stock message over SMS to customers that had previously shown interest in that product, but couldn't buy it as the product was out of stock.
 
