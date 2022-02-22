@@ -19,23 +19,19 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ## 10.5.1 Create a business event
 
-In the left menu, click **Configurations**.
+In the left menu, click **Configurations**. Click on the **Manage** button inside the **Events** card.
 
-![Journey Optimizer](./images/23.8-1.png)
-
-Click on the **Manage** button inside the **Events** card.
-
-![Journey Optimizer](./images/23.8-2.png)
+![Journey Optimizer](./images/be1.png)
 
 Business events are a new type of event you can create inside Journey Optimizer. Unlike the **Unitary** events that you have created in previous modules, the business events are not triggered by the customer but by the organization. You'll now create your business event. 
 
 Click **Create Event**.
 
-![Journey Optimizer](./images/23.8-3.png)
+![Journey Optimizer](./images/be2.png)
 
 Enter the following values in the Event creation form:
 
-- **Name**: **ldapItemBackInStock** and replace **ldap** by your ldap. For instance: vangeluwItemBackInStock
+- **Name**: `--demoProfileLdap--ItemBackInStock`. For instance: **vangeluwItemBackInStock**
 - **Description**: This event is triggered when a product is back in stock
 - **Type**: select **Business** in the drop down
 
@@ -67,7 +63,7 @@ Enter the following values in the Event creation form:
 
   ![Journey Optimizer](./images/23.8-7.png)
 
-  For the field **eventName**, enter the following value: **ldapItemBackInStock** and replace **ldap** by your ldap. For instance: vangeluwItemBackInStock.
+  For the field **eventName**, enter the following value: `--demoProfileLdap--ItemBackInStock`. For instance: vangeluwItemBackInStock.
   Click **OK**.
 
   ![Journey Optimizer](./images/23.8-8.png)
@@ -80,105 +76,95 @@ Finally your event creation form should look like this. Click **Save** to save y
 
 ![Journey Optimizer](./images/23.8-10.png)
 
+## 10.5.2 Create an SMS message
+
+In the left menu, go to **Messages** and click **Create Message**.
+
+![AJO](./images/sms1.png)
+
+Give your Message a title following this naming convention `--demoProfileLdap-- - Item back in stock`, select the **SMS Preset** and enable the **SMS** channel. Click on the **Create** button to create your SMS message.
+
+![Journey Optimizer](./images/sms2.png)
+
+The next screen is the message dashboard, where you can configure the text of your SMS. Click the **Compose message** area to create your message.
+
+![Journey Optimizer](./images/sms3.png)
+
+Enter the following text: `Hi {{profile.person.name.firstName}}, the Proteus Fitness Jackshirt is back in stock at Luma.`. Click **Save**.
+
+![Journey Optimizer](./images/sms4.png)
+
+This message is now ready. Click **Publish**.
+
+![Journey Optimizer](./images/sms5.png)
+
+Click **Publish** again.
+
+![Journey Optimizer](./images/sms6.png)
+
+Your message is now published and can be used in a journey.
+
+![Journey Optimizer](./images/sms7.png)
+
 ## 10.5.2 Create a business event journey
 
-You can now leverage this business event inside a journey. Go to **Journeys**. Click **Create Journey**.
+You can now leverage this business event and the message inside a journey. Go to **Journeys**. Click **Create Journey**.
 
-![Journey Optimizer](./images/23.8-11.png)
+![Journey Optimizer](./images/bej10.png)
 
 On the right-hand side you will see a form where you need to specify the journey name and description. Enter the following values:
 
-- **Name**: **ldap - Item back in stock**. Replace **ldap** by your ldap. For instance: vangeluw - Item back in stock
+- **Name**: `--demoProfileLdap-- - Item back in stock journey`. For instance: vangeluw - Item back in stock journey
 - **Description**: This journey sends an SMS when an item is back in stock to visitor who have shown an interest.
 
 Click **OK**. 
 
-![Journey Optimizer](./images/23.8-13.png)
+![Journey Optimizer](./images/bej11.png)
 
-In the left menu, under **Events**, search for your ldap. You'll find the previously created business event **ldapItemBackInStock**. Drag and drop this event onto the canvas as this will be the starting point of the journey. 
+In the left menu, under **Events**, search for your ldap. You'll find the previously created business event `--demoProfileLdap--ItemBackInStock`. Drag and drop this event onto the canvas as this will be the starting point of the journey. 
 
-![Journey Optimizer](./images/23.8-14.png)
+![Journey Optimizer](./images/bej12.png)
 
 As you can see, a **Read Segment** activity has automatically been added to the canvas. This is because the business events only send a trigger for the journey to read a specific segment, which will then retrieve the list of profiles for that journey.
 
 Click the **Read Segment** activity.
-
-![Journey Optimizer](./images/23.8-15.png)
-
 The **Read Segment** configuration expects you to select the segment that you want to notify of the business event that just happened. Click the **Select a segment** field.
 
-![Journey Optimizer](./images/23.8-16.png)
+![Journey Optimizer](./images/bej13.png)
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named **ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)**. for example: vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw). Click **Save**.
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
 
-![Journey Optimizer](./images/23.8-17.png)
+![Journey Optimizer](./images/bej14.png)
 
 Next, click **Ok**. 
 
-![Journey Optimizer](./images/23.8-18.png)
+![Journey Optimizer](./images/bej15.png)
 
-The next step is to drag and drop the action that we want to perform in this journey. In the menu, go to **Actions** and find the action named **ldapSmsTwilio** that you created in [Module 8 - Adobe Journey Optimizer: External data sources and custom actions](../module8/journey-orchestration-external-weather-api-sms.md). 
+The next step is to drag and drop the action that we want to perform in this journey. Select the action **Message**, then drag and drop it after the condition you just added. Click the **Edit** icon to select your message.
+
+![Demo](./images/jop9.png)
+
+You'll then see this. Select the message `--demoProfileLdap-- - Item back in stock` and click **Select**.
+
+![Demo](./images/jop10a.png)
+
+You'll now see your completed action. Click **Ok**.
 
 You’ll then see a panel on the right-hand side where you can configure the action.
 
-![Journey Optimizer](./images/23.8-19.png)
-
-Navigate to the Action Parameters and click on the **pencil** icon for the Action Parameter **TEXTMESSAGE**.
-
-![Journey Optimizer](./images/23.8-22.png)
-
-In the popup you’ll see, click on **Advanced Mode**.
-
-![Journey Optimizer](./images/23.8-23.png)
-
-Select the below code, copy it and paste it in the Advanced Mode Editor.
-
-```
-'Hi ' + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + ' the Zeppelin Yoga pant is back in stock at ' + #{ExperiencePlatform.ExperienceEventFieldGroup.experienceevent.at(0)._experienceplatform.demoEnvironment.brandName}
-```
-
-Click **Ok**.
-
-![Journey Optimizer](./images/23.8-24.png)
-
-Click on the **pencil** icon for the Action Parameter **MOBILENR**.
-
-![Journey Optimizer](./images/23.8-26.png)
-
-In the popup you’ll see, click on **Advanced Mode**.
-
-![Journey Optimizer](./images/23.8-27.png)
-
-Paste this code in the Advanced Mode Editor. Click OK.
-
-`substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 12)`
-
->[!NOTE]
->
->This code is intended to work with mobile phone numbers that have 12 digits (including the +), like this one: **+32463622044**.
->Several other countries have 13-digit phone numbers. If your mobile phone number has 13 digits (including the +), you need to update this code to:
-
-`substr(#{ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number}, 0, 13)`
-
-Click **Ok**.
-
-![Journey Optimizer](./images/23.8-28.png)
-
-Click **Ok**.
-
-![Journey Optimizer](./images/23.8-30.png)
+![Demo](./images/jop10b.png)
 
 In the menu, click **Orchestration** and drag and drop **End** onto the canvas. Click **Ok**.
 
-![Journey Optimizer](./images/23.8-31.png)
+![Journey Optimizer](./images/jop12.png)
 
 Your journey is now ready to be published. Click **Publish**.
 
-![Journey Optimizer](./images/23.8-34.png)
+![Journey Optimizer](./images/jop13.png)
 
 Click **Publish** again.
 
-![Journey Optimizer](./images/23.8-35.png)
+![Journey Optimizer](./images/jop14.png)
 
 Your journey is now published, you can now test it!
 
@@ -186,25 +172,25 @@ Your journey is now published, you can now test it!
 
 You'll now simulate the re-stock of a product by ingesting a new event against the **Demo System - Event Schema for JO Business Events (Global v1.1) v.1** using Postman.
 
-In the left menu, click **Sources**.
+In the left menu, click **Sources** and then click on the **Accounts** tab.
 
-![Journey Optimizer](./images/23.8-36.png)
+![Journey Optimizer](./images/s1.png)
 
-Click on the **Accounts** tab, find the account named **Journey Optimizer Business Events** and click on the name to open it.
+On the **Accounts** tab, you'll find the account named **Journey Optimizer Business Events**. Click it to open it.
 
-![Journey Optimizer](./images/23.8-38.png)
+![Journey Optimizer](./images/s2.png)
 
 This account only has one dataflow, click on the dataflow name to select it.
 
-![Journey Optimizer](./images/23.8-42.png)
+![Journey Optimizer](./images/s3.png)
 
 Click **Copy schema payload** in the right menu. This option copies the entire **curl** command to insert a record against the **Demo System - Event Schema for JO Business Events (Global v1.1) v.1** to your clipboard.
 
-![Journey Optimizer](./images/23.8-43.png)
+![Journey Optimizer](./images/s4.png)
 
 Paste the Curl command inside a text editor
 
-![Journey Optimizer](./images/23.8-44.png)
+![Journey Optimizer](./images/s5.png)
 
 Let's have a closer look to this request,
 
@@ -229,14 +215,14 @@ You now need to replace the following `xdmEntity` line...
 }
 ```
 
-...by this line, make sure you replace **ldap** by your ldap as **ldap**ItemBackInStock represents the condition you have specified in your business event to trigger your journey.
+...by this line, make sure to verify the field eventName as it should say `--demoProfileLdap--ItemBackInStock`, which represents the condition you have specified in your business event to trigger your journey.
 
 ```json
 "xdmEntity": {
   "_experienceplatform": {
     "joBusinessEvents": {
-      "eventDescription": "Product Zeppelin Yoga pant is back in stock",
-      "eventName": "ldapItemBackInStock",
+      "eventDescription": "Product Proteus Fitness Jackshirt is back in stock",
+      "eventName": "--demoProfileLdap--ItemBackInStock",
       "stockEventId": "1"
     }
   },
@@ -248,7 +234,7 @@ You now need to replace the following `xdmEntity` line...
 
 The updated **curl** command should look like this:
 
-![Journey Optimizer](./images/23.8-45.png)
+![Journey Optimizer](./images/s6.png)
 
 Select all of it and copy it to your clipboard.
 
@@ -258,7 +244,7 @@ Open Postman. On the left-hand side of Postman, click **Import**.
 
 Select the **Raw text** tab and paste the command previously copied here. Click **Continue**.
 
-![Journey Optimizer](./images/23.8-48.png)
+![Journey Optimizer](./images/s7.png)
 
 Click **Import**.
 
@@ -270,11 +256,11 @@ Postman has automatically converted the **curl** command into a REST command rea
 
 Verify that your request has been successfully received. Look for a **200 OK** status in postman.
 
-![Journey Optimizer](./images/23.8-52.png)
+![Journey Optimizer](./images/s8.png)
 
-The SMS may take a couple of minutes to arrive on your mobile phone. If it does not, your **Interest in Zeppelin Yoga Pant** segment may not contain a profile with a correct mobile phone. If so, go on the Luma website, visit the **Zeppelin Yoga Pant** product and register while making sure you provide the correct mobile phone number.
+The SMS may take a couple of minutes to arrive on your mobile phone. If it does not, your **Interest in Proteus Fitness Jackshirt** segment may not contain a profile with a correct mobile phone. If so, go on the Luma website, visit the **Proteus Fitness Jackshirt** product and register while making sure you provide the correct mobile phone number.
 
-![Journey Optimizer](./images/23.8-53.png)
+![Journey Optimizer](./images/s9.png)
 
 You have now finished this exercise.
 

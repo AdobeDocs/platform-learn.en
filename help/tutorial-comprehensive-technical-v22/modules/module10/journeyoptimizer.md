@@ -17,7 +17,6 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 
 - Become familiar with Adobe Journey Optimizer
 - Create email and push messages
-- Integrate Offer Decisioning in your email message
 - Configure trigger-based and batch journeys
 - Send email and push notifications as part of a customer journey
 
