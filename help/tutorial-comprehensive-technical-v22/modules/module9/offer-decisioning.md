@@ -11,9 +11,9 @@ exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
 
 **Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-In this module, you will get a hands-on walkthrough of Adobe Experience Platform Offer Decisioning.
+In this module, you will get a hands-on walkthrough of Adobe Journey Optimizer's Offer Decisioning capabilities.
 
-The Adobe Experience Platform Offer Decisioning Application Service provides the ability to create personalized offers and deliver them in an orchestrated way to all destinations that are linked to Adobe Experience Platform.
+Adobe Journey Optimizer provides the ability to create personalized offers and deliver them in an orchestrated way to all destinations that are linked to Adobe Journey Optimizer.
 
 With Offer Decisioning, you can determine the best option from a set of available choices. These options could be offers, product recommendations, content components for a web experience, conversation scripts, and actions to take. 
 
@@ -28,8 +28,7 @@ Please watch this video to understand the value and customer journey:
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
-- Access to Offer Decisioning
+- Access to Adobe Journey Optimizer
 
 >[!IMPORTANT]
 >
@@ -53,27 +52,27 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 [9.1 Offer Decisioning 101](./ex1.md)
 
-In this exercise you'll get a better understanding of all the different concepts of Offer Decisioning, and how to access Offer Decisioning in Adobe Experience Platform.
+In this exercise you'll get a better understanding of all the different concepts of Offer Decisioning, and how to access Offer Decisioning in Adobe Journey Optimizer.
 
-[9.2 Configure your Offers and Decision](./ex2.md)
+[9.2 Configure your offers and decision](./ex2.md)
 
-In this exercise you'll configure your own Personalized Offers and your own Decision, which will then be published.
+In this exercise you'll configure your own personalized offers and your own decision, which will then be published.
 
-[9.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](./ex3.md)
+[9.3 Prepare your Data Collection Client property and Web SDK setup for Offer Decisioning](./ex3.md)
 
-In this exercise you'll use the demo website to test your Decision.
+In this exercise you'll use the demo website to test your decision.
 
-[9.4 Test your Decision using the demo website](./ex4.md)
+[9.4 Combine Adobe Target and Offer Decisioning](./ex4.md)
 
-In this exercise you'll use the demo website to test your Decision.
+In this exercise you'll use your offers in Adobe Target.
 
-[9.5 Test your Decision using the API](./ex5.md)
+[9.5 Use your decision in an email](./ex5.md)
 
-In this exercise you'll use Postman and the Adobe Experience Platform API's to test your Decision.
+In this exercise you'll use your decision in an email.
 
-[9.6 Test your Decision using Journey Orchestration](./ex6.md)
+[9.6 Test your decision using the API](./ex6.md)
 
-In this exercise you'll use Postman and the Adobe Experience Platform API's to test your Decision.
+In this exercise you'll use Postman and the Adobe Experience Platform API's to test your decision.
 
 [Summary and benefits](./summary.md)
 

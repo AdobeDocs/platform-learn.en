@@ -98,9 +98,9 @@ doc-type: multipage
   + [9.1 Offer Decisioning 101](/help/tutorial-comprehensive-technical-v22/modules/module9/ex1.md)
   + [9.2 Configure your Offers and Decision](/help/tutorial-comprehensive-technical-v22/modules/module9/ex2.md)
   + [9.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](/help/tutorial-comprehensive-technical-v22/modules/module9/ex3.md)
-  + [9.4 Test your Decision using the demo website](/help/tutorial-comprehensive-technical-v22/modules/module9/ex4.md)
-  + [9.5 Test your Decision using the API](/help/tutorial-comprehensive-technical-v22/modules/module9/ex5.md)
-  + [9.6 Test your Decision using Journey Orchestration](/help/tutorial-comprehensive-technical-v22/modules/module9/ex6.md)
+  + [9.4 Combine Adobe Target and Offer Decisioning](/help/tutorial-comprehensive-technical-v22/modules/module9/ex4.md)
+  + [9.5 Use your decision in an email and sms](/help/tutorial-comprehensive-technical-v22/modules/module9/ex5.md)
+  + [9.6 Test your Decision using the API](/help/tutorial-comprehensive-technical-v22/modules/module9/ex6.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module9/summary.md)
 + 10 - Adobe Journey Optimizer: Event-based Journeys {#module10}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module10/journeyoptimizer.md)
