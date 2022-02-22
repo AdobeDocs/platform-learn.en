@@ -17,7 +17,6 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 
 - Become familiar with Adobe Journey Optimizer
 - Create email and push messages
-- Integrate Offer Decisioning in your email message
 - Configure trigger-based and batch journeys
 - Send email and push notifications as part of a customer journey
 
@@ -43,31 +42,23 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 ## Exercises
 
-[10.1 Introduction to Adobe Journey Optimizer: build an email message](./ex1.md)
-
-In this exercise, you'll discover Journey Optimizer and you'll build out an email message.
-
-[10.2 Configure a trigger-based journey - Account Creation](./ex2.md)
+[10.1 Configure a trigger-based journey - Order Confirmation](./ex1.md)
 
 In this exercise, you'll configure a trigger-based journey to send out the email message you created in the previous exercise.
 
-[10.3 Configure a trigger-based journey - Order Confirmation](./ex3.md)
-
-In this exercise, you'll configure a trigger-based journey to send out the email message you created in the previous exercise.
-
-[10.4 Configure a batch-based newsletter journey](./ex4.md)
+[10.2 Configure a batch-based newsletter journey](./ex2.md)
 
 In this exercise, you'll configure a batch-based journey to send out the email message you created in the previous exercise.
 
-[10.5 Apply personalization in an email message](./ex5.md)
+[10.3 Apply personalization in an email message](./ex3.md)
 
-In this exercise, you'll use segment memberships to define what content will be shown inside an email and you'll also reuse the Offer Activity that you created in a previous enablement module and you'll embed it in an email message.
+In this exercise, you'll use segment memberships to define what content will be shown inside an email.
 
-[10.6 Setup and use push notifications for iOS](./ex6.md)
+[10.4 Setup and use push notifications](./ex4.md)
 
 In this exercise you'll install a mobile application on your iOS device and you'll configure and deliver a push notification to your device.
 
-[10.7 Create a business event journey](./ex7.md)
+[10.5 Create a business event journey](./ex5.md)
 
 In this exercise, you'll define a business event which will deliver a back-in-stock message over SMS to customers that had previously shown interest in that product, but couldn't buy it as the product was out of stock.
 

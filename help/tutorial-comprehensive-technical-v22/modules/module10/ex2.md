@@ -1,178 +1,186 @@
 ---
-title: Adobe Journey Optimizer - Configure a trigger-based journey - Account Creation
-description: This exercise updates the existing registration journey created in Module 6 to serve the confirmation email using Journey Optimizer instead of ACS
+title: Adobe Journey Optimizer - Configure a batch-based journey
+description: In this section you will configure a batch email journey to send a newsletter
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 761da5b4-682f-430b-951c-278302fc4c54
 ---
-# 10.2 Configure a trigger-based journey - Account Creation
+# 10.2 Configure a batch-based newsletter journey 
 
-Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![Journey Optimizer](./images/23.1-1.png)
+![ACOP](../module7/images/acophome.png)
 
-You'll be redirected to the **Home** view in Journey Optimizer.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-![Journey Optimizer](./images/23.1-3.png)
+![ACOP](../module7/images/acoptriglp.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+## 10.2.1 Create Newsletter Email Message
 
-![Journey Optimizer](./images/23.1-3a.png)
+You'll now create a new email message, to send a newsletter using a batch-based journey. The newsletter email message you'll create in this exercise will be very basic and won't include much personalization. In the next exercise, 10.2, you'll add personalization based on segment memberships and also using Offer Decisioning. For now, let's start with the basic email creation.
 
-## 10.2.1 Configure your trigger-based journey
+In the menu, click **Messages**. 
 
-Go to **Journeys**.
+On the Messages screen, you’ll see a view similar to this. Click **Create Message**.
 
-![Journey Optimizer](./images/23.2-1.png)
+![Journey Optimizer](./images/batch1.png)
 
-Search for your **ldap**.
+Name your message `--demoProfileLdap-- - Newsletter`, select the **Email Preset** and select the **Email** channel. Click **Create**.
 
-![Journey Optimizer](./images/23.2-2.png)
+![Journey Optimizer](./images/batch2.png)
 
-Search and find the Account Creation Journey that you created in [Module 7 - Adobe Journey Optimizer: Orchestration](../module7/journey-orchestration-create-account.md). It should be named **ldap - Account Creation Journey**. Click the journey name to open it.
+First, make sure that the 2 checkboxes under **Optional features** are checked. If not, please **make sure they are both activated**. 
 
-![Journey Optimizer](./images/23.2-2.png)
+![Journey Optimizer](./images/batch3.png)
 
-In the top-right corner, find the **Duplicate** button and click on the arrow next to it. Click **Create a new version**.
+Click the **Subject line** text field.
 
-![Journey Optimizer](./images/23.2-4.png)
+![Journey Optimizer](./images/batch4.png)
 
-Click on the **Create a new version** button in the pop-up window. Your journey will now be editable. 
+Enter this text for the subject line: `Luma Newsletter - your monthly update has arrived.`. Click **Save**.
 
-![Journey Optimizer](./images/23.2-5.png)
+![Journey Optimizer](./images/batch5.png)
 
-Select the **Email** action in your journey, this will display a menu on the right side of the screen. This **Email** action relies on Adobe Campaign Standard to send out emails. In this exercise, that now needs to change to use Journey Optimizer for sending email messages.
+You'll then be back here. Click **Email Designer** to start creating the email content. 
 
-Click **Delete**.
+![Journey Optimizer](./images/batch6.png)
 
-![Journey Optimizer](./images/23.2-6.png)
+You'll then see this. Click **Import HTML**.
 
-Confirm the Delete action by clicking a second time on that button.
+![Journey Optimizer](./images/batch7.png)
 
-![Journey Optimizer](./images/23.2-7.png)
+In the pop-up screen, you'll need to drag and drop the HTML file of the email. You can find the HTML template [here](../../assets/html/ajo-newsletter.html.zip). Download the zip-file with the HTML template to your local machine and unzip in onto your desktop.
 
-You now need to replace this action by a **Message** action. In the left menu, find the **Actions** section and drag and drop a **Message** action in the circle which is now empty in your journey.
+![Journey Optimizer](./images/html1.png)
 
-![Journey Optimizer](./images/23.2-8.png)
+Drag and drop the file **ajo-newsletter.html** to upload it in Journey Optimizer. Click **Import**.
 
-Link the rest of your journey to the outbound transition of the **Message** activity that you just drag and drop. 
+![Journey Optimizer](./images/batch8.png)
 
-![Journey Optimizer](./images/23.2-9.png)
+This email content is ready to go since it has all the expected personalization, imagery and text. Only the offer placeholder is left empty. 
 
-Click on the **Message** activity to display the menu on the right side. Click **Select a message**.
+You might get an error message: **Error when trying to fetch assets**. This is linked to the image in the email.
 
-![Journey Optimizer](./images/23.2-10.png)
+![Journey Optimizer](./images/errorfetch.png)
 
-Enter your **ldap** to see your messages.
+If you get this error, select the image and click the **Edit image** button.
 
-![Journey Optimizer](./images/23.2-12.png)
+![Journey Optimizer](./images/errorfetch1.png)
 
-Select the new message you created in the previous exercise, which is named **ldap - Registration Email**. Click **Select**.
+Click **Assets Essentials** to go back to your AEM Assets Essentials library.
 
-![Journey Optimizer](./images/23.2-13.png)
+![Journey Optimizer](./images/errorfetch2.png)
 
-You'll then see this. Click **Ok**.
+You'll then see this popup. Navigate to the folder **enablement-assets** and select the image **luma-newsletterContent.png**. Click **Select**.
 
-![Journey Optimizer](./images/23.2-14.png)
+![Journey Optimizer](./images/errorfetch3.png)
 
-Your updated Account Creation Journey is now ready to be published. Click **Publish**.
+Your basic newsletter email is now ready. Click **Save**.
 
-![Journey Optimizer](./images/23.2-15.png)
+![Journey Optimizer](./images/ready.png)
+
+Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
+
+![Journey Optimizer](./images/batch9.png)
+
+You've now completed the draft version of your registration email. Click **Publish** to publish your message so you can use it in a journey.
+
+![Journey Optimizer](./images/batch10.png)
 
 Click **Publish** again.
 
-![Journey Optimizer](./images/23.2-16.png)
+![Journey Optimizer](./images/batch11.png)
 
-Your Account Creation Journey has now been successfully updated and from now on will deliver the account registration email using a Journey Optimizer message.
+Wait until you see a green confirmation pop-up at the bottom of the screen indicating that the message is published. 
 
-![Journey Optimizer](./images/jourpub.png)
+![Journey Optimizer](./images/batch12.png)
 
-## 10.2.2 Configure/Verify Test Profile creation
+## 10.2.2 Create newsletter journey
 
-In the next exercise, you'll test your trigger-based journey and to do so, you'll create a new profile in Adobe Experience Platform.
-In order to test and preview messages built in Journey Optimizer, you need to mark that profile as a **Test Profile**. As you can see, marking a profile as Test Profile has been facilitated by adding a checkbox on the **Create Account** screen of the demo website. When you check that checkbox, Adobe Experience Platform will mark a profile as Test Profile.
+Next, go to **Journeys**.
 
-![Journey Optimizer](./images/test1.png)
+You'll now create a batch-based journey. Unlike the event-based journey of the previous exercise which relies on incoming experience events or segment entries or exits to trigger a journey for 1 specific customer, batch-based journeys target a whole segment once with unique content like newsletters, one-off promotions, or generic information or periodically with similar content sent on a regular basis like for instance birthday campaigns and reminders. 
 
-To make this work, you need to verify the setup of your Adobe Experience Platform Data Collection Client property, and more specifically, the **All Authenticated Pages** rule. Click **Custom Code**.
+Click **Create Journey**.
 
-![Journey Optimizer](./images/test2.png)
+![Journey Optimizer](./images/batchj1.png)
 
-You'll see this. Click **Open Editor**.
+On the right-hand side you will see a form where you need to specify the journey name and description. Enter the following values:
 
-![Journey Optimizer](./images/test3.png)
+- **Name**: `--demoProfileLdap-- - Newsletter Journey`. For instance: **vangeluw - Newsletter Journey**.
+- **Description**: Monthly Newsletter
 
-You'll then see this.
+Click **Ok**. 
 
-![Journey Optimizer](./images/test4.png)
+![Journey Optimizer](./images/batchj2.png)
 
-Scroll down to line 24, you should have this line of code there. If you don't have it, copy the below line of code and paste it on line 24 as indicated.
+Under **Orchestration**, drag and drop **Read Segment** onto the canvas. This means that, once published, the journey will start by retrieving the whole segment audience, which then becomes the target audience of the journey and message. 
 
-`"testProfile": Boolean(localStorage.getItem("testProfile")),`
+![Journey Optimizer](./images/batchj3.png)
 
-![Journey Optimizer](./images/test5.png)
+Select **Read Segment**. Click **Select a segment**. 
 
-Scroll down to line 59, you should have this line of code there. If you don't have it, copy the below line of code and paste it on line 59 as indicated.
+![Journey Optimizer](./images/batchj4.png)
 
-`"brandLogo": _satellite.getVar('brandLogo'),`
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
 
-![Journey Optimizer](./images/test6.png)
+![Journey Optimizer](./images/batchj5.png)
 
-Click **Save** followed by clicking **Keep Changes** and then click **Save** again.
+Click **Ok**.
 
-Don't forget to publish the changes by going to **Publishing Flow**, adding the changes to your **Development** library and then click **Save & Build to Development**.
+![Journey Optimizer](./images/batchj6.png)
 
-## 10.2.3 Test your trigger-based journey
+In the left menu, find the **Actions** section and drag and drop a **Message** action onto the canvas.
 
-Let's test the updated journey by creating a new account on the demo website.
+![Journey Optimizer](./images/batchj7.png)
 
-Open a new, clean incognito browser window and go to [https://public.aepdemo.net](https://public.aepdemo.net). 
+Click on the **Message** activity to display the menu on the right-hand side. Click on the **Select a message** drop-down menu.
 
-You'll then see this. 
+![Journey Optimizer](./images/batchj8.png)
 
-![Launch Setup](./images/cdemo1.png)
+Select the message you created in the previous exercise, which is named `--demoProfileLdap - Newsletter`. Click **Select**.
 
-Enter your Configuration ID and click **Load Configuration**. Your configuration is then loaded.
+![Journey Optimizer](./images/batchj9.png)
 
-![Launch Setup](./images/cdemo2.png)
+Click **OK**.
 
-Scroll down and click **Save Configuration**.
+![Journey Optimizer](./images/batchj10.png)
 
-![Launch Setup](./images/cdemo3.png)
+In the menu, click **Orchestration** and drag and drop **End** onto the canvas. Click **Ok**.
 
-You'll then be redirected to the Admin homepage. Go to **Select LDAP**. Select your LDAP and click **Save**.
+![Journey Optimizer](./images/batchj11.png)
 
-![Launch Setup](./images/cdemo5.png)
+Your newsletter journey is now ready to be published. Before you do so, notice the **Schedule** section where you can switch this journey from being a one-off to a recurring campaign. Click the **Schedule** button.
 
-You'll then be redirected to the Admin homepage. Go to **Select Brand** and select the brand **Luma**, click **Save**.
+![Journey Optimizer](./images/batchj12.png)
 
-![Launch Setup](./images/cdemo7.png)
+You'll then see this. Select **Once**.
 
-You'll then be redirected to the Admin homepage. Click the **Luma** logo.
+![Journey Optimizer](./images/sch1.png)
 
-![Launch Setup](./images/cdemo8.png)
+Select a date and time within the next hour so you can test your journey. Click **Ok**.
 
-You'll then see the Luma homepage.
+>[!NOTE]
+>
+>Message send date and time must be within more than one hour.
 
-![Launch Setup](./images/cdemo9.png)
+![Journey Optimizer](./images/sch2.png)
 
-Go to **Login/Register**. Fill out the form and click **Create Account**. Don't forget to check the checkbox for **Test Profile**.
+Click **Publish**.
 
-![Journey Optimizer](./images/23.2-18.png)
+![Journey Optimizer](./images/batchj13.png)
 
-Within a few seconds you'll receive the new Account Creation email served by Journey Optimizer in your inbox.
+Click **Publish** again.
 
-![Journey Optimizer](./images/23.2-17.png)
+![Journey Optimizer](./images/batchj14.png)
 
-You'll also notice that when you change brands on the demo website, that the brand logo and brand name in the email will also dynamically change:
-
-![Journey Optimizer](./images/testemail2.png)
+Your basic newsletter journey is now published. Your newsletter email message will be sent as you defined it in your schedule, and your journey will stop as soon as the last email has been sent.
 
 You have finished this exercise.
 
-Next Step: [10.3 Configure a trigger-based journey - Order Confirmation](./ex3.md)
+Next Step: [10.3 Apply personalization in an email message](./ex3.md)
 
 [Go Back to Module 10](./journeyoptimizer.md)
 

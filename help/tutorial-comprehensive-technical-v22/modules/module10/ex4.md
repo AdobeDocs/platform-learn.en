@@ -1,204 +1,395 @@
 ---
-title: Adobe Journey Optimizer - Configure a batch-based journey
-description: In this section you will configure a batch email journey to send a newsletter
+title: Adobe Journey Optimizer - Setup and use push notifications for iOS
+description: Setup and use push notifications for iOS
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 exl-id: 14a2306a-eb2f-47ee-ad3c-1169412811ca
 ---
-# 10.4 Configure a batch-based newsletter journey 
+# 10.4 Setup and use push notifications for iOS
 
-Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.
+In order to use push notifications with Adobe Journey Optimizer, there are a number of settings to check and know about.
 
-![Journey Optimizer](./images/23.1-1.png)
+Here are all the settings to verify:
 
-You'll be redirected to the **Home** view in Journey Optimizer.
+- Datasets and schemas in Adobe Experience Platform
+- Datastream for mobile
+- Data collection property for mobile
+- App surface for push certificates
+- Test your push setup using AEP Assurance
 
-![Journey Optimizer](./images/23.1-3.png)
+Let's review these one by one.
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![Journey Optimizer](./images/23.1-3a.png)
+![ACOP](../module7/images/acophome.png)
 
-## 10.4.1 Create Newsletter Email Message
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
 
-You'll now create a new email message, to send a newsletter using a batch-based journey. The newsletter email message you'll create in this exercise will be very basic and won't include much personalization. In the next exercise, 10.4, you'll add personalization based on segment memberships and also using Offer Decisioning. For now, let's start with the basic email creation.
+![ACOP](../module7/images/acoptriglp.png)
 
-In the menu, click **Messages**. 
+## 10.4.1 Push datasets
 
-On the Messages screen, you’ll see a view similar to this. Click **Create Message**.
+Adobe Journey Optimizer uses datasets to store things like the push tokens from mobile devices or interactions with push messages (such as: message sent, message opened, etc) in a dataset in Adobe Journey Optimizer.
 
-![Journey Optimizer](./images/23.1-6.png)
+You can find these datasets by going to **[!UICONTROL Datasets]** in the menu on the left side of your screen.
 
-Name your message **ldap - Newsletter** and replace **ldap** by your own ldap, select the **CJM Alpha Preset** and select the **Email** channel. Click **Create**.
+![Data Ingestion](./images/menudsjo.png)
 
-![Journey Optimizer](./images/23.1-65.png)
+## 10.4.2 Datastream for Mobile
 
-First, make sure that the 2 checkboxes under **Optional features** are checked. If not, please **make sure they are both activated**. 
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
-![Journey Optimizer](./images/nlc.png)
+In the left menu, go to **[!UICONTROL Datastream]** and search for your datastream that you created in [Exercise 0.2](./../module0/ex2.md), which is named `--demoProfileLdap-- - Demo System Datastream (Mobile)`. Click to open it.
 
-Click the **Subject line** text field.
+![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
 
-![Journey Optimizer](./images/23.1-67.png)
+Click **[!UICONTROL Development Environment]**.
 
-Let's start by bringing the brand name personalization which is stored under `--aepTenantId--.demoEnvironment.brandName`. In the left hand-side list find the `--aepTenantId--` element and click on the arrow to go a level deeper.
+![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
-![Journey Optimizer](./images/23.1-68.png)
+You'll then see the datastream settings that were defined, and into which datasets events and profile attributes will be stored.
 
-Next, find the **demoEnvironment** element and click the arrow to go a level deeper.
+![Name the Datastream and save](./images/edgeconfig2.png)
 
-![Journey Optimizer](./images/23.1-69.png)
+No changes are needed, your datastream is now ready to be used in your Data Collection Client property for Mobile.
 
-Finally, find the field **brandName** and click on the **+** sign next to it. You'll then see the personalization token appear in the text field.
+## 10.4.3 Review your Data Collection property for Mobile
 
-![Journey Optimizer](./images/23.1-70.png)
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). As part of [Exercise 0.1](./../module0/ex1.md), 2 Data Collection properties were created. 
+You've been using these Data Collection Client properties already as part of previous modules. 
 
-Add this text behind the **brandName**: **Newsletter - your monthly update has arrived.** and click on the save button. 
+Click to open the Data Collection property for mobile.
 
-![Journey Optimizer](./images/23.1-71.png)
+![DSN](./images/launchprop.png)
 
-You'll then be back here. Click **Email Designer** to start creating the email content. 
+In your Data Collection property, go to **Extensions**. You'll then see the various extensions that are needed for the mobile app. Click to open the extension **Adobe Experience Platform Edge Network**.
 
-![Journey Optimizer](./images/23.1-72.png)
+![Adobe Experience Platform Data Collection](./images/launchprop1.png)
 
-You'll then see this. Click **Import HTML**.
+You'll then see that your datastream for mobile is linked here. Next, click **Cancel** to go back to your extensions overview.
 
-![Journey Optimizer](./images/23.1-73.png)
+![Adobe Experience Platform Data Collection](./images/launchprop2.png)
 
-In the pop-up screen, you'll need to drag and drop the HTML file of the email. You can find the HTML template [here](../../assets/html/module23-newsletter.html.zip). Download the zip-file with the HTML template to your local machine and unzip in onto your desktop.
+You'll then be back back here. You'll see the extension for **AEP Assurance**. AEP Assurance helps you inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app. You can read more about AEP Assurance and Project Griffon here [https://aep-sdks.gitbook.io/docs/beta/project-griffon](https://aep-sdks.gitbook.io/docs/beta/project-griffon).
 
-![Journey Optimizer](./images/html1.png)
+![Adobe Experience Platform Data Collection](./images/launchprop8.png)
 
-Drag and drop the file **module23-newsletter.html** to upload it in Journey Optimizer.
+Next, click **Configure** to open the extension **Adobe Journey Optimizer**.
 
-![Journey Optimizer](./images/23.1-74.png)
+![Adobe Experience Platform Data Collection](./images/launchprop9.png)
 
-This email content is ready to go since it has all the expected personalization, imagery and text. Only the offer placeholder is left empty. 
+You'll then see that this is where the dataset for tracking push events is linked.
 
-You might get an error message: **Error when trying to fetch assets**. This is linked to the image in the email.
+![Adobe Experience Platform Data Collection](./images/launchprop10.png)
 
-![Journey Optimizer](./images/errorfetch.png)
+There's no need to make any changes to your Data Collection property.
 
-If you get this error, select the image and click the **Edit image** button.
+## 10.4.4 Review your App Surface setup
 
-![Journey Optimizer](./images/errorfetch1.png)
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). In the left menu, go to **App Surfaces** and ope, the App Surface for **DX Demo App APNS**.
 
-Click the **image** icon to go back to your AEM Assets Essentials library.
+![Adobe Experience Platform Data Collection](./images/appsf.png)
 
-![Journey Optimizer](./images/errorfetch2.png)
+You'll then see the configured App Surface for iOS and Android.
 
-You'll then see this popup. Navigate to the folder **module-23** and select the image **module23-newsletterContent.png**. Click **Select**.
+![Adobe Experience Platform Data Collection](./images/appsf1.png)
 
-![Journey Optimizer](./images/errorfetch3.png)
+## 10.4.5 Test push notification setup using AEP Assurance.
 
-Your basic newsletter email is now ready. Click **Save**.
+Once the app is installed, you'll find it on your device's home screen. Click the icon to open the app.
 
-![Journey Optimizer](./images/ready.png)
+![DSN](../module0/images/mobileappn1.png)
 
-Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
+When you're using the app the first time, you'll be requested to log in using your Adobe ID. Complete the login process.
 
-![Journey Optimizer](./images/23.1-85.png)
+![DSN](../module0/images/mobileappn2.png)
 
-You've now completed the draft version of your registration email. Click **Publish** to publish your message so you can use it in a journey.
+After logging in, you'll see a notification requesting your permission to send notifications. We'll send notifications as part of the tutorial, so click **Allow**.
 
-![Journey Optimizer](./images/23.1-86.png)
+![DSN](../module0/images/mobileappn3.png)
+
+You'll then see the app's homepage. Go to **Settings**.
+
+![DSN](../module0/images/mobileappn4.png)
+
+In settings, you'll see that currently a **Public Project** is loaded in the app. Click **Custom Project**.
+
+![DSN](../module0/images/mobileappn5.png)
+
+You can now load a custom project. Click the QR code to easily load your project.
+
+![DSN](../module0/images/mobileappn6.png)
+
+After exercise 0.1, you had this result. Click to open the **Mobile Retail project** that was created for you.
+
+![DSN](../module0/images/dsn5b.png)
+
+In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your mobile app project to open it.
+
+![DSN](../module0/images/web8a.png)
+
+You'll then see this. Click **Integrations**.
+
+![DSN](../module0/images/web8aa.png)
+
+You need to select the Data Collection property for mobile that was created in exercise 0.1. Next, click **Run**.
+
+![DSN](../module0/images/web8b.png)
+
+You'll then see this popup, which contains a QR code. Scan this QR-code from within the mobile app.
+
+![DSN](../module0/images/web8c.png)
+
+You'll then see your project ID show in the app, after which you can click **Save**.
+
+![DSN](../module0/images/mobileappn7.png)
+
+Now, go back to **Home** in the app. Your app is now ready to be used.
+
+![DSN](../module0/images/mobileappn8.png)
+
+You now need to scan a QR code to connect your mobile device to your AEP Assurance session. 
+
+To start an AEP Assurance session, go to [https://experience.adobe.com/#/@experienceplatform/griffon](https://experience.adobe.com/#/@experienceplatform/griffon). Click **Create Session**.
+
+![Adobe Experience Platform Data Collection](./images/griffon3.png)
+
+Click **Start**.
+
+![Adobe Experience Platform Data Collection](./images/griffon5.png)
+
+Fill out the values:
+
+- Session Name: use `--demoProfileLdap-- - push debugging` and replace ldap by your ldap
+- Base URL: use **dxdemo://default**
+
+Click **Next**.
+
+![Adobe Experience Platform Data Collection](./images/griffon4.png)
+
+You'll then see a QR code on your screen, which you should scan with your iOS device.
+
+![Adobe Experience Platform Data Collection](./images/griffon6.png)
+
+On your mobile device, open the camera app and scan the QR code that is displayed by AEP Assurance.
+
+![Adobe Experience Platform Data Collection](./images/ipadPushTest8a.png)
+
+You'll then see a popup screen, asking you to enter the PIN-code. Copy the PIN-code from your AEP Assurance screen and click **Connect**.
+
+![Adobe Experience Platform Data Collection](./images/ipadPushTest9.png)
+
+You'll then see this.
+
+![Adobe Experience Platform Data Collection](./images/ipadPushTest11.png)
+
+In AEP Assurance, you'll now see that a devicer is to the AEP Assurance session.
+
+![Adobe Experience Platform Data Collection](./images/griffon7.png)
+
+Go to **Push Debug**. You'll see something like this.
+
+![Adobe Experience Platform Data Collection](./images/griffon10.png)
+
+Some explanation:
+
+- The first column, **Client**, shows the available identifiers on your iOS device. You'll see an ECID and a Push Token.
+- The second column shows **Profile** information, with additional info on what platform the Push Token lives in (APNS or APNSSandbox). If you click the **Inspect Profile** button, you'll be taken to Adobe Experience Platform and you'll see the full Real-time Customer Profile.
+- The 3rd column shows the **App Configuration**, which was set up as part of exercise **10.5.4 Create App Configuration in Launch**
+
+To test your Push configuration setup, click the **Send Push Notification** button. 
+
+![Adobe Experience Platform Data Collection](./images/griffon11.png)
+
+You need to make sure that the **DX Demo** app isn't open at the time of clicking the **Send Push Notification** button. If the app is open, the Push Notification might be received in the background and wouldn't be visible.
+
+You'll then see a push notification like this one appear on your mobile device.
+
+![Adobe Experience Platform Data Collection](./images/ipadPush2.png)
+
+If you've received the push notification, that means that your setup is correct and working fine.
+
+## 10.4.6 Create a push message
+
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
+
+![ACOP](../module7/images/acophome.png)
+
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+
+![ACOP](../module7/images/acoptriglp.png)
+
+In the left menu, go to **Messages** and click **Create Message**.
+
+![Push](./images/bp1.png)
+
+Fill out the name using this convention: `--demoProfileLdap-- - Welcome to store`. Check the checkbox for **Push Notification** and select the preset named **Push**. Click **Create**.
+
+![Push](./images/bp3.png)
+
+You'll then see this. Click the **personalization** icon for the **Title** field.
+
+![Push](./images/bp5.png)
+
+You'll then see this. You can now select any Profile attribute from the Real-time Customer Profile directly.
+
+![Push](./images/bp6.png)
+
+Search for the field **First Name**, then click the **+** icon next to the field **First Name**. You'll then see the personalization token for First Name being added: **{{profile.person.name.firstName}}**.
+
+![Push](./images/bp9.png)
+
+Next, add the text **, welcome to our store!** behind **{{profile.person.name.firstName}}**.
+
+Click **Save**.
+
+![Push](./images/bp10.png)
+
+You now have this. Click the **personalization** icon for the **Body** field.
+
+![Push](./images/bp11.png)
+
+Enter this text **Click here to get a 10% discount when you buy today!** and click **Save**.
+
+![Push](./images/bp12.png)
+
+Your Push message is now ready. Click **Publish** to publish your message.
+
+![Push](./images/bp13.png)
 
 Click **Publish** again.
 
-![Journey Optimizer](./images/23.1-87.png)
+![Push](./images/bp14.png)
 
-Wait until you see a green confirmation pop-up at the bottom of the screen indicating that the message is published. 
+Your message is now ready and can be used in a journey.
 
-![Journey Optimizer](./images/23.1-88.png)
+![Push](./images/bp15.png)
 
-## 10.4.2 Create newsletter journey
+## 10.4.7 Create a new event
 
-Next, go to **Journeys**.
+In the menu, go to **Journey Administration** and click **Manage** under **Events**.
 
-![Journey Optimizer](./images/23.2-1.png)
+![ACOP](./images/acopmenu.png)
 
-You'll now create a batch-based journey. Unlike the event-based journey of the previous exercise which relies on incoming experience events or segment entries or exits to trigger a journey for 1 specific customer, batch-based journeys target a whole segment once with unique content like newsletters, one-off promotions, or generic information or periodically with similar content sent on a regular basis like for instance birthday campaigns and reminders. 
+On the **Events** screen, you'll see a view similar to this. Click **Create Event**.
 
-Click **Create Journey**.
+![ACOP](./images/add.png)
 
-![Journey Optimizer](./images/23.3-1.png)
+You'll then see an empty event configuration.
 
-On the right-hand side you will see a form where you need to specify the journey name and description. Enter the following values:
+![ACOP](./images/emptyevent.png)
 
-- **Name**: **ldap - Newsletter**. Replace **ldap** by your ldap. For instance: vangeluw - Newsletter.
-- **Description**: Monthly Newsletter
+First of all, give your Event a Name like this: `--demoProfileLdap--StoreEntryEvent` and set description to `Store Entry Event`.
 
-Click **Ok**. 
+![ACOP](./images/eventname.png)
 
-![Journey Optimizer](./images/23.3-2.png)
+Next is the **Event Type** selection. Select **Unitary**.
 
-Under **Orchestration**, drag and drop **Read Segment** onto the canvas. This means that, once published, the journey will start by retrieving the whole segment audience, which then becomes the target audience of the journey and message. 
+![ACOP](./images/eventidtype1.png)
 
-![Journey Optimizer](./images/23.3-3.png)
+Next is the **Event ID Type** selection. Select **System Generated**
 
-Select **Read Segment**. Click **Select a segment**. 
+![ACOP](./images/eventidtype.png)
 
-![Journey Optimizer](./images/23.3-4.png)
+Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named **ldap - Interest in Zeppelin Yoga Pant (RTCDP - ldap)**. for example: vangeluw - Interest in Zeppelin Yoga Pant (RTCDP - vangeluw). Click **Save**.
+![ACOP](./images/eventschema.png)
 
-![Journey Optimizer](./images/23.3-5.png)
+After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Your event is now fully configured.
 
-Click **Ok**.
+![ACOP](./images/eventpayload.png)
 
-![Journey Optimizer](./images/23.3-6.png)
+You should then see this. Click **Save**.
 
-In the left menu, find the **Actions** section and drag and drop a **Message** action onto the canvas.
+![ACOP](./images/eventsave.png)
 
-![Journey Optimizer](./images/23.3-7.png)
+Your Event is now configured and saved. Click on your event again to open up the **Edit Event** screen again.
 
-Click on the **Message** activity to display the menu on the right-hand side. Click on the **Select a message** drop-down menu.
+![ACOP](./images/eventdone.png)
 
-![Journey Optimizer](./images/23.3-8.png)
+Hover over the **Payload** field and click on the **View Payload** icon.
 
-Select the message you created in the previous exercise, which is named **ldap - Newsletter**. Click **Select**.
+![ACOP](./images/hover.png)
 
-![Journey Optimizer](./images/23.3-9.png)
+You'll now see an example of the expected payload.
 
-Click **OK**.
+![ACOP](./images/fullpayload.png)
 
-![Journey Optimizer](./images/23.3-10.png)
+Your Event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see `_experience.campaign.orchestration.eventID`.
 
-Your newsletter journey is now ready to be published. Before you do so, notice the **Schedule** section where you can switch this journey from being a one-off to a recurring campaign. Click the **Schedule** button.
+![ACOP](./images/payloadeventID.png)
 
-![Journey Optimizer](./images/23.3-11.png)
+The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in the next step. Write down this eventID, as you'll need it in the next step.
+`"eventID": "e3a8f0bdc0b609667cd96a72a6b1e5aafa0ddaf6ccf121c574e6a2030860a633"`
 
-You'll then see this. Select **Once**.
+Click **Ok**, followed by **Cancel**.
 
-![Journey Optimizer](./images/sch1.png)
+## 10.4.8 Use your event and push message in a journey
 
-Select a date and time within the next hour so you can test your journey. Click **Ok**.
+In the menu, go to **Journeys** and click **Create Journey**.
+
+![DSN](./images/sjourney1.png)
+
+You'll then see this. Give your journey a name. Use `--demoProfileLdap-- - Store Entry journey`. Click **OK**.
+
+![DSN](./images/sjourney3.png)
+
+First, you need to add your event as the starting point of your journey. Search for your event `--demoProfileLdap--StoreEntryEvent` and drag and drop it onto the canvas. Click **OK**.
+
+![DSN](./images/sjourney4.png)
+
+Next, under **Actions**, search for the **Message** action.
+Drag and drop the **Message** action onto the canvas.
+
+![DSN](./images/sjourney5.png)
+
+Click the **edit** icon to select your message.
+
+![DSN](./images/sjourney6.png)
+
+Select the push message you created in the previous step. Click **Select**.
+
+![DSN](./images/sjourney7.png)
+
+You then have this. Click **OK**.
+
+![DSN](./images/sjourney8.png)
+
+Search for the orchestration type **End** and drag and drop it onto the canvas. Click **OK**.
+
+![DSN](./images/sjourney9.png)
+
+Click **Publish** twice.
+
+![DSN](./images/sjourney10.png)
+
+Your journey is now published.
+
+![DSN](./images/sjourney11.png)
+
+## 10.4.9 Test your journey and push message
+
+In your DX Demo 2.0 mobile application, go to the **Settings** screen. Click the **Store Entry** button.
 
 >[!NOTE]
 >
->Message send date and time must be within more than one hour.
+>The **Store Entry** button is currently being implemented. You won't yet find it in the app.
 
-![Journey Optimizer](./images/sch2.png)
+![DSN](./images/demo1b.png)
 
-In the menu, click **Orchestration** and drag and drop **End** onto the canvas. Click **Ok**.
+Make sure to close the app immediately after clicking the **Store Entry** icon, otherwise the push message won't be shown.
 
-![Journey Optimizer](./images/sch3.png)
+![DSN](./images/demo2.png)
 
-Click **Publish**.
+After a couple of seconds, you'll see the message appear.
 
-![Journey Optimizer](./images/23.3-12.png)
-
-Click **Publish** again.
-
-![Journey Optimizer](./images/23.3-13.png)
-
-Your basic newsletter journey is now published. Your newsletter email message will be sent as you defined it in your schedule, and your journey will stop as soon as the last email has been sent.
+![DSN](./images/demo3.png)
 
 You have finished this exercise.
 
-Next Step: [10.5 Apply personalization in an email message](./ex5.md)
+Next Step: [10.5 Create a business event journey](./ex5.md)
 
 [Go Back to Module 10](./journeyoptimizer.md)
 

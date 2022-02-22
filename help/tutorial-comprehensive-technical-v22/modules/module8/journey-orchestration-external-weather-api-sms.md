@@ -68,11 +68,11 @@ Learn how to define an external action using Adobe Journey Optimizer.
 
 Learn how to setup and use the SMS channel within Adobe Journey Optimizer.
 
-[8.5 Design a trigger-based journey](./ex4.md)
+[8.5 Design a trigger-based journey](./ex5.md)
 
 Combine events, data sources and actions into an intelligent and contextual journey.
 
-[8.6 Update your Data Collection property and test your Journey](./ex5.md)
+[8.6 Trigger your journey](./ex6.md)
 
 Trigger your specific journey.
 

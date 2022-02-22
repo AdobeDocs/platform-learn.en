@@ -7,7 +7,7 @@ doc-type: tutorial
 activity: develop
 exl-id: d3ceb676-d7f5-4f52-85a4-deaa5ef24034
 ---
-# 7.4 Update your Data Collection property and test your Journey
+# 7.4 Update your Data Collection property and test your journey
 
 ## 7.4.1 Update your Data Collection property
 
