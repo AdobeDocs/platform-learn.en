@@ -15,24 +15,9 @@ Go to [https://console.cloud.google.com/](https://console.cloud.google.com/). Go
 
 ![GCP](./images/gcp1.png)
 
-You'll then see this. Click **Create Project**.
+You'll then see this. Click **CREATE FUNCTION**.
 
 ![GCP](./images/gcp2.png)
-
-As a **Project Name**, use **Launch Server Side - GCP**. 
-As **Location**, make a choice where to store your project.
-
-Click **CREATE**.
-
-![GCP](./images/gcp3.png)
-
-Your project will then be created.
-
-![GCP](./images/gcp4.png)
-
-You can then create a Cloud Function. Click **CREATE FUNCTION**.
-
-![GCP](./images/gcp5.png)
 
 You'll then see this.
 
@@ -40,7 +25,7 @@ You'll then see this.
 
 Make the following choices:
 
-- **Function name**: ldap-launch-ssf (replace ldap by your ldap)
+- **Function name**: `--demoProfileLdap---event-forwarding`
 - **Region**: select any region
 - **Trigger Type**: select **HTTP**
 - **Authentication**: select **Allow unauthenticated invocations**
@@ -59,12 +44,14 @@ You'll then see this:
 
 Make the following choices:
 
-- **Runtime**: select **Node.js 12**
+- **Runtime**: select **Node.js 16** (or more recent)
 - **Entry point**: enter **helloAEP**
+
+Click **ENABLE API** to enable **Cloud Build API**. You'll then see a new window. In that new window, click **ENABLE** again.
 
 ![GCP](./images/gcp10.png)
 
-Click **ENABLE API** to enable **Cloud Build API**. You'll then see a new window. In that new window, click **ENABLE** again.
+You'll then see this. Click **Enable**.
 
 ![GCP](./images/gcp11.png)
 
@@ -73,9 +60,6 @@ Once **Cloud Build API** has been enabled, you'll see this.
 ![GCP](./images/gcp12.png)
 
 Go back to your **Cloud Function**.
-
-![GCP](./images/gcp13.png)
-
 In your Cloud Function Inline Editor, make sure you have the following code there:
 
 ```javascript
@@ -93,6 +77,8 @@ exports.helloAEP = (req, res) => {
 
 Next, click **DEPLOY**.
 
+![GCP](./images/gcp13.png)
+
 You'll then see this. Your Cloud Function is now being created. This may take a couple of minutes.
 
 ![GCP](./images/gcp14.png)
@@ -105,7 +91,7 @@ You'll then see this. Go to **TRIGGER**. You'll then see the **Trigger URL** whi
 
 ![GCP](./images/gcp16.png)
 
-Copy the Trigger URL, which looks like this: **https://us-central1-launch-server-side-gcp.cloudfunctions.net/vangeluw-launch-ssf**.
+Copy the Trigger URL, which looks like this: **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**.
 
 In the next steps, you'll configure Adobe Experience Platform Data Collection Server to stream specific information about **Page Views** to your Google Cloud Function. Instead of just forwarding the full payload as-is, you'll only send things like **ECID**, **timestamp** and **Page Name** to your Google Cloud Function.
 
@@ -116,55 +102,102 @@ Here's an example of a payload that you'll need to parse to filter out the above
   "events": [
     {
       "xdm": {
-		  "eventType": "web.webpagedetails.pageViews",
-		  "web": {
-		    "webPageDetails": {
-		      "URL": "https://public.aepdemo.net/index.html",
-		      "name": "Luma Home"
-		    },
-		    "webReferrer": {
-		      "URL": "https://public.aepdemo.net/admin.html"
-		    }
-		  },
-		  "device": {
-		    "screenHeight": 1080,
-		    "screenWidth": 1920,
-		    "screenOrientation": "landscape"
-		  },
-		  "environment": {
-		    "type": "browser",
-		    "browserDetails": {
-		      "viewportWidth": 1920,
-		      "viewportHeight": 507,
-		      "userAgent": "Mozilla/5.0 (Macintosh; Intel Mac OS X 11_1_0) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/88.0.4324.96 Safari/537.36",
-		      "acceptLanguage": "en"
-		    }
-		  },
-		  "placeContext": {
-		    "localTime": "2021-01-29T15:45:26.815+01:00",
-		    "localTimezoneOffset": -60
-		  },
-		  "timestamp": "2021-01-29T14:45:26.815Z",
-		  "implementationDetails": {
-		    "name": "https://ns.adobe.com/experience/alloy/reactor",
-		    "version": "2.3.0+2.2.0",
-		    "environment": "browser"
-		  },
-		  "_experienceplatform": {
-		    "identification": {
-		      "core": {
-		        "ecid": "83249052138816938582105724584714316131"
-		      }
-		    },
-		    "demoEnvironment": {
-		      "tms": "Launch",
-		      "ldap": "vangeluw",
-		      "brandLogo": "https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/d632e769791f0a4dbe0b84058d282d45_logo.png",
-		      "brandName": "Luma",
-		      "brandIndustry": "retail"
-		    }
-		  }
-		}
+        "eventType": "web.webpagedetails.pageViews",
+        "web": {
+          "webPageDetails": {
+            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC",
+            "name": "vangeluw-OCUC",
+            "viewName": "vangeluw-OCUC",
+            "pageViews": {
+              "value": 1
+            }
+          },
+          "webReferrer": {
+            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/equipment"
+          }
+        },
+        "device": {
+          "screenHeight": 1080,
+          "screenWidth": 1920,
+          "screenOrientation": "landscape"
+        },
+        "environment": {
+          "type": "browser",
+          "browserDetails": {
+            "viewportWidth": 1920,
+            "viewportHeight": 451
+          }
+        },
+        "placeContext": {
+          "localTime": "2022-02-23T06:51:07.140+01:00",
+          "localTimezoneOffset": -60
+        },
+        "timestamp": "2022-02-23T05:51:07.140Z",
+        "implementationDetails": {
+          "name": "https://ns.adobe.com/experience/alloy/reactor",
+          "version": "2.8.0+2.9.0",
+          "environment": "browser"
+        },
+        "_experienceplatform": {
+          "identification": {
+            "core": {
+              "ecid": "08346969856929444850590365495949561249"
+            }
+          },
+          "demoEnvironment": {
+            "brandName": "vangeluw-OCUC"
+          },
+          "interactionDetails": {
+            "core": {
+              "channel": "web"
+            }
+          }
+        }
+      },
+      "query": {
+        "personalization": {
+          "schemas": [
+            "https://ns.adobe.com/personalization/html-content-item",
+            "https://ns.adobe.com/personalization/json-content-item",
+            "https://ns.adobe.com/personalization/redirect-item",
+            "https://ns.adobe.com/personalization/dom-action"
+          ],
+          "decisionScopes": [
+            "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0YzA1MjM4MmUxYjY1MDUiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRiZjA5ZGM0MTkwZWJiYSJ9",
+            "__view__"
+          ]
+        }
+      }
+    }
+  ],
+  "query": {
+    "identity": {
+      "fetch": [
+        "ECID"
+      ]
+    }
+  },
+  "meta": {
+    "state": {
+      "domain": "adobedemo.com",
+      "cookiesEnabled": true,
+      "entries": [
+        {
+          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_identity",
+          "value": "CiYwODM0Njk2OTg1NjkyOTQ0NDg1MDU5MDM2NTQ5NTk0OTU2MTI0OVIPCPn66KfyLxgBKgRJUkwx8AH5-uin8i8="
+        },
+        {
+          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent_check",
+          "value": "1"
+        },
+        {
+          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent",
+          "value": "general=in"
+        }
+      ]
+    }
+  }
+}
 ```
 
 These are the fields that contain the information that needs to be parsed out:
@@ -175,15 +208,11 @@ These are the fields that contain the information that needs to be parsed out:
 
 Let's go to Adobe Experience Platform Data Collection Server now, to configure the data elements to make that possible.
 
-## 14.4.2 Update your Adobe Experience Platform Data Collection Server property: Data Elements
+## 14.4.2 Update your Event Forwarding property: Data Elements
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and go to **Event Forwarding**. Search your Event Forwarding property and click it to open it.
 
-![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
-
-In the top left corned, click **Client Side** and in the dropdown menu, click **Server Side**. You'll then see an overview of all available Adobe Experience Platform Data Collection Server properties. Click to open the property you created in [exercise 14.1](./ex1.md).
-
-![Adobe Experience Platform Data Collection SSF](./images/launchhome1.png)
+![Adobe Experience Platform Data Collection SSF](./images/prop1.png)
 
 In the left menu, go to **Data Elements**. Click **Add Data Element**.
 
@@ -252,7 +281,7 @@ You now have these data elements created:
 
 ![Adobe Experience Platform Data Collection SSF](./images/de3gcp.png)
 
-## 14.4.3 Update your Adobe Experience Platform Data Collection Server property: Update a Rule
+## 14.4.3 Update your Event Forwarding property: Update a Rule
 
 In the left menu, go to **Rules**. In the previous exercise, you created the rule **All Pages**. Click that rule to open it.
 
@@ -278,7 +307,7 @@ That should give you this **Name**: **Adobe Cloud Connector - Make Fetch Call**.
 Next, configure the following:
 
 - Change the request protocol from GET to **POST**
-- Enter the URL of the Google Cloud Function you created in one of the previous steps which looks like this: **https://us-central1-launch-server-side-gcp.cloudfunctions.net/vangeluw-launch-ssf**
+- Enter the URL of the Google Cloud Function you created in one of the previous steps which looks like this: **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**
 
 You should now have this. Next, go to **Body**.
 
@@ -304,7 +333,7 @@ You'll then see this. Click **Save**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl10gcp.png)
 
-You've now update your existing rule in a Adobe Experience Platform Data Collection Server property. Go to **Publishing Flow** to publish your changes. Open your Development library **v1** by clicking **Edit** as indicated.
+You've now update your existing rule in a Adobe Experience Platform Data Collection Server property. Go to **Publishing Flow** to publish your changes. Open your Development library **Main** by clicking **Edit** as indicated.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl12gcp.png)
 
@@ -318,35 +347,37 @@ After a couple of minutes, you'll see that the deployment is done and ready to b
 
 ## 14.3.4 Test your configuration
 
-Open a new, clean incognito browser window and go to [https://public.aepdemo.net](https://public.aepdemo.net). 
+Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
 
-You'll then see this. 
+![DSN](../module0/images/web8.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo1.png)
+You can now follow the below flow to access the website. Click **Integrations**.
 
-Enter your Configuration ID and click **Load Configuration**. Your configuration is then loaded.
+![DSN](../module0/images/web1.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo2.png)
+On the **Integrations** page, you need to select the Data Collection property that was created in exercise 0.1. 
 
-Scroll down and click **Save Configuration**.
+![DSN](../module0/images/web2.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo3.png)
+You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-You'll then be redirected to the Admin homepage. Go to **Select LDAP**. Select your LDAP and click **Save**.
+![DSN](../module0/images/web3.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo5.png)
+Open a new incognito browser window.
 
-You'll then be redirected to the Admin homepage. Go to **Select Brand** and select the brand **Luma**, click **Save**.
+![DSN](../module0/images/web4.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo7.png)
+Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-You'll then be redirected to the Admin homepage. Click the **Luma** logo.
+![DSN](../module0/images/web5.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo8.png)
+Select your account type and complete the login process.
 
-You'll then see the Luma homepage.
+![DSN](../module0/images/web6.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo9.png)
+You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+
+![DSN](../module0/images/web7.png)
 
 When you open up your browser Developer View, you can inspect Network requests as indicated below. When you use the filter **interact**, you'll see the network requests that are sent by Adobe Experience Platform Data Collection Client to the Adobe Edge.
 
@@ -374,7 +405,7 @@ Update your code like this:
  * @param {!express:Response} res HTTP response context.
  */
 exports.helloAEP = (req, res) => {
-  console.log('>>>>> Function has started. The following information was received from Launch Server Side:');
+  console.log('>>>>> Function has started. The following information was received from Event Forwarding:');
   console.log(req.body);
 
   let message = req.query.message || req.body.message || 'Hello World!';
@@ -390,7 +421,7 @@ After a couple of minutes, your function will be deployed again. Click your func
 
 ![Adobe Experience Platform Data Collection Setup](./images/gcf3.png)
 
-On your demo website, navigate to a product, like for instance **Nadia Elements Shell**.
+On your demo website, navigate to a product, like for instance **DEIRDRE RELAXED-FIT CAPRI**.
 
 ![Adobe Experience Platform Data Collection Setup](./images/gcf3a.png)
 
@@ -402,7 +433,7 @@ For every page view on your demo website, you should now see a new log entry pop
 
 You've now successfully sent data that was collected by Adobe Experience Platform Data Collection, in real-time, to a Google Cloud Function endpoint. From there, that data can be used by any Google Cloud Platform application, such as BigQuery for storage and reporting or for Machine Learning use cases.
 
-Next Step: [14.5 Create and configure a Microsoft Azure Function](./ex5.md)
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 14](./aep-data-collection-ssf.md)
 

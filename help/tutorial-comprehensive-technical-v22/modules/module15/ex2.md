@@ -29,7 +29,11 @@ Open a **Terminal** window by right-clicking your folder and clicking **New Term
 
 Run this command in your Terminal window to uncompress the downloaded file:
 
-`tar -xvf kafka_2.13-2.8.0.tgz`
+`tar -xvf kafka_2.13-3.1.0.tgz`
+
+>[!NOTE]
+>
+>Please verify that the above command matches the version of the file you downloaded. If your version is more recent, you'll need to update the above command to match that version.
 
 ![Kafka](./images/kafka5.png)
 
@@ -47,7 +51,11 @@ And in that directory, you'll see these subdirectries:
 
 Go back to your Terminal window. Enter the following command:
 
-`cd kafka_2.13-2.8.0`
+`cd kafka_2.13-3.1.0`
+
+>[!NOTE]
+>
+>Please verify that the above command matches the version of the file you downloaded. If your version is more recent, you'll need to update the above command to match that version.
 
 ![Kafka](./images/kafka9.png)
 
@@ -63,7 +71,7 @@ You should then see this response. This means that Kafka is properly installed a
 
 In order to start Kafka, you'll need to start Kafka Zookeeper and Kafka, in this order.
 
-Open a **Terminal** window by right-clicking your folder **kafka_2.13-2.8.0** and clicking **New Terminal at Folder**.
+Open a **Terminal** window by right-clicking your folder **kafka_2.13-3.1.0** and clicking **New Terminal at Folder**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -79,7 +87,7 @@ You'll then see this:
 
 Keep this window open while your going through these exercises!
 
-Open another, new **Terminal** window by right-clicking your folder **kafka_2.13-2.8.0** and clicking **New Terminal at Folder**.
+Open another, new **Terminal** window by right-clicking your folder **kafka_2.13-3.1.0** and clicking **New Terminal at Folder**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -97,13 +105,13 @@ Keep this window open while your going through these exercises!
 
 ## 15.2.3 Create a Kafka topic
 
-Open a **Terminal** window by right-clicking your folder **kafka_2.13-2.8.0** and clicking **New Terminal at Folder**.
+Open a **Terminal** window by right-clicking your folder **kafka_2.13-3.1.0** and clicking **New Terminal at Folder**.
 
 ![Kafka](./images/kafka11.png)
 
 Enter this command to create a new Kafka topic with the name **aeptest**. This topic will be used for testing in this exercise.
 
-`bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic aeptest --create --partitions 1 --replication-factor 1` 
+`bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
 ![Kafka](./images/kafka16a.png)
 
@@ -113,7 +121,7 @@ You'll then see a similar confirmation:
 
 Enter this command to create a new Kafka topic with the name **aep**. This topic will be used by the Adobe Experience Platform Sink Connector that you'll configure in the next exercises.
 
-`bin/kafka-topics.sh --zookeeper 127.0.0.1:2181 --topic aep --create --partitions 1 --replication-factor 1` 
+`bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
 ![Kafka](./images/kafka16.png)
 
