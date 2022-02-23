@@ -73,18 +73,15 @@ A dataset is now configured to start collecting data from your Platform Web SDK 
 Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL Adobe Experience Platform]. The datastream is the link between your tag property, the Platform Edge Network, and the Experience Platform dataset.
 
 1. Open the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
-1. Click **[!UICONTROL Datastreams]** from the left navigation
-![Properties Screen](assets/datastreams-tag-properties.png)
-
+1. Select **[!UICONTROL Datastreams]** from the left navigation
 1. Open the datastream you created in the [Configure a datastream](configure-datastream.md) lesson, `Luma Web SDK`
 
-    ![Datastream Selection](assets/experience-platform-datastream.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
 
-1. Open the **[!UICONTROL Development Environment]**
-    
-    ![Datastream Environment Selection](assets/experience-platform-datastream-environment.png)
-
-1. In the **[!UICONTROL Adobe Experience Platform]** section, select the development sandbox you are using for the tutorial and `Luma Web Event Data` as the **[!UICONTROL Dataset]**
+1. Select **[!UICONTROL Add Service]**
+     ![Add a service to the datastream](assets/experience-platform-addService.png)
+1. Select **[!UICONTROL Adobe Experience Platform]** as the **[!UICONTROL Service]**
+1. Select `Luma Web Event Data` as the **[!UICONTROL Event Dataset]**
 
 1. Select **[!UICONTROL Save]**. 
 

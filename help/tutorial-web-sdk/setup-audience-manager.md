@@ -30,28 +30,22 @@ To complete this lesson, you must first:
 
 The Audience Manager implementation using the Platform Web SDK differs from the implementation using [server-side forwarding (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html). Server-side forwarding passes Adobe Analytics request data to Audience Manager. A Platform Web SDK implementation passes XDM data sent to Platform Edge Network to Audience Manager. Audience Manager is enabled in the datastream:
 
-1. Go to the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
-1. Select **[!UICONTROL Datastreams]** from the left navigation 
+1. Go to [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
+1. On the left navigation, select **[!UICONTROL Datastreams]** 
 1. Select the previously created `Luma Web SDK` datastream
 
-    ![Datastream Select Luma Web SDK](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
 
-1. Select the **[!UICONTROL Development Environment]**
-
-    ![Datastream development environment](assets/analytics-datastream-development.png)
-
-1. Toggle **[!UICONTROL Adobe Audience Manager]** to the `on` position
+1. Select **[!UICONTROL Add Service]**
+     ![Add a service to the datastream](assets/aam-datastream-addService.png)
+1. Select **[!UICONTROL Adobe Audience Manager]** as the **[!UICONTROL Service]**
 1. Confirm that **[!UICONTROL Cookie Destinations Enabled]** and **[!UICONTROL URL Destinations Enabled]** are selected
-
-   ![Adobe Experience Platform Audience Manager Destinations](assets/aam-destinations-enabled.jpg)
-
-1. **[!UICONTROL Save]** the datastream settings
-
+1. Select **[!UICONTROL Save]**
+    ![Confirm the Audience Manager datastream settings and save](assets/aam-datastream-save.png)
 
 ## Create a data source
 
 Next, create a [Data Source](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=en), a fundamental tool for organizing data within Audience Manager:
-
 
 1. Go to the [Audience Manager](https://experience.adobe.com/#/audience-manager/) interface
 1. Select **[!UICONTROL Audience Data]** from the top navigation
