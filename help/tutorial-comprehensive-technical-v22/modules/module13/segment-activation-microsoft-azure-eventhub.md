@@ -65,11 +65,11 @@ In this exercise you'll setup your Microsoft Azure EventHub environment.
 
 In this exercise you'll setup your Real-time CDP destination connection that will deliver segments in real-time to the EventHub that you've configured in the previous exercise.
 
-[13.3 Create Streaming Segments](./ex3.md)
+[13.3 Create a segment](./ex3.md)
 
 In this exercise you will create a streaming segment in Adobe Experience Platform
 
-[13.4 Activate Segment](./ex4.md)
+[13.4 Activate segment](./ex4.md)
 
 In this exercise you'll activate your streaming segment to your Real-time CDP EventHub destination.
 

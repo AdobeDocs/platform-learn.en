@@ -55,11 +55,11 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 ## Exercises
 
-[14.1 Create an Adobe Experience Platform Data Collection Event Forwarding property](./ex1.md)
+[14.1 Create a Data Collection Event Forwarding property](./ex1.md)
 
 In this exercise, you'll create your Adobe Experience Platform Data Collection Event Forwarding property.
 
-[14.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property](./ex2.md)
+[14.2 Update your Datastream to make data available to your Data Collection Event Forwarding property](./ex2.md)
 
 In this exercise, you'll update your existing Datastream to make data that is collected by your Adobe Experience Platform Data Collection Client property available to your Adobe Experience Platform Data Collection Server property.
 
@@ -70,14 +70,6 @@ In this exercise, you'll create and configure a custom webhook and you'll start 
 [14.4 Create and configure a Google Cloud Function](./ex4.md)
 
 In this exercise, you'll create and configure a Google Cloud Function and you'll start forwarding data that is collected by Web SDK to Google.
-
-[14.5 Create and configure a Microsoft Azure Function](./ex5.md)
-
-In this exercise, you'll create and configure a Microsoft Azure Function and you'll start forwarding data that is collected by Web SDK to Microsoft Azure.
-
-[14.6 Test and troubleshoot your data collection](./ex6.md)
-
-In this exercise, you'll test and troubleshoot your data collection using the Adobe Experience Platform debugger extension for Chrome.
 
 [Summary and benefits](./summary.md)
 

@@ -15,19 +15,15 @@ Go to [https://webhook.site/](https://webhook.site/). You'll see something like 
 
 ![demo](./images/webhook1.png)
 
-You'll see your unique URL, which looks like this: `https://webhook.site/f02f2c22-44f9-40d8-8188-dc60fd03e3ec`.
+You'll see your unique URL, which looks like this: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`.
 
-This website has now created this webhook for you, and you'll be able to configure this webhook in your **[!DNL Adobe Experience Platform Data Collection Server property]** to start testing the forwarding of events.
+This website has now created this webhook for you, and you'll be able to configure this webhook in your **[!DNL Event Forwarding property]** to start testing the forwarding of events.
 
-## 14.3.2 Update your Adobe Experience Platform Data Collection Server property: Create a Data Element
+## 14.3.2 Update your Event Forwarding property: Create a Data Element
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/).
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and go to **Event Forwarding**. Search your Event Forwarding property and click it to open it.
 
-![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
-
-In the left menu, click **Server**. You'll then see an overview of all available Adobe Experience Platform Data Collection Server properties. Search and click to open the property you created in [exercise 14.1](./ex1.md).
-
-![Adobe Experience Platform Data Collection SSF](./images/launchhome1.png)
+![Adobe Experience Platform Data Collection SSF](./images/prop1.png)
 
 In the left menu, go to **Data Elements**. Click **Create New Data Element**.
 
@@ -60,39 +56,29 @@ In the left menu, go to **Rules**. Click **Create New Rule**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl1.png)
 
-You'll then see a new rule to configure. 
+You'll then see a new rule to configure. Enter the **Name**: **All Pages**. For this exercise, you won't need to configure a condition. Instead, you'll setup an action. Click the **+ Add** button under **Actions**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl2.png)
 
-Enter the **Name**: **All Pages**.
-
-For this exercise, you won't need to configure a condition. Instead, you'll setup an action. Click the **+ Add** button under **Actions**.
-
-![Adobe Experience Platform Data Collection SSF](./images/rl3.png)
-
-You'll then see this.
-
-![Adobe Experience Platform Data Collection SSF](./images/rl4.png)
-
-Make the following selection:
+You'll then see this. Make the following selection:
 
 - Select the **Extension**: **Adobe Cloud Connector**.
 - Select the **Action Type**: **Make Fetch Call**.
 
 That should give you this **Name**: **Adobe Cloud Connector - Make Fetch Call**. You should now see this:
 
-![Adobe Experience Platform Data Collection SSF](./images/rl5.png)
+![Adobe Experience Platform Data Collection SSF](./images/rl4.png)
 
 Next, configure the following:
 
 - Change the request method from GET to **POST**
-- Enter the URL of the custom webhook you created in one of the previous steps on the [https://webhook.site/](https://webhook.site/) website, which looks like this: https://webhook.site/f02f2c22-44f9-40d8-8188-dc60fd03e3ec
+- Enter the URL of the custom webhook you created in one of the previous steps on the [https://webhook.site/](https://webhook.site/) website, which looks like this: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`
 
 You should now have this. Next, go to **Body**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl6.png)
 
-You'll then see this. Click the Data Element icon as indicated below.
+You'll then see this. Click the data element icon as indicated below.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl7.png)
 
@@ -108,8 +94,8 @@ You'll then see this. Click **Save**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl10.png)
 
-You've now configured your first rule in a Adobe Experience Platform Data Collection Server property. Go to **Publishing Flow** to publish your changes.
-Open your Development library **v1** by clicking **Edit** as indicated.
+You've now configured your first rule in an Event Forwarding property. Go to **Publishing Flow** to publish your changes.
+Open your Development library **Main** by clicking **Edit** as indicated.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl11.png)
 
@@ -123,35 +109,37 @@ After a couple of minutes, you'll see that the deployment is done and ready to b
 
 ## 14.3.4 Test your configuration
 
-Open a new, clean incognito browser window and go to [https://public.aepdemo.net](https://public.aepdemo.net). 
+Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
 
-You'll then see this. 
+![DSN](../module0/images/web8.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo1.png)
+You can now follow the below flow to access the website. Click **Integrations**.
 
-Enter your Configuration ID and click **Load Configuration**. Your configuration is then loaded.
+![DSN](../module0/images/web1.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo2.png)
+On the **Integrations** page, you need to select the Data Collection property that was created in exercise 0.1. 
 
-Scroll down and click **Save Configuration**.
+![DSN](../module0/images/web2.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo3.png)
+You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-You'll then be redirected to the Admin homepage. Go to **Select LDAP**. Select your LDAP and click **Save**.
+![DSN](../module0/images/web3.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo5.png)
+Open a new incognito browser window.
 
-You'll then be redirected to the Admin homepage. Go to **Select Brand** and select the brand **Luma**, click **Save**.
+![DSN](../module0/images/web4.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo7.png)
+Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-You'll then be redirected to the Admin homepage. Click the **Luma** logo.
+![DSN](../module0/images/web5.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo8.png)
+Select your account type and complete the login process.
 
-You'll then see the Luma homepage.
+![DSN](../module0/images/web6.png)
 
-![Adobe Experience Platform Data Collection Setup](./images/demo9.png)
+You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+
+![DSN](../module0/images/web7.png)
 
 When you open up your browser Developer View, you can inspect Network requests as indicated below. When you use the filter **interact**, you'll see the network requests that are sent by Adobe Experience Platform Data Collection Client to the Adobe Edge.
 
@@ -165,7 +153,7 @@ Switch your view to the website [https://webhook.site/](https://webhook.site/) w
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook3.png)
 
-Scroll down a bit in the payload to find the page name, which in this case is **Luma Home**.
+Scroll down a bit in the payload to find the page name, which in this case is **vangeluw-OCUC** (which is the project name of your demo website).
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook4.png)
 

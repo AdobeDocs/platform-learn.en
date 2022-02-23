@@ -11,31 +11,23 @@ exl-id: 250f8536-b6bd-4c64-a552-80d5c6fb6358
 
 ## 13.4.1 Add Segment to Azure Event Hub Destination
 
-In this exercise you will add your segment **ldap - Citi Signal Sports Fan** to your **ldap-aep-enablement** Azure Event Hub destination.
+In this exercise you will add your segment `--demoProfileLdap-- - Interest in Equipment` to your `--demoProfileLdap---aep-enablement` Azure Event Hub destination.
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](./images/home.png)
+![Data Ingestion](../module2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-![Data Ingestion](./images/sb1.png)
+![Data Ingestion](../module2/images/sb1.png)
 
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
-
-Go to **Destinations**. 
-
-![Data Ingestion](./images/sb2a.png)
-
-In **Destinations**, click **Browse**. You'll then see all available destinations. Locate your destination and click the **+** icon as indicated below.
+Go to **Destinations**, then click **Browse**. You'll then see all available destinations. Locate your destination and click the **+** icon as indicated below.
 
 ![5-01-select-destination.png](./images/5-01-select-destination.png)
 
-You'll then see this. Search for your segment using your ldap and select **ldap - Citi Signal Sports Fan** from the list of segments.
+You'll then see this. Search for your segment using your ldap and select `--demoProfileLdap-- - Interest in Equipment` from the list of segments.
 
 Click **Next**.
 

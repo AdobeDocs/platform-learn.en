@@ -27,15 +27,11 @@ Let's start by creating the Adobe Experience Platform Data Collection Event Forw
 
 ## 14.1.2 Create a Adobe Experience Platform Data Collection Event Forwarding property
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). In the left menu, click **Event Forwarding**.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). In the left menu, click **Event Forwarding**. You'll then see an overview of all available Adobe Experience Platform Data Collection Event Forwarding properties. Click the **New Property** button.
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 
-You'll then see an overview of all available Adobe Experience Platform Data Collection Event Forwarding properties. Click the **New Property** button.
-
-![Adobe Experience Platform Data Collection SSF](./images/launchhome2.png)
-
-You now need to enter a name for your Adobe Experience Platform Data Collection Event Forwarding property. As a naming convention, use **ldap - Demo System (DD/MM/YYYY) (Edge)**. For instance, in this example, the name is **vangeluw - Demo System (30/06/2021) (Edge)**. Click **Save**.
+You now need to enter a name for your Adobe Experience Platform Data Collection Event Forwarding property. As a naming convention, use `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`. For instance, in this example, the name is **vangeluw - Demo System (22/02/2022) (Edge)**. Click **Save**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf1.png)
 
@@ -63,7 +59,7 @@ In the left menu, go to **Publishing Flow**. Click **Add Library**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf6.png)
 
-Enter the name **v1**, select the environment **Development (development)** and click **+ Add All Changed Resources**. 
+Enter the name **Main**, select the environment **Development (development)** and click **+ Add All Changed Resources**. 
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf7.png)
 
@@ -79,7 +75,7 @@ Finally your library will be built and ready.
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf10.png)
 
-Next Step: [14.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Event Forwarding property](./ex2.md)
+Next Step: [14.2 Update your Datastream to make data available to your Data Collection Event Forwarding property](./ex2.md)
 
 [Go Back to Module 14](./aep-data-collection-ssf.md)
 

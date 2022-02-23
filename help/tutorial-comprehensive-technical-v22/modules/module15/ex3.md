@@ -15,23 +15,17 @@ To create an HTTP API Source Connector, log in to Adobe Experience Platform by g
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](./images/home.png)
+![Data Ingestion](../module2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-![Data Ingestion](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+![Data Ingestion](../module2/images/sb1.png)
 
 In the left menu, go to **Sources** and scroll down in the **Sources Catalog** until you see **HTTP API**. Click **Add Data**.
 
 ![Data Ingestion](./images/kaep1.png)
 
-Click **New account**. Use **Kafka - ldap** as the name for your HTTP API connection, in this case **Kafka - vangeluw**. Click **Connect to source**.
+Click **New account**. Use `--demoProfileLdap-- - Kafka` as the name for your HTTP API connection, in this case **vangeluw - Kafka**. Enable the checkbox for **XDM Compatible**. Click **Connect to source**.
 
 ![Data Ingestion](./images/kaep2.png)
 
@@ -39,19 +33,15 @@ You'll then see this, click **Next**.
 
 ![Data Ingestion](./images/kaep3.png)
 
-Select **Existing dataset** and click the dataset icon.
+Select **Existing dataset**, open the dropdown menu. Search and select the dataset **Demo System - Event Dataset for Call Center (Global v1.1)**.
 
 ![Data Ingestion](./images/kaep4.png)
-
-Search and select the dataset **Demo System - Event Dataset for Call Center (Global v1.1)**. Click **Confirm**.
-
-![Data Ingestion](./images/kaep5.png)
 
 Click **Next**.
 
 ![Data Ingestion](./images/kaep6.png)
 
-Give your dataflow a name. Use **ldap - Kafka Dataflow**, in this case **vangeluw - Kafka Dataflow**. Click **Next**.
+Click **Next**.
 
 ![Data Ingestion](./images/kaep7.png)
 
@@ -65,7 +55,7 @@ You'll then see an overview of the HTTP API Source Connector you just created.
 
 You'll need to copy the **Streaming endpoint** URL, which looks like the one below, as you'll need it in the next exercise.
 
-`https://dcs.adobedc.net/collection/94981e0634e0d37c3559ce7ece05a35eae35c52cc5962d2d4a44e488400f2338`
+`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
 
 You have finished this exercise.
 
