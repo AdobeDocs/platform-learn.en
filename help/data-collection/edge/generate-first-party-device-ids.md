@@ -2,8 +2,8 @@
 title: Generate first-party device IDs
 description: Learn how to generate first-party device IDs
 kt: 9728
+exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7
 ---
-
 # Generate first-party device IDs
 
 Adobe Experience Cloud applications have traditionally generated cookies to store device ids using different technologies, including:
