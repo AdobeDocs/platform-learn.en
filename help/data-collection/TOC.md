@@ -22,7 +22,7 @@ doc-type: video
   + [Implement in Websites](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
   + [Implement in iOS Swift Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-swift-apps/overview.html){target="_blank"}
   + [Implement in iOS Objective-C Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-objective-c-apps/overview.html){target="_blank"}
-  + [Implement in Android Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-android-apps/overview.html){target="_blank"}
+  + [Implement in Android™ Apps](https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-android-apps/overview.html){target="_blank"}
 + Web SDK{#web-sdk}
   + [Overview](web-sdk/overview.md)
   + [Demo](web-sdk/demo.md)
@@ -46,6 +46,8 @@ doc-type: video
   + [Set up a datastream](event-forwarding/set-up-a-datastream.md)
   + [Add an extension](event-forwarding/add-an-extension.md)
   + [Create a rule](event-forwarding/create-a-rule.md)
++ Edge Network{#edge-network}
+  + [First-party device IDs](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
   + [Overview](debugger/overview.md)
   + Experience Cloud Debugger{#experience-cloud}
