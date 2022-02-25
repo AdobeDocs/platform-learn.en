@@ -393,7 +393,7 @@ Click the arrow next to **Events** to drill deeper.
 
 ![Journey Optimizer](./images/oc722.png)
 
-Click the arrow next to `--demoProfileLdapPurchaseEvent--` to drill deeper.
+Click the arrow next to `--demoProfileLdap--PurchaseEvent` to drill deeper.
 
 ![Journey Optimizer](./images/oc73.png)
 

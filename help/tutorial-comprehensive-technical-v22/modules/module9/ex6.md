@@ -11,7 +11,7 @@ exl-id: 0091c31f-0b54-4d40-a82b-3bf688db8a1f
 
 ## 9.6.1 Work with the Offer Decisioning API using Postman
 
-Download [this Postman Collection for Offer Decisioning](./../../assets/postman/postman_module14_offer-decisioning.zip) to your desktop and unzip it. You'll then have this:
+Download [this Postman Collection for Offer Decisioning](./../../assets/postman/postman_offer-decisioning.zip) to your desktop and unzip it. You'll then have this:
 
 ![OD API](./images/unzip.png)
 
@@ -45,9 +45,9 @@ Click to open the request **[!UICONTROL GET - List Containers]**.
 
 Under **[!UICONTROL Params]**, you'll see this: 
 
-- property: `_instance.parentName==aepenablementfy21`
+- property: `_instance.parentName==aepenablementfy22`
 
-In that parameter, **[!UICONTROL aepenablementfy21]** is the name of the sandbox that is used in Adobe Experience Platform. The sandbox you should use is `--aepSandboxId--`. Replace the text **[!UICONTROL aepenablementfy21]** by `--aepSandboxId--`.
+In that parameter, **[!UICONTROL aepenablementfy22]** is the name of the sandbox that is used in Adobe Experience Platform. The sandbox you should use is `--aepSandboxId--`. Replace the text **[!UICONTROL aepenablementfy22]** by `--aepSandboxId--`.
 
 After replacing the sandbox name, click **[!UICONTROL Send]**.
 
