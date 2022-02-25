@@ -26,19 +26,15 @@ On the Customer Journey Analytics-homepage, go to **Connections**.
 
 Here you can see all the different connections made between CJA and Platform. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets. 
 
-Let's create your first connection. 
-
-![demo](./images/cja3.png)
-
-Click **Create new connection**.
+Let's create your first connection. Click **Create new connection**.
 
 ![demo](./images/cja4.png)
 
-You'll then see **Create Connection** UI.
+You'll then see the **Create Connection** UI.
 
 ![demo](./images/cja5.png)
 
-First of all, you need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxId--`. In this example, the sandbox to use is **AEP Enablement FY21**.
+First of all, you need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxId--`. In this example, the sandbox to use is **AEP Enablement FY22**.
 
 ![demo](./images/cjasb.png)
 
@@ -108,7 +104,7 @@ Now that you understand the concept of stitching datasets using the Person ID, l
 
 Select each dataset by clicking on it. 
 
-![demo](./images/cja12.png)
+![demo](./images/cja12a.png)
 
 Now fill the field Person ID choosing the `email` on the dropdown list.
 
@@ -130,7 +126,7 @@ Click on Next.
 
 Here you need to give a name to your connection. 
 
-Please use this naming convention: `ldap – Omnichannel Data Connection`. 
+Please use this naming convention: `--demoProfileLdap-- – Omnichannel Data Connection`. 
 
 Example: `vangeluw - Omnichannel Data Connection`
 

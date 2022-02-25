@@ -21,13 +21,13 @@ In this exercises you will use Analysis Workspace within CJA to analyze product 
 
 We will cover some of the queries done in  Module 7 - Query Service so you can see how easy is to run the same queries and more but without using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
 
-Let's use the project you created in [Exercise 11.4 - Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
+Let's use the project you created in [11.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demo](./images/prohome.png)
 
-Open your project `ldap - Omnichannel Analysis`.
+Open your project `--demoProfileLdap-- - Omnichannel Analysis`.
 
-With your project opened and the Data View `ldap - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
+With your project opened and the Data View `--demoProfileLdap-- - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
 
 ![demo](./images/prodataView1.png)
 
@@ -53,7 +53,7 @@ Click on **Visualize** and then select **Line** as visualization.
 
 ![demo](./images/pro5.png)
 
-You’ll see your products views by hour.  
+You’ll see your products views by day.  
 
 ![demo](./images/pro6.png)
 
@@ -102,7 +102,7 @@ You'll then see this:
 
 ![demo](./images/pro15a.png)
 
-Finally you can add more visualizations. On the left side, under visualizations, search for `Donut`. Take `Donut`, drag-and-drop it on the canvas under the **Line** visualization. It will automatically show all **Product Names**.
+Finally you can add more visualizations. On the left side, under visualizations, search for `Donut`. Take `Donut`, drag-and-drop it on the canvas under the **Line** visualization.
 
 ![demo](./images/pro18.png)
 
@@ -119,9 +119,6 @@ You can even adapt the design to be more readable, by making both the **Line** g
 ![demo](./images/pro22.png)
 
 Click on the dot next to **Donut** to **Manage the Data Source**.
-
-![demo](./images/pro22a.png)
-
 Next, click **Lock Selection** to lock this visualization so that it always displays a timeline of Product Views.
 
 ![demo](./images/pro22b.png)
@@ -163,19 +160,17 @@ Click on the arrow to open the dimension:
 
 ![demo](./images/pro27.png)
 
-You'll see all available Product Interaction Types. Select the item **commerce.productViews** and drag and drop it onto the **Add Touchpoint** field inside the **Fallout Visualization**.
+You'll see all available Event Types. 
 
 ![demo](./images/pro28.png)
 
+Select the item **commerce.productViews** and drag and drop it onto the **Add Touchpoint** field inside the **Fallout Visualization**.
+
 ![demo](./images/pro29.png)
 
-Do the same with **commerce.productListAdds** and **commerce.purchases** and drop them onto the **Add Touchpoint** field inside the **Fallout Visualization**. You'll then have this:
+Do the same with **commerce.productListAdds** and **commerce.purchases** and drop them onto the **Add Touchpoint** field inside the **Fallout Visualization**. Your visualization will now look like this:
 
 ![demo](./images/props1.png)
-
-Your visualization will now look like this:
-
-![demo](./images/pro30.png)
 
 You can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if we want to analyze interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
 
@@ -193,7 +188,7 @@ Change the **Event Type** by **Page Name**, in the new freeform table, to see wh
 
 ## What do people do on the site before reaching the Cancel Service page?
 
-Again, there are many ways to perform this analysis. However, let's use the flow analysis to start the discovery part.
+Again, there are many ways to perform this analysis. Let's use the flow analysis to start the discovery part.
 
 Close the current panel by clicking here:
 
@@ -224,12 +219,9 @@ Click on the arrow to open the dimension:
 ![demo](./images/pro37.png)
 
 You'll find all pages viewed. Find the page name: **Cancel Service**.
-
-![demo](./images/pro38.png)
-
 Drag and drop **Cancel Service** into the Flow Visualization on the middle field:
 
-![demo](./images/pro39.png)
+![demo](./images/pro38.png)
 
 You'll then see this:
 
@@ -237,11 +229,12 @@ You'll then see this:
 
 Let's now analyze if customers who visited the **Cancel Service** page on the website also called the callcenter, and what the outcome was.
 
-Under the dimensions, go back and then find **Call Interaction Type**. 
+Under the dimensions, go back and then find **Call Interaction Type**.
+Drag and drop **Call Interaction Type** to replace the first interaction on the right within the **Flow Visualization**. 
 
 ![demo](./images/pro43.png)
 
-Drag and drop **Call Interaction Type** to replace the first interaction on the right within the **Flow Visualization**. You're now seeing which customers called the call center after visiting the **Cancel Service** page.
+You're now seeing the support ticket of the customers that called the call center after visiting the **Cancel Service** page.
 
 ![demo](./images/pro44.png)
 
@@ -315,56 +308,6 @@ Do the same with **People**,  **Add to Cart** and **Purchases**. You'll end up w
 ![demo](./images/pro55.png)
 
 Thanks to the first flow analysis, a new question came to mind. So we decided to create this table and check some KPIs against a segment to answer that question. As you can see, time to insight is much faster than using SQL or using other BI solutions.
-
-## Attribution
-
-Attribution in CJA enables business users to understand each touch in the customer journey. Attribution showcases how customers move from one touchpoint to another and brands use it to understand how advertising (banners on the website), content, products, etc... impact the customer journey.
-
-With the omnichannel data that is available in Adobe Experience Platform, we can now provide attribution insights across online and offline channels to understand that for instance, a customer became interested in a product through an offline store visit, that the customer called the call-center for information and that the sale was done on the website. 
-
-Attribution in Customer Journey Analytics is one of the key differentiators from other BI solutions. Let's see how it works.
-
-We can define attribution logic in almost any metric (except things like **People** or **Sessions**). You can even use it with calculated metrics.
-
-Open the calculated metric you created, called **Purchases**. On the **Events** metric, filtered by **Event Type**, click on settings.
-
-![demo](./images/a.png)
-
-The default attribution model is **Last Touch**. Check the checkbox for **Use non-default attribution model**.
-
-![demo](./images/b.png)
-
-After checking the checkbox for **Use non-default attribution model**, you'll see this popup:
-
-![demo](./images/c.png)
-
-Here you can change the model and the Look-back Window.
-
-You'll now see all available attribution models. To understand the differences between the attribution models, read this: [Adobe Analytics Attribution](https://www.adobe.com/content/dam/acom/en/data-analytics-cloud/analytics/pdfs/Adobe.Analytics.Attribution.Solution_Brief_Sept.2017.pdf)
-
-As already mentioned, you can even change the reporting look-back window. Depending on the model you'll have different options.
-
-![demo](./images/f.png)
-
-Make your choice and click **Apply**.
-
-![demo](./images/apply.png)
-
-## Cohort Analysis
-
-The **Cohort Table** allows you to understand how segments of users behave over a certain period of time. With CJA, this complicated query is made easy. With Cohort Analysis, you can now understand key KPIs such as **MAU** (Monthly Active Users) or **WAU** (Weekly Active Users).
-
-![demo](./images/cohortAnalysis2.png)
-
-Using the omnichannel data that is available thanks to Adobe Experience Platform, the following questions can now be answered:
-
-- How many people who bought offline, came back to buy online after? How long does it take for them to come back?
-- What is the retention of people after having interactions with our call-center? Are they coming back more or less?
-- Since the launch of our Alexa App, how do our customers interact with the various available interaction channels (digital, point of sales, etc.)?
-
-Example:
-
-![demo](./images/cohortAnalysis.png)
 
 ## Customer Journey Analytics and Analysis Workspace recap
 

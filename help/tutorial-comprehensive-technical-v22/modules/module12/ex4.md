@@ -59,23 +59,15 @@ Click **Next**.
 
 ## 12.4.2 XDM mapping
 
-You'll now see the Mapping screen:
+You'll now see this:
 
 ![demo](./images/xdm4a.png)
 
 You now have to either create a new dataset or select an existing dataset to load the Google Analytics data into. For this exercise, a dataset and schema have already been created. You do not need to create a new schema or dataset.
 
-Select **Existing dataset**. Click the dataset icon to select an existing dataset.
-
-![demo](./images/xdm4.png)
-
-Search for the dataset named `Demo System - Event Dataset for BigQuery (Global v1.1)` and select it.
+Select **Existing dataset**. Open the dropdown menu to select a dataset. Search for the dataset named `Demo System - Event Dataset for BigQuery (Global v1.1)` and select it. Click **Next**.
 
 ![demo](./images/xdm6.png)
-
-Next, click **Confirm**.
-
-![demo](./images/ex4/7.png)
 
 Scroll down. You now need to map every **Source Field** from Google Analytics/BigQuery to an XDM **Target Field**, field by field.
 

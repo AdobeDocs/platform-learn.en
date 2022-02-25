@@ -21,7 +21,7 @@ When Google Analytics data is in BigQuery, dimensions, metrics and other variabl
 
 The solution to this problem is to transform Google Analytics data into a readable format to make the ingestion into Adobe Experience Platform easier.
 
-## Exercise 12.2.1 – Create a dataset to save new BigQuery Tables
+## 12.2.1 Create a dataset to save new BigQuery Tables
 
 Go to the [BigQuery Console](https://console.cloud.google.com/bigquery).
 
@@ -44,7 +44,7 @@ For the **Dataset ID**, use the below naming convention. For the other fields, p
 
 | Naming         | Example |    
 | ----------------- | ------------- | 
-| ldap_BigQueryDataSets | vangeluw_BigQueryDataSets |  
+| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |  
 
 ![demo](./images/ex3/6.png)
 
@@ -56,7 +56,7 @@ You'll then be back in the BigQuery Console with your dataset created.
 
 ![demo](./images/ex3/8.png)
 
-## Exercise 12.2.2 – Create your first SQL BigQuery
+## 12.2.2 Create your first SQL BigQuery
 
 Next, you'll create your first query in BigQuery. The goal of this query is to take the Google Analytics sample data and transform it so that it can be ingested in Adobe Experience Platform. Go to the **EDITOR** tab.
 
@@ -238,7 +238,7 @@ Once the query has finished running, you'll see the below output in the **Query 
 
 ![demo](./images/ex3/12.png)
 
-## Exercise 12.2.3 – Save the results of your BigQuery SQL query
+## 12.2.3 Save the results of your BigQuery SQL query
 
 The next step is to save the output of your query by clicking the **SAVE RESULTS** button.
 
@@ -252,19 +252,19 @@ You'll then see a new popup, where your **Project Name** and **Dataset Name** ar
 
 | Naming         | Example |    
 | ----------------- | ------------- | 
-| `ldap_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |  
+| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |  
 
 You now need to enter a Table name. Please use this naming convention:
 
 | Naming         | Example |    
 | ----------------- |------------- | 
-| `ldap_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |  
+| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |  
 
 ![demo](./images/ex3/16.png)
 
 Click **SAVE**.
 
-It may take some time until the data is ready in the table you've created. After a couple of minutes, refresh the browser. You should then see within your dataset the `ldap_GAdataTableBigquery` table under **Explorer** inside your BigQuery project.
+It may take some time until the data is ready in the table you've created. After a couple of minutes, refresh the browser. You should then see within your dataset the `--demoProfileLdap--_GAdataTableBigquery` table under **Explorer** inside your BigQuery project.
 
 ![demo](./images/ex3/19.png)
 

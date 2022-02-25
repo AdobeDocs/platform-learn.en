@@ -30,12 +30,9 @@ If you haven't used Analysis Workspace before, we highly recommend watching this
 ### Create Your Project
 
 Now it's time to create your first CJA project. Go to the projects tab inside of CJA. 
-
-![demo](./images/prmenu.png)
-
 Click on create a new project.
 
-![demo](./images/prprojects.png)
+![demo](./images/prmenu.png)
 
 You'll then see an empty project.
 
@@ -60,9 +57,9 @@ Please use this naming convention:
 
 |  Name       | Description   | 
 | ----------------- |-------------| 
-| ldap - Omnichannel Analysis| ldap - Omnichannel Analysis|
+| `--demoProfileLdap-- - Omnichannel Analysis`| `--demoProfileLdap-- - Omnichannel Analysis`|
 
-Next, click **Save Project**.
+Next, click **Save**.
 
 ![demo](./images/prsave2.png)
 
@@ -78,12 +75,12 @@ Back in module 4, [Query Service](./../../modules/module4/query-service.md), you
 **Query & Result**
 
 ```text
-aepenablementfy21:all=> select eventType, count(*)
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy21:all-> and    eventType is not null
-aepenablementfy21:all-> and    eventType <> ''
-aepenablementfy21:all-> group  by eventType;
+aepenablementfy22:all=> select eventType, count(*)
+aepenablementfy22:all-> from   demo_system_event_dataset_for_website_global_v1_1
+aepenablementfy22:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+aepenablementfy22:all-> and    eventType is not null
+aepenablementfy22:all-> and    eventType <> ''
+aepenablementfy22:all-> group  by eventType;
           eventType           | count(1) 
 ------------------------------+----------
  commerce.productViews        |     2297
@@ -167,10 +164,9 @@ Don't forget to **Save** each Calculated Metric.
 To finish this exercise, let's create a last calculated Metric: **Conversion Rate**.
 
 Find the **Purchase** Calculated Metric we've just created in the list of Metrics in the left side menu. Click on the **info** icon.
+Now click on the **edit** icon.
 
 ![demo](./images/prmetricinfo.png)
-
-Now click on the **edit** icon.
 
 Typically, conversion rate means **Conversions / Sessions**. So let's do the same calculation in the calculated Metric definition canvas. Find the **Sessions** metric and drag and drop it into the definition builder.
 
@@ -179,8 +175,6 @@ Typically, conversion rate means **Conversions / Sessions**. So let's do the sam
 Notice that the division operator is automatically selected.
 
 ![demo](./images/pr5.png)
-
-![demo](./images/pr4.png)
 
 The conversion rate is commonly represented in percentage. So, let's change the format to be percentage and also select 2 decimals.
 
@@ -191,8 +185,6 @@ Change the name and description:
 | Name         | Description|    
 | ----------------- |-------------| 
 | Conversion Rate | Conversion Rate      | 
-
-![demo](./images/pr1.png)
 
 Now click **Save As** to save your new Calculated Metric without overwriting the original one..
 

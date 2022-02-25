@@ -28,13 +28,9 @@ If you want your company to become data-driven, you should adapt how data is vie
 - Use the same names for KPIs and Metrics for Google Analytics as for Customer Journey Analytics so that the digital analytics team can speak 1 language only.
 - Data View filtered to show for instance data for one market only, or one brand, or only for Mobile Devices.
 
-On the **Connections** screen, check the checkbox in front of the connection you just created.
+On the **Connections** screen, check the checkbox in front of the connection you just created. Click **Create Data View**.
 
 ![demo](./images/exta.png)
-
-Now click **Create Data View**.
-
-![demo](./images/extb.png)
 
 You'll be redirected to the **Create Data View** workflow.
 
@@ -46,17 +42,17 @@ You can now configure the basic definitions for your Data View.
 
 ![demo](./images/0-v2.png)
 
-The **Connection** you created in the previous exercise is already selected. Your connection is named `ldap – Omnichannel Data Connection`.
+The **Connection** you created in the previous exercise is already selected. Your connection is named `--demoProfileLdap-- – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Next, give your Data View a name following this naming convention: `ldap – Omnichannel Data View`. 
+Next, give your Data View a name following this naming convention: `--demoProfileLdap-- – Omnichannel Data View`. 
 
-Enter the same value for the description: `ldap – Omnichannel Data View`.
+Enter the same value for the description: `--demoProfileLdap-- – Omnichannel Data View`.
 
 | Name         | Description|    
 | ----------------- |-------------| 
-| ldap – Omnichannel Data View | ldap – Omnichannel Data View          |  
+| `--demoProfileLdap-- – Omnichannel Data View` | `--demoProfileLdap-- – Omnichannel Data View`         |  
 
 ![demo](./images/1-v2.png)
 

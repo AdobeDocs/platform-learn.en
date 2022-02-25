@@ -65,19 +65,15 @@ Before starting the above steps, don't forget about step 0, which is to understa
 
 ## 11.1.5 Step 0: Understanding Adobe Experience Platform schemas and datasets
 
-Log in to [Adobe Experience Platform](https://experience.adobe.com/platform).
+Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](./images/home.png)
+![Data Ingestion](../module2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-![Data Ingestion](./images/sb1.png)
-
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
+![Data Ingestion](../module2/images/sb1.png)
 
 Please have a look a these schemas and datasets in Adobe Experience Platform.
 

@@ -33,13 +33,13 @@ Click **Create**:
 
 If this is the first time that you create a resource in Azure, you will need to create a new **Resource group**. If you have already a resource group you can select it (or create a new one).
 
-Select **Create new**, name your group `--demoProfileLdap---aep-enablement`, for example **mmeewis-aep-enablement**
+Select **Create new**, name your group `--demoProfileLdap---aep-enablement`.
 
 ![1-04-create-resource-group.png](./images/1-04-create-resource-group.png)
 
 Complete the test of the fields as indicated:
 
-- Namespace : Define your namespace, it has to be unique, use the following pattern `--demoProfileLdap---aep-enablement`, for example **mmeewis-aep-enablement**
+- Namespace : Define your namespace, it has to be unique, use the following pattern `--demoProfileLdap---aep-enablement`
 - Location: **West-Europe** refers to the Azure datacenter in Amsterdam
 - Pricing tier: **Basic**
 - Throughput Units: **1**
@@ -76,7 +76,7 @@ Click **+ Event Hub**.
 
 ![1-12-add-event-hub.png](./images/1-12-add-event-hub.png)
 
-Use `--demoProfileLdap---aep-enablement-event-hub` as the name, for example **mmeewis-aep-enablement-event-hub** and hit **Create**.
+Use `--demoProfileLdap---aep-enablement-event-hub` as the name and click **Create**.
 
 ![1-13-create-event-hub.png](./images/1-13-create-event-hub.png)
   
@@ -100,7 +100,7 @@ Select **Create**.
 
 ![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
 
-Specify your **Resource Group** (created in the beginning of this exercise), use `--demoProfileLdap--aepstorage` as your Storage account name, for example **mmeewisaepstorage**, and select **Locally-redundant storage (LRS)**, then click **Review + create**.
+Specify your **Resource Group** (created in the beginning of this exercise), use `--demoProfileLdap--aepstorage` as your Storage account name, and select **Locally-redundant storage (LRS)**, then click **Review + create**.
 
 ![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
 

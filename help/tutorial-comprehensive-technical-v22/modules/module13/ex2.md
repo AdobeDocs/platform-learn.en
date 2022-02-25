@@ -30,7 +30,7 @@ Select **All Resources** in Azure Portal:
 
 ### Event Hub
 
-Look for a resource with resource type **Event Hubs Namespace**, if you followed the naming conventions used in the previous exercise you Event Hubs Namespace will be `--demoProfileLdap---aep-enablement`, for example **mmeewis-aep-enablement**. Take a note of it, you will need it in the next exercise.
+Look for a resource with resource type **Event Hubs Namespace**, if you followed the naming conventions used in the previous exercise you Event Hubs Namespace will be `--demoProfileLdap---aep-enablement`. Take a note of it, you will need it in the next exercise.
 
 ![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
 
@@ -38,7 +38,7 @@ Click on the Event Hubs Namespace name to get the details:
 
 ![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
 
-Select **Event Hubs** to get a list of Event Hubs defined in your Event Hubs Namespace, if you followed the naming conventions used in the previous exercise you will find an Event Hub named `--demoProfileLdap---aep-enablement-event-hub`, for example **mmeewis-aep-enablement-event-hub**. Take a note of it, you will need it in the next exercise.
+Select **Event Hubs** to get a list of Event Hubs defined in your Event Hubs Namespace, if you followed the naming conventions used in the previous exercise you will find an Event Hub named `--demoProfileLdap---aep-enablement-event-hub`. Take a note of it, you will need it in the next exercise.
   
 ![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
 

@@ -87,7 +87,7 @@ The only thing to do here is to enter the name of the consent screen in the **Ap
 
 | Naming         | Example|    
 | ----------------- |-------------| 
-| ldap - AEP BigQuery Connector | vangeluw - Platform BigQuery Connector |  
+| `--demoProfileLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector |  
 
 ![demo](./images/ex2/6-3.png)
 
@@ -300,27 +300,15 @@ Log in to Adobe Experience Platform by going to this URL: [https://experience.ad
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](./images/home.png)
+![Data Ingestion](../module2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-![Data Ingestion](./images/sb1.png)
+![Data Ingestion](../module2/images/sb1.png)
 
-After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
-
-![Data Ingestion](./images/sb2.png)
-
-In the left menu, go to Sources.
+In the left menu, go to Sources. You'll then see the **Sources** homepage. In the **Sources** menu, click on **Databases**. Click the **Google BigQuery** card. Next, click **Set up** or **+ Configure**.
 
 ![demo](./images/1.png)
-
-You'll then see the **Sources** homepage. In the **Sources** menu, click on **Databases**.
-
-![demo](./images/sourceshome.png)
-
-Click the **Google BigQuery** card. Next, click on **+ Configure**.
-
-![demo](./images/bq.png)
 
 You should now create a new connection. 
 
@@ -334,8 +322,8 @@ Please use this naming convention:
 
 | BigQuery Connector Credentials         | Value  | Example  |   
 | ----------------- |-------------| -------------| 
-| Account Name | ldap - BigQuery Connection  |  vangeluw - BigQuery Connection  |
-| Description | ldap - BigQuery Connection | vangeluw - BigQuery Connection  | 
+| Account Name | `--demoProfileLdap-- - BigQuery Connection`  |  vangeluw - BigQuery Connection  |
+| Description | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection  | 
 
 Which should give you something like this:
 

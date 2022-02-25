@@ -109,7 +109,7 @@ You can find the requirements and process for submitting completion here: [Measu
 - **Description:** In this foundational module, you will explore the Real-time Customer Profile in Adobe Experience Platform by making use of the UI and API.
 - **Time Investment:** 90 minutes
 - **Download these assets**: 
-  - [Postman collections](./assets/postman/postman_module3.zip)
+  - [Postman collections](./assets/postman/postman_profile.zip)
 
 [4. Query Service](./modules/module4/query-service.md)
 
@@ -118,9 +118,9 @@ You can find the requirements and process for submitting completion here: [Measu
 - **Description:** In this module, you'll learn how to use Adobe Experience Platform Query Service.
 - **Time Investment:** 90 minutes
 - **Download these assets**: 
-  - [JSON - Sample Data: Demo System - Event Dataset for Website](./assets/json/m7_ee.json)
-  - [JSON - Sample Data: Demo System - Event Dataset for Call Center](./assets/json/m7_callcenter.json)
-  - [JSON - Sample Data: Demo System - Profile Dataset for Loyalty](./assets/json/m7_loyalty.json)
+  - [JSON - Sample Data: Demo System - Event Dataset for Website](./assets/json/ee.json)
+  - [JSON - Sample Data: Demo System - Event Dataset for Call Center](./assets/json/callcenter.json)
+  - [JSON - Sample Data: Demo System - Profile Dataset for Loyalty](./assets/json/loyalty.json)
 
 [5. Intelligent Services](./modules/module5/intelligent-services.md)
 
@@ -178,7 +178,7 @@ You can find the requirements and process for submitting completion here: [Measu
 - **Description:** In this module, you'll set up your own instance of Google Cloud Platform, load demo data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
 - **Time Investment:** 120 minutes
 - **Download these assets**: 
-  - [JSON - Sample Data: Demo - Loyalty Data (M16)](./assets/json/m16_bqLoyalty.json)
+  - [JSON - Sample Data: Demo - Loyalty Data](./assets/json/bqLoyalty.json)
 
 [13. Real-Time CDP: Segment Activation to Microsoft Azure Event Hub](./modules/module13/segment-activation-microsoft-azure-eventhub.md)
 
