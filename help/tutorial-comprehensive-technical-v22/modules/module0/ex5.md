@@ -73,7 +73,7 @@ Now, go back to **Home** in the app. Your app is now ready to be used.
 
 ![DSN](./images/mobileappn8.png)
 
-Next Step: [0.6 Install the Chrome extension for the Experience League documentation](./ex6.md)
+You've now completed module 0.
 
 [Go Back to Module 0](./getting-started.md)
 

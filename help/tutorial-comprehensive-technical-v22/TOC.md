@@ -16,12 +16,12 @@ doc-type: multipage
 + [Measuring completion](/help/tutorial-comprehensive-technical-v22/completion.md)
 + 0 - Getting started {#module0}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module0/getting-started.md)
-  + [0.1 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-comprehensive-technical-v22/modules/module0/ex1.md)
-  + [0.2 Create your Datastream](/help/tutorial-comprehensive-technical-v22/modules/module0/ex2.md)
-  + [0.3 Create your Enablement Configuration ID](/help/tutorial-comprehensive-technical-v22/modules/module0/ex3.md)
+  + [0.1 Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical-v22/modules/module0/ex1.md)
+  + [0.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-comprehensive-technical-v22/modules/module0/ex2.md)
+  + [0.3 Create your Datastream](/help/tutorial-comprehensive-technical-v22/modules/module0/ex3.md)
   + [0.4 Use the website](/help/tutorial-comprehensive-technical-v22/modules/module0/ex4.md)
   + [0.5 Use the mobile app](/help/tutorial-comprehensive-technical-v22/modules/module0/ex5.md)
-  + [0.6 Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical-v22/modules/module0/ex6.md)
+
 + 1 - Adobe Experience Platform Data Collection and the Web SDK extension {#module1}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module1/data-ingestion-launch-web-sdk.md)
   + [1.1 Understanding Adobe Experience Platform Data Collection](/help/tutorial-comprehensive-technical-v22/modules/module1/ex1.md)
@@ -73,9 +73,8 @@ doc-type: multipage
   + [6.3 Take Action: send your segment to DV360](/help/tutorial-comprehensive-technical-v22/modules/module6/ex3.md)
   + [6.4 Take Action: send your segment to an S3-destination](/help/tutorial-comprehensive-technical-v22/modules/module6/ex4.md)
   + [6.5 Take Action: send your segment to Adobe Target](/help/tutorial-comprehensive-technical-v22/modules/module6/ex5.md)
-  + [6.6 Segment Match](/help/tutorial-comprehensive-technical-v22/modules/module6/ex6.md)
-  + [6.7 External Audiences](/help/tutorial-comprehensive-technical-v22/modules/module6/ex7.md)
-  + [6.8 Destinations SDK](/help/tutorial-comprehensive-technical-v22/modules/module6/ex8.md)
+  + [6.6 External Audiences](/help/tutorial-comprehensive-technical-v22/modules/module6/ex6.md)
+  + [6.7 Destinations SDK](/help/tutorial-comprehensive-technical-v22/modules/module6/ex7.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module6/summary.md)
 + 7 - Adobe Journey Optimizer: Orchestration {#module7}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module7/journey-orchestration-create-account.md)

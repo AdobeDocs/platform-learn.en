@@ -1,109 +1,173 @@
 ---
-title: Getting Started - Create your Configuration ID
-description: Getting Started - Create your Configuration ID
+title: Getting Started - Create your Datastream
+description: Getting Started - Create your Datastream
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 6e0b7ae6-b317-465f-b50f-e4b197bb8743
+exl-id: c967b01e-9a0b-4a74-b536-706db0cb237f
 ---
-# 0.3 Create your Enablement Configuration ID
+# 0.3 Create your Datastream
 
-Open an incognito browser window and go to [https://public.aepdemo.net/admin_configuration_view.html](https://public.aepdemo.net/admin_configuration_view.html).
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). After the previous exercise, you now have two Data Collection properties: one for web and one for mobile.
 
-You'll see the **View Configuration ID** page:
+![DSN](./images/launchprop.png)
 
-![DSN](./images/confighome.png)
+These properties are almost ready to be used, but before you can start collecting data using these properties you need to set up a datastream. You'll get more information around the concept of what a datastream is and what it means in Exercise 1.2.
 
-Enter your default Configuration ID (you can find this on the homepage of your GitHub repo, or if you’re Adobe Solution Partner please contact **spphelp@adobe.com**) and click **Load Configuration**. You're now seeing the default configuration for this Adobe Experience Platform instance in the context of the enablement.
+For now, please follow these steps.
 
-![DSN](./images/cfg2.png)
+## 0.3.1 Create your Datastream for Web
 
-To create your own Configuration ID, click **Save As...**
+Click **[!UICONTROL Datastreams]**.
 
-![DSN](./images/cfg3.png)
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png)
 
-You'll be taken to the **Create a new Configuration ID** page.
+Click **[!UICONTROL New Datastream]**.
 
-![DSN](./images/cfg4.png)
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-All default variables are already filled out for you. The first thing to do is to add the Data Collection tags for your desktop and mobile app Data Collection properties.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream` and click **Save**.
 
-![DSN](./images/cfg5.png)
+![Name the Edge Configuration and save](./images/edgeconfig2.png)
 
-You can find the tags for your Data Collection properties here:
+You'll then see this:
 
-## Web
+![Name the Edge Configuration and save](./images/edgeconfig3.png)
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), click **Tags** and search for your properties with the search term **ldap - Demo System**. Open your **Web** property.
+Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additional fields. You'll then see this:
 
-![DSN](./images/l1.png)
+![Name the Edge Configuration and save](./images/edgeconfig4.png)
 
-You'll then see this, go to **Environments**.
+For **[!UICONTROL Sandbox]**, select your sandbox name, which should be `--aepSandboxId--`.
 
-![DSN](./images/l2.png)
+![Name the Edge Configuration and save](./images/edgeconfig5.png)
 
-In Environments, click the **Install** icon for the Development environment.
+For Event Dataset, select **Demo System - Event Dataset for Website (Global v1.1)** and for Profile Dataset, select **Demo System - Profile Dataset for Website (Global v1.1)**.
 
-![DSN](./images/l3.png)
+![Name the Edge Configuration and save](./images/edgeconfig7.png)
 
-In the popup, you need to select the tag. 
+That's it for now. In [Module 1](./../module1/data-ingestion-launch-web-sdk.md) you'll learn more about Web SDK and how to configure all of its capabilities.
 
->[!IMPORTANT] 
->
->Don't copy all the code, only copy the url of the tag which is all text between the quotes.
+You now have this. Click **Save**.
 
-![DSN](./images/l4.png)
+![Name the Edge Configuration and save](./images/edgeconfig8.png)
 
-The tag that you need to copy, needs to look like this:
-`//assets.adobedtm.com/b754ed1bed61/3fa8ee880669/launch-dadddddddd106a3f-development.min.js`.
+You'll then see that your datastream consists of 3 environments.
 
-Paste this value in the **Create New Configuration ID** screen, in the field **Launch Website Tag URL**.
+![Name the Edge Configuration and save](./images/edgeconfig9.png)
 
-![DSN](./images/l5.png)
+In the left menu, clik **[!UICONTROL Tags]**.
 
-## Mobile 
+Filter the search results to see your two Data Collection properties. Open the property for **Web** by clicking it.
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and search for your properties with the search term **ldap - AEP Demo**. Open your **Mobile** property.
+![Name the Edge Configuration and save](./images/edgeconfig10a.png)
 
-![DSN](./images/l1.png)
+You'll then see this. Click **Extensions**.
 
-You'll then see this, go to **Environments**.
+![Name the Edge Configuration and save](./images/edgeconfig11.png)
 
-![DSN](./images/m2.png)
+On the Adobe Experience Platform Web SDK extension, click **Configure**.
 
-In Environments, click the **Install** icon for the Development environment.
+![Name the Edge Configuration and save](./images/edgeconfig12.png)
 
-![DSN](./images/m3.png)
+You'll then see this. For **Datastreams**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Datastream you created earlier.
 
-In the popup, copy the Environment File ID as indicated below. 
+![Name the Edge Configuration and save](./images/edgeconfig13.png)
 
-![DSN](./images/m4.png)
+Make sure to have selected your **Datastream**. TIP: You can filter the results in the dropdown easily by typing your `--demoProfileLdap--`.
 
-The tag that you need to copy, needs to look like this:
-**b754ed1bed61/944771f67987/launch-18ddddddd2909c-development**
+![Name the Edge Configuration and save](./images/edgeconfig14.png)
 
-Paste this value in the **Create New Configuration ID** screen, in the field **Launch Mobile App Tag URL**.
+Scroll down until you see **Data Collection**. Please ensure that the checkbox for **Enable click data collection** is not enabled. Click **Save** to save your changes.
 
-![DSN](./images/m5.png)
+![Name the Edge Configuration and save](./images/edgeconfig14a.png)
 
-Next, you need to enter your Demo Profile information. This will be used on the website to simplify the **Create Account** flow. Fill out the fields as indicated in the screenshot. Please enter a real phone number (including the + and your countrycode, for instance: +32473622044) and a real email address, as they will be used to send text messages and emails.
+Go to **Publishing Flow**.
 
-![DSN](./images/m5a.png)
+![Name the Edge Configuration and save](./images/edgeconfig15.png)
 
-Finally, scroll down and click **Create New Configuration ID**
+Click the **...** for **Main**, then click **Edit**.
 
-![DSN](./images/cfg6.png)
+![Name the Edge Configuration and save](./images/edgeconfig16.png)
 
-After a couple of seconds, you'll get a confirmation that your Configuration ID has been created. The website will now automatically load the Configuration ID in the website, which will take 10-15 seconds. You'll then see this:
+Click **Add All Changed Resources** and then click **Save & Build for Development**.
 
-![DSN](./images/cfg6a.png)
+![Name the Edge Configuration and save](./images/edgeconfig17.png)
 
-Your Configuration ID is visible on the admin page, please ensure to write down your Configuration ID as you'll need it to use the website, mobile application and several other applications and also, during the enablement modules. Write it down so you don't forget it.
+Your changes are now being published and will be ready in a couple of minutes.
+
+## 0.3.2 Create your Datastream for Mobile
+
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
+
+Open the dropdown menu and click **[!UICONTROL Datastream]**.
+
+![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
+
+Click **[!UICONTROL New Datastream]**.
+
+![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
+
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream (Mobile)`.
+Click **[!UICONTROL Save]**.
+
+![Name the Datastream and save](./images/edgeconfig2m.png)
+
+You'll then see this:
+
+![Name the Datastream and save](./images/edgeconfig3m.png)
+
+Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additional fields. You'll then see this:
+
+![Name the Datastream Configuration and save](./images/edgeconfig4m.png)
+
+For **[!UICONTROL Sandbox]**, select your sandbox name.
+
+![Name the Datastream Configuration and save](./images/edgeconfig5m.png)
+
+For Event Dataset, select **Demo System - Event Dataset for Mobile App (Global v1.1)** and for Profile Dataset, select **Demo System - Profile Dataset for Mobile App (Global v1.1)**. Click **Save**.
+
+![Name the Datastream Configuration and save](./images/edgeconfig7m.png)
+
+You'll then see that your Datastream consists of 3 environments.
+
+![Name the Datastream Configuration and save](./images/edgeconfig9m.png)
+
+Your Datastream is now ready to be used in your Adobe Experience Platform Data Collection Client property for Mobile.
+
+Go to **Tags** and filter the search results to see your two Data Collection properties. Open the property for **Mobile** by clicking it. 
+
+![Name the Edge Configuration and save](./images/edgeconfig10am.png)
+
+You'll then see this. Click **Extensions**.
+
+![Name the Edge Configuration and save](./images/edgeconfig11m.png)
+
+On the **Adobe Experience Platform Edge Network** extension, click **Configure**.
+
+![Name the Edge Configuration and save](./images/edgeconfig12m.png)
+
+You'll then see this. For the **Datastreams**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Datastream you created earlier. Click **Save** to save your changes.
+
+![Name the Edge Configuration and save](./images/edgeconfig13m.png)
+
+Go to **Publishing Flow**.
+
+![Name the Edge Configuration and save](./images/edgeconfig15m.png)
+
+Click the **...** next to **Main**, then click **Edit**.
+
+![Name the Edge Configuration and save](./images/edgeconfig16m.png)
+
+Click **Add All Changed Resources**, then click **Save & Build for Development**.
+
+![Name the Edge Configuration and save](./images/edgeconfig17m.png)
+
+Your changes are now being published and will be ready in a couple of minutes.
 
 Next Step: [0.4 Use the website](./ex4.md)
 
 [Go Back to Module 0](./getting-started.md)
 
 [Go Back to All Modules](./../../overview.md)
-https://experience.adobe.com/#/data-collection/

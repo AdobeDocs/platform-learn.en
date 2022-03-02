@@ -31,27 +31,23 @@ exl-id: 10ee9358-2fcd-4eb3-80d5-c8a963668299
 
 ## Exercises
 
-[0.1 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex1.md)
+[0.1 Install the Chrome extension for the Experience League documentation](./ex1.md)
+
+In this exercise you'll install and configure the Chrome extension so you can use it to sign up for the tutorial and to personalize the tutorial content.
+
+[0.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
-[0.2 Create your Datastream](./ex2.md)
+[0.3 Create your Datastream](./ex3.md)
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
-
-[0.3 Create your Enablement Configuration ID](./ex3.md)
-
-In this exercise you'll configure your own Configuration ID, which is required to access the demo website and mobile application.
 
 [0.4 Use the website](./ex4.md)
 
 In this exercise you'll setup the website so you can use it for demonstrations and enablement.
 
 [0.5 Use the mobile app](./ex5.md)
-
-In this exercise you'll setup the mobile application so you can use it for demonstrations and enablement.
-
-[0.6 Install the Chrome extension for the Experience League documentation](./ex6.md)
 
 In this exercise you'll setup the mobile application so you can use it for demonstrations and enablement.
 

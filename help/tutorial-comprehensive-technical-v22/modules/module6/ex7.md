@@ -1,15 +1,13 @@
 ---
-title: Real-time CDP - External Audiences
-description: Real-time CDP - External Audiences
+title: Real-time CDP - Destinations SDK
+description: Real-time CDP - Destinations SDK
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 38489c2b-69d4-4ddc-9a75-84bd54b4c823
+exl-id: 9585f858-569b-421e-a21d-aa623cd6c819
 ---
-# 6.7 External Audiences
-
-## 6.7.1 Metadata
+# 6.7 Destinations SDK
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
@@ -19,15 +17,9 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ![Data Ingestion](../module2/images/sb1.png)
 
-## 6.7.2 Segment Membership
-
 This content is under construction.
 
-## 6.7.3 Profile/Segment
-
-This content is under construction.
-
-Next Step: [6.8 Destinations SDK](./ex8.md)
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 6](./real-time-cdp-build-a-segment-take-action.md)
 
