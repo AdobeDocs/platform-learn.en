@@ -149,7 +149,7 @@ Let's now change the Hero Image on the homepage of the website. Click to open th
 Paste the following code. Then, click **Next**.
 
 ```javascript
-<script>document.querySelector("#home > div > div > div > div > div.banner_img.d-none.d-lg-block > img").src="https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/ff92fdc3885972c0090ad5419e0ef4d4_Luma%20-%20Product%20-%20Proteus%20-%20Hero%20Banner.png"</script>
+<script>document.querySelector("#home > div > div > div > div > div.banner_img.d-none.d-lg-block > img").src="https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/ff92fdc3885972c0090ad5419e0ef4d4_Luma - Product - Proteus - Hero Banner.png"; document.querySelector(".banner_text > *").remove()</script>
 ```
 
 ![RTCDP](./images/atform6.png)
@@ -206,7 +206,7 @@ If you now go back to your demo website and visit the product page for PROTEUS F
 
 ![RTCDP](./images/atform13.png)
 
-Next Step: [6.6 Segment Match](./ex6.md)
+Next Step: [6.6 External Audiences](./ex6.md)
 
 [Go Back to Module 6](./real-time-cdp-build-a-segment-take-action.md)
 

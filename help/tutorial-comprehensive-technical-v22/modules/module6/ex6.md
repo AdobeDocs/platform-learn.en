@@ -1,17 +1,33 @@
 ---
-title: Real-time CDP - Data Landing Zone
-description: Real-time CDP - Data Landing Zone
+title: Real-time CDP - External Audiences
+description: Real-time CDP - External Audiences
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 9ce1aaf9-d321-4d57-8879-ef5a5db14f15
+exl-id: 38489c2b-69d4-4ddc-9a75-84bd54b4c823
 ---
-# 6.6 Segment Match
+# 6.6 External Audiences
+
+## 6.6.1 Metadata
+
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
+
+![Data Ingestion](../module2/images/home.png)
+
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+
+![Data Ingestion](../module2/images/sb1.png)
+
+## 6.6.2 Segment Membership
 
 This content is under construction.
 
-Next Step: [6.7 External Audiences](./ex7.md)
+## 6.6.3 Profile/Segment
+
+This content is under construction.
+
+Next Step: [6.7 Destinations SDK](./ex7.md)
 
 [Go Back to Module 6](./real-time-cdp-build-a-segment-take-action.md)
 
