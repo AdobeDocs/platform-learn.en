@@ -70,7 +70,7 @@ Enter your name and the Configuration ID that was created for your Adobe Experie
 
 >[!IMPORTANT]
 >
->If you're an Adobe employee: you can find the configuration ID to use on the internal Github repo, [here](https://git.corp.adobe.com/vangeluw/platformenablement).
+>If you're an Adobe employee: you can find the configuration ID to use on the internal Github repo (https://git.corp.adobe.com/vangeluw/platformenablement).
 >
 >If you're an Adobe Solution Partner, please contact your Solution Partner contact or email **spphelp@adobe.com**.
 

@@ -49,7 +49,7 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 >[!NOTE]
 >
->Don't forget to install, configure and use the Chrome Extension as referenced in [0.6 - Install the Chrome extension for the Experience League documentation](../module0/ex6.md)
+>Don't forget to install, configure and use the Chrome Extension as referenced in [0.1 - Install the Chrome extension for the Experience League documentation](../module0/ex1.md)
 
 ## Exercises
 
