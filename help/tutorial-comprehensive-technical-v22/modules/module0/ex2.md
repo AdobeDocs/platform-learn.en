@@ -13,7 +13,9 @@ After signing up for the Comprehensive Technical Tutorial for Adobe Experience P
 
 Once you've got access to Demo System, proceed with the below steps.
 
-Go to [https://dashboard.adobedemo.com/quick-setup](https://dashboard.adobedemo.com/quick-setup).
+Go to [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/). Select your sandbox and click **Quick Setup**.
+
+![DSN](./images/dsnh1.png)
 
 You'll see this:
 
@@ -45,6 +47,7 @@ Once the quick setup process has completed, you'll have:
 
 - 1 Web Retail project, which makes it possible to use a demo website with the Luma demo brand
 - 1 Mobile Retail project, which makes it possible to use a demo mobile app with the Luma demo brand
+- 1 CX App Retail project, which makes it possible to use a call center and clienteling app with the Luma demo brand
 - 1 Data Collection property for web, which you'll use to collect data from the website
 - 1 Data Collection property for mobile, which you'll use to collect data from the mobile app
 
