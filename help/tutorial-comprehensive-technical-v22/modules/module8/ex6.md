@@ -49,9 +49,13 @@ You'll then see this:
 
 Navigate to the field `_experience.campaign.orchestration.eventID`. Remove the current value, and paste your eventID there.
 
-As a reminder, the Event ID can be found in Adobe Journey Optimizer under **Configurations > Events** and you'll find the event ID in the sample payload of your even, which looks like this: `"eventID": "fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934"`. Next, click **Save** or **Save to Library**.
+As a reminder, the Event ID can be found in Adobe Journey Optimizer under **Configurations > Events** and you'll find the event ID in the sample payload of your even, which looks like this: `"eventID": "fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934"`. 
 
 ![ACOP](./images/payloadeventID.png)
+
+Next, you should define your city in this data element. Go to **placeContext > geo > city** and enter a city of choice. Next, click **Save** or **Save to Library**.
+
+![ACOP](./images/payloadeventIDgeo.png)
 
 Finally, you need to publish your changes. Go to **Publishing Flow** in the left menu.
 
@@ -111,17 +115,9 @@ Open the Profile Viewer panel and go to Real-time Customer Profile. On the Profi
   
 ![Demo](../module2/images/pv11.png)
 
-In your browser, open **Developer Tools**.
+On the Profile Viewer panel, click **UTILITIES**. Enter `geofenceevent` and click **Send**.
 
 ![Demo](./images/smsdemo1.png)
-
-Go to the **Console** tab and enter this command: `_satellite.track("geofenceevent")`
-
-![Demo](./images/smsdemo2.png)
-
-You'll then see this.
-
-![Demo](./images/smsdemo3.png)
 
 A couple of seconds later, you'll receive an SMS from Adobe Journey Optimizer.
 
