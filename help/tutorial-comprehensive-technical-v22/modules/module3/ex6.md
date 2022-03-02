@@ -17,17 +17,11 @@ In an earlier exercise, you started as an anonymous customer who was browsing th
 
 When that same customer eventually picks up their phone and calls your call center, it's crucial that the information from other channels is available immediately, so that the call center experience can be relevant and personalized.
 
-## 3.6.1 Create your CX App
+## 3.6.1 Use your CX App
 
 As part of our Demo System, we've created a CX App template which can be used to simulate a call center environment. Follow these steps to create such a CX App project.
 
 Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). Click **New Project**.
-
-![Demo](./images/cxapp1.png)
-
-You'll then see this. Enter **CX App** as the **Title** and select **Customer Experience App** as **Type**. Click **Create**.
-
-![Demo](./images/cxapp2.png)
 
 You'll then see your CX App project. Click the project to open it.
 
@@ -40,8 +34,6 @@ In your CX App project, go to **Integrations**. Select the Adobe Experience Plat
 You'll then see this.
 
 ![Demo](./images/cxapp5.png)
-
-## 3.6.1 Use your CX App
 
 On the Profile Viewer panel, you can see these combinations of IDs and Namespaces:
 
