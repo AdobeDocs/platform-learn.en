@@ -46,7 +46,8 @@ doc-type: video
   + [Set up a datastream](event-forwarding/set-up-a-datastream.md)
   + [Add an extension](event-forwarding/add-an-extension.md)
   + [Create a rule](event-forwarding/create-a-rule.md)
-+ Edge Network{#edge-network}
++ Datastreams & Edge Network{#edge-network}
+  + [Create datastreams](edge/create-datastreams.md)
   + [First-party device IDs](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
   + [Overview](debugger/overview.md)
