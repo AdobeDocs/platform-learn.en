@@ -19,27 +19,27 @@ In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICO
 
 In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with **[!DNL Offer Decisioning]**.
 
-To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). You'll then see this. Click **[!UICONTROL Datastreams]**. Search for your **[!UICONTROL Datastream]**. Click your **[!UICONTROL Datastream]** to open it. 
+To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). You'll then see this. Click **[!UICONTROL Datastreams]** or **[!UICONTROL Datastreams (Beta)]**. 
+
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
+
+Search for your **[!UICONTROL Datastream]**, which is named `--demoProfileLdap-- - Demo System Datastream`. Click your **[!UICONTROL Datastream]** to open it. 
 
 ![WebSDK](./images/websdk1.png)
 
-You'll then see this. Click **[!UICONTROL Development Environment]**.
+You'll then see this. Click **...** next to **Adobe Experience Platform** and then click **Edit**.
 
 ![WebSDK](./images/websdk3.png)
 
-In the **[!UICONTROL Development Environment]**, you'll see your Adobe Experience Platform configuration. 
-
-![WebSDK](./images/websdk4.png)
-
-To enable **[!DNL Offer Decisioning]**, check the box for **[!DNL Offer Decisioning]**.
+To enable **[!DNL Offer Decisioning]**, check the box for **[!DNL Offer Decisioning]**. Click **Save**.
 
 ![WebSDK](./images/websdk5.png)
 
-Click **[!UICONTROL Save]**
-
-![WebSDK](./images/save6.png)
-
 Your **[!UICONTROL Datastream]** is now ready to work with **[!DNL Offer Decisioning]**.
+
+![WebSDK](./images/websdk4.png)
 
 ## 9.3.2 Configure your Adobe Experience Platform Data Collection Client property to request Personalized Offers
 
