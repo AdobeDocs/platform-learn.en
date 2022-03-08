@@ -13,25 +13,19 @@ exl-id: 4aee8ae2-38ca-49a3-8f1b-57713d16f5b5
 
 In case you want to send data collected by Web SDK to Adobe Target and get a response from Adobe Target with a personalized experience for every customer, follow these steps.
 
-Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) and go to **Datastreams**. Open your specific Datastream.
+Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) and go to **Datastreams**. 
 
-Click to open your Datastream's **Development Environment**.
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`. Open your specific datastream, which is named `--demoProfileLdap-- - Demo System Datastream`.
 
-![AEP Debugger](./images/aa1.png)
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
-You'll then see this. To enable Adobe Target, click the toggle for Adobe Target.
+You'll then see this. To enable Adobe Target, click **+Add Service**.
+
+![AEP Debugger](./images/aa2.png)
+
+You'll then see this. Select the service **Adobe Target**, after which you can optionally provide additional information. At this moment, there's no need to save this, so click **Cancel**.
 
 ![AEP Debugger](./images/at1.png)
-
-You now need to enter your Adobe Target client code. Your Adobe Target client code is: `--atClientCode--`.
-
-You can find your Adobe Target client code yourself by going to Adobe Target, to Administration and then to Implementation, where you'll find this:
-
-![AEP Debugger](./images/at2.png)
-
-Copy the value for Client Code and paste it in your Edge Configuration. Don't forget to click **Save** to save your changes.
-
-![AEP Debugger](./images/at3.png)
 
 Next Step: [1.7 XDM Schema requirements in Adobe Experience Platform](./ex7.md)
 

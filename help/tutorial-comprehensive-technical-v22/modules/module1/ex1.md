@@ -37,11 +37,9 @@ Now, take a look at the left rail.
 ![Launch Left Rail](./images/launch2.png)
 
 - **[!UICONTROL Tags]** gives an overview of all client-side properties
-- **[!UICONTROL App Configurations]** gives an overview of all App Configurations to enable Push Notifications (which is used/enabled in combination with Project Sierra)
+- **[!UICONTROL App Surfaces]** gives an overview of all App Configurations to enable Push Notifications (which is used/enabled in combination with Project Sierra)
 - **[!UICONTROL Datastreams]** are explored in the [next exercise](./ex2.md)
 - **[!UICONTROL Event Forwarding]** gives an overview of all server-side properties which are explored in [Module 14 - Real-Time CDP Connections: Event Forwarding](../module14/aep-data-collection-ssf.md)
-- **[!UICONTROL Identities]** gives you an overview of all available identity namespaces
-- **[!UICONTROL Schemas]** gives you an overview of all available XDM schemas, along with the ability to create and update XDM schemas
 
 ## Further Information
 
