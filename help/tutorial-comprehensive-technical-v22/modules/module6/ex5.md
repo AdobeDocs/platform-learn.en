@@ -21,27 +21,37 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe edge network. If you want to setuo your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../module0/ex2.md) and was named `--demoProfileLdap-- - Demo System Datastream`.
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), then click **Datastreams**.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), then click **Datastreams** or **Datastreams (Beta)**.
 
 ![Data Ingestion](./images/atdestds1.png)
+
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
 In Datastreams, search for your datastream which is named `--demoProfileLdap-- - Demo System Datastream`. Click your datastream to open it.
 
 ![Data Ingestion](./images/atdestds3.png)
 
-Next, click the **Developement Environment** to open it.
+You'll then see this, click **...** next to **Adobe Experience Platform** and then click **Edit**.
 
 ![Data Ingestion](./images/atdestds4.png)
 
-Scroll down to Adobe Target, enable the toggle for Adobe Target and fill out your Adobe Target client code. Click **Save**.
+Check the checkboxes for both **Edge Segmentation** and **Personalization Destinations**. Click **Save**.
 
->[!NOTE]
->
-> Adobe Target client code is an IMS Org-specific field. Please verify what your Adobe Target client code is and fill out the correct client code.
+![Data Ingestion](./images/atdestds4a.png)
+
+Next, click **+ Add Service**.
+
+![Data Ingestion](./images/atdestds4b.png)
+
+Select the service **Adobe Target**. Click **Save**.
 
 ![Data Ingestion](./images/atdestds5.png)
 
 Your datastream is now configured for Adobe Target.
+
+![Data Ingestion](./images/atdestds5a.png)
 
 ## 6.5.2 Configure your Adobe Target destination
 

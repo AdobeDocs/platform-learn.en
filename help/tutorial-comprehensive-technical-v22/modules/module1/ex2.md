@@ -27,7 +27,7 @@ Let's review your **[!UICONTROL Datastream]**:
 
 Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/).
 
-Click **[!UICONTROL Datastreams]** in the left menu.
+Click **[!UICONTROL Datastreams]** or **[!UICONTROL Datastreams (Beta)]** in the left menu.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
@@ -35,19 +35,21 @@ Search for your Datastream, which is named `--demoProfileLdap-- - Demo System Da
 
 ![Name the Datastream and save](./images/edgeconfig2.png)
 
-Click on your Datastream to open it. You'll then see the three environments (Development, Staging, Production). Click the **Development** environment.
-
-![Name the Datastream and save](./images/edgeconfig3.png)
-
 You'll then see the details of your Datastream. 
 
 ![Name the Datastream and save](./images/edgecfg1.png)
 
-At this moment, you've only enabled Adobe Experience Platform. Your configuration will look similar to the configuration below. (Depending on your environment and Adobe Experience Platform instance, the Sandbox Name might be different)
+Click **...** next to **Adobe Experience Platform** and click **Edit**.
+
+![Name the Datastream and save](./images/edgecfg1a.png)
+
+You'll then see this. At this moment, you've only enabled Adobe Experience Platform. Your configuration will look similar to the configuration below. (Depending on your environment and Adobe Experience Platform instance, the Sandbox Name might be different)
+
+![Name the Datastream and save](./images/edgecfg2.png)
 
 You should interpret the below fields like this:
 
-For this Datastream...
+For this datastream...
 
 - All data that is collected will be stored in the `--aepSandboxId--` sandbox in Adobe Experience Platform
 - All Experience Event data is collected by default into the dataset **Demo System - Event Dataset for Website (Global v1.1)**
@@ -55,9 +57,6 @@ For this Datastream...
 - If you want to use the **Offer Decisioning** application service for this Datastream, you need to check the box for Offer Decisioning. (This will be part of [Module 9](./../module9/offer-decisioning.md))
 - If you want to use the **Edge Segmentation**, you need to check the box for Edge Segmentation.
 - If you want to use the **Personalization Destinations**, you need to check the box for Personalization Destinations.
-
-
-![Name the Datastream and save](./images/edgecfg2.png)
 
 For now, no other configuration is needed for your Datastream.
 

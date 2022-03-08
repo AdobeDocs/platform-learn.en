@@ -60,27 +60,27 @@ Server-side forwarding is a not a new concept for Audience Manager, and the same
 
 In case you want to send data collected by Web SDK to Adobe Analytics and Adobe Audience Manager, follow these steps.
 
-Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) and go to **Datastreams**. Open your specific Datastream.
+Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) and go to **Datastreams**. 
 
-Click to open your **Development Environment**.
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`. Open your specific datastream, which is named `--demoProfileLdap-- - Demo System Datastream`.
 
-![AEP Debugger](./images/aa1.png)
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
-You'll then see this. To enable Adobe Analytics, click the toggle for Adobe Analytics.
+You'll then see this. To enable Adobe Analytics, click **+Add Service**.
 
 ![AEP Debugger](./images/aa2.png)
 
-You'll then see this, which means that you need to add the report suite in Adobe Analytics to send data into. In this tutorial, this is out of scope.
+You'll then see this. Select the service **Adobe Analytics**, after which you need to add the report suite in Adobe Analytics to send data into. In this tutorial, this is out of scope. Click **Cancel**.
 
 ![AEP Debugger](./images/aa3.png)
 
 ## 1.5.4 Review your Datastream to send data to Adobe Audience Manager
 
-Click to open your Datastream's **Development Environment**.
+You'll then see this. To enable Adobe Audience Manager, click **+Add Service**.
 
-![AEP Debugger](./images/aa1.png)
+![AEP Debugger](./images/aa2.png)
 
-You'll then see this. You can now decide to enable or disable Adobe Audience Manager cookie destinations and/or URL destinations. In this tutorial, this configuration is out of scope.
+You'll then see this. Select the service **Adobe Audience Manager** after which you can decide to enable or disable Adobe Audience Manager cookie destinations and/or URL destinations. In this tutorial, this configuration is out of scope. Click **Cancel**.
 
 ![AEP Debugger](./images/aam1.png)
 
