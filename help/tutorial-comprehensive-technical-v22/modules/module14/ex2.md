@@ -16,26 +16,24 @@ In [Exercise 0.2](./../../modules/module0/ex2.md), you created your own **[!UICO
 In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with your **[!DNL Data Collection Server property]**.
 
 To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). You'll then see this. In the left menu, click **[!UICONTROL Datastreams]**.
-Search for your **[!UICONTROL Datastream]**. Click your **[!UICONTROL Datastream]** to open it.
+
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
+
+Search for your **[!UICONTROL Datastream]**, which is named `--demoProfileLdap-- - Demo System Datastream`. Click your **[!UICONTROL Datastream]** to open it.
 
 ![WebSDK](./images/websdk0.png)
 
-You'll then see this. Click **[!UICONTROL Development Environment]**.
+You'll then see this. Click **[!UICONTROL + Add Service]**.
 
 ![WebSDK](./images/websdk3.png)
 
-In the **[!UICONTROL Development Environment]**, you'll see your current datastream configuration. 
+Select the service **Event Forwarding**. This will show you 2 additional settings. Select your Event Forwarding property, which you created in the previous exercise and which is named `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`. Then select **Development** under **Environment**. Click **Save**. 
 
 ![WebSDK](./images/websdk4.png)
 
-Scroll down to **[!DNL Launch Server Side]** and toggle the button to turn [!DNL Launch Server Side] on.
-You can then select your **[!DNL Event Forwarding property]** from the dropdown list. Search and select the **[!DNL Event Forwarding property]** you created in the previous step. After selecting the **[!DNL Event Forwarding property]**, you need to select the Environment ID. Select **[!DNL Development]**.
-
-Click **[!DNL Save]**.
-
-![WebSDK](./images/websdk4a.png)
-
-You'll then be back here.
+Your datastream has now been updated and is ready for usage.
 
 ![WebSDK](./images/websdk8a.png)
 
