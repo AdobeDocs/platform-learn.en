@@ -19,43 +19,37 @@ For now, please follow these steps.
 
 ## 0.3.1 Create your Datastream for Web
 
-Click **[!UICONTROL Datastreams]**.
+Click **[!UICONTROL Datastreams]** or **[!UICONTROL Datastreams (Beta)]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png)
+
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
 Click **[!UICONTROL New Datastream]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream` and click **Save**.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream`. For Event Schema, select **Demo System - Event Schema for Website (Global v1.1)**. Click **Save**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig2.png)
 
-You'll then see this:
+You'll then see this. Click **Add Service**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig3.png)
 
-Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additional fields. You'll then see this:
+Select the service **[!UICONTROL Adobe Experience Platform]**, which will expose additional fields. You'll then see this. 
+
+For Event Dataset, select **Demo System - Event Dataset for Website (Global v1.1)** and for Profile Dataset, select **Demo System - Profile Dataset for Website (Global v1.1)**. Click **Save**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig4.png)
 
-For **[!UICONTROL Sandbox]**, select your sandbox name, which should be `--aepSandboxId--`.
+You'll now see this.
 
 ![Name the Edge Configuration and save](./images/edgeconfig5.png)
 
-For Event Dataset, select **Demo System - Event Dataset for Website (Global v1.1)** and for Profile Dataset, select **Demo System - Profile Dataset for Website (Global v1.1)**.
-
-![Name the Edge Configuration and save](./images/edgeconfig7.png)
-
 That's it for now. In [Module 1](./../module1/data-ingestion-launch-web-sdk.md) you'll learn more about Web SDK and how to configure all of its capabilities.
-
-You now have this. Click **Save**.
-
-![Name the Edge Configuration and save](./images/edgeconfig8.png)
-
-You'll then see that your datastream consists of 3 environments.
-
-![Name the Edge Configuration and save](./images/edgeconfig9.png)
 
 In the left menu, clik **[!UICONTROL Tags]**.
 
@@ -101,38 +95,37 @@ Your changes are now being published and will be ready in a couple of minutes.
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
-Open the dropdown menu and click **[!UICONTROL Datastream]**.
+Click **[!UICONTROL Datastreams]** or **[!UICONTROL Datastreams (Beta)]**.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
+
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+
+![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
 Click **[!UICONTROL New Datastream]**.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream (Mobile)`.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream (Mobile)`. For Event Schema, select **Demo System - Event Schema for Mobile App (Global v1.1)**. Click **Save**.
+
 Click **[!UICONTROL Save]**.
 
 ![Name the Datastream and save](./images/edgeconfig2m.png)
 
-You'll then see this:
+You'll then see this. Click **Add Service**.
 
 ![Name the Datastream and save](./images/edgeconfig3m.png)
 
-Toggle on **[!UICONTROL Adobe Experience Platform]** which will expose additional fields. You'll then see this:
-
-![Name the Datastream Configuration and save](./images/edgeconfig4m.png)
-
-For **[!UICONTROL Sandbox]**, select your sandbox name.
-
-![Name the Datastream Configuration and save](./images/edgeconfig5m.png)
+Select the service **[!UICONTROL Adobe Experience Platform]**, which will expose additional fields. You'll then see this.
 
 For Event Dataset, select **Demo System - Event Dataset for Mobile App (Global v1.1)** and for Profile Dataset, select **Demo System - Profile Dataset for Mobile App (Global v1.1)**. Click **Save**.
 
-![Name the Datastream Configuration and save](./images/edgeconfig7m.png)
+![Name the Datastream Configuration and save](./images/edgeconfig4m.png)
 
-You'll then see that your Datastream consists of 3 environments.
+You'll then see this.
 
-![Name the Datastream Configuration and save](./images/edgeconfig9m.png)
+![Name the Datastream Configuration and save](./images/edgeconfig5m.png)
 
 Your Datastream is now ready to be used in your Adobe Experience Platform Data Collection Client property for Mobile.
 
