@@ -33,19 +33,25 @@ In Datastreams, search for your datastream which is named `--demoProfileLdap-- -
 
 ![Data Ingestion](./images/atdestds3.png)
 
-Next, click the **Developement Environment** to open it.
+You'll then see this, click **...** next to **Adobe Experience Platform** and then click **Edit**.
 
 ![Data Ingestion](./images/atdestds4.png)
 
-Scroll down to Adobe Target, enable the toggle for Adobe Target and fill out your Adobe Target client code. Click **Save**.
+Check the checkboxes for both **Edge Segmentation** and **Personalization Destinations**. Click **Save**.
 
->[!NOTE]
->
-> Adobe Target client code is an IMS Org-specific field. Please verify what your Adobe Target client code is and fill out the correct client code.
+![Data Ingestion](./images/atdestds4a.png)
+
+Next, click **+ Add Service**.
+
+![Data Ingestion](./images/atdestds4b.png)
+
+Select the service **Adobe Target**. Click **Save**.
 
 ![Data Ingestion](./images/atdestds5.png)
 
 Your datastream is now configured for Adobe Target.
+
+![Data Ingestion](./images/atdestds5a.png)
 
 ## 6.5.2 Configure your Adobe Target destination
 
