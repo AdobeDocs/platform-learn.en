@@ -1,6 +1,7 @@
 ---
 title: Send data to Adobe Experience Platform
 description: Learn how to send data to Adobe Experience Platform.
+exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
 ---
 # Send data to Adobe Experience Platform
 

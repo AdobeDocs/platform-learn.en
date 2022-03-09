@@ -1,6 +1,7 @@
 ---
 title: Profile
 description: Learn how to collect profile data in a mobile app.
+exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
 ---
 # Profile
 

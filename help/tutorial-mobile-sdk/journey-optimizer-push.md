@@ -1,6 +1,7 @@
 ---
 title: Adobe Journey Optimizer push messaging
 description: Learn how to create push messages to a mobile app with Platform Mobile SDK and Adobe Journey Optimizer.
+exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
 ---
 # Adobe Journey Optimizer push messaging
 
