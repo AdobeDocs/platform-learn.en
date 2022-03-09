@@ -6,7 +6,7 @@ description: Learn how to configure a tag property in the [!UICONTROL Data Colle
 
 Learn how to configure a tag property in the [!UICONTROL Data Collection] interface.
 
-Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences. Learn more about [tags](https://experienceleague.corp.adobe.com/docs/experience-platform/tags/home.html) in the product documentation.
+Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences. Learn more about [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) in the product documentation.
 
 ## Prerequisites
 
