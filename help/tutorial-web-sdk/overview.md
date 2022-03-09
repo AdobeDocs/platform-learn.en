@@ -37,13 +37,9 @@ After completing the tutorial, you will be able to:
 
 * Forward data to third-parties with event forwarding
 
-<!--
 >[!NOTE]
 >
->Similar multi-solution tutorials are also available for the following platforms:
->
->* [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/mobile-ios-swift-implementation/overview.md)
--->
+>A similar multi-solution tutorial is available for [Web SDK](../tutorial-mobile-sdk/overview.md).
 
 ## Prerequisites
 

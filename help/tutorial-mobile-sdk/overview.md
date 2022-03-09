@@ -30,12 +30,14 @@ After completing this tutorial, you will be able to:
   * [Consent](consent.md)
   * [Identity](identity.md)
   * [Profile](profile.md)
+  * [Adobe Experience Platform](platform.md)
+  * [Push messaging with Journey Optimizer](journey-optimizer-push.md)
 * Correctly pass Experience Cloud parameters to a [webview](web-views.md).
 * Validate the implementation using [Adobe Experience Platform Assurance](assurance.md).
 
 >[!NOTE]
 >
->Similar multi-solution tutorials are also available for the [Web SDK](../tutorial-web-sdk/overview.md).
+>A similar multi-solution tutorial is available for [Web SDK](../tutorial-web-sdk/overview.md).
 
 ## Prerequisites
 

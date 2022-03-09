@@ -1,6 +1,7 @@
 ---
 title: Conclusion and next steps
 description: What to do next after completing the tutorial
+recommendations: display,noCatalog
 ---
 # Conclusion and next steps
 
@@ -27,7 +28,11 @@ Let's quickly review all that you have accomplished. You have:
 
 You are ready to begin the next phase of your journey&mdash;implementing Adobe Experience Cloud in your own mobile app!
 
-And there is always more to learn. You might be interested in exploring some of these other learning materials:
+And there is always more to learn! Here are some suggestions of other content to build upon your implementation:
 
-* [Implement Adobe Experience Cloud with Web SDK tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)
-* [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
+* **Enable event forwarding**. Event forwarding can easily be enabled in your datastream. Here is [a hands-on lesson to configure event forwarding](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/event-forwarding/setup-event-forwarding.html) from the Web SDK tutorial. Just use the resources created for your mobile implementation and choose XDM fields that you implemented in the app.
+* **Trigger a journey in Journey Optimizer**. The events you implemented in the Luma app can be used to trigger journeys. Learn more in this [video tutorial](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/create-journeys/use-case-transactional-journey.html).
+* **Connect Customer Journey Analytics**. If you created the [Platform dataset](platform.md), you can connect the dataset to Customer Journey Analytics. Learn more in this [video tutorial](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/connecting-customer-journey-analytics-to-data-sources-in-platform.html)
+* **Build a segment in Platform**. If you enabled your [schema and dataset for Real-time Customer Profile](platform.md), you can build segments based on your mobile app events, combine them with data from other sources and then send these segments to destinations in Real-time Customer Data Platform. Learn more about the segment builder in this [video tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
+* **Implement Platform Web SDK**. Now that you've mastered one SDK, learn another! The Adobe Experience Platform Web SDK is the JavaScript SDK used to power Experience Cloud and third-party services on websites. There is a similar [hands-on tutorial for Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Complete both and see profiles merge across devices!
+* **Learn more about Experience Platform**. Learn more about how to ingest data from other sources and combine that with your Mobile SDK data, in [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
