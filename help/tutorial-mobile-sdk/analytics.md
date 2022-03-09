@@ -1,6 +1,7 @@
 ---
 title: Analytics mapping
 description: Learn how to collect data for Adobe Analytics in a mobile app.
+exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
 ---
 # Analytics mapping
 

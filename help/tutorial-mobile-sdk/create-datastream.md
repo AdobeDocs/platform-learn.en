@@ -1,8 +1,8 @@
 ---
 title: Configure a datastream
 description: Learn how to create a datastream in Experience Platform.
+exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
 ---
-
 # Create a datastream
 
 Learn how to create a datastream in Experience Platform. 

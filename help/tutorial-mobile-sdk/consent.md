@@ -1,6 +1,7 @@
 ---
 title: Consent
 description: Learn how to implement consent in a mobile app.
+exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
 ---
 # Consent
 
