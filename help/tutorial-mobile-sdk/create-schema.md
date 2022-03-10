@@ -195,3 +195,7 @@ Now add a custom field group using your custom data type:
 You now have a schema to use for the rest of the tutorial.
 
 Next: **[Create a [!UICONTROL datastream]](create-datastream.md)**
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

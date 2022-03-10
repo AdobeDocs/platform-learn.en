@@ -17,14 +17,14 @@ Data Collection is the next generation of website tag and mobile SDK management 
 
 ## What's New
 
+* **[Implement Adobe Experience Cloud in mobile apps (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)**
+    *Implement Experience Cloud applications with Mobile SDK.*
+
+* **[Configure datastreams (Video)](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html)**
+    *Send data from Platform Edge Network to Experience Cloud applications.*
 * **[Implement Adobe Experience Cloud with Web SDK (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)**
     *Implement Experience Cloud applications with Web SDK.*
 
-* **[Web SDK overview (Video)](web-sdk/overview.md)**
-    *Power end-to-end engagement in your web sites.*
-
-* **[Event forwarding overview (Video)](event-forwarding/overview.md)**
-    *Forward data to non-Adobe solutions from Experience Platform Edge Network.*
 
 
 ## Staff Picks
@@ -41,29 +41,16 @@ Data Collection is the next generation of website tag and mobile SDK management 
     </a>
     </div>
     <p>
-    <em>Implement the Adobe Experience Cloud applications in your website</em>
+    <em>Use tags to implement Platform Web SDK</em>
     <p>
   </td>
   <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-android-apps/overview.html" target="_blank">
-      <img alt="Implement in Android™ apps with tags" src="assets/thumb_android.png" />
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+      <img alt="Implement in mobile apps" src="assets/thumb_swift.png" />
     </a>
     <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-android-apps/overview.html" target="_blank">
-    <strong>Implement in Android&trade; Apps</strong>
-    </a>
-    </div>
-    <p>
-    <em>Use tags to implement Platform Mobile SDK</em>
-    <p>
-  </td>
-  <td>
-    <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-swift-apps/overview.html" target="_blank">
-      <img alt="Implement in iOS Swift apps with tags" src="assets/thumb_swift.png" />
-    </a>
-    <div>
-      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-in-mobile-ios-swift-apps/overview.html" target="_blank">
-    <strong>Implement in iOS Swift&trade; Apps</strong>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html" target="_blank">
+    <strong>Implement the Experience Cloud in mobile apps</strong>
     </a>
     </div>
     <p>
@@ -73,5 +60,4 @@ Data Collection is the next generation of website tag and mobile SDK management 
 </tr>
 </table>
 
-*Apple, the Apple logo, iPad, iPhone, iPod, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. Swift and the Swift logo are trademarks of Apple Inc.
-Android™ is a trademark of Google LLC.*
+*Apple, the Apple logo, iPad, iPhone, iPod, and iPod touch are trademarks of Apple Inc., registered in the U.S. and other countries. Swift and the Swift logo are trademarks of Apple Inc.*

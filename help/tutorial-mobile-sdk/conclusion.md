@@ -39,3 +39,8 @@ And there is always more to learn! Here are some suggestions of other content to
 * **Build a segment in Platform**. If you enabled your [schema and dataset for Real-time Customer Profile](platform.md), you can build segments based on your mobile app events, combine them with data from other sources and then send these segments to destinations in Real-time Customer Data Platform. Learn more about the segment builder in this [video tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/segments/create-segments.html).
 * **Implement Platform Web SDK**. Now that you've mastered one SDK, learn another! The Adobe Experience Platform Web SDK is the JavaScript SDK used to power Experience Cloud and third-party services on websites. There is a similar [hands-on tutorial for Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). Complete both and see profiles merge across devices!
 * **Learn more about Experience Platform**. Learn more about how to ingest data from other sources and combine that with your Mobile SDK data, in [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
+
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

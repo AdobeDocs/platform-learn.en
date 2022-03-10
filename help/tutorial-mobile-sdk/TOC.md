@@ -7,7 +7,7 @@ kt: 6987
 recommendation: noDisplay,noCatalog
 ---
 
-# Implement the Experience Cloud in mobile apps {#implement-experience-cloud-in-mobile-apps}
+# Implement the Experience Cloud in mobile apps {#implement-mobile-sdk}
 
 + [Tutorial Overview](overview.md)
 + Initial configuration {#initial-configuration}

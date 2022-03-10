@@ -85,3 +85,7 @@ Additional `getUserAttributes` documentation can be found [here](https://aep-sdk
 ![validate profile](assets/mobile-profile-validate.png)
 
 Next: **[Map data to Adobe Analytics](analytics.md)**
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
