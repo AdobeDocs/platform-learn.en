@@ -1,6 +1,7 @@
 ---
 title: Send data to Adobe Experience Platform
 description: Learn how to send data to Adobe Experience Platform.
+exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
 ---
 # Send data to Adobe Experience Platform
 
@@ -122,7 +123,6 @@ From the profile detail screen, click the link to view the identity graph or nav
 There is a lot more that marketers and analytics can do with data captured in Experience Platform, including analyzing it in Customer Journey Analytics and building segments in Real-time Customer Data Platform. You are off to a good start!
 
 Next: **[Push messaging with Journey Optimizer](journey-optimizer-push.md)**
-
 
 >[!NOTE]
 >
