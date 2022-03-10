@@ -340,3 +340,7 @@ You should have all the tools to start adding data collection to the Luma sample
 Now that you have collected the events and sent them to Platform Edge Network, they will be sent to the applications and services configured in your [datastream](create-datastream.md). In later lessons you will map this data to [Adobe Analytics](analytics.md) and [Adobe Experience Platform](platform.md). 
 
 Next: **[WebViews](web-views.md)**
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

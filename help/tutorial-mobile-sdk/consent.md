@@ -89,3 +89,7 @@ In the above example, you are simply printing the consent status to the console.
     ![validate consent](assets/mobile-consent-update.png)
 
 Next: **[Collect lifecycle data](lifecycle-data.md)**
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
