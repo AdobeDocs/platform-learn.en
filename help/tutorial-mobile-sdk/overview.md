@@ -31,12 +31,14 @@ After completing this tutorial, you will be able to:
   * [Consent](consent.md)
   * [Identity](identity.md)
   * [Profile](profile.md)
+  * [Adobe Experience Platform](platform.md)
+  * [Push messaging with Journey Optimizer](journey-optimizer-push.md)
 * Correctly pass Experience Cloud parameters to a [webview](web-views.md).
 * Validate the implementation using [Adobe Experience Platform Assurance](assurance.md).
 
 >[!NOTE]
 >
->Similar multi-solution tutorials are also available for the [Web SDK](../tutorial-web-sdk/overview.md).
+>A similar multi-solution tutorial is available for [Web SDK](../tutorial-web-sdk/overview.md).
 
 ## Prerequisites
 
@@ -65,5 +67,9 @@ Two versions of the sample app are available for download.
 1. [Full Implemented](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"} – version with full Experience Cloud implementation for reference.
 
 Let's get started!
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Next: **[Create an XDM schema](create-schema.md)**

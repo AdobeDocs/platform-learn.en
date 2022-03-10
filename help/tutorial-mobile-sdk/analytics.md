@@ -7,7 +7,7 @@ exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d
 
 Learn how to map mobile data to Adobe Analytics.
 
-The [event](events.md), [lifecycle](lifecycle-data.md), and [identity](identity.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Analytics. You just need to map the data to the correct variables in your report suite.
+The [event](events.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Analytics. You just need to map the data to the correct variables in your report suite.
 
 ## Prerequisites
 

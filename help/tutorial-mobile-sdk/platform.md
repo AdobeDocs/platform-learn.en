@@ -123,3 +123,7 @@ From the profile detail screen, click the link to view the identity graph or nav
 There is a lot more that marketers and analytics can do with data captured in Experience Platform, including analyzing it in Customer Journey Analytics and building segments in Real-time Customer Data Platform. You are off to a good start!
 
 Next: **[Push messaging with Journey Optimizer](journey-optimizer-push.md)**
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)

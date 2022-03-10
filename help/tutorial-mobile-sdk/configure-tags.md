@@ -36,6 +36,11 @@ In this lesson, you will:
      
         ![configure the tag property](assets/mobile-tags-property-config.png)
 
+        >[!NOTE]
+        >
+        > Default consent settings for the edge-based mobile sdk implementations such as the one you are doing in this tutorial come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You will add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://aep-sdks.gitbook.io/docs/resources/privacy-and-gdpr).
+
+
 1. Open the new property    
 1. Create a library:
 
