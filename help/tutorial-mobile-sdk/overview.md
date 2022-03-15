@@ -13,7 +13,7 @@ Experience Platform Mobile SDK is a client-side SDK that allows customers of Ado
   ![build settings](assets/data-collection-mobile-sdk.png)
 
 
-This tutorial guides you through the implementation of the Platform Mobile SDK in a sample retail app called Luma. The [Luma app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App-Empty) has functionality that lets you build a realistic implementation. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Platform Mobile SDK in your own mobile apps.
+This tutorial guides you through the implementation of the Platform Mobile SDK in a sample retail app called Luma. The [Luma app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) has functionality that lets you build a realistic implementation. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Platform Mobile SDK in your own mobile apps.
 
 The lessons are designed for iOS and written in Swift, but many of the concepts also apply to Android™.
 
