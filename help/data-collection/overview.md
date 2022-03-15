@@ -1,6 +1,6 @@
 ---
 title: Data Collection tutorials 
-description: How-to videos and tutorials to make you a power-user of Data Collection
+description: How-to videos and tutorials to make you a power user of Data Collection
 exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 ---
 # Data Collection tutorials
