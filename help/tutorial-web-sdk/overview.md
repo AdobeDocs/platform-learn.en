@@ -39,7 +39,7 @@ After completing the tutorial, you will be able to:
 
 >[!NOTE]
 >
->A similar multi-solution tutorial is available for [Web SDK](../tutorial-mobile-sdk/overview.md).
+>A similar multi-solution tutorial is available for [Mobile SDK](../tutorial-mobile-sdk/overview.md).
 
 ## Prerequisites
 
