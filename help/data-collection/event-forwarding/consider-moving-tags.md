@@ -1,23 +1,23 @@
 ---
-title: Consider moving vendor tags to Event Forwarding
+title: Consider moving vendor tags to event forwarding
 description: Learn how to evaluate a client-side vendor tag for server-side data distribution.
-feature: Event Forwarding, Tags, Integrations
+feature: event forwarding, Tags, Integrations
 solution: Experience Platform, Data Collection
 kt: 9921
 level: Intermediate, Experienced
 role: Admin, Developer, Architect
 ---
-# Consider moving client-side vendor tags to Event Forwarding
+# Consider moving client-side vendor tags to event forwarding
 
-There are several compelling reasons to consider moving client-side vendor tags out of browsers and devices, and onto a server. In this article we'll discuss how to evaluate a client-side vendor tag for potentially moving it to an Event Forwarding property.
+There are several compelling reasons to consider moving client-side vendor tags out of browsers and devices, and onto a server. In this article, we'll discuss how to evaluate a client-side vendor tag for potentially moving it to an event forwarding property.
 
-This evaluation is really only necessary if you are considering removing a client-side vendor tag and replacing it with server-side data distribution in an Event Forwarding property. This article assumes you are familiar with the basics of [data collection](https://experienceleague.adobe.com/docs/data-collection.html), and [Event Forwarding](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
+This evaluation is only necessary if you are considering removing a client-side vendor tag and replacing it with server-side data distribution in an event forwarding property. This article assumes you are familiar with the basics of [data collection](https://experienceleague.adobe.com/docs/data-collection.html), and [event forwarding](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
 >Adobe Experience Platform Launch has been rebranded as a suite of data collection technologies in Adobe Experience Platform. Several terminology changes have rolled out across the product documentation as a result. Please refer to the following [document](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) for a consolidated reference of the terminology changes.
 
-Browser vendors are changing how they treat 3rd party cookies. Advertising and marketing vendors and technologies often require the use of many client-side tags. These are just two compelling reasons currently motivating our customers to consider server-side data distribution.
+Browser vendors are changing how they treat third party cookies. Advertising and marketing vendors and technologies often require the use of many client-side tags. These are just two compelling reasons currently motivating our customers to consider server-side data distribution.
 
 >[!NOTE]
 >
@@ -25,31 +25,31 @@ Browser vendors are changing how they treat 3rd party cookies. Advertising and m
 
 ## Use cases and data {#use-cases-data}
 
-The first step is to define the use cases we implemented for the client-side vendor tag. For example, if we're considering eliminating the Facebook (Meta) pixel from our site client-side, and moving that data management to the [Facebook Conversions API](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) edge extension, we need to know the specific use cases to support.
+The first step is to define the use cases implemented with the client-side vendor tag. For example, consider the Facebook (Meta) pixel. Moving it from our site to the [Facebook Conversions API](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) with the event forwarding extension means documenting the specific use cases first.
 
 For the current client-side vendor code:
 
-- Which specific event and other data points are we exposing or passing to the client-side tag?
-- When and where does that happen?
+- Which specific event and other data points are exposed and passed to the client-side tag?
+- When and where does that data transfer happen?
 
-It's helpful to make a list, spreadsheet, diagram, or other record of the data and sequence of events to document this evaluation - even if it's only for your own use. Be sure to include labels for data sources - where does it come from? Destinations - where will it go? And transformations - what happens to it between source and destination?
+It's helpful to make a list, spreadsheet, diagram, or other record of the data and sequence of events to document this evaluation - even if it's only for your own use. Be sure to include labels for data sources&mdash;where does it come from? Destinations&mdash;where does it go? And transformations&mdash;what happens to it between source and destination?
 
-In our example, we're tracking conversions with the Facebook pixel when visitors interact with our site after viewing a Facebook ad or interacting with one of our related ads on another social platform. We want to send data to Facebook so we can see these conversions in their advertising tools and reports. This might include data from conversion events like downloads, registrations, likes, purchases, etc.
+In our example, we're tracking conversions with the Facebook pixel when visitors interact with our site after viewing a Facebook ad. They could also interact with our site after viewing related ads on another social platform. To see these conversions in the Facebook advertising tools and reports, the required data needs to get to Facebook. This might include data from conversion events like downloads, registrations, likes, or purchases.
 
 ### Data {#data}
 
-With our existing client-side tag, when it runs or executes on our site, what happens with the data we need for our use case? Can we capture the data we need in the client, without the vendor tag, so we can send it to Event Forwarding? When using [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) or other tag management system, most visitor interaction data is available, but we need to make sure the data we need for our use case is available when we need it, where we need it, and in the format we need it, without the client-side vendor tag running. Some further data questions to consider:
+With the existing client-side tag, when it runs or executes on our site, what happens with the data for our use case? Can we capture the data we need in the client, without the vendor tag, so we can send it to event forwarding? When using [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) or other tag management systems, most visitor interaction data is available for collection and distribution. But is the data we need for our use case available when we need it, where we need it, and in the format we need it&mdash;without the client-side vendor tag? Here are some further data questions to consider:
 
 - Is there a vendor user ID required with every event?
-- If so, how can we obtain or generate it without the client-side tag?
+- If so, how can it be collected or generated without the client-side tag?
 - Does the vendor specifically require their client-side code at runtime?
-- What other data is required? Where will we get it?
+- What other data is required? Where will that data come from?
 
-Most client-side vendor tags don't require a large number of data points for any particular use case, but it's helpful to note the use cases and required data during these evaluations.
+Most client-side vendor tags don't require many data points for any particular use case, but it's helpful to note the use cases and required data during these evaluations.
 
 ## Vendor APIs {#vendor-apis}
 
-Now that we know the specific use cases to implement, the specific data required for those cases, and the sequence of events from source to destination, we can investigate the vendor API details to determine if they're a good fit for Event Forwarding.
+Now we know the specific use cases to implement, the data required, and the sequence of events from source to destination. To determine if this is a good fit for event forwarding, we can now investigate the vendor API details.
 
 >[!IMPORTANT]
 >
@@ -57,40 +57,44 @@ Now that we know the specific use cases to implement, the specific data required
 
 ### Investigating APIs {#investigate-apis}
 
-Here are some steps we can take to investigate vendor API endpoints.
+Here are some steps that we can take to investigate vendor API endpoints.
 
-Does the vendor have APIs designed for server-to-server transfer of event data?
+Does the vendor have APIs designed for server-to-server transfer of event data? First, find the requirements for those specific API endpoints:
 
-- Do the API endpoints exist to send the required data? Look at the vendor's developer or API documentation to find the endpoints that support your use cases.
-- Find the requirements for those specific API endpoints:
-  - Do they allow streaming event data, or only batch data?
-  - Which authentication methods do they support? Token, HTTP, OAuth client credentials version, or other? See [here](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) for methods supported by Event Forwarding.
-  - What is the refresh offset of their API? Is that compatible with the Event Forwarding minimums? Details [here](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
-  - What data do they require for the relevant endpoints?
-  - Do they require a vendor-specific user identifier with every call to the endpoint?
-  - If so, how can that be generated or obtained?
-  - Would that require client-side vendor tags?
+- Do the API endpoints exist to send the required data? To find the endpoints that support your use cases, look at the vendor's developer or API documentation.
+- Do they allow streaming event data, or only batch data?
+- Which authentication methods do they support? Token, HTTP, OAuth client credentials version, or other? See [here](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html) for methods supported by event forwarding.
+- What is the refresh offset of their API? Is that limitation compatible with the event forwarding minimums? Details [here](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
+- What data do they require for the relevant endpoints?
+- Do they require a vendor-specific user identifier with every call to the endpoint?
+- If they require that identifier, it needs to be generated or captured somewhere, so where and how will that happen without client-side code?
 
-If the vendor provides the API endpoints required for our use cases, and they have a compatible authentication method, and we have access to all the data required for the Event Forwarding implementation (either from the client-side, or from other API calls), then the tag is likely a good candidate to move from the client to our servers in an Event Forwarding property with the goal of removing the client-side tag.
+In other words:
 
-If the vendor doesn't have the API endpoints to support our use cases, then obviously that vendor tag is not a good candidate for using Event Forwarding in place of any client-side vendor tag.
+- Does the vendor provide the API endpoints required for our use cases?
+- Do they have a compatible authentication method for event forwarding?
+- Can we access all the data required for an event forwarding implementation (either from the client-side, or from other API calls)?
 
-What if they have APIs, but also require some unique visitor or user ID with every API call? How can we access that ID if we don't have the vendor client-side code (tag) running on our site?
+The tag is likely a good candidate to move from the client to our servers in an event forwarding property if we can answer yes to those questions.
 
-Some vendors are changing their systems for the new world without 3rd party cookies. This includes allowing alternative unique identifiers, like a [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) or other customer-generated ID (CRM ID, hashed email address, etc.). If the vendor we're investigating allows a customer-generated ID, and we can either send it to Experience Edge with a Send Event from our Web or Mobile SDKs, or we can obtain it from an API call, then we likely don't have any issues related to visitor/user IDs. When we send data to that vendor in an Event Forwarding Rule, we simply include that identifier as-needed.
+If the vendor doesn't have the API endpoints to support our use cases, then obviously that vendor tag is not a good candidate for using event forwarding in place of the client-side vendor tag.
 
-If the vendor requires data (like a vendor-specific unique ID, for example) that can only be generated or accessed by their own client-side tag, then that vendor is likely not a good candidate to move into an Event Forwarding property. _Attempting to reverse-engineer a client-side tag with the idea of moving that data collection to Event Forwarding without the appropriate APIs is strongly discouraged._
+What if they have APIs, but also require some unique visitor or user ID with every API call? How can we access that ID if we don't have the vendor client-side code (tag) running on the site?
 
-The [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) extension can make HTTP requests as-needed with vendors who have the appropriate APIs for server-to-server event data transfer. While vendor-specific extensions are nice to have, and more extensions are under active development right now, we can implement Event Forwarding rules today using the Cloud Connector extension, without needing to wait for additional vendor extensions.
+Some vendors are changing their systems for the new world without third party cookies. This includes allowing alternative unique identifiers, like a [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) or other [customer-generated ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) (CRM ID, hashed email address, etc.). If the vendor allows a customer-generated ID, we can either send it from the client to Platform Edge Network with Web or Mobile SDK, or possibly get it from an API call in event forwarding. When we send data to that vendor in an event forwarding rule, we simply include that identifier as-needed.
+
+If the vendor requires data (like a vendor-specific unique ID, for example) that can only be generated or accessed by their own client-side tag, then that vendor tag is likely not a good candidate to move. _Attempting to reverse-engineer a client-side tag with the idea of moving that data collection to event forwarding without the appropriate APIs is strongly discouraged._
+
+The [Adobe Experience Platform Cloud Connector](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/cloud-connector/overview.html) extension can make HTTP requests as-needed with vendors who have the appropriate APIs for server-to-server event data transfer. While vendor-specific extensions are nice to have, and more extensions are under active development right now, we can implement event forwarding rules today using the Cloud Connector extension, without waiting for additional vendor extensions.
 
 ## Tools {#tools}
 
-Investigating and testing vendor API endpoints can be done with [Postman](https://www.postman.com/), or for quick requests, several IDEs or text editors like Visual Studio Code offer helpful extensions like [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), or [HTTP Client](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
+Investigating and testing vendor API endpoints is easier with tools like [Postman](https://www.postman.com/), or text editor extensions like Visual Studio Code [Thunder Client](https://marketplace.visualstudio.com/items?itemName=rangav.vscode-thunder-client), or [HTTP Client](https://marketplace.visualstudio.com/items?itemName=mkloubert.vscode-http-client).
 
 ## Next steps {#next-steps}
 
-This article provided a sequence of steps we can take to evaluate a vendor client-side tag and potentially moving it server-side in an Event Forwarding property. For more information on related topic, see these links:
+This article provided a sequence of steps to evaluate a vendor client-side tag and potentially move it server-side in an event forwarding property. For more information on related topics, see these links:
 
 - [Tag management](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) in Adobe Experience Platform
 - [Event forwarding](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html) for server-side processing
-- [Terminology updates](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html)
+- [Terminology updates](https://experienceleague.adobe.com/docs/experience-platform/tags/term-updates.html) in data collection
