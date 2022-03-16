@@ -1,7 +1,7 @@
 ---
 title: Consider moving vendor tags to event forwarding
 description: Learn how to evaluate a client-side vendor tag for server-side data distribution.
-feature: event forwarding, Tags, Integrations
+feature: Event Forwarding, Tags, Integrations
 solution: Experience Platform, Data Collection
 kt: 9921
 level: Intermediate, Experienced
@@ -67,7 +67,7 @@ Does the vendor have APIs designed for server-to-server transfer of event data? 
 - What is the refresh offset of their API? Is that limitation compatible with the event forwarding minimums? Details [here](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/secrets.html#:~:text=you%20can%20configure%20the%20Refresh%20Offset%20value%20for%20the%20secret).
 - What data do they require for the relevant endpoints?
 - Do they require a vendor-specific user identifier with every call to the endpoint?
-- If they require that identifier, where and how will it be generated or captured, without client-side code?
+- If they require that identifier, where and how can it be generated or captured, without client-side code?
 
 In other words:
 
@@ -81,7 +81,7 @@ If the vendor doesn't have the API endpoints to support our use cases, then obvi
 
 What if they have APIs, but also require some unique visitor or user ID with every API call? How can we access that ID if we don't have the vendor client-side code (tag) running on the site?
 
-Some vendors are changing their systems for the new world without third party cookies. These changes include the use of alternative unique identifiers, like a [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) or other [customer-generated ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html) (CRM ID, hashed email address, etc.). If the vendor allows a customer-generated ID, we can either send it from the client to Platform Edge Network with Web or Mobile SDK, or possibly get it from an API call in event forwarding. When we send data to that vendor in an event forwarding rule, we simply include that identifier as-needed.
+Some vendors are changing their systems for the new world without third party cookies. These changes include the use of alternative unique identifiers, like a [UUID](https://developer.mozilla.org/en-US/docs/Glossary/UUID) or other [customer-generated ID](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html). If the vendor allows a customer-generated ID, we can either send it from the client to Platform Edge Network with Web or Mobile SDK, or possibly get it from an API call in event forwarding. When we send data to that vendor in an event forwarding rule, we simply include that identifier as-needed.
 
 If the vendor requires data (like a vendor-specific unique ID, for example) that can only be generated or accessed by their own client-side tag, then that vendor tag is likely not a good candidate to move. _Attempting to reverse-engineer a client-side tag with the idea of moving that data collection to event forwarding without the appropriate APIs is discouraged._
 
