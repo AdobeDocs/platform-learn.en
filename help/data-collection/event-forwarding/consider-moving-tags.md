@@ -6,6 +6,7 @@ solution: Experience Platform, Data Collection
 kt: 9921
 level: Intermediate, Experienced
 role: Admin, Developer, Architect
+exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
 ---
 # Consider moving client-side vendor tags to event forwarding
 
