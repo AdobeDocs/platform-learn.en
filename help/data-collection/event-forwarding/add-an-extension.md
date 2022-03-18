@@ -20,6 +20,4 @@ Learn how to add an event-forwarding extension in Data Collection.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331941?quality=12&learn=on)
 
-## Additional Resources
-
-* [Event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+For more information, please visit the [event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)

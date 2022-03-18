@@ -14,6 +14,4 @@ This video shows how Adobe’s Real-Time Customer Data Platform and Google’s C
 
 >[!VIDEO](https://video.tv.adobe.com/v/38180?quality=12&learn=on)
 
-## Additional Resources
-
 For  more information, please visit the [documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/google-customer-match.html).

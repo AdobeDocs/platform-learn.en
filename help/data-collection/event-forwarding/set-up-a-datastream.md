@@ -20,6 +20,4 @@ Learn how to set up a datastream for event forwarding.
 
 >[!VIDEO](https://video.tv.adobe.com/v/331939?quality=12&learn=on)
 
-## Additional Resources
-
-* [Create a datastrean documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+For more information, please visit [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
