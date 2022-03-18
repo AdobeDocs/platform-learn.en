@@ -63,3 +63,7 @@ On the next screen, you are able to add services such as Adobe applications to t
 You are now ready to install the Platform Web SDK extension in your tag property!
 
 [Next: **Install Platform Web SDK extension in tags**](install-web-sdk.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

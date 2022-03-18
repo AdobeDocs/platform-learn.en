@@ -129,3 +129,7 @@ As you can see on the [!UICONTROL Publishing Flow] screen, there is a lot more t
 Now you are ready to validate the data in the request using the Adobe Experience Platform Debugger.
 
 [Next **Validate with Debugger**](validate-with-debugger.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
