@@ -9,7 +9,7 @@ exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
 ---
 # 6. Real-time CDP - Build a segment and take action
 
-**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Alberto De Caro](https://www.linkedin.com/in/albertodecaro/), [Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
 
 In this module, you'll configure a streaming segment and activate the segment to multiple destinations.
 
