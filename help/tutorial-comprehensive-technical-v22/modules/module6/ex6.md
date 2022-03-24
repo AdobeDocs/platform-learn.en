@@ -393,6 +393,16 @@ You'll then see this. You'll also notice that the profile for which you ingested
 
 Your segment is ready now, and can be sent towards a destination for activation.
 
+## 6.6.4 Visualize your customer profile
+
+You can now also visualize the segment qualification on your customer profile. Go to **Profiles**, use the identity namespace **Demo System - CRMID** and provide the identity `--demoProfileLdap---profile-test-01`, which you used as part of exercise 6.6.2.4, and click **View**. Next, click the **Profile ID** to open the profile.
+
+![External Audiences SegBuilder 1](images/extAudProfileUI1.png)
+
+Go to **Segment membership**, where you'll see your external audience appear.
+
+![External Audiences SegBuilder 1](images/extAudProfileUI2.png)
+
 Next Step: [6.7 Destinations SDK](./ex7.md)
 
 [Go Back to Module 6](./real-time-cdp-build-a-segment-take-action.md)
