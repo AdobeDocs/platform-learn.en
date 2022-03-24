@@ -2,7 +2,7 @@
 title: Configure Attribution AI
 description: Learn how to create an instance of Attribution AI to understand the impact of your marketing channels and campaigns.
 role: User
-solution: Experience Platform, Intelligent Services
+solution: Intelligent Services
 feature: Attribution AI
 kt: 4174
 thumbnail: 32668.jpg
