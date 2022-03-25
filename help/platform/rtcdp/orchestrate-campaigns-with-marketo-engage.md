@@ -1,7 +1,7 @@
 ---
 title: Orchestrate campaigns with Marketo Engage and Real-time Customer Data Platform, B2B Edition
 description: Learn how to orchestrate campaigns with Marketo Engage and Real-time Customer Data Platform (CDP), B2B Edition.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Real-time Customer Data Platform
 role: User
 kt: 9263
 thumbnail: 338254.jpg
