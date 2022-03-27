@@ -433,7 +433,7 @@ For every page view on your demo website, you should now see a new log entry pop
 
 You've now successfully sent data that was collected by Adobe Experience Platform Data Collection, in real-time, to a Google Cloud Function endpoint. From there, that data can be used by any Google Cloud Platform application, such as BigQuery for storage and reporting or for Machine Learning use cases.
 
-Next Step: [Summary and benefits](./summary.md)
+Next Step: [14.5 Forward events towards the AWS ecosystem](./ex5.md)
 
 [Go Back to Module 14](./aep-data-collection-ssf.md)
 

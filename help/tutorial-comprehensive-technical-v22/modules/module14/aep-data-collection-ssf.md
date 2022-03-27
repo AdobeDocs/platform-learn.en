@@ -9,7 +9,7 @@ exl-id: c157ca52-c84f-4398-a658-2b6067e41707
 ---
 # 14. Real-Time CDP Connections: Event Forwarding
 
-**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
 
 In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection Client property to collect data, and then forward that data server-side to an endpoint of choice.
 
@@ -18,7 +18,7 @@ In this module, you'll:
 - Create a Adobe Experience Platform Data Collection Server property
 - Install and use the Adobe Cloud Connector extension in Adobe Experience Platform Data Collection
 - Create a Google Function endpoint and stream data to it
-- Create a Microsoft Azure Function endpoint and stream data to it
+- Create an AWS endpoint and stream data to it
 
 Watch this video to understand the value, customer journey and configuration process:
 
@@ -27,7 +27,7 @@ Watch this video to understand the value, customer journey and configuration pro
 ## Learning Objectives
 
 - Become familiar with Adobe Experience Platform Data Collection Server properties and the new Adobe Cloud Connector extension 
-- Understand how to reuse Adobe Experience Platform Web SDK data in 3rd party solutions like Google and Microsoft
+- Understand how to reuse Adobe Experience Platform Web SDK data in 3rd party solutions like Google and AWS
 - Understand the architecture behind Adobe Experience Platform Data Collection and Server Side Forwarding.
 
 ## Prerequisites
@@ -70,6 +70,10 @@ In this exercise, you'll create and configure a custom webhook and you'll start 
 [14.4 Create and configure a Google Cloud Function](./ex4.md)
 
 In this exercise, you'll create and configure a Google Cloud Function and you'll start forwarding data that is collected by Web SDK to Google.
+
+[14.5 Forward events towards the AWS ecosystem](./ex5.md)
+
+In this exercise, you'll configure your AWS environment using AWS API Gateway, AWS Kinesis, AWS Firehose and AWS S3 after which you'll start forwarding event data that is collected by Web SDK.
 
 [Summary and benefits](./summary.md)
 

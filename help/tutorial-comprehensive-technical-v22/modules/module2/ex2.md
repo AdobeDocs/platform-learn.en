@@ -333,9 +333,9 @@ Capturing the answer to the question **What does this customer do?** for your co
 
 ![Data Ingestion](./images/pv7.png)
 
-From a schema perspective, we look at this as a **[!UICONTROL Class]**. The question: **What does this customer do?**is something that we've defined in the class **[!UICONTROL ExperienceEvent]**.
+From a schema perspective, we look at this as a **[!UICONTROL Class]**. The question: **What does this customer do?** is something that we've defined in the class **[!UICONTROL ExperienceEvent]**.
 
-So when you create an [!UICONTROL XDM Schema] to capture the answer to **Who is this customer?**, first of all, you'll need to create and define 1 schema that references the class **[!UICONTROL ExperienceEvent]**.
+So when you create an [!UICONTROL XDM Schema] to capture the answer to **What does this customer do?**, first of all, you'll need to create and define 1 schema that references the class **[!UICONTROL ExperienceEvent]**.
 
 To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Field Group]. [!UICONTROL Field Groups] are extensions of the [!UICONTROL ExperienceEvent]-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the [!UICONTROL Field Group] **Commerce Details**.
 
