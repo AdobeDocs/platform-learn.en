@@ -1,5 +1,6 @@
 ---
 title: Data Collection & Event Forwarding - Forward events towards the AWS ecosystem
+description: Forward events towards the AWS ecosystem
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
