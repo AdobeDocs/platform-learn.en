@@ -2,7 +2,7 @@
 user-guide-title: Implement the Experience Cloud in Mobile Android™ Applications
 breadcrumb-title: Android Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud solutions in Android™ apps with tags in Experience Platform.
-solution: Experience Platform, Data Collection
+solution: Data Collection
 feature: Tags
 kt: 2798
 thumbnail: kt-2798.jpg
