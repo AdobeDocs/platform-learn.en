@@ -2,7 +2,7 @@
 user-guide-title: Implement the Experience Cloud in Mobile iOS Swift Applications
 breadcrumb-title: iOS Swift Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud solutions in mobile iOS Swift apps with tags in Experience Platform.
-solution: Experience Platform, Data Collection
+solution: Data Collection
 feature: Tags
 kt: 2196
 thumbnail: kt-2796.jpg
