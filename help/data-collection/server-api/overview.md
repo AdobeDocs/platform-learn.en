@@ -5,6 +5,7 @@ role: Developer,Data Engineer
 kt: 10013
 hide: yes
 hidefromtoc: yes
+exl-id: 282ecadc-c475-4b4b-bfd0-aaa4f8d8f0a8
 ---
 # Adobe Experience Platform Edge Network Server API overview
 
