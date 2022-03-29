@@ -36,6 +36,8 @@ doc-type: video
   + [Create mobile properties](mobile-sdk/create-mobile-properties.md)
   + [Use dependency managers](mobile-sdk/use-dependency-managers.md)
   + [Implement in mobile apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
++ Server API{#server-api}
+  + [Overview](server-api/overview.md)
 + Event Forwarding{#event-forwarding}
   + [Overview](event-forwarding/overview.md)
   + [Create a property](event-forwarding/create-a-property.md)
