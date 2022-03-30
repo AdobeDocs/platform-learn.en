@@ -1,7 +1,7 @@
 ---
 title: Add Adobe Analytics
 description: Learn how to implement Adobe Analytics using the Adobe Analytics tag extension, send a screen view beacon, add variables, track events, and add plugins. This lesson is part of the Implement the Experience Cloud in Mobile Android™ Applications tutorial.
-solution: Experience Platform, Data Collection, Analytics
+solution: Data Collection, Analytics
 exl-id: a89aea7d-bf69-424b-bb6c-e22200e9686c
 ---
 # Add Adobe Analytics

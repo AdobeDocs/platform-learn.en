@@ -2,7 +2,7 @@
 user-guide-title: Implement the Experience Cloud in Websites with Tags
 breadcrumb-title: Web Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud solutions on a website with tags.
-solution: Experience Platform, Data Collection
+solution: Data Collection
 feature: Tags
 kt: 2179
 recommendations: noDisplay,noCatalog

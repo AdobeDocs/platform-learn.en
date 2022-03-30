@@ -1,7 +1,7 @@
 ---
 user-guide-title: Implement Adobe Experience Cloud with Web SDK tutorial
 breadcrumb-title: Web SDK Tutorial
-solution: Experience Platform, Data Collection
+solution: Data Collection
 kt: 6953
 recommendations: noDisplay,noCatalog
 ---
