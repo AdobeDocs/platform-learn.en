@@ -10,12 +10,12 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
+* **[Audit logs (video)](governance/audit-logs.md)**
+    *See who did what and when*
 * **[Next-hit personalization with Real-time CDP and Adobe Target(Video)](/help/platform/experience-cloud/next-hit-personalization.md)**
     *Personalize on the next hit with governance and privacy*
 * **[Create merge policies (Video)](/help/platform/profiles/create-merge-policies.md)**
     *Combine datasets from disparate sources*
-* **[Getting Started with Experience Platform for Data Architects and Data Engineers (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)**
-    *Get hands-on with multiple Platform features with this multi-page tutorial*
 
 
 ## Staff Picks
@@ -24,11 +24,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-      <img alt="A Customer Experience Powered by Experience Platform video" src="assets/thumb_A-Customer-Experience.jpg" />
+      <img alt="A customer experience powered by Experience Platform video" src="assets/thumb_A-Customer-Experience.jpg" />
     </a>
     <div>
       <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">
-    <strong>A Customer Experience Powered by Experience Platform</strong>
+    <strong>A customer experience powered by Experience Platform</strong>
     </a>
     </div>
     <p>
@@ -37,11 +37,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-      <img alt="thumbnail image for the 'Getting Started with Experience Platform for Data Architects and Data Engineers' tutorial" src="assets/thumb_Getting_started.jpg" />
+      <img alt="thumbnail image for the 'Getting started for data architects and data engineers' tutorial" src="assets/thumb_Getting_started.jpg" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html">
-    <strong>Getting Started for Data Architects and Data Engineers</strong>
+    <strong>Getting started for data architects and data engineers</strong>
     </a>
     </div>
     <p>
@@ -50,11 +50,11 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
   </td>
   <td>
     <a href="sources/overview.md">
-      <img alt="thumbnail image for the 'Understanding Source connectors' video" src="assets/thumb_Sources.png" />
+      <img alt="thumbnail image for the 'Understanding source connectors' video" src="assets/thumb_Sources.png" />
     </a>
     <div>
       <a href="sources/overview.md">
-    <strong>Understanding Source Connectors</strong>
+    <strong>Understanding source connectors</strong>
     </a>
     </div>
     <p>

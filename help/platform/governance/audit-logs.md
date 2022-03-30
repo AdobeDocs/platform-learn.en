@@ -4,8 +4,6 @@ description: Learn about how the audit logs feature can help you meet your compl
 role: Admin
 feature: Data Governance
 kt: 9934
-hide: yes
-hidefromtoc: yes
 ---
 # Audit logs
 
