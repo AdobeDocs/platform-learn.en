@@ -7,24 +7,14 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 
 Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Data Collection gives customers a simple way to deploy and manage the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help learn this critical technology.
 
->[!NOTE]
->
->Launch is being integrated into Adobe Experience Platform as a suite of data collection technologies. Several terminology changes have rolled out in the interface which you should be aware of while using this content:
->
-> * Launch is now **[!DNL tags]** 
-> * Launch Server Side is now **[!DNL event forwarding]** 
-> * Edge configurations are now **[!DNL datastreams]**
-
 ## What's New
 
-* **[Implement Adobe Experience Cloud in mobile apps (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)**
+* **[Server API overview (video)](server-api/overview.md)**
+    *Send data using a secure, authenticated server API.*
+* **[Implement Adobe Experience Cloud in mobile apps (tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)**
     *Implement Experience Cloud applications with Mobile SDK.*
-
-* **[Configure datastreams (Video)](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html)**
-    *Send data from Platform Edge Network to Experience Cloud applications.*
-* **[Implement Adobe Experience Cloud with Web SDK (Tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html)**
-    *Implement Experience Cloud applications with Web SDK.*
-
+* **[Move client-side tags (tutorial)](event-forwarding/consider-moving-tags.md)**
+    *Consider moving client-side tags to event forwarding.*
 
 
 ## Staff Picks
@@ -37,7 +27,7 @@ Data Collection is the next generation of website tag and mobile SDK management 
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html" target="_blank">
-    <strong>Implement Adobe Experience Cloud with Web SDK</strong>
+    <strong>Implement the Experience Cloud with Web SDK</strong>
     </a>
     </div>
     <p>
