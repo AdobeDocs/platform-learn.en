@@ -32,7 +32,7 @@ Here's the image of the whiteboard as you've seen it being created in the above 
 
 And here's the link to the Lucidchart document which you can copy and reuse if desired:
 
-[Lucidchart Architecture](https://bit.ly/3flr2Nc)
+[Lucidchart Architecture](https://lucid.app/documents/view/69c2a0e4-9135-47d7-ae86-7f88cec9bc34)
 
 ![Luma Retail](./assets/images/architecture.png)
 
