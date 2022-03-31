@@ -101,7 +101,7 @@ The next screen is the message dashboard, where you can configure the text of yo
 
 ![Journey Optimizer](./images/sms3ab.png)
 
-Enter the following text: `So warm, {{profile.extendedWorkDetails.assistantDetails.name.firstName}}! 20% discount on swimwear today!`. Click **Save**.
+Enter the following text: `So warm, {{profile.person.name.firstName}}! 20% discount on swimwear today!`. Click **Save**.
 
 ![Journey Optimizer](./images/sms4ab.png)
 
