@@ -9,7 +9,7 @@ exl-id: 2430c16c-d083-4669-a94b-ed4c6252f013
 ---
 # Summary and benefits
 
-Congratulations and thank you for investing your time in learning about Adobe Experience Platform Data Collection and Adobe Experience Platform Data Collection Server Side Forwarding.
+Congratulations and thank you for investing your time in learning about Adobe Experience Platform Data Collection and Adobe Experience Platform Data Collection Event Forwarding.
 
 In this module, you've learned how to use the previously configured datasets, schemas and Adobe Experience Platform Data Collection property to collect data, and then forward that data server side to an endpoint of choice.
 

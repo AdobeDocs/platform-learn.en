@@ -141,8 +141,7 @@ doc-type: multipage
   + [14.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property](/help/tutorial-comprehensive-technical-v22/modules/module14/ex2.md)
   + [14.3 Create and configure a custom webhook](/help/tutorial-comprehensive-technical-v22/modules/module14/ex3.md)
   + [14.4 Create and configure a Google Cloud Function](/help/tutorial-comprehensive-technical-v22/modules/module14/ex4.md)
-  + [14.5 Create and configure a Microsoft Azure Function](/help/tutorial-comprehensive-technical-v22/modules/module14/ex5.md)
-  + [14.6 Test and troubleshoot your data collection](/help/tutorial-comprehensive-technical-v22/modules/module14/ex6.md)
+  + [14.5 Forward events towards the AWS ecosystem](/help/tutorial-comprehensive-technical-v22/modules/module14/ex5.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module14/summary.md)
 + 15 - Stream data from Apache Kafka into Real-Time CDP {#module15}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module15/aep-apache-kafka.md)

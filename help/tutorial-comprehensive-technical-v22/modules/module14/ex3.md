@@ -161,7 +161,7 @@ If you now navigate across the website, you'll see additional network requests b
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook5.png)
 
-You've now configured the Server Side Forwarding of Web SDK/XDM payloads to an external custom webhook. In the next exercises, you'll configure a similar approach, and you'll be sending that same data towards Google and Microsoft Azure environments.
+You've now configured the Server Side Forwarding of Web SDK/XDM payloads to an external custom webhook. In the next exercises, you'll configure a similar approach, and you'll be sending that same data towards Google and AWS environments.
 
 Next Step: [14.4 Create and configure a Google Cloud Function](./ex4.md)
 
