@@ -41,67 +41,67 @@ In this exercise you'll be using Adobe I/O quite intensively to query against Pl
 
 Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
 
-![Adobe I/O New Integration](./images/iohome.png)
+![Adobe I/O New Integration](../module3/images/iohome.png)
 
 Make sure to select the correct Adobe Experience Platform instance in the top right corner of your screen. Your instance is `--envName--`.
 
-![Adobe I/O New Integration](./images/iocomp.png)
+![Adobe I/O New Integration](../module3/images/iocomp.png)
 
 Click **Create new project**.
 
-![Adobe I/O New Integration](./images/adobe_io_new_integration.png) or 
-![Adobe I/O New Integration](./images/adobe_io_new_integration1.png)
+![Adobe I/O New Integration](../module3/images/adobe_io_new_integration.png) or 
+![Adobe I/O New Integration](../module3/images/adobe_io_new_integration1.png)
 
 Select **+ Add to Project** and select **API**.
 
-![Adobe I/O New Integration](./images/adobe_io_access_api.png)
+![Adobe I/O New Integration](../module3/images/adobe_io_access_api.png)
 
 You'll then see this:
 
-![Adobe I/O New Integration](./images/api1.png)
+![Adobe I/O New Integration](../module3/images/api1.png)
 
 Click the **Adobe Experience Platform** icon.
 
-![Adobe I/O New Integration](./images/api2.png)
+![Adobe I/O New Integration](../module3/images/api2.png)
 
 Click **Experience Platform API**.
 
-![Adobe I/O New Integration](./images/api3.png)
+![Adobe I/O New Integration](../module3/images/api3.png)
 
 Click **Next**.
 
-![Adobe I/O New Integration](./images/next.png)
+![Adobe I/O New Integration](../module3/images/next.png)
 
 You can now choose to either have Adobe I/O generate your security key pair, or upload an existing one. 
 
 Choose **Option 1 - Generate a key pair**.
 
-![Adobe I/O New Integration](./images/api4.png)
+![Adobe I/O New Integration](../module3/images/api4.png)
 
 Click **Generate keypair**.
 
-![Adobe I/O New Integration](./images/generate.png)
+![Adobe I/O New Integration](../module3/images/generate.png)
 
 You'll see a spinner for about 30 seconds.
 
-![Adobe I/O New Integration](./images/spin.png)
+![Adobe I/O New Integration](../module3/images/spin.png)
 
 You'll then see this, and your generated keypair will be downloaded as a zip file: **config.zip**.
 
 Unzip the file **config.zip** on your desktop, you'll see it contains 2 files:
 
-![Adobe I/O New Integration](./images/zip.png)
+![Adobe I/O New Integration](../module3/images/zip.png)
 
 - **certificate_pub.crt** is your Public key certificate. From a security perspective, this is the certificate that is freely used to setup integrations with online applications.
 - **private.key** is your Private key. This should never, ever be shared with anyone. The Private Key is what you use to authenticate to your API implementation and is supposed to be a secret. If you share your Private Key with anyone, they can access your implementation and abuse the API to ingest malicious data into Platform and extract all the data that sits in Platform.
 
-![Adobe I/O New Integration](./images/config.png)
+![Adobe I/O New Integration](../module3/images/config.png)
 
 Make sure to save the **config.zip** file in a safe location, as you'll need this for the next steps and for future access to Adobe I/O and Adobe Experience Platform APIs.
 
 Click **Next**.
 
-![Adobe I/O New Integration](./images/next.png)
+![Adobe I/O New Integration](../module3/images/next.png)
 
 You now have to select the **Product Profile(s)** for your integration. 
 
@@ -109,46 +109,46 @@ Select the required Product Profiles.
 
 **FYI**: in your Adobe Experience Platform instance, the Product Profiles will have a different naming. You need to select at least one product profile with the proper access rights, which are set up in the Adobe Admin Console.
 
-![Adobe I/O New Integration](./images/api9.png)
+![Adobe I/O New Integration](../module3/images/api9.png)
 
 Click **Save Configured API**.
 
-![Adobe I/O New Integration](./images/saveconfig.png)
+![Adobe I/O New Integration](../module3/images/saveconfig.png)
 
 You'll see a spinner for a couple of seconds.
 
-![Adobe I/O New Integration](./images/api10.png)
+![Adobe I/O New Integration](../module3/images/api10.png)
 
 And next, you'll see your integration.
 
-![Adobe I/O New Integration](./images/api11.png)
+![Adobe I/O New Integration](../module3/images/api11.png)
 
 Click the **Download for Postman** button and then click **Service Account (JWT)** to download a Postman environment (wait until the environment is downloaded, this can take a couple of seconds).
 
-![Adobe I/O New Integration](./images/iopm.png)
+![Adobe I/O New Integration](../module3/images/iopm.png)
 
 Scroll down until you see **Service Account (JWT)**, which is where you can find all your integration details that are used to configure the integration with Adobe Experience Platform.
 
-![Adobe I/O New Integration](./images/api12.png)
+![Adobe I/O New Integration](../module3/images/api12.png)
 
 Your IO Project currently has a generic name. You need to give a friendly name to your integration. Click on **Project 1** (or similar name) as indicated
 
-![Adobe I/O New Integration](./images/api13.png)
+![Adobe I/O New Integration](../module3/images/api13.png)
 
 Click **Edit Project**.
 
-![Adobe I/O New Integration](./images/api14.png)
+![Adobe I/O New Integration](../module3/images/api14.png)
 
 Enter a Name and Description for your integration. As a naming convention, we'll use `AEP API --demoProfileLdap--`. Replace ldap with your ldap.
 For instance, if your ldap is vangeluw, the name and description of your integration becomes AEP API vangeluw.
 
 Enter `AEP API --demoProfileLdap--` as the **Project Title**. Click **Save**.
 
-![Adobe I/O New Integration](./images/api15.png)
+![Adobe I/O New Integration](../module3/images/api15.png)
 
 Your Adobe I/O integration is now finished.
 
-![Adobe I/O New Integration](./images/api16.png)
+![Adobe I/O New Integration](../module3/images/api16.png)
 
 ## 3.3.3 Postman authentication to Adobe I/O
 
@@ -156,11 +156,11 @@ Go to [https://www.getpostman.com/](https://www.getpostman.com/).
 
 Click on **Get Started**.
 
-![Adobe I/O New Integration](./images/getstarted.png)
+![Adobe I/O New Integration](../module3/images/getstarted.png)
 
 Next, download and install Postman.
 
-![Adobe I/O New Integration](./images/downloadpostman.png)
+![Adobe I/O New Integration](../module3/images/downloadpostman.png)
 
 After installation of Postman, start the application.
 
@@ -170,38 +170,36 @@ In Postman, there are 2 concepts: Environments and Collections.
   
 - The Collection contains a number of API requests that you can use. We will use 2 collections
   - 1 Collection for Authentication to Adobe I/0
-  - 1 Collection for our Exercises
+  - 1 Collection for the exercises in this module
+  - 1 collection for the exercises in the Real-Time CDP module, for Destination Authoring
 
-Please download **postman.zip** from the [Module 3 Prerequisites ](./real-time-customer-profile.md) to your local desktop. 
+Please download the file [postman.zip](../../assets/postman/postman_profile.zip) to your local desktop. 
 
 In this **postman.zip** file, you'll find the following files:
 
-- _Adobe I-O - Token.postman_collection.json
-- _Adobe Experience Platform Enablement.postman_collection.json
+- `_Adobe I-O - Token.postman_collection.json`
+- `_Adobe Experience Platform Enablement.postman_collection.json`
+- `Destination_Authoring_API.json`
   
-Unzip the **postman.zip** file and store these 2 files in a folder on your desktop, together with the downloaded Postman environment from Adobe I/O. You need to have these 3 files in that folder:
+Unzip the **postman.zip** file and store these 3 files in a folder on your desktop, together with the downloaded Postman environment from Adobe I/O. You need to have these 4 files in that folder:
 
-![Adobe I/O New Integration](./images/pmfolder.png)
+![Adobe I/O New Integration](../module3/images/pmfolder.png)
 
-Go back to the Postman UI.
+Go back to Postman. Click **Import**.
 
-![Adobe I/O New Integration](./images/postmanui.png)
+![Adobe I/O New Integration](../module3/images/postmanui.png)
 
-In Postman, click on **Import**.
+Click **Upload Files**.
 
-![Adobe I/O New Integration](./images/import.png)
+![Adobe I/O New Integration](../module3/images/choosefiles.png)
 
-Click on **Choose files**.
+Navigate to the folder on your desktop in which you extracted the 4 downloaded files. Select these 4 files at the same time and click **Open**.
 
-![Adobe I/O New Integration](./images/choosefiles.png)
-
-Navigate to the folder on your desktop in which you extracted the 3 downloaded files. Select these 3 files at the same time and click **Open**.
-
-![Adobe I/O New Integration](./images/selectfiles.png)
+![Adobe I/O New Integration](../module3/images/selectfiles.png)
 
 After having clicked **Open**, Postman will show you an overview of the Environment and Collections you're about to import. Click **Import**.
 
-![Adobe I/O New Integration](./images/impconfirm.png)
+![Adobe I/O New Integration](../module3/images/impconfirm.png)
 
 You now have everything you need in Postman to start interacting with Adobe Experience Platform through the APIs.
 
@@ -211,57 +209,53 @@ Make sure that you've got the right Environment selected before executing any re
 
 The selected Environment should have a name similar to this one:
 
-![Postman](./images/envselemea.png)
+![Postman](../module3/images/envselemea.png)
 
-Click the **gear** icon to update the Private Key in the environment file.
+Click the **eye** icon and then click **Edit** to update the Private Key in the environment file.
 
-![Postman](./images/gear.png)
-
-Click the environment in the list:
-
-![Postman](./images/pk1.png) 
+![Postman](../module3/images/gear.png)
 
 You'll then see this. All fields are pre-populated, except for the field **PRIVATE_KEY**.
 
-![Postman](./images/pk2.png)
+![Postman](../module3/images/pk2.png)
 
 The private key has been generated when you created your Adobe I/O Project. It was downloaded as a zip file, named **config.zip**. Extract that zip file to your desktop.
 
-![Postman](./images/pk3.png)
+![Postman](../module3/images/pk3.png)
 
 Open the folder **config** and open the file **private.key** with your text editor of choice.
 
-![Postman](./images/pk4.png)
+![Postman](../module3/images/pk4.png)
 
 You'll then see something resembling this, copy all the text to your clipboard.
 
-![Postman](./images/pk5.png)
+![Postman](../module3/images/pk5.png)
 
-Go back to Postman and paste the private key in the fields next to the variable **PRIVATE_KEY**. Finally, click **Update**.
+Go back to Postman and paste the private key in the fields next to the variable **PRIVATE_KEY**, for both the columns **INITIAL VALUE** and **CURRENT VALUE**. Click **Save**.
 
-![Postman](./images/pk6.png)
+![Postman](../module3/images/pk6.png)
 
 Your Postman environment and collections are now configured and working. You can now authenticate from Postman to Adobe I/O.
 
 To do that, you need to load an external library that will take care of the encryption and decryption of communication. To load this library, you have to execute the request with the name **INIT: Load Crypto Library for RS256**. Select this request in the **_Adobe I/O - Token collection** and you'll see it displayed in the middle of your screen.
 
-![Postman](./images/iocoll.png)
+![Postman](../module3/images/iocoll.png)
 
-![Postman](./images/cryptolib.png)
+![Postman](../module3/images/cryptolib.png)
 
 Click the blue **Send** button. After a couple of seconds, you should see a response displayed in the **Body** section of Postman:
 
-![Postman](./images/cryptoresponse.png)
+![Postman](../module3/images/cryptoresponse.png)
 
 With the crypto library now loaded, we can authenticate to Adobe I/O.
 
 In the **\_Adobe I/O - Token collection**, select the request with the name **IMS: JWT Generate + Auth**. Again, you'll see the request details displayed in the middle of the screen.
 
-![Postman](./images/ioauth.png)
+![Postman](../module3/images/ioauth.png)
 
 Click the blue **Send** button. After a couple of seconds, you should see a response displayed in the **Body** section of Postman:
 
-![Postman](./images/ioauthresp.png)
+![Postman](../module3/images/ioauthresp.png)
 
 If your configuration was successful, you should see a similar response that contains the following information:
 
