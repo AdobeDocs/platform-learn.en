@@ -28,7 +28,7 @@ exl-id: cdd9ac83-db8e-4278-8853-3f918f24d0b6
 
 Here's the image of the whiteboard as you've seen it being created in the above video:
 
-![Luma Retail](./assets/images/whiteboard.png)
+![Luma Retail](./assets/images/whiteboard.jpg)
 
 And here's the link to the Lucidchart document which you can copy and reuse if desired:
 
