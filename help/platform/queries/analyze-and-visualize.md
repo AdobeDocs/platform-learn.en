@@ -11,5 +11,5 @@ Learn how you can use Adobe Experience Platform's Query Service with external da
 
 >[!VIDEO](https://video.tv.adobe.com/v/342115?quality=12&learn=on)
 
-For  more information, please visit the [query service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
+For  more information, please visit the [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
 
