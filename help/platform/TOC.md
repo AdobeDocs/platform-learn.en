@@ -114,6 +114,7 @@ doc-type: video
   + [Run queries](/help/platform/queries/run-queries.md)
   + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
   + [Tableau](/help/platform/queries/psql-client-tableau.md)
+  + [Analyze and visualize data](/help/platform/queries/analyze-and-visualize.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + Schemas {#schemas}

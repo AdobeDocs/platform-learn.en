@@ -47,6 +47,7 @@ doc-type: video
   + [Move client-side tags](event-forwarding/consider-moving-tags.md)
 + Datastreams & Edge Network{#edge-network}
   + [Configure datastreams](edge/configure-datastreams.md)
+  + [Data prep](edge/data-prep.md)
   + [First-party device IDs](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
   + [Overview](debugger/overview.md)
