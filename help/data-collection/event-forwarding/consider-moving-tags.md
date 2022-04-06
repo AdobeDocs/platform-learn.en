@@ -2,7 +2,7 @@
 title: Consider moving vendor tags to event forwarding
 description: Learn how to evaluate a client-side vendor tag for server-side data distribution.
 feature: Event Forwarding, Tags, Integrations
-solution: Data Collection, Experience Platform
+solution: Data Collection
 kt: 9921
 level: Intermediate, Experienced
 role: Admin, Developer, Architect
