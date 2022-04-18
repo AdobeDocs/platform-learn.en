@@ -141,6 +141,9 @@ doc-type: video
   + [Demo of streaming segmentation](/help/platform/segments/streaming-segmentation-demo.md)
   + [Evaluate a segment](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
   + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+  + [Segment Match connection setup](/help/platform/segments/segment-match-connection-setup.md)
+  + [Segment Match data governance](/help/platform/segments/segment-match-data-governance.md)
+  + [Segment Match configuration flow](/help/platform/segments/segment-match-configuration-flow.md)
 + Sources {#sources}  
   + [Sources overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
