@@ -11,4 +11,4 @@ Learn about the benefits of sending data to Platform Edge Network using a secure
 
 >[!VIDEO](https://video.tv.adobe.com/v/341448?quality=12&learn=on)
 
-For more information, please visit the Server API documentation.
+For more information, please visit the [Server API documentation](https://experienceleague.adobe.com/docs/experience-platform/edge-network-server-api/overview.html).
