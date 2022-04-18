@@ -195,7 +195,7 @@ Now the schema is also enabled for profile.
 
 >[!IMPORTANT]
 >
->    Once a schema or dataset is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial, which can be deleted at any time. 
+>    Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial, which can be deleted at any time. 
 >
 >   
 > When working with your own data, we recommend you do things in the following order:
