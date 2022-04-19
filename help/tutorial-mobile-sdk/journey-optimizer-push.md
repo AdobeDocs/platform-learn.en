@@ -42,51 +42,6 @@ In this lesson, you will:
 
 The following steps are not Adobe Experience Cloud-specific and are designed to guide you through APN configuration.
 
-### Begin by creating a certificate request
-
-1. On your Mac, open the Keychain Access application.
-1. Navigate to Keychain Access > Certificate Assistant > Request a Certificate From a Certificate Authority.
-![request certificate](assets/mobile-push-keychain-request.png)
-1. Select **[!UICONTROL Saved to disk]**.
-1. Enter your Apple ID email address in the **[!UICONTROL User Email Address]** textbox.
-1. Provide a descriptive value in the **[!UICONTROL Common Name]** textbox.
-1. Leave **[!UICONTROL CA Email Address]** empty.
-1. Select **[!UICONTROL Continue]**.
-1. Select **[!UICONTROL Done]**.
-
-![create certificate](assets/mobile-push-keychain-create.png)
-
-Additional documentation can be [found here](https://help.apple.com/developer-account/#/devbfa00fef7).
-
-### Setup signing and enable push notification capabilities
-
-1. In XCode navigate to Signing & Capabilities.
-1. Ensure you are logged in and have **Automatically manage signing** selected.
-1. In the top-left select +**[!UICONTROL Capability]**.
-![create certificate](assets/mobile-push-xcode-signing.png)
-1. Select **Push Notifications**.
-![xcode push capabilities](assets/mobile-push-xcode-capabilities.png)
-
-1. Log into the [Apple developer portal](https://developer.apple.com/account/#!/overview) with the same login used in XCode.
-1. Select **[!UICONTROL Certificates, IDs & Profiles]**.
-![apple dev program home](assets/mobile-push-apple-dev-home.png)
-1. Navigate to Identifiers and locate "com.adobe.luma.tutorial", if you're following along with the Luma tutorial app.
-![identifier UI](assets/mobile-push-apple-dev-identifier.png)
-1. Enable **Push Notifications** and select **[!UICONTROL Configure]**.
-![Edit app ID configuration](assets/mobile-push-apple-dev-config-push.png)
-1. Select **[!UICONTROL Create Certificate]**.
-![create certificate](assets/mobile-push-apple-dev-create-cert.png)
-1. Upload your certificate signing request (generated in the steps above) by selecting **[!UICONTROL Choose File]** and selecting your `.csr` file.
-1. Select **[!UICONTROL Continue]**.
-![upload certificate](assets/mobile-push-apple-dev-upload-cert.png)
-1. Select **[!UICONTROL Download]**
-
-
-### Install the Apple certificate
-
-1. Locate the `.cer` you downloaded in the previous step. 
-1. Double click to install it in "My Certificates".
-
 ### Create a `.p8` private key
 
 1. In the Apple developer portal, navigate to **[!UICONTROL Keys]**.
@@ -135,18 +90,6 @@ Additional documentation can be [found here](https://help.apple.com/developer-ac
 >[!NOTE]
 >If you don't see "CJM Push Tracking Experience Event Dataset" as an option, please contact customer care.
 >
-
-## Update schema
-
-1. Navigate to your schema and select **[!UICONTROL Add]** field group.
-![push schema start](assets/mobile-push-schema-start.png)
-
-1. Search for "push" and select **[!UICONTROL Push notification tracking]**.
-![push schema add](assets/mobile-push-schema-add.png)
-
-1. Select **[!UICONTROL Save]**.
-![push schema save](assets/mobile-push-schema-save.png)
-
 
 ## Implement the Adobe Journey Optimizer in the app
 
