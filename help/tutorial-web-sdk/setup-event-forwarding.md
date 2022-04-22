@@ -36,7 +36,7 @@ At this end of this lesson, you will be able to:
 
 ## Prerequisites
 
-* A software license which includes event forwarding. Event forwarding is a paid feature of Data Collection. Please contact your Customer Support Manager (CSM) for more details.
+* A software license which includes event forwarding. Event forwarding is a paid feature of Data Collection. Please contact your Adobe Account Manager for more details.
 * Event forwarding enabled in your Experience Cloud organization.
 * User permission for event forwarding. (In [Admin Console](https://adminconsole.adobe.com/), under the Adobe Experience Platform Launch product, permission items for[!UICONTROL Platforms] > [!UICONTROL Edge] and all [!UICONTROL Property Rights]). Once granted you should see [!UICONTROL Event Forwarding] in the left navigation of the Data Collection interface:
     ![Event Forwarding properties](assets/event-forwarding-menu.png)
