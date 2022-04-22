@@ -7,8 +7,8 @@ role: Admin
 level: Beginner
 kt: 10291
 thumbnail: 342471.jpg
+exl-id: b228a612-3ecd-40c1-85ef-81fd49d6bde0
 ---
-
 # Connecting to destinations
 
 Before you can send data to destination partners from Real-time CDP, you first need to make the connections to those partners. This video walks through that process, typically performed by Admins.
