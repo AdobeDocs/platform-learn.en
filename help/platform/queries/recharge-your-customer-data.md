@@ -1,15 +1,15 @@
 ---
 title: Recharge your customer data to deliver electrifying experiences
-description: Learn how to mitigate the impact of low-quality data, reduce time to value, and multiply ROI by leveraging the same data for multitude of use cases.
+description: Learn how to mitigate the impact of low-quality data, reduce time to value, and multiply ROI by using the same data for multitude of use cases.
 role: Data Engineer, Data Architect, Developer
 feature: Queries
 kt: 10323
 ---
 # Recharge your customer data to deliver electrifying experiences
 
-Omnichannel data is a critical ingredient for powering actionable customer profiles used by marketers to create audiences, orchestrate activation, and measure the resulting customer journeys. However, organizations face challenges in managing the quality, scale, and variety of this data and require streamlined solutions to mitigate the impact of low-quality data, reduce time to value, and multiply ROI by leveraging the same data for multitude of use cases.
+Omnichannel data is a critical ingredient to power actionable customer profiles used by marketers to orchestrate activation and measure the resulting customer journeys. However, organizations face challenges in managing the quality, scale, and variety of this data. They require streamlined solutions to mitigate the impact of low-quality data, reduce time to value, and multiply ROI by using the same data for multitude of use cases.
 
-In this session, we explore:
+This video explores:
 
 * Adobe Experience Platform data preparation capabilities that you can leverage
 * Increasing ROI from Adobe Real-Time CDP, Adobe Journey Optimizer, and Customer Journey Analytics
