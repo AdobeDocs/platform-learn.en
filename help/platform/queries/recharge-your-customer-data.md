@@ -4,6 +4,7 @@ description: Learn how to mitigate the impact of low-quality data, reduce time t
 role: Data Engineer, Data Architect, Developer
 feature: Queries
 kt: 10323
+exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
 ---
 # Recharge your customer data to deliver electrifying experiences
 
