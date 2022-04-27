@@ -141,7 +141,11 @@ On the **Adobe Experience Platform Edge Network** extension, click **Configure**
 
 ![Name the Edge Configuration and save](./images/edgeconfig12m.png)
 
-You'll then see this. For the **Datastreams**, you'll currently see a dummy value set to 1. You now need to click the **Choose from list** radio-button. In the dropdown list, select the Datastream you created earlier. Click **Save** to save your changes.
+You'll then see this. You now need to select the correct sandbox and datastream that you just configured. The sandbox to use is `--aepSandboxId--` and the datastream is called `--demoProfileLdap-- - Demo System Datastream (Mobile)`. 
+
+For the **Edge Network domain**, please use the default domain which is **edge.adobedc.net**.
+
+Click **Save** to save your changes.
 
 ![Name the Edge Configuration and save](./images/edgeconfig13m.png)
 
