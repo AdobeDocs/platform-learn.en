@@ -117,6 +117,7 @@ doc-type: video
   + [Tableau](/help/platform/queries/psql-client-tableau.md)
   + [Analyze and visualize data](/help/platform/queries/analyze-and-visualize.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
+  + [Recharge your customer data](/help/platform/queries/recharge-your-customer-data.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
