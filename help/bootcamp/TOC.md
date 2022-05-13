@@ -23,4 +23,4 @@ doc-type: multipage
   + [3.1 Exercise 1](/help/bootcamp/uc/uc3/ex1.md)
 + 4 - Customer Journey Analysis {#uc4}
   + [Overview](/help/bootcamp/uc/uc4/uc4.md)
-  + [4.0 Exercise 1](/help/bootcamp/uc/uc4/ex0.md)
+  + [4.0 Exercise 1](/help/bootcamp/uc/uc4/ex1.md)
