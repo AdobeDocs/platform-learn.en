@@ -2,6 +2,7 @@
 title: Experience Makers Bootcamp
 description: Starting point for participants of the Experience Makers Bootcamp
 doc-type: multipage-overview
+exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
 ---
 # Experience Makers Bootcamp
 
@@ -78,4 +79,3 @@ In this user flow, you'll personalize the customer experience across online and 
 [4. Customer Journey Analysis](./uc/uc4/uc4.md)
 
 In this user flow, you'll get familiar with Customer Journey Analytics and you'll gain insights in how customers are evolving from one channel to the other, from online to offline to callcenter and more.
-
