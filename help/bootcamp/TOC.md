@@ -11,6 +11,7 @@ doc-type: multipage
 # Experience Makers Bootcamp {#bootcamp}
 
 + [Overview](/help/bootcamp/overview.md)
++ [Prework](/help/bootcamp/prework.md)
 + 1 - Acquisition {#uc1}
   + [Overview](/help/bootcamp/uc/uc1/uc1.md)
   + [1.1 Exercise 1](/help/bootcamp/uc/uc1/ex1.md)

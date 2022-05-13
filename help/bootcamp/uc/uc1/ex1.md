@@ -1,6 +1,6 @@
 ---
-title: Bootcamp - Use Case 1
-description: Bootcamp - Use Case 1
+title: Bootcamp - 1.1
+description: Bootcamp - 1.1
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
