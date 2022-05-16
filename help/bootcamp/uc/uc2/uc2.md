@@ -23,8 +23,20 @@ exl-id: 31f2bbcc-3fd5-4448-a9aa-b79a82e13809
 
 ## Exercises
 
-[2.1 Exercise 1](./ex1.md)
+[2.1 Visit the website and create your account](./ex1.md)
 
-In this exercise ...
+In this exercise, you'll learn how to configure an event.
+
+[2.2 Create your event](./ex2.md)
+
+In this exercise, you'll learn how to configure an event.
+
+[2.3 Create your email message](./ex3.md)
+
+In this exercise, you'll learn how to configure an email message.
+
+[2.4 Create your journey](./ex4.md)
+
+In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
 
 [Go Back to All Modules](../../overview.md)

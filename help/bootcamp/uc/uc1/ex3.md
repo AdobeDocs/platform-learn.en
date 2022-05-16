@@ -1,6 +1,6 @@
 ---
-title: Foundation - Real-time Customer Profile - Create a segment - UI
-description: Foundation - Real-time Customer Profile - Create a segment - UI
+title: Bootcamp - Real-time Customer Profile - Create a segment - UI
+description: Bootcamp - Real-time Customer Profile - Create a segment - UI
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
