@@ -22,8 +22,24 @@ activity: develop
 
 ## Exercises
 
-[1.1 Exercise 1](./ex1.md)
+[1.1 Visit the website](./ex1.md)
 
-In this exercise ...
+In this exercise, you'll follow a script and walk through the website.
+
+[1.2 Visualize your own real-time customer profile - UI](./ex2.md)
+
+In this exercise, you'll login to Adobe Experience Platform and you'll view your own Real-time Customer Profile in the UI.
+
+[1.3 Create a segment - UI](./ex3.md)
+
+In this exercise, you'll create a segment by making use of Adobe Experience Platform's Segment Builder.
+
+[1.4 Take Action: send your segment to Adobe Target](./ex4.md)
+
+Use the segment you built in exercise 1.1 to configure an Experience Targeting Activity in Adobe Target.
+
+[1.5 Take Action: send your segment to Facebook](./ex5.md)
+
+Connect the segment you built in exercise 1.1 to the destination Facebook.
 
 [Go Back to All Modules](../../overview.md)
