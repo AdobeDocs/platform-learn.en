@@ -1,6 +1,6 @@
 ---
-title: Real-time CDP - Build a segment and take action - Send your segment to DV360
-description: Real-time CDP - Build a segment and take action - Send your segment to DV360
+title: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360
+description: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial

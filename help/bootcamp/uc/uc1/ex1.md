@@ -1,6 +1,6 @@
 ---
-title: Foundation - Real-time Customer Profile - From unknown to known on the website
-description: Foundation - Real-time Customer Profile - From unknown to known on the website
+title: Bootcamp -  Real-time Customer Profile - From unknown to known on the website
+description: Bootcamp - Real-time Customer Profile - From unknown to known on the website
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial

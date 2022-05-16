@@ -1,6 +1,6 @@
 ---
-title: Foundation - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
-description: Foundation - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
+title: Bootcamp - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
+description: Bootcamp - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
@@ -14,7 +14,7 @@ In this exercise, you'll login to Adobe Experience Platform and view your own Re
 
 In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the true experience system of record.
 
-## 3.2.1 Use the Customer Profile View in Adobe Experience Platform
+## 1.2.1 Use the Customer Profile View in Adobe Experience Platform
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 

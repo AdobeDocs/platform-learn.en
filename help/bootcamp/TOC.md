@@ -21,7 +21,10 @@ doc-type: multipage
   + [1.5 Take Action: send your segment to Facebook](/help/bootcamp/uc/uc1/ex5.md)
 + 2 - Registration & Onboarding {#uc2}
   + [Overview](/help/bootcamp/uc/uc2/uc2.md)
-  + [2.1 Exercise 1](/help/bootcamp/uc/uc2/ex1.md)
+  + [2.1 Visit the website and create your account](/help/bootcamp/uc/uc2/ex1.md)
+  + [2.2 Create your event](/help/bootcamp/uc/uc2/ex2.md)
+  + [2.3 Create your email message](/help/bootcamp/uc/uc2/ex3.md)
+  + [2.4 Create your journey](/help/bootcamp/uc/uc2/ex4.md)
 + 3 - Blending physical and digital {#uc3}
   + [Overview](/help/bootcamp/uc/uc3/uc3.md)
   + [3.1 Exercise 1](/help/bootcamp/uc/uc3/ex1.md)
