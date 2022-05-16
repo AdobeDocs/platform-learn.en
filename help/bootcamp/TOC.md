@@ -14,7 +14,11 @@ doc-type: multipage
 + [Prework](/help/bootcamp/prework.md)
 + 1 - Acquisition {#uc1}
   + [Overview](/help/bootcamp/uc/uc1/uc1.md)
-  + [1.1 Exercise 1](/help/bootcamp/uc/uc1/ex1.md)
+  + [1.1 Visit the website](/help/bootcamp/uc/uc1/ex1.md)
+  + [1.2 Visualize your own real-time customer profile - UI](/help/bootcamp/uc/uc1/ex2.md)
+  + [1.3 Create a segment - UI](/help/bootcamp/uc/uc1/ex3.md)
+  + [1.4 Take Action: send your segment to Adobe Target](/help/bootcamp/uc/uc1/ex4.md)
+  + [1.5 Take Action: send your segment to Facebook](/help/bootcamp/uc/uc1/ex5.md)
 + 2 - Registration & Onboarding {#uc2}
   + [Overview](/help/bootcamp/uc/uc2/uc2.md)
   + [2.1 Exercise 1](/help/bootcamp/uc/uc2/ex1.md)
