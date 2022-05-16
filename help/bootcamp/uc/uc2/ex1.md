@@ -53,6 +53,10 @@ You'll also receive this email:
 
 ![Demo](./images/pv10.png)
 
+And a couple of minutes later, you'll also receive this email:
+
+![Demo](./images/pv11.png)
+
 Let's see how this onboarding journey was configured next.
 
 Next Step: [2.2 Create your event](./ex2.md)
