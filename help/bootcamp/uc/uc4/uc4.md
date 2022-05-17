@@ -8,13 +8,29 @@ activity: develop
 ---
 # 4. Customer Journey Analysis
 
+In this user flow, you will get hands-on experience with the Customer Journey Analytics application service.
+
+Customer Journey Analytics provides a toolkit to business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within Customer Journey Analytics deliver context and clarity to the complex multi-channel customer journeys. The provided context generates actionable insight into how to remove pain points from the customer conversion process and deliver positive experiences in the moments that matter most.
+
+Have a look at this video to understand the value, customer journey and configuration process:
+
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+
+More info on Customer Journey Analytics can be found [here](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
+
 ## Learning Objectives
+
+- Become familiar with the Customer Journey Analytics UI
+- Bring Adobe Experience Platform data sets into Customer Journey Analytics
+- Understand the Person ID and data stitching in Customer Journey Analytics
+- Understand the concepts of a data connection and a data view
+- Use Analysis Workspace with Adobe Experience Platform data sets
 
 ## Prerequisites
 
-- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to the demo website
+- Some familiarity with Analysis Workspace is preferred, but not required
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
+- Access to Customer Journey Analytics Application Service
 
 >[!IMPORTANT]
 >
@@ -22,8 +38,24 @@ activity: develop
 
 ## Exercises
 
-[4.1 Exercise 1](./ex1.md)
+[4.1 Customer Journey Analytics 101](./ex1.md)
 
-In this exercise ...
+Learn all about the Customer Journey Analytics concepts.
+
+[4.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](./ex2.md)
+
+Learn how to consume multiple datasets from Adobe Experience Platform into Customer Journey Analytics.
+
+[4.3 Create a Data View](./ex3.md)
+
+Learn how to configure a data view in Customer Journey Analytics.
+
+[4.4 Data Preparation in Customer Journey Analytics](./ex4.md)
+
+Learn how to do some data preparation before continuing with analysis.
+
+[4.5 Visualization using Customer Journey Analytics](./ex5.md)
+
+Learn how to visualize Adobe Experience Platform data using Customer Journey Analytics.
 
 [Go Back to All Modules](../../overview.md)

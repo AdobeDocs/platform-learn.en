@@ -30,4 +30,8 @@ doc-type: multipage
   + [3.1 Exercise 1](/help/bootcamp/uc/uc3/ex1.md)
 + 4 - Customer Journey Analysis {#uc4}
   + [Overview](/help/bootcamp/uc/uc4/uc4.md)
-  + [4.0 Exercise 1](/help/bootcamp/uc/uc4/ex1.md)
+  + [4.1 Customer Journey Analytics 101](/help/bootcamp/uc/uc4/ex1.md)
+  + [4.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](/help/bootcamp/uc/uc4/ex2.md)
+  + [4.3 Create a Data View](/help/bootcamp/uc/uc4/ex3.md)
+  + [4.4 Data Preparation in Customer Journey Analytics](/help/bootcamp/uc/uc4/ex4.md)
+  + [4.5 Visualization using Customer Journey Analytics](/help/bootcamp/uc/uc4/ex5.md)
