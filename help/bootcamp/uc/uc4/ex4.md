@@ -69,27 +69,6 @@ Although we have organized all the components in the Data View, you still need t
 If you remember, we didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View. 
 However, we do have a dimension called: **Product Interaction Type**. So, let's derive these interaction types by creating 3 calculated Metrics.
 
-Back in module 4, [Query Service](./../../modules/module4/query-service.md), you created a SQL query to get the interactions funnel:
-
-**Query & Result**
-
-```text
-aepenablementfy22:all=> select eventType, count(*)
-aepenablementfy22:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy22:all-> where  --aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
-aepenablementfy22:all-> and    eventType is not null
-aepenablementfy22:all-> and    eventType <> ''
-aepenablementfy22:all-> group  by eventType;
-          eventType           | count(1) 
-------------------------------+----------
- commerce.productViews        |     2297
- commerce.productListAdds     |      494
- commerce.purchases           |      246
-(3 rows)
-```
-
-The goal in CJA is to avoid using SQL queries, but still have access to the same components using real analytics power through a User Interface.
-
 ### Product Views
 
 Let's start with first Metric: **Product Views**. Click on the **+** to create your first calculated Metric.
