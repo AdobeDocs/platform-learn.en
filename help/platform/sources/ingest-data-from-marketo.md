@@ -1,7 +1,7 @@
 ---
 title: Ingest data from Marketo Engage
 description: Learn how to ingest data from Marketo Engage using the source connector.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Real-time Customer Data Platform
 feature: Sources
 role: Data Engineer, Data Architect
 kt: 9259

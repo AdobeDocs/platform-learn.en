@@ -1,7 +1,7 @@
 ---
 title: Set up Adobe Target with Platform Web SDK
 description: Learn how to implement Adobe Target using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
-solution: Experience Platform, Data Collection, Target
+solution: Data Collection, Target
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
 ---
 # Set up Adobe Target with Platform Web SDK
@@ -115,33 +115,15 @@ To configure Target in the datastream:
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
 1. Select the previously created `Luma Web SDK` datastream
 
-    ![Datastream Select Luma Web SDK](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
 
-1. Select the **[!UICONTROL Development Environment]**
-
-    ![Datastream development environment](assets/analytics-datastream-development.png)
-
-1. Toggle on **Adobe Target**
-1. Enter the details about your Target implementation, following the guidance below
+1. Select **[!UICONTROL Add Service]**
+     ![Add a service to the datastream](assets/target-datastream-addService.png)
+1. Select **[!UICONTROL Adobe Target]** as the **[!UICONTROL Service]**
+1. Enter the optional details about your Target implementation, if desired, following the guidance below.
+1. Select **[!UICONTROL Save]**
 
    ![Target datastream configuration](assets/target-datastream.png)
-
->[!NOTE]
->
->The [!UICONTROL Target Third Party ID Namespace] is the ID that to use as the customer identifier for Target. This ID is used as the data source for [Customer Attributes](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/working-with-customer-attributes.html?lang=en). This ID is also used for Target's [real-time profile synching](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html?lang=en) across devices.
-
-### Client code
-
-The unique ID for a Target account.
-
-To find your client code, navigate to **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Implementation]**. The Client Code is listed in the account details section.
-
-![Target client code](assets/target-admin-clientcode.png)
-
->[!NOTE]
->
->The organization associated with the client code must match the organization where the configuration ID is created.
-
 
 ### Property token
 
@@ -158,9 +140,9 @@ To setup or find property tokens, navigate to **Adobe Target** > **[!UICONTROL A
 
 ### Target environment ID
 
-[Environments](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) in Target help you manage your implementation through all stages of development. This optional setting specifies which Target environment you are going to use with each datastream environment.
+[Environments](https://experienceleague.adobe.com/docs/target/using/administer/environments.html) in Target help you manage your implementation through all stages of development. This optional setting specifies which Target environment you are going to use with each datastream.
 
-Adobe recommends setting the Target Environment ID differently for each of your development, staging, and production datastream environments to keep things simple. However, if you already have Target environments defined, you can use those environments. 
+Adobe recommends setting the Target Environment ID differently for each of your development, staging, and production datastreams to keep things simple.
 
 To setup or find Environment IDs, navigate to **Adobe Target** > **[!UICONTROL Administration]** > **[!UICONTROL Environments]**.
 
@@ -172,7 +154,7 @@ To setup or find Environment IDs, navigate to **Adobe Target** > **[!UICONTROL A
 
 ### Target third-party ID namespace
 
-This optional setting allows you to specify which Identity Symbol to use for the Target Third Party ID. Target only supports profile syncing on a single Identity Symbol or namespace. For more information, you can refer to the [Real-time profile syncing for mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) section of the Target guide.
+This optional setting allows you to specify which Identity Symbol to use for the Target Third Party ID. Target only supports profile syncing on a single identity symbol or namespace. For more information, you can refer to the [Real-time profile syncing for mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) section of the Target guide.
 
 The Identity Symbols are found in the identities list under **Data Collection** > **[!UICONTROL Customer]** > **[!UICONTROL Identities]**. 
 
@@ -523,3 +505,7 @@ If you have Target Premium, you can also validate that the entity data was passe
 Now that you have completed this lesson you should have a working implementation of Adobe Target using the Platform Web SDK.
 
 [Next: **Implement Consent for Experience Platform Web SDK**](setup-consent.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

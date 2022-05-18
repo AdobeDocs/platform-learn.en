@@ -34,6 +34,7 @@ doc-type: video
   + [Classify data using governance labels](/help/platform/governance/classify-data-using-governance-labels.md)
   + [Create data usage policies](/help/platform/governance/create-data-usage-policies.md)
   + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies.md)
+  + [Audit logs](/help/platform/governance/audit-logs.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
@@ -70,6 +71,7 @@ doc-type: video
   + [Import a packaged recipe (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Destinations {#destinations}
   + [Destinations overview](/help/platform/destinations/understanding-destinations.md)
+  + [Connecting to destinations](/help/platform/destinations/connecting-to-destinations.md)
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
   + [Activate profiles and segments to a destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
@@ -113,7 +115,9 @@ doc-type: video
   + [Run queries](/help/platform/queries/run-queries.md)
   + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
   + [Tableau](/help/platform/queries/psql-client-tableau.md)
+  + [Analyze and visualize data](/help/platform/queries/analyze-and-visualize.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
+  + [Recharge your customer data](/help/platform/queries/recharge-your-customer-data.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -142,6 +146,10 @@ doc-type: video
   + [Demo of streaming segmentation](/help/platform/segments/streaming-segmentation-demo.md)
   + [Evaluate a segment](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
   + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+  + [Segment Match connection setup](/help/platform/segments/segment-match-connection-setup.md)
+  + [Segment Match data governance](/help/platform/segments/segment-match-data-governance.md)
+  + [Segment Match configuration flow](/help/platform/segments/segment-match-configuration-flow.md)
+  + [Segment Match pre-share insights](/help/platform/segments/segment-match-pre-share-insights.md)
 + Sources {#sources}  
   + [Sources overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)

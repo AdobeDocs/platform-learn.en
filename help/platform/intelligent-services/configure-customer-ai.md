@@ -2,7 +2,7 @@
 title: Configure Customer AI
 description: Learn how to create an instance of Customer AI to predict customer behavior.
 role: User
-solution: Experience Platform, Intelligent Services
+solution: Intelligent Services
 feature: Customer AI
 kt: 4172
 thumbnail: 32665.jpg

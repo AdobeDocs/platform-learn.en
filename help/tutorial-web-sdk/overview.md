@@ -37,13 +37,9 @@ After completing the tutorial, you will be able to:
 
 * Forward data to third-parties with event forwarding
 
-<!--
 >[!NOTE]
 >
->Similar multi-solution tutorials are also available for the following platforms:
->
->* [Implementing the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/mobile-ios-swift-implementation/overview.md)
--->
+>A similar multi-solution tutorial is available for [Mobile SDK](../tutorial-mobile-sdk/overview.md).
 
 ## Prerequisites
 
@@ -54,3 +50,7 @@ Also, it is assumed that you are familiar with front-end development languages l
 Let's get started!
 
 [Next: **Configure permissions**](configure-permissions.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,7 +1,7 @@
 ---
 title: Set up Adobe Analytics using Experience Platform Web SDK
 description: Learn how to set up Adobe Analytics using Experience Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
-solution: Experience Platform, Data Collection, Analytics
+solution: Data Collection, Analytics
 exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
 ---
 # Set up Adobe Analytics with Platform Web SDK
@@ -85,31 +85,24 @@ Platform Web SDK sends data from your website to Platform Edge Network. Your dat
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
 1. Select the previously created `Luma Web SDK` datastream
 
-    ![Datastream Select Luma Web SDK](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
 
-1. Select the **[!UICONTROL Development Environment]**
+1. Select **[!UICONTROL Add Service]**
+     ![Add a service to the datastream](assets/analytics-addService.png)
+1. Select **[!UICONTROL Adobe Analytics]** as the **[!UICONTROL Service]**
+1. Enter the  **[!UICONTROL Report Suite ID]** of your development report suite
+1. Select **[!UICONTROL Save]**
 
-    ![Datastream development environment](assets/analytics-datastream-development.png)
-
-1. On this screen, you see every Adobe application to which you can send data collected by Platform Web SDK. Toggle the switch for **[!UICONTROL Adobe Analytics]** to stream data to Analytics. 
-1. Select **[!UICONTROL Add Report Suite]** and enter your development report suite ID in the field
-
-    ![Datastream enable analytics](assets/analytics-datastream-dev-reportsuite.png)
+    ![Datastream save analytics](assets/analytics-datastream-save.png)
 
     >[!TIP]
     >
     >Adding more report suites by selecting **[!UICONTROL Add Report Suite]** is equivalent to multi-suite tagging.
 
-1. Scroll to the bottom and select **[!UICONTROL Save]**
-
-    ![Datastream save analytics](assets/analytics-datastream-save.png)
-
 >[!WARNING]
 >
->In this tutorial, you only configure the development Adobe Analytics report suite. When you create a datastream for your own website, you would add your staging and production report suites in the staging and production environments of the datastream.
->
->
->Each datastream environment maps to a tag environment. Sending data to Adobe Analytics with Platform Web SDK is determined by both the datastream configuration and the tag publishing workflow. To collect production data for Adobe Analytics, you typically must publish a tag library to Production **and also** enable Analytics in the production datastream.
+>In this tutorial, you only configure the development Adobe Analytics report suite. When you create datastreams for your own website, you would create additional datastreams and report suites for your staging and production environments.
+
 
 ## Create additional data elements
 
@@ -568,3 +561,7 @@ To learn more about mapping XDM fields to Analytics variables, see the video [Ma
 Congratulations! This is the end of the lesson and now you are ready to implement Adobe Analytics with Platform Web SDK for your own website.
 
 [Next: **Add Adobe Audience Manager**](setup-audience-manager.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

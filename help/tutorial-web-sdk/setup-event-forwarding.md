@@ -76,28 +76,31 @@ Begin by creating an event-forwarding property:
 
 For event forwarding to use the data you send to the Edge network, you must link the newly created event-forwarding property to the same datastream used to send data to Adobe solutions. 
 
-1. In the Data Collection interface, open **[!UICONTROL Datastreams]** from the left navigation
+To configure Target in the datastream:
 
-1. Select the datastream you used for the previous steps in this tutorial, in this case `Luma Web SDK`.
-    ![Event Forwarding datastream](assets/event-forwarding-datastream.png)
+1. Go to [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
+1. On the left navigation, select **[!UICONTROL Datastreams]** 
+1. Select the previously created `Luma Web SDK` datastream
 
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
 
-1. Select to configure [!UICONTROL **Development Environment**]. 
+1. Select **[!UICONTROL Add Service]**
+     ![Add a service to the datastream](assets/event-forwarding-datastream-addService.png)
+1. Select **[!UICONTROL Event Forwarding]** as the **[!UICONTROL Service]**
 
-1. In the **[!UICONTROL Event Forwarding]** section, select the toggle to enable event forwarding
+1. Under the **[!UICONTROL Property ID]** dropdown, select the name you gave to your event-forwarding property, in this case `Server-Side - Web SDK Course`
 
-1. Under the **[!UICONTROL Property ID]** dropdown, select the name you gave to your event-forwarding property. In this case `Server-Side - Web SDK Course`
-
-1. Under the **[!UICONTROL Environment ID]** dropdown, select the tag environment you are linking the event forwarding environment to. In this case `Development`
+1. Under the **[!UICONTROL Environment ID]** dropdown, select the tag environment you are linking the event forwarding environment to, in this case `Development`
 
     >[!TIP]
     >
     >    To send data to an event forwarding environment outside the Adobe org, select **[!UICONTROL Manually enter IDs]** and paste in an ID. The ID is provided when you create an event-forwarding property.
 
 1. Select **[!UICONTROL Save]**.
+
     ![Event Forwarding Datastream Enablement](assets/event-forwarding-datastream-enable.png)
 
-Repeat these steps for Staging and Production environments when you are ready to promote your changes through the publishing flow.
+Repeat these steps for staging and production datastreams when you are ready to promote your changes through the publishing flow.
 
 ## Forward data from the Platform Edge Network to a non-Adobe solution
 
@@ -306,4 +309,10 @@ Now you can validate your event-forwarding property using the Platform Debugger,
 
     ![Event forwarding webhook site data](assets/event-forwarding-webhook-data.png)
 
-Congratulations! You have completed the Implement Web SDK with tags tutorial!
+Congratulations! You have configured event forwarding!
+
+[Next: **Conclusion**](conclusion.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,7 +2,7 @@
 title: Introduction to Intelligent Services
 description: A high-level introduction to Intelligent Services, which empower marketing analysts and practitioners to use the power of Artificial Intelligence and Machine Learning in customer experience use cases without data science expertise.
 role: User
-solution: Experience Platform, Intelligent Services
+solution: Intelligent Services
 feature: Customer AI, Attribution AI
 kt: 4170
 thumbnail: 32654.jpg
