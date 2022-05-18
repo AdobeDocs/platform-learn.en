@@ -92,6 +92,8 @@ You'll then see a green confirmation bar saying that your Journey is now Publish
 
 You've now finished this exercise.
 
+Next Step: [2.5 Test your journey](./ex5.md)
+
 [Go Back to User Flow 2](./uc2.md)
 
 [Go Back to All Modules](../../overview.md)
