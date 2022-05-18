@@ -25,6 +25,8 @@ doc-type: multipage
   + [2.2 Create your event](/help/bootcamp/uc/uc2/ex2.md)
   + [2.3 Create your email message](/help/bootcamp/uc/uc2/ex3.md)
   + [2.4 Create your journey](/help/bootcamp/uc/uc2/ex4.md)
+  + [2.5 Test your journey](/help/bootcamp/uc/uc2/ex5.md) 
+  + [2.6 Install & use the mobile app](/help/bootcamp/uc/uc2/ex6.md) 
 + 3 - Blending physical and digital {#uc3}
   + [Overview](/help/bootcamp/uc/uc3/uc3.md)
   + [3.1 Use the mobile app and trigger a beacon entry](/help/bootcamp/uc/uc3/ex1.md)

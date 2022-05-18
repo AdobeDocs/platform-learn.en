@@ -35,7 +35,7 @@ The next screen is the message dashboard, from there you will be able to see the
 
 Let's define the content of the push notification.
 
-Click the **Titlee** text field.
+Click the **Title** text field.
 
 ![Journey Optimizer](./images/msg5.png)
 
@@ -55,15 +55,7 @@ In the text area, write `Welcome at the `. Then, click **Save**. You'll come bac
 
 ![Journey Optimizer](./images/msg12.png)
 
-You've now completed the draft version of your push notification. Click **Publish** to publish your message so you can use it in a journey.
-
-![Journey Optimizer](./images/msg57.png)
-
-Click **Publish** again.
-
-![Journey Optimizer](./images/msg58.png)
-
-Wait until you see a green confirmation pop-up at the bottom of the screen indicating that the message is published. 
+You've now completed the draft version of your push notification. Don't publish your message yet, you'll do that at a later stage.
 
 You have finished this exercise.
 
