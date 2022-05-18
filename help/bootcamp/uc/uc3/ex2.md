@@ -1,19 +1,18 @@
 ---
-title: Bootcamp - Journey Optimizer Create your event
-description: Bootcamp - Journey Optimizer Create your event
+title: Bootcamp - Blending physical and digital - Journey Optimizer Create your event
+description: Bootcamp - Blending physical and digital - Journey Optimizer Create your event
 kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: 89db40ab-d4c5-4310-aca6-cb64828e7bc9
 ---
-# 2.2 Create your event
+# 3.2 Create your event
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `Bootcamp`. To change from one sandbox to another, click on **Prod** and select the sandbox from the list. In this example, the sandbox is named **Bootcamp**. You'll then be in the **Home** view of your sandbox `Bootcamp`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `Bootcamp`. To change from one sandbox to another, click on **Prod** and select the sandbox from the list. In this example, the sandbox is named **Bootcamp2**. You'll then be in the **Home** view of your sandbox `Bootcamp`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -27,9 +26,7 @@ You'll then see an overview of all available events. Click **Create Event** to s
 
 A new, empty event window will then pop up.
 
-![ACOP](./images/emptyevent1.png)
-
-First of all, give your Event a Name like this: `yourLastNameAccountCreationEvent` and add a description like this `Account Creation Event`.
+First of all, give your Event a Name like this: `yourLastNameBeaconEntryEvent` and add a description like this `Beacon Entry Event`.
 
 ![ACOP](./images/eventdescription.png)
 
@@ -37,7 +34,7 @@ Next, make sure the **Type** is set to **Unitary**, and for the **Event ID Type*
 
 ![ACOP](./images/eventidtype.png)
 
-Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
@@ -45,21 +42,13 @@ After selecting the Schema, you'll see a number of fields being selected in the 
 
 ![ACOP](./images/eventpayload.png)
 
-You'll see a **Fields** window popup, in which you need to select some of the fields that we need to personalize the email.  We will choose other profile attributes later, using the data already in Adobe Experience Platform.
+You'll see a **Fields** window popup, in which you need to select some of the fields that we need to personalize the journey.  We will choose other profile attributes later, using the data already in Adobe Experience Platform.
 
 ![ACOP](./images/eventfields.png)
 
-In the object `_experienceplatform.demoEnvironment`, please make sure to select the fields **brandLogo** and **brandName**.
+Scroll down until you see the object `Place context` and check the checkbox. With this, all the context of the location of the customer will be made available to the journey. Click **Ok** to save your changes.
 
 ![ACOP](./images/eventpayloadbr.png)
-
-In the object `_experienceplatform.identification.core`, please make sure to select the field **email**.
-
-![ACOP](./images/eventpayloadbrid.png)
-
-Click **Ok** to save your changes.
-
-![ACOP](./images/saveok.png)
 
 You should then see this. Click **Save** once more to save your changes.
 
@@ -79,14 +68,14 @@ Your event has a unique orchestration eventID, which you can find by scrolling d
 ![ACOP](./images/payloadeventID.png)
 
 The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the journey that you'll build in one of the next exercises. Remember this eventID, as you may need it later.
-`"eventID": "19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f"`
+`"eventID": "e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5"`
 
 Click **Ok**, followed by clicking **Cancel**.
 
 You've now finished this exercise.
 
-Next Step: [2.3 Create your email message](./ex3.md)
+Next Step: [3.3 Create your push notification](./ex3.md)
 
-[Go Back to User Flow 2](./uc2.md)
+[Go Back to User Flow 3](./uc3.md)
 
 [Go Back to All Modules](../../overview.md)

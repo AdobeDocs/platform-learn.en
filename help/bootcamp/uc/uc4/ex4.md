@@ -38,7 +38,7 @@ You'll then see an empty project.
 
 ![demo](./images/premptyprojects.png)
 
-First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is `vangeluw - Omnichannel Data View`.
+First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is `vangeluwe - Omnichannel Data View`.
 
 ![demo](./images/prdv.png)
 
@@ -57,7 +57,7 @@ Please use this naming convention:
 
 |  Name       | Description   | 
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - Omnichannel Analysis`| `--demoProfileLdap-- - Omnichannel Analysis`|
+| `yourLastName - Omnichannel Analysis`| `yourLastName - Omnichannel Analysis`|
 
 Next, click **Save**.
 

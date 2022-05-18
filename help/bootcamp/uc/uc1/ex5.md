@@ -29,7 +29,7 @@ In the list of available segments, select the segment you created in the previou
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-On the **Mapping** page, accept the default settings and click **Next**.
+On the **Mapping** page, make sure that the **Apply Transformation** checkbox is enabled. Click **Next**.
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 

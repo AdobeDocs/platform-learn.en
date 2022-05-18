@@ -56,7 +56,7 @@ Enter the same value for the description: `yourLastName – Omnichannel Data Vie
 
 ![demo](./images/1-v2.png)
 
-For the **Time Zone**, select the timezone **Greenwich Mean Time; Monrovia, Casablanca [GMT]**. This is a really interesting setting as some companies operate in different countries and geographies. Allocating the right time zone for each country will avoid typical data mistakes such as believing that for instance, in Peru, the majority of the people buy T-shirts at 4:00 AM.
+For the **Time Zone**, select the timezone **Berlin, Stockholm, Rome, Bern, Brussels, Vienna, Amsterdam GMT+01:00**. This is a really interesting setting as some companies operate in different countries and geographies. Allocating the right time zone for each country will avoid typical data mistakes such as believing that for instance, in Peru, the majority of the people buy T-shirts at 4:00 AM.
 
 ![demo](./images/ext7.png)
 

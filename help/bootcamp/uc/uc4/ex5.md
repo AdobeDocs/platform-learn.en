@@ -19,15 +19,13 @@ exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
 
 In this exercises you will use Analysis Workspace within CJA to analyze product views, product funnels, churn etc.
 
-We will cover some of the queries done in  Module 7 - Query Service so you can see how easy is to run the same queries and more but without using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
-
-Let's use the project you created in [11.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
+Let's use the project you created in [4.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demo](./images/prohome.png)
 
-Open your project `--demoProfileLdap-- - Omnichannel Analysis`.
+Open your project `yourLastName - Omnichannel Analysis`.
 
-With your project opened and the Data View `--demoProfileLdap-- - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
+With your project opened and the Data View `yourLastName - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
 
 ![demo](./images/prodataView1.png)
 

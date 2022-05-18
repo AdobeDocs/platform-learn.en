@@ -35,7 +35,7 @@ On the Profile Viewer panel on your website, you can find multiple identities. E
 
 On the Profile Viewer panel, you can see this identity:
 
-| Identity     | Namespace       |
+| Namespace     | Identity       |
 |:-------------:| :---------------:|
 | Experience Cloud ID (ECID)          | 19428085896177382402834560825640259081 |
 

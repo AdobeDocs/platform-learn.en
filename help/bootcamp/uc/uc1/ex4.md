@@ -29,7 +29,7 @@ Select the destination ``Bootcamp Target`` and click **Next**.
 
 ![AT](./images/atdest3.png)
 
-In the list of available segmennts, select the segment you created in [Exercise 6.1 Create a segment](./ex1.md), which is named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Then, click **Next**.
+In the list of available segments, select the segment you created in [1.3 Create a segment](./ex3.md), which is named `yourLastName - Interest in Real-Time CDP`. Then, click **Next**.
 
 ![AT](./images/atdest8.png)
 
@@ -51,7 +51,7 @@ Your segment is now activated towards Adobe Target.
 
 ## 1.4.2 Configure your Adobe Target form-based activity 
 
-Now that your Real-Time CDP segment is configured to be sent to Adobe Target, you can configure your Experience Targeting activity in Adobe Target. In this exercise you'll configre a Form-based activity.
+Now that your Real-Time CDP segment is configured to be sent to Adobe Target, you can configure your Experience Targeting activity in Adobe Target. In this exercise you'll configre a Visual Experience Composer-based activity.
 
 Go to the Adobe Experience Cloud homepage by going to [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Click **Target** to open it.
 
@@ -70,7 +70,7 @@ Select **Visual** and set the **Activity URL** to **https://bootcamp.aepdemo.net
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
-You're now in the Visual Experience Composer.
+You're now in the Visual Experience Composer. It may take 20-30sec until the website is fully loaded.
 
 ![RTCDP](./images/atform1.png)
 
@@ -86,7 +86,7 @@ Your Adobe Experience Platform segment is now part of this Experience Targeting 
 
 ![RTCDP](./images/atform4.png)
 
-Let's now change the Hero Image on the homepage of the website. Click the default hero image on the website, click **Replace Content** and then selecy **Image**.
+Let's now change the hero image on the homepage of the website. Click the default hero image on the website, click **Replace Content** and then select **Image**.
 
 ![RTCDP](./images/atform5.png)
 
