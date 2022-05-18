@@ -5,6 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: 41d8b01b-f373-4f21-a55e-4a758d0165e0
 ---
 # 3.3 Create your push notification
 

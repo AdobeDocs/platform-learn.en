@@ -1,7 +1,7 @@
 ---
 title: Add Adobe Target
 description: Learn how to implement Adobe Target for advanced personalization use cases. This lesson is part of the Implement the Experience Cloud in Mobile iOS Objective-C Applications tutorial.
-solution: Experience Platform, Data Collection, Target
+solution: Data Collection, Target
 exl-id: b015d5fc-6abe-448a-87f0-96942f4b9e07
 ---
 # Add Adobe Target

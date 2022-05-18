@@ -1,7 +1,7 @@
 ---
 user-guide-title: Implement Adobe Experience Cloud with Web SDK tutorial
 breadcrumb-title: Web SDK Tutorial
-solution: Experience Platform, Data Collection
+solution: Data Collection
 kt: 6953
 recommendations: noDisplay,noCatalog
 ---
@@ -32,4 +32,6 @@ recommendations: noDisplay,noCatalog
 
 + Event Forwarding {#event-forwarding}
   + [Set up event forwarding](setup-event-forwarding.md)
+
++ [Conclusion](conclusion.md)
 

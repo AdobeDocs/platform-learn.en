@@ -43,12 +43,7 @@ After completing this you will be able to:
 
 >[!NOTE]
 >
->Similar multi-solution tutorials are also available for the following platforms:
->
->* [Implement Adobe Experience Cloud with Web SDK](/help/tutorial-web-sdk/overview.md)
->* [Implement the Experience Cloud in Mobile iOS Swift&trade; Applications](/help/tutorial-mobile-ios-swift-implementation/overview.md)
->* [Implement the Experience Cloud in Mobile iOS Objective-C Applications](/help/tutorial-mobile-ios-objective-c-implementation/overview.md)
->* [Implement the Experience Cloud in Mobile Android™ Applications](/help/tutorial-mobile-android-implementation/overview.md)
+>Similar multi-solution tutorials are also available for [Web SDK](../tutorial-web-sdk/overview.md) and [Mobile SDK](../tutorial-mobile-sdk/overview.md).
 
 ## Prerequisites
 

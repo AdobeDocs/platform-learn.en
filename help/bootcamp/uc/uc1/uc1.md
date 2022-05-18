@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
 ---
 # 1. Acquisition
 

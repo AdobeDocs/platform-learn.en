@@ -73,18 +73,15 @@ A dataset is now configured to start collecting data from your Platform Web SDK 
 Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL Adobe Experience Platform]. The datastream is the link between your tag property, the Platform Edge Network, and the Experience Platform dataset.
 
 1. Open the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
-1. Click **[!UICONTROL Datastreams]** from the left navigation
-![Properties Screen](assets/datastreams-tag-properties.png)
-
+1. Select **[!UICONTROL Datastreams]** from the left navigation
 1. Open the datastream you created in the [Configure a datastream](configure-datastream.md) lesson, `Luma Web SDK`
 
-    ![Datastream Selection](assets/experience-platform-datastream.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
 
-1. Open the **[!UICONTROL Development Environment]**
-    
-    ![Datastream Environment Selection](assets/experience-platform-datastream-environment.png)
-
-1. In the **[!UICONTROL Adobe Experience Platform]** section, select the development sandbox you are using for the tutorial and `Luma Web Event Data` as the **[!UICONTROL Dataset]**
+1. Select **[!UICONTROL Add Service]**
+     ![Add a service to the datastream](assets/experience-platform-addService.png)
+1. Select **[!UICONTROL Adobe Experience Platform]** as the **[!UICONTROL Service]**
+1. Select `Luma Web Event Data` as the **[!UICONTROL Event Dataset]**
 
 1. Select **[!UICONTROL Save]**. 
 
@@ -198,7 +195,7 @@ Now the schema is also enabled for profile.
 
 >[!IMPORTANT]
 >
->    Once a schema or dataset is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial, which can be deleted at any time. 
+>    Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial, which can be deleted at any time. 
 >
 >   
 > When working with your own data, we recommend you do things in the following order:
@@ -234,3 +231,7 @@ You have now enabled Platform Web SDK for Experience Platform (And Real-time CDP
 
 
 [Next: **Set up Adobe Analytics**](setup-analytics.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -1,7 +1,7 @@
 ---
 title: Add the Adobe Experience Platform Identity Service with tags
 description: Learn how to add the Adobe Experience Platform Identity Service extension and use the Set Customer IDs action to collect customer ids. This lesson is part of the Implement the Experience Cloud in Mobile iOS Swift Applications tutorial.
-solution: Experience Platform, Data Collection, Experience Cloud Services
+solution: Data Collection, Experience Cloud Services
 exl-id: 0e871120-7ec0-44cc-bf58-f5c79b69b463
 ---
 # Add the Adobe Experience Platform Identity Service

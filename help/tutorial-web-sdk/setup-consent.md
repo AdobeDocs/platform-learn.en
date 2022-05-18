@@ -71,8 +71,8 @@ The custom code block should look similar to the below:
 
 Now save and build this rule to your development library, validate the consent banner is showing up by switching the tag library from Luma site to your own. You should see a CMP banner on the website as below. And to check the current visitor's consent permission you can use following snippet on the browser's console.
 
-``` javaScript
-klaro.getManager().consents 
+```javascript
+    klaro.getManager().consents 
 ```
 
 ![Consent Banner](assets/consent-cmp-banner.png)
@@ -214,3 +214,7 @@ For more information on consent in Web SDK, see [Supporting customer consent pre
 For more information on the [!UICONTROL Set consent] action, see [Set consent](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
 
 [Next: **Set up Event Forwarding**](setup-event-forwarding.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

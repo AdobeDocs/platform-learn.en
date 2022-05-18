@@ -2,7 +2,7 @@
 title: Introduction to Attribution AI
 description: A high-level overview of how marketers and analysts can use Attribution AI to understand the impact of their marketing channels and campaigns.
 role: User
-solution: Experience Platform, Intelligent Services
+solution: Intelligent Services
 feature: Attribution AI
 kt: 4808
 thumbnail: 32667.jpg
