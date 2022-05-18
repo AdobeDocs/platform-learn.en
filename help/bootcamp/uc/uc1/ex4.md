@@ -66,7 +66,17 @@ Select **Experience Targeting**.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-Select **Visual** and set the **Activity URL** to **https://bootcamp.aepdemo.net/**. Click **Next**. 
+Select **Visual** and set the **Activity URL** to `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`, but before you do that, replace XX by a number between 01 and 30.
+
+>[!IMPORTANT]
+>
+>Every participant of the enablement should use a separate web page to avoid collision of various Adobe Target experiences. You can pick a web page and find the URL by going here: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html). 
+>
+>Pages all share the same base URL, and end in the number of the participant. 
+>
+>As an example, participant 1 should use URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, participant 30 should use URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+
+Click **Next**. 
 
 ![RTCDP](./images/exclatcrxtdtlform.png)
 
@@ -138,7 +148,15 @@ Your activity is now live and can be tested on the bootcamp website.
 
 If you now go back to your demo website and visit the product page for **Real-Time CDP**, you'll then instantly qualify for the segment that you created, and you'll see the Adobe Target activity be displayed on the home page in real-time.
 
-![RTCDP](./images/atform12.png)
+>[!IMPORTANT]
+>
+>Every participant of the enablement should use a separate web page to avoid collision of various Adobe Target experiences. You can pick a web page and find the URL by going here: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises.html). 
+>
+>Pages all share the same base URL, and end in the number of the participant. 
+>
+>As an example, participant 1 should use URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant01.html`, participant 30 should use URL `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpant30.html`.
+
+![RTCDP](./images/atform12a.png)
 
 Next Step: [1.5 Take Action: send your segment to Facebook](./ex5.md)
 
