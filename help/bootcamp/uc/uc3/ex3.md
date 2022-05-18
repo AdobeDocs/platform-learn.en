@@ -34,7 +34,7 @@ The next screen is the message dashboard, from there you will be able to see the
 
 Let's define the content of the push notification.
 
-Click the **Titlee** text field.
+Click the **Title** text field.
 
 ![Journey Optimizer](./images/msg5.png)
 
