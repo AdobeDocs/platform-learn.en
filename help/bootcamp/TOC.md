@@ -27,7 +27,11 @@ doc-type: multipage
   + [2.4 Create your journey](/help/bootcamp/uc/uc2/ex4.md)
 + 3 - Blending physical and digital {#uc3}
   + [Overview](/help/bootcamp/uc/uc3/uc3.md)
-  + [3.1 Exercise 1](/help/bootcamp/uc/uc3/ex1.md)
+  + [3.1 Use the mobile app and trigger a beacon entry](/help/bootcamp/uc/uc3/ex1.md)
+  + [3.2 Create your event](/help/bootcamp/uc/uc3/ex2.md)
+  + [3.3 Create your push notification](/help/bootcamp/uc/uc3/ex3.md)
+  + [3.4 Create your journey](/help/bootcamp/uc/uc3/ex4.md)
+  + [3.5 Test your journey](/help/bootcamp/uc/uc3/ex5.md)
 + 4 - Customer Journey Analysis {#uc4}
   + [Overview](/help/bootcamp/uc/uc4/uc4.md)
   + [4.1 Customer Journey Analytics 101](/help/bootcamp/uc/uc4/ex1.md)

@@ -22,8 +22,24 @@ activity: develop
 
 ## Exercises
 
-[3.1 Exercise 1](./ex1.md)
+[3.1 Use the mobile app and trigger a beacon entry](./ex1.md)
 
-In this exercise ...
+In this exercise, you'll learn how to configure an event.
+
+[3.2 Create your event](./ex2.md)
+
+In this exercise, you'll learn how to configure an event.
+
+[3.3 Create your push notification](./ex3.md)
+
+In this exercise, you'll learn how to configure a push notification.
+
+[3.4 Create your journey](./ex4.md)
+
+In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
+
+[3.5 Test your journey](./ex5.md)
+
+In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
 
 [Go Back to All Modules](../../overview.md)
