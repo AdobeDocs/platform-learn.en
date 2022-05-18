@@ -79,6 +79,12 @@ In this exercise, you'll configure the components you need to analyze the data a
 
 ![demo](./images/2-v2.png)
 
+>[!IMPORTANT]
+>
+>If you can't find a specific metric or dimension, please check if the field `Contains data` is removed from your dataview. If not, please delete that field.
+>
+>![demo](./images/2-v2a.png)
+
 You now have to drag and drop the components you need for the analysis to the **Components Added**. To do this, you need to select the components in the left menu and drag and drop them onto the canvas in the middle.
 
 Let's start with the first component: **Name (web.webPageDetails.name)**. Search for this component, then drag and drop it onto the canvas.

@@ -54,9 +54,111 @@ You'll then see this. The message you created earlier is now connected to this j
 
 ![ACOP](./images/jomsg1.png)
 
-For this exercise, your journey is fine like it is now.
+You'll then see that your message is opened in a new window. Click the **Body** text area again.
 
-Let's add an Orchestration Event to **End** the Journey. In the left side of the screen, go to **Orchestration** and select **End**. Drag and Drop this onto the 3rd step of the Journey.
+![ACOP](./images/jomsg2.png)
+
+Click **Contextual Attributes** and then **Journey Orchestration**.
+
+![ACOP](./images/jomsg3.png)
+
+Click **Events**.
+
+![ACOP](./images/jomsg4.png)
+
+Click **Events**.
+
+![ACOP](./images/jomsg5.png)
+
+Click **Place context**.
+
+![ACOP](./images/jomsg6.png)
+
+Click **POI Interaction**.
+
+![ACOP](./images/jomsg7.png)
+
+Click **POI Detail**.
+
+![ACOP](./images/jomsg8.png)
+
+Click the **+** icon on **POI Name**.
+
+![ACOP](./images/jomsg9.png)
+
+You'll then see this. Click **Save**.
+
+![ACOP](./images/jomsg10.png)
+
+Your message is now ready. Click **Publish**.
+
+![ACOP](./images/jomsg11.png)
+
+Click **Publish** again.
+
+![ACOP](./images/jomsg12.png)
+
+Once your message is published, you can go back to your other browser window, which contains your journey.
+
+![ACOP](./images/jomsg13.png)
+
+Click **Ok**.
+
+![ACOP](./images/jomsg14.png)
+
+As the third step in the journey, you need to add a **sendMessageToScreen** action. Go to the left side of your screen to **Actions**, select the **sendMessageToScreen** action, then drag and drop it on the third node in your journey. You'll then see this.
+
+![ACOP](./images/jomsg15.png)
+
+The **sendMessageToScreen** action is a custom action that will publish a message to the endpoint that is used by the in-store display. The **sendMessageToScreen** action expects a number of variables to be defined. You can see those variables by scrolling down until you see **Action Parameters**.
+
+![ACOP](./images/jomsg16.png)
+
+You now need to set the values for every action parameter. Follow this table to understand what values are required where.
+
+| Parameter     | value       |
+|:-------------:| :---------------:|
+| DELIVERY          | `'image'` |
+| ECID          |`@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
+| FIRST NAME       |`#{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName}` |
+| EVENTSUBJECT         |`#{ExperiencePlatform.ProductListItems.experienceevent.first(
+                currentDataPackField.eventType == "commerce.productViews"
+            ).productListItems.first().name}` |
+| EVENTSUBJECTURL         |`#{ExperiencePlatform.ProductListItems.experienceevent.first(
+                currentDataPackField.eventType == "commerce.productViews"
+            ).productListItems.first()._experienceplatform.core.imageURL}` |
+| SANDBOX         |`'bootcamp'` |
+| CONTAINERID         | `''` |
+| ACTIVITYID         |`''` |
+| PLACEMENTID         | `''` |
+
+To set those values, click the **Edit** icon.
+
+![ACOP](./images/jomsg17.png)
+
+Next, select **Advanced Mode**.
+
+![ACOP](./images/jomsg18.png)
+
+Then, paste the value based on the table above. Click **Ok**.
+
+![ACOP](./images/jomsg19.png)
+
+Repeat this process to add values for each field.
+
+>[!IMPORTANT]
+>
+>For the field ECID, there's a reference to the event `yourLastNameBeaconEntryEvent`. Please ensure to replace `yourLastName` by your last name.
+
+The end result should look like this:
+
+![ACOP](./images/jomsg20.png)
+
+Scroll up and click **Ok**.
+
+![ACOP](./images/jomsg21.png)
+
+Let's add an orchestration event to **End** the Journey. In the left side of the screen, go to **Orchestration** and select **End**. Drag and Drop this onto the 3rd step of the journey. Click **Ok**.
 
 ![ACOP](./images/orch.png)
 
@@ -64,7 +166,7 @@ You still need to give your journey a Name. You can do that by clicking the **Pr
 
 ![ACOP](./images/journeyname.png)
 
-You can then enter the journey's name here. Please use `yourLastName - Account Creation Journey`. Click **OK** to save your changes.
+You can then enter the journey's name here. Please use `yourLastName - Beacon Entry Journey`. Click **OK** to save your changes.
 
 ![ACOP](./images/journeyname1.png)
 
@@ -79,6 +181,8 @@ Click **Publish** again.
 You'll then see a green confirmation bar saying that your Journey is now Published.
 
 ![ACOP](./images/published.png)
+
+Your journey is now live and can be triggered. 
 
 You've now finished this exercise.
 
