@@ -38,11 +38,11 @@ Click **Create an account**.
   
 ![Demo](./images/pv5.png)
   
-Fill out all the fields of the form.
+Fill out all the fields of the form. Use a real value for email address and phonenumber, as it will be used in later exercises for delivery of email and SMS.
   
 ![Demo](./images/pv7.png)
   
-Scroll down and clik **Register**.
+Scroll down and click **Register**.
   
 ![Demo](./images/pv8.png)
 
