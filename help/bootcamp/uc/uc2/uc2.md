@@ -38,4 +38,12 @@ In this exercise, you'll learn how to configure an email message.
 
 In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
 
+[2.5 Test your journey](./ex5.md)
+
+In this exercise, you'll test the journey you just created.
+
+[2.6 Install & use the mobile app](./ex6.md)
+
+In this exercise, you'll install the mobile app.
+
 [Go Back to All Modules](../../overview.md)

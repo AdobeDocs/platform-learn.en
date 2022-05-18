@@ -118,15 +118,11 @@ You now need to set the values for every action parameter. Follow this table to 
 
 | Parameter     | value       |
 |:-------------:| :---------------:|
-| DELIVERY          | `'image'` |
-| ECID          |`@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}` |
-| FIRST NAME       |`#{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName}` |
-| EVENTSUBJECT         |`#{ExperiencePlatform.ProductListItems.experienceevent.first(
-                currentDataPackField.eventType == "commerce.productViews"
-            ).productListItems.first().name}` |
-| EVENTSUBJECTURL         |`#{ExperiencePlatform.ProductListItems.experienceevent.first(
-                currentDataPackField.eventType == "commerce.productViews"
-            ).productListItems.first()._experienceplatform.core.imageURL}` |
+|DELIVERY|`'image'`|
+|ECID|`@{yourLastNameBeaconEntryEvent._experienceplatform.identification.core.ecid}`|
+|FIRST NAME |`#{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName}`|
+|EVENTSUBJECT|`#{ExperiencePlatform.ProductListItems.experienceevent.first(currentDataPackField.eventType == "commerce.productViews").productListItems.first().name}`|
+| EVENTSUBJECTURL |`#{ExperiencePlatform.ProductListItems.experienceevent.first(currentDataPackField.eventType == "commerce.productViews").productListItems.first()._experienceplatform.core.imageURL}`|
 | SANDBOX         |`'bootcamp'` |
 | CONTAINERID         | `''` |
 | ACTIVITYID         |`''` |
