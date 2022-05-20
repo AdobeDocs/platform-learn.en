@@ -15,7 +15,7 @@ exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
 
 In this lesson, you will configure Adobe Experience Platform user permissions using [!DNL Adobe's Admin Console]. 
 
-Access control is a key privacy capability in Experience Platform and we recommend limiting permissions to the minimum required for people to perform their job functions. 
+Access control is a key privacy capability in Experience Platform and we recommend limiting permissions to the minimum required for people to perform their job functions. See the [Access Control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html) for more information.
 
 Data Architects and Data Engineers are  power users of Adobe Experience Platform and you will need many permissions in order to complete this tutorial and later in your day-to-day work. Data Architects are likely be involved in the administration of *other Platform users* at their company such as marketers, analysts, and data scientists. As you complete this lesson, think about how you might use these features to manage other users at your company.
 
@@ -27,7 +27,7 @@ Data Architects and Data Engineers are  power users of Adobe Experience Platform
 
 ## About the Admin Console
 
-The [!DNL Admin Console] is the interface used to administer user access to all Adobe Experience Cloud products. Some key [!DNL Admin Console] concepts to be aware of:
+The [!DNL Admin Console] is the interface used to administer user access to all Adobe Experience Cloud products. See [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-console.html) for more detailed information. Here are some key [!DNL Admin Console] concepts:
 
 * A **product profile** is a combination of permissions, roles, and sandbox environments tied to a specific Adobe product. Multiple product profiles can be created for a single Adobe product. For example, a "Marketer" profile could limit permissions to what a typical marketer would need to complete key tasks in the production Platform environment, while a "Data Architect" profile could be used to grant different permissions in multiple Platform environments. In this lesson, you will create a "Luma Tutorial" product profile with all the permissions a Data Architect and Data Engineer would need to complete this tutorial in a sandbox environment. 
 * An **integration** is a connection to a _project_ in the Adobe Developer Console. The Adobe Developer Console is the heart of authentication and configuration of Adobe APIs. You will configure an integration in the Developer Console and [!DNL Postman] lesson.
@@ -60,7 +60,7 @@ To create the product profile:
 1. Depending on the details of your product license, you may or may not see this second **[!UICONTROL Services]** screen. We will not be using any of these services in this tutorial, so uncheck **[!UICONTROL Enable all services]** to *remove* all services and select **[!UICONTROL Save]**.
     ![Disable services](assets/adminconsole-createProfile-services.png)
 
-Now, add the tutorial participant as an admin of the newly created product profile. If _you_ are the tutorial participant, skip ahead to [Configure Experience Platform product profile](#configure-the-launch-product-profile):
+Now, add the tutorial participant as an admin of the newly created product profile. If _you_ are the tutorial participant, skip ahead to [Configure Experience Platform product profile](#configure-experience-platform-product-profile):
 
 1. Select the `Luma Tutorial Platform` product profile:
    
@@ -86,12 +86,13 @@ Now you will add the individual permission items to the profile:
 1. Open the `Luma Tutorial Platform` product profile
 1. Select the **[!UICONTROL Permissions]** tab
 1. Under **[!UICONTROL Sandboxes]**, add the **[!UICONTROL Prod]** sandbox to the profile. It is necessary to have access to the [!DNL Prod] sandbox in order to create additional sandboxes. Once we have added the tutorial sandbox in the next lesson, we will remove the [!DNL Prod] sandbox from the product profile.
-1. Add all of the permission items for the categories highlighted in the screenshot below ([!UICONTROL Data Modeling], [!UICONTROL Data Management], [!UICONTROL Profile Management], [!UICONTROL Identity Management], [!UICONTROL Sandbox Administration], [!UICONTROL Data Ingestion], [!UICONTROL Query Service], [!UICONTROL Data Governance], [!UICONTROL Dashboards], and [!UICONTROL Alerts]), by opening a category and moving the items to the right column. 
+1. Under [!UICONTROL Data Ingestion], add the [!UICONTROL Manage Sources] and [!UICONTROL View Sources] permission items.
+1. Add all of the permission items for the categories highlighted in the screenshot below ([!UICONTROL Data Modeling], [!UICONTROL Data Management], [!UICONTROL Profile Management], [!UICONTROL Identity Management], [!UICONTROL Sandbox Administration], [!UICONTROL Query Service], [!UICONTROL Data Governance], [!UICONTROL Dashboards], and [!UICONTROL Alerts]), by opening a category and moving the items to the right column. 
 
 1. After adding all of the permission items, be sure to select the **[!UICONTROL Save]** button
 
 After saving, your screen should look like this:
-![Interface showing the product one [!UICONTROL Sandbox] included and all permissions for [!UICONTROL Data Modeling], [!UICONTROL Data Management], [!UICONTROL Profile Management], [!UICONTROL Identity Management], [!UICONTROL Sandbox Administration], [!UICONTROL Data Ingestion], [!UICONTROL Query Service], [!UICONTROL Data Governance], [!UICONTROL Dashboards], and [!UICONTROL Alerts]](assets/adminconsole-platform-enablePermissions.png)
+![Interface showing the Prod [!UICONTROL Sandbox] included,  [!UICONTROL Manage Sources] and [!UICONTROL View Sources] permission items in the [!UICONTROL Data Ingestion] section and all permissions for [!UICONTROL Data Modeling], [!UICONTROL Data Management], [!UICONTROL Profile Management], [!UICONTROL Identity Management], [!UICONTROL Sandbox Administration], [!UICONTROL Query Service], [!UICONTROL Data Governance], [!UICONTROL Dashboards], and [!UICONTROL Alerts]](assets/adminconsole-platform-enablePermissions.png)
 
 ### Add yourself as a user
 
@@ -170,11 +171,5 @@ Now add yourself as a user to the Launch profile:
 1. Complete the workflow to add yourself as a user to the product profile
 
 You do not need to add yourself as a Developer for Launch.
-
-## Additional Resources
-
-* [Adobe Admin Console documentation](https://helpx.adobe.com/enterprise/using/admin-console.html)
-* [Access Control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html)
-* [Access Control API](https://www.adobe.io/experience-platform-apis/references/access-control/)
 
 Now you have almost all the permissions required to complete the tutorial! There will be just two more tweaks that you will make inside the [!DNL Adobe Admin Console], including one after you [create a sandbox](create-a-sandbox.md)!

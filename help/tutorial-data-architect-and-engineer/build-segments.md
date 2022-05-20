@@ -39,15 +39,14 @@ Let's create a simple segment for loyalty program customers with a Gold or Plati
 1. In the Platform user interface, go to **[!UICONTROL Segments]** in the left navigation
 1. Select the **[!UICONTROL Create segment]** button 
 1. On the left of the schema builder are three tabs for Attributes (Record data), Events (Time-series data), and Audiences
-1. If you select the gear icon, the segment builder defaults to only showing you fields with data and that you can also choose different merge policies for your segments
-1. In Attributes tab, navigate to the **XDM Individual Profile > YOUR_TENANT_ID > Loyalty** folder (you could also search for "loyalty")
-1. Drag and drop, `Level` from the attribute fields menu to the segment builder canvas 
-1. Select `Level` equals `Gold` or `Platinum`
+1. Select the gear icon to note how the segment builder defaults to only show you fields with data and allows you to change the merge policy
+1. In Attributes tab, navigate to the **XDM Individual Profile > Loyalty** folder (you could also search for "loyalty")
+1. Drag and drop, `Tier` from the attribute fields menu to the segment builder canvas 
+1. Select `Tier` equals `Gold` or `Platinum`
+1. Select **[!UICONTROL Refresh estimate]** to see how many profiles qualify for your segment
 1. As the **[!UICONTROL Name]**, enter `Luma customers with level Gold or Above`
 1. Select **[!UICONTROL Save]**
    ![Segment](assets/segment-goldOrAbove.png)
-1. In a few minutes, you should see an estimate of existing customers qualifying for this segment
-   ![Segment size estimate](assets/segment-goldOrAbove-estimate.png)
 
 <!--## Build a sequential segment-->
 
