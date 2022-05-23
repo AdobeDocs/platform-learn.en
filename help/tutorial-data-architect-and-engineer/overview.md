@@ -26,10 +26,10 @@ Topics include:
 * Configuring user permissions
 * Creating sandboxes
 * Setting up a Developer Console project and using the Platform API
-* Data management, including creating schemas, datasets, identities, merge policies, and data governance
+* Data management&mdash;including creating schemas, datasets, identities, merge policies, and data governance
 * Data ingestion using batch and streaming modes
 * Capturing web data with Adobe Experience Platform Web SDK
-* Combining data sources into Real-time Customer Profiles via identity stitching
+* Building Real-time Customer Profiles
 * Using Query Service to validate data and extract data
 * Building segments
 
@@ -40,8 +40,8 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 ## Pre-requisites
 
 * You have completed the [Introduction to Adobe Experience Platform course](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) on Experience League and are familiar with Platform capabilities
-* You have access to an account provisioned with Adobe Experience Platform and Data Collection (formerly Launch).  
-* You are a System Administrator of that account or can have one complete several tasks in the [Configure Permissions](configure-permissions.md) lesson.
+* You have access to an account provisioned with Adobe Experience Platform (or a Platform-based application such as Real-time CDP or Journey Optimizer) and Data Collection (formerly Launch).  
+* You are a System Administrator of that account or can have one [configure user permissions](configure-permissions.md) for you.
 
 ## Using this tutorial
 
