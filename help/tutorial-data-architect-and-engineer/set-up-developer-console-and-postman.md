@@ -31,6 +31,8 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 -->
 
 ## Set up Adobe Developer Console
+
+Adobe Developer Console is the developer destination to access Adobe APIs & SDKs, listen to near real-time Events, run functions on Runtime, or build plugins or App Builder apps. You will use it to access the Experience Platform API. For more details, see the [Adobe Developer Console documentation](https://www.adobe.io/apis/experienceplatform/console/docs.html)
  
 1. Create a folder on your local machine named `Luma Tutorial Assets` for files used in the tutorial.
 
@@ -187,7 +189,7 @@ Now, let's make our first API call:
 
 1. Download the [Schema Registry API collection](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Schema%20Registry%20API.postman_collection.json) to your `Luma Tutorial Assets` folder
 1. Import it into [!DNL Postman]
-1. Open **Schema Registry API > Classes > Retrieve a list of classes within the specified container.**
+1. Open **Schema Registry API > Classes > List classes**
 1. Look at the **Params** and **Headers** tabs and note how they include some of the environment variables we entered earlier.
 1. Note that the **Headers > Accept value field** is set to `application/vnd.adobe.xed-id+json`. The Schema Registry APIs require one of these [specified Accept header values](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#accept) which provide different formats in the response.
 1. Select **Send** to make your first Platform API call!
@@ -197,11 +199,5 @@ Hopefully you got a successful `200 OK` response containing a list of the availa
 ![First API call in Postman](assets/postman-firstAPICall.png)
 
 If your call was not successful, take a moment to debug using the error response details of the API call and review the steps above. If you get stuck, please request help in the [Community Forum](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform/ct-p/adobe-experience-platform-community) or use the link in the right side of this page to "Log an issue".
-
-## Additional Resources
-
-* [Adobe Developer Console documentation](https://www.adobe.io/apis/experienceplatform/console/docs.html)
-* [[!DNL Postman] website](https://www.postman.com/)
-* [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples)
 
 With your Platform permissions, sandbox, and [!DNL Postman] set up, you are ready to [model data in schemas](model-data-in-schemas.md)!

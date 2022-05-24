@@ -15,7 +15,7 @@ exl-id: a04afada-52a1-4812-8fa2-14be72e68614
 
 In this lesson, you will create a development environment sandbox that you will use for the rest of the tutorial.
 
-Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment.
+Sandboxes provide isolated environments where you can try out functionality without mixing resources and data with your Production environment. For more details, see the [sandboxes documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html).
 
 **Data Architects** and **Data Engineers** will need to create sandboxes outside of this tutorial.
 
@@ -51,10 +51,7 @@ Let's create a sandbox:
    >
    >While you could use any arbitrary values for your sandbox name and title, sticking to the values suggested is recommended as we will refer to these labels throughout the tutorial. If there are multiple people at your organization completing this tutorial, consider adding your name at the end of the sandbox title and name, for example luma-tutorial-ignatiusjreilly.
 
-Sandboxes take approximately 30 seconds to create, during which time a "[!UICONTROL Creating]" status displays:
-   ![Creating status](assets/sandbox-creating.png)
-
-When the sandbox is fully created, it shows as "[!UICONTROL Active]":
+Sandboxes take approximately 30 seconds to create, during which time a "[!UICONTROL Creating]" status displays. When the sandbox is fully created, it shows as "[!UICONTROL Active]":
    ![Active status](assets/sandbox-active.png)
 
 Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next exercise.
@@ -86,11 +83,5 @@ Once the sandbox is active, you must include it in your product profile in order
 1. Switch to the `Luma Tutorial` sandbox if you aren't already in it
 
    ![Confirm Sandbox](assets/sandbox-confirmDropdown.png)
-
-## Additional Resources
-
-* [Sandboxes documentation](https://experienceleague.adobe.com/docs/experience-platform/sandbox/home.html)
-* [Sandbox API reference](https://www.adobe.io/experience-platform-apis/references/sandbox/)
-
 
 Great, you've created your sandbox and are ready to [Set up Developer Console and Postman](set-up-developer-console-and-postman.md)!
