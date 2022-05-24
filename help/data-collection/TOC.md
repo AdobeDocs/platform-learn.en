@@ -24,7 +24,24 @@ doc-type: video
 + Web SDK{#web-sdk}
   + [Overview](web-sdk/overview.md)
   + [Demo](web-sdk/demo.md)
-  + [End-to-end-tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
+  + [Implementation Tutorial (with tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
+  + Implementation Tutorial (without tags)
+    + [Overview](web-sdk/implementation-tutorial/overview.md)
+    + [Structuring your data](web-sdk/implementation-tutorial/structuring-your-data.md)
+    + Configuring the server
+      + [Create a schema](web-sdk/implementation-tutorial/configure-the-server/create-a-schema.md)
+      + [Create a dataset](web-sdk/implementation-tutorial/configure-the-server/create-a-dataset.md)
+      + [Create a datastream](web-sdk/implementation-tutorial/configure-the-server/create-a-datastream.md)
+    + Configuring the client
+      + [What's a data layer](web-sdk/implementation-tutorial/configure-the-client/whats-a-data-layer.md)
+      + [How to use the Adobe Client Data Layer](web-sdk/implementation-tutorial/configure-the-client/how-to-use-the-adobe-client-data-layer.md)
+      + [Implement a data layer on a product page](web-sdk/implementation-tutorial/configure-the-client/implement-product-page-data-layer.md)
+      + [Create a Tags property and install extensions](web-sdk/implementation-tutorial/configure-the-client/create-a-tags-property-and-install-extensions.md)
+      + [Create rules for tracking page view and commerce events](web-sdk/implementation-tutorial/configure-the-client/create-rules-for-tracking-page-view-and-commerce-events.md)
+      + [Create a data element and rule for tracking app downloads](web-sdk/implementation-tutorial/configure-the-client/create-a-data-element-and-rule-for-tracking-app-downloads.md)
+      + [Publish the library](web-sdk/implementation-tutorial/configure-the-client/publish-the-library.md)
+    + [Test the implementation](web-sdk/implementation-tutorial/test-the-implementation.md)
+    + [Summary](web-sdk/implementation-tutorial/summary.md)
   + Consent{#consent}
     + [Overview](web-sdk/consent/overview.md)
     + [Set consent values using the Adobe standard](web-sdk/consent/set-consent-adobe.md)
