@@ -15,7 +15,7 @@ exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
 - Understand the concepts of data preparation in Analysis Workspace
 - Learn how to do data calculations
 
-## Exercise 11.4.1 Analysis Workspace UI in CJA
+## 4.4.1 Analysis Workspace UI in CJA
 
 Analysis Workspace removes all of the typical limitations of a single Analytics report. It provides a robust, flexible canvas for building custom analysis projects. Drag-and-drop any number of data tables, visualizations, and components (dimensions, Metrics, segments, and time granularities) to a project. Instantly create breakdowns and segments, create cohorts for analysis, create alerts, compare segments, do flow and fallout analysis, and curate and schedule reports for sharing with anyone in your business.
 
@@ -63,7 +63,7 @@ Next, click **Save**.
 
 ![demo](./images/prsave2.png)
 
-## Exercise 11.4.2 Calculated Metrics
+## 4.4.2 Calculated Metrics
 
 Although we have organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis.
 
@@ -169,7 +169,7 @@ Now click **Save As** to save your new Calculated Metric without overwriting the
 
 ![demo](./images/prsaveas.png)
 
-## Exercise 11.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
+## 4.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
 
 ### Filters: Calculated Dimensions
 

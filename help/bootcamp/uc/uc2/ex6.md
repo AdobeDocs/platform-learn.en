@@ -77,7 +77,17 @@ Go back to the homepage in the app, and you'll see additional capabilities appea
 
 ![DSN](./../uc3/images/app17.png)
 
+Go to **Products**. Click on any product, in this example **Coffee to go**.
+
+![DSN](./images/app19.png)
+
+You'll see the **Coffee to go** product page in the app. Click **Buy**.
+
+![DSN](./images/app20.png)
+
 You've now finished this exercise and you're ready for the next exercises.
+
+Next Step: [2.7 Personalization in the call center](./ex7.md)
 
 [Go Back to User Flow 2](./uc2.md)
 
