@@ -149,7 +149,7 @@ After a few moments, the status dot will turn green indicating the library succe
 
 Now validate that your rule is working as expected.
 
-Reload your sample page. If you look at the Developer Tools -> Network tab, you should now see a 200 response for your tags Library!
+Reload your sample page. If you look at the Developer Tools -> Network tab, you should now see a 200 response for your tag library!
 
 ![Library loads with 200 response](images/samplepage-200.png)
 

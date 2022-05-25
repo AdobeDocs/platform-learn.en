@@ -21,6 +21,8 @@ _Getting Started with Adobe Experience Platform for Data Architects and Data Eng
 
 Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial teaches you the key tasks executed by _both roles_ so you know how to start implementing Platform for your own business. You will be guided through exercises that will introduce you to the key terminology, features, interface, and API of Experience Platform. Customers of Adobe Experience Cloud applications like Real-time Customer Data Platform, Customer Journey Analytics, and Journey Optimizer will also find this content useful, as Platform services are critical foundations of those applications.
 
+![Adobe Experience Cloud marketecture highlighting the Platform services covered in this tutorial--Identity, Profile, Segmentation, Ingestion, Query, and Governance](assets/marketecture.png)
+
 Topics include: 
 
 * Configuring user permissions
