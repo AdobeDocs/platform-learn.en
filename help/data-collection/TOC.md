@@ -25,7 +25,7 @@ doc-type: video
   + [Overview](web-sdk/overview.md)
   + [Demo](web-sdk/demo.md)
   + [Implementation Tutorial (with tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
-  + Implementation Tutorial (without tags)
+  + Implementation Tutorial{#implementation-tutorial}
     + [Overview](web-sdk/implementation-tutorial/overview.md)
     + [Structuring your data](web-sdk/implementation-tutorial/structuring-your-data.md)
     + Configuring the server
