@@ -28,11 +28,11 @@ doc-type: video
   + Implementation Tutorial{#implementation-tutorial}
     + [Overview](web-sdk/implementation-tutorial/overview.md)
     + [Structuring your data](web-sdk/implementation-tutorial/structuring-your-data.md)
-    + Configuring the server
+    + Configuring the server{#server}
       + [Create a schema](web-sdk/implementation-tutorial/configure-the-server/create-a-schema.md)
       + [Create a dataset](web-sdk/implementation-tutorial/configure-the-server/create-a-dataset.md)
       + [Create a datastream](web-sdk/implementation-tutorial/configure-the-server/create-a-datastream.md)
-    + Configuring the client
+    + Configuring the client{#client}
       + [What's a data layer](web-sdk/implementation-tutorial/configure-the-client/whats-a-data-layer.md)
       + [How to use the Adobe Client Data Layer](web-sdk/implementation-tutorial/configure-the-client/how-to-use-the-adobe-client-data-layer.md)
       + [Implement a data layer on a product page](web-sdk/implementation-tutorial/configure-the-client/implement-product-page-data-layer.md)
