@@ -49,8 +49,6 @@ doc-type: video
   + [Streaming ingestion overview](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
   + [Stream data with HTTP API](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
   + [Stream data using Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
-  + [Dataflow monitoring](/help/platform/data-ingestion/data-monitoring.md)
-  + [Monitoring dashboard](/help/platform/data-ingestion/monitoring-dashboard.md)
   + [Web SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
   + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
@@ -85,6 +83,10 @@ doc-type: video
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
   + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
++ Monitoring {#monitoring}
+  + [Dataflow monitoring](/help/platform/monitoring/data-monitoring.md)
+  + [Monitoring dashboard](/help/platform/monitoring/monitoring-dashboard.md)
+  + [Monitoring the success of segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
 + Profiles {#profiles}
   + [Understanding Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
