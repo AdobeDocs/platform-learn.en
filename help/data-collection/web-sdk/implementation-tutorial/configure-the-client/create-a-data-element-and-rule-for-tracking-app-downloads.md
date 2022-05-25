@@ -38,13 +38,13 @@ To do this, you'll first need to create a data element that merges these two chu
 
 To create the appropriate data element, click [!UICONTROL Data Elements] in the left-hand menu. Next, click the [!UICONTROL Add Data Element] link.
 
-For the data element name, enter `computedStateAndEventInfo`. For the [!UICONTROL Extension] field, select [!UICONTROL Core] if it isn't selected already. For the [!UICONTROL Data Element Type] field, select [!UICONTROL Merged Objects]. This data element allows you to deeply merge multiple objects. The merged result will be returned by the data element.
+For the data element name, enter `computedStateAndEventInfo`. For the [!UICONTROL Extension] field, select [!UICONTROL Core] if it isn't selected already. For the [!UICONTROL Data Element Type] field, select [!UICONTROL Merged Objects]. This data element allows you to deeply merge multiple objects. The merged result is returned by the data element.
 
-For the first object you want to include in the merge, enter `%event.fullState%`. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this will reference the computed state of the Adobe Client Data Layer at the time the rule was triggered.
+For the first object you want to include in the merge, enter `%event.fullState%`. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the computed state of the Adobe Client Data Layer at the time the rule was triggered.
 
 Click [!UICONTROL Add Another].
 
-For the second object, enter `%event.eventInfo%`. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this will reference the `eventInfo` portion that was pushed to the Adobe Client Data Layer.
+For the second object, enter `%event.eventInfo%`. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the `eventInfo` portion that was pushed to the Adobe Client Data Layer.
 
 ![computedStateAndEventInfo data element](../../../assets/implementation-strategy/computed-state-and-event-info-data-element.png)
 

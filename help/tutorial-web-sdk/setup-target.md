@@ -85,7 +85,7 @@ The pre-hiding snippet is also available within tags:
 
 ### Synchronous implementation
 
-Adobe recommends implementing tags asynchronously as demonstrated on the Luma site. However, if the tags library is loaded synchronously, then the pre-hiding snippet is not required. Instead, the pre-hiding style is specified in the Platform Web SDK extension settings.
+Adobe recommends implementing tags asynchronously as demonstrated on the Luma site. However, if the tag library is loaded synchronously, then the pre-hiding snippet is not required. Instead, the pre-hiding style is specified in the Platform Web SDK extension settings.
 
 The pre-hiding style for synchronous implementations can be configured as follows:
 

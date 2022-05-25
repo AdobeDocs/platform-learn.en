@@ -10,17 +10,17 @@ hidefromtoc: yes
 ---
 # Publish the library
 
-Now it's time to deploy the Tags library onto your website.
+Now it's time to deploy the tag library onto your website.
 
 ## Create a library
 
-First, you'll need to create a library that includes the extensions, rules, and data element you have created. Do this by clicking [!UICONTROL Publishing Flow] in the left-hand menu.
+First, you must create a library that includes the extensions, rules, and data element you have created. To create a library, select [!UICONTROL Publishing Flow] in the left-hand menu.
 
-Click the [!UICONTROL Add Library]  button.
+Select [!UICONTROL Add Library].
 
 You should see the library creation view.
 
-![Tags library creation](../../../assets/implementation-strategy/tags-library-creation.png)
+![tag library creation](../../../assets/implementation-strategy/tags-library-creation.png)
 
 Give the library a name, like _Demo_. Select [!UICONTROL Development] in the [!UICONTROL Environment] dropdown. Then click [!UICONTROL Add All Changed Resources].
 
@@ -28,7 +28,7 @@ You should now see all your extensions, rules, and data element listed under [!U
 
 ## Add the embed code to your HTML
 
-Now you need to add a script tag to your product page HTML that will load the newly built Tags library.
+Now you must add a script tag to your product page HTML that loads the newly built tag library.
 
 Start by clicking [!UICONTROL Environments] in the left-hand menu. You should see three different environments listed. 
 

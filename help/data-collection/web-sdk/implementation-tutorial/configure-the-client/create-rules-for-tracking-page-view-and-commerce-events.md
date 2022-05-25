@@ -18,7 +18,7 @@ For the rule name, enter _Page Viewed_.
 
 Click the [!UICONTROL Add] button under [!UICONTROL Events]. You show now be on the event view. For the [!UICONTROL Extension] field, select [!UICONTROL Adobe Client Data Layer]. For the [!UICONTROL Event Type] field, select [!UICONTROL Data Pushed].
 
-Because you only want this rule to be triggered when the `pageViewed` event is pushed to the data layer, select the [!UICONTROL Specific Event] radio under [!UICONTROL Listen to] and type _pageViewed_ into the [!UICONTROL Event / Key to register for]  text field that is displayed.
+Because you only want this rule to be triggered when the `pageViewed` event is pushed to the data layer, select [!UICONTROL Specific Event] under [!UICONTROL Listen to] and type _pageViewed_ into the [!UICONTROL Event / Key to register for] text field.
 
 ![Page viewed event](../../../assets/implementation-strategy/page-viewed-event.png)
 
@@ -34,7 +34,7 @@ For the [!UICONTROL XDM data] field, enter `%event.fullState%`. This indicates t
 
 ![Page viewed action](../../../assets/implementation-strategy/page-viewed-action.png)
 
-If the data you pushed into the data layer from your website did not conform to the XDM schema you previously created, or if you only wanted to send a portion of the data layer's computed state, you would want to use the [!UICONTROL XDM Object] data element type (provided by the Adobe Experience Platform Web SDK extension) to build up an appropriate object that matches your schema.
+If the data you pushed into the data layer from your website did not conform to your XDM schema, or if you only want to send a portion of the data layer's computed state, use the [!UICONTROL XDM Object] data element type (provided by the Adobe Experience Platform Web SDK extension) to build an appropriate object that matches your schema.
 
 Click the [!UICONTROL Keep Changes] button.
 
@@ -50,17 +50,20 @@ Save the rule by clicking [!UICONTROL Save].
 
 Repeat the process outlined above to create rules for when a product is viewed, a shopping cart is opened, and a product is added to the cart. The only differences among the rules will be the rule name, the value entered into the [!UICONTROL Event / Key to register for] field in the [!UICONTROL Data Pushed] event, and the [!UICONTROL Type] field in the [!UICONTROL Send event] action. Here are the values for each rule:
 
-Product viewed rule:
+Product-viewed rule:
+
 * **Rule name**: _Product Viewed_
 * **Event / Key to register for** within [!UICONTROL Data Pushed] event: `productViewed`
 * **Type** within [!UICONTROL Send event] action: `commerce.productViews`
 
 Cart opened rule:
+
 * **Rule name**: _Cart Opened_
 * **Event / Key to register for** within [!UICONTROL Data Pushed] event: `cartOpened`
 * **Type** within [!UICONTROL Send event] action: `commerce.productListOpens`
 
 Product added to cart rule:
+
 * **Rule name**: _Product Added To Cart_
 * **Event / Key to register for** within [!UICONTROL Data Pushed] event: `productAddedToCart`
 * **Type** within [!UICONTROL Send event] action: `commerce.productListAdds` 

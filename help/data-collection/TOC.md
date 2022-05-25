@@ -36,7 +36,7 @@ doc-type: video
       + [What's a data layer](web-sdk/implementation-tutorial/configure-the-client/whats-a-data-layer.md)
       + [How to use the Adobe Client Data Layer](web-sdk/implementation-tutorial/configure-the-client/how-to-use-the-adobe-client-data-layer.md)
       + [Implement a data layer on a product page](web-sdk/implementation-tutorial/configure-the-client/implement-product-page-data-layer.md)
-      + [Create a Tags property and install extensions](web-sdk/implementation-tutorial/configure-the-client/create-a-tags-property-and-install-extensions.md)
+      + [Create a tag property and install extensions](web-sdk/implementation-tutorial/configure-the-client/create-a-tags-property-and-install-extensions.md)
       + [Create rules for tracking page view and commerce events](web-sdk/implementation-tutorial/configure-the-client/create-rules-for-tracking-page-view-and-commerce-events.md)
       + [Create a data element and rule for tracking app downloads](web-sdk/implementation-tutorial/configure-the-client/create-a-data-element-and-rule-for-tracking-app-downloads.md)
       + [Publish the library](web-sdk/implementation-tutorial/configure-the-client/publish-the-library.md)

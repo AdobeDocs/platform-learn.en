@@ -10,7 +10,7 @@ hidefromtoc: yes
 ---
 # Test the implementation
 
-Now that you have your webpage set up and your Adobe Experience Platform Tags library deployed, it's time to test the implementation.
+Now that you have your webpage set up and your Adobe Experience Platform tag library deployed, it's time to test the implementation.
 
 Open up your product page in your browser. You can do this by clicking _File_ then _Open File..._ in your browser or you can host your page on a web server and enter the appropriate URL.
 

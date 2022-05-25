@@ -10,11 +10,11 @@ hidefromtoc: yes
 ---
 # Implement a data layer on a product page
 
-For this tutorial, you'll be implementing the Adobe Client Data Layer for a typical ecommerce website. If you have not done so already, please read [How to use the Adobe Client Data Layer](how-to-use-the-adobe-client-data-layer.md) first to understand how the Adobe Client Data Layer operates.
+For this tutorial, you'll implement the Adobe Client Data Layer for a typical e-commerce website. If you have not already done so, please read [How to use the Adobe Client Data Layer](how-to-use-the-adobe-client-data-layer.md) first to understand how the Adobe Client Data Layer operates.
 
 Let's assume the user browses your products and clicks on a foam roller to learn more. The user lands on the foam roller product detail page.
 
-Here's the HTML for your very simple product detail page:
+Here's the HTML for your simple product detail page:
 
 ```html
 <!DOCTYPE html>
@@ -72,7 +72,7 @@ The second push to the data layer notifies listeners (Tags rules) that the user 
 
 You likely also want to track when the user clicks on the [!UICONTROL Add to cart] button.
 
-To do this, create a function that will be called when the user clicks the [!UICONTROL Add to cart] button.
+To do this, create a function that is called when the user clicks the [!UICONTROL Add to cart] button.
 
 ```js
 window.onAddToCartClick = function() {
@@ -90,7 +90,7 @@ window.onAddToCartClick = function() {
 };
 ```
 
-When this function is called, it will first check to see whether a cart already exists for a user. Typically, this would be done by checking whether a particular cookie or variable exists. If the cart does not exist, you'll push a `cartOpened` event into the data layer. Subsequently, you'll push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
+When this function is called, it first checks to see whether a cart already exists for a user. Typically, this would be done by checking whether a particular cookie or variable exists. If the cart does not exist, you'll push a `cartOpened` event into the data layer. Subsequently, you'll push a `productAddedToCart` event into the data layer. The product information already exists in the data layer, so you don't need to add it again.
 
 Add an `onclick` attribute to the [!UICONTROL Add to cart] button that calls your new `onAddToCartClick` function.
 
@@ -151,7 +151,7 @@ The result of your HTML page should look as follows:
 
 One last thing to do is track when the user clicks the _[!UICONTROL Download the app]_ link.
 
-To do this, create a function that will be called when the user clicks the _[!UICONTROL Download the app]_ link.
+To do this, create a function that is called when the user clicks the _[!UICONTROL Download the app]_ link.
 
 ```js
 window.onDownloadAppClick = function(event) {

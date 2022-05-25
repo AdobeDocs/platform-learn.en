@@ -14,7 +14,7 @@ Collecting data about events occurring in a user's browser is a fundamental tene
 
 In this tutorial, we'll discuss a strategy for (1) structuring and persisting your data within Adobe Experience Platform, (2) managing your data in the browser and communicating that certain events have occurred, and (3) reacting to such events by sending relevant data to Adobe Experience Platform.
 
-While this tutorial uses the Adobe Client Data Layer, Adobe Experience Platform Web SDK, and Adobe Experience Platform Tags for a more prescriptive, seamless implementation, you can also mix and match these tools with third-party or in-house tools for ultimate flexibility.
+While this tutorial uses the Adobe Client Data Layer, Adobe Experience Platform Web SDK, and the tags feature for a more prescriptive, seamless implementation, you can also mix and match these tools with third-party or in-house tools for ultimate flexibility.
 
 ## Example Scenario
 

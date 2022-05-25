@@ -10,9 +10,9 @@ hidefromtoc: yes
 ---
 # How to use the Adobe Client Data Layer
 
-In [What's a data layer?](whats-a-data-layer.md), you learned there are two parts to consider when discussing data layers: the container and the content. The Adobe Client Data Layer is the container. It doesn't care how you [structure your data](../structuring-your-data.md) or what pieces of information you choose to put in your data. The data can be structured as [XDM](../structuring-your-data.md#xdm), as the examples below will show, or you can build your own structure entirely.
+In [What's a data layer?](whats-a-data-layer.md), you learned there are two parts to consider when discussing data layers: the container and the content. The Adobe Client Data Layer is the container. It doesn't care how you [structure your data](../structuring-your-data.md) or what pieces of information you choose to put in your data. The data can be structured as [XDM](../structuring-your-data.md#xdm), as the examples below show, or you can build your own structure entirely.
 
-Ideally, your company's engineering team is responsible for pushing any necessary data into the data layer through on-page code. The marketing team will then retrieve data from the data layer, preferably using Adobe Experience Platform Tags.
+Ideally, your company's engineering team is responsible for pushing any necessary data into the data layer through on-page code. The marketing team then retrieves data from the data layer, preferably using Adobe Experience Platform Tags.
 
 ## Pushing data to the data layer
 
@@ -50,7 +50,7 @@ window.adobeDataLayer.push({
 
 ## Making sense of pushed data
 
-If you were to implement the two previous `push` calls, you would end up with two entries in the data layer array. The data layer isn't particularly useful in this state. Typically, you want to access the merged state of the data layer or, in other words, a single object that is the combined result of all the data you've pushed into the data layer. We'll learn how to access this merged state later in the tutorial. For now, it's sufficient to understand that the computed state of the data layer after our two `push` calls would be as follows:
+If you implemented the two previous `push` calls, you would end up with two entries in the data layer array. The data layer isn't particularly useful in this state. Typically, you want to access the merged state of the data layer or, in other words, a single object that is the combined result of all the data you've pushed into the data layer. We'll learn how to access this merged state later in the tutorial. For now, it's sufficient to understand that the computed state of the data layer after our two `push` calls would be as follows:
 
 ```json
 {
@@ -69,7 +69,7 @@ If you were to implement the two previous `push` calls, you would end up with tw
 
 ## Removing data
 
-In some cases, you may need to remove pieces of data from the data layer. This is particularly common in single-page applications when the user navigates from one view to the next. For example, if the user is navigating from a product view to a contact view, it may make sense to clear out any product data on the data layer since it is no longer pertinent to the active view.
+Sometimes, you must remove pieces of data from the data layer. This is particularly common in single-page applications when the user navigates from one view to the next. For example, if the user navigates from a product view to a contact view, it may make sense to clear out any product data on the data layer since it is no longer pertinent to the active view.
 
 You can remove a piece of data by pushing a value of `undefined` for the key you would like removed. Building on our previous examples, if you want to remove `status` from the data layer, your code would look as follows:
 
@@ -109,7 +109,7 @@ window.adobeDataLayer.push({
 });
 ```
 
-Later, you'll learn how to trigger rules within Adobe Experience Platform Tags when a particular event is pushed to the data layer. Also note that the `event` key will _not_ be included in the computed state. It receives special treatment by the data layer.
+Later, you'll learn how to trigger rules within Adobe Experience Platform Tags when a particular event is pushed to the data layer. Also note that the `event` key is _not_ included in the computed state. It receives special treatment by the data layer.
 
 ## Pushing events and data to the data layer
 
@@ -154,5 +154,5 @@ window.adobeDataLayer.push({
 
 Notice in this example that `siteKnowledge` is wrapped inside `eventInfo`. The `eventInfo` key receives special treatment by the data layer. It tells the data layer that this data _should_ be included with the event that gets sent to listeners, but it _should not_ be retained inside the data layer. After listeners (like Adobe Experience Platform Tags) are notified of the event, this data is essentially forgotten. The `siteKnowledge` key will never show up inside the data layer's computed state.
 
-Each time you call `push`, the Adobe Client Data Layer will notify any listeners. Later, we'll learn how to listen to these notifications from Adobe Experience Platform Tags and trigger rules accordingly.
+Each time you call `push`, the Adobe Client Data Layer notifies any listeners. Later, we'll learn how to listen to these notifications from Adobe Experience Platform Tags and trigger rules accordingly.
 
