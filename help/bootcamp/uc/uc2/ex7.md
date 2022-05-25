@@ -5,6 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: 3b466105-d8fd-426e-b513-a6db56dce412
 ---
 # 2.7 Personalization in the call center
 
