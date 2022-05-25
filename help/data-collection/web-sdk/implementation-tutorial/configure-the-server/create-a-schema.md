@@ -22,7 +22,7 @@ First, navigate to the [!UICONTROL Schemas] view inside Adobe Experience Platfor
 
 ![Schemas view](../../../assets/implementation-strategy/schemas-view.png)
 
-Select [!UICONTROL Create schema] in the top-right corner. A menu is displayed. Select [!UIControl XDM ExperienceEvent].
+Select [!UICONTROL Create schema] in the top-right corner. A menu is displayed. Select [!UICONTROL XDM ExperienceEvent].
 
 At this point, a dialog should be displayed asking you which field groups you would like to add to your schema. The first field group that you should select is the field group named [!UICONTROL AEP Web SDK ExperienceEvent]. This field group adds a set of fields that accommodates data automatically collected by Adobe Experience Platform Web SDK.
 
