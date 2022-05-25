@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Create rules for tracking page view and commerce events
+description: Create rules for tracking page view and commerce events
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

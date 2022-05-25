@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Create an Adobe Experience Platform tag property and install extensions
+description: Create an Adobe Experience Platform tag property and install extensions
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

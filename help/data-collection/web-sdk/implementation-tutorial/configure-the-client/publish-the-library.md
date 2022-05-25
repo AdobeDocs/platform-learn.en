@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Publish the library
+description: Publish the library
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

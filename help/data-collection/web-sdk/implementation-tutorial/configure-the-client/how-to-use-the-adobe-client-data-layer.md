@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: How to use the Adobe Client Data Layer
+description: How to use the Adobe Client Data Layer
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

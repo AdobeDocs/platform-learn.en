@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Test the implementation
+description: Test the implementation
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

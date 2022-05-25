@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Structuring your data
+description: Structuring your data
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

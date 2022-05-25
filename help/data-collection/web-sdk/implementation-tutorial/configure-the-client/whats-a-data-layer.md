@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: What's a data layer?
+description: What's a data layer?
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

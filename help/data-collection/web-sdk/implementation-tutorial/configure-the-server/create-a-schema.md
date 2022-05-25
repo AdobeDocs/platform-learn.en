@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Create a schema
+description: Create a schema
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

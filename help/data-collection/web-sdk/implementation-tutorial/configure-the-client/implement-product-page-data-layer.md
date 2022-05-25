@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Implement a data layer on a product page
+description: Implement a data layer on a product page
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog

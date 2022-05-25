@@ -1,6 +1,6 @@
 ---
-title: 
-description: 
+title: Summary
+description: Summary
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
