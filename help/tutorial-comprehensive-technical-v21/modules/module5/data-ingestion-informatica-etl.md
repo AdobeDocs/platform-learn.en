@@ -36,7 +36,7 @@ In this module, you'll learn about the positioning of an ETL application into an
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem5.png)
+![Architecture Overview](assets/images/architecturem5.png)
 
 ## Business Context
 

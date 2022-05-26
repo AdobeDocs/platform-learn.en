@@ -38,7 +38,7 @@ This foundational module introduces you to Adobe's data collection vision and ex
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem1.png)
+![Architecture Overview](assets/images/architecturem1.png)
 
 ## Sandbox to use
 

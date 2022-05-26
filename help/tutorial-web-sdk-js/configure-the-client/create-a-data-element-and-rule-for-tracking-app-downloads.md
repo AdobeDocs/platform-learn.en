@@ -46,7 +46,7 @@ Click [!UICONTROL Add Another].
 
 For the second object, enter `%event.eventInfo%`. When used inside a rule triggered by a [!UICONTROL Data Pushed] rule event, this references the `eventInfo` portion that was pushed to the Adobe Client Data Layer.
 
-![computedStateAndEventInfo data element](../../../assets/implementation-strategy/computed-state-and-event-info-data-element.png)
+![computedStateAndEventInfo data element](../assets/computed-state-and-event-info-data-element.png)
 
 The data element is complete. Save the data element by clicking the [!UICONTROL Save] button.
 
@@ -64,7 +64,7 @@ Click the [!UICONTROL Add] button under [!UICONTROL Events]. You show now be on 
 
 Because you only want this rule to be triggered when the `downloadAppClicked` event is pushed to the data layer, select the [!UICONTROL Specific Event] radio under [!UICONTROL Listen to] and type _downloadAppClicked_ into the [!UICONTROL Event / Key to register for]  text field that is displayed.
 
-![Download app clicked event](../../../assets/implementation-strategy/download-app-clicked-event.png)
+![Download app clicked event](../assets/download-app-clicked-event.png)
 
 Click [!UICONTROL Keep Changes].
 
@@ -82,7 +82,7 @@ You may be asking yourself, "That sounds nice. Why isn't this option always enab
 
 Well, it's a bit complicated, but when using this feature, the SDK uses a browser method called [`sendBeacon`](https://developer.mozilla.org/en-US/docs/Web/API/Navigator/sendBeacon) to send the request. When sending a request using `sendBeacon`, the browser doesn't allow the SDK (or anything else) to access any data returned from the server. If the SDK were to use this feature for every request, the SDK would never be able to receive any data from the server. For this reason, it's important to check the [!UICONTROL Document will unload] checkbox only when the current document will unload, in which case the response data can be discarded anyway.
 
-![Document will unload checkbox](../../../assets/implementation-strategy/document-will-unload.png)
+![Document will unload checkbox](../assets/document-will-unload.png)
 
 Save the action by clicking the [!UICONTROL Keep Changes] button.
 
@@ -90,6 +90,6 @@ Save the action by clicking the [!UICONTROL Keep Changes] button.
 
 Your rule should now be complete.
 
-![Download app link clicked rule](../../../assets/implementation-strategy/download-app-link-clicked-rule.png)
+![Download app link clicked rule](../assets/download-app-link-clicked-rule.png)
 
 Save the rule by clicking [!UICONTROL Save].

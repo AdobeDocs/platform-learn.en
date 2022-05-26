@@ -43,7 +43,7 @@ Watch this video to understand the value, customer journey and configuration pro
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem21.png)
+![Architecture Overview](assets/images/architecturem21.png)
 
 ## Sandbox to use
 

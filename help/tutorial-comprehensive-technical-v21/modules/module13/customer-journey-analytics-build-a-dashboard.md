@@ -44,7 +44,7 @@ More info on Customer Journey Analytics can be found [here](https://spark.adobe.
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem13.png)
+![Architecture Overview](assets/images/architecturem13.png)
 
 ## Sandbox to use
 

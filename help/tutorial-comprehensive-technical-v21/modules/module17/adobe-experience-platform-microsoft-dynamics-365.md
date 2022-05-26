@@ -40,7 +40,7 @@ Finally, you'll use Adobe Journey Optimizer to connect directly with Microsoft D
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architectural Overview](../../assets/images/architecturem17.png)
+![Architectural Overview](assets/images/architecturem17.png)
 
 ## Sandbox to use
 

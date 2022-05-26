@@ -40,7 +40,7 @@ This is to show that brands with an existing Google Analytics and Google Tag Man
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem9.png)
+![Architecture Overview](assets/images/architecturem9.png)
 
 ## Sandbox to use
 

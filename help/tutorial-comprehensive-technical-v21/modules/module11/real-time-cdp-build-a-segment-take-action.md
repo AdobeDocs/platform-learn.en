@@ -35,7 +35,7 @@ In this module, you'll configure a streaming segment and activate the segment to
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem11.png)
+![Architecture Overview](assets/images/architecturem11.png)
 
 ## Sandbox to use
 
