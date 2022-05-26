@@ -7,10 +7,9 @@ level: Intermediate
 kt: 10447
 recommendations: noDisplay,noCatalog
 hide: yes
-hidefromtoc: yes
 ---
 
-# Implement the Web SDK with JavaScript {#implement-web-sdk-js}
+# Implement Web SDK with JavaScript {#implement-web-sdk-js}
 
 + [Tutorial Overview](overview.md)
 + [Structuring your data](structuring-your-data.md)
