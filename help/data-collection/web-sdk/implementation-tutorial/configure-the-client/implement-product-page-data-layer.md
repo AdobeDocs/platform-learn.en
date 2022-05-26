@@ -7,6 +7,7 @@ recommendations: noDisplay,noCatalog
 kt: 10447
 hide: yes
 hidefromtoc: yes
+exl-id: a72011a5-ea9c-45df-a0f3-5eb40bc99d3f
 ---
 # Implement a data layer on a product page
 

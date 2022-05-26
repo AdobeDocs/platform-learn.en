@@ -7,6 +7,7 @@ recommendations: noDisplay,noCatalog
 kt: 10447
 hide: yes
 hidefromtoc: yes
+exl-id: 7403059f-b34c-48e0-9efe-b2db7a9afb27
 ---
 # Create an Adobe Experience Platform tag property and install extensions
 

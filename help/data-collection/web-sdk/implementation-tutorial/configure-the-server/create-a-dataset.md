@@ -7,6 +7,7 @@ recommendations: noDisplay,noCatalog
 kt: 10447
 hide: yes
 hidefromtoc: yes
+exl-id: 7705d292-a29c-4977-bcc6-f088a51713ea
 ---
 # Create a dataset
 
@@ -31,4 +32,3 @@ Click [!UICONTROL Finish]. Your dataset has been created and is ready to receive
 As you begin to send data into a dataset, Adobe Experience Platform will validate that the data you're attempting to place into the dataset conforms to the applied schema. If the data does not conform to the schema, the data is rejected and is not placed into the dataset. As a result of this validation step, consumers of the dataset (Adobe products, third parties, or your own company) can have some level of certainty regarding the structure and cleanliness of the dataset's data.
 
 For more information about creating datasets, see [Datasets UI guide](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html).
-

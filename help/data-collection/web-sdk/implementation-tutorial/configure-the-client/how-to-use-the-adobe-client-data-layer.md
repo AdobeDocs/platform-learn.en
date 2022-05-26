@@ -7,6 +7,7 @@ recommendations: noDisplay,noCatalog
 kt: 10447
 hide: yes
 hidefromtoc: yes
+exl-id: 33a5db8c-e49b-4073-b4d7-4abe19537fcb
 ---
 # How to use the Adobe Client Data Layer
 
@@ -155,4 +156,3 @@ window.adobeDataLayer.push({
 Notice in this example that `siteKnowledge` is wrapped inside `eventInfo`. The `eventInfo` key receives special treatment by the data layer. It tells the data layer that this data _should_ be included with the event that gets sent to listeners, but it _should not_ be retained inside the data layer. After listeners (like Adobe Experience Platform Tags) are notified of the event, this data is essentially forgotten. The `siteKnowledge` key will never show up inside the data layer's computed state.
 
 Each time you call `push`, the Adobe Client Data Layer notifies any listeners. Later, we'll learn how to listen to these notifications from Adobe Experience Platform Tags and trigger rules accordingly.
-
