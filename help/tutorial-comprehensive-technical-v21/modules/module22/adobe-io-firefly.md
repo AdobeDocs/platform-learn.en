@@ -37,7 +37,7 @@ You'll then use code developed for the purpose of this tutorial to demonstrate a
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem22.png)
+![Architecture Overview](../../assets/images/architecturem22.png)
 
 ## Sandbox to use
 

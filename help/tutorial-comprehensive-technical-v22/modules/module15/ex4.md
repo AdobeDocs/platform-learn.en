@@ -73,7 +73,7 @@ After a couple of seconds, you'll see something like this:
 
 ## 15.4.3 Create your Adobe Experience Platform Sink Connector using Postman
 
-You can now interact with Kafka Connect using Postman. To do so, download [this Postman Collection](assets/postman/postman_kafka.zip) and uncompress it to your local computer on the desktop. You'll then have a file that is called `Kafka_AEP.postman_collection.json`.
+You can now interact with Kafka Connect using Postman. To do so, download [this Postman Collection](../../assets/postman/postman_kafka.zip) and uncompress it to your local computer on the desktop. You'll then have a file that is called `Kafka_AEP.postman_collection.json`.
 
 ![Kafka](./images/kc11a.png)
 

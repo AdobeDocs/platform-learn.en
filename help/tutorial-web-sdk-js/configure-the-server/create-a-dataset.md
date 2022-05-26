@@ -14,17 +14,17 @@ In addition to describing the data you'll be sending into Adobe Experience Platf
 
 To create a dataset, navigate to the [!UICONTROL Datasets] view inside Adobe Experience Platform.
 
-![Datasets view](../assets/datasets-view.png)
+![Datasets view](../../../assets/implementation-strategy/datasets-view.png)
 
 Click [!UICONTROL Create dataset] in the top-right corner.
 
 During the dataset creation process, select [!UICONTROL Create dataset from schema] and select [the schema you previously created](create-a-schema.md).
 
-![Schema selection](../assets/schema-selection.png)
+![Schema selection](../../../assets/implementation-strategy/schema-selection.png)
 
 Click [!UICONTROL Next] and provide a name and a description.
 
-![Dataset name and description](../assets/dataset-name-description.png)
+![Dataset name and description](../../../assets/implementation-strategy/dataset-name-description.png)
 
 Click [!UICONTROL Finish]. Your dataset has been created and is ready to receive data.
 

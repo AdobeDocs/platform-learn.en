@@ -25,7 +25,7 @@ If you haven't already, [create a property within Tags](https://experienceleague
 
 Install the Adobe Client Data Layer extension by navigating to the extension catalog, finding the extension, and clicking the respective [!UICONTROL Install] button. You should see a configuration screen.
 
-![Adobe Client Data Layer extension installation](../assets/acdl-extension-installation.png)
+![Adobe Client Data Layer extension installation](../../../assets/implementation-strategy/acdl-extension-installation.png)
 
 For this tutorial, there's no need to change the default values. Click [!UICONTROL Save].
 
@@ -33,13 +33,13 @@ For this tutorial, there's no need to change the default values. Click [!UICONTR
 
 Next, install the Adobe Experience Platform Web SDK extension by finding the extension in the extension catalog and clicking the respective [!UICONTROL Install] button. You should see a configuration screen.
 
-![Adobe Experience Platform Web SDK extension installation](../assets/web-sdk-extension-installation.png)
+![Adobe Experience Platform Web SDK extension installation](../../../assets/implementation-strategy/web-sdk-extension-installation.png)
 
 In [Create a datastream](../configure-the-server/create-a-datastream.md), you created a datastream that Adobe Experience Platform Edge Network references to determine where to send your inbound data. When making requests from Adobe Experience Platform Web SDK to Edge Network, you must indicate which datastream Edge Network should reference.
 
 To do so, find the [!UICONTROL Datastream] field and select the datastream you previously created. You're presented with the same datastream environments you saw in [Create a datastream](../configure-the-server/create-a-datastream.md).
 
-![Datastream selection](../assets/web-sdk-datastream-selection.png)
+![Datastream selection](../../../assets/implementation-strategy/web-sdk-datastream-selection.png)
 
 As discussed in [Create a datastream](../configure-the-server/create-a-dataset.md), these dataset environments have a relationship to Tags environments. Assume for a moment that you complete installation of the Adobe Experience Platform Web SDK extension, create a tag library that includes the extension, then publish the library to a Tags development environment. When the tag library is loaded onto your web page and the Adobe Experience Platform Web SDK extension makes a request to Edge Network, the extension includes the [!UICONTROL Development Environment] datastream environment ID. Edge Network, in turn, uses that ID to read the configuration of the [!UICONTROL Development Environment] datastream environment and forward data to the appropriate Adobe products.
 

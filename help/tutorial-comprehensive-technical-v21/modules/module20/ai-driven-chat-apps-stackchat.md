@@ -54,7 +54,7 @@ Customers have high expectations when it comes to brand interactions. They want 
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem20.png)
+![Architecture Overview](../../assets/images/architecturem20.png)
 
 ## Sandbox to use
 

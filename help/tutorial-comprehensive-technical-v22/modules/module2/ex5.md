@@ -28,7 +28,7 @@ To copy blobs or files to your Adobe Experience Platform Data Landing Zone you'l
 
 ![dlz-install-az-copy.png](./images/dlz1.png)
 
-- Download the sample data file [global-context-websiteinteractions.csv](assets/csv/data-ingestion/global-context-websiteinteractions.csv), which contains sample website interactions and save it into the folder in which you unzipped **azcopy**.
+- Download the sample data file [global-context-websiteinteractions.csv](../../assets/csv/data-ingestion/global-context-websiteinteractions.csv), which contains sample website interactions and save it into the folder in which you unzipped **azcopy**.
 
 ![dlz-install-az-copy.png](./images/dlz2.png)
 

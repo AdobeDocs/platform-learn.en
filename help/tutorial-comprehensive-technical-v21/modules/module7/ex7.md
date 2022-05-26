@@ -50,7 +50,7 @@ limit 10;
 
 Open Postman on your computer. As part of Module 3, you created a Postman environment and imported a Postman collection. Follow the instructions in [Exercise 3.3.3](./../module3/ex3.md) in case you haven't done that yet. 
 
-As part of the Postman collection you imported, you'll see a folder **3. Query Service**. If you don't see this folder, please redownload the [Postman collection](assets/postman/postman_module3.zip) and reimport that collection in Postman as instructed in [Exercise 3.3.3](./../module3/ex3.md).
+As part of the Postman collection you imported, you'll see a folder **3. Query Service**. If you don't see this folder, please redownload the [Postman collection](../../assets/postman/postman_module3.zip) and reimport that collection in Postman as instructed in [Exercise 3.3.3](./../module3/ex3.md).
 
 ![QS](./images/pm3.png)
 

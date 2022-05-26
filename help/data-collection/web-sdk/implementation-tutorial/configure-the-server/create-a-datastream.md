@@ -16,11 +16,11 @@ To configure which Adobe products Edge Network shuttles data to and from, you mu
 
 To create a datastream, first navigate to the [!UICONTROL Datastreams] view within [!UICONTROL Data Collection]. Click [!UICONTROL Create Datastream] in the top-right corner. Provide a name for the datastream.
 
-![Datastream name and description](../assets/datastream-name-description.png)
+![Datastream name and description](../../../assets/implementation-strategy/datastream-name-description.png)
 
 The next screen allows you to configure which Adobe products should receive the data you send from your website. For the purposes of this tutorial, enable only Adobe Experience Platform, select the dataset you previously created (which will be in the default [!UICONTROL Prod] sandbox), and click [!UICONTROL Save].
 
-![Datastream product configuration](../assets/datastream-product-configuration.png)
+![Datastream product configuration](../../../assets/implementation-strategy/datastream-product-configuration.png)
 
 Your datastream has been created.
 
@@ -30,7 +30,7 @@ Companies typically have a promotion path for any website updates. Someone at th
 
 After you clicked [!UICONTROL Save], you should have noticed that three datastream environments were automatically created for you: [!UICONTROL Development Environment], [!UICONTROL Staging Environment], and [!UICONTROL Production Environment].
 
-![Datastream environments](../assets/datastream-environments.png)
+![Datastream environments](../../../assets/implementation-strategy/datastream-environments.png)
 
 If you click on each datastream environment, you'll notice they have all been given the same configuration you provided. These environments can be individually customized, however.
 

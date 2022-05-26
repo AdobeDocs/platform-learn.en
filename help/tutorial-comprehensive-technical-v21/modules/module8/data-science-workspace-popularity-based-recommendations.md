@@ -34,7 +34,7 @@ In this module, you'll learn how to create a simple Machine Learning model that 
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem8.png)
+![Architecture Overview](../../assets/images/architecturem8.png)
 
 ## Sandbox to use
 

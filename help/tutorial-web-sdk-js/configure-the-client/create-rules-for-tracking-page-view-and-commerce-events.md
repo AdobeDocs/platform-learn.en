@@ -20,7 +20,7 @@ Click the [!UICONTROL Add] button under [!UICONTROL Events]. You show now be on 
 
 Because you only want this rule to be triggered when the `pageViewed` event is pushed to the data layer, select [!UICONTROL Specific Event] under [!UICONTROL Listen to] and type _pageViewed_ into the [!UICONTROL Event / Key to register for] text field.
 
-![Page viewed event](../assets/page-viewed-event.png)
+![Page viewed event](../../../assets/implementation-strategy/page-viewed-event.png)
 
 Click [!UICONTROL Keep Changes].
 
@@ -32,7 +32,7 @@ On the right side of the screen, find the [!UICONTROL Type] field and select `we
 
 For the [!UICONTROL XDM data] field, enter `%event.fullState%`. This indicates that the computed state (also known as full state) of the data layer, which is captured at the time the rule was triggered, should be sent as part of the experience event.
 
-![Page viewed action](../assets/page-viewed-action.png)
+![Page viewed action](../../../assets/implementation-strategy/page-viewed-action.png)
 
 If the data you pushed into the data layer from your website did not conform to your XDM schema, or if you only want to send a portion of the data layer's computed state, use the [!UICONTROL XDM Object] data element type (provided by the Adobe Experience Platform Web SDK extension) to build an appropriate object that matches your schema.
 
@@ -42,7 +42,7 @@ Click the [!UICONTROL Keep Changes] button.
 
 Your rule should now be complete.
 
-![Page viewed rule](../assets/page-viewed-rule.png)
+![Page viewed rule](../../../assets/implementation-strategy/page-viewed-rule.png)
 
 Save the rule by clicking [!UICONTROL Save].
 
