@@ -31,7 +31,7 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem23.png)
+![Architecture Overview](../../assets/images/architecturem23.png)
 
 ## Sandbox to use
 

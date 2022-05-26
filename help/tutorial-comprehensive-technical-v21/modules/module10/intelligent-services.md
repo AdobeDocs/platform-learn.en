@@ -32,7 +32,7 @@ In this module, you'll learn how to setup, configure and use Adobe Experience Pl
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem10.png)
+![Architecture Overview](../../assets/images/architecturem10.png)
 
 ## Sandbox to use
 

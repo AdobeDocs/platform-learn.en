@@ -20,27 +20,27 @@ Let's walk through creating a schema for a typical e-commerce website.
 
 First, navigate to the [!UICONTROL Schemas] view inside Adobe Experience Platform.
 
-![Schemas view](../assets/schemas-view.png)
+![Schemas view](../../../assets/implementation-strategy/schemas-view.png)
 
 Select [!UICONTROL Create schema] in the top-right corner. A menu is displayed. Select [!UICONTROL XDM ExperienceEvent].
 
 At this point, a dialog should be displayed asking you which field groups you would like to add to your schema. The first field group that you should select is the field group named [!UICONTROL AEP Web SDK ExperienceEvent]. This field group adds a set of fields that accommodates data automatically collected by Adobe Experience Platform Web SDK.
 
-![AEP Web SDK mixin](../assets/aep-web-sdk-mixin.png)
+![AEP Web SDK mixin](../../../assets/implementation-strategy/aep-web-sdk-mixin.png)
 
 Because the website for this tutorial is an e-commerce website, you should also select the [!UICONTROL Commerce Details] field group. This group allows you to send typical commerce data like which products are being viewed, added to the cart, and purchased.
 
-![Commerce details mixin](../assets/commerce-details-mixin.png)
+![Commerce details mixin](../../../assets/implementation-strategy/commerce-details-mixin.png)
 
 Click the [!UICONTROL Add field groups] button at the top-right of the dialog. At this point, you should see the structure of your schema.
 
-![Schema with mixins](../assets/schema-with-mixins.png)
+![Schema with mixins](../../../assets/implementation-strategy/schema-with-mixins.png)
 
 The field groups that you added are listed on the left. Selecting a field group highlights the fields on the right that were provided by that field group. Take a moment to explore the available fields.
 
 Finally, select [!UICONTROL Untitled schema] toward the left of the screen, provide a name and description on the right of the screen, and click [!UICONTROL Save].
 
-![Schema with name and description](../assets/schema-name-description.png)
+![Schema with name and description](../../../assets/implementation-strategy/schema-name-description.png)
 
 Your schema has been created. Next, let's learn how to create a dataset to hold your data.
 

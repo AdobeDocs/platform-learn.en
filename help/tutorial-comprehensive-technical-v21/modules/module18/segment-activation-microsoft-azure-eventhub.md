@@ -41,7 +41,7 @@ Microsoft Azure Event Hubs is a fully managed, real-time data ingestion service 
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem18.png)
+![Architecture Overview](../../assets/images/architecturem18.png)
 
 ## Sandbox to use
 

@@ -41,7 +41,7 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem16.png)
+![Architecture Overview](../../assets/images/architecturem16.png)
 
 ## Sandbox to use
 

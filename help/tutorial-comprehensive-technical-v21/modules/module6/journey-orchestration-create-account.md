@@ -31,7 +31,7 @@ In this module, we will take you through the steps to use Adobe Journey Optimize
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem6.png)
+![Architecture Overview](../../assets/images/architecturem6.png)
 
 ## Sandbox to use
 

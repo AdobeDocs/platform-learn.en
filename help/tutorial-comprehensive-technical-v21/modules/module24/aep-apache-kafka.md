@@ -30,7 +30,7 @@ In this module, you'll learn how to setup your own Apache Kafka cluster, define 
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem24.png)
+![Architecture Overview](../../assets/images/architecturem24.png)
 
 ## Sandbox to use
 

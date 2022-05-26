@@ -127,7 +127,7 @@ Finally, the Informatica Cloud Secure Agent screen will be shown. Wait a couple 
 
 ![ETL](./images/w8.png)
 
-Next, you need to copy a specific file, **winutils.exe** to a specific folder on your Windows machine. First, copy the file [winutils.exe](assets/windows/winutils.exe.zip) to the desktop of your Windows machine and uncompress it.
+Next, you need to copy a specific file, **winutils.exe** to a specific folder on your Windows machine. First, copy the file [winutils.exe](../../assets/windows/winutils.exe.zip) to the desktop of your Windows machine and uncompress it.
 
 ![ETL](./images/winutils0.png)
 

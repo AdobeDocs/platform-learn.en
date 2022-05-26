@@ -16,7 +16,7 @@ Open up your product page in your browser. You can do this by clicking _File_ th
 
 After the page loads, you should see something like this:
 
-![Webpage](assets/webpage.png)
+![Webpage](../../assets/implementation-strategy/webpage.png)
 
 It's not pretty, but it will do the job.
 
@@ -33,11 +33,11 @@ At this point, you should see four requests:
 
 Feel free to inspect the payloads of each request. For the first `interact` request, you should be able to see the payload being sent with an `eventType` of `web.webpagedetails.pageViews`.
 
-![Page view request inspection](assets/webpage-page-viewed-inspection.png)
+![Page view request inspection](../../assets/implementation-strategy/webpage-page-viewed-inspection.png)
 
 For the second `interact` request, you should be able to see the payload being sent with an `eventType` of `commerce.productViews`.
 
-![Product view request inspection](assets/webpage-product-view-inspection.png)
+![Product view request inspection](../../assets/implementation-strategy/webpage-product-view-inspection.png)
 
 Feel free to poke around the rest of the data being sent, including the product information.
 
@@ -63,7 +63,7 @@ Select the dataset you previously created.
 
 You may need to wait a few minutes, but soon you should see indications of data being processed and inserted into your dataset. You should also see whether processing succeeded or failed. If it failed, you'll be able to see why it failed. Failures typically occur because the data you are sending does not match the schema and you'll need to adjust your data or schema accordingly.
 
-![Dataset ingestion](assets/dataset-ingestion.png)
+![Dataset ingestion](../../assets/implementation-strategy/dataset-ingestion.png)
 
 ## Use the Adobe Experience Platform Debugger extension
 

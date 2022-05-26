@@ -67,7 +67,7 @@ You'll then see this. Click **Import HTML**.
 
 ![Journey Optimizer](./images/23.1-73.png)
 
-In the pop-up screen, you'll need to drag and drop the HTML file of the email. You can find the HTML template [here](assets/html/module23-newsletter.html.zip). Download the zip-file with the HTML template to your local machine and unzip in onto your desktop.
+In the pop-up screen, you'll need to drag and drop the HTML file of the email. You can find the HTML template [here](../../assets/html/module23-newsletter.html.zip). Download the zip-file with the HTML template to your local machine and unzip in onto your desktop.
 
 ![Journey Optimizer](./images/html1.png)
 

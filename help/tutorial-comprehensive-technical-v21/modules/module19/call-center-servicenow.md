@@ -36,7 +36,7 @@ Please watch this video to understand the value, customer journey and configurat
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem19.png)
+![Architecture Overview](../../assets/images/architecturem19.png)
 
 ## Sandbox to use
 

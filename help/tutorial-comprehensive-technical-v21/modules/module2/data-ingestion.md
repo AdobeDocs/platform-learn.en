@@ -37,7 +37,7 @@ In this module, the goal is to learn all about data ingestion. You'll learn abou
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem2.png)
+![Architecture Overview](../../assets/images/architecturem2.png)
 
 ## Sandbox to use
 

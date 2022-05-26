@@ -39,7 +39,7 @@ Please watch this video to understand the value and customer journey:
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](assets/images/architecturem14.png)
+![Architecture Overview](../../assets/images/architecturem14.png)
 
 ## Sandbox to use
 
