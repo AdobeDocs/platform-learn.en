@@ -20,7 +20,7 @@ Select [!UICONTROL Add Library].
 
 You should see the library creation view.
 
-![tag library creation](../../../assets/implementation-strategy/tags-library-creation.png)
+![tag library creation](../assets/tags-library-creation.png)
 
 Give the library a name, like _Demo_. Select [!UICONTROL Development] in the [!UICONTROL Environment] dropdown. Then click [!UICONTROL Add All Changed Resources].
 
@@ -32,11 +32,11 @@ Now you must add a script tag to your product page HTML that loads the newly bui
 
 Start by clicking [!UICONTROL Environments] in the left-hand menu. You should see three different environments listed. 
 
-![Tags environments](../../../assets/implementation-strategy/tags-environments.png)
+![Tags environments](../assets/tags-environments.png)
 
 Click the package icon on the [!UICONTROL Development] environment row. You should see instructions for installing the Launch library script onto your page.
 
-![Tags installation instructions](../../../assets/implementation-strategy/tags-installation-instructions.png)
+![Tags installation instructions](../assets/tags-installation-instructions.png)
 
 Copy the script tag (there's a copy-to-clipboard button for convenience). Open your product page HTML and insert the script tag before the `</head>` tag. Your final HTML should look as follows:
 
