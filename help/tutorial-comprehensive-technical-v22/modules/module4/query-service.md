@@ -43,7 +43,7 @@ We will use data that has been injected into platform using either Web Interacti
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem7.png)
+![Architecture Overview](assets/images/architecturem7.png)
 
 ## Sandbox to use
 

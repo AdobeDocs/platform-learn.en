@@ -35,7 +35,7 @@ In this module, we'll do a deep dive into the Real-time Customer Profile and Ide
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem3.png)
+![Architecture Overview](assets/images/architecturem3.png)
 
 ## Sandbox to use
 

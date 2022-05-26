@@ -17,7 +17,7 @@ Recent browser changes restrict the duration of these types of cookies. First-pa
 
 Here is a quick example of how the functionality works:
 
-![First-party device IDs (FPIDs) and Experience Cloud IDs (ECIDs)](../assets/kt-9728.png)
+![First-party device IDs (FPIDs) and Experience Cloud IDs (ECIDs)](assets/kt-9728.png)
 
 1. An end-user's browser requests a web page from a customer's web server or CDN.
 1. Customer generates a device id (FPID) on their web server or CDN (the web server should be tied to the domain name's DNS A/AAAA-record).

@@ -12,7 +12,7 @@ exl-id: c7f927d1-87fc-4bf3-83c3-6efb97f88c9e
 
 Learn how to create the Data Science Workspace course dataset and schema that are used in the remainder of the course.
 
-* [Download sample data (25 MB zip)](../assets/DSW-course-sample-assets.zip)
+* [Download sample data (25 MB zip)](assets/DSW-course-sample-assets.zip)
 
 >[!VIDEO](https://video.tv.adobe.com/v/333312?quality=12&learn=on)
 

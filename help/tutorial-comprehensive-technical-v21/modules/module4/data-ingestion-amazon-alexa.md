@@ -45,7 +45,7 @@ In this module, we will take you through the steps to demonstrate how an Interne
 
 Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
 
-![Architecture Overview](../../assets/images/architecturem4.png)
+![Architecture Overview](assets/images/architecturem4.png)
 
 ## Sandbox to use
 
