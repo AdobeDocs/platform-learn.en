@@ -1,12 +1,6 @@
 ---
 title: How to use the Adobe Client Data Layer
 description: How to use the Adobe Client Data Layer
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # How to use the Adobe Client Data Layer
 

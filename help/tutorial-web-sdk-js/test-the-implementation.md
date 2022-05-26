@@ -1,12 +1,6 @@
 ---
 title: Test the implementation
 description: Test the implementation
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Test the implementation
 

@@ -1,10 +1,6 @@
 ---
 title: Overview
 description: Overview
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
 ---
 # Overview
 

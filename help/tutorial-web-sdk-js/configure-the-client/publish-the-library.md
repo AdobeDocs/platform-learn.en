@@ -1,12 +1,6 @@
 ---
 title: Publish the library
 description: Publish the library
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Publish the library
 

@@ -2,12 +2,6 @@
 title: Create a data element and rule for tracking app downloads
 description: Create a data element and rule for tracking app downloads
 feature: Web SDK
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Create a data element and rule for tracking app downloads
 

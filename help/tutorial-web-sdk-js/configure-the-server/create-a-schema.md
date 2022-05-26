@@ -1,12 +1,6 @@
 ---
 title: Create a schema
 description: Create a schema
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Create a schema
 

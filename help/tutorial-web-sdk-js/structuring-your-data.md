@@ -1,12 +1,6 @@
 ---
 title: Structuring your data
 description: Structuring your data
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Structuring your data
 

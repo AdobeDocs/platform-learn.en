@@ -1,12 +1,6 @@
 ---
 title: Create a datastream
 description: Create a datastream
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Create a datastream
 

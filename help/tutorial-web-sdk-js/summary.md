@@ -1,12 +1,6 @@
 ---
 title: Summary
 description: Summary
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Summary
 

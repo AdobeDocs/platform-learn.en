@@ -1,12 +1,6 @@
 ---
 title: Implement a data layer on a product page
 description: Implement a data layer on a product page
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Implement a data layer on a product page
 

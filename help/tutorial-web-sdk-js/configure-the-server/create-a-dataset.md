@@ -1,12 +1,6 @@
 ---
 title: Create a dataset
 description: Create a dataset
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # Create a dataset
 

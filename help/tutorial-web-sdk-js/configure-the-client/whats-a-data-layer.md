@@ -1,12 +1,6 @@
 ---
 title: What's a data layer?
 description: What's a data layer?
-role: Developer
-level: Intermediate
-recommendations: noDisplay,noCatalog
-kt: 10447
-hide: yes
-hidefromtoc: yes
 ---
 # What's a data layer?
 
