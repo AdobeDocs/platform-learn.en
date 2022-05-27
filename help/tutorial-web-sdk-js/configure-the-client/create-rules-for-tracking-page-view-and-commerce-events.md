@@ -63,3 +63,9 @@ Product added to cart rule:
 * **Type** within [!UICONTROL Send event] action: `commerce.productListAdds` 
 
 Next, we'll handle tracking clicks on the [!UICONTROL Download the app] link.
+
+[Next: **Create a data element and rule for tracking app downloads**](create-a-data-element-and-rule-for-tracking-app-downloads.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

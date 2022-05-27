@@ -23,3 +23,9 @@ When using a data layer, you can change the content at any time. That's a nice f
 An event-driven data layer is able to communicate that its content has changed so that marketing technologies can react to the change. Used properly, this can help avoid timing issues that often arise with data layers that have no means to communicate when changes occur.
 
 The Adobe Client Data Layer is an event-driven data layer.
+
+[Next: **How to use the Adobe Client Data Layer**](how-to-use-the-adobe-client-data-layer.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

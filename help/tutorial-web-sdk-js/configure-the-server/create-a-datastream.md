@@ -4,7 +4,7 @@ description: Create a datastream
 ---
 # Create a datastream
 
-The data you send from your website reaches a set of Adobe servers called [Adobe Experience Platform Edge](https://business.adobe.com/products/experience-platform/experience-platform-edge-network.html). This network is capable of sending your data to the [Adobe Experience Platform dataset you previously created](create-a-schema.md) and other products within Adobe Experience Cloud. These Adobe products may also respond with data to your web page. For example, Edge Network may return personalization content from Adobe Target.
+The data you send from your website reaches a set of Adobe servers called [Adobe Experience Platform Edge Network](https://business.adobe.com/products/experience-platform/experience-platform-edge-network.html). This network is capable of sending your data to the [Adobe Experience Platform dataset you previously created](create-a-schema.md) and other products within Adobe Experience Cloud. These Adobe products may also respond with data to your web page. For example, Edge Network may return personalization content from Adobe Target.
 
 To configure which Adobe products Edge Network shuttles data to and from, you must create a datastream. When Edge Network receives data from your web page, it consults the datastream you have created, read its configuration, then forward data to the appropriate Adobe products.
 
@@ -31,3 +31,9 @@ If you click on each datastream environment, you'll notice they have all been gi
 If you're familiar with Adobe Experience Platform Tags, you may already be comfortable with the concept of a development, staging, and production environment. Environments within Tags are related to environments within a datastream. As you move a tag library through the Tags publishing workflow from development, to staging, to production, the datastream environment that is used will likewise automatically switch from [!UICONTROL Development Environment], to [!UICONTROL Staging Environment], to [!UICONTROL Production Environment]. This allows you to, for example, send data into one dataset while your changes are in development and send data to a different dataset once your changes are in production. This can keep your production data free of any garbage data you may generate during the development process. We'll discuss datastream environments later when configuring extensions in your tag property. 
 
 The server is now fully configured to receive data from your web page.
+
+[Next: **What's a data layer?**](../configure-the-client/whats-a-data-layer.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

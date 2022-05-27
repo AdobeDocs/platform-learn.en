@@ -150,3 +150,8 @@ Notice in this example that `siteKnowledge` is wrapped inside `eventInfo`. The `
 
 Each time you call `push`, the Adobe Client Data Layer notifies any listeners. Later, we'll learn how to listen to these notifications from Adobe Experience Platform Tags and trigger rules accordingly.
 
+[Next: **Implement a data layer on a product page**](implement-product-page-data-layer.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
