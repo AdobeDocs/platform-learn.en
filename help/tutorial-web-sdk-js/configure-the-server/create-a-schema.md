@@ -12,11 +12,13 @@ We recommend you use the built-in field groups where possible when creating your
 
 Let's walk through creating a schema for a typical e-commerce website. 
 
-First, navigate to the [!UICONTROL Schemas] page inside either the Adobe Experience Platform, Data Collection, or Journey Optimizer interface.
+First, navigate to the **[!UICONTROL Schemas]** view inside either the Adobe Experience Platform or Data Collection interface.
 
 ![Schemas view](../assets/schemas-view.png)
 
 Select **[!UICONTROL Create schema]** in the top-right corner. A menu is displayed. Select **[!UICONTROL XDM ExperienceEvent]**.
+
+You are now on the schema builder canvas. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL Add]**.
 
 At this point, a dialog should be displayed asking you which field groups you would like to add to your schema. The first field group that you should select is the field group named **[!UICONTROL AEP Web SDK ExperienceEvent]**. This field group adds a set of fields that accommodates data automatically collected by Adobe Experience Platform Web SDK.
 
@@ -26,7 +28,7 @@ Because the website for this tutorial is an e-commerce website, you should also 
 
 ![Commerce details mixin](../assets/commerce-details-mixin.png)
 
-Select the **[!UICONTROL Add field groups]** button at the top-right of the dialog. At this point, you should see the structure of your schema.
+Select the **[!UICONTROL Add field groups]** button at the top right of the dialog. At this point, you should see the structure of your schema.
 
 ![Schema with mixins](../assets/schema-with-mixins.png)
 
@@ -38,7 +40,7 @@ Finally, select **[!UICONTROL Untitled schema]** toward the left of the screen, 
 
 Your schema has been created. Next, let's learn how to create a dataset to hold your data.
 
-For more information about creating schemas, see [Create a schema (UI)](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html).
+For more information about creating schemas, see [Create schemas](/help/platform/schemas/create-schemas.md).
 
 [Next: **Create a dataset**](create-a-dataset.md)
 
