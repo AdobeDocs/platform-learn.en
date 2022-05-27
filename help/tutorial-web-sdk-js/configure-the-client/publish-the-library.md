@@ -104,3 +104,9 @@ Copy the script tag (there's a copy-to-clipboard button for convenience). Open y
 Check out the [publishing documentation for Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/publish/overview.html) if you'd like to learn more about the publishing process.
 
 Next, you'll test your new implementation!
+
+[Next: **Test the implementation**](../test-the-implementation.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

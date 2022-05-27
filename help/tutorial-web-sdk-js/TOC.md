@@ -18,7 +18,7 @@ hide: yes
   + [Create a dataset](configure-the-server/create-a-dataset.md)
   + [Create a datastream](configure-the-server/create-a-datastream.md)
 + Configuring the client{#client}
-  + [What's a data layer](configure-the-client/whats-a-data-layer.md)
+  + [What's a data layer?](configure-the-client/whats-a-data-layer.md)
   + [How to use the Adobe Client Data Layer](configure-the-client/how-to-use-the-adobe-client-data-layer.md)
   + [Implement a data layer on a product page](configure-the-client/implement-product-page-data-layer.md)
   + [Create a tag property and install extensions](configure-the-client/create-a-tags-property-and-install-extensions.md)

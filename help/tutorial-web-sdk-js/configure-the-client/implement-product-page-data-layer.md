@@ -234,3 +234,9 @@ The result of your HTML page should look as follows:
   </body>
 </html>
 ```
+
+[Next: **Create a tag property and install extensions**](create-a-tags-property-and-install-extensions.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

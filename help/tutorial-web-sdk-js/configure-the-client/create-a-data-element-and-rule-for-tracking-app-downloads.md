@@ -87,3 +87,9 @@ Your rule should now be complete.
 ![Download app link clicked rule](../assets/download-app-link-clicked-rule.png)
 
 Save the rule by clicking [!UICONTROL Save].
+
+[Next: **Publish the library**](publish-the-library.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
