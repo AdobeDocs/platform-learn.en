@@ -32,7 +32,7 @@ If you're familiar with Adobe Experience Platform Tags, you may already be comfo
 
 The server is now fully configured to receive data from your web page.
 
-[Next: **What's a data layer?**](configure-the-client/whats-a-data-layer.md)
+[Next: **What's a data layer?**](../configure-the-client/whats-a-data-layer.md)
 
 >[!NOTE]
 >

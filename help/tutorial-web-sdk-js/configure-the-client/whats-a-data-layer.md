@@ -24,7 +24,7 @@ An event-driven data layer is able to communicate that its content has changed s
 
 The Adobe Client Data Layer is an event-driven data layer.
 
-[Next: **How to use the Adobe Client Data Layer**](configure-the-client/how-to-use-the-adobe-client-data-layer.md)
+[Next: **How to use the Adobe Client Data Layer**](how-to-use-the-adobe-client-data-layer.md)
 
 >[!NOTE]
 >
