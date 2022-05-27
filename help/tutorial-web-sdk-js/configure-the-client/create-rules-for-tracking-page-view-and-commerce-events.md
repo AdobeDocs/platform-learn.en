@@ -1,6 +1,7 @@
 ---
 title: Create rules for tracking page view and commerce events
 description: Create rules for tracking page view and commerce events
+exl-id: 00bf3374-9319-47ce-a75a-2b94f793c938
 ---
 # Create rules for tracking page view and commerce events
 

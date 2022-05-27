@@ -2,6 +2,7 @@
 title: Create a data element and rule for tracking app downloads
 description: Create a data element and rule for tracking app downloads
 feature: Web SDK
+exl-id: 8012ba48-38ac-4fb5-9876-8f57d1c5da5d
 ---
 # Create a data element and rule for tracking app downloads
 

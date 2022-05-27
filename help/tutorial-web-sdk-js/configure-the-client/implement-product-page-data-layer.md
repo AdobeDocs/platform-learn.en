@@ -1,6 +1,7 @@
 ---
 title: Implement a data layer on a product page
 description: Implement a data layer on a product page
+exl-id: 0debf34a-48d4-4029-b790-7fd78865c334
 ---
 # Implement a data layer on a product page
 

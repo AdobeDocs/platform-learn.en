@@ -1,6 +1,7 @@
 ---
 title: Create a dataset
 description: Create a dataset
+exl-id: 19a60087-2f78-4510-b127-b1007a6b7a56
 ---
 # Create a dataset
 
@@ -31,4 +32,3 @@ For more information about creating datasets, see [Datasets UI guide](https://ex
 >[!NOTE]
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
-
