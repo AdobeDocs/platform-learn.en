@@ -19,7 +19,6 @@ In this lesson, you will:
 * Understand why you must take special considerations for WebViews.
 * Understand the code required to prevent tracking issues.
 
-
 ## Potential tracking issues
 
 If you send data from the native portion of the app and a WebView, each generates their own Experience Cloud Id (ECID). This results in disconnected hits and inflated visit/visitor data.
@@ -48,24 +47,40 @@ The Experience Cloud ID Service JavaScript extension in the WebView extracts the
     ```swift
     // Adobe Experience Platform - Handle Web View
     let url = Bundle.main.url(forResource: "tou", withExtension: "html")
-    AEPIdentity.Identity.appendTo(url: url) {returnedURL, error in
-        let myRequest = URLRequest(url: returnedURL!)
-        self.webView.load(myRequest)
+    if var urlString = url?.absoluteString {
+        // Adobe Experience Platform - Handle Web View
+        AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
+            if let error = error {
+                self.simpleAlert("\(error.localizedDescription)")
+                return;
+            }
+
+            if let urlVariables: String = urlVariables {
+                urlString.append("?" + urlVariables)
+            }
+
+            DispatchQueue.main.async {
+                self.webView.load(URLRequest(url: URL(string: urlString)!))
+            }
+            print("Successfully retrieved urlVariables for WebView, final URL: \(urlString)")
+        }
+    } else {
+        self.simpleAlert("Failed to create URL for webView")
     }
     ```
 
-You can learn more about `Identity.appendTo` in the [documentation](https://aep-sdks.gitbook.io/docs/foundation-extensions/mobile-core/identity#implementing-visitor-tracking-between-an-app-and-the-mobile-web).
+You can learn more about the `Identity.getUrlVariables` API in the [AEPEdgeIdentity API guide](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network/api-reference#geturlvariables).
 
 ## Validation
 
 1. Review the [setup instructions](assurance.md) section and connect your simulator or device to Assurance.
 
-1. Load the WebView and look for the `IDENTITY_APPENDED_URL` event from the `com.adobe.griffon.mobile` vendor. To load the WebView:
+1. Load the WebView and look for the `Edge Identity Response URL Variables` event from the `com.adobe.griffon.mobile` vendor. To load the WebView:
     1. Go to the home screen of the Luma app.
     1. Select the "account" icon.
     1. Select "Terms of Use" in the footer.
 
-1. Select the event and review the `updatedurl` field in the `ACPExtensionEventData` object.
+1. Select the event and review the `urlvariables` field in the `ACPExtensionEventData` object.
 ![webview validation](assets/mobile-webview-validation.png)
 
 1. Confirm that the following parameters are present in the URL.
@@ -75,17 +90,17 @@ You can learn more about `Identity.appendTo` in the [documentation](https://aep-
 
 For example:
 
-```
-//Original (with escaped characters)
-http://www.webview.com?adobe_mc=TS%3D1636526122%7CMCMID%3D79076670946787530005526183384271520749%7CMCORGID%3D7ABB3E6A5A7491460A495D61%40AdobeOrg
+```html
+// Original (with escaped characters)
+adobe_mc=TS%3D1636526122%7CMCMID%3D79076670946787530005526183384271520749%7CMCORGID%3D7ABB3E6A5A7491460A495D61%40AdobeOrg
 
-//Beautified
-http://www.webview.com?adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
+// Beautified
+adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
 ```
 
 >[!CAUTION]
 >
->Visitor stitching via these URL parameters is currently supported in `VisitorAPI.js` but [not yet available in Platform Web SDK](https://github.com/adobe/alloy/issues/565). Check [this issue](https://github.com/adobe/alloy/issues/565) for the latest status.
+>Visitor stitching via these URL parameters is currently supported in `VisitorAPI.js` but [not yet available in Platform Web SDK](https://github.com/adobe/alloy/issues/565). Check [this issue](https://github.com/adobe/alloy/issues/565) for the latest status. (Can this comment be removed?)
 
 
 Next: **[Identity](identity.md)**

@@ -47,7 +47,6 @@ In this lesson, you will:
         pod 'AEPUserProfile', '~> 3'
         pod 'AEPAssurance', '~> 3'
         pod 'AEPServices', '~> 3'
-        pod 'AEPIdentity', '~> 3'
         pod 'AEPEdgeConsent', '~> 1'
         pod 'AEPLifecycle', '~>3'
         pod 'AEPMessaging', '~>1'
@@ -58,8 +57,8 @@ In this lesson, you will:
 
     `AEPMessaging` is only required if you plan to implement push messaging via Adobe Journey Optimizer as described [here](journey-optimizer-push.md).
 
-1. Save the Podfile.
-1. Navigate to the folder with your project run the following command: `pod install` 
+2. Save the Podfile.
+3. Navigate to the folder with your project run the following command: `pod install` 
 
     You should get output that looks something like this:
         ![pod install](assets/mobile-install-podfile-install.png)
@@ -75,7 +74,7 @@ In this lesson, you will:
 
 >[!INFO]
 >
->If you are not able to use CocoaPods in your own apps, you can learn about other [supported implementations](https://github.com/adobe/aepsdk-core-ios#binaries) in the github project.
+>If you are not able to use CocoaPods in your own apps, you can learn about other [supported implementations](https://github.com/adobe/aepsdk-core-ios#binaries) in the GitHub project.
 
 ## Build CocoaPods
 
@@ -95,7 +94,7 @@ In this lesson, you will:
 
 >[!NOTE]
 >
->The Luma project was built with Xcode v12.5 on a M1 chipset and run on the iOS simulator. If you are using a different setup, you might have to change your build settings to reflect your architecture.
+>The Luma project was built with Xcode v12.5 on a M1 chipset and runs on the iOS simulator. If you are using a different setup, you may need to change your build settings to reflect your architecture.
 >
 >If your build was not successful, try reverting the **Build Active Architecture** > **Debug** setting back to **Yes**.
 >
@@ -112,7 +111,6 @@ import AEPEdge
 import AEPCore
 import AEPEdgeIdentity
 import AEPEdgeConsent
-import AEPIdentity
 import AEPLifecycle
 import AEPMessaging //Optional, used for AJO push messaging
 import AEPSignal
@@ -126,7 +124,7 @@ In the `AppDelegate.swift` file, add the following code to `didFinishLaunchingWi
 ```swift
 let currentAppId = "b5cbd1a1220e/bae66382cce8/launch-88492c6dcb6e-development"
 
-let extensions = [Edge.self, Assurance.self, Lifecycle.self, UserProfile.self, Consent.self, AEPEdgeIdentity.Identity.self, AEPIdentity.Identity.self, Messaging.self]
+let extensions = [Edge.self, Assurance.self, Lifecycle.self, UserProfile.self, Consent.self, AEPEdgeIdentity.Identity.self, Messaging.self]
 
 MobileCore.setLogLevel(.trace)
 
@@ -143,11 +141,9 @@ The above code does the following:
 * Configures MobileCore and other extensions to use your tag property configuration.
 * Enables debug logging. More details and options can be found in the [Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/getting-started/enable-debug-logging).
 
-
 >[!IMPORTANT]
 >In a production app, you must switch AppId based on the current environment (dev/stag/prod).
 >
-
 
 Next: **[Set up Assurance](assurance.md)**
 
