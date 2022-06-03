@@ -62,6 +62,10 @@ Several videos have been created that showcase elements of the bootcamp and powe
 
 Go to [Videos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
 
+## YouTube
+
+You can find additional interesting videos [on our YouTube channel](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+
 ## User Flows
 
 [1. Acquisition](./uc/uc1/uc1.md)
