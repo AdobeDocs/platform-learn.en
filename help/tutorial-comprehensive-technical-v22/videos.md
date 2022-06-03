@@ -11,13 +11,9 @@ exl-id: 848c1471-7c67-4881-8442-171bc929a5f2
 
 **Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
 
-## Learning Objectives
+## YouTube
 
-- Learn about the use cases and integrations that are supported by Adobe Experience Platform
-
-## Prerequisites
-
-- No prerequisites
+You can find additional interesting videos [on our YouTube channel](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Friends of Adobe Experience Platform
 
