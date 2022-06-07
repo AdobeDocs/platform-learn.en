@@ -21,7 +21,7 @@ In this lesson, you will:
 
 ## Potential tracking issues
 
-If you send data from the native portion of the app and a WebView, each generates their own Experience Cloud ID (ECID). This results in disconnected hits and inflated visit/visitor data.
+If you send data from the native portion of the app and a WebView, each generates their own Experience Cloud ID (ECID). This results in disconnected hits and inflated visit/visitor data. More information about the ECID can be found in the [ECID overview](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
 To solve for that undesirable situation, it's important to pass the user's ECID from the native portion to the WebView.
 
@@ -90,7 +90,7 @@ adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB
 
 >[!NOTE]
 >
->Visitor stitching via these URL parameters is currently supported in `VisitorAPI.js` and in the Platform Web SDK (versions 2.10.0 or later).
+>Visitor stitching via these URL parameters is currently supported in the Platform Web SDK (versions 2.11.0 or later) and `VisitorAPI.js`.
 
 
 Next: **[Identity](identity.md)**

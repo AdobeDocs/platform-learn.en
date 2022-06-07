@@ -63,7 +63,7 @@ pod 'AEPSignal', '~>3'
 >
 > `AEPMessaging` is only required if you plan to implement push messaging using Adobe Journey Optimizer. Please read the tutorial on [implementing push messaging with Adobe Journey Optimizer](journey-optimizer-push.md) for more information.
 
-After saving the changes to your Podfile, navigate to the folder with your project run the `pod install` command to install your changes.
+After saving the changes to your Podfile, navigate to the folder with your project and run the `pod install` command to install your changes.
 
 ![pod install](assets/mobile-install-podfile-install.png)
         
@@ -83,7 +83,7 @@ To build CocoaPods, open `Luma.xcworkspace`, and select **Product**, followed by
 
 >[!NOTE]
 >
-> You may need to set **Build Active Architecture Only** to no. To do this, select the Pods project from the project navigator, select **Build Settings**, and set the **Build Active Architecture** to **No**.
+> You may need to set **Build Active Architecture Only** to **No**. To do this, select the Pods project from the project navigator, select **Build Settings**, and set the **Build Active Architecture** to **No**.
 
 You can now build and run the project.
 
