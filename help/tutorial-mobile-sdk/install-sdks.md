@@ -24,78 +24,74 @@ In this lesson, you will:
 * Register the extensions.
 
 >[!NOTE]
->In a mobile app implementation, the terms "extensions" and "SDKs" are nearly interchangeable.
 >
+>In a mobile app implementation, the terms "extensions" and "SDKs" are nearly interchangeable.
 
 
 ## Update PodFile
 
-1. If you aren't familiar with CocoaPods, please review the official [getting started guide](https://guides.cocoapods.org/using/getting-started.html).
+>[!NOTE]
+>
+> If you aren't familiar with CocoaPods, please review the official [getting started guide](https://guides.cocoapods.org/using/getting-started.html).
     
-    Install is usually a simple sudo command:
+Install is usually a simple sudo command:
 
-    `$ sudo gem install cocoapods`
+```console
+sudo gem install cocoapods
+```
 
-1. Once you have CocoaPods installed, open the PodFile: 
+Once you have CocoaPods installed, open the Podfile.
+
 ![initial podfile](assets/mobile-install-initial-podfile.png)
-1. Update the file to include the following pods:
 
+Update the file to include the following pods:
 
-    ```swift
-        pod 'AEPCore', '~> 3'
-        pod 'AEPEdge', '~> 1'
-        pod 'AEPUserProfile', '~> 3'
-        pod 'AEPAssurance', '~> 3'
-        pod 'AEPServices', '~> 3'
-        pod 'AEPIdentity', '~> 3'
-        pod 'AEPEdgeConsent', '~> 1'
-        pod 'AEPLifecycle', '~>3'
-        pod 'AEPMessaging', '~>1'
-        pod 'AEPEdgeIdentity', '~>1'
-        pod 'AEPSignal', '~>3'
-    ```
-
-
-    `AEPMessaging` is only required if you plan to implement push messaging via Adobe Journey Optimizer as described [here](journey-optimizer-push.md).
-
-1. Save the Podfile.
-1. Navigate to the folder with your project run the following command: `pod install` 
-
-    You should get output that looks something like this:
-        ![pod install](assets/mobile-install-podfile-install.png)
-        
-    If you are getting an error "No Podfile found in the project directory." then your terminal is in the wrong folder. Navigate to the folder with the Podfile you updated and try again.
+```swift
+pod 'AEPCore', '~> 3'
+pod 'AEPEdge', '~> 1'
+pod 'AEPUserProfile', '~> 3'
+pod 'AEPAssurance', '~> 3'
+pod 'AEPServices', '~> 3'
+pod 'AEPEdgeConsent', '~> 1'
+pod 'AEPLifecycle', '~>3'
+pod 'AEPMessaging', '~>1'
+pod 'AEPEdgeIdentity', '~>1'
+pod 'AEPSignal', '~>3'
+```
 
 >[!NOTE]
 >
->If you want to upgrade to the latest minor versions, use the command:
+> `AEPMessaging` is only required if you plan to implement push messaging using Adobe Journey Optimizer. Please read the tutorial on [implementing push messaging with Adobe Journey Optimizer](journey-optimizer-push.md) for more information.
+
+After saving the changes to your Podfile, navigate to the folder with your project and run the `pod install` command to install your changes.
+
+![pod install](assets/mobile-install-podfile-install.png)
+        
+>[!NOTE]
 >
->`pod update`
->
+> If you get the "No Podfile found in the project directory." error, your terminal is in the wrong folder. Navigate to the folder with the Podfile you updated and try again.
+
+If you want to upgrade to the latest version, run the `pod update` command.
 
 >[!INFO]
 >
->If you are not able to use CocoaPods in your own apps, you can learn about other [supported implementations](https://github.com/adobe/aepsdk-core-ios#binaries) in the github project.
+>If you are not able to use CocoaPods in your own apps, you can learn about other [supported implementations](https://github.com/adobe/aepsdk-core-ios#binaries) in the GitHub project.
 
 ## Build CocoaPods
 
-1. Open `Luma.xcworkspace`.
-
-1. From the Xcode menu, select **Product > Clean Build Folder**.
-
-1. You'll likely need to set Build Active Architecture Only to No.
-    1. Select the Pods project from the project navigator.
-    1. Select **Build Settings**.
-    1. Set **Build Active Architecture** to **No**.
-
-1. Build and run.
-    ![build settings](assets/mobile-install-build-settings.png)
-
-
+To build CocoaPods, open `Luma.xcworkspace`, and select **Product**, followed by **Clean Build Folder**.
 
 >[!NOTE]
 >
->The Luma project was built with Xcode v12.5 on a M1 chipset and run on the iOS simulator. If you are using a different setup, you might have to change your build settings to reflect your architecture.
+> You may need to set **Build Active Architecture Only** to **No**. To do this, select the Pods project from the project navigator, select **Build Settings**, and set the **Build Active Architecture** to **No**.
+
+You can now build and run the project.
+
+![build settings](assets/mobile-install-build-settings.png)
+
+>[!NOTE]
+>
+>The Luma project was built with Xcode v12.5 on an M1 chipset and runs on the iOS simulator. If you are using a different setup, you may need to change your build settings to reflect your architecture.
 >
 >If your build was not successful, try reverting the **Build Active Architecture** > **Debug** setting back to **Yes**.
 >
@@ -112,7 +108,6 @@ import AEPEdge
 import AEPCore
 import AEPEdgeIdentity
 import AEPEdgeConsent
-import AEPIdentity
 import AEPLifecycle
 import AEPMessaging //Optional, used for AJO push messaging
 import AEPSignal
@@ -126,7 +121,7 @@ In the `AppDelegate.swift` file, add the following code to `didFinishLaunchingWi
 ```swift
 let currentAppId = "b5cbd1a1220e/bae66382cce8/launch-88492c6dcb6e-development"
 
-let extensions = [Edge.self, Assurance.self, Lifecycle.self, UserProfile.self, Consent.self, AEPEdgeIdentity.Identity.self, AEPIdentity.Identity.self, Messaging.self]
+let extensions = [Edge.self, Assurance.self, Lifecycle.self, UserProfile.self, Consent.self, AEPEdgeIdentity.Identity.self, Messaging.self]
 
 MobileCore.setLogLevel(.trace)
 
@@ -143,11 +138,9 @@ The above code does the following:
 * Configures MobileCore and other extensions to use your tag property configuration.
 * Enables debug logging. More details and options can be found in the [Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/getting-started/enable-debug-logging).
 
-
 >[!IMPORTANT]
 >In a production app, you must switch AppId based on the current environment (dev/stag/prod).
 >
-
 
 Next: **[Set up Assurance](assurance.md)**
 
