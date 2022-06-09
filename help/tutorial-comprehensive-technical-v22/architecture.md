@@ -18,13 +18,9 @@ exl-id: cdd9ac83-db8e-4278-8853-3f918f24d0b6
 
 You can find additional interesting videos [on our YouTube channel](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
-## Adobe Experience Platform Architecture Overview (English)
+## Adobe Experience Platform Architecture Overview
 
 >[!VIDEO](https://video.tv.adobe.com/v/35266?quality=12&learn=on)
-
-## Adobe Experience Platform Architecture Overview (Spanish)
-
->[!VIDEO](https://video.tv.adobe.com/v/343517?quality=12&learn=on)
 
 ## Architecture Overview
 
