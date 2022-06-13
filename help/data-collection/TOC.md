@@ -55,6 +55,7 @@ doc-type: video
   + [Implement in mobile apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + Server API{#server-api}
   + [Overview](server-api/overview.md)
+  + [Basics of APIs](server-api/introduction.md)
 + Event Forwarding{#event-forwarding}
   + [Overview](event-forwarding/overview.md)
   + [Create a property](event-forwarding/create-a-property.md)
