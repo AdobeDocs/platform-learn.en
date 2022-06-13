@@ -20,7 +20,7 @@ If you think about clicking a link in a web page, the browser uses quite a few A
 
 By the end of this article you should have a clear understanding of these foundational terms, concepts, and steps. API documentation can be extensive, and discussions about using APIs to address specific use cases can get very detailed. Navigating documentation and discussing APIs is easier and more productive with clear fundamentals and shared understanding.
 
-> [!NOTE]
+>[!NOTE]
 >
 > While there are many APIs, the focus here will be on Web and browser APIs: basically, when one software application interacts with another over the internet.
 
