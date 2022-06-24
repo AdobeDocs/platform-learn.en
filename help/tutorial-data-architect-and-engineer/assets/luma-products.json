@@ -1,0 +1,922 @@
+[
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMH09",
+      "productName": "Abominable Hoodie",
+      "productCategory": "men:tops:hoodies_sweatshirts",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 69
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWJ08",
+      "productName": "Adrienne Trek Jacket",
+      "productCategory": "women:tops:jackets",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 57
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMS01",
+      "productName": "Aero Daily Fitness Tee",
+      "productCategory": "men:tops:tees",
+      "productColor": "black",
+      "productSize": "s",
+      "productPrice": 24
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-UG06",
+      "productName": "Affirm Water Bottle",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 7
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-MG04",
+      "productName": "Aim Analog Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 45
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMH12",
+      "productName": "Ajax Full-Zip Sweatshirt",
+      "productCategory": "men:tops:hoodies_sweatshirts",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 69
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWSH10",
+      "productName": "Ana Running Short",
+      "productCategory": "women:bottoms:shorts",
+      "productColor": "black",
+      "productSize": 28,
+      "productPrice": 40
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWT08",
+      "productName": "Antonia Racer Tank",
+      "productCategory": "women:tops:bras_tanks",
+      "productColor": "black",
+      "productSize": "xs",
+      "productPrice": 34
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMT11",
+      "productName": "Atlas Fitness Tank",
+      "productCategory": "men:tops:tanks",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 18
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH03",
+      "productName": "Autumn Pullie",
+      "productCategory": "women:tops",
+      "productColor": "red",
+      "productSize": "xs",
+      "productPrice": 57
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WG01",
+      "productName": "Bolo Sport Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 49
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "Luma-WT09",
+      "productName": "Breathe Easy Tank",
+      "productCategory": "women:tops:bras_tanks",
+      "productColor": "purple",
+      "productSize": "xs",
+      "productPrice": 34
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH08",
+      "productName": "Cassia Funnel Sweatshirt",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "white",
+      "productSize": "xs",
+      "productPrice": 48
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMT12",
+      "productName": "Cassius Sparring Tank",
+      "productCategory": "men:tops:tanks",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 18
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH12",
+      "productName": "Circe Hooded Ice Fleece",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "gray",
+      "productSize": "xs",
+      "productPrice": 68
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WG03",
+      "productName": "Clamber Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 54
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WB02",
+      "productName": "Compete Track Tote",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 32
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMP12",
+      "productName": "Cronus Yoga Pant",
+      "productCategory": "men:bottoms:pants",
+      "productColor": "black",
+      "productSize": 32,
+      "productPrice": 38.4
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-MG05",
+      "productName": "Cruise Dual Analog Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 55
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH06",
+      "productName": "Daphne Full-Zip Hoodie",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "purple",
+      "productSize": "xs",
+      "productPrice": 59
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWP10",
+      "productName": "Daria Bikram Pant",
+      "productCategory": "women:bottoms:pants",
+      "productColor": "gray",
+      "productSize": 28,
+      "productPrice": 40.8
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-MG02",
+      "productName": "Dash Digital Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 92
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMS07",
+      "productName": "Deion Long-Sleeve EverCool� Tee",
+      "productCategory": "men:tops:tees",
+      "productColor": "gray",
+      "productSize": "s",
+      "productPrice": 39
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWP12",
+      "productName": "Deirdre Relaxed-Fit Capri",
+      "productCategory": "women:bottoms:pants",
+      "productColor": "gray",
+      "productSize": 28,
+      "productPrice": 50.4
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWS05",
+      "productName": "Desiree Fitness Tee",
+      "productCategory": "women:tops:tees",
+      "productColor": "yellow",
+      "productSize": "xs",
+      "productPrice": 24
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WG02",
+      "productName": "Didi Sport Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 99
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWS11",
+      "productName": "Diva Gym Tee",
+      "productCategory": "women:tops:tees",
+      "productColor": "yellow",
+      "productSize": "xs",
+      "productPrice": 32
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "Luma-24-WB03",
+      "productName": "Driven Backpack",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 36
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-UG07",
+      "productName": "Dual Handle Cardio Ball",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 12
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WB06",
+      "productName": "Endeavor Daytrip Backpack",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 33
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-MG01",
+      "productName": "Endurance Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 49
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH11",
+      "productName": "Eos V-Neck Hoodie",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "blue",
+      "productSize": "xs",
+      "productPrice": 54
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWSH12",
+      "productName": "Erika Running Short",
+      "productCategory": "women:bottoms:shorts",
+      "productColor": "purple",
+      "productSize": 28,
+      "productPrice": 45
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "Luma-24-MB02",
+      "productName": "Fusion Backpack",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 59
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-UG05",
+      "productName": "Go-Get'r Pushup Grips",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 19
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMH11",
+      "productName": "Grayson Crewneck Sweatshirt",
+      "productCategory": "men:tops:hoodies_sweatshirts",
+      "productColor": "white",
+      "productSize": "s",
+      "productPrice": 64
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWS01",
+      "productName": "Gwyn Endurance Tee",
+      "productCategory": "women:tops:tees",
+      "productColor": "black",
+      "productSize": "xs",
+      "productPrice": 24
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-UG03",
+      "productName": "Harmony Lumaflex� Strength Band Kit",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 22
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH10",
+      "productName": "Helena Hooded Fleece",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "gray",
+      "productSize": "xs",
+      "productPrice": 55
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-UB02",
+      "productName": "Impulse Duffle",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 74
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWSH11",
+      "productName": "Ina Compression Short",
+      "productCategory": "women:bottoms:shorts",
+      "productColor": "blue",
+      "productSize": 28,
+      "productPrice": 49
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWJ09",
+      "productName": "Jade Yoga Jacket",
+      "productCategory": "women:tops:jackets",
+      "productColor": "blue",
+      "productSize": "xs",
+      "productPrice": 32
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWJ06",
+      "productName": "Juno Jacket",
+      "productCategory": "women:tops:jackets",
+      "productColor": "purple",
+      "productSize": "xs",
+      "productPrice": 77
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMJ06",
+      "productName": "Jupiter All-Weather Trainer",
+      "productCategory": "men:tops:jackets",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 56.99
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWS10",
+      "productName": "Karissa V-Neck Tee",
+      "productCategory": "women:tops:tees",
+      "productColor": "red",
+      "productSize": "xs",
+      "productPrice": 32
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMS10",
+      "productName": "Logan HeatTec� Tee",
+      "productCategory": "men:tops:tees",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 24
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWB05",
+      "productName": "Lucia Cross-Fit Bra",
+      "productCategory": "women:tops:bras_tanks",
+      "productColor": "black",
+      "productSize": "xs",
+      "productPrice": 39
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WG09",
+      "productName": "Luma Analog Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 43
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMH10",
+      "productName": "Mach Street Sweatshirt",
+      "productCategory": "men:tops:hoodies_sweatshirts",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 62
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMH13",
+      "productName": "Marco Lightweight Active Hoodie",
+      "productCategory": "men:tops:hoodies_sweatshirts",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 74
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMJ10",
+      "productName": "Mars HeatTech� Pullover",
+      "productCategory": "men:tops:jackets",
+      "productColor": "red",
+      "productSize": "s",
+      "productPrice": 66
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH04",
+      "productName": "Miko Pullover Hoodie",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "blue",
+      "productSize": "xs",
+      "productPrice": 69
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWSH09",
+      "productName": "Mimi All-Purpose Short",
+      "productCategory": "women:bottoms:shorts",
+      "productColor": "gray",
+      "productSize": 28,
+      "productPrice": 44
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMJ03",
+      "productName": "Montana Wind Jacket",
+      "productCategory": "men:tops:jackets",
+      "productColor": "black",
+      "productSize": "s",
+      "productPrice": 49
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWJ10",
+      "productName": "Nadia Elements Shell",
+      "productCategory": "women:tops:jackets",
+      "productColor": "yellow",
+      "productSize": "xs",
+      "productPrice": 69
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWJ11",
+      "productName": "Neve Studio Dance Jacket",
+      "productCategory": "women:tops:jackets",
+      "productColor": "blue",
+      "productSize": "xs",
+      "productPrice": 69
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWJ12",
+      "productName": "Olivia 1/4 Zip Light Jacket",
+      "productCategory": "women:tops:jackets",
+      "productColor": "blue",
+      "productSize": "xs",
+      "productPrice": 77
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMSH08",
+      "productName": "Orestes Fitness Short",
+      "productCategory": "men:bottoms",
+      "productColor": "black",
+      "productSize": 32,
+      "productPrice": 35
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "Luma-24-WB07",
+      "productName": "Overnight Duffle",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 45
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMSH12",
+      "productName": "Pierce Gym Short",
+      "productCategory": "men:bottoms:shorts",
+      "productColor": "red",
+      "productSize": 32,
+      "productPrice": 27
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWP13",
+      "productName": "Portia Capri",
+      "productCategory": "women:bottoms:pants",
+      "productColor": "blue",
+      "productSize": 28,
+      "productPrice": 39.2
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWB04",
+      "productName": "Prima Compete Bra Top",
+      "productCategory": "women:tops:bras_tanks",
+      "productColor": "blue",
+      "productSize": "xs",
+      "productPrice": 24
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMJ12",
+      "productName": "Proteus Fitness Jackshirt",
+      "productCategory": "men:tops:jackets",
+      "productColor": "orange",
+      "productSize": "s",
+      "productPrice": 45
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-UG02",
+      "productName": "Pursuit Lumaflex� Tone Band",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 16
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WB04",
+      "productName": "Push It Messenger Bag",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 45
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-UG01",
+      "productName": "Quest Lumaflex� Band",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 19
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWS12",
+      "productName": "Radiant Tee",
+      "productCategory": "women:tops:tees",
+      "productColor": "orange",
+      "productSize": "xs",
+      "productPrice": 22
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMS02",
+      "productName": "Ryker LumaTech� Tee (V-neck)",
+      "productCategory": "men:tops:tees",
+      "productColor": "gray",
+      "productSize": "s",
+      "productPrice": 28
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WB05",
+      "productName": "Savvy Shoulder Tote",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 24
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH05",
+      "productName": "Selene Yoga Hoodie",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "white",
+      "productSize": "xs",
+      "productPrice": 42
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMT09",
+      "productName": "Sinbad Fitness Tank",
+      "productCategory": "men:tops:tanks",
+      "productColor": "blue",
+      "productSize": "s",
+      "productPrice": 29
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMSH10",
+      "productName": "Sol Active Short",
+      "productCategory": "men:bottoms:shorts",
+      "productColor": "blue",
+      "productSize": 32,
+      "productPrice": 32
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMT08",
+      "productName": "Sparta Gym Tank",
+      "productCategory": "men:tops:tanks",
+      "productColor": "green",
+      "productSize": "s",
+      "productPrice": 29
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WG088",
+      "productName": "Sprite Foam Roller",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 19
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WG084",
+      "productName": "Sprite Foam Yoga Brick",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 5
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-WG080",
+      "productName": "Sprite Yoga Companion Kit",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 61
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "Luma-24-WG085",
+      "productName": "Sprite Yoga Straps",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 52
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMS08",
+      "productName": "Strike Endurance Tee",
+      "productCategory": "men:tops:tees",
+      "productColor": "black",
+      "productSize": "s",
+      "productPrice": 39
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-MG03",
+      "productName": "Summit Watch",
+      "productCategory": "products:gear:watches",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 54
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWP11",
+      "productName": "Sylvia Capri",
+      "productCategory": "women:bottoms:pants",
+      "productColor": "green",
+      "productSize": 28,
+      "productPrice": 33.6
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMT10",
+      "productName": "Tiberius Gym Tank",
+      "productCategory": "men:tops:tanks",
+      "productColor": "yellow",
+      "productSize": "s",
+      "productPrice": 18
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMSH09",
+      "productName": "Troy Yoga Short",
+      "productCategory": "men:bottoms:shorts",
+      "productColor": "blue",
+      "productSize": 32,
+      "productPrice": 24
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMJ11",
+      "productName": "Typhon Performance Fleece-lined Jacket",
+      "productCategory": "men:tops:jackets",
+      "productColor": "black",
+      "productSize": "s",
+      "productPrice": 60
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "Luma-24-WB01",
+      "productName": "Voyage Yoga Bag",
+      "productCategory": "products:gear:bags",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 32
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "24-UG04",
+      "productName": "Zing Jump Rope",
+      "productCategory": "products:gear:fitness",
+      "productColor": "",
+      "productSize": "",
+      "productPrice": 12
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMP10",
+      "productName": "Orestes Yoga Pant",
+      "productCategory": "men:bottoms:pants",
+      "productColor": "black",
+      "productSize": 32,
+      "productPrice": 52.8
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMP11",
+      "productName": "Aether Gym Pant",
+      "productCategory": "men:bottoms:pants",
+      "productColor": "tan",
+      "productSize": 32,
+      "productPrice": 59.2
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMP09",
+      "productName": "Livingston All-Purpose Tight",
+      "productCategory": "men:bottoms:pants",
+      "productColor": "black",
+      "productSize": 32,
+      "productPrice": 60
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMP08",
+      "productName": "Zeppelin Yoga Pant",
+      "productCategory": "men:bottoms:pants",
+      "productColor": "green",
+      "productSize": 32,
+      "productPrice": 65.6
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLMSH11",
+      "productName": "Arcadio Gym Short",
+      "productCategory": "men:bottoms:shorts",
+      "productColor": "blue",
+      "productSize": 32,
+      "productPrice": 20
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH07",
+      "productName": "Phoebe Zipper Sweatshirt",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "gray",
+      "productSize": "xs",
+      "productPrice": 59
+    }
+  },
+  {
+    "_techmarketingdemos": {
+      "productSku": "LLWH09",
+      "productName": "Ariel Roll Sleeve Sweatshirt",
+      "productCategory": "women:tops:hoodies",
+      "productColor": "pruple",
+      "productSize": "xs",
+      "productPrice": 39
+    }
+  }
+]
