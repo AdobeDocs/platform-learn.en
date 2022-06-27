@@ -15,7 +15,7 @@ Learn how to set up an Experience Platform sandbox environment with sample data.
 
 Experience Platform business users often have to go through a series of steps that include identifying field groups, creating schemas, preparing data, creating datasets, and then ingesting data before they can explore the marketing capabilities offered by Experience Platform. This tutorial automates some of the steps so you can get data into a Platform sandbox as quickly as possible. 
 
-This tutorial focuses on a fictional, retail brand called Luma. Luma operates brick-and-mortar stores in multiple countries and has an online presence with a website and mobile apps. They invest in Adobe Experience Platform to combine loyalty, CRM, web, and offline purchase data into real-time customer profiles and activate these profiles to take their marketing to the next level. We have sample data generated for Luma, and in the next section, you can explore how to import data to Experience Platform.
+This tutorial focuses on a fictional, retail brand called Luma. They invest in Adobe Experience Platform to combine loyalty, CRM, product catalog and offline purchase data into real-time customer profiles and activate these profiles to take their marketing to the next level. We have generated sample data for Luma, and in the remainder of this tutorial, you will import this data into one of your Experience Platform sandbox environments.
 
 To complete this tutorial, you can either use the [Postman application's UI](#postman) or use the command line [Collection Runner for Postman (Newman)](#newman)
 
@@ -28,7 +28,8 @@ To complete this tutorial, you can either use the [Postman application's UI](#po
 
 * You have access to Experience Platform APIs and know how to authenticate. If not, please review this [tutorial](https://experienceleague.adobe.com/docs/platform-learn/tutorials/platform-api-authentication.html).
 * You have access to an Experience Platform development sandbox.
-* You know your Experience Platform tenant id. Your tenant id should appear in the URL when you log into your Platform account. In the following URL, the tenant is "`techmarketingdemos`" `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`. You can also obtain it by making an authenticated [API request](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id).
+* You know your Experience Platform tenant id. You can obtain it by making an authenticated [API request](https://experienceleague.adobe.com/docs/experience-platform/xdm/api/getting-started.html?lang=en#know-your-tenant_id)
+ or by extracting it from the URL when you log into your Platform account. For example, in the following URL, the tenant is "`techmarketingdemos`" `https://experience.adobe.com/#/@techmarketingdemos/sname:prod/platform/home`. 
 
 ## Using Postman {#postman}
 
@@ -60,7 +61,7 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
     ![Create workspace](../assets/data-generator/images/create-workspace.png)
 1. Enter a **Name** and optional **Summary** for your workspace and click **Create Workspace**. Postman will switch to your new workspace when you create it.
    ![Save workspace](../assets/data-generator/images/save-workspace.png)
-1. Now adjust some settings to run the Postman collections in this workspace. In the header of Postman, click the wrench icon and select **Settings** to open the settings modal. You can also use the keyboard shortcut (CMD/CTRL + ,) to open the modal.
+1. Now adjust some settings to run the Postman collections in this workspace. In the header of Postman, click the gear icon and select **Settings** to open the settings modal. You can also use the keyboard shortcut (CMD/CTRL + ,) to open the modal.
 1. Under the `General` tab, update the request time out in ms to `5000 ms` and enable `allow reading file outside this directory`
     ![Settings](../assets/data-generator/images/settings.png)
 
@@ -77,17 +78,17 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
 1. Make sure that the following environment variables are populated. To learn how to obtain the environment variables' value, check out the [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md) tutorial for step-by-step instructions. 
 
     * `CLIENT_SECRET` 
-    * `API_KEY`
+    * `API_KEY`&mdash;`Client ID` in Adobe Developer Console
     * `TECHNICAL_ACCOUNT_ID`
     * `META_SCOPE`
     * `IMS`
-    * `IMS_ORG`
+    * `IMS_ORG`&mdash;`Organization ID` in Adobe Developer Console
     * `PRIVATE_KEY`
     * `SANDBOX_NAME`
     * `CONTAINER_ID`
-    * `TENANT_ID`
+    * `TENANT_ID`&mdash;be sure to lead with an underscore, for example `_techmarketingdemos`
     * `platform_end_point`
-    * `FILE_PATH`&mdash;use the local folder path where you have unzipped the `platform-utils-main.zip` file. Be sure it includes the folder name, e.g. `/Users/dwright/Desktop/platform-utils-main`
+    * `FILE_PATH`&mdash;use the local folder path where you have unzipped the `platform-utils-main.zip` file. Be sure it includes the folder name, for example `/Users/dwright/Desktop/platform-utils-main`
 
 1. **Save** the updated environment
 
@@ -111,6 +112,8 @@ Next you need to import the collections into Postman.
 
 ### Authenticate
 
+Next you need to need to authenticate and generate a user token. Please be aware that the token-generation methods used in this tutorial are suitable for non-production use only. Local Signing loads a JavaScript library from a 3rd-party host, and Remote signing sends the private key to an Adobe owned and operated web service. While Adobe does not store this private key, production keys should never be shared with anyone.
+
 1. Open the `Authentication` collection, Select the `IMS: JWT Generate + Auth via User Token` POST request, and click `SEND` to authenticate and obtain the access token.
 
     ![Collections Import](../assets/data-generator/images/authentication.png)
@@ -121,7 +124,7 @@ Next you need to import the collections into Postman.
 
 Now you can prepare and import the data into your Platform sandbox. The Postman collections you imported will do all of the heavy lifting!
 
-1. Open the `Luma-Loyalty-Data` collection and click **Run** on the overview tab to start a Collection Runner.
+1. Open the `1-Luma-Loyalty-Data` collection and click **Run** on the overview tab to start a Collection Runner.
 
     ![Collections Import](../assets/data-generator/images/loyalty.png)
 
@@ -131,7 +134,7 @@ Now you can prepare and import the data into your Platform sandbox. The Postman 
 
     >[!NOTE]
     >
-    >**Luma-Loyalty-Data** creates a schema for customer loyalty data. The schema is based on XDM Individual Profile class, standard field group, and a custom field group and dataype. The collection creates a dataset using the schema and uploads sample customer loyalty data to Adobe Experience Platform.
+    >**1-Luma-Loyalty-Data** creates a schema for customer loyalty data. The schema is based on XDM Individual Profile class, standard field group, and a custom field group and dataype. The collection creates a dataset using the schema and uploads sample customer loyalty data to Adobe Experience Platform.
 
     >[!NOTE]
     >
@@ -141,13 +144,13 @@ Now you can prepare and import the data into your Platform sandbox. The Postman 
 
     ![Loyalty Result](../assets/data-generator/images/loyalty-result.png)
 
-1. Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
-1. Open the `Luma Loyalty Dataset` dataset, and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested.
+1. Now let's login to [Adobe Experience Platform interface](https://platform.adobe.com/) and navigate to datasets. 
+1. Open the `Luma Loyalty Dataset` dataset, and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested. You might need to wait several minutes to confirm that 1000 [!UICONTROL New Profile Fragments] were created.
      ![Loyalty Dataset](../assets/data-generator/images/loyalty-dataset.png)
-1. Repeat steps 1-4 to run the other collections:
-    * `2-Luma-CRM-Data.postman_collection.json` creates a schema and populated dataset for CRM data of customers. The schema is based on XDM Individual Profile class that comprises Demographic Details, Personal Contact Details, Preference Details and custom identity field groups. 
-    * `3-Luma-Product-Catalog.postman_collection.json` creates a schema and populated dataset for product catalog information. The schema is based on a custom, product catalog class and uses a custom, product catalog field group.
-    * `4-Luma-Offline-Purchase-Events.postman_collection.json` creates a schema and populated dataset for offline purchase event data of customers. The schema is based on XDM ExperienceEvent class and comprises the custom identity and Commerce Details field groups.
+1. Repeat steps 1-3 to run the other collections:
+    * `2-Luma-CRM-Data.postman_collection.json` creates a schema and populated dataset for CRM data of customers. The schema is based on XDM Individual Profile class that comprises Demographic Details, Personal Contact Details, Preference Details and a custom identity field group. 
+    * `3-Luma-Product-Catalog.postman_collection.json` creates a schema and populated dataset for product catalog information. The schema is based on a custom product catalog class and uses a custom product catalog field group.
+    * `4-Luma-Offline-Purchase-Events.postman_collection.json` creates a schema and populated dataset for offline purchase event data of customers. The schema is based on XDM ExperienceEvent class and comprises a custom identity and Commerce Details field groups.
 
 
 ## Using Newman {#newman}
@@ -174,22 +177,22 @@ Before you follow the steps, please make sure that you have access to Experience
 1. Run `1-Luma-Loyalty-Data.postman_collection.json` to build field groups, schema, dataset, and to ingest sample loyalty data to Adobe Experience Platform
     * `newman run 1-Luma-Loyalty-Data.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json —insecure --delay-request 4000`
 1. If everything goes well, all requests in the `1-Luma-Loyalty-Data` collection should pass. 
-1. Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/) and navigate to datasets. 
-1. Open the `Luma Loyalty Dataset` dataset, and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records ingested.
+1. Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/), make sure the correct sandbox is selected and navigate to datasets. 
+1. Open the `Luma Loyalty Dataset` dataset, and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records. You might need to wait several minutes to confirm that 1000 [!UICONTROL New Profile Fragments] were created.
 
      ![Loyalty Dataset](../assets/data-generator/images/loyalty-dataset.png)
 
 1. Repeat steps 10 - 13 to run below collections:
-    * Run `2-Luma-CRM-Data.postman_collection.json` to build field groups, schema, dataset, and to ingest sample CRM data to Adobe Experience Platform
+    * Run `2-Luma-CRM-Data.postman_collection.json` to build field groups, schema, dataset, and to ingest sample CRM data to Adobe Experience Platform.
       * `newman run 2-Luma-CRM-Data.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
-    * Run `3-Luma-Product-Catalog.postman_collection.json` to build field groups, schema, dataset, and to ingest sample product data to Adobe Experience Platform
+    * Run `3-Luma-Product-Catalog.postman_collection.json` to build field groups, schema, dataset, and to ingest sample product catalog data to Adobe Experience Platform.
       * `newman run 3-Luma-Product-Catalog.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
-    * Run `4-Luma-Offline-Purchase-Events.postman_collection.json` to build field groups, schema, dataset, and to ingest sample product data to Adobe Experience Platform
+    * Run `4-Luma-Offline-Purchase-Events.postman_collection.json` to build field groups, schema, dataset, and to ingest sample purchase data to Adobe Experience Platform.
       * `newman run 4-Luma-Offline-Purchase-Events.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
 
 ## Validation
 
-The sample data have been designed so that when the collections have run, Real-time Customer Profiles are built that combine data from multiple systems. A good example of this is the first record of the loyalty, CRM, and offline purchase datasets. Look up that profile to confirm the data was ingested:
+The sample data has been designed so that when the collections have run, Real-time Customer Profiles are built that combine data from multiple systems. A good example of this is the first record of the loyalty, CRM, and offline purchase datasets. Look up that profile to confirm the data was ingested. In the [Adobe Experience Platform interface](https://platform.adobe.com/):
 
 1. Go to **[!UICONTROL Profiles]** > **[!UICONTROL Browse]**
 1. Select `Luma Loyalty Id` as the **[!UICONTROL Identity namespace]**
@@ -203,7 +206,13 @@ By browsing through the data in the **[!UICONTROL Attributes]** and **[!UICONTRO
 
 ## Next steps
 
-If you would like to learn about merge policies, data governance, query service, and the segment builder, jump over to [lesson 11 in the Getting Started for Data Architects and Data Engineers tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). The earlier lessons in this tutorial have you manually build everything that was just populated by these Postman collections--enjoy the head start! We hope to add more tutorials which build on this sample data in the future.
+If you would like to learn about merge policies, data governance, query service, and the segment builder, jump over to [lesson 11 in the Getting Started for Data Architects and Data Engineers tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). The earlier lessons of this other tutorial have you manually build everything that was just populated by these Postman collections--enjoy the head start! 
+
+If you would like to build a sample Web SDK implementation to link to this sandbox, go through the
+[Implement Adobe Experience Cloud with Web SDK tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html). After setting up the "Initial Configuration", "Tags Configuration", and "Set up Experience Platform" lessons of the Web SDK tutorial, log into the Luma website using the first ten email addresses in the `luma-crm.json` file using the password `test` to see the profile fragments merge with data uploaded in this tutorial.
+
+If you would like to build a sample Mobile SDK implementation to link to this sandbox, go through the
+[Implement Adobe Experience Cloud in mobile apps tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html). After setting up the "Initial configuration", "App implementation", and "Experience Platform" lessons of the Web SDK tutorial, log into the Luma website using the first email addresses in the `luma-crm.json` file to see a profile fragment merge with data uploaded in this tutorial.
 
 ## Reset Sandbox environment {#reset-sandbox}
 
