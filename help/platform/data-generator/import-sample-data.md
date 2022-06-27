@@ -17,8 +17,6 @@ Experience Platform business users often have to go through a series of steps th
 
 This tutorial focuses on a fictional, retail brand called Luma. They invest in Adobe Experience Platform to combine loyalty, CRM, product catalog and offline purchase data into real-time customer profiles and activate these profiles to take their marketing to the next level. We have generated sample data for Luma, and in the remainder of this tutorial, you will import this data into one of your Experience Platform sandbox environments.
 
-To complete this tutorial, you can either use the [Postman application's UI](#postman) or use the command line [Collection Runner for Postman (Newman)](#newman)
-
 >[!NOTE]
 >
 >The end-result of this tutorial is a sandbox containing the same sample data as the [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
@@ -151,44 +149,6 @@ Now you can prepare and import the data into your Platform sandbox. The Postman 
     * `2-Luma-CRM-Data.postman_collection.json` creates a schema and populated dataset for CRM data of customers. The schema is based on XDM Individual Profile class that comprises Demographic Details, Personal Contact Details, Preference Details and a custom identity field group. 
     * `3-Luma-Product-Catalog.postman_collection.json` creates a schema and populated dataset for product catalog information. The schema is based on a custom product catalog class and uses a custom product catalog field group.
     * `4-Luma-Offline-Purchase-Events.postman_collection.json` creates a schema and populated dataset for offline purchase event data of customers. The schema is based on XDM ExperienceEvent class and comprises a custom identity and Commerce Details field groups.
-
-
-## Using Newman {#newman}
-
-Before you follow the steps, please make sure that you have access to Experience Platform APIs. For this tutorial, we will be using a sandbox environment as it provides an isolated environment where you can try out functionality without mixing resources and data with your Production environment.
-
-### Install NodeJs and Newman
-
-1. To run Newman, ensure that you have Node.js >= v10. [Install Node.js via package manager](https://nodejs.org/en/download/package-manager/).
-1. Run the command `node -v` to make sure that node is installed. 
-1. The easiest way to install Newman is using NPM. If you have Node.js installed, it is most likely that you have NPM installed as well.
-1. Follow the steps [here](https://www.npmjs.com/package/newman#using-newman-cli) to install newman for your system
-1. Run the command `newman -v` to make sure that newman is installed. 
-1. Download the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file, which contains all files required for this tutorial. 
-
-    >[!NOTE]
-    >
-    >User data contained in the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file is fictitious and is to be used for demonstration purposes only.
-
-1. From your downloads folder, move the [`platform-utils-main.zip`](../assets/data-generator/platform-utils-main.zip) file to the desired location on your computer, and unzip it.
-1. In the `luma-data` folder, open all of the `json` files in a text editor and replace all instances of `_techmarketingdemos` with your own tenant id, preceded by an underscore.
-1. Please make a note of the location of the unzipped file, as we might need it later when setting up the `FILE_PATH` Postman environment variable
-1. Open the `platform-utils-main` folder in a terminal window.
-1. Run `1-Luma-Loyalty-Data.postman_collection.json` to build field groups, schema, dataset, and to ingest sample loyalty data to Adobe Experience Platform
-    * `newman run 1-Luma-Loyalty-Data.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json —insecure --delay-request 4000`
-1. If everything goes well, all requests in the `1-Luma-Loyalty-Data` collection should pass. 
-1. Now let's login to [Adobe Experience Platform UI](https://platform.adobe.com/), make sure the correct sandbox is selected and navigate to datasets. 
-1. Open the `Luma Loyalty Dataset` dataset, and under the dataset activity window, you can view a successful batch run that ingested 1000 records. You can also click on the preview dataset option to verify the records. You might need to wait several minutes to confirm that 1000 [!UICONTROL New Profile Fragments] were created.
-
-     ![Loyalty Dataset](../assets/data-generator/images/loyalty-dataset.png)
-
-1. Repeat steps 10 - 13 to run below collections:
-    * Run `2-Luma-CRM-Data.postman_collection.json` to build field groups, schema, dataset, and to ingest sample CRM data to Adobe Experience Platform.
-      * `newman run 2-Luma-CRM-Data.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
-    * Run `3-Luma-Product-Catalog.postman_collection.json` to build field groups, schema, dataset, and to ingest sample product catalog data to Adobe Experience Platform.
-      * `newman run 3-Luma-Product-Catalog.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
-    * Run `4-Luma-Offline-Purchase-Events.postman_collection.json` to build field groups, schema, dataset, and to ingest sample purchase data to Adobe Experience Platform.
-      * `newman run 4-Luma-Offline-Purchase-Events.postman_collection.json -e DataInExperiencePlatform.postman_environment.json --export-environment DataInExperiencePlatform.postman_environment.json --insecure --delay-request 4000`
 
 ## Validation
 
