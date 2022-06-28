@@ -153,6 +153,7 @@ doc-type: video
   + [Segment Match data governance](/help/platform/segments/segment-match-data-governance.md)
   + [Segment Match configuration flow](/help/platform/segments/segment-match-configuration-flow.md)
   + [Segment Match pre-share insights](/help/platform/segments/segment-match-pre-share-insights.md)
+  + [Segment Match receiving data](/help/platform/segments/segment-match-receiving-data.md)
 + Sources {#sources}  
   + [Sources overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
