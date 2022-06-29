@@ -85,9 +85,9 @@ doc-type: video
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
   + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
 + Monitoring {#monitoring}
-  + [Dataflow monitoring](/help/platform/monitoring/data-monitoring.md)
-  + [Monitoring dashboard](/help/platform/monitoring/monitoring-dashboard.md)
-  + [Monitoring the success of segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
+  + [Monitor data ingestion](/help/platform/monitoring/monitoring-dashboard.md)
+  + [Monitor segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
+  + [Monitor dataflows](/help/platform/monitoring/data-monitoring.md)
 + Profiles {#profiles}
   + [Understanding Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
