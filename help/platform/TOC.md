@@ -29,13 +29,17 @@ doc-type: video
   + [Admin Console](/help/platform/admin/admin-console.md)
   + [Managing Product profiles](/help/platform/admin/managing-product-profiles.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [Audit logs](/help/platform/governance/audit-logs.md)
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
   + [Classify data using governance labels](/help/platform/governance/classify-data-using-governance-labels.md)
   + [Create data usage policies](/help/platform/governance/create-data-usage-policies.md)
   + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies.md)
-  + [Audit logs](/help/platform/governance/audit-logs.md)
++ Data Hygiene {#data-hygiene}
+  + [Overview](/help/platform/data-hygiene/overview.md)
+  + [Delete consumers](/help/platform/data-hygiene/delete-consumers.md)
+  + [Delete datasets](/help/platform/data-hygiene/delete-datasets.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
