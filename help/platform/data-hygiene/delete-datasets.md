@@ -6,7 +6,7 @@ kt: 10697
 ---
 # Delete datasets
 
-Learn how to delete consumers using Adobe Experience Platform’s Data Hygiene feature. 
+Learn how to delete datasets using Adobe Experience Platform’s Data Hygiene feature. 
 
 Dataset delete allows data stewards and data engineers to set an expiration date for a dataset. For more information, please visit the [data hygiene documentation](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
 
