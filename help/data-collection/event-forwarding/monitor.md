@@ -4,6 +4,7 @@ description: Learn how to monitor event forwarding in the Data Collection interf
 feature: Event Forwarding
 kt: 10611
 thumbnail: 343999
+exl-id: 15948005-53d7-413d-9379-0d7b5189b839
 ---
 # Monitor event forwarding
 

@@ -9,6 +9,7 @@ level: Beginner
 role: User,Developer
 solution: Data Collection
 topic: Integrations
+exl-id: 9607e641-b0d5-49c1-b319-32ed0720e715
 ---
 # API 101 - A basic introduction to APIs
 
