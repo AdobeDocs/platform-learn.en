@@ -4,7 +4,7 @@ description: Learn about the Data Hygiene feature of Adobe Experience Platform.
 role: Data Engineer, Data Architect
 kt: 10697
 ---
-# Overview
+# Data Hygiene overview
 
 Learn about the Data Hygiene feature of Adobe Experience Platform. 
 
