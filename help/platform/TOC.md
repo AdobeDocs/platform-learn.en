@@ -28,8 +28,8 @@ doc-type: video
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
   + [Admin Console](/help/platform/admin/admin-console.md)
   + [Managing Product profiles](/help/platform/admin/managing-product-profiles.md)
-+ [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + [Audit logs](/help/platform/governance/audit-logs.md)
++ [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
