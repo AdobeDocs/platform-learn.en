@@ -45,6 +45,11 @@ In this lesson, you will:
 
 1. Make sure you are in the Experience Platform sandbox you are using for this tutorial.
 
+    >[!NOTE]
+    >
+    > Customers of Platform-based applications like Real-time CDP should use a development sandbox for this tutorial. Other customers will use the default production sandbox.
+
+
 1. Select **[!UICONTROL Schemas]** under **[!UICONTROL Data Management]**.
 
     ![tags home screen](assets/mobile-schema-navigate3.png)

@@ -37,7 +37,12 @@ XDM schemas are the standard way to describe data in Experience Platform, allowi
 In this exercise, you will create an XDM schema using the recommended baseline field groups for capturing web event data on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
 1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
-1. Select the development sandbox you are using for the tutorial
+1. Make sure the you are in the correct sandbox 
+
+   >[!NOTE]
+   >
+   >If you are the customer of a Platform-based application like Real-time CDP, we recommend using a development sandbox for this tutorial.
+   
 1. Go to **[!UICONTROL Schemas]** in the left navigation
 1. Select the **[!UICONTROL Create Schema]** button on the top right
 1. From the dropdown menu, select **[!UICONTROL XDM ExperienceEvent]**

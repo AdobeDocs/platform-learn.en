@@ -45,7 +45,7 @@ Before you begin the exercises, watch this short video to learn more about ident
 Now, create a namespace for the Luma CRM ID:
 
 1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
-1. Select the development sandbox you are using for the tutorial
+1. Select the sandbox you are using for the tutorial
 1. Select **[!UICONTROL Identities]** in the left navigation
 1. Select **[!UICONTROL Browse]**
 
@@ -78,7 +78,7 @@ Now, create a namespace for the Luma CRM ID:
 
 ## Create the identity namespace in your production sandbox
 
-Due to a current limitation in the Web SDK extension, identity namespaces must also be created in the production sandbox in order to use the namespace to send data to a development sandbox. Create the `Luma CRM ID` namespace in your production sandbox.
+Due to a current limitation in the Web SDK extension, identity namespaces must also be created in the production sandbox in order to use the namespace to send data to a development sandbox. So, if you have been using a development sandbox for this tutorial, please also create the `Luma CRM ID` namespace in your production sandbox.
 
 ## Additional Resources
 
