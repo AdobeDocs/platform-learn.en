@@ -44,8 +44,7 @@ After completing this tutorial, you will be able to:
 
 In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you should reach out to your Adobe Administrator to request access.
 
-* In [!UICONTROL Data Collection], you must be provisioned for **datastreams**. If not, [request provisioning](http://adobe.ly/websdkaccess).
-* For tags (formerly Launch), you must have:
+* In Data Collection, you must have:
   * **[!UICONTROL Platforms]**&mdash;permission item **[!UICONTROL Mobile]**
   * **[!UICONTROL Property Rights]**&mdash;permission items to **[!UICONTROL Develop]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Manage Environments]**.
   * **[!UICONTROL Company Rights]**&mdash;permission items to **[!UICONTROL Manage Properties]** and, if completing the optional push messaging lesson, **[!UICONTROL Manage App Configurations]**
@@ -53,9 +52,15 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
     For more information on tag permissions, see [User permissions for tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=en){target="_blank"} in the product documentation.
 * In Experience Platform, you must have:
   * **[!UICONTROL Data Modeling]**&mdash;permission items to manage and view schemas.
-  * **[!UICONTROL Data Management]**&mdash;permission items to manage and view datasets to complete the _optional Platform exercises_.
-  * A development **sandbox** which you can use for this tutorial.
+  * **[!UICONTROL Identity Management]**&mdash;permission items to manage and view identity namespaces.
+  * **[!UICONTROL Data Collection]**&mdash;permission items to manage and view datastreams.
+
+  * If you are the customer of a Platform-based application like Real-time CDP, Journey Optimizer, or Customer Journey Analytics, you should also have:
+    * **[!UICONTROL Data Management]**&mdash;permission items to manage and view datasets to complete the _optional Platform exercises_ (requires a license for a Platform-based application ).
+    * A development **sandbox** which you can use for this tutorial.
 * For Adobe Analytics, you must know which **report suites** you can use to complete this tutorial.
+
+All Experience Cloud customers should have access to the required features needed to deploy Mobile SDK. If your System Admins do not see the Adobe Experience Platform features in the Admin Console, as described above, please [request provisioning](http://adobe.ly/websdkaccess).
 
 Also, it is assumed that you are familiar with [!DNL Swift]. You do not need to be an expert to complete the lessons, but you will get more out of them if you can comfortably read and understand code.
 
