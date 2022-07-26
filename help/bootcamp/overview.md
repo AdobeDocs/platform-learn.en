@@ -60,7 +60,11 @@ Go to [Architecture](https://experienceleague.adobe.com/docs/platform-learn/comp
 
 ## Videos
 
-Several videos have been created that showcase elements of the bootcamp and powerful integrations between Adobe Experience Platform and non-Adobe applications. Click the below link to find an overview of those videos.
+The main objective of our Experience Makers Bootcamp is to help organisations understand what personalization at scale means and how it is very different from what most organisations are doing today. To deliver customer experiences that are consistent, contextual and real-time in an omni-channel world, you need a platform-first mindset where you define everything just once and reuse it everywhere. In the bootcamp, we take you on a real journey that combines customer interactions across website, mobile app, call center and and offline, in-store environment to showcase what personalization at scale really means, in a hands-on way.
+
+>[!VIDEO](https://video.tv.adobe.com/v/345446?quality=12&enable=on)
+
+Several other videos have been created that showcase elements of the bootcamp and powerful integrations between Adobe Experience Platform and non-Adobe applications. Click the below link to find an overview of those videos.
 
 Go to [Videos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
 
