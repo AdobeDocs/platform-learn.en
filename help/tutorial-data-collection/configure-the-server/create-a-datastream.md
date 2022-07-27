@@ -11,7 +11,7 @@ To configure which Adobe products Edge Network shuttles data to and from, you mu
 
 ![Datastream product configuration](../assets/datastream-diagram.png)
 
-To create a datastream, first navigate to the **[!UICONTROL Datastreams]** view within the[!UICONTROL Data Collection] interface. Select **[!UICONTROL Create Datastream]** in the top-right corner. Provide a name for the datastream, select [the schema you previously created](create-a-schema.md), and select **[!UICONTROL Save]**  (mapping is covered later).
+To create a datastream, first navigate to the **[!UICONTROL Datastreams]** view within the[!UICONTROL Data Collection] interface. Select **[!UICONTROL Create Datastream]** in the top-right corner. Provide a name for the datastream, select [the schema you previously created](create-a-schema.md) as the **[!UICONTROL Event Dataset]**, and select **[!UICONTROL Save]** (mapping is covered later).
 
 ![Datastream name and description](../assets/datastream-name-description.png)
 
@@ -25,7 +25,7 @@ Your datastream has been created.
 
 Companies typically have a promotion path for any website updates. Someone at the company (a marketer or engineer, depending on the changes) typically tests out their changes in a development environment that only that person is using. Once they feel comfortable with the changes, the changes are promoted to a staging environment where they receive further testing. Finally, the changes are published to the production website that users see. Datastreams support this promotion pattern. 
 
-If you are supporting Platform-based applications like Real-time CDP, Journey Optimizer, or Customer Journey Analytics, additional datastreams must be manually created in the separate Platform sandboxes which correspond to these environments.
+If you are supporting Platform-based applications like Real-time CDP, Journey Optimizer, or Customer Journey Analytics, additional datastreams must be created in the separate Platform sandboxes which correspond to these environments.
 
 If you are not a Platform customer, you can create multiple datastreams in a single sandbox and can use the datastream copy feature to duplicate settings.
 
