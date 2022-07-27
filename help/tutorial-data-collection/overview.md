@@ -3,7 +3,7 @@ title: Overview
 description: Overview
 exl-id: 527d8f73-33d0-45a6-b7a4-5e46cdb7c138
 ---
-# Implement Web SDK with JavaScript
+# Use Adobe Experience Platform Data Collection
 
 Collecting data about events occurring in a user's browser is a fundamental tenet of a marketing strategy. Adobe has provided several tools to help you manage this data. While you could familiarize yourself with each of these tools individually, this tutorial attempts to provide a broader view of what each of these tools do and how they work together to achieve a common goal.
 
