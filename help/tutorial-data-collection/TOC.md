@@ -1,6 +1,6 @@
 ---
-user-guide-title: Implement Adobe Experience Cloud with Web SDK with JavaScript tutorial
-breadcrumb-title: Web SDK Tutorial
+user-guide-title: Use Data Collection
+breadcrumb-title: Data Collection Tutorial
 solution: Data Collection
 role: Developer
 level: Intermediate
@@ -9,7 +9,7 @@ recommendations: noDisplay,noCatalog
 hide: yes
 ---
 
-# Implement Web SDK with JavaScript {#implement-web-sdk-js}
+# Use Data Collection {#use-data-collection}
 
 + [Tutorial Overview](overview.md)
 + [Structuring your data](structuring-your-data.md)

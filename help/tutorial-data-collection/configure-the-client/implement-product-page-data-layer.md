@@ -56,11 +56,11 @@ window.adobeDataLayer.push({
 });
 ```
 
-In this example, you've made two pushes to the data layer, each containing an `event` key. Including an `event` key not only communicates what event has occurred on the page, but also makes it simpler for the marketer to create appropriate rules inside Adobe Experience Platform Tags.
+In this example, you've made two pushes to the data layer, each containing an `event` key. Including an `event` key not only communicates what event has occurred on the page, but also makes it simpler for the marketer to create appropriate rules inside tags.
 
-The first push to the data layer notifies listeners (Tags rules) that the user has viewed the page. It also adds the page name and site section to the data layer.
+The first push to the data layer notifies listeners (tag rules) that the user has viewed the page. It also adds the page name and site section to the data layer.
 
-The second push to the data layer notifies listeners (Tags rules) that the user has viewed a product. It also adds product information to the data layer. 
+The second push to the data layer notifies listeners (tags rules) that the user has viewed a product. It also adds product information to the data layer. 
 
 ## Add to cart
 
@@ -239,4 +239,4 @@ The result of your HTML page should look as follows:
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

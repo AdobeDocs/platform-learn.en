@@ -4,9 +4,9 @@ description: How to use the Adobe Client Data Layer
 ---
 # How to use the Adobe Client Data Layer
 
-In [What's a data layer?](whats-a-data-layer.md), you learned there are two parts to consider when discussing data layers: the container and the content. The Adobe Client Data Layer is the container. It doesn't care how you [structure your data](../structuring-your-data.md) or what pieces of information you choose to put in your data. The data can be structured as [XDM](../structuring-your-data.md#xdm), as the examples below show, or you can build your own structure entirely.
+In [What's a data layer?](whats-a-data-layer.md), you learned there are two parts to consider when discussing data layers: the container and the content. The [Adobe Client Data Layer](https://github.com/adobe/adobe-client-data-layer) is the container. It doesn't care how you [structure your data](../structuring-your-data.md) or what pieces of information you choose to put in your data. The data can be structured as [XDM](../structuring-your-data.md#xdm), as the examples below show, or you can build your own structure entirely.
 
-Ideally, your company's engineering team is responsible for pushing any necessary data into the data layer through on-page code. The marketing team then retrieves data from the data layer, preferably using Adobe Experience Platform Tags.
+Ideally, your company's engineering team is responsible for pushing any necessary data into the data layer through on-page code. The marketing team then retrieves data from the data layer, preferably using the tags feature of Adobe Experience Platform, formerly Launch.
 
 ## Pushing data to the data layer
 
@@ -103,7 +103,7 @@ window.adobeDataLayer.push({
 });
 ```
 
-Later, you'll learn how to trigger rules within Adobe Experience Platform Tags when a particular event is pushed to the data layer. Also note that the `event` key is _not_ included in the computed state. It receives special treatment by the data layer.
+<!--Later, you'll learn how to trigger rules within Adobe Experience Platform Tags when a particular event is pushed to the data layer.--> Also note that the `event` key is _not_ included in the computed state. It receives special treatment by the data layer.
 
 ## Pushing events and data to the data layer
 
@@ -146,12 +146,12 @@ window.adobeDataLayer.push({
 });
 ```
 
-Notice in this example that `siteKnowledge` is wrapped inside `eventInfo`. The `eventInfo` key receives special treatment by the data layer. It tells the data layer that this data _should_ be included with the event that gets sent to listeners, but it _should not_ be retained inside the data layer. After listeners (like Adobe Experience Platform Tags) are notified of the event, this data is essentially forgotten. The `siteKnowledge` key will never show up inside the data layer's computed state.
+Notice in this example that `siteKnowledge` is wrapped inside `eventInfo`. The `eventInfo` key receives special treatment by the data layer. It tells the data layer that this data _should_ be included with the event that gets sent to listeners, but it _should not_ be retained inside the data layer. After listeners (like a tag manager) are notified of the event, this data is essentially forgotten. The `siteKnowledge` key will never show up inside the data layer's computed state.
 
-Each time you call `push`, the Adobe Client Data Layer notifies any listeners. Later, we'll learn how to listen to these notifications from Adobe Experience Platform Tags and trigger rules accordingly.
+Each time you call `push`, the Adobe Client Data Layer notifies any listeners. Later, we'll learn how to listen to these notifications <!--from Adobe Experience Platform Tags--> and trigger rules accordingly.
 
 [Next: **Implement a data layer on a product page**](implement-product-page-data-layer.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -18,7 +18,7 @@ As this tutorial refers to the Adobe Client Data Layer, it is referring to the c
 
 ## Communicating changes
 
-When using a data layer, you can change the content at any time. That's a nice feature, because data may become available at different times. For example, you may have some data about the user available immediately, but may need to make an asynchronous request to a third party for additional information. This requires special consideration. If you need to send this asynchronous data to Adobe Experience Platform at some point, how do your marketing technologies know when certain pieces of data have been added to the data layer and are ready to be sent? You need a smarter data layer--an event-driven data layer.
+When using a data layer, you can change the content at any time. That's a nice feature, because data may become available at different times. For example, you may have some data about the user available immediately, but may need to make an asynchronous request to a third party for additional information. This requires special consideration. If you need to send this asynchronous data to Adobe Experience Platform at some point, how do your marketing technologies know when certain pieces of data have been added to the data layer and are ready to be sent? You need a smarter data layer&emdash;an event-driven data layer.
 
 An event-driven data layer is able to communicate that its content has changed so that marketing technologies can react to the change. Used properly, this can help avoid timing issues that often arise with data layers that have no means to communicate when changes occur.
 
@@ -28,4 +28,4 @@ The Adobe Client Data Layer is an event-driven data layer.
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Data Collection. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
