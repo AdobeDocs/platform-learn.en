@@ -64,6 +64,7 @@ doc-type: video
   + [Create a rule](event-forwarding/create-a-rule.md)
   + [Monitor event forwarding](event-forwarding/monitor.md)
   + [Move client-side tags](event-forwarding/consider-moving-tags.md)
+  + [Adobe extension for Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
 + Datastreams & Edge Network{#edge-network}
   + [Configure datastreams](edge/configure-datastreams.md)
   + [Data prep](edge/data-prep.md)

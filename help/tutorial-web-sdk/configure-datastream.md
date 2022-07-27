@@ -33,11 +33,11 @@ Now you can create a datastream to tell Platform Edge Network where to send data
 **To create a datastream:**
 
 1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
-1. Select the development sandbox you are using for the tutorial 
+1. Make sure the you are in the correct sandbox 
 
-   >[!IMPORTANT]
+   >[!NOTE]
    >
-   >Make sure you are no longer in your Production sandbox
+   >If you are the customer of a Platform-based application like Real-time CDP, we recommend using a development sandbox for this tutorial.
 
 1. Go to **[!UICONTROL Datastreams]** in the left navigation
 1. Select **[!UICONTROL New Datastream]** on the right hand-side of the screen.

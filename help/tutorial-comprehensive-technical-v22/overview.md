@@ -9,7 +9,9 @@ exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
 
 ## Overview
 
-This tutorial is the perfect starting point for Data Engineers, Data Analysts, Data Architects, Data Scientists, Orchestration Engineers and Marketers to gain a full understanding of the business value of Adobe Experience Platform and all of its Application Services. Each lesson focuses on a real challenge businesses face in today's complex ecosystem of personalization and breaks down how Experience Platform solves that challenge in various hands-on exercises.
+This tutorial is the perfect starting point for Data Engineers, Data Analysts, Data Architects, Data Scientists, Orchestration Engineers and Marketers to gain a full understanding of the business value of Adobe Experience Platform and all of its application services. Each lesson focuses on a real challenge businesses face in today's complex ecosystem of personalization and breaks down how Experience Platform solves that challenge in various hands-on exercises. Have a look at this video to understand the problems Adobe Experience Platform will help you solve.
+
+>[!VIDEO](https://video.tv.adobe.com/v/344237?quality=12&enable=on)
 
 This tutorial is very diverse and offers clear insights in the following applications:
 
@@ -50,7 +52,6 @@ After completing this tutorial, you will be able to:
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Access to Demo System: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
-- Access to the demo website on [https://public.aepdemo.net](https://public.aepdemo.net)
 
 >[!IMPORTANT]
 >
@@ -58,9 +59,7 @@ After completing this tutorial, you will be able to:
 
 ## About this tutorial
 
-In these lessons, you will implement Adobe Experience Platform and Application Services using a demo website which supports multiple industries. The demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma**, **Citi Signal**, **EXP News**, **MUTUAL365**, **Carvelo** and several others. You will build your own Adobe Experience Platform Data Collection Client property, in your own Experience Cloud organization, and map it to our publicly hosted demo website. This will then generate data that is sent into your own Adobe Experience Platform instance. For an introduction to the Platform Demo website, have a look at the below video.
-
->[!VIDEO](https://video.tv.adobe.com/v/35137?quality=12&enable=on)
+In these lessons, you will implement Adobe Experience Platform and Application Services using a demo website which supports multiple industries. The demo website and mobile app have a rich data layer and functionality that will allow you to build a realistic implementation. It provides access to demo brands such as **Luma**, **Citi Signal**, **EXP News**, **MUTUAL365**, **Carvelo** and several others. You will build your own Adobe Experience Platform Data Collection Client property, in your own Experience Cloud organization, and map it to your demo website. This will then generate data that is sent into your own Adobe Experience Platform instance.
 
 ## Architecture
 
@@ -68,11 +67,18 @@ Before you start with the hands-on exercises, have a look at the Architecture be
 
 Go to [Architecture](./architecture.md).
 
+
 ## Videos
+
+![Videos](./assets/images/yt.jpeg)
+
+You can find a lot of interesting videos from our Tech Academy events, from Bootcamps and more on our [Experience Makers Community YouTube channel](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 Several videos have been created that showcase elements of the enablement and powerful integrations between Adobe Experience Platform and non-Adobe applications. Click the below link to find an overview of those videos.
 
 Go to [Videos](./videos.md).
+
+
 
 ## How is your completion of the Comprehensive Technical Tutorial for Adobe Experience Platform measured?
 

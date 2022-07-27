@@ -228,7 +228,7 @@ It is also important to understand that you can **[!UICONTROL provide individual
 You can map to individual variables to capture data on the product details page of the Luma Demo site:
 
 1. Create an **[!UICONTROL XDM object]** **[!UICONTROL Data Element Type]** named **`xdm.commerce.prodView`**
-1. Select the same Platform development sandbox and XDM schema used in previous lessons
+1. Select the same Platform sandbox and XDM schema used in previous lessons
 1. Open the **[!UICONTROL commerce]** object
 1. Open the **[!UICONTROL productViews]** object and set **[!UICONTROL value]** to `1`
 

@@ -30,9 +30,13 @@ If you haven't used Analysis Workspace before, we highly recommend watching this
 ### Create Your Project
 
 Now it's time to create your first CJA project. Go to the projects tab inside of CJA. 
-Click on create a new project.
+Click **Create new**.
 
 ![demo](./images/prmenu.png)
+
+You'll then see this. Select **Blank project** and then click **Create**.
+
+![demo](./images/prmenu1.png)
 
 You'll then see an empty project.
 
@@ -65,14 +69,13 @@ Next, click **Save**.
 
 ## 4.4.2 Calculated Metrics
 
-Although we have organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis.
+Although we have organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis. Also, during any analysis you can create calculated metric to go deeper on the insights finding.
 
-If you remember, we didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View. 
-However, we do have a dimension called: **Product Interaction Type**. So, let's derive these interaction types by creating 3 calculated Metrics.
+As an example we will create a calculated **Conversion Rate** using the **Purchases** metric/event we defined on the Data View.
 
-### Product Views
+### Conversion Rate
 
-Let's start with first Metric: **Product Views**. Click on the **+** to create your first calculated Metric.
+Let's start opening the calculated metric builder. Click on the **+** to create your first Calculated Metric in Analysis Workspace.
 
 ![demo](./images/pradd.png)
 
@@ -80,94 +83,39 @@ The **Calculated Metric Builder** will show up:
 
 ![demo](./images/prbuilder.png)
 
-Within the components, on the left side, please search **Event Type**.
+Find the **Purchases** in the list of Metrics in the left side menu. Under **Metrics** click **Show all**
 
-![demo](./images/pr14.png)
+![demo](./images/calcbuildercr1.png)
 
-Then drag and drop it in to the Calculated Metric's **Definition** canvas.
+Now drag an drop the **Purchases** metric in to the calculated metric definition.
 
-You'll now see a popup. In the popup, in the dropdown, find and select **commerce.productViews** (or enter it manually and click Enter). 
+![demo](./images/calcbuildercr2.png)
 
-![demo](./images/pr12.png)
+Typically, conversion rate means **Conversions / Sessions**. So let's do the same calculation in the calculated Metric definition canvas. Find the **Sessions** metric and drag and drop it into the definition builder, under the **Purchases** event.
 
-Next, click **Done**.
-
-![demo](./images/prdone.png)
-
-Now we must quantify this interaction. To do this select the Metric **Events (occurrences)**, then drag and drop it inside the filter. This will allow us to understand how many times the **commerce.productViews** event has occurred.
-
-![demo](./images/pr11.png)
-
-To finish, add a name and description.
-
-| Title         | Description|    
-| ----------------- |-------------| 
-| Product Views | Product Views     |   
-
-You'll then see this:
-
-![demo](./images/pr10.png)
-
-Click **Save** to save your calculated Metric.
-
-![demo](./images/pr9.png)
-
-Next, repeat the same process for **commerce.productListAdds** and **commerce.purchases**.
-
-### Add to Cart
-
-| Event Type | Name         | Description| 
-| ----------------- |-------------| -------------|
-| commerce.productListAdds|Add to Carts | Add to Carts     |
-
-The Metric definition should look like this:
-
-![demo](./images/praddtocart.png)
-
-### Purchases
-
-| Product Interaction Type | Name         | Description| 
-| ----------------- |-------------| -------------|
-| commerce.purchases|Purchases | Purchases   |
-
-The Metric definition should look like this:
-
-![demo](./images/prpurchase.png)
-
-Don't forget to **Save** each Calculated Metric.
-
-![demo](./images/pr9.png)
-
-### Conversion Rate
-
-To finish this exercise, let's create a last calculated Metric: **Conversion Rate**.
-
-Find the **Purchase** Calculated Metric we've just created in the list of Metrics in the left side menu. Click on the **info** icon.
-Now click on the **edit** icon.
-
-![demo](./images/prmetricinfo.png)
-
-Typically, conversion rate means **Conversions / Sessions**. So let's do the same calculation in the calculated Metric definition canvas. Find the **Sessions** metric and drag and drop it into the definition builder.
-
-![demo](./images/pr6.png)
+![demo](./images/calcbuildercr3.png)
 
 Notice that the division operator is automatically selected.
 
-![demo](./images/pr5.png)
+![demo](./images/calcbuildercr4.png)
 
 The conversion rate is commonly represented in percentage. So, let's change the format to be percentage and also select 2 decimals.
 
-![demo](./images/pr2.png)
+![demo](./images/calcbuildercr5.png)
 
-Change the name and description:
+Finally, Change the name and description of the calculated metric:
 
-| Name         | Description|    
+| Title         | Description|    
 | ----------------- |-------------| 
 | Conversion Rate | Conversion Rate      | 
 
-Now click **Save As** to save your new Calculated Metric without overwriting the original one..
+You will have something like this on your screen:
 
-![demo](./images/prsaveas.png)
+![demo](./images/calcbuildercr6.png)
+
+Don't forget to **Save** the Calculated Metric.
+
+![demo](./images/pr9.png)
 
 ## 4.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
 

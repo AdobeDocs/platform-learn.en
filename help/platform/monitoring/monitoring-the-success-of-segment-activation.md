@@ -5,7 +5,7 @@ feature: Monitoring
 role: User
 level: Beginner
 kt: 10450
-thumbnail: 343248.jpeg
+thumbnail: 343248.jpg
 exl-id: 425c8876-db9e-4fc3-9ce4-208c560244da
 ---
 # Monitoring the success of segment activation
