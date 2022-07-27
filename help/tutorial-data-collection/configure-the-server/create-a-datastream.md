@@ -1,6 +1,7 @@
 ---
 title: Create a datastream
 description: Create a datastream
+exl-id: 4a33a7f3-8bd8-4d28-9ae4-a0609444485f
 ---
 # Create a datastream
 

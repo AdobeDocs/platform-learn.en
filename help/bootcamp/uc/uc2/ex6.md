@@ -12,45 +12,37 @@ exl-id: f7697673-38f9-41f6-ac4d-2561db2ece67
 
 ## Install the mobile app
 
-Ask your Adobe representative to get access to the mobile application. The mobile application is available only for iOS and is available through Apple's Testflight app, so you need to install the TestFlight app first. Your Adobe representative will then provide you with access to the mobile app, after which you'll receive an invite like this one to accept an invitiation to join App Store Connect:
-
-![DSN](./../uc3/images/app1.png)
-
-Next, go to your mobile device. You'll receive a second invitation to start testing the app. Click **View in TestFlight**.
-
-![DSN](./../uc3/images/app2.png)
-
-In TestFlight, click **Accept**.
-
-![DSN](./../uc3/images/app3.png)
-
-Click **Install**.
+Before you install the app, you need to enable **Tracking** on your iOS device. To do so, go to **Settings** > **Privacy & Security** > **Tracking** and ensure that the option **Allow Apps to Request to Track**.
 
 ![DSN](./../uc3/images/app4.png)
 
-Click **Open**.
+Go to the Apple App Store and search for `aepmobile-bootcamp`. Click **Install** or **Download**.
 
-![DSN](./../uc3/images/app6.png)
+![DSN](./../uc3/images/app1.png)
 
-Click **Allow While Using App**.
+Once the app is installed, click **Open**.
 
-![DSN](./../uc3/images/app7.png)
-
-Click **Allow**.
-
-![DSN](./../uc3/images/app8.png)
+![DSN](./../uc3/images/app2.png)
 
 Click **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Click **Next**.
+Click **Allow**.
 
-![DSN](./../uc3/images/app10.png)
+![DSN](./../uc3/images/app3.png)
 
-Click **Start Testing**.
+Click **I agree**.
 
-![DSN](./../uc3/images/app11.png)
+![DSN](./../uc3/images/app7.png)
+
+Click **Allow While Using App**.
+
+![DSN](./../uc3/images/app8.png)
+
+Click **Allow**.
+
+![DSN](./../uc3/images/app5.png)
 
 You're now in the app, on the homepage, ready to go through the customer journey.
 
@@ -78,7 +70,17 @@ Go back to the homepage in the app, and you'll see additional capabilities appea
 
 ![DSN](./../uc3/images/app17.png)
 
+Go to **Products**. Click on any product, in this example **Coffee to go**.
+
+![DSN](./images/app19.png)
+
+You'll see the **Coffee to go** product page in the app. Click **Buy**.
+
+![DSN](./images/app20.png)
+
 You've now finished this exercise and you're ready for the next exercises.
+
+Next Step: [2.7 Personalization in the call center](./ex7.md)
 
 [Go Back to User Flow 2](./uc2.md)
 

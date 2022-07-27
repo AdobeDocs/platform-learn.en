@@ -55,13 +55,16 @@ doc-type: video
   + [Implement in mobile apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
 + Server API{#server-api}
   + [Overview](server-api/overview.md)
+  + [Basics of APIs](server-api/introduction.md)
 + Event Forwarding{#event-forwarding}
   + [Overview](event-forwarding/overview.md)
   + [Create a property](event-forwarding/create-a-property.md)
   + [Set up a datastream](event-forwarding/set-up-a-datastream.md)
   + [Add an extension](event-forwarding/add-an-extension.md)
   + [Create a rule](event-forwarding/create-a-rule.md)
+  + [Monitor event forwarding](event-forwarding/monitor.md)
   + [Move client-side tags](event-forwarding/consider-moving-tags.md)
+  + [Adobe extension for Mailchimp](event-forwarding/adobe-extension-for-mailchimp.md)
 + Datastreams & Edge Network{#edge-network}
   + [Configure datastreams](edge/configure-datastreams.md)
   + [Data prep](edge/data-prep.md)

@@ -27,6 +27,7 @@ doc-type: multipage
   + [2.4 Create your journey](/help/bootcamp/uc/uc2/ex4.md)
   + [2.5 Test your journey](/help/bootcamp/uc/uc2/ex5.md) 
   + [2.6 Install & use the mobile app](/help/bootcamp/uc/uc2/ex6.md) 
+  + [2.7 Personalization in the call center](/help/bootcamp/uc/uc2/ex7.md) 
 + 3 - Blending physical and digital {#uc3}
   + [Overview](/help/bootcamp/uc/uc3/uc3.md)
   + [3.1 Use the mobile app and trigger a beacon entry](/help/bootcamp/uc/uc3/ex1.md)

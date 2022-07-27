@@ -87,12 +87,19 @@ Now you will add the individual permission items to the profile:
 1. Select the **[!UICONTROL Permissions]** tab
 1. Under **[!UICONTROL Sandboxes]**, add the **[!UICONTROL Prod]** sandbox to the profile. It is necessary to have access to the [!DNL Prod] sandbox in order to create additional sandboxes. Once we have added the tutorial sandbox in the next lesson, we will remove the [!DNL Prod] sandbox from the product profile.
 1. Under [!UICONTROL Data Ingestion], add the [!UICONTROL Manage Sources] and [!UICONTROL View Sources] permission items.
-1. Add all of the permission items for the categories highlighted in the screenshot below ([!UICONTROL Data Modeling], [!UICONTROL Data Management], [!UICONTROL Profile Management], [!UICONTROL Identity Management], [!UICONTROL Sandbox Administration], [!UICONTROL Query Service], [!UICONTROL Data Governance], [!UICONTROL Dashboards], and [!UICONTROL Alerts]), by opening a category and moving the items to the right column. 
+1. Add all of the permission items for:
+    1. [!UICONTROL Data Modeling]
+    1. [!UICONTROL Data Management]
+    1. [!UICONTROL Profile Management]
+    1. [!UICONTROL Identity Management]
+    1. [!UICONTROL Sandbox Administration]
+    1. [!UICONTROL Query Service]
+    1. [!UICONTROL Data Collection]
+    1. [!UICONTROL Data Governance]
+    1. [!UICONTROL Dashboards]
+    1. [!UICONTROL Alerts]
 
 1. After adding all of the permission items, be sure to select the **[!UICONTROL Save]** button
-
-After saving, your screen should look like this:
-![Interface showing the Prod [!UICONTROL Sandbox] included,  [!UICONTROL Manage Sources] and [!UICONTROL View Sources] permission items in the [!UICONTROL Data Ingestion] section and all permissions for [!UICONTROL Data Modeling], [!UICONTROL Data Management], [!UICONTROL Profile Management], [!UICONTROL Identity Management], [!UICONTROL Sandbox Administration], [!UICONTROL Query Service], [!UICONTROL Data Governance], [!UICONTROL Dashboards], and [!UICONTROL Alerts]](assets/adminconsole-platform-enablePermissions.png)
 
 ### Add yourself as a user
 
@@ -112,26 +119,26 @@ In order to use the Platform API, add yourself as a developer:
     ![Select Add User](assets/adminconsole-addDeveloper.png)
 1. Complete the workflow to add yourself as a developer to the product profile
 
-## Create a Launch product profile (requires a system administrator or product admin)
+## Create a Data Collection product profile (requires a system administrator or product admin)
 
 In this exercise, you or a System Administrator at your company will create a product profile for Data Collection (formerly known as Adobe Experience Platform Launch) and add you as a product profile admin.
 
 >[!NOTE]
 >
->If you are a System Administrator assisting a colleague with this tutorial, consider adding them as a *Product Administrator* for Launch. As a Product Administrator, they will be able to complete these steps on their own and administrate other users of Launch in the future.
+>If you are a System Administrator assisting a colleague with this tutorial, consider adding them as a *Product Administrator* for Data Collection. As a Product Administrator, they will be able to complete these steps on their own and administrate other users of Data Collection in the future.
 
 To create the product profile:
 
-1. In the [!DNL Adobe Admin Console] go to the Adobe Experience Platform Launch product
+1. In the [!DNL Adobe Admin Console] go to the Adobe Experience Platform Data Collection product
 1. Add a new profile named `Luma Tutorial Data Collection` (add the tutorial participant's name to the end, if multiple people from your company are taking this tutorial)
 1. Turn off the **[!UICONTROL Properties]** > **[!UICONTROL Auto-include]** setting
 1. Don't assign any properties or permissions at this point
 1. Add the tutorial participant as an admin of this profile
 
 After completing these steps, you should see that the `Luma Tutorial Data Collection` profile is set up with one admin.
-![Launch profile created](assets/adminconsole-launch-profileCreated.png)
+![Data Collection profile created](assets/adminconsole-dc-profileCreated.png)
 
-## Configure the Launch product profile
+## Configure the Data Collection product profile
 
 Now that you are an admin of the `Luma Tutorial Data Collection` product profile you can configure the permissions and roles you will need to complete the tutorial.
 
@@ -139,9 +146,8 @@ Now that you are an admin of the `Luma Tutorial Data Collection` product profile
 
 Now you will add the individual permission items to the profile:
 
-1. In the [Adobe Admin Console](https://adminconsole.adobe.com), go to **[!UICONTROL Products]** > **[!UICONTROL Adobe Experience Platform Launch]**
+1. In the [Adobe Admin Console](https://adminconsole.adobe.com), go to **[!UICONTROL Products]** > **[!UICONTROL Data Collection]**
 1. Open the `Luma Tutorial Data Collection` profile
-    ![Open Products > Adobe Experience Platform Launch > Luma Tutorial Data Collection](assets/adminconsole-launch-openProfile.png)
 1. Go to the **[!UICONTROL Permissions]** tab
 1. Open **[!UICONTROL Platforms]**
 1. Make sure that all of the available platforms are selected (you may see different options based on your license)
@@ -163,13 +169,13 @@ Now you will add the individual permission items to the profile:
 
 ### Add yourself as a user
 
-Now add yourself as a user to the Launch profile:
+Now add yourself as a user to the Data Collection profile:
 
 1. Go to the **[!UICONTROL Users]** tab
 1. Select the **[!UICONTROL Add User]** button
     ![Select Add User](assets/adminconsole-launch-addUser.png)
 1. Complete the workflow to add yourself as a user to the product profile
 
-You do not need to add yourself as a Developer for Launch.
+You do not need to add yourself as a Developer for Data Collection.
 
 Now you have almost all the permissions required to complete the tutorial! There will be just two more tweaks that you will make inside the [!DNL Adobe Admin Console], including one after you [create a sandbox](create-a-sandbox.md)!

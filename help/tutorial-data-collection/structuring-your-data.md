@@ -1,6 +1,7 @@
 ---
 title: Structuring your data
 description: Structuring your data
+exl-id: 8d176389-25a4-4718-afff-efd2f87204ed
 ---
 # Structuring your data
 

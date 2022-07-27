@@ -7,6 +7,7 @@ recommendations: noDisplay,noCatalog
 kt: 10447
 hide: yes
 hidefromtoc: yes
+exl-id: 8ffa258b-6ff7-4413-aead-21b106668c65
 ---
 # Overview
 
@@ -18,4 +19,4 @@ While this tutorial uses the Adobe Client Data Layer, Adobe Experience Platform 
 
 ## Example Scenario
 
-For this tutorial, we assume you're implementing data collection for a simple product page on an e-commerce site. The product page is loaded in the browser. Here, you'll track that the user has viewed the product. The user decides to purchase the product, so they click a button to add the product to their cart. Here, you'll track that the user has opened a new cart and added the product to the cart by sending experience events to Adobe Experience Platform. Finally, the user clicks a _Download the app_ link because they are interested in your mobile app. You'll track that the user has clicked the link. 
+For this tutorial, we assume you're implementing data collection for a simple product page on an e-commerce site. The product page is loaded in the browser. Here, you'll track that the user has viewed the product. The user decides to purchase the product, so they click a button to add the product to their cart. Here, you'll track that the user has opened a new cart and added the product to the cart by sending experience events to Adobe Experience Platform. Finally, the user clicks a _Download the app_ link because they are interested in your mobile app. You'll track that the user has clicked the link.

@@ -129,6 +129,8 @@ You now need to set the values for every action parameter. Follow this table to 
 | ACTIVITYID         |`''` |
 | PLACEMENTID         | `''` |
 
+{style="table-layout:auto"}
+
 To set those values, click the **Edit** icon.
 
 ![ACOP](./images/jomsg17.png)

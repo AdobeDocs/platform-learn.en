@@ -7,6 +7,7 @@ recommendations: noDisplay,noCatalog
 kt: 10447
 hide: yes
 hidefromtoc: yes
+exl-id: d300429a-5a66-4b61-97cb-b934fc8e8291
 ---
 # Structuring your data
 

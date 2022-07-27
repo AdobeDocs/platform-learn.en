@@ -28,6 +28,7 @@ doc-type: video
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
   + [Admin Console](/help/platform/admin/admin-console.md)
   + [Managing Product profiles](/help/platform/admin/managing-product-profiles.md)
++ [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
@@ -49,8 +50,6 @@ doc-type: video
   + [Streaming ingestion overview](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
   + [Stream data with HTTP API](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
   + [Stream data using Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
-  + [Dataflow monitoring](/help/platform/data-ingestion/data-monitoring.md)
-  + [Monitoring dashboard](/help/platform/data-ingestion/monitoring-dashboard.md)
   + [Web SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
   + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + Data Science Workspace {#data-science-workspace}
@@ -85,6 +84,10 @@ doc-type: video
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
   + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
++ Monitoring {#monitoring}
+  + [Monitor data ingestion](/help/platform/monitoring/monitoring-dashboard.md)
+  + [Monitor segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
+  + [Monitor dataflows](/help/platform/monitoring/data-monitoring.md)
 + Profiles {#profiles}
   + [Understanding Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
@@ -150,6 +153,7 @@ doc-type: video
   + [Segment Match data governance](/help/platform/segments/segment-match-data-governance.md)
   + [Segment Match configuration flow](/help/platform/segments/segment-match-configuration-flow.md)
   + [Segment Match pre-share insights](/help/platform/segments/segment-match-pre-share-insights.md)
+  + [Segment Match receiving data](/help/platform/segments/segment-match-receiving-data.md)
 + Sources {#sources}  
   + [Sources overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)

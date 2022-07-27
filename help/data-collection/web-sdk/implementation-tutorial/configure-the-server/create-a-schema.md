@@ -7,6 +7,7 @@ recommendations: noDisplay,noCatalog
 kt: 10447
 hide: yes
 hidefromtoc: yes
+exl-id: 25d77367-046d-46bd-9640-60fbcea263da
 ---
 # Create a schema
 
@@ -45,4 +46,3 @@ Finally, select [!UICONTROL Untitled schema] toward the left of the screen, prov
 Your schema has been created. Next, let's learn how to create a dataset to hold your data.
 
 For more information about creating schemas, see [Create a schema (UI)](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html).
-

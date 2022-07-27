@@ -1,6 +1,7 @@
 ---
 title: Create a schema
 description: Create a schema
+exl-id: 0256b358-0c2c-4c59-ab23-5fe0d38880d6
 ---
 # Create a schema
 

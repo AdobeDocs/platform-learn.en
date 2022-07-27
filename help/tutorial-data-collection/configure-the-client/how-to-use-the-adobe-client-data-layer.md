@@ -1,6 +1,7 @@
 ---
 title: How to use the Adobe Client Data Layer
 description: How to use the Adobe Client Data Layer
+exl-id: b5af9e72-aa6c-4cd7-80dd-b2de762a7523
 ---
 # How to use the Adobe Client Data Layer
 

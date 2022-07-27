@@ -47,4 +47,8 @@ In this exercise, you'll test the journey you just created.
 
 In this exercise, you'll install the mobile app.
 
+[2.7 Personalization in the call center](./ex7.md)
+
+In this exercise, you'll see how a call center experience can be optimised based on the intelligence of Adobe Experience Platform.
+
 [Go Back to All Modules](../../overview.md)

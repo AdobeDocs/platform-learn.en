@@ -1,6 +1,7 @@
 ---
 title: Create an Adobe Experience Platform tag property and install extensions
 description: Create an Adobe Experience Platform tag property and install extensions
+exl-id: d0fe82b5-a036-4e13-bae1-d1fee78d0084
 ---
 # Create an Adobe Experience Platform tag property and install extensions
 

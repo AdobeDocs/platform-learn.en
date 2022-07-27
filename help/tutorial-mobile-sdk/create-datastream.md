@@ -36,10 +36,6 @@ Datastreams can be created in the [!UICONTROL Data Collection] interface using t
 
     ![new datastreams](assets/mobile-datastream-name.png)
 
->[!INFO]
->
->The mapping feature is currently only available for Web SDK.
-
 
 ## Add services
 
