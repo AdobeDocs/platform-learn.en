@@ -10,12 +10,12 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## What's New
 
-* **[Audit logs (video)](governance/audit-logs.md)**
-    *See who did what and when*
-* **[Next-hit personalization with Real-time CDP and Adobe Target(Video)](/help/platform/experience-cloud/next-hit-personalization.md)**
-    *Personalize on the next hit with governance and privacy*
-* **[Create merge policies (Video)](/help/platform/profiles/create-merge-policies.md)**
-    *Combine datasets from disparate sources*
+* **[Configure attribute-based access control (video)](admin/configure-attribute-based-access-control.md)**
+    *Limit access to specific resources*
+* **[Data Hygiene overview (Video)](/help/platform/data-hygiene/overview.md)**
+    *Improve your data minimization practices*
+* **[Delete datasets (Video)](/help/platform/data-hygiene/delete-datasets.md)**
+    *Set time-to-live for datasets*
 
 
 ## Staff Picks
