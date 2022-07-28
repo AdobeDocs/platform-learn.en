@@ -14,3 +14,7 @@ Learn how to configure attribute-based access control to control access to speci
 >[!IMPORTANT]
 >
 > Attribute-based access control is currently available in a limited release for US-based healthcare customers. This capability will be available to all Real-time Customer Data Platform customers once it is fully released.
+
+>[!IMPORTANT]
+>
+> The Regulated Health Data label used in this video is only permitted for Healtchare Shield customers.
