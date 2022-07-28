@@ -7,7 +7,7 @@ kt: 10362
 ---
 # Enforce consent
 
-Learn how to create policies to enforce customer's consent preferences. To learn the API-based approach, see [enforce data usage policies using the Policy Service API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/api-enforcement.html).
+Learn how to create policies to enforce customer's consent preferences. For more information, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/345677?quality=12&learn=on)
 
