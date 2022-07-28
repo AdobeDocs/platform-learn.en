@@ -26,8 +26,9 @@ doc-type: video
 + Administration {#admin}
   + [Use alerts](/help/platform/admin/use-alerts.md)
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
   + [Admin Console](/help/platform/admin/admin-console.md)
-  + [Managing Product profiles](/help/platform/admin/managing-product-profiles.md)
+  + [Manage product profiles](/help/platform/admin/managing-product-profiles.md)
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Data Governance {#data-governance}
