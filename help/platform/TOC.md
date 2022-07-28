@@ -36,6 +36,10 @@ doc-type: video
   + [Classify data using governance labels](/help/platform/governance/classify-data-using-governance-labels.md)
   + [Create data usage policies](/help/platform/governance/create-data-usage-policies.md)
   + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies.md)
++ Data Hygiene {#data-hygiene}
+  + [Overview](/help/platform/data-hygiene/overview.md)
+  + [Delete consumers](/help/platform/data-hygiene/delete-consumers.md)
+  + [Delete datasets](/help/platform/data-hygiene/delete-datasets.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
