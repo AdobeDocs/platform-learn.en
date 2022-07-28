@@ -26,7 +26,7 @@ doc-type: video
 + Administration {#admin}
   + [Use alerts](/help/platform/admin/use-alerts.md)
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
-  + [Configure attribute-based access control](/help/platform/admin/attribute-based-access-control.md)
+  + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
   + [Admin Console](/help/platform/admin/admin-console.md)
   + [Manage product profiles](/help/platform/admin/managing-product-profiles.md)
 + [Audit logs](/help/platform/governance/audit-logs.md)
