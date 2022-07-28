@@ -4,6 +4,7 @@ description: Learn how to configure attribute-based access control to control ac
 role: Admin, User
 feature: Access Control
 kt: 10363
+exl-id: 170676e6-d9fb-4a45-aa32-b1b27e8533f4
 ---
 # Configure attribute-based access control
 
