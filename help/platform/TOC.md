@@ -20,14 +20,16 @@ doc-type: video
   + [Basic architecture](/help/platform/intro-to-platform/basic-architecture.md)
   + [Using the Platform user interface](/help/platform/intro-to-platform/interface-tour.md)
   + [Roles and project phases](/help/platform/intro-to-platform/roles-and-project-phases.md)
-+ [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
++ [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
   + [Use alerts](/help/platform/admin/use-alerts.md)
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
   + [Admin Console](/help/platform/admin/admin-console.md)
-  + [Managing Product profiles](/help/platform/admin/managing-product-profiles.md)
+  + [Manage product profiles](/help/platform/admin/managing-product-profiles.md)
++ [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
@@ -35,7 +37,10 @@ doc-type: video
   + [Classify data using governance labels](/help/platform/governance/classify-data-using-governance-labels.md)
   + [Create data usage policies](/help/platform/governance/create-data-usage-policies.md)
   + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies.md)
-  + [Audit logs](/help/platform/governance/audit-logs.md)
++ Data Hygiene {#data-hygiene}
+  + [Overview](/help/platform/data-hygiene/overview.md)
+  + [Delete consumers](/help/platform/data-hygiene/delete-consumers.md)
+  + [Delete datasets](/help/platform/data-hygiene/delete-datasets.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)

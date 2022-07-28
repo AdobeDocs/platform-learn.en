@@ -69,8 +69,7 @@ After the Data Source is saved, set up a [trait](https://experienceleague.adobe.
 
 >[!NOTE]
 >
->All XDM data is sent to Audience Manager if it is enabled in the datastream, however the data is not automatically mapped to signals. Create explicit traits for the XDM data you want to use in Audience Manager. This behavior differs from server-side forwarding where all data arrives as signals that you can see in the Unused Signals report.
->
+>All XDM data is sent to Audience Manager if it is enabled in the datastream, however the data might take 24hrs until it is available in the Unused Signals report. Create explicit traits for the XDM data you want to use immediately in Audience Manager, as decribed in this exercise.
 
 1. Select **[!UICONTROL Audience Data]** >  **[!UICONTROL Traits]**
 1. Select **[!UICONTROL Add New]** >  **[!UICONTROL Rule-Based]** trait
