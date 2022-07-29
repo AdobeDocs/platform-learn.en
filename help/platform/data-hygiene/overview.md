@@ -1,9 +1,10 @@
 ---
 title: Data Hygiene overview
-description: Learn about the Data Hygiene feature of Adobe Experience Platform. 
+description: Learn about the Data Hygiene feature of Adobe Experience Platform.
 role: Data Engineer, Data Architect
 feature: Data Hygiene
 kt: 10360
+exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
 ---
 # Data Hygiene overview
 
@@ -16,5 +17,3 @@ Data Hygiene allows you to delete both consumers and entire datasets from all Ex
 >[!IMPORTANT]
 >
 > Data hygiene capabilities in Adobe Experience Platform are currently only available for customers of Healthcare Shield.
-
-

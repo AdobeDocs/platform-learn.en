@@ -1,9 +1,10 @@
 ---
 title: Delete datasets
-description: Learn how to delete datasets using Adobe Experience Platform’s Data Hygiene feature. 
+description: Learn how to delete datasets using Adobe Experience Platform’s Data Hygiene feature.
 role: Data Engineer, Data Architect
 feature: Data Hygiene
 kt: 10697
+exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
 ---
 # Delete datasets
 
@@ -16,5 +17,3 @@ Dataset delete allows data stewards and data engineers to set an expiration date
 >[!IMPORTANT]
 >
 > Data hygiene capabilities in Adobe Experience Platform are currently only available for customers of Healthcare Shield.
-
-
