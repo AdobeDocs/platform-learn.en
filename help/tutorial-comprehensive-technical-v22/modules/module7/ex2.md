@@ -221,7 +221,7 @@ You've now completed creating your registration email. Click the arrow in the to
 
 ![Journey Optimizer](./images/msg57.png)
 
-Clicl **Ok**.
+Click **Ok**.
 
 ![Journey Optimizer](./images/msg57a.png)
 

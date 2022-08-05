@@ -1,13 +1,13 @@
 ---
-title: Bootcamp - Journey Optimizer Create your email message
-description: Bootcamp - Journey Optimizer Create your email message
+title: Bootcamp - Journey Optimizer Create your journey and email message
+description: Bootcamp - Journey Optimizer Create your journey and email message
 kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
 ---
-# 2.3 Create your email message
+# 2.3 Create your journey and email message
 
 In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the demo website.
 
@@ -19,37 +19,65 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ![ACOP](./images/acoptriglp.png)
 
-In the left menu, click **Messages**. 
+## 2.3.1 Create your journey
 
-On the Messages screen, you’ll see a view similar to this. Click **Create Message**.
+In the left menu, click **Journeys**. Next, click **Create Journey** to create a new journey.
 
-![Journey Optimizer](./images/msg1.png)
+![ACOP](./images/createjourney.png)
 
-Give your Message a title following this naming convention `yourLastName - Registration Email` and select the **Email Preset** and enable the **Email** channel. Click on the **Create** button to create your Registration Email message.
+You'll then see an empty journey screen.
 
-![Journey Optimizer](./images/msg2.png)
+![ACOP](./images/journeyempty.png)
 
-The next screen is the message dashboard, from there you will be able to see the email thumbnail when the content will be provided.
+In the previous exercise, you created a new **Event**. You named it like this `ldapAccountCreationEvent` and replaced `ldap` with your ldap. This was the result of the Event creation:
 
-![Journey Optimizer](./images/msg3.png)
+![ACOP](./images/eventdone.png)
 
-On the right-hand side are the Email properties:
+You now need to take this event as the start of this Journey. You can do this by going to the left side of your screen and searching for your event in the list of events.
 
-- **From email**: the email address from whom the recipient will receive email message. Note that this value is specified by the **preset** given in the previous step and is read-only.
-- **From name**: the sender name  from whom the recipient will receive email message. Note that this value is specified by the **preset** given in the previous step and is read-only.
-- **Subject line**: the mandatory subject of the message which will be edited in the next step. 
-- **Body**: a button brings you to the Email Designer to create and edit the email content.
-- **Optional features**: these two checkboxes allow to disable the tracking of the email's opens and email's clicks and therefore, prevent the message from measuring metrics like open rate, click-through rate,...
+![ACOP](./images/eventlist.png)
 
-First, make sure that the 2 checkboxes under **Optional features** are checked. If not, please **make sure they are both activated**. 
+Select your event, drag and drop it on the Journey canvas. Your Journey now looks like this:
 
-![Journey Optimizer](./images/msg4.png)
+![ACOP](./images/journeyevent.png)
+
+As the second step in the journey, you need to add a short **Wait** step. Go to the left side of your screen to the **Orchestration** section to find this. You'll be using profile attributes and need to make sure they are populated into the Real-time Customer Profile.
+
+![ACOP](./images/journeywait.png)
+
+Your journey now looks like this. On the right side of the screen you need to configure the wait time. Set it to 1 minute. This will give plenty of time for the profile attributes to be available after the event fires.
+
+![ACOP](./images/journeywait1.png)
+
+Click **Ok** to save your changes.
+
+As the third step in the journey, you need to add an **Email** action. Go to the left side of your screen to **Actions**, select the **Email** action, then drag and drop it on the second node in your journey. You now see this.
+
+![ACOP](./images/journeyactions.png)
+
+Set the **Category** to **Marketing** and select an email surface that enables you to send email. In this case, the email surface to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
+
+![ACOP](./images/journeyactions1.png)
+
+The next step is to create your message. To do that, click **Edit content**.
+
+![ACOP](./images/journeyactions2.png)
+
+## 2.3.2 Create your message
+
+To create your message, click **Edit content**.
+
+![ACOP](./images/journeyactions2.png)
+
+You now see this.
+
+![ACOP](./images/journeyactions3.png)
 
 Click the **Subject line** text field.
 
 ![Journey Optimizer](./images/msg5.png)
 
-In the text area start writing **Hi**.
+In the text area start writing **Hi**
 
 ![Journey Optimizer](./images/msg6.png)
 
@@ -83,11 +111,11 @@ Click **Import HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Drag and drop the file **mailtemplatebootcamp.html**, which you can download [here](./../../assets/html/mailtemplatebootcamp.html.zip). Click **Import**.
+Drag and drop the file **mailtemplatebootcamp.html**, which you can download [here](../../assets/html/mailtemplatebootcamp.html.zip). Click Import.
 
 ![Journey Optimizer](./images/msg13.png)
 
-You'll then see this default email template:
+You’ll then see this default email template:
 
 ![Journey Optimizer](./images/msg14.png)
 
@@ -113,21 +141,39 @@ Go back to the message dashboard by clicking the **arrow** next to the subject l
 
 ![Journey Optimizer](./images/msg56.png)
 
-You've now completed the draft version of your registration email. Click **Publish** to publish your message so you can use it in a journey.
+You've now completed creating your registration email. Click the arrow in the top left corner to go back to your journey.
 
 ![Journey Optimizer](./images/msg57.png)
 
+Click **Ok**.
+
+![Journey Optimizer](./images/msg57a.png)
+
+## 2.3.3 Publish your journey
+
+You still need to give your journey a Name. You can do that by clicking the **Properties** icon in the top right side of your screen.
+
+![ACOP](./images/journeyname.png)
+
+You can then enter the journey's name here. Please use `yourLastName - Account Creation Journey`. Click **OK** to save your changes.
+
+![ACOP](./images/journeyname1.png)
+
+You can now publish your journey by clicking **Publish**.
+
+![ACOP](./images/publishjourney.png)
+
 Click **Publish** again.
 
-![Journey Optimizer](./images/msg58.png)
+![ACOP](./images/publish1.png)
 
-Wait until you see a green confirmation pop-up at the bottom of the screen indicating that the message is published. 
+You'll then see a green confirmation bar saying that your journey is now Published.
 
-![Journey Optimizer](./images/msg59.png)
+![ACOP](./images/published.png)
 
-You have finished this exercise.
+You've now finished this exercise.
 
-Next Step: [2.4 Create your journey](./ex4.md)
+Next Step: [2.4 Test your journey](./ex4.md)
 
 [Go Back to User Flow 2](./uc2.md)
 
