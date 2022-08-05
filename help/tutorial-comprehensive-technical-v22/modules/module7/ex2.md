@@ -19,7 +19,7 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ![ACOP](./images/acoptriglp.png)
 
-# 7.2.1 Create your journey
+## 7.2.1 Create your journey
 
 In the left menu, click **Journeys**. Next, click **Create Journey** to create a new journey.
 
@@ -63,7 +63,7 @@ The next step is to create your message. To do that, click **Edit content**.
 
 ![ACOP](./images/journeyactions2.png)
 
-# 7.2.2 Create your message
+## 7.2.2 Create your message
 
 To create your message, click **Edit content**.
 
@@ -225,7 +225,7 @@ Clicl **Ok**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-# 7.2.3 Publish your journey
+## 7.2.3 Publish your journey
 
 You still need to give your journey a Name. You can do that by clicking the **Properties** icon in the top right side of your screen.
 
