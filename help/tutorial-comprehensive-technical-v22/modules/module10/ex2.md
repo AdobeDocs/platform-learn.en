@@ -17,25 +17,48 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ![ACOP](../module7/images/acoptriglp.png)
 
-## 10.2.1 Create Newsletter Email Message
+## 10.2.1 Create newsletter journey
 
-You'll now create a new email message, to send a newsletter using a batch-based journey. The newsletter email message you'll create in this exercise will be very basic and won't include much personalization. In the next exercise, 10.2, you'll add personalization based on segment memberships and also using Offer Decisioning. For now, let's start with the basic email creation.
+You'll now create a batch-based journey. Unlike the event-based journey of the previous exercise which relies on incoming experience events or segment entries or exits to trigger a journey for 1 specific customer, batch-based journeys target a whole segment once with unique content like newsletters, one-off promotions, or generic information or periodically with similar content sent on a regular basis like for instance birthday campaigns and reminders. 
 
-In the menu, click **Messages**. 
+In the menu, go to **Journeys** and click **Create Journey**.
 
-On the Messages screen, you’ll see a view similar to this. Click **Create Message**.
+![Journey Optimizer](./images/oc43.png)
 
-![Journey Optimizer](./images/batch1.png)
+On the right-hand side you will see a form where you need to specify the journey name and description. Enter the following values:
 
-Name your message `--demoProfileLdap-- - Newsletter`, select the **Email Preset** and select the **Email** channel. Click **Create**.
+- **Name**: `--demoProfileLdap-- - Newsletter Journey`. For instance: **vangeluw - Newsletter Journey**.
+- **Description**: Monthly Newsletter
 
-![Journey Optimizer](./images/batch2.png)
+Click **Ok**. 
 
-First, make sure that the 2 checkboxes under **Optional features** are checked. If not, please **make sure they are both activated**. 
+![Journey Optimizer](./images/batchj2.png)
 
-![Journey Optimizer](./images/batch3.png)
+Under **Orchestration**, drag and drop **Read Segment** onto the canvas. This means that, once published, the journey will start by retrieving the whole segment audience, which then becomes the target audience of the journey and message. Click **Select a segment**.
 
-Click the **Subject line** text field.
+![Journey Optimizer](./images/batchj3.png)
+
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
+
+![Journey Optimizer](./images/batchj5.png)
+
+Click **Ok**.
+
+![Journey Optimizer](./images/batchj6.png)
+
+In the left menu, find the **Actions** section and drag and drop an **Email** action onto the canvas.
+
+![Journey Optimizer](./images/batchj7.png)
+
+Set the **Category** to **Marketing** and select an email surface that enables you to send email. In this case, the email surface to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
+
+![ACOP](./images/journeyactions1eee.png)
+
+The next step is to create your message. To do that, click **Edit content**.
+
+![ACOP](./images/journeyactions2.png)
+
+You now see this. Click the **Subject line** text field.
 
 ![Journey Optimizer](./images/batch4.png)
 
@@ -85,72 +108,13 @@ Go back to the message dashboard by clicking the **arrow** next to the subject l
 
 ![Journey Optimizer](./images/batch9.png)
 
-You've now completed the draft version of your registration email. Click **Publish** to publish your message so you can use it in a journey.
+Click the arrow in the top left corner to go back to your journey.
 
-![Journey Optimizer](./images/batch10.png)
+![Journey Optimizer](./images/oc79aeee.png)
 
-Click **Publish** again.
+Click **Ok** to close your email action.
 
-![Journey Optimizer](./images/batch11.png)
-
-Wait until you see a green confirmation pop-up at the bottom of the screen indicating that the message is published. 
-
-![Journey Optimizer](./images/batch12.png)
-
-## 10.2.2 Create newsletter journey
-
-Next, go to **Journeys**.
-
-You'll now create a batch-based journey. Unlike the event-based journey of the previous exercise which relies on incoming experience events or segment entries or exits to trigger a journey for 1 specific customer, batch-based journeys target a whole segment once with unique content like newsletters, one-off promotions, or generic information or periodically with similar content sent on a regular basis like for instance birthday campaigns and reminders. 
-
-Click **Create Journey**.
-
-![Journey Optimizer](./images/batchj1.png)
-
-On the right-hand side you will see a form where you need to specify the journey name and description. Enter the following values:
-
-- **Name**: `--demoProfileLdap-- - Newsletter Journey`. For instance: **vangeluw - Newsletter Journey**.
-- **Description**: Monthly Newsletter
-
-Click **Ok**. 
-
-![Journey Optimizer](./images/batchj2.png)
-
-Under **Orchestration**, drag and drop **Read Segment** onto the canvas. This means that, once published, the journey will start by retrieving the whole segment audience, which then becomes the target audience of the journey and message. 
-
-![Journey Optimizer](./images/batchj3.png)
-
-Select **Read Segment**. Click **Select a segment**. 
-
-![Journey Optimizer](./images/batchj4.png)
-
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
-
-![Journey Optimizer](./images/batchj5.png)
-
-Click **Ok**.
-
-![Journey Optimizer](./images/batchj6.png)
-
-In the left menu, find the **Actions** section and drag and drop a **Message** action onto the canvas.
-
-![Journey Optimizer](./images/batchj7.png)
-
-Click on the **Message** activity to display the menu on the right-hand side. Click on the **Select a message** drop-down menu.
-
-![Journey Optimizer](./images/batchj8.png)
-
-Select the message you created in the previous exercise, which is named `--demoProfileLdap - Newsletter`. Click **Select**.
-
-![Journey Optimizer](./images/batchj9.png)
-
-Click **OK**.
-
-![Journey Optimizer](./images/batchj10.png)
-
-In the menu, click **Orchestration** and drag and drop **End** onto the canvas. Click **Ok**.
-
-![Journey Optimizer](./images/batchj11.png)
+![Journey Optimizer](./images/oc79beee.png)
 
 Your newsletter journey is now ready to be published. Before you do so, notice the **Schedule** section where you can switch this journey from being a one-off to a recurring campaign. Click the **Schedule** button.
 
@@ -166,8 +130,6 @@ Select a date and time within the next hour so you can test your journey. Click 
 >
 >Message send date and time must be within more than one hour.
 
-![Journey Optimizer](./images/sch2.png)
-
 Click **Publish**.
 
 ![Journey Optimizer](./images/batchj13.png)
@@ -177,6 +139,8 @@ Click **Publish** again.
 ![Journey Optimizer](./images/batchj14.png)
 
 Your basic newsletter journey is now published. Your newsletter email message will be sent as you defined it in your schedule, and your journey will stop as soon as the last email has been sent.
+
+![Journey Optimizer](./images/batchj14eee.png)
 
 You have finished this exercise.
 
