@@ -266,7 +266,7 @@ Your final configuration should then look similar to this this. Click **Save and
 
 ![demo](./images/calcmetr8.png)
 
-## 4.3.4 Data View Settings
+## 4.3.5 Data View Settings
 
 You should be redirected to this screen:
 
