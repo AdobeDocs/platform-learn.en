@@ -248,7 +248,6 @@ You'll then see this:
 
 As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion? 
 
-
 ## How are customers with a Positive Callcenter contact performing against the main KPIs?
 
 Let's first segment the data to get only users with **positive** calls. In CJA, Segments are called Filters. Go to filters within the component area (on the left-side) and click **+**.

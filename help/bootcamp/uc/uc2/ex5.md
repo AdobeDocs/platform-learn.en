@@ -1,53 +1,86 @@
 ---
-title: Bootcamp - Journey Optimizer Create your journey
-description: Bootcamp - Journey Optimizer Create your journey
+title: Bootcamp - Install & use the mobile app
+description: Bootcamp - Install & use the mobile app
 kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
 exl-id: c1f007b4-e28a-412c-9352-e38579a2fc71
 ---
-# 2.5 Test your journey
+# 2.5 Install & use the mobile app
+
+
+## Install the mobile app
+
+Before you install the app, you need to enable **Tracking** on your iOS device. To do so, go to **Settings** > **Privacy & Security** > **Tracking** and ensure that the option **Allow Apps to Request to Track**.
+
+![DSN](./../uc3/images/app4.png)
+
+Go to the Apple App Store and search for `aepmobile-bootcamp`. Click **Install** or **Download**.
+
+![DSN](./../uc3/images/app1.png)
+
+Once the app is installed, click **Open**.
+
+![DSN](./../uc3/images/app2.png)
+
+Click **OK**.
+
+![DSN](./../uc3/images/app9.png)
+
+Click **Allow**.
+
+![DSN](./../uc3/images/app3.png)
+
+Click **I agree**.
+
+![DSN](./../uc3/images/app7.png)
+
+Click **Allow While Using App**.
+
+![DSN](./../uc3/images/app8.png)
+
+Click **Allow**.
+
+![DSN](./../uc3/images/app5.png)
+
+You're now in the app, on the homepage, ready to go through the customer journey.
+
+![DSN](./../uc3/images/app12.png)
 
 ## Customer journey flow
 
-Open a new, clean, incognito browser window and go to [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Click **Allow All**. Based on your browsing behaviour in the previous user flow, you'll see personalization happen on the homepage of the website.
+First of all, you need to login. Click **Login**.
 
-![DSN](./images/web8a.png)
+![DSN](./../uc3/images/app13.png)
 
-Click the **Profile** icon in the top right corner of your screen.
-
-![Demo](./images/web8b.png)
-
-Click **Create an account**.
+After creating your account in the previous exercises, you saw this on the website. You now need to reuse the email address of the account you created in the app to login.
   
-![Demo](./images/pv5.png)
-  
-Fill out all the fields of the form. Use a real value for email address and phonenumber, as it will be used in later exercises for delivery of email and SMS.
-  
-![Demo](./images/pv7a.png)
-  
-Scroll down. You now need to input the eventID of your custom event that you created in exercise 2.2. You can find it here:
+![Demo](./../uc3/images/pv1.png)
 
-![ACOP](./images/payloadeventID.png)
+Enter the email address you used on the website here and click **Login**.
 
-The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the journey that you've built. This is the eventID in this example: `19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f`
+![DSN](./../uc3/images/app14.png)
 
-Fill out the eventID in the field **Your Account Creation Event ID** and click **Register**.
-  
-![Demo](./images/pv8a.png)
+You'll then get a confirmation that you're logged in, and you'll receive a push notification.
 
-You'll then see this.
+![DSN](./../uc3/images/app15.png)
 
-![Demo](./images/pv9.png)
+Go back to the homepage in the app, and you'll see additional capabilities appear.
 
-You'll also receive this email, which is the email you created yourself as part of this exercise.
+![DSN](./../uc3/images/app17.png)
 
-![Demo](./images/pv10a.png)
+Go to **Products**. Click on any product, in this example **Coffee to go**.
 
-You've now finished this exercise.
+![DSN](./images/app19.png)
 
-Next Step: [2.6 Install & use the mobile app](./ex6.md)
+You'll see the **Coffee to go** product page in the app. Click **Buy**.
+
+![DSN](./images/app20.png)
+
+You've now finished this exercise and you're ready for the next exercises.
+
+Next Step: [2.6 Personalization in the call center](./ex6.md)
 
 [Go Back to User Flow 2](./uc2.md)
 

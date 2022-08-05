@@ -17,7 +17,7 @@ exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
 
 ## Context
 
-In this exercises you will use Analysis Workspace within CJA to analyze product views, product funnels, churn etc.
+In this exercise you will use Analysis Workspace within CJA to analyze product views, product funnels, churn etc.
 
 Let's use the project you created in [4.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
 

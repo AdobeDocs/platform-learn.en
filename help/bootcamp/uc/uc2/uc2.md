@@ -31,23 +31,19 @@ In this exercise, you'll learn how to configure an event.
 
 In this exercise, you'll learn how to configure an event.
 
-[2.3 Create your email message](./ex3.md)
+[2.3 Create your journey and email message](./ex3.md)
 
-In this exercise, you'll learn how to configure an email message.
+In this exercise, you'll learn how to configure a journey and an email message.
 
-[2.4 Create your journey](./ex4.md)
-
-In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
-
-[2.5 Test your journey](./ex5.md)
+[2.4 Test your journey](./ex4.md)
 
 In this exercise, you'll test the journey you just created.
 
-[2.6 Install & use the mobile app](./ex6.md)
+[2.5 Install & use the mobile app](./ex5.md)
 
 In this exercise, you'll install the mobile app.
 
-[2.7 Personalization in the call center](./ex7.md)
+[2.6 Personalization in the call center](./ex6.md)
 
 In this exercise, you'll see how a call center experience can be optimised based on the intelligence of Adobe Experience Platform.
 

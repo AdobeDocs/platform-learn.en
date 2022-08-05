@@ -80,9 +80,15 @@ In this exercise, you'll configure the components you need to analyze the data a
 
 ![demo](./images/2-v2.png)
 
+>[!IMPORTANT]
+>
+>If you can't find a specific metric or dimension, please check if the field `Contains data` is removed from your dataview. If not, please delete that field.
+>
+>![demo](./images/2-v2a.png)
+
 You now have to drag and drop the components you need for the analysis to the **Components Added**. To do this, you need to select the components in the left menu and drag and drop them onto the canvas in the middle.
 
-Let's start with the first component:**Name (web.webPageDetails.name)**. Search for this component, then drag and drop it onto the canvas.
+Let's start with the first component: **Name (web.webPageDetails.name)**. Search for this component, then drag and drop it onto the canvas.
 
 ![demo](./images/3-v2.png)
 
@@ -175,11 +181,93 @@ Your configuration should then look like this:
 
 ![demo](./images/11-v2.png)
 
-Don't forget to **Save** your Data View. So click **Save and continue** now.
+Don't forget to **Save** your Data View. So click **Save** now.
 
-![demo](./images/12-v2.png)
+![demo](./images/12-v2s.png)
 
-## 11.3.4 Data View Settings
+## 11.3.4 Calculated Metrics
+
+
+Although we have organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis.
+
+If you remember, we didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View. 
+However, we do have a dimension called: **Event Type**. So, let's derive these interaction types by creating 3 calculated Metrics.
+
+Let's start with first Metric: **Product Views**. 
+
+On the left side, please search **Event Type** and select the dimension. Then drag and drop it in to the **Included Components** canvas.
+
+![demo](./images/calcmetr1.png)
+
+Click to select the new metric **Event Type**.
+
+![demo](./images/calcmetr2.png)
+
+Now change the component name and description to the following values:
+
+| Component Name         | Component Description|    
+| ----------------- |-------------| 
+| Product Views | Product Views     |  
+
+![demo](./images/calcmetr3.png)
+
+Now lets count only **Product Views** events. To do that, scroll down on the **Component Settings** until you see **Include Exclude Values**. Make sure to enable the option **Set include/exclude values**.
+
+![demo](./images/calcmetr4.png)
+
+As we only want to count **Product Views**, please specify **commerce.productViews** under the criteria.
+
+![demo](./images/calcmetr5.png)
+
+Your calculated metric is now ready!
+
+Next, repeat the same process for **Add to Cart** and **Purchase** events.
+
+### Add to Cart
+
+First drag and drop the same dimension **Event Type**.
+
+![demo](./images/calcmetr1.png)
+
+You will see a pop up alerting of a Duplicated Field as we are using the same variable. Please click on **Add Anyway**: 
+
+![demo](./images/calcmetr6.png)
+
+Now, follow the same process as we did for the metric Product Views:
+- First change the name and descritpion. 
+- Finally add **commerce.productListAdds** as criteria to count only Add To Cart
+
+| Name | Descritpion         | Criteria| 
+| ----------------- |-------------| -------------|
+| Add to Cart|Add to Cart | commerce.productListAdds     |
+
+![demo](./images/calcmetr6a.png)
+
+### Purchases
+
+First drag and drop the same dimension **Event Type** as we did for both previous metrics.
+
+![demo](./images/calcmetr1.png)
+
+You will see a pop up alerting of a Duplicated Field as we are using the same variable. Please click on **Add Anyway**: 
+
+![demo](./images/calcmetr7.png)
+
+Now, follow the same process as we did for the metrics Product Views and Add to cart:
+- First change the name and descritpion. 
+- Finally add **commerce.purchases** as criteria to count only Add To Carts
+
+| Name | Descritpion         | Criteria| 
+| ----------------- |-------------| -------------|
+| Purchases|Purchases | commerce.purchases     |
+
+![demo](./images/calcmetr7a.png)
+
+Your final configuration should then look similar to this this. Click **Save and continue**.
+
+![demo](./images/calcmetr8.png)
+
+## 11.3.5 Data View Settings
 
 You should be redirected to this screen:
 
