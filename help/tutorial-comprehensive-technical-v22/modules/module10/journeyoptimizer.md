@@ -42,7 +42,7 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 ## Exercises
 
-[10.1 Configure a trigger-based journey - Order Confirmation](./ex1.md)
+[10.1 Configure an event-based journey - Order Confirmation](./ex1.md)
 
 In this exercise, you'll configure a trigger-based journey to send out the email message you created in the previous exercise.
 

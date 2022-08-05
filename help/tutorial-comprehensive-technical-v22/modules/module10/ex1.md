@@ -17,25 +17,109 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ![ACOP](../module7/images/acoptriglp.png)
 
-## 10.1.1 Create your order confirmation message
+## 10.1.1 Create your event
 
-In the menu, click **Messages**. 
+In the menu, go to **Configurations** and click **Manage** under **Events**.
 
-On the Messages screen, you’ll see a view similar to this. Click **Create Message**.
+![Journey Optimizer](./images/oc30.png)
 
-![Journey Optimizer](./images/oc1.png)
+On the **Events** screen, you'll see a view similar to this. Click **Create Event**.
 
-Give your Message a title following this naming convention `--demoProfileLdap-- - Order Confirmation Email`, select the **Email Preset** and enable the **Email** channel. Click **Create** to create your Order Confirmation Email message.
+![Journey Optimizer](./images/oc31.png)
 
-![Journey Optimizer](./images/oc2.png)
+You'll then see an empty event configuration.
 
-The next screen is the message dashboard. On the right-hand side are the Email properties, make sure that the 2 checkboxes under **Optional features** are checked. If not, please **make sure they are both activated**. 
+![Journey Optimizer](./images/oc32.png)
 
-![Journey Optimizer](./images/oc3.png)
+First of all, give your Event a Name like this: `--demoProfileLdap--PurchaseEvent`, and add a description like this: `Purchase Event`.
 
-Click the **Subject line** text field.
+![Journey Optimizer](./images/oc34.png)
 
-![Journey Optimizer](./images/oc4.png)
+Next is the **Event Type** selection. Select **Unitary**.
+
+![Journey Optimizer](./images/eventidtype1.png)
+
+Next is the **Event ID Type** selection. Select **System Generated**
+
+![Journey Optimizer](./images/eventidtype.png)
+
+Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+
+![Journey Optimizer](./images/oc35.png)
+
+After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Click the **Edit/Pencil** icon to add additional fields to this event.
+
+![Journey Optimizer](./images/oc36.png)
+
+You'll then see this popup. You now need to check additional checkboxes in order to access additional data when this event gets triggered.
+
+![Journey Optimizer](./images/oc37.png)
+
+First of all, check the checkbox on the line `--aepTenantId--`.
+
+![Journey Optimizer](./images/oc38.png)
+
+Next, scroll down and check the checkbox on the line `productListItems`. 
+
+![Journey Optimizer](./images/oc39.png)
+
+Next, scroll down and check the checkbox on the line `commerce`. 
+
+![Journey Optimizer](./images/oc391.png)
+
+Next, click **Ok**.
+
+You'll then see that additional fields have been added to the event. Click **Save**.
+
+![Journey Optimizer](./images/oc40.png)
+
+Your new event is then shared and you'll see your event in the list of available events now.
+
+Click on your event again to open up the **Edit Event** screen again. 
+Hover over the **Payload** field again to see the 3 icons again. Click on the **View Payload** icon. 
+
+![Journey Optimizer](./images/oc41.png)
+
+You'll now see an example of the expected payload. Your event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see `_experience.campaign.orchestration.eventID`.
+
+![Journey Optimizer](./images/oc42.png)
+
+The event ID is what needs to be sent to Adobe Journey Optimizer in order to trigger the journey that you'll build in the next step. Write down this eventID, as you'll need it in one of the next steps.
+`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+
+Click **Ok**, followed by **Cancel**.
+
+Your event is now configured and ready to be used.
+
+## 10.1.2 Create your journey
+
+In the menu, go to **Journeys** and click **Create Journey**.
+
+![Journey Optimizer](./images/oc43.png)
+
+You'll then see this. Give your journey a name. Use `--demoProfileLdap-- - Order Confirmation journey`. Click **OK**.
+
+![Journey Optimizer](./images/oc45.png)
+
+First, you need to add your event as the starting point of your journey. Search for your event `--demoProfileLdap--PurchaseEvent` and drag and drop it onto the canvas. Click **OK**.
+
+![Journey Optimizer](./images/oc46.png)
+
+Next, under **Actions**, search for the **Email** action and add it onto the canvas.
+
+![Journey Optimizer](./images/oc47.png)
+
+Set the **Category** to **Marketing** and select an email surface that enables you to send email. In this case, the email surface to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
+
+![ACOP](./images/journeyactions1.png)
+
+The next step is to create your message. To do that, click **Edit content**.
+
+![ACOP](./images/journeyactions2.png)
+
+You now see this. Click the **Subject line** text field.
+
+![ACOP](./images/journeyactions3.png)
 
 In the text area start writing **Thanks for your order,**
 
@@ -147,172 +231,6 @@ You'll then have this. Click **Save** to save your progress.
 
 ![Journey Optimizer](./images/oc26.png)
 
-Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
-
-![Journey Optimizer](./images/oc27.png)
-
-You'll then see this. Click **Publish**.
-
-![Journey Optimizer](./images/oc28.png)
-
-Click **Publish** again to publish your message so you can use it in a journey.
-
-![Journey Optimizer](./images/oc29.png)
-
-In the next steps of creating your **Order Confirmation Email Message**, you'll need to use contextual event data. This contextual event data is provided from within the **Journey**. So before you can add that context, you'll need to setup an **Event** to trigger the journey, and build out the **Journey**. Once that's done, you'll come back to the **Message Designer** to update your message.
-
-## 10.1.2 Create your event
-
-In the menu, go to **Configurations** and click **Manage** under **Events**.
-
-![Journey Optimizer](./images/oc30.png)
-
-On the **Events** screen, you'll see a view similar to this. Click **Create Event**.
-
-![Journey Optimizer](./images/oc31.png)
-
-You'll then see an empty event configuration.
-
-![Journey Optimizer](./images/oc32.png)
-
-First of all, give your Event a Name like this: `--demoProfileLdap--PurchaseEvent`, and add a description like this: `Purchase Event`.
-
-![Journey Optimizer](./images/oc34.png)
-
-Next is the **Event Type** selection. Select **Unitary**.
-
-![Journey Optimizer](./images/eventidtype1.png)
-
-Next is the **Event ID Type** selection. Select **System Generated**
-
-![Journey Optimizer](./images/eventidtype.png)
-
-Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
-
-![Journey Optimizer](./images/oc35.png)
-
-After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Click the **Edit/Pencil** icon to add additional fields to this event.
-
-![Journey Optimizer](./images/oc36.png)
-
-You'll then see this popup. You now need to check additional checkboxes in order to access additional data when this event gets triggered.
-
-![Journey Optimizer](./images/oc37.png)
-
-First of all, check the checkbox on the line `--aepTenantId--`.
-
-![Journey Optimizer](./images/oc38.png)
-
-Next, scroll down and check the checkbox on the line `productListItems`. 
-
-![Journey Optimizer](./images/oc39.png)
-
-Next, scroll down and check the checkbox on the line `commerce`. 
-
-![Journey Optimizer](./images/oc391.png)
-
-Next, click **Ok**.
-
-You'll then see that additional fields have been added to the event. Click **Save**.
-
-![Journey Optimizer](./images/oc40.png)
-
-Your new event is then shared and you'll see your event in the list of available events now.
-
-Click on your event again to open up the **Edit Event** screen again. 
-Hover over the **Payload** field again to see the 3 icons again. Click on the **View Payload** icon. 
-
-![Journey Optimizer](./images/oc41.png)
-
-You'll now see an example of the expected payload. Your event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see `_experience.campaign.orchestration.eventID`.
-
-![Journey Optimizer](./images/oc42.png)
-
-The event ID is what needs to be sent to Adobe Journey Optimizer in order to trigger the journey that you'll build in the next step. Write down this eventID, as you'll need it in one of the next steps.
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
-
-Click **Ok**, followed by **Cancel**.
-
-Your event is now configured and ready to be used.
-
-## 10.1.3 Create your journey
-
-In the menu, go to **Journeys** and click **Create Journey**.
-
-![Journey Optimizer](./images/oc43.png)
-
-You'll then see this. Give your journey a name. Use `--demoProfileLdap-- - Order Confirmation journey`. Click **OK**.
-
-![Journey Optimizer](./images/oc45.png)
-
-First, you need to add your event as the starting point of your journey. Search for your event `--demoProfileLdap--PurchaseEvent` and drag and drop it onto the canvas. Click **OK**.
-
-![Journey Optimizer](./images/oc46.png)
-
-Next, under **Actions**, search for the **Message** action and add it onto the canvas.
-
-![Journey Optimizer](./images/oc47.png)
-
-Select the **Message** action, then click the **edit** icon to select your message.
-
-![Journey Optimizer](./images/oc48.png)
-
-Select the message you created in the previous step, `--demoProfileLdap-- - Order Confirmation Email`. Click **Select**.
-
-![Journey Optimizer](./images/oc49.png)
-
-You then have this. Click **Ok**.
-
-![Journey Optimizer](./images/oc50.png)
-
-Search for the orchestration type **End** and drag and drop it onto the canvas. Click **OK**.
-
-![Journey Optimizer](./images/oc51.png)
-
-Click **Publish** to publish your journey.
-
-![Journey Optimizer](./images/oc511.png)
-
-Click **Publish** again.
-
-![Journey Optimizer](./images/oc512.png)
-
-Your journey is now published.
-
-![Journey Optimizer](./images/oc513.png)
-
-Go back to the Journeys overview.
-
-![Journey Optimizer](./images/oc512a.png)
-
-Your journey is now published. Before you can use the journey, you still need to finish configuring your Order Confirmation Email message. To do that, you now need to provide the context of this journey to your message.
-
-## 10.1.4 Use journey context in email message
-
-From the Journeys overview, open your `--demoProfileLdap-- - Order Confirmation journey` again.
-
-![Journey Optimizer](./images/oc513a.png)
-
-Select the **Message** action again. Hover over the **Message** field and you'll see this option. Click **Open the message**.
-
-![Journey Optimizer](./images/oc52.png)
-
-You'll then be redirected here. Click **Modify**.
-
-![Journey Optimizer](./images/oc53.png)
-
-Click **Confirm**.
-
-![Journey Optimizer](./images/oc54.png)
-
-Click **Email Designer**.
-
-![Journey Optimizer](./images/oc55.png)
-
-You'll then be back in the Email Designer.
-
-![Journey Optimizer](./images/oc56.png)
-
 Go to **Content Components** and drag and drop an **HTML** component on the sixth row. Click the HTML component and then click **Show the source code**.
 
 ![Journey Optimizer](./images/oc57.png)
@@ -333,7 +251,7 @@ First, delete **xxx** in your HTML code first.
 
 ![Journey Optimizer](./images/oc60.png)
 
-Open the dropdown that says **Profile**. In that dropdown, select **Contextual attributes**. This context is passed to the message from the journey.
+In the left menu, click **Contextual attributes**. This context is passed to the message from the journey.
 
 ![Journey Optimizer](./images/oc601.png)
 
@@ -377,11 +295,11 @@ There are 2 references of **xxx** in this HTML code. You now have to replace eac
 
 ![Journey Optimizer](./images/oc69.png)
 
-First, delete the first **xxx** in your HTML code on line 2.
+First, delete the first **xxx** in your HTML code.
 
 ![Journey Optimizer](./images/oc71.png)
 
-In the dropdown menu, select **Contextual Attributes**.
+In the left menu, click **Contextual Attributes**.
 
 ![Journey Optimizer](./images/oc711.png)
 
@@ -417,11 +335,10 @@ Click the **+** icon next to **Price Total** again to add that to the canvas.
 
 ![Journey Optimizer](./images/oc77.png)
 
-You can also add the field **Currency** from within the **Order** object onto the canvas, as you can see here:
+You can also add the field **Currency** from within the **Order** object onto the canvas, as you can see here. 
+When you're done, click **Save** to save your changes.
 
 ![Journey Optimizer](./images/oc771.png)
-
-When you're done, click **Save** to save your changes.
 
 You'll then be back in the Email Designer. Click **Save** again.
 
@@ -431,33 +348,25 @@ Go back to the message dashboard by clicking the **arrow** next to the subject l
 
 ![Journey Optimizer](./images/oc79.png)
 
-You'll then see this. Click **Publish**.
+Click the arrow in the top left corner to go back to your journey.
 
-![Journey Optimizer](./images/oc80.png)
+![Journey Optimizer](./images/oc79a.png)
 
-Click **Publish** again to publish your message so you can use it in a journey.
+Click **Ok** to close your email action.
 
-![Journey Optimizer](./images/oc81.png)
+![Journey Optimizer](./images/oc79b.png)
 
-After making a change to the email message, you need to republish the journey so that it picks up the new fields and changes.
+Click **Publish** to publish your journey.
 
-To do so, go to **Journeys**. Click to open your journey `--demoProfileLdap-- - Order Confirmation journey`.
+![Journey Optimizer](./images/oc511.png)
 
-![Journey Optimizer](./images/oc83.png)
+Click **Publish** again.
 
-Click to open the dropdown next to **Duplicate** and select **Create a new version**.
+![Journey Optimizer](./images/oc512.png)
 
-![Journey Optimizer](./images/oc84.png)
+Your journey is now published.
 
-Click **Create a new version** again.
-
-![Journey Optimizer](./images/oc85.png)
-
-You'll then have a new version of your journey. Click **Publish** twice.
-
-![Journey Optimizer](./images/oc86.png)
-
-Your journey is now published and can be triggered. Before you can trigger it though, you need to update the data element in your Data Collection property.
+![Journey Optimizer](./images/oc513.png)
 
 ## 10.1.5 Update your Adobe Experience Platform Data Collection Client property
 
