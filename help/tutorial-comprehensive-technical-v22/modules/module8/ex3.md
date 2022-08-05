@@ -114,7 +114,7 @@ Your custom action is now part of the **Actions** list.
 
 You've defined events, an external data sources and actions. Now let's consolidate all of that in one journey.
 
-Next Step: [8.4 Create your SMS messages](./ex4.md)
+Next Step: [8.4 Create your journey and messages](./ex4.md)
 
 [Go Back to Module 8](journey-orchestration-external-weather-api-sms.md)
 

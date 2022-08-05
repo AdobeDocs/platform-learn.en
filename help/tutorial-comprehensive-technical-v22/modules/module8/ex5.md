@@ -1,429 +1,129 @@
 ---
-title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
-description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Design a trigger-based Customer Journey
+title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Trigger your Orchestrated Customer Journey
+description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Trigger your Orchestrated Customer Journey
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 46aa9a27-ec2e-4118-ac12-0bc44c5e0ad2
+exl-id: 4d92877d-8fdc-4902-ad32-7fa068bc1395
 ---
-# 8.5 Design a trigger-based journey
+# 8.5 Trigger your journey
 
-In this exercise, you'll create a journey by making use of Adobe Journey Optimizer.
+In this exercise, you'll test and trigger the journey you configured in this module.
 
-Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
+## 8.5.1 Update your geofence event configuration
 
-![ACOP](../module7/images/acophome.png)
+Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/launch/) and select **Tags**.
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+This is the Adobe Experience Platform Data Collection Properties page you saw before.
 
-![ACOP](../module7/images/acoptriglp.png)
+![Properties page](../module1/images/launch1.png) 
 
-In the left menu, go to **Journeys** and click **Create Journey** to start creating your Journey.
+In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--demoProfileLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
 
-![Demo](./images/jocreate.png)
-
-You should first name your journey.
-
-As a Name for the journey, use `--demoProfileLdap-- - Geofence Entry Journey`. In this example, the journey name is `vangeluw - Geofence Entry Journey`. No other values must be set at this moment. Click **OK**.
-
-![Demo](./images/joname.png)
-
-On the left side of your screen, have a look at **Events**. You should see your previously created event in that list. Select it, then drag and drop it on the journey canvas. Your journey then looks like this:
-
-![Demo](./images/joevents.png)
-
-Next, click on **Orchestration**. You now see the available **Orchestration** capabilities. Select **Condition**, then drag and drop it on the Journey Canvas.
-
-![Demo](./images/jo2.png)
-
-You now have to define three conditions:
-
-- It's colder than 10° Celsius
-- It's between 10° and 25° Celsius
-- It's warmer than 25° Celsius
-
-Let's define the first condition.
-
-## Condition 1: Colder than 10° Celsius
-
-Click on the **Condition**.  Click on **Path1** and edit the name of the path to **Colder than 10 C**. Click on the **Edit** icon for the expression of Path1.
-
-![Demo](./images/jo5.png)
-
-You'll then see an empty **Simple Editor** screen. Your query will be a bit more advanced, so you'll need the **Advanced Mode**. Click **Advanced Mode**.
-
-![Demo](./images/jo7.png)
-
-You'll then see the **Advanced Editor** which allows code entry.
-
-![Demo](./images/jo9.png)
-
-Select the below code and paste it in the **Advanced Editor**.
-
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 10`
+![Search box](../module1/images/property6.png)
 
 You'll then see this.
 
-![Demo](./images/jo10.png)
+![Launch Setup](./images/rule1.png)
 
-In order to retrieve the temperature as part of this condition, you need to provide the city in which the customer currently is.
-The **City** needs to be linked to the dynamic parameter `q`, just like we saw previously in the Open Weather API Documentation.
+In the left menu, go to **Rules** and search for the rule **Geofence event**. Click the rule **Geofence event** to open it.
 
-Click the field **dynamic val: q** as indicated in the screenshot.
+![Launch Setup](./images/rule2.png)
 
-![Demo](./images/jo11.png)
+You'll then see the details of this rule. Click to open the action **Send "geofence event" to AEP - trigger JO**.
 
-You then need to find the field that contains the current city of the customer in one of the available Data Sources.
+![Launch Setup](./images/rule3.png)
 
-![Demo](./images/jo12.png)
+You'll then see that when this action is triggered, a specific data element is used to define the XDM data structure. You need to update that data element, and you need to define the **Event ID** of the event that you configured in [Exercise 8.1](./ex1.md).
 
-You can find the field by navigating to `--demoProfileLdap--GeofenceEntry.placeContext.geo.city`.
+![Launch Setup](./images/rule4.png)
 
-By clicking that field, it will be added as the dynamic value for the parameter `q`. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
+You now need to go update the data element **XDM - Geofence Event**. To do so, go to **Data Elements**. Search for **XDM - Geofence Event** and click to open that data element.
 
-![Demo](./images/jo13.png)
+![Launch Setup](./images/rule5.png)
 
-## Condition 2: Between 10° and 25° Celsius
+You'll then see this:
 
-After having added the first condition, you'll see this screen. Click **Add Path**.
+![Launch Setup](./images/rule6.png)
 
-![Demo](./images/joc2.png)
+Navigate to the field `_experience.campaign.orchestration.eventID`. Remove the current value, and paste your eventID there.
 
-Double click on **Path1** and edit the path name to **Between 10 and 25 C**. Click the **Edit** icon for the expression this path.
+As a reminder, the Event ID can be found in Adobe Journey Optimizer under **Configurations > Events** and you'll find the event ID in the sample payload of your even, which looks like this: `"eventID": "fa42ab7982ba55f039eacec24c1e32e5c51b310c67f0fa559ab49b89b63f4934"`. 
 
-![Demo](./images/joc6.png)
+![ACOP](./images/payloadeventID.png)
 
-You'll then see an empty **Simple Editor** screen. Your query will be a bit more advanced, so you'll need the **Advanced Mode**. Click **Advanced Mode**.
+Next, you should define your city in this data element. Go to **placeContext > geo > city** and enter a city of choice. Next, click **Save** or **Save to Library**.
 
-![Demo](./images/jo7.png)
+![ACOP](./images/payloadeventIDgeo.png)
 
-You'll then see the **Advanced Editor** which allows code entry.
+Finally, you need to publish your changes. Go to **Publishing Flow** in the left menu.
 
-![Demo](./images/jo9.png)
+![Launch Setup](./images/rule8.png)
 
-Select the below code and paste it in the **Advanced Editor**.
+Click **Add All Changed Resources** and then click **Save & Build to Development**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 10 and #{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 25`
+![Launch Setup](./images/rule9.png)
 
-You'll then see this.
+## 8.5.2 Trigger your journey
 
-![Demo](./images/joc10.png)
+Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
 
-In order to retrieve the temperature as part of this Condition, you need to provide the city in which the customer currently is.
-The **City** needs to be linked to the dynamic parameter **q**, just like we saw previously in the Open Weather API Documentation.
+![DSN](../module0/images/web8.png)
 
-Click the field **dynamic val: q** as indicated in the screenshot.
+On the **Screens** page, click **Run**. 
 
-![Demo](./images/joc11.png)
+![DSN](../module1/images/web2.png)
 
-You then need to find the field that contains the current city of the customer in one of the available Data Sources.
+You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-![Demo](./images/jo12.png)
+![DSN](../module0/images/web3.png)
 
-You can find the field by navigating to `--demoProfileLdap--GeofenceEntry.placeContext.geo.city`. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
+Open a new incognito browser window.
 
-![Demo](./images/jo13.png)
+![DSN](../module0/images/web4.png)
 
-Next, you'll add the 3rd condition.
+Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-## Condition 3: Warmer than 25° Celsius
+![DSN](../module0/images/web5.png)
 
-After having added the second condition, you'll see this screen. Click **Add Path**.
+Select your account type and complete the login process.
 
-![Demo](./images/joct2.png)
+![DSN](../module0/images/web6.png)
 
-Double click on Path1 to change the name to **Warmer than 25 C**. 
-Then click on the **Edit** icon for the expression this path.
+You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
-![Demo](./images/joct6.png)
+![DSN](../module0/images/web7.png)
 
-You'll then see an empty **Simple Editor** screen. Your query will be a bit more advanced, so you'll need the **Advanced Mode**. Click **Advanced Mode**.
+Click the Adobe logo icon in the top left corner of your screen to open the Profile Viewer.
+  
+![Demo](../module2/images/pv1.png)
 
-![Demo](./images/jo7.png)
+Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for thi currently unknown customer.
+      
+![Demo](../module2/images/pv2.png)
 
-You'll then see the **Advanced Editor** which allows code entry.
+Go to the Register/Login page. Click **CREATE AN ACCOUNT**.
+  
+![Demo](../module2/images/pv9.png)
+  
+Fill out your details and click **Register** after which you'll be redirected to the previous page. 
 
-![Demo](./images/jo9.png)
+![Demo](../module2/images/pv10.png)
 
-Select the below code and paste it in the **Advanced Editor**.
+Open the Profile Viewer panel and go to Real-time Customer Profile. On the Profile Viewer panel, you should see all of your personal data displayed, like your newly added email and phone identifiers.
+  
+![Demo](../module2/images/pv11.png)
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 25`
+On the Profile Viewer panel, click **UTILITIES**. Enter `geofenceevent` and click **Send**.
 
-You'll then see this.
+![Demo](./images/smsdemo1.png)
 
-![Demo](./images/joct10.png)
+A couple of seconds later, you'll receive an SMS from Adobe Journey Optimizer.
 
-In order to retrieve the temperature as part of this Condition, you need to provide the city in which the customer currently is.
-The **City** needs to be linked to the dynamic parameter **q**, just like we saw previously in the Open Weather API Documentation.
+![Demo](./images/smsdemo4.png)
 
-Click the field **dynamic val: q** as indicated in the screenshot.
-
-![Demo](./images/joct11.png)
-
-You then need to find the field that contains the current city of the customer in one of the available Data Sources.
-
-![Demo](./images/jo12.png)
-
-You can find the field by navigating to ```--demoProfileLdap--GeofenceEntry.placeContext.geo.city```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
-
-![Demo](./images/jo13.png)
-
-You now have three configured paths. Click **Ok**.
-
-![Demo](./images/jo3path.png)
-
-As this is a journey for learning purpose, we'll now configure a couple of actions to showcase the variety of options marketeers now have to deliver messages.
-
-## Send messages for path Colder than 10° Celsius
-
-For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
-
-Let's focus on **Colder than 10 C**.
-
-![Demo](./images/p1steps.png)
-
-Let's take another **Condition** element and drag it as indicated in the screenshot below. We'll verify if for this customer, we have a mobile number available.
-
-![Demo](./images/joa1.png)
-
-As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
-
-Click on the **Edit** icon for the Expression for the **Path1** path.
-
-![Demo](./images/joa2.png)
-
-In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. You're now reading the mobile phone number directly from Adobe Experience Platform's Real-time Customer Profile.
-
-![Demo](./images/joa3.png)
-
-Select the field **Number**, then drag and drop it to the Condition Canvas.
-
-Select the operator **is not empty**. Click **Ok**.
-
-![Demo](./images/joa4.png)
-
-You'll then see this. Click **OK** again.
-
-![Demo](./images/joa6.png)
-
-Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
-
-![Demo](./images/joa8.png)
-
-Select the action **Message**, then drag and drop it after the condition you just added.
-
-![Demo](./images/joa9.png)
-
-Click the **Edit** icon to select your message.
-
-![Demo](./images/joa10.png)
-
-You'll then see this. Select the message `--demoProfileLdap-- - Weather <10` and click **Select**.
-
-![Demo](./images/joa10a.png)
-
-You'll now see your completed action. Click **Ok**.
-
-![Demo](./images/joa17.png)
-
-In the left menu, go back to **Actions**, select the Action `--demoProfileLdap--TextSlack`, then drag and drop it after the **Message** action.
-
-![Demo](./images/joa18.png)
-
-Go to **Action Parameters** and click the **Edit** icon for the parameter `TEXTTOSLACK`.
-
-![Demo](./images/joa19.png)
-
-In the popup-window, click **Advanced Mode**.
-
-![Demo](./images/joa20.png)
-
-Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
-
-`"Brrrr..." + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " It's freezing. 20% discount on Jackets today!"`
-
-![Demo](./images/joa21.png)
-
-You will see your completed action. Click **Ok**.
-
-![Demo](./images/joa22.png)
-
-In the left menu, go to **Orchestration**, select **End**, then drag and drop **End** after the `--demoProfileLdap--TextSlack` action.
-
-![Demo](./images/joa23.png)
-
-## Send messages for path Between 10° and 25° Celsius
-
-For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a mobile number available for a customer, so we'll first have to verify that we do.
-
-Let's focus on **Between 10 and 25 C** path.
-
-![Demo](./images/p2steps.png)
-
-Let's take another **Condition** element and drag it as indicated in the screenshot above. We'll verify if for this customer, we have a mobile number available.
-
-![Demo](./images/jop1.png)
-
-As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
-
-Click on the **Edit** icon for the Expression for the **Path1** path.
-
-![Demo](./images/joa2p2.png)
-
-In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. You're now reading the mobile phone number directly from Adobe Experience Platform's Real-time Customer Profile.
-
-![Demo](./images/joa3.png)
-
-Select the field **Number**, then drag and drop it to the Condition Canvas.
-
-Select the operator **is not empty**. Click **Ok**.
-
-![Demo](./images/joa4.png)
-
-You'll then see this. Click **Ok**.
-
-![Demo](./images/joa6.png)
-
-Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
-
-![Demo](./images/jop8.png)
-
-Select the action **Message**, then drag and drop it after the condition you just added.
-
-![Demo](./images/jop9.png)
-
-Click the **Edit** icon to select your message.
-
-![Demo](./images/jop10.png)
-
-You'll then see this. Select the message `--demoProfileLdap-- - Weather 10-25` and click **Select**.
-
-![Demo](./images/jop10a.png)
-
-You'll now see your completed action. Click **Ok**.
-
-![Demo](./images/jop17.png)
-
-In the left menu, go back to **Actions**, select the Action `--demoProfileLdap--TextSlack`, then drag and drop it after the **Message** action.
-
-![Demo](./images/jop18.png)
-
-Go to **Action Parameters** and click the **Edit** icon for the parameter `TEXTTOSLACK`.
-
-![Demo](./images/joa19.png)
-
-In the popup-window, click **Advanced Mode**.
-
-![Demo](./images/joa20.png)
-
-Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
-
-`"What nice weather for the time of year, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " 20% discount on Sweaters today!"`
-
-![Demo](./images/jop21.png)
-
-You will see your completed action. CLick **Ok**.
-
-![Demo](./images/jop22.png)
-
-In the left menu, go to **Orchestration**, select **End**, then drag and drop **End** after the `--demoProfileLdap--TextSlack` action.
-
-![Demo](./images/jop23.png)
-
-## Send messages for path Warmer than 25° Celsius
-
-For each of the temperature contexts, we'll attempt to send an SMS Message to our customer. We can only send an SMS if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
-
-Let's focus on **Warmer than 25 C** path.
-
-![Demo](./images/p3steps.png)
-
-Let's take another **Condition** element and drag it as indicated in the screenshot above. You'll verify if for this customer, you have a mobile number available.
-
-![Demo](./images/jod1.png)
-
-As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
-
-Click on the **Edit** icon for the Expression for the **Path1** path.
-
-![Demo](./images/joa2p3.png)
-
-In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. You're now reading the mobile phone number directly from Adobe Experience Platform's Real-time Customer Profile.
-
-![Demo](./images/joa3.png)
-
-Select the field **Number**, then drag and drop it to the Condition Canvas.
-
-Select the operator **is not empty**. Click **Ok**.
-
-![Demo](./images/joa4.png)
-
-You'll then see this. Click **OK**.
-
-![Demo](./images/joa6.png)
-
-Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
-
-![Demo](./images/jod8.png)
-
-Select the action **Message**, then drag and drop it after the condition you just added.
-
-![Demo](./images/jod9.png)
-
-Click the **Edit** icon to select your message.
-
-![Demo](./images/jod10.png)
-
-You'll then see this. Select the message `--demoProfileLdap-- - Weather >25` and click **Select**.
-
-![Demo](./images/jod10a.png)
-
-You'll now see your completed action. Click **Ok**.
-
-![Demo](./images/jod17.png)
-
-In the left menu, go back to **Actions**, select the Action `--demoProfileLdap--TextSlack`, then drag and drop it after the **Messages** action.
-
-![Demo](./images/jod18.png)
-
-Go to **Action Parameters** and click the **Edit** icon for the parameter `TEXTTOSLACK`.
-
-![Demo](./images/joa19.png)
-
-In the popup-window, click **Advanced Mode**.
-
-![Demo](./images/joa20.png)
-
-Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
-
-`"So warm, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + "! 20% discount on swimwear today!"`
-
-![Demo](./images/jod21.png)
-
-You will see your completed action. Click **Ok**.
-
-![Demo](./images/jod22.png)
-
-In the left menu, go to **Orchestration**, select **End**, then drag and drop **End** after the `--demoProfileLdap--TextSlack` action.
-
-![Demo](./images/jod23.png)
-
-Your journey is now fully configured. Click **Publish**.
-
-![Demo](./images/jodone.png)
-
-Click **Publish** again.
-
-![Demo](./images/jopublish1.png)
-
-Your journey is now published.
-
-![Demo](./images/jopublish2.png)
-
-In the next exercise, you'll be able to test your Journey.
-
-Next Step: [8.6 Update your Data Collection property and test your Journey](./ex6.md)
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 8](journey-orchestration-external-weather-api-sms.md)
 
