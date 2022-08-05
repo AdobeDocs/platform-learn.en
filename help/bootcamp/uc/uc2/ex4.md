@@ -5,6 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: e4464502-60c8-4fba-a429-169b7a4516c8
 ---
 # 2.4 Test your journey
 
