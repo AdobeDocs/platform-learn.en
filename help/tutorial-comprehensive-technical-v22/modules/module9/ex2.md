@@ -20,6 +20,8 @@ In this exercise, you'll create four **Personalized Offers**. Here are the detai
 |`--demoProfileLdap-- - Zeppelin Yoga Pant` | today - 1 month later | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd|`{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant`| 25 | all - Male Customers | English (United States) |
 |`--demoProfileLdap-- - Proteus Fitness Jackshirt` | today - 1 month later | https://bit.ly/330a43n |https://bit.ly/36USaQW| `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt`| 15 | all - Male Customers  | English (United States) |
 
+{style="table-layout:auto"}
+
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
 ![ACOP](../module7/images/acophome.png)

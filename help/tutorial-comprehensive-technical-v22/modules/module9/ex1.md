@@ -28,6 +28,8 @@ Working with Offer Decisioning, you need to understand the following concepts:
 | **Decision**              | A combination of a set of offers, placement and profile the marketer wants the decision engine to provide the best offer for.                                                                                                                            |
 | **AEM Assets Essentials** | A universal and centralized experience for storing, finding, and selecting assets across Adobe Experience Cloud Solutions and Adobe Experience Platform.                                                                                                 |
 
+{style="table-layout:auto"}
+
 ## 9.1.2 Offer Decisioning
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
@@ -67,6 +69,8 @@ If you don't see any placements in your Adobe Experience Platform instance, plea
 | **Email - HTML**       | Email        | HTML         |
 | **Email - Text**       | Email        | Text         |
 | **Email - Image**      | Email        | Image        |
+
+{style="table-layout:auto"}
 
 **Note**: Please do not change anything to the placements already available.
 

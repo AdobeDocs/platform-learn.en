@@ -11,27 +11,31 @@ exl-id: 0fb8c244-1025-479f-b82e-374d1aa5e4dc
 
 In this exercise, you'll use your decision to personalize the delivery of an email and SMS.
 
-Go to **Messages**. Find the message that you have created in a previous exercise; which is named `--demoProfileLdap-- - Registration Email`. Click your message to open it. 
+Go to **Journeys**. Find the journey you created in exercise 7.2, which is named `--demoProfileLdap-- - Account Creation Journey`. Click your journey to open it. 
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
-You'll then see the message dashboard. Click **Modify**. 
+You'll then see this. Click **Create a new version**.
+
+![Journey Optimizer](./images/journey1.png)
+
+Click **Create a new version**.
+
+![Journey Optimizer](./images/journey2.png)
+
+Click the **Email** action and then click **Edit content**.
+
+![Journey Optimizer](./images/journey3.png)
+
+You'll then see the message dashboard. Click **Email Designer**.
 
 ![Journey Optimizer](./images/emailoffer2.png)
-
-Click **Confirm**.
-
-![Journey Optimizer](./images/emailoffer3.png)
-
-Click **Email Designer**.
-
-![Journey Optimizer](./images/emailoffer4.png)
 
 You'll then see this.
 
 ![Journey Optimizer](./images/emailoffer5.png)
 
-You'll then see this.
+You'll then see this. Drag a new **1:1 column** structure component onto the canvas.
 
 ![Journey Optimizer](./images/emailoffer6.png)
 
@@ -43,7 +47,7 @@ Select the type of placement that you want to include in the email. In the **Pla
 
 ![Journey Optimizer](./images/emailoffer8.png)
 
-You now see all personalized offers and the fallback offer being visualized inside the email designer. Click  **Preview** to preview the email message with a real customer profile.
+You now see all personalized offers and the fallback offer being visualized inside the email designer. Click  **Simulate Content** to preview the email message with a real customer profile.
 
 ![Journey Optimizer](./images/emailoffer9.png)
 
@@ -63,9 +67,17 @@ Now, click the arrow to go back to the previous screen.
 
 ![Journey Optimizer](./images/emailoffer13.png)
 
-Click **Publish** to publish your message again.
+You'll then see this. Click the arrow in the top left corner to go back to your journey.
 
 ![Journey Optimizer](./images/emailoffer14.png)
+
+Click **Ok** to close your **Email** action.
+
+![Journey Optimizer](./images/emailoffer14a.png)
+
+Click **Publish** to publish your updated journey.
+
+![Journey Optimizer](./images/emailoffer14b.png)
 
 Confirm by clicking **Publish** again.
 
