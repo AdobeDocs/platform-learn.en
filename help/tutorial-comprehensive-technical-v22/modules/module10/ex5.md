@@ -37,74 +37,44 @@ Enter the following values in the Event creation form:
 
 ![Journey Optimizer](./images/evde.png)
 
-- Schema: Select **Demo System - Event Schema for JO Business Events (Global v1.1) v.1**. You now need to select the fields in the schema that you require for our use case. 
+For the Schema, select **Demo System - Event Schema for JO Business Events (Global v1.1) v.1**. You now need to select the fields in the schema that you require for our use case. 
 
-  ![Journey Optimizer](./images/evdes.png)
+![Journey Optimizer](./images/evdes.png)
 
-  Follow these steps:
+Follow these steps:
 
-  Click the **pencil** icon on the field where it says **1 field selected**.
+Click the **pencil** icon on the field where it says **1 field selected**.
 
-  ![Journey Optimizer](./images/23.8-4.png)
+![Journey Optimizer](./images/23.8-4.png)
 
-  Select all available fields in the schema, then click **OK**.
+Select all available fields in the schema, then click **OK**.
 
-  ![Journey Optimizer](./images/23.8-5.png)
+![Journey Optimizer](./images/23.8-5.png)
 
-- Condition: you need to specify which records in this schema will be triggering the business event. 
+For the condition: you need to specify which records in this schema will be triggering the business event. 
   
-  Follow these steps:
+Follow these steps:
 
-  Click the **pencil** icon on the field where it says **Add a condition**.
+Click the **pencil** icon on the field where it says **Add a condition**.
 
-  ![Journey Optimizer](./images/23.8-6.png)
+![Journey Optimizer](./images/23.8-6.png)
 
-  On the left-hand side, expand the `--aepTenantId--` object, expand the object **joBusinessEvents** and drag and drop the field **eventName** onto the canvas.
+On the left-hand side, expand the `--aepTenantId--` object, expand the object **joBusinessEvents** and drag and drop the field **eventName** onto the canvas.
 
-  ![Journey Optimizer](./images/23.8-7.png)
+![Journey Optimizer](./images/23.8-7.png)
 
-  For the field **eventName**, enter the following value: `--demoProfileLdap--ItemBackInStock`. For instance: vangeluwItemBackInStock.
-  Click **OK**.
+For the field **eventName**, enter the following value: `--demoProfileLdap--ItemBackInStock`. For instance: vangeluwItemBackInStock.
+Click **OK**.
 
-  ![Journey Optimizer](./images/23.8-8.png)
+![Journey Optimizer](./images/23.8-8.png)
 
-  Click **OK**.
+Click **OK**.
 
-  ![Journey Optimizer](./images/23.8-9.png)
+![Journey Optimizer](./images/23.8-9.png)
 
 Finally your event creation form should look like this. Click **Save** to save your business event.
 
 ![Journey Optimizer](./images/23.8-10.png)
-
-## 10.5.2 Create an SMS message
-
-In the left menu, go to **Messages** and click **Create Message**.
-
-![AJO](./images/sms1.png)
-
-Give your Message a title following this naming convention `--demoProfileLdap-- - Item back in stock`, select the **SMS Preset** and enable the **SMS** channel. Click on the **Create** button to create your SMS message.
-
-![Journey Optimizer](./images/sms2.png)
-
-The next screen is the message dashboard, where you can configure the text of your SMS. Click the **Compose message** area to create your message.
-
-![Journey Optimizer](./images/sms3.png)
-
-Enter the following text: `Hi {{profile.person.name.firstName}}, the Proteus Fitness Jackshirt is back in stock at Luma.`. Click **Save**.
-
-![Journey Optimizer](./images/sms4.png)
-
-This message is now ready. Click **Publish**.
-
-![Journey Optimizer](./images/sms5.png)
-
-Click **Publish** again.
-
-![Journey Optimizer](./images/sms6.png)
-
-Your message is now published and can be used in a journey.
-
-![Journey Optimizer](./images/sms7.png)
 
 ## 10.5.2 Create a business event journey
 
@@ -140,23 +110,33 @@ Next, click **Ok**.
 
 ![Journey Optimizer](./images/bej15.png)
 
-The next step is to drag and drop the action that we want to perform in this journey. Select the action **Message**, then drag and drop it after the condition you just added. Click the **Edit** icon to select your message.
+The next step is to drag and drop the action that we want to perform in this journey. Select the action **SMS**, then drag and drop it after the condition you just added. 
 
 ![Demo](./images/jop9.png)
 
-You'll then see this. Select the message `--demoProfileLdap-- - Item back in stock` and click **Select**.
+Set the **Category** to **Marketing** and select a sms surface that enables you to send sms. In this case, the email surface to select is **SMS**. 
 
-![Demo](./images/jop10a.png)
+![ACOP](./images/journeyactions1x.png)
 
-You'll now see your completed action. Click **Ok**.
+The next step is to create your message. To do that, click **Edit content**.
 
-You’ll then see a panel on the right-hand side where you can configure the action.
+![ACOP](./images/journeyactions2x.png)
 
-![Demo](./images/jop10b.png)
+You'll now see the message dashboard, where you can configure the text of your SMS. Click the **Compose message** area to create your message.
 
-In the menu, click **Orchestration** and drag and drop **End** onto the canvas. Click **Ok**.
+![Journey Optimizer](./images/sms3.png)
 
-![Journey Optimizer](./images/jop12.png)
+Enter the following text: `Hi {{profile.person.name.firstName}}, the Proteus Fitness Jackshirt is back in stock at Luma.`. Click **Save**.
+
+![Journey Optimizer](./images/sms4.png)
+
+Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
+
+![Journey Optimizer](./images/oc79xx.png)
+
+You'll now see your completed SMS action. Click **Ok**.
+
+![Journey Optimizer](./images/oc79xxy.png)
 
 Your journey is now ready to be published. Click **Publish**.
 
@@ -167,6 +147,8 @@ Click **Publish** again.
 ![Journey Optimizer](./images/jop14.png)
 
 Your journey is now published, you can now test it!
+
+![Journey Optimizer](./images/jop15.png)
 
 ## 10.5.3 Test your business event journey
 

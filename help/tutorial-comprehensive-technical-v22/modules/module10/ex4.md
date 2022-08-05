@@ -33,9 +33,13 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 Adobe Journey Optimizer uses datasets to store things like the push tokens from mobile devices or interactions with push messages (such as: message sent, message opened, etc) in a dataset in Adobe Journey Optimizer.
 
-You can find these datasets by going to **[!UICONTROL Datasets]** in the menu on the left side of your screen.
+You can find these datasets by going to **[!UICONTROL Datasets]** in the menu on the left side of your screen. To show system datasets, click the filter icon.
 
 ![Data Ingestion](./images/menudsjo.png)
+
+Enable the option **Show system datasets** and search for **AJO**. You'll then see the datasets used for push notifications.
+
+![Data Ingestion](./images/menudsjo1.png)
 
 ## 10.4.2 Datastream for Mobile
 
@@ -45,7 +49,7 @@ In the left menu, go to **[!UICONTROL Datastream]** and search for your datastre
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
 
-Click **[!UICONTROL Development Environment]**.
+Click **Edit** on the **Adobe Experience Platform** service.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
@@ -211,63 +215,7 @@ You'll then see a push notification like this one appear on your mobile device.
 
 If you've received the push notification, that means that your setup is correct and working fine.
 
-## 10.4.6 Create a push message
-
-Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
-
-![ACOP](../module7/images/acophome.png)
-
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
-
-![ACOP](../module7/images/acoptriglp.png)
-
-In the left menu, go to **Messages** and click **Create Message**.
-
-![Push](./images/bp1.png)
-
-Fill out the name using this convention: `--demoProfileLdap-- - Welcome to store`. Check the checkbox for **Push Notification** and select the preset named **Push**. Click **Create**.
-
-![Push](./images/bp3.png)
-
-You'll then see this. Click the **personalization** icon for the **Title** field.
-
-![Push](./images/bp5.png)
-
-You'll then see this. You can now select any Profile attribute from the Real-time Customer Profile directly.
-
-![Push](./images/bp6.png)
-
-Search for the field **First Name**, then click the **+** icon next to the field **First Name**. You'll then see the personalization token for First Name being added: **{{profile.person.name.firstName}}**.
-
-![Push](./images/bp9.png)
-
-Next, add the text **, welcome to our store!** behind **{{profile.person.name.firstName}}**.
-
-Click **Save**.
-
-![Push](./images/bp10.png)
-
-You now have this. Click the **personalization** icon for the **Body** field.
-
-![Push](./images/bp11.png)
-
-Enter this text **Click here to get a 10% discount when you buy today!** and click **Save**.
-
-![Push](./images/bp12.png)
-
-Your Push message is now ready. Click **Publish** to publish your message.
-
-![Push](./images/bp13.png)
-
-Click **Publish** again.
-
-![Push](./images/bp14.png)
-
-Your message is now ready and can be used in a journey.
-
-![Push](./images/bp15.png)
-
-## 10.4.7 Create a new event
+## 10.4.6 Create a new event
 
 In the menu, go to **Journey Administration** and click **Manage** under **Events**.
 
@@ -326,7 +274,7 @@ The event ID is what needs to be sent to Adobe Experience Platform in order to t
 
 Click **Ok**, followed by **Cancel**.
 
-## 10.4.8 Use your event and push message in a journey
+## 10.4.7 Create a journey
 
 In the menu, go to **Journeys** and click **Create Journey**.
 
@@ -340,36 +288,66 @@ First, you need to add your event as the starting point of your journey. Search 
 
 ![DSN](./images/sjourney4.png)
 
-Next, under **Actions**, search for the **Message** action.
-Drag and drop the **Message** action onto the canvas.
+Next, under **Actions**, search for the **Push** action.
+Drag and drop the **Push** action onto the canvas.
 
 ![DSN](./images/sjourney5.png)
 
-Click the **edit** icon to select your message.
+Set the **Category** to **Marketing** and select a push surface that enables you to send push notifications. In this case, the email surface to select is **Push-iOS-Android**.
 
-![DSN](./images/sjourney6.png)
+![ACOP](./images/journeyactions1push.png)
 
-Select the push message you created in the previous step. Click **Select**.
+The next step is to create your message. To do that, click **Edit content**.
 
-![DSN](./images/sjourney7.png)
+![ACOP](./images/journeyactions2push.png)
 
-You then have this. Click **OK**.
+You'll then see this. Click the **personalization** icon for the **Title** field.
+
+![Push](./images/bp5.png)
+
+You'll then see this. You can now select any Profile attribute from the Real-time Customer Profile directly.
+
+![Push](./images/bp6.png)
+
+Search for the field **First Name**, then click the **+** icon next to the field **First Name**. You'll then see the personalization token for First Name being added: **{{profile.person.name.firstName}}**.
+
+![Push](./images/bp9.png)
+
+Next, add the text **, welcome to our store!** behind **{{profile.person.name.firstName}}**.
+
+Click **Save**.
+
+![Push](./images/bp10.png)
+
+You now have this. Click the **personalization** icon for the **Body** field.
+
+![Push](./images/bp11.png)
+
+Enter this text **Click here to get a 10% discount when you buy today!** and click **Save**.
+
+![Push](./images/bp12.png)
+
+You'll then have this. Click the arrow in the top left corner to go back to your journey.
+
+![Journey Optimizer](./images/bp12a.png)
+
+Click **OK** to close your push action.
 
 ![DSN](./images/sjourney8.png)
 
-Search for the orchestration type **End** and drag and drop it onto the canvas. Click **OK**.
-
-![DSN](./images/sjourney9.png)
-
-Click **Publish** twice.
+Click **Publish**.
 
 ![DSN](./images/sjourney10.png)
+
+Click **Publish** again.
+
+![DSN](./images/sjourney10a.png)
 
 Your journey is now published.
 
 ![DSN](./images/sjourney11.png)
 
-## 10.4.9 Test your journey and push message
+## 10.4.8 Test your journey and push message
 
 In your DX Demo 2.0 mobile application, go to the **Settings** screen. Click the **Store Entry** button.
 

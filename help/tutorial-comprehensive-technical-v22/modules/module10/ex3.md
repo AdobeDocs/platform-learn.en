@@ -11,31 +11,31 @@ exl-id: 573ecfba-4f1d-4242-8358-1d33109aaea3
 
 Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.
 
-![Journey Optimizer](./images/23.1-1.png)
+![ACOP](../module7/images/acophome.png)
 
-You'll be redirected to the **Home** view in Journey Optimizer.
+You'll be redirected to the **Home** view in Journey Optimizer. Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepTenantId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
 
-![Journey Optimizer](./images/23.1-3.png)
-
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepTenantId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
-
-![Journey Optimizer](./images/23.1-3a.png)
+![ACOP](../module7/images/acoptriglp.png)
 
 ## 10.3.1 Segment-based personalization
 
 In this exercise you'll improve your newsletter email message with a personalized text based on segment membership.
 
-Go to **Messages**. Find the newsletter email that you have created in the previous exercise. Search for `--demoProfileLdap-- - Newsletter`. Click your message to open it. 
+Go to **Journeys**. Find the newsletter journey that you have created in the previous exercise. Search for `--demoProfileLdap-- - Newsletter`. Click your journey to open it. 
 
 ![Journey Optimizer](./images/sbp1.png)
 
-You'll then see the message dashboard. Click **Modify**. 
+You'll then see this. Click **Duplicate**. 
 
 ![Journey Optimizer](./images/sbp2.png)
 
-Click **Confirm**.
+Click ** Duplicate**.
 
 ![Journey Optimizer](./images/sbp3.png)
+
+Select your **Email** action and click **Edit content**.
+
+![Journey Optimizer](./images/sbp3a.png)
 
 Click **Email Designer**.
 
@@ -57,7 +57,7 @@ You'll then see this:
 
 ![Journey Optimizer](./images/seg1.png)
 
-Open the dropdown menu and select **Segment Membership**.
+In the left menu, click **Segment Memberships**.
 
 ![Journey Optimizer](./images/seg2.png)
 
@@ -86,43 +86,29 @@ Click **Validate** to make sure the code is correct. Click **Save**.
 
 ![Journey Optimizer](./images/sbp8.png)
 
-You can now save this message by clicking the **Save** button in the top-right corner. Then, click **Preview**.
+You can now save this message by clicking the **Save** button in the top-right corner. Then, click **Simulate Content**.
 
 ![Journey Optimizer](./images/sbp9.png)
 
-Select one of the profiles you created as part of this tutorial and click **Preview**. You'll then see the result of your configuration. Then, click **Close**.
+Select one of the profiles you created as part of this tutorial and click **Preview**. You'll then see the result of your configuration. 
 
 ![Journey Optimizer](./images/sbp10.png)
+
+You'll then see this. Then, click **Close**.
+
+![Journey Optimizer](./images/sbp10fff.png)
 
 Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
 
 ![Journey Optimizer](./images/sbp11.png)
 
-You now need to re-publish your journey. Click **Publish**. 
+Click the arrow in the top left corner to go back to your journey.
 
-![Journey Optimizer](./images/sbp12.png)
+![Journey Optimizer](./images/oc79afff.png)
 
-Click **Publish** again.
+Click **Ok** to close your email action.
 
-![Journey Optimizer](./images/sbp13.png)
-
-Once your message is published, go to **Journeys**. Find the newsletter journey you just created (you can search for `--demoProfileLdap - Newsletter Journey - Newsletter`. The journey status could be **Live**, or **Closed**. If the journey has already run. A closed journey can't be changed anymore. 
-
-![Journey Optimizer](./images/sbp14.png)
-
-Click on the 3 dots next to your journey name and click on **Duplicate**. This will create a copy of your journey.
-
-![Journey Optimizer](./images/sbp15.png)
-
-You'll now see your duplicated journey in the list which is named like the initial journey with a **_Copy** suffix. For example `--demoProfileLdap-- - Newsletter_Copy`. Click to open this journey.
-
-![Journey Optimizer](./images/sbp16.png)
-
-First let's change the name of this journey. Click the **pencil** icon to edit your journey properties.
-
-![Journey Optimizer](./images/sbp17.png)
-
-Rename your journey, use this new name: `--demoProfileLdap-- - Newsletter with segment-based personalization`. For example: vangeluw - Newsletter with segment-based personalization. 
+![Journey Optimizer](./images/oc79bfff.png)
 
 Change your **Schedule** to **Once** and define a **Date/Time**. Click **Ok**.
 
@@ -141,6 +127,8 @@ In the pop-up window, click **Publish** again.
 ![Journey Optimizer](./images/sbp20.png)
 
 Your basic newsletter journey is now published. Your newsletter email message will be sent based on your schedule and your journey will stop as soon as the last email has been sent.
+
+![Journey Optimizer](./images/sbp20fff.png)
 
 You have finished this exercise.
 
