@@ -47,15 +47,11 @@ For this module, please use this sandbox: `--aepSandboxId--`.
 
 In this exercise, you'll learn how to configure an event.
 
-[7.2 Create your email message](./ex2.md)
+[7.2 Create your journey and email message](./ex2.md)
 
 In this exercise, you'll learn how to configure an email message.
 
-[7.3 Create your journey](./ex3.md)
-
-In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
-
-[7.4 Update your Data Collection property and test your journey](./ex4.md)
+[7.3 Update your Data Collection property and test your journey](./ex3.md)
 
 This will guide you through the configuration of Launch to trigger your event and provide the right payload and finally, you'll be able to send yourself an email.
 

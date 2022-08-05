@@ -96,7 +96,7 @@ Click **Ok**, followed by clicking **Cancel**.
 
 You've now finished this exercise.
 
-Next Step: [7.2 Journey Optimizer: Create your email message](./ex2.md)
+Next Step: [7.2 Journey Optimizer: Create your journey and email message](./ex2.md)
 
 [Go Back to Module 7](./journey-orchestration-create-account.md)
 

@@ -78,18 +78,16 @@ doc-type: multipage
 + 7 - Adobe Journey Optimizer: Orchestration {#module7}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module7/journey-orchestration-create-account.md)
   + [7.1 Create your event](/help/tutorial-comprehensive-technical-v22/modules/module7/ex1.md)
-  + [7.2 Create your email message](/help/tutorial-comprehensive-technical-v22/modules/module7/ex2.md)
-  + [7.3 Create your journey](/help/tutorial-comprehensive-technical-v22/modules/module7/ex3.md)
-  + [7.4 Update your Data Collection property and test your Journey](/help/tutorial-comprehensive-technical-v22/modules/module7/ex4.md)
+  + [7.2 Create your journey and email message](/help/tutorial-comprehensive-technical-v22/modules/module7/ex2.md)
+  + [7.3 Update your Data Collection property and test your Journey](/help/tutorial-comprehensive-technical-v22/modules/module7/ex3.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module7/summary.md)
 + 8 - Adobe Journey Optimizer: External data sources and custom actions {#module8}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module8/journey-orchestration-external-weather-api-sms.md)
   + [8.1 Define an event](/help/tutorial-comprehensive-technical-v22/modules/module8/ex1.md)
   + [8.2 Define an external data source](/help/tutorial-comprehensive-technical-v22/modules/module8/ex2.md)
   + [8.3 Define a custom action](/help/tutorial-comprehensive-technical-v22/modules/module8/ex3.md)
-  + [8.4 Create your SMS messages](/help/tutorial-comprehensive-technical-v22/modules/module8/ex4.md)
-  + [8.5 Design a trigger-based journey](/help/tutorial-comprehensive-technical-v22/modules/module8/ex5.md)
-  + [8.6 Update your Data Collection property and test your Journey](/help/tutorial-comprehensive-technical-v22/modules/module8/ex6.md)
+  + [8.4 Create your journey and messages](/help/tutorial-comprehensive-technical-v22/modules/module8/ex4.md)
+  + [8.5 Trigger your journey](/help/tutorial-comprehensive-technical-v22/modules/module8/ex5.md)
   + [Summary and benefits](/help/tutorial-comprehensive-technical-v22/modules/module8/summary.md)
 + 9 - Adobe Journey Optimizer: Offer Decisioning {#module9}
   + [Overview](/help/tutorial-comprehensive-technical-v22/modules/module9/offer-decisioning.md)
