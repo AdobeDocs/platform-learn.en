@@ -156,6 +156,7 @@ Follow the same steps to create these additional data elements:
 * **`cart.productInfo`**
 
     ```javascript
+    var cart = digitalData.cart.cartEntries;
     var cartItem = [];
     cart.forEach(function(item, index, array){
     var qty = parseInt(item.qty);
