@@ -73,11 +73,11 @@ After the Data Source is saved, set up a [trait](https://experienceleague.adobe.
 
 1. Select **[!UICONTROL Audience Data]** >  **[!UICONTROL Traits]**
 1. Select **[!UICONTROL Add New]** >  **[!UICONTROL Rule-Based]** trait
-1. Give your trait a friendly name and description, `Luma homepage view`
-1. Select the **[!UICONTROL Data Source]** you created in the previous section.
 
    ![Adobe Experience Platform Audience Manager Rule-Based Trait](assets/rule-based-trait.jpg)
 
+1. Give your trait a friendly name and description, `Luma homepage view`
+1. Select the **[!UICONTROL Data Source]** you created in the previous section.
 1. **[!UICONTROL Select a Folder]** in which to save your trait in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
 1. Expand the **[!UICONTROL Trait Expression]** caret and select **[!UICONTROL Expression Builder]** You must provide a key value pair that signifies a homepage visit.
 1. Open the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html) (mapped to your tag property) and the **Platform Web SDK Debugger** and refresh the page.
