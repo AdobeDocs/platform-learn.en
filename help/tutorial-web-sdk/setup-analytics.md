@@ -68,13 +68,17 @@ The schema created in the [Configure a schema](configure-schemas.md) lesson cont
 |`commerce.purchases.value`|purchase|
 |`commerce.order.currencyCode`|s.currencyCode|
 |`commerce.order.purchaseID`|s.purchaseID|
-|`productListItems[].name`|s.products=;product name;;;;|
+|`productListItems[].SKU`|s.products=;product name;;;; (primary - see Note below)|
+|`productListItems[].name`|s.products=;product name;;;; (fallback - see Note below)|
 |`productListItems[].quantity`|s.products=;;product quantity;;;|
 |`productListItems[].priceTotal`|s.product=;;;product price;;|
 
 >[!NOTE]
 >
 >The individual sections of the Analytics product string are set through different XDM variables under the `productListItems` object. 
+>As of August 18, 2022, `productListItems[].SKU` takes priority for mapping to the product name in the s.products variable. 
+>The value set to `productListItems[].name` is mapped to the product name only if `productListItems[].SKU` does not exist. Otherwise, it is unmapped and available in context data. 
+>Do not set an empty string or null to  `productListItems[].SKU`. This has the undesired effect of mapping to the product name in the s.products variable.
 
 
 ## Configure the datastream
@@ -129,7 +133,7 @@ During the Create data elements lesson, you [created JavaScript data elements](c
     var cart = digitalData.product;
     var cartItem;
     cart.forEach(function(item){
-    cartItem = item.productInfo.sku;
+    cartItem = item.productInfo.name;
     });
     return cartItem;
     ```
@@ -142,13 +146,13 @@ During the Create data elements lesson, you [created JavaScript data elements](c
 
 Follow the same steps to create these additional data elements:
 
-* **`product.productInfo.title`**
+* **`product.productInfo.sku`**
 
     ```javascript
     var cart = digitalData.product;
     var cartItem;
     cart.forEach(function(item){
-    cartItem = item.productInfo.title;
+    cartItem = item.productInfo.sku;
     });
     return cartItem;
     ```
@@ -484,7 +488,7 @@ You use the same beacon to validate content page views are captured by Analytics
 Since you are already on a product page, this exercise continues to use the same Edge Trace to validate product data is captured by Analytics. Both the product string and e-commerce events are automatically mapped XDM variables to Analytics. As long as you have mapped to the proper `productListItem` XDM variable while [configuring an XDM schema for Adobe Analytics](setup-analytics.md#configure-an-xdm-schema-for-adobe-analytics), the Platform Edge Network takes care of mapping the data to the proper analytics variables. 
 
 1. First validate that the `Product String` is set
-1. Look for `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL name]`. The variable captures the data element value you mapped to the `productListItems.item1.name` earlier in this lesson
+1. Look for `[!UICONTROL c.a.x.productlistitems.][0].[!UICONTROL sku]`. The variable captures the data element value you mapped to the `productListItems.item1.sku` earlier in this lesson
 1. Scroll down to see the `[!UICONTROL pl]` variable. It is the dynamic syntax of the Analytics product string variable
 1. Both values match to the product name available in the data layer
 
@@ -530,7 +534,7 @@ In this exercise, you map one XDM variable to a prop so you can view in Real-Tim
 
     ![Analytics Purchase](assets/analytics-process-rules.png)   
 
-1. Create a rule to **[!UICONTROL Overwrite value of]** `[!UICONTROL Product SKU (prop1)]` to `a.x.productlistitems.0.sku`. Remember to add your note why you are creating the rule and name your rule title. Select **[!UICONTROL Save]**
+1. Create a rule to **[!UICONTROL Overwrite value of]** `[!UICONTROL Product SKU (prop1)]` to `a.x.productlistitems.0.namer`. Remember to add your note why you are creating the rule and name your rule title. Select **[!UICONTROL Save]**
 
     ![Analytics Purchase](assets/analytics-set-processing-rule.png)   
 
