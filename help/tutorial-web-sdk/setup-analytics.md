@@ -133,7 +133,7 @@ During the Create data elements lesson, you [created JavaScript data elements](c
     var cart = digitalData.product;
     var cartItem;
     cart.forEach(function(item){
-    cartItem = item.productInfo.name;
+    cartItem = item.productInfo.sku;
     });
     return cartItem;
     ```
@@ -146,13 +146,13 @@ During the Create data elements lesson, you [created JavaScript data elements](c
 
 Follow the same steps to create these additional data elements:
 
-* **`product.productInfo.sku`**
+* **`product.productInfo.title`**
 
     ```javascript
     var cart = digitalData.product;
     var cartItem;
     cart.forEach(function(item){
-    cartItem = item.productInfo.sku;
+    cartItem = item.productInfo.title;
     });
     return cartItem;
     ```
