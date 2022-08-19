@@ -534,7 +534,7 @@ In this exercise, you map one XDM variable to a prop so you can view in Real-Tim
 
     ![Analytics Purchase](assets/analytics-process-rules.png)   
 
-1. Create a rule to **[!UICONTROL Overwrite value of]** `[!UICONTROL Product SKU (prop1)]` to `a.x.productlistitems.0.namer`. Remember to add your note why you are creating the rule and name your rule title. Select **[!UICONTROL Save]**
+1. Create a rule to **[!UICONTROL Overwrite value of]** `[!UICONTROL Product Name (prop1)]` to `a.x.productlistitems.0.name`. Remember to add your note why you are creating the rule and name your rule title. Select **[!UICONTROL Save]**
 
     ![Analytics Purchase](assets/analytics-set-processing-rule.png)   
 
