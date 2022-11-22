@@ -72,6 +72,7 @@ With the field groups selected, you are ready to name your schema. A common nami
 
 1. In the **[!UICONTROL Composition**] panel, select the `Untitled schema name` 
 1. In the **[!UICONTROL Schema properties]** panel, enter the **[!UICONTROL Display Name]** `Luma Web Event Data`
+1. Select anything outside of the **[!UICONTROL Display Name]** field to activate the **[!UICONTROL Save]** option
 1. Select **[!UICONTROL Save]**
 
 ![Luma Web Event Data](assets/schema-luma-web-event-data.png)
