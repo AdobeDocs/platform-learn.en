@@ -46,8 +46,13 @@ Now, create a namespace for the Luma CRM ID:
 
 1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
 1. Select the sandbox you are using for the tutorial
-1. Select **[!UICONTROL Identities]** in the left navigation
-1. Select **[!UICONTROL Browse]**
+
+   >[!NOTE]
+   >
+   >If you are the customer of a Platform-based application like Real-time CDP, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
+   
+3. Select **[!UICONTROL Identities]** in the left navigation
+4. Select **[!UICONTROL Browse]**
 
    A list of identity namespaces appears in the main interface of the page, showing their names, identity symbols, last updated date, and whether they are standard or custom namespaces. The right rail contains information on Identity graph strength.
 
