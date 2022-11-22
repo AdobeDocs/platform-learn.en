@@ -10,7 +10,7 @@ Learn how to request access to Experience Platform Web SDK and configure the per
 
 ## Data Collection
 
-* Have permission to **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Manage Environments]** tag properties. For more information tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Have permission to **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, **[!UICONTROL Manage Environments]**, and **[!UICONTROL Manage Properties]**. For more information tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * If you will be completing the optional event forwarding lesson, have a product license which includes edge forwarding and permission item **[!UICONTROL Platforms]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
