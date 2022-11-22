@@ -43,7 +43,9 @@ After completing the tutorial, you will be able to:
 
 ## Prerequisites
 
-In these lessons, it is assumed that you have an Adobe ID and the [required permissions](configure-permissions.md) to complete the lessons. If not, you must reach out to your Experience Cloud Administrator to request access.
+All Experience Cloud customers can use Platform Web SDK. It is not a requirement to license a Platform-based application like Real-time Customer Data Platform or Journey Optimizer to use Web SDK.
+
+In these lessons, it is assumed that you have an Adobe account and the [required permissions](configure-permissions.md) to complete the lessons. If not, you must reach out to your Experience Cloud Administrator to request access.
 
 Also, it is assumed that you are familiar with front-end development languages like HTML and JavaScript. You do not need to be an expert in these languages, but you get more out of this tutorial if you can read and understand code.
 
