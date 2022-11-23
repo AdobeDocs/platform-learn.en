@@ -37,7 +37,7 @@ Now you can create a datastream to tell Platform Edge Network where to send data
 
    >[!NOTE]
    >
-   >If you are the customer of a Platform-based application like Real-time CDP, we recommend using a development sandbox for this tutorial.
+   >If you are the customer of a Platform-based application like Real-time CDP, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
 
 1. Go to **[!UICONTROL Datastreams]** in the left navigation
 1. Select **[!UICONTROL New Datastream]** on the right hand-side of the screen.

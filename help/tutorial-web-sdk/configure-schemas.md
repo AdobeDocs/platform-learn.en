@@ -41,7 +41,7 @@ In this exercise, you will create an XDM schema using the recommended baseline f
 
    >[!NOTE]
    >
-   >If you are the customer of a Platform-based application like Real-time CDP, we recommend using a development sandbox for this tutorial.
+   >If you are the customer of a Platform-based application like Real-time CDP, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
    
 1. Go to **[!UICONTROL Schemas]** in the left navigation
 1. Select the **[!UICONTROL Create Schema]** button on the top right
@@ -57,10 +57,10 @@ When possible, it is recommended to use existing field groups and adhere to a pr
 
 >[!TIP]
 > 
->In this exercise, you add the recommended pre-defined field groups for web data collection: _**[!UICONTROL AEP Web SDK ExperienceEvent Mixin]**_, and _**[!UICONTROL Consumer Experience Event]**_.
+>In this exercise, you add the recommended pre-defined field groups for web data collection: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_, and _**[!UICONTROL Consumer Experience Event]**_.
 
-1. Keep **[!UICONTROL Use existing field group]** radio button selected
-1. Search for [!UICONTROL `AEP Web SDK ExperienceEvent Mixin`]
+1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL Add]**
+1. Search for [!UICONTROL `AEP Web SDK ExperienceEvent`]
 1. Check the box
 1. Search for [!UICONTROL `Consumer Experience Event`]
 1. Check the box
@@ -77,7 +77,7 @@ With the field groups selected, you are ready to name your schema. A common nami
 
 ![Luma Web Event Data](assets/schema-luma-web-event-data.png)
 
-With both field groups, notice that you have access to the most commonly used key-value pairs required for data collection on the web. When you click on either field group name, the interface highlights what key-value pair groupings belong to it. In below example, you see what groups belong to **[!UICONTROL Consumer Experience Event]**.
+With both field groups, notice that you have access to the most commonly used key-value pairs required for data collection on the web. The [!UICONTROL display name] of each field appears to marketers in the segment builder interface of Platform-based applications and you can change the display name of standard fields to suit your needs. You can also remove fields you don't want. When you click on either field group name, the interface highlights what key-value pair groupings belong to it. In below example, you see what groups belong to **[!UICONTROL Consumer Experience Event]**.
 
 ![Schema Field Groups](assets/schema-consumer-experience-event.jpg)
 
