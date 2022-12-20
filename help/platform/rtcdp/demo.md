@@ -1,7 +1,7 @@
 ---
 title: Demo of Adobe's Real-Time Customer Data Platform (RTCDP)
 description: See a demo of how Real-Time CDP is used to collect data from multiple sources, merge that data into a single real-time customer profile, and activate that data to create personalized customer experiences.
-solution: Real-Time Customer Data Platform
+solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 5291

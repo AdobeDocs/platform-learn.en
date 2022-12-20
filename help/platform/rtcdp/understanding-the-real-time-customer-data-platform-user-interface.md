@@ -1,7 +1,7 @@
 ---
 title: Real-Time Customer Data Platform user interface and workflow
 description: Learn how to navigate the Real-Time Customer Data Platform (CDP) user interface to see how its features come together to provide real-time activation across the digital customer journey.
-solution: Real-Time Customer Data Platform
+solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
 kt: 3989

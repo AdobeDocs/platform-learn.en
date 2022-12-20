@@ -1,7 +1,7 @@
 ---
 title: Configure the Azure Blob Destination
 description: Learn how to walk through the steps required to set up and configure and Azure Blob Storage destination in Real-Time Customer Data Platform (Real-Time CDP).
-solution: Real-Time Customer Data Platform
+solution: Real-time Customer Data Platform
 feature: Destinations 
 role: User
 thumbnail: 331082.jpg
