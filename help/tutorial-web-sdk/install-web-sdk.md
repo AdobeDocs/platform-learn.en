@@ -6,7 +6,7 @@ exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
 ---
 # Install Adobe Experience Platform Web SDK tag extension
 
-Learn how to install and configure the Platform Web SDK tag extension in the Data Collection interface. This tag extension is the _only tag extension_ required to send data to _all Adobe Experience Cloud applications_, including [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-time Customer Data Platform, and Journey Optimizer!
+Learn how to install and configure the Platform Web SDK tag extension in the Data Collection interface. This tag extension is the _only tag extension_ required to send data to _all Adobe Experience Cloud applications_, including [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform, and Journey Optimizer!
 
 ## Learning objectives
 

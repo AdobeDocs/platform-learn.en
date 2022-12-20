@@ -1,32 +1,32 @@
 ---
-title: Enable Real-time Customer Profiles
-seo-title: Enable Real-time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
-breadcrumb-title: Enable Real-time Customer Profiles
-description: In this lesson, you will enable your schemas and datasets for Real-time Customer Profile. 
+title: Enable Real-Time Customer Profiles
+seo-title: Enable Real-Time Customer Profiles | Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
+breadcrumb-title: Enable Real-Time Customer Profiles
+description: In this lesson, you will enable your schemas and datasets for Real-Time Customer Profile. 
 role: Data Architect
 feature: Profiles
 kt: 4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 ---
-# Enable Real-time Customer Profiles
+# Enable Real-Time Customer Profiles
 
 <!-- 15min--> 
-In this lesson, you will enable your schemas and datasets for Real-time Customer Profile. 
+In this lesson, you will enable your schemas and datasets for Real-Time Customer Profile. 
 
 Okay, I lied when I said that the datasets lesson was the shortest lesson in this tutorial&mdash;this one should take even less time! Literally all you are going to do is flip a bunch of toggles. But what happens when you flip these toggles is _really_ important so I wanted to dedicate a whole page to it.
 
-With Real-time Customer Profile, you can see a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third-party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction. 
+With Real-Time Customer Profile, you can see a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third-party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction. 
 
 As amazing as all that sounds, you don't need to activate *all of your data* for profile. In fact, you should only enable the data you need for activation use cases. Enable data that you want to use for marketing use cases, call center integrations, and so on, where you need fast access to a robust customer profile. If you are  uploading data only for analysis, it probably shouldn't be enabled for profile.
 
-There are important [guardrails for Real-time Customer Profile data](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) which you should review when deciding which of your own data you should enable for profile. 
+There are important [guardrails for Real-Time Customer Profile data](https://experienceleague.adobe.com/docs/experience-platform/profile/guardrails.html?lang=en) which you should review when deciding which of your own data you should enable for profile. 
 
 <!--is this accurate. Are there other considerations to point out? -->
 
-**Data Architects** will need to enable Real-time Customer Profile outside of this tutorial.
+**Data Architects** will need to enable Real-Time Customer Profile outside of this tutorial.
 
-Before you begin the exercises, watch this short video to learn more about Real-time Customer Profile:
+Before you begin the exercises, watch this short video to learn more about Real-Time Customer Profile:
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
 
 ## Permissions required
@@ -41,7 +41,7 @@ In the [Configure Permissions](configure-permissions.md) lesson, you set up all 
 * Developer-role access to the `Luma Tutorial Platform` product profile (for API)
 -->
 
-## Enable schemas for Real-time Customer Profile using Platform user interface 
+## Enable schemas for Real-Time Customer Profile using Platform user interface 
 
 Let's start with the simple task of enabling a schema:
 
@@ -70,7 +70,7 @@ Easy right? Repeat the steps above for these other schema:
 1. Luma Offline Purchase Events Schema
 1. Luma Web Events Schema (on the confirmation modal, check the box "Data for this schema will contain a primary identity in the identityMap field.")
 
-## Enable schemas for Real-time Customer Profile using Platform API 
+## Enable schemas for Real-Time Customer Profile using Platform API 
 
 Now, it's time to enable the `Luma CRM Schema` with the API. If you want to skip this exercise and just enable it in the user interface, go right ahead.
 
@@ -111,7 +111,7 @@ You should be able to see in the user interface that all five schemas are enable
  ![All schemas enabled](assets/profile-allSchemasEnabled.png) 
 
 
-## Enable datasets for Real-time Customer Profile using Platform user interface 
+## Enable datasets for Real-Time Customer Profile using Platform user interface 
 
 The datasets must be enabled for Profile, too, and the process is even simpler:
 
@@ -131,7 +131,7 @@ Repeat the steps above for these other datasets:
 >
 >Unlike schemas, you can disable datasets from Profile, however all previously ingested data will remain in Profile.
 
-## Enable datasets for Real-time Customer Profile using Platform API 
+## Enable datasets for Real-Time Customer Profile using Platform API 
 
 Now you will enable a dataset for Profile using the API. Again, if you want to enable it via the user interface using the method above, that's fine, too.
 
@@ -180,8 +180,8 @@ You can also confirm that the user interface shows the dataset enabled:
 
 ## Additional Resources
 
-* [Real-time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
-* [Real-time Customer Profile API reference](https://www.adobe.io/experience-platform-apis/references/profile/)
+* [Real-Time Customer Profile documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/home.html)
+* [Real-Time Customer Profile API reference](https://www.adobe.io/experience-platform-apis/references/profile/)
 
 
 **Data Engineers** should continue to the [Subscribe to data ingestion events](subscribe-to-data-ingestion-events.md) lesson.

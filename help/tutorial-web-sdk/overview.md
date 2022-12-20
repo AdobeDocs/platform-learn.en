@@ -24,7 +24,7 @@ After completing the tutorial, you will be able to:
 * Create XDM schemas
 
 * Add the following Adobe Experience Cloud applications:
-  * **[Adobe Experience Platform](setup-experience-platform.md)** (and applications built on Platform such as Adobe Real-time Customer Data Platform, Adobe Journey Optimizer, and Adobe Customer Journey Analytics)
+  * **[Adobe Experience Platform](setup-experience-platform.md)** (and applications built on Platform such as Adobe Real-Time Customer Data Platform, Adobe Journey Optimizer, and Adobe Customer Journey Analytics)
   * **[Adobe Analytics](setup-analytics.md)**
   * **[Adobe Audience Manager](setup-audience-manager.md)**
   * **[Adobe Target](setup-target.md)**
@@ -43,7 +43,7 @@ After completing the tutorial, you will be able to:
 
 ## Prerequisites
 
-All Experience Cloud customers can use Platform Web SDK. It is not a requirement to license a Platform-based application like Real-time Customer Data Platform or Journey Optimizer to use Web SDK.
+All Experience Cloud customers can use Platform Web SDK. It is not a requirement to license a Platform-based application like Real-Time Customer Data Platform or Journey Optimizer to use Web SDK.
 
 In these lessons, it is assumed that you have an Adobe account and the [required permissions](configure-permissions.md) to complete the lessons. If not, you must reach out to your Experience Cloud Administrator to request access.
 

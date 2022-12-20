@@ -7,7 +7,7 @@ exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
 
 Learn how to send data to Adobe Experience Platform.
 
-This optional lesson is relevant to all customers of Real-time Customer Data Platform (Real-time CDP), Journey Optimizer, and Customer Journey Analytics. Experience Platform, the foundation of Experience Cloud products, is an open system that transforms all your data — Adobe and non-Adobe — into robust customer profiles that update in real time and uses AI-driven insights to help you to deliver the right experiences across every channel.
+This optional lesson is relevant to all customers of Real-Time Customer Data Platform (Real-Time CDP), Journey Optimizer, and Customer Journey Analytics. Experience Platform, the foundation of Experience Cloud products, is an open system that transforms all your data — Adobe and non-Adobe — into robust customer profiles that update in real time and uses AI-driven insights to help you to deliver the right experiences across every channel.
 
 The [event](events.md), [lifecycle](lifecycle-data.md), and [identity](identity.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Experience Platform.
 
@@ -24,8 +24,8 @@ In this lesson, you will:
 
 * Create an Experience Platform dataset.
 * Validate data in the dataset.
-* Enable your schema and dataset for Real-time Customer Profile.
-* Validate data in Real-time Customer Profile.
+* Enable your schema and dataset for Real-Time Customer Profile.
+* Validate data in Real-Time Customer Profile.
 * Validate data in the identity graph.
 
 
@@ -71,9 +71,9 @@ You should also be able to see example records and fields using the **[!UICONTRO
 
 A more robust tool for validating data is Platform's [query service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html).
 
-## Enable Real-time Customer Profile
+## Enable Real-Time Customer Profile
 
-Experience Platform's Real-time Customer Profile allows you to build a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third-party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction.
+Experience Platform's Real-Time Customer Profile allows you to build a holistic view of each individual customer that combines data from multiple channels, including online, offline, CRM, and third-party data. Profile allows you to consolidate your disparate customer data into a unified view offering an actionable, timestamped account of every customer interaction.
 
 ### Enable the schema
 
@@ -120,7 +120,7 @@ From the profile detail screen, click the link to view the identity graph or nav
 
 ![grab an identity value](assets/mobile-platform-profile-identitygraph.png)
 
-There is a lot more that marketers and analytics can do with data captured in Experience Platform, including analyzing it in Customer Journey Analytics and building segments in Real-time Customer Data Platform. You are off to a good start!
+There is a lot more that marketers and analytics can do with data captured in Experience Platform, including analyzing it in Customer Journey Analytics and building segments in Real-Time Customer Data Platform. You are off to a good start!
 
 Next: **[Push messaging with Journey Optimizer](journey-optimizer-push.md)**
 
