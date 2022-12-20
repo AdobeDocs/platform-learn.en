@@ -72,7 +72,7 @@ doc-type: video
   + [Analyze model performance](data-science-workspace/analyze-model-performance.md)
   + [Create and publish a trained model (UI)](data-science-workspace/create-model-ui.md)
   + [Schedule automated training and scoring for a service](data-science-workspace/schedule-training-scoring.md)
-  + [Enrich Real-time Customer Profiles with machine learning insights](data-science-workspace/dsw-profile-segmentation.md)
+  + [Enrich Real-Time Customer Profiles with machine learning insights](data-science-workspace/dsw-profile-segmentation.md)
   + [Package source files into a recipe](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
   + [Import a packaged recipe (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
   + [Import a packaged recipe (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
@@ -97,7 +97,7 @@ doc-type: video
   + [Monitor segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
   + [Monitor dataflows](/help/platform/monitoring/data-monitoring.md)
 + Profiles {#profiles}
-  + [Understanding Real-time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
+  + [Understanding Real-Time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
   + [Bring data into Profile](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
   + [Customize profile view details](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
@@ -178,7 +178,7 @@ doc-type: video
   + [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
   + [Journey Orchestration tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
   + [Offer Decisioning tutorials](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target="_blank"}
-  + Real-time CDP tutorials{#rtcdp}
+  + Real-Time CDP tutorials{#rtcdp}
     + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
     + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
     + [End-to-end demo](/help/platform/rtcdp/demo.md)

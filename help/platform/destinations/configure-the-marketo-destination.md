@@ -1,7 +1,7 @@
 ---
 title: Configure the Marketo destination
 description: Learn how to configure the Marketo destination in Adobe Experience Platform so you can activate your Platform segments to your Marketo Engage instance.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 feature: Destinations
 role: User, Admin
 kt: 9262
@@ -16,6 +16,6 @@ Learn how to configure the Marketo destination in Adobe Experience Platform so y
 
 >[!INFO]
 >
-> This video is part of a course, [Getting started with Real-time CDP, B2B Edition for marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), available for free on Experience League!
+> This video is part of a course, [Getting started with Real-Time CDP, B2B Edition for marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), available for free on Experience League!
 
 For more information, please see the [Profiles documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).

@@ -1,6 +1,6 @@
 ---
 title: Union schemas overview
-description: Real-time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for the Real-time Customer Profile by enabling both the schema and corresponding dataset.
+description: Real-Time Customer Profile powers cross channel personalization at scale through each phase of the customer journey. Batch or Streaming data can be enabled for the Real-Time Customer Profile by enabling both the schema and corresponding dataset.
 role: Data Architect, Data Engineer
 feature: Profiles
 kt: 6754
@@ -9,7 +9,7 @@ exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
 ---
 # Union schemas overview
 
-This video gives you an overview of union schemas used by Adobe Experience Platform's Real-time Customer Profile. Union schemas enable you to see an amalgamation of all of the fields contained within schemas sharing the same class. Real-time Customer Profile uses the union schemas to create a holistic view of each individual customer.
+This video gives you an overview of union schemas used by Adobe Experience Platform's Real-Time Customer Profile. Union schemas enable you to see an amalgamation of all of the fields contained within schemas sharing the same class. Real-Time Customer Profile uses the union schemas to create a holistic view of each individual customer.
 
 >[!VIDEO](https://video.tv.adobe.com/v/329940?quality=12&learn=on)
 

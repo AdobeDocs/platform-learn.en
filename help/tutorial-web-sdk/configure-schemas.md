@@ -41,7 +41,7 @@ In this exercise, you will create an XDM schema using the recommended baseline f
 
    >[!NOTE]
    >
-   >If you are the customer of a Platform-based application like Real-time CDP, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
+   >If you are the customer of a Platform-based application like Real-Time CDP, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
    
 1. Go to **[!UICONTROL Schemas]** in the left navigation
 1. Select the **[!UICONTROL Create Schema]** button on the top right

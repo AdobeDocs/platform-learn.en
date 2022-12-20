@@ -152,7 +152,7 @@ Now you can prepare and import the data into your Platform sandbox. The Postman 
 
 ## Validation
 
-The sample data has been designed so that when the collections have run, Real-time Customer Profiles are built that combine data from multiple systems. A good example of this is the first record of the loyalty, CRM, and offline purchase datasets. Look up that profile to confirm the data was ingested. In the [Adobe Experience Platform interface](https://platform.adobe.com/):
+The sample data has been designed so that when the collections have run, Real-Time Customer Profiles are built that combine data from multiple systems. A good example of this is the first record of the loyalty, CRM, and offline purchase datasets. Look up that profile to confirm the data was ingested. In the [Adobe Experience Platform interface](https://platform.adobe.com/):
 
 1. Go to **[!UICONTROL Profiles]** > **[!UICONTROL Browse]**
 1. Select `Luma Loyalty Id` as the **[!UICONTROL Identity namespace]**

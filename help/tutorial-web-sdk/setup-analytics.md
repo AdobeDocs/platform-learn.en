@@ -549,13 +549,13 @@ In this exercise, you map one XDM variable to a prop so you can view in Real-Tim
 1. Repeat the validation steps and you should see that Real-Time reports populate data accordingly. 
 
     **Page Views**
-    ![Real-time Content](assets/analytics-real-time-content.png)   
+    ![Real-Time Content](assets/analytics-real-time-content.png)   
 
     **Product Views**
-    ![Real-time Product Views](assets/analytics-real-time-prodView.png)   
+    ![Real-Time Product Views](assets/analytics-real-time-prodView.png)   
 
     **Purchases**
-    ![Real-time Purchase](assets/analytics-real-time-purchase.png)   
+    ![Real-Time Purchase](assets/analytics-real-time-purchase.png)   
 
 1. In the Workspace UI, create a table to view the full e-commerce flow of the product you purchased
 

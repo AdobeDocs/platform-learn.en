@@ -19,7 +19,7 @@ _Getting Started with Adobe Experience Platform for Data Architects and Data Eng
 
 ## Learning Objectives
 
-Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial teaches you the key tasks executed by _both roles_ so you know how to start implementing Platform for your own business. You will be guided through exercises that will introduce you to the key terminology, features, interface, and API of Experience Platform. Customers of Adobe Experience Cloud applications like Real-time Customer Data Platform, Customer Journey Analytics, and Journey Optimizer will also find this content useful, as Platform services are critical foundations of those applications.
+Data Architects and Data Engineers must closely collaborate for a successful Experience Platform deployment. This hands-on tutorial teaches you the key tasks executed by _both roles_ so you know how to start implementing Platform for your own business. You will be guided through exercises that will introduce you to the key terminology, features, interface, and API of Experience Platform. Customers of Adobe Experience Cloud applications like Real-Time Customer Data Platform, Customer Journey Analytics, and Journey Optimizer will also find this content useful, as Platform services are critical foundations of those applications.
 
 ![Adobe Experience Cloud marketecture highlighting the Platform services covered in this tutorial--Identity, Profile, Segmentation, Ingestion, Query, and Governance](assets/marketecture.png)
 
@@ -31,7 +31,7 @@ Topics include:
 * Data management&mdash;including creating schemas, datasets, identities, merge policies, and data governance
 * Data ingestion using batch and streaming modes
 * Capturing web data with Adobe Experience Platform Web SDK
-* Building Real-time Customer Profiles
+* Building Real-Time Customer Profiles
 * Using Query Service to validate data and extract data
 * Building segments
 
@@ -42,7 +42,7 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 ## Pre-requisites
 
 * You have completed the [Introduction to Adobe Experience Platform course](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) on Experience League and are familiar with Platform capabilities
-* You have access to an account provisioned with Adobe Experience Platform (or a Platform-based application such as Real-time CDP or Journey Optimizer) and Data Collection (formerly Launch).  
+* You have access to an account provisioned with Adobe Experience Platform (or a Platform-based application such as Real-Time CDP or Journey Optimizer) and Data Collection (formerly Launch).  
 * You are a System Administrator of that account or can have one [configure user permissions](configure-permissions.md) for you.
 
 ## Using this tutorial

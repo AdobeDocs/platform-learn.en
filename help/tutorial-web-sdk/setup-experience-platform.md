@@ -7,7 +7,7 @@ exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
  
 Learn how to stream web data to Adobe Experience Platform with Platform Web SDK. 
 
-Experience Platform is the backbone of all new Experience Cloud applications, such as Adobe Real-time Customer Data Platform, Adobe Customer Journey Analytics, and Adobe Journey Optimizer. These applications are designed to use Platform Web SDK as their optimal method of web data collection.
+Experience Platform is the backbone of all new Experience Cloud applications, such as Adobe Real-Time Customer Data Platform, Adobe Customer Journey Analytics, and Adobe Journey Optimizer. These applications are designed to use Platform Web SDK as their optimal method of web data collection.
 
 Experience Platform uses the same XDM schema you created earlier to capture event data from the Luma website. When that data is sent to Platform Edge Network, the datastream configuration can forward it to Experience Platform.
 
@@ -17,8 +17,8 @@ At the end of this lesson, you will be able to:
 
 * Create a dataset within Adobe Experience Platform
 * Configure the datastream to send Web SDK data to Adobe Experience Platform
-* Enable streaming web data for Real-time Customer Profile
-* Validate the data has landed both in the Platform dataset and in Real-time Customer Profile
+* Enable streaming web data for Real-Time Customer Profile
+* Validate the data has landed both in the Platform dataset and in Real-Time Customer Profile
 
 ## Prerequisites
 
@@ -147,15 +147,15 @@ To confirm that the data has landed in Platform's data lake, a quick option is t
 >Adobe Experience Platform's query service is a more robust method to validate data in the lake, but is beyond the scope of this tutorial. For more details, see [Explore data](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html) in the Platform tutorials section.
 
 
-## Enable the dataset and schema for Real-time Customer Profile
+## Enable the dataset and schema for Real-Time Customer Profile
 
-The next step is to enable the dataset and schema for Real-time Customer Profile. Data streaming from Web SDK will be one of many data sources flowing into Platform and you want to join your web data with other data sources to build 360-degree customer profiles. To learn more about Real-time Customer Profile, watch this short video:
+The next step is to enable the dataset and schema for Real-Time Customer Profile. Data streaming from Web SDK will be one of many data sources flowing into Platform and you want to join your web data with other data sources to build 360-degree customer profiles. To learn more about Real-Time Customer Profile, watch this short video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
 
 >[!CAUTION]
 >
->When working with your own website and data, we recommend more robust validation of data before enabling it for Real-time Customer Profile.
+>When working with your own website and data, we recommend more robust validation of data before enabling it for Real-Time Customer Profile.
 
 
 **To enable the dataset:**
@@ -182,7 +182,7 @@ The next step is to enable the dataset and schema for Real-time Customer Profile
 
     >[!IMPORTANT]
     >
-    >    Primary identities are required in every record sent to Real-time Customer Profile. Typically, identity fields are labeled within the schema. When using identity maps, however, the identity fields are not visible within the schema. This dialog is to confirm that you have a primary identity in mind and that you will specify it in an identity map when sending your data. As you know, Web SDK uses an identity map, and the Experience Cloud Id (ECID) is the default primary identity.
+    >    Primary identities are required in every record sent to Real-Time Customer Profile. Typically, identity fields are labeled within the schema. When using identity maps, however, the identity fields are not visible within the schema. This dialog is to confirm that you have a primary identity in mind and that you will specify it in an identity map when sending your data. As you know, Web SDK uses an identity map, and the Experience Cloud Id (ECID) is the default primary identity.
 
 
 1. Select **[!UICONTROL Enable]**
@@ -208,7 +208,7 @@ Now the schema is also enabled for profile.
 
 ### Validate a profile
 
-You can look up a customer profile in the Platform interface (or Journey Optimizer interface) to confirm that the data has landed in Real-time Customer Profile. As the name suggests, profiles populate in real-time, so there is no delay like there was with validating data in the dataset.
+You can look up a customer profile in the Platform interface (or Journey Optimizer interface) to confirm that the data has landed in Real-Time Customer Profile. As the name suggests, profiles populate in real-time, so there is no delay like there was with validating data in the dataset.
 
 First you must generate more sample data. Repeat the steps from earlier in this lesson to log into the Luma website when it is mapped to your tag property. Inspect the Platform Web SDK request to make sure it sends data with the `lumaCRMId`.
 
@@ -227,7 +227,7 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 
     ![Customer profile](assets/experience-platform-validate-dataset-custProfile.png)
 
-You have now enabled Platform Web SDK for Experience Platform (And Real-time CDP! And Customer Journey Analytics! And Journey Optimizer!)!
+You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP! And Customer Journey Analytics! And Journey Optimizer!)!
 
 
 [Next: **Set up Adobe Analytics**](setup-analytics.md)
