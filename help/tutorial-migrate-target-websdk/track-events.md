@@ -9,7 +9,7 @@ Conversion events for Target can be tracked with the Platform Web SDK similar to
 
 * Automatically tracked events that do not require any configuration
 * Purchase conversion events that should be adjusted for a best practice Platform Web SDK implementation
-* Non-purchase conversion events that will require code updates
+* Non-purchase conversion events that require code updates
 
 ## Goal tracking comparison
 
@@ -59,11 +59,11 @@ The Platform Web SDK is a shared library for all Adobe applications and you may 
 For more information and an example, refer to the tutorial section about [sending purchase parameters to Target](send-parameters.md#purchase-parameters). 
 -->
 
-## Custom tracked events
+## Custom-tracked events
 
 Target implementations commonly use custom conversion events to track clicks for form-based activities, to signify a conversion in a flow, or to pass parameters without requesting new content.
 
-The table below outlines the at.js approach and the Platform Web SDK equivalent for a few common conversion tracking use cases.
+The table below outlines the at.js approach and the Platform Web SDK equivalent for a few common conversion-tracking use cases.
 
 | Use case | Target at.js 2.x | Platform Web SDK |
 |---|---|---|
@@ -72,7 +72,7 @@ The table below outlines the at.js approach and the Platform Web SDK equivalent 
 
 >[!NOTE]
 >
->Although `decisioning.propositionDisplay` is most commonly used for incrementing impressions for specific scopes, it should also be used as a direct replacement for at.js `trackEvent()` in most cases. The `trackEvent()` function  defaults to a type of `display` if not specified. Check your implementation to ensure you use the correct event type for any custom conversions you may have defined.
+>Although `decisioning.propositionDisplay` is most commonly used for incrementing impressions for specific scopes, it should also be used as a direct replacement for at.js `trackEvent()` usually. The `trackEvent()` function  defaults to a type of `display` if not specified. Check your implementation to ensure you use the correct event type for any custom conversions you may have defined.
 
 Refer to the dedicated at.js documentation for more information on how to use [`trackEvent()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-trackevent/) and [`sendNotifications()`](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/adobe-target-sendnotifications-atjs-21/) for tracking Target events.
 
@@ -85,12 +85,12 @@ adobe.target.trackEvent({
 });
 ```
 
-With a Platform Web SDK implementation you can track events and user actions by calling the `sendEvent` command, populating the `_experience.decisioning.propositions` XDM fieldgroup, and setting the `eventType` to one of 2 values:
+With a Platform Web SDK implementation, you can track events and user actions by calling the `sendEvent` command, populating the `_experience.decisioning.propositions` XDM field group, and setting the `eventType` to one of two values:
 
 * `decisioning.propositionDisplay`: Signals the rendering of the Target activity.
 * `decisioning.propositionInteract`: Signals a user interaction with the activity, like a mouse click.
 
-The `_experience.decisioning.propositions` XDM fieldgroup is an array of objects. The properties of each object are derived from the `result.propositions` that gets returned in the `sendEvent` command: `{ id, scope, scopeDetails }`
+The `_experience.decisioning.propositions` XDM field group is an array of objects. The properties of each object are derived from the `result.propositions` that gets returned in the `sendEvent` command: `{ id, scope, scopeDetails }`
 
 ```JavaScript
 alloy("sendEvent", {
@@ -141,4 +141,4 @@ Next, learn how to [enable cross-domain ID sharing](cross-domain.md) for consist
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).

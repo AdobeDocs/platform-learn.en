@@ -4,7 +4,7 @@ description: Learn how to validate activities and debug an Adobe Target implemen
 ---
 # Validate the Platform Web SDK implementation
 
-After you have migrated your Target implementation from at.js to Platform Web SDK, it's important to validate everything is working properly before publishing any changes to your production site. Adobe recommends the following, which will be covered in detail on this page:
+After you have migrated your Target implementation from at.js to Platform Web SDK, it's important to validate everything is working properly before publishing any changes to your production site. Adobe recommends the following, which is covered in detail on this page:
 
 * Perform a technical validation to make sure the basic implementation and Platform Web SDK requests and responses look correct
 * Ensure that Target activities are delivered and rendered properly
@@ -41,9 +41,9 @@ Every Target implementation is different depending on site architecture and feat
 | VEC-based activities render properly on page load | It's best to validate both custom code modifications and basic modifications such as rearranging elements or replacing text |
 | VEC-based activities render properly on SPA view changes | Only applicable for SPA implementations |
 | Form-based activities render properly | Only applicable for certain implementations. Rendering form based activities requires custom code similar to at.js. |
-| Activities that use redirects work properly | Redirects are supported if both the source and destination page use Platform Web SDK. A Target redirect from an at.js page to a Platform Web SDK page or vice versa is not supported. |
+| Activities that use redirects work properly | Redirects are supported if both the source and destination page use Platform Web SDK. A Target redirect from an at.js page to a Platform Web SDK page or the opposite way is not supported. |
 | Activities that use remote offers work properly | Not common, check your Target offer inventory for Remote Offers |
-| Flicker is appropriately mitigated | Flicker handling is optional, but ensure any mitigation tactics you have in place are working as expected for optimal page performance and user experience |
+| Flicker is appropriately mitigated | Flicker handling is optional, but ensure any mitigation tactics that you have in place are working as expected for optimal page performance and user experience |
 | QA links work as expected | If not working, confirm that the web.webPageDetails.URL exactly matches the URL in the browser |
 | All your commonly used offer types are rendered as expected |  |
 
@@ -89,4 +89,4 @@ Next, learn how to [troubleshoot a Target implementation using Platform Web SDK]
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).

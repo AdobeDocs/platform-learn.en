@@ -33,7 +33,7 @@ Once you have revisited your at.js implementation, you need to determine a migra
 - Migrate all Adobe applications at once across the entire site
 - Migrate on a page-by-page basis
 
-Because Platform Web SDK combines and enables multiple Adobe applications, you must coordinate the Target migration of other Adobe applications like Analytics and Audience Manager. All Adobe libraries on a given page should be migrated at the same time.  A mixed implementation of Platform Web SDK for Target and AppMeasurement for Analytics on a particular page is not supported. However, a mixed implementation across different pages is supported, for example Platform Web SDK on page A, and at.js with AppMeasurement on page B.
+Because Platform Web SDK combines and enables multiple Adobe applications, you must coordinate the Target migration of other Adobe applications like Analytics and Audience Manager. All Adobe libraries on a given page should be migrated at the same time. A mixed implementation of Platform Web SDK for Target and AppMeasurement for Analytics on a particular page is not supported. However, a mixed implementation across different pages is supported, for example Platform Web SDK on page A, and at.js with AppMeasurement on page B.
 
 As you migrate, you should plan on following your company's process for testing and releasing new code and use things like development, qa, and staging environments before you release to production.
 
@@ -42,8 +42,8 @@ As you migrate, you should plan on following your company's process for testing 
 >Redirect offers are not supported in page-by-page migrations if redirecting from a page with one library to a page with a different library
 
 
-Next, review the detailed [comparison of at.js to Platform Web SDK](detailed-comparison.md) to gain a better understanding of the technical differences. This will help you identify areas that will require additional focus during the migration. 
+Next, review the detailed [comparison of at.js to Platform Web SDK](detailed-comparison.md) to gain a better understanding of the technical differences and identify areas requiring additional focus. 
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).

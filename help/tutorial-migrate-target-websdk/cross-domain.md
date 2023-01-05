@@ -4,7 +4,7 @@ description: Learn how to configure Adobe Target for cross-domain and mobile app
 ---
 # Enable cross-domain visitor profiles
 
-The Platform Web SDK supports visitor ID sharing capabilities that enable customers to deliver personalized experiences more accurately across your domains. This capability allows you to deliver consistent personalization across domains and enhances the accuracy of your visitor activity reporting, without relying on third party cookies.
+The Platform Web SDK supports visitor ID sharing capabilities that enable customers to deliver personalized experiences more accurately across your domains. This capability allows you to deliver consistent personalization across domains and enhances the accuracy of your visitor activity reporting, without relying on third-party cookies.
 
 ## Prerequisites
 
@@ -30,11 +30,11 @@ The command accepts an object with one property, `url`, and returns an object wi
 
 This command does not wait for any consent update. If consent has not been provided, the URL is returned unchanged.
 
-If an ECID is not provided, the `/acquire` endpoint will be called to generate an ECID.
+If an ECID is not provided, the `/acquire` endpoint is called to generate an ECID.
 
 Below is an example of how you can implement cross-domain ID sharing.
 
-This code adds an event listener for all the clicks on the page, and if the click was on a link to a matching domain (in this case adobe.com or behance.com), adds the identity to the URL and redirects the user there.
+This code adds an event listener for all the clicks on the page. If the click was on a link to a matching domain, in this case adobe.com or behance.com, it adds the identity to the URL and redirects the user there.
 
 ```Javascript
 document.addEventListener("click", event => {
@@ -65,4 +65,4 @@ Next, learn how to [update audiences and profile scripts](update-audiences.md) t
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
