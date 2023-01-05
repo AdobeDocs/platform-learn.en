@@ -5,7 +5,7 @@ user-guide-description: A hands-on tutorial for Target customers covering how to
 feature-set: Target,Experience Platform
 solution: Experience Platform,Data Collection,Target
 feature: Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
-role: developer
+role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
