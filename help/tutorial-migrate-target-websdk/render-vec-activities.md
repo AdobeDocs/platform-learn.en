@@ -178,27 +178,6 @@ The foundational Platform Web SDK implementation is now complete. Our basic exam
 >
 > When using the tags feature (formerly Launch) to implement Web SDK, the tags embed code replaces the 'Platform Web SDK base code', 'Platform Web SDK loaded asynchronously', and  'Configure Platform Web SDK' sections above. The 'sendEvent' command is made in a rule using the [!UICONTROL Send event] action type with the [!UICONTROL Render visual personalization decisions] option selected.
 
-## Building activities with the Visual Editing Helper browser extension
-
-The Adobe Experience Cloud Visual Editing Helper browser extension for Google Chrome lets you load websites reliably within the Adobe Target Visual Experience Composer (VEC) to rapidly author and QA web experiences.
-
-The Visual Editing Helper browser extension works with web sites that use at.js or Platform Web SDK.
-
->[!IMPORTANT]
->
->The new Visual Editing Helper extension replaces the previous [Target VEC Helper browser extension](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). If the older VEC Helper extension is installed, it should be removed or disabled before using the Visual Editing Helper extension.
-
-### Obtain and install the Visual Editing Helper
-
-1. Navigate to the [Adobe Experience Cloud Visual Editing Helper browser extension in the Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
-1. Click Add to **Chrome** > **Add Extension**.
-1. Open the VEC in Target.
-1. To use the extension, click the Visual Editing Helper browser extension icon ( Visual Editing Extension icon ) in your Chrome browser's toolbar while in the VEC or QA Mode.
-
-The Visual Editing Helper is automatically enabled when a website is opened in the Target VEC to support authoring. The extension doesn't have any conditional settings. The extension handles all the settings automatically, including SameSite cookies settings.
-
-Refer to the dedicated documentation for more information about the [Visual Editing Helper extension](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) and [troubleshooting the Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
-
 Next, learn how to request and [render form-based Target activities](render-form-based-activities.md).
 
 >[!NOTE]
