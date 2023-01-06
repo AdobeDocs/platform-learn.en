@@ -38,7 +38,7 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 | Redirect offers | Supported | Supported. However, a redirect from a page with Platform Web SDK to a page with at.js (and in the opposite direction) is not supported. |
 | On-Device Decisioning | Supported | Not currently supported |
 | Prefetch Mboxes | Supported | Partially supported. Contact customer support to enable this feature since it alters the activity prefetch behavior. |
-| Custom Events | Supported | Partially supported via [monitoring hooks](https://github.com/adobe/alloy/wiki/Monitoring-Hooks) |
+| Custom Events | Supported | Not supported. See the [public roadmap](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"}) for current status. |
 | Response tokens | Supported | Supported. Refer to the [dedicated response tokens documentation](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) for code examples and differences between at.js and Platform Web SDK | 
 | Data Providers | Supported | Not supported. Custom code can be used to trigger a Platform Web SDK `sendEvent` command after data is retrieved from another provider. |
 
@@ -73,7 +73,7 @@ Many at.js functions have an equivalent approach using Platform Web SDK outlined
 | `trackEvent()` and `sendNotifications()` |  Use the `sendEvent` command with a [specific `eventType`](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/web-sdk-atjs-comparison.html#how-to-track-events) set:<br><br>`decisioning.propositionDisplay` signals the rendering of an activity<br><br>`decisioning.propositionInteract` signals a user interaction with an activity, like a mouse click. | 
 | `targetGlobalSettings()` | No direct equivalent. Refer to the [Target settings comparison](detailed-comparison.md) for additional details. |  
 | `targetPageParams()` and `targetPageParamsAll()` | All data passed in the `xdm` option of the `sendEvent` command is mapped to Target mbox parameters. Since mbox parameters are named using serialized dot notation, migrating to Platform Web SDK may require you to update existing audiences and activities to use the new mbox parameter names. <br><br>Data passed as part of `data.__adobe.target` of the `sendEvent` command is mapped to [Target profile and Recommendations specific parameters](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/target-overview.html#single-profile-update).|
-| at.js custom events |  Not supported. However, [response tokens](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) are exposed as part of the `propositions` in the response of the `sendEvent` call. |  
+| at.js custom events |  Not supported. See the [public roadmap](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"}) for current status. [Response tokens](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/accessing-response-tokens.html) are exposed as part of the `propositions` in the response of the `sendEvent` call. |  
 
 ## at.js settings and Platform Web SDK equivalents
 
