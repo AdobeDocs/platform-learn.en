@@ -7,7 +7,7 @@ feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,
 
 Target activities are set up using either the Visual Experience Composer (VEC) or the form-based composer. The Platform Web SDK can retrieve and apply VEC-based activities to the page just like at.js. For this part of the migration, you will:
 
-* Install the Visual Editing Helper browser extension, if required
+* Install the Visual Editing Helper browser extension
 * Execute a `sendEvent` call with the Platform Web SDK to request activities.
 * Update any references from your at.js implementation that use `getOffers()` to execute a Target `pageLoad` request.
 
