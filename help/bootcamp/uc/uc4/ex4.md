@@ -42,9 +42,7 @@ You'll then see an empty project.
 
 ![demo](./images/premptyprojects.png)
 
-First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is `vangeluwe - Omnichannel Data View`.
-
-![demo](./images/prdv.png)
+First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is `CJA Bootcamp - Omnichannel Data View`.
 
 Next, you'll save your project and give it a name. You can use the following command to save:
 
@@ -107,7 +105,7 @@ Finally, Change the name and description of the calculated metric:
 
 | Title         | Description|    
 | ----------------- |-------------| 
-| Conversion Rate | Conversion Rate      | 
+| yourLastName - Conversion Rate | yourLastName - Conversion Rate      | 
 
 You will have something like this on your screen:
 
