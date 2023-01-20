@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
 ---
 # 4.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 
@@ -54,7 +53,7 @@ Search for the dataset `Demo System - Event Dataset for Website (Global v1.1)`. 
 
 ![demo](./images/cja7.png)
 
-Now search and check the checkboxes for `Demo System - Event Dataset for Voice Assistants (Global v1.1)` and `Demo System - Event Dataset for Call Center (Global v1.1)`. 
+Now search and check the checkboxes for `Demo System - Profile Dataset for Loyalty (Global v1.1)` and `Demo System - Event Dataset for Call Center (Global v1.1)`. 
 
 You'll then have this. Click **Next**.
 
@@ -78,7 +77,7 @@ However, you can still influence which identifier will be used to stitch dataset
 
 As mentioned, you can set different Person IDs for each dataset. This allows you to bring different datasets from multiple origins together in CJA. Imagine bringing in NPS or survey data which would be very interesting and helpful to understand the context and why something has happened.
 
-The name of the Person ID field isn't important, as long as the value in the Person ID fields correspond. Let say we have `email` in one dataset and `emailAddress` in another dataset defined as Person ID. If `delaigle@adobe.com` is the same value for the Person ID-field on both datasets, CJA will be able to stitch the data.
+The name of the Person ID field isn't important, as long as the value in the Person ID fields correspond. For example, if the Person ID is `email` in one dataset and `emailAddress` in another, and `dnb-bootcamp@adobe.com` is the same value for the Person ID-field in both datasets, CJA will be able to stitch the data.
 
 Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html). 
 
@@ -101,7 +100,7 @@ Once you have stitched the three datasets, we are ready to continue.
 |  dataset       | Person ID | 
 | ----------------- |-------------| 
 | Demo System - Event Dataset for Website (Global v1.1) | email         | 
-| Demo System - Event Dataset for Voice Assistants (Global v1.1) | email          | 
+| Demo System - Profile Dataset for Loyalty (Global v1.1) | email          | 
 | Demo System - Event Dataset for Call Center (Global v1.1) | email         | 
 
 You also need to ensure that for every dataset, these options are enabled:
