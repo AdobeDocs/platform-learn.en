@@ -22,17 +22,17 @@ Personalisation at scale starts with understanding what can be improved, and a r
 
 10.00 - 10.30: Kickoff & Introductions
 
-10.30 - 11.15: Whiteboard session: “1-1 personalization, friction hunting, silos, Adobe POV"
+10.30 - 11.00: “Customer Journey demo – Art of the possible”
 
-11.15 - 11.30: Break
+11.00 - 11.45: Whiteboard session: “1-1 personalization, friction hunting, silos, Adobe POV"
 
-11.30 - 12.00: “Customer Journey demo – Art of the possible”
+11.45 - 12.00: Break
 
-12.00 - 12.45: Whiteboard session: “Solution Architecture breakdown”
+12.00 - 13.00: Whiteboard session: “Solution Architecture breakdown”
 
-12.45 - 13.45: Break
+13.00 - 14.00: Lunch
 
-13.45 - 15.00: User flow 1: “Acquisition” hands-on exercise
+14.00 - 15.30: User flow 1: “Acquisition” hands-on exercise
 
 15.00 - 15.15: Break
 
@@ -40,23 +40,23 @@ Personalisation at scale starts with understanding what can be improved, and a r
 
 ### Day 2
 
-08.00 - 09.30: Breakfast session: “Introduction to user Journey based Delivery, Team Structure, Delivery backlog”
+09.00 - 09.30: “Introduction to user Journey based Delivery, Team Structure, Delivery backlog”
 
 09.30 - 09.45: Break
 
-09.45 - 11.15: User flow 3: “Blending physical and digital” hands-on exercise
+09.45 - 11.15: User flow 4: “Customer Analysis” hands-on exercise
 
 11.15 - 11.30: Break
 
-11.30 - 12.30: User flow 3 continued
+11.30 - 12.30: “Introduction to user Journey based Delivery, Team Structure, Delivery backlog”
 
 12.30 - 13.30: Lunch
 
-13.30 - 14.30: User flow 4: “Customer Analysis” hands-on exercise
+13.30 - 14.30: Personalisation at Scale - How to make it happen
 
 14.30 - 15.00: Conclusion, wrap-up & next steps
 
-15:30: Departure
+15.00: Adjourn
 
 ## Prerequisites
 
