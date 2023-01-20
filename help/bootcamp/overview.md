@@ -38,7 +38,7 @@ Personalisation at scale starts with understanding what can be improved, and a r
 
 15.15 - 17.00: User flow 2: “Registration & Onboarding” hands-on exercise
 
-18.00 - 19.00: Experience “Cocktail Making Competition” hands-on exercise
+18.00 - 19.00: Experience “Cocktail Making Competition” 
 
 19.00 - 22.00: Enjoy dinner
 
