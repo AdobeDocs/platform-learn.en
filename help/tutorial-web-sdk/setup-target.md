@@ -327,7 +327,7 @@ Now that you have configured the Platform Web SDK to request content for the `ho
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [
