@@ -34,9 +34,9 @@ Personalisation at scale starts with understanding what can be improved, and a r
 
 14.00 - 15.30: User flow 1: "Acquisition" hands-on exercise
 
-15.00 - 15.15: Break
+15.30 - 15.45: Break
 
-15.15 - 17.00: User flow 2: "Registration & Onboarding" hands-on exercise
+15.45 - 17.00: User flow 2: "Registration & Onboarding" hands-on exercise
 
 18.00 - 19.00: Experience "Cocktail Making Competition" 
 
