@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Customer Journey Analytics - Data preparation in Analysis Workspace
-description: Bootcamp - Customer Journey Analytics - Data preparation in Analysis Workspace
+title: Bootcamp - Customer Journey Analytics - Data preparation in Analysis Workspace - Brazil
+description: Bootcamp - Customer Journey Analytics - Data preparation in Analysis Workspace - Brazil
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
 ---
 # 4.4 Data preparation in Analysis Workspace
 

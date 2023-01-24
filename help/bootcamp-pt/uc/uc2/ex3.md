@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Journey Optimizer Create your journey and email message
-description: Bootcamp - Journey Optimizer Create your journey and email message
+title: Bootcamp - Journey Optimizer Create your journey and email message - Brazil
+description: Bootcamp - Journey Optimizer Create your journey and email message - Brazil
 kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
 ---
 # 2.3 Create your journey and email message
 

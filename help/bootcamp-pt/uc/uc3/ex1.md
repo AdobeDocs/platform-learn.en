@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Blending physical and digital - Use the mobile app and trigger a beacon entry
-description: Bootcamp - Blending physical and digital - Use the mobile app and trigger a beacon entry
+title: Bootcamp - Blending physical and digital - Use the mobile app and trigger a beacon entry - Brazil
+description: Bootcamp - Blending physical and digital - Use the mobile app and trigger a beacon entry - Brazil
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: c33c973b-db8a-49ce-bd6c-a6c4fbe579a0
 ---
 # 3.1 Use the mobile app and trigger a beacon entry
 

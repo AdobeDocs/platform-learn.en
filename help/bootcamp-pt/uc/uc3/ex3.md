@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Blending physical and digital - Journey Optimizer Create your journey and push notification
-description: Bootcamp - Blending physical and digital - Journey Optimizer Create your journey and push notification
+title: Bootcamp - Blending physical and digital - Journey Optimizer Create your journey and push  - Brazilnotification
+description: Bootcamp - Blending physical and digital - Journey Optimizer Create your journey and push  - Brazilnotification
 kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
 ---
 # 3.3 Create your journey and push notification
 

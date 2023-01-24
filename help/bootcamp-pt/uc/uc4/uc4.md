@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Customer Journey Analysis
-description: Bootcamp - Customer Journey Analysis
+title: Bootcamp - Customer Journey Analysis - Brazil
+description: Bootcamp - Customer Journey Analysis - Brazil
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
 ---
 # 4. Customer Journey Analysis
 

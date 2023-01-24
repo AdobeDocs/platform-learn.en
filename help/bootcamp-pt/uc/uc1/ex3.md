@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Real-time Customer Profile - Create a segment - UI
-description: Bootcamp - Real-time Customer Profile - Create a segment - UI
+title: Bootcamp - Real-time Customer Profile - Create a segment - UI - Brazil
+description: Bootcamp - Real-time Customer Profile - Create a segment - UI - Brazil
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 37d4a5e8-e2bc-4c8c-a74f-09f74ea79962
 ---
 # 1.3 Create a segment - UI
 

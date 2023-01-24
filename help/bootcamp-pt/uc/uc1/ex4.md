@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to Adobe Target
-description: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to Adobe Target
+title: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to Adobe Target - Brazil
+description: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to Adobe Target - Brazil
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
 ---
 # 1.4 Take Action: send your segment to Adobe Target
 

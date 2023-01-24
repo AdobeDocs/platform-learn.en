@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360
-description: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360
+title: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360 - Brazil
+description: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360 - Brazil
 kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
 ---
 # 1.5 Take Action: send your segment to Facebook
 

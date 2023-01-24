@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
-description: Bootcamp - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
+title: Bootcamp - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI - Brazil
+description: Bootcamp - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI - Brazil
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
 ---
 # 1.2 Visualize your own Real-time Customer Profile - UI
 

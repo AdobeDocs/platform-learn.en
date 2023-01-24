@@ -1,14 +1,13 @@
 ---
-title: Experience Makers Bootcamp
+title: Experience Makers Bootcamp - Brazil
 description: Starting point for participants of the Experience Makers Bootcamp
 doc-type: multipage-overview
-exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
 ---
 # Experience Makers Bootcamp
 
 ## Overview
 
-Many organizations aren't aware of the friction that exist in their customers’ journey, which is the consequence of a siloed and fragmented approach in orchestrating customer communication. Data, Profile and Content need to be perfectly aligned to design and deliver exceptional customer experiences.
+Portuguese: Many organizations aren't aware of the friction that exist in their customers’ journey, which is the consequence of a siloed and fragmented approach in orchestrating customer communication. Data, Profile and Content need to be perfectly aligned to design and deliver exceptional customer experiences.
 
 Join this bootcamp to learn how a platform-based approach can help you get the insights needed to identify and remove friction points to improve your customer's journey.
 

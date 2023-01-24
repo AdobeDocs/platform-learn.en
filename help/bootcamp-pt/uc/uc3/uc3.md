@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Blending physical and digital
-description: Bootcamp - Blending physical and digital
+title: Bootcamp - Blending physical and digital - Brazil
+description: Bootcamp - Blending physical and digital - Brazil
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
-exl-id: 46861546-6483-4997-98b7-1d3addef65dd
 ---
 # 3. Blending physical and digital
 

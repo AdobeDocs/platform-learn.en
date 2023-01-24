@@ -1,11 +1,10 @@
 ---
-title: Bootcamp -  Real-time Customer Profile - From unknown to known on the website
-description: Bootcamp - Real-time Customer Profile - From unknown to known on the website
+title: Bootcamp -  Real-time Customer Profile - From unknown to known on the website - Brazil
+description: Bootcamp - Real-time Customer Profile - From unknown to known on the website - Brazil
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-exl-id: 32a084a3-4c04-4367-947e-f7151fdad73b
 ---
 # 1.1 From unknown to known on the website
 

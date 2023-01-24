@@ -1,11 +1,10 @@
 ---
-title: Bootcamp - Journey Optimizer Create your event
-description: Bootcamp - Journey Optimizer Create your event
+title: Bootcamp - Journey Optimizer Create your event - Brazil
+description: Bootcamp - Journey Optimizer Create your event - Brazil
 kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
-exl-id: 89db40ab-d4c5-4310-aca6-cb64828e7bc9
 ---
 # 2.2 Create your event
 
