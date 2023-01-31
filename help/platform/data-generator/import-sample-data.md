@@ -43,6 +43,7 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
 
 1. From your downloads folder, move the `platform-utils-main.zip` file to the desired location on your computer, and unzip it.
 1. In the `luma-data` folder, open all of the `json` files in a text editor and replace all instances of `_techmarketingdemos` with your own tenant id, preceded by an underscore.
+1. Open `luma-offline-purchases.json` in a text editor and update all of the timestamps so that the events occur in the last month (for example, search for `"timestamp":"2022-06` and replace the year and month)
 1. Note the location of the unzipped folder, as you need it later when setting up the `FILE_PATH` Postman environment variable:
 
     >[!NOTE]
@@ -176,6 +177,6 @@ If you would like to build a sample Mobile SDK implementation to link to this sa
 
 ## Reset Sandbox environment {#reset-sandbox}
 
-Resetting a non-production sandbox deletes all resources associated with that sandbox (schemas, datasets, and so on), while maintaining the sandbox’s name and associated permissions. This “clean” sandbox continues to be available under the same name for users that have access to it.
+Resetting a non-production sandbox deletes all resources associated with that sandbox (schemas, datasets, and so on), while maintaining the sandbox's name and associated permissions. This "clean" sandbox continues to be available under the same name for users that have access to it.
 
 Follow the steps [here](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/user-guide.html?lang=en#reset-a-sandbox) to reset a sandbox environment.
