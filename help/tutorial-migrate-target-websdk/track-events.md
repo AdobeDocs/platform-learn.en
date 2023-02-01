@@ -11,6 +11,10 @@ Conversion events for Target can be tracked with the Platform Web SDK similar to
 * Purchase conversion events that should be adjusted for a best practice Platform Web SDK implementation
 * Non-purchase conversion events that require code updates
 
+>[!WARNING]
+>
+> Platform Web SDK implementations begun after October 1, 2022 may need to use the [prefetch workaround](prefetch-workaround.md) in order to successfully track some of the events described on this page.
+
 ## Goal tracking comparison
 
 The following table compares how at.js and Platform Web SDK track conversion events
