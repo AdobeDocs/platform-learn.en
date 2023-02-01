@@ -77,7 +77,7 @@ alloy("sendEvent", {
 });
 ```
 
-When the profile is set as part of the propositionDisplay, it saves to the visitor's profile and be available in subsequent requests. The same approach can be used to report order conversion details and entity parameters.
+When the profile is set as part of the propositionDisplay, it saves to the visitor's profile and is available in subsequent requests. The same approach can be used to report order conversion details and entity parameters.
 
 In tags, use the Send Event Complete event type to trigger an event containing the additional sendEvent.
 
