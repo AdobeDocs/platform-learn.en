@@ -12,11 +12,6 @@ All Target mbox parameters must be passed in XDM format with a Platform Web SDK 
 * Update profile scripts that use mbox parameters
 * Update any offers and activities use mbox parameter token replacement (for example, `${mbox.parameter_name}`)
 
-
->[!WARNING]
->
-> Platform Web SDK implementations begun after October 1, 2022 may need to use the [prefetch workaround](prefetch-workaround.md) in order to successfully use some of the features described on this page.
-
 ## Adjust audiences
 
 Any audiences that use custom mbox parameters should be updated to use the new XDM parameter names. For example, a custom parameter for `page_name` would likely be mapped to `web.webpagedetails.pageName`.

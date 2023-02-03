@@ -37,7 +37,7 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 | Remote offers | Supported | Supported |
 | Redirect offers | Supported | Supported. However, a redirect from a page with Platform Web SDK to a page with at.js (and in the opposite direction) is not supported. |
 | On-Device Decisioning | Supported | Not currently supported |
-| Prefetch Mboxes | Supported | Partially supported. Contact customer support to enable this feature since it alters the activity prefetch behavior. |
+| Prefetch Mboxes | Supported | Enabled by default in all new migrations started after October 1, 2022 |
 | Custom Events | Supported | Not supported. See the [public roadmap](https://github.com/orgs/adobe/projects/18/views/1?pane=item&itemId=17372355{target="_blank"}) for current status. |
 | Response tokens | Supported | Supported. Refer to the [dedicated response tokens documentation](https://experienceleague.adobe.com/docs/target/using/administer/response-tokens.html) for code examples and differences between at.js and Platform Web SDK | 
 | Data Providers | Supported | Not supported. Custom code can be used to trigger a Platform Web SDK `sendEvent` command after data is retrieved from another provider. |

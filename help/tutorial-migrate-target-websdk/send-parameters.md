@@ -4,11 +4,7 @@ description: Learn how to send mbox, profile, and entity parameters to Adobe Tar
 ---
 # Send parameters to Target using Platform Web SDK
 
-Target implementations differ across websites due to site architecture, business requirements, and features used. Most Target implementations include passing various parameters for contextual information, audiences, and content recommendations.
-
->[!WARNING]
->
-> Platform Web SDK implementations begun after October 1, 2022 may need to use the [prefetch workaround](prefetch-workaround.md) in order to successfully pass the parameters described on this page.
+Target implementations differ across websites due to site architecture, business requirements, and features used. Most Target implementations include passing various parameters for contextual information, audiences, and content recommendations.  
 
 Let's use a simple product details page and an order confirmation page to demonstrate the differences between the libraries when passing parameters to Target.
 
