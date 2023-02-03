@@ -201,6 +201,12 @@ To learn more about how the Platform Web SDK can manage flicker, you can refer t
 
 The Platform Web SDK must be configured on every page load. The `configure` command must always be the first SDK command called. The following example assumes that the entire site is being upgraded to Platform Web SDK in a single deployment:
 
+>[!BEGINTABS]
+
+>[!TAB JavaScript] 
+
+The `edgeConfigId` is the [!UICONTROL Datastream ID]
+
 ```JavaScript
 alloy("configure", {
   "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
@@ -208,7 +214,19 @@ alloy("configure", {
 });
 ```
 
+>[!TAB tags] 
+
+In tags implementations, many fields are auto-populated or can be selected from dropdown menus. Note that different Platform [!UICONTROL sandboxes] and [!UICONTROL datastreams] can be selected for each environment. The datastream will change based on the state of the tag library in the publishing process.
+
+![configuring the Web SDK tag extension](assets/tags-config.png)
+>[!ENDTABS]
+
 If you plan to migrate from at.js to Platform Web SDK on a page-by-page basis, then the following configuration options are required:
+
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript] 
 
 ```JavaScript
 alloy("configure", {
@@ -218,6 +236,11 @@ alloy("configure", {
   "idMigrationEnabled":true
 });
 ```
+
+>[!TAB tags] 
+
+![configuring the Web SDK tag extension migration options](assets/tags-config-migration.png)
+>[!ENDTABS]
 
 The noteworthy configuration options related to Target are outlined below:
 
