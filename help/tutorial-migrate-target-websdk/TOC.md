@@ -42,5 +42,3 @@ kt: 11159
 + [Validate the implementation](validate.md)
 
 + [Debug Target](debugging.md)
-
-+ [Prefetch workaround](prefetch-workaround.md)
