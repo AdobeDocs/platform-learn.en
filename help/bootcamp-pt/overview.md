@@ -5,102 +5,100 @@ doc-type: multipage-overview
 ---
 # Experience Makers Bootcamp
 
-## Overview
+## Visão Geral
 
-Portuguese: Many organizations aren't aware of the friction that exist in their customers’ journey, which is the consequence of a siloed and fragmented approach in orchestrating customer communication. Data, Profile and Content need to be perfectly aligned to design and deliver exceptional customer experiences.
+Muitas empresas não estão cientes do atrito que existe na jornada dos seus clientes, consequência de uma abordagem fragmentada e não integrada ao orquestrar a comunicação com o cliente. Dados, perfil e conteúdo precisam estar perfeitamente alinhados para projetar e oferecer experiências excepcionais ao consumidor. 
 
-Join this bootcamp to learn how a platform-based approach can help you get the insights needed to identify and remove friction points to improve your customer's journey.
+Participe deste Bootcamp para aprender como uma abordagem baseada em plataforma pode ajudar na obtenção dos insights necessários para identificar e remover pontos de atrito para aprimorar a jornada do seu cliente. 
 
-Personalisation at scale starts with understanding what can be improved, and a real-time view of your customer is critical to this. Insights lead to action, which leads to more insights. Adobe’s unique platform-centric approach gives you the tools to not only drive technological change, but also impact your organization, your team, and your ability to deliver a holistic customer experience instead of a channel-specific customer experience.
+A personalização em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights. A abordagem exclusiva da Adobe focada na plataforma fornece as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e sua capacidade de oferecer uma experiência holística ao cliente em vez de uma experiência do cliente específica por canal. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 
 ## Agenda
 
-### Day 1
+### Dia 1
 
-10.00 - 10.30: Kickoff & Introductions
+9.00 - 10.00: Café da manhã & Networking
 
-10.30 - 11.15: Whiteboard session: “1-1 personalization, friction hunting, silos, Adobe POV"
+10.00 - 10.30: Boas-vindas​
 
-11.15 - 11.30: Break
+10.30 - 11.00: Jornada do cliente: "Art of the possible " (sessão em inglês)​
 
-11.30 - 12.00: “Customer Journey demo – Art of the possible”
+11.00 - 12.00: Personalização exponencial vs. Ecossistemas em silos (sessão em inglês)​
 
-12.00 - 12.45: Whiteboard session: “Solution Architecture breakdown”
+12.00 - 13.30: Almoço e networking​
 
-12.45 - 13.45: Break
+13.30 - 14.30: Arquitetura de solução (sessão em inglês)​
 
-13.45 - 15.00: User flow 1: “Acquisition” hands-on exercise
+14.30 - 16.00: Do it yourself: Aquisição ​
 
-15.00 - 15.15: Break
+16.00 - 16.15: Break Time
 
-15.15 - 17.00: User flow 2: “Registration & Onboarding” hands-on exercise
+16.15 - 18.00: Do it yourself: Cadastro & onboarding​
 
-### Day 2
 
-08.00 - 09.30: Breakfast session: “Introduction to user Journey based Delivery, Team Structure, Delivery backlog”
+### Dia 2
 
-09.30 - 09.45: Break
+09.00 - 10.00: Café da manhã & Networking
 
-09.45 - 11.15: User flow 3: “Blending physical and digital” hands-on exercise
+10.00 - 10.45: Introdução: jornada do cliente, estrutura de times e backlog
 
-11.15 - 11.30: Break
+10.45 - 12.00: Do it yourself: Consolidando o online e o offline
 
-11.30 - 12.30: User flow 3 continued
+12.00 - 13.40: Almoço e networking​
 
-12.30 - 13.30: Lunch
+13.45 - 14.45: Do it yourself: Análise de jornadas - fidelizando e retendo clientes
 
-13.30 - 14.30: User flow 4: “Customer Analysis” hands-on exercise
+14.45 - 16.00: Conclusões e próximos passos
 
-14.30 - 15.00: Conclusion, wrap-up & next steps
+16.00 - 19.00: User flow 4: Networking & Happy Hour
 
-15:30: Departure
 
-## Prerequisites
+## Pré-requisitos
 
-- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to the bootcamp website on [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site do bootcamp em [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net)
 
 >[!IMPORTANT]
 >
->This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
+>Este tutorial foi criado para facilitar um formato específico de workshop. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um participante de um dos workshops e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações necessárias. .
 
-## Architecture
+## Arquitetura
 
-Before you start with the hands-on exercises, have a look at the architecture behind this tutorial. This bootcamp will go deep on a number of features and functionalities around Adobe Experience Platform, and will also discuss multiple integrations across a variety of sources and destinations. In order for you to properly understand the architecture behind this tutorial and the overall positioning of Adobe Experience Platform into your enterprise ecosystem, start by reviewing the architecture video and diagram.
+Antes de começar os exercícios práticos, consulte a arquitetura por trás deste tutorial. Este bootcamp irá detalhar vários recursos e funcionalidades da Adobe Experience Platform e discutir múltiplas integrações em várias fontes e destinos. Para compreender de forma adequada a arquitetura por trás deste tutorial e o posicionamento geral da Adobe Experience Platform no seu ecossistema corporativo, comece revisando o vídeo e o diagrama da arquitetura. 
 
-Go to [Architecture](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=en).
+Acessar [Arquitetura](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/architecture.html?lang=pt-BR).
 
-## Videos
+## Vídeos
 
-The main objective of our Experience Makers Bootcamp is to help organisations understand what personalization at scale means and how it is very different from what most organisations are doing today. To deliver customer experiences that are consistent, contextual and real-time in an omni-channel world, you need a platform-first mindset where you define everything just once and reuse it everywhere. In the bootcamp, we take you on a real journey that combines customer interactions across website, mobile app, call center and and offline, in-store environment to showcase what personalization at scale really means, in a hands-on way.
+O objetivo principal do nosso bootcamp para Experience Makers é ajudar as empresas a compreender o que significa personalização em escala e como isso é muito diferente do que a maioria das empresas fazem atualmente. Para oferecer experiências do cliente que sejam consistentes, contextuais e em tempo real em um mundo omnichannel, você precisa de uma mentalidade que coloque a plataforma em primeiro lugar, onde tudo é definido apenas uma vez e reutilizado em todos os lugares. No Bootcamp, levamos você em uma jornada real que combina interações com o cliente no site, no aplicativo móvel, no call center e no ambiente offline da loja para mostrar o que a personalização em escala realmente significa, de maneira prática. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/345446?quality=12&enable=on)
 
-Several other videos have been created that showcase elements of the bootcamp and powerful integrations between Adobe Experience Platform and non-Adobe applications. Click the below link to find an overview of those videos.
+Vários outros vídeos foram criados para demonstrar elementos do Bootcamp e integrações poderosas entre a Adobe Experience Platform e aplicativos que não são da Adobe. Clique no link abaixo para encontrar uma visão geral desses vídeos.
 
-Go to [Videos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=en).
+Acesse: [Vídeos](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/videos.html?lang=pt-BR).
 
 ## YouTube
 
-You can find additional interesting videos [on our YouTube channel](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+É possível encontrar vídeos interessantes adicionais [em nosso canal do YouTube](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## User Flows
 
-[1. Acquisition](./uc/uc1/uc1.md)
+[1. Aquisição](./uc/uc1/uc1.md)
 
-In this user flow, you'll understand all the elements you need to implement acquisition-focused use cases for unknown, unauthenticated users alongside known, authenticated user by using Real-Time CDP.
+Neste User Flow, você irá compreender todos os elementos necessários para implementar casos de uso com foco em aquisição para usuários desconhecidos e não autenticados, em conjunto com usuários autenticados e conhecidos usando a Real-Time CDP.
 
-[2. Registration & Onboarding](./uc/uc2/uc2.md)
+[2.  Cadastro e onboarding](./uc/uc2/uc2.md)
 
-In this user flow, you'll understand all the elements you need to implement registration & onboarding use cases by using Real-Time CDP and Adobe Journey Optimizer.
+Neste User Flow, você irá compreender todos os elementos necessários para implementar casos de uso de cadastro e onboarding usando a Real-Time CDP e o Adobe Journey Optimizer.
 
-[3. Blending physical and digital](./uc/uc3/uc3.md)
+[3. Combinação do físico e do digital ](./uc/uc3/uc3.md)
 
-In this user flow, you'll personalize the customer experience across online and offline channels in a consistent way, by using Real-Time CDP and Adobe Journey Optimizer.
+Nesse User Flow, você irá personalizar a experiência do cliente nos canais online e offline de maneira consistente, usando a Real-Time CDP e o Adobe Journey Optimizer.
 
 [4. Customer Journey Analysis](./uc/uc4/uc4.md)
 
-In this user flow, you'll get familiar with Customer Journey Analytics and you'll gain insights in how customers are evolving from one channel to the other, from online to offline to callcenter and more.
+Neste User Flow, você irá se familiarizar com o Customer Journey Analytics e obter informações sobre como os clientes estão evoluindo de um canal para outro, do online para o offline, para o call center e muito mais.

@@ -6,44 +6,44 @@ audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 ---
-# 2. Registration & Onboarding
+# 2. Objetivos de aprendizado 
 
 ## Learning Objectives
 
-## Prerequisites
+## Pré-requisitos 
 
-- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to the demo website
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demonstração 
 
 >[!IMPORTANT]
 >
->This tutorial was created to facilitate a particular bootcamp format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the bootcamp and need your access credentials, please contact your Adobe representative who will provide you with the required information.
+>Este tutorial foi criado para facilitar um formato específico de bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um participante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações necessárias.
 
-## Exercises
+## Exercícios
 
-[2.1 Visit the website and create your account](./ex1.md)
+[2.1 Visite o site e crie sua conta](./ex1.md)
 
-In this exercise, you'll learn how to configure an event.
+Neste exercício, você irá aprender como configurar um evento.
 
-[2.2 Create your event](./ex2.md)
+[2.2 Crie seu evento](./ex2.md)
 
-In this exercise, you'll learn how to configure an event.
+Neste exercício, você irá aprender como configurar um evento.
 
-[2.3 Create your journey and email message](./ex3.md)
+[2.3 Crie sua jornada e mensagem de e-mail](./ex3.md)
 
-In this exercise, you'll learn how to configure a journey and an email message.
+Neste exercício, você irá aprender como configurar uma jornada e uma mensagem de e-mail.
 
-[2.4 Test your journey](./ex4.md)
+[2.4 Teste sua jornada](./ex4.md)
 
-In this exercise, you'll test the journey you just created.
+Neste exercício, você irá testar a jornada que você criou.
 
-[2.5 Install & use the mobile app](./ex5.md)
+[2.5 Instale e use o aplicativo móvel](./ex5.md)
 
-In this exercise, you'll install the mobile app.
+Neste exercício, você irá instalar o aplicativo móvel. 
 
-[2.6 Personalization in the call center](./ex6.md)
+[2.6 Personalização no call center](./ex6.md)
 
-In this exercise, you'll see how a call center experience can be optimised based on the intelligence of Adobe Experience Platform.
+Neste exercício, você verá como uma experiência de call center pode ser otimizada com base na inteligência da Adobe Experience Platform. 
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

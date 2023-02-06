@@ -6,50 +6,50 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 ---
-# 1.5 Take Action: send your segment to Facebook
+# 1.5 Ação: envie seu segmento para o Facebook
 
-Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``Bootcamp``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é Bootcamp. É possível fazer isso clicando no texto **[!UICONTROL Production Prod]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] dedicado. 
 
 ![Data Ingestion](./images/sb1.png)
 
-In the left menu, go to **Destinations**, then go to **Catalog**. You'll then see the **Destinations Catalog**. In **Destinations**, click **Activate Segments** on the **Facebook Custom Audience** card.
+No menu à esquerda, vá para **Destinations** e, em seguida, vá para **Catalog**. Você verá o **Destinations Catalog**. Em **Destinations**, clique em **Activate Segments** no cartão **Facebook Custom Audience**. 
 
 ![RTCDP](./images/rtcdpgoogleseg.png)
 
-Select the destination **bootcamp-facebook** and click **Next**.
+Selecione o **bootcamp-facebook** e clique em **Next**. 
 
 ![RTCDP](./images/rtcdpcreatedest2.png)
 
-In the list of available segments, select the segment you created in the previous exercise. Click **Next**.
+Na lista de segmentos disponíveis, selecione o segmento que você criou no exercício anterior. Clique em **Next**. 
 
 ![RTCDP](./images/rtcdpcreatedest3.png)
 
-On the **Mapping** page, make sure that the **Apply Transformation** checkbox is enabled. Click **Next**.
+Na página **Mapping**, verifique se a caixa de seleção **Apply Transformation** está marcada. Clique em **Next**. 
 
 ![RTCDP](./images/rtcdpcreatedest4a.png)
 
-On the **Segment Schedule** page, select the **Origin of your audience** and set it to **Directly from customers**. Click **Next**.
+Na página **Segment Schedule**, selecione a **Origin of your audience** e defina como **Directly from customers**. Clique em **Next**. 
 
 ![RTCDP](./images/rtcdpcreatedest4.png)
 
-Finally, on the **Review** page, click **Finish**.
+Por fim, na página **Review**, clique em **Finish**. 
 
 ![RTCDP](./images/rtcdpcreatedest5.png)
 
-Your segment is now linked to Facebook Custom Audiences. Every time a customer qualifies for this segment, a signal will be sent to Facebook server-side to include that customer in the Custom Audience at Facebook side.
+Seu segmento agora está vinculado aos Públicos Personalizados do Facebook. Sempre que um cliente se qualificar para esse segmento, um sinal será enviado ao lado do servidor (server-side) do Facebook para incluir esse cliente no Público Personalizado no lado do Facebook. 
 
-In Facebook, you'll find your segment from Adobe Experience Platform under Custom Audiences :
+No Facebook, você encontrará seu segmento da Adobe Experience Platform em Públicos Personalizados:
 
 ![RTCDP](./images/rtcdpcreatedest5b.png)
 
-You can now see your custom audience appear in Facebook:
+Agora você pode ver seu público personalizado aparecer no Facebook:
 
 ![RTCDP](./images/rtcdpcreatedest5a.png)
 
-[Go Back to User Flow 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

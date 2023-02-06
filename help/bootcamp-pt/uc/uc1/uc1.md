@@ -6,40 +6,40 @@ audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 ---
-# 1. Acquisition
+# 1. Aquisição
 
-## Learning Objectives
+## Objetivos de aprendizado
 
-## Prerequisites
+## Pré-requisitos
 
-- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to the demo website
+- Acesso à Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demonstração
 
 >[!IMPORTANT]
 >
->This tutorial was created to facilitate a particular bootcamp format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the bootcamp and need your access credentials, please contact your Adobe representative who will provide you with the required information.
+>Este tutorial foi criado para facilitar um formato específico de Bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um participante de um Bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações necessárias.
 
-## Exercises
+## Exercícios
 
-[1.1 Visit the website](./ex1.md)
+[1.1 Visite o site](./ex1.md)
 
-In this exercise, you'll follow a script and walk through the website.
+Neste exercício, você irá seguir um roteiro e percorrer o site.
 
-[1.2 Visualize your own real-time customer profile - UI](./ex2.md)
+[1.2 Visualize seu próprio perfil de cliente em tempo real - UI](./ex2.md)
 
-In this exercise, you'll login to Adobe Experience Platform and you'll view your own Real-time Customer Profile in the UI.
+Neste exercício, você irá fazer login na Adobe Experience Platform e visualizar seu próprio Perfil de cliente em tempo real na UI.
 
-[1.3 Create a segment - UI](./ex3.md)
+[1.3 Crie um segmento - UI](./ex3.md)
 
-In this exercise, you'll create a segment by making use of Adobe Experience Platform's Segment Builder.
+Neste exercício, você irá criar um segmento usando o Construtor de Segmentos da Adobe Experience Platform.
 
-[1.4 Take Action: send your segment to Adobe Target](./ex4.md)
+[1.4 Ação: envie seu segmento para o Adobe Target](./ex4.md)
 
-Use the segment you built in exercise 1.1 to configure an Experience Targeting Activity in Adobe Target.
+Use o segmento construído no exercício 1.1 para configurar uma Atividade de segmentação por experiência no Adobe Target.
 
-[1.5 Take Action: send your segment to Facebook](./ex5.md)
+[1.5 Ação: envie seu segmento para o Facebook](./ex5.md)
 
-Connect the segment you built in exercise 1.1 to the destination Facebook.
+Conecte o segmento que você criou no exercício 1.1 ao destino Facebook.
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os módulos](../../overview.md)

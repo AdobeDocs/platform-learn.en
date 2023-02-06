@@ -6,36 +6,36 @@ audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
 ---
-# 3. Blending physical and digital
+# 3. Retornar para Todos os Módulos
 
-## Learning Objectives
+## Objetivos de aprendizado
 
-## Prerequisites
+## Pré-requisitos
 
-- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to the demo website
+- Acesso à Adobe Experience Platform:  [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Acesso à coleta de dados da Adobe Experience Platform: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Acesso ao site de demonstração 
 
 >[!IMPORTANT]
 >
->This tutorial was created to facilitate a particular bootcamp format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the bootcamp and need your access credentials, please contact your Adobe representative who will provide you with the required information.
+>Este tutorial foi criado para facilitar um formato específico de bootcamp. Sistemas e contas específicos aos quais você pode não ter acesso são utilizados neste tutorial. Mesmo sem acesso, você ainda pode aprender muito com a leitura deste conteúdo detalhado. Se você é um participante de um bootcamp e precisa das credenciais de acesso, entre em contato com seu representante da Adobe para receber as informações necessárias. 
 
-## Exercises
+## Exercícios
 
-[3.1 Use the mobile app and trigger a beacon entry](./ex1.md)
+[3.1 Use o aplicativo móvel e acione sinalizador beacon](./ex1.md)
 
-In this exercise, you'll learn how to configure an event.
+Neste exercício, você irá aprender como configurar um evento.
 
-[3.2 Create your event](./ex2.md)
+[3.2 Crie seu evento](./ex2.md)
 
-In this exercise, you'll learn how to configure an event.
+Neste exercício, você irá aprender como configurar um evento.
 
-[3.3 Create your journey and push notification](./ex3.md)
+[3.3 Crie sua jornada e notificação push](./ex3.md)
 
-In this exercise, you'll learn how to configure a journey and a push notification and how to link your event and message to that journey.
+Neste exercício, você irá aprender como configurar uma jornada e uma notificação push e como vincular seu evento e mensagem para a jornada.
 
-[3.4 Test your journey](./ex4.md)
+[3.4 Teste sua jornada](./ex4.md)
 
-In this exercise, you'll learn how to configure a journey and how to link your event and message to that journey.
+Neste exercício, você irá aprender como configurar uma jornada e como vincular seu evento e mensagem para a jornada.
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)
