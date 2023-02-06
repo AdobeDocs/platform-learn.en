@@ -78,7 +78,7 @@ Neste exercício, você irá configurar os componentes necessários para analisa
 
 ![demo](./images/2-v2.png)
 
->[!IMPORTANTE]
+>[!IMPORTANT]
 >
 >Se você não encontrar uma métrica ou dimensão específica, verifique se o campo `Contains data` foi removido de sua visualização de dados. Caso contrário, exclua esse campo.
 >

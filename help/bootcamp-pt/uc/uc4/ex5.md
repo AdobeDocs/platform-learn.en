@@ -32,7 +32,7 @@ Com seu projeto aberto e Visualização de dados `yourLastName - Omnichannel A
 
 Em primeiro lugar, precisamos selecionar as datas certas para analisar os dados. Acesse o menu suspenso do calendário no lado direito da tela. Clique nele e selecione o intervalo de datas aplicável. 
 
->[!IMPORTANTE]
+>[!IMPORTANT]
 >
 >Selecione um intervalo de datas como **This Week** ou **This Month**. Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022. 
 

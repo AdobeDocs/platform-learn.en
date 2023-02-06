@@ -159,7 +159,7 @@ Em seguida, cole o valor com base na tabela acima. Clique em **Ok**.
 
 Repita esse processo para adicionar valores para cada campo.
 
->[!IMPORTANTE]
+>[!IMPORTANT]
 >
 >Para o campo ECID, há uma referência ao evento`yourLastNameBeaconEntryEvent`. Lembre-se de substituir  `yourLastName` pelo seu sobrenome. 
 
