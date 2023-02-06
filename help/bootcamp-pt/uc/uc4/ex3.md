@@ -280,7 +280,7 @@ Quando terminar, clique em **Save and finish**.
 
 ![demo](./images/13-v2.png)
 
->[!NOTA]
+>[!NOTE]
 >
 >Você pode voltar a esta Visualização de dados posteriormente e alterar as configurações e os componentes a qualquer momento. As alterações afetarão a forma como os dados históricos são mostrados. 
 
