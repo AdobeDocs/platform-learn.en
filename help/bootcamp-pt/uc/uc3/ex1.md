@@ -6,27 +6,29 @@ audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
 ---
-# 3.1 Use the mobile app and trigger a beacon entry
+# 3.1 Use o aplicativo móvel e acione um beacon
 
-## Install the mobile app
+## Instale o aplicativo móvel
 
 Before you install the app, you need to enable **Tracking** on your iOS device. To do so, go to **Settings** > **Privacy & Security** > **Tracking** and ensure that the option **Allow Apps to Request to Track**.
 
+Antes de instalar o aplicativo, é necessário habilitar **Rastreamento** no seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**. 
+
 ![DSN](./../uc3/images/app4.png)
 
-Go to the Apple App Store and search for `aepmobile-bootcamp`. Click **Install** or **Download**.
+Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Instalar** ou **Download**. 
 
 ![DSN](./../uc3/images/app1.png)
 
-Once the app is installed, click **Open**.
+Depois que o aplicativo estiver instalado, clique em **Open**. 
 
 ![DSN](./../uc3/images/app2.png)
 
-Click **OK**.
+Clique em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Click **Allow**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
@@ -34,92 +36,93 @@ Click **I agree**.
 
 ![DSN](./../uc3/images/app7.png)
 
-Click **Allow While Using App**.
+Clique em **Permitir enquanto usa o aplicativo**.
 
 ![DSN](./../uc3/images/app8.png)
 
-Click **Allow**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-You're now in the app, on the homepage, ready to go through the customer journey.
+Agora você está no aplicativo, na página inicial, pronto(a) para verificar toda a jornada do cliente.
 
 ![DSN](./../uc3/images/app12.png)
 
-## Customer journey flow
+## Fluxo da jornada do cliente
 
-First of all, you need to login. Click **Login**.
+Primeiramente, é necessário fazer o login. Clique em **Login**.
 
 ![DSN](./images/app13.png)
 
-After creating your account in the previous exercises, you saw this on the website. You now need to reuse the email address of the account you created in the app to login.
+Depois de criar sua conta nos exercícios anteriores, isso é exibido no site. Agora é necessário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
   
 ![Demo](./images/pv1.png)
 
-Enter the email address you used on the website here and click **Login**.
+Digite o endereço de e-mail que você usou no site e clique em **Login**.
 
 ![DSN](./images/app14.png)
 
-You'll then get a confirmation that you're logged in, and you'll receive a push notification.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push.
 
 ![DSN](./images/app15.png)
 
-Go back to the homepage in the app, and you'll see additional capabilities appear.
+Retorne para a página inicial do aplicativo e os recursos adicionais irão aparecer.
 
 ![DSN](./images/app17.png)
 
-First, go to **Products**. Click on any product, in this example **Coffee to go**.
+Primeiro, acesse **Products**. Clique em qualquer produto, neste exemplo: **Coffee to go**. 
 
 ![DSN](./images/app19.png)
 
-You'll see the **Coffee to go** product page in the app.
+Você verá a página do produto **Coffee to go** no aplicativo. 
 
 ![DSN](./images/app20.png)
 
-You'll now simulate a beacon entry event in an offline store location. The goal of simulating this is to personalize the customer experience on the in-store screens. To visualize the in-store experience, a page has been created that will dynamically show the information that is relevant to the customer that just entered the store. 
+Agora você irá simular um evento de entrada de sinalização (beacon) em um local de armazenamento offline. O objetivo da simulação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevantes para o cliente ao entrar na loja. 
 
-Before continuing, please open this web page on your computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-You'll then see this:
+Em seguida, a tela abaixo será exibida:
 
 ![DSN](./images/screen1.png)
 
-Next, go back to the homepage. Click the **beacon** icon.
+Em seguida, retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
 You'll then see this. First, select **Bootcamp Screen Beacon** and then click the **entry** button. This will allow you to simulate a beacon entry.
+Após essa etapa, o seguinte será exibido. Primeiro, selecione **Bootcamp Screen Beacon** e clique no botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon. 
 
 ![DSN](./images/app21.png)
 
-Now, have a look at the in-store screen. You'll see the last product you viewed appear there within 5 seconds.
+Agora confira a tela da loja. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen2.png)
 
-Then, go back to **Products**. Click on any product, in this example **Beach blanket Tan**.
+Em seguida, retorne para **Products**. Clique em qualquer produto, neste exemplo: **Beach blanket Tan**. 
 
 ![DSN](./images/app22.png)
 
-Next, go back to the homepage. Click the **beacon** icon.
+Em seguida, retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-You'll then see this. First, select **Bootcamp Screen Beacon** and then click the **entry** button again. This will allow you to simulate a beacon entry.
+Em seguida, selecione **Bootcamp Screen Beacon** e clique no botão de **Entrada** novamente. Isso permitirá que você simule uma entrada de sinalização (beacon). 
 
 ![DSN](./images/app21.png)
 
-Now, have a look at the in-store screen again. You'll see the last product you viewed appear there within 5 seconds.
+Agora, confira a tela da loja novamente. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/screen3.png)
 
-Let's also have a look at your Profile Viewer on the website now. You'll see a lot of events that were added there, just to show that any interaction with a customer is collected and stored in Adobe Experience Platform.
+Agora, vamos verificar também o seu Visualizador de Perfil no site. Você verá muitos eventos que foram adicionados, para mostrar que qualquer interação com um cliente é coletada e armazenada na Adobe Experience Platform.
 
 ![DSN](./images/screen4.png)
 
-In the next exercises, you'll configure and test your own beacon entry journey.
+Nos próximos exercícios, você irá configurar e testar sua própria jornada de entrada do beacon. 
 
-Next Step: [3.2 Create your event](./ex2.md)
+Próxima etapa: [3.2 Crie seu evento](./ex2.md)
 
-[Go Back to User Flow 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

@@ -6,62 +6,62 @@ audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
 ---
-# 2.1 Visit the website and create your account
+# 2.1 Visite o site e crie sua conta
 
-## Context
+## Contexto
 
-The journey from unknown to known is one of the most important topics amongst brands these days, as is the customer journey from acquisition to retention. 
+A jornada do desconhecido ao conhecido é um dos tópicos mais importantes para as marcas atualmente, assim como a jornada do cliente, da aquisição à retenção. 
 
-Adobe Experience Platform plays a huge role in this journey. Platform is the brains for communication, the **experience system of record**.
+A Adobe Experience Platform desempenha um papel importante nessa jornada. A plataforma é o cérebro da comunicação, o **experience system of record**. 
 
-Platform is an environment in which the word customer is broader than just the known customers. An unknown visitor on the website is also a customer from Platform's perspective and as such, all of the behavior as an unknown visitor is also sent to Platform. Thanks to that approach, when this visitor eventually becomes a known customer, a brand can visualize what happened before that moment as well. This helps from an attribution and experience optimization perspective.
+Plataforma é um ambiente em que a palavra cliente engloba mais do que clientes conhecidos. Um visitante desconhecido no site também é um cliente do ponto de vista da Plataforma e, como tal, todo o comportamento de um visitante desconhecido também é enviado à Plataforma. Graças a essa abordagem, quando esse visitante eventualmente se torna um cliente conhecido, uma marca também pode visualizar o que aconteceu antes daquele momento. Isso ajuda a partir de uma perspectiva de otimização de atribuição e experiência. 
 
-## Customer journey flow
+## Fluxo da jornada do cliente
 
-Go to [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Click **Allow All**. Based on your browsing behaviour in the previous user flow, you'll see personalization happen on the homepage of the website.
+Acesse [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Clique em **Allow All**. Com base no seu comportamento de navegação no fluxo de usuário anterior, você verá a personalização acontecer na página inicial do site. 
 
 ![DSN](./images/web8.png)
 
-Click the Adobe logo icon in the top left corner of your screen to open the Profile Viewer. Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for this currently unknown customer.
+Clique no ícone do logotipo da Adobe no canto superior esquerdo da tela para abrir o Visualizador de perfil. Verifique o painel do Visualizador de perfil e no Perfil do cliente em tempo real com o **Experience Cloud ID** como o identificador primário para este cliente que ainda é desconhecido. 
   
 ![Demo](./images/pv1.png)
 
-You can also see all the Experience Events that were collected based on the customer's behaviour.
+Você também pode ver todos os Eventos de experiência coletados com base no comportamento do cliente.
 
 ![Demo](./images/pv3.png)
 
-Click the **Profile** icon in the top right corner of your screen.
+Clique no ícone **Profile** no canto superior direito da tela.
 
 ![Demo](./images/pv4.png)
 
-Click **Create an account**.
+Clique em **Create an account**.
   
 ![Demo](./images/pv5.png)
   
-Fill out all the fields of the form. Use a real value for email address and phonenumber, as it will be used in later exercises for delivery of email and SMS.
+Preencha todos os campos do formulário. Use um valor real para endereço de e-mail e número de telefone, pois será usado em exercícios posteriores para envio de e-mail e SMS.
   
 ![Demo](./images/pv7.png)
   
-Scroll down and click **Register**.
+Role para baixo e clique em **Register**.
   
 ![Demo](./images/pv8.png)
 
-You'll then see this.
+Em seguida, o seguinte será exibido. 
 
 ![Demo](./images/pv9.png)
 
-You'll also receive this email:
+Você também receberá o seguinte e-mail:
 
 ![Demo](./images/pv10.png)
 
-And a couple of minutes later, you'll also receive this email:
+E alguns minutos depois, você também receberá o seguinte e-mail: 
 
 ![Demo](./images/pv11.png)
 
-Let's see how this onboarding journey was configured next.
+Vamos conferir a seguir como essa jornada de onboarding foi configurada.
 
-Next Step: [2.2 Create your event](./ex2.md)
+Próxima etapa [2.2 Crie seu evento](./ex2.md)
 
-[Go Back to User Flow 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

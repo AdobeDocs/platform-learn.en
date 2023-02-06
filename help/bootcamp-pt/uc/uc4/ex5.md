@@ -6,257 +6,255 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 ---
-# 4.5 Visualization using Customer Journey Analytics
+# 4.5 Visualização usando o Customer Journey Analytics
 
-## Objectives
+## Objetivos
 
-- Understand Analysis Workspace UI
-- Learn some feature that make Analysis Workspace so different.
-- Learn how to analyze in CJA using Analysis Workspace
+- Entenda a UI do Analysis Workspace 
+- Conheça alguns recursos que tornam o Analysis Workspace tão diferente. 
+- Aprenda a analisar no CJA usando o Analysis Workspace 
 
 ## Context
 
-In this exercise you will use Analysis Workspace within CJA to analyze product views, product funnels, churn etc.
+Neste exercício, você usará o Analysis Workspace no CJA para analisar visualizações de produtos, funis de produtos, rotatividade, etc. 
 
-Let's use the project you created in [4.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
+Vamos usar o projeto que você criou em  [4.4 Preparação de dados no Analysis Workspace](./ex4.md), então acesse [https://analytics.adobe.com](https://analytics.adobe.com).
 
 ![demo](./images/prohome.png)
 
-Open your project `yourLastName - Omnichannel Analysis`.
+Abra seu projeto `yourLastName - Omnichannel Analysis`.
 
-With your project opened and the Data View `yourLastName - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
+Com seu projeto aberto e Visualização de dados `yourLastName - Omnichannel Analysis` selecionado, você está pronto para começar a construir suas primeiras visualizações. 
 
 ![demo](./images/prodataView1.png)
 
-## How many product views do we have on a daily basis
+## Quantas visualizações de produtos temos diariamente?
 
-First of all, we need to select the right dates to analyze the data. Go to the calendar dropdown on the right side of the canvas. Click on it and select the applicable date range.
+Em primeiro lugar, precisamos selecionar as datas certas para analisar os dados. Acesse o menu suspenso do calendário no lado direito da tela. Clique nele e selecione o intervalo de datas aplicável. 
 
->[!IMPORTANT]
+>[!IMPORTANTE]
 >
->Please select a date range like **This Week** or **This Month**. Most recent available data has been ingested on September 19, 2022.
+>Selecione um intervalo de datas como **This Week** ou **This Month**. Os dados disponíveis mais recentes foram absorvidos em 19 de setembro de 2022. 
 
 ![demo](./images/pro1.png)
-
-In the left side menu (components area), find the Calculated Metric **Product Views**. Select it and drag and drop it in to the canvas, on the top right within the freeform table.
+No menu do lado esquerdo (área de componentes), encontre as métricas calculadas **Product Views**. Selecione-as e arraste e solte na tela, no canto superior direito da tabela de forma livre.
 
 ![demo](./images/pro2.png)
 
-Automatically the dimension **Day** will be added to create your first table. Now you can see your question answered on the fly. 
+Automaticamente a dimensão **Day** será adicionada para criar sua primeira tabela. Agora você pode ver sua pergunta respondida imediatamente. 
 
 ![demo](./images/pro3.png)
 
-Next, right-click on the metric summary.
+Em seguida, clique com o botão direito do mouse no resumo da métrica.
 
 ![demo](./images/pro4.png)
 
-Click on **Visualize** and then select **Line** as visualization.
+Clique em **Visualize** e selecione **Line** como visualização. 
 
 ![demo](./images/pro5.png)
 
-You’ll see your products views by day.  
+Você verá as suas visualizações de produto por dia.
 
 ![demo](./images/pro6.png)
 
-You can change the time scope to day by clicking on **Settings** within the visualization.
+Você pode alterar o escopo de tempo para o dia clicando em **Settings** na visualização.
 
 ![demo](./images/pro7.png)
 
-Click on the dot next to **Line** to **Manage the Data Source**.
+Clique no ponto ao lado de **Line** e **Manage the Data Source**.
 
 ![demo](./images/pro7a.png)
 
-Next, click **Lock Selection** and select **Selected Items** to lock this visualization so that it always displays a timeline of Product Views.
+Em seguida, clique em **Lock Selection** e selecione **Selected Items** para bloquear esta visualização para que ela sempre exiba uma linha do tempo de Visualizações de produtos.
 
 ![demo](./images/pro7b.png)
 
-## Top 5 Products Viewed
+## 5 produtos mais vistos
 
-What are the top 5 products viewed?
+Quais são os 5 produtos mais vistos? 
 
-Remember to save project every now and then.
+Lembre-se de salvar o projeto de tempos em tempos.
 
 |  OS        | Short cut   | 
 | ----------------- |-------------| 
 | Windows | Control + S          | 
 | Mac | Command + S          |
 
-Let's start finding the top 5 products viewed. In the left side menu, find the **Product Name** - Dimension.
+Vamos começar a encontrar os 5 produtos mais vistos. No menu do lado esquerdo, encontre o Nome do produto - Dimensão.
 
 ![demo](./images/pro8.png)
 
-Now drag and drop **Product Name** to replace the **Day** dimension:
+Agora arraste e solte **Product Name** para substituir a dimensão **Day**:
 
-This will be the result
+Este será o resultado.
 
 ![demo](./images/pro10a.png)
 
-Next, try to breakdown one of the products by Brand Name. Search for **brandName** and drag it under the first product name.
+Em seguida, tente dividir um dos produtos por Nome da marca. Pesquise **brandName** e arraste para baixo do primeiro nome do produto.
 
 ![demo](./images/pro13.png)
 
-Next, do a breakdown using the User Agent. Search for **User Agent** and drag it under the brand name.
+Em seguida, faça um detalhamento usando o Agente de usuário. Pesquise **User Agent** e arraste-o para baixo do nome da marca.
 
 ![demo](./images/pro15.png)
 
-You'll then see this:
+Em seguida, será exibida a tela abaixo: 
 
 ![demo](./images/pro15a.png)
 
-Finally you can add more visualizations. On the left side, under visualizations, search for `Donut`. Take `Donut`, drag-and-drop it on the canvas under the **Line** visualization.
+Por fim, você pode adicionar mais visualizações. No lado esquerdo, em visualizações, pesquise `Donut`. Pegue `Donut`, arraste e solte na tela sob a visualização **Line** 
 
 ![demo](./images/pro18.png)
 
 Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**. While selecting the 5 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
 
+Em seguida, na Tabela, selecione as primeiras 5 linhas de **User Agent** do detalhamento que fizemos em **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**. Ao selecionar as 5 linhas, segure o botão **CTRL** (no Windows) ou o botão **Command** (no Mac). 
+
 ![demo](./images/pro20.png)
 
-You'll see the donut chart changed:
+Você verá o gráfico de donut alterado:
 
 ![demo](./images/pro21.png)
 
-You can even adapt the design to be more readable, by making both the **Line** graph and the **Donut** graph a bit smaller so they can fit next to each other:
+Você pode até adaptar o design para ser mais legível, tornando o gráfico de **Line** e o gráfico de **Donut** um pouco menor para que sejam exibidos lado a lado: 
 
 ![demo](./images/pro22.png)
 
-Click on the dot next to **Donut** to **Manage the Data Source**.
-Next, click **Lock Selection** to lock this visualization so that it always displays a timeline of Product Views.
+Clique no ponto ao lado de *Donut** para **Manage the Data Source**. Em seguida, clique em **Lock Selection** para bloquear essa visualização para que ela sempre exiba uma linha do tempo de Visualizações de produto. 
 
 ![demo](./images/pro22b.png)
 
-Find out more about visualizations using Analysis Workspace here: 
+Saiba mais sobre visualizações usando o Analysis Workspace em: 
 
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/freeform-analysis-visualizations.html)
 - [https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html](https://experienceleague.adobe.com/docs/analytics/analyze/analysis-workspace/visualizations/t-sync-visualization.html)
 
-## Product Interaction funnel, from viewing to buying
+## Funil de interação do produto, da visualização à compra 
 
-There are many ways to solve this question. One of them is to use Product Interaction Type and use it on a freeform table. Another way is to use a **Fallout Visualization**. Let's use the last one as we want to visualize and analyze at the same time.
+Existem muitas formas de resolver esta questão. Uma delas é usar o Tipo de Interação de Produto e usá-lo em uma tabela de formato livre. Outra forma é usar uma **Fallout Visualization**. Vamos usar o último, pois queremos visualizar e analisar ao mesmo tempo. 
 
-Close the current panel we have by clicking here:
+Feche o painel atual clicando aqui: 
 
 ![demo](./images/pro23.png)
 
-Now add a new blank panel by clicking on **+ Add Blank Panel**.
+Agora adicione um novo painel em branco clicando em **+ Add Blank Panel**.
 
 ![demo](./images/pro24.png)
 
-Click the visualization **Fallout**.
+Clique na visualização de **Fallout**.
 
 ![demo](./images/pro25.png)
 
-Select the same date range as in the previous exercise.
+Selecione o mesmo intervalo de datas do exercício anterior.
 
 ![demo](./images/prodatef.png)
 
-You'll then see this.
+Em seguida, você verá:
 
 ![demo](./images/prodatefa.png)
 
-Find the dimension **Event Type** under the components on the left side:
+Encontre a dimensão **Event Type** nos componentes no lado esquerdo:
 
 ![demo](./images/pro26.png)
 
-Click on the arrow to open the dimension:
+Clique na seta para abrir a dimensão:
 
 ![demo](./images/pro27.png)
 
-You'll see all available Event Types. 
+Você verá todos os Tipos de eventos disponíveis. 
 
 ![demo](./images/pro28.png)
 
-Select the item **commerce.productViews** and drag and drop it onto the **Add Touchpoint** field inside the **Fallout Visualization**.
+Selecione o item **commerce.productViews** e arraste e solte-o no campo **Add Touchpoint** dentro da **Fallout Visualization**.
 
 ![demo](./images/pro29.png)
 
-Do the same with **commerce.productListAdds** and **commerce.purchases** and drop them onto the **Add Touchpoint** field inside the **Fallout Visualization**. Your visualization will now look like this:
+Faça o mesmo com **commerce.productListAdds** and **commerce.purchases** e solte-os no campo **Add Touchpoint** dentro da  **Fallout Visualization**. Sua visualização agora deve ser semelhante ao seguinte:
 
 ![demo](./images/props1.png)
 
-You can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if we want to analyze interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
+Você pode fazer muitas coisas aqui. Alguns exemplos: comparar ao longo do tempo, comparar cada passo por dispositivo ou comparar por fidelidade. No entanto, se quisermos analisar coisas interessantes como porque os clientes não compram depois de adicionar um item ao carrinho, podemos usar a melhor ferramenta do CJA: clicar com o botão direito. 
 
-Right click on the touchpoint **commerce.productListAdds**. Then click on **Breakdown fallout at this touchpoint**.
+Clique com o botão direito do mouse no touchpoint **commerce.productListAdds**. Em seguida, clique em **Breakdown fallout at this touchpoint**.
 
 ![demo](./images/pro32.png)
 
-A new freeform table will be created to analyze what the people did if they didn't purchase. 
+Uma nova tabela de formato livre será criada para analisar o que as pessoas fizeram se não compraram.
 
 ![demo](./images/pro33.png)
 
-Change the **Event Type** by **Page Name**, in the new freeform table, to see which pages they are going instead of the Purchase Confirmation Page.
+Altere o **Event Type** by **Page Name**, na nova tabela de formato livre, para ver em quais páginas eles estão indo, em vez da Página de confirmação de compra.
 
 ![demo](./images/pro34.png)
 
-## What do people do on the site before reaching the Cancel Service page?
+## O que as pessoas fazem no site antes de acessar a página Cancelar serviço?
 
-Again, there are many ways to perform this analysis. Let's use the flow analysis to start the discovery part.
+Novamente, há muitas formas de realizar essa análise. Vamos usar a análise de fluxo para iniciar parte da descoberta. 
 
-Close the current panel by clicking here:
+Feche o painel atual clicando aqui: 
 
 ![demo](./images/pro0.png)
 
-Now add a new blank panel by clicking on **+ Add Blank Panel**.
+Agora adicione um novo painel em branco clicando em **+ Add Blank Panel**.
 
 ![demo](./images/pro0a.png)
 
-Click the visualization **Flow**.
+Clique na visualização **Flow**.
 
 ![demo](./images/pro35.png)
 
-You'll then see this:
+Em seguida, será exibido:
 
 ![demo](./images/pro351.png)
 
-Select the same date range as in the previous exercise.
+Selecione o mesmo intervalo de datas do exercício anterior.
 
 ![demo](./images/pro0b.png)
 
-Find the dimension **Page Name** under the components on the left side:
+Encontre a dimensão **Page Name** nos componentes no lado esquerdo:
 
 ![demo](./images/pro36.png)
 
-Click on the arrow to open the dimension:
+Clique na seta para abrir a dimensão: 
 
 ![demo](./images/pro37.png)
 
-You'll find all pages viewed. Find the page name: **Cancel Service**.
-Drag and drop **Cancel Service** into the Flow Visualization on the middle field:
+Você encontrará todas as páginas vistas. Encontre o nome da página: **Cancel Service**.
+Arraste e solte **Cancel Service** na Visualização de fluxo no campo do meio:
 
 ![demo](./images/pro38.png)
 
-You'll then see this:
+Em seguida, será exibido:
 
 ![demo](./images/pro40.png)
 
-Let's now analyze if customers who visited the **Cancel Service** page on the website also called the callcenter, and what the outcome was.
+Vamos agora analisar se os clientes que visitaram a página C**Cancel Service** no site também ligaram para o call center e qual foi o resultado. 
 
-Under the dimensions, go back and then find **Call Interaction Type**.
-Drag and drop **Call Interaction Type** to replace the first interaction on the right within the **Flow Visualization**. 
+Nas dimensões, retorne e encontre Tipo de interação de chamada. Arraste e solte **Call Interaction Type** para substituir a primeira interação à direita em **Flow Visualization**. 
 
 ![demo](./images/pro43.png)
 
-You're now seeing the support ticket of the customers that called the call center after visiting the **Cancel Service** page.
+Agora você visualiza o ticket de suporte dos clientes que ligaram para a central de atendimento depois de visitar a página **Cancel Service**.
 
 ![demo](./images/pro44.png)
 
-Next, under the dimensions, search for **Call Feeling**.  Drag and drop it to replace the first interaction on the right within the **Flow Visualization**.
+Em seguida, nas dimensões, procure **Call Feeling**. Arraste e solte para substituir a primeira interação à direita na visualização de fluxo.
 
 ![demo](./images/pro46.png)
 
-You'll then see this:
+Em seguida, será exibido:
 
 ![demo](./images/flow.png)
 
-As you can see, we have run an omnichannel analysis using the Flow Visualization. Thanks to that we have found it seems that some customers that were thinking of canceling their service, had a positive feeling after calling the callcenter. Have we maybe changed their minds with a promotion? 
+Como pode ver, executamos uma análise omnichannel usando a visualização de fluxo. Graças a isso, descobrimos que alguns clientes que estavam pensando em cancelar o serviço tiveram uma avaliação positiva depois de ligar para o call center. Talvez tenhamos mudado de ideia com uma promoção? 
 
+## Qual é o desempenho dos clientes com um contato de Call center Positivo em relação aos principais KPIs?
 
-## How are customers with a Positive Callcenter contact performing against the main KPIs?
-
-Let's first segment the data to get only users with **positive** calls. In CJA, Segments are called Filters. Go to filters within the component area (on the left-side) and click **+**.
+Primeiramente, vamos segmentar os dados para obter apenas usuários com chamadas **positive**. No CJA, os Segmentos são chamados de Filtros. Acesse para filtros na área de componentes (no lado esquerdo) e clique em **+**. 
 
 ![demo](./images/pro58.png)
 
-Inside the Filter builder, give a name to the filter
+Dentro do Construtor de filtro, dê um nome ao filtro
 
 |  Name        | Description    | 
 | ----------------- |-------------| 
@@ -264,59 +262,58 @@ Inside the Filter builder, give a name to the filter
 
 ![demo](./images/pro47.png)
 
-Under the components (inside the Filter Builder), find **Call Feeling** and drag and drop it into the Filter Builder Definition.
+Nos componentes (dentro do Construtor de filtro), encontre **Call Feeling** e arraste e solte na Definição do construtor de filtro. 
 
 ![demo](./images/pro48.png)
 
-Now select **positive** as value for the filter.
+Agora selecione **positive** como valor para o filtro. 
 
 ![demo](./images/pro49.png)
 
-Change the scope to be **Person** level.
+Altere o escopo para o nível **Person**.
 
 ![demo](./images/pro50.png)
 
-To finish, simply click **Save**.
+Para finalizar, basta clicar em **Save**.
 
 ![demo](./images/pro51.png)
 
-You'll then be back here. If not done yet, close the previous panel.
+Então, você irá retornar para esta tela. Se ainda não retornou, feche o painel anterior.
 
 ![demo](./images/pro0c.png)
 
-Now add a new blank panel by clicking on **+ Add Blank Panel**.
+Agora adicione um novo painel em branco clicando em **+ Add Blank Panel**.
 
 ![demo](./images/pro24c.png)
 
-Select the same date range as in the previous exercise.
+Selecione o mesmo intervalo de datas do exercício anterior.
 
 ![demo](./images/pro24d.png)
 
-Click on **Freeform table**.
+Clique em **Freeform table**.
 
 ![demo](./images/pro52.png)
 
-Now drag and drop the filter you've just created.
+Agora arraste e solte o filtro que você acabou de criar.
 
 ![demo](./images/pro53.png)
 
-Time to add some metrics. Start with **Product Views**. Drag and drop into the freeform table. You can also delete the **Events** metric.
+Hora de adicionar algumas métricas. Comece com **Product Views**. Arraste e solte na tabela de forma livre. Você também pode excluir a métrica **Events**. 
 
 ![demo](./images/pro54.png)
 
-Do the same with **People**,  **Add to Cart** and **Purchases**. You'll end up with a table like this.
+Faça o mesmo com **People**, **Add to Cart** e **Purchases**. Você vai acabar com uma tabela como a seguinte. 
 
 ![demo](./images/pro55.png)
 
-Thanks to the first flow analysis, a new question came to mind. So we decided to create this table and check some KPIs against a segment to answer that question. As you can see, time to insight is much faster than using SQL or using other BI solutions.
+Graças à primeira análise de fluxo, uma nova pergunta surgiu. Então decidimos criar esta tabela e verificar alguns KPIs em um segmento para responder a essa pergunta. Como você pode ver, o tempo de insight é muito mais rápido do que usar SQL ou usar outras soluções de BI.
 
-## Customer Journey Analytics and Analysis Workspace recap
+## Recapitulação do Analysis Workspace e do Customer Journey Analytics
 
-As you've learned in this lab, Analysis Workspace stitches data from all channels together to analyze the full customer journey. Also, remember that you can bring in data to the same workspace that is not stitched to the journey. 
-It can be really useful to bring disconnected data into your analysis to give context to the journey. Some examples include things like NPS data, surveys, Facebook Ads events or offline interactions (non identified).
+Como você aprendeu neste laboratório, o Analysis Workspace reúne dados de todos os canais para analisar a jornada completa do cliente. Além disso, lembre-se de que você pode trazer dados para o mesmo workspace que não está vinculado à jornada. Pode ser muito útil trazer dados desconectados para sua análise para contextualizar a jornada. Alguns exemplos incluem coisas como dados NPS, pesquisas, eventos de anúncios do Facebook ou interações offline (não identificadas). 
 
-Next Step: [4.6 From insights to action](./ex6.md)
+Próxima etapa: [4.6 De insights a ação](./ex6.md)
 
-[Go Back to User Flow 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Go Back to All Modules](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

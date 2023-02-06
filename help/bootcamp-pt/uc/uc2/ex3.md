@@ -6,174 +6,176 @@ audience: developer
 doc-type: tutorial
 activity: develop
 ---
-# 2.3 Create your journey and email message
+# 2.3 Crie sua jornada e mensagem de e-mail
 
-In this exercise, you'll configure the journey that needs to be triggered when someone creates an account on the demo website.
+Neste exercício, você irá configurar a jornada que precisa ser acionada quando alguém criar uma conta no site de demonstração. 
 
-Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
+Faça login no Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `Bootcamp`. To change from one sandbox to another, click on **Prod** and select the sandbox from the list. In this example, the sandbox is named **Bootcamp**. You'll then be in the **Home** view of your sandbox `Bootcamp`.
+Você será redirecionado para a visualização da **Home**  no Journey Optimizer. Primeiro, verifique se você está usando o sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, clique em **Prod** e selecione o sandbox na lista. Neste exemplo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Home** do seu sandbox `Bootcamp`. 
 
 ![ACOP](./images/acoptriglp.png)
 
-## 2.3.1 Create your journey
+## 2.3.1 Crie a sua jornada
 
-In the left menu, click **Journeys**. Next, click **Create Journey** to create a new journey.
+No menu à esquerda, clique em **Journeys**. Em seguida, clique em **Create Journey** para criar uma nova jornada. 
 
 ![ACOP](./images/createjourney.png)
 
-You'll then see an empty journey screen.
+Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-In the previous exercise, you created a new **Event**. You named it like this `yourLastNameAccountCreationEvent` and replaced `yourLastName` with your last name. This was the result of the Event creation:
+No exercício anterior, você criou um novo **Event**. Você nomeou o evento `yourLastNameAccountCreationEvent` e substituiu `yourLastName` pelo seu sobrenome. Este foi o resultado da criação do Evento: 
 
 ![ACOP](./images/eventdone.png)
 
-You now need to take this event as the start of this Journey. You can do this by going to the left side of your screen and searching for your event in the list of events.
+Agora você deve considerar este evento como o início desta Jornada. Você pode fazer isso indo para o lado esquerdo da tela e procurando pelo seu evento na lista de eventos.
 
 ![ACOP](./images/eventlist.png)
 
-Select your event, drag and drop it on the Journey canvas. Your Journey now looks like this:
+Selecione seu evento, arraste e solte o evento na tela de Jornada. Sua Jornada agora deve ser semelhante ao seguinte:
 
 ![ACOP](./images/journeyevent.png)
 
-As the second step in the journey, you need to add a short **Wait** step. Go to the left side of your screen to the **Orchestration** section to find this. You'll be using profile attributes and need to make sure they are populated into the Real-time Customer Profile.
+Como segunda etapa da jornada, você deve adicionar uma etapa curta de **Wait**. Vá para o lado esquerdo da tela até a seção **Orchestration** para encontrar isso. Você usará atributos de perfil e precisará garantir que eles sejam preenchidos no Perfil do Cliente em tempo real.
 
 ![ACOP](./images/journeywait.png)
 
-Your journey now looks like this. On the right side of the screen you need to configure the wait time. Set it to 1 minute. This will give plenty of time for the profile attributes to be available after the event fires.
+Sua jornada agora deve ser semelhante ao seguinte. No lado direito da tela você precisa configurar o tempo de espera. Defina como 1 minuto. Isso dará bastante tempo para que os atributos do perfil estejam disponíveis após o disparo do evento.
 
 ![ACOP](./images/journeywait1.png)
 
-Click **Ok** to save your changes.
+Clique em **Ok** para salvar suas alterações.
 
-As the third step in the journey, you need to add an **Email** action. Go to the left side of your screen to **Actions**, select the **Email** action, then drag and drop it on the second node in your journey. You now see this.
+Como terceira etapa da jornada, você deve adicionar uma ação **Email**. Vá para o lado esquerdo da tela para **Actions**, selecione a ação **Email** e arraste e solte a ação no segundo nó da sua jornada. Agora o seguinte será exibido. 
 
 ![ACOP](./images/journeyactions.png)
 
 Set the **Category** to **Marketing** and select an email surface that enables you to send email. In this case, the email surface to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
 
+Defina a **Category** como **Marketing** e selecione uma superfície de e-mail que permita o envio de e-mail. Nesse caso, a superfície e-mail a ser selecionada é E-mail. Certifique-se de que as caixas de seleção **Clicks on email** e **email opens** estejam marcadas. 
+
 ![ACOP](./images/journeyactions1.png)
 
-The next step is to create your message. To do that, click **Edit content**.
+A próximo etapa é criar sua mensagem. Para isso, clique em **Edit content**.
 
 ![ACOP](./images/journeyactions2.png)
 
-## 2.3.2 Create your message
+## 2.3.2 Crie a sua mensagem
 
-To create your message, click **Edit content**.
+Para criar sua mensagem, clique em **Edit content**.
 
 ![ACOP](./images/journeyactions2.png)
 
-You now see this.
+O seguinte será exibido.
 
 ![ACOP](./images/journeyactions3.png)
 
-Click the **Subject line** text field.
+Clique no campo de texto **Subject line**.
 
 ![Journey Optimizer](./images/msg5.png)
 
-In the text area start writing **Hi**
+Na área de texto, comece **Olá**
 
 ![Journey Optimizer](./images/msg6.png)
 
-The subject line is not done yet. Next you need to bring in the personalization token for the field **First name** which is stored under `profile.person.name.firstName`. In the left menu, scroll down to find the **Person** element and click on the arrow to go a level deeper.
+A linha de assunto ainda não está pronta. Em seguida, você precisa trazer o token de personalização para o **First name** que está armazenado em `profile.person.name.firstName`. No menu à esquerda, role para baixo para encontrar o elemento **Person** e clique na seta para ir um nível mais profundo.
 
 ![Journey Optimizer](./images/msg7.png)
 
-Now find the **Full name** element and click on the arrow to go a level deeper.
+Agora encontre o elemento **Full name** e clique na seta para ir um nível mais profundo.
 
 ![Journey Optimizer](./images/msg8.png)
 
-Finally, find the **First name** field and click on the **+** sign next to it. You'll then see the personalization token appear in the text field.
+Por fim, localize o campo **First name** e clique no símbolo **+**  ao lado dele. Você verá o token de personalização aparecer no campo de texto.
 
 ![Journey Optimizer](./images/msg9.png)
 
-Next, add the text **, thank you for signing up!**. Click **Save**.
+Em seguida, adicione o texto, **agradecemos a sua inscrição!** Clique em Salvar. . Clique em **Save**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-You'll then be back here. Click **Email Designer** to create the email's content. 
+Então, você irá retornar para esta tela. Clique em **Email Designer**  para criar o conteúdo do e-mail. 
 
 ![Journey Optimizer](./images/msg11.png)
 
-In the next screen you will be prompted with 3 different methods to provide the email's content:
+Na próxima tela, será solicitado que você forneça o conteúdo do e-mail através de 3 métodos diferentes: 
 
-- **Design from scratch**: Start with a blank canvas and use the WYSIWYG-editor to drag and drop structure and content components to visually build up the email's content.
-- **Code your own**: Create your own email template by coding it using HTML
-- **Import HTML**: Import an existing HTML template, which you'll be able to edit.
+- **Design from scratch**: Comece com uma tela em branco e use o editor WYSIWYG para arrastar e soltar a estrutura e os componentes de conteúdo para criar visualmente o conteúdo do e-mail. 
+- **Code your own**: Crie seu próprio modelo de e-mail codificando usando HTML 
+- **Import HTML**: Importe um modelo HTML existente, que você poderá editar. 
 
-Click **Import HTML**.
+Clique em **Import HTML**. 
 
 ![Journey Optimizer](./images/msg12.png)
 
-Drag and drop the file **mailtemplatebootcamp.html**, which you can download [here](../../assets/html/mailtemplatebootcamp.html.zip). Click Import.
+Arraste e solte o arquivo **mailtemplatebootcamp.html**, que você pode baixa [here](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
-You’ll then see this default email template:
+Você verá este modelo de e-mail padrão:
 
 ![Journey Optimizer](./images/msg14.png)
 
-Let's personalize the email. Click next to the text **Hi** and then click the **Add Personalization** icon.
+Vamos personalizar o e-mail. Clique ao lado do texto **Olá** e, em seguida, clique no ícone **Add Personalization**.
 
 ![Journey Optimizer](./images/msg35.png)
 
-Next, you need to bring the **First name** personalization token which is stored under `profile.person.name.firstName`. In the menu, find the **Person** element, drill down to the **Full Name** element, and then click the **+** icon to add the First Name field onto to expression editor.
+Em seguida, você precisa trazer o token de personalização **First name** que está armazenado em `profile.person.name.firstName`. No menu, localize o elemento **Person**, faça uma busca detalhada no elemento **Full Name** e clique no ícone **+** para adicionar o campo **First Name** ao editor de expressão.
 
-Click **Save**.
+Clique em **Save**. 
 
 ![Journey Optimizer](./images/msg36.png)
 
-You'll now notice how the personalization field has been added to your text. 
+Agora você verá como o campo de personalização foi adicionado ao seu texto. 
 
 ![Journey Optimizer](./images/msg37.png)
 
-Click **Save** to save your message.
+Clique em **Save** para salvar sua mensagem.
 
 ![Journey Optimizer](./images/msg55.png)
 
-Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
+Retorne para o painel de mensagens clicando na seta ao lado do texto da linha de assunto no canto superior esquerdo. 
 
 ![Journey Optimizer](./images/msg56.png)
 
-You've now completed creating your registration email. Click the arrow in the top left corner to go back to your journey.
+Agora você concluiu a criação do seu e-mail de cadastro. Clique na seta no canto superior esquerdo para retornar à sua jornada. 
 
 ![Journey Optimizer](./images/msg57.png)
 
-Click **Ok**.
+Clique em **Ok**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 2.3.3 Publish your journey
+## 2.3.3 Publique a sua jornada
 
-You still need to give your journey a Name. You can do that by clicking the **Properties** icon in the top right side of your screen.
+Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone **Properties** no canto superior direito da tela.
 
 ![ACOP](./images/journeyname.png)
 
-You can then enter the journey's name here. Please use `yourLastName - Account Creation Journey`. Click **OK** to save your changes.
+Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças.
 
 ![ACOP](./images/journeyname1.png)
 
-You can now publish your journey by clicking **Publish**.
+Agora você pode publicar sua jornada clicando em **Publish**.
 
 ![ACOP](./images/publishjourney.png)
 
-Click **Publish** again.
+Clique em **Publish**  novamente. 
 
 ![ACOP](./images/publish1.png)
 
-You'll then see a green confirmation bar saying that your journey is now Published.
+Você verá uma barra de confirmação verde informando que sua jornada agora está Publicada. 
 
 ![ACOP](./images/published.png)
 
-You've now finished this exercise.
+Você terminou este exercício.
 
-Next Step: [2.4 Test your journey](./ex4.md)
+Próxima etapa: [2.4 Teste sua jornada](./ex4.md)
 
-[Go Back to User Flow 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

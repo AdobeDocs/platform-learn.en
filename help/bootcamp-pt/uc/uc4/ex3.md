@@ -6,48 +6,47 @@ audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
 ---
-# 4.3 Create a Data View
+# 4.3 Crie uma Visualização de Dados
 
-## Objectives
+## Objetivos
 
-- Understand the Data View UI
-- Understand the basic settings of visit definition
-- Understand Attribution and Persistence within a Data View
+- Entenda a UI de Visualização de Dados 
+- Compreenda as configurações básicas de definição de visita 
+- Compreenda a atribuição e a Persistência em uma Visualização de
 
-## 4.3.1 Data View
+## 4.3.1 Visualização de Dados
 
-With your connection done, you can now progress to influencing visualization. A difference between Adobe Analytics and CJA, is that CJA needs a Data View in order to clean and prepare the data before visualization. 
+Agora, com sua conexão concluída, é possível progredir para influenciar a visualização. Uma diferença entre o Adobe Analytics e o CJA é que o CJA precisa de uma visualização de dados para limpar e preparar os dados antes da visualização. 
 
-A Data View is similar to the concept of Virtual Report Suites in Adobe Analytics, where you  define context-aware visit definitions, filtering and also, how the components are called. 
+Uma Visualização de Dados é semelhante ao conceito de Virtual Report Suites no Adobe Analytics, onde você estabelece as definições de visita com reconhecimento de contexto, filtragem e também como os componentes são chamados. 
 
-You'll need a minimum of one Data View per Connection. However, for some use-cases, it's great to have multiple Data Views for the same connection, with the goal of giving different insights to different teams. 
-If you want your company to become data-driven, you should adapt how data is viewed in each team. Some examples:
+Será necessário, no mínimo, uma Visualização de Dados por conexão. No entanto, para alguns casos de uso, é ótimo ter múltiplas Visualizações de Dados para a mesma conexão, com o objetivo de fornecer insights diferentes para equipes distintas. Se você deseja que sua empresa seja orientada por dados, deve adaptar a forma como os dados são vistos em cada equipe. Alguns exemplos: 
 
-- UX metrics only for the UX Design team
-- Use the same names for KPIs and Metrics for Google Analytics as for Customer Journey Analytics so that the digital analytics team can speak 1 language only.
-- Data View filtered to show for instance data for one market only, or one brand, or only for Mobile Devices.
+- Métricas de UX apenas para a equipe de UX Design 
+- Use os mesmos nomes para KPIs e métricas para o Google Analytics e para o Customer Journey Analytics, para que a equipe de análise digital fale apenas 1 idioma. 
+- Visualização de Dados filtrada para mostrar, por exemplo, dados para apenas um mercado, ou uma marca, ou apenas para Dispositivos móveis.
 
-On the **Connections** screen, check the checkbox in front of the connection you just created. Click **Create Data View**.
+Na tela de **Connections** marque a caixa de seleção da conexão que você acabou de criar. Clique em  **Create Data View**.
 
 ![demo](./images/exta.png)
 
-You'll be redirected to the **Create Data View** workflow.
+Você será redirecionado para o fluxo de trabalho **Create Data View** workflow.
 
 ![demo](./images/0-v2.png)
 
-## 4.3.2 Data View Definition
+## 4.3.2 Definição de Visualização de Dados
 
-You can now configure the basic definitions for your Data View. 
+Agora você pode configurar as definições básicas para sua Visualização de dados.
 
 ![demo](./images/0-v2.png)
 
-The **Connection** you created in the previous exercise is already selected. Your connection is named `yourLastName – Omnichannel Data Connection`.
+A **Connection** que você criou no exercício anterior já está selecionada. Sua conexão se chama `yourLastName – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Next, give your Data View a name following this naming convention: `yourLastName – Omnichannel Data View`. 
+Em seguida, dê um nome à sua Visualização de Dados seguindo este modelo de nomenclatura: `yourLastName – Omnichannel Data View`. 
 
-Enter the same value for the description: `yourLastName – Omnichannel Data View`.
+Insira o mesmo valor para a descrição: `yourLastName – Omnichannel Data View`.
 
 | Name         | Description|    
 | ----------------- |-------------| 
@@ -55,75 +54,75 @@ Enter the same value for the description: `yourLastName – Omnichannel Data Vie
 
 ![demo](./images/1-v2.png)
 
-For the **Time Zone**, select the timezone **Berlin, Stockholm, Rome, Bern, Brussels, Vienna, Amsterdam GMT+01:00**. This is a really interesting setting as some companies operate in different countries and geographies. Allocating the right time zone for each country will avoid typical data mistakes such as believing that for instance, in Peru, the majority of the people buy T-shirts at 4:00 AM.
+Para **Time Zone**, selecione o fuso horário **Berlim, Estocolmo, Roma, Berna, Bruxelas, Viena, Amsterdã GMT+01:00**. Este é um cenário realmente interessante, pois algumas empresas operam em diferentes países e geografias. Alocar o fuso horário certo para cada país evitará erros típicos de dados, como, por exemplo, acreditar que a maioria das pessoas compra camisetas às 4h no Peru.
 
 ![demo](./images/ext7.png)
 
-You can also modify the main metrics naming (Person, Session and Event). This is not required but some customers like to use People, Visits and Hits instead of Person, Session and Events (default naming convenction from Customer Journey Analytics).
+Você também pode modificar a nomenclatura das métricas principais (Pessoa, Sessão e Evento). Isso não é obrigatório, mas alguns clientes gostam de usar Pessoas, Visitas e Acessos em vez de Pessoa, Sessão e Eventos (convenção de nomenclatura padrão do Customer Journey Analytics). 
 
-You should now have the following settings configured:
+Agora você deve ter as seguintes configurações definidas:
 
 ![demo](./images/1-v2.png)
 
-Click **Save and Continue**.
+Clique em **Save and Continue**.
 
 ![demo](./images/12-v2.png)
 
-## 4.3.3 Data View Components
+## 4.3.3 Componentes da Visualização de Dados
 
-In this exercise, you'll configure the components you need to analyze the data and visualize it using Analysis Workspace. In this UI, there are three main areas:
+Neste exercício, você irá configurar os componentes necessários para analisar os dados e visualizá-los usando o Analysis Workspace. Nesta IU, há três áreas principais: 
 
-- Left side: Available components from the selected datasets
-- Middle: Added components to the Data View
-- Right side: Component settings
+- Lado esquerdo: Componentes disponíveis dos datasets selecionados 
+- Meio: Componentes adicionados à Visualização de Dados 
+- Lado direito: Configurações do componente 
 
 ![demo](./images/2-v2.png)
 
->[!IMPORTANT]
+>[!IMPORTANTE]
 >
->If you can't find a specific metric or dimension, please check if the field `Contains data` is removed from your dataview. If not, please delete that field.
+>Se você não encontrar uma métrica ou dimensão específica, verifique se o campo `Contains data` foi removido de sua visualização de dados. Caso contrário, exclua esse campo.
 >
 >![demo](./images/2-v2a.png)
 
-You now have to drag and drop the components you need for the analysis to the **Components Added**. To do this, you need to select the components in the left menu and drag and drop them onto the canvas in the middle.
+Agora você precisa arrastar e soltar os componentes necessários para a análise nos **Components Added**. Para isso, você deve selecionar os componentes no menu à esquerda e arrastá-los e soltá-los na tela no meio.
 
-Let's start with the first component: **Name (web.webPageDetails.name)**. Search for this component, then drag and drop it onto the canvas.
+Vamos começar com o primeiro componente: **Name (web.webPageDetails.name)**. Pesquise esse componente e arraste-o e solte-o na tela.
 
 ![demo](./images/3-v2.png)
 
-This component is the page name, as you can derive from reading the schema field `(web.webPageDetails.name)`. 
+Esse componente é o nome da página, como você pode derivar da leitura do campo do schema `(web.webPageDetails.name)`. 
 
-However, using **Name** as the name is not the best naming convention for a business user to quickly understand this dimension. 
+No entanto, usar **Name** como o nome não é a melhor convenção de nomenclatura para um usuário corporativo compreender rapidamente essa dimensão. 
 
-Let's change the name to be **Page Name**. Click on the component and rename it in the **Component Settings** area.
+Vamos mudar o nome para **Page Name**. Clique no componente e o renomeie na área **Component Settings**.
 
 ![demo](./images/3-0-v2.png)
 
-Something really important is the **Persistence settings**. The concept of evars and prop doesn't exist in CJA but the Persistence settings make a similar behavior possible. 
+As Configurações de persistência são **Persistence settings**. Os conceitos de eVars e prop não existem no CJA, mas as configurações de Persistência possibilitam um comportamento semelhante. 
 
 ![demo](./images/3-0-v21.png)
 
-If you don't change these settings, CJA will interpret the dimension as a **Prop** (hit level). Also, we can change the Persistence to make the dimension an **eVar** (persist the value across the journey).
+Se você não alterar essas configurações, o CJA irá interpretar a dimensão como um **Prop** (nível de ocorrência). Além disso, podemos alterar a Persistência para tornar a dimensão uma **eVar** (persistir o valor ao longo da jornada). 
 
-If you aren't familiar with eVars and Props, you can [read more about them in the documentation](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).
+Se você não estiver familiarizado com eVars e Props, [leia mais sobre isso na documentação](https://experienceleague.adobe.com/docs/analytics/landing/an-key-concepts.html).. 
 
-Let's leave the Page Name as a Prop. As such, you don't need to change any **Persistence Settings**.
+Vamos deixar o Nome da Página como Prop. Dessa forma, você não precisa alterar nenhuma **Persistence Settings**. 
 
 | Component Name to Search           | New Name   | Persistence Settings  | 
 | ----------------- |-------------| --------------------| 
 | Name (web.webPageDetails.name) | Page Name          |          | 
 
-Next, pick the dimension **phoneNumber** and drop it on the canvas. The new name should be **Phone Number**. 
+Em seguida, escolha a dimensão **phoneNumber** e solte-a na tela. O novo nome deve ser **Phone Number**. 
 
 ![demo](./images/3-1-v2.png)
 
-Finally let's change the Persistence settings, as the Mobile Number should persist at user level. 
+Por fim, vamos alterar as Configurações de persistência, pois o Número do Celular deve persistir no nível do usuário. 
 
-To change the Persistence, scroll down in the right menu and open the **Persistence** tab:
+Para alterar a Persistência, role para baixo no menu à direita e abra a aba **Persistence**:
 
 ![demo](./images/5-v2.png)
 
-Check the checkbox to modify the persistence settings. Select **Most Recent** and the **Person (Reporting window)** scope, as we only care about the last mobile number of that person. If the customer doesn't fill out the mobile in future visits, you'll still see this value populated.
+Marque a caixa de seleção para modificar as configurações de persistência. Selecione **Most Recent** e o escopo **Person (Reporting window)**, pois nos preocupamos apenas com o último número de celular da pessoa. Se o cliente não preencher o celular em visitas futuras, você ainda verá esse valor preenchido. 
 
 ![demo](./images/6-v2.png)
 
@@ -131,11 +130,11 @@ Check the checkbox to modify the persistence settings. Select **Most Recent** an
 | ----------------- |-------------| --------------------| 
 | phoneNumber | Phone Number          |    Most Recent, Person (reporting window)     | 
 
-The next component is `web.webPageDetails.pageViews.value`.
+O próximo componente é `web.webPageDetails.pageViews.value`.
 
-In the left side menu, search for `web.webPageDetails.pageViews.value`. Drag and drop this metric onto the canvas. 
+No menu à esquerda, pesquise `web.webPageDetails.pageViews.value`. Arraste e solte essa métrica na tela. 
 
-Change the name to be **Page Views** under the **Component settings**.
+Altere o nome para **Page Views** under the **Component settings**.
 
 | Component Name to Search           | New Name    | Attribution Settings  | 
 | ----------------- |-------------| --------------------| 
@@ -143,14 +142,13 @@ Change the name to be **Page Views** under the **Component settings**.
 
 ![demo](./images/7-v2.png)
 
-For the attribution settings we will leave this empty. 
+Para as configurações de atribuição, deixaremos em branco. 
 
-Note: Persistence settings on metrics can also be changed in Analysis Workspace. In some cases you may choose to set it here to avoid business users from having to think which is the best persistence model. 
+Observação: As configurações de persistência nas métricas também podem ser alteradas no Analysis Workspace. Em alguns casos, você pode optar por configurá-las aqui para evitar que os usuários de negócios tenham que pensar qual é o melhor modelo de persistência. 
 
-Next, you'll have to configure a lot of Dimensions and Metrics, as indicated in the below table.
+Em seguida, você terá que configurar várias Dimensões e Métricas, conforme indicado na tabela abaixo.
 
-### DIMENSIONS
-
+### DIMENSÕES
 
 | Component Name to Search           | New Name      | Persistence Settings  | 
 | ----------------- |-------------| --------------------| 
@@ -169,39 +167,38 @@ Next, you'll have to configure a lot of Dimensions and Metrics, as indicated in 
 | URL (web.webPageDetails.URL) | URL          |         | 
 | User Agent | User Agent          | Most Recent, Session         |
 
-### METRICS
+### MÉTRICA
 
 | Component Name to Search           | New Name    | Attribution Settings  | 
 | ----------------- |-------------| --------------------| 
 | Quantity | Quantity          |          | 
 | commerce.order.priceTotal | Revenue          |         | 
 
-Your configuration should then look like this:
+Sua configuração deve ser semelhante ao seguinte: 
 
 ![demo](./images/11-v2.png)
 
-Don't forget to **Save** your Data View. So click **Save** now.
+Não se esqueça de Salvar sua Visualização de Dados. Então clique em **Save**.
 
 ![demo](./images/12-v2s.png)
 
-## 4.3.4 Calculated Metrics
+## 4.3.4 Métricas calculadas
 
-Although we have organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis.
+Embora tenhamos organizado todos os componentes na Visualização de dados, você ainda deve adaptar alguns deles para que os usuários de negócios estejam prontos para iniciar suas análises. 
 
-If you remember, we didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View. 
-However, we do have a dimension called: **Event Type**. So, let's derive these interaction types by creating 3 calculated Metrics.
+Se você se lembra, não trouxemos especificamente Métricas como Adicionar ao Carrinho, Visualização do produto ou Compras para a Visualização de dados. No entanto, temos uma dimensão chamada: **Event Type**. Então, vamos derivar esses tipos de interação criando 3 métricas calculadas. 
 
-Let's start with first Metric: **Product Views**. 
+Vamos começar com a primeira Métrica: **Product Views**. 
 
-On the left side, please search **Event Type** and select the dimension. Then drag and drop it in to the **Included Components** canvas.
+No lado esquerdo, pesquise **Event Type** e selecione a dimensão. Em seguida, arraste-o e solte-o na tela **Included Components**. 
 
 ![demo](./images/calcmetr1.png)
 
-Click to select the new metric **Event Type**.
+Clique para selecionar a nova métrica **Event Type**.
 
 ![demo](./images/calcmetr2.png)
 
-Now change the component name and description to the following values:
+Agora altere o nome e a descrição do componente para os seguintes valores:
 
 | Component Name         | Component Description|    
 | ----------------- |-------------| 
@@ -209,31 +206,31 @@ Now change the component name and description to the following values:
 
 ![demo](./images/calcmetr3.png)
 
-Now lets count only **Product Views** events. To do that, scroll down on the **Component Settings** until you see **Include Exclude Values**. Make sure to enable the option **Set include/exclude values**.
+Agora vamos contar apenas eventos de **Product Views**. Para fazer isso, role para baixo em **Component Settings** até ver Valores de **Include Exclude Values**. Certifique-se de habilitar a opção **Set include/exclude values**. 
 
 ![demo](./images/calcmetr4.png)
 
-As we only want to count **Product Views**, please specify **commerce.productViews** under the criteria.
+Como queremos contar apenas **Product Views**, especifique **commerce.productViews** nos critérios. 
 
 ![demo](./images/calcmetr5.png)
 
-Your calculated metric is now ready!
+Agora a sua métrica calculada está pronta! 
 
-Next, repeat the same process for **Add to Cart** and **Purchase** events.
+Em seguida, repita o mesmo processo para os eventos **Add to Cart** e **Purchase**.
 
 ### Add to Cart
 
-First drag and drop the same dimension **Event Type**.
+Primeiro, arraste e solte a mesma dimensão **Event Type**.
 
 ![demo](./images/calcmetr1.png)
 
-You will see a pop up alerting of a Duplicated Field as we are using the same variable. Please click on **Add Anyway**: 
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. Clique em **Add Anyway**: 
 
 ![demo](./images/calcmetr6.png)
 
-Now, follow the same process as we did for the metric Product Views:
-- First change the name and descritpion. 
-- Finally add **commerce.productListAdds** as criteria to count only Add To Cart
+Agora, siga o mesmo processo que fizemos para a métrica Visualizações de produto: 
+- Primeiro altere o nome e a descrição. 
+- Por fim, adicione **commerce.productListAdds** como critério para contar apenas Add To Cart
 
 | Name | Descritpion         | Criteria| 
 | ----------------- |-------------| -------------|
@@ -243,17 +240,17 @@ Now, follow the same process as we did for the metric Product Views:
 
 ### Purchases
 
-First drag and drop the same dimension **Event Type** as we did for both previous metrics.
+Primeiro, arraste e solte a mesma dimensão **Event Type** como fizemos para as duas métricas anteriores. 
 
 ![demo](./images/calcmetr1.png)
 
-You will see a pop up alerting of a Duplicated Field as we are using the same variable. Please click on **Add Anyway**: 
+Você verá um alerta pop-up de um Campo Duplicado, pois estamos usando a mesma variável. Clique em **Add Anyway**: 
 
 ![demo](./images/calcmetr7.png)
 
-Now, follow the same process as we did for the metrics Product Views and Add to cart:
-- First change the name and descritpion. 
-- Finally add **commerce.purchases** as criteria to count only Purchases
+Agora, siga o mesmo processo que fizemos para as métricas Product Views e Add to cart:
+- Primeiro altere o nome e a descrição. 
+- Por fim, adicione **commerce.purchases** como critérios para contabilizar apenas as Compras 
 
 | Name | Descritpion         | Criteria| 
 | ----------------- |-------------| -------------|
@@ -261,36 +258,36 @@ Now, follow the same process as we did for the metrics Product Views and Add to 
 
 ![demo](./images/calcmetr7a.png)
 
-Your final configuration should then look similar to this this. Click **Save and continue**.
+Sua configuração final deve ser semelhante ao seguinte. Clique em **Save and continue**.
 
 ![demo](./images/calcmetr8.png)
 
-## 4.3.5 Data View Settings
+## 4.3.5 Componentes da Configuração de Dados
 
-You should be redirected to this screen:
+Você deve ser redirecionado para esta tela: 
 
 ![demo](./images/8-v2.png)
 
-In this tab, you can mofify some important settings to change how data is processed. Let's start by setting the **Session Timeout** to 30 min. Thanks to every experience event's timestamp you can extend the concept of a session across all channels. For instance, what happens if a customer calls the call-center after visiting the website? Using custom Session Timeouts you have loots of flexibility in deciding what a session is, and how that session will merge data together.
+Nesta aba, você pode modificar algumas configurações importantes para alterar a forma como os dados são processados. Vamos começar definindo o **Session Timeout** como 30 min. Graças ao registro de data e hora de cada evento de experiência, você pode estender o conceito de uma sessão em todos os canais. Por exemplo, o que acontece se um cliente ligar para o call center depois de visitar o site? Usando Tempos Limite de Sessão personalizados, você tem muita flexibilidade para decidir o que é uma sessão e como essa sessão irá mesclar os dados. 
 
 ![demo](./images/ext8.png)
 
-In this tab you can modify other things like filtering the data by using a segment/filter. You won't need to do that in this exercise. 
+Nesta aba você pode modificar outras coisas como filtrar os dados usando um segmento/filtro. Você não precisará fazer isso neste exercício. 
 
 ![demo](./images/10-v2.png)
 
-Once you are done, please click **Save and finish**.
+Quando terminar, clique em **Save and finish**.
 
 ![demo](./images/13-v2.png)
 
->[!NOTE]
+>[!NOTA]
 >
->You can come back to this Data View afterwards and change settings and components at any time. Changes will affect how historical data is shown.
+>Você pode voltar a esta Visualização de dados posteriormente e alterar as configurações e os componentes a qualquer momento. As alterações afetarão a forma como os dados históricos são mostrados. 
 
-You can now continue with the visualization and analysis part!
+Agora você pode continuar com a parte de visualização e análise! 
 
-Next Step: [4.4 Data Preparation in Customer Journey Analytics](./ex4.md)
+Próxima etapa: [4.4 Preparação de dados em Customer Journey Analytics](./ex4.md)
 
-[Go Back to User Flow 4](./uc4.md)
+[Retornar para Fluxo de Usuário 4](./uc4.md)
 
-[Go Back to All Modules](./../../overview.md)
+[Retornar para Todos os Módulos](./../../overview.md)

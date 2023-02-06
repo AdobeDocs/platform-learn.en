@@ -6,78 +6,78 @@ audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
 ---
-# 1.3 Create a segment - UI
+# 1.3 Crie um segmento - UI
 
-In this exercise, you'll create a segment by making use of Adobe Experience Platform's Segment Builder.
+Neste exercício, você irá criar um segmento usando o Construtor de Segmentos da Adobe Experience Platform.
 
-## Story
+## História
 
-Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
+Acesse [Adobe Experience Platform](https://experience.adobe.com/platform). Depois de fazer login, você irá acessar a página inicial da Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``Bootcamp``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Antes de continuar, você precisa selecionar um **sandbox**. O nome do sandbox a ser selecionado é ``Bootcamp``. É possível fazer isso clicando no texto **[!UICONTROL Production Prod]** na linha azul na parte superior da tela. Depois de selecionar o sandbox apropriado, você verá a tela mudando e agora você está em seu [!UICONTROL sandbox] dedicado. 
 
 ![Data Ingestion](./images/sb1.png)
 
-In the menu on the left side, go to **Segments**. On this page, you can see an overview of all existing segments. Click on the **+ Create segment** button to start creating a new segment.
+No menu à esquerda, acesse **Segments**. Nesta página, você tem uma visão geral de todos os segmentos existentes. Clique no botão + Criar segmento para começar a criar um novo segmento. 
 
 ![Segmentation](./images/menuseg.png)
 
-Once you're in the new segment builder, you immediately notice the **Attributes** menu option and the **XDM Individual Profile** reference.
+Quando estiver no novo construtor de segmentos, você irá perceber imediatamente a opção de menu **Attributes** e a referência do **XDM Individual Profile**. 
 
 ![Segmentation](./images/segmentationui.png)
 
-Since XDM is the language that powers the experience business, XDM is also the foundation for the segment builder. All data that is ingested in Platform should be mapped against XDM, and as such, all data becomes part of the same data model regardless of where that data comes from. This gives you a big advantage when building segments, as from this one segment builder UI, you can combine data from any origin in the same workflow. Segments built within Segment Builder can be sent to solutions like Adobe Target, Adobe Campaign and Adobe Audience Manager for activation.
+Como o XDM é a linguagem que alimenta o setor de experiência, o XDM também é a base para o construtor de segmentos. Todos os dados ingeridos na plataforma devem ser mapeados em relação ao XDM e, portanto, todos os dados se tornam parte do mesmo modelo de dados, independentemente da origem desses dados. Isso oferece uma grande vantagem ao criar segmentos, pois a partir dessa interface do usuário do construtor de segmento, é possível combinar dados de qualquer origem no mesmo fluxo de trabalho. Os segmentos criados no Construtor de segmentos podem ser enviados para soluções como Adobe Target, Adobe Campaign e Adobe Audience Manager para ativação.
 
-You now need to create a segment of all customers that have viewed the product **Real-Time CDP**.
+Agora você precisa criar um segmento de todos os clientes que visualizaram o produto **Real-Time CDP**.
 
-To build out this segment, you need to add an Experience Event. You can find all Experience Events by clicking on the **Events** icon in the **Fields** menu bar.
+Para construir este segmento, você precisa adicionar um Evento de experiência. Você pode encontrar todos os Eventos de experiência clicando no ícone **Events** na barra de menu **Fields**. 
 
 ![Segmentation](./images/findee.png)
 
-Next, you'll see the top-level, **XDM ExperienceEvents** node. Click on **XDM ExperienceEvent**.
+Em seguida, você verá o nó **XDM ExperienceEvents** do nível superior. Clique em **XDM ExperienceEvent**. 
 
 ![Segmentation](./images/see.png)
 
-Go to **Product List Items**.
+Acesse **Product List Items**.
 
 ![Segmentation](./images/plitems.png)
 
-Select **Name** and drag and drop the **Name** object from the left menu onto the segment builder canvas into the **Events** section. You'll then see this:
+Selecione **Name** e arraste e solte o objeto **Name** do menu à esquerda na tela do construtor de segmentos na seção **Events**. Em seguida, o seguinte será exibido: 
 
 ![Segmentation](./images/eewebpdtlname.png)
 
-The comparison parameter should be **equals** and in the input field, enter **Real-time CDP**.
+O parâmetro de comparação deve ser **equals** e, no campo de entrada, insira **Real-time CDP**.
 
 ![Segmentation](./images/pv.png)
 
-Every time you add an element to the segment builder, you can click the **Refresh Estimate** button to get a new estimate of the population in your segment.
+Sempre que adicionar um elemento ao construtor de segmentos, você pode clicar no botão **Refresh Estimate** para obter uma nova estimativa da população em seu segmento. 
 
 ![Segmentation](./images/refreshest.png)
 
-As **Evaluation Method**, select **Edge**.
+Para **Evaluation Method**, selecione **Edge**.
 
 ![Segmentation](./images/evedge.png)
 
-Finally, let's give your segment a name and save it.
+Por fim, vamos dar um nome ao seu segmento e salvá-lo. 
 
-As a naming convention, use:
+Como modelo de nomenclatura, use:
 
 - `yourLastName - Interest in Real-Time CDP`
 
-Then, click the **Save and Close** button to save your segment.
+Em seguida, clique no botão **Save and Close** para salvar seu segmento. 
 
 ![Segmentation](./images/segmentname.png)
 
-You'll be taken back to the segment overview page now, where you'll see a sample preview of customer profiles that qualify for your segment.
+Agora você irá retornar à página de visão geral do segmento, onde verá uma visualização de amostra dos perfis de clientes que se qualificam para o seu segmento.
 
 ![Segmentation](./images/savedsegment.png)
 
-You can now continue to the next exercise and use your segment with Adobe Target.
+Agora você pode continuar no próximo exercício e usar seu segmento com o Adobe Target.
 
-Next Step: [1.4 Take Action: send your segment to Adobe Target](./ex4.md)
+Próxima etapa: [1.4 Ação: envie seu segmento para o Adobe Target](./ex4.md)
 
-[Go Back to User Flow 1](./uc1.md)
+[Retornar para Fluxo de Usuário 1](./uc1.md)
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

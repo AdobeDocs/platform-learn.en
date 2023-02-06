@@ -6,81 +6,82 @@ audience: developer
 doc-type: tutorial
 activity: develop
 ---
-# 2.5 Install & use the mobile app
+# 2.5 Instale e use o aplicativo móvel
 
 
-## Install the mobile app
+## Instale o aplicativo móvel
 
-Before you install the app, you need to enable **Tracking** on your iOS device. To do so, go to **Settings** > **Privacy & Security** > **Tracking** and ensure that the option **Allow Apps to Request to Track**.
+Antes de instalar o aplicativo, é necessário habilitar Rastreamento no seu dispositivo iOS. Para isso, acesse Configurações > Privacidade e segurança > Rastreamento e confirme a opção Permitir que os aplicativos solicitem o rastreamento.
 
 ![DSN](./../uc3/images/app4.png)
 
-Go to the Apple App Store and search for `aepmobile-bootcamp`. Click **Install** or **Download**.
+Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`.  
+Clique em **Instalar** ou **Download**.
 
 ![DSN](./../uc3/images/app1.png)
 
-Once the app is installed, click **Open**.
+Depois que o aplicativo estiver instalado, clique em **Abrir**.
 
 ![DSN](./../uc3/images/app2.png)
 
-Click **OK**.
+Clique em **OK**.
 
 ![DSN](./../uc3/images/app9.png)
 
-Click **Allow**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app3.png)
 
-Click **I agree**.
+Clique em **Concordo**. 
 
 ![DSN](./../uc3/images/app7.png)
 
-Click **Allow While Using App**.
+Clique em **Permitir enquanto uso o app**. 
 
 ![DSN](./../uc3/images/app8.png)
 
-Click **Allow**.
+Clique em **Permitir**.
 
 ![DSN](./../uc3/images/app5.png)
 
-You're now in the app, on the homepage, ready to go through the customer journey.
+Agora você está no aplicativo, na página inicial, pronto(a) para verificar toda a jornada do cliente. 
 
 ![DSN](./../uc3/images/app12.png)
 
-## Customer journey flow
+## Fluxo da jornada do cliente 
 
-First of all, you need to login. Click **Login**.
+Primeiramente, é necessário fazer o login. Clique em **Login**.
 
 ![DSN](./../uc3/images/app13.png)
 
-After creating your account in the previous exercises, you saw this on the website. You now need to reuse the email address of the account you created in the app to login.
+Depois de criar sua conta nos exercícios anteriores, isso é exibido no site. Agora é necessário reutilizar o endereço de e-mail da conta que você criou no aplicativo para fazer o login.
   
 ![Demo](./../uc3/images/pv1.png)
 
-Enter the email address you used on the website here and click **Login**.
+Digite o endereço de e-mail que você usou no site e clique em **Login**. 
 
 ![DSN](./../uc3/images/app14.png)
 
-You'll then get a confirmation that you're logged in, and you'll receive a push notification.
+Você receberá uma confirmação de que está conectado e receberá uma notificação push. 
 
 ![DSN](./../uc3/images/app15.png)
 
-Go back to the homepage in the app, and you'll see additional capabilities appear.
+Retorne para a página inicial do aplicativo e os recursos adicionais irão aparecer. 
 
 ![DSN](./../uc3/images/app17.png)
 
-Go to **Products**. Click on any product, in this example **Coffee to go**.
+Acesse **Products**. Clique em qualquer produto, neste exemplo: **Coffee to go**. 
 
 ![DSN](./images/app19.png)
 
-You'll see the **Coffee to go** product page in the app. Click **Buy**.
+Você verá a página do produto **Coffee to go** no aplicativo. Clique em **Buy**. 
 
 ![DSN](./images/app20.png)
 
-You've now finished this exercise and you're ready for the next exercises.
+Agora você terminou este exercício e está pronto para as próximas atividades.
 
-Next Step: [2.6 Personalization in the call center](./ex6.md)
+Próxima etapa: [ 2.6 Personalização no call center](./ex6.md)
 
-[Go Back to User Flow 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

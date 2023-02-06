@@ -6,47 +6,47 @@ audience: developer
 doc-type: tutorial
 activity: develop
 ---
-# 3.4 Test your journey
+# 3.4 Teste sua jornada
 
-To test your journey, you'll need to use the event ID of the event you created in exercise 3.2, which looks like this.
+Para testar sua jornada, você deve usar o eventID criado no exercício 3.2, que deve ser semelhante ao seguinte. 
 
 ![ACOP](./images/payloadeventID.png)
 
-The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the journey. In this example, the eventID is:
+O eventID é o que precisa ser enviado à Adobe Experience Platform para acionar a jornada. Neste exemplo, o eventID é:
 `e76c0bf0c77c3517e5b6f4c457a0754ebaf5f1f6b9357d74e0d8e13ae517c3d5`.
 
-Open the mobile app and go to the homepage. Click the **Settings** icon.
+Abra o aplicativo móvel e vá para a página inicial. Clique no ícone de **Configuração**.
 
 ![DSN](./images/appsett.png)
 
-Paste your eventID in the field **Beacon EventID** and click **Save**.
+Cole seu eventID no campo **Beacon EventID** e clique em **Save**.
 
 ![DSN](./images/beacon1.png)
 
-Before continuing, please open this web page on your computer: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
+Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
-You'll then see this:
+Em seguida, será exibida a tela:
 
 ![DSN](./images/screen1.png)
 
-Next, go back to the homepage. Click the **beacon** icon.
+Retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-You'll then see this. First, select **Bootcamp Screen Beacon** and then click the **entry** button. This will allow you to simulate a beacon entry.
+Primeiro, selecione **Bootcamp Screen Beacon** e clique no botão de **entrada** button. Isso permitirá que você simule uma entrada do beacon.
 
 ![DSN](./images/app21.png)
 
-Now, have a look at the in-store screen. You'll see the last product you viewed appear there within 5 seconds.
+Agora confira a tela da loja. Você verá o último produto visualizado aparecer nessa tela em 5 segundos.
 
 ![DSN](./images/beacon3.png)
 
-You'll also have received your push notification.
+Você também terá recebido sua notificação push.
 
 ![DSN](./images/beacon2.png)
 
-You've now finished this exercise.
+Você terminou este exercício.
 
-[Go Back to User Flow 3](./uc3.md)
+[Retornar para Fluxo de Usuário 3](./uc3.md)
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)

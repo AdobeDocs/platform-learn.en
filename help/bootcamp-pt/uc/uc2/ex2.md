@@ -6,86 +6,86 @@ audience: developer
 doc-type: tutorial
 activity: develop
 ---
-# 2.2 Create your event
+# 2.2 Crie seu evento
 
-Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
+Faça login no Adobe Journey Optimizer acessando a [Adobe Experience Cloud](https://experience.adobe.com). Clique em **Journey Optimizer**.
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `Bootcamp`. To change from one sandbox to another, click on **Prod** and select the sandbox from the list. In this example, the sandbox is named **Bootcamp**. You'll then be in the **Home** view of your sandbox `Bootcamp`.
+Você será redirecionado para a visualização da **Home** no Journey Optimizer. Primeiro, verifique se você está usando o sandbox correto. O nome do sandbox que deve ser usado é `Bootcamp`. Para alternar de um sandbox para outro, clique em Prod e selecione o sandbox na lista. Neste exemplo, o nome do sandbox é **Bootcamp**. Você estará na visualização da **Home** do seu sandbox `Bootcamp`. 
 
 ![ACOP](./images/acoptriglp.png)
 
-In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Events**.
+No menu à esquerda, role para baixo e clique em **Configurations**. Em seguida, clique no botão **Manage** abaixo de **Events**. 
 
 ![ACOP](./images/acopmenu.png)
 
-You'll then see an overview of all available events. Click **Create Event** to start creating your own event.
+Você verá uma visão geral de todos os eventos disponíveis. Clique em **Create Event** para começar a criar seu próprio evento. 
 
 ![ACOP](./images/emptyevent.png)
 
-A new, empty event window will then pop up.
+Uma nova janela de evento vazia irá aparecer.
 
 ![ACOP](./images/emptyevent1.png)
 
-First of all, give your Event a Name like this: `yourLastNameAccountCreationEvent` and add a description like this `Account Creation Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por exemplo: `yourLastNameAccountCreationEvent` e adicione uma descrição como, por exemplo: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
-Next, make sure the **Type** is set to **Unitary**, and for the **Event ID Type** selection, select **System Generated**.
+Em seguida, certifique-se de que **Type** está definido como **Unitary** e, para a seleção de **Event ID Type**, selecione **System Generated**. 
 
 ![ACOP](./images/eventidtype.png)
 
-Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+A etapa seguinte é a seleção do schema. Um schema foi preparado para este exercício. Use o schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
-After selecting the Schema, you'll see a number of fields being selected in the **Fields** section. You should now hover over the **Fields** section and you'll see 3 icons popup. Click on the **Edit** icon.
+Depois de selecionar o Schema, você verá vários campos sendo selecionados na seção **Fields**. Agora você deve passar o mouse sobre a seção **Fields** e três ícones pop-up serão exibidos. Clique no ícone **Edit**. 
 
 ![ACOP](./images/eventpayload.png)
 
-You'll see a **Fields** window popup, in which you need to select some of the fields that we need to personalize the email.  We will choose other profile attributes later, using the data already in Adobe Experience Platform.
+Você verá uma janela pop-up de **Fields**, onde você deve selecionar alguns dos campos que precisamos para personalizar o e-mail. Escolheremos outros atributos de perfil posteriormente, utilizando os dados já existentes na Adobe Experience Platform. 
 
 ![ACOP](./images/eventfields.png)
 
-In the object `_experienceplatform.demoEnvironment`, please make sure to select the fields **brandLogo** and **brandName**.
+No objeto `_experienceplatform.demoEnvironment`, pcertifique-se de selecionar os campos **brandLogo** e **brandName**.
 
 ![ACOP](./images/eventpayloadbr.png)
 
-In the object `_experienceplatform.identification.core`, please make sure to select the field **email**.
+No objeto `_experienceplatform.identification.core`, certifique-se de selecionar o campo **email**.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Click **Ok** to save your changes.
+Clique em **Ok** to para salvar suas alterações.
 
 ![ACOP](./images/saveok.png)
 
-You should then see this. Click **Save** once more to save your changes.
+Em seguida, a tela abaixo deve ser exibida. Clique em **Save**  mais uma vez para salvar suas alterações..
 
 ![ACOP](./images/eventsave.png)
 
-Your event is now configured and saved.
+Seu evento agora está configurado e salvo.
 
 ![ACOP](./images/eventdone.png)
 
-Click your event again to open up the **Edit Event** screen again. Hover over **Fields** again to see the 3 icons again. Click on the **View Payload** icon. 
+Clique no seu evento novamente para abrir mais uma vez a tela **Edit Event**. Passe o mouse sobre **Fields** para ver os 3 ícones outra vez. Clique no ícone **View Payload**. 
 
 ![ACOP](./images/viewevent.png)
 
-You'll now see an example of the expected payload.
-Your event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see `_experience.campaign.orchestration.eventID`.
+Agora você verá um exemplo da carga útil esperada. 
+Seu evento tem um eventID de orquestração único, que você pode encontrar rolando para baixo nessa carga útil (payload) até visualiza `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
-The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the journey that you'll build in one of the next exercises. Remember this eventID, as you may need it later.
+O eventID é o que deve ser enviado à Adobe Experience Platform para acionar a jornada que você construirá em um dos próximos exercícios. Lembre-se deste eventID, você pode precisar dele posteriormente.
 `"eventID": "19cab7852cdef99d25b6d5f1b6503da39d1f486b1d585743f97ed2d1e6b6c74f"`
 
-Click **Ok**, followed by clicking **Cancel**.
+Clique em **Ok** e, em seguida, clique em **Cancel**. 
 
-You've now finished this exercise.
+Agora você terminou este exercício. 
 
-Next Step: [2.3 Create your email message](./ex3.md)
+Próxima etapa: [ 2.3 Crie sua mensagem de e-mail](./ex3.md)
 
-[Go Back to User Flow 2](./uc2.md)
+[Retornar para Fluxo de Usuário 2](./uc2.md)
 
-[Go Back to All Modules](../../overview.md)
+[Retornar para Todos os Módulos](../../overview.md)
