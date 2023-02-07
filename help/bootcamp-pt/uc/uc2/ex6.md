@@ -8,7 +8,7 @@ activity: develop
 ---
 # 2.6 Personalização no call center
 
-As discussed multiple times during the bootcamp already, personalizing the customer experience is something that should happen in an omnichannel way. A call center is often quite disconnected from the rest of the customer journey and that often leads to frustrating customer experiences, but it doesn't need to be. Let's show you an example of how the call center can easily be connected to Adobe Experience Platform, in real-time.
+Conforme discutido várias vezes durante o bootcamp, personalizar a experiência do cliente é algo que deve acontecer de maneira omnichannel. Um call center geralmente é bastante desconectado do restante da jornada do cliente e isso pode, com frequência, levar a experiências frustrantes do cliente, mas não precisa ser assim. Vamos mostrar um exemplo de como o call center pode ser facilmente conectado à Adobe Experience Platform, em tempo real. 
 
 ## Fluxo da jornada do cliente
 
@@ -32,7 +32,7 @@ Será solicitado que você insira seu ID de fidelidade, seguido de **#**. Digite
 
 ![DSN](./images/cc3.png)
 
-Você ouvirá **Hello, seu nome**, nome. Esse nome é retirado do Perfil do Cliente em tempo real na Adobe Experience Platform. Você tem 3 escolhas. Pressione o número **1**, **Order Status**. 
+Você ouvirá **Hello, seu nome**. Esse nome é retirado do Perfil do Cliente em tempo real na Adobe Experience Platform. Você tem 3 escolhas. Pressione o número **1**, **Order Status**. 
 
 ![DSN](./images/cc4.png)
 
@@ -66,7 +66,7 @@ Você verá seu perfil de cliente novamente. Acesse **Events**.
 
 ![DSN](./images/cc8.png)
 
-Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultado da sua resposta à pergunta Avalie o seu n**Rate your call satisfaction**. 
+Em eventos, você verá 2 eventos com um eventType de **callCenter**. O primeiro evento é o resultado da sua resposta à pergunta **Rate your call satisfaction** (avalie seu chamada). 
 
 ![DSN](./images/cc9.png)
 

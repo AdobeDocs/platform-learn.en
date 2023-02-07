@@ -64,7 +64,7 @@ Por fim, vamos dar um nome ao seu segmento e salvá-lo.
 
 Como modelo de nomenclatura, use:
 
-- `yourLastName - Interest in Real-Time CDP`
+- `seuSobrenome - Interest in Real-Time CDP`
 
 Em seguida, clique no botão **Save and Close** para salvar seu segmento. 
 

@@ -9,9 +9,9 @@ doc-type: multipage-overview
 
 Muitas empresas não estão cientes do atrito que existe na jornada dos seus clientes, consequência de uma abordagem fragmentada e não integrada ao orquestrar a comunicação com o cliente. Dados, perfil e conteúdo precisam estar perfeitamente alinhados para projetar e oferecer experiências excepcionais ao consumidor. 
 
-Participe deste Bootcamp para aprender como uma abordagem baseada em plataforma pode ajudar na obtenção dos insights necessários para identificar e remover pontos de atrito para aprimorar a jornada do seu cliente. 
+Participe deste Bootcamp para aprender como uma abordagem baseada em Experience Platform pode ajudar na obtenção dos insights necessários para identificar e remover pontos de atrito para aprimorar a jornada do seu cliente. 
 
-A personalização em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights. A abordagem exclusiva da Adobe focada na plataforma fornece as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e sua capacidade de oferecer uma experiência holística ao cliente em vez de uma experiência do cliente específica por canal. 
+A personalização em escala começa com a compreensão do que pode ser aprimorado e, para isso, uma visão em tempo real do seu cliente é essencial. Insights levam à ação, o que leva a mais insights. A abordagem exclusiva da Adobe focada na Experience Platform fornece as ferramentas para, além de impulsionar os avanços tecnológicos, impactar sua organização, sua equipe e sua capacidade de oferecer uma experiência holística ao cliente em vez de uma experiência do cliente específica por canal. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
 

@@ -28,7 +28,7 @@ Uma nova janela de evento vazia irá aparecer.
 
 ![ACOP](./images/emptyevent1.png)
 
-Em primeiro lugar, dê um nome ao seu evento como, por exemplo: `yourLastNameAccountCreationEvent` e adicione uma descrição como, por exemplo: `Account Creation Event`.
+Em primeiro lugar, dê um nome ao seu evento como, por exemplo: `seuSobrenomeAccountCreationEvent` e adicione uma descrição como, por exemplo: `Account Creation Event`.
 
 ![ACOP](./images/eventdescription.png)
 
@@ -73,7 +73,7 @@ Clique no seu evento novamente para abrir mais uma vez a tela **Edit Event**. 
 ![ACOP](./images/viewevent.png)
 
 Agora você verá um exemplo da carga útil esperada. 
-Seu evento tem um eventID de orquestração único, que você pode encontrar rolando para baixo nessa carga útil (payload) até visualiza `_experience.campaign.orchestration.eventID`.
+Seu evento tem um eventID de orquestração único, que você pode encontrar rolando para baixo nessa carga útil (payload) até visualizar `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
