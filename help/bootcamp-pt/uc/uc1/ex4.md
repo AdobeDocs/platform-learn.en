@@ -48,7 +48,7 @@ Seu segmento agora está ativado para o Adobe Target.
 >
 >Imediatamente após criar seu destino do Adobe Target no Real-Time CDP, pode levar até uma hora para que o destino seja ativado. Este é um tempo de espera único devido à definição da configuração de back-end. Depois que o tempo de espera inicial de 1 hora e a configuração do back-end forem concluídos, os segmentos de borda recém-adicionados que são enviados ao destino do Adobe Target estarão disponíveis para segmentação em tempo real.
 
-## 1.4.2 Configure sua atividade baseada em formulário do Adobe Target 
+## 1.4.2 Configure sua atividade no Adobe Target 
 
 Agora que seu segmento Real-Time CDP está configurado para ser enviado ao Adobe Target, é possível configurar sua atividade de Segmentação por experiência no Adobe Target. Neste exercício, você irá configurar uma atividade baseada no Visual Experience Composer.
 
@@ -56,8 +56,6 @@ Acesse a página inicial da Adobe Experience Cloud acessando [https://experience
 
 ![RTCDP](./images/excl.png)
 
-On the **Adobe Target** homepage, you'll see all existing Activities.
-Click **+ Create Activity** to create a new Activity.
 Na página inicial do **Adobe Target**, você verá todas as atividades existentes. 
 Clique em **+ Create Activity** para criar uma nova atividade. 
 
@@ -67,7 +65,7 @@ Selecione **Experience Targeting**.
 
 ![RTCDP](./images/exclatcrxt.png)
 
-Selecione **Visual** e defina a **Activity URL** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`,  mas, antes disso, substitua XX por um número entre 01 e 30.
+Selecione **Visual** e defina a **Activity URL** como `https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/exercises/particpantXX.html`,  mas, antes disso, substitua XX por um número entre 01 e 60.
 
 >[!IMPORTANT]
 >
@@ -131,7 +129,7 @@ Clique no título da sua atividade no canto superior esquerdo para renomeá-la.
 
 Para o nome, use:
 
-- `yourLastName - RTCDP - XT (VEC)`
+- `seuSobrenome - RTCDP - XT (VEC)`
 
 Clique em **Next**.
 
@@ -175,7 +173,7 @@ Se agora você voltar ao seu site de demonstração e visitar a página do produ
 
 ![RTCDP](./images/atform12a.png)
 
-Próxima etapa: [1.5 Take Action: send your segment to Facebook](./ex5.md)
+Próxima etapa: [1.5 Ação: envie seu segmento para o Facebook](./ex5.md)
 
 [Retornar para Fluxo de Usuário 1](./uc1.md)
 

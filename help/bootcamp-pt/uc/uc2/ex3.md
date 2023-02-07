@@ -28,7 +28,7 @@ Você verá uma tela de jornada vazia.
 
 ![ACOP](./images/journeyempty.png)
 
-No exercício anterior, você criou um novo **Event**. Você nomeou o evento `yourLastNameAccountCreationEvent` e substituiu `yourLastName` pelo seu sobrenome. Este foi o resultado da criação do Evento: 
+No exercício anterior, você criou um novo **Event**. Você nomeou o evento `seuSobrenomeAccountCreationEvent` e substituiu `seuSobrenome` pelo seu sobrenome. Este foi o resultado da criação do Evento: 
 
 ![ACOP](./images/eventdone.png)
 
@@ -54,9 +54,7 @@ Como terceira etapa da jornada, você deve adicionar uma ação **Email**. Vá p
 
 ![ACOP](./images/journeyactions.png)
 
-Set the **Category** to **Marketing** and select an email surface that enables you to send email. In this case, the email surface to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
-
-Defina a **Category** como **Marketing** e selecione uma superfície de e-mail que permita o envio de e-mail. Nesse caso, a superfície e-mail a ser selecionada é E-mail. Certifique-se de que as caixas de seleção **Clicks on email** e **email opens** estejam marcadas. 
+Defina a **Category** como **Marketing** e selecione uma **e-mail surface** que permita o envio de e-mail. Nesse caso, a **e-mail surface** a ser selecionada é E-mail. Certifique-se de que as caixas de seleção **Clicks on email** e **email opens** estejam marcadas. 
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -82,11 +80,11 @@ Na área de texto, comece **Olá**
 
 ![Journey Optimizer](./images/msg6.png)
 
-A linha de assunto ainda não está pronta. Em seguida, você precisa trazer o token de personalização para o **First name** que está armazenado em `profile.person.name.firstName`. No menu à esquerda, role para baixo para encontrar o elemento **Person** e clique na seta para ir um nível mais profundo.
+A linha de assunto ainda não está pronta. Em seguida, você precisa trazer o token de personalização para o **First name** que está armazenado em `profile.person.name.firstName`. No menu à esquerda, role para baixo para encontrar o elemento **Person** e clique na seta para visualizar mais campos
 
 ![Journey Optimizer](./images/msg7.png)
 
-Agora encontre o elemento **Full name** e clique na seta para ir um nível mais profundo.
+Agora encontre o elemento **Full name** e clique na seta para visualizar mais campos.
 
 ![Journey Optimizer](./images/msg8.png)
 
@@ -94,7 +92,7 @@ Por fim, localize o campo **First name** e clique no símbolo **+**  ao lado d
 
 ![Journey Optimizer](./images/msg9.png)
 
-Em seguida, adicione o texto, **agradecemos a sua inscrição!** Clique em Salvar. . Clique em **Save**.
+Em seguida, adicione o texto, **agradecemos a sua inscrição!**. Clique em **Save**.
 
 ![Journey Optimizer](./images/msg10.png)
 
@@ -112,7 +110,7 @@ Clique em **Import HTML**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Arraste e solte o arquivo **mailtemplatebootcamp.html**, que você pode baixa [here](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
+Arraste e solte o arquivo **mailtemplatebootcamp.html**, que você pode baixa [aqui](../../assets/html/mailtemplatebootcamp.html.zip). Clique em Importar.
 
 ![Journey Optimizer](./images/msg13.png)
 
@@ -124,7 +122,7 @@ Vamos personalizar o e-mail. Clique ao lado do texto **Olá** e, em seguida, cli
 
 ![Journey Optimizer](./images/msg35.png)
 
-Em seguida, você precisa trazer o token de personalização **First name** que está armazenado em `profile.person.name.firstName`. No menu, localize o elemento **Person**, faça uma busca detalhada no elemento **Full Name** e clique no ícone **+** para adicionar o campo **First Name** ao editor de expressão.
+Em seguida, você precisa trazer o token de personalização **First name** que está armazenado em `profile.person.name.firstName`. No menu, localize o elemento **Person**, faça uma busca detalhada no elemento **Full Name** e clique no ícone **+** para adicionar o campo **First Name** ao editor.
 
 Clique em **Save**. 
 
@@ -156,7 +154,7 @@ Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando n
 
 ![ACOP](./images/journeyname.png)
 
-Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando no ícone `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças.
+Você pode fazer isso clicando no item clicar no item “Name” e inserindo o seguinte nome `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças.
 
 ![ACOP](./images/journeyname1.png)
 

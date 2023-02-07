@@ -32,7 +32,7 @@ No painel Visualizador de perfil no seu site, você pode encontrar a visão gera
 
 ![Customer Profile](./images/identities.png)
 
-No painel Visualizador de perfil, agora você pode ver esta identidade:
+No painel Visualizador de perfil, agora você pode ver uma identidade semelhante a seguinte:
 
 | Namespace     | Identity       |
 |:-------------:| :---------------:|

@@ -26,8 +26,8 @@ doc-type: multipage
   + [2.3 Crie sua jornada e mensagem de e-mail](/help/bootcamp-pt/uc/uc2/ex3.md)
   + [2.4 Teste sua jornada](/help/bootcamp-pt/uc/uc2/ex4.md) 
   + [2.5 Instale e use o aplicativo móvel](/help/bootcamp-pt/uc/uc2/ex5.md) 
-  + [2.6 PPersonalização no call center](/help/bootcamp-pt/uc/uc2/ex6.md) 
-+ 3 - Consolidando physical e digital {#uc3}
+  + [2.6 Personalização no call center](/help/bootcamp-pt/uc/uc2/ex6.md) 
++ 3 - Consolidando o físico e o digital {#uc3}
   + [Overview](/help/bootcamp-pt/uc/uc3/uc3.md)
   + [3.1 Use o aplicativo móvel e acione um beacon](/help/bootcamp-pt/uc/uc3/ex1.md)
   + [3.2 Crie seu evento](/help/bootcamp-pt/uc/uc3/ex2.md)

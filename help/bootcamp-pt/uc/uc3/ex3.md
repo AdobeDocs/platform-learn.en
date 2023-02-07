@@ -46,7 +46,7 @@ Como segunda etapa da jornada, você deve adicionar uma ação **Push**. Vá p
 
 No lado direito da tela, agora você deve criar sua notificação push. 
 
-Defina a **Category** como **Marketing** e selecione uma superfície push que permite enviar notificações push. Nesse caso, a superfície push a ser selecionada é **mmeeewis-app-mobile-bootcamp**. 
+Defina a **Category** como **Marketing** e selecione um push surface que permite enviar notificações push. Nesse caso, a superfície push a ser selecionada é **mmeeewis-app-mobile-bootcamp**. 
 
 ![ACOP](./images/journeyactions1.png)
 
@@ -82,7 +82,7 @@ Na área de texto, escreva `Bem-vindo(a)`.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Em seguida, clique em  **Contextual Attributes** and then **Journey Orchestration**.
+Em seguida, clique em  **Contextual Attributes** e **Journey Orchestration**.
 
 ![ACOP](./images/jomsg3.png)
 
@@ -121,11 +121,11 @@ Clique em **Ok**.
 
 ## 3.3.2 Envie uma mensagem para uma tela
 
-Como terceira etapa da jornada, você deve adicionar uma ação  **sendMessageToScreen** action. Vá para o lado esquerdo da tela para **Actions**, selecione a ação **sendMessageToScreen** e arraste e solte a ação no terceiro nó da sua jornada. Em seguida, você verá a tela abaixo.
+Como terceira etapa da jornada, você deve adicionar uma ação  **sendMessageToScreen**. Vá para o lado esquerdo da tela para **Actions**, selecione a ação **sendMessageToScreen** e arraste e solte a ação no terceiro nó da sua jornada. Em seguida, você verá a tela abaixo.
 
 ![ACOP](./images/jomsg15.png)
 
-**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no ponto de extremidade usado pela exibição na loja. A ação **sendMessageToScreen** espera que múltiplas variáveis sejam definidas. Você pode visualizar essas variáveis rolando para baixo até ver **Action Parameters**.
+**sendMessageToScreen** é uma ação personalizada que irá publicar uma mensagem no **Endpoint** usado pela exibição na loja. A ação **sendMessageToScreen** espera que múltiplas variáveis sejam definidas. Você pode visualizar essas variáveis rolando para baixo até ver **Action Parameters**.
 
 ![ACOP](./images/jomsg16.png)
 

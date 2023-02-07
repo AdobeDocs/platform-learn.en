@@ -10,9 +10,7 @@ activity: develop
 
 ## Instale o aplicativo móvel
 
-Before you install the app, you need to enable **Tracking** on your iOS device. To do so, go to **Settings** > **Privacy & Security** > **Tracking** and ensure that the option **Allow Apps to Request to Track**.
-
-Antes de instalar o aplicativo, é necessário habilitar **Rastreamento** no seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**. 
+Antes de instalar o aplicativo, é necessário habilitar o **Rastreamento** no seu dispositivo iOS. Para isso, acesse **Configurações** > **Privacidade e segurança** > **Rastreamento** e verifique a opção **Permitir que os aplicativos solicitem o rastreamento**. 
 
 ![DSN](./../uc3/images/app4.png)
 
@@ -20,7 +18,7 @@ Acesse a App Store da Apple e pesquise `aepmobile-bootcamp`. Clique em **Ins
 
 ![DSN](./../uc3/images/app1.png)
 
-Depois que o aplicativo estiver instalado, clique em **Open**. 
+Depois que o aplicativo estiver instalado, clique em **Abrir**. 
 
 ![DSN](./../uc3/images/app2.png)
 
@@ -78,7 +76,7 @@ Você verá a página do produto **Coffee to go** no aplicativo.
 
 ![DSN](./images/app20.png)
 
-Agora você irá simular um evento de entrada de sinalização (beacon) em um local de armazenamento offline. O objetivo da simulação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevantes para o cliente ao entrar na loja. 
+Agora você irá simular um evento de entrada de sinalização (beacon) em uma loja offline. O objetivo da simulação é personalizar a experiência do cliente nas telas da loja. Para visualizar a experiência na loja, foi criada uma página que mostrará de forma dinâmica as informações relevantes para o cliente ao entrar na loja. 
 
 Antes de continuar, abra esta página da Web em seu computador: [https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html](https://bootcamp.aepdemo.net/content/aep-bootcamp-experience/language-masters/en/screen.html)
 
@@ -90,7 +88,6 @@ Em seguida, retorne para a página inicial. Clique no ícone do **beacon**.
 
 ![DSN](./images/app23.png)
 
-You'll then see this. First, select **Bootcamp Screen Beacon** and then click the **entry** button. This will allow you to simulate a beacon entry.
 Após essa etapa, o seguinte será exibido. Primeiro, selecione **Bootcamp Screen Beacon** e clique no botão de **entrada**. Isso permitirá que você simule uma entrada de sinalização com beacon. 
 
 ![DSN](./images/app21.png)
