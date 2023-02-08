@@ -106,8 +106,10 @@ Depois de compilar os três datasets, estamos prontos para continuar.
 
 Você também precisa garantir que, para cada dataset, essas opções estejam habilitadas: 
 
-- Importar todos os novos dados 
-- Preencher todos os dados existentes 
+- Importar todos os novos dados
+- Preencher todos os dados existentes
+- Preencher tipo de fonte de dados com “Others”
+- Preencher a descrição com o mesmo nome do Dataset
 
 Clique em **Add datasets**.
 
