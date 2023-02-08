@@ -85,10 +85,8 @@ Verifique esses schemas e datasets na Adobe Experience Platform.
 
 Certifique-se de ter verificado ao menos:
 
-- Identities: CRMID, phoneNumber, ECID, email. Which identities are the primary identifiers, which ones are the secondary identifiers?
-You can find the identifiers by opening a schema and looking at the object `_experienceplatform.identification.core`. Have a look at the schema [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema).
-
 - Identidades: CRMID, phoneNumber, ECID, email. Quais identidades são os identificadores primários, quais são os identificadores secundários? 
+
 Você pode encontrar os identificadores abrindo um schema e observando o objeto `_experienceplatform.identification.core`. Verifique o schema [Demo System - Event Schema for Website (Global v1.1)](https://experience.adobe.com/platform/schema).
 
 ![demo](./images/identity.png)
@@ -101,7 +99,7 @@ Você pode encontrar os identificadores abrindo um schema e observando o objeto�
 
 Agora você está pronto para começar a usar a interface do usuário do Customer Journey Analytics. 
 
-Próxima etapa: [Conecte datasets da Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
+Próxima etapa: [4.2 Conecte datasets da Adobe Experience Platform no Customer Journey Analytics](./ex2.md)
 
 [Retornar para Fluxo de Usuário 4](./uc4.md)
 
