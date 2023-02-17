@@ -4,7 +4,7 @@ description: Learn how to send mbox, profile, and entity parameters to Adobe Tar
 ---
 # Send parameters to Target using Platform Web SDK
 
-Target implementations differ across websites due to site architecture, business requirements, and features used. Most Target implementations include passing various parameters for contextual information, audiences, and content recommendations.
+Target implementations differ across websites due to site architecture, business requirements, and features used. Most Target implementations include passing various parameters for contextual information, audiences, and content recommendations.  
 
 Let's use a simple product details page and an order confirmation page to demonstrate the differences between the libraries when passing parameters to Target.
 
@@ -51,7 +51,7 @@ Product Details:
 </html>
 ```
 
-<!--
+
 
 Order Confirmation:
 
@@ -61,7 +61,7 @@ Order Confirmation:
 <head>
   <title>Order Confirmation</title>-->
   <!--Target parameters -->
-<!--  <script>
+  <script>
     targetPageParams = function() {
       return {
         // Property token
@@ -74,9 +74,9 @@ Order Confirmation:
         "mbox3rdPartyId": "TT8675309",
       };
     };
-  </script>-->
+  </script>
   <!--Target at.js library loaded asynchonously-->
-<!--  <script src="/libraries/at.js" async></script>
+  <script src="/libraries/at.js" async></script>
 </head>
 <body>
   <h1 id="title">Order Confirmation</h1>
@@ -84,7 +84,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 
 ## Parameter-mapping summary
@@ -119,15 +118,12 @@ The table below outlines how the example parameters would be remapped using Plat
 | `cartIds` | `data.__adobe.target.cartIds` | Used for Target's cart-based recommendations algorithms. | 
 | `excludedIds` | `data.__adobe.target.excludedIds` | Used to prevent specific entity IDs from returning in a recommendations design. | 
 | `mbox3rdPartyId` | Set in the identityMap. See [Synching profiles with a Customer ID](#synching-profiles-with-a-customer-id) | Used for synching Target profiles across devices and Customer Attributes. The namespace to use for the customer ID must be specified in the [Target configuration of the datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). | 
-
-{style="table-layout:auto"}
-
-<!--
 | `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
-| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | -->
+| `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | 
 
+{style="table-layout:auto"}
 
 ## Custom parameters
 
@@ -239,7 +235,7 @@ All [entity parameters](https://experienceleague.adobe.com/docs/target/using/rec
 >
 >If the `commerce` field group is used and the `productListItems` array is included in the XDM payload, then the first `SKU` value in this array is mapped to `entity.id` for the purposes of incrementing a product view.
 
-<!-- 
+
 ## Purchase parameters
 
 Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Web SDK implementation, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
@@ -285,7 +281,6 @@ alloy("sendEvent", {
 >
 >The `productPurchasedId` value can also be passed as a comma-separated list of entity IDs under the `data` object.
 
--->
 
 ## Synching profiles with a Customer ID
 
@@ -407,7 +402,7 @@ Product Details:
 </html>
 ```
 
-<!--
+
 Order Confirmation:
 
 ```HTML
@@ -416,9 +411,9 @@ Order Confirmation:
 <head>
   <title>Order Confirmation</title>
 
--->
+
   <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
-<!--
+
   <script>
     !function(e,a,n,t){var i=e.head;if(i){
     if (a) return;
@@ -426,21 +421,20 @@ Order Confirmation:
     o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
--->  
+
   <!--Platform Web SDK base code-->
-<!--
+
   <script>
     !function(n,o){o.forEach(function(o){n[o]||((n.__alloyNS=n.__alloyNS||
     []).push(o),n[o]=function(){var u=arguments;return new Promise(
     function(i,l){n[o].q.push([i,l,u])})},n[o].q=[])})}
     (window,["alloy"]);
   </script>
--->
   <!--Platform Web SDK loaded asynchonously. Change the src to use the latest supported version.-->
-<!--  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
--->
+  <script src="https://cdn1.adoberesources.net/alloy/2.6.4/alloy.min.js" async></script>
+
   <!--Configure Platform Web SDK and send event-->
-<!--  <script>
+  <script>
     alloy("configure", {
       "edgeConfigId": "ebebf826-a01f-4458-8cec-ef61de241c93",
       "orgId":"ADB3LETTERSANDNUMBERS@AdobeOrg"
@@ -477,7 +471,6 @@ Order Confirmation:
 </body>
 </html>
 ```
--->
 
 Next, learn how to [track Target conversion events](track-events.md) with the Platform Web SDK.
 
