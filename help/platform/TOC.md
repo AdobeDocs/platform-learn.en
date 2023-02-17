@@ -41,8 +41,6 @@ doc-type: video
   + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies.md)
   + [Enforce consent](/help/platform/governance/enforce-consent.md)
 + Data Hygiene {#data-hygiene}
-  + [Overview](/help/platform/data-hygiene/overview.md)
-  + [Delete consumers](/help/platform/data-hygiene/delete-consumers.md)
   + [Delete datasets](/help/platform/data-hygiene/delete-datasets.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
