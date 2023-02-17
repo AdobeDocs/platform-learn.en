@@ -219,7 +219,7 @@ alloy("sendEvent", {
     "__adobe": {
       "target": {
         "entity.id": "SKU-00001-LARGE",
-        "entity.categoryId": "clothing,shirts"
+        "entity.categoryId": "clothing,shirts",
         "entity.customEntity": "some value",
         "cartIds": "SKU-00002,SKU-00003",
         "excludedIds": "SKU-00001-SMALL"
