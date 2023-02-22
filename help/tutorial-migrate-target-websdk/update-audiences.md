@@ -18,7 +18,7 @@ Any audiences that use custom mbox parameters should be updated to use the new X
 
 One approach to ensure compatibility with both at.js and Platform Web SDK is to update any relevant audiences so that `OR` conditions are used, as shown below:
 
-![How to view update a Target audience for Platform Web SDK compatibility](assets/target-audience-update.png)
+![How to view update a Target audience for Platform Web SDK compatibility](assets/target-audience-update.png){zoomable="yes"}
 
 ## Edit profile scripts
  

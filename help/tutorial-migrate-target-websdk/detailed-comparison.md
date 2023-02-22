@@ -112,7 +112,7 @@ The following diagrams should help you understand the data flow differences betw
 
 ### at.js 2.x system diagram
 
- ![at.js 2.0 behavior on page load](assets/target-at-js-2x-diagram.png)
+ ![at.js 2.0 behavior on page load](assets/target-at-js-2x-diagram.png){zoomable="yes"}
 
 | Call | Details |
 | --- | --- |
