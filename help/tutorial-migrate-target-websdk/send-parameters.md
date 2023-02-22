@@ -24,7 +24,7 @@ Assume the following two example pages using at.js:
         // Property token
         "at_property": "5a0fd9bb-67de-4b5a-0fd7-9cc09f50a58d",
         // Mbox parameters
-        "siteSection": "product details",
+        "pageName": "product detail",
         // Profile parameters
         "profile.gender": "male",
         "user.categoryId": "clothing",
@@ -89,16 +89,16 @@ Assume the following two example pages using at.js:
 
 ## Parameter-mapping summary
 
-The Target parameters used on these two example pages must be sent a bit differently using the Platform Web SDK. There are multiple ways to pass parameters to Target using at.js:
+The Target parameters for these pages are sent differently using the Platform Web SDK. There are multiple ways to pass parameters to Target using at.js:
 
 - Set with `targetPageParams()` function for the page load event 
 - Set with `targetPageParamsAll()` function for all Target requests on the page
 - Send parameters directly with the `getOffer()` function for a single location
 - Send parameters directly with the `getOffers()` function for one or more locations
 
-For the purposes of this example, the `targetPageParams()` approach is used.
+For these examples, the `targetPageParams()` approach is used.
 
-The Platform Web SDK simplifies this by providing a single consistent way to send data without the need for extra functions. All parameters must be passed in the payload with the `sendEvent` command.
+The Platform Web SDK provides a single consistent way to send data without the need for extra functions. All parameters must be passed in the payload with the `sendEvent` command.
 
 Parameters passed with the Platform Web SDK `sendEvent` payload fall under two categories:
 
@@ -110,7 +110,7 @@ The table below outlines how the example parameters would be remapped using Plat
 | Example at.js parameter | Platform Web SDK option | Notes |
 | --- | --- | --- |
 | `at_property` | N/A | Property tokens are configured in the [datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/configure.html#target) and cannot be set in the `sendEvent` call. |
-| `siteSection` | `xdm.web.webPageDetails.siteSection` | All Target mbox parameters must be passed as part of the `xdm` object and conform to a schema using the XDM ExperienceEvent class. Mbox parameters cannot be passed as part of the `data` object.|
+| `pageName` | `xdm.web.webPageDetails.name` | All Target mbox parameters must be passed as part of the `xdm` object and conform to a schema using the XDM ExperienceEvent class. Mbox parameters cannot be passed as part of the `data` object.|
 | `profile.gender` | `data.__adobe.target.profile.gender` | All Target profile parameters must be passed as part of the `data` object and prefixed with `profile.` to be mapped appropriately. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Reserved parameter used for Target's Category Affinity feature which must be passed as part of the `data` object. |
 | `entity.id` | `data.__adobe.target.entity.id` <br>OR<br> `xdm.productListItems[0].SKU` | Entity IDs are used for Target Recommendations behavioral counters. These entity IDs can either be passed as part of the `data` object or automatically mapped from the first item in the `xdm.productListItems` array if your implementation uses that field group.|
@@ -163,18 +163,18 @@ alloy("sendEvent", {
 
 In tags, first use an [!UICONTROL XDM object] data element to map to the XDM field:
 
-![Mapping to an XDM field in an XDM Object data element](assets/params-tags-pageName.png)
+![Mapping to an XDM field in an XDM Object data element](assets/params-tags-pageName.png){zoomable="yes"}
 
 And then include your [!UICONTROL XDM object] in your [!UICONTROL Send event] [!UICONTROL action] (multiple [!UICONTROL XDM objects] can be [merged](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Including an XDM object data element in a Send event](assets/params-tags-sendEvent.png)
+![Including an XDM object data element in a Send event](assets/params-tags-sendEvent.png){zoomable="yes"}
 
 >[!ENDTABS]
 
 
 >[!NOTE]
 >
->Because custom mbox parameters must be sent as part of `xdm` object in the `sendEvent` command, any mbox parameters used in your at.js Target implementation need to be reassigned to an XDM equivalent. This means you need to update any audiences, activities, or profile scripts that reference these mbox parameters.
+>Because custom mbox parameters are part of `xdm` object you need to update any audiences, activities, or profile scripts that reference these mbox parameters using their new names. See the [Update Target audiences and profile scripts for Platform Web SDK compatibility](update-audiences.md) page of this tutorial for more information.
 
 
 ## Profile parameters
@@ -217,11 +217,11 @@ alloy("sendEvent", {
 
 In tags, first create a data element to define the `data.__adobe.target` object:
 
-![Defining your data object in a data element](assets/params-tags-dataObject.png)
+![Defining your data object in a data element](assets/params-tags-dataObject.png){zoomable="yes"}
 
 And then include your data object in your [!UICONTROL Send event] [!UICONTROL action] (multiple [!UICONTROL objects] can be [merged](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Including a data object in a Send event](assets/params-tags-sendEvent-withData.png)
+![Including a data object in a Send event](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -271,11 +271,11 @@ alloy("sendEvent", {
 
 In tags, first create a data element to define the `data.__adobe.target` object:
 
-![Defining your data object in a data element](assets/params-tags-dataObject-entities.png)
+![Defining your data object in a data element](assets/params-tags-dataObject-entities.png){zoomable="yes"}
 
 And then include your data object in your [!UICONTROL Send event] [!UICONTROL action] (multiple [!UICONTROL objects] can be [merged](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Including a data object in a Send event](assets/params-tags-sendEvent-withData.png)
+![Including a data object in a Send event](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -339,11 +339,11 @@ alloy("sendEvent", {
 
 In tags, first use an [!UICONTROL XDM object] data element to map to the XDM fields:
 
-![Mapping to an XDM field in an XDM Object data element](assets/params-tags-purchase.png)
+![Mapping to an XDM field in an XDM Object data element](assets/params-tags-purchase.png){zoomable="yes"}
 
 And then include your [!UICONTROL XDM object] in your [!UICONTROL Send event] [!UICONTROL action] (multiple [!UICONTROL XDM objects] can be [merged](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
 
-![Including an XDM object data element in a Send event](assets/params-tags-sendEvent.png)
+![Including an XDM object data element in a Send event](assets/params-tags-sendEvent-purchase.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -396,17 +396,17 @@ alloy("sendEvent", {
 >[!TAB Tags]
 
 The [!UICONTROL ID] value, [!UICONTROL Authenticated state] and [!UICONTROL Namespace] are captured in an [!UICONTROL Identity map] data element:
-![Identity Map data element capturing the customer id](assets/params-tags-customerIdDataElement.png)
+![Identity Map data element capturing the customer id](assets/params-tags-customerIdDataElement.png){zoomable="yes"}
 
 The [!UICONTROL Identity map] data element is then used to set the [!UICONTROL identityMap] field in the [!UICONTROL XDM object] data element:
-![Identity Map data element used in XDM object data element](assets/params-tags-customerIdInXDMObject.png)
+![Identity Map data element used in XDM object data element](assets/params-tags-customerIdInXDMObject.png){zoomable="yes"}
 
 The [!UICONTROL XDM object] is then included in the [!UICONTROL Send event] action of a rule:
 
-![Including an XDM object data element in a Send event](assets/params-tags-sendEvent.png)
+![Including an XDM object data element in a Send event](assets/params-tags-sendEvent-xdm.png){zoomable="yes"}
 
 In your datastream's Adobe Target service, be sure to set the [!UICONTROL Target Third Party ID Namespace] to the same namespace used in the [!UICONTROL Identity map] data element
-![Set the Target Third Party ID Namespace in the datastream](assets/params-tags-customerIdNamespaceInDatastream.png)
+![Set the Target Third Party ID Namespace in the datastream](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -466,7 +466,7 @@ Now that you understand how the different Target parameters are mapped using the
         "web": {
           "webPageDetails": {
             // Other attributes included according to XDM schema
-            "siteSection": "product detail"
+            "pageName": "product detail"
           }
         }
       },
