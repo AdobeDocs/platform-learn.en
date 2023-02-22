@@ -8,11 +8,9 @@ Target implementations differ across websites due to site architecture, business
 
 Let's use a simple product details page and an order confirmation page to demonstrate the differences between the libraries when passing parameters to Target.
 
-Assume the following example page using at.js:
+Assume the following two example pages using at.js:
 
-<!--Assume the following two example pages using at.js:-->
-
-Product Details:
++++at.js on a Product Details page:
 
 ```HTML
 <!doctype html>
@@ -51,9 +49,10 @@ Product Details:
 </html>
 ```
 
++++ 
 
 
-Order Confirmation:
++++at.js on an Order Confirmation page:
 
 ```HTML
 <!doctype html>
@@ -84,6 +83,8 @@ Order Confirmation:
 </body>
 </html>
 ```
+
++++ 
 
 
 ## Parameter-mapping summary
@@ -134,12 +135,16 @@ at.js example using `targetPageParams()`:
 ```JavaScript
 targetPageParams = function() {
   return {
-    "siteSection": "product detail"
+    "pageName": "product detail"
   };
 };
 ```
 
-Platform Web SDK example using `sendEvent` command:
+Platform Web SDK JavaScript examples using `sendEvent` command:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -147,12 +152,25 @@ alloy("sendEvent", {
     "web": {
       "webPageDetails": {
         // Other attributes included according to xdm schema
-        "siteSection": "product detail"
+        "name": "product detail"
       }
     }
   }
 });
 ```
+
+>[!TAB Tags]
+
+In tags, first use an [!UICONTROL XDM object] data element to map to the XDM field:
+
+![Mapping to an XDM field in an XDM Object data element](assets/params-tags-pageName.png)
+
+And then include your [!UICONTROL XDM object] in your [!UICONTROL Send event] [!UICONTROL action] (multiple [!UICONTROL XDM objects] can be [merged](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Including an XDM object data element in a Send event](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -176,7 +194,11 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK example using `sendEvent` command:
+Platform Web SDK examples using `sendEvent` command:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -190,6 +212,18 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+In tags, first create a data element to define the `data.__adobe.target` object:
+
+![Defining your data object in a data element](assets/params-tags-dataObject.png)
+
+And then include your data object in your [!UICONTROL Send event] [!UICONTROL action] (multiple [!UICONTROL objects] can be [merged](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Including a data object in a Send event](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
 
 ## Entity parameters
 
@@ -211,7 +245,11 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK example using `sendEvent` command:
+Platform Web SDK examples using `sendEvent` command:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -228,6 +266,22 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+In tags, first create a data element to define the `data.__adobe.target` object:
+
+![Defining your data object in a data element](assets/params-tags-dataObject-entities.png)
+
+And then include your data object in your [!UICONTROL Send event] [!UICONTROL action] (multiple [!UICONTROL objects] can be [merged](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Including a data object in a Send event](assets/params-tags-sendEvent-withData.png)
+
+>[!ENDTABS]
+
+
+
+
 
 All [entity parameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) supported by at.js are also supported by the Platform Web SDK.
 
@@ -252,9 +306,11 @@ targetPageParams = function() {
 };
 ```
 
-Purchase information is passed to Target when the `commerce` field group has `puchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
+Purchase information is passed to Target when the `commerce` field group has `purchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
 
-Platform Web SDK example using `sendEvent` command:
+Platform Web SDK examples using `sendEvent` command:
+
+>[!TAB JavaScript]
 
 ```JavaScript
 alloy("sendEvent", {
@@ -276,6 +332,19 @@ alloy("sendEvent", {
   }
 });
 ```
+
+>[!TAB Tags]
+
+In tags, first use an [!UICONTROL XDM object] data element to map to the XDM fields:
+
+![Mapping to an XDM field in an XDM Object data element](assets/params-tags-purchase.png)
+
+And then include your [!UICONTROL XDM object] in your [!UICONTROL Send event] [!UICONTROL action] (multiple [!UICONTROL XDM objects] can be [merged](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/core/overview.html?lang=en#merged-objects)):
+
+![Including an XDM object data element in a Send event](assets/params-tags-sendEvent.png)
+
+>[!ENDTABS]
+
 
 >[!NOTE]
 >
@@ -305,6 +374,8 @@ targetPageParams = function() {
 
 Platform Web SDK example using `sendEvent` command:
 
+>[!TAB JavaScript]
+
 ```JavaScript
 alloy("sendEvent", {
   "xdm": {
@@ -318,6 +389,22 @@ alloy("sendEvent", {
 });
 ```
 
+>[!TAB Tags]
+
+The [!UICONTROL ID] value, [!UICONTROL Authenticated state] and [!UICONTROL Namespace] are captured in an [!UICONTROL Identity map] data element:
+![Identity Map data element capturing the customer id](assets/params-tags-customerIdDataElement.png)
+
+The [!UICONTROL Identity map] data element is then used to set the [!UICONTROL identityMap] field in the [!UICONTROL XDM object] data element:
+![Identity Map data element used in XDM object data element](assets/params-tags-customerIdInXDMObject.png)
+
+The [!UICONTROL XDM object] is then included in the [!UICONTROL Send event] action of a rule:
+
+![Including an XDM object data element in a Send event](assets/params-tags-sendEvent.png)
+
+In your datastream's Adobe Target service, be sure to set the [!UICONTROL Target Third Party ID Namespace] to the same namespace used in the [!UICONTROL Identity map] data element
+![Set the Target Third Party ID Namespace in the datastream](assets/params-tags-customerIdNamespaceInDatastream.png)
+
+>[!ENDTABS]
 
 ## Platform Web SDK example
 
@@ -329,7 +416,7 @@ Now that you understand how the different Target parameters are mapped using the
 - A `configure` command to initialize the library
 - A `sendEvent` command to send data and request Target content to be rendered
 
-Product Details:
++++Web SDK on a Product Details page:
 
 ```HTML
 <!doctype html>
@@ -402,8 +489,9 @@ Product Details:
 </html>
 ```
 
++++
 
-Order Confirmation:
++++Web SDK on an Order Confirmation page:
 
 ```HTML
 <!doctype html>
@@ -471,6 +559,8 @@ Order Confirmation:
 </body>
 </html>
 ```
+
++++
 
 Next, learn how to [track Target conversion events](track-events.md) with the Platform Web SDK.
 

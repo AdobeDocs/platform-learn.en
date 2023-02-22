@@ -58,6 +58,8 @@ Assume a simple Target implementation with at.js:
 * A prehiding snippet to mitigate flicker
 * The Target at.js library loads asynchronously with default settings to automatically request and render activities:
 
++++See example HTML code of an at.js
+
 ```HTML
 <!doctype html>
 <html>
@@ -120,6 +122,8 @@ Assume a simple Target implementation with at.js:
 </body>
 </html>
 ```
+
++++
 
 To upgrade Target to use Platform Web SDK, first remove at.js:
 
@@ -214,7 +218,7 @@ alloy("configure", {
 });
 ```
 
->[!TAB tags] 
+>[!TAB Tags] 
 
 In tags implementations, many fields are auto-populated or can be selected from dropdown menus. Note that different Platform [!UICONTROL sandboxes] and [!UICONTROL datastreams] can be selected for each environment. The datastream will change based on the state of the tag library in the publishing process.
 
