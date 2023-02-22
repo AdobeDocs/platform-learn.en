@@ -310,6 +310,8 @@ Purchase information is passed to Target when the `commerce` field group has `pu
 
 Platform Web SDK examples using `sendEvent` command:
 
+>[!BEGINTABS]
+
 >[!TAB JavaScript]
 
 ```JavaScript
@@ -372,7 +374,9 @@ targetPageParams = function() {
 };
 ```
 
-Platform Web SDK example using `sendEvent` command:
+Platform Web SDK examples using `sendEvent` command:
+
+>[!BEGINTABS]
 
 >[!TAB JavaScript]
 
