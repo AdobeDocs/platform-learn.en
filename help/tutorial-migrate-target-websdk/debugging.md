@@ -115,7 +115,7 @@ To view Platform Web SDK Target traces with the Adobe Experience Platform Debugg
 1. Reload the page and the log should populate with detailed information about the edge network interactions
 1. Focus on the log entries that start with "Target Traces" in the description and select **[!UICONTROL View]** to see Target trace details
 
-![How to view Target traces with Adobe Experience Platform Debugger](assets/target-trace-debugger.png)
+![How to view Target traces with Adobe Experience Platform Debugger](assets/target-trace-debugger.png){zoomable="yes"}
 
 After selecting **[!UICONTROL View]**, an overlay will appear allowing you to see the following information related to the request:
 
@@ -137,7 +137,7 @@ Target trace information is viewable in both the Adobe Experience Platform Debug
 1. Select a log entry with the type `com.adobe.target.trace`
 1. Expand the details of the payload and view the information under `context > targetTrace`
 
-![How to view Target traces with Assurance](assets/target-trace-assurance.png)
+![How to view Target traces with Assurance](assets/target-trace-assurance.png){zoomable="yes"}
 
 ## Examine network request and response
 
@@ -145,7 +145,7 @@ The request payload and response of the Platform Web SDK `sendEvent` calls diffe
 
 ### Content request payload
 
-![Target specific elements of the Platform Web SDK payload](assets/target-payload.png)
+![Target specific elements of the Platform Web SDK payload](assets/target-payload.png){zoomable="yes"}
 
 - Profile, entity, and other non-mbox parameters are passed in the events array under `data.__adobe.target`
 - Decision scopes are located in the events array under `query.personalization.decisionScopes`
@@ -153,7 +153,7 @@ The request payload and response of the Platform Web SDK `sendEvent` calls diffe
 
 ### Content response body
 
-![Target specific elements of the Platform Web SDK response body](assets/target-response.png)
+![Target specific elements of the Platform Web SDK response body](assets/target-response.png){zoomable="yes"}
 
 - The Platform Web SDK returns actions for all Adobe applications under the `handle` object
 - The `personalization:decisions` action signifies a response from Target or offer decisioning
@@ -164,7 +164,7 @@ The request payload and response of the Platform Web SDK `sendEvent` calls diffe
 
 ### Proposition event payload
 
-![Target proposition event example](assets/target-proposition-event.png)
+![Target proposition event example](assets/target-proposition-event.png){zoomable="yes"}
 
 - Target specific SDK events are either `decisioning.propositionDisplay` for an impression or `decisioning.propositionInteract` for an interaction, such as a click
 - The details of the proposition event are located in the events array under `xdm._experience.decisioning`

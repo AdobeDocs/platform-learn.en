@@ -58,7 +58,7 @@ Assume a simple Target implementation with at.js:
 * A prehiding snippet to mitigate flicker
 * The Target at.js library loads asynchronously with default settings to automatically request and render activities:
 
-+++See example HTML code of an at.js
++++at.js example of an implementation on an HTML page
 
 ```HTML
 <!doctype html>
@@ -195,21 +195,17 @@ Adobe recommends implementing the Platform Web SDK asynchronously for the best o
 
 The prehiding style for synchronous implementations can be configured using the [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) option. Platform Web SDK configuration is covered in the next section.
 
->[!TIP]
->
-> When using the tags feature (formerly Launch) to implement Web SDK, the prehiding style can be edited in the Adobe Experience Platform Web SDK extension configuration.
-
 To learn more about how the Platform Web SDK can manage flicker, you can refer to the guide section:  [managing flicker for personalized experiences](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/manage-flicker.html)
 
 ## Configure the Platform Web SDK
 
-The Platform Web SDK must be configured on every page load. The `configure` command must always be the first SDK command called. The following example assumes that the entire site is being upgraded to Platform Web SDK in a single deployment:
+The Platform Web SDK must be configured on every page load. The following example assumes that the entire site is being upgraded to Platform Web SDK in a single deployment:
 
 >[!BEGINTABS]
 
 >[!TAB JavaScript] 
 
-The `edgeConfigId` is the [!UICONTROL Datastream ID]
+The `configure` command must always be the first SDK command called. The `edgeConfigId` is the [!UICONTROL Datastream ID]
 
 ```JavaScript
 alloy("configure", {
@@ -222,7 +218,7 @@ alloy("configure", {
 
 In tags implementations, many fields are auto-populated or can be selected from dropdown menus. Note that different Platform [!UICONTROL sandboxes] and [!UICONTROL datastreams] can be selected for each environment. The datastream will change based on the state of the tag library in the publishing process.
 
-![configuring the Web SDK tag extension](assets/tags-config.png)
+![configuring the Web SDK tag extension](assets/tags-config.png){zoomable="yes"}
 >[!ENDTABS]
 
 If you plan to migrate from at.js to Platform Web SDK on a page-by-page basis, then the following configuration options are required:
@@ -241,9 +237,9 @@ alloy("configure", {
 });
 ```
 
->[!TAB tags] 
+>[!TAB Tags] 
 
-![configuring the Web SDK tag extension migration options](assets/tags-config-migration.png)
+![configuring the Web SDK tag extension migration options](assets/tags-config-migration.png){zoomable="yes"}
 >[!ENDTABS]
 
 The noteworthy configuration options related to Target are outlined below:
@@ -257,19 +253,15 @@ The noteworthy configuration options related to Target are outlined below:
 | `thirdPartyCookiesEnabled` | Enables the setting of Adobe third-party cookies. The SDK can persist the visitor ID in a third-party context to enable the same visitor ID to be used across sites. Use this option if you have multiple sites; however, sometimes this option is not desired for privacy reasons. | `true` |
 | `prehidingStyle` | Used to create a CSS style definition that hides content areas of your web page while personalized content is loaded from the server. This is only used with synchronous deployments of the SDK.| `body { opacity: 0 !important }` |
 
->[!NOTE]
->
->`thirdPartyCookiesEnabled` can be set to `true` to maintain a consistent Target visitor profile across multiple domains. This option should be set to `false` or omitted unless multi-domain visitor profile persistence is required.
-
->[!TIP]
->
-> When using the tags feature (formerly Launch) to implement Web SDK, these configurations can be managed in the Adobe Experience Platform Web SDK extension configuration.
-
 For a complete list of options, refer to the [configuring Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html) guide.
 
 ## Implementation example
 
 Once the Platform Web SDK is properly in place, the example page would look like this.
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript] 
 
 ```HTML
 <!doctype html>
@@ -326,9 +318,61 @@ Once the Platform Web SDK is properly in place, the example page would look like
 </html>
 ```
 
->[!TIP]
->
-> When using the tags feature (formerly Launch) to implement Web SDK, the tags embed code replaces the 'Platform Web SDK base code', 'Platform Web SDK loaded asynchronously', and  'Configure Platform Web SDK' sections above.
+>[!TAB Tags] 
+
+Page code:
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+In tags, add the Adobe Experience Platform Web SDK extension:
+
+![Add the Adobe Experience Platform Web SDK extension](assets/library-tags-addExtension.png){zoomable="yes"}
+
+And add the desired configurations:
+![configuring the Web SDK tag extension migration options](assets/tags-config-migration.png){zoomable="yes"}
+
+
+>[!ENDTABS] 
+
+
 
 It's important to note that simply including and configuring the Platform Web SDK library as shown above does not execute any network calls to the Adobe Edge Network. 
 

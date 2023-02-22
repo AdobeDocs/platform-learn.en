@@ -13,7 +13,8 @@ Some Target implementations may use regional mboxes (now known as "scopes") to d
 
 Activities created using Target's form-based composer and delivered to regional mboxes cannot be rendered automatically by the Platform Web SDK. Similar to at.js, offers delivered to specific Target locations need to be rendered on demand. 
 
-at.js Example using `getOffer()` and `applyOffer()`:
+
++++at.js Example using `getOffer()` and `applyOffer()`:
 
 1. Execute `getOffer()` to request an offer for a location
 1. Execute `applyOffer()` to render the offer to a specified selector
@@ -39,7 +40,9 @@ adobe.target.getOffer({
 });
 ```
 
-Platform Web SDK equivalent using the `applyPropositions` command: 
++++
+
++++Platform Web SDK equivalent using the `applyPropositions` command: 
 
 1. Execute `sendEvent` command to request offers (propositions) for one or more locations (scopes)
 1. Execute `applyPropositions` command with metadata object which supplies instructions for how to apply content to the page for each scope
@@ -80,6 +83,8 @@ alloy("sendEvent", {
 });
 ```
 
++++
+
 The Platform Web SDK offers greater control for applying form-based activities to the page using the `applyPropositions` command with a `actionType` specified:
 
 | `actionType` | Description | at.js `applyOffer()` | Platform Web SDK `applyPropositions`|
@@ -93,6 +98,8 @@ Refer to the [dedicated documentation](https://experienceleague.adobe.com/docs/e
 ## Implementation example
 
 The example page below builds upon the implementation outlined in the previous section, only it adds additional scopes to the `sendEvent` command.
+
++++Platform Web SDK example with multiple scopes
 
 ```HTML
 <!doctype html>
