@@ -91,19 +91,16 @@ Assume the following two example pages using at.js:
 
 The Target parameters for these pages are sent differently using the Platform Web SDK. There are multiple ways to pass parameters to Target using at.js:
 
-- Set with `targetPageParams()` function for the page load event 
+- Set with `targetPageParams()` function for the page load event (used in the examples on this page)
 - Set with `targetPageParamsAll()` function for all Target requests on the page
 - Send parameters directly with the `getOffer()` function for a single location
 - Send parameters directly with the `getOffers()` function for one or more locations
 
-For these examples, the `targetPageParams()` approach is used.
 
-The Platform Web SDK provides a single consistent way to send data without the need for extra functions. All parameters must be passed in the payload with the `sendEvent` command.
+The Platform Web SDK provides a single consistent way to send data without the need for extra functions. All parameters must be passed in the payload with the `sendEvent` command and fall under two categories:
 
-Parameters passed with the Platform Web SDK `sendEvent` payload fall under two categories:
-
-1. Automatically mapped from the `xdm` object
-1. Manually passed using the `data.__adobe.target` object
+- Automatically mapped from the `xdm` object
+- Manually passed using the `data.__adobe.target` object
 
 The table below outlines how the example parameters would be remapped using Platform Web SDK: 
 
@@ -118,7 +115,7 @@ The table below outlines how the example parameters would be remapped using Plat
 | `entity.customEntity` | `data.__adobe.target.entity.customEntity` | Custom entity parameters are used for updating the Recommendations product catalog. These custom parameters must be passed as part of the `data` object. | 
 | `cartIds` | `data.__adobe.target.cartIds` | Used for Target's cart-based recommendations algorithms. | 
 | `excludedIds` | `data.__adobe.target.excludedIds` | Used to prevent specific entity IDs from returning in a recommendations design. | 
-| `mbox3rdPartyId` | Set in the identityMap. | Used for synching Target profiles across devices and Customer Attributes. The namespace to use for the customer ID must be specified in the [Target configuration of the datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). | 
+| `mbox3rdPartyId` | Set in the `xdm.identityMap` object | Used for synching Target profiles across devices and Customer Attributes. The namespace to use for the customer ID must be specified in the [Target configuration of the datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). | 
 | `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
 | `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
 | `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
@@ -227,7 +224,7 @@ And then include your data object in your [!UICONTROL Send event] [!UICONTROL ac
 
 ## Entity parameters
 
-Entity parameters are used to pass behavioral data and supplemental catalog information for Target Recommendations. Similar to profile parameters, all entity parameters must be passed under the `data.__adobe.target` object in the Platform Web SDK `sendEvent` command payload.
+Entity parameters are used to pass behavioral data and supplemental catalog information for Target Recommendations. All [entity parameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) supported by at.js are also supported by the Platform Web SDK. Similar to profile parameters, all entity parameters should be passed under the `data.__adobe.target` object in the Platform Web SDK `sendEvent` command payload.
 
 Entity parameters for a specific item must be prefixed with `entity.` for proper data capture. The reserved `cartIds` and `excludedIds` parameters for recommendations algorithms should not be prefixed and the value for each must contain a comma-separated list of entity IDs.
 
@@ -278,12 +275,6 @@ And then include your data object in your [!UICONTROL Send event] [!UICONTROL ac
 ![Including a data object in a Send event](assets/params-tags-sendEvent-withData.png){zoomable="yes"}
 
 >[!ENDTABS]
-
-
-
-
-
-All [entity parameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) supported by at.js are also supported by the Platform Web SDK.
 
 >[!NOTE]
 >
@@ -570,4 +561,4 @@ Next, learn how to [track Target conversion events](track-events.md) with the Pl
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
