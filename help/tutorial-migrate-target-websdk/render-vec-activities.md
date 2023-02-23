@@ -52,7 +52,7 @@ alloy("sendEvent", {
 
 In tags, use the [!UICONTROL Send event] action type with the [!UICONTROL Render visual personalization decisions] option selected:
 
-![Send an event with Render Personalizations set to true in tags](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
+![Send an event with Render visual personalization decisions selected in tags](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
 
 >[!ENDTABS]
 
@@ -130,7 +130,11 @@ The Platform Web SDK offers developers a great deal of flexibility with requesti
 
 The foundational Platform Web SDK implementation is now complete. 
 
-+++Web SDK example page with automatic Target content rendering:
+>[!BEGINTABS]
+
+>[!TAB JavaScript] 
+
+JavaScript example with automatic Target content rendering:
 
 ```HTML
 <!doctype html>
@@ -192,14 +196,65 @@ The foundational Platform Web SDK implementation is now complete.
 </html>
 ```
 
-+++
 
->[!TIP]
->
-> When using the tags feature (formerly Launch) to implement Web SDK, the tags embed code replaces the 'Platform Web SDK base code', 'Platform Web SDK loaded asynchronously', and  'Configure Platform Web SDK' sections above. The 'sendEvent' command is made in a rule using the [!UICONTROL Send event] action type with the [!UICONTROL Render visual personalization decisions] option selected.
+>[!TAB Tags] 
+
+Tags example page with automatic Target content rendering:
+
+
+```HTML
+<!doctype html>
+<html>
+<head>
+  <title>Example page</title>
+  <!--Data Layer to enable rich data collection and targeting-->
+  <script>
+    var digitalData = { 
+      // Data layer information goes here
+    };
+  </script>
+
+  <!--Third party libraries that may be used by Target offers and modifications-->
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+
+  <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
+  <script>
+    !function(e,a,n,t){var i=e.head;if(i){
+    if (a) return;
+    var o=e.createElement("style");
+    o.id="alloy-prehiding",o.innerText=n,i.appendChild(o),setTimeout(function(){o.parentNode&&o.parentNode.removeChild(o)},t)}}
+    (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
+  </script>
+
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+</head>
+<body>
+  <h1 id="title">Home Page</h1><br><br>
+  <p id="bodyText">Navigation</p><br><br>
+  <a id="home" class="navigationLink" href="#">Home</a><br>
+  <a id="pageA" class="navigationLink" href="#">Page A</a><br>
+  <a id="pageB" class="navigationLink" href="#">Page B</a><br>
+  <a id="pageC" class="navigationLink" href="#">Page C</a><br>
+  <div id="homepage-hero">Homepage Hero Banner Content</div>
+</body>
+</html>
+```
+
+In tags, add the Adobe Experience Platform Web SDK extension:
+
+![Add the Adobe Experience Platform Web SDK extension](assets/library-tags-addExtension.png){zoomable="yes"}
+
+Add the desired configurations:
+![configuring the Web SDK tag extension migration options](assets/tags-config-migration.png){zoomable="yes"}
+
+Create a rule with a [!UICONTROL Send event] action and [!UICONTROL Render visual personalization decisions] selected:
+![Send an event with Render Personalizations selected in tags](assets/vec-sendEvent-renderTrue.png){zoomable="yes"}
+
+>[!ENDTABS] 
 
 Next, learn how to request and [render form-based Target activities](render-form-based-activities.md).
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

@@ -9,7 +9,7 @@ Learn how to replace your on-page Adobe Target implementation to migrate from at
 * Review your Target administration settings and make note of your IMS Organization ID
 * Replace the at.js library with the Platform Web SDK
 * Update the prehiding snippet for synchronous library implementations
-* Configure the Platform Web SDK on the page
+* Configure the Platform Web SDK
 
 >[!NOTE]
 >
@@ -58,7 +58,7 @@ Assume a simple Target implementation with at.js:
 * A prehiding snippet to mitigate flicker
 * The Target at.js library loads asynchronously with default settings to automatically request and render activities:
 
-+++at.js example of an implementation on an HTML page
++++at.js example implementation on an HTML page
 
 ```HTML
 <!doctype html>
@@ -132,7 +132,11 @@ To upgrade Target to use Platform Web SDK, first remove at.js:
 <script src="/libraries/at.js" async></script>
 ```
 
-And replace with the current supported version of Platform Web SDK (alloy.js):
+And replace with either alloy JavsScript library or your tags embed code and the Adobe Experience Platform Web SDK extension:
+
+>[!BEGINTABS]
+
+>[!TAB JavaScript] 
 
 ```HTML
 <!--Platform Web SDK base code-->
@@ -146,12 +150,20 @@ And replace with the current supported version of Platform Web SDK (alloy.js):
 <script src="https://cdn1.adoberesources.net/alloy/2.13.1/alloy.min.js" async></script>
 ```
 
+>[!TAB Tags]
+```HTML
+<!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
+<script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+``` 
+
+In the tag property, add the Adobe Experience Platform Web SDK extension:
+
+![Add the Adobe Experience Platform Web SDK extension](assets/library-tags-addExtension.png){zoomable="yes"}
+
+
+>[!ENDTABS]
+
 The prebuilt standalone version requires a "base code" added directly to the page which creates a global function named alloy. Use this function to interact with the SDK. If you would like to name the global function something else, change the `alloy` name.
-
->[!TIP]
->
-> When using the tags feature (formerly Launch) to implement Web SDK, the alloy.js library is added to the tag library by adding the Adobe Experience Platform Web SDK extension.
-
 
 Refer to the [Installing the Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/installing-the-sdk.html) documentation for additional details and deployment options.
 
@@ -162,9 +174,9 @@ The Platform Web SDK implementation may require a prehiding snippet depending on
 
 ### Asynchronous implementation
 
-Just like with at.js, if the Platform Web SDK library loads asynchronously, the page may finish rendering before Target has performed a content swap. This behavior can lead to what is known as "flicker" where default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, Adobe recommends adding a special prehiding snippet immediately before the asynchronous Platform Web SDK script reference.
+Just like with at.js, if the Platform Web SDK library loads asynchronously, the page may finish rendering before Target has performed a content swap. This behavior can lead to what is known as "flicker" where default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, Adobe recommends adding a special prehiding snippet immediately before the asynchronous Platform Web SDK script reference or tags embed code.
 
-If your implementation is asynchronous like the example above, replace the at.js prehiding snippet with the version below compatible with the Platform Web SDK:
+If your implementation is asynchronous like the examples above, replace the at.js prehiding snippet with the version below compatible with the Platform Web SDK:
 
 ```HTML
 <!--Prehiding snippet for Target with asynchronous Web SDK deployment-->
@@ -185,13 +197,13 @@ The prehiding behavior is controlled by two configurations at the very end of th
 
 * `3000` specifies the timeout in milliseconds for the prehiding. If a response from Target is not received before the timeout, the prehiding style tag is removed. Reaching this timeout should be rare.
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >Be sure to use the correct snippet for the Platform Web SDK since it uses a different style ID of `alloy-prehiding`. If the prehiding snippet for at.js is used, it may not work properly.
 
 ### Synchronous implementation
 
-Adobe recommends implementing the Platform Web SDK asynchronously for the best overall page performance. However, if the library is loaded synchronously, then the prehiding snippet is not required. Instead, the prehiding style is specified in the Platform Web SDK configuration.
+Adobe recommends implementing the Platform Web SDK asynchronously for the best overall page performance. However, if the alloy.js library or tags embed code is loaded synchronously, then the prehiding snippet is not required. Instead, the prehiding style is specified in the Platform Web SDK configuration.
 
 The prehiding style for synchronous implementations can be configured using the [`prehidingStyle`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#prehidingStyle) option. Platform Web SDK configuration is covered in the next section.
 
@@ -240,6 +252,7 @@ alloy("configure", {
 >[!TAB Tags] 
 
 ![configuring the Web SDK tag extension migration options](assets/tags-config-migration.png){zoomable="yes"}
+
 >[!ENDTABS]
 
 The noteworthy configuration options related to Target are outlined below:
@@ -346,9 +359,8 @@ Page code:
     (document, document.location.href.indexOf("mboxEdit") !== -1, ".body { opacity: 0 !important }", 3000);
   </script>
 
-    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <!--Tags Header Embed Code: REPLACE WITH THE INSTALL CODE FROM YOUR OWN ENVIRONMENT-->
     <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
-    <!--/Tags Header Embed Code-->
 </head>
 <body>
   <h1 id="title">Home Page</h1><br><br>
@@ -380,4 +392,4 @@ Next, learn how to [request and apply VEC-based activities](render-vec-activitie
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996).
+>We are committed to helping you be successful with your Target migration from at.js to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
