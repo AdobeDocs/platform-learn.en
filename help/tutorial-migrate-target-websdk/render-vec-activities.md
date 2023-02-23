@@ -1,7 +1,6 @@
 ---
 title: Render VEC Activities | Migrate Target from at.js 2.x to Web SDK
 description: Learn how to retrieve and apply visual experience composer activities with a Web SDK implementation of Adobe Target.
-feature: Visual Experience Composer (VEC),Implement Client-side,APIs/SDKs,at.js,AEP Web SDK, Web SDK,Implementation
 ---
 # Render Adobe Target Visual Experience Composer (VEC) activities
 

@@ -1,6 +1,6 @@
 ---
 title: Migration overview | Migrate Target from at.js 2.x to Web SDK
-description: Learn about the key differences between at.js and Platform Web SDK and how to plan your migration effort.=
+description: Learn about the key differences between at.js and Platform Web SDK and how to plan your migration effort.
 ---
 # Target at.js to Platform Web SDK migration overview
 
