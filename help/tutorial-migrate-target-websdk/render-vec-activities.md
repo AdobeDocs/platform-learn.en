@@ -16,10 +16,6 @@ The Adobe Experience Cloud Visual Editing Helper browser extension for Google Ch
 
 The Visual Editing Helper browser extension works with web sites that use at.js or Platform Web SDK.
 
->[!IMPORTANT]
->
->The new Visual Editing Helper extension replaces the previous [Target VEC Helper browser extension](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). If the older VEC Helper extension is installed, it should be removed or disabled before using the Visual Editing Helper extension.
-
 ### Obtain and install the Visual Editing Helper
 
 1. Navigate to the [Adobe Experience Cloud Visual Editing Helper browser extension in the Chrome Web Store](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
@@ -30,6 +26,10 @@ The Visual Editing Helper browser extension works with web sites that use at.js 
 The Visual Editing Helper is automatically enabled when a website is opened in the Target VEC to power authoring. The extension doesn't have any conditional settings. The extension handles all the settings automatically, including SameSite cookies settings.
 
 Refer to the dedicated documentation for more information about the [Visual Editing Helper extension](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/visual-editing-helper-extension.html) and [troubleshooting the Visual Experience Composer](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/troubleshoot-composer.html).
+
+>[!IMPORTANT]
+>
+>The new [Visual Editing Helper extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca) replaces the previous [Target VEC Helper browser extension](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html). If the older VEC Helper extension is installed, it should be removed or disabled before using the Visual Editing Helper extension.
 
 ## Request and apply content automatically
 

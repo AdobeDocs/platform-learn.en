@@ -1,9 +1,9 @@
 ---
 title: Business Value of Customer AI
 description: This video shows how Customer AI enriches customer profiles with AI-based propensities and empowers customer segmentation and targeting efforts.
-role: User
-solution: Intelligent Services
+solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
+role: User
 kt: 6247
 thumbnail: 40374.jpg
 exl-id: 2dc34425-62e7-4d56-ab13-6855371b1d7d

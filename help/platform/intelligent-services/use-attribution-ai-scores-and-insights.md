@@ -1,9 +1,8 @@
 ---
 title: Use Attribution AI Scores and Insights
 description: Learn how to use the Attribution AI insights page to understand the ROI of marketing channels and campaigns
-role: User
-solution: Intelligent Services
 feature: Attribution AI
+role: User
 kt: 4173
 thumbnail: 32669.jpg
 exl-id: 3e3ede4b-baf4-4118-921a-6661d37f1a33
