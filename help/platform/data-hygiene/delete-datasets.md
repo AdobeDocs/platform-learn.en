@@ -14,8 +14,9 @@ Learn how to schedule dataset deletes using Adobe Experience Platform's Data Hyg
 
 Dataset delete allows data stewards and data engineers to set an expiration date for a dataset. For more information, please visit the [data hygiene documentation](https://experienceleague.adobe.com/docs/experience-platform/hygiene/home.html).
 
+
 >[!VIDEO](https://video.tv.adobe.com/v/345065?quality=12&learn=on)
 
->[!IMPORTANT]
+>[!NOTE]
 >
-> Data hygiene capabilities in Adobe Experience Platform are currently only available for customers of Healthcare Shield or Privacy and Security Shield.
+> All Platform customers can [delete datasets on demand](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/user-guide.html#delete). Scheduling dataset deletes is currently only available for customers of Healthcare Shield or Privacy and Security Shield.
