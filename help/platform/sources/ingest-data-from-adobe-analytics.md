@@ -3,6 +3,7 @@ title: Ingest data using the Adobe Analytics source connector
 description: The Adobe Analytics Source connector allows you to easily stream, map, and filter data from Adobe Analytics into Adobe Experience Platform's Real-Time Customer Profile and Experience data lake.
 role: Data Engineer, Data Architect
 feature: Sources
+last-substantial-update: 2023-02-23
 kt: 3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
