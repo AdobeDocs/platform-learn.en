@@ -24,7 +24,8 @@ doc-type: video
 + Web SDK{#web-sdk}
   + [Overview](web-sdk/overview.md)
   + [Demo](web-sdk/demo.md)
-  + [Implementation Tutorial (with tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
+  + [Implementation tutorial (with tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
+  + [Migrate Target tutorial](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
   + Consent{#consent}
     + [Overview](web-sdk/consent/overview.md)
     + [Set consent values using the Adobe standard](web-sdk/consent/set-consent-adobe.md)

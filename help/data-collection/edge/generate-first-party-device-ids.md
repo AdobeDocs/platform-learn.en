@@ -26,8 +26,13 @@ Here is a quick example of how the functionality works:
 1. Customer's Adobe Experience Platform Web SDK implementation makes a request to the Platform Edge Network, including the FPID in the identity map.
 1. Experience Platform Edge Network receives the FPID and uses it to generate an Experience Cloud ID (ECID).
 1. Platform Web SDK response sends the ECID back to the end-user's browser.
-1. Platform Web SDK uses JavaScript to store the ECID as the `AMCV_` cookie in the end-user's browser.
+1. If the `idMigrationEnabled=true`, Platform Web SDK uses JavaScript to store the ECID as the `AMCV_` cookie in the end-user's browser.
 1. In the event the `AMCV_` cookie expires, the process repeats itself. As long as the same first-party device ID is available, a new `AMCV_` cookie is created with the same ECID value as before.
+
+>[!NOTE]
+>
+>The `idMigrationEnabled` does not need to be set to `true` to use FPID. With `idMigrationEnabled=false` you may not see a `AMCV_` cookie, however, and will need to look for the ECID value in the network response.
+
 
 For this tutorial, a specific example using the PHP scripting language is used to show how to: 
 

@@ -1,9 +1,9 @@
 ---
 title: Use Customer AI Scores and Insights
 description: Learn how to use Customer AI propensity scores and insights to convert and retain customers.
-role: User
-solution: Intelligent Services
+solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
+role: User
 kt: 4171
 thumbnail: 32666.jpg
 exl-id: f3f628ef-223a-48d9-979e-86f038268923

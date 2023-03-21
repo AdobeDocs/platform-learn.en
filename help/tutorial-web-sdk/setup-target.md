@@ -10,6 +10,7 @@ Learn how to implement Adobe Target using Platform Web SDK. Learn how to deliver
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) is the Adobe Experience Cloud application that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, and other digital channels.
 
+
 ## Learning objectives
 
 At the end of this lesson, you will be able to:
@@ -20,6 +21,10 @@ At the end of this lesson, you will be able to:
 * Pass XDM data to Target and understand the mapping to Target parameters
 * Pass custom data to Target such as profile and entity parameters
 * Validate a Target implementation with Platform Web SDK
+
+>[!TIP]
+>
+>See our [Migrate Target from at.js 2.x to Platform Web SDK](/help/tutorial-migrate-target-websdk/introduction.md) tutorial for a step-by-step guide to migrate your existing at.js implementation.
 
 
 ## Prerequisites
@@ -154,7 +159,7 @@ To setup or find Environment IDs, navigate to **Adobe Target** > **[!UICONTROL A
 
 ### Target third-party ID namespace
 
-This optional setting allows you to specify which Identity Symbol to use for the Target Third Party ID. Target only supports profile syncing on a single identity symbol or namespace. For more information, you can refer to the [Real-time profile syncing for mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) section of the Target guide.
+This optional setting allows you to specify which Identity Symbol to use for the Target Third Party ID. Target only supports profile syncing on a single identity symbol or namespace. For more information, you can refer to the [Real-Time profile syncing for mbox3rdPartyId](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html) section of the Target guide.
 
 The Identity Symbols are found in the identities list under **Data Collection** > **[!UICONTROL Customer]** > **[!UICONTROL Identities]**. 
 
@@ -241,7 +246,7 @@ If you set up an activity, you should see your content render on the page. Howev
 
    ![Network call in the Adobe Experience Platform debugger](assets/target-debugger-network.png)
 
-1. Notice that there are keys under `query` > `personalization` and  `decisionScopes` has a value of `__view__`. This scope is the equivalent to Target’s "global mbox". This Platform Web SDK call requested decisions from Target.
+1. Notice that there are keys under `query` > `personalization` and  `decisionScopes` has a value of `__view__`. This scope is the equivalent to Target's "global mbox". This Platform Web SDK call requested decisions from Target.
 
    ![__view__ decisionScope request](assets/target-debugger-view-scope.png)
    
@@ -327,7 +332,7 @@ Now that you have configured the Platform Web SDK to request content for the `ho
    // Send a "display" event 
    alloy("sendEvent", {
       xdm: {
-         eventType: "display",
+         eventType: "propositionDisplay",
          _experience: {
             decisioning: {
                propositions: [

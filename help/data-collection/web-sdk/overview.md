@@ -2,6 +2,7 @@
 title: Adobe Experience Platform Web SDK and Edge Network overview
 description: Learn how Adobe Experience Platform Web SDK and Edge Network allows customers to use one JavaScript library and one beacon to send data to Adobe applications and third-party destinations.
 landing-page-description: Get an overview of Web SDK and Edge Network. 
+short-description: Get an overview of Web SDK and Edge Network. 
 kt: 5205
 thumbnail: 34141.jpg
 exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b

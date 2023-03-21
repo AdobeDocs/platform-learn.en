@@ -1,6 +1,6 @@
 ---
 title: Use machine learning output in segmentation
-description: Learn how Data Science Workspace model outputs can be used in Real-time Customer Profile and segmentation.
+description: Learn how Data Science Workspace model outputs can be used in Real-Time Customer Profile and segmentation.
 role: User
 feature: Data Science Workspace
 kt: 7296
@@ -9,7 +9,7 @@ exl-id: 9a909023-47d2-474a-a562-b60799094b89
 ---
 # Use machine learning output in segmentation
 
-Learn how Data Science Workspace model outputs can be used in Real-time Customer Profile and segmentation.
+Learn how Data Science Workspace model outputs can be used in Real-Time Customer Profile and segmentation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/333711)
 

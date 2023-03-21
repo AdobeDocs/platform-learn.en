@@ -15,9 +15,9 @@ Learn how to request access to Experience Platform Web SDK and configure the per
 
 ## Experience Platform
 
-These features should be available to all Experience Cloud customers, even if you are not a customer of a Platform-based application like Real-time CDP.
+These features should be available to all Experience Cloud customers, even if you are not a customer of a Platform-based application like Real-Time CDP.
 
-* Access to the **default production**, **"Prod"** sandbox (. 
+* Access to the **default production**, **"Prod"** sandbox. 
 * Access to **[!UICONTROL Manage Schemas]** and **[!UICONTROL View Schemas]** under **[!UICONTROL Data Modeling]**
 * Access to **[!UICONTROL Manage Identity Namespaces]** and **[!UICONTROL View Identity Namespaces]** under **[!UICONTROL Identity Management]**
 * Access to **[!UICONTROL Manage Datastreams]** and **[!UICONTROL View Datastreams]** under **[!UICONTROL Data Collection]**

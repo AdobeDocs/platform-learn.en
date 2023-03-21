@@ -48,6 +48,8 @@ where;
 
 ## Create tag rule
 
+In tags, rules are used to execute actions (fire calls) under various conditions. You will use this fist rule to send the XDM object to the Edge Network using Web SDK's [!UICONTROL Send Event] action. Later in this tutorial, you will send different versions of the XDM object based on the type of page the visitor is on. For that reason, you will use rule conditions to exclude those other types of pages.
+
  To create a tag rule:
 
 1. Open the tag property you are using for this tutorial

@@ -53,7 +53,7 @@ First, get the sample data and customize it for your tenant:
 1. Unzip the file, creating a folder called `luma-data` which contains the four data files we will use in this lesson
 1. Open `luma-loyalty.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your own schemas:
     ![Underscore tenant id](assets/ingestion-underscoreTenant.png)
-    
+
 1. Save the updated file
 
 ### Ingest the data
@@ -281,6 +281,7 @@ Many of the Sources have a similar configuration workflow, in which you:
 
 1. You should have already downloaded and unzipped [luma-data.zip](assets/luma-data.zip) into your `Luma Tutorial Assets` folder.
 1. Open `luma-offline-purchases.json` in a text editor and replace all instances of `_techmarketingdemos` with your own underscore-tenant id, as seen in your schemas
+1. Update all of the timestamps so that the events occur in the last month (for example, search for `"timestamp":"2022-06` and replace the year and month)
 1. Choose your preferred cloud storage provider, making sure it is available in the [!UICONTROL Sources] catalog
 1. Upload `luma-offline-purchases.json` to a location in your preferred cloud storage provider
 

@@ -14,7 +14,7 @@ exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
 <!-- 30 min-->
 In this lesson, we will build some segments based on the profile data we ingested in the previous lessons.
 
-Once you have Real-time Customer Profiles, you can create segments of individuals who share similar traits and might respond similarly to marketing strategies. The building blocks of these segments are the XDM fields which you created earlier.
+Once you have Real-Time Customer Profiles, you can create segments of individuals who share similar traits and might respond similarly to marketing strategies. The building blocks of these segments are the XDM fields which you created earlier.
 
 **Data Architects** will need to create segments outside of this tutorial and support their colleagues with this task.
 
