@@ -20,47 +20,32 @@ Personalisation at scale starts with understanding what can be improved, and a r
 
 ### Day 1
 
-10.00 - 10.30: Kickoff & Introductions
 
-10.30 - 11.00: "Customer Journey demo – Art of the possible"
-
-11.00 - 11.45: Whiteboard session: “1-1 personalization, friction hunting, silos, Adobe POV"
-
-11.45 - 12.00: Break
-
-12.00 - 13.00: Whiteboard session: "Solution Architecture breakdown"
-
-13.00 - 14.00: Lunch
-
-14.00 - 15.30: User flow 1: "Acquisition" hands-on exercise
-
-15.30 - 15.45: Break
-
-15.45 - 17.00: User flow 2: "Registration & Onboarding" hands-on exercise
-
-18.00 - 19.00: Experience "Cocktail Making Competition" 
-
-19.00 - 22.00: Enjoy dinner
+10:00: Kickoff 
+10:30: Customer Journey demo: Art of the possible
+11:00: 1-1 personalisation, friction hunting, silos, Adobe POV (whiteboard)
+11:45: Break
+12:00: Solution Architecture breakdown (whiteboard)
+13:00: Lunch
+14:00: Userflow 1 Registration & Onboarding - walkthrough (why-what-how)
+15:30: Break
+16:00: Userflow 2 Blending physical and digital - walkthrough & hands-on / deep dive
+18:00: Break
+18:30: Walk to the restaurant
+19:00: Dinner
 
 ### Day 2
 
-09.00 - 09.30: "Introduction to user Journey based Delivery, Team Structure, Delivery backlog"
-
-09.30 - 09.45: Break
-
-09.45 - 11.15: User flow 4: "Customer Analysis" hands-on exercise
-
-11.15 - 11.30: Break
-
-11.30 - 12.30: "Introduction to user Journey based Delivery, Team Structure, Delivery backlog"
-
-12.30 - 13.30: Lunch
-
-13.30 - 14.30: Personalisation at Scale - How to make it happen
-
-14.30 - 15.00: Conclusion, wrap-up & next steps
-
-15.00: Adjourn
+08:00: Breakfast
+08:30: Introduction to user Journey based Delivery, Team Structure, Delivery backlog
+09.45: Userflow 3 Blending physical and digital - Walkthrough with hands-on exercise
+11.15: Break
+11.30: Userflows wrap up  – (what-where-when)
+12:00: Group Presentations 
+12.30: Lunch
+13.30: Userflow 4: Customer Analysis - deepdive
+14.30: Conclusion, wrap-up & next steps
+15.00: Drinks & adjourn
 
 ## Prerequisites
 

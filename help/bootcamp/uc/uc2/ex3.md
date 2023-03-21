@@ -107,11 +107,11 @@ In the next screen you will be prompted with 3 different methods to provide the 
 - **Code your own**: Create your own email template by coding it using HTML
 - **Import HTML**: Import an existing HTML template, which you'll be able to edit.
 
-Click **Import HTML**.
+Click **Import HTML**. Alternatively, you can click **Saved Templates** and select the template **Bootcamp - Email Template**.
 
 ![Journey Optimizer](./images/msg12.png)
 
-Drag and drop the file **mailtemplatebootcamp.html**, which you can download [here](../../assets/html/mailtemplatebootcamp.html.zip). Click Import.
+If you selected **Import HTML**, you can now drag and drop the file **mailtemplatebootcamp.html**, which you can download [here](../../assets/html/mailtemplatebootcamp.html.zip). Click Import.
 
 ![Journey Optimizer](./images/msg13.png)
 
