@@ -13,7 +13,7 @@ The Profile data is used by other extensions to perform profile-related actions.
 
 >[!IMPORTANT]
 >
->The Profile functionality described in this lesson is separate from the Real-time Customer Profile functionality in Adobe Experience Platform and Platform-based applications.
+>The Profile functionality described in this lesson is separate from the Real-Time Customer Profile functionality in Adobe Experience Platform and Platform-based applications.
 
 
 ## Prerequisites

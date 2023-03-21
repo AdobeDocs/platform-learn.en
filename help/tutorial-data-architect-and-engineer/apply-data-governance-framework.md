@@ -78,7 +78,7 @@ You can create your own policies by selecting the **[!UICONTROL Create policy]**
 
 ## Enforce governance policies
 
-Enforcement of governance policies is obviously a key component to the framework. Enforcement happens downstream when data is activated and sent out of Platform, especially with the Real-time Customer Data Platform, which you may or may not be licensing. Either way, it's out of the scope of this tutorial. But so you're not left hanging, you can learn more about how policies are enforced in this video, which I've queued up to the relevant portion. It will also show you what happens when a policy is violated.
+Enforcement of governance policies is obviously a key component to the framework. Enforcement happens downstream when data is activated and sent out of Platform, especially with the Real-Time Customer Data Platform, which you may or may not be licensing. Either way, it's out of the scope of this tutorial. But so you're not left hanging, you can learn more about how policies are enforced in this video, which I've queued up to the relevant portion. It will also show you what happens when a policy is violated.
 
 >[!VIDEO](https://video.tv.adobe.com/v/33631/?t=151&quality=12&learn=on)
 

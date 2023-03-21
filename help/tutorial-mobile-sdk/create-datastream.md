@@ -56,7 +56,7 @@ Next you can connect your Experience Cloud services to your datastream. When Pla
 >
 >Enabling each of the services that your organization uses ensures data collected in the mobile app can be used everywhere. Find more information about datastream settings please review the documentation [here](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-When implementing Platform Mobile SDK on your own website, you should create three datastreams to map to your three tag environments (development, stage, and production). If you are using Platform Mobile SDK with Platform-based applications such as Adobe Real-time Customer Data Platform or Adobe Journey Optimizer, you should be sure to create those datastreams in the appropriate Platform sandboxes.
+When implementing Platform Mobile SDK on your own website, you should create three datastreams to map to your three tag environments (development, stage, and production). If you are using Platform Mobile SDK with Platform-based applications such as Adobe Real-Time Customer Data Platform or Adobe Journey Optimizer, you should be sure to create those datastreams in the appropriate Platform sandboxes.
 
 Next: **[Configure tags](configure-tags.md)**
 

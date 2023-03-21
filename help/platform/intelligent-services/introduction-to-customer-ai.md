@@ -1,9 +1,9 @@
 ---
 title: Introduction to Customer AI
 description: A high-level overview of how marketers can use Customer AI to generate customer predictions.
-role: User
-solution: Intelligent Services
+solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
+role: User
 kt: 4807
 thumbnail: 32664.jpg
 exl-id: a6a9302f-b9dd-4201-a81e-5c8a2f58b82d

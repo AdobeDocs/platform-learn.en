@@ -55,7 +55,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
   * **[!UICONTROL Identity Management]**&mdash;permission items to manage and view identity namespaces.
   * **[!UICONTROL Data Collection]**&mdash;permission items to manage and view datastreams.
 
-  * If you are the customer of a Platform-based application like Real-time CDP, Journey Optimizer, or Customer Journey Analytics, you should also have:
+  * If you are the customer of a Platform-based application like Real-Time CDP, Journey Optimizer, or Customer Journey Analytics, you should also have:
     * **[!UICONTROL Data Management]**&mdash;permission items to manage and view datasets to complete the _optional Platform exercises_ (requires a license for a Platform-based application ).
     * A development **sandbox** which you can use for this tutorial.
 * For Adobe Analytics, you must know which **report suites** you can use to complete this tutorial.

@@ -117,7 +117,7 @@ Now that we have our namespaces, the next step is to update our schemas to label
 
 ### Label XDM Fields For Primary Identity
 
-Each schema used with Real-time Customer Profile is required to have a primary identity specified. And each record ingested must have a value for that field.
+Each schema used with Real-Time Customer Profile is required to have a primary identity specified. And each record ingested must have a value for that field.
 
 Let's add a primary identity to the `Luma Loyalty Schema`:
 

@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
 ---
 # 4.3 Create a Data View
 
@@ -169,6 +168,8 @@ Next, you'll have to configure a lot of Dimensions and Metrics, as indicated in 
 | Transaction ID | Transaction ID          |         | 
 | URL (web.webPageDetails.URL) | URL          |         | 
 | User Agent | User Agent          | Most Recent, Session         |
+| level | Loyalty Level          |          |
+| points | Customer Lifetime Value          |          |
 
 ### METRICS
 
@@ -272,7 +273,7 @@ You should be redirected to this screen:
 
 ![demo](./images/8-v2.png)
 
-In this tab, you can mofify some important settings to change how data is processed. Let's start by setting the **Session Timeout** to 30 min. Thanks to every experience event's timestamp you can extend the concept of a session across all channels. For instance, what happens if a customer calls the call-center after visiting the website? Using custom Session Timeouts you have loots of flexibility in deciding what a session is, and how that session will merge data together.
+In this tab, you can mofify some important settings to change how data is processed. Let's start by setting the **Session Timeout** to 30 min. Thanks to every experience event's timestamp you can extend the concept of a session across all channels. For instance, what happens if a customer calls the call-center after visiting the website? Using custom Session Timeouts you have lots of flexibility in deciding what a session is, and how that session will merge data together.
 
 ![demo](./images/ext8.png)
 

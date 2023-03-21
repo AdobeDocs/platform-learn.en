@@ -20,6 +20,7 @@ Personalisation at scale starts with understanding what can be improved, and a r
 
 ### Day 1
 
+
 10:00: Kickoff 
 10:30: Customer Journey demo: Art of the possible
 11:00: 1-1 personalisation, friction hunting, silos, Adobe POV (whiteboard)

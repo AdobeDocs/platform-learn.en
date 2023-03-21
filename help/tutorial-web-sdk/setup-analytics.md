@@ -114,7 +114,7 @@ Next, capture additional data from the Luma data layer and send it to the Platfo
 
 ### Create e-commerce data elements
 
-During the Create data elements lesson, you [created JavaScript data elements](create-data-elements.md#create-data-elements-to-capture-the-data-layer) that captured content and identity details. Now you will create additional data elements to capture e-commerce data. Because the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} uses different data layer structures for product detail pages and products in the cart, you must create data elements for each scenario. Use the provided code snippets below:
+During the Create data elements lesson, you [created JavaScript data elements](create-data-elements.md#create-data-elements-to-capture-the-data-layer) that captured content and identity details. Now you will create additional data elements to capture e-commerce data. Because the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} uses different data layer structures for product detail pages and products in the cart, you must create data elements for each scenario. You will have to create some custom code data elements to grab what you need from the Luma data layer, which may or may not be necessary when implementing on your own site. In this case, you need to loop through an array of shopping cart items to grab specific details of each product. Use the provided code snippets below:
 
 1. Open the tag property you are using for the tutorial
 1. Go to **[!UICONTROL Data Elements]**
@@ -549,13 +549,13 @@ In this exercise, you map one XDM variable to a prop so you can view in Real-Tim
 1. Repeat the validation steps and you should see that Real-Time reports populate data accordingly. 
 
     **Page Views**
-    ![Real-time Content](assets/analytics-real-time-content.png)   
+    ![Real-Time Content](assets/analytics-real-time-content.png)   
 
     **Product Views**
-    ![Real-time Product Views](assets/analytics-real-time-prodView.png)   
+    ![Real-Time Product Views](assets/analytics-real-time-prodView.png)   
 
     **Purchases**
-    ![Real-time Purchase](assets/analytics-real-time-purchase.png)   
+    ![Real-Time Purchase](assets/analytics-real-time-purchase.png)   
 
 1. In the Workspace UI, create a table to view the full e-commerce flow of the product you purchased
 

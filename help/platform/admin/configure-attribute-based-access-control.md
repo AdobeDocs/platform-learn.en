@@ -14,6 +14,10 @@ Learn how to configure attribute-based access control to limit access to specifi
 
 >[!VIDEO](https://video.tv.adobe.com/v/345641?quality=12&learn=on)
 
+>[!NOTE]
+>
+> The policy-building feature shown in this video is not fully available, but the default policy in customer accounts is configured similarly to the one shown.
+
 >[!IMPORTANT]
 >
-> Attribute-based access control is currently available in a limited release for US-based healthcare customers. This capability will be available to all Real-time Customer Data Platform customers once it is fully released. Also, the Regulated Health Data label used in this video is only permitted for Healthcare Shield customers.
+> Attribute-based access control is currently available in a limited release for US-based healthcare customers. This capability will be available to all Real-Time Customer Data Platform customers once it is fully released. Also, the Regulated Health Data label used in this video is only permitted for Healthcare Shield customers.

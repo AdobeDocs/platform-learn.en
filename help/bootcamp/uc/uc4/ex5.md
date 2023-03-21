@@ -5,7 +5,6 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
-exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
 ---
 # 4.5 Visualization using Customer Journey Analytics
 
@@ -25,7 +24,7 @@ Let's use the project you created in [4.4 Data Preparation in Analysis Workspace
 
 Open your project `yourLastName - Omnichannel Analysis`.
 
-With your project opened and the Data View `yourLastName - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
+With your project opened and the Data View `CJA Bootcamp - Omnichannel Data View` selected, you're ready to start building your first visualizations.
 
 ![demo](./images/prodataView1.png)
 
@@ -35,7 +34,7 @@ First of all, we need to select the right dates to analyze the data. Go to the c
 
 >[!IMPORTANT]
 >
->Please select a date range like **This Week** or **This Month**. Most recent available data has been ingested on September 19, 2022.
+>The most recently available data has been ingested on 19/09/2022, please select a date range that includes this date.
 
 ![demo](./images/pro1.png)
 
@@ -71,9 +70,9 @@ Next, click **Lock Selection** and select **Selected Items** to lock this visual
 
 ![demo](./images/pro7b.png)
 
-## Top 5 Products Viewed
+## Top 4 Products Viewed
 
-What are the top 5 products viewed?
+What are the top 4 products viewed?
 
 Remember to save project every now and then.
 
@@ -82,7 +81,7 @@ Remember to save project every now and then.
 | Windows | Control + S          | 
 | Mac | Command + S          |
 
-Let's start finding the top 5 products viewed. In the left side menu, find the **Product Name** - Dimension.
+Let's start finding the top 4 products viewed. In the left side menu, find the **Product Name** - Dimension.
 
 ![demo](./images/pro8.png)
 
@@ -96,7 +95,7 @@ Next, try to breakdown one of the products by Brand Name. Search for **brandName
 
 ![demo](./images/pro13.png)
 
-Next, do a breakdown using the User Agent. Search for **User Agent** and drag it under the brand name.
+Next, do a breakdown using the loyalty level. Search for **Loyalty Level** and drag it under the brand name.
 
 ![demo](./images/pro15.png)
 
@@ -108,7 +107,7 @@ Finally you can add more visualizations. On the left side, under visualizations,
 
 ![demo](./images/pro18.png)
 
-Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**. While selecting the 5 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
+Next, in the Table, select the 3 **Loyalty Level**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
 
 ![demo](./images/pro20.png)
 
@@ -148,7 +147,7 @@ Click the visualization **Fallout**.
 
 Select the same date range as in the previous exercise.
 
-![demo](./images/prodatef.png)
+![demo](./images/pro1.png)
 
 You'll then see this.
 
@@ -210,7 +209,7 @@ You'll then see this:
 
 Select the same date range as in the previous exercise.
 
-![demo](./images/pro0b.png)
+![demo](./images/pro1.png)
 
 Find the dimension **Page Name** under the components on the left side:
 
@@ -291,7 +290,7 @@ Now add a new blank panel by clicking on **+ Add Blank Panel**.
 
 Select the same date range as in the previous exercise.
 
-![demo](./images/pro24d.png)
+![demo](./images/pro1.png)
 
 Click on **Freeform table**.
 

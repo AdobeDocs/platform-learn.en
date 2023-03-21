@@ -9,20 +9,6 @@ exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 
 Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences. Use these videos and tutorials to learn the many components of Experience Platform.
 
-
-<div id="whats-new-section">
-
-## What's new
-
-* **[Configure attribute-based access control (video)](admin/configure-attribute-based-access-control.md)**
-    *Limit access to specific resources*
-* **[Data Hygiene overview (Video)](/help/platform/data-hygiene/overview.md)**
-    *Improve your data minimization practices*
-* **[Delete datasets (Video)](/help/platform/data-hygiene/delete-datasets.md)**
-    *Set time-to-live for datasets*
-
-</div>
-
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
 <div id="recs-overview-body-3"></div>
@@ -34,7 +20,7 @@ Adobe Experience Platform is the most powerful, flexible, and open system on the
 
 ## Staff picks
 
-<table style="margin-top: 0">
+<table style="margin-top: 0 !important">
 <tr>
   <td>
     <a href="intro-to-platform/a-customer-experience-powered-by-experience-platform.md">

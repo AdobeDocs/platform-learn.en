@@ -47,7 +47,7 @@ In this lesson, you will:
 
     >[!NOTE]
     >
-    > Customers of Platform-based applications like Real-time CDP should use a development sandbox for this tutorial. Other customers will use the default production sandbox.
+    > Customers of Platform-based applications like Real-Time CDP should use a development sandbox for this tutorial. Other customers will use the default production sandbox.
 
 
 1. Select **[!UICONTROL Schemas]** under **[!UICONTROL Data Management]**.

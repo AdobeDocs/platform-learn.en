@@ -29,7 +29,7 @@ In this lesson, you will:
 
 Confirm that your organization has access to Assurance by completing the following steps:
 
-1. Visit [https://experience.adobe.com/griffon](https://experience.adobe.com/griffon){target="_blank"}
+1. Visit [https://experience.adobe.com/#/assurance](https://experience.adobe.com/griffon){target="_blank"}
 1. Log in using your Adobe ID credentials for the Experience Cloud.
 1. If you are brought to the **[!UICONTROL Sessions]** screen, then you have access. If you are brought to the beta access page, select **[!UICONTROL Register]**.
 

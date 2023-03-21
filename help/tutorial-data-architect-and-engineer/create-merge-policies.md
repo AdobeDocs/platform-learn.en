@@ -128,13 +128,13 @@ In the profile search, change the merge policy used back to `Default Timebased` 
 
 ![Viewing a profile with a different merge policy](assets/mergepolicies-backToDanny.png)
 
-What is going on here? Well, profile merging is not a one time thing. Real-time customer profiles are assembled on the fly, based on various factors, including which merge policy is used. You can create multiple merge policies to use in different contexts, depending on which view of the customer you want.
+What is going on here? Well, profile merging is not a one time thing. Real-Time customer profiles are assembled on the fly, based on various factors, including which merge policy is used. You can create multiple merge policies to use in different contexts, depending on which view of the customer you want.
 
 A key use case for merge policies is for data governance. For example, say you ingest third-party data into Platform which cannot be used for personalization use cases, but _can_ be used for advertising use cases. You can create a merge policy that excludes this third-party dataset and use this merge policy to build segments for your advertising use cases.
 
 ## Additional Resources
 
 * [Merge Policies documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/merge-policies/overview.html)
-* [Merge Policies API (part of Real-time Customer Profile API) reference](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
+* [Merge Policies API (part of Real-Time Customer Profile API) reference](https://www.adobe.io/experience-platform-apis/references/profile/#tag/Merge-policies)
 
 Now let's move on to the [data governance framework](apply-data-governance-framework.md).
