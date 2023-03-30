@@ -153,7 +153,6 @@ Now you can prepare and import the data into your Platform sandbox. The Postman 
     * `2-Luma-CRM-Data.postman_collection.json` creates a schema and populated dataset for CRM data of customers. The schema is based on XDM Individual Profile class that comprises Demographic Details, Personal Contact Details, Preference Details and a custom identity field group. 
     * `3-Luma-Product-Catalog.postman_collection.json` creates a schema and populated dataset for product catalog information. The schema is based on a custom product catalog class and uses a custom product catalog field group.
     * `4-Luma-Offline-Purchase-Events.postman_collection.json` creates a schema and populated dataset for offline purchase event data of customers. The schema is based on XDM ExperienceEvent class and comprises a custom identity and Commerce Details field groups.
-
     * `5-Luma-Product-Inventory-Events.postman_collection.json` creates a schema and populated dataset for events related to products going in and out of stock. The schema is based on a custom business event class and a custom field group.
     * `6-Luma-Test-Profiles.postman_collection.json` creates a schema and populated dataset with test profiles to use in Adobe Journey Optimizer
     * `7-Luma-Web-Events.postman_collection.json` creates a schema and populated dataset with simple historical web data.
@@ -166,7 +165,12 @@ The sample data has been designed so that when the collections have run, Real-Ti
 1. Go to **[!UICONTROL Profiles]** > **[!UICONTROL Browse]**
 1. Select `Luma Loyalty Id` as the **[!UICONTROL Identity namespace]**
 1. Search for `5625458` as the **[!UICONTROL Identity value]**
-1. Open the `Danny Wright` profile
+1. Open the `Daniel Wright` profile
+
+>[!TIP]
+>
+>If you don't see the profile, check the [!UICONTROL Datasets] page to confirm that all of the datasets were successfully created and ingested data. If that looks good, wait fifteen minutes and see if the profile is available in the viewer.  If there were issues with the data ingestion, check the error messages to try to locate the issue. You can also try to enable error diagnostics on the [!UICONTROL Datasets] page and drag-and-drop the json data file to re-ingest the data.
+
 
 ![Opening a profile](../assets/data-generator/images/validation-profile-open.png)
 
