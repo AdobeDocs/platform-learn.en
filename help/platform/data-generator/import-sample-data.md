@@ -19,7 +19,7 @@ This tutorial focuses on a fictional, retail brand called Luma. They invest in A
 
 >[!NOTE]
 >
->The end-result of this tutorial is a sandbox containing the same sample data as the [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html).
+>The end-result of this tutorial is a sandbox containing similar data to the [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). It was updated in April 2023 to support the [Journey Optimizer challenges](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html).
 
 
 ## Prerequisites
@@ -42,8 +42,8 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
     >User data contained in the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file is fictitious and is to be used for demonstration purposes only.
 
 1. From your downloads folder, move the `platform-utils-main.zip` file to the desired location on your computer, and unzip it.
-1. In the `luma-data` folder, open all of the `json` files in a text editor and replace all instances of `_techmarketingdemos` with your own tenant id, preceded by an underscore.
-1. Open `luma-offline-purchases.json` in a text editor and update all of the timestamps so that the events occur in the last month (for example, search for `"timestamp":"2022-06` and replace the year and month)
+1. In the `luma-data` folder, open all of the `json` files in a text editor and replace all instances of `_yourOrganizationID` with your own tenant id, preceded by an underscore.
+1. Open `luma-offline-purchases.json` and `luma-web-events.json` in a text editor and update all of the timestamps so that the events occur in the last month (for example, search for `"timestamp":"2022-11` and replace the year and month)
 1. Note the location of the unzipped folder, as you need it later when setting up the `FILE_PATH` Postman environment variable:
 
     >[!NOTE]
@@ -106,6 +106,9 @@ Next you need to import the collections into Postman.
     * `2-Luma-CRM-Data.postman_collection.json`
     * `3-Luma-Product-Catalog.postman_collection.json`
     * `4-Luma-Offline-Purchase-Events.postman_collection.json`
+    * `5-Luma-Product-Inventory-Events.postman_collection.json`
+    * `6-Luma-Test-Profiles.postman_collection.json`
+    * `7-Luma-Web-Events.postman_collection.json`
 
     ![Collections Import](../assets/data-generator/images/collection-files.png)
 
@@ -151,6 +154,11 @@ Now you can prepare and import the data into your Platform sandbox. The Postman 
     * `3-Luma-Product-Catalog.postman_collection.json` creates a schema and populated dataset for product catalog information. The schema is based on a custom product catalog class and uses a custom product catalog field group.
     * `4-Luma-Offline-Purchase-Events.postman_collection.json` creates a schema and populated dataset for offline purchase event data of customers. The schema is based on XDM ExperienceEvent class and comprises a custom identity and Commerce Details field groups.
 
+    * `5-Luma-Product-Inventory-Events.postman_collection.json` creates a schema and populated dataset for events related to products going in and out of stock. The schema is based on a custom business event class and a custom field group.
+    * `6-Luma-Test-Profiles.postman_collection.json` creates a schema and populated dataset with test profiles to use in Adobe Journey Optimizer
+    * `7-Luma-Web-Events.postman_collection.json` creates a schema and populated dataset with simple historical web data.
+
+
 ## Validation
 
 The sample data has been designed so that when the collections have run, Real-Time Customer Profiles are built that combine data from multiple systems. A good example of this is the first record of the loyalty, CRM, and offline purchase datasets. Look up that profile to confirm the data was ingested. In the [Adobe Experience Platform interface](https://platform.adobe.com/):
@@ -166,6 +174,8 @@ By browsing through the data in the **[!UICONTROL Attributes]** and **[!UICONTRO
 ![Event data from the Offline Purchase events file](../assets/data-generator/images/validation-profile-events.png)
 
 ## Next steps
+
+If you would like to learn about Adobe Journey Optimizer, this sandbox contains everything you need to take the [Journey Optimizer challenges](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html)
 
 If you would like to learn about merge policies, data governance, query service, and the segment builder, jump over to [lesson 11 in the Getting Started for Data Architects and Data Engineers tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/create-merge-policies.html?lang=en). The earlier lessons of this other tutorial have you manually build everything that was just populated by these Postman collections--enjoy the head start! 
 
