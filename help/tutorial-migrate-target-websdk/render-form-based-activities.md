@@ -1,6 +1,7 @@
 ---
 title: Migrate Target from at.js 2.x to Web SDK
 description: Learn how to migrate an Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK. Topics include library overview, implementation differences, and other noteworthy callouts.
+exl-id: 43b9ae91-4524-4071-9eb4-12a0a8aec242
 ---
 # Render Target activities that use the form-based composer
 

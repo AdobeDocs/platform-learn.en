@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 51078fca-f234-4e50-96ba-ee7f5e286869
 ---
 # 4.2 Conecte datasets da Adobe Experience Platform no Customer Journey Analytics
 

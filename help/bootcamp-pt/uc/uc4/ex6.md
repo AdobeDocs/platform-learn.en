@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+exl-id: 28b87e21-3168-447e-9a93-a6ae7e969657
 ---
 # 4.6 Dos insights à ação
 

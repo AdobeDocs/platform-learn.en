@@ -5,6 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: d486d1aa-7b8e-4301-91e6-4c84fba0c72a
 ---
 # 2.3 Crie sua jornada e mensagem de e-mail
 

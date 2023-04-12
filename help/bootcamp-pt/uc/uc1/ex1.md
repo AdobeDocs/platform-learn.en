@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: 853a69d2-5dac-413d-bb40-ef29604a26ae
 ---
 # 1.1 Do desconhecido ao conhecido em nosso site
 

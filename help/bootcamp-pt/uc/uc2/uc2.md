@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+exl-id: 21ca2a7a-fdf2-4cdf-97df-13c4e208d2ea
 ---
 # 2. Objetivos de aprendizado 
 

@@ -1,6 +1,7 @@
 ---
 title: Comparison of at.js 2.x to Web SDK | Migrate Target from at.js 2.x to Web SDK
 description: Learn about the differences between at.js 2.x and Platform Web SDK including features, functions, settings, and data flow.
+exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
 ---
 # Comparison of at.js to Platform Web SDK
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: 1b9d7a35-cddf-4f4a-ad0a-95723b00c278
 ---
 # 2.2 Crie seu evento
 

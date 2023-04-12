@@ -1,6 +1,7 @@
 ---
 title: Update audiences and profile scripts | Migrate Target from at.js 2.x to Web SDK
 description: Learn how to update Adobe Target audiences and profile scripts for compatibility with Experience Platform Web SDK.
+exl-id: 2c0f85f7-6e8c-4d0b-8ed5-53897d06e563
 ---
 # Update Target audiences and profile scripts for Platform Web SDK compatibility
 

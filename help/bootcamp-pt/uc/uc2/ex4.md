@@ -5,6 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: 674a9baa-5900-405e-b744-ea211f60a16d
 ---
 # 2.4 Teste sua jornada
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: c71f6789-25cd-4fac-b026-e981744dbe95
 ---
 # 2.1 Visite o site e crie sua conta
 

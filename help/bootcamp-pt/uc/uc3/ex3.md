@@ -5,6 +5,7 @@ kt: 5342
 audience: developer
 doc-type: tutorial
 activity: develop
+exl-id: a4ef6eaf-6b39-4450-82bf-7db99595a323
 ---
 # 3.3 Crie sua jornada e notificação push
 
