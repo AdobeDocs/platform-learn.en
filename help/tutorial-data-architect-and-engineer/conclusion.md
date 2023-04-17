@@ -45,8 +45,4 @@ The key resources:
 * [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
 * [Experience League courses](https://experienceleague.adobe.com/#dashboard/learning)
 
-Here is another tutorial which you can review to learn more about connections to third-party applications:
-
-* [Comprehensive Technical Tutorial for Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
-
 Thanks for your efforts and good luck on your journey with Adobe Experience Platform!
