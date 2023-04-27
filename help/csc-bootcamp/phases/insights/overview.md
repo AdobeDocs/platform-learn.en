@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Insights - Overview
 description: CSC Bootcamp - Insights - Overview
 doc-type: multipage-overview
+exl-id: e9cae8d6-0c0d-4f7b-bf9d-6e2025827452
 ---
 # Insights: Overview
 

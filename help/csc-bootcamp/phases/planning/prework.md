@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Other pre-work
 description: CSC Bootcamp - Other pre-work
 doc-type: multipage-overview
+exl-id: fa099fec-97e7-4279-b0e8-2e2d902ce914
 ---
 # Other pre-work
 

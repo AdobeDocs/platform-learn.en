@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Content Supply Chain in 4 phases
 description: Although it can be challenging to keep up with the rising demand for content, you can plan, produce, and deliver content quickly and easily with a well-designed content supply chain.
 doc-type: multipage-overview
+exl-id: f217db2b-86e5-42bc-8574-c8093987d900
 ---
 # Content Supply Chain in 4 phases
 

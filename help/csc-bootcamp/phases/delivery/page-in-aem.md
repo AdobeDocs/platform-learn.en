@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Create page in AEM
 description: CSC Bootcamp - Create page in AEM
 doc-type: multipage-overview
+exl-id: eecb1125-3099-42e7-a75b-ee37b341742c
 ---
 # Create page in AEM
 

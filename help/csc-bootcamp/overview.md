@@ -2,6 +2,7 @@
 title: Experience Makers Content Supply Chain Bootcamp
 description: Starting point for participants of the Experience Makers Content Supply Chain Bootcamp
 doc-type: multipage-overview
+exl-id: 18579eff-6d5a-44bc-89f3-f4fbe41dbeee
 ---
 # Experience Makers Content Supply Chain Bootcamp
 

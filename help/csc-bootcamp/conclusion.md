@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Conclusion
 description: CSC Bootcamp - Conclusion
 doc-type: multipage-overview
+exl-id: 97533541-8757-492a-9784-7155da998767
 ---
 # Conclusion
 

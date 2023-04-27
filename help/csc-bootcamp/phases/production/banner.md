@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Create product homepage banner
 description: CSC Bootcamp - Create product homepage banner
 doc-type: multipage-overview
+exl-id: a0d8e7e0-6645-4074-b0af-17644d5e72de
 ---
 # Create product homepage banner
 
