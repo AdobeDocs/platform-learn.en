@@ -20,6 +20,12 @@ doc-type: video
   + [Basic architecture](/help/platform/intro-to-platform/basic-architecture.md)
   + [Using the Platform user interface](/help/platform/intro-to-platform/interface-tour.md)
   + [Roles and project phases](/help/platform/intro-to-platform/roles-and-project-phases.md)
++ Introduction to Real-Time CDP {#rtcdp}
+    + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
+    + [End-to-end demo](/help/platform/rtcdp/demo.md)
+    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
+    + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
+    + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
@@ -40,6 +46,7 @@ doc-type: video
   + [Create data usage policies](/help/platform/governance/create-data-usage-policies.md)
   + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies.md)
   + [Enforce consent](/help/platform/governance/enforce-consent.md)
+  + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Data Hygiene {#data-hygiene}
   + [Delete datasets](/help/platform/data-hygiene/delete-datasets.md)
 + Data Ingestion {#data-ingestion}
@@ -172,18 +179,6 @@ doc-type: video
   + [Ingest data from databases](/help/platform/sources/ingest-data-from-databases.md)
   + [Stream data with HTTP API](/help/platform/sources/streaming-ingestion-http-api.md)
   + [Stream data using Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
-+ Application Services {#application-services}
-  + [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
-  + [Journey Orchestration tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
-  + [Offer Decisioning tutorials](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target="_blank"}
-  + Real-Time CDP tutorials{#rtcdp}
-    + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
-    + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
-    + [End-to-end demo](/help/platform/rtcdp/demo.md)
-    + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
-    + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-    + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
-    + [Enforce Data Usage Policies](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
 + Intelligent Services {#intelligent-services}
   + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
   + [Attribution AI overview](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
