@@ -14,6 +14,6 @@ Learn how to configure the Adobe Target destination in Real-Time Customer Data P
 
 >[!IMPORTANT]
 >
->With the beta release of the enhanced Adobe Target V2 destination connector, you might be seeing two Adobe Target cards in the destinations catalog. The Adobe Target V2 destination connector is currently in beta and only available to a select number of customers. 
+>With the beta release of the enhanced Adobe Target V2 destination connector, you might be seeing two Adobe Target cards in the destinations catalog. The Adobe Target V2 destination connector is in beta and only available to a select number of customers. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on)

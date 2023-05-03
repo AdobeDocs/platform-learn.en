@@ -46,7 +46,7 @@ doc-type: video
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
   + [Create and populate a dataset](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
-  + [Map a CSV file to XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-a-csv-file.html){target="_blank"}
+  + [Map a CSV file to XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
   + [Sources overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
   + [Ingest data from Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
   + [Ingest data from Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
@@ -86,13 +86,23 @@ doc-type: video
   + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
   + Adobe Target and Custom Personalization{#target}
     + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-    + [Configure the Adobe Target destination](configure-the-target-destination.md)
-    + [Share segments and profile attributes](destinations/target/share-segments-and-profile-attributes.md)
+    + [Configure the Adobe Target destination](/help/platform/destinations/target/configure-the-target-destination.md)
+    + [Activate segments and profile attributes](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
   + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
++ Intelligent Services {#intelligent-services}
+  + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
+  + [Attribution AI overview](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
+  + [Attribution AI value](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
+  + [Configure Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
+  + [Use Attribution AI Scores and Insights](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
+  + [Customer AI overview](/help/platform/intelligent-services/introduction-to-customer-ai.md)
+  + [Customer AI value](/help/platform/intelligent-services/business-value-of-customer-ai.md)
+  + [Configure Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
+  + [Use Customer AI Scores and Insights](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
 + Monitoring {#monitoring}
   + [Monitor data ingestion](/help/platform/monitoring/monitoring-dashboard.md)
   + [Monitor segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
@@ -178,7 +188,7 @@ doc-type: video
 + Application Services {#application-services}
   + [Customer Journey Analytics tutorials](https://experienceleague.adobe.com/docs/customer-journey-analytics-learn/tutorials/overview.html){target="_blank"}
   + [Journey Orchestration tutorials](https://experienceleague.adobe.com/docs/journey-orchestration-learn/tutorials/overview.html){target="_blank"}
-  + [Offer Decisioning tutorials](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management-configuration/introduction-to-offer-decisioning.html){target="_blank"}
+  + [Offer Decisioning tutorials](https://experienceleague.adobe.com/docs/journey-optimizer-learn/tutorials/decision-management/introduction-to-decision-management.html){target="_blank"}
   + Real-Time CDP tutorials{#rtcdp}
     + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
     + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
@@ -187,16 +197,7 @@ doc-type: video
     + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
     + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/rtcdp/integrate-with-iab-transparency-and-consent-framework-2.md)
     + [Enforce Data Usage Policies](https://experienceleague.adobe.com/docs/platform-learn/tutorials/data-governance/enforce-data-usage-policies.html)
-+ Intelligent Services {#intelligent-services}
-  + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
-  + [Attribution AI overview](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
-  + [Attribution AI value](/help/platform/intelligent-services/business-value-of-attribution-ai.md)
-  + [Configure Attribution AI](/help/platform/intelligent-services/configure-attribution-ai.md)
-  + [Use Attribution AI Scores and Insights](/help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md)
-  + [Customer AI overview](/help/platform/intelligent-services/introduction-to-customer-ai.md)
-  + [Customer AI value](/help/platform/intelligent-services/business-value-of-customer-ai.md)
-  + [Configure Customer AI](/help/platform/intelligent-services/configure-customer-ai.md)
-  + [Use Customer AI Scores and Insights](/help/platform/intelligent-services/use-customer-ai-scores-and-insights.md)
+
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
   + [Orchestrate campaigns with Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
