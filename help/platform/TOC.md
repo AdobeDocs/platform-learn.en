@@ -84,7 +84,10 @@ doc-type: video
   + [Configure the Marketo destination](/help/platform/destinations/configure-the-marketo-destination.md)
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
-  + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+  + Adobe Target and Custom Personalization{#target}
+    + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+    + [Configure the Adobe Target destination](configure-the-target-destination.md)
+    + [Share segments and profile attributes](destinations/target/share-segments-and-profile-attributes.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
