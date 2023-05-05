@@ -92,7 +92,7 @@ doc-type: video
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
   + Adobe Target and Custom Personalization{#target}
-    + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
+    + [Next-hit personalization with Adobe Target](/help/platform/experience-cloud/next-hit-personalization.md)
     + [Configure the Adobe Target destination](/help/platform/destinations/target/configure-the-target-destination.md)
     + [Activate segments and profile attributes](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
     + [Use Real-Time CDP segments in Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
@@ -197,7 +197,7 @@ doc-type: video
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
   + [Orchestrate campaigns with Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
-  + [Next-hit personalization with Adobe Target](/help/platform/experience-cloud/next-hit-personalization.md)
+  + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Industry Trends {#industry}
   + [The Future of Data Management and the Changing Environment](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
   + [A Tale of Two Perceptions - Brands vs. Consumers](/help/platform/industry/brands-vs-consumers.md)
