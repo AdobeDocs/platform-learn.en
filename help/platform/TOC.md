@@ -95,6 +95,7 @@ doc-type: video
     + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
     + [Configure the Adobe Target destination](/help/platform/destinations/target/configure-the-target-destination.md)
     + [Activate segments and profile attributes](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
+    + [Use Real-Time CDP segments in Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
