@@ -92,7 +92,7 @@ doc-type: video
   + [Configure file-based cloud storage or email marketing destinations](/help/platform/destinations/configuring-file-based-cloud-storage-or-email-marketing-destinations.md)
   + [Configure a social destination](/help/platform/destinations/configure-a-social-destination.md)
   + Adobe Target and Custom Personalization{#target}
-    + [Next-hit personalization with Adobe Target](/help/platform/experience-cloud/next-hit-personalization.md)
+    + [Next-hit personalization with Adobe Target](/help/platform/destinations/target/next-hit-personalization.md)
     + [Configure the Adobe Target destination](/help/platform/destinations/target/configure-the-target-destination.md)
     + [Activate segments and profile attributes](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
     + [Use Real-Time CDP segments in Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
@@ -193,7 +193,7 @@ doc-type: video
   + [Ingest data from databases](/help/platform/sources/ingest-data-from-databases.md)
   + [Stream data with HTTP API](/help/platform/sources/streaming-ingestion-http-api.md)
   + [Stream data using Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
-
+  + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud Integrations {#experience-cloud}
   + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
   + [Orchestrate campaigns with Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/application-services/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
