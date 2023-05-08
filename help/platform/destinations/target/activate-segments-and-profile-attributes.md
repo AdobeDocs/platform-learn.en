@@ -1,6 +1,6 @@
 ---
 title: How do I share segments and profile attributes from Adobe Real-time CDP to Adobe Target?
-description: Missing description
+description: Learn how to share segments and profile attributes from Adobe Real-Time Customer Data Platform to Adobe Target to display real-time personalized content in your websites, mobile apps, and other digital properties.
 feature: Destinations
 role: User
 level: Intermediate
