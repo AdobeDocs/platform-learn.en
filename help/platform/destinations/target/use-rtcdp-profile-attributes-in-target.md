@@ -1,5 +1,5 @@
 ---
-title: How do I use Real-time CDP profile attributes in Adobe Target?
+title: How do I use Real-Time CDP profile attributes in Adobe Target?
 description: Learn how to use Real-Time Customer Data Platform profile attributes in Adobe Target to deliver personalized experiences on your website and mobile apps.
 feature-set: Experience Platform, Target
 feature: Destinations, Profiles, Integrations
@@ -11,7 +11,7 @@ last-substantial-update: 2023-05-19
 jira: KT-13142
 ---
 
-# Use Real-time CDP profile attributes in Adobe Target
+# Use Real-Time CDP profile attributes in Adobe Target
 
 Learn how to use Adobe Real-Time Customer Data Platform profile attributes in Adobe Target to deliver personalized experiences on your website and mobile apps. For more information, see [the documentation](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html). 
 
