@@ -17,6 +17,6 @@ Learn how to use Adobe Real-Time Customer Data Platform profile attributes in Ad
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419318/?learn=on)
 
->[!NOTE]
+>[!IMPORTANT]
 >
 >The Real-Time CDP profile attributes feature is in beta and only available to a select number of customers.
