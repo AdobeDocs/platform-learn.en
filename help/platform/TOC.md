@@ -96,6 +96,7 @@ doc-type: video
     + [Configure the Adobe Target destination](/help/platform/destinations/target/configure-the-target-destination.md)
     + [Activate segments and profile attributes](/help/platform/destinations/target/activate-segments-and-profile-attributes.md)
     + [Use Real-Time CDP segments in Target](/help/platform/destinations/target/use-rtcdp-segments-in-target.md)
+    + [Use Real-Time CDP profile attributes in Target](/help/platform/destinations/target/use-rtcdp-profile-attributes-in-target.md)
   + [Activate data to non-Adobe applications webinar](/help/platform/destinations/activate-data-to-non-adobe-applications.md)
 + Identities {#identities}
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
