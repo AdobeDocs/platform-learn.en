@@ -42,7 +42,7 @@ doc-type: video
 + Data Governance {#data-governance}
   + [Overview](/help/platform/governance/understanding-data-governance.md)
   + [End-to-end demo](/help/platform/governance/introduction-to-data-governance.md)
-  + [Classify data using governance labels](/help/platform/governance/classify-data-using-governance-labels.md)
+  + [Classify data using labels](/help/platform/governance/classify-data-using-labels.md)
   + [Create data usage policies](/help/platform/governance/create-data-usage-policies.md)
   + [Enforce data usage policies](/help/platform/governance/enforce-data-usage-policies.md)
   + [Enforce consent](/help/platform/governance/enforce-consent.md)
