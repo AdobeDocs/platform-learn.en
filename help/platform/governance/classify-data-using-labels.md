@@ -4,6 +4,7 @@ description: Learn how to apply labels to your schemas and datasets.
 role: Data Architect
 feature: Data Governance, Consent, Access Control
 kt: 3992
+last-substantial-update: 2023-05-24
 thumbnail: 29709.jpg
 exl-id: 96ef86eb-458a-4fc3-a62a-b3d5202942c8
 ---
