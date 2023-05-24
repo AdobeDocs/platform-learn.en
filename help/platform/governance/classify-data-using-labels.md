@@ -1,6 +1,6 @@
 ---
 title: Classify data using labels
-description: Learn how to apply labels to your datasets.
+description: Learn how to apply labels to your schemas and datasets.
 role: Data Architect
 feature: Data Governance, Consent, Access Control
 kt: 3992
