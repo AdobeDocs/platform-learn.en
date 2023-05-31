@@ -19,8 +19,4 @@ As you reconfigure your processes and personnel to move from Adobe Audience Mana
 >
 >Please watch the [April 28, 2022 episode of Experience League LIVE](https://experienceleague.adobe.com/docs/experience-league-live-events/events/episodes/exl-live-episode-04-28-22.html) where this is discussed in detail.
 
->[!INFO]
->
-> This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
-
 For more information, please see the [Audience Manager source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/audience-manager.html).

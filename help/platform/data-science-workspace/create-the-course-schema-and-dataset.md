@@ -16,8 +16,4 @@ Learn how to create the Data Science Workspace course dataset and schema that ar
 
 >[!VIDEO](https://video.tv.adobe.com/v/333312?quality=12&learn=on)
 
->[!INFO]
->
-> This video is part of a course, [Getting Started with Data Science Workspace for Data Scientists](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.1.dsw), available for free on Experience League!
-
 For more information, please visit the [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).

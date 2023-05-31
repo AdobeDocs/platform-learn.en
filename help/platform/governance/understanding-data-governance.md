@@ -13,8 +13,4 @@ Learn how to take complete control over your data from the point it's collected 
 
 >[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
 
->[!INFO]
->
-> This video is part of a course, [Getting Started with Adobe Experience Platform Data Governance](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.dgov.gs), available for free on Experience League!
-
 

@@ -12,8 +12,4 @@ Learn about how Experience Platform integrates with Experience Cloud application
 
 >[!VIDEO](https://video.tv.adobe.com/v/32553?quality=12&learn=on)
 
->[!INFO]
->
-> This video is part of a course [Introduction to Adobe Experience Platform](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1), available for free on Experience League!
-
 

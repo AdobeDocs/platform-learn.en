@@ -14,10 +14,6 @@ This video shows how to stream data in real-time from a cloud storage source to 
 
 >[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
 
->[!INFO]
->
-> This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
-
 ## Additional Resources
 
 * [Create an Amazon Kinesis source connection in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/cloud-storage/kinesis.html)

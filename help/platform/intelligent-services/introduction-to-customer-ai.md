@@ -14,8 +14,4 @@ A high-level overview of how marketers can use Customer AI to generate customer 
 
 >[!VIDEO](https://video.tv.adobe.com/v/32664?quality=12&learn=on)
 
->[!INFO]
->
-> This video is part of a course, [Getting Started with Intelligent Services for Marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), available for free on Experience League!
-
 For  more information, please visit the [Customer AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)
