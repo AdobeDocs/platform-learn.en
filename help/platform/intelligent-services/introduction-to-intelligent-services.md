@@ -14,8 +14,4 @@ A high-level introduction to Intelligent Services, which empower marketing analy
 
 >[!VIDEO](https://video.tv.adobe.com/v/32654?quality=12&learn=on)
 
->[!INFO]
->
-> This video is part of a course, [Getting Started with Intelligent Services for Marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1.intelligentservices), available for free on Experience League!
-
 For  more information, please visit the [Intelligent Services documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/home.html)

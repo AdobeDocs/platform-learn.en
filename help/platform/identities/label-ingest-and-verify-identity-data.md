@@ -13,7 +13,3 @@ Learn how to label data fields as identities, ingest identity data, and verify t
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28167?quality=12&learn=on)
-
->[!INFO]
->
-> This video is part of a course, [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), available for free on Experience League!

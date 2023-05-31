@@ -25,10 +25,6 @@ Learn how to configure the source connector for Marketo using the standard workf
 
 >[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
 
->[!INFO]
->
-> This video is part of a course, [Getting started with Real-Time CDP, B2B Edition for marketers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2021.rtcdp.b2b), available for free on Experience League!
-
 For more information, please see the following documentation:
 * [Marketo Engage source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).
 * [Create a sources dataflow using templates in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/templates.html#)

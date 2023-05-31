@@ -13,8 +13,4 @@ Learn how to monitor and track data that gets ingested into Adobe Experience Pla
 
 >[!VIDEO](https://video.tv.adobe.com/v/331776?quality=12&learn=on)
 
->[!INFO]
->
-> This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
-
 For more information, see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/dataflows/ui/monitor-sources.html)
