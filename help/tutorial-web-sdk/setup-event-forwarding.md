@@ -13,7 +13,7 @@ Event forwarding is a new type of property available in Data Collection. Event f
 To use event forwarding in Adobe Experience Platform, data must be sent to Adobe Experience Platform Edge Network first using one or more of the following three options:
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://aep-sdks.gitbook.io/docs/)
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
 <!--* [Server-to-Server API](https://experienceleague.adobe.com/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s.html?lang=en)-->
 
 

@@ -66,7 +66,7 @@ if var urlString = url?.absoluteString {
 }
 ```
 
-You can learn more about the `Identity.getUrlVariables` API in the [Identity for Edge Network extension API reference guide](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network/api-reference#geturlvariables).
+You can learn more about the `Identity.getUrlVariables` API in the [Identity for Edge Network extension API reference guide](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
 ## Validation
 

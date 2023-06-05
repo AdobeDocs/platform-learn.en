@@ -1,14 +1,14 @@
 ---
 title: Implement Adobe Experience Cloud in mobile apps tutorial overview
 description: Learn how to implement the Adobe Experience Cloud mobile applications. This tutorial guides you through an implementation of Experience Cloud applications in a sample Swift app.
-recommendation: noDisplay,catalog
+recommendations: noDisplay,catalog
 exl-id: daff4214-d515-4fad-a224-f7589b685b55
 ---
 # Implement Adobe Experience Cloud in mobile apps tutorial
 
 Learn how to implement Adobe Experience Cloud applications in your mobile app using Adobe Experience Platform Mobile SDK.
 
-Experience Platform Mobile SDK is a client-side SDK that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See the [Adobe Experience Platform Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/) for more detailed information.
+Experience Platform Mobile SDK is a client-side SDK that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/) for more detailed information.
 
   ![build settings](assets/data-collection-mobile-sdk.png)
 

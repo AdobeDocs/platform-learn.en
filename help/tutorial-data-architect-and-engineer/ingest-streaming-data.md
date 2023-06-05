@@ -30,7 +30,7 @@ Before you begin the exercises, watch these two short videos to learn more about
 
 >[!NOTE]
 >
->While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the [Adobe Mobile SDK](https://aep-sdks.gitbook.io/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect), and other mechanisms.
+>While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect), and other mechanisms.
 
 ## Permissions required
 

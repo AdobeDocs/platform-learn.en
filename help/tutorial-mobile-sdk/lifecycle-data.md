@@ -7,7 +7,7 @@ exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
 
 Learn how to collect lifecycle data in a mobile app.
 
-The Adobe Experience Platform Mobile SDK Lifecycle extension enables the collection  lifecycle data from your mobile app. The Adobe Experience Platform Edge Network extension sends this lifecycle data to the Platform Edge Network where it is then  forwarded to other applications and services according to your datastream configuration. Learn more about the [Lifecycle extension](https://aep-sdks.gitbook.io/docs/foundation-extensions/lifecycle-for-edge-network) in the product documentation.
+The Adobe Experience Platform Mobile SDK Lifecycle extension enables the collection  lifecycle data from your mobile app. The Adobe Experience Platform Edge Network extension sends this lifecycle data to the Platform Edge Network where it is then  forwarded to other applications and services according to your datastream configuration. Learn more about the [Lifecycle extension](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in the product documentation.
 
 
 ## Prerequisites
@@ -63,7 +63,7 @@ Now you can update `AppDelegate.swift` to register the lifecycle events:
 
 >[!NOTE]
 >
->For iOS 13 and later, please review the [documentation](https://aep-sdks.gitbook.io/docs/foundation-extensions/mobile-core/lifecycle#register-lifecycle-with-mobile-core-and-add-appropriate-start-pause-calls) for slightly different code.
+>For iOS 13 and later, please review the [documentation](https://developer.adobe.com/client-sdks/documentation/mobile-core/lifecycle/#register-lifecycle-with-mobile-core-and-add-appropriate-startpause-calls) for slightly different code.
 
 ## Validate with Assurance
 
@@ -76,7 +76,7 @@ Now you can update `AppDelegate.swift` to register the lifecycle events:
 
 ## Forward data to Platform Edge Network
 
-The previous exercise dispatches the foreground and background events to Mobile SDK. To send these events to Platform Edge Network, follow the steps listed [here](https://aep-sdks.gitbook.io/docs/foundation-extensions/lifecycle-for-edge-network#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Once the events are sent to Platform Edge Network, they will be forwarded to other applications and services according to your datastream configuration.
+The previous exercise dispatches the foreground and background events to Mobile SDK. To send these events to Platform Edge Network, follow the steps listed [here](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/#configure-a-rule-to-forward-lifecycle-metrics-to-platform). Once the events are sent to Platform Edge Network, they will be forwarded to other applications and services according to your datastream configuration.
 
 Once you have added the rule to send the lifecyle events to Platform Edge Network, you should see `Application Close (Background)` and `Application Launch (Foreground)` events containing XDM data in Assurance.
 

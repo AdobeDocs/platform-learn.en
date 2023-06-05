@@ -9,7 +9,7 @@ Learn how to collect identity data in a mobile app.
 
 Adobe Experience Platform Identity Service helps you to gain a better view of your customers and their behaviors by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real time. Identity fields and namespaces are the glue that joins different data sources together to build the 360-degree real-time customer profile.
 
-Learn more about the [Identity extension](https://aep-sdks.gitbook.io/docs/foundation-extensions/identity-for-edge-network) and the [identity service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) in the documentation.
+Learn more about the [Identity extension](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) and the [identity service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html) in the documentation.
 
 ## Prerequisites
 
@@ -59,7 +59,7 @@ Begin by updating the user's identity map when they log in.
 
 ## Set up a custom identity namespace
 
-Identity namespaces are components of [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) that serve as indicators of the context to which an identity relates. For example, they distinguish a value of “name@email.com” as an email address or “443522” as a numeric CRM ID.
+Identity namespaces are components of [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) that serve as indicators of the context to which an identity relates. For example, they distinguish a value of "name@email.com" as an email address or "443522" as a numeric CRM ID.
 
 1. In the Data Collection interface, select **[!UICONTROL Identities]** from the left-rail navigation.
 1. Select **[!UICONTROL Create identity namespace]**.
