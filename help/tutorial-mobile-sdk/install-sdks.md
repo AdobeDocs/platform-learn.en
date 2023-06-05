@@ -136,7 +136,7 @@ The above code does the following:
 
 * Registers the required extensions.
 * Configures MobileCore and other extensions to use your tag property configuration.
-* Enables debug logging. More details and options can be found in the [Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/getting-started/enable-debug-logging).
+* Enables debug logging. More details and options can be found in the [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
 
 >[!IMPORTANT]
 >In a production app, you must switch AppId based on the current environment (dev/stag/prod).

@@ -38,7 +38,7 @@ In this lesson, you will:
 
         >[!NOTE]
         >
-        > Default consent settings for the edge-based mobile sdk implementations such as the one you are doing in this tutorial come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You will add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://aep-sdks.gitbook.io/docs/resources/privacy-and-gdpr).
+        > Default consent settings for the edge-based mobile sdk implementations such as the one you are doing in this tutorial come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You will add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Open the new property    
@@ -74,7 +74,7 @@ In this lesson, you will:
 
 1. Install the **Consent** extension.
 
-    For the purposes of this tutorial select **[!UICONTROL Pending]**. Learn more about the Consent extension in [the documentation](https://aep-sdks.gitbook.io/docs/foundation-extensions/consent-for-edge-network).
+    For the purposes of this tutorial select **[!UICONTROL Pending]**. Learn more about the Consent extension in [the documentation](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
     
     ![consent settings](assets/mobile-tags-extension-consent.png)
 
@@ -103,14 +103,14 @@ In this lesson, you will:
 
 1. The install instructions provide you a good starting point for implementation. 
 
-    You can find additional information [here](https://aep-sdks.gitbook.io/docs/getting-started/get-the-sdk).
+    You can find additional information [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
     * **[!UICONTROL Environment File ID]**: This unique ID points to your development environment, make note of this value. Production/Staging/Development will all have different ID values.
     * **[!UICONTROL Podfile]**: CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [documentation](https://cocoapods.org/).
     * **[!UICONTROL Initialization Code]**:  This block of code shows how to import the required SDKs and register the extensions at launch.
 
 >[!NOTE]
->The install instructions should be considered a starting point and not definitive documentation. The latest SDK versions and code samples can be found in the official [documentation](https://aep-sdks.gitbook.io/docs/).
+>The install instructions should be considered a starting point and not definitive documentation. The latest SDK versions and code samples can be found in the official [documentation](https://developer.adobe.com/client-sdks/documentation/).
 
 ## Mobile tags architecture
 

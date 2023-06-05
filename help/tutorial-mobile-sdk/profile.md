@@ -9,7 +9,7 @@ Learn how to collect profile data in a mobile app.
 
 You can use the Profile extension to store attributes about your user on the client. This information can be used later to target and personalize messages during online or offline scenarios, without having to connect to a server for optimal performance. The Profile extension manages the Client-Side Operation Profile (CSOP), provides a way to react to APIs, updates user profile attributes, and shares the user profile attributes with the rest of the system as a generated event.
 
-The Profile data is used by other extensions to perform profile-related actions. An example is the Rules Engine extension that consumes the profile data and runs rules based on the profile data. Learn more about the [Profile extension](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile) in the documentation
+The Profile data is used by other extensions to perform profile-related actions. An example is the Rules Engine extension that consumes the profile data and runs rules based on the profile data. Learn more about the [Profile extension](https://developer.adobe.com/client-sdks/documentation/profile/) in the documentation
 
 >[!IMPORTANT]
 >
@@ -59,7 +59,7 @@ The personalization team might also want to target based on the user's loyalty l
     UserProfile.updateUserAttributes(attributeDict: profileMap)
     ```
 
-Additional `updateUserAttributes` documentation can be found [here](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#update-user-attributes).
+Additional `updateUserAttributes` documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Get
 
@@ -72,7 +72,7 @@ UserProfile.getUserAttributes(attributeNames: ["isPaidUser","loyaltyLevel"]){
 }
 ```
 
-Additional `getUserAttributes` documentation can be found [here](https://aep-sdks.gitbook.io/docs/foundation-extensions/profile/profile-api-references#get-user-attributes).
+Additional `getUserAttributes` documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Validate with Assurance
 

@@ -15,4 +15,4 @@ Learn how Adobe Experience Platform Mobile SDK powers end-to-end engagement in y
 
 >[!VIDEO](https://video.tv.adobe.com/v/28948?quality=12&learn=on)
 
-For more information, please visit the [Platform mobile SDK documentation](https://aep-sdks.gitbook.io/docs/).
+For more information, please visit the [Platform mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/).

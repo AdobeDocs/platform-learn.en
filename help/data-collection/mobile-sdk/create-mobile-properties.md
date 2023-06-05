@@ -15,4 +15,4 @@ Learn how to create a mobile tag property in Data Collection. Add the Mobile Cor
 
 >[!VIDEO](https://video.tv.adobe.com/v/26264/?quality=12&learn=on)
 
-For more information, please visit the [Mobile SDK documentation](https://aep-sdks.gitbook.io/docs/).
+For more information, please visit the [Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/).
