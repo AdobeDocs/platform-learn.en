@@ -4,7 +4,7 @@ breadcrumb-title: Mobile App Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud applications in mobile apps with Experience Platform Mobile SDK.
 solution: Data Collection
 kt: 6987
-recommendation: noDisplay,noCatalog
+recommendations: noDisplay,noCatalog
 ---
 
 # Implement the Experience Cloud in mobile apps {#implement-mobile-sdk}
