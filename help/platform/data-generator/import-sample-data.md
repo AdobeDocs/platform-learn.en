@@ -19,7 +19,7 @@ This tutorial focuses on a fictional, retail brand called Luma. They invest in A
 
 >[!NOTE]
 >
->The end-result of this tutorial is a sandbox containing similar data to the [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). It was updated in April 2023 to support the [Journey Optimizer challenges](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html).
+>The end-result of this tutorial is a sandbox containing similar data to the [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers tutorial](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html). It was updated in April 2023 to support the [Journey Optimizer challenges](https://experienceleague.adobe.com/docs/journey-optimizer-learn/challenges/introduction-and-prerequisites.html). It was updated in June 2023 to switch the authentication method to OAuth.
 
 
 ## Prerequisites
@@ -42,8 +42,8 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
     >User data contained in the [platform-utils-main.zip](../assets/data-generator/platform-utils-main.zip) file is fictitious and is to be used for demonstration purposes only.
 
 1. From your downloads folder, move the `platform-utils-main.zip` file to the desired location on your computer, and unzip it.
-1. In the `luma-data` folder, open all of the `json` files in a text editor and replace all instances of `_yourOrganizationID` with your own tenant id, preceded by an underscore.
-1. Open `luma-offline-purchases.json` and `luma-web-events.json` in a text editor and update all of the timestamps so that the events occur in the last month (for example, search for `"timestamp":"2022-11` and replace the year and month)
+1. In the `luma-data` folder, open all of the `json` files in a text editor and replace all instances of `_yourTenantId` with your own tenant id, preceded by an underscore.
+1. Open `luma-offline-purchases.json`, `luma-inventory-events.json` and `luma-web-events.json` in a text editor and update all of the timestamps so that the events occur in the last month (for example, search for `"timestamp":"2022-11` and replace the year and month)
 1. Note the location of the unzipped folder, as you need it later when setting up the `FILE_PATH` Postman environment variable:
 
     >[!NOTE]
@@ -78,14 +78,13 @@ Before you follow the steps, please ensure that you have downloaded the [Postman
 
     * `CLIENT_SECRET` 
     * `API_KEY`&mdash;`Client ID` in Adobe Developer Console
+    * `SCOPES`
     * `TECHNICAL_ACCOUNT_ID`
-    * `META_SCOPE`
     * `IMS`
     * `IMS_ORG`&mdash;`Organization ID` in Adobe Developer Console
-    * `PRIVATE_KEY`
     * `SANDBOX_NAME`
-    * `CONTAINER_ID`
     * `TENANT_ID`&mdash;be sure to lead with an underscore, for example `_techmarketingdemos`
+    * `CONTAINER_ID`
     * `platform_end_point`
     * `FILE_PATH`&mdash;use the local folder path where you have unzipped the `platform-utils-main.zip` file. Be sure it includes the folder name, for example `/Users/dwright/Desktop/platform-utils-main`
 
@@ -116,11 +115,11 @@ Next you need to import the collections into Postman.
 
 Next you need to need to authenticate and generate a user token. Please be aware that the token-generation methods used in this tutorial are suitable for non-production use only. Local Signing loads a JavaScript library from a 3rd-party host, and Remote signing sends the private key to an Adobe owned and operated web service. While Adobe does not store this private key, production keys should never be shared with anyone.
 
-1. Open the `Authentication` collection, Select the `IMS: JWT Generate + Auth via User Token` POST request, and click `SEND` to authenticate and obtain the access token.
+1. Open the `0-Authentication` collection, Select the `OAuth: Request Access Token` request, and click `SEND` to authenticate and obtain the access token.
 
     ![Collections Import](../assets/data-generator/images/authentication.png)
 
-1. Review the environment variables, and notice that the `JWT_TOKEN` and `ACCESS_TOKEN` are now populated.
+1. Review the environment variables, and notice that the `ACCESS_TOKEN` is now populated.
 
 ### Import data
 
