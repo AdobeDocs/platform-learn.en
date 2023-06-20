@@ -5,6 +5,7 @@ role: Developer
 feature: API
 kt: 3688
 thumbnail: 28832.jpeg
+last-substantial-update: 2023-06-21
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
 ---
 # Authenticate and access [!DNL Experience Platform] APIs
