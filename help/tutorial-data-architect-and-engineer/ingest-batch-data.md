@@ -129,7 +129,7 @@ Now let's upload data using the API.
 First we let's get the id of the dataset id of the dataset into which we want to ingest data:
 
 1. Open [!DNL Postman]
-1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. If you don't have an access token, open the request **[!DNL OAuth: Request Access Token]** and select **Send** to request a new access token, just like you did in the [!DNL Postman] lesson.
 1. Open your environment variables and make sure the value of **CONTAINER_ID** is still `tenant`
 1. Open the request **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** and select **Send**
 1. You should get a `200 OK` response

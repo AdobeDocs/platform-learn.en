@@ -70,7 +70,7 @@ Now create the `Luma CRM Dataset` using the API.
 First we need to get the `$id` of the `Luma CRM Schema`:
 
 1. Open [!DNL Postman]
-1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. If you don't have an access token, open the request **[!DNL OAuth: Request Access Token]** and select **Send** to request a new access token, just like you did in the [!DNL Postman] lesson.
 1. Open the request **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Select the **Send** button
 1. You should get a 200 response
@@ -111,7 +111,7 @@ Now you can create the dataset:
 > Common issues making this request and likely fixes:
 >
 > * `400: There was a problem retrieving xdm schema`. Make sure you have replaced the id in the sample above with the id of your own `Luma CRM Schema`
-> * No auth token: Run the **IMS: JWT Generate + Auth via User Token** call to generate new tokens
+> * No auth token: Run the **OAuth: Request Access Token** request to generate a new token
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Update the **CONTAINER_ID** environment variable from `global` to `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Verify your user permissions in the Admin Console
 

@@ -6,6 +6,7 @@ role: Data Architect, Data Engineer
 kt: 4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
+last-substantial-update: 2023-06-21
 exl-id: fabbc591-840b-40dc-89af-305626a16338
 ---
 # Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
