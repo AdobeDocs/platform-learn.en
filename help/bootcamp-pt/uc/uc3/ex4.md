@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Blending physical and digital - Test your journey - Brazil
 description: Bootcamp - Blending physical and digital - Test your journey - Brazil
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop

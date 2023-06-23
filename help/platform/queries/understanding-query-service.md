@@ -3,7 +3,7 @@ title: Query Service overview
 description: Learn how Query Service in Adobe Experience Platform can help you Understand customer behavior and generate impactful insights. 
 role: Data Engineer, User
 feature: Queries
-kt: 3139
+jira: KT-3139
 thumbnail: 29795.jpg
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
 ---

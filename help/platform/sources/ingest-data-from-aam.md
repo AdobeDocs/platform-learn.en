@@ -4,7 +4,7 @@ description: As you reconfigure your processes and personnel to move from Adobe 
 role: Data Engineer, Data Architect
 feature: Sources
 thumbnail: 331214.jpg
-kt: 7111
+jira: KT-7111
 exl-id: 43688e44-c0ea-4107-ba74-1e630990f732
 ---
 # Ingest data using the Adobe Audience Manager data connector

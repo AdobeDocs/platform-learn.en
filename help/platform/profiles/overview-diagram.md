@@ -3,7 +3,7 @@ title: Overview Diagram of Real-Time Customer Profile
 description: This video walks you through an overview diagram illustrating the Real-Time Customer Profile capability of Adobe Experience Platform.
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 4943
+jira: KT-4943
 thumbnail: 33600.jpg
 exl-id: 1cff5492-82bb-484c-a96a-3417288d4766
 ---

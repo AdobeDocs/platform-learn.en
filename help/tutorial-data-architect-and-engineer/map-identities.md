@@ -5,7 +5,7 @@ breadcrumb-title: Map identities
 description: In this lesson, we will create identity namespaces and add identity fields to our schemas.
 role: Data Architect
 feature: Profiles
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
 ---

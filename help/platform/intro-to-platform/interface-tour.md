@@ -2,7 +2,7 @@
 title: Interface Tour
 description: Learn how to navigate Adobe Experience Platform's user interface.
 role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
-kt: 4821
+jira: KT-4821
 thumbnail: 32792.jpg
 exl-id: 2d7af2cb-7222-4f87-8bd5-cb0c341cdd33
 ---

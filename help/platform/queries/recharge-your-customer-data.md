@@ -3,7 +3,7 @@ title: Recharge your customer data to deliver electrifying experiences
 description: Learn how to mitigate the impact of low-quality data, reduce time to value, and multiply ROI by using the same data for multitude of use cases.
 role: Data Engineer, Data Architect, Developer
 feature: Queries
-kt: 10323
+jira: KT-10323
 thumbnail: 342533.jpeg
 exl-id: 30574cc5-66fa-4ab8-83ed-7af710294dbf
 ---

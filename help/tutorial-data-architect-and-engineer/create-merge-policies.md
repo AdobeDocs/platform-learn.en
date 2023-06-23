@@ -5,7 +5,7 @@ breadcrumb-title: Create merge policies
 description: In this lesson, you will create merge policies to determine how data merges into profiles. 
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 4348
+jira: KT-4348
 audience: data architect
 doc-type: tutorial
 activity: implement

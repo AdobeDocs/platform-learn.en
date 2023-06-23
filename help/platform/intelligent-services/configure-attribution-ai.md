@@ -3,7 +3,7 @@ title: Configure Attribution AI
 description: Learn how to create an instance of Attribution AI to understand the impact of your marketing channels and campaigns.
 feature: Attribution AI
 role: User
-kt: 4174
+jira: KT-4174
 thumbnail: 32668.jpg
 exl-id: ea64175d-c2b4-4fcb-bbac-9ef30416f868
 ---

@@ -3,29 +3,33 @@ title: Authenticate and access Experience Platform APIs
 description: Learn how to access to Adobe Experience Platform APIs. 
 role: Developer
 feature: API
-kt: 3688
+jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21
 exl-id: c1774670-436e-46dd-9c9b-177bfee5f749
 ---
 # Authenticate and access [!DNL Experience Platform] APIs
 
-To make requests to Adobe Experience Platform APIs, you must have an Experience Platform developer account.
+Learn how to get started with Adobe Experience Platform APIs. This tutorial guides you through the process to create authentication credentials and start making Experience Platform API requests.
 
-## Create a project in Adobe Developer Console and export a Postman environment
+## Create a project in Adobe Developer Console and export a Postman environment{#export-integration-details-to-postman}
 
-[[!DNL Postman]](https://www.postman.com/) is a tool allowing developers to quickly and easily interact with Adobe Experience Platform APIs.
+[[!DNL Postman]](https://www.postman.com/) is a third-party application which helps developers quickly and easily interact with Adobe Experience Platform APIs.
 
-Adobe Developer Console's **Export Details for Postman** capability provides an easy way to export all the account details required to access and interact with an Experience Platform API in a single Postman Environment file, removing the need to copy and paste values from Adobe Developer Console into Postman.
-
->[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
+[Adobe Developer Console's](https://developer.adobe.com/console/home) **Export Details for Postman** capability provides an easy way to export the account details required to access and interact with an Experience Platform APIs in a single Postman Environment file, removing the need to copy-and-paste values from Adobe Developer Console into Postman.
 
 >[!IMPORTANT]
 >
->After creating your API credential, a System Administrator at your company must associate the credential with an Experience Platform role.
+>To access the [Adobe Developer Console](https://developer.adobe.com/console/home), you must be a either a [System Administrator](https://helpx.adobe.com/enterprise/using/admin-roles.html) or a [Developer](https://helpx.adobe.com/enterprise/using/manage-developers.html#:~:text=Add%20developers%20to%20a%20single%20product%20profile&text=In%20the%20Admin%20Console%2C%20navigate,in%20the%20upper%2Dright%20corner.) in the [Adobe Admin Console](https://adminconsole.adobe.com).
+>
+> After creating your API credential, a System Administrator must associate the credential with a role in the Experience Platform.
+
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?quality=12&learn=on)
 
 
-## Generate an Access Token with Postman
+
+
+## Generate an Access Token with Postman{#generate-an-access-token-with-postman}
 
 Use the [Adobe Identity Management Service APIs](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) to obtain an Access Token to access the Adobe Experience Platform APIs.
 
@@ -34,12 +38,12 @@ Use the [Adobe Identity Management Service APIs](https://github.com/adobe/experi
 
 ## Interact with Experience Platform APIs using Postman
 
-Explore interacting with Adobe Experience Platform APIs using the [Adobe-provided Experience Platform API Postman collections](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), building upon the [Adobe Developer Console Environment Variables](#export-adobe-io-integration-details-to-postman) and [generated access token](#generate-an-access-token-with-postman).
+Explore interacting with Adobe Experience Platform APIs using the [Adobe-provided Experience Platform API Postman collections](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), building upon the [Adobe Developer Console Environment Variables](#export-integration-details-to-postman) and [generated access token](#generate-an-access-token-with-postman).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29704/?quality=12&learn=on)
 
 
-## Additional Resources
+## Resources referenced in these videos
 
 * [Adobe Developer Console](https://developer.adobe.com/console/home)
 * [Adobe Experience Platform Postman Samples](https://github.com/adobe/experience-platform-postman-samples)

@@ -4,7 +4,7 @@ description: Learn how to set up and use data governance controls in Real-Time C
 feature: Segments
 role: Admin
 level: Beginner
-kt: 10247
+jira: KT-10247
 thumbnail: 342212.jpeg
 exl-id: d822868e-1765-4203-a700-3487460dd3a0
 ---

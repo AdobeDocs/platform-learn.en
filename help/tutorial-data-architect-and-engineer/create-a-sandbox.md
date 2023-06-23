@@ -5,7 +5,7 @@ breadcrumb-title: Create a sandbox
 description: In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.
 role: Data Architect, Data Engineer
 feature: Sandboxes
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
 ---

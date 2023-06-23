@@ -3,7 +3,7 @@ title: Copy schemas between sandboxes
 description: This video shows how to copy a schema from one sandbox to another in Adobe Experience Platform using the Export/Import Schema API.
 role: Data Architect
 feature: Schemas
-kt: 7939
+jira: KT-7939
 thumbnail: 333592.jpg
 exl-id: d0d23739-3a3a-4938-a400-684f36b0ae82
 ---

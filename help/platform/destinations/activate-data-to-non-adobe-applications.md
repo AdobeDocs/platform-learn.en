@@ -4,7 +4,7 @@ description: Learn how Adobe’s Real-Time CDP helps you not only create true pe
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 7035
+jira: KT-7035
 thumbnail: 331022.jpg
 type: Event
 exl-id: b1efeaa8-e168-497d-8e11-80e1cc631e63

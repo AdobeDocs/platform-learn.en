@@ -5,7 +5,7 @@ feature: Profiles
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 thumbnail: 336939.jpg
-kt: 8866
+jira: KT-8866
 exl-id: df81b1f4-4d60-4b07-aa4f-4ddc38ed4b6b
 ---
 # Building better experiences with customer profiles

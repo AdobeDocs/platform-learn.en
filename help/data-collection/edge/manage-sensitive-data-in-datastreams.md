@@ -4,7 +4,7 @@ description: Learn how to manage sensitive data in datastreams.
 feature: Datastreams, Data Governance
 role: Data Architect, Developer
 level: Intermediate
-kt: 11176
+jira: KT-11176
 thumbnail: 3409588.jpeg
 last-substantial-update: 2022-09-28
 exl-id: a10c72a2-8ed3-40da-bfdc-b1dc4492f8c4

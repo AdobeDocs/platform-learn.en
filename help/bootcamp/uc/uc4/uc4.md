@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Customer Journey Analysis
 description: Bootcamp - Customer Journey Analysis
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop

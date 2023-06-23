@@ -4,7 +4,7 @@ description: Learn how to ingest data from Marketo Engage using the source conne
 solution: Real-time Customer Data Platform
 feature: Sources
 role: Data Engineer, Data Architect
-kt: 9259, 13303
+jira: KT-9259, 13303
 last-substantial-update: 2023-05-24
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869

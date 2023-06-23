@@ -6,7 +6,7 @@ role: User
 level: Beginner
 doc-type: feature video
 thumbnail: 333304.jpg
-kt: 7891
+jira: KT-7891
 exl-id: a98e43e1-4b5e-42fa-8806-aab702947da5
 ---
 # Create segments from existing segments

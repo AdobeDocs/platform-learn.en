@@ -5,7 +5,7 @@ breadcrumb-title: Ingest batch data
 description: In this lesson, you will ingest batch data into Experience Platform using various methods.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
 ---

@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101 - Brazil
 description: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101 - Brazil
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop

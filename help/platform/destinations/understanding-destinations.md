@@ -4,7 +4,7 @@ description: This video defines the two types of destinations&mdash;Profile Expo
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 3797
+jira: KT-3797
 thumbnail: 29707.jpg
 exl-id: d6e78ec2-f9e0-4794-b585-9bebef9b036b
 ---

@@ -3,7 +3,7 @@ title: Schedule automated training and scoring for a service
 description: Learn how to set up automated training and scoring for a service in Data Science Workspace.
 role: User
 feature: Data Science Workspace
-kt: 7293
+jira: KT-7293
 thumbnail: 333596.jpg
 exl-id: de24de28-d632-4fa5-b5b7-71f638a523ac
 ---

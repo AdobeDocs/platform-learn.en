@@ -4,7 +4,7 @@ description: How to use the Adobe Client Data Layer
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: 33a5db8c-e49b-4073-b4d7-4abe19537fcb

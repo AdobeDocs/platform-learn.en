@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Visit the website and create your account
 description: Bootcamp - Visit the website and create your account
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop

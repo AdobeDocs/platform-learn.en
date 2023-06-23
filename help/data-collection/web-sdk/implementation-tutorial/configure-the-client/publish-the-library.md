@@ -4,7 +4,7 @@ description: Publish the library
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: 2fc072df-24f2-4fea-848f-0a973deca2f8

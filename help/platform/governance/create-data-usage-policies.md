@@ -3,7 +3,7 @@ title: Create data usage policies
 description: Learn how to create and manage data usage policies in the Adobe Experience Platform user interface. Data usage policies allow you to restrict data usage for specific purposes based on the labeling of data. 
 role: Data Architect
 feature: Data Governance
-kt: 4347
+jira: KT-4347
 thumbnail: 32977.jpg
 exl-id: 7bcab1e1-6344-48bd-8622-309c9dc17df9
 ---

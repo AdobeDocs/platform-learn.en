@@ -5,7 +5,7 @@ solution: Real-time Customer Data Platform
 feature: Destinations 
 role: User
 thumbnail: 331082.jpg
-kt: 7068
+jira: KT-7068
 exl-id: 17340357-2e3a-4c94-b010-442fba70b216
 ---
 # Configure the Azure Blob Destination

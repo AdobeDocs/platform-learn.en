@@ -4,7 +4,7 @@ description: With Segment Match, data can be shared to you by your strategic par
 feature: Segments
 role: User
 level: Intermediate
-kt: 10250
+jira: KT-10250
 thumbnail: 344419.jpeg
 exl-id: ef3dc334-f733-4ffa-94a5-1ff7ef3999cb
 ---

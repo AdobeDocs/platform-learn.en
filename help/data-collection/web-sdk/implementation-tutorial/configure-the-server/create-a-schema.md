@@ -4,7 +4,7 @@ description: Create a schema
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: 25d77367-046d-46bd-9640-60fbcea263da

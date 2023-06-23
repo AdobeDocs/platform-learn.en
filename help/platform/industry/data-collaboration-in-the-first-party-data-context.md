@@ -6,7 +6,7 @@ role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 337665.jpg
-kt: 9145
+jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
 ---
 # Data Collaboration in the First-party Data Context

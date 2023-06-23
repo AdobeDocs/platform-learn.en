@@ -4,7 +4,7 @@ description: In this video, learn how to set up the connection between you and a
 feature: Segments
 role: Admin
 level: Beginner
-kt: 10246
+jira: KT-10246
 thumbnail: 342211.jpeg
 exl-id: bf3c7297-ea60-45fc-a784-5c576e7935cf
 ---

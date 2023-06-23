@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Blending physical and digital - Use the mobile app and trigger a beacon entry
 description: Bootcamp - Blending physical and digital - Use the mobile app and trigger a beacon entry
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop

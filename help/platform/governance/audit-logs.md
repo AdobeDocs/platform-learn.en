@@ -3,7 +3,7 @@ title: Audit logs
 description: Learn about how the audit logs feature can help you meet your compliance requirements and troubleshoot your Adobe Experience Platform implementation.
 role: Admin
 feature: Data Governance
-kt: 9934
+jira: KT-9934
 exl-id: af2c7ec3-82bf-43e9-8b52-f90a39e72926
 ---
 # Audit logs

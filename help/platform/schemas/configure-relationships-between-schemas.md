@@ -3,7 +3,7 @@ title: Configure relationships between schemas
 description: This video shows how to configure a relationship between two schemas in Adobe Experience Platform. Relationships allow you to use one dataset as a lookup table for another.
 role: Data Architect
 feature: Schemas
-kt: 7935
+jira: KT-7935
 thumbnail: 333536.jpg
 exl-id: e52cacce-bcf7-4583-9125-113634250e19
 ---

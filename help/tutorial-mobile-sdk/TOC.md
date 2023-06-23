@@ -3,7 +3,7 @@ user-guide-title: Implement the Experience Cloud in mobile apps tutorial
 breadcrumb-title: Mobile App Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud applications in mobile apps with Experience Platform Mobile SDK.
 solution: Data Collection
-kt: 6987
+jira: KT-6987
 recommendations: noDisplay,noCatalog
 ---
 

@@ -5,7 +5,7 @@ breadcrumb-title: Apply the data governance framework
 description: In this lesson, you will apply the data governance framework to the data you've ingested into your sandbox. 
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
 ---

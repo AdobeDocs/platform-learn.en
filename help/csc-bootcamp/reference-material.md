@@ -1,7 +1,7 @@
 ---
 title: CSC Bootcamp - Reference Material
 description: Interesting starting points that will help you better understand the topics covered in this bootcamp.
-kt: 5342
+jira: KT-5342
 doc-type: tutorial
 activity: develop
 exl-id: 8dda3ba5-ad68-41b7-b247-aedb217256a4

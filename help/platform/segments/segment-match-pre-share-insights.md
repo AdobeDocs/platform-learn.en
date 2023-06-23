@@ -4,7 +4,7 @@ description: When you are deciding on a strategic partner to share data with, it
 feature: Segments
 role: User
 level: Intermediate
-kt: 10249
+jira: KT-10249
 thumbnail: 342378.jpeg
 exl-id: 0ea3c648-7366-462a-b6ed-dc911186e1f6
 ---

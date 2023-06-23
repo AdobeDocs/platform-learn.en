@@ -4,7 +4,7 @@ description: Learn how to navigate the Real-Time Customer Data Platform (CDP) us
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 3989
+jira: KT-3989
 thumbnail: 29762.jpg
 exl-id: bc9fdedd-ce95-4bd2-8b14-30fd74604ea8
 ---
