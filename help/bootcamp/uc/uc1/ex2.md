@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
 description: Bootcamp - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop

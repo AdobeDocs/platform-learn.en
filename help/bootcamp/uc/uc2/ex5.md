@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Install & use the mobile app
 description: Bootcamp - Install & use the mobile app
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop

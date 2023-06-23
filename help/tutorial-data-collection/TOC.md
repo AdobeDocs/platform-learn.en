@@ -4,7 +4,7 @@ breadcrumb-title: Data Collection Tutorial
 solution: Data Collection
 role: Developer
 level: Intermediate
-kt: 10447
+jira: KT-10447
 recommendations: noDisplay,noCatalog
 hide: yes
 ---

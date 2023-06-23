@@ -4,7 +4,7 @@ description: Learn how to create schemas for your business data with Real-Time C
 solution: Real-time Customer Data Platform
 feature: Schemas
 role: Data Architect
-kt: 9258
+jira: KT-9258
 thumbnail: 338241.jpg
 exl-id: bbb47887-f982-4831-8002-6d1fa539a39b
 ---

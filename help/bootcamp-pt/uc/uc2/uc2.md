@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Registration & Onboarding - Brazil
 description: Bootcamp - Registration & Onboarding - Brazil
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop

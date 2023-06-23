@@ -3,7 +3,7 @@ title: Convert your data model to XDM
 description: This video shows how data architects can take their existing transactional data model and convert it to an Experience Data Model. It shows the difference in modeling approaches using entity-relationship diagrams.
 role: Data Architect
 feature: Schemas
-kt: 7933
+jira: KT-7933
 thumbnail: 333483.jpg
 exl-id: 20cff411-99e1-42d5-852d-9fd66cf0e6f9
 ---

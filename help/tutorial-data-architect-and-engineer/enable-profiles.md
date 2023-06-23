@@ -5,7 +5,7 @@ breadcrumb-title: Enable Real-Time Customer Profiles
 description: In this lesson, you will enable your schemas and datasets for Real-Time Customer Profile. 
 role: Data Architect
 feature: Profiles
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 ---

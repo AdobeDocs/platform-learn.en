@@ -5,7 +5,7 @@ feature: Web SDK
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: cb322540-e8ef-4226-b537-a67c7ca273f5

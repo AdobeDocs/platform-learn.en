@@ -3,7 +3,7 @@ title: Create Segments
 description: Learn how to create segments in Adobe Experience Platform.
 role: User
 feature: Segments
-kt: 2704
+jira: KT-2704
 thumbnail: 27254.jpg
 exl-id: 5d2a8b17-baf9-4c52-9ebc-7f058ab0e64d
 ---

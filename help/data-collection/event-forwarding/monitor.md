@@ -2,7 +2,7 @@
 title: Monitor event forwarding
 description: Learn how to monitor event forwarding in the Data Collection interface.
 feature: Event Forwarding
-kt: 10611
+jira: KT-10611
 thumbnail: 343999.jpeg
 exl-id: 15948005-53d7-413d-9379-0d7b5189b839
 ---

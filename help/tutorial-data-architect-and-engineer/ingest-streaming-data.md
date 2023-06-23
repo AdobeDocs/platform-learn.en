@@ -5,7 +5,7 @@ breadcrumb-title: Ingest streaming data
 description: In this lesson, you will stream data into Experience Platform using the Web SDK.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 ---

@@ -4,7 +4,7 @@ description: Learn how to add your data layer to a new datastream in Data Collec
 feature: Web SDK, Datastreams
 role: Data Architect, Data Engineer, Developer
 level: Intermediate
-kt: 10194
+jira: KT-10194
 thumbnail: 342120.jpeg
 exl-id: f42aec0c-f76a-4cf5-a874-4b8698a77387
 ---

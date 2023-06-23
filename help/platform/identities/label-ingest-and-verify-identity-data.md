@@ -3,7 +3,7 @@ title: Label, ingest, and verify identity data
 description: Learn how to label data fields as identities, ingest identity data, and verify the data in the Adobe Experience Platform Identity Service private graph.
 role: Data Architect
 feature: Identities
-kt: 2707
+jira: KT-2707
 thumbnail: 28167.jpg
 exl-id: 9a4fbd95-74e3-4e10-8663-8fafefe324a8
 ---

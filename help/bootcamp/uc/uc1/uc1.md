@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Acquisition
 description: Bootcamp - Acquisition
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop

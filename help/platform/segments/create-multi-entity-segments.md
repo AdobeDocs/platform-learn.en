@@ -3,7 +3,7 @@ title: Create multi-entity segments
 description: This video shows you how to build multi-entity segments in Adobe Experience Platform's Segment Builder.  Multi-entity segmentation, or segmentation across classes, allows you to build segments combining data based on multiple XDM classes.
 role: User
 feature: Segments
-kt: 3697
+jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4
 ---

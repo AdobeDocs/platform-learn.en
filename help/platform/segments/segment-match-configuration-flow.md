@@ -4,7 +4,7 @@ description: Once a segment share with a data partner has been connected, you ca
 feature: Segments
 role: User
 level: Intermediate
-kt: 10248
+jira: KT-10248
 thumbnail: 342336.jpeg
 exl-id: 0f73c316-ed55-4a33-9603-a58e90dd205a
 ---

@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Visit the website and create your account - Brazil
 description: Bootcamp - Visit the website and create your account - Brazil
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop

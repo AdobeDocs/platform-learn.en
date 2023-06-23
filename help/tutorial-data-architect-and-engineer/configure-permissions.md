@@ -5,7 +5,7 @@ breadcrumb-title: Configure permissions
 description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console. 
 role: Data Architect, Data Engineer
 feature: Access Control
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-configure-permissions.jpg
 exl-id: ca01f99e-f10c-4bf0-bef2-b011ac29a565
 ---

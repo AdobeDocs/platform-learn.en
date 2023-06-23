@@ -4,7 +4,7 @@ description: Create a dataset
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: 7705d292-a29c-4977-bcc6-f088a51713ea

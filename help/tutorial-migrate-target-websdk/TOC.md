@@ -9,7 +9,7 @@ role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-kt: 11159
+jira: KT-11159
 ---
 
 # Migrate Target from at.js 2.x to Platform Web SDK {#migrate-target-to-websdk}

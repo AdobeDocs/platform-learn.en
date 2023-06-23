@@ -4,7 +4,7 @@ description: Test the implementation
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: e2213c23-d395-4c57-8c6c-0319cd0fb0ac

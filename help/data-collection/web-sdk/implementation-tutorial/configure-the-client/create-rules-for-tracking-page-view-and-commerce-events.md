@@ -4,7 +4,7 @@ description: Create rules for tracking page view and commerce events
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: 2dd02462-ddb5-4f67-8b0f-4a5bf5f7d655

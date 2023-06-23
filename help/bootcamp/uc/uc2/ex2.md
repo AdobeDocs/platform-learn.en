@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Journey Optimizer Create your event
 description: Bootcamp - Journey Optimizer Create your event
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop

@@ -4,7 +4,7 @@ description: This video shows how Customer AI enriches customer profiles with AI
 solution: Experience Platform, Real-time Customer Data Platform
 feature: Customer AI
 role: User
-kt: 6247
+jira: KT-6247
 thumbnail: 40374.jpg
 exl-id: 2dc34425-62e7-4d56-ab13-6855371b1d7d
 ---

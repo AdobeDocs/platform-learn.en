@@ -3,7 +3,7 @@ title: Data Ingestion Overview
 description: Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing a unified profile.
 role: Data Engineer, Data Architect
 feature: Data Ingestion
-kt: 2699
+jira: KT-2699
 thumbnail: 27106.jpg
 exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
 ---

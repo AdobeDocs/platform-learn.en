@@ -4,7 +4,7 @@ description: Get tips during a walkthrough of the configuration of a file-based 
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 6624
+jira: KT-6624
 thumbnail: 328175.jpg
 exl-id: fda985ad-5d56-4e61-871f-2f29a2e79b17
 ---

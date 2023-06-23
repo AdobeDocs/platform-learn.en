@@ -4,7 +4,7 @@ description: Overview
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: 8ffa258b-6ff7-4413-aead-21b106668c65

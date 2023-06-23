@@ -4,7 +4,7 @@ description: Learn how to use enumerated fields and suggested values to create f
 feature: Schemas
 role: Data Architect, Data Engineer
 level: Intermediate
-kt: 11165
+jira: KT-11165
 thumbnail: 3409501.jpeg
 last-substantial-update: 2022-09-27
 exl-id: 3bc9ee9a-fcaf-42d3-9acb-c76632491825

@@ -4,7 +4,7 @@ description: Learn how Adobe Real-Time Customer Data Platform (CDP) brings toget
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 3821
+jira: KT-3821
 thumbnail: 29705.jpg
 exl-id: 790ff110-f74b-4b05-a2d4-e447c2a8ff34
 ---

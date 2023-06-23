@@ -4,7 +4,7 @@ description: What's a data layer?
 role: Developer
 level: Intermediate
 recommendations: noDisplay,noCatalog
-kt: 10447
+jira: KT-10447
 hide: yes
 hidefromtoc: yes
 exl-id: 747f2e60-646e-4324-993c-88568415ea59

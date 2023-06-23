@@ -5,7 +5,7 @@ feature: Destinations
 topic: Administration
 role: Admin
 level: Beginner
-kt: 10291
+jira: KT-10291
 thumbnail: 342471.jpg
 exl-id: b228a612-3ecd-40c1-85ef-81fd49d6bde0
 ---

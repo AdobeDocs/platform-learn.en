@@ -3,7 +3,7 @@ title: Enforce consent
 description: Learn how to enforce consent
 role: Data Architect, User
 feature: Consent
-kt: 10362
+jira: KT-10362
 thumbnail: 345677.jpeg
 exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
 ---

@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Personalization in the call center - Brazil
 description: Bootcamp - Personalization in the call center - Brazil
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop

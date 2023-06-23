@@ -4,7 +4,7 @@ description: When sending segment profiles out to your activation partners, it i
 feature: Monitoring
 role: User
 level: Beginner
-kt: 10450
+jira: KT-10450
 thumbnail: 343248.jpg
 exl-id: 425c8876-db9e-4fc3-9ce4-208c560244da
 ---

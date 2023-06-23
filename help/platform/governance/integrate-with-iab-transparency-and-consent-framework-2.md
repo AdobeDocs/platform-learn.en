@@ -4,7 +4,7 @@ description: This video shows how Adobe's Real-time Customer Data Platform helps
 solution: Real-time Customer Data Platform
 role: Data Architect
 feature: Destinations
-kt: 5950
+jira: KT-5950
 thumbnail: 38346.jpg
 exl-id: 337b97d0-fd29-4bdb-a79a-9fe428adaae8
 ---

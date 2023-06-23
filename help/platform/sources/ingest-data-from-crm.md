@@ -3,7 +3,7 @@ title: Ingest Data using CRM Source Connectors
 description: Learn how to easily batch ingest data from CRM sources into Adobe Experience Platform's Real-Time Customer Profile and data lake seamlessly.
 role: Data Engineer, Data Architect
 feature: Sources
-kt: 3826, 13272
+jira: KT-3826, 13272
 thumbnail: 29711.jpg
 last-substantial-update: 2023-05-24
 exl-id: 2a0caa84-dca6-4ba9-9ebf-bdf38dfc3cb2

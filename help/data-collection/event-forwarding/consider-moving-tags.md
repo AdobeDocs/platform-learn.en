@@ -3,7 +3,7 @@ title: Consider moving vendor tags to event forwarding
 description: Learn how to evaluate a client-side vendor tag for server-side data distribution.
 feature: Event Forwarding, Tags, Integrations
 solution: Data Collection
-kt: 9921
+jira: KT-9921
 level: Intermediate, Experienced
 role: Admin, Developer, Architect
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6

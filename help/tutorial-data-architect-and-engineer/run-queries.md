@@ -5,7 +5,7 @@ breadcrumb-title: Run queries
 description: In this lesson you will learn how to setup, write, and execute queries to validate the data you have ingested.
 role: Data Architect, Data Engineer
 feature: Queries
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 ---

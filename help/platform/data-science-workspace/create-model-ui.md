@@ -3,7 +3,7 @@ title: Create and publish a trained model
 description: Learn how to create, train, evaluate, and publish a model using a recipe made with the JupyterLab recipe builder notebook.
 role: User
 feature: Data Science Workspace
-kt: 7291
+jira: KT-7291
 thumbnail: 333595.jpg
 exl-id: 149909cf-8294-45ed-b854-b9db5582858e
 ---

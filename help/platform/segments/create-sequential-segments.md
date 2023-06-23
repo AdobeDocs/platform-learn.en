@@ -6,7 +6,7 @@ role: User
 level: Beginner
 doc-type: feature video
 thumbnail: 333305.jpg
-kt: 7892
+jira: KT-7892
 exl-id: b7b5111c-4e30-4a69-bde1-d75df03fbf86
 ---
 # Create sequential segments

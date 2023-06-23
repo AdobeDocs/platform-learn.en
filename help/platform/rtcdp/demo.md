@@ -4,7 +4,7 @@ description: See a demo of how Real-Time CDP is used to collect data from multip
 solution: Real-time Customer Data Platform
 role: User
 feature: Destinations
-kt: 5291
+jira: KT-5291
 thumbnail: 34558.jpg
 exl-id: 1e766a0f-7b4f-4c3d-a908-5cb4cba8b334
 ---

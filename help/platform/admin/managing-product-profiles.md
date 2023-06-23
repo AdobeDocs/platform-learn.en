@@ -3,7 +3,7 @@ title: Product profiles
 description: Learn how to create a product profile and assign users, developers, admins, and permissions.
 role: Admin, User
 feature: Access Control
-kt: 7924
+jira: KT-7924
 thumbnail: 336081.jpg
 exl-id: f29d8a20-9af9-4f87-949e-bb9393ccf049
 ---

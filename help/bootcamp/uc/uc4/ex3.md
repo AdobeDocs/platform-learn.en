@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Create a Data View
 description: Customer Journey Analytics - Create a Data View
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop

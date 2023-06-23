@@ -1,7 +1,7 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Data preparation in Analysis Workspace - Brazil
 description: Bootcamp - Customer Journey Analytics - Data preparation in Analysis Workspace - Brazil
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop

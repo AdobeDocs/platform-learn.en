@@ -6,7 +6,7 @@ role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 332060.jpg
-kt: 7335
+jira: KT-7335
 type: Event
 exl-id: 58cd1c30-1a72-4b21-94a6-b29d73b824c2
 ---
