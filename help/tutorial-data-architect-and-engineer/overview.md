@@ -68,4 +68,9 @@ Platform is built API-first. While interface workflows exist for all major Platf
 
 Although you will use multiple technologies in this tutorial, you will remain almost entirely within the Adobe ecosystem. In your own Platform implementation, you will likely integrate Platform with specific third-party technologies. To keep this tutorial relevant for all customers, we will use a more generic implementation. 
 
+## Tutorial updates
+
+* June 2023: Updated to include new Permission workflow and to use OAuth Server-to-Server API credential
+
+
 Now let's move on to the first lesson&mdash;[configure permissions](configure-permissions.md).
