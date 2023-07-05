@@ -1,5 +1,5 @@
 ---
-title: - Update specific profile attributes using upsert
+title: Update specific profile attributes using upsert
 description: Learn how to update a specific attribute of a profile using the upsert feature of Adobe Experience Platform.
 feature: Profiles, Data Ingestion
 role: Architect, Data Architect, Data Engineer, Developer
