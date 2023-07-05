@@ -124,6 +124,7 @@ doc-type: video
   + [View account profiles](/help/platform/profiles/view-account-profiles.md)
   + [Create merge policies](/help/platform/profiles/create-merge-policies.md)
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
+  + [Update a specific attribute using upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy and Security {#privacy}
   + [Introduction to Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
   + [Identity data in Privacy requests](/help/platform/privacy/identity-data-in-privacy-requests.md)
