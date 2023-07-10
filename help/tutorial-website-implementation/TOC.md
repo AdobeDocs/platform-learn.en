@@ -4,6 +4,8 @@ breadcrumb-title: Web Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud solutions on a website with tags.
 solution: Data Collection
 feature: Tags
+role: Data Engineer
+level: Beginner,Intermediate
 jira: KT-2179
 recommendations: noDisplay,noCatalog
 ---

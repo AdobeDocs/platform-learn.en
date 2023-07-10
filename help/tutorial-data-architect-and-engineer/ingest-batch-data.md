@@ -19,6 +19,7 @@ Batch data ingestion allows you to ingest a large amount of data into Adobe Expe
 **Data Engineers** will need to ingest batch data outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about data ingestion:
+
 >[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
 
 
@@ -335,6 +336,6 @@ Adobe partners with multiple ETL vendors to support data ingestion into Experien
 ## Additional Resources
 
 * [Batch Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Batch Ingestion API reference](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Batch Ingestion API reference](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Now let's [stream data using the Web SDK](ingest-streaming-data.md)

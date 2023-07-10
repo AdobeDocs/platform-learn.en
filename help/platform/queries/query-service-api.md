@@ -1,8 +1,8 @@
 ---
 title: Query Service API
 description: Learn how to write and execute queries, create schedule queries, and create a query template using Adobe Experience Platform Query Service API.
-role: Data Engineer, User
 feature: Queries
+role: Data Engineer
 jira: KT-7682
 thumbnail: 333700.jpg
 exl-id: dd9a2521-e1e5-44b4-bd10-c460ed895e52

@@ -41,7 +41,7 @@ I suggest you keep it and use it for further experimentation with Platform. We h
 
 The key resources:
 
-* [Experience Platform tutorials](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Experience Platform tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
 * [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
 * [Experience League courses](https://experienceleague.adobe.com/#dashboard/learning)
 

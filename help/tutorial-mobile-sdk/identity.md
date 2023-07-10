@@ -1,6 +1,7 @@
 ---
 title: Identity
 description: Learn how to collect identity data in a mobile app.
+feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
 ---
 # Identity

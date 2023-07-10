@@ -2,7 +2,9 @@
 title: Use dependency managers
 description: Learn how to use CocoaPods and Gradle to manage Mobile SDK extensions and dependencies. 
 feature: Mobile SDK
-jira: KT-
+role: Developer
+level: Beginner
+jira: KT-2638
 exl-id: 92b8c63a-0ce5-493e-8ebd-2fabfa88d37e
 ---
 # Use dependency managers

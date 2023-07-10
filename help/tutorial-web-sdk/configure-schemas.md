@@ -1,7 +1,7 @@
 ---
 title: Create an XDM schema for web data
 description: Learn how to create an XDM schema for web data in the Data Collection interface. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
-feature: Schemas
+feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 ---
 # Create an XDM schema for web data
