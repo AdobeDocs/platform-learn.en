@@ -4,6 +4,9 @@ description: Learn how to use the Adobe Experience Cloud Debugger to help you un
 landing-page-description: Learn to use the Experience Cloud Debugger to troubleshoot your implementations. Understand what Adobe solutions are implemented and what calls they're making.
 short-description: Learn to use the Experience Cloud Debugger to troubleshoot your implementations. Understand what Adobe solutions are implemented and what calls they're making.
 original-url: https://experienceleague.adobe.com/docs/core-services-learn/tutorials/debugger/use-the-experience-cloud-debugger.html
+feature: Debugger
+role: Data Engineer
+level: Beginner
 thumbnail: 23114.jpeg
 exl-id: 6428ce8e-8a99-4b0b-83d8-02795447179f
 ---

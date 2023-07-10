@@ -3,6 +3,8 @@ user-guide-title: Experience Makers Bootcamp
 breadcrumb-title: Experience Makers Bootcamp
 user-guide-description: A hands-on tutorial covering many aspects of Adobe Experience Platform.
 audience: all
+role: User,Developer
+level: Beginner,Intermediate
 index: no
 hide: yes
 doc-type: multipage

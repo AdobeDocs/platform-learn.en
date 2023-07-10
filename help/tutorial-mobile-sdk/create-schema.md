@@ -1,6 +1,7 @@
 ---
 title: Create an XDM schema
 description: Learn how to create an XDM schema for mobile app events.
+feature: Mobile SDK,Schemas
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
 ---
 # Create an XDM schema
@@ -15,7 +16,7 @@ XDM is a publicly documented specification designed to improve the power of digi
 
 Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. By defining data consistently across systems, it becomes easier to retain meaning and therefore gain value from data.
 
-Before data can be ingested into Platform, a schema must be composed to describe the data’s structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more schema field groups. 
+Before data can be ingested into Platform, a schema must be composed to describe the data's structure and provide constraints to the type of data that can be contained within each field. Schemas consist of a base class and zero or more schema field groups. 
 
 For more information on the schema composition model, including design principles and best practices, see the [basics of schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en) or the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm).
 
@@ -107,9 +108,9 @@ For learning purposes, you will use prebuilt and custom field groups.
 
 >[!NOTE]
 >
->Keep in mind that you do not have to use all the fields in a group. If it’s helpful, you can think of a schema as an empty data layer. In your app, you populate the relevant values at the appropriate time.
+>Keep in mind that you do not have to use all the fields in a group. If it's helpful, you can think of a schema as an empty data layer. In your app, you populate the relevant values at the appropriate time.
 >
->The `Consumer Experience Event` has a data type called `Web information`, which describes events like page view and link clicks. At the time of writing, there isn’t a mobile app parity to this feature, so you are going to create your own. 
+>The `Consumer Experience Event` has a data type called `Web information`, which describes events like page view and link clicks. At the time of writing, there isn't a mobile app parity to this feature, so you are going to create your own. 
 
 ## Create a custom data type
 

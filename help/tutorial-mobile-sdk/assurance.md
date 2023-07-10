@@ -1,6 +1,7 @@
 ---
 title: Set up Assurance
 description: Learn how to implement the Assurance extension in a mobile app.
+feature: Mobile SDK,Assurance
 exl-id: e15774b2-2f52-400f-9313-bb4338a88918
 ---
 # Assurance

@@ -2,7 +2,7 @@
 title: Adobe extension for Mailchimp
 description: Overview video of the Adobe event forwarding extension for Mailchimp.
 feature: Event Forwarding
-role: Developer
+role: Data Engineer
 level: Experienced
 jira: KT-10714
 thumbnail: 345140.jpeg

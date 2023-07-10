@@ -24,6 +24,7 @@ There are two main tasks we must complete in the Data Collection interface:
 **Data Engineers** will need to ingest streaming data outside of this tutorial. When implementing Adobe Experience Platform's Web or Mobile SDKs, typically a web or mobile developer is involved in the data layer creation and tag property configuration.
 
 Before you begin the exercises, watch these two short videos to learn more about streaming data ingestion and Web SDK:
+
 >[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
 >[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
@@ -448,7 +449,7 @@ To validate that the CRM Id is now being sent by the Web SDK:
 
 * [Implement Adobe Experience Cloud with Web SDK](/help/tutorial-web-sdk/overview.md)
 * [Streaming Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
-* [Streaming Ingestion API reference](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [Streaming Ingestion API reference](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 Great job! That was a lot of information about Web SDK and Launch. There is a lot more involved in a full-blown implementation, but those are the basics to help you get started and see the results in Platform.
 

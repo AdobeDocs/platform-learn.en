@@ -1,6 +1,8 @@
 ---
 title: Send data to Adobe Experience Platform
 description: Learn how to send data to Adobe Experience Platform.
+solution: Data Collection,Experience Platform
+feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
 ---
 # Send data to Adobe Experience Platform
