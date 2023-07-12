@@ -130,10 +130,6 @@ Next you can create the Identity Map data element:
    
     ![Data Collection interface](assets/identity-id-namespace.png)
 
->[!WARNING]
->
->The primary identity is required in all records sent to Adobe Experience Platform. By default, the Experience Cloud Id (ECID) is used as Platform Web SDK's primary identity. You would never want to use something like the `Luma CRM ID` as a primary identity with Web SDK, since it only exists after the user authenticates and thus would not be available in all records.
-
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
    
