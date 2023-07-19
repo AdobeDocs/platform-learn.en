@@ -35,6 +35,26 @@ doc-type: video
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
   + [Admin Console](/help/platform/admin/admin-console.md)
   + [Manage product profiles](/help/platform/admin/managing-product-profiles.md)
++ Audiences and Segmentation {#audiences}
+  + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
+  + [Upload audiences](audiences/upload-audiences.md)
+  + [Audience rule builder overview](audiences/audience-rule-builder-overview.md)
+  + [Create audiences](audiences/create-audiences.md)
+  + [Create content-based audiences](audiences/create-content-based-audiences.md)
+  + [Create conversion audiences](audiences/create-conversion-audiences.md)
+  + [Create audiences from existing audiences](audiences/create-audiences-from-existing-audiences.md)
+  + [Create sequential audiences](audiences/create-sequential-audiences.md)
+  + [Create dynamic audiences](audiences/create-dynamic-audiences.md)
+  + [Create multi-entity audiences](audiences/create-multi-entity-audiences.md)
+  + [Create audiences with B2B data](audiences/create-audiences-with-b2b-data.md)
+  + [Demo of streaming segmentation](/help/platform/audiences/streaming-segmentation-demo.md)
+  + [Evaluate an audience rule](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+  + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+  + [Segment Match connection setup](/help/platform/segments/segment-match-connection-setup.md)
+  + [Segment Match data governance](/help/platform/segments/segment-match-data-governance.md)
+  + [Segment Match configuration flow](/help/platform/segments/segment-match-configuration-flow.md)
+  + [Segment Match pre-share insights](/help/platform/segments/segment-match-pre-share-insights.md)
+  + [Segment Match receiving data](/help/platform/segments/segment-match-receiving-data.md)
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Dashboards {#dashboards}
@@ -166,24 +186,6 @@ doc-type: video
   + [Copy schemas between sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
   + [Update schemas](/help/platform/schemas/update-schemas.md)
   + [Create an ad hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
-+ Segments {#segments}
-  + [Segment Builder Overview](/help/platform/segments/segment-builder-overview.md)
-  + [Create segments](/help/platform/segments/create-segments.md)
-  + [Create content-based segments](/help/platform/segments/create-content-based-segments.md)
-  + [Create conversion segments](/help/platform/segments/create-conversion-segments.md)
-  + [Create segments from existing segments](/help/platform/segments/create-segments-from-existing-segments.md)
-  + [Create sequential segments](/help/platform/segments/create-sequential-segments.md)
-  + [Create dynamic segments](/help/platform/segments/create-dynamic-segments.md)
-  + [Create multi-entity segments](/help/platform/segments/create-multi-entity-segments.md)
-  + [Create segments with B2B data](/help/platform/segments/create-segments-with-b2b-data.md)
-  + [Demo of streaming segmentation](/help/platform/segments/streaming-segmentation-demo.md)
-  + [Evaluate a segment](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-  + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-  + [Segment Match connection setup](/help/platform/segments/segment-match-connection-setup.md)
-  + [Segment Match data governance](/help/platform/segments/segment-match-data-governance.md)
-  + [Segment Match configuration flow](/help/platform/segments/segment-match-configuration-flow.md)
-  + [Segment Match pre-share insights](/help/platform/segments/segment-match-pre-share-insights.md)
-  + [Segment Match receiving data](/help/platform/segments/segment-match-receiving-data.md)
 + Sources {#sources}  
   + [Sources overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
