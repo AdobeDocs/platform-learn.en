@@ -199,8 +199,11 @@ doc-type: video
   + [Stream data using Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
   + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Experience Cloud Integrations {#experience-cloud}
-  + [Magento](/help/platform/experience-cloud/business-value-of-platform-and-magento.md)
-  + [Orchestrate campaigns with Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+  + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
+  + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+  + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
+  + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+  + [Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
 + Industry Trends {#industry}
   + [The Future of Data Management and the Changing Environment](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
   + [A Tale of Two Perceptions - Brands vs. Consumers](/help/platform/industry/brands-vs-consumers.md)
