@@ -1,7 +1,7 @@
 ---
 title: Integrate Google Customer Match with Adobe's Real-Time Customer Data Platform
 description: This video shows how Adobe’s Real-Time Customer Data Platform and Google’s Customer Match capabilities help brands engage with customers on Google’s owned and operated properties to scale their outreach campaigns.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 role: User
 feature: Destinations
 jira: KT-5948

@@ -1,7 +1,7 @@
 ---
 title: Use Customer AI Scores and Insights
 description: Learn how to use Customer AI propensity scores and insights to convert and retain customers.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-4171

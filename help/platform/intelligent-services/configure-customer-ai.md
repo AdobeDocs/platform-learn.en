@@ -1,7 +1,7 @@
 ---
 title: Configure Customer AI
 description: Learn how to create an instance of Customer AI to predict customer behavior.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-4172

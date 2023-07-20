@@ -1,7 +1,7 @@
 ---
 title: Introduction to Customer AI
 description: A high-level overview of how marketers can use Customer AI to generate customer predictions.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
 jira: KT-4807
