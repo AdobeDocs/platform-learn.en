@@ -11,6 +11,10 @@ exl-id: 822a5115-1dba-4b8c-931b-416e94a0eadf
 
 Learn how the streaming segmentation feature in Adobe Experience Platform allows brands to personalize customer experiences based on real-time data. See an example customer experience and get a quick tour of the interface.
 
+>[!IMPORTANT]
+>
+> "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
+
 >[!VIDEO](https://video.tv.adobe.com/v/36184?quality=12&learn=on)
 
 For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
