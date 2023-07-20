@@ -13,8 +13,5 @@ exl-id: 10d19094-0fc3-4075-b52e-684805c85213
 
 Learn how to activate segments and profile attributes from Adobe Real-Time Customer Data Platform to Adobe Target to display real-time personalized content in your websites, mobile apps, and other digital properties. For more information, see the [Activate audience data to profile request destinations documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
 
->[!IMPORTANT]
->
->The Real-Time CDP profile attributes feature is currently in Beta. The enhanced Adobe Target V2 destination connector containing the profile attributes capability is currently in beta and only available to a select number of customers. 
 
 >[!VIDEO](https://video.tv.adobe.com/v/3419036/?learn=on)
