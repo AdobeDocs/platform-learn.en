@@ -1,7 +1,7 @@
 ---
 title: Create schemas for B2B
 description: Learn how to create schemas for your business data with Real-Time Customer Data Platform, B2B Edition.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 feature: Schemas
 role: Data Architect
 jira: KT-9258

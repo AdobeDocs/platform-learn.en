@@ -1,7 +1,7 @@
 ---
 title: Introduction to Intelligent Services
 description: A high-level introduction to Intelligent Services, which empower marketing analysts and practitioners to use the power of Artificial Intelligence and Machine Learning in customer experience use cases without data science expertise.
-solution: Experience Platform, Real-time Customer Data Platform
+solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI, Attribution AI
 role: User
 jira: KT-4170

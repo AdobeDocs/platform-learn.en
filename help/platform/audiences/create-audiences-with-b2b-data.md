@@ -1,7 +1,7 @@
 ---
 title: Create audiences with B2B data
 description: Learn how to create audiences with B2B data.
-solution: Real-time Customer Data Platform
+solution: Real-Time Customer Data Platform
 feature: Segments
 role: User
 jira: KT-9261
