@@ -12,7 +12,7 @@ exl-id: 8432f6d5-bc96-404b-ae5f-7cbef7e16abb
 
 Learn how to create audiences with your B2B data in Real-Time Customer Data Platform, B2B Edition and Adobe Experience Platform. Use account profiles and opportunities in audience rule definitions.
 
->[!IMPORTANT]
+>[!NOTE]
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 

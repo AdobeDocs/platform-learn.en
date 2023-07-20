@@ -13,7 +13,7 @@ exl-id: 5a4e4cce-5371-4731-978e-2ace22fb4551
 
 In this video, learn how to use the audience rule builder in Experience Platform to create an audience that has performed a conversion event, either on a Web site or in other data systems.
 
->[!IMPORTANT]
+>[!NOTE]
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 

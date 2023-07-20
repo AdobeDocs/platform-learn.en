@@ -13,7 +13,7 @@ This video shows you how to build multi-entity audiences in Adobe Experience Pla
 
 <!--Segment context (segment payload) allows you to provide key contextual details, such as a visitor's abandoned cart contents, in your segment definition so you can send personalized messages.--> 
 
->[!IMPORTANT]
+>[!NOTE]
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 

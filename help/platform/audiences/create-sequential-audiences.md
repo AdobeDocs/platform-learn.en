@@ -13,7 +13,7 @@ exl-id: b7b5111c-4e30-4a69-bde1-d75df03fbf86
 
 In this video, learn how to add Experience Events to a timeline in your audience, in order to create an audience that has performed actions in a certain order within a certain amount of time.
 
->[!IMPORTANT]
+>[!NOTE]
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 

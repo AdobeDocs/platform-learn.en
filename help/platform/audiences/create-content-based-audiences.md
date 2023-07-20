@@ -13,7 +13,7 @@ exl-id: bafe275e-19f3-4b86-9fcd-0516fada55ec
 
 Learn the basics on creating a content affinity audience in the audience rule builder in Experience Platform.
 
->[!IMPORTANT]
+>[!NOTE]
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 
