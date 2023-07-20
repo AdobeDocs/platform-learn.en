@@ -7,7 +7,7 @@ jira: KT-2705
 thumbnail: 27428.jpg
 exl-id: 5e3b7d65-10e6-418f-98ab-99a3ac47e839
 ---
-# Create dynamic segments
+# Create dynamic audiences
 
 Dynamic audiences are an advanced segmentation feature in Adobe Experience Platform which solves the scalability problems marketers traditionally face when building audiences for marketing campaigns.
 
