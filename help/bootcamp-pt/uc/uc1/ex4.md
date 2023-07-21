@@ -6,7 +6,7 @@ audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
-feature: Segmentation, Integrations
+feature: Segments, Integrations
 exl-id: 862afd4c-1b6c-48fe-bc1f-967c065642e0
 ---
 # 1.4 Ação: envie seu segmento para o Adobe Target

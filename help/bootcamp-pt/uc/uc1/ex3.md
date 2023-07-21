@@ -5,7 +5,7 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
-feature: Segmentation
+feature: Segments
 exl-id: 9b8d93b5-5bed-4600-8602-b438a0893612
 ---
 # 1.3 Crie um segmento - UI
