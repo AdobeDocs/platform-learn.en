@@ -5,6 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Connections
 exl-id: 51078fca-f234-4e50-96ba-ee7f5e286869
 ---
 # 4.2 Conecte datasets da Adobe Experience Platform no Customer Journey Analytics
@@ -109,7 +112,7 @@ Você também precisa garantir que, para cada dataset, essas opções estejam ha
 
 - Importar todos os novos dados
 - Preencher todos os dados existentes
-- Preencher tipo de fonte de dados com “Others”
+- Preencher tipo de fonte de dados com "Others"
 - Preencher a descrição com o mesmo nome do Dataset
 
 Clique em **Add datasets**.

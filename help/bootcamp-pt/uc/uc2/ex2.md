@@ -5,6 +5,9 @@ jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Events
 exl-id: 1b9d7a35-cddf-4f4a-ad0a-95723b00c278
 ---
 # 2.2 Crie seu evento

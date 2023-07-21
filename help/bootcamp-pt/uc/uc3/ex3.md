@@ -5,6 +5,9 @@ jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Events
 exl-id: a4ef6eaf-6b39-4450-82bf-7db99595a323
 ---
 # 3.3 Crie sua jornada e notificação push

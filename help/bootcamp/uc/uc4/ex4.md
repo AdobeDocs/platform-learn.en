@@ -5,6 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Workspace Basics, Calculated Metrics
 exl-id: 6a9fc1a4-9a6a-43f2-9393-815f9dc2cb4e
 ---
 # 4.4 Data preparation in Analysis Workspace

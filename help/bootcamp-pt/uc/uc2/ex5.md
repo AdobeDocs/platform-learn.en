@@ -5,6 +5,7 @@ jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+feature: Mobile SDK
 exl-id: e3b920b1-e5e6-4fcc-b707-29c5943acec8
 ---
 # 2.5 Instale e use o aplicativo móvel

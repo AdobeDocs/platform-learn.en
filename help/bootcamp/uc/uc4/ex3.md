@@ -5,6 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Data Views
 exl-id: e634876c-2b1c-4f7f-99e5-1940f6c87d80
 ---
 # 4.3 Create a Data View
