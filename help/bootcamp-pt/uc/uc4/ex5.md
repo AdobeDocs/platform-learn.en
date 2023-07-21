@@ -5,6 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Visualizations
 exl-id: eb5eac54-22d8-428b-acac-16570f75085e
 ---
 # 4.5 Visualização usando o Customer Journey Analytics

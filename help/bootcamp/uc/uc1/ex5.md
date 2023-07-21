@@ -5,6 +5,7 @@ jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+feature: Destinations
 exl-id: 31f46e37-f1c0-4730-8520-1ccd98df6501
 ---
 # 1.5 Take Action: send your segment to Facebook

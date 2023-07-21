@@ -5,6 +5,9 @@ jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Events
 exl-id: be8c23ec-c5f8-4abc-849f-994446072a84
 ---
 # 3.3 Create your journey and push notification

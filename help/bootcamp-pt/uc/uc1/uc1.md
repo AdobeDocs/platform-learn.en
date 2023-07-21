@@ -5,6 +5,7 @@ jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+feature: Profiles, Segments, Integrations, Destinations
 exl-id: 4392bdc2-ec43-4f2d-99af-719e9979f0c5
 ---
 # 1. Aquisição

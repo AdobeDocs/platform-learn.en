@@ -5,6 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer, Experience Platform
+feature-set: Journey Optimizer, Experience Platform
+feature: Events, Journeys, Profiles, Mobile SDK
 exl-id: 21ca2a7a-fdf2-4cdf-97df-13c4e208d2ea
 ---
 # 2. Objetivos de aprendizado 

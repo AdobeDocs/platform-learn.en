@@ -5,6 +5,9 @@ jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Events
 exl-id: 45c77177-9ea9-4c3d-a40e-c04a747938eb
 ---
 # 3.4 Test your journey

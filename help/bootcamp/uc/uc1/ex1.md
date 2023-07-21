@@ -5,6 +5,7 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+feature: Profiles
 exl-id: 32a084a3-4c04-4367-947e-f7151fdad73b
 ---
 # 1.1 From unknown to known on the website

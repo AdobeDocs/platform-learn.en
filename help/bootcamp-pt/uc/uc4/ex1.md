@@ -5,6 +5,7 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
 exl-id: 63933d9e-b774-483f-b547-188c77440595
 ---
 # 4.1 Customer Journey Analytics 101 

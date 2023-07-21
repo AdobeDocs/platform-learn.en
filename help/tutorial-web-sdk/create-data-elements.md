@@ -62,7 +62,7 @@ Before you begin creating the XDM object, create the following set of data eleme
     ![Create Data Element](assets/data-element-create.jpg)
 
 1. Name the data element `page.pageInfo.pageName`
-1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to a value in Luma’s data layer: `digitalData.page.pageInfo.pageName`
+1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to a value in Luma's data layer: `digitalData.page.pageInfo.pageName`
 
 1. Check the boxes for **[!UICONTROL Force lowercase value]** and **[!UICONTROL Clean text]** to standardize the case and remove extraneous spaces
 
@@ -125,10 +125,18 @@ Next you can create the Identity Map data element:
 -->
 
 1. As the **[!UICONTROL Authenticated state]**, select **[!UICONTROL Authenticated]**
+1. Select **[!UICONTROL Primary]**
 
 1. Select **[!UICONTROL Save]**
    
     ![Data Collection interface](assets/identity-id-namespace.png)
+
+>[!TIP]
+>
+> Adobe recommends sending identities which represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
+
+
+
 
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console

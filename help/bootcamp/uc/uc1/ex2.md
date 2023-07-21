@@ -5,6 +5,7 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+feature: Profiles
 exl-id: 4c810767-00ab-4cae-baa9-97b0cb9bf2df
 ---
 # 1.2 Visualize your own Real-time Customer Profile - UI

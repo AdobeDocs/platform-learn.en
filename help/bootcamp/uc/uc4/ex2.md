@@ -5,6 +5,9 @@ jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Connections
 exl-id: 47e02021-019c-4ea4-a7a8-003deef7c9e5
 ---
 # 4.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
@@ -64,7 +67,7 @@ You'll then have this. Click **Next**.
 
 ### Person ID
 
-The goal now is to join these datasets. For every dataset you selected, you’ll see a field called **Person ID**. Each dataset has its own Person ID field. 
+The goal now is to join these datasets. For every dataset you selected, you'll see a field called **Person ID**. Each dataset has its own Person ID field. 
 
 ![demo](./images/cja11.png)
 
