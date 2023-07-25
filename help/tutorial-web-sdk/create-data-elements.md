@@ -135,7 +135,7 @@ Next you can create the Identity Map data element:
 >
 > Adobe recommends sending identities which represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
 >
-> If the identity map contains the person identifier (e.g. Luma CRM Id), then the person identifier will become the [!UICONTROL primary] identity. Otherwise, ECID becomes the [!UICONTROL primary] identity.
+> If the identity map contains the person identifier (e.g. `Luma CRM Id`), then the person identifier will become the [!UICONTROL primary] identity. Otherwise, `ECID` becomes the [!UICONTROL primary] identity.
 
 
 
