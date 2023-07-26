@@ -5,8 +5,8 @@ feature: Privacy
 role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
-thumbnail: 332062.jpg
 jira: KT-7334
+thumbnail: 332062.jpg
 type: Event
 exl-id: 00664b18-f230-44b8-a963-7ef0298ea39b
 ---

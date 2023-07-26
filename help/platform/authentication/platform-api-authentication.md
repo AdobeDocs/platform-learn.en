@@ -1,8 +1,9 @@
 ---
 title: Authenticate and access Experience Platform APIs
 description: Learn how to access to Adobe Experience Platform APIs. 
-role: Developer
 feature: API
+role: Developer
+level: Beginner
 jira: KT-3688
 thumbnail: 28832.jpeg
 last-substantial-update: 2023-06-21

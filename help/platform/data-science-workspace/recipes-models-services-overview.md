@@ -1,8 +1,9 @@
 ---
 title: Recipes, models, and services overview
 description: Learn about recipes, models, and services in Adobe Experience Platform Data Science Workspace.
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7807
 thumbnail: 333380.jpg
 exl-id: 1aa07a46-5997-4288-959d-2d255fd76983

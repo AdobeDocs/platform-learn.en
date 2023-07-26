@@ -1,8 +1,9 @@
 ---
 title: Use Sandboxes
 description: Explore how Experience Platform Sandboxes provide data isolation and environments where they can try out new or existing functionality, work with a 'fail fast' approach and be able to reset and restart the development initiatives.
-role: Data Architect, Data Engineer
 feature: Sandboxes
+role: Data Architect, Data Engineer, Admin
+level: Beginner
 jira: KT-4018
 thumbnail: 29838.jpg
 exl-id: 65e50b0e-0999-4992-86e9-037065ed0d01

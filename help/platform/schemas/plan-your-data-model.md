@@ -1,8 +1,9 @@
 ---
 title: Plan your data model
 description: Do these things before you start building your schemas in Adobe Experience Platform.
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-7932
 thumbnail: 333478.jpg
 exl-id: f3912973-0f15-4113-8706-6a36b6d24c17

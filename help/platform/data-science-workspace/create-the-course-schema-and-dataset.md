@@ -1,8 +1,9 @@
 ---
 title: Create the course schema and dataset
 description: Learn how to create the Data Science Workspace course dataset and schema that are used in the remainder of the course.
-role: User
 feature: Data Science Workspace
+role: User
+level: Beginner
 jira: KT-7285
 thumbnail: 333312.jpg
 hidefromtoc: yes

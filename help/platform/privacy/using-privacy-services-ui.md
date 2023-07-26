@@ -1,8 +1,9 @@
 ---
 title: Using the Privacy Service interface
 description: Learn how to create privacy requests in the UI and monitor/review their status in the dashboard.
-role: Data Engineer, Data Architect
 feature: Privacy
+role: Data Engineer, Data Architect, Developer
+level: Beginner
 jira: KT-7719
 thumbnail: 336079.png
 exl-id: 8436345a-7e0b-40af-8bd8-534fdf1f8e44

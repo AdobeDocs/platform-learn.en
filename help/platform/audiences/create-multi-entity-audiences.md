@@ -1,8 +1,9 @@
 ---
 title: Create multi-entity audiences
 description: This video shows you how to build multi-entity audiences in Adobe Experience Platform's audience rule builder.  Multi-entity segmentation, or segmentation across classes, allows you to build audiences combining data based on multiple XDM classes.
-role: User
 feature: Segments
+role: User
+level: Intermediate
 jira: KT-3697
 thumbnail: 32179.jpg
 exl-id: cace814d-7124-432c-91fb-896725b701a4

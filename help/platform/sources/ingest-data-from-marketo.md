@@ -3,8 +3,9 @@ title: Ingest data from Marketo Engage
 description: Learn how to ingest data from Marketo Engage using the source connector using the standard and template workflows.
 solution: Real-Time Customer Data Platform
 feature: Sources
-role: Data Engineer, Data Architect
-jira: KT-9259, 13303
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
+jira: KT-9259, KT-13303
 last-substantial-update: 2023-05-24
 thumbnail: 338250.jpg
 exl-id: cc432fcf-2ff3-48bc-8053-7a6d1f643869

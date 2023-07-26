@@ -4,10 +4,9 @@ description: Learn how to upload audiences in CSV format into Adobe Experience P
 feature: Segments
 role: User
 level: Beginner
-doc-type: Feature Video
-last-substantial-update: 2023-07-19
 jira: KT-13699
 thumbnail: 3421714.jpeg
+last-substantial-update: 2023-07-19
 ---
 
 # Upload audiences into Adobe Experience Platform

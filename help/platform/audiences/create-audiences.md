@@ -1,8 +1,9 @@
 ---
 title: Create audiences
 description: Learn how to create audiences in Adobe Experience Platform.
-role: User
 feature: Segments
+role: User
+level: Beginner
 jira: KT-2704
 thumbnail: 27254.jpg
 exl-id: 5d2a8b17-baf9-4c52-9ebc-7f058ab0e64d

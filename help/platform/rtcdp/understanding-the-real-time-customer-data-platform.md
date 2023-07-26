@@ -2,8 +2,9 @@
 title: Understanding Adobe Real-Time Customer Data Platform
 description: Learn how Adobe Real-Time Customer Data Platform (CDP) brings together known and unknown customer data to create and activate trusted customer profiles.
 solution: Real-Time Customer Data Platform
-role: User
 feature: Destinations
+role: User
+level: Beginner
 jira: KT-3821
 thumbnail: 29705.jpg
 exl-id: 790ff110-f74b-4b05-a2d4-e447c2a8ff34

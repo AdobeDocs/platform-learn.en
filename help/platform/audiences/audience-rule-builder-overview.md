@@ -4,9 +4,8 @@ description: Get an introduction to the Audience rule builder in Experience Plat
 feature: Segments
 role: User
 level: Beginner
-doc-type: feature video
-thumbnail: 333301.jpg
 jira: KT-7887
+thumbnail: 333301.jpg
 exl-id: ed66a76e-909b-4b60-887f-58e3d6ab349f
 ---
 # Audience rule builder overview
