@@ -1,5 +1,5 @@
 ---
-title: Troubleshoot: Unable to connect to SFTP source connector
+title: Troubleshoot - Unable to connect to SFTP source connector
 description: Learn best practices to avoid connection issues with the SFTP source connector. Review specific check points to successfully connect your SFTP server to Adobe Experience Platform.
 feature: Sources
 role: Data Engineer, Data Architect, Developer
