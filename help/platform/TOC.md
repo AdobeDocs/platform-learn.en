@@ -197,7 +197,7 @@ doc-type: video
   + [Ingest data from databases](/help/platform/sources/ingest-data-from-databases.md)
   + [Stream data with HTTP API](/help/platform/sources/streaming-ingestion-http-api.md)
   + [Stream data using Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
-  + [Next-hit personalization with Adobe Target](https://experienceleague.adobe.com/docs/platform-learn/tutorials/destinations/target/next-hit-personalization.html)
+  + [Troubleshoot: SFTP Connector](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
