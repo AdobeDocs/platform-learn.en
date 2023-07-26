@@ -4,10 +4,9 @@ description: See how Adobe is reimagining audiences in Adobe Experience Platform
 feature: Segments
 role: User
 level: Beginner
-doc-type: Feature Video
-last-substantial-update: 2023-07-19
 jira: KT-13698
 thumbnail: 3421713.jpeg
+last-substantial-update: 2023-07-19
 ---
 
 # Introduction to Audience Portal and Composition

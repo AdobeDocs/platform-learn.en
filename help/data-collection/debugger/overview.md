@@ -4,7 +4,6 @@ description: Learn how the Adobe Experience Platform Debugger Chrome extension a
 landing-page-description: Debug your web implementations of the Adobe Experience Platform Web SDK and Experience Cloud applications.
 short-description: Debug your web implementations of the Adobe Experience Platform Web SDK and Experience Cloud applications.
 feature: Debugger
-role: Data Engineer
 level: Beginner
 jira: KT-4723
 thumbnail: 32156.jpg

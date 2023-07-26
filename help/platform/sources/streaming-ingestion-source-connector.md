@@ -1,8 +1,9 @@
 ---
 title: Stream data using Source Connectors
 description: This video shows how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 jira: KT-7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd

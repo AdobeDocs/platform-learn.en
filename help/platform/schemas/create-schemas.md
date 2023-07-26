@@ -1,8 +1,9 @@
 ---
 title: Create schemas
 description: This video shows you how to create a schema in Adobe Experience Platform using the XDM Individual Profile class and various field groups.
-role: Data Architect
 feature: Schemas
+role: Data Architect, Developer
+level: Beginner
 jira: KT-2697
 thumbnail: 27012.jpg
 exl-id: 65c83db2-d81f-4422-81e5-cd9c15cdacbf

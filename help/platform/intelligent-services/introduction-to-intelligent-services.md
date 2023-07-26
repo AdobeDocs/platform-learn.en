@@ -4,6 +4,7 @@ description: A high-level introduction to Intelligent Services, which empower ma
 solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI, Attribution AI
 role: User
+level: Beginner
 jira: KT-4170
 thumbnail: 32654.jpg
 exl-id: 23e15df2-1bf2-4c19-a5d5-9cfb2f7b0bd8

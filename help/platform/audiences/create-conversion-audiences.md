@@ -3,10 +3,9 @@ title: Create conversion audiences
 description: In this video, learn how to use the audience rule builder in Experience Platform to create an audience that has performed a conversion event, either on a Web site or in other data systems.
 feature: Segments
 role: User
-level: Beginner
-doc-type: feature video
-thumbnail: 333303.jpg
+level: Intermediate
 jira: KT-7890
+thumbnail: 333303.jpg
 exl-id: 5a4e4cce-5371-4731-978e-2ace22fb4551
 ---
 # Create conversion audiences

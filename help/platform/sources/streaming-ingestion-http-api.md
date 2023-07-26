@@ -1,8 +1,9 @@
 ---
 title: Ingest Data using Streaming Connection HTTP API endpoint
 description: This video shows how to stream data to Adobe Experience Platform in real-time using the HTTP API endpoint.
-role: Data Engineer, Data Architect
 feature: Sources
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 jira: KT-6686
 thumbnail: 331028.jpg
 exl-id: 2f9c3f6f-169a-431f-b697-a5ed86c274f5

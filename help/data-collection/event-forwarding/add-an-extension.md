@@ -2,7 +2,6 @@
 title: Add an event-forwarding extension
 description: Learn how to add an event-forwarding extension in Data Collection.
 feature: Event Forwarding
-role: Data Engineer
 level: Intermediate
 jira: KT-6422
 thumbnail: 331941.jpeg

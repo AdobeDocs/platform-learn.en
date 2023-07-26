@@ -2,7 +2,6 @@
 title: Event forwarding overview
 description: Learn how event forwarding centralizes data collection, reduces the amount of code required in your web and mobile apps, and streams data to non-Adobe solutions via Adobe Experience Platform Edge Network.
 feature: Event Forwarding
-role: Data Engineer
 level: Beginner
 jira: KT-6419
 thumbnail: 331937.jpeg

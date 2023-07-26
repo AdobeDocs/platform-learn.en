@@ -1,8 +1,9 @@
 ---
 title: Configure attribute-based access control
 description: Learn how to configure attribute-based access control to control access to specific Experience Platform resources.
-role: Admin, User
 feature: Access Control
+role: Admin, User
+level: Beginner
 jira: KT-10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2022-07-28

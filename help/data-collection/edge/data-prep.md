@@ -1,7 +1,7 @@
 ---
 title: Data Prep for Data Collection
 description: Learn how to add your data layer to a new datastream in Data Collection.
-feature: Web SDK, Datastreams
+feature: Datastreams
 role: Data Architect, Data Engineer, Developer
 level: Intermediate
 jira: KT-10194

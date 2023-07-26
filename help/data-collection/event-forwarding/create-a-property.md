@@ -2,7 +2,6 @@
 title: Create an event-forwarding property
 description: Learn how to create an event-forwarding property in Data Collection.
 feature: Event Forwarding
-role: Data Engineer
 level: Intermediate
 jira: KT-6420
 thumbnail: 331938.jpeg

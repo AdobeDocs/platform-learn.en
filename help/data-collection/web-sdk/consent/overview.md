@@ -2,7 +2,7 @@
 title: Consent overview
 description: Learn how consent management in Adobe Experience Platform Web SDK helps you comply with legal privacy requirements and honor your customers' preferences.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Beginner
 jira: KT-7543
 exl-id: 485de3fb-c394-4f98-8bd8-22b88a4a9f93
 ---

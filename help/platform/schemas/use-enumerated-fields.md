@@ -2,7 +2,7 @@
 title: Use enumerated fields and suggested values
 description: Learn how to use enumerated fields and suggested values to create friendly dropdown menus in the segment builder interface.
 feature: Schemas
-role: Data Architect, Data Engineer
+role: Data Architect, Data Engineer, Developer
 level: Intermediate
 jira: KT-11165
 thumbnail: 3409501.jpeg

@@ -4,6 +4,7 @@ description: Learn how to create an instance of Customer AI to predict customer 
 solution: Experience Platform, Real-Time Customer Data Platform
 feature: Customer AI
 role: User
+level: Beginner
 jira: KT-4172
 thumbnail: 32665.jpg
 exl-id: 84600a0f-ec10-484d-ae36-766fc6f8ca16

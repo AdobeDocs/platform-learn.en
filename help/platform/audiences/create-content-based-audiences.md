@@ -3,10 +3,9 @@ title: Create content-based audiences
 description: Learn the basics on creating a content affinity audience in the audience rule builder in Experience Platform.
 feature: Segments
 role: User
-level: Beginner
-doc-type: feature video
-thumbnail: 333302.jpg
+level: Intermediate
 jira: KT-7889
+thumbnail: 333302.jpg
 exl-id: bafe275e-19f3-4b86-9fcd-0516fada55ec
 ---
 # Create content-based audiences

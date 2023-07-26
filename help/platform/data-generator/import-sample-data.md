@@ -1,8 +1,9 @@
 ---
 title: Import sample data to Adobe Experience Platform
 description: Learn how to set up an Experience Platform sandbox environment with some sample data.
-role: Developer
 feature: API
+role: Developer
+level: Experienced
 jira: KT-7349
 thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21
