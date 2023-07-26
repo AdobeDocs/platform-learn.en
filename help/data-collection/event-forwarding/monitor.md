@@ -2,7 +2,6 @@
 title: Monitor event forwarding
 description: Learn how to monitor event forwarding in the Data Collection interface.
 feature: Event Forwarding
-role: Data Engineer
 level: Experienced
 jira: KT-10611
 thumbnail: 343999.jpeg

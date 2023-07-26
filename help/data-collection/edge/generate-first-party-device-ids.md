@@ -2,6 +2,7 @@
 title: Generate first-party device IDs
 description: Learn how to generate first-party device IDs
 feature: Web SDK
+level: Experienced
 jira: KT-9728
 thumbnail: KT-9728.jpeg
 exl-id: 2e3c1f71-e224-4631-b680-a05ecd4c01e7

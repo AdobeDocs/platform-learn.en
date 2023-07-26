@@ -2,7 +2,6 @@
 title: Set up Google enhanced conversions
 description: Enhance Google conversion data with first-party hashed data using event forwarding and the Google Ads API.
 feature: Event Forwarding
-role: Data Engineer
 level: Experienced
 doc-type: Feature Video
 last-substantial-update: 2022-11-15

@@ -2,7 +2,7 @@
 title: Set consent using the Adobe standard
 description: Learn how to use the Adobe Experience Platform Web SDK to set consent values according to the Adobe standard 1.0 and 2.0.
 feature: Web SDK, Tags
-role: Developer, Data Engineer
+level: Intermediate
 jira: KT-7570
 exl-id: aa042e2f-5b22-429f-9028-19eadc288fdc
 ---

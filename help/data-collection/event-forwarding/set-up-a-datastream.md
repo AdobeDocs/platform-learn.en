@@ -2,7 +2,6 @@
 title: Set up a datastream for event forwarding
 description: Learn how to set up a datastream for event forwarding.
 feature: Event Forwarding, Datastreams
-role: Data Engineer
 level: Intermediate
 jira: KT-6421
 thumbnail: 331939.jpeg
