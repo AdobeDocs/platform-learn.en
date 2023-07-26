@@ -18,7 +18,7 @@ doc-type: video
   + [Integrations with Experience Cloud applications](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
   + [Key use cases](/help/platform/intro-to-platform/key-use-cases.md)
   + [Basic architecture](/help/platform/intro-to-platform/basic-architecture.md)
-  + [Using the Platform user interface](/help/platform/intro-to-platform/interface-tour.md)
+  + [User interface](/help/platform/intro-to-platform/interface-tour.md)
   + [Roles and project phases](/help/platform/intro-to-platform/roles-and-project-phases.md)
 + Introduction to Real-Time CDP {#rtcdp}
     + [Overview](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform.md)
