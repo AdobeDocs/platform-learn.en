@@ -4,6 +4,7 @@ description: Learn how to validate if data has successfully ingested into the da
 feature: Queries
 role: Data Engineer, Data Architect, Developer, Architect
 level: Intermediate
+last-substantial-update: 2023-07-26
 jira: KT-11948
 ---
 # Validate data in the datalake
