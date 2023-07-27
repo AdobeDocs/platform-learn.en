@@ -211,4 +211,3 @@ doc-type: video
   + [Evolving Your Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
   + [Building better experiences with customer profiles](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
   + [Data Collaboration in the First-party Data Context](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)
-  + [Translate](translate.md)
