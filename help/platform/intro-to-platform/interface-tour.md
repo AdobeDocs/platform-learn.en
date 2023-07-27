@@ -5,6 +5,7 @@ role: Leader, Architect, Developer, Data Architect, Data Engineer, Admin, User
 level: Beginner
 jira: KT-4821
 thumbnail: 32792.jpg
+last-substantial-update: 2023-07-26
 exl-id: 2d7af2cb-7222-4f87-8bd5-cb0c341cdd33
 ---
 # Interface tour of Adobe Experience Platform

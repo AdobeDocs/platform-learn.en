@@ -1,10 +1,11 @@
 ---
 title: What is next-hit personalization with Real-Time CDP and Adobe Target?
 description: Learn how to personalize on the next hit with Real-Time Customer Data Platform (CDP) and Adobe Target.
-role: User
 solution: Real-Time Customer Data Platform,Target
 feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
+role: User
+level: Beginner
 jira: KT-9629
 thumbnail: 340091.jpg
 exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
