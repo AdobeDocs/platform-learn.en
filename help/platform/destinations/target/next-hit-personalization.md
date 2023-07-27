@@ -4,6 +4,8 @@ description: Learn how to personalize on the next hit with Real-Time Customer Da
 solution: Real-Time Customer Data Platform,Target
 feature-set: Experience Platform,Target
 feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
+topic: Integrations
+badgeIntegration: label="Integration" type="positive"
 role: User
 level: Beginner
 jira: KT-9629

@@ -1,7 +1,11 @@
 ---
 title: How do I configure the Adobe Target destination in Adobe Real-Time CDP?
 description: Learn how to configure the Adobe Target destination in Real-Time Customer Data Platform to start sending segments and profile attributes from Real-Time CDP to Target.
-feature: Destinations
+solution: Real-Time Customer Data Platform,Target
+feature-set: Experience Platform,Target
+feature: Integrations,Segments,Web SDK,Destinations,Datastreams,Audiences,Experience Targeting
+topic: Integrations
+badgeIntegration: label="Integration" type="positive"
 role: Admin, Architect, User
 level: Intermediate
 doc-type: Feature Video

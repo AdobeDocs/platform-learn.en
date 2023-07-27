@@ -1,9 +1,11 @@
 ---
 title: How do I use Real-Time CDP segments in Adobe Target?
 description: Learn how to use Real-Time Customer Data Platform segments in Adobe Target to deliver personalized experiences on your website and mobile apps.
+solution: Experience Platform, Target
 feature-set: Experience Platform, Target
 feature: Destinations, Segments, Audiences, Integrations
-solution: Experience Platform, Target
+topic: Integrations
+badgeIntegration: label="Integration" type="positive"
 role: User
 level: Intermediate
 doc-type: Feature Video
