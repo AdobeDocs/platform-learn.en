@@ -172,6 +172,7 @@ doc-type: video
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Recharge your customer data](/help/platform/queries/recharge-your-customer-data.md)
   + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+  + [Validate data in the datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
   + [Building blocks](/help/platform/schemas/schema-building-blocks.md)
