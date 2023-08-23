@@ -87,7 +87,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
     This code:
     
     1. Calls the `UserProfile.getUserAttributes` closure with the `iPaidUser` attribute name as single element in the `attributeNames` array.
-    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the <image src="assets/paiduser.png" width=20> icon in the toolbar at the top right.
+    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the <img src="assets/paiduser.png" width=20/> icon in the toolbar at the top right.
 
 Additional documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
