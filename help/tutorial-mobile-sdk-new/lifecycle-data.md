@@ -45,23 +45,22 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 ## Implementation changes
 
-Now you can update `SceneDelegate` to register the lifecycle events:
+Now you can update your project to register the lifecycle events.
 
-1. When launched, if your app is resuming from a background state, iOS might call your `sceneWillEnterForeground:` delegate method and this is where you want to trigger a lifecycle start event. Add the highlighted code:
+1. Navigate to Luma > Luma > SceneDelegate in Xcode Project navigator.
+
+1. When launched, if your app is resuming from a background state, iOS might call your `sceneWillEnterForeground:` delegate method and this is where you want to trigger a lifecycle start event. Add this code to `func sceneWillEnterForeground(_ scene: UIScene)`:
  
-   ```swift {highlight="3"}
-   func sceneWillEnterForeground(_ scene: UIScene) {
-      // When in foreground start lifecycle data collection
-      MobileCore.lifecycleStart(additionalContextData: nil)
-   }
+   ```swift
+   // When in foreground start lifecycle data collection
+   MobileCore.lifecycleStart(additionalContextData: nil)
    ```
 
-1. When the app enters the background, you want to pause Lifecycle data collection from your app's `sceneDidEnterBackground:` delegate method. Add the highlighted code:
+1. When the app enters the background, you want to pause lifecycle data collection from your app's `sceneDidEnterBackground:` delegate method. Add this code to  `func sceneDidEnterBackground(_ scene: UIScene)`:
 
-   ```swift {highlight="3"}
-   func sceneDidEnterBackground(_ scene: UIScene) {
-      // When in background pause lifecycle data collection
-      MobileCore.lifecyclePause()
+   ```swift
+   // When in background pause lifecycle data collection
+   MobileCore.lifecyclePause()
    }
    ```
 

@@ -46,36 +46,21 @@ Identity namespaces are components of [Identity Service](https://experienceleagu
 
 You want to update both the standard identity (email) and the custom identity (Luma CRM ID) when the user logs into the app.
 
-1. Navigate to **[!UICONTROL LoginSheet]** (in **[!UICONTROL Views]** > **[!UICONTROL General]**) in the Xcode Luma app project and find the call to `updateIdentities`:
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator and find the the `func updateIdentities(emailAddress: String, crmId: String)` function implementation. Add the following  code to the function.
 
-    ```swift {highlight="3,4"}
-    Button("Login") {
-        // call updaeIdentities
-        MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-                                
-        // Send app interaction event
-        MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-        dismiss()
-    }
-    .disabled(currentEmailId.isValidEmail == false)
-    .buttonStyle(.bordered)
-    ```
+   ```swift
+   // Set up identity map
+   let identityMap: IdentityMap = IdentityMap()
 
-1. Navigate to the `updateIdentities` function implementation in **[!UICONTROL MobileSDK]** (in **[!UICONTROL Utils]**) in the Xcode Luma app project. Add the following highlighted code to the function.
+   // Add identity items to identity map
+   let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   identityMap.add(item:emailIdentity, withNamespace: "Email")
+   identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
 
-    ```swift {highlight="2-12"}
-    func updateIdentities(emailAddress: String, crmId: String) {
-        let identityMap: IdentityMap = IdentityMap()
-        // Add identity items
-        let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-        let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
-        identityMap.add(item:emailIdentity, withNamespace: "Email")
-        identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
-
-        // Update identities
-        Identity.updateIdentities(with: identityMap)
-    }
-    ```
+   // Update identities
+   Identity.updateIdentities(with: identityMap)
+   ```
 
     This code:
 
@@ -103,7 +88,15 @@ You want to update both the standard identity (email) and the custom identity (L
 
        ```swift
        Identity.updateIdentities(with: identityMap) 
+     
        ```   
+
+1. Navigate to **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
+
+   ```swift
+   // call updaeIdentities
+   MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
+   ```
 
 
 >[!NOTE]
@@ -115,27 +108,22 @@ You want to update both the standard identity (email) and the custom identity (L
 
 You can use `removeIdentity` to remove the identity from the stored client-side IdentityMap. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side User Profile Graph or Identity Graph.
 
-1. Navigate to **[!UICONTROL LoginSheet]** (in **[!UICONTROL Views]** > **[!UICONTROL General]**) in the Xcode Luma app project and find the call to `removeIdentities`:
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL General]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
 
-    ```swift {highlight="3"}
-    Button("Logout", role: .destructive) {
-        // call removeIdentities
-        MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-        dismiss()                   
-    }
-    .buttonStyle(.bordered)
-    ```
+   ```swift
+   Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
+   Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
+   // reset email and CRM Id to their defaults
+   currentEmailId = "testUser@gmail.com"
+   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   ```
 
-1. Add the following code to the `removeIdentities` function in `MobileSDK`: 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]** in Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
 
-   ```swift {highlight="2-8"}
-   func removeIdentities(emailAddress: String, crmId: String) {
-       Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
-       Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-       // reset email and CRM Id to their defaults
-       currentEmailId = "testUser@gmail.com"
-       currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
-   }
+   ```swift
+   // call removeIdentities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
+   dismiss()                   
    ```
 
 
@@ -144,9 +132,9 @@ You can use `removeIdentity` to remove the identity from the stored client-side 
 1. Review the [setup instructions](assurance.md) section and connect your simulator or device to Assurance.
 1. In the Luma app
    1. Select the **[!UICONTROL Home]** tab. 
-   1. Select the **[!UICONTROL Login]** icon from the top right.
+   1. Select the <img src="assets/login.png" width=15/> icon from the top right.
    1. Provide an email address and a CRM Id, or
-   1. Select A| to randomly generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
+   1. Select <img src="assets/insert.png" width=15/> to randomly generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
    1. Select **[!UICONTROL Login]**.
 
       <img src="./assets/identity1.png" width=300> <img src="./assets/identity2.png" width=300>

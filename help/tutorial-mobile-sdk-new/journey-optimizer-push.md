@@ -108,7 +108,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >
 
 1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Open Xcode and navigate to **[!UICONTROL AppDelegate]**.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
 1. Ensure `AEPMessaging` is part of your list of imports.
 
     `import AEPMessaging`
@@ -131,24 +131,16 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Add the `MobileCore.setPushIdentifier` to the `application(_, didRegisterForRemoteNotificationsWithDeviceToken)` function.
+1. Add the `MobileCore.setPushIdentifier` to the `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` function.
 
-    ```swift {highlight="7"}
-    func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-        // Required to log the token
-        let tokenParts = deviceToken.map { data in String(format: "%02.2hhx", data) }
-        let token = tokenParts.joined()
-        Logger.notifications.info("didRegisterForRemoteNotificationsWithDeviceToken - device token: \(token)")
-        
-        // Send push token to Experience Platform
-        MobileCore.setPushIdentifier(deviceToken)
-        currentDeviceToken = token
-    }
+    ```swift      
+    // Send push token to Experience Platform
+    MobileCore.setPushIdentifier(deviceToken)
     ```
 
-    This function retrieves the device token unique to the device that the app is installed on and sends the token to Adobe Apple for push message delivery.
+    This function retrieves the device token unique to the device that the app is installed on and then sets the token for push notification delivery using the configuration you have set up and which relies on Apple's Push Notification Service (APNS).
 
-## Validate by sending a test push message
+## Validate
 
 1. Review the [setup instructions](assurance.md) section.
 1. Install the app on your physical device or on the simulator.

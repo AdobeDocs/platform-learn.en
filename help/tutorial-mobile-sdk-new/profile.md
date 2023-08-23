@@ -34,39 +34,19 @@ In this lesson, you will:
 * Retrieve user attributes.
 
 
-## Set & update
+## Set & update user attributes
 
 It would be helpful for targeting and/or personalization to quickly know if a user has made purchase in the app before. Let's set that up in the Luma app.
 
-1. Navigate to **[!UICONTROL ProductView]** (in **[!UICONTROL Views]** > **[!UICONTROL Products]**) in the Xcode Luma app project and find the call to `updateUserAttributes` (within the Purchases button):
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
 
-    ```swift {highlight="8-9"}
-    Button {
-        Task {
-            if ATTrackingManager.trackingAuthorizationStatus == .authorized {
-                // Send purchase commerce experience event
-                MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
-                // Update attributes
-                MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
-            }
-        }
-        showPurchaseDialog.toggle()
-    } label: {
-        Label("", systemImage: "creditcard")
-    }
-    .alert(isPresented: $showPurchaseDialog, content: {
-        Alert(title: Text( "Purchases"), message: Text("The selected item is purchased…"))
-    })
-    ```
-
-2. Navigate to **[!UICONTROL MobileSDK]** and find the `updateUserAttributes` function. Add the following highlighted code:
-
-    ```swift {highlight="2-4"}
-    func updateUserAttributes(attributeName: String, attributeValue: String) {
-        var profileMap = [String: Any]()
-        profileMap[attributeName] = attributeValue
-        UserProfile.updateUserAttributes(attributeDict: profileMap)
-    }
+    ```swift
+    // Create a profile map
+    var profileMap = [String: Any]()
+    // Add attributes to profile map
+    profileMap[attributeName] = attributeValue
+    // Use profile map to update user attributes
+    UserProfile.updateUserAttributes(attributeDict: profileMap)
     ```
 
     This code:
@@ -77,27 +57,29 @@ It would be helpful for targeting and/or personalization to quickly know if a us
 
     1. Uses the `profileMap` dictionary as a value to the `attributeDict` parameter of the `UserProfile.updateUserAttributes` API call.
 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button):
 
-Additional `updateUserAttributes` documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+    ```swift
+    // Update attributes
+    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+    ```
 
-## Get
+Additional documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
+
+## Get user attributes
 
 Once you have updated a user's attribute, it is available to other Adobe SDKs but you can also retrieve attributes explicitly.
 
-1. Navigate to **[!UICONTROL HomeView]** (in **[!UICONTROL Views]** > **[!UICONTROL General]**) and find the `.onAppear` modifier. Add the following code:
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > General > **[!UICONTROL HomeView]** in Xcode Project navigator and find the `.onAppear` modifier. Add the following code:
 
-    ```swift {highlight="3-11"}
-    .onAppear {
-        // Track view screen
-        MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: home")
-        // Get attributes
-        UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-            if attributes?["isPaidUser"] as! String == "yes" {
-                showBadgeForUser = true
-            }
-            else {
-                showBadgeForUser = false
-            }
+    ```swift
+    // Get attributes
+    UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
+        if attributes?["isPaidUser"] as! String == "yes" {
+            showBadgeForUser = true
+        }
+        else {
+            showBadgeForUser = false
         }
     }
     ```
@@ -105,9 +87,9 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
     This code:
     
     1. Calls the `UserProfile.getUserAttributes` closure with the `iPaidUser` attribute name as single element in the `attributeNames` array.
-    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the Person icon in the top right.
+    1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the <image src="assets/paiduser.png" width=20> icon in the toolbar at the top right.
 
-Additional `getUserAttributes` documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
+Additional documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
 
 ## Validate with Assurance
 
@@ -118,23 +100,23 @@ Additional `getUserAttributes` documentation can be found [here](https://develop
 
    1. Move the Assurance icon to the left.
    1. Select **[!UICONTROL Home]** in the tab bar.
-   1. To open the Login sheet, select the **[!UICONTROL Login]** button.
-   1. To insert a random email and customer id, select the **[!UICONTROL A|]** button .
+   1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
+   1. To insert a random email and customer id, select the <img src="assets/insert.png" width=15/> button .
    1. Select **[!UICONTROL Login]**.
    1. Select **[!UICONTROL Products]** in the tab bar.
    1. Select one product.
-   1. Select **[!UICONTROL Save for Later]**.
-   1. Select **[!UICONTROL Add to Cart]**.
-   1. Select **[!UICONTROL Purchase]**.
-   1. Return back to **[!UICONTROL Home]** screen. You should see an updated Login button.
+   1. Select <img src="assets/saveforlater.png" width=15/>.
+   1. Select <img src="assets/addtocart.png" width=20/>.
+   1. Select <img src="assets/purchase.png" width=15/>.
+   1. Return back to **[!UICONTROL Home]** screen. You should see updated values for **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
 
       <img src="./assets/mobile-app-events-1.png" width=200> <img src="./assets/mobile-app-events-2.png" width=200> <img src="./assets/mobile-app-events-3.png" width=200> <img src="./assets/personbadges.png" width=200>
 
-1. You should see a **[!UICONTROL UserProfileUpdate]** and **[!UICONTROL getUserAttributes]** events in the Assurance UI with the updated `profileMap` value.
+1. In the Assurance UI, you should see a **[!UICONTROL UserProfileUpdate]** and **[!UICONTROL getUserAttributes]** events with the updated `profileMap` value.
    ![validate profile](assets/profile-validate.png)
 
 >[!SUCCESS]
 >
->You have now set up your app to update attributes of profiles in the Edge Network and (when set up) with Adobe Experience Platform.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>You have now set up your app to update attributes of profiles in the Edge Network and (when set up) with Adobe Experience Platform.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Map data to Adobe Analytics](analytics.md)**

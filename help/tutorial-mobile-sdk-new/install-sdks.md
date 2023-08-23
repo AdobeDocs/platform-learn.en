@@ -52,9 +52,10 @@ After you have installed all packages, your Xcode **[!UICONTROL Package Dependen
 
 ## Import extensions
 
-In Xcode, in the source for **[!UICONTROL AppDelegate]** and **[!UICONTROL MobileSDK]**, add the following imports.
+In Xcode, navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** and add the following imports.
 
 ```swift
+// import AEP MobileSDK libraries
 import AEPCore
 import AEPServices
 import AEPIdentity
@@ -70,9 +71,11 @@ import AEPOptimize
 import AEPAssurance
 ```
 
+Do the same for **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+
 ## Update AppDelegate
 
-In **AppDelegate**, 
+Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** in Xcode Project navigator. 
 
 1. Set the `@AppStorage` value for `environmentFileId` to the Development Environment File ID value that you retrieved from tags in step 6 in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
 
@@ -83,7 +86,6 @@ In **AppDelegate**,
 1. Add the following code to the `application(_, didFinishLaunchingWithOptions)` function.
 
     ```swift
-        
     let extensions = [
         AEPIdentity.Identity.self,
         Lifecycle.self,

@@ -37,17 +37,19 @@ Confirm that your organization has access to Assurance by completing the followi
 
 ## Implement
 
-In addition to the general [SDK installation](install-sdks.md), you completed in the earlier lesson, iOS also requires the following addition to start the Assurance session for your app. Add the following code to **[!UICONTROL SceneDelegate]**:
+In addition to the general [SDK installation](install-sdks.md), you completed in the earlier lesson, iOS also requires the following addition to start the Assurance session for your app. 
 
-```swift {highlight="5"}
-func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>) {
-        // Called when the app in background is opened with a deep link.
-        if let deepLinkURL = URLContexts.first?.url {
-            // Start the Assurance session
-            Assurance.startSession(url: deepLinkURL)
-        }
-    }
-```
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** in your Xcode's Project navigator.
+ 
+1. Add the following code to `func scene(_ scene: UIScene, openURLContexts URLContexts: Set<UIOpenURLContext>`:
+
+   ```swift
+   // Called when the app in background is opened with a deep link.
+   if let deepLinkURL = URLContexts.first?.url {
+       // Start the Assurance session
+       Assurance.startSession(url: deepLinkURL)
+   }
+   ```
 
 More information can be found [here](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
 
@@ -88,7 +90,7 @@ Assurance works by opening a URL, either via browser or QR code. That URL begins
 1. Provide a **[!UICONTROL Session Name]** such as `Luma Mobile App Session` and the **[!UICONTROL Base URL]**, which is the URL Schemes you entered in Xcode, followed by `://`. For example: `lumatutorialswiftui://`.
 1. Select **[!UICONTROL Next]**.
     ![assurance create session](assets/assurance-create-session.png)
-1. In the Create New Session dialog:
+1. In the **[!UICONTROL Create New Session]** modal dialog:
    
    If you're using a physical device: 
 
