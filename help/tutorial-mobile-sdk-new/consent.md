@@ -31,57 +31,55 @@ To begin collecting data, you must get consent from the user. In this tutorial, 
 
 1. You only want to ask the user once. So you want to combine the Mobile SDK consent with the required authorizations for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume when the user authorizes tracking, the user also consents with collecting events.
  
-1. Navigate to `MobileSDK`, which is a generic static struct in where all API calls to the Adobe Experience Platform SDK are bundled for easy reuse.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project Navigator.
   
    Add this code to the `updateConsent` function.
 
-      ```swift
-      let collectConsent = ["collect": ["val": value]]
-      let currentConsents = ["consents": collectConsent]
-      Consent.update(with: currentConsents)
-      MobileCore.updateConfigurationWith(configDict: currentConsents)
-      ```
+   ```swift
+   let collectConsent = ["collect": ["val": value]]
+   let currentConsents = ["consents": collectConsent]
+   Consent.update(with: currentConsents)
+   MobileCore.updateConfigurationWith(configDict: currentConsents)
+   ```
 
-1. Navigate to `DisclaimerView.swift`, which is the view that is shown after installing or reinstalling the application and starting the app for the first time. The user is prompted to authorize tracking per Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). If the user authorizes, you also update the consent.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL DisclaimerView]** in Xcode's Project navigator, which is the view that is shown after installing or reinstalling the application and starting the app for the first time. The user is prompted to authorize tracking per Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). If the user authorizes, you also update the consent.
 
    Add the following code to the `ATTrackingManager.requestTrackingAuthorization { status in` closure.
 
-      ```swift {highlight="3,6"}
-      if status == .authorized {
-          // Set consent to yes
-          MobileSDK.shared.updateConsent(value: "y")
-      }
-      else {
-          MobileSDK.shared.updateConsent(value: "n")
-      }
-      ```
+   ```swift 
+   if status == .authorized {
+         // Set consent to yes
+         MobileSDK.shared.updateConsent(value: "y")
+   }
+   else {
+         MobileSDK.shared.updateConsent(value: "n")
+   }
+   ```
 
 ## Get current consent state
 
 The Consent mobile extension automatically suppresses / pends / allows tracking based on the current consent value. You can also access the current consent state yourself:
 
-1. Navigate to `MobileSDK.swift`.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode's Project navigator.
 
    Add the following code to the `getConsents` function:
 
    ```swift
    Consent.getConsents { consents, error in
-            guard error == nil, let consents = consents else { return }
-            guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
-            guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
-            Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
-        }
+      guard error == nil, let consents = consents else { return }
+      guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
+      guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
+      Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
+   }
    ```
 
-2. Navigate to **[!UICONTROL HomeView]**.
+2. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL HomeView]** in Xcode's Project navigator.
 
-   Add the following highlighted code to the `.task` modifier:
+   Add the following  code to the `.task` modifier:
 
-   ```swift {highlight="3"}
-   .task {
-        // Ask status of consents
-        MobileSDK.shared.getConsents()   
-   }
+   ```swift
+   // Ask status of consents
+   MobileSDK.shared.getConsents()   
    ```
 
 In the above example, you are simply logging the consent status to the console in Xcode. In a real-world scenario, you might use it to modify what menus or options are shown to the user.

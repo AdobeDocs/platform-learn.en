@@ -168,9 +168,9 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 
 Here is what a processing rule using this data might look like:
 
-* You are overwriting the value of `App Screen Name (eVar2)` (1) with the value of `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` (2) if `a.x._techmarketingdemo.appinformation.appstatedetails.screenname` is set.
+* You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
 
-* You set `Add to Wishlist (Event 3)` to `a.x.commerce.saveForLaters.value(Context)` if `a.x.commerce.saveForLaters.value(Context)` is set.
+* You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
 
 ![analytics processing rules](assets/analytics-processing-rules.png)
 
