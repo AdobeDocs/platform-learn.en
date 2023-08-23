@@ -17,7 +17,7 @@ To complete the lesson, you must have permission to create a tag property. It's 
 
 >[!NOTE]
 >
-> Platform Launch (Client Side) is now [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
+> Platform Launch (Client Side) is now [Tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html?lang=en)
 
 ## Learning objectives
 
@@ -130,7 +130,12 @@ Your library is build for the new extensions and configurations. A successful bu
  
    The install instructions provide you a good starting point for implementation. You can find additional information [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-1. Select the **[!UICONTROL Swift]** tab below **[!UICONTROL Add Initialization Code]**. This block of code shows how to import the required SDKs and register the extensions at launch.
+   >[!INFO]
+   >
+   >For the remainder of this tutorial, you will **not** use the CocoaPods instructions but instead use a native Swift Package Manager (SPM) based setup.
+   >
+
+1. Select the **[!UICONTROL Swift]** tab below **[!UICONTROL Add Initialization Code]**. This block of code shows how to import the required SDKs and register the extensions at launch. This will be covered in more details in [Install SDKs](install-sdks.md).
 
 1. Copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the **[!UICONTROL Environment File ID]** and store it in a place as you need it later. This unique ID points to your development environment. Each environment (Production, Staging, Development) does have its own unique ID value.
 
@@ -140,14 +145,9 @@ Your library is build for the new extensions and configurations. A successful bu
 >
 >The install instructions should be considered a starting point and not definitive documentation. The latest SDK versions and code samples can be found in the official [documentation](https://developer.adobe.com/client-sdks/documentation/).
 
->[!INFO]
->
->For the remainder of this tutorial, you are **not** using the CocoaPods instructions but look at a native Swift package-based setup.
-
-
 ## Mobile tags architecture
 
-If you are familiar with the web version of tags, formerly Launch, it's important to understand the differences on mobile. 
+If you are familiar with the web version of Tags, formerly Launch, it's important to understand the differences on mobile. 
 
 * On the web, a tag property is rendered into JavaScript which is then (usually) hosted in the cloud. That JavaScript file is referenced directly in the website.
 
