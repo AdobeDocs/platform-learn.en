@@ -137,10 +137,10 @@ doc-type: video
   + [Monitor segment activation](/help/platform/monitoring/monitoring-the-success-of-segment-activation.md)
   + [Monitor dataflows](/help/platform/monitoring/data-monitoring.md)
 + Partner data support {#partner-data-support}
-  + [Partner data support overview](/platform/partner-data-support/partner-data-support-overview.md)
-  + [Support offsite prospecting](/platform/partner-data-support/offsite-prospecting-partner-data.md)
-  + [Add partner attributes to profiles](/platform/partner-data-support/partner-enrichment-partner-data.md)
-  + [Personalize onsite for unknown visitors](/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
+  + [Partner data support overview](/help/platform/partner-data-support/partner-data-support-overview.md)
+  + [Support offsite prospecting](/help/platform/partner-data-support/offsite-prospecting-partner-data.md)
+  + [Add partner attributes to profiles](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
+  + [Personalize onsite for unknown visitors](/help/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + Profiles {#profiles}
   + [Understanding Real-Time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
