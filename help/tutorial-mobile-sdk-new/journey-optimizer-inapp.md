@@ -67,11 +67,11 @@ In this tutorial, you are going to use the Mobile Core generic and extension-ind
 1. Scroll down to **[!UICONTROL Action]**, and select **[!UICONTROL Edit Content]**.
 1. In the **[!UICONTROL In-App Message]** screen:
    1. Select **[!UICONTROL Modal]** as the **[!UICONTROL Message Layout]**.
-   1. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for **[!UICONTROL Media URL]**.
-   1. Enter a **[!UICONTROL Header]**, for example `Welcome to this Luma In-App Message` and enter a **[!UICONTROL Body]**, for example `Triggered by pushing that button in the app...`.
-   1. Enter **[!UICONTROL Dismiss]** as the **[!UICONTROL Button #1 text (primary)]**.
-   1. Note how the preview is updated.
-   1. Select **[!UICONTROL Review to activate]**.
+   2. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for **[!UICONTROL Media URL]**.
+   3. Enter a **[!UICONTROL Header]**, for example `Welcome to this Luma In-App Message` and enter a **[!UICONTROL Body]**, for example `Triggered by pushing that button in the app...`.
+   4. Enter **[!UICONTROL Dismiss]** as the **[!UICONTROL Button #1 text (primary)]**.
+   5. Note how the preview is updated.
+   6. Select **[!UICONTROL Review to activate]**.
       ![In-app editor](assets/ajo-in-app-editor.png)
 1. In the **[!UICONTROL Review to activate (Luma - In-App Messaging Campaign)]** screen, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) in the **[!UICONTROL Schedule]** tile.
    ![Review schedule select Schedule](assets/ajo-review-select-schedule.png)
@@ -82,7 +82,7 @@ In this tutorial, you are going to use the Mobile Core generic and extension-ind
    1. Click **[!UICONTROL Done]**.
       ![Trigger logic](assets/ajo-trigger-logic.png)
     
-   You have defined a track action, where the **[!UICONTROL Action]** equals `in-app` and the **[!UICONTROL Context data]** with the action is a key value pair of `showMessage = true`.
+   You have defined a track action, where the **[!UICONTROL Action]** equals `in-app` and the **[!UICONTROL Context data]** with the action is a key value pair of `"showMessage" : "true"`.
 
 1. Back in the **[!UICONTROL Luma - In-App Messaging Campaign]** screen, select **[!UICONTROL Review to activate]**.
 1. In the **[!UICONTROL Review to activate (Luma - In-App Messaging Campaign)]** screen, select **[!UICONTROL Activate]**.
@@ -97,14 +97,14 @@ You have all the ingredients in place to send an in-app message. What remains is
 1. Go to Luma > Luma > Utils > MobileSDK in Xcode Project navigator, find the `func sendTrackAction(action: String, data: [String: Any]?)` function, and add the following code, which calls the `MobileCore.track` function, based on the parameters `action` and `data`.
 
     
-    ```
+    ```swift
     // send trackAction event
     MobileCore.track(action: action, data: data)
     ```  
 
-1. Go to Luma > Luma > Views > General > ConfigView in Xcode Project Navigator. Find the code for the In-App Message button and add the following code:
+1. Go to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL ConfigView]** in Xcode Project Navigator. Find the code for the In-App Message button and add the following code:
 
-    ```
+    ```swift
     Task {
         AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
     }
