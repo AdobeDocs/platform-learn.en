@@ -3,7 +3,6 @@ title: Analytics mapping
 description: Learn how to collect data for Adobe Analytics in a mobile app.
 solution: Data Collection,Experience Platform,Analytics
 hide: yes
-hidefromtoc: yes
 ---
 # Analytics mapping
 

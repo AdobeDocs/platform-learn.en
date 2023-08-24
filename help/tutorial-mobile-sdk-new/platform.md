@@ -4,7 +4,6 @@ description: Learn how to send data to Adobe Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: yes
-hidefromtoc: yes
 ---
 # Send data to Adobe Experience Platform
 

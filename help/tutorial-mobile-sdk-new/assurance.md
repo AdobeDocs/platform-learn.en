@@ -3,7 +3,6 @@ title: Set up Assurance
 description: Learn how to implement the Assurance extension in a mobile app.
 feature: Mobile SDK,Assurance
 hide: yes
-hidefromtoc: yes
 ---
 # Assurance
 

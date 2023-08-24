@@ -2,7 +2,6 @@
 title: Profile
 description: Learn how to collect profile data in a mobile app.
 hide: yes
-hidefromtoc: yes
 ---
 # Profile
 

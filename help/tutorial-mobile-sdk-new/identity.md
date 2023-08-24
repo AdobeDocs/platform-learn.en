@@ -3,7 +3,6 @@ title: Identity
 description: Learn how to collect identity data in a mobile app.
 feature: Mobile SDK,Identities
 hide: yes
-hidefromtoc: yes
 ---
 # Identity
 
