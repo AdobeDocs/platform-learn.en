@@ -117,6 +117,7 @@ You have all the ingredients in place to send an in-app message. What remains is
 1. Go to the **[!UICONTROL Settings]** tab.
 
 1. Tap **[!UICONTROL In-App Message]**. You see the in-app message appear in your app.
+
    <img src="assets/ajo-in-app-message.png" width=300/>
 
 
