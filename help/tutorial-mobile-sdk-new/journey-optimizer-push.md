@@ -91,8 +91,8 @@ Additional documentation can be [found here](https://help.apple.com/developer-ac
 1. In the **[!UICONTROL Install Extension]** dialog
    1. Select an environment, for example **[!UICONTROL Development]**.
    1. Select the **[!UICONTROL AJO Push Tracking Experience Event Dataset]** dataset from the **[!UICONTROL Event Dataset]** dropdown list.
-      ![AJO extension settings](assets/push-tags-ajo.png)
    1. Select **[!UICONTROL Save to Library and Build]**.
+       ![AJO extension settings](assets/push-tags-ajo.png)
 
 >[!NOTE]
 >
@@ -183,7 +183,7 @@ To create your own push notification, you must define an event in Journey Optimi
    1. Provide a **[!UICONTROL Description]**, for example `Test event to trigger push notifications in Luma app`.
 
    1. Select the mobile app experience event schema that you created earlier in [Create an XDM schema](create-schema.md) from the **[!UICONTROL Schema]** list, for example **[!UICONTROL Luma Mobile App Event Schema v.1]**.
-   1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) next to the Fields list.
+   1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) next to the **[!UICONTROL Fields]** list.
 
       ![Edit event step 1](assets/ajo-edit-event1.png)
 

@@ -4,6 +4,7 @@ description: Learn how to create a datastream in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: yes
 ---
+
 # Create a datastream
 
 Learn how to create a datastream in Experience Platform.
