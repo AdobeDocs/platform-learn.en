@@ -2,7 +2,6 @@
 title: Events
 description: Learn how to collect event data in a mobile app.
 hide: yes
-hidefromtoc: yes
 ---
 # Events
 

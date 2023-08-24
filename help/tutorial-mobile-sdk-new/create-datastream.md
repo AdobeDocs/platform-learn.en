@@ -3,7 +3,6 @@ title: Configure a datastream
 description: Learn how to create a datastream in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: yes
-hidefromtoc: yes
 ---
 # Create a datastream
 

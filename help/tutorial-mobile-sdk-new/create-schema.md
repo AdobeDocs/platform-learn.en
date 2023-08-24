@@ -3,7 +3,6 @@ title: Create an XDM schema
 description: Learn how to create an XDM schema for mobile app events.
 feature: Mobile SDK,Schemas
 hide: yes
-hidefromtoc: yes
 ---
 # Create an XDM schema
 

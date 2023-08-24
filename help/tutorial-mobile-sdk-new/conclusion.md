@@ -3,7 +3,6 @@ title: Conclusion and next steps
 description: What to do next after completing the tutorial
 recommendations: display,noCatalog
 hide: yes
-hidefromtoc: yes
 ---
 # Conclusion and next steps
 

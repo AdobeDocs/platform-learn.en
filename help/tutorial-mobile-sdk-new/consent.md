@@ -3,7 +3,6 @@ title: Consent
 description: Learn how to implement consent in a mobile app.
 feature: Mobile SDK,Consent
 hide: yes
-hidefromtoc: yes
 ---
 # Consent
 

@@ -3,7 +3,6 @@ title: Configure a tag property
 description: Learn how to configure a tag property in the [!UICONTROL Data Collection] interface.
 feature: Mobile SDK,Tags
 hide: yes
-hidefromtoc: yes
 ---
 # Configure a tag property
 

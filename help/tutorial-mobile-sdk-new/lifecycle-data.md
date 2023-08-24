@@ -2,7 +2,6 @@
 title: Lifecycle data
 description: Learn how to collect lifecycle data in a mobile app.
 hide: yes
-hidefromtoc: yes
 ---
 # Lifecycle data
 
