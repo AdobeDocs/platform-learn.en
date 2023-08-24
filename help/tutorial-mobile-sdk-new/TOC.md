@@ -29,7 +29,7 @@ recommendations: noDisplay,noCatalog
 + Experience Cloud{#experience-cloud}
   + [Analytics](analytics.md)
   + [Experience Platform](platform.md)
-  + Journey Optimzer{journey-optimizer}
+  + Journey Optimzer{#journey-optimizer}
     + [Push messaging](journey-optimizer-push.md)
     + [In-app messaging](journey-optimizer-inapp.md)
 + [Conclusion](conclusion.md)
