@@ -169,6 +169,20 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 To create your own push notification, you must define an event in Journey Optimizer that triggers a journey that takes care of sending a push notification.
 
+### Update schema
+
+You are going to define a new event type not available yet as part of the list of events as defined in your schema.
+
+1. In the Journey Optimier UI, select **[!UICONTROL Schemas]** from the left rail.
+1. Select **[!UICONTROL Browse]** in the tab bar.
+1. Select your schema, for example **[!UICONTROL Luma Mobile App Event Schema]** to open it.
+1. In the Schema editor:
+   1. Select the **[!UICONTROL eventType]** field.
+   1. In the **[!UICONTROL Field properties]** pane, scroll down to see the list of possible values for event type. Select **[!UICONTROL Add row]**, and add `application.test` as the **[!UICONTROL VALUE]** and **[!UICONTROL Test event for push notification]** as the `DISPLAY NAME`.
+   1. Select **[!UICONTROL Apply]**.
+   1. Select **[!UICONTROL Save]**.
+      ![Add value to event types](assets/ajo-update-schema-eventtype-enum.png)
+
 ### Define an event
 
 1. In the Journey Optimizer UI, select **[!UICONTROL Configurations]** from the left rail.
@@ -187,7 +201,7 @@ To create your own push notification, you must define an event in Journey Optimi
 
       ![Edit event step 1](assets/ajo-edit-event1.png)
 
-      In the **[!UICONTROL Fields]** dialog, ensure that the following fields are selected (on top of the default fields that are always selected (_id, id, and timestamp)). You can toggle, using the dropdown list, between **[!UICONTROL Selected]**, **[!UICONTROL All]** and **[!UICONTROL Primary]** or use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) field.
+      In the **[!UICONTROL Fields]** dialog, ensure that the following fields are selected (on top of the default fields that are always selected (**[!UICONTROL _id]**, **[!UICONTROL id]**, and **[!UICONTROL timestamp]**)). You can toggle, using the dropdown list, between **[!UICONTROL Selected]**, **[!UICONTROL All]** and **[!UICONTROL Primary]** or use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) field.
 
       * **[!UICONTROL Application Identified (id)]**, 
       * **[!UICONTROL Event Type (eventType)]**, 
@@ -199,9 +213,8 @@ To create your own push notification, you must define an event in Journey Optimi
     
    1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) next to the **[!UICONTROL Event id condition]** field.
 
-      1. In the **[!UICONTROL Add an event id condition]** dialog, drag and drop **[!UICONTROL Application Identifier (id)]** underneath **[!UICONTROL Application (application)]** on to **[!UICONTROL Drag and drop an element here]**.
-      1. In the popover, enter your Bundle Identifier from Xcode, for example `com.adobe.luma.tutorial.swiftui` in the field next to **[!UICONTROL equal to]**. 
-      1. Click **[!UICONTROL Ok]**.
+      1. In the **[!UICONTROL Add an event id condition]** dialog, drag and drop **[!UICONTROL Event Type (eventType)]** on to **[!UICONTROL Drag and drop an element here]**.
+      1. In the popover, scroll to the bottom and select **[!UICONTROL application.test]**. Then scroll up to the top and select **[!UICONTROL Ok]**.
       1. Click **[!UICONTROL Ok]**.
          ![Edit event condition](assets/ajo-edit-condition.png)
 

@@ -32,5 +32,6 @@ recommendations: noDisplay,noCatalog
   + Journey Optimzer{#journey-optimizer}
     + [Push messaging](journey-optimizer-push.md)
     + [In-app messaging](journey-optimizer-inapp.md)
+  + [Target](target.md)
 + [Conclusion](conclusion.md)
   
