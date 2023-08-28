@@ -19,14 +19,28 @@ Journey Optimizer allows you to create your journeys and send in-app messages to
 ## Prerequisites
 
 * Successfully built and run app with SDKs installed and configured.
-* Access to Adobe Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Also you need sufficient permissions to the following Adobe Journey Optimizer features.
-  * Create a campaign.
+* Access to Adobe Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Adobe Journey Optimizer features.
+  * Manage a campaign.
 * Paid Apple developer account with sufficient access to create certificates, identifiers, and keys.
 * Physical iOS device or simulator for testing.
-* [Registered App ID with APN](journey-optimizer-push.md#register-app-id-with-apn)
+* [Registered App ID with Apple Push Notificaton Service](journey-optimizer-push.md#register-app-id-with-apn)
 * [Added your app push credentials in Data Collection](journey-optimizer-push.md#add-your-app-push-credentials-in-data-collection)
 * [Installed Adobe Journey Optimizer tags extension](journey-optimizer-push.md#install-adobe-journey-optimizer-tags-extension)
 * [Implemented Adobe Journey Optimizer in the app](journey-optimizer-push.md#implement-adobe-journey-optimizer-in-the-app)
+
+
+## Learning objectives
+
+In this lesson, you will
+
+* Register App ID with the Apple Push Notification service (APN).
+* Create an **[!UICONTROL App Surface]** in AJO.
+* Update your **[!UICONTROL schema]** to include push messaging fields.
+* Install & configure the **[!UICONTROL Adobe Journey Optimizer]** tag extension.
+* Update your app to include the AJO tag extension.
+* Validate setup in Assurance.
+* Define your own campaign and in-app message experience in Journey Optimizer.
+* Send your own in-app message from within the app.
 
 
 ## Validate with Assurance
@@ -140,4 +154,4 @@ You should now have all the tools to start adding push notifications, where rele
 >
 >You have now enabled the app for in-app messaging and added an in-app messaging campaign using Adobe Journey Optimizer and the Adobe Journey Optimizer extension for the Adobe Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[Conclusion and next steps](conclusion.md)**
+Next: **[Display offers with Journey Optimizer](journey-optimizer-offers.md)**
