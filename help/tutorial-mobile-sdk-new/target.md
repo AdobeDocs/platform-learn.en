@@ -37,8 +37,8 @@ In this lesson, you will:
 * Validate setup in Assurance.
 * Create a simple A/B test in Target.
 * Update your app to include the Optimize extension.
-
 * Implement the A/B test in your app.
+* Validate implementation in Assurance
 
 ## Update Edge configuration
 
@@ -77,7 +77,7 @@ You need to update you Experience Edge configuration to ensure data send from yo
 1. Select Save to save the changes to your schema.
 
 
-## Validate with Assurance
+## Validate setup in Assurance
 
 To validate your setup in Assurance:
 
@@ -219,7 +219,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     <img src="assets/target-app-offer.png" width=300>
 
 
-## Validate in Assurance
+## Validate implementation in Assurance
 
 To validate the A/B test in Assurance:
 
