@@ -34,8 +34,8 @@ In this lesson, you will
 * Update your tag property with the Journey Optimizer - Decisioning extension.
 * Update your schema to capture proposition events.
 * Validate setup in Assurance.
-* Create a simple A/B test in Target.
-* Update your app to include the Optimize extension.
+* Create an offer decision, based on offers in Journey Optimizer - Decision Management.
+* Update your app to include the Optimizer extension.
 * Implement offers from Decision Management in your app.
 
 
@@ -277,7 +277,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    
    * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the offers. 
    * defines `decisionScope`, an object that determines the placement, the collection to use, ranking formula and eligibility rules, as you have defined in the Journey Optimizer - Decision Management UI.
-   * calls two API's: [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   These functions clear any cached propositions and update the propositions for this profile. The Luma app uses a configuration file (`decisions.json`) that retrieves the scope parameters, based on the following JSON format:
+   * calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   These functions clear any cached propositions and update the propositions for this profile. The Luma app uses a configuration file (`decisions.json`) that retrieves the scope parameters, based on the following JSON format:
 
        ```swift
        "scopes": [
@@ -292,7 +292,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
       However, you can use any kind of implementation to ensure the Optimizer APIs do get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API call, which 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API call, which 
    
     * retrieves the propositions for the current profile based on the decision scope (which you have defined in Journey Optimizer - Decision Management) and 
     * unwraps the result in content that can be displayed properly in the app.
