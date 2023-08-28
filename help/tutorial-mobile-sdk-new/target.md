@@ -36,7 +36,7 @@ In this lesson, you will
 * Update your schema to capture propositon events.
 * Validate setup in Assurance.
 * Create a simple A/B test in Target.
-* Update your app to include the Optimize extension.
+* Update your app to include the Optimizer extension.
 * Implement the A/B test in your app.
 * Validate implementation in Assurance.
 
@@ -187,9 +187,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    * an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the A/B test, and 
    * the `decisionScope`, an array of locations on where to present the A/B test. 
 
-    Then the function calls two API's: [`Optimizer.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimizer.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile.
+    Then the function calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL TargetOffersView]** in the Xcode Project navigator. Find the `func getPropositionAT(location: String) async` function and inspect the code of this function. The most important part of this function is the  [`Optimizer.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API call, which 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL TargetOffersView]** in the Xcode Project navigator. Find the `func getPropositionAT(location: String) async` function and inspect the code of this function. The most important part of this function is the  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API call, which 
    * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test) and 
    * unwraps the result in content that can be displayed properly in the app.
 
