@@ -30,7 +30,7 @@ In this lesson, you will:
 
 Confirm that your organization has access to Assurance by completing the following steps:
 
-1. Visit [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance{target="_blank"}).
+1. Visit [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
 1. Log in using your Adobe ID credentials for the Experience Cloud.
 1. If you see the **[!UICONTROL Sessions]** screen, then you have access. If you see the (beta) access page, select **[!UICONTROL Register]** to register.
 
@@ -50,7 +50,7 @@ In addition to the general [SDK installation](install-sdks.md), you completed in
    }
    ```
 
-More information can be found [here](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/{target="_blank"}).
+More information can be found [here](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
 ## Signing
 
@@ -75,7 +75,7 @@ Before you run the application for the first time in Xcode, ensure you update th
 
    ![assurance url](assets/assurance-url-type.png)
 
-To learn more about URL Schemes in iOS, review [Apple's documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app{target="_blank"}).
+To learn more about URL Schemes in iOS, review [Apple's documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 Assurance works by opening a URL, either via browser or QR code. That URL begins with the base URL  which opens the app and contains additional parameters. Those unique parameters are used to connect the session.
 
@@ -123,7 +123,7 @@ Assurance works by opening a URL, either via browser or QR code. That URL begins
 
         ![assurance events](assets/assurance-events.png)
 
-If you run into any challenges, please review the [technical](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/{target="_blank"}) and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html{target="_blank"}).
+If you run into any challenges, please review the [technical](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 >[!SUCCESS]
 >

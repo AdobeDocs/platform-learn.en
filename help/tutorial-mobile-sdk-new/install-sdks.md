@@ -11,8 +11,8 @@ Learn how to implement the Adobe Experience Platform Mobile SDK in a mobile app.
 
 * Successfully built tag library with the extensions described in the [previous lesson](configure-tags.md).
 * Development Environment File ID from the [Mobile Install Instructions](configure-tags.md#generate-sdk-install-instructions).
-* Downloaded, empty [sample app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}).
-* Experience with [XCode](https://developer.apple.com/xcode/{target="_blank"}).
+* Downloaded, empty [sample app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Experience with [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## Learning objectives
 
