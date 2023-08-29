@@ -3,7 +3,7 @@ title: Adobe Journey Optimizer in-app messaging
 description: Learn how to create in-app messages to a mobile app with Platform Mobile SDK and Adobe Journey Optimizer.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
-feature: Push
+feature: In App
 hide: yes
 ---
 # Journey Optimizer in-app messaging
