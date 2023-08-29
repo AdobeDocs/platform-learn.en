@@ -13,11 +13,11 @@ Learn how to perform A/B tests in your mobile apps with Platform Mobile SDK and 
 
 Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. The focus in this tutorial is on the A/B test functionality of Target. See the [A/B Test overview](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) for more information. 
 
-Before you can perform A/B tests with Target Premium, you must ensure that the proper configurations and integrations are in place.
+Before you can perform A/B tests with Target, you must ensure that the proper configurations and integrations are in place.
 
 >[!NOTE]
 >
->This lesson is optional and only applies to Adobe Target Premium users looking to perform A/B tests. 
+>This lesson is optional and only applies to Adobe Target users looking to perform A/B tests. 
 
 
 ## Prerequisites
@@ -41,7 +41,13 @@ In this lesson, you will
 * Validate implementation in Assurance.
 
 
-## Update Edge configuration
+## Setup your app
+
+>[!TIP]
+>
+>If you have setup your app already as part of the [Journey Optimizer offers](journey-optimizer-offers.md) tutorial, 
+
+### Update Edge configuration
 
 To ensure data send from your mobile app to the Edge Network is forwarded to Adobe Target, you must update you Experience Edge configuration.
 
@@ -56,7 +62,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Ado
     ![Add Target to datastream](assets/edge-datastream-target.png)
 
 
-## Install Adobe Journey Optimizer - Decisioning tags extension
+### Install Adobe Journey Optimizer - Decisioning tags extension
 
 1. Navigate to **[!UICONTROL Tags]** and find your mobile tag property and open the property.
 1. Select **[!UICONTROL Extensions]**.
@@ -67,7 +73,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Ado
     ![Add Decisioning extension](assets/tag-add-decisioning-extension.png)
 
 
-## Update your schema
+### Update your schema
 
 1. Navigate to Data Collection UI and select Schemas from the left rail.
 1. Select **[!UICONTROL Browse]** from the top bar.
@@ -78,7 +84,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Ado
 1. to save the changes to your schema, select **[!UICONTROL Save]** .
 
 
-## Validate setup in Assurance
+### Validate setup in Assurance
 
 To validate your setup in Assurance:
 
@@ -156,12 +162,12 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 >[!NOTE]
 >
->If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip to step #7.
+>If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
 
 1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios.git) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]**.
-1. Ensure `AEPMessaging` is part of your list of imports.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
+1. Ensure `AEPOptimize` is part of your list of imports.
 
     `import AEPOptimize`
 
@@ -234,17 +240,17 @@ To validate the A/B test in Assurance:
 1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Review & Simulate]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Review & Simulate]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
-1. Select **[!UICONTROL Requests]** at the top bar. You see your Target requests.
+1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!UICONTROL Target]** requests.
    ![AJO Decisioning validation](assets/assurance-decisioning-requests.png)
 
 1. You can explore Simulate and Event List tabs for further functionality checking your setup for Target offers.
 
-## Implement in your app
+## Next steps
 
-You should now have all the tools to start adding more A/B tests or other Target activities, where relevant and applicable, to the Luma app.
+You should now have all the tools to start adding more A/B tests or other Target activities (such as Experience Targeting, Multivariate Test), where relevant and applicable, to the Luma app.
 
 >[!SUCCESS]
 >
->You have now enabled the app for A/B tests and displayed the results of an A/B test using Adobe Target and the Adobe Journey Optimizer - Decisioning extension for the Adobe Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have enabled the app for A/B tests and displayed the results of an A/B test using Adobe Target and the Adobe Journey Optimizer - Decisioning extension for the Adobe Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Conclusion and next steps](conclusion.md)**
