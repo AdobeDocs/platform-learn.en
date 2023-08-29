@@ -43,7 +43,7 @@ In this lesson, you will
 
 >[!TIP]
 >
->If you have setup your app already as part of the [Setup A/B tests with Target](target) tutorial, you can skip [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
+>If you have setup your app already as part of the [Setup A/B tests with Target](target.md) tutorial, you can skip [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
 
 ### Update Edge configuration
 
