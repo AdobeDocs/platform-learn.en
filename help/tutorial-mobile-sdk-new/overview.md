@@ -68,8 +68,8 @@ Also, it is assumed that you are familiar with [!DNL Swift]. You do not need to 
 
 Two versions of the sample app are available for download. 
 
-1. [Empty](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): a version without any Experience Cloud code to complete the hands-on exercises in this tutorial
-1. [Full Implemented](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): a version with full Experience Cloud implementation for reference.
+1. [Empty](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a version without any Experience Cloud code to complete the hands-on exercises in this tutorial
+1. [Full Implemented](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a version with full Experience Cloud implementation for reference.
 
 Let's get started!
 
