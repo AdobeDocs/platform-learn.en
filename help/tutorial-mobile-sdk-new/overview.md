@@ -33,6 +33,10 @@ After completing this tutorial, you will be able to:
   * [Profile](profile.md)
   * [Adobe Experience Platform](platform.md)
   * [Push messaging with Journey Optimizer](journey-optimizer-push.md)
+  * [Im-app messaging with Journey Optimizer](journey-optimizer-inapp.md)
+  * [Offers with Journey Optimizer](journey-optimizer-offers.md)
+  * [A/B tests with Target](target.md)
+  
 * Correctly pass Experience Cloud parameters to a [webview](web-views.md).
 * Validate the implementation using [Adobe Experience Platform Assurance](assurance.md).
 
@@ -68,12 +72,12 @@ Also, it is assumed that you are familiar with [!DNL Swift]. You do not need to 
 
 Two versions of the sample app are available for download. 
 
-1. [Empty](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): a version without any Experience Cloud code to complete the hands-on exercises in this tutorial
-1. [Full Implemented](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App{target="_blank"}): a version with full Experience Cloud implementation for reference.
+1. [Empty](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): a version without any Experience Cloud code to complete the hands-on exercises in this tutorial
+1. [Full Implemented](https://git.corp.adobe.com/Luma{target="_blank"}): a version with full Experience Cloud implementation for reference.
 
 Let's get started!
 
->[!NOTE]
+>[!SUCCESS]
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 

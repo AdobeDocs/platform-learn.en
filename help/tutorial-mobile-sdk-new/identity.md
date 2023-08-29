@@ -45,7 +45,7 @@ Identity namespaces are components of [Identity Service](https://experienceleagu
 
 You want to update both the standard identity (email) and the custom identity (Luma CRM ID) when the user logs into the app.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator and find the the `func updateIdentities(emailAddress: String, crmId: String)` function implementation. Add the following  code to the function.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the the `func updateIdentities(emailAddress: String, crmId: String)` function implementation. Add the following  code to the function.
 
    ```swift
    // Set up identity map
@@ -107,7 +107,7 @@ You want to update both the standard identity (email) and the custom identity (L
 
 You can use `removeIdentity` to remove the identity from the stored client-side IdentityMap. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side User Profile Graph or Identity Graph.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL General]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL General]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
 
    ```swift
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
@@ -117,7 +117,7 @@ You can use `removeIdentity` to remove the identity from the stored client-side 
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]** in Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
 
    ```swift
    // call removeIdentities
@@ -139,7 +139,7 @@ You can use `removeIdentity` to remove the identity from the stored client-side 
       <img src="./assets/identity1.png" width=300> <img src="./assets/identity2.png" width=300>
     
 
-1. Look in the Assurance web UI for the **[!UICONTROL Edge Identity Update Identities ]**event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
+1. Look in the Assurance web UI for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
 1. Select the event and review the data in the **[!UICONTROL ACPExtensionEventData]** object. You should see the identities you updated.
 ![validate identities update](assets/identity-validate-assurance.png)
 
