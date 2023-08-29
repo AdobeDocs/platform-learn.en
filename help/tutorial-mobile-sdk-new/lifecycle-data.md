@@ -46,7 +46,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Now you can update your project to register the lifecycle events.
 
-1. Navigate to Luma > Luma > SceneDelegate in Xcode Project navigator.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** in the Xcode Project navigator.
 
 1. When launched, if your app is resuming from a background state, iOS might call your `sceneWillEnterForeground:` delegate method and this is where you want to trigger a lifecycle start event. Add this code to `func sceneWillEnterForeground(_ scene: UIScene)`:
  
@@ -81,24 +81,23 @@ The previous exercise dispatches the foreground and background events to Adobe E
 1. Select **[!UICONTROL Initial Build]** as the library to use.
 1. Select **[!UICONTROL Create New Rule]**.
    ![Create New Rule](assets/rules-create-new.png)
-1. In the [!UICONTROL Create Rule] screen, enter `Application Status` for **[!UICONTROL Name]**.
+1. In the **[!UICONTROL Create Rule]** screen, enter `Application Status` for **[!UICONTROL Name]**.
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** below **[!UICONTROL EVENTS]**.
    ![Create Rule dialog](assets/rule-create-name.png) 
-1. In the [!UICONTROL Event Configuration] step:
+1. In the **[!UICONTROL Event Configuration]** step:
    1. Select **[!UICONTROL Mobile Core]** as the **[!UICONTROL Extension]**.
    1. Select **[!UICONTROL Foreground]** as the **[!UICONTROL Event Type]**.
    1. Select **[!UICONTROL Keep Changes]**.
       ![Rule Event Configuration](assets/rule-event-configuration.png)
-1. Back in the Create Rule screen, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to **[!UICONTROL Mobile Core - Foreground]**.
+1. Back in the **[!UICONTROL Create Rule]** screen, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to **[!UICONTROL Mobile Core - Foreground]**.
    ![Next event configuration](assets/rule-event-configuration-next.png)
-1. In the [!UICONTROL Event Configuration] step:
+1. In the **[!UICONTROL Event Configuration]** step:
    1. Select **[!UICONTROL Mobile Core]** as the **[!UICONTROL Extension]**.
    1. Select **[!UICONTROL Background]** as the **[!UICONTROL Event Type]**.
    1. Select **[!UICONTROL Keep Changes]**.
       ![Rule Event Configuration](assets/rule-event-configuration-background.png)
-1. Back in the Create Rule screen, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** below **[!UICONTROL ACTIONS]**.
    ![Rule Add Action](assets/rule-action-button.png)
-1. In the [!UICONTROL Action Configuration] step:
+1. In the **[!UICONTROL Action Configuration]** step:
    1. Select **[!UICONTROL Adobe Experience Edge Network]** as the **[!UICONTROL Extension]**.
    1. Select **[!UICONTROL Forward event to Edge Network]** as the **[!UICONTROL Action Type]**.
    1. Select **[!UICONTROL Keep Changes]**.

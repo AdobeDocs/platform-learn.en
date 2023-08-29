@@ -74,7 +74,7 @@ Do the same for **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Ut
 
 ## Update AppDelegate
 
-Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** in Xcode Project navigator. 
+Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** in the Xcode Project navigator. 
 
 1. Set the `@AppStorage` value for `environmentFileId` to the Development Environment File ID value that you retrieved from tags in step 6 in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
 

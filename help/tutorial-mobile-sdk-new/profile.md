@@ -37,7 +37,7 @@ In this lesson, you will:
 
 It would be helpful for targeting and/or personalization to quickly know if a user has made purchase in the app before. Let's set that up in the Luma app.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
 
     ```swift
     // Create a profile map
@@ -56,7 +56,7 @@ It would be helpful for targeting and/or personalization to quickly know if a us
 
     1. Uses the `profileMap` dictionary as a value to the `attributeDict` parameter of the `UserProfile.updateUserAttributes` API call.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button):
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in the Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button):
 
     ```swift
     // Update attributes
@@ -69,7 +69,7 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
 
 Once you have updated a user's attribute, it is available to other Adobe SDKs but you can also retrieve attributes explicitly.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > General > **[!UICONTROL HomeView]** in Xcode Project navigator and find the `.onAppear` modifier. Add the following code:
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > General > **[!UICONTROL HomeView]** in the Xcode Project navigator and find the `.onAppear` modifier. Add the following code:
 
     ```swift
     // Get attributes
@@ -107,9 +107,13 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
    1. Select <img src="assets/saveforlater.png" width=15/>.
    1. Select <img src="assets/addtocart.png" width=20/>.
    1. Select <img src="assets/purchase.png" width=15/>.
-   1. Return back to **[!UICONTROL Home]** screen. You should see updated values for **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
+   
+       <img src="./assets/mobile-app-events-1.png" width=200> <img src="./assets/mobile-app-events-2.png" width=200> <img src="./assets/mobile-app-events-3.png" width=200> 
+   1. Return back to **[!UICONTROL Home]** screen. You should see a badge added <img src="assets/person-badge-icon.png" width=15/>.
+       
+       <img src="./assets/personbadges.png" width=200>
 
-      <img src="./assets/mobile-app-events-1.png" width=200> <img src="./assets/mobile-app-events-2.png" width=200> <img src="./assets/mobile-app-events-3.png" width=200> <img src="./assets/personbadges.png" width=200>
+     
 
 1. In the Assurance UI, you should see a **[!UICONTROL UserProfileUpdate]** and **[!UICONTROL getUserAttributes]** events with the updated `profileMap` value.
    ![validate profile](assets/profile-validate.png)
