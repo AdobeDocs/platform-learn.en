@@ -42,11 +42,11 @@ In this lesson, you will
 * Define your own campaign and in-app message experience in Journey Optimizer.
 * Send your own in-app message from within the app.
 
-## Setup your app
+## Setup
 
 >[!TIP]
 >
->If you have setup your app already as part of the [Journey Optimizer push messaging](journey-optimizer-push.md) tutorial, you can skip this section.
+>If you have setup your environment already as part of the [Journey Optimizer push messaging](journey-optimizer-push.md) tutorial, you can skip this section.
 
 ### Register App ID with APNS
 

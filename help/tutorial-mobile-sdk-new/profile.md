@@ -122,4 +122,4 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
 >
 >You have now set up your app to update attributes of profiles in the Edge Network and (when set up) with Adobe Experience Platform.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[Map data to Adobe Analytics](analytics.md)**
+Next: **[Use geolocation services](places.md)**
