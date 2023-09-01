@@ -43,11 +43,11 @@ In this lesson, you will
 * Send your own push notification from within the app.
 
 
-## Setup your app
+## Setup
 
 >[!TIP]
 >
->If you have setup your app already as part of the [Journey Optimizer in-app messaging](journey-optimizer-inapp.md) tutorial, you can skip this section.
+>If you have setup your environment already as part of the [Journey Optimizer in-app messaging](journey-optimizer-inapp.md) tutorial, you can skip this section.
 
 ### Register App ID with APNS
 

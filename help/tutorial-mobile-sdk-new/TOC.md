@@ -26,6 +26,7 @@ recommendations: noDisplay,noCatalog
   + [WebViews](web-views.md)
   + [Identity](identity.md)
   + [Profile](profile.md)
+  + [Places](places.md)
 + Experience Cloud{#experience-cloud}
   + [Analytics](analytics.md)
   + [Experience Platform](platform.md)

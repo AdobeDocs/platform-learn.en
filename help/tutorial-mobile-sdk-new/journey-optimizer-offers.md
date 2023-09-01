@@ -39,11 +39,11 @@ In this lesson, you will
 * Implement offers from Decision Management in your app.
 
 
-## Setup your app
+## Setup
 
 >[!TIP]
 >
->If you have setup your app already as part of the [Setup A/B tests with Target](target.md) tutorial, you can skip [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
+>If you have setup your environment already as part of the [Setup A/B tests with Target](target.md) tutorial, you can skip [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
 
 ### Update Edge configuration
 
@@ -362,7 +362,7 @@ You should now have all the tools to start adding more functionality to your Jou
 
 * apply different parameters to your offers (for example, priority, capping)
 * collect profile attributes in the app (see [Profile](profile.md)) and use these profile attributes to build audiences. Then use these audiences as part of the eligibility rules in your decision.
-* combine more than one decision scopes
+* combine more than one decision scopes.
 
 >[!SUCCESS]
 >
