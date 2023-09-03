@@ -11,15 +11,15 @@ The Edge Network extension provides an API to send Experience Events to Platform
 
 ## Prerequisites
 
-* All package dependencies in place in Xcode project.
-* Registered extensions in AppDelegate.
-* Configured MobileCore to use your development appId.
+* All package dependencies are in place in your Xcode project.
+* Registered extensions in **[!UICONTROL AppDelegate]**.
+* Configured MobileCore extension to use your development `appId`.
 * Imported SDKs.
-* Successfully built and run app with above changes.
+* Successfully built and run the app with the above changes.
 
 ## Learning objectives
 
-In this lesson, you will:
+In this lesson, you will
 
 * Understand how to structure XDM data based on a schema.
 * Send an XDM event based on a standard field group.
@@ -114,14 +114,14 @@ var xdmData: [String: Any] = [
 You are now going to actually implement this code in your Xcode project.
 You have different commerce product-related actions in your app and you want to send events, based on these actions as performed by the user:
 
-* view: occurs when users views a specific product,
-* add to cart: when user taps <img src="assets/addtocart.png" width=20/> in a product detail screen,
-* save for later: when user taps <img src="assets/saveforlater.png" width=15/> in a product detail screen,
-* purchasee: when user taps the <img src="assets/purchase.png" width=20/> in a product detail screen.
+* view: occurs when a user views a specific product,
+* add to cart: when a user taps <img src="assets/addtocart.png" width=20/> in a product detail screen,
+* save for later: when a user taps <img src="assets/saveforlater.png" width=15/> in a product detail screen,
+* purchasee: when a user taps <img src="assets/purchase.png" width=20/> in a product detail screen.
 
-To structure the sending of commerce related experience events, you will use a dedicated function:
+To implement the sending of commerce-related experience events in a reusable way, you use a dedicated function:
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navgiator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
 
     ```swift
     // Set up a data dictionary, create an experience event and send the event.
@@ -152,7 +152,7 @@ To structure the sending of commerce related experience events, you will use a d
     * sets up an experience event using the dictionary,
     * sends the experience event using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in Xcode Project naviagator and add various calls to the `sendCommerceExperienceEvent` function:
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in Xcode Project navigator and add various calls to the `sendCommerceExperienceEvent` function:
 
    1. At the `.task` modifier, within the `ATTrackingManager.trackingAuthorizationStatus` closure. This `.task` modifier is called when product view is initialized and shown, so you want to send a product view event at that specific moment.
 
@@ -276,7 +276,7 @@ Again, lets actually implement this code in your Xcode project.
         
         ```
 
-       This function takes the action name as a parameter and
+       This function uses the action name as a parameter and
 
        * sets up the XDM payload as a dictionary, using the parameter from the function,
        * sets up an experience event using the dictionary,
@@ -305,7 +305,7 @@ Again, lets actually implement this code in your Xcode project.
         Edge.sendEvent(experienceEvent: trackScreenEvent)
         ```
        
-       This function takes the state name as a parameter and
+       This function uses the state name as a parameter and
 
        * sets up the XDM payload as a dictionary, using the parameter from the function,
        * sets up an experience event using the dictionary,
@@ -331,7 +331,7 @@ Again, lets actually implement this code in your Xcode project.
 ## Validation
 
 1. Review the [setup instructions](assurance.md) section and connect your simulator or device to Assurance.
-1. Run the app to log in and interact with a product.
+1. Run the app, log in and interact with a product.
 
    1. Move the Assurance icon to the left.
    1. Select **[!UICONTROL Home]** in the tab bar.
@@ -359,7 +359,7 @@ Again, lets actually implement this code in your Xcode project.
 
 ## Next steps
 
-You should now have all the tools to start adding data collection to the Luma app. You can add more intelligence to how your user interact with your products and you can add more app interaction and screen tracking calls to your app:
+You should now have all the tools to start adding data collection to the Luma app. You can add more intelligence to how the user interacts with your products in the app and you can add more app interaction and screen tracking calls to the app:
 
 * Implement order, checkout, empty basket, and other functionality to the app and add relevant commerce experience events to this functionality.
 * Repeat the call to `sendAppInteractionEvent` with the appropriate parameter to track other app interactions by the user. 

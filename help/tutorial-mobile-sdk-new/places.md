@@ -341,9 +341,11 @@ It is beyond the subject of this tutorial to explain details about the location 
 
 ## Next steps
 
-You should now have all the tools to start adding more functionality to your geolocation functionality in the app. As you have forwarded the events to the Edge Network and through your datastream to Experience Platform, you should see the experience events appearing for the profile used in the app. Those experience events can be used to trigger journeys in Journey Optimizer (see [push notification](journey-optimizer-inapp.md) and [in-app messaging](journey-optimizer-push.md) with Journey Optimizer). For example, the usual example of sending your app user a push notification when someone entering in the geofence of a physical store.
+You should now have all the tools to start adding more functionality to your geolocation functionality in the app. As you have forwarded the events to the Edge Network, once you have set up the app for [Experience Platform](platform.md), you should see the experience events appearing for the profile used in the app. 
 
-You have seen an implementation of functionality for your app, mostly driven by the Places service and data elements and rules you defined in your Tag property. Alternatively, you can implement the same functionality directly in your app using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (see [Events](events.md) for more information) with an XDM payload containing a populated placeContext object.
+In the Journey Optimizer section of this tutorial, you will see that experience events can be used to trigger journeys (see [push notification](journey-optimizer-inapp.md) and [in-app messaging](journey-optimizer-push.md) with Journey Optimizer). For example, the usual example of sending your app user a push notification with some product promotion when that user enters the geofence of a physical store.
+
+You have seen an implementation of functionality for your app, mostly driven by the Places service and data elements and rules you defined in your tag property. As such, minimizing the code in your app. Alternatively, you can implement the same functionality directly in your app using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API (see [Events](events.md) for more information) with an XDM payload containing a populated `placeContext` object.
 
 >[!SUCCESS]
 >
