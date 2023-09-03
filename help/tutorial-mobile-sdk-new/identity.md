@@ -48,16 +48,14 @@ You want to update both the standard identity (email) and the custom identity (L
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the the `func updateIdentities(emailAddress: String, crmId: String)` function implementation. Add the following  code to the function.
 
    ```swift
-   // Set up identity map
+   // Set up identity map, add identities to map and update identities
    let identityMap: IdentityMap = IdentityMap()
 
-   // Add identity items to identity map
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
    let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
 
-   // Update identities
    Identity.updateIdentities(with: identityMap)
    ```
 
@@ -93,7 +91,7 @@ You want to update both the standard identity (email) and the custom identity (L
 1. Navigate to **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
 
    ```swift
-   // call updaeIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -105,14 +103,14 @@ You want to update both the standard identity (email) and the custom identity (L
 
 ## Remove an identity
 
-You can use `removeIdentity` to remove the identity from the stored client-side IdentityMap. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side User Profile Graph or Identity Graph.
+You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side User Profile Graph or Identity Graph.
 
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL General]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
 
    ```swift
+   // Remove identities and reset email and CRM Id to their defaults
    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
-   // reset email and CRM Id to their defaults
    currentEmailId = "testUser@gmail.com"
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
@@ -120,9 +118,8 @@ You can use `removeIdentity` to remove the identity from the stored client-side 
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
 
    ```swift
-   // call removeIdentities
-   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)
-   dismiss()                   
+   // Remove identities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                  
    ```
 
 
@@ -132,11 +129,14 @@ You can use `removeIdentity` to remove the identity from the stored client-side 
 1. In the Luma app
    1. Select the **[!UICONTROL Home]** tab. 
    1. Select the <img src="assets/login.png" width=15/> icon from the top right.
+   
+      <img src="./assets/identity1.png" width=300>
+      
    1. Provide an email address and a CRM Id, or
    1. Select <img src="assets/insert.png" width=15/> to randomly generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
    1. Select **[!UICONTROL Login]**.
 
-      <img src="./assets/identity1.png" width=300> <img src="./assets/identity2.png" width=300>
+       <img src="./assets/identity2.png" width=300>
     
 
 1. Look in the Assurance web UI for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.

@@ -22,7 +22,7 @@ In this lesson, you will:
 
 ## Potential tracking issues
 
-If you send data from the native portion of the app and a WebView, each generates their own Experience Cloud ID (ECID), which results in disconnected hits and inflated visit/visitor data. More information about the ECID can be found in the [ECID overview](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
+If you send data from the native portion of the app and from a WebView within the app, each generates their own Experience Cloud ID (ECID), which results in disconnected hits and inflated visit / visitor data. More information about the ECID can be found in the [ECID overview](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en).
 
 To solve for that undesirable situation, it's important to pass the user's ECID from the native portion of your app to a WebView you might want to use in your app.
 
@@ -33,7 +33,7 @@ The Experience Cloud ID Service JavaScript extension in the WebView extracts the
 Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Info]** > **[!UICONTROL TermsOfServiceSheet]**, and locate the `func loadUrl()` function in the `final class SwiftUIWebViewModel: ObservableObject` class. Add the following call to handle the web view:
 
 ```swift
-// Adobe Experience Platform - Handle Web View
+// Handle web view
 AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
     if let error = error {
         print("Error with Webview", error)
@@ -53,7 +53,7 @@ AEPEdgeIdentity.Identity.getUrlVariables {(urlVariables, error) in
 }
 ```
 
-The `AEPEdgeIdentity.Identity.getUrlVariables` API sets up the variables for the URL to contain all relevant information, like ECID, and more. In the example, you are using a local file but the same concepts apply to remote pages.
+The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API sets up the variables for the URL to contain all relevant information, like ECID, and more. In the example, you are using a local file but the same concepts apply to remote pages.
 
 You can learn more about the `Identity.getUrlVariables` API in the [Identity for Edge Network extension API reference guide](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 

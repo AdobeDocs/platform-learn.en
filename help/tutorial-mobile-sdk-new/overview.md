@@ -24,6 +24,8 @@ After completing this tutorial, you will be able to:
 * Configure a mobile tag property.
 * Set up an Experience Platform dataset (optional).
 * Install and implement tag extensions in an app.
+* Correctly pass Experience Cloud parameters to a [webview](web-views.md).
+* Validate the implementation using [Adobe Experience Platform Assurance](assurance.md).
 * Add the following Adobe Experience Cloud applications/extensions:
   * [Adobe Experience Platform Edge (XDM)](events.md)
   * [Lifecycle data collection](lifecycle-data.md)
@@ -31,14 +33,14 @@ After completing this tutorial, you will be able to:
   * [Consent](consent.md)
   * [Identity](identity.md)
   * [Profile](profile.md)
+  * [Places](places.md)
+  * [Analytics](analytics.md)
   * [Adobe Experience Platform](platform.md)
   * [Push messaging with Journey Optimizer](journey-optimizer-push.md)
   * [Im-app messaging with Journey Optimizer](journey-optimizer-inapp.md)
   * [Offers with Journey Optimizer](journey-optimizer-offers.md)
   * [A/B tests with Target](target.md)
-  
-* Correctly pass Experience Cloud parameters to a [webview](web-views.md).
-* Validate the implementation using [Adobe Experience Platform Assurance](assurance.md).
+
 
 >[!NOTE]
 >
@@ -66,14 +68,18 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
 
 All Experience Cloud customers should have access to the required features needed to deploy Mobile SDK.
 
-Also, it is assumed that you are familiar with [!DNL Swift]. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
+>[!NOTE]
+>
+>You will use iOS as the platform, [!DNL Swift] as the programming language, [!DNL SwiftUI] as the UI framework and [!DNL Xcode] as the integrated development enviromnent (IDE). However, many of the implementation concepts explained are similar for other development platforms. It is assumed that you are somewhat familiar with [!DNL Swift] and [!DNL SwiftUI]. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
+
 
 ## Download the Luma app
 
-Two versions of the sample app are available for download. 
+Two versions of the sample app are available for download. Both version can be downloaded / cloned from [Github](https://git.corp.adobe.com/rmaur/Luma). You will find two folders:
 
-1. [Empty](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): a version without any Experience Cloud code to complete the hands-on exercises in this tutorial
-1. [Full Implemented](https://git.corp.adobe.com/Luma{target="_blank"}): a version with full Experience Cloud implementation for reference.
+
+1. [Start](https://git.corp.adobe.com/rmaur/Luma{target="_blank"}): a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
+1. [Finish](https://git.corp.adobe.com/Luma{target="_blank"}): a version with the full implementation for reference.
 
 Let's get started!
 

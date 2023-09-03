@@ -94,7 +94,7 @@ For learning purposes, you use prebuilt and custom field groups.
 
    ![Selecting ExperienceEvent from drop down](assets/schema-create.png)
 
-1. Select ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add** next to [!UICONTROL Field groups].
+1. Select ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add** next to **[!UICONTROL Field groups]**.
 
    ![Add field group](assets/add-field-group.png)
 
@@ -110,7 +110,7 @@ For learning purposes, you use prebuilt and custom field groups.
 
     You are brought back to the main schema composition screen where you can see all the available fields.
 
-1. Give your schema a name by selecting **[!UICONTROL Untitled schema]** from the top left and then providing a **[!UICONTROL Display name]** & **[!UICONTROL Description]**, for example `Luma Mobile App Event Schema` and `Schema for Luma mobile app experience events.`
+1. Give your schema a name by selecting **[!UICONTROL Untitled schema]** from the **[!UICONTROL Composition]** pane (underneath **[!UICONTROL Schema]**) and providing a **[!UICONTROL Display name]** & **[!UICONTROL Description]**, for example `Luma Mobile App Event Schema` and `Schema for Luma mobile app experience events.`
 
 1. Select **[!UICONTROL Save]**.
 
@@ -119,8 +119,8 @@ For learning purposes, you use prebuilt and custom field groups.
 >[!NOTE]
 >
 >Keep in mind that you do not have to use all the fields in a group. If it's helpful, you can think of a schema as an empty data layer. In your app, you populate the relevant values at the appropriate time.
->
->The `Consumer Experience Event` has a data type called `Web information`, which describes events like page view and link clicks. At the time of writing, there isn't a mobile app parity to this feature, so you are going to create your own. 
+
+The [!UICONTROL Consumer Experience Event] field group has a data type called [!UICONTROL Web information], which describes events like page view and link clicks. At the time of writing, there isn't a mobile app parity to this feature, so you are going to create your own. 
 
 ## Create a custom data type
 
@@ -145,10 +145,9 @@ You begin by creating a custom data type describing the two events:
 
 
 1. To add a field, select the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button. 
-
-    This field is a container object for app interaction. 
+ 
     
-1. Provide a camel-case **[!UICONTROL Field name]** `appInteraction`, **[!UICONTROL Display name]** `App Interaction`, and select `Object` from the **[!UICONTROL Type]** list.
+1. This field is a container object for app interaction., so provide a camel-case **[!UICONTROL Field name]** `appInteraction`, **[!UICONTROL Display name]** `App Interaction`, and select `Object` from the **[!UICONTROL Type]** list.
 
 1. Select **[!UICONTROL Apply]**.
 
@@ -174,7 +173,7 @@ You begin by creating a custom data type describing the two events:
 
 1. Scroll to the bottom of the right rail and select **[!UICONTROL Apply]**.
 
-1. To create an `appStateDetails` object containing a **[!UICONTROL Measure]** field called `screenView` and two **[!UICONTROL String]** fields called `screenName` and `screenType` follow the same steps as you did when creating the **[!UICONTROL appInteraction]** object.
+1. To create an `appStateDetails` object containing a **[!UICONTROL Measure]** field called `screenView` and two **[!UICONTROL String]** fields called `screenName` and `screenType`, follow the same steps as you did when creating the **[!UICONTROL appInteraction]** object.
 
 1. Select **[!UICONTROL Save]**.
 
@@ -190,7 +189,7 @@ Now add a custom field group using your custom data type:
 
     ![Adding new field group](assets/schema-fieldgroup-add.png)
 
-1. Create a custom field group by selecting the **[!UICONTROL Create new field group]** radio button near the top.
+1. Select **[!UICONTROL Create new field group]**.
 
 1. Provide a **[!UICONTROL Display name]** and **[!UICONTROL Description]**, for example, `App Interactions` and `Fields for app interactions`.
 
@@ -204,7 +203,7 @@ Now add a custom field group using your custom data type:
 
 1. In the right rail, provide a **[!UICONTROL Field name]** of `appInformation`, a **[!UICONTROL Display name]** of `App Information`, and a **[!UICONTROL Type]** of `App Information`.
 
-1. Select **[!UICONTROL App Interactions]** from the **[!UICONTROL Type]** drop down, which is the data type you created in the previous exercise.
+1. Select **[!UICONTROL App Interactions]** from the **[!UICONTROL Type]** drop down, which is the custom data type you created in the previous exercise.
 
 1. Select **[!UICONTROL Apply]**.
 
@@ -214,7 +213,7 @@ Now add a custom field group using your custom data type:
 
 >[!NOTE]
 >
->Custom field groups are always placed under your Experience Cloud Org identifier. So `_techmarketingdemos` is replaced with your Org's unique value.
+>Custom field groups are always placed under your Experience Cloud Org identifier. So `_techmarketingdemos`, used in the screenshots, is replaced with your organization's unique value.
 
 
 >[!SUCCESS]

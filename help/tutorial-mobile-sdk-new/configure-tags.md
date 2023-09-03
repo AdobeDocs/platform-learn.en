@@ -123,7 +123,7 @@ Your library is build for the new extensions and configurations. A successful bu
 
     ![environments home screen](assets/tags-environments.png)
 
-1. In the [!UICONTROL Mobile Install Instructions] dialog, select the **[!UICONTROL iOS]** tab.
+1. In the **[!UICONTROL Mobile Install Instructions]** dialog, select the **[!UICONTROL iOS]** tab.
 
 1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using CocoaPods. CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [documentation](https://cocoapods.org/).
  

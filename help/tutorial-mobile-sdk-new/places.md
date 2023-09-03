@@ -82,8 +82,8 @@ You define some points of interest in the Places service.
 1. Navigate to **[!UICONTROL Tags]** and find your mobile tag property and open the property.
 1. Select **[!UICONTROL Extensions]**.
 1. Select **[!UICONTROL Catalog]**.
-1. Search for the **[!UICONTROL Adobe Journey Optimizer - Decisioning]** extension.
-1. Install the extension. The extension does not require additional configuration.
+1. Search for the **[!UICONTROL Places]** extension.
+1. Install the extension.
 
     ![Add Decisioning extension](assets/tag-places-extension.png)
 
@@ -110,7 +110,7 @@ Verify whether your schema, as defined in [Create schema](create-schema.md), inc
 
 ### Update your tag
 
-The Places extension provides functionality to monitor geolocation events and allows you to trigger actions based on these events. You can use this functionality to minimize the API coding you have to implement in the app.
+The Places extension for Tags provides functionality to monitor geolocation events and allows you to trigger actions based on these events. You can use this functionality to minimize the API coding you have to implement in the app.
 
 **Data Elements**
 
@@ -122,7 +122,7 @@ You first create several data elements.
 1. In the **[!UICONTROL Create Data Element]** screen, enter a name, for example `Name - Entered`.
 1. Select **[!UICONTROL Places]** from the **[!UICONTROL Extension]** list.
 1. Select **[!UICONTROL Name]** from the **[!UICONTROL Data Element Type]** list.
-1. Select **[!UICONTROL Current POI ]**underneath **[!UICONTROL TARGET]**.
+1. Select **[!UICONTROL Current POI]** underneath **[!UICONTROL TARGET]**.
 1. Select **[!UICONTROL Save to Library]**.
    ![Data element](assets/tags-create-data-element.png) 
 
@@ -142,9 +142,9 @@ You first create several data elements.
 
 **Rules** 
 
-Now you are going to define rules to work with these data elements. 
+Next, you are going to define rules to work with these data elements. 
 
-1. Select **[!UICONTROL Rules]** from the left rail.
+1. In your tag property. select **[!UICONTROL Rules]** from the left rail.
 1. Select **[!UICONTROL Add Rule]**.
 1. In the **[!UICONTROL Create Rule]** screen, enter a name for the rule, for example `POI - Entry`.
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL EVENTS]**.
@@ -152,7 +152,7 @@ Now you are going to define rules to work with these data elements.
    1. Select **[!UICONTROL Keep Changes]**.
       ![Tag event](assets/tags-event-mobile-core.png). 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ACTIONS]**.
-   1. Select **[!UICONTROL Mobile Core]** from **[!UICONTROL Extension]** list, select **[!UICONTROL Attach Data]** from **[!UICONTROL Action Type]** list. This action attaches payload data.
+   1. Select **[!UICONTROL Mobile Core]** from the **[!UICONTROL Extension]** list, select **[!UICONTROL Attach Data]** from **[!UICONTROL Action Type]** the list. This action attaches payload data.
    1. In the **[!UICONTROL JSON Payload]**, paste the following payload:
 
         ```json
@@ -177,7 +177,7 @@ Now you are going to define rules to work with these data elements.
         }
         ```
 
-       The `{%% ... %%}` values can also be easily inserted by selecting the ![Data](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg) next to the dialog and picking a data element from the dialog.
+       You can also insert `{%% ... %%}` data element placeholder values in the JSON by selecting the ![Data](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). A popup dialog allows you to pick any data element you created.
 
    1. Select **[!UICONTROL Keep Changes]**.
         ![Tags action](assets/tags-action-mobile-core.png)
@@ -243,7 +243,7 @@ To ensure all changes in your tag are published
 To validate your setup in Assurance:
 
 1. Go to the Assurance UI.
-1. If not already available in the left rail. select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Events]** and **[!UICONTROL Map & Simulate]** underneath **[!UICONTROL PLACES SERVICE]**.
+1. If not already available in the left rail, select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Events]** and **[!UICONTROL Map & Simulate]** underneath **[!UICONTROL PLACES SERVICE]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Map & Simulate]** in the left rail.
 1. Select one of the POI's defined in the Places service and from the popup select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
@@ -285,12 +285,21 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Navigate to Luma > Luma > Utils > MobileSDK in the Xcode Project navigator and find the func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async function. This function is a wrapper around the [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API.
-1. Navigate to Luma > Luma > Views > Location > GeofenceSheet in Xcode's Project navigator. 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Add the following code:
+
+    ```swift
+    // Process geolocation event
+    Places.processRegionEvent(regionEvent, forRegion: region)
+    ```   
+
+    This [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API communicates the geolocation information to the Places service.
+
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Location]** > **[!UICONTROL GeofenceSheet]** in Xcode's Project navigator. 
    
    1. For the Entry button, enter the following code
 
     ```swift
+    // Simulate geofence entry event
     Task {
         await MobileSDK.shared.processRegionEvent(regionEvent: .entry, forRegion: region)
     }
@@ -299,12 +308,13 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    1. For the Exit button, enter the following code
 
     ```swift
+    // Simulate geofence exit event
     Task {
         await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
     }
     ```  
 
-It is beyond the topic of this tutorial to explain details about the location manager implementation within iOS.
+It is beyond the subject of this tutorial to explain details about the location manager implementation within iOS.
 
 
 ## Validate using your app
@@ -315,13 +325,13 @@ It is beyond the topic of this tutorial to explain details about the location ma
 
 1. Move the map around to ensure the blue circle in the middle is on top of one of your POI's, for example London.
 
-1. Tap the blue <img src="assets/geobutton.png" width=20/> repeatedly until you see the category and name at the bottom right.
+1. Tap <img src="assets/geobutton.png" width=20/> repeatedly until you see the category and name at the bottom right.
    
-1. Tap the label of the POI, which opens up the Nearby POI sheet. 
+1. Tap the label of the POI, which opens up the **[!UICONTROL Nearby POI]** sheet. 
    
    <img src="assets/appgeolocation.png" width=300/>
 
-1. Press the Entry or Exit buttons to simulate geolocation events from the app.
+1. Press the **[!UICONTROL Entry]** or **[!UICONTROL Exit]** buttons to simulate geofence entry and geofence exit events from the app.
 
    <img src="assets/appentryexit.png" width=300/>
 

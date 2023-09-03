@@ -9,9 +9,9 @@ Learn how to implement the Adobe Experience Platform Mobile SDK in a mobile app.
 
 ## Prerequisites
 
-* Successfully built tag library with the extensions described in the [previous lesson](configure-tags.md).
+* Successfully built a tag library with the extensions described in the [previous lesson](configure-tags.md).
 * Development Environment File ID from the [Mobile Install Instructions](configure-tags.md#generate-sdk-install-instructions).
-* Downloaded, empty [sample app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}.
+* Downloaded the empty [sample app](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}.
 * Experience with [XCode](https://developer.apple.com/xcode/){target="_blank"}.
 
 ## Learning objectives
@@ -38,10 +38,10 @@ In Xcode, use **[!UICONTROL File]** > **[!UICONTROL Add Packages...]** and insta
 | [AEP Edge Identity](https://github.com/adobe/aepsdk-edgeidentity-ios.git)| The AEP Edge Identity mobile extension enables handling of user identity data from a mobile application when using the Adobe Experience Platform SDK and the Edge Network extension. |
 | [AEP Edge Consent](https://github.com/adobe/aepsdk-edgeconsent-ios.git) | The AEP Consent Collection mobile extension enables consent preferences collection from the mobile application when using the Adobe Experience Platform SDK and the Edge Network extension. |
 | [AEP User Profile](https://github.com/adobe/aepsdk-userprofile-ios.git) | The Adobe Experience Platform User Profile Mobile Extension is an extension to manage user profiles for the Adobe Experience Platform SDK.|
-| [AEP Places](https://github.com/adobe/aepsdk-places-ios) |Adobe Experience Platform Places extension is an extension for the Adobe Experience Platform Swift SDK. The AEPPlaces extension allows you to track geolocation events as defined in the Adobe Places UI and in Adobe Launch rules. |
-| [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) |The AEP Messaging extension is an extension for the Adobe Experience Platform Swift SDK. The AEP Messaging extension allows you to send push notification tokens and push notification click-through feedback to the Adobe Experience Platform.|
+| [AEP Places](https://github.com/adobe/aepsdk-places-ios) | The AEPPlaces extension allows you to track geolocation events as defined in the Adobe Places UI and in Adobe Data Collection Tag rules. |
+| [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) | The AEP Messaging extension allows you to send push notification tokens and push notification click-through feedback to the Adobe Experience Platform.|
 | [AEP Optimize](https://github.com/adobe/aepsdk-optimize-ios) | The AEP Optimize extension provides APIs to enable real-time personalization workflows in the Adobe Experience Platform Mobile SDKs using Adobe Target or Adobe Journey Optimizer Offer Decisioning. It requires `AEPCore` and `AEPEdge` extensions to send personalization query events to the Experience Edge network. |
-| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (a.k.a. project Griffon) is a new, innovative product to help you inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app.|
+| [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (a.k.a. project Griffon) is a new, innovative product to help you inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app. This extension enables your app for Assurance. |
 
 
 After you have installed all packages, your Xcode **[!UICONTROL Package Dependencies]** screen should look like:
@@ -51,7 +51,7 @@ After you have installed all packages, your Xcode **[!UICONTROL Package Dependen
 
 ## Import extensions
 
-In Xcode, navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** and add the following imports.
+In Xcode, navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** and ensure the following imports are part of this source file.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -85,6 +85,7 @@ Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** in t
 1. Add the following code to the `application(_, didFinishLaunchingWithOptions)` function.
 
     ```swift
+    // Define extensions
     let extensions = [
         AEPIdentity.Identity.self,
         Lifecycle.self,
@@ -99,6 +100,7 @@ Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** in t
         Assurance.self
     ]
     
+    // Register extensions
     MobileCore.registerExtensions(extensions, {
         // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
         Logger.aepMobileSDK.info("Luma - using mobile config: \(self.environmentFileId)")
@@ -114,10 +116,6 @@ Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** in t
         
         // assume unknown, adapt to your needs.
         MobileCore.setPrivacyStatus(.unknown)
-        
-        // update version and build
-        Logger.configuration.info("Luma - Updating version and build number...")
-        SettingsBundleHelper.setVersionAndBuildNumber()
     })
     ```
 
@@ -126,6 +124,8 @@ The above code does the following:
 1. Registers the required extensions.
 1. Configures MobileCore and other extensions to use your tag property configuration.
 1. Enables debug logging. More details and options can be found in the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+1. Starts lifecycle monitoring. See [Lifecycle](lifecycle-data.md) step in the tutorial for more details.
+1. Sets the default consent to unknown. See [Consent](consent.md) step in the tutorial for more details.
 
 >[!IMPORTANT]
 >
