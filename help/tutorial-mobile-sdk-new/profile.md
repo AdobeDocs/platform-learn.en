@@ -33,18 +33,16 @@ In this lesson, you will:
 * Retrieve user attributes.
 
 
-## Set & update user attributes
+## Set and update user attributes
 
-It would be helpful for targeting and/or personalization to quickly know if a user has made purchase in the app before. Let's set that up in the Luma app.
+It would be helpful for targeting and / or personalization in the app to quickly know if a user has made a purchase in the past or recently. Let's set that up in the Luma app.
 
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
 
     ```swift
-    // Create a profile map
+    // Create a profile map, add attributes to the map and update profile using the map
     var profileMap = [String: Any]()
-    // Add attributes to profile map
     profileMap[attributeName] = attributeValue
-    // Use profile map to update user attributes
     UserProfile.updateUserAttributes(attributeDict: profileMap)
     ```
 
@@ -54,22 +52,21 @@ It would be helpful for targeting and/or personalization to quickly know if a us
 
     1. Adds an element to the dictionary using `attributeName` (for example `isPaidUser`), and `attributeValue` (for example `yes`).
 
-    1. Uses the `profileMap` dictionary as a value to the `attributeDict` parameter of the `UserProfile.updateUserAttributes` API call.
+    1. Uses the `profileMap` dictionary as a value to the `attributeDict` parameter of the [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API call.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in the Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button):
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in the Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button). Add the following code:
 
     ```swift
     // Update attributes
     MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
     ```
 
-Additional documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattribute).
 
 ## Get user attributes
 
-Once you have updated a user's attribute, it is available to other Adobe SDKs but you can also retrieve attributes explicitly.
+Once you have updated a user's attribute, it is available to other Adobe SDKs but you can also retrieve attributes explicitly, to let your app behave the way you want.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > General > **[!UICONTROL HomeView]** in the Xcode Project navigator and find the `.onAppear` modifier. Add the following code:
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL HomeView]** in the Xcode Project navigator and find the `.onAppear` modifier. Add the following code:
 
     ```swift
     // Get attributes
@@ -85,7 +82,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
 
     This code:
     
-    1. Calls the `UserProfile.getUserAttributes` closure with the `iPaidUser` attribute name as single element in the `attributeNames` array.
+    1. Calls the [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API with the `iPaidUser` attribute name as single element in the `attributeNames` array.
     1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the <img src="assets/paiduser.png" width=20/> icon in the toolbar at the top right.
 
 Additional documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
@@ -100,18 +97,25 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
    1. Move the Assurance icon to the left.
    1. Select **[!UICONTROL Home]** in the tab bar.
    1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
+      
+      <img src="./assets/mobile-app-events-1.png" width=300> 
+
    1. To insert a random email and customer id, select the <img src="assets/insert.png" width=15/> button .
    1. Select **[!UICONTROL Login]**.
+  
+       <img src="./assets/mobile-app-events-2.png" width=300>
+
    1. Select **[!UICONTROL Products]** in the tab bar.
    1. Select one product.
    1. Select <img src="assets/saveforlater.png" width=15/>.
    1. Select <img src="assets/addtocart.png" width=20/>.
    1. Select <img src="assets/purchase.png" width=15/>.
    
-       <img src="./assets/mobile-app-events-1.png" width=200> <img src="./assets/mobile-app-events-2.png" width=200> <img src="./assets/mobile-app-events-3.png" width=200> 
+      <img src="./assets/mobile-app-events-3.png" width=300> 
+
    1. Return back to **[!UICONTROL Home]** screen. You should see a badge added <img src="assets/person-badge-icon.png" width=15/>.
        
-       <img src="./assets/personbadges.png" width=200>
+       <img src="./assets/personbadges.png" width=300>
 
      
 

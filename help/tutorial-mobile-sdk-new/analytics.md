@@ -29,7 +29,7 @@ Many of the standard XDM fields are automatically mapped to Analytics variables.
 
 ### Example #1 - s.products
 
-A good example is the [products variable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) which can't be populated using processing rules. With an XDM implementation, you pass all the necessary data in productListItems and s.products are automatically populated via Analytics mapping.
+A good example is the [products variable](https://experienceleague.adobe.com/docs/analytics/implementation/vars/page-vars/products.html?lang=en) which can't be populated using processing rules. With an XDM implementation, you pass all the necessary data in `productListItems` and `s.products` are automatically populated via Analytics mapping.
 
 This object:
 
@@ -50,7 +50,7 @@ This object:
 ]
 ```
 
-Would result in the following:
+results in:
 
 ```
 s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
@@ -59,6 +59,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 >[!NOTE]
 >
 >Currently `productListItems[N].SKU` is ignored by automatic mapping.
+
 
 ### Example #2 - scAdd
 
@@ -74,7 +75,7 @@ This object:
 }
 ```
 
-Would result in the following:
+results in:
 
 ```
 s.events = "scAdd"
@@ -91,7 +92,7 @@ This object:
 }
 ```
 
-Would result in the following:
+results in:
 
 ```
 s.events = "scAdd:321435"
@@ -99,7 +100,7 @@ s.events = "scAdd:321435"
 
 ## Validate with Assurance
 
-Using the [Assurance QA tool](assurance.md) you can confirm that you're sending an ExperienceEvent, the XDM data is correct and the Analytics mapping is happening as expected. For example:
+Using the [Assurance](assurance.md) you can confirm that you're sending an experience event, the XDM data is correct and the Analytics mapping is happening as expected. For example:
 
 1. Send a productListAdds event.
 
@@ -151,10 +152,10 @@ a.x.[xdm path]
 For example:
 
 ```
-//Standard Field
+// Standard Field
 a.x.commerce.saveforlaters.value
 
-//Custom Field
+// Custom Field
 a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 ```
 
@@ -186,7 +187,7 @@ Addition information about processing rules and context data can be found [here]
 
 >[!TIP]
 >
->Unlike previous mobile app implementations, there is no distinction between a page/screen views and other event. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+>Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
 
 >[!SUCCESS]
 >

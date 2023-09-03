@@ -96,6 +96,7 @@ The previous exercise dispatches the foreground and background events to Adobe E
    1. Select **[!UICONTROL Background]** as the **[!UICONTROL Event Type]**.
    1. Select **[!UICONTROL Keep Changes]**.
       ![Rule Event Configuration](assets/rule-event-configuration-background.png)
+1. Back in the **[!UICONTROL Create Rule]** screen, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** underneath **[!UICONTROL ACTIONS]**.
    ![Rule Add Action](assets/rule-action-button.png)
 1. In the **[!UICONTROL Action Configuration]** step:
    1. Select **[!UICONTROL Adobe Experience Edge Network]** as the **[!UICONTROL Extension]**.

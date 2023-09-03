@@ -35,6 +35,7 @@ To begin collecting data, you must get consent from the user. In this tutorial, 
    Add this code to the `updateConsent` function.
 
    ```swift
+   // Update consent
    let collectConsent = ["collect": ["val": value]]
    let currentConsents = ["consents": collectConsent]
    Consent.update(with: currentConsents)
@@ -46,12 +47,14 @@ To begin collecting data, you must get consent from the user. In this tutorial, 
    Add the following code to the `ATTrackingManager.requestTrackingAuthorization { status in` closure.
 
    ```swift 
+   // Add consent based on authorization
    if status == .authorized {
-         // Set consent to yes
-         MobileSDK.shared.updateConsent(value: "y")
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "y")
    }
    else {
-         MobileSDK.shared.updateConsent(value: "n")
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "n")
    }
    ```
 
@@ -64,6 +67,7 @@ The Consent mobile extension automatically suppresses / pends / allows tracking 
    Add the following code to the `getConsents` function:
 
    ```swift
+   // Get consents
    Consent.getConsents { consents, error in
       guard error == nil, let consents = consents else { return }
       guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }

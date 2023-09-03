@@ -13,7 +13,7 @@ A datastream is a server-side configuration on Platform Edge Network. The datast
 
 ## Prerequisites
 
-To create a datastream, your organization must be provisioned for this feature in the Data Collection interface (formerly [!UICONTROL Launch]) and you must have user permissions for [!UICONTROL Experience Platform] > [!UICONTROL Data Collection] > **[!UICONTROL Manage Datastreams]** and **[!UICONTROL View Datastreams]**.
+To create a datastream, your organization must be provisioned for this feature in the Data Collection interface (formerly [!UICONTROL Launch]) and you must have user permissions manage and view datastreams.
 
 ## Learning objectives
 
@@ -68,7 +68,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 1. Enable the service by switching **[!UICONTROL Enabled]** on.
 
-1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instruction, for example **Luma Mobile App Event Dataset**
+1. Select the **[!UICONTROL Event Dataset]** that you created as part of the [Create a dataset](platform.md#create-a-dataset) instructions, for example **Luma Mobile App Event Dataset**
 
 1. Select **[!UICONTROL Save]**.
 
@@ -82,7 +82,7 @@ You might also want to enable the Adobe Experience Platform service.
 >
 >Enabling each of the services that your organization uses ensures data collected in the mobile app can be used everywhere. For more information about datastream settings, review the documentation [here](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html#adobe-experience-platform-settings).
 
-When implementing Platform Mobile SDK in your own app, you should create three datastreams to map to your three tag environments (development, stage, and production). If you are using Platform Mobile SDK with Platform-based applications such as Adobe Real-Time Customer Data Platform or Adobe Journey Optimizer, you should be sure to create those datastreams in the appropriate Platform sandboxes.
+When implementing Platform Mobile SDK in your own app, you should ultimately create three datastreams to map to your three tag environments (development, stage, and production). If you are using Platform Mobile SDK with Platform-based applications such as Adobe Real-Time Customer Data Platform or Adobe Journey Optimizer, you should be sure to create those datastreams in the appropriate sandboxes.
 
 >[!SUCCESS]
 >
