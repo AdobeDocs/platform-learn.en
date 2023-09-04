@@ -8,7 +8,7 @@ hide: yes
 ---
 # Journey Optimizer push messaging
 
-Learn how to create push messages for mobile apps with Platform Mobile SDK and Journey Optimizer.
+Learn how to create push messages for mobile apps with Experience Platform Mobile SDK and Journey Optimizer.
 
 Journey Optimizer allows you to create your journeys and send messages to targeted audiences. Before you send push notifications with Journey Optimizer, you must ensure that the proper configurations and integrations are in place. To understand the Push Notifications data flow in  Journey Optimizer, refer to the [documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
@@ -22,7 +22,7 @@ Journey Optimizer allows you to create your journeys and send messages to target
 * Successfully built and run the app with SDKs installed and configured.
 * Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Journey Optimizer features.
   * Create an app surface. 
-  * Create a journey
+  * Create a journey.
   * Create a message.
   * Create message presets.
 * Paid Apple developer account with sufficient access to create certificates, identifiers, and keys.
@@ -32,10 +32,10 @@ Journey Optimizer allows you to create your journeys and send messages to target
 
 In this lesson, you will
 
-* Register App ID with the Apple Push Notification service (APNS).
-* Create an App Surface in AJO.
+* Register App ID with the Apple Push Notification service (APNs).
+* Create an App Surface in Journey Optimizer.
 * Update your schema to include push messaging fields.
-* Install & configure the Journey Optimizer tag extension.
+* Install and configure the Journey Optimizer tag extension.
 * Update your app to include the Journey Optimizer tag extension.
 * Validate setup in Assurance.
 * Send a test message from Assurance
@@ -104,7 +104,7 @@ For your app to work with Journey Optimizer, you need to update your tag propert
 
 >[!NOTE]
 >
->If you don't see `AJO Push Tracking Experience Event Dataset` as an option, contact customer care.
+>If you don't see **[!UICONTROL AJO Push Tracking Experience Event Dataset]** as an option, contact customer care.
 >
 
 ### Implement Journey Optimizer in the app
@@ -140,16 +140,18 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Add the `MobileCore.setPushIdentifier` to the `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` function.
+### Register device token for push notifications
+
+1. Add the [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API to the `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` function.
 
     ```swift      
-    // Send push token to Experience Platform
+    // Send push token to Mobile SDK
     MobileCore.setPushIdentifier(deviceToken)
     ```
 
     This function retrieves the device token unique to the device that the app is installed on. Then sets the token for push notification delivery using the configuration that you have set up and which relies on Apple's Push Notification service (APNs).
 
-## Validate setup Assurance
+## Validate setup with Assurance
 
 1. Review the [setup instructions](assurance.md) section.
 1. Install the app on your physical device or on the simulator.
@@ -232,7 +234,7 @@ Events in Journey Optimizer allow you to trigger your journeys unitarily to send
    1. Select **[!UICONTROL Save]**.
       ![Edit event step 2](assets/ajo-edit-event2.png) 
 
-You just created an event configuration that is based on the mobile app experience events schema you created earlier as part of this tutorial. This event configuration will filter incoming experience events using your mobile app identifier, so you ensure only events initiated from your mobile app will trigger the journey you will build in the next step. In a real world scenario you might want to send push notifications from an external service, however the same concepts apply: from the external application send an experience event into Experience Platform that has specific fields you can use to apply conditions on before these events trigger a journey.
+You just created an event configuration that is based on the mobile app experience events schema you created earlier as part of this tutorial. This event configuration will filter incoming experience events using your specific event type (`application.test`), so you ensure only events with that specific type, initiated from your mobile app, will trigger the journey you build in the next step. In a real world scenario you might want to send push notifications from an external service, however the same concepts apply: from the external application send an experience event into Experience Platform that has specific fields you can use to apply conditions on before these events trigger a journey.
 
 ### Create the journey
 
@@ -272,9 +274,9 @@ Your next step is to create the journey that triggers the sending of the push no
 
 ## Triggering the push notification
 
-You have all the ingredients in place to send a push notification. What remains is how to trigger this push notification. In essence, it is the same as you have seen before: simply send an experience event with the proper payload (as in ![Events](events.md)).
+You have all the ingredients in place to send a push notification. What remains is how to trigger this push notification. In essence, it is the same as you have seen before: simply send an experience event with the proper payload (as in [Events](events.md)).
 
-This time the experience event you are about to send is not constructed building a simple XDM dictionary. You are going to use a struct representing a push notification payload. Defining a dedicated data type is an alternative way on how to implement constructing experience event payloads in your application.
+This time the experience event you are about to send is not constructed building a simple XDM dictionary. You are going to use a `struct` representing a push notification payload. Defining a dedicated data type is an alternative way on how to implement constructing experience event payloads in your application.
 
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Model]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** in the Xcode Project navigator and inspect the code.
 
@@ -307,6 +309,7 @@ This time the experience event you are about to send is not constructed building
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
     ```swift
+    // Create payload and send experience event
     Task {
         let testPushPayload = TestPushPayload(
             application: Application(
@@ -327,9 +330,11 @@ This time the experience event you are about to send is not constructed building
 
     ```swift
     // Setting parameters and calling function to send push notification
-    let eventType = "mobileapp.testpush"
-    let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
-    await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)   
+    Task {
+        let eventType = testPushEventType
+        let applicationId = Bundle.main.bundleIdentifier ?? "No bundle id found"
+        await MobileSDK.shared.sendTestPushEvent(applicationId: applicationId, eventType: eventType)
+    }
     ```
 
 
@@ -340,6 +345,7 @@ This time the experience event you are about to send is not constructed building
 1. Go to the **[!UICONTROL Settings]** tab.
 
 1. Tap **[!UICONTROL Push Notification]**. You see the push notification appear in your app.
+   
    <img src="assets/ajo-test-push.png" width=300/>
 
 
