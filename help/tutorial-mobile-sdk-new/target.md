@@ -214,7 +214,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test) and 
    * unwraps the result in content that can be displayed properly in the app.
 
-1. Still in **[!UICONTROL TargetOffersView]**, find the f`unc updatePropositions(location: String) async` function and add the following code:
+1. Still in **[!UICONTROL TargetOffersView]**, find the `func updatePropositions(location: String) async` function and add the following code:
 
     ```swift
         Task {
