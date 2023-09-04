@@ -45,7 +45,7 @@ In this lesson, you will
 
 >[!TIP]
 >
->If you have setup your app already as part of the [Journey Optimizer offers](journey-optimizer-offers.md) tutorial, 
+>If you have setup your app already as part of the [Journey Optimizer offers](journey-optimizer-offers.md) tutorial, you can skip [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
 
 ### Update Edge configuration
 
@@ -55,7 +55,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Ado
 1. Select **[!UICONTROL Add Service]** and select **[!UICONTROL Adobe Target]** from the **[!UICONTROL Service]** list.
 1. Enter the Target **[!UICONTROL Property Token]** value that you want to use for this integration. 
 
-   You can find your properties in the Target UI, in **[!UICONTROL Administration]** > **[!UICONTROL Properties]**. Select ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) to reveal the property token for the property you want to use. The property token has a format like `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; you only must enter the value `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
+   You can find your properties in the Target UI, in **[!UICONTROL Administration]** > **[!UICONTROL Properties]**. Select ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) to reveal the property token for the property you want to use. The property token has a format like `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; you must only enter the value `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
 1. Select **[!UICONTROL Save]**.
 
@@ -98,13 +98,13 @@ To validate your setup in Assurance:
 
 1. In the Target UI, select **[!UICONTROL Activities]** from the top bar.
 1. Select **[!UICONTROL Create Activity]** and **[!UICONTROL A/B Test]** from the context menu.
-1. In the **[!UICONTROL Create A/B Test Activity]** modal, select **[!UICONTROL Mobile]** as the **[!UICONTROL Type]**, select a workspace from the **[!UICONTROL Choose Workspace]** list, and select your property from the **[!UICONTROL Choose property]** list.
+1. In the **[!UICONTROL Create A/B Test Activity]** dialog, select **[!UICONTROL Mobile]** as the **[!UICONTROL Type]**, select a workspace from the **[!UICONTROL Choose Workspace]** list, and select your property from the **[!UICONTROL Choose property]** list.
 1. Select **[!UICONTROL Create]**.
    ![Create Target activity](assets/target-create-activity1.png)
 
 1. In the **[!UICONTROL Untitled Activity]** screen, at the **[!UICONTROL Experiences]** step:
 
-   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Select Location]** underneath L**[!UICONTROL OCATION 1]**.
+   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Select Location]** underneath **[!UICONTROL LOCATION 1]**.
    1. Select ![Chrevron down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) next to **[!UICONTROL Default Content]** and select **[!UICONTROL Create JSON Offer]** from the context menu.
    1. Copy the following JSON into **[!UICONTROL Enter a valid JSON object]**.
 
@@ -189,9 +189,24 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the ` func updatePropositionAT(ecid: String, location: String) async` function. Inspect the code which sets up 
-   * an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the A/B test, and 
-   * the `decisionScope`, an array of locations on where to present the A/B test. 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the ` func updatePropositionAT(ecid: String, location: String) async` function. Add the following code:
+
+    ```swift
+    Task {
+        let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+        let identityMap = ["identityMap" : ecid]
+        let xdmData = ["xdm" : identityMap]
+        let decisionScope = DecisionScope(name: location)
+        Optimize.clearCachedPropositions()
+        Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+    }
+
+    ```
+
+    This function  
+
+      * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the A/B test, and 
+      * defines a `decisionScope`, an array of locations on where to present the A/B test. 
 
     Then the function calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile.
 

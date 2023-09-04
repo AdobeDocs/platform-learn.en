@@ -45,21 +45,20 @@ All data that is successfully ingested into Adobe Experience Platform is persist
 1. Select **[!UICONTROL Create dataset from schema]**.
 ![dataset home](assets/dataset-create.png)
 
-1. Search for your schema
-
-1. Select your schema.
+1. Search for your schema. for example using `Luma Mobile` in the search field.
+1. Select your schema, for example **[!UICONTROL Luma Mobile App Event Schema]**.
 
 1. Select **[!UICONTROL Next]**.
    ![dataset configure](assets/dataset-configure.png)
 
-1. Provide a **[!UICONTROL Name]** and **[!UICONTROL Description]**.
+1. Provide a **[!UICONTROL Name]**, for example `Luma Mobile App Events Dataset` and a **[!UICONTROL Description]**.
 
 1. Select **[!UICONTROL Finish]**.
    ![dataset finish](assets/dataset-finish.png)
 
 ## Update the datastream
 
-Once you have created your dataset, be sure to [update your datastream](create-datastream.md) to add Adobe Experience Platform. This update ensures data flows into Platform. 
+Once you have created your dataset, be sure to [update your datastream](create-datastream.md#adobe-experience-platform) to add Adobe Experience Platform. This update ensures data flows into Platform. 
 
 ## Validate data in the dataset
 
@@ -82,23 +81,23 @@ Experience Platform's Real-Time Customer Profile allows you to build a holistic 
 
 ### Enable the schema
 
-1. Open your schema
-1. Enable **[!UICONTROL Profile]**
-1. Select **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]** in the modal dialog
-1. **[!UICONTROL Save]** the schema
+1. Open your schema, for example **[!UICONTROL Luma Mobile App Event Schema]**.
+1. Enable **[!UICONTROL Profile]**.
+1. Select **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]** in the  dialog.
+1. **[!UICONTROL Save]** the schema.
 
     ![enable the schema for profile](assets/platform-profile-schema.png)
 
 ### Enable the dataset
 
-1. Open your dataset
-1. Enable **[!UICONTROL Profile]**
+1. Open your dataset, for example **[!UICONTROL Luma Mobile App Event Dataset]**.
+1. Enable **[!UICONTROL Profile]**.
 
     ![enable the dataset for profile](assets/platform-profile-dataset.png)
 
 ### Validate data in Profile
 
-Open the app and navigate to screens where you are tracking events. Log in to the Luma app and make a purchase.
+Open the app and navigate to screens where you are tracking events, for example: log in to the Luma app and make a purchase.
 
 Use Assurance to find one of the identities passed in the identityMap (Email, lumaCrmId, or ECID), for example the CRM Id.
 
@@ -106,9 +105,9 @@ Use Assurance to find one of the identities passed in the identityMap (Email, lu
 
 In the Platform interface, 
 
-1. Navigate to **[!UICONTROL Profiles]** > **[!UICONTROL Browse]**, 
+1. Navigate to **[!UICONTROL Profiles]**, and select **[!UICONTROL Browse]** from the top bar. 
 1. Specify the identity details you just grabbed, for example `Luma CRM ID` for **[!UICONTROL Identity namespace]** and the value you copied for **[!UICONTROL Identity value]**. Then select **[!UICONTROL View]**.
-1. To view details, select the profile .
+1. To view details, select the profile.
 
 ![look up an identity value](assets/platform-profile-lookup.png)
 
@@ -122,7 +121,7 @@ On the **[!UICONTROL Events]**, you can see the events collected from your mobil
 
 From the profile detail screen:
 
-1. To view the identity graph, click the link or navigate to **[!UICONTROL Identities]** > **[!UICONTROL Identity Graph]** 
+1. To view the identity graph, click the link or navigate to **[!UICONTROL Identities]**, then select **[!UICONTROL Identity Graph]** from the top bar.
 1. To look up the identity value, specify `Luma CRM ID` as the **[!UICONTROL Identity namespace]** and the copied value as the **[!UICONTROL Identity value]**. Then select **[!UICONTROL View]**.
    
    This visualization shows you all of the identities that are linked together in a profile and their origin. Here is an example of an identity graph constructed of data collected from completing both this Mobile SDK tutorial (Data Source 2) and the [Web SDK tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Data Source 1):

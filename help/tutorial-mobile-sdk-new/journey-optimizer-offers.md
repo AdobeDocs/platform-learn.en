@@ -8,7 +8,7 @@ hide: yes
 ---
 # Journey Optimizer offers
 
-Learn how to show offers from Journey Optimizer Decision Management in your mobile apps with Platform Mobile SDK.
+Learn how to show offers from Journey Optimizer Decision Management in your mobile apps with Experience Platform Mobile SDK.
 
 Journey Optimizer Decision Management helps you to deliver the best offer and experience to your customers across all touch points  at the right time. Once designed, target your audience with personalized offers.
 
@@ -17,7 +17,7 @@ Decision management makes personalization easy with a central library of marketi
 
 >[!NOTE]
 >
->This lesson is optional and only applies to Journey Optimizers users looking to use the Decision Management functionality to display offers in a mobile app.
+>This lesson is optional and only applies to Journey Optimizer users looking to use the Decision Management functionality to display offers in a mobile app.
 
 
 ## Prerequisites
@@ -86,7 +86,7 @@ To validate your setup in Assurance:
 1. Go to the Assurance UI.
 1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Validate Setup]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Select **[!UICONTROL Save]**.
-1. Select **[!UICONTROL Validate Setup]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
+1. Select **[!UICONTROL Validate Setup]** in the left rail. Both datastream setup and the SDK setup in your application are validated.
    ![AJO Decisioning validation](assets/ajo-decisioning-validation.png)
 
 
@@ -138,7 +138,7 @@ To validate your setup in Assurance:
 
       Use the table below to define the four other offers.
 
-       | Offer name | Offer content |
+       | Offer name | Offer content in JSON |
        |---|---|
        | Luma - Affirm Water Bottle | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
        | Luma - Desiree Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
@@ -186,10 +186,11 @@ To present an offer to your mobile app user, you must define an offer collection
 1. In the Journey Optimizer UI, select **[!UICONTROL Offers]** from the left rail.
 1. Select **[!UICONTROL Collections]** from the top bar.
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Create collection]**.
-1. In the **[!UICONTROL New collection]** modal, enter a **[!UICONTROL Name]** for your collection, for example `Luma - Mobile App Collection`, select **[!UICONTROL Create static collection]**, and click **[!UICONTROL Next]**.
-1. In **[!UICONTROL Luma - Mobile App Collection]**, select the offers you want to include in the collection. For this tutorial, pick the five offers you created.
-   ![Offers - Collection](assets/ajo-collection-offersselected.png)
+1. In the **[!UICONTROL New collection]** dialog, enter a **[!UICONTROL Name]** for your collection, for example `Luma - Mobile App Collection`, select **[!UICONTROL Create static collection]**, and click **[!UICONTROL Next]**.
+1. In **[!UICONTROL Luma - Mobile App Collection]**, select the offers you want to include in the collection. For this tutorial, pick the five offers you created. You can easily filter the list using the search field, for example by typing **[!UICONTROL Luma]**.
 1. Select **[!UICONTROL Save]**.
+
+    ![Offers - Collection](assets/ajo-collection-offersselected.png)
 
 
 ## Create a decision
@@ -200,11 +201,11 @@ A decision scope is a combination of a specific placement (for example HTML in a
 
 An evaluation criterium is the combination of 
 
-* offer collection,
-* eligibility rules: for example is the offer only available for a specific audience,
-* ranking method: when multiple offers are available to pick from, which method do you use to rank them (for example by offer priority, using a formula, or an AI model).
+* an offer collection,
+* eligibility rules: for example, is the offer only available for a specific audience,
+* a ranking method: when multiple offers are available to pick from, which method do you use to rank them (for example by offer priority, using a formula, or an AI model).
 
-See [Key steps to create and manage offers](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) if you want to better understand how placements, rules, rankings, offers, representations, collections, decisions, and so on, interact and relate to each other. This tutorial is solely focused on using the output of a decision rather than on the flexibility in defining a decision.
+See [Key steps to create and manage offers](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) if you want to better understand how placements, rules, rankings, offers, representations, collections, decisions, and so on, interact and relate to each other. This tutorial is solely focused on using the output of a decision rather than on the flexibility in defining decisions within Journey Optimizer - Decision Management.
 
 1. In the Journey Optimizer UI, select **[!UICONTROL Offers]** from the left rail.
 1. Select **[!UICONTROL Decisions]** from the top bar.
@@ -280,24 +281,38 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` function. Inspect the code which
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` function. Add the following code:
+
+   ```swift
+   // set up the XDM dictionary, define decision scope and call update proposition API
+   Task {  
+      let ecid = ["ECID" : ["id" : ecid, "primary" : true] as [String : Any]]
+      let identityMap = ["identityMap" : ecid]
+      let xdmData = ["xdm" : identityMap]
+      let decisionScope = DecisionScope(activityId: activityId, placementId: placementId, itemCount: UInt(itemCount))
+      Optimize.clearCachedPropositions()
+      Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+   }
+   ```
+
+   This funtion:
    
    * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the offers. 
-   * defines `decisionScope`, an object that is based on the decision you have defined in the Journey Optimizer - Decision Management UI and is defined using the copied decision scope from [Create a decision](#create-a-decision).
-   * calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).   These functions clear any cached propositions and update the propositions for this profile. The Luma app uses a configuration file (`decisions.json`) that retrieves the scope parameters, based on the following JSON format:
+   * defines `decisionScope`, an object that is based on the decision you have defined in the Journey Optimizer - Decision Management UI and is defined using the copied decision scope from [Create a decision](#create-a-decision).  The Luma app uses a configuration file (`decisions.json`) that retrieves the scope parameters, based on the following JSON format:
 
        ```swift
        "scopes": [
            {
-               "name": "luma - Mobile App Decision",
-               "activityId": "xcore:offer-activity:177cdaa5e1fd589d",
-               "placementId": "xcore:offer-placement:13a3b264ce69bb14",
+               "name": "name of the scope",
+               "activityId": "xcore:offer-activity:xxxxxxxxxxxxxxx",
+               "placementId": "xcore:offer-placement:xxxxxxxxxxxxxxx",
                "itemCount": 2
            }
        ]
        ```
 
       However, you can use any kind of implementation to ensure the Optimize APIs do get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation.
+   * calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  These functions clear any cached propositions and update the propositions for this profile.
 
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API call, which 
    
@@ -307,22 +322,24 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 1. Still in **[!UICONTROL EdgeOffersView]**, find the `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` function and add the following code:
 
     ```swift
-        Task {
-            await self.updatePropositionOD(
-                ecid: currentEcid,
-                activityId: activityId,
-                placementId: placementId,
-                itemCount: itemCount
-            )
-        }
-        try? await Task.sleep(seconds: 2.0)
-        Task {
-            await self.getPropositionOD(
-                activityId: activityId,
-                placementId: placementId,
-                itemCount: itemCount
-            )
-        }
+    // Update and then get propositions
+    Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
+    Task {
+       await self.updatePropositionOD(
+           ecid: currentEcid,
+           activityId: activityId,
+           placementId: placementId,
+           itemCount: itemCount
+      )
+    }
+    try? await Task.sleep(seconds: 2.0)
+    Task {
+       await self.getPropositionOD(
+           activityId: activityId,
+           placementId: placementId,
+           itemCount: itemCount
+       )
+    }
     ```
 
     This code ensures you update the propositions and then retrieve the results using the functions described in steps 5 and 6.
