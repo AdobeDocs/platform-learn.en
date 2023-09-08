@@ -321,6 +321,23 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     * unwraps the content of the offer so it can be displayed properly in the app, and
     * triggers the `displayed()` action on the offer which will send an event back to the Edge Network informing the offer is displayed. 
 
+1. Still in **[!UICONTROL EdgeOffersView]**, add the following code to the `.onFirstAppear` modifier. This code will ensure the callback for updating the offers is registered only once.
+
+    ```swift
+    // Invoke callback for offer updates
+    Task {
+        await self.onPropositionsUpdateOD(activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+    }
+    ```
+
+1. Still in **[!UICONTROL EdgeOffersView]**, add the following code to the `.task` modifier. This code will update the offers when the view is refreshed.
+
+    ```swift
+    // Clear and update offers
+    await self.updatePropositionsOD(ecid: currentEcid, activityId: decision.activityId, placementId: decision.placementId, itemCount: decision.itemCount)
+    ```
+
+
 
 ## Validate using the app
 
