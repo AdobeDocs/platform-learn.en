@@ -210,29 +210,27 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
     Then the function calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL TargetOffersView]** in the Xcode Project navigator. Find the `func getPropositionAT(location: String) async` function and inspect the code of this function. The most important part of this function is the  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API call, which 
-   * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test) and 
-   * unwraps the result in content that can be displayed properly in the app.
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL TargetOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateAT(location: String) async {` function and inspect the code of this function. The most important part of this function is the  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
+   * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test),
+   * retrieves the offer from the proposition,
+   * unwraps the content of the offer so it can be displayed properly in the app, and
+   * triggers the `displayed()` action on the offer which will send an event back to the Edge Network informing the offer is displayed. 
 
-1. Still in **[!UICONTROL TargetOffersView]**, find the f`unc updatePropositions(location: String) async` function and add the following code:
+1. Still in **[!UICONTROL TargetOffersView]**, add the following code to the `.onFirstAppear` modifier. This code will ensure the callback for updating the offers is registered only once.
 
     ```swift
-        Task {
-            await self.updatePropositionAT(
-                ecid: currentEcid,
-                location: location
-            )
-        }
-        try? await Task.sleep(seconds: 2.0)
-        Task {
-            await self.getPropositionAT(
-                location: location
-            )
-        }
+    // Invoke callback for offer updates
+    Task {
+        await self.onPropositionsUpdateAT(location: location)
+    }
     ```
 
-    This code ensures you update the propositions and then retrieve the results using the functions described in steps 5 and 6.
+1. Still in **[!UICONTROL TargetOffersView]**, add the following code to the `.task` modifier. This code will update the offers when the view is refreshed.
 
+    ```swift
+    // Clear and update offers
+    await self.updatePropositionsAT(ecid: currentEcid, location: location)
+    ```
 
 ## Validate using the app
 
@@ -258,11 +256,11 @@ To validate the A/B test in Assurance:
 1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!UICONTROL Target]** requests.
    ![AJO Decisioning validation](assets/assurance-decisioning-requests.png)
 
-1. You can explore Simulate and Event List tabs for further functionality checking your setup for Target offers.
+1. You can explore **[!UICONTROL Simulate]** and **[!UICONTROL Event List]** tabs for further functionality checking your setup for Target offers.
 
 ## Next steps
 
-You should now have all the tools to start adding more A/B tests or other Target activities (such as Experience Targeting, Multivariate Test), where relevant and applicable, to the Luma app.
+You should now have all the tools to start adding more A/B tests or other Target activities (such as Experience Targeting, Multivariate Test), where relevant and applicable, to the Luma app. There is more in depth information available in the [Github repo for the Optimize extension](https://github.com/adobe/aepsdk-optimize-ios) where you can also find a link to a dedicated [tutorial](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) on how to track Adobe Target offers.
 
 >[!SUCCESS]
 >

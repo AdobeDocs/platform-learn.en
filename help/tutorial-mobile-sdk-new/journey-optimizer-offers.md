@@ -314,35 +314,12 @@ As discussed in previous lessons, installing a mobile tag extension only provide
       However, you can use any kind of implementation to ensure the Optimize APIs do get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation.
    * calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  These functions clear any cached propositions and update the propositions for this profile.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func getPropositionOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the  [`Optimize.getPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#getpropositions) API call, which 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
    
-    * retrieves the propositions for the current profile based on the decision scope (which you have defined in Journey Optimizer - Decision Management) and 
-    * unwraps the result in content that can be displayed properly in the app.
-
-1. Still in **[!UICONTROL EdgeOffersView]**, find the `func updatePropositions(activityId: String, placementId: String, itemCount: Int) async` function and add the following code:
-
-    ```swift
-    // Update and then get propositions
-    Logger.viewCycle.info("EdgeOffersView - updatePropopsitions - Activity Id: \(activityId)")
-    Task {
-       await self.updatePropositionOD(
-           ecid: currentEcid,
-           activityId: activityId,
-           placementId: placementId,
-           itemCount: itemCount
-      )
-    }
-    try? await Task.sleep(seconds: 2.0)
-    Task {
-       await self.getPropositionOD(
-           activityId: activityId,
-           placementId: placementId,
-           itemCount: itemCount
-       )
-    }
-    ```
-
-    This code ensures you update the propositions and then retrieve the results using the functions described in steps 5 and 6.
+    * retrieves the propositions for the current profile based on the decision scope (which you have defined in Journey Optimizer - Decision Management), 
+    * retrieves the offer from the proposition,
+    * unwraps the content of the offer so it can be displayed properly in the app, and
+    * triggers the `displayed()` action on the offer which will send an event back to the Edge Network informing the offer is displayed. 
 
 
 ## Validate using the app
