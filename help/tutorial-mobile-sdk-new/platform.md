@@ -128,6 +128,9 @@ From the profile detail screen:
 
    ![grab an identity value](assets/platform-profile-identitygraph.png)
 
+
+## Next steps
+
 There is a lot more that marketers and analytics can do with data captured in Experience Platform, including analyzing it in Customer Journey Analytics and building segments in Real-Time Customer Data Platform. You are off to a good start!
 
 
