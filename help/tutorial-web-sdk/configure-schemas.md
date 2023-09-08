@@ -100,7 +100,7 @@ It is a must-have object for any web-related data collection, as it houses the E
 >This setting is discussed more during the [Setup Experience Platform](setup-experience-platform.md) lesson.
 >![Profile Schema](assets/schema-profile.png)
 
-Now you are able to reference this schema when you add the Web SDK extension your tag property. 
+Now you are able to reference this schema when you add the Web SDK extension to your tag property. 
 
 
 [Next: **Configure an identity namespace**](configure-identities.md)
