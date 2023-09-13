@@ -56,13 +56,13 @@ Sandboxes take approximately 30 seconds to create, during which time a "[!UICONT
 
 Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next exercise.
 
-## Add the new sandbox to the product profile
+## Add the new sandbox to your role
 
 Once the sandbox is active, you must include it in your role in order to use it. To add it to your role (requires System Admin or Product Admin privileges):
 
 1. Go to the [!UICONTROL Permissions] screen
 1. Open the `Luma Tutorial Platform` role
-1. _Remove_ the `Prod` sandbox from the role
+1. Optionally _remove_ the `Prod` sandbox from the role
 1. Add the `Luma Tutorial` sandbox
 1. Select **[!UICONTROL Save]**
 1. On the [!UICONTROL Sandboxes] row, select **[!UICONTROL Edit]**
