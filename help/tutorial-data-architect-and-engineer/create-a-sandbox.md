@@ -56,7 +56,7 @@ Sandboxes take approximately 30 seconds to create, during which time a "[!UICONT
 
 Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next exercise.
 
-## Add the new sandbox to your role
+## Add the new sandbox to the role
 
 Once the sandbox is active, you must include it in your role in order to use it. To add it to your role (requires System Admin or Product Admin privileges):
 
