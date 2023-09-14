@@ -29,7 +29,6 @@ After completing this tutorial, you will be able to:
 * Add the following Adobe Experience Cloud applications/extensions:
   * [Adobe Experience Platform Edge (XDM)](events.md)
   * [Lifecycle data collection](lifecycle-data.md)
-  * [Adobe Analytics via XDM](analytics.md)
   * [Consent](consent.md)
   * [Identity](identity.md)
   * [Profile](profile.md)
@@ -37,7 +36,7 @@ After completing this tutorial, you will be able to:
   * [Analytics](analytics.md)
   * [Adobe Experience Platform](platform.md)
   * [Push messaging with Journey Optimizer](journey-optimizer-push.md)
-  * [Im-app messaging with Journey Optimizer](journey-optimizer-inapp.md)
+  * [In-app messaging with Journey Optimizer](journey-optimizer-inapp.md)
   * [Offers with Journey Optimizer](journey-optimizer-offers.md)
   * [A/B tests with Target](target.md)
 
@@ -64,13 +63,19 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
   * If you are the customer of a Platform-based application like Real-Time CDP, Journey Optimizer, or Customer Journey Analytics, you should also have:
     * **[!UICONTROL Data Management]**&mdash;permission items to manage and view datasets to complete the _optional Platform exercises_ (requires a license for a Platform-based application ).
     * A development **sandbox** which you can use for this tutorial.
+
 * For Adobe Analytics, you must know which **report suites** you can use to complete this tutorial.
+
+* For Adobe Target, you must have permissions, properly configured **roles**, **workspaces**, and **properties** as described [here](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
+
+* For Adobe Journey Optimizer, you must have need sufficient permission to configure the **push notification service** and to create an **app surface**, a **journey**, a **message** and **message presets**. For Decision Management, you need the proper permissions to **manage offers** and **decisions** as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 All Experience Cloud customers should have access to the required features needed to deploy Mobile SDK.
 
+
 >[!NOTE]
 >
->You will use iOS as the platform, [!DNL Swift] as the programming language, [!DNL SwiftUI] as the UI framework and [!DNL Xcode] as the integrated development enviromnent (IDE). However, many of the implementation concepts explained are similar for other development platforms. It is assumed that you are somewhat familiar with [!DNL Swift] and [!DNL SwiftUI]. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
+>As part of this tutorial, you will create schemas, datasets, identities, etc. If you are going through this tutorial with multiple persons on a single sandbox or you are using a shared account, consider appending or prepending an identification as part of your naming conventions when creating these objects. For example, add ` - <your name or initials>` to the name of the object you are instructed to create.
 
 
 ## Download the Luma app
@@ -80,6 +85,11 @@ Two versions of the sample app are available for download. Both version can be d
 
 1. [Start](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
 1. [Finish](https://git.corp.adobe.com/Luma){target="_blank"}: a version with the full implementation for reference.
+
+>[!NOTE]
+>
+>You will use iOS as the platform, [!DNL Swift] as the programming language, [!DNL SwiftUI] as the UI framework and [!DNL Xcode] as the integrated development enviromnent (IDE). However, many of the implementation concepts explained are similar for other development platforms. And many have already successfully completed this tutorial with litte to no previous iOS/Swift(UI) experience. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
+
 
 Let's get started!
 

@@ -103,7 +103,7 @@ You want to update both the standard identity (email) and the custom identity (L
 
 ## Remove an identity
 
-You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side User Profile Graph or Identity Graph.
+You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side identity graph. See [View identity graphs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) for more information on identity graphs.
 
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL General]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
 
@@ -139,13 +139,13 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
        <img src="./assets/identity2.png" width=300>
     
 
-1. Look in the Assurance web UI for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
+1. Look in the Assurance web interface for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
 1. Select the event and review the data in the **[!UICONTROL ACPExtensionEventData]** object. You should see the identities you updated.
 ![validate identities update](assets/identity-validate-assurance.png)
 
 ## Validate with identity graph
 
-Once you complete the steps in the [Experience Platform lesson](platform.md), you are able to confirm the identy capture in Platforms identity graph viewer:
+Once you complete the steps in the [Experience Platform lesson](platform.md), you are able to confirm the identity capture in Platforms identity graph viewer:
 
 1. Select **[!UICONTROL Identities]** in the Data Collection UI.
 1. Select **[!UICONTROL Identity Graph]** from the top bar.

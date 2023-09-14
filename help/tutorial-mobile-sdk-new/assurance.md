@@ -28,11 +28,7 @@ In this lesson, you will:
 
 ## Confirm access
 
-Confirm that your organization has access to Assurance by completing the following steps:
-
-1. Visit [https://experience.adobe.com/assurance](https://experience.adobe.com/assurance){target="_blank"}.
-1. Log in using your Adobe ID credentials for Experience Cloud.
-1. If you see the **[!UICONTROL Sessions]** screen, then you have access. If you see the (beta) access page, select **[!UICONTROL Register]** to register.
+Confirm that your organization has access to Assurance. You, as user, should be added to profile for Adobe Experience Platform. See [User access](https://experienceleague.adobe.com/docs/experience-platform/assurance/user-access.html?lang=en) in the Assurance guide for more information.
 
 ## Implement
 
@@ -64,7 +60,7 @@ Before you run the application for the first time in Xcode, ensure you update th
 1. Select the **Signing & Capabilities** tab.
 1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details.
 
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png)
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 ## Set up a base URL
 

@@ -39,7 +39,7 @@ In this lesson, you will:
 
         >[!NOTE]
         >
-        > Default consent settings for the edge-based mobile sdk implementations such as the one you are doing in this tutorial come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+        > Default consent settings for the edge-based mobile sdk implementations such as the one you are doing in this lesson come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
 
 
 1. Open the new property.    
@@ -106,13 +106,13 @@ In this lesson, you will:
     
     1. In **[!UICONTROL Datastreams]** select the **[!UICONTROL Datastream]** that you created in the [previous step](create-datastream.md) for each of the environments, for example **[!UICONTROL Luma Mobile App]**.
 
-    1. Specify the **[!UICONTROL Edge Network domain]** within **[!UICONTROL Domain Configuration]**. The Edge Network domain is the name of your sandbox, followed by `data.adobedc.net`, for example `techmarketingdemos.data.adobedc.net`.
+    1. Specify the **[!UICONTROL Edge Network domain]** within **[!UICONTROL Domain Configuration]**. The Edge Network domain is the name of your organization, followed by `data.adobedc.net`, for example `techmarketingdemos.data.adobedc.net`.
 
     1. From the **[!UICONTROL Save to Library]** menu, select **[!UICONTROL Save to Library and Build]**.
 
        ![edge network settings](assets/tags-extension-edge.png)
 
-Your library is build for the new extensions and configurations. A successful build is indicated by a <span style="color:green">●</span> in the **[!UICONTROL Initial Build]** button.
+Your library is built for the new extensions and configurations. A successful build is indicated by a <span style="color:green">●</span> in the **[!UICONTROL Initial Build]** button.
 
 
 ## Generate SDK install instructions
@@ -125,7 +125,7 @@ Your library is build for the new extensions and configurations. A successful bu
 
 1. In the **[!UICONTROL Mobile Install Instructions]** dialog, select the **[!UICONTROL iOS]** tab.
 
-1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using CocoaPods. CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [documentation](https://cocoapods.org/).
+1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using CocoaPods. CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [Cocoapods documentation](https://cocoapods.org/). If you are using Android as your development platform, Gradle is the tool to manage SDK version, downloads and dependencies. To learn more, please review the [Gradle documentation](https://gradle.org/)
  
    The install instructions provide you a good starting point for implementation. You can find additional information [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -150,7 +150,7 @@ If you are familiar with the web version of Tags, formerly Launch, it's importan
 
 * On the web, a tag property is rendered into JavaScript which is then (usually) hosted in the cloud. That JavaScript file is referenced directly in the website.
 
-* In a mobile tag property, rules and configurations are rendered into JSON files which are hosted in the cloud. The JSON files are downloaded and read by the Mobile Core extension in the mobile app. Extensions are separate SDKs that work together. If you add an extension to your tag property, you must also update the app. If you change an extension setting or create a rule, those changes are reflected in the app once you publish the updated tag library.
+* In a mobile tag property, rules and configurations are rendered into JSON files which are hosted in the cloud. The JSON files are downloaded and read by the Mobile Core extension in the mobile app. Extensions are separate SDKs that work together. If you add an extension to your tag property, you must also update the app. If you change an extension setting or create a rule, those changes are reflected in the app once you publish the updated tag library. That flexibility allows you to modify settings (like Adobe Analyrics report suide id) or even change your app's behaviour (using data elements and rules, as you will see in later lessons) without having to change code in your app and have to resubmit the app to the app store.
 
 >[!SUCCESS]
 >

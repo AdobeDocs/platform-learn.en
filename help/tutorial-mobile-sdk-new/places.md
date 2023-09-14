@@ -25,7 +25,7 @@ In this lesson, you will
 * Update your tag property with the Places extension.
 * Update your schema to capture geolocation events.
 * Validate setup in Assurance.
-* Update your app to include the Places extension.
+* Update your app to register the Places extension.
 * Implement geo-location tracking from the Places service in your app.
 
 
@@ -43,7 +43,7 @@ In this lesson, you will
 * Update your schema to capture proposition events.
 * Validate setup in Assurance.
 * Create an offer decision, based on offers in Journey Optimizer - Decision Management.
-* Update your app to include the Optimizer extension.
+* Update your app to register the Optimizer extension.
 * Implement offers from Decision Management in your app.
 
 
@@ -100,7 +100,7 @@ You define some points of interest in the Places service.
 
 Verify whether your schema, as defined in [Create schema](create-schema.md), incorporates the necessary field groups and classes to collect POI and geolocation data.
 
-1. Navigate to Data Collection UI and select **[!UICONTROL Schemas]** from the left rail.
+1. Navigate to Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Select your schema to open it.
 1. In the schema editor, select **[!UICONTROL Consumer Experience Event]**.
@@ -252,7 +252,7 @@ To validate your setup in Assurance:
    ![AJO Decisioning validation](assets/places-events.png)
 
 
-## Implement places in your app
+## Implement Places in your app
 
 As discussed in previous lessons, installing a mobile tag extension only provides the configuration. Next you must install and register the Places SDK. If these steps aren't clear, review the [Install SDKs](install-sdks.md) section.
 
@@ -314,7 +314,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     }
     ```  
 
-It is beyond the subject of this tutorial to explain details about the location manager implementation within iOS.
+It is beyond the subject of this lesson to explain details about the location manager implementation within iOS.
 
 
 ## Validate using your app

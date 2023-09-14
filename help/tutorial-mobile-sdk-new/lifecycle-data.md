@@ -12,7 +12,7 @@ The Adobe Experience Platform Mobile SDK Lifecycle extension enables the collect
 
 ## Prerequisites
 
-* Successfully built and run app with SDKs installed and configured.
+* Successfully built and run app with SDKs installed and configured. As part of this lesson, you started lifecycle monitoring already. See [Install SDKs - Update AppDelegate](install-sdks.md#update-appdelegate) to review.
 * Registered the Assurance extension as described in the [previous lesson](install-sdks.md).
 
 ## Learning objectives

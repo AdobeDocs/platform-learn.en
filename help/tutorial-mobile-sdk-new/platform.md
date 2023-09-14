@@ -7,7 +7,7 @@ hide: yes
 ---
 # Send data to Adobe Experience Platform
 
-Learn how to send data to Adobe Experience Platform.
+Learn how to send mobile app data to Adobe Experience Platform.
 
 This optional lesson is relevant to all customers of Real-Time Customer Data Platform (Real-Time CDP), Journey Optimizer, and Customer Journey Analytics. Experience Platform, the foundation of Experience Cloud products, is an open system that transforms all your data (Adobe and non-Adobe) into robust customer profiles. These customer profiles update in real time and uses AI-driven insights to help you to deliver the right experiences across every channel.
 
