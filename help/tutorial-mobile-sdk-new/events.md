@@ -72,7 +72,7 @@ For the standard field groups, the process looks like:
    * `commerce.productViews.id`: a string value representing the SKU of the product
    * `commerce.productViews.value`: the numeric or boolean value of the event. If it's a Boolean (or "Counter" in Adobe Analytics), the value is always set to 1. If it's a numeric or currency event, the value can be > 1.
 
-* In your schema, identify any additional data associated with the commerce product view event. In this example, include **[!UICONTROL productListItem]** which is a standard set of fields used with any commerce-related events:
+* In your schema, identify any additional data associated with the commerce product view event. In this example, include **[!UICONTROL productListItems]** which is a standard set of fields used with any commerce-related event:
       
    ![product list items schema](assets/datacollection-prodListItems-schema.png)
    * Notice that **[!UICONTROL productListItems]** is an array so multiple products could be provided.
@@ -117,7 +117,7 @@ You have different commerce product-related actions in your app and you want to 
 * view: occurs when a user views a specific product,
 * add to cart: when a user taps <img src="assets/addtocart.png" width=20/> in a product detail screen,
 * save for later: when a user taps <img src="assets/saveforlater.png" width=15/> in a product detail screen,
-* purchasee: when a user taps <img src="assets/purchase.png" width=20/> in a product detail screen.
+* purchase: when a user taps <img src="assets/purchase.png" width=20/> in a product detail screen.
 
 To implement the sending of commerce-related experience events in a reusable way, you use a dedicated function:
 
@@ -183,6 +183,11 @@ To implement the sending of commerce-related experience events in a reusable way
             // Send purchases commerce experience event
             MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
             ```
+
+>[!TIP]
+>
+>In case you are developing for Android, use Map (`java.util.Map`) as the foundational interface to construct your XDM payload.
+
 
 ### Custom field groups 
 
@@ -334,15 +339,7 @@ Again, lets actually implement this code in your Xcode project.
 1. Run the app, log in and interact with a product.
 
    1. Move the Assurance icon to the left.
-   1. Select **[!UICONTROL Home]** in the tab bar.
-   1. Select the <img src="assets/login.png" width=15/> button to open the Login sheet.
- 
-      <img src="./assets/mobile-app-events-1.png" width=300> 
-
-   1. Select the <img src="assets/insert.png" width=15/> button to insert a random email and customer id.
-   1. Select **[!UICONTROL Login]**.
-
-        <img src="./assets/mobile-app-events-2.png" width=300> 
+   1. Select **[!UICONTROL Home]** in the tab bar and verify you see an **[!UICONTROL ECID]**, **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** in the Home screen.
    1. Select **[!UICONTROL Products]** in the tab bar.
    1. Select a product.
    1. Select <img src="assets/saveforlater.png" width=15/>.

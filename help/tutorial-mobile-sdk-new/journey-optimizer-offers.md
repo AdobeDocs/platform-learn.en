@@ -10,9 +10,13 @@ hide: yes
 
 Learn how to show offers from Journey Optimizer Decision Management in your mobile apps with Experience Platform Mobile SDK.
 
-Journey Optimizer Decision Management helps you to deliver the best offer and experience to your customers across all touch points  at the right time. Once designed, target your audience with personalized offers.
+Journey Optimizer Decision Management helps you to deliver the best offer and experience to your customers across all touchpoints  at the right time. Once designed, target your audience with personalized offers.
+
+![Architecture](assets/architecture-od.png)
 
 Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform. As a result, it enables you to send your customers the right offer at the right time. See [About Decision Management](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) for more information. 
+
+
 
 
 >[!NOTE]
@@ -23,6 +27,7 @@ Decision management makes personalization easy with a central library of marketi
 ## Prerequisites
 
 * Successfully built and run app with SDKs installed and configured.
+* Set up the app for Adobe Experience Platform.
 * Access to Journey Optimizer - Decision Management with the proper permissions to manage offers and decisions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 
@@ -35,7 +40,7 @@ In this lesson, you will
 * Update your schema to capture proposition events.
 * Validate setup in Assurance.
 * Create an offer decision, based on offers in Journey Optimizer - Decision Management.
-* Update your app to include the Optimizer extension.
+* Update your app to register the Optimizer extension.
 * Implement offers from Decision Management in your app.
 
 
@@ -43,9 +48,9 @@ In this lesson, you will
 
 >[!TIP]
 >
->If you have setup your environment already as part of the [Setup A/B tests with Target](target.md) tutorial, you can skip [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
+>If you have set up your environment already as part of the [Setup A/B tests with Target](target.md) tutorial, you can skip [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
 
-### Update Edge configuration
+### Update datastream configuration
 
 To ensure data send from your mobile app to the Edge Network is forwarded to Journey Optimizer - Decision Management, update your Experience Edge configuration .
 
@@ -70,11 +75,11 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 ### Update your schema
 
-1. Navigate to Data Collection UI and select **[!UICONTROL Schemas]** from the left rail.
+1. Navigate to Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Select your schema to open it.
 1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to Field groups.
-1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**.
+1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers: what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson). But also what is happening with the offer: is it displayed, interacted with, dismissed, and so forth.
    ![Proposition](assets/schema-fieldgroup-proposition.png)
 1. Select **[!UICONTROL Save]** to save the changes to your schema.
 
@@ -205,7 +210,7 @@ An evaluation criterium is the combination of
 * eligibility rules: for example, is the offer only available for a specific audience,
 * a ranking method: when multiple offers are available to pick from, which method do you use to rank them (for example by offer priority, using a formula, or an AI model).
 
-See [Key steps to create and manage offers](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) if you want to better understand how placements, rules, rankings, offers, representations, collections, decisions, and so on, interact and relate to each other. This tutorial is solely focused on using the output of a decision rather than on the flexibility in defining decisions within Journey Optimizer - Decision Management.
+See [Key steps to create and manage offers](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/key-steps.html?lang=en) if you want to better understand how placements, rules, rankings, offers, representations, collections, decisions, and so on, interact and relate to each other. This lesson is solely focused on using the output of a decision rather than on the flexibility in defining decisions within Journey Optimizer - Decision Management.
 
 1. In the Journey Optimizer UI, select **[!UICONTROL Offers]** from the left rail.
 1. Select **[!UICONTROL Decisions]** from the top bar.
@@ -295,10 +300,10 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    }
    ```
 
-   This funtion:
+   This function:
    
    * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the offers. 
-   * defines `decisionScope`, an object that is based on the decision you have defined in the Journey Optimizer - Decision Management UI and is defined using the copied decision scope from [Create a decision](#create-a-decision).  The Luma app uses a configuration file (`decisions.json`) that retrieves the scope parameters, based on the following JSON format:
+   * defines `decisionScope`, an object that is based on the decision you have defined in the Journey Optimizer - Decision Management interface and is defined using the copied decision scope from [Create a decision](#create-a-decision).  The Luma app uses a configuration file (`decisions.json`) that retrieves the scope parameters, based on the following JSON format:
 
        ```swift
        "scopes": [
@@ -312,7 +317,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
        ```
 
       However, you can use any kind of implementation to ensure the Optimize APIs do get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation.
-   * calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  These functions clear any cached propositions and update the propositions for this profile.
+   * calls two APIs: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  These functions clear any cached propositions and update the propositions for this profile.
 
 1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
    

@@ -26,7 +26,7 @@ If you send data from the native portion of the app and from a WebView within th
 
 To solve for that undesirable situation, it's important to pass the user's ECID from the native portion of your app to a WebView you might want to use in your app.
 
-The Experience Cloud ID Service JavaScript extension in the WebView extracts the ECID from the URL instead of sending a request to Adobe for a new ID. The ID service uses this ECID to track the visitor.
+The AEP Edge Identity extension used within the WebView collects the current ECID and adds it to the URL instead of sending a request to Adobe for a new ID. The implementation then uses this ECID to request the URL.
 
 ## Implementation
 

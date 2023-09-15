@@ -11,7 +11,9 @@ hide: yes
 
 Learn how to perform A/B tests in your mobile apps with Platform Mobile SDK and Adobe Target.
 
-Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. The focus in this tutorial is on the A/B test functionality of Target. See the [A/B Test overview](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) for more information. 
+Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. Target can perform A/B tests, multivariate tests, recommend products and content, target content, auto-personalize content with AI, and much more. The focus in this lesson is on the A/B test functionality of Target.  See the [A/B Test overview](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) for more information. 
+
+![Architecture](assets/architecture-at.png)
 
 Before you can perform A/B tests with Target, you must ensure that the proper configurations and integrations are in place.
 
@@ -23,20 +25,19 @@ Before you can perform A/B tests with Target, you must ensure that the proper co
 ## Prerequisites
 
 * Successfully built and run app with SDKs installed and configured.
-* Access to Adobe Target Premium with permissions, properly configured roles, workspaces, and properties as described [here](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
-  You should be able to use Target Standard as well, but the tutorial uses some advanced concepts (for example Target properties) which are unique to Target Premium.
+* Access to Adobe Target with permissions, properly configured roles, workspaces, and properties as described [here](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
 
 
 ## Learning objectives
 
 In this lesson, you will
 
-* Update your Edge configuration for Target integration.
+* Update your datastream for Target integration.
 * Update your tag property with the Journey Optimizer - Decisioning extension.
 * Update your schema to capture propositon events.
 * Validate setup in Assurance.
 * Create a simple A/B test in Target.
-* Update your app to include the Optimizer extension.
+* Update your app to register the Optimizer extension.
 * Implement the A/B test in your app.
 * Validate implementation in Assurance.
 
@@ -45,15 +46,15 @@ In this lesson, you will
 
 >[!TIP]
 >
->If you have setup your app already as part of the [Journey Optimizer offers](journey-optimizer-offers.md) tutorial, you can skip [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
+>If you have set up your app already as part of the [Journey Optimizer offers](journey-optimizer-offers.md) lesson, you can skip both [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
 
-### Update Edge configuration
+### Update datastream configuration
 
-To ensure data send from your mobile app to the Edge Network is forwarded to Adobe Target, you must update you Experience Edge configuration.
+To ensure data send from your mobile app to Experience Platform Edge Network is forwarded to Adobe Target, you must update you datastream configuration.
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!UICONTROL Luma Mobile App]**.
 1. Select **[!UICONTROL Add Service]** and select **[!UICONTROL Adobe Target]** from the **[!UICONTROL Service]** list.
-1. Enter the Target **[!UICONTROL Property Token]** value that you want to use for this integration. 
+1. If you are a Target Premium customer and would like to use property tokens, enter the Target **[!UICONTROL Property Token]** value that you want to use for this integration. Target Standard users can skip this step. 
 
    You can find your properties in the Target UI, in **[!UICONTROL Administration]** > **[!UICONTROL Properties]**. Select ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) to reveal the property token for the property you want to use. The property token has a format like `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; you must only enter the value `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
@@ -64,7 +65,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Ado
 
 ### Install Adobe Journey Optimizer - Decisioning tags extension
 
-1. Navigate to **[!UICONTROL Tags]** and find your mobile tag property and open the property.
+1. Navigate to **[!UICONTROL Tags]**, find your mobile tag property, and open the property.
 1. Select **[!UICONTROL Extensions]**.
 1. Select **[!UICONTROL Catalog]**.
 1. Search for the **[!UICONTROL Adobe Journey Optimizer - Decisioning]** extension.
@@ -75,13 +76,13 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Ado
 
 ### Update your schema
 
-1. Navigate to Data Collection UI and select Schemas from the left rail.
+1. Navigate to Data Collection interface and select **[!UICONTROL Schemas]** from the left rail.
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Select your schema to open it.
 1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to **[!UICONTROL Field groups]**.
 1. In the Add fields groups dialog, search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**.
    ![Proposition](assets/schema-fieldgroup-proposition.png)
-1. to save the changes to your schema, select **[!UICONTROL Save]** .
+1. To save the changes to your schema, select **[!UICONTROL Save]**.
 
 
 ### Validate setup in Assurance
@@ -96,15 +97,17 @@ To validate your setup in Assurance:
 
 ## Create an A/B Test
 
+There are many types of activities you can create in Adobe Target and implement in a mobile app, as mentioned in the introduction. For this lesson, you will focus on creating an implementing an A/B test.
+
 1. In the Target UI, select **[!UICONTROL Activities]** from the top bar.
 1. Select **[!UICONTROL Create Activity]** and **[!UICONTROL A/B Test]** from the context menu.
-1. In the **[!UICONTROL Create A/B Test Activity]** dialog, select **[!UICONTROL Mobile]** as the **[!UICONTROL Type]**, select a workspace from the **[!UICONTROL Choose Workspace]** list, and select your property from the **[!UICONTROL Choose property]** list.
+1. In the **[!UICONTROL Create A/B Test Activity]** dialog, select **[!UICONTROL Mobile]** as the **[!UICONTROL Type]**, select a workspace from the **[!UICONTROL Choose Workspace]** list, and select your property from the **[!UICONTROL Choose property]** list if you are a Target Premium customer and specified a property token in the datastream. 
 1. Select **[!UICONTROL Create]**.
    ![Create Target activity](assets/target-create-activity1.png)
 
 1. In the **[!UICONTROL Untitled Activity]** screen, at the **[!UICONTROL Experiences]** step:
 
-   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Select Location]** underneath **[!UICONTROL LOCATION 1]**.
+   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Select Location]** underneath **[!UICONTROL LOCATION 1]**. This location name (often referred to as an mbox) is used later in the app implementation.
    1. Select ![Chrevron down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) next to **[!UICONTROL Default Content]** and select **[!UICONTROL Create JSON Offer]** from the context menu.
    1. Copy the following JSON into **[!UICONTROL Enter a valid JSON object]**.
 
@@ -203,14 +206,14 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
     ```
 
-    This function  
+    This function:  
 
       * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the A/B test, and 
       * defines a `decisionScope`, an array of locations on where to present the A/B test. 
 
     Then the function calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL TargetOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateAT(location: String) async {` function and inspect the code of this function. The most important part of this function is the  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
+1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL TargetOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateAT(location: String) async {` function and inspect the code of this function. The most important part of this function is the  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which: 
    * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test),
    * retrieves the offer from the proposition,
    * unwraps the content of the offer so it can be displayed properly in the app, and
@@ -260,7 +263,7 @@ To validate the A/B test in Assurance:
 
 ## Next steps
 
-You should now have all the tools to start adding more A/B tests or other Target activities (such as Experience Targeting, Multivariate Test), where relevant and applicable, to the Luma app. There is more in depth information available in the [Github repo for the Optimize extension](https://github.com/adobe/aepsdk-optimize-ios) where you can also find a link to a dedicated [tutorial](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) on how to track Adobe Target offers.
+You should now have all the tools to start adding more A/B tests or other Target activities (such as Experience Targeting, Multivariate Test), where relevant and applicable, to your app. There is more in depth information available in the [Github repo for the Optimize extension](https://github.com/adobe/aepsdk-optimize-ios) where you can also find a link to a dedicated [tutorial](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) on how to track Adobe Target offers.
 
 >[!SUCCESS]
 >

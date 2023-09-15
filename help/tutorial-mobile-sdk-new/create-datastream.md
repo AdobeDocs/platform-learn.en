@@ -11,6 +11,8 @@ Learn how to create a datastream in Experience Platform.
 
 A datastream is a server-side configuration on Platform Edge Network. The datastream ensures that incoming data to the Platform Edge Network is routed to Adobe Experience Cloud applications and services appropriately. For more information, see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) or this [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
 
+![Architecture](assets/architecture.png)
+
 ## Prerequisites
 
 To create a datastream, your organization must be provisioned for this feature in the Data Collection interface (formerly [!UICONTROL Launch]) and you must have user permissions manage and view datastreams.
@@ -27,13 +29,18 @@ In this lesson, you will:
 
 Datastreams can be created in the [!UICONTROL Data Collection] interface using the [!UICONTROL Datastream] configuration tool. To create a datastream:
 
-1. Make sure you are in the correct Experience Platform sandbox, as Datastreams are defined on a sandbox level.
+1. Make sure you are in the correct Experience Platform sandbox, as datastreams are defined on a sandbox level.
 1. Select **[!UICONTROL Datastreams]** in the left rail.
 1. Select **[!UICONTROL New Datastream]**. 
 
     ![datastreams home](assets/datastream-new.png)
 
 1. Provide a **[!UICONTROL Name]**, for example `Luma Mobile App` and a **[!UICONTROL Description]**, for example `Datastream for Luma Mobile App`.
+
+    >[!NOTE]
+    >
+    >Final reminder: if you are going through this tutorial with multiple persons on a single sandbox or you are using a shared account, consider appending or prepending an identification as part of your naming conventions. For example, instead of `Luma Mobile App Event Dataset`, use `Luma Mobile App Event Dataset - Joe Smith`. See also the note in [Overview](overview.md).
+
 1. Select the schema that you created in the previous lesson from the **Event Schem**a list.
 1. Select **[!UICONTROL Save]**.
 
@@ -56,7 +63,7 @@ Next, you connect your Experience Cloud services to your datastream. When Platfo
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Analytics as Datastream service](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
 
 
 ### Adobe Experience Platform
@@ -77,7 +84,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Experience Platform as a Datastream service](assets/datastream-service-aep.png)
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
 1. The final configuration should look something like this.
    
    ![datastream settings](assets/datastream-settings.png)

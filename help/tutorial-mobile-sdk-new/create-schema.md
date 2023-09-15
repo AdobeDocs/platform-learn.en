@@ -12,7 +12,7 @@ Standardization and interoperability are key concepts behind Adobe Experience Pl
 
 ## What are XDM schemas?
 
-XDM is a publicly documented specification designed to improve the power of digital experiences. It provides common structures and definitions that allow any application to communicate with Platform services. By adhering to XDM standards, all customer experience data can be incorporated into a common representation that can deliver insights in a faster, more integrated way. You can gain valuable insights from customer actions, define customer audiences through segments, and express customer attributes for personalization purposes.
+XDM is a publicly documented specification designed to improve the power of digital experiences. It provides common structures and definitions that allow any application to communicate with Platform services. By adhering to XDM standards, all customer experience data can be incorporated into a common representation that can deliver insights in a faster, more integrated way. You gain valuable insights from customer actions, define customer audiences through segments, and use customer attributes for personalization purposes.
 
 Experience Platform uses schemas to describe the structure of data in a consistent and reusable way. By defining data consistently across systems, it becomes easier to retain meaning and therefore gain value from data.
 
@@ -112,13 +112,18 @@ For learning purposes, you use prebuilt and custom field groups.
 
 1. Give your schema a name by selecting **[!UICONTROL Untitled schema]** from the **[!UICONTROL Composition]** pane (underneath **[!UICONTROL Schema]**) and providing a **[!UICONTROL Display name]** & **[!UICONTROL Description]**, for example `Luma Mobile App Event Schema` and `Schema for Luma mobile app experience events.`
 
+    >[!NOTE]
+    >
+    >If you are going through this tutorial with multiple persons on a single sandbox or you are using a shared account, consider appending or prepending an identification as part of your naming conventions. For example, instead of `Luma Mobile App Event Schema`, use `Luma Mobile App Event Schema - Joe Smith`. See also the note in [Overview](overview.md).
+
+
 1. Select **[!UICONTROL Save]**.
 
     ![Selecting apply](assets/schema-name-save.png)
 
 >[!NOTE]
 >
->Keep in mind that you do not have to use all the fields in a group. If it's helpful, you can think of a schema as an empty data layer. In your app, you populate the relevant values at the appropriate time.
+>Keep in mind that you do not have to use all the fields in a group. You can also remove fields if that helps keeping the schema concise and understandable. If it's helpful, you can think of a schema as an empty data layer. In your app, you populate the relevant values at the appropriate time.
 
 The [!UICONTROL Consumer Experience Event] field group has a data type called [!UICONTROL Web information], which describes events like page view and link clicks. At the time of writing, there isn't a mobile app parity to this feature, so you are going to create your own. 
 
