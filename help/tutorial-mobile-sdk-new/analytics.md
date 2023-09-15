@@ -10,6 +10,8 @@ Learn how to map mobile data to Adobe Analytics.
 
 The [event](events.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Analytics. You map the data to the correct variables in your report suite.
 
+![Architecture](assets/architecture-aa.png)
+
 ## Prerequisites
 
 * Understanding of ExperienceEvent tracking.

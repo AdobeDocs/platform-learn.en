@@ -10,7 +10,7 @@ Learn how to implement Adobe Experience Cloud applications in your mobile app us
 
 Experience Platform Mobile SDK is a client-side SDK that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/) for more detailed information.
 
-  ![build settings](assets/data-collection-mobile-sdk.png)
+![Architecture](assets/architecture.png)
 
 
 This tutorial guides you through the implementation of the Platform Mobile SDK in a sample retail app called Luma. The [Luma app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) has functionality that lets you build a realistic implementation. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Experience Platform Mobile SDK in your own mobile apps.

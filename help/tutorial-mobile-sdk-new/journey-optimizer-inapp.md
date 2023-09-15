@@ -12,6 +12,8 @@ Learn how to create in-app messages for mobile apps with Experience Platform Mob
 
 Journey Optimizer allows you to create campaigns to send in-app messages to targeted audiences. Campaigns in Journey Optimizer are used to deliver one-time content to a specific audience using various channels. With campaigns, actions are performed simultaneously, either immediately, or based on a specified schedule. When using journeys (see the [Journey Optimizer push notifications](journey-optimizer-push.md) lesson), actions are executed in sequence. 
 
+![Architecture](assets/architecture-ajo.png)
+
 Before you send in-app messages with Journey Optimizer, you must ensure that the proper configurations and integrations are in place. To understand the in-app messaging data flow in Journey Optimizer, refer to [the documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
 >[!NOTE]

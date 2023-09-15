@@ -13,6 +13,8 @@ Learn how to perform A/B tests in your mobile apps with Platform Mobile SDK and 
 
 Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. Target can perform A/B tests, multivariate tests, recommend products and content, target content, auto-personalize content with AI, and much more. The focus in this lesson is on the A/B test functionality of Target.  See the [A/B Test overview](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) for more information. 
 
+![Architecture](assets/architecture-at.png)
+
 Before you can perform A/B tests with Target, you must ensure that the proper configurations and integrations are in place.
 
 >[!NOTE]

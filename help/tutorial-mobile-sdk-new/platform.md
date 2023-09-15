@@ -13,6 +13,8 @@ This optional lesson is relevant to all customers of Real-Time Customer Data Pla
 
 The [event](events.md), [lifecycle](lifecycle-data.md), and [identity](identity.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Experience Platform.
 
+![Architecture](assets/architecture-aep.png)
+
 
 ## Prerequisites
 

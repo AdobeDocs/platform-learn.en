@@ -12,6 +12,8 @@ Learn how to create push messages for mobile apps with Experience Platform Mobil
 
 Journey Optimizer allows you to create journeys and send messages to targeted audiences. Before you send push notifications with Journey Optimizer, you must ensure that the proper configurations and integrations are in place. To understand the Push Notifications data flow in  Journey Optimizer, refer to the [documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
 
+![Architecture](assets/architecture-ajo.png)
+
 >[!NOTE]
 >
 >This lesson is optional and only applies to Journey Optimizer users looking to send push messages. 
