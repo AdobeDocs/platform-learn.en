@@ -1,9 +1,9 @@
 ---
-title: Profile
+title: Collect profile data
 description: Learn how to collect profile data in a mobile app.
 hide: yes
 ---
-# Profile
+# Collect profile data
 
 Learn how to collect profile data in a mobile app.
 
@@ -37,7 +37,7 @@ In this lesson, you will:
 
 It would be helpful for targeting and / or personalization in the app to quickly know if a user has made a purchase in the past or recently. Let's set that up in the Luma app.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** >  **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
 
     ```swift
     // Create a profile map, add attributes to the map and update profile using the map
@@ -54,7 +54,7 @@ It would be helpful for targeting and / or personalization in the app to quickly
 
     1. Uses the `profileMap` dictionary as a value to the `attributeDict` parameter of the [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API call.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in the Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button). Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!DNL ProductView]** in the Xcode Project navigator and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button). Add the following code:
 
     ```swift
     // Update attributes
@@ -66,7 +66,7 @@ It would be helpful for targeting and / or personalization in the app to quickly
 
 Once you have updated a user's attribute, it is available to other Adobe SDKs but you can also retrieve attributes explicitly, to let your app behave the way you want.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL HomeView]** in the Xcode Project navigator and find the `.onAppear` modifier. Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** in the Xcode Project navigator and find the `.onAppear` modifier. Add the following code:
 
     ```swift
     // Get attributes
@@ -105,7 +105,7 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
   
        <img src="./assets/mobile-app-events-2.png" width=300>
 
-   1. Select **[!UICONTROL Products]** in the tab bar.
+   1. Select **[!DNL Products]** in the tab bar.
    1. Select one product.
    1. Select <img src="assets/saveforlater.png" width=15/>.
    1. Select <img src="assets/addtocart.png" width=20/>.

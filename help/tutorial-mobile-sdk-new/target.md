@@ -46,13 +46,15 @@ In this lesson, you will
 
 >[!TIP]
 >
->If you have set up your app already as part of the [Journey Optimizer offers](journey-optimizer-offers.md) lesson, you can skip both [Install Adobe Journey Optimizer - Decisioning tags extension](#install-adobe-journey-optimizer---decisioning-tags-extension) and [Update your schema](#update-your-schema).
+>If you have set up your app already as part of the [Journey Optimizer offers](journey-optimizer-offers.md) lesson, you might already have performed some of the steps in this setup section.
 
 ### Update datastream configuration
 
+### Adobe Target
+
 To ensure data send from your mobile app to Experience Platform Edge Network is forwarded to Adobe Target, you must update you datastream configuration.
 
-1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!UICONTROL Luma Mobile App]**.
+1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select **[!UICONTROL Add Service]** and select **[!UICONTROL Adobe Target]** from the **[!UICONTROL Service]** list.
 1. If you are a Target Premium customer and would like to use property tokens, enter the Target **[!UICONTROL Property Token]** value that you want to use for this integration. Target Standard users can skip this step. 
 
@@ -61,6 +63,18 @@ To ensure data send from your mobile app to Experience Platform Edge Network is 
 1. Select **[!UICONTROL Save]**.
 
     ![Add Target to datastream](assets/edge-datastream-target.png)
+
+
+#### Adobe Journey Optimizer
+
+To ensure data send from your mobile app to the Edge Network is forwarded to Journey Optimizer - Decision Management, update your Experience Edge configuration .
+
+1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
+1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, **[!UICONTROL Personalization Destinations]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+1. To save your datastream configuration, select **[!UICONTROL Save]** .
+
+   ![AEP datastream configuration](assets/datastream-aep-configuration.png)
 
 
 ### Install Adobe Journey Optimizer - Decisioning tags extension
@@ -138,7 +152,7 @@ There are many types of activities you can create in Adobe Target and implement 
       
       ![Experience B](assets/target-create-activity-experienceB.png)
 
-1. In the **[!UICONTROL Targeting]** step, review the setup of your A/B test. By default, both offers are allocated equally across all visitors. Select **[!UICONTROL Next]** to continue.
+1. In the **[!DNL Targeting]** step, review the setup of your A/B test. By default, both offers are allocated equally across all visitors. Select **[!UICONTROL Next]** to continue.
 
    ![Targeting](assets/taget-targeting.png)
 
@@ -169,7 +183,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >
 
 1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios.git) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPOptimize` is part of your list of imports.
 
     `import AEPOptimize`
@@ -192,7 +206,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the ` func updatePropositionAT(ecid: String, location: String) async` function. Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!DNL MobileSDK]** in the Xcode Project navigator. Find the ` func updatePropositionAT(ecid: String, location: String) async` function. Add the following code:
 
     ```swift
     Task {
@@ -213,13 +227,13 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
     Then the function calls two API's: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL TargetOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateAT(location: String) async {` function and inspect the code of this function. The most important part of this function is the  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which: 
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Personalization]** > **[!DNL TargetOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateAT(location: String) async {` function and inspect the code of this function. The most important part of this function is the  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which: 
    * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test),
    * retrieves the offer from the proposition,
    * unwraps the content of the offer so it can be displayed properly in the app, and
    * triggers the `displayed()` action on the offer which will send an event back to the Edge Network informing the offer is displayed. 
 
-1. Still in **[!UICONTROL TargetOffersView]**, add the following code to the `.onFirstAppear` modifier. This code will ensure the callback for updating the offers is registered only once.
+1. Still in **[!DNL TargetOffersView]**, add the following code to the `.onFirstAppear` modifier. This code will ensure the callback for updating the offers is registered only once.
 
     ```swift
     // Invoke callback for offer updates
@@ -228,12 +242,15 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     }
     ```
 
-1. Still in **[!UICONTROL TargetOffersView]**, add the following code to the `.task` modifier. This code will update the offers when the view is refreshed.
+1. Still in **[!DNL TargetOffersView]**, add the following code to the `.task` modifier. This code will update the offers when the view is refreshed.
 
     ```swift
     // Clear and update offers
     await self.updatePropositionsAT(ecid: currentEcid, location: location)
     ```
+
+You can send additional Target parameters (like mbox, profile, product, or order parameters) in a personalization query request to the Experience Edge network, by adding them in a data dictionary when calling the [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions) API. See for more information [Target Parameters](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#target-parameters).
+
 
 ## Validate using the app
 
@@ -256,7 +273,7 @@ To validate the A/B test in Assurance:
 1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Review & Simulate]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Review & Simulate]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
-1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!UICONTROL Target]** requests.
+1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!DNL Target]** requests.
    ![AJO Decisioning validation](assets/assurance-decisioning-requests.png)
 
 1. You can explore **[!UICONTROL Simulate]** and **[!UICONTROL Event List]** tabs for further functionality checking your setup for Target offers.

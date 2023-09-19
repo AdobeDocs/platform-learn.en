@@ -22,7 +22,7 @@ For more information on the schema composition model, including design principle
 
 >[!TIP]
 >
->If you're familiar with Analytics Solution Design Reference (SDRs), you can think of a schema as a more robust SDR.
+>If you're familiar with Analytics Solution Design Reference (SDRs), you can think of a schema as a more robust SDR. See [Create and maintain a Solution Design Reference (SDR) Document](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=en) for more information.
 
 ## Prerequisites
 

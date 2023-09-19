@@ -49,7 +49,7 @@ Datastreams can be created in the [!UICONTROL Data Collection] interface using t
 
 ## Add services
 
-Next, you connect your Experience Cloud services to your datastream. When Platform Mobile SDK sends data to Edge Network, the datastream sends the data to these services:
+When you are going through the (optional) [Analytics](analytics.md) and [Experience Platform](platform.md) lessons in this tutorial, you are adding services to your datastream to ensure that when the Platform Mobile SDK sends data to the Edge Network, the datastream forward that data to the configured services.
 
 ### Adobe Analytics
 

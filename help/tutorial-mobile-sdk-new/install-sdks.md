@@ -51,7 +51,7 @@ After you have installed all packages, your Xcode **[!UICONTROL Package Dependen
 
 ## Import extensions
 
-In Xcode, navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** and ensure the following imports are part of this source file.
+In Xcode, navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** and ensure the following imports are part of this source file.
 
 ```swift
 // import AEP MobileSDK libraries
@@ -70,11 +70,11 @@ import AEPOptimize
 import AEPAssurance
 ```
 
-Do the same for **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]**.
+Do the same for **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]**.
 
 ## Update AppDelegate
 
-Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **AppDelegate** in the Xcode Project navigator. 
+Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** in the Xcode Project navigator. 
 
 1. Set the `@AppStorage` value for `environmentFileId` to the Development Environment File ID value that you retrieved from tags in step 6 in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
 

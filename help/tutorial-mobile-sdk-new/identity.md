@@ -1,10 +1,10 @@
 ---
-title: Identity
+title: Collect identity data
 description: Learn how to collect identity data in a mobile app.
 feature: Mobile SDK,Identities
 hide: yes
 ---
-# Identity
+# Collect identity data
 
 Learn how to collect identity data in a mobile app.
 
@@ -30,6 +30,13 @@ In this lesson, you will:
 
 Identity namespaces are components of [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) that serve as indicators of the context to which an identity relates. For example, they distinguish a value of `name@email.com` as an email address or `443522` as a numeric CRM ID.
 
+>[!NOTE]
+>
+>The Mobile SDK generates a unique identity in its own namespace, named Experience Cloud ID (ECID) when the app is installed. This ECID is stored in persistent memory on the mobile device and is sent with every hit. The ECID is removed when the user uninstalls the app or when the user sets the Mobile SDK global privacy status to optedout. In the sample Luma app, you should remove and reinstall the app to create a new profile with its own unique ECID.
+
+
+To create a new identity namespace:
+
 1. In the Data Collection interface, select **[!UICONTROL Identities]** from the left-rail navigation.
 1. Select **[!UICONTROL Create identity namespace]**.
 1. Provide a **[!UICONTROL Display name]** of `Luma CRM ID` and an **[!UICONTROL Identity symbol]** value of `lumaCRMId`.
@@ -45,7 +52,7 @@ Identity namespaces are components of [Identity Service](https://experienceleagu
 
 You want to update both the standard identity (email) and the custom identity (Luma CRM ID) when the user logs into the app.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the the `func updateIdentities(emailAddress: String, crmId: String)` function implementation. Add the following  code to the function.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the the `func updateIdentities(emailAddress: String, crmId: String)` function implementation. Add the following  code to the function.
 
    ```swift
    // Set up identity map, add identities to map and update identities
@@ -88,7 +95,7 @@ You want to update both the standard identity (email) and the custom identity (L
      
        ```   
 
-1. Navigate to **[!UICONTROL Luma]** **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
+1. Navigate to **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
 
    ```swift
    // Update identities
@@ -105,7 +112,7 @@ You want to update both the standard identity (email) and the custom identity (L
 
 You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side identity graph. See [View identity graphs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) for more information on identity graphs.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL General]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -115,7 +122,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
    currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
    ```
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
 
    ```swift
    // Remove identities

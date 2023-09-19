@@ -1,10 +1,10 @@
 ---
-title: Consent
+title: Implement consent
 description: Learn how to implement consent in a mobile app.
 feature: Mobile SDK,Consent
 hide: yes
 ---
-# Consent
+# Implement consent
 
 Learn how to implement consent in a mobile app.
 
@@ -30,7 +30,7 @@ To begin collecting data, you must get consent from the user. In this tutorial, 
 
 1. You only want to ask the user once. So you want to combine the Mobile SDK consent with the required authorizations for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume when the user authorizes tracking, the user also consents with collecting events.
  
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator.
   
    Add this code to the `updateConsent` function.
 
@@ -42,7 +42,7 @@ To begin collecting data, you must get consent from the user. In this tutorial, 
    MobileCore.updateConfigurationWith(configDict: currentConsents)
    ```
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL DisclaimerView]** in Xcode's Project navigator, which is the view that is shown after installing or reinstalling the application and starting the app for the first time. The user is prompted to authorize tracking per Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). If the user authorizes, you also update the consent.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** in Xcode's Project navigator, which is the view that is shown after installing or reinstalling the application and starting the app for the first time. The user is prompted to authorize tracking per Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). If the user authorizes, you also update the consent.
 
    Add the following code to the `ATTrackingManager.requestTrackingAuthorization { status in` closure.
 
@@ -62,7 +62,7 @@ To begin collecting data, you must get consent from the user. In this tutorial, 
 
 The Consent mobile extension automatically suppresses / pends / allows tracking based on the current consent value. You can also access the current consent state yourself:
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode's Project navigator.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode's Project navigator.
 
    Add the following code to the `getConsents` function:
 
@@ -76,7 +76,7 @@ The Consent mobile extension automatically suppresses / pends / allows tracking 
    }
    ```
 
-2. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL HomeView]** in Xcode's Project navigator.
+2. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** in Xcode's Project navigator.
 
    Add the following  code to the `.task` modifier:
 

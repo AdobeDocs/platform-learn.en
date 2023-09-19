@@ -1,9 +1,9 @@
 ---
-title: Places
+title: Use geo-location services
 description: Learn how to use the Places geo-location service in your mobile app.
 hide: yes
 ---
-# Places
+# Use geo-location services
 
 Learn how to use geo-location service in your app.
 
@@ -66,7 +66,7 @@ You define some points of interest in the Places service.
 1. To close the **[!UICONTROL Manage Libraries]** dialog, select **[!UICONTROL Close]**.
 1. Back in **[!UICONTROL POI Management]**, select **[!UICONTROL Import POIs]**.
 1. Select **[!UICONTROL Start]** in t**[!UICONTROL he Import Places]** dialog.
-1. Select **[!UICONTROL Luma]** from the list of libraries,
+1. Select **[!DNL Luma]** from the list of libraries,
 1. Select **[!UICONTROL Next]**.
     ![Select Library](assets/places-import-select-library.png)
 1. Download the [Luma POIs ZIP file](assets/luma_pois.csv.zip) and extract it to a location on your computer.
@@ -88,7 +88,7 @@ You define some points of interest in the Places service.
     ![Add Decisioning extension](assets/tag-places-extension.png)
 
 1. In the **[!UICONTROL Install Extension]** dialog:
-   1. Select **[!UICONTROL Luma]** from the **[!UICONTROL Select a Library]** list.
+   1. Select **[!DNL Luma]** from the **[!UICONTROL Select a Library]** list.
    1. Ensure you have picked your working library, for example **[!UICONTROL Initial Build]**.
    1. Select **[!UICONTROL Save to Library and Build]** from **[!UICONTROL Save to Library]**.
       ![Install Places extension](assets/places-install-extension.png). 
@@ -262,7 +262,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >
 
 1. In Xcode, ensure that [AEP Places](https://github.com/adobe/aepsdk-places-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPPlaces` is part of your list of imports.
 
     `import AEPPlaces`
@@ -285,7 +285,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Add the following code:
 
     ```swift
     // Process geolocation event
@@ -294,7 +294,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
     This [`Places.processRegionEvent`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processregionevent) API communicates the geolocation information to the Places service.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Location]** > **[!UICONTROL GeofenceSheet]** in Xcode's Project navigator. 
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Location]** > **[!DNL GeofenceSheet]** in Xcode's Project navigator. 
    
    1. For the Entry button, enter the following code
 
