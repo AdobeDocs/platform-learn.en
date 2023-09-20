@@ -31,8 +31,8 @@ recommendations: noDisplay,noCatalog
   + [Analytics](analytics.md)
   + [Experience Platform](platform.md)
   + Journey Optimzer{#journey-optimizer}
-    + [Push messaging](journey-optimizer-push.md)
-    + [In-app messaging](journey-optimizer-inapp.md)
+    + [Push notifications](journey-optimizer-push.md)
+    + [In-app messages](journey-optimizer-inapp.md)
     + [Offers](journey-optimizer-offers.md)
   + [Target](target.md)
 + [Conclusion](conclusion.md)

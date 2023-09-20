@@ -62,7 +62,7 @@ Before you run the application for the first time in Xcode, ensure you update th
  
    >[!IMPORTANT]
    >
-   >Ensure you select a unique bundle identifier different fron the default one already entered in the Start project, as each bundle identifier needs to be unique.
+   >Ensure you use a unique bundle identifier, different fron the default `com.adobe.luma.tutorial.swiftui`  entered in the Start project, as each bundle identifier needs to be unique.
 
 
     ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
@@ -133,4 +133,4 @@ If you run into any challenges, please review the [technical](https://developer.
 >You have now set up your app to use Assurance for the remainder of the tutorial.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
-Next: **[Consent](consent.md)**
+Next: **[Implement Consent](consent.md)**

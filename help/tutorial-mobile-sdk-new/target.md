@@ -7,7 +7,7 @@ feature: A/B Tests
 hide: yes
 ---
 
-# Perform A/B Tests with Target
+# Perform A/B tests
 
 Learn how to perform A/B tests in your mobile apps with Platform Mobile SDK and Adobe Target.
 

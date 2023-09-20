@@ -100,4 +100,4 @@ When implementing Platform Mobile SDK in your own app, you should ultimately cre
 >
 >You have now a datastream to use for the remainder of the tutorial.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Next: **[Configure tags](configure-tags.md)**
+Next: **[Configure a tag property](configure-tags.md)**

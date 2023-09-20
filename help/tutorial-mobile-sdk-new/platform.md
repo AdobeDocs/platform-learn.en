@@ -1,11 +1,11 @@
 ---
-title: Send data to Adobe Experience Platform
-description: Learn how to send data to Adobe Experience Platform.
+title: Send data to Experience Platform
+description: Learn how to send data to Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: yes
 ---
-# Send data to Adobe Experience Platform
+# Send data to Experience Platform
 
 Learn how to send mobile app data to Adobe Experience Platform.
 
@@ -164,4 +164,4 @@ There is a lot more that marketers and analytics can do with data captured in Ex
 >
 >You have now set up your app to send data not only to the Edge Network but also to Adobe Experience Platform.<br>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[Push messaging with Journey Optimizer](journey-optimizer-push.md)**
+Next: **[Create and push notifications](journey-optimizer-push.md)**

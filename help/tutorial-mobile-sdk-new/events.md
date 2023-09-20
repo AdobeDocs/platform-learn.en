@@ -1,9 +1,9 @@
 ---
-title: Collect event data
-description: Learn how to collect event data in a mobile app.
+title: Track event data
+description: Learn how to track event data in a mobile app.
 hide: yes
 ---
-# Collect event data
+# Track event data
 
 Learn how to track events in a mobile app.
 
@@ -375,4 +375,4 @@ Now that you have collected the events and sent them to Platform Edge Network, t
 >
 >You have now set up your app to track commerce, app interaction, and screen tracking events to the Adobe Experience Platform Edge Network and all services you have defined in your datastream.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[WebViews](web-views.md)**
+Next: **[Handle WebViews](web-views.md)**

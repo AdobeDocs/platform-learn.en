@@ -1,9 +1,9 @@
 ---
-title: Use geo-location services
-description: Learn how to use the Places geo-location service in your mobile app.
+title: Use geolocation services
+description: Learn how to use the Places geolocation service in your mobile app.
 hide: yes
 ---
-# Use geo-location services
+# Use geolocation services
 
 Learn how to use geo-location service in your app.
 
@@ -27,24 +27,6 @@ In this lesson, you will
 * Validate setup in Assurance.
 * Update your app to register the Places extension.
 * Implement geo-location tracking from the Places service in your app.
-
-
-## Prerequisites
-
-* Successfully built and run app with the proper SDKs installed and configured.
-
-
-## Learning objectives
-
-In this lesson, you will
-
-* Update your Edge configuration for Decision Management.
-* Update your tag property with the Journey Optimizer - Decisioning extension.
-* Update your schema to capture proposition events.
-* Validate setup in Assurance.
-* Create an offer decision, based on offers in Journey Optimizer - Decision Management.
-* Update your app to register the Optimizer extension.
-* Implement offers from Decision Management in your app.
 
 
 ## Setup
