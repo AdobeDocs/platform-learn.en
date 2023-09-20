@@ -1,10 +1,10 @@
 ---
-title: Analytics mapping
-description: Learn how to collect data for Adobe Analytics in a mobile app.
+title: Collect and map Analytics data
+description: Learn how to collect and map data for Adobe Analytics in a mobile app.
 solution: Data Collection,Experience Platform,Analytics
 hide: yes
 ---
-# Analytics mapping
+# Collect and map Analytics data
 
 Learn how to map mobile data to Adobe Analytics.
 
@@ -22,8 +22,28 @@ The [event](events.md) data which you collected and sent to Platform Edge Networ
 
 In this lesson, you will:
 
+* Configure your datastream with the Adobe Analytics service.
 * Understand automatic mapping of Analytics variables.
 * Set up processing rules to map XDM data to Analytics variables.
+
+## Add Adobe Analytics datastream service
+
+To send your XDM data from the Edge Network to Adobe Analytics, you configure the Adobe Analytics service to the datastream you set up as part of [Create a datastream](create-datastream.md).
+
+1. In the Data Collection UI, select **[!UICONTROL Datastreams]** and your datastream. 
+   
+1. Then select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]**.
+
+1. Add **[!UICONTROL Adobe Analytics]** from the [!UICONTROL Service] list, 
+
+1. Enter the name of the report suite from Adobe Analytics that you want to use in **[!UICONTROL Report Suite ID]**.
+
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
+
+1. Select **[!UICONTROL Save]**.
+
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
+
 
 ## Automatic mapping
 
@@ -158,7 +178,7 @@ For example:
 a.x.commerce.saveforlaters.value
 
 // Custom Field
-a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
+a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 ```
 
 >[!NOTE]
@@ -167,7 +187,14 @@ a.x._techmarketingdemos.appinformationa.appstatedetails.screenname
 >
 >`_techmarketingdemos` is replaced with your Organization's unique value.
 
+To map this XDM context data to your Analytics data in your report suite, you can: 
 
+* Add the **[!UICONTROL Adobe Analytics ExperienceEvent Full Extension]** field group to your schema.
+
+  ![Analytics ExperienceEvent FullExtension field group](assets/schema-analytics-extension.png)
+* Build rules in your Tags property to map the context data to the fields in the Adobe Analytics ExperienceEvent Full Extension field group. For example, map `_techmarketingdemo.appinformation.appstatedetails.screenname` to `_experience.analytics.customDimensions.eVars.eVar2`.
+
+<!-- Old processing rules section
 Here is what a processing rule using this data might look like:
 
 * You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
@@ -190,6 +217,8 @@ Additional information about processing rules and context data can be found [her
 >[!TIP]
 >
 >Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
+
+-->
 
 >[!SUCCESS]
 >

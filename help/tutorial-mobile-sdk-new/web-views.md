@@ -30,7 +30,7 @@ The AEP Edge Identity extension used within the WebView collects the current ECI
 
 ## Implementation
 
-Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Info]** > **[!UICONTROL TermsOfServiceSheet]**, and locate the `func loadUrl()` function in the `final class SwiftUIWebViewModel: ObservableObject` class. Add the following call to handle the web view:
+Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**, and locate the `func loadUrl()` function in the `final class SwiftUIWebViewModel: ObservableObject` class. Add the following call to handle the web view:
 
 ```swift
 // Handle web view
@@ -57,12 +57,12 @@ The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/cli
 
 You can learn more about the `Identity.getUrlVariables` API in the [Identity for Edge Network extension API reference guide](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Validation
+## Validate
 
 To execute the code:
 
 1. Go to the **[!UICONTROL Settings]** in the app
-1. Tap the **[!UICONTROL View...]** button to show the **[!UICONTROL Terms of Use]**.
+1. Tap the **[!DNL View...]** button to show the **[!DNL Terms of Use]**.
 
    <img src="./assets/tou1.png" width=300/> <img src="./assets/tou2.png" width=300/> 
 
@@ -84,6 +84,8 @@ To execute the code:
       ```html
       adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
       ```
+
+Unfortunately, debugging the web session is limited; you can not use the Adobe Experience Platform Debugger in your browser for example to continue debugging the webview session.
 
 >[!NOTE]
 >

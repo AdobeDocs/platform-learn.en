@@ -22,7 +22,7 @@ For more information on the schema composition model, including design principle
 
 >[!TIP]
 >
->If you're familiar with Analytics Solution Design Reference (SDRs), you can think of a schema as a more robust SDR.
+>If you're familiar with Analytics Solution Design Reference (SDRs), you can think of a schema as a more robust SDR. See [Create and maintain a Solution Design Reference (SDR) Document](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html?lang=en) for more information.
 
 ## Prerequisites
 
@@ -208,7 +208,7 @@ Now add a custom field group using your custom data type:
 
 1. In the right rail, provide a **[!UICONTROL Field name]** of `appInformation`, a **[!UICONTROL Display name]** of `App Information`, and a **[!UICONTROL Type]** of `App Information`.
 
-1. Select **[!UICONTROL App Interactions]** from the **[!UICONTROL Type]** drop down, which is the custom data type you created in the previous exercise.
+1. Select **[!UICONTROL App Interactions]** from the **[!UICONTROL Field Group]** drop down, to assign the fields to your new field group.
 
 1. Select **[!UICONTROL Apply]**.
 
@@ -218,7 +218,7 @@ Now add a custom field group using your custom data type:
 
 >[!NOTE]
 >
->Custom field groups are always placed under your Experience Cloud Org identifier. So `_techmarketingdemos`, used in the screenshots, is replaced with your organization's unique value.
+>Custom field groups are always placed under your Experience Cloud Org identifier.
 
 
 >[!SUCCESS]

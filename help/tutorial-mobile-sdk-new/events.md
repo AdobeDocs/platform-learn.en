@@ -1,9 +1,9 @@
 ---
-title: Events
+title: Collect event data
 description: Learn how to collect event data in a mobile app.
 hide: yes
 ---
-# Events
+# Collect event data
 
 Learn how to track events in a mobile app.
 
@@ -121,7 +121,7 @@ You have different commerce product-related actions in your app and you want to 
 
 To implement the sending of commerce-related experience events in a reusable way, you use a dedicated function:
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
 
     ```swift
     // Set up a data dictionary, create an experience event and send the event.
@@ -152,7 +152,7 @@ To implement the sending of commerce-related experience events in a reusable way
     * sets up an experience event using the dictionary,
     * sends the experience event using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL Products]** > **[!UICONTROL ProductView]** in Xcode Project navigator and add various calls to the `sendCommerceExperienceEvent` function:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Products]** > **[!UICONTROL ProductView]** in Xcode Project navigator and add various calls to the `sendCommerceExperienceEvent` function:
 
    1. At the `.task` modifier, within the `ATTrackingManager.trackingAuthorizationStatus` closure. This `.task` modifier is called when product view is initialized and shown, so you want to send a product view event at that specific moment.
 
@@ -257,7 +257,7 @@ Imagine you want to track screen views and interactions in the app itself. Remem
 
 Again, lets actually implement this code in your Xcode project. 
 
-1. For convenience, you define two functions in **[!UICONTROL MobileSDK]**. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Utils]** > **[!UICONTROL MobileSDK]** in your Xcode Project navigator.
+1. For convenience, you define two functions in **[!UICONTROL MobileSDK]**. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in your Xcode Project navigator.
 
    1. One for app interactions. Add this code to the `func sendAppInteractionEvent(actionName: String)` function:
 
@@ -316,7 +316,7 @@ Again, lets actually implement this code in your Xcode project.
        * sets up an experience event using the dictionary,
        * sends the experience event using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL Views]** > **[!UICONTROL General]** > **[!UICONTROL LoginSheet]**.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
 
    1. Add the following highlighted code to the Login button closure: 
 
@@ -340,7 +340,7 @@ Again, lets actually implement this code in your Xcode project.
 
    1. Move the Assurance icon to the left.
    1. Select **[!UICONTROL Home]** in the tab bar and verify you see an **[!UICONTROL ECID]**, **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** in the Home screen.
-   1. Select **[!UICONTROL Products]** in the tab bar.
+   1. Select **[!DNL Products]** in the tab bar.
    1. Select a product.
    1. Select <img src="assets/saveforlater.png" width=15/>.
    1. Select <img src="assets/addtocart.png" width=20/>.
@@ -356,7 +356,7 @@ Again, lets actually implement this code in your Xcode project.
 
 ## Next steps
 
-You should now have all the tools to start adding data collection to the Luma app. You can add more intelligence to how the user interacts with your products in the app and you can add more app interaction and screen tracking calls to the app:
+You should now have all the tools to start adding data collection to your app. You can add more intelligence to how the user interacts with your products in the app and you can add more app interaction and screen tracking calls to the app:
 
 * Implement order, checkout, empty basket, and other functionality to the app and add relevant commerce experience events to this functionality.
 * Repeat the call to `sendAppInteractionEvent` with the appropriate parameter to track other app interactions by the user. 

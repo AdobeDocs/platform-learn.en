@@ -1,9 +1,9 @@
 ---
-title: Lifecycle data
+title: Collect lifecycle data
 description: Learn how to collect lifecycle data in a mobile app.
 hide: yes
 ---
-# Lifecycle data
+# Collect lifecycle data
 
 Learn how to collect lifecycle data in a mobile app.
 
@@ -46,7 +46,7 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Now you can update your project to register the lifecycle events.
 
-1. Navigate to **[!UICONTROL Luma]** > **[!UICONTROL Luma]** > **[!UICONTROL SceneDelegate]** in the Xcode Project navigator.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** in the Xcode Project navigator.
 
 1. When launched, if your app is resuming from a background state, iOS might call your `sceneWillEnterForeground:` delegate method and this is where you want to trigger a lifecycle start event. Add this code to `func sceneWillEnterForeground(_ scene: UIScene)`:
  

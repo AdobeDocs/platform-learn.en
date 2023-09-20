@@ -41,7 +41,7 @@ Datastreams can be created in the [!UICONTROL Data Collection] interface using t
     >
     >Final reminder: if you are going through this tutorial with multiple persons on a single sandbox or you are using a shared account, consider appending or prepending an identification as part of your naming conventions. For example, instead of `Luma Mobile App Event Dataset`, use `Luma Mobile App Event Dataset - Joe Smith`. See also the note in [Overview](overview.md).
 
-1. Select the schema that you created in the previous lesson from the **Event Schem**a list.
+1. Select the schema that you created in the previous lesson from the **Event Schema** list.
 1. Select **[!UICONTROL Save]**.
 
     ![new datastreams](assets/datastream-name.png)
@@ -49,7 +49,7 @@ Datastreams can be created in the [!UICONTROL Data Collection] interface using t
 
 ## Add services
 
-Next, you connect your Experience Cloud services to your datastream. When Platform Mobile SDK sends data to Edge Network, the datastream sends the data to these services:
+When you are going through the (optional) [Analytics](analytics.md) and [Experience Platform](platform.md) lessons in this tutorial, you are adding services to your datastream to ensure that when the Platform Mobile SDK sends data to the Edge Network, the datastream forward that data to the configured services.
 
 ### Adobe Analytics
 

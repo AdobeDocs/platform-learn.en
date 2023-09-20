@@ -27,6 +27,7 @@ If you don't have access, you can [skip this lesson](install-sdks.md).
 In this lesson, you will:
 
 * Create an Experience Platform dataset.
+* Configure your datastream to forward data to Experience Platform.
 * Validate data in the dataset.
 * Enable your schema and dataset for Real-Time Customer Profile.
 * Validate data in Real-Time Customer Profile.
@@ -48,7 +49,7 @@ All data that is successfully ingested into Adobe Experience Platform is persist
 ![dataset home](assets/dataset-create.png)
 
 1. Search for your schema. for example using `Luma Mobile` in the search field.
-1. Select your schema, for example **[!UICONTROL Luma Mobile App Event Schema]**.
+1. Select your schema, for example **[!DNL Luma Mobile App Event Schema]**.
 
 1. Select **[!UICONTROL Next]**.
    ![dataset configure](assets/dataset-configure.png)
@@ -58,9 +59,32 @@ All data that is successfully ingested into Adobe Experience Platform is persist
 1. Select **[!UICONTROL Finish]**.
    ![dataset finish](assets/dataset-finish.png)
 
-## Update the datastream
 
-Once you have created your dataset, be sure to [update your datastream](create-datastream.md#adobe-experience-platform) to add Adobe Experience Platform. This update ensures data flows into Platform. 
+## Add Adobe Experience Platform datastream service
+
+To send your XDM data from the Edge Network to Adobe Experience Platform, you configure the Adobe Experience Platform service to the datastream you set up as part of [Create a datastream](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>You can only enable the Adobe Experience Platform service when having created an event dataset.
+
+1. In the Data Collection UI, select **[!UICONTROL Datastreams]** and your datastream. 
+   
+1. Then select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]**.
+
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
+
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
+
+1. Select the **[!UICONTROL Event Dataset]** that you created earlier , for example **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Select **[!UICONTROL Save]**.
+
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
+
 
 ## Validate data in the dataset
 
@@ -83,7 +107,7 @@ Experience Platform's Real-Time Customer Profile allows you to build a holistic 
 
 ### Enable the schema
 
-1. Open your schema, for example **[!UICONTROL Luma Mobile App Event Schema]**.
+1. Open your schema, for example **[!DNL Luma Mobile App Event Schema]**.
 1. Enable **[!UICONTROL Profile]**.
 1. Select **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]** in the  dialog.
 1. **[!UICONTROL Save]** the schema.
@@ -92,7 +116,7 @@ Experience Platform's Real-Time Customer Profile allows you to build a holistic 
 
 ### Enable the dataset
 
-1. Open your dataset, for example **[!UICONTROL Luma Mobile App Event Dataset]**.
+1. Open your dataset, for example **[!DNL Luma Mobile App Event Dataset]**.
 1. Enable **[!UICONTROL Profile]**.
 
     ![enable the dataset for profile](assets/platform-profile-dataset.png)
