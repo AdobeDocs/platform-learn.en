@@ -1,5 +1,5 @@
 ---
-title: Collect and map Analytics data
+title: Map data to Analytics data
 description: Learn how to collect and map data for Adobe Analytics in a mobile app.
 solution: Data Collection,Experience Platform,Analytics
 hide: yes
@@ -224,4 +224,4 @@ Additional information about processing rules and context data can be found [her
 >
 >You have set up your app to map your Experience Edge XDM objects to Adobe Analytics variables enabling the Adobe Analytics service in your datastream and using processing rules where applicable.<br/> Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content,  share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[Experience Platform](platform.md)**
+Next: **[Send data to Experience Platform](platform.md)**

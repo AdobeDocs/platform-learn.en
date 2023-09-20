@@ -166,4 +166,4 @@ Once you complete the steps in the [Experience Platform lesson](platform.md), yo
 >
 >You have now set up your app to update identities in the Edge Network and (when set up) with Adobe Experience Platform.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Next: **[Profile](profile.md)**
+Next: **[Collect profile data](profile.md)**

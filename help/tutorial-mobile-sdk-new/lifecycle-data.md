@@ -118,4 +118,4 @@ You should see **[!UICONTROL Application Close (Background)]** and **[!UICONTROL
 >
 >You have now set up your app to send application state (foreground, background) events to the Adobe Experience Platform Edge Network and all services you have defined in your datastream.<br>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
-Next: **[Track events](events.md)**
+Next: **[Track event data](events.md)**
