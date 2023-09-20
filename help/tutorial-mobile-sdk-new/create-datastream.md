@@ -41,7 +41,7 @@ Datastreams can be created in the [!UICONTROL Data Collection] interface using t
     >
     >Final reminder: if you are going through this tutorial with multiple persons on a single sandbox or you are using a shared account, consider appending or prepending an identification as part of your naming conventions. For example, instead of `Luma Mobile App Event Dataset`, use `Luma Mobile App Event Dataset - Joe Smith`. See also the note in [Overview](overview.md).
 
-1. Select the schema that you created in the previous lesson from the **Event Schem**a list.
+1. Select the schema that you created in the previous lesson from the **Event Schema** list.
 1. Select **[!UICONTROL Save]**.
 
     ![new datastreams](assets/datastream-name.png)

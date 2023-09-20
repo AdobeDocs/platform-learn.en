@@ -58,7 +58,12 @@ Before you run the application for the first time in Xcode, ensure you update th
 1. Select **[!DNL Luma]** in the Project navigator.
 1. Select the **[!DNL Luma]** target.
 1. Select the **Signing & Capabilities** tab.
-1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
+   >[!IMPORTANT]
+   >
+   >Ensure you select a unique bundle identifier different fron the default one already entered in the Start project, as each bundle identifier needs to be unique.
+
 
     ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
@@ -84,7 +89,7 @@ Assurance works by opening a URL, either via browser or QR code. That URL begins
 1. Select **[!UICONTROL Assurance]** from the left rail in the Data Collection UI.
 1. Select **[!UICONTROL Create Session]**.
 1. Select **[!UICONTROL Start]**.
-1. Provide a **[!UICONTROL Session Name]** such as `Luma Mobile App Session` and the **[!UICONTROL Base URL]**, which is the URL Schemes you entered in Xcode, followed by `://`. For example: `lumatutorialswiftui://`.
+1. Provide a **[!UICONTROL Session Name]** such as `Luma Mobile App Session` and the **[!UICONTROL Base URL]**, which is the URL Schemes you entered in Xcode, followed by `://` For example: `lumatutorialswiftui://`
 1. Select **[!UICONTROL Next]**.
     ![assurance create session](assets/assurance-create-session.png)
 1. In the **[!UICONTROL Create New Session]** modal dialog:

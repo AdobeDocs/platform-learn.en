@@ -106,7 +106,7 @@ In this lesson, you will:
     
     1. In **[!UICONTROL Datastreams]** select the **[!UICONTROL Datastream]** that you created in the [previous step](create-datastream.md) for each of the environments, for example **[!DNL Luma Mobile App]**.
 
-    1. Specify the **[!UICONTROL Edge Network domain]** within **[!UICONTROL Domain Configuration]**. The Edge Network domain is the name of your organization, followed by `data.adobedc.net`, for example `techmarketingdemos.data.adobedc.net`.
+    1. If not already populated, specify the **[!UICONTROL Edge Network domain]** within **[!UICONTROL Domain Configuration]**. The Edge Network domain is the name of your organization, followed by `data.adobedc.net`, for example `techmarketingdemos.data.adobedc.net`.
 
     1. From the **[!UICONTROL Save to Library]** menu, select **[!UICONTROL Save to Library and Build]**.
 

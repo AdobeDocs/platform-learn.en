@@ -27,9 +27,12 @@ In this lesson, you will:
 
 ## Swift Package Manager
 
-Instead of using CocoaPods and using a Pod file (as outlined in the Mobile Install Instructions, see [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions)), you add individual packages using Xcode's native Swift Package Manager.
+Instead of using CocoaPods and using a Pod file (as outlined in the Mobile Install Instructions, see [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions)), you add individual packages using Xcode's native Swift Package Manager. The Xcode project already has all packages dependencies added for you. The Xcode **[!UICONTROL Package Dependencies]** screen should look like:
 
-In Xcode, use **[!UICONTROL File]** > **[!UICONTROL Add Packages...]** and install all packages listed in the table below. Select the link of the package in the table to obtain the full URL for the specific package.
+![Xcode Package Dependencies](assets/xcode-package-dependencies.png){zoomable="yes"}
+
+
+In Xcode, you can use **[!UICONTROL File]** > **[!UICONTROL Add Packages...]** to add packages. The table below provides links to the URLs you would use to add packages. The links also direct you to more information about each specific package.  
 
 | Package | Description | 
 |---|---|
@@ -42,11 +45,6 @@ In Xcode, use **[!UICONTROL File]** > **[!UICONTROL Add Packages...]** and insta
 | [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) | The AEP Messaging extension (`AEPMessaging`) allows you to send push notification tokens and push notification click-through feedback to the Adobe Experience Platform.|
 | [AEP Optimize](https://github.com/adobe/aepsdk-optimize-ios) | The AEP Optimize extension (`AEPOptimize`) provides APIs to enable real-time personalization workflows in the Adobe Experience Platform Mobile SDKs using Adobe Target or Adobe Journey Optimizer Offer Decisioning. It requires `AEPCore` and `AEPEdge` extensions to send personalization query events to the Experience Edge network. |
 | [AEP Assurance](https://github.com/adobe/aepsdk-assurance-ios.git) | Assurance (a.k.a. project Griffon) is a new, innovative extension (`AEPAssurance`) to help you inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app. This extension enables your app for Assurance. |
-
-
-After you have installed all packages, your Xcode **[!UICONTROL Package Dependencies]** screen should look like:
-
-![Xcode Package Dependencies](assets/xcode-package-dependencies.png){zoomable="yes"}
 
 
 ## Import extensions
@@ -76,10 +74,10 @@ Do the same for **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICON
 
 Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** in the Xcode Project navigator. 
 
-1. Set the `@AppStorage` value for `environmentFileId` to the Development Environment File ID value that you retrieved from tags in step 6 in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
+1. Replace the `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` for `environmentFileId` to the Development Environment File ID value that you retrieved from tags in step 6 in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
 
    ```swift
-   @AppStorage("environmentFileId") private var environmentFileId = "b5cbd1a1220e/1857ef6cacb5/launch-2594f26b23cd-development"
+   @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
    ```
 
 1. Add the following code to the `application(_, didFinishLaunchingWithOptions)` function.

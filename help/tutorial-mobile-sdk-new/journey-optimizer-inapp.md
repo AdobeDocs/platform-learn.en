@@ -62,6 +62,18 @@ In this lesson, you will
 
    ![app surface configuration](assets/push-app-surface-config.png)
 
+### Update datastream configuration
+
+To ensure data send from your mobile app to the Edge Network is forwarded to Journey Optimizer, update your Experience Edge configuration .
+
+1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
+1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Adobe Journey Optimizer]** is selected. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+1. To save your datastream configuration, select **[!UICONTROL Save]**.
+
+   ![AEP datastream configuration](assets/datastream-aep-configuration.png)
+
+
 ### Install Journey Optimizer tags extension
 
 For your app to work with Journey Optimizer, you need to update your tag property.

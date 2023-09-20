@@ -163,7 +163,7 @@ For your app to work with Journey Optimizer, you need to update your tag propert
 
 You should now have an push notification extension added to your app, similar to the screen below.
 
-...
+![Pusn nofitications extension](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
 ### Implement Journey Optimizer in the app
@@ -391,7 +391,7 @@ This time the experience event you are about to send is not constructed building
 
 ## Next steps
 
-You should now have all the tools to handle push notifications in your app. For example, you could build a journey in Journey Optimizer that sends a welcome push notification when a user of the app logs in. Or a confirmation push message when a user purchases a product in the app. Or enters the geofence of a location (as you will see in the [Places](places.md) lesson).
+You should now have all the tools to handle push notifications in your app. For example, you could build a journey in Journey Optimizer that sends a welcome push notification when a user of the app logs in. Or a confirmation push notification when a user purchases a product in the app. Or enters the geofence of a location (as you will see in the [Places](places.md) lesson).
 
 >[!SUCCESS]
 >

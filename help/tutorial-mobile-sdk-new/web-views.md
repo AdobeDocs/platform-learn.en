@@ -57,7 +57,7 @@ The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/cli
 
 You can learn more about the `Identity.getUrlVariables` API in the [Identity for Edge Network extension API reference guide](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
-## Validation
+## Validate
 
 To execute the code:
 
@@ -84,6 +84,8 @@ To execute the code:
       ```html
       adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
       ```
+
+Unfortunately, debugging the web session is limited; you can not use the Adobe Experience Platform Debugger in your browser for example to continue debugging the webview session.
 
 >[!NOTE]
 >

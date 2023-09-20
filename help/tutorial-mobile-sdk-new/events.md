@@ -356,7 +356,7 @@ Again, lets actually implement this code in your Xcode project.
 
 ## Next steps
 
-You should now have all the tools to start adding data collection to the Luma app. You can add more intelligence to how the user interacts with your products in the app and you can add more app interaction and screen tracking calls to the app:
+You should now have all the tools to start adding data collection to your app. You can add more intelligence to how the user interacts with your products in the app and you can add more app interaction and screen tracking calls to the app:
 
 * Implement order, checkout, empty basket, and other functionality to the app and add relevant commerce experience events to this functionality.
 * Repeat the call to `sendAppInteractionEvent` with the appropriate parameter to track other app interactions by the user. 

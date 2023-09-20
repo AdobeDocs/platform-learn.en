@@ -208,7 +208,7 @@ Now add a custom field group using your custom data type:
 
 1. In the right rail, provide a **[!UICONTROL Field name]** of `appInformation`, a **[!UICONTROL Display name]** of `App Information`, and a **[!UICONTROL Type]** of `App Information`.
 
-1. Select **[!UICONTROL App Interactions]** from the **[!UICONTROL Type]** drop down, which is the custom data type you created in the previous exercise.
+1. Select **[!UICONTROL App Interactions]** from the **[!UICONTROL Field Group]** drop down, to assign the fields to your new field group.
 
 1. Select **[!UICONTROL Apply]**.
 
@@ -218,7 +218,7 @@ Now add a custom field group using your custom data type:
 
 >[!NOTE]
 >
->Custom field groups are always placed under your Experience Cloud Org identifier. So `_techmarketingdemos`, used in the screenshots, is replaced with your organization's unique value.
+>Custom field groups are always placed under your Experience Cloud Org identifier.
 
 
 >[!SUCCESS]
