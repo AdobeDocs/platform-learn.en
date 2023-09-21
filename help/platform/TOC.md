@@ -106,6 +106,7 @@ doc-type: video
   + [Connecting to destinations](/help/platform/destinations/connecting-to-destinations.md)
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
   + [Activate profiles and segments to a destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+  + [Configure a dataset export destination](/help/platform/destinations/configure-dataset-export-destination.md)
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
   + [Configure the Azure Blob destination](/help/platform/destinations/configure-the-azure-blob-destination.md)
   + [Configure the Marketo destination](/help/platform/destinations/configure-the-marketo-destination.md)
