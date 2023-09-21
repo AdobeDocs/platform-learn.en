@@ -47,6 +47,7 @@ role: Developer, Data Engineer
   + [Set up a datastream](event-forwarding/set-up-a-datastream.md)
   + [Add an extension](event-forwarding/add-an-extension.md)
   + [Create a rule](event-forwarding/create-a-rule.md)
+  + [Quick start workflows](event-forwarding/quick-start-workflows.md)
   + [Monitor event forwarding](event-forwarding/monitor.md)
   + [Move client-side tags](event-forwarding/consider-moving-tags.md)
   + [Set up Google Ads enhanced conversions](event-forwarding/set-up-google-ads-enhanced-conversions.md)
