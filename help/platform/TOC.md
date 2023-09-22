@@ -4,6 +4,7 @@ breadcrumb-title: Tutorials
 user-guide-description: Learn the many components of Experience Platform.
 audience: all
 doc-type: video
+auto-video-transcripts: true
 ---
 
 # Adobe Experience Platform Tutorials {#tutorials}
