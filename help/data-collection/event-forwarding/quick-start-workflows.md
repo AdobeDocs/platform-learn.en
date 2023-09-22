@@ -12,8 +12,8 @@ jira: KT-13957
 
 This video walks users through two advanced use cases for getting the most out of the Facebook/Meta quick start workflows in Data Collection:
 
-1. Using the workflow to create a reference accounts. 
-1. Being able to copy the new content into an existing implementation.
+1. Using the workflow to create reference objects. 
+1. Copying the reference objects into an existing implementation.
 
 For more information on the Meta Conversions API quick start workflow, visit [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=en#quick-start).
 
