@@ -9,6 +9,6 @@ last-substantial-update: 2023-07-26
 ---
 # Troubleshoot: Unable to connect to SFTP source connector
 
-Learn best practices to avoid connection issues with the SFTP source connector. Review specific check points to successfully connect your SFTP server to Adobe Experience Platform.
+Learn best practices to avoid connection issues with the SFTP source connector. Review specific check points to successfully connect your SFTP server to Adobe Experience Platform. For more information, see the [SFTP source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on)

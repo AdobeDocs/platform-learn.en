@@ -17,4 +17,4 @@ Learn how to create a dashboard in Adobe Experience Platform. For more informati
 >
 >The user-defined dashboards feature is in beta. Its features and documentation are subject to change.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on)

@@ -11,8 +11,7 @@ exl-id: 9ec200e6-8ef9-47f5-98ca-1c1a2da3fb29
 ---
 # Configure a social destination
 
-Learn how to configure a social destination in Adobe Experience Platform, including authentication, segment assignment, ID mapping, etc.
+Learn how to configure a social destination in Adobe Experience Platform, including authentication, segment assignment, ID mapping, etc. For more information, please visit the [documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/332599/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332599/?learn=on)
 
-For  more information, please visit the [documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/social/overview.html).

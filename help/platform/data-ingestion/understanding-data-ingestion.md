@@ -10,8 +10,7 @@ exl-id: 8fcdb16f-26e1-4fb8-8e2b-1a1a3acccfe1
 ---
 # Data ingestion overview
 
-Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing real-time customer profiles.
+Adobe Experience Platform's data ingestion capabilities let you bring your data together into one open and scalable platform for the purpose of managing real-time customer profiles. For more information, please visit the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
 
-For more information, please visit the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html).

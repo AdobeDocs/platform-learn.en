@@ -20,7 +20,7 @@ Adobe Experience Platform Identity Service helps you to gain a better view of yo
 **Data Architects** will need to map identities outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about identity in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 >[!NOTE]
 >

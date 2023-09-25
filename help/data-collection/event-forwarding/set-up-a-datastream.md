@@ -9,7 +9,8 @@ exl-id: 20e30a36-3d56-4d15-acb7-b1bd560bb94d
 ---
 # Set up a datastream for event forwarding
 
-Learn how to set up a datastream for event forwarding.
+Learn how to set up a datastream for event forwarding. For more information, please visit [the event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+
 
 >[!NOTE]
 >
@@ -19,6 +20,4 @@ Learn how to set up a datastream for event forwarding.
 > * Platform Launch Server Side is now **[!DNL event forwarding]** 
 > * Edge configurations are now **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?quality=12&learn=on)
-
-For more information, please visit [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/getting-started.html#create-a-datastream)
+>[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on)

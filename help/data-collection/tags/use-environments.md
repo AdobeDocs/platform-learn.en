@@ -14,4 +14,4 @@ Learn how to use development, staging, and production environments to develop an
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28729/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28729/?learn=on)

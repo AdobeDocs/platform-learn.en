@@ -13,4 +13,4 @@ last-substantial-update: 2023-08-23
 
 Learn how the [!DNL Real-Time Customer Data Platform] supports full-funnel marketing using partner data for first-party data enrichment and prospecting use cases as third-party cookies continue to be deprecated. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3422855/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3422855/?learn=on)

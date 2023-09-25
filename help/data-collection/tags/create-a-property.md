@@ -15,4 +15,4 @@ Get a quick overview of tags in Data Collection and learn how to create properti
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28727/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28727/?learn=on)

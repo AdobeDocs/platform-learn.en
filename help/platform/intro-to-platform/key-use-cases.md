@@ -11,5 +11,5 @@ exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
 
 Get an overview of the four key use cases of Experience Platform&mdash;real-time customer data platform, customer journey intelligence, delivery and cross-channel experience, and customer experience application development.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on)
 

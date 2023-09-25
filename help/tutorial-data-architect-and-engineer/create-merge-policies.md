@@ -25,7 +25,7 @@ We'll stick to the user interface for this lesson, but API options also exist fo
 **Data Architects** will need to create merge policies outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about merge policies:
->[!VIDEO](https://video.tv.adobe.com/v/330433?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
 
 ## Permissions required
 

@@ -18,4 +18,4 @@ The role of the ‘data steward’ spans across disciplines and has become an ad
 * How to Incorporate consent-based strategies that lead with consumer trust and seamlessly integrate within the consumer journey
 * Data steward responsibilities within the marketer’s role with efficiency and confidence
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)

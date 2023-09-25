@@ -10,8 +10,7 @@ exl-id: 1aa07a46-5997-4288-959d-2d255fd76983
 ---
 # Recipes, models, and services overview
 
-Learn about recipes, models, and services in Adobe Experience Platform Data Science Workspace.
+Learn about recipes, models, and services in Adobe Experience Platform Data Science Workspace. For more information, please visit the [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/333380?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333380?learn=on)
 
-For more information, please visit the [Data Science Workspace documentation](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/home.html).

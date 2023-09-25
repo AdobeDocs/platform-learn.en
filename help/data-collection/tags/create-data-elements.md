@@ -14,4 +14,4 @@ Learn how to create data elements to store values pulled from your data layer an
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28733/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28733/?learn=on)

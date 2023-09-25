@@ -11,8 +11,6 @@ exl-id: a6a9302f-b9dd-4201-a81e-5c8a2f58b82d
 ---
 # Introduction to Customer AI
 
-A high-level overview of how marketers can use Customer AI to generate customer predictions.
+A high-level overview of how marketers can use Customer AI to generate customer predictions. For more information, please visit the [Customer AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/32664?quality=12&learn=on)
-
-For  more information, please visit the [Customer AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)
+>[!VIDEO](https://video.tv.adobe.com/v/32664?learn=on)

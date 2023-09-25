@@ -11,6 +11,6 @@ exl-id: a10c72a2-8ed3-40da-bfdc-b1dc4492f8c4
 ---
 # Manage sensitive data in datastreams
 
-Learn how to manage sensitive data in datastreams.  For more information, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html).
+Learn how to manage sensitive data in datastreams.  For more information, see [the datastreams documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/datastreams/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3409588/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409588/?learn=on)

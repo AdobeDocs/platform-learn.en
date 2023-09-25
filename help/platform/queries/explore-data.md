@@ -10,8 +10,6 @@ exl-id: 7288da8f-4646-4519-81cc-dae33d79b86e
 ---
 # Explore data
 
-Learn how to validate ingested data, preview data, and explore statistical and analytical properties of data using SQL functions. 
+Learn how to validate ingested data, preview data, and explore statistical and analytical properties of data using SQL functions. For more information, please visit the [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/333415?quality=12&learn=on)
-
-For  more information, please visit the [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
+>[!VIDEO](https://video.tv.adobe.com/v/333415?learn=on)
