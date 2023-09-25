@@ -147,7 +147,7 @@ For your app to work with Journey Optimizer, you need to update your tag propert
     <img src="assets/luma-app-push.png" width=300/>
 
 
-### Add push notification capabilities to your app
+## Add push notification capabilities to your app
 
 >[!IMPORTANT]
 >
@@ -166,7 +166,7 @@ You should now have an push notification extension added to your app, similar to
 ![Pusn nofitications extension](assets/xcode-signing-capabilities-pushnotifications.png)
 
 
-### Implement Journey Optimizer in the app
+## Implement Journey Optimizer in the app
 
 As discussed in previous lessons, installing a mobile tag extension only provides the configuration. Next you must install and register the Messaging SDK. If these steps aren't clear, review the [Install SDKs](install-sdks.md) section.
 
@@ -199,7 +199,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-### Register device token for push notifications
+## Register device token for push notifications
 
 1. Add the [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API to the `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` function.
 
@@ -312,7 +312,7 @@ Your next step is to create the journey that triggers the sending of the push no
    ![Finished journey](assets/ajo-journey-finished.png) 
 
 
-## Triggering the push notification
+## Trigger the push notification
 
 You have all the ingredients in place to send a push notification. What remains is how to trigger this push notification. In essence, it is the same as you have seen before: simply send an experience event with the proper payload (as in [Events](events.md)).
 
