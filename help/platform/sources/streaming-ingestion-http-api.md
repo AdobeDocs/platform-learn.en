@@ -12,7 +12,7 @@ exl-id: 2f9c3f6f-169a-431f-b697-a5ed86c274f5
 
 This video shows how to stream data to Adobe Experience Platform in real-time using the HTTP API endpoint. 
 
->[!VIDEO](https://video.tv.adobe.com/v/331028?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331028?learn=on)
 
 ## Additional information
 

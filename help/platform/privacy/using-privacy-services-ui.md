@@ -11,8 +11,6 @@ exl-id: 8436345a-7e0b-40af-8bd8-534fdf1f8e44
 
 # Using the Privacy Service interface
 
-Learn how to create privacy requests in the Privacy Service, and how to monitor and review their status in the dashboard.
+Learn how to create privacy requests in the Privacy Service, and how to monitor and review their status in the dashboard. For more information, please visit the [Privacy Services documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/336079?quality=12&learn=on)
-
-For  more information, please visit the [Privacy Services documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+>[!VIDEO](https://video.tv.adobe.com/v/336079?learn=on)

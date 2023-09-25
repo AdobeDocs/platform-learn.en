@@ -14,4 +14,4 @@ Learn how to choose the best hosting option for your tag library.
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28728/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on)

@@ -20,13 +20,13 @@ Learn how to easily ingest data from Marketo Engage into Real-Time Customer Data
 
 Learn how to configure the source connector for Marketo using the template workflow. This workflow auto-generates assets needed for ingesting Marketo data based on templates. It saves you upfront time, and the assets can be customized according to your needs. 
 
->[!VIDEO](https://video.tv.adobe.com/v/3419550?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419550?learn=on)
 
 ## Standard workflow
 
 Learn how to configure the source connector for Marketo using the standard workflow. The standard workflow requires upfront creation of schemas and identity namespaces. 
 
->[!VIDEO](https://video.tv.adobe.com/v/338250?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338250?learn=on)
 
 For more information, please see the following documentation:
 * [Marketo Engage source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/adobe-applications/marketo/marketo.html).

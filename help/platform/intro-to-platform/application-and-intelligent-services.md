@@ -11,5 +11,5 @@ exl-id: 24333697-56fe-4398-b3e0-33b68a2dc8ad
 
 Learn about the Application Services and Intelligent Services built on top of Adobe Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/32554?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on)
 

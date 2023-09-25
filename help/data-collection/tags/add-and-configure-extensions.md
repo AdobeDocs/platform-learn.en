@@ -14,4 +14,4 @@ Learn how to add and configure extensions in your tag property. Extensions are p
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28732/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28732/?learn=on)

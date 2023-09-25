@@ -27,7 +27,7 @@ There are important [guardrails for Real-Time Customer Profile data](https://exp
 **Data Architects** will need to enable Real-Time Customer Profile outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about Real-Time Customer Profile:
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Permissions required
 

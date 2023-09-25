@@ -13,7 +13,7 @@ exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
 
 Manage data-at-rest encryption using your own encryption keys. For more information, please visit the [customer-managed keys documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
 
 >[!IMPORTANT]
 >

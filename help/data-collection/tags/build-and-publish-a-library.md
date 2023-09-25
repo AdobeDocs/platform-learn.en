@@ -14,4 +14,4 @@ Learn how to create a library in your tag property and push changes through your
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28731/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28731/?learn=on)

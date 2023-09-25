@@ -14,4 +14,4 @@ Learn how to create rules so you can execute commands in tags. Events and condit
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28730/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28730/?learn=on)

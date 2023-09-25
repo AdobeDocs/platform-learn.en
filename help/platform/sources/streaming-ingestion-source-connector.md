@@ -1,6 +1,6 @@
 ---
 title: Stream data using Source Connectors
-description: This video shows how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
+description: Learn how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
 feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
@@ -10,10 +10,10 @@ exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
 ---
 # Stream data using Source Connectors 
 
-This video shows how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
+Learn how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on)
 
 ## Additional Resources
 

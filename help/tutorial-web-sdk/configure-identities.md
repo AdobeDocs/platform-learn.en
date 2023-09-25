@@ -40,7 +40,7 @@ You must have already completed the previous lessons:
 In this exercise, you create an identity namespace for Luma's custom identity field, `lumaCrmId`. Identity namespaces play a critical role in building real-time customer profiles, as two matching values in the same namespace allow two data sources to form an identity graph.
 
 Before you begin the exercises, watch this short video to learn more about identity in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 Now, create a namespace for the Luma CRM ID:
 

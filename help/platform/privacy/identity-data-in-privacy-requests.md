@@ -10,8 +10,6 @@ exl-id: c5533831-5bba-45c6-8ff8-eb38accf0d42
 ---
 # Auditing your stored personal data
 
-Learn key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business.
+Learn key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business. For more information, please visit the [Privacy Services documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?quality=12&learn=on)
-
-For  more information, please visit the [Privacy Services documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)
+>[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on)

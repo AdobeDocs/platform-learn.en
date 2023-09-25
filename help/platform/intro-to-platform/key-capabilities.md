@@ -17,5 +17,5 @@ Learn about the key capabilities of Experience Platform:
 1. Enhance delivery and personalization of real-time experiences
 1. Gain trust with governance, security, and privacy controls
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on)
 

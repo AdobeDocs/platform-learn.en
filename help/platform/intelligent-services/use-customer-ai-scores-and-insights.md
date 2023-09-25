@@ -11,8 +11,7 @@ exl-id: f3f628ef-223a-48d9-979e-86f038268923
 ---
 # Use Customer AI Scores and Insights
 
-Learn how to use Customer AI propensity scores and insights to convert and retain customers.
+Learn how to use Customer AI propensity scores and insights to convert and retain customers. For more information, please visit the [Customer AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/32666?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32666?learn=on)
 
-For  more information, please visit the [Customer AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html)

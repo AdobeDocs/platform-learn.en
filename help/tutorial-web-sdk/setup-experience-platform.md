@@ -151,7 +151,7 @@ To confirm that the data has landed in Platform's data lake, a quick option is t
 
 The next step is to enable the dataset and schema for Real-Time Customer Profile. Data streaming from Web SDK will be one of many data sources flowing into Platform and you want to join your web data with other data sources to build 360-degree customer profiles. To learn more about Real-Time Customer Profile, watch this short video:
 
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on&captions=eng)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
 >[!CAUTION]
 >

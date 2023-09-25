@@ -11,8 +11,7 @@ exl-id: f1bc3e84-0b4b-40d0-83a5-f0f76a71f81d
 
 # Subscribe to Privacy Events
 
-Learn how to subscribe to Privacy Events to automate job-status-based workflows.
+Learn how to subscribe to Privacy Events to automate job-status-based workflows. For more information, please visit the [Privacy Services documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/336073?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336073?learn=on)
 
-For  more information, please visit the [Privacy Services documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html)

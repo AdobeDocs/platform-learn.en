@@ -13,7 +13,7 @@ exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
 
 Delivering on the experience promise, with access to less data. Whether you’re an advertiser, publisher, or agency, this webinar will help unlock the opportunities for data collaboration in a future without third-party cookies.
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
 ## Key Takeaways:
 
