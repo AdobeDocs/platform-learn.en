@@ -8,8 +8,6 @@ level: Beginner
 jira: KT-13945
 thumbnail: 3424392.jpg
 last-substantial-update: 2023-09-27
-hidefromtoc: yes
-hide: yes
 ---
 # Configure a dataset export destination in [!DNL Experience Platform]
 
