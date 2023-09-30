@@ -5,6 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
 hide: yes
+exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
 ---
 # Create and send push notifications
 
@@ -398,4 +399,3 @@ You should now have all the tools to handle push notifications in your app. For 
 >You have now enabled the app for push notification using Journey Optimizer and the Journey Optimizer extension for the Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Create and send in-app messages](journey-optimizer-inapp.md)**
-

@@ -3,6 +3,7 @@ title: Collect identity data
 description: Learn how to collect identity data in a mobile app.
 feature: Mobile SDK,Identities
 hide: yes
+exl-id: e6ec9a4f-3163-47fd-8d5c-6e640af3b4ba
 ---
 # Collect identity data
 

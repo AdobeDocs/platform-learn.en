@@ -2,6 +2,7 @@
 title: Collect lifecycle data
 description: Learn how to collect lifecycle data in a mobile app.
 hide: yes
+exl-id: a3b26e45-2a17-4b44-aec0-fdf83526a273
 ---
 # Collect lifecycle data
 

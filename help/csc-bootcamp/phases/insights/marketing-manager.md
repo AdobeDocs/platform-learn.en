@@ -2,7 +2,7 @@
 title: CSC Bootcamp - Insights for a Marketing Manager
 description: CSC Bootcamp - Insights for a Marketing Manager
 doc-type: multipage-overview
-exl-id: f96f7c66-ed94-417a-ba24-a719b23988f0
+exl-id: 8a979899-7b56-427e-aede-6d4e045c89c1
 ---
 # Insights for a Marketing Manager
 

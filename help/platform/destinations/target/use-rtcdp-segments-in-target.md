@@ -11,7 +11,7 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-05
 jira: KT-13141
-exl-id: 4f3c41ee-ca6a-4a3b-a9af-9d9d24000b7a
+exl-id: 73e5a0fa-cf50-4e22-82ce-997fe069aa86
 ---
 # Use Real-Time CDP segments in Target
 

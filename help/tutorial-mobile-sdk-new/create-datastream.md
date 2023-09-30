@@ -3,8 +3,8 @@ title: Configure a datastream
 description: Learn how to create a datastream in Experience Platform.
 feature: Mobile SDK,Datastreams
 hide: yes
+exl-id: d8b9df3d-49ee-4578-92c6-0f920a86fe7e
 ---
-
 # Create a datastream
 
 Learn how to create a datastream in Experience Platform.

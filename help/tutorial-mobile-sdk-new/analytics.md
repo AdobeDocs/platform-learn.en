@@ -3,6 +3,7 @@ title: Map data to Analytics data
 description: Learn how to collect and map data for Adobe Analytics in a mobile app.
 solution: Data Collection,Experience Platform,Analytics
 hide: yes
+exl-id: 631588df-a540-41b5-94e3-c8e1dc5f240b
 ---
 # Collect and map Analytics data
 

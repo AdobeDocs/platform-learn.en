@@ -3,6 +3,7 @@ title: Implement Adobe Experience Cloud in mobile apps tutorial overview
 description: Learn how to implement the Adobe Experience Cloud mobile applications. This tutorial guides you through an implementation of Experience Cloud applications in a sample Swift app.
 recommendations: noDisplay,catalog
 hide: yes
+exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
 ---
 # Implement Adobe Experience Cloud in mobile apps tutorial
 

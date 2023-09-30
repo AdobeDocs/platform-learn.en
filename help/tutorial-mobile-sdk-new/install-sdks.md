@@ -2,6 +2,7 @@
 title: Install Adobe Experience Platform Mobile SDKs
 description: Learn how to implement the Adobe Experience Platform Mobile SDK in a mobile app.
 hide: yes
+exl-id: 86348d8b-f428-465d-a79e-ce73d140da79
 ---
 # Install Adobe Experience Platform Mobile SDKs
 

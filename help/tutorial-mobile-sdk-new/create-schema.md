@@ -3,6 +3,7 @@ title: Create an XDM schema
 description: Learn how to create an XDM schema for mobile app events.
 feature: Mobile SDK,Schemas
 hide: yes
+exl-id: 66a3c062-93e5-4183-8fb4-1f72cacb6552
 ---
 # Create an XDM schema
 

@@ -2,7 +2,7 @@
 title: CSC Bootcamp - Create mobile app content
 description: CSC Bootcamp - Create mobile app content
 doc-type: multipage-overview
-exl-id: 541a31b7-f769-4c8f-92fe-25aa40af1d11
+exl-id: db4e91da-2077-4133-aca9-e3413990f4be
 ---
 # Create mobile app content
 

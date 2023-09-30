@@ -5,6 +5,7 @@ solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: In App
 hide: yes
+exl-id: 6cb4d031-6172-4a84-b717-e3a1f5dc7d5d
 ---
 # Create and send in-app messages
 

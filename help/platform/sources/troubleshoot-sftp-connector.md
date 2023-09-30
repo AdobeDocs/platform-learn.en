@@ -6,6 +6,7 @@ role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-11950
 last-substantial-update: 2023-07-26
+exl-id: 50f7a50c-ab0d-4cc8-bf58-2e0c9fc373ad
 ---
 # Troubleshoot: Unable to connect to SFTP source connector
 

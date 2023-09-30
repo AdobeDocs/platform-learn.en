@@ -2,6 +2,7 @@
 title: Track event data
 description: Learn how to track event data in a mobile app.
 hide: yes
+exl-id: b926480b-b431-4db8-835c-fa1db6436a93
 ---
 # Track event data
 

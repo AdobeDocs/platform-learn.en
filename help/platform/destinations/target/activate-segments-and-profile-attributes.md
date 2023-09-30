@@ -11,7 +11,7 @@ level: Intermediate
 doc-type: Feature Video
 last-substantial-update: 2023-05-03
 jira: KT-13140
-exl-id: 10d19094-0fc3-4075-b52e-684805c85213
+exl-id: df0e12ee-e15a-457e-a091-68ec264f3da2
 ---
 # Activate segments and profile attributes
 

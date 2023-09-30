@@ -3,6 +3,7 @@ title: Configure a tag property
 description: Learn how to configure a tag property in the [!UICONTROL Data Collection] interface.
 feature: Mobile SDK,Tags
 hide: yes
+exl-id: 4d67b52e-db72-4ee6-be02-aa11a1d32481
 ---
 # Configure a tag property
 

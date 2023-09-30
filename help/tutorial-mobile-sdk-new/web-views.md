@@ -3,8 +3,8 @@ title: Handle WebViews
 description: Learn how to handle data collection with WebViews in a mobile app.
 jira: KT-6987
 hide: yes
+exl-id: 0c8818f7-39d3-496e-a835-2d85d50e50d6
 ---
-
 # Handle WebViews
 
 Learn how to handle data collection with WebViews in a mobile app.

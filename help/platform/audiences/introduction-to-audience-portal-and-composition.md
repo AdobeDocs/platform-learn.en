@@ -7,8 +7,8 @@ level: Beginner
 jira: KT-13698
 thumbnail: 3421713.jpeg
 last-substantial-update: 2023-07-19
+exl-id: d4aad5de-1481-46b1-884a-74b6d4774160
 ---
-
 # Introduction to Audience Portal and Composition
 
 See how Adobe is reimagining audiences in Adobe Experience Platform, including how you can import, build, and manage audiences. For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).

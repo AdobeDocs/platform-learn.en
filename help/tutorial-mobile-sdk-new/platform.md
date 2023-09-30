@@ -4,6 +4,7 @@ description: Learn how to send data to Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 hide: yes
+exl-id: 841b2274-b7a4-4203-9eb4-a2a3783d3f02
 ---
 # Send data to Experience Platform
 

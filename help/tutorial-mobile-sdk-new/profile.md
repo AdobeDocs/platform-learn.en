@@ -2,6 +2,7 @@
 title: Collect profile data
 description: Learn how to collect profile data in a mobile app.
 hide: yes
+exl-id: 6ce02ccc-6280-4a1f-a96e-1975f8a0220a
 ---
 # Collect profile data
 

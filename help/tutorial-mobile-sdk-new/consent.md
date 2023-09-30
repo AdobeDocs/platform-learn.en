@@ -3,6 +3,7 @@ title: Implement consent
 description: Learn how to implement consent in a mobile app.
 feature: Mobile SDK,Consent
 hide: yes
+exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
 ---
 # Implement consent
 

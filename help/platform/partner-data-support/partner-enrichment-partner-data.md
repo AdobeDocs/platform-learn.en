@@ -8,6 +8,7 @@ level: Intermediate
 jira: KT-13830
 thumbnail: 3423075.jpg
 last-substantial-update: 2023-08-23
+exl-id: 7b6cb89d-b514-48ae-b932-1254abd57d31
 ---
 # Add partner attributes to first-party profiles in [!DNL Real-Time CDP]
 

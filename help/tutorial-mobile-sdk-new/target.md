@@ -5,8 +5,8 @@ solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
 hide: yes
+exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
 ---
-
 # Perform A/B tests
 
 Learn how to perform A/B tests in your mobile apps with Platform Mobile SDK and Adobe Target.
