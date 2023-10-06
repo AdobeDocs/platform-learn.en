@@ -1,7 +1,7 @@
 ---
 title: Copy objects between sandboxes
 description: Learn how to copy objects between Experience Platform sandboxes using packages. Easily replicate schemas, datasets, journeys, and more across your sandboxes.
-solution: Platform, Real-Time Customer Data Platform, Journey Optimizer
+solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 feature: Sandboxes
 role: Admin, Data Architect, Data Engineer, Developer
 level: Intermediate
