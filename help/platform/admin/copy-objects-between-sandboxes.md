@@ -9,8 +9,8 @@ doc-type: Feature Video
 last-substantial-update: 2023-10-06
 jira: KT-14116
 thumbnail: 3424763.jpeg
+exl-id: 3a4171dd-459e-4bef-a4a6-5b6520707a40
 ---
-
 # [!BADGE Beta] Copy objects between sandboxes
 
 >[!IMPORTANT]
