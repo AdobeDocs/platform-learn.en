@@ -32,8 +32,8 @@ auto-video-transcripts: true
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
   + [Use alerts](/help/platform/admin/use-alerts.md)
-  + [Use sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
-  + [Copy objects between sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Copy objects between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
   + [Admin Console](/help/platform/admin/admin-console.md)
   + [Manage product profiles](/help/platform/admin/managing-product-profiles.md)

@@ -15,7 +15,7 @@ thumbnail: 3424763.jpeg
 
 >[!IMPORTANT]
 >
->The **Sandbox tooling** feature described below is available only to select Beta customers.
+>The **sandbox tooling** feature described below is available only to select Beta customers.
 
 Learn how to copy objects between Experience Platform sandboxes using packages. Easily replicate schemas, datasets, journeys, and more across your sandboxes to support release processes and multi-region/multi-brand deployments. For more detailed information, see the [sandbox tooling](https://experienceleague.adobe.com/docs/experience-platform/sandbox/ui/sandbox-tooling.html) documentation. 
 
