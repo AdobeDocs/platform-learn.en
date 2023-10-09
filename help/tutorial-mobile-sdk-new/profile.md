@@ -59,7 +59,7 @@ It would be helpful for targeting and / or personalization in the app to quickly
 
     ```swift
     // Update attributes
-    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+    MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
     ```
 
 
@@ -90,9 +90,7 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
 
 ## Validate with Assurance
 
-1. Review the [setup instructions](assurance.md) section.
-1. Install the app.
-1. Launch the app using the Assurance generated URL.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. Run the app to log in and interact with a product.
 
    1. Move the Assurance icon to the left.
@@ -127,4 +125,4 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
 >
 >You have now set up your app to update attributes of profiles in the Edge Network and (when set up) with Adobe Experience Platform.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[Use geolocation services](places.md)**
+Next: **[Use Places](places.md)**

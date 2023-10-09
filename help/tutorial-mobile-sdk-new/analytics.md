@@ -17,7 +17,7 @@ The [event](events.md) data which you collected and sent to Platform Edge Networ
 
 * Understanding of ExperienceEvent tracking.
 * Successfully sending XDM data in your sample app.
-* Datastream configured to Adobe Analytics
+* An Adobe Analytics report suite you can use for this lesson.
 
 ## Learning objectives
 
@@ -123,9 +123,11 @@ s.events = "scAdd:321435"
 
 ## Validate with Assurance
 
-Using the [Assurance](assurance.md) you can confirm that you're sending an experience event, the XDM data is correct and the Analytics mapping is happening as expected. For example:
+Using the [Assurance](assurance.md) you can confirm that you're sending an experience event, the XDM data is correct and the Analytics mapping is happening as expected.
 
-1. Send a productListAdds event.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
+
+1. Send a **[!UICONTROL productListAdds]** event (add a product to your basket).
 
 1. View the ExperienceEvent hit.
 
@@ -144,7 +146,6 @@ Using the [Assurance](assurance.md) you can confirm that you're sending an exper
     "eventType" : "commerce.productListAdds",
     "commerce" : {
       "productListAdds" : {
-        "id" : "LLWS05.1-XS",
         "value" : 1
       }
     }
@@ -188,14 +189,22 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 >
 >`_techmarketingdemos` is replaced with your Organization's unique value.
 
+
+
 To map this XDM context data to your Analytics data in your report suite, you can: 
+
+### Use a fieldgroup
 
 * Add the **[!UICONTROL Adobe Analytics ExperienceEvent Full Extension]** field group to your schema.
 
   ![Analytics ExperienceEvent FullExtension field group](assets/schema-analytics-extension.png)
-* Build rules in your Tags property to map the context data to the fields in the Adobe Analytics ExperienceEvent Full Extension field group. For example, map `_techmarketingdemo.appinformation.appstatedetails.screenname` to `_experience.analytics.customDimensions.eVars.eVar2`.
 
-<!-- Old processing rules section
+* Build XDM payloads in your app, conforming to the Adobe Analytics ExperienceEvent Full Extension field group, similar to what you have done in the [Track Event Data](events.md) lesson, or 
+* Build rules in your Tags property that use rule actions to attach or modify data to the Adobe Analytics ExperienceEvent Full Extension field group. See for more details [Attach data to SDK events](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) or [Modify data in SDK events](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
+
+
+### Use processing rules
+
 Here is what a processing rule using this data might look like:
 
 * You **[!UICONTROL Overwrite value of]** (1) **[!UICONTROL App Screen Name (eVar2)]** (2) with the value of **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (3) if **[!UICONTROL a.x._techmarketingdemo.appinformation.appstatedetails.screenname]** (4) **[!UICONTROL is set]** (5).
@@ -219,7 +228,6 @@ Additional information about processing rules and context data can be found [her
 >
 >Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
 
--->
 
 >[!SUCCESS]
 >

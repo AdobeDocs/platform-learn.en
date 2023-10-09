@@ -99,7 +99,7 @@ You want to update both the standard identity (email) and the custom identity (L
 1. Navigate to **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
 
    ```swift
-   // Update identities
+   // Call updateIdentities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 
@@ -113,7 +113,7 @@ You want to update both the standard identity (email) and the custom identity (L
 
 You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side identity graph. See [View identity graphs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) for more information on identity graphs.
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL General]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
 
    ```swift
    // Remove identities and reset email and CRM Id to their defaults
@@ -133,9 +133,9 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 ## Validate with Assurance
 
-1. Review the [setup instructions](assurance.md) section and connect your simulator or device to Assurance.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. In the Luma app
-   1. Select the **[!UICONTROL Home]** tab. 
+   1. Select the **[!UICONTROL Home]** tab and move the Assurance icon to the left. 
    1. Select the <img src="assets/login.png" width=15/> icon from the top right.
    
       <img src="./assets/identity1.png" width=300>
@@ -161,6 +161,10 @@ Once you complete the steps in the [Experience Platform lesson](platform.md), yo
 1. You see the **[!UICONTROL Identities]** listed.
 
    ![validate identity graph](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>There is no code in the app to reset the ECID, which means you can only reset the ECID (and effectively create a new profile with a new ECID on the device) through an uninstall and a reinstall of the application. To implement the reset of identifiers, see the [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) and [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API calls. Be aware though, when using a push notification identifier (see [Sending push notifications](journey-optimizer-push.md)), that identifier becomes another 'sticky' profile identifier on the device.
 
 
 >[!SUCCESS]

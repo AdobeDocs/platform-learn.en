@@ -61,13 +61,11 @@ Now you can update your project to register the lifecycle events.
    ```swift
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
-   }
    ```
 
 ## Validate with Assurance
 
-1. Review the [setup instructions](assurance.md) section and connect your simulator or device to Assurance.
-1. Launch the app.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. Send the app to the background. Check for **[!UICONTROL LifecyclePause]** events in the Assurance UI.
 1. Bring app to the foreground. Check for **[!UICONTROL LifecycleResume]** events in the Assurance UI.
 ![validate lifecycle](assets/lifecycle-lifecycle-assurance.png)
@@ -77,7 +75,7 @@ Now you can update your project to register the lifecycle events.
 
 The previous exercise dispatches the foreground and background events to Adobe Experience Platform Mobile SDK. To forward these events to Platform Edge Network:
 
-1. Select **[!UICONTROL Rules]** in the Data Collection UI.
+1. Select **[!UICONTROL Rules]** in the Tags property.
    ![Create Rule](assets/rule-create.png)
 1. Select **[!UICONTROL Initial Build]** as the library to use.
 1. Select **[!UICONTROL Create New Rule]**.

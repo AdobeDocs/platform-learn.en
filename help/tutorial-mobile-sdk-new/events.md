@@ -62,7 +62,6 @@ For the standard field groups, the process looks like:
       "eventType": "commerce.productViews",
       "commerce": [
           "productViews": [
-            "id": sku,
             "value": 1
           ]
       ]
@@ -70,7 +69,6 @@ For the standard field groups, the process looks like:
   ```
 
    * `eventType`: Describes the event that occurred, use a [known value](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) when possible.
-   * `commerce.productViews.id`: a string value representing the SKU of the product
    * `commerce.productViews.value`: the numeric or boolean value of the event. If it's a Boolean (or "Counter" in Adobe Analytics), the value is always set to 1. If it's a numeric or currency event, the value can be > 1.
 
 * In your schema, identify any additional data associated with the commerce product view event. In this example, include **[!UICONTROL productListItems]** which is a standard set of fields used with any commerce-related event:
@@ -80,25 +78,24 @@ For the standard field groups, the process looks like:
 
 * To add this data, expand your `xdmData` object to include supplementary data:
 
-```swift
-var xdmData: [String: Any] = [
-    "eventType": "commerce.productViews",
-        "commerce": [
-        "productViews": [
-            "id": sku,
-            "value": 1
-        ]
-    ],
-    "productListItems": [
-        [
-            "name":  productName,
-            "SKU": sku,
-            "priceTotal": priceString,
-            "quantity": 1
+    ```swift
+    var xdmData: [String: Any] = [
+        "eventType": "commerce.productViews",
+            "commerce": [
+            "productViews": [
+                "value": 1
+            ]
+        ],
+        "productListItems": [
+            [
+                "name":  productName,
+                "SKU": sku,
+                "priceTotal": priceString,
+                "quantity": 1
+            ]
         ]
     ]
-]
-```
+    ```
 
 * You now can use this data structure to create an `ExperienceEvent`:
 
@@ -111,6 +108,8 @@ var xdmData: [String: Any] = [
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
+
+The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is the AEP Mobile SDK equivalent to the [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API calls. See [Migrate from Analytics mobile extension to Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) for more information.
 
 You are now going to actually implement this code in your Xcode project.
 You have different commerce product-related actions in your app and you want to send events, based on these actions as performed by the user:
@@ -130,7 +129,6 @@ To implement the sending of commerce-related experience events in a reusable way
         "eventType": "commerce." + commerceEventType,
         "commerce": [
             commerceEventType: [
-                "id": product.sku,
                 "value": 1
             ]
         ],
@@ -324,7 +322,6 @@ Again, lets actually implement this code in your Xcode project.
         ```swift                              
         // Send app interaction event
         MobileSDK.shared.sendAppInteractionEvent(actionName: "login")
-        dismiss()
         ```
 
    1. Add the following highlighted code to `onAppear` modifier:
@@ -336,8 +333,7 @@ Again, lets actually implement this code in your Xcode project.
 
 ## Validation
 
-1. Review the [setup instructions](assurance.md) section and connect your simulator or device to Assurance.
-1. Run the app, log in and interact with a product.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 
    1. Move the Assurance icon to the left.
    1. Select **[!UICONTROL Home]** in the tab bar and verify you see an **[!UICONTROL ECID]**, **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** in the Home screen.
@@ -351,7 +347,8 @@ Again, lets actually implement this code in your Xcode project.
  
 
 1. In the Assurance UI, look for the **[!UICONTROL hitReceived]** events from the **[!UICONTROL com.adobe.edge.konductor]** vendor.
-1. Select the event and review the XDM data in the **[!UICONTROL messages]** object.
+1. Select the event and review the XDM data in the **[!UICONTROL messages]** object. Alternatively, you can use ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy Raw Event]** and use a text or code editor of your preference to paste and inspect the event.
+   
    ![data collection validation](assets/datacollection-validation.png)
 
 
@@ -370,7 +367,7 @@ You should now have all the tools to start adding data collection to your app. Y
 
 ## Send events to Analytics and Platform
 
-Now that you have collected the events and sent them to Platform Edge Network, they are sent to the applications and services configured in your [datastream](create-datastream.md). In later lessons, you map this data to [Adobe Analytics](analytics.md) and [Adobe Experience Platform](platform.md). 
+Now that you have collected the events and sent them to Platform Edge Network, they are sent to the applications and services configured in your [datastream](create-datastream.md). In later lessons, you map this data to [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) and other Adobe Experience Cloud solutions like [Adobe Target](target.md) and Adobe Journey Optimizer. 
 
 >[!SUCCESS]
 >

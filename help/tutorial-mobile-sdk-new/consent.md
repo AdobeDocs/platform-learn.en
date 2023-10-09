@@ -27,9 +27,9 @@ In this lesson, you will:
 
 If you followed the tutorial from the beginning, you might remember that you have set the default consent in the Consent extension to **[!UICONTROL Pending - Queue events that occur before the user provides consent preferences.]** 
 
-To begin collecting data, you must get consent from the user. In this tutorial, you get consent from the user by simply asking for it with an alert. In a real-world app, you'd want to consult consent best practices for your region.
+To begin collecting data, you must get consent from the user. In a real-world app, you would want to consult consent best practices for your region. In this tutorial, you get consent from the user by simply asking for it with an alert:
 
-1. You only want to ask the user once. So you want to combine the Mobile SDK consent with the required authorizations for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume when the user authorizes tracking, the user also consents with collecting events.
+1. You only want to ask the user once for consent. So you want to combine the Mobile SDK consent with the required authorizations for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume when the user authorizes tracking, the user also consents with collecting events.
  
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator.
   
@@ -90,9 +90,7 @@ In the above example, you are simply logging the consent status to the console i
 
 ## Validate with Assurance
 
-1. Review the [Assurance](assurance.md) lesson.
-1. Install the app.
-1. Launch the app using the Assurance-generated URL.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. If you added the above code correctly, you are prompted to provide consent. 
   
    Select **[!UICONTROL Continue...]** and then select **[!UICONTROL Allow]**.
@@ -102,6 +100,17 @@ In the above example, you are simply logging the consent status to the console i
 
 1. You should see a **[!UICONTROL Get Consents Response]** event in the Assurance UI.
     ![validate consent](assets/consent-update.png)
+
+
+## Reset consent
+
+If you want to reset consent:
+
+1. Go to **[!UICONTROL Settings]** in the app.
+
+1. Select **[!UICONTROL App Settings…]** This will open the Luma App settings in the iOS Settings app.
+
+1. Toggle **[!UICONTROL Allow Tracking]** off.
 
 
 
