@@ -89,11 +89,11 @@ To send your XDM data from the Edge Network to Adobe Experience Platform, you co
 
 ## Validate data in the dataset
 
-Now that you have created a dataset and updated your datastream to send data to Experience Platform, all XDM data send to Platform Edge Network is forwarded to Platform and land in the dataset.
+Now that you have created a dataset and updated your datastream to send data to Experience Platform, all XDM data send to Platform Edge Network is forwarded to Platform and lands in the dataset.
 
 Open the app and navigate to screens where you are tracking events. You can also trigger lifecycle metrics.
 
-Open your dataset in the Platform interface. You should see the data arriving in batches to the dataset
+Open your dataset in the Platform interface. You should see the data arriving in batches to the dataset. The data typically arrives in microbatches every 15 minutes, so you might not see your data immediately.
 
 ![validate data landing Platform dataset batches](assets/platform-dataset-batches.png)
 
@@ -165,4 +165,4 @@ There is a lot more that marketers and analytics can do with data captured in Ex
 >
 >You have now set up your app to send data not only to the Edge Network but also to Adobe Experience Platform.<br>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
-Next: **[Create and push notifications](journey-optimizer-push.md)**
+Next: **[Create and send push notifications](journey-optimizer-push.md)**

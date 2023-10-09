@@ -7,7 +7,7 @@ feature: Offers
 hide: yes
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
 ---
-# Create and display offers
+# Create and display offers with Decision Management
 
 Learn how to show offers from Journey Optimizer Decision Management in your mobile apps with Experience Platform Mobile SDK.
 
@@ -96,6 +96,27 @@ To validate your setup in Assurance:
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Validate Setup]** in the left rail. Both datastream setup and the SDK setup in your application are validated.
    ![AJO Decisioning validation](assets/ajo-decisioning-validation.png)
+
+
+## Create placement
+
+Before you can actually create offers, you have to define how and where these offers can be placed in the mobile app. In Decision Management, you define placements for this purpose and you will define a placement for the mobile channel that supports a JSON payload:
+
+1. In the Journey Optimizer UI, select select ![Components](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Components]** from **[!UICONTROL DECISION MANAGEMENT]** in the left rail.
+
+1. Select **[!UICONTROL Placements]** from the top bar. 
+   
+1. If no placement with name **[!UICONTROL Mobile JSON]**,  **[!UICONTROL Mobile]** as **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** as **[!UICONTROL Content type]** is  listed, you need to create a placement. Otherwise, continue to [Create offers](#create-offers).
+
+To create the Mobile JSON placement: 
+
+1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) Create placement.
+
+   1. in the **[!UICONTROL Details]** section, enter `Mobile JSON` as the **[!UICONTROL Name]**, select **[!UICONTROL Mobile]** from **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** from **[!UICONTROL Content type]**.
+   1. Select **[!UICONTROL Save]** to save the placement.
+
+   ![Create placement](assets/ajo-create-placement.png)
+
 
 
 ## Create offers
@@ -349,7 +370,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 ## Validate using the app
 
-1. Open your app on a device or in the simulator.
+1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Go to the **[!DNL Personalisation]** tab.
 
@@ -366,7 +387,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 To validate the offers implementation in Assurance:
 
-1. Go to the Assurance UI.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Review & Simulate]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Review & Simulate]** in the left rail. Both datastream setup is validated and the SDK setup in your application.

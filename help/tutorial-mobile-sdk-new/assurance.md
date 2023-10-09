@@ -63,7 +63,7 @@ Before you run the application for the first time in Xcode, ensure you update th
  
    >[!IMPORTANT]
    >
-   >Ensure you use a unique bundle identifier, different fron the default `com.adobe.luma.tutorial.swiftui`  entered in the Start project, as each bundle identifier needs to be unique.
+   >Ensure you use a _unique_ bundle identifier and replace the `Luma` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
     ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
@@ -86,7 +86,7 @@ Assurance works by opening a URL, either via browser or QR code. That URL begins
 
 ## Connecting to a session
 
-1. Run the application in the simulator or on a connected physical device.
+1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 1. Select **[!UICONTROL Assurance]** from the left rail in the Data Collection UI.
 1. Select **[!UICONTROL Create Session]**.
 1. Select **[!UICONTROL Start]**.
@@ -128,6 +128,34 @@ Assurance works by opening a URL, either via browser or QR code. That URL begins
          ![assurance events](assets/assurance-events.png)
 
 If you run into any challenges, please review the [technical](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+
+
+## Verify extensions
+
+To verify whether your app is using the most up-to-date extensions:
+
+1. Select **[!UICONTROL Configure]**.
+
+1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) for ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]**.
+
+1. Select **[!UICONTROL Save]**.
+
+   ![Configure extension versions](assets/assurance-configure-extension-versions.png)
+
+1. Select ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]**. You will see an overview of the latest extensions available and the extensions used in your version of the app.
+
+   ![Extension versions](assets/assurance-extension-versions.png)
+
+1. To update your extension versions (for example **[!UICONTROL Messaging]** and **[!UICONTROL Optimize]**), in Xcode, for the specific extensions that needs an upgrade, select the package (extension) from **[!UICONTROL Package Dependencies]** (e.g. **[!UICONTROL AEPMessaging]**) and from the context menu select **[!UICONTROL Update Package]**. Xcode will update the package dependencies.
+
+
+>[!NOTE]
+>
+>When you have updated your extensions (packages) in Xcode, you need to close and delete your current session and repeat all steps from [Connecting to a session](#connecting-to-a-session) and [Verify extensions](#verify-extensions) to ensure Assurance properly reports the correct extensions in a new Assurance session.
+
+
+
+
 
 >[!SUCCESS]
 >

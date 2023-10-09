@@ -1,14 +1,14 @@
 ---
-title: Use geolocation services
+title: Use Places
 description: Learn how to use the Places geolocation service in your mobile app.
 hide: yes
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
 ---
-# Use geolocation services
+# Use Places
 
-Learn how to use geo-location service in your app.
+Learn how to use the Places geolocation service in your app.
 
-The Adobe Experience Platform Data Collection Places Service is a geo-location service that enables mobile apps with location awareness to understand the location context. The service is using rich and easy-to-use SDK interfaces accompanied by a flexible database of points of interests (POIs).
+The Adobe Experience Platform Data Collection Places Service is a geolocation service that enables mobile apps with location awareness to understand the location context. The service is using rich and easy-to-use SDK interfaces accompanied by a flexible database of points of interests (POIs).
 
 ## Prerequisites
 
@@ -27,7 +27,7 @@ In this lesson, you will
 * Update your schema to capture geolocation events.
 * Validate setup in Assurance.
 * Update your app to register the Places extension.
-* Implement geo-location tracking from the Places service in your app.
+* Implement geolocation tracking from the Places service in your app.
 
 
 ## Setup
@@ -76,7 +76,7 @@ You define some points of interest in the Places service.
    1. Select **[!UICONTROL Save to Library and Build]** from **[!UICONTROL Save to Library]**.
       ![Install Places extension](assets/places-install-extension.png). 
 
-1. Your library is rebuild.
+1. Your library is rebuilt.
 
 
 ### Verify your schema
@@ -91,7 +91,7 @@ Verify whether your schema, as defined in [Create schema](create-schema.md), inc
    ![Schema Places](assets/schema-places-context.png). 
 
 
-### Update your tag
+### Update your tag property
 
 The Places extension for Tags provides functionality to monitor geolocation events and allows you to trigger actions based on these events. You can use this functionality to minimize the API coding you have to implement in the app.
 
@@ -127,7 +127,7 @@ You first create several data elements.
 
 Next, you are going to define rules to work with these data elements. 
 
-1. In your tag property. select **[!UICONTROL Rules]** from the left rail.
+1. In your tag property, select **[!UICONTROL Rules]** from the left rail.
 1. Select **[!UICONTROL Add Rule]**.
 1. In the **[!UICONTROL Create Rule]** screen, enter a name for the rule, for example `POI - Entry`.
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL EVENTS]**.
@@ -210,6 +210,10 @@ Let's create another rule
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to the **[!UICONTROL Mobile Core - Attach Data]** action.
    1. Select **[!UICONTROL Adobe Experience Platform Edge Network]** from the **[!UICONTROL Extension]** list and select **[!UICONTROL Forward event to Edge Network]**.
    1. Select **[!UICONTROL Keep Changes]**.
+
+1. To save the rule, select **[!UICONTROL Save to Library]**.
+
+    ![Rule](assets/tags-rule-poi-exit.png)
 
 
 To ensure all changes in your tag are published
@@ -297,18 +301,15 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     }
     ```  
 
-It is beyond the subject of this lesson to explain details about the location manager implementation within iOS.
-
-
 ## Validate using your app
 
 1. Open your app on a device or in the simulator.
 
 1. Go to the **[!UICONTROL Location]** tab.
 
-1. Move the map around to ensure the blue circle in the middle is on top of one of your POI's, for example London.
+1. Move (drag) the map around to ensure the blue middle circle is on above of one of your POI's, for example London.
 
-1. Tap <img src="assets/geobutton.png" width=20/> repeatedly until you see the category and name at the bottom right.
+1. Tap <img src="assets/geobutton.png" width=20/> until you see the category and name appear in the lable at the red location with the pin.
    
 1. Tap the label of the POI, which opens up the **[!UICONTROL Nearby POI]** sheet. 
    

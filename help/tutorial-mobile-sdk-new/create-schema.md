@@ -90,10 +90,23 @@ For learning purposes, you use prebuilt and custom field groups.
 ## Create a schema 
 
 1. Select **[!UICONTROL Create Schema]**.
- 
-1. Select **[!UICONTROL XDM ExperienceEvent]** from the menu.
 
-   ![Selecting ExperienceEvent from drop down](assets/schema-create.png)
+1. In the **[!UICONTROL Select a class]** step of the **[!UICONTROL Create schema]** wizard, select **[!UICONTROL Experience Event]** underneath **[!UICONTROL Select a base class for this schema]**.
+
+1. Select **[!UICONTROL Next]**.
+    
+    ![Schema Wizard base class](assets/schema-wizard-base-class.png)
+
+1. In the **[!UICONTROL Name and review]** step of the **[!UICONTROL Create schema]** wizard, enter a **[!UICONTROL Schema display name]**, for example `Luma Mobile Event Schema` and a [!UICONTROL Description], for example `Schema for Luma mobile app experience events`.
+
+    >[!NOTE]
+    >
+    >If you are going through this tutorial with multiple persons on a single sandbox or you are using a shared account, consider appending or prepending an identification as part of your naming conventions. For example, instead of `Luma Mobile App Event Schema`, use `Luma Mobile App Event Schema - Joe Smith`. See also the note in [Overview](overview.md).
+
+1. Select **[!UICONTROL Finish]** to finish the wizard.
+
+    ![Schema name and review](assets/schema-wizard-name-and-review.png)
+
 
 1. Select ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add** next to **[!UICONTROL Field groups]**.
 
@@ -111,16 +124,7 @@ For learning purposes, you use prebuilt and custom field groups.
 
     You are brought back to the main schema composition screen where you can see all the available fields.
 
-1. Give your schema a name by selecting **[!UICONTROL Untitled schema]** from the **[!UICONTROL Composition]** pane (underneath **[!UICONTROL Schema]**) and providing a **[!UICONTROL Display name]** & **[!UICONTROL Description]**, for example `Luma Mobile App Event Schema` and `Schema for Luma mobile app experience events.`
-
-    >[!NOTE]
-    >
-    >If you are going through this tutorial with multiple persons on a single sandbox or you are using a shared account, consider appending or prepending an identification as part of your naming conventions. For example, instead of `Luma Mobile App Event Schema`, use `Luma Mobile App Event Schema - Joe Smith`. See also the note in [Overview](overview.md).
-
-
 1. Select **[!UICONTROL Save]**.
-
-    ![Selecting apply](assets/schema-name-save.png)
 
 >[!NOTE]
 >

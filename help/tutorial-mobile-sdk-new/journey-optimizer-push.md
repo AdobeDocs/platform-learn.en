@@ -97,8 +97,13 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
-1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Adobe Journey Optimizer]** is selected. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
-1. To save your datastream configuration, select **[!UICONTROL Save]**.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen:
+
+   1. If not already selected, select **[!UICONTROL AJO Push Profile Dataset]** from **[!UICONTROL Profile Dataset]**. This profile dataset is required when using the `MobileCore.setPushIdentifier` API call (see [Register device token for push notifications](#register-device-token-for-push-notifications)) which ensures the unique identifier for push notifications (a.k.a. push identifier) is stored as part of the profile of the user.
+
+   1. **[!UICONTROL Adobe Journey Optimizer]** is selected. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+   
+   1. To save your datastream configuration, select **[!UICONTROL Save]**.
 
    ![AEP datastream configuration](assets/datastream-aep-configuration.png)
 
@@ -126,9 +131,7 @@ For your app to work with Journey Optimizer, you need to update your tag propert
 
 ## Validate setup with Assurance
 
-1. Review the [setup instructions](assurance.md) section.
-1. Install the app on your physical device or on the simulator.
-1. Launch the app using the Assurance generated URL.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. In the Assurance UI, select **[!UICONTROL Configure]**.
     ![configure click](assets/push-validate-config.png)
 1. Select ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Push Debug]**.
@@ -381,7 +384,7 @@ This time the experience event you are about to send is not constructed building
 
 ## Validate using your app
 
-1. Open your app on a device or in the simulator.
+1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Go to the **[!UICONTROL Settings]** tab.
 
