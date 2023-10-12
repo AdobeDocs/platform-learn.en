@@ -18,6 +18,8 @@ Adobe Mix Modeler helps organizations measure, optimize, and plan marketing inve
 <div id="recs-overview-body-5"></div>
 <div id="recs-overview-body-6"></div>
 
+## Staff picks
+
 <div id="staff-picks-section">
 <table style="margin-top: 0 !important">
 <tr>

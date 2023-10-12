@@ -11,6 +11,7 @@ solution: Mix Modeler
 
 + [Mix Modeler Tutorials](/help/mix-modeler/overview.md)
 + Introduction to Mix Modeler {#intro}
+  + [Overview](/help/mix-modeler/intro/overview.md)
   + [Use Cases](/help/mix-modeler/intro/use-cases.md)
   + [User Workflow](/help/mix-modeler/intro/user-workflow.md)
   + [User Interface Tour](/help/mix-modeler/intro/user-interface-tour.md)
