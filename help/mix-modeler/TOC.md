@@ -7,7 +7,7 @@ auto-video-transcripts: true
 solution: Mix Modeler
 ---
 
-# Adobe Mix Modeler Tutorials {#tutorials}
+# Adobe Mix Modeler Tutorials {#mix-modeler}
 
 + [Mix Modeler Tutorials](/help/mix-modeler/overview.md)
 + Introduction to Mix Modeler {#intro}
