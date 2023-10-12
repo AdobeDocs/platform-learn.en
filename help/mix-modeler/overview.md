@@ -23,7 +23,7 @@ Adobe Mix Modeler helps organizations measure, optimize, and plan marketing inve
 <tr>
   <td>
     <a href="intro/use-cases.md">
-      <img alt="thumbnail image for the 'Use cases' tutorial" src="assets/" />
+      <img alt="thumbnail image for the 'Use cases' tutorial" src="https://video.tv.adobe.com/v/3424857?format=jpeg" />
     </a>
     <div>
       <a href="intro/use-cases.md">
@@ -36,7 +36,7 @@ Adobe Mix Modeler helps organizations measure, optimize, and plan marketing inve
   </td>
   <td>
     <a href="intro/user-workflow.md">
-      <img alt="thumbnail image for the 'User workflow' tutorial" src="assets/" />
+      <img alt="thumbnail image for the 'User workflow' tutorial" src="https://video.tv.adobe.com/v/3424854?format=jpeg" />
     </a>
     <div>
       <a href="intro/user-workflow.md">
@@ -49,7 +49,7 @@ Adobe Mix Modeler helps organizations measure, optimize, and plan marketing inve
   </td>
   <td>
     <a href="intro/user-interface-tour.md">
-      <img alt="thumbnail image for the 'User interface tour' video" src="assets/" />
+      <img alt="thumbnail image for the 'User interface tour' video" src="https://video.tv.adobe.com/v/3424851?format=jpeg" />
     </a>
     <div>
       <a href="intro/user-interface-tour">
