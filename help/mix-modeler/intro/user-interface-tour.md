@@ -11,6 +11,6 @@ thumbnail: 3424851.jpeg
 
 # User Interface Tour
 
-See the key features of Adobe Mix Modeler in the user interface.
+See the key features of Adobe Mix Modeler in the user interface. For additional information, see the [Adobe Mix Modeler guide](https://experienceleague.adobe.com/docs/mix-modeler/using/get-started/workflow.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424851?quality=12&learn=on)

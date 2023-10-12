@@ -6,7 +6,10 @@ mini-toc-levels: 1
 ---
 # Adobe Mix Modeler tutorials
 
-Adobe Mix Modeler
+Learn about Adobe Mix Modeler from these videos and tutorials.
+
+Adobe Mix Modeler helps organizations measure, optimize, and plan marketing investments by applying machine learning models that provide insights on the historic and future impact of marketing investments on key business goals. 
+
 
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
@@ -16,6 +19,48 @@ Adobe Mix Modeler
 <div id="recs-overview-body-6"></div>
 
 <div id="staff-picks-section">
-
+<table style="margin-top: 0 !important">
+<tr>
+  <td>
+    <a href="intro/use-cases.md">
+      <img alt="thumbnail image for the 'Use cases' tutorial" src="https://video.tv.adobe.com/v/3424857?format=jpeg" />
+    </a>
+    <div>
+      <a href="intro/use-cases.md">
+    <strong>Use cases</strong>
+    </a>
+    </div>
+    <p>
+    <em>Learn the key use cases of Adobe Mix Modeler</em>
+    <p>
+  </td>
+  <td>
+    <a href="intro/user-workflow.md">
+      <img alt="thumbnail image for the 'User workflow' tutorial" src="https://video.tv.adobe.com/v/3424854?format=jpeg" />
+    </a>
+    <div>
+      <a href="intro/user-workflow.md">
+    <strong>User workflow</strong>
+    </a>
+    </div>
+    <p>
+    <em>Learn the basic workflow of Adobe Mix Modeler</em>
+    <p>
+  </td>
+  <td>
+    <a href="intro/user-interface-tour.md">
+      <img alt="thumbnail image for the 'User interface tour' video" src="https://video.tv.adobe.com/v/3424851?format=jpeg" />
+    </a>
+    <div>
+      <a href="intro/user-interface-tour.md">
+    <strong>User interface tour</strong>
+    </a>
+    </div>
+    <p>
+    <em>Learn the key user interface components of Adobe Mix Modeler</em>
+    <p>
+  </td>
+</tr>
+</table>
 
 </div>
