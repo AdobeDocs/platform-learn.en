@@ -11,6 +11,6 @@ thumbnail: 3424854.jpeg
 
 # User Workflow
 
-Learn the workflow of Adobe Mix Modeler.
+Learn the workflow of Adobe Mix Modeler. For additional information, see the [Mix Modeler workflow](https://experienceleague.adobe.com/docs/mix-modeler/using/get-started/workflow.html) documentation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424854?learn=on)

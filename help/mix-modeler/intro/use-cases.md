@@ -11,6 +11,6 @@ thumbnail: 3424857.jpeg
 
 # Use Cases
 
-Learn the use cases that Adobe Mix Modeler addresses.
+Learn the use cases that Adobe Mix Modeler addresses. For additional information, see the [Mix Modeler use cases](https://experienceleague.adobe.com/docs/mix-modeler/using/get-started/workflow.html) documentation.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3424857?learn=on)
