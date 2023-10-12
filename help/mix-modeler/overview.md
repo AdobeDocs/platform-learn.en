@@ -52,7 +52,7 @@ Adobe Mix Modeler helps organizations measure, optimize, and plan marketing inve
       <img alt="thumbnail image for the 'User interface tour' video" src="https://video.tv.adobe.com/v/3424851?format=jpeg" />
     </a>
     <div>
-      <a href="intro/user-interface-tour">
+      <a href="intro/user-interface-tour.md">
     <strong>User interface tour</strong>
     </a>
     </div>
