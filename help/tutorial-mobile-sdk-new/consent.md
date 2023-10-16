@@ -90,28 +90,10 @@ In the above example, you are simply logging the consent status to the console i
 
 ## Validate with Assurance
 
+1. Delete the application from your device or simulator as we want to properly reset and initialize the tracking and consent.
 1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
-1. If you added the above code correctly, you are prompted to provide consent. 
-  
-   Select **[!UICONTROL Continue...]** and then select **[!UICONTROL Allow]**.
-   
-   <img src="./assets/consent-update-1.png" width=300/> 
-   <img src="./assets/consent-update-2.png" width=300/> 
-
-1. You should see a **[!UICONTROL Get Consents Response]** event in the Assurance UI.
+1. When moving in the app from **[!UICONTROL Home]** screen to **[!UICONTROL Products]** screen and back to **[!UICONTROL Home]** screen, you should see a **[!UICONTROL Get Consents Response]** event in the Assurance UI.
     ![validate consent](assets/consent-update.png)
-
-
-## Reset consent
-
-If you want to reset consent:
-
-1. Go to **[!UICONTROL Settings]** in the app.
-
-1. Select **[!UICONTROL App Settings…]** This will open the Luma App settings in the iOS Settings app.
-
-1. Toggle **[!UICONTROL Allow Tracking]** off.
-
 
 
 >[!SUCCESS]

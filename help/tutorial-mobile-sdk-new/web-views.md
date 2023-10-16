@@ -61,6 +61,7 @@ You can learn more about the `Identity.getUrlVariables` API in the [Identity for
 
 To execute the code:
 
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. Go to the **[!UICONTROL Settings]** in the app
 1. Tap the **[!DNL View...]** button to show the **[!DNL Terms of Use]**.
 

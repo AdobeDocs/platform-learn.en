@@ -290,8 +290,10 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPOptimize` is part of your list of imports.
 
-    `import AEPOptimize`
-
+   ```swift
+   import AEPOptimize
+   ```
+   
 1. Ensure `Optimize.self` is part of the array of extensions that you are registering.
 
     ```swift
