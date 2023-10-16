@@ -20,11 +20,6 @@ The Profile data is used by other extensions to perform profile-related actions.
 ## Prerequisites
 
 * Successfully built and run app with SDKs installed and configured.
-* Imported the Profile SDK.
-
-    ```swift
-    import AEPUserProfile
-    ```
 
 ## Learning objectives
 
@@ -72,11 +67,13 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
     ```swift
     // Get attributes
     UserProfile.getUserAttributes(attributeNames: ["isPaidUser"]) { attributes, error in
-        if attributes?["isPaidUser"] as! String == "yes" {
-            showBadgeForUser = true
-        }
-        else {
-            showBadgeForUser = false
+        if attributes?.count ?? 0 > 0 {
+            if attributes?["isPaidUser"] as? String == "yes" {
+                showBadgeForUser = true
+            }
+            else {
+                showBadgeForUser = false
+            }
         }
     }
     ```

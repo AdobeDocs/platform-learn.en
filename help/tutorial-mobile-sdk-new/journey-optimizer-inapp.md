@@ -95,6 +95,27 @@ For your app to work with Journey Optimizer, you need to update your tag propert
 >If you don't see `AJO Push Tracking Experience Event Dataset` as an option, contact customer care.
 >
 
+
+## Signing
+
+Signing the Luma app is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+
+To update the signing for your app:
+
+1. Go to your app in Xcode.
+1. Select **[!DNL Luma]** in the Project navigator.
+1. Select the **[!DNL Luma]** target.
+1. Select the **Signing & Capabilities** tab.
+1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+ 
+   >[!IMPORTANT]
+   >
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+
+
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+
 ### Implement Journey Optimizer in the app
 
 As discussed in previous lessons, installing a mobile tag extension only provides the configuration. Next you must install and register the Messaging SDK. If these steps aren't clear, review the [Install SDKs](install-sdks.md) section.
@@ -207,7 +228,7 @@ You have all the ingredients in place to send an in-app message. What remains is
     ```swift
     // Setting parameters and calling function to send in-app message
     Task {
-        AEPService.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
+        MobileSDK.shared.sendTrackAction(action: "in-app", data: ["showMessage": "true"])
     }
     ```
 

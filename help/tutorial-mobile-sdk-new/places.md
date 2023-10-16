@@ -233,7 +233,10 @@ To validate your setup in Assurance:
 1. If not already available in the left rail, select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Events]** and **[!UICONTROL Map & Simulate]** underneath **[!UICONTROL PLACES SERVICE]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Map & Simulate]** in the left rail.
-1. Select one of the POI's defined in the Places service and from the popup select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
+1. Move the map to a location of one of your POI's.
+1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulate Load POIs.  Your POI is identified using a circle and pin.
+1. Select your POI.
+1. From the popup select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
    ![Simulate Entry Event](assets/places-simulate.png)
 1. Select **[!UICONTROL Events]** from the left rail, and you should see the events that you simulated.
    ![AJO Decisioning validation](assets/places-events.png)
@@ -252,7 +255,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPPlaces` is part of your list of imports.
 
-    `import AEPPlaces`
+    ```swift
+    import AEPPlaces
+    ```
 
 1. Ensure `Places.self` is part of the array of extensions that you are registering.
 

@@ -51,9 +51,13 @@ In addition to the general [SDK installation](install-sdks.md), you completed in
 
 More information can be found [here](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
+<!-- not initially required
+
 ## Signing
 
-Before you run the application for the first time in Xcode, ensure you update the signing.
+Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+
+To update the signing for the lessons that require that you sign the application:
 
 1. Open the project in Xcode.
 1. Select **[!DNL Luma]** in the Project navigator.
@@ -63,10 +67,12 @@ Before you run the application for the first time in Xcode, ensure you update th
  
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `Luma` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
     ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+
+-->
 
 ## Set up a base URL
 
@@ -75,9 +81,13 @@ Before you run the application for the first time in Xcode, ensure you update th
 1. Select the **[!DNL Luma]** target.
 1. Select the **Info** tab.
 1. To add a base URL, scroll down to **URL Types** and select the **+** button.
-1. Set **Identifier** to the Bundle Identifier you configured in [Signing](#signing) (for example `com.adobe.luma.tutorial.swiftui`) and set a **URL Schemes**, for example `lumatutorialswiftui`.
+1. Set **Identifier** to the Bundle Identifier of your choice and set a **URL Schemes** of your choice .
 
    ![assurance url](assets/assurance-url-type.png)
+
+   >[!IMPORTANT]
+   >
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`.<br/>Similarly, use a unique URL scheme, and replace the already provided `lumatutorialswiftui` with your unique URL scheme.
 
 To learn more about URL Schemes in iOS, review [Apple's documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -86,8 +96,31 @@ Assurance works by opening a URL, either via browser or QR code. That URL begins
 
 ## Connecting to a session
 
-1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
-1. Select **[!UICONTROL Assurance]** from the left rail in the Data Collection UI.
+In Xcode: 
+
+1. Build or rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+   
+1. In the **[!UICONTROL Allow "Luma App" to to use your location]** dialog, select **[!UICONTROL Allow While Using App]**.
+ 
+   <img src="assets/geolocation-permissions.png" width=300>
+
+1. In the **[!UICONTROL "Luma App" Would Like to Send You Notifications]** dialog, select **[!UICONTROL Allow]**.
+ 
+   <img src="assets/notification-permissions.png" width=300>
+
+1. Select **[!UICONTROL Continue…]** to allow the app to track your activity.
+ 
+   <img src="assets/tracking-continue.png" width=300>
+
+1. In the **[!UICONTROL Allow "Luma App" to track your activity across other companies' app and websites]** dialog, select **[!UICONTROL Allow]**.
+ 
+   <img src="assets/tracking-allow.png" width=300>
+
+
+In your browser:
+
+1. Go to the Data Collection UI.
+1. Select **[!UICONTROL Assurance]** from the left rail.
 1. Select **[!UICONTROL Create Session]**.
 1. Select **[!UICONTROL Start]**.
 1. Provide a **[!UICONTROL Session Name]** such as `Luma Mobile App Session` and the **[!UICONTROL Base URL]**, which is the URL Schemes you entered in Xcode, followed by `://` For example: `lumatutorialswiftui://`
