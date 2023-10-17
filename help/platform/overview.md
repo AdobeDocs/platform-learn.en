@@ -1,11 +1,11 @@
 ---
-title: Adobe Experience Platform tutorials
+title: Adobe Experience Platform Tutorials
 description: Learn about Adobe Experience Platform
 doc-type: overview-page
 mini-toc-levels: 1
 exl-id: 5f84b0b4-b100-45dc-bcac-2dcc127c87f3
 ---
-# Adobe Experience Platform tutorials
+# Adobe Experience Platform Tutorials
 
 Adobe Experience Platform is the most powerful, flexible, and open system on the market for building and managing complete solutions that drive customer experience. Experience Platform enables organizations to centralize and standardize customer data and content from any system and apply data science and machine learning to dramatically improve the design and delivery of rich, personalized experiences. Use these videos and tutorials to learn the many components of Experience Platform.
 
