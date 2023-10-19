@@ -98,7 +98,12 @@ Assurance works by opening a URL, either via browser or QR code. That URL begins
 
 In Xcode: 
 
-1. Build or rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+1. Build or rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg). 
+
+   >[!TIP]
+   >
+   >Optionally, you might want to 'clean' your build, especially when you see unexpected results. To do this, select **[!UICONTROL Clean Build Folder…]** from the Xcode **[!UICONTROL Product]** menu. 
+
    
 1. In the **[!UICONTROL Allow "Luma App" to to use your location]** dialog, select **[!UICONTROL Allow While Using App]**.
  
