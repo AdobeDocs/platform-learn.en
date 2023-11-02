@@ -55,7 +55,7 @@ When multiple schemas are enabled for profile, a [!UICONTROL Union Schema] is au
 
 Note that there isn't a union schema for the ExperienceEvent class. While ExperienceEvent data still lands in profile, because it is time-series based, each event includes a timestamp and id and collisions are not a problem.
 
-Now what if you don't like that default merge policy? What if Luma decides their CRM system should be the source of truth when there is a conflict? For that, we will create a merge policy.
+Now what if you don't like that default merge policy? What if Luma decides their loyalty system should be the source of truth when there is a conflict? For that, we will create a merge policy.
 
 ## Create a merge policy in the UI
 
