@@ -15,7 +15,7 @@ auto-video-transcripts: true
   + [Behind the scenes: A customer experience powered by Experience Platform](/help/platform/intro-to-platform/behind-the-scenes-a-customer-experience-powered-by-experience-platform.md)
   + [Experience Platform overview](/help/platform/intro-to-platform/overview.md)
   + [Key capabilities](/help/platform/intro-to-platform/key-capabilities.md)
-  + [Application and Intelligent Services](/help/platform/intro-to-platform/application-and-intelligent-services.md)
+  + [Platform-based applications](/help/platform/intro-to-platform/native-applications.md)
   + [Integrations with Experience Cloud applications](/help/platform/intro-to-platform/integrations-with-experience-cloud-applications.md)
   + [Key use cases](/help/platform/intro-to-platform/key-use-cases.md)
   + [Basic architecture](/help/platform/intro-to-platform/basic-architecture.md)
