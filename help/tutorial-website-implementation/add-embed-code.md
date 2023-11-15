@@ -54,7 +54,57 @@ Now let's copy the embed code:
 
 The embed code should be implemented in the `<head>` element of all HTML pages that will share the property. You might have one or several template files which control the `<head>` globally across the site, making it a straightforward process to add tags.
 
-If you haven't already, download [the sample html page](https://www.enablementadobe.com/multi/web/basic-sample.html) (right-click on this link and click "Save Link As") and open it in a code editor. [Brackets](https://brackets.io/) is a free, open source editor if you need one.
+If you haven't already, copy the sample html page code and paste it into a code editor. [Brackets](https://brackets.io/) is a free, open source editor if you need one.
+
++++Sample html page code
+
+```html
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Tags: Sample HTML Page</title>
+    <!--Preconnect and DNS-Prefetch to improve page load time. REPLACE "techmarketingdemos" WITH YOUR OWN AAM PARTNER ID, TARGET CLIENT CODE, AND ANALYTICS TRACKING SERVER-->
+    <link rel="preconnect" href="//dpm.demdex.net">
+    <link rel="preconnect" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//techmarketingdemos.demdex.net">
+    <link rel="preconnect" href="//cm.everesttech.net">
+    <link rel="preconnect" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="preconnect" href="//techmarketingdemos.sc.omtrdc.net">
+    <link rel="dns-prefetch" href="//dpm.demdex.net">
+    <link rel="dns-prefetch" href="//fast.techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.demdex.net">
+    <link rel="dns-prefetch" href="//cm.everesttech.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.tt.omtrdc.net">
+    <link rel="dns-prefetch" href="//techmarketingdemos.sc.omtrdc.net">
+    <!--/Preconnect and DNS-Prefetch-->
+    <!--Data Layer to enable rich data collection and targeting-->
+    <script>
+    var digitalData = {
+        "page": {
+            "pageInfo" : {
+                "pageName": "Home"
+                }
+            }
+    };
+    </script>
+    <!--/Data Layer-->
+    <!--jQuery or other helper libraries-->
+    <script src="https://code.jquery.com/jquery-3.3.1.min.js"></script>
+    <!--/jQuery-->
+    <!--Tags Header Embed Code: REPLACE THE NEXT LINE WITH THE EMBED CODE FROM YOUR OWN DEVELOPMENT ENVIRONMENT-->
+    <script src="//assets.adobedtm.com/launch-EN93497c30fdf0424eb678d5f4ffac66dc.min.js" async></script>
+    <!--/Tags Header Embed Code-->
+</head>
+<body>
+    <h1>Tags: Sample HTML Page</h1>
+    <p>This is a very simple page to demonstrate basic implementation concepts of Tags</p>
+    <p>See <a href="https://docs.adobe.com/content/help/en/experience-cloud/implementing-in-websites-with-launch/index.html">Implementing the Experience Cloud in Websites with Tags</a> for the complete tutorial</p>
+</body>
+</html>
+
+```
+
++++
 
 Replace the existing embed code on or around line 34 with with the one on your clipboard and save the page. Now open the page in a web browser. If you are loading the page using the `file://` protocol, you will need to add "https:" at the beginning of the embed code URL in your code editor). Lines 33-36 of your sample page might look something like this:
 
