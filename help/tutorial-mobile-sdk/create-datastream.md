@@ -8,6 +8,10 @@ exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
 
 Learn how to create a datastream in Experience Platform. 
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 A datastream is a server-side configuration on Platform Edge Network.  The datastream ensures that incoming data to the Platform Edge Network is routed to Adobe Experience Cloud applications and services appropriately. For more information, see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html) or this [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
 
 ## Prerequisites

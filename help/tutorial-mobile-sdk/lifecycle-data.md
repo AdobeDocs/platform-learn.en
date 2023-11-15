@@ -7,6 +7,10 @@ exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
 
 Learn how to collect lifecycle data in a mobile app.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 The Adobe Experience Platform Mobile SDK Lifecycle extension enables the collection  lifecycle data from your mobile app. The Adobe Experience Platform Edge Network extension sends this lifecycle data to the Platform Edge Network where it is then  forwarded to other applications and services according to your datastream configuration. Learn more about the [Lifecycle extension](https://developer.adobe.com/client-sdks/documentation/lifecycle-for-edge-network/) in the product documentation.
 
 

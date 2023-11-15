@@ -8,6 +8,10 @@ exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
 
 Learn how to configure a tag property in the [!UICONTROL Data Collection] interface.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 Tags in Adobe Experience Platform are the next generation of tag management capabilities from Adobe. Tags give customers a simple way to deploy and manage all of the analytics, marketing, and advertising tags necessary to power relevant customer experiences. Learn more about [tags](https://experienceleague.adobe.com/docs/experience-platform/tags/home.html) in the product documentation.
 
 ## Prerequisites

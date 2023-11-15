@@ -8,6 +8,10 @@ exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
 
 Learn how to implement consent in a mobile app.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 The Adobe Experience Platform Consent mobile extension enables consent preferences collection from your mobile app when using the Adobe Experience Platform Mobile SDK and the Edge Network extension. Learn more about the [Consent extension](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), in the documentation.
 
 ## Prerequisites
