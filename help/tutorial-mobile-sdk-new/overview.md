@@ -79,7 +79,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required user-
 
 ## Download the Luma app
 
-Two versions of the sample app are available for download. Both versions can be downloaded / cloned from [GitHub](https://git.corp.adobe.com/rmaur/Luma). You will find two folders:
+Two versions of the sample app are available for download. Both versions can be downloaded / cloned from [GitHub](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). You will find two folders:
 
 
 1. [Start](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a project without code or with placeholder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
