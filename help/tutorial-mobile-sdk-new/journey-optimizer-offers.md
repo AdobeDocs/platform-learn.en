@@ -13,7 +13,7 @@ Learn how to show offers from Journey Optimizer Decision Management in your mobi
 
 Journey Optimizer Decision Management helps you to deliver the best offer and experience to your customers across all touchpoints  at the right time. Once designed, target your audience with personalized offers.
 
-![Architecture](assets/architecture-od.png)
+![Architecture](assets/architecture-ajo.png)
 
 Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform. As a result, it enables you to send your customers the right offer at the right time. See [About Decision Management](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) for more information. 
 
@@ -53,11 +53,11 @@ In this lesson, you will
 
 ### Update datastream configuration
 
-To ensure data send from your mobile app to the Edge Network is forwarded to Journey Optimizer - Decision Management, update your Experience Edge configuration .
+To ensure data sent from your mobile app to Platform Edge Network is forwarded to Journey Optimizer - Decision Management, update your datastream.
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
-1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. If you also follow the Target lesson, you should select **[!UICONTROL Personalization Destinations]** as well. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. If you will do the Target lesson, select **[!UICONTROL Personalization Destinations]**, too. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
    ![AEP datastream configuration](assets/datastream-aep-configuration-offers.png)
@@ -82,7 +82,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Select your schema to open it.
 1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to Field groups.
-1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers: what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson). But also what is happening with the offer: is it displayed, interacted with, dismissed, and so forth.
+1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers: what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson). But also what is happening with the offer? Is it displayed, interacted with, dismissed, and so forth.
    ![Proposition](assets/schema-fieldgroup-proposition.png)
 1. Select **[!UICONTROL Save]** to save the changes to your schema.
 
@@ -102,11 +102,11 @@ To validate your setup in Assurance:
 
 Before you can actually create offers, you have to define how and where these offers can be placed in the mobile app. In Decision Management, you define placements for this purpose and you will define a placement for the mobile channel that supports a JSON payload:
 
-1. In the Journey Optimizer UI, select select ![Components](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Components]** from **[!UICONTROL DECISION MANAGEMENT]** in the left rail.
+1. In the Journey Optimizer UI, select ![Components](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Components]** from **[!UICONTROL DECISION MANAGEMENT]** in the left rail.
 
 1. Select **[!UICONTROL Placements]** from the top bar. 
    
-1. If no placement with name **[!UICONTROL Mobile JSON]**,  **[!UICONTROL Mobile]** as **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** as **[!UICONTROL Content type]** is  listed, you need to create a placement. Otherwise, continue to [Create offers](#create-offers).
+1. If no placement with name **[!UICONTROL Mobile JSON]**,  **[!UICONTROL Mobile]** as **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** as **[!UICONTROL Content type]** is  listed, you must create a placement. Otherwise, continue to [Create offers](#create-offers).
 
 To create the Mobile JSON placement: 
 
@@ -139,7 +139,7 @@ To create the Mobile JSON placement:
             ```json
             { 
                 "title": "Juno Jacket",
-                "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performanc Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
+                "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
                 "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
             }  
             ```
@@ -172,39 +172,37 @@ To create the Mobile JSON placement:
        | Luma - Affirm Water Bottle | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
        | Luma - Desiree Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
        | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-       | Luma - Aero Daily Fitness Tee | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
+       | Luma - Aero Daily Fitness Tee | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
 
        {style="table-layout:fixed"}
 
 1. As a final step you must create a fallback offer, which is an offer sent to customers if they are not eligible for other offers.
    1. Select **[!UICONTROL Create offer]**.
-   1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create new personalized offer]**:
-   1. Enter a **[!UICONTROL Name]** for the offer, for example `Luma - Fallback Offer`, and enter a **[!UICONTROL Start date and time]** and an **[!UICONTROL End date and time]**.
-   1. Select **[!UICONTROL Next]**.
+   1. In the **[!UICONTROL New offer]** dialog, select **[!UICONTROL Personalized offer]** and select **[!UICONTROL Next]**.
+   1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create new fallback offer]**, enter a **[!UICONTROL Name]** for the offer, for example `Luma - Fallback Offer`, and select **[!UICONTROL Next]**.
 
-1. In the **[!UICONTROL Add representations]** step of the **[!UICONTROL Create new personalized offer]** screen:
-   1. Select ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** from **[!UICONTROL Channel]** list, and select **[!UICONTROL Mobile JSON]** from **[!UICONTROL Placement]** list.
-   1. Select **[!UICONTROL Custom]** for **[!UICONTROL Content]**.
-   1. Select **[!UICONTROL Add content]**. In the **[!UICONTROL Add personalization]** dialog:
-      1. Enter the following JSON:
-   
+   1. In the **[!UICONTROL Add representations]** step of  **[!UICONTROL Create new fallback offer]**:
+      1. Select ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** from **[!UICONTROL Channel]** list, and select **[!UICONTROL Mobile JSON]** from **[!UICONTROL Placement]** list.
+      1. Select **[!UICONTROL Custom]** for **[!UICONTROL Content]**.
+      1. Select **[!UICONTROL Add content]**. 
+      1. In the **[!UICONTROL Add personalization]** dialog, enter the following JSON and select **[!UICONTROL Save]**:
+      
             ```json
             {  
-                "title": "Luma",
-                "text": "Your store for sports wear and equipment.", 
-                "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+               "title": "Luma",
+               "text": "Your store for sports wear and equipment.", 
+               "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
             }  
             ```
 
-      1. Select **[!UICONTROL Save]**.
-   1. Select **[!UICONTROL Next]**.
+      1. Select **[!UICONTROL Next]**.
 
 
-1. In the **[!UICONTROL Review]** step of **[!UICONTROL Create new personalized]** offer:
+1. In the **[!UICONTROL Review]** step of **[!UICONTROL Create new fallback]** offer:
    1. Review the offer, then select **[!UICONTROL Finish]**.
    1. In the **[!UICONTROL Save offer]** dialog, select **[!UICONTROL Save and approve]**.
 
-You should now have the following list of offers.
+You should now have the following list of offers:
 ![Offers list](assets/ajo-offers-list.png)
 
 
@@ -244,7 +242,7 @@ See [Key steps to create and manage offers](https://experienceleague.adobe.com/d
    1. Select **[!UICONTROL Next]**.
 
 1. In the **[!UICONTROL Add decision scopes]** step of **[!UICONTROL Create a new offer decision]**:
-   1. Select **[!UICONTROL  Mobile JSON]** from **[!UICONTROL Placement]** list.
+   1. Select **[!UICONTROL Mobile JSON]** from **[!UICONTROL Placement]** list.
    1. In the **[!UICONTROL Evaluation Criteria]** tile, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]**.
       1. In the **[!UICONTROL Add Offer Collection]** dialog, select your offer collection. For example, **[!DNL Luma - Mobile App Collection]**.
       1. Select **[!UICONTROL Add]**.
@@ -286,7 +284,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
 
-1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios.git) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPOptimize` is part of your list of imports.
 
@@ -311,6 +309,8 @@ As discussed in previous lessons, installing a mobile tag extension only provide
         Assurance.self
     ]
     ```
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL decisions]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details you copied from the Journey Optimizer interface.
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` function. Add the following code:
 
@@ -342,7 +342,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
        ]
        ```
 
-      However, you can use any kind of implementation to ensure the Optimize APIs do get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation.
+      However, you can use any kind of implementation to ensure the Optimize APIs get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation.
    * calls two APIs: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  These functions clear any cached propositions and update the propositions for this profile.
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
@@ -350,9 +350,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     * retrieves the propositions for the current profile based on the decision scope (which you have defined in Journey Optimizer - Decision Management), 
     * retrieves the offer from the proposition,
     * unwraps the content of the offer so it can be displayed properly in the app, and
-    * triggers the `displayed()` action on the offer which will send an event back to the Edge Network informing the offer is displayed. 
+    * triggers the `displayed()` action on the offer which sends an event back to the Edge Network informing the offer is displayed. 
 
-1. Still in **[!DNL EdgeOffersView]**, add the following code to the `.onFirstAppear` modifier. This code will ensure the callback for updating the offers is registered only once.
+1. Still in **[!DNL EdgeOffersView]**, add the following code to the `.onFirstAppear` modifier. This code ensures that the callback for updating the offers is registered only once.
 
     ```swift
     // Invoke callback for offer updates
@@ -361,7 +361,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     }
     ```
 
-1. Still in **[!UICONTROL EdgeOffersView]**, add the following code to the `.task` modifier. This code will update the offers when the view is refreshed.
+1. Still in **[!UICONTROL EdgeOffersView]**, add the following code to the `.task` modifier. This code updates the offers when the view is refreshed.
 
     ```swift
     // Clear and update offers
@@ -404,10 +404,12 @@ You should now have all the tools to start adding more functionality to your Jou
 
 * apply different parameters to your offers (for example, priority, capping)
 * collect profile attributes in the app (see [Profile](profile.md)) and use these profile attributes to build audiences. Then use these audiences as part of the eligibility rules in your decision.
-* combine more than one decision scopes.
+* combine more than one decision scope.
 
 >[!SUCCESS]
 >
->You have enabled the app to display offers using the Journey Optimizer - Decisioning extension for the Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have enabled the app to display offers using the Journey Optimizer - Decisioning extension for the Experience Platform Mobile SDK.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Perform A/B tests](target.md)**

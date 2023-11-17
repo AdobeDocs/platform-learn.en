@@ -47,7 +47,7 @@ In addition to the general [SDK installation](install-sdks.md), you completed in
    }
    ```
 
-    This code starts an assurance session when the app is in the background and openend using a deep link.
+    This code starts an assurance session when the app is in the background and opened using a deep link.
 
 More information can be found [here](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
@@ -87,7 +87,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`.<br/>Similarly, use a unique URL scheme, and replace the already provided `lumatutorialswiftui` with your unique URL scheme.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`.<br/>Similarly, use a unique URL scheme, and replace the already provided `lumatutorialswiftui` with your unique URL scheme.
 
 To learn more about URL Schemes in iOS, review [Apple's documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
@@ -105,7 +105,7 @@ In Xcode:
    >Optionally, you might want to 'clean' your build, especially when you see unexpected results. To do this, select **[!UICONTROL Clean Build Folder…]** from the Xcode **[!UICONTROL Product]** menu. 
 
    
-1. In the **[!UICONTROL Allow "Luma App" to to use your location]** dialog, select **[!UICONTROL Allow While Using App]**.
+1. In the **[!UICONTROL Allow "Luma App" to use your location]** dialog, select **[!UICONTROL Allow While Using App]**.
  
    <img src="assets/geolocation-permissions.png" width=300>
 
@@ -117,7 +117,7 @@ In Xcode:
  
    <img src="assets/tracking-continue.png" width=300>
 
-1. In the **[!UICONTROL Allow "Luma App" to track your activity across other companies' app and websites]** dialog, select **[!UICONTROL Allow]**.
+1. In the **[!UICONTROL Allow "Luma App" to track your activity across other companies' apps and websites]** dialog, select **[!UICONTROL Allow]**.
  
    <img src="assets/tracking-allow.png" width=300>
 
@@ -135,7 +135,7 @@ In your browser:
    
    If you're using a physical device: 
 
-   * Select **[!UICONTROL Scan QR Code]**. Use your camera on your physical device to scan the QR code and tap the link to open the app.
+   * Select **[!UICONTROL Scan QR Code]**. To open the app, use the camera on your physical device to scan the QR code and tap the link.
 
      ![assurance qa code](assets/assurance-qr-code.png)
 
@@ -165,7 +165,7 @@ In your browser:
 
          ![assurance events](assets/assurance-events.png)
 
-If you run into any challenges, please review the [technical](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
+If you run into any challenges, review the [technical](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 
 ## Verify extensions
@@ -180,16 +180,16 @@ To verify whether your app is using the most up-to-date extensions:
 
    ![Configure extension versions](assets/assurance-configure-extension-versions.png)
 
-1. Select ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]**. You will see an overview of the latest extensions available and the extensions used in your version of the app.
+1. Select ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]** to see an overview of the latest extensions available and the extensions used in your version of the app.
 
    ![Extension versions](assets/assurance-extension-versions.png)
 
-1. To update your extension versions (for example **[!UICONTROL Messaging]** and **[!UICONTROL Optimize]**), in Xcode, for the specific extensions that needs an upgrade, select the package (extension) from **[!UICONTROL Package Dependencies]** (e.g. **[!UICONTROL AEPMessaging]**) and from the context menu select **[!UICONTROL Update Package]**. Xcode will update the package dependencies.
+1. To update your extension versions (for example, **[!UICONTROL Messaging]** and **[!UICONTROL Optimize]**) select the package (extension) from **[!UICONTROL Package Dependencies]** (for example, **[!UICONTROL AEPMessaging]**) and from the context menu select **[!UICONTROL Update Package]**. Xcode will update the package dependencies.
 
 
 >[!NOTE]
 >
->When you have updated your extensions (packages) in Xcode, you need to close and delete your current session and repeat all steps from [Connecting to a session](#connecting-to-a-session) and [Verify extensions](#verify-extensions) to ensure Assurance properly reports the correct extensions in a new Assurance session.
+>Once you have updated your extensions (packages) in Xcode, close and delete your current session and repeat all steps from [Connecting to a session](#connecting-to-a-session) and [Verify extensions](#verify-extensions) to ensure Assurance properly reports the correct extensions in a new Assurance session.
 
 
 
@@ -197,7 +197,9 @@ To verify whether your app is using the most up-to-date extensions:
 
 >[!SUCCESS]
 >
->You have now set up your app to use Assurance for the remainder of the tutorial.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>You have now set up your app to use Assurance for the remainder of the tutorial.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 
 Next: **[Implement Consent](consent.md)**

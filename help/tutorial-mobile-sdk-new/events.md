@@ -165,7 +165,7 @@ To implement the sending of commerce-related experience events in a reusable way
       1. For <img src="assets/saveforlater.png" width=15/>:
 
             ```swift
-            // Send saveForLaters commerce experience event
+            // Send saveForLater commerce experience event
             MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
             ```
 
@@ -179,13 +179,13 @@ To implement the sending of commerce-related experience events in a reusable way
       1. For <img src="assets/purchase.png" width=20/>:
 
             ```swift
-            // Send purchases commerce experience event
+            // Send purchase commerce experience event
             MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
             ```
 
 >[!TIP]
 >
->In case you are developing for Android, use Map (`java.util.Map`) as the foundational interface to construct your XDM payload.
+>In case you are developing for Android&trade;, use Map (`java.util.Map`) as the foundational interface to construct your XDM payload.
 
 
 ### Custom field groups 
@@ -333,10 +333,10 @@ Again, lets actually implement this code in your Xcode project.
 
 ## Validation
 
-1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device with Assurance.
 
    1. Move the Assurance icon to the left.
-   1. Select **[!UICONTROL Home]** in the tab bar and verify you see an **[!UICONTROL ECID]**, **[!UICONTROL Email]** and **[!UICONTROL CRM ID]** in the Home screen.
+   1. Select **[!UICONTROL Home]** in the tab bar and verify you see an **[!UICONTROL ECID]**, **[!UICONTROL Email]**, and **[!UICONTROL CRM ID]** in the Home screen.
    1. Select **[!DNL Products]** in the tab bar.
    1. Select a product.
    1. Select <img src="assets/saveforlater.png" width=15/>.
@@ -367,10 +367,12 @@ You should now have all the tools to start adding data collection to your app. Y
 
 ## Send events to Analytics and Platform
 
-Now that you have collected the events and sent them to Platform Edge Network, they are sent to the applications and services configured in your [datastream](create-datastream.md). In later lessons, you map this data to [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md) and other Adobe Experience Cloud solutions like [Adobe Target](target.md) and Adobe Journey Optimizer. 
+Now that you have collected the events and sent them to Platform Edge Network, they are sent to the applications and services configured in your [datastream](create-datastream.md). In later lessons, you map this data to [Adobe Analytics](analytics.md), [Adobe Experience Platform](platform.md), and other Adobe Experience Cloud solutions like [Adobe Target](target.md) and Adobe Journey Optimizer. 
 
 >[!SUCCESS]
 >
->You have now set up your app to track commerce, app interaction, and screen tracking events to the Adobe Experience Platform Edge Network and all services you have defined in your datastream.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have now set up your app to track commerce, app interaction, and screen tracking events to the Adobe Experience Platform Edge Network and all services you have defined in your datastream.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Handle WebViews](web-views.md)**

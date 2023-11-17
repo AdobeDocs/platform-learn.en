@@ -63,7 +63,7 @@ All data that is successfully ingested into Adobe Experience Platform is persist
 
 ## Add Adobe Experience Platform datastream service
 
-To send your XDM data from the Edge Network to Adobe Experience Platform, you configure the Adobe Experience Platform service to the datastream you set up as part of [Create a datastream](create-datastream.md).
+To send your XDM data from the Edge Network to Adobe Experience Platform, add the Adobe Experience Platform service to the datastream you set up as part of [Create a datastream](create-datastream.md).
 
 >[!IMPORTANT]
 >
@@ -163,6 +163,6 @@ There is a lot more that marketers and analytics can do with data captured in Ex
 
 >[!SUCCESS]
 >
->You have now set up your app to send data not only to the Edge Network but also to Adobe Experience Platform.<br>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have now set up your app to send data not only to the Edge Network but also to Adobe Experience Platform.<br>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Create and send push notifications](journey-optimizer-push.md)**

@@ -33,7 +33,7 @@ In this lesson, you will:
 
 It would be helpful for targeting and / or personalization in the app to quickly know if a user has made a purchase in the past or recently. Let's set that up in the Luma app.
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttributes(attributeName: String, attributeValue: String)` function. Add the following code:
 
     ```swift
     // Create a profile map, add attributes to the map and update profile using the map
@@ -54,7 +54,7 @@ It would be helpful for targeting and / or personalization in the app to quickly
 
     ```swift
     // Update attributes
-    MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
     ```
 
 
@@ -109,7 +109,7 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
    
       <img src="./assets/mobile-app-events-3.png" width=300> 
 
-   1. Return back to **[!UICONTROL Home]** screen. You should see a badge added <img src="assets/person-badge-icon.png" width=15/>.
+   1. Return back to **[!UICONTROL Home]** screen. You should see that a badge has been added <img src="assets/person-badge-icon.png" width=15/>.
        
        <img src="./assets/personbadges.png" width=300>
 
@@ -120,6 +120,8 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
 
 >[!SUCCESS]
 >
->You have now set up your app to update attributes of profiles in the Edge Network and (when set up) with Adobe Experience Platform.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have now set up your app to update attributes of profiles in the Edge Network and (when set up) with Adobe Experience Platform.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Use Places](places.md)**

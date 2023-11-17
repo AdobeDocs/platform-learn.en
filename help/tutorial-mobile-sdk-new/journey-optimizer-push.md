@@ -11,7 +11,7 @@ exl-id: 37d5b52e-c0d0-4ca1-9629-5c3dd2b2a5d5
 
 Learn how to create push notifications for mobile apps with Experience Platform Mobile SDK and Journey Optimizer.
 
-Journey Optimizer allows you to create journeys and send messages to targeted audiences. Before you send push notifications with Journey Optimizer, you must ensure that the proper configurations and integrations are in place. To understand the Push Notifications data flow in  Journey Optimizer, refer to the [documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-gs.html).
+Journey Optimizer allows you to create journeys and send messages to targeted audiences. Before you send push notifications with Journey Optimizer, you must ensure that the proper configurations and integrations are in place. To understand the Push Notifications data flow in  Journey Optimizer, refer to the [documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-gs.html).
 
 ![Architecture](assets/architecture-ajo.png)
 
@@ -24,12 +24,12 @@ Journey Optimizer allows you to create journeys and send messages to targeted au
 
 * Successfully built and run the app with SDKs installed and configured.
 * Set up the app for Adobe Experience Platform.
-* Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Journey Optimizer features.
+* Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Journey Optimizer features.
   * Create an app surface. 
   * Create a journey.
   * Create a message.
   * Create message presets.
-* Paid Apple developer account with sufficient access to create certificates, identifiers, and keys.
+* **Paid Apple developer account** with sufficient access to create certificates, identifiers, and keys.
 * Physical iOS device or simulator for testing.
 
 ## Learning objectives
@@ -111,7 +111,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 ### Install Journey Optimizer tags extension
 
-For your app to work with Journey Optimizer, you need to update your tag property.
+For your app to work with Journey Optimizer, you must update your tag property.
 
 1. Navigate to **[!UICONTROL Tags]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**, 
 1. Open your property, for example **[!DNL Luma Mobile App Tutorial]**.
@@ -153,7 +153,7 @@ For your app to work with Journey Optimizer, you need to update your tag propert
 
 ## Signing
 
-Signing the Luma app is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+Signing the Luma app is needed to send push notifications and **requires a paid Apple developer account**.
 
 To update the signing for your app:
 
@@ -165,7 +165,7 @@ To update the signing for your app:
  
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
     ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
@@ -177,15 +177,15 @@ To update the signing for your app:
 >
 >To implement and test push notification in an iOS app, you must have a **paid** Apple developer account. If you do not have a paid Apple developer account, you can skip the remainder of this lesson.
 
-1. In Xcode, select **[!DNL Luma]** from the **[!UICONTROL TARGETS]** list, select the **[!UICONTROL Signing & Capabilities]** tab, select the **[!UICONTROL + Capability]** button, then select **[!UICONTROL Push Notifications]**. This will enable your app to receive push notifications.
+1. In Xcode, select **[!DNL Luma]** from the **[!UICONTROL TARGETS]** list, select the **[!UICONTROL Signing & Capabilities]** tab, select the **[!UICONTROL + Capability]** button, then select **[!UICONTROL Push Notifications]**. This enables your app to receive push notifications.
 
-1. Next, you'll need to add a Notification Extension to the app. Go back to the **[!DNL General]** tab and select the **[!UICONTROL +]** icon at the bottom of the **[!UICONTROL TARGETS]** section.
+1. Next, you must add a Notification Extension to the app. Go back to the **[!DNL General]** tab and select the **[!UICONTROL +]** icon at the bottom of the **[!UICONTROL TARGETS]** section.
 
-1. You'll be prompted to select the template for your new target. Select **[!UICONTROL Notification Service Extension]** then select **[!UICONTROL Next]**.
+1. You are prompted to select the template for your new target. Select **[!UICONTROL Notification Service Extension]** then select **[!UICONTROL Next]**.
 
 1. In the next window, use `NotificationExtension` as the name of the extension and click the **[!UICONTROL Finish]** button.
 
-You should now have an push notification extension added to your app, similar to the screen below.
+You should now have a push notification extension added to your app, similar to the screen below.
 
 ![Pusn nofitications extension](assets/xcode-signing-capabilities-pushnotifications.png)
 
@@ -199,7 +199,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
  
-1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPMessaging` is part of your list of imports.
 
@@ -245,7 +245,7 @@ To create your own push notification, you must define an event in Journey Optimi
 
 ### Update your schema
 
-You are going to define a new event type, not available yet as part of the list of events that are defined in your schema. You will use this event type later when triggering push notifications.
+You are going to define a new event type, not available yet as part of the list of events that are defined in your schema. You use this event type later when triggering push notifications.
 
 1. In the Journey Optimizer UI, select **[!UICONTROL Schemas]** from the left rail.
 1. Select **[!UICONTROL Browse]** in the tab bar.
@@ -259,7 +259,7 @@ You are going to define a new event type, not available yet as part of the list 
 
 ### Define an event
 
-Events in Journey Optimizer allow you to trigger your journeys unitarily to send messages, like for example push notifications. See [About events](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) for more information.
+Events in Journey Optimizer allow you to trigger your journeys unitarily to send messages, for example push notifications. See [About events](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configure-journeys/events-journeys/about-events.html?lang=en) for more information.
 
 1. In the Journey Optimizer UI, select **[!UICONTROL Configurations]** from the left rail.
 
@@ -298,7 +298,7 @@ Events in Journey Optimizer allow you to trigger your journeys unitarily to send
    1. Select **[!UICONTROL Save]**.
       ![Edit event step 2](assets/ajo-edit-event2.png) 
 
-You just created an event configuration that is based on the mobile app experience events schema you created earlier as part of this tutorial. This event configuration will filter incoming experience events using your specific event type (`application.test`), so you ensure only events with that specific type, initiated from your mobile app, will trigger the journey you build in the next step. In a real world scenario you might want to send push notifications from an external service, however the same concepts apply: from the external application send an experience event into Experience Platform that has specific fields you can use to apply conditions on before these events trigger a journey.
+You just created an event configuration that is based on the mobile app experience events schema you created earlier as part of this tutorial. This event configuration will filter incoming experience events using your specific event type (`application.test`), so only events with that specific type, initiated from your mobile app, will trigger the journey you build in the next step. In a real-world scenario you might want to send push notifications from an external service, however the same concepts apply: from the external application send an experience event into Experience Platform that has specific fields you can use to apply conditions on before these events trigger a journey.
 
 ### Create the journey
 
@@ -419,6 +419,8 @@ You should now have all the tools to handle push notifications in your app. For 
 
 >[!SUCCESS]
 >
->You have now enabled the app for push notification using Journey Optimizer and the Journey Optimizer extension for the Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have now enabled the app for push notification using Journey Optimizer and the Journey Optimizer extension for the Experience Platform Mobile SDK.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Create and send in-app messages](journey-optimizer-inapp.md)**
