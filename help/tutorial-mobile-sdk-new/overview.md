@@ -9,7 +9,7 @@ exl-id: 378bdf5d-c3ce-4a4c-b188-ab9e8265627f
 
 Learn how to implement Adobe Experience Cloud applications in your mobile app using Adobe Experience Platform Mobile SDK.
 
-Experience Platform Mobile SDK is a client-side SDK that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/) for more detailed information.
+Experience Platform Mobile SDK is a client-side SDK that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/home/) for more detailed information.
 
 ![Architecture](assets/architecture.png)
 
@@ -61,39 +61,39 @@ In these lessons, it is assumed that you have an Adobe Id and the required user-
   * **[!UICONTROL Identity Management]**&mdash;permission items to manage and view identity namespaces.
   * **[!UICONTROL Data Collection]**&mdash;permission items to manage and view datastreams.
 
-  * If you are the customer of a Platform-based application like Real-Time CDP, Journey Optimizer, or Customer Journey Analytics, and will be completing the related lessons you should also have:
+  * If you are the customer of a Platform-based application like Real-Time CDP, Journey Optimizer, or Customer Journey Analytics, and will do the related lessons you should also have:
     * **[!UICONTROL Data Management]**&mdash;permission items to manage and view datasets.
     * A development **sandbox** which you can use for this tutorial.
   
-  * For the Journey Optimizer lessons, you need permissions to configure the **push notification service** and to create an **app surface**, a **journey**, a **message** and **message presets**. For Decision Management, you need the proper permissions to **manage offers** and **decisions** as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+  * For the Journey Optimizer lessons, you need permissions to configure the **push notification service** and to create an **app surface**, a **journey**, a **message**, and **message presets**. For Decision Management, you need the proper permissions to **manage offers** and **decisions** as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 * For Adobe Analytics, you must know which **report suites** you can use to complete this tutorial.
 
-* For Adobe Target, you must have permissions to create and activate activities.
+* For Adobe Target, you must have permission to create and activate activities.
 
 
 >[!NOTE]
 >
->As part of this tutorial, you will create schemas, datasets, identities, etc. If you are going through this tutorial with multiple persons on a single sandbox or you are using a shared account, consider appending or prepending an identification as part of your naming conventions when creating these objects. For example, add ` - <your name or initials>` to the name of the object you are instructed to create.
+>As part of this tutorial, you create schemas, datasets, identities, and so on. If multiple people are going through this tutorial in a single sandbox, consider appending or prepending an identification as part of your naming conventions when creating these objects. For example, add ` - <your name or initials>` to the name of the object you are instructed to create.
 
 
 ## Download the Luma app
 
-Two versions of the sample app are available for download. Both version can be downloaded / cloned from [Github](https://git.corp.adobe.com/rmaur/Luma). You will find two folders:
+Two versions of the sample app are available for download. Both versions can be downloaded / cloned from [GitHub](https://git.corp.adobe.com/rmaur/Luma). You will find two folders:
 
 
-1. [Start](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
+1. [Start](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: a project without code or with placeholder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
 1. [Finish](https://git.corp.adobe.com/Luma){target="_blank"}: a version with the full implementation for reference.
 
 >[!NOTE]
 >
->You will use iOS as the platform, [!DNL Swift] as the programming language, [!DNL SwiftUI] as the UI framework and [!DNL Xcode] as the integrated development enviromnent (IDE). However, many of the implementation concepts explained are similar for other development platforms. And many have already successfully completed this tutorial with litte to no previous iOS/Swift(UI) experience. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
+>You use iOS as the platform, [!DNL Swift] as the programming language, [!DNL SwiftUI] as the UI framework and [!DNL Xcode] as the integrated development environment (IDE). However, many of the implementation concepts explained are similar for other development platforms. Many have already successfully completed this tutorial with little to no previous iOS/Swift(UI) experience. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
 
 
 Let's get started!
 
 >[!SUCCESS]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Create an XDM schema](create-schema.md)**

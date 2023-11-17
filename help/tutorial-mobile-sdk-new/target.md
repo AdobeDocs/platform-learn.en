@@ -9,9 +9,9 @@ exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
 ---
 # Optimize and personalize with Adobe Target
 
-Learn how to optimize and personalize the experiencies in your mobile apps with Platform Mobile SDK and Adobe Target.
+Learn how to optimize and personalize the experiences in your mobile apps with Platform Mobile SDK and Adobe Target.
 
-Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. Target can perform A/B tests, multivariate tests, recommend products and content, target content, auto-personalize content with AI, and much more. The focus in this lesson is on the A/B test functionality of Target.  See the [A/B Test overview](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) for more information. 
+Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. Target can perform A/B tests, multivariate tests, recommend products and content, target content, auto-personalize content with AI, and much more. The focus in this lesson is on the A/B test functionality of Target. See the [A/B Test overview](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) for more information. 
 
 ![Architecture](assets/architecture-at.png)
 
@@ -60,7 +60,7 @@ To ensure data send from your mobile app to Experience Platform Edge Network is 
 
    You can find your properties in the Target UI, in **[!UICONTROL Administration]** > **[!UICONTROL Properties]**. Select ![Code](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Code_18_N.svg) to reveal the property token for the property you want to use. The property token has a format like `"at_property": "xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx"`; you must only enter the value `xxxxxxxx-xxxx-xxxxx-xxxx-xxxxxxxxxxxx`.
 
-   Optionally, you can specify a Target Environment ID. Target uses environments to organize your sites and pre-production environments for easy management and seperated reporting. The preset environments include Production, Staging, and Development. See [Environments](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) and [Target Environment ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) for more information.
+   Optionally, you can specify a Target Environment ID. Target uses environments to organize your sites and pre-production environments for easy management and separate reporting. The preset environments include Production, Staging, and Development. See [Environments](https://experienceleague.adobe.com/docs/target/using/administer/environments.html?lang=en) and [Target Environment ID](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-environment-id) for more information.
 
    Optionally, you can specify a Target third-party ID namespace to support profile syncing on an identity namespace (for example CRM ID). See [Target Third Party ID namespace](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/applications-setup/setup-target.html?lang=en#target-third-party-id-namespace) for more information.
 
@@ -75,7 +75,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
-1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Personalization Destinations]** are selected. If you also follow the Journey Optimizer lessons, you should select **[!UICONTROL Adobe Journey Optimizer]** as well. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure that **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Personalization Destinations]** are selected. If you also follow the Journey Optimizer lessons, you select **[!UICONTROL Adobe Journey Optimizer]**. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
    ![AEP datastream configuration](assets/datastream-aep-configuration-target.png)
@@ -98,7 +98,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Select your schema to open it.
 1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to **[!UICONTROL Field groups]**.
-1. In the Add fields groups dialog, search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**.
+1. In the **[!UICONTROL Add field groups]** dialog, search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**.
    ![Proposition](assets/schema-fieldgroup-proposition.png)
 1. To save the changes to your schema, select **[!UICONTROL Save]**.
 
@@ -115,7 +115,7 @@ To validate your setup in Assurance:
 
 ## Create an A/B Test
 
-There are many types of activities you can create in Adobe Target and implement in a mobile app, as mentioned in the introduction. For this lesson, you will focus on creating an implementing an A/B test.
+There are many types of activities you can create in Adobe Target and implement in a mobile app, as mentioned in the introduction. For this lesson, you will implement an A/B test.
 
 1. In the Target UI, select **[!UICONTROL Activities]** from the top bar.
 1. Select **[!UICONTROL Create Activity]** and **[!UICONTROL A/B Test]** from the context menu.
@@ -186,7 +186,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
 
-1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios.git) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPOptimize` is part of your list of imports.
 
@@ -236,9 +236,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test),
    * retrieves the offer from the proposition,
    * unwraps the content of the offer so it can be displayed properly in the app, and
-   * triggers the `displayed()` action on the offer which will send an event back to the Edge Network informing the offer is displayed. 
+   * triggers the `displayed()` action on the offer which sends an event back to Platform Edge Network informing the offer is displayed. 
 
-1. Still in **[!DNL TargetOffersView]**, add the following code to the `.onFirstAppear` modifier. This code will ensure the callback for updating the offers is registered only once.
+1. Still in **[!DNL TargetOffersView]**, add the following code to the `.onFirstAppear` modifier. This code ensures the callback for updating the offers is registered only once.
 
     ```swift
     // Invoke callback for offer updates
@@ -247,7 +247,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     }
     ```
 
-1. Still in **[!DNL TargetOffersView]**, add the following code to the `.task` modifier. This code will update the offers when the view is refreshed.
+1. Still in **[!DNL TargetOffersView]**, add the following code to the `.task` modifier. This code updates the offers when the view is refreshed.
 
     ```swift
     // Clear and update offers
@@ -283,10 +283,12 @@ To validate the A/B test in Assurance:
 
 ## Next steps
 
-You should now have all the tools to start adding more A/B tests or other Target activities (such as Experience Targeting, Multivariate Test), where relevant and applicable, to your app. There is more in depth information available in the [Github repo for the Optimize extension](https://github.com/adobe/aepsdk-optimize-ios) where you can also find a link to a dedicated [tutorial](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) on how to track Adobe Target offers.
+You should now have all the tools to start adding more A/B tests or other Target activities (such as Experience Targeting, Multivariate Test), where relevant and applicable, to your app. There is more in-depth information available in the [GitHub repo for the Optimize extension](https://github.com/adobe/aepsdk-optimize-ios) where you can also find a link to a dedicated [tutorial](https://opensource.adobe.com/aepsdk-optimize-ios/#/tutorials/README) on how to track Adobe Target offers.
 
 >[!SUCCESS]
 >
->You have enabled the app for A/B tests and displayed the results of an A/B test using Adobe Target and the Adobe Journey Optimizer - Decisioning extension for the Adobe Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have enabled the app for A/B tests and displayed the results of an A/B test with Adobe Target and the Adobe Journey Optimizer - Decisioning extension for the Adobe Experience Platform Mobile SDK.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Conclusion and next steps](conclusion.md)**

@@ -109,7 +109,7 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
    
       <img src="./assets/mobile-app-events-3.png" width=300> 
 
-   1. Return back to **[!UICONTROL Home]** screen. You should see a badge added <img src="assets/person-badge-icon.png" width=15/>.
+   1. Return back to **[!UICONTROL Home]** screen. You should see that a badge has been added <img src="assets/person-badge-icon.png" width=15/>.
        
        <img src="./assets/personbadges.png" width=300>
 
@@ -120,6 +120,8 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
 
 >[!SUCCESS]
 >
->You have now set up your app to update attributes of profiles in the Edge Network and (when set up) with Adobe Experience Platform.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have now set up your app to update attributes of profiles in the Edge Network and (when set up) with Adobe Experience Platform.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Use Places](places.md)**

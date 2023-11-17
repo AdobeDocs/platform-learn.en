@@ -17,7 +17,7 @@ The [event](events.md) data which you collected and sent to Platform Edge Networ
 
 * Understanding of ExperienceEvent tracking.
 * Successfully sending XDM data in your sample app.
-* An Adobe Analytics report suite you can use for this lesson.
+* An Adobe Analytics report suite that you can use for this lesson.
 
 ## Learning objectives
 

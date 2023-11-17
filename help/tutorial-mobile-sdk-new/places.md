@@ -48,7 +48,7 @@ You define some points of interest in the Places service.
    ![Create library](assets/places-create-library.png)
 1. To close the **[!UICONTROL Manage Libraries]** dialog, select **[!UICONTROL Close]**.
 1. Back in **[!UICONTROL POI Management]**, select **[!UICONTROL Import POIs]**.
-1. Select **[!UICONTROL Start]** in t**[!UICONTROL he Import Places]** dialog.
+1. Select **[!UICONTROL Start]** in the **[!UICONTROL Import Places]** dialog.
 1. Select **[!DNL Luma]** from the list of libraries,
 1. Select **[!UICONTROL Next]**.
     ![Select Library](assets/places-import-select-library.png)
@@ -166,7 +166,7 @@ Next, you are going to define rules to work with these data elements.
         ![Tags action](assets/tags-action-mobile-core.png)
 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to the **[!UICONTROL Mobile Core - Attach Data]** action.
-   1. Select **[!UICONTROL Adobe Experience Platform Edge Network]** from the **[!UICONTROL Extension]** list and select **[!UICONTROL Forward event to Edge Network]**. This action ensures that the event and additional payload data is forwarded to the Edge Network.
+   1. Select **[!UICONTROL Adobe Experience Platform Edge Network]** from the **[!UICONTROL Extension]** list and select **[!UICONTROL Forward event to Edge Network]**. This action ensures that the event and additional payload data are forwarded to Platform Edge Network.
    1. Select **[!UICONTROL Keep Changes]**.
 
 1. To save the rule, select **[!UICONTROL Save to Library]**.
@@ -234,9 +234,9 @@ To validate your setup in Assurance:
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Map & Simulate]** in the left rail.
 1. Move the map to a location of one of your POI's.
-1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulate Load POIs.  Your POI is identified using a circle and pin.
+1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulate Load POIs. Your POI is identified using a circle and pin.
 1. Select your POI.
-1. From the popup select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
+1. From the popup, select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
    ![Simulate Entry Event](assets/places-simulate.png)
 1. Select **[!UICONTROL Events]** from the left rail, and you should see the events that you simulated.
    ![AJO Decisioning validation](assets/places-events.png)
@@ -277,7 +277,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function.Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func processRegionEvent(regionEvent: PlacesRegionEvent, forRegion region: CLRegion) async` function. Add the following code:
 
     ```swift
     // Process geolocation event
@@ -312,7 +312,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Go to the **[!UICONTROL Location]** tab.
 
-1. Move (drag) the map around to ensure the blue middle circle is on above of one of your POI's, for example London.
+1. Move (drag) the map around to ensure that the blue middle circle is on above of one of your POI's, for example London.
 
 1. Tap <img src="assets/geobutton.png" width=20/> until you see the category and name appear in the label at the red location with the pin.
    
@@ -338,6 +338,8 @@ You have seen an implementation of functionality for your app, mostly driven by 
 
 >[!SUCCESS]
 >
->You have now enabled the app for geolocation services using the Places extension in the Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have now enabled the app for geolocation services using the Places extension in the Experience Platform Mobile SDK.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Map data to Adobe Analytics](analytics.md)**

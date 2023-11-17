@@ -82,7 +82,7 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 1. Select **[!UICONTROL Browse]** from the top bar.
 1. Select your schema to open it.
 1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to Field groups.
-1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers: what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson). But also what is happening with the offer: is it displayed, interacted with, dismissed, and so forth.
+1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers: what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson). But also what is happening with the offer? Is it displayed, interacted with, dismissed, and so forth.
    ![Proposition](assets/schema-fieldgroup-proposition.png)
 1. Select **[!UICONTROL Save]** to save the changes to your schema.
 
@@ -102,11 +102,11 @@ To validate your setup in Assurance:
 
 Before you can actually create offers, you have to define how and where these offers can be placed in the mobile app. In Decision Management, you define placements for this purpose and you will define a placement for the mobile channel that supports a JSON payload:
 
-1. In the Journey Optimizer UI, select select ![Components](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Components]** from **[!UICONTROL DECISION MANAGEMENT]** in the left rail.
+1. In the Journey Optimizer UI, select ![Components](https://spectrum.adobe.com/static/icons/workflow_18/Smock_OfferActivities_18_N.svg)  **[!UICONTROL Components]** from **[!UICONTROL DECISION MANAGEMENT]** in the left rail.
 
 1. Select **[!UICONTROL Placements]** from the top bar. 
    
-1. If no placement with name **[!UICONTROL Mobile JSON]**,  **[!UICONTROL Mobile]** as **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** as **[!UICONTROL Content type]** is  listed, you need to create a placement. Otherwise, continue to [Create offers](#create-offers).
+1. If no placement with name **[!UICONTROL Mobile JSON]**,  **[!UICONTROL Mobile]** as **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** as **[!UICONTROL Content type]** is  listed, you must create a placement. Otherwise, continue to [Create offers](#create-offers).
 
 To create the Mobile JSON placement: 
 
@@ -284,7 +284,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
 
-1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios.git) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPOptimize` is part of your list of imports.
 
@@ -350,9 +350,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     * retrieves the propositions for the current profile based on the decision scope (which you have defined in Journey Optimizer - Decision Management), 
     * retrieves the offer from the proposition,
     * unwraps the content of the offer so it can be displayed properly in the app, and
-    * triggers the `displayed()` action on the offer which will send an event back to the Edge Network informing the offer is displayed. 
+    * triggers the `displayed()` action on the offer which sends an event back to the Edge Network informing the offer is displayed. 
 
-1. Still in **[!DNL EdgeOffersView]**, add the following code to the `.onFirstAppear` modifier. This code will ensure the callback for updating the offers is registered only once.
+1. Still in **[!DNL EdgeOffersView]**, add the following code to the `.onFirstAppear` modifier. This code ensures that the callback for updating the offers is registered only once.
 
     ```swift
     // Invoke callback for offer updates
@@ -361,7 +361,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     }
     ```
 
-1. Still in **[!UICONTROL EdgeOffersView]**, add the following code to the `.task` modifier. This code will update the offers when the view is refreshed.
+1. Still in **[!UICONTROL EdgeOffersView]**, add the following code to the `.task` modifier. This code updates the offers when the view is refreshed.
 
     ```swift
     // Clear and update offers
@@ -404,10 +404,12 @@ You should now have all the tools to start adding more functionality to your Jou
 
 * apply different parameters to your offers (for example, priority, capping)
 * collect profile attributes in the app (see [Profile](profile.md)) and use these profile attributes to build audiences. Then use these audiences as part of the eligibility rules in your decision.
-* combine more than one decision scopes.
+* combine more than one decision scope.
 
 >[!SUCCESS]
 >
->You have enabled the app to display offers using the Journey Optimizer - Decisioning extension for the Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have enabled the app to display offers using the Journey Optimizer - Decisioning extension for the Experience Platform Mobile SDK.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Perform A/B tests](target.md)**

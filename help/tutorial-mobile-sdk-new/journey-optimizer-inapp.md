@@ -26,7 +26,7 @@ Before you send in-app messages with Journey Optimizer, you must ensure that the
 
 * Successfully built and run app with SDKs installed and configured.
 * Set up the app for Adobe Experience Platform.
-* Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Journey Optimizer features.
+* Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Also you need sufficient permission to the following Journey Optimizer features.
   * Manage campaigns.
 * Physical iOS device or simulator for testing.
 
@@ -79,7 +79,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 ### Install Journey Optimizer tags extension
 
-For your app to work with Journey Optimizer, you need to update your tag property.
+For your app to work with Journey Optimizer, you must update your tag property.
 
 1. Navigate to **[!UICONTROL Tags]** > **[!UICONTROL Extensions]** > **[!UICONTROL Catalog]**. 
 1. Open your property, for example **[!DNL Luma Mobile App Tutorial]**.
@@ -106,7 +106,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
 
-1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios.git) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPMessaging` is part of your list of imports.
 
@@ -238,10 +238,12 @@ You can validate your in-app messages in the Assurance UI.
 
 ## Next steps
 
-You should now have all the tools to start adding in-app messages, where relevant and applicable.  For example, promoting products based on specific interactions you are tracking in your app.
+You should now have all the tools to start adding in-app messages, where relevant and applicable. For example, promoting products based on specific interactions you are tracking in your app.
 
 >[!SUCCESS]
 >
->You have enabled the app for in-app messaging and added an in-app messaging campaign using Journey Optimizer and the Journey Optimizer extension for the Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have enabled the app for in-app messaging and added an in-app messaging campaign using Journey Optimizer and the Journey Optimizer extension for the Experience Platform Mobile SDK.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Create and display offers](journey-optimizer-offers.md)**

@@ -17,7 +17,7 @@ Learn how to handle data collection with WebViews in a mobile app.
 
 In this lesson, you will:
 
-* Understand why you must take special considerations for WebViews in your app.
+* Understand why you must take special consideration for WebViews in your app.
 * Understand the code required to prevent tracking issues.
 
 ## Potential tracking issues
@@ -86,7 +86,7 @@ To execute the code:
       adobe_mc=TS=1636526122|MCMID=79076670946787530005526183384271520749|MCORGID=7ABB3E6A5A7491460A495D61@AdobeOrg
       ```
 
-Unfortunately, debugging the web session is limited; you can not use the Adobe Experience Platform Debugger in your browser for example to continue debugging the webview session.
+Unfortunately, debugging the web session is limited. For example, you can't use the Adobe Experience Platform Debugger in your browser to continue debugging the webview session.
 
 >[!NOTE]
 >
@@ -95,6 +95,8 @@ Unfortunately, debugging the web session is limited; you can not use the Adobe E
 
 >[!SUCCESS]
 >
->You have now set up your app to show content based on a URL in a webview using the same ECID as the ECID already issued by the Adobe Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>You have now set up your app to show content based on a URL in a webview using the same ECID as the ECID already issued by the Adobe Experience Platform Mobile SDK.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Next: **[Identity](identity.md)**

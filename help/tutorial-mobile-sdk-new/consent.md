@@ -9,7 +9,7 @@ exl-id: 83f240ea-ea18-4986-9e89-5110a56167ce
 
 Learn how to implement consent in a mobile app.
 
-The Adobe Experience Platform Consent mobile extension enables consent preferences collection from your mobile app when using the Adobe Experience Platform Mobile SDK and the Edge Network extension. Learn more about the [Consent extension](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), in the documentation.
+The Adobe Experience Platform Consent mobile extension enables consent preferences collection from your mobile app when using the Adobe Experience Platform Mobile SDK and the Edge Network extension. Learn more about the [Consent extension](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) in the documentation.
 
 ## Prerequisites
 
@@ -29,7 +29,7 @@ If you followed the tutorial from the beginning, you might remember that you hav
 
 To begin collecting data, you must get consent from the user. In a real-world app, you would want to consult consent best practices for your region. In this tutorial, you get consent from the user by simply asking for it with an alert:
 
-1. You only want to ask the user once for consent. So you want to combine the Mobile SDK consent with the required authorizations for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume when the user authorizes tracking, the user also consents with collecting events.
+1. You only want to ask the user once for consent. You can do this by combining the Mobile SDK consent with the required authorization for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume that when the user authorizes tracking they consent to collecting events.
  
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator.
   
@@ -90,14 +90,16 @@ In the above example, you are simply logging the consent status to the console i
 
 ## Validate with Assurance
 
-1. Delete the application from your device or simulator as we want to properly reset and initialize the tracking and consent.
-1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
+1. Delete the application from your device or simulator to properly reset and initialize the tracking and consent.
+1. To connect your simulator or device to Assurance, review the [setup instructions](assurance.md#connecting-to-a-session) section.
 1. When moving in the app from **[!UICONTROL Home]** screen to **[!UICONTROL Products]** screen and back to **[!UICONTROL Home]** screen, you should see a **[!UICONTROL Get Consents Response]** event in the Assurance UI.
     ![validate consent](assets/consent-update.png)
 
 
 >[!SUCCESS]
 >
->You have now enabled your app to prompt the user at its initial start after installation (or reinstallation) to consent using the Adobe Experience Platform Mobile SDK.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>You have now enabled your app to prompt the user at its initial start after installation (or reinstallation) to consent using the Adobe Experience Platform Mobile SDK.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Next: **[Collect lifecycle data](lifecycle-data.md)**

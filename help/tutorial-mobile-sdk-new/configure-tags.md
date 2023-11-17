@@ -40,7 +40,7 @@ In this lesson, you will:
 
         >[!NOTE]
         >
-        > Default consent settings for the edge-based mobile sdk implementations such as the one you are doing in this lesson come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://developer.adobe.com/client-sdks/documentation/privacy-and-gdpr/).
+        > Default consent settings for the edge-based mobile sdk implementations such as the one you are doing in this lesson come from the [!UICONTROL Consent extension] and not the [!UICONTROL Privacy] setting in the tag property configuration. You add and configure the Consent extension later in this lesson. For more info, see [the documentation](https://developer.adobe.com/client-sdks/edge/consent-for-edge-network/).
 
 
 1. Open the new property.    
@@ -126,7 +126,7 @@ Your library is built for the new extensions and configurations. A successful bu
 
 1. In the **[!UICONTROL Mobile Install Instructions]** dialog, select the **[!UICONTROL iOS]** tab.
 
-1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using CocoaPods. CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [Cocoapods documentation](https://cocoapods.org/). If you are using Android as your development platform, Gradle is the tool to manage SDK version, downloads and dependencies. To learn more, please review the [Gradle documentation](https://gradle.org/)
+1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using CocoaPods. CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [CocoaPods documentation](https://cocoapods.org/). If you are using Android&trade; as your development platform, Gradle is the tool to manage SDK version, downloads, and dependencies. To learn more, please review the [Gradle documentation](https://gradle.org/)
  
    The install instructions provide you a good starting point for implementation. You can find additional information [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
@@ -135,7 +135,7 @@ Your library is built for the new extensions and configurations. A successful bu
    >For the remainder of this tutorial, you will **not** use the CocoaPods instructions but instead use a native Swift Package Manager (SPM) based setup.
    >
 
-1. Select the **[!UICONTROL Swift]** tab below **[!UICONTROL Add Initialization Code]**. This block of code shows how to import the required SDKs and register the extensions at launch. This will be covered in more details in [Install SDKs](install-sdks.md).
+1. Select the **[!UICONTROL Swift]** tab below **[!UICONTROL Add Initialization Code]**. This block of code shows how to import the required SDKs and register the extensions at launch. This is covered in more detail in [Install SDKs](install-sdks.md).
 
 1. Copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the **[!UICONTROL Environment File ID]** and store it in a place as you need it later. This unique ID points to your development environment. Each environment (Production, Staging, Development) does have its own unique ID value.
 
@@ -143,7 +143,7 @@ Your library is built for the new extensions and configurations. A successful bu
 
 >[!NOTE]
 >
->The install instructions should be considered a starting point and not definitive documentation. The latest SDK versions and code samples can be found in the official [documentation](https://developer.adobe.com/client-sdks/documentation/).
+>The install instructions should be considered a starting point and not definitive documentation. The latest SDK versions and code samples can be found in the official [documentation](https://developer.adobe.com/client-sdks/home/).
 
 ## Mobile tags architecture
 
@@ -151,10 +151,12 @@ If you are familiar with the web version of Tags, formerly Launch, it's importan
 
 * On the web, a tag property is rendered into JavaScript which is then (usually) hosted in the cloud. That JavaScript file is referenced directly in the website.
 
-* In a mobile tag property, rules and configurations are rendered into JSON files which are hosted in the cloud. The JSON files are downloaded and read by the Mobile Core extension in the mobile app. Extensions are separate SDKs that work together. If you add an extension to your tag property, you must also update the app. If you change an extension setting or create a rule, those changes are reflected in the app once you publish the updated tag library. That flexibility allows you to modify settings (like Adobe Analyrics report suide id) or even change your app's behaviour (using data elements and rules, as you will see in later lessons) without having to change code in your app and have to resubmit the app to the app store.
+* In a mobile tag property, rules and configurations are rendered into JSON files which are hosted in the cloud. The JSON files are downloaded and read by the Mobile Core extension in the mobile app. Extensions are separate SDKs that work together. If you add an extension to your tag property, you must also update the app. If you change an extension setting or create a rule, those changes are reflected in the app once you publish the updated tag library. That flexibility allows you to modify settings (like Adobe Analytics report suite id) or even change your app's behavior (using data elements and rules, as you will see in later lessons) without having to change code in your app and resubmit the app store.
 
 >[!SUCCESS]
 >
->You have now a mobile tag property to use in the remainder of this tutorial.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>You have now a mobile tag property to use in the remainder of this tutorial.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
 
 Next: **[Install SDKs](install-sdks.md)**

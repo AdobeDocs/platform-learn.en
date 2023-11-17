@@ -128,7 +128,7 @@ For learning purposes, you use prebuilt and custom field groups.
 
 >[!NOTE]
 >
->Keep in mind that you do not have to use all the fields in a group. You can also remove fields if that helps keeping the schema concise and understandable. If it's helpful, you can think of a schema as an empty data layer. In your app, you populate the relevant values at the appropriate time.
+>Keep in mind that you do not have to use all the fields in a group. You can also remove fields to help keep the schema concise and understandable. If it's helpful, you can think of a schema as an empty data layer. In your app, you populate the relevant values at the appropriate time.
 
 The [!UICONTROL Consumer Experience Event] field group has a data type called [!UICONTROL Web information], which describes events like page view and link clicks. At the time of writing, there isn't a mobile app parity to this feature, so you are going to create your own. 
 
@@ -157,7 +157,7 @@ You begin by creating a custom data type describing the two events:
 1. To add a field, select the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button. 
  
     
-1. This field is a container object for app interaction., so provide a camel-case **[!UICONTROL Field name]** `appInteraction`, **[!UICONTROL Display name]** `App Interaction`, and select `Object` from the **[!UICONTROL Type]** list.
+1. This field is a container object for app interaction, so provide a camel-case **[!UICONTROL Field name]** `appInteraction`, **[!UICONTROL Display name]** `App Interaction`, and select `Object` from the **[!UICONTROL Type]** list.
 
 1. Select **[!UICONTROL Apply]**.
 
@@ -228,6 +228,8 @@ Now add a custom field group using your custom data type:
 
 >[!SUCCESS]
 >
->You now have a schema to use for the remainder of the tutorial.<br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You now have a schema to use for the remainder of the tutorial.
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Create a [!UICONTROL datastream]](create-datastream.md)**
