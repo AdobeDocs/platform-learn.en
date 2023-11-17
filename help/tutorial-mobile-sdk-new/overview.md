@@ -81,11 +81,11 @@ All Experience Cloud customers should have access to the required features neede
 
 ## Download the Luma app
 
-Two versions of the sample app are available for download. Both version can be downloaded / cloned from [Github](https://git.corp.adobe.com/rmaur/Luma). You will find two folders:
+Two versions of the sample app are available for download. Both version can be downloaded / cloned from [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). You will find two folders:
 
 
-1. [Start](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
-1. [Finish](https://git.corp.adobe.com/Luma){target="_blank"}: a version with the full implementation for reference.
+1. [Start](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
+1. [Finish](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a version with the full implementation for reference.
 
 >[!NOTE]
 >

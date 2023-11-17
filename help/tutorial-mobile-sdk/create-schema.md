@@ -8,6 +8,10 @@ exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
 
 Learn how to create an XDM schema for mobile app events.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 Standardization and interoperability are key concepts behind Adobe Experience Platform. Experience Data Model (XDM), driven by Adobe, is an effort to standardize customer experience data and define schemas for customer experience management.
 
 ## What are XDM schemas?
