@@ -82,8 +82,8 @@ In these lessons, it is assumed that you have an Adobe Id and the required user-
 Two versions of the sample app are available for download. Both versions can be downloaded / cloned from [GitHub](https://git.corp.adobe.com/rmaur/Luma). You will find two folders:
 
 
-1. [Start](https://git.corp.adobe.com/rmaur/Luma){target="_blank"}: a project without code or with placeholder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
-1. [Finish](https://git.corp.adobe.com/Luma){target="_blank"}: a version with the full implementation for reference.
+1. [Start](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a project without code or with placeholder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
+1. [Finish](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a version with the full implementation for reference.
 
 >[!NOTE]
 >
