@@ -13,7 +13,7 @@ Learn how to show offers from Journey Optimizer Decision Management in your mobi
 
 Journey Optimizer Decision Management helps you to deliver the best offer and experience to your customers across all touchpoints  at the right time. Once designed, target your audience with personalized offers.
 
-![Architecture](assets/architecture-od.png)
+![Architecture](assets/architecture-ajo.png)
 
 Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform. As a result, it enables you to send your customers the right offer at the right time. See [About Decision Management](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) for more information. 
 
