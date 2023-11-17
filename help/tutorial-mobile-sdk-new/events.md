@@ -362,7 +362,7 @@ You should now have all the tools to start adding data collection to your app. Y
 
 >[!TIP]
 >
->Review the [finished app](https://git.corp.adobe.com/rmaur/Luma) for more examples.
+>Review the [finished app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) for more examples.
 
 
 ## Send events to Analytics and Platform

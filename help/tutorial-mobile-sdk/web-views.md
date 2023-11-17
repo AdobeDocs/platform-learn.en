@@ -8,6 +8,10 @@ exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c
 
 Learn how to handle data collection with WebViews in a mobile app.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 ## Prerequisites
 
 * Successfully built and run app with SDKs installed and configured.

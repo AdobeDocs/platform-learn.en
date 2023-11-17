@@ -8,6 +8,10 @@ exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
 
 Learn how to collect identity data in a mobile app.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 Adobe Experience Platform Identity Service helps you to gain a better view of your customers and their behaviors by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real time. Identity fields and namespaces are the glue that joins different data sources together to build the 360-degree real-time customer profile.
 
 Learn more about the [Identity extension](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/) and the [identity service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html) in the documentation.

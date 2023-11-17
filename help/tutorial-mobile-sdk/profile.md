@@ -7,6 +7,10 @@ exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
 
 Learn how to collect profile data in a mobile app.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 You can use the Profile extension to store attributes about your user on the client. This information can be used later to target and personalize messages during online or offline scenarios, without having to connect to a server for optimal performance. The Profile extension manages the Client-Side Operation Profile (CSOP), provides a way to react to APIs, updates user profile attributes, and shares the user profile attributes with the rest of the system as a generated event.
 
 The Profile data is used by other extensions to perform profile-related actions. An example is the Rules Engine extension that consumes the profile data and runs rules based on the profile data. Learn more about the [Profile extension](https://developer.adobe.com/client-sdks/documentation/profile/) in the documentation

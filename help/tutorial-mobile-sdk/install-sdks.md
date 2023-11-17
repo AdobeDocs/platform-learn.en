@@ -7,6 +7,10 @@ exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
 
 Learn how to implement the Adobe Experience Platform Mobile SDK in a mobile app.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 ## Prerequisites
 
 * Successfully built tag library with the extensions described in the [previous lesson](configure-tags.md).

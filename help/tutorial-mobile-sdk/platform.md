@@ -9,6 +9,10 @@ exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
 
 Learn how to send data to Adobe Experience Platform.
 
+>[!INFO]
+>
+> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
+
 This optional lesson is relevant to all customers of Real-Time Customer Data Platform (Real-Time CDP), Journey Optimizer, and Customer Journey Analytics. Experience Platform, the foundation of Experience Cloud products, is an open system that transforms all your data — Adobe and non-Adobe — into robust customer profiles that update in real time and uses AI-driven insights to help you to deliver the right experiences across every channel.
 
 The [event](events.md), [lifecycle](lifecycle-data.md), and [identity](identity.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Experience Platform.
