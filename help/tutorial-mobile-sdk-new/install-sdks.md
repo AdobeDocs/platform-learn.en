@@ -28,7 +28,7 @@ In this lesson, you will:
 
 ## Swift Package Manager
 
-Instead of using CocoaPods and using a Pod file (as outlined in the Mobile Install Instructions, see [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions)), you add individual packages using Xcode's native Swift Package Manager. The Xcode project already has all packages dependencies added for you. The Xcode **[!UICONTROL Package Dependencies]** screen should look like:
+Instead of using CocoaPods and a Pod file (as outlined in [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions)), you add individual packages using Xcode's native Swift Package Manager. The Xcode project already has all packages dependencies added for you. The Xcode **[!UICONTROL Package Dependencies]** screen should look like:
 
 ![Xcode Package Dependencies](assets/xcode-package-dependencies.png){zoomable="yes"}
 
@@ -75,7 +75,7 @@ Do the same for **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICON
 
 Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** in the Xcode Project navigator. 
 
-1. Replace the `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` for `environmentFileId` to the Development Environment File ID value that you retrieved from tags in step 6 in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
+1. Replace the `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` for `environmentFileId` to the Development Environment File ID value that you retrieved from tags in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
 
    ```swift
    @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"

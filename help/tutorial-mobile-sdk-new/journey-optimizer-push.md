@@ -29,7 +29,7 @@ Journey Optimizer allows you to create journeys and send messages to targeted au
   * Create a journey.
   * Create a message.
   * Create message presets.
-* Paid Apple developer account with sufficient access to create certificates, identifiers, and keys.
+* **Paid Apple developer account** with sufficient access to create certificates, identifiers, and keys.
 * Physical iOS device or simulator for testing.
 
 ## Learning objectives
@@ -153,7 +153,7 @@ For your app to work with Journey Optimizer, you need to update your tag propert
 
 ## Signing
 
-Signing the Luma app is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+Signing the Luma app is needed to send push notifications and **requires a paid Apple developer account**.
 
 To update the signing for your app:
 

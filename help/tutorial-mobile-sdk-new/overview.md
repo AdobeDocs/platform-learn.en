@@ -35,11 +35,11 @@ After completing this tutorial, you will be able to:
   * [Profile](profile.md)
   * [Places](places.md)
   * [Analytics](analytics.md)
-  * [Adobe Experience Platform](platform.md)
+  * [Experience Platform](platform.md)
   * [Push messaging with Journey Optimizer](journey-optimizer-push.md)
   * [In-app messaging with Journey Optimizer](journey-optimizer-inapp.md)
-  * [Offers with Journey Optimizer](journey-optimizer-offers.md)
-  * [A/B tests with Target](target.md)
+  * [Decision management with Journey Optimizer](journey-optimizer-offers.md)
+  * [Target](target.md)
 
 
 >[!NOTE]
@@ -48,7 +48,7 @@ After completing this tutorial, you will be able to:
 
 ## Prerequisites
 
-In these lessons, it is assumed that you have an Adobe Id and the required permissions to complete the exercises. If not, you should reach out to your Adobe Administrator to request access.
+In these lessons, it is assumed that you have an Adobe Id and the required user-level permissions to complete the exercises. If not, you should reach out to your Adobe Administrator to request access.
 
 * In Data Collection, you must have:
   * **[!UICONTROL Platforms]**&mdash;permission item **[!UICONTROL Mobile]**
@@ -61,17 +61,15 @@ In these lessons, it is assumed that you have an Adobe Id and the required permi
   * **[!UICONTROL Identity Management]**&mdash;permission items to manage and view identity namespaces.
   * **[!UICONTROL Data Collection]**&mdash;permission items to manage and view datastreams.
 
-  * If you are the customer of a Platform-based application like Real-Time CDP, Journey Optimizer, or Customer Journey Analytics, you should also have:
-    * **[!UICONTROL Data Management]**&mdash;permission items to manage and view datasets to complete the _optional Platform exercises_ (requires a license for a Platform-based application ).
+  * If you are the customer of a Platform-based application like Real-Time CDP, Journey Optimizer, or Customer Journey Analytics, and will be completing the related lessons you should also have:
+    * **[!UICONTROL Data Management]**&mdash;permission items to manage and view datasets.
     * A development **sandbox** which you can use for this tutorial.
+  
+  * For the Journey Optimizer lessons, you need permissions to configure the **push notification service** and to create an **app surface**, a **journey**, a **message** and **message presets**. For Decision Management, you need the proper permissions to **manage offers** and **decisions** as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 * For Adobe Analytics, you must know which **report suites** you can use to complete this tutorial.
 
-* For Adobe Target, you must have permissions, properly configured **roles**, **workspaces**, and **properties** as described [here](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
-
-* For Adobe Journey Optimizer, you must have need sufficient permission to configure the **push notification service** and to create an **app surface**, a **journey**, a **message** and **message presets**. For Decision Management, you need the proper permissions to **manage offers** and **decisions** as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
-
-All Experience Cloud customers should have access to the required features needed to deploy Mobile SDK.
+* For Adobe Target, you must have permissions to create and activate activities.
 
 
 >[!NOTE]

@@ -165,7 +165,7 @@ To implement the sending of commerce-related experience events in a reusable way
       1. For <img src="assets/saveforlater.png" width=15/>:
 
             ```swift
-            // Send saveForLaters commerce experience event
+            // Send saveForLater commerce experience event
             MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
             ```
 
@@ -179,7 +179,7 @@ To implement the sending of commerce-related experience events in a reusable way
       1. For <img src="assets/purchase.png" width=20/>:
 
             ```swift
-            // Send purchases commerce experience event
+            // Send purchase commerce experience event
             MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
             ```
 

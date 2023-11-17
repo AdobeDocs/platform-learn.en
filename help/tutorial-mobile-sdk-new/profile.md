@@ -33,7 +33,7 @@ In this lesson, you will:
 
 It would be helpful for targeting and / or personalization in the app to quickly know if a user has made a purchase in the past or recently. Let's set that up in the Luma app.
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttributes(attributeName: String, attributeValue: String)` function. Add the following code:
 
     ```swift
     // Create a profile map, add attributes to the map and update profile using the map
@@ -54,7 +54,7 @@ It would be helpful for targeting and / or personalization in the app to quickly
 
     ```swift
     // Update attributes
-    MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
+    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
     ```
 
 

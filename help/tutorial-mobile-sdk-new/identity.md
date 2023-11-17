@@ -96,10 +96,10 @@ You want to update both the standard identity (email) and the custom identity (L
      
        ```   
 
-1. Navigate to **[!DNL Luma]** **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
 
    ```swift
-   // Call updateIdentities
+   // Update identities
    MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
    ```
 

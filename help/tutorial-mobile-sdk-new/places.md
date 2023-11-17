@@ -314,7 +314,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Move (drag) the map around to ensure the blue middle circle is on above of one of your POI's, for example London.
 
-1. Tap <img src="assets/geobutton.png" width=20/> until you see the category and name appear in the lable at the red location with the pin.
+1. Tap <img src="assets/geobutton.png" width=20/> until you see the category and name appear in the label at the red location with the pin.
    
 1. Tap the label of the POI, which opens up the **[!UICONTROL Nearby POI]** sheet. 
    

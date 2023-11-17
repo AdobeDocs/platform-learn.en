@@ -28,7 +28,6 @@ Before you send in-app messages with Journey Optimizer, you must ensure that the
 * Set up the app for Adobe Experience Platform.
 * Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/configuration/configuration-message/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Journey Optimizer features.
   * Manage campaigns.
-* Paid Apple developer account with sufficient access to create certificates, identifiers, and keys.
 * Physical iOS device or simulator for testing.
 
 
@@ -61,16 +60,19 @@ In this lesson, you will
 1. Enter the mobile app Bundle Id in the **[!UICONTROL App ID (iOS Bundle ID)]** field. For example,  `com.adobe.luma.tutorial.swiftui`. 
 1. Select **[!UICONTROL Save]**.
 
-   ![app surface configuration](assets/push-app-surface-config.png)
+   ![app surface configuration](assets/push-app-surface-config-inapp.png)
 
 ### Update datastream configuration
 
-To ensure data send from your mobile app to the Edge Network is forwarded to Journey Optimizer, update your Experience Edge configuration .
+To ensure data send from your mobile app to the Edge Network is forwarded to Journey Optimizer, update your Experience Edge configuration.
+
+
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
 1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Adobe Journey Optimizer]** is selected. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]**.
+
 
    ![AEP datastream configuration](assets/datastream-aep-configuration.png)
 
@@ -94,27 +96,6 @@ For your app to work with Journey Optimizer, you need to update your tag propert
 >
 >If you don't see `AJO Push Tracking Experience Event Dataset` as an option, contact customer care.
 >
-
-
-## Signing
-
-Signing the Luma app is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
-
-To update the signing for your app:
-
-1. Go to your app in Xcode.
-1. Select **[!DNL Luma]** in the Project navigator.
-1. Select the **[!DNL Luma]** target.
-1. Select the **Signing & Capabilities** tab.
-1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
- 
-   >[!IMPORTANT]
-   >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
-
-
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
-
 
 ### Implement Journey Optimizer in the app
 

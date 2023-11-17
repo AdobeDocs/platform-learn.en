@@ -53,11 +53,11 @@ In this lesson, you will
 
 ### Update datastream configuration
 
-To ensure data send from your mobile app to the Edge Network is forwarded to Journey Optimizer - Decision Management, update your Experience Edge configuration .
+To ensure data sent from your mobile app to Platform Edge Network is forwarded to Journey Optimizer - Decision Management, update your datastream.
 
 1. In the Data Collection UI, select **[!UICONTROL Datastreams]**, and select your datastream, for example **[!DNL Luma Mobile App]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) for **[!UICONTROL Experience Platform]** and select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit]** from the context menu.
-1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. If you also follow the Target lesson, you should select **[!UICONTROL Personalization Destinations]** as well. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
+1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. If you will do the Target lesson, select **[!UICONTROL Personalization Destinations]**, too. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
    ![AEP datastream configuration](assets/datastream-aep-configuration-offers.png)
@@ -139,7 +139,7 @@ To create the Mobile JSON placement:
             ```json
             { 
                 "title": "Juno Jacket",
-                "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performanc Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
+                "text": "On colder-than-comfortable mornings, you'll love warming up in the Juno All-Ways Performance Jacket, designed to compete with wind and chill. Built-in Cocona&trade; technology aids evaporation, while a special zip placket and stand-up collar keep your neck protected.", 
                 "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj06-purple_main.jpg" 
             }  
             ```
@@ -172,39 +172,37 @@ To create the Mobile JSON placement:
        | Luma - Affirm Water Bottle | `{ "title": "Affirm Water Bottle", "text": "You'll stay hydrated with ease with the Affirm Water Bottle by your side or in hand. Measurements on the outside help you keep track of how much you're drinking, while the screw-top lid prevents spills. A metal carabiner clip allows you to attach it to the outside of a backpack or bag for easy access.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/gear/fitness-equipment/ug06-lb-0.jpg" }` |
        | Luma - Desiree Fitness Tee | `{ "title": "Desiree Fitness Tee", "text": "When you're too far to turn back, thank yourself for choosing the Desiree Fitness Tee. Its ultra-lightweight, ultra-breathable fabric wicks sweat away from your body and helps keeps you cool for the distance.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/tees/ws05-yellow_main.jpg" }` |
        | Luma - Adrienne Trek Jacket | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
-       | Luma - Aero Daily Fitness Tee | `{ "title": "Adrienne Trek Jacket", "text": "You're ready for a cross-country jog or a coffee on the patio in the Adrienne Trek Jacket. Its style is unique with stand collar and drawstrings, and it fits like a jacket should.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/women/tops/jackets/wj08-gray_main.jpg" }` |
+       | Luma - Aero Daily Fitness Tee | `{ "title": "Aero Daily Fitness Tee", "text": "Need an everyday action tee that helps keep you dry? The Aero Daily Fitness Tee is made of 100% polyester wicking knit that funnels moisture away from your skin. Don't be fooled by its classic style; this tee hides premium performance technology beneath its unassuming look.", "image": "https://luma.enablementadobe.com/content/dam/luma/en/products/men/tops/tees/ms01-black_main.jpg" }` |
 
        {style="table-layout:fixed"}
 
 1. As a final step you must create a fallback offer, which is an offer sent to customers if they are not eligible for other offers.
    1. Select **[!UICONTROL Create offer]**.
-   1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create new personalized offer]**:
-   1. Enter a **[!UICONTROL Name]** for the offer, for example `Luma - Fallback Offer`, and enter a **[!UICONTROL Start date and time]** and an **[!UICONTROL End date and time]**.
-   1. Select **[!UICONTROL Next]**.
+   1. In the **[!UICONTROL New offer]** dialog, select **[!UICONTROL Personalized offer]** and select **[!UICONTROL Next]**.
+   1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create new fallback offer]**, enter a **[!UICONTROL Name]** for the offer, for example `Luma - Fallback Offer`, and select **[!UICONTROL Next]**.
 
-1. In the **[!UICONTROL Add representations]** step of the **[!UICONTROL Create new personalized offer]** screen:
-   1. Select ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** from **[!UICONTROL Channel]** list, and select **[!UICONTROL Mobile JSON]** from **[!UICONTROL Placement]** list.
-   1. Select **[!UICONTROL Custom]** for **[!UICONTROL Content]**.
-   1. Select **[!UICONTROL Add content]**. In the **[!UICONTROL Add personalization]** dialog:
-      1. Enter the following JSON:
-   
+   1. In the **[!UICONTROL Add representations]** step of  **[!UICONTROL Create new fallback offer]**:
+      1. Select ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** from **[!UICONTROL Channel]** list, and select **[!UICONTROL Mobile JSON]** from **[!UICONTROL Placement]** list.
+      1. Select **[!UICONTROL Custom]** for **[!UICONTROL Content]**.
+      1. Select **[!UICONTROL Add content]**. 
+      1. In the **[!UICONTROL Add personalization]** dialog, enter the following JSON and select **[!UICONTROL Save]**:
+      
             ```json
             {  
-                "title": "Luma",
-                "text": "Your store for sports wear and equipment.", 
-                "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
+               "title": "Luma",
+               "text": "Your store for sports wear and equipment.", 
+               "image": "https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png" 
             }  
             ```
 
-      1. Select **[!UICONTROL Save]**.
-   1. Select **[!UICONTROL Next]**.
+      1. Select **[!UICONTROL Next]**.
 
 
-1. In the **[!UICONTROL Review]** step of **[!UICONTROL Create new personalized]** offer:
+1. In the **[!UICONTROL Review]** step of **[!UICONTROL Create new fallback]** offer:
    1. Review the offer, then select **[!UICONTROL Finish]**.
    1. In the **[!UICONTROL Save offer]** dialog, select **[!UICONTROL Save and approve]**.
 
-You should now have the following list of offers.
+You should now have the following list of offers:
 ![Offers list](assets/ajo-offers-list.png)
 
 
@@ -244,7 +242,7 @@ See [Key steps to create and manage offers](https://experienceleague.adobe.com/d
    1. Select **[!UICONTROL Next]**.
 
 1. In the **[!UICONTROL Add decision scopes]** step of **[!UICONTROL Create a new offer decision]**:
-   1. Select **[!UICONTROL  Mobile JSON]** from **[!UICONTROL Placement]** list.
+   1. Select **[!UICONTROL Mobile JSON]** from **[!UICONTROL Placement]** list.
    1. In the **[!UICONTROL Evaluation Criteria]** tile, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]**.
       1. In the **[!UICONTROL Add Offer Collection]** dialog, select your offer collection. For example, **[!DNL Luma - Mobile App Collection]**.
       1. Select **[!UICONTROL Add]**.
@@ -312,6 +310,8 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Model]** > **[!DNL Data]** > **[!UICONTROL decisions]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details you copied from the Journey Optimizer interface.
+
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the `func updatePropositionOD(ecid: String, activityId: String, placementId: String, itemCount: Int) async` function. Add the following code:
 
    ```swift
@@ -342,7 +342,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
        ]
        ```
 
-      However, you can use any kind of implementation to ensure the Optimize APIs do get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation.
+      However, you can use any kind of implementation to ensure the Optimize APIs get the proper parameters (`activityId`, `placementId` and, `itemCount`), to construct a valid [`DecisionScope`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#decisionscope) object for your implementation.
    * calls two APIs: [`Optimize.clearCachePropositions`](https://support.apple.com/en-ie/guide/mac-help/mchlp1015/mac)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions).  These functions clear any cached propositions and update the propositions for this profile.
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!UICONTROL Personalization]** > **[!UICONTROL EdgeOffersView]** in the Xcode Project navigator. Find the `func onPropositionsUpdateOD(activityId: String, placementId: String, itemCount: Int) async` function and inspect the code of this function. The most important part of this function is the [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
