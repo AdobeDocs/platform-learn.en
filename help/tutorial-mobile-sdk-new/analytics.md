@@ -48,7 +48,7 @@ To send your XDM data from the Edge Network to Adobe Analytics, you configure th
 
 ## Automatic mapping
 
-Many of the standard XDM fields are automatically mapped to Analytics variables. See the full list [here](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en).
+Many of the standard XDM fields are automatically mapped to Analytics variables. See the full list [here](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
 
 ### Example #1 - s.products
 
@@ -193,7 +193,7 @@ a.x._techmarketingdemos.appinformation.appstatedetails.screenname
 
 To map this XDM context data to your Analytics data in your report suite, you can: 
 
-### Use a fieldgroup
+### Use a field group
 
 * Add the **[!UICONTROL Adobe Analytics ExperienceEvent Full Extension]** field group to your schema.
 
@@ -231,6 +231,6 @@ Additional information about processing rules and context data can be found [her
 
 >[!SUCCESS]
 >
->You have set up your app to map your Experience Edge XDM objects to Adobe Analytics variables enabling the Adobe Analytics service in your datastream and using processing rules where applicable.<br/> Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content,  share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>You have set up your app to map your Experience Edge XDM objects to Adobe Analytics variables enabling the Adobe Analytics service in your datastream and using processing rules where applicable.<br/> Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content,  share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Send data to Experience Platform](platform.md)**
