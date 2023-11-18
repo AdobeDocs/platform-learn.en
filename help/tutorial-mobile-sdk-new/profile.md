@@ -33,7 +33,7 @@ In this lesson, you will:
 
 It would be helpful for targeting and / or personalization in the app to quickly know if a user has made a purchase in the past or recently. Let's set that up in the Luma app.
 
-1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttributes(attributeName: String, attributeValue: String)` function. Add the following code:
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** >  **[!DNL MobileSDK]** in the Xcode Project navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
 
     ```swift
     // Create a profile map, add attributes to the map and update profile using the map
@@ -54,7 +54,7 @@ It would be helpful for targeting and / or personalization in the app to quickly
 
     ```swift
     // Update attributes
-    MobileSDK.shared.updateUserAttributes(attributeName: "isPaidUser", attributeValue: "yes")
+    MobileSDK.shared.updateUserAttribute(attributeName: "isPaidUser", attributeValue: "yes")
     ```
 
 
@@ -80,7 +80,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
 
     This code:
     
-    1. Calls the [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API with the `iPaidUser` attribute name as single element in the `attributeNames` array.
+    1. Calls the [`UserProfile.getUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes) API with the `isPaidUser` attribute name as single element in the `attributeNames` array.
     1. Then checks for the value of the `isPaidUser` attribute and when `yes`, places a badge on the <img src="assets/paiduser.png" width=20/> icon in the toolbar at the top right.
 
 Additional documentation can be found [here](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#getuserattributes).
