@@ -74,7 +74,7 @@ In these lessons, you will implement the Adobe Experience Cloud into a fake reta
 ## Get the Tools
 
 1. Because you will be using some browser-specific extensions, we recommend completing the tutorial using the [Chrome Web Browser](https://www.google.com/chrome/)
-1. Add the [Adobe Experience Cloud Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) extension to your Chrome browser
+1. Add the [Adobe Experience Platform Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) extension to your Chrome browser
 1. Copy the sample html page code
 
     +++Sample html page code

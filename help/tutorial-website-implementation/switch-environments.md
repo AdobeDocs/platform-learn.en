@@ -5,7 +5,7 @@ exl-id: 29972a00-e5e0-4fe0-a71c-c2ca106938be
 ---
 # Switch tag environments with the Experience Cloud Debugger
 
-In this lesson you will use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the tag property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
+In this lesson you will use the [Adobe Experience Platform Debugger extension](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) to replace the tag property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
 
 This technique is called environment switching and will be helpful later, when you work with tags on your own website. You will be able to load your production website in your browser, but with your *development* tag environment. This enables you to confidently make and validate tags changes independently from your regular code releases.  After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use tags in the first place!
 
