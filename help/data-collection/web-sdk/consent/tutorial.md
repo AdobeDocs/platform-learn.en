@@ -230,7 +230,7 @@ If you're using the [working library](https://experienceleague.adobe.com/docs/pl
  
 ### Step 4: Inspect and validate data collection
  
-On our site, we refresh the page and confirm the library build in the [Debugger](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) Chrome extension, in the tags menu section:
+On our site, we refresh the page and confirm the library build in the [Debugger](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) Chrome extension, in the tags menu section:
  
 ![](./images/build-date.png)
  

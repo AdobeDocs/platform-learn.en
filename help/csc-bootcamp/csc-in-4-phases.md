@@ -66,7 +66,7 @@ On top of all this, a truly great content supply chain uses a DAM that can autom
 
 Our very own [Adobe Experience Cloud business](https://business.adobe.com/) is focused on following the steps outlined previously to bring our campaigns to life and support multiple segments. Our vision has been to deliver compelling content globally that aligns with our campaign framework and messaging.
 
-Key to our end-to-end content creation process is the pairing of [Adobe Workfront](https://business.adobe.com/products/workfront/main.html/) and [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Let's take a look at how we've approached our process with those same three high-level phases.
+Key to our end-to-end content creation process is the pairing of [Adobe Workfront](https://business.adobe.com/products/workfront/main.html) and [Adobe Experience Manager Assets](https://business.adobe.com/products/experience-manager/assets/aem-assets.html). Let's take a look at how we've approached our process with those same three high-level phases.
 
 We start with  **planning** , where we intake hundreds of content requests from across the business and then prioritize them against our quarterly priorities. We then use a content proposal dashboard in Workfront to provide transparency so we can align with our stakeholders and quickly get sign-off across our marketing, creative, web, and sales teams. By doing this, we create a record of what we're committing to for the quarter, and we also give our creative and web teams visibility into the total request volume so they can plan for resourcing. Plus, managers can easily monitor workloads for their teams.
 

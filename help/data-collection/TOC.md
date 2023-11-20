@@ -60,8 +60,3 @@ role: Developer, Data Engineer
   + [First-party device IDs](edge/generate-first-party-device-ids.md)
 + Debugger{#debugger}
   + [Overview](debugger/overview.md)
-  + Experience Cloud Debugger{#experience-cloud}
-    + [Install the Debugger](debugger/experience-cloud/add-the-extension.md)
-    + [Use the Debugger](debugger/experience-cloud/use-the-experience-cloud-debugger.md)
-    + [Troubleshoot Target](https://experienceleague.adobe.com/docs/target-learn/tutorials/troubleshooting/troubleshoot-with-the-experience-cloud-debugger.html){target="_blank"}
-    + [Switch tag environments](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/configure-tags/switch-environments.html){target="_blank"}
