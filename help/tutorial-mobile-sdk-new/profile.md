@@ -90,8 +90,8 @@ Additional documentation can be found [here](https://developer.adobe.com/client-
 1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. Run the app to log in and interact with a product.
 
-   1. Move the Assurance icon to the left.
    1. Select **[!UICONTROL Home]** in the tab bar.
+   1. Move the Assurance icon to the left.
    1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
       
       <img src="./assets/mobile-app-events-1.png" width=300> 

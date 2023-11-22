@@ -60,7 +60,7 @@ You want to update both the standard identity (email) and the custom identity (L
    let identityMap: IdentityMap = IdentityMap()
 
    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
    identityMap.add(item:emailIdentity, withNamespace: "Email")
    identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
 
@@ -75,12 +75,14 @@ You want to update both the standard identity (email) and the custom identity (L
        let identityMap: IdentityMap = IdentityMap()
        ```
 
-    1. Sets up `IdentityItem` objects for email and CRM ID.
+    1. Sets up `IdentityItem` objects for email and CRM ID. Adobe recommends sending identities which represent a person, such as Luma CRM Id, as the primary identity. If the identity map contains the person identifier (e.g. Luma CRM Id), then the person identifier will become the primary identity. Otherwise, ECID becomes the primary identity. Setting a person ID as the primary id facilitates more efficient lookups of a profile in subsequent API calls.
    
        ```swift
        let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated, primary: true)
        ```
+
+       
 
     1. Adds these `IdentityItem` objects to the `IdentityMap` object.
 
