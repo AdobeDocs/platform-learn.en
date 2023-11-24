@@ -80,14 +80,14 @@ To update the signing for the lessons that require that you sign the application
 1. Select **[!DNL Luma]** in the Project navigator.
 1. Select the **[!DNL Luma]** target.
 1. Select the **Info** tab.
-1. To add a base URL, scroll down to **URL Types** and select the **+** button.
+1. Scroll down to **URL Types (1)** and open the section using the chevron (>) if no alreaday open.
 1. Set **Identifier** to the Bundle Identifier of your choice and set a **URL Schemes** of your choice .
 
    ![assurance url](assets/assurance-url-type.png)
 
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`.<br/>Similarly, use a unique URL scheme, and replace the already provided `lumatutorialswiftui` with your unique URL scheme.
+   >Ensure you use a _unique_ bundle identifier, so replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`.<br/>Similarly, use a unique URL scheme, so replace the already provided `lumatutorialswiftui` with your unique URL scheme.
 
 To learn more about URL Schemes in iOS, review [Apple's documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 

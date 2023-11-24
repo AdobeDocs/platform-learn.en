@@ -317,7 +317,7 @@ Again, lets actually implement this code in your Xcode project.
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]**.
 
-   1. Add the following highlighted code to the Login button closure: 
+   1. Add the following highlighted code to the `Button("Login") {` closure: 
 
         ```swift                              
         // Send app interaction event

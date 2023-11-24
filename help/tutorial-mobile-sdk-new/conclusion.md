@@ -42,6 +42,7 @@ And there is always more to learn! To build upon your implementation, here are s
 * **Learn more about Experience Platform**. Learn more about how to ingest data from other sources and combine that with your Mobile SDK data, in [Getting Started with Adobe Experience Platform for Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html)
 
 
->[!NOTE]
+>[!SUCCESS]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+>**Congratulations!** You have completed this Experience Platform Mobile SDK tutorial. Please revisit the tutorial regularly as we will make updates and add more content over time.<br/><br/>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com:443/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
