@@ -79,6 +79,8 @@ In these lessons, it is assumed that you have an Adobe Id and the required user-
 >[!NOTE]
 >
 >You use iOS as the platform, [!DNL Swift] as the programming language, [!DNL SwiftUI] as the UI framework and [!DNL Xcode] as the integrated development environment (IDE). However, many of the implementation concepts explained are similar for other development platforms. Many have already successfully completed this tutorial with little to no previous iOS/Swift(UI) experience. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
+
+
 ## Download the Luma app
 
 Two versions of the sample app are available for download. Both version can be downloaded / cloned from [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). You will find two folders:
