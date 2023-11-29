@@ -34,7 +34,6 @@ Before you send in-app messages with Journey Optimizer, you must ensure that the
 
 In this lesson, you will
 
-* Register App ID with the Apple Push Notification service (APN).
 * Create an App Surface in AJO.
 * Install & configure the Journey Optimizer tag extension.
 * Update your app to register the Journey Optimizer tag extension.
