@@ -4,7 +4,7 @@ breadcrumb-title: Mobile App Tutorial
 user-guide-description: Learn how to implement Adobe Experience Cloud applications in mobile apps with Experience Platform Mobile SDK.
 solution: Data Collection
 feature: Mobile SDK
-role: Data Engineer, Developer
+role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
@@ -26,8 +26,14 @@ recommendations: noDisplay,noCatalog
   + [WebViews](web-views.md)
   + [Identity](identity.md)
   + [Profile](profile.md)
+  + [Places](places.md)
 + Experience Cloud{#experience-cloud}
   + [Analytics](analytics.md)
   + [Experience Platform](platform.md)
-  + [Journey Optimizer push messaging](journey-optimizer-push.md)
+  + Journey Optimzer{#journey-optimizer}
+    + [Push notifications](journey-optimizer-push.md)
+    + [In-app messages](journey-optimizer-inapp.md)
+    + [Decision Management](journey-optimizer-offers.md)
+  + [Target](target.md)
 + [Conclusion](conclusion.md)
+  

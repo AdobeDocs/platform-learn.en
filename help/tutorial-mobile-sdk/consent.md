@@ -1,18 +1,14 @@
 ---
-title: Consent
+title: Implement consent for Platform Mobile SDK implementations
 description: Learn how to implement consent in a mobile app.
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216
 ---
-# Consent
+# Implement consent
 
 Learn how to implement consent in a mobile app.
 
->[!INFO]
->
-> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
-
-The Adobe Experience Platform Consent mobile extension enables consent preferences collection from your mobile app when using the Adobe Experience Platform Mobile SDK and the Edge Network extension. Learn more about the [Consent extension](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/), in the documentation.
+The Adobe Experience Platform Consent mobile extension enables consent preferences collection from your mobile app when using the Adobe Experience Platform Mobile SDK and the Edge Network extension. Learn more about the [Consent extension](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/) in the documentation.
 
 ## Prerequisites
 
@@ -28,73 +24,81 @@ In this lesson, you will:
 
 ## Ask for consent
 
-If you followed the tutorial from the beginning, you'll remember setting the **[!UICONTROL Default Consent Level]** to "Pending". In order to begin collecting data, you must get consent from the user. In this tutorial, get consent by simply asking with an alert, in a real-world app you'd want to consult consent best practices for your region.
+If you followed the tutorial from the beginning, you might remember that you have set the default consent in the Consent extension to **[!UICONTROL Pending - Queue events that occur before the user provides consent preferences.]** 
 
-1. You only want to ask the user once. One simple way to manage that is by simply using `UserDefaults`.
-1. Navigate to `Home.swift`.
-1. Add the following code to `viewDidLoad()`.
+To begin collecting data, you must get consent from the user. In a real-world app, you would want to consult consent best practices for your region. In this tutorial, you get consent from the user by simply asking for it with an alert:
 
-    ```swift
-    let defaults = UserDefaults.standard
-    let consentKey = "askForConsentYet"
-    let hidePopUp = defaults.bool(forKey: consentKey)
-    ```
+1. You only want to ask the user once for consent. You can do this by combining the Mobile SDK consent with the required authorization for tracking using Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). In this app, you assume that when the user authorizes tracking they consent to collecting events.
+ 
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator.
+  
+   Add this code to the `updateConsent` function.
 
-1. If the user hasn't seen the alert before, then display it and update consent based on their response. Add the following code to `viewDidLoad()`.
+   ```swift
+   // Update consent
+   let collectConsent = ["collect": ["val": value]]
+   let currentConsents = ["consents": collectConsent]
+   Consent.update(with: currentConsents)
+   MobileCore.updateConfigurationWith(configDict: currentConsents)
+   ```
 
-    ```swift
-    if(hidePopUp == false){
-        //Consent Alert
-        let alert = UIAlertController(title: "Allow Data Collection?", message: "Selecting Yes will begin data collection", preferredStyle: .alert)
-        alert.addAction(UIAlertAction(title: "Yes", style: .default, handler: { action in
-            //Update Consent -> "yes"
-            let collectConsent = ["collect": ["val": "y"]]
-            let currentConsents = ["consents": collectConsent]
-            Consent.update(with: currentConsents)
-            defaults.set(true, forKey: consentKey)
-        }))
-        alert.addAction(UIAlertAction(title: "No", style: .cancel, handler: { action in
-            //Update Consent -> "no"
-            let collectConsent = ["collect": ["val": "n"]]
-            let currentConsents = ["consents": collectConsent]
-            Consent.update(with: currentConsents)
-            defaults.set(true, forKey: consentKey)
-        }))
-        self.present(alert, animated: true)
-    }
-    ```
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL DisclaimerView]** in Xcode's Project navigator, which is the view that is shown after installing or reinstalling the application and starting the app for the first time. The user is prompted to authorize tracking per Apple's [App Tracking Transparency framework](https://developer.apple.com/documentation/apptrackingtransparency). If the user authorizes, you also update the consent.
 
+   Add the following code to the `ATTrackingManager.requestTrackingAuthorization { status in` closure.
+
+   ```swift 
+   // Add consent based on authorization
+   if status == .authorized {
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "y")
+   }
+   else {
+      // Set consent to yes
+      MobileSDK.shared.updateConsent(value: "n")
+   }
+   ```
 
 ## Get current consent state
 
-The Consent mobile extension will automatically suppress/pend/allow tracking based the current consent value. You can also access the current consent state yourself:
+The Consent mobile extension automatically suppresses / pends / allows tracking based on the current consent value. You can also access the current consent state yourself:
 
-1. Navigate to `Home.swift`.
-1. Add the following code to `viewDidLoad()`.
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode's Project navigator.
 
-```swift
-Consent.getConsents{ consents, error in
-    guard error == nil, let consents = consents else { return }
-    guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
-    guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
-    print("Consent getConsents: ",jsonStr)
-}
-```
+   Add the following code to the `getConsents` function:
 
-In the above example, you are simply printing the consent status to the console. In a real-world scenario, you might use it to modify what menus or options are shown to the user.
+   ```swift
+   // Get consents
+   Consent.getConsents { consents, error in
+      guard error == nil, let consents = consents else { return }
+      guard let jsonData = try? JSONSerialization.data(withJSONObject: consents, options: .prettyPrinted) else { return }
+      guard let jsonStr = String(data: jsonData, encoding: .utf8) else { return }
+      Logger.aepMobileSDK.info("Consent getConsents: \(jsonStr)")
+   }
+   ```
+
+2. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL HomeView]** in Xcode's Project navigator.
+
+   Add the following  code to the `.task` modifier:
+
+   ```swift
+   // Ask status of consents
+   MobileSDK.shared.getConsents()   
+   ```
+
+In the above example, you are simply logging the consent status to the console in Xcode. In a real-world scenario, you might use it to modify what menus or options are shown to the user.
 
 ## Validate with Assurance
 
-1. Review the [Assurance](assurance.md) lesson.
-1. Install the app.
-1. Launch the app using the Assurance-generated URL.
-1. If you added the above code correctly, you will be prompted to provide consent. Select **Yes**.
-    ![consent popup](assets/mobile-consent-validate.png)
-1. You should see a **[!UICONTROL Consent Preferences Updated]** event in the Assurance UI.
-    ![validate consent](assets/mobile-consent-update.png)
+1. Delete the application from your device or simulator to properly reset and initialize the tracking and consent.
+1. To connect your simulator or device to Assurance, review the [setup instructions](assurance.md#connecting-to-a-session) section.
+1. When moving in the app from **[!UICONTROL Home]** screen to **[!UICONTROL Products]** screen and back to **[!UICONTROL Home]** screen, you should see a **[!UICONTROL Get Consents Response]** event in the Assurance UI.
+    ![validate consent](assets/consent-update.png)
 
-Next: **[Collect lifecycle data](lifecycle-data.md)**
 
->[!NOTE]
+>[!SUCCESS]
+>
+>You have now enabled your app to prompt the user at its initial start after installation (or reinstallation) to consent using the Adobe Experience Platform Mobile SDK.
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+Next: **[Collect lifecycle data](lifecycle-data.md)**

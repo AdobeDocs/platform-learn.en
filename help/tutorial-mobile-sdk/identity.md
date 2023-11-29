@@ -1,16 +1,12 @@
 ---
-title: Identity
+title: Collect identity data in a mobile app with Mobile SDK
 description: Learn how to collect identity data in a mobile app.
 feature: Mobile SDK,Identities
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
 ---
-# Identity
+# Collect identity data
 
 Learn how to collect identity data in a mobile app.
-
->[!INFO]
->
-> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
 
 Adobe Experience Platform Identity Service helps you to gain a better view of your customers and their behaviors by bridging identities across devices and systems, allowing you to deliver impactful, personal digital experiences in real time. Identity fields and namespaces are the glue that joins different data sources together to build the 360-degree real-time customer profile.
 
@@ -24,122 +20,156 @@ Learn more about the [Identity extension](https://developer.adobe.com/client-sdk
 
 In this lesson, you will:
 
-* Update a standard identity.
-* Set up a custom identity.
-* Update a custom identity.
+* Set up a custom identity namespace.
+* Update identities.
 * Validate the identity graph.
 * Get ECID and other identities.
-
-## Update a standard identity
-
-Begin by updating the user's identity map when they log in. 
-
-1. Navigate to `Login.swift` if the Luma app and find the function called `loginButt`.
-
-    In the Luma sample app, there is no username or password validation. You simply tap the buttons to "log in".
-
-1. Create the `IdentityMap` and `IdentityItem`.
-
-    ```swift
-    let identityMap: IdentityMap = IdentityMap()
-    let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-    ```
-
-1. Add the `IdentityItem` to the `IdentityMap`
-
-    ```swift
-    identityMap.add(item:emailIdentity, withNamespace: "Email")
-    ```
-
-1. Call `updateIdentities` to send the data to the Platform Edge Network.
-
-    ```swift
-    Identity.updateIdentities(with: identityMap)
-    ```
-
->[!NOTE]
->
->You can send multiple identities in a single updateIdentities call. You can also modify previously sent identities.
 
 
 ## Set up a custom identity namespace
 
-Identity namespaces are components of [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) that serve as indicators of the context to which an identity relates. For example, they distinguish a value of "name@email.com" as an email address or "443522" as a numeric CRM ID.
-
-1. In the Data Collection interface, select **[!UICONTROL Identities]** from the left-rail navigation.
-1. Select **[!UICONTROL Create identity namespace]**.
-1. Provide a **[!UICONTROL Display name]** of `Luma CRM ID` and an **[!UICONTROL Identity symbol]** value of `lumaCrmId`.
-1. Select **[!UICONTROL Cross-device ID]**.
-1. Select **[!UICONTROL Create]**.
-
-![create identity namespace](assets/mobile-identity-create.png)
-
-## Update a custom identity
-
-Now that you've created a custom Identity, start collecting it by modifying the `updateIdentities` code you added in the previous step. Simply creating an IdentityItem and add it to the IdentityMap. Here is what the full code block should look like:
-
-```swift
-//Hardcoded identity values
-let emailAddress = "testuser@gmail.com"
-let crmId = "112ca06ed53d3db37e4cea49cc45b71e"
-
-// Create identity map
-let identityMap: IdentityMap = IdentityMap()
-// Add email (standard)
-let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
-identityMap.add(item:emailIdentity, withNamespace: "Email")
-// Add lumaCrmId (custom)
-let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
-identityMap.add(item: crmIdentity, withNamespace: "lumaCrmId")
-// Update
-Identity.updateIdentities(with: identityMap)
-```
-
-## Remove an identity
-
-You can use `removeIdentity` to remove the identity from the stored client-side IdentityMap. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side User Profile Graph or Identity Graph.
-
-Add the following `removeIdentity` code to the logout button click in `Account.swift`. 
-
-```swift
-// Logout
-let logout = UIAlertAction(title: "Logout", style: .destructive, handler: { (action) -> Void in
-    isLoggedIn = false;
-    ////Hardcoded identity values
-    let emailAddress = "testuser@gmail.com"
-    let crmId = "112ca06ed53d3db37e4cea49cc45b71e"
-    // Adobe Experience Platform - Remove Identity
-    Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
-    Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCrmId")
-})
-```
-
->[!NOTE]
->In the above examples, `crmId` and `emailAddress` are hardcoded but in a real-world app the values would be dynamic.
-
-## Validate with Assurance
-
-1. Review the [setup instructions](assurance.md) section and connect your simulator or device to Assurance.
-1. In the app, select the Account icon from the bottom right.
-    
-    ![luma app account](assets/mobile-identity-login.png)
-1. Select the **Log In** button.
-1. You are presented with the option to enter a username & password, both are optional and you can simply select **Log In**.
-
-    ![luma app login](assets/mobile-identity-login-final.png)
-1. Look in the Assurance web UI for the `Edge Identity Update Identities` event from the `com.adobe.griffon.mobile` vendor.
-1. Select the event and review the data in the `ACPExtensionEventData` object. You should see the identities you updated.
-![validate identities update](assets/mobile-identity-validate-assurance.png)
-
-## Validate with identity graph
-
-Once you complete the steps in the [Experience Platform lesson](platform.md), you will also be able to confirm the identy capture in Platforms identity graph viewer:
-
-![validate identity graph](assets/mobile-identity-validate.png)
-
-
-Next: **[Profile](profile.md)**
+Identity namespaces are components of [Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html?lang=en) that serve as indicators of the context to which an identity relates. For example, they distinguish a value of `name@email.com` as an email address or `443522` as a numeric CRM ID.
 
 >[!NOTE]
 >
+>The Mobile SDK generates a unique identity in its own namespace, named Experience Cloud ID (ECID) when the app is installed. This ECID is stored in persistent memory on the mobile device and is sent with every hit. The ECID is removed when the user uninstalls the app or when the user sets the Mobile SDK global privacy status to opt-out. In the sample Luma app, you should remove and reinstall the app to create a new profile with its own unique ECID.
+
+
+To create a new identity namespace:
+
+1. In the Data Collection interface, select **[!UICONTROL Identities]** from the left-rail navigation.
+1. Select **[!UICONTROL Create identity namespace]**.
+1. Provide a **[!UICONTROL Display name]** of `Luma CRM ID` and an **[!UICONTROL Identity symbol]** value of `lumaCRMId`.
+1. Select **[!UICONTROL Cross-device ID]**.
+1. Select **[!UICONTROL Create]**.
+
+   ![create identity namespace](assets/identity-create.png)
+
+
+
+
+## Update identities
+
+You want to update both the standard identity (email) and the custom identity (Luma CRM ID) when the user logs into the app.
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func updateIdentities(emailAddress: String, crmId: String)` function implementation. Add the following  code to the function.
+
+   ```swift
+   // Set up identity map, add identities to map and update identities
+   let identityMap: IdentityMap = IdentityMap()
+
+   let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+   let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+   identityMap.add(item:emailIdentity, withNamespace: "Email")
+   identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
+
+   Identity.updateIdentities(with: identityMap)
+   ```
+
+    This code:
+
+    1. Creates an empty `IdentityMap` object.
+
+       ```swift
+       let identityMap: IdentityMap = IdentityMap()
+       ```
+
+    1. Sets up `IdentityItem` objects for email and CRM ID.
+   
+       ```swift
+       let emailIdentity = IdentityItem(id: emailAddress, authenticatedState: AuthenticatedState.authenticated)
+       let crmIdentity = IdentityItem(id: crmId, authenticatedState: AuthenticatedState.authenticated)
+       ```
+
+    1. Adds these `IdentityItem` objects to the `IdentityMap` object.
+
+       ```swift
+       identityMap.add(item:emailIdentity, withNamespace: "Email")
+       identityMap.add(item: crmIdentity, withNamespace: "lumaCRMId")
+       ```    
+
+    1. Sends the `IdentityItem` object as part of the `Identity.updateIdentities` API call to the Edge Network.
+
+       ```swift
+       Identity.updateIdentities(with: identityMap) 
+     
+       ```   
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
+
+   ```swift
+   // Update identities
+   MobileSDK.shared.updateIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                             
+   ```
+
+
+>[!NOTE]
+>
+>You can send multiple identities in a single `updateIdentities` call. You can also modify previously sent identities.
+
+
+## Remove an identity
+
+You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side identity graph. See [View identity graphs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) for more information on identity graphs.
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
+
+   ```swift
+   // Remove identities and reset email and CRM Id to their defaults
+   Identity.removeIdentity(item: IdentityItem(id: emailAddress), withNamespace: "Email")
+   Identity.removeIdentity(item: IdentityItem(id: crmId), withNamespace: "lumaCRMId")
+   currentEmailId = "testUser@gmail.com"
+   currentCRMId = "112ca06ed53d3db37e4cea49cc45b71e"
+   ```
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!UICONTROL LoginSheet]** in the Xcode Project navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
+
+   ```swift
+   // Remove identities
+   MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                  
+   ```
+
+
+## Validate with Assurance
+
+1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
+1. In the Luma app
+   1. Select the **[!UICONTROL Home]** tab and move the Assurance icon to the left. 
+   1. Select the <img src="assets/login.png" width=15/> icon from the top right.
+   
+      <img src="./assets/identity1.png" width=300>
+      
+   1. Provide an email address and a CRM Id, or
+   1. Select <img src="assets/insert.png" width=15/> to randomly generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
+   1. Select **[!UICONTROL Login]**.
+
+       <img src="./assets/identity2.png" width=300>
+    
+
+1. Look in the Assurance web interface for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
+1. Select the event and review the data in the **[!UICONTROL ACPExtensionEventData]** object. You should see the identities you updated.
+![validate identities update](assets/identity-validate-assurance.png)
+
+## Validate with identity graph
+
+Once you complete the steps in the [Experience Platform lesson](platform.md), you are able to confirm the identity capture in Platforms identity graph viewer:
+
+1. Select **[!UICONTROL Identities]** in the Data Collection UI.
+1. Select **[!UICONTROL Identity Graph]** from the top bar.
+1. Enter `Luma CRM ID` as the **[!UICONTROL Identity namespace]** and your CRM Id (for example `24e620e255734d8489820e74f357b5c8`) as the **[!UICONTROL Identity value]**.
+1. You see the **[!UICONTROL Identities]** listed.
+
+   ![validate identity graph](assets/identity-validate-graph.png)
+
+>[!INFO]
+>
+>There is no code in the app to reset the ECID, which means you can only reset the ECID (and effectively create a new profile with a new ECID) through an uninstall and a reinstall of the application. To implement the reset of identifiers, see the [`Identity.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/identity/api-reference/#resetidentities) and [`MobileCore.resetIdentities`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#resetidentities) API calls. Be aware though, when using a push notification identifier (see [Sending push notifications](journey-optimizer-push.md)), that identifier becomes another 'sticky' profile identifier on the device.
+
+
+>[!SUCCESS]
+>
+>You have now set up your app to update identities in the Edge Network and (when set up) with Adobe Experience Platform.
+>
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+
+Next: **[Collect profile data](profile.md)**

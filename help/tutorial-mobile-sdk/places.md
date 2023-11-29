@@ -1,7 +1,6 @@
 ---
-title: Use Places
+title: Use Places with Platform Mobile SDK
 description: Learn how to use the Places geolocation service in your mobile app.
-hide: yes
 exl-id: adc2952f-cb01-4e06-9629-49fb95f22ca5
 ---
 # Use Places
