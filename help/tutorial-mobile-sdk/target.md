@@ -4,7 +4,6 @@ description: Learn how to use a Target A/B test in your mobile app with Platform
 solution: Data Collection,Target
 feature-set: Target
 feature: A/B Tests
-hide: yes
 exl-id: 87546baa-2d8a-4cce-b531-bec3782d2e90
 ---
 # Optimize and personalize with Adobe Target

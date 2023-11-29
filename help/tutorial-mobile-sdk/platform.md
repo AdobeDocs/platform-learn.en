@@ -1,21 +1,19 @@
 ---
-title: Send data to Adobe Experience Platform
-description: Learn how to send data to Adobe Experience Platform.
+title: Send data to Experience Platform
+description: Learn how to send data to Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
 ---
-# Send data to Adobe Experience Platform
+# Send data to Experience Platform
 
-Learn how to send data to Adobe Experience Platform.
+Learn how to send mobile app data to Adobe Experience Platform.
 
->[!INFO]
->
-> This tutorial will be replaced with a new tutorial using a new sample mobile app in late November 2023
-
-This optional lesson is relevant to all customers of Real-Time Customer Data Platform (Real-Time CDP), Journey Optimizer, and Customer Journey Analytics. Experience Platform, the foundation of Experience Cloud products, is an open system that transforms all your data — Adobe and non-Adobe — into robust customer profiles that update in real time and uses AI-driven insights to help you to deliver the right experiences across every channel.
+This optional lesson is relevant to all customers of Real-Time Customer Data Platform (Real-Time CDP), Journey Optimizer, and Customer Journey Analytics. Experience Platform, the foundation of Experience Cloud products, is an open system that transforms all your data (Adobe and non-Adobe) into robust customer profiles. These customer profiles update in real time and uses AI-driven insights to help you to deliver the right experiences across every channel.
 
 The [event](events.md), [lifecycle](lifecycle-data.md), and [identity](identity.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Experience Platform.
+
+![Architecture](assets/architecture-aep.png)
 
 
 ## Prerequisites
@@ -29,6 +27,7 @@ If you don't have access, you can [skip this lesson](install-sdks.md).
 In this lesson, you will:
 
 * Create an Experience Platform dataset.
+* Configure your datastream to forward data to Experience Platform.
 * Validate data in the dataset.
 * Enable your schema and dataset for Real-Time Customer Profile.
 * Validate data in Real-Time Customer Profile.
@@ -37,43 +36,68 @@ In this lesson, you will:
 
 ## Create a dataset
 
-All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A dataset is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. See the [documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) for information.
+All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A dataset is a storage and management construct for a collection of data (typically a table) that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. See the [documentation](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html) for information.
 
-1. Navigate to the Experience Platform interface by selecting it from the 3x3 menu in the top right.
-![dataset menu](assets/mobile-dataset-menu.png)
+1. Navigate to the Experience Platform interface by selecting it from the Apps ![Apps](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Apps_18_N.svg) menu in the top right.
+
 
 1. Select **[!UICONTROL Datasets]** from the left navigation menu.
 
-1. **[!UICONTROL Create dataset]**.
-![dataset home](assets/mobile-dataset-home.png)
+1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Create dataset]**.
 
 1. Select **[!UICONTROL Create dataset from schema]**.
-![dataset home](assets/mobile-dataset-create.png)
+![dataset home](assets/dataset-create.png)
 
-1. Search for your schema and select.
+1. Search for your schema. for example using `Luma Mobile` in the search field.
+1. Select your schema, for example **[!DNL Luma Mobile App Event Schema]**.
 
 1. Select **[!UICONTROL Next]**.
-![dataset configure](assets/mobile-dataset-configure.png)
+   ![dataset configure](assets/dataset-configure.png)
 
-1. Provide a **[!UICONTROL Name]**, **[!UICONTROL Description]**, and select **[!UICONTROL Finish]**.
-![dataset finish](assets/mobile-dataset-finish.png)
+1. Provide a **[!UICONTROL Name]**, for example `Luma Mobile App Events Dataset` and a **[!UICONTROL Description]**.
 
-## Update the datastream
+1. Select **[!UICONTROL Finish]**.
+   ![dataset finish](assets/dataset-finish.png)
 
-Once you have created your dataset, be sure to [update your datastream](create-datastream.md) to add Adobe Experience Platform. This update ensures data flows into Platform. 
+
+## Add Adobe Experience Platform datastream service
+
+To send your XDM data from the Edge Network to Adobe Experience Platform, add the Adobe Experience Platform service to the datastream you set up as part of [Create a datastream](create-datastream.md).
+
+>[!IMPORTANT]
+>
+>You can only enable the Adobe Experience Platform service when having created an event dataset.
+
+1. In the Data Collection UI, select **[!UICONTROL Datastreams]** and your datastream. 
+   
+1. Then select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add Service]**.
+
+1. Select **[!UICONTROL Adobe Experience Platform]** from the [!UICONTROL Service] list.
+
+1. Enable the service by switching **[!UICONTROL Enabled]** on.
+
+1. Select the **[!UICONTROL Event Dataset]** that you created earlier , for example **[!DNL Luma Mobile App Event Dataset]**.
+
+1. Select **[!UICONTROL Save]**.
+
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+1. The final configuration should look something like this.
+   
+   ![datastream settings](assets/datastream-settings.png)
+
 
 ## Validate data in the dataset
 
-Now that you have created a dataset and updated your datastream to send data to Experience Platform, all XDM data send to Platform Edge Network is forwarded to Platform and land in the dataset.
+Now that you have created a dataset and updated your datastream to send data to Experience Platform, all XDM data send to Platform Edge Network is forwarded to Platform and lands in the dataset.
 
 Open the app and navigate to screens where you are tracking events. You can also trigger lifecycle metrics.
 
-Open your dataset in the Platform interface. You should see the data arriving in batches to the dataset
+Open your dataset in the Platform interface. You should see the data arriving in batches to the dataset. The data typically arrives in microbatches every 15 minutes, so you might not see your data immediately.
 
-![validate data landing Platform dataset batches](assets/mobile-platform-dataset-batches.png)
+![validate data landing Platform dataset batches](assets/platform-dataset-batches.png)
 
 You should also be able to see example records and fields using the **[!UICONTROL Preview dataset]** feature:
-![validate lifecycle sent to Platform dataset](assets/mobile-lifecycle-platform-dataset.png)
+![validate lifecycle sent to Platform dataset](assets/lifecycle-platform-dataset.png)
 
 A more robust tool for validating data is Platform's [query service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html).
 
@@ -83,53 +107,61 @@ Experience Platform's Real-Time Customer Profile allows you to build a holistic 
 
 ### Enable the schema
 
-1. Open your schema
-1. Enable **[!UICONTROL Profile]**
-1. Select **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]** in the modal
-1. **[!UICONTROL Save]** the schema
+1. Open your schema, for example **[!DNL Luma Mobile App Event Schema]**.
+1. Enable **[!UICONTROL Profile]**.
+1. Select **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]** in the  dialog.
+1. **[!UICONTROL Save]** the schema.
 
-    ![enable the schema for profile](assets/mobile-platform-profile-schema.png)
+    ![enable the schema for profile](assets/platform-profile-schema.png)
 
 ### Enable the dataset
 
-1. Open your dataset
-1. Enable **[!UICONTROL Profile]**
+1. Open your dataset, for example **[!DNL Luma Mobile App Event Dataset]**.
+1. Enable **[!UICONTROL Profile]**.
 
-    ![enable the dataset for profile](assets/mobile-platform-profile-dataset.png)
+    ![enable the dataset for profile](assets/platform-profile-dataset.png)
 
 ### Validate data in Profile
 
-Open the app and navigate to screens where you are tracking events. Log in to the Luma app and make a purchase.
+Open the app and navigate to screens where you are tracking events, for example: log in to the Luma app and make a purchase.
 
-Use Assurance to find one of the identities passed in the identityMap (Email, lumaCrmId, or ECID):
+Use Assurance to find one of the identities passed in the identityMap (Email, lumaCrmId, or ECID), for example the CRM Id.
 
->[!TIP]
->
->   The value of the `lumaCrmId` is `112ca06ed53d3db37e4cea49cc45b71e`
+![grab an identity value](assets/platform-identity.png)
 
-    
-![grab an identity value](assets/mobile-platform-identity.png)
+In the Platform interface, 
 
-In the Platform interface, navigate to **[!UICONTROL Profiles]** > **[!UICONTROL Browse]**, lookup the identity value you just grabbed, and open the profile:
+1. Navigate to **[!UICONTROL Profiles]**, and select **[!UICONTROL Browse]** from the top bar. 
+1. Specify the identity details you just grabbed, for example `Luma CRM ID` for **[!UICONTROL Identity namespace]** and the value you copied for **[!UICONTROL Identity value]**. Then select **[!UICONTROL View]**.
+1. To view details, select the profile.
 
-![look up an identity value](assets/mobile-platform-profile-lookup.png)
+![look up an identity value](assets/platform-profile-lookup.png)
 
-On the **[!UICONTROL Detail]** screen you can see basic info about the user, including the **[!UICONTROL **linked identities**]**:
-![profile details](assets/mobile-platform-profile-details.png)
+On the **[!UICONTROL Detail]** screen, you can see basic info about the user, including the **[!UICONTROL **linked identities**]**:
+![profile details](assets/platform-profile-details.png)
 
 On the **[!UICONTROL Events]**, you can see the events collected from your mobile app implementation for this user:
 
-![profile events](assets/mobile-platform-profile-events.png)
+![profile events](assets/platform-profile-events.png)
 
 
-From the profile detail screen, click the link to view the identity graph or navigate to **[!UICONTROL Identities]** > **[!UICONTROL Identity Graph]** and lookup the identity value. This visualization shows you all of the identities that are linked together in a profile and their origin. Here is an example of an identity graph constructed of data collected from completing both this Mobile SDK tutorial (Data Source 2) and the [Web SDK tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Data Source 1):
+From the profile detail screen:
 
-![grab an identity value](assets/mobile-platform-profile-identitygraph.png)
+1. To view the identity graph, click the link or navigate to **[!UICONTROL Identities]**, then select **[!UICONTROL Identity Graph]** from the top bar.
+1. To look up the identity value, specify `Luma CRM ID` as the **[!UICONTROL Identity namespace]** and the copied value as the **[!UICONTROL Identity value]**. Then select **[!UICONTROL View]**.
+   
+   This visualization shows you all of the identities that are linked together in a profile and their origin. Here is an example of an identity graph constructed of data collected from completing both this Mobile SDK tutorial (Data Source 2) and the [Web SDK tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Data Source 1):
+
+   ![grab an identity value](assets/platform-profile-identitygraph.png)
+
+
+## Next steps
 
 There is a lot more that marketers and analytics can do with data captured in Experience Platform, including analyzing it in Customer Journey Analytics and building segments in Real-Time Customer Data Platform. You are off to a good start!
 
-Next: **[Push messaging with Journey Optimizer](journey-optimizer-push.md)**
 
->[!NOTE]
+>[!SUCCESS]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796)
+>You have now set up your app to send data not only to the Edge Network but also to Adobe Experience Platform.<br>Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
+
+Next: **[Create and send push notifications](journey-optimizer-push.md)**
