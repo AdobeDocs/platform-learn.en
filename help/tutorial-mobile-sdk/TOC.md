@@ -10,7 +10,7 @@ jira: KT-6987
 recommendations: noDisplay,noCatalog
 ---
 
-# Implement the Experience Cloud in mobile apps {#implement-mobile-sdk-new}
+# Implement the Experience Cloud in mobile apps {#implement-mobile-sdk}
 
 + [Tutorial Overview](overview.md)
 + Initial configuration {#initial-configuration}
