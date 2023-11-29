@@ -1,5 +1,5 @@
 ---
-title: Perform A/B Tests with Target
+title: Perform A/B Tests in mobile apps with Target and Platform Mobile SDK
 description: Learn how to use a Target A/B test in your mobile app with Platform Mobile SDK and Adobe Target.
 solution: Data Collection,Target
 feature-set: Target

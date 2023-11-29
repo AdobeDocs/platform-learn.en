@@ -1,5 +1,5 @@
 ---
-title: Create and display offers
+title: Create and display offers with Platform Mobile SDK
 description: Learn how to create and display offers with Platform Mobile SDK and Adobe Journey Optimizer Decision Management.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer

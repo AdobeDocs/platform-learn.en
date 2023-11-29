@@ -1,5 +1,5 @@
 ---
-title: Conclusion and next steps
+title: Conclusion and next steps after completing the Platform Mobile SDK tutorial
 description: What to do next after completing the tutorial
 recommendations: display,noCatalog
 exl-id: 69db6cf3-0d5d-4864-aac2-e5e1aea4c02e

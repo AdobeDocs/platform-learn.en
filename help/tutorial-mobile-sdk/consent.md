@@ -1,5 +1,5 @@
 ---
-title: Implement consent
+title: Implement consent for Platform Mobile SDK implementations
 description: Learn how to implement consent in a mobile app.
 feature: Mobile SDK,Consent
 exl-id: 08042569-e16e-4ed9-9b5a-864d8b7f0216

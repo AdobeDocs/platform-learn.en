@@ -1,5 +1,5 @@
 ---
-title: Send data to Experience Platform
+title: Send data to Experience Platform with Platform Mobile SDK
 description: Learn how to send data to Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion

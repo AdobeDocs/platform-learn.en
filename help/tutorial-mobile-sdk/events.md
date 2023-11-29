@@ -1,5 +1,5 @@
 ---
-title: Track event data
+title: Track event data in mobile apps with Platform Mobile SDK
 description: Learn how to track event data in a mobile app.
 exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
 ---

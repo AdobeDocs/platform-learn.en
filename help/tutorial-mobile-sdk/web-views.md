@@ -1,5 +1,5 @@
 ---
-title: Handle WebViews
+title: Handle WebViews with Platform Mobile SDK
 description: Learn how to handle data collection with WebViews in a mobile app.
 jira: KT-6987
 exl-id: 9b3c96fa-a1b8-49d2-83fc-ece390b9231c

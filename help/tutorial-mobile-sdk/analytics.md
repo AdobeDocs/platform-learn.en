@@ -1,5 +1,5 @@
 ---
-title: Map data to Analytics data
+title: Map data collected with Platform Mobile SDK to Adobe Analytics
 description: Learn how to collect and map data for Adobe Analytics in a mobile app.
 solution: Data Collection,Experience Platform,Analytics
 exl-id: 406dc687-643f-4f7b-a8e7-9aad1d0d481d

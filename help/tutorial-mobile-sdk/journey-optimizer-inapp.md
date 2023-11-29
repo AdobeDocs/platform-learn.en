@@ -1,5 +1,5 @@
 ---
-title: Create and send in-app messages
+title: Create and send in-app messages with Platform Mobile SDK
 description: Learn how to create and send in-app messages to a mobile app with Platform Mobile SDK and Adobe Journey Optimizer.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer

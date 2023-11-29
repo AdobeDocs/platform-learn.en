@@ -1,5 +1,5 @@
 ---
-title: Create and send push notifications
+title: Create and send push notifications with Platform Mobile SDK
 description: Learn how to create push notifications to a mobile app with Platform Mobile SDK and Adobe Journey Optimizer.
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer

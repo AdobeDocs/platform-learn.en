@@ -1,5 +1,5 @@
 ---
-title: Configure a datastream
+title: Configure a datastream for Platform Mobile SDK implementations
 description: Learn how to create a datastream in Experience Platform.
 feature: Mobile SDK,Datastreams
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
