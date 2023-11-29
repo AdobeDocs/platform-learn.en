@@ -75,6 +75,10 @@ In these lessons, it is assumed that you have an Adobe Id and the required user-
 >
 >As part of this tutorial, you create schemas, datasets, identities, and so on. If multiple people are going through this tutorial in a single sandbox, consider appending or prepending an identification as part of your naming conventions when creating these objects. For example, add ` - <your name or initials>` to the name of the object you are instructed to create.
 
+## Version history
+
+* Nov. 29, 2023: Major overhaul with new sample app and new lessons for in-app messaging, decision management, and Adobe Target.
+* Mar. 9, 2022: First publish
 
 ## Download the Luma app
 
