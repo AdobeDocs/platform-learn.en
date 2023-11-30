@@ -75,7 +75,7 @@ This object:
 results in:
 
 ```
-s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
+s.products = ";5829,1,49.99;9841,3,30.00"
 ```
 
 >[!NOTE]
