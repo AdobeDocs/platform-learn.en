@@ -176,7 +176,7 @@ Let's create another rule
 
 1. In the **[!UICONTROL Create Rule]** screen, enter a name for the rule, for example `POI - Exit`.
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL EVENTS]**.
-   1. Select **[!UICONTROL Places]** from the **[!UICONTROL Extension]** list and select **[!UICONTROL Enter POI]** from the **[!UICONTROL Event Type]** list.
+   1. Select **[!UICONTROL Places]** from the **[!UICONTROL Extension]** list and select **[!UICONTROL Exit POI]** from the **[!UICONTROL Event Type]** list.
    1. Select **[!UICONTROL Keep Changes]**. 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ACTIONS]**.
    1. Select **[!UICONTROL Mobile Core]** from **[!UICONTROL Extension]** list, select **[!UICONTROL Attach Data]** from **[!UICONTROL Action Type]** list.
