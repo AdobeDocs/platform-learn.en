@@ -80,7 +80,7 @@ s.products = ";Yoga Mat;1;49.99,;Water Bottle,3,30.00"
 
 >[!NOTE]
 >
->Currently `productListItems[N].SKU` is ignored by automatic mapping.
+>If `productListItems[].SKU` and `productListItems[].name` both contain data, the value in `productListItems[].SKU` is used. See [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en) for more information. 
 
 
 ### Example #2 - scAdd
