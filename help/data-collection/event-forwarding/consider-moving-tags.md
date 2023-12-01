@@ -25,7 +25,7 @@ Browser vendors are changing how they treat third party cookies. Advertising and
 
 ## Use cases and data {#use-cases-data}
 
-The first step is to define the use cases implemented with the client-side vendor tag. For example, consider the Facebook (Meta) pixel. Moving it from our site to the [Facebook Conversions API](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) with the event forwarding extension means documenting the specific use cases first.
+The first step is to define the use cases implemented with the client-side vendor tag. For example, consider the Facebook (Meta) pixel. Moving it from our site to the [Meta Conversions API](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) with the event forwarding extension means documenting the specific use cases first.
 
 For the current client-side vendor code:
 
