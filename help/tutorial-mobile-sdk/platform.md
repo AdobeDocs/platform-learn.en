@@ -3,6 +3,7 @@ title: Send data to Experience Platform with Platform Mobile SDK
 description: Learn how to send data to Experience Platform.
 solution: Data Collection,Experience Platform
 feature: Mobile SDK,Data Ingestion
+jira: KT-14637
 exl-id: fdd2c90e-8246-4d75-a6db-df3ef31946c4
 ---
 # Send data to Experience Platform

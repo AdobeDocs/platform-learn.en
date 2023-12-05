@@ -2,6 +2,7 @@
 title: Create an XDM schema for Platform Mobile SDK implementations
 description: Learn how to create an XDM schema for mobile app events.
 feature: Mobile SDK,Schemas
+jira: KT-14624
 exl-id: c6b0d030-437a-4afe-b7d5-5a7831877983
 ---
 # Create an XDM schema

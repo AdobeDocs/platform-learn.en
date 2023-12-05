@@ -2,6 +2,7 @@
 title: Configure a datastream for Platform Mobile SDK implementations
 description: Learn how to create a datastream in Experience Platform.
 feature: Mobile SDK,Datastreams
+jira: KT-14625
 exl-id: 7b83f834-d1fb-45d1-8bcf-bc621f94725c
 ---
 # Create a datastream

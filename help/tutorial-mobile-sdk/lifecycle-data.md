@@ -1,6 +1,7 @@
 ---
 title: Collect lifecycle data with Platform Mobile SDK
 description: Learn how to collect lifecycle data in a mobile app.
+jira: KT-14630
 exl-id: 75b2dbaa-2f84-4b95-83f6-2f38a4f1d438
 ---
 # Collect lifecycle data
