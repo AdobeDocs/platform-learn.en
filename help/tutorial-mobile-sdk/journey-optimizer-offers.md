@@ -4,6 +4,7 @@ description: Learn how to create and display offers with Platform Mobile SDK and
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Offers
+jira: KT-14640
 exl-id: c08a53cb-683e-4487-afab-fd8828c3d830
 ---
 # Create and display offers with Decision Management

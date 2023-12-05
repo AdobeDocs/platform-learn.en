@@ -2,6 +2,7 @@
 title: Collect identity data in a mobile app with Mobile SDK
 description: Learn how to collect identity data in a mobile app.
 feature: Mobile SDK,Identities
+jira: KT-14633
 exl-id: cbcd1708-29e6-4d74-be7a-f75c917ba2fa
 ---
 # Collect identity data

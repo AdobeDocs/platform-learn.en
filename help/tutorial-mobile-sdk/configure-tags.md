@@ -2,6 +2,7 @@
 title: Configure a tag property for Platform Mobile SDK implementations
 description: Learn how to configure a tag property in the [!UICONTROL Data Collection] interface.
 feature: Mobile SDK,Tags
+jira: KT-14626
 exl-id: 0c4b00cc-34e3-4d08-945e-3fd2bc1b6ccf
 ---
 # Configure a tag property

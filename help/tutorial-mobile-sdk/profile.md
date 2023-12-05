@@ -1,6 +1,7 @@
 ---
 title: Collect profile data with Platform Mobile SDK
 description: Learn how to collect profile data in a mobile app.
+jira: KT-14634
 exl-id: 97717611-04d9-45e3-a443-ea220a13b57c
 ---
 # Collect profile data

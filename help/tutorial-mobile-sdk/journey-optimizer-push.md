@@ -4,6 +4,7 @@ description: Learn how to create push notifications to a mobile app with Platfor
 solution: Data Collection,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Push
+jira: KT-14638
 exl-id: e8e920d5-fd36-48b7-9185-a34231c0d336
 ---
 # Create and send push notifications
