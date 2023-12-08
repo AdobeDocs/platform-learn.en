@@ -34,9 +34,9 @@ auto-video-transcripts: true
   + [Use alerts](/help/platform/admin/use-alerts.md)
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
   + [Copy objects between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+  + [Add users](/help/platform/admin/add-users.md)
+  + [Add product administrators](/help/platform/admin/add-product-administrators.md)
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
-  + [Admin Console](/help/platform/admin/admin-console.md)
-  + [Manage product profiles](/help/platform/admin/managing-product-profiles.md)
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
@@ -153,6 +153,7 @@ auto-video-transcripts: true
   + [View account profiles](/help/platform/profiles/view-account-profiles.md)
   + [Create merge policies](/help/platform/profiles/create-merge-policies.md)
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
+  + [Create a computed attribute](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
   + [Update a specific attribute using upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy and Security {#privacy}
   + [Introduction to Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
