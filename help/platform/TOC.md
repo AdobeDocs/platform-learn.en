@@ -35,6 +35,7 @@ auto-video-transcripts: true
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
   + [Copy objects between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
   + [Add users](/help/platform/admin/add-users.md)
+  + [Add developers](/help/platform/admin/add-developers.md)
   + [Add product administrators](/help/platform/admin/add-product-administrators.md)
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
 + Audiences and Segmentation {#audiences}
