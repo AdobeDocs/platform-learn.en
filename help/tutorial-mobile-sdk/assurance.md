@@ -51,19 +51,17 @@ In addition to the general [SDK installation](install-sdks.md), you completed in
 
 More information can be found [here](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
 
-<!-- not initially required
 
-## Signing
 
-Signing the application is only required for the [Create and send push notifications](journey-optimizer-push.md) and the [Create and send in-app messages](journey-optimizer-inapp.md) lessons in this tutorial. These lessons require an Apple provisioning profile which **requires a paid Apple developer account**.
+## Define bundle identifier
 
-To update the signing for the lessons that require that you sign the application:
+You need to provide a unique bundle identifier for your app.
 
 1. Open the project in Xcode.
 1. Select **[!DNL Luma]** in the Project navigator.
 1. Select the **[!DNL Luma]** target.
 1. Select the **Signing & Capabilities** tab.
-1. Configure **[!UICONTROL Automatic manage signing]**, **[!UICONTROL Team]**, and **[!UICONTROL Bundle Identifier]**, or use your specific Apple development provisioning details. 
+1. Define a **[!UICONTROL Bundle Identifier]**. 
  
    >[!IMPORTANT]
    >
@@ -72,7 +70,6 @@ To update the signing for the lessons that require that you sign the application
 
     ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
--->
 
 ## Set up a base URL
 
@@ -87,7 +84,7 @@ To update the signing for the lessons that require that you sign the application
 
    >[!IMPORTANT]
    >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`.<br/>Similarly, use a unique URL scheme, and replace the already provided `lumatutorialswiftui` with your unique URL scheme.
+   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. You can use the same bundle identifier that you have used at [Define bundle identifier](#define-bundle-identifier).<br/>Similarly, use a unique URL scheme, and replace the already provided `lumatutorialswiftui` with your unique URL scheme.
 
 To learn more about URL Schemes in iOS, review [Apple's documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
