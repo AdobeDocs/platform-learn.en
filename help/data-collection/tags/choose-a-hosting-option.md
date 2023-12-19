@@ -1,5 +1,5 @@
 ---
-title: Choose a hosting option for your tag library (formerly Launch library)
+title: Choose a hosting option for your tag library
 description: Learn how to choose the best hosting option for your tag library.
 feature: Tags
 level: Beginner
