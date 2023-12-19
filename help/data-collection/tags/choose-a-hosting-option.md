@@ -10,8 +10,4 @@ exl-id: adc00363-7490-44ab-95e2-46f9f630021c
 
 Learn how to choose the best hosting option for your tag library.
 
->[!NOTE]
->
-> Launch is now **[!DNL tags]**
-
 >[!VIDEO](https://video.tv.adobe.com/v/28728/?learn=on)
