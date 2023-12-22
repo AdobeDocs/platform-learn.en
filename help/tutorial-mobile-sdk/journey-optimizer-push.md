@@ -327,6 +327,7 @@ Your next step is to create the journey that triggers the sending of the push no
        In the **[!UICONTROL Push Notification]** editor:
 
        1. Enter a **[!UICONTROL Title]**, for example `Luma Test Push Notification` and enter a **[!UICONTROL Body]**, for example `Test push notification for Luma mobile app`.
+       1. Optionally, you can enter a link to an image (.png or .jpg) in **[!UICONTROL Add media]**. If you do so, the image will be part of the push notification.
        1. To save and leave the editor, select ![Chevron left](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
           ![Push editor](assets/ajo-push-editor.png)
 
