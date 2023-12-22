@@ -73,7 +73,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 1. To save your datastream configuration, select **[!UICONTROL Save]**.
 
 
-   ![AEP datastream configuration](assets/datastream-aep-configuration.png)
+   ![AEP datastream configuration](assets/datastream-ajo-inapp-configuration.png)
 
 
 ### Install Journey Optimizer tags extension
@@ -85,16 +85,9 @@ For your app to work with Journey Optimizer, you must update your tag property.
 1. Select **[!UICONTROL Catalog]**.
 1. Search for the **[!UICONTROL Adobe Journey Optimizer]** extension.
 1. Install the extension.
-1. In the **[!UICONTROL Install Extension]** dialog
-   1. Select an environment, for example **[!UICONTROL Development]**.
-   1. Select the **[!UICONTROL AJO Push Tracking Experience Event Dataset]** dataset from the **[!UICONTROL Event Dataset]** list.
-   1. Select **[!UICONTROL Save to Library and Build]**.
-       ![AJO extension settings](assets/push-tags-ajo.png)
 
->[!NOTE]
->
->If you don't see `AJO Push Tracking Experience Event Dataset` as an option, contact customer care.
->
+When *only* using in-app messages in your app, in **[!UICONTROL Install Extension]** or **[!UICONTROL Configure Extension]**, you do not need to configure anything. However, if you already have followed the [Push notifications](journey-optimizer-push.md) lesson in the tutorial, you will see that for the **[!UICONTROL Development]** environment, the **[!UICONTROL AJO Push Tracking Experience Event Dataset]** dataset is selected from the **[!UICONTROL Event Dataset]** list.
+
 
 ### Implement Journey Optimizer in the app
 
