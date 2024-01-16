@@ -8,9 +8,11 @@ role: Developer
 level: Beginner,Intermediate
 jira: KT-6987
 recommendations: noDisplay,noCatalog
+index: no
+hide: yes
 ---
 
-# Implement the Experience Cloud in mobile apps {#implement-mobile-sdk}
+# Implement the Experience Cloud in mobile apps {#implement-mobile-sdk-new}
 
 + [Tutorial Overview](overview.md)
 + Initial configuration {#initial-configuration}

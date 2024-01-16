@@ -1,6 +1,7 @@
 ---
 title: Stream data to Adobe Experience Platform with Web SDK
 description: Learn how to stream web data to Adobe Experience Platform with Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
+exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
 ---
 # Stream data to Experience Platform with Web SDK
  
@@ -24,7 +25,6 @@ At the end of this lesson, you will be able to:
 You should have already completed the following lessons:
 
 * The **Initial Configuration** lessons:
-  * [Configure permissions](configure-permissions.md)
   * [Configure an XDM schema](configure-schemas.md)
   * [Configure a datastream](configure-datastream.md)
   * [Configure an identity namespace](configure-identities.md)
@@ -32,6 +32,7 @@ You should have already completed the following lessons:
 * The **Tags Configuration** lessons:
   * [Install Web SDK extension](install-web-sdk.md)
   * [Create data elements](create-data-elements.md)
+  * [Create identities](create-identities.md)
   * [Create tag rules](create-tag-rule.md)
 
 
@@ -48,7 +49,7 @@ In this exercise, you create a dataset to track content and e-commerce details f
 
 1. Go to the [Experience Platform interface](https://experience.adobe.com/platform/)
 1. Confirm you are in the development sandbox you are using for this tutorial
-1. Open **[!UICONTROL Datasets]** from the left navigation
+1. Open **[!UICONTROL Data Management > Datasets]** from the left navigation
 1. Select **[!UICONTROL Create dataset]**
 
     ![Create schema](assets/experience-platform-create-dataset.png)
@@ -86,7 +87,7 @@ Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL A
 
      ![Datastream Config](assets/experience-platform-datastream-config.png)
 
-As you generate traffic in on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) mapped to your tag property, the data will populate the dataset in Experience Platform!
+As you generate traffic on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) mapped to your tag property, the data will populate the dataset in Experience Platform!
 
 ## Validate the dataset
 
@@ -123,7 +124,7 @@ Now data should be populated in the `Luma Web Event Data` dataset and ready for 
 
 To confirm that the data has landed in Platform's data lake, a quick option is to use the **[!UICONTROL Preview dataset]** feature. Web SDK data is micro-batched to the data lake and refreshed in the Platform interface on a periodic basis. It might take 10-15 minutes to see the data that you generated.
 
-1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Datasets]** in the left-navigation to open the **[!UICONTROL Datasets]** dashboard. 
+1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Data Management > Datasets]** in the left-navigation to open the **[!UICONTROL Datasets]** dashboard. 
 
     The dashboard lists all available datasets for your organization. Details are displayed for each listed dataset, including its name, the schema the dataset adheres to, and status of the most recent ingestion run.
 
@@ -214,7 +215,7 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Profiles]** in the left-navigation
 
 1. As the **[!UICONTROL Identity namespace]** use `lumaCRMId`
-1. Copy & paste the value of the `lumaCRMId` passed in the call you inspected in the Experience Platform Debugger (probably `112ca06ed53d3db37e4cea49cc45b71e`).
+1. Copy & paste the value of the `lumaCRMId` passed in the call you inspected in the Experience Platform Debugger, in this case `112ca06ed53d3db37e4cea49cc45b71e`.
 
     ![Profile](assets/experience-platform-validate-dataset-profile.png)
 
@@ -222,15 +223,22 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 
     ![Profile](assets/experience-platform-validate-dataset-profile-set.png)
 
-1. Click into the [!UICONTROL Profile ID] and a [!UICONTROL Customer profile] console populates. Here you can see all the identities linked to the `lumaCRMId`, such as the `ECID`:
+1. To view the full **[!UICONTROL Customer Profile]** for each ID, select the **[!UICONTROL Profile ID]** in the main window. 
+
+    >[!NOTE]
+    >
+    >Note you can select the hyperlink of the Profile ID, or if you select the row then a right menu opens where you can select the Profile ID hyperlink 
+    > ![Customer profile](assets/experience-platform-select-profileId.png)
+
+    Here you can see all the identities linked to the `lumaCRMId`, such as the `ECID`. 
 
     ![Customer profile](assets/experience-platform-validate-dataset-custProfile.png)
 
-You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP! And Customer Journey Analytics! And Journey Optimizer!)!
+You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP! And Journey Optimizer!)!
 
 
 [Next: **Set up Adobe Analytics**](setup-analytics.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
