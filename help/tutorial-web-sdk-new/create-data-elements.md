@@ -5,7 +5,7 @@ feature: Tags
 ---
 # Create data elements
 
-Learn how to create the essential data elements needed to capture data with Experience Platform Web SDK. Capture both content and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Learn how to use the XDM schema you created earlier for collecting data using Platform Web SDK through a new data element type called XDM Object. 
+Learn how to create the essential data elements needed to capture data with Experience Platform Web SDK. Capture both content and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Learn how to use the XDM schema you created earlier for collecting data using Platform Web SDK data element type called Variable. 
 
 >[!NOTE]
 >
@@ -16,33 +16,37 @@ Learn how to create the essential data elements needed to capture data with Expe
 >The data for this lesson comes from the `[!UICONTROL digitalData]` data layer on the Luma site. To view the data layer, open your developer console and type in `[!UICONTROL digitalData]` to see the full data layer available.![digitalData data layer](assets/data-element-data-layer.png)
 
 
-Regardless of Platform Web SDK, you must continue to create data elements inside your tag property that map to data collection variables from your website, such as a data layer, HTML attribute, or others. Once you create those data elements, you must map them to the XDM schema you created during the [configure schemas](configure-schemas.md) lesson. To do this, Platform Web SDK extension makes available a new data element type called XDM object. Therefore, creating data elements consists of two actions: 
+Regardless of Platform Web SDK, you must continue to create data elements inside your tags property that map to data collection variables from your website, such as a data layer, HTML attribute, or others. Once you create those data elements, you must map them to the XDM schema you created during the [configure schemas](configure-schemas.md) lesson. Therefore, creating data elements consists of two actions: 
 
 1. Mapping website variables to data elements, and 
 1. Mapping those data elements to an XDM object
 
-For step 1, you continue to map your data layer to data elements the way you currently do, using any of the Core tag extension's data element types. For step 2, Platform Web SDK extension creates a set of new data element types not previously available: 
+For step 1, you continue to map your data layer to data elements the way you currently do, using any of the Core tag extension's data element types. For step 2, Platform Web SDK extension has the following data element types available: 
 
 * Event merge ID
 * Identity map
+* Variable
 * XDM object
 
-This lesson focuses on XDM object and identity map data element types. You will create XDM objects to capture Luma visitors' activity and authentication status. 
+This lesson focuses on the Variable data element type. You create a data element to capture Luma visitors' activity based on the available data layer on the Luma site. In the next lesson, you will learn about Identity map. 
+
+>[!NOTE]
+>
+> Event merge ID and XDM object data element types are rarely used for edge cases.
 
 ## Learning objectives
 
 At the end of this lesson, you are able to:
 
-* Create data elements to capture content and user login ID data
-* Create an identity map data element
+* Understand different approaches to mapping a data layer to XDM
+* Create data elements to capture content data
 * Map data elements to an XDM object data element
 
 
 ## Prerequisites 
 
-You have an understanding of what a data layer is, gotten familiar with the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} data layer, and know how to reference data elements in tags. You must have completed the following previous steps in the tutorial
+You have an understanding of what a data layer is, gotten familiar with the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} data layer, and know how to reference data elements in tags. You must have completed the following previous steps in the tutorial.
 
-* [Configure permissions](configure-permissions.md)
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)
 * [Configure a datastream](configure-datastream.md)
@@ -52,9 +56,120 @@ You have an understanding of what a data layer is, gotten familiar with the [Lum
 >
 >The [Experience Cloud ID Service extension](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is not needed when implementing Adobe Experience Platform Web SDK, as the ID Service functionality is built into Platform Web SDK.
 
+## Data Layer approaches
+
+There are multiple ways to map data from your data layer to XDM using the tags functionality of Adobe Experience Platform. Below are a few pros and cons of three different approaches:
+
+* [Implement XDM in the data layer](create-data-elements.md#implement-xdm-in-the-data-layer)
+* [Map to XDM in the datastream](create-data-elements.md#map-to-xdm-in-the-datastream)
+* [Map to XDM in tags](create-data-elements.md#map-data-layer-in-tags)
+
+>[!NOTE]
+>
+>The examples in this tutorial follow the Map to XDM in tags approach.
+
+
+### Implement XDM in the data layer
+
+This approach involves using the fully defined XDM object as the structure for your data layer. Then you map the entire data layer to an XDM object data element in Adobe Tags. If your implementation is not using a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). If you do you use Adobe tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
+
+Below is an example of how the data layer would look like using the Adobe Client Data Layer format:
+
++++XDM in Data Layer example
+
+```JSON
+window.adobeDataLayer.push({
+"eventType": "web.webPageDetails.pageViews",
+"web":{
+         "webInteraction":{
+            "linkClicks":{
+               "id":"",
+               "value":""
+            },
+            "URL":"",
+            "name":"",
+            "region":"",
+            "type":""
+         },
+         "webPageDetails":{
+            "pageViews":{
+               "id":"",
+               "value":"1"
+            },
+            "URL":"https://luma.enablementadobe.com/",
+            "isErrorPage":"",
+            "isHomePage":"",
+            "name":"luma:home",
+            "server":"enablementadobe.com",
+            "siteSection":"home",
+            "viewName":""
+         },
+         "webReferrer":{
+            "URL":"",
+            "type":""
+         }
+      }
+});
+```
+
++++
+
+Pros
+
+* Skips steps to map individual data layer variables to XDM
+* May be quicker to deploy if your development team owns tagging digital behavior
+
+Cons
+
+* Complete reliance on development team and dev cycle for updating what data goes to XDM
+* Limited flexibility as XDM receives the exact payload from the data layer 
+* Cannot use tags built-in features, such as scraping, persistence, features for quick deployments
+* Cannot use the data layer for third-party pixels
+* No ability to transform the data between the data layer and XDM
+
+### Map to XDM in the datastream
+
+This approach uses functionality built-into the datastream configuration called [Data Prep for Data Collection](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) and skips mapping data layer variables to XDM in tags. 
+
+Pros
+
+* Flexible as you can map individual variables to XDM
+* Ability to [compute new values](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) or [transform data types](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) from a data layer before it goes to XDM 
+* Leverage a [Mapping UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) to map fields in your source data to XDM with a point-and-click UI
+
+Cons
+
+* Cannot use data layer variables as data elements for client-side third-party pixels, but can use them with Adobe tags event-forwarding
+* Cannot use the scraping functionality of the tags feature of Adobe Experience Platform 
+* Maintenance complexity increases if mapping the data layer both in tags and in datastream 
+
+### Map data layer in tags 
+
+This approach involves mapping individual data layer variables OR data layer objects to data elements in tags and eventually to XDM. This is the traditional approach to implementation using a tag management system. 
+
+Pros
+
+* The most flexible approach as you can control individual variables and transform data before it gets to XDM
+* Can use Adobe tags triggers and scraping functionality to pass data to XDM
+* Can map data elements to third-party pixels client-side
+
+Cons
+
+* May take longer to implement
+
+>[!TIP] 
+>
+> Google Data Layer
+> 
+> If your organization already uses Google Analytics and has the traditional Google dataLayer object on your website, you can use the [Google Data Layer extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in Adobe Tags. This allows you to deploy Adobe technology quicker without having to request support from your IT team. Mapping the Google data layer to XDM would follow the same steps as above.
+
+>[!IMPORTANT]
+>
+>As noted earlier, the examples in this tutorial follow the Map to XDM in tags approach.
+
 ## Create data elements to capture the data layer
 
-Before you begin creating the XDM object, create the following set of data elements mapping to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} data layer:
+Before you create the XDM object, create the following set of data elements for the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} data layer:
 
 1. Go to **[!UICONTROL Data Elements]** and select **[!UICONTROL Add Data Element]** (or **[!UICONTROL Create New Data Element]** if there are no existing data elements in the tag property)
 
@@ -71,7 +186,7 @@ Before you begin creating the XDM object, create the following set of data eleme
 
     ![Page Name Data Element](assets/data-element-pageName.jpg)
 
-Follow the same steps to create these four additional data elements:
+Create these four additional data elements by following the same steps:
 
 * **`page.pageInfo.server`**  mapped to 
 `digitalData.page.pageInfo.server`
@@ -85,81 +200,30 @@ Follow the same steps to create these four additional data elements:
 * **`user.profile.attributes.loggedIn`** mapped to
 `digitalData.user.0.profile.0.attributes.loggedIn`
 
-* **`cart.orderId`** mapped to `digitalData.cart.orderId` (you will use this during the [Setup Analytics](setup-analytics.md) lesson)
+* **`cart.orderId`** mapped to `digitalData.cart.orderId` (you use this during the [Setup Analytics](setup-analytics.md) lesson)
 
 
 >[!CAUTION]
 >
 >The [!UICONTROL JavaScript variable] data element type treats array references as dots instead of brackets, so referencing the username data element as `digitalData.user[0].profile[0].attributes.username` **will not work**.
 
-## Create Identity Map Data Element
+## Create Variable data element
 
-Next you can create the Identity Map data element:
+After you create the data elements, map them to the XDM using the **[!UICONTROL Variable]** data element that defines the schema used for the XDM object. This object should conform to the XDM schema you created during the [Configure a schema](configure-schemas.md) lesson. 
 
-1. Go to **[!UICONTROL Data Elements]** and select **[!UICONTROL Add Data Element]**
+To create the Variable data element:
 
-1. **[!UICONTROL Name]** the Data Element `identityMap.loginID`
-
-1. As the **[!UICONTROL Extension]**, select `Adobe Experience Platform Web SDK`
-
-1. As the **[!UICONTROL Data Element Type]**, select `Identity map`
-
-1. This prompts a screen area to the right within the **[!UICONTROL Data Collection interface]** for you to configure the identity:
-   
-   ![Data Collection interface](assets/identity-identityMap-setup.png)
-
-1. As the  **[!UICONTROL Namespace]**, select the `Luma CRM Id` namespace that you previously created in the [Configure Identities](configure-identities.md) lesson.
-
-    >[!NOTE]
-    >
-    >    If you don't see your `Luma CRM Id` namespace, verify that you also created it in your default production sandbox. Only namespaces created in the default production sandbox currently display in the namespace dropdown.
-
-1. After the **[!UICONTROL Namespace]** is selected, an ID must be set. Select the `user.profile.attributes.username` data element created earlier in this lesson, which captures an ID when users are logged into the Luma site. 
-
- <!--  >[!TIP]
-   >
-   >You can verify the **[!UICONTROL Luma CRM ID]** is collected in a data element on the web property by going to the [Luma Demo site](https://luma.enablementadobe.com/content/luma/us/en.html), logging in, [switching the tag environment](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tag-property) to your own, and typing `_satellite.getVar("user.profile.attributes.username")` in the web browser developer console.
-   >
-   >   ![Data Element  ID ](assets/identity-data-element-customer-id.png)
--->
-
-1. As the **[!UICONTROL Authenticated state]**, select **[!UICONTROL Authenticated]**
-1. Select **[!UICONTROL Primary]**
-
+1. Select **[!UICONTROL Add Data element]**
+1. Name your Data Element `xdm.variable.content`. It is recommended you prefix with "xdm" the Data Elements specific to XDM to better organize your tag property
+1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL Extension]**
+1. Select the **[!UICONTROL Variable]** as the **[!UICONTROL Data Element Type]**
+1. Select the appropriate Experience Platform **[!UICONTROL Sandbox]**
+1. Select the appropriate **[!UICONTROL Schema]**, in this case `Luma Web Event Data`
 1. Select **[!UICONTROL Save]**
-   
-    ![Data Collection interface](assets/identity-id-namespace.png)
 
->[!TIP]
->
-> Adobe recommends sending identities which represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
->
-> If the identity map contains the person identifier (e.g. `Luma CRM Id`), then the person identifier will become the [!UICONTROL primary] identity. Otherwise, `ECID` becomes the [!UICONTROL primary] identity.
+    ![Variable data element](assets/analytics-tags-data-element-xdm-variable.png)
 
-
-
-
-
-<!--
-1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
-   
-   
-   ```
-   _satellite.getVar('identityMap.loginID')
-   ```  
-
-   ![Data Collection interface](assets/identity-consoleIdentityDataElement.png)
-   
-   >[!NOTE]
-   >
-   >ECID identifier will NOT populate in the Data Element, as this is configured already with Platform Web SDK.   
--->
-
-## Map data elements to XDM objects
-
-All the data elements you create must be mapped to an XDM object. This object should conform to the XDM schema you created during the [Configure a schema](configure-schemas.md) lesson. 
-
-There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you capture will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
+<!-- There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
 
 Create an XDM object to capture content data:
 
@@ -199,24 +263,28 @@ Create an XDM object to capture content data:
 
    ![Data Collection interface](assets/identity-dataElements-xdmContent-LumaSchema-identityMapSelect3.png)
 
-
-
+-->
 
 At the end of these steps, you should have the following data elements created:
 
 |CORE Extension Data Elements | Platform Web SDK Data Elements|
 -----------------------------|-------------------------------
-| `cart.orderId` | `identityMap.loginID` |
-| `page.pageInfo.hierarchie1` | `xdm.content` |
+| `cart.orderId` | `xdm.variable.content` |
+| `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-With these data elements in place, you are ready to start sending data to Platform Edge Network via the XDM object by creating a rule in tags.
 
-[Next: **Create a rule in tags**](create-tag-rule.md)
+>[!TIP]
+>
+>In a future [Create a tag rule](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data element allows you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**. Then, you can independently send the XDM object to Adobe Experience Platform Edge Network using a separate **[!UICONTROL Send Event action type]**. 
+
+With these data elements in place, you are ready to start sending data to Platform Edge Network with a tags rule. But first, learn about collecting identities with Web SDK. 
+
+[Next: **Create identities**](create-identities.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
