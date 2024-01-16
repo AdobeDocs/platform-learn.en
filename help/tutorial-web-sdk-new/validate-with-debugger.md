@@ -2,7 +2,6 @@
 title: Validate Web SDK implementations with Experience Platform Debugger
 description: Learn how to validate your Platform Web SDK implementation with Adobe Experience Platform Debugger. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Tags,Debugger
-exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
 ---
 # Validate Web SDK implementations with Experience Platform Debugger
 
