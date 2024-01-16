@@ -89,10 +89,14 @@ Two versions of the sample app are available for download. Both version can be d
 1. [Start](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
 1. [Finish](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a version with the full implementation for reference.
 
-
 >[!NOTE]
 >
 >You use iOS as the platform, [!DNL Swift] as the programming language, [!DNL SwiftUI] as the UI framework and [!DNL Xcode] as the integrated development environment (IDE). However, many of the implementation concepts explained are similar for other development platforms. Many have already successfully completed this tutorial with little to no previous iOS/Swift(UI) experience. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
+
+
+You can download the final productized version of the app from the App Store.
+
+[![Download](assets/download-app.svg)](https://apps.apple.com/us/app/luma-app/id6466588487)
 
 
 Let's get started!
