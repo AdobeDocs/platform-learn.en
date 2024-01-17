@@ -203,6 +203,45 @@ To map this XDM context data to your Analytics data in your report suite, you ca
 * Build rules in your Tags property that use rule actions to attach or modify data to the Adobe Analytics ExperienceEvent Full Extension field group. See for more details [Attach data to SDK events](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) or [Modify data in SDK events](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
 
 
+### Merchandising eVars
+
+If you are using [merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) in your Analytics setup, for example to capture the color of products, like `&&products = ...;evar1=red|event10=50,...;evar1=blue|event10=60`, you have to extend your XDM payload that you defined in [Track event data](events.md) to capture that merchandising information.
+
+For example:
+
+  ```json
+    "xdm": {
+      "productListItems": [
+        {
+          "SKU": "LLWS05.1-XS",
+          "name": "Desiree Fitness Tee",
+          "priceTotal": 24
+        }
+      ],
+      "timestamp": "2023-08-04T12:53:37.662Z",
+      "eventType": "commerce.productListAdds",
+      "commerce": {
+        "productListAdds": {
+          "value": 1
+        }
+      },
+      "_experience": {
+        "analytics": {
+          "customDimensions" : {
+            "eVars" : [
+              "eVar1": "red",
+            ],
+            "events1to100": {
+              "event10": [
+                "value": 50
+              ]
+            }
+          }
+        }
+      }
+  ```
+
+
 ### Use processing rules
 
 Here is what a processing rule using this data might look like:
