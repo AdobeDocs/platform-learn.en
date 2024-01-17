@@ -10,7 +10,7 @@ Learn how to configure the privacy settings of the Experience Platform Web SDK t
 
 >[!NOTE]
 > 
->For demonstration purposes, this tutorial uses [Klaro](https://heyklaro.com/) as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.
+>For demonstration purposes, this tutorial uses [Klaro](https://heyklaro.com/){target="_blank"} as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.
 
 
 ## Learning objectives
