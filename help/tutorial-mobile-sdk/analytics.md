@@ -76,7 +76,7 @@ This object:
 results in:
 
 ```
-s.products = ";5829,1,49.99;9841,3,30.00"
+s.products = ";5829;1;49.99,9841;3;30.00"
 ```
 
 >[!NOTE]
@@ -205,42 +205,76 @@ To map this XDM context data to your Analytics data in your report suite, you ca
 
 ### Merchandising eVars
 
-If you are using [merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) in your Analytics setup, for example to capture the color of products, like `&&products = ...;evar1=red|event10=50,...;evar1=blue|event10=60`, you have to extend your XDM payload that you defined in [Track event data](events.md) to capture that merchandising information.
+If you are using [merchandising eVars](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/conversion-variables/merchandising-evars.html?lang=en) in your Analytics setup, for example to capture the color of products, like `&&products = ...;evar1=red;event10=50,...;evar1=blue;event10=60`, you have to extend your XDM payload that you defined in [Track event data](events.md) to capture that merchandising information.
 
-For example:
+* In JSON:
 
   ```json
-    "xdm": {
-      "productListItems": [
+  {
+    "productListItems": [
         {
-          "SKU": "LLWS05.1-XS",
-          "name": "Desiree Fitness Tee",
-          "priceTotal": 24
-        }
-      ],
-      "timestamp": "2023-08-04T12:53:37.662Z",
-      "eventType": "commerce.productListAdds",
-      "commerce": {
-        "productListAdds": {
-          "value": 1
-        }
-      },
-      "_experience": {
-        "analytics": {
-          "customDimensions" : {
-            "eVars" : [
-              "eVar1": "red",
-            ],
-            "events1to100": {
-              "event10": [
-                "value": 50
-              ]
+            "SKU": "LLWS05.1-XS",
+            "name": "Desiree Fitness Tee",
+            "priceTotal": 24,
+            "_experience": {
+                "analytics": {
+                    "events1to100": {
+                        "event10": {
+                            "value": 50
+                        }
+                    },
+                    "customDimensions": {
+                        "eVars": {
+                            "eVar1": "red",
+                        }
+                    }
+                }
             }
-          }
         }
-      }
+    ],
+    "eventType": "commerce.productListAdds",
+    "commerce": {
+        "productListAdds": {
+            "value": 1
+        }
+    }
+  }
   ```
 
+* In code:
+
+  ```swift
+  var xdmData: [String: Any] = [
+    "productListItems": [
+      [
+        "name":  productName,
+        "SKU": sku,
+        "priceTotal": priceString,
+        "_experience" : [
+          "analytics": [
+            "events1to100": [
+              "event10": [
+                "value:": value
+              ]
+            ],
+            "customDimensions": [
+              "eVars": [
+                "eVar1": color
+              ]
+            ]
+          ]
+        ]
+      ]
+    ],
+    "eventType": "commerce.productViews",
+    "commerce": [
+      "productViews": [
+        "value": 1
+      ]
+    ]
+  ]
+  ```
+  
 
 ### Use processing rules
 
