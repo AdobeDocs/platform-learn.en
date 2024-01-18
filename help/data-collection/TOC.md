@@ -11,6 +11,7 @@ role: Developer, Data Engineer
 # Data Collection tutorials{#data-collection}
 
 + [Data Collection Tutorials](overview.md)
++ [Users and permissions](admin/users-and-permissions.md)
 + Tags{#tags}
   + [Overview and create a property](tags/create-a-property.md)
   + [Choose a hosting option](tags/choose-a-hosting-option.md)
@@ -19,7 +20,6 @@ role: Developer, Data Engineer
   + [Create data elements](tags/create-data-elements.md)
   + [Build rules](tags/build-rules.md)
   + [Build and publish a library](tags/build-and-publish-a-library.md)
-  + [Users and permissions](tags/users-and-permissions.md)
   + [Implement in websites with Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
   + [Implement in websites with solution SDKs](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
   + [Implement in mobile apps](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html){target="_blank"}
