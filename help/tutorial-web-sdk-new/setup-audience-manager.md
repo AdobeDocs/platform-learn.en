@@ -79,7 +79,7 @@ After the Data Source is saved, set up a [trait](https://experienceleague.adobe.
 1. Select the **[!UICONTROL Data Source]** you created in the previous section.
 1. **[!UICONTROL Select a Folder]** in which to save your trait in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
 1. Expand the **[!UICONTROL Trait Expression]** caret and select **[!UICONTROL Expression Builder]** You must provide a key value pair that signifies a homepage visit.
-1. Open the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html) (mapped to your tag property) and the **Platform Web SDK Debugger** and refresh the page.
+1. Open the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html) (mapped to your tag property) and the **Adobe Experience Platform Debugger** and refresh the page.
 1. Look at the Network Requests and the event details for the Platform Web SDK to find the key and name value for the homepage.
    ![Adobe Experience Platform Audience Manager XDM Data](assets/xdm-keyvalue.jpg)
 1. Return to the Expression Builder in the Audience Manager UI and enter the key as **`web.webPageDetails.name`** and the value of **`content:luma:us:en`**. This step ensures that you fire a trait whenever you load the homepage. 
@@ -94,7 +94,8 @@ The next step is to create a **segment**, and assign your newly defined trait to
 1. Select **[!UICONTROL Add New]** in the top left of the page to open the segment builder
 1. Give your segment a friendly name and description, such as `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Select a Folder]** where your segment will be saved in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
-1. Add an integration code, which in this case is a random set of numbers. 1. In the **[!UICONTROL Data Source]** section, select **[!UICONTROL Audience Manager]** and the data source you created earlier
+1. Add an integration code, which in this case is a random set of numbers. 
+1. In the **[!UICONTROL Data Source]** section, select **[!UICONTROL Audience Manager]** and the data source you created earlier
 1. Expand the **[!UICONTROL Traits]** section and search for the trait you created
 1. Select **[!UICONTROL Add Trait]**. 
 1. Select **[!UICONTROL Save]** at the bottom of the page
@@ -175,4 +176,4 @@ Now that you have completed this lesson, you should be able to see how the Platf
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -5,7 +5,7 @@ feature: Web SDK
 ---
 # Install Adobe Experience Platform Web SDK tag extension
 
-Learn how to install and configure the Platform Web SDK tag extension in the Data Collection interface. This tag extension is the _only tag extension_ required to send data to _all Adobe Experience Cloud applications_, including [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform, and Journey Optimizer!
+Learn how to install and configure the Platform Web SDK tag extension. The easiest way to implement Web SDK is using Adobe's tag manager, tags (formerly known as Launch). The Platform Web SDK tag extension is the _only tag extension_ required to send data to _all Adobe Experience Cloud applications_, including [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform, and Journey Optimizer!
 
 ## Learning objectives
 
@@ -19,9 +19,6 @@ At the end of this lesson, you will be able to:
 
 You must have completed the previous lessons in this tutorial:
 
-* [Configure permissions](configure-permissions.md)
-* [Configure an XDM schema](configure-schemas.md)
-* [Configure an identity namespace](configure-identities.md)
 * [Configure a datastream](configure-datastream.md)
 
 ## Install Experience Platform Web SDK Extension
@@ -60,6 +57,7 @@ Leave most of the default settings and update them later, as needed. The only th
 1. Under **[!UICONTROL Datastreams]**, select the **[!UICONTROL Choose from list]** input method
 1. Select the datastream you created earlier, `Luma Web SDK`
 1. Select **[!UICONTROL Save]**
+
     >[!NOTE]
     >
     > If you cannot find your datastream, go to the [Configure a datastream](configure-datastream.md) lesson and follow the steps to create one
@@ -70,9 +68,7 @@ Now that you have installed Platform Web SDK and associated it to the datastream
 
 >[!NOTE]
 >
->During this tutorial, you configure just one datastream and associate it with all tag environments (development, stage, and production). When you implement Platform Web SDK on your own website, you should configure a separate datastream for each environment and map them to your tag environments using the **[!UICONTROL Input method]** > **[!UICONTROL Enter values]**
->
->![Datastream selection](assets/extension-luma-web-sdk-datastream-extension-enterValues.png)
+>During this tutorial, you configure just one datastream and associate it with all tag environments (development, stage, and production). When you implement Platform Web SDK on your own website, you should configure a separate datastream for each environment and map them to your tag environments. 
 
 >[!NOTE]
 >
@@ -86,4 +82,4 @@ For more information on each section of the extension, see [Configure the Adobe 
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

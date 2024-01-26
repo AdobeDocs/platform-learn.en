@@ -9,7 +9,7 @@ Learn how to request access to Experience Platform Web SDK and configure the per
 
 ## Data Collection
 
-* Have permission to **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, **[!UICONTROL Manage Environments]**, and **[!UICONTROL Manage Properties]**. For more information tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Have permission to **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, **[!UICONTROL Manage Environments]**, and **[!UICONTROL Manage Properties]**. For more information concerning tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
 * If you will be completing the optional event forwarding lesson, have a product license which includes edge forwarding and permission item **[!UICONTROL Platforms]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -17,9 +17,9 @@ Learn how to request access to Experience Platform Web SDK and configure the per
 These features should be available to all Experience Cloud customers, even if you are not a customer of a Platform-based application like Real-Time CDP.
 
 * Access to the **default production**, **"Prod"** sandbox. 
-* Access to **[!UICONTROL Manage Schemas]** and **[!UICONTROL View Schemas]** under **[!UICONTROL Data Modeling]**
-* Access to **[!UICONTROL Manage Identity Namespaces]** and **[!UICONTROL View Identity Namespaces]** under **[!UICONTROL Identity Management]**
-* Access to **[!UICONTROL Manage Datastreams]** and **[!UICONTROL View Datastreams]** under **[!UICONTROL Data Collection]**
+* Access to **[!UICONTROL Manage Schemas]** and **[!UICONTROL View Schemas]** under **[!UICONTROL Data Modeling]**.
+* Access to **[!UICONTROL Manage Identity Namespaces]** and **[!UICONTROL View Identity Namespaces]** under **[!UICONTROL Identity Management]**.
+* Access to **[!UICONTROL Manage Datastreams]** and **[!UICONTROL View Datastreams]** under **[!UICONTROL Data Collection]**.
 * If you are a customer of a Platform-based application and will be completing the [Set up Experience Platform](setup-experience-platform.md) lesson, you should also have:
   * Access to a **development** sandbox.
   * All permission items under **[!UICONTROL Data Management]**, and **[!UICONTROL Profile Management]**:
@@ -45,4 +45,4 @@ Now you are ready to start the initial configuration steps.
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

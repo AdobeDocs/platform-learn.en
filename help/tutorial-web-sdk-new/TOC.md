@@ -23,6 +23,7 @@ hide: yes
 + Tags Configuration {#tags-configuration}
   + [Install Web SDK extension](install-web-sdk.md)
   + [Create data elements](create-data-elements.md)
+  + [Create identities](create-identities.md)
   + [Create a tag rule](create-tag-rule.md)
   + [Validate with Debugger](validate-with-debugger.md)
 
@@ -31,6 +32,9 @@ hide: yes
   + [Set up Adobe Analytics](setup-analytics.md)
   + [Set up Audience Manager](setup-audience-manager.md)
   + [Set up Target](setup-target.md)
+  + Set up Journey Optimizer features {#journey-optimizer}
+    + [Set up Web Channel](journey-optimizer/setup-web-channel.md)
+    + [Set up Decision Management](journey-optimizer/setup-decision-management.md)
 
 + Consent Management {#consent-management}
   + [Set up consent](setup-consent.md)
