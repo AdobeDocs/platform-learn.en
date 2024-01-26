@@ -53,7 +53,7 @@ Next, create a [Data Source](https://experienceleague.adobe.com/docs/audience-ma
 
    ![Adobe Experience Platform Audience Manager Data Sources](assets/data-sources-list.jpg)
 
-1. Give the Data Source a friendly name and description. For initial setup, you can name this`Platform Web SDK tutorial`. 
+1. Give the Data Source a friendly name and description. For initial setup, you can name this `Platform Web SDK tutorial`. 
 1. Set **[!UICONTROL ID Type]** to **[!UICONTROL Cookie]**
 1. In the **[!UICONTROL Data Export Controls]** section, select **[!UICONTROL No Restriction]**
 
