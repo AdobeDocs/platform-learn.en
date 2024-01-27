@@ -213,7 +213,7 @@ auto-video-transcripts: true
   + [Troubleshoot: SFTP Connector](/help/platform/sources/troubleshoot-sftp-connector.md)
 + Use Case Playbooks {#use-case-playbooks}
   + [Overview](/help/platform/use-case-playbooks/overview.md)
-  + [Configure a playbooks sandbox](/help/platform/use-case-playbooks/configure-a-playbooks-sandbox.md)
+  + [Configure a playbooks sandbox](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
   + [Create and publish a playbook instance](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)

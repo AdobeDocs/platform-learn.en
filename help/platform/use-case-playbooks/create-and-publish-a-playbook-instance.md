@@ -1,6 +1,6 @@
 ---
 title: Create and publish playbook instances
-description: Learn how to create an publish an instance of a Use Case Playbook.
+description: Learn how to create and publish an instance of a Use Case Playbook.
 feature: Playbooks
 role: Developer, User
 level: Beginner
@@ -12,10 +12,10 @@ jira: KT-14075
 
 # Create and publish playbook instances
 
-Learn how to create an publish an instance of a Use Case Playbook.
+Learn how to create and publish an instance of a Use Case Playbook.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on)
 
 >[!AVAILABILITY]
 >
->This functionality is currently in Beta and is not available to all users. The documentation and the functionality are subject to change.
+>This functionality is in Beta and is not available to all users. The documentation and the functionality are subject to change.

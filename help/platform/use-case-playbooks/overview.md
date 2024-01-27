@@ -18,4 +18,4 @@ Learn how Use Case Playbooks can help customers of Real-Time Customer Data Platf
 
 >[!AVAILABILITY]
 >
->This functionality is currently in Beta and is not available to all users. The documentation and the functionality are subject to change.
+>This functionality is in Beta and is not available to all users. The documentation and the functionality are subject to change.
