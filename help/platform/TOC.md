@@ -201,7 +201,7 @@ auto-video-transcripts: true
   + [Update schemas](/help/platform/schemas/update-schemas.md)
   + [Create an ad hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
 + Sources {#sources}  
-  + [Sources overview](/help/platform/sources/overview.md)
+  + [Overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
   + [Ingest data from Audience Manager](/help/platform/sources/ingest-data-from-aam.md)
   + [Ingest data from Marketo](/help/platform/sources/ingest-data-from-marketo.md)
@@ -211,6 +211,10 @@ auto-video-transcripts: true
   + [Stream data with HTTP API](/help/platform/sources/streaming-ingestion-http-api.md)
   + [Stream data using Source Connectors](/help/platform/sources/streaming-ingestion-source-connector.md)
   + [Troubleshoot: SFTP Connector](/help/platform/sources/troubleshoot-sftp-connector.md)
++ Use Case Playbooks {#use-case-playbooks}
+  + [Overview](/help/platform/use-case-playbooks/overview.md)
+  + [Configure a playbooks sandbox](/help/platform/use-case-playbooks/configure-a-playbooks-sandbox.md)
+  + [Create and publish a playbook instance](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud Integrations {#experience-cloud}
   + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
   + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
