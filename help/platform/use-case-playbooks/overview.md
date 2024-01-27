@@ -12,7 +12,7 @@ jira: KT-14806
 
 # Use Case Playbooks overview
 
-Learn how Use Case Playbooks can help customers of Real-Time Customer Data Platform and Journey Optimizer get faster time-to-value. Use Case Playbooks is a catalog of dozens of templates covering multiple industries and marketing goals. Playbooks generate technical assets like audiences, journeys, and schemas, which can then be customized and published to other sandboxes.
+Learn how Use Case Playbooks can help customers of Real-Time Customer Data Platform and Journey Optimizer get faster time-to-value. Use Case Playbooks is a catalog of dozens of templates covering multiple industries and marketing goals. Playbooks generate technical assets like audiences, journeys, and schemas, which can then be customized and published to other sandboxes. For more information, see the [Use Case Playbooks documentation](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/overview.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on)
 

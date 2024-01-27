@@ -18,6 +18,8 @@ Learn how to configure a sandbox for Use Case Playbooks. To get started with Use
 1. Add permissions and users to the sandbox
 1. Configure channel surfaces for email, push, and SMS
 
+For more information, see [Get started](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
+
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
 
 >[!AVAILABILITY]
