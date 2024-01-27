@@ -12,7 +12,7 @@ jira: KT-14075
 
 # Create and publish playbook instances
 
-Learn how to create and publish an instance of a Use Case Playbook.
+Learn how to create and publish an instance of a Use Case Playbook. For more information, see [Create, share, and reuse playbook instances](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on)
 
