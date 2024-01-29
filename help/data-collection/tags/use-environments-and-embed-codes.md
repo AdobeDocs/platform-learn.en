@@ -4,6 +4,7 @@ description: Learn how to use development, staging, and production environments 
 feature: Tags
 level: Beginner
 jira: KT-3527
+last-substantial-update: 2024-01-29
 exl-id: 95399c9a-72f6-4b20-905c-0627f106ccfb
 ---
 # Use environments and embed codes
