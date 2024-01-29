@@ -8,7 +8,7 @@ exl-id: 789ce4d8-4c20-4690-9907-57e924a0c586
 ---
 # Build tag rules
 
-Learn how to create rules so you can execute commands in tags. Events and conditions determine *when* to do stuff while actions determine *what* to do.
+Learn how to create rules so you can execute commands in tags. Events and conditions determine *when* to do stuff while actions determine *what* to do. For more information, see the [rules](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/rules.html) documentation.
 
 >[!NOTE]
 >
