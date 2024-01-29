@@ -8,7 +8,7 @@ exl-id: 0be71b74-758e-4952-ab77-55deb8a02eda
 ---
 # Create data elements
 
-Learn how to create data elements to store values pulled from your data layer and make them available to rules and extensions in your tag property.
+Learn how to create data elements to store values pulled from your data layer and make them available to rules and extensions in your tag property. For more information, see the [data elements](https://experienceleague.adobe.com/docs/experience-platform/tags/ui/data-elements.html) documentation.
 
 >[!NOTE]
 >

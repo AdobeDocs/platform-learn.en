@@ -15,7 +15,7 @@ role: Developer, Data Engineer
 + Tags{#tags}
   + [Overview and create a property](tags/create-a-property.md)
   + [Choose a hosting option](tags/choose-a-hosting-option.md)
-  + [Use environments](tags/use-environments.md)
+  + [Use environments and embed codes](tags/use-environments-and-embed-codes.md)
   + [Add and configure extensions](tags/add-and-configure-extensions.md)
   + [Create data elements](tags/create-data-elements.md)
   + [Build rules](tags/build-rules.md)
