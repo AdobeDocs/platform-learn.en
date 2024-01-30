@@ -9,6 +9,9 @@ Learn how to use event-forwarding property using Experience Platform Web SDK dat
 
 Event forwarding is a new type of property available in Data Collection. Event forwarding gives you the ability to send data to third-party, non-Adobe vendors straight from the Adobe Experience Platform Edge Network instead of the traditional client-side browser. Find out more about the advantages of event forwarding in the [Event Forwarding overview](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
 
+
+![Web SDK and event forwarding diagram](assets/dc-websdk-eventforwarding.png)
+
 To use event forwarding in Adobe Experience Platform, data must be sent to Adobe Experience Platform Edge Network first using one or more of the following three options:
 
 * [Adobe Experience Platform Web SDK](overview.md)
@@ -44,7 +47,6 @@ At this end of this lesson, you will be able to:
 
   * Initial Configuration 
 
-    * [Configure permissions](configure-permissions.md)
     * [Configure an XDM schema](configure-schemas.md)
     * [Configure an identity namespace](configure-identities.md)
     * [Configure a datastream](configure-datastream.md)

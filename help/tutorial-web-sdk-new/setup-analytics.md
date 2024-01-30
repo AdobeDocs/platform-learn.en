@@ -9,6 +9,8 @@ Learn how to set up Adobe Analytics using [Experience Platform Web SDK](https://
 
 [Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) is an industry-leading application that empowers you to understand your customers as people and steer your business with customer intelligence.
 
+![Web SDK to Adobe Analytics diagram](assets/dc-websdk-aa.png)  
+
 ## Learning objectives
 
 At the end of this lesson, you will be able to:

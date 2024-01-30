@@ -9,6 +9,7 @@ Learn how to set up Adobe Audience Manager using the Platform Web SDK and valida
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) is the Adobe Experience Cloud solution that provides everything required to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.
 
+![Web SDK and Adobe Audience Manager diagram](assets/dc-websdk-aam.png)
 
 ## Learning objectives
 
