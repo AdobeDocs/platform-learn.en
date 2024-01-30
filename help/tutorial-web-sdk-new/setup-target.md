@@ -9,6 +9,7 @@ Learn how to implement Adobe Target using Platform Web SDK. Learn how to deliver
 
 [Adobe Target](https://experienceleague.adobe.com/docs/target/using/target-home.html) is the Adobe Experience Cloud application that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, and other digital channels.
 
+![Web SDK and Adobe Target diagram](assets/dc-websdk-at.png)
 
 ## Learning objectives
 

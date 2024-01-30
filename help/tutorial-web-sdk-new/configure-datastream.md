@@ -9,6 +9,9 @@ Learn how to enable a datastream and configure Experience Cloud applications.
 
 Datastreams tell Adobe Experience Platform Edge Network where to send data collected by Platform Web SDK. In the datastreams configuration, you enable your Experience Cloud applications, your Experience Platform account, and event forwarding. See the [Fundamentals of Configuring a Datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=en) for more detailed information.
 
+
+![Web SDK, datastreams, and Edge Network diagram](assets/dc-websdk-datastreams.png)
+
 ## Learning objectives
 
 At the end of this lesson, you will be able to:
