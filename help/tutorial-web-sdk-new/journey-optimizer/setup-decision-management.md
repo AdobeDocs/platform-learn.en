@@ -12,6 +12,9 @@ Learn how to implement Decision Management using Platform Web SDK. This guide co
 
 By following this tutorial, Journey Optimizer users are equipped to effectively apply offer decisioning features, enhancing the personalization and relevance of their customer interactions.
 
+
+![Web SDK and Adobe Analytics diagram](../assets/dc-websdk-ajo.png)  
+
 ## Learning Objectives
 
 At the end of this lesson, you are able to:
