@@ -15,7 +15,3 @@ jira: KT-14075
 Learn how to discover, create, publish, and troubleshoot an instance of a Use Case Playbook from this end-to-end demonstration video. For more information, see [Create, share, and reuse playbook instances](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/create-share-reuse.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427058/?learn=on)
-
->[!AVAILABILITY]
->
->This functionality is in Beta and is not available to all users. The documentation and the functionality are subject to change.
