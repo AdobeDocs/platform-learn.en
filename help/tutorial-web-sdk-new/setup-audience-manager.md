@@ -9,6 +9,7 @@ Learn how to set up Adobe Audience Manager using the Platform Web SDK and valida
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) is the Adobe Experience Cloud solution that provides everything required to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.
 
+![Web SDK and Adobe Audience Manager diagram](assets/dc-websdk-aam.png)
 
 ## Learning objectives
 
@@ -53,7 +54,7 @@ Next, create a [Data Source](https://experienceleague.adobe.com/docs/audience-ma
 
    ![Adobe Experience Platform Audience Manager Data Sources](assets/data-sources-list.jpg)
 
-1. Give the Data Source a friendly name and description. For initial setup, you can name this`Platform Web SDK tutorial`. 
+1. Give the Data Source a friendly name and description. For initial setup, you can name this `Platform Web SDK tutorial`. 
 1. Set **[!UICONTROL ID Type]** to **[!UICONTROL Cookie]**
 1. In the **[!UICONTROL Data Export Controls]** section, select **[!UICONTROL No Restriction]**
 

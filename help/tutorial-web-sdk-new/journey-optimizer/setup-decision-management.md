@@ -10,7 +10,10 @@ feature: Decision Management,Offers
 
 Learn how to implement Decision Management using Platform Web SDK. This guide covers the foundational Decision Management prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
 
-By following this documentation, Journey Optimizer users are equipped to effectively apply offer decisioning features, enhancing the personalization and relevance of their customer interactions.
+By following this tutorial, Journey Optimizer users are equipped to effectively apply offer decisioning features, enhancing the personalization and relevance of their customer interactions.
+
+
+![Web SDK and Adobe Analytics diagram](../assets/dc-websdk-ajo.png)  
 
 ## Learning Objectives
 
@@ -18,7 +21,7 @@ At the end of this lesson, you are able to:
 
 * Grasp the core concepts of Decision Management within the Adobe Journey Optimizer and its integration with the Adobe Experience Platform Web SDK.
 
-* Learn the step-by-step process to configure the Web SDK for Offer Decisioning, ensuring seamless integration with AJO.
+* Learn the step-by-step process to configure the Web SDK for Offer Decisioning, ensuring seamless integration with Journey Optimizer.
 
 * Explore a detailed use case centered on loyalty status offers, gaining insights into creating and managing offers, decisions, and placements effectively.
 
@@ -32,13 +35,11 @@ At the end of this lesson, you are able to:
 
 To complete the lessons in this section, you must first:
 
-* Ensure that your organization has access to Adobe Journey Optimizer Ultimate (AJO and Offer Decisioning) or Adobe Experience Platform and the Offer Decisioning application service add-on.
+* Ensure that your organization has access to Adobe Journey Optimizer Ultimate (Journey Optimizer and Offer Decisioning) or Adobe Experience Platform and the Offer Decisioning application service add-on.
 
 * Complete all lessons for initial configuration of the Platform Web SDK.
 
 * Enable your organization for Edge Decisioning.
-
-* Publish your Datastream.
 
 * Understand how to configure a placement, and instantiate placement and activity IDs within your Decision Scope JSON.
 
@@ -58,7 +59,7 @@ Offer Decisioning must be enabled in the **datastream** configuration before any
 
 To configure Offer Decisioning in the datastream:
 
-1. Go to [Data Collection](https://experience.adobe.com/#/data-collection) interface.
+1. Go to the [Data Collection](https://experience.adobe.com/#/data-collection) interface.
 
 1. On the left navigation, select **Datastreams**.
 
@@ -137,7 +138,7 @@ This use case enables you to better understand how Journey Optimizer can help de
 
 >[!NOTE]
 >
-> As this tutorial is aimed at implementers, it's worth noting that this lesson involves substantial UI work in AJO. While such UI tasks are typically handled by marketers, it can be beneficial for implementers to gain insight into the process, even if they are not responsible for decision management campaign creation in the long run.
+> As this tutorial is aimed at implementers, it's worth noting that this lesson involves substantial interface work in Journey Optimizer. While such interface tasks are typically handled by marketers, it can be beneficial for implementers to gain insight into the process, even if they are not responsible for decision management campaign creation in the long run.
 
 ## Components
 
@@ -167,13 +168,13 @@ To create the placement, follow these steps:
 
 1. Click **Save**.
 1. Once the placement is created, it displays in the placements list.
-1. Take note of the Placement ID, as this may be necessary for configuration within your Decision Scope.
+1. Select the row containing your new placement and take note of the Placement ID, as this may be necessary for configuration within your Decision Scope.
 
    ![See Placement ID ](../assets/decisioning-placement-id.png)
 
 ### Decision Rules for Loyalty Status
 
-**Decision rules** specify the conditions under which the offers are presented. In this example, you create decision rules to serve different offers depending on a users' Loyalty status.
+**Decision rules** specify the conditions under which the offers are presented. In this example, you create decision rules to serve different offers depending on a user's Loyalty status.
 
 The list of decision rules is accessible in the **Components** menu.
 
@@ -183,7 +184,7 @@ To create the decision rules, follow these steps:
 
    ![Create the rule](../assets/decisioning-create-rule.png)
 
-1. Let's name the first rule '*Gold Loyalty Status Rule*'. You can use XDM fields to define the rule. The Adobe Experience Platform **Segment Builder** is an intuitive UI that you can use to build the rule conditions.
+1. Let's name the first rule '*Gold Loyalty Status Rule*'. You can use XDM fields to define the rule. The Adobe Experience Platform **Segment Builder** is an intuitive interface that you can use to build the rule conditions.
 
    ![Define the rule](../assets/decisioning-define-rule.png)
 

@@ -15,7 +15,6 @@ hide: yes
 
 + [Tutorial Overview](overview.md)
 + Initial Configuration {#initial-configuration}
-  + [Configure permissions](configure-permissions.md)
   + [Configure an XDM schema](configure-schemas.md)
   + [Configure an identity namespace](configure-identities.md)
   + [Configure a datastream](configure-datastream.md)
@@ -26,6 +25,7 @@ hide: yes
   + [Create identities](create-identities.md)
   + [Create a tag rule](create-tag-rule.md)
   + [Validate with Debugger](validate-with-debugger.md)
+  + [Validate with Assurance](validate-with-assurance.md)
 
 + Applications Setup {#applications-setup}
   + [Set up Experience Platform](setup-experience-platform.md)
