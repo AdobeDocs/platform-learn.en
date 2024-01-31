@@ -7,14 +7,7 @@ feature: Tags
 
 Learn how to capture identities with Experience Platform Web SDK. Capture both unauthenticated and authenticated identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Learn how to use the data elements you created earlier for collecting authenticated data with a Platform Web SDK data element type called Identity map. 
 
-There are four new data element types introduced by the Platform Web SDK tags extension:
-
-1. Event merge ID
-1. Identity map
-1. Variable
-1. XDM object
-
-This lesson focuses on the Identity map data element. You map data elements containing an authenticated user ID and authentication status to XDM. 
+This lesson focuses on the Identity map data element available with the Adobe Experience Platform Web SDK tags extension. You map data elements containing an authenticated user ID and authentication status to XDM. 
 
 ## Learning objectives
 
@@ -26,7 +19,7 @@ At the end of this lesson, you are able to:
 
 ## Prerequisites 
 
-You have an understanding of what a data layer is, gotten familiar with the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} data layer, and know how to reference data elements in tags. You must have completed the following previous steps in the tutorial:
+You have an understanding of what a data layer is, gotten familiar with the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} data layer, and know how to reference data elements in tags. You must have completed the following previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)
@@ -34,14 +27,10 @@ You have an understanding of what a data layer is, gotten familiar with the [Lum
 * [Web SDK extension installed in the tag property](install-web-sdk.md)
 * [Create data elements](create-data-elements.md)
 
->[!IMPORTANT]
->
->The [Experience Cloud ID Service extension](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is not needed when implementing Adobe Experience Platform Web SDK, as the ID Service functionality is built into Platform Web SDK.
 
 ## Experience Cloud ID
 
-The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) is a shared identity namespace used across Adobe Experience Platform and Adobe Experience Cloud applications. ECID provides the foundation for customer identity and is the default identity for digital properties. This makes ECID the ideal identifier for tracking unauthenticated user behavior because it is always present.
-
+The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) is a shared identity namespace used across Adobe Experience Platform and Adobe Experience Cloud applications. ECID provides the foundation for customer identity and is the default identity for digital properties. This makes ECID the ideal identifier for tracking unauthenticated user behavior because it is always present
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -53,6 +42,10 @@ The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experie
 Read more about how [ECIDs are tracked using Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
 ECIDs are set using a combination of first-party cookies and Platform Edge Network. By default, the first-party cookies are set by the Web SDK. To account for browser restrictions on cookie lifespans, you can opt to set and manage your own  first-party cookies instead. These are referred to as first-party device IDs (FPIDs).
+
+>[!IMPORTANT]
+>
+>The [Experience Cloud ID Service extension](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is not needed when implementing Adobe Experience Platform Web SDK, as the ID Service functionality is built into Platform Web SDK.
 
 ## First Party Device ID (FPID)
 

@@ -388,22 +388,9 @@ There are some data points that may be useful to Target that are not mapped from
 * [Recommendations reserved parameters](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * Category values for [category affinity](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Create data elements for Target parameters
+### Create data element for special Target parameters
 
-First you will set up a few extra data elements for a profile attribute, entity attribute, category value and then construct the `data` object which is used to pass non-XDM data:
-
-* **`target.entity.id`** mapped to `digitalData.product.0.productInfo.sku`
-* **`target.entity.name`** mapped to `digitalData.product.0.productInfo.title`
-* **`target.user.categoryId`** using the following custom code to parse the site URL for the top-level category:
-
-   ```javascript
-   var cat = location.pathname.split(/[/.]+/);
-   if (cat[5] == 'products') {
-      return (cat[6]);
-   } else if (cat[5] != 'html') { 
-      return (cat[5]);
-   }
-   ```
+First, use the data elements created in the [Create data elements](create-data-elements.md) lesson to construct the `data` object which is used to pass non-XDM data:
 
 * **`data.content`** using the following custom code: 
 
@@ -411,10 +398,10 @@ First you will set up a few extra data elements for a profile attribute, entity 
    var data = {
       __adobe: {
          target: {
-            "entity.id": _satellite.getVar("target.entity.id"),
-            "entity.name": _satellite.getVar("target.entity.name"),
+            "entity.id": _satellite.getVar("product.productInfo.sku"),
+            "entity.name": _satellite.getVar("product.productInfo.title"),
             "profile.loggedIn": _satellite.getVar("user.profile.attributes.loggedIn"),
-            "user.categoryId": _satellite.getVar("target.user.categoryId")
+            "user.categoryId": _satellite.getVar("product.category")
          }
       }
    }

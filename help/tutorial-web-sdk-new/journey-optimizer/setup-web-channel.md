@@ -12,6 +12,8 @@ Learn how to implement Web Channel using Platform Web SDK. This guide covers the
 
 By following this guide, Journey Optimizer users are equipped to effectively apply the web channel for advanced online personalization using the Journey Optimizer Web Designer.
 
+![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
+
 ## Learning Objectives
 
 At the end of this lesson, you are able to:
