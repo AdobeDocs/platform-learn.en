@@ -84,7 +84,7 @@ To configure Target in the datastream:
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
 1. Select the previously created `Luma Web SDK` datastream
 
-    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk-development.png)
 
 1. Select **[!UICONTROL Add Service]**
      ![Add a service to the datastream](assets/event-forwarding-datastream-addService.png)
