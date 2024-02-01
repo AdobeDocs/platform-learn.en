@@ -21,7 +21,3 @@ Learn how to configure a sandbox for Use Case Playbooks. To get started with Use
 For more information, see [Get started](https://experienceleague.adobe.com/docs/experience-platform/use-case-playbooks/playbooks/get-started.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426987/?learn=on)
-
->[!AVAILABILITY]
->
->This functionality is in Beta and is not available to all users. The documentation and the functionality are subject to change.
