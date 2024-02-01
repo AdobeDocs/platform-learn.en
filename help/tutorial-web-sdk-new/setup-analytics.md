@@ -298,13 +298,13 @@ After adding these data elements and having  created the previous ones in the [C
 
 ## Create additional rules
 
-In the [Create a tag rule](create-tag-rule.md) lesson, you set up an `all pages global content variables - page bottom - AA (order 1)` rule that [created a baseline XDM object using the **[!UICONTROL Update variable]** **[!UICONTROL action types]**](create-tag-rule.md#create-tag-rule). The following exercises enrich that XDM object to capture additional data specific to certain pages. 
+In the [Create a tag rule](create-tag-rule.md) lesson, you set up an `all pages global content variables - library loaded - AA (order 1)` rule that [created a baseline XDM object using the **[!UICONTROL Update variable]** **[!UICONTROL action types]**](create-tag-rule.md#create-tag-rule). The following exercises enrich that XDM object to capture additional data specific to certain pages. 
 
 ### Increment page views
 
 Since you are now sending data to Adobe Analytics, we recommend you map an extra XDM field to indicate a page view. While technically not required for Analytics to process a beacon as a page view, it is useful to have a standard way to indicate a page view for other downstream applications.
 
-1. Open the `all pages global content variables - page bottom - AA (order 1)` rule
+1. Open the `all pages global content variables - library loaded - AA (order 1)` rule
 1. Open the **[!UICONTROL Update variable]** action
 1. Scroll down and select to open until `web.webPageDetails`
 1. Select to open the **[!UICONTROL pageViews]** object
@@ -318,17 +318,17 @@ Since you are now sending data to Adobe Analytics, we recommend you map an extra
 
 Create a rule to send an additional page view call to a different report suite. Use the datastream override feature to change the report suite for a page using the **[!UICONTROL Send Event]** Action.
 
-1. Create a new rule, name it `homepage report suite override - page bottom - AA (order 51)`
+1. Create a new rule, name it `homepage report suite override - library loaded - AA (order 51)`
 
 1. Select the plus sign under **[!UICONTROL Event]** to add a new trigger
 
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
 
-1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Page Bottom]**
+1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL library loaded]**
 
-1. Name it `Core - Page Bottom - order 51`
+1. Name it `Core - library loaded - order 51`
 
-1. Select to open **[!UICONTROL Advanced Options]**, type in `51`. This ensures the rule runs after the `all pages global content variables - page bottom - AA (order 50)` that sets the baseline XDM with the **[!UICONTROL Update variable]** action type.
+1. Select to open **[!UICONTROL Advanced Options]**, type in `51`. This ensures the rule runs after the `all pages global content variables - library loaded - AA (order 50)` that sets the baseline XDM with the **[!UICONTROL Update variable]** action type.
 
     ![Analytics Report Suite Override](assets/set-up-analytics-rs-override.png)
 
@@ -386,7 +386,7 @@ Create a rule to send an additional page view call to a different report suite. 
 
 ### Enrich the XDM object using Update variable 
 
-Using the **[!UICONTROL Update variable]** action type you can create additional rules to enrich the "global content XDM" before it gets sent to the [!UICONTROL Platform Edge Network]. Accomplish this by sequencing the new rules before the `all pages send event - page bottom - AA (order 50)` which sends the event [!UICONTROL Platform Edge Network].
+Using the **[!UICONTROL Update variable]** action type you can create additional rules to enrich the "global content XDM" before it gets sent to the [!UICONTROL Platform Edge Network]. Accomplish this by sequencing the new rules before the `all pages send event - library loaded - AA (order 50)` which sends the event [!UICONTROL Platform Edge Network].
 
 >[!TIP]
 >
@@ -407,12 +407,12 @@ See [Collect Commerce and Products Data](https://experienceleague.adobe.com/docs
 Start by tracking product views on the product detail page of Luma. 
 
 1. From the left navigation, select **[!UICONTROL Rules]** and then select **[!UICONTROL Add Rule]**
-1. Name it  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Name it  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
-1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Page Bottom]**
-1. Name it `Core - Page Bottom - order 20`
-1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This ensures the rule runs after the `all pages global content variables - page bottom - AA (order 1)` that sets the global content variables, but before the `all pages send event - page bottom - AA (order 50)` that sends the XDM event.
+1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL library loaded]**
+1. Name it `Core - library loaded - order 20`
+1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This ensures the rule runs after the `all pages global content variables - library loaded - AA (order 1)` that sets the global content variables, but before the `all pages send event - library loaded - AA (order 50)` that sends the XDM event.
 
     ![Analytics XDM rules](assets/set-up-analytics-pdp.png)
 
@@ -511,13 +511,13 @@ Compare the data element to the `productListItems` structure (hint, it should ma
 >Note how numeric variables are translated, with string values in the data layer such as `price` and `qty` reformatted to numbers in the data element. These format requirements are important for data integrity in Platform and are determined during the [configure schemas](configure-schemas.md) step. In the example, **[!UICONTROL quantity]** uses the **[!UICONTROL Integer]** data type.
 > ![XDM schema data type](assets/set-up-analytics-quantity-integer.png)
 
-Now back to mapping the XDM object to an entire array. Repeat the same steps as creating the `ecommerce - pdp page bottom - AA (order 20)` rule:
+Now back to mapping the XDM object to an entire array. Repeat the same steps as creating the `ecommerce - pdp library loaded - AA (order 20)` rule:
 
-1. Name it  [!UICONTROL `ecommerce - cart page bottom - AA (order 20)`]
+1. Name it  [!UICONTROL `ecommerce - cart library loaded - AA (order 20)`]
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
-1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Page Bottom]**
-1. Name it `Core - Page Bottom - order 20`
+1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL library loaded]**
+1. Name it `Core - library loaded - order 20`
 1. Select to open **[!UICONTROL Advanced Options]**, type in `20`
 1. Select **[!UICONTROL Keep Changes]**
 
@@ -568,7 +568,7 @@ Now back to mapping the XDM object to an entire array. Repeat the same steps as 
 
 Create two other rules for checkout and purchase following the same pattern with the below differences:
 
-**Rule name**: `ecommerce - checkout page bottom - AA (order 20)`
+**Rule name**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout.html
 * Set `eventType` to `commerce.checkouts`
@@ -578,7 +578,7 @@ Create two other rules for checkout and purchase following the same pattern with
     >
     >This is equivalent to setting `scCheckout` event in Analytics 
 
-**Rule name**: `ecommerce - purchase page bottom - AA (order 20)`
+**Rule name**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * Set `eventType` to `commerce.purchases`
@@ -739,7 +739,7 @@ Since you are already on a product page, this exercise continues to use the same
 
     >[!TIP]
     >
-    > The `ecommerce - pdp page bottom - AA (order 20)` rule is overwriting the value of `eventType` set by the `all pages global content variables - page bottom - AA (order 1)` rule as it is set to trigger later in the sequence
+    > The `ecommerce - pdp library loaded - AA (order 20)` rule is overwriting the value of `eventType` set by the `all pages global content variables - library loaded - AA (order 1)` rule as it is set to trigger later in the sequence
 
 
     ![Analytics Product View](assets/analytics-debugger-prodView.png) 
