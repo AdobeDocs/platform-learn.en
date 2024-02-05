@@ -74,7 +74,7 @@ To create a tag rule for the global XDM fields:
 
     ![Create a rule](assets/rules-create.png)
     
-1. Name the rule `all pages global content variables - page bottom - AA (order 1)`
+1. Name the rule `all pages global content variables - library loaded - AA (order 1)`
 
 1. In the **[!UICONTROL Events]** section, select **[!UICONTROL Add]**
 
@@ -167,12 +167,12 @@ You can use **[!UICONTROL Update variable]**  in multiple, sequenced rules to en
 Start by tracking product views on the product detail page of Luma:
 
 1. Select **[!UICONTROL Add Rule]**
-1. Name it  [!UICONTROL `ecommerce - pdp page bottom - AA (order 20)`]
+1. Name it  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
 1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Page Bottom]**
 1. Name it `Core - Page Bottom - order 20`
-1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This ensures the rule runs after the `all pages global content variables - page bottom - AA (order 1)` that sets the global content variables, but before the `all pages send event - page bottom - AA (order 50)` that sends the XDM event.
+1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This ensures the rule runs after the `all pages global content variables - library loaded - AA (order 1)` that sets the global content variables, but before the `all pages send event - library loaded - AA (order 50)` that sends the XDM event.
 
     ![Analytics XDM rules](assets/set-up-analytics-pdp.png)
 
@@ -241,7 +241,7 @@ Compare the data element to the `productListItems` structure (hint, it should ma
 Now, let's map our array to the XDM object"
 
 
-1. Create a new rule named `ecommerce - cart page bottom - AA (order 20)`
+1. Create a new rule named `ecommerce - cart library loaded - AA (order 20)`
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
 1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Page Bottom]**
@@ -289,7 +289,7 @@ Now, let's map our array to the XDM object"
 
 Create two other rules for checkout and purchase following the same pattern with the below differences:
 
-**Rule name**: `ecommerce - checkout page bottom - AA (order 20)`
+**Rule name**: `ecommerce - checkout library loaded - AA (order 20)`
 
 * **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout.html
 * Set `eventType` to `commerce.checkouts`
@@ -299,7 +299,7 @@ Create two other rules for checkout and purchase following the same pattern with
     >
     >This is equivalent to setting `scCheckout` event in Analytics 
 
-**Rule name**: `ecommerce - purchase page bottom - AA (order 20)`
+**Rule name**: `ecommerce - purchase library loaded - AA (order 20)`
 
 * **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout/order/thank-you.html
 * Set `eventType` to `commerce.purchases`
@@ -339,7 +339,7 @@ Now that you have set the variables, you can create the second rule to send the 
 
 1. On the right, select to **[!UICONTROL Add Rule]** to create another rule
 
-1. Name the rule `all pages send event - page bottom - AA (order 50)`
+1. Name the rule `all pages send event - library loaded - AA (order 50)`
 
 1. In the **[!UICONTROL Events]** section, select **[!UICONTROL Add]**
 
@@ -384,7 +384,7 @@ To create a library:
 
     >[!NOTE]
     >
-    >    In addition to the Adobe Experience Platform Web SDK extension and the `all pages global content variables - page bottom - AA (order 50)` rule, you see the tag components created in previous lessons. The Core extension contains the base JavaScript required by all web tag properties.
+    >    In addition to the Adobe Experience Platform Web SDK extension and the `all pages global content variables - library loaded - AA (order 50)` rule, you see the tag components created in previous lessons. The Core extension contains the base JavaScript required by all web tag properties.
 
 1. Select **[!UICONTROL Save & Build for Development]**
 

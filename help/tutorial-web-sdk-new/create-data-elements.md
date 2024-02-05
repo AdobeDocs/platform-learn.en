@@ -148,7 +148,7 @@ Before you create the XDM object, create the following set of data elements for 
 
 1. Go to **[!UICONTROL Data Elements]** and select **[!UICONTROL Add Data Element]** (or **[!UICONTROL Create New Data Element]** if there are no existing data elements in the tag property)
 
-    ![Create Data Element](assets/data-element-create.jpg)
+    ![Create Data Element](assets/data-element-create.png)
 
 1. Name the data element `page.pageInfo.pageName`
 1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to a value in Luma's data layer: `digitalData.page.pageInfo.pageName`
@@ -159,7 +159,7 @@ Before you create the XDM object, create the following set of data elements for 
 
 1. Select **[!UICONTROL Save]**
 
-    ![Page Name Data Element](assets/data-element-pageName.jpg)
+    ![Page Name Data Element](assets/data-element-pageName.png)
 
 Create these additional data elements by following the same steps:
 
