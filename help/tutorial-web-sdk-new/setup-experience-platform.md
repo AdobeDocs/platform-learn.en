@@ -78,7 +78,7 @@ Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL A
 1. Select **[!UICONTROL Datastreams]** from the left navigation
 1. Open the datastream you created in the [Configure a datastream](configure-datastream.md) lesson, `Luma Web SDK`
 
-    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk-development.png)
 
 1. Select **[!UICONTROL Add Service]**
      ![Add a service to the datastream](assets/experience-platform-addService.png)

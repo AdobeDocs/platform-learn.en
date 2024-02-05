@@ -119,9 +119,9 @@ To configure Target in the datastream:
 
 1. Go to the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
-1. Select the previously created `Luma Web SDK` datastream
+1. Select the previously created `Luma Web SDK: Development Environment` datastream
 
-    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk-development.png)
 
 1. Select **[!UICONTROL Add Service]**
      ![Add a service to the datastream](assets/target-datastream-addService.png)
