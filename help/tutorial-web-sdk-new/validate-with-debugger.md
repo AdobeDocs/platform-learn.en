@@ -31,7 +31,7 @@ At the end of this lesson, you will be able to use the debugger to:
 
 ## Prerequisites
 
-You are familiar with Data Collection tags and the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} and have completed the following previous lessons in the tutorial:
+You are familiar with Data Collection tags and the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} and have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)
@@ -43,14 +43,10 @@ You are familiar with Data Collection tags and the [Luma demo site](https://luma
 
 ## Load alternate tag libraries with Debugger
 
-This tutorial uses a publicly hosted version of the [Luma demo website](https://luma.enablementadobe.com/content/luma/us/en.html). Open the homepage and bookmark it.
-
-![Luma homepage](assets/validate-luma-site.png)   
-
 The Experience Platform Debugger has a cool feature that allows you to replace an existing tag library with a different one. This technique is useful for validation and allows us to skip many implementation steps in this tutorial.
 
-1. Make sure you have the Luma site open and select the Experience Platform Debugger extension icon
-1. The Debugger will open and show some details of the hardcoded implementation, which is unrelated to this tutorial (you may need to reload the Luma site after opening the Debugger)
+1. Make sure you have the [Luma demo website](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"} open and select the Experience Platform Debugger extension icon
+1. The Debugger will open and show some details of the hardcoded implementation (you may need to reload the Luma site after opening the Debugger)
 1. Confirm that the Debugger is "**[!UICONTROL Connected to Luma]**" as pictured below and then select the "**[!UICONTROL lock]**" icon to lock the Debugger to the Luma site.
 1. Select the **[!UICONTROL Sign In]** button and sign into Adobe Experience Cloud using your Adobe Id.
 1. Now go to **[!UICONTROL Experience Platform Tags]** in the left navigation
@@ -72,7 +68,7 @@ The Experience Platform Debugger has a cool feature that allows you to replace a
 
     ![tag property replaced](assets/validate-switch-success.png)
 
-As you continue the tutorial, you use this technique of mapping the Luma site to your own tag property to validate your Platform Web SDK implementation. When you start using tags on your production website, you can use this same technique to validate changes.
+As you continue the tutorial, you use this technique of mapping the Luma site to your own tag property to validate your Platform Web SDK implementation. When you start using tags on your production website, you can use this same technique to validate changes as you make them in your development environment of tags.
 
 ## Validate client-side network requests with Experience Platform Debugger
 
@@ -132,18 +128,20 @@ These types of request details are also visible in the browser's web developer t
 
     ![Network tab](assets/validate-dev-console-ecid.png)   
 
+    >[!NOTE]
+    >
+    > The ECID value is visible in the network response. It is not included in the `identityMap` portion of the network request, nor is it stored in this format in a cookie.
 
 ## Validate server-side network requests with Experience Platform Debugger
 
-As you learned in the [Configure a datastream](configure-datastream.md) lesson, Platform Web SDK first sends data from your digital property to Platform Edge Network. Then, Platform Edge Network makes additional server-side requests to the corresponding services enabled in your datastream. 
+As you learned in the [Configure a datastream](configure-datastream.md) lesson, Platform Web SDK first sends data from your digital property to Platform Edge Network. Then, Platform Edge Network makes additional server-side requests to the corresponding services enabled in your datastream. You can validate the server-side requests made by Platform Edge Network by using Edge Trace in the Debugger. 
 
-You can validate server-side requests by enabling Edge Trace in the Debugger. Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). 
+<!--Furthermore, you can also validate the fully processed payload after it reaches an Adobe application by using [Adobe Experience Platform Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). -->
 
-In the next two exercises, you enable Edge Trace and view the Experience Cloud ID generated from Platform Edge Network by using Assurance.
 
 ### Enable Edge Trace
 
-To enable the Edge Trace
+To enable Edge Trace:
 
 1. In the left navigation of **[!UICONTROL Experience Platform Debugger]** select **[!UICONTROL Logs]**
 1. Select the **[!UICONTROL Edge]** tab, and select **[!UICONTROL Connect]**
@@ -158,37 +156,9 @@ To enable the Edge Trace
 
     ![Analytics beacon Edge Trace](assets/validate-edge-trace.png)
 
-At this point, you are not able to view any Platform Edge Network requests going to an Adobe applicatoin because you have not enabled any in the datastream. In future lessons, you use Edge Trace to view the outgoing server-side requests to Adobe applications. However, using Assurance you can still view the Experience Cloud ID generated by Platform Edge Network.
+At this point, you are not able to view any Platform Edge Network requests going to an Adobe applications because you have not enabled any in the datastream. In future lessons, you use Edge Trace to view the outgoing server-side requests to Adobe applications and event forwarding. But first, learn about another tool to validate server-side requests made by Platform Edge Network&mdash;Adobe Experience Platform Assurance!
 
-### Start an Assurance session
-
-Adobe Experience Platform Assurance is a product from Adobe Experience Cloud to help you inspect, proof, simulate, and validate how you collect data or serve experiences. 
-
-Read more about [Adobe Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). 
-
-Every time you enable Edge Trace, an Assurance session is started in the background. 
-
-To view the Assurance session,
-
-1. With Edge Trace enabled, you can see an outgoing link icon on top. Select the icon to open Assurance. A new tab in your browser opens.
-
-    ![Start Assurance session](assets/validate-debugger-start-assurnance.png)
-
-1. Select the row with the event called Adobe Response Handle. 
-1. A menu shows up on the right. Select the `+` sign next to `[!UICONTROL ACPExtensionEvent]` 
-1. Drill down by selecting `[!UICONTROL payload > 0 > payload > 0 > namespace]`. The ID shown under the last `0` corresponds to the `ECID`. You know that by the value that shows up under `namespace` matching `ECID`
-
-    ![Assurance validate ECID](assets/validate-assurance-ecid.png)
-
-    >[!CAUTION]
-    >
-    >You may see a truncated ECID value due to the width of your window. Simply select the handle bar in the interface and drag to the left to view the entire ECID. 
-
-In future lessons, you use Assurance to validate fully processed payloads reaching an Adobe application enabled in your datastream.
-
-With an XDM object now firing on a page, and with the knowledge of how to validate your data collection, you are ready to set up the individual Adobe applications using Platform Web SDK.
-
-[Next: **Set up Experience Platform**](setup-experience-platform.md)
+[Next: **Validate with Assurance**](validate-with-assurance.md)
 
 >[!NOTE]
 >

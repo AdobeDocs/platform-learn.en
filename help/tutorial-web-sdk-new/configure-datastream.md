@@ -37,7 +37,7 @@ Now you can create a datastream to tell Platform Edge Network where to send data
 
    >[!NOTE]
    >
-   >If you are the customer of a Platform-based application like Real-Time CDP, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
+   >If you are the customer of a Platform-based application like Real-Time CDP or Journey Optimizer, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
 
 1. Go to **[!UICONTROL Datastreams]** in the left navigation
 1. Select **[!UICONTROL New Datastream]** on the right hand-side of the screen.
@@ -46,13 +46,6 @@ Now you can create a datastream to tell Platform Edge Network where to send data
 1. Select **[!UICONTROL Save]**
 
    ![Create the datastream](assets/datastream-create-new-datastream.png)
-
-   >[!AVAILABILITY]
-   >
-   >The mapping feature will be incorporated into this tutorial at a later date.
-
-   
-
 
 On the next screen, you are able to add services such as Adobe applications to the datastream, however you will not add any services at this point in the tutorial. You will do so later in the lessons [Set up Experience Platform](setup-experience-platform.md), [Set up Analytics](setup-analytics.md), [Set up Audience Manager](setup-audience-manager.md), [Setup Target](setup-target.md), or [Event Forwarding](setup-event-forwarding.md).
 
@@ -70,9 +63,9 @@ Datastream configuration override is a two-step process:
 1. First, you define your datastream  overrides in the datastream configuration. This must be done per Adobe application you are looking to override.
 1. Then, you send the overrides to the Edge Network either by a Web SDK Send Event Action, or by a configuration in the Web SDK tag extension.
 
-See the [datastream configuration overrides documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) for detailed instructions on how to override datastream configurations.
+In the [Set up Adobe Analytics](setup-analytics.md) lesson you override the report suite for a page using the Platform Web SDK Send Event Action.
 
-In the Set up Adobe Analytics lesson you [override the report suite for a page using the Platform Web SDK Send Event Action](setup-analytics.md).
+See the [datastream configuration overrides documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) for detailed instructions on how to override datastream configurations.
 
 You are now ready to install the Platform Web SDK extension in your tag property!
 
