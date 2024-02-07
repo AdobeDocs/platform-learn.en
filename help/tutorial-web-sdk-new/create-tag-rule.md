@@ -17,7 +17,9 @@ Learn how to send events to the Platform Edge Network with your XDM object using
 At the end of this lesson, you are able to:
 
 * Use a naming convention for managing rules within tags
-* Send an XDM event by using Update Variable and Send Event action types in a tag rule
+* Send an event with XDM fields using Update Variable and Send Event actions
+* Stack multiple sets of XDM fields across multiple rules
+* Map individual or entire array data elements to the XDM object
 * Publish a tag rule to a development library
 
 
