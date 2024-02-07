@@ -18,13 +18,13 @@ Learn how to create data elements in tags for content, commerce, and identity da
 At the end of this lesson, you are able to:
 
 * Understand different approaches to mapping a data layer to XDM
-* Create data elements to capture content data
-* Map data elements to an XDM object data element
+* Create data elements to capture data
+* Map data elements to an XDM object
 
 
 ## Prerequisites 
 
-You have an understanding of what a data layer is and have completed the following previous lessons in the tutorial:
+You have an understanding of what a data layer is and have completed the previous lessons in the tutorial:
 
 * [Configure an XDM schema](configure-schemas.md)
 * [Configure an identity namespace](configure-identities.md)
@@ -35,9 +35,9 @@ You have an understanding of what a data layer is and have completed the followi
 
 There are multiple ways to map data from your data layer to XDM using the tags functionality of Adobe Experience Platform. Below are a few pros and cons of three different approaches:
 
-* [Implement XDM in the data layer](create-data-elements.md#implement-xdm-in-the-data-layer)
-* [Map to XDM in the datastream](create-data-elements.md#map-to-xdm-in-the-datastream)
-* [Map to XDM in tags](create-data-elements.md#map-data-layer-in-tags)
+1. Implement XDM in the data layer
+1. Map to XDM in tags
+1. Map to XDM in the datastream
 
 >[!NOTE]
 >
@@ -46,7 +46,7 @@ There are multiple ways to map data from your data layer to XDM using the tags f
 
 ### Implement XDM in the data layer
 
-This approach involves using the fully defined XDM object as the structure for your data layer. Then you map the entire data layer to an XDM object data element in Adobe Tags. If your implementation is not using a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). If you do you use Adobe tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
+This approach involves using the fully defined XDM object as the structure for your data layer. Then you map the entire data layer to an XDM object data element in tags. If your implementation is not using a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). If you do you use tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
 
 Below is an example of how the data layer would look like using the Adobe Client Data Layer format:
 
@@ -91,7 +91,7 @@ window.adobeDataLayer.push({
 
 Pros
 
-* Skips steps to map individual data layer variables to XDM
+* Eliminates additional steps remap to data layer variables to XDM
 * May be quicker to deploy if your development team owns tagging digital behavior
 
 Cons
@@ -102,41 +102,44 @@ Cons
 * Cannot use the data layer for third-party pixels
 * No ability to transform the data between the data layer and XDM
 
-### Map to XDM in the datastream
-
-This approach uses functionality built-into the datastream configuration called [Data Prep for Data Collection](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) and skips mapping data layer variables to XDM in tags. 
-
-Pros
-
-* Flexible as you can map individual variables to XDM
-* Ability to [compute new values](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) or [transform data types](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) from a data layer before it goes to XDM 
-* Leverage a [Mapping UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) to map fields in your source data to XDM with a point-and-click UI
-
-Cons
-
-* Cannot use data layer variables as data elements for client-side third-party pixels, but can use them with Adobe tags event-forwarding
-* Cannot use the scraping functionality of the tags feature of Adobe Experience Platform 
-* Maintenance complexity increases if mapping the data layer both in tags and in datastream 
-
 ### Map data layer in tags 
 
 This approach involves mapping individual data layer variables OR data layer objects to data elements in tags and eventually to XDM. This is the traditional approach to implementation using a tag management system. 
 
-Pros
+#### Pros
 
 * The most flexible approach as you can control individual variables and transform data before it gets to XDM
 * Can use Adobe tags triggers and scraping functionality to pass data to XDM
 * Can map data elements to third-party pixels client-side
 
-Cons
+#### Cons
 
-* May take longer to implement
+* Takes time to reconstruct the data layer as data elements
+
 
 >[!TIP] 
 >
 > Google Data Layer
 > 
-> If your organization already uses Google Analytics and has the traditional Google dataLayer object on your website, you can use the [Google Data Layer extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in Adobe Tags. This allows you to deploy Adobe technology quicker without having to request support from your IT team. Mapping the Google data layer to XDM would follow the same steps as above.
+> If your organization already uses Google Analytics and has the traditional Google dataLayer object on your website, you can use the [Google Data Layer extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in tags. This allows you to deploy Adobe technology quicker without having to request support from your IT team. Mapping the Google data layer to XDM would follow the same steps as above.
+
+### Map to XDM in the datastream
+
+This approach uses functionality built-into the datastream configuration called [Data Prep for Data Collection](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) and skips mapping data layer variables to XDM in tags. 
+
+#### Pros
+
+* Flexible as you can map individual variables to XDM
+* Ability to [compute new values](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) or [transform data types](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) from a data layer before it goes to XDM 
+* Leverage a [Mapping UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) to map fields in your source data to XDM with a point-and-click UI
+
+#### Cons
+
+* Cannot use data layer variables as data elements for client-side third-party pixels, but can use them with event forwarding
+* Cannot use the scraping functionality of the tags feature of Adobe Experience Platform 
+* Maintenance complexity increases if mapping the data layer both in tags and in datastream 
+
+
 
 >[!IMPORTANT]
 >
@@ -264,7 +267,7 @@ To create the Variable data element:
 
 At the end of these steps, you should have the following data elements created:
 
-|CORE Extension Data Elements | Platform Web SDK Data Elements|
+|Core Extension Data Elements | Platform Web SDK Extension Data Elements|
 -----------------------------|-------------------------------
 | `cart.orderId` | `xdm.variable.content` |
 | `cart.productInfo`| |
@@ -272,6 +275,7 @@ At the end of these steps, you should have the following data elements created:
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
+| `product.category`| | 
 | `product.productInfo.sku`| | 
 | `product.productInfo.title`| |
 | `user.profile.attributes.loggedIn` | |
@@ -279,7 +283,7 @@ At the end of these steps, you should have the following data elements created:
 
 >[!TIP]
 >
->In a future [Create a tag rule](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data element allows you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**. Then, you can independently send the XDM object to Adobe Experience Platform Edge Network using a separate **[!UICONTROL Send Event action type]**. 
+>In a future [Create a tag rule](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data element allows you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**.
 
 With these data elements in place, you are ready to start sending data to Platform Edge Network with a tags rule. But first, learn about collecting identities with Web SDK. 
 

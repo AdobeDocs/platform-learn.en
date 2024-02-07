@@ -70,9 +70,9 @@ In these lessons, it is assumed that you have an Adobe account and the required 
 
 ## Load the Luma website
 
-Load the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html) in a separate browser tab and bookmark it so you can easily load it whenever needed during the tutorial. You do not require any additional access to Luma other than being able to load our hosted, production site.
+Load the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} in a separate browser tab and bookmark it so you can easily load it whenever needed during the tutorial. You do not require any additional access to Luma other than being able to load our hosted, production site.
 
-[![Luma website](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html)
+[![Luma website](assets/old-overview-luma.png)](https://luma.enablementadobe.com/content/luma/us/en.html){target="blank"} 
 
 Let's get started!
 
