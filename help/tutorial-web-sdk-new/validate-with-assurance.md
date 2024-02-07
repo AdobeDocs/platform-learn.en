@@ -6,7 +6,7 @@ feature: Web SDK,Tags,Assurance
 # Validate Web SDK implementations with Experience Platform Assurance
 
 
-### Start an Assurance session
+## Start an Assurance session
 
 Adobe Experience Platform Assurance is a product from Adobe Experience Cloud to help you inspect, proof, simulate, and validate how you collect data or serve experiences. 
 
