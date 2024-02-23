@@ -1,5 +1,5 @@
 ---
-title: Create a tags property
+title: Create a tag property
 description: Learn how to create tag properties to manage the marketing tags on your website.
 feature: Tags
 level: Beginner
