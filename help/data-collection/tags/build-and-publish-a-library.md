@@ -3,8 +3,9 @@ title: Build and publish a tag library
 description: Learn how to create a library in your tag property and push changes through your development, staging, and production environments.
 feature: Tags
 level: Beginner
-jira: KT-3531
+duration: 584
 last-substantial-update: 2024-02-23
+jira: KT-3531
 exl-id: 877b92e1-9b93-4abe-99e4-f80a3e353681
 ---
 # Build and publish a tag library
