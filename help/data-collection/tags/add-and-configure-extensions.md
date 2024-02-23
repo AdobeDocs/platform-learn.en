@@ -1,5 +1,5 @@
 ---
-title: Add and configure tag extensions (formerly Launch extensions)
+title: Add and configure tag extensions
 description: Learn how to add and configure extensions in your tag property.
 feature: Tags
 level: Beginner
