@@ -1,6 +1,6 @@
 ---
-title: Create audiences with B2B data
-description: Learn how to create audiences with B2B data.
+title: Create and activate account audiences for [!DNL B2B] and [!DNL B2P]
+description: Learn about Account-Based Marketing capabilities in the [!DNL B2B] and [!DNL B2P] editions of the [!DNL Real-time Customer Data Platform], including creating and activating account audiences.
 solution: Real-Time Customer Data Platform
 feature: Segments
 role: User
@@ -8,14 +8,11 @@ level: Beginner
 jira: KT-9261
 thumbnail: 338252.jpg
 exl-id: 8432f6d5-bc96-404b-ae5f-7cbef7e16abb
+last-substantial-update: 2024-02-29
 ---
-# Create audiences with B2B data
+# Create and activate account audiences for [!DNL B2B] and [!DNL B2P]
 
-Learn how to create audiences with your B2B data in Real-Time Customer Data Platform, B2B Edition and Adobe Experience Platform. Use account profiles and opportunities in audience rule definitions. For more information, please see the [Segmentation documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
-
->[!NOTE]
->
-> "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
+Learn about Account-Based Marketing capabilities in the [!DNL B2B] and [!DNL B2P] editions of the [!DNL Real-time Customer Data Platform], including creating and activating account audiences. For more information, please see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on)
 
