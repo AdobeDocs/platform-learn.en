@@ -6,7 +6,6 @@ topic: Integrations
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13827
-thumbnail: 3423071.jpg
 last-substantial-update: 2023-08-23
 exl-id: 58427feb-ed4e-43fe-921b-8deb24e2c531
 ---
