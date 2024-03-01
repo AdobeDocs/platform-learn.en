@@ -3,6 +3,7 @@ title: Personalize onsite experiences for unknown visitors using partner-aided v
 description: Learn how to collect third-party attributes from the [!DNL Adobe Experience Platform Web SDK] and personalize your onsite experience for unknown visitors using partner-aided visitor recognition.
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13831

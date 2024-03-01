@@ -3,6 +3,7 @@ title: Add partner attributes to first-party profiles in [!DNL Real-Time CDP]
 description: Learn how to add partner attributes to your first-party profiles to expand the reach through additional channels in [!DNL Real-Time CDP].
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13830

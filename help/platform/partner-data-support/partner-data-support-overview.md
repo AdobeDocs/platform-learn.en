@@ -3,6 +3,7 @@ title: Partner data support overview in Real-Time CDP
 description: Learn how [!DNL Real-Time Customer Data Platform] supports full-funnel marketing using partner data for first-party data enrichment and prospecting use cases as third-party cookies continue to be deprecated. 
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: User
 level: Beginner
 jira: KT-13805
