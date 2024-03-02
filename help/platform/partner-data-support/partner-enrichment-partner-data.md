@@ -7,6 +7,7 @@ solution: Real-Time Customer Data Platform
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13830
+thumbnail: 3423075.jpg
 last-substantial-update: 2023-08-23
 exl-id: 7b6cb89d-b514-48ae-b932-1254abd57d31
 ---

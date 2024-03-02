@@ -7,6 +7,7 @@ solution: Real-Time Customer Data Platform
 role: User
 level: Beginner
 jira: KT-13805
+thumbnail: 3422855.jpg
 last-substantial-update: 2023-08-23
 exl-id: 5059b376-ab06-4fec-946d-deb6b6c22ffa
 ---
