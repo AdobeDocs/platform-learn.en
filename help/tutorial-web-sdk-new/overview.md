@@ -34,7 +34,7 @@ After completing this tutorial, you should be ready to start implementing all of
 
 All Experience Cloud customers can use Platform Web SDK. It is not a requirement to license a Platform-based application like Real-Time Customer Data Platform or Journey Optimizer to use Web SDK.
 
-In these lessons, it is assumed that you have an Adobe account and the required permissions to complete the lessons. If not, you must reach out to your Experience Cloud Administrator to request access.
+In these lessons, it is assumed that you have an Adobe account and the required permissions to complete the lessons. If not, you must reach out to an Experience Cloud Administrator at your company to obtain access.
 
 * For **Data Collection**, you must have:
   * **[!UICONTROL Platforms]**&mdash;permission for **[!UICONTROL Web]** and, if licensed, **[!UICONTROL Edge]**
