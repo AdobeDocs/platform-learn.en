@@ -6,6 +6,11 @@ exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
 ---
 # Conclusion and next steps
 
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+
 Congratulations! You have completed the "Implement Adobe Experience Cloud with Web SDK" tutorial!
 
 Let's quickly review all that you have accomplished. You have:

@@ -6,6 +6,11 @@ exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
 ---
 # Validate Web SDK implementations with Experience Platform Debugger
 
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+
 Learn how to validate your Platform Web SDK implementation with Adobe Experience Platform Debugger.
 
 The Experience Platform Debugger is an extension available for Chrome and Firefox browsers which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:

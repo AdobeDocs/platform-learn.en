@@ -6,6 +6,11 @@ exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 ---
 # Create an XDM schema for web data
 
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+
 Learn how to create an XDM schema for web data in the Data Collection interface.
 
 Experience Data Model (XDM) schemas are the building blocks, principles, and best practices for composing schemas in Adobe Experience Platform.

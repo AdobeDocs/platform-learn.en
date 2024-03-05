@@ -5,6 +5,11 @@ exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
 ---
 # Stream data to Experience Platform with Web SDK
  
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+
 Learn how to stream web data to Adobe Experience Platform with Platform Web SDK. 
 
 Experience Platform is the backbone of all new Experience Cloud applications, such as Adobe Real-Time Customer Data Platform, Adobe Customer Journey Analytics, and Adobe Journey Optimizer. These applications are designed to use Platform Web SDK as their optimal method of web data collection.

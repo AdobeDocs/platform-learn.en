@@ -6,6 +6,11 @@ exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
 ---
 # Implement Adobe Experience Cloud with Web SDK tutorial
 
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+
+
 Learn how to implement Experience Cloud applications using Adobe Experience Platform Web SDK.
 
 Experience Platform Web SDK is a client-side JavaScript library that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See [Adobe Experience Platform Web SDK Overview](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) for more detailed information.
