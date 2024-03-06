@@ -19,6 +19,7 @@ role: Developer, Data Engineer
   + [Add and configure extensions](tags/add-and-configure-extensions.md)
   + [Create data elements](tags/create-data-elements.md)
   + [Build rules](tags/build-rules.md)
+  + [Stack rules](tags/stack-rules.md)
   + [Build and publish a library](tags/build-and-publish-a-library.md)
   + [Implement in websites with Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
   + [Implement in websites with solution SDKs](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
