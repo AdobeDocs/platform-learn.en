@@ -3,6 +3,7 @@ title: Support offsite prospecting use cases using partner data in [!DNL Real-Ti
 description: Learn about the workflow used to ingest new prospects from partners in [!DNL Real-Time CDP] for pre-visit targeting. 
 feature: Integrations
 topic: Integrations
+solution: Real-Time Customer Data Platform
 role: Architect, Data Architect, User
 level: Intermediate
 jira: KT-13827

@@ -5,7 +5,6 @@ feature: Destinations
 role: User, Admin
 level: Beginner
 jira: KT-8483
-thumbnail: 336046.jpg
 exl-id: 659e7739-8d24-4b75-a0d2-56d087d5eea9
 ---
 # Activate profiles and segments to a destination

@@ -5,7 +5,6 @@ feature: API
 role: Developer
 level: Experienced
 jira: KT-7349
-thumbnail: 7349.jpg
 last-substantial-update: 2023-06-21
 exl-id: da94f4bd-0686-4d6a-a158-506f2e401b4e
 ---

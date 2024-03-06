@@ -8,19 +8,6 @@ exl-id: 2d153ef8-7fba-40da-b34a-cad9b24c902c
 
 Data Collection is the next generation of website tag and mobile SDK management capabilities from Adobe. Data Collection gives customers a simple way to deploy and manage the analytics, marketing, and advertising solutions necessary to power relevant customer experiences. Use these videos and tutorials to help learn this critical technology.
 
-<div id="whats-new-section">
-
-## What's new
-
-* **[Server API overview (video)](server-api/overview.md)**
-    *Send data using a secure, authenticated server API.*
-* **[Implement Adobe Experience Cloud in mobile apps (tutorial)](https://experienceleague.adobe.com/docs/platform-learn/implement-mobile-sdk/overview.html)**
-    *Implement Experience Cloud applications with Mobile SDK.*
-* **[Move client-side tags (tutorial)](event-forwarding/consider-moving-tags.md)**
-    *Consider moving client-side tags to event forwarding.*
-
-</div>
-
 <div id="recs-overview-body-1"></div>
 <div id="recs-overview-body-2"></div>
 <div id="recs-overview-body-3"></div>

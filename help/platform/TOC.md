@@ -50,7 +50,7 @@ auto-video-transcripts: true
   + [Create sequential audiences](audiences/create-sequential-audiences.md)
   + [Create dynamic audiences](audiences/create-dynamic-audiences.md)
   + [Create multi-entity audiences](audiences/create-multi-entity-audiences.md)
-  + [Create audiences with B2B data](audiences/create-audiences-with-b2b-data.md)
+  + [Create and activate account audiences (B2B)](audiences/create-audiences-with-b2b-data.md)
   + [Demo of streaming segmentation](/help/platform/audiences/streaming-segmentation-demo.md)
   + [Evaluate an audience rule](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
   + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
