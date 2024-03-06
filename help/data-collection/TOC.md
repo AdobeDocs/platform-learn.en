@@ -19,6 +19,7 @@ role: Developer, Data Engineer
   + [Add and configure extensions](tags/add-and-configure-extensions.md)
   + [Create data elements](tags/create-data-elements.md)
   + [Build rules](tags/build-rules.md)
+  + [Stack rules](tags/stack-rules.md)
   + [Build and publish a library](tags/build-and-publish-a-library.md)
   + [Implement in websites with Web SDK](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
   + [Implement in websites with solution SDKs](https://experienceleague.adobe.com/docs/platform-learn/implement-in-websites/overview.html){target="_blank"}
@@ -48,7 +49,6 @@ role: Developer, Data Engineer
   + [Set up a datastream](event-forwarding/set-up-a-datastream.md)
   + [Add an extension](event-forwarding/add-an-extension.md)
   + [Create a rule](event-forwarding/create-a-rule.md)
-  + [Stack rules](event-forwarding/stack-rules.md)
   + [Quick start workflows](event-forwarding/quick-start-workflows.md)
   + [Monitor event forwarding](event-forwarding/monitor.md)
   + [Move client-side tags](event-forwarding/consider-moving-tags.md)
