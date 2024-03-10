@@ -33,7 +33,7 @@ You have an understanding of what a data layer is and have completed the previou
 
 ## Data layer approaches
 
-There are multiple ways to map data from your data layer to XDM using the tags functionality of Adobe Experience Platform. Below are a few pros and cons of three different approaches:
+There are multiple ways to map data from your data layer to XDM using the tags functionality of Adobe Experience Platform. Below are a few pros and cons of three different approaches. It is possible to combine approaches, if desired:
 
 1. Implement XDM in the data layer
 1. Map to XDM in tags
@@ -283,7 +283,7 @@ At the end of these steps, you should have the following data elements created:
 
 >[!TIP]
 >
->In a future [Create a tag rule](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data element allows you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**.
+>In a future [Create tag rules](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data element allows you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**.
 
 With these data elements in place, you are ready to start sending data to Platform Edge Network with a tags rule. But first, learn about collecting identities with Web SDK. 
 
