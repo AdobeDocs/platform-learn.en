@@ -8,7 +8,6 @@ Learn how to stream web data to Adobe Experience Platform with Platform Web SDK.
 
 Experience Platform is the backbone of all new Experience Cloud applications, such as Adobe Real-Time Customer Data Platform, Adobe Customer Journey Analytics, and Adobe Journey Optimizer. These applications are designed to use Platform Web SDK as their optimal method of web data collection.
 
-
 ![Web SDK and Adobe Experience Platform diagram](assets/dc-websdk-aep.png)
 
 Experience Platform uses the same XDM schema you created earlier to capture event data from the Luma website. When that data is sent to Platform Edge Network, the datastream configuration can forward it to Experience Platform.
@@ -24,29 +23,17 @@ At the end of this lesson, you will be able to:
 
 ## Prerequisites
 
-You should have already completed the following lessons:
+To complete this lesson, you must first:
 
-* The **Initial Configuration** lessons:
-  * [Configure an XDM schema](configure-schemas.md)
-  * [Configure a datastream](configure-datastream.md)
-  * [Configure an identity namespace](configure-identities.md)
-
-* The **Tags Configuration** lessons:
-  * [Install Web SDK extension](install-web-sdk.md)
-  * [Create data elements](create-data-elements.md)
-  * [Create identities](create-identities.md)
-  * [Create tag rules](create-tag-rule.md)
+* Have access to an Adobe Experience Platform application like Real-Time Customer Data Platform, Journey Optimizer, or Customer Journey Analytics
+* Complete the earlier lessons in the Initial Configuration and Tags Configuration sections of this tutorial.
 
 
 ## Create a dataset
 
 All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A [dataset](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. 
 
-In this exercise, you create a dataset to track content and e-commerce details for the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html).
-
->[!WARNING]
->
->You must have already created the `Luma Web Event Data` schema, as instructed in the previous lesson, [Configure an XDM schema](configure-schemas.md).
+Let's set up a dataset for your Luma web event data:
 
 
 1. Go to the [Experience Platform interface](https://experience.adobe.com/platform/)
@@ -205,7 +192,7 @@ Now the schema is also enabled for profile.
 > * First, ingest some data into your datasets.
 > * Address any issues that arise during the data ingestion process (for example, data validation or mapping issues).
 > * Enable your datasets and schemas for Profile
-> * Re-ingest the data
+> * Re-ingest the data, if needed
 
 
 ### Validate a profile

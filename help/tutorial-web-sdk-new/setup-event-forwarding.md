@@ -56,7 +56,7 @@ At this end of this lesson, you will be able to:
     * [Install Web SDK extension](install-web-sdk.md)
     * [Create data elements](create-data-elements.md)
     * [Create identities](create-identities.md)
-    * [Create a tag rule](create-tag-rule.md)
+    * [Create tag rules](create-tag-rule.md)
     * [Validate with Adobe Experience Platform debugger](validate-with-debugger.md)
 
 

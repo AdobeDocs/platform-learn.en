@@ -34,15 +34,16 @@ You are familiar with Data Collection tags and the [Luma demo site](https://luma
 
 ## Naming Conventions
 
-To better manage rules in tags, it is recommended to follow a standard naming convention. This tutorial uses a three-part naming convention:
+To better manage rules in tags, it is recommended to follow a standard naming convention. This tutorial uses a five-part naming convention:
 
-* [**location**] - [**event**] - [**tool**] (**sequence**)
+* [**location**] - [**event**] - [**purpose**] - [**tool**] - [**order**]
 
 where;
 
 1. **location** is the page or pages on the site where the rule fires
 1. **event** is the trigger for the rule
-1. **tool** is the specific application or applications used in the action step for that rule
+1. **purpose** is the main action performed by the rule
+1. **tool** is the specific application or applications used in the action step for that rule, which should be rare with Web SDK
 1. **sequence** is the order in which the rule should fire in relation to other rules
 <!-- minor update --> 
 
@@ -53,19 +54,25 @@ In tags, rules are used to execute actions (fire calls) under various conditions
 * **[!UICONTROL Update variable]** maps data elements to XDM fields
 * **[!UICONTROL Send Event]** sends the XDM object to Experience Platform Edge Network
 
-First we define a "global configuration" of XDM fields which we want to send on every page of the website (for example, the page name) using the **[!UICONTROL Update Variable]** action. 
+In the rest of this lesson we:
 
-Then, we define additional rules containing **[!UICONTROL Update Variable]** to supplement the "global configuration" with additional XDM fields which are only available under certain conditions (for example, adding product details on product pages).
+1. Create a rule to define a "global configuration" of XDM fields (using [!UICONTROL Update variable] which we want to send on every page of the website (for example, the page name) using the **[!UICONTROL Update Variable]** action. 
 
-Finally, we will use another rule with the **[!UICONTROL Send Event]** action which will send the complete XDM object to Adobe Experience Platform Edge Network.
+1. Create additional rules that override our "global configuration" or contribute additional XDM fields (using [!UICONTROL Update variable] again) which are only relevant under certain conditions (for example, adding product details on product pages).
+
+1. Create another rule with the **[!UICONTROL Send Event]** action which will send the complete XDM object to Adobe Experience Platform Edge Network.
 
 All of these rules will be sequenced properly using the "[!UICONTROL order]" option.
+
+This video gives an overview of the process:
+
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
 ### Update variable rules
 
 #### Global configuration
 
-To create a tag rule for the global XDM fields:
+To Create tag rules for the global XDM fields:
 
 1. Open the tag property that you are using for this tutorial
 
@@ -75,24 +82,22 @@ To create a tag rule for the global XDM fields:
 
     ![Create a rule](assets/rules-create.png)
     
-1. Name the rule `all pages global content variables - library loaded - AA (order 1)`
+1. Name the rule `all pages - library loaded - set global variables - 1`
 
 1. In the **[!UICONTROL Events]** section, select **[!UICONTROL Add]**
 
     ![Name the rule and add an event](assets/rule-name-new.png)   
 
-1. Use the **[!UICONTROL Core Extension]** and select `Page Bottom` as the **[!UICONTROL Event Type]** 
+1. Use the **[!UICONTROL Core Extension]** and select **[!UICONTROL Library Loaded (Page Top)]** as the **[!UICONTROL Event Type]** 
 
-1. Under the **[!UICONTROL Name]** field, name it `Core - Page Bottom - order 1`. This helps you describe the trigger with a meaningful name.
-
-1. Select **[!UICONTROL Advanced]** dropdown and enter `1` in **[!UICONTROL Order]**
+1. Select **[!UICONTROL Advanced]** dropdown and enter `1` as the **[!UICONTROL Order]**
 
     >[!NOTE]
     >
     > The lower the order number, the earlier it executes. Therefore, we give our "global configuration" a low order number.
 
 1. Select **[!UICONTROL Keep Changes]** to return to the main rule screen
-    ![Select Page Bottom Trigger](assets/create-tag-rule-trigger-bottom.png)
+    ![Select Library Loaded Trigger](assets/create-tag-rule-trigger-bottom.png)
 
 1. In the **[!UICONTROL Actions]** section, select **[!UICONTROL Add]**
 
@@ -116,7 +121,7 @@ Now map your [!UICONTROL data elements] to the [!UICONTROL schema] used by your 
  
     >[!TIP]
     >
-    > To understand what values to populate in the `eventType` field, you must go to the schema page and select the `eventType` field to view the suggested values on the right rail. 
+    > To understand what values to populate in the `eventType` field, you must go to the schema page and select the `eventType` field to view the suggested values on the right rail. You can also enter a new value, if needed. 
     > ![eventType suggested values on the schemas page](assets/create-tag-rule-eventType.png)
 
 1. Next, find the `identityMap` object in the schema and select it
@@ -154,7 +159,7 @@ Now map your [!UICONTROL data elements] to the [!UICONTROL schema] used by your 
 
 #### Product page fields
 
-Now, start to use **[!UICONTROL Update variable]** in multiple, sequenced rules to enrich the XDM object before sending it to [!UICONTROL Platform Edge Network]. 
+Now, start to use **[!UICONTROL Update variable]** in additional, sequenced rules to enrich the XDM object before sending it to [!UICONTROL Platform Edge Network]. 
 
 >[!TIP]
 >
@@ -165,12 +170,11 @@ Now, start to use **[!UICONTROL Update variable]** in multiple, sequenced rules 
 Start by tracking product views on the product detail page of Luma:
 
 1. Select **[!UICONTROL Add Rule]**
-1. Name it  [!UICONTROL `ecommerce - pdp library loaded - AA (order 20)`]
+1. Name it  [!UICONTROL `ecommerce - library loaded - set product details variables - 20`]
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
-1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Page Bottom]**
-1. Name it `Core - Page Bottom - order 20`
-1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This ensures the rule runs after the `all pages global content variables - library loaded - AA (order 1)` that sets the global content variables.
+1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Library Loaded (Page Top)]**
+1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This ensures the rule runs after the `all pages - library loaded - set global variables - 1` that sets the global configuration.
 
     ![Analytics XDM rules](assets/set-up-analytics-pdp.png)
 
@@ -240,11 +244,10 @@ Compare the data element to the `productListItems` structure (hint, it should ma
 Now, let's map our array to the XDM object:
 
 
-1. Create a new rule named `ecommerce - cart library loaded - AA (order 20)`
+1. Create a new rule named `ecommerce - library loaded - set shopping cart variables - 20`
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
-1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Page Bottom]**
-1. Name it `Core - Page Bottom - order 20`
+1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Library Loaded (Page Top)]**
 1. Select to open **[!UICONTROL Advanced Options]**, type in `20`
 1. Select **[!UICONTROL Keep Changes]**
 
@@ -286,7 +289,7 @@ Now, let's map our array to the XDM object:
 
 Create two other rules for checkout and purchase following the same pattern with the below differences:
 
-**Rule name**: `ecommerce - checkout library loaded - AA (order 20)`
+**Rule name**: `ecommerce  - library loaded - set checkout variables - 20`
 
 1. **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout.html
 1. Set `eventType` to `commerce.checkouts`
@@ -297,7 +300,7 @@ Create two other rules for checkout and purchase following the same pattern with
     >This is equivalent to setting `scCheckout` event in Analytics 
 
 
-**Rule name**: `ecommerce - purchase library loaded - AA (order 20)`
+**Rule name**: `ecommerce - library loaded - set purchase variables -  20`
 
 1. **[!UICONTROL Condition]**: /content/luma/us/en/user/checkout/order/thank-you.html
 1. Set `eventType` to `commerce.purchases`
@@ -332,18 +335,16 @@ Now that you have set the variables, you can create the rule to send the complet
 
 1. On the right, select **[!UICONTROL Add Rule]** to create another rule
 
-1. Name the rule `all pages send event - library loaded - AA (order 50)`
+1. Name the rule `all pages - library loaded - set send event - 50`
 
 1. In the **[!UICONTROL Events]** section, select **[!UICONTROL Add]**
 
-1. Use the **[!UICONTROL Core Extension]** and select `Page Bottom` as the **[!UICONTROL Event Type]** 
-
-1. Under the **[!UICONTROL Name]** field, name it `Core - Page Bottom - order 50`. This helps you describe the trigger with a meaningful name.
+1. Use the **[!UICONTROL Core Extension]** and select `Library Loaded (Page Top)` as the **[!UICONTROL Event Type]** 
 
 1. Select **[!UICONTROL Advanced]** dropdown and enter `50` in **[!UICONTROL Order]**. This will ensure the second rule triggers after the first rule you set to trigger as `1`.
 
 1. Select **[!UICONTROL Keep Changes]** to return to the main rule screen
-    ![Select Page Bottom Trigger](assets/create-tag-rule-trigger-bottom-send.png)
+    ![Select Library Loaded Trigger](assets/create-tag-rule-trigger-bottom-send.png)
 
 1. In the **[!UICONTROL Actions]** section, select **[!UICONTROL Add]**
 
@@ -377,7 +378,7 @@ To create a library:
 
     >[!NOTE]
     >
-    >    In addition to the Adobe Experience Platform Web SDK extension and the `all pages global content variables - library loaded - AA (order 50)` rule, you see the tag components created in previous lessons. The Core extension contains the base JavaScript required by all web tag properties.
+    >    You should see all the tag components created in previous lessons. The Core extension contains the base JavaScript required by all web tag properties.
 
 1. Select **[!UICONTROL Save & Build for Development]**
 
@@ -391,7 +392,7 @@ As you can see on the [!UICONTROL Publishing Flow] screen, there is a lot more t
 
 Now you are ready to validate the data in the request using the Adobe Experience Platform Debugger.
 
-[Next **Validate with Debugger and Assurance**](validate-with-debugger.md)
+[Next **Validate with Adobe Experience Platform Debugger**](validate-with-debugger.md)
 
 >[!NOTE]
 >

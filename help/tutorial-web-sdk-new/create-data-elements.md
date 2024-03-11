@@ -5,13 +5,7 @@ feature: Tags
 ---
 # Create data elements
 
-Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Then and populate fields in your XDM schema using the Variable  data element type. 
-
-
->[!IMPORTANT]
->
->The data for this lesson comes from the `[!UICONTROL digitalData]` data layer on the Luma site. To view the data layer, open your developer console and type in `[!UICONTROL digitalData]` to see the full data layer available.![digitalData data layer](assets/data-element-data-layer.png)
-
+Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Then populate fields in your XDM schema with the Platform Web SDK extension Variable data element type. 
 
 ## Learning objectives
 
@@ -31,9 +25,15 @@ You have an understanding of what a data layer is and have completed the previou
 * [Configure a datastream](configure-datastream.md)
 * [Web SDK extension installed in the tag property](install-web-sdk.md)
 
+
+>[!IMPORTANT]
+>
+>The data for this lesson comes from the `[!UICONTROL digitalData]` data layer on the Luma site. To view the data layer, open your developer console and type in `[!UICONTROL digitalData]` to see the full data layer available.![digitalData data layer](assets/data-element-data-layer.png)
+
+
 ## Data layer approaches
 
-There are multiple ways to map data from your data layer to XDM using the tags functionality of Adobe Experience Platform. Below are a few pros and cons of three different approaches:
+There are multiple ways to map data from your data layer to XDM using the tags functionality of Adobe Experience Platform. Below are a few pros and cons of three different approaches. It is possible to combine approaches, if desired:
 
 1. Implement XDM in the data layer
 1. Map to XDM in tags
@@ -98,7 +98,7 @@ Cons
 
 * Complete reliance on development team and dev cycle for updating what data goes to XDM
 * Limited flexibility as XDM receives the exact payload from the data layer 
-* Cannot use tags built-in features, such as scraping, persistence, features for quick deployments
+* Cannot use built-in tags features, such as scraping, persistence, features for quick deployments
 * Cannot use the data layer for third-party pixels
 * No ability to transform the data between the data layer and XDM
 
@@ -283,7 +283,7 @@ At the end of these steps, you should have the following data elements created:
 
 >[!TIP]
 >
->In a future [Create a tag rule](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data element allows you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**.
+>In a future [Create tag rules](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data element allows you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**.
 
 With these data elements in place, you are ready to start sending data to Platform Edge Network with a tags rule. But first, learn about collecting identities with Web SDK. 
 

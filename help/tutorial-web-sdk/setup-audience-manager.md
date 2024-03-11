@@ -6,6 +6,11 @@ exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
 ---
 # Set up Audience Manager with Platform Web SDK
 
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+
 Learn how to set up Adobe Audience Manager using the Platform Web SDK and validate the implementation using a cookie destination. 
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) is the Adobe Experience Cloud solution that provides everything required to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.
