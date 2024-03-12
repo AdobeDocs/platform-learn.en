@@ -15,16 +15,12 @@ Learn how to set up Adobe Analytics using [Experience Platform Web SDK](https://
 
 At the end of this lesson, you will be able to:
 
-* Configure an XDM schema for Adobe Analytics 
-* Understand the difference between auto-mapped and manually mapped XDM variables for Analytics
 * Configure a datastream to enable Adobe Analytics
-* Override a datastream to send data to another Adobe Analytics report suite
-* Map individual or entire array data elements to the XDM object
-* Use the Update variable rule action type to stack multiple rules into one XDM event
-* Capture page views in Adobe Analytics with the XDM object
-* Capture e-commerce data with the XDM object for the Adobe Analytics product string
+* Understand the difference between auto-mapped and manually mapped XDM variables for Analytics
+* Configure an XDM schema for Adobe Analytics-specific variables
 * Set a Product Syntax Merchandising eVar using XDM
-* Validate Adobe Analytics variables are set with the XDM object using Experience Platform Debugger
+* Override a datastream to send data to another Adobe Analytics report suite
+* Validate Adobe Analytics variables using Experience Platform Debugger
 * Use Adobe Analytics processing rules to set custom variables
 * Validate data is captured by Adobe Analytics using Adobe Experience Platform Assurance
 * Validate data is captured by Adobe Analytics using Real-Time Reports
