@@ -4,8 +4,8 @@ description: Learn how to implement Web Channel using Platform Web SDK. This les
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
 ---
-
 # Set up Web Channel with Platform Web SDK
 
 Learn how to implement Web Channel using Platform Web SDK. This guide covers the foundational Web Channel prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.

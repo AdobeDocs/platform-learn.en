@@ -4,8 +4,8 @@ description: Learn how to implement Decision Management using Platform Web SDK. 
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
 ---
-
 # Set up Decision Management with Platform Web SDK
 
 Learn how to implement Decision Management using Platform Web SDK. This guide covers the foundational Decision Management prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.

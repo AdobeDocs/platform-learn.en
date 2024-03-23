@@ -2,6 +2,7 @@
 title: Set up an event-forwarding property
 description: Learn how to use event-forwarding property using Experience Platform Web SDK data. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Tags,Event Forwarding
+exl-id: 17effd2a-5188-4178-b667-78631f1bdb14
 ---
 # Set up an event-forwarding property
 

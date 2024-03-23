@@ -7,6 +7,7 @@ level: Beginner
 duration: 807
 last-substantial-update: 2024-03-06
 jira: KT-14949
+exl-id: 7a6de70c-adb5-442c-9270-ee0fee38721c
 ---
 # Stack tag rules
 
