@@ -15,6 +15,6 @@ exl-id: afcbdfcc-cd98-42bc-a3a1-2f040e5bdf58
 ---
 # Configure the Adobe Target destination in Real-Time Customer Data Platform
 
-Learn how to configure the Adobe Target destination in Real-Time Customer Data Platform to start sending segments and profile attributes from Real-Time CDP to Target. For more information, see the [Adobe Target connection documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html).
+Learn how to integrate Adobe Target and Real-Time Customer Data Platform to start sending segments and profile attributes from Real-Time CDP to Target. For more information, see the [Adobe Target connection documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/personalization/adobe-target-connection.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3418799/?learn=on)
