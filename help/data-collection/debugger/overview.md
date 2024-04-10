@@ -3,7 +3,9 @@ title: Adobe Experience Platform Debugger overview
 description: Learn how the Adobe Experience Platform Debugger Chrome extension and Firefox add-on helps you debug your web implementations of the Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags and more.
 landing-page-description: Debug your web implementations of the Adobe Experience Platform Web SDK and Experience Cloud applications.
 short-description: Debug your web implementations of the Adobe Experience Platform Web SDK and Experience Cloud applications.
-kt: 4723
+feature: Debugger
+level: Beginner
+jira: KT-4723
 thumbnail: 32156.jpg
 exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 ---
@@ -11,7 +13,7 @@ exl-id: 9ce0b5db-9f00-4b59-8655-09cd59b3d5df
 
 Learn how the Adobe Experience Platform Debugger [Chrome extension](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) and [Firefox add-on](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/) helps you debug your web implementations of the Adobe Experience Platform Web SDK, Adobe Analytics, Adobe Target, Adobe Audience Manager, tags and more.
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ## Additional Resources
 

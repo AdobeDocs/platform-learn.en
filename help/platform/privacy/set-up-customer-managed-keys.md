@@ -2,18 +2,18 @@
 title: Set up customer-managed keys (CMK)
 description: Manage data-at-rest encryption using your own encryption keys.
 feature: Privacy
-role: Admin, Data Architect
+role: Admin, Data Architect, Data Engineer, Developer
 level: Experienced
-last-substantial-update: 2022-11-01
-kt: 11382
+jira: KT-11382
 thumbnail: 3410673.jpeg
+last-substantial-update: 2022-11-01
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
 ---
 # Set up customer-managed keys (CMK)
 
 Manage data-at-rest encryption using your own encryption keys. For more information, please visit the [customer-managed keys documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/governance-privacy-security/customer-managed-keys.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3410673/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3410673/?learn=on)
 
 >[!IMPORTANT]
 >

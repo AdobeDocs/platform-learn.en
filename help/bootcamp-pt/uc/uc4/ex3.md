@@ -1,10 +1,14 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Create a Data View - Brazil
 description: Customer Journey Analytics - Create a Data View - Brazil
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Data Views
+exl-id: 8cfd4467-167d-4235-a305-4596e3a7d4fb
 ---
 # 4.3 Crie uma Visualização de Dados
 

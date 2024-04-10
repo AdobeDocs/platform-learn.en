@@ -5,7 +5,7 @@ breadcrumb-title: Enable Real-Time Customer Profiles
 description: In this lesson, you will enable your schemas and datasets for Real-Time Customer Profile. 
 role: Data Architect
 feature: Profiles
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-enable-profiles.jpg
 exl-id: b05f1af1-a599-42f2-8546-77453a578b92
 ---
@@ -27,7 +27,7 @@ There are important [guardrails for Real-Time Customer Profile data](https://exp
 **Data Architects** will need to enable Real-Time Customer Profile outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about Real-Time Customer Profile:
->[!VIDEO](https://video.tv.adobe.com/v/27251?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on)
 
 ## Permissions required
 
@@ -79,7 +79,7 @@ Now, it's time to enable the `Luma CRM Schema` with the API. If you want to skip
 First let's get the `meta:altId` of the `Luma CRM Schema`:
 
 1. Open [!DNL Postman]
-1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. If you don't have an access token, open the request **[!DNL OAuth: Request Access Token]** and select **Send** to request a new access token, just like you did in the [!DNL Postman] lesson.
 1. Open the request **[!DNL Schema Registry API > Schemas > Retrieve a list of schemas within the specified container.]**
 1. Select the **Send** button
 1. You should get a 200 response
@@ -140,7 +140,7 @@ Now you will enable a dataset for Profile using the API. Again, if you want to e
 First we need to get the `id` of the `Luma CRM Dataset`:
 
 1. Open [!DNL Postman]
-1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. If you don't have an access token, open the request **[!DNL OAuth: Request Access Token]** and select **Send** to request a new access token, just like you did in the [!DNL Postman] lesson.
 1. Open the request **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]**
 1. Select the **Send** button
 1. You should get a 200 response

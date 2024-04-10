@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Planning
 description: CSC Bootcamp - Planning
 doc-type: multipage-overview
+exl-id: 7ea5c01a-67b7-42e7-bb30-0f65f9a8210f
 ---
 # Planning
 

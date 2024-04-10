@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Insights for a Project Manager
 description: CSC Bootcamp - Insights for a Project Manager
 doc-type: multipage-overview
+exl-id: f9f552f5-b065-4246-a317-297835ea8a36
 ---
 # Insights for a Project Manager
 

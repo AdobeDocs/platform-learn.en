@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Verify mobile app
 description: CSC Bootcamp - Verify mobile app
 doc-type: multipage-overview
+exl-id: 930d9487-7c39-4657-9fe4-436dc53343e1
 ---
 # Verify mobile app
 

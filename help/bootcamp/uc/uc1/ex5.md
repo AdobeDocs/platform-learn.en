@@ -1,5 +1,5 @@
 ---
-title: Bootcamp - Real-time CDP - Build n audience and take action - Send your audience to DV360
+title: Bootcamp - Real-time CDP - Build an audience and take action - Send your audience to DV360
 description: Bootcamp - Real-time CDP - Build a audience and take action - Send your audience to DV360
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer

@@ -1,10 +1,13 @@
 ---
 title: Ingest data using the Adobe Analytics source connector
 description: The Adobe Analytics Source connector allows you to easily stream, map, and filter data from Adobe Analytics into Adobe Experience Platform's Real-Time Customer Profile and Experience data lake.
-role: Data Engineer, Data Architect
 feature: Sources
+topic: Integrations
+badgeIntegration: label="Integration" type="positive"
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
 last-substantial-update: 2023-02-23
-kt: 3824
+jira: KT-3824
 thumbnail: 29687.jpg
 exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
 ---
@@ -12,8 +15,4 @@ exl-id: b5fb1df4-b05d-426f-bdee-43e0de6bf0d6
 
 The Adobe Analytics Source connector allows you to easily stream, map, and filter data from Adobe Analytics into Adobe Experience Platform's Real-Time Customer Profile and Experience data lake. Learn how to use data prep features to create semantic and calculated fields to improve user experience in Segment Builder and Platform applications. Cross-regional report suites are supported for this connector. For more detailed product documentation, see [Create an Adobe Analytics source connector in the UI](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/adobe-applications/analytics.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/29687?quality=12&learn=on)
-
->[!INFO]
->
-> This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
+>[!VIDEO](https://video.tv.adobe.com/v/29687?learn=on)

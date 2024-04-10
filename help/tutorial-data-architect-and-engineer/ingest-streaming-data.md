@@ -5,7 +5,7 @@ breadcrumb-title: Ingest streaming data
 description: In this lesson, you will stream data into Experience Platform using the Web SDK.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-streaming-data.jpg
 exl-id: 09c24673-af8b-40ab-b894-b4d76ea5b112
 ---
@@ -24,13 +24,14 @@ There are two main tasks we must complete in the Data Collection interface:
 **Data Engineers** will need to ingest streaming data outside of this tutorial. When implementing Adobe Experience Platform's Web or Mobile SDKs, typically a web or mobile developer is involved in the data layer creation and tag property configuration.
 
 Before you begin the exercises, watch these two short videos to learn more about streaming data ingestion and Web SDK:
->[!VIDEO](https://video.tv.adobe.com/v/28425?quality=12&learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28425?learn=on)
+
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
 
 >[!NOTE]
 >
->While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the [Adobe Mobile SDK](https://aep-sdks.gitbook.io/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect), and other mechanisms.
+>While this tutorial focuses on streaming ingestion from websites with Web SDK, you can also stream data using the [Adobe Mobile SDK](https://developer.adobe.com/client-sdks/documentation/), [Apache Kafka Connect](https://github.com/adobe/experience-platform-streaming-connect), and other mechanisms.
 
 ## Permissions required
 
@@ -248,7 +249,7 @@ The Experience Platform Debugger is an extension available for Chrome and Firefo
 
 If you've never used the Debugger before&mdash;and this one is different from the older Adobe Experience Cloud Debugger&mdash;you might want to watch this five-minute overview video:
 
->[!VIDEO](https://video.tv.adobe.com/v/32156?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 ### Open the Luma website
 
@@ -448,7 +449,7 @@ To validate that the CRM Id is now being sent by the Web SDK:
 
 * [Implement Adobe Experience Cloud with Web SDK](/help/tutorial-web-sdk/overview.md)
 * [Streaming Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/streaming/overview.html)
-* [Streaming Ingestion API reference](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Streaming-Ingestion)
+* [Streaming Ingestion API reference](https://developer.adobe.com/experience-platform-apis/references/streaming-ingestion/)
 
 Great job! That was a lot of information about Web SDK and Launch. There is a lot more involved in a full-blown implementation, but those are the basics to help you get started and see the results in Platform.
 

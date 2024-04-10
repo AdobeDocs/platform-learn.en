@@ -5,7 +5,7 @@ breadcrumb-title: Build segments
 description: In this lesson, we will build some segments based on the profile data we have ingested in the previous lessons.
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-build-segments.jpg
 exl-id: cd05e814-1ea7-48ba-adf6-1a71504c623e
 ---
@@ -19,7 +19,7 @@ Once you have Real-Time Customer Profiles, you can create segments of individual
 **Data Architects** will need to create segments outside of this tutorial and support their colleagues with this task.
 
 Before you begin the exercises, watch this short video to learn more about creating segments:
->[!VIDEO](https://video.tv.adobe.com/v/27254?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27254?learn=on)
 
 
 ## Permissions required

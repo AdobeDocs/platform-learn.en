@@ -1,6 +1,7 @@
 ---
 title: Replace the library | Migrate Target from at.js 2.x to Web SDK
 description: Learn how to migrate an Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK. Topics include library overview, implementation differences, and other noteworthy callouts.
+exl-id: dfafa132-376a-475d-a467-9bc2f0a414cf
 ---
 # Replace the at.js library with Platform Web SDK
 

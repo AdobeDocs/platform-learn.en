@@ -1,10 +1,14 @@
 ---
 title: Bootcamp - Blending physical and digital - Brazil
 description: Bootcamp - Blending physical and digital - Brazil
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer, Experience Platform
+feature-set: Journey Optimizer, Experience Platform
+feature: Events, Journeys, Profiles, Mobile SDK
+exl-id: 145ffaea-c630-4ec3-a12d-69661ce26f49
 ---
 # 3. Retornar para Todos os Módulos
 

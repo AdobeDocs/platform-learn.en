@@ -2,10 +2,9 @@
 title: Consider moving vendor tags to event forwarding
 description: Learn how to evaluate a client-side vendor tag for server-side data distribution.
 feature: Event Forwarding, Tags, Integrations
-solution: Data Collection
-kt: 9921
+role: Admin, Developer, Architect, Data Engineer
 level: Intermediate, Experienced
-role: Admin, Developer, Architect
+jira: KT-9921
 exl-id: f8fd351a-435c-4cc1-b987-ed2ead20d4d6
 ---
 # Consider moving client-side vendor tags to event forwarding
@@ -26,7 +25,7 @@ Browser vendors are changing how they treat third party cookies. Advertising and
 
 ## Use cases and data {#use-cases-data}
 
-The first step is to define the use cases implemented with the client-side vendor tag. For example, consider the Facebook (Meta) pixel. Moving it from our site to the [Facebook Conversions API](https://exchange.adobe.com/apps/ec/105509/facebook-conversions-api-extension) with the event forwarding extension means documenting the specific use cases first.
+The first step is to define the use cases implemented with the client-side vendor tag. For example, consider the Facebook (Meta) pixel. Moving it from our site to the [Meta Conversions API](https://exchange.adobe.com/apps/ec/109168/meta-conversions-api) with the event forwarding extension means documenting the specific use cases first.
 
 For the current client-side vendor code:
 

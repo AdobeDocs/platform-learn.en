@@ -6,6 +6,11 @@ exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 ---
 # Create data elements
 
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+
 Learn how to create the essential data elements needed to capture data with Experience Platform Web SDK. Capture both content and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Learn how to use the XDM schema you created earlier for collecting data using Platform Web SDK through a new data element type called XDM Object. 
 
 >[!NOTE]
@@ -62,7 +67,7 @@ Before you begin creating the XDM object, create the following set of data eleme
     ![Create Data Element](assets/data-element-create.jpg)
 
 1. Name the data element `page.pageInfo.pageName`
-1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to a value in Luma’s data layer: `digitalData.page.pageInfo.pageName`
+1. Use the **[!UICONTROL JavaScript Variable]** **[!UICONTROL Data Element type]** to point to a value in Luma's data layer: `digitalData.page.pageInfo.pageName`
 
 1. Check the boxes for **[!UICONTROL Force lowercase value]** and **[!UICONTROL Clean text]** to standardize the case and remove extraneous spaces
 
@@ -125,14 +130,21 @@ Next you can create the Identity Map data element:
 -->
 
 1. As the **[!UICONTROL Authenticated state]**, select **[!UICONTROL Authenticated]**
+1. Select **[!UICONTROL Primary]**
 
 1. Select **[!UICONTROL Save]**
    
     ![Data Collection interface](assets/identity-id-namespace.png)
 
->[!WARNING]
+>[!TIP]
 >
->The primary identity is required in all records sent to Adobe Experience Platform. By default, the Experience Cloud Id (ECID) is used as Platform Web SDK's primary identity. You would never want to use something like the `Luma CRM ID` as a primary identity with Web SDK, since it only exists after the user authenticates and thus would not be available in all records.
+> Adobe recommends sending identities which represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
+>
+> If the identity map contains the person identifier (e.g. `Luma CRM Id`), then the person identifier will become the [!UICONTROL primary] identity. Otherwise, `ECID` becomes the [!UICONTROL primary] identity.
+
+
+
+
 
 <!--
 1. Once the data element is configured in **[!UICONTROL Data Collection interface]**, it can be tested on the Luma web property like any other Data Element. Enter the following script in the browser developer console
@@ -153,7 +165,7 @@ Next you can create the Identity Map data element:
 
 All the data elements you create must be mapped to an XDM object. This object should conform to the XDM schema you created during the [Configure a schema](configure-schemas.md) lesson. 
 
-There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you capture will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
+There are different ways to map data elements to XDM object fields. You can map individual data elements to individual XDM fields or map data elements to entire XDM objects as long as your data element matches the exact key-value pair schema present in the XDM object. In this lesson, you will capture content data by mapping to individual fields. You will learn how to [map a data element to an entire XDM object](setup-analytics.md#Map-an-entire-array-to-an-XDM-Object) in the [Setup Analytics](setup-analytics.md) lesson. 
 
 Create an XDM object to capture content data:
 
@@ -213,4 +225,4 @@ With these data elements in place, you are ready to start sending data to Platfo
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

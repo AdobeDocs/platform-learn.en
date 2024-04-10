@@ -5,7 +5,7 @@ breadcrumb-title: Create a sandbox
 description: In this lesson, you will create a development environment sandbox that you can use for the rest of the tutorial.
 role: Data Architect, Data Engineer
 feature: Sandboxes
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-create-a-sandbox.jpg
 exl-id: a04afada-52a1-4812-8fa2-14be72e68614
 ---
@@ -20,7 +20,7 @@ Sandboxes provide isolated environments where you can try out functionality with
 **Data Architects** and **Data Engineers** will need to create sandboxes outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about sandboxes:
->[!VIDEO](https://video.tv.adobe.com/v/29838/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29838/?learn=on)
 
 ## Permissions required
 
@@ -56,29 +56,19 @@ Sandboxes take approximately 30 seconds to create, during which time a "[!UICONT
 
 Wait until your sandbox is "[!UICONTROL Active]" before continuing to the next exercise.
 
-## Add the new sandbox to the product profile
+## Add the new sandbox to the role
 
-Once the sandbox is active, you must include it in your product profile in order to use it. To add it to your product profile:
+Once the sandbox is active, you must include it in your role in order to use it. To add it to your role (requires System Admin or Product Admin privileges):
 
-1. In a separate browser tab, log into the [Admin Console](https://adminconsole.adobe.com)
-1. Go to **[!UICONTROL Products > Adobe Experience Platform]**
-1. Open the `Luma Tutorial Platform` profile
-
-    ![Select the Product Profile](assets/sandbox-selectProfile.png)
-
-1. Go to the **[!UICONTROL Permissions]** tab
-
+1. Go to the [!UICONTROL Permissions] screen
+1. Open the `Luma Tutorial Platform` role
+1. Optionally _remove_ the `Prod` sandbox from the role
+1. Add the `Luma Tutorial` sandbox
+1. Select **[!UICONTROL Save]**
 1. On the [!UICONTROL Sandboxes] row, select **[!UICONTROL Edit]**
 
-    ![Select Edit](assets/sandbox-selectSandboxes.png)
+    ![Add the Luma Tutorial](assets/sandbox-addLumaTutorial.png)
 
-1. _Remove_ the **[!UICONTROL Prod]** sandbox you assigned to the profile originally
-1. Select the **[!UICONTROL +]** icon to add the new `Luma Tutorial` sandbox to the right-hand column
-1. Select **[!UICONTROL Save]** to save the updated permissions  
-
-    ![Move the Sandbox to the other column](assets/sandbox-addLumaTutorial.png)
-
-1. Go back to the browser tab with Experience Platform
 1. Reload (or Shift-reload) the page and you should now either be in the `Luma Tutorial` sandbox or it should appear in your sandbox dropdown
 1. Switch to the `Luma Tutorial` sandbox if you aren't already in it
 

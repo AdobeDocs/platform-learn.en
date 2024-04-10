@@ -1,10 +1,14 @@
 ---
 title: Bootcamp - Blending physical and digital - Journey Optimizer Create your event - Brazil
 description: Bootcamp - Blending physical and digital - Journey Optimizer Create your event - Brazil
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Events
+exl-id: 2133b560-09d8-419d-bb99-05d0f3df52cc
 ---
 # 3.2 Crie seu evento
 

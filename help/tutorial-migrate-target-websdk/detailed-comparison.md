@@ -1,6 +1,7 @@
 ---
 title: Comparison of at.js 2.x to Web SDK | Migrate Target from at.js 2.x to Web SDK
 description: Learn about the differences between at.js 2.x and Platform Web SDK including features, functions, settings, and data flow.
+exl-id: b6f0ac2b-0d8e-46ce-8e9f-7bbc61eb20ec
 ---
 # Comparison of at.js to Platform Web SDK
 
@@ -121,7 +122,7 @@ The following diagrams should help you understand the data flow differences betw
 | 3 | Page Load request is made including all configured parameters, ECID, SDID, and customer ID. |
 | 4 | Profile scripts execute and feed into the Profile Store. The Store requests qualified audiences from the Audience Library (for example, audiences shared from Analytics, Audience Manager, and so on). Customer Attributes are sent to Profile Store in a batch process. |
 | 5 | Based on URL, request parameters, and profile data, Target decides which Activities and Experiences to return to the visitor for the current page and future views. |
-| 6 | Targeted content sent back to page, optionally including profile values for additional personalization.<br><br>Targeted content on the current page is revealed as quickly as possible without flicker of default content.<br><br>Targeted content for future views of a single-page application is cached in the browser, so it can be instantly applied without an extra server call when the views are triggered. (See the next diagram for triggerView() behavior). |
+| 6 | Targeted content sent back to page, optionally including profile values for additional personalization.<br><br>Targeted content on the current page is revealed as quickly as possible without flicker of default content.<br><br>Targeted content for future views of a single-page application is cached in the browser, so it can be instantly applied without an extra server call when the views are triggered.  |
 | 7 | Analytics data sent from the page to the Data Collection Servers. |
 | 8 | Target data is matched to Analytics data via the SDID and is processed into the Analytics reporting storage. Analytics data can then be viewed in both Analytics and Target via A4T reports. |
 

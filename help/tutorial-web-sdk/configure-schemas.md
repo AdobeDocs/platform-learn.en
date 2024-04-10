@@ -1,10 +1,15 @@
 ---
 title: Create an XDM schema for web data
 description: Learn how to create an XDM schema for web data in the Data Collection interface. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
-feature: Schemas
+feature: Web SDK,Tags,Schemas
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 ---
 # Create an XDM schema for web data
+
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to create an XDM schema for web data in the Data Collection interface.
 
@@ -100,11 +105,11 @@ It is a must-have object for any web-related data collection, as it houses the E
 >This setting is discussed more during the [Setup Experience Platform](setup-experience-platform.md) lesson.
 >![Profile Schema](assets/schema-profile.png)
 
-Now you are able to reference this schema when you add the Web SDK extension your tag property. 
+Now you are able to reference this schema when you add the Web SDK extension to your tag property. 
 
 
 [Next: **Configure an identity namespace**](configure-identities.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -5,7 +5,7 @@ breadcrumb-title: Map identities
 description: In this lesson, we will create identity namespaces and add identity fields to our schemas.
 role: Data Architect
 feature: Profiles
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-map-identities.jpg
 exl-id: e17ffabc-049c-42ff-bf0a-8cc31d665dfa
 ---
@@ -20,7 +20,7 @@ Adobe Experience Platform Identity Service helps you to gain a better view of yo
 **Data Architects** will need to map identities outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about identity in Adobe Experience Platform:
->[!VIDEO](https://video.tv.adobe.com/v/27841?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
 
 >[!NOTE]
 >
@@ -90,7 +90,7 @@ Let's create the Identity Namespace `Luma CRM Id`:
 
 1. Download [Identity Service.postman_collection.json](https://raw.githubusercontent.com/adobe/experience-platform-postman-samples/master/apis/experience-platform/Identity%20Service.postman_collection.json) to your `Luma Tutorial Assets` folder
 1. Import the collection into [!DNL Postman]
-1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]**, and select **Send** to request new JWT and Access Tokens.
+1. If you don't have an access token, open the request **[!DNL OAuth: Request Access Token]** and select **Send** to request a new access token.
 1. Select the request **[!UICONTROL Identity Service] > [!UICONTROL Identity Namespace] > [!UICONTROL Create a new identity namespace].**
 1. Paste the following as the [!DNL Body] of the request:
 

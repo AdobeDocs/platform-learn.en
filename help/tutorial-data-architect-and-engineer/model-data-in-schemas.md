@@ -5,7 +5,7 @@ breadcrumb-title: Model data in schemas
 description: In this lesson, you will model Luma's data into schemas. This is one of the longest lessons in the tutorial, so get a glass of water and buckle up!
 role: Data Architect
 feature: Schemas
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-model-data-in-schemas.jpg
 exl-id: 317f1c39-7f76-4074-a246-ef19f044cb85
 ---
@@ -37,7 +37,7 @@ Key terms:
 **Data Architects** will need to create schemas outside of this tutorial, but **Data Engineers** will work closely with the schemas created by the Data Architect.
 
 Before you begin the exercises, watch this short video to learn more about schemas and the Experience Data Model (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
 
 >[!TIP]
 >
@@ -173,7 +173,7 @@ Now we will create a schema using the API.
 First we create the empty schema:
 
 1. Open [!DNL Postman]
-1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens.
+1. If you don't have an access token, open the request **[!DNL OAuth: Request Access Token]** and select **Send** to request a new access token.
 1. Open your environment variables and change the value of **CONTAINER_ID** from `global` to `tenant`. Remember, you must use `tenant` whenever you want to interact with your own custom elements in Platform, such as creating a schema.
 1. Select **Save**
   ![Change the CONTAINER_ID to tenant](assets/schemas-crm-changeContainerId.png)
@@ -210,7 +210,7 @@ First we create the empty schema:
 >
 > Common issues with this call and likely fixes:
 >
-> * No auth token: Run the **IMS: JWT Generate + Auth via User Token** call to generate new tokens
+> * No auth token: Run the **OAuth: Request Access Token** request to generate a new token
 > * `401: Not Authorized to PUT/POST/PATCH/DELETE for this path : /global/schemas/`: Update the **CONTAINER_ID** environment variable from `global` to `tenant`
 > * `403: PALM Access Denied. POST access is denied for this resource from access control`: Verify your user permissions in the Admin Console
 

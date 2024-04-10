@@ -1,15 +1,21 @@
 ---
 title: Set up consent with Platform Web SDK
 description: Learn how to configure the privacy settings of the Experience Platform Web SDK tag extension. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
+feature: Web SDK,Tags,Consent
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
 ---
 # Set up consent with Platform Web SDK
+
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to configure the privacy settings of the Experience Platform Web SDK tag extension. Set consent based on the visitor's interaction with a banner from a Consent Management Platform (CMP). 
 
 >[!NOTE]
 > 
->For demonstration purposes, this tutorial uses [Klaro](https://heyklaro.com/) as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.
+>For demonstration purposes, this tutorial uses [Klaro](https://heyklaro.com/){target="_blank"} as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.
 
 
 ## Learning objectives
@@ -27,7 +33,7 @@ You should be familiar with tags and the steps to create rules, data elements, b
 Before you begin configuring the privacy settings and creating the rules for setting consent, make sure you have injected your consent management platform script on the website and is working properly. A CMP can be loaded either directly in the source code with the help of site developers or loaded through tags itself. This lesson demonstrates the latter approach.
 >[!NOTE]
 > 
->1. A Consent Management Platform (or CMP) is used by organizations to legally document and manage a visitor’s consent choices before collecting, sharing, or selling visitor data from online sources such as websites and apps. 
+>1. A Consent Management Platform (or CMP) is used by organizations to legally document and manage a visitor's consent choices before collecting, sharing, or selling visitor data from online sources such as websites and apps. 
 >
 >2. The recommended approach for injecting a CMP is directly through source code before the tag manager script. 
 
@@ -93,7 +99,7 @@ Privacy acts such as GDPR, CCPA, and others play a vital role in how you archite
 
 ### Scenario 1: Implied Opt-in
 
-Implied opt-in means the business does not need to obtain the visitor's consent (or the “opt-in”) before collecting their data, and hence all visitors to the website are treated as opted-in by default. However, the visitor can opt out by rejecting the cookies through the consent banner. This use-case is similar to CCPA.
+Implied opt-in means the business does not need to obtain the visitor's consent (or the "opt-in") before collecting their data, and hence all visitors to the website are treated as opted-in by default. However, the visitor can opt out by rejecting the cookies through the consent banner. This use-case is similar to CCPA.
 
 Now you will configure and implement consent for this scenario:
 
@@ -217,4 +223,4 @@ For more information on the [!UICONTROL Set consent] action, see [Set consent](h
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

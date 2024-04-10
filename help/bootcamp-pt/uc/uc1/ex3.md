@@ -1,10 +1,12 @@
 ---
 title: Bootcamp - Real-time Customer Profile - Create a segment - UI - Brazil
 description: Bootcamp - Real-time Customer Profile - Create a segment - UI - Brazil
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+feature: Segments
+exl-id: 9b8d93b5-5bed-4600-8602-b438a0893612
 ---
 # 1.3 Crie um segmento - UI
 

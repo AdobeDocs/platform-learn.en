@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Campaign GO/NO-GO
 description: CSC Bootcamp - Campaign GO/NO-GO
 doc-type: multipage-overview
+exl-id: 18b553cf-68f3-407d-9ad9-752db6b3e014
 ---
 # Campaign GO/NO-GO
 

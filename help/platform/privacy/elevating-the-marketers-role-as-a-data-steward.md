@@ -6,7 +6,7 @@ role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 338292.jpg
-kt: 9301
+jira: KT-9301
 type: Event
 exl-id: 12c258c5-cf91-4403-99bd-6322a92aabfe
 ---
@@ -18,4 +18,4 @@ The role of the ‘data steward’ spans across disciplines and has become an ad
 * How to Incorporate consent-based strategies that lead with consumer trust and seamlessly integrate within the consumer journey
 * Data steward responsibilities within the marketer’s role with efficiency and confidence
 
->[!VIDEO](https://video.tv.adobe.com/v/338292/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338292/?learn=on)

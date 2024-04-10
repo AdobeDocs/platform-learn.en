@@ -1,10 +1,14 @@
 ---
 title: Bootcamp - Blending physical and digital - Test your journey - Brazil
 description: Bootcamp - Blending physical and digital - Test your journey - Brazil
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Events
+exl-id: 04e2877f-8672-4584-8204-4489a7025c63
 ---
 # 3.4 Teste sua jornada
 
