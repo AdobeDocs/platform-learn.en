@@ -1,10 +1,14 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Visualization using Customer Journey Analytics
 description: Bootcamp - Customer Journey Analytics - Visualization using Customer Journey Analytics
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Visualizations
+exl-id: 051b5b91-56c4-414e-a4c4-74aa67219551
 ---
 # 4.5 Visualization using Customer Journey Analytics
 
@@ -54,7 +58,7 @@ Click on **Visualize** and then select **Line** as visualization.
 
 ![demo](./images/pro5.png)
 
-You’ll see your products views by day.  
+You'll see your products views by day.  
 
 ![demo](./images/pro6.png)
 

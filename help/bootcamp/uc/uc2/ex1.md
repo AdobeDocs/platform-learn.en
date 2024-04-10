@@ -1,10 +1,13 @@
 ---
 title: Bootcamp - Visit the website and create your account
 description: Bootcamp - Visit the website and create your account
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer, Experience Platform
+feature-set: Journey Optimizer, Experience Platform
+feature: Events, Journeys, Profiles, Identities
 exl-id: a56cedba-3ac4-4a9b-aeb8-8036c527a878
 ---
 # 2.1 Visit the website and create your account

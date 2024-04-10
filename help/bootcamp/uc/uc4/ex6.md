@@ -1,10 +1,14 @@
 ---
 title: Bootcamp - Customer Journey Analytics - From insights to action
 description: Bootcamp - Customer Journey Analytics - From insights to action
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
+feature-set: Customer Journey Analytics
+feature: Audiences
+exl-id: 7a38a0a4-46e4-41f2-9a75-316dfde7128f
 ---
 # 4.6 From insights to action
 

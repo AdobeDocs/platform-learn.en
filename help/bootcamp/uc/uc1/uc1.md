@@ -1,10 +1,11 @@
 ---
 title: Bootcamp - Acquisition
 description: Bootcamp - Acquisition
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
 activity: develop
+feature: Profiles, Audiences, Integrations, Destinations
 exl-id: 4500dc9b-cc1a-4de8-aa39-7d4e849d65c4
 ---
 # 1. Acquisition
@@ -31,16 +32,16 @@ In this exercise, you'll follow a script and walk through the website.
 
 In this exercise, you'll login to Adobe Experience Platform and you'll view your own Real-time Customer Profile in the UI.
 
-[1.3 Create a segment - UI](./ex3.md)
+[1.3 Create an audience - UI](./ex3.md)
 
-In this exercise, you'll create a segment by making use of Adobe Experience Platform's Segment Builder.
+In this exercise, you'll create an audience by making use of Adobe Experience Platform's Audience Builder.
 
-[1.4 Take Action: send your segment to Adobe Target](./ex4.md)
+[1.4 Take Action: send your audience to Adobe Target](./ex4.md)
 
-Use the segment you built in exercise 1.1 to configure an Experience Targeting Activity in Adobe Target.
+Use the audience you built in exercise 1.1 to configure an Experience Targeting Activity in Adobe Target.
 
-[1.5 Take Action: send your segment to Facebook](./ex5.md)
+[1.5 Take Action: send your audience to Facebook](./ex5.md)
 
-Connect the segment you built in exercise 1.1 to the destination Facebook.
+Connect the audience you built in exercise 1.1 to the destination Facebook.
 
 [Go Back to All Modules](../../overview.md)

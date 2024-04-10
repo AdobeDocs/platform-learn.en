@@ -1,10 +1,13 @@
 ---
 title: Bootcamp - Journey Optimizer Create your journey and email message
 description: Bootcamp - Journey Optimizer Create your journey and email message
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Journeys
 exl-id: 138a70fa-fe50-4585-b47f-150db4770c3d
 ---
 # 2.3 Create your journey and email message
@@ -115,7 +118,7 @@ If you selected **Import HTML**, you can now drag and drop the file **mailtempla
 
 ![Journey Optimizer](./images/msg13.png)
 
-You’ll then see this default email template:
+You'll then see this default email template:
 
 ![Journey Optimizer](./images/msg14.png)
 

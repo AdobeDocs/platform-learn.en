@@ -1,10 +1,13 @@
 ---
 title: Bootcamp - Journey Optimizer Create your journey
 description: Bootcamp - Journey Optimizer Create your journey
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Journeys
 exl-id: e4464502-60c8-4fba-a429-169b7a4516c8
 ---
 # 2.4 Test your journey

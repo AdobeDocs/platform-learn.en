@@ -1,10 +1,11 @@
 ---
 title: Bootcamp - Personalization in the call center
 description: Bootcamp - Personalization in the call center
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+feature: Profiles
 exl-id: f7697673-38f9-41f6-ac4d-2561db2ece67
 ---
 # 2.6 Personalization in the call center

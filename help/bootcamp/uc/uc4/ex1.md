@@ -1,10 +1,11 @@
 ---
 title: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101
 description: Bootcamp - Customer Journey Analytics - Customer Journey Analytics 101
-kt: 5342
+jira: KT-5342
 audience: Data Engineer, Data Architect, Data Analyst
 doc-type: tutorial
 activity: develop
+solution: Customer Journey Analytics
 exl-id: 587be8bc-8ebe-4f30-99d8-ba88ce40caf7
 ---
 # 4.1 Customer Journey Analytics 101

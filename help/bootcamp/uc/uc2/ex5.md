@@ -1,10 +1,11 @@
 ---
 title: Bootcamp - Install & use the mobile app
 description: Bootcamp - Install & use the mobile app
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+feature: Mobile SDK
 exl-id: c1f007b4-e28a-412c-9352-e38579a2fc71
 ---
 # 2.5 Install & use the mobile app
