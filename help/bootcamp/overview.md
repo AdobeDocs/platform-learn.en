@@ -14,8 +14,6 @@ Join this bootcamp to learn how a platform-based approach can help you get the i
 
 Personalisation at scale starts with understanding what can be improved, and a real-time view of your customer is critical to this. Insights lead to action, which leads to more insights. Adobe's unique platform-centric approach gives you the tools to not only drive technological change, but also impact your organization, your team, and your ability to deliver a holistic customer experience instead of a channel-specific customer experience.
 
->[!VIDEO](https://www.youtube.com/watch?v=R7abTe7XFNY) 
-
 ## Agenda
 
 ### Day 1
