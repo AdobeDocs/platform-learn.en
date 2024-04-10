@@ -1,15 +1,16 @@
 ---
-title: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to Adobe Target
-description: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to Adobe Target
+title: Bootcamp - Real-time CDP - Build an audience and take action - Send your audience to Adobe Target
+description: Bootcamp - Real-time CDP - Build an audience and take action - Send your audience to Adobe Target
 jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
-feature: Segments, Integrations
+feature: Audiences, Integrations
+
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
 ---
-# 1.4 Take Action: send your segment to Adobe Target
+# 1.4 Take Action: send your audience to Adobe Target
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
@@ -19,11 +20,11 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ![Data Ingestion](./images/sb1.png)
 
-## 1.4.1 Activate your segment to your Adobe Target destination
+## 1.4.1 Activate your audience to your Adobe Target destination
 
 Adobe Target is available as a destination from Real-Time CDP. To setup your Adobe Target integration, go to **Destinations**, to **Catalog**.
 
-Click **Personalization** in the **Categories** menu. You'll then see the **Adobe Target** destination card. Click **Activate Segments**.
+Click **Personalization** in the **Categories** menu. You'll then see the **Adobe Target** destination card. Click **Activate audiences**.
 
 ![AT](./images/atdest1.png)
 
@@ -31,7 +32,7 @@ Select the destination ``Bootcamp Target`` and click **Next**.
 
 ![AT](./images/atdest3.png)
 
-In the list of available segments, select the segment you created in [1.3 Create a segment](./ex3.md), which is named `yourLastName - Interest in Real-Time CDP`. Then, click **Next**.
+In the list of available audiences, select the audience you created in [1.3 Create an audience](./ex3.md), which is named `yourLastName - Interest in Real-Time CDP`. Then, click **Next**.
 
 ![AT](./images/atdest8.png)
 
@@ -43,17 +44,17 @@ Click **Finish**.
 
 ![AT](./images/atdest10.png)
 
-Your segment is now activated towards Adobe Target.
+Your audience is now activated towards Adobe Target.
 
 ![AT](./images/atdest11.png)
 
 >[!IMPORTANT]
 >
->When you've just created your Adobe Target destination in Real-Time CDP, it may take up to an hour for the destination to be live. This is a one-off wait time, due to the setup of the backend configuration. Once the initial 1 hour wait time and backend configuration is done, newly added edge segments that are sent to the Adobe Target destination will be available for targeting in real-time.
+>When you've just created your Adobe Target destination in Real-Time CDP, it may take up to an hour for the destination to be live. This is a one-off wait time, due to the setup of the backend configuration. Once the initial 1 hour wait time and backend configuration is done, newly added edge audiences that are sent to the Adobe Target destination will be available for targeting in real-time.
 
 ## 1.4.2 Configure your Adobe Target form-based activity 
 
-Now that your Real-Time CDP segment is configured to be sent to Adobe Target, you can configure your Experience Targeting activity in Adobe Target. In this exercise you'll configre a Visual Experience Composer-based activity.
+Now that your Real-Time CDP audience is configured to be sent to Adobe Target, you can configure your Experience Targeting activity in Adobe Target. In this exercise you'll configre a Visual Experience Composer-based activity.
 
 Go to the Adobe Experience Cloud homepage by going to [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Click **Target** to open it.
 
@@ -92,11 +93,11 @@ The default audience is currently **All Visitors**. Click on the **3 dots** next
 
 ![RTCDP](./images/atform3.png)
 
-You're now seeing the list of available audiences, and the Adobe Experience Platform segment that you created earlier and sent to Adobe Target is now part of this list. Select the segment you previously created in Adobe Experience Platform. Click **Assign Audience**.
+You're now seeing the list of available audiences, and the Adobe Experience Platform audience that you created earlier and sent to Adobe Target is now part of this list. Select the audience you previously created in Adobe Experience Platform. Click **Assign Audience**.
 
 ![RTCDP](./images/exclatvecchaud.png)
 
-Your Adobe Experience Platform segment is now part of this Experience Targeting Activity.
+Your Adobe Experience Platform audience is now part of this Experience Targeting Activity.
 
 ![RTCDP](./images/atform4.png)
 
@@ -164,7 +165,7 @@ You'll then get a visual confirmation that your activity is now live.
 
 Your activity is now live and can be tested on the bootcamp website.
 
-If you now go back to your demo website and visit the product page for **Real-Time CDP**, you'll then instantly qualify for the segment that you created, and you'll see the Adobe Target activity be displayed on the home page in real-time.
+If you now go back to your demo website and visit the product page for **Real-Time CDP**, you'll then instantly qualify for the audience that you created, and you'll see the Adobe Target activity be displayed on the home page in real-time.
 
 >[!IMPORTANT]
 >
@@ -176,7 +177,7 @@ If you now go back to your demo website and visit the product page for **Real-Ti
 
 ![RTCDP](./images/atform12a.png)
 
-Next Step: [1.5 Take Action: send your segment to Facebook](./ex5.md)
+Next Step: [1.5 Take Action: send your audience to Facebook](./ex5.md)
 
 [Go Back to User Flow 1](./uc1.md)
 

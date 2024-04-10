@@ -8,44 +8,61 @@ exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
 
 ## Overview
 
-Many organizations aren't aware of the friction that exist in their customers’ journey, which is the consequence of a siloed and fragmented approach in orchestrating customer communication. Data, Profile and Content need to be perfectly aligned to design and deliver exceptional customer experiences.
+Many organizations aren't aware of the friction that exist in their customers' journey, which is the consequence of a siloed and fragmented approach in orchestrating customer communication. Data, Profile and Content need to be perfectly aligned to design and deliver exceptional customer experiences.
 
 Join this bootcamp to learn how a platform-based approach can help you get the insights needed to identify and remove friction points to improve your customer's journey.
 
-Personalisation at scale starts with understanding what can be improved, and a real-time view of your customer is critical to this. Insights lead to action, which leads to more insights. Adobe’s unique platform-centric approach gives you the tools to not only drive technological change, but also impact your organization, your team, and your ability to deliver a holistic customer experience instead of a channel-specific customer experience.
-
->[!VIDEO](https://video.tv.adobe.com/v/344962?quality=12&enable=on)
+Personalisation at scale starts with understanding what can be improved, and a real-time view of your customer is critical to this. Insights lead to action, which leads to more insights. Adobe's unique platform-centric approach gives you the tools to not only drive technological change, but also impact your organization, your team, and your ability to deliver a holistic customer experience instead of a channel-specific customer experience.
 
 ## Agenda
 
 ### Day 1
 
 
-10:00: Kickoff 
-10:30: Customer Journey demo: Art of the possible
+9:30: Walk-In
+
+10:00: Kickoff / Intro & Bootcamp Challenge
+
 11:00: 1-1 personalisation, friction hunting, silos, Adobe POV (whiteboard)
-11:45: Break
-12:00: Solution Architecture breakdown (whiteboard)
+
+12:00: Break
+
+12:15: Solution Architecture breakdown (whiteboard)
+
 13:00: Lunch
-14:00: Userflow 1 Registration & Onboarding - walkthrough (why-what-how)
+
+14:00: User flow 1 - "Acquisition" Walkthrough & Hands-On deep-dive
+
 15:30: Break
-16:00: Userflow 2 Blending physical and digital - walkthrough & hands-on / deep dive
-18:00: Break
-18:30: Walk to the restaurant
-19:00: Dinner
+
+16:00: Userflow 2 Registration & Onboarding
+
+17:30: Golfclinic & Borrel
+
+19:30: Dinner
 
 ### Day 2
 
-08:00: Breakfast
-08:30: Introduction to user Journey based Delivery, Team Structure, Delivery backlog
-09.45: Userflow 3 Blending physical and digital - Walkthrough with hands-on exercise
-11.15: Break
-11.30: Userflows wrap up  – (what-where-when)
-12:00: Group Presentations 
+08:30: Breakfast session: Introduction to user Journey based Delivery, Team Structure, Delivery backlog
+
+09.45: Understanding AEP Data Flows Through Practival Scenarios
+
+10.15: Empowering Privacy: Insights into Data Governance with AEP
+
+10.45: Break
+
+12:00: User flow 3 " Blending Physical & digital"
+
 12.30: Lunch
-13.30: Userflow 4: Customer Analysis - deepdive
-14.30: Conclusion, wrap-up & next steps
+
+13.30: Customer Journey Analytics - deepdive
+
+14.15: Exploring the Latest Innvoations around GenAI for AEP and Beyond
+
+14.45: Convlusion & Wrap Up
+
 15.00: Drinks & adjourn
+
 
 ## Prerequisites
 
