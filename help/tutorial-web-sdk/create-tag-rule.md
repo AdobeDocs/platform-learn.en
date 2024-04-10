@@ -6,6 +6,11 @@ exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
 ---
 # Create a tag rule
 
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+
 Learn how to send an event to the Platform Edge Network with your XDM object using a tag rule. A tag rule is a combination of events, conditions, and actions that tells the tag property to do something.
 
 >[!NOTE]
@@ -134,4 +139,4 @@ Now you are ready to validate the data in the request using the Adobe Experience
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

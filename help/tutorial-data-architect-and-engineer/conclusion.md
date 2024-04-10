@@ -4,7 +4,7 @@ seo-title: Conclusion | Getting Started with Adobe Experience Platform for Data 
 breadcrumb-title: Conclusion
 description: In this lesson, you will configure Adobe Experience Platform user permissions using Adobe's Admin Console. 
 role: Data Architect, Data Engineer
-kt: 4348
+jira: KT-4348
 exl-id: 73abe4bd-57cb-4acf-98f6-253b01fd79ff
 ---
 # Conclusion
@@ -41,12 +41,8 @@ I suggest you keep it and use it for further experimentation with Platform. We h
 
 The key resources:
 
-* [Experience Platform tutorials](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial/overview.html)
+* [Experience Platform tutorials](https://experienceleague.adobe.com/docs/platform-learn/tutorials/overview.html)
 * [Experience Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/landing/home.html)
 * [Experience League courses](https://experienceleague.adobe.com/#dashboard/learning)
-
-Here is another tutorial which you can review to learn more about connections to third-party applications:
-
-* [Comprehensive Technical Tutorial for Adobe Experience Platform](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v21/overview.html)
 
 Thanks for your efforts and good luck on your journey with Adobe Experience Platform!

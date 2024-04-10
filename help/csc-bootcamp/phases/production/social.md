@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Create social media ad
 description: CSC Bootcamp - Create social media ad
 doc-type: multipage-overview
+exl-id: f22f52ac-13e6-428d-b081-da8cf769e6fc
 ---
 # Create social media ad
 

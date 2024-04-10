@@ -1,10 +1,14 @@
 ---
 title: Bootcamp - Journey Optimizer Create your journey and email message - Brazil
 description: Bootcamp - Journey Optimizer Create your journey and email message - Brazil
-kt: 5342
+jira: KT-5342
 audience: developer
 doc-type: tutorial
 activity: develop
+solution: Journey Optimizer
+feature-set: Journey Optimizer
+feature: Journeys
+exl-id: d486d1aa-7b8e-4301-91e6-4c84fba0c72a
 ---
 # 2.3 Crie sua jornada e mensagem de e-mail
 
@@ -154,7 +158,7 @@ Você ainda precisa dar um Nome à sua jornada. Você pode fazer isso clicando n
 
 ![ACOP](./images/journeyname.png)
 
-Você pode fazer isso clicando no item clicar no item “Name” e inserindo o seguinte nome `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças.
+Você pode fazer isso clicando no item clicar no item "Name" e inserindo o seguinte nome `yourLastName - Account Creation Journey`. Clique em **OK** para salvar as mudanças.
 
 ![ACOP](./images/journeyname1.png)
 

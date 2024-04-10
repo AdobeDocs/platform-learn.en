@@ -1,10 +1,12 @@
 ---
 title: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360 - Brazil
 description: Bootcamp - Real-time CDP - Build a segment and take action - Send your segment to DV360 - Brazil
-kt: 5342
+jira: KT-5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+feature: Destinations
+exl-id: acb32859-6f82-44e0-8948-a045a9fe2afe
 ---
 # 1.5 Ação: envie seu segmento para o Facebook
 

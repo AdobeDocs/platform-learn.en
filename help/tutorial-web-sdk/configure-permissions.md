@@ -1,10 +1,15 @@
 ---
 title: Configure permissions for the tutorial
 description: Learn how to request access to Experience Platform Web SDK and configure the permission required to complete the Implement Adobe Experience Cloud with Web SDK tutorial.
-feature: Access Control
+feature: Web SDK,Tags,Access Control
 exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
 ---
 # Configure permissions for the tutorial
+
+
+>[!CAUTION]
+>
+>We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to request access to Experience Platform Web SDK and configure the permission required to complete this tutorial. To implement Platform Web SDK using tags in the Data Collection interface, you must have the proper user permissions configured in [Admin Console](https://adminconsole.adobe.com).
 
@@ -46,4 +51,4 @@ Now you are ready to start the initial configuration steps.
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -6,14 +6,14 @@ role: User, Developer, Data Engineer, Architect, Data Architect, Admin, Leader
 level: Beginner, Intermediate, Experienced
 doc-type: Event
 thumbnail: 337665.jpg
-kt: 9145
+jira: KT-9145
 exl-id: 84d900c4-662e-486c-97c9-38c55fd5bf28
 ---
 # Data Collaboration in the First-party Data Context
 
 Delivering on the experience promise, with access to less data. Whether you’re an advertiser, publisher, or agency, this webinar will help unlock the opportunities for data collaboration in a future without third-party cookies.
 
->[!VIDEO](https://video.tv.adobe.com/v/337665/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/337665/?learn=on)
 
 ## Key Takeaways:
 

@@ -5,7 +5,7 @@ breadcrumb-title: Ingest batch data
 description: In this lesson, you will ingest batch data into Experience Platform using various methods.
 role: Data Engineer
 feature: Data Ingestion
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-ingest-batch-data.jpg
 exl-id: fc7db637-e191-4cc7-9eec-29f4922ae127
 ---
@@ -19,7 +19,8 @@ Batch data ingestion allows you to ingest a large amount of data into Adobe Expe
 **Data Engineers** will need to ingest batch data outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about data ingestion:
->[!VIDEO](https://video.tv.adobe.com/v/27106?quality=12&learn=on)
+
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
 
 
 ## Permissions required
@@ -129,7 +130,7 @@ Now let's upload data using the API.
 First we let's get the id of the dataset id of the dataset into which we want to ingest data:
 
 1. Open [!DNL Postman]
-1. If you haven't made a request in the last 24 hours, your authorization tokens have probably expired. Open the request **[!DNL Adobe I/O Access Token Generation > Local Signing (Non-production use-only) > IMS: JWT Generate + Auth via User Token]** and select **Send** to request new JWT and Access Tokens, just like you did in the [!DNL Postman] lesson.
+1. If you don't have an access token, open the request **[!DNL OAuth: Request Access Token]** and select **Send** to request a new access token, just like you did in the [!DNL Postman] lesson.
 1. Open your environment variables and make sure the value of **CONTAINER_ID** is still `tenant`
 1. Open the request **[!DNL Catalog Service API > Datasets > Retrieve a list of datasets.]** and select **Send**
 1. You should get a `200 OK` response
@@ -330,12 +331,11 @@ Adobe partners with multiple ETL vendors to support data ingestion into Experien
 * [Developing ETL Integrations for Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
 * [Informatica Adobe Experience Platform Connector page on Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
 * [Informatica documentation of the Adobe Experience Platform Connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
-* [Unique Audience Experiences Derived from Data:  Unifi and Adobe Experience Platform](https://unifisoftware.com/solutions/adobe-experience-platform/)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Additional Resources
 
 * [Batch Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/batch/overview.html)
-* [Batch Ingestion API reference](https://www.adobe.io/experience-platform-apis/references/data-ingestion/#tag/Batch-Ingestion)
+* [Batch Ingestion API reference](https://developer.adobe.com/experience-platform-apis/references/batch-ingestion/)
 
 Now let's [stream data using the Web SDK](ingest-streaming-data.md)

@@ -2,13 +2,14 @@
 title: Add an event-forwarding extension
 description: Learn how to add an event-forwarding extension in Data Collection.
 feature: Event Forwarding
-kt: 6422
+level: Intermediate
+jira: KT-6422
 thumbnail: 331941.jpeg
 exl-id: 00a0b2c5-8b71-446b-9b20-612a9efbca62
 ---
 # Add an event-forwarding extension
 
-Learn how to add an event-forwarding extension in Data Collection.
+Learn how to add an event-forwarding extension in Data Collection. For more information, please visit the [event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html).
 
 >[!NOTE]
 >
@@ -18,6 +19,4 @@ Learn how to add an event-forwarding extension in Data Collection.
 > * Platform Launch Server Side is now **[!DNL event forwarding]** 
 > * Edge configurations are now **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331941?quality=12&learn=on)
-
-For more information, please visit the [event forwarding documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html)
+>[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on)

@@ -2,6 +2,7 @@
 title: CSC Bootcamp - Creative Brief
 description: CSC Bootcamp - Creative Brief
 doc-type: multipage-overview
+exl-id: e404b54d-cdd6-4ecf-9740-838c002b7872
 ---
 # Creative Brief
 

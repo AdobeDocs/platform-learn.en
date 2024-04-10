@@ -1,8 +1,8 @@
 ---
 title: Track events | Migrate Target from at.js 2.x to Web SDK
 description: Learn how to track Adobe Target conversion events using Experience Platform Web SDK.
+exl-id: 5da772bc-de05-4ea9-afbd-3ef58bc7f025
 ---
-
 # Track Target conversion events using Platform Web SDK
 
 Conversion events for Target can be tracked with the Platform Web SDK similar to at.js. Conversion events typically fall into the following categories:

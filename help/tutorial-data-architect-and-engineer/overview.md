@@ -3,9 +3,10 @@ title: Getting Started with Adobe Experience Platform for Data Architects and Da
 description: Get started with Adobe Experience Platform for Data Architects and Data Engineers.
 breadcrumb-title: Overview
 role: Data Architect, Data Engineer
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-overview.jpg
 recommendations: catalog, noDisplay
+last-substantial-update: 2023-06-21
 exl-id: fabbc591-840b-40dc-89af-305626a16338
 ---
 # Getting Started with Adobe Experience Platform for Data Architects and Data Engineers
@@ -66,5 +67,10 @@ Platform is built API-first. While interface workflows exist for all major Platf
 ### Third-party technologies
 
 Although you will use multiple technologies in this tutorial, you will remain almost entirely within the Adobe ecosystem. In your own Platform implementation, you will likely integrate Platform with specific third-party technologies. To keep this tutorial relevant for all customers, we will use a more generic implementation. 
+
+## Tutorial updates
+
+* June 2023: Updated to include new Permission workflow and to use OAuth Server-to-Server API credential
+
 
 Now let's move on to the first lesson&mdash;[configure permissions](configure-permissions.md).

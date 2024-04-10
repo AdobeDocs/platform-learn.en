@@ -5,7 +5,7 @@ breadcrumb-title: Run queries
 description: In this lesson you will learn how to setup, write, and execute queries to validate the data you have ingested.
 role: Data Architect, Data Engineer
 feature: Queries
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-run-queries.jpg
 exl-id: a37531cb-96ad-4547-86af-84f7ed65f019
 ---
@@ -19,7 +19,7 @@ Adobe Experience Platform Query Service helps you make sense of your data by all
 **Data Architects** and **Data Engineers** will need to use query service outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about Query Service:
->[!VIDEO](https://video.tv.adobe.com/v/29795?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29795?learn=on)
 
 ## Permissions required
 

@@ -4,7 +4,7 @@ description: Learn how to create a dashboard in Adobe Experience Platform.
 feature: Dashboards
 role: User
 level: Beginner
-kt: 11194
+jira: KT-11194
 thumbnail: 3409637.jpeg
 last-substantial-update: 2022-09-27
 exl-id: 17358939-c976-40aa-b11b-708edf8ebce6
@@ -17,4 +17,4 @@ Learn how to create a dashboard in Adobe Experience Platform. For more informati
 >
 >The user-defined dashboards feature is in beta. Its features and documentation are subject to change.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409637/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409637/?learn=on)

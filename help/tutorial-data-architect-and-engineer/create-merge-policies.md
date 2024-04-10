@@ -5,7 +5,7 @@ breadcrumb-title: Create merge policies
 description: In this lesson, you will create merge policies to determine how data merges into profiles. 
 role: Data Architect, Data Engineer
 feature: Profiles
-kt: 4348
+jira: KT-4348
 audience: data architect
 doc-type: tutorial
 activity: implement
@@ -25,7 +25,7 @@ We'll stick to the user interface for this lesson, but API options also exist fo
 **Data Architects** will need to create merge policies outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about merge policies:
->[!VIDEO](https://video.tv.adobe.com/v/330433?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330433?learn=on)
 
 ## Permissions required
 
@@ -55,7 +55,7 @@ When multiple schemas are enabled for profile, a [!UICONTROL Union Schema] is au
 
 Note that there isn't a union schema for the ExperienceEvent class. While ExperienceEvent data still lands in profile, because it is time-series based, each event includes a timestamp and id and collisions are not a problem.
 
-Now what if you don't like that default merge policy? What if Luma decides their CRM system should be the source of truth when there is a conflict? For that, we will create a merge policy.
+Now what if you don't like that default merge policy? What if Luma decides their loyalty system should be the source of truth when there is a conflict? For that, we will create a merge policy.
 
 ## Create a merge policy in the UI
 

@@ -5,7 +5,7 @@ breadcrumb-title: Apply the data governance framework
 description: In this lesson, you will apply the data governance framework to the data you've ingested into your sandbox. 
 role: Data Architect
 feature: Data Governance
-kt: 4348
+jira: KT-4348
 thumbnail: 4348-apply-data-governance-framework.jpg
 exl-id: 3cc3c794-5ffd-41bf-95d8-be5bca2e3a0f
 ---
@@ -18,9 +18,9 @@ In this lesson, you will apply the data governance framework to the data you've 
 Adobe Experience Platform Data Governance allows you to manage customer data and ensure compliance with regulations, restrictions, and policies applicable to data use. It plays a key role within Experience Platform at various levels, including  controlling usage of data.
 
 Before you begin the exercises, watch these short videos about data governance:
->[!VIDEO](https://video.tv.adobe.com/v/36653?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on)
 
 <!--
 ## Permissions required

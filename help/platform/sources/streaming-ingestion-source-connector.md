@@ -1,22 +1,19 @@
 ---
 title: Stream data using Source Connectors
-description: This video shows how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
-role: Data Engineer, Data Architect
+description: Learn how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
 feature: Sources
-kt: 7100
+role: Data Engineer, Data Architect, Developer
+level: Intermediate
+jira: KT-7100
 thumbnail: 331943.jpg
 exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
 ---
 # Stream data using Source Connectors 
 
-This video shows how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
+Learn how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?quality=12&learn=on)
-
->[!INFO]
->
-> This video is part of a course [Data Ingestion for Data Engineers](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2020.1.dataingestion), available for free on Experience League!
+>[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on)
 
 ## Additional Resources
 

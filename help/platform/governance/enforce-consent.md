@@ -1,9 +1,10 @@
 ---
 title: Enforce consent
 description: Learn how to enforce consent
-role: Data Architect, User
 feature: Consent
-kt: 10362
+role: User, Developer, Data Architect, Admin
+level: Beginner
+jira: KT-10362
 thumbnail: 345677.jpeg
 exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
 ---
@@ -11,7 +12,7 @@ exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
 
 Learn how to create policies to enforce customer's consent preferences. For more information, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on)
 
 >[!IMPORTANT]
 >

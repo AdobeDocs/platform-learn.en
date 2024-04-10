@@ -1,6 +1,7 @@
 ---
 title: Migration overview | Migrate Target from at.js 2.x to Web SDK
 description: Learn about the key differences between at.js and Platform Web SDK and how to plan your migration effort.
+exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
 ---
 # Target at.js to Platform Web SDK migration overview
 
@@ -49,7 +50,7 @@ The Platform Web SDK is not an evolution of the Target at.js library. It is a ne
 
 The following video gives an overview of the Adobe Experience Platform Web SDK and Adobe Experience Platform Edge Network.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141/?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141/?learn=on)
 
 Now that you understand the high-level differences between at.js and the Platform Web SDK, you can [plan the migration](plan-migration.md).
 
