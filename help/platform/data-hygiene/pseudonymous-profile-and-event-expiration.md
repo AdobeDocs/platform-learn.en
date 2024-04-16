@@ -7,6 +7,7 @@ level: Beginner
 jira: KT-15319
 thumbnail: 3428361.jpeg
 last-substantial-update: 2024-04-15
+exl-id: 16ecab9e-32e2-464f-a421-6575abe05fac
 ---
 # Pseudonymous profile and Experience Event expirations
 
