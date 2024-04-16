@@ -3,8 +3,9 @@ title: Add and configure tag extensions
 description: Learn how to add and configure extensions in your tag property.
 feature: Tags
 level: Beginner
-jira: KT-3528
+duration: 370
 last-substantial-update: 2024-02-23
+jira: KT-3528
 exl-id: c4115da3-d779-4fe8-90e5-32581fb968cb
 ---
 # Add and configure tag extensions

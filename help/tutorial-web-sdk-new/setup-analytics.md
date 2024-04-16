@@ -17,19 +17,9 @@ At the end of this lesson, you will be able to:
 
 * Configure a datastream to enable Adobe Analytics
 * Know which standard XDM fields will auto-map to Analytics variables
-* Use either/both processing rules and the Adobe Analytics ExperienceEvent Template field group to set custom Analytics variables
-* Override a datastream to send data to another Adobe Analytics report suite
-
-* Map individual or entire array data elements to the XDM object
-* Use the Update variable rule action type to stack multiple rules into one XDM event
-
-
-* Capture e-commerce data with the XDM object for the Adobe Analytics product string
-* Set a Product Syntax Merchandising eVar using XDM
-
-* Validate Adobe Analytics variables are set with the XDM object using Experience Platform Debugger
-
-* Validate data is captured by Adobe Analytics using Adobe Experience Platform Assurance
+* Set custom Analytics variables using the Adobe Analytics ExperienceEvent Template field group or processing rules
+* Send data to another report suite by overriding the datastream
+* Validate Adobe Analytics variables using Debugger and Assurance
 
 ## Prerequisites
 
