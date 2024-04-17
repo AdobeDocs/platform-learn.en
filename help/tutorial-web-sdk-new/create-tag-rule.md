@@ -99,7 +99,7 @@ To Create tag rules for the global XDM fields:
     > The lower the order number, the earlier it executes. Therefore, we give our "global configuration" a low order number.
 
 1. Select **[!UICONTROL Keep Changes]** to return to the main rule screen
-    ![Select Library Loaded Trigger](assets/create-tag-rule-trigger-top.png)
+    ![Select Library Loaded Trigger](assets/create-tag-rule-trigger-loaded.png)
 
 1. In the **[!UICONTROL Actions]** section, select **[!UICONTROL Add]**
 
