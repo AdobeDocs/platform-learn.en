@@ -41,7 +41,7 @@ The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experie
 
 Read more about how [ECIDs are tracked using Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
 
-ECIDs are set using a combination of first-party cookies and Platform Edge Network. By default, the first-party cookies are set by the Web SDK. To account for browser restrictions on cookie lifespans, you can opt to set and manage your own  first-party cookies instead. These are referred to as first-party device IDs (FPIDs).
+ECIDs are set using a combination of first-party cookies and Platform Edge Network. By default, the first-party cookies are set client-side by the Web SDK. To account for browser restrictions on cookie lifespans, you can opt to set your own first-party cookies server-side instead. These are referred to as first-party device IDs (FPIDs).
 
 >[!IMPORTANT]
 >

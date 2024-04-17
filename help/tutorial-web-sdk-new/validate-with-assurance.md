@@ -54,13 +54,16 @@ Reviewing how we did this in the Debugger lesson:
 1. Open the [Data Collection interface](https://experience.adobe.com/#/data-collection/home){target="_blank"}
 1. Select Assurance in the left navigation
 1. Select Create Session
+    ![Create an Assurance session](assets/assurance-create-session.png)
 1. Select Start
 1. Give the session a name, for example, `Luma Web SDK validation`
 1. As the **[!UICONTROL Base URL]** enter `https://luma.enablementadobe.com/`
+    ![Name the Assurance session](assets/assurance-name-session.png)
 1. On the next screen, select **[!UICONTROL Copy Link]**
 1. Select the icon to copy the link to your clipboard
 1. Paste the URL in your browser, which will open the Luma Website witha special URL parameter `adb_validation_sessionid` and start the session
 1. In the Assurance interface, you should see a message indicating you have successfully connected to the session and you should see events captured in the Assurance interface.
+    ![Assurance session has connected](assets/assurance-success.png)
 
 ## Validate the current state of your Web SDK implementation
 

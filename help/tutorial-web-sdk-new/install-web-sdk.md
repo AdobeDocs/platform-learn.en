@@ -47,7 +47,7 @@ With your XDM schema, datastream, and tag property now created, you are ready to
 1. Search for `Adobe Experience Platform Web SDK`
 1. Select **[!UICONTROL Install]**
 
-    ![Install Web SDK Extension](assets/extension-platform-web-sdk.jpg)
+    ![Install Web SDK Extension](assets/extension-platform-web-sdk.png)
 
 
 ## Link Platform Web SDK to your datastream 
