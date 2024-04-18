@@ -9,7 +9,7 @@ exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to set up Adobe Audience Manager using the Platform Web SDK and validate the implementation using a cookie destination. 
 

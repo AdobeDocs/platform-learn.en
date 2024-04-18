@@ -9,7 +9,7 @@ exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to configure the privacy settings of the Experience Platform Web SDK tag extension. Set consent based on the visitor's interaction with a banner from a Consent Management Platform (CMP). 
 

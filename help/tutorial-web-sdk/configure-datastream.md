@@ -9,7 +9,7 @@ exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to enable a datastream and configure Experience Cloud solutions.
 

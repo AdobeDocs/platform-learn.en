@@ -8,7 +8,7 @@ exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 
 Learn how to implement Experience Cloud applications using Adobe Experience Platform Web SDK.

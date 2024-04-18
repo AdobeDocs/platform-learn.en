@@ -9,7 +9,7 @@ exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to use event-forwarding property using Experience Platform Web SDK data.
 
