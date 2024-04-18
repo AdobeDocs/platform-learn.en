@@ -117,7 +117,7 @@ When possible, it is recommended to use existing field groups and adhere to a pr
 1. Check the box
 1. Select **[!UICONTROL Add field groups]** 
 
-    ![Add Field Group](assets/schema-add-field-group.jpg)
+    ![Add Field Group](assets/schema-add-field-group.png)
 
 With both field groups, notice that you have access to the most commonly used key-value pairs required for data collection on the web. The [!UICONTROL display name] of each field appears to marketers in the segment builder interface of Platform-based applications and you can change the display name of standard fields to suit your needs. You can also remove fields you don't want. When you click on either field group name, the interface highlights what key-value pair groupings belong to it. In below example, you see what groups belong to **[!UICONTROL Consumer Experience Event]**.
 
