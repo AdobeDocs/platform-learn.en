@@ -9,7 +9,7 @@ exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to configure identity namespaces to use with Adobe Experience Platform Web SDK. 
 

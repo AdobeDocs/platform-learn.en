@@ -9,7 +9,7 @@ exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to implement Adobe Target using Platform Web SDK. Learn how to deliver experiences and how to pass additional parameters to Target.
 

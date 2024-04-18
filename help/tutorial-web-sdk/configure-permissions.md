@@ -9,7 +9,7 @@ exl-id: d7c4f2c3-cf3c-4587-88f8-82113d250084
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to request access to Experience Platform Web SDK and configure the permission required to complete this tutorial. To implement Platform Web SDK using tags in the Data Collection interface, you must have the proper user permissions configured in [Admin Console](https://adminconsole.adobe.com).
 

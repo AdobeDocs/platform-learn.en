@@ -9,7 +9,7 @@ exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to install and configure the Platform Web SDK tag extension in the Data Collection interface. This tag extension is the _only tag extension_ required to send data to _all Adobe Experience Cloud applications_, including [Analytics](setup-analytics.md), [Target](setup-target.md), [Audience Manager](setup-audience-manager.md), Real-Time Customer Data Platform, and Journey Optimizer!
 

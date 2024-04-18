@@ -9,7 +9,7 @@ exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
 
 >[!CAUTION]
 >
->We expect to publish major changes to this tutorial on Friday March 15, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
+>We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to send an event to the Platform Edge Network with your XDM object using a tag rule. A tag rule is a combination of events, conditions, and actions that tells the tag property to do something.
 
