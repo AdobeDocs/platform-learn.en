@@ -1,6 +1,6 @@
 ---
 title: Configure a playbook sandbox
-description: Learn how to configure a sandbox for Use Case Playbooks. 
+description: Learn how to configure a sandbox for Use Case Playbooks.
 feature: Playbooks
 role: Admin
 level: Beginner
@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 355
 last-substantial-update: 2024-01-27
 jira: KT-14074
+exl-id: 4b231a49-5df8-4bad-800f-e58807b69aaa
 ---
-
 # Configure a playbook sandbox
 
 Learn how to configure a sandbox for Use Case Playbooks. To get started with Use Case Playbooks, you must:

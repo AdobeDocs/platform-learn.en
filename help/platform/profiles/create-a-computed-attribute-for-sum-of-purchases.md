@@ -6,6 +6,7 @@ role: User
 level: Intermediate
 last-substantial-update: 2023-12-08
 jira: KT-14615
+exl-id: e9c0541c-f674-4f50-8ed4-5048fd3dec5d
 ---
 # Create a computed attribute for the sum of purchases
 

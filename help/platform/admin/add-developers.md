@@ -6,6 +6,7 @@ role: Admin, Developer
 level: Beginner
 jira: KT-14689
 last-substantial-update: 2023-12-15
+exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
 ---
 # Add developers and give permissions to API credentials
 
@@ -20,4 +21,3 @@ Learn how to add developers to Adobe Experience Platform-based applications like
 >[!TIP]
 >
 >We recommend you also add the developer as a **user** to the `AEP-Default-All-Users` product profile in Admin Console and then add them to the same role in the Platform interface as the API credential. This allows them to use the interface, if needed. See [Add users](add-users.md) for more details.
-
