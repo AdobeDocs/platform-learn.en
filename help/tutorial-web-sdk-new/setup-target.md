@@ -2,6 +2,7 @@
 title: Set up Adobe Target with Platform Web SDK
 description: Learn how to implement Adobe Target using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection, Target
+exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
 ---
 # Set up Adobe Target with Platform Web SDK
 
