@@ -123,23 +123,7 @@ This use case enables you to better understand how Journey Optimizer can help de
 
 When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by all of the other data you have ingested. When a user authenticates into the Luma site, and authenticated identity is sent to Platform representing an identity in Luma's CRM system. An identity graph is constructed in Experience Platform and all other profile-enabled datasets also containing identities with the `lumaCrmId` namespace can be joined together to build Real-Time Customer Profiles. We will quickly create another dataset in Adobe Experience Platform with some sample loyalty data so we can demonstrate how Real-Time Customer Profiles can be used in Journey Optimizer web campaigns. Since you have already done similar exercises the instructions will be brief.
 
-Create an identity namespace for the Luma Loyalty ID:
 
-1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
-1. Select the sandbox you are using for the tutorial
-1. Select **[!UICONTROL Identities]** in the left navigation
-1. Select **[!UICONTROL Browse]**
-1. Select **[!UICONTROL Create identity namespace]**
-
-   ![View identities](assets/configure-identities-screen.png)
-
-1. Provide details as following and select **[!UICONTROL Create]**.
-   
-   | Field         |  Value    |  
-   |---------------|-----------|
-   | Display name  | Luma Loyalty ID   | 
-   | Identity symbol| lumaLoyaltyId    |  
-   | Type           | Individual cross-device ID |  
 
 
 ### Create Loyalty Rewards Campaign

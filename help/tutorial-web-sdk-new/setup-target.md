@@ -2,7 +2,6 @@
 title: Set up Adobe Target with Platform Web SDK
 description: Learn how to implement Adobe Target using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection, Target
-exl-id: 5bf95d05-a651-438e-a4f2-4b8f210d7f63
 ---
 # Set up Adobe Target with Platform Web SDK
 
@@ -445,24 +444,29 @@ Passing additional data for Target outside of the XDM object requires updating a
 The data layer on the Luma site is completely defined before the tags embed code. This allows us to use a single call to both fetch personalized content (e.g. from Adobe Target) and send analytics data (e.g. to Adobe Analytics). 
 
 On many websites, however, the data layer cannot be loaded early enough or quickly enough to use a single call for both applications. In those situations, you can use two [!UICONTROL Send event] actions on a single page load and use the first for personalization and the second for analytics. Breaking up the events this way allows the personalization event to fire as early as possible, while waiting for the data layer to load completely before sending the Analytics event. This is similar to many pre-Web SDK implementations, where Adobe Target would fire the `target-global-mbox` at the top of the page and Adobe Analytics would fire the `s.t()` call at the bottom of the page
- 
 
-1. Create a rule called `all pages - library loaded - request decisions`
-1. Add an event to the rule. Use the **Core** extension and the **[!UICONTROL Library Loaded (Page Top)]** event type
-1. Add an action to the rule. Use the **Adobe Experience Platform Web SDK** extension and **Send event** action type
+To create the personalization-on-top request:
+
+1. Open the `all pages - library loaded - send event - 50` rule
+1. Open the **Send event** action
 1. Select **[!UICONTROL Use guided events]** and then select **[!UICONTROL Request personalization]**
 1. This locks the **Type** as **[!UICONTROL Decisioning Proposition Fetch]**
 
    ![send_decision_request_alone](assets/target-decision-request.png)
 
-1. When creating your `Adobe Analytics Send Event rule` use the **Guided event style** section select the **[!UICONTROL Bottom of page event - collect analytics]** radio button
+To create the analytics-on-bottom request:
+
+1. Create a new rule called `all pages - page bottom - send event - 50`
+1. Add an event to the rule. Use the **Core** extension and the **[!UICONTROL Page Bottom]** event type
+1. Add an action to the rule. Use the **Adobe Experience Platform Web SDK** extension and **Send event** action type
+1. Select **[!UICONTROL Use guided events]** and then select **[!UICONTROL Collect analytics]**
 1. This locks the **[!UICONTROL Include pending display notifications]** checkbox selected so the queued display notification from the decisioning request will be sent.
 
  ![send_decision_request_alone](assets/target-aa-request-guided.png)
 
    >[!TIP]
    >
-   >If the event you're fetching a Decisioning Proposition for doesn't have an Adobe Analytics event following it use the **Guided event style** **[!UICONTROL Unguided - show all fields]**. You'll need to select all the options manually , but it unlocks the option to **[!UICONTROL automatically send a display notification]** along with your fetch request.
+   >If the event you're fetching a Decisioning Proposition for doesn't have an Adobe Analytics event following it use the **Guided event style** **[!UICONTROL Unguided - show all fields]**. You'll need to select all the options manually, but it unlocks the option to **[!UICONTROL automatically send a display notification]** along with your fetch request.
 
 
 ### Validate with the Debugger
