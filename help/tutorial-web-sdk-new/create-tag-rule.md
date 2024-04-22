@@ -337,7 +337,7 @@ Now that you have set the variables, you can create the rule to send the complet
 
 1. On the right, select **[!UICONTROL Add Rule]** to create another rule
 
-1. Name the rule `all pages - library loaded - set send event - 50`
+1. Name the rule `all pages - library loaded - send event - 50`
 
 1. In the **[!UICONTROL Events]** section, select **[!UICONTROL Add]**
 

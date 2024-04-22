@@ -17,7 +17,8 @@ At the end of this lesson, you will be able to:
 
 * Understand how to add the Platform Web SDK pre-hiding snippet to prevent flicker when using Target with asynchronous tag embed codes 
 * Configure a datastream to enable Target functionality
-* Render visual personalization decisions when the page loads (formerly called the "global mbox")
+* Render visual experience composer activties
+* Render form composer activities
 * Pass XDM data to Target and understand the mapping to Target parameters
 * Pass custom data to Target such as profile and entity parameters
 * Validate a Target implementation with Platform Web SDK
@@ -182,20 +183,22 @@ First, you should understand the terminology used in the Target and tags interfa
 * **Personalization decision**: An action the server determines should be applied. These decisions may be based on audience criteria and Target activity prioritization.
 * **Proposition**: The result of decisions made by the server which are delivered in the Platform Web SDK response. For example, swapping a banner image would be a proposition.
 
-### Update the page load rule
+### Update the [!UICONTROL Send event] action
 
-Visual personalization decisions from Target are delivered by the Platform Web SDK, if Target is enabled in the datastream. However, _they are not rendered automatically_. You must modify the global page load rule to enable automatic rendering.
+Visual personalization decisions from Target are delivered by the Platform Web SDK, if Target is enabled in the datastream. However, _they are not rendered automatically_. You must update the [!UICONTROL Send event] action to enable automatic rendering.
 
 1. In the [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface, open the tag property you are using for this tutorial
-1. Open the `all pages - library load - AA & AT` rule
+1. Open the `all pages - library loaded - send event - 50` rule
 1. Select the `Adobe Experience Platform Web SDK - Send event` action
 1. Enable **[!UICONTROL Render visual personalization decisions]** with the checkbox
 
    ![Enable rendering visual personalization decisions](assets/target-rule-enable-visual-decisions.png)
 
+<!--
 1. In the **[!UICONTROL Datastream configuration overrides**] the **[!UICONTROL Target Property Token]** can be overridden either as a static value or with a data element. Only property tokens defined in the [**Advanced Property Token Overrides**](#advanced-pto) section in **Datastream Configuration** will return results.
    
    ![Override the Property Token](assets/target-property-token-ovrrides.png)
+   -->
    
 1. Save your changes then build to your library
 
@@ -205,7 +208,7 @@ The render visual personalization decisions setting makes the Platform Web SDK a
 >
 >Typically, the [!UICONTROL Render visual personalization decisions] setting should only be enabled for a single Send Event action per full page load. If multiple Send Event actions have this setting enabled, then subsequent render requests are ignored.
 
-If you prefer to render or action on these decisions yourself using custom code, you can leave the [!UICONTROL Render visual personalization decisions] setting disabled. The Platform Web SDK is flexible and provides this capability to give you complete control. You can refer to the guide for more information about [manually rendering personalized content](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
+If you prefer to render or action on these decisions yourself using custom code, you can leave the [!UICONTROL Render visual personalization decisions] setting disabled. Platform Web SDK is flexible and provides this capability to give you complete control. You can refer to the guide for more information about [manually rendering personalized content](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/rendering-personalization-content.html).
 
 
 ### Set up a Target activity with the Visual Experience Composer
@@ -216,7 +219,7 @@ Now that the basic implementation portion is complete, create an Experience Targ
 >
 >If you are using Google Chrome as your browser, the [Visual Experience Composer (VEC) helper extension](https://experienceleague.adobe.com/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension.html?lang=en) is required to load the site properly for editing in the VEC.
 
-1. Navigate to Target
+1. Navigate to the Adobe Target interface
 1. Create an Experience Targeting (XT) activity using the Luma homepage for the activity URL
 
    ![Create a new XT activity](assets/target-xt-create-activity.png)
@@ -261,7 +264,7 @@ If you set up an activity, you should see your content rendered on the page. How
 
    ![Network call in the Adobe Experience Platform debugger](assets/target-debugger-network.png)
 
-1. Notice that there are keys under `query` > `personalization` and  `decisionScopes` has a value of `__view__`. This scope is the equivalent to Target's "global mbox". This Platform Web SDK call requested decisions from Target.
+1. Notice that there are keys under `query` > `personalization` and  `decisionScopes` has a value of `__view__`. This scope is the equivalent to the `target-global-mbox`. This Platform Web SDK call requested decisions from Target.
 
    ![`__view__` decisionScope request](assets/target-debugger-view-scope.png)
    
@@ -272,13 +275,13 @@ If you set up an activity, you should see your content rendered on the page. How
 
 ## Set up and render a custom decision scope
 
-Custom decision scopes (formerly known as "mboxes") can be used to deliver HTML or JSON content in a structured fashion using the Target Form-based Experience Composer. Content delivered to one of these custom scopes is not rendered automatically by the Platform Web SDK.
+Custom decision scopes (formerly known as "mboxes") can be used to deliver HTML or JSON content in a structured fashion using the Target Form-based Experience Composer. Content delivered to one of these custom scopes is not rendered automatically by the Platform Web SDK. It can be rendered using an action in Tags.
 
-### Add a scope to the page load rule
+### Add a scope to the [!UICONTROL Send event action]
 
 Modify your page load rule to add a custom decision scope:
 
-1. Open the `all pages - library load - AA & AT` rule
+1. Open the `all pages - library loaded - send event - 50` rule
 1. Select the `Adobe Experience Platform Web SDK - Send Event` action
 1. Add one or more scopes you would like to use. For this example, use `homepage-hero`.
 
@@ -377,9 +380,17 @@ If you activated your activity, you should see your content render on the page. 
 
    ![Target Activity impression](assets/target-debugger-activity-impression.png)
 
-## Pass additional data to Target
+## Send parameters to Target
 
 In this section, you will pass Target-specific data and take a closer look at how XDM data is mapped to Target parameters.
+
+### Page (mbox) parameters and XDM
+
+All XDM fields are automatically passed to Target as [page parameters](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) or mbox parameters.
+
+Some of these XDM fields will map to special objects in Target's backend. For example, `web.webPageDetails.URL` will automatically be available to build URL-based targeting conditions or as the `page.url` object when creating profile scripts.
+
+### Special parameters and the data object
 
 There are some data points that may be useful to Target that are not mapped from the XDM object. These special Target parameters include:
 
@@ -388,9 +399,9 @@ There are some data points that may be useful to Target that are not mapped from
 * [Recommendations reserved parameters](https://experienceleague.adobe.com/docs/target/using/recommendations/plan-implement.html?lang=en#pass-behavioral)
 * Category values for [category affinity](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/category-affinity.html?lang=en)
 
-### Create data element for special Target parameters
+These parameters must be sent in the `data` object instead of in the `xdm` object. Additionally, page (or mbox) parameters can also be included in the `data` object.
 
-First, use the data elements created in the [Create data elements](create-data-elements.md) lesson to construct the `data` object which is used to pass non-XDM data:
+To populate the data object, create the following data element, reusing data elements created in the [Create data elements](create-data-elements.md) lesson:
 
 * **`data.content`** using the following custom code: 
 
@@ -408,30 +419,34 @@ First, use the data elements created in the [Create data elements](create-data-e
    return data;
    ```
 
+
+
 ### Update the page load rule
 
 Passing additional data for Target outside of the XDM object requires updating any applicable rules. For this example, the only modification you must make is to include the new **data.content** data element to the generic page load rule and product page view rule. 
 
-1. Open the `all pages - library load - AA & AT` rule
+1. Open the `all pages - library loaded - send event - 50` rule
 1. Select the `Adobe Experience Platform Web SDK - Send event` action
 1. Add the `data.content` data element to the Data field
 
    ![Add Target Data to Rule](assets/target-rule-data.png)
 
 1. Save your changes and build to your library
-1. Repeat steps 1 through 4 for the **product view - library load - AA** rule
+1. Repeat steps 1 through 4 for the **ecommerce - library loaded - set product details variables - 20** rule
 
 >[!NOTE]
 >
 >The example above uses a `data` object that is not completely populated on all page types. Tags handles this situation appropriately and omits keys that have an undefined value. For example, `entity.id` and `entity.name` would not be passed on any pages aside from product details.
 
    
-## Splitting Personalization Decision and Analytics Collection events
+## Splitting Personalization and Analytics requests
 
-The data layer on the Luma site is completely defined before the tags embed code. This allows us to use a single call to both fetch personalized content (e.g. from Adobe Target) and send analytics data (e.g. to Adobe Analytics). On many websites the data layer cannot be loaded early enough or quickly enough to be suitable for use with personalization applications. In those situations, you can make two `sendEvent` calls on a single page load and use the first for personalization and the second for analytics. Breaking up the event rules in this way allows the Target Decisioning event to fire as early as possible. The Analytics event can wait until after the data layer object is populated. This is similar pre-Web SDK implementations, where Adobe Target would fire the `target-global-mbox` at the top of the page and Adobe Analytics would fire the `s.t()` call at the bottom of the page
+The data layer on the Luma site is completely defined before the tags embed code. This allows us to use a single call to both fetch personalized content (e.g. from Adobe Target) and send analytics data (e.g. to Adobe Analytics). 
+
+On many websites, however, the data layer cannot be loaded early enough or quickly enough to use a single call for both applications. In those situations, you can use two [!UICONTROL Send event] actions on a single page load and use the first for personalization and the second for analytics. Breaking up the events this way allows the personalization event to fire as early as possible, while waiting for the data layer to load completely before sending the Analytics event. This is similar to many pre-Web SDK implementations, where Adobe Target would fire the `target-global-mbox` at the top of the page and Adobe Analytics would fire the `s.t()` call at the bottom of the page
  
 
-1. Create a rule called `all pages - page top - request decisions`
+1. Create a rule called `all pages - library loaded - request decisions`
 1. Add an event to the rule. Use the **Core** extension and the **[!UICONTROL Library Loaded (Page Top)]** event type
 1. Add an action to the rule. Use the **Adobe Experience Platform Web SDK** extension and **Send event** action type
 1. Select **[!UICONTROL Use guided events]** and then select **[!UICONTROL Request personalization]**

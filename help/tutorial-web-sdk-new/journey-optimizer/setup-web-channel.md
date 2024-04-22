@@ -1,14 +1,14 @@
 ---
-title: Set up Web Channel with Platform Web SDK
-description: Learn how to implement Web Channel using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
+title: Set up Journey Optimizer web channel with Platform Web SDK
+description: Learn how to implement Journey Optimizer web channel using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
 ---
 
-# Set up Web Channel with Platform Web SDK
+# Set up Journey Optimizer web channel with Platform Web SDK
 
-Learn how to implement Web Channel using Platform Web SDK. This guide covers the foundational Web Channel prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
+Learn how to implement the Journey Optimizer web channel using Platform Web SDK. This guide covers the foundational Web Channel prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
 
 By following this guide, Journey Optimizer users are equipped to effectively apply the web channel for advanced online personalization using the Journey Optimizer Web Designer.
 
@@ -118,9 +118,32 @@ This use case enables you to better understand how Journey Optimizer can help de
 >
 >As this tutorial is aimed at implementers, it's worth noting that this lesson involves substantial interface work in Journey Optimizer. While such interface tasks are typically handled by marketers, it can be beneficial for implementers to gain insight into the process, even if they are not responsible for web channel campaign creation in the end.
 
+### Create a Loyalty schema and ingest sample data
+
+When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by all of the other data you have ingested. When a user authenticates into the Luma site, and authenticated identity is sent to Platform representing an identity in Luma's CRM system. An identity graph is constructed in Experience Platform and all other profile-enabled datasets also containing identities with the `lumaCrmId` namespace can be joined together to build Real-Time Customer Profiles. We will quickly create another dataset in Adobe Experience Platform with some sample loyalty data so we can demonstrate how Real-Time Customer Profiles can be used in Journey Optimizer web campaigns. Since you have already done similar exercises the instructions will be brief.
+
+Create an identity namespace for the Luma Loyalty ID:
+
+1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
+1. Select the sandbox you are using for the tutorial
+1. Select **[!UICONTROL Identities]** in the left navigation
+1. Select **[!UICONTROL Browse]**
+1. Select **[!UICONTROL Create identity namespace]**
+
+   ![View identities](assets/configure-identities-screen.png)
+
+1. Provide details as following and select **[!UICONTROL Create]**.
+   
+   | Field         |  Value    |  
+   |---------------|-----------|
+   | Display name  | Luma Loyalty ID   | 
+   | Identity symbol| lumaLoyaltyId    |  
+   | Type           | Individual cross-device ID |  
+
+
 ### Create Loyalty Rewards Campaign
 
-Let's begin by creating the Loyalty Rewards web channel campaign in Adobe Journey Optimizer.
+Now that we have ingested our sample loyalty data we can create the Loyalty Rewards web channel campaign in Adobe Journey Optimizer.
 
 To create the sample campaign:
 
