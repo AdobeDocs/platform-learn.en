@@ -2,6 +2,7 @@
 title: Create identities
 description: Learn how to create identities in XDM and use the Identity Map data element to capture user IDs. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Tags
+exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
 ---
 # Create identities
 

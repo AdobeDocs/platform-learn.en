@@ -2,6 +2,7 @@
 title: Set up Audience Manager with Platform Web SDK
 description: Learn how to set up Adobe Audience Manager using the Platform Web SDK and validate the implementation using a cookie destination. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection, Audience Manager
+exl-id: 1d26c747-0d5c-4621-97ba-40a600b7eea4
 ---
 # Set up Audience Manager with Platform Web SDK
 

@@ -2,6 +2,7 @@
 title: Set up consent with Platform Web SDK
 description: Learn how to configure the privacy settings of the Experience Platform Web SDK tag extension. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Tags,Consent
+exl-id: 1285cf8d-86d4-4887-b65e-30922a7a1486
 ---
 # Set up consent with Platform Web SDK
 
