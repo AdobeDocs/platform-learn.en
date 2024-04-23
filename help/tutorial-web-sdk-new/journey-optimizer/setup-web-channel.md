@@ -121,10 +121,29 @@ This use case enables you to better understand how Journey Optimizer can help de
 
 ### Create a Loyalty schema and ingest sample data
 
-When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by all of the other data you have ingested. When a user authenticates into the Luma site, and authenticated identity is sent to Platform representing an identity in Luma's CRM system. An identity graph is constructed in Experience Platform and all other profile-enabled datasets also containing identities with the `lumaCrmId` namespace can be joined together to build Real-Time Customer Profiles. We will quickly create another dataset in Adobe Experience Platform with some sample loyalty data so we can demonstrate how Real-Time Customer Profiles can be used in Journey Optimizer web campaigns. Since you have already done similar exercises the instructions will be brief.
+When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by other data sources you have ingested into Platform. For example, when a user logs into the Luma site, the `lumaCrmId` is sent to Platform representing an identity in Luma's CRM system. An identity graph is constructed in Experience Platform and all other profile-enabled datasets can potentially be joined together to build Real-Time Customer Profiles. We will quickly create another dataset in Adobe Experience Platform with some sample loyalty data so we can demonstrate how Real-Time Customer Profiles can be used in Journey Optimizer web campaigns. Since you have already done similar exercises the instructions will be brief.
 
+To create the schema:
 
+1. Create a new schema 
+1. Choose **[!UICONTROL Individual Profile]** as the [!UICONTROL base class]
+1. Name the schema `Luma Loyalty Schema`
+1. Select the `personID` field and mark is as an [!UICONTROL Identity] and [!UICONTROL Primary identity] using the `Luma CRM Id` [!UICONTROL Identity namespace].
+1. Add the [!UICONTROL Loyalty Details] field group
+1. Enable the schema for [!UICONTROL Profile]
 
+SCREENSHOT OF SCHEMA
+
+To create the dataset and ingest the sample data:
+
+1. Create a new dataset from the `Luma Loyalty Schema`
+1. Name the dataset `Luma Loyalty Dataset`
+1. Enable the dataset for [!UICONTROL Profile]
+1. Download the sample LoyaltyWebSDK.json file
+1. Drag-and-drop the file into your dataset
+1. Confirm that the data successfully ingested
+
+SCREENSHOT OF DATASET AND CONFIRMATION
 
 ### Create Loyalty Rewards Campaign
 
