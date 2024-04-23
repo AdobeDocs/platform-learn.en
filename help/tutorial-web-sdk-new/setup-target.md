@@ -13,16 +13,16 @@ Learn how to implement Adobe Target using Platform Web SDK. Learn how to deliver
 
 ## Learning objectives
 
-At the end of this lesson, you will be able to:
+At the end of this lesson, you will be able to do the following with a Web SDK implementation of Target:
 
-* Understand how to add the Platform Web SDK pre-hiding snippet to prevent flicker when using Target with asynchronous tag embed codes 
+* Add the pre-hiding snippet to prevent flicker
 * Configure a datastream to enable Target functionality
 * Render visual experience composer activties
 * Render form composer activities
 * Pass XDM data to Target and understand the mapping to Target parameters
 * Pass custom data to Target such as profile and entity parameters
-* Validate a Target implementation with Platform Web SDK
-* Send Target Proposition Requests separate from Adobe Analytics requests and resolve their display events later
+* Validate a Target implementation
+* Separate personalization requests from analytics requests
 
 >[!TIP]
 >
@@ -42,7 +42,7 @@ To complete the lessons in this section, you must first:
   * [Use the Form-Based Experience Composer](https://experienceleague.adobe.com/docs/target-learn/tutorials/experiences/use-the-form-based-experience-composer.html)
   * [Create Experience Targeting Activities](https://experienceleague.adobe.com/docs/target-learn/tutorials/activities/create-experience-targeting-activities.html)
 
-## Add flicker mitigation
+## Add flicker handling
 
 Before starting, determine if an extra flicker handling solution is required depending on how the tag library is loaded. 
 
@@ -53,7 +53,7 @@ Before starting, determine if an extra flicker handling solution is required dep
 
 ### Asynchronous implementation
 
-When a tag library loads asynchronously, the page may finish rendering before Target has performed a content swap. This behavior can lead to what is known as "flicker" where default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, Adobe recommends adding a special pre-hiding snippet immediately before the asynchronous tag embed code.
+When a tag library loads asynchronously, the page may finish rendering before Target has replaced default content with personalized content. This behavior can lead to what is known as "flicker" where default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, Adobe recommends adding a special pre-hiding snippet immediately before the asynchronous tag embed code.
 
 This snippet is already present on the Luma site, but let's take a closer look to understand what this code does:
 
@@ -175,7 +175,7 @@ For the purposes of this tutorial using the Luma site, use the Identity Symbol `
 
 ## Render visual personalization decisions
 
-First, you should understand the terminology used in the Target and tags interfaces. 
+Visual personalization decisions refers to the experiences created in Adobe Target's visual experience composer. First, you should understand the terminology used in the Target and tags interfaces:
 
 * **Activity**: A set of experiences targeted to one or more audiences. For example, a simple A/B test could be an activity with two experiences.
 * **Experience**: A set of actions targeted to one or more locations, or decision scopes.
