@@ -101,7 +101,7 @@ To configure the option in the merge policy:
 1. Select the **[!UICONTROL Merge Policies]** tab.
 1. Select your policy, and toggle the **[!UICONTROL Active-On-Edge Merge Policy]** option within the **[!UICONTROL Configure]** step.
 
-   ![Toggle merge policy](..//assets/web-channel-active-on-edge-merge-policy.png)
+   ![Toggle merge policy](assets/web-channel-active-on-edge-merge-policy.png)
 
 ## Configure the web dataset for content experimentation
 
