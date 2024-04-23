@@ -32,9 +32,8 @@ hide: yes
   + [Set up Adobe Analytics](setup-analytics.md)
   + [Set up Audience Manager](setup-audience-manager.md)
   + [Set up Target](setup-target.md)
-  + Set up Journey Optimizer features {#journey-optimizer}
-    + [Set up Web Channel](journey-optimizer/setup-web-channel.md)
-    + [Set up Decision Management](journey-optimizer/setup-decision-management.md)
+  + [Set up Journey Optimizer Web Channel](setup-web-channel.md)
+  + [Set up Journey Optimizer Decision Management](setup-decision-management.md)
 
 + Consent Management {#consent-management}
   + [Set up consent](setup-consent.md)
