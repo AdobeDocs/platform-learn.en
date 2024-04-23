@@ -13,7 +13,7 @@ Learn how to implement Decision Management using Platform Web SDK. This guide co
 By following this tutorial, Journey Optimizer users are equipped to effectively apply offer decisioning features, enhancing the personalization and relevance of their customer interactions.
 
 
-![Web SDK and Adobe Analytics diagram](../assets/dc-websdk-ajo.png)  
+![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
 
 ## Learning Objectives
 
@@ -65,15 +65,15 @@ To configure Offer Decisioning in the datastream:
 
 1. Select the previously created Luma Web SDK datastream.
    
-   ![Select datastream](../assets/decisioning-datastream-select.png)
+   ![Select datastream](assets/decisioning-datastream-select.png)
 
 1. Select **Edit** within the **Adobe Experience Platform Service**.
    
-   ![Edit service](../assets/decisioning-edit-datastream.png)
+   ![Edit service](assets/decisioning-edit-datastream.png)
 
 1. Check the **Offer Decisioning** box.
 
-   ![ADD SCREENSHOT](../assets/decisioning-check-offer-box.png)
+   ![ADD SCREENSHOT](assets/decisioning-check-offer-box.png)
 
 1. Select **Save**.
 
@@ -101,7 +101,7 @@ Decision Management requires additional SDK steps, depending on your Web SDK imp
   
   1. On the left navigation, select **Tags**.
 
-      ![Select Tags](../assets/decisioning-data-collection-tags.png)
+      ![Select Tags](assets/decisioning-data-collection-tags.png)
 
   1. Select the **Tag Property**.
       
@@ -150,13 +150,13 @@ Before starting to create the offers, you must define several prerequisite compo
 
 The list of placements is accessible in the **Components** menu. Filters are available to help you retrieve placements according to a specific channel or content.
   
-   ![View placements](../assets/decisioning-placements-list.png)
+   ![View placements](assets/decisioning-placements-list.png)
 
 To create the placement, follow these steps:
 
 1. Click **Create placement**.
    
-   ![Create placement](../assets/decisioning-create-placement.png)
+   ![Create placement](assets/decisioning-create-placement.png)
 
 1. Define the placement's properties:
    * **Name**: The name of the placement. Let's call the example placement *'Homepage Banner'*.
@@ -164,13 +164,13 @@ To create the placement, follow these steps:
    * **Content type**: The type of content that the placement is allowed to display: Text, HTML, Image Link, or JSON. You can use *'HTML'* for the offer.
    * **Description**: A description of the placement (optional).
 
-   ![Add details](../assets/decisioning-placement-details.png)
+   ![Add details](assets/decisioning-placement-details.png)
 
 1. Click **Save**.
 1. Once the placement is created, it displays in the placements list.
 1. Select the row containing your new placement and take note of the Placement ID, as this may be necessary for configuration within your Decision Scope.
 
-   ![See Placement ID ](../assets/decisioning-placement-id.png)
+   ![See Placement ID ](assets/decisioning-placement-id.png)
 
 ### Decision Rules for Loyalty Status
 
@@ -182,16 +182,16 @@ To create the decision rules, follow these steps:
 
 1. Navigate to the **Rules** tab, and click **Create rule**.
 
-   ![Create the rule](../assets/decisioning-create-rule.png)
+   ![Create the rule](assets/decisioning-create-rule.png)
 
 1. Let's name the first rule '*Gold Loyalty Status Rule*'. You can use XDM fields to define the rule. The Adobe Experience Platform **Segment Builder** is an intuitive interface that you can use to build the rule conditions.
 
-   ![Define the rule](../assets/decisioning-define-rule.png)
+   ![Define the rule](assets/decisioning-define-rule.png)
 
 1. Click **Save** to confirm the rule condition.
 1. The newly saved '*Gold Loyalty Status Rule*' will display in the **Rules list**. Select it to display its properties.
 
-   ![View created rule](../assets/decisioning-view-rules.png)
+   ![View created rule](assets/decisioning-view-rules.png)
 
 1. Now create the remaining loyalty offer rule conditions for the use case.
 
@@ -206,11 +206,11 @@ To create the Loyalty Rewards collection qualifier, follow these steps:
 
 1. Navigate to the **Collection qualifiers** tab, and click **Create collection qualifier**.
 
-   ![Create collection qualifier](../assets/decisioning-create-collection-qualifier.png)
+   ![Create collection qualifier](assets/decisioning-create-collection-qualifier.png)
 
 1. Let's name the collection qualifier '*Loyalty Rewards*'
 
-   ![Name the collection](../assets/decisioning-name-collection.png)
+   ![Name the collection](assets/decisioning-name-collection.png)
 
 1. The new collection qualifier should now display in the **Collection qualifier** tab
 
@@ -220,7 +220,7 @@ Now it's time to create the Loyalty Rewards offers.
 
 The list of offers is accessible in the **Offers** menu.
 
-   ![View offers menu](../assets/decisioning-offers-menu.png)
+   ![View offers menu](assets/decisioning-offers-menu.png)
 
 
 ### Creating Offers for Different Loyalty Tiers
@@ -233,23 +233,23 @@ To create the first **offer**, follow these steps:
 
 1. Let's name the first offer '*Luma Loyalty Tier – Gold*'. You must specify a start / end date and time for this offer. You should also associate the **collection qualifier** '*Loyalty Rewards*' to the offer, allowing you to better organize within the **Offer Library**. Afterwards, click **Next**.
 
-   ![Add offer details](../assets/decisioning-add-offer-details.png)
+   ![Add offer details](assets/decisioning-add-offer-details.png)
 
 1. Now you must add **representations** to define where the offer displays. Let's choose the **web channel**. Let's also choose the '*Homepage Banner*' **placement** you previously configured. The selected **placement** is HTML-type, so you can add HTML, JSON, or TEXT content directly to the editor to build the offer using the **Custom** radio button.
 
-   ![Add representation details](../assets/decisioning-add-representation-details.png)
+   ![Add representation details](assets/decisioning-add-representation-details.png)
 
 1. Edit the offer content directly with the **Expression Editor**. Remember that you can add HTML, JSON, or TEXT content to this placement. Ensure you select the correct **mode** at the bottom of the editor, depending on your content type. You can also hit **validate** to ensure there are no errors. 
 
-   ![Add offer HTML](../assets/decisioning-add-offer-html.png)
+   ![Add offer HTML](assets/decisioning-add-offer-html.png)
 
 1. Also, you can use the Expression Editor to retrieve attributes stored in Adobe Experience Platform. Let's add a profile's first name to the offer content to better personalize for the loyalty members on a 1:1 level.
 
-   ![Add offer personalization](../assets/decisioning-add-offer-personalization.png)
+   ![Add offer personalization](assets/decisioning-add-offer-personalization.png)
 
 1. Add constraints to only show the offer to profiles that qualify for the '*Gold Loyalty Status Rule*'.
 
-   ![Add rule constraint](../assets/decisioning-add-rule-constraint.png)
+   ![Add rule constraint](assets/decisioning-add-rule-constraint.png)
 
 1. Once you have finished reviewing your offer, click **Finish**. Select **Save and approve**.
 
@@ -394,3 +394,9 @@ To begin validation using the debugger:
 <!--
    ![ADD SCREENSHOT](#)
 -->
+
+[Next: **Implement Consent for Experience Platform Web SDK**](setup-consent.md)
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

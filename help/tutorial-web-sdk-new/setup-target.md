@@ -540,7 +540,7 @@ This confirms that the A4T information that was queued for later transmission wh
 
 Now that you have completed this lesson you should have a working implementation of Adobe Target using the Platform Web SDK.
 
-[Next: **Implement Consent for Experience Platform Web SDK**](setup-consent.md)
+[Next: **Set up Journey Optimizer web channel**](setup-web-channel.md)
 
 >[!NOTE]
 >
