@@ -47,7 +47,7 @@ There are multiple ways to map data from your data layer to XDM using the tags f
 
 ### Implement XDM in the data layer
 
-This approach involves using the fully defined XDM object as the structure for your data layer. Then you map the entire data layer to an XDM object data element in tags. If your implementation is not using a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/tracking-events.html?lang=en#sending-xdm-data). If you do you use tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
+This approach involves using the fully defined XDM object as the structure for your data layer. Then you map the entire data layer to an XDM object data element in tags. If your implementation is not using a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). If you do you use tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
 
 Below is an example of how the data layer would look like using the Adobe Client Data Layer format:
 
@@ -122,16 +122,16 @@ This approach involves mapping individual data layer variables OR data layer obj
 >
 > Google Data Layer
 > 
-> If your organization already uses Google Analytics and has the traditional Google dataLayer object on your website, you can use the [Google Data Layer extension](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/client/google-data-layer/overview.html?lang=en) in tags. This allows you to deploy Adobe technology quicker without having to request support from your IT team. Mapping the Google data layer to XDM would follow the same steps as above.
+> If your organization already uses Google Analytics and has the traditional Google dataLayer object on your website, you can use the [Google Data Layer extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/google-data-layer/overview) in tags. This allows you to deploy Adobe technology quicker without having to request support from your IT team. Mapping the Google data layer to XDM would follow the same steps as above.
 
 ### Map to XDM in the datastream
 
-This approach uses functionality built-into the datastream configuration called [Data Prep for Data Collection](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html) and skips mapping data layer variables to XDM in tags. 
+This approach uses functionality built-into the datastream configuration called [Data Prep for Data Collection](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep) and skips mapping data layer variables to XDM in tags. 
 
 #### Pros
 
 * Flexible as you can map individual variables to XDM
-* Ability to [compute new values](https://experienceleague.adobe.com/docs/experience-platform/data-prep/functions.html) or [transform data types](https://experienceleague.adobe.com/docs/experience-platform/data-prep/data-handling.html) from a data layer before it goes to XDM 
+* Ability to [compute new values](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) or [transform data types](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) from a data layer before it goes to XDM 
 * Leverage a [Mapping UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) to map fields in your source data to XDM with a point-and-click UI
 
 #### Cons

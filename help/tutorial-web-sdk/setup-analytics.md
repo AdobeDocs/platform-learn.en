@@ -6,9 +6,9 @@ exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
 ---
 # Set up Adobe Analytics with Platform Web SDK
 
-Learn how to set up Adobe Analytics using [Experience Platform Web SDK](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html), create tag rules to send data to Adobe Analytics, and validate that Analytics is capturing data as expected.
+Learn how to set up Adobe Analytics using [Experience Platform Web SDK](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview), create tag rules to send data to Adobe Analytics, and validate that Analytics is capturing data as expected.
 
-[Adobe Analytics](https://experienceleague.adobe.com/docs/analytics.html) is an industry-leading application that empowers you to understand your customers as people and steer your business with customer intelligence.
+[Adobe Analytics](https://experienceleague.adobe.com/en/docs/analytics) is an industry-leading application that empowers you to understand your customers as people and steer your business with customer intelligence.
 
 ![Web SDK to Adobe Analytics diagram](assets/dc-websdk-aa.png)  
 
@@ -28,7 +28,7 @@ To complete this lesson, you must first:
 
 * Be familiar with and have access to Adobe Analytics.
 
-* Have at least one test/dev report suite ID. If you don't have a test/dev report suite that you can use for this tutorial, [please create one](https://experienceleague.adobe.com/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite.html).
+* Have at least one test/dev report suite ID. If you don't have a test/dev report suite that you can use for this tutorial, [please create one](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
 
 * Complete the earlier lessons in the Initial Configuration and Tags Configuration sections of this tutorial.
 
@@ -75,9 +75,9 @@ There are several approaches, which can be used simultaneously:
 1. Automatically mapped variables using reserved XDM fields
 1. Manually mapped variables using Analytics Processing Rules
 
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html?lang=en). Any variable that is not auto-mapped must be manually mapped. 
+To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). Any variable that is not auto-mapped must be manually mapped. 
 
- 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules.html) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
+ 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
 
 
  1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
@@ -113,7 +113,7 @@ The individual sections of the Analytics product string are set through differen
 >The value set to `productListItems[].name` is mapped to the product name only if `productListItems[].SKU` does not exist. Otherwise, it is unmapped and available in context data. 
 >Do not set an empty string or null to  `productListItems[].SKU`. This has the undesired effect of mapping to the product name in the s.products variable.
 
-For the most up-to-date list of mappings, please see [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html). 
+For the most up-to-date list of mappings, please see [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). 
 
 
 ### Map to Analytics variables with processing rules

@@ -32,7 +32,7 @@ To complete this lesson, you must first:
 
 ## Create a dataset
 
-All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A [dataset](https://experienceleague.adobe.com/docs/experience-platform/catalog/datasets/overview.html?lang=en) is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. 
+All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. 
 
 Let's set up a dataset for your Luma web event data:
 
@@ -134,7 +134,7 @@ To confirm that the data has landed in Platform's data lake, a quick option is t
 
 >[!INFO]
 >
->Adobe Experience Platform's query service is a more robust method to validate data in the lake, but is beyond the scope of this tutorial. For more details, see [Explore data](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html) in the Platform tutorials section.
+>Adobe Experience Platform's query service is a more robust method to validate data in the lake, but is beyond the scope of this tutorial. For more details, see [Explore data](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in the Platform tutorials section.
 
 
 ## Enable the dataset and schema for Real-Time Customer Profile

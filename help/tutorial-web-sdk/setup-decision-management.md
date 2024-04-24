@@ -51,7 +51,7 @@ Take note of the following limitation:
 
 ## Grant access to Decision Management
 
-To grant access to the Decision Management functionality, you must create a **Product profile** and assign the corresponding permissions to your users. [Learn more on managing Journey Optimizer users and permissions in this section](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+To grant access to the Decision Management functionality, you must create a **Product profile** and assign the corresponding permissions to your users. [Learn more on managing Journey Optimizer users and permissions in this section](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/privacy/high-low-permissions#decisions-permissions).
 
 ## Configure the datastream
 
@@ -334,7 +334,7 @@ To begin the testing, select the **Simulations** tab from the **Offers** menu.
 
 ### Testing Loyalty Offers
 
-1. Select a test profile to use for the simulation. Click **Manage profile**. [To create or designate  a new test profile for offer testing, follow this guide](https://experienceleague.adobe.com/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles.html?lang=en#create-test-profiles-csv).
+1. Select a test profile to use for the simulation. Click **Manage profile**. [To create or designate  a new test profile for offer testing, follow this guide](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -366,7 +366,7 @@ The **Adobe Experience Platform Debugger** extension, available for both Chrome 
 
 You can use the debugger on the Luma site to validate the decisioning logic in production. This is a good practice once the Loyalty Rewards use case is up and running, to ensure everything is configured correctly.
 
-[Learn how to configure the debugger in your browser using the guide here](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[Learn how to configure the debugger in your browser using the guide here](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 To begin validation using the debugger:
 

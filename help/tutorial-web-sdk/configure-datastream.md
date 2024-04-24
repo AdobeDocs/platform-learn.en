@@ -8,7 +8,7 @@ exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
 
 Learn how to enable a datastream and configure Experience Cloud applications.
 
-Datastreams tell Adobe Experience Platform Edge Network where to send data collected by Platform Web SDK. In the datastreams configuration, you enable your Experience Cloud applications, your Experience Platform account, and event forwarding. See the [Fundamentals of Configuring a Datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/datastreams.html?lang=en) for more detailed information.
+Datastreams tell Adobe Experience Platform Edge Network where to send data collected by Platform Web SDK. In the datastreams configuration, you enable your Experience Cloud applications, your Experience Platform account, and event forwarding. See the [Fundamentals of Configuring a Datastream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) for more detailed information.
 
 
 ![Web SDK, datastreams, and Edge Network diagram](assets/dc-websdk-datastreams.png)
@@ -66,7 +66,7 @@ Datastream configuration override is a two-step process:
 
 In the [Set up Adobe Analytics](setup-analytics.md) lesson you override the report suite for a page using the Platform Web SDK Send Event Action.
 
-See the [datastream configuration overrides documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overrides.html?lang=en) for detailed instructions on how to override datastream configurations.
+See the [datastream configuration overrides documentation](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overrides) for detailed instructions on how to override datastream configurations.
 
 You are now ready to install the Platform Web SDK extension in your tag property!
 

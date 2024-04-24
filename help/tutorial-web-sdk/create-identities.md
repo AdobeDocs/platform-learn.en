@@ -31,7 +31,7 @@ You have an understanding of what a data layer is, gotten familiar with the [Lum
 
 ## Experience Cloud ID
 
-The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experience-platform/identity/ecid.html?lang=en) is a shared identity namespace used across Adobe Experience Platform and Adobe Experience Cloud applications. ECID provides the foundation for customer identity and is the default identity for digital properties. This makes ECID the ideal identifier for tracking unauthenticated user behavior because it is always present
+The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/ecid) is a shared identity namespace used across Adobe Experience Platform and Adobe Experience Cloud applications. ECID provides the foundation for customer identity and is the default identity for digital properties. This makes ECID the ideal identifier for tracking unauthenticated user behavior because it is always present
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -40,7 +40,7 @@ The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/docs/experie
 >![View ECID](assets/validate-dev-console-ecid.png)
 -->
 
-Read more about how [ECIDs are tracked using Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en).
+Read more about how [ECIDs are tracked using Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
 ECIDs are set using a combination of first-party cookies and Platform Edge Network. By default, the first-party cookies are set client-side by the Web SDK. To account for browser restrictions on cookie lifespans, you can opt to set your own first-party cookies server-side instead. These are referred to as first-party device IDs (FPIDs).
 
@@ -54,7 +54,7 @@ FPIDs are first-party cookies _you set using your own web servers_ which Adobe t
 
 Once an FPID cookie is set, its value can be fetched and sent to Adobe as event data is collected. Collected FPIDs are used as seeds to generate ECIDs on Platform Edge Network, which continue to be the default identifiers in Adobe Experience Cloud applications. 
 
-While FPIDs are not used in this tutorial, you are encouraged to use FPIDs in your own Web SDK implementation. Read more about [First-party device IDs in the Platform Web SDK](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/first-party-device-ids.html?lang=en)
+While FPIDs are not used in this tutorial, you are encouraged to use FPIDs in your own Web SDK implementation. Read more about [First-party device IDs in the Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/first-party-device-ids)
 
 >[!CAUTION]
 >
@@ -64,7 +64,7 @@ While FPIDs are not used in this tutorial, you are encouraged to use FPIDs in yo
 
 As noted above, all visitors to your digital properties are assigned an ECID by Adobe when using Platform Web SDK. This makes ECID the default identity for tracking unauthenticated digital behavior. 
 
-You can also send an authenticated user ID so that Platform can create [Identity Graphs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs.html?lang=en) and Target can set its [Third Party Id](https://experienceleague.adobe.com/docs/target/using/audiences/visitor-profiles/3rd-party-id.html). This is done by using the [!UICONTROL Identity Map] data element type.
+You can also send an authenticated user ID so that Platform can create [Identity Graphs](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) and Target can set its [Third Party Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). This is done by using the [!UICONTROL Identity Map] data element type.
 
 To create the [!UICONTROL Identity Map] data element:
 
