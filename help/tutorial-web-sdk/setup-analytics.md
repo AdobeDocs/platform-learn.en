@@ -2,7 +2,7 @@
 title: Set up Adobe Analytics using Experience Platform Web SDK
 description: Learn how to set up Adobe Analytics using Experience Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection, Analytics
-exl-id: e08d222c-a15f-4462-b033-99937d741d5e
+exl-id: de86b936-0a47-4ade-8ca7-834c6ed0f041
 ---
 # Set up Adobe Analytics with Platform Web SDK
 

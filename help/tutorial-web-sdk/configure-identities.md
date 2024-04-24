@@ -2,7 +2,7 @@
 title: Configure an identity namespace
 description: Learn how to configure identity namespaces to use with Adobe Experience Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Identities
-exl-id: 3b419639-e595-4652-a051-5ddca422791f
+exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
 ---
 # Configure an identity namespace
 
@@ -11,8 +11,6 @@ Learn how to configure identity namespaces to use with Adobe Experience Platform
 The [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) sets a common visitor ID (the ECID) across SDK-based Adobe applications in order to power Experience Cloud capabilities such as audience-sharing between applications. You can also send your own customer IDs to the Service to enable cross-device targeting and integrations with other systems, such as your Customer Relationship Management (CRM) system.
 
 The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html) (yes, there are two!) uses the ECIDs and customer IDs to generate identity graphs, allowing you to merge attributes and behaviors into Real-Time Customer Profiles.
-
-
 
 >[!NOTE]
 >

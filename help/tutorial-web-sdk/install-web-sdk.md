@@ -2,7 +2,7 @@
 title: Install and configure the Adobe Experience Platform Web SDK tag extension
 description: Learn how to install and configure the Platform Web SDK tag extension in the Data Collection interface. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK
-exl-id: 7dedf9ea-eeda-4738-9633-b5a5a5f5f9ae
+exl-id: f30a44bb-99d7-476e-873a-b7802a0fe6aa
 ---
 # Install Adobe Experience Platform Web SDK tag extension
 

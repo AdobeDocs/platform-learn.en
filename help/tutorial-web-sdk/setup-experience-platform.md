@@ -1,7 +1,7 @@
 ---
 title: Stream data to Adobe Experience Platform with Web SDK
 description: Learn how to stream web data to Adobe Experience Platform with Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
-exl-id: ab30e9a6-4010-43ea-acc3-b9c75e07f766
+exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
 ---
 # Stream data to Experience Platform with Web SDK
  
