@@ -11,7 +11,7 @@ index: no
 hide: yes
 ---
 
-# Implement Adobe Experience Cloud with Web SDK tutorial. {#implement-web-sdk-new}
+# Implement Adobe Experience Cloud with Web SDK tutorial. {#implement-web-sdk}
 
 + [Tutorial Overview](overview.md)
 + Initial Configuration {#initial-configuration}
