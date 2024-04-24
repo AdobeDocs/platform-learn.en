@@ -2,19 +2,15 @@
 title: Set up Audience Manager with Platform Web SDK
 description: Learn how to set up Adobe Audience Manager using the Platform Web SDK and validate the implementation using a cookie destination. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection, Audience Manager
-exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
+exl-id: 1d26c747-0d5c-4621-97ba-40a600b7eea4
 ---
 # Set up Audience Manager with Platform Web SDK
-
-
->[!CAUTION]
->
->We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to set up Adobe Audience Manager using the Platform Web SDK and validate the implementation using a cookie destination. 
 
 [Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) is the Adobe Experience Cloud solution that provides everything required to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.
 
+![Web SDK and Adobe Audience Manager diagram](assets/dc-websdk-aam.png)
 
 ## Learning objectives
 
@@ -37,9 +33,9 @@ The Audience Manager implementation using the Platform Web SDK differs from the 
 
 1. Go to [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
-1. Select the previously created `Luma Web SDK` datastream
+1. Select the previously created `Luma Web SDK: Development Environment` datastream
 
-    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk-development.png)
 
 1. Select **[!UICONTROL Add Service]**
      ![Add a service to the datastream](assets/aam-datastream-addService.png)
@@ -59,7 +55,7 @@ Next, create a [Data Source](https://experienceleague.adobe.com/docs/audience-ma
 
    ![Adobe Experience Platform Audience Manager Data Sources](assets/data-sources-list.jpg)
 
-1. Give the Data Source a friendly name and description. For initial setup, you can name this`Platform Web SDK tutorial`. 
+1. Give the Data Source a friendly name and description. For initial setup, you can name this `Platform Web SDK tutorial`. 
 1. Set **[!UICONTROL ID Type]** to **[!UICONTROL Cookie]**
 1. In the **[!UICONTROL Data Export Controls]** section, select **[!UICONTROL No Restriction]**
 
@@ -85,7 +81,7 @@ After the Data Source is saved, set up a [trait](https://experienceleague.adobe.
 1. Select the **[!UICONTROL Data Source]** you created in the previous section.
 1. **[!UICONTROL Select a Folder]** in which to save your trait in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
 1. Expand the **[!UICONTROL Trait Expression]** caret and select **[!UICONTROL Expression Builder]** You must provide a key value pair that signifies a homepage visit.
-1. Open the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html) (mapped to your tag property) and the **Platform Web SDK Debugger** and refresh the page.
+1. Open the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html) (mapped to your tag property) and the **Adobe Experience Platform Debugger** and refresh the page.
 1. Look at the Network Requests and the event details for the Platform Web SDK to find the key and name value for the homepage.
    ![Adobe Experience Platform Audience Manager XDM Data](assets/xdm-keyvalue.jpg)
 1. Return to the Expression Builder in the Audience Manager UI and enter the key as **`web.webPageDetails.name`** and the value of **`content:luma:us:en`**. This step ensures that you fire a trait whenever you load the homepage. 
@@ -100,7 +96,8 @@ The next step is to create a **segment**, and assign your newly defined trait to
 1. Select **[!UICONTROL Add New]** in the top left of the page to open the segment builder
 1. Give your segment a friendly name and description, such as `Platform Web SDK - Homepage visitors`
 1. **[!UICONTROL Select a Folder]** where your segment will be saved in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
-1. Add an integration code, which in this case is a random set of numbers. 1. In the **[!UICONTROL Data Source]** section, select **[!UICONTROL Audience Manager]** and the data source you created earlier
+1. Add an integration code, which in this case is a random set of numbers. 
+1. In the **[!UICONTROL Data Source]** section, select **[!UICONTROL Audience Manager]** and the data source you created earlier
 1. Expand the **[!UICONTROL Traits]** section and search for the trait you created
 1. Select **[!UICONTROL Add Trait]**. 
 1. Select **[!UICONTROL Save]** at the bottom of the page
@@ -181,4 +178,4 @@ Now that you have completed this lesson, you should be able to see how the Platf
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

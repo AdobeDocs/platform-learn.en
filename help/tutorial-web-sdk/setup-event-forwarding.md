@@ -2,18 +2,16 @@
 title: Set up an event-forwarding property
 description: Learn how to use event-forwarding property using Experience Platform Web SDK data. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Tags,Event Forwarding
-exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
+exl-id: 17effd2a-5188-4178-b667-78631f1bdb14
 ---
 # Set up an event-forwarding property
-
-
->[!CAUTION]
->
->We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Learn how to use event-forwarding property using Experience Platform Web SDK data.
 
 Event forwarding is a new type of property available in Data Collection. Event forwarding gives you the ability to send data to third-party, non-Adobe vendors straight from the Adobe Experience Platform Edge Network instead of the traditional client-side browser. Find out more about the advantages of event forwarding in the [Event Forwarding overview](https://experienceleague.adobe.com/docs/experience-platform/tags/event-forwarding/overview.html?lang=en).
+
+
+![Web SDK and event forwarding diagram](assets/dc-websdk-eventforwarding.png)
 
 To use event forwarding in Adobe Experience Platform, data must be sent to Adobe Experience Platform Edge Network first using one or more of the following three options:
 
@@ -50,7 +48,6 @@ At this end of this lesson, you will be able to:
 
   * Initial Configuration 
 
-    * [Configure permissions](configure-permissions.md)
     * [Configure an XDM schema](configure-schemas.md)
     * [Configure an identity namespace](configure-identities.md)
     * [Configure a datastream](configure-datastream.md)
@@ -59,7 +56,8 @@ At this end of this lesson, you will be able to:
 
     * [Install Web SDK extension](install-web-sdk.md)
     * [Create data elements](create-data-elements.md)
-    * [Create a tag rule](create-tag-rule.md)
+    * [Create identities](create-identities.md)
+    * [Create tag rules](create-tag-rule.md)
     * [Validate with Adobe Experience Platform debugger](validate-with-debugger.md)
 
 
@@ -85,9 +83,9 @@ To configure Target in the datastream:
 
 1. Go to [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
-1. Select the previously created `Luma Web SDK` datastream
+1. Select the previously created `Luma Web SDK: Development Environment` datastream
 
-    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk.png)
+    ![Select the Luma Web SDK datastream](assets/datastream-luma-web-sdk-development.png)
 
 1. Select **[!UICONTROL Add Service]**
      ![Add a service to the datastream](assets/event-forwarding-datastream-addService.png)
@@ -320,4 +318,4 @@ Congratulations! You have configured event forwarding!
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,14 +2,9 @@
 title: Conclusion and next steps
 description: What to do next after completing the tutorial
 recommendations: display,noCatalog
-exl-id: bb0ef04d-fd01-4c24-8670-a84a9e33f1b6
+exl-id: 74bb8bfc-7a28-46df-8afb-8a19522da6be
 ---
 # Conclusion and next steps
-
-
->[!CAUTION]
->
->We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
 
 Congratulations! You have completed the "Implement Adobe Experience Cloud with Web SDK" tutorial!
 
@@ -42,4 +37,4 @@ And there is always more to learn! Here are some suggestions of other content to
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
