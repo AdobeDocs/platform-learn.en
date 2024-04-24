@@ -6,16 +6,11 @@ exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
 ---
 # Set up consent with Platform Web SDK
 
-
->[!CAUTION]
->
->We expect to publish major changes to this tutorial on Tuesday April 23, 2024. After that point many exercises will change and you may need to restart the tutorial from the beginning in order to complete all of the lessons.
-
 Learn how to configure the privacy settings of the Experience Platform Web SDK tag extension. Set consent based on the visitor's interaction with a banner from a Consent Management Platform (CMP). 
 
 >[!NOTE]
 > 
->For demonstration purposes, this tutorial uses [Klaro](https://heyklaro.com/){target="_blank"} as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.
+>For demonstration purposes, this tutorial uses [Klaro](https://heyklaro.com/) as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.
 
 
 ## Learning objectives
@@ -63,7 +58,7 @@ Before you jump into the tag configurations, learn more about the consent manage
 >The best practice to implement a Consent Management Platform is typically to load the CMP _before_ loading your tag manager. To facilitate this tutorial, you will load the CMP _with_ the tag manager. This lesson is designed to show you how to use the consent features in Platform Web SDK  and should not be used as a guide to correctly configure Klaro or any other CMP.
 
 
-Now, once you are done with the Klaro's configurations, create a tag rule with the following configurations:
+Now, once you are done with the Klaro's configurations, Create tag rules with the following configurations:
 
 * [!UICONTROL Name]: `all pages - library load - Klaro`
 * [!UICONTROL Event]: [!UICONTROL Library Loaded (Page Top)] with [!UICONTROL Advanced Options] > [!UICONTROL Order] set to 1 
@@ -223,4 +218,4 @@ For more information on the [!UICONTROL Set consent] action, see [Set consent](h
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
