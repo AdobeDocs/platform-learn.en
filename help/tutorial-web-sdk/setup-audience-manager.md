@@ -8,7 +8,7 @@ exl-id: 45db48e9-73cf-4a9c-88f4-b5872a8224d3
 
 Learn how to set up Adobe Audience Manager using the Platform Web SDK and validate the implementation using a cookie destination. 
 
-[Adobe Audience Manager](https://experienceleague.adobe.com/docs/audience-manager.html) is the Adobe Experience Cloud solution that provides everything required to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.
+[Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager) is the Adobe Experience Cloud solution that provides everything required to collect commercially relevant information about site visitors, create marketable segments, and serve targeted advertising and content to the right audience.
 
 ![Web SDK and Adobe Audience Manager diagram](assets/dc-websdk-aam.png)
 
@@ -25,11 +25,11 @@ At the end of this lesson, you will be able to:
 To complete this lesson, you must first:
 
 * Complete the earlier lessons in the Initial Configuration and Tags Configuration sections of this tutorial.
-* Have access to Adobe Audience Manager and the appropriate permissions to create, read, and write traits, segments, and destinations. For more information, please review [Audience Manager's Role-Based Access Control](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* Have access to Adobe Audience Manager and the appropriate permissions to create, read, and write traits, segments, and destinations. For more information, please review [Audience Manager's Role-Based Access Control](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 ## Configure the datastream
 
-The Audience Manager implementation using the Platform Web SDK differs from the implementation using [server-side forwarding (SSF)](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/server-side-forwarding/ssf.html). Server-side forwarding passes Adobe Analytics request data to Audience Manager. A Platform Web SDK implementation passes XDM data sent to Platform Edge Network to Audience Manager. Audience Manager is enabled in the datastream:
+The Audience Manager implementation using the Platform Web SDK differs from the implementation using [server-side forwarding (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). Server-side forwarding passes Adobe Analytics request data to Audience Manager. A Platform Web SDK implementation passes XDM data sent to Platform Edge Network to Audience Manager. Audience Manager is enabled in the datastream:
 
 1. Go to [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
@@ -46,7 +46,7 @@ The Audience Manager implementation using the Platform Web SDK differs from the 
 
 ## Create a data source
 
-Next, create a [Data Source](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings.html?lang=en), a fundamental tool for organizing data within Audience Manager:
+Next, create a [Data Source](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/data-sources/datasources-list-and-settings), a fundamental tool for organizing data within Audience Manager:
 
 1. Go to the [Audience Manager](https://experience.adobe.com/#/audience-manager/) interface
 1. Select **[!UICONTROL Audience Data]** from the top navigation
@@ -66,7 +66,7 @@ Next, create a [Data Source](https://experienceleague.adobe.com/docs/audience-ma
 
 ## Create a trait
 
-After the Data Source is saved, set up a [trait](https://experienceleague.adobe.com/docs/audience-manager/user-guide/features/traits/traits-overview.html?lang=en). Traits are a combination of one or more signals in Audience Manager. Create a trait for homepage visitors.
+After the Data Source is saved, set up a [trait](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/features/traits/traits-overview). Traits are a combination of one or more signals in Audience Manager. Create a trait for homepage visitors.
 
 >[!NOTE]
 >

@@ -47,7 +47,7 @@ This is the goal of Adobe's [Experience Data Model](https://business.adobe.com/p
 >
 > For demonstration purposes, the exercises in this lesson build an example schema to capture content viewed and products purchased by customers in the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html). While you can use these steps to create a different schema for your own purposes, it is recommended that you first follow along with creating the example schema to learn the capabilities of the schema editor.
 
-To learn more about XDM schemas, take the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) or see the [XDM System overview](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html?lang=en).
+To learn more about XDM schemas, take the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm) or see the [XDM System overview](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/home).
 
 ## Learning objectives
 
@@ -63,7 +63,7 @@ All necessary provisioning and user permissions for Data Collection and Adobe Ex
 
 ## Create an XDM schema
 
-XDM schemas are the standard way to describe data in Experience Platform, allowing all data that conforms to the schemas to be reused across an organization without conflicts, or even shared between multiple organizations. To learn more, see the [basics of Schema composition](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/composition.html?lang=en). 
+XDM schemas are the standard way to describe data in Experience Platform, allowing all data that conforms to the schemas to be reused across an organization without conflicts, or even shared between multiple organizations. To learn more, see the [basics of Schema composition](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/composition). 
 
 In this exercise, you will create an XDM schema using the recommended baseline field groups for capturing web event data on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}:
 
@@ -96,9 +96,9 @@ In this exercise, you will create an XDM schema using the recommended baseline f
 
 ## Add field groups
 
-As noted earlier, XDM is the core framework that standardizes customer experience data by providing common structures and definitions for use in downstream Adobe Experience Platform services. By adhering to XDM standards, _all customer experience data_ can be incorporated into a common representation. This approach allows you to gain valuable insights from customer actions, define customer audiences through segments, and express customer attributes for personalization purposes using data from multiple sources. See [Best practices for data modeling](https://experienceleague.adobe.com/docs/experience-platform/xdm/schema/best-practices.html?lang=en) for more information.
+As noted earlier, XDM is the core framework that standardizes customer experience data by providing common structures and definitions for use in downstream Adobe Experience Platform services. By adhering to XDM standards, _all customer experience data_ can be incorporated into a common representation. This approach allows you to gain valuable insights from customer actions, define customer audiences through segments, and express customer attributes for personalization purposes using data from multiple sources. See [Best practices for data modeling](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/schema/best-practices) for more information.
 
-When possible, it is recommended to use existing field groups and adhere to a product-agnostic model and naming conventions. For any data specific to your organization that does not fit into the pre-defined field groups above, you can create a custom field group. See [Creating a schema using the Schema Editor](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/create-schema-ui.html?lang=en#create) for more detailed steps on custom schemas.
+When possible, it is recommended to use existing field groups and adhere to a product-agnostic model and naming conventions. For any data specific to your organization that does not fit into the pre-defined field groups above, you can create a custom field group. See [Creating a schema using the Schema Editor](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/create-schema-ui#create) for more detailed steps on custom schemas.
 
 >[!TIP]
 > 
@@ -123,7 +123,7 @@ With both field groups, notice that you have access to the most commonly used ke
 
 ![Schema Field Groups](assets/schema-consumer-experience-event.png)
 
-This lesson is just a starting point. When building your own web events schema, you must explore and document your business requirements. This process is similar to creating a [Business Requirements Document](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document.html) and [Solution Design Reference](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr.html) for an Adobe Analytics implementation, but should include requirements for _all downstream data recipients_ such as Platform, Target, and event forwarding destinations.
+This lesson is just a starting point. When building your own web events schema, you must explore and document your business requirements. This process is similar to creating a [Business Requirements Document](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-a-business-requirements-document) and [Solution Design Reference](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/implementation/implementation-basics/creating-and-maintaining-an-sdr) for an Adobe Analytics implementation, but should include requirements for _all downstream data recipients_ such as Platform, Target, and event forwarding destinations.
 
 
 ### The identityMap object
@@ -137,7 +137,7 @@ It is a must-have object for any web-related data collection, as it houses the E
 
 >[!IMPORTANT]
 >
-> It is possible to enable **[!UICONTROL Profile]** for a schema before saving your schema. **Do not** enable it at this point. Once a schema is enabled for Profile, it cannot be disabled or deleted. Fields cannot be removed from schemas at this point either, although it is possible to [Deprecate Fields in the UI](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/field-deprecation-ui.html?lang=en#deprecate). These implications are important to keep in mind later on when you are working with your own data in your Production environment. 
+> It is possible to enable **[!UICONTROL Profile]** for a schema before saving your schema. **Do not** enable it at this point. Once a schema is enabled for Profile, it cannot be disabled or deleted. Fields cannot be removed from schemas at this point either, although it is possible to [Deprecate Fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). These implications are important to keep in mind later on when you are working with your own data in your Production environment. 
 >
 >
 >This setting is discussed more during the [Setup Experience Platform](setup-experience-platform.md) lesson.

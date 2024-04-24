@@ -243,7 +243,7 @@ To create the content experiment:
 
 1. Also optionally, choose to **[!UICONTROL Distribute evenly]**. Check this option to ensure the treatment splits are always evenly split.
 
-[Learn more about content experiments in Adobe Journey Optimizer web channel](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[Learn more about content experiments in Adobe Journey Optimizer web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
 
 ### Edit Content using the Visual Helper
 
@@ -344,7 +344,7 @@ The Adobe Experience Platform Debugger extension, available for both Chrome and 
 
 You can use the debugger on the Luma site to validate the web channel experience in production. This is a best practice once the Loyalty Rewards use case is up and running, to ensure everything is configured correctly.
 
-[Learn how to configure the debugger in your browser using the guide here](https://experienceleague.adobe.com/docs/platform-learn/data-collection/debugger/overview.html?lang=en).
+[Learn how to configure the debugger in your browser using the guide here](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
 To begin validation using the debugger:
 

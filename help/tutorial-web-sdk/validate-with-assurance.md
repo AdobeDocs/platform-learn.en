@@ -6,7 +6,7 @@ exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
 ---
 # Validate Web SDK implementations with Experience Platform Assurance
 
-Adobe Experience Platform Assurance is a product from Adobe Experience Cloud to help you inspect, proof, simulate, and validate how you collect data or serve experiences. Read more about [Adobe Assurance](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html?lang=en). 
+Adobe Experience Platform Assurance is a product from Adobe Experience Cloud to help you inspect, proof, simulate, and validate how you collect data or serve experiences. Read more about [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). 
 
 
 ## Learning objectives

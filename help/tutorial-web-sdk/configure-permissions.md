@@ -9,7 +9,7 @@ Learn how to request access to Experience Platform Web SDK and configure the per
 
 ## Data Collection
 
-* Have permission to **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, **[!UICONTROL Manage Environments]**, and **[!UICONTROL Manage Properties]**. For more information concerning tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+* Have permission to **[!UICONTROL Develop]**, **[!UICONTROL Edit]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, **[!UICONTROL Manage Environments]**, and **[!UICONTROL Manage Properties]**. For more information concerning tags permissions, see [the documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 * If you will be completing the optional event forwarding lesson, have a product license which includes edge forwarding and permission item **[!UICONTROL Platforms]** > **[!UICONTROL Edge]**
 
 ## Experience Platform
@@ -25,11 +25,11 @@ These features should be available to all Experience Cloud customers, even if yo
   * All permission items under **[!UICONTROL Data Management]**, and **[!UICONTROL Profile Management]**:
 
 
-For more information on Platform access control, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).  
+For more information on Platform access control, see [the documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).  
 
 ## Adobe Analytics
 
-For the optional Adobe Analytics lesson, you must have [admin access to Report Suite Settings, Processing Rules, and Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+For the optional Adobe Analytics lesson, you must have [admin access to Report Suite Settings, Processing Rules, and Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 ## Adobe Target
 
@@ -37,7 +37,7 @@ For the optional Adobe Target lesson, you must have [Editor or Approver](https:/
 
 ## Adobe Audience Manager
 
-* For the optional Audience Manager lesson, you must have access to create, read, and write traits, segments, and destinations. For more information, refer to the tutorial on [Audience Manager's Role-Based Access Control](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* For the optional Audience Manager lesson, you must have access to create, read, and write traits, segments, and destinations. For more information, refer to the tutorial on [Audience Manager's Role-Based Access Control](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 Now you are ready to start the initial configuration steps.
 

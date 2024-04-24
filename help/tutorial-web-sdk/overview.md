@@ -8,7 +8,7 @@ exl-id: cf0ff74b-e81e-4f6d-ab7d-6c70e9b52d78
 
 Learn how to implement Experience Cloud applications using Adobe Experience Platform Web SDK.
 
-Experience Platform Web SDK is a client-side JavaScript library that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See [Adobe Experience Platform Web SDK Overview](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html) for more detailed information.
+Experience Platform Web SDK is a client-side JavaScript library that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See [Adobe Experience Platform Web SDK Overview](https://experienceleague.adobe.com/en/docs/experience-platform/edge/home) for more detailed information.
 
 ![Experience Platform Web SDK architecture](assets/dc-websdk.png)
 
@@ -42,7 +42,7 @@ In these lessons, it is assumed that you have an Adobe account and the required 
   * **[!UICONTROL Property Rights]**&mdash;permission to **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Edit Property]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Publish]**, 
   * **[!UICONTROL Company Rights]**&mdash;permission to **[!UICONTROL Manage Properties]**
   
-    For more information concerning tags permissions, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html).
+    For more information concerning tags permissions, see [the documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * For **Experience Platform**, you must have:
 
@@ -56,13 +56,13 @@ In these lessons, it is assumed that you have an Adobe account and the required 
 
     The required features should be available to all Experience Cloud customers, even if you are not a customer of a Platform-based application like Real-Time CDP.
 
-    For more information on Platform access control, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).  
+    For more information on Platform access control, see [the documentation](https://experienceleague.adobe.com/en/docs/experience-platform/access-control/home).  
 
-* For the optional **Adobe Analytics** lesson, you must have [admin access to Report Suite Settings, Processing Rules, and Analysis Workspace](https://experienceleague.adobe.com/docs/analytics/admin/admin-console/home.html)
+* For the optional **Adobe Analytics** lesson, you must have [admin access to Report Suite Settings, Processing Rules, and Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
 * For the optional **Adobe Target** lesson, you must have [Editor or Approver](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) access.
 
-* For the optional **Audience Manager** lesson, you must have access to create, read, and write traits, segments, and destinations. For more information, refer to the tutorial on [Audience Manager's Role-Based Access Control](https://experienceleague.adobe.com/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control.html?lang=en).
+* For the optional **Audience Manager** lesson, you must have access to create, read, and write traits, segments, and destinations. For more information, refer to the tutorial on [Audience Manager's Role-Based Access Control](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
 
 >[!NOTE]

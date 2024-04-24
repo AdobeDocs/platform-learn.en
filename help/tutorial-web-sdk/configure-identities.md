@@ -8,9 +8,9 @@ exl-id: 7719dff4-6b30-4fa0-acae-7491c3208f15
 
 Learn how to configure identity namespaces to use with Adobe Experience Platform Web SDK. 
 
-The [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/docs/id-service/using/home.html) sets a common visitor ID (the ECID) across SDK-based Adobe applications in order to power Experience Cloud capabilities such as audience-sharing between applications. You can also send your own customer IDs to the Service to enable cross-device targeting and integrations with other systems, such as your Customer Relationship Management (CRM) system.
+The [Adobe Experience Cloud Identity Service](https://experienceleague.adobe.com/en/docs/id-service/using/home) sets a common visitor ID (the ECID) across SDK-based Adobe applications in order to power Experience Cloud capabilities such as audience-sharing between applications. You can also send your own customer IDs to the Service to enable cross-device targeting and integrations with other systems, such as your Customer Relationship Management (CRM) system.
 
-The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/docs/experience-platform/identity/home.html) (yes, there are two!) uses the ECIDs and customer IDs to generate identity graphs, allowing you to merge attributes and behaviors into Real-Time Customer Profiles.
+The [Adobe Experience Platform Identity Service](https://experienceleague.adobe.com/en/docs/experience-platform/identity/home) (yes, there are two!) uses the ECIDs and customer IDs to generate identity graphs, allowing you to merge attributes and behaviors into Real-Time Customer Profiles.
 
 >[!NOTE]
 >
@@ -34,7 +34,7 @@ You must have already completed the previous lessons:
 >
 >The [Experience Cloud ID Extension](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is not needed when implementing Adobe Experience Platform Web SDK, as the Web SDK JavaScript library contains the Visitor ID service functionality.
 >
-> If your website is already using the Experience Cloud ID Service on your website&mdash;either through Visitor API or the Experience Cloud ID Service tag extension&mdash;and you would like to continue using it while migrating to Adobe Experience Platform Web SDK, you must be using the latest version of Visitor API or the Experience Cloud ID Service tag extension. See [ID Migration](https://experienceleague.adobe.com/docs/experience-platform/edge/identity/overview.html?lang=en) for more information.
+> If your website is already using the Experience Cloud ID Service on your website&mdash;either through Visitor API or the Experience Cloud ID Service tag extension&mdash;and you would like to continue using it while migrating to Adobe Experience Platform Web SDK, you must be using the latest version of Visitor API or the Experience Cloud ID Service tag extension. See [ID Migration](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview) for more information.
 
 ## Create an identity namespace
 

@@ -209,10 +209,10 @@ Once you have this rule in place, events collection should begin when a visitor 
 ![Consent Post Visitor Optin](assets/consent-post-user-optin.png)
 
 
-For more information on consent in Web SDK, see [Supporting customer consent preferences](https://experienceleague.adobe.com/docs/experience-platform/edge/consent/supporting-consent.html?lang=en).
+For more information on consent in Web SDK, see [Supporting customer consent preferences](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-For more information on the [!UICONTROL Set consent] action, see [Set consent](https://experienceleague.adobe.com/docs/experience-platform/edge/extension/action-types.html?lang=en#set-consent).
+For more information on the [!UICONTROL Set consent] action, see [Set consent](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
 
 [Next: **Set up Event Forwarding**](setup-event-forwarding.md)
 
