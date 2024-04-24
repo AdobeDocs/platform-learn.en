@@ -9,9 +9,9 @@ exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
 
 # Set up Journey Optimizer web channel
 
-Learn how to implement the Journey Optimizer web channel using Platform Web SDK. This guide covers the foundational Web Channel prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
+Learn how to implement the Journey Optimizer [web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) using Platform Web SDK. This lesson covers the foundational web channel prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
 
-By following this guide, Journey Optimizer users are equipped to effectively apply the web channel for advanced online personalization using the Journey Optimizer Web Designer.
+By following this lesson, Journey Optimizer users are equipped to effectively apply the web channel for advanced online personalization using the Journey Optimizer web designer.
 
 ![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
 
@@ -19,11 +19,11 @@ By following this guide, Journey Optimizer users are equipped to effectively app
 
 At the end of this lesson, you are able to:
 
-* Understand the function and significance of the Web SDK in delivering the web channel experience.
+* Understand the function and significance of Web SDK in delivering the web channel experience.
 * Understand the process of creating a web channel campaign from start to finish utilizing the sample Luma Loyalty Rewards use case.
 * Configure campaign properties, actions, and schedules within the interface.
 * Understand the functionality and benefits of the Adobe Experience Cloud Visual Editing Helper extension.
-* Learn to edit web page content, including images, headers, and other elements, using the Web Designer.
+* Learn to edit web page content, including images, headers, and other elements, using the web designer.
 * Learn how to insert offers into a web page using the Offer decision component.
 * Familiarize yourself with best practices for ensuring the quality and success of a web channel campaign.
 
@@ -31,45 +31,54 @@ At the end of this lesson, you are able to:
 
 To complete the lessons in this section, you must first:
 
+* Complete all lessons for initial configuration of the Platform Web SDK, including setting up data elements and rules.
 * Ensure that your Adobe Experience Platform Web SDK tags extension version is 2.16 or above.
 * If you are using the Journey Optimizer web designer to author your web channel experience, ensure you are using either the Google Chrome or Microsoft&reg; Edge browsers.
-* Also ensure you have downloaded the Adobe Experience Cloud Visual Editing Helper browser extension. Enable The Visual Editing Helper browser extension in your browser toolbar before creation of the web channel experience.
-    * In the Journey Optimizer web designer, certain websites may not reliably open due to one of the following reasons:
-        1. The website has stringent security policies.
-        1. The website is embedded within an iframe.
-        1. The customer's QA or stage site is not externally accessible (it is an internal site).
+* Also ensure you have downloaded and enabled the [Adobe Experience Cloud Visual Editing Helper browser extension](https://chromewebstore.google.com/detail/adobe-experience-cloud-vi/kgmjjkfjacffaebgpkpcllakjifppnca).
 * Ensure that third-party cookies are allowed in your browser. It may be necessary to disable any ad blockers in your browser as well.
-* When creating web experiences and including content from the Adobe Experience Manager Assets Essentials library, it's necessary to configure the subdomain for publishing this content. [Learn more](https://experienceleague.adobe.com/docs/journey-optimizer/using/web/web-delegated-subdomains.html?lang=en).
+
+    >[!CAUTION]
+    >
+    > In the Journey Optimizer web designer, certain websites may not reliably open due to one of the following reasons:
+    > 
+    > 1. The website has stringent security policies.
+    > 1. The website is embedded within an iframe.
+    > 1. The customer's QA or stage site is not externally accessible (it is an internal site).
+
+* When creating web experiences and including content from the Adobe Experience Manager Assets Essentials library, it's necessary to [configure the subdomain for publishing this content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
 * If using the content experimentation feature, ensure that your web dataset is also included in your reporting configuration.
 * Currently, two types of implementations are supported for enabling the authoring and delivery of web channel campaigns on your web properties:
     * Client-side only: To modify your website, you must implement the Adobe Experience Platform Web SDK.
     * Hybrid mode: You can utilize the Platform Edge Network Server API to request personalization server-side. The response from the API is then provided to the Adobe Experience Platform Web SDK for rendering modifications on the client-side. For more information, refer to the Adobe Experience Platform Edge Network Server API documentation. Additional details and implementation samples for the hybrid mode can be found in this blog post.
 
->[!NOTE]
->
->Server-side only implementation is not currently supported.
+    >[!NOTE]
+    >
+    >Server-side only implementation is not currently supported.
+
+
+
 
 ## Terminology
 
 First, you should understand the terminology used within web channel campaigns.
 
-* **Web Channel**: A medium for communication or the delivery of content via the web. In the context of this guide, it refers to the mechanism through which personalized content is delivered to website visitors using the Platform Web SDK, within Adobe Journey Optimizer.
-* **Web Surface**: Refers to a web property identified by a URL where content is delivered. It can encompass a single or multiple web pages.
-* **Journey Optimizer Web Designer**: A specific tool or interface within the Journey Optimizer where users can design their web channel experiences.
+* **Web channel**: A medium for communication or the delivery of content via the web. In the context of this guide, it refers to the mechanism through which personalized content is delivered to website visitors using the Platform Web SDK, within Adobe Journey Optimizer.
+* **Web surface**: Refers to a web property identified by a URL where content is delivered. It can encompass a single or multiple web pages.
+* **Journey Optimizer web designer**: A specific tool or interface within the Journey Optimizer where users can design their web channel experiences.
 * **Adobe Experience Cloud Visual Editing Helper**: A browser extension that assists in visually editing and designing web channel experiences.
 * **Datastream**: A configuration within the Adobe Experience Platform service that ensures web channel experiences can be delivered.
-* **Merge Policy**: A configuration that ensures the accurate activation and publication of inbound campaigns.
+* **Merge policy**: A configuration that ensures the accurate activation and publication of inbound campaigns.
 * **Audience**: A specific segment of users or site visitors who meet certain criteria.
-* **Web Designer**: An interface or tool that aids in visually editing and designing web experiences without diving deep into code.
-* **Expression Editor**: A tool within the Web Designer that allows users to add personalization to web content, potentially based on data attributes or other criteria.
-* **Offer Decision Component**: A component in the Web Designer that helps in deciding which offer is best suited to be displayed to a specific visitor based on decision management.
-* **Content Experiment**: A method to test different content variations to find out which one performs best in terms of the desired metric, such as inbound clicks.
+* **Web designer**: An interface or tool that aids in visually editing and designing web experiences without diving deep into code.
+* **Expression editor**: A tool within the web designer that allows users to add personalization to web content, potentially based on data attributes or other criteria.
+* **Offer decision component**: A component in the web designer that helps in deciding which offer is best suited to be displayed to a specific visitor based on decision management.
+* **Content experiment**: A method to test different content variations to find out which one performs best in terms of the desired metric, such as inbound clicks.
 * **Treatment**: In the context of content experiments, a treatment refers to a specific variation of content being tested against another.
 * **Simulation**: A preview mechanism to visualize the web channel experience before activating it for live audiences.
 
 ## Configure the datastream
 
-Ensure that a datastream is defined within the Adobe Experience Platform service, and that the Adobe Journey Optimizer option is enabled. This must be configured before any web channel experience can be delivered by Platform Web SDK.
+You have already added the Adobe Experience Platform service to your datastream. Now you need to enable the Adobe Journey Optimizer option so you can deliver web channel experiences.
 
 To configure Adobe Journey Optimizer in the datastream:
 
@@ -79,7 +88,7 @@ To configure Adobe Journey Optimizer in the datastream:
 
     ![Select datastream](assets/web-channel-select-datastream.png)
 
-1. Select **[!UICONTROL Edit]** within the Adobe Experience Platform Service.
+1. Select **[!UICONTROL Edit]** within the Adobe Experience Platform service.
     
     ![Edit datastream](assets/web-channel-edit-datastream.png)
 
@@ -89,7 +98,7 @@ To configure Adobe Journey Optimizer in the datastream:
 
 1. Select **[!UICONTROL Save]**.
 
-This ensures that inbound events for Journey Optimizer are correctly handled by the Adobe Experience Platform Edge.
+This ensures that inbound events for Journey Optimizer are correctly handled by the Adobe Experience Platform Edge Network.
 
 ## Configure the merge policy
 
@@ -99,7 +108,7 @@ To configure the option in the merge policy:
 
 1. Go to the **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** page in either the Experience Platform or Journey Optimizer interface.
 1. Select the **[!UICONTROL Merge Policies]** tab.
-1. Select your policy, and toggle the **[!UICONTROL Active-On-Edge Merge Policy]** option within the **[!UICONTROL Configure]** step.
+1. Select your policy (it's usually best to use the [!UICONTROL Default Timebased] policy), and toggle the **[!UICONTROL Active-On-Edge Merge Policy]** option within the **[!UICONTROL Configure]** step.
 
    ![Toggle merge policy](assets/web-channel-active-on-edge-merge-policy.png)
 
@@ -107,32 +116,31 @@ To configure the option in the merge policy:
 
 To use content experiments within web channel campaigns, you must ensure the web dataset used is also included in your reporting configuration. The Journey Optimizer reporting system uses the dataset in a read-only fashion to populate out-of-the-box content experimentation reports.
 
-[Adding datasets for content experiment reporting is detailed in this section](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration.html?lang=en#add-datasets).
+[Adding datasets for content experiment reporting is detailed in this section](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets).
 
 ## Use Case Overview – Loyalty Rewards
 
 In this lesson, a sample Loyalty Rewards use case is used to detail implementation of a web channel experience using the Web SDK.
 
-This use case enables you to better understand how Journey Optimizer can help deliver the best inbound experiences to your customers, utilizing the Journey Optimizer campaigns, and the Web Designer.
+This use case enables you to better understand how Journey Optimizer can help deliver the best inbound experiences to your customers, utilizing Journey Optimizer campaigns, and the web designer.
 
->[!NOTE]
->
->As this tutorial is aimed at implementers, it's worth noting that this lesson involves substantial interface work in Journey Optimizer. While such interface tasks are typically handled by marketers, it can be beneficial for implementers to gain insight into the process, even if they are not responsible for web channel campaign creation in the end.
+As this tutorial is aimed at implementers, it's worth noting that this lesson involves substantial interface work in Journey Optimizer. While such interface tasks are typically handled by marketers, it can be beneficial for implementers to gain insight into the process, even if they are not typically responsible for web channel campaign creation.
 
 ### Create a Loyalty schema and ingest sample data
 
-When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by other data sources you have ingested into Platform. For example, when a user logs into the Luma site, the `lumaCrmId` is sent to Platform representing an identity in Luma's CRM system. An identity graph is constructed in Experience Platform and all other profile-enabled datasets can potentially be joined together to build Real-Time Customer Profiles. We will quickly create another dataset in Adobe Experience Platform with some sample loyalty data so we can demonstrate how Real-Time Customer Profiles can be used in Journey Optimizer web campaigns. Since you have already done similar exercises the instructions will be brief.
+When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by other data sources you have ingested into Platform. For example, when a user logs into the Luma site, an identity graph is constructed in Experience Platform and all other profile-enabled datasets can potentially be joined together to build Real-Time Customer Profiles. To see this in action, quickly create another dataset in Adobe Experience Platform with some sample loyalty data so that you can use Real-Time Customer Profiles in Journey Optimizer web campaigns. Since you have already done similar exercises the instructions will be brief.
 
-To create the schema:
+Create the loyalty schema:
 
 1. Create a new schema 
 1. Choose **[!UICONTROL Individual Profile]** as the [!UICONTROL base class]
 1. Name the schema `Luma Loyalty Schema`
-1. Select the `personID` field and mark is as an [!UICONTROL Identity] and [!UICONTROL Primary identity] using the `Luma CRM Id` [!UICONTROL Identity namespace].
 1. Add the [!UICONTROL Loyalty Details] field group
+1. Add the [!UICONTROL Demographic Details] field group
+1. Select the `Person ID` field and mark it as an [!UICONTROL Identity] and [!UICONTROL Primary identity] using the `Luma CRM Id` [!UICONTROL Identity namespace].
 1. Enable the schema for [!UICONTROL Profile]
 
-SCREENSHOT OF SCHEMA
+   ![Loyalty schema](assets/web-channel-loyalty-schema.png)
 
 To create the dataset and ingest the sample data:
 
@@ -142,14 +150,42 @@ To create the dataset and ingest the sample data:
 1. Download the sample file [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
 1. Drag-and-drop the file into your dataset
 1. Confirm that the data successfully ingested
+   
+    ![Loyalty schema](assets/web-channel-loyalty-dataset.png)
 
-SCREENSHOT OF DATASET AND CONFIRMATION
+### Create an audience
+
+Audiences group profiles together around common traits. Build a quick audience you can use in your web campaign:
+
+1. In the Experience Platform interface, go to **[!UICONTROL Audiences]** in the left navigation
+1. Select **[!UICONTROL Create audience]**
+1. Select **[!UICONTROL Build rule]**
+1. Select **[!UICONTROL Create]**
+
+   ![Create an audience](assets/web-campaign-create-audience.png)
+
+1. Select **[!UICONTROL Attributes]**
+1. Find the **[!UICONTROL Loyalty]** > **[!UICONTROL Tier]** field and drag it onto the **[!UICONTROL Attributes]** section
+1. Define the audience as users whose `tier` is `gold`
+1. Name the audience `Luma Loyalty Rewards – Gold Status`
+1. Select **[!UICONTROL Edge]** as the **[!UICONTROL Evaluation method]**
+1. Select **[!UICONTROL Save]**
+
+   ![Define the audience](assets/web-campaign-define-audience.png)
+
+Since this is a very simple audience, we can use the Edge evaluation method. Edge audiences evaluate on the edge, so in the same request made by the Web SDK to Platform Edge Network, we can evaluate the audience definition and confirm immediately if the user will qualify.
 
 ### Create Loyalty Rewards Campaign
 
-Now that we have ingested our sample loyalty data we can create the Loyalty Rewards web channel campaign in Adobe Journey Optimizer.
+Now that you have ingested our sample loyalty data and created our segment, create the Loyalty Rewards web channel campaign in Adobe Journey Optimizer.
 
 To create the sample campaign:
+
+1. Open the [Journey Optimizer](https://experience.adobe.com/journey-optimizer/home){target="_blank"} interface
+ 
+    >[!NOTE]
+    >
+    > Schema, datasets, and audiences can also be built in the Journey Optimizer interface as they are all common Experience Platform constructs.
 
 1. Navigate to **[!UICONTROL Journey Management]** > **[!UICONTROL Campaigns]** in the left navigation
 1. Click **[!UICONTROL Create campaign]** in the upper right.
@@ -159,17 +195,17 @@ To create the sample campaign:
 
 1. In the **[!UICONTROL Actions]** section, choose the **[!UICONTROL Web channel]**. As the  **[!UICONTROL Web surface]**, select **[!UICONTROL Page URL]**.
 
->[!NOTE]
->
->A web surface refers to a web property identified by a URL where content is delivered. It can correspond to a single page URL or encompass multiple pages, enabling you to apply modifications across one or multiple web pages.
+    >[!NOTE]
+    >
+    >A web surface refers to a web property identified by a URL where content is delivered. It can correspond to a single page URL or encompass multiple pages, enabling you to apply modifications across one or multiple web pages.
 
-Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience on one page for this campaign. Enter the URL for the Luma page.
+1. Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience on one page for this campaign. Enter the URL for the Luma page, `https://luma.enablementadobe.com/content/luma/us/en.html`
 
 1. Once the web surface is defined, select **[!UICONTROL Create]**.
 
     ![Select web surface](assets/web-channel-web-surface.png)
 
-1. Now add some additional details to the new web channel campaign. First, name the campaign. Call it `Luma Loyalty Rewards – Gold Status – October 2023`. Optionally, you can add a description to the campaign. Also add **[!UICONTROL Tags]** to improve the overall campaign taxonomy.
+1. Now add some additional details to the new web channel campaign. First, name the campaign. Call it `Luma Loyalty Rewards – Gold Status`. Optionally, you can add a description to the campaign. Also add **[!UICONTROL Tags]** to improve the overall campaign taxonomy.
 
     ![Name the campaign](assets/web-channel-campaign-name.png)
 
@@ -179,7 +215,7 @@ Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience
 
     ![Choose identity type](assets/web-channel-indentity-type.png)
 
-1. Schedule the campaign to begin on December 1 using the **[!UICONTROL Campaign start]** option, and end on December 31 using the **[!UICONTROL Campaign end]** option.
+1. Schedule the campaign to begin on today's date using the **[!UICONTROL Campaign start]** option, and end in a week using the **[!UICONTROL Campaign end]** option.
 
     ![Campaign schedule](assets/web-channel-campaign-schedule.png)
 
@@ -189,7 +225,7 @@ Choose the **[!UICONTROL Page URL]** web surface option to deploy the experience
 
 ### Experiment with Loyalty Rewards Content
 
-In the **[!UICONTROL Action]** section, you can optionally create an experiment to test out which content works better for the `Luma Loyalty Rewards – Gold Status` audience. Let's create and test two treatments as a component of the campaign configuration.
+If you scroll back up, in the **[!UICONTROL Action]** section, you can optionally create an experiment to test out which content works better for the `Luma Loyalty Rewards – Gold Status` audience. Let's create and test two treatments as a component of the campaign configuration.
 
 To create the content experiment:
 
@@ -207,7 +243,7 @@ To create the content experiment:
 
 1. Also optionally, choose to **[!UICONTROL Distribute evenly]**. Check this option to ensure the treatment splits are always evenly split.
 
-[Learn more about content experiments in Adobe Journey Optimizer Web Channel](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
+[Learn more about content experiments in Adobe Journey Optimizer web channel](https://experienceleague.adobe.com/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment.html?lang=en).
 
 ### Edit Content using the Visual Helper
 
@@ -292,11 +328,17 @@ Finally, activate the web channel campaign.
 
 ### Loyalty Rewards QA
 
+There are a few logins you can use to simulate "gold status" users and qualify for your campaign:
+
+1. `cleavlandeuler@emailsim.io`/`test`
+1. `leftybeagen@emailsim.io`/`test`
+1. `jenimartinho@emailsim.io`/`test`
+
 As a best practice, monitor the **[!UICONTROL Web]** tab of the campaign live and global reports for the campaign-specific KPIs. For this campaign, monitor experience impressions, and click rate.
 
 ![View web report](assets/web-channel-web-report.png)
 
-### Web Channel Validation using Adobe Experience Platform Debugger
+### Web channel validation using Adobe Experience Platform Debugger
 
 The Adobe Experience Platform Debugger extension, available for both Chrome and Firefox, analyzes your web pages to identify issues in the implementation of Adobe Experience Cloud solutions.
 
