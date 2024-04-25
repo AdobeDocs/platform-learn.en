@@ -6,7 +6,7 @@ exl-id: 31e381ea-fbaf-495f-a6e9-2ff6c0d36939
 ---
 # Validate Web SDK implementations with Experience Platform Assurance
 
-Adobe Experience Platform Assurance is a product from Adobe Experience Cloud to help you inspect, proof, simulate, and validate how you collect data or serve experiences. Read more about [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). 
+Adobe Experience Platform Assurance is a feature to help you inspect, proof, simulate, and validate how you collect data or serve experiences. Read more about [Adobe Assurance](https://experienceleague.adobe.com/en/docs/experience-platform/assurance/home). 
 
 
 ## Learning objectives
@@ -45,10 +45,11 @@ Reviewing how we did this in the Debugger lesson:
 1. Select the **[!UICONTROL Edge]** tab, and select **[!UICONTROL Connect]**
 
     ![Connect Edge Trace](assets/analytics-debugger-edgeTrace.png)
-1. With Edge Trace enabled, you can see an outgoing link icon on top. Select the icon to open Assurance. A new tab in your browser opens.
+1. With Edge Trace enabled, you can see an outgoing link icon on top. Select the icon to open Assurance. 
 
     ![Start Assurance session](assets/validate-debugger-start-assurnance.png)
 
+1. A new browser tab opens with the Assurance interface.
 
 ### Start an Assurance session from the Assurance interface
 
@@ -62,7 +63,7 @@ Reviewing how we did this in the Debugger lesson:
     ![Name the Assurance session](assets/assurance-name-session.png)
 1. On the next screen, select **[!UICONTROL Copy Link]**
 1. Select the icon to copy the link to your clipboard
-1. Paste the URL in your browser, which will open the Luma Website witha special URL parameter `adb_validation_sessionid` and start the session
+1. Paste the URL in your browser, which will open the Luma Website with a special URL parameter `adb_validation_sessionid` and start the session
 1. In the Assurance interface, you should see a message indicating you have successfully connected to the session and you should see events captured in the Assurance interface.
     ![Assurance session has connected](assets/assurance-success.png)
 
@@ -82,7 +83,7 @@ There is limited information to view at this stage of your implementation. One v
 
 In future lessons, you use Assurance to validate fully processed payloads reaching an Adobe application enabled in your datastream.
 
-With an XDM object now firing on a page, and with the knowledge of how to validate your data collection, you are ready to set up the individual Adobe applications using Platform Web SDK.
+With an XDM object now firing on a page, and with the knowledge of how to validate your data collection, you are ready to set up Experience Platform and the individual Adobe applications using Platform Web SDK.
 
 [Next: **Set up Experience Platform**](setup-experience-platform.md)
 

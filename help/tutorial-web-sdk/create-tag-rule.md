@@ -6,12 +6,7 @@ exl-id: e06bad06-3ee3-475f-9b10-f0825a48a312
 ---
 # Create tag rules
 
-Learn how to send events to the Platform Edge Network with your XDM object using tag rules. A tag rule is a combination of events, conditions, and actions that tells the tag property to do something. With Platform Web SDK, rules are used to send events to Platform Edge Network with the right XDM fields.
-
->[!NOTE]
->
-> For demonstration purposes, the exercises in this lesson build upon the previous lessons to send events from users on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}.
-
+Learn how to send events to the Platform Edge Network with your XDM object using tag rules. A tag rule is a combination of events, conditions, and actions that tells the tag property to do something. With Platform Web SDK, rules are used to send events to Platform Edge Network with the right data.
  
 ## Learning objectives
 
@@ -39,29 +34,28 @@ You are familiar with Data Collection tags and the [Luma demo site](https://luma
 
 To better manage rules in tags, it is recommended to follow a standard naming convention. This tutorial uses a five-part naming convention:
 
-* [**location**] - [**event**] - [**purpose**] - [**tool**] - [**order**]
+* [**location**] - [**event**] - [**purpose**] - [**order**]
 
 where;
 
 1. **location** is the page or pages on the site where the rule fires
 1. **event** is the trigger for the rule
 1. **purpose** is the main action performed by the rule
-1. **tool** is the specific application or applications used in the action step for that rule, which should be rare with Web SDK
-1. **sequence** is the order in which the rule should fire in relation to other rules
+1. **order** is the order in which the rule should fire in relation to other rules
 <!-- minor update --> 
 
 ## Create tag rules
 
 In tags, rules are used to execute actions (fire calls) under various conditions. The Platform Web SDK tags extension includes two actions which will be used in this lesson:
 
-* **[!UICONTROL Update variable]** maps data elements to XDM fields
+* **[!UICONTROL Update variable]** maps data elements to properties in an XDM object
 * **[!UICONTROL Send Event]** sends the XDM object to Experience Platform Edge Network
 
 In the rest of this lesson we:
 
-1. Create a rule to define a "global configuration" of XDM fields (using [!UICONTROL Update variable] which we want to send on every page of the website (for example, the page name) using the **[!UICONTROL Update Variable]** action. 
+1. Create a rule with the **[!UICONTROL Update variable]** action to define a "global configuration" of XDM fields.
 
-1. Create additional rules that override our "global configuration" or contribute additional XDM fields (using [!UICONTROL Update variable] again) which are only relevant under certain conditions (for example, adding product details on product pages).
+1. Create additional rules with the **[!UICONTROL Update variable]** action that override our "global configuration" and contribute additional XDM fields under certain conditions (for example, adding product details on product pages).
 
 1. Create another rule with the **[!UICONTROL Send Event]** action which will send the complete XDM object to Adobe Experience Platform Edge Network.
 
@@ -71,11 +65,9 @@ This video gives an overview of the process:
 
 >[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
 
-### Update variable rules
+### Global configuration fields
 
-#### Global configuration
-
-To Create tag rules for the global XDM fields:
+To create a tag rule for the global XDM fields:
 
 1. Open the tag property that you are using for this tutorial
 
@@ -112,11 +104,7 @@ To Create tag rules for the global XDM fields:
 
     ![Update Variable Schema](assets/create-rule-update-variable.png)
 
-Now map your [!UICONTROL data elements] to the [!UICONTROL schema] used by your XDM object.  
-
->[!NOTE] 
-> 
-> You can map to individual properties or entire objects. In this example, you map to individual properties.
+Now map your [!UICONTROL data elements] to the [!UICONTROL schema] used by your XDM object. You can map to individual properties or entire objects. In this example, you map to individual properties:
 
 1. Find the eventType field and select it 
 
@@ -154,13 +142,13 @@ Now map your [!UICONTROL data elements] to the [!UICONTROL schema] used by your 
 
     >[!TIP]
     >
-    > While neither `eventType` set to `web.webpagedetails.pageViews` nor `web.webPageDetials.pageViews.value` are required for Adobe Analytics to process a beacon as a page view, it is useful to have a standard way to indicate a page view for other downstream applications.
+    > While neither `eventType` set to `web.webpagedetails.pageViews` nor `web.webPageDetails.pageViews.value` are required for Adobe Analytics to process a beacon as a page view, it is useful to have a standard way to indicate a page view for other downstream applications.
 
 
 1. Select **[!UICONTROL Keep Changes]** and then **[!UICONTROL Save]** the rule in the next screen to finish creating the rule
 
 
-#### Product page fields
+### Product page fields
 
 Now, start to use **[!UICONTROL Update variable]** in additional, sequenced rules to enrich the XDM object before sending it to [!UICONTROL Platform Edge Network]. 
 
@@ -229,7 +217,7 @@ Start by tracking product views on the product detail page of Luma:
 1. Select **[!UICONTROL Save]** to save the rule
 
 
-#### Shopping cart fields
+### Shopping cart fields
 
 You can map entire array to an XDM object, provided the array matches the format of the XDM schema. The custom code data element `cart.productInfo` you created earlier loops through the `digitalData.cart.cartEntries` data layer object on Luma and translates it into the required format of the `productListItems` object of the XDM schema.
 
