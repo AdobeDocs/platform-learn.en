@@ -2,11 +2,12 @@
 title: Create an XDM schema for web data
 description: Learn how to create an XDM schema for web data in the Data Collection interface. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Schemas
+jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 ---
 # Create an XDM schema for web data
 
-Learn how to create an XDM schema for web data in the Data Collection interface.
+Learn how to create an XDM schema for web data in the Adobe Experience Platform Data Collection interface.
 
 Experience Data Model (XDM) schemas are the building blocks, principles, and best practices for collecting data in Adobe Experience Platform.
 
@@ -16,7 +17,7 @@ Platform Web SDK uses your schema to standardize your web event data, send it to
 
 Businesses have their own language for communicating about their domain. Car dealerships deal with makes, models, and cylinders. Airlines deal with flight numbers, class of service, and seating assignments. Some of these terms are unique to a specific company, some are shared among an industry vertical, and some are shared by almost all businesses. For terms that are shared among an industry vertical or even broader, you can start doing powerful things with your data when you name and structure these terms in a common way.
 
-For example, many businesses deal with orders. What if, collectively, these businesses decided to model an order in a similar way? For example, what if the data model consisted of an object with a `priceTotal` property that represented the total price of the order? What if that object also had properties named `currencyCode` and `purchaseOrderNumber`? Maybe the order object contains a property named `payments` that would be an array of payment objects. Each object would represent a payment for the order. For example, perhaps a customer paid for part of the order with a gift card and paid for the rest using a credit card. You can start to construct a model that looks something like this:
+For example, many businesses deal with orders. What if, collectively, these businesses decided to model an order in a similar way? For example, what if the data model consisted of an object with a `priceTotal` property that represented the total price of the order? What if that object also had properties named `currencyCode` and `purchaseOrderNumber`? Maybe the order object contains a property named `payments` that would be an array of payment objects. Each object would represent a payment for the order. For example, perhaps a customer paid for part of the order with a gift card and the rest using a credit card. You can start to construct a model that looks something like this:
 
 ```json
 {
@@ -105,7 +106,7 @@ When possible, it is recommended to use existing field groups and adhere to a pr
 >In this exercise, you add the recommended pre-defined field groups for web data collection: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ and _**[!UICONTROL Consumer Experience Event]**_.
 >
 >
-> If you are only implementing **Adobe Analytics** with Web SDK and not sending any data to **Experience Platform**, use the [!UICONTROL Adobe Analytics ExperienceEvent Template] field group to define the XDM schema. This will be used in the [Setup Analytics](setup-analytics.md) lesson.  
+> If you are only implementing **Adobe Analytics** with Web SDK and not sending any data to **Experience Platform**, use the [!UICONTROL Adobe Analytics ExperienceEvent Template] field group to define the XDM schema. This is used in the [Setup Analytics](setup-analytics.md) lesson.  
 
 1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL Add]**
 
@@ -119,7 +120,7 @@ When possible, it is recommended to use existing field groups and adhere to a pr
 
     ![Add Field Group](assets/schema-add-field-group.png)
 
-With both field groups, notice that you have access to the most commonly used key-value pairs required for data collection on the web. The [!UICONTROL display name] of each field appears to marketers in the segment builder interface of Platform-based applications and you can change the display name of standard fields to suit your needs. You can also remove fields you don't want. When you click on either field group name, the interface highlights what key-value pair groupings belong to it. In below example, you see what groups belong to **[!UICONTROL Consumer Experience Event]**.
+With both field groups, notice that you have access to the most commonly used key-value pairs required for data collection on the web. The [!UICONTROL display name] of each field appears to marketers in the segment builder interface of Platform-based applications and you can change the display name of standard fields to suit your needs. You can also remove fields you don't want. When you click on either field group name, the interface highlights what key-value pair groupings belong to it. In below example, you see what fields belong to **[!UICONTROL Consumer Experience Event]**.
 
 ![Schema Field Groups](assets/schema-consumer-experience-event.png)
 
@@ -137,7 +138,7 @@ It is a must-have object for any web-related data collection, as it houses the E
 
 >[!IMPORTANT]
 >
-> It is possible to enable **[!UICONTROL Profile]** for a schema before saving your schema. **Do not** enable it at this point. Once a schema is enabled for Profile, it cannot be disabled or deleted. Fields cannot be removed from schemas at this point either, although it is possible to [Deprecate Fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). These implications are important to keep in mind later on when you are working with your own data in your Production environment. 
+> It is possible to enable **[!UICONTROL Profile]** for a schema before saving your schema. **Do not** enable it at this point. Once a schema is enabled for Profile, it cannot be disabled or deleted without resetting the entire sandbox. Fields cannot be removed from schemas at this point either, although it is possible to [Deprecate Fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). These implications are important to keep in mind later on when you are working with your own data in your Production environment. 
 >
 >
 >This setting is discussed more during the [Setup Experience Platform](setup-experience-platform.md) lesson.
@@ -148,11 +149,11 @@ To complete this lesson, select **[!UICONTROL Save]** on the top right.
 ![Save Schema](assets/schema-select-save.png)
 
 
-Now you are able to reference this schema when you add the Web SDK extension to your tag property. 
+Now, you are able to reference this schema when you add the Web SDK extension to your tag property. 
 
 
 [Next: **Configure an identity namespace**](configure-identities.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

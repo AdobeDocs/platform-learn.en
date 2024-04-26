@@ -1,16 +1,17 @@
 ---
-title: Set up Decision Management with Platform Web SDK
+title: Set up Journey Optimizer Decision Management with Platform Web SDK
 description: Learn how to implement Decision Management using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
 ---
 # Set up Decision Management with Platform Web SDK
 
-Learn how to implement Decision Management using Platform Web SDK. This guide covers the foundational Decision Management prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
+Learn how to implement Adobe Journey Optimizer's Decision Management capability using Platform Web SDK. This guide covers the foundational Decision Management prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
 
-By following this tutorial, Journey Optimizer users are equipped to effectively apply offer decisioning features, enhancing the personalization and relevance of their customer interactions.
+By following this tutorial, Journey Optimizer users are equipped to use Decision Management features, enhancing the personalization and relevance of their customer interactions.
 
 
 ![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
@@ -45,9 +46,7 @@ To complete the lessons in this section, you must first:
 
 ## Limitations
 
-Take note of the following limitation:
-
-* Event-based offers are currently not supported in Adobe Journey Optimizer. If you create a decision rule based on an event, you are not able to apply it in an offer.
+Event-based offers are currently not supported in Adobe Journey Optimizer. If you create a decision rule based on an event, you are not able to apply it in an offer.
 
 ## Grant access to Decision Management
 
@@ -134,7 +133,7 @@ First, you should understand the terminology used in the Decision Management int
 
 In this lesson, you implement a sample Loyalty Rewards use case to understand Decision Management using the Web SDK.
 
-This use case enables you to better understand how Journey Optimizer can help deliver the best offer to your customers, utilizing the centralized offer library and the offer decision engine.
+This use case enables you to better understand how Journey Optimizer can help deliver the best offer to your customers, utilizing the centralized offer library and the Decision Management decision engine.
 
 >[!NOTE]
 >
@@ -301,11 +300,11 @@ To create the decision, follow these steps:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Now you must define the **decision scopes**. First select a placement. You can use the previously created '*Homepage Banner*'.
+1. Now, you must define the **decision scopes**. First select a placement. You can use the previously created '*Homepage Banner*'.
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Next you must add **evaluation criteria** for the decision scope. Click **Add** and choose the previously created '*Loyalty Rewards*' **collection** which contains all loyalty offers to consider.
+1. Next you must add **evaluation criteria** for the decision scope. Click **Add** and choose the previously created '*Loyalty Rewards*' **collection, which contains all loyalty offers to consider.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -317,7 +316,7 @@ To create the decision, follow these steps:
    <!--
       ![ADD SCREENSHOT](#)
    -->
-1. Now add the **fallback offer** to the decision. Reminder that the fallback offer is the default offer displayed to Luma visitors if they do not fall into any of the Luma Loyalty audiences. Select  '*Non-Luma Loyalty*' from the list of available fallback offers for the '*Homepage Banner*' placement.
+1. Now add the **fallback offer** to the decision. Reminder that the fallback offer is the default offer displayed to Luma visitors if they do not fall into any of the Luma Loyalty audiences. Select '*Non-Luma Loyalty*' from the list of available fallback offers for the '*Homepage Banner*' placement.
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -328,13 +327,13 @@ To create the decision, follow these steps:
 
 ## Simulations
 
-As a best practice, you should validate the Luma Loyalty decisioning logic to ensure the correct offers are delivered to the right loyalty audiences. You can do this by using **test profiles**. It's also a good idea to test changes to offers via test profiles before pushing new offer versions to production.
+As a best practice, you should validate the Luma Loyalty decisioning logic to ensure that the correct offers are delivered to the right loyalty audiences. You can do this validation by using **test profiles**. It's also a good idea to test changes to offers via test profiles before pushing new offer versions to production.
 
 To begin the testing, select the **Simulations** tab from the **Offers** menu.
 
 ### Testing Loyalty Offers
 
-1. Select a test profile to use for the simulation. Click **Manage profile**. [To create or designate  a new test profile for offer testing, follow this guide](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
+1. Select a test profile to use for the simulation. Click **Manage profile**. [To create or designate a new test profile for offer testing, follow this guide](https://experienceleague.adobe.com/en/docs/journeys/using/building-journeys/about-journey-building/creating-test-profiles#create-test-profiles-csv).
    <!--
       ![ADD SCREENSHOT](#)
    -->
@@ -364,7 +363,7 @@ To begin the testing, select the **Simulations** tab from the **Offers** menu.
 
 The **Adobe Experience Platform Debugger** extension, available for both Chrome and Firefox, analyzes your web pages to identify issues in the implementation of Adobe Experience Cloud solutions.
 
-You can use the debugger on the Luma site to validate the decisioning logic in production. This is a good practice once the Loyalty Rewards use case is up and running, to ensure everything is configured correctly.
+You can use the debugger on the Luma site to validate the decisioning logic in production. This validation is a good practice once the Loyalty Rewards use case is up and running, to ensure that everything is configured correctly.
 
 [Learn how to configure the debugger in your browser using the guide here](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -399,4 +398,4 @@ To begin validation using the debugger:
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

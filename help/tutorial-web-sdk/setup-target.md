@@ -2,11 +2,12 @@
 title: Set up Adobe Target with Platform Web SDK
 description: Learn how to implement Adobe Target using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection, Target
+jira: KT-15410
 exl-id: 9084f572-5fec-4a26-8906-6d6dd1106d36
 ---
 # Set up Adobe Target with Platform Web SDK
 
-Learn how to implement Adobe Target using Platform Web SDK. Learn how to deliver experiences and how to pass additional parameters to Target.
+Learn how to implement Adobe Target using Adobe Experience Platform Web SDK. Learn how to deliver experiences and how to pass additional parameters to Target.
 
 [Adobe Target](https://experienceleague.adobe.com/en/docs/target/using/target-home) is the Adobe Experience Cloud application that provides everything you need to tailor and personalize your customers' experience, so you can maximize revenue on your web and mobile sites, apps, and other digital channels.
 
@@ -14,11 +15,11 @@ Learn how to implement Adobe Target using Platform Web SDK. Learn how to deliver
 
 ## Learning objectives
 
-At the end of this lesson, you will be able to do the following with a Web SDK implementation of Target:
+At the end of this lesson, you are able to do the following with a Web SDK implementation of Target:
 
 * Add the pre-hiding snippet to prevent flicker
 * Configure a datastream to enable Target functionality
-* Render visual experience composer activties
+* Render visual experience composer activities
 * Render form composer activities
 * Pass XDM data to Target and understand the mapping to Target parameters
 * Pass custom data to Target such as profile and entity parameters
@@ -35,7 +36,7 @@ At the end of this lesson, you will be able to do the following with a Web SDK i
 To complete the lessons in this section, you must first:
 
 * Complete all lessons for initial configuration of the Platform Web SDK, including setting up data elements and rules.
-* Ensure you have an [Editor or Approver role](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
+* Ensure you have an [Editor or Approver role](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) in Adobe Target.
 * Install the [Visual Experience Composer helper extension](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension) if you are using the Google Chrome browser.
 * Know how to set up activities in Target. If you need a refresher, the following tutorials and guides are helpful for this lesson:
   * [Use the Visual Experience Composer (VEC) Helper Extension](https://experienceleague.adobe.com/en/docs/target/using/experiences/vec/troubleshoot-composer/vec-helper-browser-extension)
@@ -49,12 +50,12 @@ Before starting, determine if an extra flicker handling solution is required dep
 
 >[!NOTE]
 >
->This tutorial uses the [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) which has an asynchronous implementation of tags and flicker mitigation in place. This section is for reference to understand how the flicker mitigation works with the Platform Web SDK.
+>This tutorial uses the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, which has an asynchronous implementation of tags and flicker mitigation in place. This section is for reference to understand how the flicker mitigation works with the Platform Web SDK.
 
 
 ### Asynchronous implementation
 
-When a tag library loads asynchronously, the page may finish rendering before Target has replaced default content with personalized content. This behavior can lead to what is known as "flicker" where default content briefly displays before being replaced by the personalized content specified by Target. If you want to avoid this flicker, Adobe recommends adding a special pre-hiding snippet immediately before the asynchronous tag embed code.
+When a tag library loads asynchronously, the page may finish rendering before Target has replaced default content with personalized content. This behavior can lead to what is known as "flicker," where default content briefly displays before being replaced by the personalized content. If you want to avoid this flicker, Adobe recommends adding a special pre-hiding snippet immediately before the asynchronous tag embed code.
 
 This snippet is already present on the Luma site, but let's take a closer look to understand what this code does:
 
@@ -176,13 +177,13 @@ For the purposes of this tutorial using the Luma site, use the Identity Symbol `
 
 ## Render visual personalization decisions
 
-Visual personalization decisions refers to the experiences created in Adobe Target's visual experience composer. First, you should understand the terminology used in the Target and tags interfaces:
+Visual personalization decisions refer to the experiences created in Adobe Target's visual experience composer. First, you should understand the terminology used in the Target and tags interfaces:
 
 * **Activity**: A set of experiences targeted to one or more audiences. For example, a simple A/B test could be an activity with two experiences.
 * **Experience**: A set of actions targeted to one or more locations, or decision scopes.
 * **Decision scope**: A location where a Target experience is delivered. Decision scopes are equivalent to "mboxes" if you are familiar with using older versions of Target.
 * **Personalization decision**: An action the server determines should be applied. These decisions may be based on audience criteria and Target activity prioritization.
-* **Proposition**: The result of decisions made by the server which are delivered in the Platform Web SDK response. For example, swapping a banner image would be a proposition.
+* **Proposition**: The result of decisions made by the server, which are delivered in the Platform Web SDK response. For example, swapping a banner image would be a proposition.
 
 ### Update the [!UICONTROL Send event] action
 
@@ -225,7 +226,7 @@ Now that the basic implementation portion is complete, create an Experience Targ
 
    ![Create a new XT activity](assets/target-xt-create-activity.png)
 
-1. Modify the page, for example change the text on the homepage hero banner.  When finished, select **[!UICONTROL Save]** then **[!UICONTROL Next]**.
+1. Modify the page, for example, change the text on the homepage hero banner.  When finished, select **[!UICONTROL Save]** then **[!UICONTROL Next]**.
 
    ![Target VEC modification](assets/target-xt-vec-modification.png)
 
@@ -250,7 +251,7 @@ Now that the basic implementation portion is complete, create an Experience Targ
 
 ### Validate with the Debugger
 
-If you set up an activity, you should see your content rendered on the page. However even if no activities are live, you can also look at the Send Event network call to confirm that Target is configured properly.
+If you set up an activity, you should see your content rendered on the page. However, even if no activities are live, you can also look at the Send Event network call to confirm that Target is configured properly.
 
 >[!CAUTION]
 >
@@ -296,7 +297,7 @@ Modify your page load rule to add a custom decision scope:
 
 ### Process the response from Target
 
-Now that you have configured the Platform Web SDK to request content for the `homepage-hero` scope, you must do something with the response. The Platform Web SDK tag extension provides a [!UICONTROL Send Event Complete] event which can be used to immediately trigger a new rule when a response from a [!UICONTROL Send Event] action is received.
+Now that you have configured the Platform Web SDK to request content for the `homepage-hero` scope, you must do something with the response. The Platform Web SDK tag extension provides a [!UICONTROL Send Event Complete] event, which can be used to immediately trigger a new rule when a response from a [!UICONTROL Send Event] action is received.
 
 1. Create a rule called `homepage - send event complete - render homepage-hero`.
 1. Add an event to the rule. Use the **Adobe Experience Platform Web SDK** extension and the **[!UICONTROL Send event complete]** event type.
@@ -387,7 +388,7 @@ In this section, you will pass Target-specific data and take a closer look at ho
 
 ### Page (mbox) parameters and XDM
 
-All XDM fields are automatically passed to Target as [page parameters](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page) or mbox parameters.
+All XDM fields are automatically passed to Target as [page parameters](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) or mbox parameters.
 
 Some of these XDM fields will map to special objects in Target's backend. For example, `web.webPageDetails.URL` will automatically be available to build URL-based targeting conditions or as the `page.url` object when creating profile scripts.
 
@@ -395,7 +396,7 @@ Some of these XDM fields will map to special objects in Target's backend. For ex
 
 There are some data points that may be useful to Target that are not mapped from the XDM object. These special Target parameters include:
 
-* [Profile attributes](https://experienceleague.adobe.com/en/docs/target/using/implement-target/before-implement/methods/in-page-profile-attributes) 
+* [Profile attributes](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/in-page-profile-attributes) 
 * [Recommendations entity attributes](https://experienceleague.adobe.com/en/docs/target/using/recommendations/entities/entity-attributes)
 * [Recommendations reserved parameters](https://experienceleague.adobe.com/en/docs/target/using/recommendations/plan-implement#pass-behavioral)
 * Category values for [category affinity](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/category-affinity)
@@ -537,7 +538,7 @@ Additionally, you can use Assurance where appropriate to confirm Target decision
 
    ![Validate in assurance Analytics hit](assets/validate-in-assurance-analyticsevent.png)
 
-This confirms that the A4T information that was queued for later transmission when we made the target decisiong call was sent properly when the analytics tracking call fired later on the page.
+This confirms that the A4T information that was queued for later transmission when we made the target decisioning call was sent properly when the analytics tracking call fired later on the page.
 
 Now that you have completed this lesson you should have a working implementation of Adobe Target using the Platform Web SDK.
 
@@ -545,4 +546,4 @@ Now that you have completed this lesson you should have a working implementation
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

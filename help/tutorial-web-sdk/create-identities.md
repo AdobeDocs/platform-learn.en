@@ -1,12 +1,13 @@
 ---
-title: Create identities
+title: Create identities for Platform Web SDK
 description: Learn how to create identities in XDM and use the Identity Map data element to capture user IDs. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
-feature: Tags
+feature: Web SDK, Tags, Identities
+jira: KT-15402
 exl-id: 7ca32dc8-dd86-48e0-8931-692bcbb2f446
 ---
 # Create identities
 
-Learn how to capture identities with Experience Platform Web SDK. Capture both unauthenticated and authenticated identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Learn how to use the data elements you created earlier for collecting authenticated data with a Platform Web SDK data element type called Identity map. 
+Learn how to capture identities with Adobe Experience Platform Web SDK. Capture both unauthenticated and authenticated identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Learn how to use the data elements you created earlier for collecting authenticated data with a Platform Web SDK data element type called Identity map. 
 
 This lesson focuses on the Identity map data element available with the Adobe Experience Platform Web SDK tags extension. You map data elements containing an authenticated user ID and authentication status to XDM. 
 
@@ -31,7 +32,7 @@ You have an understanding of what a data layer is, gotten familiar with the [Lum
 
 ## Experience Cloud ID
 
-The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/ecid) is a shared identity namespace used across Adobe Experience Platform and Adobe Experience Cloud applications. ECID provides the foundation for customer identity and is the default identity for digital properties. This makes ECID the ideal identifier for tracking unauthenticated user behavior because it is always present
+The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/experience-platform/identity/features/ecid) is a shared identity namespace used across Adobe Experience Platform and Adobe Experience Cloud applications. ECID provides the foundation for customer identity and is the default identity for digital properties. ECID is the ideal identifier for tracking unauthenticated user behavior because it is always present.
 
 <!-- FYI I commented this out because it was breaking the build - Jack
 >[!TIP]
@@ -42,15 +43,15 @@ The [Experience Cloud ID (ECID)](https://experienceleague.adobe.com/en/docs/expe
 
 Read more about how [ECIDs are tracked using Platform Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/edge/identity/overview).
 
-ECIDs are set using a combination of first-party cookies and Platform Edge Network. By default, the first-party cookies are set client-side by the Web SDK. To account for browser restrictions on cookie lifespans, you can opt to set your own first-party cookies server-side instead. These are referred to as first-party device IDs (FPIDs).
+ECIDs are set using a combination of first-party cookies and Platform Edge Network. By default, the first-party identity cookies are set client-side by the Web SDK. To account for browser restrictions on cookie lifespans, you can opt to set your own first-party identity cookies server-side instead. These identity cookies are referred to as first-party device IDs (FPIDs).
 
 >[!IMPORTANT]
 >
->The [Experience Cloud ID Service extension](https://exchange.adobe.com/experiencecloud.details.100160.adobe-experience-cloud-id-launch-extension.html) is not needed when implementing Adobe Experience Platform Web SDK, as the ID Service functionality is built into Platform Web SDK.
+>The [Experience Cloud ID Service extension](https://exchange.adobe.com/apps/ec/100160/adobe-experience-cloud-id-launch-extension) is not needed when implementing Adobe Experience Platform Web SDK, as the ID Service functionality is built into Platform Web SDK.
 
 ## First Party Device ID (FPID)
 
-FPIDs are first-party cookies _you set using your own web servers_ which Adobe then uses to create the ECID, instead of using the first-party cookie set by the Web SDK. While browser support may vary, first-party cookies tend to be more durable when they are set by a server that leverages a DNS A record (for IPv4) or AAAA record (for IPv6), as opposed to when they are set by a DNS CNAME or JavaScript code.
+FPIDs are first-party cookies _you set using your own web servers_ which Adobe then uses to create the ECID, instead of using the first-party cookie set by the Web SDK. While browser support may vary, first-party cookies tend to be more durable when set by a server that leverages a DNS A record (for IPv4) or AAAA record (for IPv6), as opposed to when set by a DNS CNAME or JavaScript code.
 
 Once an FPID cookie is set, its value can be fetched and sent to Adobe as event data is collected. Collected FPIDs are used as seeds to generate ECIDs on Platform Edge Network, which continue to be the default identifiers in Adobe Experience Cloud applications. 
 
@@ -62,9 +63,9 @@ While FPIDs are not used in this tutorial, you are encouraged to use FPIDs in yo
 
 ## Authenticated Id
 
-As noted above, all visitors to your digital properties are assigned an ECID by Adobe when using Platform Web SDK. This makes ECID the default identity for tracking unauthenticated digital behavior. 
+As noted above, all visitors to your digital properties are assigned an ECID by Adobe when using Platform Web SDK. ECID the default identity for tracking unauthenticated digital behavior. 
 
-You can also send an authenticated user ID so that Platform can create [Identity Graphs](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) and Target can set its [Third Party Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). This is done by using the [!UICONTROL Identity Map] data element type.
+You can also send an authenticated user ID so that Platform can create [Identity Graphs](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) and Target can set its [Third Party Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). Setting the authenticated id is done by using the [!UICONTROL Identity Map] data element type.
 
 To create the [!UICONTROL Identity Map] data element:
 
@@ -80,11 +81,7 @@ To create the [!UICONTROL Identity Map] data element:
    
    ![Data Collection interface](assets/identity-identityMap-setup.png)
 
-1. As the  **[!UICONTROL Namespace]**, select the `lumaCrmId` namespace that you previously created in the [Configure Identities](configure-identities.md) lesson.
-
-    >[!NOTE]
-    >
-    >    If you don't see your `lumaCrmId` namespace, verify that you also created it in your default production sandbox. Only namespaces created in the default production sandbox currently display in the namespace dropdown.
+1. As the  **[!UICONTROL Namespace]**, select the `lumaCrmId` namespace that you previously created in the [Configure Identities](configure-identities.md) lesson. If it does not appear in the dropdown, type it in.
 
 1. After the **[!UICONTROL Namespace]** is selected, an ID must be set. Select the `user.profile.attributes.username` data element created earlier in the [Create data elements](create-data-elements.md#create-data-elements-to-capture-the-data-layer) lesson, which captures an ID when users are logged into the Luma site. 
 
@@ -104,9 +101,9 @@ To create the [!UICONTROL Identity Map] data element:
 
 >[!TIP]
 >
-> Adobe recommends sending identities which represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
+> Adobe recommends sending identities that represent a person, such as `Luma CRM Id`, as the [!UICONTROL primary] identity.
 >
-> If the identity map contains the person identifier (e.g. `Luma CRM Id`), then the person identifier will become the [!UICONTROL primary] identity. Otherwise, `ECID` becomes the [!UICONTROL primary] identity.
+> If the identity map contains the person identifier (for example, `Luma CRM Id`), then the person identifier becomes the [!UICONTROL primary] identity. Otherwise, `ECID` becomes the [!UICONTROL primary] identity.
 
 
 
@@ -148,4 +145,4 @@ With these data elements in place, you are ready to start sending data to Platfo
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

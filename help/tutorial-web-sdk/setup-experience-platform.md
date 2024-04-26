@@ -1,6 +1,7 @@
 ---
-title: Stream data to Adobe Experience Platform with Web SDK
+title: Stream data to Adobe Experience Platform with Platform Web SDK
 description: Learn how to stream web data to Adobe Experience Platform with Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
+jira: KT-15407
 exl-id: 4d749ffa-e1c0-4498-9b12-12949807b369
 ---
 # Stream data to Experience Platform with Web SDK
@@ -32,7 +33,7 @@ To complete this lesson, you must first:
 
 ## Create a dataset
 
-All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is a storage and management construct for a collection of data, typically a table, that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. 
+All data that is successfully ingested into Adobe Experience Platform is persisted within the data lake as datasets. A [dataset](https://experienceleague.adobe.com/en/docs/experience-platform/catalog/datasets/overview) is a storage and management construct for a collection of data, typically a table that contains a schema (columns) and fields (rows). Datasets also contain metadata that describes various aspects of the data they store. 
 
 Let's set up a dataset for your Luma web event data:
 
@@ -77,7 +78,7 @@ Now you can configure your [!UICONTROL datastream] to send data to [!UICONTROL A
 
      ![Datastream Config](assets/experience-platform-datastream-config.png)
 
-As you generate traffic on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) mapped to your tag property, the data will populate the dataset in Experience Platform!
+As you generate traffic on the [Luma Demo Site](https://luma.enablementadobe.com/content/luma/us/en.html) mapped to your tag property, the data populates the dataset in Experience Platform!
 
 ## Validate the dataset
 
@@ -108,7 +109,7 @@ These steps are more or less the same as what you did in the [Debugger lesson](v
 1. Search for the "identityMap" within the pop-up. Here you should see lumaCrmId with three keys of authenticatedState, id, and primary
    ![Web SDK in Debugger](assets/experience-platform-debugger-dev-idMap.png)
 
-Now data should be populated in the `Luma Web Event Data` dataset and ready for 'Preview Dataset' validation.
+Now, data should be populated in the `Luma Web Event Data` dataset and ready for 'Preview Dataset' validation.
 
 ### Preview the dataset
 
@@ -172,7 +173,7 @@ The next step is to enable the dataset and schema for Real-Time Customer Profile
 
     >[!IMPORTANT]
     >
-    >    Primary identities are required in every record sent to Real-Time Customer Profile. Typically, identity fields are labeled within the schema. When using identity maps, however, the identity fields are not visible within the schema. This dialog is to confirm that you have a primary identity in mind and that you will specify it in an identity map when sending your data. As you know, Web SDK uses an identity map, and the Experience Cloud Id (ECID) is the default primary identity.
+    >    Primary identities are required in every record sent to Real-Time Customer Profile. Typically, identity fields are labeled within the schema. When using identity maps, however, the identity fields are not visible within the schema. This dialog is to confirm that you have a primary identity in mind and that you will specify it in an identity map when sending your data. As you know, Web SDK uses an identity map and the Experience Cloud Id (ECID) is the default primary identity.
 
 
 1. Select **[!UICONTROL Enable]**
@@ -205,7 +206,7 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Profiles]** in the left-navigation
 
 1. As the **[!UICONTROL Identity namespace]** use `lumaCRMId`
-1. Copy & paste the value of the `lumaCRMId` passed in the call you inspected in the Experience Platform Debugger, in this case `112ca06ed53d3db37e4cea49cc45b71e`.
+1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `112ca06ed53d3db37e4cea49cc45b71e`.
 
     ![Profile](assets/experience-platform-validate-dataset-profile.png)
 
@@ -231,4 +232,4 @@ You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

@@ -2,15 +2,16 @@
 title: Set up consent with Platform Web SDK
 description: Learn how to configure the privacy settings of the Experience Platform Web SDK tag extension. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Tags,Consent
+jira: KT-15413
 exl-id: 502a7467-3699-4b2b-93bf-6b6069ea2090
 ---
 # Set up consent with Platform Web SDK
 
-Learn how to configure the privacy settings of the Experience Platform Web SDK tag extension. Set consent based on the visitor's interaction with a banner from a Consent Management Platform (CMP). 
+Learn how to configure the privacy settings of the Adobe Experience Platform Web SDK tag extension. Set consent based on the visitor's interaction with a banner from a Consent Management Platform (CMP). 
 
 >[!NOTE]
 > 
->For demonstration purposes, this tutorial uses [Klaro](https://heyklaro.com/) as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.
+>For demonstration purposes, this tutorial uses [Klaro](https://klaro.org/) as a CMP. You are welcome to follow along using Klaro or the CMP you use with your website.
 
 
 ## Learning objectives
@@ -26,21 +27,22 @@ At the end of this lesson, you are able to:
 You should be familiar with tags and the steps to create rules, data elements, build libraries to environments, and switch tag libraries using the Experience Platform Debugger.
 
 Before you begin configuring the privacy settings and creating the rules for setting consent, make sure you have injected your consent management platform script on the website and is working properly. A CMP can be loaded either directly in the source code with the help of site developers or loaded through tags itself. This lesson demonstrates the latter approach.
+
 >[!NOTE]
 > 
 >1. A Consent Management Platform (or CMP) is used by organizations to legally document and manage a visitor's consent choices before collecting, sharing, or selling visitor data from online sources such as websites and apps. 
 >
->2. The recommended approach for injecting a CMP is directly through source code before the tag manager script. 
+>2. The recommended approach for injecting a CMP is directly through the source code before the tag manager script. 
 
 ### Configure Klaro
 
 Before you jump into the tag configurations, learn more about the consent management platform used in this tutorial Klaro.
 
-1.  Visit [Klaro](https://heyklaro.com/) and set up an account.
-1.  Go to **Privacy Manager** and create an instance according to the instructions.
-1.  Use the **Integration Code** to inject Klaro into your tag property (instructions are in the next exercise).
-1.  Skip the **Scanning** section, as it will detect the tag property which is hardcoded on the Luma demo website and not the one you have built for this tutorial.
-1.  Add a service called `aep web sdk` and toggle on the **Service Default State**. When turned on, the default consent value is `true`, otherwise it is `false`. This configuration is handy when you want to decide what the default consent state (before visitor's consent) is going to be for your web application. For example:
+1. Visit [Klaro](https://klaro.org/) and set up an account.
+1. Go to **Privacy Manager** and create an instance according to the instructions.
+1. Use the **Integration Code** to inject Klaro into your tag property (instructions are in the next exercise).
+1. Skip the **Scanning** section, as it detects the tag property that is hardcoded on the Luma demo website and not the one you have built for this tutorial.
+1. Add a service called `aep web sdk` and toggle on the **Service Default State**. When turned on, the default consent value is `true`, otherwise it is `false`. This configuration is handy when you want to decide what the default consent state (before visitor's consent) is going to be for your web application. For example:
     * For CCPA, the default consent is commonly set to `true`. You are going to reference this scenario as **Implied opt-in** throughout this tutorial
     * For GDPR, the default consent is commonly set to `false`. You are going to reference this scenario as **Implied opt-out** throughout this tutorial.
 
@@ -177,7 +179,7 @@ Here is how you can set up the configuration for an implied opt-out scenario:
     
     With this configuration, Experience Platform Web SDK ensures that no request fires unless the consent permission changes to **[!UICONTROL In]**. That could happen as a result of a visitor manually accepting the cookies by opting in.
 
-1. In the Debugger, make sure the Luma site is mapped to your tag property and that the tags console-logging is on.
+1. In the Debugger, make sure that the Luma site is mapped to your tag property and that the tags console-logging is on.
 1. Use your browser's developer console to **Clear site data** in **Application** > **Storage**
  
 1. Reload the Luma site and you should see that `defaultConsent` is set to **[!UICONTROL Out]** and no Web SDK requests have been made
@@ -198,7 +200,7 @@ In case a visitor decides to opt in (accept the tracking cookies), you must chan
 
     One thing to note here is that this [!UICONTROL Set consent] action is going to be the first request that goes out and establishes identity. Because of this, it may be important to sync identities on the first request itself. The identity map can be added to [!UICONTROL Set consent] action by passing an identity type data element.
 
-1.  Select **[!UICONTROL Save to Library and Build]**:
+1. Select **[!UICONTROL Save to Library and Build]**:
 
     ![Consent Rule opt out](assets/consent-rule-optin-saveAndBuild.png)
 
@@ -212,10 +214,10 @@ Once you have this rule in place, events collection should begin when a visitor 
 For more information on consent in Web SDK, see [Supporting customer consent preferences](https://experienceleague.adobe.com/en/docs/experience-platform/edge/consent/supporting-consent).
 
 
-For more information on the [!UICONTROL Set consent] action, see [Set consent](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/action-types#set-consent).
+For more information on the [!UICONTROL Set consent] action, see [Set consent](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/action-types#set-consent).
 
 [Next: **Set up Event Forwarding**](setup-event-forwarding.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
