@@ -50,7 +50,7 @@ Before starting, determine if an extra flicker handling solution is required dep
 
 >[!NOTE]
 >
->This tutorial uses the [Luma site, which has an asynchronous implementation of tags and flicker mitigation in place. This section is for reference to understand how the flicker mitigation works with the Platform Web SDK.
+>This tutorial uses the [Luma website](https://luma.enablementadobe.com/content/luma/us/en.html){target=_blank}, which has an asynchronous implementation of tags and flicker mitigation in place. This section is for reference to understand how the flicker mitigation works with the Platform Web SDK.
 
 
 ### Asynchronous implementation
