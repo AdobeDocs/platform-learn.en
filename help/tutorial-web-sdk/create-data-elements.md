@@ -48,7 +48,7 @@ There are multiple ways to map data from your data layer to XDM using the tags f
 
 ### Implement XDM in the data layer
 
-This approach involves using the fully defined XDM object as the structure for your data layer. Then you map the entire data layer to an XDM object data element in tags. If your implementation is not using a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). If you do you use tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
+This approach involves using the fully defined XDM object as the structure for your data layer. Then you map the entire data layer to an XDM object data element in tags. If your implementation is not using a tag manager, this approach may be ideal because you can send data to XDM directly from your application using the [XDM sendEvent command](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/tracking-events#sending-xdm-data). If you do use tags, you can create a custom code data element capturing the entire data layer as a pass-through JSON object to the XDM. Then, you map the pass-through JSON to the XDM object field in the Send Event Action. 
 
 Below is an example of how the data layer would look like using the Adobe Client Data Layer format:
 
@@ -94,7 +94,7 @@ window.adobeDataLayer.push({
 Pros
 
 * Eliminates additional steps remap to data layer variables to XDM
-* May be quicker to deploy if your development team owns tagging digital behavior
+* It may be quicker to deploy if your development team owns tagging digital behavior
 
 Cons
 
@@ -133,7 +133,7 @@ This approach uses functionality built-into the datastream configuration called 
 
 * Flexible as you can map individual variables to XDM
 * Ability to [compute new values](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/functions) or [transform data types](https://experienceleague.adobe.com/en/docs/experience-platform/data-prep/data-handling) from a data layer before it goes to XDM 
-* Leverage a [Mapping UI](https://experienceleague.adobe.com/docs/experience-platform/datastreams/data-prep.html#create-mapping) to map fields in your source data to XDM with a point-and-click UI
+* Leverage a [Mapping UI](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/data-prep#create-mapping) to map fields in your source data to XDM with a point-and-click UI
 
 #### Cons
 
@@ -293,4 +293,4 @@ With these data elements in place, you are ready to start sending data to Platfo
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

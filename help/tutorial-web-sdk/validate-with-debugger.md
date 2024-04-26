@@ -9,16 +9,16 @@ exl-id: 150bb1b1-4523-4b44-bd4e-6cabc468fc04
 
 Learn how to validate your Adobe Experience Platform Web SDK implementation with Adobe Experience Platform Debugger.
 
-The Experience Platform Debugger is an extension available for Chrome and Firefox browsers which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
+The Experience Platform Debugger is an extension available for Chrome and Firefox browsers, which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
 
 * [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-* [Chrome extension](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
+* [Chrome extension](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
 If you have never used the debugger before, you might want to watch this five-minute overview video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
-In this lesson, you use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the tag property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
+In this lesson, you use the [Adobe Experience Platform Debugger extension](https://chromewebstore.google.com/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob) to replace the tag property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
 
 This technique is called environment switching and will be helpful later, when you work with tags on your own website. It allows you to to load your production website in your browser, but with your *development* tags library. This ability enables you to confidently make and validate tags changes independently from your regular code releases. After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use tags in the first place!
 
@@ -50,7 +50,7 @@ The Experience Platform Debugger has a cool feature that allows you to replace a
 1. The Debugger will open and show some details of the hardcoded implementation (you may need to reload the Luma site after opening the Debugger)
 1. Confirm that the Debugger is "**[!UICONTROL Connected to Luma]**" as pictured below and then select the "**[!UICONTROL lock]**" icon to lock the Debugger to the Luma site.
 1. Select the **[!UICONTROL Sign In]** button and sign into Adobe Experience Cloud using your Adobe Id.
-1. Now go to **[!UICONTROL Experience Platform Tags]** in the left navigation
+1. Now, go to **[!UICONTROL Experience Platform Tags]** in the left navigation
 
     ![Debugger tag Screen](assets/validate-launch-screen.png)
 
@@ -79,7 +79,7 @@ You can use the Debugger to validate client-side beacons triggered from your Pla
 
     ![Summary tab](assets/validate-summary.png)
 
-1. Now go to **[!UICONTROL Experience Platform Web SDK]** in the left navigation to see the **[!UICONTROL Network Requests]**
+1. Now, go to **[!UICONTROL Experience Platform Web SDK]** in the left navigation to see the **[!UICONTROL Network Requests]**
 1. Open the **[!UICONTROL events]** row
 
     ![Adobe Experience Platform Web SDK request](assets/validate-aep-screen.png)
@@ -157,10 +157,10 @@ To enable Edge Trace:
 
     ![Analytics beacon Edge Trace](assets/validate-edge-trace.png)
 
-At this point, you are not able to view any Platform Edge Network requests going to an Adobe applications because you have not enabled any in the datastream. In future lessons, you use Edge Trace to view the outgoing server-side requests to Adobe applications and event forwarding. But first, learn about another tool to validate server-side requests made by Platform Edge Network&mdash;Adobe Experience Platform Assurance!
+At this point, you are not able to view any Platform Edge Network requests going to Adobe applications because you have not enabled any in the datastream. In future lessons, you use Edge Trace to view the outgoing server-side requests to Adobe applications and event forwarding. But first, learn about another tool to validate server-side requests made by Platform Edge Network&mdash;Adobe Experience Platform Assurance!
 
 [Next: **Validate with Assurance**](validate-with-assurance.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

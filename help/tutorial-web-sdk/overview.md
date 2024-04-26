@@ -14,7 +14,7 @@ Experience Platform Web SDK is a client-side JavaScript library that allows cust
 
 This tutorial guides you through the implementation of the Platform Web SDK on a sample retail website called Luma. The [Luma site](https://luma.enablementadobe.com/content/luma/us/en.html) has a rich data layer and functionality that lets you build a realistic implementation. For this tutorial, you:
 
-* Create your own tags property in your own account with a Platform Web SDK implementation for the Luma website.
+* Create your own tags property, in your own account, with a Platform Web SDK implementation for the Luma website.
 * Configure all data collection features for Web SDK implementations such as datastreams, schemas, and identity namespaces.
 * Add the following Adobe Experience Cloud applications:
   * **[Adobe Experience Platform](setup-experience-platform.md)** (and applications built on Platform such as Adobe Real-Time Customer Data Platform, Adobe Journey Optimizer, and Adobe Customer Journey Analytics)
@@ -42,7 +42,7 @@ In these lessons, it is assumed that you have an Adobe account and the required 
   * **[!UICONTROL Property Rights]**&mdash;permission to **[!UICONTROL Approve]**, **[!UICONTROL Develop]**, **[!UICONTROL Edit Property]**, **[!UICONTROL Manage Environments]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Publish]**, 
   * **[!UICONTROL Company Rights]**&mdash;permission to **[!UICONTROL Manage Properties]**
   
-    For more information concerning tags permissions, see [the documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
+    For more information concerning tag permissions, see [the documentation](https://experienceleague.adobe.com/en/docs/experience-platform/tags/admin/user-permissions).
 
 * For **Experience Platform**, you must have:
 
@@ -60,7 +60,7 @@ In these lessons, it is assumed that you have an Adobe account and the required 
 
 * For the optional **Adobe Analytics** lesson, you must have [admin access to Report Suite Settings, Processing Rules, and Analysis Workspace](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-console/home)
 
-* For the optional **Adobe Target** lesson, you must have [Editor or Approver](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/properties-overview.html#section_8C425E43E5DD4111BBFC734A2B7ABC80) access.
+* For the optional **Adobe Target** lesson, you must have [Editor or Approver](https://experienceleague.adobe.com/en/docs/target/using/administer/manage-users/enterprise/properties-overview#section_8C425E43E5DD4111BBFC734A2B7ABC80) access.
 
 * For the optional **Audience Manager** lesson, you must have access to create, read, and write traits, segments, and destinations. For more information, refer to the tutorial on [Audience Manager's Role-Based Access Control](https://experienceleague.adobe.com/en/docs/audience-manager-learn/tutorials/setup-and-admin/user-management/setting-permissions-with-role-based-access-control).
 
@@ -71,7 +71,7 @@ In these lessons, it is assumed that you have an Adobe account and the required 
 
 ## Updates
 
-* April 24, 2024: Major update including addition of Set Variable/Update Variable, split personalization and analytics requests, Journey Optimizer lesssons
+* April 24, 2024: Major updates including addition of Set Variable/Update Variable, split personalization and analytics requests, Journey Optimizer lessons
 
 ## Load the Luma website
 
@@ -85,4 +85,4 @@ Let's get started!
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

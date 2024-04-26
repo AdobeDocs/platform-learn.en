@@ -18,7 +18,7 @@ Learn how to set up Adobe Analytics using [Adobe Experience Platform Web SDK](ht
 At the end of this lesson, you will be able to:
 
 * Configure a datastream to enable Adobe Analytics
-* Know which standard XDM fields will auto-map to Analytics variables
+* Know which standard XDM fields auto-map to Analytics variables
 * Set custom Analytics variables using the Adobe Analytics ExperienceEvent Template field group or processing rules
 * Send data to another report suite by overriding the datastream
 * Validate Adobe Analytics variables using Debugger and Assurance
@@ -29,13 +29,13 @@ To complete this lesson, you must first:
 
 * Be familiar with and have access to Adobe Analytics.
 
-* Have at least one test/dev report suite ID. If you don't have a test/dev report suite that you can use for this tutorial, [please create one](https://experienceleague.adobe.com/en/docs/analytics/admin/manage-report-suites/new-report-suite/t-create-a-report-suite).
+* Have at least one test/dev report suite ID. If you don't have a test/dev report suite that you can use for this tutorial, [please create one](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/c-new-report-suite/t-create-a-report-suite).
 
 * Complete the earlier lessons in the Initial Configuration and Tags Configuration sections of this tutorial.
 
 ## Configure the datastream
 
-Platform Web SDK sends data from your website to Platform Edge Network. Your datastream then tells Platform Edge Network to which Adobe Analytics report suites your data should forwarded.
+Platform Web SDK sends data from your website to Platform Edge Network. Your datastream then tells Platform Edge Network to which Adobe Analytics report suites your data should be sent.
 
 1. Go to [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
@@ -46,7 +46,7 @@ Platform Web SDK sends data from your website to Platform Edge Network. Your dat
 1. Select **[!UICONTROL Add Service]**
      ![Add a service to the datastream](assets/datastream-analytics-addService.png)
 1. Select **[!UICONTROL Adobe Analytics]** as the **[!UICONTROL Service]**
-1. Enter the  **[!UICONTROL Report Suite ID]** of your development report suite
+1. Enter the **[!UICONTROL Report Suite ID]** of your development report suite
 1. Select **[!UICONTROL Save]**
 
     ![Datastream save analytics](assets/datastream-add-analytics.png)
@@ -57,11 +57,11 @@ Platform Web SDK sends data from your website to Platform Edge Network. Your dat
 
 >[!WARNING]
 >
->In this tutorial, you only configure the Adobe Analytics report suite for your development environment. When you create datastreams for your own website, you would create additional datastreams and report suites for your staging and production environments.
+>In this tutorial, you only configure the Adobe Analytics report suite for your development environment. When you create datastreams for your own website, you should create additional datastreams and report suites for your staging and production environments.
 
 ## XDM schemas and Analytics variables
 
-Congratulations! You already configured a schema compatible with Adobe Analytics in the [Configure a schema](configure-schemas.md) lesson!
+Congratulations! You have already configured a schema compatible with Adobe Analytics in the [Configure a schema](configure-schemas.md) lesson!
 
 But you might be wondering, how do I set all my props, evars and events?
 
@@ -112,7 +112,7 @@ The schema created in the [Configure a schema](configure-schemas.md) lesson cont
 The individual sections of the Analytics product string are set through different XDM variables under the `productListItems` object. 
 >As of August 18, 2022, `productListItems[].SKU` takes priority for mapping to the product name in the s.products variable. 
 >The value set to `productListItems[].name` is mapped to the product name only if `productListItems[].SKU` does not exist. Otherwise, it is unmapped and available in context data. 
->Do not set an empty string or null to  `productListItems[].SKU`. This has the undesired effect of mapping to the product name in the s.products variable.
+>Do not set an empty string or null to `productListItems[].SKU`. This has the undesired effect of mapping to the product name in the s.products variable.
 
 For the most up-to-date list of mappings, please see [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). 
 
@@ -121,7 +121,7 @@ For the most up-to-date list of mappings, please see [Analytics variable mapping
 
 All fields in the XDM schema become available to Adobe Analytics as Context Data Variables with the following prefix `a.x.`. For example, `a.x.web.webinteraction.region`
 
-In this exercise, you map one XDM variable to a prop. Follow these same steps for any custom mapping you must do for any `eVar`, `prop`, `event`, or variable accessible via Processing Rules.
+In this exercise, you map one XDM variable to a prop. Follow these same steps for any custom mapping that you must do for any `eVar`, `prop`, `event`, or variable accessible via Processing Rules.
 
 1. Go to the Analytics interface
 1. Go to [!UICONTROL Admin] > [!UICONTROL Admin Tools] > [!UICONTROL Report Suites ]
@@ -151,7 +151,7 @@ To add the `Adobe Analytics ExperienceEvent Template` field group to your schema
 1. Find the `Adobe Analytics ExperienceEvent Template` field group and add it to your schema
 
 
-Now set a merchandising eVar in the product string. With the `Adobe Analytics ExperienceEvent Template` field group, you are able to map variables to merchandising eVars or events within the product string. This is also known as setting **Product Syntax Merchandising**. 
+Now, set a merchandising eVar in the product string. With the `Adobe Analytics ExperienceEvent Template` field group, you are able to map variables to merchandising eVars or events within the product string. This is also known as setting **Product Syntax Merchandising**. 
 
 1. Go back to your tag property
 
@@ -182,7 +182,7 @@ You might want to change which Adobe Analytics report suite data is sent to when
 
 ### Configure the datastream for a report suite override
 
-To configure a the Adobe Analytics report suite override setting in the datastream:
+To configure the Adobe Analytics report suite override setting in the datastream:
 
 1. Open your datastream
 1. Edit the **[!UICONTROL Adobe Analytics]** configuration by opening the ![more](https://spectrum.adobe.com/static/icons/workflow_18/Smock_More_18_N.svg) menu and then selecting **[!UICONTROL Edit]** 
@@ -224,7 +224,7 @@ Let's create a rule to send an additional page view call to a different report s
 
 1. On the right, leave the **[!UICONTROL Regex]** toggle disabled
 
-1. Under **[!UICONTROL path equals]** set `/content/luma/us/en.html`. For the Luma demo site, it ensures the rule only triggers on home page
+1. Under **[!UICONTROL path equals]** set `/content/luma/us/en.html`. For the Luma demo site, it ensures the rule only triggers on the home page
 
 1. Select **[!UICONTROL Keep Changes]**
 
@@ -238,7 +238,7 @@ Let's create a rule to send an additional page view call to a different report s
 
 1. As the **[!UICONTROL Type]**, select `web.webpagedetails.pageViews`
 
-1. As the **[!UICONTROL XDM data]**, select the `xdm.variable.content` you created in the [Create data elements](create-data-elements.md) lesson
+1. As the **[!UICONTROL XDM data]**, select the `xdm.variable.content` data element you created in the [Create data elements](create-data-elements.md) lesson
 
     ![Analytics datastream override](assets/set-up-analytics-datastream-override-1.png)
 
@@ -401,7 +401,7 @@ In the previous exercise you validated that Adobe Analytics is capturing the ECI
 As you learned in the [Assurance](validate-with-assurance.md) lesson, there are several ways to initiate an Assurance session. Since you already have Adobe Experience Platform Debugger open with an Edge Trace session initiated from the last exercise, we recommend accessing Assurance through the Debugger:
     ![Assurance through Adobe Experience Platform Data Collection](assets/assurance-open-aep-debugger.png)
 
-Within the **[!UICONTROL "Web SDK Tutorial 3"]** Assurance Session enter **[!UICONTROL "hitdebugger"]** into the Events Search Bar to filter the results to the Adobe Analyitcs Post Processed data. 
+Within the **[!UICONTROL "Web SDK Tutorial 3"]** Assurance Session enter **[!UICONTROL "hitdebugger"]** into the Events Search Bar to filter the results to the Adobe Analytics Post Processed data. 
     ![Assurance Adobe Analyitcs Post Processed Data](assets/assurance-hitdebugger.png)
 
 ### Experience Cloud ID validation
@@ -447,4 +447,4 @@ Congratulations! You did it! This is the end of the lesson and now you are ready
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

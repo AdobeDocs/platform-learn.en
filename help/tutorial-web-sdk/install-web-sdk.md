@@ -52,10 +52,10 @@ With your XDM schema, datastream, and tag property now created, you are ready to
 
 ## Link the extension to your datastream 
 
-Leave most of the default settings and update them later, as needed. The only thing you must do now is link the extension to your datastream:
+Leave most of the default settings and update them later, as needed. The only thing that you must do now is link the extension to your datastream:
 
 1. Under **[!UICONTROL Datastreams]**, select the **[!UICONTROL Choose from list]** input method
-1. Select the datastream you created earlier, `Luma Web SDK`
+1. Select the datastream that you created earlier, `Luma Web SDK`
 1. Select **[!UICONTROL Save]**
 
     >[!NOTE]
@@ -64,20 +64,20 @@ Leave most of the default settings and update them later, as needed. The only th
 
     ![Datastream selection](assets/extension-luma-web-sdk-datastream-extension.png)
 
-For more information on each section of the extension, see [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/en/docs/experience-platform/edge/extension/web-sdk-extension-configuration).
+For more information on each section of the extension, see [Configure the Adobe Experience Platform Web SDK extension](https://experienceleague.adobe.com/en/docs/experience-platform/tags/extensions/client/web-sdk/web-sdk-extension-configuration).
 
 >[!NOTE]
 >
->While you did not configure a CNAME in the [!UICONTROL Edge domain] setting in this lesson, Adobe recommends you use a CNAME when you implement Platform Web SDK on your own website. While a CNAME implementation does not provide any benefits in terms of cookie lifetime, there may be some other benefits. These benefits include ad blockers and less-common browsers preventing data from being sent to domains they classify as trackers. In these cases, using a CNAME can prevent your data collection from being disrupted for users employing these tools.
+>While you did not configure a CNAME in the [!UICONTROL Edge domain] setting in this lesson, Adobe recommends you use a CNAME when you implement Platform Web SDK on your own website. While a CNAME implementation does not provide any benefits in terms of cookie lifetime, there may be some other benefits. These benefits include ad blockers and less-common browsers preventing data from being sent to domains that they classify as trackers. In these cases, using a CNAME can prevent your data collection from being disrupted for users employing these tools.
 
 >[!NOTE]
 >
 >During this tutorial, you configure just one datastream and associate it with all tag environments (development, stage, and production). When you implement Platform Web SDK on your own website, you should configure a separate datastream for each environment and map them accordingly in the extension configuration. 
 
-Now that you have installed Platform Web SDK and associated it to the datastream, you are ready to start collecting data.
+Now that you have installed Platform Web SDK and associated it with the datastream, you are ready to start collecting data.
 
 [Next: **Create data elements**](create-data-elements.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

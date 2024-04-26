@@ -9,8 +9,7 @@ exl-id: 20f770d1-eb0f-41a9-b451-4069a0a91fc4
 
 Learn how to configure a datastream for Adobe Experience Platform Web SDK.
 
-Datastreams tell Adobe Experience Platform Edge Network where to send data collected by Platform Web SDK. In the datastreams configuration, you enable your Experience Cloud applications, your Experience Platform account, and event forwarding. See the [Fundamentals of Configuring a Datastream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/fundamentals/datastreams) for more detailed information.
-
+[Datastreams](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) tell Adobe Experience Platform Edge Network where to send data collected by Platform Web SDK. In the datastreams configuration, you enable your Experience Cloud applications, your Experience Platform account, and event forwarding. 
 
 ![Web SDK, datastreams, and Edge Network diagram](assets/dc-websdk-datastreams.png)
 
@@ -30,19 +29,19 @@ Before you configure your datastream, you must have already completed the follow
 
 ## Create a datastream
 
-Now you can create a datastream to tell Platform Edge Network where to send data collected by Web SDK.
+Now, you can create a datastream to tell Platform Edge Network where to send data collected by Web SDK.
 
 **To create a datastream:**
 
 1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
-1. Make sure the you are in the correct sandbox 
+1. Make sure you are in the correct sandbox 
 
    >[!NOTE]
    >
    >If you are the customer of a Platform-based application like Real-Time CDP or Journey Optimizer, we recommend using a development sandbox for this tutorial. If you are not, use the **[!UICONTROL Prod]** sandbox.
 
 1. Go to **[!UICONTROL Datastreams]** in the left navigation
-1. Select **[!UICONTROL New Datastream]** on the right hand-side of the screen.
+1. Select **[!UICONTROL New Datastream]**
 1. Enter `Luma Web SDK: Development Environment` as the **[!UICONTROL Name]**. This name is referenced later when you configure the Web SDK extension in your tag property.
 1. Select **[!UICONTROL Save]**
 
@@ -50,7 +49,7 @@ Now you can create a datastream to tell Platform Edge Network where to send data
 
    >[!NOTE]
    >
-   >You don't need to select a schema unless you use the [Data Prep for Data Collection](/help/data-collection/edge/data-prep.md) feature.
+   >You only need to select a schema if using the [Data Prep for Data Collection](/help/data-collection/edge/data-prep.md) feature.
 
 On the next screen, you are able to add services such as Adobe applications to the datastream, however you will not add any services at this point in the tutorial. You will do so later in the lessons [Set up Experience Platform](setup-experience-platform.md), [Set up Analytics](setup-analytics.md), [Set up Audience Manager](setup-audience-manager.md), [Setup Target](setup-target.md), or [Event Forwarding](setup-event-forwarding.md).
 
@@ -64,10 +63,10 @@ On the next screen, you are able to add services such as Adobe applications to t
 
 Datastream configuration override is a two-step process:
 
-1. First, you define datastream overrides in the datastream service configuration. This must be done per datastream service you wish to override. For example, you might define alternate Analytics report suites, Target workspaces, or Platform datasets to use as overrides.
+1. First, you define datastream overrides in the datastream service configuration. For example, you might define alternate Analytics report suites, Target workspaces, or Platform datasets to use as overrides.
 1. Then, you send the overrides to the Edge Network either with a Web SDK send event action, or by a configuration in the Web SDK tag extension.
 
-In the [Set up Adobe Analytics](setup-analytics.md) lesson you override the report suite for a page using the Platform Web SDK Send Event Action.
+In the [Set up Adobe Analytics](setup-analytics.md) lesson, you override the report suite for a page using the Platform Web SDK Send Event Action.
 
 You are now ready to install the Platform Web SDK extension in your tag property!
 
@@ -75,4 +74,4 @@ You are now ready to install the Platform Web SDK extension in your tag property
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

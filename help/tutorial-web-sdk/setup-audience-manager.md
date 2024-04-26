@@ -30,7 +30,7 @@ To complete this lesson, you must first:
 
 ## Configure the datastream
 
-The Audience Manager implementation using the Platform Web SDK differs from the implementation using [server-side forwarding (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/server-side-forwarding/ssf). Server-side forwarding passes Adobe Analytics request data to Audience Manager. A Platform Web SDK implementation passes XDM data sent to Platform Edge Network to Audience Manager. Audience Manager is enabled in the datastream:
+The Audience Manager implementation using the Platform Web SDK differs from the implementation using [server-side forwarding (SSF)](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/server-side-forwarding/ssf). Server-side forwarding passes Adobe Analytics request data to Audience Manager. A Platform Web SDK implementation passes XDM data sent to Platform Edge Network to Audience Manager. Audience Manager is enabled in the datastream:
 
 1. Go to [Data Collection](https://experience.adobe.com/#/data-collection){target="blank"} interface
 1. On the left navigation, select **[!UICONTROL Datastreams]** 
@@ -71,7 +71,7 @@ After the Data Source is saved, set up a [trait](https://experienceleague.adobe.
 
 >[!NOTE]
 >
->All XDM data is sent to Audience Manager if it is enabled in the datastream, however the data might take 24hrs until it is available in the Unused Signals report. Create explicit traits for the XDM data you want to use immediately in Audience Manager, as decribed in this exercise.
+>All XDM data is sent to Audience Manager if it is enabled in the datastream, however the data might take 24hrs until it is available in the Unused Signals report. Create explicit traits for the XDM data that you want to use immediately in Audience Manager, as described in this exercise.
 
 1. Select **[!UICONTROL Audience Data]** >  **[!UICONTROL Traits]**
 1. Select **[!UICONTROL Add New]** >  **[!UICONTROL Rule-Based]** trait
@@ -91,15 +91,15 @@ After the Data Source is saved, set up a [trait](https://experienceleague.adobe.
 
 ## Create a segment
 
-The next step is to create a **segment**, and assign your newly defined trait to this segment.
+The next steps are to create a **segment** and assign your newly defined trait to this segment.
 
 1. Select **[!UICONTROL Audience Data]** in the top navigation and select **[!UICONTROL Segments]**
 1. Select **[!UICONTROL Add New]** in the top left of the page to open the segment builder
 1. Give your segment a friendly name and description, such as `Platform Web SDK - Homepage visitors`
-1. **[!UICONTROL Select a Folder]** where your segment will be saved in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
+1. **[!UICONTROL Select a Folder]** where your segment is saved in the pane to the right. You may want to create a folder by **selecting the + icon** next to an existing parent folder. You can name this new folder `Platform Web SDK tutorial`.
 1. Add an integration code, which in this case is a random set of numbers. 
 1. In the **[!UICONTROL Data Source]** section, select **[!UICONTROL Audience Manager]** and the data source you created earlier
-1. Expand the **[!UICONTROL Traits]** section and search for the trait you created
+1. Expand the **[!UICONTROL Traits]** section and search for the trait that you created
 1. Select **[!UICONTROL Add Trait]**. 
 1. Select **[!UICONTROL Save]** at the bottom of the page
 
@@ -179,4 +179,4 @@ Now that you have completed this lesson, you should be able to see how the Platf
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

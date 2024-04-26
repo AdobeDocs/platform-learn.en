@@ -17,7 +17,7 @@ Event forwarding is a new type of property available in Data Collection. Event f
 To use event forwarding in Adobe Experience Platform, data must be sent to Adobe Experience Platform Edge Network first using one or more of the following three options:
 
 * [Adobe Experience Platform Web SDK](overview.md)
-* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/documentation/)
+* [Adobe Experience Platform Mobile SDK](https://developer.adobe.com/client-sdks/home/)
 <!--* [Server-to-Server API](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/api-and-sdk-code/dcs/dcs-apis/dcs-s2s)-->
 
 
@@ -40,12 +40,12 @@ At this end of this lesson, you will be able to:
 
 ## Prerequisites
 
-* A software license which includes event forwarding. Event forwarding is a paid feature of Data Collection. Please contact your Adobe Account Team for more details.
-* Event forwarding enabled in your Experience Cloud organization.
+* A software license that includes event forwarding. Event forwarding is a paid feature of Data Collection. Please contact your Adobe Account Team for more details.
+* Event forwarding is enabled in your Experience Cloud organization.
 * User permission for event forwarding. (In [Admin Console](https://adminconsole.adobe.com/), under the Adobe Experience Platform Launch product, permission items for[!UICONTROL Platforms] > [!UICONTROL Edge] and all [!UICONTROL Property Rights]). Once granted you should see [!UICONTROL Event Forwarding] in the left navigation of the Data Collection interface:
     ![Event Forwarding properties](assets/event-forwarding-menu.png)
 
-* Adobe Experience Platform Web or Mobile SDK configured to send data to Edge Network. You must have completed the following lessons of this tutorial:
+* Adobe Experience Platform Web or Mobile SDK is configured to send data to Edge Network. You must have completed the following lessons of this tutorial:
 
   * Initial Configuration 
 
@@ -71,14 +71,14 @@ Begin by creating an event-forwarding property:
 1. Select **[!UICONTROL New Property]**. 
     ![Event Forwarding properties](assets/event-forwarding-new.png)
 
-1. Name the property. In this case `Server-Side - Web SDK Course`
+1. Name the property. In this case, `Server-Side - Web SDK Course`
 
 1. Select **[!UICONTROL Save]**.
     ![event-forwarding property save](assets/event-forwarding-save.png)
 
 ## Configure the datastream
 
-For event forwarding to use the data you send to the Edge network, you must link the newly created event-forwarding property to the same datastream used to send data to Adobe solutions. 
+For event forwarding to use the data you send to the Platform Edge Network, you must link the newly created event-forwarding property to the same datastream used to send data to Adobe solutions. 
 
 To configure Target in the datastream:
 
@@ -108,7 +108,7 @@ Repeat these steps for staging and production datastreams when you are ready to 
 
 ## Forward data from the Platform Edge Network to a non-Adobe solution
 
-In this exercise you will learn how to set up an event-forwarding data element, configure an event-forwarding rule, and validate using a third-part tool called [Webhook.site](https://webhook.site/).
+In this exercise you learn how to set up an event-forwarding data element, configure an event-forwarding rule, and validate using a third-part tool called [Webhook.site](https://webhook.site/).
 
 >[!NOTE]
 >
@@ -204,7 +204,7 @@ There are a few main differences between configuring rules in a tag property and
 
 * **[!UICONTROL Events] & [!UICONTROL Conditions]**:
 
-  * **Tags**: All rules are triggered by an Event which must be specified in the rule, for example, `Library Loaded - Page Top`. Conditions are optional.
+  * **Tags**: All rules are triggered by an Event that must be specified in the rule, for example, `Library Loaded - Page Top`. Conditions are optional.
   * **Event forwarding**: It is assumed that every event sent to Platform Edge Network is a trigger to forward data. Therefore, there are no [!UICONTROL Events] that must be selected in event-forwarding rules. To manage which events trigger an event-forwarding rule, you must configure conditions. 
 
 * **Data element tokenization**:
@@ -215,7 +215,7 @@ There are a few main differences between configuring rules in a tag property and
 
 * **Sequence of rule actions**:
 
-  * The Actions section of an event forwarding rule is always executed sequentially. Make sure the order of actions is correct when you save a rule. This execution sequence cannot be executed asynchronously like it can with tags.
+  * The Actions section of an event forwarding rule is always executed sequentially. Make sure that the order of actions is correct when you save a rule. This execution sequence cannot be executed asynchronously like it can with tags.
 
 <!--
   * **Tags**: Rule actions can easily be reordered using drag-and-drop functionality.
@@ -226,7 +226,7 @@ To configure a rule to forward data to your webhook, you must first obtain your 
 
 1. Go to [Webhook.site](https://webhook.site)
 
-1. Find **Your unique URL**, you will use this as the URL request in your event-forwarding rule
+1. Find **Your unique URL**, you use this as the URL request in your event-forwarding rule
 
 1. Select **[!UICONTROL Copy to clipboard]**
 
@@ -319,4 +319,4 @@ Congratulations! You have configured event forwarding!
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

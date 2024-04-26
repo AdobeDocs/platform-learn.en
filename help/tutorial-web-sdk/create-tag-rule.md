@@ -33,7 +33,7 @@ You are familiar with Data Collection tags and the [Luma demo site](https://luma
 
 ## Naming Conventions
 
-To better manage rules in tags, it is recommended to follow a standard naming convention. This tutorial uses a five-part naming convention:
+To manage rules in tags, it is recommended to follow a standard naming convention. This tutorial uses a five-part naming convention:
 
 * [**location**] - [**event**] - [**purpose**] - [**order**]
 
@@ -47,7 +47,7 @@ where;
 
 ## Create tag rules
 
-In tags, rules are used to execute actions (fire calls) under various conditions. The Platform Web SDK tags extension includes two actions which will be used in this lesson:
+In tags, rules are used to execute actions (fire calls) under various conditions. The Platform Web SDK tags extension includes two actions that are used in this lesson:
 
 * **[!UICONTROL Update variable]** maps data elements to properties in an XDM object
 * **[!UICONTROL Send Event]** sends the XDM object to Experience Platform Edge Network
@@ -58,7 +58,7 @@ In the rest of this lesson we:
 
 1. Create additional rules with the **[!UICONTROL Update variable]** action that override our "global configuration" and contribute additional XDM fields under certain conditions (for example, adding product details on product pages).
 
-1. Create another rule with the **[!UICONTROL Send Event]** action which will send the complete XDM object to Adobe Experience Platform Edge Network.
+1. Create another rule with the **[!UICONTROL Send Event]** action, which will send the complete XDM object to Adobe Experience Platform Edge Network.
 
 All of these rules will be sequenced properly using the "[!UICONTROL order]" option.
 
@@ -105,7 +105,7 @@ To create a tag rule for the global XDM fields:
 
     ![Update Variable Schema](assets/create-rule-update-variable.png)
 
-Now map your [!UICONTROL data elements] to the [!UICONTROL schema] used by your XDM object. You can map to individual properties or entire objects. In this example, you map to individual properties:
+Now, map your [!UICONTROL data elements] to the [!UICONTROL schema] used by your XDM object. You can map to individual properties or entire objects. In this example, you map to individual properties:
 
 1. Find the eventType field and select it 
 
@@ -166,7 +166,7 @@ Start by tracking product views on the product detail page of Luma:
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
 1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Library Loaded (Page Top)]**
-1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This ensures the rule runs after the `all pages - library loaded - set global variables - 1` that sets the global configuration.
+1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This order value ensures the rule runs after the `all pages - library loaded - set global variables - 1` that sets the global configuration.
 
     ![Analytics XDM rules](assets/set-up-analytics-pdp.png)
 
@@ -340,9 +340,9 @@ Now that you have set the variables, you can create the rule to send the complet
 
 1. In the **[!UICONTROL Actions]** section, select **[!UICONTROL Add]**
 
-1. As the **[!UICONTROL Extension]**, select  **[!UICONTROL Adobe Experience Platform Web SDK]** 
+1. As the **[!UICONTROL Extension]**, select **[!UICONTROL Adobe Experience Platform Web SDK]** 
 
-1. As the  **[!UICONTROL Action Type]**, select  **[!UICONTROL Send event]** 
+1. As the  **[!UICONTROL Action Type]**, select **[!UICONTROL Send event]** 
 
 1. As the **[!UICONTROL XDM]**, select the `xdm.variable.content` data element created in the previous lesson
 
@@ -353,7 +353,7 @@ Now that you have set the variables, you can create the rule to send the complet
 
     ![Save the rule](assets/create-rule-save-rule.png)   
 
-## Publish the rule in a library
+## Publish the rules in a library
 
 Next, publish the rule to your development environment so you can verify it works.
 
@@ -380,12 +380,12 @@ The library may take a few minutes to build and when it is complete it displays 
 
 ![Build complete](assets/create-rule-development-success.png)   
 
-As you can see on the [!UICONTROL Publishing Flow] screen, there is a lot more to the publishing process which is beyond the scope of this tutorial. This tutorial just uses a single library in your Development environment.
+As you can see on the [!UICONTROL Publishing Flow] screen, there is a lot more to the publishing process, which is beyond the scope of this tutorial. This tutorial just uses a single library in your Development environment.
 
-Now you are ready to validate the data in the request using the Adobe Experience Platform Debugger.
+Now, you are ready to validate the data in the request using the Adobe Experience Platform Debugger.
 
 [Next **Validate with Adobe Experience Platform Debugger**](validate-with-debugger.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

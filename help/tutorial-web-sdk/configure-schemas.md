@@ -17,7 +17,7 @@ Platform Web SDK uses your schema to standardize your web event data, send it to
 
 Businesses have their own language for communicating about their domain. Car dealerships deal with makes, models, and cylinders. Airlines deal with flight numbers, class of service, and seating assignments. Some of these terms are unique to a specific company, some are shared among an industry vertical, and some are shared by almost all businesses. For terms that are shared among an industry vertical or even broader, you can start doing powerful things with your data when you name and structure these terms in a common way.
 
-For example, many businesses deal with orders. What if, collectively, these businesses decided to model an order in a similar way? For example, what if the data model consisted of an object with a `priceTotal` property that represented the total price of the order? What if that object also had properties named `currencyCode` and `purchaseOrderNumber`? Maybe the order object contains a property named `payments` that would be an array of payment objects. Each object would represent a payment for the order. For example, perhaps a customer paid for part of the order with a gift card and paid for the rest using a credit card. You can start to construct a model that looks something like this:
+For example, many businesses deal with orders. What if, collectively, these businesses decided to model an order in a similar way? For example, what if the data model consisted of an object with a `priceTotal` property that represented the total price of the order? What if that object also had properties named `currencyCode` and `purchaseOrderNumber`? Maybe the order object contains a property named `payments` that would be an array of payment objects. Each object would represent a payment for the order. For example, perhaps a customer paid for part of the order with a gift card and the rest using a credit card. You can start to construct a model that looks something like this:
 
 ```json
 {
@@ -106,7 +106,7 @@ When possible, it is recommended to use existing field groups and adhere to a pr
 >In this exercise, you add the recommended pre-defined field groups for web data collection: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ and _**[!UICONTROL Consumer Experience Event]**_.
 >
 >
-> If you are only implementing **Adobe Analytics** with Web SDK and not sending any data to **Experience Platform**, use the [!UICONTROL Adobe Analytics ExperienceEvent Template] field group to define the XDM schema. This will be used in the [Setup Analytics](setup-analytics.md) lesson.  
+> If you are only implementing **Adobe Analytics** with Web SDK and not sending any data to **Experience Platform**, use the [!UICONTROL Adobe Analytics ExperienceEvent Template] field group to define the XDM schema. This is used in the [Setup Analytics](setup-analytics.md) lesson.  
 
 1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL Add]**
 
@@ -149,11 +149,11 @@ To complete this lesson, select **[!UICONTROL Save]** on the top right.
 ![Save Schema](assets/schema-select-save.png)
 
 
-Now you are able to reference this schema when you add the Web SDK extension to your tag property. 
+Now, you are able to reference this schema when you add the Web SDK extension to your tag property. 
 
 
 [Next: **Configure an identity namespace**](configure-identities.md)
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)

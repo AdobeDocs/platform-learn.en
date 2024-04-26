@@ -12,7 +12,7 @@ exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
 
 Learn how to implement the Adobe Journey Optimizer [web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) using Adobe Experience Platform Web SDK. This lesson covers the foundational web channel prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
 
-By following this lesson, Journey Optimizer users are equipped to effectively apply the web channel for advanced online personalization using the Journey Optimizer web designer.
+By following this lesson, Journey Optimizer users are equipped to use the web channel for advanced online personalization using the Journey Optimizer web designer.
 
 ![Web SDK and Adobe Analytics diagram](assets/dc-websdk-ajo.png)  
 
@@ -46,7 +46,7 @@ To complete the lessons in this section, you must first:
     > 1. The website is embedded within an iframe.
     > 1. The customer's QA or stage site is not externally accessible (it is an internal site).
 
-* When creating web experiences and including content from the Adobe Experience Manager Assets Essentials library, it's necessary to [configure the subdomain for publishing this content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/web-delegated-subdomains).
+* When creating web experiences and including content from the Adobe Experience Manager Assets Essentials library, it's necessary to [configure the subdomain for publishing this content](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/configure-web-channel/web-delegated-subdomains).
 * If using the content experimentation feature, ensure that your web dataset is also included in your reporting configuration.
 * Currently, two types of implementations are supported for enabling the authoring and delivery of web channel campaigns on your web properties:
     * Client-side only: To modify your website, you must implement the Adobe Experience Platform Web SDK.
@@ -240,7 +240,7 @@ To create the content experiment:
 
 1. When setting up an experiment using web channel and choosing the **[!UICONTROL Inbound Clicks]**, **[!UICONTROL Unique Inbound Clicks]**, **[!UICONTROL Page Views]**, or **[!UICONTROL Unique Page Views]** metrics, the **[!UICONTROL Click Action]** drop-down enables you to precisely track and monitor clicks and views on specific pages.
 
-1. Optionally you can designate a **[!UICONTROL Holdout]** that does not receive either of the two treatments. Leave this unchecked for now.
+1. Optionally, you can designate a **[!UICONTROL Holdout]** that does not receive either of the two treatments. Leave this unchecked for now.
 
 1. Also optionally, choose to **[!UICONTROL Distribute evenly]**. Check this option to ensure the treatment splits are always evenly split.
 
@@ -248,13 +248,13 @@ To create the content experiment:
 
 ### Edit Content using the Visual Helper
 
-Now let's author the web channel experience. To do so, use the Adobe Experience Cloud **[!UICONTROL Visual Helper]**. This tool is a browser extension compatible with Google Chrome and Microsoft&reg; Edge. Make sure you have downloaded the extension before attempting to build your experiences. Also ensure that the web page includes the Web SDK.
+Now, let's author the web channel experience. To do so, use the Adobe Experience Cloud **[!UICONTROL Visual Helper]**. This tool is a browser extension compatible with Google Chrome and Microsoft&reg; Edge. Make sure you have downloaded the extension before attempting to build your experiences. Also ensure that the web page includes the Web SDK.
 
 1. Within the **[!UICONTROL Action]** tab of the campaign, click **[!UICONTROL Edit content]**. Since you entered a single page URL as the surface, you should be ready to begin working in the composer.
 
     ![Edit content](assets/web-channel-edit-content.png)
 
-1. Now click **[!UICONTROL Edit web page]** to begin authoring.
+1. Now, click **[!UICONTROL Edit web page]** to begin authoring.
 
     ![Edit web page](assets/web-channel-edit-web-page.png)
 
@@ -291,7 +291,7 @@ Within the editor, add the HTML for the `Luma Loyalty Rewards – Gold Status` a
 
 ![Validate HTML](assets/web-channel-add-custom-html-validate.png)
 
-Now review the new custom HTML component for fit and feel.
+Now, review the new custom HTML component for fit and feel.
 
 ![Review custom HTML](assets/web-channel-review-custom-html.png)
 
@@ -343,7 +343,7 @@ As a best practice, monitor the **[!UICONTROL Web]** tab of the campaign live an
 
 The Adobe Experience Platform Debugger extension, available for both Chrome and Firefox, analyzes your web pages to identify issues in the implementation of Adobe Experience Cloud solutions.
 
-You can use the debugger on the Luma site to validate the web channel experience in production. This is a best practice once the Loyalty Rewards use case is up and running, to ensure everything is configured correctly.
+You can use the debugger on the Luma site to validate the web channel experience in production. This is a best practice once the Loyalty Rewards use case is up and running, to ensure that that everything is configured correctly.
 
 [Learn how to configure the debugger in your browser using the guide here](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/debugger/overview).
 
@@ -382,4 +382,4 @@ To begin validation using the debugger:
 
 >[!NOTE]
 >
->Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-launch/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
+>Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
