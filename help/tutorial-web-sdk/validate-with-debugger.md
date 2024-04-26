@@ -13,13 +13,13 @@ The Experience Platform Debugger is an extension available for Chrome and Firefo
 * [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 * [Chrome extension](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
 
-If you have never used the debugger before&mdash;and this one is different from the older Adobe Experience Cloud Debugger&mdash;you might want to watch this five-minute overview video:
+If you have never used the debugger before, you might want to watch this five-minute overview video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/32156?learn=on)
 
 In this lesson, you use the [Adobe Experience Cloud Debugger extension](https://chrome.google.com/webstore/detail/adobe-experience-cloud-de/ocdmogmohccmeicdhlhhgepeaijenapj) to replace the tag property hardcoded on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) with your own property.
 
-This technique is called environment switching and will be helpful later, when you work with tags on your own website. You are able to load your production website in your browser, but with your *development* tags environment. This ability enables you to confidently make and validate tags changes independently from your regular code releases. After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use tags in the first place!
+This technique is called environment switching and will be helpful later, when you work with tags on your own website. It allows you to to load your production website in your browser, but with your *development* tags library. This ability enables you to confidently make and validate tags changes independently from your regular code releases. After all, this separation of marketing tag releases from your regular code releases is one of the main reasons customers use tags in the first place!
 
 ## Learning objectives
 
@@ -58,7 +58,7 @@ The Experience Platform Debugger has a cool feature that allows you to replace a
 
     ![Select Actions > Replace](assets/validate-switch-environment.png)
 
-1. Since you are authenticated, the Debugger is going to pull in your available tag properties and environments. Select your property; in this case `Web SDK Course 3`
+1. Since you are authenticated, the Debugger is going to pull in your available tag properties and environments. Select your property
 1. Select your `Development` environment
 1. Select the **[!UICONTROL Apply]** button
 

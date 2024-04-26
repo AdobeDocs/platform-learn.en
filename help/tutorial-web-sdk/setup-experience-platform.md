@@ -224,7 +224,7 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 
     ![Customer profile](assets/experience-platform-validate-dataset-custProfile.png)
 
-You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP! And Journey Optimizer!)!
+You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP! And Journey Optimizer! And Customer Journey Analytics!).
 
 
 [Next: **Set up Adobe Analytics**](setup-analytics.md)

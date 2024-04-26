@@ -142,7 +142,7 @@ At the end of these steps, you should have the following data elements created:
 | `user.profile.attributes.loggedIn` | |
 | `user.profile.attributes.username` | |
 
-With these data elements in place, you are ready to start sending data to Platform Edge Network via the XDM object by creating a rule in tags.
+With these data elements in place, you are ready to start sending data to Platform Edge Network by creating a rule in tags.
 
 [Next: **Create a rule in tags**](create-tag-rule.md)
 
