@@ -7,8 +7,6 @@ role: Data Engineer, Developer
 level: Beginner,Intermediate
 jira: KT-6953
 recommendations: noDisplay,noCatalog
-index: no
-hide: yes
 ---
 
 # Implement Adobe Experience Cloud with Web SDK tutorial. {#implement-web-sdk}

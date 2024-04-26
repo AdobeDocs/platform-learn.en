@@ -1,6 +1,6 @@
 ---
-title: Conclusion and next steps
-description: What to do next after completing the tutorial
+title: Conclusion and next steps of the Web SDK tutorial
+description: What to do next after completing the Web SDK tutorial
 recommendations: display,noCatalog
 exl-id: ca28374a-9fe0-44de-a7ac-0aa046712515
 ---
@@ -20,6 +20,7 @@ Let's quickly review all that you have accomplished. You have:
   * Adobe Analytics
   * Adobe Audience Manager
   * Adobe Target
+  * Adobe Journey Optimizer
 * Used event forwarding to send data from Platform Edge Network to a web hook.
 * Validated the implementation using Adobe Experience Platform Debugger.
 

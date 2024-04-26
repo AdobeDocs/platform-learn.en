@@ -4,12 +4,13 @@ description: Learn how to implement Journey Optimizer web channel using Platform
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Web Channel,Web SDK
+jira: KT-15411
 exl-id: ab83ce56-7f54-4341-8750-b458d0db0239
 ---
 
-# Set up Journey Optimizer web channel
+# Set up Journey Optimizer web channel with Web SDK
 
-Learn how to implement the Journey Optimizer [web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) using Platform Web SDK. This lesson covers the foundational web channel prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
+Learn how to implement the Adobe Journey Optimizer [web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/web/get-started-web) using Adobe Experience Platform Web SDK. This lesson covers the foundational web channel prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
 
 By following this lesson, Journey Optimizer users are equipped to effectively apply the web channel for advanced online personalization using the Journey Optimizer web designer.
 

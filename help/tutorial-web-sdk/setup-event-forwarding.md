@@ -1,12 +1,13 @@
 ---
-title: Set up an event-forwarding property
+title: Set up an event forwarding with Platform Web SDK data
 description: Learn how to use event-forwarding property using Experience Platform Web SDK data. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Tags,Event Forwarding
+jira: KT-15414
 exl-id: 5a306609-2c63-42c1-8beb-efa412b8efe4
 ---
-# Set up an event-forwarding property
+# Set up event forwarding with Platform Web SDK data
 
-Learn how to use event-forwarding property using Experience Platform Web SDK data.
+Learn how to use event forwarding with Adobe Experience Platform Web SDK data.
 
 Event forwarding is a new type of property available in Data Collection. Event forwarding gives you the ability to send data to third-party, non-Adobe vendors straight from the Adobe Experience Platform Edge Network instead of the traditional client-side browser. Find out more about the advantages of event forwarding in the [Event Forwarding overview](https://experienceleague.adobe.com/en/docs/experience-platform/tags/event-forwarding/overview).
 

@@ -1,14 +1,15 @@
 ---
-title: Set up Decision Management with Platform Web SDK
+title: Set up Journey Optimizer Decision Management with Platform Web SDK
 description: Learn how to implement Decision Management using Platform Web SDK. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 solution: Data Collection,Experience Platform,Journey Optimizer
 feature-set: Journey Optimizer
 feature: Decision Management,Offers
+jira: KT-15412
 exl-id: f7852ef4-44b0-49df-aec8-cb211726247d
 ---
 # Set up Decision Management with Platform Web SDK
 
-Learn how to implement Decision Management using Platform Web SDK. This guide covers the foundational Decision Management prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
+Learn how to implement Adobe Journey Optimizer's Decision Management capabilty using Platform Web SDK. This guide covers the foundational Decision Management prerequisites, detailed steps for configuration, and a deep dive into a use case centered on loyalty status.
 
 By following this tutorial, Journey Optimizer users are equipped to effectively apply offer decisioning features, enhancing the personalization and relevance of their customer interactions.
 

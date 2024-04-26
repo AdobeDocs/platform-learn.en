@@ -2,11 +2,12 @@
 title: Create an XDM schema for web data
 description: Learn how to create an XDM schema for web data in the Data Collection interface. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Web SDK,Schemas
+jira: KT-15398
 exl-id: 2858ce03-4f95-43ac-966c-1b647b33ef16
 ---
 # Create an XDM schema for web data
 
-Learn how to create an XDM schema for web data in the Data Collection interface.
+Learn how to create an XDM schema for web data in the Adobe Experience Platform Data Collection interface.
 
 Experience Data Model (XDM) schemas are the building blocks, principles, and best practices for collecting data in Adobe Experience Platform.
 
@@ -119,7 +120,7 @@ When possible, it is recommended to use existing field groups and adhere to a pr
 
     ![Add Field Group](assets/schema-add-field-group.png)
 
-With both field groups, notice that you have access to the most commonly used key-value pairs required for data collection on the web. The [!UICONTROL display name] of each field appears to marketers in the segment builder interface of Platform-based applications and you can change the display name of standard fields to suit your needs. You can also remove fields you don't want. When you click on either field group name, the interface highlights what key-value pair groupings belong to it. In below example, you see what groups belong to **[!UICONTROL Consumer Experience Event]**.
+With both field groups, notice that you have access to the most commonly used key-value pairs required for data collection on the web. The [!UICONTROL display name] of each field appears to marketers in the segment builder interface of Platform-based applications and you can change the display name of standard fields to suit your needs. You can also remove fields you don't want. When you click on either field group name, the interface highlights what key-value pair groupings belong to it. In below example, you see what fields belong to **[!UICONTROL Consumer Experience Event]**.
 
 ![Schema Field Groups](assets/schema-consumer-experience-event.png)
 
@@ -137,7 +138,7 @@ It is a must-have object for any web-related data collection, as it houses the E
 
 >[!IMPORTANT]
 >
-> It is possible to enable **[!UICONTROL Profile]** for a schema before saving your schema. **Do not** enable it at this point. Once a schema is enabled for Profile, it cannot be disabled or deleted. Fields cannot be removed from schemas at this point either, although it is possible to [Deprecate Fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). These implications are important to keep in mind later on when you are working with your own data in your Production environment. 
+> It is possible to enable **[!UICONTROL Profile]** for a schema before saving your schema. **Do not** enable it at this point. Once a schema is enabled for Profile, it cannot be disabled or deleted without resetting the entire sandbox. Fields cannot be removed from schemas at this point either, although it is possible to [Deprecate Fields in the UI](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/field-deprecation-ui#deprecate). These implications are important to keep in mind later on when you are working with your own data in your Production environment. 
 >
 >
 >This setting is discussed more during the [Setup Experience Platform](setup-experience-platform.md) lesson.

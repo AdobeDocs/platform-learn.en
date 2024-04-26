@@ -1,12 +1,13 @@
 ---
-title: Create data elements
+title: Create data elements for Platform Web SDK
 description: Learn how to create an XDM object and map data elements to it in tags. This lesson is part of the Implement Adobe Experience Cloud with Web SDK tutorial.
 feature: Tags
+jira: KT-15401
 exl-id: d662ec46-de9b-44ba-974a-f81dfc842e68
 ---
 # Create data elements
 
-Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Then populate fields in your XDM schema with the Platform Web SDK extension Variable data element type. 
+Learn how to create data elements in tags for content, commerce, and identity data on the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html). Then populate fields in your XDM schema with the Adobe Experience Platform Web SDK extension Variable data element type. 
 
 ## Learning objectives
 
