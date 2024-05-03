@@ -35,5 +35,6 @@ recommendations: noDisplay,noCatalog
     + [In-app messages](journey-optimizer-inapp.md)
     + [Decision Management](journey-optimizer-offers.md)
   + [Target](target.md)
+  + [Customer Journey Analytics](customer-journey-analytics.md)
 + [Conclusion](conclusion.md)
   
