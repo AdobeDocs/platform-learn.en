@@ -73,6 +73,7 @@ auto-video-transcripts: true
   + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Data Hygiene {#data-hygiene}
   + [Delete datasets](/help/platform/data-hygiene/delete-datasets.md)
+  + [Pseudonymous profile and event expiration](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
