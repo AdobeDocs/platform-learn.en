@@ -20,7 +20,7 @@ Platform is an environment in which the word customer is broader than just the k
 
 ## Customer journey flow
 
-Go to [https://bootcamp.aepdemo.net](https://bootcamp.aepdemo.net). Click **Allow All**.
+Go to [https://bootcamp.aepdemo.net](https://publish9122.adobedemo.com/content/aep-bootcamp-experience/language-masters/en.html). Click **Allow All**.
 
 ![DSN](./images/web8.png)
 

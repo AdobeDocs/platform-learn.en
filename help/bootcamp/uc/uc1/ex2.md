@@ -34,13 +34,6 @@ On the Profile Viewer panel on your website, you can find the identity overview.
 
 ![Customer Profile](./images/identities.png)
 
-
-On the Profile Viewer panel, you can currently see this identity:
-
-| Namespace     | Identity       |
-|:-------------:| :---------------:|
-| Experience Cloud ID (ECID)          | 19428085896177382402834560825640259081 |
-
 With Adobe Experience Platform, all IDs are equally important. Previously, the ECID was the most important ID in the Adobe context and all other IDs were linked to the ECID in a hierarchical relation. With Adobe Experience Platform this is no longer the case, and every ID can be considered a primary identifier. 
 
 Typically, the primary identifier depends on the context. If you ask your Call Center, **What is the most important ID?** they will probably answer, **the phone number!** But if you ask your CRM team, they will answer, **The email address!**  Adobe Experience Platform understands this complexity and manages it for you. Every application, whether an Adobe application or non-Adobe application, will speak with Adobe Experience Platform by referring to the ID they consider primary. And it simply works.

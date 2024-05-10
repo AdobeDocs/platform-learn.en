@@ -7,7 +7,6 @@ doc-type: tutorial
 activity: develop
 solution: Experience Platform, Target
 feature: Audiences, Integrations
-
 exl-id: 6a76c2ab-96b7-4626-a6d3-afd555220b1e
 ---
 # 1.4 Take Action: send your audience to Adobe Target
