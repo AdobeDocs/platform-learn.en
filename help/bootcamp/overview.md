@@ -4,12 +4,6 @@ description: Starting point for participants of the Experience Makers Bootcamp
 doc-type: multipage-overview
 exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
 ---
----
-title: Experience Makers Bootcamp
-description: Starting point for participants of the Experience Makers Bootcamp
-doc-type: multipage-overview
-exl-id: 400bd9f1-229c-4016-b06b-8fc033f7dbf2
----
 # Experience Makers Bootcamp
 
 ## Overview
@@ -23,7 +17,6 @@ Personalisation at scale starts with understanding what can be improved, and a r
 ## Agenda
 
 ### Day 1
-
 
 9:30: Walk-In
 
