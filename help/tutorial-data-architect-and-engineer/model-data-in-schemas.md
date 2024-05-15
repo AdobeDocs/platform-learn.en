@@ -78,7 +78,7 @@ In this exercise, we will create a schema for Luma's loyalty data.
 
 ### Add standard field groups
 
-Next you will be prompted to add field groups to the schema. All fields must be added to schemas using groups. You can choose from a large set of industry-standard field groups provided by Adobe or create your own. As you start modeling your own data in Experience Platform, it is good to become familiar with the industry-standard field groups provided by Adobe. Whenever possible, it is a best practice to use them as they sometimes power downstream services, such as Customer AI, Attribution AI, and Adobe Analytics.
+Once the schema is created, you will be redirected to the Schema editor where you can add fields to the schema. You can add individual fields directly to the schema or use field groups. It is important to note that all individual fields are still assosiated with a class or field group. You can choose from a large set of industry-standard field groups provided by Adobe or create your own. As you start modeling your own data in Experience Platform, it is good to become familiar with the industry-standard field groups provided by Adobe. Whenever possible, it is a best practice to use them as they sometimes power downstream services, such as Customer AI, Attribution AI, and Adobe Analytics.
 
 When working with your own data, a big step will be to determine which of your own data should be captured in Platform and how it should be modeled. This large topic is discussed in more depth in the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In this tutorial, I will just be guiding you through the implementation of some pre-determined schemas.
 
