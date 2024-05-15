@@ -72,7 +72,7 @@ In this exercise, we will create a schema for Luma's loyalty data.
 1. Select **[!UICONTROL Next]**.
   ![Select base class](assets/schemas-loyaltySelectBaseClass.png)
 
-1. Enter `Luma Loyalty Schema` in the **[!UICONTROL Schema display name]** text field. Take some time to review and verify the base schema structure  that is shown in the canvas below.
+1. Enter `Luma Loyalty Schema` in the **[!UICONTROL Schema display name]** text field. In the canvas below, you can also review and verify the base schema structure that is provided by the class you have chosen.
 1. Select **[!UICONTROL Finish]** to create your schema.
   ![Finish creating the loyalty schema](assets/schemas-loyaltyFinishSchemaCreation.png)
 
