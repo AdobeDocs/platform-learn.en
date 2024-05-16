@@ -84,10 +84,12 @@ When working with your own data, a big step will be to determine which of your o
 
 To add field groups:
 
-1. In the **[!UICONTROL Add Field groups]** modal, select following field groups:
+1. Select **[!UICONTROL Add]** under the **[!UICONTROL Field Groups]** heading.
+![Add a new field group](assets/schemas-loyalty-addFieldGroup.png)
+1. In the **[!UICONTROL Add Field groups]** modal, select the following field groups:
    1. **[!UICONTROL Demographic Details]** for basic customer data like name and birthdate
    1. **[!UICONTROL Personal Contact Details]** for basic contact details like email address and phone number
-1. You can preview the fields contributed in the field group by selecting the icon on the right side of the row. 
+1. You can preview the fields contributed in the field group by selecting the icon on the right side of the row.
     ![Select standard field groups](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
 1. Check the **[!UICONTROL Industry]** > **[!UICONTROL Retail]** box to expose  industry-specific field groups.
@@ -98,12 +100,8 @@ To add field groups:
 
 Now take some time to explore the current state of the schema. The field groups have added standard fields related to a person, their contact details, and loyalty program status. You may find these two field groups useful when you create schemas for your own company's data. Select a specific field group row or check the box next to the field group name to see how the visualization changes. 
 
-To save the schema:
-
-1. Select the top node of the schema.
-1. Enter `Luma Loyalty Schema` as the **[!UICONTROL Display Name]**.
-1. Select **[!UICONTROL Save]**.
-![Name and save the schema](assets/schemas-loyalty-nameAndSave.png)
+To save the schema, select **[!UICONTROL Save]**.
+![Save the schema](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
