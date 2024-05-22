@@ -175,7 +175,7 @@ Scroll up and click **Ok**.
 
 ![ACOP](./images/jomsg21.png)
 
-You still need to give your journey a Name. You can do that by clicking the **Properties** icon in the top right side of your screen.
+You still need to give your journey a Name. You can do that by clicking the **Pencil** icon in the top left side of your screen.
 
 ![ACOP](./images/journeyname.png)
 

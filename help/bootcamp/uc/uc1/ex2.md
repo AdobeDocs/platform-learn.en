@@ -14,7 +14,7 @@ In this exercise, you'll login to Adobe Experience Platform and view your own Re
  
 ## Story
 
-In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the true experience system of record.
+In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing audience memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the true experience system of record.
 
 ## 1.2.1 Use the Customer Profile View in Adobe Experience Platform
 
@@ -24,7 +24,7 @@ Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After 
 
 Before you continue, you need to select a **sandbox**. The sandbox to select is named ``Bootcamp``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-![Data Ingestion](./images/sb1.png)
+
 
 In the left menu, go to **Profiles** and to **Browse**.
 
@@ -34,11 +34,8 @@ On the Profile Viewer panel on your website, you can find the identity overview.
 
 ![Customer Profile](./images/identities.png)
 
-On the Profile Viewer panel, you can currently see this identity:
 
-| Namespace     | Identity       |
-|:-------------:| :---------------:|
-| Experience Cloud ID (ECID)          | 19428085896177382402834560825640259081 |
+
 
 With Adobe Experience Platform, all IDs are equally important. Previously, the ECID was the most important ID in the Adobe context and all other IDs were linked to the ECID in a hierarchical relation. With Adobe Experience Platform this is no longer the case, and every ID can be considered a primary identifier. 
 
@@ -56,13 +53,13 @@ Go to **Events**, where you can see entries for every experience event that is l
 
 ![Customer Profile](./images/profileee.png)
 
-Finally, go to the menu option **Segment membership**. You'll now see all segments that qualify for this profile.
+Finally, go to the menu option **Audience membership**. You'll now see all audiences that qualify for this profile.
 
 ![Customer Profile](./images/profileseg.png)
 
-Let's now create a new segment that will allow you to personalize the customer experience for an anonymous or know customer.
+Let's now create a new audience that will allow you to personalize the customer experience for an anonymous or know customer.
 
-Next Step: [1.3 Create a segment - UI](./ex3.md)
+Next Step: [1.3 Create an audience - UI](./ex3.md)
 
 [Go Back to User Flow 1](./uc1.md)
 
