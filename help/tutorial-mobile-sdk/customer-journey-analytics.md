@@ -2,6 +2,8 @@
 title: Report and analyze your mobile app data with Customer Journey Analytics
 description: Learn how to report and analyze the interactions with your mobile app using Customer Journey Analytics.
 solution: Data Collection,Experience Platform,Analytics
+hide: yes
+hidefromtoc: yes
 ---
 # Report and analyze using Customer Journey Analytics
 
@@ -446,5 +448,3 @@ You should now have a basic understanding of how to report and visualize on your
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
 Next: **[Conclusion and next steps](conclusion.md)**
-
-
