@@ -109,7 +109,7 @@ To save the schema, select **[!UICONTROL Save]**.
 
 ### Add a custom field group
 
-Now let's create a custom field group. 
+Now let's create a custom field group.
 
 While the loyalty field group contained a `loyaltyID` field, Luma would like to manage all of their system identifiers in a single group to help ensure consistency across their schemas.
 
