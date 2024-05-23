@@ -79,9 +79,9 @@ A connection in Customer Journey Analytics defines the datasets (and the data wi
          | ODE DecisionEvents - *sandbox name* decisioning | identityMap  | timestamp | Mobile App Data | enable | enable |
          | AJO Push Tracking Experience Event Dataset | identityMap  | timestamp | Mobile App Data | enable | enable |
 
-         ![CJA Connections 3](assets/cja-connections-3.png)
-
       1. Select **[!UICONTROL Add datasets]**.
+
+         ![CJA Connections 3](assets/cja-connections-3.png)
 
 1. Back in the **[!UICONTROL Connections]** > **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Connection]**, select **[!UICONTROL Save]** to save your connection.
 
@@ -150,8 +150,6 @@ To create your data view:
       ![CJA Data view component settings](assets/cja-dataview-component-settings.png)
 
    1. Now that you understand how to add fields to your data view and configure the resulting component, use the tables below for a list of schema fields to add as metric or dimension. Use the **Schema Path** column value from the table below to search for or traverse to the specific schema field. Once dragged and dropped, check the **Component Settings** column value in the table whether specific settings are required for a component, like modifying its **[!UICONTROL Component name]** or defining **[!UICONTROL INCLUDE EXCLUDE VALUES]**. 
-
-      ![CJA Data view component settings](assets/cja-dataview-component-settings.png)
 
       **METRICS**
 
@@ -226,9 +224,9 @@ To create your project:
 
    1. Select **[!UICONTROL Blank Workspace project]** from the popup dialog.
 
-      ![CJA Projects - 1](assets/cja-projects-1.png)
-
    1. Select **[!UICONTROL Create]**.
+
+      ![CJA Projects - 1](assets/cja-projects-1.png)
 
 1. You are presented with the **[!UICONTROL New project]** interface. In this interface, you build your reports and visualizations.
 
@@ -351,7 +349,9 @@ Based on the previous report, you want to visualize the fallout in the commerce 
    ![CJA Projects 18](assets/cja-projects-18.png) 
    Alternatively, you can drag and drop the **[!UICONTROL Products View]** dimension below the **[!UICONTROL All people]** dimension in the **[!UICONTROL Fallout]** visualization.
 
-1. Repeat the above step for **[!UICONTROL Product Add To Lists]** and **[!UICONTROL Purchases]** dimensions. Your **[!UICONTROL Fallout]** visualization now shows a visual representation of the conversion funnel for your products.
+1. Repeat the above step for **[!UICONTROL Product Add To Lists]** and **[!UICONTROL Purchases]** dimensions. 
+ 
+Your **[!UICONTROL Fallout]** visualization now shows a visual representation of the conversion funnel for your products.
    ![CJA Projects 19](assets/cja-projects-19.png)
 
 Do not forget to save your project!
