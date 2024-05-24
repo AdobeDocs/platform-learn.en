@@ -113,7 +113,9 @@ Now let's create a custom field group.
 
 While the loyalty field group contained a `loyaltyID` field, Luma would like to manage all of their system identifiers in a single group to help ensure consistency across their schemas.
 
-Field groups must be created in the schema workflow. To create the field group:
+Field groups must be created in the schema workflow. You can add a new custom field to your schema and create a custom field group that way or you can create a custom field group first and then add fields to it. In this tutorial we start with creating a custom field group.
+
+To create the field group:
 
 1. Select **[!UICONTROL Add]** under the **[!UICONTROL Schema Field Groups]** heading
 ![Add a new field group](assets/schemas-loyalty-addFieldGroup.png)
@@ -130,10 +132,11 @@ The new, empty field group is added to your schema. The **[!UICONTROL +]** butto
       1. **[!UICONTROL Field name]**: `systemIdentifier`
       1. **[!UICONTROL Display name]**: `System Identifier`
       1. **[!UICONTROL Type]**: **[!UICONTROL Object]**
+      1. In the **[!UICONTROL Field Group]** dropdown select the **Luma Identity profile field group** that we have created.
+        ![Add a new field group](assets/schemas-loyalty-addSystemIdentifier.png)
       1. Select **[!UICONTROL Apply]**
-
-    ![Add a new field group](assets/schemas-loyalty-addSystemIdentifier.png)
-
+        ![Apply new field properties](assets/schemas-loyalty-applySystemIdentifier.png)
+    
 Now add two fields under the `systemIdentifier` object:
 
    1. First field
@@ -171,7 +174,7 @@ Now we will create a schema using the API.
 >
 > If you prefer to skip the API exercise, you can create the following schema using the user interface method:
 >
-> 1. Use the [!UICONTROL XDM Individual Profile] class
+> 1. Use the [!UICONTROL Individual Profile] class
 > 1. Name it `Luma CRM Schema`
 > 1. Use the following field groups: Demographic Details, Personal Contact Details, and Luma Identity profile field group
 
@@ -205,7 +208,7 @@ First we create the empty schema:
   ![Create the CRM schema](assets/schemas-crm-createSchemaCall.png) 
 
 1. The new schema should be visible in the user interface but without any field groups
-  ![Create the CRM schema](assets/schemas-loyalty-emptySchemaInTheUI.png) 
+  ![Create the CRM schema](assets/schemas-loyalty-emptySchemaInTheUI.png)
 
 >[!NOTE]
 >
@@ -279,21 +282,21 @@ Verify that the field group has been added to the schema by checking both the AP
 
 ## Create Offline Purchase Events Schema
 
-Now let's create a schema based on the **[!UICONTROL XDM ExperienceEvent]** class for Luma's offline purchase data. Since you are now getting familiar with the schema editor user interface, I will reduce the number of screenshots in the instructions:
+Now let's create a schema based on the **[!UICONTROL Experience Event]** class for Luma's offline purchase data. Since you are now getting familiar with the schema editor user interface, I will reduce the number of screenshots in the instructions:
 
-1. Create a schema with the **[!UICONTROL XDM ExperienceEvent]** class
+1. Create a schema with the **[!UICONTROL Experience Event]** class.
+1. Name your schema `Luma Offline Purchase Events Schema`.
 1. Add the standard field group **[!UICONTROL Commerce Details]** to capture common order details. Spend a few minutes exploring the objects inside.
-1. Search for `Luma Identity profile field group`. It is not available! Remember that field groups are tied to a class, and since we are using a different class for this schema we can't use it. We we need to add a new field group for the XDM ExperienceEvent class containing the identity fields. Our data type will make that really easy! 
+1. Search for `Luma Identity profile field group`. It is not available! Remember that field groups are tied to a class, and since we are using a different class for this schema we can't use it. We need to add a new field group for the XDM ExperienceEvent class containing the identity fields. Our data type will make that really easy!
 1. Select the **[!UICONTROL Create new field group]** radio button
 1. Enter the **[!UICONTROL Display name]** as `Luma Identity ExperienceEvent field group` and select the **[!UICONTROL Add field groups]** button
-1.  Make sure the **[!UICONTROL +]** buttons appear on in the **[!UICONTROL Structure]** section so you can add new fields
-1. In **[!UICONTROL Structure]** section, select **[!UICONTROL +]** at top level of the schema
-1. As the **[!UICONTROL Field Name]**, enter `systemIdentifier`
-1. As the **[!UICONTROL Display Name]**, enter `System Identifier` 
-1. As the **[!UICONTROL Type]**, select **System Identifier** which is the custom data type you created earlier
-1. Select the **[!UICONTROL Apply]** button 
-1. Name your schema `Luma Offline Purchase Events Schema`
-1. Select the **[!UICONTROL Save]** button
+1. Select **[!UICONTROL +]** next to the name of the schema.
+1. As the **[!UICONTROL Field Name]**, enter `systemIdentifier`.
+1. As the **[!UICONTROL Display Name]**, enter `System Identifier`.
+1. As the **[!UICONTROL Type]**, select **System Identifier** which is the custom data type you created earlier.
+1. As the **[!UICONTROL Field Group]** select **Luma Identity ExperienceEvent field group**.
+1. Select the **[!UICONTROL Apply]** button.
+1. Select the **[!UICONTROL Save]** button.
 
 Note how the data type added all of the fields!
 
@@ -307,14 +310,14 @@ Also, select **[!UICONTROL XDM ExperienceEvent]** under the **[!UICONTROL Class]
 
 Now we are going to create one more schema for Luma's website data. By this point you should be an expert at creating schemas! Build the following schema with these properties
 
-| Property         |  Value          |  
+| Property         |  Value          |
 |---------------|-----------------|
-| Class  | XDM ExperienceEvent   |  
-| Field group          | AEP Web SDK ExperienceEvent Mixin | 
-| Field group          | Consumer Experience Event | 
-| Schema Name    | Luma Web Events Schema   | 
+| Class  | Experience Event   |
+| Schema Name    | Luma Web Events Schema   |
+| Field group          | AEP Web SDK ExperienceEvent |
+| Field group          | Consumer Experience Event |
 
-Select the **[!UICONTROL Consumer Experience Event]** field group. This field group contains the commerce and productListItems objects that were also in [!UICONTROL Commerce Details]. Indeed [!UICONTROL Consumer Experience Event] is a combination of several other standard field groups that are also available separately. [!UICONTROL AEP Web SDK ExperienceEvent Mixin] field group also contains other field groups, including some of the same ones in [!UICONTROL Consumer Experience Event]. Fortunately, they blend together seamlessly.
+Select the **[!UICONTROL Consumer Experience Event]** field group. This field group contains the commerce and productListItems objects that were also in [!UICONTROL Commerce Details]. Indeed [!UICONTROL Consumer Experience Event] is a combination of several other standard field groups that are also available separately. [!UICONTROL AEP Web SDK ExperienceEvent] field group also contains other field groups, including some of the same ones in [!UICONTROL Consumer Experience Event]. Fortunately, they blend together seamlessly.
 
 Notice that we didn't add the `Luma Identity ExperienceEvent field group` to this schema. This is because the Web SDK has a different way of collecting identities. If you select the **[!UICONTROL XDM ExperienceEvent]** class in the **[!UICONTROL Composition]** section of the schema editor, you will notice that one of the fields it adds by default is called **[!UICONTROL IdentityMap]**. [!DNL IdentityMap] is used by various Adobe applications to link to Platform. You will see how identities are sent to Platform via identityMap in the streaming ingestion lesson.
 
@@ -329,13 +332,17 @@ By using the  [!UICONTROL Commerce Details] and [!UICONTROL Consumer Experience 
 
 First we must create a schema for Luma's product catalog using a custom class:
 
-1. Select the **[!UICONTROL Create schema]** button and select the **[!UICONTROL Browse]** option from the dropdown
+1. Select the **[!UICONTROL Create schema]** button.
+1. In the Create schema workflow, select **[!UICONTROL Other]** option.
   ![Create new Schema](assets/schemas-newSchema-browseClasses.png)
-1. Select the **[!UICONTROL Create new class]** radio button
+1. Select the **[!UICONTROL Create class]** button
 1. Name it `Luma Product Catalog Class`
 1. Leave the **[!UICONTROL Behavior]** as **[!UICONTROL Record]**
-1. Select the **[!UICONTROL Assign Class]** button
+1. Select the **[!UICONTROL Create]** button.
   ![Create new Class](assets/schemas-productClass.png)
+1. The **Luma Product Catalog Class** you have created appears in the Classes table below. Make sure the class is selected, then select **[!UICONTROL Next]**.
+  ![New Class added](assets/schemas-productClassSelected.png)
+1. Name the schema `Luma Product Catalog Schema`.
 1. Create a new [!UICONTROL field group] called `Luma Product Catalog field group` with the following fields:
    1. productName: Product Name: String
    1. productCategory: Product Category: String
@@ -343,7 +350,6 @@ First we must create a schema for Luma's product catalog using a custom class:
    1. productSku: Product SKU: String | Required
    1. productSize: Product Size: String
    1. productPrice: Product Price: Double
-1. Name the schema `Luma Product Catalog Schema` (be sure to update the correct field and not update the class name)
 1. **[!UICONTROL Save]** the schema
   
 Your new schema should look like this. Note how the `productSku` field is listed in the [!UICONTROL Required fields] section:
