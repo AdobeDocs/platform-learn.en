@@ -72,7 +72,6 @@ auto-video-transcripts: true
   + [Enforce consent](/help/platform/governance/enforce-consent.md)
   + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Data Hygiene {#data-hygiene}
-  + [Delete datasets](/help/platform/data-hygiene/delete-datasets.md)
   + [Pseudonymous profile and event expiration](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
@@ -90,6 +89,8 @@ auto-video-transcripts: true
   + [Stream data using Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
   + [Web SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
   + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
++ Data Lifecycle {#data-lifecycle}
+  + [Expire datasets](/help/platform/data-lifecycle/expire-datasets.md)
 + Data Science Workspace {#data-science-workspace}
   + [Overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
   + [Architecture](data-science-workspace/architecture-overview.md)
