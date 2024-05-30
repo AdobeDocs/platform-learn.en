@@ -72,7 +72,10 @@ auto-video-transcripts: true
   + [Enforce consent](/help/platform/governance/enforce-consent.md)
   + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Data Hygiene {#data-hygiene}
-  + [Pseudonymous profile and event expiration](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+  + [Pseudonymous profile and event expiration (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
+  + [Data prep for data hygiene](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+  + [Expire datasets](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
+  + [Update a profile attribute](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Data Ingestion {#data-ingestion}
   + [Overview](/help/platform/data-ingestion/understanding-data-ingestion.md)
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
