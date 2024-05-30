@@ -78,9 +78,9 @@ In this exercise, we will create a schema for Luma's loyalty data.
 
 ### Add standard field groups
 
-Once the schema is created, you will be redirected to the Schema editor where you can add fields to the schema. You can add individual fields directly to the schema or use field groups. It is important to note that all individual fields are still assosiated with a class or field group. You can choose from a large set of industry-standard field groups provided by Adobe or create your own. As you start modeling your own data in Experience Platform, it is good to become familiar with the industry-standard field groups provided by Adobe. Whenever possible, it is a best practice to use them as they sometimes power downstream services, such as Customer AI, Attribution AI, and Adobe Analytics.
+Once the schema is created, you will be redirected to the Schema editor where you can add fields to the schema. You can add individual fields directly to the schema or use field groups. It is important to note that all individual fields are still associated with a class or field group. You can choose from a large set of industry-standard field groups provided by Adobe or create your own. As you start modeling your own data in Experience Platform, it is good to become familiar with the industry-standard field groups provided by Adobe. Whenever possible, it is a best practice to use them as they sometimes power downstream services, such as Customer AI, Attribution AI, and Adobe Analytics.
 
-When working with your own data, a big step will be to determine which of your own data should be captured in Platform and how it should be modeled. This large topic is discussed in more depth in the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In this tutorial, I will just be guiding you through the implementation of some pre-determined schemas.
+When working with your own data, a significant step will be to determine which of your own data should be captured in Platform and how it should be modeled. This large topic is discussed in more depth in the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In this tutorial, I will just guide you through the implementation of some pre-determined schemas.
 
 To add field groups:
 
@@ -92,28 +92,33 @@ To add field groups:
 1. You can preview the fields contributed in the field group by selecting the icon on the right side of the row.
     ![Select standard field groups](assets/schemas-loyalty-addFirstTwoFieldGroups.png)
 
-1. Check the **[!UICONTROL Industry]** > **[!UICONTROL Retail]** box to expose  industry-specific field groups.
-1. Select **[!UICONTROL Loyalty]** to add the loyalty program fields.
-1. Select **[!UICONTROL Add field group]** to add all three field groups to the schema.
+1. Check the **[!UICONTROL Industry]** > **[!UICONTROL Retail]** box to expose industry-specific field groups.
+1. Select **[!UICONTROL Loyalty Details]** to add the loyalty program fields.
+1. Select **[!UICONTROL Add field groups]** to add all three field groups to the schema.
     ![Add standard field groups to loyalty schema](assets/schemas-loyalty-saveOotbMixins.png)
 
 
-Now take some time to explore the current state of the schema. The field groups have added standard fields related to a person, their contact details, and loyalty program status. You may find these two field groups useful when you create schemas for your own company's data. Select a specific field group row or check the box next to the field group name to see how the visualization changes. 
+Now, take some time to explore the current state of the schema. The field groups have added standard fields related to a person, their contact details, and loyalty program status. You may find these two field groups useful when you create schemas for your own company's data. Select a specific field group row or check the box next to the field group name to see how the visualization changes. 
 
 To save the schema, select **[!UICONTROL Save]**.
 ![Save the schema](assets/schemas-loyalty-saveSchema.png)
 
 >[!NOTE]
 >
->It is okay if a field group adds a field for a data point that you don't collect. For example, "faxPhone" might be a field for which Luma doesn't collect data. That's fine. Just because a field is defined in the schema doesn't mean that data for it *must* be ingested later on.
+>It is okay if a field group adds a field for a data point that you don't collect. For example, "faxPhone" might be a field for which Luma doesn't collect data. That's fine. Just because a field is defined in the schema doesn't mean that data for it *must* be ingested later on. You can also remove the field from the schema.
 
 ### Add a custom field group
 
-Now let's create a custom field group.
+Now, let's create a custom field group.
 
 While the loyalty field group contained a `loyaltyID` field, Luma would like to manage all of their system identifiers in a single group to help ensure consistency across their schemas.
 
-Field groups must be created in the schema workflow. You can add a new custom field to your schema and create a custom field group that way or you can create a custom field group first and then add fields to it. In this tutorial we start with creating a custom field group.
+Field groups must be created in the schema workflow. You can either:
+
+* Add a new custom field to your schema first and then create a custom field group, or 
+* Create a custom field group first and then add fields to it. 
+
+In this tutorial, we start with creating a custom field group.
 
 To create the field group:
 
