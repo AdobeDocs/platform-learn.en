@@ -6,7 +6,7 @@ role: Data Engineer, Data Architect
 level: Experienced
 jira: KT-10697
 thumbnail: 345065.jpeg
-last-substantial-update: 2022-07-27
+last-substantial-update: 2024-05-29
 exl-id: 7764de70-e0c1-48a8-8d1f-a5426f8d580a
 ---
 # Schedule dataset deletes
