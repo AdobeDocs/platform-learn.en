@@ -19,7 +19,7 @@ At the end of this lesson, you will be able to:
 
 * Configure a datastream to enable Adobe Analytics
 * Know which standard XDM fields auto-map to Analytics variables
-* Set custom Analytics variables using the Adobe Analytics ExperienceEvent Template field group or processing rules
+* Set Analytics variables in the data object
 * Send data to another report suite by overriding the datastream
 * Validate Adobe Analytics variables using Debugger and Assurance
 
@@ -59,38 +59,24 @@ Platform Web SDK sends data from your website to Platform Edge Network. Your dat
 >
 >In this tutorial, you only configure the Adobe Analytics report suite for your development environment. When you create datastreams for your own website, you should create additional datastreams and report suites for your staging and production environments.
 
-## XDM schemas and Analytics variables
+## Set Analytics variables
 
-Congratulations! You have already configured a schema compatible with Adobe Analytics in the [Configure a schema](configure-schemas.md) lesson!
+There are several ways to set Analytics variables in a Web SDK implementation:
 
-But you might be wondering, how do I set all my props, evars and events?
+1. Automatic mapping of XDM fields to Analytics variables (automatic).
+1. Set fields in the `data` object (recommended).
+1. Map XDM fields to Analytics variables in Analytics processing rules (no longer recommended).
+1. Map to Analytics variables directly in the XDM schema (no longer recommended).
 
-There are several approaches, which can be used simultaneously:
-
-1. Set standard XDM fields and some will automatically map to Analytics variables.
-1. Map additional XDM fields to Analytics variables in Analytics processing rules.
-1. Map to Analytics variables directly in the XDM schema.
-
-<!-- Implementing Platform Web SDK should be as product-agnostic as possible. For Adobe Analytics, mapping eVars, props, and events doesn't occur during schema creation, nor during the tag rules configuration as it has been done traditionally. Instead, every XDM key-value pair becomes a Context Data Variable that maps to an Analytics variable in one of two ways: 
-
-1. Automatically mapped variables using reserved XDM fields
-1. Manually mapped variables using Analytics Processing Rules
-
-To understand what XDM variables are auto-mapped to Adobe Analytics, please see [Variables automatically mapped in Analytics](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). Any variable that is not auto-mapped must be manually mapped. 
-
- 1. **Product-agnostic XDM**: maintain a semantic key-value pair XDM schema and use [Adobe Analytics Processing Rules](https://experienceleague.adobe.com/en/docs/analytics/admin/admin-tools/manage-report-suites/edit-report-suite/report-suite-general/c-processing-rules/processing-rules) to map the XDM fields to eVars, props, and so on. By a semantic XDM schema, we mean that the field names themselves have meaning. For example, the field name `web.webPageDetails.pageName` has more meaning than say `prop1` or `evar3`.
-
-
- 1. **Analytics-specific XDM**: Use a purpose-built Adobe Analytics field group in the XDM schema called `Adobe Analytics ExperienceEvent Template`
- 
-The approach Adobe has seen customers prefer is the **Analytics-specific XDM**, because it skips the mapping step in the Adobe Analytics Processing Rules interface. The steps in this lesson use the **Analytics-specific XDM** approach.
--->
+As of May 2024, you no longer need to create an XDM schema to implement Adobe Analytics with Platform Web SDK. The `data` object (and the `data.variable` data element you created in this tutorial) can be used to set all custom Analytics variables. Setting these variables in the data object will be familiar to existing Analytics customers, is more efficient than using processing rules interface, and prevents unnecessary data taking up space in Real-Time Customer Profiles (important if you have Real-Time Customer Data Platform or Journey Optimizer).
 
 ### Automatically mapped fields
 
-Many XDM fields are automatically mapped to Analytics variables.
+Many XDM fields are automatically mapped to Analytics variables. For the most up-to-date list of mappings, please see [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-The schema created in the [Configure a schema](configure-schemas.md) lesson contains a few auto-mapped to Analytics variables, as outlined in this table:
+This occurs if _even if you have not defined a custom schema_. Experience Platform Web SDK automatically collects some data and sends them to Platform Edge Network as XDM fields. For example, Web SDK reads the current page URL and sends it as `web.webPageDetails.URL`. This field is forwarded to Adobe Analytics and is automatically populates the Page URL reports in Adobe Analytics.
+
+When you implement Web SDK for Analytics and Platform-based application, you will create a custom XDM schema, as you have in this tutorial in the [Configure a schema](configure-schemas.md) lesson. Some of the XDM fields you have implemented auto-map to Analytics variables, as outlined in this table:
 
 |XDM to Analytics auto-mapped variables|Adobe Analytics variable|
 |-------|---------|
@@ -109,12 +95,30 @@ The schema created in the [Configure a schema](configure-schemas.md) lesson cont
 |`productListItems[].quantity`|s.products=;;product quantity;;;|
 |`productListItems[].priceTotal`|s.product=;;;product price;;|
 
-The individual sections of the Analytics product string are set through different XDM variables under the `productListItems` object. 
+The individual sections of the Analytics product string are set through different XDM variables under the `productListItems` object.
+
 >As of August 18, 2022, `productListItems[].SKU` takes priority for mapping to the product name in the s.products variable. 
 >The value set to `productListItems[].name` is mapped to the product name only if `productListItems[].SKU` does not exist. Otherwise, it is unmapped and available in context data. 
 >Do not set an empty string or null to `productListItems[].SKU`. This has the undesired effect of mapping to the product name in the s.products variable.
 
-For the most up-to-date list of mappings, please see [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars). 
+### Set variables in the data object
+
+Setting variables in the `data` object is the recommended way to set Analytics variables with Web SDK. Setting variables in the data object can also overwrite any of the automatically-mapped variables.
+
+First of all, what is the `data` object? In any Web SDK event you can send two objects with custom data, the `data` object and the `xdm` object. Both are sent to Platform Edge Network, but only the `xdm` object is sent to the Experience Platform dataset. Properties in the `data` object can be mapped on the Edge to `xdm` fields using the Data Prep for Data Collection feature, but otherwise are not sent to Experience Platform. This makes it an ideal way to send data to applications like Analytics, which aren't natively built on Experience Platform.
+
+Here are the two objects in a generic Web SDK call:
+
+![data and xdm objects](assets/analytics-data-object-intro.png)
+
+Adobe Analytics is configured to look for any properties in the `data.__adobe.analytics` object and use them for Analytics variables.
+
+Now let's do this.
+
+We use the `data.variable` data element t
+
+
+ <!--
 
 
 ### Map to Analytics variables with processing rules
@@ -175,6 +179,7 @@ As you just saw, basically all of the Analytics variables can be set in the `Ado
 >
 > Notice the `_experience` object under `productListItems` > `Item 1`. Setting any variable under this [!UICONTROL object] sets Product Syntax eVars or Events.
 
+-->
 
 ## Send data to a different report suite
 
