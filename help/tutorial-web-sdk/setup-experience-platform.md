@@ -227,6 +227,57 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 
 You have now enabled Platform Web SDK for Experience Platform (And Real-Time CDP! And Journey Optimizer! And Customer Journey Analytics!).
 
+### Create a Loyalty schema and ingest sample data
+
+Completion of this exercise is expected for customers of Real-Time Customer Data Platform and Journey Optimizer. 
+
+When Web SDK data is ingested into Adobe Experience Platform, it can be enriched by other data sources you have ingested into Platform. For example, when a user logs into the Luma site, an identity graph is constructed in Experience Platform and all other profile-enabled datasets can potentially be joined together to build Real-Time Customer Profiles. To see this in action, quickly create another dataset in Adobe Experience Platform with some sample loyalty data so that you can use Real-Time Customer Profiles with Real-Time Customer Data Platform and Journey Optimizer. Since you have already done similar exercises, the instructions will be brief.
+
+Create the loyalty schema:
+
+1. Create a new schema 
+1. Choose **[!UICONTROL Individual Profile]** as the [!UICONTROL base class]
+1. Name the schema `Luma Loyalty Schema`
+1. Add the [!UICONTROL Loyalty Details] field group
+1. Add the [!UICONTROL Demographic Details] field group
+1. Select the `Person ID` field and mark it as an [!UICONTROL Identity] and [!UICONTROL Primary identity] using the `Luma CRM Id` [!UICONTROL Identity namespace].
+1. Enable the schema for [!UICONTROL Profile]
+
+   ![Loyalty schema](assets/web-channel-loyalty-schema.png)
+
+To create the dataset and ingest the sample data:
+
+1. Create a new dataset from the `Luma Loyalty Schema`
+1. Name the dataset `Luma Loyalty Dataset`
+1. Enable the dataset for [!UICONTROL Profile]
+1. Download the sample file [luma-loyalty-forWeb.json](assets/luma-loyalty-forWeb.json)
+1. Drag-and-drop the file into your dataset
+1. Confirm that the data successfully ingested
+   
+    ![Loyalty schema](assets/web-channel-loyalty-dataset.png)
+
+### Create an audience
+
+Audiences group profiles together around common traits. Build a quick audience you can use in your web campaign:
+
+1. In the Experience Platform interface, go to **[!UICONTROL Audiences]** in the left navigation
+1. Select **[!UICONTROL Create audience]**
+1. Select **[!UICONTROL Build rule]**
+1. Select **[!UICONTROL Create]**
+
+   ![Create an audience](assets/web-campaign-create-audience.png)
+
+1. Select **[!UICONTROL Attributes]**
+1. Find the **[!UICONTROL Loyalty]** > **[!UICONTROL Tier]** field and drag it onto the **[!UICONTROL Attributes]** section
+1. Define the audience as users whose `tier` is `gold`
+1. Name the audience `Luma Loyalty Rewards – Gold Status`
+1. Select **[!UICONTROL Edge]** as the **[!UICONTROL Evaluation method]**
+1. Select **[!UICONTROL Save]**
+
+   ![Define the audience](assets/web-campaign-define-audience.png)
+
+Since this is a very simple audience, we can use the Edge evaluation method. Edge audiences evaluate on the edge, so in the same request made by the Web SDK to Platform Edge Network, we can evaluate the audience definition and confirm immediately if the user will qualify.
+
 
 [Next: **Set up Adobe Analytics**](setup-analytics.md)
 

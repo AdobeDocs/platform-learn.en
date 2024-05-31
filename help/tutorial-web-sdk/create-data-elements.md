@@ -250,29 +250,41 @@ Create these additional data elements by following the same steps:
 >
 >The [!UICONTROL JavaScript variable] data element type treats array references as dots instead of brackets, so referencing the username data element as `digitalData.user[0].profile[0].attributes.username` **will not work**.
 
-## Create Variable data element
+## Create Variable data elements for XDM and data objects
 
-After you create the data elements, map them to the XDM using the **[!UICONTROL Variable]** data element that defines the schema used for the XDM object. This object should conform to the XDM schema you created during the [Configure a schema](configure-schemas.md) lesson. 
+The data elements you just created will be used to build an XDM object (for Platform applications) and a data object (for Analytics, Target, and Audience Manager). These objects have their own special data elements called **[!UICONTROL Variable]** data elements which are very easy to create. 
 
-To create the Variable data element:
+To create the Variable data element for XDM, you tie it to the schema you created in the [Configure a schema](configure-schemas.md) lesson:
 
 1. Select **[!UICONTROL Add Data element]**
 1. Name your Data Element `xdm.variable.content`. It is recommended you prefix with "xdm" the Data Elements specific to XDM to better organize your tag property
 1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL Extension]**
 1. Select the **[!UICONTROL Variable]** as the **[!UICONTROL Data Element Type]**
+1. Select **[!UICONTROL XDM]** as the **[!UICONTROL property]**
 1. Select the appropriate Experience Platform **[!UICONTROL Sandbox]**
 1. Select the appropriate **[!UICONTROL Schema]**, in this case `Luma Web Event Data`
 1. Select **[!UICONTROL Save]**
 
-    ![Variable data element](assets/analytics-tags-data-element-xdm-variable.png)
+    ![Variable data element for XDM](assets/analytics-tags-data-element-xdm-variable.png)
+
+Next, create the Variable data element for your data object:
+
+1. Select **[!UICONTROL Add Data element]**
+1. Name your Data Element `data.variable`. It is recommended you prefix with "data" the Data Elements specific to data object to better organize your tag property
+1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL Extension]**
+1. Select the **[!UICONTROL Variable]** as the **[!UICONTROL Data Element Type]**
+1. Select **[!UICONTROL data]** as the **[!UICONTROL property]**
+1. Select **[!UICONTROL Save]**
+
+    ![Variable data element for data object](assets/data-element-data-variable.png.png)
 
 
 At the end of these steps, you should have the following data elements created:
 
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
 -----------------------------|-------------------------------
-| `cart.orderId` | `xdm.variable.content` |
-| `cart.productInfo`| |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo`| `xdm.variable.content` |
 | `cart.productInfo.purchase`| |
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
@@ -285,7 +297,7 @@ At the end of these steps, you should have the following data elements created:
 
 >[!TIP]
 >
->In a future [Create tag rules](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data element allows you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**.
+>In a future [Create tag rules](create-tag-rule.md) lesson, you learn how the **[!UICONTROL Variable]** data elements allow you to stack multiple rules in tags using the **[!UICONTROL Update Variable Action type]**.
 
 With these data elements in place, you are ready to start sending data to Platform Edge Network with a tags rule. But first, learn about collecting identities with Web SDK. 
 

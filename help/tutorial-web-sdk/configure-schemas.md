@@ -13,6 +13,10 @@ Experience Data Model (XDM) schemas are the building blocks, principles, and bes
 
 Platform Web SDK uses your schema to standardize your web event data, send it to the Platform Edge Network, and ultimately forward the data to any Experience Cloud applications configured in the datastream. This step is critical as it defines a standard data model required for ingesting customer experience data into Experience Platform and enables downstream services and applications built on these standards. 
 
+>[!NOTE]
+>
+>An XDM schema is _not required_ to implement Adobe Analytics, Adobe Target, or Adobe Audience Manager with Web SDK (data can be passed in the `data` object instead of the `xdm` object as you will see later). An XDM schema is required for the most performant implementations of Platform-native applications like Journey Optimizer, Real-Time Customer Data Platform, Customer Journey Analytics. While you may decide not to use an XDM schema in your own implementation, you are expected to do so as part of this tutorial.
+
 ## Why model the data?
 
 Businesses have their own language for communicating about their domain. Car dealerships deal with makes, models, and cylinders. Airlines deal with flight numbers, class of service, and seating assignments. Some of these terms are unique to a specific company, some are shared among an industry vertical, and some are shared by almost all businesses. For terms that are shared among an industry vertical or even broader, you can start doing powerful things with your data when you name and structure these terms in a common way.
@@ -105,8 +109,7 @@ When possible, it is recommended to use existing field groups and adhere to a pr
 > 
 >In this exercise, you add the recommended pre-defined field groups for web data collection: _**[!UICONTROL AEP Web SDK ExperienceEvent]**_ and _**[!UICONTROL Consumer Experience Event]**_.
 >
->
-> If you are only implementing **Adobe Analytics** with Web SDK and not sending any data to **Experience Platform**, use the [!UICONTROL Adobe Analytics ExperienceEvent Template] field group to define the XDM schema. This is used in the [Setup Analytics](setup-analytics.md) lesson.  
+
 
 1. In the **[!UICONTROL Field groups]** section, select **[!UICONTROL Add]**
 

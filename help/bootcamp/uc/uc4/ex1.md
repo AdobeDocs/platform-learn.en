@@ -12,7 +12,7 @@ exl-id: 587be8bc-8ebe-4f30-99d8-ba88ce40caf7
 
 ## Objectives
 
-- Understand the CJA Application Service
+- Understand the CJA Application
 - Learn how to position CJA
 - Understand the CJA workflow: from data connection to insights
 

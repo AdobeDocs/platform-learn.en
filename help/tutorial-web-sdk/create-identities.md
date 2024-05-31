@@ -127,9 +127,9 @@ At the end of these steps, you should have the following data elements created:
 
 |Core Extension Data Elements | Platform Web SDK Extension Data Elements|
 -----------------------------|-------------------------------
-| `cart.orderId` | `identityMap.loginID` |
-| `cart.productInfo` |`xdm.variable.content`|
-| `cart.productInfo.purchase`| |
+| `cart.orderId` | `data.variable` |
+| `cart.productInfo` | `identityMap.loginID` |
+| `cart.productInfo.purchase`| `xdm.variable.content`|
 | `page.pageInfo.hierarchie1` | |
 | `page.pageInfo.pageName` | |
 | `page.pageInfo.server` | |
