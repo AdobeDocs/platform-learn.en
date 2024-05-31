@@ -12,7 +12,7 @@ exl-id: cd4b423c-cd0b-44cf-8ac7-23c25876457c
 ---
 # 4. Customer Journey Analysis
 
-In this user flow, you will get hands-on experience with the Customer Journey Analytics application service.
+In this user flow, you will get hands-on experience with the Customer Journey Analytics application.
 
 Customer Journey Analytics provides a toolkit to business intelligence and data science teams for stitching and analysis of cross-channel data (online and offline). The capabilities within Customer Journey Analytics deliver context and clarity to the complex multi-channel customer journeys. The provided context generates actionable insight into how to remove pain points from the customer conversion process and deliver positive experiences in the moments that matter most.
 
@@ -34,7 +34,7 @@ More info on Customer Journey Analytics can be found [here](https://spark.adobe.
 
 - Some familiarity with Analysis Workspace is preferred, but not required
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform) 
-- Access to Customer Journey Analytics Application Service
+- Access to Customer Journey Analytics application
 
 >[!IMPORTANT]
 >

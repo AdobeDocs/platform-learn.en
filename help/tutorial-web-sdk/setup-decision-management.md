@@ -36,7 +36,7 @@ At the end of this lesson, you are able to:
 
 To complete the lessons in this section, you must first:
 
-* Ensure that your organization has access to Adobe Journey Optimizer Ultimate (Journey Optimizer and Offer Decisioning) or Adobe Experience Platform and the Offer Decisioning application service add-on.
+* Ensure that your organization has access to Adobe Journey Optimizer Ultimate (Journey Optimizer and Offer Decisioning) or Adobe Experience Platform and the Offer Decisioning add-on.
 
 * Complete all lessons for initial configuration of the Platform Web SDK.
 
