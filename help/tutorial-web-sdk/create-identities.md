@@ -63,7 +63,7 @@ While FPIDs are not used in this tutorial, you are encouraged to use FPIDs in yo
 
 ## Authenticated Id
 
-As noted above, all visitors to your digital properties are assigned an ECID by Adobe when using Platform Web SDK. ECID the default identity for tracking unauthenticated digital behavior. 
+As noted above, all visitors to your digital properties are assigned an ECID by Adobe when using Platform Web SDK. ECID is the default identity for tracking unauthenticated digital behavior. 
 
 You can also send an authenticated user ID so that Platform can create [Identity Graphs](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/identities/understanding-identity-and-identity-graphs) and Target can set its [Third Party Id](https://experienceleague.adobe.com/en/docs/target/using/audiences/visitor-profiles/3rd-party-id). Setting the authenticated id is done by using the [!UICONTROL Identity Map] data element type.
 

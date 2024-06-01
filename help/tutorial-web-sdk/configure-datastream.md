@@ -49,9 +49,9 @@ Now, you can create a datastream to tell Platform Edge Network where to send dat
 
    >[!NOTE]
    >
-   >You only need to select a schema if using the [Data Prep for Data Collection](/help/data-collection/edge/data-prep.md) feature.
+   >You don't need to select a schema. A schema selection is only required if you are using the [Data Prep for Data Collection](/help/data-collection/edge/data-prep.md) feature.
 
-On the next screen, you are able to add services such as Adobe applications to the datastream, however you will not add any services at this point in the tutorial. You will do so later in the lessons [Set up Experience Platform](setup-experience-platform.md), [Set up Analytics](setup-analytics.md), [Set up Audience Manager](setup-audience-manager.md), [Setup Target](setup-target.md), or [Event Forwarding](setup-event-forwarding.md).
+On the next screen, you are able to add services such as Adobe applications to the datastream, however you will not add any services at this point. You will do so later in the lessons [Set up Experience Platform](setup-experience-platform.md), [Set up Analytics](setup-analytics.md), [Set up Audience Manager](setup-audience-manager.md), [Setup Target](setup-target.md), or [Event Forwarding](setup-event-forwarding.md).
 
 >[!NOTE]
 >

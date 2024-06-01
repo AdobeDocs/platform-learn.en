@@ -68,15 +68,15 @@ There are several ways to set Analytics variables in a Web SDK implementation:
 1. Map XDM fields to Analytics variables in Analytics processing rules (no longer recommended).
 1. Map to Analytics variables directly in the XDM schema (no longer recommended).
 
-As of May 2024, you no longer need to create an XDM schema to implement Adobe Analytics with Platform Web SDK. The `data` object (and the `data.variable` data element you created in this tutorial) can be used to set all custom Analytics variables. Setting these variables in the data object will be familiar to existing Analytics customers, is more efficient than using processing rules interface, and prevents unnecessary data taking up space in Real-Time Customer Profiles (important if you have Real-Time Customer Data Platform or Journey Optimizer).
+As of May 2024, you no longer need to create an XDM schema to implement Adobe Analytics with Platform Web SDK. The `data` object (and the `data.variable` data element you created in the [Create data elements](create-data-elements.md) lesson) can be used to set all custom Analytics variables. Setting these variables in the data object will be familiar to existing Analytics customers, is more efficient than using processing rules interface, and prevents unnecessary data taking up space in Real-Time Customer Profiles (important if you have Real-Time Customer Data Platform or Journey Optimizer).
 
 ### Automatically mapped fields
 
 Many XDM fields are automatically mapped to Analytics variables. For the most up-to-date list of mappings, please see [Analytics variable mapping in Adobe Experience Edge](https://experienceleague.adobe.com/en/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars).
 
-This occurs if _even if you have not defined a custom schema_. Experience Platform Web SDK automatically collects some data and sends them to Platform Edge Network as XDM fields. For example, Web SDK reads the current page URL and sends it as `web.webPageDetails.URL`. This field is forwarded to Adobe Analytics and is automatically populates the Page URL reports in Adobe Analytics.
+This occurs if _even if you have not defined a custom schema_. Experience Platform Web SDK automatically collects some data and sends it to Platform Edge Network as XDM fields. For example, Web SDK reads the current page URL and sends it as the XDM field `web.webPageDetails.URL`. This field is forwarded to Adobe Analytics and it automatically populates the Page URL reports in Adobe Analytics.
 
-When you implement Web SDK for Analytics and Platform-based application, you will create a custom XDM schema, as you have in this tutorial in the [Configure a schema](configure-schemas.md) lesson. Some of the XDM fields you have implemented auto-map to Analytics variables, as outlined in this table:
+If you implement Web SDK for Adobe Analytics with an XDM schema, as you have in this tutorial, some of the XDM fields you have custom-implemented auto-map to Analytics variables, as outlined in this table:
 
 |XDM to Analytics auto-mapped variables|Adobe Analytics variable|
 |-------|---------|
@@ -97,15 +97,18 @@ When you implement Web SDK for Analytics and Platform-based application, you wil
 
 The individual sections of the Analytics product string are set through different XDM variables under the `productListItems` object.
 
+>[!NOTE]
+>
 >As of August 18, 2022, `productListItems[].SKU` takes priority for mapping to the product name in the s.products variable. 
 >The value set to `productListItems[].name` is mapped to the product name only if `productListItems[].SKU` does not exist. Otherwise, it is unmapped and available in context data. 
 >Do not set an empty string or null to `productListItems[].SKU`. This has the undesired effect of mapping to the product name in the s.products variable.
 
+
 ### Set variables in the data object
 
-Setting variables in the `data` object is the recommended way to set Analytics variables with Web SDK. Setting variables in the data object can also overwrite any of the automatically-mapped variables.
+But what about evars, props, and events? Setting variables in the `data` object is the recommended way to set these Analytics variables with Web SDK. Setting variables in the data object can also overwrite any of the automatically-mapped variables.
 
-First of all, what is the `data` object? In any Web SDK event you can send two objects with custom data, the `data` object and the `xdm` object. Both are sent to Platform Edge Network, but only the `xdm` object is sent to the Experience Platform dataset. Properties in the `data` object can be mapped on the Edge to `xdm` fields using the Data Prep for Data Collection feature, but otherwise are not sent to Experience Platform. This makes it an ideal way to send data to applications like Analytics, which aren't natively built on Experience Platform.
+First of all, what is the `data` object? In any Web SDK event you can send two objects with custom data, the `xdm` object and the `data` object. Both are sent to Platform Edge Network, but only the `xdm` object is sent to the Experience Platform dataset. Properties in the `data` object can be mapped on the Edge to `xdm` fields using the Data Prep for Data Collection feature, but otherwise are not sent to Experience Platform. This makes it an ideal way to send data to applications like Analytics, which aren't natively built on Experience Platform.
 
 Here are the two objects in a generic Web SDK call:
 
@@ -113,9 +116,28 @@ Here are the two objects in a generic Web SDK call:
 
 Adobe Analytics is configured to look for any properties in the `data.__adobe.analytics` object and use them for Analytics variables.
 
-Now let's do this.
+Now let's see how this works. Let's set `eVar1` and `prop1` with our page name and see how XDM-mapped value can be overwritten
 
-We use the `data.variable` data element t
+1. Open the tag rule `all pages - library loaded - set global variables - 1`
+1. Add a new **[!UICONTROL Action]**
+1. Select **[!UICONTROL Adobe Experience Platform Web SDK]** extension
+1. Select **[!UICONTROL Action Type]** as **[!UICONTROL Update variable]**
+1. Select `data.variable` as the **[!UICONTROL Data element]**
+1. Select the **[!UICONTROL analytics]** object
+1. Set `eVar1` as the `page.pageInfo.pageName` data element
+1. Set `prop1` to copy the value of `eVar1`
+1. To test the overwriting of XDM-mapped values, in the **[!UICONTROL Additional property]** section set the Page name as a static value `test`
+1. Save the rule
+
+
+Now, we need to include the data object in our send event rule.
+
+1. Open the tag rule `all pages - library loaded - send event - 50`
+1. Open the **[!UICONTROL Send Event]** action
+1. Select `data.variable` as the **[!UICONTROL Data]**
+1. Select **[!UICONTROL Keep Changes]**
+1. Select **[!UICONTROL Save]**
+
 
 
  <!--
@@ -194,7 +216,7 @@ To configure the Adobe Analytics report suite override setting in the datastream
 
    ![Overwrite the datastream](assets/datastream-edit-analytics.png)
 
-1. Select the **[!UICONTROL Advance Options]** to open **[!UICONTROL Report Suite Overrides]**
+1. Select **[!UICONTROL Advanced Options]** to open **[!UICONTROL Report Suite Overrides]**
 
 1. Select the report suites that you would like to override. In this case, `Web SDK Course Dev` and `Web SDK Course Stg`
 
@@ -213,9 +235,10 @@ Let's create a rule to send an additional page view call to a different report s
 
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
 
-1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL library loaded]**
+1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Library Loaded (Page Top)]**
 
 1. Select to open **[!UICONTROL Advanced Options]**, type in `51`. This ensures the rule runs after the `all pages - library loaded - send event - 50` that sets the baseline XDM with the **[!UICONTROL Update variable]** action type.
+1. Select **[!UICONTROL Keep Changes]**
 
     ![Analytics Report Suite Override](assets/set-up-analytics-rs-override.png)
 
@@ -241,9 +264,9 @@ Let's create a rule to send an additional page view call to a different report s
 
 1. As the **[!UICONTROL Action Type]**, select **[!UICONTROL Send Event]** 
 
-1. As the **[!UICONTROL Type]**, select `web.webpagedetails.pageViews`
-
 1. As the **[!UICONTROL XDM data]**, select the `xdm.variable.content` data element you created in the [Create data elements](create-data-elements.md) lesson
+
+1. As the **[!UICONTROL Data]**, select the `data.variable` data element you created in the [Create data elements](create-data-elements.md) lesson
 
     ![Analytics datastream override](assets/set-up-analytics-datastream-override-1.png)
 
@@ -255,7 +278,7 @@ Let's create a rule to send an additional page view call to a different report s
     >
     >    This tab determines in which tags environment the override occurs. For this excerise, you only specify the Development environment but when you deploy this to production remember to also do it in the **[!UICONTROL Production]** environment.
 
-
+1. Select the **[!UICONTROL Sandbox]** you are using for the tutorial
 1. Select the **[!UICONTROL Datastream]**, in this case `Luma Web SDK: Development Environment`
 
 1. Under **[!UICONTROL Report suites]**, select the report site you would like to use to override for. In this case, `tmd-websdk-course-stg`. 
@@ -269,7 +292,7 @@ Let's create a rule to send an additional page view call to a different report s
 
 ## Build your Development environment
 
-Add your new data elements and rules to your `Luma Web SDK Tutorial` tag library and rebuild your development environment. 
+Add your updated rules to your `Luma Web SDK Tutorial` tag library and rebuild your development environment. 
 
 Congratulations! The next step is to validate your Adobe Analytics Implementation via Experience Platform Web SDK.
 

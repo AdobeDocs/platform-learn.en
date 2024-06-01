@@ -55,6 +55,7 @@ With your XDM schema, datastream, and tag property now created, you are ready to
 Leave most of the default settings and update them later, as needed. The only thing that you must do now is link the extension to your datastream:
 
 1. Under **[!UICONTROL Datastreams]**, select the **[!UICONTROL Choose from list]** input method
+1. Select the sandbox in which you created the schema, identity namespace and datastream
 1. Select the datastream that you created earlier, `Luma Web SDK`
 1. Select **[!UICONTROL Save]**
 

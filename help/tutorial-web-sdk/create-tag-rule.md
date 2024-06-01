@@ -157,7 +157,6 @@ Now, start to use **[!UICONTROL Update variable]** in additional, sequenced rule
 >
 >Rule order determines which rule runs first when an event is triggered. If two rules have the same event type, the one with the lowest number runs first.
 > 
->![rule-order](assets/set-up-analytics-sequencing.png)
 
 Start by tracking product views on the product detail page of Luma:
 
@@ -166,7 +165,8 @@ Start by tracking product views on the product detail page of Luma:
 1. Select the ![+ symbol](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) under Event to add a new trigger
 1. Under **[!UICONTROL Extension]**, select **[!UICONTROL Core]**
 1. Under **[!UICONTROL Event Type]**, select **[!UICONTROL Library Loaded (Page Top)]**
-1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This order value ensures the rule runs after the `all pages - library loaded - set global variables - 1` that sets the global configuration.
+1. Select to open **[!UICONTROL Advanced Options]**, type in `20`. This order value ensures the rule runs _after_ the `all pages - library loaded - set global variables - 1` which sets the global configuration.
+1. Select **[!UICONTROL Keep changes]**
 
     ![Analytics XDM rules](assets/set-up-analytics-pdp.png)
 
@@ -183,6 +183,7 @@ Start by tracking product views on the product detail page of Luma:
 1. Under **[!UICONTROL Actions]** select **[!UICONTROL Add]**
 1. Select **[!UICONTROL Adobe Experience Platform Web SDK]** extension
 1. Select **[!UICONTROL Action Type]** as **[!UICONTROL Update variable]**
+1. Select `xdm.variable.content` as the **[!UICONTROL Data element]**  
 1. Scroll down to the `commerce` object 
 1. Open the **[!UICONTROL productViews]** object and set **[!UICONTROL value]** to `1`
 
@@ -196,7 +197,7 @@ Start by tracking product views on the product detail page of Luma:
 
     >[!NOTE]
     >
-    >Because this rule has a higher order, it will overwrite the `eventType` set in the "global configuration" rule. `eventType` can only contain one value, and we recommend setting it with the highest value event.
+    >Because this rule has a higher order, it will overwrite the `eventType` set in the "global configuration" rule. `eventType` can only contain one value and we recommend setting it with the most valuable event.
 
 1. Scroll down to and select `productListItems` array
 1. Select **[!UICONTROL Provide individual items]**
@@ -258,6 +259,7 @@ Now, let's map our array to the XDM object:
 1. Under **[!UICONTROL Actions]** select **[!UICONTROL Add]**
 1. Select **[!UICONTROL Adobe Experience Platform Web SDK]** extension
 1. Select **[!UICONTROL Action Type]** as **[!UICONTROL Update variable]**
+1. Select `xdm.variable.content` as the **[!UICONTROL Data element]**  
 1. Scroll down to the `commerce` object and select to open it.
 1. Open the **[!UICONTROL productListViews]** object and set **[!UICONTROL value]** to `1`
 
@@ -314,6 +316,7 @@ Create two other rules for checkout and purchase following the same pattern with
 1. Scroll down to and select **[!UICONTROL productListItems]** array
 1. Select **[!UICONTROL Provide entire array]**
 1. Map to **`cart.productInfo.purchase`** data element
+1. Select **[!UICONTROL Keep Changes]**
 1. Select **[!UICONTROL Save]**
 
 When you are done, you should see the following rules created.
@@ -333,7 +336,7 @@ Now that you have set the variables, you can create the rule to send the complet
 
 1. Use the **[!UICONTROL Core Extension]** and select `Library Loaded (Page Top)` as the **[!UICONTROL Event Type]** 
 
-1. Select **[!UICONTROL Advanced]** dropdown and enter `50` in **[!UICONTROL Order]**. This will ensure the second rule triggers after the first rule you set to trigger as `1`.
+1. Select **[!UICONTROL Advanced]** dropdown and enter `50` in **[!UICONTROL Order]**. This will ensure this rule fires after all of the other rules you have configured (which had `1` or `20` as their [!UICONTROL Order]).
 
 1. Select **[!UICONTROL Keep Changes]** to return to the main rule screen
     ![Select Library Loaded Trigger](assets/create-tag-rule-trigger-loaded-send.png)
