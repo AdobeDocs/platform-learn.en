@@ -22,6 +22,8 @@ At the end of this lesson, you will be able to:
 * Configure the datastream to send Web SDK data to Adobe Experience Platform
 * Enable streaming web data for Real-Time Customer Profile
 * Validate the data has landed both in the Platform dataset and in Real-Time Customer Profile
+* Ingest sample loyalty program data into Platform
+* Build a simple Platform audience
 
 ## Prerequisites
 
@@ -30,6 +32,9 @@ To complete this lesson, you must first:
 * Have access to an Adobe Experience Platform application like Real-Time Customer Data Platform, Journey Optimizer, or Customer Journey Analytics
 * Complete the earlier lessons in the Initial Configuration and Tags Configuration sections of this tutorial.
 
+>[!NOTE]
+>
+>If you don't have any Platform applications, you can skip this lesson or read along.
 
 ## Create a dataset
 
@@ -38,7 +43,7 @@ All data that is successfully ingested into Adobe Experience Platform is persist
 Let's set up a dataset for your Luma web event data:
 
 
-1. Go to the [Experience Platform interface](https://experience.adobe.com/platform/)
+1. Go to the [Experience Platform](https://experience.adobe.com/platform/) or [Journey Optimizer](https://experience.adobe.com/journey-optimizer/) interface
 1. Confirm you are in the development sandbox you are using for this tutorial
 1. Open **[!UICONTROL Data Management > Datasets]** from the left navigation
 1. Select **[!UICONTROL Create dataset]**
@@ -133,14 +138,28 @@ To confirm that the data has landed in Platform's data lake, a quick option is t
 
     ![Dataset Preview 1](assets/experience-platform-dataset-preview-1.png)
 
+
+### Query the data
+
+1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Data Management > Queroes]** in the left-navigation to open the **[!UICONTROL Queries]** screen.
+1. Select **[!UICONTROL Create query]** 
+1. First, run a query to see all of the names of the tables in the data lake. Enter `SHOW TABLES` in the query editor and click the play icon to rn the query.
+1. In the results, notice how the name of the table is something like `luma_web_event_data`
+1. Now query the table with a simple query referencing your table (note that by default the query will be limited to 100 results): `SELECT * FROM "luma_web_event_data"`
+1. After a few moments you should see sample records of your web data.
+
+>[!ERROR]
+>
+>If you get a "Table not provisioned" error, double-check the name of your table. It could also be that the micro-batch of data has not yet landed in the data lake. Try again in 10-15 minutes.
+
 >[!INFO]
 >
->Adobe Experience Platform's query service is a more robust method to validate data in the lake, but is beyond the scope of this tutorial. For more details, see [Explore data](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in the Platform tutorials section.
+>  For more details about Adobe Experience Platform's query service, see [Explore data](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/queries/explore-data) in the Platform tutorials section.
 
 
 ## Enable the dataset and schema for Real-Time Customer Profile
 
-The next step is to enable the dataset and schema for Real-Time Customer Profile. Data streaming from Web SDK will be one of many data sources flowing into Platform and you want to join your web data with other data sources to build 360-degree customer profiles. To learn more about Real-Time Customer Profile, watch this short video:
+For customers of Real-Time Customer Data Platform and Journey Optimizer, the next step is to enable the dataset and schema for Real-Time Customer Profile. Data streaming from Web SDK will be one of many data sources flowing into Platform and you want to join your web data with other data sources to build 360-degree customer profiles. To learn more about Real-Time Customer Profile, watch this short video:
 
 >[!VIDEO](https://video.tv.adobe.com/v/27251?learn=on&captions=eng)
 
@@ -173,7 +192,7 @@ The next step is to enable the dataset and schema for Real-Time Customer Profile
 
     >[!IMPORTANT]
     >
-    >    Primary identities are required in every record sent to Real-Time Customer Profile. Typically, identity fields are labeled within the schema. When using identity maps, however, the identity fields are not visible within the schema. This dialog is to confirm that you have a primary identity in mind and that you will specify it in an identity map when sending your data. As you know, Web SDK uses an identity map and the Experience Cloud Id (ECID) is the default primary identity.
+    >    Primary identities are required in every record sent to Real-Time Customer Profile. Typically, identity fields are labeled within the schema. When using identity maps, however, the identity fields are not visible within the schema. This dialog is to confirm that you have a primary identity in mind and that you will specify it in an identity map when sending your data. As you know, Web SDK uses an identity map with the Experience Cloud Id (ECID) as the default primary identity and an authenticated id as the primary identity when available.
 
 
 1. Select **[!UICONTROL Enable]**
@@ -186,7 +205,7 @@ Now the schema is also enabled for profile.
 
 >[!IMPORTANT]
 >
->    Once a schema is enabled for Profile, it cannot be disabled or deleted. Also, fields cannot be removed from the schema after this point. These implications are important to keep in mind later on when you are working with your own data in your Production environment. You should be using a development sandbox in this tutorial, which can be deleted at any time. 
+>    Once a schema is enabled for Profile, it cannot be disabled or deleted without resetting or deleting the entire sandbox. Also, fields cannot be removed from the schema after this point.
 >
 >   
 > When working with your own data, we recommend you do things in the following order:
@@ -203,7 +222,7 @@ You can look up a customer profile in the Platform interface (or Journey Optimiz
 
 First you must generate more sample data. Repeat the steps from earlier in this lesson to log into the Luma website when it is mapped to your tag property. Inspect the Platform Web SDK request to make sure it sends data with the `lumaCRMId`.
 
-1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Profiles]** in the left-navigation
+1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in the left-navigation
 
 1. As the **[!UICONTROL Identity namespace]** use `lumaCRMId`
 1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `112ca06ed53d3db37e4cea49cc45b71e`.
@@ -241,7 +260,8 @@ Create the loyalty schema:
 1. Add the [!UICONTROL Loyalty Details] field group
 1. Add the [!UICONTROL Demographic Details] field group
 1. Select the `Person ID` field and mark it as an [!UICONTROL Identity] and [!UICONTROL Primary identity] using the `Luma CRM Id` [!UICONTROL Identity namespace].
-1. Enable the schema for [!UICONTROL Profile]
+1. Enable the schema for [!UICONTROL Profile]. If you can't find the Profile toggle, try clicking on the schema name on the top left.
+1. Save the schema
 
    ![Loyalty schema](assets/web-channel-loyalty-schema.png)
 
@@ -260,7 +280,7 @@ To create the dataset and ingest the sample data:
 
 Audiences group profiles together around common traits. Build a quick audience you can use in your web campaign:
 
-1. In the Experience Platform interface, go to **[!UICONTROL Audiences]** in the left navigation
+1. In the Experience Platform or Journey Optimizer interface, go to **[!UICONTROL Customer]** > **[!UICONTROL Audiences]** in the left navigation
 1. Select **[!UICONTROL Create audience]**
 1. Select **[!UICONTROL Build rule]**
 1. Select **[!UICONTROL Create]**

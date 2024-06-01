@@ -72,8 +72,8 @@ Reviewing how we did this in the Debugger lesson:
 
 There is limited information to view at this stage of your implementation. One value we can see is the your Experience Cloud Id (ECID) which is generated on Platform Edge Network:
 
-1. Select the row with the event called Adobe Response Handle. 
-1. A menu shows up on the right. Select the `+` sign next to `[!UICONTROL ACPExtensionEvent]` 
+1. Select the row with the event called `Alloy Response Handle`. 
+1. A menu shows up on the right. Select the `+` sign next to `[!UICONTROL ACPExtensionEventData]` 
 1. Drill down by selecting `[!UICONTROL payload > 0 > payload > 0 > namespace]`. The ID shown under the last `0` corresponds to the `ECID`. You know that by the value that shows up under `namespace` matching `ECID`
 
     ![Assurance validate ECID](assets/validate-assurance-ecid.png)

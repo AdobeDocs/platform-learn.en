@@ -69,7 +69,7 @@ The Experience Platform Debugger has a cool feature that allows you to replace a
 
     ![tag property replaced](assets/validate-switch-success.png)
 
-As you continue the tutorial, you use this technique of mapping the Luma site to your own tag property to validate your Platform Web SDK implementation. When you start using tags on your production website, you can use this same technique to validate changes as you make them in your development environment of tags.
+As you continue the tutorial, you use this technique of mapping the Luma site to your own tag property to validate your Platform Web SDK implementation. When using tags on your own website, you can use this same technique to validate development tag libraries on your production website.
 
 ## Validate client-side network requests with Experience Platform Debugger
 
@@ -125,7 +125,7 @@ These types of request details are also visible in the browser's web developer t
 
     ![Network tab](assets/validate-dev-console.png)
 
-1. Go to the **Response** tab and note how the ECID value is included in the response. Copy this value as you will use it to validate the profile information in the next exercise
+1. Go to the **Response** tab and note how the ECID value is included in the response.
 
     ![Network tab](assets/validate-dev-console-ecid.png)   
 

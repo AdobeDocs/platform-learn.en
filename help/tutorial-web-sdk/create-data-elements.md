@@ -94,14 +94,14 @@ window.adobeDataLayer.push({
 Pros
 
 * Eliminates additional steps remap to data layer variables to XDM
-* It may be quicker to deploy if your development team owns tagging digital behavior
+* It may be quicker to deploy if your web development team also owns tagging digital behavior
 
 Cons
 
 * Complete reliance on development team and dev cycle for updating what data goes to XDM
 * Limited flexibility as XDM receives the exact payload from the data layer 
 * Cannot use built-in tags features, such as scraping, persistence, features for quick deployments
-* Cannot use the data layer for third-party pixels
+* Harder to use the data layer for third-party pixels (but you might want to move these pixels to [event forwarding](setup-event-forwarding.md)!
 * No ability to transform the data between the data layer and XDM
 
 ### Map data layer in tags 
@@ -261,7 +261,7 @@ To create the Variable data element for XDM, you tie it to the schema you create
 1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL Extension]**
 1. Select the **[!UICONTROL Variable]** as the **[!UICONTROL Data Element Type]**
 1. Select **[!UICONTROL XDM]** as the **[!UICONTROL property]**
-1. Select the appropriate Experience Platform **[!UICONTROL Sandbox]**
+1. Select the **[!UICONTROL Sandbox]** in which you created the schema
 1. Select the appropriate **[!UICONTROL Schema]**, in this case `Luma Web Event Data`
 1. Select **[!UICONTROL Save]**
 
@@ -274,6 +274,7 @@ Next, create the Variable data element for your data object:
 1. Select the **[!UICONTROL Adobe Experience Platform Web SDK]** as the **[!UICONTROL Extension]**
 1. Select the **[!UICONTROL Variable]** as the **[!UICONTROL Data Element Type]**
 1. Select **[!UICONTROL data]** as the **[!UICONTROL property]**
+1. Select the Experience Cloud solutions you wish to implement as part of this tutorial
 1. Select **[!UICONTROL Save]**
 
     ![Variable data element for data object](assets/data-element-data-variable.png.png)
