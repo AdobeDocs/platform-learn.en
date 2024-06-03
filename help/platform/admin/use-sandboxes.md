@@ -1,6 +1,6 @@
 ---
 title: Use sandboxes
-description: Learn how Experience Platform sandboxes provide isolated environments to try out new or existing functionality and work with a "fail fast" approach. Learn how to reset and restart the development environments and use sandboxes with API calls.
+description: Learn how Experience Platform sandboxes provide isolated environments to try out new or existing functionality and work with a fail fast approach. Learn how to reset and restart the development environments and use sandboxes with API calls.
 feature: Sandboxes
 role: Data Architect, Data Engineer, Admin
 level: Beginner
