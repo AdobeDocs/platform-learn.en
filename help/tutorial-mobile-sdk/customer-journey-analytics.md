@@ -9,16 +9,16 @@ hidefromtoc: yes
 
 Learn how to report and analyze your mobile app interactions with Customer Journey Analytics.
 
-The mobile app event data, which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream. If you followed the [Send data to Experience Platform](platform.md) lesson, that data is now stored in the data lake of Experience Platform as datasets. And that data is then available for Customer Journey Analytics to use for reporting and analysis.
+The mobile app event data, which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream. If you followed the [Send data to Experience Platform](platform.md) lesson, that data is now stored in the data lake of Experience Platform as datasets. At this point, the data is now available for Customer Journey Analytics to use for reporting and analysis.
 
-Contrary to Adobe Analytics, Customer Journey Analytics is an application that *uses* data from datasets you have created in Experience Platform and to which your app is sending data. Using the Adobe Experience Platform Mobile SDK, you do not send data to Customer Journey Analytics directly. Instead, Customer Journey Analytics uses the data from the datasets in Experience Platform.
+Contrary to Adobe Analytics, Customer Journey Analytics *uses* data from datasets created in Experience Platform. Data is not sent directly to Customer Journey Analytics using the Adobe Experience Platform Mobile SDK, rather the data is sent to datasets. Connections are then configured in Customer Journey Analytics to select the datasets you'll use in your reporting and analysis projects.
 
-This lesson in the tutorial focuses on reporting and analyzing the data captured from the Luma tutorial app. One of the unique capabilities of Customer Journey Analytics is to combine data from multiple sources (CRM, point-of-sale, loyalty application, call-center) and channels (web, mobile, offline) to provide deep insights into customer journeys. That capability is beyond the scope of this lesson. See [Customer Journey Analytics overview](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) for more information.
+This lesson in the tutorial focuses on reporting and analyzing the data captured from the Luma tutorial app. One of the unique capabilities of Customer Journey Analytics is combining data from multiple sources (CRM, point-of-sale, loyalty application, call-center) and channels (web, mobile, offline) for gleaning deep insights into customer journeys. That capability is beyond the scope of this lesson. See [Customer Journey Analytics overview](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-overview/cja-overview) for more information.
 
 
 ## Prerequisites
 
-Your organization must be provisioned and permission granted for Customer Journey Analytics. You must have administration access to Customer Journey Analytics.
+Your organization must be provisioned and permission granted for Customer Journey Analytics. You must have administrator access to Customer Journey Analytics.
 
 
 ## Learning objectives
@@ -29,7 +29,7 @@ In this lesson, you will:
 - Create a data view to prepare the data from the datasets for your reporting and analysis
 - Create a project to build reports and visualizations so you can analyze the data from your mobile app.
 
-This order is on purpose. In Customer Journey Analytics, a report in Analysis Workspace depends on a data view. And a data view depends on a connection.
+The sequence is intentional. Connections use datasets, and data views use connections.
 
 
 ## Create a connection
@@ -60,7 +60,7 @@ A connection in Customer Journey Analytics defines the datasets (and the data wi
 
    6. In the **[!UICONTROL Add datasets]** wizard, **[!UICONTROL Select datasets]** step, 
    
-      1. select the following datasets:
+      1. Select the following datasets:
 
          - **[!UICONTROL Luma Mobile App Event Dataset]**, the dataset you created as part of the [Create a dataset](platform.md#create-a-dataset) section in the Experience Platform lesson.
          - **[!UICONTROL ODE DecisionEvents - *sandbox name*] decisioning**
@@ -106,7 +106,7 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL Luma App - AEP Mobile SDK Tu
 
 After the records have been added from the datasets to Customer Journey Analytics, you can create a data view to define which components of the data you want to report on. 
 
-A data view is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a connection. You can configure standard and schema fields, from any of the datasets that you have defined in your connection, as components (dimensions, metrics) in Analysis Workspace.
+A data view is a container specific to Customer Journey Analytics that lets you determine how to interpret data from a connection. You can configure standard and schema fields from any of the datasets that you have defined in your Connection as components (dimensions, metrics) in Analysis Workspace.
 
 A data view in Customer Journey Analytics offers enormous flexibility in properly setting up and defining the data from your connection. In this tutorial, you use only the functionality that is required for your reporting and analysis. See [Data views](https://experienceleague.adobe.com/en/docs/analytics-platform/using/cja-dataviews/data-views) for more information.
 
@@ -125,7 +125,7 @@ To create your data view:
 
       ![CJA Data view 1](assets/cja-dataview-1.png)
 
-1. In the **[!UICONTROL Components]** tab of the **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Data view]**, you can define the metrics and dimension you want to use when reporting on your mobile app. By default, a number of standard metrics and dimensions (jointly referred to a components) are already configured for your data view. But your data view requires more components. <br/>To add a schema field, from your previously defined schema or out of the box schemas (see [Create a schema](create-schema.md) lesson), as a component (dimension or metric):
+1. In the **[!UICONTROL Components]** tab of the **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Data view]**, you can define the metrics and dimension you want to use when reporting on your mobile app. By default, a number of standard metrics and dimensions (jointly referred to a components) are already configured for your data view. But your data view requires more components. <br/>To add a schema field from your previously defined schema or out-of-the-box schemas (see [Create a schema](create-schema.md) lesson), as a component (dimension or metric):
 
    1. Find the schema field:
 
@@ -149,7 +149,7 @@ To create your data view:
 
       ![CJA Data view component settings](assets/cja-dataview-component-settings.png)
 
-   1. Now that you understand how to add fields to your data view and configure the resulting component, use the tables below for a list of schema fields to add as metric or dimension. Use the **Schema Path** column value from the table below to search for or traverse to the specific schema field. Once dragged and dropped, check the **Component Settings** column value in the table whether specific settings are required for a component, like modifying its **[!UICONTROL Component name]** or defining **[!UICONTROL INCLUDE EXCLUDE VALUES]**. 
+   1. Now that you understand how to add fields to your data view and configure the resulting component, use the tables below for a list of schema fields to add as metrics or dimensions.. Use the **Schema Path** column value from the table below to search for or traverse to the specific schema field. Once metrics and dimensions are added, check the **Component Settings** column value in the table whether specific settings are required for a component, like its **[!UICONTROL Component name]** or defining **[!UICONTROL INCLUDE EXCLUDE VALUES]**. 
 
       **METRICS**
 
@@ -171,9 +171,12 @@ To create your data view:
 
       {style="table-layout:auto"}
 
-      Note how the schema field for the Location Events metric is using **[!UICONTROL INCLUDE EXCLUDE VALUES]** to count event types that contain `location`.
+      >[!NOTE]
+      >
+      >Note how the schema field for the Location Events metric is using **[!UICONTROL INCLUDE EXCLUDE VALUES]** to count event types that contain `location`.
 
-      After you have added all schema fields from the table above as a metric component, your data view configuration for **[!UICONTROL METRICS]** should look like:
+
+      Your data view configuration for **[!UICONTROL METRICS]** should match below after you have added all schema fields from the table above as a metric component:
 
       ![CJA Dataview 4](assets/cja-dataview-4.png)
 
@@ -191,7 +194,7 @@ To create your data view:
 
       {style="table-layout:auto"}
 
-      After you have added all schema fields from the table above as a dimension component, your data view configuration for **[!UICONTROL DIMENSIONS]** should look like:
+      Your data view configuration for **[!UICONTROL DIMENSIONS]** should match below after you have added all schema fields from the table above as a dimension component:
 
       ![CJA Dataview 4](assets/cja-dataview-5.png)
 
@@ -205,7 +208,7 @@ You have defined your data view and everything is in place to start building you
 
 ## Create a project
 
-You use Workspace projects in Customer Journey Analytics to build your reports and visualizations. There are many possibilities to build comprehensive reports and engaging visualizations, but all these possibilities are outside the scope of this tutorial. See [Workspace Overview](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) and [Build a new project](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) for more information.
+Workspace projects are used in Customer Journey Analytics to build reports and visualizations. There are many possibilities to build comprehensive reports and engaging visualizations, but this is outside the scope of this tutorial. See [Workspace Overview](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/analysis-workspace-overview) and [Build a new project](https://experienceleague.adobe.com/en/docs/customer-journey-analytics-learn/tutorials/analysis-workspace/workspace-projects/build-a-new-project) for more information.
 
 In this section of the lesson, you create a project that shows reports and visualizations on:
 
@@ -244,23 +247,22 @@ To create your project:
 >
 >   Remember to save your project regularly, otherwise your changes are lost. You can quickly save your project using **[!UICONTROL ctrl + s]** (Windows) or **[!UICONTROL ⌘ (cmd) + s]** (macOS). 
 
-You have now set up your project. You already have a Freeform panel on your main canvas, containing a Freeform table. You will add components to this table soon, but you first have to ensure that your Freeform panel is using the correct data view and the correct time period.
-
+You have now set up your project. A Freeform table is provided by default. Before you add components, ensure your Freeform panel is using the correct data view and time period.
 
 1. Select your data view from the dropdown list. For example, **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Data view]**. If you cannot see your data view in the list, select **[!UICONTROL Show all]** at the bottom of the dropdown list.
    ![CJA Project 5](assets/cja-projects-5.png)
 
-1. To define the appropriate time period for the panel, select the default **[!UICONTROL This month]** and in the popup panel define the start and end date. Or use a **[!UICONTROL Preset]**, like **[!UICONTROL Last 6 full months]** and select **[!UICONTROL Apply]**.
+1. To define the appropriate time period for the panel, select the default preset **[!UICONTROL This month]** enter a custom start and end date, or use a **[!UICONTROL Preset]** (like **[!UICONTROL Last 6 full months]**) and select **[!UICONTROL Apply]**.
    ![CJA Project 6](assets/cja-projects-6.png)
 
 
 ### App Usage
 
-You want to report on how the app is used. You have added the necessary code in the app to register app interactions and which screens are used in the app (see the [Track Events](events.md) lesson) and you now want to report on this data.
+Now you're ready to report on how the app is used. You have added the necessary code in the app to register app interactions and which screens are used in the app (see the [Track Events](events.md) lesson) and you now want to report on this data.
 
 #### Screen Names
 
-You first want to report on what screens were viewed in the app.
+To report on the screens viewed in the app:
 
 1. Rename your **[!UICONTROL Freeform]** panel to `App Usage`.
    
@@ -270,7 +272,7 @@ You first want to report on what screens were viewed in the app.
 
 1. Drag and drop the **[!UICONTROL Screen Views]** component on [!UICONTROL _Drop a **metric** here (or any other component_)].
    ![CJA Projects 7](assets/cja-projects-7.png)
-   Your freeform table now shows screen views for the days for your selected time period. However, you want to show screen views for the different screens used in the app.
+   Your freeform table now shows screen views for each day for your selected time period. However, you want to show the number of screen views for each of the different screens used in the app.
 
 1. To show the **[!UICONTROL DIMENSIONS]** list of components, select ![Cross](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) to remove the ![Event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metrics]** filter from the components rail.
    ![CJA Project 8](assets/cja-projects-8.png)
@@ -280,15 +282,18 @@ You first want to report on what screens were viewed in the app.
 1. Drag and drop the **[!UICONTROL Screen Name]** component on the **[!UICONTROL Day]** header. The operation shows ![Switch](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Replace]** to indicate the replacement of the dimension.
    ![CJA Projects 9](assets/cja-projects-9.png)
 
-Your first report is ready; showing screen views for the various screen names you defined in the app.
+Your first Freeform table in your report is complete.
 
 ![CJA Projects 10](assets/cja-projects-10.png)
 
-Do not forget to save your project!
+>[!NOTE]
+>
+>Save your project before proceeding.
+
 
 #### App Interactions
 
-You also want to report on how users interacted with the app. 
+Next, you'll build a Freeform table to report on how users interacted with the app.
 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) and from the popup ![Freeform table](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) to add a new Freeform table.
    ![CJA Projects 11](assets/cja-projects-11.png)
@@ -304,7 +309,9 @@ Your second report is now ready, showing app interactions.
 
 The information is limited mainly because you implemented `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` API calls only on the login screen. If you add this API call into more screens of your app, this report becomes more informative.
 
-Do not forget to save your project!
+>[!NOTE]
+>
+>Save your project before proceeding.
 
 
 ### Commerce
@@ -334,14 +341,17 @@ You now want to report, in a separate panel, on commerce events occurring in the
 
 1. Drag and drop the **[!UICONTROL Month]** dimension on top of the **[!UICONTROL Day]** dimension to change the reporting from daily to monthly.
 
-Your **[!UICONTROL Commerce Events]** report is now ready, showing how users viewed products, added products to their wish list, saved products for later or even purchased your products.
+ Your Commerce Events report is complete.
+
 ![CJA Projects 16](assets/cja-projects-16.png)
 
-Do not forget to save your project!
+>[!NOTE]
+>
+>Save your project before proceeding.
 
 #### Fallout
 
-Based on the previous report, you want to visualize the fallout in the commerce funnel: how many users that viewed products did also add products to carts. And how many users that added products to their carts also saved these products for later. And so on.
+Next, you'll build a fallout visualization for the commerce funnel that shows how many users that viewed products added these products to their cart, and from there, how many users saved these products for later.
 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) within the **[!UICONTROL Commerce]** panel and from the popup select ![Fallout](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (representing the Fallout visualization).
 
@@ -351,10 +361,12 @@ Based on the previous report, you want to visualize the fallout in the commerce 
 
 1. Repeat the above step for **[!UICONTROL Product Add To Lists]** and **[!UICONTROL Purchases]** dimensions. 
  
-Your **[!UICONTROL Fallout]** visualization now shows a visual representation of the conversion funnel for your products.
+Your Fallout visualization report is complete.
    ![CJA Projects 19](assets/cja-projects-19.png)
 
-Do not forget to save your project!
+>[!NOTE]
+>
+>Save your project before proceeding.
 
 
 ### Offers
@@ -377,10 +389,13 @@ You want to report on how many offers and what offers are displayed to the users
 
 1. Drag and drop the **[!UICONTROL Month]** dimension on the **[!UICONTROL Day]** column to replace the dimension.
 
-You now have a report showing the monthly offers displayed to your users in the app.
+Your Monthly Overview for Offers is complete.
+
 ![CJA Projects 20](assets/cja-projects-20.png)
 
-Do not forget to save your project!
+>[!NOTE]
+>
+>Save your project before proceeding.
 
 
 #### Offers to People
@@ -400,10 +415,13 @@ You also want to have a report showing which offers were shown in what numbers t
 1. From the context menu, select **[!UICONTROL Breakdown]** > **[!UICONTROL Dimensions]** > **[!UICONTROL Offer Name]**. This selection will breakdown the Activity Name dimension into Offer Names.
    ![CJA Projects 20b](assets/cja-projects-20b.png)
 
-You now have a report showing the individual offers displayed for this offer decision for the selected period to users of your app.
+Your Offers to People report is complete.
+
 ![CJA Projects 21](assets/cja-projects-21.png)
 
-Do not forget to save your project!
+>[!NOTE]
+>
+>Save your project before proceeding.
 
 
 ### Store Visits
@@ -432,7 +450,7 @@ Finally, you want to report on store visits.
 
 1. Select all rows in the table, right-click, and from the context menu select Breakdown > Dimension > Event Types.
 
-You now have a report showing users being in and out of the vicinity of your store locations (as you defined these locations in the [Places](places.md) lesson).
+Your Store Visits reportis complete. You now have a report showing users being in and out of the vicinity of your store locations (as you defined these locations in the [Places](places.md) lesson).
 
 ![CJA Project 23](assets/cja-projects-23.png)
 
