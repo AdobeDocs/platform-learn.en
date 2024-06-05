@@ -4,6 +4,7 @@ description: Learn how to report and analyze the interactions with your mobile a
 solution: Data Collection,Experience Platform,Analytics
 hide: yes
 hidefromtoc: yes
+exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
 ---
 # Report and analyze using Customer Journey Analytics
 
