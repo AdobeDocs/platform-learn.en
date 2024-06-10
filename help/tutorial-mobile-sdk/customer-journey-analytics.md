@@ -10,7 +10,7 @@ exl-id: c41b76eb-2ed7-4a82-80c1-b67476c464ad
 
 Learn how to report and analyze your mobile app interactions with Customer Journey Analytics.
 
-The mobile app event data, which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream. If you followed the [Send data to Experience Platform](platform.md) lesson, that data is now stored in the data lake of Experience Platform as datasets. At this point, the data is now available for Customer Journey Analytics to use for reporting and analysis.
+The mobile app event data, which you collected and sent to Platform Edge Network in earlier lessons, is forwarded to the services configured in your datastream. If you followed the [Send data to Experience Platform](platform.md) lesson, that data is now stored in an Experience Platform dataset and is  available for Customer Journey Analytics to use for reporting and analysis.
 
 Contrary to Adobe Analytics, Customer Journey Analytics *uses* data from datasets created in Experience Platform. Data is not sent directly to Customer Journey Analytics using the Adobe Experience Platform Mobile SDK, rather the data is sent to datasets. Connections are then configured in Customer Journey Analytics to select the datasets you'll use in your reporting and analysis projects.
 
@@ -150,7 +150,7 @@ To create your data view:
 
       ![CJA Data view component settings](assets/cja-dataview-component-settings.png)
 
-   1. Now that you understand how to add fields to your data view and configure the resulting component, use the tables below for a list of schema fields to add as metrics or dimensions.. Use the **Schema Path** column value from the table below to search for or traverse to the specific schema field. Once metrics and dimensions are added, check the **Component Settings** column value in the table whether specific settings are required for a component, like its **[!UICONTROL Component name]** or defining **[!UICONTROL INCLUDE EXCLUDE VALUES]**. 
+   1. Now that you understand how to add fields to your data view and configure the resulting component, use the tables below for a list of schema fields to add as metrics or dimensions. Use the **Schema Path** column value from the table below to search for or traverse to the specific schema field. Once metrics and dimensions are added, check the **Component Settings** column value in the table whether specific settings are required for a component, like its **[!UICONTROL Component name]** or defining **[!UICONTROL INCLUDE EXCLUDE VALUES]**. 
 
       **METRICS**
 
