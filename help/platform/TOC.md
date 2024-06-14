@@ -31,6 +31,7 @@ auto-video-transcripts: true
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
+  + [Use AI Assistant](/help/platform/admin/ai-assistant.md)
   + [Use alerts](/help/platform/admin/use-alerts.md)
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
   + [Copy objects between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
