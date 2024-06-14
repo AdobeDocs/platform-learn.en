@@ -74,6 +74,7 @@ auto-video-transcripts: true
 + Data Hygiene {#data-hygiene}
   + [Pseudonymous profile and event expiration (TTL)](/help/platform/data-hygiene/pseudonymous-profile-and-event-expiration.md)
   + [Data prep for data hygiene](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
+  + [Delete datasets and batches](/help/platform/data-hygiene/delete-datasets-and-batches.md)
   + [Expire datasets](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
   + [Update a profile attribute](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/profiles/update-a-specific-attribute-with-upsert)
 + Data Ingestion {#data-ingestion}
@@ -161,6 +162,7 @@ auto-video-transcripts: true
   + [Create merge policies](/help/platform/profiles/create-merge-policies.md)
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
   + [Create a computed attribute](/help/platform/profiles/create-a-computed-attribute-for-sum-of-purchases.md)
+  + [Delete profiles](/help/platform/profiles/delete-profiles.md)
   + [Update a specific attribute using upsert](/help/platform/profiles/update-a-specific-attribute-with-upsert.md)
 + Privacy and Security {#privacy}
   + [Introduction to Privacy Service](/help/platform/privacy/introduction-to-privacy-services.md)
