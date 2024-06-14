@@ -1,7 +1,7 @@
 ---
 title: Create Datasets and Ingest Data in Adobe Experience Platform
 description: This video shows how to create datasets and ingest data in the Adobe Experience Platform interface.
-feature: Data Ingestion
+feature: Data Ingestion, Datasets
 role: Data Architect, Data Engineer, Developer
 level: Beginner
 jira: KT-2700
