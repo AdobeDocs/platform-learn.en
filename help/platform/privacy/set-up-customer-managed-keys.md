@@ -6,7 +6,7 @@ role: Admin, Data Architect, Data Engineer, Developer
 level: Experienced
 jira: KT-11382
 thumbnail: 3410673.jpeg
-last-substantial-update: 2022-11-01
+last-substantial-update: 2024-06-28
 exl-id: 04cb1aeb-3260-4259-bb02-8392d9d787a2
 ---
 # Set up customer-managed keys (CMK)
