@@ -261,7 +261,7 @@ If you set up an activity, you should see your content rendered on the page. How
 1. Go to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and use the debugger to [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page
 1. Select the **[!UICONTROL Network]** tool in the debugger
-1. Filter by **[!UICONTROL Adobe Experience Platform Web SDK]**
+1. Filter by **[!UICONTROL Experience Platform Web SDK]**
 1. Select the value in events row for the first call
 
    ![Network call in the Adobe Experience Platform debugger](assets/target-debugger-network.png)
@@ -315,11 +315,57 @@ Now that you have configured the Platform Web SDK to request content for the `ho
 1. For the **[!UICONTROL Scope]** field input `homepage-hero`
 1. For the **[!UICONTROL Selector]** field input `div.heroimage`
 1. For **[!UICONTROL Action Type]** select **[!UICONTROL Set HTML]**
+1. Select **[!UICONTROL Keep Changes]**
 
    ![Render homepage hero action](assets/target-action-render-hero.png)
 
+   In addition to rendering the activity, you must make an additional call to Target to indicate that the Form-based activity has rendered:
+
+1. Add another action to the rule. Use the **Core** extension and the **[!UICONTROL Custom code]** action type:
+1. Paste the following JavaScript code:
+
+   ```javascript
+   var propositions = event.propositions;
+   var heroProposition;
+   if (propositions) {
+      // Find the hero proposition, if it exists.
+      for (var i = 0; i < propositions.length; i++) {
+         var proposition = propositions[i];
+         if (proposition.scope === "homepage-hero") {
+            heroProposition = proposition;
+            break;
+         }xw
+      }
+   }
+   // Send a "display" event
+   if (heroProposition !== undefined){
+      alloy("sendEvent", {
+         xdm: {
+            eventType: "display",
+            _experience: {
+               decisioning: {
+                  propositions: [{
+                     id: heroProposition.id,
+                     scope: heroProposition.scope,
+                     scopeDetails: heroProposition.scopeDetails
+                  }]
+               }
+            }
+         }
+      });
+   }
+   ```
+
+   ![Render homepage hero action](assets/target-action-fire-display.png)
+
+1. Select **[!UICONTROL Keep Changes]**
+
 1. Save your changes and build to your library
 1. Load the Luma homepage a few times, which should be enough to make the new `homepage-hero` decision scope register in the Target interface.
+
+
+
+
 
 ### Set up a Target activity with the Form-based Experience Composer
 
@@ -375,10 +421,10 @@ If you activated your activity, you should see your content render on the page. 
 
 1. Notice that there are keys under `query` > `personalization` and  `decisionScopes` has a value of `__view__` like before, but now there is also a `homepage-hero` scope included. This Platform Web SDK call requested decisions from Target for changes made using the VEC and the specific `homepage-hero` location.
 
-   ![`__view__` decisionScope request](assets/target-debugger-view-scope.png)
+   ![`__view__` decisionScope request](assets/target-debugger-view-custom-scope.png)
    
 1. Close the overlay and select the event details for the second network call. This call is only present if Target returned an activity.
-1. Notice that there are details about the activity and experience returned from Target. This Platform Web SDK call sends a notification that a Target activity was rendered to the user and increments an impression.
+1. Notice that there are details about the activity and experience returned from Target. This Platform Web SDK call sends a notification that a Target activity was rendered to the user and increments an impression. It was initiated by the  custom code action action you added previously.
 
    ![Target Activity impression](assets/target-debugger-activity-impression.png)
 
@@ -391,6 +437,8 @@ In this section, you will pass Target-specific data and take a closer look at ho
 All XDM fields are automatically passed to Target as [page parameters](https://experienceleague.adobe.com/en/docs/target-dev/developer/implementation/methods/page-parameters) or mbox parameters.
 
 Some of these XDM fields will map to special objects in Target's backend. For example, `web.webPageDetails.URL` will automatically be available to build URL-based targeting conditions or as the `page.url` object when creating profile scripts.
+
+You can also add page parameters using the data object.
 
 ### Special parameters and the data object
 
@@ -434,7 +482,6 @@ Passing additional data for Target outside of the XDM object requires updating a
    ![Add Target Data to Rule](assets/target-rule-data.png)
 
 1. Save your changes and build to your library
-1. Repeat steps 1 through 4 for the **ecommerce - library loaded - set product details variables - 20** rule
 
 >[!NOTE]
 >
