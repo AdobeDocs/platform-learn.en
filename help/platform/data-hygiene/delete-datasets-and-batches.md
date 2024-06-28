@@ -6,7 +6,7 @@ role: Data Engineer, Developer
 level: Intermediate
 doc-type: Feature Video
 duration: 356
-last-substantial-update: 2024-06-13
+last-substantial-update: 2024-06-28
 jira: KT-12388
 exl-id: 76e6cba0-5175-4cc4-8b80-caa4c39bfba1
 ---
