@@ -117,7 +117,7 @@ To configure the option in the merge policy:
 
 To use content experiments within web channel campaigns, you must ensure the web dataset used is also included in your reporting configuration. The Journey Optimizer reporting system uses the dataset in a read-only fashion to populate out-of-the-box content experimentation reports.
 
-[Adding datasets for content experiment reporting is detailed in this section](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/reporting-configuration#add-datasets).
+[Adding datasets for content experiment reporting is detailed in this section](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/reporting-configuration#add-datasets).
 
 ## Use Case Overview – Loyalty Rewards
 
