@@ -195,7 +195,7 @@ To create the content experiment:
 
 1. Also optionally, choose to **[!UICONTROL Distribute evenly]**. Check this option to ensure the treatment splits are always evenly split.
 
-[Learn more about content experiments in Adobe Journey Optimizer web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/campaigns/content-experiment/get-started-experiment).
+[Learn more about content experiments in Adobe Journey Optimizer web channel](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/content-management/content-experiment/get-started-experiment).
 
 ### Edit Content using the Visual Helper
 
