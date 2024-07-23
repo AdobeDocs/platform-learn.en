@@ -22,13 +22,12 @@ You should complete all of the previous lessons in this tutorial before followin
 >
 >There are many user-permissions requirements, account configurations, and provisioning steps that are required to fully use these integrations and which are beyond the scope of this tutorial. If you are not already using these integrations in your current implementation of the Experience Cloud, you should consider the following:
 >
->* Review the full requirements of the [Core Services integrations](https://experienceleague.adobe.com/docs/core-services/interface/about-core-services/core-services.html)
->* Review the full requirements of the [Analytics for Target integration](https://experienceleague.adobe.com/docs/target/using/integrate/a4t/before-implement.html)
->* Have an Administrator of your Experience Cloud Organization [request provisioning of these integrations](https://www.adobe.com/go/audiences)
+>* Review the full requirements of the [Core Services integrations](https://experienceleague.adobe.com/en/docs/core-services/interface/services/getting-started)
+>* Review the full requirements of the [Analytics for Target integration](https://experienceleague.adobe.com/en/docs/target/using/integrate/a4t/before-implement)
 
 ## Audiences
 
-[Audiences](https://experienceleague.adobe.com/docs/core-services/interface/audiences/audience-library.html) is part of the People Core Service and allows you to share audiences between solutions. For example you can create an audience in Audience Manager and use it to deliver personalized content with Target.
+[Audiences](https://experienceleague.adobe.com/en/docs/core-services/interface/services/audiences/overview) is part of the People Core Service and allows you to share audiences between solutions. For example you can create an audience in Audience Manager and use it to deliver personalized content with Target.
 
 The main requirements to implement A4T&mdash;which you have already done&mdash;are to:
 
