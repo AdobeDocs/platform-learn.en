@@ -43,6 +43,7 @@ auto-video-transcripts: true
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
+  + [Overview of Federated Audience Composition](audiences/overview-of-federated-audience-composition.md)
   + [Audience rule builder overview](audiences/audience-rule-builder-overview.md)
   + [Create audiences](audiences/create-audiences.md)
   + [Create content-based audiences](audiences/create-content-based-audiences.md)
