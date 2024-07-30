@@ -46,6 +46,7 @@ auto-video-transcripts: true
   + [Overview of Federated Audience Composition](audiences/overview-of-federated-audience-composition.md)
   + [Audience rule builder overview](audiences/audience-rule-builder-overview.md)
   + [Create audiences](audiences/create-audiences.md)
+  + [Use time constraints](audiences/time-constraints.md)
   + [Create content-based audiences](audiences/create-content-based-audiences.md)
   + [Create conversion audiences](audiences/create-conversion-audiences.md)
   + [Create audiences from existing audiences](audiences/create-audiences-from-existing-audiences.md)
