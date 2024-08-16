@@ -5,7 +5,6 @@ feature: Segments
 role: User
 level: Beginner
 jira: KT-13699
-thumbnail: 3421714.jpeg
 last-substantial-update: 2023-07-19
 exl-id: 989202e3-f479-485d-aa7b-c4f345235f0b
 ---
