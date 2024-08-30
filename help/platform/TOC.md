@@ -44,6 +44,8 @@ auto-video-transcripts: true
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
   + [Overview of Federated Audience Composition](audiences/overview-of-federated-audience-composition.md)
+  + [Connect and configure Federated Audience Composition](audiences/connect-and-configure-federated-audience-composition.md)
+  + [Create a Federated Audience Composition](audiences/create-a-federated-audience-composition.md)
   + [Audience rule builder overview](audiences/audience-rule-builder-overview.md)
   + [Create audiences](audiences/create-audiences.md)
   + [Use time constraints](audiences/time-constraints.md)
