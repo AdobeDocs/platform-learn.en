@@ -41,7 +41,7 @@ Before you begin the exercises, watch this short video to learn more about schem
 
 >[!TIP]
 >
-> For a deeper dive into data modeling in Experience Platform, we recommend taking the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm), available for free on Experience League!
+> For a deeper dive into data modeling in Experience Platform, we recommend watching the playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm), available for free on Experience League!
 
 ## Permissions required
 
@@ -80,7 +80,7 @@ In this exercise, we will create a schema for Luma's loyalty data.
 
 Once the schema is created, you will be redirected to the Schema editor where you can add fields to the schema. You can add individual fields directly to the schema or use field groups. It is important to note that all individual fields are still associated with a class or field group. You can choose from a large set of industry-standard field groups provided by Adobe or create your own. As you start modeling your own data in Experience Platform, it is good to become familiar with the industry-standard field groups provided by Adobe. Whenever possible, it is a best practice to use them as they sometimes power downstream services, such as Customer AI, Attribution AI, and Adobe Analytics.
 
-When working with your own data, a significant step will be to determine which of your own data should be captured in Platform and how it should be modeled. This large topic is discussed in more depth in the course [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-D-1-2021.1.xdm). In this tutorial, I will just guide you through the implementation of some pre-determined schemas.
+When working with your own data, a significant step will be to determine which of your own data should be captured in Platform and how it should be modeled. This large topic is discussed in more depth in the playlist [Model Your Customer Experience Data with XDM](https://experienceleague.adobe.com/en/playlists/experience-platform-model-your-customer-experience-data-with-xdm). In this tutorial, I will just guide you through the implementation of some pre-determined schemas.
 
 To add field groups:
 
