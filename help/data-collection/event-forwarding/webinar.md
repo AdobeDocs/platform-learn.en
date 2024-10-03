@@ -1,6 +1,6 @@
 ---
-title: Webinar: Unlocking your marketing data with event forwarding 
-description: Learn how to add an event-forwarding extension in Data Collection.
+title: Webinar-Unlocking your marketing data with event forwarding 
+description: Learn about the use cases and capaiblities of event forwarding in Adobe Experience Platform.
 feature: Event Forwarding
 level: Intermediate
 jira: KT-15981
