@@ -42,7 +42,7 @@ Adobe Experience Platform is a technical platform designed to help you achieve m
 
 ## Pre-requisites
 
-* You have completed the [Introduction to Adobe Experience Platform course](https://experienceleague.adobe.com/?recommended=ExperiencePlatform-U-1-2020.1) on Experience League and are familiar with Platform capabilities
+* You have watched the [Introduction to Adobe Experience Platform playlist](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction) on Experience League and are familiar with Platform capabilities
 * You have access to an account provisioned with Adobe Experience Platform (or a Platform-based application such as Real-Time CDP or Journey Optimizer) and Data Collection (formerly Launch).  
 * You are a System Administrator of that account or can have one [configure user permissions](configure-permissions.md) for you.
 
