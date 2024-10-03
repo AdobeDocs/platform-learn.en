@@ -1,5 +1,5 @@
 ---
-title: Initial setup | Migrate Target from at.js 2.x to Web SDK
+title: Initial setup - Migrate Target from at.js 2.x to Web SDK
 description: Learn about and set up the important foundational elements required for your Platform Web SDK implementation
 exl-id: dbf9683b-1cfc-474a-9c38-432cad4d1533
 ---

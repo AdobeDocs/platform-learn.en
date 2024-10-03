@@ -44,6 +44,7 @@ role: Developer, Data Engineer
   + [Overview](server-api/overview.md)
   + [Basics of APIs](server-api/introduction.md)
 + Event Forwarding{#event-forwarding}
+  + [Webinar](event-forwarding/webinar.md)
   + [Overview](event-forwarding/overview.md)
   + [Create a property](event-forwarding/create-a-property.md)
   + [Set up a datastream](event-forwarding/set-up-a-datastream.md)

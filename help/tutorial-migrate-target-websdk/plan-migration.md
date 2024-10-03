@@ -1,5 +1,5 @@
 ---
-title: Planning | Migrate Target from at.js 2.x to Web SDK
+title: Planning - Migrate Target from at.js 2.x to Web SDK
 description: Learn how to plan for your Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK.
 exl-id: 0e8f9cde-f361-4f69-886d-aad3074cd9b2
 ---
