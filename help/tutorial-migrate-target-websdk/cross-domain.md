@@ -1,5 +1,5 @@
 ---
-title: Enable cross-domain support | Migrate Target from at.js 2.x to Web SDK
+title: Enable cross-domain support - Migrate Target from at.js 2.x to Web SDK
 description: Learn how to configure Adobe Target for cross-domain and mobile app to web browser scenarios using Experience Platform Web SDK.
 exl-id: 6ec24ddc-8f6d-4331-a3ae-bd0f3a7d6e78
 ---

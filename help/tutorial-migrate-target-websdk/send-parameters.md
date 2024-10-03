@@ -1,5 +1,5 @@
 ---
-title: Send parameters | Migrate Target from at.js 2.x to Web SDK
+title: Send parameters - Migrate Target from at.js 2.x to Web SDK
 description: Learn how to send mbox, profile, and entity parameters to Adobe Target using Experience Platform Web SDK.
 exl-id: 7916497b-0078-4651-91b1-f53c86dd2100
 ---

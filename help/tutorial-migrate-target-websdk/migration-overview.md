@@ -1,5 +1,5 @@
 ---
-title: Migration overview | Migrate Target from at.js 2.x to Web SDK
+title: Migration overview - Migrate Target from at.js 2.x to Web SDK
 description: Learn about the key differences between at.js and Platform Web SDK and how to plan your migration effort.
 exl-id: a8ed78e4-c8c2-4505-b4b5-e5d508f5ed87
 ---
