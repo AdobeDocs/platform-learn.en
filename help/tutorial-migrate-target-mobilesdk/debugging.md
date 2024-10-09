@@ -24,17 +24,6 @@ The Adobe Experience Platform Debugger extension for Chrome and Firefox examines
 
 You can run Platform Debugger on any web page and the extension has access to public data. To access non-public data using the extension, such as Target trace information, you must authenticate to Experience Cloud via the **[!UICONTROL Sign in]** link.
 
-### Obtain and install the Adobe Experience Platform Debugger
-
-The Adobe Experience Platform Debugger can be installed in Google Chrome or Mozilla Firefox browsers. Follow the appropriate link below to install the extension on your preferred browser:
-
-- [Chrome](https://chrome.google.com/webstore/detail/adobe-experience-platform/bfnnokhpnncpkdmbokanobigaccjkpob)
-- [Firefox](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
-
-After you install the Chrome extension or Firefox add-on, an icon (![](assets/start-icon.jpg
-)) is added to the extension bar. Select this icon to open the extension.
-
-Refer to the dedicated guide for more information about the [Adobe Experience Platform Debugger extension](https://experienceleague.adobe.com/docs/experience-platform/debugger/home.html) and how to debug all Adobe web applications.
 
 ## Preview Target activities with QA URLs
 
@@ -103,17 +92,6 @@ Target traces provide detailed information about activity qualifications and the
 | Adobe Experience Platform Assurance | No | Yes |
 
 
-To view Platform Web SDK Target traces with the Adobe Experience Platform Debugger, do the following:
-
-1. Navigate to a page on your site that has Target implemented with Platform Web SDK
-1. Open the Adobe Experience Platform Debugger extension by selecting the icon (![](assets/start-icon.jpg)) in your browser navigation bar
-1. Select the **[!UICONTROL Sign In]** link
-1. Authenticate using your Adobe Experience Cloud login
-1. Select the **[!UICONTROL Logs]** tab on the left
-1. Select the **[!UICONTROL Edge]** tab on the top
-1. Optionally give your debugging session a name and click the **[!UICONTROL Connect]** button
-1. Reload the page and the log should populate with detailed information about the edge network interactions
-1. Focus on the log entries that start with "Target Traces" in the description and select **[!UICONTROL View]** to see Target trace details
 
 <!--![How to view Target traces with Adobe Experience Platform Debugger](assets/target-trace-debugger.png){zoomable="yes"}-->
 

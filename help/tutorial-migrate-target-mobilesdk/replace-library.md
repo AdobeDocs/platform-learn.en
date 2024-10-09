@@ -252,7 +252,7 @@ alloy("configure", {
 
 >[!TAB Tags] 
 
-![configuring the Web SDK tag extension migration options](assets/tags-config-migration.png){zoomable="yes"}
+<!--![configuring the Web SDK tag extension migration options](assets/tags-config-migration.png){zoomable="yes"}-->
 
 >[!ENDTABS]
 
