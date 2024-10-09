@@ -386,10 +386,10 @@ And add the desired configurations:
 >[!ENDTABS] 
 
 
-
+ 
 It's important to note that simply including and configuring the Platform Web SDK library as shown above does not execute any network calls to the Adobe Edge Network. 
 
-Next, learn how to [request and apply Form-based activities](render-form-based-activities.md) to the page.
+Next, learn how to [request and apply Form-based activities](render-activities.md) to the page.
 
 >[!NOTE]
 >
