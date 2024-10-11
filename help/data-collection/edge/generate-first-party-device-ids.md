@@ -15,7 +15,7 @@ Adobe Experience Cloud applications have traditionally generated cookies to stor
 1. First-party cookies set by an Adobe server using a domain name's CNAME configuration
 1. First-party cookies set by JavaScript
 
-Recent browser changes restrict the duration of these types of cookies. First-party cookies are most effective when they are set using a customer-owned server using a DNS A/AAAA-record as opposed to a DNS CNAME. The first-party device ID (FPID) functionality allows customers implementing Adobe Experience Platform Web SDK to use device IDs in cookies from servers using DNS A/AAAA-records. These IDs can then be sent to Adobe and used as seeds to generate Experience Cloud IDs (ECIDs), which remains the primary identifier in Adobe Experience Cloud applications.
+Recent browser changes restrict the duration of these types of cookies. First-party cookies are most effective when they are set using a customer-owned server using a DNS A/AAAA-record as opposed to a DNS CNAME. The [first-party device ID (FPID) functionality](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/identity/first-party-device-ids) allows customers implementing Adobe Experience Platform Web SDK to use device IDs in cookies from servers using DNS A/AAAA-records. These IDs can then be sent to Adobe and used as seeds to generate Experience Cloud IDs (ECIDs), which remains the primary identifier in Adobe Experience Cloud applications.
 
 Here is a quick example of how the functionality works:
 
@@ -24,7 +24,9 @@ Here is a quick example of how the functionality works:
 1. An end-user's browser requests a web page from a customer's web server or CDN.
 1. Customer generates a device id (FPID) on their web server or CDN (the web server should be tied to the domain name's DNS A/AAAA-record).
 1. Customer sets a first-party cookie to store the FPID in the end user's browser.
-1. Customer's Adobe Experience Platform Web SDK implementation makes a request to the Platform Edge Network, including the FPID in the identity map.
+1. Customer's Adobe Experience Platform Web SDK implementation makes a request to the Platform Edge Network and either:
+    1. Includes the FPID in the identity map.
+    1. Configures a CNAME for their Web SDK requests and configures their datastream with the name of thier FPID cookie.
 1. Experience Platform Edge Network receives the FPID and uses it to generate an Experience Cloud ID (ECID).
 1. Platform Web SDK response sends the ECID back to the end-user's browser.
 1. If the `idMigrationEnabled=true`, Platform Web SDK uses JavaScript to store the ECID as the `AMCV_` cookie in the end-user's browser.
