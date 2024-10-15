@@ -2,7 +2,7 @@
 title: Planning - Migrate Target from at.js 2.x to Web SDK
 description: Learn how to plan for your Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK.
 ---
-# Plan the migration from at.js to Platform Web SDK
+# Plan the migration from the Target extension
 
 Before upgrading to Platform Web SDK on your site, you should assess your current implementation.
 
