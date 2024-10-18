@@ -1,5 +1,5 @@
 ---
-user-guide-title: Migrate Target implementations in Mobile SDK from the Target extension to the Optimize extension
+user-guide-title: Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 user-guide-description: A hands-on tutorial for Target customers covering how to successfully migrate Mobile SDK implementatoins from the Target extension to the Optimie extension
 solution: Target,Data Collection,Experience Platform
 feature-set: Target,Experience Platform
@@ -12,7 +12,7 @@ jira:
 hide: yes
 ---
 
-# Migrate Target implementations in Mobile SDK from the Target extension to the Optimize extension {#migrate-target-to-mobile-sdk-optimize}
+# Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension{#migrate-target-to-mobile-sdk-decisioning}
 
 + [Tutorial introduction](overview.md)
 
@@ -20,7 +20,7 @@ hide: yes
 
 + [Plan the migration](plan-migration.md)
 
-+ [Compare Target extension to the Optimize extension](detailed-comparison.md)
++ [Compare Target extension to the Decisioning extension](detailed-comparison.md)
 
 + [Perform initial setup](initial-setup.md)
 
