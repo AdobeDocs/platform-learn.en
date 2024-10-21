@@ -17,8 +17,8 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 
 ## Feature comparison
 
-| | Target extension | Decisioning extension (Target via Edge) | 
-|---|---|---|---|
+| Feature | Target extension | Decisioning extension (Target via Edge) | 
+|---|---|---|
 | Prefetch mode | Supported | Supported | 
 | Execute mode | Supported | Not supported |  
 | Custom parameters | Supported | Per mbox parameters are not supported | 
