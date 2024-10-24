@@ -24,7 +24,7 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 | Custom parameters | Supported | Per mbox parameters are not supported | 
 | Entry audiences | Supported | Supported | 
 | Audience segmentation using mobile Lifecycle metrics | Supported | Supported via Data Collection rules | 
-| thirdPartyId (mbox3rdPartyId) | Supported via Identity Map and namespace configuration in the datastream | 
+| thirdPartyId (mbox3rdPartyId) | Supported | Supported via Identity Map and namespace configuration in the datastream | 
 | Notifications (display, click) | Supported | Supported | 
 | Response tokens | Supported | Supported |  
 | Dynamic offers | Supported | Supported | 
