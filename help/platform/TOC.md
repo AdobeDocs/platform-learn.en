@@ -31,7 +31,6 @@ auto-video-transcripts: true
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-  + [Use AI Assistant](/help/platform/admin/ai-assistant.md)
   + [Use alerts](/help/platform/admin/use-alerts.md)
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
   + [Copy objects between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
@@ -40,6 +39,9 @@ auto-video-transcripts: true
   + [Add developers](/help/platform/admin/add-developers.md)
   + [Add product administrators](/help/platform/admin/add-product-administrators.md)
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
++ AI Assistant {#ai-assistant}
+  + [Overview](/help/platform/ai-assistant/overview.md)
+  + [Clean up audiences](/help/platform/ai-assistant/find-unused-audiences.md)
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
