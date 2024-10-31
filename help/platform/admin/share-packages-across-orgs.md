@@ -1,7 +1,7 @@
 ---
 title: Share packages across IMS Orgs
 description: Learn how to copy Experience Platform configurations between IMS Orgs using packages. Easily replicate schemas, datasets, journeys, and more across multiple IMS Orgs to support multi-region/multi-brand deployments.
-feature: Sandboxes,
+feature: Sandboxes
 role: Admin, Developer
 level: Experienced
 doc-type: Feature Video
