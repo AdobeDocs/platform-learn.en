@@ -33,7 +33,8 @@ auto-video-transcripts: true
 + Administration {#admin}
   + [Use alerts](/help/platform/admin/use-alerts.md)
   + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
-  + [Copy objects between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+  + [Copy packages between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+  + [Share packages across IMS Orgs](/help/platform/admin/share-packages-across-orgs.md)
   + [Add users](/help/platform/admin/add-users.md)
   + [Add users to Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
   + [Add developers](/help/platform/admin/add-developers.md)
