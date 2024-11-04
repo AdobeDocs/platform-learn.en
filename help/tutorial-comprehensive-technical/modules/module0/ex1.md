@@ -34,7 +34,6 @@ Once the extension is installed, that same text will be changed automatically to
 The extension will also make it possible for you to:
 
 - Sign up for the tutorial
-- Track your progress by submitting completion of each module as indicated in [How is Completion Measured?](../../completion.md)
 
 ## 0.1.2 Install the Chrome extension
 
