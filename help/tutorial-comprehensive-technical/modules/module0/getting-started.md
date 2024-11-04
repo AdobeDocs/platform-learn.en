@@ -33,7 +33,7 @@ exl-id: 10ee9358-2fcd-4eb3-80d5-c8a963668299
 
 [0.1 Install the Chrome extension for the Experience League documentation](./ex1.md)
 
-In this exercise you'll install and configure the Chrome extension so you can use it to sign up for the tutorial and to personalize the tutorial content.
+In this exercise you'll install and configure the Chrome extension so you can use it to personalize the tutorial content.
 
 [0.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
 

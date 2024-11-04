@@ -40,12 +40,6 @@ More info on Customer Journey Analytics can be found [here](https://spark.adobe.
 >
 >This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
 
-## Architecture Overview
-
-Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
-
-![Architecture Overview](../../assets/images/architecturem13.png)
-
 ## Sandbox to use
 
 For this module, please use this sandbox: `--aepSandboxId--`.

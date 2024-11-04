@@ -18,7 +18,6 @@ This tutorial is very diverse and offers clear insights in the following applica
 - Real-time CDP
 - Adobe Journey Optimizer
 - Customer Journey Analytics
-- Offer Decisioning
 
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. In order to do that, in some lessons there is a focus on how _non-Adobe_ applications integrate with Adobe Experience Platform. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
@@ -30,18 +29,17 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 - Postman
 - ...
 
-After completing this tutorial, you will be able to:
+After completing the exercises in this tutorial, you will be able to:
 
 - Configure Schemas, Field Groups, Datasets, and Identities
 - Configure an Adobe Experience Platform Data Collection property and setup the new Web SDK extension in Adobe Experience Platform Data Collection
-- Stream data into Adobe Experience Platform in real-time using Adobe Experience Platform Data Collection, Google Tag Manager or Amazon Alexa
+- Stream data into Adobe Experience Platform in real-time using Adobe Experience Platform Data Collection
 - Batch ingest data into Adobe Experience Platform using a workflow or by using an extract, transform, load (ETL) application
 - Visualize and use the Real-time Customer Profile in Adobe Experience Platform
 - Create segments
 - Consume several Adobe Experience Platform APIs
 - Use SQL to query your data in Adobe Experience Platform
-- Configure, Train and Score Machine Learning Models in Adobe Experience Platform
-- Use Journey Orchestration to configure real-time, trigger-based journeys
+- Configure and run real-time, trigger-based journeys
 - Use Real-time CDP to take action by activating a segment to various destinations
 - Use Customer Journey Analytics to report on omnichannel customer data from various sources, including Google BigQuery
 
@@ -50,10 +48,6 @@ After completing this tutorial, you will be able to:
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Access to Demo System: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
-
->[!IMPORTANT]
->
->This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
 
 ## Videos
 
@@ -64,7 +58,7 @@ You can find a lot of interesting videos from our Tech Academy events, from Boot
 [0. Getting started](./modules/module0/getting-started.md)
 
 - **Audience:** All participants of the Comprehensive Technical Tutorial for Adobe Experience Platform
-- **Prerequisites:** Access to Demo System Next, Adobe Experience Platform and Adobe Experience Platform Data Collection. Access to the default Configuration ID of your Adobe Experience Platform environment.
+- **Prerequisites:** Access to Demo System Next, Adobe Experience Platform and Adobe Experience Platform Data Collection. 
 - **Description:** In this foundational module, you will setup everything so that you can access and use the demo environment.
 - **Time Investment:** 30 minutes
 
@@ -182,6 +176,3 @@ As part of this module you will also get an understanding of what triggers Real-
 - **Description:** In this module, you'll learn how to setup your own Apache Kafka cluster, define topics, producers and consumers and stream data into Adobe Experience Platform using the Adobe Experience Platform Sink Connector for Kafka Connect.
 - **Time Investment:** 90 minutes
 
->[!NOTE]
->
->Thank you for investing your time in learning all there is to know about Adobe Experience Platform. If you have questions, want to share general feedback of have suggestions on future content, please contact Wouter Van Geluwe directly, by sending an email to **vangeluw@adobe.com**.

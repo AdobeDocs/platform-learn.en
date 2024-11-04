@@ -26,12 +26,6 @@ In this module, you'll learn how to setup your own Apache Kafka cluster, define 
 - Java JDK11 or above needs to be installed on your computer, you can download that JDK here: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Access to Adobe Experience Platform
 
-## Architecture Overview
-
-Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
-
-![Architecture Overview](../../assets/images/architecturem24.png)
-
 ## Sandbox to use
 
 For this module, please use this sandbox: `--aepSandboxId--`.

@@ -26,12 +26,6 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 - **Download these assets**:
   - [Assets](./../../assets/ajo/ajo_assets.zip)
 
-## Architecture Overview
-
-Have a look at the below architecture, which highlights the components that will be discussed and used in this module.
-
-![Architecture Overview](../../assets/images/architecturem23.png)
-
 ## Sandbox to use
 
 For this module, please use this sandbox: `--aepSandboxId--`.
