@@ -22,7 +22,7 @@ Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/con
 
 Make sure to select the correct Adobe Experience Platform instance in the top right corner of your screen. Your instance is `--envName--`.
 
-![Adobe I/O New Integration](../module2.1/iocomp.png)
+![Adobe I/O New Integration](../module2.1/images/iocomp.png)
 
 Click **Create new project**.
 

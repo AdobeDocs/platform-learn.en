@@ -33,19 +33,19 @@ As part of this exercise, you'll...
 
 Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you previously created.
 
-![ETL](../module6/images/awshome.png)
+![ETL](./../../../modules/rtcdp-b2c/module2.3/images/awshome.png)
 
 After logging in, you'll be redirected to the **AWS Management Console**.
 
-![ETL](../module6/images/awsconsole.png)
+![ETL](./../../../modules/rtcdp-b2c/module2.3/images/awsconsole.png)
 
 In the **Find Services** menu, search for **s3**. Click the first search result: **S3 - Scalable Storage in the Cloud**.
 
-![ETL](../module6/images/awsconsoles3.png)
+![ETL](./../../../modules/rtcdp-b2c/module2.3/images/awsconsoles3.png)
 
 You'll then see the **Amazon S3** homepage. Click **Create Bucket**.
 
-![ETL](../module6/images/s3home.png)
+![ETL](./../../../modules/rtcdp-b2c/module2.3/images/s3home.png)
 
 In the **Create Bucket** screen, you need to configure two things:
   

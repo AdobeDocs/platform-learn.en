@@ -101,55 +101,55 @@ You'll then see the configured App Surface for iOS and Android.
 
 Once the app is installed, you'll find it on your device's home screen. Click the icon to open the app.
 
-![DSN](../module0/images/mobileappn1.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn1.png)
 
 When you're using the app the first time, you'll be requested to log in using your Adobe ID. Complete the login process.
 
-![DSN](../module0/images/mobileappn2.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn2.png)
 
 After logging in, you'll see a notification requesting your permission to send notifications. We'll send notifications as part of the tutorial, so click **Allow**.
 
-![DSN](../module0/images/mobileappn3.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn3.png)
 
 You'll then see the app's homepage. Go to **Settings**.
 
-![DSN](../module0/images/mobileappn4.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn4.png)
 
 In settings, you'll see that currently a **Public Project** is loaded in the app. Click **Custom Project**.
 
-![DSN](../module0/images/mobileappn5.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn5.png)
 
 You can now load a custom project. Click the QR code to easily load your project.
 
-![DSN](../module0/images/mobileappn6.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn6.png)
 
 After exercise 0.1, you had this result. Click to open the **Mobile Retail project** that was created for you.
 
-![DSN](../module0/images/dsn5b.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/dsn5b.png)
 
 In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your mobile app project to open it.
 
-![DSN](../module0/images/web8a.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8a.png)
 
 You'll then see this. Click **Integrations**.
 
-![DSN](../module0/images/web8aa.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8aa.png)
 
 You need to select the Data Collection property for mobile that was created in exercise 0.1. Next, click **Run**.
 
-![DSN](../module0/images/web8b.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8b.png)
 
 You'll then see this popup, which contains a QR code. Scan this QR-code from within the mobile app.
 
-![DSN](../module0/images/web8c.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8c.png)
 
 You'll then see your project ID show in the app, after which you can click **Save**.
 
-![DSN](../module0/images/mobileappn7.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn7.png)
 
 Now, go back to **Home** in the app. Your app is now ready to be used.
 
-![DSN](../module0/images/mobileappn8.png)
+![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn8.png)
 
 You now need to scan a QR code to connect your mobile device to your AEP Assurance session. 
 

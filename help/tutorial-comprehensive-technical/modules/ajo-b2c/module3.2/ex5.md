@@ -94,7 +94,7 @@ You'll then see your website loaded in an incognito browser window. For every de
 
 Click the Adobe logo icon in the top left corner of your screen to open the Profile Viewer.
   
-![Demo](./../../../modules/datacollection/module1.2/images/images/pv1.png)
+![Demo](./../../../modules/datacollection/module1.2/images/pv1.png)
 
 Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for thi currently unknown customer.
       

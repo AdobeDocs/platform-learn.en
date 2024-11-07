@@ -21,7 +21,7 @@ The overall process is divided in three main steps:
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](../module2/images/home.png)
+![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
 >[!IMPORTANT]
 >
