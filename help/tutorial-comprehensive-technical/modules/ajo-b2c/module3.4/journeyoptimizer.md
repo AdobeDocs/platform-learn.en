@@ -21,7 +21,7 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 
 - Access to Adobe Journey Optimizer
 - **Download these assets**:
-  - [Assets](./../../assets/ajo/ajo_assets.zip)
+  - [Assets](./../../../assets/ajo/ajo_assets.zip)
 
 >[!NOTE]
 >

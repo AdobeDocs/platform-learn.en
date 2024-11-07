@@ -55,7 +55,7 @@ You can find a lot of interesting videos from our Tech Academy events, from Boot
 
 ## Content
 
-[0. Getting started](./modules/gettingstarted/getting-started.md)
+[0. Getting started](./modules/gettingstarted/gettingstarted/getting-started.md)
 
 - **Audience:** All participants of the Comprehensive Technical Tutorial for Adobe Experience Platform
 - **Prerequisites:** Access to Demo System Next, Adobe Experience Platform and Adobe Experience Platform Data Collection. 

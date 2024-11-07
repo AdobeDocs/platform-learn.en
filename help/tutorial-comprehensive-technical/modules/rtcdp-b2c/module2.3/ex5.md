@@ -16,7 +16,7 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ## 2.3.5.1 Verify your Datastream
 
-The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe edge network. If you want to setuo your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../module0/ex2.md) and was named `--demoProfileLdap-- - Demo System Datastream`.
+The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe edge network. If you want to setuo your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) and was named `--demoProfileLdap-- - Demo System Datastream`.
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), then click **Datastreams** or **Datastreams (Beta)**.
 
@@ -71,7 +71,7 @@ You'll then see this.
 In the **Configure new destination** screen, you need to configure two things:
 
 - Name: use the name `--demoProfileLdap-- - Adobe Target (Web)`, which should look like this: **vangeluw - Adobe Target (Web)**.
-- Datastream ID: you need to select the datastream that you configured in [Exercise 0.2 Create your Datastream](./../module0/ex2.md). The name of your datastream should be: `--demoProfileLdap-- - Demo System Datastream`.
+- Datastream ID: you need to select the datastream that you configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md). The name of your datastream should be: `--demoProfileLdap-- - Demo System Datastream`.
 
 Click **Next**.
 

@@ -28,7 +28,7 @@ A segment qualification in Adobe Experience Platform always has a **status**-pro
 
 ## 2.4.3.2 Build the segment
 
-Building a segment is explained in detail in [Module 6](../module6/real-time-cdp-build-a-segment-take-action.md).
+Building a segment is explained in detail in [Module 2.3](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md).
 
 ### Create Segment
 

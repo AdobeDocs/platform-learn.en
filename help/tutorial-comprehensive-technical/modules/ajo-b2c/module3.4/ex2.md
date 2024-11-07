@@ -35,7 +35,7 @@ Under **Orchestration**, drag and drop **Read Segment** onto the canvas. This me
 
 ![Journey Optimizer](./images/batchj3.png)
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 6 - Real-time CDP - Build a segment and take action](../module6/real-time-cdp-build-a-segment-take-action.md) named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 2.3 - Real-time CDP - Build a segment and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
 
 ![Journey Optimizer](./images/batchj5.png)
 
@@ -71,7 +71,7 @@ You'll then see this. Click **Import HTML**.
 
 ![Journey Optimizer](./images/batch7.png)
 
-In the pop-up screen, you'll need to drag and drop the HTML file of the email. You can find the HTML template [here](../../assets/html/ajo-newsletter.html.zip). Download the zip-file with the HTML template to your local machine and unzip in onto your desktop.
+In the pop-up screen, you'll need to drag and drop the HTML file of the email. You can find the HTML template [here](./../../../assets/html/ajo-newsletter.html.zip). Download the zip-file with the HTML template to your local machine and unzip in onto your desktop.
 
 ![Journey Optimizer](./images/html1.png)
 

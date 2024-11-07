@@ -150,7 +150,7 @@ In Postman, there are 2 concepts: Environments and Collections.
   - 1 Collection for the exercises in this module
   - 1 collection for the exercises in the Real-Time CDP module, for Destination Authoring
 
-Please download the file [postman.zip](../../assets/postman/postman_profile.zip) to your local desktop. 
+Please download the file [postman.zip](./../../../assets/postman/postman_profile.zip) to your local desktop. 
 
 In this **postman.zip** file, you'll find the following files:
 

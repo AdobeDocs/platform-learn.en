@@ -8,7 +8,7 @@ doc-type: tutorial
 
 ## 3.3.6.1 Work with the Offer Decisioning API using Postman
 
-Download [this Postman Collection for Offer Decisioning](./../../assets/postman/postman_offer-decisioning.zip) to your desktop and unzip it. You'll then have this:
+Download [this Postman Collection for Offer Decisioning](./../../../assets/postman/postman_offer-decisioning.zip) to your desktop and unzip it. You'll then have this:
 
 ![OD API](./images/unzip.png)
 

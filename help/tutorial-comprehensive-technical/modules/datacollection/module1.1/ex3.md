@@ -30,7 +30,7 @@ You'll then see the Property Overview page. Click on **[!UICONTROL Extensions]**
 
 ![Property Overview page](./images/property7.png)
 
-Welcome to the the Adobe Experience Platform Web SDK! Here you can configure the extension with the Datastream you created in [Exercise 0.2](./../module0/ex2.md) as well as some more advanced configuration. You're only going to configure two settings for this exercise.
+Welcome to the the Adobe Experience Platform Web SDK! Here you can configure the extension with the Datastream you created in [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) as well as some more advanced configuration. You're only going to configure two settings for this exercise.
 
 The default Edge Domain is always **edge.adobedc.net**. If you've implemented a CNAME configuration in your Adobe Experience Cloud or Adobe Experience Platform environment, you'll need to update the **[!UICONTROL Edge Domain]**. Your Adobe Experience Platform instance is using this Edge Domain: `--webSdkEdgeDomain--`. 
 

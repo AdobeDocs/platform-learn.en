@@ -42,7 +42,7 @@ Enable the option **Show system datasets** and search for **AJO**. You'll then s
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
-In the left menu, go to **[!UICONTROL Datastream]** and search for your datastream that you created in [Exercise 0.2](./../module0/ex2.md), which is named `--demoProfileLdap-- - Demo System Datastream (Mobile)`. Click to open it.
+In the left menu, go to **[!UICONTROL Datastream]** and search for your datastream that you created in [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), which is named `--demoProfileLdap-- - Demo System Datastream (Mobile)`. Click to open it.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
 
@@ -58,7 +58,7 @@ No changes are needed, your datastream is now ready to be used in your Data Coll
 
 ## 3.4.4.3 Review your Data Collection property for Mobile
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). As part of [Exercise 0.1](./../module0/ex1.md), 2 Data Collection properties were created. 
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). As part of [Exercise 0.1](./../../../modules/gettingstarted/gettingstarted/ex1.md), 2 Data Collection properties were created. 
 You've been using these Data Collection Client properties already as part of previous modules. 
 
 Click to open the Data Collection property for mobile.

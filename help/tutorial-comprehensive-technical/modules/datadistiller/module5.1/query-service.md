@@ -28,9 +28,9 @@ We will use data that has been injected into platform using either Web Interacti
 - PostgreSQL
 - Tableau or Microsoft Power BI Desktop
 - **Download these assets**: 
-  - [JSON - Sample Data: Website Interactions](./../../assets/json/ee.json)
-  - [JSON - Sample Data: Call Center Interactions](./../../assets/json/callcenter.json)
-  - [JSON - Sample Data: Loyalty](./../../assets/json/loyalty.json)
+  - [JSON - Sample Data: Website Interactions](./../../../assets/json/ee.json)
+  - [JSON - Sample Data: Call Center Interactions](./../../../assets/json/callcenter.json)
+  - [JSON - Sample Data: Loyalty](./../../../assets/json/loyalty.json)
 
 >[!NOTE]
 >

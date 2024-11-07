@@ -36,7 +36,7 @@ Now, take a look at the left rail.
 - **[!UICONTROL Tags]** gives an overview of all client-side properties
 - **[!UICONTROL App Surfaces]** gives an overview of all App Configurations to enable Push Notifications (which is used/enabled in combination with Project Sierra)
 - **[!UICONTROL Datastreams]** are explored in the [next exercise](./ex2.md)
-- **[!UICONTROL Event Forwarding]** gives an overview of all server-side properties which are explored in [Module 14 - Real-Time CDP Connections: Event Forwarding](../module14/aep-data-collection-ssf.md)
+- **[!UICONTROL Event Forwarding]** gives an overview of all server-side properties which are explored in [Module 14 - Real-Time CDP Connections: Event Forwarding](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
 
 ## Further Information
 

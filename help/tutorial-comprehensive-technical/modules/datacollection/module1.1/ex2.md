@@ -16,7 +16,7 @@ You'll be implementing the Web SDK on the browser in the next exercise. It will 
 
 ## Create a Datastream
 
-In [Exercise 0.2](./../module0/ex2.md) you already created a Datastream, but we didn't discuss the background and reason for being of the Datastream. 
+In [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) you already created a Datastream, but we didn't discuss the background and reason for being of the Datastream. 
 
 A Datastream tells the Adobe Edge servers where to send the data after it is collected by the Web SDK. For example, do you want to send the data to Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target? Datastreams are managed in the Adobe Experience Platform Data Collection user interface and are critical to Platform data collection with Web SDK, regardless of whether or not you are implementing Web SDK via Adobe Experience Platform Data Collection.
 
@@ -51,7 +51,7 @@ For this datastream...
 - All data that is collected will be stored in the `--aepSandboxId--` sandbox in Adobe Experience Platform
 - All Experience Event data is collected by default into the dataset **Demo System - Event Dataset for Website (Global v1.1)**
 - All Profile data will be collected by default into the dataset **Demo System - Profile Dataset for Website (Global v1.1)** (ingesting profile data natively with Web SDK currently isn't supported yet by Web SDK, and will be made available at a later stage)
-- If you want to use the **Offer Decisioning** application service for this Datastream, you need to check the box for Offer Decisioning. (This will be part of [Module 9](./../module9/offer-decisioning.md))
+- If you want to use the **Offer Decisioning** application service for this Datastream, you need to check the box for Offer Decisioning. (This will be part of [Module 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
 - If you want to use the **Edge Segmentation**, you need to check the box for Edge Segmentation.
 - If you want to use the **Personalization Destinations**, you need to check the box for Personalization Destinations.
 
