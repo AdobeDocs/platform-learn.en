@@ -12,7 +12,7 @@ In case you want to send data collected by Web SDK to Adobe Target and get a res
 
 Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/) and go to **Datastreams**. 
 
-In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`. Open your specific datastream, which is named `--demoProfileLdap-- - Demo System Datastream`.
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxName--`. Open your specific datastream, which is named `--aepUserLdap-- - Demo System Datastream`.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 

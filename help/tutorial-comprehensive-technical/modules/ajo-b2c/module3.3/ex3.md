@@ -8,17 +8,17 @@ doc-type: tutorial
 
 ## 3.3.3.1 Update your Datastream
 
-In [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name `--demoProfileLdap-- - Demo System Datastream`.
+In [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name `--aepUserLdap-- - Demo System Datastream`.
 
 In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with **[!DNL Offer Decisioning]**.
 
 To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). You'll then see this. Click **[!UICONTROL Datastreams]** or **[!UICONTROL Datastreams (Beta)]**. 
 
-In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxName--`.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
-Search for your **[!UICONTROL Datastream]**, which is named `--demoProfileLdap-- - Demo System Datastream`. Click your **[!UICONTROL Datastream]** to open it. 
+Search for your **[!UICONTROL Datastream]**, which is named `--aepUserLdap-- - Demo System Datastream`. Click your **[!UICONTROL Datastream]** to open it. 
 
 ![WebSDK](./images/websdk1.png)
 
@@ -36,7 +36,7 @@ Your **[!UICONTROL Datastream]** is now ready to work with **[!DNL Offer Decisio
 
 ## 3.3.3.2 Configure your Adobe Experience Platform Data Collection Client property to request Personalized Offers
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), to **[!UICONTROL Client]**. Search for your Data Collection properties, which are named `--demoProfileLdap-- - Demo System (DD/MM/YYYY)`. Open your Data Collection client property for web.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), to **[!UICONTROL Client]**. Search for your Data Collection properties, which are named `--aepUserLdap-- - Demo System (DD/MM/YYYY)`. Open your Data Collection client property for web.
 
 ![WebSDK](./images/launch1.png)
 
@@ -73,7 +73,7 @@ To find the [!UICONTROL Placement ID] for [!UICONTROL Web - Image] go to Adobe J
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -85,15 +85,15 @@ As you can see in the above image, in this example the [!UICONTROL Placement ID]
 
 ### 3.3.3.2.2 Retrieve your [!UICONTROL Decision ID]
 
-The [!UICONTROL Decision ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Decision] and named it `--demoProfileLdap-- - Luma Decision`.
+The [!UICONTROL Decision ID] identifies which combination of Personalized Offers and Fallback Offer you'd like to use. In the previous exercise, you created your own [!UICONTROL Decision] and named it `--aepUserLdap-- - Luma Decision`.
 
-To find the [!UICONTROL Decision ID] for your `--demoProfileLdap-- - Luma Decision`, go to [https://platform.adobe.com](https://platform.adobe.com). 
+To find the [!UICONTROL Decision ID] for your `--aepUserLdap-- - Luma Decision`, go to [https://platform.adobe.com](https://platform.adobe.com). 
 
-Next, go to [!UICONTROL Offers] and then go to [!UICONTROL Decisions]. Click to select your [!UICONTROL Decision], which is named `--demoProfileLdap-- - Luma Decision`.
+Next, go to [!UICONTROL Offers] and then go to [!UICONTROL Decisions]. Click to select your [!UICONTROL Decision], which is named `--aepUserLdap-- - Luma Decision`.
 
 ![WebSDK](./images/launch7.png)
 
-As you can see in the above image, in this example the [!UICONTROL Decision ID] is `xcore:offer-activity:14c052382e1b6505`. Write down the [!UICONTROL Decision ID] for your decision `--demoProfileLdap-- - Luma Decision` as you'll need it in the next exercise.
+As you can see in the above image, in this example the [!UICONTROL Decision ID] is `xcore:offer-activity:14c052382e1b6505`. Write down the [!UICONTROL Decision ID] for your decision `--aepUserLdap-- - Luma Decision` as you'll need it in the next exercise.
 
 Now that you've retrieved the two elements you need to create a **[!UICONTROL Decision Scopes]**, you can continue with the next step, which involves encoding the decision scope.
 
@@ -114,11 +114,11 @@ The **[!UICONTROL Decision Scope]** can be generated in two ways:
 
   ![WebSDK](./images/launch8.png)
 
-- Retrieve the BASE64 encoded string from Adobe Experience Platform. Go to [!UICONTROL Decisions] and click to open your [!UICONTROL Decision], which is named `--demoProfileLdap-- - Luma Decision`.
+- Retrieve the BASE64 encoded string from Adobe Experience Platform. Go to [!UICONTROL Decisions] and click to open your [!UICONTROL Decision], which is named `--aepUserLdap-- - Luma Decision`.
 
   ![WebSDK](./images/launch9.png)
   
-  After opening `--demoProfileLdap-- - Luma Decision`, you'll see this. Locate the placement [!UICONTROL Web - Image] and click the **[!UICONTROL Copy]** button. Next, click **[!UICONTROL Encoded decision scope]**. The **[!UICONTROL Decision Scope]** is now copied to your clipboard.
+  After opening `--aepUserLdap-- - Luma Decision`, you'll see this. Locate the placement [!UICONTROL Web - Image] and click the **[!UICONTROL Copy]** button. Next, click **[!UICONTROL Encoded decision scope]**. The **[!UICONTROL Decision Scope]** is now copied to your clipboard.
     
   ![WebSDK](./images/launch10.png)
 
@@ -146,7 +146,7 @@ Every time you're loading a **General Page** now, like for instance the homepage
 
 ## 3.3.3.3 Configure your Adobe Experience Platform Data Collection Client property to receive and apply Personalized Offers
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), to **[!UICONTROL Properties]**. Search for your Data Collection properties, which are named `--demoProfileLdap-- - Demo System (DD/MM/YYYY)`. Open your Data Collection property for web.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), to **[!UICONTROL Properties]**. Search for your Data Collection properties, which are named `--aepUserLdap-- - Demo System (DD/MM/YYYY)`. Open your Data Collection property for web.
 
 ![WebSDK](./images/launch1.png)
 

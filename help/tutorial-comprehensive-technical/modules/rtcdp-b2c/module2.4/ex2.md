@@ -27,7 +27,7 @@ Select **All Resources** in Azure Portal:
 
 ### Event Hub
 
-Look for a resource with resource type **Event Hubs Namespace**, if you followed the naming conventions used in the previous exercise you Event Hubs Namespace will be `--demoProfileLdap---aep-enablement`. Take a note of it, you will need it in the next exercise.
+Look for a resource with resource type **Event Hubs Namespace**, if you followed the naming conventions used in the previous exercise you Event Hubs Namespace will be `--aepUserLdap---aep-enablement`. Take a note of it, you will need it in the next exercise.
 
 ![2-02-select-event-hubs-namespace.png](./images/2-02-select-event-hubs-namespace.png)
 
@@ -35,7 +35,7 @@ Click on the Event Hubs Namespace name to get the details:
 
 ![2-03-select-event-hub.png](./images/2-03-select-event-hub.png)
 
-Select **Event Hubs** to get a list of Event Hubs defined in your Event Hubs Namespace, if you followed the naming conventions used in the previous exercise you will find an Event Hub named `--demoProfileLdap---aep-enablement-event-hub`. Take a note of it, you will need it in the next exercise.
+Select **Event Hubs** to get a list of Event Hubs defined in your Event Hubs Namespace, if you followed the naming conventions used in the previous exercise you will find an Event Hub named `--aepUserLdap---aep-enablement-event-hub`. Take a note of it, you will need it in the next exercise.
   
 ![2-04-event-hub-selected.png](./images/2-04-event-hub-selected.png)
 
@@ -63,8 +63,8 @@ At this point you should have identified all the values needed to define the Azu
 |---|---|---|
 |sasKeyName|SAS Key Name|RootManageSharedAccessKey|  
 |sasKey|SAS Key Value|srREx9ShJG1Rv7f/... |
-|namespace|Event Hubs Namespace|`--demoProfileLdap---aep-enablement`|
-|eventHubName|Event Hub|`--demoProfileLdap---aep-enablement-event-hub`| 
+|namespace|Event Hubs Namespace|`--aepUserLdap---aep-enablement`|
+|eventHubName|Event Hub|`--aepUserLdap---aep-enablement-event-hub`| 
 
 ## 2.4.2.2 Create Azure Event Hub Destination in Adobe Experience Platform
 
@@ -74,7 +74,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -94,7 +94,7 @@ If your credentials were correct, you'll see a confirmation: **Connected**.
 
 ![2-09-destination-values.png](./images/2-09-destination-valuesa.png)
 
-You now need to enter the name and description in the format `--demoProfileLdap---aep-enablement`. Enter the **eventHubName** (see previous exercise, it looks like this: `--demoProfileLdap---aep-enablement-event-hub`) and click **Next**.
+You now need to enter the name and description in the format `--aepUserLdap---aep-enablement`. Enter the **eventHubName** (see previous exercise, it looks like this: `--aepUserLdap---aep-enablement-event-hub`) and click **Next**.
   
 ![2-10-create-destination.png](./images/2-10-create-destination.png)
 

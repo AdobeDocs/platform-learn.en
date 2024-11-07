@@ -32,7 +32,7 @@ You'll then see the **Amazon S3** homepage. Click **Create Bucket**.
 
 In the **Create Bucket** screen, you need to configure two things:
   
-- Name: use the name `aepmodulertcdp--demoProfileLdap--`. As an example, in this exercise the bucket name is **aepmodulertcdpvangeluw**
+- Name: use the name `aepmodulertcdp--aepUserLdap--`. As an example, in this exercise the bucket name is **aepmodulertcdpvangeluw**
 - Region: use the region **EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -63,7 +63,7 @@ In the left menu, click **Users**. You'll then see the **Users** screen. Click *
 
 Next, configure your user:
 
-- User Name: use `s3_--demoProfileLdap--_rtcdp` as a name, so in this example the name is `s3_vangeluw_rtcdp`.
+- User Name: use `s3_--aepUserLdap--_rtcdp` as a name, so in this example the name is `s3_vangeluw_rtcdp`.
 - AWS access type: select **Access key - Programmatic access**.
 
 Click **Next: Permissions**.
@@ -115,7 +115,7 @@ Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After 
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -151,9 +151,9 @@ As a naming convention, please use the following:
 
 | Access Key ID             | Secret Access Key             |
 |:-----------------------:| :-----------------------:|
-| Name |`AWS - S3 - --demoProfileLdap--`|
-| Description |`AWS - S3 - --demoProfileLdap--`|
-| Bucket Name |`aepmodulertcdp--demoProfileLdap--`|
+| Name |`AWS - S3 - --aepUserLdap--`|
+| Description |`AWS - S3 - --aepUserLdap--`|
+| Bucket Name |`aepmodulertcdp--aepUserLdap--`|
 | Folder Path |/|
 
 Click **Next**.

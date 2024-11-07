@@ -61,7 +61,7 @@ Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After 
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -99,7 +99,7 @@ Finally, let's give your segment a name and save it.
 
 As a naming convention, use:
 
-- `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
+- `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`
 
 Your segment name should look like this:
 `vangeluw - Interest in PROTEUS FITNESS JACKSHIRT`

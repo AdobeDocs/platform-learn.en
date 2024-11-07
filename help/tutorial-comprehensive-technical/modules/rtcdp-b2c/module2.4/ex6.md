@@ -65,17 +65,17 @@ You'll then see your website loaded in an incognito browser window. For every de
 
 ## 2.4.6.3 Qualify for your Interest in Equipment segment
 
-Navigate to the **Equipment** page once, and **do not reload or refresh it**. This action should qualify you for your `--demoProfileLdap-- - Interest in Equipment` segment. 
+Navigate to the **Equipment** page once, and **do not reload or refresh it**. This action should qualify you for your `--aepUserLdap-- - Interest in Equipment` segment. 
 
 ![6-04-luma-telco-nav-sports.png](./images/luma1.png)
 
-To verify, open the Profile Viewer panel. You should now be a member of the `--demoProfileLdap-- - Interest in Equipment`. If your segment memberships are not yet updated in your Profile Viewer panel, click the reload button.  
+To verify, open the Profile Viewer panel. You should now be a member of the `--aepUserLdap-- - Interest in Equipment`. If your segment memberships are not yet updated in your Profile Viewer panel, click the reload button.  
 
 ![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
 
-Switch back to Visual Studio Code and look at your **TERMINAL** tab, you should see a list of segments for your specific **ECID**. This activation payload is delivered to your event hub as soon as you qualify for the `--demoProfileLdap-- - Interest in Equipment` segment. 
+Switch back to Visual Studio Code and look at your **TERMINAL** tab, you should see a list of segments for your specific **ECID**. This activation payload is delivered to your event hub as soon as you qualify for the `--aepUserLdap-- - Interest in Equipment` segment. 
 
-When you take a closer look a the segment payload, you can see that `--demoProfileLdap-- - Interest in Equipment` is in status **realized**. 
+When you take a closer look a the segment payload, you can see that `--aepUserLdap-- - Interest in Equipment` is in status **realized**. 
 
 A segment status of **realized** means that our profile hsa just entered the segment. While the **existing** status means that our profile continues to be in the segment.
 

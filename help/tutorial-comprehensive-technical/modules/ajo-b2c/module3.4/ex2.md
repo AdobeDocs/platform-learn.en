@@ -10,7 +10,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -24,7 +24,7 @@ In the menu, go to **Journeys** and click **Create Journey**.
 
 On the right-hand side you will see a form where you need to specify the journey name and description. Enter the following values:
 
-- **Name**: `--demoProfileLdap-- - Newsletter Journey`. For instance: **vangeluw - Newsletter Journey**.
+- **Name**: `--aepUserLdap-- - Newsletter Journey`. For instance: **vangeluw - Newsletter Journey**.
 - **Description**: Monthly Newsletter
 
 Click **Ok**. 
@@ -35,7 +35,7 @@ Under **Orchestration**, drag and drop **Read Segment** onto the canvas. This me
 
 ![Journey Optimizer](./images/batchj3.png)
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 2.3 - Real-time CDP - Build a segment and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 2.3 - Real-time CDP - Build a segment and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
 
 ![Journey Optimizer](./images/batchj5.png)
 

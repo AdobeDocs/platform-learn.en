@@ -8,7 +8,7 @@ doc-type: tutorial
 
 ## 2.4.4.1 Add Segment to Azure Event Hub Destination
 
-In this exercise you will add your segment `--demoProfileLdap-- - Interest in Equipment` to your `--demoProfileLdap---aep-enablement` Azure Event Hub destination.
+In this exercise you will add your segment `--aepUserLdap-- - Interest in Equipment` to your `--aepUserLdap---aep-enablement` Azure Event Hub destination.
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -16,7 +16,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -24,7 +24,7 @@ Go to **Destinations**, then click **Browse**. You'll then see all available des
 
 ![5-01-select-destination.png](./images/5-01-select-destination.png)
 
-You'll then see this. Search for your segment using your ldap and select `--demoProfileLdap-- - Interest in Equipment` from the list of segments.
+You'll then see this. Search for your segment using your ldap and select `--aepUserLdap-- - Interest in Equipment` from the list of segments.
 
 Click **Next**.
 

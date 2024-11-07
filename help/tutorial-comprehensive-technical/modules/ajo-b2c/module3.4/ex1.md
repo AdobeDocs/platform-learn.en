@@ -10,7 +10,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -28,7 +28,7 @@ You'll then see an empty event configuration.
 
 ![Journey Optimizer](./images/oc32.png)
 
-First of all, give your Event a Name like this: `--demoProfileLdap--PurchaseEvent`, and add a description like this: `Purchase Event`.
+First of all, give your Event a Name like this: `--aepUserLdap--PurchaseEvent`, and add a description like this: `Purchase Event`.
 
 ![Journey Optimizer](./images/oc34.png)
 
@@ -94,11 +94,11 @@ In the menu, go to **Journeys** and click **Create Journey**.
 
 ![Journey Optimizer](./images/oc43.png)
 
-You'll then see this. Give your journey a name. Use `--demoProfileLdap-- - Order Confirmation journey`. Click **OK**.
+You'll then see this. Give your journey a name. Use `--aepUserLdap-- - Order Confirmation journey`. Click **OK**.
 
 ![Journey Optimizer](./images/oc45.png)
 
-First, you need to add your event as the starting point of your journey. Search for your event `--demoProfileLdap--PurchaseEvent` and drag and drop it onto the canvas. Click **OK**.
+First, you need to add your event as the starting point of your journey. Search for your event `--aepUserLdap--PurchaseEvent` and drag and drop it onto the canvas. Click **OK**.
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -260,7 +260,7 @@ Click the arrow next to **Events** to drill deeper.
 
 ![Journey Optimizer](./images/oc62.png)
 
-Click the arrow next to `--demoProfileLdap--PurchaseEvent` to drill deeper.
+Click the arrow next to `--aepUserLdap--PurchaseEvent` to drill deeper.
 
 ![Journey Optimizer](./images/oc63.png)
 
@@ -308,7 +308,7 @@ Click the arrow next to **Events** to drill deeper.
 
 ![Journey Optimizer](./images/oc722.png)
 
-Click the arrow next to `--demoProfileLdap--PurchaseEvent` to drill deeper.
+Click the arrow next to `--aepUserLdap--PurchaseEvent` to drill deeper.
 
 ![Journey Optimizer](./images/oc73.png)
 
@@ -373,7 +373,7 @@ This is the Adobe Experience Platform Data Collection Properties page you saw be
 
 ![Properties page](./../../../modules/datacollection/module1.1/images/launch1.png) 
 
-In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--demoProfileLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
+In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
 
 ![Search box](./../../../modules/datacollection/module1.1/images/property6.png)
 

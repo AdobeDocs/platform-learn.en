@@ -69,7 +69,7 @@ Give your schema a name now.
 
 As the name for our schema, you'll use this:
 
-- `--demoProfileLdap-- - Demo System - Customer Experience Event`
+- `--aepUserLdap-- - Demo System - Customer Experience Event`
 
 As an example, for ldap **vangeluw**, this should be the name of the schema:
 
@@ -105,7 +105,7 @@ In the next screen, select the dataset you created in the previous exercise, whi
 
 ![Dataset](./images/createds1.png)
 
-As a name for your dataset, use `--demoProfileLdap-- - Demo System - Customer Experience Event Dataset`. Click **Finish**.
+As a name for your dataset, use `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`. Click **Finish**.
 
 ![Dataset](./images/createds2.png)
 

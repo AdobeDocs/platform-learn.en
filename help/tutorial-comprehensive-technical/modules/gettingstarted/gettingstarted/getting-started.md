@@ -21,11 +21,6 @@ doc-type: tutorial
 - Access to Adobe Experience Platform Launch: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Access to Demo System Next: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
 
->[!IMPORTANT] 
->
->This tutorial was created to facilitate a particular workshop format. It uses specific systems and accounts to which you might not have access. Even without access, we think you can still learn a lot by reading through this very detailed content. If you're a participant in one of the workshops and need your access credentials, please contact your Adobe representative who will provide you with the required information.
-
-
 ## Exercises
 
 [0.1 Install the Chrome extension for the Experience League documentation](./ex1.md)

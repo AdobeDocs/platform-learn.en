@@ -65,7 +65,7 @@ You'll then see this. Select the field **_id**. In the right menu, scroll down a
 
 ![External Audiences Metadata Schema 4](images/extAudMDXDM4.png)
 
-Next, select the schema name **Untitled schema**. Change the name to `--demoProfileLdap-- - External Audiences Metadata`.
+Next, select the schema name **Untitled schema**. Change the name to `--aepUserLdap-- - External Audiences Metadata`.
 
 ![External Audiences Metadata Schema 5](images/extAudMDXDM5.png)
 
@@ -75,11 +75,11 @@ Enable the **Profile** toggle and confirm. Finally, click **Save**.
 
 ## 2.3.6.1.3 Create the External Audiences Metadata dataset
 
-In **Schemas**, go to **Browse**. Search and click the `--demoProfileLdap-- - External Audiences Metadata` schema you created in the previous step. Next, click **Create Dataset from Schema**.
+In **Schemas**, go to **Browse**. Search and click the `--aepUserLdap-- - External Audiences Metadata` schema you created in the previous step. Next, click **Create Dataset from Schema**.
 
 ![External Audiences Metadata DS 1](images/extAudMDDS1.png)
 
-For the field **Name**, enter `--demoProfileLdap-- - External Audience Metadata`. Click **Create dataset**.
+For the field **Name**, enter `--aepUserLdap-- - External Audience Metadata`. Click **Create dataset**.
 
 ![External Audiences Metadata DS 2](images/extAudMDDS2.png)
 
@@ -98,7 +98,7 @@ Go to **Sources**. In the search field, enter **HTTP**. Click **Add data**.
 Enter the following information:
 
 - **Account type**: select **New account**
-- **Account name**: enter `--demoProfileLdap-- - External Audience Metadata`
+- **Account name**: enter `--aepUserLdap-- - External Audience Metadata`
 - Check the checkbox **XDM compatible box**
 
 Next, click **Connect to source**.
@@ -109,7 +109,7 @@ You'll then see this. Click **Next**.
 
 ![External Audiences Metadata http 2](images/extAudMDhttp2a.png)
 
-Select **Existing dataset** and in the dropdown menu, search and select the dataset `--demoProfileLdap-- - External Audience Metadata`.
+Select **Existing dataset** and in the dropdown menu, search and select the dataset `--aepUserLdap-- - External Audience Metadata`.
 
 Verify the **Dataflow details** and then click **Next**.
 
@@ -143,15 +143,15 @@ The object **xdmEntity** needs to be replaced by the below code. Copy the below 
 
 ```
 "xdmEntity": {
-    "_id": "--demoProfileLdap---extaudience-01",
-    "description": "--demoProfileLdap---extaudience-01 description",
+    "_id": "--aepUserLdap---extaudience-01",
+    "description": "--aepUserLdap---extaudience-01 description",
     "segmentIdentity": {
-      "_id": "--demoProfileLdap---extaudience-01",
+      "_id": "--aepUserLdap---extaudience-01",
       "namespace": {
         "code": "externalaudiences"
       }
     },
-    "segmentName": "--demoProfileLdap---extaudience-01 name",
+    "segmentName": "--aepUserLdap---extaudience-01 name",
     "segmentStatus": "ACTIVE",
     "version": "1.0"
   }
@@ -179,7 +179,7 @@ Refresh your HTTP API Source connector screen, where you'll now see that data is
 
 When the processing is completed you can check the data availability in the dataset using Query Service.
 
-In the right menu, go to **Datasets** and select the `--demoProfileLdap-- - External Audience Metadata` dataset you created previously.
+In the right menu, go to **Datasets** and select the `--aepUserLdap-- - External Audience Metadata` dataset you created previously.
 
 ![External Audiences Metadata str 3](images/extAudMDstr3.png)  
 
@@ -190,7 +190,7 @@ In the right menu, go to Queries and click **Create query**.
 Enter the following code and then hit **SHIFT + ENTER**:
 
 ```
-select * from --demoProfileLdap--_external_audience_metadata
+select * from --aepUserLdap--_external_audience_metadata
 ```
 
 In the query results you'll see the external audience's metadata that you ingested.
@@ -223,7 +223,7 @@ Click **Apply**.
 
 ![External Audiences Profile Schema 4](images/extAudPrXDM4.png)
 
-Next, select the Schema name **Untitled schema**. In the display name field, enter `--demoProfileLdap-- - External Audiences Membership`.
+Next, select the Schema name **Untitled schema**. In the display name field, enter `--aepUserLdap-- - External Audiences Membership`.
 
 ![External Audiences Profile Schema 5](images/extAudPrXDM5a.png)
 
@@ -233,11 +233,11 @@ Next, enable the **Profile** toggle and confirm. Click **Save**.
 
 ## 2.3.6.2.2 Create the External Audiences Membership dataset
 
-In **Schemas**, go to **Browse**. Search and click the `--demoProfileLdap-- - External Audiences Membership` schema you created in the previous step. Next, click **Create Dataset from Schema**.
+In **Schemas**, go to **Browse**. Search and click the `--aepUserLdap-- - External Audiences Membership` schema you created in the previous step. Next, click **Create Dataset from Schema**.
 
 ![External Audiences Metadata DS 1](images/extAudPrDS1.png)
 
-For the field **Name**, enter `--demoProfileLdap-- - External Audiences Membership`. Click **Create dataset**.
+For the field **Name**, enter `--aepUserLdap-- - External Audiences Membership`. Click **Create dataset**.
 
 ![External Audiences Metadata DS 2](images/extAudPrDS2.png)
 
@@ -257,7 +257,7 @@ Go to **Sources**. In the search field, enter **HTTP**. Click **Add data**.
 Enter the following information:
 
 - **Account type**: select **New account**
-- **Account name**: enter `--demoProfileLdap-- - External Audience Membership`
+- **Account name**: enter `--aepUserLdap-- - External Audience Membership`
 - Check the checkbox **XDM compatible box**
 
 Next, click **Connect to source**.
@@ -268,7 +268,7 @@ You'll then see this. Click **Next**.
 
 ![External Audiences Metadata http 2](images/extAudPrhttp2a.png)
 
-Select **Existing dataset** and in the dropdown menu, search and select the dataset `--demoProfileLdap-- - External Audiences Membership`.
+Select **Existing dataset** and in the dropdown menu, search and select the dataset `--aepUserLdap-- - External Audiences Membership`.
 
 Verify the **Dataflow details** and then click **Next**.
 
@@ -302,18 +302,18 @@ The object **xdmEntity** needs to be replaced by the below code. Copy the below 
 
 ```
   "xdmEntity": {
-    "_id": "--demoProfileLdap---profile-test-01",
+    "_id": "--aepUserLdap---profile-test-01",
     "_experienceplatform": {
       "identification": {
         "core": {
-          "crmId": "--demoProfileLdap---profile-test-01"
+          "crmId": "--aepUserLdap---profile-test-01"
         }
       }
     },
-    "personID": "--demoProfileLdap---profile-test-01",
+    "personID": "--aepUserLdap---profile-test-01",
     "segmentMembership": {
       "externalaudiences": {
-        "--demoProfileLdap---extaudience-01": {
+        "--aepUserLdap---extaudience-01": {
           "status": "realized",
           "lastQualificationTime": "2022-03-05T00:00:00Z"
         }
@@ -344,7 +344,7 @@ Refresh your HTTP API Source connector screen, where after a couple of minutes y
 
 When the processing is completed you can check the data availability in the dataset using Query Service.
 
-In the right menu, go to **Datasets** and select the `--demoProfileLdap-- - External Audiences Membership ` dataset you created previously. 
+In the right menu, go to **Datasets** and select the `--aepUserLdap-- - External Audiences Membership ` dataset you created previously. 
 
 ![External Audiences Metadata str 3](images/extAudPrstr3.png)
 
@@ -355,7 +355,7 @@ In the right menu, go to Queries and click **Create query**.
 Enter the following code and then hit **SHIFT + ENTER**:
 
 ```
-select * from --demoProfileLdap--_external_audiences_membership
+select * from --aepUserLdap--_external_audiences_membership
 ```
 
 In the query results you'll see the external audience's metadata that you ingested.
@@ -376,11 +376,11 @@ Go to **Audiences**. You'll then see this. Click **External Audiences**.
 
 ![External Audiences SegBuilder 1](images/extAudSegUI2a.png)
 
-Select the external audience you created earlier, which is named `--demoProfileLdap---extaudience-01`. Drag and drop the audience onto the canvas.
+Select the external audience you created earlier, which is named `--aepUserLdap---extaudience-01`. Drag and drop the audience onto the canvas.
 
 ![External Audiences SegBuilder 1](images/extAudSegUI2b.png)
 
-Give your segment a name, use `--demoProfileLdap-- - extaudience-01`. Click **Save and Close**.
+Give your segment a name, use `--aepUserLdap-- - extaudience-01`. Click **Save and Close**.
 
 ![External Audiences SegBuilder 1](images/extAudSegUI1.png)
 
@@ -392,7 +392,7 @@ Your segment is ready now, and can be sent towards a destination for activation.
 
 ## 2.3.6.4 Visualize your customer profile
 
-You can now also visualize the segment qualification on your customer profile. Go to **Profiles**, use the identity namespace **Demo System - CRMID** and provide the identity `--demoProfileLdap---profile-test-01`, which you used as part of exercise 6.6.2.4, and click **View**. Next, click the **Profile ID** to open the profile.
+You can now also visualize the segment qualification on your customer profile. Go to **Profiles**, use the identity namespace **Demo System - CRMID** and provide the identity `--aepUserLdap---profile-test-01`, which you used as part of exercise 6.6.2.4, and click **View**. Next, click the **Profile ID** to open the profile.
 
 ![External Audiences SegBuilder 1](images/extAudProfileUI1.png)
 

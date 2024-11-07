@@ -12,7 +12,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -67,7 +67,7 @@ Go back to **Adobe Journey Optimizer**, to your empty **External Data Source** p
 
 ![Demo](./images/emptyds.png)
 
-As a Name for the data source, use `--demoProfileLdap--WeatherApi`. In this example, the data source Name is `vangeluwWeatherApi `.
+As a Name for the data source, use `--aepUserLdap--WeatherApi`. In this example, the data source Name is `vangeluwWeatherApi `.
 
 Set Description to: `Access to the Open Weather Map`.
 
@@ -100,7 +100,7 @@ In order to match the expected API Request, configure your FieldGroup as follows
 
 >[!IMPORTANT]
 >
->The Field group name has to be unique, please use this naming convention: `--demoProfileLdap--WeatherByCity` so in this case, the name should be `vangeluwWeatherByCity`
+>The Field group name has to be unique, please use this naming convention: `--aepUserLdap--WeatherByCity` so in this case, the name should be `vangeluwWeatherByCity`
 
 ![Demo](./images/fg1.png)
 

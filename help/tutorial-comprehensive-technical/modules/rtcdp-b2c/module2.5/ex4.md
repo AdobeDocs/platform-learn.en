@@ -22,7 +22,7 @@ You'll then see this.
 
 Make the following choices:
 
-- **Function name**: `--demoProfileLdap---event-forwarding`
+- **Function name**: `--aepUserLdap---event-forwarding`
 - **Region**: select any region
 - **Trigger Type**: select **HTTP**
 - **Authentication**: select **Allow unauthenticated invocations**

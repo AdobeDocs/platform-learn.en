@@ -116,10 +116,10 @@ Click **Edit Project**.
 
 ![Adobe I/O New Integration](../module2.1/images/api14.png)
 
-Enter a Name and Description for your integration. As a naming convention, we'll use `AEP API --demoProfileLdap--`. Replace ldap with your ldap.
+Enter a Name and Description for your integration. As a naming convention, we'll use `AEP API --aepUserLdap--`. Replace ldap with your ldap.
 For instance, if your ldap is vangeluw, the name and description of your integration becomes AEP API vangeluw.
 
-Enter `AEP API --demoProfileLdap--` as the **Project Title**. Click **Save**.
+Enter `AEP API --aepUserLdap--` as the **Project Title**. Click **Save**.
 
 ![Adobe I/O New Integration](../module2.1/images/api15.png)
 
@@ -279,11 +279,11 @@ As for the format, we'll use a standard template that will stream segment qualif
 
 The first step to create your own Destination in Adobe Experience Platform is to create a server and template configuration.
 
-To do that, go to **Destination Authoring API**, to **Destination servers and templates** and click to open the request **POST - Create a destination server configuration**. You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxId--`. Select the value **{{SANDBOX_NAME}}**.
+To do that, go to **Destination Authoring API**, to **Destination servers and templates** and click to open the request **POST - Create a destination server configuration**. You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **{{SANDBOX_NAME}}**.
 
 ![Data Ingestion](./images/sdkpm1.png)
 
-Replace it by `--aepSandboxId--`.
+Replace it by `--aepSandboxName--`.
 
 ![Data Ingestion](./images/sdkpm2.png)
 
@@ -329,11 +329,11 @@ After clicking **Send**, your server template will be created, and as part of th
 
 ## 2.3.7.5 Create your destination configuration
 
-In Postman, under **Destination Authoring API**, go to **Destination configurations** and click to open the request **POST - Create a destination configuration**. You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxId--`. Select the value **{{SANDBOX_NAME}}**.
+In Postman, under **Destination Authoring API**, go to **Destination configurations** and click to open the request **POST - Create a destination configuration**. You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **{{SANDBOX_NAME}}**.
 
 ![Data Ingestion](./images/sdkpm7.png)
 
-Replace it by `--aepSandboxId--`.
+Replace it by `--aepSandboxName--`.
 
 ![Data Ingestion](./images/sdkpm8.png)
 
@@ -345,7 +345,7 @@ You now need to replace the placeholder **{{body}}** by the below code:
 
 ```json
 {
-    "name": "--demoProfileLdap-- - Webhook",
+    "name": "--aepUserLdap-- - Webhook",
     "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
     "status": "TEST",
     "customerAuthenticationConfigurations": [
@@ -422,7 +422,7 @@ Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After 
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -440,7 +440,7 @@ Enter a dummy bearer token, like **1234**. Click **Connect to destination**.
 
 ![Data Ingestion](./images/destsdk3.png)
 
-You'll then see this. As a name for your destination, use `--demoProfileLdap-- - Webhook`. Select an endpoint of choice, in this example **EU**. Click **Next**.
+You'll then see this. As a name for your destination, use `--aepUserLdap-- - Webhook`. Select an endpoint of choice, in this example **EU**. Click **Next**.
 
 ![Data Ingestion](./images/destsdk4.png)
 
@@ -448,7 +448,7 @@ You can optionally select a data governance policy. Click **Next**.
 
 ![Data Ingestion](./images/destsdk5.png)
 
-Select the segment you created earlier, which is named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Click **Next**.
+Select the segment you created earlier, which is named `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Click **Next**.
 
 ![Data Ingestion](./images/destsdk6.png)
 

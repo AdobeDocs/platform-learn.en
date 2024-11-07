@@ -22,7 +22,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -42,7 +42,7 @@ Enable the option **Show system datasets** and search for **AJO**. You'll then s
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
-In the left menu, go to **[!UICONTROL Datastream]** and search for your datastream that you created in [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), which is named `--demoProfileLdap-- - Demo System Datastream (Mobile)`. Click to open it.
+In the left menu, go to **[!UICONTROL Datastream]** and search for your datastream that you created in [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), which is named `--aepUserLdap-- - Demo System Datastream (Mobile)`. Click to open it.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
 
@@ -163,7 +163,7 @@ Click **Start**.
 
 Fill out the values:
 
-- Session Name: use `--demoProfileLdap-- - push debugging` and replace ldap by your ldap
+- Session Name: use `--aepUserLdap-- - push debugging` and replace ldap by your ldap
 - Base URL: use **dxdemo://default**
 
 Click **Next**.
@@ -226,7 +226,7 @@ You'll then see an empty event configuration.
 
 ![ACOP](./images/emptyevent.png)
 
-First of all, give your Event a Name like this: `--demoProfileLdap--StoreEntryEvent` and set description to `Store Entry Event`.
+First of all, give your Event a Name like this: `--aepUserLdap--StoreEntryEvent` and set description to `Store Entry Event`.
 
 ![ACOP](./images/eventname.png)
 
@@ -277,11 +277,11 @@ In the menu, go to **Journeys** and click **Create Journey**.
 
 ![DSN](./images/sjourney1.png)
 
-You'll then see this. Give your journey a name. Use `--demoProfileLdap-- - Store Entry journey`. Click **OK**.
+You'll then see this. Give your journey a name. Use `--aepUserLdap-- - Store Entry journey`. Click **OK**.
 
 ![DSN](./images/sjourney3.png)
 
-First, you need to add your event as the starting point of your journey. Search for your event `--demoProfileLdap--StoreEntryEvent` and drag and drop it onto the canvas. Click **OK**.
+First, you need to add your event as the starting point of your journey. Search for your event `--aepUserLdap--StoreEntryEvent` and drag and drop it onto the canvas. Click **OK**.
 
 ![DSN](./images/sjourney4.png)
 

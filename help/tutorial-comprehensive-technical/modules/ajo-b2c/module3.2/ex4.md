@@ -23,7 +23,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -34,7 +34,7 @@ In the left menu, go to **Journeys** and click **Create Journey** to start creat
 
 You should first name your journey.
 
-As a Name for the journey, use `--demoProfileLdap-- - Geofence Entry Journey`. In this example, the journey name is `vangeluw - Geofence Entry Journey`. No other values must be set at this moment. Click **OK**.
+As a Name for the journey, use `--aepUserLdap-- - Geofence Entry Journey`. In this example, the journey name is `vangeluw - Geofence Entry Journey`. No other values must be set at this moment. Click **OK**.
 
 ![Demo](./images/joname.png)
 
@@ -70,7 +70,7 @@ You'll then see the **Advanced Editor** which allows code entry.
 
 Select the below code and paste it in the **Advanced Editor**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 10`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 10`
 
 You'll then see this.
 
@@ -87,7 +87,7 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to `--demoProfileLdap--GeofenceEntry.placeContext.geo.city`.
+You can find the field by navigating to `--aepUserLdap--GeofenceEntry.placeContext.geo.city`.
 
 By clicking that field, it will be added as the dynamic value for the parameter `q`. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
 
@@ -113,7 +113,7 @@ You'll then see the **Advanced Editor** which allows code entry.
 
 Select the below code and paste it in the **Advanced Editor**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 10 and #{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} <= 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 10 and #{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} <= 25`
 
 You'll then see this.
 
@@ -130,7 +130,7 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to `--demoProfileLdap--GeofenceEntry.placeContext.geo.city`. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
+You can find the field by navigating to `--aepUserLdap--GeofenceEntry.placeContext.geo.city`. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 
@@ -157,7 +157,7 @@ You'll then see the **Advanced Editor** which allows code entry.
 
 Select the below code and paste it in the **Advanced Editor**.
 
-`#{--demoProfileLdap--WeatherApi.--demoProfileLdap--WeatherByCity.main.temp} > 25`
+`#{--aepUserLdap--WeatherApi.--aepUserLdap--WeatherByCity.main.temp} > 25`
 
 You'll then see this.
 
@@ -174,7 +174,7 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to ```--demoProfileLdap--GeofenceEntry.placeContext.geo.city```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
+You can find the field by navigating to ```--aepUserLdap--GeofenceEntry.placeContext.geo.city```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 
@@ -248,7 +248,7 @@ You'll then be back here. Click **Ok**.
 
 ![Journey Optimizer](./images/sms4b.png)
 
-In the left menu, go back to **Actions**, select the Action `--demoProfileLdap--TextSlack`, then drag and drop it after the **Message** action.
+In the left menu, go back to **Actions**, select the Action `--aepUserLdap--TextSlack`, then drag and drop it after the **Message** action.
 
 ![Demo](./images/joa18.png)
 
@@ -336,7 +336,7 @@ You'll now see your completed action. Click **Ok**.
 
 ![Demo](./images/jop17.png)
 
-In the left menu, go back to **Actions**, select the Action `--demoProfileLdap--TextSlack`, then drag and drop it after the **Message** action.
+In the left menu, go back to **Actions**, select the Action `--aepUserLdap--TextSlack`, then drag and drop it after the **Message** action.
 
 ![Demo](./images/jop18.png)
 
@@ -424,7 +424,7 @@ You'll now see your completed action. Click **Ok**.
 
 ![Demo](./images/jod17.png)
 
-In the left menu, go back to **Actions**, select the Action `--demoProfileLdap--TextSlack`, then drag and drop it after the **Messages** action.
+In the left menu, go back to **Actions**, select the Action `--aepUserLdap--TextSlack`, then drag and drop it after the **Messages** action.
 
 ![Demo](./images/jod18.png)
 

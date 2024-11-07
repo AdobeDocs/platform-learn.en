@@ -12,10 +12,10 @@ In this exercise, you'll create four **Personalized Offers**. Here are the detai
 
 |Name | Date Range | Image Link for Email | Image Link for Web | Text | Priority | Eligibility  | Language| 
 |-----|------------|----------------------|--------------------|------|:--------:|--------------|:-------:|
-|`--demoProfileLdap-- - Nadia Elements Shell` | today - 1 month later | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt |`{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell`| 25 | all - Female Customers   | English (United States) | 
-|`--demoProfileLdap-- - Radiant Tee` | today - 1 month later  | https://bit.ly/2HfA17v |https://bit.ly/3pEIdzn|`{{ profile.person.name.firstName }}, 5% discount on Radiant Tee`| 15 | all - Female Customers   | English (United States) |
-|`--demoProfileLdap-- - Zeppelin Yoga Pant` | today - 1 month later | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd|`{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant`| 25 | all - Male Customers | English (United States) |
-|`--demoProfileLdap-- - Proteus Fitness Jackshirt` | today - 1 month later | https://bit.ly/330a43n |https://bit.ly/36USaQW| `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt`| 15 | all - Male Customers  | English (United States) |
+|`--aepUserLdap-- - Nadia Elements Shell` | today - 1 month later | https://bit.ly/3nPiwdZ | https://bit.ly/2INwXjt |`{{ profile.person.name.firstName }}, 10% discount on Nadia Elements Shell`| 25 | all - Female Customers   | English (United States) | 
+|`--aepUserLdap-- - Radiant Tee` | today - 1 month later  | https://bit.ly/2HfA17v |https://bit.ly/3pEIdzn|`{{ profile.person.name.firstName }}, 5% discount on Radiant Tee`| 15 | all - Female Customers   | English (United States) |
+|`--aepUserLdap-- - Zeppelin Yoga Pant` | today - 1 month later | https://bit.ly/2IOaItW | https://bit.ly/2INZHZd|`{{ profile.person.name.firstName }}, 10% discount on Zeppelin Yoga Pant`| 25 | all - Male Customers | English (United States) |
+|`--aepUserLdap-- - Proteus Fitness Jackshirt` | today - 1 month later | https://bit.ly/330a43n |https://bit.ly/36USaQW| `{{ profile.person.name.firstName }}, 5% discount on Proteus Fitness Jackshirt`| 15 | all - Male Customers  | English (United States) |
 
 {style="table-layout:auto"}
 
@@ -23,7 +23,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -39,7 +39,7 @@ You're now on the **Details** view.
 
 ![Decision Rule](./images/offers3.png)
 
-In this case, you need to configure the offer `--demoProfileLdap-- - Nadia Elements Shell`. Use the information in the table above to fill out the fields. In this example, the name of the Personalized Offer is **vangeluw - Nadia Elements Shell**. Also, set the **Start date and time** to yesterday, and set the **End date and time** to a date in a month from now.
+In this case, you need to configure the offer `--aepUserLdap-- - Nadia Elements Shell`. Use the information in the table above to fill out the fields. In this example, the name of the Personalized Offer is **vangeluw - Nadia Elements Shell**. Also, set the **Start date and time** to yesterday, and set the **End date and time** to a date in a month from now.
 
 Once done, you should have this. Click **Next**.
 
@@ -176,7 +176,7 @@ You'll then see this:
 
 ![Decision Rule](./images/foffers3.png)
 
-Enter this name for your fallback offer: `--demoProfileLdap-- - Luma Fallback Offer`. Click **Next**.
+Enter this name for your fallback offer: `--aepUserLdap-- - Luma Fallback Offer`. Click **Next**.
 
 ![Decision Rule](./images/foffers4.png)
 
@@ -275,7 +275,7 @@ Go to **Collections**. Click **+ Create Collection**.
 
 You'l then see this popup. Configure your Collection like this. Click **Next**.
 
-- Collection name: use `--demoProfileLdap-- - Luma Collection`
+- Collection name: use `--aepUserLdap-- - Luma Collection`
 - Select **Create static collection**.
 
 ![Decision Rule](./images/createcollectionpopup1.png)
@@ -302,7 +302,7 @@ You'll then see this:
 
 Fill out the fields like this. Click **Next**.
 
-- Name: `--demoProfileLdap-- - Luma Decision`
+- Name: `--aepUserLdap-- - Luma Decision`
 - Start date and time: yesterday
 - End date and time: today + 1 month
 
@@ -316,7 +316,7 @@ First, create the decision scope for **Non-digital - Text** by selecting that pl
 
 ![Decision Rule](./images/activity3.png)
 
-Select your collection `--demoProfileLdap-- - Luma Collection` and click **Add**.
+Select your collection `--aepUserLdap-- - Luma Collection` and click **Add**.
 
 ![Decision Rule](./images/activity4text.png)
 
@@ -324,15 +324,15 @@ You'll then see this. Click the **-** button to add a new decision scope.
 
 ![Decision Rule](./images/activity5text.png)
 
-Select the placement **Web - Image** and add your collection `--demoProfileLdap-- - Luma Collection` under evaluation criteria. Then, click the **+** button again to add a new decision scope.
+Select the placement **Web - Image** and add your collection `--aepUserLdap-- - Luma Collection` under evaluation criteria. Then, click the **+** button again to add a new decision scope.
 
 ![Decision Rule](./images/activity6text.png)
 
-Select the placement **Email - Image** and add your collection `--demoProfileLdap-- - Luma Collection` under evaluation criteria. Then, click **Next**.
+Select the placement **Email - Image** and add your collection `--aepUserLdap-- - Luma Collection` under evaluation criteria. Then, click **Next**.
 
 ![Decision Rule](./images/activity4.png)
 
-You now need to select your **Fallback Offer**, which is named `--demoProfileLdap-- - Luma Fallback Offer`. Click **Next**.
+You now need to select your **Fallback Offer**, which is named `--aepUserLdap-- - Luma Fallback Offer`. Click **Next**.
 
 ![Decision Rule](./images/activity10.png)
 
