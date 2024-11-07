@@ -28,7 +28,7 @@ Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe
 
 ![Adobe Experience Platform Data Collection SSF](./images/launchhome.png)
 
-You now need to enter a name for your Adobe Experience Platform Data Collection Event Forwarding property. As a naming convention, use `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`. For instance, in this example, the name is **vangeluw - Demo System (22/02/2022) (Edge)**. Click **Save**.
+You now need to enter a name for your Adobe Experience Platform Data Collection Event Forwarding property. As a naming convention, use `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`. For instance, in this example, the name is **vangeluw - Demo System (22/02/2022) (Edge)**. Click **Save**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf1.png)
 

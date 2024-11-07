@@ -8,17 +8,17 @@ doc-type: tutorial
 
 ## 2.5.2.1 Update your Datastream
 
-In [Exercise 0.2](./../../gettingstarted/gettingstarted/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name `--demoProfileLdap-- - Demo System Datastream`.
+In [Exercise 0.2](./../../gettingstarted/gettingstarted/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name `--aepUserLdap-- - Demo System Datastream`.
 
 In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with your **[!DNL Data Collection Server property]**.
 
 To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). You'll then see this. In the left menu, click **[!UICONTROL Datastreams]**.
 
-In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxName--`.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
-Search for your **[!UICONTROL Datastream]**, which is named `--demoProfileLdap-- - Demo System Datastream`. Click your **[!UICONTROL Datastream]** to open it.
+Search for your **[!UICONTROL Datastream]**, which is named `--aepUserLdap-- - Demo System Datastream`. Click your **[!UICONTROL Datastream]** to open it.
 
 ![WebSDK](./images/websdk0.png)
 
@@ -26,7 +26,7 @@ You'll then see this. Click **[!UICONTROL + Add Service]**.
 
 ![WebSDK](./images/websdk3.png)
 
-Select the service **Event Forwarding**. This will show you 2 additional settings. Select your Event Forwarding property, which you created in the previous exercise and which is named `--demoProfileLdap-- - Demo System (DD/MM/YYYY) (Edge)`. Then select **Development** under **Environment**. Click **Save**. 
+Select the service **Event Forwarding**. This will show you 2 additional settings. Select your Event Forwarding property, which you created in the previous exercise and which is named `--aepUserLdap-- - Demo System (DD/MM/YYYY) (Edge)`. Then select **Development** under **Environment**. Click **Save**. 
 
 ![WebSDK](./images/websdk4.png)
 

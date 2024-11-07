@@ -16,7 +16,7 @@ This is the Adobe Experience Platform Data Collection Properties page you saw be
 
 ![Properties page](./../../../modules/datacollection/module1.1/images/launch1.png) 
 
-In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--demoProfileLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
+In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
 
 ![Search box](./../../../modules/datacollection/module1.1/images/property6.png)
 

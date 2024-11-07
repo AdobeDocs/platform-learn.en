@@ -41,7 +41,7 @@ For the **Dataset ID**, use the below naming convention. For the other fields, p
 
 | Naming         | Example |    
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |  
+| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |  
 
 ![demo](./images/ex3/6.png)
 
@@ -249,19 +249,19 @@ You'll then see a new popup, where your **Project Name** and **Dataset Name** ar
 
 | Naming         | Example |    
 | ----------------- | ------------- | 
-| `--demoProfileLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |  
+| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |  
 
 You now need to enter a Table name. Please use this naming convention:
 
 | Naming         | Example |    
 | ----------------- |------------- | 
-| `--demoProfileLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |  
+| `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |  
 
 ![demo](./images/ex3/16.png)
 
 Click **SAVE**.
 
-It may take some time until the data is ready in the table you've created. After a couple of minutes, refresh the browser. You should then see within your dataset the `--demoProfileLdap--_GAdataTableBigquery` table under **Explorer** inside your BigQuery project.
+It may take some time until the data is ready in the table you've created. After a couple of minutes, refresh the browser. You should then see within your dataset the `--aepUserLdap--_GAdataTableBigquery` table under **Explorer** inside your BigQuery project.
 
 ![demo](./images/ex3/19.png)
 

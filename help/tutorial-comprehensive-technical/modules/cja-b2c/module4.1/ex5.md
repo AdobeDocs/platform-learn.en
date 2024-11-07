@@ -22,9 +22,9 @@ Let's use the project you created in [11.4 Data Preparation in Analysis Workspac
 
 ![demo](./images/prohome.png)
 
-Open your project `--demoProfileLdap-- - Omnichannel Analysis`.
+Open your project `--aepUserLdap-- - Omnichannel Analysis`.
 
-With your project opened and the Data View `--demoProfileLdap-- - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
+With your project opened and the Data View `--aepUserLdap-- - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
 
 ![demo](./images/prodataView1.png)
 

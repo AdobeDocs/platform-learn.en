@@ -60,11 +60,11 @@ Click the area which contains the text **Featured Categories**. Click **Insert B
 
 ![RTCDP](./images/vec3.png)
 
-You'll then see this popup. Select your sandbox `--aepSandboxId--` and then select the placement **Web - Image**.
+You'll then see this popup. Select your sandbox `--aepSandboxName--` and then select the placement **Web - Image**.
 
 ![RTCDP](./images/vec4.png)
 
-Next, select your decision `--demoProfileLdap-- - Luma Decision`. Click **Save**.
+Next, select your decision `--aepUserLdap-- - Luma Decision`. Click **Save**.
 
 ![RTCDP](./images/vec5.png)
 
@@ -76,7 +76,7 @@ You'll then see this. Click **Next**.
 
 ![RTCDP](./images/vec7.png)
 
-Enter a name for your offer, use this name: `--demoProfileLdap-- - XT with Offers (VEC)`. Click **Next**.
+Enter a name for your offer, use this name: `--aepUserLdap-- - XT with Offers (VEC)`. Click **Next**.
 
 ![RTCDP](./images/vec8.png)
 

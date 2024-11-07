@@ -18,7 +18,7 @@ You'll be redirected to the **Home** view in Journey Optimizer. Before you conti
 
 In this exercise you'll improve your newsletter email message with a personalized text based on segment membership.
 
-Go to **Journeys**. Find the newsletter journey that you have created in the previous exercise. Search for `--demoProfileLdap-- - Newsletter`. Click your journey to open it. 
+Go to **Journeys**. Find the newsletter journey that you have created in the previous exercise. Search for `--aepUserLdap-- - Newsletter`. Click your journey to open it. 
 
 ![Journey Optimizer](./images/sbp1.png)
 

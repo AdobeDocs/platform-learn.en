@@ -10,7 +10,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 
@@ -28,7 +28,7 @@ Click **Create Event**.
 
 Enter the following values in the Event creation form:
 
-- **Name**: `--demoProfileLdap--ItemBackInStock`. For instance: **vangeluwItemBackInStock**
+- **Name**: `--aepUserLdap--ItemBackInStock`. For instance: **vangeluwItemBackInStock**
 - **Description**: This event is triggered when a product is back in stock
 - **Type**: select **Business** in the drop down
 
@@ -60,7 +60,7 @@ On the left-hand side, expand the `--aepTenantId--` object, expand the object **
 
 ![Journey Optimizer](./images/23.8-7.png)
 
-For the field **eventName**, enter the following value: `--demoProfileLdap--ItemBackInStock`. For instance: vangeluwItemBackInStock.
+For the field **eventName**, enter the following value: `--aepUserLdap--ItemBackInStock`. For instance: vangeluwItemBackInStock.
 Click **OK**.
 
 ![Journey Optimizer](./images/23.8-8.png)
@@ -81,14 +81,14 @@ You can now leverage this business event and the message inside a journey. Go to
 
 On the right-hand side you will see a form where you need to specify the journey name and description. Enter the following values:
 
-- **Name**: `--demoProfileLdap-- - Item back in stock journey`. For instance: vangeluw - Item back in stock journey
+- **Name**: `--aepUserLdap-- - Item back in stock journey`. For instance: vangeluw - Item back in stock journey
 - **Description**: This journey sends an SMS when an item is back in stock to visitor who have shown an interest.
 
 Click **OK**. 
 
 ![Journey Optimizer](./images/bej11.png)
 
-In the left menu, under **Events**, search for your ldap. You'll find the previously created business event `--demoProfileLdap--ItemBackInStock`. Drag and drop this event onto the canvas as this will be the starting point of the journey. 
+In the left menu, under **Events**, search for your ldap. You'll find the previously created business event `--aepUserLdap--ItemBackInStock`. Drag and drop this event onto the canvas as this will be the starting point of the journey. 
 
 ![Journey Optimizer](./images/bej12.png)
 
@@ -99,7 +99,7 @@ The **Read Segment** configuration expects you to select the segment that you wa
 
 ![Journey Optimizer](./images/bej13.png)
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 2.3 - Real-time CDP - Build a segment and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
+In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 2.3 - Real-time CDP - Build a segment and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
 
 ![Journey Optimizer](./images/bej14.png)
 
@@ -194,14 +194,14 @@ You now need to replace the following `xdmEntity` line...
 }
 ```
 
-...by this line, make sure to verify the field eventName as it should say `--demoProfileLdap--ItemBackInStock`, which represents the condition you have specified in your business event to trigger your journey.
+...by this line, make sure to verify the field eventName as it should say `--aepUserLdap--ItemBackInStock`, which represents the condition you have specified in your business event to trigger your journey.
 
 ```json
 "xdmEntity": {
   "_experienceplatform": {
     "joBusinessEvents": {
       "eventDescription": "Product Proteus Fitness Jackshirt is back in stock",
-      "eventName": "--demoProfileLdap--ItemBackInStock",
+      "eventName": "--aepUserLdap--ItemBackInStock",
       "stockEventId": "1"
     }
   },

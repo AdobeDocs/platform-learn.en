@@ -84,7 +84,7 @@ The only thing to do here is to enter the name of the consent screen in the **Ap
 
 | Naming         | Example|    
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector |  
+| `--aepUserLdap-- - AEP BigQuery Connector` | vangeluw - AEP BigQuery Connector |  
 
 ![demo](./images/ex2/6-3.png)
 
@@ -299,7 +299,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -319,8 +319,8 @@ Please use this naming convention:
 
 | BigQuery Connector Credentials         | Value  | Example  |   
 | ----------------- |-------------| -------------| 
-| Account Name | `--demoProfileLdap-- - BigQuery Connection`  |  vangeluw - BigQuery Connection  |
-| Description | `--demoProfileLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection  | 
+| Account Name | `--aepUserLdap-- - BigQuery Connection`  |  vangeluw - BigQuery Connection  |
+| Description | `--aepUserLdap-- - BigQuery Connection` | vangeluw - BigQuery Connection  | 
 
 Which should give you something like this:
 

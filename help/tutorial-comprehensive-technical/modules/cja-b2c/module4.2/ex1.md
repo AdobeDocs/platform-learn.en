@@ -51,7 +51,7 @@ Name your project following this naming convention:
 
 | Convention         | Example|    
 | ----------------- |-------------| 
-| `--demoProfileLdap---googlecloud` | delaigle-googlecloud          |   
+| `--aepUserLdap---googlecloud` | delaigle-googlecloud          |   
 
 ![demo](./images/ex1/3.png)
 
@@ -107,7 +107,7 @@ Before you continue with the next exercise, please write down the following thin
 
 | Credential         | Naming| Example|   
 | ----------------- |-------------| -------------|
-| Project Name | `--demoProfileLdap---googlecloud` | vangeluw-googlecloud  |
+| Project Name | `--aepUserLdap---googlecloud` | vangeluw-googlecloud  |
 | Project ID | random | composed-task-306413 |
 
 You can find your Project Name and Project ID by clicking on your **Project Name** in the top menu bar:

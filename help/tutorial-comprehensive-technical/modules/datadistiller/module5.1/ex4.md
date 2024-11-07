@@ -56,7 +56,7 @@ Select your query and click **Output Dataset**.
 
 ![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-Enter `--demoProfileLdap-- Callcenter Interaction Analysis` as name and description for the dataset and press the **Run Query** button
+Enter `--aepUserLdap-- Callcenter Interaction Analysis` as name and description for the dataset and press the **Run Query** button
 
 ![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 

@@ -42,7 +42,7 @@ You'll see that a segment definition is created automatically.
 
 ![Segment rule](./images/caicreatesegment.png)
 
-Give your segment a name, following this naming convention: `--demoProfileLdap-- - Customer AI High Propensity`. Click **Save**.
+Give your segment a name, following this naming convention: `--aepUserLdap-- - Customer AI High Propensity`. Click **Save**.
 
 ![Segment rule](./images/caicreatesegment1.png)
 

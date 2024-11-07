@@ -33,7 +33,7 @@ You'll then see the **Create Connection** UI.
 
 You can now give a name to your connection. 
 
-Please use this naming convention: `--demoProfileLdap-- – Omnichannel Data Connection`. 
+Please use this naming convention: `--aepUserLdap-- – Omnichannel Data Connection`. 
 
 Example: `vangeluw - Omnichannel Data Connection`
 

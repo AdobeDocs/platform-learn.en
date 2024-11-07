@@ -24,7 +24,7 @@ You'll then see this.
 
 Enter the required details for the Customer AI instance:
 
-- Name: use `--demoProfileLdap-- Product Purchase Propensity`
+- Name: use `--aepUserLdap-- Product Purchase Propensity`
 - Description: use: **Predict the likelihood for customers to purchase a product**
 - Propensity type: select **Conversion**
 

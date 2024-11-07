@@ -58,7 +58,7 @@ Please use this naming convention:
 
 |  Name       | Description   | 
 | ----------------- |-------------| 
-| `--demoProfileLdap-- - Omnichannel Analysis`| `--demoProfileLdap-- - Omnichannel Analysis`|
+| `--aepUserLdap-- - Omnichannel Analysis`| `--aepUserLdap-- - Omnichannel Analysis`|
 
 Next, click **Save**.
 

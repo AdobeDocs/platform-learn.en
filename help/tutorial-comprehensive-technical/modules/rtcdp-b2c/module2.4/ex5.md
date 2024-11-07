@@ -71,7 +71,7 @@ Select **Azure Event Hub trigger** as your project's first function template:
 
 ![3-08-vsc-function-template.png](./images/vsc5.png)
 
-Enter a name for your function, use the following format `--demoProfileLdap---aep-event-hub-trigger` and press enter:
+Enter a name for your function, use the following format `--aepUserLdap---aep-event-hub-trigger` and press enter:
   
 ![3-09-vsc-function-name.png](./images/vsc6.png)
 
@@ -174,7 +174,7 @@ The first time you run you project in debug mode, you will need to attach a Azur
 
 ![3-17-vsc-run-project.png](./images/vsc15.png)
 
-From the list of storage accounts, select the one that you have created as part of [13.1.4 Setup your Azure Storage Account](./ex1.md). Your storage account is named `--demoProfileLdap--aepstorage`, for instance: **mmeewisaepstorage**.
+From the list of storage accounts, select the one that you have created as part of [13.1.4 Setup your Azure Storage Account](./ex1.md). Your storage account is named `--aepUserLdap--aepstorage`, for instance: **mmeewisaepstorage**.
 
 ![3-22-vsc-select-storage-account.png](./images/vsc16.png)
 

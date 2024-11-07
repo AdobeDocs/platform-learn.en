@@ -135,10 +135,10 @@ Click **Edit Project**.
 
 ![Adobe I/O New Integration](./images/api14.png)
 
-Enter a Name and Description for your integration. As a naming convention, we'll use `AEP API --demoProfileLdap--`. Replace ldap with your ldap.
+Enter a Name and Description for your integration. As a naming convention, we'll use `AEP API --aepUserLdap--`. Replace ldap with your ldap.
 For instance, if your ldap is vangeluw, the name and description of your integration becomes AEP API vangeluw.
 
-Enter `AEP API --demoProfileLdap--` as the **Project Title**. Click **Save**.
+Enter `AEP API --aepUserLdap--` as the **Project Title**. Click **Save**.
 
 ![Adobe I/O New Integration](./images/api15.png)
 
@@ -301,11 +301,11 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 | Key      | Value |
 | ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| x-sandbox-name      |`--aepSandboxName--`|
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxName--`.
 
 Click **Send** to send your request to Platform.
 
@@ -472,11 +472,11 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 | Key      | Value |
 | ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| x-sandbox-name      |`--aepSandboxName--`|
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxName--`.
 
 Click the blue **Send** button and verify the response.
 
@@ -506,11 +506,11 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 | Key      | Value |
 | ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| x-sandbox-name      |`--aepSandboxName--`|
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxName--`.
 
 Click the blue **Send** button and verify the response.
 
@@ -564,11 +564,11 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 | Key      | Value |
 | ----------- | ----------- |
-| x-sandbox-name      |`--aepSandboxId--`|
+| x-sandbox-name      |`--aepSandboxName--`|
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxName--`.
 
 Click **Send** to send your request to Platform.
 

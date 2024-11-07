@@ -10,23 +10,23 @@ Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After 
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 ## 2.3.5.1 Verify your Datastream
 
-The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe edge network. If you want to setuo your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) and was named `--demoProfileLdap-- - Demo System Datastream`.
+The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe edge network. If you want to setuo your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) and was named `--aepUserLdap-- - Demo System Datastream`.
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), then click **Datastreams** or **Datastreams (Beta)**.
 
 ![Data Ingestion](./images/atdestds1.png)
 
-In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxName--`.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
-In Datastreams, search for your datastream which is named `--demoProfileLdap-- - Demo System Datastream`. Click your datastream to open it.
+In Datastreams, search for your datastream which is named `--aepUserLdap-- - Demo System Datastream`. Click your datastream to open it.
 
 ![Data Ingestion](./images/atdestds3.png)
 
@@ -70,8 +70,8 @@ You'll then see this.
 
 In the **Configure new destination** screen, you need to configure two things:
 
-- Name: use the name `--demoProfileLdap-- - Adobe Target (Web)`, which should look like this: **vangeluw - Adobe Target (Web)**.
-- Datastream ID: you need to select the datastream that you configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md). The name of your datastream should be: `--demoProfileLdap-- - Demo System Datastream`.
+- Name: use the name `--aepUserLdap-- - Adobe Target (Web)`, which should look like this: **vangeluw - Adobe Target (Web)**.
+- Datastream ID: you need to select the datastream that you configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md). The name of your datastream should be: `--aepUserLdap-- - Demo System Datastream`.
 
 Click **Next**.
 
@@ -85,7 +85,7 @@ Your destination is now created and will be shown in the list. Select your desti
 
 ![AT](./images/atdest7.png)
 
-In the list of available segmennts, select the segment you created in [Exercise 6.1 Create a segment](./ex1.md), which is named `--demoProfileLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Then, click **Next**.
+In the list of available segmennts, select the segment you created in [Exercise 6.1 Create a segment](./ex1.md), which is named `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. Then, click **Next**.
 
 ![AT](./images/atdest8.png)
 
@@ -171,7 +171,7 @@ Click the title of your Activity in the upper left corner to rename it.
 
 For the name, please use:
 
-- `--demoProfileLdap-- - RTCDP - XT (Form)`
+- `--aepUserLdap-- - RTCDP - XT (Form)`
 
 ![RTCDP](./images/atform8.png)
 

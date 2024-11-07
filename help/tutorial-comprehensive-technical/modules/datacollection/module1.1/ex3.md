@@ -20,7 +20,7 @@ This is the Adobe Experience Platform Data Collection Properties page you saw be
 
 ![Properties page](./images/launch1.png) 
 
-In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--demoProfileLdap--` in the **[!UICONTROL Search]** box.
+In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box.
 
 ![Search box](./images/property6.png)
 
@@ -38,7 +38,7 @@ If your instance's Edge Domain is different from default one, please update the 
 
 ![Extensions home](./images/property9edgedomain.png)
 
-Now, make sure the **[!UICONTROL Choose from list]** radio button is selected under the **[!UICONTROL Datastreams]** heading, and select your datastream which is named: `--demoProfileLdap-- - Demo System Datastream`, from the list in the **[!UICONTROL Datastream]** box.
+Now, make sure the **[!UICONTROL Choose from list]** radio button is selected under the **[!UICONTROL Datastreams]** heading, and select your datastream which is named: `--aepUserLdap-- - Demo System Datastream`, from the list in the **[!UICONTROL Datastream]** box.
 
 ![Extensions home](./images/property9edge.png)
 

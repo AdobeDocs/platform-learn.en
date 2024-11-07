@@ -44,7 +44,7 @@ Under **[!UICONTROL Params]**, you'll see this:
 
 - property: `_instance.parentName==aepenablementfy22`
 
-In that parameter, **[!UICONTROL aepenablementfy22]** is the name of the sandbox that is used in Adobe Experience Platform. The sandbox you should use is `--aepSandboxId--`. Replace the text **[!UICONTROL aepenablementfy22]** by `--aepSandboxId--`.
+In that parameter, **[!UICONTROL aepenablementfy22]** is the name of the sandbox that is used in Adobe Experience Platform. The sandbox you should use is `--aepSandboxName--`. Replace the text **[!UICONTROL aepenablementfy22]** by `--aepSandboxName--`.
 
 After replacing the sandbox name, click **[!UICONTROL Send]**.
 

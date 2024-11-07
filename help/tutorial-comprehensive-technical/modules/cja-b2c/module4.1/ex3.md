@@ -39,17 +39,17 @@ You can now configure the basic definitions for your Data View.
 
 ![demo](./images/0-v2.png)
 
-The **Connection** you created in the previous exercise is already selected. Your connection is named `--demoProfileLdap-- – Omnichannel Data Connection`.
+The **Connection** you created in the previous exercise is already selected. Your connection is named `--aepUserLdap-- – Omnichannel Data Connection`.
 
 ![demo](./images/ext5.png)
 
-Next, give your Data View a name following this naming convention: `--demoProfileLdap-- – Omnichannel Data View`. 
+Next, give your Data View a name following this naming convention: `--aepUserLdap-- – Omnichannel Data View`. 
 
-Enter the same value for the description: `--demoProfileLdap-- – Omnichannel Data View`.
+Enter the same value for the description: `--aepUserLdap-- – Omnichannel Data View`.
 
 | Name         | Description|    
 | ----------------- |-------------| 
-| `--demoProfileLdap-- – Omnichannel Data View` | `--demoProfileLdap-- – Omnichannel Data View`         |  
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View`         |  
 
 ![demo](./images/1-v2.png)
 

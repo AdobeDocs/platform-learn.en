@@ -34,7 +34,7 @@ You'll then see the **Create Connection** UI.
 
 ![demo](./images/5.png)
 
-First of all, you need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxId--`. In this example, the sandbox to use is **AEP Enablement FY21**.
+First of all, you need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxName--`. In this example, the sandbox to use is **AEP Enablement FY21**.
 
 ![demo](./images/cjasb.png)
 

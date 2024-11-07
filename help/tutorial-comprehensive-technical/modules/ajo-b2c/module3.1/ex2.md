@@ -12,7 +12,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxId--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxId--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -228,7 +228,7 @@ You still need to give your journey a Name. You can do that by clicking the **Pr
 
 ![ACOP](./images/journeyname.png)
 
-You can then enter the journey's name here. Please use `--demoProfileLdap-- - Account Creation Journey`. Click **OK** to save your changes.
+You can then enter the journey's name here. Please use `--aepUserLdap-- - Account Creation Journey`. Click **OK** to save your changes.
 
 ![ACOP](./images/journeyname1.png)
 

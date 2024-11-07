@@ -225,7 +225,7 @@ Take the below sample experience event payload and copy it into a Text Editor.
 
 You'll then see this. You need to manually update 2 fields:
 
-- **_id**: please set it to a random id, something like `--demoProfileLdap--1234`
+- **_id**: please set it to a random id, something like `--aepUserLdap--1234`
 - **timestamp**: update the timestamp to the current date and time
 - **phoneNumber**: enter the phoneNumber of the account that was just created on the demo website. You can find it on the Profile Viewer panel under **Identities**.
 

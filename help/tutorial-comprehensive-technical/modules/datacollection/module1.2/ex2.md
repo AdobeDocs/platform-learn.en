@@ -108,7 +108,7 @@ Instead of reusing an existing [!UICONTROL Field Group], you'll now create your 
 You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Description]** for your new [!UICONTROL Field Group]. 
 
 As the name for our schema, we'll use this:
-`--demoProfileLdap-- - Profile Identification Field Group`
+`--aepUserLdap-- - Profile Identification Field Group`
 
 As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
@@ -281,7 +281,7 @@ Let's now give your schema a name. Select the field **Untitled schema**.
 
 As the name for our schema, you'll use this:
 
-`--demoProfileLdap-- - Demo System - Profile Schema for Website`
+`--aepUserLdap-- - Demo System - Profile Schema for Website`
 
 Replace **[!UICONTROL ldap]** by your specific ldap. As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
@@ -413,7 +413,7 @@ You now need to provide a **[!UICONTROL Display Name]** and **[!UICONTROL Descri
 
 As the name for your Field Group, use this:
 
-`--demoProfileLdap-- - ExperienceEvent Identification Field Group`
+`--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
 As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 
@@ -522,7 +522,7 @@ Let's now give your schema a name. Select the field **Untitled schema**.
 ![Data Ingestion](./images/schemaname1ee.png)
 
 As the name for our schema, we'll use this:
-`--demoProfileLdap-- - Demo System - Event Schema for Website`
+`--aepUserLdap-- - Demo System - Event Schema for Website`
 
 As an example, for ldap **[!UICONTROL vangeluw]**, this should be the name of the schema:
 

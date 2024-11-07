@@ -20,7 +20,7 @@ Click **[!UICONTROL Datastreams]** or **[!UICONTROL Datastreams (Beta)]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1a.png)
 
-In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxName--`.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
@@ -28,7 +28,7 @@ Click **[!UICONTROL New Datastream]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream`. For Event Schema, select **Demo System - Event Schema for Website (Global v1.1)**. Click **Save**.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--aepUserLdap-- - Demo System Datastream`. For Event Schema, select **Demo System - Event Schema for Website (Global v1.1)**. Click **Save**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig2.png)
 
@@ -66,7 +66,7 @@ You'll then see this. For **Datastreams**, you'll currently see a dummy value se
 
 ![Name the Edge Configuration and save](./images/edgeconfig13.png)
 
-Make sure to have selected your **Datastream**. TIP: You can filter the results in the dropdown easily by typing your `--demoProfileLdap--`.
+Make sure to have selected your **Datastream**. TIP: You can filter the results in the dropdown easily by typing your `--aepUserLdap--`.
 
 ![Name the Edge Configuration and save](./images/edgeconfig14.png)
 
@@ -96,7 +96,7 @@ Click **[!UICONTROL Datastreams]** or **[!UICONTROL Datastreams (Beta)]**.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
 
-In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxId--`.
+In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxName--`.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
@@ -104,7 +104,7 @@ Click **[!UICONTROL New Datastream]**.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--demoProfileLdap-- - Demo System Datastream (Mobile)`. For Event Schema, select **Demo System - Event Schema for Mobile App (Global v1.1)**. Click **Save**.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--aepUserLdap-- - Demo System Datastream (Mobile)`. For Event Schema, select **Demo System - Event Schema for Mobile App (Global v1.1)**. Click **Save**.
 
 Click **[!UICONTROL Save]**.
 
@@ -138,7 +138,7 @@ On the **Adobe Experience Platform Edge Network** extension, click **Configure**
 
 ![Name the Edge Configuration and save](./images/edgeconfig12m.png)
 
-You'll then see this. You now need to select the correct sandbox and datastream that you just configured. The sandbox to use is `--aepSandboxId--` and the datastream is called `--demoProfileLdap-- - Demo System Datastream (Mobile)`. 
+You'll then see this. You now need to select the correct sandbox and datastream that you just configured. The sandbox to use is `--aepSandboxName--` and the datastream is called `--aepUserLdap-- - Demo System Datastream (Mobile)`. 
 
 For the **Edge Network domain**, please use the default domain which is **edge.adobedc.net**.
 

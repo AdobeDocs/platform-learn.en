@@ -18,7 +18,7 @@ An example of such values can be found below. Currently, these values can't be u
 | AEP IMS Org ID         | `--aepImsOrgId--` |
 | AEP Tenant ID         | `--aepTenantId--` |
 | DCS Inlet ID         | `--dcsInletId--` | 
-| Demo Profile LDAP        | `--demoProfileLdap--` | 
+| Demo Profile LDAP        | `--aepUserLdap--` | 
 
 As an example, in the below screenshot you can see a reference to `--aepTenantId--`.
 

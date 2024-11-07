@@ -8,7 +8,7 @@ doc-type: tutorial
 
 In this exercise, you'll use your decision to personalize the delivery of an email and SMS.
 
-Go to **Journeys**. Find the journey you created in exercise 7.2, which is named `--demoProfileLdap-- - Account Creation Journey`. Click your journey to open it. 
+Go to **Journeys**. Find the journey you created in exercise 7.2, which is named `--aepUserLdap-- - Account Creation Journey`. Click your journey to open it. 
 
 ![Journey Optimizer](./images/emailoffer1.png)
 
@@ -40,7 +40,7 @@ In the menu, go to **Content Components**. Select the **Offer decision** compone
 
 ![Journey Optimizer](./images/emailoffer7.png)
 
-Select the type of placement that you want to include in the email. In the **Placements** dropdown menu select **Email - Image**, then select your decision `--demoProfileLdap-- - Luma Decision`. Click **Add**.
+Select the type of placement that you want to include in the email. In the **Placements** dropdown menu select **Email - Image**, then select your decision `--aepUserLdap-- - Luma Decision`. Click **Add**.
 
 ![Journey Optimizer](./images/emailoffer8.png)
 

@@ -49,7 +49,7 @@ You'll then see the **Amazon S3** homepage. Click **Create Bucket**.
 
 In the **Create Bucket** screen, you need to configure two things:
   
-- Name: use the name `eventforwarding---demoProfileLdap--`. As an example, in this exercise the bucket name is **aepmodulertcdpvangeluw**
+- Name: use the name `eventforwarding---aepUserLdap--`. As an example, in this exercise the bucket name is **aepmodulertcdpvangeluw**
 - Region: use the region **EU (Frankfurt) eu-central-1**
 
 ![ETL](./images/bucketname.png)
@@ -72,7 +72,7 @@ Select **Kinesis Data Streams**. Click **Create data stream**.
 
 ![ETL](./images/kinesis2.png)
 
-For the **Data stream name**, use `--demoProfileLdap---datastream`.
+For the **Data stream name**, use `--aepUserLdap---datastream`.
 
 ![ETL](./images/kinesis3.png)
 
@@ -240,7 +240,7 @@ You'll then see this. Fill out the settings like this:
 - Choose the protocol: select **REST**
 - Create new API: select **New API**
 - Settings:
-  - API name: use `--demoProfileLdap---eventforwarding`
+  - API name: use `--aepUserLdap---eventforwarding`
   - Endpoint Type: select **Regional**
 
 Click **Create API**.
@@ -335,7 +335,7 @@ Scroll down, and paste this code under **Request Body**. Click **Test**.
     "dynamicPartitioningKey": "v2"
   },
   "PartitionKey": "1",
-  "StreamName": "--demoProfileLdap---datastream"
+  "StreamName": "--aepUserLdap---datastream"
 }
 ```
 
@@ -364,14 +364,14 @@ curl --location --request POST 'https://vv1i5vwg2k.execute-api.us-west-2.amazona
 --header 'Content-Type: application/json' \
 --data-raw '{
     "Data": {
-        "userid": "--demoProfileLdap--@adobe.com",
-        "firstName":"--demoProfileLdap--",
+        "userid": "--aepUserLdap--@adobe.com",
+        "firstName":"--aepUserLdap--",
         "offerName":"10% off on outdoor gears",
         "offerCode": "10OFF-SPRING",
         "dynamicPartitioningKey": "campaign"
     },
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }'
 ```
 
@@ -464,7 +464,7 @@ You'll then see this. Paste the following code in the field **Body (Raw)**. Clic
 {
     "Data":{{awsDataObject}},
     "PartitionKey": "1",
-    "StreamName": "--demoProfileLdap---datastream"
+    "StreamName": "--aepUserLdap---datastream"
 }
 ```
 

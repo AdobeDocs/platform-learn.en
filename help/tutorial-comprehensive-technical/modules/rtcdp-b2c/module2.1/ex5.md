@@ -71,11 +71,11 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 | Key            | Value              |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxName--`.
 
 Now, click the blue **Send** button to create the segment and view the results of that.
 
@@ -105,11 +105,11 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 | Key            | Value              |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxName--`.
 
 Click on the blue **Send** button.
 
@@ -136,11 +136,11 @@ You should also verify the **Header** - fields of your request. Go to **Headers*
 
 | Key            | Value              |
 | -------------- | ------------------ |
-| x-sandbox-name | `--aepSandboxId--` |
+| x-sandbox-name | `--aepSandboxName--` |
 
 >[!NOTE]
 >
->You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxId--`.
+>You need to specify the name of the Adobe Experience Platform sandbox you're using. Your x-sandbox-name should be `--aepSandboxName--`.
 
 Click on the blue **Send** button.
 
