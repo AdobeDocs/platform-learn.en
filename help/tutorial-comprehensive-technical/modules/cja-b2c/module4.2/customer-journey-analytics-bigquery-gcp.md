@@ -28,7 +28,7 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 - Access to Customer Journey Analytics
 - Access to Google Cloud Platform and Google BigQuery
 - **Download these assets**: 
-  - [JSON - Sample Data: Loyalty Data](./../../assets/json/bqLoyalty.json)
+  - [JSON - Sample Data: Loyalty Data](./../../../assets/json/bqLoyalty.json)
 
 >[!NOTE]
 >
