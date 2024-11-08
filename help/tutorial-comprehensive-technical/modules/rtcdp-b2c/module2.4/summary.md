@@ -3,6 +3,7 @@ title: Segment Activation to Microsoft Azure Event Hub - Summary & benefits
 description: Segment Activation to Microsoft Azure Event Hub - Summary & benefits
 kt: 5342
 doc-type: tutorial
+exl-id: 3b598ffc-875e-468d-b91c-882062e8203f
 ---
 # Summary & benefits
 

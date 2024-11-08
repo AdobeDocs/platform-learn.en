@@ -1,6 +1,7 @@
 ---
 title: Render Target activities - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to migrate an Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK. Topics include library overview, implementation differences, and other noteworthy callouts.
+exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
 ---
 # Render Target activities that use the form-based composer
 

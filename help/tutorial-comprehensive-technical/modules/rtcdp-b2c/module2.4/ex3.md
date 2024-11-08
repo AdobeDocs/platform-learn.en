@@ -3,6 +3,7 @@ title: Segment Activation to Microsoft Azure Event Hub - Create a Streaming Segm
 description: Segment Activation to Microsoft Azure Event Hub - Create a Streaming Segment
 kt: 5342
 doc-type: tutorial
+exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
 ---
 # 2.4.3 Create a segment
 

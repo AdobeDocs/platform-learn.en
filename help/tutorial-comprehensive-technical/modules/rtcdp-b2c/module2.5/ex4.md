@@ -3,6 +3,7 @@ title: Data Collection & Real-time Server Side Forwarding - Create and configure
 description: Create and configure a Google Cloud Function
 kt: 5342
 doc-type: tutorial
+exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
 ---
 # 2.5.4 Create and configure a Google Cloud Function
 

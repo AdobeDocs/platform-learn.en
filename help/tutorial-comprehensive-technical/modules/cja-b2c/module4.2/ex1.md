@@ -3,6 +3,7 @@ title: Ingest & Analyze Google Analytics data in Adobe Experience Platform with 
 description: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector - Create your Google Cloud Platform Account
 kt: 5342
 doc-type: tutorial
+exl-id: 6dbfb5a3-adc2-4818-8f79-bbb00e56fbdf
 ---
 # 4.2.1 Create your Google Cloud Platform Account
 

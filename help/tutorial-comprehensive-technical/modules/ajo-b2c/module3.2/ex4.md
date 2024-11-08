@@ -4,6 +4,7 @@ description: Adobe Journey Optimizer - Configure and use the SMS channel within 
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
+exl-id: dc7c6f18-06d2-4497-96b0-8dc78d389731
 ---
 # 3.2.4 Create your journey and messages
 

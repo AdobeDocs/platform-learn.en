@@ -3,6 +3,7 @@ title: Real-time CDP - Build a segment and take action - Build a segment
 description: Real-time CDP - Build a segment and take action - Build a segment
 kt: 5342
 doc-type: tutorial
+exl-id: a46b1640-769d-4fb3-97e6-beaf9706efbf
 ---
 # 2.3.1 Create a segment
 

@@ -3,6 +3,7 @@ title: Foundation - Data Ingestion - Configure Schemas and Set Identifiers
 description: Foundation - Data Ingestion - Configure Schemas and Set Identifiers
 kt: 5342
 doc-type: tutorial
+exl-id: 3cc1fbe3-1f40-45a3-a123-ee6f1463e7b5
 ---
 # 1.2.2 Configure Schemas and Set Identifiers
 

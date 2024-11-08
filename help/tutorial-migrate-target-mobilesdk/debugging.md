@@ -1,6 +1,7 @@
 ---
 title: Debug - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to debug an Adobe Target implementation using the Adobe Experience Platform Mobile SDK.
+exl-id: e7863ddd-965f-479b-89be-6e9d5a12da56
 ---
 # Debug Target with the Platform Mobile SDK
 

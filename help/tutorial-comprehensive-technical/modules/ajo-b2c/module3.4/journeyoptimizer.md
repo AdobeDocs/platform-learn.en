@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer
 description: In this module, you'll learn everything there is to know about Journey Optimizer, which helps companies design and deliver connected, contextual, and personalized experiences to their customers.
 kt: 5342
 doc-type: tutorial
+exl-id: f9f37817-f640-4b54-b977-13fd6cc29fcd
 ---
 # 3.4 Adobe Journey Optimizer
 

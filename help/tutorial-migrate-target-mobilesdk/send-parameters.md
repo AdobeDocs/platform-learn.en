@@ -1,6 +1,7 @@
 ---
 title: Send parameters - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to send mbox, profile, and entity parameters to Adobe Target using Experience Platform Web SDK.
+exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
 ---
 # Send parameters to Target using the Adobe Journey Optimizer - Decisioning Mobile extension
 

@@ -3,6 +3,7 @@ title: Segment Activation to Microsoft Azure Event Hub - Activate Segment
 description: Segment Activation to Microsoft Azure Event Hub - Activate Segment
 kt: 5342
 doc-type: tutorial
+exl-id: 56f6a6dc-82aa-4b64-a3f6-b6f59c484ccb
 ---
 # 2.4.4 Activate Segment
 

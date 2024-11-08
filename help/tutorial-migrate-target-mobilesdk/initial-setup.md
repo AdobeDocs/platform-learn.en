@@ -1,6 +1,7 @@
 ---
 title: Initial setup - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn about and set up the important foundational elements required for your Platform Web SDK implementation
+exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
 ---
 # Perform the initial Data Collection setup
 

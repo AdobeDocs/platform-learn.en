@@ -1,6 +1,7 @@
 ---
 title: Replace the SDK - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to replace the SDK when migrating from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension.
+exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
 ---
 # Replace the Target SDK with the Optimize SDK
 

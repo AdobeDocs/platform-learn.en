@@ -3,6 +3,7 @@ title: Configure HTTP API endpoint in Adobe Experience Platform
 description: Configure HTTP API endpoint in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
+exl-id: a29dd01d-4415-45d6-ad52-7f14aef60565
 ---
 # 2.6.3 Configure HTTP API Streaming endpoint in Adobe Experience Platform
 

@@ -1,6 +1,7 @@
 ---
 title: Enable cross-domain support - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to configure Adobe Target for cross-domain and mobile app to web browser scenarios using Experience Platform Web SDK.
+exl-id: 1dc78771-b85c-4127-8d1b-6558509f9db8
 ---
 # Enable cross-domain visitor profiles
 

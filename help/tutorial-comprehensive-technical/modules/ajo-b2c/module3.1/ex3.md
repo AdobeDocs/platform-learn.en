@@ -3,6 +3,7 @@ title: Update your Configuration ID and Test your Journey
 description: Update your Configuration ID and Test your Journey
 kt: 5342
 doc-type: tutorial
+exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
 ---
 # 3.1.3 Update your Data Collection property and test your journey
 

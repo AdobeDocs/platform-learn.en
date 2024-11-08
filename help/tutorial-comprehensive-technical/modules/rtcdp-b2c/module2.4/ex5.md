@@ -3,6 +3,7 @@ title: Segment Activation to Microsoft Azure Event Hub - Define an Azure Functio
 description: Segment Activation to Microsoft Azure Event Hub - Define an Azure Function
 kt: 5342
 doc-type: tutorial
+exl-id: 89cfda0e-6c5e-45ab-9506-f0f0f6211e7f
 ---
 # 2.4.5 Create your Microsoft Azure Project
 

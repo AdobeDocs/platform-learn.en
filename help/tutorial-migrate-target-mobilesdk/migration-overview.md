@@ -1,6 +1,7 @@
 ---
 title: Migration overview - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn about the key differences between at.js and Platform Web SDK and how to plan your migration effort.
+exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
 ---
 # Target at.js to Platform Web SDK migration overview
 

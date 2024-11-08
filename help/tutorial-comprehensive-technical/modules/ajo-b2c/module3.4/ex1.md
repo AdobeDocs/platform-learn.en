@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - Configure a trigger-based journey - Order Confi
 description: In this section you will configure a trigger-based journey - Order Confirmation
 kt: 5342
 doc-type: tutorial
+exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
 ---
 # 3.4.1 Configure a trigger-based journey - Order Confirmation
 

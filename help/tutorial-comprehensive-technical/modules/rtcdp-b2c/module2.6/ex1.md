@@ -3,6 +3,7 @@ title: Introduction to Apache Kafka
 description: Introduction to Apache Kafka
 kt: 5342
 doc-type: tutorial
+exl-id: f2d770d1-6ae4-4c2a-82e7-bd1ba295c895
 ---
 # 2.6.1 Introduction to Apache Kafka
 

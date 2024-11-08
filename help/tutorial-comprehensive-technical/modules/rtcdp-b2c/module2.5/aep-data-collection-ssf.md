@@ -3,6 +3,7 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection Server property to collect data, and then forward that data server-side to an endpoint of choice.
 kt: 5342
 doc-type: tutorial
+exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
 ---
 # 2.5 Real-Time CDP Connections: Event Forwarding
 

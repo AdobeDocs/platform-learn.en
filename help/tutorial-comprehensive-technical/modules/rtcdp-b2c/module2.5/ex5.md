@@ -3,6 +3,7 @@ title: Data Collection & Event Forwarding - Forward events towards the AWS ecosy
 description: Forward events towards the AWS ecosystem
 kt: 5342
 doc-type: tutorial
+exl-id: 87c2c85d-f624-4972-a9c6-32ddf8a39570
 ---
 # 2.5.5 Forward events towards the AWS ecosystem
 

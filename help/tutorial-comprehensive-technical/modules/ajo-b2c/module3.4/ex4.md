@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - Setup and use push notifications for iOS
 description: Setup and use push notifications for iOS
 kt: 5342
 doc-type: tutorial
+exl-id: a49fa91c-5235-4814-94c1-8dcdec6358c5
 ---
 # 3.4.4 Setup and use push notifications for iOS
 

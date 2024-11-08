@@ -1,6 +1,7 @@
 ---
 title: Planning - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to plan for your Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK.
+exl-id: 50eefe2d-ba20-45d5-8674-c4f5d035a9eb
 ---
 # Plan the Target migration to the Decisioning extension
 

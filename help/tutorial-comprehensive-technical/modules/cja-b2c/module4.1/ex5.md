@@ -3,6 +3,7 @@ title: Customer Journey Analytics - Visualization using Customer Journey Analyti
 description: Customer Journey Analytics - Visualization using Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
+exl-id: 3c928a73-b4ec-4b68-943c-c177b1e29f7b
 ---
 # 4.1.5 Visualization using Customer Journey Analytics
 

@@ -3,6 +3,7 @@ title: Data Collection - Federated Audience Composition
 description: Data Collection - Federated Audience Composition
 kt: 5342
 doc-type: tutorial
+exl-id: 44660f3e-0594-4578-9531-1c918992aa9d
 ---
 # 1.3 Federated Audience Composition
 

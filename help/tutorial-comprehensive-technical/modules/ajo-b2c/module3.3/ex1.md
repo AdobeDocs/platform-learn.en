@@ -4,6 +4,7 @@ description: Offer Decisioning - Offer Decisioning 101
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
+exl-id: 8a627c29-7780-455f-abe1-a69f8fe145ea
 ---
 # 3.3.1 Offer Decisioning 101
 

@@ -3,6 +3,7 @@ title: Ingest & Analyze Google Analytics data in Adobe Experience Platform with 
 description: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector - Create your first query in BigQuery
 kt: 5342
 doc-type: tutorial
+exl-id: c3c06447-3096-4f55-993b-4d41bc15c4d2
 ---
 # 4.2.2 Create your first query in BigQuery
 

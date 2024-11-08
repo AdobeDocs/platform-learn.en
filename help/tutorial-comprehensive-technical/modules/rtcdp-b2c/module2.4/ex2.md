@@ -3,6 +3,7 @@ title: Segment Activation to Microsoft Azure Event Hub - Setup the Event Hub RTC
 description: Segment Activation to Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
+exl-id: 0c2e94ec-00e8-4f47-add7-ca3a08151225
 ---
 # 2.4.2 Configure your Azure Event Hub Destination in Adobe Experience Platform
 

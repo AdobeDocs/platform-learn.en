@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 153
 last-substantial-update: 2024-10-31
 jira: KT-16431
+exl-id: 7f52bf0c-ba0d-416e-920e-32e21c0bf1af
 ---
-
 # Share packages across IMS Orgs
 
 Learn how to copy Experience Platform configurations between IMS Orgs using packages. Easily replicate schemas, datasets, journeys, and more across multiple IMS Orgs to support release processes and multi-region/multi-brand deployments. For more detailed information, see the [sandbox tooling documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).

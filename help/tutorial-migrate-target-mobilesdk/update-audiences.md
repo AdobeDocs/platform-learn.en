@@ -1,6 +1,7 @@
 ---
 title: Update audiences and profile scripts - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to update Adobe Target audiences and profile scripts for compatibility with Experience Platform Web SDK.
+exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
 ---
 # Update Target audiences and profile scripts for Adobe Journey Optimizer - Decisioning Mobile extension compatibility
 

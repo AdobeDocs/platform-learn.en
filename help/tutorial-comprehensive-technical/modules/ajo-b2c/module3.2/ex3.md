@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Defin
 description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define Custom Actions
 kt: 5342
 doc-type: tutorial
+exl-id: d9bdc4c6-7539-4646-9b75-f397b792479f
 ---
 # 3.2.3 Define a custom action
 

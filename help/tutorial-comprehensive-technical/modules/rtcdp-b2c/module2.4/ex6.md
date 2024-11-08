@@ -3,6 +3,7 @@ title: Segment Activation to Microsoft Azure Event Hub - Action
 description: Segment Activation to Microsoft Azure Event Hub - Action
 kt: 5342
 doc-type: tutorial
+exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
 ---
 # 2.4.6 End-to-end scenario
 

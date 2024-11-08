@@ -3,6 +3,7 @@ title: Getting Started - Use Demo System Next to setup your Launch property
 description: Getting Started - Use Demo System Next to setup your Launch property
 kt: 5342
 doc-type: tutorial
+exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
 ---
 # 0.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property
 

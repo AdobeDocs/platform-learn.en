@@ -3,6 +3,7 @@ title: Real-time CDP - Build a segment and take action - Send your segment to DV
 description: Real-time CDP - Build a segment and take action - Send your segment to DV360
 kt: 5342
 doc-type: tutorial
+exl-id: bb76524e-52c1-4c2c-8bcd-33cd39d12741
 ---
 # 2.3.3 Take Action: send your segment to DV360
 

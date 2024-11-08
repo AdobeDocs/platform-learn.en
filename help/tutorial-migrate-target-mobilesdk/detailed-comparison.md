@@ -1,6 +1,7 @@
 ---
 title: Comparison of the Target extension to the Decisioning extension
 description: Learn about the differences between Target extension to the Decisioning extension including features, functions, settings, and data flow.
+exl-id: 6c854049-4126-45cf-8b2b-683cf29549f3
 ---
 # Comparison of the Target extension to the Decisioning extension
 

@@ -1,6 +1,7 @@
 ---
 title: Validate Target implementations the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to validate activities and debug an Adobe Target implementation using he Adobe Journey Optimizer - Decisioning Mobile extension.
+exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
 ---
 # Validate the Adobe Journey Optimizer - Decisioning Mobile extension implementation
 

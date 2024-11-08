@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Trigg
 description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Trigger your Orchestrated Customer Journey
 kt: 5342
 doc-type: tutorial
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
 ---
 # 3.2.5 Trigger your journey
 

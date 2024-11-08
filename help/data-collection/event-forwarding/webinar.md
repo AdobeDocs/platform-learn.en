@@ -1,9 +1,10 @@
 ---
-title: Webinar-Unlocking your marketing data with event forwarding 
+title: Webinar-Unlocking your marketing data with event forwarding
 description: Learn about the use cases and capaiblities of event forwarding in Adobe Experience Platform.
 feature: Event Forwarding
 level: Intermediate
 jira: KT-15981
+exl-id: 69a87e9f-5505-4d45-989c-578f9f005b4c
 ---
 # Webinar: Unlocking your marketing data with event forwarding 
 

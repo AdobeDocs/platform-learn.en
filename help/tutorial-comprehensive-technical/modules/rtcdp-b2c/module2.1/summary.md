@@ -3,6 +3,7 @@ title: Foundation - Real-time Customer Profile - Summary
 description: Foundation - Real-time Customer Profile - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: 6d5519b0-494d-4cfd-aebe-078317d753ac
 ---
 # Summary & benefits
 

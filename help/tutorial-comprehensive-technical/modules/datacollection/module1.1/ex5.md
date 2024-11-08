@@ -3,6 +3,7 @@ title: Foundation - Setup of Adobe Experience Platform Data Collection and the W
 description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Implement Adobe Analytics and Adobe Audience Manager
 kt: 5342
 doc-type: tutorial
+exl-id: a9022269-6db2-46c6-a82b-ec8d5b881a55
 ---
 # 1.1.5 - Implement Adobe Analytics and Adobe Audience Manager
 

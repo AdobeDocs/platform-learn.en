@@ -3,6 +3,7 @@ title: Foundation - Real-time Customer Profile - Create a segment - API
 description: Foundation - Real-time Customer Profile - Create a segment - API
 kt: 5342
 doc-type: tutorial
+exl-id: 47c96696-644a-43b9-8deb-846bd2587af0
 ---
 # 2.1.5 Create a segment - API
 

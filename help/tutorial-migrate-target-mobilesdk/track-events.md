@@ -1,6 +1,7 @@
 ---
 title: Track events - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to track Adobe Target conversion events using the Adobe Journey Optimizer - Decisioning Mobile extension
+exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
 ---
 # Track Target conversion events using the Adobe Journey Optimizer - Decisioning Mobile extension
 
