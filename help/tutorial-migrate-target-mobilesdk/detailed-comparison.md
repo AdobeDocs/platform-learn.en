@@ -22,15 +22,22 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 |---|---|---|
 | Prefetch mode | Supported | Supported | 
 | Execute mode | Supported | Not supported |  
-| Custom parameters | Supported | Per mbox parameters are not supported | 
-| Entry audiences | Supported | Supported | 
-| Audience segmentation using mobile Lifecycle metrics | Supported | Supported via Data Collection rules | 
+| Custom parameters | Supported | Supported* | 
+| Profile parameters | Supported | Supported* | 
+| Entity parameters | Supported | Supported* | 
+| Target audiences | Supported | Supported | 
+| Real-Time CDP audiences | ??? | Supported | 
+| Real-Time CDP attributes | ??? | Supported | 
+| Lifecycle metrics | Supported | Supported via Data Collection rules | 
 | thirdPartyId (mbox3rdPartyId) | Supported | Supported via Identity Map and namespace configuration in the datastream | 
 | Notifications (display, click) | Supported | Supported | 
 | Response tokens | Supported | Supported |  
-| Dynamic offers | Supported | Supported | 
 | Analytics for Target (A4T) | Client-side only | Client-side and server-side | 
-| Mobile previews (QA mode) | Supported | Limited Support | 
+| Mobile previews (QA mode) | Supported | Limited Support with Assurance | 
+
+>[!IMPORTANT]
+>
+> \* Parameters sent in a request apply to all scopes in the request. If you need to set different parameters for different scopes you must make additional requests.
 
 
 
@@ -46,9 +53,24 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 
 Many Target extension functions have an equivalent approach using the Decisioning extension outlined in the table below. For more details about the [functions](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/), refer to the Adobe Target Developer Guide.
 
-| Target extension | Decisioning extension | 
-| --- | --- | 
-| |  | 
+| Target extension | Decisioning extension | Notes |
+| --- | --- | --- | 
+| `prefetchContent` | `updatePropositions` |  | 
+| `retrieveLocationContent` | `getPropositions` | When using `getPropositions` API, no remote call is made to fetch non-cached scopes in the SDK.  | 
+| `displayedLocations` | Offer -> `displayed()` |     In addition, `generateDisplayInteractionXdm` Offer method can be used to generate the XDM for item display. Subsequently, Edge network SDK's sendEvent API can be used to attach additional XDM, free-form data and send an Experience Event to the remote. | 
+| `clickedLocation` | Offer -> `tapped()` | In addition, `generateTapInteractionXdm` Offer method can be used to generate the XDM for item tap. Subsequently, Edge network SDK's sendEvent API can be used to attach additional XDM, free-form data and send an Experience Event to the remote. | 
+| `clearPrefetchCache` | `clearCachedPropositions` |  | 
+| `resetExperience` |  | Use `removeIdentity` API from Identity for Edge Network extension for the SDK to stop sending the visitor identifier to the Edge network. For more details, see [the removeIdentity API documentation](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Note: Mobile Core's `resetIdentities` API clears all stored identities in the SDK, including the Experience Cloud ID (ECID) and it should be sparingly used! | 
+| `getSessionId` |  | `state:store` response handle carries session-related information. Edge network extension helps manage it by attaching non-expired state store items to subsequent requests. | 
+| `setSessionId` |  | `state:store` response handle carries session-related information. Edge network extension helps manage it by attaching non-expired state store items to subsequent requests. | 
+| `getThirdPartyId`  |  n/a | Use updateIdentities API from Identity for Edge Network extension to supply the third party ID value. Then, configure the third party ID namespace in the datastream. For more details, see [the Target Third Party Id mobile documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id).  |
+| `setThirdPartyId` | n/a | Use updateIdentities API from Identity for Edge Network extension to supply the third party ID value. Then, configure the third party ID namespace in the datastream. For more details, see [the Target Third Party Id mobile documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). | 
+| `getTntId` |  | `locationHint:result` response handle carries the Target location hint information. It is assumed Target edge will be co-located with Experience Edge. <br> <br>Edge network extension uses the EdgeNetwork location hint to determine the Edge network cluster to send requests to. To share Edge network location hint across SDKs (hybrid apps), use `getLocationHint` and `setLocationHint` APIs from Edge Network extension. For more details, see [the `getLocationHint` API documentation](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). | 
+| `setTntId` |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  | 
+|  |  |  |
 
 ## Target extension settings and Decisioning extension equivalents
 
