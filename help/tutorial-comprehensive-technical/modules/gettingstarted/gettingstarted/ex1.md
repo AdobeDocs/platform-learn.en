@@ -4,14 +4,14 @@ description: Getting Started - Install the Chrome extension for the Experience L
 kt: 5342
 doc-type: tutorial
 ---
-# 0.1 Install the Chrome extension for the Experience League documentation
+# 0.1.1 Install the Chrome extension for the Experience League documentation
 
-## 0.1.1 Why did we create a Chrome extension?
+## About the Chrome extension
 
 The documentation has been made generic so that it can easily be reused by anyone, using any Adobe Experience Platform instance. 
-By making the documentation reusable, **Environment Variables** were introduced in the documentation, which means that you'll find the below **keys** in the documentation. Every key is a specific variable for a specific environment, and the Chrome extension will change that variable for you and as such make it easy for you to copy code and text from the tutorial pages and paste it in the various User Interfaces that you'll be using as part of the tutorial.
+In order to make the documentation reusable, **Environment Variables** were introduced in the documentation, which means that you'll find the below **placeholders** in the documentation. Every placeholder is a specific variable for a specific environment, and the Chrome extension will change that variable for you to make it easy for you to copy code and text from the tutorial pages and paste it in the various user interfaces that you'll be using as part of the tutorial.
 
-An example of such values can be found below. Currently, these values can't be used yet but as soon as you install and activate the Chrome extension, you'll see these variables change into 'normal' text that you can copy and reuse.
+An example of such values can be found below. Currently, these values can't be used yet but as soon as you install and activate the Chrome extension, you'll see these variables change into normal text that you can copy and reuse.
 
 | Name     | Key | 
 |:-------------:| :---------------:|
@@ -20,7 +20,7 @@ An example of such values can be found below. Currently, these values can't be u
 | AEP Sandbox Name         | `--aepSandboxName--` | 
 | Learner Profile LDAP        | `--aepUserLdap--` | 
 
-As an example, in the below screenshot you can see a reference to `--aepTenantId--`.
+As an example, in the below screenshot you can see a reference to `aepTenantId`.
 
 ![DSN](./images/mod7before.png)
 
@@ -28,13 +28,9 @@ Once the extension is installed, that same text will be changed automatically to
 
 ![DSN](./images/mod7.png)
 
-The extension will also make it possible for you to:
+## 0.1.1.1 Install the Chrome extension
 
-- Sign up for the tutorial
-
-## 0.1.2 Install the Chrome extension
-
-To install that Chrome extension, open your Chrome browser and go to: [https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&authuser=0](https://chrome.google.com/webstore/detail/platform-learn-configurat/hhnbkfgioecmhimdhooigajdajplinfi/related?hl=en&authuser=0). You'll then see this. 
+To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). You'll then see this. 
 
 Click **Add to Chrome**. 
 
@@ -52,9 +48,9 @@ In the **extensions** menu, click the **puzzle piece** icon and pin the **Platfo
 
 ![DSN](./images/c6.png)
 
-## 0.1.2 Configure the Chrome extension
+## 0.1.1.2 Configure the Chrome extension
 
-Go to [https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/overview.html?lang=en](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/overview.html?lang=en) and then click the extension icon to open it.
+Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) and then click the extension icon to open it.
 
 ![DSN](./images/tuthome.png)
 
@@ -62,88 +58,81 @@ You'll then see this popup. Click the **+** icon.
 
 ![DSN](./images/c7.png)
 
-Enter your name and the Configuration ID that was created for your Adobe Experience Platform environment. Click **Create New**.
-
->[!IMPORTANT]
->
->If you're an Adobe employee: you can find the configuration ID to use on the internal Github repo (https://git.corp.adobe.com/vangeluw/platformenablement).
->
->If you're an Adobe Solution Partner, please contact your Solution Partner contact or email **spphelp@adobe.com**.
+Enter the values as indicated below, which are all related to your Adobe Experience Platform instance. 
 
 ![DSN](./images/c8.png)
 
-In the left menu of the extension, you'll now see an icon with your initials. Click it. You'll then see the mapping between the **Environment Variables** and your specific Adobe Experience Platform instance values. Click **Activate Configuration**.
+If you aren't sure what values to enter for these fields, follow the below guidance.
+
+**AEP IMS Org Name**
+
+When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the name of your instance in the top right corner of your screen.
+
+![DSN](./images/aepname.png)
+
+**AEP IMS Org ID**
+
+The IMS Org ID is the unique identifier for your Adobe Experience Cloud instance, and it's referenced in multiple locations throughout this tutorial.
+
+Finding your IMS Org ID can be done in multiple ways. If you're not sure, check with one of the system administrators of your instance to find the ID.
+
+You may be able to find it by going to [Admin Console](https://https://adminconsole.adobe.com/), where you can find it as part of the URL.
+
+![DSN](./images/aepid1.png)
+
+You may also be able to find it by going to **Data Management > Queries** in your AEP menu, where you can find it under **Username**.
+
+![DSN](./images/aepid2.png)
+
+Please ensure to copy and paste the **@AdobeOrg** part along with the ID.
+
+**AEP Tenant ID**
+
+Your Tenant ID is the unique identifier for your organisation's AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the tenant id in the URL.
+
+![DSN](./images/aeptenantid.png)
+
+When you enter it in the Chrome extension, you should ensure that an underscore is added as a prefix, so in this example **experienceplatform** becomes **_experienceplatform**.
+
+**AEP Sandbox Name**
+
+Your sandbox name is the name of the environment you'll be using in your AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the tenant id in the URL. 
+
+Before taking the sandbox name from the URL, you should ensure you're in the sandbox that you should use for this tutorial. You can switch to the right sandbox by clicking the sandbox switcher menu in the top right corner of your screen.
+
+![DSN](./images/aepsandboxsw.png)
+
+In this example, the AEP Sandbox Name is **tech-insiders**.
+
+![DSN](./images/aepsname.png)
+
+**Your LDAP**
+
+This is the username that will be used as part of the tutorial. In this example, the LDAP is based off of the email address of this user. The email address is **vangeluw@adobe.com** so the LDAP becomes **vangeluw**.
+
+The LDAP is used to ensure that the configuration you'll be doing will be linked to you, and won't conflict with other users that may be using the same instance and sandbox that you're using.
+
+Your valus should look similar to these.
+Finally, click **Create New**.
+
+![DSN](./images/c8a.png)
+
+
+In the left menu of the extension, you'll now see a new icon with the initials of your environment. Click it. You'll then see the mapping between the **Environment Variables** and your specific Adobe Experience Platform instance values. Click **Activate Configuration**.
 
 ![DSN](./images/c9.png)
 
-After activating your configuration, you'll see a green dot next to your initials. This means that your Configuration ID is now active. You'll also see a number of additional menu options appear.
+After activating your configuration, you'll see a green dot next to the initials of your environment. This means that your environment is now active.
 
 ![DSN](./images/c10.png)
 
-You now have 2 options:
+## 0.1.1.3 Verify tutorial content
 
-- If you're an existing user of the enablement with an existing setup, go to **0.1.3 Existing user - Login** 
-- If you're a completely new user who's starting this tutorial for the first time, go to **0.1.4 Signup** and skip **0.1.3 Existing user - Login**
+As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
-## 0.1.3 Existing user - Login
+You should now see that all **Environment Variables** have been replaced by their true values, based on the activated environment in the chrome extension.
 
->[!IMPORTANT]
->
->Exercise **0.1.3 Existing user - Login** will only work if you're an existing user who previously signed up for this tutorial.
-
-If you're an existing user who's setting up this Chrome extension for the first time, click the purple icon in the left menu. You'll then see this.
-
-![DSN](./images/chromeret1.png)
-
-Fill out the values as required. 
-
->[!IMPORTANT]
->
->The **LDAP** is the most important field: you should use the same LDAP that you used when you first signed up for the tutorial. This will ensure that your progress is loaded successfully. If you're not sure what your ldap is, have a look at your email address. Use the text before the @-symbol in your email address as LDAP. If your email address is **techinsiders@adobe.com**, the LDAP you enter here should be **vangeluw**).
-
-![DSN](./images/chromeret2.png)
-
-Click **OK**.
-
-![DSN](./images/chromeret3.png)
-
-After 30sec-1 minute, your screen will change and you'll be reverted back to **Home**, where you'll see this:
-
-![DSN](./images/chromeret4.png)
-
-Your Chrome extension is now configured, and you can now verify if everything is working fine.
-
-## 0.1.4 New user - Signup
-
->[!IMPORTANT]
->
->Exercise **0.1.4 New user - Signup** is intended for new users who're starting this tutorial for the first time.
-
-If you're a new user who's signing up for this tutorial the first time, click the yellow icon in the menu. You'll then see this.
-
-![DSN](./images/c11.png)
-
-Fill out the fields as required. Click **Save**.
-
->[!IMPORTANT]
->
->The **LDAP** is the most important field. If you're not sure what your ldap is, have a look at your email address. Use the text before the @-symbol in your email address as LDAP. If your email address is **techinsiders@adobe.com**, the LDAP you enter here should be **vangeluw**).
-
-![DSN](./images/chrome1.png)
-
-After 30sec-1 minute, your screen will change and you'll be reverted back to **Home**, where you'll see this:
-
-![DSN](./images/chrome2.png)
-
-Your Chrome extension is now configured, and you can now verify if everything is working fine.
-
-## 0.1.5 Verify tutorial content
-
-As a test, go to [this page](https://experienceleague.adobe.com/docs/platform-learn/comprehensive-technical-tutorial-v22/module4/ex3.html?lang=en).
-
-You should now see that all **Environment Variables** have been replaced by their true values, based on the Configuration ID in the chrome extension.
-
-You should now have a similar view to the below, where the environment variables `--aepTenantId--` has been replaced by your real tenant ID, which in this case is **_experienceplatform**. 
+You should now have a similar view to the below, where the environment variable `aepTenantId` has been replaced by your real AEP Tenant ID, which in this case is **_experienceplatform**. 
 
 ![DSN](./images/c12.png)
 
