@@ -42,6 +42,7 @@ auto-video-transcripts: true
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
+  + [Set up access](/help/platform/ai-assistant/access.md)
   + [Clean up audiences](/help/platform/ai-assistant/find-unused-audiences.md)
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
