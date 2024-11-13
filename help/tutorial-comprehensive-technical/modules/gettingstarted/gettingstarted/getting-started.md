@@ -5,11 +5,9 @@ kt: 5342
 doc-type: tutorial
 exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
 ---
-# 0. Getting started
+# 0.1 Getting started
 
-**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-**In this module**, you will setup everything so that you can collect data and access the demo environment.
+In this module you will setup everything so that you can collect data, access the demo environment and personalize the dynamic variables in this tutorial.
 
 ## Learning Objectives
 
@@ -19,28 +17,28 @@ exl-id: 31616c51-01e0-4f99-91f1-4f21054b0999
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Launch: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Access to Adobe Experience Platform Tags: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Access to Demo System Next: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
 
 ## Exercises
 
-[0.1 Install the Chrome extension for the Experience League documentation](./ex1.md)
+[0.1.1 Install the Chrome extension for the Experience League documentation](./ex1.md)
 
 In this exercise you'll install and configure the Chrome extension so you can use it to personalize the tutorial content.
 
-[0.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
+[0.1.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
-[0.3 Create your Datastream](./ex3.md)
+[0.1.3 Create your Datastream](./ex3.md)
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
-[0.4 Use the website](./ex4.md)
+[0.1.4 Use the website](./ex4.md)
 
 In this exercise you'll setup the website so you can use it for demonstrations and enablement.
 
-[0.5 Use the mobile app](./ex5.md)
+[0.1.5 Use the mobile app](./ex5.md)
 
 In this exercise you'll setup the mobile application so you can use it for demonstrations and enablement.
 
