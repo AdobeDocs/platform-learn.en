@@ -4,9 +4,9 @@ description: Getting Started - Use the mobile app
 kt: 5342
 doc-type: tutorial
 ---
-# 0.5 Use the mobile app
+# Use the mobile app
 
-## 0.5.1 Download the app
+## Download the app
 
 Go to [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) on your computer. You'll then see this.
 
@@ -16,7 +16,7 @@ Use the **Camera** app on your smartphone to install the mobile app for your dev
 
 >[!NOTE]
 >
->After installing the app for the first time on an iOS device, you might get an error message when trying to open the app which says: **Untrusted Enterprise Developer**. In order to fix this, you need to go to **Settings > General > Device Management > Adobe Systems Inc.** and click **Trust Adobe Systems Inc.**.
+>After installing the app for the first time on an iOS device, you might get an error message when trying to open the app which says: **Untrusted Enterprise Developer**. In order to fix this, you need to go to **Settings > General > VPN & Device Management > Adobe Systems Inc.** and click **Trust Adobe Systems Inc.**.
 
 Once the app is installed, you'll find it on your device's home screen. Click the icon to open the app.
 
@@ -42,21 +42,25 @@ You can now load a custom project. Click the QR code to easily load your project
 
 ![DSN](./images/mobileappn6.png)
 
-After exercise 0.1, you had this result. Click to open the **Mobile Retail project** that was created for you.
+After the previous exercise, you had this result. Click to open the **Mobile Edge Telco project** that was created for you.
 
 ![DSN](./images/dsn5b.png)
 
-In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your mobile app project to open it.
+In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the three dots **...** on your mobile app project and then click **Edit**.
 
 ![DSN](./images/web8a.png)
 
-You'll then see this. Click **Integrations**.
+On the **Integrations** page, you need to select the Data Collection property that was created in the previous exercise. To do that, click **Select environment**. 
 
 ![DSN](./images/web8aa.png)
 
-You need to select the Data Collection property for mobile that was created in exercise 0.1. Next, click **Run**.
+Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. Then, click **Save**.
 
 ![DSN](./images/web8b.png)
+
+You'll then see this. Next, click **Run**.
+
+![DSN](./images/web8bb.png)
 
 You'll then see this popup, which contains a QR code. Scan this QR-code from within the mobile app.
 
@@ -70,8 +74,8 @@ Now, go back to **Home** in the app. Your app is now ready to be used.
 
 ![DSN](./images/mobileappn8.png)
 
-You've now completed module 0.
+You've now completed the Getting Started module and you're ready to start with the next exercises.
 
-[Go Back to Module 0](./getting-started.md)
+[Go Back to Getting Started](./getting-started.md)
 
 [Go Back to All Modules](./../../../overview.md)

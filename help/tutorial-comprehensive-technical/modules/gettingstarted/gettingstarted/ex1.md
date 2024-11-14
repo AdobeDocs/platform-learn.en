@@ -4,7 +4,7 @@ description: Getting Started - Install the Chrome extension for the Experience L
 kt: 5342
 doc-type: tutorial
 ---
-# 0.1.1 Install the Chrome extension for the Experience League documentation
+# Install the Chrome extension for the Experience League documentation
 
 ## About the Chrome extension
 
@@ -28,7 +28,7 @@ Once the extension is installed, that same text will be changed automatically to
 
 ![DSN](./images/mod7.png)
 
-## 0.1.1.1 Install the Chrome extension
+## Install the Chrome extension
 
 To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). You'll then see this. 
 
@@ -48,7 +48,7 @@ In the **extensions** menu, click the **puzzle piece** icon and pin the **Platfo
 
 ![DSN](./images/c6.png)
 
-## 0.1.1.2 Configure the Chrome extension
+## Configure the Chrome extension
 
 Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) and then click the extension icon to open it.
 
@@ -126,7 +126,7 @@ After activating your configuration, you'll see a green dot next to the initials
 
 ![DSN](./images/c10.png)
 
-## 0.1.1.3 Verify tutorial content
+## Verify tutorial content
 
 As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
@@ -134,10 +134,10 @@ You should now see that all **Environment Variables** have been replaced by thei
 
 You should now have a similar view to the below, where the environment variable `aepTenantId` has been replaced by your real AEP Tenant ID, which in this case is **_experienceplatform**. 
 
-![DSN](./images/c12.png)
+![DSN](./images/mod7.png)
 
-Next Step: [0.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
+Next Step: [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
 
-[Go Back to Module 0](./getting-started.md)
+[Go Back to Getting Started](./getting-started.md)
 
 [Go Back to All Modules](./../../../overview.md)

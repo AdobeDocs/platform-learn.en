@@ -4,15 +4,15 @@ description: Getting Started - Use the website
 kt: 5342
 doc-type: tutorial
 ---
-# 0.4 Use the website
+# Use the website
 
-## 0.4.1 Option 1: Continue from previous exercise
+## Option 1: Continue from previous exercise
 
 >[!NOTE]
 >
->If you don't have the below screen open anymore, go to exercise 0.4.2 instead.
+>If you don't have the below screen open anymore, go to option 2 instead.
 
-After exercise 0.1, you had this result. Click to open the **Web Retail project** that was created for you.
+After exercise 0.1, you had this result. Click to open the **Web Telco project** that was created for you.
 
 ![DSN](./images/dsn5a.png)
 
@@ -20,9 +20,17 @@ You'll then see this. Click **Integrations**.
 
 ![DSN](./images/web1.png)
 
-On the **Integrations** page, you need to select the Data Collection property that was created in exercise 0.1. 
+On the **Integrations** page, you need to select the Data Collection property that was created in the previous exercise. To do that, click **Select environment**. 
 
 ![DSN](./images/web2.png)
+
+Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap - Demo System (DD/MM/YYYY) (web)`.
+
+![DSN](./images/web2a.png)
+
+You'll then see this. Click **Run** to open the demo website.
+
+![DSN](./images/web2b.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
@@ -44,9 +52,9 @@ You'll then see your website loaded in an incognito browser window. For every de
 
 ![DSN](./images/web7.png)
 
-## 0.4.2 Option 2: Start with a new incognito browser window
+## Option 2: Start with a new incognito browser window
 
-In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+In case you had accidentally closed your browser window, or for future sessions, you can also access your website project by going to [https://dsn.adobe.com/](https://dsn.adobe.com/). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Edit**.
 
 ![DSN](./images/web8.png)
 
@@ -54,9 +62,17 @@ You can now follow the below flow to access the website. Click **Integrations**.
 
 ![DSN](./images/web1.png)
 
-On the **Integrations** page, you need to select the Data Collection property that was created in exercise 0.1. 
+On the **Integrations** page, you need to select the Data Collection property that was created in the previous exercise. To do that, click **Select environment**. 
 
 ![DSN](./images/web2.png)
+
+Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap - Demo System (DD/MM/YYYY) (web)`.
+
+![DSN](./images/web2a.png)
+
+You'll then see this. Click **Run** to open the demo website.
+
+![DSN](./images/web2b.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
@@ -78,8 +94,8 @@ You'll then see your website loaded in an incognito browser window. For every de
 
 ![DSN](./images/web7.png)
 
-Next Step: [0.5 Use the mobile app](./ex5.md)
+Next Step: [Use the mobile app](./ex5.md)
 
-[Go Back to Module 0](./getting-started.md)
+[Go Back to Getting Started](./getting-started.md)
 
 [Go Back to All Modules](./../../../overview.md)

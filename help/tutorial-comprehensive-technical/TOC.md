@@ -11,14 +11,14 @@ recommendations: noDisplay,noCatalog
 
 + [Tutorial Overview](/help/tutorial-comprehensive-technical/overview.md)
 
-+ 0 Getting started {#gettingstarted}
-  + 0.1 Getting started {#gettingstarted}
++ Getting started {#gettingstarted}
+  + Getting started {#gettingstarted}
     + [Overview](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/getting-started.md)
-    + [0.1.1 Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
-    + [0.1.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
-    + [0.1.3 Create your Datastream](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
-    + [0.1.4 Use the website](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
-    + [0.1.5 Use the mobile app](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+    + [Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex1.md)
+    + [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex2.md)
+    + [Create your Datastream](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
+    + [Use the website](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
+    + [Use the mobile app](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Data Collection {#datacollection}
   + 1.1 Adobe Experience Platform Data Collection and the Web SDK extension {#module11}
