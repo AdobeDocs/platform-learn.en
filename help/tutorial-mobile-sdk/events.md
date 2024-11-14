@@ -160,23 +160,23 @@ To implement the sending of commerce-related experience events in a reusable way
       MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productViews", product: product)
       ```  
 
-   1. For each of the buttons (<img src="assets/saveforlater.png" width=15/>, <img src="assets/addtocart.png" width=20/> and <img src="assets/purchase.png" width=20/>) in the toolbar, add the relevant call within the `ATTrackingManager.trackingAuthorizationStatus == .authorized` closure:
+   1. For each of the buttons (<img src="assets/saveforlater.png" width="15"/>, <img src="assets/addtocart.png" width="20"/> and <img src="assets/purchase.png" width="20"/>) in the toolbar, add the relevant call within the `ATTrackingManager.trackingAuthorizationStatus == .authorized` closure:
 
-      1. For <img src="assets/saveforlater.png" width=15/>:
+      1. For <img src="assets/saveforlater.png" width="15"/>:
 
             ```swift
             // Send saveForLater commerce experience event
             MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "saveForLaters", product: product)
             ```
 
-      1. For <img src="assets/addtocart.png" width=20/>:
+      1. For <img src="assets/addtocart.png" width="20"/>:
 
             ```swift
             // Send productListAdds commerce experience event
             MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "productListAdds", product: product)
             ```
 
-      1. For <img src="assets/purchase.png" width=20/>:
+      1. For <img src="assets/purchase.png" width="20"/>:
 
             ```swift
             // Send purchase commerce experience event
@@ -339,11 +339,11 @@ Again, lets actually implement this code in your Xcode project.
    1. Select **[!UICONTROL Home]** in the tab bar and verify you see an **[!UICONTROL ECID]**, **[!UICONTROL Email]**, and **[!UICONTROL CRM ID]** in the Home screen.
    1. Select **[!DNL Products]** in the tab bar.
    1. Select a product.
-   1. Select <img src="assets/saveforlater.png" width=15/>.
-   1. Select <img src="assets/addtocart.png" width=20/>.
-   1. Select <img src="assets/purchase.png" width=15/>.
+   1. Select <img src="assets/saveforlater.png" width="15"/>.
+   1. Select <img src="assets/addtocart.png" width="20"/>.
+   1. Select <img src="assets/purchase.png" width="15"/>.
 
-       <img src="./assets/mobile-app-events-3.png" width=300>
+       <img src="./assets/mobile-app-events-3.png" width="300">
  
 
 1. In the Assurance UI, look for the **[!UICONTROL hitReceived]** events from the **[!UICONTROL com.adobe.edge.konductor]** vendor.
