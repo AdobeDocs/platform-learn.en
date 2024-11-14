@@ -5,33 +5,29 @@ kt: 5342
 doc-type: tutorial
 exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
 ---
-# 0.2 Use Demo System Next to setup your Adobe Experience Platform Data Collection client property
+# Use Demo System Next to setup your Adobe Experience Platform Data Collection client property
 
-After signing up for the Comprehensive Technical Tutorial for Adobe Experience Platform, there's an automated process that will provide you with access to Demo System, so that you can access and run the below configuration.
+In order to visualize the learnings in this tutorial and to make it possible for you to test your configuration in a safe environment, this tutorial is using Adobe's Demo System Next tools. In order to get the most of this tutorial, your AEP instance needs to be configured to be integrated with Demo System Next. 
 
-Once you've got access to Demo System, proceed with the below steps.
+Once you've got access to Demo System Next, proceed with the below steps.
 
-Go to [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/). Select your sandbox and click **Quick Setup**.
+Go to [https://dsn.adobe.com/](https://dsn.adobe.com/) and navigate to **Setup**.
+
+![DSN](./images/dsnsetup.png)
+
+In the **Environment** dropdown, select your AEP isntance and sandbox.
 
 ![DSN](./images/dsnh1.png)
 
-You'll see this:
+Next, select the preset **AEP Tutorial User**.
 
 ![DSN](./images/dsnhome.png)
 
-Under **General** - **Environment**, select your Adobe Experience Platform instance and your sandbox, in this case:
-
-- **Experience Platform International**
-- **aepenablementfy22**
-- Configuration: please select **Global v2.0**
-
-![DSN](./images/dsn1.png)
-
-Next, select the preset **Enablement User** and click **Start**.
+Next, click **Start**.
 
 ![DSN](./images/dsn2.png)
 
-In the popup, enter a name for your Data Collection property. Please use this naming convention: **Demo System (DD/MM/YYYY)**. FYI: your LDAP will be appended automatically, you do not need to add it yourself.
+In the popup, enter a name for your Data Collection properties and Experience Builder projects. Please use this naming convention: **Demo System (DD/MM/YYYY)**. FYI: your LDAP will be appended automatically, you do not need to add it yourself.
 
 Click **Start**.
 
@@ -43,9 +39,9 @@ You'll then see this popup, which is showing you the progress while creating you
 
 Once the quick setup process has completed, you'll have:
 
-- 1 Web Retail project, which makes it possible to use a demo website with the Luma demo brand
-- 1 Mobile Retail project, which makes it possible to use a demo mobile app with the Luma demo brand
-- 1 CX App Retail project, which makes it possible to use a call center and clienteling app with the Luma demo brand
+- 1 web project, which makes it possible to use a demo website with a telco demo brand
+- 1 mobile app project, which makes it possible to use a demo mobile app with a telco demo brand
+- 1 CX App project, which makes it possible to use a call center app with a telco demo brand
 - 1 Data Collection property for web, which you'll use to collect data from the website
 - 1 Data Collection property for mobile, which you'll use to collect data from the mobile app
 
@@ -53,8 +49,8 @@ Once the quick setup process has completed, you'll have:
 
 Keep this screen open as you'll need it in the next steps.
 
-Next Step: [0.3 Create your Datastream](./ex3.md)
+Next Step: [Create your Datastream](./ex3.md)
 
-[Go Back to Module 0](./getting-started.md)
+[Go Back to Getting Started](./getting-started.md)
 
 [Go Back to All Modules](./../../../overview.md)
