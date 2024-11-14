@@ -115,9 +115,9 @@ You are now going to actually implement this code in your Xcode project.
 You have different commerce product-related actions in your app and you want to send events, based on these actions as performed by the user:
 
 * view: occurs when a user views a specific product,
-* add to cart: when a user taps <img src="assets/addtocart.png" width=20/> in a product detail screen,
-* save for later: when a user taps <img src="assets/saveforlater.png" width=15/> in a product detail screen,
-* purchase: when a user taps <img src="assets/purchase.png" width=20/> in a product detail screen.
+* add to cart: when a user taps <img src="assets/addtocart.png" width="20"/> in a product detail screen,
+* save for later: when a user taps <img src="assets/saveforlater.png" width="15"/> in a product detail screen,
+* purchase: when a user taps <img src="assets/purchase.png" width="20"/> in a product detail screen.
 
 To implement the sending of commerce-related experience events in a reusable way, you use a dedicated function:
 
