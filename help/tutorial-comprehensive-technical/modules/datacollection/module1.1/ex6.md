@@ -20,7 +20,7 @@ You'll then see this. To enable Adobe Target, click **+Add Service**.
 
 ![AEP Debugger](./images/aa2.png)
 
-You'll then see this. Select the service **Adobe Target**, after which you can optionally provide additional information. At this moment, there's no need to save this, so click **Cancel**.
+You'll then see this. Select the service **Adobe Target**, after which you can optionally provide additional information. Click **Save**.
 
 ![AEP Debugger](./images/at1.png)
 

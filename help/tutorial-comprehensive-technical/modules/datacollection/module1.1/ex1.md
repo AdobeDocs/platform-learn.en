@@ -36,7 +36,12 @@ Now, take a look at the left rail.
 - **[!UICONTROL Tags]** gives an overview of all client-side properties
 - **[!UICONTROL App Surfaces]** gives an overview of all App Configurations to enable Push Notifications (which is used/enabled in combination with Project Sierra)
 - **[!UICONTROL Datastreams]** are explored in the [next exercise](./ex2.md)
-- **[!UICONTROL Event Forwarding]** gives an overview of all server-side properties which are explored in [Module 14 - Real-Time CDP Connections: Event Forwarding](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Event Forwarding]** gives an overview of all server-side properties which are explored in [Module 2.5 - Real-Time CDP Connections: Event Forwarding](./../../../modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)
+- **[!UICONTROL Monitoring]** gives an overview of the incoming and outgoing event traffic through Event Forwarding
+- **[!UICONTROL Assurance]** provides access for debugging an implementation using the Adobe Debugger
+- **[!UICONTROL Places]** provides access to manage POI's which become accessible for location-based personalization in mobile applications
+- **[!UICONTROL Schemas]** provides access to Adobe Experience Platform's schema editor
+- **[!UICONTROL Identities]** provides access to Adobe Experience Platform's Identity Graph setup
 
 ## Further Information
 
