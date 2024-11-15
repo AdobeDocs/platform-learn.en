@@ -25,10 +25,6 @@ Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/pro
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
 
-On the **Screens** page, click **Run**. 
-
-![DSN](../module1.1/images/web2.png)
-
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
 ![DSN](./../../gettingstarted/gettingstarted/images/web3.png)

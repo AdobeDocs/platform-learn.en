@@ -11,7 +11,7 @@ exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
 
 ### Install the Adobe Experience Platform Debugger
 
-The Experience Platform Debugger is an extension available for Chrome and Firefox browsers which helps you see the Adobe technology implemented in your web pages. Download the version for your preferred browser:
+The Experience Platform Debugger is an extension available for Chrome and Firefox browsers which helps you see the Adobe technology implemented in your web pages. Install the version for your preferred browser:
 
 - [Firefox extension](https://addons.mozilla.org/en-US/firefox/addon/adobe-experience-platform-dbg/)
 
@@ -32,13 +32,9 @@ Verify that these 2 settings are enabled:
 
 ### Open the demo website
 
-Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
-
-On the **Screens** page, click **Run**. 
-
-![DSN](./images/web2.png)
+![DSN](.//images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
@@ -72,15 +68,19 @@ Click the **[!UICONTROL Sign In]** button on the top right to authenticate. If y
 
 ![AEP Debugger](./images/validate2.png)
 
+You'll then be logged in in the Debugger.
+
+![AEP Debugger](./images/validate2ab.png)
+
 Hit the reload button on your demo website to connect the debugger to that specific tab.
 
 ![AEP Debugger](./images/validate2a.png)
 
-Confirm the Debugger is **[!UICONTROL Connected to Home]** as pictured above and then click the **[!UICONTROL lock]** icon to lock the Debugger to the demo website. If you don't do this, the Debugger will keep switching to expose the implementation details of whatever browser tab is in focus, which can be confusing.
+Confirm the Debugger is **[!UICONTROL Connected to Home]** as pictured above and then click the **[!UICONTROL lock]** icon to lock the Debugger to the demo website. If you don't do this, the Debugger will keep switching to expose the implementation details of whatever browser tab is in focus, which can be confusing. Once the debugger is locked, the icon will change to **Unlock**.
 
 ![AEP Debugger](./images/validate3.png)
 
-Next, go to any page on the demo website like for instance, the **Men** category page.
+Next, go to any page on the demo website like for instance, the **Plans** category page.
 
 ![AEP Debugger AEP Web SDK extension](./images/validate4.png)
 
@@ -90,11 +90,11 @@ Each request contains an **[!UICONTROL events]** row.
 
 ![AEP Debugger AEP Web SDK extension](./images/validate5.png)
 
-Click to open the **[!UICONTROL events]** row. Note how you can see the **web.webpagedetails.pageViews** event, as well as other, out-of-the-box variables adhering to the **Web SDK ExperienceEvent XDM** format.
+Click to open an **[!UICONTROL events]** row. Note how you can see the **web.webpagedetails.pageViews** event, as well as other, out-of-the-box variables adhering to the **Web SDK ExperienceEvent XDM** format.
 
 ![Events value](./images/validate8.png)
 
-These types of request details are also visible in the Network tab. Filter for requests with **interact** to locate the requests sent by Web SDK. You can find all the details of the XDM payload in the Request Payload Headers:
+These types of request details are also visible in the Network tab. Filter for requests with **interact** to locate the requests sent by Web SDK. You can find all the details of the XDM payload in the Payload section:
 
 ![Network tab](./images/validate9.png)
 

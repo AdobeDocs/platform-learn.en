@@ -21,31 +21,30 @@ This is the Adobe Experience Platform Data Collection Properties page you saw be
 
 ![Properties page](./images/launch1.png) 
 
-In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box.
+In **Getting Started**, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box.
+Click to open the **Web** property.
 
 ![Search box](./images/property6.png)
 
-Open the **Web** property.
 
-You'll then see the Property Overview page. Click on **[!UICONTROL Extensions]** in the left rail. Click the **[!UICONTROL Configure]** button under the Adobe Experience Platform Web SDK Extension.
+
+You'll then see the Property Overview page. Click on **[!UICONTROL Extensions]** in the left rail, then click on **Adobe Experience Platform Web SDK** and then click **[!UICONTROL Configure]**.
 
 ![Property Overview page](./images/property7.png)
 
-Welcome to the the Adobe Experience Platform Web SDK! Here you can configure the extension with the Datastream you created in [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md) as well as some more advanced configuration. You're only going to configure two settings for this exercise.
+Welcome to the the Adobe Experience Platform Web SDK! Here you can configure the extension with the Datastream you created in [Getting Started](./../../../modules/gettingstarted/gettingstarted/ex2.md) as well as some more advanced configuration.
 
-The default Edge Domain is always **edge.adobedc.net**. If you've implemented a CNAME configuration in your Adobe Experience Cloud or Adobe Experience Platform environment, you'll need to update the **[!UICONTROL Edge Domain]**. Your Adobe Experience Platform instance is using this Edge Domain: `--webSdkEdgeDomain--`. 
+The default edge domain is always **edge.adobedc.net**. If you've implemented a CNAME configuration in your Adobe Experience Cloud or Adobe Experience Platform environment, you'll need to update the **[!UICONTROL Edge Domain]**. 
 
-If your instance's Edge Domain is different from default one, please update the Edge Domain. An Edge Domain makes it possible to configure a 1st party tracking server, which then uses a CNAME configuration in the backend to ensure data is collected into Adobe.
+If your instance's edge domain is different from default one, please update the edge domain here. If you're not sure, use the default domain. An edge domain makes it possible to configure a 1st party tracking server, which then uses a CNAME configuration in the backend to ensure data is collected into Adobe.
 
 ![Extensions home](./images/property9edgedomain.png)
 
-Now, make sure the **[!UICONTROL Choose from list]** radio button is selected under the **[!UICONTROL Datastreams]** heading, and select your datastream which is named: `--aepUserLdap-- - Demo System Datastream`, from the list in the **[!UICONTROL Datastream]** box.
-
-![Extensions home](./images/property9edge.png)
+Under **[!UICONTROL Datastreams]**, you already selected your datastream in the **Getting Started** section. You selected this datastream: `--aepUserLdap-- - Demo System Datastream`, from the list in the **[!UICONTROL Datastream]** box, for each of the environments.
 
 Click **[!UICONTROL Save]** to go back to the Extensions view.
 
-![Adobe Experience Platform Web SDK homepage](./images/save.png)
+![Extensions home](./images/property9edge.png)
 
 ## 1.1.3.2 Data Elements
 
@@ -99,11 +98,13 @@ Click on the rule that is returned.
 
 ![Media - Article Pages rule search](./images/rule1.png)
 
-Let's have a look at the individual elements that make up this rule. For all rules If a specified **[!UICONTROL Event]** occurs, the **[!UICONTROL Conditions]** are evaluated, then the specified **[!UICONTROL Actions]** take place if needed.
+Let's have a look at the individual elements that make up this rule. 
+
+For all rules: If a specified **[!UICONTROL Event]** occurs, the **[!UICONTROL Conditions]** are evaluated, then the specified **[!UICONTROL Actions]** take place if needed.
 
 ![Media - Article Pages rule](./images/rule2.png)
 
-Click on the Event **Custom Event - Product View**. This is the view that loads.
+Click on the Event **Core - Custom Event**. This is the view that loads.
 
 Click on the **Event Type** drop down.
 
@@ -113,9 +114,11 @@ This lists some of the standard interactions you can use to signal Adobe Experie
 
 Click **[!UICONTROL Cancel]** to go back to the Rule.
 
-Click on the Action **Send "Product View" Event to AEP**.
+Click on the Action **Send "Product View" Experience Event**.
 
-Here you can see the data that's being send to the Adobe Edge by the Adobe Experience Platform Web SDK. More specifically, this is using the **alloy** **[!UICONTROL Instance]** of the Web SDK. Setting up another **[!UICONTROL Instance]** would allow for different Datastreams to be used, among other things. You've specified the event **[!UICONTROL Type]** as an **commerce.productViews** and the XDM Data you're sending is the **XDM - Product View** data element you changed earlier.
+![Send Event action](./images/rule5a.png)
+
+Here you can see the data that's being sent to the edge by the Adobe Experience Platform Web SDK. More specifically, this is using the **alloy** **[!UICONTROL Instance]** of the Web SDK. The event **[!UICONTROL Type]** is set to **Commerce Product (Cart) Views** and the XDM Data you're sending is the **XDM - Product View** data element you changed earlier.
 
 ![Send Event action](./images/rule5.png)
 
@@ -131,17 +134,14 @@ Click on the existing library, called **Main**.
 
 ![Library access](./images/publish1.png)
 
-Click the **Add All Changed Resources** button.
+Click the **Add All Changed Resources** button. Next, 
+Click the **Save & Build for Development** button.
 
 ![Library access](./images/publish1a.png)
 
-Scroll down to see most resources will remain as **Revision 1 (Latest)**, but the two we've changed - **Data Element: ruleArticlePages** and **Extension: Adobe Experience Platform Web SDK** will be marked with just **Latest**.
-
-Click the **Save & Build for Development** button.
+The library may take a few minutes to build and when it is complete it will display a green dot to the left of the library name.
 
 ![Content Library](./images/publish2.png)
-
-The library may take a few minutes to build and when it is complete it will display a green dot to the left of the library name.
 
 As you can see on the Publishing Flow screen, there is a lot more to the publishing process in Adobe Experience Platform Data Collection which is beyond the scope of this tutorial. We are just going to use a single library in our Development environment.
 

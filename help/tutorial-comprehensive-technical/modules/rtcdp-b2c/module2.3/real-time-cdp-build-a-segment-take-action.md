@@ -28,7 +28,7 @@ In this module, you'll configure a streaming segment and activate the segment to
 
 >[!NOTE]
 >
->Don't forget to install, configure and use the Chrome Extension as referenced in [0.1 - Install the Chrome extension for the Experience League documentation](../../gettingstarted/gettingstarted/ex1.md)
+>Don't forget to install, configure and use the Chrome Extension as referenced in [Install the Chrome extension for the Experience League documentation](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercises
 

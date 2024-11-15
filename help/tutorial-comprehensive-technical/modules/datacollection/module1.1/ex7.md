@@ -23,7 +23,7 @@ In the left menu, go to **Schemas** and open the **Demo System - Event Schema fo
 
 ![AEP Debugger](./images/exp3.png)
 
-On that Schema, you'll see that the field group **AEP Web SDK ExperienceEvent Mixin** has been added. This field group adds all the minimally required fields to the Schema. Every Experience Event Schema in Adobe Experience Platform that will be used by Web SDK will always require that field group to be part of the Schema.
+In that schema, you'll see that the field group **AEP Web SDK ExperienceEvent** field group has been added. This field group adds all the minimally required fields to the Schema. Every Experience Event Schema in Adobe Experience Platform that will be used by Web SDK will always require that field group to be part of the Schema.
 
 ![AEP Debugger](./images/exp4.png)
 

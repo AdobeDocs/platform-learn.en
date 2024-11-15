@@ -7,8 +7,6 @@ exl-id: b69ebe41-ff28-4dde-b639-198201120742
 ---
 # 1.1 Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension
 
-**Author: [Matthew Joseph Woolley](https://www.linkedin.com/in/matthewjwoolley/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 This foundational module introduces you to Adobe's data collection vision and explains how to get data from a website and mobile application into Adobe Experience Platform and other applications via Adobe Experience Platform Data Collection, the Adobe Experience Platform SDKs and Adobe Experience Platform Edge Network. This module introduces some concepts and technologies that have an impact beyond the scope of an Adobe Experience Platform technical tutorial. It should be clear which parts of these exercises are foundational to the rest of the comprehensive tutorial, which teach you more about Experience Edge and its capabilities, and where to go for further information and tutorials.
 
 ## Learning Objectives
@@ -30,7 +28,7 @@ This foundational module introduces you to Adobe's data collection vision and ex
 
 >[!NOTE]
 >
->Don't forget to install, configure and use the Chrome Extension as referenced in [0.1 - Install the Chrome extension for the Experience League documentation](../../gettingstarted/gettingstarted/ex1.md)
+>Don't forget to install, configure and use the Chrome Extension as referenced in [Install the Chrome extension for the Experience League documentation](../../gettingstarted/gettingstarted/ex1.md)
 
 ## Exercises
 
