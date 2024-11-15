@@ -41,11 +41,9 @@ If your instance's edge domain is different from default one, please update the 
 
 Under **[!UICONTROL Datastreams]**, you already selected your datastream in the **Getting Started** section. You selected this datastream: `--aepUserLdap-- - Demo System Datastream`, from the list in the **[!UICONTROL Datastream]** box, for each of the environments.
 
-![Extensions home](./images/property9edge.png)
-
 Click **[!UICONTROL Save]** to go back to the Extensions view.
 
-![Adobe Experience Platform Web SDK homepage](./images/save.png)
+![Extensions home](./images/property9edge.png)
 
 ## 1.1.3.2 Data Elements
 
