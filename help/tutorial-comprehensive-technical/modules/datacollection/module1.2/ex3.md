@@ -39,10 +39,6 @@ You should create a new dataset. To create a new dataset, click on the button **
 
 ![Data Ingestion](./images/createdataset.png)
 
-After clicking the **[!UICONTROL + Create Dataset]** button, you'll see the following screen. 
-
-![Data Ingestion](./images/datasetsetup.png)
-
 You have to define a dataset from the schema that you defined in the previous step. Click the **[!UICONTROL Create Dataset from Schema]** - option.
 
 ![Data Ingestion](./images/datasetfromschema.png)
