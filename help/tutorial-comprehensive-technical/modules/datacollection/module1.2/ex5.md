@@ -16,11 +16,11 @@ Data Landing Zone is an Azure Blob storage interface provisioned by Adobe Experi
 > Adobe Experience Platform **enforces a strict seven-day time-to-live (TTL)** on all files uploaded to a Data Landing Zone container. All files are deleted after seven days.
 
 
-## 1.2.5.1 Prerequisites
+## Prerequisites
 
-To copy blobs or files to your Adobe Experience Platform Data Landing Zone you'll use AzCopy, a command-line utility. You can download a version for your operating system via [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10).
+To copy blobs or files to your Adobe Experience Platform Data Landing Zone you'll use AzCopy, a command-line utility. You can download a version for your operating system via [https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10](https://docs.microsoft.com/en-us/azure/storage/common/storage-use-azcopy-v10), scroll down on that page to **Download the AzCopy portable binary** and select the approproate version for your OS.
 
-![dlz-install-az-copy.png](./images/dlz-install-az-copy.png)
+![dlz-install-az-copy.png](./images/dlzinstallazcopy.png)
 
 - Unzip the downloade file
 
@@ -32,7 +32,7 @@ To copy blobs or files to your Adobe Experience Platform Data Landing Zone you'l
 
 - Open a terminal window and navigate to the folder on your desktop, you should see the following content (azcopy and global-context-websiteinteractions.csv), for example on OSX:
 
-![dlz-unzip-azcopy.png](./images/dlz-unzip-azcopy.png)
+![dlz-unzip-azcopy.png](./images/dlzunzipazcopy.png)
 
 ## 1.2.5.2 Connect Data Landing Zone to Adobe Experience Platform
 
@@ -42,19 +42,23 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``.  After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./images/sb1.png)
 
-In the left menu, go to **Sources**. In the Sources catalog, search for **data landing**. On the **Data Landing Zone** card, click **...** and select **View Credentials**.
+In the left menu, go to **Sources**. In the Sources catalog, search for **data landing**. 
 
-![dlz-view-credentials.png](./images/dlz-view-credentials.png)
+![Data Ingestion](./images/sourcesdlz.png)
 
-Click tp copy **SASUri**.
+Click the **Data Landing Zone** card, you'll see the credentials on the right tab.
 
-![dlz-copy-sas-uri.png](./images/dlz-copy-sas-uri.png)
+![dlz-view-credentials.png](./images/dlzviewcredentials.png)
 
-## 1.2.5.3 Copy your csv-file to your AEP data landing zone
+Click the icon as indicated to copy the **SASUri**.
+
+![dlz-copy-sas-uri.png](./images/dlzcopysasuri.png)
+
+## Copy your csv-file to your AEP data landing zone
 
 You'll now ingest data into Adobe Experience Platform using Azure command line tools using AZCopy.
 
@@ -70,41 +74,41 @@ Make sure to surround your SASUri with double quotes. Replace `<your-local-file>
 
 After executing the above command in your terminal, you'll see this:
 
-![dlz-exec-copy-command.png](./images/dlz-exec-copy-command.png)
+![dlz-exec-copy-command.png](./images/dlzexeccopycommand.png)
 
-## 1.2.5.4 Lookup your file in your Data Landing Zone
+## Lookup your file in your Data Landing Zone
 
 Go to your Data Landing Zone in Adobe Experience Platform.
 
 Select **Sources**, search for **data landing** and click the **Setup** button.
 
-![dlz-inspect-datalanding-zone.png](./images/dlz-inspect-datalanding-zone.png)
+![dlz-inspect-datalanding-zone.png](./images/dlzinspectdatalandingzone.png)
 
 This will open the Data Landing Zone. You'll see the file that you just uploaded in the data landing zone's **select data** panel.
 
-![dlz-datalanding-zone-open.png](./images/dlz-datalanding-zone-open.png)
+![dlz-datalanding-zone-open.png](./images/dlzdatalandingzoneopen.png)
 
-## 1.2.5.5 Process your file
+## Process your file
 
 Select your file and select **Delimited** as data format. You'll then see a preview of your data. Click **Next**.
 
-![dlz-datalanding-select-file.png](./images/dlz-datalanding-select-file.png)
+![dlz-datalanding-select-file.png](./images/dlzdatalandingselectfile.png)
 
 You can now start mapping the uploaded data to match the XDM schema of your dataset.
 
 Select **Existing dataset** and select the dataset **Demo System - Event Dataset for Website (Global v1.1)**. Click **Next**.
 
-![dlz-target-dataset.png](./images/dlz-target-dataset.png)
+![dlz-target-dataset.png](./images/dlztargetdataset.png)
 
 Now you are ready map the incoming source data from your csv file to the target fields from the dataset's XDM schema.
 
-![dlz-start-mapping.png](./images/dlz-start-mapping.png)
+![dlz-start-mapping.png](./images/dlzstartmapping.png)
 
 >[!NOTE]
 >
 > Don't mind the potential errors with the mapping. You'll correct the mapping in the next step.
 
-## 1.2.5.6 Map fields
+## Map fields
 
 First of all, click the **Clear all mappings** button. You can then start with a clean mapping.
 
@@ -112,19 +116,19 @@ First of all, click the **Clear all mappings** button. You can then start with a
 
 Next, click **New field type** and then select **Add new field**.
 
-![dlz-clear-mappings.png](./images/dlz-clear-mappings.png)
+![dlz-clear-mappings.png](./images/dlzclearmappings.png)
 
 To map the **ecid** source field, select the field **identities.ecid** and click **Select**.
 
-![dlz-map-identity.png](./images/dlz-map-identity.png)
+![dlz-map-identity.png](./images/dlzmapidentity.png)
 
 Next, click **Map target field**.
 
-![dlz-map-select-target-field.png](./images/dlz-map-select-target-field.png)
+![dlz-map-select-target-field.png](./images/dlzmapselecttargetfield.png)
 
 Select the field ``--aepTenantId--``.identification.core.ecid in the schema structure.
 
-![dlz-map-target-field.png](./images/dlz-map-target-field.png)
+![dlz-map-target-field.png](./images/dlzmaptargetfield.png)
 
 You need to map a couple of other fields, click **+ New field type** followed by **Add new field** and add fields for this mapping
 
@@ -134,29 +138,29 @@ You need to map a couple of other fields, click **+ New field type** followed by
 | timestamp  |  timestamp |
 | timestamp |  _id |
 
-![dlz-add-other-mapping.png](./images/dlz-add-other-mapping.png)
+![dlz-add-other-mapping.png](./images/dlzaddothermapping.png)
 
 When finished your screen should look like, the screen below. Click **Next**.
 
-![dlz-mapping-result.png](./images/dlz-mapping-result.png)
+![dlz-mapping-result.png](./images/dlzmappingresult.png)
 
 Click **Next**.
 
-![dlz-default-scheduling.png](./images/dlz-default-scheduling.png)
+![dlz-default-scheduling.png](./images/dlzdefaultscheduling.png)
 
 Click **Finish**.
 
-![dlz-import-finish.png](./images/dlz-import-finish.png)
+![dlz-import-finish.png](./images/dlzimportfinish.png)
 
-## 1.2.5.7 Monitor dataflow 
+## Monitor dataflow 
 
 To monitor you dataflow, go to **Sources**, **Dataflows** and click on your dataflow:
 
-![dlz-monitor-dataflow.png](./images/dlz-monitor-dataflow.png)
+![dlz-monitor-dataflow.png](./images/dlzmonitordataflow.png)
 
 Loading the data can take a couple of minutes, when succesful, you'll see a status of **Success**:
 
-![dlz-monitor-dataflow-result.png](./images/dlz-monitor-dataflow-result.png)
+![dlz-monitor-dataflow-result.png](./images/dlzmonitordataflowresult.png)
 
 Next Step: [Summary and benefits](./summary.md)
 
