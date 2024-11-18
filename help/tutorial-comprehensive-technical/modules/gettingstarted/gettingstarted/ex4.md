@@ -12,7 +12,7 @@ doc-type: tutorial
 >
 >If you don't have the below screen open anymore, go to option 2 instead.
 
-After exercise 0.1, you had this result. Click to open the **Web Telco project** that was created for you.
+After the previous exercise, you had this result. Click to open the **Web Telco project** that was created for you.
 
 ![DSN](./images/dsn5a.png)
 

@@ -6,8 +6,6 @@ doc-type: tutorial
 ---
 # 1.2 Foundation - Data Ingestion
 
-**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In this module, the goal is to learn all about data ingestion. You'll learn about data ingestion in Streaming and Batch. You'll implement Streaming Data Ingestion by using Launch, so that the customer behavior on the Hands-On Lab website is streamed to Adobe Experience Platform in real-time. You'll learn about Batch Data Ingestion by using an Adobe Experience Platform Workflow to take a CSV-file, map it against an XDM-schema and then ingest it into Adobe Experience Platform. 
 
 ## Learning Objectives
