@@ -16,23 +16,27 @@ When that same customer eventually picks up their phone and calls your call cent
 
 ## Use your CX App
 
-As part of our Demo System, we've created a CX App template which can be used to simulate a call center environment. Follow these steps to create such a CX App project.
-
-Go to [https://dsn.adobe.com](https://dsn.adobe.com). Click **New Project**.
-
-You'll then see your CX App project. Click the project to open it.
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your CX App project and then click **Edit** to open it.
 
 ![Demo](./images/cxapp3.png)
 
-In your CX App project, go to **Integrations**. Select the Adobe Experience Platform Data Collection property that was created in Module 0. You need to select the property that has **(enablement)** in its name. Then, click **Run**.
+In your CX App project, go to **Integrations**. Click **Select environment**.
+
+![Demo](./images/cxapp3a.png)
+
+Select the Adobe Experience Platform Data Collection property that was created in Getting Started. You need to select the property that has **(cx-app)** in its name.
 
 ![Demo](./images/cxapp4.png)
+
+You'll then see this. Click **Run**.
+
+![Demo](./images/cxapp4a.png)
 
 You'll then see this.
 
 ![Demo](./images/cxapp5.png)
 
-On the Profile Viewer panel, you can see these combinations of IDs and Namespaces:
+Select one of your identities and the according namespace, and click the **search-icon**.
 
 ![Customer Profile](./images/identities.png)
 
@@ -44,8 +48,6 @@ On the Profile Viewer panel, you can see these combinations of IDs and Namespace
 | Mobile Number ID          | +32473622044+18112024-01|
 
 When the customer calls your call center, the phone number can be used to identify the customer. So in this exercise, you'll use the phone number to retrieve the customer's profile in the CX App.
-
-Select **Phone number** in the dropdown and enter the phone number that you used on the website. Hit **Enter**.
 
 ![Demo](./images/19.png)
 
