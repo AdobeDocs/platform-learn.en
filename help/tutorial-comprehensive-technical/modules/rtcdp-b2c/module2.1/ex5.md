@@ -32,11 +32,7 @@ You'll then see this. Click **Run**.
 
 ![Demo](./images/cxapp4a.png)
 
-You'll then see this.
-
-![Demo](./images/cxapp5.png)
-
-Select one of your identities and the according namespace, and click the **search-icon**.
+Next, you need to select one of your identities and the according namespace, and click the **search-icon**.
 
 ![Customer Profile](./images/identities.png)
 
