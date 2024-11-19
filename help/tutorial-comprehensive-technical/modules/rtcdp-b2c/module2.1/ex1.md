@@ -16,13 +16,9 @@ Platform is an environment in which the word customer is broader than just the k
 
 ## Customer journey flow
 
-Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-On the **Screens** page, click **Run**. 
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
@@ -56,7 +52,7 @@ You can also see all the Experience Events that were collected based on the cust
 
 ![Demo](../../datacollection/module1.2/images/pv3.png)
 
-Go to the **Men** product category. Next, click on the product **Montana Wind Jacket**.
+Go to the **Phones & devices** product category. Next, click on the product **iPhone 15 Pro**.
 
 ![Demo](../../datacollection/module1.2/images/pv4.png)
 
@@ -68,15 +64,15 @@ Open the Provile Viewer panel and have a look at your **Experience Events**.
   
 ![Demo](../../datacollection/module1.2/images/pv6.png)
   
-Go back to the **Women** category page, and click another product. Another Experience Event has been sent to Adobe Experience Platform. 
+Go back to the **Phones & devices** category page, and click another product. Another Experience Event has been sent to Adobe Experience Platform. Open the Profile Viewer panel. You'll now see 2 Experience Events of type **Product View**. While the behavior is anonymous, with proper consent in place, you're able to track every click and store it in in Adobe Experience Platform. Once the anonymous customer becomes known, we'll be able to merge all anonymous behavior automatically to the know profile.
   
 ![Demo](../../datacollection/module1.2/images/pv7.png)
   
-Open the Profile Viewer panel. You'll now see 2 Experience Events of type **Product View**. While the behavior is anonymous, we're able to track every click and store it in in Adobe Experience Platform. Once the anonymous customer becomes known, we'll be able to merge all anonymous behavior automatically to the know profile.
+Go to the Register/Login page. Click **Sign In**.
   
 ![Demo](../../datacollection/module1.2/images/pv8.png)
 
-Go to the Register/Login page. Click **CREATE AN ACCOUNT**.
+Click **Create an account**.
   
 ![Demo](../../datacollection/module1.2/images/pv9.png)
   
@@ -98,11 +94,11 @@ You've now ingested data into Adobe Experience Platform and you've linked that d
 
 After becoming a known customer, it's time to start using the mobile app. Open the mobile app on your iPhone and then login to the app.
 
-If you don't have the app installed anymore, or if you can't remember how to install it, please have a look here: [0.5 Use the mobile app](../../gettingstarted/gettingstarted/ex5.md)
+If you don't have the app installed anymore, or if you can't remember how to install it, please have a look here: [Use the mobile app](../../gettingstarted/gettingstarted/ex5.md)
 
-After installing the app as instructed, you'll see the landing page of the app with the Luma brand loaded. Click the account icon in the top-left part of your screen.
+After installing the app as instructed, you'll see the landing page of the app with the Citi Signal brand loaded. Click the account icon in the top-left part of your screen.
   
-![Demo](./images/app_hp.png)
+![Demo](./images/app_hp1.png)
 
 On the Login screen, log in with the email address you used on the desktop website. Click **Login**.
   
@@ -114,15 +110,23 @@ Go to the app's home screen and click to open any product.
 
 You'll then see the product detail page.
   
-![Demo](./images/app_carst.png)
+![Demo](./images/app_galaxy.png)
 
 Go to the home screen in the app and swipe left on the screen to view the Profile Viewer panel. You'll then see the product you just viewed in the **Experience Events** section, along with all the product views from the website session before.
+
+>[!NOTE]
+>
+>It may take a couple of minutes before you see the consolidated view in the app and on the website.
  
-![Demo](./images/app_after_carst.png)
+![Demo](./images/app_after_galaxy.png)
 
 Now go back to your desktop computer and refresh the homepage, after which you'll see the product appear there, too.
-  
-![Demo](./images/lb_x_aftermobile.png)
+
+>[!NOTE]
+>
+>It may take a couple of minutes before you see the consolidated view in the app and on the website.
+
+![Demo](./images/web_x_aftermobile.png)
 
 You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email addresses. The goal of this exercise was to understand the business context of what you're about to do. You've now effectively built a real-time, cross-device customer profile. In the next exercise, you'll go ahead and visualize your profile in Adobe Experience Platform.
 

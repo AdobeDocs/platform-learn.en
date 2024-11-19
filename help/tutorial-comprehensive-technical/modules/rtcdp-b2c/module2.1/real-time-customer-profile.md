@@ -7,15 +7,12 @@ doc-type: tutorial
 ---
 # 2.1 Foundation - Real-time Customer Profile
 
-**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-In this module, we'll do a deep dive into the Real-time Customer Profile and Identity capabilities of Adobe Experience Platform. You will learn how audiences can be defined, the role of Identity Service and Experience Cloud ID, and how to define segment builder queries to define your own segments.
+In this module, you'll do a deep dive into the Real-time Customer Profile and Identity capabilities of Adobe Experience Platform. You will learn how audiences can be defined, the role of Identity Service and Experience Cloud ID, and how to define segment builder queries to define your own segments.
 
 ## Learning Objectives
 
 - Learn how to visualize a customer's Real-time Customer Profile through Adobe Experience Platform's UI
 - Learn how to create a segment using Adobe Experience Platform's Segment Builder
-- Learn how to create a segment and store the segment's results in a dataset using Adobe Experience Platform APIs
 - Learn about the impact of having access to a full customer profile, including real-time behavior, in offline environments
 
 ## Prerequisites
@@ -47,11 +44,7 @@ In this exercise, you'll use Postman and Adobe I/O to view your own real-time cu
 
 In this exercise, you'll create a segment by making use of Adobe Experience Platform's Segment Builder.
 
-[2.1.5 Create a segment - API](./ex5.md)
-
-In this exercise, you'll use Postman and Adobe I/O to create a segment and store the results of that segment as a dataset, by making use of Adobe Experience Platform's APIs.
-
-[2.1.6 See your Real-time Customer Profile in action in the Call Center](./ex6.md)
+[2.1.5 See your Real-time Customer Profile in action in the Call Center](./ex5.md)
 
 In this exercise, you'll impersonate a call center employee who receives a call from a customer. In order to really make an impact on this customer's experience, you'll need access to all available information in real-time.
 

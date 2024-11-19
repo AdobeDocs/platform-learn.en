@@ -4,13 +4,13 @@ description: Foundation - Setup of Adobe Experience Platform Data Collection and
 kt: 5342
 doc-type: tutorial
 ---
-# 1.1.3 - Introduction to Adobe Experience Platform Data Collection
+# 1.1.3 Introduction to Adobe Experience Platform Data Collection
 
 ## Context
 
 Now let's take a deeper look at the building blocks of Adobe Experience Platform Data Collection, to understand what is installed on your demo website. You will have a closer look at the Adobe Experience Platform Web SDK Extension, you'll configure a data element and a rule and you'll learn how to publish a library.
 
-## 1.1.3.1 - Adobe Experience Platform Web SDK Extension
+## Adobe Experience Platform Web SDK Extension
 
 An extension is a packaged set of code that extends the Adobe Experience Platform Data Collection interface and the library functionality. Adobe Experience Platform Data Collection is the platform, and extensions are like apps that run on the platform. All of the extensions used in the tutorial are created and managed by Adobe, but 3rd-parties can create their own extensions to limit the amount of custom code Adobe Experience Platform Data Collection users have to manage.
 
@@ -45,7 +45,7 @@ Click **[!UICONTROL Save]** to go back to the Extensions view.
 
 ![Extensions home](./images/property9edge.png)
 
-## 1.1.3.2 Data Elements
+## Data Elements
 
 Data elements are the building blocks for your data dictionary (or data map). Use data elements to collect, organize, and deliver data across marketing and ad technology.
 
@@ -81,7 +81,7 @@ Scroll up, and enter the text `%Product Category%`. Click **[!UICONTROL Save]**.
 
 At this point, the Adobe Experience Platform Web SDK Extension is installed and you've updated a data element to collect data against an XDM structure. Next, let's check the rules that will send data at the correct time.
 
-## 1.1.3.3 Rules
+## Rules
 
 Adobe Experience Platform Data Collection is a rule-based system. It looks for user interaction and associated data. When the criteria outlined in your rules are met, the rule triggers the extension, script, or client-side code you identified.
 
@@ -123,7 +123,7 @@ Here you can see the data that's being sent to the edge by the Adobe Experience 
 
 Now that you've looked at the Rule, you can publish all your changes in Adobe Experience Platform Data Collection.
 
-## 1.1.3.4 Publish in a Library
+## Publish in a Library
 
 Finally, in order to validate the rule and data element you just updated, you need to publish a library containing the edited items in our property. There are a few quick steps you need to take in the **[!UICONTROL Publishing]** section of Adobe Experience Platform Data Collection.
 

@@ -4,13 +4,13 @@ description: Foundation - Setup of Adobe Experience Platform Data Collection and
 kt: 5342
 doc-type: tutorial
 ---
-# 1.1.5 - Implement Adobe Analytics and Adobe Audience Manager
+# 1.1.5 Implement Adobe Analytics and Adobe Audience Manager
 
 ## Context
 
 You now know that XDM data is flowing into platform. You'll explore more about what XDM is in [Module 1.2](./../module1.2/data-ingestion.md), as well as how to build your own schema to track custom variables. For now you're going to look at what happens when you set your Datastream to forward data to Analytics and Audience Manager.
 
-## 1.1.5.1 Mapping variables in Analytics
+## Mapping variables in Analytics
 
 The Adobe Experience Platform [!DNL Web SDK] maps certain values automatically, making a new implementation of Analytics via the Web SDK as quick as possible. The automatically mapped variables are listed [here](https://experienceleague.adobe.com/docs/experience-platform/edge/data-collection/adobe-analytics/automatically-mapped-vars.html#data-collection).
 
@@ -49,11 +49,11 @@ To be used by Analytics, XDM data is flattened using dot notation and made avail
 
 All data collected by the edge network can be accessed via [processing rules](https://experienceleague.adobe.com/docs/analytics/admin/admin-tools/processing-rules/processing-rules-configuration/t-processing-rules.html). In Analytics, you can use processing rules to incorporate context data into Analytics variables.
 
-## 1.1.5.2 Audience Manager on the Experience Platform Edge Network
+## Audience Manager on the Experience Platform Edge Network
 
 Server-side forwarding is a not a new concept for Audience Manager, and the same process as before applies. You can also sync identities.
 
-## 1.1.5.3 Review your Datastream to send data to Adobe Analytics
+## Review your Datastream to send data to Adobe Analytics
 
 In case you want to send data collected by Web SDK to Adobe Analytics and Adobe Audience Manager, follow these steps.
 
@@ -71,7 +71,7 @@ You'll then see this. Select the service **Adobe Analytics**, after which you ne
 
 ![AEP Debugger](./images/aa3.png)
 
-## 1.1.5.4 Review your Datastream to send data to Adobe Audience Manager
+## Review your Datastream to send data to Adobe Audience Manager
 
 You'll then see this. To enable Adobe Audience Manager, click **+Add Service**.
 
