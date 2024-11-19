@@ -17,7 +17,6 @@ Let's highlight the benefits of the Real-time Customer Profile :
 - The Real-time Customer Profile is built on a flexible and real-time identity graph which makes it possible to dynamically merge profile fragments across multiple datasets together based on the identifiers.
 - Once profile fragments are merged through the Identity Graph, any of the available identifiers can be used to retrieve a customer's profile
 - Segmentation is now done using XDM as the language behind the segment which makes the segment easily reusable and understandable
-- Segments can now also be created through the API, which makes it possible to define a segment externally in a programmatic way and then insert the segment definition through the API.
 
 ## Check this out
 

@@ -7,7 +7,7 @@ exl-id: 475e9a34-c80e-41e4-9660-61c79f26922d
 ---
 # 1.1.6 Implement Adobe Target
 
-## 1.1.6.1 Update your Datastream to use Adobe Target
+## Update your Datastream to use Adobe Target
 
 In case you want to send data collected by Web SDK to Adobe Target and get a response from Adobe Target with a personalized experience for every customer, follow these steps.
 

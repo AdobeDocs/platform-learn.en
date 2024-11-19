@@ -41,7 +41,9 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
   + 1.3 - Federated Audience Composiiton {#module13}
     + [Overview](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-    + [1.3.1 Intro to FAC](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+    + [1.3.1 Setup your Snowflake account](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+    + [1.3.2 Create schemas, data model and links](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
+    + [1.3.3 Create a federated composition](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)
 
 + 2 Real-Time CDP B2C {#rtcdpb2c}  
@@ -51,8 +53,7 @@ recommendations: noDisplay,noCatalog
     + [2.1.2 Visualize your own real-time customer profile - UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex2.md)
     + [2.1.3 Visualize your own real-time customer profile - API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex3.md)
     + [2.1.4 Create a segment - UI](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex4.md)
-    + [2.1.5 Create a segment - API](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
-    + [2.1.6 See your Real-time Customer Profile in action in the call center](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex6.md)
+    + [2.1.5 See your Real-time Customer Profile in action in the call center](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/ex5.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.1/summary.md)
   + 2.2 Intelligent Services {#module22}
     + [Overview](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.2/intelligent-services.md)

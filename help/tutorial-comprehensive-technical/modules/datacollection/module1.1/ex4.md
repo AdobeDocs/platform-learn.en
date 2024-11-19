@@ -7,7 +7,7 @@ exl-id: dce7f1b5-72ca-41b2-9aa8-41c13ce25c82
 ---
 # 1.1.4 Client-side Web Data Collection
 
-## 1.1.4.1 Validate the data in the request
+## Validate the data in the request
 
 ### Install the Adobe Experience Platform Debugger
 
@@ -34,7 +34,7 @@ Verify that these 2 settings are enabled:
 
 Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](.//images/web8.png)
+![DSN](./images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 

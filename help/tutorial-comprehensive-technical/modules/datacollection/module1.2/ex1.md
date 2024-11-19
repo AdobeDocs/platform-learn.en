@@ -21,9 +21,9 @@ You will now ingest data into Adobe Experience Platform and that data will be li
 
 ### Customer Journey flow
 
-Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Edit**.
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
@@ -73,7 +73,7 @@ Click **Sign In** to go to the Register/Login page.
 
 ![Demo](./images/pv8.png)
 
-Click **CREATE AN ACCOUNT**.
+Click **Create an account**.
   
 ![Demo](./images/pv9.png)
   
