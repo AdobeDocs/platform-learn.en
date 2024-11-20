@@ -37,7 +37,7 @@ Select your account type and complete the login process.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+You'll then see your website loaded in an incognito browser window. For every exercise, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 

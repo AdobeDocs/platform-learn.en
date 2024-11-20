@@ -7,8 +7,6 @@ exl-id: 3668f06b-df76-43db-be6a-36c339256a22
 ---
 # 2.2 Intelligent Services
 
-**Authors: [Diptiman Badajena](https://www.linkedin.com/in/diptiman-badajena-1b178019/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In this module, you'll learn how to setup, configure and use Adobe Experience Platform Intelligent Services.
 
 ## Learning Objectives

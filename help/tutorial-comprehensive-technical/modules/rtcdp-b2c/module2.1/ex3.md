@@ -11,7 +11,7 @@ In this exercise, you'll use Postman and Adobe I/O to query Adobe Experience Pla
  
 ## Context
 
-In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing segment memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the experience system of record.
+In the Real-time Customer Profile, all profile data is shown alongside event data, as well as existing audience memberships. The data shown can come from anywhere, from Adobe applications and external solutions. This is the most powerful view in Adobe Experience Platform, the experience system of record.
 
 The Real-time Customer Profile can be consumed by all Adobe applications, but also by external solutions like Call Centers or in-store clienteling apps. The way to do this is to connect those external solutions to Adobe Experience Platform's APIs.
 
@@ -52,9 +52,6 @@ You'll then see this:
 
 ![Adobe I/O New Integration](./images/api1.png)
 
-Click the **Adobe Experience Platform** icon.
-/images/api2.png)
-
 Select **Experience Platform API** and click **Next**.
 
 ![Adobe I/O New Integration](./images/api3.png)
@@ -69,7 +66,7 @@ Select the required Product Profiles.
 
 >[!NOTE]
 >
-> Product Profile names will vary in your Adobe Experience Platform instance as they are instance spefici. You need to select at least one product profile with the proper access rights, which are set up in the Adobe Admin Console and the AEP Permissions UI.
+> Product Profile names will vary in your Adobe Experience Platform instance as they are instance specific. You need to select at least one product profile with the proper access rights, which are set up in the Adobe Admin Console and the AEP Permissions UI.
 
 Click **Save Configured API**.
 
@@ -113,7 +110,7 @@ Go to **Permissions**, to **Roles**, and click the relevant product profile.
 
 >[!NOTE]
 >
-> Product Profile names will vary in your Adobe Experience Platform instance as they are instance spefici. You need to select at least one product profile with the proper access rights, which are set up in the Adobe Admin Console and the AEP Permissions UI.
+> Product Profile names will vary in your Adobe Experience Platform instance as they are instance specific. You need to select at least one product profile with the proper access rights, which are set up in the Adobe Admin Console and the AEP Permissions UI.
 
 ![Permissions](./images/perm1.png)
 
@@ -144,7 +141,7 @@ In Postman, there are 2 concepts: Environments and Collections.
 - The Environment contains all of your environmental variables which are more or less consistent. In the Environment, you'll find things like the IMSOrg of our Platform environment, alongside security credentials like your Private Key and others. The environment file is the one you downloaded during the Adobe I/O setup in the previous exercise, it's name like this: **`oauth_server_to_server.postman_environment.json`**.
   
 - The Collection contains a number of API requests that you can use. We will use 2 collections
-  - 1 Collection for Authentication to Adobe I/0
+  - 1 Collection for Authentication to Adobe I/O
   - 1 Collection for the exercises in this module
   - 1 collection for the exercises in the Real-Time CDP module, for Destination Authoring
 
@@ -626,7 +623,7 @@ This is currently all of the available ExperienceEvent data in Platform for this
 
 You're not required to use the ECID to request ExperienceEvent data from Adobe Experience Platform's Real-time Profile, you can use any ID in any namespace to request this data. 
 
-Next Step: [2.1.4 Create a segment - UI](./ex4.md)
+Next Step: [2.1.4 Create an audience - UI](./ex4.md)
 
 [Go Back to Module 2.1](./real-time-customer-profile.md)
 

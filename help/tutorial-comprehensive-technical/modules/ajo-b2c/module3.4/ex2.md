@@ -17,7 +17,7 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 ## 3.4.2.1 Create newsletter journey
 
-You'll now create a batch-based journey. Unlike the event-based journey of the previous exercise which relies on incoming experience events or segment entries or exits to trigger a journey for 1 specific customer, batch-based journeys target a whole segment once with unique content like newsletters, one-off promotions, or generic information or periodically with similar content sent on a regular basis like for instance birthday campaigns and reminders. 
+You'll now create a batch-based journey. Unlike the event-based journey of the previous exercise which relies on incoming experience events or audience entries or exits to trigger a journey for 1 specific customer, batch-based journeys target a whole audiences once with unique content like newsletters, one-off promotions, or generic information or periodically with similar content sent on a regular basis like for instance birthday campaigns and reminders. 
 
 In the menu, go to **Journeys** and click **Create Journey**.
 
@@ -32,11 +32,11 @@ Click **Ok**.
 
 ![Journey Optimizer](./images/batchj2.png)
 
-Under **Orchestration**, drag and drop **Read Segment** onto the canvas. This means that, once published, the journey will start by retrieving the whole segment audience, which then becomes the target audience of the journey and message. Click **Select a segment**.
+Under **Orchestration**, drag and drop **Read Audience** onto the canvas. This means that, once published, the journey will start by retrieving the whole audience audience, which then becomes the target audience of the journey and message. Click **Select an audience**.
 
 ![Journey Optimizer](./images/batchj3.png)
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 2.3 - Real-time CDP - Build a segment and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
+In the **Choose an audience** popup, search for your ldap and select the audience you created in [Module 2.3 - Real-time CDP - Build an audience and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--aepUserLdap-- - Interest in Galaxy S24`. Click **Save**.
 
 ![Journey Optimizer](./images/batchj5.png)
 

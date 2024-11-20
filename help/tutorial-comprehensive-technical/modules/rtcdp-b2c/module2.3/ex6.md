@@ -7,18 +7,18 @@ exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
 ---
 # 2.3.6 External Audiences
 
-In many cases your company may want to use existing segments from other applications to enrich the customer profile in Adobe Experience Platform.
+In many cases your company may want to use existing audiences from other applications to enrich the customer profile in Adobe Experience Platform.
 Those external audiences may have been defined based on a data science model or using external data platforms.
 
-The external audiences feature of Adobe Experience Platform lets you focus on the ingestion of the external audiences and their activation without any need to redefine the corresponding segment definition in detail in Adobe Experience Platform.
+The external audiences feature of Adobe Experience Platform lets you focus on the ingestion of the external audiences and their activation without any need to redefine the corresponding audience definition in detail in Adobe Experience Platform.
 
 The overall process is divided in three main steps:
 
 - Import the external audience metadata: this step is meant to ingest the external audience metadata, such as the audience name, into Adobe Experience Platform.
-- Assign the external audience memebrship to the cutomer profile: this step is meant to enrich the customer profile with the external segment membership attribute.
-- Create the segments in Adobe Experience Platform: this step is meant to create actionable segments based on the external audiences membership.
+- Assign the external audience memebrship to the cutomer profile: this step is meant to enrich the customer profile with the external audiences membership attribute.
+- Create the audiences in Adobe Experience Platform: this step is meant to create actionable audiences based on the external audiences membership.
 
-## 2.3.6.1 Metadata
+## Metadata
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
@@ -26,13 +26,13 @@ Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After 
 
 >[!IMPORTANT]
 >
->The sandbox to use for this exercise is ``--module2sandbox--``!
+>The sandbox to use for this exercise is ``--aepSandboxName--``!
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module2sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
 ![Data Ingestion](./images/sb1.png)
 
-While the segment data defines the condition for a profile to be part of a segment, the segment metadata are information about the segment such as the name, the description and the status of the segment. As the external audiences metadata will be stored in Adobe Experience Platform, you need to use an identity namespace to ingest the metadata in Adobe Experience Platform.
+While the audience data defines the condition for a profile to be part of a audience, the audience metadata are information about the audience such as the name, the description and the status of the audience. As the external audiences metadata will be stored in Adobe Experience Platform, you need to use an identity namespace to ingest the metadata in Adobe Experience Platform.
 
 ## 2.3.6.1.1 Identity Namespace for External Audiences
 
@@ -42,19 +42,19 @@ To view the identity that was already created, go to **Identities**, and search 
 Please note:
 
 - The identity symbol **externalaudiences** will be used in the next steps to refer to the external audiences identity.
-- The **Non-people identifier** type is used for this identity namespace, as this namespace isn't meant to identify customer profiles but segments.
+- The **Non-people identifier** type is used for this identity namespace, as this namespace isn't meant to identify customer profiles but audiences.
 
 ![External Audiences Identity](images/extAudIdNS.png)
 
 ## 2.3.6.1.2 Create the External Audiences Metadata schema
 
-The external audiences metadata are based on the **Segment definition Schema**. You can find more details in the [XDM Github repository](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
+The external audiences metadata are based on the **Audience definition Schema**. You can find more details in the [XDM Github repository](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
 
 In the left menu, go to Schemas. Click **+ Create Schema** and then click **Browse**.
 
 ![External Audiences Metadata Schema 1](images/extAudMDXDM1.png)
 
-To assign a class, search for **segment definition**. Select the **Segment definition** class and click **Assign Class**.
+To assign a class, search for **audience definition**. Select the **Audience definition** class and click **Assign Class**.
 
 ![External Audiences Metadata Schema 2](images/extAudMDXDM2.png)
 
@@ -198,13 +198,13 @@ In the query results you'll see the external audience's metadata that you ingest
 
 ![External Audiences Metadata str 5](images/extAudMDstr5.png)
 
-## 2.3.6.2 Segment Membership
+## Audience Membership
 
-With the external audience metadata available you can now ingest the segment membership for a specific customer profile.
+With the external audience metadata available you can now ingest the audience membership for a specific customer profile.
 
-You now need to prepare a profile dataset enriched against the Segment membership schema. You can find more details in the [XDM Github repository](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
+You now need to prepare a profile dataset enriched against the audience membership schema. You can find more details in the [XDM Github repository](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
 
-## 2.3.6.2.1 Create the External Audiences Membership schema
+### Create the External Audiences Membership schema
 
 In the right menu, go to **Schemas**. Click **Create Schema** and then click **XDM Individual Profile**.
 
@@ -232,7 +232,7 @@ Next, enable the **Profile** toggle and confirm. Click **Save**.
 
 ![External Audiences Profile Schema 5](images/extAudPrXDM5.png)
 
-## 2.3.6.2.2 Create the External Audiences Membership dataset
+### Create the External Audiences Membership dataset
 
 In **Schemas**, go to **Browse**. Search and click the `--aepUserLdap-- - External Audiences Membership` schema you created in the previous step. Next, click **Create Dataset from Schema**.
 
@@ -246,7 +246,7 @@ You'll then see this. Don't forget to enable the **Profile** toggle!
 
 ![External Audiences Metadata DS 3](images/extAudPrDS3.png)
 
-## 2.3.6.2.3 Create an HTTP API Source Connection
+### Create an HTTP API Source Connection
 
 
 Next, you need to configure the HTTP API Source Connector which you'll use to ingest the metadata into the dataset.
@@ -289,7 +289,7 @@ You'll then see this.
 
 ![External Audiences Metadata http 4](images/extAudPrhttp4a.png)
 
-## 2.3.6.2.4 Ingestion of External Audiences Membership data
+### Ingestion of External Audiences Membership data
 
 On your Source Connector overview tab, click **...** and then click **Copy schema payload**.
 
@@ -341,7 +341,7 @@ Refresh your HTTP API Source connector screen, where after a couple of minutes y
 
 ![External Audiences Metadata str 2](images/extAudPrstr2.png)
 
-## 2.3.6.2.5 Validate External Audiences Membership ingestion
+### Validate External Audiences Membership ingestion
 
 When the processing is completed you can check the data availability in the dataset using Query Service.
 
@@ -363,7 +363,7 @@ In the query results you'll see the external audience's metadata that you ingest
 
 ![External Audiences Metadata str 5](images/extAudPrstr5.png)
 
-## 2.3.6.3 Create a segment
+## Create a segment
 
 Now you are ready to to take action on the external audiences.
 In Adobe Experience Platform taking action is achieved via creating segments, populating the respective audiences and sharing those audiences to the destinations.
@@ -391,7 +391,7 @@ You'll then see this. You'll also notice that the profile for which you ingested
 
 Your segment is ready now, and can be sent towards a destination for activation.
 
-## 2.3.6.4 Visualize your customer profile
+## Visualize your customer profile
 
 You can now also visualize the segment qualification on your customer profile. Go to **Profiles**, use the identity namespace **Demo System - CRMID** and provide the identity `--aepUserLdap---profile-test-01`, which you used as part of exercise 6.6.2.4, and click **View**. Next, click the **Profile ID** to open the profile.
 

@@ -11,7 +11,7 @@ Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://exp
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
 
-You'll be redirected to the **Home** view in Journey Optimizer. Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepTenantId--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen.
+You'll be redirected to the **Home** view in Journey Optimizer. Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepTenantId--``. 
 
 ![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
 

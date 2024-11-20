@@ -1,21 +1,25 @@
 ---
-title: Real-time CDP - Build a segment and take action - Send your segment to an S3-destination
-description: Real-time CDP - Build a segment and take action - Send your segment to an S3-destination
+title: Real-time CDP - Build an audience and take action - Send your audience to an S3-destination
+description: Real-time CDP - Build an audience and take action - Send your audience to an S3-destination
 kt: 5342
 doc-type: tutorial
 exl-id: 656fc93c-74ff-4d8f-8674-6520d2a70b86
 ---
-# 2.3.4 Take Action: send your segment to an S3-destination
+# 2.3.4 Take Action: send your audience to an S3-destination
 
-Adobe Experience Platform also has the ability to share Audiences to Email Marketing Destinations such as Salesforce Marketing Cloud, Oracle Eloqua, Oracle Responsys and Adobe Campaign.
+Adobe Experience Platform also has the ability to share audiences to Email Marketing Destinations such as Salesforce Marketing Cloud, Oracle Eloqua, Oracle Responsys and Adobe Campaign.
 
 You can use FTP or SFTP as part of the dedicated destinations for each of these Email Marketing Destinations, or you can use AWS S3 to exchange lists of customers between Adobe Experience Platform and these Email Marketing Destinations.
 
 In this module, you'll configure such a destination by making use of an AWS S3 bucket.
 
-## 2.3.4.1 Create your S3 bucket
+## Create your S3 bucket
 
-Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you previously created.
+Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in.
+
+>[!NOTE]
+>
+>If you don't have an AWS account yet, please create a new AWS account using your personal email address.
 
 ![ETL](./images/awshome.png)
 
@@ -23,7 +27,7 @@ After logging in, you'll be redirected to the **AWS Management Console**.
 
 ![ETL](./images/awsconsole.png)
 
-In the **Find Services** menu, search for **s3**. Click the first search result: **S3 - Scalable Storage in the Cloud**.
+In the search bar, search for **s3**. Click the first search result: **S3 - Scalable Storage in the Cloud**.
 
 ![ETL](./images/awsconsoles3.png)
 
@@ -31,10 +35,7 @@ You'll then see the **Amazon S3** homepage. Click **Create Bucket**.
 
 ![ETL](./images/s3home.png)
 
-In the **Create Bucket** screen, you need to configure two things:
-  
-- Name: use the name `aepmodulertcdp--aepUserLdap--`. As an example, in this exercise the bucket name is **aepmodulertcdpvangeluw**
-- Region: use the region **EU (Frankfurt) eu-central-1**
+In the **Create Bucket** screen, use the name `aepmodulertcdp--aepUserLdap--`
 
 ![ETL](./images/bucketname.png)
 
@@ -46,7 +47,7 @@ You'll then see your bucket being created and will be redirected to the Amazon S
 
 ![ETL](./images/S3homeb.png)
 
-## 2.3.4.2 Set permissions to access your S3 bucket
+## Set permissions to access your S3 bucket
 
 The next step is to setup access to your S3 bucket.
 
@@ -58,42 +59,51 @@ You'll now see this page.
 
 ![ETL](./images/iam.png)
 
-In the left menu, click **Users**. You'll then see the **Users** screen. Click **Add Users**.
+In the left menu, click **Users**. You'll then see the **Users** screen. Click **Create user**.
 
 ![ETL](./images/iammenu.png)
 
 Next, configure your user:
 
-- User Name: use `s3_--aepUserLdap--_rtcdp` as a name, so in this example the name is `s3_vangeluw_rtcdp`.
-- AWS access type: select **Access key - Programmatic access**.
+- User Name: use `s3_--aepUserLdap--_rtcdp`
 
-Click **Next: Permissions**.
+Click **Next**.
 
 ![ETL](./images/configuser.png)
 
-You'll then see this permissions screen. Click **Attach existing policies directly**.
+You'll then see this permissions screen. Click **Attach policies directly**.
 
 ![ETL](./images/perm1.png)
 
-Enter the search term **s3** to see all related S3 policies. Select the policy **AmazonS3FullAccess**. Click **Next: Tags**.
+Enter the search term **s3** to see all related S3 policies. Select the policy **AmazonS3FullAccess**. Scroll down and click **Next**.
 
 ![ETL](./images/perm2.png)
-
-On the **Tags** screen, there's no need to configure anything. Click **Next: Review**.
-
-![ETL](./images/perm3.png)
 
 Review your configuration. Click **Create User**.
 
 ![ETL](./images/review.png)
 
-Your user is now created and you're seeing your credentials to access your S3 environment. This is the only time you'll see your credentials so please write them down.
+You'll then see this. Click **View User**.
+
+![ETL](./images/review1.png)
+
+Click **Security credentials** and then click **Create access key**.
 
 ![ETL](./images/cred.png)
 
-Click **Show** to see your Secret access key:
+Select **Application running outside AWS**. Scroll down and click **Next**.
+
+![ETL](./images/creda.png)
+
+Click **Create access key**
+
+![ETL](./images/credb.png)
+
+You'll then see this. Click **Show** to see your Secret access key:
 
 ![ETL](./images/cred1.png)
+
+Your **Secret access key** is now being shown.
 
 >[!IMPORTANT]
 >
@@ -102,41 +112,37 @@ Click **Show** to see your Secret access key:
 > - Access key ID: ...
 > - Secret access key: ...
 >
-> Once you click **Close** you'll never see your credentials again!
+> Once you click **Done** you'll never see your credentials again!
 
-Click **Close**. 
+Click **Done**. 
 
-![ETL](./images/close.png)
+![ETL](./images/cred2.png)
 
 You've now successfully created an AWS S3 bucket and you've created a user with permissions to access this bucket.
 
-## 2.3.4.3 Configure Destination in Adobe Experience Platform
+## Configure Destination in Adobe Experience Platform
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
 In the left menu, go to **Destinations**, then go to **Catalog**. You'll then see the **Destinations Catalog**.
 
-![RTCDP](./images/rtcdpmenudest.png)
+![RTCDP](./images/rtcdpmenudest1.png)
 
-Click **Cloud Storage**, then click the **Set up** button (or on **Activate Segments**, depending on your environment) on the **Amazon S3** card.
+Click **Cloud Storage**, then click the **Set up** button (or on **Activate Audiences**, depending on your environment) on the **Amazon S3** card.
 
 ![RTCDP](./images/rtcdp2.png)
 
-Depending on your environment, you might have to click **+ Configure new destination** to start creating your destination.
-
-![RTCDP](./images/rtcdp2a.png)
-
-Select **New Account** as Account Type. Please use the S3 credentials that were given to you in the previous step:
+Select **Access Key** as Account Type. Please use the S3 credentials that were given to you in the previous step:
 
 | Access Key ID             | Secret Access Key             |
 |:-----------------------:| :-----------------------:|
-| AKIA..... |Cm5Ln.....|
+| AKIA..... |7Icm.....|
 
 Click **Connect to destination**.
 
@@ -146,7 +152,7 @@ You'll then see a visual confirmation that this destination is now connected.
 
 ![RTCDP](./images/rtcdpsfs3connected.png)
 
-You have to provide a name and folder so that Adobe Experience Platform can connect to the S3 bucket.
+You have to provide S3 bucket details so that Adobe Experience Platform can connect to the S3 bucket.
 
 As a naming convention, please use the following:
 
@@ -155,35 +161,33 @@ As a naming convention, please use the following:
 | Name |`AWS - S3 - --aepUserLdap--`|
 | Description |`AWS - S3 - --aepUserLdap--`|
 | Bucket Name |`aepmodulertcdp--aepUserLdap--`|
-| Folder Path |/|
+| Folder Path |/now |
 
-Click **Next**.
+Select **Audiences**.
+
+For **File Type**, select **CSV** and leave the default settings unchanged.
 
 ![RTCDP](./images/rtcdpsfs3connect2.png)
+
+Scroll down. For **Compression format**, select **None**. Click **Next**.
+
+![RTCDP](./images/rtcdpsfs3connect3.png)
 
 You can now optionally attach a Data Governance Policy to your new destination. Click **Next**.
 
 ![RTCDP](./images/rtcdpsfs3connect2gov.png)
 
-In the list of segments, search for the segment you created in exercise 1 and select it. Click **Next**.
+In the list of audiences, search for the audience you created in the previous exercise, `--aepUserLdap-- - Interest in Galaxy S24` and select it. Click **Next**.
 
 ![RTCDP](./images/s3a.png)
 
-You'll then see this. If you wish, you can edit the schedule by clicking the **pencil** icon. **Create Schedule**.
+You'll then see this. If you wish, you can edit the schedule and filename by clicking the **pencil** icon. Click **Next**.
 
 ![RTCDP](./images/s3bb.png)
 
-Define your schedule of choice. Select **Export incremental files** and set the frequency to **Hourly** every **3 hours**. Click **Create**.
+You can now select profile attributes for the export towards AWS S3. Click **Add new field** and ensure the field `--aepTenantId--.identification.core.ecid` is added and marked as **Deduplication Key**.
 
-![RTCDP](./images/s3bbc.png)
-
-You'll then have this. Click **Next**.
-
-![RTCDP](./images/s3bbca.png)
-
-You can now select attributes for the export towards AWS S3. Click **Add new field** and ensure the field `--aepTenantId--.identification.core.ecid` is added and marked as **Deduplication Key**.
-
-Optionally, you can add as many other fields as required.
+Optionally, you can add as many other profile attributes as required.
 
 Once you've added all fields, click **Next**.
 
@@ -193,15 +197,13 @@ Review your configuration. Click **Finish** to finish your configuration.
 
 ![RTCDP](./images/s3g.png)
 
-You'll then be back at the Destination Activation screen and you'll see your segment added to this destination.
+You'll then be back at the Destination Activation screen and you'll see your audience added to this destination.
+
+If you'd like to add more audience exports, you can click **Activate Audiences** to restart the process and add more audiences.
 
 ![RTCDP](./images/s3j.png)
 
-If you'd like to add more segment exports, you can click **Activate Segments** to restart the process and add more segments.
-
-![RTCDP](./images/s3k.png)
-
-Next Step: [2.3.5 Take Action: send your segment to Adobe Target](./ex5.md)
+Next Step: [2.3.5 Take Action: send your audience to Adobe Target](./ex5.md)
 
 [Go Back to Module 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

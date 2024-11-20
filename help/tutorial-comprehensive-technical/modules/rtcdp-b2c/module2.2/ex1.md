@@ -10,7 +10,7 @@ exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
 In order for Intelligent Services to discover insights from your marketing events data, the data must be semantically enriched and maintained in a standard structure. Intelligent Services leverages Adobe's Experience Data Model (XDM) schemas in order to achieve this.
 Specifically, all datasets that are used in Intelligent Services must conform to the **Consumer Experience Event** XDM schema.
 
-## 2.2.1.1 Create Schema
+## Create Schema
 
 In this exercise, you'll create a schema that contains the **Consumer Experience Event mixin**, which is required by the **Customer AI** Intelligent Service.
 
@@ -20,37 +20,40 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](../../datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--module10sandbox--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](../../datacollection/module1.2/images/sb1.png)
 
 From the left menu, click **Schemas** and go to **Browse**. Click **Create Schema**.
 
-![Create new schema](./images/create-schema-button.png)
+![Create new schema](./images/createschemabutton.png)
 
-In the popup, select **XDM ExperienceEvent**.
+In the popup, select **Manual** and click **Select**.
+
+![Create new schema](./images/schmanual.png)
+
+Next, select **Experience Event** and click **Next**.
 
 ![Create new schema](./images/xdmee.png)
 
-You'll then see this.
+You need to provide a name for your schema now. As the name for our schema, use this: `--aepUserLdap-- - Demo System - Customer Experience Event` and click **Finish**.
+
+![Create new schema](./images/schname.png)
+
+You'll then see this. Click **+ Add** under Field groups.
 
 ![Create new schema](./images/xdmee1.png)
 
-Search and select the following **Mixins** to add to this Schema:
+Search and select the following **Field Groups** to add to this Schema:
 
 - Consumer Experience Event
-
-  ![New CEE schema](./images/cee.png)
-
 - End User ID Details
-
-  ![New CEE schema](./images/identitymap.png)
 
 Click **Add Field Groups**.
 
-![Identity key defn](./images/addmixin.png)
+![New CEE schema](./images/cee.png)
 
-You'll then see this. Select the Mixin **End User ID Details**.
+You'll then see this. Click the Field Group **End User ID Details**.
 
 ![Create new schema](./images/eui1.png)
 
@@ -58,7 +61,7 @@ Navigate to the field **endUserIDs._experience.emailid.id**.
 
 ![Create new schema](./images/eui2.png)
 
-In the right menu for the field **endUserIDs._experience.emailid.id**, scroll down and check the checkbox for **Identity**, check the checkbox for **Primary Identity** and select the **Identity namespace** of **Email**.
+In the right menu for the field **endUserIDs._experience.emailid.id**, scroll down and check the checkbox for **Identity**, check the checkbox for **Primary Identity** and select the **Identity namespace** of **Email**. Click **Apply**.
 
 ![Create new schema](./images/eui3.png)
 
@@ -66,21 +69,7 @@ Navigate to the field **endUserIDs._experience.mcid.id**. Check the checkbox for
 
 ![Create new schema](./images/eui4.png)
 
-Give your schema a name now.
-
-As the name for our schema, you'll use this:
-
-- `--aepUserLdap-- - Demo System - Customer Experience Event`
-
-As an example, for ldap **vangeluw**, this should be the name of the schema:
-
-- **vangeluw - Demo System - Customer Experience Event**
-
-That should give you something like this. Click the **+ Add** button to add new **Mixins**.
-
-![Create new schema](./images/xdmee2.png)
-
-Select the name of your schema. You should now enable your schema for **Profile**, by clicking the **Profile** toggle.
+You'll then have this. Next, select the name of your schema. You should now enable your schema for **Profile**, by clicking the **Profile** toggle.
 
 ![Create new schema](./images/xdmee3.png)
 
@@ -92,7 +81,7 @@ You should now have this. Click **Save** to save your schema.
 
 ![Create new schema](./images/xdmee5.png)
 
-## 2.2.1.2 Create Dataset
+## Create Dataset
 
 From the left menu, click **Datasets** and go to **Browse**. Click **Create dataset**.
 
@@ -124,7 +113,7 @@ You should now have this:
 
 You're now ready to start ingesting Consumer Experience Event data and start using the Customer AI service.
 
-## 2.2.1.3 Download Experience Event test data
+## Download Experience Event test data
 
 Once the **Schema** and **Dataset** are configured, you're now ready to ingest Experience Event data. Since Customer AI requires data across **2 quarters at least**, you'll need to ingest externally prepared data.
 
@@ -140,7 +129,7 @@ You've now downloaded a file named **retail-v1-dec2020-xl.json.zip**. Place the 
 
 ![Dataset](./images/ingest.png)
 
-## 2.2.1.4 Ingest Experience Event test data
+## Ingest Experience Event test data
 
 In Adobe Experience Platform, go to **Datasets** and open your dataset, which is named **[!UICONTROL ldap - Demo System - Customer Experience Event Dataset]**.
 
