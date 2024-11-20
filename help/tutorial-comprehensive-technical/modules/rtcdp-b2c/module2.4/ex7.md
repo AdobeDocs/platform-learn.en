@@ -32,8 +32,6 @@ For detailed output, run func with --verbose flag.
 [2024-11-20T20:07:18.150Z] Host lock lease acquired by instance ID '000000000000000000000000000C19D8'.
 ```
 
-![6-01-vsc-ready.png](./images/vsc31.png)
-
 ## Load your Citi Signal website
 
 Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
@@ -62,7 +60,7 @@ You'll then see your website loaded in an incognito browser window. For every ex
 
 ## Qualify for your audience
 
-Navigate to the **Plans** page, and **do not reload or refresh it**. This action should qualify you for your `--aepUserLdap-- - Interest in Plans` audience. 
+Navigate to the **Plans** page. This action will qualify you for the `--aepUserLdap-- - Interest in Plans` audience. 
 
 ![6-04-luma-telco-nav-sports.png](./images/cs1.png)
 
@@ -74,7 +72,7 @@ Switch back to Visual Studio Code and look at your **TERMINAL** tab, you should 
 
 When you take a closer look a the audience payload, you can see that `--aepUserLdap-- - Interest in Plans` is in status **realized**. 
 
-An audience status of **realized** means that our profile is part of the audience, while the **exited** status means that our profile has been removed from the audience.
+An audience status of **realized** means that your profile is part of the audience, while the **exited** status means that our profile has been removed from the audience.
 
 ![6-06-vsc-activation-realized.png](./images/cs3.png)
 
