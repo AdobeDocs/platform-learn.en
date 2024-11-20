@@ -1,6 +1,6 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub - Summary & benefits
-description: Segment Activation to Microsoft Azure Event Hub - Summary & benefits
+title: Audience Activation to Microsoft Azure Event Hub - Summary & benefits
+description: Audience Activation to Microsoft Azure Event Hub - Summary & benefits
 kt: 5342
 doc-type: tutorial
 exl-id: 3b598ffc-875e-468d-b91c-882062e8203f
@@ -14,13 +14,13 @@ In this module, you learnt how to set up an Azure Event Hub instance and how to 
 
 Let's highlight the benefits of integrating Adobe Experience Platform with Microsoft Azure Event Hub:
 
-- Microsoft Azure Event Hubs as an Adobe Experience Platform Destination lets you capture segment qualification in realtime and process them using an Azure Event Hub function. With such an Azure Event Hub function you can build any kind of custom segment activation handler and as such integrate any kind of third party destination.
+- Microsoft Azure Event Hubs as an Adobe Experience Platform Destination lets you capture audience qualification in realtime and process them using an Azure Event Hub function. With such an Azure Event Hub function you can build any kind of custom audience activation handler and as such integrate any kind of third party destination.
 
-- Although destinations are triggered only by specified segments, the activation payload will include all segments for which given profile qualifies.
+- Although destinations are triggered only by specified audiences, the activation payload will include all audiences for which given profile qualifies.
 
-- A segment only triggers an activation when its status changes. For example a profile that qualifies four times for a segment in a period of three months, only the first two will be activated. The first one is a status change from to **realized**, the second one is triggered by a status change from **realized** to **existing**.
+- An audience only triggers an activation when its status changes. For example a profile that qualifies four times for a audience in a period of three months, only the first two will be activated. The first one is a status change from to **realized**, the second one is triggered by a status change from **realized** to **existing**.
 
-- When activating segments for known profiles, a full identity map is included into the activation payload. Your Azure function can use any of the available identities to map the segments to a profile managed in a third party application, while using the application's customer identifier.
+- When activating audiences for known profiles, a full identity map is included into the activation payload. Your Azure function can use any of the available identities to map the audiences to a profile managed in a third party application, while using the application's customer identifier.
 
 - In this module, the event hub function was deployed locally (debug mode in Visual Studio Code), offering you lots of troubleshooting and debug options.
 
