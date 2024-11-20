@@ -1,125 +1,125 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub - Setup Event Hub in Azure
-description: Segment Activation to Microsoft Azure Event Hub - Setup Event Hub in Azure
+title: Segment Activation to Microsoft Azure Event Hub - Configure your Microsoft Azure environment
+description: Segment Activation to Microsoft Azure Event Hub - Configure your Microsoft Azure environment
 kt: 5342
 doc-type: tutorial
 ---
-# 2.4.1 Configure your Microsoft Azure EventHub environment
+# 2.4.1 Configure your environment
 
-Azure Event Hubs is a highly scalable publish-subscribe service that can ingest millions of events per second and stream them into multiple applications. This lets you process and analyze the massive amounts of data produced by your connected devices and applications.
+## Create an Azure Subscription
 
-## 2.4.1.1 What is Azure Event Hubs?
+>[!NOTE]
+>
+>If you already have an Azure Subscription, you can skip this step. Please proceed with the next exercise in that case.
 
-Azure Event Hubs is a big data streaming platform and event ingestion service. It can receive and process millions of events per second. Data sent to an event hub can be transformed and stored by using any real-time analytics provider or batching/storage adapters.
+Go to [https://portal.azure.com](https://portal.azure.com) and login with your Azure account. If you don't have one, please use your personal email address to create your Azure account.
 
-Event Hubs represents the **front door** for an event pipeline, often called an event ingestor in solution architectures. An event ingestor is a component or service that sits between event publishers (like Adobe Experience Platform RTCDP) and event consumers to decouple the production of an event stream from the consumption of those events. Event Hubs provides a unified streaming platform with time retention buffer, decoupling event producers from event consumers.
+![02-azure-portal-email.png](./images/02azureportalemail.png)
 
-## 2.4.1.2 Create a Event Hubs namespace
+After successful login you'll see the following screen:
 
-Go to [https://portal.azure.com/#home](https://portal.azure.com/#home) and select **Create a resource**. 
+![03-azure-logged-in.png](./images/03azureloggedin.png)
 
-![1-01-open-azure-portal.png](./images/1-01-open-azure-portal.png)
+Click on the to left menu and select **All Resources**, the Azure subscription screen will appear if you are not yet subscribed. In that case select **Start with an Azure free Trial**. 
 
-In the resource screen, enter **Event** in the search bar and select **Event Hubs** from the dropdown:
+![04-azure-start-subscribe.png](./images/04azurestartsubscribe.png)
 
-![1-02-search-event-hubs.png](./images/1-02-search-event-hubs.png)
+Fill in the Azure subscription form, provide your mobile phone and credit card for activation (you will have a free tier for 30 days and you will not be charged, unless you upgrade).
 
-Click **Create**:
+When the subscription process is finished you are good to go: 
 
-![1-03-event-hub-create.png](./images/1-03-event-hub-create.png)
+![06-azure-subscription-ok.png](./images/06azuresubscriptionok.png)
 
-If this is the first time that you create a resource in Azure, you will need to create a new **Resource group**. If you have already a resource group you can select it (or create a new one).
+## Install Visual Code Studio
 
-Select **Create new**, name your group `--aepUserLdap---aep-enablement`.
+You'll use Microsoft Visual Code Studio to manage your Azure Project. You can download it via [this link](https://code.visualstudio.com/download). Follow the installation instructions for your specific OS on that same website.
 
-![1-04-create-resource-group.png](./images/1-04-create-resource-group.png)
+## Install Visual Code Extensions
 
-Complete the test of the fields as indicated:
+Install the Azure Functions for Visual Studio Code from [https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions). Click the install button:
 
-- Namespace : Define your namespace, it has to be unique, use the following pattern `--aepUserLdap---aep-enablement`
-- Location: **West-Europe** refers to the Azure datacenter in Amsterdam
-- Pricing tier: **Basic**
-- Throughput Units: **1**
+![07-azure-code-extension-install.png](./images/07azurecodeextensioninstall.png)
 
-![1-05-create-namespace.png](./images/1-05-create-namespace.png)
+Install Azure Account and Sign-In for Visual Studio Code from [https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account](https://marketplace.visualstudio.com/items?itemName=ms-vscode.azure-account). Click the install button:
 
-Click **Review + create**.
+![08-azure-account-extension-install.png](./images/08azureaccountextensioninstall.png)
 
-![1-06-namespace-review-create.png](./images/1-06-namespace-review-create.png)
+## Install node.js
 
-Click **Create**.
+>[!NOTE]
+>
+>If you already have node.js installed, you can skip this step. Please proceed with the next exercise in that case.
 
-![1-07-namespace-create.png](./images/1-07-namespace-create.png)
+### macOS
 
-The deployment of your resource group can take 1-2 minutes, when successful you will see the following screen:
+Make sure to have [Homebrew](https://brew.sh/) installed first. Follow the instructions [here](https://brew.sh/).
 
-![1-08-namespace-deploy.png](./images/1-08-namespace-deploy.png)
+![Node](./images/brew.png)
 
-## 2.4.1.3 Setup your Event Hub in Azure
+Once you've installed Homebrew, run this command:
 
-Go to [https://portal.azure.com/#home](https://portal.azure.com/#home) and select **All resources**. 
+```javascript
+brew install node
+```
 
-![1-09-all-resources.png](./images/1-09-all-resources.png)
+### Windows
 
-From the resource list, select your `--aepUserLdap---aep-enablement` namespace:
-  
-![1-10-list-resources.png](./images/1-10-list-resources.png)
-  
-In `--aepUserLdap---aep-enablement` detail screen, select **Event Hubs**:
-  
-![1-11-eventhub-namespace.png](./images/1-11-eventhub-namespace.png)
+Download the [Windows Installer](https://nodejs.org/en/#home-downloadhead) directly from the [nodejs.org](https://nodejs.org/en/) web site.
 
-Click **+ Event Hub**.
+## Verify node.js version
 
-![1-12-add-event-hub.png](./images/1-12-add-event-hub.png)
+For this module, you need to have node.js version 18 installed. Any other version of node.js may cause issues with this exercise.
 
-Use `--aepUserLdap---aep-enablement-event-hub` as the name and click **Create**.
+Before you continue, please verify your version of node.js now.
 
-![1-13-create-event-hub.png](./images/1-13-create-event-hub.png)
-  
-Click **Event Hubs** in your event hub namespace. You should now see your **Event Hub** listed. If that is the case you can move on to the next exercise.
+Run this command to verify your node.js version:
 
-![1-14-event-hub-list.png](./images/1-14-event-hub-list.png)
+```javascript
+node -v
+```
 
-## 2.4.1.4 Setup your Azure Storage Account
+If your version is below or above 18, you need to upgrade or downgrade.
 
-To debug your Azure Event Hub function in later exercises, you'll need to provide an Azure Storage Account as part of your Visual Studio Code project setup. You'll now create that Azure Storage Account.
+### Upgrade/Downgrade node.js version on macOS
 
-Go to [https://portal.azure.com/#home](https://portal.azure.com/#home) and select **Create a Resource**.
+Ensure that you have the package **n** installed.
 
-![1-15-event-hub-storage.png](./images/1-15-event-hub-storage.png)
+To install the package **n**, run this command:
 
-Enter **storage** in the search and select **Storage Account** from the list.
+```javascript
+sudo npm install -g n
+```
 
-![1-16-event-hub-search-storage.png](./images/1-16-event-hub-search-storage.png)
+If you version is below or above version 12, run this command to upgrade or downgrade:
 
-Select **Create**.
+```javascript
+sudo n 18
+```
 
-![1-17-event-hub-create-storage.png](./images/1-17-event-hub-create-storage.png)
+### Upgrade/Downgrade node.js version on Windows
 
-Specify your **Resource Group** (created in the beginning of this exercise), use `--aepUserLdap--aepstorage` as your Storage account name, and select **Locally-redundant storage (LRS)**, then click **Review + create**.
+Uninstall node.js from Windows > Control Panel > Add or remove programs.
 
-![1-18-event-hub-create-review-storage.png](./images/1-18-event-hub-create-review-storage.png)
+Installing the required version from the [nodejs.org](https://nodejs.org/en/) website.
 
-Click **Create**.
+## Install NPM package: request
 
-![1-19-event-hub-submit-storage.png](./images/1-19-event-hub-submit-storage.png)
+You need to install the package **request** as part of your node.js setup.
 
-Your Storage Account creation will take a couple seconds:
+To install the package **request**, run this command:
 
-![1-20-event-hub-deploy-storage.png](./images/1-20-event-hub-deploy-storage.png)
+```javascript
+npm install request
+```
 
-When finished your screen will display the **Go to resource** button. 
+## Install Azure Functions Core Tools:
+ 
+```
+brew tap azure/functions
+brew install azure-functions-core-tools@4
+```
 
-Click **Microsoft Azure**.
-
-![1-21-event-hub-deploy-ready-storage.png](./images/1-21-event-hub-deploy-ready-storage.png)
-
-Your Storage Account is now visible under **Recent Resources**.
-
-![1-22-event-hub-deploy-resources-list.png](./images/1-22-event-hub-deploy-resources-list.png)
-
-Next Step: [2.4.2 Configure your Azure Event Hub Destination in Adobe Experience Platform](./ex2.md)
+Next Step: [2.4.2 Configure your Microsoft Azure EventHub environment](./ex2.md)
 
 [Go Back to Module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

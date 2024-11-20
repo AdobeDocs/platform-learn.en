@@ -1,14 +1,31 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub - Activate Segment
-description: Segment Activation to Microsoft Azure Event Hub - Activate Segment
+title: Audience Activation to Microsoft Azure Event Hub - Create an audience
+description: Audience Activation to Microsoft Azure Event Hub - Create an audience
 kt: 5342
 doc-type: tutorial
 ---
-# 2.4.4 Activate Segment
+# 2.4.4 Create an audience
 
-## 2.4.4.1 Add Segment to Azure Event Hub Destination
+## Introduction
 
-In this exercise you will add your segment `--aepUserLdap-- - Interest in Equipment` to your `--aepUserLdap---aep-enablement` Azure Event Hub destination.
+You'll create a simple audience:
+
+- **Interest in Plans** for which customers will qualify when they visit the **Plans** page of the CitiSignal demo website. 
+
+### Good to know
+
+Real-time CDP will trigger an activation to a destination when you qualify for an audience that is part of that destination's activation list. When that is the case, the audience qualification payload that will be sent to that destination will contain **all the audiences for which your customer profile qualifies**. 
+
+The goal of this module is to show that your Customer Profile's audience qualification is sent to your Event Hub destination in near real-time. 
+
+### Audience Status
+
+An audience qualification in Adobe Experience Platform always has a **status**-property and can be one of the following:
+
+- **realized**: this indicates a new audience qualification
+- **exited**: this indicates that the profile does no longer qualify for the audience
+
+## Build the audience
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -20,39 +37,29 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Go to **Destinations**, then click **Browse**. You'll then see all available destinations. Locate your destination and click the **+** icon as indicated below.
+Go to **Audiences**. Click the **+ Create audience** button.
 
-![5-01-select-destination.png](./images/5-01-select-destination.png)
+![Data Ingestion](./images/seg.png)
 
-You'll then see this. Search for your segment using your ldap and select `--aepUserLdap-- - Interest in Equipment` from the list of segments.
+Select **Build rule** and click **Create**.
 
-Click **Next**.
+![Data Ingestion](./images/seg1.png)
 
-![5-04-select-segment.png](./images/5-04-select-segment.png)
+Name your audience `--aepUserLdap-- - Interest in Plans`, set the evaluation method to **Edge** and add the page name from the experience event.
 
-Adobe Experience Platform Real-time CDP can deliver a payload to two types of destinations, segment destinations and profile destinations.
+Click on **Events**, and drag and drop **XDM ExperienceEvent > Web > Web page details > Name**. Enter **plans** as the value:
 
-Segment destinations will receive a predefined segment qualification payload that will be discussed later. Such a payload contains **all** the segment qualifications for a specific profile. Even for segments that are not in de destination's activation list. An example of such a segment destination are **Azure Event Hubs** and **AWS Kinesis**.
+![4-05-create-ee-2.png](./images/405createee2.png)
 
-Profile based destinations let you pick any attribute (firstName, lastName, ...) from the XDM Profile Union Schema and include it in the activation payload. An example of such destination is the **Email Marketing**.
+Drag and drop **XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**. Enter `--aepUserLdap--` as the value, set the comparison parameter to **contains** and click **Publish**:
 
-Because your Azure Event Hub destination is a **segment** destination, select for example the field `--aepTenantId--.identification.core.ecid`. 
+![4-05-create-ee-2-brand.png](./images/405createee2brand.png)
 
-Click **Add new field**, click browse schema and select the field `--aepTenantId--identification.core.ecid` (delete any other field that would be displayed automatically).
+Your audience is now published.
 
-Click **Next**.
+![4-05-create-ee-2-brand.png](./images/405createee2brand1.png)
 
-![5-05-select-attributes.png](./images/5-05-select-attributes.png)
-
-Click **Finish**.
-
-![5-06-destination-finish.png](./images/5-06-destination-finish.png)
-
-Your segment is now activated towards your Microsoft Event Hub destination.
-
-![5-07-destination-segment-added.png](./images/5-07-destination-segment-added.png)
-
-Next Step: [2.4.5 Create your Microsoft Azure Project](./ex5.md)
+Next Step: [2.4.5 Activate your audience](./ex5.md)
 
 [Go Back to Module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

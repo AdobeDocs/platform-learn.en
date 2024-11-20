@@ -1,105 +1,186 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub - Action
-description: Segment Activation to Microsoft Azure Event Hub - Action
+title: Audience Activation to Microsoft Azure Event Hub - Define an Azure Function
+description: Audience Activation to Microsoft Azure Event Hub - Define an Azure Function
 kt: 5342
 doc-type: tutorial
 ---
-# 2.4.6 End-to-end scenario
+# 2.4.6 Create your Microsoft Azure Project
 
-## 2.4.6.1 Start Azure Event Hub trigger
+## Getting familiar with Azure Event Hub functions
 
-To show the payload send by Adobe Experience Platform Real-time CDP to our Azure Event Hub upon segment qualification, we need to start our simple Azure Event Hub trigger function. This function will simple "dump" the payload to the console in Visual Studio Code. But remember this function can be extended in any way to interface with all sorts of environments using dedicated API's and protocols.
+Azure Functions allow you to run small pieces of code (called **functions**) without worrying about application infrastructure. With Azure Functions, the cloud infrastructure provides all the up-to-date servers you need to keep your application running at scale.
 
-### Launch Visual Studio Code and start project
+A function is **triggered** by a specific type of event. Supported triggers include responding to changes in data, responding to messages (for example Event Hubs), running on a schedule, or as the result of an HTTP request.
 
-Make sure to have your Visual Studio Code project opened and running
+Azure Functions is a serverless compute service that lets you run event-triggered code without having to explicitly provision or manage infrastructure. 
 
-To start/stop/restart your Azure function in Visual Studio Code, refer to the following exercises:
+Azure Event Hubs integrates with Azure Functions for a serverless architecture.
 
-- [Exercise 13.5.4 - Start Azure Project](./ex5.md)
-- [Exercise 13.5.5 - Stop Azure Project](./ex5.md)
+## Open Visual Studio Code and Logon to Azure
 
-Your Visual Studio Code's **Terminal** should mention something similar to this:
+Visual Studio Code makes it easy to...
 
-```code
-[2022-02-23T05:03:41.429Z] Worker process started and initialized.
-[2022-02-23T05:03:41.484Z] Debugger attached.
-[2022-02-23T05:03:46.401Z] Host lock lease acquired by instance ID '000000000000000000000000D90C881B'.
+- define and bind Azure functions to Event Hubs
+- test locally 
+- deploy to Azure
+- remote log function execution
+
+### Open Visual Studio Code
+
+### Logon to Azure
+
+When you logon with your Azure account that you used to register in the previous exercise, Visual Studio Code will let you find and bind all Event Hub resources. 
+
+Open Visual Studio Code and click the **Azure** icon. 
+
+Next select **Sign in to Azure**:
+
+![3-01-vsc-open.png](./images/301vscopen.png)
+
+You will be redirected to you browser to login. Remember to select the Azure account that you used to register.
+
+When you see the following screen in your browser, you are logged in with Visual Code Studio:
+
+![3-03-vsc-login-ok.png](./images/303vscloginok.png)
+
+Return to Visual Code Studio (you will see the name of your Azure subscription, for example **Azure subscription 1**):
+
+![3-04-vsc-logged-in.png](./images/304vscloggedin.png)
+
+## Create an Azure Project
+
+Click **Create Function Project...**:
+
+![3-05-vsc-create-project.png](./images/vsc2.png)
+
+Select a local folder of your choice to save the project and click **Select**:
+
+![3-06-vsc-select-folder.png](./images/vsc3.png)
+
+You will now enter the project creation wizard. Click **Javascript** as the language for your project:
+
+![3-07-vsc-select-language.png](./images/vsc4.png)
+
+Then select **Model v4**.
+
+![3-07-vsc-select-language.png](./images/vsc4a.png)
+
+Select **Azure Event Hub trigger** as your project's first function template:
+
+![3-08-vsc-function-template.png](./images/vsc5.png)
+
+Enter a name for your function, use the following format `--aepUserLdap---aep-event-hub-trigger` and press enter:
+  
+![3-09-vsc-function-name.png](./images/vsc6.png)
+
+Select **Create new local app setting**:
+
+![3-10-vsc-function-local-app-setting.png](./images/vsc7.png)
+
+Click to select the Event Hub Namespace that you created earlier, which is named `--aepUserLdap---aep-enablement`.
+
+![3-11-vsc-function-select-namespace.png](./images/vsc8.png)
+
+Next, click to select the Event Hub that you created earlier, which is named `--aepUserLdap---aep-enablement-event-hub`.
+
+![3-12-vsc-function-select-eventhub.png](./images/vsc9.png)
+
+Click to select **RootManageSharedAccessKey** as your Event Hub policy:
+
+![3-13-vsc-function-select-eventhub-policy.png](./images/vsc10.png)
+
+Select **Add to workspace** on how to open your project:
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12.png)
+
+You may then get a message like this one. In that case, click **Yes, I trust the authors**.
+
+![3-15-vsc-project-add-to-workspace.png](./images/vsc12a.png)
+
+After you project is created, click on **index.js** to have the file open in the editor:
+
+![3-16-vsc-open-index-js.png](./images/vsc13.png)
+
+The payload sent by Adobe Experience Platform to your Event Hub will include audience id's:
+
+```json
+[{
+"segmentMembership": {
+"ups": {
+"ca114007-4122-4ef6-a730-4d98e56dce45": {
+"lastQualificationTime": "2020-08-31T10:59:43Z",
+"status": "realized"
+},
+"be2df7e3-a6e3-4eb4-ab12-943a4be90837": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+},
+"39f0feef-a8f2-48c6-8ebe-3293bc49aaef": {
+"lastQualificationTime": "2020-08-31T10:59:56Z",
+"status": "realized"
+}
+}
+},
+"identityMap": {
+"ecid": [{
+"id": "08130494355355215032117568021714632048"
+}]
+}
+}]
 ```
 
-![6-01-vsc-ready.png](./images/vsc31.png)
+Replace the code in your Visual Studio Code's index.js with the code below. This code will be executed each time Real-time CDP sends audience qualifications to your Event Hub destination. In our example, the code is just about displaying and enhancing the received payload. But you can imagine any kind of function to process audience qualifications in real-time.
 
-## 2.4.6.2 Load your Luma website
+```javascript
+// Marc Meewis - Solution Consultant Adobe - 2020
+// Adobe Experience Platform Enablement - Module 2.4
 
-Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+// Main function
+// -------------
+// This azure function is fired for each audience activated to the Adobe Exeperience Platform Real-time CDP Azure 
+// Eventhub destination
+// This function enriched the received audience payload with the name of the audience. 
+// You can replace this function with any logic that is require to process and deliver
+// Adobe Experience Platform audiences in real-time to any application or platform that 
+// would need to act upon an AEP audience qualification.
+// 
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+module.exports = async function (context, eventHubMessages) {
 
-You can now follow the below flow to access the website. Click **Integrations**.
+    return new Promise (function (resolve, reject) {
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
+        context.log('Message : ' + JSON.stringify(eventHubMessages, null, 2));
 
-On the **Integrations** page, you need to select the Data Collection property that was created in exercise 0.1. 
+        resolve();
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+    });    
 
-You'll then see your demo website open up. Select the URL and copy it to your clipboard.
+};
+```
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+The result should look like this:
 
-Open a new incognito browser window.
+![3-16b-vsc-edit-index-js.png](./images/vsc1.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+## Run Azure Project
 
-Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
+Now it is time to run your project. At this stage we will not deploy the project to Azure. We will run it locally in debug mode. Select the Run icon, click the green arrow. 
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![3-17-vsc-run-project.png](./images/vsc14.png)
 
-Select your account type and complete the login process.
+The first time you run you project in debug mode, you will need to attach a Azure storage account, click **Select storage account** and then select the storage account that you created earlier, which is named `--aepUserLdap--aepstorage`.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+Your project is now up and running and is listing for events in the Event Hub. In the next exercise you'll demonstrate behavior on the CitiSignal demo website that will qualify you for audiences. As a result you will receive a audience qualification payload in the terminal of your Event Hub trigger function.
 
-You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+![3-24-vsc-application-stop.png](./images/vsc18.png)
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+## Stop Azure Project
 
-## 2.4.6.3 Qualify for your Interest in Equipment segment
+To stop your project, go to the lenu **CALL STACK** in VSC, click on the arrow on your running project and then click **Stop**.
 
-Navigate to the **Equipment** page once, and **do not reload or refresh it**. This action should qualify you for your `--aepUserLdap-- - Interest in Equipment` segment. 
+![3-24-vsc-application-stop.png](./images/vsc17.png)
 
-![6-04-luma-telco-nav-sports.png](./images/luma1.png)
-
-To verify, open the Profile Viewer panel. You should now be a member of the `--aepUserLdap-- - Interest in Equipment`. If your segment memberships are not yet updated in your Profile Viewer panel, click the reload button.  
-
-![6-05-luma-telco-nav-broadband.png](./images/luma2.png)
-
-Switch back to Visual Studio Code and look at your **TERMINAL** tab, you should see a list of segments for your specific **ECID**. This activation payload is delivered to your event hub as soon as you qualify for the `--aepUserLdap-- - Interest in Equipment` segment. 
-
-When you take a closer look a the segment payload, you can see that `--aepUserLdap-- - Interest in Equipment` is in status **realized**. 
-
-A segment status of **realized** means that our profile hsa just entered the segment. While the **existing** status means that our profile continues to be in the segment.
-
-![6-06-vsc-activation-realized.png](./images/luma3.png)
-
-## 2.4.6.4 Visit the Equipment page for a second time
-
-Do a hard refresh of the **Equipment** page.
-
-![6-07-back-to-sports.png](./images/luma1.png)
-
-Now, switch back to Visual Studio Code and verify your **TERMINAL** tab. You will see that we still have your segment, but now in status **existing** which means that our profile continues to be in the segment.
-
-![6-08-vsc-activation-existing.png](./images/luma4.png)
-
-## 2.4.6.5 Visit the Sports page for a third time
-
-If you would revisit the **Sports** page for a third time, no activation will take place, because there is no state change from a segment point of view. 
-
-Segment activations only happen when the segment's status changes:
-
-![6-09-segment-state-change.png](./images/6-09-segment-state-change.png)
-
-Next Step: [Summary and benefits](./summary.md)
+Next Step: [2.4.7 End-to-end scenario](./ex7.md)
 
 [Go Back to Module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 

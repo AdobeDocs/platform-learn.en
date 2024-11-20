@@ -36,22 +36,22 @@ After completing the exercises in this tutorial, you will be able to:
 - Stream data into Adobe Experience Platform in real-time using Adobe Experience Platform Data Collection
 - Batch ingest data into Adobe Experience Platform using a workflow or by using an extract, transform, load (ETL) application
 - Visualize and use the Real-time Customer Profile in Adobe Experience Platform
-- Create segments
+- Create audiences
 - Consume several Adobe Experience Platform APIs
 - Use SQL to query your data in Adobe Experience Platform
 - Configure and run real-time, trigger-based journeys
-- Use Real-time CDP to take action by activating a segment to various destinations
+- Use Real-time CDP to take action by activating an audience to various destinations
 - Use Customer Journey Analytics to report on omnichannel customer data from various sources, including Google BigQuery
 
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 - Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to Demo System: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Access to Demo System: [https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## Videos
 
-You can find a lot of interesting videos from our Tech Academy events, from Bootcamps and more on our [Experience Makers Community YouTube channel](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
+You can find a lot of interesting videos from our Tech Academy webinars, from bootcamps and more on our [Experience Makers Community YouTube channel](https://www.youtube.com/channel/UCUKG2dkZ9pYuZUPebQ21jUw).
 
 ## Content
 
@@ -103,19 +103,19 @@ You can find a lot of interesting videos from our Tech Academy events, from Boot
 - **Description:** In this module, you'll learn how to setup, configure and use Adobe Experience Platform Intelligent Services.
 - **Time Investment:** 60 minutes
 
-[2.3 Real-Time CDP - Build a segment and take action](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
+[2.3 Real-Time CDP - Build an audience and take action](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)
 
 - **Audience:** Data Architect, Orchestration Engineer, Marketer
 - **Prerequisites:** Access to Adobe Experience Platform, Real-time CDP, Adobe Audience Manager, Adobe Target, AWS S3
-- **Description:** In this module, you'll configure a segment, enable it for Streaming Segmentation and activate the segment to several destinations, including Google DV360, Google AdWords, Adobe Audience Manager, Adobe Target and S3-destinations like Salesforce Marketing Cloud.
+- **Description:** In this module, you'll configure an audience and activate the audience to several destinations, including Google DV360, Adobe Target and AWS S3.
 - **Time Investment:** 90 minutes
 
-[2.4 Real-Time CDP: Segment Activation to Microsoft Azure Event Hub](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
+[2.4 Real-Time CDP: Audience Activation to Microsoft Azure Event Hub](./modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
 
 - **Audience:** Data Engineer, Data Architect, Data Analyst
 - **Prerequisites:** Access to Adobe Experience Platform, Real-time CDP and Microsoft Azure
-- **Description:** In this module, you'll setup a Microsoft Azure EventHub destination as a real-time destination for Adobe Experience Platform Real-time CDP. You will also setup and deploy an Azure function that will be triggered in real-time whenever Adobe Experience Platform delivers a segment payload to your Azure EventHub destination. The Azure Function that you'll trigger will show the mechanism of Adobe Experience Platform Real-time CDP's activation capabilities.
-As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a payload to a specified destination. We will also discuss the status of a segment qualification and how it relates to activation.
+- **Description:** In this module, you'll setup a Microsoft Azure EventHub destination as a real-time destination for Adobe Experience Platform Real-time CDP. You will also setup and deploy an Azure function that will be triggered in real-time whenever Adobe Experience Platform delivers a audience payload to your Azure EventHub destination. The Azure Function that you'll trigger will show the mechanism of Adobe Experience Platform Real-time CDP's activation capabilities.
+As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a payload to a specified destination. We will also discuss the status of a audience qualification and how it relates to activation.
 - **Time Investment:** 90 minutes
 
 [2.5 Real-Time CDP Connections: Event Forwarding](./modules/rtcdp-b2c/module2.5/aep-data-collection-ssf.md)

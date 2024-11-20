@@ -1,16 +1,14 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub
-description: Segment Activation to Microsoft Azure Event Hub
+title: Audience Activation to Microsoft Azure Event Hub
+description: Audience Activation to Microsoft Azure Event Hub
 kt: 5342
 doc-type: tutorial
 ---
-# 2.4 Real-Time CDP: Segment Activation to Microsoft Azure Event Hub
+# 2.4 Real-Time CDP: Audience Activation to Microsoft Azure Event Hub
 
-**Authors: [Marc Meewis](https://www.linkedin.com/in/marcmeewis/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
+In this module, you'll setup a Microsoft Azure EventHub destination as a real-time destination for Adobe Experience Platform Real-time CDP. You will also setup and deploy an Azure function that will be triggered in real-time whenever Adobe Experience Platform delivers an audience payload to your Azure EventHub destination. The Azure Function that you'll trigger will show the mechanism of Adobe Experience Platform Real-time CDP's activation capabilities.
 
-In this module, you'll setup a Microsoft Azure EventHub destination as a real-time destination for Adobe Experience Platform Real-time CDP. You will also setup and deploy an Azure function that will be triggered in real-time whenever Adobe Experience Platform delivers a segment payload to your Azure EventHub destination. The Azure Function that you'll trigger will show the mechanism of Adobe Experience Platform Real-time CDP's activation capabilities.
-
-As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a payload to a specified destination. We will also discuss the status of a segment qualification and how it relates to activation.
+As part of this module you will also get an understanding of what triggers Real-time CDP to actually deliver a payload to a specified destination. We will also discuss the status of an audience qualification and how it relates to activation.
 
 Adobe Experience Platform Real-time CDP supports data activation to streaming cloud storage destinations, allowing you to export audience data and events in real-time to these destinations in JSON format. You can then describe business logic on top of these events in your destinations
 
@@ -22,13 +20,12 @@ Microsoft Azure Event Hubs is a fully managed, real-time data ingestion service 
 - Setup an RTCDP destination to your Microsoft Azure Event Hub
 - Understand when Real-time CDP activates and what the activation payload looks like
 - Setup Visual Studio Code to develop, test and deploy your Azure project
-- Create and deploy an Azure function that consumes segments qualifications delivered in real-time by RTCDP
+- Create and deploy an Azure function that consumes audience qualifications delivered in real-time by RTCDP
 
 ## Prerequisites
 
 - Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
-- Familiarity with the AEP Demo website environment
-- Understand how to define, use and activate Streaming Segments in Adobe Experience Platform
+- Understand how to define, use and activate audiences in Adobe Experience Platform
 
 >[!NOTE]
 >
@@ -36,33 +33,33 @@ Microsoft Azure Event Hubs is a fully managed, real-time data ingestion service 
 
 ## Exercises
 
-[2.4.0 Configure your environment](./ex0.md)
+[2.4.1 Configure your environment](./ex1.md)
 
 In this exercise, you'll setup your Microsoft Azure environment.
 
-[2.4.1 Configure your Microsoft Azure EventHub environment](./ex1.md)
+[2.4.2 Configure your Microsoft Azure EventHub environment](./ex2.md)
 
 In this exercise you'll setup your Microsoft Azure EventHub environment.
 
-[2.4.2 Configure your Azure Event Hub Destination in Adobe Experience Platform](./ex2.md)
+[2.4.3 Configure your Azure Event Hub Destination in Adobe Experience Platform](./ex3.md)
 
-In this exercise you'll setup your Real-time CDP destination connection that will deliver segments in real-time to the EventHub that you've configured in the previous exercise.
+In this exercise you'll setup your Real-time CDP destination connection that will deliver audiences in real-time to the Event Hub instance that you've configured in the previous exercise.
 
-[2.4.3 Create a segment](./ex3.md)
+[2.4.4 Create an audience](./ex4.md)
 
-In this exercise you will create a streaming segment in Adobe Experience Platform
+In this exercise you will create an audience in Adobe Experience Platform
 
-[2.4.4 Activate segment](./ex4.md)
+[2.4.5 Activate your audience](./ex5.md)
 
-In this exercise you'll activate your streaming segment to your Real-time CDP EventHub destination.
+In this exercise you'll activate your audience to your  EventHub destination.
 
-[2.4.5 Create your Microsoft Azure Project](./ex5.md)
+[2.4.6 Create your Microsoft Azure Project](./ex6.md)
 
-In this exercise you will create an Azure function that will be triggered in real-time when Adobe Experience platform activates segment qualifications to the corresponding Azure Event Hub destination.
+In this exercise you will create an Azure function that will be triggered in real-time when Adobe Experience platform delivers audience qualifications to the corresponding Azure Event Hub destination.
 
-[2.4.6 End-to-end scenario](./ex6.md)
+[2.4.7 End-to-end scenario](./ex7.md)
 
-At this point, everything is setup. You can now do some browsing on your AEP Demo website and get segment qualifications delivered to your Microsoft Azure EventHub Trigger function.  
+At this point, everything is setup. You can now do some browsing on your demo website and get audience qualifications delivered to your Microsoft Azure Event Hub Trigger function.  
 
 [Summary and benefits](./summary.md)
 

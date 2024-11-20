@@ -1,36 +1,68 @@
 ---
-title: Segment Activation to Microsoft Azure Event Hub - Create a Streaming Segment
-description: Segment Activation to Microsoft Azure Event Hub - Create a Streaming Segment
+title: Audience Activation to Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
+description: Audience Activation to Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 ---
-# 2.4.3 Create a segment
+# 2.4.3 Configure your Azure Event Hub Destination in Adobe Experience Platform
 
-## 2.4.3.1 Introduction
+## Identify Required Azure Connection parameters
 
-You'll create a simple segment:
+To configure an Event Hub destination in Adobe Experience Platform you need your:
 
-- **Interest in Equipment** for which customer profiles will qualify when they visit the **Equipement** page of the Luma demo website. 
+- Event Hubs namespace
+- Event Hub
+- Azure SAS Key name
+- Azure SAS Key
 
-### Good to know
+Event Hub and EventHub namespace have been defined in the previous exercise: [Setup Event Hub in Azure](./ex2.md)
 
-Real-time CDP will trigger an activation to a destination when you qualify for a segment that is part of that destination's activation list. When that is the case, the segment qualification payload that will be send to that destination will contain **all the segments for which your profile qualifies**. 
+### Event Hubs Namespace
+  
+To lookup the above information in Azure Portal, navigate to [https://portal.azure.com/#home](https://portal.azure.com/#home). Make sure that you are using the correct Azure account.
 
-The goal of this module is to show that your Customer Profile's segment qualification is sent to **your** event hub destination in real-time. 
+Click **All Resources** in your Azure portal:
 
-### Segment Status
+![2-01-azure-all-resources.png](./images/201azureallresources.png)
 
-A segment qualification in Adobe Experience Platform always has a **status**-property and can be one of the following:
+Find your **Event Hubs Namespace** in the list and click it.
 
-- **realized**: this indicates a new segment qualification
-- **existing**: this indicates an existing segment qualification
-- **exited**: this indicates that the profile does no longer qualify for the segment
+![2-01-azure-all-resources.png](./images/201azureallresources1.png)
 
-## 2.4.3.2 Build the segment
+The name of your **Event Hubs Namespace** is now clearly visible. It should be similar to `--aepUserLdap---aep-enablement`.
 
-Building a segment is explained in detail in [Module 2.3](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md).
+![2-01-azure-all-resources.png](./images/201azureallresources2.png)
 
-### Create Segment
+### Event Hub
+
+On your **Event Hubs Namespace** page, click **Entities > Event Hubs** to get a list of Event Hubs defined in your Event Hubs Namespace, if you followed the naming conventions used in the previous exercise you will find an Event Hub named `--aepUserLdap---aep-enablement-event-hub`. Take a note of it, you will need it in the next exercise.
+  
+![2-04-event-hub-selected.png](./images/204eventhubselected.png)
+
+### SAS Key Name
+
+On your **Event Hubs Namespace** page, click **Settings > Shared access policies**. You will see a list of Shared access policies. The SAS Key that we are looking for is **RootManageSharedAccessKey**, which is the **SAS Key Name. Write it down.
+
+![2-05-select-sas.png](./images/205selectsas.png)
+
+### SAS Key Value
+
+Next, click on the **RootManageSharedAccessKey** to get the SAS Key Value. And press the **Copy to clipboard** icon to copy the **Primary key**, in this case `pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=`.
+
+![2-07-sas-key-value.png](./images/207saskeyvalue.png)
+
+### Destination Values Summary
+
+At this point you should have identified all the values needed to define the Azure Event Hub destination in Adobe Experience Platform Real-time CDP.
+
+| Destination Attribute Name |  Destination Attribute Value | Example Value |
+|---|---|---|
+|sasKeyName|SAS Key Name|RootManageSharedAccessKey|  
+|sasKey|SAS Key Value|pqb1jEC0KLazwZzIf2gTHGr75Z+PdkYgv+AEhObbQEY=|
+|namespace|Event Hubs Namespace|`--aepUserLdap---aep-enablement`|
+|eventHubName|Event Hub|`--aepUserLdap---aep-enablement-event-hub`| 
+
+## Create Azure Event Hub Destination in Adobe Experience Platform
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -42,29 +74,31 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-Go to **Segments**. Click the **+ Create segment** button.
+Go to **Destinations**, then go to **Catalog**. Select **Cloud Storage**, go to **Azure Event Hubs** and click **Set up**.
 
-![Data Ingestion](./images/seg.png)
+![2-08-list-destinations.png](./images/208listdestinations.png)
 
-Name your segment `--aepUserLdap-- - Interest in Equipment` and add the page name experience event:
+Select **Standard authentication**. Fill in the connection details that you have collected in the previous exercise. Next, click **Connect to Destination**.
 
-Click on **Events**, and drag and drop **XDM ExperienceEvent > Web > Web page details > Name**. Enter **equipment** as the value:
+![2-09-destination-values.png](./images/209destinationvalues.png)
 
-![4-05-create-ee-2.png](./images/4-05-create-ee-2.png)
+If your credentials were correct, you'll see a confirmation: **Connected**. 
 
-Drag and drop **XDM ExperienceEvent > `--aepTenantId--` > demoEnvironment > brandName**. Enter `--aepUserLdap--` as the value, set the comparison parameter to **contains** and click **Save**:
+![2-09-destination-values.png](./images/209destinationvaluesa.png)
 
-![4-05-create-ee-2-brand.png](./images/4-05-create-ee-2-brand.png)
+You now need to enter the name and description in the format `--aepUserLdap---aep-enablement`. Enter the **eventHubName** (see previous exercise, it looks like this: `--aepUserLdap---aep-enablement-event-hub`) and click **Next**.
+  
+![2-10-create-destination.png](./images/210createdestination.png)
 
-### PQL Definition
+You can optionally select a Data Governance Policy. Click **Save & exit**.
 
-The PQL of your segment looks like:
+![2-11-save-exit-activation.png](./images/211saveexitactivation.png)
 
-```code
-CHAIN(xEvent, timestamp, [C0: WHAT(web.webPageDetails.name.equals("equipment", false) and _experienceplatform.demoEnvironment.brandName.contains("--aepUserLdap--", false))])
-```
+Your destination is now created and available in Adobe Experience Platform.
 
-Next Step: [2.4.4 Activate segment](./ex4.md)
+![2-12-destination-created.png](./images/212destinationcreated.png)
+
+Next Step: [2.4.4 Create an audience](./ex4.md)
 
 [Go Back to Module 2.4](./segment-activation-microsoft-azure-eventhub.md)
 
