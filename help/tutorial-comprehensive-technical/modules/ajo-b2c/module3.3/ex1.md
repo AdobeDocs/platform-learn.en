@@ -86,9 +86,9 @@ You'll now see all fields of the Placement:
 
 ## 3.3.1.4 Decision Rules
 
-A Rule (also called eligibility rule) is the equivalent of a **Segment**. A Rule is in fact a Segment itself with the only difference that a Rule can be used with an Offer to provide the best offer to a profile in Adobe Experience Platform.
+A Rule (also called eligibility rule) is the equivalent of an **audience**. A Rule is in fact an audience itself with the only difference that a Rule can be used with an Offer to provide the best offer to a profile in Adobe Experience Platform.
 
-As you already know how to define Segments based on the previous enablement modules, let's just quickly revisit the Segmentation Environment:
+As you already know how to define audiences based on the previous enablement modules, let's just quickly revisit the Segmentation Environment:
 
 Go to **Rules**. Click **+ Create Rule**.
 
@@ -100,7 +100,7 @@ You'll then see the Segmentation environment of Adobe Experience Platform.
 
 You can now access all fields that are part of the Union Schema for the Real-time Customer Profile and can build out any rule.
 
-It's also interesting to know that you can simply reuse already defined segments in Adobe Experience Platform, by going to **Audiences** > ``--aepTenantId--``.
+It's also interesting to know that you can simply reuse already defined audiences in Adobe Experience Platform, by going to **Audiences** > ``--aepTenantId--``.
 
 ![Decision Rule](./images/decisionruleaud.png)
 

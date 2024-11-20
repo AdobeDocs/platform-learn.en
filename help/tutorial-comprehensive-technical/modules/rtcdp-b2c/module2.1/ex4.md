@@ -1,12 +1,12 @@
 ---
-title: Foundation - Real-time Customer Profile - Create a segment - UI
-description: Foundation - Real-time Customer Profile - Create a segment - UI
+title: Foundation - Real-time Customer Profile - Create an audience - UI
+description: Foundation - Real-time Customer Profile - Create an audience - UI
 kt: 5342
 doc-type: tutorial
 ---
-# 2.1.4 Create a segment - UI
+# 2.1.4 Create an audience - UI
 
-In this exercise, you'll create a segment by making use of Adobe Experience Platform's Segment Builder.
+In this exercise, you'll create an audience by making use of Adobe Experience Platform's Audience Builder.
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
@@ -16,7 +16,7 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In the menu on the left side, go to **Audiences**. On this page, you can see an overview of all existing segments. Click on the **+ Create audience** button to start creating a new segment.
+In the menu on the left side, go to **Audiences**. On this page, you can see an overview of all existing audiences. Click on the **+ Create audience** button to start creating a new audience.
 
 ![Segmentation](./images/menuseg.png)
 
@@ -24,7 +24,7 @@ Select **Build rule** and click **Create**.
 
 ![Segmentation](./images/menusegbr.png)
 
-Once you're in the new segment builder, you immediately notice the **Attributes** menu option and the **XDM Individual Profile** reference.
+Once you're in the new audience builder, you immediately notice the **Attributes** menu option and the **XDM Individual Profile** reference.
 
 ![Segmentation](./images/segmentationui.png)
 

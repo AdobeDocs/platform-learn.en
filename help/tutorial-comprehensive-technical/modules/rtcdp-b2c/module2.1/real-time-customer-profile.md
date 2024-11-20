@@ -18,7 +18,6 @@ In this module, you'll do a deep dive into the Real-time Customer Profile and Id
 ## Prerequisites
 
 - Access to [Adobe Experience Platform](https://experience.adobe.com/platform)
-- Access to [https://public.aepdemo.net](https://public.aepdemo.net)
 - **Download these assets**: 
   - [Postman collections](./../../../assets/postman/postman_profile.zip)
 

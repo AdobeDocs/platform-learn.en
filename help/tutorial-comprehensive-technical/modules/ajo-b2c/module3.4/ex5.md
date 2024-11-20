@@ -92,14 +92,14 @@ In the left menu, under **Events**, search for your ldap. You'll find the previo
 
 ![Journey Optimizer](./images/bej12.png)
 
-As you can see, a **Read Segment** activity has automatically been added to the canvas. This is because the business events only send a trigger for the journey to read a specific segment, which will then retrieve the list of profiles for that journey.
+As you can see, a **Read Audience** activity has automatically been added to the canvas. This is because the business events only send a trigger for the journey to read a specific audience, which will then retrieve the list of profiles for that journey.
 
-Click the **Read Segment** activity.
-The **Read Segment** configuration expects you to select the segment that you want to notify of the business event that just happened. Click the **Select a segment** field.
+Click the **Read Audience** activity.
+The **Read Audience** configuration expects you to select the audience that you want to notify of the business event that just happened. Click the **Select an audience** field.
 
 ![Journey Optimizer](./images/bej13.png)
 
-In the **Choose a segment** popup, search for your ldap and select the segment you created in [Module 2.3 - Real-time CDP - Build a segment and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--aepUserLdap-- - Interest in PROTEUS FITNESS JACKSHIRT`. for example: vangeluw - Interest in PROTEUS FITNESS JACKSHIRT. Click **Save**.
+In the **Choose an audience** popup, search for your ldap and select the audience you created in [Module 2.3 - Real-time CDP - Build an audience and take action](./../../../modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md) named `--aepUserLdap-- - Interest in Galaxy S24`. Click **Save**.
 
 ![Journey Optimizer](./images/bej14.png)
 

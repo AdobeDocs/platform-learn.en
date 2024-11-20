@@ -78,7 +78,7 @@ You can find a lot of interesting videos from our Tech Academy events, from Boot
 - **Description:** In this foundational module, you will ingest data from the website into Platform
 - **Time Investment:** 120 minutes
 
-[1.3 Federated Audience Composiiton](./modules/datacollection/module1.3/fac.md)
+[1.3 Federated Audience Composition](./modules/datacollection/module1.3/fac.md)
 
 - **Audience:** Data Analyst, Data Engineer, Data Architect
 - **Prerequisites:** Access to Adobe Experience Platform

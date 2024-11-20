@@ -1,6 +1,6 @@
 ---
-title: Real-time CDP - Build a segment and take action - Configure an Advertising Destination like Google DV360
-description: Real-time CDP - Build a segment and take action - Configure an Advertising Destination like Google DV360
+title: Real-time CDP - Build an audience and take action - Configure an Advertising Destination like Google DV360
+description: Real-time CDP - Build an audience and take action - Configure an Advertising Destination like Google DV360
 kt: 5342
 doc-type: tutorial
 ---
@@ -8,13 +8,13 @@ doc-type: tutorial
 
 >[!IMPORTANT]
 >
->The below content is intended as FYI - You do **NOT** have to configure a new destination for DV360. The destination has already been created and you can use it in the next exercise.
+>The below content is partially intended as FYI - If such a destination already exists in your instance, then you do **NOT** have to configure a new destination for DV360. The destination has already been created in that case and you can use it in the next exercise.
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. You can do this by clicking the text **[!UICONTROL Production Prod]** in the blue line on top of your screen. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
@@ -55,9 +55,9 @@ After creating the destination, you'll see this. You can optionally select a dat
 ![RTCDP](./images/rtcdpcreatedest1.png)
 
 You'll then see a list of available destinations. 
-In the next exercise, you'll connect the segment you built in the previous exercise to the Google DV360 destination.
+In the next exercise, you'll connect the audience you built in the previous exercise to the Google DV360 destination.
 
-Next Step: [2.3.3 Take Action: send your segment to DV360](./ex3.md)
+Next Step: [2.3.3 Take Action: send your audience to DV360](./ex3.md)
 
 [Go Back to Module 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

@@ -41,13 +41,11 @@ Next, you need to select one of your identities and the according namespace, and
 | Experience Cloud ID (ECID)          | 79943948563923140522865572770524243489 |
 | Experience Cloud ID (ECID)          | 70559351147248820114888181867542007989 |
 | Email ID          | woutervangeluwe+18112024-01@gmail.com|
-| Mobile Number ID          | +32473622044+18112024-01|
-
-When the customer calls your call center, the phone number can be used to identify the customer. So in this exercise, you'll use the phone number to retrieve the customer's profile in the CX App.
+| Mobile Number ID          | +32473622044+18112024-01| 
 
 ![Demo](./images/19.png)
 
-You'll now see the information that would ideally be displayed in the Call Center, so that the Call Center employees have all relevant information available immediately when speaking to a customer.
+You'll now see the information that would ideally be displayed in the Call Center, so that the Call Center agents have all relevant information available immediately when speaking to a customer.
 
 ![Demo](./images/20.png)
 

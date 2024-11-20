@@ -9,8 +9,6 @@ exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
 ---
 # 2.3 Real-time CDP - Build a segment and take action
 
-**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Alberto De Caro](https://www.linkedin.com/in/albertodecaro/), [Benedikt Wedenik](https://www.linkedin.com/in/benedikt-wedenik/)**
-
 In this module, you'll configure a streaming segment and activate the segment to multiple destinations.
 
 ## Learning Objectives
@@ -32,25 +30,25 @@ In this module, you'll configure a streaming segment and activate the segment to
 
 ## Exercises
 
-[2.3.1 Create a segment](./ex1.md)
+[2.3.1 Create an audience](./ex1.md)
 
-Learn how to create a segment.
+Learn how to create an audience.
 
 [2.3.2 Review how to configure DV360 Destination using Destinations](./ex2.md)
 
 Learn how to configure an advertising destination using the Real-Time CDP UI.
 
-[2.3.3 Take Action: send your segment to DV360](./ex3.md)
+[2.3.3 Take Action: send your audience to DV360](./ex3.md)
 
-Connect the segment you built in exercise 6.1 to the destination DV360.
+Connect the audience you built to the destination DV360.
 
-[2.3.4 Take Action: send your segment to an S3-destination](./ex4.md)
+[2.3.4 Take Action: send your audience to an S3-destination](./ex4.md)
 
-Use the segment you built in exercise 6.1 and send it to an S3-destination, typically used for Email Marketing-destinations.
+Use the audience you created and send it to an S3-destination, typically used for Email Marketing-destinations.
 
-[2.3.5 Take Action: send your segment to Adobe Target](./ex5.md)
+[2.3.5 Take Action: send your audience to Adobe Target](./ex5.md)
 
-Use the segment you built in exercise 6.1 to configure an Experience Targeting Activity in Adobe Target.
+Use the audience you created to configure an Experience Targeting Activity in Adobe Target.
 
 [2.3.6 External Audiences](./ex6.md)
 
