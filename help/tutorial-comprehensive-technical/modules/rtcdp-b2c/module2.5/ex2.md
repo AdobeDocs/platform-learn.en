@@ -9,9 +9,9 @@ exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
 
 ## 2.5.2.1 Update your Datastream
 
-In [Exercise 0.2](./../../gettingstarted/gettingstarted/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name `--aepUserLdap-- - Demo System Datastream`.
+In [Getting Started](./../../gettingstarted/gettingstarted/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name `--aepUserLdap-- - Demo System Datastream`.
 
-In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with your **[!DNL Data Collection Server property]**.
+In this exercise, you need to configure that **[!UICONTROL Datastream]** to work with your **Data Collection Server property**.
 
 To do that, go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). You'll then see this. In the left menu, click **[!UICONTROL Datastreams]**.
 

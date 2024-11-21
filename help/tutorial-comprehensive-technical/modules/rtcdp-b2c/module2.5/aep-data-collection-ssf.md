@@ -7,20 +7,14 @@ exl-id: aa3ab1eb-6fee-4ea9-9a0d-0d8ca803d7c2
 ---
 # 2.5 Real-Time CDP Connections: Event Forwarding
 
-**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/), [Clement Delalande](https://www.linkedin.com/in/clement-delalande/)**
-
 In this module, you'll use the previously configured datasets, schemas and Adobe Experience Platform Data Collection Client property to collect data, and then forward that data server-side to an endpoint of choice.
 
 In this module, you'll:
 
-- Create a Adobe Experience Platform Data Collection Server property
+- Create an Adobe Experience Platform Data Collection Server property
 - Install and use the Adobe Cloud Connector extension in Adobe Experience Platform Data Collection
 - Create a Google Function endpoint and stream data to it
 - Create an AWS endpoint and stream data to it
-
-Watch this video to understand the value, customer journey and configuration process:
-
->[!VIDEO](https://video.tv.adobe.com/v/331987?quality=12&learn=on)
 
 ## Learning Objectives
 

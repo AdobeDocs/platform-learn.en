@@ -71,11 +71,36 @@ To verify, open the Profile Viewer panel. You should now be a member of the `--a
 
 Switch back to Visual Studio Code and look at your **TERMINAL** tab, you should see a list of audiences for your specific **ECID**. This activation payload is delivered to your event hub as soon as you qualify for the `--aepUserLdap-- - Interest in Plans` audience. 
 
+![6-06-vsc-activation-realized.png](./images/cs3.png)
+
 When you take a closer look a the audience payload, you can see that `--aepUserLdap-- - Interest in Plans` is in status **realized**. 
 
-An audience status of **realized** means that your profile is part of the audience, while the **exited** status means that our profile has been removed from the audience.
+```json
+{
+  "identityMap": {
+    "ecid": [
+      {
+        "id": "36281682065771928820739672071812090802"
+      }
+    ]
+  },
+  "segmentMembership": {
+    "ups": {
+      "94db5aed-b90e-478d-9637-9b0fad5bba11": {
+        "createdAt": 1732129904025,
+        "lastQualificationTime": "2024-11-21T07:33:52Z",
+        "mappingCreatedAt": 1732130611000,
+        "mappingUpdatedAt": 1732130611000,
+        "name": "vangeluw - Interest in Plans",
+        "status": "realized",
+        "updatedAt": 1732129904025
+      }
+    }
+  }
+}
+```
 
-![6-06-vsc-activation-realized.png](./images/cs3.png)
+An audience status of **realized** means that your profile is part of the audience, while the **exited** status means that our profile has been removed from the audience.
 
 Next Step: [Summary and benefits](./summary.md)
 
