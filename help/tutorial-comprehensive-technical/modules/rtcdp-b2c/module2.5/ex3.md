@@ -6,17 +6,19 @@ doc-type: tutorial
 ---
 # 2.5.3 Create and configure a custom webhook
 
-## 2.5.3.1 Create your custom webhook
+## Create your custom webhook
 
-Go to [https://webhook.site/](https://webhook.site/). You'll see something like this:
+Go to [https://pipedream.com/requestbin](https://pipedream.com/requestbin). You already used this application in [Exercise 2.3.7 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+
+If you haven't used that service yet, create an account and then create a workspace. Once the workspace is created, you'll see something similar to this. 
+
+Click **copy** to copy the url. You'll need to specify this url in the next exercise. The URL in this example is `https://eodts05snjmjz67.m.pipedream.net`.
 
 ![demo](./images/webhook1.png)
 
-You'll see your unique URL, which looks like this: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`.
-
 This website has now created this webhook for you, and you'll be able to configure this webhook in your **[!DNL Event Forwarding property]** to start testing the forwarding of events.
 
-## 2.5.3.2 Update your Event Forwarding property: Create a Data Element
+## Update your Event Forwarding property: Create a Data Element
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and go to **Event Forwarding**. Search your Event Forwarding property and click it to open it.
 
@@ -35,11 +37,13 @@ Make the following selection:
 - As the **Name**, enter **XDM Event**.
 - As the **Extension**, select **Core**.
 - As the **Data Element Type**, select **Path**.
-- As the **Path**, enter **arc.event.xdm**. By entering this path, you'll be filtering out the **XDM** section from the event payload that is sent by the website or mobile app into the Adobe Edge.
+- As the **Path**, select **Read data from XDM (arc.event.xdm)**. By selecting this path, you'll be filtering out the **XDM** section from the event payload that is sent by the website or mobile app into the Adobe Edge.
+
+![Adobe Experience Platform Data Collection SSF](./images/de3.png)
 
 You'll now have this. Click **Save**.
 
-![Adobe Experience Platform Data Collection SSF](./images/de3.png)
+![Adobe Experience Platform Data Collection SSF](./images/de3a.png)
 
 >[!NOTE]
 >
@@ -47,7 +51,7 @@ You'll now have this. Click **Save**.
 >
 >In the above path, a reference is made to **event**. **event** stands for a unique event and Adobe Experience Platform Data Collection Server will always evaluate every event individually. Sometimes, you may see a reference to **events** in the payload sent by Web SDK Client Side, but in Adobe Experience Platform Data Collection Server, every event is evaluated individually.
 
-## 2.5.3.3 Update your Adobe Experience Platform Data Collection Server property: Create a Rule
+## Update your Adobe Experience Platform Data Collection Server property: Create a Rule
 
 In the left menu, go to **Rules**. Click **Create New Rule**.
 
@@ -69,7 +73,7 @@ That should give you this **Name**: **Adobe Cloud Connector - Make Fetch Call**.
 Next, configure the following:
 
 - Change the request method from GET to **POST**
-- Enter the URL of the custom webhook you created in one of the previous steps on the [https://webhook.site/](https://webhook.site/) website, which looks like this: `https://webhook.site/585126a1-41fc-4721-864b-d4aa8c268a1d`
+- Enter the URL of the custom webhook you created in one of the previous steps, which looks like this: `https://eodts05snjmjz67.m.pipedream.net`
 
 You should now have this. Next, go to **Body**.
 
@@ -104,19 +108,11 @@ After a couple of minutes, you'll see that the deployment is done and ready to b
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl14.png)
 
-## 2.5.3.4 Test your configuration
+## Test your configuration
 
-Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-You can now follow the below flow to access the website. Click **Integrations**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-On the **Integrations** page, you need to select the Data Collection property that was created in exercise 0.1. 
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
@@ -134,7 +130,7 @@ Select your account type and complete the login process.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+You'll then see your website loaded in an incognito browser window. For every exercise, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
@@ -142,15 +138,15 @@ When you open up your browser Developer View, you can inspect Network requests a
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook1.png)
 
-If you select the raw payload, go to [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) and paste the payload. Click **Make Pretty**. You'll then see the JSON payload, the **events** object and the **xdm** object. In one of the previous steps, when you defined the Data Element, you used the reference **arc.event.xdm**, which will result in you parsing out the **xdm** object of this payload.
+If you select the raw payload, go to [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) and paste the payload. Click **Minify / Beautify**. You'll then see the JSON payload, the **events** object and the **xdm** object. In one of the previous steps, when you defined the Data Element, you used the reference **arc.event.xdm**, which will result in you parsing out the **xdm** object of this payload.
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook2.png)
 
-Switch your view to the website [https://webhook.site/](https://webhook.site/) which you used in one of the previous steps. You should now have a view similar to this one, with network requests being shown in the left menu. You're seeing the **xdm** payload that was filter out of the network request that was shown above. 
+Switch your view to your custom webhook [https://webhook.site/](https://webhook.site/) which you used in one of the previous steps. You should now have a view similar to this one, with network requests being shown in the left menu. You're seeing the **xdm** payload that was filter out of the network request that was shown above. 
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook3.png)
 
-Scroll down a bit in the payload to find the page name, which in this case is **vangeluw-OCUC** (which is the project name of your demo website).
+Scroll down a bit in the payload to find the page name, which in this case is **home**.
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook4.png)
 
@@ -158,7 +154,7 @@ If you now navigate across the website, you'll see additional network requests b
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook5.png)
 
-You've now configured the Server Side Forwarding of Web SDK/XDM payloads to an external custom webhook. In the next exercises, you'll configure a similar approach, and you'll be sending that same data towards Google and AWS environments.
+You've now configured the server side Event Forwarding of Web SDK/XDM payloads to an external custom webhook. In the next exercises, you'll configure a similar approach, and you'll be sending that same data towards Google and AWS environments.
 
 Next Step: [2.5.4 Create and configure a Google Cloud Function](./ex4.md)
 
