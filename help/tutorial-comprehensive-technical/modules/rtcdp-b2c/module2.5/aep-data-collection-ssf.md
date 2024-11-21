@@ -45,13 +45,13 @@ In this exercise, you'll update your existing Datastream to make data that is co
 
 In this exercise, you'll create and configure a custom webhook and you'll start forwarding data that is collected by Web SDK to that custom webhook.
 
-[2.5.4 Create and configure a Google Cloud Function](./ex4.md)
+[2.5.4 Forward events to GCP Pub/Sub](./ex4.md)
 
 In this exercise, you'll create and configure a Google Cloud Function and you'll start forwarding data that is collected by Web SDK to Google.
 
-[2.5.5 Forward events towards the AWS ecosystem](./ex5.md)
+[2.5.5 Forward events to AWS Kinesis & AWS S3](./ex5.md)
 
-In this exercise, you'll configure your AWS environment using AWS API Gateway, AWS Kinesis, AWS Firehose and AWS S3 after which you'll start forwarding event data that is collected by Web SDK.
+In this exercise, you'll configure your AWS environment using AWS IAM, AWS Kinesis, AWS Firehose and AWS S3 after which you'll start forwarding event data that is collected by Web SDK.
 
 [Summary and benefits](./summary.md)
 

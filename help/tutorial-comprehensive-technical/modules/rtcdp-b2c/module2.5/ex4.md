@@ -5,208 +5,81 @@ kt: 5342
 doc-type: tutorial
 exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
 ---
-# 2.5.4 Create and configure a Google Cloud Function
+# 2.5.4 Forward events to GCP Pub/Sub
 
-## 2.5.4.1 Create your Google Cloud Function
+>[!NOTE]
+>
+>For this exercise, you need access to a Google Cloud Platform environment. If you don't have access to GCP yet, create a new account using your personal email address. 
 
-Go to [https://console.cloud.google.com/](https://console.cloud.google.com/). Go to **Cloud Functions**.
+## Create your Google Cloud Pub/Sub topic
+
+Go to [https://console.cloud.google.com/](https://console.cloud.google.com/). In the search bar, enter `pub/sub`. Click the search result **Pub/Sub - Global real-time messaging**.
 
 ![GCP](./images/gcp1.png)
 
-You'll then see this. Click **CREATE FUNCTION**.
+You'll then see this. Click **CREATE TOPIC**.
 
 ![GCP](./images/gcp2.png)
 
-You'll then see this.
+You'll then see this. For your Topic ID, use `--aepUserLdap---event-forwarding`. Click **Create**.
 
 ![GCP](./images/gcp6.png)
 
-Make the following choices:
-
-- **Function name**: `--aepUserLdap---event-forwarding`
-- **Region**: select any region
-- **Trigger Type**: select **HTTP**
-- **Authentication**: select **Allow unauthenticated invocations**
-
-You should now have this. Click **SAVE**.
+Your topic is now created. Click the topic's **Subscription ID**.
 
 ![GCP](./images/gcp7.png)
 
-Click **NEXT**.
+You'll then see this. Copy the **Topic name** to your clipboard and store it, as you'll need it in the next exercises.
 
 ![GCP](./images/gcp8.png)
 
-You'll then see this:
+Let's go to Adobe Experience Platform Data Collection Event Forwarding now, to update your Event Forwarding property to start forwarding events to Pub/Sub.
 
-![GCP](./images/gcp9.png)
 
-Make the following choices:
+## Update your Event Forwarding property: Secrets
 
-- **Runtime**: select **Node.js 16** (or more recent)
-- **Entry point**: enter **helloAEP**
+**Secrets** in Event Forwarding properties are used to store credentials that will be used to authenticate against external API's. In this example, you need to configure a secret to store your Google Cloud Platform OAuth token, which will be used to authenticate when using Pub/Sub to stream data towards GCP.
 
-Click **ENABLE API** to enable **Cloud Build API**. You'll then see a new window. In that new window, click **ENABLE** again.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and go to **Secrets**. Click **Create New Secret**.
 
-![GCP](./images/gcp10.png)
+![Adobe Experience Platform Data Collection SSF](./images/secret1.png)
 
-You'll then see this. Click **Enable**.
+You'll then see this. Follow these instructions:
 
-![GCP](./images/gcp11.png)
+- Name: use `--aepUserLdap---gcp-secret`
+- Target Environment: select **Development**
+- Type: **Google OAuth 2**
+- Check the checkbox for **Pub/Sub**
 
-Once **Cloud Build API** has been enabled, you'll see this.
+Click **Create Secret**.
 
-![GCP](./images/gcp12.png)
+![Adobe Experience Platform Data Collection SSF](./images/secret2.png)
 
-Go back to your **Cloud Function**.
-In your Cloud Function Inline Editor, make sure you have the following code there:
+After clicking **Create Secret**, you'll see a popup to set up the authentication between your Event Forwarding property's secret and Google. Click **Create & Authorize secret `--aepUserLdap---gcp-secret` with Google**.
 
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
+![Adobe Experience Platform Data Collection SSF](./images/secret3.png)
 
-Next, click **DEPLOY**.
+Click to select your Google account.
 
-![GCP](./images/gcp13.png)
+![Adobe Experience Platform Data Collection SSF](./images/secret4.png)
 
-You'll then see this. Your Cloud Function is now being created. This may take a couple of minutes.
+Click **Continue**.
 
-![GCP](./images/gcp14.png)
+>[!NOTE]
+>
+>Your popup message may vary. Please authorize/allow the requested access in order to continue with the exercise.
 
-Once your function is created and running, you'll see this. Click on your function's name to open it.
+![Adobe Experience Platform Data Collection SSF](./images/secret5.png)
 
-![GCP](./images/gcp15.png)
+After successful authentication, you'll see this.
 
-You'll then see this. Go to **TRIGGER**. You'll then see the **Trigger URL** which is what you'll use to define the endpoint in Launch Server Side.
+![Adobe Experience Platform Data Collection SSF](./images/secret6.png)
 
-![GCP](./images/gcp16.png)
+Your secret is now successfully configured and can be used in a data element.
 
-Copy the Trigger URL, which looks like this: **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**.
+## Update your Event Forwarding property: Data Element
 
-In the next steps, you'll configure Adobe Experience Platform Data Collection Server to stream specific information about **Page Views** to your Google Cloud Function. Instead of just forwarding the full payload as-is, you'll only send things like **ECID**, **timestamp** and **Page Name** to your Google Cloud Function.
-
-Here's an example of a payload that you'll need to parse to filter out the above mentioned variables:
-
-```json
-{
-  "events": [
-    {
-      "xdm": {
-        "eventType": "web.webpagedetails.pageViews",
-        "web": {
-          "webPageDetails": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC",
-            "name": "vangeluw-OCUC",
-            "viewName": "vangeluw-OCUC",
-            "pageViews": {
-              "value": 1
-            }
-          },
-          "webReferrer": {
-            "URL": "https://builder.adobedemo.com/run/vangeluw-OCUC/equipment"
-          }
-        },
-        "device": {
-          "screenHeight": 1080,
-          "screenWidth": 1920,
-          "screenOrientation": "landscape"
-        },
-        "environment": {
-          "type": "browser",
-          "browserDetails": {
-            "viewportWidth": 1920,
-            "viewportHeight": 451
-          }
-        },
-        "placeContext": {
-          "localTime": "2022-02-23T06:51:07.140+01:00",
-          "localTimezoneOffset": -60
-        },
-        "timestamp": "2022-02-23T05:51:07.140Z",
-        "implementationDetails": {
-          "name": "https://ns.adobe.com/experience/alloy/reactor",
-          "version": "2.8.0+2.9.0",
-          "environment": "browser"
-        },
-        "_experienceplatform": {
-          "identification": {
-            "core": {
-              "ecid": "08346969856929444850590365495949561249"
-            }
-          },
-          "demoEnvironment": {
-            "brandName": "vangeluw-OCUC"
-          },
-          "interactionDetails": {
-            "core": {
-              "channel": "web"
-            }
-          }
-        }
-      },
-      "query": {
-        "personalization": {
-          "schemas": [
-            "https://ns.adobe.com/personalization/html-content-item",
-            "https://ns.adobe.com/personalization/json-content-item",
-            "https://ns.adobe.com/personalization/redirect-item",
-            "https://ns.adobe.com/personalization/dom-action"
-          ],
-          "decisionScopes": [
-            "eyJ4ZG06YWN0aXZpdHlJZCI6Inhjb3JlOm9mZmVyLWFjdGl2aXR5OjE0YzA1MjM4MmUxYjY1MDUiLCJ4ZG06cGxhY2VtZW50SWQiOiJ4Y29yZTpvZmZlci1wbGFjZW1lbnQ6MTRiZjA5ZGM0MTkwZWJiYSJ9",
-            "__view__"
-          ]
-        }
-      }
-    }
-  ],
-  "query": {
-    "identity": {
-      "fetch": [
-        "ECID"
-      ]
-    }
-  },
-  "meta": {
-    "state": {
-      "domain": "adobedemo.com",
-      "cookiesEnabled": true,
-      "entries": [
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_identity",
-          "value": "CiYwODM0Njk2OTg1NjkyOTQ0NDg1MDU5MDM2NTQ5NTk0OTU2MTI0OVIPCPn66KfyLxgBKgRJUkwx8AH5-uin8i8="
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent_check",
-          "value": "1"
-        },
-        {
-          "key": "kndctr_907075E95BF479EC0A495C73_AdobeOrg_consent",
-          "value": "general=in"
-        }
-      ]
-    }
-  }
-}
-```
-
-These are the fields that contain the information that needs to be parsed out:
-
-- ECID: **events.xdm._experienceplatform.identification.core.ecid**
-- timestamp: **timestamp**
-- Page Name: **events.xdm.web.webPageDetails.name**
-
-Let's go to Adobe Experience Platform Data Collection Server now, to configure the data elements to make that possible.
-
-## 2.5.4.2 Update your Event Forwarding property: Data Elements
+In order to use your secret in your Event Forwarding property, you need to create a data element which will store the value of the secret.
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and go to **Event Forwarding**. Search your Event Forwarding property and click it to open it.
 
@@ -216,70 +89,44 @@ In the left menu, go to **Data Elements**. Click **Add Data Element**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/de1gcp.png)
 
-You'll then see a new data element to configure.
+Configure your data element like this:
 
-![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
+- Name: **GCP Secret**
+- Extension: **Core**
+- Data Element Type: **Secret**
+- Development Secret: select the secret you created, which is named `--aepUserLdap---gcp-secret`
 
-Make the following selection:
+Click **Save**
 
-- As the **Name**, enter **customerECID**.
-- As the **Extension**, select **Core**.
-- As the **Data Element Type**, select **Path**.
-- As the **Path**, enter `arc.event.xdm.--aepTenantId--.identification.core.ecid`. By entering this path, you'll be filtering out the field **ecid** from the event payload that is sent by the website or mobile app into the Adobe Edge.
+![Adobe Experience Platform Data Collection SSF](./images/secret7.png)
 
->[!NOTE]
->
->In the above and below paths, a reference is made to **arc**. **arc** stands for Adobe Resource Context and **arc** always stands for the highest available object that is available in the Server Side context. Enrichments and transformations may be added to that **arc** object using Adobe Experience Platform Data Collection Server functions.
->
->In the above and below paths, a reference is made to **event**. **event** stands for a unique event and Adobe Experience Platform Data Collection Server will always evaluate every event individually. Sometimes, you may see a reference to **events** in the payload sent by Web SDK Client Side, but in Adobe Experience Platform Data Collection Server, every event is evaluated individually.
+## Update your Event Forwarding property: Extension
 
-You'll now have this. Click **Save**.
+With your Secret and Data Element configured, you can now set up the extension for Google Cloud Platform in your Event Forwarding property.
 
-![Adobe Experience Platform Data Collection SSF](./images/gcdpde1.png)
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/), go to **Event Forwarding** and open your Event Forwarding property.
 
-Click **Add Data Element**.
+![Adobe Experience Platform Data Collection SSF](./images/prop1.png)
 
-![Adobe Experience Platform Data Collection SSF](./images/addde.png)
+Next, go to **Extensions**, to **Catalog**. Click the **Google Cloud Platform** extension and click **Install**.
 
-You'll then see a new data element to configure.
+![Adobe Experience Platform Data Collection SSF](./images/gext2.png)
 
-![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
+You'll then see this. Click the Data Element icon.
 
-Make the following selection:
+![Adobe Experience Platform Data Collection SSF](./images/gext3.png)
 
-- As the **Name**, enter **eventTimestamp**.
-- As the **Extension**, select **Core**.
-- As the **Data Element Type**, select **Path**.
-- As the **Path**, enter **arc.event.xdm.timestamp**. By entering this path, you'll be filtering out the field **timestamp** from the event payload that is sent by the website or mobile app into the Adobe Edge.
+Select the data element you created in the previous exercise, which is named **GCP Secret**. Click **Select**.
 
-You'll now have this. Click **Save**.
+![Adobe Experience Platform Data Collection SSF](./images/gext4.png)
 
-![Adobe Experience Platform Data Collection SSF](./images/gcdpde2.png)
+You'll then see this. Click **Save**.
 
-Click **Add Data Element**.
+![Adobe Experience Platform Data Collection SSF](./images/gext5.png)
 
-![Adobe Experience Platform Data Collection SSF](./images/addde.png)
+## Update your Event Forwarding property: Update a Rule
 
-You'll then see a new data element to configure.
-
-![Adobe Experience Platform Data Collection SSF](./images/de2gcp.png)
-
-Make the following selection:
-
-- As the **Name**, enter **pageName**.
-- As the **Extension**, select **Core**.
-- As the **Data Element Type**, select **Path**.
-- As the **Path**, enter **arc.event.xdm.web.webPageDetails.name**. By entering this path, you'll be filtering out the field **name** from the event payload that is sent by the website or mobile app into the Adobe Edge.
-
-You'll now have this. Click **Save**.
-
-![Adobe Experience Platform Data Collection SSF](./images/gcdpde3.png)
-
-You now have these data elements created:
-
-![Adobe Experience Platform Data Collection SSF](./images/de3gcp.png)
-
-## 2.5.4.3 Update your Event Forwarding property: Update a Rule
+Now that your Google Cloud Platform extension is configured, you can define a rule to start forwarding event data to your Pub/Sub topic. To do that, you'll need to update your **All Pages** rule that you created in one of the previous exercises.
 
 In the left menu, go to **Rules**. In the previous exercise, you created the rule **All Pages**. Click that rule to open it.
 
@@ -289,49 +136,44 @@ You'll then this. Click the **+** icon under **Actions** to add a new action.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl2gcp.png)
 
-You'll then see this.
+You'll then see this. Make the following selection:
 
-![Adobe Experience Platform Data Collection SSF](./images/rl4gcp.png)
+- Select the **Extension**: **Google Cloud Platform**.
+- Select the **Action Type**: **Send Data to Cloud Pub/Sub**.
 
-Make the following selection:
-
-- Select the **Extension**: **Adobe Cloud Connector**.
-- Select the **Action Type**: **Make Fetch Call**.
-
-That should give you this **Name**: **Adobe Cloud Connector - Make Fetch Call**. You should now see this:
+That should give you this **Name**: **Google Cloud Platform - Send Data to Cloud Pub/Sub**. You should now see this:
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl5gcp.png)
 
-Next, configure the following:
+You now need to configure the Pub/Sub topic that you created earlier. 
 
-- Change the request protocol from GET to **POST**
-- Enter the URL of the Google Cloud Function you created in one of the previous steps which looks like this: **https://europe-west1-dazzling-pillar-273812.cloudfunctions.net/vangeluw-event-forwarding**
+You can find the **Topic name** here, copy it.
 
-You should now have this. Next, go to **Body**.
+![GCP](./images/gcp8.png)
+
+Paste the **Topic name** in your Rule configuration. Next, click the Data Element icon next to the **Data (required)** field.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl6gcp.png)
 
-You'll then see this. Click the radio button for **JSON**.
+Select **XDM Event** and click **Select**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl7gcp.png)
 
-Configure the **Body** as follows:
-
-| KEY | VALUE | 
-|--- |--- |
-|customerECID|{{customerECID}}|
-|pageName|{{pageName}}|
-|eventTimestamp|{{eventTimestamp}}|
-
 You'll then see this. Click **Keep Changes**.
+
+![Adobe Experience Platform Data Collection SSF](./images/rl8gcp.png)
+
+Click **Save**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl9gcp.png)
 
-You'll then see this. Click **Save**.
+You'll then see this.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl10gcp.png)
 
-You've now update your existing rule in a Adobe Experience Platform Data Collection Server property. Go to **Publishing Flow** to publish your changes. Open your Development library **Main** by clicking **Edit** as indicated.
+## Publish your changes
+
+Your configuration is now finished. Go to **Publishing Flow** to publish your changes. Open your Development library **Main** by clicking **Edit** as indicated.
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl12gcp.png)
 
@@ -343,19 +185,11 @@ After a couple of minutes, you'll see that the deployment is done and ready to b
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl14.png)
 
-## 2.5.3.4 Test your configuration
+## Test your configuration
 
-Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](../../gettingstarted/gettingstarted/images/web8.png)
-
-You can now follow the below flow to access the website. Click **Integrations**.
-
-![DSN](../../gettingstarted/gettingstarted/images/web1.png)
-
-On the **Integrations** page, you need to select the Data Collection property that was created in exercise 0.1. 
-
-![DSN](../../gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
@@ -373,65 +207,19 @@ Select your account type and complete the login process.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+You'll then see your website loaded in an incognito browser window. For every exercise, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
 ![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-When you open up your browser Developer View, you can inspect Network requests as indicated below. When you use the filter **interact**, you'll see the network requests that are sent by Adobe Experience Platform Data Collection Client to the Adobe Edge.
-
-![Adobe Experience Platform Data Collection Setup](./images/hook1.png)
-
-Switch your view to your Google Cloud Function and go to **LOGS**. You should now have a view similar to this one, with a number of log entries being shown. Every time you see **Function execution started**, it means that incoming traffic was received in your Google Cloud Function.
+Switch your view to your Google Cloud Pub/Sub and go to **MESSAGES**. Click **PULL** and after a couple of seconds you'll see some messages in the list. Click a message to visualize its content.
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook3gcp.png)
 
-Let's update your function a bit to work with the incoming data, and display the information that was received from Adobe Experience Platform Data Collection Server. Go to **SOURCE** and click **EDIT**.
+You can now see the XDM payload of your event in Google Pub/Sub. You've now successfully sent data that was collected by Adobe Experience Platform Data Collection, in real-time, to a Google Cloud Pub/Sub endpoint. From there, that data can be used by any Google Cloud Platform application, such as BigQuery for storage and reporting or for Machine Learning use cases.
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook4gcp.png)
 
-In the next screen, click **NEXT**.
-
-![Adobe Experience Platform Data Collection Setup](./images/gcf1.png)
-
-Update your code like this:
-
-```javascript
-/**
- * Responds to any HTTP request.
- *
- * @param {!express:Request} req HTTP request context.
- * @param {!express:Response} res HTTP response context.
- */
-exports.helloAEP = (req, res) => {
-  console.log('>>>>> Function has started. The following information was received from Event Forwarding:');
-  console.log(req.body);
-
-  let message = req.query.message || req.body.message || 'Hello World!';
-  res.status(200).send(message);
-};
-```
-
-You'll then have this. Click **DEPLOY**.
-
-![Adobe Experience Platform Data Collection Setup](./images/gcf2.png)
-
-After a couple of minutes, your function will be deployed again. Click your function name to open it.
-
-![Adobe Experience Platform Data Collection Setup](./images/gcf3.png)
-
-On your demo website, navigate to a product, like for instance **DEIRDRE RELAXED-FIT CAPRI**.
-
-![Adobe Experience Platform Data Collection Setup](./images/gcf3a.png)
-
-Switch your view to your Google Cloud Function and go to **LOGS**. You should now have a view similar to this one, with a number of log entries being shown.
-
-For every page view on your demo website, you should now see a new log entry pop up in your Google Cloud Function's logs, which shows the received information.
-
-![Adobe Experience Platform Data Collection Setup](./images/gcf4.png)
-
-You've now successfully sent data that was collected by Adobe Experience Platform Data Collection, in real-time, to a Google Cloud Function endpoint. From there, that data can be used by any Google Cloud Platform application, such as BigQuery for storage and reporting or for Machine Learning use cases.
-
-Next Step: [2.5.5 Forward events towards the AWS ecosystem](./ex5.md)
+Next Step: [2.5.5 Forward events to AWS Kinesis & AWS S3](./ex5.md)
 
 [Go Back to Module 2.5](./aep-data-collection-ssf.md)
 
