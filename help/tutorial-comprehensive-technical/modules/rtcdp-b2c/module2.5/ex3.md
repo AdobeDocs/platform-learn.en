@@ -142,7 +142,7 @@ If you select the raw payload, go to [https://jsonformatter.org/json-pretty-prin
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook2.png)
 
-Switch your view to your custom webhook [https://webhook.site/](https://webhook.site/) which you used in one of the previous steps. You should now have a view similar to this one, with network requests being shown in the left menu. You're seeing the **xdm** payload that was filter out of the network request that was shown above. 
+Switch your view to your custom webhook [https://pipedream.com/requestbin](https://pipedream.com/requestbin) which you used in one of the previous steps. You should now have a view similar to this one, with network requests being shown in the left menu. You're seeing the **xdm** payload that was filter out of the network request that was shown above. 
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook3.png)
 
