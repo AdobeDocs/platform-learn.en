@@ -29,7 +29,7 @@ As part of this exercise, you'll...
 - Configure Amazon API gateway as a rest api endpoint to receive your event data
 - Forward raw event data from Adobe's Edge to your Kinesis stream
 
-## 2.5.5.1 Configure your AWS S3 bucket
+## Configure your AWS S3 bucket
 
 Go to [https://console.aws.amazon.com](https://console.aws.amazon.com) and sign in with the Amazon-account you previously created.
 
@@ -62,7 +62,7 @@ You'll then see your bucket being created and will be redirected to the Amazon S
 
 ![ETL](./images/S3homeb.png)
 
-## 2.5.5.2 Configure your AWS Kinesis Data Stream
+## Configure your AWS Kinesis Data Stream
 
 In the **Find Services** menu, search for **kinesis**. Click the first search result: **Kinesis - Work with Real-Time Streaming Data**.
 
@@ -84,7 +84,7 @@ You'll then see this. Once your data stream is succesfully created, you can move
 
 ![ETL](./images/kinesis5.png)
 
-## 2.5.5.3 Configure your AWS Firehose Delivery Stream
+## Configure your AWS Firehose Delivery Stream
 
 In the **Find Services** menu, search for **kinesis**. Click **Kinesis Data Firehose**.
 
@@ -146,7 +146,7 @@ After a couple of minutes, your delivery stream will nbe created and **Active**.
 
 ![ETL](./images/kinesis16.png)
 
-## 2.5.5.4 Configure your AWS IAM Role
+## Configure your AWS IAM Role
 
 In the **Find Services** menu, search for **iam**. Click **API Gateway**.
 
@@ -217,7 +217,7 @@ You'll then see this. You'll need to specify the **ARN** for this role in the ne
 
 ![ETL](./images/iam11.png)
 
-## 2.5.5.5 Configure your AWS API Gateway
+## Configure your AWS API Gateway
 
 Amazon API Gateway is an AWS service for creating, publishing, maintaining, monitoring, and securing REST, HTTP, and WebSocket APIs at any scale. API developers can create APIs that access AWS or other web services, as well as data stored in the AWS Cloud. 
 
@@ -379,11 +379,11 @@ Paste the above updated code in a Terminal window, and hit enter. You'll then se
 
 ![ETL](./images/kinesis41.png)
 
-## 2.5.5.6 Update your Event Forwarding property
+## Update your Event Forwarding property
 
 You can now activate to your AWS Kinesis data stream through AWS API Gateway, so you can now send your raw experience events into the AWS ecosystem. Using Real-Time CDP Connections and Event Forwarding, you can now easily enable event forwarding to your newly created AWS API Gateway endpoint. 
 
-### 2.5.5.6.1 Update your Event Forwarding property: Create a Data Element
+### Update your Event Forwarding property: Create a Data Element
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/) and go to **Event Forwarding**. Search your Event Forwarding property and click it to open it.
 
@@ -426,7 +426,7 @@ You'll then be back here. Click **Save** or **Save to Library**.
 
 ![Adobe Experience Platform Data Collection SSF](./images/deaws5.png)
 
-### 2.5.5.6.2  Update your Adobe Experience Platform Data Collection Server property: Update your Rule
+### Update your Adobe Experience Platform Data Collection Server property: Update your Rule
 
 In the left menu, go to **Rules**. Click to open the rule **All Pages** which you created in one of the previous exercises.
 
@@ -487,47 +487,31 @@ After a couple of minutes, you'll see that the deployment is done and ready to b
 
 ![Adobe Experience Platform Data Collection SSF](./images/rl14.png)
 
-## 2.5.5.7 Test your configuration
+## Test your configuration
 
-Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
-
-You can now follow the below flow to access the website. Click **Integrations**.
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web1.png)
-
-On the **Integrations** page, you need to select the Data Collection property that was created in exercise 0.1. 
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web2.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 Open a new incognito browser window.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 Select your account type and complete the login process.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+You'll then see your website loaded in an incognito browser window. For every exercise, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-When you open up your browser Developer View, you can inspect Network requests as indicated below. When you use the filter **interact**, you'll see the network requests that are sent by Adobe Experience Platform Data Collection Client to the Adobe Edge.
-
-![Adobe Experience Platform Data Collection Setup](./images/hook1.png)
-
-If you select the raw payload, go to [https://jsonformatter.org/json-pretty-print](https://jsonformatter.org/json-pretty-print) and paste the payload. Click **Make Pretty**. You'll then see the JSON payload, the **events** object and the **xdm** object. In one of the previous steps, when you defined the Data Element, you used the reference **arc.event.xdm**, which will result in you parsing out the **xdm** object of this payload.
-
-![Adobe Experience Platform Data Collection Setup](./images/hook2.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 Switch your view to **AWS**. By opening your data stream and going into the **Monitoring** tab, you'll now see incoming traffic.
 

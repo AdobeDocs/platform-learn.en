@@ -44,7 +44,7 @@ In this exercise, you'll update your existing Datastream to make data that is co
 
 In this exercise, you'll create and configure a custom webhook and you'll start forwarding data that is collected by Web SDK to that custom webhook.
 
-[2.5.4 Create and configure a Google Cloud Function](./ex4.md)
+[2.5.4 Forward events to GCP Pub/Sub](./ex4.md)
 
 In this exercise, you'll create and configure a Google Cloud Function and you'll start forwarding data that is collected by Web SDK to Google.
 

@@ -154,9 +154,9 @@ If you now navigate across the website, you'll see additional network requests b
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook5.png)
 
-You've now configured the server side Event Forwarding of Web SDK/XDM payloads to an external custom webhook. In the next exercises, you'll configure a similar approach, and you'll be sending that same data towards Google and AWS environments.
+You've now configured the server side Event Forwarding of Web SDK/XDM payloads to an external custom webhook. In the next exercises, you'll configure a similar approach, and you'll be sending that same data towards Google Cloud Platform and AWS.
 
-Next Step: [2.5.4 Create and configure a Google Cloud Function](./ex4.md)
+Next Step: [2.5.4 Forward events to GCP Pub/Sub](./ex4.md)
 
 [Go Back to Module 2.5](./aep-data-collection-ssf.md)
 

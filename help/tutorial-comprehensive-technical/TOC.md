@@ -86,7 +86,7 @@ recommendations: noDisplay,noCatalog
     + [2.5.1 Create an Adobe Experience Platform Data Collection Event Forwarding property](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex1.md)
     + [2.5.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex2.md)
     + [2.5.3 Create and configure a custom webhook](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex3.md)
-    + [2.5.4 Create and configure a Google Cloud Function](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
+    + [2.5.4 Forward events to GCP Pub/Sub](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex4.md)
     + [2.5.5 Forward events towards the AWS ecosystem](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/ex5.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.5/summary.md)
   + 2.6 Stream data from Apache Kafka into Real-Time CDP {#module26}
