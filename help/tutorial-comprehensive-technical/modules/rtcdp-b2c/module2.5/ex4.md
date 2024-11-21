@@ -218,7 +218,7 @@ You can now see the XDM payload of your event in Google Pub/Sub. You've now succ
 
 ![Adobe Experience Platform Data Collection Setup](./images/hook4gcp.png)
 
-Next Step: [2.5.5 Forward events towards the AWS ecosystem](./ex5.md)
+Next Step: [2.5.5 Forward events to AWS Kinesis & AWS S3](./ex5.md)
 
 [Go Back to Module 2.5](./aep-data-collection-ssf.md)
 

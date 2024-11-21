@@ -4,7 +4,7 @@ description: Forward events towards the AWS ecosystem
 kt: 5342
 doc-type: tutorial
 ---
-# 2.5.5 Forward events towards the AWS ecosystem
+# 2.5.5 Forward events to AWS Kinesis & AWS S3
 
 >[!IMPORTANT]
 >
