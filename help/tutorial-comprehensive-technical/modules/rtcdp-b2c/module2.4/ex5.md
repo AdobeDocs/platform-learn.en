@@ -8,7 +8,7 @@ doc-type: tutorial
 
 ## Add audience to Azure Event Hub Destination
 
-In this exercise you will add your audience `--aepUserLdap-- - Interest in Equipment` to your `--aepUserLdap---aep-enablement` Azure Event Hub destination.
+In this exercise you will add your audience `--aepUserLdap-- - Interest in Plans` to your `--aepUserLdap---aep-enablement` Azure Event Hub destination.
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
