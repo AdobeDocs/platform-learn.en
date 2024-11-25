@@ -6,7 +6,7 @@ doc-type: tutorial
 ---
 # 2.5.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property
 
-## 2.5.2.1 Update your Datastream
+## Update your Datastream
 
 In [Getting Started](./../../gettingstarted/gettingstarted/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name `--aepUserLdap-- - Demo System Datastream`.
 

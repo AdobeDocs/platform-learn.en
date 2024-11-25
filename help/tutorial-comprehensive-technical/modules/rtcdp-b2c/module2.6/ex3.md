@@ -18,7 +18,7 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In the left menu, go to **Sources** and scroll down in the **Sources Catalog** until you see **HTTP API**. Click **Add Data**.
+In the left menu, go to **Sources** and scroll down in the **Sources Catalog** until you see **HTTP API**. Click **Setup**.
 
 ![Data Ingestion](./images/kaep1.png)
 
@@ -32,15 +32,9 @@ You'll then see this, click **Next**.
 
 Select **Existing dataset**, open the dropdown menu. Search and select the dataset **Demo System - Event Dataset for Call Center (Global v1.1)**.
 
+Click **Next**.
+
 ![Data Ingestion](./images/kaep4.png)
-
-Click **Next**.
-
-![Data Ingestion](./images/kaep6.png)
-
-Click **Next**.
-
-![Data Ingestion](./images/kaep7.png)
 
 Click **Finish**.
 
@@ -48,11 +42,11 @@ Click **Finish**.
 
 You'll then see an overview of the HTTP API Source Connector you just created.
 
-![Data Ingestion](./images/kaep9.png)
-
 You'll need to copy the **Streaming endpoint** URL, which looks like the one below, as you'll need it in the next exercise.
 
-`https://dcs.adobedc.net/collection/d282bbfc8a540321341576275a8d052e9dc4ea80625dd9a5fe5b02397cfd80dc`
+`https://dcs.adobedc.net/collection/63751d0f299eeb7aa48a2f22acb284ed64de575f8640986d8e5a935741be9067`
+
+![Data Ingestion](./images/kaep9.png)
 
 You have finished this exercise.
 

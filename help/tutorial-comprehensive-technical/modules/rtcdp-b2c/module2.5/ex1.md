@@ -50,7 +50,7 @@ The extension will then be added. There's no configuration to do at this step. Y
 
 ![Adobe Experience Platform Data Collection SSF](./images/ssf5.png)
 
-## 2.5.1.3 Deploy your Adobe Experience Platform Data Collection Event Forwarding property
+## Deploy your Adobe Experience Platform Data Collection Event Forwarding property
 
 In the left menu, go to **Publishing Flow**. Click **Add Library**.
 
