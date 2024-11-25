@@ -7,7 +7,7 @@ exl-id: 7b5b598e-e54c-4f0f-b260-d643600ee6ca
 ---
 # 2.5.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property
 
-## 2.5.2.1 Update your Datastream
+## Update your Datastream
 
 In [Getting Started](./../../gettingstarted/gettingstarted/ex2.md), you created your own **[!UICONTROL Datastream]**. You then used the name `--aepUserLdap-- - Demo System Datastream`.
 

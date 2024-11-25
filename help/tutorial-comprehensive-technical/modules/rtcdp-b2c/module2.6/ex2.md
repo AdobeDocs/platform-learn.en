@@ -9,15 +9,11 @@ exl-id: adffeead-9bcb-4632-9a2c-c6da1c40b7f2
 ---
 # 2.6.2 Install and configure your Kafka cluster
 
-## 2.6.2.1 Download Apache Kafka
+## Download Apache Kafka
 
-Go to [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) and download the latest released version. Select the latest binary release, in this case **Scala 2.13**.
+Go to [https://kafka.apache.org/downloads](https://kafka.apache.org/downloads) and download the latest released version. Select the latest binary release, in this case **3.9.0**. Your download will start.
 
 ![Kafka](./images/kafka1.png)
-
-You're then taken to a mirror site. Click the suggested link to download Kafka.
-
-![Kafka](./images/kafka2.png)
 
 Create a folder on your desktop named **Kafka_AEP** and place the downloaded file in that directory.
 
@@ -29,7 +25,7 @@ Open a **Terminal** window by right-clicking your folder and clicking **New Term
 
 Run this command in your Terminal window to uncompress the downloaded file:
 
-`tar -xvf kafka_2.13-3.1.0.tgz`
+`tar -xvf kafka_2.13-3.9.0.tgz`
 
 >[!NOTE]
 >
@@ -51,7 +47,7 @@ And in that directory, you'll see these subdirectries:
 
 Go back to your Terminal window. Enter the following command:
 
-`cd kafka_2.13-3.1.0`
+`cd kafka_2.13-3.9.0`
 
 >[!NOTE]
 >
@@ -63,15 +59,15 @@ Next, enter the command `bin/kafka-topics.sh`.
 
 ![Kafka](./images/kafka10a.png)
 
-You should then see this response. This means that Kafka is properly installed and that Java is working fine. (Reminder: you need Java 8 JDK or Java 11 JDK installed for this to work!. You can see which Java version you have installed by using the command `java -version`.)
+You should then see this response. This means that Kafka is properly installed and that Java is working fine. (Reminder: you need Java 23 JDK installed for this to work!. You can see which Java version you have installed by using the command `java -version`.)
 
 ![Kafka](./images/kafka10.png)
 
-## 2.6.2.2 Start Kafka
+## Start Kafka
 
 In order to start Kafka, you'll need to start Kafka Zookeeper and Kafka, in this order.
 
-Open a **Terminal** window by right-clicking your folder **kafka_2.13-3.1.0** and clicking **New Terminal at Folder**.
+Open a **Terminal** window by right-clicking your folder **kafka_2.13-3.9.0** and clicking **New Terminal at Folder**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -87,7 +83,7 @@ You'll then see this:
 
 Keep this window open while your going through these exercises!
 
-Open another, new **Terminal** window by right-clicking your folder **kafka_2.13-3.1.0** and clicking **New Terminal at Folder**.
+Open another, new **Terminal** window by right-clicking your folder **kafka_2.13-3.9.0** and clicking **New Terminal at Folder**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -103,9 +99,9 @@ You'll then see this:
 
 Keep this window open while your going through these exercises!
 
-## 2.6.2.3 Create a Kafka topic
+## Create a Kafka topic
 
-Open a **Terminal** window by right-clicking your folder **kafka_2.13-3.1.0** and clicking **New Terminal at Folder**.
+Open a **Terminal** window by right-clicking your folder **kafka_2.13-3.9.0** and clicking **New Terminal at Folder**.
 
 ![Kafka](./images/kafka11.png)
 
@@ -113,9 +109,7 @@ Enter this command to create a new Kafka topic with the name **aeptest**. This t
 
 `bin/kafka-topics.sh --create --topic aeptest --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16a.png)
-
-You'll then see a similar confirmation:
+You'll then see a confirmation:
 
 ![Kafka](./images/kafka17a.png)
 
@@ -123,13 +117,11 @@ Enter this command to create a new Kafka topic with the name **aep**. This topic
 
 `bin/kafka-topics.sh --create --topic aep --bootstrap-server localhost:9092`
 
-![Kafka](./images/kafka16.png)
-
 You'll then see a similar confirmation:
 
 ![Kafka](./images/kafka17.png)
 
-## 2.6.2.4 Produce events
+## Produce events
 
 Go back to the Terminal window in which you created your first Kafka topic and enter the following command:
 
@@ -157,7 +149,7 @@ On your keyboard, click `Control` and `C` at the same time to close your produce
 
 ![Kafka](./images/kafka22.png)
 
-## 2.6.2.4 Consume events
+## Consume events
 
 In the same Terminal window that you used to produce events, enter the following command:
 

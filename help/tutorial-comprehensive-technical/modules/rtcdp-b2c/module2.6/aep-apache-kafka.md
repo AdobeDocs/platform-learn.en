@@ -7,8 +7,6 @@ exl-id: 2b7010f3-ab31-4099-aecd-fd4e73b7e96e
 ---
 # 2.6 Stream data from Apache Kafka into Adobe Experience Platform
 
-**Authors: [Vivek Tiwari](https://www.linkedin.com/in/vivek-tiwari-25092656/), [Nipun Nair](https://www.linkedin.com/in/nipunnair/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In this module, you'll learn how to setup your own Apache Kafka cluster, define topics, producers and consumers and stream data into Adobe Experience Platform using the Adobe Experience Platform Sink Connector through Kafka Connect.
 
 ## Learning Objectives
@@ -21,7 +19,7 @@ In this module, you'll learn how to setup your own Apache Kafka cluster, define 
 
 ## Prerequisites
 
-- Java JDK11 or above needs to be installed on your computer, you can download that JDK here: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
+- Java JDK23 or above needs to be installed on your computer, you can download that JDK here: [https://www.oracle.com/java/technologies/javase-jdk11-downloads.html](https://www.oracle.com/java/technologies/javase-jdk11-downloads.html)
 - Access to Adobe Experience Platform
 
 >[!NOTE]
