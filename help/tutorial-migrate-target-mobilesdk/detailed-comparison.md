@@ -12,9 +12,8 @@ After reviewing the information below and assessing your current technical Targe
 - Which Target features are supported by Adobe Journey Optimizer - Decisioning
 - Which Adobe Target extension functions have Adobe Journey Optimizer - Decisioning equivalents
 - How Target settings are applied with Adobe Journey Optimizer - Decisioning
-- How the data flow of the Adobe Target extension and the Adobe Journey Optimizer - Decisioning extension differ 
+- How the data flows using the Adobe Journey Optimizer - Decisioning extension
 
-If you are new to Platform Web SDK, don't worry - the items below are covered in more detail throughout this tutorial.
 
 ## Feature comparison
 
@@ -26,8 +25,8 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 | Profile parameters | Supported | Supported* | 
 | Entity parameters | Supported | Supported* | 
 | Target audiences | Supported | Supported | 
-| Real-Time CDP audiences | ??? | Supported | 
-| Real-Time CDP attributes | ??? | Supported | 
+| Real-Time CDP audiences | Not Supported | Supported | 
+| Real-Time CDP attributes | Not Supported | Supported | 
 | Lifecycle metrics | Supported | Supported via Data Collection rules | 
 | thirdPartyId (mbox3rdPartyId) | Supported | Supported via Identity Map and Target Third Party ID Namespace in the datastream | 
 | Notifications (display, click) | Supported | Supported | 
@@ -45,9 +44,9 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 
 >[!NOTE]
 >
->Migrating Target to Platform Web SDK while retaining an existing AppMeasurement Adobe Analytics implementation for a given page is not supported.
+>Keep the Target extension Tags configuration and settings in place even after you have migrated your app code to the Decisioning extension. This will help ensure Target continues to work for customers who haven't yet updated the app to the new version.
 >
-> It is possible to migrate your at.js (and AppMeasurement.js) implementation to Platform Web SDK one page at a time. If you take this approach, it is best to set the [`idMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#id-migration-enabled) and [`targetMigrationEnabled`](https://experienceleague.adobe.com/docs/experience-platform/edge/fundamentals/configuring-the-sdk.html#targetMigrationEnabled) options to `true` with the `configure` command.
+>If you use the Analytics for Target integration (A4T), be sure to also migrate your Analytics implementation with the Edge Bridge extension at the same time you migrate your Target implementation to the Decisioning extension.
 
 ## Target extension functions and Decisioning extension equivalents
 
@@ -70,15 +69,19 @@ Many Target extension functions have an equivalent approach using the Decisionin
 
 ## Target extension settings and Decisioning extension equivalents
 
-The Target extension can be configured with various settings.
+The Target extension has [configurable settings](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) which are [configured in the datastream](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup) with the Decisioning extension.
 
 | Target extension | Decisioning extension | Notes |
 | --- | --- | --- | 
 | Client Code | n/a | Set automatically by the edge using the IMS Org details |
-| Environment ID | Target Environment ID | Set in the datastream |
-| Target Workspace Property | Property Token | Set in the datastream |
-| Timeout | not currently configurable |  |
+| Environment ID | Target Environment ID | Configured in the datastream |
+| Target Workspace Property | Property Token | Configured in the datastream |
+| Timeout | Not configurable | The timeout with the Decisioning extension is 10 seconds |
 | Server Domain | Edge Network domain | Set in the Adobe Experience Platform Edge Network extension |
+
+>[!IMPORTANT]
+>
+> Keep the Target extension settings in place even after you have migrated your app code to the Decisioning extension. This will help ensure Target continues to work for users who haven't yet updated their app.
 
 ## Decisioning extension system diagram
 
