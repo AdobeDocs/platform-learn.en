@@ -29,7 +29,7 @@ If you are new to Platform Web SDK, don't worry - the items below are covered in
 | Real-Time CDP audiences | ??? | Supported | 
 | Real-Time CDP attributes | ??? | Supported | 
 | Lifecycle metrics | Supported | Supported via Data Collection rules | 
-| thirdPartyId (mbox3rdPartyId) | Supported | Supported via Identity Map and namespace configuration in the datastream | 
+| thirdPartyId (mbox3rdPartyId) | Supported | Supported via Identity Map and Target Third Party ID Namespace in the datastream | 
 | Notifications (display, click) | Supported | Supported | 
 | Response tokens | Supported | Supported |  
 | Analytics for Target (A4T) | Client-side only | Client-side and server-side | 
@@ -60,38 +60,31 @@ Many Target extension functions have an equivalent approach using the Decisionin
 | `displayedLocations` | Offer -> `displayed()` |     In addition, `generateDisplayInteractionXdm` Offer method can be used to generate the XDM for item display. Subsequently, Edge network SDK's sendEvent API can be used to attach additional XDM, free-form data and send an Experience Event to the remote. | 
 | `clickedLocation` | Offer -> `tapped()` | In addition, `generateTapInteractionXdm` Offer method can be used to generate the XDM for item tap. Subsequently, Edge network SDK's sendEvent API can be used to attach additional XDM, free-form data and send an Experience Event to the remote. | 
 | `clearPrefetchCache` | `clearCachedPropositions` |  | 
-| `resetExperience` |  | Use `removeIdentity` API from Identity for Edge Network extension for the SDK to stop sending the visitor identifier to the Edge network. For more details, see [the removeIdentity API documentation](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Note: Mobile Core's `resetIdentities` API clears all stored identities in the SDK, including the Experience Cloud ID (ECID) and it should be sparingly used! | 
-| `getSessionId` |  | `state:store` response handle carries session-related information. Edge network extension helps manage it by attaching non-expired state store items to subsequent requests. | 
-| `setSessionId` |  | `state:store` response handle carries session-related information. Edge network extension helps manage it by attaching non-expired state store items to subsequent requests. | 
+| `resetExperience` | n/a | Use `removeIdentity` API from Identity for Edge Network extension for the SDK to stop sending the visitor identifier to the Edge network. For more details, see [the removeIdentity API documentation](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Note: Mobile Core's `resetIdentities` API clears all stored identities in the SDK, including the Experience Cloud ID (ECID) and it should be sparingly used! | 
+| `getSessionId` | n/a | `state:store` response handle carries session-related information. Edge network extension helps manage it by attaching non-expired state store items to subsequent requests. | 
+| `setSessionId` | n/a | `state:store` response handle carries session-related information. Edge network extension helps manage it by attaching non-expired state store items to subsequent requests. | 
 | `getThirdPartyId`  |  n/a | Use updateIdentities API from Identity for Edge Network extension to supply the third party ID value. Then, configure the third party ID namespace in the datastream. For more details, see [the Target Third Party Id mobile documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id).  |
 | `setThirdPartyId` | n/a | Use updateIdentities API from Identity for Edge Network extension to supply the third party ID value. Then, configure the third party ID namespace in the datastream. For more details, see [the Target Third Party Id mobile documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). | 
-| `getTntId` |  | `locationHint:result` response handle carries the Target location hint information. It is assumed Target edge will be co-located with Experience Edge. <br> <br>Edge network extension uses the EdgeNetwork location hint to determine the Edge network cluster to send requests to. To share Edge network location hint across SDKs (hybrid apps), use `getLocationHint` and `setLocationHint` APIs from Edge Network extension. For more details, see [the `getLocationHint` API documentation](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). | 
-| `setTntId` |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  | 
-|  |  |  |
+| `getTntId` | n/a | `locationHint:result` response handle carries the Target location hint information. It is assumed Target edge will be co-located with Experience Edge. <br> <br>Edge network extension uses the EdgeNetwork location hint to determine the Edge network cluster to send requests to. To share Edge network location hint across SDKs (hybrid apps), use `getLocationHint` and `setLocationHint` APIs from Edge Network extension. For more details, see [the `getLocationHint` API documentation](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). | 
+| `setTntId` | n/a | `locationHint:result` response handle carries the Target location hint information. It is assumed Target edge will be co-located with Experience Edge. <br> <br>Edge network extension uses the EdgeNetwork location hint to determine the Edge network cluster to send requests to. To share Edge network location hint across SDKs (hybrid apps), use `getLocationHint` and `setLocationHint` APIs from Edge Network extension. For more details, see [the `getLocationHint` API documentation](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint).  | 
 
 ## Target extension settings and Decisioning extension equivalents
 
-The Target extension can be configured and downloaded with various settings in the ...
+The Target extension can be configured with various settings.
 
-| Target extension | Decisioning extension | 
-| --- | --- | 
-| |  | 
+| Target extension | Decisioning extension | Notes |
+| --- | --- | --- | 
+| Client Code | n/a | Set automatically by the edge using the IMS Org details |
+| Environment ID | Target Environment ID | Set in the datastream |
+| Target Workspace Property | Property Token | Set in the datastream |
+| Timeout | not currently configurable |  |
+| Server Domain | Edge Network domain | Set in the Adobe Experience Platform Edge Network extension |
 
+## Decisioning extension system diagram
 
-## System diagram comparison
+The following diagram should help you understand the data flow using the Adobe Journey Optimizer - Decisioning extension.
 
-The following diagrams should help you understand the data flow differences between a Target implementation using the Adobe Journey Optimizer - Decisioning extension and an implementation using the Adobe Target extension.
-
-### Target extension system diagram
-
-
-
-### Decisioning extension system diagram
-
-
+![Adobe Target Edge Decisioning with client-side Mobile SDK](assets/diagram.png)
 
 
 >[!NOTE]
