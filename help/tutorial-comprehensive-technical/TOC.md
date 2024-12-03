@@ -10,6 +10,7 @@ recommendations: noDisplay,noCatalog
 # Comprehensive Technical Tutorial for Adobe Experience Platform {#tutorial-comprehensive-technical}
 
 + [Tutorial Overview](/help/tutorial-comprehensive-technical/overview.md)
++ [Completion](/help/tutorial-comprehensive-technical/completion.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
@@ -161,6 +162,6 @@ recommendations: noDisplay,noCatalog
     + [5.1.7 Query Service API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)
 
-
++ [Setup](/help/tutorial-comprehensive-technical/setup.md)
 
 
