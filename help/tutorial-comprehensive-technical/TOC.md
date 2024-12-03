@@ -152,14 +152,14 @@ recommendations: noDisplay,noCatalog
 + 5 Data Distiller {#datadistiller} 
   + 5.1 Query Service {#module51}
     + [Overview](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/query-service.md)
-    + [5.1.0 Prerequisites](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex0.md)
-    + [5.1.1 Getting Started](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
-    + [5.1.2 Using the Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
-    + [5.1.3 Queries, queries, queries... and churn analysis](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
-    + [5.1.4 Generate a dataset from a query](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
-    + [5.1.5 Query Service and Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
-    + [5.1.6 Query Service and Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
-    + [5.1.7 Query Service API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+    + [5.1.1 Prerequisites](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
+    + [5.1.2 Getting Started](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
+    + [5.1.3 Using the Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
+    + [5.1.4 Queries, queries, queries... and churn analysis](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
+    + [5.1.5 Generate a dataset from a query](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
+    + [5.1.6 Query Service and Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
+    + [5.1.7 Query Service and Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+    + [5.1.8 Query Service API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex8.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)
 
 + [Setup](/help/tutorial-comprehensive-technical/setup.md)
