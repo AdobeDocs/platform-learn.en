@@ -10,6 +10,7 @@ recommendations: noDisplay,noCatalog
 # Comprehensive Technical Tutorial for Adobe Experience Platform {#tutorial-comprehensive-technical}
 
 + [Tutorial Overview](/help/tutorial-comprehensive-technical/overview.md)
++ [Completion](/help/tutorial-comprehensive-technical/completion.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
@@ -21,7 +22,7 @@ recommendations: noDisplay,noCatalog
     + [Use the mobile app](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
 
 + 1 Data Collection {#datacollection}
-  + 1.1 Adobe Experience Platform Data Collection and the Web SDK extension {#module11}
+  + 1.1 Adobe Experience Platform Data Collection and Web SDK {#module11}
     + [Overview](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md)
     + [1.1.1 Understanding Adobe Experience Platform Data Collection](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex1.md)
     + [1.1.2 Edge Network, Datastreams and Server Side Data Collection](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex2.md)
@@ -31,7 +32,7 @@ recommendations: noDisplay,noCatalog
     + [1.1.6 Implement Adobe Target](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex6.md)
     + [1.1.7 XDM Schema requirements in Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/ex7.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datacollection/module1.1/summary.md)
-  + 1.2 - Data Ingestion {#module12}
+  + 1.2 Data Ingestion {#module12}
     + [Overview](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/data-ingestion.md)
     + [1.2.1 Explore the website](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex1.md)
     + [1.2.2 Configure Schema's and Set Identifiers](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex2.md)
@@ -39,7 +40,7 @@ recommendations: noDisplay,noCatalog
     + [1.2.4 Data Ingestion from Offline Sources](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex4.md)  
     + [1.2.5 Data Landing Zone](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/ex5.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
-  + 1.3 - Federated Audience Composiiton {#module13}
+  + 1.3 Federated Audience Composition {#module13}
     + [Overview](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
     + [1.3.1 Setup your Snowflake account](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
     + [1.3.2 Create schemas, data model and links](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
@@ -131,7 +132,7 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c} 
-  + 4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace on top of Adobe Experience Platform {#module41}
+  + 4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace {#module41}
     + [Overview](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)
     + [4.1.1 Customer Journey Analytics 101](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex1.md)
     + [4.1.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/ex2.md)
@@ -151,16 +152,16 @@ recommendations: noDisplay,noCatalog
 + 5 Data Distiller {#datadistiller} 
   + 5.1 Query Service {#module51}
     + [Overview](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/query-service.md)
-    + [5.1.0 Prerequisites](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex0.md)
-    + [5.1.1 Getting Started](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
-    + [5.1.2 Using the Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
-    + [5.1.3 Queries, queries, queries... and churn analysis](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
-    + [5.1.4 Generate a dataset from a query](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
-    + [5.1.5 Query Service and Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
-    + [5.1.6 Query Service and Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
-    + [5.1.7 Query Service API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+    + [5.1.1 Prerequisites](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex1.md)
+    + [5.1.2 Getting Started](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex2.md)
+    + [5.1.3 Using the Query Service](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex3.md)
+    + [5.1.4 Queries, queries, queries... and churn analysis](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex4.md)
+    + [5.1.5 Generate a dataset from a query](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex5.md)
+    + [5.1.6 Query Service and Power BI](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex6.md)
+    + [5.1.7 Query Service and Tableau](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex7.md)
+    + [5.1.8 Query Service API](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/ex8.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datadistiller/module5.1/summary.md)
 
-
++ [Setup](/help/tutorial-comprehensive-technical/setup.md)
 
 

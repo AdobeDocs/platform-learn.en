@@ -1,57 +1,71 @@
 ---
-title: Query Service - Explore the dataset with Tableau
-description: Query Service - Explore the dataset with Tableau
+title: Query Service - Explore the dataset with Power BI
+description: Query Service - Explore the dataset with Power BI
 kt: 5342
 doc-type: tutorial
 exl-id: c27abd0e-e563-4702-a243-1aec84ce6116
 ---
-# 5.1.6 Query Service and Tableau
+# 5.1.6 Query Service and Power BI
 
-Open Tableau.
+Open Microsoft Power BI Desktop.
 
-![start-tableau.png](./images/start-tableau.png)
+![start-power-bi.png](./images/start-power-bi.png)
 
-In **Connect To a Server** select **PostgreSQL**:
+Click **Get Data**.
 
-![tableau-connect-postgress.png](./images/tableau-connect-postgress.png)
+![power-bi-get-data.png](./images/power-bi-get-data.png)
+
+Search for **postgres** (1), select **Postgres** (2) from the list and **Connect** (3).
+
+![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
 
 Go to Adobe Experience Platform, to **Queries** and to **Credentials**.
 
 ![query-service-credentials.png](./images/query-service-credentials.png)
 
-From the **Credentials** page in Adobe Experience Platform, copy the **Host** and paste it in the **Server** field, copy the **Database** and paste it in the **Database** field in Tableau, copy the **Port** and paste it in the field **Port**in Tableau, do the same for **Username** and **Password**. Next, click **Sign In**.
+From the **Credentials** page in Adobe Experience Platform, copy the **Host** and paste it in the **Server** field, and copy the **Database** and paste it in the **Database** field in PowerBI, then click OK (2).
 
-Sign In:
+>[!IMPORTANT]
+>
+>Make sure to include port **:80** at the end of the Server value because the Query Service does not currently use the default PostgreSQL port of 5432.
 
-![tableau-connection-dialog.png](./images/tableau-connection-dialog.png)
+![power-bi-connect-server.png](./images/power-bi-connect-server.png)
 
-Click search (1) and enter your **ldap** into the search field, identify you table from the result set and drag (3) it onto the location named **Drag tables here**. When finished, click on **Sheet 1** (3).
+In the next dialog populate the User name and Password with your Username and Password found in the **Credentials** of Queries in Adobe Experience Platform.
 
-![tableau-drag-table.png](./images/tableau-drag-table.png)
+![query-service-credentials.png](./images/query-service-credentials.png)
 
-To visualize our data on the map we need to convert longitude and latitude to dimensions. In **Measures** select **Latitude** (1) and open the field's dropdown and select **Convert to Dimension** (2). Do the same for the **Longitude** measure.
+In the Navigator dialog, put your **LDAP** in the search field (1) to locate your CTAS datasets and check the box next to each (2). Then click Load (3).
 
-![tableau-convert-dimension.png](./images/tableau-convert-dimension.png)
+![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
 
-Drag the **Longitude** measure to the **Columns** and the **Latitude** measure to **Rows**. Automatically the map of **Belgium** will appear with little dots representing the cities in out data set.
+Make sure the **Report** tab (1) is selected.
 
-![tableau-drag-lon-lat.png](./images/tableau-drag-lon-lat.png)
+![power-bi-report-tab.png](./images/power-bi-report-tab.png)
 
-Select **Measure Names** (1), open the dropdown and select **Add to Sheet** (2):
+Select the map (1) and after it is added to the reporting canvas, enlarge the map (2).
 
-![tableau-select-measure-names.png](./images/tableau-select-measure-names.png)
+![power-bi-select-map.png](./images/power-bi-select-map.png)
 
-You will now have a map, with dots of various sizes. The size indicates the number of call center interactions for that specific city. To vary the size of the dots, navigate to the right panel and open **Measure Values** (using the drop down icon). From the drop down list select **Edit Sizes**. Play around with different sizes.
+Next we need to define the measures and the dimensions, you do this by dragging fields from the **fields** section onto the corresponding placeholders (located under **visualizations**) as indicated below:
 
-![tableau-vary-size-dots.png](./images/tableau-vary-size-dots.png)
+![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
 
-To further display the data per **Call Topic**, drag (1) the **Call Topic** dimension onto **Pages**. Navigate through the different **Call topics** using the **Call Topic** (2) on the right side of the screen:
+As measure we will use a count of **customerId**. Drag the **crmid** field from the **fields** section into the **Size** placeholder:
 
-![tableau-call-topic-navigation.png](./images/tableau-call-topic-navigation.png)
+![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
+
+Finally, to do some **callTopic** analysis, let's drag the **callTopic** field on to the **Page level filters** placeholder (you might have to scroll in the **visualizations** section);
+
+![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
+
+Select/unselect **callTopics** to investigate:
+
+![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
 
 You've now finished this exercise.
 
-Next Step: [5.1.7 Query Service API](./ex7.md)
+Next Step: [5.1.8 Query Service API](./ex8.md)
 
 [Go Back to Module 5.1](./query-service.md)
 

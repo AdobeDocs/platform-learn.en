@@ -1,71 +1,79 @@
 ---
-title: Query Service - Explore the dataset with Power BI
-description: Query Service - Explore the dataset with Power BI
+title: Query Service - Power BI/Tableau
+description: Query Service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
 exl-id: c4e4f5f9-3962-4c8f-978d-059f764eee1c
 ---
-# 5.1.5 Query Service and Power BI
+# 5.1.5 Generate a dataset from a query
 
-Open Microsoft Power BI Desktop.
+## Objective
 
-![start-power-bi.png](./images/start-power-bi.png)
+Learn how to generate datasets from query results
+Connect Microsoft Power BI Desktop/Tableau directly to the Query Service
+Creating a report in Microsoft Power BI Desktop/Tableau Desktop
 
-Click **Get Data**.
+## Lesson Context
 
-![power-bi-get-data.png](./images/power-bi-get-data.png)
+A command line interface to query data is exciting but it doesn't present well. In this lesson, we will guide you through a recommended workflow for how you can use Microsoft Power BI Desktop/Tableau directly the Query Service to create visual reports for your stakeholders.
 
-Search for **postgres** (1), select **Postgres** (2) from the list and **Connect** (3).
+## Create a dataset from a SQL query
 
-![power-bi-connect-progress.png](./images/power-bi-connect-progress.png)
+The complexity of your query will impact how long it takes for the Query Service to return results. And when querying directly from the command line or other solutions like Microsoft Power BI/Tableau the Query Service is configured with a 5 minute timeout (600 seconds). And in certain cases these solutions will be configured with shorter timeouts. To run larger queries and front load the time it takes to return results we offer a feature to generate a dataset from the query results. This feature utilizes the standard SQL feature know as Create Table As Select (CTAS). It is available in the Platform UI from the Query List and also available to be run directly from the command line with PSQL.
 
-Go to Adobe Experience Platform, to **Queries** and to **Credentials**.
+In the previous you've replaced **enter your name** with your own ldap before executing it in PSQL.
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+```sql
+select /* enter your name */
+       e.--aepTenantId--.identification.core.ecid as ecid,
+       e.placeContext.geo.city as city,
+       e.placeContext.geo._schema.latitude latitude,
+       e.placeContext.geo._schema.longitude longitude,
+       e.placeContext.geo.countryCode as countrycode,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callFeeling as callFeeling,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callTopic as callTopic,
+       c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
+       l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
+       l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
+       l.--aepTenantId--.identification.core.loyaltyId as crmid
+from   demo_system_event_dataset_for_website_global_v1_1 e
+      ,demo_system_event_dataset_for_call_center_global_v1_1 c
+      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
+and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
+and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
+```
 
-From the **Credentials** page in Adobe Experience Platform, copy the **Host** and paste it in the **Server** field, and copy the **Database** and paste it in the **Database** field in PowerBI, then click OK (2).
+Navigate to the Adobe Experience Platform UI - [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
 
->[!IMPORTANT]
->
->Make sure to include port **:80** at the end of the Server value because the Query Service does not currently use the default PostgreSQL port of 5432.
+You will search for your executed statement in the Adobe Experience Platform Query UI by entering your ldap in the search field:
 
-![power-bi-connect-server.png](./images/power-bi-connect-server.png)
+Select **Queries**, go to **Log** and enter your ldap in the search field.
 
-In the next dialog populate the User name and Password with your Username and Password found in the **Credentials** of Queries in Adobe Experience Platform.
+![search-query-for-ctas.png](./images/search-query-for-ctas.png)
 
-![query-service-credentials.png](./images/query-service-credentials.png)
+Select your query and click **Output Dataset**.
 
-In the Navigator dialog, put your **LDAP** in the search field (1) to locate your CTAS datasets and check the box next to each (2). Then click Load (3).
+![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
 
-![power-bi-load-churn-data.png](./images/power-bi-load-churn-data.png)
+Enter `--aepUserLdap-- Callcenter Interaction Analysis` as name and description for the dataset and press the **Run Query** button
 
-Make sure the **Report** tab (1) is selected.
+![create-ctas-dataset.png](./images/create-ctas-dataset.png)
 
-![power-bi-report-tab.png](./images/power-bi-report-tab.png)
+As a result, you will see a new query with a status **Submitted**.
 
-Select the map (1) and after it is added to the reporting canvas, enlarge the map (2).
+![ctas-query-submitted.png](./images/ctas-query-submitted.png)
 
-![power-bi-select-map.png](./images/power-bi-select-map.png)
+Upon completion, you will see a new entry for **Dataset Created** (you might need to refresh the page).
 
-Next we need to define the measures and the dimensions, you do this by dragging fields from the **fields** section onto the corresponding placeholders (located under **visualizations**) as indicated below:
+![ctas-dataset-created.png](./images/ctas-dataset-created.png)
 
-![power-bi-drag-lat-lon.png](./images/power-bi-drag-lat-lon.png)
+As soon as your dataset is created (which can take 5-10 minutes), you can continue the exercise.
 
-As measure we will use a count of **customerId**. Drag the **crmid** field from the **fields** section into the **Size** placeholder:
+Next Step - Option A: [5.1.6 Query Service and Power BI](./ex6.md)
 
-![power-bi-drag-crmid.png](./images/power-bi-drag-crmid.png)
-
-Finally, to do some **callTopic** analysis, let's drag the **callTopic** field on to the **Page level filters** placeholder (you might have to scroll in the **visualizations** section);
-
-![power-bi-drag-calltopic.png](./images/power-bi-drag-calltopic.png)
-
-Select/unselect **callTopics** to investigate:
-
-![power-bi-report-select-calltopic.png](./images/power-bi-report-select-calltopic.png)
-
-You've now finished this exercise.
-
-Next Step: [5.1.7 Query Service API](./ex7.md)
+Next Step - Option B: [5.1.7 Query Service and Tableau](./ex7.md)
 
 [Go Back to Module 5.1](./query-service.md)
 

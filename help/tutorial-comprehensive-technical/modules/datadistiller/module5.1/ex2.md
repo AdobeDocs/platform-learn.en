@@ -1,172 +1,106 @@
 ---
-title: Query Service - Using the Query Service
-description: Query Service - Using the Query Service
+title: Query Service - Getting Started
+description: Query Service - Getting Started
 kt: 5342
-audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 exl-id: 5c4615c6-41c0-465a-b9b6-f59eef388c73
 ---
-# 5.1.2 Using the Query Service
+# 5.1.2 Getting Started
 
-## Objective
+## Getting familiar with the Adobe Experience Platform UI
 
-- Find and explore datasets
-- Learn how to address Experience Data Models objects and attributes in your queries
+Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-## Context
+![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
-In this you will learn how to use PSQL to retrieve information about the available datasets, how to write a queries for Experience Data Model (XDM), and write your first simple reporting queries using the Query Service and Citi Signal datasets.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-## 5.1.2.1 Basic Queries
+![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-In this you will learn about the methods to retrieve information about the available datasets and how to properly retrieve data with a query from an XDM dataset.
 
-All the datasets hat we have explored via Adobe Experience Platform in the beginning of 1, are also available for access via a SQL interface as tables. To list those tables you can use the **show tables;** command.
+## Explore data on the platform
 
-Execute **show tables;** in your **PSQL command-line interface**. (do not forget to end your command with a semicolon).
+Bringing data from different channels is a tough task for any brand. And in this exercise, Citi Signal customers are engaging with Citi Signal on its website, on its mobile app, purchase data is collected by Citi Signal’s Point of Sale system, and they have CRM and Loyalty data. Citi Signal is using Adobe Analytics and Adobe Launch to capture data across its website, mobile app as well as POS system, so this data is already flowing into Adobe Experience Platform. Let's begin with exploring all the data for Citi Signal that already exists in Adobe Experience Platform.
 
-Copy the command **show tables;** and paste it at the prompt:
+In the left menu, go to **Datasets**.
 
-![command-prompt-show-tables.png](./images/command-prompt-show-tables.png)
+![emea-website-interaction-dataset.png](./images/emea-website-interaction-dataset.png)
 
-You will see the following result:
+Citi Signal is streaming data into Adobe Experience Platform and this data is available in the `Demo System - Event Dataset for Website (Global v1.1)` dataset. Search for `Demo System - Event Dataset for Website`.
 
-```text
-aepenablementfy21:all=> show tables;
-                            name                            |        dataSetId         |                            dataSet                             | description | resolved 
-------------------------------------------------------------+--------------------------+----------------------------------------------------------------+-------------+----------
- demo_system_event_dataset_for_call_center_global_v1_1      | 5fd1a9dea30603194baeea43 | Demo System - Event Dataset for Call Center (Global v1.1)      |             | false
- demo_system_event_dataset_for_mobile_app_global_v1_1       | 5fd1a9de250e4f194bec84cd | Demo System - Event Dataset for Mobile App (Global v1.1)       |             | false
- demo_system_event_dataset_for_voice_assistants_global_v1_1 | 5fd1a9de49ee76194b85f73c | Demo System - Event Dataset for Voice Assistants (Global v1.1) |             | false
- demo_system_event_dataset_for_website_global_v1_1          | 5fd1a9dee3224d194cdfe786 | Demo System - Event Dataset for Website (Global v1.1)          |             | false
- demo_system_profile_dataset_for_loyalty_global_v1_1        | 5fd1a9de250e4f194bec84cc | Demo System - Profile Dataset for Loyalty (Global v1.1)        |             | false
- demo_system_profile_dataset_for_ml_predictions_global_v1_1 | 5fd1a9de241f58194b0cb117 | Demo System - Profile Dataset for ML Predictions (Global v1.1) |             | false
- demo_system_profile_dataset_for_mobile_app_global_v1_1     | 5fd1a9deddf353194a2e00b7 | Demo System - Profile Dataset for Mobile App (Global v1.1)     |             | false
- demo_system_profile_dataset_for_website_global_v1_1        | 5fd1a9de42a61c194dd7b810 | Demo System - Profile Dataset for Website (Global v1.1)        |             | false
- journey_step_events                                        | 5fd1a7f30268c5194bbb7e5e | Journey Step Events                                            |             | false
-```
+![emea-callcenter-interaction-dataset.png](./images/emea-website-interaction-dataset1.png)
 
-At the colon, press space bar to see the next page of the resultset, or enter `q` to revert to the command prompt.
+Citi Signal's Callcenter Interaction data is captured in the `Demo System - Event Dataset for Call Center (Global v1.1)` dataset. Search for `Demo System - Event Dataset for Call Center` data in search box. Click on the dataset's name to open it.
 
-Every dataset in Platform has its corresponding Query Service table. You can find a dataset's table via the Datasets ui:
+![emea-callcenter-interaction-dataset.png](./images/emea-callcenter-interaction-dataset.png)
 
-![ui-dataset-tablename.png](./images/ui-dataset-tablename.png)
+After clicking the dataset, you will get an overview of the dataset activity such as ingested and failed batches.
 
-The `demo_system_event_dataset_for_website_global_v1_1` table is the Query Service table that corresponds with the `Demo System - Event Schema for Website (Global v1.1)` dataset.
+![preview-interaction-dataset.png](./images/preview-interaction-dataset.png)
 
-To query some information about where a product was viewed, we will select the **geo** information.
+Click on **Preview Dataset** to see a sample of the data stored in `Demo System - Event Dataset for Call Center (Global v1.1)` dataset. The left panel shows schema structure for this dataset.
 
-Copy the statement below and paste it at the prompt in your **PSQL command-line interface** and hit enter:
+![explore-interaction-dataset.png](./images/explore-interaction-dataset.png)
 
-```sql
-select placecontext.geo
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Click the **Close** button to close the **Preview Dataset** window.
 
-In your query result, you will notice that columns in the Experience Data Model (XDM) can be complex types and not just scalar types. In the query above we would like to identify geo locations where a **commerce.productViews** did occur. To identify a **commerce.productViews** we have to navigate through the XDM model using the **.** (dot) notation.
+## Introduction to Query Service
 
-```text
-aepenablementfy21:all=> select placecontext.geo
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
-                  geo                   
-----------------------------------------
- ("(57.4694803,-3.1269422)",Tullich,GB)
-(1 row)
-```
+Adobe Experience Platform Query Service is accessed by clicking on **Queries** in the left menu.
 
-Notice the result is a flat object rather than a single value? The **placecontext.geo** object contains four attributes: schema, country and city. And when an object is declared as a column it will return the entire object as a string. The XDM schema may be more complex than what you are familiar with but it's very powerful and was architected to support many solutions, channels, and use cases.
+![select-queries.png](./images/select-queries.png)
 
-To select the individual properties of an object, you use the **.** (dot) notation.
+By going to **Log** you'll see the Query List page, which provides you a list of all the queries that have run in this organization, with the latest at the top.
 
-Copy the statement below and paste it at the prompt in your **PSQL command-line interface**:
+![query-list.png](./images/query-list.png)
 
-```sql
-select placecontext.geo._schema.longitude
-      ,placecontext.geo._schema.latitude
-      ,placecontext.geo.city
-      ,placecontext.geo.countryCode
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+Click on any SQL query from the list and observe the details provided in the right rail.
 
-The result of the above query should look like this.
-The result is now a set simple values:
+![click-sql-query.png](./images/click-sql-query.png)
 
-```text
-aepenablementfy21:all=> select placecontext.geo._schema.longitude
-aepenablementfy21:all->       ,placecontext.geo._schema.latitude
-aepenablementfy21:all->       ,placecontext.geo.city
-aepenablementfy21:all->       ,placecontext.geo.countryCode
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  |  latitude  |  city   | countrycode 
-------------+------------+---------+-------------
- -3.1269422 | 57.4694803 | Tullich | GB
-(1 row)
-```
+You can scroll the window to see the entire query, or you can click on the icon highlighted below to copy the entire query to your notepad. You do not have to copy the query at this time.
 
-Don't worry, there is an easy way to obtain the path towards a specific property. In the following part you will learn how. 
+![click-copy-query.png](./images/click-copy-query.png)
 
-You will need to edit a query, so let's first open an editor.
+You can't just see the queries that have been executed, this User Interface lets you create new datasets from queries. These datasets can be linked to Adobe Experience Platform's Real-time Customer Profile or can be used as input for Adobe Experience Platform Data Science Workspace.
 
-On Windows
+## Connect PSQL Client to Query Service
 
-Click the **search** icon in the windows toolbar, type **notepad** in the **search** field, click the **notepad** result:
+Query Service supports clients with a driver for PostgreSQL. In this we'll be using PSQL, a command-line interface, and Power BI or Tableau. Let's connect to PSQL.
 
-![windows-start-notepad.png](./images/windows-start-notepad.png)
+Click on **Credentials**.
 
-On Mac
+![queries-select-configuration.png](./images/queries-select-configuration.png)
 
-Install [Brackets](https://github.com/adobe/brackets/releases/download/release-1.14/Brackets.Release.1.14.dmg) or use another Text Editor of choice if you don't have it installed and follow the instructions. After installation, search for **Brackets** via Mac's spotlight search and open it.
+You will see the screen below. The Configuration screen provides server information and credentials for authenticating to Query Service. For now, we will focus on the right side of the screen which contains a connect command for PSQL. Click on the Copy button to copy the command to your clipboard.
 
-Copy the following statement to notepad or brackets:
+![copy-psql-connection.png](./images/copy-psql-connection.png)
 
-```sql
-select your_attribute_path_here
-from   demo_system_event_dataset_for_website_global_v1_1
-where  eventType = 'commerce.productViews'
-and placecontext.geo.countryCode <> ''
-limit 1;
-```
+For Windows: Open the command line by hitting the windows key and typing cmd  and then clicking on the Command Prompt result.
 
-Go back to your Adobe Experience Platform UI (should be open in your browser) or navigate to [https://platform.adobe.com](https://platform.adobe.com).
+![open-command-prompt.png](./images/open-command-prompt.png)
 
-Select **Schemas**, enter `Demo System - Event Schema for Website (Global v1.1)` in the **search** field and select `Demo System - Event Schema for Website (Global v1.1) Schema` from the list.
+For macOS: Open the terminal.app via spotlight search:
 
-![browse-schema.png](./images/browse-schema.png)
+![open-terminal-osx.png](./images/open-terminal-osx.png)
 
-Explore the XDM model for **Demo System - Event Schema for Website (Global v1.1)**, by clicking on an object. Expand the tree for **placecontext**, **geo** and **schema**. When you select the actual attribute **longitude**, you will see the complete path in the highlighted red box. To copy the attribute's path, click on the copy path icon.
+Paste the connect command that you have copied from the Query Service UI and hit enter in the command prompt window:
 
-![explore-schema-for-path.png](./images/explore-schema-for-path.png)
+Windows:
 
-Switch to your notepad/brackets and remove **your_attribute_path_here** from the first line. Position your cursor after **select** on the first line and paste (CTRL-V). 
+![command-prompt-connected.png](./images/command-prompt-connected.png)
 
-Copy the modified statement from notepad/brackets and paste it at the prompt in your **PSQL command-line interface** and hit enter.
+MacOS:
 
-The result should look like:
+![command-prompt-paste-osx.png](./images/command-prompt-paste-osx.png)
 
-```text
-aepenablementfy21:all=> select placeContext.geo._schema.longitude
-aepenablementfy21:all-> from   demo_system_event_dataset_for_website_global_v1_1
-aepenablementfy21:all-> where  eventType = 'commerce.productViews'
-aepenablementfy21:all-> and placecontext.geo.countryCode <> ''
-aepenablementfy21:all-> limit 1;
- longitude  
-------------
- -3.1269422
-```
+You are now connected to Query Service using PSQL.
 
-Next Step: [5.1.3 Queries, queries, queries...  and churn analysis](./ex3.md)
+In the next exercises, there will be quite some interaction with this window. We will refer to it as your **PSQL command-line interface**.
+
+Now you are ready to start submitting queries.
+
+Next Step: [5.1.3 Using the Query Service](./ex3.md)
 
 [Go Back to Module 5.1](./query-service.md)
 
