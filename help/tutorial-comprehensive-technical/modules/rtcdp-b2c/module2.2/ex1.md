@@ -46,33 +46,20 @@ You'll then see this. Click **+ Add** under Field groups.
 Search and select the following **Field Groups** to add to this Schema:
 
 - Consumer Experience Event
-- End User ID Details
+
+![New CEE schema](./images/cee1.png)
+
+- IdentityMap
 
 Click **Add Field Groups**.
 
-![New CEE schema](./images/cee.png)
+![New CEE schema](./images/cee2.png)
 
-You'll then see this. Click the Field Group **End User ID Details**.
-
-![Create new schema](./images/eui1.png)
-
-Navigate to the field **endUserIDs._experience.emailid.id**.
-
-![Create new schema](./images/eui2.png)
-
-In the right menu for the field **endUserIDs._experience.emailid.id**, scroll down and check the checkbox for **Identity**, check the checkbox for **Primary Identity** and select the **Identity namespace** of **Email**. Click **Apply**.
-
-![Create new schema](./images/eui3.png)
-
-Navigate to the field **endUserIDs._experience.mcid.id**. Check the checkbox for **Identity** and select the **Identity namespace** of **ECID**. Click **Apply**.
-
-![Create new schema](./images/eui4.png)
-
-You'll then have this. Next, select the name of your schema. You should now enable your schema for **Profile**, by clicking the **Profile** toggle.
+You'll then see this. Next, select the name of your schema. You should now enable your schema for **Profile**, by clicking the **Profile** toggle.
 
 ![Create new schema](./images/xdmee3.png)
 
-You'll then see this. Click **Enable**.
+You'll then see this. CHeck the checkbox for **Data for this schema will contain a primary identity in the identityMap field.**. Click **Enable**.
 
 ![Create new schema](./images/xdmee4.png)
 
@@ -114,19 +101,19 @@ You're now ready to start ingesting Consumer Experience Event data and start usi
 
 ## Download Experience Event test data
 
-Once the **Schema** and **Dataset** are configured, you're now ready to ingest Experience Event data. Since Customer AI requires data across **2 quarters at least**, you'll need to ingest externally prepared data.
+Once the **Schema** and **Dataset** are configured, you're now ready to ingest Experience Event data. Since Customer AI requires has specific data requirements, you'll need to ingest externally prepared data.
 
-The data prepared for the experience events must comply to the requirements and schema of the [Consumer Experience Event XDM Mixin](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
+The data prepared for the experience events in this exercise must comply to the requirements and schema of the [Consumer Experience Event XDM Field Group](https://github.com/adobe/xdm/blob/797cf4930d5a80799a095256302675b1362c9a15/docs/reference/context/experienceevent-consumer.schema.md).
 
-Please download the file containing sample data from this location: [https://dashboard.adobedemo.com/data](https://dashboard.adobedemo.com/data). Click the **Download** button.
+Please download the zip file with demo data from this location: [https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/CUSTOM-CAI-EVENTS-WEB.zip).
 
-![Dataset](./images/dsn1.png)
-
-Alternatively, if you can't access the above link, you can download the file also from this location: [https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip](https://aepmodule10.s3-us-west-2.amazonaws.com/retail-v1-dec2020-xl.json.zip).
-
-You've now downloaded a file named **retail-v1-dec2020-xl.json.zip**. Place the file on your computer's desktop and unzip it, after which you'll see a file named **retail-v1.json**. You'll need this file in the next exercise.
+You've now downloaded a file named **CUSTOM-CAI-EVENTS-WEB.zip**. Place the file on your computer's desktop and unzip it, after which you'll see a folder named **CUSTOM-CAI-EVENTS-WEB**. 
 
 ![Dataset](./images/ingest.png)
+
+In that folder, you'll find multiple sequenced json files, which all need to be ingested in the next exercise.
+
+![Dataset](./images/ingest1a.png)
 
 ## Ingest Experience Event test data
 
@@ -138,13 +125,15 @@ In your dataset, click **Choose files** to add data.
 
 ![Dataset](./images/ingest2.png)
 
-In the popup, select the file **retail-v1.json** and click **Open**.
+In the popup, select the files **WEBSITE-EE-1.json** until **WEBSITE-EE-5.json** and click **Open**.
 
 ![Dataset](./images/ingest3.png)
 
+Repeat this ingestion process for the files **WEBSITE-EE-6.json** and **WEBSITE-EE-7.json**.
+
 You'll then see the data being imported, and a new batch is created in the **Loading** state. Don't navigate away from this page until the file is uploaded.
 
-![Dataset](./images/ingest4.png)
+![Dataset](./images/ingest4.png) 
 
 Once the file has been uploaded, you'll see the batch status change from **Loading** to **Processing**.
 
@@ -152,11 +141,9 @@ Once the file has been uploaded, you'll see the batch status change from **Loadi
 
 Ingesting and processing the data might take 10-20min.
 
-Once data ingestion is successful, the batch status will change to **Success**.
+Once data ingestion is successful, the batch status of the various uploads will change to **Success**.
 
 ![Dataset](./images/ingest7.png)
-
-![Dataset](./images/ingest8.png)
 
 Next Step: [2.2.2 Customer AI - Create a New Instance (Configure)](./ex2.md)
 
