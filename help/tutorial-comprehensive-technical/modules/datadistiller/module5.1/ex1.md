@@ -12,6 +12,12 @@ exl-id: b8a404d1-7796-46e3-b245-553acdc753ae
 Follow the instruction outlined in the Adobe Experience Platform documentation to install the psql client:
 [PSQL Install Guide](https://experienceleague.adobe.com/docs/experience-platform/query/clients/psql.html)
 
+Once you've installed PSQL, you may need to update your **PATH** by running the below command in a terminal window:
+
+For macOS (replace XX in the below command by the version number of PSQL that you installed):
+
+`export PATH=/Library/PostgreSQL/XX/bin:$PATH`
+
 ## Install Power BI
 
 Only for Windows users
