@@ -44,6 +44,7 @@ auto-video-transcripts: true
   + [Overview](/help/platform/ai-assistant/overview.md)
   + [Set up access](/help/platform/ai-assistant/access.md)
   + [Clean up audiences](/help/platform/ai-assistant/find-unused-audiences.md)
+  + [Onboard with a new product](/help/platform/ai-assistant/onboard.md)
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
