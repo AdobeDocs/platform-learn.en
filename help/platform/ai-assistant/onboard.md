@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 128
 last-substantial-update: 2024-12-03
 jira: KT-16498
+exl-id: f569852b-3076-4f4e-ba75-c1ae6c7437f2
 ---
-
 # Use AI Assistant to reduce onboarding time
 
 Learn how to use AI Assistant to quickly ramp up on new features and reduce onboarding time. For more information, see the [Question guide for AI Assistant](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/questions).
