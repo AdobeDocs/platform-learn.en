@@ -13,7 +13,7 @@ Learn how to generate datasets from query results
 Connect Microsoft Power BI Desktop/Tableau directly to the Query Service
 Creating a report in Microsoft Power BI Desktop/Tableau Desktop
 
-## Lesson Context
+## Context
 
 A command line interface to query data is exciting but it doesn't present well. In this lesson, we will guide you through a recommended workflow for how you can use Microsoft Power BI Desktop/Tableau directly the Query Service to create visual reports for your stakeholders.
 
@@ -35,11 +35,11 @@ select /* enter your name */
        c.--aepTenantId--.interactionDetails.core.callCenterAgent.callContractCancelled as contractCancelled,
        l.--aepTenantId--.loyaltyDetails.level as loyaltystatus,
        l.--aepTenantId--.loyaltyDetails.points as loyaltypoints,
-       l.--aepTenantId--.identification.core.loyaltyId as crmid
+       l.--aepTenantId--.identification.core.crmId as crmid
 from   demo_system_event_dataset_for_website_global_v1_1 e
       ,demo_system_event_dataset_for_call_center_global_v1_1 c
-      ,demo_system_profile_dataset_for_loyalty_global_v1_1 l
-where  e.--aepTenantId--.demoEnvironment.brandName IN ('Luma Telco', 'Citi Signal')
+      ,demo_system_profile_dataset_for_crm_global_v1_1 l
+where  e.--aepTenantId--.demoEnvironment.brandName IN ('Citi Signal')
 and    e.web.webPageDetails.name in ('Cancel Service', 'Call Start')
 and    e.--aepTenantId--.identification.core.ecid = c.--aepTenantId--.identification.core.ecid
 and    l.--aepTenantId--.identification.core.ecid = e.--aepTenantId--.identification.core.ecid;
@@ -51,23 +51,23 @@ You will search for your executed statement in the Adobe Experience Platform Que
 
 Select **Queries**, go to **Log** and enter your ldap in the search field.
 
-![search-query-for-ctas.png](./images/search-query-for-ctas.png)
+![search-query-for-ctas.png](./images/searchqueryforctas.png)
 
-Select your query and click **Output Dataset**.
+Select your query and click **Run as CTAS**.
 
-![search-query-for-ctas.png](./images/search-query-for-ctasa.png)
+![search-query-for-ctas.png](./images/searchqueryforctasa.png)
 
-Enter `--aepUserLdap-- Callcenter Interaction Analysis` as name and description for the dataset and press the **Run Query** button
+Enter `--aepUserLdap-- Callcenter Interaction Analysis` as name and description for the dataset and click **Run as CTAS**.
 
-![create-ctas-dataset.png](./images/create-ctas-dataset.png)
+![create-ctas-dataset.png](./images/createctasdataset.png)
 
 As a result, you will see a new query with a status **Submitted**.
 
-![ctas-query-submitted.png](./images/ctas-query-submitted.png)
+![ctas-query-submitted.png](./images/ctasquerysubmitted.png)
 
 Upon completion, you will see a new entry for **Dataset Created** (you might need to refresh the page).
 
-![ctas-dataset-created.png](./images/ctas-dataset-created.png)
+![ctas-dataset-created.png](./images/ctasdatasetcreated.png)
 
 As soon as your dataset is created (which can take 5-10 minutes), you can continue the exercise.
 
