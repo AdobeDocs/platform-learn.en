@@ -17,12 +17,10 @@ Some of the benefits of the Platform Web SDK compared to the standalone at.js li
 * Faster sharing of audiences from [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
 * Integrating Target with Journey Optimizer to support [Offer Decisioning delivery](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
 * Ability to use [first-party ids](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/generate-first-party-device-ids.html) to generate the ECID for longer duration visitor identification
-* Consolidation of network calls across Adobe applications
 * A smaller footprint for improved page speed metrics
-* A tighter integration with Adobe Analytics which does not rely on stitching information from separate network calls
 * Additional implementation flexibility for developers
 
-Arguably, the largest benefit to Target customers of migrating is for integration with Real-Time Customer Data Platform. Real-Time CDP offers tremendous audience-building capabilities based on the full range of data ingested into Experience Platform and its Real-time Customer Profile capability. A built-in data governance framework, automates responsible use of that data. Customer AI allows you to easily use machine learning models to construct propensity and churn models whose output can be shared back to Adobe Target. And finally, customers of the optional Healthcare and Privacy & Security Shield addons can use the consent enforcement feature to easily enforce individual customers' consent preferences. Platform Web SDK is a requirement to use these RTCDP features in your web channel.
+Arguably, the largest benefit to Target customers of migrating is for integration with Real-Time Customer Data Platform. Real-Time CDP offers tremendous audience-building capabilities based on the full range of data ingested into Experience Platform and its Real-time Customer Profile capability. A built-in data governance framework, automates responsible use of that data. Customer AI allows you to easily use machine learning models to construct propensity and churn models whose output can be shared back to Adobe Target. And finally, customers of the optional Healthcare and Privacy & Security Shield addons can use the consent enforcement feature to easily enforce individual customers' consent preferences. Platform Web SDK is a requirement to use these Real-Time CDP features in your web channel.
 
 ## Learning objectives
 
