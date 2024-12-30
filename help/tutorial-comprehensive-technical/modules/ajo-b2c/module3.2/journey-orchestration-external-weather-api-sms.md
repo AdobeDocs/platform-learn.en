@@ -9,8 +9,6 @@ exl-id: 7f3d6dcb-845d-4ff1-97c3-8e93b8d2c624
 ---
 # 3.2 Adobe Journey Optimizer: External data sources and custom actions
 
-**Author: [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In this module, you'll use Adobe Journey Optimizer to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way. You've already had an initial hands-on experience with Adobe Journey Optimizer in Module 6. In this exercise, you'll go a bit deeper and explore a more advanced use case whereby external data sources are used as part of a journey.
 
 ## Learning Objectives
