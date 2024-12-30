@@ -1,6 +1,6 @@
 ---
-title: Adobe Journey Optimizer: External data sources and custom actions
-description: Adobe Journey Optimizer: External data sources and custom actions
+title: Adobe Journey Optimizer - External data sources and custom actions
+description: Adobe Journey Optimizer - External data sources and custom actions
 kt: 5342
 doc-type: tutorial
 ---
