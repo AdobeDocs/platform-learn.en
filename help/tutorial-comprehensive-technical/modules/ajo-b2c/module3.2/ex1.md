@@ -94,13 +94,9 @@ Finally, you need to recover the `Orchestration eventID` for your custom event.
 Open your event again by clicking it in the list of events.
 On your Event, click on the **View Payload** icon next to **Fields**.
 
-![Demo](./images/eventlist1.png)
-
-Clicking the **View Payload** icon opens up a sample XDM payload for this event.
-
 ![Demo](./images/fieldseyepayload.png)
 
-Scroll down in the **Payload** until you see the line `eventID`.
+Clicking the **View Payload** icon opens up a sample XDM payload for this event. Scroll down in the **Payload** until you see the line `eventID`.
 
 ![Demo](./images/fieldseyepayloadev.png)
 

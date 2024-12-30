@@ -98,8 +98,6 @@ Open the Profile Viewer panel and go to Real-time Customer Profile. On the Profi
 
 On the Profile Viewer panel, click **UTILITIES**. Enter `geofenceevent` and click **Send**.
 
-![Demo](./images/smsdemo1.png)
-
 >[!NOTE]
 >
 >In case you don't have the option on the Profile Viewer panel to send a direct call event, you can manually send one by open the Developer View of your browse and going to **Console**, and then paste and send this command: `_satellite.track('geofenceevent')`.

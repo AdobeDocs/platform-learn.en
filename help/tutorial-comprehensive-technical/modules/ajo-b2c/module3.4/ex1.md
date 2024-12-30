@@ -8,11 +8,11 @@ doc-type: tutorial
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.1.1 Create your event
 
@@ -26,23 +26,14 @@ On the **Events** screen, you'll see a view similar to this. Click **Create Even
 
 You'll then see an empty event configuration.
 
-![Journey Optimizer](./images/oc32.png)
-
 First of all, give your Event a Name like this: `--aepUserLdap--PurchaseEvent`, and add a description like this: `Purchase Event`.
 
-![Journey Optimizer](./images/oc34.png)
-
-Next is the **Event Type** selection. Select **Unitary**.
-
-![Journey Optimizer](./images/eventidtype1.png)
-
-Next is the **Event ID Type** selection. Select **System Generated**
+For **Type**, select **Unitary**.
+For **Event ID Type**, select **System Generated**.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
 Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
-
-![Journey Optimizer](./images/oc35.png)
 
 After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Click the **Edit/Pencil** icon to add additional fields to this event.
 
@@ -56,21 +47,19 @@ First of all, check the checkbox on the line `--aepTenantId--`.
 
 ![Journey Optimizer](./images/oc38.png)
 
-Next, scroll down and check the checkbox on the line `productListItems`. 
-
-![Journey Optimizer](./images/oc39.png)
-
 Next, scroll down and check the checkbox on the line `commerce`. 
 
 ![Journey Optimizer](./images/oc391.png)
 
-Next, click **Ok**.
+Next, scroll down and check the checkbox on the line `productListItems`. Click **Ok**.
+
+![Journey Optimizer](./images/oc39.png)
 
 You'll then see that additional fields have been added to the event. Click **Save**.
 
 ![Journey Optimizer](./images/oc40.png)
 
-Your new event is then shared and you'll see your event in the list of available events now.
+Your new event is then saved and you'll see your event in the list of available events now.
 
 Click on your event again to open up the **Edit Event** screen again. 
 Hover over the **Payload** field again to see the 3 icons again. Click on the **View Payload** icon. 
@@ -82,7 +71,7 @@ You'll now see an example of the expected payload. Your event has a unique orche
 ![Journey Optimizer](./images/oc42.png)
 
 The event ID is what needs to be sent to Adobe Journey Optimizer in order to trigger the journey that you'll build in the next step. Write down this eventID, as you'll need it in one of the next steps.
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
 
 Click **Ok**, followed by **Cancel**.
 
