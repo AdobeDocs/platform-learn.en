@@ -110,6 +110,10 @@ Open the Profile Viewer panel and go to Real-time Customer Profile. On the Profi
 
 ![Launch Setup](./images/email.png)
 
+You'll also see the journey entry and progress through the journey on the journey's dashboard in Journey Optimizer.
+
+![Launch Setup](./images/emaildash.png)
+
 Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 3.1](./journey-orchestration-create-account.md)
