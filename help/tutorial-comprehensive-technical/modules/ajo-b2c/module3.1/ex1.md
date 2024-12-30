@@ -10,7 +10,7 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. 
 
 ![ACOP](./images/acoptriglp.png)
 
@@ -27,18 +27,11 @@ A new, empty event window will then pop up.
 ![ACOP](./images/emptyevent1.png)
 
 First of all, give your Event a Name like this: `--aepUserLdap--AccountCreationEvent`.
-
-![ACOP](./images/eventname.png)
-
-Next, add a description like this `Account Creation Event`.
+Set the description to `Account Creation Event`, make sure the **Type** is set to **Unitary** and for the **Event ID Type** selection, select **System Generated**.
 
 ![ACOP](./images/eventdescription.png)
 
-Next, make sure the **Type** is set to **Unitary**, and for the **Event ID Type** selection, select **System Generated**.
-
-![ACOP](./images/eventidtype.png)
-
-Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
+Next is the Schema selection. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
 
 ![ACOP](./images/eventschema.png)
 
@@ -54,21 +47,13 @@ In the object `--aepTenantId--.demoEnvironment`, please make sure to select the 
 
 ![ACOP](./images/eventpayloadbr.png)
 
-In the object `--aepTenantId--.identification.core`, please make sure to select the field **email**.
+In the object `--aepTenantId--.identification.core`, please make sure to select the field **email**. Click **Ok** to save your changes.
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-Click **Ok** to save your changes.
-
-![ACOP](./images/saveok.png)
-
-You should then see this:
+You should then see this. Set the **Namespace** to **ECID (ECID)**. Click **Save**.
 
 ![ACOP](./images/eventsave.png)
-
-Click **Save** once more to save your changes.
-
-![ACOP](./images/save1.png)
 
 Your event is now configured and saved.
 
@@ -84,12 +69,16 @@ You'll now see an example of the expected payload.
 
 Your Event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see `_experience.campaign.orchestration.eventID`.
 
+The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the journey that you'll build next. Remember this eventID, as you'll need it in one of the next exercises.
+`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+
+Click **Ok**.
+
 ![ACOP](./images/payloadeventID.png)
 
-The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in Exercise 7.2. Remember this eventID, as you'll need it in Exercise 7.3.
-`"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`
+Click **Cancel**.
 
-Click **Ok**, followed by clicking **Cancel**.
+![ACOP](./images/payloadeventID1.png)
 
 You've now finished this exercise.
 

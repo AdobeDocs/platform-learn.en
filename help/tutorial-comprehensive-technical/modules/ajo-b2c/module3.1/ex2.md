@@ -12,21 +12,21 @@ Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://ex
 
 ![ACOP](./images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`.
 
 ![ACOP](./images/acoptriglp.png)
 
-## 3.1.2.1 Create your journey
+## Create your journey
 
 In the left menu, click **Journeys**. Next, click **Create Journey** to create a new journey.
 
-![ACOP](./images/createjourney.png)
+![ACOP](./images/createjourney.png) 
 
 You'll then see an empty journey screen.
 
 ![ACOP](./images/journeyempty.png)
 
-In the previous exercise, you created a new **Event**. You named it like this `ldapAccountCreationEvent` and replaced `ldap` with your ldap. This was the result of the Event creation:
+In the previous exercise, you created a new **Event**. You named it like this `--aepUserLdap--AccountCreationEvent` and replaced `ldap` with your ldap. This was the result of the Event creation:
 
 ![ACOP](./images/eventdone.png)
 
@@ -42,25 +42,19 @@ As the second step in the journey, you need to add a short **Wait** step. Go to 
 
 ![ACOP](./images/journeywait.png)
 
-Your journey now looks like this. On the right side of the screen you need to configure the wait time. Set it to 1 minute. This will give plenty of time for the profile attributes to be available after the event fires.
+Your journey now looks like this. On the right side of the screen you need to configure the wait time. Set it to 1 minute. This will give plenty of time for the profile attributes to be available after the event fires. Click **Save** to save your changes.
 
 ![ACOP](./images/journeywait1.png)
-
-Click **Ok** to save your changes.
 
 As the third step in the journey, you need to add an **Email** action. Go to the left side of your screen to **Actions**, select the **Email** action, then drag and drop it on the second node in your journey. You now see this.
 
 ![ACOP](./images/journeyactions.png)
 
-Set the **Category** to **Marketing** and select an email surface that enables you to send email. In this case, the email surface to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
+Set the **Category** to **Marketing** and select an email configuration that enables you to send email. In this case, the email configuration to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
 
 ![ACOP](./images/journeyactions1.png)
 
-The next step is to create your message. To do that, click **Edit content**.
-
-![ACOP](./images/journeyactions2.png)
-
-## 3.1.2.2 Create your message
+## Create your message
 
 To create your message, click **Edit content**.
 
@@ -70,23 +64,11 @@ You now see this.
 
 ![ACOP](./images/journeyactions3.png)
 
-Click the **Subject line** text field.
+Click the **Open personalization dialog** icon.
 
 ![Journey Optimizer](./images/msg5.png)
 
-In the text area start writing **Hi**
-
-![Journey Optimizer](./images/msg6.png)
-
-The subject line is not done yet. Next you need to bring in the personalization token for the field **First name** which is stored under `profile.person.name.firstName`. In the left menu, scroll down to find the **Person** element and click on the arrow to go a level deeper.
-
-![Journey Optimizer](./images/msg7.png)
-
-Now find the **Full name** element and click on the arrow to go a level deeper.
-
-![Journey Optimizer](./images/msg8.png)
-
-Finally, find the **First name** field and click on the **+** sign next to it. You'll then see the personalization token appear in the text field.
+Write the text `Hi `. Next you need to bring in the personalization token for the field **First name** which is stored under `profile.person.name.firstName`. In the left menu, navigate to find the **Person > Full Name > First Name** field and click on the **+** icon. You'll then see the personalization token appear in the text field.
 
 ![Journey Optimizer](./images/msg9.png)
 
@@ -94,7 +76,7 @@ Next, add the text **, thank you for signing up!**. Click **Save**.
 
 ![Journey Optimizer](./images/msg10.png)
 
-You'll then be back here. Click **Email Designer** to create the email's content. 
+You'll then be back here. Click **Edit email body** to create the email's content. 
 
 ![Journey Optimizer](./images/msg11.png)
 
@@ -128,13 +110,13 @@ Next, drag and drop a **1:1 column** underneath the previous component. This wil
 
 ![Journey Optimizer](./images/msg17.png)
 
-Next, let's use Content Components to add content inside these blocks. Click on the **Content Components** menu item
+Next, let's use Content Components to add content inside these blocks. 
 
 ![Journey Optimizer](./images/msg18.png)
 
 Drag and drop an **Image** component in the first cell on the first row. Click **Browse**.
 
-![Journey Optimizer](./images/msg19.png)
+![Journey Optimizer](./images/msg19.png) -
 
 You'll then see this. Navigate to the folder **enablement-assets** and select the file **luma-logo.png**. Click **Select**.
 
@@ -222,7 +204,7 @@ Click **Ok**.
 
 ![Journey Optimizer](./images/msg57a.png)
 
-## 3.1.2.3 Publish your journey
+## Publish your journey
 
 You still need to give your journey a Name. You can do that by clicking the **Properties** icon in the top right side of your screen.
 

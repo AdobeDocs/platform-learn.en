@@ -6,9 +6,7 @@ doc-type: tutorial
 ---
 # 3.1 Adobe Journey Optimizer: Orchestration
 
-**Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-In this module, we will take you through the steps to use Adobe Journey Optimizer. You'll get access to Adobe Journey Optimizer and will be able to configure Events and Journeys that start based on a trigger from an experience event sent to Platform.
+In this module, we will take you through the steps to use Adobe Journey Optimizer. You'll configure events and journeys that start based on a trigger from an experience event sent to AEP.
 
 ## Learning Objectives
 
