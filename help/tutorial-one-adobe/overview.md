@@ -52,7 +52,7 @@ In this foundational module, you will use Adobe Firefly to ...
 
 ### 2. Content Supply Chain
 
-[2.1 Adobe Experience Manager Cloud Service](./modules/csc/module2.1/workfront.md)
+[2.1 Adobe Experience Manager Cloud Service](./modules/csc/module2.1/aemcs.md)
 
 In this foundational module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
 
