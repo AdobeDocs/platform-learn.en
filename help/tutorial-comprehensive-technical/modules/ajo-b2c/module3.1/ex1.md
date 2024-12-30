@@ -82,7 +82,7 @@ Click **Cancel**.
 
 You've now finished this exercise.
 
-Next Step: [3.1.2 Journey Optimizer: Create your journey and email message](./ex2.md)
+Next Step: [3.1.2 Create fragments to be used in your message](./ex2.md)
 
 [Go Back to Module 3.1](./journey-orchestration-create-account.md)
 

@@ -28,11 +28,15 @@ In this module, we will take you through the steps to use Adobe Journey Optimize
 
 In this exercise, you'll learn how to configure an event.
 
-[3.1.2 Create your journey and email message](./ex2.md)
+[3.1.2 Create fragments to be used in your message](./ex2.md)
+
+In this exercise, you'll learn how to configure reusable fragments that you'll use when creating your email message.
+
+[3.1.3 Create your journey and email message](./ex3.md)
 
 In this exercise, you'll learn how to configure an email message.
 
-[3.1.3 Update your Data Collection property and test your journey](./ex3.md)
+[3.1.3 Update your Data Collection property and test your journey](./ex4.md)
 
 This will guide you through the configuration of Launch to trigger your event and provide the right payload and finally, you'll be able to send yourself an email.
 
