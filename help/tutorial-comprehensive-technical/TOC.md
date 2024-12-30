@@ -102,8 +102,9 @@ recommendations: noDisplay,noCatalog
   + 3.1 Adobe Journey Optimizer: Orchestration {#module31}
     + [Overview](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
     + [3.1.1 Create your event](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
-    + [3.1.2 Create your journey and email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
-    + [3.1.3 Update your Data Collection property and test your Journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+    + [3.1.2 Create fragments to be used in your message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
+    + [3.1.3 Create your journey and email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+    + [3.1.4 Update your Data Collection property and test your Journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
   + 3.2 Adobe Journey Optimizer: External data sources and custom actions {#module32}
     + [Overview](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)
