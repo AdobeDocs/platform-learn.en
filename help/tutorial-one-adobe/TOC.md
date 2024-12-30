@@ -13,7 +13,7 @@ recommendations: noDisplay,noCatalog
 + 1 Adobe Creative Cloud {#creativecloud}
   + 1.1 Adobe Firefly Services {#module11}
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
-    + [1.1.1 Getting Started with Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
+    + [1.1.1 Getting Started with Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
 
 + 2 Content Supply Chain {#csc}  
