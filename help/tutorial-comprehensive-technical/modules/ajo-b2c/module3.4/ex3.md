@@ -9,11 +9,11 @@ exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
 
 Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
 You'll be redirected to the **Home** view in Journey Optimizer. Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepTenantId--``. 
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.3.1 Segment-based personalization
 

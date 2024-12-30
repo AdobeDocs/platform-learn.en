@@ -11,11 +11,11 @@ In this exercise, you'll create a custom external data source by making use of A
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Data Sources**.
 
@@ -40,13 +40,9 @@ Click **Create an Account**.
 
 ![WeatherMap](./images/owm1.png)
 
-Fill out the details.
+Fill out the details. Click **Create Account**.
 
 ![WeatherMap](./images/owm2.png)
-
-Click **Create Account**.
-
-![WeatherMap](./images/owm3.png)
 
 You'll then be redirected to your Account Page.
 
@@ -60,7 +56,7 @@ An **API Key** looks like this: `b2c4c36b6bb59c3458d6686b05311dc3`.
 
 You can find the **API Documentation** for the **Current Weather** [here](https://openweathermap.org/current).
 
-In our use-case, we'll implement the connection with Open Weather Map based on the city the customer is in.
+For this use-case, you'll implement the connection with Open Weather Map based on the city the customer is in, using the **Built-in API request by city name**.
 
 ![WeatherMap](./images/owm6.png)
 
@@ -68,7 +64,7 @@ Go back to **Adobe Journey Optimizer**, to your empty **External Data Source** p
 
 ![Demo](./images/emptyds.png)
 
-As a Name for the data source, use `--aepUserLdap--WeatherApi`. In this example, the data source Name is `vangeluwWeatherApi `.
+As a Name for the data source, use `--aepUserLdap--WeatherApi`.
 
 Set Description to: `Access to the Open Weather Map`.
 
@@ -93,7 +89,7 @@ Finally, you need to define a **FieldGroup**, which is basically the request you
 
 ![Demo](./images/fg.png)
 
-According to the Weather API Documentation, we need to send a parameter `q=City`.
+According to the Weather API Documentation, you need to send a parameter `q=City`.
 
 ![Demo](./images/owmapi.png)
 
@@ -101,58 +97,68 @@ In order to match the expected API Request, configure your FieldGroup as follows
 
 >[!IMPORTANT]
 >
->The Field group name has to be unique, please use this naming convention: `--aepUserLdap--WeatherByCity` so in this case, the name should be `vangeluwWeatherByCity`
+>The Field group name has to be unique, please use this naming convention: `--aepUserLdap--WeatherByCity`
 
 ![Demo](./images/fg1.png)
 
 For the Response Payload, you need to paste an example of the Response that will be sent by the Weather API.
 
-You can find the expected API JSON Response on the API Documentation page [here](https://openweathermap.org/current).
+You can find the expected API JSON Response on the API Documentation page [here](https://openweathermap.org/current), under the **JSON** subject.
 
 ![Demo](./images/owmapi1.png)
 
 Or you can copy the JSON Response from here:
 
 ```json
-{"coord": { "lon": 139,"lat": 35},
-  "weather": [
-    {
-      "id": 800,
-      "main": "Clear",
-      "description": "clear sky",
-      "icon": "01n"
-    }
-  ],
-  "base": "stations",
-  "main": {
-    "temp": 281.52,
-    "feels_like": 278.99,
-    "temp_min": 280.15,
-    "temp_max": 283.71,
-    "pressure": 1016,
-    "humidity": 93
-  },
-  "wind": {
-    "speed": 0.47,
-    "deg": 107.538
-  },
-  "clouds": {
-    "all": 2
-  },
-  "dt": 1560350192,
-  "sys": {
-    "type": 3,
-    "id": 2019346,
-    "message": 0.0065,
-    "country": "JP",
-    "sunrise": 1560281377,
-    "sunset": 1560333478
-  },
-  "timezone": 32400,
-  "id": 1851632,
-  "name": "Shuzenji",
-  "cod": 200
-}
+{
+   "coord": {
+      "lon": 7.367,
+      "lat": 45.133
+   },
+   "weather": [
+      {
+         "id": 501,
+         "main": "Rain",
+         "description": "moderate rain",
+         "icon": "10d"
+      }
+   ],
+   "base": "stations",
+   "main": {
+      "temp": 284.2,
+      "feels_like": 282.93,
+      "temp_min": 283.06,
+      "temp_max": 286.82,
+      "pressure": 1021,
+      "humidity": 60,
+      "sea_level": 1021,
+      "grnd_level": 910
+   },
+   "visibility": 10000,
+   "wind": {
+      "speed": 4.09,
+      "deg": 121,
+      "gust": 3.47
+   },
+   "rain": {
+      "1h": 2.73
+   },
+   "clouds": {
+      "all": 83
+   },
+   "dt": 1726660758,
+   "sys": {
+      "type": 1,
+      "id": 6736,
+      "country": "IT",
+      "sunrise": 1726636384,
+      "sunset": 1726680975
+   },
+   "timezone": 7200,
+   "id": 3165523,
+   "name": "Province of Turin",
+   "cod": 200
+}    
 ```
 
 Copy the above JSON Response to your clipboard, then go to your custom data source configuration screen.

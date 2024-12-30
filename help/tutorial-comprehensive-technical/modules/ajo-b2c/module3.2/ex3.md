@@ -7,45 +7,35 @@ exl-id: d9bdc4c6-7539-4646-9b75-f397b792479f
 ---
 # 3.2.3 Define a custom action
 
-In this exercise, you'll create two custom actions by making use of Adobe Journey Optimizer in combination.
+In this exercise, you'll create a custom action to send a message to a Slack channel.
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
+
+You'll now use an existing Slack channel and send messages to that Slack channel. Slack has an easy-to-use API and you'll use Adobe Journey Optimizer to trigger their API.
+
+![Demo](./images/slack.png)
 
 In the left menu, scroll down and click **Configurations**. Next, click the **Manage** button under **Actions**.
 
 ![Demo](./images/menuactions.png)
 
-You'll then see the **Actions** list.
+You'll then see the **Actions** list. Click **Create Action**.
 
 ![Demo](./images/acthome.png)
-
-You'll define one action that sends a text to a Slack channel.
-
-## 3.2.3.1 Action: Send Text to Slack Channel
-
-You'll now use an existing Slack channel and send messages to that Slack Channel. Slack has an easy-to-use API and we'll use Adobe Journey Optimizer to trigger their API.
-
-![Demo](./images/slack.png)
-
-Click **Create Action** to start adding a new action.
-
-![Demo](./images/adda.png)
 
 You'll see an empty Action popup.
 
 ![Demo](./images/emptyact.png)
 
-As a Name for the Action, use `--aepUserLdap--TextSlack`. In this example, the Action Name is `vangeluwTextSlack`.
+As a Name for the Action, use `--aepUserLdap--TextSlack`.
 
-Set Description to: `Send Text to Slack`.
-
-![Demo](./images/slackname.png)
+Set Description to: `Send Message to Slack`.
 
 For the **URL Configuration**, use this:
 
@@ -56,6 +46,8 @@ For the **URL Configuration**, use this:
 >
 >The above URL refers to an AWS Lambda function which will then forward your request to the Slack channel as mentioned above. This is done to protect access to an Adobe-owned Slack channel. If you have your own Slack channel, you should create a Slack App through [https://api.slack.com/](https://api.slack.com/), you then need to create an Incoming Webhook in that Slack App, and then replace the above URL by your Incoming Webhook URL.
 
+![Demo](./images/slackname.png)
+
 You don't need to change the Header Fields.
 
 ![Demo](./images/slackurl.png)
@@ -64,9 +56,9 @@ You don't need to change the Header Fields.
 
 ![Demo](./images/slackauth.png)
 
-For the **Action Parameters**, you need to define which fields should be sent towards Slack. Logically, we want Adobe Journey Optimizer and Adobe Experience Platform to be the brain of personalization, so the text to send to Slack should be defined by Adobe Journey Optimizer and then sent to Slack for execution.
+Under **Payloads**, you need to define which fields should be sent towards Slack. Logically, you want Adobe Journey Optimizer and Adobe Experience Platform to be the brain of personalization, so the text to send to Slack should be defined by Adobe Journey Optimizer and then sent to Slack for execution.
 
-So for the **Action Parameters**, click the **Edit Payload** icon.
+For the **Request**, click the **Edit Payload** icon.
 
 ![Demo](./images/slackmsgp.png)
 
@@ -86,23 +78,11 @@ Copy the below text and paste it in the empty popup window.
 }
 ```
 
-FYI: by specifying the below fields, these fields will become accessible from your Customer Journey and you'll be able to populate them dynamically from the Journey:
-
-**"toBeMapped": true,**
-
-**"dataType": "string",**
-
-**"label": "textToSlack"**
-
 You'll then see this:
 
 ![Demo](./images/slackmsgpopup1.png)
 
-Click **Save**.
-
-![Demo](./images/twiliomsgpopup2.png)
-
-Scroll up and click **Save** one more time to save your custom Action.
+Scroll up and click **Save** one more time to save your action.
 
 ![Demo](./images/slackmsgpopup3.png)
 
@@ -114,6 +94,6 @@ You've defined events, an external data sources and actions. Now let's consolida
 
 Next Step: [3.2.4 Create your journey and messages](./ex4.md)
 
-[Go Back to Module 8](journey-orchestration-external-weather-api-sms.md)
+[Go Back to Module 3.2](journey-orchestration-external-weather-api-sms.md)
 
 [Go Back to All Modules](../../../overview.md)
