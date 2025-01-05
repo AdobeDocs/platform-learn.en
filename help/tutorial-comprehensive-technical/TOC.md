@@ -11,6 +11,7 @@ recommendations: noDisplay,noCatalog
 
 + [Tutorial Overview](/help/tutorial-comprehensive-technical/overview.md)
 + [Completion](/help/tutorial-comprehensive-technical/completion.md)
++ [Content Status](/help/tutorial-comprehensive-technical/status.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}

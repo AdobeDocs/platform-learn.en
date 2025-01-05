@@ -9,17 +9,11 @@ exl-id: a7218d65-422b-48e5-89fa-864c5af8d1c6
 ---
 # 3.3 Offer Decisioning
 
-**Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In this module, you will get a hands-on walkthrough of Adobe Journey Optimizer's Offer Decisioning capabilities.
 
 Adobe Journey Optimizer provides the ability to create personalized offers and deliver them in an orchestrated way to all destinations that are linked to Adobe Journey Optimizer.
 
 With Offer Decisioning, you can determine the best option from a set of available choices. These options could be offers, product recommendations, content components for a web experience, conversation scripts, and actions to take. 
-
-Please watch this video to understand the value and customer journey:
-
->[!VIDEO](https://video.tv.adobe.com/v/328829?quality=12&learn=on)
 
 ## Learning Objectives
 
