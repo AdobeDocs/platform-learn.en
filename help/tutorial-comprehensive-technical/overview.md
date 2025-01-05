@@ -61,6 +61,8 @@ For every module that you complete using the below tutorial, you need to submit 
 
 ## Content
 
+To check the status of the below content, please go to the [status page](./status.md).
+
 [0. Getting started](./modules/gettingstarted/gettingstarted/getting-started.md)
 
 In this foundational module, you will setup everything so that you can access and use the demo environment.
