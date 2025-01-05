@@ -43,10 +43,6 @@ In this exercise, you'll use segment memberships to define what content will be 
 
 In this exercise you'll install a mobile application on your iOS device and you'll configure and deliver a push notification to your device.
 
-[3.4.5 Create a business event journey](./ex5.md)
-
-In this exercise, you'll define a business event which will deliver a back-in-stock message over SMS to customers that had previously shown interest in that product, but couldn't buy it as the product was out of stock.
-
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.

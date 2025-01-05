@@ -348,15 +348,13 @@ In your DX Demo 2.0 mobile application, go to the **Settings** screen. Click the
 
 Make sure to close the app immediately after clicking the **Store Entry** icon, otherwise the push message won't be shown.
 
-![DSN](./images/demo2.png)
-
 After a couple of seconds, you'll see the message appear.
 
-![DSN](./images/demo3.png)
+![DSN](./images/demo2.png)
 
 You have finished this exercise.
 
-Next Step: [3.4.5 Create a business event journey](./ex5.md)
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 3.4](./journeyoptimizer.md)
 
