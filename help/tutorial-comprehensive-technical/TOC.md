@@ -126,8 +126,8 @@ recommendations: noDisplay,noCatalog
   + 3.4 Adobe Journey Optimizer: Event-based Journeys {#module34}
     + [Overview](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/journeyoptimizer.md)
     + [3.4.1 Configure a trigger-based journey - Order Confirmation](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex1.md)
-    + [3.4.2 Configure a batch-based newsletter journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
-    + [3.4.3 Apply personalization in an email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
+    + [3.4.2 Configure a campaign](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
+    + [3.4.3 Apply segment-based personalization in an email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
     + [3.4.4 Setup and use push notifications](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
     + [3.4.5 Create a business event journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex5.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)

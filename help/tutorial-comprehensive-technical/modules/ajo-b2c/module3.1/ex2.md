@@ -71,7 +71,7 @@ Next, you should create a new fragment for the footer of your email messages. Cl
 
 ![Journey Optimizer](./images/fragm11.png)
 
-## 3.1.2.1 Create your Footer fragment
+## 3.1.2.2 Create your Footer fragment
 
 Click **Create fragment**.
 

@@ -6,8 +6,6 @@ doc-type: tutorial
 ---
 # 3.4 Adobe Journey Optimizer
 
-**Authors: [Maxime Foutrel](https://www.linkedin.com/in/maximefoutrel/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In this module, you'll learn everything there is to know about Adobe Journey Optimizer, which helps companies design and deliver connected, contextual, and personalized experiences to their customers.
 
 ## Learning Objectives
@@ -21,7 +19,7 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 
 - Access to Adobe Journey Optimizer
 - **Download these assets**:
-  - [Assets](./../../../assets/ajo/ajo_assets.zip)
+  - [Assets](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
@@ -33,11 +31,11 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 
 In this exercise, you'll configure a trigger-based journey to send out the email message you created in the previous exercise.
 
-[3.4.2 Configure a batch-based newsletter journey](./ex2.md)
+[3.4.2 Configure a campaign](./ex2.md)
 
-In this exercise, you'll configure a batch-based journey to send out the email message you created in the previous exercise.
+In this exercise, you'll configure a traditional email campaign.
 
-[3.4.3 Apply personalization in an email message](./ex3.md)
+[3.4.3 Apply segment-based personalization in an email message](./ex3.md)
 
 In this exercise, you'll use segment memberships to define what content will be shown inside an email.
 
