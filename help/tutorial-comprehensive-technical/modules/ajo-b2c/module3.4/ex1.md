@@ -130,7 +130,7 @@ Drag and drop 8 times a **1:1 column** on the canvas, which should give you this
 
 ![Journey Optimizer](./images/oc9.png)
 
-In the left menu, go to **Fragments**. Drag the header you created earlier in exercise 3.2.2 onto the first component in the canvas. Drag the footer you created earlier in exercise 3.2.2 onto the last component in the canvas.
+In the left menu, go to **Fragments**. Drag the header you created earlier in [exercise 3.1.2.1](./../module3.1/ex2.md) onto the first component in the canvas. Drag the footer you created earlier in [exercise 3.1.2.2](./../module3.1/ex2.md) onto the last component in the canvas.
 
 ![Journey Optimizer](./images/fragm1.png)
 

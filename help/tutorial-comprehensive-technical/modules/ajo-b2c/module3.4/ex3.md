@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
 ---
-# 3.4.3 Apply personalization in an email message
+# 3.4.3 Apply segment-based personalization in an email message
 
 Login to Adobe Experience Cloud by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Adobe Journey Optimizer**.
 
@@ -17,25 +17,25 @@ You'll be redirected to the **Home** view in Journey Optimizer. Before you conti
 
 ## 3.4.3.1 Segment-based personalization
 
-In this exercise you'll improve your newsletter email message with a personalized text based on segment membership.
+In this exercise you'll improve the newsletter email message that you created in the previous exercise with a personalized text based on segment membership.
 
-Go to **Journeys**. Find the newsletter journey that you have created in the previous exercise. Search for `--aepUserLdap-- - Newsletter`. Click your journey to open it. 
+Go to **Campaigns**. Find the newsletter journey that you have created in the previous exercise. Search for `--aepUserLdap-- - CitiSignal Newsletter`. Right-click on the 3 dots **...** and click **Duplicate**.
 
 ![Journey Optimizer](./images/sbp1.png)
 
-You'll then see this. Click **Duplicate**. 
+You'll then see this. Use this for the **Title**: `--aepUserLdap-- - CitiSignal Newsletter (SBP)`. Click **Duplicate**. 
 
 ![Journey Optimizer](./images/sbp2.png)
 
-Click **Duplicate**.
+Click the duplicated campaign to open it.
 
 ![Journey Optimizer](./images/sbp3.png)
 
-Select your **Email** action and click **Edit content**.
+Click **Edit** to change the content.
 
 ![Journey Optimizer](./images/sbp3a.png)
 
-Click **Email Designer**.
+Click **Edit email body**.
 
 ![Journey Optimizer](./images/sbp4.png)
 
@@ -43,88 +43,58 @@ You'll then see this.
 
 ![Journey Optimizer](./images/sbp5.png)
 
-Open **Content Components** and drag a **Text** component below the current newsletter content. 
+Open **Content Components** and drag a **1:1 column** above the AirPods offer. 
 
 ![Journey Optimizer](./images/sbp6.png)
+
+Drag and drop a **Text** component into that 1:1 column.
+
+![Journey Optimizer](./images/sbp6a.png)
 
 Select the whole default text and delete it. Then click on the **Add personalization** button in the toolbar.
 
 ![Journey Optimizer](./images/sbp7.png)
 
-You'll then see this:
+You'll then see this. In the left menu, click **Audiences**.
 
 ![Journey Optimizer](./images/seg1.png)
 
-In the left menu, click **Segment Memberships**.
-
-![Journey Optimizer](./images/seg2.png)
-
->[!NOTE]
->
->If you can't find your segment in this list, scroll down a bit to find instructions on how to retrieve the segment ID manually.
-
-Select the segment `Luma - Women's Category Interest` and click the **+** icon, which should look like this:
+Select the segment `--aepUserLdap-- - Interest in Plans` and click the **+** icon to add it to the canvas.
 
 ![Journey Optimizer](./images/seg3.png)
 
 You should then leave the first line as it is, and replace line 2 and 3 by this code:
 
 ``
-    Psssst... a private sale in the women category will launch soon, we will keep you posted
+    PS: It may be a good idea to check if your plan still meets your needs! Click here to be contacted by one of our experts!
 {%else%}
-    Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: READER10
+    PS: Thanks for taking the time to read our newsletter. Here is a 10% promo code to use on the website: NEWSLETTER10
 {%/if%}
 ``
 
-You'll then have this:
+You'll then have this. Click **Save**.
 
 ![Journey Optimizer](./images/seg4.png)
 
-Click **Validate** to make sure the code is correct. Click **Save**.
-
-![Journey Optimizer](./images/sbp8.png)
-
-You can now save this message by clicking the **Save** button in the top-right corner. Then, click **Simulate Content**.
+Change the text alignment to **Center alignment**. 
 
 ![Journey Optimizer](./images/sbp9.png)
 
-Select one of the profiles you created as part of this tutorial and click **Preview**. You'll then see the result of your configuration. 
+You can now save this message by clicking the **Save** button in the top-right corner. Then, click **arrow** next to the subject line text in the top-left corner.
 
-![Journey Optimizer](./images/sbp10.png)
+![Journey Optimizer](./images/sbp9a.png)
 
-You'll then see this. Then, click **Close**.
-
-![Journey Optimizer](./images/sbp10fff.png)
-
-Go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
-
-![Journey Optimizer](./images/sbp11.png)
-
-Click the arrow in the top left corner to go back to your journey.
+Click **Review to activate**.
 
 ![Journey Optimizer](./images/oc79afff.png)
 
-Click **Ok** to close your email action.
+Click **Activate**.
 
 ![Journey Optimizer](./images/oc79bfff.png)
 
-Change your **Schedule** to **Once** and define a **Date/Time**. Click **Ok**.
+Your newsletter with segment-based personalization is now published. Your newsletter email message will be sent based on your schedule and your journey will stop as soon as the last email has been sent.
 
->[!NOTE]
->
->Message send date and time must be within more than one hour.
-
-![Journey Optimizer](./images/sbp18.png)
-
-Click on the **Publish** button in the journey.
-
-![Journey Optimizer](./images/sbp19.png)
-
-In the pop-up window, click **Publish** again.
-
-![Journey Optimizer](./images/sbp20.png)
-
-Your basic newsletter journey is now published. Your newsletter email message will be sent based on your schedule and your journey will stop as soon as the last email has been sent.
+If you qualify for the segment that was used, you'll see this in the email that you'll receive:
 
 ![Journey Optimizer](./images/sbp20fff.png)
 
