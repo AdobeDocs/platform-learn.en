@@ -278,8 +278,6 @@ First, you need to add your event as the starting point of your journey. Search 
 
 Next, under **Actions**, search for the **Push** action. Drag and drop the **Push** action onto the canvas.
 
-![DSN](./images/sjourney5.png)
-
 Set the **Category** to **Marketing** and select a push surface that enables you to send push notifications. In this case, the email surface to select is **Push-iOS-Android**.
 
 >[!NOTE]
