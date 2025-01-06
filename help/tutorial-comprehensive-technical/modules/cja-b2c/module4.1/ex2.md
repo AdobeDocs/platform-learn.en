@@ -35,23 +35,21 @@ You can now give a name to your connection.
 
 Please use this naming convention: `--aepUserLdap-- – Omnichannel Data Connection`. 
 
-Example: `vangeluw - Omnichannel Data Connection`
-
-You also need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `Bootcamp`. In this example, the sandbox to use is **Bootcamp**. And you also need to set the **Average number of daily events** to **less than 1 million**.
+You also need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxName--`. In this example, the sandbox is **Tech Insiders**. You also need to set the **Average number of daily events** to **less than 1 million**.
 
 ![demo](./images/cjasb.png)
 
-After selecting your sandbox, the available datasets will be updated.
+After selecting your sandbox, you can start adding datasets. Click **Add datasets**.
 
 ![demo](./images/cjasb1.png)
 
 ## 4.1.2.2 Select Adobe Experience Platform datasets
 
-Search for the dataset `Demo System - Event Dataset for Website (Global v1.1)`. Click **+** to add the dataset to this connection.
+Search for the dataset `Demo System - Event Dataset for Website (Global v1.1)`. Enable the box for this dataset to add it to this connection.
 
 ![demo](./images/cja7.png)
 
-Now search and check the checkboxes for `Demo System - Event Dataset for Voice Assistants (Global v1.1)` and `Demo System - Event Dataset for Call Center (Global v1.1)`. 
+Stay in the same screen, and now search and check the checkbox for `Demo System - Event Dataset for Call Center (Global v1.1)`. 
 
 You'll then have this. Click **Next**.
 
@@ -65,7 +63,7 @@ The goal now is to join these datasets. For every dataset you selected, you’ll
 
 ![demo](./images/cja11.png)
 
-As you can see, most of them have the Person ID selected automatically. This is because a Primary Identifier is selected in every schema in Adobe Experience Platform. As an example, here's the schema for `Demo System - Event Schema for Call Center (Global v1.1)`, where you can see that the Primary Identifier is set to `phoneNumber`.
+As you can see, most of them have the Person ID selected automatically. This is because a Primary Identity is selected in every schema in Adobe Experience Platform. As an example, here's the schema for `Demo System - Event Schema for Website (Global v1.1)`, where you can see that the Primary Identity is set to `ecid`.
 
 ![demo](./images/cja13.png)
 
@@ -77,7 +75,7 @@ As mentioned, you can set different Person IDs for each dataset. This allows you
 
 The name of the Person ID field isn't important, as long as the value in the Person ID fields correspond. Let say we have `email` in one dataset and `emailAddress` in another dataset defined as Person ID. If `delaigle@adobe.com` is the same value for the Person ID-field on both datasets, CJA will be able to stitch the data.
 
-Currently there are some other limitations such us stitching the anonymous behavior to known. Please review the FAQs here: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html). 
+Review the CJA FAQs here to understand the nuances with identity stitching: [FAQ](https://experienceleague.adobe.com/docs/analytics-platform/using/cja-overview/cja-faq.html). 
 
 ### Stitching the data using the Person ID
 
@@ -85,32 +83,38 @@ Now that you understand the concept of stitching datasets using the Person ID, l
 
 ![demo](./images/cja15.png)
 
-Go to each dataset to update the Person ID. 
+Go to each dataset to update the Person ID. Now fill the field Person ID choosing the `email` on the dropdown list.
 
 ![demo](./images/cja12a.png)
 
-Now fill the field Person ID choosing the `email` on the dropdown list.
-
-![demo](./images/cja17.png)
-
-Once you have stitched the three datasets, we are ready to continue. 
+Once you have stitched the two datasets, you're ready to continue. 
 
 |  dataset       | Person ID | 
 | ----------------- |-------------| 
 | Demo System - Event Dataset for Website (Global v1.1) | email         | 
-| Demo System - Event Dataset for Voice Assistants (Global v1.1) | email          | 
 | Demo System - Event Dataset for Call Center (Global v1.1) | email         | 
 
-You also need to ensure that for every dataset, these options are enabled:
+You also need to ensure that for both datasets, these options are enabled:
 
 - Import all new data
 - Backfill all existing data
+
+(Don't forget to enable both these options for the second dataset)
+
+You also need to select a **Data source type** for each dataset.
+
+These are the settings for the dataset **Demo System - Event Dataset for Website (Global v1.1)**.
+
+![demo](./images/cja16a.png)
+
+These are the settings for the dataset **Demo System - Event Dataset for Website (Global v1.1)**.
 
 Click **Add datasets**.
 
 ![demo](./images/cja16.png)
 
 Click **Save** and go to the next exercise. 
+
 After having created your **Connection** it may take a few hours before your data is available in CJA.
 
 ![demo](./images/cja20.png)

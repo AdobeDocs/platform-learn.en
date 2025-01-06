@@ -31,13 +31,13 @@ On the **Connections** screen, check the checkbox in front of the connection you
 
 You'll be redirected to the **Create Data View** workflow.
 
-![demo](./images/0-v2.png)
+![demo](./images/0v2.png)
 
 ## 4.1.3.2 Data View Definition
 
 You can now configure the basic definitions for your Data View. 
 
-![demo](./images/0-v2.png)
+![demo](./images/0v2.png)
 
 The **Connection** you created in the previous exercise is already selected. Your connection is named `--aepUserLdap-- – Omnichannel Data Connection`.
 
@@ -47,11 +47,11 @@ Next, give your Data View a name following this naming convention: `--aepUserLda
 
 Enter the same value for the description: `--aepUserLdap-- – Omnichannel Data View`.
 
-| Name         | Description|    
-| ----------------- |-------------| 
-| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View`         |  
+| Name         | Description| External ID| 
+| ----------------- |-------------|-------------| 
+| `--aepUserLdap-- – Omnichannel Data View` | `--aepUserLdap-- – Omnichannel Data View`         |  `--aepUserLdap--123`|
 
-![demo](./images/1-v2.png)
+![demo](./images/1v2.png)
 
 For the **Time Zone**, select the timezone **Greenwich Mean Time; Monrovia, Casablanca [GMT]**. This is a really interesting setting as some companies operate in different countries and geographies. Allocating the right time zone for each country will avoid typical data mistakes such as believing that for instance, in Peru, the majority of the people buy T-shirts at 4:00 AM.
 
@@ -61,11 +61,15 @@ You can also modify the main metrics naming (Person, Session and Event). This is
 
 You should now have the following settings configured:
 
-![demo](./images/1-v2.png)
+![demo](./images/1v2.png)
 
-Click **Save and Continue**.
+Click **Save and continue**.
 
-![demo](./images/12-v2.png)
+![demo](./images/12v2.png)
+
+Click **Save**.
+
+![demo](./images/12v2a.png)
 
 ## 4.1.3.3 Data View Components
 
@@ -75,19 +79,13 @@ In this exercise, you'll configure the components you need to analyze the data a
 - Middle: Added components to the Data View
 - Right side: Component settings
 
-![demo](./images/2-v2.png)
-
->[!IMPORTANT]
->
->If you can't find a specific metric or dimension, please check if the field `Contains data` is removed from your dataview. If not, please delete that field.
->
->![demo](./images/2-v2a.png)
+![demo](./images/2v2.png)
 
 You now have to drag and drop the components you need for the analysis to the **Components Added**. To do this, you need to select the components in the left menu and drag and drop them onto the canvas in the middle.
 
 Let's start with the first component: **Name (web.webPageDetails.name)**. Search for this component, then drag and drop it onto the canvas.
 
-![demo](./images/3-v2.png)
+![demo](./images/3v2.png)
 
 This component is the page name, as you can derive from reading the schema field `(web.webPageDetails.name)`. 
 
@@ -95,11 +93,11 @@ However, using **Name** as the name is not the best naming convention for a busi
 
 Let's change the name to be **Page Name**. Click on the component and rename it in the **Component Settings** area.
 
-![demo](./images/3-0-v2.png)
+![demo](./images/30v2.png)
 
 Something really important is the **Persistence settings**. The concept of evars and prop doesn't exist in CJA but the Persistence settings make a similar behavior possible. 
 
-![demo](./images/3-0-v21.png)
+![demo](./images/30v21.png)
 
 If you don't change these settings, CJA will interpret the dimension as a **Prop** (hit level). Also, we can change the Persistence to make the dimension an **eVar** (persist the value across the journey).
 
@@ -113,21 +111,21 @@ Let's leave the Page Name as a Prop. As such, you don't need to change any **Per
 
 Next, pick the dimension **phoneNumber** and drop it on the canvas. The new name should be **Phone Number**. 
 
-![demo](./images/3-1-v2.png)
+![demo](./images/31v2.png)
 
 Finally let's change the Persistence settings, as the Mobile Number should persist at user level. 
 
 To change the Persistence, scroll down in the right menu and open the **Persistence** tab:
 
-![demo](./images/5-v2.png)
+![demo](./images/5v2.png)
 
 Check the checkbox to modify the persistence settings. Select **Most Recent** and the **Person (Reporting window)** scope, as we only care about the last mobile number of that person. If the customer doesn't fill out the mobile in future visits, you'll still see this value populated.
 
-![demo](./images/6-v2.png)
-
 | Component Name to Search           | New Name    | Persistence Settings  | 
 | ----------------- |-------------| --------------------| 
-| phoneNumber | Phone Number          |    Most Recent, Person (reporting window)     | 
+| phoneNumber | Phone Number          |    Most Recent, Person Reporting Window     | 
+
+![demo](./images/6v2.png)
 
 The next component is `web.webPageDetails.pageViews.value`.
 
@@ -139,9 +137,9 @@ Change the name to be **Page Views** under the **Component settings**.
 | ----------------- |-------------| --------------------| 
 | web.webPageDetails.pageViews.value | Page Views          |         | 
 
-![demo](./images/7-v2.png)
+![demo](./images/7v2.png)
 
-For the attribution settings we will leave this empty. 
+For the attrubution settings, you don't need to change anything. 
 
 Note: Persistence settings on metrics can also be changed in Analysis Workspace. In some cases you may choose to set it here to avoid business users from having to think which is the best persistence model. 
 
@@ -156,8 +154,8 @@ Next, you'll have to configure a lot of Dimensions and Metrics, as indicated in 
 | callfeeling | Call Feeling          |          | 
 | call ID | Call Interaction Type          |          | 
 | callTopic | Call Topic          | Most Recent, Session   | 
-| ecid  | ECID          | Most Recent, Person (reporting window)       | 
-| email | Email ID          | Most Recent, Person (reporting window)        | 
+| ecid  | ECID          | Most Recent, Person Reporting Window        | 
+| email | Email ID          | Most Recent, Person Reporting Window         | 
 | Payment Type | Payment Type          |          | 
 | Product add method | Product add method          | Most Recent, Session         | 
 | Event Type | Event Type         |         | 
@@ -174,31 +172,24 @@ Next, you'll have to configure a lot of Dimensions and Metrics, as indicated in 
 | Quantity | Quantity          |          | 
 | commerce.order.priceTotal | Revenue          |         | 
 
-Your configuration should then look like this:
+Your configuration should then look like this. Don't forget to **Save** your Data View. So click **Save** now.
 
-![demo](./images/11-v2.png)
-
-Don't forget to **Save** your Data View. So click **Save** now.
-
-![demo](./images/12-v2s.png)
+![demo](./images/11v2.png)
 
 ## 4.1.3.4 Calculated Metrics
 
 
-Although we have organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis.
+Although you've organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis.
 
-If you remember, we didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View. 
-However, we do have a dimension called: **Event Type**. So, let's derive these interaction types by creating 3 calculated Metrics.
+If you remember, you didn't specifically bring in Metrics such us Add to Cart, Product View or Purchases into the Data View. 
+However, you do have a dimension called: **Event Type**. So, you can derive these interaction types by creating 3 calculated Metrics.
 
 Let's start with first Metric: **Product Views**. 
 
 On the left side, please search **Event Type** and select the dimension. Then drag and drop it in to the **Included Components** canvas.
-
-![demo](./images/calcmetr1.png)
-
 Click to select the new metric **Event Type**.
 
-![demo](./images/calcmetr2.png)
+![demo](./images/calcmetr1.png)
 
 Now change the component name and description to the following values:
 
@@ -212,7 +203,7 @@ Now lets count only **Product Views** events. To do that, scroll down on the **C
 
 ![demo](./images/calcmetr4.png)
 
-As we only want to count **Product Views**, please specify **commerce.productViews** under the criteria.
+As you only want to count **Product Views**, please specify **commerce.productViews** under the criteria.
 
 ![demo](./images/calcmetr5.png)
 
@@ -248,7 +239,7 @@ First drag and drop the same dimension **Event Type** as we did for both previou
 
 You will see a pop up alerting of a Duplicated Field as we are using the same variable. Please click on **Add Anyway**: 
 
-![demo](./images/calcmetr7.png)
+![demo](./images/calcmetr6.png)
 
 Now, follow the same process as we did for the metrics Product Views and Add to cart:
 - First change the name and descritpion. 
@@ -268,7 +259,7 @@ Your final configuration should then look similar to this this. Click **Save and
 
 You should be redirected to this screen:
 
-![demo](./images/8-v2.png)
+![demo](./images/8v2.png)
 
 In this tab, you can mofify some important settings to change how data is processed. Let's start by setting the **Session Timeout** to 30 min. Thanks to every experience event's timestamp you can extend the concept of a session across all channels. For instance, what happens if a customer calls the call-center after visiting the website? Using custom Session Timeouts you have loots of flexibility in deciding what a session is, and how that session will merge data together.
 
@@ -276,11 +267,11 @@ In this tab, you can mofify some important settings to change how data is proces
 
 In this tab you can modify other things like filtering the data by using a segment/filter. You won't need to do that in this exercise. 
 
-![demo](./images/10-v2.png)
+![demo](./images/10v2.png)
 
 Once you are done, please click **Save and finish**.
 
-![demo](./images/13-v2.png)
+![demo](./images/13v2.png)
 
 >[!NOTE]
 >
