@@ -19,7 +19,7 @@ In this module, you'll learn everything there is to know about Adobe Journey Opt
 
 - Access to Adobe Journey Optimizer
 - **Download these assets**:
-  - [Assets](./../../../assets/ajo/CitiSignal-images.zip)
+  - [CitiSignal images](./../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
