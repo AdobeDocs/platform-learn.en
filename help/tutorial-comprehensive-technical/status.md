@@ -21,7 +21,7 @@ Below is an overview of the status of the content in this tutorial.
 | [2.6 Stream data from Apache Kafka into Real-Time CDP](./modules/rtcdp-b2c/module2.6/aep-apache-kafka.md)      | 25/11/2024        | Yes        |-|
 | [3.1 Adobe Journey Optimizer: Orchestration](./modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)      | 30/12/2024        | Yes        |-|
 | [3.2 Adobe Journey Optimizer: External data sources and custom actions](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)      | 30/12/2024        | Yes       |-|
-| [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md)      | 05/01/2025        | Not yet        | Content is pending update |
+| [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md)      | 06/01/2025        | Yes       |-|
 | [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/ajo-b2c/module3.4/journeyoptimizer.md)| 05/01/2025        | Yes        |-|
 | [4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)      | -        | No        | Content is pending update |
 | [4.2 Customer Journey Analytics: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)      | -        | No        | Content is pending update |
