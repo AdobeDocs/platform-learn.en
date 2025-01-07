@@ -28,7 +28,7 @@ You'll then see this. Check your email and click the confirmation email that was
 
 ![FAC](./images/sf5.png)
 
-Click the link in the confirmation email to activate your account, define your user name and password. Click **Get Started**.
+Click the link in the confirmation email to activate your account, define your user name and password. Click **Get Started**. You'll need to use this user name and password in the next exercise.
 
 ![FAC](./images/sf6.png)
 
