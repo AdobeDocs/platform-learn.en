@@ -6,8 +6,6 @@ doc-type: tutorial
 ---
 # 1.3 Federated Audience Composition
 
-**Author: [Ludovic Latapie](https://www.linkedin.com/in/ludoviclatapie/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In this module, the goal is to learn all about creating audiences using Federated Audience Composition.
 
 Federated Audience Composition (FAC) in Experience Platform enables you to access and create audiences with corresponding high-value attributes from enterprise data warehouses, which enrich and supplement the real-time customer profile and audiences in Experience Platform for improved segmentation, targeting, activation, and delivery of impactful customer experiences. Using Federated Audience Composition, a virtual database is created by linking remote databases through metadata. This approach simplifies access, reduces duplication, and enhances end-user experience. Teams are granted the flexibility to ingest datasets directly into Experience Platform or access datasets residing in data warehouses when assembling audiences for engagement workflows. This approach takes advantage of data warehouse investments and assets to complement Real-Time CDP and Journey Optimizer. Federated Audience Composition enables customers to utilize and combine batch and real-time functionality across critical new use-case patterns:
