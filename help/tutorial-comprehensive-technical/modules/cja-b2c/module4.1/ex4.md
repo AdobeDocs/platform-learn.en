@@ -27,12 +27,12 @@ If you haven't used Analysis Workspace before, we highly recommend watching this
 
 ### Create Your Project
 
-Now it's time to create your first CJA project. Go to the projects tab inside of CJA. 
-Click **Create new**.
+Now it's time to create your first CJA workspace. Go to the **Workspace** tab inside of CJA. 
+Click **Create project**.
 
 ![demo](./images/prmenu.png)
 
-You'll then see this. Select **Blank project** and then click **Create**.
+You'll then see this. Select **Blank Workspace project** and then click **Create**.
 
 ![demo](./images/prmenu1.png)
 
@@ -40,7 +40,7 @@ You'll then see an empty project.
 
 ![demo](./images/premptyprojects.png)
 
-First, make sure to select the correct Data View in the upper right corner of your screen. In this example, the Data View to select is `vangeluwe - Omnichannel Data View`.
+First, make sure to select the correct Data View in the upper right corner of your screen. The Data View to select is `--aepUserLdap-- - Omnichannel Data View`.
 
 ![demo](./images/prdv.png)
 
@@ -103,17 +103,17 @@ The conversion rate is commonly represented in percentage. So, let's change the 
 
 Finally, Change the name and description of the calculated metric:
 
-| Title         | Description|    
-| ----------------- |-------------| 
-| Conversion Rate | Conversion Rate      | 
+| Title         | Description| External ID|    
+| ----------------- |-------------| -------------| 
+| Conversion Rate | Conversion Rate      | conversionRate|
 
-You will have something like this on your screen:
+You will then have this. Click **Save**.
 
 ![demo](./images/calcbuildercr6.png)
 
-Don't forget to **Save** the Calculated Metric.
+Click **Save** again.
 
-![demo](./images/pr9.png)
+![demo](./images/calcbuildercr6a.png)
 
 ## 4.1.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
 

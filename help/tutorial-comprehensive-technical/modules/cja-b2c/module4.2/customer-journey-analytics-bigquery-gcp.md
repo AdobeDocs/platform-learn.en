@@ -7,8 +7,6 @@ exl-id: b078d003-da25-44c5-b000-77e3b3188fb6
 ---
 # 4.2 Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector
 
-**Authors: [Victor de la Iglesia](https://www.linkedin.com/in/victordelaiglesia/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
 In this module, you'll set up your own instance of Google Cloud Platform, load sample data in Google Cloud Platform and you'll then use the BigQuery Source Connector to ingest that data from Google Cloud Platform into Adobe Experience Platform. Finally, you'll use Customer Journey Analytics to visualize that data.
 
 Source connectors in Adobe Experience Platform make the process of getting data into Adobe Experience Platform easy. Google BigQuery is one of the already available connectors. Thanks to Adobe Experience Platform and the BigQuery Source Connector we can now bring Google Analytics data into Analysis Workspace in Customer Journey Analytics. 
@@ -37,9 +35,9 @@ In addition, we can enrich that Google Analytics data by joining it with other d
 
 ## Exercises
 
-[4.2.1 Create your Google Cloud Platform Account](./ex1.md)
+[4.2.1 Start using Google Cloud Platform](./ex1.md)
 
-Create your Google Cloud Platform account.
+Start using your Google Cloud Platform environment.
 
 [4.2.2 Create your first query in BigQuery](./ex2.md)
 

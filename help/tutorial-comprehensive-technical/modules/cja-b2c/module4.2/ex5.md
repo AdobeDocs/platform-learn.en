@@ -21,11 +21,7 @@ Go to [analytics.adobe.com](https://analytics.adobe.com) to access Customer Jour
 
 On the Customer Journey Analytics homepage, go to **Connections**. 
 
-![demo](./images/conn1.png)
-
 Here you can see all the different connections made between CJA and Platform. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets. 
-
-![demo](./images/2.png)
 
 Click **Create new connection**.
 
@@ -35,71 +31,45 @@ You'll then see the **Create Connection** UI.
 
 ![demo](./images/5.png)
 
-First of all, you need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxName--`. In this example, the sandbox to use is **AEP Enablement FY21**.
+For the name, use this : `--aepUserLdap-- - GA + Loyalty Data Connection`. 
 
-![demo](./images/cjasb.png)
+You need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxName--`. In this example, the sandbox to use is **Tech Insiders**.
 
-After selecting your sandbox, the available datasets will be updated.
+Set the **Average number of daily events** to **less than 1 million**.
 
-![demo](./images/cjasb1.png)
-
-In the left menu, you can see all available Adobe Experience Platform datasets. Search for the dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`. Click **+** to add the dataset to this connection.
+In the dataste menu, you can now start adding datasets. Click **Add datasets**.
 
 ![demo](./images/6.png)
 
-After adding it, you'll see the dataset inside the connection.
+The datasets to add are:
+- `Demo System - Profile Dataset for CRM (Global v1.1)`
+- `Demo System - Event Dataset for BigQuery (Global v1.1)`
 
-You now have to select the **Person ID**. Please ensure the **loyaltyId** is selected as Person ID.
+Search for both datasets, check their checkbox and then click **Next**.
+
+![demo](./images/d1.png)
+
+You'll then see this:
 
 ![demo](./images/8.png)
 
-You'll now enrich the Google Analytics Website Interaction data with another Adobe Experience Platform dataset. 
+For the dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`, change the **Person ID** to **loyaltyId** and set the **Data source type** to **Web Data**. Enable both options for **Import all new data** and **Backfill all existing data**.
 
-Search for the dataset `Demo System - Profile Dataset for Loyalty (Global v1.1)` data set and add it to this connection.
+![demo](./images/d2.png)
 
-![demo](./images/10.png)
+For the dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`, verify that the **Person ID** is set to to **crmId** and set the **Data source type** to **Web Data**. Enable both options for **Import all new data** and **Backfill all existing data**. Click **Add datasets**.
 
-You'll then see this:
+![demo](./images/d3.png)
 
-![demo](./images/10a.png)
+You'll then be here. Click **Save**.
 
-In order to merge both datasets, you need to select a **Person ID** that contains the same type of IDs. The dataset `Demo System - Profile Dataset for Loyalty (Global v1.1)` uses the **loyaltyId** as Person ID, which contains the same type of IDs as the `Demo System - Event Dataset for BigQuery (Global v1.1)`, which also uses the **loyaltyId** as a Person ID. 
-
-![demo](./images/12.png)
-
-Click **Next**.
-
-![demo](./images/14.png)
-
-You'll then see this:
-
-![demo](./images/15.png)
-
-Here you need to give a name to your connection. 
-
-Please use this naming convention: `ldap - GA + Loyalty Data Connection`. 
-
-Example: `vangeluw - GA + Loyalty Data Connection`
-
-Before finishing, please also activate **Automatically import all new data for all datasets in this connection, beginning today.** as in the image below. 
-
-![demo](./images/16.png)
-
-This will start a data flow from Adobe Experience Platform to CJA every 60 minutes, however with high volumes of data it can take up to 24 hours. 
-
-You also need to backfill historical data, so please check the checkbox for **Import all existing data** and select **less than 1 million** under **Average number of daily events**.
-
-![demo](./images/17.png)
+![demo](./images/d4.png)
 
 After having created your **Connection** it may take a few hours before your data is available in CJA.
 
-Click **Save** and go to the next exercise. 
-
-![demo](./images/cjasave.png)
-
 You'll then see your connection in the list of available connections.
 
-![demo](./images/18.png)
+![demo](./images/d5.png)
 
 ## 4.2.5.2 Create a data view
 
@@ -115,13 +85,9 @@ If you want your company to become data-driven, you should adapt how data is vie
 - Use the same names for KPIs and Metrics for Google Analytics as for Customer Journey Analytics so that the digital analytics team can speak 1 language only.
 - data view filtered to show for instance data for 1 market only, or 1 brand, or only for Mobile Devices.
 
-On the **Connections** screen, check the checkbox in front of the connection you just created.
+On the **Connections** screen, check the checkbox in front of the connection you just created. Click **Create data view**.
 
 ![demo](./images/exta.png)
-
-Now click **Create Data View**.
-
-![demo](./images/extb.png)
 
 You'll be redirected to the **Create Data View** workflow.
 
@@ -129,26 +95,23 @@ You'll be redirected to the **Create Data View** workflow.
 
 You can now configure the basic definitions for your data view. Things like Time zone, Session Timeout or the data view filtering (the segmentation part similar to Virtual Report Suites in Adobe Analytics).
 
-The **Connection** you created in the previous exercise is already selected. Your connection is named `ldap - GA + Loyalty Data Connection`.
+The **Connection** you created in the previous exercise is already selected. Your connection is named `--aepUserLdap-- - GA + Loyalty Data Connection`.
 
-![demo](./images/ext5.png)
+Next, give your data view a name following this naming convention: `--aepUserLdap-- - GA + Loyalty Data View`. 
 
-Next, give your data view a name following this naming convention: `ldap - GA + Loyalty Data View`. 
-
-Enter the same value for the description: `ldap - GA + Loyalty Data View`.
+Enter the same value for the description: `--aepUserLdap-- - GA + Loyalty Data View`.
 
 Before doing any analysis or visualization we need to create a data view with all the fields, dimensions and metrics and their attribution settings.
 
-| Field      | Naming Convention|  Example|   
-| ----------------- |-------------|-------------|  
-| Name Connection | ldap - GA + Loyalty Data View| vangeluw - GA + Loyalty Data View |
-| Description | ldap - GA + Loyalty Data View | vangeluw - GA + Loyalty Data View |
-
-![demo](./images/22.png)
-
+| Field      | Naming Convention|
+| ----------------- |-------------|  
+| Name Connection | `--aepUserLdap-- - GA + Loyalty Data View`| vangeluw - GA + Loyalty Data View |
+| Description | `--aepUserLdap-- - GA + Loyalty Data View` |
+| External ID | `--aepUserLdap--GA`|
+ 
 Click **Save and continue**.
-
-![demo](./images/23.png)
+ 
+![demo](./images/22.png)
 
 You can now add components to your data view. As you can see, some metrics and dimensions are added automatically.
 
