@@ -22,44 +22,42 @@ The solution to this problem is to transform Google Analytics data into a readab
 
 Go to the [BigQuery Console](https://console.cloud.google.com/bigquery).
 
-![demo](./images/ex3/1.png)
+![demo](./images/ex31.png)
 
-In **Explorer**, you'll see your Project ID. Click your Project ID (don't click on the **bigquery-public-data** dataset).
+In **Explorer**, you'll see your Project ID. Click your Project ID (don't click the **bigquery-public-data** dataset).
 
-![demo](./images/ex3/2.png)
+![demo](./images/ex32.png)
 
 You can see that there isn't a dataset yet, so let's create one now.
-Click **CREATE DATASET**.
+Click the 3 **...** and then click **CREATE DATASET**.
 
-![demo](./images/ex3/4.png)
+![demo](./images/ex34.png)
 
 On the right side of your screen, you'll see the **Create dataset** menu.
 
-![demo](./images/ex3/5.png)
+![demo](./images/ex35.png)
 
 For the **Dataset ID**, use the below naming convention. For the other fields, please leave the default settings.
 
 | Naming         | Example |    
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | vangeluw_BigQueryDataSets |  
+| `--aepUserLdap--_BigQueryDataSet` | vangeluw_BigQueryDataSet |  
 
-![demo](./images/ex3/6.png)
+Click **CREATE DATA SET**.
 
-Next, click **Create dataset**.
-
-![demo](./images/ex3/7.png)
+![demo](./images/ex36.png)
 
 You'll then be back in the BigQuery Console with your dataset created.
 
-![demo](./images/ex3/8.png)
+![demo](./images/ex38.png)
 
 ## 4.2.2.2 Create your first SQL BigQuery
 
-Next, you'll create your first query in BigQuery. The goal of this query is to take the Google Analytics sample data and transform it so that it can be ingested in Adobe Experience Platform. Go to the **EDITOR** tab.
+Next, you'll create your first query in BigQuery. The goal of this query is to take the Google Analytics sample data and transform it so that it can be ingested in Adobe Experience Platform. Go to the **Untitled query** tab.
 
-![demo](./images/ex3/9.png)
+![demo](./images/ex39.png)
 
-Please copy the following SQL query and paste it into that Query Editor. Feel free to read the query and understand the Google Analytics BigQuery syntax.
+Copy the following SQL query and paste it into that Query Editor. Feel free to read the query and understand the Google Analytics BigQuery syntax.
 
 
 ```sql
@@ -227,29 +225,29 @@ GROUP BY
 
 When you are ready, click **Run** to run the query:
 
-![demo](./images/ex3/10.png)
+![demo](./images/ex310.png)
 
 Executing the query can take a couple of minutes.
 
 Once the query has finished running, you'll see the below output in the **Query results**.
 
-![demo](./images/ex3/12.png)
+![demo](./images/ex312.png)
 
 ## 4.2.2.3 Save the results of your BigQuery SQL query
 
 The next step is to save the output of your query by clicking the **SAVE RESULTS** button.
 
-![demo](./images/ex3/13.png)
+![demo](./images/ex313.png)
 
 As the location for your output, select **BigQuery table**.
 
-![demo](./images/ex3/14.png)
+![demo](./images/ex314.png)
 
 You'll then see a new popup, where your **Project Name** and **Dataset Name** are pre-populated. The dataset name should be the dataset that you created in the beginning of this exercise, with this naming convention:
 
 | Naming         | Example |    
 | ----------------- | ------------- | 
-| `--aepUserLdap--_BigQueryDataSets` | `vangeluw_BigQueryDataSets` |  
+| `--aepUserLdap--_BigQueryDataSet` | `vangeluw_BigQueryDataSet` |  
 
 You now need to enter a Table name. Please use this naming convention:
 
@@ -257,13 +255,13 @@ You now need to enter a Table name. Please use this naming convention:
 | ----------------- |------------- | 
 | `--aepUserLdap--_GAdataTableBigQuery` | `vangeluw_GAdataTableBigQuery` |  
 
-![demo](./images/ex3/16.png)
-
 Click **SAVE**.
+
+![demo](./images/ex316.png)
 
 It may take some time until the data is ready in the table you've created. After a couple of minutes, refresh the browser. You should then see within your dataset the `--aepUserLdap--_GAdataTableBigquery` table under **Explorer** inside your BigQuery project.
 
-![demo](./images/ex3/19.png)
+![demo](./images/ex319.png)
 
 You con now continue with the next exercise, where you'll connect this table to Adobe Experience Platform.
 

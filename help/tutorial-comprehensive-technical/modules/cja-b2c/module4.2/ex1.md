@@ -4,13 +4,11 @@ description: Ingest & Analyze Google Analytics data in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 ---
-# 4.2.1 Create your Google Cloud Platform Account
+# 4.2.1 Start using Google Cloud Platform
 
-## Objectives
-
-- Create your Google Cloud Platform Account
-- Become familiar with Google Cloud Platform Console
-- Create and prepare your BigQuery project
+>[!NOTE]
+>
+>For this exercise, you need access to a Google Cloud Platform environment. If you don't have access to GCP yet, create a new account using your personal email address. 
 
 ## 4.2.1.1 Why connect Google BigQuery to Adobe Experience Platform to get Google Analytics data
 
@@ -27,98 +25,86 @@ The GCP/BigQuery Source Connector should be used to...
 - track all customer behavior on the website and load that data in Adobe Experience Platform for analysis, data science and personalization use-cases that don't require real-time activation.
 - load Google Analytics historical data into Adobe Experience Platform, again for analysis and data science use-cases
 
-## 4.2.1.2 Create your Google Account
+## 4.2.1.2 Your Google Account
 
-In order to get a Google Cloud Platform account you need a Google account.
+>[!NOTE]
+>
+>For this exercise, you need access to a Google Cloud Platform environment. If you don't have access to GCP yet, create a new account using your personal email address. 
 
-## 4.2.1.3 Activate your Google Cloud Platform Account
+## 4.2.1.3 Select or create a project
 
-Now that you have you Google Account, you can create a Google Cloud Platform environment. To do that, go to [https://console.cloud.google.com/](https://console.cloud.google.com/).
+Go to [https://console.cloud.google.com/](https://console.cloud.google.com/).
 
-On the next page, Accept the Terms & Conditions.
+Next, click on **Select a project** or click an existing project.
 
-![demo](./images/ex1/1.png) 
+![demo](./images/ex12.png)
 
-Next, click on **Select a project**.
+If you don't have a project yet, click on **NEW PROJECT**. If you already have a project, you can choose to select that one and continue to the next step.
 
-![demo](./images/ex1/2.png)
+![demo](./images/ex1createproject.png)
 
-Click on **NEW PROJECT**.
+Name your project following this naming convention. Click **CREATE**.
 
-![demo](./images/ex1/createproject.png)
+| Convention         |
+| ----------------- |
+| `--aepUserLdap---googlecloud` | 
 
-Name your project following this naming convention:
+![demo](./images/ex13.png)
 
-| Convention         | Example|    
-| ----------------- |-------------| 
-| `--aepUserLdap---googlecloud` | delaigle-googlecloud          |   
+Wait until the notification in the top right side of your screen tells you that the creation is finished. Then, click **SELECT PROJECT**.
 
-![demo](./images/ex1/3.png)
-
-Click **Create**.
-
-![demo](./images/ex1/3-1.png)
-
-Wait until the notification in the top right side of your screen tells you that the creation is finished. Then, click  on **View project**.
-
-![demo](./images/ex1/4.png)
+![demo](./images/ex14.png)
 
 Next, go to the search bar on top of the screen and type **BigQuery**. Select the first result.
 
-![demo](./images/ex1/7.png)
+![demo](./images/ex17.png)
 
-You'll then be redirected to the BigQuery Console and you'll see a popup message. 
+The goal of this module is to get Google Analytics data into Adobe Experience Platform. To do that, you need dummy data in a Google Analytics dataset to start with. 
 
-**Click Done**.
+Click on **+ Add**, and then click **Public datasets** in the right menu.
 
-![demo](./images/ex1/5.png)
-
-The goal of this module is to get Google Analytics data into Adobe Experience Platform. To do that, we need dummy data in a Google Analytics dataset to start with. 
-
-Click on **Add Data** on the left side menu, followed by clicking **Explore public datasets**.
-
-![demo](./images/ex1/18.png)
+![demo](./images/ex118.png)
 
 You'll then see this window: 
 
-![demo](./images/ex1/19.png)
+![demo](./images/ex119.png)
 
-Enter the search term **Google Analytics Sample** in the search bar and select the first result.
+Enter the search term **Google Analytics Sample** in the search bar and click the first search result.
 
-![demo](./images/ex1/20.png)
+![demo](./images/ex120.png)
 
 You'll see the following screen with a description of the dataset. Click on **VIEW DATASET**.
 
-![demo](./images/ex1/21.png)
+![demo](./images/ex121.png)
 
 You'll then be redirected to BigQuery where you'll see this **bigquery-public-data** dataset under **Explorer**.
 
-![demo](./images/ex1/22a.png)
+![demo](./images/ex122a.png)
 
 In **Explorer**, you should now see a number of tables. Feel free to explore them. Go to `google_analytics_sample`.
 
-![demo](./images/ex1/22.png)
+![demo](./images/ex122.png)
 
 Click to open the table `ga_sessions`.
 
-![demo](./images/ex1/23.png)
+![demo](./images/ex123.png)
 
 Before you continue with the next exercise, please write down the following things in a separate text file on your computer:
 
 | Credential         | Naming| Example|   
 | ----------------- |-------------| -------------|
 | Project Name | `--aepUserLdap---googlecloud` | vangeluw-googlecloud  |
-| Project ID | random | composed-task-306413 |
+| Project ID | random | possible-bee-447102-h3 |
 
 You can find your Project Name and Project ID by clicking on your **Project Name** in the top menu bar:
 
-![demo](./images/ex1/projectMenu.png)
+![demo](./images/ex1projectMenu.png)
 
 You'll then see your Project ID on the right side:
 
-![demo](./images/ex1/projetcselection.png)
+![demo](./images/ex1projetcselection.png)
 
-You can now move to Exercise 12.2 where you'll get your hands dirty by querying Google Analytics data.
+You can now move to the next exercise where you'll get your hands dirty by querying Google Analytics data.
 
 Next Step: [4.2.2 Create your first query in BigQuery](./ex2.md)
 
