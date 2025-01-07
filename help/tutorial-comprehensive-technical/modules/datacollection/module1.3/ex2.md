@@ -6,8 +6,6 @@ doc-type: tutorial
 ---
 # 1.3.2 Create schemas, data model and links
 
-## 1.3.2.1 Set up a Federated database in AEP
-
 You can now configure your federated database in AEP.
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
@@ -19,6 +17,8 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./../module1.2/images/sb1.png)
+
+## 1.3.2.1 Set up a Federated database in AEP
 
 Click **Federated databases** in the left menu. Then, click **Add federated database**.
 
