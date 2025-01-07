@@ -29,7 +29,7 @@ Federated Audience Composition provides Real-Time CDP and Journey Optimizer cust
 
 ## Exercises
 
-[1.3.1 Setup your Snowflake account](./ex1.md)
+[1.3.1 Setup your Snowflake environment](./ex1.md)
 
 In this exercise, you'll setup your Snowflake trial account and you'll connect it to Adobe Experience Platform
 

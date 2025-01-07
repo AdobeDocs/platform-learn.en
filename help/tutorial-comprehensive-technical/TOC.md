@@ -43,7 +43,7 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
   + 1.3 Federated Audience Composition {#module13}
     + [Overview](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-    + [1.3.1 Setup your Snowflake account](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+    + [1.3.1 Setup your Snowflake environment](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
     + [1.3.2 Create schemas, data model and links](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
     + [1.3.3 Create a federated composition](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)
