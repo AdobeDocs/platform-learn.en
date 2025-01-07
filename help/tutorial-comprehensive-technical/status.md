@@ -25,7 +25,7 @@ Below is an overview of the status of the content in this tutorial.
 | [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md)      | 06/01/2025        | Yes       |-|
 | [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/ajo-b2c/module3.4/journeyoptimizer.md)| 05/01/2025        | Yes        |-|
 | [4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)      | 06/01/2025        | Yes        | - |
-| [4.2 Customer Journey Analytics: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)      | 07/01/2025        | Yes        | - |
+| [4.2 Customer Journey Analytics: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)      | 07/01/2025        | No        | There's an issue with the data prep modelling for the source data. This is pending a fix. |
 | [5.1 Query Service](./modules/datadistiller/module5.1/query-service.md)      | 04/12/2024        | Yes        |-|
 
 {style="table-layout:auto"}

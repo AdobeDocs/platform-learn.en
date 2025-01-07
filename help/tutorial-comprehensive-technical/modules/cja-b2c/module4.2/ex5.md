@@ -113,69 +113,44 @@ Click **Save and continue**.
  
 ![demo](./images/22.png)
 
+Click **Save**.
+
+![demo](./images/22a.png)
+
 You can now add components to your data view. As you can see, some metrics and dimensions are added automatically.
 
 ![demo](./images/24.png)
 
-Add the following components to the data view:
+Add the below components to the data view. Also make sure to update the field names to friendly names. To do that, select the metric or dimension and update the **Component name** field in the right menu.
 
-| Component Name     | Component Type        | Component Path        | 
-| -----------------|-----------------|-----------------|
-| level | Dimension |_experienceplatform.loyaltyDetails.level |
-| points | Metric |_experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | Metric | commerce.checkouts.value|
-| commerce.productListRemovals.value | Metric | commerce.productListRemovals.value|
-| commerce.productListAdds | Metric | commerce.productListAdds|
-| commerce.productViews.value | Metric | commerce.productViews.value|
-| commerce.purchases.value | Metric | commerce.purchases.value|
-| web.webPageDetails.pageViews | Metric | web.webPageDetails.pageViews|
-| Transaction ID | Dimension | commerce.order.payments.transactionID|
-| channel.mediaType | Dimension | channel.mediaType|
-| channel.typeAtSource | Dimension | channel.typeAtSource|
-| Tracking code | Dimension | marketing.trackingCode|
-| gaid | Dimension | _experienceplatform.identification.core.gaid|
-| web.webPageDetails.name | Dimension | web.webPageDetails.name|
-| Event Type | Dimension | eventType|
-| Vendor | Dimension | environment.browserDetails.vendor|
-| Identifier | Dimension |_id |
-| Timestamp | Dimension | timestamp|
-| Type | Dimension | device.type|
-| loyaltyId | Dimension |_experienceplatform.identification.core.loyaltyId |
-
-You'll then have this:
-
-![demo](./images/25.png)
-
-Next, you need to change the friendly name of some of the above metrics and dimensions so that you can easily use them when building out your analysis. To do that, select the metric or dimension and update the **Name** field as indicated in the below image.
-
-![demo](./images/25a.png)
-
-| Component Original Name   | Display Name       | 
-| -----------------|-----------------|
-| level | Loyalty Level |
-| points | Loyalty Points |
-| commerce.checkouts.value | Checkouts |
-| commerce.productListRemovals.value | Cart Removals |
-| commerce.productListAdds | Cart Adds |
-| commerce.productViews.value | Product Views |
-| commerce.purchases.value | Purchases |
-| web.webPageDetails.pageViews | Page Views |
-| channel.mediaType | Traffic Medium | 
-| channel.typeAtSource | Traffic Source | 
-| Tracking code | Marketing Channel | 
-| gaid | Google Analytics ID | 
-| Name | Page Title | 
-| Vendor | Browser | 
-| Type | Device Type | 
-| loyaltyId | Loyalty ID |
+| Component Type | Component Original Name   | Display Name       | Component Path        | 
+| -----------------| -----------------|-----------------|-----------------|
+| Metric | commerce.checkouts.value | Checkouts |`commerce.checkouts.value`|
+| Metric| commerce.productListRemovals.value | Cart Removals |`commerce.productListRemovals.value`|
+| Metric| commerce.productListAdds | Cart Adds |`commerce.productListAdds`|
+| Metric| commerce.productViews.value | Product Views |`commerce.productViews.value`|
+| Metric| commerce.purchases.value | Purchases |`commerce.purchases.value`|
+| Metric| web.webPageDetails.pageViews | Page Views |`web.webPageDetails.pageViews`|
+| Metric | points | Loyalty Points |`_experienceplatform.loyaltyDetails.points` |
+| Dimension | level | Loyalty Level |`_experienceplatform.loyaltyDetails.level` |
+| Dimension | channel.mediaType | Traffic Medium | `channel.mediaType`|
+| Dimension | channel.typeAtSource | Traffic Source | `channel.typeAtSource`|
+| Dimension | Tracking code | Marketing Channel | `marketing.trackingCode`|
+| Dimension | gaid | Google Analytics ID | `_experienceplatform.identification.core.gaid`|
+| Dimension | web.webPageDetails.name | Page Title | `web.webPageDetails.name`|
+| Dimension | Vendor | Browser | `environment.browserDetails.vendor`|
+| Dimension | Type | Device Type | `device.type`|
+| Dimension | loyaltyId | Loyalty ID |`_experienceplatform.identification.core.loyaltyId` |
+| Dimension| commerce.order.payments.transactionID|Transaction ID  | `commerce.order.payments.transactionID`|
+| Dimension| eventType|Event Type  | `eventType`|
+| Dimension| timestamp| Timestamp  | `timestamp`|
+| Dimension| `_id` |Identifier  |`_id` |
 
 You'll then have something like this:
 
 ![demo](./images/25b.png)
 
-Next, you need to make some changes to the Person and Session context for some of these components by changing the **Attribution Settings**.
-
-![demo](./images/25c.png)
+Next, you need to make some changes to the Person and Session context for some of these components by changing the **Attribution or Persistence Settings**.
 
 Please change the **Attribution Settings** for the below components:
 
@@ -187,39 +162,32 @@ Please change the **Attribution Settings** for the below components:
 | Traffic Medium | 
 | Device Type | 
 | Google Analytics ID | 
-| Loyalty ID | 
-| Loyalty Level | 
-| Loyalty Points | 
 
-To do that, select the component, click **Use custom attribution model** and set the **Model** to **Last Touch**, and the **Expiration** to **Person (Reporting Window)**. Repeat this for all of the above mentioned components.
+To do that, select the component, click **Use custom attribution model** and set the **Model** to **Most Recent**, and the **Expiration** to **Person Reporting Window**. Repeat this for all of the above mentioned components.
 
 ![demo](./images/27a.png)
 
-After making the changes in attribution settings for all of the above mentioned components, you should then have this view:
+After making the changes in attribution settings for all of the above mentioned components, you should then have this view. Click **Save and continue**.
 
 ![demo](./images/27.png)
 
-Your data view is now configured. Click **Save**.
+On the **Settings** screen, no changes are required. Clickl **Save and finish**.
 
-![demo](./images/30.png)
+![demo](./images/27b.png)
 
 You are now ready to to analyze Google Analytics data within Adobe Analytics Analysis Workspace. Let's move to the next exercise.
 
 ## 4.2.5.3 Create your Project
 
-In Customer Journey Analytics, go to **Projects**.
+In Customer Journey Analytics, go to **Workspace**. Click **Create Project**
 
 ![demo](./images/pro1.png)
 
-You'll then see this:
+Select **Blank Workspace Project** and click **Create**.
 
 ![demo](./images/pro2.png)
 
-Create a Project by clicking **Create New Project**.
-
-![demo](./images/pro3.png)
-
-You now have a blank Project:
+You now have a blank project:
 
 ![demo](./images/pro4.png)
 
@@ -230,27 +198,21 @@ First, save your project and give it a name. You can use the following command t
 | Windows | Control + S          | 
 | Mac | Command + S          | 
 
-You'll see this popup: 
-
-![demo](./images/prsave.png)
-
-Please use this naming convention:
+You'll see this popup. Please use this naming convention:
 
 |  Name       | Description    | 
 | ----------------- |-------------| 
-| ldap – GA + Loyalty Workspace| ldap – GA + Loyalty Workspace|
+| `--aepUserLdap-- – GA + Loyalty Workspace`| `--aepUserLdap-- – GA + Loyalty Workspace`|
 
-Next, click **Save Project**.
+Next, click **Save**.
 
-![demo](./images/prsave2.png)
+![demo](./images/prsave.png)
 
-Next, make sure to select the correct data view in the upper right corner of your screen. This is the data view you created in the previous exercise, with the naming convention `ldap - GA + Loyalty Data View`. In this example, the Data View to select is `ldap - GA + Loyalty Data View`.
+Next, make sure to select the correct data view in the upper right corner of your screen. This is the data view you created in the previous exercise, with the naming convention `--aepUserLdap-- - GA + Loyalty Data View`.
 
 ![demo](./images/prdvlist.png)
 
-![demo](./images/prdv.png)
-
-### 12.5.3.1 Freeform Tables
+### 4.2.5.3.1 Freeform Tables
 
 Freeform tables work, more or less, as pivot tables within Excel. You pick something from the left bar and you drag and drop it into the Freeform and you'll get a table report.
 
@@ -264,17 +226,13 @@ Let see two examples where you need to use SQL, BigQuery and some time to answer
 
 Let's answer this questions and some more with Analysis Workspace in CJA.
 
-First, select the right date range (**Last 53 full weeks**) on the right side of the panel.
+First, select the right date range (**Today**) on the right side of the panel. CLick **Apply**.
 
 ![demo](./images/pro11.png)
 
-Then click **Apply** to apply the date range. Remember this step for next exercises.
-
-![demo](./images/apply.png)
-
 >[!NOTE]
 >
->If you just created the **Data connection** and **Data view** you might need to wait a couple of hours. CJA needs some time to backfill historical data when there is a huge amount of data records. 
+>If you just created the **Data connection** and **Data view** you might need to wait a couple of hours. CJA needs some time to backfill historical data when there is a big amount of data records. 
 
 Let's drag and drop some dimensions and metrics to analysis the Marketing channels. First use the dimension **Marketing Channel** and drag and drop it to the canvas of the **Freeform table**. (Click on **Show All** in case you don't see the metric immediately in the Metrics menu)
 
@@ -290,9 +248,13 @@ Before you can do that, you need to create the Calculated Metric **Conversion Ra
 
 ![demo](./images/procalc1.png)
 
-As a name for the Calculated Metric, use **Conversion Rate**. Then drag the Metrics **purchase** and **Sessions** onto the canvas. Set **Format** to **Percent** and **Decimal Places** to **2**. Finally, click **Save**.
+As a name for the Calculated Metric, use **Conversion Rate** and use **conversionRate** for **External ID**. Then drag the Metrics **purchase** and **Sessions** onto the canvas. Set **Format** to **Percent** and **Decimal Places** to **2**. Finally, click **Save**.
 
 ![demo](./images/procalc2.png)
+
+Click **Save**.
+
+![demo](./images/procalc2a.png)
 
 Next, in order to use all these Metrics in the **Freeform Table**, drag and drop them one by one onto the **Freeform Table**. See the example below.
 
