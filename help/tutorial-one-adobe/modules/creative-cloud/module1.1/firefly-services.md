@@ -21,6 +21,10 @@ exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
 
 In this exercise, explore Firefly Services and get an understanding of its capabilities.
 
+[1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs](./ex2.md)
+
+In this exercise, explore Firefly Services and get an understanding of its capabilities.
+
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.
