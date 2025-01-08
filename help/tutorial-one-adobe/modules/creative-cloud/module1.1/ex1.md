@@ -169,7 +169,7 @@ You'll now see a beautiful image portraying `horses in a field`.
 
 Feel free to play around with the API request before continuing to the next exercise.
 
-Next Step: [1.1.2 Request images with specifications](./ex2.md)
+Next Step: [1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs](./ex2.md)
 
 [Go Back to Module 1.1](./firefly-services.md)
 
