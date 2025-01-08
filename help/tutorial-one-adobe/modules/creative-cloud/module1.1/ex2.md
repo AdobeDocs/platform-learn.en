@@ -3,6 +3,7 @@ title: Getting Started with Firefly Services
 description: Getting Started with Firefly Services
 kt: 5342
 doc-type: tutorial
+exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
 ---
 # 1.1.2 Request images with specifications
 
