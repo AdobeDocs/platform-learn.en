@@ -114,7 +114,7 @@ Open **Blob Containers** and then click the container you created in the previou
 
 ## 1.1.2.4 Manual file upload and using a gradient file as style reference
 
-You should now upload a gradient file of choice into your container. You can use any gradient file of choice, or you can use [this file](./images/gradient.png) by downloading it your computer.
+You should now upload a gradient file of choice into your container. You can use any gradient file of choice, or you can use [this file](./images/gradient.jpg) by downloading it your computer.
 
 ![Azure Storage](./images/gradient.jpg)
 
