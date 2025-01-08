@@ -83,11 +83,11 @@ For some fields, you need to remove the original mapping and create a new one, f
 
 | Calculated Field        | Target Field |   
 | ----------------- |-------------| 
-| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Refunds"), 1, 0)` | commerce.purchases.value | 
-| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Detail_Views"), 1, 0)` | commerce.productViews.value | 
-| `iif("Adds_To_Cart".equalsIgnoreCase("Adds_To_Cart"), 1, 0)` | commerce.productListAdds.value | 
-| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Removes_From_Cart"), 1, 0)` | commerce.productListRemovals.value | 
-| `iif("Ecommerce_Action_Type".equalsIgnoreCase("Product_Checkouts"), 1, 0)` | commerce.checkouts.value | 
+| `iif(Unique_Purchases == null, 0, Unique_Purchases)` | commerce.purchases.value | 
+| `iif(Product_Detail_Views == null, 0, Product_Detail_Views)` | commerce.productViews.value | 
+| `iif(Adds_To_Cart == null, 0, Adds_To_Cart)` | commerce.productListAdds.value | 
+| `iif(Product_Removes_From_Cart == null, 0, Product_Removes_From_Cart), 1, 0)` | commerce.productListRemovals.value | 
+| `iif(Product_Checkouts == null, 0, Product_Checkouts)` | commerce.checkouts.value | 
 
 To create a **Calculated Field**, click **+ New field type** and then click **Calculated field**.
 
