@@ -12,7 +12,7 @@ Below is an overview of the status of the content in this tutorial.
 | [0. Getting started](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024  | Yes         | - |
 | [1.1 Foundation - Setup of Adobe Experience Platform Data Collection & Web SDK](./modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) | 18/11/2024 | Yes         | -|
 | [1.2 Foundation - Data Ingestion](./modules/datacollection/module1.2/data-ingestion.md)         | 18/11/2024          | Yes         |-|
-| [1.3 Federated Audience Composition](./modules/datacollection/module1.3/fac.md)         | -          | No         | Content is pending creation |
+| [1.3 Federated Audience Composition](./modules/datacollection/module1.3/fac.md)         | 07/01/2025          | Yes, 95%         | Sample data files are pending, content is 95% done and tested |
 | [2.1 Foundation - Real-time Customer Profile](./modules/rtcdp-b2c/module2.1/real-time-customer-profile.md)        | 19/11/2024          | Yes         |-|
 | [2.2 Intelligent Services](./modules/rtcdp-b2c/module2.2/intelligent-services.md)      | 03/12/2024          | Yes        |-|
 | [2.3 Real-Time CDP - Build an audience and take action](./modules/rtcdp-b2c/module2.3/real-time-cdp-build-a-segment-take-action.md)       | 20/11/2024        | Yes         |-|
