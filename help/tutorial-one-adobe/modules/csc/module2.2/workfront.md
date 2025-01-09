@@ -16,7 +16,7 @@ doc-type: tutorial
 
 ## Exercises
 
-[2.2.1 Getting started Workfront](./ex1.md)
+[2.2.1 Getting started with Workfront](./ex1.md)
 
 In this exercise, ...
 

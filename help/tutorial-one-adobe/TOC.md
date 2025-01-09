@@ -10,6 +10,8 @@ recommendations: noDisplay,noCatalog
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
 
++ Getting started {#gettingstarted}
+  + [Getting started](/help/tutorial-one-adobe/modules/getting-started/getting-started.md)
 + 1 Adobe Creative Cloud {#creativecloud}
   + 1.1 Adobe Firefly Services {#module11}
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)

@@ -1,11 +1,11 @@
 ---
-title: Create your Cloud Manager Program
-description: Create your Cloud Manager Program
+title: Getting started with Workfront
+description: Getting started with Workfront
 kt: 5342
 doc-type: tutorial
 ---
-# 2.1.1 Create your Cloud Manager Program
+# 2.2.1 Getting started with Workfront
 
-[Go Back to Module 2.1](./aemcs.md)
+[Go Back to Module 2.2](./workfront.md)
 
 [Go Back to All Modules](./../../../overview.md)
