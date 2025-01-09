@@ -113,13 +113,13 @@ Open **Blob Containers** and then click the container you created in the previou
 
 ![Azure Storage](./images/az18.png)
 
-## 1.1.2.4 Manual file upload and using a gradient file as style reference
+## 1.1.2.4 Manual file upload and using an image file as style reference
 
-You should now upload a gradient file of choice into your container. You can use any gradient file of choice, or you can use [this file](./images/gradient.jpg) by downloading it your computer.
+You should now upload a image file of choice into your container. You can use any image file of choice, or you can use [this file](./images/gradient.jpg) by downloading it your computer.
 
 ![Azure Storage](./images/gradient.jpg)
 
-Drop the gradient file into your container in Azure Storage Explorer.
+Drop the image file into your container in Azure Storage Explorer.
 
 Once uploaded, you'll see it in your container:
 
@@ -141,7 +141,7 @@ Go back to Postman. Open the request **POST - Firefly - T2I (styleref) V3**. You
 
 ![Azure Storage](./images/az23.png)
 
-Replace the placeholder URL by the presigned URL for your gradient file, that you copied from Azure Storage Explorer. You'll then have this. Click **Send**.
+Replace the placeholder URL by the presigned URL for your image file, that you copied from Azure Storage Explorer. You'll then have this. Click **Send**.
 
 ![Azure Storage](./images/az24.png)
 
@@ -149,7 +149,7 @@ You'll then get a response from Firefly Services again, with a new image. Open t
 
 ![Azure Storage](./images/az25.png)
 
-You'll then see another image with `horses in a field`, but this time the style will be similar to the gradient file that you provided as style reference.
+You'll then see another image with `horses in a field`, but this time the style will be similar to the image file that you provided as style reference.
 
 ![Azure Storage](./images/az26.png)
 
@@ -189,7 +189,7 @@ Then, click **Body**.
 
 ![Azure Storage](./images/az31.png)
 
-You will now need to select a file from your local machine. You can use a new image file of choice, or you can use another gradient file that you can find [here](./images/gradient2-p.jpg).
+You will now need to select a file from your local machine. You can use a new image file of choice, or you can use another image file that you can find [here](./images/gradient2-p.jpg).
 
 ![Gradient file](./images/gradient2-p.jpg)
 
@@ -217,7 +217,10 @@ The file name to use is `gradient2-p.jpg`, which meands that the URL needs to ch
 
 Next, go to **Headers** where you need to add a new header manually. Use this:
 
-x-ms-blob-type BlockBlob
+| Key     | Value     | 
+|:-------------:| :---------------:| 
+| `x-ms-blob-type`          | `BlockBlob` |
+
 
 ![Azure Storage](./images/az35.png)
 
@@ -232,6 +235,27 @@ You'll then see this empty response in Postman, which means that your file uploa
 If you then go back to Azure Storage Explorer and refresh the content of your folder, you'll now find the newly uploaded file there.
 
 ![Azure Storage](./images/az38.png)
+
+## 1.1.2.5 Programmatic file usage
+
+In order to use programmatically read files from Azure Storage Accounts, you'll need to create a new **Shared Access Signature (SAS)** token, with permissions that allow you to read a file. You could technically use the SAS-token you created in the previous exercise, but it's best practice to have a separate token with only **Read** permissions.
+
+To do so, go back to Azure Storage Explorer. Right-click your container, and then click **Get Shared Access Signature**.
+
+![Azure Storage](./images/az27.png)
+
+Under **Permissions**, the following permissions are required:
+
+- **Read**
+- **Add**
+- **Create**
+- **Write**
+- **List**
+
+Click **Create**.
+
+![Azure Storage](./images/az28.png)
+
 
 Next Step: [1.1.3 ... ](./ex3.md)
 
