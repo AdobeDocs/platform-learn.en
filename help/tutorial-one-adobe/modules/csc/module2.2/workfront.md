@@ -3,6 +3,7 @@ title: 2.2 Workfront
 description: 2.2 Workfront
 kt: 5342
 doc-type: tutorial
+exl-id: 96685851-b446-4bae-890e-4f96a59cedba
 ---
 # 2.2 Workfront
 
