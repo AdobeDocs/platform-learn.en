@@ -301,9 +301,38 @@ Your website will then open in the **Universal Editor**.
 
 ![AEMCS](./images/aemcssetup45.png)
 
-You can now also navigate to your website by going to `main--citisignal--woutervangeluwe.aem.live/us/en`
+You will now be able to acces your website by going to `main--citisignal--XXX.aem.page/us/en` and/or `main--citisignal--XXX.aem.live/us/en`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
 
+In this example, the full URL becomes this:
+`https://main--citisignal--woutervangeluwe.aem.page/us/en` and/or `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
 
+It may take some time before all the assets are shown correctly, as they need to be published first.
+
+You'll then see this:
+
+![AEMCS](./images/aemcssetup46.png)
+
+After a couple of minutes, the assets will all be loading properly.
+
+![AEMCS](./images/aemcssetup47.png)
+
+## 2.1.2.7 Test Page Performance
+
+Go to [https://pagespeed.web.dev/](https://pagespeed.web.dev/). Enter your URL and click **Analyze**.
+
+![AEMCS](./images/aemcssetup48.png)
+
+You'll then see that your website, in both a mobile and desktop visualization, gets a high score:
+
+**Mobile**:
+
+![AEMCS](./images/aemcssetup49.png)
+
+**Desktop**:
+
+![AEMCS](./images/aemcssetup50.png)
+
+Next Step: [2.1.3 Configure a custom block](./ex3.md)
 
 [Go Back to Module 2.1](./aemcs.md)
 

@@ -25,6 +25,10 @@ In this exercise, you'll create your Cloud Manager Program which will create the
 
 In this exercise you'll set up your AEM CS environment and access your CitiSignal website.
 
+[2.1.3 Develop a custom block](./ex3.md)
+
+In this exercise you'll develop a custom block component for your website.
+
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.
