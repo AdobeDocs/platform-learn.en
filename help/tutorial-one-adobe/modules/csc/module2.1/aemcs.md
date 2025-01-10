@@ -18,7 +18,11 @@ doc-type: tutorial
 
 [2.1.1 Create your Cloud Manager Program](./ex1.md)
 
-In this exercise, ...
+In this exercise, you'll create your Cloud Manager Program which will create the Sites, Assets and Edge Delivery Services products for you.
+
+[2.1.2 Setup your AEM CS environment](./ex2.md)
+
+In this exercise you'll set up your AEM CS environment and access your CitiSignal website.
 
 [Summary and benefits](./summary.md)
 
