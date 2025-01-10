@@ -3,6 +3,7 @@ title: Create your Cloud Manager Program
 description: Create your Cloud Manager Program
 kt: 5342
 doc-type: tutorial
+exl-id: db366111-3873-4504-95f1-b240836c833f
 ---
 # 2.1.2 Setup your AEM CS environment
 
