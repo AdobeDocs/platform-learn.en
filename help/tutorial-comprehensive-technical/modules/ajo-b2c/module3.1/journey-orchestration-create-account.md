@@ -7,9 +7,7 @@ exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
 ---
 # 3.1 Adobe Journey Optimizer: Orchestration
 
-**Authors: [Rob In der Maur](https://www.linkedin.com/in/ridmaur/), [Wouter Van Geluwe](https://www.linkedin.com/in/woutervangeluwe/)**
-
-In this module, we will take you through the steps to use Adobe Journey Optimizer. You'll get access to Adobe Journey Optimizer and will be able to configure Events and Journeys that start based on a trigger from an experience event sent to Platform.
+In this module, we will take you through the steps to use Adobe Journey Optimizer. You'll configure events and journeys that start based on a trigger from an experience event sent to AEP.
 
 ## Learning Objectives
 
@@ -31,11 +29,15 @@ In this module, we will take you through the steps to use Adobe Journey Optimize
 
 In this exercise, you'll learn how to configure an event.
 
-[3.1.2 Create your journey and email message](./ex2.md)
+[3.1.2 Create fragments to be used in your message](./ex2.md)
+
+In this exercise, you'll learn how to configure reusable fragments that you'll use when creating your email message.
+
+[3.1.3 Create your journey and email message](./ex3.md)
 
 In this exercise, you'll learn how to configure an email message.
 
-[3.1.3 Update your Data Collection property and test your journey](./ex3.md)
+[3.1.3 Update your Data Collection property and test your journey](./ex4.md)
 
 This will guide you through the configuration of Launch to trigger your event and provide the right payload and finally, you'll be able to send yourself an email.
 

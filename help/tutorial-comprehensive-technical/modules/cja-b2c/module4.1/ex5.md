@@ -19,11 +19,11 @@ In this exercises you will use Analysis Workspace within CJA to analyze product 
 
 We will cover some of the queries done in  Module 7 - Query Service so you can see how easy is to run the same queries and more but without using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
 
-Let's use the project you created in [11.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
+Let's use the project you created in [4.1.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
+
+Click to open your project `--aepUserLdap-- - Omnichannel Analysis`.
 
 ![demo](./images/prohome.png)
-
-Open your project `--aepUserLdap-- - Omnichannel Analysis`.
 
 With your project opened and the Data View `--aepUserLdap-- - Omnichannel Analysis` selected, you're ready to start building your first visualizations.
 
@@ -31,7 +31,7 @@ With your project opened and the Data View `--aepUserLdap-- - Omnichannel Analys
 
 ## How many product views do we have on a daily basis
 
-First of all, we need to select the right dates to analyze the data. Go to the calendar dropdown on the right side of the canvas. Click on it and select the applicable date range.
+First of all, you need to select the right dates to analyze the data. Go to the calendar dropdown on the right side of the canvas. Click on it and select the applicable date range.
 
 ![demo](./images/pro1.png)
 
@@ -43,15 +43,15 @@ Automatically the dimension **Day** will be added to create your first table. No
 
 ![demo](./images/pro3.png)
 
-Next, right-click on the metric summary.
+Next, right-click on the metric summary. Click **Visualize**.
 
 ![demo](./images/pro4.png)
 
-Click on **Visualize** and then select **Line** as visualization.
+Click **Line**.
 
 ![demo](./images/pro5.png)
 
-You’ll see your products views by day.  
+You’ll see your products views by hour.  
 
 ![demo](./images/pro6.png)
 
@@ -84,7 +84,7 @@ Let's start finding the top 5 products viewed. In the left side menu, find the *
 
 Now drag and drop **Product Name** to replace the **Day** dimension:
 
-This will be the result
+This will be the result. Select the 4 product names and you'll see the vizualization update.
 
 ![demo](./images/pro10a.png)
 
@@ -104,13 +104,9 @@ Finally you can add more visualizations. On the left side, under visualizations,
 
 ![demo](./images/pro18.png)
 
-Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac).
+Next, in the Table, select the first 5 **User Agent**  rows from the breakdown we did under **Google Pixel XL 32GB Black Smartphone** > **Citi Signal**. While selecting the 3 rows, hold the **CTRL** button (on Windows) or the **Command** button (on Mac). You'll see the donut chart updating.
 
 ![demo](./images/pro20.png)
-
-You'll see the donut chart changed:
-
-![demo](./images/pro21.png)
 
 You can even adapt the design to be more readable, by making both the **Line** graph and the **Donut** graph a bit smaller so they can fit next to each other:
 
@@ -150,13 +146,9 @@ You'll then see this.
 
 ![demo](./images/prodatefa.png)
 
-Find the dimension **Event Type** under the components on the left side:
+Find the dimension **Event Type** under the components on the left side. Click on the arrow to open the dimension.
 
 ![demo](./images/pro26.png)
-
-Click on the arrow to open the dimension:
-
-![demo](./images/pro27.png)
 
 You'll see all available Event Types. 
 
@@ -170,7 +162,7 @@ Do the same with **commerce.productListAdds** and **commerce.purchases** and dro
 
 ![demo](./images/props1.png)
 
-You can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if we want to analyze interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
+You can do many things here. Some examples: compare over time, compare each step by device or compare by loyalty. However, if you want to analyze interesting things like why customers don't purchase after adding an item to their cart, we can use the best tool in CJA: right-click.
 
 Right click on the touchpoint **commerce.productListAdds**. Then click on **Breakdown fallout at this touchpoint**.
 
@@ -188,36 +180,24 @@ Change the **Event Type** by **Page Name**, in the new freeform table, to see wh
 
 Again, there are many ways to perform this analysis. Let's use the flow analysis to start the discovery part.
 
-Close the current panel by clicking here:
+Close the current panel by clicking here and then add a new blank panel by clicking on **+ Add Blank Panel**.
 
 ![demo](./images/pro0.png)
-
-Now add a new blank panel by clicking on **+ Add Blank Panel**.
-
-![demo](./images/pro0a.png)
 
 Click the visualization **Flow**.
 
 ![demo](./images/pro35.png)
 
-You'll then see this:
-
-![demo](./images/pro351.png)
-
-Select the same date range as in the previous exercise.
+You'll then see this. Select the same date range as in the previous exercise. Click **Apply**.
 
 ![demo](./images/pro0b.png)
 
-Find the dimension **Page Name** under the components on the left side:
+Find the dimension **Page Name** under the components on the left side and click the arrow to open the dimension.
 
 ![demo](./images/pro36.png)
 
-Click on the arrow to open the dimension:
-
-![demo](./images/pro37.png)
-
 You'll find all pages viewed. Find the page name: **Cancel Service**.
-Drag and drop **Cancel Service** into the Flow Visualization on the middle field:
+Drag and drop **Cancel Service** into the Flow Visualization on the middle field. Click **Build**.
 
 ![demo](./images/pro38.png)
 
@@ -268,27 +248,19 @@ Now select **positive** as value for the filter.
 
 ![demo](./images/pro49.png)
 
-Change the scope to be **Person** level.
+Change the scope to be **Person** level. Click **Save**.
 
 ![demo](./images/pro50.png)
 
-To finish, simply click **Save**.
-
-![demo](./images/pro51.png)
-
-You'll then be back here. If not done yet, close the previous panel.
+You'll then be back here. If not done yet, close the previous panel and add a new blank panel by clicking on **+ Add Blank Panel**.
 
 ![demo](./images/pro0c.png)
 
-Now add a new blank panel by clicking on **+ Add Blank Panel**.
-
-![demo](./images/pro24c.png)
-
-Select the same date range as in the previous exercise.
+Select the same date range as in the previous exercise. Click **Apply**.
 
 ![demo](./images/pro24d.png)
 
-Click on **Freeform table**.
+Click **Freeform table**.
 
 ![demo](./images/pro52.png)
 

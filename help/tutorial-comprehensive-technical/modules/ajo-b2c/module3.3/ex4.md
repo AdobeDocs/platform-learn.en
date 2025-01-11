@@ -11,21 +11,21 @@ exl-id: 5cc9f134-1434-4e76-9d26-9d73dbf6c0be
 
 In order to load the demo website project in Adobe Target, you first need to collect a special link that will allow Adobe Target to load your demo website project.
 
-To do that, go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+To do that, go to [https://dsn.adobe.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
 
 ![RTCDP](./images/builder1.png)
 
-You'll now see this. Click **Share**. 
+You'll now see this. Go to **Share**. Click **Generate Link** and then copy the link to your clipboard.
 
 ![RTCDP](./images/builder2.png)
 
-Click **Generate Link** and then copy the link to your clipboard.
-
-![RTCDP](./images/builder3.png)
-
-Go to [https://bitly.com](https://bitly.com), paste the link you copied and click **Shorten**. You'll now get a shortened link, which looks like this: `https://bit.ly/3JxN7aG`. You'll need that link in the next exercise.
+Go to [https://bitly.com](https://bitly.com), paste the link you copied and click **Create your link**. 
 
 ![RTCDP](./images/builder4.png)
+
+You'll now get a shortened link, which looks like this: `https://adobe.ly/3PpGcFk`. You'll need that link in the next exercise.
+
+![RTCDP](./images/builder5.png)
 
 ## 3.3.4.2 Collect
 
@@ -33,31 +33,23 @@ Now go to the Adobe Experience Cloud homepage by going to [https://experienceclo
 
 ![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/excl.png)
 
-On the **Adobe Target** homepage, you'll see all existing Activities.
+On the **Adobe Target** homepage, you'll see all existing Activities. Click **Create Activity** and then click **Experience Targeting**.
 
 ![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatov.png)
 
-Click **+ Create Activity** to create a new Activity.
-
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatcr.png)
-
-Select **Experience Targeting**.
-
-![RTCDP](./images/exclatcrxt.png)
-
-Now select **Visual** and paste your shortened link in the field **Enter Activity URL**. Click **Next**.
+Now select **Visual** and paste your shortened link in the field **Enter Activity URL**. Click **Create**.
 
 ![RTCDP](./images/exclatcrxt1.png)
 
 You'll then see your demo website project being loaded in the Visuel Experience Composer.
 
+>[!NOTE]
+>
+>In case your website isn't loading correctly, please install and enable this Chrome extension: **Adobe Target VEC Helper** from the Chrome Web Store, then try again.
+
 ![RTCDP](./images/vec1.png)
 
-Go to **Browse** mode to click **Allow all** on the cookie consent popup.
-
-![RTCDP](./images/vec2.png)
-
-Click the area which contains the text **Featured Categories**. Click **Insert Before** and then select **Offer Decision**.
+Click the area that holds the Disney+ offer. Make sure to select the full **Container**. Click **Insert Before** and then select **Offer Decision**.
 
 ![RTCDP](./images/vec3.png)
 
@@ -65,11 +57,15 @@ You'll then see this popup. Select your sandbox `--aepSandboxName--` and then se
 
 ![RTCDP](./images/vec4.png)
 
-Next, select your decision `--aepUserLdap-- - Luma Decision`. Click **Save**.
+Next, select your decision `--aepUserLdap-- - CitiSignal Decision`. Click **Save**.
 
 ![RTCDP](./images/vec5.png)
 
-You'll then see this. Make sure the add an additional template rule **URL** **contains** **your-project-name**. CLick **Save**.
+You'll then see this. Click **Review Rule**.
+
+![RTCDP](./images/vec5a.png)
+
+Make sure the add an additional template rule **URL** **contains** **your-project-name**. Click **Save**.
 
 ![RTCDP](./images/vec6.png)
 
@@ -85,11 +81,9 @@ You'll then see this. Define your **Goal Metric** as indicated. Click **Save & C
 
 ![RTCDP](./images/vec9.png)
 
-Your offer is now created and is being published.
+Your offer is now created and is being published. Once your offer is published, you can acitvate it.
 
-![RTCDP](./images/vec10.png)
-
-Once your offer is published, you can enable it.
+![RTCDP](./images/vec11.png)
 
 Next Step: [3.3.5 Use your decision in an email and sms](./ex5.md)
 

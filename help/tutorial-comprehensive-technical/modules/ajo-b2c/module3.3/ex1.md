@@ -33,17 +33,17 @@ Working with Offer Decisioning, you need to understand the following concepts:
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 In the left menu, click **Offers**. You'll now see the Offers menu, which contains things like Offers, Collections and Decisions.
 
 ![Placements](./images/homedec.png)
 
-Click **Components**. You'll now see the Offers menu, which contains things like Placements, Tags, Rules and Rankings.
+Click **Components**. You'll now see things like Placements, Collection qualifier, Rules and Rankings.
 
 ![Placements](./images/components.png)
 
@@ -55,7 +55,7 @@ Go to **Placements**.
 
 In the **Placements** tab you can define your placements for your offers. When you define a decision the placement defines where the resulting offer will appear (Channel Type) and in what shape or form (Content Type).
 
-If you don't see any placements in your Adobe Experience Platform instance, please create them as indicated below and in the screenshot.
+If you don't see any placements in your environment, please create them as indicated below and in the screenshot.
 
 | Name                   | Channel Type | Content Type |
 | ---------------------- | ------------ | ------------ |
@@ -94,20 +94,18 @@ As you already know how to define audiences based on the previous enablement mod
 Go to **Rules**. Click **+ Create Rule**.
 
 ![Decision Rules](./images/rules.png)
-
-You'll then see the Segmentation environment of Adobe Experience Platform.
+ 
+You'll then see the Audience creation interface of Adobe Experience Platform.
 
 ![Decision Rules](./images/createrule1.png)
 
 You can now access all fields that are part of the Union Schema for the Real-time Customer Profile and can build out any rule.
 
-It's also interesting to know that you can simply reuse already defined audiences in Adobe Experience Platform, by going to **Audiences** > ``--aepTenantId--``.
-
-![Decision Rule](./images/decisionruleaud.png)
+It's also good to know that you can simply reuse already defined audiences in Adobe Experience Platform, by going to **Audiences** > ``--aepTenantId--``.
 
 You'll then see this:
 
-![Decision Rule](./images/decisionruleaud1.png)
+![Decision Rule](./images/decisionruleaud.png) 
 
 If you wish, you can now configure your own Rules. For this exercise, you'll need two rules:
 

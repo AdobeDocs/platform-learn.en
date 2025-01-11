@@ -1,8 +1,7 @@
 ---
-title: Adobe Journey Optimizer - Configure and use the SMS channel within Adobe Journey Optimizer
-description: Adobe Journey Optimizer - Configure and use the SMS channel within Adobe Journey Optimizer
+title: Adobe Journey Optimizer - Configure your journey and message
+description: Adobe Journey Optimizer - Configure your journey and message
 kt: 5342
-audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 exl-id: dc7c6f18-06d2-4497-96b0-8dc78d389731
 ---
@@ -10,24 +9,23 @@ exl-id: dc7c6f18-06d2-4497-96b0-8dc78d389731
 
 In this exercise, you'll create a journey and several text messages by making use of Adobe Journey Optimizer.
 
-For this use case, the goal is to send different SMS messages based on the weather conditions of the location of your customer. 3 scenarios have been defined:
+For this use case, the goal is to send different messages based on the weather conditions of the location of your customer. 3 scenarios have been defined:
 
 - Colder than 10° Celsius
 - Between 10° and 25° Celsius
 - Warmer than 25° Celsius
 
-For these 3 conditions, you'll need to define 3 SMS messages in Adobe Journey Optimizer.
+For these 3 conditions, you'll need to define 3 messages in Adobe Journey Optimizer.
 
 ## 3.2.4.1 Create your journey
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
-
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 In the left menu, go to **Journeys** and click **Create Journey** to start creating your Journey.
 
@@ -35,11 +33,11 @@ In the left menu, go to **Journeys** and click **Create Journey** to start creat
 
 You should first name your journey.
 
-As a Name for the journey, use `--aepUserLdap-- - Geofence Entry Journey`. In this example, the journey name is `vangeluw - Geofence Entry Journey`. No other values must be set at this moment. Click **OK**.
+As a Name for the journey, use `--aepUserLdap-- - Geofence Entry Journey`. No other values must be set at this moment. Click **Save**.
 
 ![Demo](./images/joname.png)
 
-On the left side of your screen, have a look at **Events**. You should see your previously created event in that list. Select it, then drag and drop it on the journey canvas. Your journey then looks like this. Click **Ok**.
+On the left side of your screen, have a look at **Events**. You should see your previously created event in that list. Select it, then drag and drop it on the journey canvas. Your journey then looks like this. Click **Save**.
 
 ![Demo](./images/joevents.png)
 
@@ -47,7 +45,7 @@ Next, click on **Orchestration**. You now see the available **Orchestration** ca
 
 ![Demo](./images/jo2.png)
 
-You now have to define three conditions:
+You now have to configure three paths for this condition:
 
 - It's colder than 10° Celsius
 - It's between 10° and 25° Celsius
@@ -78,25 +76,25 @@ You'll then see this.
 ![Demo](./images/jo10.png)
 
 In order to retrieve the temperature as part of this condition, you need to provide the city in which the customer currently is.
-The **City** needs to be linked to the dynamic parameter `q`, just like we saw previously in the Open Weather API Documentation.
+The **City** needs to be linked to the dynamic parameter `q`, just like you saw previously in the Open Weather API Documentation.
 
 Click the field **dynamic val: q** as indicated in the screenshot.
 
 ![Demo](./images/jo11.png)
 
-You then need to find the field that contains the current city of the customer in one of the available Data Sources.
+You then need to find the field that contains the current city of the customer in one of the available Data Sources, in this case, you need to find it under **Context**.
 
 ![Demo](./images/jo12.png)
 
 You can find the field by navigating to `--aepUserLdap--GeofenceEntry.placeContext.geo.city`.
 
-By clicking that field, it will be added as the dynamic value for the parameter `q`. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
+By clicking that field or clicking **+**, it will be added as the dynamic value for the parameter `q`. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In this case you will simulate this using the data collection property of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 
 ### Condition 2: Between 10° and 25° Celsius
 
-After having added the first condition, you'll see this screen. Click **Add Path**.
+After having added the first condition, you'll see this screen. Click **Add a path**.
 
 ![Demo](./images/joc2.png)
 
@@ -121,7 +119,7 @@ You'll then see this.
 ![Demo](./images/joc10.png)
 
 In order to retrieve the temperature as part of this Condition, you need to provide the city in which the customer currently is.
-The **City** needs to be linked to the dynamic parameter **q**, just like we saw previously in the Open Weather API Documentation.
+The **City** needs to be linked to the dynamic parameter **q**, just like you saw previously in the Open Weather API Documentation.
 
 Click the field **dynamic val: q** as indicated in the screenshot.
 
@@ -131,7 +129,7 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to `--aepUserLdap--GeofenceEntry.placeContext.geo.city`. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
+You can find the field by navigating to `--aepUserLdap--GeofenceEntry.placeContext.geo.city`. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In this case you will simulate this using the data collection property of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 
@@ -139,7 +137,7 @@ Next, you'll add the 3rd condition.
 
 ### Condition 3: Warmer than 25° Celsius
 
-After having added the second condition, you'll see this screen. Click **Add Path**.
+After having added the second condition, you'll see this screen. Click **Add a path**.
 
 ![Demo](./images/joct2.png)
 
@@ -165,7 +163,7 @@ You'll then see this.
 ![Demo](./images/joct10.png)
 
 In order to retrieve the temperature as part of this Condition, you need to provide the city in which the customer currently is.
-The **City** needs to be linked to the dynamic parameter **q**, just like we saw previously in the Open Weather API Documentation.
+The **City** needs to be linked to the dynamic parameter **q**, just like you saw previously in the Open Weather API Documentation.
 
 Click the field **dynamic val: q** as indicated in the screenshot.
 
@@ -175,85 +173,29 @@ You then need to find the field that contains the current city of the customer i
 
 ![Demo](./images/jo12.png)
 
-You can find the field by navigating to ```--aepUserLdap--GeofenceEntry.placeContext.geo.city```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In our case we will simulate this with the admin console of the demo website. Click **OK**.
+You can find the field by navigating to ```--aepUserLdap--GeofenceEntry.placeContext.geo.city```. By clicking that field, it will be added as the dynamic value for the parameter **q**. This field will be populated by for instance the geolocation-service that you've implemented in your mobile app. In this case you will simulate this using the data collection property of the demo website. Click **OK**.
 
 ![Demo](./images/jo13.png)
 
-You now have three configured paths. Click **Ok**.
+You now have three configured paths. Click **Save**.
 
 ![Demo](./images/jo3path.png)
 
-As this is a journey for learning purpose, we'll now configure a couple of actions to showcase the variety of options marketeers now have to deliver messages.
+As this is a journey for learning purpose, you'll now configure a couple of actions to showcase the variety of options marketeers now have to deliver messages.
 
 ## 3.2.4.2 Send messages for path: Colder than 10° Celsius
 
-For each of the temperature contexts, we'll attempt to send a text message to our customer. We can only send a text message if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
+For each of the temperature contexts, you'll attempt to send a text message to a customer. For this exercise, you'll send a real message to a Slack channel instead of a mobile phone number. 
 
-Let's focus on **Colder than 10 C**.
+Let's focus on the path **Colder than 10 C**.
 
 ![Demo](./images/p1steps.png)
-
-Let's take another **Condition** element and drag it as indicated in the screenshot below. We'll verify if for this customer, we have a mobile number available.
-
-![Demo](./images/joa1.png)
-
-As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
-
-Click on the **Edit** icon for the Expression for the **Path1** path.
-
-![Demo](./images/joa2.png)
-
-In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. You're now reading the mobile phone number directly from Adobe Experience Platform's Real-time Customer Profile.
-
-![Demo](./images/joa3.png)
-
-Select the field **Number**, then drag and drop it to the Condition Canvas.
-
-Select the operator **is not empty**. Click **Ok**.
-
-![Demo](./images/joa4.png)
-
-You'll then see this. Click **OK** again.
-
-![Demo](./images/joa6.png)
-
-Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
-
-![Demo](./images/joa8.png)
-
-Select the action **SMS**, then drag and drop it after the condition you just added.
-
-![Demo](./images/joa9.png)
-
-Set the **Category** to **Marketing** and select an SMS surface that enables you to send SMS. In this case, the email surface to select is **SMS**. 
-
-![ACOP](./images/journeyactions1.png)
-
-The next step is to create your message. To do that, click **Edit content**.
-
-![ACOP](./images/journeyactions2.png)
-
-You now see the message dashboard, where you can configure the text of your SMS. Click the **Compose message** area to create your message.
-
-![Journey Optimizer](./images/sms3.png)
-
-Enter the following text: `Brrrr... {{profile.person.name.firstName}}, it's freezing. 20% discount on jackets today!`. Click **Save**.
-
-![Journey Optimizer](./images/sms4.png)
-
-You'll then see this. Click the arrow in the top left corner to go back to your journey.
-
-![Journey Optimizer](./images/sms4a.png)
-
-You'll then be back here. Click **Ok**.
-
-![Journey Optimizer](./images/sms4b.png)
 
 In the left menu, go back to **Actions**, select the Action `--aepUserLdap--TextSlack`, then drag and drop it after the **Message** action.
 
 ![Demo](./images/joa18.png)
 
-Go to **Action Parameters** and click the **Edit** icon for the parameter `TEXTTOSLACK`.
+Go to **Action Parameters** and click the **Edit** icon for the parameter `textToSlack`.
 
 ![Demo](./images/joa19.png)
 
@@ -263,11 +205,11 @@ In the popup-window, click **Advanced Mode**.
 
 Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
 
-`"Brrrr..." + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " It's freezing. 20% discount on Jackets today!"`
+`"Brrrr..." + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + ",  it's cold and freezing outside. Get comfortable at home with a 20% discount on a Disney+ subscription!"`
 
 ![Demo](./images/joa21.png)
 
-You will see your completed action. Click **Ok**.
+You will see your completed action. Click **Save**.
 
 ![Demo](./images/joa22.png)
 
@@ -275,73 +217,17 @@ This path of the journey is now ready.
 
 ## 3.2.4.3 Send messages for path: Between 10° and 25° Celsius
 
-For each of the temperature contexts, we'll attempt to send a text message to our customer. We can only send a text message if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
+For each of the temperature contexts, you'll attempt to send a message to your customer. For this exercise, you'll send a real message to a Slack channel instead of a mobile phone number.
 
 Let's focus on **Between 10 and 25 C** path.
 
 ![Demo](./images/p2steps.png)
 
-Let's take another **Condition** element and drag it as indicated in the screenshot below. We'll verify if for this customer, we have a mobile number available.
-
-![Demo](./images/jop1.png)
-
-As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
-
-Click on the **Edit** icon for the Expression for the **Path1** path.
-
-![Demo](./images/joa2p2.png)
-
-In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. You're now reading the mobile phone number directly from Adobe Experience Platform's Real-time Customer Profile.
-
-![Demo](./images/joa3.png)
-
-Select the field **Number**, then drag and drop it to the Condition Canvas.
-
-Select the operator **is not empty**. Click **Ok**.
-
-![Demo](./images/joa4.png)
-
-You'll then see this. Click **Ok**.
-
-![Demo](./images/joa6.png)
-
-Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
-
-![Demo](./images/jop8.png)
-
-Select the action **SMS**, then drag and drop it after the condition you just added.
-
-![Demo](./images/jop9.png)
-
-Set the **Category** to **Marketing** and select an SMS surface that enables you to send SMS. In this case, the email surface to select is **SMS**. 
-
-![ACOP](./images/journeyactions1z.png)
-
-The next step is to create your message. To do that, click **Edit content**.
-
-![ACOP](./images/journeyactions2z.png)
-
-You now see the message dashboard, where you can configure the text of your SMS. Click the **Compose message** area to create your message.
-
-![Journey Optimizer](./images/sms3a.png)
-
-Enter the following text: `What a nice weather for the time of year, {{profile.person.name.firstName}} - 20% discount on Sweaters today!`. Click **Save**.
-
-![Journey Optimizer](./images/sms4az.png)
-
-You'll then see this. Click the arrow in the top left corner to go back to your journey.
-
-![Journey Optimizer](./images/sms4azz.png)
-
-You'll now see your completed action. Click **Ok**.
-
-![Demo](./images/jop17.png)
-
 In the left menu, go back to **Actions**, select the Action `--aepUserLdap--TextSlack`, then drag and drop it after the **Message** action.
 
 ![Demo](./images/jop18.png)
 
-Go to **Action Parameters** and click the **Edit** icon for the parameter `TEXTTOSLACK`.
+Go to **Action Parameters** and click the **Edit** icon for the parameter `textToSlack`.
 
 ![Demo](./images/joa19z.png)
 
@@ -351,7 +237,7 @@ In the popup-window, click **Advanced Mode**.
 
 Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
 
-`"What nice weather for the time of year, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " 20% discount on Sweaters today!"`
+`"What nice weather for the time of year, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + " 20% discount on Apple AirPods so you can go for a walk and listen to your favorite podcast!"`
 
 ![Demo](./images/jop21.png)
 
@@ -363,73 +249,17 @@ This path of the journey is now ready.
 
 ## 3.2.4.4 Send messages for path: Warmer than 25° Celsius
 
-For each of the temperature contexts, we'll attempt to send a text message to our customer. We can only send a text message if we have a Mobile Number available for a customer, so we'll first have to verify that we do.
+For each of the temperature contexts, you'll attempt to send a message to your customer. For this exercise, you'll send a real message to a Slack channel instead of a mobile phone number.
 
 Let's focus on **Warmer than 25 C** path.
 
 ![Demo](./images/p3steps.png)
 
-Let's take another **Condition** element and drag it as indicated in the screenshot below. You'll verify if for this customer, you have a mobile number available.
-
-![Demo](./images/jod1.png)
-
-As this is just an example, we are only configuring the option where the customer has a mobile number available. Add a label of **Has mobile?**.
-
-Click on the **Edit** icon for the Expression for the **Path1** path.
-
-![Demo](./images/joa2p3.png)
-
-In the Data Sources shown on the left, navigate to **ExperiencePlatform.ProfileFieldGroup.profile.mobilePhone.number**. You're now reading the mobile phone number directly from Adobe Experience Platform's Real-time Customer Profile.
-
-![Demo](./images/joa3.png)
-
-Select the field **Number**, then drag and drop it to the Condition Canvas.
-
-Select the operator **is not empty**. Click **Ok**.
-
-![Demo](./images/joa4.png)
-
-You'll then see this. Click **OK**.
-
-![Demo](./images/joa6.png)
-
-Your journey will then look like this. Click on **Actions** as indicated in the screenshot.
-
-![Demo](./images/jod8.png)
-
-Select the action **SMS**, then drag and drop it after the condition you just added.
-
-![Demo](./images/jod9.png)
-
-Set the **Category** to **Marketing** and select an SMS surface that enables you to send SMS. In this case, the email surface to select is **SMS**. 
-
-![ACOP](./images/journeyactions1zy.png)
-
-The next step is to create your message. To do that, click **Edit content**.
-
-![ACOP](./images/journeyactions2zy.png)
-
-You now see the message dashboard, where you can configure the text of your SMS. Click the **Compose message** area to create your message.
-
-![Journey Optimizer](./images/sms3ab.png)
-
-Enter the following text: `So warm, {{profile.person.name.firstName}}! 20% discount on swimwear today!`. Click **Save**.
-
-![Journey Optimizer](./images/sms4ab.png)
-
-You'll then see this. Click the arrow in the top left corner to go back to your journey.
-
-![Journey Optimizer](./images/sms4azzz.png)
-
-You'll now see your completed action. Click **Ok**.
-
-![Demo](./images/jod17.png)
-
 In the left menu, go back to **Actions**, select the Action `--aepUserLdap--TextSlack`, then drag and drop it after the **Messages** action.
 
 ![Demo](./images/jod18.png)
 
-Go to **Action Parameters** and click the **Edit** icon for the parameter `TEXTTOSLACK`.
+Go to **Action Parameters** and click the **Edit** icon for the parameter `textToSlack`.
 
 ![Demo](./images/joa19zzz.png)
 
@@ -439,11 +269,11 @@ In the popup-window, click **Advanced Mode**.
 
 Select the below code, copy it and paste it in the **Advanced Mode Editor**. Click **Ok**.
 
-`"So warm, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + "! 20% discount on swimwear today!"`
+`"So warm, " + #{ExperiencePlatform.ProfileFieldGroup.profile.person.name.firstName} + "! 20% discount on adding 10GB of extra data so you can get online at the beach!"`
 
 ![Demo](./images/jod21.png)
 
-You will see your completed action. Click **Ok**.
+You will see your completed action. Click **Save**.
 
 ![Demo](./images/jod22.png)
 

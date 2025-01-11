@@ -8,6 +8,7 @@ doc-type: Technical Video
 duration: 833
 last-substantial-update: 2025-01-11
 jira: KT-16672
+exl-id: d6ff2f0d-570e-4d18-9cfc-e24e4d3e5dfa
 ---
 
 # Security overview of AI Assistant

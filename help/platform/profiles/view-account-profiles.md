@@ -14,3 +14,4 @@ exl-id: 2b739872-0f15-429c-8d19-f3bcc81f2f89
 Learn how view account profiles and opportunities in Real-Time Customer Data Platform, B2B Edition and Adobe Experience Platform. For more information, please see the [Profiles documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/338251?learn=on)
+

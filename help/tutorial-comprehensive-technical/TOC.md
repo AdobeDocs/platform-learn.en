@@ -11,6 +11,7 @@ recommendations: noDisplay,noCatalog
 
 + [Tutorial Overview](/help/tutorial-comprehensive-technical/overview.md)
 + [Completion](/help/tutorial-comprehensive-technical/completion.md)
++ [Content Status](/help/tutorial-comprehensive-technical/status.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
@@ -42,7 +43,7 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datacollection/module1.2/summary.md)
   + 1.3 Federated Audience Composition {#module13}
     + [Overview](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/fac.md)
-    + [1.3.1 Setup your Snowflake account](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
+    + [1.3.1 Setup your Snowflake environment](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex1.md)
     + [1.3.2 Create schemas, data model and links](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex2.md)
     + [1.3.3 Create a federated composition](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/ex3.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/datacollection/module1.3/summary.md)
@@ -102,8 +103,9 @@ recommendations: noDisplay,noCatalog
   + 3.1 Adobe Journey Optimizer: Orchestration {#module31}
     + [Overview](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/journey-orchestration-create-account.md)
     + [3.1.1 Create your event](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex1.md)
-    + [3.1.2 Create your journey and email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
-    + [3.1.3 Update your Data Collection property and test your Journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+    + [3.1.2 Create fragments to be used in your message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex2.md)
+    + [3.1.3 Create your journey and email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex3.md)
+    + [3.1.4 Update your Data Collection property and test your Journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/ex4.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.1/summary.md)
   + 3.2 Adobe Journey Optimizer: External data sources and custom actions {#module32}
     + [Overview](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)
@@ -125,10 +127,9 @@ recommendations: noDisplay,noCatalog
   + 3.4 Adobe Journey Optimizer: Event-based Journeys {#module34}
     + [Overview](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/journeyoptimizer.md)
     + [3.4.1 Configure a trigger-based journey - Order Confirmation](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex1.md)
-    + [3.4.2 Configure a batch-based newsletter journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
-    + [3.4.3 Apply personalization in an email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
+    + [3.4.2 Configure a campaign](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex2.md)
+    + [3.4.3 Apply segment-based personalization in an email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
     + [3.4.4 Setup and use push notifications](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
-    + [3.4.5 Create a business event journey](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex5.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c} 
@@ -142,7 +143,7 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.1/summary.md)
   + 4.2 Customer Journey Analytics: Ingest and Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector {#module42}
     + [Overview](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)
-    + [4.2.1 Create your Google Cloud Platform Account](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
+    + [4.2.1 Start using Google Cloud Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex1.md)
     + [4.2.2 Create your first query in BigQuery](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex2.md)
     + [4.2.3 Connect GCP & BigQuery to Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex3.md)
     + [4.2.4 Load data from BigQuery into Adobe Experience Platform](/help/tutorial-comprehensive-technical/modules/cja-b2c/module4.2/ex4.md)
