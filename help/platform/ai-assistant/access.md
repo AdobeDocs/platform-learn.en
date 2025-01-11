@@ -1,5 +1,5 @@
 ---
-title: AI Assistant - Getting Access
+title: Get access to AI Assistant
 description: Learn how to set up access and permissions for AI Assistant within Adobe Experience Platform.
 feature: AI Assistant, Access Control
 role: Admin, User
@@ -10,7 +10,7 @@ last-substantial-update: 2024-11-12
 jira: KT-16459
 exl-id: 67793272-278c-4ac5-9427-96b3dd378e37
 ---
-# AI Assistant - Getting Access
+# Get access to AI Assistant
 
 Learn how to set up access and permissions for AI Assistant within Adobe Experience Platform. For more information, see [Access AI Assistant in Experience Platform](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/access).
 
