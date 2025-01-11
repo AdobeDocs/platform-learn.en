@@ -1,5 +1,5 @@
 ---
-title: Overview of the AI Assistant for product knowledge
+title: Learn about Experience Platform applications with AI Assistant
 description: Learn about Adobe Experience Platform applications from AI Assistant.
 feature: AI Assistant
 role: Admin, Developer, User
@@ -10,7 +10,7 @@ last-substantial-update: 2025-01-11
 jira: KT-16669
 ---
 
-# AI Assistant for product knowledge overview
+# Learn about Experience Platform applications with AI Assistant
 
 Learn about Adobe Experience Platform applications from AI Assistant.
 
