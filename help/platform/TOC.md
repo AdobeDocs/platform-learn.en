@@ -43,8 +43,13 @@ auto-video-transcripts: true
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
   + [Set up access](/help/platform/ai-assistant/access.md)
-  + [Clean up audiences](/help/platform/ai-assistant/find-unused-audiences.md)
   + [Onboard with a new product](/help/platform/ai-assistant/onboard.md)
+  + [Learn about products](/help/platform/ai-assistant/product-knowledge.md)
+  + [Validate responses](/help/platform/ai-assistant/validate-responses.md)
+  + [Discoverability panel](/help/platform/ai-assistant/discoverability-panel.md)
+  + [Find unused audiences](/help/platform/ai-assistant/find-unused-audiences.md)
+  + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
+  + [Security overview](/help/platform/ai-assistant/security-overview.md)
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
