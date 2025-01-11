@@ -42,7 +42,7 @@ auto-video-transcripts: true
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
-  + [Set up access](/help/platform/ai-assistant/access.md)
+  + [Get access](/help/platform/ai-assistant/access.md)
   + [Onboard with a new product](/help/platform/ai-assistant/onboard.md)
   + [Learn about products](/help/platform/ai-assistant/product-knowledge.md)
   + [Validate responses](/help/platform/ai-assistant/validate-responses.md)
