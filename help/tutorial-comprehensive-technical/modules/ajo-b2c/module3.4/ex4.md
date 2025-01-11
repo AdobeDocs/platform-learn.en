@@ -21,19 +21,17 @@ Let's review these one by one.
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
-## 3.4.4.1 Push datasets
+## 3.4.4.1 Push dataset
 
 Adobe Journey Optimizer uses datasets to store things like the push tokens from mobile devices or interactions with push messages (such as: message sent, message opened, etc) in a dataset in Adobe Journey Optimizer.
 
 You can find these datasets by going to **[!UICONTROL Datasets]** in the menu on the left side of your screen. To show system datasets, click the filter icon.
-
-![Data Ingestion](./images/menudsjo.png)
 
 Enable the option **Show system datasets** and search for **AJO**. You'll then see the datasets used for push notifications.
 
@@ -43,7 +41,7 @@ Enable the option **Show system datasets** and search for **AJO**. You'll then s
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
-In the left menu, go to **[!UICONTROL Datastream]** and search for your datastream that you created in [Exercise 0.2](./../../../modules/gettingstarted/gettingstarted/ex2.md), which is named `--aepUserLdap-- - Demo System Datastream (Mobile)`. Click to open it.
+In the left menu, go to **[!UICONTROL Datastream]** and search for your datastream that you created in [Getting Started](./../../../modules/gettingstarted/gettingstarted/ex2.md), which is named `--aepUserLdap-- - Demo System Datastream (Mobile)`. Click to open it.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
 
@@ -53,13 +51,19 @@ Click **Edit** on the **Adobe Experience Platform** service.
 
 You'll then see the datastream settings that were defined, and into which datasets events and profile attributes will be stored.
 
-![Name the Datastream and save](./images/edgeconfig2.png)
+You should also enable the following options if they aren't enabled yet:
 
-No changes are needed, your datastream is now ready to be used in your Data Collection Client property for Mobile.
+- **Offer Decisioning**
+- **Personalization Destinations**
+- **Adobe Journey Optimizer**
+
+Click **Save**.
+
+![Name the Datastream and save](./images/edgeconfig2.png)
 
 ## 3.4.4.3 Review your Data Collection property for Mobile
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). As part of [Exercise 0.1](./../../../modules/gettingstarted/gettingstarted/ex1.md), 2 Data Collection properties were created. 
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). As part of [Getting Started](./../../../modules/gettingstarted/gettingstarted/ex1.md), 2 Data Collection properties were created. 
 You've been using these Data Collection Client properties already as part of previous modules. 
 
 Click to open the Data Collection property for mobile.
@@ -90,7 +94,7 @@ There's no need to make any changes to your Data Collection property.
 
 ## 3.4.4.4 Review your App Surface setup
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). In the left menu, go to **App Surfaces** and ope, the App Surface for **DX Demo App APNS**.
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). In the left menu, go to **App Surfaces** and open the App Surface for **DX Demo App APNS**.
 
 ![Adobe Experience Platform Data Collection](./images/appsf.png)
 
@@ -124,21 +128,17 @@ You can now load a custom project. Click the QR code to easily load your project
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/mobileappn6.png)
 
-After exercise 0.1, you had this result. Click to open the **Mobile Retail project** that was created for you.
+After going through the **Getting Started** section, you had this result. Click to open the **Mobile Retail project** that was created for you.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/dsn5b.png)
 
-In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your mobile app project to open it.
+In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://dsn.adobe.com/projects](https://dsn.adobe.com/projects). After logging in with your Adobe ID, you'll see this. Click your mobile app project to open it.
 
 ![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8a.png)
 
-You'll then see this. Click **Integrations**.
+Next, click **Run**.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8aa.png)
-
-You need to select the Data Collection property for mobile that was created in exercise 0.1. Next, click **Run**.
-
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8b.png)
+![DSN](./images/web8b.png)
 
 You'll then see this popup, which contains a QR code. Scan this QR-code from within the mobile app.
 
@@ -154,7 +154,7 @@ Now, go back to **Home** in the app. Your app is now ready to be used.
 
 You now need to scan a QR code to connect your mobile device to your AEP Assurance session. 
 
-To start an AEP Assurance session, go to [https://experience.adobe.com/#/@experienceplatform/griffon](https://experience.adobe.com/#/@experienceplatform/griffon). Click **Create Session**.
+To start an AEP Assurance session, Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Click **Assurance** in the left menu. Then, click **Create Session**.
 
 ![Adobe Experience Platform Data Collection](./images/griffon3.png)
 
@@ -165,7 +165,7 @@ Click **Start**.
 Fill out the values:
 
 - Session Name: use `--aepUserLdap-- - push debugging` and replace ldap by your ldap
-- Base URL: use **dxdemo://default**
+- Base URL: use `dxdemo://default`
 
 Click **Next**.
 
@@ -187,21 +187,27 @@ You'll then see this.
 
 ![Adobe Experience Platform Data Collection](./images/ipadPushTest11.png)
 
-In AEP Assurance, you'll now see that a devicer is to the AEP Assurance session.
+In Assurance, you'll now see that a devicer is to the Assurance session. Click **Done**.
 
 ![Adobe Experience Platform Data Collection](./images/griffon7.png)
 
-Go to **Push Debug**. You'll see something like this.
+Go to **Push Debug**. 
+
+>[!NOTE]
+>
+>In case you can't find **Push Debug** in the left menu, click **Configure** in the bottom left corner of your screen and add **Push Debug** to the menu. 
+
+You'll see something like this.
 
 ![Adobe Experience Platform Data Collection](./images/griffon10.png)
 
 Some explanation:
 
 - The first column, **Client**, shows the available identifiers on your iOS device. You'll see an ECID and a Push Token.
+- The 2nd column shows the **App Store Credentials & Configuration**, which was set up as part of exercise **3.4.5.4 Create App Configuration in Launch**
 - The second column shows **Profile** information, with additional info on what platform the Push Token lives in (APNS or APNSSandbox). If you click the **Inspect Profile** button, you'll be taken to Adobe Experience Platform and you'll see the full Real-time Customer Profile.
-- The 3rd column shows the **App Configuration**, which was set up as part of exercise **3.4.5.4 Create App Configuration in Launch**
 
-To test your Push configuration setup, click the **Send Push Notification** button. 
+To test your Push configuration setup, go to **Send Test Push Setup** button. Click **Send Test Push Notification**
 
 ![Adobe Experience Platform Data Collection](./images/griffon11.png)
 
@@ -211,11 +217,11 @@ You'll then see a push notification like this one appear on your mobile device.
 
 ![Adobe Experience Platform Data Collection](./images/ipadPush2.png)
 
-If you've received the push notification, that means that your setup is correct and working fine.
+If you've received the push notification, that means that your setup is correct and working fine and you can now create a real journey that will result in sending a push message from Journey Optimizer. 
 
 ## 3.4.4.6 Create a new event
 
-In the menu, go to **Journey Administration** and click **Manage** under **Events**.
+Go to **Journey Optimizer**. In the left menu, go to **Configurations** and click **Manage** under **Events**.
 
 ![ACOP](./images/acopmenu.png)
 
@@ -224,32 +230,19 @@ On the **Events** screen, you'll see a view similar to this. Click **Create Even
 ![ACOP](./images/add.png)
 
 You'll then see an empty event configuration.
-
-![ACOP](./images/emptyevent.png)
-
 First of all, give your Event a Name like this: `--aepUserLdap--StoreEntryEvent` and set description to `Store Entry Event`.
+Next is the **Event Type** selection. Select **Unitary**.
+Next is the **Event ID Type** selection. Select **System Generated**.
 
 ![ACOP](./images/eventname.png)
 
-Next is the **Event Type** selection. Select **Unitary**.
-
-![ACOP](./images/eventidtype1.png)
-
-Next is the **Event ID Type** selection. Select **System Generated**
-
-![ACOP](./images/eventidtype.png)
-
 Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
-
-![ACOP](./images/eventschema.png)
 
 After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Your event is now fully configured.
 
-![ACOP](./images/eventpayload.png)
+Click **Save**.
 
-You should then see this. Click **Save**.
-
-![ACOP](./images/eventsave.png)
+![ACOP](./images/eventschema.png)
 
 Your Event is now configured and saved. Click on your event again to open up the **Edit Event** screen again.
 
@@ -261,14 +254,12 @@ Hover over the **Payload** field and click on the **View Payload** icon.
 
 You'll now see an example of the expected payload.
 
-![ACOP](./images/fullpayload.png)
-
 Your Event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see `_experience.campaign.orchestration.eventID`.
 
 ![ACOP](./images/payloadeventID.png)
 
 The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in the next step. Write down this eventID, as you'll need it in the next step.
-`"eventID": "e3a8f0bdc0b609667cd96a72a6b1e5aafa0ddaf6ccf121c574e6a2030860a633"`
+`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
 
 Click **Ok**, followed by **Cancel**.
 
@@ -278,20 +269,21 @@ In the menu, go to **Journeys** and click **Create Journey**.
 
 ![DSN](./images/sjourney1.png)
 
-You'll then see this. Give your journey a name. Use `--aepUserLdap-- - Store Entry journey`. Click **OK**.
+You'll then see this. Give your journey a name. Use `--aepUserLdap-- - Store Entry journey`. Click **Save**.
 
 ![DSN](./images/sjourney3.png)
 
-First, you need to add your event as the starting point of your journey. Search for your event `--aepUserLdap--StoreEntryEvent` and drag and drop it onto the canvas. Click **OK**.
+First, you need to add your event as the starting point of your journey. Search for your event `--aepUserLdap--StoreEntryEvent` and drag and drop it onto the canvas. Click **Save**.
 
 ![DSN](./images/sjourney4.png)
 
-Next, under **Actions**, search for the **Push** action.
-Drag and drop the **Push** action onto the canvas.
-
-![DSN](./images/sjourney5.png)
+Next, under **Actions**, search for the **Push** action. Drag and drop the **Push** action onto the canvas.
 
 Set the **Category** to **Marketing** and select a push surface that enables you to send push notifications. In this case, the email surface to select is **Push-iOS-Android**.
+
+>[!NOTE]
+>
+>A Channel in Journey Optimizer needs to exist that is using the **App Surface** as reviewed before.
 
 ![ACOP](./images/journeyactions1push.png)
 
@@ -304,8 +296,6 @@ You'll then see this. Click the **personalization** icon for the **Title** field
 ![Push](./images/bp5.png)
 
 You'll then see this. You can now select any Profile attribute from the Real-time Customer Profile directly.
-
-![Push](./images/bp6.png)
 
 Search for the field **First Name**, then click the **+** icon next to the field **First Name**. You'll then see the personalization token for First Name being added: **{{profile.person.name.firstName}}**.
 
@@ -329,7 +319,7 @@ You'll then have this. Click the arrow in the top left corner to go back to your
 
 ![Journey Optimizer](./images/bp12a.png)
 
-Click **OK** to close your push action.
+Click **Save** to close your push action.
 
 ![DSN](./images/sjourney8.png)
 
@@ -357,15 +347,13 @@ In your DX Demo 2.0 mobile application, go to the **Settings** screen. Click the
 
 Make sure to close the app immediately after clicking the **Store Entry** icon, otherwise the push message won't be shown.
 
-![DSN](./images/demo2.png)
-
 After a couple of seconds, you'll see the message appear.
 
-![DSN](./images/demo3.png)
+![DSN](./images/demo2.png)
 
 You have finished this exercise.
 
-Next Step: [3.4.5 Create a business event journey](./ex5.md)
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 3.4](./journeyoptimizer.md)
 

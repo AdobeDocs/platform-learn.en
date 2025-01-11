@@ -366,7 +366,7 @@ And then include your [!UICONTROL XDM object] in your [!UICONTROL Send event] [!
 
 Target allows profile synching across devices and systems using a single customer Id. With at.js, this could be set as the `mbox3rdPartyId` in the Target request or as the first customer id sent to the Experience Cloud Identity Service. Unlike with at.js, a Platform Web SDK implementation allows you to specify which customer ID to use as the `mbox3rdPartyId` if there are multiple. For example, if your business has a global customer ID and separate customer IDs for different lines of business, you can configure which ID Target should use.
 
-There are a few steps to set up ID synching for Target cross-device and Customer Attributes use cases:
+There are a few steps to set up ID synching for cross-device and Customer Attributes use cases:
 
 1. Create an **[!UICONTROL identity namespace]** for the customer ID in **[!UICONTROL Identities]** screen of Data Collection or Platform
 1. Make sure that the **[!UICONTROL alias]** in Customer Attributes matches the **[!UICONTROL identity symbol]** of your namespace

@@ -21,11 +21,7 @@ Go to [analytics.adobe.com](https://analytics.adobe.com) to access Customer Jour
 
 On the Customer Journey Analytics homepage, go to **Connections**. 
 
-![demo](./images/conn1.png)
-
 Here you can see all the different connections made between CJA and Platform. These connections have the same goal as report suites in Adobe Analytics. However, the collection of the data is totally different. All data is coming from Adobe Experience Platform datasets. 
-
-![demo](./images/2.png)
 
 Click **Create new connection**.
 
@@ -35,71 +31,45 @@ You'll then see the **Create Connection** UI.
 
 ![demo](./images/5.png)
 
-First of all, you need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxName--`. In this example, the sandbox to use is **AEP Enablement FY21**.
+For the name, use this : `--aepUserLdap-- - GA + Loyalty Data Connection`. 
 
-![demo](./images/cjasb.png)
+You need to select the correct sandbox to use. In the sandbox menu, select your sandbox, which should be `--aepSandboxName--`. In this example, the sandbox to use is **Tech Insiders**.
 
-After selecting your sandbox, the available datasets will be updated.
+Set the **Average number of daily events** to **less than 1 million**.
 
-![demo](./images/cjasb1.png)
-
-In the left menu, you can see all available Adobe Experience Platform datasets. Search for the dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`. Click **+** to add the dataset to this connection.
+In the dataste menu, you can now start adding datasets. Click **Add datasets**.
 
 ![demo](./images/6.png)
 
-After adding it, you'll see the dataset inside the connection.
+The datasets to add are:
+- `Demo System - Profile Dataset for CRM (Global v1.1)`
+- `Demo System - Event Dataset for BigQuery (Global v1.1)`
 
-You now have to select the **Person ID**. Please ensure the **loyaltyId** is selected as Person ID.
+Search for both datasets, check their checkbox and then click **Next**.
+
+![demo](./images/d1.png)
+
+You'll then see this:
 
 ![demo](./images/8.png)
 
-You'll now enrich the Google Analytics Website Interaction data with another Adobe Experience Platform dataset. 
+For the dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`, change the **Person ID** to **loyaltyId** and set the **Data source type** to **Web Data**. Enable both options for **Import all new data** and **Backfill all existing data**.
 
-Search for the dataset `Demo System - Profile Dataset for Loyalty (Global v1.1)` data set and add it to this connection.
+![demo](./images/d2.png)
 
-![demo](./images/10.png)
+For the dataset `Demo System - Event Dataset for BigQuery (Global v1.1)`, verify that the **Person ID** is set to to **crmId** and set the **Data source type** to **Web Data**. Enable both options for **Import all new data** and **Backfill all existing data**. Click **Add datasets**.
 
-You'll then see this:
+![demo](./images/d3.png)
 
-![demo](./images/10a.png)
+You'll then be here. Click **Save**.
 
-In order to merge both datasets, you need to select a **Person ID** that contains the same type of IDs. The dataset `Demo System - Profile Dataset for Loyalty (Global v1.1)` uses the **loyaltyId** as Person ID, which contains the same type of IDs as the `Demo System - Event Dataset for BigQuery (Global v1.1)`, which also uses the **loyaltyId** as a Person ID. 
-
-![demo](./images/12.png)
-
-Click **Next**.
-
-![demo](./images/14.png)
-
-You'll then see this:
-
-![demo](./images/15.png)
-
-Here you need to give a name to your connection. 
-
-Please use this naming convention: `ldap - GA + Loyalty Data Connection`. 
-
-Example: `vangeluw - GA + Loyalty Data Connection`
-
-Before finishing, please also activate **Automatically import all new data for all datasets in this connection, beginning today.** as in the image below. 
-
-![demo](./images/16.png)
-
-This will start a data flow from Adobe Experience Platform to CJA every 60 minutes, however with high volumes of data it can take up to 24 hours. 
-
-You also need to backfill historical data, so please check the checkbox for **Import all existing data** and select **less than 1 million** under **Average number of daily events**.
-
-![demo](./images/17.png)
+![demo](./images/d4.png)
 
 After having created your **Connection** it may take a few hours before your data is available in CJA.
 
-Click **Save** and go to the next exercise. 
-
-![demo](./images/cjasave.png)
-
 You'll then see your connection in the list of available connections.
 
-![demo](./images/18.png)
+![demo](./images/d5.png)
 
 ## 4.2.5.2 Create a data view
 
@@ -115,13 +85,9 @@ If you want your company to become data-driven, you should adapt how data is vie
 - Use the same names for KPIs and Metrics for Google Analytics as for Customer Journey Analytics so that the digital analytics team can speak 1 language only.
 - data view filtered to show for instance data for 1 market only, or 1 brand, or only for Mobile Devices.
 
-On the **Connections** screen, check the checkbox in front of the connection you just created.
+On the **Connections** screen, check the checkbox in front of the connection you just created. Click **Create data view**.
 
 ![demo](./images/exta.png)
-
-Now click **Create Data View**.
-
-![demo](./images/extb.png)
 
 You'll be redirected to the **Create Data View** workflow.
 
@@ -129,90 +95,62 @@ You'll be redirected to the **Create Data View** workflow.
 
 You can now configure the basic definitions for your data view. Things like Time zone, Session Timeout or the data view filtering (the segmentation part similar to Virtual Report Suites in Adobe Analytics).
 
-The **Connection** you created in the previous exercise is already selected. Your connection is named `ldap - GA + Loyalty Data Connection`.
+The **Connection** you created in the previous exercise is already selected. Your connection is named `--aepUserLdap-- - GA + Loyalty Data Connection`.
 
-![demo](./images/ext5.png)
+Next, give your data view a name following this naming convention: `--aepUserLdap-- - GA + Loyalty Data View`. 
 
-Next, give your data view a name following this naming convention: `ldap - GA + Loyalty Data View`. 
-
-Enter the same value for the description: `ldap - GA + Loyalty Data View`.
+Enter the same value for the description: `--aepUserLdap-- - GA + Loyalty Data View`.
 
 Before doing any analysis or visualization we need to create a data view with all the fields, dimensions and metrics and their attribution settings.
 
-| Field      | Naming Convention|  Example|   
-| ----------------- |-------------|-------------|  
-| Name Connection | ldap - GA + Loyalty Data View| vangeluw - GA + Loyalty Data View |
-| Description | ldap - GA + Loyalty Data View | vangeluw - GA + Loyalty Data View |
-
+| Field      | Naming Convention|
+| ----------------- |-------------|  
+| Name Connection | `--aepUserLdap-- - GA + Loyalty Data View`| vangeluw - GA + Loyalty Data View |
+| Description | `--aepUserLdap-- - GA + Loyalty Data View` |
+| External ID | `--aepUserLdap--GA`|
+ 
+Click **Save and continue**.
+ 
 ![demo](./images/22.png)
 
-Click **Save and continue**.
+Click **Save**.
 
-![demo](./images/23.png)
+![demo](./images/22a.png)
 
 You can now add components to your data view. As you can see, some metrics and dimensions are added automatically.
 
 ![demo](./images/24.png)
 
-Add the following components to the data view:
+Add the below components to the data view. Also make sure to update the field names to friendly names. To do that, select the metric or dimension and update the **Component name** field in the right menu.
 
-| Component Name     | Component Type        | Component Path        | 
-| -----------------|-----------------|-----------------|
-| level | Dimension |_experienceplatform.loyaltyDetails.level |
-| points | Metric |_experienceplatform.loyaltyDetails.points |
-| commerce.checkouts.value | Metric | commerce.checkouts.value|
-| commerce.productListRemovals.value | Metric | commerce.productListRemovals.value|
-| commerce.productListAdds | Metric | commerce.productListAdds|
-| commerce.productViews.value | Metric | commerce.productViews.value|
-| commerce.purchases.value | Metric | commerce.purchases.value|
-| web.webPageDetails.pageViews | Metric | web.webPageDetails.pageViews|
-| Transaction ID | Dimension | commerce.order.payments.transactionID|
-| channel.mediaType | Dimension | channel.mediaType|
-| channel.typeAtSource | Dimension | channel.typeAtSource|
-| Tracking code | Dimension | marketing.trackingCode|
-| gaid | Dimension | _experienceplatform.identification.core.gaid|
-| web.webPageDetails.name | Dimension | web.webPageDetails.name|
-| Event Type | Dimension | eventType|
-| Vendor | Dimension | environment.browserDetails.vendor|
-| Identifier | Dimension |_id |
-| Timestamp | Dimension | timestamp|
-| Type | Dimension | device.type|
-| loyaltyId | Dimension |_experienceplatform.identification.core.loyaltyId |
-
-You'll then have this:
-
-![demo](./images/25.png)
-
-Next, you need to change the friendly name of some of the above metrics and dimensions so that you can easily use them when building out your analysis. To do that, select the metric or dimension and update the **Name** field as indicated in the below image.
-
-![demo](./images/25a.png)
-
-| Component Original Name   | Display Name       | 
-| -----------------|-----------------|
-| level | Loyalty Level |
-| points | Loyalty Points |
-| commerce.checkouts.value | Checkouts |
-| commerce.productListRemovals.value | Cart Removals |
-| commerce.productListAdds | Cart Adds |
-| commerce.productViews.value | Product Views |
-| commerce.purchases.value | Purchases |
-| web.webPageDetails.pageViews | Page Views |
-| channel.mediaType | Traffic Medium | 
-| channel.typeAtSource | Traffic Source | 
-| Tracking code | Marketing Channel | 
-| gaid | Google Analytics ID | 
-| Name | Page Title | 
-| Vendor | Browser | 
-| Type | Device Type | 
-| loyaltyId | Loyalty ID |
+| Component Type | Component Original Name   | Display Name       | Component Path        | 
+| -----------------| -----------------|-----------------|-----------------|
+| Metric | commerce.checkouts.value | Checkouts |`commerce.checkouts.value`|
+| Metric| commerce.productListRemovals.value | Cart Removals |`commerce.productListRemovals.value`|
+| Metric| commerce.productListAdds | Cart Adds |`commerce.productListAdds`|
+| Metric| commerce.productViews.value | Product Views |`commerce.productViews.value`|
+| Metric| commerce.purchases.value | Purchases |`commerce.purchases.value`|
+| Metric| web.webPageDetails.pageViews | Page Views |`web.webPageDetails.pageViews`|
+| Metric | points | Loyalty Points |`_experienceplatform.loyaltyDetails.points` |
+| Dimension | level | Loyalty Level |`_experienceplatform.loyaltyDetails.level` |
+| Dimension | channel.mediaType | Traffic Medium | `channel.mediaType`|
+| Dimension | channel.typeAtSource | Traffic Source | `channel.typeAtSource`|
+| Dimension | Tracking code | Marketing Channel | `marketing.trackingCode`|
+| Dimension | gaid | Google Analytics ID | `_experienceplatform.identification.core.gaid`|
+| Dimension | web.webPageDetails.name | Page Title | `web.webPageDetails.name`|
+| Dimension | Vendor | Browser | `environment.browserDetails.vendor`|
+| Dimension | Type | Device Type | `device.type`|
+| Dimension | loyaltyId | Loyalty ID |`_experienceplatform.identification.core.loyaltyId` |
+| Dimension| commerce.order.payments.transactionID|Transaction ID  | `commerce.order.payments.transactionID`|
+| Dimension| eventType|Event Type  | `eventType`|
+| Dimension| timestamp| Timestamp  | `timestamp`|
+| Dimension| `_id` |Identifier  |`_id` |
 
 You'll then have something like this:
 
 ![demo](./images/25b.png)
 
-Next, you need to make some changes to the Person and Session context for some of these components by changing the **Attribution Settings**.
-
-![demo](./images/25c.png)
+Next, you need to make some changes to the Person and Session context for some of these components by changing the **Attribution or Persistence Settings**.
 
 Please change the **Attribution Settings** for the below components:
 
@@ -224,39 +162,32 @@ Please change the **Attribution Settings** for the below components:
 | Traffic Medium | 
 | Device Type | 
 | Google Analytics ID | 
-| Loyalty ID | 
-| Loyalty Level | 
-| Loyalty Points | 
 
-To do that, select the component, click **Use custom attribution model** and set the **Model** to **Last Touch**, and the **Expiration** to **Person (Reporting Window)**. Repeat this for all of the above mentioned components.
+To do that, select the component, click **Use custom attribution model** and set the **Model** to **Most Recent**, and the **Expiration** to **Person Reporting Window**. Repeat this for all of the above mentioned components.
 
 ![demo](./images/27a.png)
 
-After making the changes in attribution settings for all of the above mentioned components, you should then have this view:
+After making the changes in attribution settings for all of the above mentioned components, you should then have this view. Click **Save and continue**.
 
 ![demo](./images/27.png)
 
-Your data view is now configured. Click **Save**.
+On the **Settings** screen, no changes are required. Clickl **Save and finish**.
 
-![demo](./images/30.png)
+![demo](./images/27b.png)
 
 You are now ready to to analyze Google Analytics data within Adobe Analytics Analysis Workspace. Let's move to the next exercise.
 
 ## 4.2.5.3 Create your Project
 
-In Customer Journey Analytics, go to **Projects**.
+In Customer Journey Analytics, go to **Workspace**. Click **Create Project**
 
 ![demo](./images/pro1.png)
 
-You'll then see this:
+Select **Blank Workspace Project** and click **Create**.
 
 ![demo](./images/pro2.png)
 
-Create a Project by clicking **Create New Project**.
-
-![demo](./images/pro3.png)
-
-You now have a blank Project:
+You now have a blank project:
 
 ![demo](./images/pro4.png)
 
@@ -267,27 +198,21 @@ First, save your project and give it a name. You can use the following command t
 | Windows | Control + S          | 
 | Mac | Command + S          | 
 
-You'll see this popup: 
-
-![demo](./images/prsave.png)
-
-Please use this naming convention:
+You'll see this popup. Please use this naming convention:
 
 |  Name       | Description    | 
 | ----------------- |-------------| 
-| ldap – GA + Loyalty Workspace| ldap – GA + Loyalty Workspace|
+| `--aepUserLdap-- – GA + Loyalty Workspace`| `--aepUserLdap-- – GA + Loyalty Workspace`|
 
-Next, click **Save Project**.
+Next, click **Save**.
 
-![demo](./images/prsave2.png)
+![demo](./images/prsave.png)
 
-Next, make sure to select the correct data view in the upper right corner of your screen. This is the data view you created in the previous exercise, with the naming convention `ldap - GA + Loyalty Data View`. In this example, the Data View to select is `ldap - GA + Loyalty Data View`.
+Next, make sure to select the correct data view in the upper right corner of your screen. This is the data view you created in the previous exercise, with the naming convention `--aepUserLdap-- - GA + Loyalty Data View`.
 
 ![demo](./images/prdvlist.png)
 
-![demo](./images/prdv.png)
-
-### 12.5.3.1 Freeform Tables
+### 4.2.5.3.1 Freeform Tables
 
 Freeform tables work, more or less, as pivot tables within Excel. You pick something from the left bar and you drag and drop it into the Freeform and you'll get a table report.
 
@@ -301,17 +226,13 @@ Let see two examples where you need to use SQL, BigQuery and some time to answer
 
 Let's answer this questions and some more with Analysis Workspace in CJA.
 
-First, select the right date range (**Last 53 full weeks**) on the right side of the panel.
+First, select the right date range (**Today**) on the right side of the panel. CLick **Apply**.
 
 ![demo](./images/pro11.png)
 
-Then click **Apply** to apply the date range. Remember this step for next exercises.
-
-![demo](./images/apply.png)
-
 >[!NOTE]
 >
->If you just created the **Data connection** and **Data view** you might need to wait a couple of hours. CJA needs some time to backfill historical data when there is a huge amount of data records. 
+>If you just created the **Data connection** and **Data view** you might need to wait a couple of hours. CJA needs some time to backfill historical data when there is a big amount of data records. 
 
 Let's drag and drop some dimensions and metrics to analysis the Marketing channels. First use the dimension **Marketing Channel** and drag and drop it to the canvas of the **Freeform table**. (Click on **Show All** in case you don't see the metric immediately in the Metrics menu)
 
@@ -327,9 +248,13 @@ Before you can do that, you need to create the Calculated Metric **Conversion Ra
 
 ![demo](./images/procalc1.png)
 
-As a name for the Calculated Metric, use **Conversion Rate**. Then drag the Metrics **purchase** and **Sessions** onto the canvas. Set **Format** to **Percent** and **Decimal Places** to **2**. Finally, click **Save**.
+As a name for the Calculated Metric, use **Conversion Rate** and use **conversionRate** for **External ID**. Then drag the Metrics **purchase** and **Sessions** onto the canvas. Set **Format** to **Percent** and **Decimal Places** to **2**. Finally, click **Save**.
 
 ![demo](./images/procalc2.png)
+
+Click **Save**.
+
+![demo](./images/procalc2a.png)
 
 Next, in order to use all these Metrics in the **Freeform Table**, drag and drop them one by one onto the **Freeform Table**. See the example below.
 

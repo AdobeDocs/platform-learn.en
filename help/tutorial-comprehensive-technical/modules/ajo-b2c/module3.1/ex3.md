@@ -1,119 +1,222 @@
 ---
-title: Update your Configuration ID and Test your Journey
-description: Update your Configuration ID and Test your Journey
+title: Journey Optimizer Create your journey and email message
+description: Journey Optimizer Create your email message
 kt: 5342
 doc-type: tutorial
 exl-id: 6807f93d-bd44-4f63-8005-6819c9f5f1ed
 ---
-# 3.1.3 Update your Data Collection property and test your journey
+# 3.1.3 Create your Journey, Fragments and Message
 
-## 3.1.3.1 Update your Data Collection property
+In this exercise, you'll configure the journey and the message that needs to be triggered when someone creates an account on the demo website.
 
-Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/launch/) and select **Tags**.
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-This is the Adobe Experience Platform Data Collection Properties page you saw before.
+![ACOP](./images/acophome.png)
 
-![Properties page](./../../../modules/datacollection/module1.1/images/launch1.png) 
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`.
 
-In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
+![ACOP](./images/acoptriglp.png)
 
-![Search box](./../../../modules/datacollection/module1.1/images/property6.png)
+## 3.1.3.1 Create your Journey
 
-You'll then see this.
+In the left menu, click **Journeys**. Next, click **Create Journey** to create a new journey.
 
-![Launch Setup](./images/rule1.png)
+![ACOP](./images/createjourney.png) 
 
-In the left menu, go to **Rules** and search for the rule **Register profile**. Click the rule **Register profile** to open it.
+You'll then see an empty journey screen.
 
-![Launch Setup](./images/rule2.png)
+![ACOP](./images/journeyempty.png)
 
-You'll then see the details of this rule. Click to open the action **Send "Registration Event" to AEP - trigger JO**.
+In the previous exercise, you created a new **Event**. You named it like this `--aepUserLdap--AccountCreationEvent` and replaced `ldap` with your ldap. This was the result of the Event creation:
 
-![Launch Setup](./images/rule3.png)
+![ACOP](./images/eventdone.png)
 
-You'll then see that when this action is triggered, a specific data element is used to define the XDM data structure. You need to update that data element, and you need to define the **Event ID** of the event that you configured in [Exercise 7.1](./ex1.md).
+You now need to take this event as the start of this Journey. You can do this by going to the left side of your screen and searching for your event in the list of events.
 
-![Launch Setup](./images/rule4.png)
+![ACOP](./images/eventlist.png)
 
-You now need to go update the data element **XDM - Registration Event**. To do so, go to **Data Elements**. Search for **XDM - Registration Event** and click to open that data element.
+Select your event, drag and drop it on the Journey canvas. Your Journey now looks like this:
 
-![Launch Setup](./images/rule5.png)
+![ACOP](./images/journeyevent.png)
 
-You'll then see this:
+As the second step in the journey, you need to add a short **Wait** step. Go to the left side of your screen to the **Orchestration** section to find this. You'll be using profile attributes and need to make sure they are populated into the Real-time Customer Profile.
 
-![Launch Setup](./images/rule6.png)
+![ACOP](./images/journeywait.png)
 
-Navigate to the field `_experience.campaign.orchestration.eventID`. Remove the current value, and paste your eventID there.
+Your journey now looks like this. On the right side of the screen you need to configure the wait time. Set it to 1 minute. This will give plenty of time for the profile attributes to be available after the event fires. Click **Save** to save your changes.
 
-As a reminder, the Event ID can be found in Adobe Journey Optimizer under **Configurations > Events** and you'll find the event ID in the sample payload of your even, which looks like this: `"eventID": "227402c540eb8f8855c6b2333adf6d54d7153d9d7d56fa475a6866081c574736"`.
+![ACOP](./images/journeywait1.png)
 
-![ACOP](./images/payloadeventID.png)
+As the third step in the journey, you need to add an **Email** action. Go to the left side of your screen to **Actions**, select the **Email** action, then drag and drop it on the second node in your journey. You now see this.
 
-After pasting your eventID, your screen should look like this. Next, click **Save** or **Save to Library**.
+![ACOP](./images/journeyactions.png)
 
-![Launch Setup](./images/rule7.png)
+Set the **Category** to **Marketing** and select an email configuration that enables you to send email. In this case, the email configuration to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
 
-Finally, you need to publish your changes. Go to **Publishing Flow** in the left menu.
+![ACOP](./images/journeyactions1.png)
 
-![Launch Setup](./images/rule8.png)
+## 3.1.3.2 Create your Message
 
-Click **Add All Changed Resources** and then click **Save & Build to Development**.
+To create your message, click **Edit content**.
 
-![Launch Setup](./images/rule9.png)
+![ACOP](./images/journeyactions2.png)
 
-Your library will then be updated and after 1-2 minutes you can then go ahead and test your configuration.
+You now see this.
 
-## 3.1.3.2 Test your Journey
+![ACOP](./images/journeyactions3.png)
 
-Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+Click the **Open personalization dialog** icon.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![Journey Optimizer](./images/msg5.png)
 
-You'll then see your demo website open up. Select the URL and copy it to your clipboard.
+Write the text `Hi `. Next you need to bring in the personalization token for the field **First name** which is stored under `profile.person.name.firstName`. In the left menu, navigate to find the **Person > Full Name > First Name** field and click on the **+** icon. You'll then see the personalization token appear in the text field.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![Journey Optimizer](./images/msg9.png)
 
-Open a new incognito browser window.
+Next, add the text **, thank you for signing up!**. Click **Save**.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![Journey Optimizer](./images/msg10.png)
 
-Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
+You can now start configuring the body of your email. Click **Edit email body**. 
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![Journey Optimizer](./images/msg11.png)
 
-Select your account type and complete the login process.
+Before starting to create the content of the actual message itself, it's a good idea to think about the content in the message. Some of the content in the message is unique to the message itself, but other parts are standard components that will likely be the same for every email you'll be sending to customers. 
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+In the previous exercise, you already created these standard components as Fragments in Journey Optimizer, which you can now reference in this message and all the other future messages you'll be creating.
 
-You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+In the next screen you will be prompted with 3 different methods to provide the email's content:
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
+- **Design from scratch**: Start with a blank canvas and use the WYSIWYG-editor to drag and drop structure and content components to visually build up the email's content.
+- **Code your own**: Create your own email template by coding it using HTML
+- **Import HTML**: Import an existing HTML template, which you'll be able to edit.
 
-Click the Adobe logo icon in the top left corner of your screen to open the Profile Viewer.
-  
-![Demo](./../../../modules/datacollection/module1.2/images/pv1.png)
+Click **Design from scratch**.
 
-Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for thi currently unknown customer.
-      
-![Demo](./../../../modules/datacollection/module1.2/images/pv2.png)
+![Journey Optimizer](./images/msg12.png)
 
-Go to the Register/Login page. Click **CREATE AN ACCOUNT**.
-  
-![Demo](./../../../modules/datacollection/module1.2/images/pv9.png)
-  
-Fill out your details and click **Register** after which you'll be redirected to the previous page. 
+In the left menu, you'll find the structure components that you can use to define the structure of the email (rows and columns).
 
-![Demo](./../../../modules/datacollection/module1.2/images/pv10.png)
+![Journey Optimizer](./images/msg13.png)
 
-Open the Profile Viewer panel and go to Real-time Customer Profile. On the Profile Viewer panel, you should see all of your personal data displayed, like your newly added email and phone identifiers.
-  
-![Demo](./../../../modules/datacollection/module1.2/images/pv11.png)
-  
-1 minute after having created your account, you'll receive your account creation email from Adobe Journey Optimizer.
+You'll also find **Fragments** in the left menu, where you'll see the fragments you created earlier.
 
-![Launch Setup](./images/email.png)
+![Journey Optimizer](./images/msg14.png)
 
-Next Step: [Summary and benefits](./summary.md)
+Before you can add the header and footer onto the canvas, you need to add 2 structures to the email. Click the **+** icon in the left menu, and drag 2 **1:1 column** components onto the canvas.
+
+![Journey Optimizer](./images/msg14a.png)
+
+In the left menu, go back to **Fragments**. Drag and drop the header fragment into the first component and the footer fragment into the second component. You'll then see this.
+
+![Journey Optimizer](./images/msg15.png)
+
+Click the **+** icon in the left menu and drag and drop 2 more **1:1 column** components onto the canvas, in between the header and the footer.
+
+![Journey Optimizer](./images/msg16.png)
+
+Drag and drop an **Image** component in the first **1:1 column** component. Click **Browse**.
+
+![Journey Optimizer](./images/msg17.png)
+
+In the **citi-signal-images** folder. Select the image **`welcome_email_image.png`** and click **Select**. 
+
+![Journey Optimizer](./images/msg28.png)
+
+You'll then have this:
+
+![Journey Optimizer](./images/msg30.png)
+
+Next, go to **Contents** and drag and drop a **Text** component in the structure component on the fourth row. 
+
+![Journey Optimizer](./images/msg33.png)
+
+Select the default text **Please type your text here.** as you would do with any text editor. Write **Welcome to the family,** instead. In the toolbar, click the **Add personalization** icon.
+
+![Journey Optimizer](./images/msg34.png)
+
+Next, you need to bring the **First name** personalization token which is stored under `profile.person.name.firstName`. In the menu, find the **Person** element, drill down to the **Full Name** element, and then click the **+** icon to add the First Name field onto to expression editor.
+
+Click **Save**.
+
+![Journey Optimizer](./images/msg36.png)
+
+You'll now notice how the personalization field has been added to your text. 
+
+![Journey Optimizer](./images/msg37.png)
+
+In the same text field, hit **Enter** twice to add two lines and copy and paste the following text:
+
+```
+Welcome aboard! We're thrilled to have you join the CitiSignal family. 
+As a valued member of our community, you're now poised to experience top-notch telecommunications services that cater to your every need.
+
+At CitiSignal, we understand that staying connected is more than just a convenience - it's a necessity. Whether you're browsing the web, streaming your favourite content, or keeping in touch with loved ones, we're here to ensure you have the best tools and resources at your fingertips.
+```
+
+![Journey Optimizer](./images/msg38.png)
+
+Set the **Text alignment** to be centered, and feel free to adjust the look and feel of the message to meet your own needs. When you're done, click **Save**.
+
+![Journey Optimizer](./images/msg39.png)
+
+The final check to perform to ensure your email is ready is to preview it, click on the **Simulate Content** button.
+
+![Journey Optimizer](./images/msg50.png)
+
+Before you can simulate the email message, you need to add a test profile. Click **Manage test profiles**.
+
+![Journey Optimizer](./images/test1.png)
+
+Select the **email** namespace by clicking on the icon next to **Enter identity namespace** field.
+
+In the list of identity namespaces, select the **Email** namespace. In the **Identity value** field, enter the email address of a previous profile that you used in a previous exercise, and that is already stored in Adobe Experience Platform. Click **Add profile**. Go back to the previous screen.
+
+![Journey Optimizer](./images/msg53.png)
+
+You'll then see your email message, now simulated for this customer profile. You can now validate the personalization in the subject line and the body and send a proof email if desired.
+
+Click **Close** to close the preview.
+
+![Journey Optimizer](./images/msg54.png)
+
+Click **Save** to save your message and go back to the message dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
+
+![Journey Optimizer](./images/msg55.png)
+
+Click the **arrow** to go back to your journey.
+
+![Journey Optimizer](./images/msg57a.png)
+
+## 3.1.3.3 Publish your journey
+
+Click **Save**.
+
+![Journey Optimizer](./images/msg58.png)
+
+You still need to give your journey a name. You can do that by clicking the **Properties** icon in the top right side of your screen.
+
+![ACOP](./images/journeyname.png)
+
+You can then enter the journey's name here. Please use `--aepUserLdap-- - Registration Journey`. Click **Save**.
+
+![ACOP](./images/journeyname1.png)
+
+You can now publish your journey by clicking **Publish**.
+
+![ACOP](./images/publishjourney.png)
+
+Click **Publish** again.
+
+![ACOP](./images/publish1.png)
+
+After a coupleof minutes, the status of your journey will change to **Live** and you'll see a real-time dashboad of your journey's performance.
+
+![ACOP](./images/published.png)
+
+You've now finished this exercise.
+
+Next Step: [3.1.4 Update your Data Collection property and test your journey](./ex4.md)
 
 [Go Back to Module 3.1](./journey-orchestration-create-account.md)
 

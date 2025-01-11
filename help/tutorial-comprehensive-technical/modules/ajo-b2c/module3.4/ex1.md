@@ -9,11 +9,11 @@ exl-id: b9d9b357-08d1-4f65-9e0b-46224d035602
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acophome.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
 
-You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. To change from one sandbox to another, click on **PRODUCTION Prod (VA7)** and select the sandbox from the list. In this example, the sandbox is named **AEP Enablement FY22**. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
 
-![ACOP](./../../../modules/ajo-b2c/module3.2/images/acoptriglp.png)
+![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 ## 3.4.1.1 Create your event
 
@@ -27,23 +27,14 @@ On the **Events** screen, you'll see a view similar to this. Click **Create Even
 
 You'll then see an empty event configuration.
 
-![Journey Optimizer](./images/oc32.png)
-
 First of all, give your Event a Name like this: `--aepUserLdap--PurchaseEvent`, and add a description like this: `Purchase Event`.
 
-![Journey Optimizer](./images/oc34.png)
-
-Next is the **Event Type** selection. Select **Unitary**.
-
-![Journey Optimizer](./images/eventidtype1.png)
-
-Next is the **Event ID Type** selection. Select **System Generated**
+For **Type**, select **Unitary**.
+For **Event ID Type**, select **System Generated**.
 
 ![Journey Optimizer](./images/eventidtype.png)
 
 Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Website (Global v1.1) v.1`.
-
-![Journey Optimizer](./images/oc35.png)
 
 After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Click the **Edit/Pencil** icon to add additional fields to this event.
 
@@ -57,21 +48,19 @@ First of all, check the checkbox on the line `--aepTenantId--`.
 
 ![Journey Optimizer](./images/oc38.png)
 
-Next, scroll down and check the checkbox on the line `productListItems`. 
-
-![Journey Optimizer](./images/oc39.png)
-
 Next, scroll down and check the checkbox on the line `commerce`. 
 
 ![Journey Optimizer](./images/oc391.png)
 
-Next, click **Ok**.
+Next, scroll down and check the checkbox on the line `productListItems`. Click **Ok**.
+
+![Journey Optimizer](./images/oc39.png)
 
 You'll then see that additional fields have been added to the event. Click **Save**.
 
 ![Journey Optimizer](./images/oc40.png)
 
-Your new event is then shared and you'll see your event in the list of available events now.
+Your new event is then saved and you'll see your event in the list of available events now.
 
 Click on your event again to open up the **Edit Event** screen again. 
 Hover over the **Payload** field again to see the 3 icons again. Click on the **View Payload** icon. 
@@ -83,7 +72,7 @@ You'll now see an example of the expected payload. Your event has a unique orche
 ![Journey Optimizer](./images/oc42.png)
 
 The event ID is what needs to be sent to Adobe Journey Optimizer in order to trigger the journey that you'll build in the next step. Write down this eventID, as you'll need it in one of the next steps.
-`"eventID": "ef6dd943c94fe1b4763c098ccd1772344662f2a9f614513106cb5ada8be36857"`
+`"eventID": "1c8148a8ab1993537d0ba4e6ac293dd4f2a88d80b2ca7be6293c3b28d4ff5ae6"`
 
 Click **Ok**, followed by **Cancel**.
 
@@ -95,11 +84,11 @@ In the menu, go to **Journeys** and click **Create Journey**.
 
 ![Journey Optimizer](./images/oc43.png)
 
-You'll then see this. Give your journey a name. Use `--aepUserLdap-- - Order Confirmation journey`. Click **OK**.
+You'll then see this. Give your journey a name. Use `--aepUserLdap-- - Order Confirmation journey`. Click **Save**.
 
 ![Journey Optimizer](./images/oc45.png)
 
-First, you need to add your event as the starting point of your journey. Search for your event `--aepUserLdap--PurchaseEvent` and drag and drop it onto the canvas. Click **OK**.
+First, you need to add your event as the starting point of your journey. Search for your event `--aepUserLdap--PurchaseEvent` and drag and drop it onto the canvas. Click **Save**.
 
 ![Journey Optimizer](./images/oc46.png)
 
@@ -119,7 +108,7 @@ You now see this. Click the **Subject line** text field.
 
 ![ACOP](./images/journeyactions3.png)
 
-In the text area start writing **Thanks for your order,**
+In the text area start writing **Thanks for your order,** and click the **Personalization** icon.
 
 ![Journey Optimizer](./images/oc5.png)
 
@@ -127,7 +116,7 @@ The subject line is not done yet. Next you need to bring in the personalization 
 
 ![Journey Optimizer](./images/oc6.png)
 
-You'll then be back here. Click **Email Designer** to create the email's content. 
+You'll then be back here. Click **Edit email body** to create the email's content. 
 
 ![Journey Optimizer](./images/oc7.png)
 
@@ -141,41 +130,34 @@ Drag and drop 8 times a **1:1 column** on the canvas, which should give you this
 
 ![Journey Optimizer](./images/oc9.png)
 
-Go to **Content Components**.
+In the left menu, go to **Fragments**. Drag the header you created earlier in [exercise 3.1.2.1](./../module3.1/ex2.md) onto the first component in the canvas. Drag the footer you created earlier in [exercise 3.1.2.2](./../module3.1/ex2.md) onto the last component in the canvas.
+
+![Journey Optimizer](./images/fragm1.png)
+
+Click the **+** icon in the left menu. Go to **Contents** to start adding content onto the canvas.
 
 ![Journey Optimizer](./images/oc10.png)
 
-Drag and drop an **Image** component on the first row. Click **Browse**.
-
-![Journey Optimizer](./images/oc11.png)
-
-Go to the folder **enablement-assets**, select the file **luma-logo.png** and click **Select**.
-
-![Journey Optimizer](./images/oc12.png)
-
-You're now back here. Click your image to select it and then use the **Size** slider to make the logo image a bit smaller.
-
-![Journey Optimizer](./images/oc13.png)
-
-Go to **Content Components** and drag and drop an **Image** component on the second row. Select the **Image component** but DON'T click Browse.
+Go to **Contents** and drag and drop an **Image** component on the second row. Click **Browse**.
 
 ![Journey Optimizer](./images/oc15.png)
 
-Paste this image URl in the field **Source**: `https://parsefiles.back4app.com/hgJBdVOS2eff03JCn6qXXOxT5jJFzialLAHJixD9/29043bedcde632a9cbe8a02a164189c9_preparing.png`. This image is hosted outside of Adobe.
+Open the folder **citi-signal-images**, click to select the image **citisignal-preparing.png**, and click **Select**.
 
 ![Journey Optimizer](./images/oc14.png)
 
-When you change the scope to another field, the image will be rendered and you'll see this:
+Under **Styles**, change the width to **40%**.
 
-![Journey Optimizer](./images/oc16.png)
+![Journey Optimizer](./images/oc14a.png)
 
-Next, go to **Content Components** and drag and drop a **Text** component on the third row. 
+Next, go to **Contents** and drag and drop a **Text** component on the third row. 
 
 ![Journey Optimizer](./images/oc17.png)
 
 Select the default text in that component **Please type your text here.** and replace it by the below text:
 
 ```javascript
+
 You’re one step closer!
 
 Hi 
@@ -201,7 +183,7 @@ You'll then see this:
 
 ![Journey Optimizer](./images/oc21.png)
 
-Next, go to **Content Components** and drag and drop a **Text** component on the fourth row. 
+Next, go to **Contents** and drag and drop a **Text** component on the fourth row. 
 
 ![Journey Optimizer](./images/oc22.png)
 
@@ -213,7 +195,7 @@ Change the font size to **26px** and center your text in this cell. You'll then 
 
 ![Journey Optimizer](./images/oc23.png)
 
-Next, go to **Content Components** and drag and drop an **HTML** component on the fifth row. Click the HTML component and then click **Show the source code**.
+Next, go to **Contents** and drag and drop an **HTML** component on the fifth row. Click the HTML component and then click **Show the source code**.
 
 ![Journey Optimizer](./images/oc24.png)
 
@@ -229,7 +211,7 @@ You'll then have this. Click **Save** to save your progress.
 
 ![Journey Optimizer](./images/oc26.png)
 
-Go to **Content Components** and drag and drop an **HTML** component on the sixth row. Click the HTML component and then click **Show the source code**.
+Go to **Contents** and drag and drop an **HTML** component on the sixth row. Click the HTML component and then click **Show the source code**.
 
 ![Journey Optimizer](./images/oc57.png)
 
@@ -249,13 +231,11 @@ First, delete **xxx** in your HTML code first.
 
 ![Journey Optimizer](./images/oc60.png)
 
-In the left menu, click **Contextual attributes**. This context is passed to the message from the journey.
-
-![Journey Optimizer](./images/oc601.png)
+In the left menu, click **Contextual attributes**. This context is passed to the message from the journey. 
 
 You'll then see this. Click the arrow next to **Journey Orchestration** to drill deeper.
 
-![Journey Optimizer](./images/oc61.png)
+![Journey Optimizer](./images/oc601.png)
 
 Click the arrow next to **Events** to drill deeper.
 
@@ -281,7 +261,7 @@ You'll be back in the Email Designer now. Click **Save** to save your progress.
 
 ![Journey Optimizer](./images/oc67.png)
 
-Next, go to **Content Components** and drag and drop an **HTML** component on the seventh row. Click the HTML component and then click **Show the source code**.
+Next, go to **Contents** and drag and drop an **HTML** component on the seventh row. Click the HTML component and then click **Show the source code**.
 
 ![Journey Optimizer](./images/oc68.png)
 
@@ -298,9 +278,6 @@ First, delete the first **xxx** in your HTML code.
 ![Journey Optimizer](./images/oc71.png)
 
 In the left menu, click **Contextual Attributes**.
-
-![Journey Optimizer](./images/oc711.png)
-
 Click the arrow next to **Journey Orchestration** to drill deeper.
 
 ![Journey Optimizer](./images/oc72.png)
@@ -329,14 +306,11 @@ You'll then have this. Now delete the second **xxx** in your HTML code.
 
 ![Journey Optimizer](./images/oc76.png)
 
-Click the **+** icon next to **Price Total** again to add that to the canvas.
-
-![Journey Optimizer](./images/oc77.png)
-
+Click the **+** icon next to **Price Total** again to add that to the canvas. 
 You can also add the field **Currency** from within the **Order** object onto the canvas, as you can see here. 
 When you're done, click **Save** to save your changes.
 
-![Journey Optimizer](./images/oc771.png)
+![Journey Optimizer](./images/oc77.png)
 
 You'll then be back in the Email Designer. Click **Save** again.
 
@@ -350,7 +324,7 @@ Click the arrow in the top left corner to go back to your journey.
 
 ![Journey Optimizer](./images/oc79a.png)
 
-Click **Ok** to close your email action.
+Click **Save** to close your email action.
 
 ![Journey Optimizer](./images/oc79b.png)
 
@@ -374,7 +348,7 @@ This is the Adobe Experience Platform Data Collection Properties page you saw be
 
 ![Properties page](./../../../modules/datacollection/module1.1/images/launch1.png) 
 
-In module 0, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
+In **Getting Started**, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
 
 ![Search box](./../../../modules/datacollection/module1.1/images/property6.png)
 
@@ -382,11 +356,11 @@ Go to **Data Elements**. Search and open the data element **XDM - Purchase**.
 
 ![Journey Optimizer](./images/oc91.png)
 
-You'll then see this. Navigate to the field **_experience.campaign.orchestration.eventID** and fill out your eventID here. The eventID to fill out here, is the eventID you created as part of exercise 10.1.2. Click **Save** or **Save to Library**.
+You'll then see this. Navigate to the field **_experience.campaign.orchestration.eventID** and fill out your eventID here. The eventID to fill out here, is the eventID you created as part of exercise 3.4.1.1 Click **Save** or **Save to Library**.
 
 ![Journey Optimizer](./images/oc92.png)
 
-Save your changes in your Client property, and then publish your changes by updating your development library.
+Save your changes in your property, and then publish your changes by updating your development library.
 
 ![Journey Optimizer](./images/oc93.png)
 
@@ -396,33 +370,29 @@ Your changes are now deployed and can be tested.
 
 Let's test the updated journey by buying a product on the demo website.
 
-Go to [https://builder.adobedemo.com/projects](https://builder.adobedemo.com/projects). After logging in with your Adobe ID, you'll see this. Click your website project to open it.
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web8.png)
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
 Open a new incognito browser window.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
 Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
 Select your account type and complete the login process.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-You'll then see your website loaded in an incognito browser window. For every demonstration, you'll need to use a fresh, incognito browser window to load your demo website URL.
+You'll then see your website loaded in an incognito browser window. For every exercise, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
-![DSN](./../../../modules/gettingstarted/gettingstarted/images/web7.png)
-
-Click the Adobe logo icon in the top left corner of your screen to open the Profile Viewer.
-  
-![Demo](./../../../modules/datacollection/module1.2/images/pv1.png)
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
 Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for thi currently unknown customer.
       
@@ -436,13 +406,25 @@ Fill out your details and click **Register** after which you'll be redirected to
 
 ![Demo](./../../../modules/datacollection/module1.2/images/pv10.png)
 
-Add any product to your cart, and go to the **Cart** page. Click **Proceed to checkout**.
+Add any product to your cart
+
+![Journey Optimizer](./images/cart1a.png)
+
+Go to the **Cart** page. Click **Checkout**.
 
 ![Journey Optimizer](./images/cart1.png)
 
-Next, verify the fields on the checkout page and click **Checkout**.
+Next, verify the fields and complete if necessary. Click **Proceed**.
 
 ![Journey Optimizer](./images/cart2.png)
+
+Click **Confirm Order**.
+
+![Journey Optimizer](./images/cart2a.png)
+
+Your order is now confirmed.
+
+![Journey Optimizer](./images/cart2b.png)
 
 You'll then receive your order confirmation email within seconds.
 

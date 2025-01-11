@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 72
 last-substantial-update: 2025-01-11
 jira: KT-16656
+exl-id: c647dfeb-30fc-44a7-96d0-f09318317c2b
 ---
-
 # Use the discoverability panel in AI Assistant
 
 Learn how to use discoverability panel in AI Assistant.
