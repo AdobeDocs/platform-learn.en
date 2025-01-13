@@ -235,7 +235,7 @@ If you then go back to Azure Storage Explorer and refresh the content of your fo
 
 ![Azure Storage](./images/az38.png)
 
-## 1.1.2.5 Programmatic file usage
+## 1.1.2.6 Programmatic file usage
 
 In order to use programmatically read files from Azure Storage Accounts on the long term, you'll need to create a new **Shared Access Signature (SAS)** token, with permissions that allow you to read a file. You could technically use the SAS-token you created in the previous exercise, but it's best practice to have a separate token with only **Read** permissions and separate token with only **Write** permissions.
 
@@ -352,7 +352,7 @@ If the variables were configured in a correct way, you'll see an image URL being
 
 Open the image URL to verify your image.
 
-![Azure Storage](./images/az108.png)
+![Azure Storage](./images/az108.jpg)
 
 Next Step: [1.1.3 Adobe Firefly & Adobe Photoshop ](./ex3.md)
 

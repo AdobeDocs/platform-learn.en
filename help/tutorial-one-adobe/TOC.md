@@ -35,8 +35,10 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
 + 3 Unified Customer Experience {#uce} 
-  + 3.1 Adobe Real-Time CDP {#module31}
-    + [Overview](/help/tutorial-one-adobe/modules/uce/module3.1/rtcdp.md)
-    + [3.1.1 Create your event](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+  + 3.1 Federated Audience Composition {#module31}
+    + [Overview](/help/tutorial-one-adobe/modules/datacollection/module3.1/fac.md)
+    + [1.3.1 Setup your Snowflake environment](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+    + [1.3.2 Create schemas, data model and links](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
+    + [1.3.3 Create a federated composition](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
 

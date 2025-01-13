@@ -56,8 +56,12 @@ In this foundational module, you will use Adobe Firefly to ...
 
 In this foundational module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
 
+[2.2 Adobe Workfront](./modules/csc/module2.2/workfront.md)
+
+In this foundational module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
+
 ### 3. Unified Customer Experience
 
-[3.1 Adobe Real-Time CDP](./modules/uce/module3.1/rtcdp.md)
+[3.1 Federated Audience Composition](./modules/uce/module3.1/fac.md)
 
 In this foundational module, you will learn about Adobe Experience Platform Data Collection and the new Web SDK extension.
