@@ -1,22 +1,31 @@
 ---
-title: Foundation - FAC - Summary
-description: Foundation - FAC - Summary
+title: 3.1 Adobe Real-Time CDP
+description: Adobe Real-Time CDP 
 kt: 5342
 doc-type: tutorial
 ---
-# Summary & benefits
+# 3.1 Adobe Real-Time CDP
 
-Congratulations and thank you for investing your time in learning about Adobe Experience Platform! 
+## Learning Objectives
 
-## Benefits
+- Learn how to use Adobe Real-Time CDP in various ways.
 
-Let's highlight the benefits of the data ingestion capabilities of Federated Audience Composition in Adobe Experience Platform :
+## Prerequisites
 
+- Access to Adobe Real-Time CDP
 
+## Exercises
 
-## Check this out
+[3.1.1 Real-Time CDP](./ex1.md)
 
+In this exercise, ...
 
-[Go Back to Module 1.3](./fac.md)
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform and its applications. If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
 
 [Go Back to All Modules](../../../overview.md)
