@@ -25,11 +25,13 @@ Click **Create**.
 
 ![AEMCS](./images/aemcs3.png)
 
-Creating your environments will take some time.
+Creating your environments will take some time, 10-20mins.
 
 ![AEMCS](./images/aemcs4.png)
 
-Once the environments are created and ready to use, you'll receive an email confirmation.
+While you wait, you can already start with exercise [2.1.2 Create your document-based website](./ex2.md).
+
+Once the environments are created and ready to use, you'll receive an email confirmation after which you can come back here.
 
 ![AEMCS](./images/aemcs5.png)
 
@@ -55,7 +57,7 @@ You'll then see your environment details, including the URL of your **Author** e
 
 Once your pipeline run has finished, you can continue with the next exercise.
 
-Next Step: [2.1.2 Setup your AEM CS environment](./ex2.md)
+Next Step: [2.1.2 Create your document-based website](./ex2.md)
 
 [Go Back to Module 2.1](./aemcs.md)
 

@@ -21,11 +21,15 @@ exl-id: 52efb52c-103f-4171-a69e-0cddb142a0ed
 
 In this exercise, you'll create your Cloud Manager Program which will create the Sites, Assets and Edge Delivery Services products for you.
 
-[2.1.2 Setup your AEM CS environment](./ex2.md)
+[2.1.2 Create your document-based website](./ex2.md)
+
+In this getting started exercise, you'll set up your own document-based website by copying an existing website template.
+
+[2.1.3 Setup your AEM CS environment](./ex3.md)
 
 In this exercise you'll set up your AEM CS environment and access your CitiSignal website.
 
-[2.1.3 Develop a custom block](./ex3.md)
+[2.1.4 Develop a custom block](./ex4.md)
 
 In this exercise you'll develop a custom block component for your website.
 

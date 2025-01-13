@@ -238,7 +238,9 @@ If you then go back to Azure Storage Explorer and refresh the content of your fo
 
 ## 1.1.2.5 Programmatic file usage
 
-In order to use programmatically read files from Azure Storage Accounts, you'll need to create a new **Shared Access Signature (SAS)** token, with permissions that allow you to read a file. You could technically use the SAS-token you created in the previous exercise, but it's best practice to have a separate token with only **Read** permissions.
+In order to use programmatically read files from Azure Storage Accounts on the long term, you'll need to create a new **Shared Access Signature (SAS)** token, with permissions that allow you to read a file. You could technically use the SAS-token you created in the previous exercise, but it's best practice to have a separate token with only **Read** permissions and separate token with only **Write** permissions.
+
+### Long-term Read SAS token
 
 To do so, go back to Azure Storage Explorer. Right-click your container, and then click **Get Shared Access Signature**.
 
@@ -247,17 +249,113 @@ To do so, go back to Azure Storage Explorer. Right-click your container, and the
 Under **Permissions**, the following permissions are required:
 
 - **Read**
-- **Add**
-- **Create**
-- **Write**
 - **List**
+
+Set the **Expiry Time** to 1 year from now.
 
 Click **Create**.
 
-![Azure Storage](./images/az28.png)
+![Azure Storage](./images/az100.png)
 
+You'll then get your long-term SAS-token with Read permissions. Copy the URL and write it down in a file on your computer.
 
-Next Step: [1.1.3 ... ](./ex3.md)
+![Azure Storage](./images/az101.png)
+
+Your URL will look like this:
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+You can derive a couple of values out of the above URL:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+
+### Long-term Write SAS token
+
+To do so, go back to Azure Storage Explorer. Right-click your container, and then click **Get Shared Access Signature**.
+
+![Azure Storage](./images/az27.png)
+
+Under **Permissions**, the following permissions are required:
+
+- **Add**
+- **Create**
+- **Write**
+
+Set the **Expiry Time** to 1 year from now.
+
+Click **Create**.
+
+![Azure Storage](./images/az102.png)
+
+You'll then get your long-term SAS-token with Read permissions. Copy the URL and write it down in a file on your computer.
+
+![Azure Storage](./images/az103.png)
+
+Your URL will look like this:
+
+`https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+You can once again derive a couple of values out of the above URL:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+### Variables in Postman
+
+As you can see in the above section, there are some common variables in both the Read and the Write token.
+
+You now need to create variables in Postman that will store the various elements of the above SAS-tokens. 
+There are some values that are the same in both URLs:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+For future API interactions, the main thing that will change is the asset name, while the above variables will remain the same. In that case, it makes sense to create variables in Postman so that you don't need to specify them manually every time.
+
+To do this, open Postman. Click the **Environments** icon, open the **All variables** menu and click **Environment**.
+
+![Azure Storage](./images/az104.png)
+
+You then see this. Create these 4 variables in the table that is shown and for the columns **Initial value** and **Current value**, enter your specific personal values.
+
+- `AZURE_STORAGE_URL`: your url
+- `AZURE_STORAGE_CONTAINER`: your container name
+- `AZURE_STORAGE_SAS_READ`: your SAS Read token
+- `AZURE_STORAGE_SAS_WRITE`: your SAS Write token
+
+Click **Save**.
+
+![Azure Storage](./images/az105.png)
+
+In one of the previous exercises, the **Body** of your the request **Firefly - T2I (styleref) V3** looked like this:
+
+`"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
+
+![Azure Storage](./images/az24.png)
+
+You can now change the URL to:
+
+`"url": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/gradient.jpg{{AZURE_STORAGE_SAS_READ}}"`
+
+Click **Send** to test the changes you made.
+
+![Azure Storage](./images/az106.png)
+
+If the variables were configured in a correct way, you'll see an image URL being returned.
+
+![Azure Storage](./images/az107.png)
+
+Open the image URL to verify your image.
+
+![Azure Storage](./images/az108.png)
+
+Next Step: [1.1.3 Adobe Firefly & Adobe Photoshop ](./ex3.md)
 
 [Go Back to Module 1.1](./firefly-services.md)
 
