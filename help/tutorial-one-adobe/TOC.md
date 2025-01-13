@@ -19,6 +19,12 @@ recommendations: noDisplay,noCatalog
     + [1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
     + [1.1.3 Adobe Firefly & Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
+  + 1.2 Automating Adobe Firefly Services {#module21}  
+    + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
+    + [1.2.1 Getting Started with Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
+    + [1.2.2 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
+    + [1.2.3 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2 Content Supply Chain {#csc}  
   + 2.1 Adobe Experience Manager Cloud Service {#module21}
