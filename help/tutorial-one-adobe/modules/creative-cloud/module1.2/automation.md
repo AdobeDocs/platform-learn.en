@@ -3,6 +3,7 @@ title: 1.1 Adobe Firefly Services
 description: Adobe Firefly Services
 kt: 5342
 doc-type: tutorial
+exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
 ---
 # 1.2 Automating Adobe Firefly Services
 
