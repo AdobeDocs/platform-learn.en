@@ -12,11 +12,11 @@ Log in to Adobe Experience Platform by going to this URL: [https://experience.ad
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](./../module1.2/images/home.png)
+![Data Ingestion](./images/home.png)
 
 Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-![Data Ingestion](./../module1.2/images/sb1.png)
+![Data Ingestion](./images/sb1.png)
 
 ## 3.1.2.1 Set up a Federated database in AEP
 

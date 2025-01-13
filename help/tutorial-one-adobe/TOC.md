@@ -36,9 +36,9 @@ recommendations: noDisplay,noCatalog
 
 + 3 Unified Customer Experience {#uce} 
   + 3.1 Federated Audience Composition {#module31}
-    + [Overview](/help/tutorial-one-adobe/modules/datacollection/module3.1/fac.md)
-    + [1.3.1 Setup your Snowflake environment](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
-    + [1.3.2 Create schemas, data model and links](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
-    + [1.3.3 Create a federated composition](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
+    + [Overview](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
+    + [3.1.1 Setup your Snowflake environment](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
+    + [3.1.2 Create schemas, data model and links](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
+    + [3.1.3 Create a federated composition](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
 
