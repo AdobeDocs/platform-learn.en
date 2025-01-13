@@ -6,6 +6,19 @@ doc-type: tutorial
 ---
 # 2.2.1 Getting started with Workfront
 
+Log in to Adobe Workfront by going to [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/).
+
+You then see this.
+
+![WF](./images/wfb1.png)
+
+## 2.2.1.1 Configure your AEM Assets Integration
+
+Click the 
+
+
+![WF](./images/wfb2.png)
+
 [Go Back to Module 2.2](./workfront.md)
 
 [Go Back to All Modules](./../../../overview.md)

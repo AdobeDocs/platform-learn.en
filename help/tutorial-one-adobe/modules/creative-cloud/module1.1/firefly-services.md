@@ -24,6 +24,10 @@ In this exercise, explore Firefly Services and get an understanding of its capab
 
 In this exercise, explore Firefly Services and get an understanding of its capabilities.
 
+[1.1.3 Adobe Firefly & Adobe Photoshop](./ex3.md)
+
+In this exercise, you'll use Firefly Services together with Adobe Photoshop.
+
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.

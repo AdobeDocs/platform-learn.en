@@ -24,7 +24,7 @@ Go to [https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDe
 
 ![AEMCS](./images/aemcssetup4.png)
 
-Fore the **Repository name**, use `citisignal`. Set the visibility to **Private**. Click **Create repository**.
+For the **Repository name**, use `citisignal`. Set the visibility to **Private**. Click **Create repository**.
 
 ![AEMCS](./images/aemcssetup5.png)
 
@@ -72,7 +72,7 @@ There are 3 parts of the URL that need to be updated
 
 XXX should be replaced by the URL of your AEM CS Author environment.
 
-YYY should be replaced by your GitHub use account.
+YYY should be replaced by your GitHub user account.
 
 ZZZ should be replaced by the name of the GitHub repository that you used in the previous exercise.
 
