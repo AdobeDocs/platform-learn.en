@@ -1,13 +1,11 @@
 ---
-
 title: Publish the migration to staging and production
 description: When all development is completed for the migration and validated, build to staging and then publish to production when ready.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16767
-
+exl-id: 47c86999-6a9c-4451-8a59-475e8c65ab6a
 ---
-
 # Publish the migration to staging and production
 
 When all development is completed for the migration and validated, build to staging and then publish to production when ready.

@@ -1,13 +1,11 @@
 ---
-
 title: Migrate your default page load rule
 description: In this exercise, you will learn how to migrate a default page load rule in Adobe Experience Cloud Tags from the Analytics extension to the Web SDK extension.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16760
-
+exl-id: 783b464e-2974-41a1-9949-ac3ac0c786fc
 ---
-
 # Migrate your default page load rule
 
 In this exercise, you will learn how to migrate a default page load rule in Adobe Experience Cloud Tags from the Analytics extension to the Web SDK extension.

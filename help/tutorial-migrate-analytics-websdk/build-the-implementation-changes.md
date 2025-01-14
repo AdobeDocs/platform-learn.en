@@ -1,13 +1,11 @@
 ---
-
 title: Build the implementation changes to the development library
 description: Learn how to build any changes that you have made to the development library in your tags property, so that you can test the results on your development website.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16762
-
+exl-id: 90cbd08a-98a0-4090-9188-bad37a64853c
 ---
-
 # Build the implementation changes to the development library
 
 Learn how to build any changes that you have made to the development library in your tags property, so that you can test the results on your development website.
@@ -45,4 +43,3 @@ Here's a nice shortcut as you make your way through edits in tags. Instead of go
 1. From pretty much anywhere in the tags UI, click Select a working library from the top right of the UI, and choose the one you want. For this tutorial, choose Initial Web SDK Migration.
 
     ![Select working library](assets/select-working-library.jpg)
-

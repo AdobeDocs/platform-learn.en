@@ -1,13 +1,11 @@
 ---
-
 title: Migrate additional page rules
 description: Learn how to migrate additional page-based rules to the Web SDK extension.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16764
-
+exl-id: d1345da7-018d-4c0c-ba9b-d4ff7b35df03
 ---
-
 # Migrate additional page rules
 
 In this exercise you will learn how to migrate additional page-based rules to the Web SDK extension. You will find this similar to the exercise that you already did when migrating your default page load rule to Web SDK. The methods still apply. The biggest difference is that with these rules, you will not be adding a Send Event action, because in most cases, your rule does not contain an Analytics extension's Send Beacon action.
@@ -64,6 +62,3 @@ Here is an example of migrating a rule that fires conditionally. I will use the 
 >[!IMPORTANT]
 >
 >Like the default page load rule, we left the Analytics extension's **Set Variable** action in the rule so that we can compare data as we validate our migration. Don't forget to come back in later and remove the Analytics extension's action as you do the final cleanup.
-
- 
-

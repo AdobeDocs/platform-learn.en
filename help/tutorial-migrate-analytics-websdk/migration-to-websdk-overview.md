@@ -1,11 +1,10 @@
 ---
-
-title: Migrate from the Adobe Analytics Tags extension to the Web SDK Tags extension 
+title: Migrate from the Adobe Analytics Tags extension to the Web SDK Tags extension
 description: Learn the steps you will take during the migration to Web SDK, as well as decisions that will need to be made along the way.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16755
-
+exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
 ---
 # Migrate from the Adobe Analytics Tags extension to the Web SDK Tags extension
 
@@ -65,4 +64,3 @@ The migration process involves the following key steps:
 
 
 ### NOTE FOR DOUG - after tutorial testing, put a link here to a Community post where clients can ask questions about the tutorial and migrating to Web SDK.
-

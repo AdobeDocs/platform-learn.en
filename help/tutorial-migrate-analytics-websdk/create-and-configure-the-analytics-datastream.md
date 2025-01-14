@@ -1,13 +1,11 @@
 ---
-
 title: Create and configure a datastream
 description: Learn how to create and configure a new datastream so that your website data can be routed to Adobe Analytics.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16757
-
+exl-id: 6fc3a817-0c7e-46e0-af2e-a7c23decd6a0
 ---
-
 # Create and configure a datastream
 
 Learn how to create and configure a new datastream so that your website data can be routed to Adobe Analytics.
@@ -55,4 +53,4 @@ You will now want to **go through the same steps again** two more times: once fo
 ### The production datastream
 
 * When naming the datastream (and when adding the description), you can/should have the same name with the difference of adding "production" instead of "development."
-* When choosing the report suite to map the data to, instead of choosing the development report suite or even a new report suite, you can map this datastream to your **current** production report suite being fed by the AppMeasurement implementation. That way, after you have completed the migration and have tested it and are happy with the numbers, you can remove the old AppMeasurement code, send the Tags libraries through to production, and you will be feeding the new production data into the same production report suite, so that you will have continuity between old and new implementations. 
+* When choosing the report suite to map the data to, instead of choosing the development report suite or even a new report suite, you can map this datastream to your **current** production report suite being fed by the AppMeasurement implementation. That way, after you have completed the migration and have tested it and are happy with the numbers, you can remove the old AppMeasurement code, send the Tags libraries through to production, and you will be feeding the new production data into the same production report suite, so that you will have continuity between old and new implementations.

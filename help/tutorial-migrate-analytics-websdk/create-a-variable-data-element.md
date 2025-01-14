@@ -1,13 +1,11 @@
 ---
-
 title: Create a Variable data element
 description: Add a data element that will be built up over multiple rules and then sent in to the Edge Network and forwarded to Adobe Analytics
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16759
-
+exl-id: 0f7f011b-da40-451c-ba01-302f3af18aa6
 ---
-
 # Create a Variable data element
 
 Add a data element that will be built up over multiple rules and then sent in to the Edge Network and forwarded to Adobe Analytics.

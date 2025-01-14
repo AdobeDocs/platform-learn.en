@@ -1,13 +1,11 @@
 ---
-
 title: Migrate custom code to the Web SDK
 description: Learn how to migrate custom code from the s object in the Analytics extension to the Web SDK.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16761
-
+exl-id: 7ffe73d7-11ba-43f4-83a7-6ff8e235c6a8
 ---
-
 # Migrate custom code to the Web SDK
 
 In this exercise, you will learn how to migrate custom code from the Adobe Analytics extension to the Adobe Experience Platform Web SDK extension in Experience Platform Tags.

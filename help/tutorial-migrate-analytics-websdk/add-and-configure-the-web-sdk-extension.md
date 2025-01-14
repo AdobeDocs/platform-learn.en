@@ -1,13 +1,11 @@
 ---
-
 title: Add and configure the Web SDK extension
 description: Learn how to add and configure the Web SDK extension to your Tags property, to give you the functionality you need in further lessons to complete the migration.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16758
-
+exl-id: 53912849-5de0-4321-a785-c8bdd9cf836f
 ---
-
 # Add and configure the Web SDK extension
 
 Learn how to add and configure the Web SDK extension in your Tags property, to give you the functionality you need in further lessons to complete the migration.

@@ -1,13 +1,11 @@
 ---
-
 title: Delete the Adobe Analytics extension items
 description: When debugging and validation is complete, remove all references to the Adobe Analytics extension items and remove the extension itself.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16766
-
+exl-id: 37189f28-afb9-4310-a176-cf26c0f51dee
 ---
-
 # Delete the Adobe Analytics extension items
 
 When debugging and validation is complete, remove all references to the Adobe Analytics extension items and remove the extension itself.
@@ -49,4 +47,3 @@ Now that you have removed the references to your Adobe Analytics extension, you 
 1. Do the same for the Experience Cloud ID Service extension, as you will no longer need that. The Web SDK extension handles the ID, and so you not need the additional extension.
 1. Do the same for any other extensions that are associated with the Adobe Analytics extension, but only after you have made the necessary migration changes. 
 1. Build the changes to your development environment.
-

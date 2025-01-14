@@ -1,13 +1,11 @@
 ---
-
 title: Debug and validate your Web SDK migration
 description: Learn how to debug and validate your data as you migrate to the Web SDK
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16763
-
+exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
 ---
-
 # Debugging and validating your Web SDK migration
 
 In this exercise, you will learn how to debug and validate your data as you migrate to the Web SDK. We want to encourage two different validation activities that can help you make sure that everything is flowing correctly:

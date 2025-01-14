@@ -1,11 +1,10 @@
 ---
-
 title: Create a validation report suite
 description: Create a report suite in Adobe Analytics that you can use to validate Web SDK data as you migrate your site(s) over from the old implementation.
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16756
-
+exl-id: e09ae477-8033-491b-b679-80d4a14829f9
 ---
 # Create a validation report suite
 
@@ -32,4 +31,3 @@ Depending on the size and complexity of your Analytics implementation, migration
 >[!TIP]
 >
 >For a video walk-through of creating report suites, see [Understanding and creating report suites](https://experienceleague.adobe.com/en/docs/analytics-learn/tutorials/intro-to-analytics/analytics-basics/understanding-and-creating-report-suites){target="_blank"}.
-

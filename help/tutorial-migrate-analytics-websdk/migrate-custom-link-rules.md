@@ -1,13 +1,11 @@
 ---
-
 title: Migrate custom link rules
 description: Learn how to migrate rules that send in custom link hits (as opposed to page views).
 solution: Data Collection, Analytics
 feature: Web SDK
 jira: KT-16765
-
+exl-id: fbc44388-f044-4384-80c4-3669e3bf3bdc
 ---
-
 # Migrate custom link rules
 
 In this exercise, you will learn how to migrate rules that send in custom link hits (as opposed to page views).
