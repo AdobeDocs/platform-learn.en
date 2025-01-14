@@ -16,7 +16,7 @@ When all development is completed for the migration and validated, build to stag
 
 This is really the last main step of your migration, and it is to move the library that you have been using to develop and test your migration along to your staging environment for final testing there, and then on to the production environment.
 
-If you go back to the [Create and configure a datastream](03-create-and-configure-the-analytics-datastream.md) lesson, you will see at the end of it that we pointed the staging datastream to send the analytics data to the same development report suite (or alternatively to a new staging report suite). You will also be reminded there that we pointed the production datastream to send data to the existing production report suite that you have been using.
+If you go back to the [Create and configure a datastream](create-and-configure-the-analytics-datastream.md) lesson, you will see at the end of it that we pointed the staging datastream to send the analytics data to the same development report suite (or alternatively to a new staging report suite). You will also be reminded there that we pointed the production datastream to send data to the existing production report suite that you have been using.
 This is just good information to have as we now push the migrated library along the publishing path to staging and production.
 
 ## Pushing to staging and production environments
