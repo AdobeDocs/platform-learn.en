@@ -41,11 +41,11 @@ So, for example, let's say that you have the following code block in the custom 
 const products = window.digitalData.products;
 const productIndex = event.element.dataset.productIndex;
 const product = products[productIndex];
-s.products = [
- product.cat3Tag,
- product.id,
- 1,
- product.price
+s.products = [
+product.cat3Tag,
+product.id,
+1,
+product.price
 ].join(";");
 ```
 
