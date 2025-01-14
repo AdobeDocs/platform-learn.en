@@ -22,9 +22,9 @@ exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
 
 In this exercise, explore Workfront Fusion in combination with Firefly Services and get an understanding of its capabilities.
 
-[1.2.2 ...](./ex2.md)
+[1.2.2 Use Adobe APIs within Workfront Fusion](./ex2.md)
 
-In this exercise, ... .
+In this exercise, you'll configure and use Firefly Services APIs and Photoshop APIs within Workfront Fusion.
 
 [1.2.3 ...](./ex3.md)
 

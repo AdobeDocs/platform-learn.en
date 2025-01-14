@@ -186,7 +186,7 @@ You should then have this. Click **OK**.
 
 ![WF Fusion](./images/wffusion38.png)
 
-Click *Run once** again.
+Click **Run once** again.
 
 ![WF Fusion](./images/wffusion39.png)
 
@@ -222,7 +222,7 @@ Click **Save**.
 
 ![WF Fusion](./images/wffusion47.png)
 
-Next Step: [1.2.2 Use Firefly Text To Image using Workfront Fusion](./ex2.md)
+Next Step: [1.2.2 Use Adobe APIs within Workfront Fusion](./ex2.md)
 
 [Go Back to Module 1.2](./automation.md)
 
