@@ -24,11 +24,11 @@ In this exercise, explore Workfront Fusion in combination with Firefly Services 
 
 [1.2.2 Use Adobe APIs within Workfront Fusion](./ex2.md)
 
-In this exercise, you'll configure and use Firefly Services APIs and Photoshop APIs within Workfront Fusion.
+In this exercise, you configure and use Firefly Services APIs and Photoshop APIs within Workfront Fusion, while exploring Workfront Fusion's capabilities.
 
-[1.2.3 ...](./ex3.md)
+[1.2.3 Process automation with Workfront Fusion](./ex3.md)
 
-In this exercise, ... .
+In this exercise, you continue refining your journey to automate image creation process.
 
 [Summary and benefits](./summary.md)
 
