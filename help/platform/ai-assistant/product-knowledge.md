@@ -13,6 +13,6 @@ exl-id: 8f545a33-7a29-40e0-a088-98c6228b233d
 
 # Learn Experience Platform applications with AI Assistant
 
-Learn about Adobe Experience Platform applications from AI Assistant.
+Learn about Adobe Experience Platform applications from AI Assistant. For more information, see the [AI Assistant documentation](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/home).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441024/?learn=on&enablevpops)

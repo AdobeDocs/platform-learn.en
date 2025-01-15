@@ -12,6 +12,6 @@ exl-id: 29a4bf01-3bef-4434-b935-073e279b1575
 ---
 # Validate responses from AI Assistant
 
-Learn how to verify and validate the responses that AI Assistant in Adobe Experience Platform provides.
+Learn how to verify and validate the responses that AI Assistant in Adobe Experience Platform provides. For more information, see the [AI Assistant UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/ai-assistant/ui-guide#verify-responses).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3441738/?learn=on&enablevpops)
