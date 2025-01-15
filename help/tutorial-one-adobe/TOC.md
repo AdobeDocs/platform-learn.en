@@ -23,7 +23,7 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
     + [1.2.1 Getting Started with Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
     + [1.2.2 Use Adobe APIs within Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
-    + [1.2.3 ...](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
+    + [1.2.3 Process automation with Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/summary.md)
 
 + 2 Content Supply Chain {#csc}  

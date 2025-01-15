@@ -211,7 +211,227 @@ You should then have this.
 
 ![WF Fusion](./images/wffusion74.png)
 
-Next Step: [1.2.3 ...](./ex3.md)
+Click **Run once**.
+
+![WF Fusion](./images/wffusion75.png)
+
+Click the **search** icon on the the **Photoshop Change Text** node to see the response. You should have a response that looks like this, with a link to a status file.
+
+![WF Fusion](./images/wffusion76.png)
+
+Before continuing with the Photoshop API interactions, let's disable the route to the **Firefly T2I** node to not send unneeded API calls to that API endpoint. Click the **wrench** icon, and then select **Disable route**.
+
+![WF Fusion](./images/wffusion77.png)
+
+You should then have this.
+
+![WF Fusion](./images/wffusion78.png)
+
+Next, add another **Set multiple variables** node.
+
+![WF Fusion](./images/wffusion79.png)
+
+Place it after the **Photoshop Change Text** node.
+
+![WF Fusion](./images/wffusion80.png)
+
+Click the **Set multiple variables** node, select **Add item**. Select the variable value from the response of the previous request.
+
+| Variable name     | Variable value     | 
+|:-------------:| :---------------:| 
+| `psdStatusUrl`| `data > _links > self > href` |
+
+Click **Add**. 
+
+![WF Fusion](./images/wffusion81.png)
+
+Click **OK**.
+
+![WF Fusion](./images/wffusion82.png)
+
+Right-click on the **Photoshop Change Text** node and select **Clone**.
+
+![WF Fusion](./images/wffusion83.png)
+
+Drag the cloned HTTP request after the **Set multiple variables** node that you just created.
+
+![WF Fusion](./images/wffusion83.png)
+
+Right-click the cloned HTTP request, select **Rename** and change the name to **Photoshop Check Status**.
+
+![WF Fusion](./images/wffusion84.png)
+
+Click to open the HTTP request. Change the URL so that it references the variable that you created in the previous step, and set the **Method** to **GET**.
+
+![WF Fusion](./images/wffusion85.png)
+
+Remove the **Body** by selecting the empty option.
+
+![WF Fusion](./images/wffusion86.png)
+
+Click **OK**.
+
+![WF Fusion](./images/wffusion87.png)
+
+Click **Run once**.
+
+![WF Fusion](./images/wffusion88.png)
+
+You should then get a response which contains the field **status**, with status set to **running**. It takes a couple of seconds for Photoshop to complete the proces.
+
+![WF Fusion](./images/wffusion89.png)
+
+Now that you know the response needs a bit more time to be finished, it may be a good idea to add a timer in front of this HTTP request so that it doesn't run immediately.
+
+Click the **Tools** node and then select **Sleep**.
+
+![WF Fusion](./images/wffusion90.png)
+
+Position the **Sleep** node in between **Set multiple variables** and **Photoshop Check Status**. Set the **Delay** to **5** seconds. Click **OK**.
+
+![WF Fusion](./images/wffusion91.png)
+
+You'll then have this. The challenge with the below configuration is that 5 seconds of waiting may be enough, but maybe it isn't enough. In reality, it would be better to have a more intelligent solution like a do...while loop that checks the status every 5 seconds until the status equals **succeeded**. You will now implement such a tactic in the next steps.
+
+![WF Fusion](./images/wffusion92.png)
+
+Click the **wrench** icon in between **Set multiple variables** and **Sleep**. Select **Add module**.
+
+![WF Fusion](./images/wffusion93.png)
+
+Search for `flow` and then select **Flow Control**.
+
+![WF Fusion](./images/wffusion94.png)
+
+Select **Repeater**.
+
+![WF Fusion](./images/wffusion95.png)
+
+Set the **Repeats** to **20**. Click **OK**.
+
+![WF Fusion](./images/wffusion96.png)
+
+Next, click **+** on the **Photoshop Check Status** to add another module.
+
+![WF Fusion](./images/wffusion97.png)
+
+Search for **flow** and select **Flow Control**.
+
+![WF Fusion](./images/wffusion98.png)
+
+Select **Array Aggregator**.
+
+![WF Fusion](./images/wffusion99.png)
+
+Set **Source Module** to **Repeater**. CLick **OK**.
+
+![WF Fusion](./images/wffusion100.png)
+
+You should then have this:
+
+![WF Fusion](./images/wffusion101.png)
+
+Click the **wrench** icon and select **Add a module**.
+
+![WF Fusion](./images/wffusion102.png)
+
+Search for **tools** and select **Tools**.
+
+![WF Fusion](./images/wffusion103.png)
+
+Select **Get multiple variables**.
+
+![WF Fusion](./images/wffusion104.png)
+
+Click **+ Add item** and set the **Variable name** to `done`.
+
+![WF Fusion](./images/wffusion105.png)
+
+Click **OK**.
+
+![WF Fusion](./images/wffusion106.png)
+
+Click the **Set multiple variables** node that you configured before. In order to initialize the variable **done**, you need to set it to `false` here. Clik **+ Add item**.
+
+![WF Fusion](./images/wffusion107.png)
+
+For the **Variable name**, use `done`. To set the status, a boolean value is needed. To find the boolean value, click the **gear** icon and then select `false`. Click **Add**.
+
+![WF Fusion](./images/wffusion108.png)
+
+Click **OK**.
+
+![WF Fusion](./images/wffusion109.png)
+
+Next, click the **wrench** icon after the **Get multiple variables** node that you configured.
+
+![WF Fusion](./images/wffusion110.png)
+
+Select **Set up a filter**. You now need to check the value of the variable **done**. If that value is set to **false**, then the next part of the loop has to be executed. If the value is set to **true**, it means that the process has already successfully completed so there's no need to continue with the next part of the loop.
+
+![WF Fusion](./images/wffusion111.png)
+
+For the label, use **Are we done?**. Set the **Condition** using the already existing variable **done**, the operator should be set to **Equal to** and the value should be the boolean variable `false`. Click **OK**.
+
+![WF Fusion](./images/wffusion112.png)
+
+Next, make some room between the nodes **Photoshop Check Status** and **Array aggregator**. Then, click the **wrench** icon and select **Add a router**. You're doing this because after checking the status of the Photoshop file, there should be 2 paths. If the status is `succeeded`, then the variable of **done** should be set to `true`. If the status is not equal to `succeeded`, then the loop should continue. The router will make it possible to check and set this.
+
+![WF Fusion](./images/wffusion113.png)
+
+After adding the router, click the **wrench** icon and select **Set up a filter**.
+
+![WF Fusion](./images/wffusion114.png)
+
+For the label, use **We are done**. Set the **Condition** using the response from the **Photoshop Check Status** node by choosing the resposne field **data.outputs[].status**, the operator should be set to **Equal to** and the value should be `succeeded`. Click **OK**.
+
+![WF Fusion](./images/wffusion115.png)
+
+Next, click the empty node with the question mark and search for **tools**. Then, select **Tools**.
+
+![WF Fusion](./images/wffusion116.png)
+
+Select **Set multiple variables**.
+
+![WF Fusion](./images/wffusion117.png)
+
+When this branch of the router is used, it means the status of the Photoshop file creation has successfully completed. This means that the do...while loop no longer need to continue checking the status in Photoshop, so you should set the variable `done` to `true`.
+
+For the **Variable name**, use `done`. For the **Variable value**, you shoudl use the boolean value `true`. Click the **gear** icon and then select `true`. Click **Add**.
+
+![WF Fusion](./images/wffusion118.png)
+
+Click **OK**.
+
+![WF Fusion](./images/wffusion119.png)
+
+Next, right-click the **Set multiple variables** node you just created and select **Clone**.
+
+![WF Fusion](./images/wffusion120.png)
+
+Drag the cloned node so that it connects with the **Array aggregator**. Then, right-click the node and select **Rename**, and change the name to `Placeholder End`.
+
+![WF Fusion](./images/wffusion122.png)
+
+Remove the existing variable and click **+ Add Item**. For the **Variable name**, use `placeholder`, for the **Variable value**, use `end`. Click **Add** and then click **OK**.
+
+![WF Fusion](./images/wffusion123.png)
+
+Click **Save** to save your scenario. Next, click **Run once**.
+
+![WF Fusion](./images/wffusion124.png)
+
+Your scneario will then be executed and should finish successfully. You'll notice that the do...while loop that you configured worked fine. In the below run, you can see that the **Repeater** ran 20 times based on the bubble on the **Tools > Get multiple variables** node. After that node, you configured a filter that checked the status and only if the status was not equal to **succeeded**, the next nodes were executed. In this run, the part after the filter only ran once, because the status was already **succeeded** in the first run.
+
+![WF Fusion](./images/wffusion125.png)
+
+You can verify the status of the creation of your new Photoshop file by clicking the bubble on the **Photoshop Check Status** HTTP request and drilling down to the **status** field.
+
+![WF Fusion](./images/wffusion126.png)
+
+You've now configured the basic version of a repeatable scenario that automates a number of steps. In the next exercise, you'll iterate on that by adding complexity.
+
+Next Step: [1.2.3 Process automation with Workfront Fusion](./ex3.md)
 
 [Go Back to Module 1.2](./automation.md)
 
