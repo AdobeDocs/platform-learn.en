@@ -14,9 +14,7 @@ Congratulations and thank you for investing your time in learning about Adobe Ex
 Let's highlight the benefits of the data ingestion capabilities of Federated Audience Composition in Adobe Experience Platform :
 
 
-
 ## Check this out
-
 
 [Go Back to Module 1.3](./fac.md)
 
