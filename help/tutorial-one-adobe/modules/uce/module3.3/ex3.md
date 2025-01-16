@@ -8,7 +8,7 @@ doc-type: tutorial
 
 ## 3.3.3.1 Update your Datastream
 
-In [Getting Started](./../../../modules/gettingstarted/gettingstarted/ex2.md), you created your own **Datastream**. You then used the name `--aepUserLdap-- - Demo System Datastream`.
+In [Getting Started](./../../../modules/getting-started/gettingstarted/ex2.md), you created your own **Datastream**. You then used the name `--aepUserLdap-- - Demo System Datastream`.
 
 In this exercise, you need to configure that **Datastream** to work with **Offer Decisioning**.
 

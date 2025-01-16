@@ -50,8 +50,6 @@ You'll now see this.
 
 ![Name the Edge Configuration and save](./images/edgeconfig5.png)
 
-That's it for now. In [Module 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) you'll learn more about Web SDK and how to configure all of its capabilities.
-
 In the left menu, clik **[!UICONTROL Tags]**.
 
 Filter the search results to see your two Data Collection properties. Open the property for **Web** by clicking it.
