@@ -9,7 +9,7 @@ Below is an overview of the status of the content in this tutorial.
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
-| [0. Getting started](./modules/gettingstarted/gettingstarted/getting-started.md) | 14/11/2024  | Yes         | - |
+| [0. Getting started](./modules/getting-started/gettingstarted/getting-started.md) | 14/11/2024  | Yes         | - |
 | [1.1 Adobe Firefly Services](./modules/creative-cloud/module1.1/firefly-services.md) | 16/01/2025  | Yes         | - |
 | [1.2 Creative Workflow Automation with Workfront Fusion](./modules/creative-cloud/module1.2/automation.md) | 16/01/2025  | Yes         | - |
 | [2.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/csc/module2.1/aemcs.md) | 16/01/2025  | Yes         | - |
