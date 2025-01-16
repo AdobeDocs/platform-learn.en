@@ -1,10 +1,11 @@
 ---
-title: Planning - Migrate Target in mobile apps from the Target extension to the Optimize extension
+title: Planning - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to plan for your Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK.
+exl-id: 50eefe2d-ba20-45d5-8674-c4f5d035a9eb
 ---
-# Plan the Target migration to the Optimize extension
+# Plan the Target migration to the Decisioning extension
 
-Before upgrading Target from the Target extension to the Optimize extension in your mobile app, you should assess your current implementation.
+Before upgrading Target from the Target extension to the Decisioning extension in your mobile app, you should assess your current implementation.
 
 ## Assess current Target extension implementation
 
@@ -44,8 +45,8 @@ As you migrate, you should plan on following your company's process for testing 
 -->
 
 
-Next, review the detailed [comparison of the Target extension and the Optimize extension](detailed-comparison.md) to gain a better understanding of the technical differences and identify areas requiring additional focus. 
+Next, review the detailed [comparison of the Target extension and the Decisioning extension](detailed-comparison.md) to gain a better understanding of the technical differences and identify areas requiring additional focus. 
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Optimize extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

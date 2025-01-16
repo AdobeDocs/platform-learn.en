@@ -3,6 +3,7 @@ title: Real-time CDP - Build an audience and take action - Send your audience to
 description: Real-time CDP - Build an audience and take action - Send your audience to an S3-destination
 kt: 5342
 doc-type: tutorial
+exl-id: 656fc93c-74ff-4d8f-8674-6520d2a70b86
 ---
 # 2.3.4 Take Action: send your audience to an S3-destination
 

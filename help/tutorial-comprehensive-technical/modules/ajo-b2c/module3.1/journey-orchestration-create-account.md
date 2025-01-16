@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer
 description: Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
+exl-id: 73812caa-29a1-4931-944d-9651c6de2c19
 ---
 # 3.1 Adobe Journey Optimizer: Orchestration
 

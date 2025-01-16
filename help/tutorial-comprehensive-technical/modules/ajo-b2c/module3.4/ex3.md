@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - Apply personalization in an email message
 description: This exercise explains how to use segment personalization within an email content
 kt: 5342
 doc-type: tutorial
+exl-id: bb5f8130-0237-4381-bc1e-f6b62950b1fc
 ---
 # 3.4.3 Apply segment-based personalization in an email message
 

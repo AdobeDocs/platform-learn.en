@@ -1,8 +1,9 @@
 ---
-title: Replace the library - Migrate Target from at.js 2.x to Web SDK
-description: Learn how to migrate an Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK. Topics include library overview, implementation differences, and other noteworthy callouts.
+title: Replace the SDK - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
+description: Learn how to replace the SDK when migrating from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension.
+exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
 ---
-# Replace the at.js library with Platform Web SDK
+# Replace the Target SDK with the Optimize SDK
 
 Learn how to replace your on-page Adobe Target implementation to migrate from at.js to Platform Web SDK. A basic replacement consists of the following steps:
 
@@ -393,4 +394,4 @@ Next, learn how to [request and apply Form-based activities](render-activities.m
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Optimize extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

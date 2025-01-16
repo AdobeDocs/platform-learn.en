@@ -1,8 +1,9 @@
 ---
-title: Send parameters - Migrate Target from at.js 2.x to Web SDK
+title: Send parameters - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to send mbox, profile, and entity parameters to Adobe Target using Experience Platform Web SDK.
+exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
 ---
-# Send parameters to Target using Platform Web SDK
+# Send parameters to Target using the Adobe Journey Optimizer - Decisioning Mobile extension
 
 Target implementations differ across websites due to site architecture, business requirements, and features used. Most Target implementations include passing various parameters for contextual information, audiences, and content recommendations.  
 
@@ -47,7 +48,7 @@ Entity parameters for a specific item must be prefixed with `entity.` for proper
 
 ## Purchase parameters
 
-Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Mobile SDK implementation using the Optimize extension, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Mobile SDK implementation using the Decisioning extension, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
 
 
 Purchase information is passed to Target when the `commerce` field group has `purchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
@@ -63,4 +64,4 @@ Next, learn how to [track Target conversion events](track-events.md) with the Pl
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Optimize extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

@@ -3,6 +3,7 @@ title: Query Service - Explore the dataset with Power BI
 description: Query Service - Explore the dataset with Power BI
 kt: 5342
 doc-type: tutorial
+exl-id: c27abd0e-e563-4702-a243-1aec84ce6116
 ---
 # 5.1.6 Query Service and Power BI
 

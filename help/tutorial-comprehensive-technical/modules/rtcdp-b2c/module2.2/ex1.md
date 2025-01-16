@@ -3,6 +3,7 @@ title: Intelligent Services - Customer AI Data Preparation (Ingest)
 description: Customer AI - Data Preparation (Ingest)
 kt: 5342
 doc-type: tutorial
+exl-id: 71405859-cfc6-4991-a0b0-11c94818a0fa
 ---
 # 2.2.1 Customer AI - Data Preparation (Ingest)
 

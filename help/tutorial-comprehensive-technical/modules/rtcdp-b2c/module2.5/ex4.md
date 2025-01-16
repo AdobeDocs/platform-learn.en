@@ -3,6 +3,7 @@ title: Data Collection & Real-time Server Side Forwarding - Create and configure
 description: Create and configure a Google Cloud Function
 kt: 5342
 doc-type: tutorial
+exl-id: ee73ce3a-baaa-432a-9626-249be9aaeff2
 ---
 # 2.5.4 Forward events to GCP Pub/Sub
 
@@ -223,3 +224,4 @@ Next Step: [2.5.5 Forward events to AWS Kinesis & AWS S3](./ex5.md)
 [Go Back to Module 2.5](./aep-data-collection-ssf.md)
 
 [Go Back to All Modules](./../../../overview.md)
+

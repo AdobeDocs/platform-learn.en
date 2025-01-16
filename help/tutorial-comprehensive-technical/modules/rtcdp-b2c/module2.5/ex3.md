@@ -3,6 +3,7 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: Create and configure a custom webhook
 kt: 5342
 doc-type: tutorial
+exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
 ---
 # 2.5.3 Create and configure a custom webhook
 

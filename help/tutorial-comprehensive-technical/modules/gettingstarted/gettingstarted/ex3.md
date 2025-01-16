@@ -3,6 +3,7 @@ title: Getting Started - Create your Datastream
 description: Getting Started - Create your Datastream
 kt: 5342
 doc-type: tutorial
+exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
 ---
 # Create your Datastream
 

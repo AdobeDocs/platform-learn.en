@@ -3,6 +3,7 @@ title: Optimize your Firefly process using Microsoft Azure and presigned URLs
 description: Optimize your Firefly process using Microsoft Azure and presigned URLs
 kt: 5342
 doc-type: tutorial
+exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
 ---
 # 1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs
 

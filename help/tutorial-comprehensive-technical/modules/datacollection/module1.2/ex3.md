@@ -3,6 +3,7 @@ title: Foundation - Data Ingestion - Configure Datasets
 description: Foundation - Data Ingestion - Configure Datasets
 kt: 5342
 doc-type: tutorial
+exl-id: 94ef3e17-af28-4549-8a08-91b129ff4c93
 ---
 # 1.2.3 Configure Datasets
 

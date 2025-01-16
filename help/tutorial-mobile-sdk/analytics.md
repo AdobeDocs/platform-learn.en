@@ -301,6 +301,17 @@ Additional information about processing rules and context data can be found [her
 >
 >Unlike previous mobile app implementations, there is no distinction between a page / screen views and other events. Instead you can increment the **[!UICONTROL Page View]** metric by setting the **[!UICONTROL Page Name]** dimension in a processing rule. Since you are collecting the custom `screenName` field in the tutorial, it is highly recommended to map screen name to **[!UICONTROL Page Name]** in a processing rule.
 
+## Migrate from Analytics mobile extension
+
+If you have developed your mobile application using the [Adobe Analytics mobile extension](https://developer.adobe.com/client-sdks/solution/adobe-analytics/#add-analytics-to-your-application) you have most likely used [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API calls. 
+
+If you decide to migrate to use the recommended Edge Network, you do have options:
+
+* Implement the [Edge Network extension](configure-tags.md#extension-configuration) and use the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent) APIs, as illustrated in the lesson on how to [Track event data](events.md). This tutorial focuses on this implementation.
+* Implement the [Edge Bridge extension](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension), and keep using your [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/home/base/mobile-core/api-reference/#trackstate) API calls. See [Implement the Edge Bridge extension](https://developer.adobe.com/client-sdks/solution/adobe-analytics/migrate-to-edge-network/#implement-the-edge-bridge-extension) for more details and a separate tutorial.
+
+
+
 
 >[!SUCCESS]
 >

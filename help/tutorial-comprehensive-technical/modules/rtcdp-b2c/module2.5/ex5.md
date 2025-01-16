@@ -3,6 +3,7 @@ title: Data Collection & Event Forwarding - Forward events towards the AWS ecosy
 description: Forward events towards the AWS ecosystem
 kt: 5342
 doc-type: tutorial
+exl-id: 87c2c85d-f624-4972-a9c6-32ddf8a39570
 ---
 # 2.5.5 Forward events to AWS Kinesis & AWS S3
 
@@ -16,7 +17,7 @@ Adobe Experience Platform supports various Amazon services as destination.
 Kinesis and  S3 are both [profile export destinations](https://experienceleague.adobe.com/docs/experience-platform/destinations/destination-types.html?lang=en) and can be used as part of Adobe Experience Platform's Real-Time CDP.
 You can easily feed high-value segment events and associated profile attributes into your systems of choice.
 
-In this exercise, you’ll learn how to setup your own Amazon Kinesis stream to stream event data coming from the Adobe Experience Platform Edge ecosystem to a cloud storage destination, such as Amazon S3. This is useful in case you'd like to collect experience events from web and mobile properties and push them into your datalake for analysis and operational reporting. Datalakes generally ingest data in a batch fashion with large daily file imports, they do not expose public http endpoint which could be used in conjunction with event forwarding.
+In this exercise, you'll learn how to setup your own Amazon Kinesis stream to stream event data coming from the Adobe Experience Platform Edge ecosystem to a cloud storage destination, such as Amazon S3. This is useful in case you'd like to collect experience events from web and mobile properties and push them into your datalake for analysis and operational reporting. Datalakes generally ingest data in a batch fashion with large daily file imports, they do not expose public http endpoint which could be used in conjunction with event forwarding.
 
 Supporting the above use cases implies that streamed data need to be buffered or placed in a queue before being written to a file. Care has to be taken to not open file for write access across multiple process. Delegating this task to dedicated system is ideal to scale nicely while ensuring a great level of service, this is where Kinesis comes to the rescue.
 
@@ -341,3 +342,4 @@ Next Step: [Summary and benefits](./summary.md)
 [Go Back to Module 2.5](./aep-data-collection-ssf.md)
 
 [Go Back to All Modules](./../../../overview.md)
+

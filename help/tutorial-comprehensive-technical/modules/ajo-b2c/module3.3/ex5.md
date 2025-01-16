@@ -3,6 +3,7 @@ title: Offer Decisioning - Use your decision in an email
 description: Use your decision in an email
 kt: 5342
 doc-type: tutorial
+exl-id: 7eddb239-2666-485a-b81a-1f7e6f3aeed2
 ---
 # 3.3.5 Use your decision in an email
 
