@@ -1,22 +1,22 @@
 ---
-title: 3.1 Adobe Real-Time CDP
-description: Adobe Real-Time CDP 
+title: Adobe Journey Optimizer Translation Services
+description: Adobe Journey Optimizer Translation Services
 kt: 5342
 doc-type: tutorial
 ---
-# 3.1 Adobe Real-Time CDP
+# 3.2 Adobe Journey Optimizer Translation Services 
 
 ## Learning Objectives
 
-- Learn how to use Adobe Real-Time CDP in various ways.
+- Learn how to configure and use Adobe Journey Optimizer Translation Services.
 
 ## Prerequisites
 
-- Access to Adobe Real-Time CDP
+- Access to Adobe Journey Optimizer
 
 ## Exercises
 
-[3.1.1 Real-Time CDP](./ex1.md)
+[3.2.1 ...](./ex1.md)
 
 In this exercise, ...
 

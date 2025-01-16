@@ -76,3 +76,11 @@ In this foundational module, you will configure and use Adobe Workfront to manag
 [3.1 Federated Audience Composition](./modules/uce/module3.1/fac.md)
 
 In this foundational module, you will learn about Adobe Experience Platform Data Collection and the new Web SDK extension.
+
+[3.2 Adobe Journey Optimizer: Translation Services](./modules/uce/module3.2/ajotranslationsvcs.md)
+
+In this module, you'll use Adobe Journey Optimizer to set up and use Translation Services.
+
+[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/uce/module3.3/offer-decisioning.md)
+
+In this module, you'll use Adobe Journey Optimizer with offer decisioning services in a hands-on way to configure Personalized Offers and your own decision.
