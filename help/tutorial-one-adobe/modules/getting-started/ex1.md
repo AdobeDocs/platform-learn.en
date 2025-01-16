@@ -6,7 +6,4 @@ doc-type: tutorial
 ---
 # Ex1
 
-
-# Ex1
-
 [Go Back to All Modules](./../../overview.md)
