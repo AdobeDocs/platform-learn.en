@@ -20,7 +20,7 @@ doc-type: tutorial
 
 In this exercise, explore Firefly Services and get an understanding of its capabilities.
 
-[1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs](./ex2.md)
+[1.1.2 Optimize your Firefly processes with Microsoft Azure and presigned URLs](./ex2.md)
 
 In this exercise, explore Firefly Services and get an understanding of its capabilities.
 

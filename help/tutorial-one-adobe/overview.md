@@ -25,6 +25,7 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 - Google Cloud Platform
 - Microsoft Azure 
 - Postman
+- Snowflake
 - ...
 
 After completing the exercises in this tutorial, you will be able to:
@@ -48,7 +49,11 @@ If you want to take this tutorial using your own Adobe Experience Cloud instance
 
 [1.1 Adobe Firefly Services](./modules/creative-cloud/module1.1/firefly-services.md)
 
-In this foundational module, you will use Adobe Firefly to ...
+In this module, you will use Adobe Firefly Services APIs, Photoshop APIs and Microsoft Azure Storage Services to generate images and store them programmatically.
+
+[1.2 Creative Workflow Automation with Workfront Fusion](./modules/creative-cloud/module1.2/automation.md)
+
+In this foundational module, you will use Adobe Workfront Fusion to automate and scale your content creation workflows.
 
 ### 2. Content Supply Chain
 

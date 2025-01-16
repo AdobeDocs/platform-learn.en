@@ -16,10 +16,10 @@ recommendations: noDisplay,noCatalog
   + 1.1 Adobe Firefly Services {#module11}
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
     + [1.1.1 Getting Started with Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
-    + [1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
+    + [1.1.2 Optimize your Firefly processes with Microsoft Azure and presigned URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
     + [1.1.3 Adobe Firefly & Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
-  + 1.2 Automating Adobe Firefly Services {#module21}  
+  + 1.2 Creative Workflow Automation with Workfront Fusion {#module21}  
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
     + [1.2.1 Getting Started with Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex1.md)
     + [1.2.2 Use Adobe APIs within Workfront Fusion](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/ex2.md)
