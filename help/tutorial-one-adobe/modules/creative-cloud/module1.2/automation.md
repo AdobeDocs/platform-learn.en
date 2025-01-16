@@ -1,11 +1,11 @@
 ---
-title: 1.1 Adobe Firefly Services
-description: Adobe Firefly Services
+title: Creative Workflow Automation with Workfront Fusion
+description: Creative Workflow Automation with Workfront Fusion
 kt: 5342
 doc-type: tutorial
 exl-id: 05cd8991-f77b-43c9-af1d-fcdc1f0fab4d
 ---
-# 1.2 Automating Adobe Firefly Services
+# 1.2 Creative Workflow Automation with Workfront Fusion
 
 ## Learning Objectives
 
