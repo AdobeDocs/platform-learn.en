@@ -1,6 +1,6 @@
 ---
-title: Getting Started with Firefly Services
-description: Getting Started with Firefly Services
+title: Use Adobe APIs within Workfront Fusion
+description: Use Adobe APIs within Workfront Fusion
 kt: 5342
 doc-type: tutorial
 ---

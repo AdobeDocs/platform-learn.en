@@ -1,10 +1,10 @@
 ---
-title: Getting Started with Firefly Services
-description: Getting Started with Firefly Services
+title: Working with Photoshop APIs
+description: Working with Photoshop APIs
 kt: 5342
 doc-type: tutorial
 ---
-# 1.1.3 Adobe Firefly & Adobe Photoshop
+# 1.1.3 Working with Photoshop APIs
 
 ## 1.1.3.1 Update your Adobe I/O integration
 
@@ -66,6 +66,8 @@ You then have a valid access token to interact with Photoshop APIs.
 
 ![Azure Storage](./images/ps9.png)
 
+### 1.1.3.2.1 Photoshop API - Hello World
+
 Next, let's say hello to Photoshop APIs to test if all permissions and access is set correctly. In the collection **Photoshop**, open the request with the name **Photoshop Hello (Test Auth.)**. Click **Send**.
 
 ![Azure Storage](./images/ps10.png)
@@ -75,6 +77,8 @@ You should then receive this response: **Welcome to the Photoshop API!**.
 ![Azure Storage](./images/ps11.png)
 
 Next, in order to programmatically interact with the PSD file **citisignal-fiber.psd**, you need to upload it to your storage account. You could do that manually, by dragging and dropping it into your container using Azure Storage explorer, but this time, you should do it through the API.
+
+### 1.1.3.2.2 Upload PSD to Azure
 
 In Postman, open the request **Upload PSD to Azure Storage Account**. In the previous exercise, you configured these environment variables in Postman, which you'll now use:
 
@@ -102,6 +106,8 @@ You should then get this empty response back from Azure, which means that your f
 If you use Azure Storage Explorer to have a look, you'll see your file after refreshing your folder.
 
 ![Azure Storage](./images/ps16.png)
+
+### 1.1.3.2.3 Photoshop API - Get Manifest
 
 Next, you need to get the manifest file of your PSD file. In Postman, open the request **Photoshop - Get PSD Manifest**. Go to **Body**.
 
@@ -148,6 +154,8 @@ When the response is available, you'll the a json file that contains information
 As an example, search for the text `2048x2048-cta`. You should then see this.
 
 ![Azure Storage](./images/ps21.png)
+
+### 1.1.3.2.4 Photoshop API - Change Text 
 
 Next, you now need to change the text for the call to action using the APIs. In Postman, open the request **Photoshop - Change Text** and go to **Body**.
 

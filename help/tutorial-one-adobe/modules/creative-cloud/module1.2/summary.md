@@ -10,11 +10,9 @@ Congratulations and thank you for investing your time in learning about Adobe ap
 
 ## Benefits
 
-Let's highlight the benefits of using Firefly Services...
-
+Let's highlight the benefits of using Workfront Fusion.
 
 ## Check this out
-
 
 [Go Back to Module 1.2](./automation.md)
 

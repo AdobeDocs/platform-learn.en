@@ -1,10 +1,10 @@
 ---
-title: 2.1 Adobe Experience Manager Cloud Service 
-description: Adobe Experience Manager Cloud Service 
+title: Adobe Experience Manager Cloud Service & Edge Delivery Services
+description: Adobe Experience Manager Cloud Service & Edge Delivery Services
 kt: 5342
 doc-type: tutorial
 ---
-# 2.1 Adobe Experience Manager Cloud Service 
+# 2.1 Adobe Experience Manager Cloud Service & Edge Delivery Services
 
 ## Learning Objectives
 

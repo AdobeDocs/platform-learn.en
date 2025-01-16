@@ -1,6 +1,6 @@
 ---
-title: Getting Started with Firefly Services
-description: Getting Started with Firefly Services
+title: Optimize your Firefly process using Microsoft Azure and presigned URLs
+description: Optimize your Firefly process using Microsoft Azure and presigned URLs
 kt: 5342
 doc-type: tutorial
 ---

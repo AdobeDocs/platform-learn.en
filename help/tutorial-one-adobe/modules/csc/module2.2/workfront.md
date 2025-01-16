@@ -1,10 +1,10 @@
 ---
-title: 2.2 Workfront
-description: 2.2 Workfront
+title: Workflow Management with Adobe Workfront
+description: Workflow Management with Adobe Workfront
 kt: 5342
 doc-type: tutorial
 ---
-# 2.2 Workfront
+# 2.2 Workflow Management with Adobe Workfront
 
 ## Learning Objectives
 

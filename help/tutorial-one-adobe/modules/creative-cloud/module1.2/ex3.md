@@ -1,6 +1,6 @@
 ---
-title: Getting Started with Firefly Services
-description: Getting Started with Firefly Services
+title: Process automation with Workfront Fusion
+description: Process automation with Workfront Fusion
 kt: 5342
 doc-type: tutorial
 ---
@@ -155,10 +155,9 @@ Your scenario will then run again, and create the 2 files just like before.
 
 ![WF Fusion](./images/wffusion232.png)
 
-Before continuing, change the name of your Postman request to `POST - Send Request to Workfront Fusion Webhook`.
+Lastly, change the name of your Postman request to `POST - Send Request to Workfront Fusion Webhook`.
 
 ![WF Fusion](./images/wffusion233.png)
-
 
 Next Step: [Summary & Benefits](./summary.md)
 

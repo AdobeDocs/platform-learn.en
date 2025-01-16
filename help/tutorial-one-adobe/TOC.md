@@ -11,7 +11,14 @@ recommendations: noDisplay,noCatalog
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
 
 + Getting started {#gettingstarted}
-  + [Getting started](/help/tutorial-one-adobe/modules/getting-started/getting-started.md)
+  + Getting started {#gettingstarted}
+    + [Overview](/help/tutorial-comprehensive-technical/modules/getting-started/gettingstarted/getting-started.md)
+    + [Install the Chrome extension for the Experience League documentation](/help/tutorial-comprehensive-technical/modules/getting-started/gettingstarted/ex1.md)
+    + [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-comprehensive-technical/modules/gettingstarted/getting-started/ex2.md)
+    + [Create your Datastream](/help/tutorial-comprehensive-technical/modules/getting-started/gettingstarted/ex3.md)
+    + [Use the website](/help/tutorial-comprehensive-technical/modules/getting-started/gettingstarted/ex4.md)
+    + [Use the mobile app](/help/tutorial-comprehensive-technical/modules/getting-started/gettingstarted/ex5.md)
+
 + 1 Adobe Creative Cloud {#creativecloud}
   + 1.1 Adobe Firefly Services {#module11}
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)

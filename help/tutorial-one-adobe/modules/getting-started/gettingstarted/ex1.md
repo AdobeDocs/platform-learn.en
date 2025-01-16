@@ -1,29 +1,21 @@
 ---
-title: 1.1 Adobe Firefly Services
-description: Adobe Firefly Services
+title: Getting Started - Install the Chrome extension for the Experience League documentation
+description: Getting Started - Install the Chrome extension for the Experience League documentation
 kt: 5342
 doc-type: tutorial
 ---
-# Getting Started
+# Install the Chrome extension for the Experience League documentation
 
-You need to have the following applications installed on your computer prior to taking this tutorial:
+## About the Chrome extension
 
-- Adobe Creative Cloud
-- Photoshop 2025
-- Postman
-
-## 1. Install the Chrome extension for the Experience League documentation
-
-### About the Chrome extension
-
-The documentation has been made generic so that it can easily be reused by anyone, using any Adobe instance. 
+The documentation has been made generic so that it can easily be reused by anyone, using any Adobe Experience Platform instance. 
 In order to make the documentation reusable, **Environment Variables** were introduced in the documentation, which means that you'll find the below **placeholders** in the documentation. Every placeholder is a specific variable for a specific environment, and the Chrome extension will change that variable for you to make it easy for you to copy code and text from the tutorial pages and paste it in the various user interfaces that you'll be using as part of the tutorial.
 
 An example of such values can be found below. Currently, these values can't be used yet but as soon as you install and activate the Chrome extension, you'll see these variables change into normal text that you can copy and reuse.
 
 | Name     | Key | 
 |:-------------:| :---------------:|
-| IMS Org ID         | `--aepImsOrgId--` |
+| AEP IMS Org ID         | `--aepImsOrgId--` |
 | AEP Tenant ID         | `--aepTenantId--` |
 | AEP Sandbox Name         | `--aepSandboxName--` | 
 | Learner Profile LDAP        | `--aepUserLdap--` | 
@@ -36,7 +28,7 @@ Once the extension is installed, that same text will be changed automatically to
 
 ![DSN](./images/mod7.png)
 
-### Install the Chrome extension
+## Install the Chrome extension
 
 To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). You'll then see this. 
 
@@ -56,7 +48,7 @@ In the **extensions** menu, click the **puzzle piece** icon and pin the **Platfo
 
 ![DSN](./images/c6.png)
 
-### Configure the Chrome extension
+## Configure the Chrome extension
 
 Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) and then click the extension icon to open it.
 
@@ -134,7 +126,7 @@ After activating your configuration, you'll see a green dot next to the initials
 
 ![DSN](./images/c10.png)
 
-### Verify tutorial content
+## Verify tutorial content
 
 As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
 
@@ -144,9 +136,8 @@ You should now have a similar view to the below, where the environment variable 
 
 ![DSN](./images/mod7.png)
 
+Next Step: [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
 
->[!NOTE]
->
->Thank you for investing your time in learning all there is to know about Adobe Experience Platform and its applications. If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
+[Go Back to Getting Started](./getting-started.md)
 
-[Go Back to All Modules](../../overview.md)
+[Go Back to All Modules](./../../../overview.md)

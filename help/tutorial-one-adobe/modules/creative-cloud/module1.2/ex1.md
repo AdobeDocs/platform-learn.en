@@ -1,6 +1,6 @@
 ---
-title: Getting Started with Firefly Services
-description: Getting Started with Firefly Services
+title: Getting started with Workfront Fusion
+description: Getting started with Workfront Fusion
 kt: 5342
 doc-type: tutorial
 ---
