@@ -3,6 +3,7 @@ title: Customer Journey Analytics - Connect Adobe Experience Platform Datasets i
 description: Customer Journey Analytics - Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 kt: 5342
 doc-type: tutorial
+exl-id: 96e7a5b2-9833-430a-8eab-27651a113675
 ---
 # 4.1.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 

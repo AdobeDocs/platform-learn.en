@@ -3,6 +3,7 @@ title: Audience Activation to Microsoft Azure Event Hub - Define an Azure Functi
 description: Audience Activation to Microsoft Azure Event Hub - Define an Azure Function
 kt: 5342
 doc-type: tutorial
+exl-id: c39fea54-98ec-45c3-a502-bcf518e6fd06
 ---
 # 2.4.6 Create your Microsoft Azure Project
 

@@ -3,6 +3,7 @@ title: Foundation - Real-time Customer Profile - Create an audience - UI
 description: Foundation - Real-time Customer Profile - Create an audience - UI
 kt: 5342
 doc-type: tutorial
+exl-id: db1d744d-c4ff-4131-b104-98bb70269140
 ---
 # 2.1.4 Create an audience - UI
 

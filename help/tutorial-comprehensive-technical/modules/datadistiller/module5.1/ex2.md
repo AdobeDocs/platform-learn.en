@@ -3,6 +3,7 @@ title: Query Service - Getting Started
 description: Query Service - Getting Started
 kt: 5342
 doc-type: tutorial
+exl-id: 5c4615c6-41c0-465a-b9b6-f59eef388c73
 ---
 # 5.1.2 Getting Started
 

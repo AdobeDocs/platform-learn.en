@@ -1,8 +1,9 @@
 ---
-title: Update audiences and profile scripts - Migrate Target from at.js 2.x to Web SDK
+title: Update audiences and profile scripts - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
 description: Learn how to update Adobe Target audiences and profile scripts for compatibility with Experience Platform Web SDK.
+exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
 ---
-# Update Target audiences and profile scripts for Platform Web SDK compatibility
+# Update Target audiences and profile scripts for Adobe Journey Optimizer - Decisioning Mobile extension compatibility
 
 
 ## Adjust audiences
@@ -20,4 +21,4 @@ Next, learn how to [validate the Target implementation](validate.md).
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Optimize extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

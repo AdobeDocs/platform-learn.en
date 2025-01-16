@@ -3,6 +3,7 @@ title: Real-time CDP - External Audiences
 description: Real-time CDP - External Audiences
 kt: 5342
 doc-type: tutorial
+exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
 ---
 # 2.3.6 External Audiences
 

@@ -3,6 +3,7 @@ title: Real-time CDP - Build a segment and take action - Summary
 description: Real-time CDP - Build a segment and take action - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: 81638db0-3356-482a-b011-98eed9ea4fe3
 ---
 # Summary & benefits
 

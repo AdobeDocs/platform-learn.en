@@ -3,6 +3,7 @@ title: Data Collection - FAC - Setup your Snowflake account
 description: Foundation - FAC - Setup your Snowflake account
 kt: 5342
 doc-type: tutorial
+exl-id: e72cdbfc-5b42-411f-9c63-e886776deabe
 ---
 # 3.1.1 Setup your Snowflake environment
 

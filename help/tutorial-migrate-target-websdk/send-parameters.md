@@ -300,7 +300,7 @@ targetPageParams = function() {
 
 Purchase information is passed to Target when the `commerce` field group has `purchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
 
-Platform Web SDK examples using `sendEvent` command:
+Platform Web SDK example using `sendEvent`:
 
 >[!BEGINTABS]
 
@@ -322,14 +322,24 @@ alloy("sendEvent", {
       "SKU": "SKU-00002"
     }, {
       "SKU": "SKU-00003"
-    }]
+    }],
+      "_experience": {
+          "decisioning": {
+              "propositions": [{
+                  "scope": "<your_mbox>"
+              }],
+              "propositionEventType": {
+                  "display": 1
+              }
+          }
+      }
   }
 });
 ```
 
 >[!TAB Tags]
 
-In tags, first use an [!UICONTROL XDM object] data element to map to the XDM fields:
+In tags, first use an [!UICONTROL XDM object] data element to map to the required XDM fields (see the JavaScript example) and optional custom scope:
 
 ![Mapping to an XDM field in an XDM Object data element](assets/params-tags-purchase.png){zoomable="yes"}
 
@@ -339,6 +349,13 @@ And then include your [!UICONTROL XDM object] in your [!UICONTROL Send event] [!
 
 >[!ENDTABS]
 
+>[!IMPORTANT]
+>
+> `_experience.decisioning.propositionEventType` must be set with `display: 1` in order for the call to be used to increment a Target metric.
+
+>[!NOTE]
+>
+> If you wish to use a custom location/mbox name in your Target metric definition, for example `orderConfirmPage`, populate the `_experience.decisioning.propositions` array with a custom scope like in the example above.
 
 >[!NOTE]
 >
@@ -349,7 +366,7 @@ And then include your [!UICONTROL XDM object] in your [!UICONTROL Send event] [!
 
 Target allows profile synching across devices and systems using a single customer Id. With at.js, this could be set as the `mbox3rdPartyId` in the Target request or as the first customer id sent to the Experience Cloud Identity Service. Unlike with at.js, a Platform Web SDK implementation allows you to specify which customer ID to use as the `mbox3rdPartyId` if there are multiple. For example, if your business has a global customer ID and separate customer IDs for different lines of business, you can configure which ID Target should use.
 
-There are a few steps to set up ID synching for Target cross-device and Customer Attributes use cases:
+There are a few steps to set up ID synching for cross-device and Customer Attributes use cases:
 
 1. Create an **[!UICONTROL identity namespace]** for the customer ID in **[!UICONTROL Identities]** screen of Data Collection or Platform
 1. Make sure that the **[!UICONTROL alias]** in Customer Attributes matches the **[!UICONTROL identity symbol]** of your namespace
@@ -378,7 +395,8 @@ alloy("sendEvent", {
     "identityMap": {
       "GLOBAL_CUSTOMER_ID": [{
         "id": "TT8675309",
-        "authenticatedState": "authenticated"
+        "authenticatedState": "authenticated",
+        "primary": true
       }]
     }
   }
@@ -401,6 +419,12 @@ In your datastream's Adobe Target service, be sure to set the [!UICONTROL Target
 ![Set the Target Third Party ID Namespace in the datastream](assets/params-tags-customerIdNamespaceInDatastream.png){zoomable="yes"}
 
 >[!ENDTABS]
+
+>[!NOTE]
+>
+> Adobe recommends sending namespaces which represent a person, such as authenticated identities, as the primary identity.
+
+
 
 ## Platform Web SDK example
 
@@ -452,7 +476,8 @@ Now that you understand how the different Target parameters are mapped using the
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "web": {
@@ -528,7 +553,8 @@ Now that you understand how the different Target parameters are mapped using the
         "identityMap": {
           "GLOBAL_CUSTOMER_ID": [{
             "id": "TT8675309",
-            "authenticatedState": "authenticated"
+            "authenticatedState": "authenticated",
+            "primary": true
           }]
         },
         "commerce": {
@@ -544,7 +570,17 @@ Now that you understand how the different Target parameters are mapped using the
           "SKU": "SKU-00002"
         }, {
           "SKU": "SKU-00003"
-        }]
+        }],
+        "_experience": {
+            "decisioning": {
+                "propositions": [{
+                    "scope": "<your_mbox>"
+                }],
+                "propositionEventType": {
+                    "display": 1
+                }
+            }
+        }
       }
     });
   </script>

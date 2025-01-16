@@ -3,6 +3,7 @@ title: Segment Activation to Microsoft Azure Event Hub - Configure your Microsof
 description: Segment Activation to Microsoft Azure Event Hub - Configure your Microsoft Azure environment
 kt: 5342
 doc-type: tutorial
+exl-id: 772b4d2b-144a-4f29-a855-8fd3493a85d2
 ---
 # 2.4.1 Configure your environment
 

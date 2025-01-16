@@ -3,6 +3,7 @@ title: Getting Started - Summary
 description: Getting Started - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: d84e6aae-c260-4e5f-bb45-e93769a74ba8
 ---
 # Getting started
 

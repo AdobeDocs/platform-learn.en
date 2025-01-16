@@ -3,6 +3,7 @@ title: Customer Journey Analytics - Customer Journey Analytics 101
 description: Customer Journey Analytics - Customer Journey Analytics 101
 kt: 5342
 doc-type: tutorial
+exl-id: b298de4a-023b-4373-b365-2c0622b5a551
 ---
 # 4.1.1 Customer Journey Analytics 101
 

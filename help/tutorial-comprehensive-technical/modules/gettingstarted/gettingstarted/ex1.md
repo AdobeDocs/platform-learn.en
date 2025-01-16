@@ -3,6 +3,7 @@ title: Getting Started - Install the Chrome extension for the Experience League 
 description: Getting Started - Install the Chrome extension for the Experience League documentation
 kt: 5342
 doc-type: tutorial
+exl-id: da7aa686-7f25-49fd-af3e-d243ffda025f
 ---
 # Install the Chrome extension for the Experience League documentation
 

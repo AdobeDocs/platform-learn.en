@@ -3,6 +3,7 @@ title: Real-time CDP - Build an audience and take action - Send your audience to
 description: Real-time CDP - Build an audience and take action - Send your audience to DV360
 kt: 5342
 doc-type: tutorial
+exl-id: bb76524e-52c1-4c2c-8bcd-33cd39d12741
 ---
 # 2.3.3 Take Action: send your audience to DV360
 

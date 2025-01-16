@@ -3,6 +3,7 @@ title: Audience Activation to Microsoft Azure Event Hub
 description: Audience Activation to Microsoft Azure Event Hub
 kt: 5342
 doc-type: tutorial
+exl-id: 23713cb4-2055-43e8-9380-0ca8845a75e8
 ---
 # 2.4 Real-Time CDP: Audience Activation to Microsoft Azure Event Hub
 

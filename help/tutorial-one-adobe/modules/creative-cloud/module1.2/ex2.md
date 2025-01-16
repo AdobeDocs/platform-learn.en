@@ -3,6 +3,7 @@ title: Use Adobe APIs within Workfront Fusion
 description: Use Adobe APIs within Workfront Fusion
 kt: 5342
 doc-type: tutorial
+exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
 ---
 # 1.2.2 Use Adobe APIs within Workfront Fusion
 

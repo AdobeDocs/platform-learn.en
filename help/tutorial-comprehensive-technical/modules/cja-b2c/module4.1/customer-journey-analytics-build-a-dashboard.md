@@ -3,6 +3,7 @@ title: Customer Journey Analytics - Build a dashboard using Analysis Workspace o
 description: Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
+exl-id: 0eef0211-bb6a-4b92-a6ce-507d928ccdea
 ---
 # 4.1 Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 

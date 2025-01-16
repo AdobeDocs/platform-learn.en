@@ -1,6 +1,6 @@
 ---
 title: Use tag environments and embed codes
-description: Learn how to use development, staging, and production environments and embed codes to develop and validate your tag property.
+description: Learn how to use development, staging, and production environments and embed codes to develop and validate your tag property. 
 feature: Tags
 level: Beginner
 duration: 678

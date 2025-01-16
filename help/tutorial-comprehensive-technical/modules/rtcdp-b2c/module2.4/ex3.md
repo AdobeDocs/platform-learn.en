@@ -3,6 +3,7 @@ title: Audience Activation to Microsoft Azure Event Hub - Setup the Event Hub RT
 description: Audience Activation to Microsoft Azure Event Hub - Setup the Event Hub RTCDP destination in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
+exl-id: 86bc3afa-16a9-4834-9119-ce02445cd524
 ---
 # 2.4.3 Configure your Azure Event Hub Destination in Adobe Experience Platform
 

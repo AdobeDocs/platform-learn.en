@@ -3,6 +3,7 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: Summary and benefits
 kt: 5342
 doc-type: tutorial
+exl-id: 7086f844-f21c-45d4-a7d9-3e695233b4b7
 ---
 # Summary and benefits
 

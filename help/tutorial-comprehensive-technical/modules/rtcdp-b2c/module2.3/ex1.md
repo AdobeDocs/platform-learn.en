@@ -3,6 +3,7 @@ title: Real-time CDP - Build an audience and take action - Build an audience
 description: Real-time CDP - Build an audience and take action - Build an audience
 kt: 5342
 doc-type: tutorial
+exl-id: a46b1640-769d-4fb3-97e6-beaf9706efbf
 ---
 # 2.3.1 Create an audience
 

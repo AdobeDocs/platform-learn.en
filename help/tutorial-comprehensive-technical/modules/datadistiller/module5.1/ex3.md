@@ -4,6 +4,7 @@ description: Query Service - Using the Query Service
 kt: 5342
 audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
+exl-id: 31c14a9b-cb62-48ab-815c-caa6e832794f
 ---
 # 5.1.3 Using the Query Service
 

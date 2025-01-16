@@ -3,6 +3,7 @@ title: Create your Cloud Manager Program
 description: Create your Cloud Manager Program
 kt: 5342
 doc-type: tutorial
+exl-id: 75abb23f-c19f-4b8a-97dd-58a015949c1e
 ---
 # 2.2.5 Setup Photoshop + Workfront plugin
 

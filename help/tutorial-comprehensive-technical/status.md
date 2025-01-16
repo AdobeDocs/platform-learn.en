@@ -2,6 +2,7 @@
 title: Content Status
 description: Content Status
 doc-type: multipage-overview
+exl-id: 75fe2d3d-d9f5-4e9c-8dde-928e9935c25f
 ---
 # Status
 

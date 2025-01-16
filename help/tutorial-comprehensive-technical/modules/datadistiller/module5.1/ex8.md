@@ -3,6 +3,7 @@ title: Query Service - Query Service API
 description: Query Service - Query Service API
 kt: 5342
 doc-type: tutorial
+exl-id: d356f7e2-523b-41a2-9cc6-1ea2a028c3a7
 ---
 # 5.1.8 Query Service API
 

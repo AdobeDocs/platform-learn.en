@@ -3,6 +3,7 @@ title: Workflow Management with Adobe Workfront
 description: Workflow Management with Adobe Workfront
 kt: 5342
 doc-type: tutorial
+exl-id: 96685851-b446-4bae-890e-4f96a59cedba
 ---
 # 2.2 Workflow Management with Adobe Workfront
 

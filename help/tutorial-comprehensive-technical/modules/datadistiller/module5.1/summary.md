@@ -3,6 +3,7 @@ title: Query Service - Summary
 description: Query Service - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: 0d6759dd-d649-42e3-a7fb-e826a2385eb8
 ---
 # Summary & benefits
 

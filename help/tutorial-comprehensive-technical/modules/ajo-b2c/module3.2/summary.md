@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Summa
 description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: 3277f646-9726-491c-a7f9-1b2e60858ffd
 ---
 # Summary & benefits
 

@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - External data sources and custom actions
 description: Adobe Journey Optimizer - External data sources and custom actions
 kt: 5342
 doc-type: tutorial
+exl-id: 068c8be4-2e9e-4d38-9c0e-f769ac927b57
 ---
 # 3.2.5 Trigger your journey
 
