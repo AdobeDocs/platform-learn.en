@@ -9,6 +9,7 @@ recommendations: noDisplay,noCatalog
 # Comprehensive Technical Tutorial - One Adobe {#tutorial-one-adobe}
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
++ [Content Status](/help/tutorial-one-adobe/status.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
