@@ -18,7 +18,6 @@ Below is an overview of the status of the content in this tutorial.
 | [3.2 Adobe Journey Optimizer: Translation Services](./modules/uce/module3.2/ajotranslationsvcs.md) | 16/01/2025  | No         | Content not finished yet |
 | [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/uce/module3.3/offer-decisioning.md) | 14/11/2024  | Yes         | - |
 
-
 {style="table-layout:auto"}
 
 [Go Back to All Modules](./overview.md)

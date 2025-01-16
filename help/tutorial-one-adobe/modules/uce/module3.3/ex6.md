@@ -16,7 +16,7 @@ You now have this file on your desktop:
 
 - `_AJO- Decisioning Service.postman_collection.json`
 
-In Exercise 2.1.3 - Postman authentication to Adobe I/O](./../../../modules/rtcdp-b2c/module2.1/ex3.md you installed Postman. You'll need to use Postman again for this exercise.
+You'll need to use Postman again for this exercise.
 
 Open Postman and import the file `_AJO- Decisioning Service.postman_collection.json`. You'll then have this collection available in Postman.
 
