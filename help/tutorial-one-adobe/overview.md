@@ -2,7 +2,6 @@
 title: Overview - Comprehensive Technical Tutorial - One Adobe
 description: Comprehensive Technical Tutorial - One Adobe
 doc-type: multipage-overview
-exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 ---
 # Comprehensive Technical Tutorial - One Adobe
 
@@ -13,8 +12,9 @@ This tutorial is the perfect starting point for
 This tutorial is very diverse and offers clear insights in the following applications:
 
 - Adobe Firefly Services
+- Adobe Photoshop
 - Adobe Workfront & Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service, Sites and Assets
+- Adobe Experience Manager Cloud Service, Sites, Assets and Edge Delivery Services 
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
@@ -29,22 +29,27 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 - Snowflake
 - ...
 
-After completing the exercises in this tutorial, you will be able to:
-
-- ...
-
 ## Prerequisites
 
 If you want to take this tutorial using your own Adobe Experience Cloud instance, the following applications need to be provisioned in your instance and you need to be able to access:
 
 - Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
-- Adobe Express [https://new.express.adobe.com/](https://new.express.adobe.com/)
+- Adobe Photoshop 
+- Adobe Workfront
 - Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/)
 - Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
 - Access to Demo System: [https://dsn.adobe.com/](https://dsn.adobe.com/)
 
 ## Content
+
+To check the status of the below content, please go to the [status page](./status.md).
+
+### Getting started
+
+[Getting started](./modules/getting-started/gettingstarted/getting-started.md)
+
+In this foundational module, you will setup everything so that you can access and use the demo environment.
 
 ### 1. Adobe Creative Cloud
 
@@ -58,16 +63,28 @@ In this foundational module, you will use Adobe Workfront Fusion to automate and
 
 ### 2. Content Supply Chain
 
-[2.1 Adobe Experience Manager Cloud Service](./modules/csc/module2.1/aemcs.md)
+[2.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/csc/module2.1/aemcs.md)
 
 In this foundational module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
 
-[2.2 Adobe Workfront](./modules/csc/module2.2/workfront.md)
+[2.2 Workflow Management with Adobe Workfront](./modules/csc/module2.2/workfront.md)
 
-In this foundational module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
+In this foundational module, you will configure and use Adobe Workfront to manage approval flows and you'll use integrations with Adobe Experience Manager Assets, Universal Editor, Photoshop and more.
 
 ### 3. Unified Customer Experience
 
 [3.1 Federated Audience Composition](./modules/uce/module3.1/fac.md)
 
 In this foundational module, you will learn about Adobe Experience Platform Data Collection and the new Web SDK extension.
+
+[3.2 Adobe Journey Optimizer: Translation Services](./modules/uce/module3.2/ajotranslationsvcs.md)
+
+In this module, you'll use Adobe Journey Optimizer to set up and use Translation Services.
+
+[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/uce/module3.3/offer-decisioning.md)
+
+In this module, you'll use Adobe Journey Optimizer with offer decisioning services in a hands-on way to configure Personalized Offers and your own decision.
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform and its applications. If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.

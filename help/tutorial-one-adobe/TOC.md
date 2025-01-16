@@ -9,9 +9,17 @@ recommendations: noDisplay,noCatalog
 # Comprehensive Technical Tutorial - One Adobe {#tutorial-one-adobe}
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
++ [Content Status](/help/tutorial-one-adobe/status.md)
 
 + Getting started {#gettingstarted}
-  + [Getting started](/help/tutorial-one-adobe/modules/getting-started/getting-started.md)
+  + Getting started {#gettingstarted}
+    + [Overview](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
+    + [Install the Chrome extension for the Experience League documentation](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
+    + [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
+    + [Create your Datastream](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
+    + [Use the website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
+    + [Use the mobile app](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+
 + 1 Adobe Creative Cloud {#creativecloud}
   + 1.1 Adobe Firefly Services {#module11}
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
@@ -47,4 +55,17 @@ recommendations: noDisplay,noCatalog
     + [3.1.2 Create schemas, data model and links](/help/tutorial-one-adobe/modules/uce/module3.1/ex2.md)
     + [3.1.3 Create a federated composition](/help/tutorial-one-adobe/modules/uce/module3.1/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
+  + 3.2 Adobe Journey Optimizer: Translation Services {#module32}
+    + [Overview](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
+    + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
+  + 3.3 Adobe Journey Optimizer: Offer Decisioning {#module33}
+    + [Overview](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)
+    + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/uce/module3.3/ex1.md)
+    + [3.3.2 Configure your Offers and Decision](/help/tutorial-one-adobe/modules/uce/module3.3/ex2.md)
+    + [3.3.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex3.md)
+    + [3.3.4 Combine Adobe Target and Offer Decisioning](/help/tutorial-one-adobe/modules/uce/module3.3/ex4.md)
+    + [3.3.5 Use your decision in an email](/help/tutorial-one-adobe/modules/uce/module3.3/ex5.md)
+    + [3.3.6 Test your Decision using the API](/help/tutorial-one-adobe/modules/uce/module3.3/ex6.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.3/summary.md)
 
