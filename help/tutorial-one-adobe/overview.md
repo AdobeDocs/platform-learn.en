@@ -2,6 +2,7 @@
 title: Overview - Comprehensive Technical Tutorial - One Adobe
 description: Comprehensive Technical Tutorial - One Adobe
 doc-type: multipage-overview
+exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 ---
 # Comprehensive Technical Tutorial - One Adobe
 

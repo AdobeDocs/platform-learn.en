@@ -3,6 +3,7 @@ title: Offer Decisioning - Test your Decision
 description: Offer Decisioning - Test your Decision
 kt: 5342
 doc-type: tutorial
+exl-id: c350dca6-0c0b-4a11-b311-3ffa4ab07a0b
 ---
 # 3.3.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning
 
