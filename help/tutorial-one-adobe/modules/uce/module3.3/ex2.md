@@ -21,11 +21,7 @@ In this exercise, you'll create four **Personalized Offers**. Here are the detai
 
 Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
-
 You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
-
-![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 In the left menu, click **Offers** and then go to **Offers**. Click **+ Create Offer**.
 

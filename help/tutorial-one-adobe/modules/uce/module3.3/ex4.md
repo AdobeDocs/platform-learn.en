@@ -30,11 +30,7 @@ You'll now get a shortened link, which looks like this: `https://adobe.ly/3PpGcF
 
 Now go to the Adobe Experience Cloud homepage by going to [https://experiencecloud.adobe.com/](https://experiencecloud.adobe.com/). Click **Target**.
 
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/excl.png)
-
 On the **Adobe Target** homepage, you'll see all existing Activities. Click **Create Activity** and then click **Experience Targeting**.
-
-![RTCDP](./../../../modules/rtcdp-b2c/module2.3/images/exclatov.png)
 
 Now select **Visual** and paste your shortened link in the field **Enter Activity URL**. Click **Create**.
 

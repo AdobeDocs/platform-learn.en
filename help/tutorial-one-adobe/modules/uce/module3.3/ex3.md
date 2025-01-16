@@ -71,11 +71,7 @@ The Placement ID identifies the location and type of asset that is required. For
 
 To find the Placement ID for Web - Image go to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-![ACOP](./../../../modules/ajo-b2c/module3.1/images/acophome.png)
-
 You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
-
-![ACOP](./../../../modules/ajo-b2c/module3.1/images/acoptriglp.png)
 
 Next, go to Components and then to Placements. Click the **Web - Image** placement to see its details.
 

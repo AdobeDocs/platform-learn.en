@@ -14,7 +14,7 @@ recommendations: noDisplay,noCatalog
   + Getting started {#gettingstarted}
     + [Overview](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/getting-started.md)
     + [Install the Chrome extension for the Experience League documentation](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex1.md)
-    + [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-one-adobe/modules/gettingstarted/getting-started/ex2.md)
+    + [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex2.md)
     + [Create your Datastream](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
     + [Use the website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
     + [Use the mobile app](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
