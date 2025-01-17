@@ -46,6 +46,14 @@ Your images will now upload. This may take some time.
 
 ![Firefly](./images/ffcm10.png)
 
+![Firefly](./images/ffcm11.png)
+
+![Firefly](./images/ffcm12.png)
+
+![Firefly](./images/ffcm13.png)
+
+![Firefly](./images/ffcm14.png)
+
 You've now completed this exercise. 
 
 Next Step: [Summary & Benefits](./summary.md){target="_blank"}
