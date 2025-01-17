@@ -3,6 +3,7 @@ title: Getting Started - Use the mobile app
 description: Getting Started - Use the mobile app
 kt: 5342
 doc-type: tutorial
+exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
 ---
 # Use the mobile app
 

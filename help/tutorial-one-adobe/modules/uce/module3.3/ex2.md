@@ -3,6 +3,7 @@ title: Offer Decisioning - Configure your Offers and Decision ID
 description: Offer Decisioning - Configure your Offers and Decision ID
 kt: 5342
 doc-type: tutorial
+exl-id: af2b4649-ee02-4498-9c84-d395a25413dd
 ---
 # 3.3.2 Configure your offers and decision
 

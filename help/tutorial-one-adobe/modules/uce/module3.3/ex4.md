@@ -3,6 +3,7 @@ title: Offer Decisioning - Test your Decision using the demo website
 description: Test your Decision using the demo website
 kt: 5342
 doc-type: tutorial
+exl-id: 93c929cc-b08f-4873-b810-f69694b42778
 ---
 # 3.3.4 Combine Adobe Target and Offer Decisioning
 
