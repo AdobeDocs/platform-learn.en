@@ -3,6 +3,7 @@ title: Offer Decisioning - Test your Decision using the API
 description: Test your Decision using the API
 kt: 5342
 doc-type: tutorial
+exl-id: 0095085e-14af-4f6b-9547-97ba657ec664
 ---
 # 3.3.6 Test your decision using the API
 
