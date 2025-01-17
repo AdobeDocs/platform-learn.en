@@ -6,7 +6,7 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 ---
 # Comprehensive Technical Tutorial - One Adobe
 
-![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="center"}
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 
 ## Overview
 
@@ -90,5 +90,6 @@ In this module, you'll use Adobe Journey Optimizer with offer decisioning servic
 
 >[!NOTE]
 >
->![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="center"}
+>![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+>
 >If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
