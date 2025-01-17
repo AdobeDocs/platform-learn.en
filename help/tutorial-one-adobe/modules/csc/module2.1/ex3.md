@@ -9,7 +9,7 @@ exl-id: 62715072-0257-4d07-af1a-8becbb793459
 
 ## 2.1.3.1 Setup your GitHub repo
 
-Go to [https://github.com](https://github.com). Click **Sign In**.
+Go to [https://github.com](https://github.com){target="_blank"}. Click **Sign In**.
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -21,7 +21,7 @@ Once signed in, you'll see your GitHub Dashboard.
 
 ![AEMCS](./images/aemcssetup3.png)
 
-Go to [https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one). You'll then see this. Click **Use this template** and then click **Create a new repository**.
+Go to [https://github.com/AdobeDevXSC/citisignal-one](https://github.com/AdobeDevXSC/citisignal-one){target="_blank"}. You'll then see this. Click **Use this template** and then click **Create a new repository**.
 
 ![AEMCS](./images/aemcssetup4.png)
 
@@ -33,7 +33,7 @@ After a couple of seconds, you'll then have your repository created.
 
 ![AEMCS](./images/aemcssetup6.png)
 
-Next, go to [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync). Click **Configure**.
+Next, go to [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Click **Configure**.
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -77,7 +77,7 @@ YYY should be replaced by your GitHub user account.
 
 ZZZ should be replaced by the name of the GitHub repository that you used in the previous exercise.
 
-You can find the URL of your AEM CS Author environment by going to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Click your **Program** to open it.
+You can find the URL of your AEM CS Author environment by going to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -119,7 +119,7 @@ The file `fstab.yaml` has now been updated.
 
 ## 2.1.3.3 Upload CitiSignal assets
 
-Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Click your **Program** to open it.
+Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -149,7 +149,7 @@ Next, click **Upload package**.
 
 Click **Browse** to locate the package to upload.
 
-The package to upload is called **citisignal-assets.zip** and can be downloaded here: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip).
+The package to upload is called **citisignal-assets.zip** and can be downloaded here: [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/citisignal-assets.zip){target="_blank"}.
 
 ![AEMCS](./images/aemcssetup23.png)
 
@@ -182,7 +182,7 @@ You can now close this window.
 
 ## 2.1.3.4 Publish CitiSignal assets
 
-Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Click your **Program** to open it.
+Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -218,7 +218,7 @@ Your assets have now been published.
 
 ## 2.1.3.5 Create CitiSignal website
 
-Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com). Click your **Program** to open it.
+Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
 
 ![AEMCS](./images/aemcs6.png)
 
@@ -242,7 +242,7 @@ Click **Import**.
 
 ![AEMCS](./images/aemcssetup32.png)
 
-You now need to import a preconfigured template for your site. You can download the template [here](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip). Save the file to your desktop.
+You now need to import a preconfigured template for your site. You can download the template [here](./../../../assets/aem/citisignal-edge-delivery-services-template-0.0.4.zip){target="_blank"}. Save the file to your desktop.
 
 Next, select the file `citisignal-edge-delivery-services-template-0.0.4.zip` and click **Open**.
 
@@ -319,7 +319,7 @@ After a couple of minutes, the assets will all be loading properly.
 
 ## 2.1.3.7 Test Page Performance
 
-Go to [https://pagespeed.web.dev/](https://pagespeed.web.dev/). Enter your URL and click **Analyze**.
+Go to [https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}. Enter your URL and click **Analyze**.
 
 ![AEMCS](./images/aemcssetup48.png)
 
@@ -333,8 +333,8 @@ You'll then see that your website, in both a mobile and desktop visualization, g
 
 ![AEMCS](./images/aemcssetup50.png)
 
-Next Step: [2.1.4 Configure a custom block](./ex4.md)
+Next Step: [2.1.4 Configure a custom block](./ex4.md){target="_blank"}
 
-[Go Back to Module 2.1](./aemcs.md)
+[Go Back to Module 2.1](./aemcs.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md)
+[Go Back to All Modules](./../../../overview.md){target="_blank"}

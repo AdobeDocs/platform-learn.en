@@ -7,11 +7,11 @@ exl-id: db366111-3873-4504-95f1-b240836c833f
 ---
 # 2.1.2 Create your document-based website
 
-While you wait for your Cloud Manager Program to be created, you have enough time to set up your first document-based authoring website. The below exercise is based on the [aem.live Developer Tutorial](https://www.aem.live/developer/tutorial). Follow the steps below to get started.
+While you wait for your Cloud Manager Program to be created, you have enough time to set up your first document-based authoring website. The below exercise is based on the [aem.live Developer Tutorial](https://www.aem.live/developer/tutorial){target="_blank"}. Follow the steps below to get started.
 
 ## 2.1.2.1 Setup your Google Drive
 
-Go to [https://drive.google.com](https://drive.google.com). Click **+ New** and then click **New Folder**.
+Go to [https://drive.google.com](https://drive.google.com){target="_blank"}. Click **+ New** and then click **New Folder**.
 
 ![AEMCS](./images/googledrive1.png)
 
@@ -19,7 +19,7 @@ Name your folder `aemdocb-test`. Click **Create**.
 
 ![AEMCS](./images/googledrive2.png)
 
-Download the file [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip) and extract it on your computer.
+Download the file [aemboilerplate.zip](./../../../assets/aem/aemboilerplate.zip){target="_blank"} and extract it on your computer.
 
 ![AEMCS](./images/googledrive3.png)
 
@@ -59,7 +59,7 @@ You should remove the query string parameter `?usp=drive_link` so the URL should
 
 ## 2.1.2.2 Setup your GitHub repo
 
-Go to [https://github.com](https://github.com). Click **Sign In**.
+Go to [https://github.com](https://github.com){target="_blank"}. Click **Sign In**.
 
 ![AEMCS](./images/aemcssetup1.png)
 
@@ -71,7 +71,7 @@ Once signed in, you'll see your GitHub Dashboard.
 
 ![AEMCS](./images/aemcssetup3.png)
 
-Go to [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate). You'll then see this. Click **Use this template** and then click **Create a new repository**.
+Go to [https://github.com/adobe/aem-boilerplate](https://github.com/adobe/aem-boilerplate){target="_blank"}. You'll then see this. Click **Use this template** and then click **Create a new repository**.
 
 ![AEMCS](./images/aemdocbcssetup4.png)
 
@@ -83,7 +83,7 @@ After a couple of seconds, you'll then have your repository created.
 
 ![AEMCS](./images/aemdocbcssetup6.png)
 
-Next, go to [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync). Click **Configure**.
+Next, go to [https://github.com/apps/aem-code-sync](https://github.com/apps/aem-code-sync){target="_blank"}. Click **Configure**.
 
 ![AEMCS](./images/aemcssetup7.png)
 
@@ -127,7 +127,7 @@ Click **Commit changes**.
 
 ## 2.1.2.4 Install AEM Sidekick extension
 
-Go to [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo). Click **Add to Chrome**.
+Go to [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"}. Click **Add to Chrome**.
 
 ![AEMCS](./images/aemdocbcssetup16.png)
 
@@ -199,8 +199,8 @@ You'll then see the live version of your website.
 
 The above exercise was a good way to get started and experience document-based authoring yourself. You can now continue with the next exercise, where you'll set up your own demo website using CitiSignal as a demo brand.
 
-Next Step: [2.1.3 Setup your AEM CS environment](./ex3.md)
+Next Step: [2.1.3 Setup your AEM CS environment](./ex3.md){target="_blank"}
 
-[Go Back to Module 2.1](./aemcs.md)
+[Go Back to Module 2.1](./aemcs.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md)
+[Go Back to All Modules](./../../../overview.md){target="_blank"}

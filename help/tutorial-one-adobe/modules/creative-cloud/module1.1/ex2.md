@@ -13,7 +13,7 @@ exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
 >
 >If you already have an existing Azure Subscription, you can skip this step. Please proceed with the next exercise in that case.
 
-Go to [https://portal.azure.com](https://portal.azure.com) and login with your Azure account. If you don't have one, please use your personal email address to create your Azure account.
+Go to [https://portal.azure.com](https://portal.azure.com){target="_blank"} and login with your Azure account. If you don't have one, please use your personal email address to create your Azure account.
 
 ![Azure Storage](./images/02azureportalemail.png)
 
@@ -77,7 +77,7 @@ Your container is now ready to be used.
 
 ## 1.1.2.3 Install Azure Storage Explorer
 
-You'll use Microsoft Azure Storage Explorer to manage your files. You can download it via [this link](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4). Select the correct version for your specific OS, download it and install it.
+You'll use Microsoft Azure Storage Explorer to manage your files. You can download it via [this link](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Select the correct version for your specific OS, download it and install it.
 
 ![Azure Storage](./images/az10.png)
 
@@ -119,7 +119,7 @@ Open **Blob Containers** and then click the container you created in the previou
 
 ## 1.1.2.4 Manual file upload and using an image file as style reference
 
-You should now upload a image file of choice into your container. You can use any image file of choice, or you can use [this file](./images/gradient.jpg) by downloading it your computer.
+You should now upload a image file of choice into your container. You can use any image file of choice, or you can use [this file](./images/gradient.jpg){target="_blank"} by downloading it your computer.
 
 ![Azure Storage](./images/gradient.jpg)
 
@@ -193,7 +193,7 @@ Then, click **Body**.
 
 ![Azure Storage](./images/az31.png)
 
-You will now need to select a file from your local machine. You can use a new image file of choice, or you can use another image file that you can find [here](./images/gradient2-p.jpg).
+You will now need to select a file from your local machine. You can use a new image file of choice, or you can use another image file that you can find [here](./images/gradient2-p.jpg){target="_blank"}.
 
 ![Gradient file](./images/gradient2-p.jpg)
 
@@ -359,8 +359,8 @@ Open the image URL to verify your image.
 
 ![Azure Storage](./images/az108.jpg)
 
-Next Step: [1.1.3 Adobe Firefly & Adobe Photoshop ](./ex3.md)
+Next Step: [1.1.3 Adobe Firefly & Adobe Photoshop ](./ex3.md){target="_blank"}
 
-[Go Back to Module 1.1](./firefly-services.md)
+[Go Back to Module 1.1](./firefly-services.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md)
+[Go Back to All Modules](./../../../overview.md){target="_blank"}

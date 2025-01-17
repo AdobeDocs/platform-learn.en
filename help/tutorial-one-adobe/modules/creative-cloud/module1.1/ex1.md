@@ -13,7 +13,7 @@ In this exercise, you'll use Postman and Adobe I/O to query Adobe Firefly Servic
 
 In this exercise you'll be using Adobe I/O quite intensively to query against Firefly Services APIs. Please follow the below steps to setup Adobe I/O.
 
-Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home)
+Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}
 
 ![Adobe I/O New Integration](./images/iohome.png)
 
@@ -73,7 +73,7 @@ The setup of your Adobe I/O integration is now finished.
 
 ## Postman authentication to Adobe I/O
 
-Go to [https://www.postman.com/downloads/](https://www.postman.com/downloads/). 
+Go to [https://www.postman.com/downloads/](https://www.postman.com/downloads/){target="_blank"}. 
 
 Download and install the relevant version of Postman for your OS.
 
@@ -172,8 +172,8 @@ You'll now see a beautiful image portraying `horses in a field`.
 
 Feel free to play around with the API request before continuing to the next exercise.
 
-Next Step: [1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs](./ex2.md)
+Next Step: [1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs](./ex2.md){target="_blank"}
 
-[Go Back to Module 1.1](./firefly-services.md)
+[Go Back to Module 1.1](./firefly-services.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md)
+[Go Back to All Modules](./../../../overview.md){target="_blank"}

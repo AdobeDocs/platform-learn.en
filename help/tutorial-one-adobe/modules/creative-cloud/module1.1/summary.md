@@ -17,6 +17,6 @@ Let's highlight the benefits of using Firefly Services...
 ## Check this out
 
 
-[Go Back to Module 1](./firefly-services.md)
+[Go Back to Module 1](./firefly-services.md){target="_blank"}
 
-[Go Back to All Modules](../../../overview.md)
+[Go Back to All Modules](../../../overview.md){target="_blank"}

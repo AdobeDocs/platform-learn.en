@@ -9,7 +9,7 @@ exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
 
 ## 2.1.4.1 Setup your local development environment
 
-Go to [https://desktop.github.com/download/](https://desktop.github.com/download/), download and install **Github Desktop**.
+Go to [https://desktop.github.com/download/](https://desktop.github.com/download/){target="_blank"}, download and install **Github Desktop**.
 
 ![Block](./images/block1.png)
 
@@ -24,6 +24,6 @@ Your GitHub repo will then be opened in GitHub Desktop. Feel free to change the 
 A local fo
 
 
-[Go Back to Module 2.1](./aemcs.md)
+[Go Back to Module 2.1](./aemcs.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md)
+[Go Back to All Modules](./../../../overview.md){target="_blank"}
