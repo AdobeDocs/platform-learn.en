@@ -223,7 +223,7 @@ Lastly, you then also see that file in your container using Azure Storage explor
 
 You've now completed this exercise. 
 
-Next Step: [Summary & Benefits](./summary.md)
+Next Step: [1.1.4 Firefly Custom Models](./ex4.md)
 
 [Go Back to Module 1.1](./firefly-services.md)
 

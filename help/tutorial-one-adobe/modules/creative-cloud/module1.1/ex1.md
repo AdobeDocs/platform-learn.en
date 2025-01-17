@@ -124,13 +124,15 @@ The first thing to do, is to make sure you're properly authenticated. To be auth
 
 Make sure that you've got the right environment selected before executing any request. You can check the currently selected Environment by verifying the Environment-dropdown list in the top right corner. 
 
+![Postman](./images/envselemea1.png)
+
 The selected Environment should have a name similar to this one, `--aepUserLdap-- Firefly Services OAuth Credential`.
 
 ![Postman](./images/envselemea.png)
 
 Your Postman environment and collections are now configured and working. You can now authenticate from Postman to Adobe I/O.
 
-In the **Adobe IO - OAuth** collection, select the request with the name **POST - Get Access Token**. You'll that under **Params**, 2 variables are being referenced, `API_KEY` and `CLIENT_SECRET`. These variables are taken from the selected environment, `--aepUserLdap-- Firefly Services OAuth Credential`.
+In the **Adobe IO - OAuth** collection, select the request with the name **POST - Get Access Token**. You then see that under **Params**, 2 variables are being referenced, `API_KEY` and `CLIENT_SECRET`. These variables are taken from the selected environment, `--aepUserLdap-- Firefly Services OAuth Credential`.
 
 Click **Send**.
 

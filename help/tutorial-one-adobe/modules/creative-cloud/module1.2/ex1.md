@@ -15,11 +15,19 @@ Go to [https://experience.adobe.com/](https://experience.adobe.com/). Click to o
 
 ![WF Fusion](./images/wffusion1.png)
 
-You should then see this. Go to **Scenarios**.
+You should then see this. Go to **Scenarios**. 
 
 ![WF Fusion](./images/wffusion2.png)
 
-Click **Create new scenario**.
+Click the **+** icon to create a new folder.
+
+![WF Fusion](./images/wffusion2a.png)
+
+For the folder name, use: `--aepUserLdap--`. Click **Save**.
+
+![WF Fusion](./images/wffusion2b.png)
+
+Select your folder, and then click **Create new scenario**.
 
 ![WF Fusion](./images/wffusion3.png)
 
