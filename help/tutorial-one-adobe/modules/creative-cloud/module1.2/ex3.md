@@ -55,7 +55,7 @@ Delete the text **Click here**, and replace it by selecting the variable **Value
 
 ![WF Fusion](./images/wffusion209.png)
 
-You also need to update the filename that is used to write the file in your Azure Storage Account. If the file name is static, then every new iteration will simply overwrite the previous file and as such, you'll lose the customized files. The current static filename is **sevoi-psd-changed-text.psd**, and you now need to update that. Put the cursor behind the word `text`.
+You also need to update the filename that is used to write the file in your Azure Storage Account. If the file name is static, then every new iteration will simply overwrite the previous file and as such, you'll lose the customized files. The current static filename is **citisignal-fiber-changed-text.psd**, and you now need to update that. Put the cursor behind the word `text`.
 
 ![WF Fusion](./images/wffusion210.png)
 
@@ -71,11 +71,11 @@ Once the scenario has run, go back to your Azure Storage Explorer and refresh th
 
 ![WF Fusion](./images/wffusion213.png)
 
-Download and open each file. You should then see the various texts on the buttons. This is file `sevoi-psd-changed-text-1.psd`.
+Download and open each file. You should then see the various texts on the buttons. This is file `citisignal-fiber-changed-text-1.psd`.
 
 ![WF Fusion](./images/wffusion214.png)
 
-This is file `sevoi-psd-changed-text-2.psd`.
+This is file `citisignal-fiber-changed-text-2.psd`.
 
 ![WF Fusion](./images/wffusion215.png)
 
@@ -156,9 +156,31 @@ Your scenario will then run again, and create the 2 files just like before.
 
 ![WF Fusion](./images/wffusion232.png)
 
-Lastly, change the name of your Postman request to `POST - Send Request to Workfront Fusion Webhook`.
+Change the name of your Postman request to `POST - Send Request to Workfront Fusion Webhook`.
 
 ![WF Fusion](./images/wffusion233.png)
+
+You now need to start using the variable **psdTemplate**. Instead of hardcoding the location of the input file in the **Photoshop Change Text** node, you will now use the incoming variable from the Postman request.
+
+Open the **Photoshop Change Text** node and go to **Request content**. Select the hardcoded filename **citisignal-fiber.psd** under **inputs** and delete it.
+
+![WF Fusion](./images/wffusion234.png)
+
+Select the variable **psdTemplate**. Click **OK** and then save your scenario.
+
+![WF Fusion](./images/wffusion235.png)
+
+Click **ON** to turn on your scenario. Your scenario will now be running non-stop.
+
+![WF Fusion](./images/wffusion236.png)
+
+Go back to Postman. Enter the filename `citisignal-fiber.psd` as the value for the variable **psdTemplate** and click **Send** again to run your scenario again. 
+
+![WF Fusion](./images/wffusion237.png)
+
+By specifying the PSD template as a variable that is provided by an external system, you've now built a reusable scenario.
+
+You've now finished this exercise.
 
 Next Step: [Summary & Benefits](./summary.md)
 

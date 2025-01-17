@@ -29,6 +29,10 @@ In this exercise, explore Firefly Services and get an understanding of its capab
 
 In this exercise, you'll use Firefly Services together with Adobe Photoshop.
 
+[1.1.4 Firefly Custom Models](./ex4.md)
+
+In this exercise, you'll use Firefly Services together with Adobe Photoshop.
+
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.

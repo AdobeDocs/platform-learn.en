@@ -101,7 +101,11 @@ Once authenticated, you'll see a message like this.
 
 ![Azure Storage](./images/az15.png)
 
-Switch back to the Microsoft Azure Storage Explorer app. Select your subscrption and click **Open Explorer**.
+Switch back to the Microsoft Azure Storage Explorer app. Select your subscription and click **Open Explorer**.
+
+>[!NOTE]
+>
+>If your account isn't shown, click the **gear** icon next to your email address and select **Un-filter**.
 
 ![Azure Storage](./images/az16.png)
 

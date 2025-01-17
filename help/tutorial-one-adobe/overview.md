@@ -6,6 +6,8 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 ---
 # Comprehensive Technical Tutorial - One Adobe
 
+![Tech Insiders](./assets/images/techinsiders.png)
+
 ## Overview
 
 This tutorial is the perfect starting point for 

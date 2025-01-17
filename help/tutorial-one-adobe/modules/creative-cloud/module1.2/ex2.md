@@ -132,13 +132,13 @@ Replace the **Request content** by the below payload:
   "inputs": [
     {
       "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/sevoi-psd.psd{{AZURE_STORAGE_SAS_READ}}"
+      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
     }
   ],
   "options": {
     "layers": [
       {
-        "name": "2048x2048-button",
+        "name": "2048x2048-button-text",
         "text": {
           "content": "Click here"
         }
@@ -154,7 +154,7 @@ Replace the **Request content** by the below payload:
   "outputs": [
     {
       "storage": "azure",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/sevoi-psd-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
+      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
       "type": "vnd.adobe.photoshop",
       "overwrite": true
     }
