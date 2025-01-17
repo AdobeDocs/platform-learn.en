@@ -3,7 +3,6 @@ title: Working with Photoshop APIs
 description: Working with Photoshop APIs
 kt: 5342
 doc-type: tutorial
-exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
 ---
 # 1.1.4 Firefly Custom Models
 

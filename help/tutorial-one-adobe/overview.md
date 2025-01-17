@@ -5,6 +5,8 @@ doc-type: multipage-overview
 ---
 # Comprehensive Technical Tutorial - One Adobe
 
+![Tech Insiders](./assets/images/techinsiders.png)
+
 ## Overview
 
 This tutorial is the perfect starting point for 
