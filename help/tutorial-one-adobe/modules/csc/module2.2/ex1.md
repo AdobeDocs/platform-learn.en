@@ -7,7 +7,7 @@ exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
 ---
 # 2.2.1 Getting started with Workfront
 
-Log in to Adobe Workfront by going to [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/).
+Log in to Adobe Workfront by going to [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}.
 
 You then see this.
 
@@ -20,6 +20,6 @@ Click the
 
 ![WF](./images/wfb2.png)
 
-[Go Back to Module 2.2](./workfront.md)
+[Go Back to Module 2.2](./workfront.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md)
+[Go Back to All Modules](./../../../overview.md){target="_blank"}

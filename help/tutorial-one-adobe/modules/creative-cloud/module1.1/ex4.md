@@ -6,7 +6,7 @@ doc-type: tutorial
 ---
 # 1.1.4 Firefly Custom Models
 
-Go to [https://firefly.adobe.com](https://firefly.adobe.com). Go to **Custom Models**.
+Go to [https://firefly.adobe.com](https://firefly.adobe.com){target="_blank"}. Go to **Custom Models**.
 
 ![Firefly](./images/ffcm1.png)
 
@@ -48,8 +48,8 @@ Your images will now upload. This may take some time.
 
 You've now completed this exercise. 
 
-Next Step: [Summary & Benefits](./summary.md)
+Next Step: [Summary & Benefits](./summary.md){target="_blank"}
 
-[Go Back to Module 1.1](./firefly-services.md)
+[Go Back to Module 1.1](./firefly-services.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md)
+[Go Back to All Modules](./../../../overview.md){target="_blank"}

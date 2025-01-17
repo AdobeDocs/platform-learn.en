@@ -9,7 +9,7 @@ exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
 
 ## 1.1.3.1 Update your Adobe I/O integration
 
-Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home).
+Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
 ![Adobe I/O New Integration](./images/iohome.png)
 
@@ -43,7 +43,7 @@ Your Adobe I/O project is now updated to work with Photoshop & Firefly Services 
 
 ## 1.1.3.2 Programmatically interact with a PSD file
 
-Download the file Go to [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd) to your desktop.
+Download the file Go to [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} to your desktop.
 
 Open the file **citisignal-fiber.psd** in Photoshop. You should then have this.
 
@@ -223,8 +223,8 @@ Lastly, you then also see that file in your container using Azure Storage explor
 
 You've now completed this exercise. 
 
-Next Step: [1.1.4 Firefly Custom Models](./ex4.md)
+Next Step: [1.1.4 Firefly Custom Models](./ex4.md){target="_blank"}
 
-[Go Back to Module 1.1](./firefly-services.md)
+[Go Back to Module 1.1](./firefly-services.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md)
+[Go Back to All Modules](./../../../overview.md){target="_blank"}
