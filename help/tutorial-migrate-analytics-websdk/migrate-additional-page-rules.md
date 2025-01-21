@@ -14,7 +14,7 @@ In this exercise you will learn how to migrate additional page-based rules to th
 
 Let's back up a little, and talk about Analytics implementations as they are with the Adobe Analytics tags extension (also known as an "AppMeasurement" implementation, since that is the name of the JavaScript file).
 
-I won't assume to know exactly how you are implemented, but in many implementations using Experience Platform tags (formerly known as "Launch"), there are any number of rules that only fire conditionally, based upon something on the page or in the URL. Examples of this may include:
+I won't assume to know exactly how you are implemented, but in many implementations using Experience Platform tags, there are any number of rules that only fire conditionally, based upon something on the page or in the URL. Examples of this may include:
 
 * Search results rule, only firing when an internal search has performed and the search results page comes up
 * Campaign landing page rule, only firing when there is a tracking code in the URL

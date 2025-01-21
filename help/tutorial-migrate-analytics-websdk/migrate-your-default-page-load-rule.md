@@ -12,7 +12,7 @@ In this exercise, you will learn how to migrate a default page load rule in Adob
 
 ## Overview
 
-Let's back up a little. It is likely that you have a rule in Tags (formerly known as "Launch") that is fired on every page - one that sets one or more default variables, and then fires a beacon, or a hit, to Adobe Analytics. This rule is currently using "actions" in the Adobe Analytics extension to do these things. As we migrate our implementation to Web SDK, we need to be able to remove any references (like the actions) to the Analytics extension, and replace them with actions that belong to Web SDK. In the steps below, we will assume the above; i.e. that you have a default page load rule which both sets variables and sends in a tracking beacon to Analytics.
+Let's back up a little. It is likely that you have a rule in Tags that is fired on every page - one that sets one or more default variables, and then fires a beacon, or a hit, to Adobe Analytics. This rule is currently using "actions" in the Adobe Analytics extension to do these things. As we migrate our implementation to Web SDK, we need to be able to remove any references (like the actions) to the Analytics extension, and replace them with actions that belong to Web SDK. In the steps below, we will assume the above; i.e. that you have a default page load rule which both sets variables and sends in a tracking beacon to Analytics.
 
 ## Migrate the Set Variables action
 
