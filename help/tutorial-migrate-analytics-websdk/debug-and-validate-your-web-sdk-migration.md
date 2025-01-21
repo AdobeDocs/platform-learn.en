@@ -6,7 +6,7 @@ feature: Web SDK
 jira: KT-16763
 exl-id: 68f87266-4b87-4953-8de4-6a9a62bac9e6
 ---
-# Debugging and validating your Web SDK migration
+# Debug and validate your Web SDK migration
 
 In this exercise, you will learn how to debug and validate your data as you migrate to the Web SDK. We want to encourage two different validation activities that can help you make sure that everything is flowing correctly:
 
@@ -64,7 +64,7 @@ There are possibly multiple ways to set up these comparisons, but I'm going to g
 1. Create a new project in Analysis Workspace and add two panels
 1. Set the report suite in panel 1 to your current Adobe Analytics production report suite
 1. Set the report suite in panel 2 to your new Web SDK development report suite
-1. Put the same report into both panels, using a time period in the calendar when the data was flowing into Analytics using both extensions
+1. Put the same report into both panels, using a time period that includes full days only where data was sent to both report suites
 1. Compare the data
 
 This could look something like this (understanding that there is no data in these empty demo report suites):
