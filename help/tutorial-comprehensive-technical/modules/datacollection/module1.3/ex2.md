@@ -146,7 +146,7 @@ You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb20.png)
 
-Next, let's define the link between the tabel `CK_MONTHLY_DATA_USAGE` and `CK_USERS`.
+Next, let's define the link between the tabel `CK_USERS` and `CK_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
 
@@ -158,8 +158,17 @@ Next, let's define the link between the tabel `CK_USERS` and `CK_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
 
-You'll then be back here. Click **Save**.
+You'll then be back here. Click **Create links** to create another link.
+
 ![FAC](./images/fdb24.png)
+
+Next, let's define the link between the tabel `CK_USERS` and `CK_MOBILE_DATA_USAGE`.
+
+![FAC](./images/fdb25.png)
+
+You should then see this. Click **Save**.
+
+![FAC](./images/fdb26.png)
 
 Your setup in AEP is now done. You can now start using your federated data in a federated audience composition.
 
