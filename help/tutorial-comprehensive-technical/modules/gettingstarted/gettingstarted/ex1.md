@@ -78,7 +78,7 @@ The IMS Org ID is the unique identifier for your Adobe Experience Cloud instance
 
 Finding your IMS Org ID can be done in multiple ways. If you're not sure, check with one of the system administrators of your instance to find the ID.
 
-You may be able to find it by going to [Admin Console](https://https://adminconsole.adobe.com/), where you can find it as part of the URL.
+You may be able to find it by going to [Admin Console](https://adminconsole.adobe.com/), where you can find it as part of the URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -94,7 +94,7 @@ Your Tenant ID is the unique identifier for your organisation's AEP instance. Wh
 
 ![DSN](./images/aeptenantid.png)
 
-When you enter it in the Chrome extension, you should ensure that an underscore is added as a prefix, so in this example **experienceplatform** becomes **_experienceplatform**.
+When you enter it in the Chrome extension, you should ensure that an underscore is added as a prefix, so in this example **experienceplatform** becomes **_experienceplatform**. Also, make sure to remove the **@** symbol when copying from the URL.
 
 **AEP Sandbox Name**
 

@@ -11,7 +11,7 @@ Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe
 
 ![DSN](./images/launchprop.png)
 
-In the left menu, click **[!UICONTROL Tags]**. After the previous exercise, you now have two Data Collection properties: one for web and one for mobile.
+In the left menu, click **[!UICONTROL Tags]**. After the previous exercise, you now have 3 Data Collection properties: one for web, one for mobile and one for CX app.
 
 ![DSN](./images/launchprop1.png)
 
@@ -53,9 +53,9 @@ You'll now see this.
 
 That's it for now. In [Module 1.1](./../../../modules/datacollection/module1.1/data-ingestion-launch-web-sdk.md) you'll learn more about Web SDK and how to configure all of its capabilities.
 
-In the left menu, clik **[!UICONTROL Tags]**.
+In the left menu, click **[!UICONTROL Tags]**.
 
-Filter the search results to see your two Data Collection properties. Open the property for **Web** by clicking it.
+Filter the search results to see your Data Collection properties. Open the property for **Web** by clicking it.
 
 ![Name the Edge Configuration and save](./images/edgeconfig10a.png)
 
@@ -133,7 +133,7 @@ You'll then see this.
 
 Your datastream is now ready to be used in your Adobe Experience Platform Data Collection Client property for Mobile.
 
-Go to **Tags** and filter the search results to see your two Data Collection properties. Open the property for **Mobile** by clicking it. 
+Go to **Tags** and filter the search results to see your Data Collection properties. Open the property for **Mobile** by clicking it. 
 
 ![Name the Edge Configuration and save](./images/edgeconfig10am.png)
 

@@ -34,7 +34,7 @@ Click **Save and continue**.
 
 ![Setup page 1](./images/setuppage1.png)
 
-You'll then see this. Select the dataset you created in the previous exercise which is named `--demoProfileLdap - Demo System - Customer Experience Event Dataset`. Click **Add**.
+You'll then see this. Select the dataset you created in the previous exercise which is named `--aepUserLdap-- - Demo System - Customer Experience Event Dataset`. Click **Add**.
 
 ![Setup page 1](./images/custai2.png)
 
