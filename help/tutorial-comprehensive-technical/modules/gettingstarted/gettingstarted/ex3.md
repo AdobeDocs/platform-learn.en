@@ -67,7 +67,7 @@ First, click the Adobe Experience Platform Web SDK extension and then click **Co
 
 ![Name the Edge Configuration and save](./images/edgeconfig12.png)
 
-You'll then see this. Have a kook at the **Datastreams** menu and make sure the right sandbox is selected, which in you case should be `--aepSandboxName--`.
+You'll then see this. Have a look at the **Datastreams** menu and make sure the right sandbox is selected, which in you case should be `--aepSandboxName--`.
 
 ![Name the Edge Configuration and save](./images/edgeconfig12a.png)
 
