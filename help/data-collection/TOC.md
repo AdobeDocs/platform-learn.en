@@ -29,6 +29,7 @@ role: Developer, Data Engineer
   + [Demo](web-sdk/demo.md)
   + [Implementation tutorial (with tags)](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html){target="_blank"}
   + [Migrate Target tutorial](https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html){target="_blank"}
+  + [Migrate Analytics tutorial](https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview){target="_blank"}
   + Consent{#consent}
     + [Overview](web-sdk/consent/overview.md)
     + [Set consent values using the Adobe standard](web-sdk/consent/set-consent-adobe.md)
