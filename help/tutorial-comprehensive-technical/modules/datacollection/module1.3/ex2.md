@@ -7,7 +7,7 @@ exl-id: e863ab3a-44df-4bb4-b081-a62616aaa1f1
 ---
 # 1.3.2 Create schemas, data model and links
 
-You can now configure your federated database in AEP.
+You can now configure your federated database in Adobe Experience Platform.
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
