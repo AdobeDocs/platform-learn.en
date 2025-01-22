@@ -62,5 +62,6 @@ The migration process involves the following key steps:
 1. Having made all of the changes, push the library through to staging and then to production.
 1. After everything is completed, test again. This is necessary because you have made changes by removing the references to old Analytics code and you want to make sure that everything still works correctly.
 
-
-### NOTE FOR DOUG - after tutorial testing, put a link here to a Community post where clients can ask questions about the tutorial and migrating to Web SDK.
+>[!NOTE]
+>
+>We are committed to helping you be successful with your Analytics migration to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}.
