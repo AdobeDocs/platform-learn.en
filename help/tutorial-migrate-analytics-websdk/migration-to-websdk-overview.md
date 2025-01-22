@@ -65,3 +65,4 @@ The migration process involves the following key steps:
 >[!NOTE]
 >
 >We are committed to helping you be successful with your Analytics migration to Web SDK. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-analytics-to-web-sdk-using/m-p/732308#M604){target="_blank"}.
+
