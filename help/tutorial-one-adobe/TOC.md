@@ -26,7 +26,7 @@ recommendations: noDisplay,noCatalog
     + [1.1.1 Getting Started with Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
     + [1.1.2 Optimize your Firefly processes with Microsoft Azure and presigned URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
     + [1.1.3 Adobe Firefly & Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
-    + [1.1.4 Firefly Custom Models](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
+    + [1.1.3 Firefly Custom Models API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
   + 1.2 Creative Workflow Automation with Workfront Fusion {#module21}  
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.2/automation.md)
@@ -37,7 +37,7 @@ recommendations: noDisplay,noCatalog
 
 + 2 Content Supply Chain {#csc}  
   + 2.1 Adobe Experience Manager Cloud Service {#module21}
-     + [Overview](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
+    + [Overview](/help/tutorial-one-adobe/modules/csc/module2.1/aemcs.md)
     + [2.1.1 Create your Cloud Manager Program](/help/tutorial-one-adobe/modules/csc/module2.1/ex1.md)
     + [2.1.2 Create your document-based website](/help/tutorial-one-adobe/modules/csc/module2.1/ex2.md)
     + [2.1.3 Setup your AEM CS environment](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)

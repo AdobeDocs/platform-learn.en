@@ -14,12 +14,13 @@ In order to make the documentation reusable, **Environment Variables** were intr
 
 An example of such values can be found below. Currently, these values can't be used yet but as soon as you install and activate the Chrome extension, you'll see these variables change into normal text that you can copy and reuse.
 
-| Name     | Key | 
-|:-------------:| :---------------:|
-| AEP IMS Org ID         | `--aepImsOrgId--` |
-| AEP Tenant ID         | `--aepTenantId--` |
-| AEP Sandbox Name         | `--aepSandboxName--` | 
-| Learner Profile LDAP        | `--aepUserLdap--` | 
+| Name     | Key | Example |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
+| AEP IMS Org Name         | `--aepImsOrgName--` |`Experience Platform International`|
+| AEP Tenant ID         | `--aepTenantId--` | `_experienceplatform` |
+| AEP Sandbox Name         | `--aepSandboxName--` | `tech-insiders` |
+| Learner Profile LDAP        | `--aepUserLdap--` | `vangeluw`|
 
 As an example, in the below screenshot you can see a reference to `aepTenantId`.
 

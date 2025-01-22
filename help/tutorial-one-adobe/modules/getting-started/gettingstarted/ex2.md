@@ -15,7 +15,7 @@ Go to [https://dsn.adobe.com/](https://dsn.adobe.com/) and navigate to **Setup**
 
 ![DSN](./images/dsnsetup.png)
 
-In the **Environment** dropdown, select your AEP isntance and sandbox.
+In the **Environment** dropdown, select your AEP instance and sandbox.
 
 ![DSN](./images/dsnh1.png)
 
@@ -27,7 +27,7 @@ Next, click **Start**.
 
 ![DSN](./images/dsn2.png)
 
-In the popup, enter a name for your Data Collection properties and Experience Builder projects. Please use this naming convention: **Demo System (DD/MM/YYYY)**. FYI: your LDAP will be appended automatically, you do not need to add it yourself.
+In the popup, enter a name for your Data Collection properties and Experience Builder projects. Please use this naming convention: **One Adobe (DD/MM/YYYY)**. FYI: your LDAP will be appended automatically, you do not need to add it yourself.
 
 Click **Start**.
 
