@@ -124,6 +124,8 @@ Select your schemas and click **Add**.
 
 You'll then see this. Click **Save**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 You can now start defining links between schemas. To start defining a link, you need to click **Create links**. 
 
 ![FAC](./images/fdb16.png)
@@ -134,6 +136,9 @@ Click **Add**.
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb17.png)
@@ -141,6 +146,8 @@ You'll then be back here. Click **Create links** to create another link.
 Next, let's define the link between the tabel `CK_HOUSEHOLDS` and `CK_PERSONS`.
 
 ![FAC](./images/fdb19.png)
+
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
 
 You'll then be back here. Click **Create links** to create another link.
 
@@ -150,6 +157,9 @@ Next, let's define the link between the tabel `CK_USERS` and `CK_MONTHLY_DATA_US
 
 ![FAC](./images/fdb21.png)
 
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
+
 You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb22.png)
@@ -157,6 +167,8 @@ You'll then be back here. Click **Create links** to create another link.
 Next, let's define the link between the tabel `CK_USERS` and `CK_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
+
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
 
 You'll then be back here. Click **Create links** to create another link.
 
