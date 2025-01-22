@@ -78,7 +78,7 @@ Click **Create dataset from schema**.
 
 ![Dataset](./images/createdatasetfromschema.png)
 
-In the next screen, select the dataset you created in the previous exercise, which is named **[!UICONTROL ldap - Demo System - Customer Experience Event]**. Click **Next**.
+In the next screen, select the dataset you created in the previous exercise, which is named `--aepUserLdap-- - Demo System - Customer Experience Event`. Click **Next**.
 
 ![Dataset](./images/createds1.png)
 
