@@ -11,7 +11,7 @@ Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe
 
 ![DSN](./images/launchprop.png)
 
-In the left menu, click **[!UICONTROL Tags]**. After the previous exercise, you now have two Data Collection properties: one for web and one for mobile.
+In the left menu, click **[!UICONTROL Tags]**. After the previous exercise, you now have 3 Data Collection properties: one for web, one for mobile and one for the CX app.
 
 ![DSN](./images/launchprop1.png)
 
@@ -33,7 +33,7 @@ Click **[!UICONTROL New Datastream]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Name]**, and for the optional description, enter `--aepUserLdap-- - Demo System Datastream`. For **Mapping Schema**, select **Demo System - Event Schema for Website (Global v1.1)**. Click **Save**.
+For the **[!UICONTROL Name]**, and for the optional description, enter `--aepUserLdap-- - One Adobe Datastream`. For **Mapping Schema**, select **Demo System - Event Schema for Website (Global v1.1)**. Click **Save**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig2.png)
 
@@ -53,7 +53,7 @@ You'll now see this.
 
 In the left menu, clik **[!UICONTROL Tags]**.
 
-Filter the search results to see your two Data Collection properties. Open the property for **Web** by clicking it.
+Filter the search results to see your Data Collection properties. Open the property for **Web** by clicking it.
 
 ![Name the Edge Configuration and save](./images/edgeconfig10a.png)
 
@@ -65,7 +65,7 @@ First, click the Adobe Experience Platform Web SDK extension and then click **Co
 
 ![Name the Edge Configuration and save](./images/edgeconfig12.png)
 
-You'll then see this. Have a kook at the **Datastreams** menu and make sure the right sandbox is selected, which in you case should be `--aepSandboxName--`.
+You'll then see this. Have a look at the **Datastreams** menu and make sure the right sandbox is selected, which in you case should be `--aepSandboxName--`.
 
 ![Name the Edge Configuration and save](./images/edgeconfig12a.png)
 
@@ -109,7 +109,7 @@ Click **[!UICONTROL New Datastream]**.
 
 ![Click Datastream icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--aepUserLdap-- - Demo System Datastream (Mobile)`. For **Mapping Schema**, select **Demo System - Event Schema for Mobile App (Global v1.1)**. Click **Save**.
+For the **[!UICONTROL Friendly Name]**, and for the optional description, enter `--aepUserLdap-- - One Adobe Datastream (Mobile)`. For **Mapping Schema**, select **Demo System - Event Schema for Mobile App (Global v1.1)**. Click **Save**.
 
 Click **[!UICONTROL Save]**.
 

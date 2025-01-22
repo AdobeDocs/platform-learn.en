@@ -135,6 +135,8 @@ The query will now be pushed down into Snowflake, which will query the source da
 
 The audience is now populated, and the audience is targetable from within the AEP ecosystem.
 
+![FAC](./images/fedcomp22.png)
+
 Next Step: [Summary & benefits](./summary.md)
 
 [Go Back to Module 1.3](./fac.md)

@@ -14,14 +14,15 @@ In order to make the documentation reusable, **Environment Variables** were intr
 
 An example of such values can be found below. Currently, these values can't be used yet but as soon as you install and activate the Chrome extension, you'll see these variables change into normal text that you can copy and reuse.
 
-| Name     | Key | 
-|:-------------:| :---------------:|
-| AEP IMS Org ID         | `--aepImsOrgId--` |
-| AEP Tenant ID         | `--aepTenantId--` |
-| AEP Sandbox Name         | `--aepSandboxName--` | 
-| Learner Profile LDAP        | `--aepUserLdap--` | 
+| Name     | Key | Example |
+|:-------------:| :---------------:| :---------------:|
+| AEP IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
+| AEP IMS Org Name         | `--aepImsOrgName--` |`Experience Platform International`|
+| AEP Tenant ID         | `--aepTenantId--` | `_experienceplatform` |
+| AEP Sandbox Name         | `--aepSandboxName--` | `one-adobe` |
+| Learner Profile LDAP        | `--aepUserLdap--` | `vangeluw`|
 
-As an example, in the below screenshot you can see a reference to `aepTenantId`.
+As an example, in the below screenshot you can see a reference to `aepSandboxName`.
 
 ![DSN](./images/mod7before.png)
 
@@ -103,7 +104,7 @@ Before taking the sandbox name from the URL, you should ensure you're in the san
 
 ![DSN](./images/aepsandboxsw.png)
 
-In this example, the AEP Sandbox Name is **tech-insiders**.
+In this example, the AEP Sandbox Name is **one-adobe**.
 
 ![DSN](./images/aepsname.png)
 
@@ -113,11 +114,10 @@ This is the username that will be used as part of the tutorial. In this example,
 
 The LDAP is used to ensure that the configuration you'll be doing will be linked to you, and won't conflict with other users that may be using the same instance and sandbox that you're using.
 
-Your valus should look similar to these.
+Your values should look similar to these.
 Finally, click **Create New**.
 
 ![DSN](./images/c8a.png)
-
 
 In the left menu of the extension, you'll now see a new icon with the initials of your environment. Click it. You'll then see the mapping between the **Environment Variables** and your specific Adobe Experience Platform instance values. Click **Activate Configuration**.
 
@@ -129,11 +129,11 @@ After activating your configuration, you'll see a green dot next to the initials
 
 ## Verify tutorial content
 
-As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/datadistiller/module51/ex3).
+As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
 
-You should now see that all **Environment Variables** have been replaced by their true values, based on the activated environment in the chrome extension.
+You should now see that all **Environment Variables** on this page have been replaced by their true values, based on the activated environment in the chrome extension.
 
-You should now have a similar view to the below, where the environment variable `aepTenantId` has been replaced by your real AEP Tenant ID, which in this case is **_experienceplatform**. 
+You should now have a similar view to the below, where the environment variable `aepSandboxName` has been replaced by your real AEP Sandbox Name, which in this case is **one-adobe**. 
 
 ![DSN](./images/mod7.png)
 
