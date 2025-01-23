@@ -56,8 +56,7 @@ Your integration from Workfront to AEM Assets CS is now configured.
 
 Next, you need to configure AEM Assets so that the metadata fields from the asset in Workfront will be shared with AEM.
 
-To do that, go to [https://experience.adobe.com/
-](https://experience.adobe.com/). Click **Experience Manager Assets**.
+To do that, go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Experience Manager Assets**.
 
 ![WF](./images/wfbaem1.png)
 
