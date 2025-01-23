@@ -66,6 +66,8 @@ At this point, everything is setup. You can now do some browsing on your demo we
 
 Summary of this module and overview of the benefits.
 
+![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
+
 >[!NOTE]
 >
 >Thank you for investing your time in learning all there is to know about Adobe Experience Platform and its applications. If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
