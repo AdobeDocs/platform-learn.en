@@ -47,6 +47,7 @@ recommendations: noDisplay,noCatalog
   + 2.2 Workfront {#module22}
      + [Overview](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)
     + [2.2.1 Getting started Workfront](/help/tutorial-one-adobe/modules/csc/module2.2/ex1.md)
+    + [2.2.2 Proofing with Workfront](/help/tutorial-one-adobe/modules/csc/module2.2/ex2.md)
     + [2.2.5 Workfront + Photoshop integration](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 

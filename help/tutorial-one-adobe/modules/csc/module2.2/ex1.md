@@ -48,9 +48,93 @@ Click **Save**.
 
 ![WF](./images/wfb6.png)
 
-Your integration between Workfront and AEM Assets CS is now configured.
+Your integration from Workfront to AEM Assets CS is now configured.
 
 ![WF](./images/wfb7.png)
+
+## 2.2.1.2 Configure Metadata integration with AEM Assets
+
+Next, you need to configure AEM Assets so that the metadata fields from the asset in Workfront will be shared with AEM.
+
+To do that, go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Experience Manager Assets**.
+
+![WF](./images/wfbaem1.png)
+
+Click to select your AEM Assets environment, which should be named `--aepUserLdap-- - Citi Signal dev`.
+
+![WF](./images/wfbaem2.png)
+
+You should then see this. In the left menu, go to **Assets** and click **Create Folder**.
+
+![WF](./images/wfbaem3.png)
+
+Name your folder `--aepUserLdap-- - Workfront Assets` and click **Create**.
+
+![WF](./images/wfbaem4.png)
+
+Next, go to **Metadata Forms** in the left menu and then click **Create**.
+
+![WF](./images/wfbaem5.png)
+
+Use the name `--aepUserLdap-- - Metadata Form` and click **Create**.
+
+![WF](./images/wfbaem6.png)
+
+Add 3 new **Single Line Text** fields to the form and select the first field. Then, click the **Schema** icon next to the **Metadata property** field.
+
+![WF](./images/wfbaem7.png)
+
+In the search field, enter `wm:project` and then select the field **Project Description**. Click **Select**.
+
+![WF](./images/wfbaem8.png)
+
+Change the label of the field to **Project Description**.
+
+![WF](./images/wfbaem9.png)
+
+Next, select the 2nd **Single Line Text** field and click the **Schema** icon next to the **Metadata property** field again. 
+
+![WF](./images/wfbaem10b.png)
+
+You'll then see this popup again. In the search field, enter `wm:project` and then select the field **Project ID**. Click **Select**.
+
+![WF](./images/wfbaem10.png)
+
+Change the label of the field to **Project ID**.
+
+![WF](./images/wfbaem10a.png)
+
+Select the 3rd **Single Line Text** field and click the **Schema** icon next to the **Metadata property** field again. 
+
+![WF](./images/wfbaem11a.png)
+
+You'll then see this popup again. In the search field, enter `wm:project` and then select the field **Project Name**. Click **Select**.
+
+![WF](./images/wfbaem11.png)
+
+Change the label of the field to **Project Name**. Click **Save**.
+
+![WF](./images/wfbaem12.png)
+
+Change the **Tab name** on the form to `--aepUserLdap-- - Workfront Metadata`. Click **Save** and **Close**.
+
+![WF](./images/wfbaem13.png)
+
+Your **Metadata Form** is now configured.
+
+![WF](./images/wfbaem14.png)
+
+Next, you need to assign the Metadata Form to the folder you created before. Check the checkbox for your Metadata Form and click **Assign to Folder(s)**.
+
+![WF](./images/wfbaem15.png)
+
+Select your folder, which should be named `--aepUserLdap-- - Workfront Assets`. Click **Assign**.
+
+![WF](./images/wfbaem16.png)
+
+The Metadata Form is now assigned to your folder successfully.
+
+![WF](./images/wfbaem17.png)
 
 ## 2.2.1.2 Configure your AEM Sites Integration
 
@@ -149,6 +233,8 @@ Click **Apply**.
 You should then have 2 custom forms available.
 
 ![WF](./images/wfb20.png)
+
+Next Step: [2.2.2 Proofing with Workfront](./ex2.md){target="_blank"}
 
 [Go Back to Module 2.2](./workfront.md){target="_blank"}
 
