@@ -3,6 +3,7 @@ title: Proofing with Workfront
 description: Proofing with Workfront
 kt: 5342
 doc-type: tutorial
+exl-id: 1b5ca13b-2a32-44a1-a3ae-342bccc6baeb
 ---
 # 2.2.2 Proofing with Workfront
 
