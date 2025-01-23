@@ -125,6 +125,18 @@ Your **Metadata Form** is now configured.
 
 ![WF](./images/wfbaem14.png)
 
+Next, you need to assign the Metadata Form to the folder you created before. Check the checkbox for your Metadata Form and click **Assign to Folder(s)**.
+
+![WF](./images/wfbaem15.png)
+
+Select your folder, which should be named `--aepUserLdap-- - Workfront Assets`. Click **Assign**.
+
+![WF](./images/wfbaem16.png)
+
+The Metadata Form is now assigned to your folder successfully.
+
+![WF](./images/wfbaem17.png)
+
 ## 2.2.1.2 Configure your AEM Sites Integration
 
 >[!NOTE]

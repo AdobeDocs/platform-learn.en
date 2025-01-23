@@ -177,6 +177,8 @@ Click **Select folder**.
 
 After 1-2 minutes, your document will now be published into AEM Assets. You'll see an AEM icon next to your document name.
 
+![WF](./images/wfp37a.png)
+
 Click **Open summary**.
 
 ![WF](./images/wfp38.png)
