@@ -6,6 +6,8 @@ exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
 ---
 # Comprehensive Technical Tutorial for Adobe Experience Platform
 
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+
 ## Overview
 
 This tutorial is the perfect starting point for Data Engineers, Data Analysts, Data Architects, Data Scientists, Orchestration Engineers and Marketers to gain a full understanding of the business value of Adobe Experience Platform and all of its application services. Each lesson focuses on a real challenge businesses face in today's complex ecosystem of personalization and breaks down how Experience Platform solves that challenge in various hands-on exercises. 
@@ -176,3 +178,9 @@ In this module, you'll set up your own instance of Google Cloud Platform, load d
 In this module, you'll learn how to use Adobe Experience Platform Query Service.
 
 **Time Investment:** 90 minutes
+
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.

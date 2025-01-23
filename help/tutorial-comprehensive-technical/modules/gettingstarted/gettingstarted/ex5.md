@@ -18,6 +18,7 @@ Use the **Camera** app on your smartphone to install the mobile app for your dev
 >[!NOTE]
 >
 >After installing the app for the first time on an iOS device, you might get an error message when trying to open the app which says: **Untrusted Enterprise Developer**. In order to fix this, you need to go to **Settings > General > VPN & Device Management > Adobe Systems Inc.** and click **Trust Adobe Systems Inc.**.
+>Your iOS device will likely need to restart to complete the process of trusting a developer.
 
 Once the app is installed, you'll find it on your device's home screen. Click the icon to open the app.
 

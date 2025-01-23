@@ -44,6 +44,10 @@ If you want to take this tutorial using your own Adobe Experience Cloud instance
 - Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - Access to Demo System: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
+## Prework
+
+Verify the required applications that need to be installed on your computer [here](./prework.md){target="_blank"}.
+
 ## Content
 
 To check the status of the below content, please go to the [status page](./status.md){target="_blank"}.
