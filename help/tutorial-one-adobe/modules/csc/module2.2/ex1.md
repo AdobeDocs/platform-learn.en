@@ -150,6 +150,8 @@ You should then have 2 custom forms available.
 
 ![WF](./images/wfb20.png)
 
+Next Step: [2.2.2 Proofing with Workfront](./ex2.md){target="_blank"}
+
 [Go Back to Module 2.2](./workfront.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

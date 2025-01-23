@@ -7,17 +7,17 @@ exl-id: 42004cb9-60b3-4ca8-97d9-3d169735c98f
 ---
 # 3.1.2 Create schemas, data model and links
 
-You can now configure your federated database in AEP.
+You can now configure your federated database in Adobe Experience Platform.
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](./images/home.png)
+![Data Ingestion](./../module1.2/images/home.png)
 
 Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-![Data Ingestion](./images/sb1.png)
+![Data Ingestion](./../module1.2/images/sb1.png)
 
 ## 3.1.2.1 Set up a Federated database in AEP
 
@@ -124,6 +124,8 @@ Select your schemas and click **Add**.
 
 You'll then see this. Click **Save**.
 
+### `CK_USERS` - `CK_PERSONS`
+
 You can now start defining links between schemas. To start defining a link, you need to click **Create links**. 
 
 ![FAC](./images/fdb16.png)
@@ -134,6 +136,9 @@ Click **Add**.
 
 ![FAC](./images/fdb18.png)
 
+
+### `CK_HOUSEHOLDS` - `CK_PERSONS`
+
 You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb17.png)
@@ -142,13 +147,18 @@ Next, let's define the link between the tabel `CK_HOUSEHOLDS` and `CK_PERSONS`.
 
 ![FAC](./images/fdb19.png)
 
+### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+
 You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb20.png)
 
-Next, let's define the link between the tabel `CK_MONTHLY_DATA_USAGE` and `CK_USERS`.
+Next, let's define the link between the tabel `CK_USERS` and `CK_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
+
+
+### `CK_USERS` - `CK_HOUSEHOLDS`
 
 You'll then be back here. Click **Create links** to create another link.
 
@@ -158,8 +168,19 @@ Next, let's define the link between the tabel `CK_USERS` and `CK_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
 
-You'll then be back here. Click **Save**.
+### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+
+You'll then be back here. Click **Create links** to create another link.
+
 ![FAC](./images/fdb24.png)
+
+Next, let's define the link between the tabel `CK_USERS` and `CK_MOBILE_DATA_USAGE`.
+
+![FAC](./images/fdb25.png)
+
+You should then see this. Click **Save**.
+
+![FAC](./images/fdb26.png)
 
 Your setup in AEP is now done. You can now start using your federated data in a federated audience composition.
 
