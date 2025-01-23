@@ -1,9 +1,8 @@
 ---
-title: Create your Cloud Manager Program
-description: Create your Cloud Manager Program
+title: Proofing with Workfront
+description: Proofing with Workfront
 kt: 5342
 doc-type: tutorial
-exl-id: 75abb23f-c19f-4b8a-97dd-58a015949c1e
 ---
 # 2.2.2 Proofing with Workfront
 
