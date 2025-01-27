@@ -3,7 +3,6 @@ title: AEM CS - Advanced Custom Block
 description: AEM CS - Advanced Custom Block
 kt: 5342
 doc-type: tutorial
-exl-id: 57c08a88-d885-471b-ad78-1dba5992da9d
 ---
 # 2.1.5 Advanced Custom Block
 

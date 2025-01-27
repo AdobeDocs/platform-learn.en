@@ -163,7 +163,7 @@ In your browser, go to your GitHub account and to the repository your created fo
 
 ![Block](./images/block20.png)
 
-## 2.1.4.4 Commit your changes
+## 2.1.4.4 Add your block to a page
 
 Now that your basic quote block is defined and committed to the CitiSignal project, you can add a **fiberoffer** block to an existing page.
 
@@ -221,11 +221,64 @@ You should then see your custom block shown in the list of available blocks. Cli
 
 ![AEMCS](./images/block28.png)
 
-You'll then see fields like **Offer Text**, **Offer CTA** and **Offer Image** being added to the editor.
+You'll then see fields like **Offer Text**, **Offer CTA** and **Offer Image** being added to the editor. Click **+ Add** on the **Offer Image** field to select an image.
 
 ![AEMCS](./images/block29.png)
 
-Your basic custom block is now ready for customisation.
+You should then see this. Click to open the folder **citisignal**.
+
+![AEMCS](./images/blockpub1.png)
+
+Select the image **product-enrichment-1.png**. Click **Select**.
+
+![AEMCS](./images/blockpub2.png)
+
+You should then have this. Click **Publish**.
+
+![AEMCS](./images/blockpub3.png)
+
+Click **Publish** again.
+
+![AEMCS](./images/blockpub4.png)
+
+Your new page has now been published.
+
+## 2.1.4.5 Add your new page to the navigation menu
+
+In your AEM Sites overview, go to **CitiSignal** > **Fragments** and check the checkbox for **Header**. Click **Edit**.
+
+![AEMCS](./images/nav0.png)
+
+Add a menu option to the nav menu with the text `Fiber`. Select the text **Fiber** and click the **link** icon.
+
+![AEMCS](./images/nav1.png)
+
+Enter this for the **URL** `/us/en/citisignal-fiber` and click the **V** icon to confirm.
+
+![AEMCS](./images/nav3.png)
+
+You should then have this. Click **Publish**.
+
+![AEMCS](./images/nav4.png)
+
+Click **Publish** again.
+
+![AEMCS](./images/nav5.png)
+
+You will now be able to view the changes to your website by going to `main--citisignal--XXX.aem.page/us/en` and/or `main--citisignal--XXX.aem.live/us/en`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
+
+In this example, the full URL becomes this:
+`https://main--citisignal--woutervangeluwe.aem.page/us/en` and/or `https://main--citisignal--woutervangeluwe.aem.live/us/en`.
+
+You should then see this. Click **Fiber**.
+
+![AEMCS](./images/nav6.png)
+
+Here is your basic custom block, but now rendered on the website.
+
+![AEMCS](./images/nav7.png)
+
+
 
 Next Step: [2.1.5 Advanced Custom Block](./ex5.md){target="_blank"}
 
