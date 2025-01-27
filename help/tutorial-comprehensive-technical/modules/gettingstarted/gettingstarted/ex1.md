@@ -66,13 +66,13 @@ Enter the values as indicated below, which are all related to your Adobe Experie
 
 If you aren't sure what values to enter for these fields, follow the below guidance.
 
-**AEP IMS Org Name**
+**Adobe Experience Platform IMS Org Name**
 
 When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the name of your instance in the top right corner of your screen.
 
 ![DSN](./images/aepname.png)
 
-**AEP IMS Org ID**
+**Adobe Experience Platform IMS Org ID**
 
 The IMS Org ID is the unique identifier for your Adobe Experience Cloud instance, and it's referenced in multiple locations throughout this tutorial.
 
@@ -82,29 +82,29 @@ You may be able to find it by going to [Admin Console](https://adminconsole.adob
 
 ![DSN](./images/aepid1.png)
 
-You may also be able to find it by going to **Data Management > Queries** in your AEP menu, where you can find it under **Username**.
+You may also be able to find it by going to **Data Management > Queries** in your Adobe Experience Platform menu, where you can find it under **Username**.
 
 ![DSN](./images/aepid2.png)
 
 Please ensure to copy and paste the **@AdobeOrg** part along with the ID.
 
-**AEP Tenant ID**
+**Adobe Experience Platform Tenant ID**
 
-Your Tenant ID is the unique identifier for your organisation's AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the tenant id in the URL.
+Your Tenant ID is the unique identifier for your organisation's Adobe Experience Platform instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the tenant id in the URL.
 
 ![DSN](./images/aeptenantid.png)
 
 When you enter it in the Chrome extension, you should ensure that an underscore is added as a prefix, so in this example **experienceplatform** becomes **_experienceplatform**. Also, make sure to remove the **@** symbol when copying from the URL.
 
-**AEP Sandbox Name**
+**Adobe Experience Platform Sandbox Name**
 
-Your sandbox name is the name of the environment you'll be using in your AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the tenant id in the URL. 
+Your sandbox name is the name of the environment you'll be using in your Adobe Experience Platform instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the tenant id in the URL. 
 
 Before taking the sandbox name from the URL, you should ensure you're in the sandbox that you should use for this tutorial. You can switch to the right sandbox by clicking the sandbox switcher menu in the top right corner of your screen.
 
 ![DSN](./images/aepsandboxsw.png)
 
-In this example, the AEP Sandbox Name is **tech-insiders**.
+In this example, the Adobe Experience Platform Sandbox Name is **tech-insiders**.
 
 ![DSN](./images/aepsname.png)
 
@@ -134,7 +134,7 @@ As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform
 
 You should now see that all **Environment Variables** have been replaced by their true values, based on the activated environment in the chrome extension.
 
-You should now have a similar view to the below, where the environment variable `aepTenantId` has been replaced by your real AEP Tenant ID, which in this case is **_experienceplatform**. 
+You should now have a similar view to the below, where the environment variable `aepTenantId` has been replaced by your real Adobe Experience Platform Tenant ID, which in this case is **_experienceplatform**. 
 
 ![DSN](./images/mod7.png)
 

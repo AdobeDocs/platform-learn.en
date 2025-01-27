@@ -5,9 +5,11 @@ kt: 5342
 doc-type: tutorial
 exl-id: b69ebe41-ff28-4dde-b639-198201120742
 ---
-# 1.1 Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension
+# 1.1 Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK tag extension
 
-This foundational module introduces you to Adobe's data collection vision and explains how to get data from a website and mobile application into Adobe Experience Platform and other applications via Adobe Experience Platform Data Collection, the Adobe Experience Platform SDKs and Adobe Experience Platform Edge Network. This module introduces some concepts and technologies that have an impact beyond the scope of an Adobe Experience Platform technical tutorial. It should be clear which parts of these exercises are foundational to the rest of the comprehensive tutorial, which teach you more about Experience Edge and its capabilities, and where to go for further information and tutorials.
+This foundational module introduces you to Adobe's data collection vision and explains how to get data from a website and mobile application into Adobe Experience Platform and other applications via Adobe Experience Platform Data Collection, the Adobe Experience Platform SDKs and Adobe Experience Platform Edge Network.
+
+This module introduces some concepts and technologies that have an impact beyond the scope of an Adobe Experience Platform technical tutorial. It should be clear which parts of these exercises are foundational to the rest of the comprehensive tutorial, which teach you more about the Edge Network and its capabilities, and where to go for further information and tutorials.
 
 ## Learning Objectives
 
@@ -15,9 +17,9 @@ This foundational module introduces you to Adobe's data collection vision and ex
 - Learn the data flows used by a brand to ingest data to their Adobe products.
 - Learn how to send data to the Adobe Experience Platform and other products via the Adobe Experience Platform Edge Network.
 - Learn how to create Data Elements and Rules that collect data from Web and Mobile.
-- Learn about the Web SDK tracking events and how to debug their contents.
+- Learn about the [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) tracking events and how to debug their contents.
 - Learn what a data layer is and what Adobe recommends when implementing one.
-- Learn what the steps are to implement Web SDK from scratch.
+- Learn what the steps are to implement [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home) from scratch.
 - Learn the difference between a web and mobile implementation.
 
 ## Prerequisites
@@ -54,11 +56,11 @@ In this exercise, see and use web data collected with the Web SDK in Adobe Analy
 
 [1.1.6 Implement Adobe Target](./ex6.md)
 
-In this exercise, set-up an activity in Adobe Target, implemented via the Web SDK.
+In this exercise, set up an activity in Adobe Target, implemented via the Web SDK.
 
-[1.1.7 XDM Schema requirements in Adobe Experience Platform](./ex7.md)
+[1.1.7 XDM schema requirements in Adobe Experience Platform](./ex7.md)
 
-To ensure Web SDK and alloy.js are able to ingest data into Adobe Experience Platform, there is a requirement for a specific XDM Mixin to be part of the XDM Schema in Adobe Experience Platform.
+To ensure the Web SDK is able to ingest data into Adobe Experience Platform, there is a requirement for a specific XDM mixin to be part of the XDM schema in Adobe Experience Platform.
 
 [Summary and benefits](./summary.md)
 

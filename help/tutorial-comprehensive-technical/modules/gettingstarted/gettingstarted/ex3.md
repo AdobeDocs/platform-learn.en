@@ -1,11 +1,11 @@
 ---
-title: Getting Started - Create your Datastream
-description: Getting Started - Create your Datastream
+title: Getting Started - Create your datastream
+description: Getting Started - Create your datastream
 kt: 5342
 doc-type: tutorial
 exl-id: b3e6f66d-fb7a-43ab-aedb-45141af76d3e
 ---
-# Create your Datastream
+# Create your datastream
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
@@ -19,7 +19,7 @@ These properties are almost ready to be used, but before you can start collectin
 
 For now, please follow these steps.
 
-## Create your Datastream for Web
+## Create your datastream for web data collection
 
 Click **[!UICONTROL Datastreams]**.
 
@@ -95,7 +95,7 @@ Your changes are now being published and will be ready in a couple of minutes, a
 
 ![Name the Edge Configuration and save](./images/edgeconfig17a.png)
 
-## Create your Datastream for Mobile
+## Create your datastream for mobile data collection
 
 Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
 
