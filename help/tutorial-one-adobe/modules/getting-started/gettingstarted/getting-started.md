@@ -1,6 +1,6 @@
 ---
-title: Getting Started - Summary
-description: Getting Started - Summary
+title: Getting Started - One Adobe
+description: Getting Started - One Adobe
 kt: 5342
 doc-type: tutorial
 exl-id: 4b85938e-b7ee-4e05-b73d-112917beea08
