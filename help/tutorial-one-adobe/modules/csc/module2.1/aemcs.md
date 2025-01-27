@@ -29,9 +29,13 @@ In this getting started exercise, you'll set up your own document-based website 
 
 In this exercise you'll set up your AEM CS environment and access your CitiSignal website.
 
-[2.1.4 Develop a custom block](./ex4.md){target="_blank"}
+[2.1.4 Basic Custom Block](./ex4.md){target="_blank"}
 
-In this exercise you'll develop a custom block component for your website.
+In this exercise you'll develop a basic custom block for your website.
+
+[2.1.5 Advanced Custom Block](./ex5.md){target="_blank"}
+
+In this exercise you'll develop an advanced custom block for your website.
 
 [Summary and benefits](./summary.md){target="_blank"}
 
