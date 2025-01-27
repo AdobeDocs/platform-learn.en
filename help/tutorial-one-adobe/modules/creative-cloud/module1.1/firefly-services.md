@@ -1,5 +1,5 @@
 ---
-title: 1.1 Adobe Firefly Services
+title: Adobe Firefly Services
 description: Adobe Firefly Services
 kt: 5342
 doc-type: tutorial

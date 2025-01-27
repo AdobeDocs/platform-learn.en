@@ -19,7 +19,11 @@ Open the **Adobe Creative Cloud** app, go to **Apps**. Install Photoshop on your
 
 ![Adobe I/O New Integration](./assets/images/psd.png)
 
-## 3. Postman
+## 3. API
+
+>[!NOTE]
+>
+>If you are an Adobe employee, follow the instructions here to download and install [PostBuster](./postbuster.md)
 
 Go to [https://www.postman.com/downloads/](https://www.postman.com/downloads/). 
 

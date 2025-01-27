@@ -10,7 +10,6 @@ recommendations: noDisplay,noCatalog
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
-+ [Prework](/help/tutorial-one-adobe/prework.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
@@ -20,6 +19,8 @@ recommendations: noDisplay,noCatalog
     + [Create your Datastream](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
     + [Use the website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
     + [Use the mobile app](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+  + [Prework](/help/tutorial-one-adobe/prework.md)
+  + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Adobe Creative Cloud {#creativecloud}
   + 1.1 Adobe Firefly Services {#module11}

@@ -21,7 +21,21 @@ Your GitHub repo will then be opened in GitHub Desktop. Feel free to change the 
 
 ![Block](./images/block3.png)
 
-A local fo
+A local folder will now be created.
+
+![Block](./images/block4.png)
+
+Open Visual Studio Code. Go to **File** > **Open Folder**.
+
+![Block](./images/block5.png)
+
+
+
+![Block](./images/block6.png)
+
+
+
+![Block](./images/block7.png)
 
 
 [Go Back to Module 2.1](./aemcs.md){target="_blank"}
