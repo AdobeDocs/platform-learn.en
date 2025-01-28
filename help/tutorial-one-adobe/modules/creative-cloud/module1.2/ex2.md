@@ -1,111 +1,115 @@
 ---
 title: Use Adobe APIs within Workfront Fusion
-description: Use Adobe APIs within Workfront Fusion
-kt: 5342
-doc-type: tutorial
+description: Learn how to use Adobe APIs in Workfront Fusion
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
 ---
-# 1.2.2 Use Adobe APIs within Workfront Fusion
+# Use Adobe APIs in Workfront Fusion
 
-## 1.2.2.1 Use Firefly Text To Image API with Workfront Fusion
+Learn how to use Adobe APIs in Workfront Fusion.
 
-Hover over the second **Set multiple variables** node and click **+** to add another module.
+## Use Firefly Text To Image API with Workfront Fusion
 
-![WF Fusion](./images/wffusion48.png)
+1. Hover over the second **Set multiple variables** node and select **+** to add another module.
 
-Search for **http**, then select **HTTP**.
+  ![WF Fusion](./images/wffusion48.png)
 
-![WF Fusion](./images/wffusion49.png)
+1. Search for **http** and select **HTTP**.
 
-Select **Make a request**.
+  ![WF Fusion](./images/wffusion49.png)
 
-![WF Fusion](./images/wffusion50.png)
+1. Select **Make a request**.
 
-Select these variables:
+  ![WF Fusion](./images/wffusion50.png)
 
-- **URL**: `https://firefly-api.adobe.io/v3/images/generate`
-- **Method**: `POST`
+1. Select these variables:
 
-Click **Add a header**.
+  - **URL**: `https://firefly-api.adobe.io/v3/images/generate`
+  - **Method**: `POST`
 
-![WF Fusion](./images/wffusion51.png)
+1. Select **Add a header**.
 
-You need to enter the following headers:
+  ![WF Fusion](./images/wffusion51.png)
 
-| Key     | Value     | 
-|:-------------:| :---------------:| 
-| `x-api-key`         | your stored variable for `CONST_client_id` |
-| `Authorization`         | `Bearer ` + your stored variable for `bearer_token` |
-| `Content-Type`         | `application/json` |
-| `Accept`         | `*/*` |
+1. Enter the following headers:
 
-Enter the details for `x-api-key`. Click **Add**.
+  | Key     | Value     | 
+  |:-------------:| :---------------:| 
+  | `x-api-key`         | your stored variable for `CONST_client_id` |
+  | `Authorization`         | `Bearer ` + your stored variable for `bearer_token` |
+  | `Content-Type`         | `application/json` |
+  | `Accept`         | `*/*` |
 
-![WF Fusion](./images/wffusion52.png)
+1. Enter the details for `x-api-key`. Select **Add**.
 
-Click **Add a header**.
+  ![WF Fusion](./images/wffusion52.png)
 
-![WF Fusion](./images/wffusion53.png)
+1. Select **Add a header**.
 
-Enter the details for `Authorization`. Click **Add**.
+  ![WF Fusion](./images/wffusion53.png)
 
-![WF Fusion](./images/wffusion54.png)
+1. Enter the details for `Authorization`. Select **Add**.
 
-Click **Add a header**. Enter the details for `Content-Type`. Click **Add**.
+  ![WF Fusion](./images/wffusion54.png)
 
-![WF Fusion](./images/wffusion541.png)
+1. Select **Add a header**. Enter the details for `Content-Type`. Select **Add**.
 
-Click **Add a header**. Enter the details for `Accept`. Click **Add**.
+  ![WF Fusion](./images/wffusion541.png)
 
-![WF Fusion](./images/wffusion542.png)
+1. Select **Add a header**. Enter the details for `Accept`. Select **Add**.
 
-Set the **Body type** to **Raw**. For **Content type**, select **JSON (application/json)**.
+  ![WF Fusion](./images/wffusion542.png)
 
-![WF Fusion](./images/wffusion55.png)
+1. Set the **Body type** to **Raw**. For **Content type**, select **JSON (application/json)**.
 
-Paste this payload into the **Request content** field.
+  ![WF Fusion](./images/wffusion55.png)
 
-```json
-{
-  "numVariations": 1,
-  "size": {
-    "width": 2048,
-    "height": 2048
-  },
-  "prompt": "Horses in a field",
-  "promptBiasingLocaleCode": "en-US"
-}
-```
+1. Paste this payload into the **Request content** field.
 
-Check the checkbox for **Parse response**. Click **OK**.
+  ```json
+  {
+    "numVariations": 1,
+    "size": {
+      "width": 2048,
+      "height": 2048
+    },
+    "prompt": "Horses in a field",
+    "promptBiasingLocaleCode": "en-US"
+  }
+  ```
 
-![WF Fusion](./images/wffusion56.png)
+1. Check the box for **Parse response**. Select **OK**.
 
-Click **Run once**.
+  ![WF Fusion](./images/wffusion56.png)
 
-![WF Fusion](./images/wffusion57.png)
+1. Select **Run once**.
 
-Once your scenario has run, you should see this.
+  ![WF Fusion](./images/wffusion57.png)
 
-![WF Fusion](./images/wffusion58.png)
+  Your screen should look like this.
 
-Click the **?** icon on the fourth node, HTTP, to see the response. You should see an image file in the response.
+  ![WF Fusion](./images/wffusion58.png)
 
-![WF Fusion](./images/wffusion59.png)
+1. Select the **?** icon on the fourth node, HTTP, to see the response. You should see an image file in the response.
 
-Copy the image URL and open it in a browser window. You should then see something like this:
+  ![WF Fusion](./images/wffusion59.png)
 
-![WF Fusion](./images/wffusion60.png)
+1. Copy the image URL and open it in a browser window. Your screen should look like this:
 
-Right-click the **HTTP** object and rename it to **Firefly T2I**.
+  ![WF Fusion](./images/wffusion60.png)
 
-![WF Fusion](./images/wffusion62.png)
+1. Right-click **HTTP** and rename to **Firefly T2I**.
 
-Click **Save** to save your changes.
+  ![WF Fusion](./images/wffusion62.png)
 
-![WF Fusion](./images/wffusion61.png)
+1. Select **Save** to save your changes.
 
-## 1.2.2.2 Use Photoshop API with Workfront Fusion
+  ![WF Fusion](./images/wffusion61.png)
+
+## Use Photoshop API with Workfront Fusion
 
 Click the **wrench** icon between the nodes **Set Bearer Token** and **Firefly T2I**. Select **Add a router**.
 

@@ -4,7 +4,7 @@ description: Working with Firefly Custom Models API
 role: Developer
 level: Beginner
 jira: KT-5342
-doc-type: tutorial
+doc-type: Tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
 ---
 # Firefly Custom Models API
