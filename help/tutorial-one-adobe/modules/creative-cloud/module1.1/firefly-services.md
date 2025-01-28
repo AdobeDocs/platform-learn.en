@@ -1,41 +1,41 @@
 ---
 title: Adobe Firefly Services
 description: Adobe Firefly Services
-kt: 5342
-doc-type: tutorial
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: cbc34bda-64e6-42bc-b2f0-90aed5bfeb97
 ---
-# 1.1 Adobe Firefly Services
+# Overview of Adobe Firefly Services
 
-## Learning Objectives
-
-- Learn how to use Adobe Firefly Services in various ways.
+Learn the various ways you can use Adobe Firefly Services.
 
 ## Prerequisites
 
-- Access to Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+Access to Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/)
 
 ## Exercises
 
-[1.1.1 Getting started with Firefly Services](./ex1.md){target="_blank"}
+[Getting started with Firefly Services](./ex1.md){target="_blank"}
 
 In this exercise, explore Firefly Services and get an understanding of its capabilities.
 
-[1.1.2 Optimize your Firefly processes with Microsoft Azure and presigned URLs](./ex2.md){target="_blank"}
+[Optimize your Firefly process using Microsoft Azure and presigned URLs](./ex2.md){target="_blank"}
 
 In this exercise, explore Firefly Services and get an understanding of its capabilities.
 
-[1.1.3 Adobe Firefly & Adobe Photoshop](./ex3.md){target="_blank"}
+[Adobe Firefly & Adobe Photoshop APIs](./ex3.md){target="_blank"}
 
-In this exercise, you'll use Firefly Services together with Adobe Photoshop.
+In this exercise, learn how to use Firefly Services together with Adobe Photoshop.
 
-[1.1.4 Firefly Custom Models](./ex4.md){target="_blank"}
+[Firefly Custom Models API](./ex4.md){target="_blank"}
 
-In this exercise, you'll use Firefly Services together with Adobe Photoshop.
+In this exercise, learn how to use Firefly Customer Models API.
 
 [Summary and benefits](./summary.md){target="_blank"}
 
-Summary of this module and overview of the benefits.
+Learn about a summary and benefits of Firefly Services.
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
@@ -43,4 +43,6 @@ Summary of this module and overview of the benefits.
 >
 >If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
 
-[Go Back to All Modules](../../../overview.md){target="_blank"}
+## Next steps
+
+Go back to [All Modules](../../../overview.md){target="_blank"}

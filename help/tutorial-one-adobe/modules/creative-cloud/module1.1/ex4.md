@@ -1,16 +1,20 @@
 ---
-title: Working with Photoshop APIs
-description: Working with Photoshop APIs
-kt: 5342
+title: Firefly Custom Models API
+description: Working with Firefly Custom Models API
+role: Developer
+level: Beginner
+jira: KT-5342
 doc-type: tutorial
 exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
 ---
-# 1.1.4 Firefly Custom Models API
+# Firefly Custom Models API
 
 This content will be released at a later stage.
 
-Next Step: [Summary & Benefits](./summary.md){target="_blank"}
+## Next Steps
 
-[Go Back to Module 1.1](./firefly-services.md){target="_blank"}
+Go to [Summary & benefits](./summary.md){target="_blank"}
 
-[Go Back to All Modules](./../../../overview.md){target="_blank"}
+Go back to [Working with Photoshop APIs](./ex3.md){target="_blank"}
+
+Go back to [Overview of Adobe Firefly Services](./firefly-services.md){target="_blank"}
