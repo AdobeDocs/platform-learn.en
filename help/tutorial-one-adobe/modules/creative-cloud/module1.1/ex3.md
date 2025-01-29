@@ -1,230 +1,236 @@
 ---
 title: Working with Photoshop APIs
-description: Working with Photoshop APIs
-kt: 5342
-doc-type: tutorial
+description: Learn how to work with the Photoshop APIs and Firefly Services
+role: Developer
+level: Beginner
+jira: KT-5342
+doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
 ---
-# 1.1.3 Working with Photoshop APIs
+# Working with Photoshop APIs
 
-## 1.1.3.1 Update your Adobe I/O integration
+Learn how to work with the Photoshop APIs and Firefly Services.
 
-Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
+## Update your Adobe I/O integration
 
-![Adobe I/O New Integration](./images/iohome.png)
+1. Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
-Go to **Projects** and click to open the project you created in the previous exercise, which is called `--aepUserLdap-- Firefly`.
+  ![Adobe I/O New Integration](./images/iohome.png)
 
-![Azure Storage](./images/ps1.png)
+1. Go to **Projects** and select the project you created in the previous exercise, which is called `--aepUserLdap-- Firefly`.
 
-Click **+ Add to Project** and then click **API**.
+  ![Azure Storage](./images/ps1.png)
 
-![Azure Storage](./images/ps2.png)
+1. Select **+ Add to Project** and then select **API**.
 
-Select **Creative Cloud** and click **Photoshop - Firefly Services**. Click **Next**.
+  ![Azure Storage](./images/ps2.png)
 
-![Azure Storage](./images/ps3.png)
+1. Select **Creative Cloud** and choose **Photoshop - Firefly Services**. Select **Next**.
 
-Click **Next**.
+  ![Azure Storage](./images/ps3.png)
 
-![Azure Storage](./images/ps4.png)
+1. Select **Next**.
 
-Next, you need to select a product profile that will define what permissions are available to this integration.
+  ![Azure Storage](./images/ps4.png)
 
-Select the profile **Default Firefly Services Configuration** and **Default Creative Cloud Automation Services configuration**.
+  Next, you need to select a product profile that defines what permissions are available to this integration.
 
-Click **Save Configured API**.
+1. Select **Default Firefly Services Configuration** and **Default Creative Cloud Automation Services configuration**.
 
-![Azure Storage](./images/ps5.png)
+1. Select **Save Configured API**.
 
-Your Adobe I/O project is now updated to work with Photoshop & Firefly Services APIs.
+  ![Azure Storage](./images/ps5.png)
 
-![Azure Storage](./images/ps6.png)
+  Your Adobe I/O project is now updated to work with Photoshop and Firefly Services APIs.
 
-## 1.1.3.2 Programmatically interact with a PSD file
+  ![Azure Storage](./images/ps6.png)
 
-Download the file Go to [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} to your desktop.
+## Programmatically interact with a PSD file
 
-Open the file **citisignal-fiber.psd** in Photoshop. You should then have this.
+1. Download [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} to your desktop.
 
-![Azure Storage](./images/ps7.png)
+1. Open **citisignal-fiber.psd** in Photoshop. 
 
-In the **Layers** pane, you'll see that the designer of the file has given a unique name to each layer. You can see the layer information by opening the PSD file in Photoshop, but you can also do that programmatically.
+  ![Azure Storage](./images/ps7.png)
 
-Let's send your first API request to Photoshop APIs.
+  In the **Layers** pane, the designer of the file has given a unique name to each layer. You can see the layer information by opening the PSD file in Photoshop, but you can also do this programmatically.
 
-Go to Postman. Before sending API requests to Photoshop, you need to authenticate to Adobe I/O. OPen the request that you used before with the name **POST - Get Access Token**.
+  Let's send your first API request to Photoshop APIs.
 
-Go to **Params** and verify that the parameter **Scope** is properly set. The **Value** for **Scope** should look like this: 
+1. In Postman, before sending API requests to Photoshop, you need to authenticate to Adobe I/O. Open the previous request with the name **POST - Get Access Token**.
 
-`openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
+1. Go to **Params** and verify that the parameter **Scope** is properly set. The **Value** for **Scope** should look like this: 
 
-Then, click **Send**.
+  `openid,session,AdobeID,read_organizations,additional_info.projectedProductContext, ff_apis, firefly_api`
 
-![Azure Storage](./images/ps8.png)
+1. Select **Send**.
 
-You then have a valid access token to interact with Photoshop APIs.
+  ![Azure Storage](./images/ps8.png)
 
-![Azure Storage](./images/ps9.png)
+  Now you have a valid access token to interact with Photoshop APIs.
 
-### 1.1.3.2.1 Photoshop API - Hello World
+  ![Azure Storage](./images/ps9.png)
 
-Next, let's say hello to Photoshop APIs to test if all permissions and access is set correctly. In the collection **Photoshop**, open the request with the name **Photoshop Hello (Test Auth.)**. Click **Send**.
+### Photoshop API - Hello World
 
-![Azure Storage](./images/ps10.png)
+Next, let's say hello to Photoshop APIs to test if all permissions and access is set correctly. 
 
-You should then receive this response: **Welcome to the Photoshop API!**.
+1. In the collection **Photoshop**, open the request  **Photoshop Hello (Test Auth.)**. Select **Send**.
 
-![Azure Storage](./images/ps11.png)
+  ![Azure Storage](./images/ps10.png)
 
-Next, in order to programmatically interact with the PSD file **citisignal-fiber.psd**, you need to upload it to your storage account. You could do that manually, by dragging and dropping it into your container using Azure Storage explorer, but this time, you should do it through the API.
+  You should receive the response **Welcome to the Photoshop API!**.
 
-### 1.1.3.2.2 Upload PSD to Azure
+  ![Azure Storage](./images/ps11.png)
 
-In Postman, open the request **Upload PSD to Azure Storage Account**. In the previous exercise, you configured these environment variables in Postman, which you'll now use:
+Next, in order to programmatically interact with the PSD file **citisignal-fiber.psd**, you need to upload it to your storage account. You can do that manually-- by dragging and dropping it into your container using Azure Storage explorer--but this time you should do it through the API.
 
-- `AZURE_STORAGE_URL`
-- `AZURE_STORAGE_CONTAINER`
-- `AZURE_STORAGE_SAS_READ`
-- `AZURE_STORAGE_SAS_WRITE`
+### Upload PSD to Azure
 
-As you can see in the request **Upload PSD to Azure Storage Account**, the URL is configured to use these variables.
+1. In Postman, open the request **Upload PSD to Azure Storage Account**. In the previous exercise, you configured these environment variables in Postman, which you'll use now:
 
-![Azure Storage](./images/ps12.png)
+  - `AZURE_STORAGE_URL`
+  - `AZURE_STORAGE_CONTAINER`
+  - `AZURE_STORAGE_SAS_READ`
+  - `AZURE_STORAGE_SAS_WRITE`
 
-In **Body**, you should now add select the file **citisignal-fiber.psd**. 
+  As you can see in the request **Upload PSD to Azure Storage Account**, the URL is configured to use these variables.
 
-![Azure Storage](./images/ps13.png)
+  ![Azure Storage](./images/ps12.png)
 
-You should then have this. Click **Send**.
+1. In **Body**, select the file **citisignal-fiber.psd**. 
 
-![Azure Storage](./images/ps14.png)
+  ![Azure Storage](./images/ps13.png)
 
-You should then get this empty response back from Azure, which means that your file is stored in your container in your Azure Storage account.
+1. Your screen should look like this. Select **Send**.
 
-![Azure Storage](./images/ps15.png)
+  ![Azure Storage](./images/ps14.png)
 
-If you use Azure Storage Explorer to have a look, you'll see your file after refreshing your folder.
+  You should get this empty response back from Azure, which means that your file is stored in your container in your Azure Storage account.
 
-![Azure Storage](./images/ps16.png)
+  ![Azure Storage](./images/ps15.png)
 
-### 1.1.3.2.3 Photoshop API - Get Manifest
+If you use Azure Storage Explorer to look at your file, be sure to refresh your folder.
 
-Next, you need to get the manifest file of your PSD file. In Postman, open the request **Photoshop - Get PSD Manifest**. Go to **Body**.
+  ![Azure Storage](./images/ps16.png)
 
-The body should look like this:
+### Photoshop API - Get manifest
 
-```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "thumbnails": {
-      "type": "image/jpeg"
+Next, you need to get the manifest file of your PSD file. 
+
+1. In Postman, open the request **Photoshop - Get PSD Manifest**. Go to **Body**.
+
+  The body should look like this:
+
+  ```json
+  {
+    "inputs": [
+      {
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "thumbnails": {
+        "type": "image/jpeg"
+      }
     }
   }
-}
-```
+  ```
 
-Click **Send**.
+1. Select **Send**.
 
-In the response, you now see a link. As operations in Photoshop can sometimes take some time to complete, Photoshop will provide a status file as a response to most incoming requests. To understand what is happening with your request, you need to read the status file.
+In the response, you now see a link. As operations in Photoshop can sometimes take some time to complete, Photoshop provides a status file as a response to most incoming requests. To understand what is happening with your request, you need to read the status file.
 
-![Azure Storage](./images/ps17.png)
+  ![Azure Storage](./images/ps17.png)
 
-To read the status file, open the request **Photoshop -  Get PS Status**. You then see that this request is using a variable as a URL, which is a variable that is set by the previous request that you sent, **Photoshop - Get PSD Manifest**. Variables are set in the **Scripts** of each request.
+1. To read the status file, open the request **Photoshop -  Get PS Status**. You can see that this request is using a variable as a URL, which is a variable that is set by the previous request that you sent, **Photoshop - Get PSD Manifest**. Variables are set in the **Scripts** of each request. Select **Send**.
 
-Click **Send**.
+  ![Azure Storage](./images/ps18.png)
 
-![Azure Storage](./images/ps18.png)
+  Your screen should look like this. Currently, the status is set to **pending**, which means that the process hasn't completed yet. 
 
-You should then see this. Currently, the status is set to **pending**, which means that the process hasn't completed yet. 
+  ![Azure Storage](./images/ps19.png)
 
-![Azure Storage](./images/ps19.png)
+1. Select send a couple more times on **Photoshop -  Get PS Status**, until the status changes to **succeeded**. This may take a couple of minutes.
 
-You can click send a couple more times on the **Photoshop -  Get PS Status** request, until the status changes to **succeeded**. This may take a couple of minutes.
+When the response is available, you can see the json file contains information on all the layers of the PSD file. This is useful information, as things like the layer name or layer ID can be identified.
 
-When the response is available, you'll the a json file that contains information on all the layers of the PSD file. This is useful information, as things like the layer name or layer ID can be seen in here.
+  ![Azure Storage](./images/ps20.png)
 
-![Azure Storage](./images/ps20.png)
+  As an example, search for the text `2048x2048-cta`. Your screen should look like this:
 
-As an example, search for the text `2048x2048-cta`. You should then see this.
+  ![Azure Storage](./images/ps21.png)
 
-![Azure Storage](./images/ps21.png)
+### Photoshop API - Change Text 
 
-### 1.1.3.2.4 Photoshop API - Change Text 
+Next, you need to change the text for the call to action using the APIs. 
 
-Next, you now need to change the text for the call to action using the APIs. In Postman, open the request **Photoshop - Change Text** and go to **Body**.
+1. In Postman, open the request **Photoshop - Change Text** and go to **Body**.
 
-You should then see this. You can see that:
+  Your screen should look like this:
 
-- first, an input file is specified: `citisignal-fiber.psd`
-- second, the layer to change is specified, with the text to change to
-- third, an output file is specified: `citisignal-fiber-changed-text.psd`
+  - first, an input file is specified: `citisignal-fiber.psd`
+  - second, the layer to change is specified, with the text to change to
+  - third, an output file is specified: `citisignal-fiber-changed-text.psd`
 
-```json
-{
-  "inputs": [
-    {
-      "storage": "external",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
-    }
-  ],
-  "options": {
-    "layers": [
+  ```json
+  {
+    "inputs": [
       {
-        "name": "2048x2048-cta",
-        "text": {
-          "content": "Get Fiber now!"
+        "storage": "external",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber.psd{{AZURE_STORAGE_SAS_READ}}"
+      }
+    ],
+    "options": {
+      "layers": [
+        {
+          "name": "2048x2048-cta",
+          "text": {
+            "content": "Get Fiber now!"
+          }
         }
+      ]
+    },
+    "outputs": [
+      {
+        "storage": "azure",
+        "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
+        "type": "vnd.adobe.photoshop",
+        "overwrite": true
       }
     ]
-  },
-  "outputs": [
-    {
-      "storage": "azure",
-      "href": "{{AZURE_STORAGE_URL}}/{{AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text.psd{{AZURE_STORAGE_SAS_WRITE}}",
-      "type": "vnd.adobe.photoshop",
-      "overwrite": true
-    }
-  ]
-}
-```
+  }
+  ```
 
-The output file has a different name, as you don't want to override the original input file.
+  The output file has a different name, because you don't want to override the original input file.
 
-Click **Send**.
+1. Select **Send**.
 
-![Azure Storage](./images/ps23.png)
+  ![Azure Storage](./images/ps23.png)
 
-Just like before, the response contains a link that points to the status file that keeps track of the progress.
+  Just like before, the response contains a link that points to the status file that keeps track of the progress.
 
-![Azure Storage](./images/ps22.png)
+  ![Azure Storage](./images/ps22.png)
 
-To read the status file, open the request **Photoshop -  Get PS Status** again and click **Send**. If the status isn't set to **succeeded** immediately, wait a couple of seconds and then click **Send** again.
+1. To read the status file, open the request **Photoshop -  Get PS Status** and select **Send**. If the status isn't set to **succeeded** immediately, wait a couple of seconds and then select **Send** again.
 
-Once the status is set to **succeeded**, you should then see this. In the path `outputs[0]._links.renditions[0].href`, you should see the URL of output file that was created by Photoshop and which contains the changed text.
+1. Select the URL to download the output file.
 
-Click the URL to download the output file.
+  ![Azure Storage](./images/ps24.png)
 
-![Azure Storage](./images/ps24.png)
+1. Open **citisignal-fiber-changed-text.psd** after downloading the file to your computer. You should see the placeholder for the call to action has been replaced by the text **Get Fiber now!**.
 
-The file **citisignal-fiber-changed-text.psd** will then be downloaded to your computer, after which you can open it. You should then see that the placeholder for the call to action has been replaced by the text **Get Fiber now!**.
+  ![Azure Storage](./images/ps25.png)
 
-![Azure Storage](./images/ps25.png)
+  You can also see this file in your container using Azure Storage explorer.
 
-Lastly, you then also see that file in your container using Azure Storage explorer.
+  ![Azure Storage](./images/ps26.png)
 
-![Azure Storage](./images/ps26.png)
+## Next Steps
 
-You've now completed this exercise. 
+Go to [Firefly Custom Models API](./ex4.md){target="_blank"}
 
-Next Step: [1.1.4 Firefly Custom Models](./ex4.md){target="_blank"}
+Go back to [Overview of Adobe Firefly Services](./firefly-services.md){target="_blank"}
 
-[Go Back to Module 1.1](./firefly-services.md){target="_blank"}
-
-[Go Back to All Modules](./../../../overview.md){target="_blank"}
+Go back to [All Modules](./../../../overview.md){target="_blank"}
