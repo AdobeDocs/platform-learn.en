@@ -7,6 +7,7 @@ exl-id: 98d6f59e-b8a3-4c63-ae7c-8aa11e948f59
 # Install Adobe Experience Platform Mobile SDKs
 
 >[!CONTEXTUALHELP]
+>
 >id="platform_mobile_sdk_tutorial_install"
 >title="Install Adobe Experience Platform Mobile SDKs"
 >abstract="Learn how to implement the Adobe Experience Platform Mobile SDK in a mobile app."
