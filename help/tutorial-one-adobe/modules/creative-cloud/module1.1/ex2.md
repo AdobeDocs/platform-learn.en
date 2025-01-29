@@ -61,7 +61,7 @@ Learn how to optimize your Firefly process using Microsoft Azure and presigned U
 
 1. After confirmation select **Go to resource**.
 
-        ![Azure Storage](./images/azs5.png)
+    ![Azure Storage](./images/azs5.png)
 
 Your Azure Storage Account is now ready to be used.
 
