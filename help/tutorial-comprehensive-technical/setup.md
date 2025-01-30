@@ -1,11 +1,11 @@
 ---
 title: Setup
-description: Setup your AEP instance
+description: Setup your Adobe Experience Platform instance
 doc-type: multipage-overview
 hide: no
 exl-id: 1150c5ec-3fba-4506-8f17-c34872f9b3ea
 ---
-# Setup
+# Set up your Adobe Experience Platform instance
 
 >[!IMPORTANT]
 >
@@ -24,9 +24,9 @@ In order to take all of these tutorials in a hands-on way, the following Adobe E
 
 If a specific application service isn't provisioned for your IMS Org, then you won't be able to take that specific exercise in hands-on way.
 
-## Create Sandbox
+## Create a sandbox
 
-To go through the tutorial in your own AEP instance, it's advisable to first set up a new development sandbox. To create a new sandbox, go to [https://experience.adobe.com/platform](https://experience.adobe.com/platform), go to Sandboxes and then go to **Browse**. Click **Create sandbox**.
+To go through the tutorial in your own Adobe Experience Platform instance, it's advisable to first set up a new development sandbox. To create a new sandbox, go to [https://experience.adobe.com/platform](https://experience.adobe.com/platform), go to Sandboxes and then go to **Browse**. Click **Create sandbox**.
 
 ![Create sandbox](./assets/images/sandbox1.png)
 
@@ -34,7 +34,7 @@ Create your sandbox like this:
 
 - Type: **Development**
 - Name: **aep-tutorial** 
-- Title: **AEP Tutorial**
+- Title: **Adobe Experience Platform Tutorial**
 
 Click **Create**.
 
@@ -52,7 +52,7 @@ Click to open the specific **Role** that will be used by the learners who will g
 
 ![Create sandbox](./assets/images/perm1.png)
 
-Give your role a name like **AEP Tutorial**, click **Confirm**.
+Give your role a name like **Adobe Experience Platform Tutorial**, click **Confirm**.
 
 ![Create sandbox](./assets/images/perm2.png)
 
@@ -72,14 +72,14 @@ Add more resources as indicated and set permissions. Click **Save**. Then, click
 
 ![Create sandbox](./assets/images/perm6.png)
 
-## Setup Adobe I/O
+## Set up Adobe I/O
 
 Go to 
 [https://developer.adobe.com/console/integrations](https://developer.adobe.com/console/integrations). Ensure you're in the correct instance. Click **Create new project**.
 
 ![Create sandbox](./assets/images/io1.png)
 
-Click **+ Add to Project** and then click **API**.
+Click **Add to Project** and then click **API**.
 
 ![Create sandbox](./assets/images/io2.png)
 
@@ -95,7 +95,7 @@ Select one of the available product profiles. This product profile doesn't deter
 
 ![Create sandbox](./assets/images/io5.png)
 
-Click **+ Add to Project** and then click **API** again.
+Click **Add to Project** and then click **API** again.
 
 ![Create sandbox](./assets/images/io6.png)
 
@@ -119,7 +119,7 @@ Click **Edit Project**.
 
 ![Create sandbox](./assets/images/io11.png)
 
-Enter a new **Project Title**, such as **DSN AEP Tutorial**. Click **Save**.
+Enter a new **Project Title**, such as **DSN Adobe Experience Platform Tutorial**. Click **Save**.
 
 ![Create sandbox](./assets/images/io12.png)
 
@@ -232,7 +232,7 @@ You'll then see the progress of the ongoing installation, which will take a coup
 
 ![Create sandbox](./assets/images/dsnorg15.png)
 
-Once everything is successfully completed, your AEP instance is successfully configured and ready for learners to take the tutorial.
+Once everything is successfully completed, your Adobe Experience Platform instance is successfully configured and ready for learners to take the tutorial.
 
 >[!NOTE]
 >

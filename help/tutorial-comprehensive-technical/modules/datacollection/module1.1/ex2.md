@@ -9,19 +9,21 @@ exl-id: e97d40b5-616d-439c-9d6b-eaa4ebf5acb0
 
 ## Context
 
-In this exercise you'll create a **Datastream**. A **datastream** tells the Adobe Edge servers where to send the data after it is collected by Web SDK. For example, do you want to send the data to Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target? 
+In this exercise you'll create a **datastream**. A **datastream** tells the Adobe Edge Network servers where to send the data after it is collected by Web SDK. For example, do you want to send the data to Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target? 
 
-Datastreams are always managed in the Adobe Experience Platform Data Collection user interface and are critical to Adobe Experience Platform data collection with Web SDK. Even when you implement Web SDK with a non-Adobe tag management solution, you'll still need to create your Datastream in the Adobe Experience Platform Data Collection user interface.
+Datastreams are always managed in the Experience Platform Data Collection user interface and are critical to Experience Platform data collection with [Web SDK](https://experienceleague.adobe.com/en/docs/experience-platform/web-sdk/home). Even when you implement Web SDK with a non-Adobe tag management solution, you still need to create a datastream.
 
-You'll be implementing the Web SDK on the browser in the next exercise. It will then be more clear to you what the data that is being collected looks like. For now, we are just telling the Datastream where to forward the data.
+You'll be implementing the Web SDK on the browser in the next exercise. It will then be more clear to you what the data that is being collected looks like. For now, we are just telling the datastream where to forward the data.
 
-## Create a Datastream
+## Create a datastream
 
-In [Getting Started](./../../../modules/gettingstarted/gettingstarted/ex2.md) you already created a datastream, but we didn't discuss the background and reason for being of the Datastream. 
+In [Getting Started](./../../../modules/gettingstarted/gettingstarted/ex2.md) you already created a datastream, but we didn't discuss the background and reason for which you created it. 
 
-A satastream tells the Adobe Edge servers where to send the data after it is collected by the Web SDK. For example, do you want to send the data to Adobe Experience Platform? Adobe Analytics? Adobe Audience Manager? Adobe Target? Datastreams are managed in the Adobe Experience Platform Data Collection user interface and are critical to data collection with Web SDK, regardless of whether or not you are implementing Web SDK via Adobe Experience Platform Data Collection.
+A [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/overview) tells the Edge Network servers where to send the data after it is collected by the Web SDK. See the documentation for [adding services to a datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#add-services) for complete details on where you can send your data through the datastream.
 
-Let's review your **[!UICONTROL Datastream]**:
+Datastreams are managed in the Experience Platform Data Collection user interface and are critical to data collection with Web SDK, regardless of whether or not you are implementing Web SDK via Adobe Experience Platform Data Collection.
+
+Let's review your **[!UICONTROL datastream]**:
 
 Go to [https://experience.adobe.com/launch/](https://experience.adobe.com/launch/).
 
@@ -54,8 +56,8 @@ For this datastream...
 - All Profile data will be collected by default into the dataset **Demo System - Profile Dataset for Website (Global v1.1)** (ingesting profile data natively with Web SDK currently isn't supported yet by Web SDK)
 - If you want to use the **Offer Decisioning** application service for this datastream, you need to check the box for Offer Decisioning. (This will be part of [Module 3.3](./../../../modules/ajo-b2c/module3.3/offer-decisioning.md))
 - **Edge Segmentation** is enabled by default, which means that qualifying audiences will be evaluated at the edge, upon ingestion of incoming traffic
-- If you want to use the **Personalization Destinations**, you need to check the box for Personalization Destinations.
-- - If you want to use **Adobe Journey Optimizer**'s capabilities in this datastream, you need to check the box for Adobe Journey Optimizer.
+- If you want to use [personalization destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview), check the box for **Personalization Destinations**.
+- If you want to use **Adobe Journey Optimizer**'s capabilities in this datastream, you need to check the box for **Adobe Journey Optimizer**.
 
 
 For now, no other configuration is needed for your datastream.

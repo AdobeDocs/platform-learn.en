@@ -30,7 +30,7 @@ In this exercise you'll install and configure the Chrome extension so you can us
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
-[Create your Datastream](./ex3.md)
+[Create your datastream](./ex3.md)
 
 In this exercise you'll use Demo System Next to setup your Launch properties for Web and Mobile.
 
