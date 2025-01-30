@@ -5,7 +5,7 @@ exl-id: 86849319-d2ad-4338-aa1a-d307d8807d4a
 ---
 # Target at.js to Platform Web SDK migration overview
 
-The level of effort to migrate from at.js to Platform Web SDK depends on the complexity of your current implementation and product features used.
+The level of effort to migrate from the Target extension to the Decisioning extension depends on the complexity of your current implementation and product features used.
 
 No matter how simple or complex your implementation is, it's important to fully understand your current  state before migrating. This guide helps you to break down the components of your current implementation and develop a manageable plan to migrate each piece. 
 
@@ -13,10 +13,10 @@ The migration process involves the following key steps:
 
 1. Assess your current implementation and determine a migration approach
 1. Set up the initial components to connect to the Adobe Experience Platform Edge Network
-1. Update the foundational implementation to replace at.js with the Platform Web SDK
-1. Enhance the Platform Web SDK implementation for your specific use cases. This may involve passing additional parameters, accounting for single-page app (SPA) view changes, using response tokens, and more.
-1. Update objects in the Target interface, such as profile scripts, activities, and audience definitions
-1. Validate the final implementation before making the switch in your production environment
+1. Update your implementation to replace the Target SDK with the XYZ
+1. Enhance the Platform Mobile SDK implementation for your specific use cases. This may involve passing additional parameters, XYZ.
+1. Update objects in the Target interface, such as profile scripts, activities, and audience definitions ???
+1. Validate the final implementation before publishing your updated app
 
 ## Key differences between at.js and Platform Web SDK
 
@@ -28,7 +28,7 @@ The Platform Web SDK combines the functionality of multiple Adobe applications i
 
 | | Target at.js 2.x | Platform Web SDK |
 |---|---|---|
-| Ownership | The at.js library is independent from other application libraries. Customizations and ownership of these disparate libraries may align to different teams in the organization. | The Platform Web SDK library and the data passed is unified for all Adobe applications. Ownership of the Platform Web SDK implementation should represent stakeholders of all downstream applications. |
+| Ownership | The Target extension is independent from other application SDKs (DON'T THINK THIS IS TRUE FOR MOBILE). Customizations and ownership of these disparate libraries may align to different teams in the organization. | The Platform Web SDK library and the data passed is unified for all Adobe applications. Ownership of the Platform Web SDK implementation should represent stakeholders of all downstream applications. |
 | Maintenance | Separate teams may work on implementation enhancements for each Adobe application, like Target and Analytics. | Ideally, a single team should be responsible for enhancements that impact the Platform Web SDK implementation. |
 | Process | Changes to a Target implementation may follow a process that has a different cadence or QA requirements compared to other applications like Analytics. | Changes to a Platform Web SDK implementation should consider all downstream applications, and the QA and publish process should be adjusted accordingly. |
 | Collaboration | Data specific to Target can be passed directly in the Target calls. Depending on the implementation, there may be additional Target calls. This has no direct impact on Adobe Analytics data and coordination with the analytics team is not as critical. | Data passed in Platform Web SDK calls can be forwarded to both Target and Analytics. Coordination between teams is required to ensure that changes do not adversely impact a specific application. |
