@@ -10,7 +10,6 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-16755
-index: no
 ---
 
 # Migrate Adobe Analytics to Web SDK using Tags {#migrate-analytics-to-websdk}
