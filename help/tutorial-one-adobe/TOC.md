@@ -45,6 +45,7 @@ recommendations: noDisplay,noCatalog
     + [2.1.3 Setup your AEM CS environment](/help/tutorial-one-adobe/modules/csc/module2.1/ex3.md)
     + [2.1.4 Basic Custom Block](/help/tutorial-one-adobe/modules/csc/module2.1/ex4.md)
     + [2.1.5 Advanced Custom Block](/help/tutorial-one-adobe/modules/csc/module2.1/ex5.md)
+    + [2.1.6 AEM Edge Delivery Services MarTech plugin](/help/tutorial-one-adobe/modules/csc/module2.1/ex6.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/csc/module2.1/summary.md)
   + 2.2 Workfront {#module22}
      + [Overview](/help/tutorial-one-adobe/modules/csc/module2.2/workfront.md)

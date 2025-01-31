@@ -76,8 +76,11 @@ You'll use a shared dataset. The shared dataset has been created already and is 
 
 ![Data Ingestion](./images/emeacrmoverview.png)
 
-
 On the overview screen, you can see 3 main pieces of information.
+
+>[!NOTE]
+>
+>It's possible that the view of your dataset is empty, if no activity has occurred in the last 7 days.
 
 ![Data Ingestion](./images/dashboard.png)
 
@@ -140,6 +143,10 @@ Click **Next**.
 You now need to map the column headers from your CSV file with an XDM-property in your **[!UICONTROL Demo System - Profile Dataset for CRM]**.
 
 Adobe Experience Platform has already made some proposals for you, by trying to link the [!UICONTROL Source Attributes] with the [!UICONTROL Target Schema Fields].
+
+>[!NOTE]
+>
+>If you see any errors on the mapping screen, don't worry. After following the below instructions, those errors will be resolved.
 
 ![Data Ingestion](./images/mapschema.png)
 
@@ -245,7 +252,7 @@ Let's restrict identity data for the entire dataset. Hover over your dataset nam
 
 ![Data Ingestion](./images/pencil.png)
 
-Go to **[!UICONTROL Identity Data]** and you'll see that the **[!UICONTROL I2]** option is checked - this will assume that all pieces of information in this dataset are at least indirectly identifiable to the person.
+Go to **[!UICONTROL Identity Labels]** and you'll see that the **[!UICONTROL I2]** option is checked - this will assume that all pieces of information in this dataset are at least indirectly identifiable to the person.
 
 Click **[!UICONTROL Save Changes]**.
 

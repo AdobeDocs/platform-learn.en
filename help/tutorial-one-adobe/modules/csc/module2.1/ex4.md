@@ -278,8 +278,6 @@ Here is your basic custom block, but now rendered on the website.
 
 ![AEMCS](./images/nav7.png)
 
-
-
 Next Step: [2.1.5 Advanced Custom Block](./ex5.md){target="_blank"}
 
 [Go Back to Module 2.1](./aemcs.md){target="_blank"}

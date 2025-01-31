@@ -85,7 +85,7 @@ Save your changes.
 
 You've now made several changes in your project that need to be committed back to your GitHub repository. To do that, open **GitHub Desktop**.
 
-You should then see the 3 files that you just edited under **Changes**. Review your changes.
+You should then see the 2 files that you just edited under **Changes**. Review your changes.
 
 Enter a name for your PR, `js css`. Click **Commit to main**.
 
@@ -338,7 +338,7 @@ You should then see this.
 
 ![Block](./images/blockadv20.png)
 
-Next Step: [Summary & Benefits](./summary.md){target="_blank"}
+Next Step: [2.1.6 AEM Edge Delivery Services MarTech plugin](./ex6.md){target="_blank"}
 
 [Go Back to Module 2.1](./aemcs.md){target="_blank"}
 
