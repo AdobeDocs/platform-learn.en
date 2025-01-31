@@ -3,6 +3,7 @@ title: AEM CS - Advanced Custom Block
 description: AEM CS - Advanced Custom Block
 kt: 5342
 doc-type: tutorial
+exl-id: 8a2c6327-8d3d-4048-bf89-9d4371e18e1b
 ---
 # 2.1.6 AEM Edge Delivery Services MarTech plugin
 
