@@ -43,7 +43,7 @@ Click the Adobe logo icon in the top left corner of your screen to open the Prof
   
 ![Demo](./images/pv1.png)
 
-Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for thi currently unknown customer.
+Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for this currently unknown customer.
       
 ![Demo](./images/pv2.png)
 
@@ -59,7 +59,11 @@ You'll then see the product detail page. An Experience Event of type **Product V
   
 ![Demo](./images/pv5.png)
   
-Open the Provile Viewer panel and have a look at your **Experience Events**.
+Open the Profile Viewer panel and have a look at your **Experience Events**.
+
+>[!NOTE]
+>
+>If you don't see the event show up immediately, please refresh the page.
   
 ![Demo](./images/pv6.png)
   

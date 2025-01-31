@@ -24,7 +24,7 @@ There are 2 types of data that we want to capture:
 
 However, the question **Who is this customer?** is a very open question that has many answers. When your organisation wants to see this question answered, you're looking for demographic information like First Name, Last Name and Address. But also for contact information like an Email Address or a Mobile Phone Number. And also for information linked to Language, OptIn/OptOut and maybe even Profile Pictures. And finally, what you really need to know, is how we'll be identifying this customer in the various systems that your organisation uses.
 
-The same thing goes for the question **What does this customer do?**. It's a very open question with many answers. When your organisation wants to see this question answered, you're looking for any interaction a customer has has had with any of your online and offline properties. Which pages or products have been visited? Has this customer added a product to his cart or even purchased an item? What device and browser has been used to browse the website? What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer? And finally, what we really need to know, is how we'll be identifying this customer in the various systems that your organisation will use.
+The same thing goes for the question **What does this customer do?**. It's a very open question with many answers. When your organisation wants to see this question answered, you're looking for any interaction a customer has had with any of your online and offline properties. Which pages or products have been visited? Has this customer added a product to his cart or even purchased an item? What device and browser has been used to browse the website? What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer? And finally, what we really need to know, is how we'll be identifying this customer in the various systems that your organisation will use.
 
 ## Who is this customer
 
@@ -134,7 +134,7 @@ You now have this schema structure in place.
 ![Data Ingestion](./images/schemastructurem.png)
 
 Your new [!UICONTROL Field Group] is still empty, so now you'll have to add fields to that [!UICONTROL Field Group].
-In the [!UICONTROL Field Group]-list, click your custom [!UICONTROL Field Group].
+In the [!UICONTROL Field Group]-list, click your custom [!UICONTROL Field Group], then click **Browse**.
 
 ![Data Ingestion](./images/schemastructurem.png)
 
@@ -283,7 +283,7 @@ From a schema perspective, we look at this as a **[!UICONTROL Class]**. The ques
 
 So when you create an [!UICONTROL XDM Schema] to capture the answer to **What does this customer do?**, first of all, you'll need to create and define 1 schema that references the class **[!UICONTROL ExperienceEvent]**.
 
-To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Field Group]. [!UICONTROL Field Groups] are extensions of the [!UICONTROL ExperienceEvent]-class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the [!UICONTROL Field Group] **Commerce Details**.
+To specify what kind of answers can be given to that question, you'll need to define [!UICONTROL Field Group]. [!UICONTROL Field Groups] are extensions of the [!UICONTROL ExperienceEvent] Class, and have very specific configurations. For instance, information about what kind of products a customer viewed or added to their cart is part of the [!UICONTROL Field Group] **Commerce Details**.
 
 Secondly, your organisation needs to decide how you'll identify the behavior of this customer. Since we're talking about interactions on a website, it's possible that your organisation knows the customer but it's equally possible that an unknown, anonymous visitor is active on the website. So we can't use an identifier like email-address. In this case, your organisation will probably decide to use the [!UICONTROL Experience Cloud ID (ECID)] as the primary identifier.
 
@@ -299,7 +299,7 @@ Before you continue, you need to select a **[!UICONTROL sandbox]**. The [!UICONT
 
 ![Data Ingestion](./images/sb1.png)
 
-In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen.
+In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen and go to **Browse**.
 
 ![Data Ingestion](./images/menuschemas.png)
 
@@ -327,7 +327,7 @@ Now you need to define what an answer to the question **What does this customer 
 In the introduction of this lab, we noted the need for following attributes to define what a customer does:
 
 - Which pages or products have been visited? 
-- Has this customer added a product to his cart or even purchased an item? 
+- Has this customer added a product to their cart or even purchased an item? 
 - What device and browser has been used to browse the website? 
 - What kind of information is this customer looking for and how can we use that to configure and deliver a delightful experience to this customer?
 - Primary Identifier for a customer
@@ -440,10 +440,10 @@ Click **[!UICONTROL Save]** to save your changes.
 ![Data Ingestion](./images/applyidenee.png)
 
 It's important to note that when eventually ingesting data against this schema, that some fields are required.
-For instance, the fields **[!UICONTROL _id]** and **[!UICONTROL timestamp]** are required fields.
+For instance, the fields **[!UICONTROL _id]** and **[!UICONTROL timestamp]** are required fields, which is a requirement that is imposed by the ExperienceEvent Class.
 
 - _id needs to contain a unique id for a specific data ingestion
-- timestamp needs to be the timestamp of this hit, in the format **[!UICONTROL "YYYY-MM-DDTHH:MM:SSSZ"]**, like for instance: **[!UICONTROL "2024-11-18T07:20:000Z"]**
+- timestamp needs to be the timestamp of this hit, in the format **`"YYYY-MM-DDTHH:MM:SSSZ"`**, like for instance: **`"2024-11-18T07:20:000Z"`**
 
 You have now defined a schema, linked existing and newly created [!UICONTROL Field Groups] and have defined identifiers.
 
