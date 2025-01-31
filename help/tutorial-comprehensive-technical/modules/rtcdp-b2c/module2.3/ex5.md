@@ -193,7 +193,7 @@ If you now go back to your demo website and visit the product page for Galaxy S2
 
 ![RTCDP](./images/atform13.png)
 
-Next Step: [2.3.6 External Audiences](./ex6.md)
+Next Step: [2.3.6 Destinations SDK](./ex6.md)
 
 [Go Back to Module 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

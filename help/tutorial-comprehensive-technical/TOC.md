@@ -70,8 +70,7 @@ recommendations: noDisplay,noCatalog
     + [2.3.3 Take Action: send your audience to DV360](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
     + [2.3.4 Take Action: send your audience to an S3-destination](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
     + [2.3.5 Take Action: send your audience to Adobe Target](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
-    + [2.3.6 External Audiences](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
-    + [2.3.7 Destinations SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
+    + [2.3.6 Destinations SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
   + 2.4 Real-Time CDP: Audience Activation to Microsoft Azure Event Hub {#module24}
     + [Overview](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
