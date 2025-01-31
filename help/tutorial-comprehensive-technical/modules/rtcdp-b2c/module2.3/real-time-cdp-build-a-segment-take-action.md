@@ -50,7 +50,7 @@ Use the audience you created and send it to an S3-destination, typically used fo
 
 Use the audience you created to configure an Experience Targeting Activity in Adobe Target.
 
-[2.3.6 Destinations SDK](./ex7.md)
+[2.3.6 Destinations SDK](./ex6.md)
 
 Configure your own destination using Destinations SDK.
 
