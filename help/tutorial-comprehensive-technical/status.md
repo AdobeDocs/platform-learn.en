@@ -30,4 +30,10 @@ Below is an overview of the status of the content in this tutorial.
 
 {style="table-layout:auto"}
 
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
+
 [Go Back to All Modules](./overview.md)
