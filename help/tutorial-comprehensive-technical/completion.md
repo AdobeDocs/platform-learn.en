@@ -148,4 +148,10 @@ The ID looks like this: **675033c903fb3b2aefed8a0a**.
 
 ![12](./assets/images/completemodule7.png)
 
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
+
 [Go Back to All Modules](./overview.md)
