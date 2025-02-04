@@ -48,6 +48,7 @@ auto-video-transcripts: true
   + [Validate responses](/help/platform/ai-assistant/validate-responses.md)
   + [Discoverability panel](/help/platform/ai-assistant/discoverability-panel.md)
   + [Find unused audiences](/help/platform/ai-assistant/find-unused-audiences.md)
+  + [Operational insights](/help/platform/ai-assistant/operational-insights.md)
   + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
 + Audiences and Segmentation {#audiences}
@@ -135,6 +136,8 @@ auto-video-transcripts: true
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
   + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
+  + Identity graph linking rules {#graph-linking-rules}
+    + [Graph simulation](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
   + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
   + [Attribution AI overview](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
