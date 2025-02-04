@@ -95,7 +95,7 @@ After pasting the above code, you need to manually update the field **urlBasedDe
 
 ![Data Ingestion](./images/sdkpm4.png)
 
-After updating the field **urlBasedDestiantion.url.value**, it should look like this. Click **Send**.
+After updating the field **urlBasedDestination.url.value**, it should look like this. Click **Send**.
 
 ![Data Ingestion](./images/sdkpm5.png)
 

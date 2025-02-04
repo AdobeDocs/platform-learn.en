@@ -33,7 +33,7 @@ Click **Choose a File**.
 
 ![PostBuster](./assets/images/pb4.png)
 
-Select the file **postbuster.json**. Click **Open**.
+Select the file **aep_tutorial.json**. Click **Open**.
 
 ![PostBuster](./assets/images/pb5.png)
 
@@ -71,6 +71,9 @@ Copy the below environment placeholder and paste it in the **Base Environment**.
 	"SCOPES": [
 		"openid",
 		"AdobeID",
+		"read_organizations",
+		"additional_info.projectedProductContext",
+		"session",
 		"ff_apis",
 		"firefly_api"
 	],
@@ -79,10 +82,8 @@ Copy the below environment placeholder and paste it in the **Base Environment**.
 	"IMS_ORG": "",
 	"access_token": "",
 	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"QS_QUERY_ID": "",
+	"SANDBOX_NAME": ""
 }
 ```
 
@@ -90,7 +91,7 @@ You should then have this.
 
 ![PostBuster](./assets/images/pb12.png)
 
-After going through the **Firefly Services** module, your environment should look like this. You don't need to do this now, this will be addressed at a later stage.
+After creating your Adobe IO project, your environment should look like this. You don't need to do this now, this will be addressed at a later stage.
 
 ![PostBuster](./assets/images/pb13.png)
 
