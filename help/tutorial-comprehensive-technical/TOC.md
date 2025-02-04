@@ -21,6 +21,7 @@ recommendations: noDisplay,noCatalog
     + [Create your Datastream](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
     + [Use the website](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
     + [Use the mobile app](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+  + [PostBuster](/help/tutorial-comprehensive-technical/postbuster.md)
 
 + 1 Data Collection {#datacollection}
   + 1.1 Adobe Experience Platform Data Collection and Web SDK {#module11}

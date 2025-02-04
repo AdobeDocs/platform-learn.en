@@ -1,6 +1,6 @@
 ---
-title: Create your Cloud Manager Program
-description: Create your Cloud Manager Program
+title: AEM CS - Create your document-based website
+description: AEM CS - Create your document-based website
 kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f

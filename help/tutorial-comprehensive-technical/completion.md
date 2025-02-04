@@ -16,7 +16,7 @@ Below are the expected proofs of completion for every module.
 
 The expected proof of completion for module **Getting Started** is the ID of the Demo System project for web that you created.
 
-The ID of the Demo System project for web format looks like this: `--demoProfileLdap-- - QIMU`.
+The ID of the Demo System project for web format looks like this: `--aepUserLdap-- - QIMU`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -46,7 +46,7 @@ The ID of the Federated Data Model looks like this: **DMO5110** and can be taken
 
 ## 2.1 Real-time Customer Profile
 
-The expected proof of completion for module **Real-Time Customer Profile** is the **Audience ID** of the audience that you created through the UI, `--demoProfileLdap-- - Male customers with interest in iPhone 15 Pro`.
+The expected proof of completion for module **Real-Time Customer Profile** is the **Audience ID** of the audience that you created through the UI, `--aepUserLdap-- - Male customers with interest in iPhone 15 Pro`.
 
 The Audience ID looks like this: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
@@ -54,7 +54,7 @@ The Audience ID looks like this: **81a9acbe-12e6-424b-b658-abba3a435c83**.
 
 ## 2.2 Intelligent Services
 
-The expected proof of completion for module **Intelligent Services** is the **Audience ID** of the audience that you created through the UI, `--demoProfileLdap-- - Customer AI High Propensity`.
+The expected proof of completion for module **Intelligent Services** is the **Audience ID** of the audience that you created through the UI, `--aepUserLdap-- - Customer AI High Propensity`.
 
 The Audience ID looks like this: **cb6db21d-8fa3-484a-93ac-25aa1ab48412**.
 
@@ -86,7 +86,7 @@ You can find the **Event Forwarding Property ID**, which looks like this **PRa18
 
 ## 2.6 Stream data from Apache Kafka into Real-Time CDP 
 
-The expected proof of completion for module **Stream data from Apache Kafka into Real-Time CDP** is the ID of your source connector `--demoProfileLdap-- - Kafka`.
+The expected proof of completion for module **Stream data from Apache Kafka into Real-Time CDP** is the ID of your source connector `--aepUserLdap-- - Kafka`.
 
 The ID looks like this **f843d50a-ee30-4ca8-a766-0e4f3d29a2f7**, and you can find it here:
 
@@ -126,7 +126,7 @@ The ID of the journey looks like this: **5f5efc7e-49f7-44c1-85df-b23482b38d32**,
 
 ## 4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace
 
-The expected proof of completion for module **Customer Journey Analytics: Build a dashboard using Analysis Workspace** is the ID of your project `--demoProfileLdap-- - Omnichannel Analysis`.
+The expected proof of completion for module **Customer Journey Analytics: Build a dashboard using Analysis Workspace** is the ID of your project `--aepUserLdap-- - Omnichannel Analysis`.
 
 The format looks like this: **677bcb247064db3c7de2a0e4**, you can find it in the URL when you've opened your project.
 
@@ -142,7 +142,7 @@ You can find the **BigQuery Connection ID**, which looks like this **b63a810c-a8
 
 ## 5.1 Query Service
 
-The expected proof of completion for module **Query Service** is the Dataset ID for your `--demoProfileLdap--_callcenter_interaction_analysis` - dataset that you get after completing the module.
+The expected proof of completion for module **Query Service** is the Dataset ID for your `--aepUserLdap--_callcenter_interaction_analysis` - dataset that you get after completing the module.
 
 The ID looks like this: **675033c903fb3b2aefed8a0a**.
 
