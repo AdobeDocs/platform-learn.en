@@ -11,9 +11,17 @@ exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
 
 In this exercise you'll be using Adobe I/O again to query Adobe Experience Platform's API's. If you haven't configured your Adobe I/O project yet, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there.
 
-## Postman authentication to Adobe I/O
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
 
-In this exercise you'll be using Postman again to query Adobe Experience Platform's API's. If you haven't configured your Postman appmlication yet, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there.
+## Authentication to Adobe I/O
+
+In this exercise you'll be using Postman again to query Adobe Experience Platform's API's. If you haven't configured your Postman application yet, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there.
+
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
 
 ## Define endpoint and format
 
@@ -95,7 +103,7 @@ After pasting the above code, you need to manually update the field **urlBasedDe
 
 ![Data Ingestion](./images/sdkpm4.png)
 
-After updating the field **urlBasedDestiantion.url.value**, it should look like this. Click **Send**.
+After updating the field **urlBasedDestination.url.value**, it should look like this. Click **Send**.
 
 ![Data Ingestion](./images/sdkpm5.png)
 

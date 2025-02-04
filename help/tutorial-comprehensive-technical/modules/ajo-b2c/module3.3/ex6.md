@@ -9,6 +9,10 @@ exl-id: 75515a3e-5df8-42ed-95dc-daae60ee9c72
 
 ## 3.3.6.1 Work with the Offer Decisioning API using Postman
 
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
+
 Download [this Postman Collection for Offer Decisioning](./../../../assets/postman/postman_offer-decisioning.zip) to your desktop and unzip it. You'll then have this:
 
 ![OD API](./images/unzip.png)

@@ -46,6 +46,10 @@ limit 10;
 
 ## Queries
 
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
+
 Open Postman on your computer. As part of Module 2.1, you created a Postman environment and imported a Postman collection. Follow the instructions in [Exercise 2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md) in case you haven't done that yet. 
 
 As part of the Postman collection you imported, you'll see a folder **3. Query Service**. If you don't see this folder, please redownload the [Postman collection](./../../../assets/postman/postman_profile.zip) and reimport that collection in Postman as instructed in [Exercise 2.1.3](./../../../modules/rtcdp-b2c/module2.1/ex3.md).

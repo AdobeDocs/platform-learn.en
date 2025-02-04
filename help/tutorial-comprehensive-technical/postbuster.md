@@ -10,6 +10,15 @@ exl-id: a798e9d7-bb99-4390-885f-5fbd2ef4cee9
 >
 >The below instructions are only intended for Adobe employees.
 
+>[!IMPORTANT]
+>
+>By following the below instructions, you will have all the required API collections available already that will be used in these exercises:
+>
+>- [2.1.3 Visualize your own real-time customer profile - API](./modules/rtcdp-b2c/module2.1/ex3.md)
+>- [2.3.6 Destinations SDK](./modules/rtcdp-b2c/module2.3/ex6.md)
+>- [3.3.6 Test your decision using the API](./modules/ajo-b2c/module3.3/ex6.md)
+>- [5.1.8 Query Service API](./modules/datadistiller/module5.1/ex8.md)
+
 ## Install PostBuster
 
 Go to [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542). 
@@ -34,7 +43,7 @@ Click **Choose a File**.
 
 ![PostBuster](./assets/images/pb4.png)
 
-Select the file **postbuster.json**. Click **Open**.
+Select the file **aep_tutorial.json**. Click **Open**.
 
 ![PostBuster](./assets/images/pb5.png)
 
@@ -72,6 +81,9 @@ Copy the below environment placeholder and paste it in the **Base Environment**.
 	"SCOPES": [
 		"openid",
 		"AdobeID",
+		"read_organizations",
+		"additional_info.projectedProductContext",
+		"session",
 		"ff_apis",
 		"firefly_api"
 	],
@@ -80,10 +92,8 @@ Copy the below environment placeholder and paste it in the **Base Environment**.
 	"IMS_ORG": "",
 	"access_token": "",
 	"IMS_TOKEN": "",
-	"AZURE_STORAGE_URL": "",
-	"AZURE_STORAGE_CONTAINER": "",
-	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"QS_QUERY_ID": "",
+	"SANDBOX_NAME": ""
 }
 ```
 
@@ -91,7 +101,7 @@ You should then have this.
 
 ![PostBuster](./assets/images/pb12.png)
 
-After going through the **Firefly Services** module, your environment should look like this. You don't need to do this now, this will be addressed at a later stage.
+After creating your Adobe IO project, your environment should look like this. You don't need to do this now, this will be addressed at a later stage.
 
 ![PostBuster](./assets/images/pb13.png)
 
