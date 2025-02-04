@@ -87,7 +87,7 @@ So far, you've changed text in a Photoshop file by a static value. In order to s
 
     ![WF Fusion](./images/wffusion215.png)
 
-## Active your scenario using a webhook
+## Activate your scenario using a webhook
 
 So far, you've run your scenario manually to test. Let's now update your scenario with a webhook, so that it can be activated from an external enviroment.
 

@@ -197,7 +197,7 @@ Enter your description. Your proof and document settings are now done.
 
 ## 2.2.2.5 View your file in AEM Assets
 
-Go to your folder in AEM Assets, which is named `--aepUserLdap - Workfront Assets`.
+Go to your folder in AEM Assets, which is named `--aepUserLdap-- - Workfront Assets`.
 
 ![WF](./images/wfppaem1.png)
 

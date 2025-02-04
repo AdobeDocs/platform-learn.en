@@ -1,6 +1,6 @@
 ---
-title: AEM CS - Advanced Custom Block
-description: AEM CS - Advanced Custom Block
+title: AEM CS - MarTech plugin
+description: AEM CS - MarTech plugin
 kt: 5342
 doc-type: tutorial
 ---
