@@ -9,6 +9,15 @@ doc-type: multipage-overview
 >
 >The below instructions are only intended for Adobe employees.
 
+>[!IMPORTANT]
+>
+>By following the below instructions, you will have all the required API collections available already that will be used in these exercises:
+>
+>- [2.1.3 Visualize your own real-time customer profile - API](./modules/rtcdp-b2c/module2.1/ex3.md)
+>- [2.3.6 Destinations SDK](./modules/rtcdp-b2c/module2.3/ex6.md)
+>- [3.3.6 Test your decision using the API](./modules/ajo-b2c/module3.3/ex6.md)
+>- [5.1.8 Query Service API](./modules/datadistiller/module5.1/ex8.md)
+
 ## Install PostBuster
 
 Go to [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542). 
