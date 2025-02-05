@@ -16,8 +16,6 @@ hide: yes
 
 + [Tutorial introduction](overview.md)
 
-+ [Migration overview](migration-overview.md)
-
 + [Plan the migration](plan-migration.md)
 
 + [Compare Target extension to the Decisioning extension](detailed-comparison.md)
