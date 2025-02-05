@@ -12,29 +12,14 @@ Adobe Experience Platform Mobile SDK powers end-to-end engagement in your mobile
 
 ## Key benefits
 
-Some of the benefits of the Decisioning extension include:
+Some of the benefits of the Adobe Journey Optimizer Decisioning extension compared to the Target extension include:
 
 * Faster sharing of audiences from [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
 * Integrating Target with Journey Optimizer to support [Offer Decisioning delivery](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
 * A tighter integration with Adobe Analytics which does not rely on stitching information from separate network calls
 * Additional implementation flexibility for developers
 
-Arguably, the largest benefit to Target customers of migrating is for integration with Real-Time Customer Data Platform. Real-Time CDP offers tremendous audience-building capabilities based on the full range of data ingested into Experience Platform and its Real-time Customer Profile capability. A built-in data governance framework, automates responsible use of that data. Customer AI allows you to easily use machine learning models to construct propensity and churn models whose output can be shared back to Adobe Target. And finally, customers of the optional Healthcare and Privacy & Security Shield addons can use the consent enforcement feature to easily enforce individual customers' consent preferences. Platform Mobile SDK and the Decisioning extension is a requirement to use these Real-Time CDP features in your mobile channel.
-
-## Learning objectives
-
-At the end of this tutorial, you will be able to:
-
-* Bullet 1
-* Bullet 2
-
-
-## Prerequisites
-
-To complete this tutorial, you should first:
-
-* Bullet 1
-* Bullet 2
+Arguably, the largest benefit to Target customers of migrating is for integration with Real-Time Customer Data Platform. Real-Time CDP offers tremendous audience-building capabilities based on the full range of data ingested into Experience Platform and its Real-time Customer Profile capability. A built-in data governance framework automates responsible use of that data. Customer AI allows you to easily use machine learning models to construct propensity and churn models whose output can be shared back to Adobe Target. And finally, customers of the optional Healthcare and Privacy & Security Shield addons can use the consent enforcement feature to easily enforce individual customers' consent preferences. Platform Mobile SDK and the Decisioning extension is a requirement to use these Real-Time CDP features in your mobile channel.
 
 
 >[!NOTE]
