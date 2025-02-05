@@ -48,11 +48,9 @@ In this activity, we will create a Web SDK action that is the equivalent of the 
 
 1. Select **Adobe Experience Platform Web SDK** from the Extension drop-down.  
 1. Select **Update Variable** from the Action Type drop-down.
+1. Make sure that the **Data element** listed at the top of the right panel is indeed your new variable-type data element.
 1. In the right-hand panel, select the **Analytics** object within the data object
-1. Also make sure that the Data element listed at the top of the right panel is indeed your new variable-type data element.
-
-    ![Update variable action](assets/update-variable-action-analytics.jpg)
-
+    ![Update variable action](assets/define-update-variable-action.jpg)
 1. Now change the radio button to **Provide JSON or Data Element** and paste the code that you copied in the previous step from Set Variables into this code window. Remember that what we are showing here in the tutorial are only examples. You are copying and pasting your own variables.
 
     ![New Web SDK code paste](assets/new-websdk-code-paste.jpg)
