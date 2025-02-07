@@ -36,6 +36,8 @@ jira: KT-16755
 
 + [Migrate custom link rules](migrate-custom-link-rules.md)
 
++ [Migrate global variables](migrate-global-variables.md)
+
 + [Delete the Analytics extension](delete-analytics-extension-items.md)
 
 + [Publish to staging and production](publish-the-migration.md)
