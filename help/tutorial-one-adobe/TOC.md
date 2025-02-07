@@ -64,7 +64,8 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
   + 3.2 Adobe Journey Optimizer: Translation Services {#module32}
     + [Overview](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
-    + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+    + [3.2.1 Translations Provider](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+    + [3.2.2 Translations Project](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
   + 3.3 Adobe Journey Optimizer: Offer Decisioning {#module33}
     + [Overview](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)
