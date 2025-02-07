@@ -14,12 +14,17 @@ exl-id: fb904c77-ee2d-4f5b-9e96-348556f7199b
 ## Prerequisites
 
 - Access to Adobe Journey Optimizer
+- Access to Microsoft Azure Translators
 
 ## Exercises
 
-[3.2.1 ...](./ex1.md)
+[3.2.1 Translations Provider](./ex1.md)
 
-In this exercise, ...
+In this exercise, you will configure your Translations Provider using Microsoft Translator and set it up in Adobe Journey Optimizer.
+
+[3.2.2 Translations Project](./ex2.md)
+
+In this exercise, you will configure your Translations Provider using Microsoft Translator and set it up in Adobe Journey Optimizer.
 
 [Summary and benefits](./summary.md)
 

@@ -7,11 +7,11 @@ jira: KT-5342
 doc-type: tutorial
 exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
 ---
-# Optimize your Firefly process using Microsoft Azure and presigned URLs
+# 1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs
 
 Learn how to optimize your Firefly process using Microsoft Azure and presigned URLs.
 
-## Create an Azure Subscription
+## 1.1.2.1 Create an Azure Subscription
 
 >[!NOTE]
 >
@@ -37,7 +37,7 @@ Learn how to optimize your Firefly process using Microsoft Azure and presigned U
 
     ![Azure Storage](./images/06azuresubscriptionok.png)
 
-## Create Azure Storage Account
+## 1.1.2.2 Create Azure Storage Account
 
 1. Search for `storage account` and then select **Storage accounts**.
 
@@ -121,7 +121,7 @@ Your Azure Storage Account is now ready to be used.
 
     ![Azure Storage](./images/az18.png)
 
-## Manual file upload and using an image file as style reference
+## 1.1.2.4 Manual file upload and using an image file as style reference
 
 1. Upload a image file of your choice or [this file](./images/gradient.jpg){target="_blank"} into the container.
 
@@ -160,7 +160,7 @@ Your Azure Storage Account is now ready to be used.
 
     ![Azure Storage](./images/az26.png)
 
-## Programmatic file upload 
+## 1.1.2.5 Programmatic file upload 
 
 In order to use programmatic file upload with Azure Storage Accounts, you need to create a new **Shared Access Signature (SAS)** token with permissions that allow you to write a file.
 
@@ -241,7 +241,7 @@ In order to use programmatic file upload with Azure Storage Accounts, you need t
 
     ![Azure Storage](./images/az38.png)
 
-## Programmatic file usage
+## 1.1.2.6 Programmatic file usage
 
 To programmatically read files from Azure Storage Accounts in the long term, you need to create a new **Shared Access Signature (SAS)** token, with permissions that allow you to read a file. Technically you could use the SAS-token created in the previous exercise, but it's best practice to have a separate token with only **Read** permissions and separate token with only **Write** permissions.
 
@@ -311,6 +311,10 @@ You can derive a couple of values out of the above URL:
 
 ### Variables in Postman
 
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
+
 As you can see in the above section, there are some common variables in both the Read and the Write token.
 
 Next you need to create variables in Postman that store the various elements of the above SAS-tokens. There are some values that are the same in both URLs:
@@ -361,7 +365,7 @@ For future API interactions, the main thing that changes is the asset name, whil
 
 ## Next Steps
 
-Go to [Adobe Firefly & Adobe Photoshop APIs](./ex3.md){target="_blank"}
+Go to [Working with Photoshop APIs](./ex3.md){target="_blank"}
 
 Go back to [Overview of Adobe Firefly Services](./firefly-services.md){target="_blank"}
 

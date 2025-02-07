@@ -23,12 +23,12 @@ recommendations: noDisplay,noCatalog
   + [Prework](/help/tutorial-one-adobe/prework.md)
   + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
-+ 1 Adobe Creative Cloud {#creativecloud}
-  + 1.1 Adobe Firefly Services {#module11}
++ 1 Creation & Production {#production}
+  + 1.1 Overview of Adobe Firefly Services {#module11}
     + [Overview](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/firefly-services.md)
     + [1.1.1 Getting Started with Firefly Services](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex1.md)
     + [1.1.2 Optimize your Firefly processes with Microsoft Azure and presigned URLs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex2.md)
-    + [1.1.3 Adobe Firefly & Adobe Photoshop](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
+    + [1.1.3 Working with Photoshop APIs](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex3.md)
     + [1.1.4 Firefly Custom Models API](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creative-cloud/module1.1/summary.md)
   + 1.2 Creative Workflow Automation with Workfront Fusion {#module21}  
@@ -55,7 +55,7 @@ recommendations: noDisplay,noCatalog
     + [2.2.5 Workfront + Photoshop integration](/help/tutorial-one-adobe/modules/csc/module2.2/ex5.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/csc/module2.2/summary.md)
 
-+ 3 Unified Customer Experience {#uce} 
++ 3 Delivery & Activation {#activation}
   + 3.1 Federated Audience Composition {#module31}
     + [Overview](/help/tutorial-one-adobe/modules/uce/module3.1/fac.md)
     + [3.1.1 Setup your Snowflake environment](/help/tutorial-one-adobe/modules/uce/module3.1/ex1.md)
@@ -64,7 +64,9 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.1/summary.md)
   + 3.2 Adobe Journey Optimizer: Translation Services {#module32}
     + [Overview](/help/tutorial-one-adobe/modules/uce/module3.2/ajotranslationsvcs.md)
-    + [3.2.1 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+    + [3.2.1 Translations Provider](/help/tutorial-one-adobe/modules/uce/module3.2/ex1.md)
+    + [3.2.2 Create your Campaign](/help/tutorial-one-adobe/modules/uce/module3.2/ex2.md)
+    + [3.2.3 ...](/help/tutorial-one-adobe/modules/uce/module3.2/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/uce/module3.2/summary.md)
   + 3.3 Adobe Journey Optimizer: Offer Decisioning {#module33}
     + [Overview](/help/tutorial-one-adobe/modules/uce/module3.3/offer-decisioning.md)

@@ -1,5 +1,5 @@
 ---
-title: Completion
+title: Completion - One Adobe Tutorial
 description: How is completion measured?
 doc-type: multipage-overview
 exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
@@ -16,7 +16,7 @@ Below are the expected proofs of completion for every module.
 
 The expected proof of completion for module **Getting Started** is the ID of the Demo System project for web that you created.
 
-The ID of the Demo System project for web format looks like this: `--demoProfileLdap-- - 8ERG`.
+The ID of the Demo System project for web format looks like this: `--aepUserLdap-- - 8ERG`.
 
 ![3](./assets/images/module0dtl.png)
 
@@ -30,7 +30,7 @@ The URL looks like this: `https://ldap.blob.core.windows.net/folder/citisignal-f
 
 ## 1.2 Creative Workflow Automation with Workfront Fusion
 
-The expected proof of completion for module **Creative Workflow Automation with Workfront Fusion** is the **URL** of the webhook that was created  exercise 1.2.3, after gpoing through the step **Activate your scenario using a webhook**.
+The expected proof of completion for module **Creative Workflow Automation with Workfront Fusion** is the **URL** of the webhook that was created  exercise 1.2.3, after going through the step **Activate your scenario using a webhook**.
 
 The URL looks like this: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
@@ -74,7 +74,7 @@ The expected proof of completion for module **Adobe Journey Optimizer: Translati
 
 The expected proof of completion for module **Adobe Journey Optimizer: Offer Decisioning** is the ID of the **Decision** that you created.
 
-You can find the **Decision ID**, which looks like this **dps:offer-activity:1a08ba4b529b2fb2**, here:
+You can find the **Decision ID**, which looks like this **`dps:offer-activity:1a08ba4b529b2fb2`**, here:
 
 ![14](./assets/images/offers.png)
 
