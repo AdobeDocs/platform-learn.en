@@ -6,7 +6,9 @@ exl-id: 862c6daa-be6d-459e-afbb-6eb3431308a0
 ---
 # How is Completion Measured?
 
-Go to [https://certification.adobe.com](https://certification.adobe.com) and navigate to the course **XXX**.
+Go to [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
+
+![3](./assets/images/certcourse.png)
 
 To complete a module, you're expected to provide a proof of completion.
 

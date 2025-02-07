@@ -58,7 +58,7 @@ You can find a lot of interesting videos from our Tech Academy webinars, from bo
 
 ## Completion & Certification
 
-This tutorial is part of an Adobe Certification course. You can sign up for the course alongside this tutorial by going to [https://certification.adobe.com](https://certification.adobe.com).
+This tutorial is part of an Adobe Certification course. You can sign up for the course alongside this tutorial by going to [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
 
 For every module that you complete using the below tutorial, you need to submit a proof of completion as indicated [here](./completion.md).
 

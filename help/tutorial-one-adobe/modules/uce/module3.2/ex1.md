@@ -57,6 +57,10 @@ You should then see this.
 
 ## 3.2.1.3 Configure Translations Provider in AJO
 
+Go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Journey Optimizer**.
+
+![Translations](./images/ajolp1.png)
+
 In the left menu, go to **Translations** and then go to **Providers**. Click **Add Provider**.
 
 ![Translations](./images/transl8.png)
@@ -81,6 +85,46 @@ Your **Translations Provider** is now ready to be used.
 
 ![Translations](./images/transl13.png)
 
-[Go Back to Module 3.2](./ajotranslationsvcs.md)
+## 3.2.1.4 Configure Translations Project
 
-[Go Back to All Modules](../../../overview.md)
+Go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Journey Optimizer**.
+
+![Translations](./images/ajolp1.png)
+
+In the left menu, go to **Translations** and then go to **Locale Dictionary**. If you see this message, click **Create Project**.
+
+![Translations](./images/ajoprovider1.png)
+
+Enter the name `--aepUserLdap-- - Translations`, set the **Source Locale** to `[en-US] English - United States` and check the checkbox to enable **Automatically publish approved translations**. Next, click **+ Add a locale**.
+
+![Translations](./images/ajoprovider1a.png)
+
+Search for `fr`, enable the checkbox for `[fr] French` and then enable the checkbox for **Microsoft Translator**. Click **+ Add a locale**.
+
+![Translations](./images/ajoprovider2.png)
+
+Search for `es`, enable the checkbox for `[es] Spanish` and then enable the checkbox for **Microsoft Translator**. Click **+ Add a locale**.
+
+![Translations](./images/ajoprovider3.png)
+
+Search for `nl`, enable the checkbox for `[nl] Spanish` and then enable the checkbox for **Microsoft Translator**. Click **+ Add a locale**.
+
+![Translations](./images/ajoprovider6.png)
+
+Click **Save**.
+
+![Translations](./images/ajoprovider8.png)
+
+Your **Translations** project is now ready to be used.
+
+![Translations](./images/ajoprovider9.png)
+
+You have finished this exercise.
+
+## Next Steps
+
+Go to [3.2.2 Create your Campaign](./ex2.md)
+
+Go back to [Module 3.2](./ajotranslationsvcs.md){target="_blank"}
+
+Go back to [All modules](./../../../overview.md){target="_blank"}
