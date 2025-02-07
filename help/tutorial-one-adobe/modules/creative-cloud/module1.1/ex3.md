@@ -7,11 +7,11 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: 60eecc24-1713-4fec-9ffa-a3186db1a8ca
 ---
-# Working with Photoshop APIs
+# 1.1.3 Working with Photoshop APIs
 
 Learn how to work with the Photoshop APIs and Firefly Services.
 
-## Update your Adobe I/O integration
+## 1.1.3.1 Update your Adobe I/O integration
 
 1. Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"}.
 
@@ -45,7 +45,11 @@ Learn how to work with the Photoshop APIs and Firefly Services.
 
   ![Azure Storage](./images/ps6.png)
 
-## Programmatically interact with a PSD file
+## 1.1.3.2 Programmatically interact with a PSD file
+
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
 
 1. Download [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} to your desktop.
 

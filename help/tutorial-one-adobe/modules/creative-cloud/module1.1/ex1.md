@@ -7,11 +7,11 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: 52385c33-f316-4fd9-905f-72d2d346f8f5
 ---
-# Getting started with Firefly Services
+# 1.1.1 Getting started with Firefly Services
 
 Learn how to use Postman and Adobe I/O to query Adobe Firefly Services APIs.
 
-## Configure your Adobe I/O Project
+## 1.1.1.2 Configure your Adobe I/O Project
 
 In this exercise, Adobe I/O is used to query against Firefly Services APIs. Follow these steps to setup Adobe I/O.
 
@@ -47,7 +47,7 @@ In this exercise, Adobe I/O is used to query against Firefly Services APIs. Foll
 
   ![Adobe I/O New Integration](./images/api11.png)
 
-## Download the Postman environment
+## 1.1.1.3 Download the Postman environment
 
 1. Select **Download for Postman**, then choose **OAuth Server-to-Server** to download a Postman environment.
 
@@ -69,7 +69,11 @@ In this exercise, Adobe I/O is used to query against Firefly Services APIs. Foll
 
   ![Adobe I/O New Integration](./images/api16.png)
 
-## Postman authentication to Adobe I/O
+## 1.1.1.4 Postman authentication to Adobe I/O
+
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
 
 1. Download and install the relevant version of Postman for your OS at [Postman Downloads](https://www.postman.com/downloads/){target="_blank"}.
 
@@ -117,7 +121,7 @@ In this exercise, Adobe I/O is used to query against Firefly Services APIs. Foll
 
   No you have everything you need in Postman to start interacting with Firefly Services through the APIs.
 
-## Request an access token
+## 1.1.1.5 Request an access token
 
 Next, to make sure you're properly authenticated, you need to request an access token.
 
@@ -152,7 +156,7 @@ Next, to make sure you're properly authenticated, you need to request an access 
 
   The Adobe I/O **bearer-token** has a specific value (the very long access_token) and an expiration window and is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to authenticate to Adobe I/O, you will have to generate a new token by running this request again.
 
-## Firefly Services API, Text 2 Image
+## 1.1.1.6 Firefly Services API, Text 2 Image
 
 Now you are ready to send your first request to Firefly Services APIs.
 

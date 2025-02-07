@@ -7,11 +7,11 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: 23ebf8b4-3f16-474c-afe1-520d88331417
 ---
-# Use Adobe APIs in Workfront Fusion
+# 1.2.2 Use Adobe APIs in Workfront Fusion
 
 Learn how to use Adobe APIs in Workfront Fusion.
 
-## Use Firefly Text To Image API with Workfront Fusion
+## 1.2.2.1 Use Firefly Text To Image API with Workfront Fusion
 
 1. Hover over the second **Set multiple variables** node and select **+** to add another module.
 
@@ -109,7 +109,7 @@ Learn how to use Adobe APIs in Workfront Fusion.
 
   ![WF Fusion](./images/wffusion61.png)
 
-## Use Photoshop API with Workfront Fusion
+## 1.2.2.2 Use Photoshop API with Workfront Fusion
 
 1. Select **wrench** between the nodes **Set Bearer Token** and **Firefly T2I**. Select **Add a router**.
 
