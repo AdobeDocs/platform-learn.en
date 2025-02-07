@@ -14,6 +14,26 @@ After reviewing the information below and assessing your current technical Targe
 - How Target settings are applied with Adobe Journey Optimizer - Decisioning
 - How the data flows using the Adobe Journey Optimizer - Decisioning extension
 
+## Operational differences
+
+| | Target extension | Decisioning extension |
+|---|---|---|
+| Process | Changes to a Target implementation may follow a process that has a different cadence or QA requirements compared to other applications like Analytics. | Changes to a Decisioning extension implementation should consider all downstream applications, and the QA and publish process should be adjusted accordingly. |
+| Collaboration | Data specific to Target can be passed directly in the Target calls. If the Target reporting source is Adobe Analytics (A4T), data specific to Target can also be passed to Adobe Analytics when appropriate tracking methods in the Target extension are called for Target content display and interaction. | Data passed in the Decisioning extension calls can be forwarded to both Target and Analytics if the Target reporting source is Adobe Analytics (A4T), Adobe Analytics is enabled in the data stream, and appropriate tracking methods in Decisioning extension are called when Target content is displayed and interacted with. |
+
+## Basic differences
+
+| | Target extension | Decisioning extension |
+|---|---|---|
+| Dependencies | Depends only on Mobile Core SDK | Depends on Mobile Core and Edge Network SDK |
+| Library Functionality | Supports fetching content from Adobe Target only | Support fetching content from Adobe Target and Offer decisioning |
+| Requests | Target calls are largely independent from other network calls | Target network calls are queued along with network calls for other Edge-based solutions like Messaging in the Edge SDK and executed serially. |
+| Edge Network | Uses the Target server value or the the Adobe Experience Cloud Edge Network with the client code (clientcode.tt.omtrdc.net), both specified in the [Target configuration](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) in the Data Collection UI | Uses the Edge network domain specified in Adobe Experience Platform [Edge Network configuration](https://developer.adobe.com/client-sdks/edge/edge-network/#configure-the-edge-network-extension-in-data-collection-ui) in Data collection UI. |
+| Basic Terminology | mbox, TargetParameters | DecisionScope, Map (Android)/dictionary (iOS) for Target parameters |
+| Default content | Allows passing client-side default content in TargetRequest which is returned if the network call fails or results in error. | Does not allow passing client-side default content. Does not return any content if network call fails or results in error. |
+| Target parameters | Allows passing global TargetParameters per request and different TargetParameters per mbox | Allows passing global TargetParameters per request only |
+
+
 
 ## Feature comparison
 
