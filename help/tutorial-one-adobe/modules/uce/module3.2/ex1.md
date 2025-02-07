@@ -69,7 +69,7 @@ Your credentials should then be successfully validated. If they are, scroll down
 
 ![Translations](./images/transl10.png)
 
-Make sure to select `[es] Spanish`, `[fr] French`, `[nl] Dutch`.
+Make sure to select `[en-US] English`, `[es] Spanish`, `[fr] French`, `[nl] Dutch`.
 
 ![Translations](./images/transl11.png)
 
@@ -77,7 +77,7 @@ Scroll up and click **Save**.
 
 ![Translations](./images/transl12.png)
 
-Your Translations Provider is now ready to be used.
+Your **Translations Provider** is now ready to be used.
 
 ![Translations](./images/transl13.png)
 
