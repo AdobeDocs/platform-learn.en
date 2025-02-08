@@ -1,6 +1,6 @@
 ---
-title: Getting started with AJO Translation Services
-description: Getting started with AJO Translation Services
+title: AJO Translations Provider
+description: AJO Translations Provider
 kt: 5342
 doc-type: tutorial
 exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
@@ -95,7 +95,7 @@ In the left menu, go to **Translations** and then go to **Locale Dictionary**. I
 
 ![Translations](./images/ajoprovider1.png)
 
-Enter the name `--aepUserLdap-- - Translations`, set the **Source Locale** to `[en-US] English - United States` and check the checkbox to enable **Automatically publish approved translations**. Next, click **+ Add a locale**.
+Enter the name `--aepUserLdap-- - Translations`, set the **Source Locale** to `[en-US] English - United States` and check the checkboxes to enable both **Automatically publish approved translations** and **Enable review workflow**. Next, click **+ Add a locale**.
 
 ![Translations](./images/ajoprovider1a.png)
 
@@ -118,6 +118,48 @@ Click **Save**.
 Your **Translations** project is now ready to be used.
 
 ![Translations](./images/ajoprovider9.png)
+
+## 3.2.1.5 Configure Language Settings
+
+Go to **Channels** > **General Settings** > **Language Settings**. Click **Create language settings**.
+
+![Journey Optimizer](./images/camploc6.png)
+
+Use the name `--aepUserLdap--_translations`. Select **Translation project**. Then, click the **edit** icon.
+
+![Journey Optimizer](./images/camploc7.png)
+
+Select the Translations Project that you created in the previous step. Click **Select**.
+
+![Journey Optimizer](./images/camploc8.png)
+
+You should then see this. Set the **Fallback preference** to **English - United Stats**. Click to select **Select profile language preferred attribute**, which will decide which field from the customer profile to use to load the translations. Then, click the **edit** icon to select which field will be used.
+
+![Journey Optimizer](./images/camploc9.png)
+
+Enter **preferred language** in the search bar, then select the field **Preferred language**.
+
+![Journey Optimizer](./images/camploc10.png)
+
+Click the **edit** icon for both **English - United States** and **Dutch** to review its configuration.
+
+![Journey Optimizer](./images/camploc11.png)
+
+Here's the configuration for **English - United States**. Click **Cancel**.
+
+![Journey Optimizer](./images/camploc12.png)
+
+Click to view the configuration for **Dutch**. Click **Cancel**.
+
+![Journey Optimizer](./images/camploc13.png)
+
+Scroll up and click **Submit**.
+
+![Journey Optimizer](./images/camploc14.png)
+
+Your language settings are now configured.
+
+![Journey Optimizer](./images/camploc15.png)
 
 You have finished this exercise.
 

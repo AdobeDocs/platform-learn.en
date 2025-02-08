@@ -176,7 +176,7 @@ Click **Activate**.
 
 ![Journey Optimizer](./images/campaign21.png)
 
-Once acivated, your campaign will then be scheduled to run.
+Once activated, your campaign will then be scheduled to run.
 
 ![Journey Optimizer](./images/campaign22.png)
 

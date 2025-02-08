@@ -68,7 +68,11 @@ The ID of the Federated Data Model looks like this: **DMO5110** and can be taken
 
 ## 3.2 Adobe Journey Optimizer: Translation Services
 
-The expected proof of completion for module **Adobe Journey Optimizer: Translation Services** is ...
+The expected proof of completion for module **Adobe Journey Optimizer: Translation Services** is is **Campaign version ID** of your CitiSignal Fibr campaign.
+
+The Campaign version ID of the Federated Data Model looks like this: **b11c998b-a345-4f8e-afb1-6285547eb693** and can be taken from the URL as indicated in the below image.
+
+![3](./assets/images/completemodule32ajotransl.png)
 
 ## 3.3 Adobe Journey Optimizer: Offer Decisioning
 
