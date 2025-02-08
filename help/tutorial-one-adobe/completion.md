@@ -18,7 +18,8 @@ The expected proof of completion for module **Getting Started** is the ID of the
 
 The ID of the Demo System project for web format looks like this: `--aepUserLdap-- - 8ERG`.
 
-![3](./assets/images/module0dtl.png)
+![3](./assets/images/module0dtl.png){zoomable="yes"}
+
 
 ## 1.1 Adobe Firefly Services
 
@@ -26,7 +27,7 @@ The expected proof of completion for module **Adobe Firefly Services** is the **
 
 The URL looks like this: `https://ldap.blob.core.windows.net/folder/citisignal-fiber-changed-text.psd?sv=2023-01-03&st=2025-01-31T07%3A00%3A37Z&se=2026-02-01T07%3A00%3A00Z&sr=c&sp=racwl&sig=JmGLLEBWwkddsbOS8%2F0Fo3BQEh%2F2m2E9lL70oj1Usssg%3D`.
 
-![3](./assets/images/ps24.png)
+![3](./assets/images/ps24.png){zoomable="yes"}
 
 ## 1.2 Creative Workflow Automation with Workfront Fusion
 
@@ -34,7 +35,7 @@ The expected proof of completion for module **Creative Workflow Automation with 
 
 The URL looks like this: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib8iv5t0jh`.
 
-![3](./assets/images/wff.png)
+![3](./assets/images/wff.png){zoomable="yes"}
 
 ## 2.1 Adobe Experience Manager Cloud Service & Edge Delivery Services
 
@@ -42,7 +43,7 @@ The expected proof of completion for module **Adobe Experience Manager Cloud Ser
 
 The URL looks like this: `https://main--citisignal--xxx.aem.page/us/en`.
 
-![3](./assets/images/aemcsweb.png)
+![3](./assets/images/aemcsweb.png){zoomable="yes"}
 
 ## 2.2 Workflow Management with Adobe Workfront
 
@@ -50,13 +51,13 @@ The expected proof of completion for module **Workflow Management with Adobe Wor
 
 To get the URL, click **Share Link** on the uploaded image in AEM Assets.
 
-![12](./assets/images/wflink1.png)
+![12](./assets/images/wflink1.png){zoomable="yes"}
 
 Copy the URL by clicking the **copy** icon.
 
 The URL looks like this: `https://author-p148121-e1511399.adobeaemcloud.com/linkshare.html?sh=d63ec826_df79_4c73_a05c_2c2115baef78.dw7JBu2VxkNZvXE2oq9J6KwFRrt5VAffkuqC0nZIjHE`.
 
-![12](./assets/images/wflink2.png)
+![12](./assets/images/wflink2.png){zoomable="yes"}
 
 ## 3.1 Federated Audience Composition
 
@@ -64,7 +65,7 @@ The expected proof of completion for module **Federated Audience Composition** i
 
 The ID of the Federated Data Model looks like this: **DMO5110** and can be taken from the URL as indicated in the below image.
 
-![3](./assets/images/completemodule3fac.png)
+![3](./assets/images/completemodule3fac.png){zoomable="yes"}
 
 ## 3.2 Adobe Journey Optimizer: Translation Services
 
@@ -72,7 +73,7 @@ The expected proof of completion for module **Adobe Journey Optimizer: Translati
 
 The Campaign version ID of the Federated Data Model looks like this: **b11c998b-a345-4f8e-afb1-6285547eb693** and can be taken from the URL as indicated in the below image.
 
-![3](./assets/images/completemodule32ajotransl.png)
+![3](./assets/images/completemodule32ajotransl.png){zoomable="yes"}
 
 ## 3.3 Adobe Journey Optimizer: Offer Decisioning
 
@@ -80,7 +81,7 @@ The expected proof of completion for module **Adobe Journey Optimizer: Offer Dec
 
 You can find the **Decision ID**, which looks like this **`dps:offer-activity:1a08ba4b529b2fb2`**, here:
 
-![14](./assets/images/offers.png)
+![14](./assets/images/offers.png){zoomable="yes"}
 
 >[!NOTE]
 >
