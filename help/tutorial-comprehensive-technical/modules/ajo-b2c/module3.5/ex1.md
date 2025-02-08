@@ -1,13 +1,12 @@
 ---
-title: AJO Translations Provider
-description: AJO Translations Provider
+title: Getting started with AJO Translation Services
+description: Getting started with AJO Translation Services
 kt: 5342
 doc-type: tutorial
-exl-id: ee0b8650-a59f-4888-8228-4caafe4143e4
 ---
-# 3.2.1 Translations Provider
+# 3.5.1 Translations Provider
 
-## 3.2.1.1 Configure Microsoft Azure Translator
+## 3.5.1.1 Configure Microsoft Azure Translator
 
 Go to [https://portal.azure.com/#home](https://portal.azure.com/#home).
 
@@ -41,7 +40,7 @@ In the left menu, go to **Resource Management** > **Keys and Endpoint**. Click t
 
 ![Translations](./images/transl7.png)
 
-## 3.2.1.2 Locale Dictionary
+## 3.5.1.2 Locale Dictionary
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Journey Optimizer**.
 
@@ -55,7 +54,7 @@ You should then see this.
 
 ![Translations](./images/locale2.png)
 
-## 3.2.1.3 Configure Translations Provider in AJO
+## 3.5.1.3 Configure Translations Provider in AJO
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Journey Optimizer**.
 
@@ -85,7 +84,7 @@ Your **Translations Provider** is now ready to be used.
 
 ![Translations](./images/transl13.png)
 
-## 3.2.1.4 Configure Translations Project
+## 3.5.1.4 Configure Translations Project
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Journey Optimizer**.
 
@@ -119,7 +118,7 @@ Your **Translations** project is now ready to be used.
 
 ![Translations](./images/ajoprovider9.png)
 
-## 3.2.1.5 Configure Language Settings
+## 3.5.1.5 Configure Language Settings
 
 Go to **Channels** > **General Settings** > **Language Settings**. Click **Create language settings**.
 
@@ -165,8 +164,8 @@ You have finished this exercise.
 
 ## Next Steps
 
-Go to [3.2.2 Create your Campaign](./ex2.md)
+Go to [3.5.2 Create your Campaign](./ex2.md)
 
-Go back to [Module 3.2](./ajotranslationsvcs.md){target="_blank"}
+Go back to [Module 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Go back to [All modules](./../../../overview.md){target="_blank"}

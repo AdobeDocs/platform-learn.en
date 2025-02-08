@@ -1,10 +1,10 @@
 ---
-title: Add Languages to your Email with AJO Translation Services
-description: Add Languages to your Email with AJO Translation Services
+title: AJO Translation Services
+description: AJO Translation Services
 kt: 5342
 doc-type: tutorial
 ---
-# 3.2.3 Add Languages to your Email
+# 3.5.3 Add Languages to your Email
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/). Click **Journey Optimizer**.
 
@@ -84,6 +84,6 @@ You've now finished this exercise.
 
 Go to [Summary & Benefits](./summary.md)
 
-Go back to [Module 3.2](./ajotranslationsvcs.md){target="_blank"}
+Go back to [Module 3.5](./ajotranslationsvcs.md){target="_blank"}
 
 Go back to [All modules](./../../../overview.md){target="_blank"}

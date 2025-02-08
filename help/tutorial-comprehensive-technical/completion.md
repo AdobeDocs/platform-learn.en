@@ -126,6 +126,14 @@ The ID of the journey looks like this: **5f5efc7e-49f7-44c1-85df-b23482b38d32**,
 
 ![14](./assets/images/jojourneyid.png)
 
+## 3.5 Adobe Journey Optimizer: Translation Services
+
+The expected proof of completion for module **Adobe Journey Optimizer: Translation Services** is is **Campaign version ID** of your CitiSignal Fiber campaign.
+
+The Campaign version ID of the Federated Data Model looks like this: **b11c998b-a345-4f8e-afb1-6285547eb693** and can be taken from the URL as indicated in the below image.
+
+![3](./assets/images/completemodule32ajotransl.png)
+
 ## 4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace
 
 The expected proof of completion for module **Customer Journey Analytics: Build a dashboard using Analysis Workspace** is the ID of your project `--aepUserLdap-- - Omnichannel Analysis`.

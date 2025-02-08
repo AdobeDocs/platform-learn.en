@@ -157,6 +157,12 @@ In this module, you'll learn everything there is to know about Journey Optimizer
 
 **Time Investment:** 120 minutes
 
+[3.5 Adobe Journey Optimizer: Translation Services](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+
+In this module, you'll learn how to setup and use Translation Services within Adobe Journey Optimizer to localize your messages to your customers.
+
+**Time Investment:** 60 minutes
+
 ### 4. Adobe Customer Journey Analytics
 
 [4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)

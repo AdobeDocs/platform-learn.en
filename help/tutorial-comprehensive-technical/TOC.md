@@ -131,6 +131,12 @@ recommendations: noDisplay,noCatalog
     + [3.4.3 Apply segment-based personalization in an email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
     + [3.4.4 Setup and use push notifications](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
+  + 3.5 Adobe Journey Optimizer: Translation Services {#module35}
+    + [Overview](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+    + [3.5.1 Translations Provider](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex1.md)
+    + [3.5.2 Create your Campaign](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex2.md)
+    + [3.5.3 Add Languages to your Email](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex3.md)
+    + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c} 
   + 4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace {#module41}
