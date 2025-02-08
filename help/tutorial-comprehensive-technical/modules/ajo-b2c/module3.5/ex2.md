@@ -261,7 +261,7 @@ Scroll up to **Audience**. Click **Select audience**.
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-For the **Audience**, select the audience you created in the previous step, `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Click **Save**.
+For the **Audience**, select the audience you created in [1.3.3 Create a federated composition](./../../datacollection/module1.3/ex3.md), which is named `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Click **Save**.
 
 ![Journey Optimizer](./images/campaign2a.png)
 
