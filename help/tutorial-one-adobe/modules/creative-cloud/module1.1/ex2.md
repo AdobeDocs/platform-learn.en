@@ -45,7 +45,7 @@ Learn how to optimize your Firefly process using Microsoft Azure and presigned U
 
 1. Select **+ Create**.
 
- ![Azure Storage](./images/azs2.png){zoomable="yes"}
+    ![Azure Storage](./images/azs2.png){zoomable="yes"}
 
 1. Select your **Subscription** and select (or create) a **Resource group**.
 
@@ -63,9 +63,9 @@ Learn how to optimize your Firefly process using Microsoft Azure and presigned U
 
     ![Azure Storage](./images/azs5.png){zoomable="yes"}
 
-Your Azure Storage Account is now ready to be used.
+    Your Azure Storage Account is now ready to be used.
 
-![Azure Storage](./images/azs6.png){zoomable="yes"}
+    ![Azure Storage](./images/azs6.png){zoomable="yes"}
 
 1. Select **Data Storage**, and then go to **Containers**. Select **+ Container**.
 
@@ -107,15 +107,15 @@ Your Azure Storage Account is now ready to be used.
 
 1. Back in the Microsoft Azure Storage Explorer app, select your subscription and choose **Open Explorer**.
 
->[!NOTE]
->
->If your account isn't shown, click the **gear** icon next to your email address and select **Un-filter**.
+    >[!NOTE]
+    >
+    >If your account isn't shown, click the **gear** icon next to your email address and select **Un-filter**.
 
-   ![Azure Storage](./images/az16.png){zoomable="yes"}
+    ![Azure Storage](./images/az16.png){zoomable="yes"}
 
-   Your storage account appears under **Storage Accounts**.
+    Your storage account appears under **Storage Accounts**.
 
-   ![Azure Storage](./images/az17.png){zoomable="yes"}
+    ![Azure Storage](./images/az17.png){zoomable="yes"}
 
 1. Open **Blob Containers** and then select the container you created in the previous exercise.
 
@@ -298,11 +298,11 @@ To programmatically read files from Azure Storage Accounts in the long term, you
 
     ![Azure Storage](./images/az103.png){zoomable="yes"}
 
-   Your URL should look like this:
+    Your URL should look like this:
 
     `https://vangeluw.blob.core.windows.net/vangeluw?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
-You can derive a couple of values out of the above URL:
+    You can derive a couple of values out of the above URL:
 
     - `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
     - `AZURE_STORAGE_CONTAINER`: `vangeluw`
