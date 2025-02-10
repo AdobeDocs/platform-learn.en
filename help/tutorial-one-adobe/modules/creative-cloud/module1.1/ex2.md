@@ -65,7 +65,7 @@ Learn how to optimize your Firefly process using Microsoft Azure and presigned U
 
     Your Azure Storage Account is now ready to be used.
 
-![Azure Storage](./images/azs6.png){zoomable="yes"}
+    ![Azure Storage](./images/azs6.png){zoomable="yes"}
 
 1. Select **Data Storage**, and then go to **Containers**. Select **+ Container**.
 
@@ -111,11 +111,11 @@ Learn how to optimize your Firefly process using Microsoft Azure and presigned U
     >
     >If your account isn't shown, click the **gear** icon next to your email address and select **Un-filter**.
 
-   ![Azure Storage](./images/az16.png){zoomable="yes"}
+    ![Azure Storage](./images/az16.png){zoomable="yes"}
 
     Your storage account appears under **Storage Accounts**.
 
-   ![Azure Storage](./images/az17.png){zoomable="yes"}
+    ![Azure Storage](./images/az17.png){zoomable="yes"}
 
 1. Open **Blob Containers** and then select the container you created in the previous exercise.
 
