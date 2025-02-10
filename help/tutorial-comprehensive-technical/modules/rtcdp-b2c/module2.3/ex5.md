@@ -17,7 +17,7 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ## Verify your Datastream
 
-The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe edge network. If you want to setup your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) and was named `--aepUserLdap-- - Demo System Datastream`.
+The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe Edge Network. If you want to setup your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) and was named `--aepUserLdap-- - Demo System Datastream`.
 
 In the left menu, scroll down and click **Datastreams**. In Datastreams, search for your datastream which is named `--aepUserLdap-- - Demo System Datastream`. Click your datastream to open it.
 
@@ -65,7 +65,7 @@ Click **Next**.
 
 ![AT](./images/atdest5.png)
 
-You can now optionally select a data governance poliy. Click **Next**.
+You can now optionally select a data governance policy. Click **Next**.
 
 ![AT](./images/atdest2.png)
 
@@ -153,11 +153,16 @@ Next, you need to add in a personalization token from Adobe Experience Platform'
 
 Before you click the **Add** button, make sure to go to the line where you see `... > h1").innerHTML="Hi there ";` and put your cursor inside the brackets after the word `there`, like this:
 
-`... > h1").innerHTML="Hi there ";`
+```
+... > h1").innerHTML="Hi there ";
+```
 
 Then click the **Add** button, which should then add the token, which will update the code like this:
 
-`... > h1").innerHTML="Hi there ${aep.person.name.firstName}";`
+```
+... > h1").innerHTML="Hi there ${aep.person.name.firstName}";
+```
+
 
 Click **Next**.
 
@@ -193,7 +198,7 @@ If you now go back to your demo website and visit the product page for Galaxy S2
 
 ![RTCDP](./images/atform13.png)
 
-Next Step: [2.3.6 External Audiences](./ex6.md)
+Next Step: [2.3.6 Destinations SDK](./ex6.md)
 
 [Go Back to Module 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

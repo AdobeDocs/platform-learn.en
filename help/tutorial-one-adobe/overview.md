@@ -48,6 +48,12 @@ If you want to take this tutorial using your own Adobe Experience Cloud instance
 
 Verify the required applications that need to be installed on your computer [here](./prework.md){target="_blank"}.
 
+## Completion & Certification
+
+This tutorial is part of an Adobe Certification course. You can sign up for the course alongside this tutorial by going to [https://certification.adobe.com](https://certification.adobe.com).
+
+For every module that you complete using the below tutorial, you need to submit a proof of completion as indicated [here](./completion.md).
+
 ## Content
 
 To check the status of the below content, please go to the [status page](./status.md){target="_blank"}.

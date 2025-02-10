@@ -5,9 +5,9 @@ kt: 5342
 doc-type: tutorial
 exl-id: 3fc4a1d6-4130-464e-98c0-5b9cac8051a0
 ---
-# 1.1.7 XDM Schema requirements in Adobe Experience Platform
+# 1.1.7 XDM schema requirements in Adobe Experience Platform
 
-To ensure Web SDK and alloy.js are able to ingest data into Adobe Experience Platform, there is a requirement for a specific XDM Mixin to be part of the XDM Schema in Adobe Experience Platform.
+To ensure the Web SDK is able to ingest data into Adobe Experience Platform, there is a requirement for a specific XDM mixin to be part of the XDM schema in Adobe Experience Platform.
 
 Go to [https://experience.adobe.com/platform](https://experience.adobe.com/platform) and log in.
 

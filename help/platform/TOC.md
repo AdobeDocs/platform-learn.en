@@ -48,6 +48,7 @@ auto-video-transcripts: true
   + [Validate responses](/help/platform/ai-assistant/validate-responses.md)
   + [Discoverability panel](/help/platform/ai-assistant/discoverability-panel.md)
   + [Find unused audiences](/help/platform/ai-assistant/find-unused-audiences.md)
+  + [Operational insights](/help/platform/ai-assistant/operational-insights.md)
   + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
 + Audiences and Segmentation {#audiences}
@@ -112,22 +113,6 @@ auto-video-transcripts: true
   + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
 + Data Lifecycle {#data-lifecycle}
   + [Expire datasets](/help/platform/data-lifecycle/expire-datasets.md)
-+ Data Science Workspace {#data-science-workspace}
-  + [Overview](/help/platform/data-science-workspace/understanding-data-science-workspace.md)
-  + [Architecture](data-science-workspace/architecture-overview.md)
-  + [Create the course schema and dataset](data-science-workspace/create-the-course-schema-and-dataset.md)
-  + [Load data in JupyterLab notebooks](data-science-workspace/load-data-in-jupyterlab-notebooks.md)
-  + [Query and discover data in JupyterLab notebooks](data-science-workspace/dsw-query-service.md)
-  + [Exploratory Data Analysis](data-science-workspace/eda.md)
-  + [Recipes, models, and services overview](data-science-workspace/recipes-models-services-overview.md)
-  + [Build a model using the recipe builder template](data-science-workspace/recipe-builder-template.md)
-  + [Analyze model performance](data-science-workspace/analyze-model-performance.md)
-  + [Create and publish a trained model (UI)](data-science-workspace/create-model-ui.md)
-  + [Schedule automated training and scoring for a service](data-science-workspace/schedule-training-scoring.md)
-  + [Enrich Real-Time Customer Profiles with machine learning insights](data-science-workspace/dsw-profile-segmentation.md)
-  + [Package source files into a recipe](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/package-source-files-recipe.html){target="_blank"}
-  + [Import a packaged recipe (UI)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-ui.html){target="_blank"}
-  + [Import a packaged recipe (API)](https://experienceleague.adobe.com/docs/experience-platform/data-science-workspace/models-recipes/import-packaged-recipe-api.html){target="_blank"}
 + Destinations {#destinations}
   + [Destinations overview](/help/platform/destinations/understanding-destinations.md)
   + [Connecting to destinations](/help/platform/destinations/connecting-to-destinations.md)
@@ -151,6 +136,8 @@ auto-video-transcripts: true
   + [Identity and identity graphs overview](/help/platform/identities/understanding-identity-and-identity-graphs.md)
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
   + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
+  + Identity graph linking rules {#graph-linking-rules}
+    + [Graph simulation](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
   + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
   + [Attribution AI overview](/help/platform/intelligent-services/introduction-to-attribution-ai.md)

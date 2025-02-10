@@ -7,11 +7,11 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
 ---
-# Process automation with Workfront Fusion
+# 1.2.3 Process automation with Workfront Fusion
 
 Learn how to process automation with Workfront Fusion.
 
-## Iterating over multiple values
+## 1.2.3.1 Iterating over multiple values
 
 Your scenario should look like this:
 
@@ -87,7 +87,7 @@ So far, you've changed text in a Photoshop file by a static value. In order to s
 
     ![WF Fusion](./images/wffusion215.png)
 
-## Active your scenario using a webhook
+## 1.2.3.2 Activate your scenario using a webhook
 
 So far, you've run your scenario manually to test. Let's now update your scenario with a webhook, so that it can be activated from an external enviroment.
 

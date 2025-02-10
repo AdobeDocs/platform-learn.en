@@ -10,6 +10,20 @@ This guide is for experienced Adobe Target implementers to learn how to migrate 
 
 Adobe Experience Platform Web SDK is a client-side JavaScript library that allows Adobe Experience Cloud customers to interact with Experience Cloud services through the Adobe Experience Platform Edge Network. This new library combines the capabilities of the separate Adobe application libraries into a single lightweight package that can take full advantage of new Adobe Experience Platform features.
 
+
+>[!NOTE]
+>
+>Similar migration tutorials are available for:
+>
+> * [Adobe Analytics](../tutorial-migrate-analytics-websdk/migration-to-websdk-overview.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Because Platform Web SDK supports multiple Adobe applications, all Adobe libraries on a given page should be migrated at the same time. For example, a mixed implementation of Web SDK for Target and AppMeasurement for Analytics on a single page _is not supported_. However, a mixed implementation across different pages is supported, for example Web SDK on page A, and at.js with AppMeasurement on page B.
+
+
+
 ## Key benefits
 
 Some of the benefits of the Platform Web SDK compared to the standalone at.js library include:

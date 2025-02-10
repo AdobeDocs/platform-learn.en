@@ -7,16 +7,15 @@ doc-type: tutorial
 activity: develop
 exl-id: 147d9153-5742-4857-aae1-0ec434a1e626
 ---
-# 2.3 Real-time CDP - Build a segment and take action
+# 2.3 Real-time CDP - Build an audience and take action
 
-In this module, you'll configure a streaming segment and activate the segment to multiple destinations.
+In this module, you'll configure a streaming segment and activate the audience to multiple destinations.
 
 ## Learning Objectives
 
-- Learn how to build a segment and enable it for streaming.
+- Learn how to build an audience and enable it for streaming.
 - Learn how to configure an advertising destination using the Adobe Experience Platform UI.
-- Learn how to connect a segment to a destination and activate it.
-- Learn how to use Adobe Experience Platform segments in Adobe Audience Manager, and how to use Adobe Audience Manager segments in Adobe Experience Platform, thanks to bi-directional segment sharing.
+- Learn how to connect an audience to a destination and activate it.
 
 ## Prerequisites
 
@@ -50,11 +49,7 @@ Use the audience you created and send it to an S3-destination, typically used fo
 
 Use the audience you created to configure an Experience Targeting Activity in Adobe Target.
 
-[2.3.6 External Audiences](./ex6.md)
-
-Import audiences from an external source system into Adobe Experience Platform.
-
-[2.3.7 Destinations SDK](./ex7.md)
+[2.3.6 Destinations SDK](./ex6.md)
 
 Configure your own destination using Destinations SDK.
 

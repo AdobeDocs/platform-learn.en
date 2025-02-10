@@ -1,407 +1,298 @@
 ---
-title: Real-time CDP - External Audiences
-description: Real-time CDP - External Audiences
+title: Real-time CDP - Destinations SDK
+description: Real-time CDP - Destinations SDK
 kt: 5342
 doc-type: tutorial
-exl-id: c7e4960f-4007-4c27-b5ba-7b21cd52c2f7
+exl-id: 5606ca2f-85ce-41b3-80f9-3c137f66a8c0
 ---
-# 2.3.6 External Audiences
+# 2.3.6 Destinations SDK
 
-In many cases your company may want to use existing audiences from other applications to enrich the customer profile in Adobe Experience Platform.
-Those external audiences may have been defined based on a data science model or using external data platforms.
+## Setup your Adobe I/O project
 
-The external audiences feature of Adobe Experience Platform lets you focus on the ingestion of the external audiences and their activation without any need to redefine the corresponding audience definition in detail in Adobe Experience Platform.
+In this exercise you'll be using Adobe I/O again to query Adobe Experience Platform's API's. If you haven't configured your Adobe I/O project yet, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there.
 
-The overall process is divided in three main steps:
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
 
-- Import the external audience metadata: this step is meant to ingest the external audience metadata, such as the audience name, into Adobe Experience Platform.
-- Assign the external audience memebrship to the cutomer profile: this step is meant to enrich the customer profile with the external audiences membership attribute.
-- Create the audiences in Adobe Experience Platform: this step is meant to create actionable audiences based on the external audiences membership.
+## Authentication to Adobe I/O
 
-## Metadata
+In this exercise you'll be using Postman again to query Adobe Experience Platform's API's. If you haven't configured your Postman application yet, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there.
+
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
+
+## Define endpoint and format
+
+For this exercise, you'll need an endpoint to configure so that when an audience qualifies, the qualification event can be streamed to that endpoint. In this exercise, you'll use a sample endpoint using [https://pipedream.com/requestbin](https://pipedream.com/requestbin). Go to [https://pipedream.com/requestbin](https://pipedream.com/requestbin), create an account and then create a workspace. Once the workspace is created, you'll see something similar to this. 
+
+Click **copy** to copy the url. You'll need to specify this url in the next exercise. The URL in this example is `https://eodts05snjmjz67.m.pipedream.net`.
+
+![Data Ingestion](./images/webhook1.png)
+
+As for the format, we'll use a standard template that will stream audience qualifications or unqualifications along with metadata like customer identifiers. Templates can be customized to meet the expectations of specific endpoints, but in this exercise we'll reuse a standard template, which will result in a payload like this that will be streamed to the endpoint.
+
+```json
+{
+  "profiles": [
+    {
+      "identities": [
+        {
+          "type": "ecid",
+          "id": "64626768309422151580190219823409897678"
+        }
+      ],
+      "AdobeExperiencePlatformSegments": {
+        "add": [
+          "f58c723c-f1e5-40dd-8c79-7bb4ab47f041"
+        ],
+        "remove": []
+      }
+    }
+  ]
+}
+```
+
+## Create a server and template configuration
+
+The first step to create your own Destination in Adobe Experience Platform is to create a server and template configuration using Postman.
+
+To do that, open your Postman application and go to **Destination Authoring API**, to **Destination servers and templates** and click to open the request **POST - Create a destination server configuration**. 
+
+>[!NOTE]
+>
+>If you don't have that Postman collection, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there to setup Postman with the provided Postman collections.
+
+You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **{{SANDBOX_NAME}}**.
+
+![Data Ingestion](./images/sdkpm1.png)
+
+Replace it by `--aepSandboxName--`.
+
+![Data Ingestion](./images/sdkpm2.png)
+
+Next, go to **Body**. select the placeholder **{{body}}**.
+
+![Data Ingestion](./images/sdkpm3.png)
+
+You now need to replace the placeholder **{{body}}** by the below code:
+
+```json
+{
+    "name": "Custom HTTP Destination",
+    "destinationServerType": "URL_BASED",
+    "urlBasedDestination": {
+        "url": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "yourURL"
+        }
+    },
+    "httpTemplate": {
+        "httpMethod": "POST",
+        "requestBody": {
+            "templatingStrategy": "PEBBLE_V1",
+            "value": "{\n    \"profiles\": [\n    {%- for profile in input.profiles %}\n        {\n            \"identities\": [\n            {%- for idMapEntry in profile.identityMap -%}\n            {%- set namespace = idMapEntry.key -%}\n                {%- for identity in idMapEntry.value %}\n                {\n                    \"type\": \"{{ namespace }}\",\n                    \"id\": \"{{ identity.id }}\"\n                }{%- if not loop.last -%},{%- endif -%}\n                {%- endfor -%}{%- if not loop.last -%},{%- endif -%}\n            {% endfor %}\n            ],\n            \"AdobeExperiencePlatformSegments\": {\n                \"add\": [\n                {%- for segment in profile.segmentMembership.ups | added %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ],\n                \"remove\": [\n                {#- Alternative syntax for filtering segments by status: -#}\n                {% for segment in removedSegments(profile.segmentMembership.ups) %}\n                    \"{{ segment.key }}\"{%- if not loop.last -%},{%- endif -%}\n                {% endfor %}\n                ]\n            }\n        }{%- if not loop.last -%},{%- endif -%}\n    {% endfor %}\n    ]\n}"
+        },
+        "contentType": "application/json"
+    }
+}
+```
+
+After pasting the above code, you need to manually update the field **urlBasedDestination.url.value**, and you need to set it to the url of the webhook you created in the previous step, which was `https://eodts05snjmjz67.m.pipedream.net` in this example.
+
+![Data Ingestion](./images/sdkpm4.png)
+
+After updating the field **urlBasedDestination.url.value**, it should look like this. Click **Send**.
+
+![Data Ingestion](./images/sdkpm5.png)
+
+>[!NOTE]
+>
+>Don't forget that before sending a request to Adobe I/O, you need to have a valid `access_token`. To get a valid `access_token`, run the request **POST - Get Access Token** in the collection **Adobe IO - OAuth**.
+
+After clicking **Send**, your server template will be created, and as part of the response you'll see a field named **instanceId**. Write it down, as you'll need it in the next step. In this example, the **instanceId** is 
+`52482c90-8a1e-42fc-b729-7f0252e5cebd`.
+
+![Data Ingestion](./images/sdkpm6.png)
+
+## Create your destination configuration
+
+In Postman, under **Destination Authoring API**, go to **Destination configurations** and click to open the request **POST - Create a destination configuration**. You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **{{SANDBOX_NAME}}** and replace it by `--aepSandboxName--`.
+
+![Data Ingestion](./images/sdkpm7.png)
+
+Next, go to **Body**. select the placeholder **{{body}}**.
+
+![Data Ingestion](./images/sdkpm9.png)
+
+You now need to replace the placeholder **{{body}}** by the below code:
+
+```json
+{
+    "name": "--aepUserLdap-- - Webhook",
+    "description": "Exports segment qualifications and identities to a custom webhook via Destination SDK.",
+    "status": "TEST",
+    "customerAuthenticationConfigurations": [
+        {
+            "authType": "BEARER"
+        }
+    ],
+    "customerDataFields": [
+        {
+            "name": "endpointsInstance",
+            "type": "string",
+            "title": "Select Endpoint",
+            "description": "We could manage several instances across the globe for REST endpoints that our customers are provisioned for. Select your endpoint in the dropdown list.",
+            "isRequired": true,
+            "enum": [
+                "US",
+                "EU",
+                "APAC",
+                "NZ"
+            ]
+        }
+    ],
+    "uiAttributes": {
+        "documentationLink": "https://experienceleague.adobe.com/docs/experience-platform/destinations/home.html?lang=en",
+        "category": "streaming",
+        "connectionType": "Server-to-server",
+        "frequency": "Streaming"
+    },
+    "identityNamespaces": {
+        "ecid": {
+            "acceptsAttributes": true,
+            "acceptsCustomNamespaces": false
+        }
+    },
+    "segmentMappingConfig": {
+        "mapExperiencePlatformSegmentName": true,
+        "mapExperiencePlatformSegmentId": true,
+        "mapUserInput": false
+    },
+    "aggregation": {
+        "aggregationType": "BEST_EFFORT",
+        "bestEffortAggregation": {
+            "maxUsersPerRequest": "1000",
+            "splitUserById": false
+        }
+    },
+    "schemaConfig": {
+        "profileRequired": false,
+        "segmentRequired": true,
+        "identityRequired": true
+    },
+    "destinationDelivery": [
+        {
+            "authenticationRule": "NONE",
+            "destinationServerId": "yourTemplateInstanceID"
+        }
+    ]
+}
+```
+
+![Data Ingestion](./images/sdkpm11.png)
+
+After pasting the above code, you need to manually update the field **destinationDelivery. destinationServerId**, and you need to set it to the **instanceId** of the destination server template you created in the previous step, which was `52482c90-8a1e-42fc-b729-7f0252e5cebd` in this example. Next, cick **Send**.
+
+![Data Ingestion](./images/sdkpm10.png)
+
+You'll then see this response.
+
+![Data Ingestion](./images/sdkpm12.png)
+
+Your destination is now created in Adobe Experience Platform. Let's go there and check it.
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./../../../modules/datacollection/module1.2/images/home.png)
 
->[!IMPORTANT]
->
->The sandbox to use for this exercise is ``--aepSandboxName--``!
-
 Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-![Data Ingestion](./images/sb1.png)
+![Data Ingestion](./../../../modules/datacollection/module1.2/images/sb1.png)
 
-While the audience data defines the condition for a profile to be part of a audience, the audience metadata are information about the audience such as the name, the description and the status of the audience. As the external audiences metadata will be stored in Adobe Experience Platform, you need to use an identity namespace to ingest the metadata in Adobe Experience Platform.
+In the left menu, go to **Destinations**, click **Catalog** and scroll down to the category **Streaming**. You'll see your destination avaiable there now.
 
-## 2.3.6.1.1 Identity Namespace for External Audiences
+![Data Ingestion](./images/destsdk1.png)
 
-An identity namespace has already been created for usage with **External Audiences**.
-To view the identity that was already created, go to **Identities**, and search for **External**. Click on the "External Audiences" item.
+## Link your audience to your destination
 
-Please note:
+In **Destinations** > **Catalog**, click **Set up** on your destination to start adding audiences to your new destination.
 
-- The identity symbol **externalaudiences** will be used in the next steps to refer to the external audiences identity.
-- The **Non-people identifier** type is used for this identity namespace, as this namespace isn't meant to identify customer profiles but audiences.
+![Data Ingestion](./images/destsdk2.png)
 
-![External Audiences Identity](images/extAudIdNS.png)
+Enter a random value for the **bearer token**, like **1234**. Click **Connect to destination**.
 
-## 2.3.6.1.2 Create the External Audiences Metadata schema
+![Data Ingestion](./images/destsdk3.png)
 
-The external audiences metadata are based on the **Audience definition Schema**. You can find more details in the [XDM Github repository](https://github.com/adobe/xdm/blob/master/docs/reference/classes/segmentdefinition.schema.md).
+You'll then see this. As a name for your destination, use `--aepUserLdap-- - Webhook`. Select an endpoint of choice, in this example **EU**. Click **Next**.
 
-In the left menu, go to Schemas. Click **+ Create Schema** and then click **Browse**.
+![Data Ingestion](./images/destsdk4.png)
 
-![External Audiences Metadata Schema 1](images/extAudMDXDM1.png)
+You can optionally select a data governance policy. Click **Next**.
 
-To assign a class, search for **audience definition**. Select the **Audience definition** class and click **Assign Class**.
+![Data Ingestion](./images/destsdk5.png)
 
-![External Audiences Metadata Schema 2](images/extAudMDXDM2.png)
+Select the audience you created earlier, which is named `--aepUserLdap-- - Interest in Galaxy S24`. Click **Next**.
 
-You'll then see this. Click **Cancel**.
+![Data Ingestion](./images/destsdk6.png)
 
-![External Audiences Metadata Schema 3](images/extAudMDXDM3.png)
+You'll then see this. Make sure to map the **SOURCE FIELD** `--aepTenantId--.identification.core.ecid` to the field `Identity: ecid`. Click **Next**.
 
-You'll then see this. Select the field **_id**. In the right menu, scroll down and enable the **Identity** and the **Primary identity** check boxes. Select the **External Audiences** identity namespace. Click **Apply**.
+![Data Ingestion](./images/destsdk7.png)
 
-![External Audiences Metadata Schema 4](images/extAudMDXDM4.png)
+Click **Finish**.
 
-Next, select the schema name **Untitled schema**. Change the name to `--aepUserLdap-- - External Audiences Metadata`.
+![Data Ingestion](./images/destsdk8.png)
 
-![External Audiences Metadata Schema 5](images/extAudMDXDM5.png)
+Your destination is now live, new audience qualifications will be streamed to your custom webhook now.
 
-Enable the **Profile** toggle and confirm. Finally, click **Save**.
+![Data Ingestion](./images/destsdk9.png)
 
-![External Audiences Metadata Schema 5](images/extAudMDXDM6.png)
+## Test your audience activation
 
-## 2.3.6.1.3 Create the External Audiences Metadata dataset
+Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-In **Schemas**, go to **Browse**. Search and click the `--aepUserLdap-- - External Audiences Metadata` schema you created in the previous step. Next, click **Create Dataset from Schema**.
+![DSN](./../../datacollection/module1.1/images/web8.png)
 
-![External Audiences Metadata DS 1](images/extAudMDDS1.png)
+You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-For the field **Name**, enter `--aepUserLdap-- - External Audience Metadata`. Click **Create dataset**.
+![DSN](../../gettingstarted/gettingstarted/images/web3.png)
 
-![External Audiences Metadata DS 2](images/extAudMDDS2.png)
+Open a new incognito browser window.
 
-You'll then see this. Don't forget to enable the **Profile** toggle!
+![DSN](../../gettingstarted/gettingstarted/images/web4.png)
 
-![External Audiences Metadata DS 3](images/extAudMDDS3.png)
+Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-## 2.3.6.1.4 Create an HTTP API Source Connection
+![DSN](../../gettingstarted/gettingstarted/images/web5.png)
 
-Next, you need to configure the HTTP API Source Connector which you'll use to ingest the metadata into the dataset.
+Select your account type and complete the login process.
 
-Go to **Sources**. In the search field, enter **HTTP**. Click **Add data**.
+![DSN](../../gettingstarted/gettingstarted/images/web6.png)
 
-![External Audiences Metadata http 1](images/extAudMDhttp1.png)
+You'll then see your website loaded in an incognito browser window. For every exercise, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
-Enter the following information:
+![DSN](../../gettingstarted/gettingstarted/images/web7.png)
 
-- **Account type**: select **New account**
-- **Account name**: enter `--aepUserLdap-- - External Audience Metadata`
-- Check the checkbox **XDM compatible box**
+In this example, you want to respond to a specific customer viewing a specific product.
+From the **Citi Signal** homepage, go to **Phones & devices**, and click the product **Galaxy S24**.
 
-Next, click **Connect to source**.
+![Data Ingestion](./images/homegalaxy.png)
 
-![External Audiences Metadata http 2](images/extAudMDhttp2.png)
+The product page for Galaxy S24 has now been viewed, so your audience will qualify for your profile in the following minutes. 
 
-You'll then see this. Click **Next**.
+![Data Ingestion](./images/homegalaxy1.png)
 
-![External Audiences Metadata http 2](images/extAudMDhttp2a.png)
+When you open the Profile Viewer, and go to **Audiences**, you'll see the audience qualify.
 
-Select **Existing dataset** and in the dropdown menu, search and select the dataset `--aepUserLdap-- - External Audience Metadata`.
+![Data Ingestion](./images/homegalaxydsdk.png)
 
-Verify the **Dataflow details** and then click **Next**.
+Now go back to your open webhook on [https://eodts05snjmjz67.m.pipedream.net](https://eodts05snjmjz67.m.pipedream.net), where you should see a new incoming request, which originates from Adobe Experience Platform and which contains the audience qualification event.
 
-![External Audiences Metadata http 3](images/extAudMDhttp3.png)
+![Data Ingestion](./images/destsdk10.png)
 
-You'll then see this.
-
-The **Mapping** step of the wizard is empty as you'll be ingesting an XDM compliant payload into the HTTP API Source Connector, so no mapping is required. Click **Next**.
-
-![External Audiences Metadata http 3](images/extAudMDhttp3a.png)
-
-In the **Review** step you can optionally review the connection and the mapping details. Click **Finish**.
-
-![External Audiences Metadata http 4](images/extAudMDhttp4.png)
-
-You'll then see this.
-
-![External Audiences Metadata http 4](images/extAudMDhttp4a.png)
-
-## 2.3.6.1.5 Ingestion of External Audiences metadata
-
-On your Source Connector overview tab, click **...** and then click **Copy schema payload**.
-
-![External Audiences Metadata str 1](images/extAudMDstr1a.png)
-
-Open your Text Editor application on your computer and paste the payload you just copied, which looks like this. Next, you need to update the **xdmEntity** object in this payload.
-
-![External Audiences Metadata str 1](images/extAudMDstr1b.png)
-
-The object **xdmEntity** needs to be replaced by the below code. Copy the below code, and paste it into your text file by replacing the **xdmEntity** object in the text editor.
-
-```
-"xdmEntity": {
-    "_id": "--aepUserLdap---extaudience-01",
-    "description": "--aepUserLdap---extaudience-01 description",
-    "segmentIdentity": {
-      "_id": "--aepUserLdap---extaudience-01",
-      "namespace": {
-        "code": "externalaudiences"
-      }
-    },
-    "segmentName": "--aepUserLdap---extaudience-01 name",
-    "segmentStatus": "ACTIVE",
-    "version": "1.0"
-  }
-```
-
-You should then see this:
-
-![External Audiences Metadata str 1](images/extAudMDstr1.png)
-
-Next, open a new **Terminal** window. Copy all the text in your Text Editor and paste it in the terminal window. 
-
-![External Audiences Metadata str 1](images/extAudMDstr1d.png)
-
-Next, hit **Enter**.
-
-You'll then see a confirmation of your data ingestion in the Terminal window:
-
-![External Audiences Metadata str 1](images/extAudMDstr1e.png)
-
-Refresh your HTTP API Source connector screen, where you'll now see that data is being processed:
-
-![External Audiences Metadata str 2](images/extAudMDstr2.png)
-
-## 2.3.6.1.6 Validate External Audiences metadata ingestion
-
-When the processing is completed you can check the data availability in the dataset using Query Service.
-
-In the right menu, go to **Datasets** and select the `--aepUserLdap-- - External Audience Metadata` dataset you created previously.
-
-![External Audiences Metadata str 3](images/extAudMDstr3.png)  
-
-In the right menu, go to Queries and click **Create query**.
-
-![External Audiences Metadata str 4](images/extAudMDstr4.png)
-
-Enter the following code and then hit **SHIFT + ENTER**:
-
-```
-select * from --aepUserLdap--_external_audience_metadata
-```
-
-In the query results you'll see the external audience's metadata that you ingested.
-
-![External Audiences Metadata str 5](images/extAudMDstr5.png)
-
-## Audience Membership
-
-With the external audience metadata available you can now ingest the audience membership for a specific customer profile.
-
-You now need to prepare a profile dataset enriched against the audience membership schema. You can find more details in the [XDM Github repository](https://github.com/adobe/xdm/blob/master/docs/reference/datatypes/segmentmembership.schema.md).
-
-### Create the External Audiences Membership schema
-
-In the right menu, go to **Schemas**. Click **Create Schema** and then click **XDM Individual Profile**.
-
-![External Audiences Profile Schema 1](images/extAudPrXDM1.png)
-
-In the **Add field groups** popup, search for **Profile Core**. Select the **Profile Core v2** field group.
-
-![External Audiences Profile Schema 2](images/extAudPrXDM2.png)
-
-Next, in the **Add field groups** popup, search for **Segment membership**. Select the **Segment Membership Details** field group. Next, click **Add field groups**.
-
-![External Audiences Profile Schema 3](images/extAudPrXDM3.png)
-
-You'll then see this. Navigate to the field `--aepTenantId--.identification.core`. Click the **crmId** field. In the right menu, scroll down and check the **Identity** and the **Primary identity** checkboxes. For the **Identity Namespace** select **Demo System - CRMID**. 
-
-Click **Apply**.
-
-![External Audiences Profile Schema 4](images/extAudPrXDM4.png)
-
-Next, select the Schema name **Untitled schema**. In the display name field, enter `--aepUserLdap-- - External Audiences Membership`.
-
-![External Audiences Profile Schema 5](images/extAudPrXDM5a.png)
-
-Next, enable the **Profile** toggle and confirm. Click **Save**.
-
-![External Audiences Profile Schema 5](images/extAudPrXDM5.png)
-
-### Create the External Audiences Membership dataset
-
-In **Schemas**, go to **Browse**. Search and click the `--aepUserLdap-- - External Audiences Membership` schema you created in the previous step. Next, click **Create Dataset from Schema**.
-
-![External Audiences Metadata DS 1](images/extAudPrDS1.png)
-
-For the field **Name**, enter `--aepUserLdap-- - External Audiences Membership`. Click **Create dataset**.
-
-![External Audiences Metadata DS 2](images/extAudPrDS2.png)
-
-You'll then see this. Don't forget to enable the **Profile** toggle!
-
-![External Audiences Metadata DS 3](images/extAudPrDS3.png)
-
-### Create an HTTP API Source Connection
-
-
-Next, you need to configure the HTTP API Source Connector which you'll use to ingest the metadata into the dataset.
-
-Go to **Sources**. In the search field, enter **HTTP**. Click **Add data**.
-
-![External Audiences Metadata http 1](images/extAudMDhttp1.png)
-
-Enter the following information:
-
-- **Account type**: select **New account**
-- **Account name**: enter `--aepUserLdap-- - External Audience Membership`
-- Check the checkbox **XDM compatible box**
-
-Next, click **Connect to source**.
-
-![External Audiences Metadata http 2](images/extAudPrhttp2.png)
-
-You'll then see this. Click **Next**.
-
-![External Audiences Metadata http 2](images/extAudPrhttp2a.png)
-
-Select **Existing dataset** and in the dropdown menu, search and select the dataset `--aepUserLdap-- - External Audiences Membership`.
-
-Verify the **Dataflow details** and then click **Next**.
-
-![External Audiences Metadata http 3](images/extAudPrhttp3.png)
-
-You'll then see this.
-
-The **Mapping** step of the wizard is empty as you'll be ingesting an XDM compliant payload into the HTTP API Source Connector, so no mapping is required. Click **Next**.
-
-![External Audiences Metadata http 3](images/extAudPrhttp3a.png)
-
-In the **Review** step you can optionally review the connection and the mapping details. Click **Finish**.
-
-![External Audiences Metadata http 4](images/extAudPrhttp4.png)
-
-You'll then see this.
-
-![External Audiences Metadata http 4](images/extAudPrhttp4a.png)
-
-### Ingestion of External Audiences Membership data
-
-On your Source Connector overview tab, click **...** and then click **Copy schema payload**.
-
-![External Audiences Metadata str 1](./images/extAudPrstr1a.png)
-
-Open your Text Editor application on your computer and paste the payload you just copied, which looks like this. Next, you need to update the **xdmEntity** object in this payload.
-
-![External Audiences Metadata str 1](images/extAudPrstr1b.png)
-
-The object **xdmEntity** needs to be replaced by the below code. Copy the below code, and paste it into your text file by replacing the **xdmEntity** object in the text editor.
-
-```
-  "xdmEntity": {
-    "_id": "--aepUserLdap---profile-test-01",
-    "_experienceplatform": {
-      "identification": {
-        "core": {
-          "crmId": "--aepUserLdap---profile-test-01"
-        }
-      }
-    },
-    "personID": "--aepUserLdap---profile-test-01",
-    "segmentMembership": {
-      "externalaudiences": {
-        "--aepUserLdap---extaudience-01": {
-          "status": "realized",
-          "lastQualificationTime": "2022-03-05T00:00:00Z"
-        }
-      }
-    }
-  }
-```
-
-You should then see this:
-
-![External Audiences Metadata str 1](images/extAudPrstr1.png)
-
-Next, open a new **Terminal** window. Copy all the text in your Text Editor and paste it in the terminal window. 
-
-![External Audiences Metadata str 1](images/extAudPrstr1d.png)
-
-Next, hit **Enter**.
-
-You'll then see a confirmation of your data ingestion in the Terminal window:
-
-![External Audiences Metadata str 1](images/extAudPrstr1e.png)
-
-Refresh your HTTP API Source connector screen, where after a couple of minutes you'll now see that data is being processed:
-
-![External Audiences Metadata str 2](images/extAudPrstr2.png)
-
-### Validate External Audiences Membership ingestion
-
-When the processing is completed you can check the data availability in the dataset using Query Service.
-
-In the right menu, go to **Datasets** and select the `--aepUserLdap-- - External Audiences Membership ` dataset you created previously. 
-
-![External Audiences Metadata str 3](images/extAudPrstr3.png)
-
-In the right menu, go to Queries and click **Create query**.
-
-![External Audiences Metadata str 4](images/extAudPrstr4.png)
-
-Enter the following code and then hit **SHIFT + ENTER**:
-
-```
-select * from --aepUserLdap--_external_audiences_membership
-```
-
-In the query results you'll see the external audience's metadata that you ingested.
-
-![External Audiences Metadata str 5](images/extAudPrstr5.png)
-
-## Create a segment
-
-Now you are ready to to take action on the external audiences.
-In Adobe Experience Platform taking action is achieved via creating segments, populating the respective audiences and sharing those audiences to the destinations.
-You'll now create a segment using the external audience you just created.
-
-In the left menu, go to **Segments** and click **Create segment**.
-
-![External Audiences SegBuilder 1](images/extAudSegUI2.png)
-
-Go to **Audiences**. You'll then see this. Click **External Audiences**.
-
-![External Audiences SegBuilder 1](images/extAudSegUI2a.png)
-
-Select the external audience you created earlier, which is named `--aepUserLdap---extaudience-01`. Drag and drop the audience onto the canvas.
-
-![External Audiences SegBuilder 1](images/extAudSegUI2b.png)
-
-Give your segment a name, use `--aepUserLdap-- - extaudience-01`. Click **Save and Close**.
-
-![External Audiences SegBuilder 1](images/extAudSegUI1.png)
-
-You'll then see this. You'll also notice that the profile for which you ingested the segment membership now shows in the list of **Sample Profiles**.
-
-![External Audiences SegBuilder 1](images/extAudSegUI3.png)
-
-Your segment is ready now, and can be sent towards a destination for activation.
-
-## Visualize your customer profile
-
-You can now also visualize the segment qualification on your customer profile. Go to **Profiles**, use the identity namespace **Demo System - CRMID** and provide the identity `--aepUserLdap---profile-test-01`, which you used as part of exercise 6.6.2.4, and click **View**. Next, click the **Profile ID** to open the profile.
-
-![External Audiences SegBuilder 1](images/extAudProfileUI1.png)
-
-Go to **Segment membership**, where you'll see your external audience appear.
-
-![External Audiences SegBuilder 1](images/extAudProfileUI2.png)
-
-Next Step: [2.3.7 Destinations SDK](./ex7.md)
+Next Step: [Summary and benefits](./summary.md)
 
 [Go Back to Module 2.3](./real-time-cdp-build-a-segment-take-action.md)
 

@@ -9,7 +9,7 @@ exl-id: bb712980-5910-4f01-976b-b7fcf03f5407
 
 ## Create your custom webhook
 
-Go to [https://pipedream.com/requestbin](https://pipedream.com/requestbin). You already used this application in [Exercise 2.3.7 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex7.md)
+Go to [https://pipedream.com/requestbin](https://pipedream.com/requestbin). You already used this application in [Exercise 2.3.6 Destinations SDK](./../../../modules/rtcdp-b2c/module2.3/ex6.md)
 
 If you haven't used that service yet, create an account and then create a workspace. Once the workspace is created, you'll see something similar to this. 
 

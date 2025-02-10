@@ -7,7 +7,7 @@ exl-id: f863bf1c-004a-4137-9ef2-efae76499dfa
 ---
 # Use Demo System Next to setup your Adobe Experience Platform Data Collection client property
 
-In order to visualize the learnings in this tutorial and to make it possible for you to test your configuration in a safe environment, this tutorial is using Adobe's Demo System Next tools. In order to get the most of this tutorial, your AEP instance needs to be configured to be integrated with Demo System Next. 
+In order to visualize the learnings in this tutorial and to make it possible for you to test your configuration in a safe environment, this tutorial is using Adobe's Demo System Next tools. In order to get the most of this tutorial, your Adobe Experience Platform instance needs to be configured to be integrated with Demo System Next. 
 
 Once you've got access to Demo System Next, proceed with the below steps.
 
@@ -15,7 +15,7 @@ Go to [https://dsn.adobe.com/](https://dsn.adobe.com/) and navigate to **Setup**
 
 ![DSN](./images/dsnsetup.png)
 
-In the **Environment** dropdown, select your AEP isntance and sandbox.
+In the **Environment** dropdown, select your Adobe Experience Platform isntance and sandbox.
 
 ![DSN](./images/dsnh1.png)
 

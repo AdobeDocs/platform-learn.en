@@ -14,16 +14,16 @@ Adobe Experience Platform Data Collection is used by brands for a number of use 
 - Implement Adobe Experience Cloud applications as well as Adobe Experience Platform.
 - Manage the different requirements of different parts of the organization by providing each with their own **Property** to manage.
 - Allow for testing and lifecycle management.
-- Inject custom javascript and 3rd party tags, all managed in one place.
+- Inject custom JavaScript and 3rd party tags, all managed in one place.
 
 ## Explore the UI
 
 Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/#/data-collection/).
 
-Go to **Tags**. Youre now seeing the **[!UICONTROL Properties]** view. Properties listed here are for tutorial management. These properties represent...
+Go to **Tags**. Youre now seeing the **[!UICONTROL Properties]** view. Properties listed here are for tutorial management. These properties represent:
 
 - App and Web properties
-- Different websites serving customers in different ways. For example Luma Retail would have one property, Luma Travel would have another
+- Different websites serving customers in different ways. For example Luma Retail would have one property, Luma Travel would have another.
 - Legacy as well as current websites
 - A specific Adobe Analytics design common to multiple differing websites
 - Internal intranet pages alongside external sites

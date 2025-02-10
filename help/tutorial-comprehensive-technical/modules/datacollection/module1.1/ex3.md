@@ -11,9 +11,9 @@ exl-id: 391c79d6-9c42-465e-bce8-60fa6474979c
 
 Now let's take a deeper look at the building blocks of Adobe Experience Platform Data Collection, to understand what is installed on your demo website. You will have a closer look at the Adobe Experience Platform Web SDK Extension, you'll configure a data element and a rule and you'll learn how to publish a library.
 
-## Adobe Experience Platform Web SDK Extension
+## Adobe Experience Platform Web SDK tag extension
 
-An extension is a packaged set of code that extends the Adobe Experience Platform Data Collection interface and the library functionality. Adobe Experience Platform Data Collection is the platform, and extensions are like apps that run on the platform. All of the extensions used in the tutorial are created and managed by Adobe, but 3rd-parties can create their own extensions to limit the amount of custom code Adobe Experience Platform Data Collection users have to manage.
+A tag extension is a packaged set of code that extends the Adobe Experience Platform Data Collection interface and the library functionality. Adobe Experience Platform Data Collection is the platform, and tag extensions are like apps that run on the platform. All of the extensions used in the tutorial are created and managed by Adobe, but 3rd-parties can create their own extensions to limit the amount of custom code Adobe Experience Platform Data Collection users have to manage.
 
 Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/launch/) and select **Tags**.
 
@@ -52,7 +52,7 @@ Data elements are the building blocks for your data dictionary (or data map). Us
 
 A single data element is a variable whose value can be mapped to query strings, URLs, cookie values, JavaScript variables, and so on. You can reference this value by its variable name throughout Adobe Experience Platform Data Collection. This collection of data elements becomes the dictionary of defined data that you can use to build your rules (events, conditions, and actions). This data dictionary is shared across all of Adobe Experience Platform Data Collection for use with any extension you've added to your property.
 
-You're now going to edit an already existing data element in a Web SDK Friendly format.
+You're now going to edit an already existing data element in a Web SDK friendly format.
 
 Click on Data Elements in the left rail to be taken to the Data Elements page.
 

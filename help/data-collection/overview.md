@@ -17,7 +17,50 @@ Data Collection is the next generation of website tag and mobile SDK management 
 
 <div id="staff-picks-section">
 
-## Staff picks
+## Migration Guides
+
+<table>
+<tr>
+  <td>
+    <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+      <img alt="Migrate Target to Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
+    <strong>Migrate Adobe Target to Web SDK</strong>
+    </a>
+    </div>
+    <p>
+    <em>Replace at.js with Web SDK</em>
+    <p>
+  </td>
+  <td>
+    <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+      <img alt="Implement Adobe Experience Cloud with Web SDK" src="assets/thumb_analyticsWebSdk.png" />
+    </a>
+    <div>
+      <a href="https://experienceleague.adobe.com/en/docs/platform-learn/migrate-analytics-to-websdk/migration-to-websdk-overview" target="_blank">
+    <strong>Migrate Adobe Analytics to Web SDK in tags</strong>
+    </a>
+    </div>
+    <p>
+    <em>Replace AppMeasurement.js with Web SDK with tags</em>
+    <p>
+  </td>
+  <td>
+      <img alt="Migrate Target to Web SDK" src="assets/thumb_aamWebSdk.png" />
+    </a>
+    <div>
+      <strong>Migrate Adobe Audience Manager to Web SDK</strong>
+    </div>
+    <p>
+    <em>Replace <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/dil-extension-to-web-sdk" target="_blank">dil.js</a> or <a href="https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk" target="_blank">update server side forwarding</a></em>
+    <p>
+  </td>
+</tr>
+</table>
+
+## Implementation Guides
 
 <table>
 <tr>
@@ -49,15 +92,15 @@ Data Collection is the next generation of website tag and mobile SDK management 
   </td>
   <td>
     <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-      <img alt="Migrate Target to Web SDK" src="assets/thumb_targetWebSdk.jpg" />
+      <img alt="Migrate Target to Web SDK" src="assets/thumb_legacy.png" />
     </a>
     <div>
       <a href="https://experienceleague.adobe.com/docs/platform-learn/migrate-target-to-websdk/introduction.html" target="_blank">
-    <strong>Migrate Adobe Target to Web SDK</strong>
+    <strong>Implement legacy libraries with tags</strong>
     </a>
     </div>
     <p>
-    <em>Migrate from at.js to Web SDK</em>
+    <em>Use tags to implement legacy Analytics, Target, and Audience Manager libraries</em>
     <p>
   </td>
 </tr>

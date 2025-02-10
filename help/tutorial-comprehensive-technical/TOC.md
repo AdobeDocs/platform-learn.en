@@ -21,6 +21,7 @@ recommendations: noDisplay,noCatalog
     + [Create your Datastream](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex3.md)
     + [Use the website](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex4.md)
     + [Use the mobile app](/help/tutorial-comprehensive-technical/modules/gettingstarted/gettingstarted/ex5.md)
+  + [PostBuster](/help/tutorial-comprehensive-technical/postbuster.md)
 
 + 1 Data Collection {#datacollection}
   + 1.1 Adobe Experience Platform Data Collection and Web SDK {#module11}
@@ -70,8 +71,7 @@ recommendations: noDisplay,noCatalog
     + [2.3.3 Take Action: send your audience to DV360](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex3.md)
     + [2.3.4 Take Action: send your audience to an S3-destination](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex4.md)
     + [2.3.5 Take Action: send your audience to Adobe Target](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex5.md)
-    + [2.3.6 External Audiences](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
-    + [2.3.7 Destinations SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex7.md)
+    + [2.3.6 Destinations SDK](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/ex6.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.3/summary.md)
   + 2.4 Real-Time CDP: Audience Activation to Microsoft Azure Event Hub {#module24}
     + [Overview](/help/tutorial-comprehensive-technical/modules/rtcdp-b2c/module2.4/segment-activation-microsoft-azure-eventhub.md)
@@ -131,6 +131,12 @@ recommendations: noDisplay,noCatalog
     + [3.4.3 Apply segment-based personalization in an email message](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex3.md)
     + [3.4.4 Setup and use push notifications](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/ex4.md)
     + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.4/summary.md)
+  + 3.5 Adobe Journey Optimizer: Translation Services {#module35}
+    + [Overview](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+    + [3.5.1 Translations Provider](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex1.md)
+    + [3.5.2 Create your Campaign](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex2.md)
+    + [3.5.3 Add Languages to your Email](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/ex3.md)
+    + [Summary and benefits](/help/tutorial-comprehensive-technical/modules/ajo-b2c/module3.5/summary.md)
 
 + 4 Customer Journey Analytics B2C {#cjab2c} 
   + 4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace {#module41}

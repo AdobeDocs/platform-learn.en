@@ -24,10 +24,17 @@ Below is an overview of the status of the content in this tutorial.
 | [3.2 Adobe Journey Optimizer: External data sources and custom actions](./modules/ajo-b2c/module3.2/journey-orchestration-external-weather-api-sms.md)      | 30/12/2024        | Yes       |-|
 | [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/ajo-b2c/module3.3/offer-decisioning.md)      | 06/01/2025        | Yes       |-|
 | [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/ajo-b2c/module3.4/journeyoptimizer.md)| 05/01/2025        | Yes        |-|
+| [3.5 Adobe Journey Optimizer: Translation Services](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md)| 08/02/2025        | Yes        |-|
 | [4.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/cja-b2c/module4.1/customer-journey-analytics-build-a-dashboard.md)      | 06/01/2025        | Yes        | - |
 | [4.2 Customer Journey Analytics: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/cja-b2c/module4.2/customer-journey-analytics-bigquery-gcp.md)      | 07/01/2025        | No        | There's an issue with the data prep modelling for the source data. This is pending a fix. |
 | [5.1 Query Service](./modules/datadistiller/module5.1/query-service.md)      | 04/12/2024        | Yes        |-|
 
 {style="table-layout:auto"}
+
+![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
 
 [Go Back to All Modules](./overview.md)

@@ -37,6 +37,10 @@ In this exercise you'll develop a basic custom block for your website.
 
 In this exercise you'll develop an advanced custom block for your website.
 
+[2.1.6 AEM Edge Delivery Services MarTech plugin](./ex6.md){target="_blank"}
+
+In this exercise you'll implement the AEM MarTech plugin. The AEM MarTech plugin helps you quickly set up a complete MarTech stack for your AEM project. 
+
 [Summary and benefits](./summary.md){target="_blank"}
 
 Summary of this module and overview of the benefits.

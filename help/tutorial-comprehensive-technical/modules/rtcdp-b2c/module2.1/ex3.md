@@ -126,7 +126,11 @@ Select the newly created Adobe I/O project and click **Save**.
 
 ![Permissions](./images/perm4.png)
 
-## Postman authentication to Adobe I/O
+## Authentication to Adobe I/O
+
+>[!IMPORTANT]
+>
+>If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
 
 Go to [https://www.postman.com/downloads/](https://www.postman.com/downloads/). 
 
