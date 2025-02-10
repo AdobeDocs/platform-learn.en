@@ -134,7 +134,7 @@ You now have this schema structure in place.
 ![Data Ingestion](./images/schemastructurem.png)
 
 Your new [!UICONTROL Field Group] is still empty, so now you'll have to add fields to that [!UICONTROL Field Group].
-In the [!UICONTROL Field Group]-list, click your custom [!UICONTROL Field Group], then click **Browse**.
+In the [!UICONTROL Field Group]-list, click your custom [!UICONTROL Field Group].
 
 ![Data Ingestion](./images/schemastructurem.png)
 
@@ -159,7 +159,7 @@ Click **Apply**.
 
 ![Data Ingestion](./images/tenantfielddef.png)
 
-You'll now see a new object in your schema, which represents a custom **[!UICONTROL object]** in the schema, and which is named after your Adobe Experience Platform Tenant ID. Your Adobe Experience Platform tenant id is `--aepTenantId--` and it is unqiue for every AEP instance.
+You'll now see a new object in your schema, which represents a custom **[!UICONTROL object]** in the schema, and which is named after your Adobe Experience Platform Tenant ID. Your Adobe Experience Platform tenant id is `--aepTenantId--` and it is unique for every AEP instance.
 
 ![Data Ingestion](./images/tenant.png)
 
@@ -170,26 +170,26 @@ You'll now add a 3 new fields object under that tenant, in the **identification*
 Use the below information to create those 3 new fields under the  **[!UICONTROL identification]** object:
 
 - ecid:
-  - Field name: **[!UICONTROL ecid]**
-  - Display name:  **[!UICONTROL ecid]**
+  - Field name: **`--aepUserLdap--_ecid`**
+  - Display name:  **`--aepUserLdap--ecid`**
   - Type: **[!UICONTROL String]**
   - Field Group: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 - emailId
-  - Field name: **[!UICONTROL emailId]**
-  - Display name:  **[!UICONTROL emailId]**
+  - Field name: **`--aepUserLdap--_emailId`**
+  - Display name:  **`--aepUserLdap--_emailId`**
   - Type: **[!UICONTROL String]**
   - Field Group: **`--aepUserLdap-- - Profile Identification Field Group`**
   
 - mobilenr
-  - Field name: **[!UICONTROL mobilenr]**
-  - Display name:  **[!UICONTROL mobilenr]**
+  - Field name: **`--aepUserLdap--_mobilenr`**
+  - Display name:  **`--aepUserLdap--_mobilenr`**
   - Type: **[!UICONTROL String]**
   - Field Group: **`--aepUserLdap-- - Profile Identification Field Group`**
 
 This is how each field should look after your initial field configuration.
 
-- mobilenr
+- `--aepUserLdap--_mobilenr`
 
 ![Data Ingestion](./images/mobilenrfield.png)
 
@@ -197,13 +197,13 @@ To save your field, scroll down in the **[!UICONTROL Field Properties]** until y
 
 ![Data Ingestion](./images/apply.png)
 
-- ecid
+- `--aepUserLdap--_ecid`
 
 ![Data Ingestion](./images/ecidfield.png)
 
 Don't forget to scroll down and click **Apply**.
 
-- emailId
+- `--aepUserLdap--_emailId`
 
 ![Data Ingestion](./images/emailidfield.png)
 
@@ -217,7 +217,7 @@ Your 3 fields now have to be defined as **[!UICONTROL Identity]**-fields.
 
 To start defining these fields as **[!UICONTROL Identity]**-fields, follow these steps:
 
-- Select the field **[!UICONTROL emailId]**.
+- Select the field **`--aepUserLdap--_emailId`**.
 - On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 
 ![Data Ingestion](./images/emailidid.png)
@@ -230,15 +230,15 @@ To start defining these fields as **[!UICONTROL Identity]**-fields, follow these
 
 ![Data Ingestion](./images/emailidprimidns.png)
   
-Next, you have to define the other fields for **[!UICONTROL ecid]** and **[!UICONTROL mobilenr]** as standard identifiers.
+Next, you have to define the other fields for **`--aepUserLdap--_ecid`** and **`--aepUserLdap--_mobilenr`** as standard identifiers.
 
-Select the field **[!UICONTROL ecid]**. On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+Select the field **`--aepUserLdap--_ecid`**. On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 Next, select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. 
 Click **[!UICONTROL Apply]** to save your changes.
 
 ![Data Ingestion](./images/ecidid.png)
 
-Select the field **[!UICONTROL mobilenr]**. On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
+Select the field **`--aepUserLdap--_mobilenr`**. On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]**. 
 Select the namespace **[!UICONTROL Phone]** from the list of **[!UICONTROL Namespaces]**. 
 Click **[!UICONTROL Apply]** to save your changes.
 
@@ -409,12 +409,12 @@ You now have an empty field. You need to configure the above field as indicated.
 
 - ecid:
 
-  - Field name: **[!UICONTROL ecidweb]**
-  - Display name:  **[!UICONTROL ecidweb]**
+  - Field name: **`--aepUserLdap--_ecidweb`**
+  - Display name:  **`--aepUserLdap--_ecidweb`**
   - Type: **[!UICONTROL String]**
   - Field Group: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
-This is how the [!UICONTROL ecid]-field should look after your initial field configuration:
+This is how the `--aepUserLdap--_ecidweb`-field should look after your initial field configuration:
 
 ![Data Ingestion](./images/ecidfieldee.png)
 
@@ -426,7 +426,7 @@ You now have a new field, but this field hasn't been defined as an **[!UICONTROL
 
 ![Data Ingestion](./images/3fieldsee.png)
 
-To start defining these fields as **[!UICONTROL Identity]**-fields, select the field **[!UICONTROL ecid]**.
+To start defining these fields as **[!UICONTROL Identity]**-fields, select the field **`--aepUserLdap--_ecidweb`**.
 On the right side, in the field properties, scroll down until you see **[!UICONTROL Identity]**. Check the checkbox for **[!UICONTROL Identity]** and check the checkbox for **[!UICONTROL Primary Identity]**.
 Select the namespace **[!UICONTROL ECID]** from the list of **[!UICONTROL Namespaces]**. 
 
