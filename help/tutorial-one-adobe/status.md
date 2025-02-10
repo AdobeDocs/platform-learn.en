@@ -16,7 +16,7 @@ Below is an overview of the status of the content in this tutorial.
 | [2.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/csc/module2.1/aemcs.md) | 16/01/2025  | Yes         | - |
 | [2.2 Workflow Management with Adobe Workfront](./modules/csc/module2.2/workfront.md) | 16/01/2025  | No         | Content not finished yet |
 | [3.1 Federated Audience Composition](./modules/uce/module3.1/fac.md) | 16/01/2025  | Yes         | - |
-| [3.2 Adobe Journey Optimizer: Translation Services](./modules/uce/module3.2/ajotranslationsvcs.md) | 16/01/2025  | No         | Content not finished yet |
+| [3.2 Adobe Journey Optimizer: Translation Services](./modules/uce/module3.2/ajotranslationsvcs.md) | 08/02/2025  | Yes         | - |
 | [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/uce/module3.3/offer-decisioning.md) | 14/11/2024  | Yes         | - |
 
 {style="table-layout:auto"}

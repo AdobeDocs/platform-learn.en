@@ -56,7 +56,7 @@ On the **Integrations** page, you need to select the Data Collection property th
 
 ![DSN](./images/web8aa.png)
 
-Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap - Demo System (DD/MM/YYYY) (mobile)`. Then, click **Save**.
+Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap-- - Demo System (DD/MM/YYYY) (mobile)`. Then, click **Save**.
 
 ![DSN](./images/web8b.png)
 
