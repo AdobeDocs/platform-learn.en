@@ -3,19 +3,29 @@ title: Replace the SDK - Migrate from the Adobe Target to the Adobe Journey Opti
 description: Learn how to replace the SDK when migrating from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
 ---
-# Replace the Target extension with the Decisioning extension
+# Replace the Target SDK with the Optimize SDK
 
-Learn how to replace your on-page Adobe Target implementation to migrate from at.js to Platform Web SDK. A basic replacement consists of the following steps:
+Learn how to replace the Adobe Target SDKs with the Optimize SDKs in your mobile implementation. A basic replacement consists of the following steps:
 
+* Update dependencies in your Podfile or `build.gradle` file
+* Update imports
+* Update application code
 
-## Integrate Decisioning extension (Optimize SDK) in your mobile application
+>[!INFO]
+>
+>Within the Adobe Experience Platform Mobile SDK ecosystem, extensions are implemented by SDKs imported into your applications which may have different names:
+>
+> * **Target SDK** implements the **Adobe Target extension**
+> * **Optimize SDK** implements the **Adobe Journey Optimizer - Decisioning extension**
+
+## Update dependencies
 
 
 >[!BEGINTABS]
 
->[!TAB App dependencies for Decisioning extension-Android] 
+>[!TAB App dependencies for Optimize SDK-Android] 
 
-`build.gradle` dependencies
+`build.gradle` dependencies after migrating
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -30,9 +40,9 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB App dependencies for Decisioning extension-iOS]
+>[!TAB App dependencies for Optimize SDK-iOS]
 
-`Podfile` dependencies
+`Podfile` dependencies after migrating
 
 ```Swift
 use_frameworks!
@@ -45,9 +55,9 @@ pod 'AEPLifecycle', '~>5.0'
 pod 'AEPUserProfile', '~> 5.0'
 ```
 
->[!TAB App dependencies for Target extension-Android] 
+>[!TAB App dependencies for Target SDK-Android] 
 
-`build.gradle` dependencies
+`build.gradle` dependencies before migrating
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
@@ -61,9 +71,9 @@ implementation 'com.adobe.marketing.mobile:userprofile'
 
 ```
 
->[!TAB App dependencies for Target extension-iOS]
+>[!TAB App dependencies for Target SDK-iOS]
 
-`Podfile` dependencies
+`Podfile` dependencies before migrating
 
 ```Swift
 use_frameworks!
@@ -79,13 +89,13 @@ pod 'AEPUserProfile', '~> 5.0'
 >[!ENDTABS]
 
 
-## Update content-prehiding approach
+## Update imports and code
 
 >[!BEGINTABS]
 
->[!TAB Decisioning extension-Android] 
+>[!TAB Optimize SDK-Android] 
 
-Java initialization code
+Java initialization code after migrating
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -135,9 +145,9 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Decisioning extension-iOS]
+>[!TAB Optimize SDK-iOS]
 
-Swift initialization code
+Swift initialization code after migrating
 
 ```Swift
 import AEPCore
@@ -177,9 +187,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 }
 ```
 
->[!TAB Target extension-Android] 
+>[!TAB Target SDK-Android] 
 
-Java initialization code
+Java initialization code before migrating
 
 ```Java
 import com.adobe.marketing.mobile.AdobeCallback;
@@ -226,9 +236,9 @@ public class MainApp extends Application {
 
 ```
 
->[!TAB Target extension-iOS]
+>[!TAB Target SDK-iOS]
 
-Swift initialization code
+Swift initialization code before migrating
 
 ```Swift
 import AEPCore
