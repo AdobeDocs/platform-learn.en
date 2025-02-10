@@ -11,7 +11,7 @@ In the previous exercise, you configured a basic custom block called **Fiber Off
 
 You can now continue working on this block.
 
-![AEMCS](./images/nav7.png)
+![AEMCS](./images/nav7.png){zoomable="yes"}
 
 ## 2.1.5.1 Style your block
 
@@ -19,23 +19,23 @@ Now that you have a working **fiberoffer** block you can apply styling to it.
 
 Go back to Visual Studio Code and open the folder **blocks**. You should now see multiple folders that each reference a specific block. In order to make your **fiberoffer** block more advanced, you now need to create a folder for your custom block.
 
-![AEMCS](./images/blockadv1.png)
+![AEMCS](./images/blockadv1.png){zoomable="yes"}
 
 Select the folder **blocks** and then click the **Create New Folder** icon.
 
-![AEMCS](./images/blockadv2.png)
+![AEMCS](./images/blockadv2.png){zoomable="yes"}
 
 Name your folder `fiberoffer` and hit **enter**.
 
-![AEMCS](./images/blockadv3.png)
+![AEMCS](./images/blockadv3.png){zoomable="yes"}
 
 Select the new **fiberoffer** folder and click the **Create New File** icon.
 
-![AEMCS](./images/blockadv4.png)
+![AEMCS](./images/blockadv4.png){zoomable="yes"}
 
 A new file is now created. Enter the name **fiberoffer.js** and hit enter.
 
-![AEMCS](./images/blockadv5.png)
+![AEMCS](./images/blockadv5.png){zoomable="yes"}
 
 You can now implement block decoration by adding the following JavaScript into the file **fiberoffer.js**.
 
@@ -56,15 +56,15 @@ export default function decorate(block) {
 }
 ```
 
-![AEMCS](./images/blockadv6.png)
+![AEMCS](./images/blockadv6.png){zoomable="yes"}
 
 Select the new **fiberoffer** folder and click the **Create New File** icon again.
 
-![AEMCS](./images/blockadv7.png)
+![AEMCS](./images/blockadv7.png){zoomable="yes"}
 
 A new file is now created. Enter the name **fiberoffer.css** and hit enter.
 
-![AEMCS](./images/blockadv8.png)
+![AEMCS](./images/blockadv8.png){zoomable="yes"}
 
 Copy and paste the folllowing CSS code in the newly created file.
 
@@ -82,7 +82,7 @@ Copy and paste the folllowing CSS code in the newly created file.
 
 Save your changes.
 
-![AEMCS](./images/blockadv9.png)
+![AEMCS](./images/blockadv9.png){zoomable="yes"}
 
 You've now made several changes in your project that need to be committed back to your GitHub repository. To do that, open **GitHub Desktop**.
 
@@ -90,15 +90,15 @@ You should then see the 2 files that you just edited under **Changes**. Review y
 
 Enter a name for your PR, `js css`. Click **Commit to main**.
 
-![Block](./images/blockadv10.png)
+![Block](./images/blockadv10.png){zoomable="yes"}
 
 You should then see this. Click **Push origin**.
 
-![Block](./images/blockadv11.png)
+![Block](./images/blockadv11.png){zoomable="yes"}
 
 In your browser, go to your GitHub account and to the repository your created for CitiSignal. You should then see something like this, showing that your changes have been received.
 
-![Block](./images/blockadv12.png)
+![Block](./images/blockadv12.png){zoomable="yes"}
 
 You will now be able to view the changes to your website by going to `main--citisignal--XXX.aem.page/us/en` and/or `main--citisignal--XXX.aem.live/us/en`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
 
@@ -107,7 +107,7 @@ In this example, the full URL becomes this:
 
 You should then see this, with the styling applied to your page.
 
-![Block](./images/blockadv13.png)
+![Block](./images/blockadv13.png){zoomable="yes"}
 
 ## 2.1.5.2 Add logic and load data from an external endpoint
 
@@ -150,11 +150,11 @@ In the **Getting Started** module, you already configured a datastream, called `
 
 You don't need to change the field **edgeConfigId** at this moment. In the next exercise you will be able to do this using the **MarTech** plugin.
 
-![Block](./images/blockadv15.png)
+![Block](./images/blockadv15.png){zoomable="yes"}
 
 You should now have this.
 
-![Block](./images/blockadv14.png)
+![Block](./images/blockadv14.png){zoomable="yes"}
 
 Next, add this block below the previous code that you added in.
 
@@ -179,7 +179,7 @@ This block of code is used to retrieve the value of the Experience Cloud ID (ECI
 
 As you can see in the above code, once the ECID is retrieved, another function is being called. This function is called **getOffer()** which you will add next.
 
-![Block](./images/blockadv16.png)
+![Block](./images/blockadv16.png){zoomable="yes"}
 
 Next, add the below code under the 
 
@@ -312,7 +312,7 @@ async function getOffer(ECID) {
 
 It's very important that this code block is pasted below the closing bracket which you can see on line 42 in this example. The code you just pasted is a separate function that needs it's own place in this file, and can't be nested in the above **default function**.
 
-![Block](./images/blockadv17.png)
+![Block](./images/blockadv17.png){zoomable="yes"}
 
 The code block you just pasted simulates a request that would normally be made by Web SDK/alloy.js. In this example a **fetch** request will be made to **edge.adobedc.net**.
 
@@ -324,11 +324,11 @@ Remember - this approach is used just for enablement purpose and is not the best
 
 Save your changes. Then, open **Github Desktop**, give a name to your PR and click **Commit to main**.
 
-![Block](./images/blockadv18.png)
+![Block](./images/blockadv18.png){zoomable="yes"}
 
 Next, click **Push origin**.
 
-![Block](./images/blockadv19.png)
+![Block](./images/blockadv19.png){zoomable="yes"}
 
 You will now be able to view the changes to your website by going to `main--citisignal--XXX.aem.page/us/en` and/or `main--citisignal--XXX.aem.live/us/en`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
 
@@ -337,7 +337,7 @@ In this example, the full URL becomes this:
 
 You should then see this.
 
-![Block](./images/blockadv20.png)
+![Block](./images/blockadv20.png){zoomable="yes"}
 
 Next Step: [2.1.6 AEM Edge Delivery Services MarTech plugin](./ex6.md){target="_blank"}
 
