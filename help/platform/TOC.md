@@ -115,7 +115,7 @@ auto-video-transcripts: true
   + [Expire datasets](/help/platform/data-lifecycle/expire-datasets.md)
 + Destinations {#destinations}
   + [Destinations overview](/help/platform/destinations/understanding-destinations.md)
-  + [Connecting to destinations](/help/platform/destinations/connecting-to-destinations.md)
+  + [Connect to destinations](/help/platform/destinations/connecting-to-destinations.md)
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
   + [Activate profiles and segments to a destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
   + [Configure a dataset export destination](/help/platform/destinations/configure-dataset-export-destination.md)
