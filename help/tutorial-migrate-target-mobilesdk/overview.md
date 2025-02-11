@@ -53,7 +53,7 @@ The migration process involves the following key steps:
 > * **Target SDK** implements the **Adobe Target extension**
 > * **Optimize SDK** implements the **Adobe Journey Optimizer - Decisioning extension**
 
-Next, review the detailed [comparison of the Target extension and the Decisioning extension](detailed-comparison.md) to gain a better understanding of the technical differences and identify areas requiring additional focus. 
+Next, review the detailed [comparison of the Target extension and the Decisioning extension](comparison.md) to gain a better understanding of the technical differences and identify areas requiring additional focus. 
 
 >[!NOTE]
 >
