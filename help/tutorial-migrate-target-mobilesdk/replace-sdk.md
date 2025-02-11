@@ -20,10 +20,11 @@ Learn how to replace the Adobe Target SDKs with the Optimize SDKs in your mobile
 
 ## Update dependencies
 
++++Android exanple
 
 >[!BEGINTABS]
 
->[!TAB App dependencies for Optimize SDK-Android] 
+>[!TAB Optimize SDK] 
 
 `build.gradle` dependencies after migrating
 
@@ -40,22 +41,8 @@ implementation 'com.adobe.marketing.mobile:signal'
 implementation 'com.adobe.marketing.mobile:userprofile'
 ```
 
->[!TAB App dependencies for Optimize SDK-iOS]
 
-`Podfile` dependencies after migrating
-
-```Swift
-use_frameworks!
-pod 'AEPAnalytics', '~> 5.0'
-pod 'AEPTarget', '~> 5.0'
-pod 'AEPCore', '~> 5.0'
-pod 'AEPIdentity', '~> 5.0'
-pod 'AEPSignal', '~>5.0'
-pod 'AEPLifecycle', '~>5.0'
-pod 'AEPUserProfile', '~> 5.0'
-```
-
->[!TAB App dependencies for Target SDK-Android] 
+>[!TAB Target SDK] 
 
 `build.gradle` dependencies before migrating
 
@@ -71,7 +58,32 @@ implementation 'com.adobe.marketing.mobile:userprofile'
 
 ```
 
->[!TAB App dependencies for Target SDK-iOS]
+
+>[!ENDTABS]
+
++++ 
+
++++ iOS example
+
+>[!BEGINTABS]
+
+
+>[!TAB Optimize SDK]
+
+`Podfile` dependencies after migrating
+
+```Swift
+use_frameworks!
+pod 'AEPAnalytics', '~> 5.0'
+pod 'AEPTarget', '~> 5.0'
+pod 'AEPCore', '~> 5.0'
+pod 'AEPIdentity', '~> 5.0'
+pod 'AEPSignal', '~>5.0'
+pod 'AEPLifecycle', '~>5.0'
+pod 'AEPUserProfile', '~> 5.0'
+```
+
+>[!TAB Target SDK]
 
 `Podfile` dependencies before migrating
 
@@ -88,12 +100,15 @@ pod 'AEPUserProfile', '~> 5.0'
 
 >[!ENDTABS]
 
++++
 
 ## Update imports and code
 
++++ Android example
+
 >[!BEGINTABS]
 
->[!TAB Optimize SDK-Android] 
+>[!TAB Optimize SDK] 
 
 Java initialization code after migrating
 
@@ -145,49 +160,7 @@ public class MainApp extends Application {
 }
 ```
 
->[!TAB Optimize SDK-iOS]
-
-Swift initialization code after migrating
-
-```Swift
-import AEPCore
-import AEPAnalytics
-import AEPTarget
-import AEPIdentity
-import AEPLifecycle
-import AEPSignal
-import AEPServices
-import AEPUserProfile
-...
-@UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        MobileCore.setLogLevel(.debug)
-        let appState = application.applicationState
-        ...
-        let extensions = [
-            Consent.self,
-            AEPEdgeIdentity.Identity.self,
-            AEPIdentity.Identity.self,
-            Edge.self,
-            Assurance.self,
-            Lifecycle.self,
-            Signal.self,
-            UserProfile.self
-        ]
-        MobileCore.registerExtensions(extensions, {
-        MobileCore.configureWith(<Environment File ID>)
-        if appState != .background {
-            MobileCore.lifecycleStart(additionalContextData: ["contextDataKey": "contextDataVal"])
-            }
-        })
-        ...
-        return true
-    }
-}
-```
-
->[!TAB Target SDK-Android] 
+>[!TAB Target SDK] 
 
 Java initialization code before migrating
 
@@ -236,7 +209,57 @@ public class MainApp extends Application {
 
 ```
 
->[!TAB Target SDK-iOS]
+>[!ENDTABS]
+
++++
+
++++ iOS
+
+>[!BEGINTABS]
+
+>[!TAB Optimize SDK]
+
+Swift initialization code after migrating
+
+```Swift
+import AEPCore
+import AEPAnalytics
+import AEPTarget
+import AEPIdentity
+import AEPLifecycle
+import AEPSignal
+import AEPServices
+import AEPUserProfile
+...
+@UIApplicationMain
+class AppDelegate: UIResponder, UIApplicationDelegate {
+    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
+        MobileCore.setLogLevel(.debug)
+        let appState = application.applicationState
+        ...
+        let extensions = [
+            Consent.self,
+            AEPEdgeIdentity.Identity.self,
+            AEPIdentity.Identity.self,
+            Edge.self,
+            Assurance.self,
+            Lifecycle.self,
+            Signal.self,
+            UserProfile.self
+        ]
+        MobileCore.registerExtensions(extensions, {
+        MobileCore.configureWith(<Environment File ID>)
+        if appState != .background {
+            MobileCore.lifecycleStart(additionalContextData: ["contextDataKey": "contextDataVal"])
+            }
+        })
+        ...
+        return true
+    }
+}
+```
+
+>[!TAB Target SDK]
 
 Swift initialization code before migrating
 
@@ -277,6 +300,27 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 ```
 
 >[!ENDTABS]
+
++++
+
+## Function comparison
+
+Many Target extension functions have an equivalent approach using the Decisioning extension outlined in the table below. For more details about the [functions](https://developer.adobe.com/target/implement/client-side/atjs/atjs-functions/atjs-functions/), refer to the Adobe Target Developer Guide.
+
+| Target extension | Decisioning extension | Notes |
+| --- | --- | --- | 
+| `prefetchContent` | `updatePropositions` |  | 
+| `retrieveLocationContent` | `getPropositions` | When using `getPropositions` API, no remote call is made to fetch non-cached scopes in the SDK.  | 
+| `displayedLocations` | Offer -> `displayed()` |     In addition, `generateDisplayInteractionXdm` Offer method can be used to generate the XDM for item display. Subsequently, Edge network SDK's sendEvent API can be used to attach additional XDM, free-form data and send an Experience Event to the remote. | 
+| `clickedLocation` | Offer -> `tapped()` | In addition, `generateTapInteractionXdm` Offer method can be used to generate the XDM for item tap. Subsequently, Edge network SDK's sendEvent API can be used to attach additional XDM, free-form data and send an Experience Event to the remote. | 
+| `clearPrefetchCache` | `clearCachedPropositions` |  | 
+| `resetExperience` | n/a | Use `removeIdentity` API from Identity for Edge Network extension for the SDK to stop sending the visitor identifier to the Edge network. For more details, see [the removeIdentity API documentation](https://developer.adobe.com/client-sdks/edge/identity-for-edge-network/api-reference/#removeidentity). <br><br>Note: Mobile Core's `resetIdentities` API clears all stored identities in the SDK, including the Experience Cloud ID (ECID) and it should be sparingly used! | 
+| `getSessionId` | n/a | `state:store` response handle carries session-related information. Edge network extension helps manage it by attaching non-expired state store items to subsequent requests. | 
+| `setSessionId` | n/a | `state:store` response handle carries session-related information. Edge network extension helps manage it by attaching non-expired state store items to subsequent requests. | 
+| `getThirdPartyId`  |  n/a | Use updateIdentities API from Identity for Edge Network extension to supply the third party ID value. Then, configure the third party ID namespace in the datastream. For more details, see [the Target Third Party Id mobile documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id).  |
+| `setThirdPartyId` | n/a | Use updateIdentities API from Identity for Edge Network extension to supply the third party ID value. Then, configure the third party ID namespace in the datastream. For more details, see [the Target Third Party Id mobile documentation](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#target-third-party-id). | 
+| `getTntId` | n/a | `locationHint:result` response handle carries the Target location hint information. It is assumed Target edge will be co-located with Experience Edge. <br> <br>Edge network extension uses the EdgeNetwork location hint to determine the Edge network cluster to send requests to. To share Edge network location hint across SDKs (hybrid apps), use `getLocationHint` and `setLocationHint` APIs from Edge Network extension. For more details, see [the `getLocationHint` API documentation](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint). | 
+| `setTntId` | n/a | `locationHint:result` response handle carries the Target location hint information. It is assumed Target edge will be co-located with Experience Edge. <br> <br>Edge network extension uses the EdgeNetwork location hint to determine the Edge network cluster to send requests to. To share Edge network location hint across SDKs (hybrid apps), use `getLocationHint` and `setLocationHint` APIs from Edge Network extension. For more details, see [the `getLocationHint` API documentation](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint).  | 
 
 
 Next, learn how to [request and render activities](render-activities.md) to the page.

@@ -15,6 +15,8 @@ Migrating from Target SDK to Optimize SDK requires an initial setup to enable pr
 - [Configure the datastream](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#update-datastream-configuration){target="_blank"} to enable forwarding of data to Adobe Target
 - [Configure the Tag property](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/experience-cloud/target#install-adobe-journey-optimizer---decisioning-tags-extension){target="_blank"} for Decisioning extension
 
+## Extension configuration
+
 >[!BEGINTABS]
 
 >[!TAB Decisioning extension]
@@ -44,7 +46,19 @@ Tag extensions installed when using the Target extension:
 
 >[!ENDTABS]
 
-Next, learn how to [replace the Target SDK](replace-library.md).
+## Datastream configuration
+
+The Target extension has [configurable settings](https://developer.adobe.com/client-sdks/solution/adobe-target/#configure-the-target-extension-in-the-data-collection-ui) which with the Decision extension are [configured in the datastream](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#adobe-experience-platform-data-collection-setup).
+
+| Target extension | Decisioning extension | Notes |
+| --- | --- | --- | 
+| Client Code | n/a | Set automatically by the edge using the IMS Org details |
+| Environment ID | Target Environment ID | Configured in the datastream |
+| Target Workspace Property | Property Token | Configured in the datastream |
+| Timeout | Not configurable | The timeout with the Decisioning extension is 10 seconds |
+| Server Domain | Edge Network domain | Set in the Adobe Experience Platform Edge Network extension |
+
+Next, learn how to [replace the Target SDK](replace-sdk.md).
 
 >[!NOTE]
 >
