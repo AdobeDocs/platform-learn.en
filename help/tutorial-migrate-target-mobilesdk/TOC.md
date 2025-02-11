@@ -20,7 +20,7 @@ hide: yes
 
 + [Perform initial setup](initial-setup.md)
 
-+ [Replace library and prehiding approach](replace-library.md)
++ [Replace SDKs](replace-library.md)
 
 + [Render activities](render-activities.md)
 
@@ -28,7 +28,7 @@ hide: yes
 
 + [Track conversion events](track-events.md)
 
-+ [Enable cross-domain support](cross-domain.md)
++ [Enable WebView support](cross-domain.md)
 
 + [Update audiences and profile scripts](update-audiences.md)
 

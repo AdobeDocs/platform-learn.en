@@ -39,7 +39,7 @@ No matter how simple or complex your implementation is, it's important to fully 
 
 The migration process involves the following key steps:
 
-1. Assess your current implementation and determine a migration approach
+1. Assess your current implementation
 1. Set up the initial components to connect to the Adobe Experience Platform Edge Network
 1. Update the foundational implementation to replace the Target extension with the Decisioning extension
 1. Enhance the Optimize SDK implementation for your specific use cases. This may involve passing additional parameters, using response tokens, and more.
