@@ -74,13 +74,12 @@ implementation 'com.adobe.marketing.mobile:userprofile'
 
 ```Swift
 use_frameworks!
-pod 'AEPAnalytics', '~> 5.0'
-pod 'AEPTarget', '~> 5.0'
-pod 'AEPCore', '~> 5.0'
-pod 'AEPIdentity', '~> 5.0'
-pod 'AEPSignal', '~>5.0'
-pod 'AEPLifecycle', '~>5.0'
-pod 'AEPUserProfile', '~> 5.0'
+target 'YourAppTarget' do
+    pod 'AEPCore', '~> 5.0'
+    pod 'AEPEdge', '~> 5.0'
+    pod 'AEPEdgeIdentity', '~> 5.0'
+    pod 'AEPOptimize', '~> 5.0'
+end
 ```
 
 >[!TAB Target SDK]
