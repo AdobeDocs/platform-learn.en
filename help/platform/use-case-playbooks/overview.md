@@ -16,7 +16,7 @@ Learn how Use Case Playbooks can help customers of Real-Time Customer Data Platf
 
 >[!VIDEO](https://video.tv.adobe.com/v/3426896/?learn=on)
 
-## Get Started
+## Get started
 
 Learn how to configure your Platform account for Use Case Playbooks and then  create and publish your first instance of a playbook.
 
