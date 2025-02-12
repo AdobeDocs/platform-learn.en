@@ -21,7 +21,7 @@ Navigate to the folder that you're using for your **citisignal** GitHub reposito
 You'll then see this. Paste the following command and hit **enter**.
 
 ```
-git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-experimentation.git main
+git subtree add --squash --prefix plugins/martech https://github.com/adobe/aem-martech main
 ```
 
 You should then see this.

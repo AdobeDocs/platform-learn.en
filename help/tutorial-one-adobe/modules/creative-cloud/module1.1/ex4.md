@@ -126,7 +126,7 @@ Paste your **Technical Account ID** and click **Invite to edit**.
 
 The **Technical Account ID** should now be able to access the Custom Model.
 
-![Firefly Custom Models](./images/ffcm22.png){zoomable="yes"} 
+![Firefly Custom Models](./images/ffcm22.png){zoomable="yes"}
 
 ## 1.1.4.4 Interact with Firefly Services Custom Models API
 

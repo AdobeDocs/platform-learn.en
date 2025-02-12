@@ -71,7 +71,7 @@ Your Azure Storage Account is now ready to be used.
 
     ![Azure Storage](./images/azs7.png){zoomable="yes"}
 
-1. Use `--aepUserLdap--`for the name and select **Create**.
+1. Use `--aepUserLdap--` for the name and select **Create**.
 
     ![Azure Storage](./images/azs8.png){zoomable="yes"}
 
