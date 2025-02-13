@@ -67,11 +67,11 @@ Select your federated database and click **+ Add tables**.
 
 You'll then see this. Select the 5 tables you created in Snowflake before:
 
-- `CK_HOUSEHOLDS`
-- `CK_MOBILE_DATA_USAGE`
-- `CK_MONTHLY_DATA_USAGE`
-- `CK_PERSONS`
-- `CK_USERS`
+- `--aepUserLdap--_HOUSEHOLDS`
+- `--aepUserLdap--_MOBILE_DATA_USAGE`
+- `--aepUserLdap--_MONTHLY_DATA_USAGE`
+- `--aepUserLdap--_PERSONS`
+- `--aepUserLdap--_USERS`
 
 Click **Add**.
 
@@ -92,7 +92,7 @@ Click **Create**.
 
 ![FAC](./images/fdb8.png)
 
-You'll then see this. You can click any schema and review the information. As an example, click **CK_PERSONS**.
+You'll then see this. You can click any schema and review the information. As an example, click **--aepUserLdap--_PERSONS**.
 
 ![FAC](./images/fdb9.png)
 
@@ -124,57 +124,58 @@ Select your schemas and click **Add**.
 
 You'll then see this. Click **Save**.
 
-### `CK_USERS` - `CK_PERSONS`
+![FAC](./images/fdb16.png)
+
+### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
 
 You can now start defining links between schemas. To start defining a link, you need to click **Create links**. 
 
 ![FAC](./images/fdb16.png)
 
-First, let's define the link between the tabel `CK_USERS` and `CK_PERSONS`.
+First, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_PERSONS`.
 
 Click **Add**.
 
 ![FAC](./images/fdb18.png)
 
-
-### `CK_HOUSEHOLDS` - `CK_PERSONS`
+### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
 You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb17.png)
 
-Next, let's define the link between the tabel `CK_HOUSEHOLDS` and `CK_PERSONS`.
+Next, let's define the link between the tabel `--aepUserLdap--_HOUSEHOLDS` and `--aepUserLdap--_PERSONS`.
 
 ![FAC](./images/fdb19.png)
 
-### `CK_USERS` - `CK_MONTHLY_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
 
 You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb20.png)
 
-Next, let's define the link between the tabel `CK_USERS` and `CK_MONTHLY_DATA_USAGE`.
+Next, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_MONTHLY_DATA_USAGE`.
 
 ![FAC](./images/fdb21.png)
 
 
-### `CK_USERS` - `CK_HOUSEHOLDS`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
 
 You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb22.png)
 
-Next, let's define the link between the tabel `CK_USERS` and `CK_HOUSEHOLDS`.
+Next, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_HOUSEHOLDS`.
 
 ![FAC](./images/fdb23.png)
 
-### `CK_USERS` - `CK_MOBILE_DATA_USAGE`
+### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
 
 You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb24.png)
 
-Next, let's define the link between the tabel `CK_USERS` and `CK_MOBILE_DATA_USAGE`.
+Next, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_MOBILE_DATA_USAGE`.
 
 ![FAC](./images/fdb25.png)
 
