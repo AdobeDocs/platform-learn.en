@@ -124,7 +124,9 @@ Select your schemas and click **Add**.
 
 You'll then see this. Click **Save**.
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_PERSONS`
+![FAC](./images/fdb16.png)
+
+### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
 
 You can now start defining links between schemas. To start defining a link, you need to click **Create links**. 
 
@@ -135,7 +137,6 @@ First, let's define the link between the tabel `--aepUserLdap--_USERS` and `--ae
 Click **Add**.
 
 ![FAC](./images/fdb18.png)
-
 
 ### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
 
