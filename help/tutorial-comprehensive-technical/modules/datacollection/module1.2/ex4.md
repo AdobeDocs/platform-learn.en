@@ -47,6 +47,10 @@ On the template, you'll notice the following fields:
 - country_code
 - city
 - country
+- crmId
+- consent.email
+- consent.commercialEmail
+- consent.any
 
 All these fields have been defined to produce data that is compatible with Platform. 
 
@@ -62,7 +66,9 @@ With your CSV-file ready, you can proceed with the ingestion in AEP.
 
 ### Verify the dataset
 
-Open [Adobe Experience Platform](https://experience.adobe.com/platform) and go to **[!UICONTROL Datasets]**. 
+Go to [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
+
+![Data Ingestion](./images/home.png)
 
 Before you continue, you need to select a **[!UICONTROL sandbox]**. The sandbox to select is named ``--aepSandboxName--``. 
 
@@ -109,8 +115,6 @@ Every schema needs to have a custom, primary descriptor defined. In the case of 
 You can also see that our primary identity is located in `--aepTenantId--.identification.core.crmId`, linked to the [!UICONTROL namespace] of **[!UICONTROL Demo System - CRMID]**.
 
 ![Data Ingestion](./images/schema_descriptor.png)
-
-
 
 Every schema and as such, every dataset that should be used in the [!UICONTROL Real-time Customer Profile] should have one [!UICONTROL Primary identifier]. This [!UICONTROL Primary Identifier] is the identifier user by the brand for a customer in that dataset. In the case of a CRM dataset it might be the email-address or the CRM ID, in the case of a Call Center dataset it might be the mobile number of a customer.
 
@@ -223,6 +227,24 @@ The Source Schema field **id** should be linked to the target field **_id**.
 The Source Schema field **last_name** should be linked to the target field **person.name.lastName**. 
 
 ![Data Ingestion](./images/tflname.png)
+
+#### consents.marketing.email.val
+
+The Source Schema field **last_name** should be linked to the target field **consents.marketing.email.val**. 
+
+![Data Ingestion](./images/cons1.png)
+
+#### consents.marketing.commercialEmail.val
+
+The Source Schema field **last_name** should be linked to the target field **consents.marketing.commercialEmail.val**.
+
+![Data Ingestion](./images/cons2.png)
+
+#### consents.marketing.any.val
+
+The Source Schema field **last_name** should be linked to the target field **consents.marketing.any.val**.
+
+![Data Ingestion](./images/cons3.png)
 
 You should now have this. Click **Finish**.
 
