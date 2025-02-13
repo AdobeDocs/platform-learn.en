@@ -41,7 +41,7 @@ You'll then see this. Select **Create audience**. Click the **search** icon to s
 
 ![FAC](./images/fedcomp5.png)
 
-Select the schema **CK_HOUSEHOLDS**. Click **Confirm**.
+Select the schema **--aepUserLdap--_HOUSEHOLDS**. Click **Confirm**.
 
 ![FAC](./images/fedcomp6.png)
 
@@ -65,7 +65,7 @@ Then, click the **+** icon again and click **Custom condition** again to add ano
 
 ![FAC](./images/fedcomp11.png)
 
-The econd condition to add, is: `Is the user an existing CitiSignal Mobile subscriber?`. The way to answer that question is to use the relationship between the household and the primary customer in the household, which is defined in another table, **CK_PERSONS**. You can drill down in the attribute menu using the **household2person** link.
+The econd condition to add, is: `Is the user an existing CitiSignal Mobile subscriber?`. The way to answer that question is to use the relationship between the household and the primary customer in the household, which is defined in another table, **--aepUserLdap--_PERSONS**. You can drill down in the attribute menu using the **household2person** link.
 
 ![FAC](./images/fedcomp12.png)
 
