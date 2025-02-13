@@ -182,7 +182,7 @@ const main = doc.querySelector('main');
   if (main) {
     decorateMain(main);
     document.body.classList.add('appear');
-    await loadSection(main.querySelector('.section'), waitForFirstImage);
+    await loadSection(main.querySelector('.section'), waitForFirstImage);	
   }
 ```
 
@@ -197,7 +197,7 @@ const main = doc.querySelector('main');
     document.body.classList.add('appear');
     await Promise.all([
       martechLoadedPromise.then(martechEager),
-      loadSection(main.querySelector('.section'), waitForFirstImage);
+      loadSection(main.querySelector('.section'), waitForFirstImage)
     ]);
   }
 ```

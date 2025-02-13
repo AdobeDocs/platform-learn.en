@@ -194,7 +194,7 @@ Click **Sign in with Adobe**.
 
 ![AEMCS](./images/aemcssetup19.png){zoomable="yes"}
 
-You'll then see your Author environment. Click **Sites**.
+You'll then see your Author environment. Click **Assets**.
 
 ![AEMCS](./images/aemcsassets1.png){zoomable="yes"}
 
