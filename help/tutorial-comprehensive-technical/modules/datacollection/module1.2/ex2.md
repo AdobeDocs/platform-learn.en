@@ -55,13 +55,9 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ![Data Ingestion](./images/sb1.png)
 
-In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen. You'll see the list of available [!UICONTROL Schemas]. 
+In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen. You'll see the list of available [!UICONTROL Schemas]. You should create a new schema. To create a new schema, click **[!UICONTROL + Create Schema]**.
 
 ![Data Ingestion](./images/menuschemas.png)
-
-You should create a new schema. To create a new schema, click **[!UICONTROL + Create Schema]**.
-
-![Data Ingestion](./images/createschema.png)
 
 Select **Manual** and click **Select**.
 
@@ -150,8 +146,8 @@ After clicking the **[!UICONTROL + Add Field]** button, you now see a new untitl
 
 You should now enter the information of this new field, using these object-definitions:
 
-- Field name: **[!UICONTROL identification]**
-- Display name:  **[!UICONTROL identification]**
+- Field name: **`--aepUserLdap--_identification`**
+- Display name:  **`--aepUserLdap--_identification`**
 - Type: **[!UICONTROL Object]**
 - Field Group: **`--aepUserLdap-- - Profile Identification Field Group`**
 
@@ -273,7 +269,7 @@ Your Schema is now configured to be part of the [!UICONTROL Real-time Customer P
 
 ![Data Ingestion](./images/sureyps.png)
 
-### What does a customer do?
+## What does this customer do?
 
 Capturing the answer to the question **What does this customer do?** for your organisation is done through for instance a product view on a product page.
 
@@ -299,13 +295,9 @@ Before you continue, you need to select a **[!UICONTROL sandbox]**. The [!UICONT
 
 ![Data Ingestion](./images/sb1.png)
 
-In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen and go to **Browse**.
+In Adobe Experience Platform, click on **[!UICONTROL Schemas]** in the menu on the left side of your screen and go to **Browse**. You should create a new schema. To create a new schema, click on the button **[!UICONTROL + Create Schema]**.
 
 ![Data Ingestion](./images/menuschemas.png)
-
-In [!UICONTROL Schemas], you'll see all existing schemas. You should create a new schema. To create a new schema, click on the button **[!UICONTROL + Create Schema]**.
-
-![Data Ingestion](./images/schemasee.png)
 
 Select **Manual** and click **Select**.
 
@@ -384,8 +376,8 @@ After clicking the **+** button, you now see a new untitled field in your schema
 
 Use this to define your new field:
 
-- Field name: **[!UICONTROL identification]**
-- Display name:  **[!UICONTROL identification]**
+- Field name: **`--aepUserLdap--_identification`**
+- Display name:  **`--aepUserLdap--_identification`**
 - Type: **[!UICONTROL Object]**
 - Field Group: `--aepUserLdap-- - ExperienceEvent Identification Field Group`
 
