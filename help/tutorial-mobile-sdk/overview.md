@@ -46,7 +46,7 @@ After completing this tutorial, you will be able to:
 >
 >A similar multi-solution tutorial is available for [Web SDK](../tutorial-web-sdk/overview.md).
 
-## Prerequisites
+## Permissions
 
 In these lessons, it is assumed that you have an Adobe Id and the required user-level permissions to complete the exercises. If not, you should reach out to your Adobe Administrator to request access.
 

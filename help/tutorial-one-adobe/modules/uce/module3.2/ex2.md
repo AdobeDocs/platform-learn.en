@@ -226,59 +226,59 @@ After a couple of minutes, you'll see that the status of your footer has changed
 
 ![Journey Optimizer](./images/fragm38.png)
 
-## 3.2.2.3 Create Fiber journey
+## 3.2.2.3 Create Fiber campagn
 
-You'll now create a journey. Unlike event-based journeys which rely on incoming experience events, this journey will focus on reading an existing audience and will target a whole audience once with unique content like newsletters, one-off promotions or specific campaigns. 
+You'll now create a campaign. Unlike the event-based journey of the previous exercise which relies on incoming experience events or audience entries or exits to trigger a journey for 1 specific customer, campaigns target a whole audience once with unique content like newsletters, one-off promotions, or generic information or periodically with similar content sent on a regular basis like for instance birthday campaigns and reminders. 
 
-In the menu, go to **Journeys** and click **Create journey**.
+In the menu, go to **Campaigns** and click **Create campaign**.
+
+![Journey Optimizer](./images/oc43.png)
+
+Select **Scheduled - Marketing** and click **Create**.
 
 ![Journey Optimizer](./images/campaign1.png)
 
-On the journey creation screen, set the **Name** to `--aepUserLdap-- - Fiber`. Click **Save**.
+On the campaign creation screen, configure the following:
+
+- **Name**: `--aepUserLdap-- - CitiSignal Fiber`.
+- **Description**: Fiber campaign
+- **Identity type**: change to Email
 
 ![Journey Optimizer](./images/campaign2.png)
 
-In the **Orchestration** menu, drag and drop the **Read Audience** object onto the canvas.
+Scroll down to **Action**. For the **Action**, select **Email**. 
 
-![Journey Optimizer](./images/campaign2a.png)
+![Journey Optimizer](./images/campaign3.png)
 
-Click the **edit** icon to select an audience.
+Then, select an existing **Email configuration**. You'll edit the content in a couple of minutes.
+
+![Journey Optimizer](./images/campaign3a.png)
+
+Scroll up to **Audience**. Click **Select audience**.
 
 ![Journey Optimizer](./images/campaign2b.png)
 
 For the **Audience**, select the audience you created in the previous step, `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Click **Save**.
 
-![Journey Optimizer](./images/campaign2c.png)
+![Journey Optimizer](./images/campaign2a.png)
 
-You should then see this. Set the **Namespace** to **Email**. Click **Save**.
-
-![Journey Optimizer](./images/campaign3.png)
-
-Under **Actions**, drag and drop the **Email** action onto the canvas.
+Scroll down to **Schedule**. For the **Schedule**, choose **On a specific date and time** and set a time of choice.
 
 ![Journey Optimizer](./images/campaign4.png)
 
-Set the **Category** to **Marketing** and select a **Configuration** for **Email**. Click **Edit content**.
+You can now start creating the email message itself. Scroll up, and click **Edit content**.
 
 ![Journey Optimizer](./images/campaign5.png)
 
-You'll then see this. Click the **edit** icon next to the **Subject line**.
-
-![Journey Optimizer](./images/campaign6.png)
-
-Set the subject line to:
+You'll then see this. For the **Subject line**, use this: 
 
 ```
 {{profile.person.name.firstName}}, here's your Fiber offer!
 ```
 
-Click **Save**.
+Next, click **Edit email body**.
 
-![Journey Optimizer](./images/campaign5a.png)
-
-You should then see this. Next, click **Edit email body**.
-
-![Journey Optimizer](./images/campaign5b.png)
+![Journey Optimizer](./images/campaign6.png)
 
 Choose **Design from scratch**.
 
@@ -286,7 +286,7 @@ Choose **Design from scratch**.
 
 You'll then see this. In the left menu, you'll find the structure components that you can use to define the structure of the email (rows and columns).
 
-Drag and drop 2 times a **1:1 column** on the canvas, which should give you this structure:
+Drag and drop 4 times a **1:1 column** on the canvas, which should give you this structure:
 
 ![Journey Optimizer](./images/campaign8.png)
 
@@ -308,7 +308,7 @@ Select the default text in that component **Please type your text here.** and re
 
 Hi {{profile.person.name.firstName}}
 
-As a CitiSignal member, you're part of a dynamic community that's constantly evolving to meet your needs. We're committed to delivering innovative solutions that enhance your digital lifestyle and keep you ahead of the curve.
+As a CitiSignal customer, you're in pole position to discover our new Fiber offering. Have a look at the below offer and update your contract!
 
 Stay connected.
 
@@ -316,49 +316,21 @@ Stay connected.
 
 ![Journey Optimizer](./images/campaign12.png)
 
-Drag and drop an **Image** component on the 3rd and 4th row. Click **Browse** on the 3rd row.
+Drag and drop an **Image** component on the 3rd row. Click **Browse**.
 
 ![Journey Optimizer](./images/campaign13.png)
 
-Open the folder **citi-signal-images**, click to select the image **Offer_AirPods.jpg**, and click **Select**.
+Select the AEM Assets repository that you created as part of previous modules. That repository should be named `--aepUserLdap-- - Citi Signal dev`. Click to open the folder `--aepUserLdap-- - Workfront Assets`.
+
+![Journey Optimizer](./images/campaign15a.png)
+
+Click to select the image **2048x2048_buynow.png**, and click **Select**.
 
 ![Journey Optimizer](./images/campaign14.png)
 
-Click **Browse** on the image placeholder on the 4th row.
-
-![Journey Optimizer](./images/campaign15.png)
-
-Open the folder **citi-signal-images**, click to select the image **Offer_Phone.jpg**, and click **Select**.
-
-![Journey Optimizer](./images/campaign16.png)
-
-Drag and drop a **Text** component on the 3rd and 4th row. 
-
-![Journey Optimizer](./images/campaign17.png)
-
-Select the default text in the component on the 3rd row **Please type your text here.** and replace it by the below text.
-
-```javascript
-
-Get AirPods for free:
-
-Experience seamless connectivity like never before with CitiSignal. Sign up for select premium plans and receive a complimentary pair of Apple AirPods. Stay connected in style with our unbeatable offer.
-
-```
-
-Select the default text in the component on the 4th row **Please type your text here.** and replace it by the below text.
-
-```javascript
-
-We'll pay off your phone:
-
-Make the switch to CitiSignal and say goodbye to phone payments! Switching to CitiSignal has never been more rewarding. Say farewell to hefty phone bills as we help pay off your phone, up to 800$!
-
-```
-
-![Journey Optimizer](./images/campaign18.png)
-
 Your basic newsletter email is now ready. Click **Save**.
+
+![Journey Optimizer](./images/ready.png)
 
 Go back to the campaign dashboard by clicking the **arrow** next to the subject line text in the top-left corner.
 
@@ -370,25 +342,21 @@ Click **Review to activate**.
 
 You may then get this error. If that is the case, then you may need to wait up to 24 hours until the audience has been evaluated, and then try to activate your campaign again. You may also need to update the schedule of your campaign to run at a later time.
 
+![Journey Optimizer](./images/campaign21a.png)
+
 Click **Activate**.
 
 ![Journey Optimizer](./images/campaign21.png)
 
-Once acivated, your campaign will then be scheduled to run.
+Once activated, your campaign will then be scheduled to run.
 
 ![Journey Optimizer](./images/campaign22.png)
-
-Your campaign is now activated. Your newsletter email message will be sent as you defined it in your schedule, and your campaign will stop as soon as the last email has been sent.
-
-You should also receive the email on the email address you used for the demo profile you created earlier.
-
-![Journey Optimizer](./images/campaign23.png)
 
 You have finished this exercise.
 
 ## Next Steps
 
-Go to [3.2.3 ...](./ex3.md)
+Go to [3.2.3 Add Languages to your Email](./ex3.md)
 
 Go back to [Module 3.2](./ajotranslationsvcs.md){target="_blank"}
 

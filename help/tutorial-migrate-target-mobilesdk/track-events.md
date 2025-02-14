@@ -5,10 +5,12 @@ exl-id: 7b53aab1-0922-4d9f-8bf0-f5cf98ac04c4
 ---
 # Track Target conversion events using the Adobe Journey Optimizer - Decisioning Mobile extension
 
+Refer to this page for content: https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#tracking
+
 Conversion events for Target can be tracked with... Conversion events typically fall into the following categories:
 
 * Automatically tracked events that do not require any configuration
-* Purchase conversion events that should be adjusted for a best practice Platform Web SDK implementation
+* Purchase conversion events that should be adjusted for a best practice Decsioning extension implementation
 * Non-purchase conversion events that require code updates
 
 ## Goal tracking comparison
@@ -26,7 +28,7 @@ The following conversion goals do not require any specific adjustments to your i
 
 
 
-Next, learn how to [enable cross-domain ID sharing](cross-domain.md) for consistent visitor profiles.
+Next, learn how to [enable cross-domain ID sharing](webview.md) for consistent visitor profiles.
 
 >[!NOTE]
 >

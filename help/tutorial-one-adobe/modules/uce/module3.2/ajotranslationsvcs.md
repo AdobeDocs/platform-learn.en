@@ -26,6 +26,10 @@ In this exercise, you will configure your Translations Provider using Microsoft 
 
 In this exercise, you will configure your Translations Provider using Microsoft Translator and set it up in Adobe Journey Optimizer.
 
+[3.2.3 Add Languages to your Email](./ex3.md)
+
+In this exercise, you will add languages to the email in your campaign.
+
 [Summary and benefits](./summary.md)
 
 Summary of this module and overview of the benefits.

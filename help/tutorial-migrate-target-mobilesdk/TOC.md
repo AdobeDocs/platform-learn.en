@@ -16,11 +16,11 @@ hide: yes
 
 + [Tutorial introduction](overview.md)
 
-+ [Compare extensions](detailed-comparison.md)
++ [Compare extensions](comparison.md)
 
 + [Perform initial setup](initial-setup.md)
 
-+ [Replace library and prehiding approach](replace-library.md)
++ [Replace SDKs](replace-sdk.md)
 
 + [Render activities](render-activities.md)
 
@@ -28,7 +28,7 @@ hide: yes
 
 + [Track conversion events](track-events.md)
 
-+ [Enable cross-domain support](cross-domain.md)
++ [Enable WebView support](webview.md)
 
 + [Update audiences and profile scripts](update-audiences.md)
 

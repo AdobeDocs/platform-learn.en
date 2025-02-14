@@ -13,6 +13,6 @@ Congratulations and thank you for investing your time in learning about Adobe Jo
 
 ## Check this out
 
-[Go Back to Module 3.2](./ajotranslationsvcs.md)
+Go back to [Module 3.2](./ajotranslationsvcs.md){target="_blank"}
 
-[Go Back to All Modules](../../../overview.md)
+Go back to [All modules](./../../../overview.md){target="_blank"}
