@@ -10,33 +10,15 @@ doc-type: tutorial
 >
 >If you're an Adobe employee, follow the instructions to [install PostBuster](./ex8.md)!
 
-## Postman setup
+## Postman environment download
+
+Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} and open your project.
 
 Select **Download for Postman**, then choose **OAuth Server-to-Server** to download a Postman environment.
 
 ![Adobe I/O New Integration](./images/iopm.png){zoomable="yes"}
 
-Select your project name.
-
-![Adobe I/O New Integration](./images/api13.png){zoomable="yes"}
-
-Select **Edit Project**.
-
-![Adobe I/O New Integration](./images/api14.png){zoomable="yes"}
-
-Enter a friendly name for your integration: `--aepUserLdap-- Firefly`and select **Save**.
-
-![Adobe I/O New Integration](./images/api15.png){zoomable="yes"}
-
-The setup of your Adobe I/O integration is now finished.
-
-![Adobe I/O New Integration](./images/api16.png){zoomable="yes"}
-
 ## Postman authentication to Adobe I/O
-
->[!IMPORTANT]
->
->If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
 
 Download and install the relevant version of Postman for your OS at [Postman Downloads](https://www.postman.com/downloads/){target="_blank"}.
 

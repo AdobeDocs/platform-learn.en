@@ -311,10 +311,6 @@ You can derive a couple of values out of the above URL:
 
 ### Variables in Postman
 
->[!IMPORTANT]
->
->If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
-
 As you can see in the above section, there are some common variables in both the Read and the Write token.
 
 Next you need to create variables in Postman that store the various elements of the above SAS-tokens. There are some values that are the same in both URLs:

@@ -130,10 +130,6 @@ The **Technical Account ID** should now be able to access the Custom Model.
 
 ## 1.1.4.4 Interact with Firefly Services Custom Models API
 
->[!IMPORTANT]
->
->If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
-
 In Exercise 1.1.1 Getting started with Firefly Services, you downloaded this file: [postman-ff.zip](./../../../assets/postman/postman-ff.zip) to your local desktop and you then imported that collection in Postman.
 
 Open Postman and go to the folder **FF - Custom Models API**.

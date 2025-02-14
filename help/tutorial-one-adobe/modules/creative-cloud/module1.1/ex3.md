@@ -47,10 +47,6 @@ Learn how to work with the Photoshop APIs and Firefly Services.
 
 ## 1.1.3.2 Programmatically interact with a PSD file
 
->[!IMPORTANT]
->
->If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
-
 1. Download [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} to your desktop.
 
 1. Open **citisignal-fiber.psd** in Photoshop. 

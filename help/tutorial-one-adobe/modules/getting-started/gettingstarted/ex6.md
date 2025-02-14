@@ -14,7 +14,8 @@ Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/con
 
 ![Adobe I/O New Integration](./images/iohome.png){zoomable="yes"}
 
-Make sure to select the correct instance in the top right corner of your screen. Your instance is `--aepImsOrgName--`. Next, select **Create new project**.
+Make sure to select the correct instance in the top right corner of your screen. Your instance is `--aepImsOrgName--`. 
+Next, select **Create new project**.
 
 ![Adobe I/O New Integration](./images/iocomp.png){zoomable="yes"}
 
@@ -62,9 +63,22 @@ Select **Save Configured API**.
 
 ![Azure Storage](./images/ps5.png){zoomable="yes"}
 
-Your Adobe I/O integration is now ready.
 
-![Adobe I/O New Integration](./images/ps6.png){zoomable="yes"}
+Select your project name.
+
+![Adobe I/O New Integration](./images/api13.png){zoomable="yes"}
+
+Select **Edit Project**.
+
+![Adobe I/O New Integration](./images/api14.png){zoomable="yes"}
+
+Enter a friendly name for your integration: `--aepUserLdap-- One Adobe tutorial`and select **Save**.
+
+![Adobe I/O New Integration](./images/api15.png){zoomable="yes"}
+
+The setup of your Adobe I/O integration is now finished.
+
+![Adobe I/O New Integration](./images/api16.png){zoomable="yes"}
 
 ## Next Steps
 
