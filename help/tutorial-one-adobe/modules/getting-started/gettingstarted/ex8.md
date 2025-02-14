@@ -26,7 +26,7 @@ Once the download has completed and has been installed, open PostBuster. You sho
 
 ![PostBuster](./images/pb3.png)
 
-Download [postbuster.json.zip](./assets/postman/postbuster.json.zip) and extract it on your desktop.
+Download [postbuster.json.zip](./../../../assets/postman/postbuster.json.zip) and extract it on your desktop.
 
 ![PostBuster](./images/pbpb.png)
 

@@ -21,7 +21,7 @@ Next, select **Create new project**.
 
 ### Firefly Services API
 
-Select **+ Add to Project** and choose **API**.
+You should then see this. Select **+ Add to Project** and choose **API**.
 
 ![Adobe I/O New Integration](./images/adobe_io_access_api.png){zoomable="yes"}
 
@@ -33,13 +33,17 @@ Select **Creative Cloud** and choose **Firefly - Firefly Services**, then select
 
 ![Adobe I/O New Integration](./images/api3.png){zoomable="yes"}
 
-Provide a name for your credential: `--aepUserLdap-- - Firefly Services OAuth credential`and select **Next**.
+Provide a name for your credential: `--aepUserLdap-- - One Adobe OAuth credential`and select **Next**.
 
 ![Adobe I/O New Integration](./images/api4.png){zoomable="yes"}
 
 Select the default profile **Default Firefly Services Configuration** and select **Save Configured API**.
 
 ![Adobe I/O New Integration](./images/api9.png){zoomable="yes"}
+
+You should then see this.
+
+![Adobe I/O New Integration](./images/api10.png){zoomable="yes"}
 
 ### Photoshop Services API
 
@@ -63,6 +67,37 @@ Select **Save Configured API**.
 
 ![Azure Storage](./images/ps5.png){zoomable="yes"}
 
+You should then see this.
+
+![Adobe I/O New Integration](./images/ps7.png){zoomable="yes"}
+
+### Adobe Experience Platform API
+
+Select **+ Add to Project** and then select **API**.
+
+![Azure Storage](./images/aep1.png){zoomable="yes"}
+
+Select **Creative Cloud** and choose **Photoshop - Firefly Services**. Select **Next**.
+
+![Azure Storage](./images/aep2.png){zoomable="yes"}
+
+Select **Next**.
+
+![Azure Storage](./images/aep3.png){zoomable="yes"}
+
+Next, you need to select a product profile that defines what permissions are available to this integration.
+
+Select **Default Firefly Services Configuration** and **Default Creative Cloud Automation Services configuration**.
+
+Select **Save Configured API**.
+
+![Azure Storage](./images/aep4.png){zoomable="yes"}
+
+You should then see this.
+
+![Adobe I/O New Integration](./images/aep5.png){zoomable="yes"}
+
+### Project Name
 
 Select your project name.
 
