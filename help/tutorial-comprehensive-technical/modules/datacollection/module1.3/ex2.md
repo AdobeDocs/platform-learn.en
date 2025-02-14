@@ -126,7 +126,7 @@ You'll then see this. Click **Save**.
 
 ![FAC](./images/fdb16.png)
 
-### `--aepUserLdap--_PERSONS` - `--aepUserLdap--_USERS`
+### PERSONS - USERS
 
 You can now start defining links between schemas. To start defining a link, you need to click **Create links**. 
 
@@ -138,7 +138,7 @@ Click **Add**.
 
 ![FAC](./images/fdb18.png)
 
-### `--aepUserLdap--_HOUSEHOLDS` - `--aepUserLdap--_PERSONS`
+### HOUSEHOLDS - PERSONS
 
 You'll then be back here. Click **Create links** to create another link.
 
@@ -148,7 +148,7 @@ Next, let's define the link between the tabel `--aepUserLdap--_HOUSEHOLDS` and `
 
 ![FAC](./images/fdb19.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MONTHLY_DATA_USAGE`
+### USERS - MONTHLY_DATA_USAGE
 
 You'll then be back here. Click **Create links** to create another link.
 
@@ -159,7 +159,7 @@ Next, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aep
 ![FAC](./images/fdb21.png)
 
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_HOUSEHOLDS`
+### USERS - HOUSEHOLDS
 
 You'll then be back here. Click **Create links** to create another link.
 
@@ -169,7 +169,7 @@ Next, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aep
 
 ![FAC](./images/fdb23.png)
 
-### `--aepUserLdap--_USERS` - `--aepUserLdap--_MOBILE_DATA_USAGE`
+### USERS - MOBILE_DATA_USAGE
 
 You'll then be back here. Click **Create links** to create another link.
 
