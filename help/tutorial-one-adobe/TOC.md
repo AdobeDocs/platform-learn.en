@@ -23,6 +23,7 @@ recommendations: noDisplay,noCatalog
     + [Configure your Adobe I/O project](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
     + [Option 1: Postman setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
     + [Option 2: PostBuster setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
+    + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
   + [Prework](/help/tutorial-one-adobe/prework.md)
 
 + 1 Creation & Production {#production}

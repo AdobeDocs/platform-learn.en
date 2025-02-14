@@ -99,6 +99,8 @@ Your PostBuster environment is now setup and working. You've now completed the G
 
 ## Next Steps
 
+Go to [Applications to install](./ex9.md){target="_blank"}
+
 Go back to [Getting Started](./getting-started.md){target="_blank"}
 
 Go back to [All modules](./../../../overview.md){target="_blank"}
