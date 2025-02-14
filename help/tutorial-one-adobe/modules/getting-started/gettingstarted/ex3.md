@@ -167,8 +167,10 @@ Your changes are now being published and will be ready in a couple of minutes, a
 
 ![Name the Edge Configuration and save](./images/edgeconfig17ma.png)
 
-Next Step: [Use the website](./ex4.md)
+## Next Steps
 
-[Go Back to Getting Started](./getting-started.md)
+Go to [Use the website](./ex4.md)
 
-[Go Back to All Modules](./../../../overview.md)
+Go back to [Getting Started](./getting-started.md){target="_blank"}
+
+Go back to [All modules](./../../../overview.md){target="_blank"}

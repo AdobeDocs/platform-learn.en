@@ -42,6 +42,26 @@ In this exercise you'll setup the website so you can use it for demonstrations a
 
 In this exercise you'll setup the mobile application so you can use it for demonstrations and enablement.
 
+[Configure your Adobe I/O project](./ex6.md)
+
+In this exercise you'll configure your Adobe I/O project that will be used to interact with various Adobe API endpoints.
+
+[Option 1: Postman setup](./ex7.md)
+
+>[!NOTE]
+>
+>If you're not an Adobe employee, follow the instructions to install Postman!
+
+In this exercise you'll prepare your Postman environment to interact with various Adobe API endpoints
+
+[Option 2: PostBuster setup](./ex8.md)
+
+>[!NOTE]
+>
+>If you're an Adobe employee, follow the instructions to install PostBuster!
+
+In this exercise you'll prepare your PostBuster environment to interact with various Adobe API endpoints
+
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 
 >[!NOTE]

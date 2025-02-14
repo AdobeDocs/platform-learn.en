@@ -230,19 +230,19 @@ The Source Schema field **last_name** should be linked to the target field **per
 
 #### consents.marketing.email.val
 
-The Source Schema field **last_name** should be linked to the target field **consents.marketing.email.val**. 
+The Source Schema field **consent.email** should be linked to the target field **consents.marketing.email.val**. 
 
 ![Data Ingestion](./images/cons1.png)
 
 #### consents.marketing.commercialEmail.val
 
-The Source Schema field **last_name** should be linked to the target field **consents.marketing.commercialEmail.val**.
+The Source Schema field **consent.commercialEmail** should be linked to the target field **consents.marketing.commercialEmail.val**.
 
 ![Data Ingestion](./images/cons2.png)
 
 #### consents.marketing.any.val
 
-The Source Schema field **last_name** should be linked to the target field **consents.marketing.any.val**.
+The Source Schema field **consent.any** should be linked to the target field **consents.marketing.any.val**.
 
 ![Data Ingestion](./images/cons3.png)
 

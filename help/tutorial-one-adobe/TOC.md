@@ -20,8 +20,10 @@ recommendations: noDisplay,noCatalog
     + [Create your Datastream](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex3.md)
     + [Use the website](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex4.md)
     + [Use the mobile app](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex5.md)
+    + [Configure your Adobe I/O project](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex6.md)
+    + [Option 1: Postman setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
+    + [Option 2: PostBuster setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
   + [Prework](/help/tutorial-one-adobe/prework.md)
-  + [PostBuster](/help/tutorial-one-adobe/postbuster.md)
 
 + 1 Creation & Production {#production}
   + 1.1 Overview of Adobe Firefly Services {#module11}

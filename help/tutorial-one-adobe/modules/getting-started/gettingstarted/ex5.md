@@ -75,8 +75,10 @@ Now, go back to **Home** in the app. Your app is now ready to be used.
 
 ![DSN](./images/mobileappn8.png)
 
-You've now completed the Getting Started module and you're ready to start with the next exercises.
+## Next Steps
 
-[Go Back to Getting Started](./getting-started.md)
+Go to [Configure your Adobe I/O project](./ex6.md)
 
-[Go Back to All Modules](./../../../overview.md)
+Go back to [Getting Started](./getting-started.md){target="_blank"}
+
+Go back to [All modules](./../../../overview.md){target="_blank"}
