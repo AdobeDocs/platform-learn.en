@@ -9,7 +9,7 @@ exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
 
 >[!IMPORTANT]
 >
->If you're not an Adobe employee, follow the instructions to [install Postman](./ex7.md). The below instructions are only intended for Adobe employees. If you have already configured Postman, then skip this exercise and go to [Applications to install](./ex9.md).
+>If you're not an Adobe employee, follow the instructions to [install Postman](./ex7.md). The below instructions are only intended for Adobe employees.
 
 ## Install PostBuster
 
