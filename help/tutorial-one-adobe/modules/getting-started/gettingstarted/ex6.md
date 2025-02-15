@@ -3,6 +3,7 @@ title: Getting Started - Adobe I/O
 description: Getting Started - Adobe I/O
 kt: 5342
 doc-type: tutorial
+exl-id: 00f17d4f-a2c8-4e8e-a1ff-556037a60629
 ---
 # Configure your Adobe I/O project
 

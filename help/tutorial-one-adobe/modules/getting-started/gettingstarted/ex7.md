@@ -3,6 +3,7 @@ title: Getting Started - Postman setup
 description: Getting Started - Postman setup
 kt: 5342
 doc-type: tutorial
+exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
 ---
 # Option 1: use Postman
 
