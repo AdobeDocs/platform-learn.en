@@ -16,5 +16,5 @@ exl-id: 08568a37-1450-4fdc-ba58-37ea026028c7
 
 Learn how to personalize on the next hit with Real-Time Customer Data Platform and Adobe Target. The Adobe Target destination in Real-Time CDP allows you to use Experience Platform segments in Adobe Target for same page and next-page personalization with governance and privacy support. For more information, see the [Configure personalization destinations for same-page and next-page personalization documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/configure-personalization-destinations.html)
 
->[!VIDEO](https://video.tv.adobe.com/v/340091?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/340091?learn=on&enablevpops)
 

@@ -11,5 +11,5 @@ exl-id: a8acbcc9-d500-4e7a-a2b4-015617f25bdc
 
 See a hypothetical experience built with Adobe Experience Platform, as seen from the perspective of a customer. Learn how Experience Platform creates a rich, relevant, and real-time experience.
 
->[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27361?learn=on&enablevpops)
 

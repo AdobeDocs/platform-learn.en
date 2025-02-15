@@ -12,4 +12,4 @@ exl-id: c4f36725-19dd-47da-aaa8-a925b7baca24
 
 Learn how to clean, prepare, and combine data from multiple datasets to create a new dataset using CTAS (Create Table AS) and Spark SQL functions for reporting and dashboarding. For more information, please visit the [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333699?learn=on&enablevpops)

@@ -20,4 +20,4 @@ Learn how to set up a datastream for event forwarding. For more information, ple
 > * Platform Launch Server Side is now **[!DNL event forwarding]** 
 > * Edge configurations are now **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331939?learn=on&enablevpops)

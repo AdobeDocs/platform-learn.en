@@ -24,11 +24,11 @@ Analysis Workspace removes all of the typical limitations of a single Analytics 
 
 Customer Journey Analytics brings this solution on top of Platform data. We highly recommend watching this four-minute overview video:
 
->[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/35109?quality=12&learn=on&enablevpops)
 
 If you haven't used Analysis Workspace before, we highly recommend watching this video:
 
->[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26266?quality=12&learn=on&enablevpops)
 
 ### Create Your Project
 

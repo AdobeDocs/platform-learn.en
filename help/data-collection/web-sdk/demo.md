@@ -14,7 +14,7 @@ exl-id: 3b8984d2-cc05-4c46-9c4f-027616fb9810
 
 See Adobe Experience Platform Web SDK and Edge Network in action, with a single call to Adobe sending data to Experience Platform, Analytics, Audience Manager, and Target. For more information, please visit the [Adobe Experience Platform Web SDK documentation](https://experienceleague.adobe.com/docs/experience-platform/edge/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34148?learn=on&enablevpops)
 
 >[!NOTE]
 >

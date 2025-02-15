@@ -17,4 +17,4 @@ exl-id: 73e5a0fa-cf50-4e22-82ce-997fe069aa86
 
 Learn how to use Real-Time Customer Data Platform segments in Adobe Target to deliver personalized experiences on your website and mobile apps. For more information, see [the documentation](https://experienceleague.adobe.com/docs/target/using/integrate/integrating-with-rtcdp.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3419149/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419149/?learn=on&enablevpops)

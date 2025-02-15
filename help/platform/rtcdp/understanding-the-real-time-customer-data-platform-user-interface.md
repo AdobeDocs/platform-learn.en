@@ -13,4 +13,4 @@ exl-id: bc9fdedd-ce95-4bd2-8b14-30fd74604ea8
 
 Learn how to navigate the Real-Time Customer Data Platform (CDP) user interface to see how its features come together to provide real-time activation across the digital customer journey. For more information, please visit the [Real-Time Customer Data Platform documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29762?learn=on&enablevpops)

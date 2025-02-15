@@ -12,5 +12,5 @@ exl-id: d46373b9-4a80-4fe0-a072-51ec48585b3f
 
 Learn about the key capabilities of Experience Platform and how they bring value to your business.
 
->[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32502?learn=on&enablevpops)
 

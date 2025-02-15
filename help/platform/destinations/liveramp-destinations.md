@@ -14,4 +14,4 @@ exl-id: de8571c6-de26-4d35-bdfe-cc8fe74d4dab
 
 Learn how to configure the LiveRamp destinations in Real-Time CDP to send audiences to your activation partners. For detailed documentation, please see [LiveRamp - Onboarding connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-onboarding.html) and [LiveRamp - Distribution connection](https://experienceleague.adobe.com/docs/experience-platform/destinations/catalog/advertising/liveramp-distribution.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3425367/?learn=on&enablevpops)

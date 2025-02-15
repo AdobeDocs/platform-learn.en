@@ -19,4 +19,4 @@ Learn how to add an event-forwarding extension in Data Collection. For more info
 > * Platform Launch Server Side is now **[!DNL event forwarding]** 
 > * Edge configurations are now **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331941?learn=on&enablevpops)

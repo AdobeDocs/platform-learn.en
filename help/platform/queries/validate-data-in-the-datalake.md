@@ -12,4 +12,4 @@ exl-id: c6eb04c7-4f0d-4547-bc43-436278e1770f
 
 Learn how to validate if data has successfully ingested into the datalake using Adobe Experience Platform's Query Service. For detailed product documentation, see the [Query Editor UI guide](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416130?learn=on&enablevpops)

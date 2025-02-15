@@ -12,6 +12,6 @@ exl-id: 5135bbc5-dd74-4dca-8449-53f4f424c468
 
 Learn about how Experience Platform integrates with Experience Cloud applications.
 
->[!VIDEO](https://video.tv.adobe.com/v/32553?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32553?learn=on&enablevpops)
 
 

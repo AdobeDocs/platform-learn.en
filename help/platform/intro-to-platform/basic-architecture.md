@@ -12,6 +12,6 @@ exl-id: f7cf85c9-aba1-474f-88fb-b247a92c9c48
 
 Learn the high-level architecture of Adobe Experience Platform from a guided walkthrough of an overview diagram.
 
->[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32456?learn=on&enablevpops)
 
 
