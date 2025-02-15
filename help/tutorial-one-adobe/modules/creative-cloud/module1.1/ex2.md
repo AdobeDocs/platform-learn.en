@@ -284,6 +284,8 @@ To programmatically read files from Azure Storage Accounts in the long term, you
 
 1. Under **Permissions**, select the following required permissions:
 
+    - **Read**
+    - **List**
     - **Add**
     - **Create**
     - **Write**
@@ -320,7 +322,7 @@ Next you need to create variables in Postman that store the various elements of 
 - `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
 - `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
 
-For future API interactions, the main thing that changes is the asset name, while the above variables remain the same. In that case, it makes sense to create variables in Postman so that you don't need to specify them manually every time..
+For future API interactions, the main thing that changes is the asset name, while the above variables remain the same. In that case, it makes sense to create variables in Postman so that you don't need to specify them manually every time.
 
 1. In Postman, select **Environments**, open **All variables** and select **Environment**.
 
@@ -337,7 +339,32 @@ For future API interactions, the main thing that changes is the asset name, whil
 
     ![Azure Storage](./images/az105.png){zoomable="yes"}
 
-    In one of the previous exercises, the **Body** of your the request **Firefly - T2I (styleref) V3** looked like this:
+### Variables in PostBuster
+
+As you can see in the above section, there are some common variables in both the Read and the Write token.
+
+Next you need to create variables in PostBuster that store the various elements of the above SAS-tokens. There are some values that are the same in both URLs:
+
+- `AZURE_STORAGE_URL`: `https://vangeluw.blob.core.windows.net`
+- `AZURE_STORAGE_CONTAINER`: `vangeluw`
+- `AZURE_STORAGE_SAS_READ`: `?sv=2023-01-03&st=2025-01-13T07%3A36%3A35Z&se=2026-01-14T07%3A36%3A00Z&sr=c&sp=rl&sig=4r%2FcSJLlt%2BSt9HdFdN0VzWURxRK6UqhB8TEvbWkmAag%3D`
+- `AZURE_STORAGE_SAS_WRITE`: `?sv=2023-01-03&st=2025-01-13T07%3A38%3A59Z&se=2026-01-14T07%3A38%3A00Z&sr=c&sp=acw&sig=lR9%2FMUfyYLcBK7W9Kv7YJdYz5HEEEovExAdOCOCUdMk%3D`
+
+Open PostBuster. Select **Base Environment** and then click the **edit** icon to open the Base Environment.
+
+![Azure Storage](./images/pbbe1.png)
+
+You'll then see 4 empty variables. Enter your Azure Storage Account details here.
+
+![Azure Storage](./images/pbbe2.png)
+
+Your Base Environment file should now look like this. Click **Close**.
+
+![Azure Storage](./images/pbbe3.png)
+
+### Test your configuration
+
+In one of the previous exercises, the **Body** of your the request **Firefly - T2I (styleref) V3** looked like this:
 
     `"url": "https://vangeluw.blob.core.windows.net/vangeluw/gradient.jpg?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=x4B1XZuAx%2F6yUfhb28hF0wppCOMeH7Ip2iBjNK5A%2BFw%3D"`
 
