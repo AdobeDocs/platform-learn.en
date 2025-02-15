@@ -77,7 +77,7 @@ Select **+ Add to Project** and then select **API**.
 
 ![Azure Storage](./images/aep1.png){zoomable="yes"}
 
-Select **Creative Cloud** and choose **Photoshop - Firefly Services**. Select **Next**.
+Select **Adobe Experience Platfrom** and choose **Experience Platform API**. Select **Next**.
 
 ![Azure Storage](./images/aep2.png){zoomable="yes"}
 
@@ -87,7 +87,7 @@ Select **Next**.
 
 Next, you need to select a product profile that defines what permissions are available to this integration.
 
-Select **Default Firefly Services Configuration** and **Default Creative Cloud Automation Services configuration**.
+Select **Adobe Experience Platform - All Users - PROD**.
 
 Select **Save Configured API**.
 
@@ -99,7 +99,7 @@ You should then see this.
 
 ### Project Name
 
-Select your project name.
+Click your project name.
 
 ![Adobe I/O New Integration](./images/api13.png){zoomable="yes"}
 
@@ -111,7 +111,7 @@ Enter a friendly name for your integration: `--aepUserLdap-- One Adobe tutorial`
 
 ![Adobe I/O New Integration](./images/api15.png){zoomable="yes"}
 
-The setup of your Adobe I/O integration is now finished.
+The setup of your Adobe I/O project is now finished.
 
 ![Adobe I/O New Integration](./images/api16.png){zoomable="yes"}
 

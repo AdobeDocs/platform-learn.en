@@ -8,7 +8,7 @@ doc-type: tutorial
 
 >[!IMPORTANT]
 >
->If you're not an Adobe employee, follow the instructions to [install Postman](./ex7.md)!
+>If you're not an Adobe employee, follow the instructions to [install Postman](./ex7.md). The below instructions are only intended for Adobe employees. If you have already configured Postman, then skip this exercise and go to [Applications to install](./ex9.md).
 
 ## Install PostBuster
 
@@ -72,6 +72,9 @@ Copy the below environment placeholder and paste it in the **Base Environment**.
 	"SCOPES": [
 		"openid",
 		"AdobeID",
+		"read_organizations", 
+		"additional_info.projectedProductContext", 
+		"session",
 		"ff_apis",
 		"firefly_api"
 	],
@@ -93,7 +96,49 @@ You should then have this.
 
 ## Enter your Adobe I/O variables
 
+Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} and open your project.
 
+![Adobe I/O New Integration](./images/iopr.png){zoomable="yes"}
+
+Go to **OAuth Server-to-Server**. 
+
+![Adobe I/O New Integration](./images/iopbvar1.png){zoomable="yes"}
+
+You now need to copy the following values from your Adobe I/O project and paste them in your PostBuster Base Environment.
+
+- Client ID
+- Client Secret (Click **Retrieve Client Secret**)
+- Technical Account ID
+- Organization ID (Scroll down to find your Organization ID)
+
+![Adobe I/O New Integration](./images/iopbvar2.png){zoomable="yes"}
+
+Copy the above variables one by one, and paste them in your **Base Environment** in PostBuster.
+
+| Variable Name in Adobe I/O     | Variable Name in PostBuster Base Environment      | 
+|:-------------:| :---------------:| 
+| Client ID          | `API_KEY` |
+| Client Secret          | `CLIENT_SECRET` |
+| Technical Account ID    | `TECHNICAL_ACCOUNT_ID`|
+| Organization ID          | `IMS_ORG` |
+
+After having copied these variables on by one, your PostBuster Base Environment should look like this:
+
+![Adobe I/O New Integration](./images/iopbvar3.png){zoomable="yes"}
+
+In the **Adobe IO - OAuth** collection, select the request named **POST - Get Access Token** and select **Send**. 
+
+You should see a similar response containing the following information:
+
+| Key     | Value     | 
+|:-------------:| :---------------:| 
+| token_type          | **bearer** |
+| access_token    | **eyJhbGciOiJS...** | 
+| expires_in          | **86399** |
+
+The Adobe I/O **bearer-token** has a specific value (the very long access_token) and an expiration window and is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to interact with Adobe APIs, you will have to generate a new token by running this request again.
+
+![Adobe I/O New Integration](./images/iopbvar4.png){zoomable="yes"}
 
 Your PostBuster environment is now setup and working. You've now completed the Getting Started module.
 

@@ -14,7 +14,9 @@ doc-type: tutorial
 
 Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} and open your project.
 
-Select **Download for Postman**, then choose **OAuth Server-to-Server** to download a Postman environment.
+![Adobe I/O New Integration](./images/iopr.png){zoomable="yes"}
+
+Click the **Firefly - Firefly Services** API. Then, click **Download for Postman** and choose **OAuth Server-to-Server** to download a Postman environment.
 
 ![Adobe I/O New Integration](./images/iopm.png){zoomable="yes"}
 
@@ -46,9 +48,9 @@ In **postman-ff.zip** file are the following files:
   
 Unzip **postman-ff.zip** and store the following 2 files in a folder on your desktop:
 
-- Adobe IO - OAuth.postman_collection.json 
-- FF - Firefly Services Tech Insiders.postman_collection.json 
-- oauth_server_to_server.postman_environment.json
+- `Adobe IO - OAuth.postman_collection.json`
+- `FF - Firefly Services Tech Insiders.postman_collection.json` 
+- `oauth_server_to_server.postman_environment.json`
 
 ![Adobe I/O New Integration](./images/pmfolder1.png){zoomable="yes"}
 
@@ -72,11 +74,11 @@ Now you have everything you need in Postman to start interacting with Firefly Se
 
 Next, to make sure you're properly authenticated, you need to request an access token.
 
-Make sure that you've got the right environment selected before executing any request by verifying the Environment-dropdown list in the top right corner. The selected Environment should have a name similar to this one, `--aepUserLdap-- Firefly Services OAuth Credential`.
+Make sure that you've got the right environment selected before executing any request by verifying the Environment-dropdown list in the top right corner. The selected Environment should have a name similar to this one, `--aepUserLdap-- One Adobe OAuth Credential`.
 
 ![Postman](./images/envselemea1.png){zoomable="yes"}
 
-The selected Environment should have a name similar to this one, `--aepUserLdap-- Firefly Services OAuth Credential`.
+The selected Environment should have a name similar to this one, `--aepUserLdap-- One Adobe OAuth Credential`.
 
 ![Postman](./images/envselemea.png){zoomable="yes"}
 
@@ -84,7 +86,7 @@ Now that your Postman environment and collections are configured and working, yo
 
 In the **Adobe IO - OAuth** collection, select the request named **POST - Get Access Token** and select **Send**. 
 
-Notice under **Query Params**, two variables are referenced, `API_KEY` and `CLIENT_SECRET`. These variables are taken from the selected environment, `--aepUserLdap-- Firefly Services OAuth Credential`. 
+Notice under **Query Params**, two variables are referenced, `API_KEY` and `CLIENT_SECRET`. These variables are taken from the selected environment, `--aepUserLdap-- One Adobe OAuth Credential`. 
 
 ![Postman](./images/ioauth.png){zoomable="yes"}
 
@@ -97,12 +99,12 @@ You should see a similar response containing the following information:
 | Key     | Value     | 
 |:-------------:| :---------------:| 
 | token_type          | **bearer** |
-| access_token    | **eyJhbGciOiJSU...** | 
+| access_token    | **eyJhbGciOiJSUz...** | 
 | expires_in          | **86399** |
 
-The Adobe I/O **bearer-token** has a specific value (the very long access_token) and an expiration window and is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to authenticate to Adobe I/O, you will have to generate a new token by running this request again.
+The Adobe I/O **bearer-token** has a specific value (the very long access_token) and an expiration window and is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to interact with Adobe APIs, you will have to generate a new token by running this request again.
 
-Your Postman environment is now setup and working. You've now completed the Getting Started module.
+Your Postman environment is now setup and working.
 
 ## Next Steps
 
