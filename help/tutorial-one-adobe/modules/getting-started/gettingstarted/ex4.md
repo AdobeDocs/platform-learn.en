@@ -95,8 +95,10 @@ You'll then see your website loaded in an incognito browser window. For every de
 
 ![DSN](./images/web7.png)
 
-Next Step: [Use the mobile app](./ex5.md)
+## Next Steps
 
-[Go Back to Getting Started](./getting-started.md)
+Go to [Use the mobile app](./ex5.md)
 
-[Go Back to All Modules](./../../../overview.md)
+Go back to [Getting Started](./getting-started.md){target="_blank"}
+
+Go back to [All modules](./../../../overview.md){target="_blank"}

@@ -49,8 +49,10 @@ Once the quick setup process has completed, you'll have:
 
 Keep this screen open as you'll need it in the next steps.
 
-Next Step: [Create your Datastream](./ex3.md)
+## Next Steps
 
-[Go Back to Getting Started](./getting-started.md)
+Go to [Create your Datastream](./ex3.md)
 
-[Go Back to All Modules](./../../../overview.md)
+Go back to [Getting Started](./getting-started.md){target="_blank"}
+
+Go back to [All modules](./../../../overview.md){target="_blank"}

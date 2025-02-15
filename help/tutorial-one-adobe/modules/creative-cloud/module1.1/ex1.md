@@ -71,10 +71,6 @@ In this exercise, Adobe I/O is used to query against Firefly Services APIs. Foll
 
 ## 1.1.1.3 Postman authentication to Adobe I/O
 
->[!IMPORTANT]
->
->If you're an Adobe employee, please follow the instructions here to use [PostBuster](./../../../postbuster.md).
-
 1. Download and install the relevant version of Postman for your OS at [Postman Downloads](https://www.postman.com/downloads/){target="_blank"}.
 
   ![Adobe I/O New Integration](./images/getstarted.png){zoomable="yes"}
