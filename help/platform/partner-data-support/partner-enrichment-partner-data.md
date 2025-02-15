@@ -15,4 +15,4 @@ exl-id: 7b6cb89d-b514-48ae-b932-1254abd57d31
 
 Learn how to add partner attributes to your first-party profiles to expand the reach through additional channels in [!DNL Real-Time CDP]. For more information, please visit the [Supplement first-party profiles with partner-provided attributes](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/use-cases/partner-data/supplement-first-party-profiles.html) documentation.
 
->[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3423075/?learn=on&enablevpops)

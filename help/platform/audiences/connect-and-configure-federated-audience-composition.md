@@ -14,4 +14,4 @@ exl-id: 993b514a-67ea-4d71-8c6b-e0e4f600b603
 
 Learn how to connect to your data warehouse and configure that connection for Federated Audience Composition. For more information, please visit [Federated Audience Composition documentation](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/home){target="_blank"}.
 
->[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3433246/?learn=on&enablevpops)

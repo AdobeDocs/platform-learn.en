@@ -12,4 +12,4 @@ exl-id: 989202e3-f479-485d-aa7b-c4f345235f0b
 
 Learn how to upload audiences in CSV format into Adobe Experience Platform. For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/audience-portal#import-audience).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421714/?learn=on&enablevpops)

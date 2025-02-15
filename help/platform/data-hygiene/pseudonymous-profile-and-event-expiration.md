@@ -16,4 +16,4 @@ Learn how to configure expiration settings for pseudonymous profiles and events 
 These settings allow data stewards to set expiration dates for unauthenticated profiles and their associated events. This helps keep the [!DNL Profile Service] relevant for your marketing and advertising use cases. For more information, please visit the [Experience Event expiration](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) and [Pseudonymous Profiles data expiration](https://experienceleague.adobe.com/en/docs/experience-platform/profile/event-expirations) documentation.
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3428361?learn=on&enablevpops)

@@ -12,5 +12,5 @@ exl-id: fcc80ca6-8163-4a4c-b164-4f12f76c03e3
 
 Get an overview of the five key use cases of Experience Platform&mdash;Intelligent Re-engagement, "Don't Lose" Campaigns, Customer Conversion Optimization, Contextual Recognition, and One-Time Value to Lifetime Value.
 
->[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32806?learn=on&enablevpops)
 

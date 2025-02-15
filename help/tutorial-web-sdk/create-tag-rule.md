@@ -64,7 +64,7 @@ All of these rules will be sequenced properly using the "[!UICONTROL order]" opt
 
 This video gives an overview of the process:
 
->[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3427710/?learn=on&enablevpops)
 
 ### Global configuration fields
 

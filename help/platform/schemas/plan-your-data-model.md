@@ -12,4 +12,4 @@ exl-id: f3912973-0f15-4113-8706-6a36b6d24c17
 
 This video reviews what to do before you start building your schemas in Adobe Experience Platform. Document your business use cases, understand your Platform license, know the product guardrails, and identify what data to ingest before finalizing your data model. For more information, please visit the [schemas documentation](https://experienceleague.adobe.com/docs/experience-platform/xdm/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333478?learn=on&enablevpops)

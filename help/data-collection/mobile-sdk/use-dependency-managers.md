@@ -14,4 +14,4 @@ Learn how to use CocoaPods and Gradle to manage Adobe Experience Platform Mobile
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26263/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26263/?learn=on&enablevpops)

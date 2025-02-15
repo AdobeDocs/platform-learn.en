@@ -12,4 +12,4 @@ exl-id: 50f7a50c-ab0d-4cc8-bf58-2e0c9fc373ad
 
 Learn best practices to avoid connection issues with the SFTP source connector. Review specific check points to successfully connect your SFTP server to Adobe Experience Platform. For more information, see the [SFTP source connector documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/connectors/cloud-storage/sftp.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3416134?learn=on&enablevpops)

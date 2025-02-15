@@ -14,6 +14,6 @@ exl-id: b228a612-3ecd-40c1-85ef-81fd49d6bde0
 
 Before you can send data to destination partners from Real-Time CDP, you first need to make the connections to those partners. This video walks through that process, typically performed by Administrators. 
 
->[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342471/?learn=on&enablevpops)
 
 For more information, please visit the [documentation](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/ui/connect-destination).

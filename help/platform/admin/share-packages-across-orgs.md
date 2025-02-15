@@ -14,4 +14,4 @@ exl-id: 7f52bf0c-ba0d-416e-920e-32e21c0bf1af
 
 Learn how to copy Experience Platform configurations between IMS Orgs using packages. Easily replicate schemas, datasets, journeys, and more across multiple IMS Orgs to support release processes and multi-region/multi-brand deployments. For more detailed information, see the [sandbox tooling documentation](https://experienceleague.adobe.com/en/docs/experience-platform/sandbox/ui/sharing-packages-across-orgs).
 
->[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3435815/?learn=on&enablevpops)

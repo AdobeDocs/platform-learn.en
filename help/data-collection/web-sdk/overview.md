@@ -14,7 +14,7 @@ exl-id: cd010977-9ff1-47ea-8aa1-d9b913ba846b
 
 Learn how Adobe Experience Platform Web SDK and Edge Network allows customers to use one JavaScript library and one beacon to send data to Adobe applications and third-party destinations.
 
->[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/34141?learn=on&enablevpops)
 
 >[!NOTE]
 >
