@@ -164,7 +164,7 @@ In this module, you'll set up your own instance of Google Cloud Platform, load d
 
 #### Data Distiller
 
-[1.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
+[2.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md)
 
 In this module, you'll learn how to use Adobe Experience Platform Query Service.
 
