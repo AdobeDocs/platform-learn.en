@@ -36,7 +36,7 @@ recommendations: noDisplay,noCatalog
     + [1.1.3 Working with Photoshop APIs](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex3.md)
     + [1.1.4 Firefly Custom Models API](/help/tutorial-one-adobe/modules/creation-production/module1.1/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.1/summary.md)
-  + 1.2 Creative Workflow Automation with Workfront Fusion {#crpr1}  
+  + 1.2 Creative Workflow Automation with Workfront Fusion {#crpr2}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.2/automation.md)
     + [1.2.1 Getting Started with Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex1.md)
     + [1.2.2 Use Adobe APIs within Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
