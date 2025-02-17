@@ -1,0 +1,65 @@
+---
+title: Real-time CDP - Build a segment and take action
+description: Real-time CDP - Build a segment and take action
+kt: 5342
+audience: Data Architect, Orchestration Engineer, Marketer
+doc-type: tutorial
+activity: develop
+---
+# 2.3 Real-time CDP - Build an audience and take action
+
+In this module, you'll configure a streaming segment and activate the audience to multiple destinations.
+
+## Learning Objectives
+
+- Learn how to build an audience and enable it for streaming.
+- Learn how to configure an advertising destination using the Adobe Experience Platform UI.
+- Learn how to connect an audience to a destination and activate it.
+
+## Prerequisites
+
+- Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
+- Access to Adobe Target
+- Access to AWS S3
+
+>[!NOTE]
+>
+>Don't forget to install, configure and use the Chrome Extension as referenced in [Install the Chrome extension for the Experience League documentation](../../gettingstarted/gettingstarted/ex1.md)
+
+## Exercises
+
+[2.3.1 Create an audience](./ex1.md)
+
+Learn how to create an audience.
+
+[2.3.2 Review how to configure DV360 Destination using Destinations](./ex2.md)
+
+Learn how to configure an advertising destination using the Real-Time CDP UI.
+
+[2.3.3 Take Action: send your audience to DV360](./ex3.md)
+
+Connect the audience you built to the destination DV360.
+
+[2.3.4 Take Action: send your audience to an S3-destination](./ex4.md)
+
+Use the audience you created and send it to an S3-destination, typically used for Email Marketing-destinations.
+
+[2.3.5 Take Action: send your audience to Adobe Target](./ex5.md)
+
+Use the audience you created to configure an Experience Targeting Activity in Adobe Target.
+
+[2.3.6 Destinations SDK](./ex6.md)
+
+Configure your own destination using Destinations SDK.
+
+[Summary and benefits](./summary.md)
+
+Summary of this module and overview of the benefits.
+
+![Tech Insiders](./../../../../assets/images/techinsiders.png){width="50px" align="left"}
+
+>[!NOTE]
+>
+>Thank you for investing your time in learning all there is to know about Adobe Experience Platform and its applications. If you have questions, want to share general feedback of have suggestions on future content, please contact Tech Insiders directly, by sending an email to **techinsiders@adobe.com**.
+
+[Go Back to All Modules](./../../../../overview.md)
