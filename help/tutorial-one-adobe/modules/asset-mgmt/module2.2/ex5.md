@@ -75,6 +75,6 @@ Go back to Photoshop, and you'll see that the plugin is now ready to be used and
 
 ![WF](./images/wf16.png)
 
-[Go Back to Module 2.2](./workfront.md){target="_blank"}
+Go Back to [Workflow Management with Adobe Workfront](./workfront.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Data preparation in Analysis Workspace
 kt: 5342
 doc-type: tutorial
 ---
-# 4.1.4 Data preparation in Analysis Workspace
+# 1.1.4 Data preparation in Analysis Workspace
 
 ## Objectives
 
@@ -12,7 +12,7 @@ doc-type: tutorial
 - Understand the concepts of data preparation in Analysis Workspace
 - Learn how to do data calculations
 
-## 4.1.4.1 Analysis Workspace UI in CJA
+## 1.1.4.1 Analysis Workspace UI in CJA
 
 Analysis Workspace removes all of the typical limitations of a single Analytics report. It provides a robust, flexible canvas for building custom analysis projects. Drag-and-drop any number of data tables, visualizations, and components (dimensions, Metrics, segments, and time granularities) to a project. Instantly create breakdowns and segments, create cohorts for analysis, create alerts, compare segments, do flow and fallout analysis, and curate and schedule reports for sharing with anyone in your business.
 
@@ -64,7 +64,7 @@ Next, click **Save**.
 
 ![demo](./images/prsave2.png)
 
-## 4.1.4.2 Calculated Metrics
+## 1.1.4.2 Calculated Metrics
 
 Although we have organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis. Also, during any analysis you can create calculated metric to go deeper on the insights finding.
 
@@ -114,7 +114,7 @@ Click **Save** again.
 
 ![demo](./images/calcbuildercr6a.png)
 
-## 4.1.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
+## 1.1.4.3 Calculated Dimensions: Filters (segmentation) & Date Ranges
 
 ### Filters: Calculated Dimensions
 
@@ -146,7 +146,7 @@ You've now finished the data preparation exercise using CJA Analysis Workspace.
 
 ## Next Steps
 
-Go to [4.1.5 Visualization using Customer Journey Analytics](./ex5.md)(./ex2.md){target="_blank"}
+Go to [1.1.5 Visualization using Customer Journey Analytics](./ex5.md)(./ex2.md){target="_blank"}
 
 Go back to [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

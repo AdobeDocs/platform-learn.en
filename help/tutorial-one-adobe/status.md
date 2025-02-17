@@ -8,19 +8,19 @@ exl-id: 8f9ae0fa-48b2-4da5-ab21-a6cf16a0b522
 
 Below is an overview of the status of the content in this tutorial.
 
-### Getting Started
+## Getting Started
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
 | [0. Getting started](./modules/getting-started/gettingstarted/getting-started.md) | 17/02/2025  | Yes         | - |
 
-### 1. Workflow & Planning
+## 1. Workflow & Planning
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
 | - | -  | -         | - |
 
-### 2. Creation & Production
+## 2. Creation & Production
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
@@ -28,14 +28,14 @@ Below is an overview of the status of the content in this tutorial.
 | [1.2 Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md) | 16/01/2025  | Yes         | - |
 
 
-### 3. Asset Management
+## 3. Asset Management
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
 | [2.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md) | 16/01/2025  | Yes         | - |
 | [2.2 Workflow Management with Adobe Workfront](./modules/asset-mgmt/module2.2/workfront.md) | 16/01/2025  | No         | Content not finished yet |
 
-### 4. Delivery & Activation
+## 4. Delivery & Activation
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
@@ -54,7 +54,7 @@ Below is an overview of the status of the content in this tutorial.
 | [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)| 05/01/2025        | Yes        |-|
 | [3.5 Adobe Journey Optimizer: Translation Services](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)| 08/02/2025        | Yes        |-|
 
-### 5. Reporting & Insights
+## 5. Reporting & Insights
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |

@@ -4,7 +4,7 @@ description: Query Service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
 ---
-# 5.1.5 Generate a dataset from a query
+# 2.1.5 Generate a dataset from a query
 
 ## Objective
 
@@ -72,9 +72,9 @@ As soon as your dataset is created (which can take 5-10 minutes), you can contin
 
 ## Next Steps
 
-Go to Option A: [5.1.6 Query Service and Power BI](./ex6.md){target="_blank"}
+Go to Option A: [2.1.6 Query Service and Power BI](./ex6.md){target="_blank"}
 
-Go to Option B: [5.1.7 Query Service and Tableau](./ex7.md){target="_blank"}
+Go to Option B: [2.1.7 Query Service and Tableau](./ex7.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

@@ -4,7 +4,7 @@ description: Query Service - Explore the dataset with Tableau
 kt: 5342
 doc-type: tutorial
 ---
-# 5.1.7 Query Service and Tableau
+# 2.1.7 Query Service and Tableau
 
 Open Tableau.
 
@@ -74,7 +74,7 @@ You've now finished this exercise.
 
 ## Next Steps
 
-Go to [5.1.8 Query Service API](./ex8.md){target="_blank"}
+Go to [2.1.8 Query Service API](./ex8.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

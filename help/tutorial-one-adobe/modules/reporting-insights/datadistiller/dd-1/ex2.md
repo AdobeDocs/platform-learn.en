@@ -4,7 +4,7 @@ description: Query Service - Getting Started
 kt: 5342
 doc-type: tutorial
 ---
-# 5.1.2 Getting Started
+# 2.1.2 Getting Started
 
 ## Getting familiar with the Adobe Experience Platform UI
 
@@ -100,7 +100,7 @@ Now you are ready to start submitting queries.
 
 ## Next Steps
 
-Go to [5.1.3 Using the Query Service](./ex3.md){target="_blank"}
+Go to [2.1.3 Using the Query Service](./ex3.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

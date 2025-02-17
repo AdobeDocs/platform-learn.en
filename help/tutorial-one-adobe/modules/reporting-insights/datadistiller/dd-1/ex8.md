@@ -4,7 +4,7 @@ description: Query Service - Query Service API
 kt: 5342
 doc-type: tutorial
 ---
-# 5.1.8 Query Service API
+# 2.1.8 Query Service API
 
 ## Objective
 

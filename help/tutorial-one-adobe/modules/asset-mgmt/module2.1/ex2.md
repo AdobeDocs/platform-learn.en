@@ -5,11 +5,11 @@ kt: 5342
 doc-type: tutorial
 exl-id: db366111-3873-4504-95f1-b240836c833f
 ---
-# 2.1.2 Create your document-based website
+# 1.1.2 Create your document-based website
 
 While you wait for your Cloud Manager Program to be created, you have enough time to set up your first document-based authoring website. The below exercise is based on the [aem.live Developer Tutorial](https://www.aem.live/developer/tutorial){target="_blank"}. Follow the steps below to get started.
 
-## 2.1.2.1 Setup your Google Drive
+## 1.1.2.1 Setup your Google Drive
 
 Go to [https://drive.google.com](https://drive.google.com){target="_blank"}. Click **+ New** and then click **New Folder**.
 
@@ -57,7 +57,7 @@ You should remove the query string parameter `?usp=drive_link` so the URL should
 
 `https://drive.google.com/drive/folders/1PNIOFeptIfszSebawT-Y_bwB4_anQWk5`
 
-## 2.1.2.2 Setup your GitHub repo
+## 1.1.2.2 Setup your GitHub repo
 
 Go to [https://github.com](https://github.com){target="_blank"}. Click **Sign In**.
 
@@ -99,7 +99,7 @@ You'll then get this confirmation.
 
 ![AEMCS](./images/aemcssetup10.png){zoomable="yes"}
 
-## 2.1.2.3 Update file fstab.yaml
+## 1.1.2.3 Update file fstab.yaml
 
 In your GitHub repo, click to open the file `fstab.yaml`.
 
@@ -125,7 +125,7 @@ Click **Commit changes**.
 
 ![AEMCS](./images/aemdocbcssetup15.png){zoomable="yes"}
 
-## 2.1.2.4 Install AEM Sidekick extension
+## 1.1.2.4 Install AEM Sidekick extension
 
 Go to [https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo](https://chromewebstore.google.com/detail/aem-sidekick/ccfggkjabjahcjoljmgmklhpaccedipo){target="_blank"}. Click **Add to Chrome**.
 
@@ -135,7 +135,7 @@ Pin the **AEM Sidekick** extension.
 
 ![AEMCS](./images/aemdocbcssetup17.png){zoomable="yes"}
 
-## 2.1.2.5 Preview and Publish your document-based website
+## 1.1.2.5 Preview and Publish your document-based website
 
 Go back to your Google Drive folder. In the task bar, click the **AEM Sidekick** extension. You then see a, AEM Sidekick bar popup on your folder.
 
@@ -179,7 +179,7 @@ Open a new browser window and navigate to the URL.
 
 ![AEMCS](./images/aemdocbcssetup25.png){zoomable="yes"}
 
-## 2.1.2.6 Make a change and publish your change
+## 1.1.2.6 Make a change and publish your change
 
 Go back to your Google Drive and open the filer **index** in Google.
 
@@ -199,8 +199,8 @@ You'll then see the live version of your website.
 
 The above exercise was a good way to get started and experience document-based authoring yourself. You can now continue with the next exercise, where you'll set up your own demo website using CitiSignal as a demo brand.
 
-Next Step: [2.1.3 Setup your AEM CS environment](./ex3.md){target="_blank"}
+Next Step: [1.1.3 Setup your AEM CS environment](./ex3.md){target="_blank"}
 
-[Go Back to Module 2.1](./aemcs.md){target="_blank"}
+Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

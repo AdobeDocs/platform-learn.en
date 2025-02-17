@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Visualization using Customer Journey A
 kt: 5342
 doc-type: tutorial
 ---
-# 4.1.5 Visualization using Customer Journey Analytics
+# 1.1.5 Visualization using Customer Journey Analytics
 
 ## Objectives
 
@@ -18,7 +18,7 @@ In this exercises you will use Analysis Workspace within CJA to analyze product 
 
 We will cover some of the queries done in  Module 7 - Query Service so you can see how easy is to run the same queries and more but without using SQL and relying only on the drag and drop philosophy of Analysis Workspace.
 
-Let's use the project you created in [4.1.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
+Let's use the project you created in [1.1.4 Data Preparation in Analysis Workspace](./ex4.md), so go to [https://analytics.adobe.com](https://analytics.adobe.com).
 
 Click to open your project `--aepUserLdap-- - Omnichannel Analysis`.
 

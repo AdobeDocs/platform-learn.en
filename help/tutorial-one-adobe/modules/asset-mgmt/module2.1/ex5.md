@@ -4,7 +4,7 @@ description: AEM CS - Advanced Custom Block
 kt: 5342
 doc-type: tutorial
 ---
-# 2.1.5 Advanced Custom Block
+# 1.1.5 Advanced Custom Block
 
 In the previous exercise, you configured a basic custom block called **Fiber Offer** that showcases fields like **Offer Text**, **Offer CTA** and **Offer Image** onto your website. 
 
@@ -12,7 +12,7 @@ You can now continue working on this block.
 
 ![AEMCS](./images/nav7.png){zoomable="yes"}
 
-## 2.1.5.1 Style your block
+## 1.1.5.1 Style your block
 
 Now that you have a working **fiberoffer** block you can apply styling to it.
 
@@ -108,7 +108,7 @@ You should then see this, with the styling applied to your page.
 
 ![Block](./images/blockadv13.png){zoomable="yes"}
 
-## 2.1.5.2 Add logic and load data from an external endpoint
+## 1.1.5.2 Add logic and load data from an external endpoint
 
 For this exercise, you will be doing a 'raw' configuration of Adobe's Web SDK and you'll be requesting the next best offer from Adobe Journey Optimizer Offer Decisioning. 
 
@@ -338,8 +338,8 @@ You should then see this.
 
 ![Block](./images/blockadv20.png){zoomable="yes"}
 
-Next Step: [2.1.6 AEM Edge Delivery Services MarTech plugin](./ex6.md){target="_blank"}
+Next Step: [1.1.6 AEM Edge Delivery Services MarTech plugin](./ex6.md){target="_blank"}
 
-[Go Back to Module 2.1](./aemcs.md){target="_blank"}
+Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

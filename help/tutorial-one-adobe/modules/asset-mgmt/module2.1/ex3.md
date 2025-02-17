@@ -5,9 +5,9 @@ kt: 5342
 doc-type: tutorial
 exl-id: 62715072-0257-4d07-af1a-8becbb793459
 ---
-# 2.1.3 Setup your AEM CS environment
+# 1.1.3 Setup your AEM CS environment
 
-## 2.1.3.1 Setup your GitHub repo
+## 1.1.3.1 Setup your GitHub repo
 
 Go to [https://github.com](https://github.com){target="_blank"}. Click **Sign In**.
 
@@ -49,7 +49,7 @@ You'll then get this confirmation.
 
 ![AEMCS](./images/aemcssetup10.png){zoomable="yes"}
 
-## 2.1.3.2 Update file fstab.yaml
+## 1.1.3.2 Update file fstab.yaml
 
 In your GitHub repo, click to open the file `fstab.yaml`.
 
@@ -117,7 +117,7 @@ Click **Commit changes**.
 
 The file `fstab.yaml` has now been updated.
 
-## 2.1.3.3 Upload CitiSignal assets
+## 1.1.3.3 Upload CitiSignal assets
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
 
@@ -180,7 +180,7 @@ After a couple of minutes, your package will then be installed.
 You can now close this window.
 
 
-## 2.1.3.4 Publish CitiSignal assets
+## 1.1.3.4 Publish CitiSignal assets
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
 
@@ -216,7 +216,7 @@ Click **Publish**.
 
 Your assets have now been published.
 
-## 2.1.3.5 Create CitiSignal website
+## 1.1.3.5 Create CitiSignal website
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. Click your **Program** to open it.
 
@@ -272,7 +272,7 @@ Refresh your screen after a couple of minutes, you'll then see your newly create
 
 ![AEMCS](./images/aemcssetup38.png){zoomable="yes"}
 
-## 2.1.3.6 Publish CitiSignal website
+## 1.1.3.6 Publish CitiSignal website
 
 Next, click the checkbox in front of **CitiSignal**. Then, click **Manage Publication**.
 
@@ -317,7 +317,7 @@ After a couple of minutes, the assets will all be loading properly.
 
 ![AEMCS](./images/aemcssetup47.png){zoomable="yes"}
 
-## 2.1.3.7 Test Page Performance
+## 1.1.3.7 Test Page Performance
 
 Go to [https://pagespeed.web.dev/](https://pagespeed.web.dev/){target="_blank"}. Enter your URL and click **Analyze**.
 
@@ -333,8 +333,8 @@ You'll then see that your website, in both a mobile and desktop visualization, g
 
 ![AEMCS](./images/aemcssetup50.png){zoomable="yes"}
 
-Next Step: [2.1.4 Configure a custom block](./ex4.md){target="_blank"}
+Next Step: [1.1.4 Configure a custom block](./ex4.md){target="_blank"}
 
-[Go Back to Module 2.1](./aemcs.md){target="_blank"}
+Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

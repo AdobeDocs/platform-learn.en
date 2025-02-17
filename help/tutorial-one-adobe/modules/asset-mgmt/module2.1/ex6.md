@@ -4,7 +4,7 @@ description: AEM CS - MarTech plugin
 kt: 5342
 doc-type: tutorial
 ---
-# 2.1.6 AEM Edge Delivery Services MarTech plugin
+# 1.1.6 AEM Edge Delivery Services MarTech plugin
 
 The AEM MarTech plugin helps you quickly set up a complete MarTech stack for your AEM project. 
 
@@ -12,7 +12,7 @@ The AEM MarTech plugin helps you quickly set up a complete MarTech stack for you
 >
 >This plugin is currently available to customers in collaboration with AEM Engineering via co-innovation projects. You can find more info on [https://github.com/adobe-rnd/aem-martech](https://github.com/adobe-rnd/aem-martech).
 
-## 2.1.6.1 Add the plugin to your repo
+## 1.1.6.1 Add the plugin to your repo
 
 Navigate to the folder that you're using for your **citisignal** GitHub repository. Right-click the folder name and then select **New Terminal at Folder**.
 
@@ -32,7 +32,7 @@ Navigate to the folder that you're using for your **citisignal** GitHub reposito
 
 ![AEMCS](./images/mtplugin4.png){zoomable="yes"}
 
-## 2.1.6.2 head.html
+## 1.1.6.2 head.html
 
 In Visual Studio Code, open the file **head.html**. Copy the below code and paste it in the file **head.html**.
 
@@ -47,7 +47,7 @@ Save your changes.
 
 ![AEMCS](./images/mtplugin5.png){zoomable="yes"}
 
-## 2.1.6.3 scripts.js
+## 1.1.6.3 scripts.js
 
 In Visual Studio Code, go to the folder **scripts** and open the file **scripts.js**. Copy the below code and paste it in the file **scripts.js**, under the existing import scripts.
 
@@ -308,7 +308,7 @@ Click **Push origin** to push your changes to your GitHub repository.
 
 ![AEMCS](./images/mtplugin13.png){zoomable="yes"}
 
-## 2.1.6.4 ACDL extension in Tags property
+## 1.1.6.4 ACDL extension in Tags property
 
 In order for the AEM Edge Delivery Services MarTech plugin to function correctly, you need to add the extension for 
 
@@ -334,7 +334,7 @@ Go to **Publishing Flow** and open your **Main** library. Click **Add all Change
 
 Your changes are now deployed.
 
-## 2.1.6.5 Send data to Adobe Experience Platform Edge Network
+## 1.1.6.5 Send data to Adobe Experience Platform Edge Network
 
 You will now be able to view the changes to your website by going to `main--citisignal--XXX.aem.page/us/en` and/or `main--citisignal--XXX.aem.live/us/en`, after replacing XXX by your GitHub user account, which in this example is `woutervangeluwe`.
 
@@ -359,7 +359,7 @@ Open the payload and drill down to the field `events[0].xdm._experienceplatform.
 
 ![AEMCS](./images/plweb3.png){zoomable="yes"}
 
-## 2.1.6.6 View customer profile in Adobe Experience Platform
+## 1.1.6.6 View customer profile in Adobe Experience Platform
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -391,6 +391,6 @@ You've now completed this exercise.
 
 Next Step: [Summary & Benefits](./summary.md){target="_blank"}
 
-[Go Back to Module 2.1](./aemcs.md){target="_blank"}
+Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

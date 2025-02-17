@@ -4,7 +4,7 @@ description: Ingest & Analyze Google Analytics data in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
 ---
-# 4.2.4 Load data from BigQuery into Adobe Experience Platform
+# 1.2.4 Load data from BigQuery into Adobe Experience Platform
 
 ## Objectives
 
@@ -34,7 +34,7 @@ You'll then see the **Select data** screen.
 
 ![demo](./images/datasets.png)
 
-## 4.2.4.1 BigQuery Table Selection
+## 1.2.4.1 BigQuery Table Selection
 
 In the **Select data** screen, select your BigQuery dataset. You can now see a sample data preview of the Google Analytics data in BigQuery. 
 
@@ -42,7 +42,7 @@ Click **Next**.
 
 ![demo](./images/datasets1.png)
 
-## 4.2.4.2 XDM mapping
+## 1.2.4.2 XDM mapping
 
 You'll now see this:
 
@@ -104,7 +104,7 @@ Click **Next**.
 
 ![demo](./images/xdm34.png)
 
-## 4.2.4.3 Connection and the data ingestion scheduling
+## 1.2.4.3 Connection and the data ingestion scheduling
 
 You'll now see the **Scheduling** tab:
 
@@ -127,7 +127,7 @@ Click **Next**.
 
 ![demo](./images/ex437.png)
 
-## 4.2.4.4 Review and launch connection
+## 1.2.4.4 Review and launch connection
 
 You now see a detailed overview of your connection. Make sure everything is correct before you continue, as some settings can't be changed anymore afterwards, like for instance the XDM mapping.
 
@@ -143,7 +143,7 @@ You're now ready to continue with the next exercise, in which you'll use Custome
 
 ## Next Steps
 
-Go to [4.2.5 Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md){target="_blank"}
+Go to [1.2.5 Analyze Google Analytics Data using Customer Journey Analytics](./ex5.md){target="_blank"}
 
 Go back to [Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 

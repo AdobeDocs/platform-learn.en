@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Build a dashboard using Analysis Works
 kt: 5342
 doc-type: tutorial
 ---
-# 4.1 Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
+# 1.1 Customer Journey Analytics - Build a dashboard using Analysis Workspace on top of Adobe Experience Platform
 
 In this module, you will get hands-on experience with the Customer Journey Analytics application service.
 
@@ -30,23 +30,23 @@ Customer Journey Analytics provides a toolkit to business intelligence and data 
 
 ## Exercises
 
-[4.1.1 Customer Journey Analytics 101](./ex1.md)
+[1.1.1 Customer Journey Analytics 101](./ex1.md)
 
 Learn all about the Customer Journey Analytics concepts.
 
-[4.1.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](./ex2.md)
+[1.1.2 Connect Adobe Experience Platform Data Sets in Customer Journey Analytics](./ex2.md)
 
 Learn how to consume multiple datasets from Adobe Experience Platform into Customer Journey Analytics.
 
-[4.1.3 Create a Data View](./ex3.md)
+[1.1.3 Create a Data View](./ex3.md)
 
 Learn how to configure a data view in Customer Journey Analytics.
 
-[4.1.4 Data Preparation in Customer Journey Analytics](./ex4.md)
+[1.1.4 Data Preparation in Customer Journey Analytics](./ex4.md)
 
 Learn how to do some data preparation before continuing with analysis.
 
-[4.1.5 Visualization using Customer Journey Analytics](./ex5.md)
+[1.1.5 Visualization using Customer Journey Analytics](./ex5.md)
 
 Learn how to visualize Adobe Experience Platform data using Customer Journey Analytics.
 

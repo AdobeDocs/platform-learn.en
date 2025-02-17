@@ -4,7 +4,7 @@ description: Query Service - Explore the dataset with Power BI
 kt: 5342
 doc-type: tutorial
 ---
-# 5.1.6 Query Service and Power BI
+# 2.1.6 Query Service and Power BI
 
 Open Microsoft Power BI Desktop.
 
@@ -66,7 +66,7 @@ You've now finished this exercise.
 
 ## Next Steps
 
-Go to [5.1.8 Query Service API](./ex8.md){target="_blank"}
+Go to [2.1.8 Query Service API](./ex8.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

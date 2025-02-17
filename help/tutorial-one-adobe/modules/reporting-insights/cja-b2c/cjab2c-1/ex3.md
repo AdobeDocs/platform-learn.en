@@ -4,7 +4,7 @@ description: Customer Journey Analytics - Create a Data View
 kt: 5342
 doc-type: tutorial
 ---
-# 4.1.3 Create a Data View
+# 1.1.3 Create a Data View
 
 ## Objectives
 
@@ -12,7 +12,7 @@ doc-type: tutorial
 - Understand the basic settings of visit definition
 - Understand Attribution and Persistence within a Data View
 
-## 4.1.3.1 Data View
+## 1.1.3.1 Data View
 
 With your connection done, you can now progress to influencing visualization. A difference between Adobe Analytics and CJA, is that CJA needs a Data View in order to clean and prepare the data before visualization. 
 
@@ -33,7 +33,7 @@ You'll be redirected to the **Create Data View** workflow.
 
 ![demo](./images/0v2.png)
 
-## 4.1.3.2 Data View Definition
+## 1.1.3.2 Data View Definition
 
 You can now configure the basic definitions for your Data View. 
 
@@ -71,7 +71,7 @@ Click **Save**.
 
 ![demo](./images/12v2a.png)
 
-## 4.1.3.3 Data View Components
+## 1.1.3.3 Data View Components
 
 In this exercise, you'll configure the components you need to analyze the data and visualize it using Analysis Workspace. In this UI, there are three main areas:
 
@@ -176,7 +176,7 @@ Your configuration should then look like this. Don't forget to **Save** your Dat
 
 ![demo](./images/11v2.png)
 
-## 4.1.3.4 Calculated Metrics
+## 1.1.3.4 Calculated Metrics
 
 
 Although you've organized all the components in the Data View, you still need to adapt some of them, so that business users are ready to start their analysis.
@@ -255,7 +255,7 @@ Your final configuration should then look similar to this this. Click **Save and
 
 ![demo](./images/calcmetr8.png)
 
-## 4.1.3.5 Data View Settings
+## 1.1.3.5 Data View Settings
 
 You should be redirected to this screen:
 
@@ -281,7 +281,7 @@ You can now continue with the visualization and analysis part!
 
 ## Next Steps
 
-Go to [4.1.4 Data Preparation in Customer Journey Analytics](./ex4.md)(./ex2.md){target="_blank"}
+Go to [1.1.4 Data Preparation in Customer Journey Analytics](./ex4.md)(./ex2.md){target="_blank"}
 
 Go back to [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

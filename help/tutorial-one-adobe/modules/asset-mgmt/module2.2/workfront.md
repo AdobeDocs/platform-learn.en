@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 96685851-b446-4bae-890e-4f96a59cedba
 ---
-# 2.2 Workflow Management with Adobe Workfront
+# 1.2 Workflow Management with Adobe Workfront
 
 ## Learning Objectives
 
@@ -17,11 +17,15 @@ exl-id: 96685851-b446-4bae-890e-4f96a59cedba
 
 ## Exercises
 
-[2.2.1 Getting started with Workfront](./ex1.md){target="_blank"}
+[1.2.1 Getting started with Workfront](./ex1.md){target="_blank"}
 
-In this exercise, ...
+In this exercise, you'll set up a number of basic settings in Workfront.
 
-[2.2.5 Workfront + Photoshop integration](./ex5.md){target="_blank"}
+[1.2.2 Proofing with Workfront](./ex2.md)
+
+In this exercise, you'll configure and use a proofing approval workflow.
+
+[1.2.5 Workfront + Photoshop integration](./ex5.md){target="_blank"}
 
 In this exercise, you'll set up and start using the plugin that connects Adobe Photoshop with Adobe Workfront.
 
