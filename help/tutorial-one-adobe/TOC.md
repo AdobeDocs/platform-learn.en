@@ -11,6 +11,7 @@ recommendations: noDisplay,noCatalog
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + [Completion](/help/tutorial-one-adobe/completion.md)
++ [Prework](/help/tutorial-one-adobe/prework.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
@@ -24,7 +25,6 @@ recommendations: noDisplay,noCatalog
     + [Option 1: Postman setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex7.md)
     + [Option 2: PostBuster setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
     + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
-  + [Prework](/help/tutorial-one-adobe/prework.md)
 
 + Workflow and planning {#planning}
 
