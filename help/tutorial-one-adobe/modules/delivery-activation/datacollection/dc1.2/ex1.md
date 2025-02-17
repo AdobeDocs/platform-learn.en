@@ -22,15 +22,15 @@ You will now ingest data into Adobe Experience Platform and that data will be li
 
 Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](./../../datacollection/module1.1/images/web8.png)
+![DSN](./../../datacollection/dc1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web3.png)
+![DSN](./../../../getting-started/gettingstarted/images/web3.png)
 
 Open a new incognito browser window.
 
-![DSN](./../../gettingstarted/gettingstarted/images/web4.png)
+![DSN](./../../../getting-started/gettingstarted/images/web4.png)
 
 Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 

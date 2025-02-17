@@ -25,7 +25,7 @@ With Offer Decisioning, you can determine the best option from a set of availabl
 
 >[!NOTE]
 >
->Don't forget to install, configure and use the Chrome Extension as referenced in [Install the Chrome extension for the Experience League documentation](../../gettingstarted/gettingstarted/ex1.md)
+>Don't forget to install, configure and use the Chrome Extension as referenced in [Install the Chrome extension for the Experience League documentation](../../../getting-started/gettingstarted/ex1.md)
 
 ## Exercises
 

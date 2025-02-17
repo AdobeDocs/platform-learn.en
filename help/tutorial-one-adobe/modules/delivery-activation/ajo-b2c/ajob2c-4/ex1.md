@@ -371,27 +371,27 @@ Let's test the updated journey by buying a product on the demo website.
 
 Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](./../../datacollection/module1.1/images/web8.png)
+![DSN](./../../datacollection/dc1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-![DSN](../../gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../../getting-started/gettingstarted/images/web3.png)
 
 Open a new incognito browser window.
 
-![DSN](../../gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../../getting-started/gettingstarted/images/web4.png)
 
 Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-![DSN](../../gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../../getting-started/gettingstarted/images/web5.png)
 
 Select your account type and complete the login process.
 
-![DSN](../../gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../../getting-started/gettingstarted/images/web6.png)
 
 You'll then see your website loaded in an incognito browser window. For every exercise, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
-![DSN](../../gettingstarted/gettingstarted/images/web7.png)
+![DSN](../../../getting-started/gettingstarted/images/web7.png)
 
 Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for thi currently unknown customer.
       

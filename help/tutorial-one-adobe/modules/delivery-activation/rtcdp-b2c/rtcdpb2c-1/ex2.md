@@ -16,11 +16,11 @@ In the Real-time Customer Profile, all profile data is shown alongside event dat
 
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](../../datacollection/module1.2/images/home.png)
+![Data Ingestion](../../datacollection/dc1.2/images/home.png)
 
 Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate [!UICONTROL sandbox], you'll see the screen change and now you're in your dedicated [!UICONTROL sandbox].
 
-![Data Ingestion](../../datacollection/module1.2/images/sb1.png)
+![Data Ingestion](../../datacollection/dc1.2/images/sb1.png)
 
 In the left menu, go to **Profiles** and to **Browse**.
 

@@ -17,11 +17,11 @@ Log in to Adobe Experience Platform by going to this URL: [https://experience.ad
 
 After logging in, you'll land on the homepage of Adobe Experience Platform.
 
-![Data Ingestion](../../datacollection/module1.2/images/home.png)
+![Data Ingestion](../../datacollection/dc1.2/images/home.png)
 
 Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
-![Data Ingestion](../../datacollection/module1.2/images/sb1.png)
+![Data Ingestion](../../datacollection/dc1.2/images/sb1.png)
 
 From the left menu, click **Schemas** and go to **Browse**. Click **Create Schema**.
 

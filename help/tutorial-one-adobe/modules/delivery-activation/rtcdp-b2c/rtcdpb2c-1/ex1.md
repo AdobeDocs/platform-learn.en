@@ -18,75 +18,75 @@ Platform is an environment in which the word customer is broader than just the k
 
 Go to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Run** to open it.
 
-![DSN](./../../datacollection/module1.1/images/web8.png)
+![DSN](./../../datacollection/dc1.1/images/web8.png)
 
 You'll then see your demo website open up. Select the URL and copy it to your clipboard.
 
-![DSN](../../gettingstarted/gettingstarted/images/web3.png)
+![DSN](../../../getting-started/gettingstarted/images/web3.png)
 
 Open a new incognito browser window.
 
-![DSN](../../gettingstarted/gettingstarted/images/web4.png)
+![DSN](../../../getting-started/gettingstarted/images/web4.png)
 
 Paste the URL of your demo website, which you copied in the previous step. You'll then be asked to login using your Adobe ID.
 
-![DSN](../../gettingstarted/gettingstarted/images/web5.png)
+![DSN](../../../getting-started/gettingstarted/images/web5.png)
 
 Select your account type and complete the login process.
 
-![DSN](../../gettingstarted/gettingstarted/images/web6.png)
+![DSN](../../../getting-started/gettingstarted/images/web6.png)
 
 You'll then see your website loaded in an incognito browser window. For every exercise, you'll need to use a fresh, incognito browser window to load your demo website URL.
 
-![DSN](../../gettingstarted/gettingstarted/images/web7.png)
+![DSN](../../../getting-started/gettingstarted/images/web7.png)
 
 Click the Adobe logo icon in the top left corner of your screen to open the Profile Viewer.
   
-![Demo](../../datacollection/module1.2/images/pv1.png)
+![Demo](../../datacollection/dc1.2/images/pv1.png)
 
 Have a look at the Profile Viewer panel and the Real-time Customer Profile with the **Experience Cloud ID** as the primary identifier for thi currently unknown customer.
       
-![Demo](../../datacollection/module1.2/images/pv2.png)
+![Demo](../../datacollection/dc1.2/images/pv2.png)
 
 You can also see all the Experience Events that were collected based on the customer's behaviour. The list is currently empty but that will change soon.
 
-![Demo](../../datacollection/module1.2/images/pv3.png)
+![Demo](../../datacollection/dc1.2/images/pv3.png)
 
 Go to the **Phones & devices** product category. Next, click on the product **iPhone 15 Pro**.
 
-![Demo](../../datacollection/module1.2/images/pv4.png)
+![Demo](../../datacollection/dc1.2/images/pv4.png)
 
 You'll then see the product detail page. An Experience Event of type **Product View** has now been sent to Adobe Experience Platform using the Web SDK implementation that you reviewed in Module 1. 
   
-![Demo](../../datacollection/module1.2/images/pv5.png)
+![Demo](../../datacollection/dc1.2/images/pv5.png)
   
 Open the Provile Viewer panel and have a look at your **Experience Events**.
   
-![Demo](../../datacollection/module1.2/images/pv6.png)
+![Demo](../../datacollection/dc1.2/images/pv6.png)
   
 Go back to the **Phones & devices** category page, and click another product. Another Experience Event has been sent to Adobe Experience Platform. Open the Profile Viewer panel. You'll now see 2 Experience Events of type **Product View**. While the behavior is anonymous, with proper consent in place, you're able to track every click and store it in in Adobe Experience Platform. Once the anonymous customer becomes known, we'll be able to merge all anonymous behavior automatically to the know profile.
   
-![Demo](../../datacollection/module1.2/images/pv7.png)
+![Demo](../../datacollection/dc1.2/images/pv7.png)
   
 Go to the Register/Login page. Click **Sign In**.
   
-![Demo](../../datacollection/module1.2/images/pv8.png)
+![Demo](../../datacollection/dc1.2/images/pv8.png)
 
 Click **Create an account**.
   
-![Demo](../../datacollection/module1.2/images/pv9.png)
+![Demo](../../datacollection/dc1.2/images/pv9.png)
   
 Fill out your details and click **Register** after which you'll be redirected to the previous page. 
 
-![Demo](../../datacollection/module1.2/images/pv10.png)
+![Demo](../../datacollection/dc1.2/images/pv10.png)
 
 Open the Profile Viewer panel and go to Real-time Customer Profile. On the Profile Viewer panel, you should see all of your personal data displayed, like your newly added email and phone identifiers.
   
-![Demo](../../datacollection/module1.2/images/pv11.png)
+![Demo](../../datacollection/dc1.2/images/pv11.png)
 
 On the Profile Viewer panel, go to Experience Events. You'll see the 2 products that you viewed before on the Profile Viewer panel. Both of these events are now also connected to your 'known' profile.
 
-![Demo](../../datacollection/module1.2/images/pv12.png)
+![Demo](../../datacollection/dc1.2/images/pv12.png)
   
 You've now ingested data into Adobe Experience Platform and you've linked that data to identifiers like ECIDs and email-addresses. The goal of this is to understand the business context of what you're about to do. In the next exercise, you'll start configuring everything you need to make all that data ingestion possible.
 
@@ -94,7 +94,7 @@ You've now ingested data into Adobe Experience Platform and you've linked that d
 
 After becoming a known customer, it's time to start using the mobile app. Open the mobile app on your iPhone and then login to the app.
 
-If you don't have the app installed anymore, or if you can't remember how to install it, please have a look here: [Use the mobile app](../../gettingstarted/gettingstarted/ex5.md)
+If you don't have the app installed anymore, or if you can't remember how to install it, please have a look here: [Use the mobile app](../../../getting-started/gettingstarted/ex5.md)
 
 After installing the app as instructed, you'll see the landing page of the app with the Citi Signal brand loaded. Click the account icon in the top-left part of your screen.
   

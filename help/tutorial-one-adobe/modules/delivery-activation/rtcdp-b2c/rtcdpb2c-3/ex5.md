@@ -16,7 +16,7 @@ Before you continue, you need to select a **sandbox**. The sandbox to select is 
 
 ## Verify your Datastream
 
-The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe Edge Network. If you want to setup your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md) and was named `--aepUserLdap-- - Demo System Datastream`.
+The Adobe Target destination in Real-Time CDP is connected to the datastream that is used to ingest data into the Adobe Edge Network. If you want to setup your Adobe Target destination, you first need to verify whether your datastream is already enabled for Adobe Target. Your datastram was configured in [Exercise 0.2 Create your Datastream](./../../../modules/../getting-started/gettingstarted/ex2.md) and was named `--aepUserLdap-- - Demo System Datastream`.
 
 In the left menu, scroll down and click **Datastreams**. In Datastreams, search for your datastream which is named `--aepUserLdap-- - Demo System Datastream`. Click your datastream to open it.
 
@@ -57,7 +57,7 @@ Click **Connnect to destination**.
 You'll then see this. You need to create your own Adobe Target destination, follow these guidelines:
 
 - Name: use the name `--aepUserLdap-- - Adobe Target v2  (Web)`.
-- Datastream ID: you need to select the datastream that you configured in [Exercise 0.2 Create your Datastream](./../../../modules/gettingstarted/gettingstarted/ex2.md). The name of your datastream should be: `--aepUserLdap-- - Demo System Datastream`.
+- Datastream ID: you need to select the datastream that you configured in [Exercise 0.2 Create your Datastream](./../../../modules/../getting-started/gettingstarted/ex2.md). The name of your datastream should be: `--aepUserLdap-- - Demo System Datastream`.
 - Workspace: this is related to Adobe Target workspaces. If there is no specific workspace you need to use, then select **Default Workspace**.
 
 Click **Next**.
