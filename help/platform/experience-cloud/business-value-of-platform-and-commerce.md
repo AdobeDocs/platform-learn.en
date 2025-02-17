@@ -19,5 +19,5 @@ This video shows Adobe Experience Platform can be used with Adobe Commerce to cr
 >
 > Magento is now known as Adobe Commerce
 
->[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40376?learn=on&enablevpops)
 

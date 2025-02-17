@@ -12,5 +12,5 @@ exl-id: 24333697-56fe-4398-b3e0-33b68a2dc8ad
 
 Learn about the applications built natively on top of Adobe Experience Platform: Customer Journey Analytics, Real-Time Customer Data Platform, Journey Optimizer, and Mix Modeler.
 
->[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32554?learn=on&enablevpops)
 

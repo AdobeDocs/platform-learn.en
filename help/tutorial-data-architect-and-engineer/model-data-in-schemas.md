@@ -37,7 +37,7 @@ Key terms:
 **Data Architects** will need to create schemas outside of this tutorial, but **Data Engineers** will work closely with the schemas created by the Data Architect.
 
 Before you begin the exercises, watch this short video to learn more about schemas and the Experience Data Model (XDM):
->[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27105?learn=on&enablevpops)
 
 >[!TIP]
 >

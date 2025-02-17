@@ -14,5 +14,5 @@ last-substantial-update: 2024-02-29
 
 Learn about Account-Based Marketing capabilities in the [!DNL B2B] and [!DNL B2P] editions of [!DNL Real-Time Customer Data Platform], including creating and activating account audiences. For more information, please see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/account-audiences.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338252?learn=on&enablevpops)
 

@@ -19,4 +19,4 @@ Learn how to create an event-forwarding property in Data Collection. For more in
 > * Platform Launch Server Side is now **[!DNL event forwarding]** 
 > * Edge configurations are now **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331938?learn=on&enablevpops)

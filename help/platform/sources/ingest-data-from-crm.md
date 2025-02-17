@@ -17,13 +17,13 @@ Learn how to easily batch ingest data from CRM sources into Adobe Experience Pla
 
 Learn how to configure the source connector for Salesforce CRM using the standard workflow. The standard workflow requires upfront creation of schemas and identity namespaces. Other CRM source connectors may only support the standard workflow.
 
->[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29711?learn=on&enablevpops)
 
 ## Template workflow (Salesforce)
 
 Learn how to configure the source connector for Salesforce CRM using the template workflow. This workflow auto-generates assets needed for ingesting Salesforce data based on templates. It saves you upfront time, and the assets can be customized according to your needs. This workflow is not supported for all CRM source connectors.
 
->[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419422?learn=on&enablevpops)
 
 For more information, please see the following documentation:
 * [Salesforce create a connection documentation](https://experienceleague.adobe.com/docs/experience-platform/sources/ui-tutorials/create/crm/salesforce.html).

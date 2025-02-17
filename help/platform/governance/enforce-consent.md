@@ -12,7 +12,7 @@ exl-id: 08213d4a-195b-4f5f-b8f6-a516e6b52df4
 
 Learn how to create policies to enforce customer's consent preferences. For more information, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/enforcement/auto-enforcement.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345677?learn=on&enablevpops)
 
 >[!IMPORTANT]
 >

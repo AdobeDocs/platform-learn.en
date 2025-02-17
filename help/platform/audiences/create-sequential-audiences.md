@@ -16,5 +16,5 @@ In this video, learn how to add Experience Events to a timeline in your audience
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 
->[!VIDEO](https://video.tv.adobe.com/v/333305/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333305/?learn=on&enablevpops)
 

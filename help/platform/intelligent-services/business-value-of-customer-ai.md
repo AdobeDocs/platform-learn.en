@@ -13,5 +13,5 @@ exl-id: 2dc34425-62e7-4d56-ab13-6855371b1d7d
 
 This video shows how Customer AI enriches customer profiles with AI-based propensities and empowers customer segmentation and targeting efforts. For more information, please visit the [Customer AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/customer-ai/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40374?learn=on&enablevpops)
 

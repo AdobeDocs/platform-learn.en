@@ -10,6 +10,17 @@ exl-id: e578b669-42b4-46ae-b6e6-6688e5c5c772
 
 Learn the steps to migrate an Adobe Analytics implementation using the Analytics extension in Experience Platform Tags (formerly known as Launch) to Web SDK, using the Web SDK extension also in Tags. When the Adobe Analytics extension in Tags is used, behind the scenes the "AppMeasurement.js" code is being used. Therefore, you can think of this as a tutorial that is migrating AppMeasurement to Web SDK, but this tutorial is fully in Tags and does NOT cover moving to or from a JavaScript implementation (with the exception of JavaScript code that is used within the Tags UI). For migration of JavaScript implementations, please see the [documentation](https://experienceleague.adobe.com/en/docs/analytics/implementation/aep-edge/web-sdk/appmeasurement-to-web-sdk).
 
+>[!NOTE]
+>
+>Similar migration tutorials are available for:
+>
+> * [Adobe Target](../tutorial-migrate-target-websdk/introduction.md)
+> * [Adobe Audience Manager](https://experienceleague.adobe.com/en/docs/audience-manager/user-guide/migrate-to-web-sdk/appmeasurement-to-web-sdk)
+
+>[!CAUTION]
+>
+> Because Platform Web SDK supports multiple Adobe applications, all Adobe libraries on a given page should be migrated at the same time. For example, a mixed implementation of Web SDK for Target and AppMeasurement for Analytics on a single page _is not supported_. However, a mixed implementation across different pages is supported, for example Web SDK on page A, and at.js with AppMeasurement on page B.
+
 ## What you will get out of this tutorial
 
 Before we jump into the steps for migrating your Analytics implementation, it is important that you understand exactly what you will be doing, which is changing/updating the _implementation_ for Analytics. At the end of this tutorial when you go into your reports and when everything is the same, you might ask yourself, "Now, why did I do all that?" There are other documents to outline the benefits of using the Web SDK for your Analytics implementation, but a few are:

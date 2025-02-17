@@ -16,5 +16,5 @@ The audience rule builder in Experience Platform allows you to use existing audi
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 
->[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333304/?learn=on&enablevpops)
 

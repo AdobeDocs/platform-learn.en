@@ -3,6 +3,7 @@ title: AJO Translation Services
 description: AJO Translation Services
 kt: 5342
 doc-type: tutorial
+exl-id: e957856f-d6e5-4b39-ac0a-b9249f47eac4
 ---
 # 3.5.3 Add Languages to your Email
 

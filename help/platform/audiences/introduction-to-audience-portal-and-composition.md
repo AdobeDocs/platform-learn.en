@@ -13,4 +13,4 @@ exl-id: d4aad5de-1481-46b1-884a-74b6d4774160
 
 See how Adobe is reimagining audiences in Adobe Experience Platform, including how you can import, build, and manage audiences. For more information, please see the [Segment Builder documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-builder.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3421713/?learn=on&enablevpops)

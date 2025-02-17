@@ -18,7 +18,7 @@ O Customer Journey Analytics fornece uma interface em que os times de Analytics,
 
 Assista a este vídeo para compreender o valor, a jornada do cliente e o processo de configuração: 
 
->[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/327188?quality=12&learn=on&enablevpops)
 
 Mais informações sobre o Customer Journey Analytics podem ser encontradas [aqui](https://spark.adobe.com/page/t62eiRu9l6iWJ/).
 

@@ -37,7 +37,7 @@ Adobe Commerce is one of the many products in the Adobe Experience Cloud that ca
 
 This video makes you familiar with Adobe Commerce and shows the product we created to use during the bootcamp. In a real-life scenario, you would upload the previously selected brand assets to Adobe Commerce to the product configuration.
 
->[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3418945?quality=12&learn=on&enablevpops)
 
 Once this task is completed, you can mark task 3 as 100% complete in Workfront.
 
