@@ -9,5 +9,3 @@ doc-type: tutorial
 # 1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs
 
 Learn how to optimize your Firefly process using Microsoft Azure and presigned URLs.
-
-Go back to [All Modules](./../../../overview.md){target="_blank"}

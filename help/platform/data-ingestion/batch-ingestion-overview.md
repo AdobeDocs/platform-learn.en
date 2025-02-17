@@ -12,4 +12,4 @@ exl-id: 300acb73-2099-438d-97b3-48d2af5afdb0
 
 This video gives an overview of batch data ingestion in Adobe Experience Platform and shows how to ingest batch data using the API. For more information, please visit the [Data Ingestion documentation](https://experienceleague.adobe.com/docs/experience-platform/ingestion/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/330995?learn=on&enablevpops)

@@ -3,6 +3,7 @@ title: Getting started with AJO Translation Services
 description: Getting started with AJO Translation Services
 kt: 5342
 doc-type: tutorial
+exl-id: 28c925dd-8a7b-4b9a-a128-ecbfbfbeaf04
 ---
 # 3.5.1 Translations Provider
 

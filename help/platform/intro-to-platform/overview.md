@@ -12,6 +12,6 @@ exl-id: ce870a27-4ae4-4132-8e21-ef82be32c94f
 
 Get an overview of what Experience Platform is and the business challenges it solves.
 
->[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32797?learn=on&enablevpops)
 
 

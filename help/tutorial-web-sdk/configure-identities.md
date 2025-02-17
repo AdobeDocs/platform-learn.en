@@ -47,7 +47,7 @@ In this exercise, you create an identity namespace for Luma's custom identity fi
 
 Before you begin the exercises, watch this short video to learn more about identity in Adobe Experience Platform:
 
->[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27841?learn=on&enablevpops)
 
 Now, create a namespace for the Luma CRM ID:
 

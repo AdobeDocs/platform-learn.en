@@ -2,6 +2,7 @@
 title: Completion - One Adobe Tutorial
 description: How is completion measured?
 doc-type: multipage-overview
+exl-id: 24d0a6a8-effa-4335-881e-914305bcd348
 ---
 # How is Completion Measured?
 

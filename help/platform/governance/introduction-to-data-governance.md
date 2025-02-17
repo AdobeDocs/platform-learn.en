@@ -12,4 +12,4 @@ exl-id: 84ac047f-eb46-41c3-a6b0-d0a9d0ec0d79
 
 Learn how Adobe Experience Platform's Data Governance capabilities and how it helps brands deliver personalized experiences to their customers while providing complete control over customer data. For more information, please visit the [data governance documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36653?learn=on&enablevpops)

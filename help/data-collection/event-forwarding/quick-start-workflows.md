@@ -18,4 +18,4 @@ This video walks users through two advanced use cases for getting the most out o
 
 For more information on the Meta Conversions API quick start workflow, visit [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/server/meta/overview.html?lang=en#quick-start).
 
->[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3424501?learn=on&enablevpops)

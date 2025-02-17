@@ -3,6 +3,7 @@ title: Create your Campaign with AJO Translation Services
 description: Create your Campaign with AJO Translation Services
 kt: 5342
 doc-type: tutorial
+exl-id: 441b3b6a-74e5-4294-9a30-9c44ea4bbf84
 ---
 # 3.5.2 Create your Campaign
 

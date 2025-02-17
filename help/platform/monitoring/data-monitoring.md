@@ -12,4 +12,4 @@ exl-id: 8c257e96-2c89-4191-a33c-a91860bcef0b
 
 Learn how to monitor and track batch and streaming data ingested into Adobe Experience Platform using the user-interface and APIs.
 
->[!VIDEO](https://video.tv.adobe.com/v/3409475?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3409475?learn=on&enablevpops)

@@ -13,4 +13,4 @@ exl-id: f29d8a20-9af9-4f87-949e-bb9393ccf049
 
 Learn how to add users and manage permissions in Adobe Experience Platform-based applications like Real-Time Customer Data Platform and Journey Optimizer. Users are first added in Admin Console and then granted permissions  in the Platform or Journey Optimizer interface. For more information, please visit the [Access control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336081?learn=on&enablevpops)

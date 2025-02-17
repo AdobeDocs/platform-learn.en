@@ -14,4 +14,4 @@ Learn how to create a mobile tag property in Data Collection. Add the Mobile Cor
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/26264/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/26264/?learn=on&enablevpops)

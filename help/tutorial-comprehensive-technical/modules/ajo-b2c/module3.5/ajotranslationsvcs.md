@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer Translation Services
 description: Adobe Journey Optimizer Translation Services
 kt: 5342
 doc-type: tutorial
+exl-id: f518e1d9-2f5b-4ab3-b3dd-16f722f7177d
 ---
 # 3.5 Adobe Journey Optimizer: Translation Services 
 

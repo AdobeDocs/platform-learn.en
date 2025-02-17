@@ -5,10 +5,47 @@ exl-id: 927d83f9-c019-4a6b-abef-21054ce0991b
 ---
 # Send parameters to Target using the Adobe Journey Optimizer - Decisioning Mobile extension
 
-Target implementations differ across websites due to site architecture, business requirements, and features used. Most Target implementations include passing various parameters for contextual information, audiences, and content recommendations.  
+Target implementations differ across websites due to site architecture, business requirements, and features used. Most Target implementations include passing various parameters for contextual information, audiences, and content recommendations.
 
-Let's use a simple product details page and an order confirmation page to demonstrate the differences between the extensions when passing parameters to Target.
+With the Target extension, all Target paramters were passed using the `TargetParameters` function.
 
+With the Decisioning extension:
+
+* Parameters intended for multiple Adobe applications can be passed in the XDM object 
+* Parameters intended only for Target can be passed in the `data.__adobe.target` object
+
+
+>[!IMPORTANT]
+>
+> With the Decsioning extension, parameters sent in a request apply to all scopes in the request. If you need to set different parameters for different scopes you must make additional requests.
+
+## Custom parameters
+
+Custom mbox parameters are the most basic way to pass data to Target and can be be passed in the XDM or `data.__adobe.target` objects. 
+
+## Profile parameters
+
+Profile parameters store data for an extended period of time in the user's Target profile and must be passed in the `data.__adobe.target` object.
+
+## Entity parameters
+
+[Entity parameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) are used to pass behavioral data and supplemental catalog information for Target Recommendations. Similar to profile parameters, all entity parameters should be passed under the `data.__adobe.target` object.
+
+Entity parameters for a specific item must be prefixed with `entity.` for proper data capture. The reserved `cartIds` and `excludedIds` parameters for recommendations algorithms should not be prefixed and the value for each must contain a comma-separated list of entity IDs.
+
+## Purchase parameters
+
+Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Mobile SDK implementation using the Decisioning extension, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
+
+Purchase information is passed to Target when the `commerce` field group has `purchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
+
+If you are not passing `commerce` fields in the XDM object, you can pass the order details to target using the `data.__adobe.target.orderId`, `data.__adobe.target.orderTotal`, and `data.__adobe.target.productPurchasedId` fields.
+
+## Customer Id (mbox3rdPartyId)
+
+Target allows profile synching across devices and systems using a single customer id. This customer id should be passed in the `identityMap` field of the XDM object and mapped to the Target Third Party Id field in the datastream.
+
+## Table
 
 | Example at.js parameter | Platform Web SDK option | Notes |
 | --- | --- | --- |
@@ -22,41 +59,78 @@ Let's use a simple product details page and an order confirmation page to demons
 | `cartIds` | `data.__adobe.target.cartIds` | Used for Target's cart-based recommendations algorithms. | 
 | `excludedIds` | `data.__adobe.target.excludedIds` | Used to prevent specific entity IDs from returning in a recommendations design. | 
 | `mbox3rdPartyId` | Set in the `xdm.identityMap` object | Used for synching Target profiles across devices and Customer Attributes. The namespace to use for the customer ID must be specified in the [Target configuration of the datastream](https://experienceleague.adobe.com/docs/experience-platform/edge/personalization/adobe-target/using-mbox-3rdpartyid.html). | 
-| `orderId` | `xdm.commerce.order.purchaseID` | Used for identifying a unique order for Target conversion tracking. | 
-| `orderTotal` | `xdm.commerce.order.priceTotal` | Used for tracking order totals for Target conversion and optimization goals. | 
-| `productPurchasedId` | `data.__adobe.target.productPurchasedId` <br>OR<br> `xdm.productListItems[0-n].SKU` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
+| `orderId` | `xdm.commerce.order.purchaseID`<br> (when `commerce.purchases.value` is set to `1`)| Used for identifying a unique order for Target conversion tracking. | 
+| `orderTotal` | `xdm.commerce.order.priceTotal`<br> (when `commerce.purchases.value` is set to `1`) | Used for tracking order totals for Target conversion and optimization goals. | 
+| `productPurchasedId` | `xdm.productListItems[0-n].SKU`<br> (when `commerce.purchases.value` is set to `1`) <br>OR<br> `data.__adobe.target.productPurchasedId` | Used for Target conversion tracking and recommendations algorithms. Refer to the [entity parameters](#entity-parameters) section below for details. | 
 | `mboxPageValue` | `data.__adobe.target.mboxPageValue` | Used for the [custom scoring](https://experienceleague.adobe.com/docs/target/using/activities/success-metrics/capture-score.html) activity goal. | 
 
 {style="table-layout:auto"}
 
-## Custom parameters
 
-Custom mbox parameters must be passed as XDM or using the data object with the `sendEvent` command. It is important to ensure that the XDM schema includes all fields required for your Target implementation. 
+## Examples of passing parameters
+
+Let's use a simple example to demonstrate the differences between the extensions when passing parameters to Target.
+
+### Android
+
+>[!BEGINTABS]
+
+>[!TAB Target SDK] 
+
+```Java
+
+Map<String, String> mboxParameters = new HashMap<String, String>();
+mboxParameters1.put("status", "platinum");
+ 
+Map<String, String> profileParameters = new HashMap<String, String>();
+profileParameters1.put("gender", "male");
+ 
+List<String> purchasedProductIds = new ArrayList<String>();
+purchasedProductIds.add("ppId1");
+TargetOrder targetOrder = new TargetOrder("id1", 1.0, purchasedProductIds);
+ 
+TargetProduct targetProduct = new TargetProduct("pId1", "cId1");
+ 
+TargetParameters targetParameters = new TargetParameters.Builder()
+                                    .parameters(mboxParameters)
+                                    .profileParameters(profileParameters)
+                                    .product(targetProduct)
+                                    .order(targetOrder)
+                                    .build();
+```
+
+>[!ENDTABS]
+
+### iOS
+
+>[!BEGINTABS]
+
+>[!TAB Target SDK] 
+
+```Swift
+
+let mboxParameters = [
+                        "status": "platinum"
+                     ]
+ 
+let profileParameters = [
+                            "gender": "male"
+                        ]
+ 
+let order = TargetOrder(id: "id1", total: 1.0, purchasedProductIds: ["ppId1"])
+ 
+let product = TargetProduct(productId: "pId1", categoryId: "cId1")
+ 
+let targetParameters = TargetParameters(parameters: mboxParameters, profileParameters: profileParameters, order: order, product: product))
 
 
-## Profile parameters
+```
 
-Target profile parameters must be passed...
 
-## Entity parameters
-
-Entity parameters are used to pass behavioral data and supplemental catalog information for Target Recommendations. All [entity parameters](https://experienceleague.adobe.com/docs/target/using/recommendations/entities/entity-attributes.html) supported by at.js are also supported by the Platform Web SDK. Similar to profile parameters, all entity parameters should be passed under the `data.__adobe.target` object in the Platform Web SDK `sendEvent` command payload.
-
-Entity parameters for a specific item must be prefixed with `entity.` for proper data capture. The reserved `cartIds` and `excludedIds` parameters for recommendations algorithms should not be prefixed and the value for each must contain a comma-separated list of entity IDs.
+>[!ENDTABS]
 
 
 
-## Purchase parameters
-
-Purchase parameters are passed on an order confirmation page after a successful order and are used for Target conversion and optimization goals. With a Platform Mobile SDK implementation using the Decisioning extension, these parameters and are automatically mapped from XDM data passed as part of the `commerce` field group.
-
-
-Purchase information is passed to Target when the `commerce` field group has `purchases.value` set to `1`. The order ID and order total are automatically mapped from the `order` object. If the `productListItems` array is present, then the `SKU` values are use for `productPurchasedId`.
-
-
-## Customer Id (mbox3rdPartyId)
-
-Target allows profile synching across devices and systems using a single customer Id.
 
 
 

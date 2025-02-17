@@ -14,5 +14,5 @@ Learn how consent management in Adobe Experience Platform Web SDK helps you comp
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332693/?learn=on&enablevpops)
 

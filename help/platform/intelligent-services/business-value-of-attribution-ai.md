@@ -12,6 +12,6 @@ exl-id: 12aa5c9a-ac48-4506-bbe7-14106fc17675
 
 This video shows how marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers' journeys with Attribution AI. For more information, please visit the [Attribution AI documentation](https://experienceleague.adobe.com/docs/experience-platform/intelligent-services/attribution-ai/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/40375?learn=on&enablevpops)
 
 

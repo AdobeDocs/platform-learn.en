@@ -14,4 +14,4 @@ Learn how Adobe Experience Platform Mobile SDK powers end-to-end engagement in y
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28948?learn=on&enablevpops)

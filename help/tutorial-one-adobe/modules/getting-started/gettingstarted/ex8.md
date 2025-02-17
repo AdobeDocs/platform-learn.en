@@ -3,6 +3,7 @@ title: Getting Started - Postman setup
 description: Getting Started - Postman setup
 kt: 5342
 doc-type: tutorial
+exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
 ---
 # Option 2: PostBuster setup
 

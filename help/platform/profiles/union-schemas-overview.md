@@ -12,4 +12,4 @@ exl-id: 6e6512c2-2d8e-4b56-b8b8-d318b98f3627
 
 This video gives you an overview of union schemas used by Adobe Experience Platform's Real-Time Customer Profile. Union schemas enable you to see an amalgamation of all of the fields contained within schemas sharing the same class. Real-Time Customer Profile uses the union schemas to create a holistic view of each individual customer. For more information, please visit the [union schema documentation](https://experienceleague.adobe.com/docs/experience-platform/profile/union-schemas/union-schema.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/329940?learn=on&enablevpops)

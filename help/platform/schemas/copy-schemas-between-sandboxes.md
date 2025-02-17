@@ -16,4 +16,4 @@ This video shows how to copy a schema from one sandbox to another in Adobe Exper
 >
 >A much easier, interface-centric process to move schemas and other objects between sandboxes was introduced in late 2023 which we recommend using instead. Please see [Copy objects between sandboxes](https://experienceleague.adobe.com/docs/platform-learn/tutorials/admin/copy-objects-between-sandboxes.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/333592?learn=on&enablevpops)
