@@ -16,7 +16,7 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 >[!NOTE]
 >
->In case you have already created your Header and Footer fragments as part of exercise [exercise 3.1.2.1](./../module3.1/ex2.md) and [exercise 3.1.2.2](./../module3.1/ex2.md), please jump forward to exercise 3.5.2.3 Create Fiber campaign. Do not create your Header and Footer fragments again.
+>In case you have already created your Header and Footer fragments as part of exercise [exercise 3.1.2.1](./../ajob2c-1/ex2.md) and [exercise 3.1.2.2](./../ajob2c-1/ex2.md), please jump forward to exercise 3.5.2.3 Create Fiber campaign. Do not create your Header and Footer fragments again.
 
 ## 3.5.2.1 Create your Header fragment
 
@@ -261,7 +261,7 @@ Scroll up to **Audience**. Click **Select audience**.
 
 ![Journey Optimizer](./images/campaign2b.png)
 
-For the **Audience**, select the audience you created in [1.3.3 Create a federated composition](./../../datacollection/module1.3/ex3.md), which is named `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Click **Save**.
+For the **Audience**, select the audience you created in [1.3.3 Create a federated composition](./../../datacollection/dc1.3/ex3.md), which is named `--aepUserLdap-- - CitiSignal Eligible for Fiber`. Click **Save**.
 
 ![Journey Optimizer](./images/campaign2a.png)
 
@@ -363,4 +363,4 @@ Go to [3.5.3 Add Languages to your Email](./ex3.md)
 
 Go back to [Adobe Journey Optimizer: Translation Services](./ajotranslationsvcs.md){target="_blank"}
 
-Go back to [All modules](./../../../overview.md){target="_blank"}
+Go back to [All modules](./../../../../overview.md){target="_blank"}

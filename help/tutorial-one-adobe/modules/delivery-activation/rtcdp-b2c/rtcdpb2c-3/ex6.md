@@ -8,7 +8,7 @@ doc-type: tutorial
 
 ## Setup your Adobe I/O project
 
-In this exercise you'll be using Adobe I/O again to query Adobe Experience Platform's API's. If you haven't configured your Adobe I/O project yet, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there.
+In this exercise you'll be using Adobe I/O again to query Adobe Experience Platform's API's. If you haven't configured your Adobe I/O project yet, go back to [Exercise 3 in Module 2.1](../rtcdpb2c-1/ex3.md) and follow the instructions there.
 
 >[!IMPORTANT]
 >
@@ -16,7 +16,7 @@ In this exercise you'll be using Adobe I/O again to query Adobe Experience Platf
 
 ## Authentication to Adobe I/O
 
-In this exercise you'll be using Postman again to query Adobe Experience Platform's API's. If you haven't configured your Postman application yet, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there.
+In this exercise you'll be using Postman again to query Adobe Experience Platform's API's. If you haven't configured your Postman application yet, go back to [Exercise 3 in Module 2.1](../rtcdpb2c-1/ex3.md) and follow the instructions there.
 
 >[!IMPORTANT]
 >
@@ -61,7 +61,7 @@ To do that, open your Postman application and go to **Destination Authoring API*
 
 >[!NOTE]
 >
->If you don't have that Postman collection, go back to [Exercise 3 in Module 2.1](../module2.1/ex3.md) and follow the instructions there to setup Postman with the provided Postman collections.
+>If you don't have that Postman collection, go back to [Exercise 3 in Module 2.1](../rtcdpb2c-1/ex3.md) and follow the instructions there to setup Postman with the provided Postman collections.
 
 You'll then see this. Under **Headers**, you need to manually update the value for the key **x-sandbox-name** and set it to `--aepSandboxName--`. Select the value **{{SANDBOX_NAME}}**.
 

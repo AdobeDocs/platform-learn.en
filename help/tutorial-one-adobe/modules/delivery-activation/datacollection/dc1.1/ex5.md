@@ -8,7 +8,7 @@ doc-type: tutorial
 
 ## Context
 
-You now know that XDM data is flowing into platform. You'll explore more about what XDM is in [Module 1.2](./../module1.2/data-ingestion.md), as well as how to build your own schema to track custom variables. For now you're going to look at what happens when you set your Datastream to forward data to Analytics and Audience Manager.
+You now know that XDM data is flowing into platform. You'll explore more about what XDM is in [Module 1.2](./../dc1.2/data-ingestion.md), as well as how to build your own schema to track custom variables. For now you're going to look at what happens when you set your Datastream to forward data to Analytics and Audience Manager.
 
 ## Mapping variables in Analytics
 

@@ -42,7 +42,7 @@ You'll then see a popup opening, showing you your AEM Assets Media Library. Go t
 
 >[!NOTE]
 >
->If you don't see the Citi Signal images in your AEM Assets Library, you can find them [here](../../../assets/ajo/CitiSignal-images.zip). Download them to your desktop, create the folder **citi-signal-images** and upload all the images in that folder.
+>If you don't see the Citi Signal images in your AEM Assets Library, you can find them [here](./../../../../assets/ajo/CitiSignal-images.zip). Download them to your desktop, create the folder **citi-signal-images** and upload all the images in that folder.
 
 ![Journey Optimizer](./images/fragm5.png) 
 

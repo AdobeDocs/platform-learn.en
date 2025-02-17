@@ -89,7 +89,7 @@ Drag and drop 3 times a **1:1 column** on the canvas, 1 time a 1:2 column left a
 
 ![Journey Optimizer](./images/campaign8.png)
 
-In the left menu, go to **Fragments**. Drag the header you created earlier in [exercise 3.1.2.1](./../module3.1/ex2.md) onto the first component in the canvas. Drag the footer you created earlier in [exercise 3.1.2.2](./../module3.1/ex2.md) onto the last component in the canvas.
+In the left menu, go to **Fragments**. Drag the header you created earlier in [exercise 3.1.2.1](./../ajob2c-1/ex2.md) onto the first component in the canvas. Drag the footer you created earlier in [exercise 3.1.2.2](./../ajob2c-1/ex2.md) onto the last component in the canvas.
 
 ![Journey Optimizer](./images/campaign9.png)
 

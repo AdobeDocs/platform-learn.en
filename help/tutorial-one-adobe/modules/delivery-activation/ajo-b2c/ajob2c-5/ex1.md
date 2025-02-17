@@ -168,4 +168,4 @@ Go to [3.5.2 Create your Campaign](./ex2.md)
 
 Go back to [Adobe Journey Optimizer: Translation Services](./ajotranslationsvcs.md){target="_blank"}
 
-Go back to [All modules](./../../../overview.md){target="_blank"}
+Go back to [All modules](./../../../../overview.md){target="_blank"}
