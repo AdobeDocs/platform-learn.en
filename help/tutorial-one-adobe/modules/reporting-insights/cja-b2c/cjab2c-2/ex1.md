@@ -5,13 +5,13 @@ kt: 5342
 doc-type: tutorial
 exl-id: ba830c8c-e3e6-4e7e-ab53-5b7eb031ad29
 ---
-# 4.2.1 Start using Google Cloud Platform
+# 1.2.1 Start using Google Cloud Platform
 
 >[!NOTE]
 >
 >For this exercise, you need access to a Google Cloud Platform environment. If you don't have access to GCP yet, create a new account using your personal email address. 
 
-## 4.2.1.1 Why connect Google BigQuery to Adobe Experience Platform to get Google Analytics data
+## 1.2.1.1 Why connect Google BigQuery to Adobe Experience Platform to get Google Analytics data
 
 Google Cloud Platform (GCP) is a suite of public cloud computing services offered by Google. The Google Cloud Platform includes a range of hosted services for compute, storage and application development that run on Google hardware. 
 
@@ -26,13 +26,13 @@ The GCP/BigQuery Source Connector should be used to...
 - track all customer behavior on the website and load that data in Adobe Experience Platform for analysis, data science and personalization use-cases that don't require real-time activation.
 - load Google Analytics historical data into Adobe Experience Platform, again for analysis and data science use-cases
 
-## 4.2.1.2 Your Google Account
+## 1.2.1.2 Your Google Account
 
 >[!NOTE]
 >
 >For this exercise, you need access to a Google Cloud Platform environment. If you don't have access to GCP yet, create a new account using your personal email address. 
 
-## 4.2.1.3 Select or create a project
+## 1.2.1.3 Select or create a project
 
 Go to [https://console.cloud.google.com/](https://console.cloud.google.com/).
 
@@ -109,7 +109,7 @@ You can now move to the next exercise where you'll get your hands dirty by query
 
 ## Next Steps
 
-Go to [4.2.2 Create your first query in BigQuery](./ex2.md){target="_blank"}
+Go to [1.2.2 Create your first query in BigQuery](./ex2.md){target="_blank"}
 
 Go back to [Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 

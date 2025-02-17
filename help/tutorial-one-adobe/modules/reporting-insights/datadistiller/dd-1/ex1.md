@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: e9e4d478-cb8d-42a9-87a3-319e5a8b8522
 ---
-# 5.1.1 Prerequisites
+# 2.1.1 Prerequisites
 
 ## Install PSQL Command Line Utility
 
@@ -38,7 +38,7 @@ If you want to use Tableau beyond those 14 days, you'll need a license key.
 
 ## Next Steps
 
-Go to [5.1.2 Getting Started](./ex2.md){target="_blank"}
+Go to [2.1.2 Getting Started](./ex2.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

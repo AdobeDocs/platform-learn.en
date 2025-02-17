@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 00695ec0-34e0-4a20-afe3-bee4016eef58
 ---
-# 4.2.3 Connect GCP & BigQuery to Adobe Experience Platform
+# 1.2.3 Connect GCP & BigQuery to Adobe Experience Platform
 
 ## Objectives
 
@@ -46,7 +46,7 @@ In this exercise you'll learn how to get the other 3 required fields:
 - clientSecret
 - refreshToken
 
-## 4.2.3.1 Google Auth Platform
+## 1.2.3.1 Google Auth Platform
 
 To start, please go back to the Google Cloud Platform home page. To do this, simply click on the logo in the top left-corner of your screen.
 
@@ -84,7 +84,7 @@ Check the checkbox and click **CONTINUE**. Then, click **CREATE**.
 
 ![demo](./images/go4.png)
 
-## 4.2.3.2 Create OAuth Client
+## 1.2.3.2 Create OAuth Client
 
 Click **CREATE OAUTH CLIENT**.
 
@@ -149,7 +149,7 @@ Click **CONFIRM**.
 
 You're still missing the **refreshToken**. The refreshToken is a requirement because of security reasons. In the world of APIs, tokens typically expire every 24 hours. So the **refreshToken** is needed to refresh the security token every 24 hours, so that your Source Connector setup can keep connecting to Google Cloud Platform and BigQuery.
 
-## 4.2.3.3 BigQuery API and the refreshToken
+## 1.2.3.3 BigQuery API and the refreshToken
 
 There are many ways to get a refreshToken to access Google Cloud Platform APIs. One of these options is for instance using Postman.
 However, Google has built something easier to test and play with their APIs, a tool called **OAuth 2.0 Playground**.
@@ -236,7 +236,7 @@ Copy the **Refresh token** and paste it in the text file on your desktop along w
 
 Next, let's setup your Source Connector in Adobe Experience Platform.
 
-## 4.2.3.5 - Connect Platform with your own BigQuery table
+## 1.2.3.5 - Connect Platform with your own BigQuery table
 
 Log in to Adobe Experience Platform by going to this URL: [https://experience.adobe.com/platform](https://experience.adobe.com/platform).
 
@@ -296,7 +296,7 @@ Well done! In the next exercise, you'll load data from that table and map it aga
 
 ## Next Steps
 
-Go to [4.2.4 Load data from BigQuery into Adobe Experience Platform](./ex4.md){target="_blank"}
+Go to [1.2.4 Load data from BigQuery into Adobe Experience Platform](./ex4.md){target="_blank"}
 
 Go back to [Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 

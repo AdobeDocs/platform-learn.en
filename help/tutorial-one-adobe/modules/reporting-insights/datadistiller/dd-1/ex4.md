@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 98bacc45-5130-46f2-8592-4628d51fa224
 ---
-# 5.1.4 Queries, queries, queries...  and churn analysis
+# 2.1.4 Queries, queries, queries...  and churn analysis
 
 ## Objective
 
@@ -574,7 +574,7 @@ In the next you will persist your query (also known as **create table as select*
 
 ## Next Steps
 
-Go to [5.1.5 Generate a dataset from a query](./ex5.md){target="_blank"}
+Go to [2.1.5 Generate a dataset from a query](./ex5.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

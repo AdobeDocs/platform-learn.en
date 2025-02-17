@@ -5,9 +5,9 @@ kt: 5342
 doc-type: tutorial
 exl-id: 1b5ca13b-2a32-44a1-a3ae-342bccc6baeb
 ---
-# 2.2.2 Proofing with Workfront
+# 1.2.2 Proofing with Workfront
 
-## 2.2.2.1 Create a new Approval Flow
+## 1.2.2.1 Create a new Approval Flow
 
 Go to [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}.
 
@@ -33,7 +33,7 @@ Your basic approval workflow is now ready to be used.
 
 ![WF](./images/wfp5.png)
 
-## 2.2.2.2 Create a new Project
+## 1.2.2.2 Create a new Project
 
 From the Workfront home page, click **New** in the **My Projects** tab. Select **Blank Project**.
 
@@ -47,7 +47,7 @@ Your project is now created.
 
 ![WF](./images/wfp7.png)
 
-## 2.2.2.3 Create a new Task
+## 1.2.2.3 Create a new Task
 
 Enter this name for your task: **Create assets for Fiber campaign**. Click **Create Task**.
 
@@ -57,7 +57,7 @@ You should then see this.
 
 ![WF](./images/wfp9.png)
 
-## 2.2.2.4 Add a new Document to your Task go through the approval flow
+## 1.2.2.4 Add a new Document to your Task go through the approval flow
 
 Click **+ Add new** and then select **Document**.
 
@@ -195,7 +195,7 @@ Enter your description. Your proof and document settings are now done.
 
 ![WF](./images/wfp41.png)
 
-## 2.2.2.5 View your file in AEM Assets
+## 1.2.2.5 View your file in AEM Assets
 
 Go to your folder in AEM Assets, which is named `--aepUserLdap-- - Workfront Assets`.
 
@@ -209,6 +209,6 @@ You'll then see the Metadata Form your created earlier, with the values that hav
 
 ![WF](./images/wfppaem3.png)
 
-[Go Back to Module 2.2](./workfront.md){target="_blank"}
+Go Back to [Workflow Management with Adobe Workfront](./workfront.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

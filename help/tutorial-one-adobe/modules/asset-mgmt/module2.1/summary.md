@@ -15,6 +15,6 @@ Congratulations ...
 
 ## Check this out
 
-[Go Back to Module 2.1](./aemcs.md)
+Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 
 [Go Back to All Modules](../../../overview.md)

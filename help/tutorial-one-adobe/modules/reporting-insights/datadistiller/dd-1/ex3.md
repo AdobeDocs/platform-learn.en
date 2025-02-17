@@ -6,7 +6,7 @@ audience: Data Engineer, Data Architect, Data Analyst, BI Expert
 doc-type: tutorial
 exl-id: ce04fa00-0247-4693-ba60-efc1746b9fec
 ---
-# 5.1.3 Using the Query Service
+# 2.1.3 Using the Query Service
 
 ## Objective
 
@@ -166,7 +166,7 @@ limit 1;
 
 ## Next Steps
 
-Go to [5.1.4 Queries, queries, queries...  and churn analysis](./ex4.md){target="_blank"}
+Go to [2.1.4 Queries, queries, queries...  and churn analysis](./ex4.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

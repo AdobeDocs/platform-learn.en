@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
 ---
-# 4.1.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
+# 1.1.2 Connect Adobe Experience Platform Datasets in Customer Journey Analytics
 
 ## Objectives
 
@@ -14,7 +14,7 @@ exl-id: 0f8dbf05-c96f-4cb9-b038-7576a4a91bcb
 - Understand Person ID and data stitching
 - Learn the concept of data streaming in Customer Journey Analytics
 
-## 4.1.2.1 Connection
+## 1.1.2.1 Connection
 
 Go to [analytics.adobe.com](https://analytics.adobe.com) to access Customer Journey Analytics.
 
@@ -44,7 +44,7 @@ After selecting your sandbox, you can start adding datasets. Click **Add dataset
 
 ![demo](./images/cjasb1.png)
 
-## 4.1.2.2 Select Adobe Experience Platform datasets
+## 1.1.2.2 Select Adobe Experience Platform datasets
 
 Search for the dataset `Demo System - Event Dataset for Website (Global v1.1)`. Enable the box for this dataset to add it to this connection.
 
@@ -56,7 +56,7 @@ You'll then have this. Click **Next**.
 
 ![demo](./images/cja9.png)
 
-## 4.1.2.3 Person ID and Data Stitching
+## 1.1.2.3 Person ID and Data Stitching
 
 ### Person ID
 
@@ -122,7 +122,7 @@ After having created your **Connection** it may take a few hours before your dat
 
 ## Next Steps
 
-Go to [4.1.3 Create a Data View](./ex3.md)(./ex2.md){target="_blank"}
+Go to [1.1.3 Create a Data View](./ex3.md)(./ex2.md){target="_blank"}
 
 Go back to [Customer Journey Analytics](./customer-journey-analytics-build-a-dashboard.md){target="_blank"}
 

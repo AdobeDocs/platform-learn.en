@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: fda247eb-1865-4936-b46e-84128ccab357
 ---
-# 2.1.1 Create your Cloud Manager Program
+# 1.1.1 Create your Cloud Manager Program
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. The org you should select is `--aepImsOrgName--`. You'll then see something like this. Click **Add Program**.
 
@@ -29,7 +29,7 @@ Creating your environments will take some time, 10-20mins.
 
 ![AEMCS](./images/aemcs4.png){zoomable="yes"}
 
-While you wait, you can already start with exercise [2.1.2 Create your document-based website](./ex2.md){target="_blank"}.
+While you wait, you can already start with exercise [1.1.2 Create your document-based website](./ex2.md){target="_blank"}.
 
 Once the environments are created and ready to use, you'll receive an email confirmation after which you can come back here.
 
@@ -57,8 +57,8 @@ You'll then see your environment details, including the URL of your **Author** e
 
 Once your pipeline run has finished, you can continue with the next exercise.
 
-Next Step: [2.1.2 Create your document-based website](./ex2.md){target="_blank"}
+Next Step: [1.1.2 Create your document-based website](./ex2.md){target="_blank"}
 
-[Go Back to Module 2.1](./aemcs.md){target="_blank"}
+Go Back to [Adobe Experience Manager Cloud Service & Edge Delivery Services](./aemcs.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

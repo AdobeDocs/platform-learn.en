@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: f1125d91-2fe6-456c-9d4a-802e3f288fc0
 ---
-# 5.1.6 Query Service and Power BI
+# 2.1.6 Query Service and Power BI
 
 Open Microsoft Power BI Desktop.
 
@@ -67,7 +67,7 @@ You've now finished this exercise.
 
 ## Next Steps
 
-Go to [5.1.8 Query Service API](./ex8.md){target="_blank"}
+Go to [2.1.8 Query Service API](./ex8.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

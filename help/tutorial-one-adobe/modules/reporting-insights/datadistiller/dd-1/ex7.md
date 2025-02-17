@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 33ab854d-fad7-497c-affa-f58e4299c0b3
 ---
-# 5.1.7 Query Service and Tableau
+# 2.1.7 Query Service and Tableau
 
 Open Tableau.
 
@@ -75,7 +75,7 @@ You've now finished this exercise.
 
 ## Next Steps
 
-Go to [5.1.8 Query Service API](./ex8.md){target="_blank"}
+Go to [2.1.8 Query Service API](./ex8.md){target="_blank"}
 
 Go back to [Query Service](./query-service.md){target="_blank"}
 

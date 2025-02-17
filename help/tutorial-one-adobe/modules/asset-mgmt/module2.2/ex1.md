@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 7ed76d37-5d3e-49c7-b3d3-ebcfe971896d
 ---
-# 2.2.1 Getting started with Workfront
+# 1.2.1 Getting started with Workfront
 
 Log in to Adobe Workfront by going to [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}.
 
@@ -13,7 +13,7 @@ You then see this.
 
 ![WF](./images/wfb1.png)
 
-## 2.2.1.1 Configure your AEM Assets Integration
+## 1.2.1.1 Configure your AEM Assets Integration
 
 Click the 9 dots **hamburger** icon and then select **Setup**.
 
@@ -52,7 +52,7 @@ Your integration from Workfront to AEM Assets CS is now configured.
 
 ![WF](./images/wfb7.png)
 
-## 2.2.1.2 Configure Metadata integration with AEM Assets
+## 1.2.1.2 Configure Metadata integration with AEM Assets
 
 Next, you need to configure AEM Assets so that the metadata fields from the asset in Workfront will be shared with AEM.
 
@@ -136,7 +136,7 @@ The Metadata Form is now assigned to your folder successfully.
 
 ![WF](./images/wfbaem17.png)
 
-## 2.2.1.2 Configure your AEM Sites Integration
+## 1.2.1.2 Configure your AEM Sites Integration
 
 >[!NOTE]
 >
@@ -234,8 +234,8 @@ You should then have 2 custom forms available.
 
 ![WF](./images/wfb20.png)
 
-Next Step: [2.2.2 Proofing with Workfront](./ex2.md){target="_blank"}
+Next Step: [1.2.2 Proofing with Workfront](./ex2.md){target="_blank"}
 
-[Go Back to Module 2.2](./workfront.md){target="_blank"}
+Go Back to [Workflow Management with Adobe Workfront](./workfront.md){target="_blank"}
 
 [Go Back to All Modules](./../../../overview.md){target="_blank"}

@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 9380c621-34b0-4d14-baf6-9b6fedd63d5f
 ---
-# 4.2.5 Analyze Google Analytics Data using Customer Journey Analytics 
+# 1.2.5 Analyze Google Analytics Data using Customer Journey Analytics 
 
 ## Objectives
 
@@ -13,7 +13,7 @@ exl-id: 9380c621-34b0-4d14-baf6-9b6fedd63d5f
 - Connect and join Google Analytics with Loyalty Data.
 - Become familiar with CJA UI
 
-## 4.2.5.1 Create a Connection
+## 1.2.5.1 Create a Connection
 
 Go to [analytics.adobe.com](https://analytics.adobe.com) to access Customer Journey Analytics.
 
@@ -71,7 +71,7 @@ You'll then see your connection in the list of available connections.
 
 ![demo](./images/d5.png)
 
-## 4.2.5.2 Create a data view
+## 1.2.5.2 Create a data view
 
 With your connection done, you can now progress to influencing visualization. A difference between Adobe Analytics and CJA, is that CJA needs a data view in order to clean and prepare the data before visualization. 
 
@@ -177,7 +177,7 @@ On the **Settings** screen, no changes are required. Clickl **Save and finish**.
 
 You are now ready to to analyze Google Analytics data within Adobe Analytics Analysis Workspace. Let's move to the next exercise.
 
-## 4.2.5.3 Create your Project
+## 1.2.5.3 Create your Project
 
 In Customer Journey Analytics, go to **Workspace**. Click **Create Project**
 
@@ -212,7 +212,7 @@ Next, make sure to select the correct data view in the upper right corner of you
 
 ![demo](./images/prdvlist.png)
 
-### 4.2.5.3.1 Freeform Tables
+### 1.2.5.3.1 Freeform Tables
 
 Freeform tables work, more or less, as pivot tables within Excel. You pick something from the left bar and you drag and drop it into the Freeform and you'll get a table report.
 
@@ -332,7 +332,7 @@ We can keep splitting the rows with segments or specific date ranges (maybe to r
 
 Achieving the same end result with SQL and then a third-party visualization tool is quite a challenge. Especially when you're asking questions and trying to get the answers on the fly. Customer Journey Analytics doesn't have this challenge and allows Data Analysts to query the data flexibly and in real-time.
 
-## 4.2.5.3.2 Funnel or fallout analysis
+## 1.2.5.3.2 Funnel or fallout analysis
 
 Funnels are a great mechanism to understand the main steps in a customer journey. These steps can also come from offline interactions (for example, from the call center) and then you can combine them with digital touch-points in the same funnel.
 
@@ -431,7 +431,7 @@ As an example, do a right-click in any step of the fallout to see some of these 
 
 ![demo](./images/pro52.png)
 
-## 4.2.5.3.3 Flow Analysis & Visualization
+## 1.2.5.3.3 Flow Analysis & Visualization
 
 If you want to do advanced flow analysis using Google Analytics, you need to use SQL to extract the data  and then use a third-party solution for the visualization part. Customer Journey Analytics will help with that.
 
@@ -520,7 +520,7 @@ You now have a powerful kit to analyze funnels and explore paths of customer beh
 
 Don't forget to save your changes!
 
-## 4.2.5.4 Share the project
+## 1.2.5.4 Share the project
 
 >[!IMPORTANT]
 >

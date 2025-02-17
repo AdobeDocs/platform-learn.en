@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: 681f50d4-3c3f-43ae-a87e-36aff2840b88
 ---
-# 4.2.2 Create your first query in BigQuery
+# 1.2.2 Create your first query in BigQuery
 
 ## Objectives
 
@@ -19,7 +19,7 @@ When Google Analytics data is in BigQuery, dimensions, metrics and other variabl
 
 The solution to this problem is to transform Google Analytics data into a readable format to make the ingestion into Adobe Experience Platform easier.
 
-## 4.2.2.1 Create a dataset to save new BigQuery Tables
+## 1.2.2.1 Create a dataset to save new BigQuery Tables
 
 Go to the [BigQuery Console](https://console.cloud.google.com/bigquery).
 
@@ -52,7 +52,7 @@ You'll then be back in the BigQuery Console with your dataset created.
 
 ![demo](./images/ex38.png)
 
-## 4.2.2.2 Create your first SQL BigQuery
+## 1.2.2.2 Create your first SQL BigQuery
 
 Next, you'll create your first query in BigQuery. The goal of this query is to take the Google Analytics sample data and transform it so that it can be ingested in Adobe Experience Platform. Go to the **Untitled query** tab.
 
@@ -234,7 +234,7 @@ Once the query has finished running, you'll see the below output in the **Query 
 
 ![demo](./images/ex312.png)
 
-## 4.2.2.3 Save the results of your BigQuery SQL query
+## 1.2.2.3 Save the results of your BigQuery SQL query
 
 The next step is to save the output of your query by clicking the **SAVE RESULTS** button.
 
@@ -268,7 +268,7 @@ You con now continue with the next exercise, where you'll connect this table to 
 
 ## Next Steps
 
-Go to [4.2.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md){target="_blank"}
+Go to [1.2.3 Connect GCP & BigQuery to Adobe Experience Platform](./ex3.md){target="_blank"}
 
 Go back to [Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./customer-journey-analytics-bigquery-gcp.md){target="_blank"}
 

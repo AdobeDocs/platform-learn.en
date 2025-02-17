@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: c3afc4fe-df10-4d0e-8c2a-0b056ff797ea
 ---
-# 5.1.8 Query Service API
+# 2.1.8 Query Service API
 
 ## Objective
 
