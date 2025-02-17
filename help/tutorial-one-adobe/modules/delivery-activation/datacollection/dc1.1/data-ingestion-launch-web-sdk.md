@@ -3,6 +3,7 @@ title: 1.1 Setup of Adobe Experience Platform Data Collection and the Web SDK ex
 description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension
 kt: 5342
 doc-type: tutorial
+exl-id: 8c613648-9007-49fb-898f-039c366297da
 ---
 # 1.1 Setup of Adobe Experience Platform Data Collection and the Web SDK tag extension
 

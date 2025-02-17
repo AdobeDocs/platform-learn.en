@@ -3,6 +3,7 @@ title: Real-time CDP - Build an audience and take action - Summary
 description: Real-time CDP - Build an audience and take action - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: cc71f600-fe16-4254-ac64-fbdb24896f64
 ---
 # Summary & benefits
 

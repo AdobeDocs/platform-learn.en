@@ -3,6 +3,7 @@ title: Query Service - Prerequisites
 description: Query Service - Prerequisites
 kt: 5342
 doc-type: tutorial
+exl-id: e9e4d478-cb8d-42a9-87a3-319e5a8b8522
 ---
 # 5.1.1 Prerequisites
 

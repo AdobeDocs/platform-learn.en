@@ -3,6 +3,7 @@ title: Foundation - Setup of Adobe Experience Platform Data Collection and the W
 description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Implement Adobe Target
 kt: 5342
 doc-type: tutorial
+exl-id: 31cdde2f-011d-442d-8e47-15a318a6c89d
 ---
 # 1.1.6 Implement Adobe Target
 

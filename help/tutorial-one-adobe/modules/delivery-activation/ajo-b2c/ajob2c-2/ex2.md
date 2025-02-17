@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - External Weather API, SMS Action & more - Defin
 description: Adobe Journey Optimizer - External Weather API, SMS Action & more - Define an external data source
 kt: 5342
 doc-type: tutorial
+exl-id: 0ad27ffb-51fe-4bd1-b0be-feeb232039fa
 ---
 # 3.2.2 Define an external data source
 

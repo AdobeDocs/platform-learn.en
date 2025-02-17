@@ -3,6 +3,7 @@ title: Audience Activation to Microsoft Azure Event Hub - Summary & benefits
 description: Audience Activation to Microsoft Azure Event Hub - Summary & benefits
 kt: 5342
 doc-type: tutorial
+exl-id: f081af11-3ea0-47cc-ae74-24a0e0231d66
 ---
 # Summary & benefits
 

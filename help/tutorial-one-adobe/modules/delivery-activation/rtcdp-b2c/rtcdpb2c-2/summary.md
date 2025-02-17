@@ -4,6 +4,7 @@ description: Summary and benefits
 kt: 5342
 audience: Data Engineer, Data Architect
 doc-type: tutorial
+exl-id: 6248cb4e-05da-4eda-bea2-b28a9df2b96a
 ---
 # Summary and benefits
 

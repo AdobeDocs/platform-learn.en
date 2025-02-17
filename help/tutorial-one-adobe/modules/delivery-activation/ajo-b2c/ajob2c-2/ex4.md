@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - Configure your journey and message
 description: Adobe Journey Optimizer - Configure your journey and message
 kt: 5342
 doc-type: tutorial
+exl-id: 687eb818-2d50-4293-88e6-7e5945b91db6
 ---
 # 3.2.4 Create your journey and messages
 

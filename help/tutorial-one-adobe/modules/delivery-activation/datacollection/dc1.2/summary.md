@@ -3,6 +3,7 @@ title: Foundation - Data Ingestion - Summary
 description: Foundation - Data Ingestion - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: d3e6a5b7-4ad6-4f47-ad49-b77d74845346
 ---
 # Summary & benefits
 

@@ -3,6 +3,7 @@ title: Intelligent Services
 description: Intelligent Services
 kt: 5342
 doc-type: tutorial
+exl-id: 1ef4a5e6-bfe2-4213-8262-4d1c7930758c
 ---
 # 2.2 Intelligent Services
 

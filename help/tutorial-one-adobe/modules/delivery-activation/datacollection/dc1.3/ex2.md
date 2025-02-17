@@ -3,6 +3,7 @@ title: Data Collection - FAC - Create schemas, data model and links
 description: Foundation - FAC - Create schemas, data model and links
 kt: 5342
 doc-type: tutorial
+exl-id: 3b999c1a-cf9e-44a3-8fc1-6a070c3aeb24
 ---
 # 1.3.2 Create schemas, data model and links
 

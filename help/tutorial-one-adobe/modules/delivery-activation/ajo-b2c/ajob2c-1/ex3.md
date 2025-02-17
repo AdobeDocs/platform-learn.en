@@ -3,6 +3,7 @@ title: Journey Optimizer Create your journey and email message
 description: Journey Optimizer Create your email message
 kt: 5342
 doc-type: tutorial
+exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
 ---
 # 3.1.3 Create your Journey, Fragments and Message
 

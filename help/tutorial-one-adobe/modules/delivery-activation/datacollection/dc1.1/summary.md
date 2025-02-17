@@ -3,6 +3,7 @@ title: Setup of Adobe Experience Platform Data Collection and the Web SDK extens
 description: Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: bb38d851-e13c-429a-aadc-3a83efabbc8e
 ---
 # Summary & benefits
 

@@ -3,6 +3,7 @@ title: Foundation - Setup of Adobe Experience Platform Data Collection and the W
 description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - Edge Network, Datastreams and Server Side Data Collection
 kt: 5342
 doc-type: tutorial
+exl-id: f805b2a6-c813-4734-8a78-f8588ecd0683
 ---
 # 1.1.2 Edge Network, Datastreams and Server Side Data Collection
 

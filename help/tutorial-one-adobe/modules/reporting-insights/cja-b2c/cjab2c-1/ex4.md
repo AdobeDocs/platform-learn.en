@@ -3,6 +3,7 @@ title: Customer Journey Analytics - Data preparation in Analysis Workspace
 description: Customer Journey Analytics - Data preparation in Analysis Workspace
 kt: 5342
 doc-type: tutorial
+exl-id: 0bc05318-154a-425c-9e8c-3ddcfe8ad19c
 ---
 # 4.1.4 Data preparation in Analysis Workspace
 

@@ -5,6 +5,7 @@ kt: 5342
 audience: Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
 activity: develop
+exl-id: f427235f-a7ee-49fb-af46-c0e8baf47789
 ---
 # 2.3 Real-time CDP - Build an audience and take action
 

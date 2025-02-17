@@ -3,6 +3,7 @@ title: Data Collection - FAC - Create a federated composition
 description: Foundation - FAC - Create a federated composition
 kt: 5342
 doc-type: tutorial
+exl-id: 6c1773d1-ca2e-43e5-bfa7-6e5e0fbcf859
 ---
 # 1.3.3 Create a federated composition
 

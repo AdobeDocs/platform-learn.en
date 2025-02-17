@@ -3,6 +3,7 @@ title: Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
 description: Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
 kt: 5342
 doc-type: tutorial
+exl-id: a6df3ff1-f907-4185-8189-f0b39c67c943
 ---
 # 2.2.3 Customer AI - Scoring Dashboard and Segmentation (Predict & Take Action)
 

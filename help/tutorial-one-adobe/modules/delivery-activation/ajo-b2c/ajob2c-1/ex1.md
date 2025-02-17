@@ -3,6 +3,7 @@ title: Journey Optimizer Create your event
 description: Journey Optimizer Create your event
 kt: 5342
 doc-type: tutorial
+exl-id: 2c03cc8d-0106-4fa5-80c6-e25712ca2eab
 ---
 # 3.1.1 Create your event
 

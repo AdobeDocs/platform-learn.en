@@ -3,6 +3,7 @@ title: Audience Activation to Microsoft Azure Event Hub - Activate Audience
 description: Audience Activation to Microsoft Azure Event Hub - Activate Audience
 kt: 5342
 doc-type: tutorial
+exl-id: e6bac0ce-4a1e-4458-af3e-3d6ac40b9cb5
 ---
 # 2.4.5 Activate your audience
 

@@ -3,6 +3,7 @@ title: Query Service - Queries, queries, queries...  and churn analysis
 description: Query Service - Queries, queries, queries...  and churn analysis
 kt: 5342
 doc-type: tutorial
+exl-id: 98bacc45-5130-46f2-8592-4628d51fa224
 ---
 # 5.1.4 Queries, queries, queries...  and churn analysis
 

@@ -3,6 +3,7 @@ title: Foundation - FAC - Summary
 description: Foundation - FAC - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: 396057d5-472c-45d9-bd7b-7f36f7707557
 ---
 # Summary & benefits
 

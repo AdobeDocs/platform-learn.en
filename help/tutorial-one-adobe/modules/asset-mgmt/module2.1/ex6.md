@@ -3,6 +3,7 @@ title: AEM CS - MarTech plugin
 description: AEM CS - MarTech plugin
 kt: 5342
 doc-type: tutorial
+exl-id: 77dc780b-ce6c-403f-847d-8eb64cbe2a97
 ---
 # 2.1.6 AEM Edge Delivery Services MarTech plugin
 

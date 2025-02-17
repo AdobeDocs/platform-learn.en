@@ -3,6 +3,7 @@ title: Real-time CDP - Build an audience and take action - Send your audience to
 description: Real-time CDP - Build an audience and take action - Send your audience to Adobe Target
 kt: 5342
 doc-type: tutorial
+exl-id: 2a9a982b-0ffd-468d-9b71-77224e2c7e1d
 ---
 # 2.3.5 Take Action: send your audience to Adobe Target
 

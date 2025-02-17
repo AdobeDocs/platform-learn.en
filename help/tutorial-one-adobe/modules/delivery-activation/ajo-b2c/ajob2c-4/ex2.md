@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - Configure a batch-based journey
 description: In this section you will configure a batch email journey to send a newsletter
 kt: 5342
 doc-type: tutorial
+exl-id: 40ca710d-63c8-41bd-bd4e-f02186509345
 ---
 # 3.4.2 Configure a Campaign 
 

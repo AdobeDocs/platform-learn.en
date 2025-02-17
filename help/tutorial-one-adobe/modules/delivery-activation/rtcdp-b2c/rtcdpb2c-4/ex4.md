@@ -3,6 +3,7 @@ title: Audience Activation to Microsoft Azure Event Hub - Create an audience
 description: Audience Activation to Microsoft Azure Event Hub - Create an audience
 kt: 5342
 doc-type: tutorial
+exl-id: d9450e18-7c9b-4a6c-8317-19baf99d43a3
 ---
 # 2.4.4 Create an audience
 

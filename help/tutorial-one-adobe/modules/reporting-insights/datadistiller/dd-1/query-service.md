@@ -3,6 +3,7 @@ title: Query Service
 description: Query Service
 kt: 5342
 doc-type: tutorial
+exl-id: 881dcff5-3637-4b67-9e61-88690babe83b
 ---
 # 5.1 Query Service
 

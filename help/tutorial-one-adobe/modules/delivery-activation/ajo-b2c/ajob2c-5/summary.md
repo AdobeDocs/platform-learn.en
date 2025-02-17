@@ -3,6 +3,7 @@ title: AJO Translation Services Summary
 description: AJO Translation Services Summary
 kt: 5342
 doc-type: tutorial
+exl-id: 60885bf4-2911-48f9-a15d-c82411a4dd12
 ---
 # Summary & benefits
 

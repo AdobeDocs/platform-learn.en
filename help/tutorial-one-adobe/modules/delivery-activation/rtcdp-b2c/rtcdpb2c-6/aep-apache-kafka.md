@@ -3,6 +3,7 @@ title: Stream data from Apache Kafka into Adobe Experience Platform
 description: In this module, you'll learn how to setup your own Apache Kafka cluster, define topics, producers and consumers and stream data into Adobe Experience Platform using the Adobe Experience Platform Sink Connector for Kafka Connect.
 kt: 5342
 doc-type: tutorial
+exl-id: 28c63675-272e-46ff-88fc-6cd4096d66ca
 ---
 # 2.6 Stream data from Apache Kafka into Adobe Experience Platform
 

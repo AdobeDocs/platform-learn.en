@@ -4,6 +4,7 @@ description: Offer Decisioning - Summary
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
+exl-id: 7ae5afb2-689e-428a-9382-b72ac0cb5826
 ---
 # Summary & benefits
 

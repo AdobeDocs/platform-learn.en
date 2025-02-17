@@ -3,6 +3,7 @@ title: Adobe Experience Platform Data Collection & Real-time Server Side Forward
 description: Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property
 kt: 5342
 doc-type: tutorial
+exl-id: f4bb0673-d553-4027-8bfd-53d2608efaf5
 ---
 # 2.5.2 Update your Datastream to make data available to your Adobe Experience Platform Data Collection Server property
 
