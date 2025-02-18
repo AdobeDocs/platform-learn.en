@@ -17,8 +17,8 @@ In this module you will setup everything so that you can collect data, access th
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Tags: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to Demo System Next: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Access to Demo System Next: [https://dsn.adobe.com](https://dsn.adobe.com)
 
 ## Exercises
 
