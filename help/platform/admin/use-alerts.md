@@ -4,6 +4,7 @@ description: Learn how to subscribe to and administer alerts in Adobe Experience
 feature: Alerts
 role: Data Engineer, User, Admin
 level: Beginner
+doc-type: Feature Video
 jira: KT-8324
 thumbnail: 336218.jpg
 exl-id: 56f927db-1f16-4c0b-a0e0-a25e43f1a535

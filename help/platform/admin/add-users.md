@@ -4,6 +4,7 @@ description: Learn how to add users and manage permissions in Adobe Experience P
 feature: Access Control
 role: Admin, User
 level: Beginner
+doc-type: Feature Video
 jira: KT-7924
 thumbnail: 336081.jpg
 last-substantial-update: 2023-12-08

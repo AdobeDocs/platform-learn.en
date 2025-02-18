@@ -4,6 +4,7 @@ description: Learn how to add product administrators for Adobe Experience Platfo
 feature: Access Control
 role: Admin
 level: Beginner
+doc-type: Feature Video
 jira: KT-7923
 thumbnail: 333860.jpg
 last-substantial-update: 2023-12-08

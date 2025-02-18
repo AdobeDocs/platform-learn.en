@@ -4,6 +4,7 @@ description: Learn how to configure attribute-based access control to control ac
 feature: Access Control
 role: Admin, User
 level: Beginner
+doc-type: Feature Video
 jira: KT-10363
 thumbnail: 345641.jpeg
 last-substantial-update: 2023-09-06

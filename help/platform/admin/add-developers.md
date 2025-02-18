@@ -4,6 +4,7 @@ description: Learn how to add developers to Adobe Experience Platform-based appl
 feature: Access Control
 role: Admin, Developer
 level: Beginner
+doc-type: Feature Video
 jira: KT-14689
 last-substantial-update: 2023-12-15
 exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc

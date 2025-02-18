@@ -9,6 +9,48 @@ auto-video-transcripts: true
 
 # Adobe Experience Platform Tutorials {#tutorials}
 
+<!--
+
+Data Modeling
+
+Profile vs Data Lake vs Identity
+how a record becomes an audience member
+
+Profiles
+Identities
+Audience
+
+Data Lake
+
+Data Ingestion
+-Batch
+-Streaming
+-Edge (Data Collection)
+-Monitoring
+
+Data Governance
+Privacy
+Consent
+Audit logs
+
+Administration
+-Sandboxes
+-Permissions
+-License usage
+
+
+---
+App specific
+
+Destinations
+
+Journeys
+
+Campaigns
+
+-->
+
+
 + [Platform Tutorials](/help/platform/overview.md)
 + Introduction to Platform {#intro-to-platform}
   + [A customer experience powered by Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
@@ -31,15 +73,16 @@ auto-video-transcripts: true
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-  + [Use alerts](/help/platform/admin/use-alerts.md)
-  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
-  + [Copy packages between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
-  + [Share packages across IMS Orgs](/help/platform/admin/share-packages-across-orgs.md)
+  + [Overview](/help/platform/admin/overview.md)
   + [Add users](/help/platform/admin/add-users.md)
-  + [Add users to Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+  + [Add users to Data Collection](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
   + [Add developers](/help/platform/admin/add-developers.md)
   + [Add product administrators](/help/platform/admin/add-product-administrators.md)
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
+  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Copy packages between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+  + [Share packages across IMS Orgs](/help/platform/admin/share-packages-across-orgs.md)
+  + [Use alerts](/help/platform/admin/use-alerts.md)
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
   + [Get access](/help/platform/ai-assistant/access.md)
