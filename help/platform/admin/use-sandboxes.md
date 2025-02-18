@@ -4,6 +4,7 @@ description: Learn how Experience Platform sandboxes provide isolated environmen
 feature: Sandboxes
 role: Data Architect, Data Engineer, Admin
 level: Beginner
+doc-type: Feature Video
 last-substantial-update: 2024-05-28
 jira: KT-4018
 thumbnail: 29838.jpg
