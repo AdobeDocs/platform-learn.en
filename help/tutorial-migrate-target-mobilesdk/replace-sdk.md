@@ -30,15 +30,10 @@ Learn how to replace the Adobe Target SDKs with the Optimize SDKs in your mobile
 
 ```Java
 implementation platform('com.adobe.marketing.mobile:sdk-bom:3.+')
-implementation 'com.adobe.marketing.mobile:edgeconsent'
+implementation 'com.adobe.marketing.mobile:core'
 implementation 'com.adobe.marketing.mobile:edgeidentity'
 implementation 'com.adobe.marketing.mobile:edge'
-implementation 'com.adobe.marketing.mobile:assurance'
-implementation 'com.adobe.marketing.mobile:core'
-implementation 'com.adobe.marketing.mobile:identity'
-implementation 'com.adobe.marketing.mobile:lifecycle'
-implementation 'com.adobe.marketing.mobile:signal'
-implementation 'com.adobe.marketing.mobile:userprofile'
+implementation 'com.adobe.marketing.mobile:optimize'
 ```
 
 
@@ -112,49 +107,27 @@ pod 'AEPUserProfile', '~> 5.0'
 Java initialization code after migrating
 
 ```Java
-import com.adobe.marketing.mobile.AdobeCallback;
-import com.adobe.marketing.mobile.Assurance;
-import com.adobe.marketing.mobile.Edge;
-import com.adobe.marketing.mobile.Extension;
-import com.adobe.marketing.mobile.Identity;
-import com.adobe.marketing.mobile.Lifecycle;
-import com.adobe.marketing.mobile.LoggingMode;
 import com.adobe.marketing.mobile.MobileCore;
-import com.adobe.marketing.mobile.Signal;
-import com.adobe.marketing.mobile.UserProfile;
-import com.adobe.marketing.mobile.edge.consent.Consent;
+import com.adobe.marketing.mobile.Edge;
 import com.adobe.marketing.mobile.edge.identity.Identity;
-import java.util.Arrays;
-import java.util.List;
-...
-import android.app.Application;
-...
+import com.adobe.marketing.mobile.optimize.Optimize;
+import com.adobe.marketing.mobile.AdobeCallback;
+ 
 public class MainApp extends Application {
-...
+ 
+  private final String ENVIRONMENT_FILE_ID = "YOUR_APP_ENVIRONMENT_ID";
+ 
     @Override
     public void onCreate() {
         super.onCreate();
+ 
         MobileCore.setApplication(this);
-        MobileCore.setLogLevel(LoggingMode.DEBUG);
-        ...
-        List<Class<? extends Extension>> extensions = Arrays.asList(
-            Consent.EXTENSION,
-            com.adobe.marketing.mobile.edge.identity.Identity.EXTENSION,
-            com.adobe.marketing.mobile.Identity.EXTENSION,
-            Edge.EXTENSION,
-            Assurance.EXTENSION,
-            Lifecycle.EXTENSION,
-            Signal.EXTENSION,
-            UserProfile.EXTENSION
+        MobileCore.configureWithAppID(ENVIRONMENT_FILE_ID);
+ 
+        MobileCore.registerExtensions(
+            Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
+            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
         );
- 
- 
-        MobileCore.registerExtensions(extensions, new AdobeCallback () {
-            @Override
-            public void call(Object o) {
-                MobileCore.configureWithAppID(<Environment File ID>);
-            }
-        });
     }
 }
 ```
@@ -222,39 +195,23 @@ Swift initialization code after migrating
 
 ```Swift
 import AEPCore
-import AEPAnalytics
-import AEPTarget
-import AEPIdentity
-import AEPLifecycle
-import AEPSignal
-import AEPServices
-import AEPUserProfile
-...
+import AEPEdge
+import AEPEdgeIdentity
+import AEPOptimize
+ 
 @UIApplicationMain
-class AppDelegate: UIResponder, UIApplicationDelegate {
-    func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]?) -> Bool {
-        MobileCore.setLogLevel(.debug)
-        let appState = application.applicationState
-        ...
-        let extensions = [
-            Consent.self,
-            AEPEdgeIdentity.Identity.self,
-            AEPIdentity.Identity.self,
-            Edge.self,
-            Assurance.self,
-            Lifecycle.self,
-            Signal.self,
-            UserProfile.self
-        ]
-        MobileCore.registerExtensions(extensions, {
-        MobileCore.configureWith(<Environment File ID>)
-        if appState != .background {
-            MobileCore.lifecycleStart(additionalContextData: ["contextDataKey": "contextDataVal"])
-            }
-        })
-        ...
-        return true
-    }
+final class AppDelegate: UIResponder, UIApplicationDelegate {
+  var window: UIWindow?
+ 
+  func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplication.LaunchOptionsKey: Any]? = nil) -> Bool {
+ 
+      // register the extensions
+      MobileCore.registerExtensions([Edge.self, AEPEdgeIdentity.Identity.self, Optimize.self]) {
+        MobileCore.configureWith(appId: <YOUR_ENVIRONMENT_FILE_ID>) // Replace <YOUR_ENVIRONMENT_FILE_ID> with a String containing your own ID.
+      }
+ 
+      return true
+  }
 }
 ```
 
