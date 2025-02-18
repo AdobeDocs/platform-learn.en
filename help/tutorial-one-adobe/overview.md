@@ -10,8 +10,6 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 
 ## Overview
 
-This tutorial is the perfect starting point for 
-
 This tutorial is very diverse and offers clear insights in the following applications:
 
 - Adobe Firefly Services
@@ -44,25 +42,21 @@ If you want to take this tutorial using your own Adobe Experience Cloud instance
 - Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
 - Access to Demo System: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
-## Prework
-
-Verify the required applications that need to be installed on your computer [here](./prework.md){target="_blank"}.
-
 ## Completion & Certification
 
 This tutorial is part of an Adobe Certification course. You can sign up for the course alongside this tutorial by going to [https://certification.adobe.com](https://certification.adobe.com).
 
 For every module that you complete using the below tutorial, you need to submit a proof of completion as indicated [here](./completion.md).
 
-## Content
+## Content Status
 
 To check the status of the below content, please go to the [status page](./status.md){target="_blank"}.
 
-### Getting started
+### Getting Started
 
 [Getting started](./modules/getting-started/gettingstarted/getting-started.md){target="_blank"}
 
-In this foundational module, you will setup everything so that you can access and use the demo environment.
+In this foundational module, you will prepare everything so that you can access and use the demo environment.
 
 ### 1. Workflow & Planning
 
