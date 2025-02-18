@@ -322,7 +322,7 @@ Many Target extension functions have an equivalent approach using the Decisionin
 | `setTntId` | n/a | `locationHint:result` response handle carries the Target location hint information. It is assumed Target edge will be co-located with Experience Edge. <br> <br>Edge network extension uses the EdgeNetwork location hint to determine the Edge network cluster to send requests to. To share Edge network location hint across SDKs (hybrid apps), use `getLocationHint` and `setLocationHint` APIs from Edge Network extension. For more details, see [the `getLocationHint` API documentation](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#getlocationhint).  | 
 
 
-Next, learn how to [request and render activities](render-activities.md) to the page.
+Next, learn how to [request and render activities](retrieve-activities.md) to the page.
 
 >[!NOTE]
 >

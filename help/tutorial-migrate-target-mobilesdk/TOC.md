@@ -22,7 +22,7 @@ hide: yes
 
 + [Replace SDKs](replace-sdk.md)
 
-+ [Render activities](render-activities.md)
++ [Render activities](retrieve-activities.md)
 
 + [Send parameters](send-parameters.md)
 

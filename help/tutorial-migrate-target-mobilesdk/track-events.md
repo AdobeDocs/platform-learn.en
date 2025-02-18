@@ -9,9 +9,9 @@ Refer to this page for content: https://developer.adobe.com/client-sdks/edge/ado
 
 Conversion events for Target can be tracked with... Conversion events typically fall into the following categories:
 
-* Automatically tracked events that do not require any configuration
-* Purchase conversion events that should be adjusted for a best practice Decsioning extension implementation
-* Non-purchase conversion events that require code updates
+* Recording entry into a Target activity
+* Purchase events
+* Non-purchase conversion events 
 
 ## Goal tracking comparison
 
@@ -20,12 +20,6 @@ The following table compares how at.js and Platform Web SDK track conversion eve
 | Activity Goal | Target at.js 2.x | Platform Web SDK |
 |---|---|---|
 | | | |
-
-
-## Automatically tracked events
-
-The following conversion goals do not require any specific adjustments to your implementation:
-
 
 
 Next, learn how to [enable cross-domain ID sharing](webview.md) for consistent visitor profiles.
