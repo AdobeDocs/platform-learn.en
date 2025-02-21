@@ -13,3 +13,30 @@ exl-id: 3a02aee4-a23c-4757-b910-d61a9e871774
 Learn how to take complete control over your data from the point it's collected at data sources to when it's syndicated to destinations outside Adobe Experience Platform. Data governance is an easily extensible framework that is deeply embedded in data usage workflows. The framework is built on three key aspects&mdash;labels, policies, and enforcement. For more information, please visit the [data governance documentation](https://experienceleague.adobe.com/docs/experience-platform/data-governance/home.html).
 
 >[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+
+## Demo
+
+See and end-to-end demo of data governance capability in Adobe Experience Platform.
+
+<!--CARDS
+* introduction-to-data-governance.md
+-->
+
+## Components of data governance
+
+Learn about how labels, policies, and marketing actions come together to automate data governenace in Experience Platform.
+
+<!--CARDS
+* classify-data-using-labels.md
+* create-data-usage-policies.md
+* enforce-data-usage-policies.md
+-->
+
+## Consent 
+
+Learn about how Experience Platform honors customer consent.
+
+<!--CARDS
+* enforce-consent.md
+* integrate-with-iab-transparency-and-consent-framework-2.md
+-->
