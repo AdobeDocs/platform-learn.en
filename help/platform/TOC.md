@@ -73,17 +73,15 @@ Campaigns
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-  + [Overview](/help/platform/admin/overview.md)
-  + [User Permissions]
-    + [Add users](/help/platform/admin/add-users.md)
-    + [Add users to Data Collection](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
-    + [Add developers](/help/platform/admin/add-developers.md)
-    + [Add product administrators](/help/platform/admin/add-product-administrators.md)
-    + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
-  + [Sandboxes]
-    + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
-    + [Copy packages between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
-    + [Share packages across IMS Orgs](/help/platform/admin/share-packages-across-orgs.md)
++ [Overview](/help/platform/admin/overview.md)
+  + [Add users](/help/platform/admin/add-users.md)
+  + [Add users to Data Collection](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
+  + [Add developers](/help/platform/admin/add-developers.md)
+  + [Add product administrators](/help/platform/admin/add-product-administrators.md)
+  + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
+  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Copy packages between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+  + [Share packages across IMS Orgs](/help/platform/admin/share-packages-across-orgs.md)
   + [Use alerts](/help/platform/admin/use-alerts.md)
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
