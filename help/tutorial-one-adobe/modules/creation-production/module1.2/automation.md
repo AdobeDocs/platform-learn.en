@@ -29,6 +29,10 @@ In this exercise, learn how to configure and use Firefly Services APIs and Photo
 
 In this exercise, continue refining your journey to automate image creation process.
 
+[1.2.4 Automation using Connectors](./ex4.md){target="_blank"}
+
+In this exercise, continue refining your journey to automate image creation process.
+
 [Summary and benefits](./summary.md){target="_blank"}
 
 Summary of this module and overview of the benefits.
