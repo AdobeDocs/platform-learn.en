@@ -17,8 +17,8 @@ In this module you will setup everything so that you can collect data, access th
 ## Prerequisites
 
 - Access to Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform)
-- Access to Adobe Experience Platform Tags: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
-- Access to Demo System Next: [https://dashboard.adobedemo.com/](https://dashboard.adobedemo.com/)
+- Access to Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/)
+- Access to Demo System Next: [https://dsn.adobe.com](https://dsn.adobe.com)
 
 ## Exercises
 
@@ -41,6 +41,26 @@ In this exercise you'll setup the website so you can use it for demonstrations a
 [Use the mobile app](./ex5.md)
 
 In this exercise you'll setup the mobile application so you can use it for demonstrations and enablement.
+
+[Configure your Adobe I/O project](./ex6.md)
+
+In this exercise you'll configure your Adobe I/O project that will be used to interact with various Adobe API endpoints.
+
+[Option 1: Postman setup](./ex7.md)
+
+>[!NOTE]
+>
+>If you're not an Adobe employee, follow the instructions to install Postman!
+
+In this exercise you'll prepare your Postman environment to interact with various Adobe API endpoints
+
+[Option 2: PostBuster setup](./ex8.md)
+
+>[!NOTE]
+>
+>If you're an Adobe employee, follow the instructions to install PostBuster!
+
+In this exercise you'll prepare your PostBuster environment to interact with various Adobe API endpoints
 
 ![Tech Insiders](./../../../assets/images/techinsiders.png){width="50px" align="left"}
 

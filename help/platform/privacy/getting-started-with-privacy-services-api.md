@@ -12,4 +12,4 @@ exl-id: fdf80326-0406-4bb5-b863-deed9029144a
 
 Learn how to set up and authenticate to the Privacy Service API. For more information, please visit the [Privacy Services documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/336075?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336075?learn=on&enablevpops)

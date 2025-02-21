@@ -11,4 +11,4 @@ exl-id: 2aad8921-6330-4e81-ad3a-044423889abd
 
 Overview video of the Adobe event forwarding extension for Mailchimp. For more information, please visit the [Mailchimp event forwarding extension documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/mailchimp-edge/overview.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/345140/?learn=on&enablevpops)

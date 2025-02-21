@@ -14,4 +14,4 @@ exl-id: d849152d-d86c-4b8e-a39e-5965a19914c9
 
 Learn how to use the various date and time options in the Adobe Experience Platform audience builder interface. Use dates in profile attributes to build audiences for people having a birthday. Use dates in events to build audiences for people who made multiple purchases in a certain time frame or didn't take an action in a certain time frame. For more information, see the [Segment Builder UI guide](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/ui/segment-builder).
 
->[!VIDEO](https://video.tv.adobe.com/v/3432259/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3432259/?learn=on&enablevpops)

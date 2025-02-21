@@ -15,5 +15,5 @@ exl-id: 7e7e2647-0eb8-4f37-8a91-a506c9c2abb9
 
 Learn how to configure the Marketo destination in Adobe Experience Platform so you can activate your Platform segments to your Marketo Engage instance. For more information, please see the [Profiles documentation](https://experienceleague.adobe.com/docs/experience-platform/rtcdp/profile/profile-browse.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/338248?learn=on&enablevpops)
 

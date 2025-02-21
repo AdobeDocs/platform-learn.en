@@ -19,4 +19,4 @@ Learn how event forwarding centralizes data collection, reduces the amount of co
 > * Platform Launch Server Side is now **[!DNL event forwarding]** 
 > * Edge configurations are now **[!DNL datastreams]**
 
->[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331937?learn=on&enablevpops)

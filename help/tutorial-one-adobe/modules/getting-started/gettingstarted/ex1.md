@@ -137,8 +137,10 @@ You should now have a similar view to the below, where the environment variable 
 
 ![DSN](./images/mod7.png)
 
-Next Step: [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
+## Next Steps
 
-[Go Back to Getting Started](./getting-started.md)
+Go to [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
 
-[Go Back to All Modules](./../../../overview.md)
+Go back to [Getting Started](./getting-started.md){target="_blank"}
+
+Go back to [All modules](./../../../overview.md){target="_blank"}

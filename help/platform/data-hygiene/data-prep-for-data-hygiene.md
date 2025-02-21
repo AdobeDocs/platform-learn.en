@@ -14,4 +14,4 @@ exl-id: 7c791f8c-469d-4d90-a47e-acd2eb3a9bb3
 
 Learn how to support data minimization principles with the data prep feature of Experience Platform. Learn how to ingest only the fields you need and hash data during ingestion.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3429485/?learn=on&enablevpops)

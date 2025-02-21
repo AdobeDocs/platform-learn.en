@@ -13,7 +13,7 @@ exl-id: 4bd28867-b664-4a45-8892-91af821cbbcc
 
 Learn how to add developers to Adobe Experience Platform-based applications like Real-Time Customer Data Platform and Journey Optimizer. Developers are first added in Admin Console. After they have created their Platform project in the Developer Console, their API credential is assigned permissions in the Platform or Journey Optimizer interface. For more information, please visit the [Access control documentation](https://experienceleague.adobe.com/docs/experience-platform/access-control/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3426407?learn=on&enablevpops)
 
 >[!ADMIN]
 >

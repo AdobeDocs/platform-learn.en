@@ -18,4 +18,4 @@ This video shows you how to build multi-entity audiences in Adobe Experience Pla
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 
->[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32179?learn=on&enablevpops)

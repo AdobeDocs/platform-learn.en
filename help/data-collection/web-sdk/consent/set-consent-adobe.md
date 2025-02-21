@@ -14,4 +14,4 @@ Learn how to use the Adobe Experience Platform Web SDK to set consent values acc
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332694/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332694/?learn=on&enablevpops)

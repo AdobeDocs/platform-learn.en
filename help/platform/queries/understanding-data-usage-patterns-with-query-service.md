@@ -12,4 +12,4 @@ exl-id: 8d99063a-5107-4bee-a0a4-6778b56aeac0
 
 This video shares tips and best practices for running queries in the query editor interface, PSQL clients, business intelligence (BI) solutions and the HTTP API. For more information, please visit the [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29811?learn=on&enablevpops)

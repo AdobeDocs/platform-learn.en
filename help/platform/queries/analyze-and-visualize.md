@@ -12,4 +12,4 @@ exl-id: d39d4bc5-550f-4cb2-875d-2e81a6f4c2b8
 
 Learn how you can use Adobe Experience Platform's Query Service with external data visualization tools using a churn analysis example. For more information, please visit the [Query Service documentation](https://experienceleague.adobe.com/docs/experience-platform/query/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342115?learn=on&enablevpops)

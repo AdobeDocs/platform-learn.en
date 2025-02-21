@@ -12,4 +12,4 @@ exl-id: 7bcab1e1-6344-48bd-8622-309c9dc17df9
 
 Learn how to create and manage data usage policies in the Adobe Experience Platform user interface. Data usage policies allow you to restrict data usage for specific purposes based on the labeling of data. To learn the API-based approach, see [create data usage policies with the API](https://experienceleague.adobe.com/docs/experience-platform/data-governance/policies/create.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/32977?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/32977?learn=on&enablevpops)

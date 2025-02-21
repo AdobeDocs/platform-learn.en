@@ -12,4 +12,4 @@ exl-id: 8db9d937-289f-4570-b602-5656abc75295
 
 Learn how to add users and manage permissions for Adobe Experience Platform Data Collection features so employees at your company have the access they need to do their jobs.
 
->[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28734/?learn=on&enablevpops)

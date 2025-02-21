@@ -20,7 +20,7 @@ Batch data ingestion allows you to ingest a large amount of data into Adobe Expe
 
 Before you begin the exercises, watch this short video to learn more about data ingestion:
 
->[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27106?learn=on&enablevpops)
 
 
 ## Permissions required
