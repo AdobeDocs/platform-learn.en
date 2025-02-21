@@ -73,7 +73,7 @@ Campaigns
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-+ [Overview](/help/platform/admin/overview.md)
+  + [Overview](/help/platform/admin/overview.md)
   + [Add users](/help/platform/admin/add-users.md)
   + [Add users to Data Collection](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
   + [Add developers](/help/platform/admin/add-developers.md)
