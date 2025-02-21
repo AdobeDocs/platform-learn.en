@@ -9,7 +9,7 @@ exl-id: 1b7b2630-864f-4982-be5d-c46b760739c3
 ---
 # 1.2.3 Process automation with Workfront Fusion
 
-Learn how to process automation with Workfront Fusion.
+Learn how to do process automation with Workfront Fusion.
 
 ## 1.2.3.1 Iterating over multiple values
 
@@ -194,7 +194,7 @@ So far, you've run your scenario manually to test. Let's now update your scenari
 
 ## Next steps
 
-Go to [Summary and Benefits of Firefly Services Automation](./summary.md){target="_blank"}
+Go to [1.2.4 Automation using Connectors](./ex4.md){target="_blank"}
 
 Go back to [Automating Adobe Firefly Services](./automation.md){target="_blank"}
 
