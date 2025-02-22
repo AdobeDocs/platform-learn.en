@@ -41,7 +41,7 @@ The data prep feature helps you ingest only the fields you need from a data sour
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="data-prep-for-data-hygiene.md" title="Data prep for data hygiene" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740250125575" alt="Data prep for data hygiene"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429485/?format=jpeg&nocache=1740251397387" alt="Data prep for data hygiene"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -80,7 +80,7 @@ Many capabilties exist to help you remove the data from the system. You can dele
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="delete-datasets-and-batches.md" title="Delete datasets and batches" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429790/?format=jpeg&nocache=1740250125795" alt="Delete datasets and batches"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429790/?format=jpeg&nocache=1740251397681" alt="Delete datasets and batches"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -103,7 +103,7 @@ Many capabilties exist to help you remove the data from the system. You can dele
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../data-lifecycle/expire-datasets.md" title="Schedule dataset deletes" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740250125822" alt="Schedule dataset deletes"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/345065?format=jpeg&nocache=1740251397716" alt="Schedule dataset deletes"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -126,7 +126,7 @@ Many capabilties exist to help you remove the data from the system. You can dele
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="pseudonymous-profile-and-event-expiration.md" title="Pseudonymous profile and Experience Event expirations" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740250125833" alt="Pseudonymous profile and Experience Event expirations"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3428361?format=jpeg&nocache=1740251397705" alt="Pseudonymous profile and Experience Event expirations"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -149,7 +149,7 @@ Many capabilties exist to help you remove the data from the system. You can dele
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../profiles/delete-profiles.md" title="Delete profiles" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429807/?format=jpeg&nocache=1740250125843" alt="Delete profiles"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3429807/?format=jpeg&nocache=1740251397692" alt="Delete profiles"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -172,7 +172,7 @@ Many capabilties exist to help you remove the data from the system. You can dele
             <div class="card-image">
                 <figure class="image x-is-16by9">
                     <a href="../privacy/introduction-to-privacy-services.md" title="Introduction to Privacy Service" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740250125809" alt="Introduction to Privacy Service"
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/336074?format=jpeg&nocache=1740251397727" alt="Introduction to Privacy Service"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -201,7 +201,7 @@ Many capabilties exist to help you remove the data from the system. You can dele
 
 <!-- CARDS
 {cta=Watch}
-* help/platform/profiles/update-a-specific-attribute-with-upsert.md
+* ../profiles/update-a-specific-attribute-with-upsert.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -209,8 +209,8 @@ Many capabilties exist to help you remove the data from the system. You can dele
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/profiles/update-a-specific-attribute-with-upsert.md" title="Update specific profile attributes using `upsert`" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740250126112" alt="Update specific profile attributes using `upsert`"
+                    <a href="../profiles/update-a-specific-attribute-with-upsert.md" title="Update specific profile attributes using `upsert`" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/3416133/?format=jpeg&nocache=1740251398874" alt="Update specific profile attributes using `upsert`"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -218,11 +218,11 @@ Many capabilties exist to help you remove the data from the system. You can dele
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="Update specific profile attributes using `upsert`">Update specific profile attributes using `upsert`</a>
+                        <a href="../profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" title="Update specific profile attributes using `upsert`">Update specific profile attributes using `upsert`</a>
                     </p>
                     <p class="is-size-6">Learn how to update a specific attribute of a profile using the `upsert` feature of Adobe Experience Platform.</p>
                 </div>
-                <a href="help/platform/profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="../profiles/update-a-specific-attribute-with-upsert.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
