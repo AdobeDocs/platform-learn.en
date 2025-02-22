@@ -21,10 +21,10 @@ Learn how to build customer propensity and churn scores which get added to Real-
 
 <!-- CARDS
 {cta=Watch}
-* help/platform/intelligent-services/introduction-to-customer-ai.md
-* help/platform/intelligent-services/configure-customer-ai.md
-* help/platform/intelligent-services/use-customer-ai-scores-and-insights.md
-* help/platform/intelligent-services/business-value-of-customer-ai.md
+* introduction-to-customer-ai.md
+* configure-customer-ai.md
+* use-customer-ai-scores-and-insights.md
+* business-value-of-customer-ai.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -32,8 +32,8 @@ Learn how to build customer propensity and churn scores which get added to Real-
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/intelligent-services/introduction-to-customer-ai.md" title="Introduction to Customer AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740181937168" alt="Introduction to Customer AI"
+                    <a href="introduction-to-customer-ai.md" title="Introduction to Customer AI" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32664?format=jpeg&nocache=1740250112240" alt="Introduction to Customer AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -41,11 +41,11 @@ Learn how to build customer propensity and churn scores which get added to Real-
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/intelligent-services/introduction-to-customer-ai.md" target="_blank" rel="referrer" title="Introduction to Customer AI">Introduction to Customer AI</a>
+                        <a href="introduction-to-customer-ai.md" target="_blank" rel="referrer" title="Introduction to Customer AI">Introduction to Customer AI</a>
                     </p>
                     <p class="is-size-6">A high-level overview of how marketers can use Customer AI to generate customer predictions.</p>
                 </div>
-                <a href="help/platform/intelligent-services/introduction-to-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="introduction-to-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
@@ -55,8 +55,8 @@ Learn how to build customer propensity and churn scores which get added to Real-
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/intelligent-services/configure-customer-ai.md" title="Configure Customer AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740181937191" alt="Configure Customer AI"
+                    <a href="configure-customer-ai.md" title="Configure Customer AI" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32665?format=jpeg&nocache=1740250112226" alt="Configure Customer AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -64,11 +64,11 @@ Learn how to build customer propensity and churn scores which get added to Real-
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/intelligent-services/configure-customer-ai.md" target="_blank" rel="referrer" title="Configure Customer AI">Configure Customer AI</a>
+                        <a href="configure-customer-ai.md" target="_blank" rel="referrer" title="Configure Customer AI">Configure Customer AI</a>
                     </p>
                     <p class="is-size-6">Learn how to create an instance of Customer AI to predict customer behavior.</p>
                 </div>
-                <a href="help/platform/intelligent-services/configure-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="configure-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
@@ -78,8 +78,8 @@ Learn how to build customer propensity and churn scores which get added to Real-
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/intelligent-services/use-customer-ai-scores-and-insights.md" title="Use Customer AI Scores and Insights" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740181937179" alt="Use Customer AI Scores and Insights"
+                    <a href="use-customer-ai-scores-and-insights.md" title="Use Customer AI Scores and Insights" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32666?format=jpeg&nocache=1740250112262" alt="Use Customer AI Scores and Insights"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -87,11 +87,11 @@ Learn how to build customer propensity and churn scores which get added to Real-
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/intelligent-services/use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" title="Use Customer AI Scores and Insights">Use Customer AI Scores and Insights</a>
+                        <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" title="Use Customer AI Scores and Insights">Use Customer AI Scores and Insights</a>
                     </p>
                     <p class="is-size-6">Learn how to use Customer AI propensity scores and insights to convert and retain customers.</p>
                 </div>
-                <a href="help/platform/intelligent-services/use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="use-customer-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
@@ -101,8 +101,8 @@ Learn how to build customer propensity and churn scores which get added to Real-
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/intelligent-services/business-value-of-customer-ai.md" title="Business Value of Customer AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740181937154" alt="Business Value of Customer AI"
+                    <a href="business-value-of-customer-ai.md" title="Business Value of Customer AI" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40374?format=jpeg&nocache=1740250112251" alt="Business Value of Customer AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -110,11 +110,11 @@ Learn how to build customer propensity and churn scores which get added to Real-
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/intelligent-services/business-value-of-customer-ai.md" target="_blank" rel="referrer" title="Business Value of Customer AI">Business Value of Customer AI</a>
+                        <a href="business-value-of-customer-ai.md" target="_blank" rel="referrer" title="Business Value of Customer AI">Business Value of Customer AI</a>
                     </p>
                     <p class="is-size-6">This video shows how Customer AI enriches customer profiles with AI-based propensities and empowers customer segmentation and targeting efforts.</p>
                 </div>
-                <a href="help/platform/intelligent-services/business-value-of-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="business-value-of-customer-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
@@ -129,10 +129,10 @@ Learn how to use models to understand the impact of your marketing.
 
 <!-- CARDS
 {cta=Watch}
-* help/platform/intelligent-services/introduction-to-attribution-ai.md
-* help/platform/intelligent-services/configure-attribution-ai.md
-* help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md
-* help/platform/intelligent-services/business-value-of-attribution-ai.md
+* introduction-to-attribution-ai.md
+* configure-attribution-ai.md
+* use-attribution-ai-scores-and-insights.md
+* business-value-of-attribution-ai.md
 -->
 <!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
 <div class="columns">
@@ -140,8 +140,8 @@ Learn how to use models to understand the impact of your marketing.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/intelligent-services/introduction-to-attribution-ai.md" title="Introduction to Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740181937604" alt="Introduction to Attribution AI"
+                    <a href="introduction-to-attribution-ai.md" title="Introduction to Attribution AI" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32667?format=jpeg&nocache=1740250113366" alt="Introduction to Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -149,11 +149,11 @@ Learn how to use models to understand the impact of your marketing.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/intelligent-services/introduction-to-attribution-ai.md" target="_blank" rel="referrer" title="Introduction to Attribution AI">Introduction to Attribution AI</a>
+                        <a href="introduction-to-attribution-ai.md" target="_blank" rel="referrer" title="Introduction to Attribution AI">Introduction to Attribution AI</a>
                     </p>
                     <p class="is-size-6">A high-level overview of how marketers and analysts can use Attribution AI to understand the impact of their marketing channels and campaigns.</p>
                 </div>
-                <a href="help/platform/intelligent-services/introduction-to-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="introduction-to-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
@@ -163,8 +163,8 @@ Learn how to use models to understand the impact of your marketing.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/intelligent-services/configure-attribution-ai.md" title="Configure Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740181937579" alt="Configure Attribution AI"
+                    <a href="configure-attribution-ai.md" title="Configure Attribution AI" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32668?format=jpeg&nocache=1740250113378" alt="Configure Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -172,11 +172,11 @@ Learn how to use models to understand the impact of your marketing.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/intelligent-services/configure-attribution-ai.md" target="_blank" rel="referrer" title="Configure Attribution AI">Configure Attribution AI</a>
+                        <a href="configure-attribution-ai.md" target="_blank" rel="referrer" title="Configure Attribution AI">Configure Attribution AI</a>
                     </p>
                     <p class="is-size-6">Learn how to create an instance of Attribution AI to understand the impact of your marketing channels and campaigns.</p>
                 </div>
-                <a href="help/platform/intelligent-services/configure-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="configure-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
@@ -186,8 +186,8 @@ Learn how to use models to understand the impact of your marketing.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md" title="Use Attribution AI Scores and Insights" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740181937592" alt="Use Attribution AI Scores and Insights"
+                    <a href="use-attribution-ai-scores-and-insights.md" title="Use Attribution AI Scores and Insights" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/32669?format=jpeg&nocache=1740250113402" alt="Use Attribution AI Scores and Insights"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -195,11 +195,11 @@ Learn how to use models to understand the impact of your marketing.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" title="Use Attribution AI Scores and Insights">Use Attribution AI Scores and Insights</a>
+                        <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" title="Use Attribution AI Scores and Insights">Use Attribution AI Scores and Insights</a>
                     </p>
                     <p class="is-size-6">Learn how to use the Attribution AI insights page to understand the ROI of marketing channels and campaigns</p>
                 </div>
-                <a href="help/platform/intelligent-services/use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="use-attribution-ai-scores-and-insights.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
@@ -209,8 +209,8 @@ Learn how to use models to understand the impact of your marketing.
         <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
             <div class="card-image">
                 <figure class="image x-is-16by9">
-                    <a href="help/platform/intelligent-services/business-value-of-attribution-ai.md" title="Business Value of Attribution AI" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740181937615" alt="Business Value of Attribution AI"
+                    <a href="business-value-of-attribution-ai.md" title="Business Value of Attribution AI" target="_blank" rel="referrer">
+                        <img class="is-bordered-r-small" src="https://video.tv.adobe.com/v/40375?format=jpeg&nocache=1740250113390" alt="Business Value of Attribution AI"
                              style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
                     </a>
                 </figure>
@@ -218,11 +218,11 @@ Learn how to use models to understand the impact of your marketing.
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="help/platform/intelligent-services/business-value-of-attribution-ai.md" target="_blank" rel="referrer" title="Business Value of Attribution AI">Business Value of Attribution AI</a>
+                        <a href="business-value-of-attribution-ai.md" target="_blank" rel="referrer" title="Business Value of Attribution AI">Business Value of Attribution AI</a>
                     </p>
                     <p class="is-size-6">This video shows how marketers can measure and optimize marketing and advertising spend by understanding the impact of every individual customer interaction across each phase of the customers' journeys with Attribution AI.</p>
                 </div>
-                <a href="help/platform/intelligent-services/business-value-of-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
+                <a href="business-value-of-attribution-ai.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
                 </a>
             </div>
