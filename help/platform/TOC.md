@@ -120,6 +120,8 @@ Campaigns
   + [Segment Match receiving data](/help/platform/segments/segment-match-receiving-data.md)
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ Collaboration {#collaboration}
+  + [Real-Time CDP Collaboration Overview](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
 + Dashboards {#dashboards}
   + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
