@@ -15,7 +15,7 @@ Learn how to use Postman and Adobe I/O to query Adobe Firefly Services APIs.
 
 Before continuing with this exercise, you need to have completed the setup of [your Adobe I/O project](./../../../modules/getting-started/gettingstarted/ex6.md), and you also need to have configured an application to interact with APIs, such as [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) or [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-## 1.1.1.1 firefly.adobe.com
+## 1.1.1.2 firefly.adobe.com
 
 Go to [https://firefly.adobe.com](https://firefly.adobe.com). Clik the **profile** icon and ensure you're logged in to the right **Account**, which should be `--aepImsOrgName--`. If needed, click **Switch Profile** to switch to that account.
 
@@ -125,6 +125,62 @@ Next, in the **Body** of your request **POST - Firefly - T2I V3**, paste the bel
     "strength": 50
   }
 ```
+
+You should then have this. Click **Send**.
+
+![Firefly](./images/ff6.png){zoomable="yes"}
+
+Click the image URL to open it.
+
+![Firefly](./images/ff7.png){zoomable="yes"}
+
+Your image has now changed a bit. When applying style presets, the seed image is no longer applied in the same way as before.
+
+![Firefly](./images/ff8.png){zoomable="yes"}
+
+Remove the code for the **seeds** object from the **Body** of your request. Click **Send** and then click the image URL which you get from the response.
+
+```json
+,
+  "seeds": [
+    XXX
+  ]
+```
+
+![Firefly](./images/ff9.png){zoomable="yes"}
+
+Your image has now changed a bit again.
+
+![Firefly](./images/ff10.png){zoomable="yes"}
+
+
+## 1.1.1.5 Firefly Services API, Gen Expand
+
+Select the request named **POST - Firefly - Gen Expand** from the **FF - Firefly Services Tech Insiders** collection and go to the **Body** of the request.
+
+- **size**: Enter the desired resolution. The value entered here should be bigger than the original size of the image and cannot be larger than 4096.
+- **image.source.url**: This field requires a link to the image that needs to be expanded. In this example, a variable is used to refer to the image that was generated in the previous exercise.
+
+- **horizontal alignment**: Accepted values are: `"center"`,`"left`, `"right"`.
+- **vertical alignment**: Accepted values are: `"center"`,`"top`, `"bottom"`.
+
+![Firefly](./images/ff11.png){zoomable="yes"}
+
+Click the image URL that is part of the response.
+
+![Firefly](./images/ff12.png){zoomable="yes"}
+
+You'll now see that the image generated in the previous exercise has now been expanded to the resolution of 3999x3999.
+
+![Firefly](./images/ff13.png){zoomable="yes"}
+
+When you change the alignment of the placement, the output will also be slightly different. In this example, the placement is changed to **left, bottom**. Click **Send** and then click to open the generated image URL.
+
+![Firefly](./images/ff14.png){zoomable="yes"}
+
+You should then see that the original image is used in a different placement, which influences the whole image.
+
+![Firefly](./images/ff15.png){zoomable="yes"}
 
 ## Next Steps
 
