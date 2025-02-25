@@ -1,10 +1,11 @@
 ---
 title: Administrative features in Adobe Experience Platform
-description: Learn about administrative features in Adobe Experience Platform 
+description: Learn about administrative features in Adobe Experience Platform
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 feature: Sandboxes, Access Control, Alerts
 role: Admin
 level: Beginner
+exl-id: ce6871bc-af9a-4956-be77-aadf9302dae8
 ---
 # Administration features in Adobe Experience Platform
 

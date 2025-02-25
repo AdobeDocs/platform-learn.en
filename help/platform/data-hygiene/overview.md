@@ -1,10 +1,11 @@
 ---
 title: Data hygiene in Adobe Experience Platform
-description: Learn about data hygiene tools options in Adobe Experience Platform 
+description: Learn about data hygiene tools options in Adobe Experience Platform
 solution: Experience Platform, Real-Time Customer Data Platform, Journey Optimizer
 feature: Data Hygiene
 role: Developer
 level: Intermediate
+exl-id: 8a0c825a-68d2-4885-8cb6-981a79994327
 ---
 # Data hygiene tutorials
 

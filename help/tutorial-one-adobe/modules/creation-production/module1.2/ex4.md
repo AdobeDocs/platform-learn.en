@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
 ---
 # 1.2.4 Automation using Connectors
 
