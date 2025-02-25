@@ -5,7 +5,6 @@ feature: Sources
 role: Data Engineer, Data Architect, Developer
 level: Intermediate
 jira: KT-6686
-thumbnail: 331028.jpg
 exl-id: 2f9c3f6f-169a-431f-b697-a5ed86c274f5
 ---
 # Stream data with HTTP API 
