@@ -12,6 +12,10 @@ jira: KT-16731
 
 # Identity graph linking rules overview
 
+>[!AVAILABILITY]
+>
+>Identity graph linking rules is currently in Limited Availability. Contact your Adobe account team for information on how to access the feature in development sandboxes.
+
 Get an overview of how identity graph linking rules in Adobe Experience Platform help data architects maintain accurate customer profiles and prevent graph collapse.
 
 >[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
