@@ -18,4 +18,4 @@ jira: KT-16731
 
 Get an overview of how identity graph linking rules help data architects maintain accurate customer profiles and prevent graph collapse.
 
->[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3448250/?learn=on&enablevpops
