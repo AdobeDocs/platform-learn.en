@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 262
 last-substantial-update: 2025-02-27
 jira: KT-16731
+exl-id: a61a83fe-76af-4b29-95ee-2fdb9b6bc096
 ---
-
 # Identity graph linking rules overview
 
 >[!AVAILABILITY]
