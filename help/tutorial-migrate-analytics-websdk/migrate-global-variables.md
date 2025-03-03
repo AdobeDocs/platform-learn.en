@@ -3,7 +3,7 @@ title: Migrate global variables
 description: Learn how to migrate global variables from the Analytics extension configuration to Web SDK
 solution: Data Collection, Analytics
 feature: Web SDK
-jira: KT-16764
+jira: KT-17277
 exl-id: 0917e951-c7e0-4723-8354-d308890bdaac
 ---
 # Migrate global variables
