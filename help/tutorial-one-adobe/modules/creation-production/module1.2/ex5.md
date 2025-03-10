@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
 ---
 # 1.2.5 Frame I/O and Workfront Fusion
 
