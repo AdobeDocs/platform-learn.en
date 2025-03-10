@@ -17,7 +17,7 @@ The goal of most Target activities is to drive valuable user actions in your app
 | Track a custom conversion event that may also include additional data, such Target profile parameters and order details |Pass the additional data in the TargetParameters field provided by the [displayedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} and [clickedLocations](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#displayedlocations){target=_blank} APIs | Use the public methods [generateDisplayInteractionXdm](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-edge-extension-api){target=_blank} and [generateTapInteractionXdm](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/#proposition-tracking-using-edge-extension-api){target=_blank} APIs available in the Offer for the mbox location to generate the XDM formatted data for view and click respectively. Then call the Edge SDK [sendEvent](https://developer.adobe.com/client-sdks/edge/edge-network/api-reference/#sendevent){target=_blank} API to send this tracking XDM data along with any additional XDM and freeform data to the Experience Edge network. |
 
 
-Next, learn how to [update audiences and profile scripts](webview.md) to ensure compatibility with the Decisioning extension.
+Next, learn how to [update audiences and profile scripts](update-audiences.md) to ensure compatibility with the Decisioning extension.
 
 >[!NOTE]
 >
