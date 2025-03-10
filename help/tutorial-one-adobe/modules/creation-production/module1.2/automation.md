@@ -33,6 +33,10 @@ In this exercise, continue refining your journey to automate image creation proc
 
 In this exercise, continue refining your journey to automate image creation process.
 
+[1.2.5 Frame I/O and Workfront Fusion](./ex5.md){target="_blank"}
+
+In this exercise, you'll connect Frame I/O to your Workfront Fusion scenario.
+
 [Summary and benefits](./summary.md){target="_blank"}
 
 Summary of this module and overview of the benefits.
