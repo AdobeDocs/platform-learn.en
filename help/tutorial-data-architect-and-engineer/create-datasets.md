@@ -20,7 +20,7 @@ All data that is successfully ingested into Adobe Experience Platform is persist
 **Data Architects** will need to create datasets outside of this tutorial.
 
 Before you begin the exercises, watch this short video to learn more about datasets:
->[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/27269?learn=on&enablevpops)
 
 ## Permissions required
 

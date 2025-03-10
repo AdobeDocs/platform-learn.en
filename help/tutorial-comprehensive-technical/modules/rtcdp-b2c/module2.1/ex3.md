@@ -104,6 +104,10 @@ Your Adobe I/O integration is now finished.
 
 ## AEP Permissions for API credential
 
+>[!IMPORTANT]
+>
+>If you don't have System Admin access rights, you won't be able to execute this step yourself and you won't have permission to access the **Permissions** UI. In that case, please contact your System Admin or post your question in your organization's support channel.
+
 Go to [Adobe Experience Platform](https://experience.adobe.com/platform). After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 Go to **Permissions**, to **Roles**, and click the relevant product profile.

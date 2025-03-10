@@ -14,4 +14,4 @@ Learn how to validate that consent settings are properly applied to your data in
 >
 > Launch is now **[!DNL tags]**
 
->[!VIDEO](https://video.tv.adobe.com/v/332696/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/332696/?learn=on&enablevpops)

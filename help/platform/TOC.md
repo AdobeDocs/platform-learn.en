@@ -9,6 +9,48 @@ auto-video-transcripts: true
 
 # Adobe Experience Platform Tutorials {#tutorials}
 
+<!--
+
+Data Modeling
+
+Profile vs Data Lake vs Identity
+how a record becomes an audience member
+
+Profiles
+Identities
+Audience
+
+Data Lake
+
+Data Ingestion
+-Batch
+-Streaming
+-Edge (Data Collection)
+-Monitoring
+
+Data Governance
+Privacy
+Consent
+Audit logs
+
+Administration
+-Sandboxes
+-Permissions
+-License usage
+
+
+---
+App specific
+
+Destinations
+
+Journeys
+
+Campaigns
+
+-->
+
+
 + [Platform Tutorials](/help/platform/overview.md)
 + Introduction to Platform {#intro-to-platform}
   + [A customer experience powered by Experience Platform](/help/platform/intro-to-platform/a-customer-experience-powered-by-experience-platform.md)
@@ -31,15 +73,16 @@ auto-video-transcripts: true
 + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
-  + [Use alerts](/help/platform/admin/use-alerts.md)
-  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
-  + [Copy packages between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
-  + [Share packages across IMS Orgs](/help/platform/admin/share-packages-across-orgs.md)
+  + [Overview](/help/platform/admin/overview.md)
   + [Add users](/help/platform/admin/add-users.md)
-  + [Add users to Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/users-and-permissions.html)
+  + [Add users to Data Collection](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/users-and-permissions)
   + [Add developers](/help/platform/admin/add-developers.md)
   + [Add product administrators](/help/platform/admin/add-product-administrators.md)
   + [Configure attribute-based access control](/help/platform/admin/configure-attribute-based-access-control.md)
+  + [Use sandboxes](/help/platform/admin/use-sandboxes.md)
+  + [Copy packages between sandboxes](/help/platform/admin/copy-objects-between-sandboxes.md)
+  + [Share packages across IMS Orgs](/help/platform/admin/share-packages-across-orgs.md)
+  + [Use alerts](/help/platform/admin/use-alerts.md)
 + AI Assistant {#ai-assistant}
   + [Overview](/help/platform/ai-assistant/overview.md)
   + [Get access](/help/platform/ai-assistant/access.md)
@@ -54,19 +97,19 @@ auto-video-transcripts: true
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
-  + [Overview of Federated Audience Composition](audiences/overview-of-federated-audience-composition.md)
-  + [Connect and configure Federated Audience Composition](audiences/connect-and-configure-federated-audience-composition.md)
-  + [Create a Federated Audience Composition](audiences/create-a-federated-audience-composition.md)
-  + [Audience rule builder overview](audiences/audience-rule-builder-overview.md)
-  + [Create audiences](audiences/create-audiences.md)
-  + [Use time constraints](audiences/time-constraints.md)
-  + [Create content-based audiences](audiences/create-content-based-audiences.md)
-  + [Create conversion audiences](audiences/create-conversion-audiences.md)
-  + [Create audiences from existing audiences](audiences/create-audiences-from-existing-audiences.md)
-  + [Create sequential audiences](audiences/create-sequential-audiences.md)
-  + [Create dynamic audiences](audiences/create-dynamic-audiences.md)
-  + [Create multi-entity audiences](audiences/create-multi-entity-audiences.md)
-  + [Create and activate account audiences (B2B)](audiences/create-audiences-with-b2b-data.md)
+  + [Overview of Federated Audience Composition](audiences/fac/overview-of-federated-audience-composition.md)
+  + [Connect and configure Federated Audience Composition](audiences/fac/connect-and-configure-federated-audience-composition.md)
+  + [Create a Federated Audience Composition](audiences/fac/create-a-federated-audience-composition.md)
+  + [Audience rule builder overview](audiences/audience-builder/audience-rule-builder-overview.md)
+  + [Create audiences](audiences/audience-builder/create-audiences.md)
+  + [Use time constraints](audiences/audience-builder/time-constraints.md)
+  + [Create content-based audiences](audiences/audience-builder/create-content-based-audiences.md)
+  + [Create conversion audiences](audiences/audience-builder/create-conversion-audiences.md)
+  + [Create audiences from existing audiences](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+  + [Create sequential audiences](audiences/audience-builder/create-sequential-audiences.md)
+  + [Create dynamic audiences](audiences/audience-builder/create-dynamic-audiences.md)
+  + [Create multi-entity audiences](audiences/audience-builder/create-multi-entity-audiences.md)
+  + [Create and activate account audiences (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
   + [Demo of streaming segmentation](/help/platform/audiences/streaming-segmentation-demo.md)
   + [Evaluate an audience rule](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
   + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
@@ -77,6 +120,8 @@ auto-video-transcripts: true
   + [Segment Match receiving data](/help/platform/segments/segment-match-receiving-data.md)
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ Collaboration {#collaboration}
+  + [Real-Time CDP Collaboration Overview](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
 + Dashboards {#dashboards}
   + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
@@ -88,6 +133,7 @@ auto-video-transcripts: true
   + [Enforce consent](/help/platform/governance/enforce-consent.md)
   + [Integrate with IAB Transparency and Consent Framework 2.0](/help/platform/governance/integrate-with-iab-transparency-and-consent-framework-2.md)
 + Data Hygiene {#data-hygiene}
+  + [Overview](/help/platform/data-hygiene/overview.md)
   + [Data prep for data hygiene](/help/platform/data-hygiene/data-prep-for-data-hygiene.md)
   + [Delete datasets and batches](/help/platform/data-hygiene/delete-datasets-and-batches.md)
   + [Expire datasets](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-lifecycle/expire-datasets)
@@ -115,9 +161,9 @@ auto-video-transcripts: true
   + [Expire datasets](/help/platform/data-lifecycle/expire-datasets.md)
 + Destinations {#destinations}
   + [Destinations overview](/help/platform/destinations/understanding-destinations.md)
-  + [Connecting to destinations](/help/platform/destinations/connecting-to-destinations.md)
+  + [Connect to destinations](/help/platform/destinations/connecting-to-destinations.md)
   + [Create destinations and activate data](/help/platform/destinations/create-destinations-and-activate-data.md)
-  + [Activate profiles and segments to a destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
+  + [Activate profiles and audiences to a destination](/help/platform/destinations/activate-profiles-and-segments-to-a-destination.md)
   + [Configure a dataset export destination](/help/platform/destinations/configure-dataset-export-destination.md)
   + [Integrate with Google Customer Match](/help/platform/destinations/integrate-with-google-customer-match.md)
   + [Configure the Azure Blob destination](/help/platform/destinations/configure-the-azure-blob-destination.md)
@@ -137,6 +183,7 @@ auto-video-transcripts: true
   + [Label, ingest, and verify identity data](/help/platform/identities/label-ingest-and-verify-identity-data.md)
   + [View identity graphs](/help/platform/identities/view-identity-graphs.md)
   + Identity graph linking rules {#graph-linking-rules}
+    + [Overview](/help/platform/identities/identity-graph-linking-rules/overview.md)
     + [Graph simulation](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
 + Intelligent Services {#intelligent-services}
   + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
@@ -238,4 +285,3 @@ auto-video-transcripts: true
   + [A Tale of Two Perceptions - Brands vs. Consumers](/help/platform/industry/brands-vs-consumers.md)
   + [Evolving Your Audience Center of Excellence](/help/platform/industry/evolving-your-audience-center-of-excellence.md)
   + [Building better experiences with customer profiles](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
-  + [Data Collaboration in the First-party Data Context](/help/platform/industry/data-collaboration-in-the-first-party-data-context.md)

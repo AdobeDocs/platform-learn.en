@@ -45,6 +45,6 @@ I'm going to add an important note here that we had at the beginning of this tut
 
 >[!IMPORTANT]
 >
->It is important to note that one of the main reasons that you are doing this migration of your implementation is to prepare to use Adobe Experience Platform applications, like Customer Journey Analytics, Real-Time CDP, or Journey Optimizer (as noted in #3 above). Using your website data for this purpose will include additional steps that are not included in this tutorial, but this tutorial will certainly be a prerequisite for that further progression of your implementation. Therefore, do complete this tutorial, and then you can go on to perform the steps necessary to send this same website data to the Experience Platform as well.
+>It is important to note that one of the main reasons that you are doing this migration of your implementation is to prepare to use Adobe Experience Platform applications, like Customer Journey Analytics, Real-Time CDP, or Journey Optimizer. Using your website data for this purpose will include additional steps that are not included in this tutorial, but this tutorial will certainly be a prerequisite for that further progression of your implementation. Now that you have completed this tutorial, you are ready to perform the steps necessary to send this same website data to the Experience Platform as well.
 
 Good luck on your journey forward with analytics and other content and marketing endeavors!

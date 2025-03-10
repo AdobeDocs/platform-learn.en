@@ -13,4 +13,4 @@ exl-id: 48f59810-c745-45de-8e10-7c6b9009bafc
 
 Enhance Google conversion data with first-party hashed data using event forwarding and the Google Ads API. For more information, see [the documentation](https://experienceleague.adobe.com/docs/experience-platform/tags/extensions/adobe/google-ads-enhanced-conversions/overview.html)
 
->[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3411365/?learn=on&enablevpops)

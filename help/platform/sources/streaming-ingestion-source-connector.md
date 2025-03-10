@@ -13,7 +13,7 @@ exl-id: bd788a1e-123f-488f-8df7-23336aae88fd
 Learn how to stream data in real-time from a cloud storage source to Platform and use the data in real-time for customer engagement.  
 
 
->[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/331943?learn=on&enablevpops)
 
 ## Additional Resources
 

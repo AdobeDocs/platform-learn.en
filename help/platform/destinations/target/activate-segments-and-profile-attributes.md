@@ -18,4 +18,4 @@ exl-id: df0e12ee-e15a-457e-a091-68ec264f3da2
 Learn how to activate segments and profile attributes from Adobe Real-Time Customer Data Platform to Adobe Target to display real-time personalized content in your websites, mobile apps, and other digital properties. For more information, see the [Activate audience data to profile request destinations documentation](https://experienceleague.adobe.com/docs/experience-platform/destinations/ui/activate/activate-profile-request-destinations.html).
 
 
->[!VIDEO](https://video.tv.adobe.com/v/3419036/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3419036/?learn=on&enablevpops)

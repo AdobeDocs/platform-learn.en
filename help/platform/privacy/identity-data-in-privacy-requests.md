@@ -12,4 +12,4 @@ exl-id: c5533831-5bba-45c6-8ff8-eb38accf0d42
 
 Learn key concepts and decisions related to auditing personal data and prepping according to the privacy needs of the business. For more information, please visit the [Privacy Services documentation](https://experienceleague.adobe.com/docs/experience-platform/privacy/home.html).
 
->[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/336076?learn=on&enablevpops)

@@ -25,20 +25,20 @@ Learn how to get started with Adobe Experience Platform APIs. This tutorial guid
 >
 > After creating your API credential, a System Administrator must associate the credential with a role in the Experience Platform.
 
->[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
 
 ## Generate an Access Token with Postman{#generate-an-access-token-with-postman}
 
 Use the [Adobe Identity Management Service APIs](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/ims) to obtain an Access Token to access the Adobe Experience Platform APIs.
 
->[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29698/?learn=on&enablevpops)
 
 
 ## Interact with Experience Platform APIs using Postman
 
 Explore interacting with Adobe Experience Platform APIs using the [Adobe-provided Experience Platform API Postman collections](https://github.com/adobe/experience-platform-postman-samples/tree/master/apis/experience-platform), building upon the [Adobe Developer Console Environment Variables](#export-integration-details-to-postman) and [generated access token](#generate-an-access-token-with-postman).
 
->[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/29704/?learn=on&enablevpops)
 
 
 ## Resources referenced in these videos

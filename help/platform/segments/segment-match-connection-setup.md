@@ -12,4 +12,4 @@ exl-id: bf3c7297-ea60-45fc-a784-5c576e7935cf
 
 In this video, learn how to set up the connection between you and a partner so that you can share audiences. After configuring this Segment Match feature, you will be able to share data back and forth with your data partner. For more information, please see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/segmentation/ui/segment-match/overview.html?lang=en).
 
->[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/342211/?learn=on&enablevpops)

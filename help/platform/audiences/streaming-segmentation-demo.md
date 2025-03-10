@@ -16,6 +16,6 @@ Learn how the streaming segmentation feature in Adobe Experience Platform allows
 >
 > "[!UICONTROL Segments]" have been renamed "[!UICONTROL Audiences]" in the Platform interface. Select **[!UICONTROL Create audience]** > **[!UICONTROL Build rule]** to enter the rule builder featured in this video.
 
->[!VIDEO](https://video.tv.adobe.com/v/36184?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/36184?learn=on&enablevpops)
 
 

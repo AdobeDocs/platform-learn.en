@@ -1,5 +1,5 @@
 ---
-title: Overview
+title: Overview - Comprehensive Technical Tutorial for AEP and Apps
 description: Starting point for Data Engineers, Data Analysts, Data Architects, Data Scientists, Orchestration Engineers and Marketers to gain a full understanding of the business value of Adobe Experience Platform and all of its Application Services.
 doc-type: multipage-overview
 exl-id: 88c19383-c185-40f0-b118-6cb82db0ce0e
@@ -58,7 +58,7 @@ You can find a lot of interesting videos from our Tech Academy webinars, from bo
 
 ## Completion & Certification
 
-This tutorial is part of an Adobe Certification course. You can sign up for the course alongside this tutorial by going to [https://certification.adobe.com](https://certification.adobe.com).
+This tutorial is part of an Adobe Certification course. You can sign up for the course alongside this tutorial by going to [https://certification.adobe.com/courses/1258](https://certification.adobe.com/courses/1258).
 
 For every module that you complete using the below tutorial, you need to submit a proof of completion as indicated [here](./completion.md).
 
@@ -156,6 +156,12 @@ In this module, you'll use the Adobe Experience Platform - Offers/Decisioning ap
 In this module, you'll learn everything there is to know about Journey Optimizer, which helps companies design and deliver connected, contextual, and personalized experiences to their customers.
 
 **Time Investment:** 120 minutes
+
+[3.5 Adobe Journey Optimizer: Translation Services](./modules/ajo-b2c/module3.5/ajotranslationsvcs.md)
+
+In this module, you'll learn how to setup and use Translation Services within Adobe Journey Optimizer to localize your messages to your customers.
+
+**Time Investment:** 60 minutes
 
 ### 4. Adobe Customer Journey Analytics
 

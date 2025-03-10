@@ -1,6 +1,6 @@
 ---
 title: Delete datasets and batches
-description: Learn how to delete datasets and batches in Adobe Experience Platform (AEP).
+description: Learn how to delete datasets and batches in Adobe Experience Platform.
 feature: Data Hygiene, Datasets
 role: Data Engineer, Developer
 level: Intermediate
@@ -14,4 +14,4 @@ exl-id: 76e6cba0-5175-4cc4-8b80-caa4c39bfba1
 
 Learn how to delete datasets and batches in Adobe Experience Platform. If a dataset needs to be removed from the system for any reason, such as cleaning up test datasets in lower environments or datasets that were added in error, you can simply delete that dataset and remove its contents from the data lake, identity graph, and profile store. Individual batches can be deleted from the data lake, but not from the identity graph and profile store.
 
->[!VIDEO](https://video.tv.adobe.com/v/3429790/?learn=on)
+>[!VIDEO](https://video.tv.adobe.com/v/3429790/?learn=on&enablevpops)
