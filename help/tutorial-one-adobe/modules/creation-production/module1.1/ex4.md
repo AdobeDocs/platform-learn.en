@@ -106,9 +106,9 @@ Click the 3 dots **...** and then click **Share**.
 
 ![Firefly Custom Models](./images/ffcm20.png){zoomable="yes"} 
 
-In order to access a Firefly Custom Model, the Custom Model needs to be shared to the **Technical Account ID** of our Adobe I/O Project.
+In order to access a Firefly Custom Model, the Custom Model needs to be shared to the **Technical Account Email** of your Adobe I/O Project.
 
-To retrieve your **Technical Account ID**, go to [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Click to open your Project, which is named `--aepUserLdap-- Firefly`.
+To retrieve your **Technical Account Email**, go to [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects). Click to open your Project, which is named `--aepUserLdap-- One Adobe tutorial`.
 
 ![Firefly Custom Models](./images/ffcm24.png){zoomable="yes"} 
 
@@ -116,15 +116,15 @@ Click **OAuth Server-to-Server**.
 
 ![Firefly Custom Models](./images/ffcm25.png){zoomable="yes"} 
 
-Click to copy your **Technical Account ID**.
+Click to copy your **Technical Account Email**.
 
 ![Firefly Custom Models](./images/ffcm23.png){zoomable="yes"} 
 
-Paste your **Technical Account ID** and click **Invite to edit**.
+Paste your **Technical Account Email** and click **Invite to edit**.
 
 ![Firefly Custom Models](./images/ffcm21.png){zoomable="yes"} 
 
-The **Technical Account ID** should now be able to access the Custom Model.
+The **Technical Account Email** should now be able to access the Custom Model.
 
 ![Firefly Custom Models](./images/ffcm22.png){zoomable="yes"}
 

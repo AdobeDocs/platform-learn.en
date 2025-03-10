@@ -42,6 +42,7 @@ recommendations: noDisplay,noCatalog
     + [1.2.2 Use Adobe APIs within Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex2.md)
     + [1.2.3 Process automation with Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
     + [1.2.4 Automation using Connectors](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
+    + [1.2.5 Frame I/O and Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
 
 + Asset Management {#assetmgmt}
