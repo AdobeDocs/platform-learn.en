@@ -13,7 +13,7 @@ After you have migrated your Target implementation from the Target extension to 
 * Revisit audiences and profile scripts to make sure they are compatible with Platform Mobile SDK and the Optimie extension
 * Ensure integrations with Adobe or third-party applications work correctly 
 
-Every Target implementation is different depending on site architecture and features used. You may use the tables below as a starting point and add any items unique to your implementation. The [Debugging page](debugging.md) of this tutorial shows you tools you can use to help with this validation.
+Every Target implementation is different depending on site architecture and features used. You may use the tables below as a starting point and add any items unique to your implementation.
 
 ## Technical validation and troubleshooting
 
