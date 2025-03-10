@@ -141,7 +141,7 @@ To confirm that the data has landed in Platform's data lake, a quick option is t
 
 ### Query the data
 
-1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Data Management > Queroes]** in the left-navigation to open the **[!UICONTROL Queries]** screen.
+1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Data Management > Queries]** in the left-navigation to open the **[!UICONTROL Queries]** screen.
 1. Select **[!UICONTROL Create query]** 
 1. First, run a query to see all of the names of the tables in the data lake. Enter `SHOW TABLES` in the query editor and click the play icon to rn the query.
 1. In the results, notice how the name of the table is something like `luma_web_event_data`
