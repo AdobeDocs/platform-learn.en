@@ -28,12 +28,7 @@ hide: yes
 
 + [Track conversion events](track-events.md)
 
-<!--
-+ [Enable WebView support](webview.md)
--->
-
 + [Update audiences and profile scripts](update-audiences.md)
 
 + [Validate the implementation](validate.md)
 
-+ [Debug Target](debugging.md)
