@@ -1,9 +1,9 @@
 ---
-title: Update audiences and profile scripts - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
+title: Update Target audiences and profile scripts - Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
 description: Learn how to update Adobe Target audiences and profile scripts for compatibility with the Decisioning extension.
 exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
 ---
-# Update Target audiences and profile scripts for Adobe Journey Optimizer - Decisioning Mobile extension compatibility
+# Update Target audiences and profile scripts for Decisioning mobile extension compatibility
 
 
 After you complete the technical updates to migrate Target to the Decisioning extension, you may need to update some of your audiences, profile scripts, and activities to ensure a smooth transition. 

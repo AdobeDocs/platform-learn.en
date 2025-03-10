@@ -1,5 +1,5 @@
 ---
-title: Retrieve Target activities - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
+title: Retrieve Target activities - Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
 description: Learn how to retrieve Adobe Target activities when migrating from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
 ---
