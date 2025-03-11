@@ -1,14 +1,21 @@
 ---
-title: Render Target activities - Migrate from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension
-description: Learn how to migrate an Adobe Target implementation from at.js 2.x to Adobe Experience Platform Web SDK. Topics include library overview, implementation differences, and other noteworthy callouts.
+title: Retrieve Target activities - Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
+description: Learn how to retrieve Adobe Target activities when migrating from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension.
 exl-id: 39569088-a254-4e64-9956-0c6e1a8ed2a5
 ---
-# Render Target activities 
+# Retrieve Target activities 
 
-Some Target implementations may use regional mboxes (now known as "scopes") to deliver content from activities that use the form-based Experience Composer. If your at.js Target implementation uses mboxes, then you need to do the following:
+Target mobile implementations use regional mboxes (now known as "scopes") to deliver content from activities that use Target's form-based Experience Composer. You need to update your mobile application to include scopes in your network calls.
 
-* Update any references from your at.js implementation that use `getOffer()` or `getOffers()` to the equivalent Platform Web SDK methods.
-* Add code to trigger a `propositionDisplay` event so that an impression is counted.
+The content returned by Target, also known as "offers", typically consists of text or json which you need to consume in your application to render the final customer experience. Offers from Target are often used to:
+
+* Enable feature flags in your application
+* Serve alternate text or images
+
+If you have activities which need to run in both Target extension and Decisioning extension versions of your application, be sure to test thoroughly. If you need to use different offers for different versions of your app, consider using the targeting options in the interface to deliver different offers to the different versions.
+
+Always be sure to include error handling to display suitable experiences under error conditions.
+
 
 ## Request and apply content on demand
 
@@ -16,7 +23,7 @@ Some Target implementations may use regional mboxes (now known as "scopes") to d
 
 >[!BEGINTABS]
 
->[!TAB Target SDK] 
+>[!TAB Optimize SDK] 
 
 ```Java
 
@@ -83,7 +90,7 @@ Optimize.updatePropositions(decisionScopes,
 
 >[!BEGINTABS]
 
->[!TAB Target SDK] 
+>[!TAB Optimize SDK] 
 
 ```Swift
 
@@ -127,11 +134,8 @@ Optimize.updatePropositions(for: [decisionScope1, decisionScope2]
 +++
 
 
-Activities created using Target's form-based composer and delivered to regional mboxes cannot be rendered automatically by the Platform Web SDK. Similar to at.js, offers delivered to specific Target locations need to be rendered on demand. 
 
-
-
-Next, learn how to [pass Target parameters using the Platform Web SDK](send-parameters.md).
+Next, learn how to [pass Target parameters using the Decisioning extension](send-parameters.md).
 
 >[!NOTE]
 >

@@ -8,7 +8,7 @@ role: Developer
 level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
-jira: 
+jira: KT-17468
 hide: yes
 ---
 
@@ -22,16 +22,13 @@ hide: yes
 
 + [Replace SDKs](replace-sdk.md)
 
-+ [Render activities](render-activities.md)
++ [Render activities](retrieve-activities.md)
 
 + [Send parameters](send-parameters.md)
 
 + [Track conversion events](track-events.md)
 
-+ [Enable WebView support](webview.md)
-
 + [Update audiences and profile scripts](update-audiences.md)
 
 + [Validate the implementation](validate.md)
 
-+ [Debug Target](debugging.md)

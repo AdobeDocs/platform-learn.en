@@ -1,9 +1,9 @@
 ---
-title: Validate Target implementations the Adobe Journey Optimizer - Decisioning Mobile extension
-description: Learn how to validate activities and debug an Adobe Target implementation using he Adobe Journey Optimizer - Decisioning Mobile extension.
+title: Validate and troubleshoot the Decisioning extension implementation
+description: Learn how to validate and troubleshoot an Adobe Target mobile implementation using the Decisioning extension.
 exl-id: edc6e25a-58d7-4145-97c3-bf48e980914f
 ---
-# Validate the Adobe Journey Optimizer - Decisioning Mobile extension implementation
+# Validate and troubleshoot the Decisioning extension implementation
 
 After you have migrated your Target implementation from the Target extension to the Decisioning extension, it's important to validate everything is working properly before publishing any changes to your production app. Adobe recommends the following, which is covered in detail on this page:
 
@@ -13,45 +13,21 @@ After you have migrated your Target implementation from the Target extension to 
 * Revisit audiences and profile scripts to make sure they are compatible with Platform Mobile SDK and the Optimie extension
 * Ensure integrations with Adobe or third-party applications work correctly 
 
-Every Target implementation is different depending on site architecture and features used. You may use the tables below as a starting point and add any items unique to your implementation. The [Debugging page](debugging.md) of this tutorial shows you tools you can use to help with this validation.
+Every Target implementation is different depending on site architecture and features used. You may use the tables below as a starting point and add any items unique to your implementation.
 
-## Technical validation
+## Technical validation and troubleshooting
 
-| Validation item | Notes |
-|---|---|
-| | |
+Technical validation and troubleshooting with Platform Mobile SDK and the Decisioning extension is greatly enhanced with Assurance. Please see the following documentation pages to learn about this essential tool:
 
+* [Setting up Decisioning plugins in Assurance](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/assurance-setup/){target=_blank}
 
-## Activity delivery and rendering
+* [Validating Optimize SDK setup](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/optimize-configuration-view/){target=_blank}
 
-| Validation item | Notes |
-| | |
-
-## Reporting
-
-| Validation item | Notes |
-| | |
-
-## Audiences and profile scripts
-
-| Validation item | Notes |
-|---|---|
-| | |
-
-## Integrations with Adobe applications
-
-| Validation item | Notes |
-| | |
-
-## Integrations with third-party applications
-
-| Validation item | Notes |
-|---|---|
-| | |
+* [Review requests and simulate different experiences](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/review-simulate/){target=_blank}
 
 After performing the validation steps above, you can be confident that the Platform Mobile SDK implementation with the Decisioning extension is ready to move to production.
 
-Next, learn how to [troubleshoot a Target implementation using Platform Web SDK](debugging.md).
+Congratulations, you've reached the end of the tutorial! Good luck migrating your Adobe Target implementation to the Decisioning extension!
 
 >[!NOTE]
 >
