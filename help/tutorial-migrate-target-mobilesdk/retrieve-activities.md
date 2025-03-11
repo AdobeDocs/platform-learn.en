@@ -19,6 +19,11 @@ Always be sure to include error handling to display suitable experiences under e
 
 ## Request and apply content on demand
 
+>[!IMPORTANT]
+>
+>After applying content to the app, it is imperative to fire `displayed` API to let Target know the visitor has seen the alternate or default content specified in the activity. Please see the [Track Target conversion events](track-events.md) page for more details.
+
+
 +++ Android example
 
 >[!BEGINTABS]
