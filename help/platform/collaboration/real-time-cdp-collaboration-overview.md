@@ -6,7 +6,7 @@ role: Leader, User
 level: Beginner
 doc-type: Value Video
 duration: 92
-last-substantial-update: 2025-02-24
+last-substantial-update: 2025-03-18
 jira: KT-17403
 exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
 ---
