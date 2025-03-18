@@ -121,7 +121,11 @@ Campaigns
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Collaboration {#collaboration}
-  + [Real-Time CDP Collaboration Overview](/help/platform/collaboration/real-time-cdp-collaboration-overview.md)
+  + [Real-Time CDP Collaboration Overview](collaboration/real-time-cdp-collaboration-overview.md)
+  + [Set permissions](collaboration/set-permissions-for-collaboration.md)
+  + [Set up an Advertiser account](collaboration/set-up-an-advertiser-account.md)
+  + [Reference audiences as an advertiser](collaboration/reference-audiences-as-an-advertiser.md)
+  + [Connect with publishers](collaboration/connect-with-publishers.md)
 + Dashboards {#dashboards}
   + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
