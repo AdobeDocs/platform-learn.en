@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 0
 last-substantial-update: 2025-03-18
 jira: KT-17572
+exl-id: 479d918d-f631-43c1-ba39-eee819f81d8f
 ---
-
 # Connect with publishers in Real-Time CDP Collaboration
 
 As an advertiser, learn how to make a connection with a publisher in order to collaborate with them. For detailed documentation, see [Connect with advertisers or publishers](https://experienceleague.adobe.com/en/docs/real-time-cdp-collaboration/using/connect/establishing-connections){target="_blank"}.
