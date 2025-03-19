@@ -19,38 +19,10 @@ For more information, see the Real-Time CDP Collaboration [documentation](https:
 
 ## Introduction
 
-<!-- CARDS
-{cta=Watch}
-* real-time-cdp-collaboration-overview.md
+Get an introduction to Adobe Real-Time Collaboration, a purpose-built data collaboration application that lets you discover and activate high-value audiences and use measurement capabilities to drive tangible results.
 
--->
-<!-- START CARDS HTML - DO NOT MODIFY BY HAND -->
-<div class="columns">
-    <div class="column is-half-tablet is-half-desktop is-one-third-widescreen" aria-label="Real-Time CDP Collaboration Overview">
-        <div class="card" style="height: 100%; display: flex; flex-direction: column; height: 100%;">
-            <div class="card-image">
-                <figure class="image x-is-16by9">
-                    <a href="real-time-cdp-collaboration-overview.md" title="Real-Time CDP Collaboration Overview" target="_blank" rel="referrer">
-                        <img class="is-bordered-r-small" src="https://cdn.experienceleague.adobe.com/thumb/exl-cards/tutorial.png" alt="Real-Time CDP Collaboration Overview"
-                             style="width: 100%; aspect-ratio: 16 / 9; object-fit: cover; overflow: hidden; display: block; margin: auto;">
-                    </a>
-                </figure>
-            </div>
-            <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
-                <div class="top-card-content">
-                    <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="real-time-cdp-collaboration-overview.md" target="_blank" rel="referrer" title="Real-Time CDP Collaboration Overview">Real-Time CDP Collaboration Overview</a>
-                    </p>
-                    <p class="is-size-6">Get an introduction to Adobe Real-Time Collaboration, a purpose-built data collaboration application that lets you discover and activate high-value audiences and use measurement capabilities to drive tangible results.</p>
-                </div>
-                <a href="real-time-cdp-collaboration-overview.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
-                    <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
-                </a>
-            </div>
-        </div>
-    </div>
-</div>
-<!-- END CARDS HTML - DO NOT MODIFY BY HAND -->
+>[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+
 
 ## Setup
 
