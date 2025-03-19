@@ -21,7 +21,7 @@ For more information, see the Real-Time CDP Collaboration [documentation](https:
 
 Get an introduction to Adobe Real-Time Collaboration, a purpose-built data collaboration application that lets you discover and activate high-value audiences and use measurement capabilities to drive tangible results.
 
->[!VIDEO](https://video.tv.adobe.com/v/29708?learn=on&enablevpops)
+>[!VIDEO](https://video.tv.adobe.com/v/3446801?learn=on&enablevpops)
 
 
 ## Setup
