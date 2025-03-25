@@ -55,7 +55,7 @@ The Target extension has [configurable settings](https://developer.adobe.com/cli
 | Client Code | n/a | Set automatically by the edge using the IMS Org details |
 | Environment ID | Target Environment ID | Configured in the datastream |
 | Target Workspace Property | Property Token | Configured in the datastream |
-| Timeout | Not configurable | The timeout with the Decisioning extension is 10 seconds |
+| Timeout | Timeout | Configurable in the Decisioning extension and in the Optimize SDK. The default timeout is 10 seconds. |
 | Server Domain | Edge Network domain | Set in the Adobe Experience Platform Edge Network extension |
 
 Next, learn how to [replace the Target SDK](replace-sdk.md).
