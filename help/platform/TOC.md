@@ -111,6 +111,7 @@ Campaigns
   + [Create multi-entity audiences](audiences/audience-builder/create-multi-entity-audiences.md)
   + [Create and activate account audiences (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
   + [Demo of streaming segmentation](/help/platform/audiences/streaming-segmentation-demo.md)
+  + [Evaluate batch audiences on demand](/help/platform/audiences/evaluate-audiences-on-demand.md)
   + [Evaluate an audience rule](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
   + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
   + [Segment Match connection setup](/help/platform/segments/segment-match-connection-setup.md)
