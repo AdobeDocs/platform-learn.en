@@ -12,7 +12,7 @@ jira: KT-17467
 
 # Evaluate audiences on demand
 
-Evaluate batch audiences on demand with flexible audience evaluation. For more information and guardrails, see [the flexible audience evaluation guide](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
+Evaluate batch audiences on demand with the flexible audience evaluation feature of Adobe Experience Platform. For more information and guardrails, see [the flexible audience evaluation guide](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/methods/flexible-audience-evaluation).
 
 >[!VIDEO](https://video.tv.adobe.com/v/3453640/?learn=on&enablevpops)
 
