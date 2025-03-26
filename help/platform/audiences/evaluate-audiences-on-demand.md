@@ -6,9 +6,7 @@ role: User,Developer
 level: Intermediate
 doc-type: Feature Video
 duration: 269
-last-substantial-update: 2025-03-25
-hide: true
-hidefromtoc: true
+last-substantial-update: 2025-03-26
 jira: KT-17467
 ---
 
