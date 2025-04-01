@@ -9,7 +9,6 @@ level: Intermediate,Experienced
 doc-type: tutorial
 recommendations: catalog,noDisplay
 jira: KT-17468
-hide: yes
 ---
 
 # Migrate your mobile app from the Adobe Target to the Adobe Journey Optimizer - Decisioning extension{#migrate-target-to-mobile-sdk-decisioning}
