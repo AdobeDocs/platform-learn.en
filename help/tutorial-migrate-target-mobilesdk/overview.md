@@ -1,24 +1,16 @@
 ---
-title: Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
+title: Migrate your mobile app from the Adobe Target to the Adobe Journey Optimizer - Decisioning extension
 description: Learn how to migrate your mobile app implementation from the Adobe Target to the Adobe Journey Optimizer - Decisioning extension
 last-substantial-update: 2023-02-23
 exl-id: 32363b95-b6ad-44af-a3b0-e1fbbbf5a8f1
 ---
-# Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
+# Migrate your mobile app from the Adobe Target to the Adobe Journey Optimizer - Decisioning extension
 
 This guide is for experienced Adobe Target implementers to learn how to migrate existing Adobe Experience Platfrom Mobile SDK implementations from the Adobe Target extension to the Adobe Journey Optimizer - Decisioning extension.
 
 Adobe Experience Platform Mobile SDK powers end-to-end engagement in your mobile applications. The Target extension builds on the Mobile SDK to help you personalize app experiences with Adobe Target. The Decisioning extension is a newer approach to implement Adobe Target in mobile apps that uses Adobe Experience Platform Edge Network capabilities that help integrate Target with Platform-based apps such as Real-Time CDP and Journey Optimizer.
 
 ![Diagram showing the Mobile SDK connecting to Target through the Edge Network with the Decisioning extension](assets/datacollection.png)
-
->[!INFO]
->
->Within the Adobe Experience Platform Mobile SDK ecosystem, extensions are implemented by SDKs imported into your applications which may have different names:
->
-> * **Target SDK** implements the **Adobe Target extension**
-> * **Optimize SDK** implements the **Adobe Journey Optimizer - Decisioning extension**
-
 
 ## Key benefits
 

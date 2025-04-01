@@ -51,7 +51,6 @@ After reviewing the information below and assessing your current technical Targe
 | thirdPartyId (mbox3rdPartyId) | Supported | Supported via Identity Map and Target Third Party ID Namespace in the datastream | 
 | Notifications (display, click) | Supported | Supported | 
 | Response tokens | Supported | Supported |  
-| Analytics for Target (A4T) | Client-side only | Client-side and server-side | 
 | Mobile previews (QA mode) | Supported | Limited Support with Assurance | 
 
 >[!IMPORTANT]
