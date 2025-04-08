@@ -16,8 +16,8 @@ Adobe Experience Platform Mobile SDK powers end-to-end engagement in your mobile
 
 Some of the benefits of the Adobe Journey Optimizer Decisioning extension compared to the Target extension include:
 
-* Faster sharing of audiences from [Real-Time Customer Data Platform](https://experienceleague.adobe.com/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization.html)
-* Integrating Target with Journey Optimizer to support [Offer Decisioning delivery](https://experienceleague.adobe.com/docs/target/using/integrate/ajo/offer-decision.html)
+* Faster sharing of audiences from [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization)
+* Integrating Target with Journey Optimizer to support [Offer Decisioning delivery](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
 * A tighter integration with Adobe Analytics which does not rely on stitching information from separate network calls
 * Additional implementation flexibility for developers
 
@@ -56,4 +56,4 @@ Next, review the detailed [comparison of the Target extension and the Decisionin
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
