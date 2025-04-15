@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 510e9f59-1399-4a52-ad51-67e3f407037f
 ---
 # 1.3.2 Animation and Video in Adobe Express
 
