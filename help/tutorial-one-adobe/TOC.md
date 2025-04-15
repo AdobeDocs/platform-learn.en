@@ -43,6 +43,7 @@ recommendations: noDisplay,noCatalog
     + [1.2.3 Process automation with Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex3.md)
     + [1.2.4 Automation using Connectors](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex4.md)
     + [1.2.5 Frame I/O and Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
+    + [1.2.6 Frame I/O to Workfront Fusion to AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
   + 1.3 Adobe Express and Adobe Experience Cloud {#crpr3}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)

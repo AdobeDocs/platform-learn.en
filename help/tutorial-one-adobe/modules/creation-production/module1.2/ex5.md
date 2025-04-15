@@ -127,7 +127,7 @@ Now that communication has been established between Frame I/O and Workfront Fusi
 
 ## Next steps
 
-Go to [Summary and Benefits of Creative Workflow Automation with Workfront Fusion](./summary.md){target="_blank"}
+Go to [1.2.6 Frame I/O to Fusion to AEM Assets](./ex6.md){target="_blank"}
 
 Go back to [Creative Workflow Automation with Workfront Fusion](./automation.md){target="_blank"}
 
