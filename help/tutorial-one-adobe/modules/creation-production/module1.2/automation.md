@@ -37,6 +37,10 @@ In this exercise, continue refining your journey to automate image creation proc
 
 In this exercise, you'll connect Frame I/O to your Workfront Fusion scenario.
 
+[1.2.6 Frame I/O to Workfront Fusion to AEM Assets](./ex6.md){target="_blank"}
+
+In this exercise, you'll further refine your setup, so that your approved asset in Frame I/O uses a Workfront Fusion scenario to then export a PNG rendition of the asset towards AEM Assets.
+
 [Summary and benefits](./summary.md){target="_blank"}
 
 Summary of this module and overview of the benefits.

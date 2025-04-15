@@ -341,8 +341,8 @@ And a couple of minutes later, a new PSD file has been generated with a new back
 
 ## Next steps
 
-Go to [Summary and Benefits of Firefly Services Automation](./summary.md){target="_blank"}
+Go to [1.2.5 Frame I/O and Workfront Fusion](./ex5.md){target="_blank"}
 
-Go back to [Automating Adobe Firefly Services](./automation.md){target="_blank"}
+Go back to [Creative Workflow Automation with Workfront Fusion](./automation.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}

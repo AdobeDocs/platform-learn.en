@@ -12,14 +12,12 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 
 This tutorial is very diverse and offers clear insights in the following applications:
 
-- Adobe Firefly Services
-- Adobe Photoshop
+- Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront & Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets and Edge Delivery Services 
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
-
 
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. In order to do that, in some lessons there is a focus on how non-Adobe applications integrate with Adobe applications. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
@@ -34,13 +32,12 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 
 If you want to take this tutorial using your own Adobe Experience Cloud instance, the following applications need to be provisioned in your instance and you need to be able to access:
 
-- Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
-- Adobe Photoshop 
+- Adobe Firefly
+- Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
 - Adobe Workfront
-- Adobe Workfront Fusion [https://fusion.adobe.com/](https://fusion.adobe.com/){target="_blank"}
-- Adobe Experience Platform: [https://experience.adobe.com/platform](https://experience.adobe.com/platform){target="_blank"}
-- Adobe Experience Platform Data Collection: [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}
-- Access to Demo System: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+- Adobe Workfront Fusion
+- Adobe Experience Platform, Adobe Experience Platform Data Collection
+- Access to Demo System Next: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
 
 ## Completion & Certification
 
@@ -69,6 +66,10 @@ In this module, you will use Adobe Firefly Services APIs, Photoshop APIs and Mic
 [1.2 Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
 In this foundational module, you will use Adobe Workfront Fusion to automate and scale your content creation workflows.
+
+[1.3 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+
+In this foundational module, you will use Adobe Express to create images and videos, and you'll share those assets towards the broader Adobe Experience Cloud ecosystem.
 
 ### 3. Asset Management
 
