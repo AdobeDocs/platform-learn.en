@@ -48,7 +48,7 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
     + [1.3.1 Getting started with Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
     + [1.3.2 Animation and Video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-    + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
 
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
