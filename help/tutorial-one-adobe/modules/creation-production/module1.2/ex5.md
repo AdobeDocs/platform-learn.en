@@ -35,6 +35,10 @@ In one of the previous exercises, you downloaded [citisignal-fiber.psd](./../../
 
 In the previous exercise, you created the scenario `--aepUserLdap-- - Firefly + Photoshop`, which started off with a custom webhook and that ended with a webhook response. The usage of the webhooks was then tested using Postman, but obviously, the point of such a scenario is to be called by an external application. As stated before, Frame.io will be that exercise, but in between Frame.io and the `--aepUserLdap-- - Firefly + Photoshop` another Workfront Fusion scenario is needed. you will now configure that scenario.
 
+Go to [https://experience.adobe.com/](https://experience.adobe.com/). Open **Workfront Fusion**.
+
+![WF Fusion](./images/wffusion1.png)
+
 In the left menu, go to **Scenarios** and select your folder `--aepUserLdap--`. Click **Create a new scenario**.
 
 ![Frame IO](./images/frame4.png)
@@ -115,7 +119,7 @@ Switch the screen back to Workfront Fusion. You should now see a green checkmark
 
 ![Frame IO](./images/frame22.png)
 
-The detailed view of the bubble shows you the data that was received from Frame.io. You should see various ID's. As an example, the field **resource.id** shows the unique ID in Frame.io of the asset **citisignal-fiber.psd**
+The detailed view of the bubble shows you the data that was received from Frame.io. You should see various ID's. As an example, the field **resource.id** shows the unique ID in Frame.io of the asset **citisignal-fiber.psd**.
 
 ![Frame IO](./images/frame23.png)
 
