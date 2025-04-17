@@ -1,6 +1,6 @@
 ---
-title: Frame I/O and Workfront Fusion
-description: Frame I/O and Workfront Fusion
+title: Frame I/O to Workfront Fusion to AEM Assets
+description: Frame I/O to Workfront Fusion to AEM Assets
 role: Developer
 level: Beginner
 jira: KT-5342
