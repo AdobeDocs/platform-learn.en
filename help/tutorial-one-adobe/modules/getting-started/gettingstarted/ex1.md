@@ -129,7 +129,7 @@ After activating your configuration, you'll see a green dot next to the initials
 
 ## Verify tutorial content
 
-As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/uce/module31/ex2).
+As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
 
 You should now see that all **Environment Variables** on this page have been replaced by their true values, based on the activated environment in the chrome extension.
 
