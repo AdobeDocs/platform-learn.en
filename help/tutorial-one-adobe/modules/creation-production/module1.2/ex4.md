@@ -32,7 +32,7 @@ You should then see this. Click **Save**.
 
 ![WF Fusion](./images/wffc5.png)
 
-You should then see this. Click the **Webhook** node.
+You should then see this. Click the **Webhook** module.
 
 ![WF Fusion](./images/wffc6.png)
 
@@ -76,9 +76,9 @@ Once you've clicked **Send**, the message should change tp **Successfully determ
 
 ![WF Fusion](./images/wffc12.png)
 
-## 1.2.4.2 Update Firefly T2I node
+## 1.2.4.2 Update Firefly T2I module
 
-Right-click the node **Firefly T2I** and select **Delete module**.
+Right-click the module **Firefly T2I** and select **Delete module**.
 
 ![WF Fusion](./images/wffcff1.png)
 
@@ -147,7 +147,7 @@ You should now see an image that represents the prompt you sent in from the Post
 
 You will now update your scenario to make it smarter by using more out-of-the-box connectors. You'll also connect the output from Firefly to Photoshop, so that the background image of the PSD-file changes dynamically by using the output from the Firefly Generate Image action.
 
-You should then see this. Next, hover over the **Adobe Firefly** node and click the **+** icon.
+You should then see this. Next, hover over the **Adobe Firefly** module and click the **+** icon.
 
 ![WF Fusion](./images/wffc15.png)
 
@@ -253,7 +253,7 @@ You can now see that a new PSD file was generated successfully and stored in you
 
 ### Call To Action Text
 
-Next, hover over the **Adobe Photoshop - Apply PSD edits** node and click the **+** icon.
+Next, hover over the **Adobe Photoshop - Apply PSD edits** module and click the **+** icon.
 
 ![WF Fusion](./images/wffc34.png)
 
@@ -337,7 +337,7 @@ Click **Save** to save your changes.
 
 After applying these changes to your Photoshop file, you now need to configure a **Webhook response** which will be sent back to whichever application has activated this scenario.
 
-Hover over the node **Adobe Photoshop - Edit text layers** and click the **+** icon.
+Hover over the module **Adobe Photoshop - Edit text layers** and click the **+** icon.
 
 ![WF Fusion](./images/wffc48.png)
 
@@ -387,7 +387,7 @@ The scenario will then be activated and after some time, a response will be show
 
 ![WF Fusion](./images/wffc58.png)
 
-As a reminder: once the scenario has run in Workfront Fusion, you'll be able to see information about each node by clicking the bubble above each node.
+As a reminder: once the scenario has run in Workfront Fusion, you'll be able to see information about each module by clicking the bubble above each module.
 
 ![WF Fusion](./images/wffc59.png)
 
