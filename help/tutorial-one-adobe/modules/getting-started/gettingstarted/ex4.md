@@ -25,7 +25,7 @@ On the **Integrations** page, you need to select the Data Collection property th
 
 ![DSN](./images/web2.png)
 
-Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap-- - Demo System (DD/MM/YYYY) (web)`. Click **Save**.
+Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap-- - One Adobe (DD/MM/YYYY) (web)`. Click **Save**.
 
 ![DSN](./images/web2a.png)
 
@@ -67,7 +67,7 @@ On the **Integrations** page, you need to select the Data Collection property th
 
 ![DSN](./images/web2.png)
 
-Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap - Demo System (DD/MM/YYYY) (web)`.
+Click **Select** on the Data Collection property that was created in the previous step, which is named `--aepUserLdap - One Adobe (DD/MM/YYYY) (web)`.
 
 ![DSN](./images/web2a.png)
 
