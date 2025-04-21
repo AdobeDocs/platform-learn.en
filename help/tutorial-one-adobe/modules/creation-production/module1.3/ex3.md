@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
 ---
 # 1.3.3 Bulk Create Assets in Adobe Express
 
