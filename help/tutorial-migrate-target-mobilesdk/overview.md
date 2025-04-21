@@ -16,7 +16,7 @@ Adobe Experience Platform Mobile SDK powers end-to-end engagement in your mobile
 
 Some of the benefits of the Adobe Journey Optimizer Decisioning extension compared to the Target extension include:
 
-* Faster sharing of audiences from [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/experience-cloud/next-hit-personalization)
+* Faster sharing of audiences from [Real-Time Customer Data Platform](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 * Integrating Target with Journey Optimizer to support [Offer Decisioning delivery](https://experienceleague.adobe.com/en/docs/target/using/integrate/ajo/offer-decision)
 * A tighter integration with Adobe Analytics which does not rely on stitching information from separate network calls
 * Additional implementation flexibility for developers

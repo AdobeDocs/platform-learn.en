@@ -51,7 +51,7 @@ Before you begin the exercises, watch this short video to learn more about ident
 
 Now, create a namespace for the Luma CRM ID:
 
-1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
+1. Open the [Data Collection interface](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Select the sandbox that you are using for the tutorial
 
    >[!NOTE]

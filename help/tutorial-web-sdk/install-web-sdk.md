@@ -29,7 +29,7 @@ First you must have a tag property. A property is a container for all the JavaSc
 
 Create a new tag property for the tutorial:
 
-1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
+1. Open the [Data Collection interface](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Select **[!UICONTROL Tags]** in the left navigation
 1. Select the **[!UICONTROL New Property]** button
     ![Add a new property](assets/websdk-property-addNewProperty.png)

@@ -329,8 +329,6 @@ Look up the profile with value `5625458` in the `loyaltyId` namespace again to s
 Adobe partners with multiple ETL vendors to support data ingestion into Experience Platform. Because of the variety of third-party vendors, ETL is not covered in this tutorial, although you are welcome to review some of these resources:
 
 * [Developing ETL Integrations for Adobe Experience Platform](https://experienceleague.adobe.com/docs/experience-platform/etl/home.html)
-* [Informatica Adobe Experience Platform Connector page on Adobe Exchange](https://exchange.adobe.com/experiencecloud.details.101570.informatica-adobe-experience-cloud-connector.html)
-* [Informatica documentation of the Adobe Experience Platform Connector ](https://docs.informatica.com/integration-cloud/cloud-data-integration-connectors/current-version/adobe-experience-platform-connector/preface.html)
 * [[!DNL Snaplogic] Adobe Experience Platform Snap Pack](https://www.snaplogic.com/resources/videos/august-2020-aep)
 
 ## Additional Resources

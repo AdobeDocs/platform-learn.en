@@ -33,7 +33,7 @@ Now, you can create a datastream to tell Platform Edge Network where to send dat
 
 **To create a datastream:**
 
-1. Open the [Data Collection interface](https://launch.adobe.com/){target="_blank"}
+1. Open the [Data Collection interface](https://experience.adobe.com/data-collection/){target="_blank"}
 1. Make sure you are in the correct sandbox 
 
    >[!NOTE]
