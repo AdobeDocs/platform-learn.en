@@ -17,7 +17,7 @@ In the previous exercise you configured the scenario `--aepUserLdap-- - Firefly 
 
 ## 1.2.5.1 Accessing Frame.io
 
-Go to [https://app.frame.io/projects](https://app.frame.io/projects).
+Go to [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}.
 
 Click the **+ icon** to create your own project in Frame.io.
 
@@ -36,7 +36,7 @@ In one of the previous exercises, you downloaded [citisignal-fiber.psd](./../../
 
 In the previous exercise, you created the scenario `--aepUserLdap-- - Firefly + Photoshop`, which started off with a custom webhook and that ended with a webhook response. The usage of the webhooks was then tested using Postman, but obviously, the point of such a scenario is to be called by an external application. As stated before, Frame.io will be that exercise, but in between Frame.io and the `--aepUserLdap-- - Firefly + Photoshop` another Workfront Fusion scenario is needed. you will now configure that scenario.
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/). Open **Workfront Fusion**.
+Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -68,7 +68,7 @@ You should then see this. Leave this screen open and untouched as you'll need it
 
 ![Frame IO](./images/frame10.png)
 
-Go to [https://developer.frame.io/](https://developer.frame.io/). Click **DEVELOPER TOOLS** and then choose **Custom Actions**.
+Go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Custom Actions**.
 
 ![Frame IO](./images/frame11.png)
 
@@ -92,7 +92,7 @@ You should then see this.
 
 ![Frame IO](./images/frame14.png)
 
-Go back to [https://app.frame.io/projects](https://app.frame.io/projects). Refresh the page.
+Go back to [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}. Refresh the page.
 
 ![Frame IO](./images/frame16.png)
 
@@ -292,7 +292,7 @@ Select **Frame.io API Key** and enter the name `--aepUserLdap-- - Frame.io Token
 
 ![Frame IO](./images/frame49.png)
 
-To get an API Token, go to [https://developer.frame.io/](https://developer.frame.io/). Click **DEVELOPER TOOLS** and then choose **Tokens**.
+To get an API Token, go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Tokens**.
 
 ![Frame IO](./images/frame50.png)
 

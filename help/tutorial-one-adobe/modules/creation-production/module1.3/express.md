@@ -21,6 +21,14 @@ Learn how to automatie creative workflows with Workfront Fusion.
 
 In this exercise, explore Adobe Express in combination with Firefly Services and get an understanding of its capabilities.
 
+[1.3.2 Animation and Video in Adobe Express](./ex2.md){target="_blank"}
+
+In this exercise, you'll use Adobe Express to animate images and create videos.
+
+[1.3.3 Bulk Create Assets in Adobe Express](./ex3.md){target="_blank"}
+
+In this exercise, you'll work with Adobe Express to create multiple versions of an asset by using out-of-the-box automation capabilities of Adobe Express.
+
 [Summary and benefits](./summary.md){target="_blank"}
 
 Summary of this module and overview of the benefits.
