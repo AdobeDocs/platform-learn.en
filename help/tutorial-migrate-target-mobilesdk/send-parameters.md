@@ -49,7 +49,7 @@ Target allows profile synching across devices and systems using a single custome
 
 | Example at.js parameter | Platform Web SDK option | Notes |
 | --- | --- | --- |
-| `at_property` | N/A | Property tokens are configured in the [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/edge/datastreams/configure#target) and cannot be set in the `sendEvent` call. |
+| `at_property` | N/A | Property tokens are configured in the [datastream](https://experienceleague.adobe.com/en/docs/experience-platform/datastreams/configure#target) and cannot be set in the `sendEvent` call. |
 | `pageName` | `xdm.web.webPageDetails.name` or <br> `data.__adobe.target.pageName`| Target mbox parameters can be passed as either part of the `xdm` object or part of the `data.__adobe.target` object.|
 | `profile.gender` | `data.__adobe.target.profile.gender` | All Target profile parameters must be passed as part of the `data` object and prefixed with `profile.` to be mapped appropriately. |
 | `user.categoryId` | `data.__adobe.target.user.categoryId` | Reserved parameter used for Target's Category Affinity feature which must be passed as part of the `data` object. |
