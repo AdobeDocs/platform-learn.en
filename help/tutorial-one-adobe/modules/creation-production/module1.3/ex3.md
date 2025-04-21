@@ -53,10 +53,6 @@ https://new.express.adobe.com/brands
 
 
 
-![Adobe Express](./images/expressbc11.png)
-
-
-
 ![Adobe Express](./images/expressbc12.png)
 
 
