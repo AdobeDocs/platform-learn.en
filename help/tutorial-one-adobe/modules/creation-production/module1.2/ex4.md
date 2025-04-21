@@ -12,7 +12,7 @@ You will now start using the out-of-the-box connectors in Workfront Fusion for P
 
 ## 1.2.4.1 Duplicate and prepare your scenario
 
-In the left menu, go to **Scenarios** and select your folder `--aepUserLdap--`. You should then see the scenario you created before, which is named `--aepUSerLdap-- - Adobe I/O Authentication`.
+In the left menu, go to **Scenarios** and select your folder `--aepUserLdap--`. You should then see the scenario you created before, which is named `--aepUserLdap-- - Adobe I/O Authentication`.
 
 ![WF Fusion](./images/wffc1.png)
 
@@ -107,7 +107,7 @@ Fill outthe following fields:
 - **Client Secret**: copy the **Client Secret** from your Adobe I/O project which is named `--aepUserLdap-- - One Adobe tutorial`.
 
 You can find the **Client ID** and **Client Secret** of your Adobe I/O project [here](https://developer.adobe.com/console/projects.
-).
+){target="_blank"}.
 
 ![WF Fusion](./images/wffc20.png)
 

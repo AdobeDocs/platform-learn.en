@@ -13,7 +13,7 @@ Learn how to use Workfront Fusion and Adobe I/O to query Adobe Firefly Services 
 
 ## 1.2.1.1 Create new scenario
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/). Open **Workfront Fusion**.
+Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -65,7 +65,7 @@ The following variables need to be defined:
 | `CONST_client_secret`         | your Adobe I/O project Client Secret|
 | `CONST_scope`        | your Adobe I/O project Scope |
 
-Find these variables by going to [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects) and opening your Adobe I/O project, which is named `--aepUserLdap-- One Adobe tutorial`.
+Find these variables by going to [https://developer.adobe.com/console/projects](https://developer.adobe.com/console/projects){target="_blank"} and opening your Adobe I/O project, which is named `--aepUserLdap-- One Adobe tutorial`.
 
 ![WF Fusion](./images/wffusion9.png)
 

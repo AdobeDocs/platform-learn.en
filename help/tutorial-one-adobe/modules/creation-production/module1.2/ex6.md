@@ -22,7 +22,7 @@ The business teams however don't need a PSD file, they need a PNG file or a JPG 
 
 ## 1.2.6.1 Create a new scenario
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/). Open **Workfront Fusion**.
+Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **Workfront Fusion**.
 
 ![WF Fusion](./images/wffusion1.png)
 
@@ -52,7 +52,7 @@ You should then see this. Click **Copy address to clipboard**.
 
 ## 1.2.6.2 Configure Webhook in Frame.io
 
-Go to [https://developer.frame.io/](https://developer.frame.io/). Click **DEVELOPER TOOLS** and then choose **Custom Actions**.
+Go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Custom Actions**.
 
 ![Frame IO](./images/aemf7.png)
 
@@ -76,7 +76,7 @@ You should then see this.
 
 ![Frame IO](./images/aemf11.png)
 
-Go to [https://app.frame.io/projects](https://app.frame.io/projects) and go to the folder that you created before, which should be named `--aepUserLdap--`. Double-click to open the asset that was created in the previous exercise.
+Go to [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} and go to the folder that you created before, which should be named `--aepUserLdap--`. Double-click to open the asset that was created in the previous exercise.
 
 ![Frame IO](./images/aemf11a.png)
 
@@ -264,7 +264,7 @@ Your connection will then be validated and when successful, your connection will
 
 ![Frame IO](./images/aemf51.png)
 
-To create a new dedicated folder, go to [https://experience.adobe.com](https://experience.adobe.com/). Ensure that the right Experience Cloud instance is selected, which should be `--aepImsOrgName--`. Then, click **Experience Manager Assets**.
+To create a new dedicated folder, go to [https://experience.adobe.com](https://experience.adobe.com/){target="_blank"}. Ensure that the right Experience Cloud instance is selected, which should be `--aepImsOrgName--`. Then, click **Experience Manager Assets**.
 
 ![Frame IO](./images/aemf52.png)
 
