@@ -224,7 +224,7 @@ Your screen should look like this:
 
 ![WF Fusion](./images/wffusion45.png)
 
-Next, change the name of your scenario to `--aepUSerLdap-- - Adobe I/O Authentication`.
+Next, change the name of your scenario to `--aepUserLdap-- - Adobe I/O Authentication`.
 
 ![WF Fusion](./images/wffusion46.png)
 
