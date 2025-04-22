@@ -55,7 +55,7 @@ You'll then see your website loaded in an incognito browser window. For every de
 
 ## Option 2: Start with a new incognito browser window
 
-In case you had accidentally closed your browser window, or for future sessions, you can also access your website project by going to [https://dsn.adobe.com/](https://dsn.adobe.com/). After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Edit**.
+In case you had accidentally closed your browser window, or for future sessions, you can also access your website project by going to [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}. After logging in with your Adobe ID, you'll see this. Click the 3 dots **...** on your website project and then click **Edit**.
 
 ![DSN](./images/web8.png)
 
@@ -97,7 +97,7 @@ You'll then see your website loaded in an incognito browser window. For every de
 
 ## Next Steps
 
-Go to [Use the mobile app](./ex5.md)
+Go to [Use the mobile app](./ex5.md){target="_blank"}
 
 Go back to [Getting Started](./getting-started.md){target="_blank"}
 

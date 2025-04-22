@@ -8,7 +8,7 @@ doc-type: Tutorial
 ---
 # 1.3.1 Getting started with Adobe Express
 
-Open a new incognito browser window and go to [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Log in using your **Company or School account** and then select the account **--aepImsOrgName--**. 
+Open a new incognito browser window and go to [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Log in using your **Company or School account** and then select the account **`--aepImsOrgName--`**. 
 
 ![Adobe Express](./images/express1.png)
 
