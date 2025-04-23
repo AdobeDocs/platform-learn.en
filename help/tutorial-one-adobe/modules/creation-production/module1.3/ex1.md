@@ -8,6 +8,8 @@ doc-type: Tutorial
 ---
 # 1.3.1 Getting started with Adobe Express
 
+## 1.3.1.1 Logging in to Adobe Express
+
 Open a new incognito browser window and go to [https://www.adobe.com/home](https://www.adobe.com/home){target="_blank"}. Log in using your **Company or School account** and then select the account **`--aepImsOrgName--`**. 
 
 ![Adobe Express](./images/express1.png)
@@ -30,7 +32,7 @@ You're now logged in to **Adobe Express**.
 
 ![Adobe Express](./images/express5.png)
 
-## 1.3.1.1 Get started from a Brand template
+## 1.3.1.2 Get started from a brand template
 
 In Adobe Express, go to **Brands**. Your brand template library is likely empty at the moment. CitiSignal has defined a brand template previously, and you should now reuse that existing template. 
 

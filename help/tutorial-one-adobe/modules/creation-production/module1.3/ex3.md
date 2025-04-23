@@ -12,6 +12,8 @@ Before you start this exercise, download the required assets from [https://tech-
 
 ![Adobe Express](./images/expressassets.png)
 
+## 1.3.3.1 Create your basic asset
+
 Go to [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}. Click the **+** icon to create a new **image**.
 
 ![Adobe Express](./images/expressbc0.png)
@@ -85,6 +87,8 @@ Enter the text `Shop now` in the new textbox and change the location of the text
 You should then see this.
 
 ![Adobe Express](./images/expressbc17.png)
+
+## 1.3.3.2 Bulk create in Adobe Express
 
 Next, click **Bulk create**.
 

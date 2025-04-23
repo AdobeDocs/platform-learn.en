@@ -12,6 +12,8 @@ Before you start this exercise, download the required assets from [https://tech-
 
 ![Adobe Express](./images/expressassets.png)
 
+## 1.3.2.1 Create a video
+
 Go to [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}. Click the **+** icon to create a new **image**.
 
 ![Adobe Express](./images/expressv1.png)
@@ -114,39 +116,37 @@ Select the **CitiSignal** logo.
 
 ![Adobe Express](./images/expressv27.png)
 
-Open the 
+Open the detail settings on the **Slide** action and change the duration to 2.5s.
 
 ![Adobe Express](./images/expressv28.png)
 
-
+Next, click **Download**. Select the **File format** **MP4** and set **Video resolution** to **1080p**. Click **Download**. 
 
 ![Adobe Express](./images/expressv29.png)
 
-
+Your video file will then be generated and will then be downloaded to your computer. Your first video is now ready.
 
 ![Adobe Express](./images/expressv30.png)
 
+## 1.3.2.2 Add to your video
 
-
-![Adobe Express](./images/expressv31.png)
-
-
+Close the **Timeline** view.
 
 ![Adobe Express](./images/expressv32.png)
 
-
+Click the 3 dots **...** and select **Duplicate**.
 
 ![Adobe Express](./images/expressv33.png)
 
-
+A new page will then be generated. Click **Edit Timeline** to start working with the new page.
 
 ![Adobe Express](./images/expressv34.png)
 
-
+Click **+ Add scene**.
 
 ![Adobe Express](./images/expressv35.png)
 
-
+You should then see a new scene being added.
 
 ![Adobe Express](./images/expressv36.png)
 
@@ -154,82 +154,95 @@ Navigate to your desktop, to the folder **Adobe_Express** which contains the ass
 
 ![Adobe Express](./images/expressv37.png)
 
-
+Your video file will then be added into the new scene.
 
 ![Adobe Express](./images/expressv40.png)
 
-
+Click in the middle between the 2 scenes and then select **Add transition**.
 
 ![Adobe Express](./images/expressv41.png)
 
-
+Click **Dip to black**.
 
 ![Adobe Express](./images/expressv42.png)
 
-
+Change the **Duration** to 2 seconds. Feel free to click the **play** button to test your transition.
 
 ![Adobe Express](./images/expressv43.png)
 
-
+Go to **Text** and then click **Add your text**.
 
 ![Adobe Express](./images/expressv44.png)
 
-
+Enter the text `with lightning fast speed from CitiSignal`. Center the text by clicking **Align center**.
 
 ![Adobe Express](./images/expressv45.png)
 
-
+Change the font size to **60**.
 
 ![Adobe Express](./images/expressv46.png)
 
+## 1.3.2.3 Use add-ons in Adobe Express
 
+Go to **Add-ons** and search for the add-on **Social Previewer**.
 
 ![Adobe Express](./images/expressv47.png)
 
-
+Click **+ Add** to add the add-on.
 
 ![Adobe Express](./images/expressv48.png)
 
-
+Select the add-on **Social Previewer** and click the **Instagram Post** preview option. You can now easily preview how your post will look on the most common social media platforms.
 
 ![Adobe Express](./images/expressv49.png)
 
+## 1.3.2.4 Make a new template in Adobe Express
 
+Next, click the **Share** button and then select **Make a template**.
 
 ![Adobe Express](./images/expressv50.png)
 
-
+Use the name `--aepUserLdap-- - Mobile Video`, select the brand **CitiSignal (Telco)** and then click **Save template**.
 
 ![Adobe Express](./images/expressv51.png)
 
-
+Your video template is now saved in your Brand template.
 
 ![Adobe Express](./images/expressv52.png)
 
+## 1.3.2.5 Save your video in AEM Assets CS
 
+Click **Share** again and then select **Save to cloud**. Select **AEM Assets**.
 
 ![Adobe Express](./images/expressv53.png)
 
-
+Select the **Current page**. Use the name `--aepUserLdap-- - Mobile Video` and then click **Select folder**.
 
 ![Adobe Express](./images/expressv54.png)
 
-
+Select the folder **`--aepUserLdap-- - Frame.io PNG`** and click **Select**.
 
 ![Adobe Express](./images/expressv55.png)
 
-
+Click **Upload 1 asset**.
 
 ![Adobe Express](./images/expressv56.png)
 
+Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"} and click **Experience Manager Assets**.
 
+![Adobe Express](./images/expressv57a.png)
+
+Select your AEM Assets CS environment, which should be named `--aepUserLdap-- - Citi Signal dev`.
+
+![Adobe Express](./images/aemf53.png)
+
+In **Assets**, navigate to the folder **`--aepUserLdap-- - Frame.io PNG`**. Double-click on the asset **`--aepUserLdap-- - Mobile Video`** to open it.
 
 ![Adobe Express](./images/expressv57.png)
 
-
+Your video that was created in Adobe Express, is now available in Adobe Experience Manager Assets.
 
 ![Adobe Express](./images/expressv58.png)
-
 
 ## Next Steps
 
