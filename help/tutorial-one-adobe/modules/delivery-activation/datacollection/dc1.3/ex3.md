@@ -15,7 +15,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./../dc1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named `--aepSandboxName--`. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./../dc1.2/images/sb1.png)
 
@@ -41,7 +41,7 @@ You'll then see this. Select **Create audience**. Click the **search** icon to s
 
 ![FAC](./images/fedcomp5.png)
 
-Select the schema **--aepUserLdap--_HOUSEHOLDS**. Click **Confirm**.
+Select the schema **`--aepUserLdap--_HOUSEHOLDS`**. Click **Confirm**.
 
 ![FAC](./images/fedcomp6.png)
 
@@ -65,7 +65,7 @@ Then, click the **+** icon again and click **Custom condition** again to add ano
 
 ![FAC](./images/fedcomp11.png)
 
-The second condition to add, is: `Is the user an existing CitiSignal Mobile subscriber?`. The way to answer that question is to use the relationship between the household and the primary customer in the household, which is defined in another table, **--aepUserLdap--_PERSONS**. You can drill down in the attribute menu using the **household2person** link.
+The second condition to add, is: `Is the user an existing CitiSignal Mobile subscriber?`. The way to answer that question is to use the relationship between the household and the primary customer in the household, which is defined in another table, **`--aepUserLdap--_PERSONS`**. You can drill down in the attribute menu using the **household2person** link.
 
 ![FAC](./images/fedcomp12.png)
 

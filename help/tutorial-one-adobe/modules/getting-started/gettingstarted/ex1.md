@@ -32,9 +32,9 @@ Once the extension is installed, that same text will be changed automatically to
 
 ## Install the Chrome extension
 
-To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi). You'll then see this. 
+To install that Chrome extension, open your Chrome browser and go to: [https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi](https://chromewebstore.google.com/detail/tech-insiders-learning-fo/hhnbkfgioecmhimdhooigajdajplinfi){target="_blank"}. You'll then see this. 
 
-Click **Add to Chrome**. 
+Click **Add to Chrome**.
 
 ![DSN](./images/c2.png)
 
@@ -52,7 +52,7 @@ In the **extensions** menu, click the **puzzle piece** icon and pin the **Platfo
 
 ## Configure the Chrome extension
 
-Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview) and then click the extension icon to open it.
+Go to [https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-comprehensive-technical/overview){target="_blank"} and then click the extension icon to open it.
 
 ![DSN](./images/tuthome.png)
 
@@ -68,7 +68,7 @@ If you aren't sure what values to enter for these fields, follow the below guida
 
 **AEP IMS Org Name**
 
-When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the name of your instance in the top right corner of your screen.
+When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, you'll find the name of your instance in the top right corner of your screen.
 
 ![DSN](./images/aepname.png)
 
@@ -78,7 +78,7 @@ The IMS Org ID is the unique identifier for your Adobe Experience Cloud instance
 
 Finding your IMS Org ID can be done in multiple ways. If you're not sure, check with one of the system administrators of your instance to find the ID.
 
-You may be able to find it by going to [Admin Console](https://https://adminconsole.adobe.com/), where you can find it as part of the URL.
+You may be able to find it by going to [Admin Console](https://adminconsole.adobe.com/){target="_blank"}, where you can find it as part of the URL.
 
 ![DSN](./images/aepid1.png)
 
@@ -90,7 +90,7 @@ Please ensure to copy and paste the **@AdobeOrg** part along with the ID.
 
 **AEP Tenant ID**
 
-Your Tenant ID is the unique identifier for your organisation's AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the tenant id in the URL.
+Your Tenant ID is the unique identifier for your organisation's AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, you'll find the tenant id in the URL.
 
 ![DSN](./images/aeptenantid.png)
 
@@ -98,7 +98,7 @@ When you enter it in the Chrome extension, you should ensure that an underscore 
 
 **AEP Sandbox Name**
 
-Your sandbox name is the name of the environment you'll be using in your AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/), you'll find the tenant id in the URL. 
+Your sandbox name is the name of the environment you'll be using in your AEP instance. When you log in to your Adobe Experience Platform instance on [https://platform.adobe.com/](https://platform.adobe.com/){target="_blank"}, you'll find the tenant id in the URL. 
 
 Before taking the sandbox name from the URL, you should ensure you're in the sandbox that you should use for this tutorial. You can switch to the right sandbox by clicking the sandbox switcher menu in the top right corner of your screen.
 
@@ -129,7 +129,7 @@ After activating your configuration, you'll see a green dot next to the initials
 
 ## Verify tutorial content
 
-As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2).
+As a test, go to [this page](https://experienceleague.adobe.com/en/docs/platform-learn/tutorial-one-adobe/activation/dc/dc13/ex2){target="_blank"}.
 
 You should now see that all **Environment Variables** on this page have been replaced by their true values, based on the activated environment in the chrome extension.
 
@@ -139,7 +139,7 @@ You should now have a similar view to the below, where the environment variable 
 
 ## Next Steps
 
-Go to [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md)
+Go to [Use Demo System Next to setup your Adobe Experience Platform Data Collection client property](./ex2.md){target="_blank"}
 
 Go back to [Getting Started](./getting-started.md){target="_blank"}
 

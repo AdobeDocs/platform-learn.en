@@ -9,7 +9,7 @@ exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
 
 ## Download the app
 
-Go to [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app) on your computer. You'll then see this.
+Go to [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"} on your computer. You'll then see this.
 
 ![DSN](./images/mobileapp.png)
 
@@ -47,7 +47,7 @@ After the previous exercise, you had this result. Click to open the **Mobile Edg
 
 ![DSN](./images/dsn5b.png)
 
-In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://dsn.adobe.com](https://dsn.adobe.com). After logging in with your Adobe ID, you'll see this. Click the three dots **...** on your mobile app project and then click **Edit**.
+In case you had accidentally closed your browser window, or for future demo or enablement sessions, you can also access your website project by going to [https://dsn.adobe.com](https://dsn.adobe.com){target="_blank"}. After logging in with your Adobe ID, you'll see this. Click the three dots **...** on your mobile app project and then click **Edit**.
 
 ![DSN](./images/web8a.png)
 
@@ -77,7 +77,7 @@ Now, go back to **Home** in the app. Your app is now ready to be used.
 
 ## Next Steps
 
-Go to [Configure your Adobe I/O project](./ex6.md)
+Go to [Configure your Adobe I/O project](./ex6.md){target="_blank"}
 
 Go back to [Getting Started](./getting-started.md){target="_blank"}
 

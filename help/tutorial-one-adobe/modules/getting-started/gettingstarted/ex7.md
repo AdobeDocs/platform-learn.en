@@ -9,7 +9,7 @@ exl-id: c2a28819-5877-4f53-96c0-e4e5095d8cec
 
 >[!IMPORTANT]
 >
->If you're an Adobe employee, follow the instructions to [install PostBuster](./ex8.md)!
+>If you're an Adobe employee, follow the instructions to [install PostBuster](./ex8.md){target="_blank"}!
 
 ## Postman environment download
 
@@ -38,7 +38,7 @@ The Collection contains a number of API requests that you can use. We will use 2
 - 1 Collection for Authentication to Adobe I/O
 - 1 Collection for the exercises in this module
 
-Download [postman-ff.zip](./../../../assets/postman/postman-ff.zip) to your local desktop. 
+Download [postman-ff.zip](./../../../assets/postman/postman-ff.zip){target="_blank"} to your local desktop. 
 
 ![Adobe I/O New Integration](./images/pmfolder.png){zoomable="yes"}
 

@@ -11,7 +11,7 @@ In order to visualize the learnings in this tutorial and to make it possible for
 
 Once you've got access to Demo System Next, proceed with the below steps.
 
-Go to [https://dsn.adobe.com/](https://dsn.adobe.com/) and navigate to **Setup**.
+Go to [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} and navigate to **Setup**.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -51,7 +51,7 @@ Keep this screen open as you'll need it in the next steps.
 
 ## Next Steps
 
-Go to [Create your Datastream](./ex3.md)
+Go to [Create your Datastream](./ex3.md){target="_blank"}
 
 Go back to [Getting Started](./getting-started.md){target="_blank"}
 

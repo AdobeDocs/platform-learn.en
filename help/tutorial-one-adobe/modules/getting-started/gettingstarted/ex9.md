@@ -10,7 +10,7 @@ Below is an overview of the prework that is needed prior to joining a live works
 
 ## Adobe Creative Cloud
 
-Go to [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud). 
+Go to [https://creativecloud.adobe.com/apps/download/creative-cloud](https://creativecloud.adobe.com/apps/download/creative-cloud){target="_blank"}. 
 
 ![Adobe I/O New Integration](./images/cc.png)
 

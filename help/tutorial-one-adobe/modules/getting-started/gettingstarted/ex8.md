@@ -9,11 +9,11 @@ exl-id: fc1ee238-cce8-40a9-aba7-3605019a0077
 
 >[!IMPORTANT]
 >
->If you're not an Adobe employee, follow the instructions to [install Postman](./ex7.md). The below instructions are only intended for Adobe employees.
+>If you're not an Adobe employee, follow the instructions to [install Postman](./ex7.md){target="_blank"}. The below instructions are only intended for Adobe employees.
 
 ## Install PostBuster
 
-Go to [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542). 
+Go to [https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542](https://adobe.service-now.com/esc?id=adb_esc_kb_article&sysparm_article=KB0020542){target="_blank"}. 
 
 Click to download the latest release of **PostBuster**.
 
@@ -27,7 +27,7 @@ Once the download has completed and has been installed, open PostBuster. You sho
 
 ![PostBuster](./images/pb3.png)
 
-Download [postbuster.json.zip](./../../../assets/postman/postbuster.json.zip) and extract it on your desktop.
+Download [postbuster.json.zip](./../../../assets/postman/postbuster.json.zip){target="_blank"} and extract it on your desktop.
 
 ![PostBuster](./images/pbpb.png)
 

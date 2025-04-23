@@ -7,7 +7,7 @@ exl-id: d36057b4-64c6-4389-9612-d3c9cf013117
 ---
 # Create your Datastream
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}. 
 
 ![DSN](./images/launchprop.png)
 
@@ -95,7 +95,7 @@ Your changes are now being published and will be ready in a couple of minutes, a
 
 ## Create your Datastream for Mobile
 
-Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). 
+Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/){target="_blank"}. 
 
 Click **[!UICONTROL Datastreams]**.
 
@@ -169,7 +169,7 @@ Your changes are now being published and will be ready in a couple of minutes, a
 
 ## Next Steps
 
-Go to [Use the website](./ex4.md)
+Go to [Use the website](./ex4.md){target="_blank"}
 
 Go back to [Getting Started](./getting-started.md){target="_blank"}
 

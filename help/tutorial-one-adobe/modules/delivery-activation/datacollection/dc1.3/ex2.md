@@ -15,7 +15,7 @@ After logging in, you'll land on the homepage of Adobe Experience Platform.
 
 ![Data Ingestion](./../dc1.2/images/home.png)
 
-Before you continue, you need to select a **sandbox**. The sandbox to select is named ``--aepSandboxName--``. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
+Before you continue, you need to select a **sandbox**. The sandbox to select is named `--aepSandboxName--`. After selecting the appropriate sandbox, you'll see the screen change and now you're in your dedicated sandbox.
 
 ![Data Ingestion](./../dc1.2/images/sb1.png)
 
@@ -92,7 +92,7 @@ Click **Create**.
 
 ![FAC](./images/fdb8.png)
 
-You'll then see this. You can click any schema and review the information. As an example, click **--aepUserLdap--_PERSONS**.
+You'll then see this. You can click any schema and review the information. As an example, click **`--aepUserLdap--_PERSONS`**.
 
 ![FAC](./images/fdb9.png)
 
