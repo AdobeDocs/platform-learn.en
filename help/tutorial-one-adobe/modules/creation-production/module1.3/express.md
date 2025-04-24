@@ -8,11 +8,15 @@ doc-type: Tutorial
 ---
 # 1.3 Adobe Express and Adobe Experience Cloud
 
-Learn how to automatie creative workflows with Workfront Fusion.
+With a well-oiled content supply chain, marketing teams can keep up with the insatiable demand for content and keep campaigns running smoothly. In this exercise, you'll learn how to leverage Adobe Express and AEM Assets to empower marketing teams to create stand-out, on-brand campaigns with ease and collaborate efficiently across teams -- all within and integrated and connected content ecosystem.
+
+You'll learn how to
+
+- Leverage locked Express templates and Brand Kits to create and iterate brand-approved content for local and seasonal campaigns- Use Firefly Custom Models trained to your unique brand style to create new backgrounds and content on the fly with Adobe Express- Search approved assets from Adobe Experience Manager to edit and personalize campaigns.
 
 ## Prerequisites
 
-- Access to Adobe Firefly [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}
+- Access to Adobe Express [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
 
 ## Exercises
 
