@@ -87,23 +87,24 @@ The mobile app push credential registration is required to authorize Adobe to se
 
 1. Select **[!UICONTROL Create push credential]**.
 
-1. From the **[!UICONTROL Platform]** drop-down, select the mobile operating system:
+
+    ![Create a new push credential configuration in Journey Optimizer](assets/add-push-credential-ios.png)
+
+1. From the **[!UICONTROL Platform]** drop-down, select the **iOS** operating system:
 
 
-    ![Push credential configuration in Journey Optimizer](assets/add-app-config-ios.png)
-
-    1. Enter the mobile app **[!UICONTROL App ID]**.
+    1. Enter the mobile app Bundle Id in the **[!UICONTROL App ID]** (iOS Bundle ID) field. For example, com.adobe.luma.tutorial.swiftui
     
     1. Enable the **[!UICONTROL Apply to all sandboxes]** option to make these Push credentials available across all sandboxes. If a specific sandbox has its own credentials for the same Platform and App ID pair, those sandbox-specific credentials will take precedence.
 
-    1. Switch on the **[!UICONTROL Manually enter push Credentials]** button to add your credentials.
     
-    1. Drag and drop your .p8 Apple Push Notification Authentication Key file obtained from the previous exercise.
+    1. Drag and drop your .p8 **Apple Push Notification Authentication Key** file obtained from the previous exercise.
 
-    1. Provide the **Key ID**. This is a 10 character string assigned during the creation of p8 auth key which you should have noted from the previous exercis
+    1. Provide the **[!UICONTROL Key ID]**, a 10-character string assigned during the creation of `p8` auth key. It can be found under the **[!UICONTROL Keys]** tab in the **Certificates, Identifiers and Profiles** page of the Apple Developer portal pages. (You should have noted during the previous exercise.)
     
-    1. Provide the **Team ID**. This is a string value which you should have noted from the previous exercise.
+    1. Provide the **[!UICONTROL Team ID]**. The Team ID is a value which can be found under the **Membership** tab or at the top of the Apple Developer portal page. (You should have noted during the previous exercise.)
 
+    ![Push credential configuration in Journey Optimizer](assets/add-app-config-ios.png)
 
 1. Click **[!UICONTROL Submit]** to create your push credential configuration.
 
@@ -133,7 +134,7 @@ Once you have created a push credential configuration, you must create a configu
 
 1. Select the same **[!UICONTROL App id]** as for your push credential configured above.
 
-1. Save your changes.
+1. Select **[!UICONTROL Submit]** to save your changes.
 
     ![Push channel configuration](assets/push-config-10.png)
     

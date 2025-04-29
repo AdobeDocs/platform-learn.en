@@ -49,13 +49,13 @@ In this lesson, you will
 >If you have setup your environment already as part of the [Journey Optimizer push messaging](journey-optimizer-push.md) lesson, you might already have performed some of the steps in this setup section.
 
 
-#### Create a channel configuration in Journey Optimizer
+### Create a channel configuration in Journey Optimizer
 
 To begin, you must create a channel configuration to be able to send in App messages notifications from Journey Optimizer.
 
 1. In the Journey Optimizer interface open the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu and then select **[!UICONTROL Create channel configuration]**.
 
-    ![](assets/push-config-9.png)
+    ![Create a channel configuration](assets/push-config-9.png)
 
 1. Enter a name and a description (optional) for the configuration.
 
@@ -76,9 +76,9 @@ To begin, you must create a channel configuration to be able to send in App mess
     >
     >For iOS and Android platforms, delivery is based solely on the app ID. If both apps share the same app ID, content will be delivered to both, regardless of the platform selected in the **[!UICONTROL Channel configuration]**.
 
-1. Save your changes.
+1. Select **[!UICONTROL Submit]** to save your changes.
 
-    ![](assets/inapp_config_10.png)
+    ![Configure the in-app channel](assets/inapp_config_10.png)
 
 ### Update datastream configuration
 
