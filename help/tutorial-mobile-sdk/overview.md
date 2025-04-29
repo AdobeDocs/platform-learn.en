@@ -53,7 +53,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required user-
 * In Data Collection, you must have:
   * **[!UICONTROL Platforms]**&mdash;permission item **[!UICONTROL Mobile]**
   * **[!UICONTROL Property Rights]**&mdash;permission items to **[!UICONTROL Develop]**, **[!UICONTROL Approve]**, **[!UICONTROL Publish]**, **[!UICONTROL Manage Extensions]**, and **[!UICONTROL Manage Environments]**.
-  * **[!UICONTROL Company Rights]**&mdash;permission items to **[!UICONTROL Manage Properties]** and, if completing the optional push messaging lesson, **[!UICONTROL Manage App Configurations]**
+  * **[!UICONTROL Company Rights]**&mdash;permission items to **[!UICONTROL Manage Properties]**
   
     For more information on tag permissions, see [User permissions for tags](https://experienceleague.adobe.com/docs/experience-platform/tags/admin/user-permissions.html?lang=en){target="_blank"} in the product documentation.
 * In Experience Platform, you must have:

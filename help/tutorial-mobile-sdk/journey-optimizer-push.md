@@ -25,7 +25,8 @@ Journey Optimizer allows you to create journeys and send messages to targeted au
 * Successfully built and run the app with SDKs installed and configured.
 * Set up the app for Adobe Experience Platform.
 * Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Journey Optimizer features.
-  * Create an app surface. 
+  * Create an push credential. 
+  * Create an push channel configuration. 
   * Create a journey.
   * Create a message.
   * Create message presets.
@@ -37,7 +38,7 @@ Journey Optimizer allows you to create journeys and send messages to targeted au
 In this lesson, you will
 
 * Register App ID with the Apple Push Notification service (APNs).
-* Create an App Surface in Journey Optimizer.
+* Create a channel configuration in Journey Optimizer.
 * Update your schema to include push messaging fields.
 * Install and configure the Journey Optimizer tag extension.
 * Update your app to register the Journey Optimizer tag extension.
@@ -68,28 +69,75 @@ The following steps are not Adobe Experience Cloud-specific and are designed to 
 1. Select **[!UICONTROL Continue]**.
    ![configure new key](assets/mobile-push-apple-dev-config-key.png)
 1. Review the configuration and select **[!UICONTROL Register]**.
-1. Download the `.p8` private key. It is used in the App Surface configuration later in this lesson.
-1. Make note of the **[!UICONTROL Key ID]**. It is used in the App Surface configuration.
-1. Make note of the **[!UICONTROL Team ID]**. It is used in the App Surface configuration.
+1. Download the `.p8` private key. It is used in the Journey Optimizer channel configuration in the next exercise.
+1. Make note of the **[!UICONTROL Key ID]**. It is used in the Journey Optimizer channel configuration.
+1. Make note of the **[!UICONTROL Team ID]**. It is used in the Journey Optimizer channel configuration.
    ![Key Details](assets/push-apple-dev-key-details.png)
 
 Additional documentation can be [found here](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
-#### Add an app surface in Data Collection
 
-1. From the [Data Collection interface](https://experience.adobe.com/data-collection/), select **[!UICONTROL App Surfaces]** in the left-hand panel.
-1. To create a configuration, select **[!UICONTROL Create App Surface]**.
-![app surface home](assets/push-app-surface.png)
-1. Enter a **[!UICONTROL Name]** for the configuration, for example `Luma App Tutorial`  .
-1. From **[!UICONTROL Mobile Application Configuration]**, select **[!UICONTROL Apple iOS]**.
-1. Enter the mobile app Bundle Id in the **[!UICONTROL App ID (iOS Bundle ID)]** field. For example,  `com.adobe.luma.tutorial.swiftui`. 
-1. Switch on the **[!UICONTROL Push Credentials]** toggle to add your credentials.
-1. Drag and drop your `.p8` **Apple Push Notification Authentication Key** file.
-1. Provide the **[!UICONTROL Key ID]**, a 10-character string assigned during the creation of `p8` auth key. It can be found under the **[!UICONTROL Keys]** tab in the **Certificates, Identifiers and Profiles** page of the Apple Developer portal pages. See also [Create a private key](#create-a-private-key).
-1. Provide the **[!UICONTROL Team ID]**. The Team ID is a value which can be found under the **Membership** tab or at the top of the Apple Developer portal page. See also [Create a private key](#create-a-private-key).
-1. Select **[!UICONTROL Save]**.
+#### Add your app push credentials in Journey Optimizer
 
-   ![app surface configuration](assets/push-app-surface-config.png)
+Next you need to add your mobile application push credentials in Journey Optimizer. (In earlier versions of the product, these were added as part of the "App Surface" configuration in Data Collection).
+
+The mobile app push credential registration is required to authorize Adobe to send push notifications on your behalf. Refer to the steps detailed below:
+
+1. In the Journey Optimizer interface, open the **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** menu.
+
+1. Select **[!UICONTROL Create push credential]**.
+
+
+    ![Create a new push credential configuration in Journey Optimizer](assets/add-push-credential-ios.png)
+
+1. From the **[!UICONTROL Platform]** drop-down, select the **iOS** operating system:
+
+
+    1. Enter the mobile app Bundle Id in the **[!UICONTROL App ID]** (iOS Bundle ID) field. For example, com.adobe.luma.tutorial.swiftui
+    
+    1. Enable the **[!UICONTROL Apply to all sandboxes]** option to make these Push credentials available across all sandboxes. If a specific sandbox has its own credentials for the same Platform and App ID pair, those sandbox-specific credentials will take precedence.
+
+    
+    1. Drag and drop your .p8 **Apple Push Notification Authentication Key** file obtained from the previous exercise.
+
+    1. Provide the **[!UICONTROL Key ID]**, a 10-character string assigned during the creation of `p8` auth key. It can be found under the **[!UICONTROL Keys]** tab in the **Certificates, Identifiers and Profiles** page of the Apple Developer portal pages. (You should have noted during the previous exercise.)
+    
+    1. Provide the **[!UICONTROL Team ID]**. The Team ID is a value which can be found under the **Membership** tab or at the top of the Apple Developer portal page. (You should have noted during the previous exercise.)
+
+    ![Push credential configuration in Journey Optimizer](assets/add-app-config-ios.png)
+
+1. Click **[!UICONTROL Submit]** to create your push credential configuration.
+
+#### Create a channel configuration for push in Journey Optimizer
+
+Once you have created a push credential configuration, you must create a configuration to be able to send push notifications from Journey Optimizer.
+
+1. In the Journey Optimizer interface open the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu and then select **[!UICONTROL Create channel configuration]**.
+
+    ![Create a new channel configuration](assets/push-config-9.png)
+
+1. Enter a name and a description (optional) for the configuration.
+
+    >[!NOTE]
+    >
+    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
+
+
+1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+
+1. Select the **Push** channel.
+
+
+1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more about marketing actions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+
+1. Choose your **[!UICONTROL Platform]**.
+
+1. Select the same **[!UICONTROL App id]** as for your push credential configured above.
+
+1. Select **[!UICONTROL Submit]** to save your changes.
+
+    ![Push channel configuration](assets/push-config-10.png)
+    
 
 ### Update datastream configuration
 

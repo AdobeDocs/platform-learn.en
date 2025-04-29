@@ -49,17 +49,36 @@ In this lesson, you will
 >If you have setup your environment already as part of the [Journey Optimizer push messaging](journey-optimizer-push.md) lesson, you might already have performed some of the steps in this setup section.
 
 
-### Add an app surface in Data Collection
+### Create a channel configuration in Journey Optimizer
 
-1. From the [Data Collection interface](https://experience.adobe.com/data-collection/), select **[!UICONTROL App Surfaces]** in the left-hand panel.
-1. To create a configuration, select **[!UICONTROL Create App Surface]**.
-![app surface home](assets/push-app-surface.png)
-1. Enter a **[!UICONTROL Name]** for the configuration, for example `Luma App Tutorial`  .
-1. From **[!UICONTROL Mobile Application Configuration]**, select **[!UICONTROL Apple iOS]**.
-1. Enter the mobile app Bundle Id in the **[!UICONTROL App ID (iOS Bundle ID)]** field. For example,  `com.adobe.luma.tutorial.swiftui`. 
-1. Select **[!UICONTROL Save]**.
+To begin, you must create a channel configuration to be able to send in App messages notifications from Journey Optimizer.
 
-   ![app surface configuration](assets/push-app-surface-config-inapp.png)
+1. In the Journey Optimizer interface open the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu and then select **[!UICONTROL Create channel configuration]**.
+
+    ![Create a channel configuration](assets/push-config-9.png)
+
+1. Enter a name and a description (optional) for the configuration.
+
+    >[!NOTE]
+    >
+    > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
+
+
+1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
+
+1. Select the **In-app messaging** channel.
+
+1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more about marketing actions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+
+1. Select the Platform for which you want to define the settings. This allows you to specify the target app for each platform and ensures consistent content delivery across multiple platforms.
+
+    >[!NOTE]
+    >
+    >For iOS and Android platforms, delivery is based solely on the app ID. If both apps share the same app ID, content will be delivered to both, regardless of the platform selected in the **[!UICONTROL Channel configuration]**.
+
+1. Select **[!UICONTROL Submit]** to save your changes.
+
+    ![Configure the in-app channel](assets/inapp_config_10.png)
 
 ### Update datastream configuration
 
