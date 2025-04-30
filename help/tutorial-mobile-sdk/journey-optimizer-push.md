@@ -90,19 +90,17 @@ The mobile app push credential registration is required to authorize Adobe to se
 
     ![Create a new push credential configuration in Journey Optimizer](assets/add-push-credential-ios.png)
 
-1. From the **[!UICONTROL Platform]** drop-down, select the **iOS** operating system:
+1. From the **[!UICONTROL Platform]** drop-down, select the **iOS** operating system.
 
-
-    1. Enter the mobile app Bundle Id in the **[!UICONTROL App ID]** (iOS Bundle ID) field. For example, com.adobe.luma.tutorial.swiftui
+1. Enter the mobile app Bundle Id in the **[!UICONTROL App ID]** (iOS Bundle ID) field. For example, com.adobe.luma.tutorial.swiftui
     
-    1. Enable the **[!UICONTROL Apply to all sandboxes]** option to make these Push credentials available across all sandboxes. If a specific sandbox has its own credentials for the same Platform and App ID pair, those sandbox-specific credentials will take precedence.
+1. Enable the **[!UICONTROL Apply to all sandboxes]** option to make these Push credentials available across all sandboxes. If a specific sandbox has its own credentials for the same Platform and App ID pair, those sandbox-specific credentials will take precedence.
 
-    
-    1. Drag and drop your .p8 **Apple Push Notification Authentication Key** file obtained from the previous exercise.
+1. Drag and drop your .p8 **Apple Push Notification Authentication Key** file obtained from the previous exercise.
 
-    1. Provide the **[!UICONTROL Key ID]**, a 10-character string assigned during the creation of `p8` auth key. It can be found under the **[!UICONTROL Keys]** tab in the **Certificates, Identifiers and Profiles** page of the Apple Developer portal pages. (You should have noted during the previous exercise.)
+1. Provide the **[!UICONTROL Key ID]**, a 10-character string assigned during the creation of `p8` auth key. It can be found under the **[!UICONTROL Keys]** tab in the **Certificates, Identifiers and Profiles** page of the Apple Developer portal pages. (You should have noted during the previous exercise.)
     
-    1. Provide the **[!UICONTROL Team ID]**. The Team ID is a value which can be found under the **Membership** tab or at the top of the Apple Developer portal page. (You should have noted during the previous exercise.)
+1. Provide the **[!UICONTROL Team ID]**. The Team ID is a value which can be found under the **Membership** tab or at the top of the Apple Developer portal page. (You should have noted during the previous exercise.)
 
     ![Push credential configuration in Journey Optimizer](assets/add-app-config-ios.png)
 
