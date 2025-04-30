@@ -69,9 +69,9 @@ The following steps are not Adobe Experience Cloud-specific and are designed to 
 1. Select **[!UICONTROL Continue]**.
    ![configure new key](assets/mobile-push-apple-dev-config-key.png)
 1. Review the configuration and select **[!UICONTROL Register]**.
-1. Download the `.p8` private key. It is used in the Journey Optimizer channel configuration in the next exercise.
-1. Make note of the **[!UICONTROL Key ID]**. It is used in the Journey Optimizer channel configuration.
-1. Make note of the **[!UICONTROL Team ID]**. It is used in the Journey Optimizer channel configuration.
+1. Download the `.p8` private key. It is used in the next exercise when you configure your Journey Optimizer push credential.
+1. Make note of the **[!UICONTROL Key ID]**. It is used in the next exercise when you configure your Journey Optimizer push credential.
+1. Make note of the **[!UICONTROL Team ID]**. It is used in the next exercise when you configure your Journey Optimizer push credential.
    ![Key Details](assets/push-apple-dev-key-details.png)
 
 Additional documentation can be [found here](https://help.apple.com/developer-account/#/devcdfbb56a3).
