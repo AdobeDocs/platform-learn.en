@@ -15,7 +15,7 @@ Go to [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} and navi
 
 ![DSN](./images/dsnsetup.png)
 
-In the **Environment** dropdown, select your AEP instance and sandbox.
+In the **Environment** dropdown, select your instance and sandbox.
 
 ![DSN](./images/dsnh1.png)
 

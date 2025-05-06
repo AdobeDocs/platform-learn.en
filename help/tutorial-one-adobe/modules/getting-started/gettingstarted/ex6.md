@@ -16,6 +16,11 @@ Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/con
 ![Adobe I/O New Integration](./images/iohome.png){zoomable="yes"}
 
 Make sure to select the correct instance in the top right corner of your screen. Your instance is `--aepImsOrgName--`. 
+
+>[!NOTE]
+>
+> The below screenshot shows a specific org being selected. When you are going through this tutorial, it is very likely that your org has a different name. When you signed up for this tutorial, you were provided with the environment details to use, please follow those instructions.
+
 Next, select **Create new project**.
 
 ![Adobe I/O New Integration](./images/iocomp.png){zoomable="yes"}

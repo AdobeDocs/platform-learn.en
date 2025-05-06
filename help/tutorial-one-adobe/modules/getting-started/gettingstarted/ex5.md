@@ -9,7 +9,7 @@ exl-id: a619dd84-5c9e-4c1e-a753-2d98f50f4cfb
 
 ## Download the app
 
-Go to [https://bit.ly/dx-demo-app](https://bit.ly/dx-demo-app){target="_blank"} on your computer. You'll then see this.
+Go to [https://dsn.adobe.com/install](https://dsn.adobe.com/install){target="_blank"} on your computer. Log in using your Adobe ID, you'll then see this.
 
 ![DSN](./images/mobileapp.png)
 
