@@ -5,7 +5,7 @@ exl-id: dfc5abc8-0e79-454a-b1bb-6a42b1219771
 ---
 # Perform the initial Data Collection setup
 
-Migrating from Target SDK to Optimize SDK requires an initial setup to enable proper data capture, features, and functions of Optimize SDK. The following steps must be completed before any website implementation changes take place:
+Migrating from Target SDK to Optimize SDK requires an initial setup to enable proper data capture, features, and functions of Optimize SDK. The following steps must be completed before any mobile app implementation changes take place:
 
 - [Configure the appropriate permissions](https://experienceleague.adobe.com/en/docs/platform-learn/implement-web-sdk/overview#permissions){target="_blank"} in the Adobe Admin Console for Data Collection
 - [Configure an XDM schema](https://experienceleague.adobe.com/en/docs/platform-learn/implement-mobile-sdk/initial-configuration/create-schema){target="_blank"} for passing structured data to the Edge Network  
