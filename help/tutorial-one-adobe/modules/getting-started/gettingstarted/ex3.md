@@ -11,6 +11,15 @@ Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe
 
 ![DSN](./images/launchprop.png)
 
+Before you continue, make sure that you have selected the correct environment by using the environment switcher in the top right corner of your screen. The right environment to use is called `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+> The below screenshot shows a specific org being selected. When you are going through this tutorial, it is very likely that your org has a different name. When you signed up for this tutorial, you were provided with the environment details to use, please follow those instructions.
+
+
+![DSN](./images/org.png)
+
 In the left menu, click **[!UICONTROL Tags]**. After the previous exercise, you now have 3 Data Collection properties: one for web, one for mobile and one for the CX app.
 
 ![DSN](./images/launchprop1.png)
@@ -27,13 +36,17 @@ Click **[!UICONTROL Datastreams]**.
 
 In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxName--`.
 
+>[!NOTE]
+>
+> The below screenshot shows a specific sandbox being selected. When you are going through this tutorial, it is very likely that your sandbox has a different name. When you signed up for this tutorial, you were provided with the environment details to use, please follow those instructions.
+
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 
 Click **[!UICONTROL New Datastream]**.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1.png)
 
-For the **[!UICONTROL Name]**, and for the optional description, enter `--aepUserLdap-- - One Adobe Datastream`. For **Mapping Schema**, select **Demo System - Event Schema for Website (Global v1.1)**. Click **Save**.
+For the **Name**, and for the optional description, enter `--aepUserLdap-- - One Adobe Datastream`. For **Mapping Schema**, select **Demo System - Event Schema for Website (Global v1.1)**. Click **Save**.
 
 ![Name the Edge Configuration and save](./images/edgeconfig2.png)
 
@@ -102,6 +115,10 @@ Click **[!UICONTROL Datastreams]**.
 ![Click Datastream icon in the left navigation](./images/edgeconfig1a.png)
 
 In the top right corner of your screen, select your sandbox name, which should be `--aepSandboxName--`.
+
+>[!NOTE]
+>
+> The below screenshot shows a specific sandbox being selected. When you are going through this tutorial, it is very likely that your sandbox has a different name. When you signed up for this tutorial, you were provided with the environment details to use, please follow those instructions.
 
 ![Click Edge Configuration icon in the left navigation](./images/edgeconfig1b.png)
 

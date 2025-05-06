@@ -9,15 +9,16 @@ exl-id: 3618dacb-2203-4d19-ae51-f78415a693fd
 
 ## About the Chrome extension
 
-The documentation has been made generic so that it can easily be reused by anyone, using any Adobe Experience Platform instance. 
-In order to make the documentation reusable, **Environment Variables** were introduced in the documentation, which means that you'll find the below **placeholders** in the documentation. Every placeholder is a specific variable for a specific environment, and the Chrome extension will change that variable for you to make it easy for you to copy code and text from the tutorial pages and paste it in the various user interfaces that you'll be using as part of the tutorial.
+This tutorial has been made generic so that it can easily be reused by anyone, using any Adobe Experience Cloud instance. 
+
+In order to make the documentation reusable, **Environment Variables** were introduced in the tutorial, which means that you'll find the below **placeholders** in the documentation. Every placeholder is a specific variable for a specific environment, and the Chrome extension will change that variable for you to make it easy for you to copy code and text from the tutorial pages and paste it in the various user interfaces that you'll be using as part of the tutorial.
 
 An example of such values can be found below. Currently, these values can't be used yet but as soon as you install and activate the Chrome extension, you'll see these variables change into normal text that you can copy and reuse.
 
 | Name     | Key | Example |
 |:-------------:| :---------------:| :---------------:|
-| AEP IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
-| AEP IMS Org Name         | `--aepImsOrgName--` |`Experience Platform International`|
+| IMS Org ID         | `--aepImsOrgId--` |`907075E95BF479EC0A495C73@AdobeOrg`|
+| IMS Org Name         | `--aepImsOrgName--` |`Experience Platform International`|
 | AEP Tenant ID         | `--aepTenantId--` | `_experienceplatform` |
 | AEP Sandbox Name         | `--aepSandboxName--` | `one-adobe` |
 | Learner Profile LDAP        | `--aepUserLdap--` | `vangeluw`|
