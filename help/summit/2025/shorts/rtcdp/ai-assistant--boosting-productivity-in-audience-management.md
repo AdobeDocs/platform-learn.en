@@ -1,0 +1,17 @@
+---
+title: AI Assistant - Boosting Productivity in Audience Management
+description: See how Adobe's AI Assistant simplifies audience management tasks, provides insights, and forecasts trends for marketers.
+doc-type: Short Video
+duration: 159
+index: no
+hide: yes
+hidefromtoc: yes
+recommendations: noCatalog, noDisplay
+---
+
+# AI Assistant - Boosting Productivity in Audience Management
+
+See how Adobe's AI Assistant simplifies audience management tasks, provides insights, and forecasts trends for marketers.
+
+<!-- 82_OS512_3442427_158_ai-assistant-boosting-productivity-in-audience-management -->
+>[!VIDEO](https://video.tv.adobe.com/v/3458182/?learn=on&enablevpops=true)

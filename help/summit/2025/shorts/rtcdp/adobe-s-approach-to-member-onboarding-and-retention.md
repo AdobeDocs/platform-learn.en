@@ -1,0 +1,17 @@
+---
+title: Adobe's Approach to Member Onboarding and Retention
+description: Explore how Adobe uses data-driven insights and AJO to enhance member onboarding and drive retention.
+doc-type: Short Video
+duration: 36
+index: no
+hide: yes
+hidefromtoc: yes
+recommendations: noCatalog, noDisplay
+---
+
+# Adobe's Approach to Member Onboarding and Retention
+
+Explore how Adobe uses data-driven insights and AJO to enhance member onboarding and drive retention.
+
+<!-- 62_S655_3442541_35_adobes-approach-to-member-onboarding-and-retention -->
+>[!VIDEO](https://video.tv.adobe.com/v/3458282/?learn=on&enablevpops=true)
