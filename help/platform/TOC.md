@@ -292,7 +292,7 @@ Campaigns
   + [Building better experiences with customer profiles](/help/platform/industry/building-better-experiences-with-customer-profiles.md)
 + Summit {#summit}
   + 2025 {#2025}
-    + Shorts #{shorts}
+    + Shorts {#shorts}
       + Platform {#platform}
         + [Video short](/help/summit/2025/shorts/platform/adobe-experience-platform--building-connected-customer-journeys.md)
         + [Video short](/help/summit/2025/shorts/platform/adobe-s-internal-use-of-aep--driving-experience-led-growth.md)
