@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: a2d894b8-17ca-4c41-bdaf-128b14e159d1
 ---
-
 # Managing Data Governance and Access in AEP
 
 Discover how to govern data effectively in Adobe Experience Platform using role-based and attribute-based access controls.

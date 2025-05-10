@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: ffa91fcc-4cb0-4597-a7dc-9dc8c0850a06
 ---
-
 # Audience Portal: Centralizing Data for Better Marketing Decisions
 
 Explore how the Audience Portal in Adobe Real-Time CDP unifies customer data, enabling advanced audience management and real-time activation.

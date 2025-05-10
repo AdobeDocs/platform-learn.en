@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: d8111a39-ee62-46d7-9aa2-4deab0238951
 ---
-
 # How Real-Time CDP Collaboration Works
 
 Learn the step-by-step process of onboarding audiences, collaborating with publishers, and activating campaigns using Adobe's Real-Time CDP Collaboration.

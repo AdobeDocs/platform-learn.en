@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 49539d09-b5cc-48bd-b8e2-899af4967355
 ---
-
 # Federated Audience Composition: Expanding Audience Reach
 
 Learn how Federated Audience Composition allows you to connect external data warehouses to Real-Time CDP for in-the-moment marketing.

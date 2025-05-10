@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 3bb56992-4fcd-45db-84d4-919c835d3c21
 ---
-
 # Federated Audience Composition: Unifying Data for Real-Time Marketing
 
 Learn how Federated Audience Composition in Adobe Real-Time CDP enables seamless integration of external data warehouses for in-the-moment marketing activation.

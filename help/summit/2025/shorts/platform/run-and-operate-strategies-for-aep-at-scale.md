@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 357b95ed-4f76-4870-8fca-6b0df5519302
 ---
-
 # Run and Operate Strategies for AEP at Scale
 
 Understand the importance of run and operate strategies, including governance, monitoring, and ROI measurement, for scaling AEP effectively.

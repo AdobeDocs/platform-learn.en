@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: f223051e-44fb-468f-a40b-99d7360826cc
 ---
-
 # Introduction to Real-Time CDP Collaboration
 
 Discover how Adobe's Real-Time CDP Collaboration simplifies data clean rooms for marketers, enabling seamless audience discovery, activation, and measurement.

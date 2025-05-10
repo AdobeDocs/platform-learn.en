@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: fa1b2945-f4cf-46e5-8bb5-914ef58be4c0
 ---
-
 # Single vs Multi-Sandbox Approach in AEP
 
 Explore the trade-offs between single and multi-sandbox strategies for managing data and workflows in Adobe Experience Platform.

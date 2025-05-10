@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 1d530a48-8441-4c46-9edb-530452c5cb8f
 ---
-
 # Best Practices for Data Modeling in Adobe Experience Platform
 
 Understand the importance of schema design, extensibility, and avoiding costly mistakes in Adobe Experience Platform.

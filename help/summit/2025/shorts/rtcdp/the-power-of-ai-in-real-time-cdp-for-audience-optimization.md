@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 97788fad-45c3-495a-8e59-589dab815c8c
 ---
-
 # The Power of AI in Real-Time CDP for Audience Optimization
 
 Discover how AI Assistant for Audiences in Adobe Real-Time CDP helps marketers optimize audience strategies with size estimation, propensity scoring, and real-time insights.

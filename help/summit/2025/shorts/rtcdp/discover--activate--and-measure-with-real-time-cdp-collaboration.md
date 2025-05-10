@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: e80c4314-da35-43a4-aaee-3a0e1691e270
 ---
-
 # Discover, Activate, and Measure with Real-Time CDP Collaboration
 
 Dive into the core capabilities of Adobe's Real-Time CDP Collaboration: audience discovery, secure activation, and performance measurement.

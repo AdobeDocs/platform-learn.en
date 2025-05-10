@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 493c93e1-2e19-4d34-b361-d5c642ce8d6a
 ---
-
 # Key Takeaways for Deploying AEP at Scale
 
 Understand the critical considerations for deploying Adobe Experience Platform, including governance, growth planning, and architecture.

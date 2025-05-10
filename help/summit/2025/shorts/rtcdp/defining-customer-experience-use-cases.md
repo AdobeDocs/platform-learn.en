@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 2f74b038-f2c2-4c63-bfa4-e554d5522316
 ---
-
 # Defining Customer Experience Use Cases
 
 Discover Adobe's five-question framework for defining customer experience use cases to align teams and drive business outcomes.

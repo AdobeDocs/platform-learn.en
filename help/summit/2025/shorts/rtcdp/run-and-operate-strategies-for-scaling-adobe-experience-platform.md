@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: b13a8f0d-ceba-42ae-a240-ab3985f74d86
 ---
-
 # Run and Operate Strategies for Scaling Adobe Experience Platform
 
 Learn how Adobe ensures scalable and reliable operations for AEP with clear processes and tooling strategies.

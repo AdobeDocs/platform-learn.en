@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 2b2d8cb2-012a-4683-9643-3287b58840f2
 ---
-
 # End-to-End Use Case Activation Process
 
 Understand the six phases of Adobe's end-to-end use case activation process, from ideation to optimization.

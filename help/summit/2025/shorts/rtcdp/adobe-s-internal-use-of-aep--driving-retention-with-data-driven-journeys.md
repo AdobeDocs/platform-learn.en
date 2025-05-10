@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: 0c3d299d-134c-447a-af0b-1a3d60d834de
 ---
-
 # Adobe's Internal Use of AEP: Driving Retention with Data-Driven Journeys
 
 Explore how Adobe uses AEP to drive retention and engagement by leveraging data-driven insights and personalized customer journeys.

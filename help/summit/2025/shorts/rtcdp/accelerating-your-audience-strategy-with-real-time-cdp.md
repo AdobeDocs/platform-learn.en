@@ -7,8 +7,8 @@ index: no
 hide: yes
 hidefromtoc: yes
 recommendations: noCatalog, noDisplay
+exl-id: b4155fc1-aa0f-4e7b-bbfb-f6833c04c300
 ---
-
 # Accelerating Your Audience Strategy with Real-Time CDP
 
 Learn how to accelerate your audience strategy by leveraging Real-Time CDP to unify data, personalize experiences, and drive engagement.
