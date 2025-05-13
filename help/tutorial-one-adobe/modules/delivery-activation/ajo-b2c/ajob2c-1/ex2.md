@@ -3,6 +3,7 @@ title: Journey Optimizer - Create your fragments
 description: Journey Optimizer - Create your fragments
 kt: 5342
 doc-type: tutorial
+exl-id: 4e71164d-9e25-46aa-a4b8-a2f6535c491e
 ---
 # 3.1.2 Create fragments to be used in your message
 

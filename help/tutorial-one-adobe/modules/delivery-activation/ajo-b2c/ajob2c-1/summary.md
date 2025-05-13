@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer - Summary
 description: Adobe Journey Optimizer - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: 101eae11-113d-43d7-9c68-4360b52b46b8
 ---
 # Summary & benefits
 

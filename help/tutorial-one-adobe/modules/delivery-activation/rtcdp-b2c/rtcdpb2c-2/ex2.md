@@ -3,6 +3,7 @@ title: Intelligent Services - Customer AI Create a New Instance (Configure)
 description: Customer AI - Create a New Instance (Configure)
 kt: 5342
 doc-type: tutorial
+exl-id: faf84607-39fc-4e02-b38b-8fb0c64699e7
 ---
 # 2.2.2 Customer AI - Create a New Instance (Configure)
 

@@ -3,6 +3,7 @@ title: Foundation - Real-time Customer Profile - Visualize your own Real-time Cu
 description: Foundation - Real-time Customer Profile - Visualize your own Real-time Customer Profile - UI
 kt: 5342
 doc-type: tutorial
+exl-id: 66cb9b20-46e0-4b4a-af38-aa152bba342a
 ---
 # 2.1.2 Visualize your own Real-time Customer Profile - UI
 

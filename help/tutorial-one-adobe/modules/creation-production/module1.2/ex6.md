@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: f02ecbe4-f1d7-4907-9bbc-04e037546091
 ---
 # 1.2.6 Frame I/O to Workfront Fusion to AEM Assets
 
@@ -52,7 +53,7 @@ You should then see this. Click **Copy address to clipboard**.
 
 ## 1.2.6.2 Configure Webhook in Frame.io
 
-Go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Custom Actions**.
+Go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Webhooks**.
 
 ![Frame IO](./images/aemf7.png)
 
@@ -365,4 +366,3 @@ Go to [Summary and Benefits of Creative Workflow Automation with Workfront Fusio
 Go back to [Creative Workflow Automation with Workfront Fusion](./automation.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}
-              

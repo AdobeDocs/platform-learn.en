@@ -3,6 +3,7 @@ title: Foundation - Real-time Customer Profile - From unknown to known on the we
 description: Foundation - Real-time Customer Profile - From unknown to known on the website
 kt: 5342
 doc-type: tutorial
+exl-id: f33a7448-e1b9-47e7-97c7-509ad36cf991
 ---
 # 2.1.1 From unknown to known on the website
 

@@ -4,6 +4,7 @@ description: Foundation - Real-time Customer Profile
 kt: 5342
 audience: Data Engineer, Data Architect, Marketer
 doc-type: tutorial
+exl-id: 18b22ac4-313b-4b54-b480-dd6c27858e31
 ---
 # 2.1 Real-time Customer Profile
 

@@ -3,6 +3,7 @@ title: Foundation - Data Ingestion - Data Ingestion from Offline Sources
 description: Foundation - Data Ingestion - Data Ingestion from Offline Sources
 kt: 5342
 doc-type: tutorial
+exl-id: 9fce6ece-f454-45de-9c95-35d604b3ae95
 ---
 # 1.2.5 Data Landing Zone
 

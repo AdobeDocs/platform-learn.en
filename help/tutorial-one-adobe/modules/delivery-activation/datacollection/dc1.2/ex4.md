@@ -3,6 +3,7 @@ title: Foundation - Data Ingestion - Data Ingestion from Offline Sources
 description: Foundation - Data Ingestion - Data Ingestion from Offline Sources
 kt: 5342
 doc-type: tutorial
+exl-id: d0e6b5d4-0d03-4e80-965f-ee583373a2ad
 ---
 # 1.2.4 Data Ingestion from Offline Sources
 

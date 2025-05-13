@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 0b20ba91-28d4-4f4d-8abe-074f802c389e
 ---
 # 1.2.4 Automation using Connectors
 
@@ -21,6 +22,10 @@ Click the arrow to open the dropdown menu and select **Clone**.
 ![WF Fusion](./images/wffc2.png)
 
 Set the **Name** of the cloned scenario to `--aepUserLdap-- - Firefly + Photoshop` and select the appropriate **Target team**. Click **Add** to add a new webhook.
+
+>[!NOTE]
+>
+>You may not see the option to select a **Target Team**. This option is only shown if you're a user in more then 1 Team in Workfront Fusion. If you don't see this option, it simply means that you have only been added to 1 Team so no choice is needed.
 
 ![WF Fusion](./images/wffc3.png)
 
@@ -208,7 +213,7 @@ Paste the name **2048x2048-background** in the Workfront Fusion dialog.
 
 Scroll down until you see **Input**. You now need to define what needs to be inserted in the background layer. In this case, you need to select the output of the **Adobe Firefly** module, which contains the dynamically generated image.
 
-For **Storage**, select **External**. For **File location**, copy and paste the variable `{{XX.details[].url}}` from the output of the **Adobe Firefly** module. Replace **XX** in the variable by the sequence number of the **Adobe Firefly** module, which in this example is **22**.
+For **Storage**, select **External**. For **File location**, you will need to copy and paste the variable `{{XX.details[].url}}` from the output of the **Adobe Firefly** module but you need to replace **XX** in the variable by the sequence number of the **Adobe Firefly** module, which in this example is **22**.
 
 ![WF Fusion](./images/wffc28.png)
 

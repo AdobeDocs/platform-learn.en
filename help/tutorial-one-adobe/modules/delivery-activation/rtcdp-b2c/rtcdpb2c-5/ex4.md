@@ -3,6 +3,7 @@ title: Data Collection & Real-time Server Side Forwarding - Create and configure
 description: Create and configure a Google Cloud Function
 kt: 5342
 doc-type: tutorial
+exl-id: bdee5a9b-2f1a-467e-9edc-a2e10a263694
 ---
 # 2.5.4 Forward events to GCP Pub/Sub
 

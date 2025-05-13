@@ -3,6 +3,7 @@ title: Adobe Experience Platform Data Collection & Real-time Event Forwarding Si
 description: Create an Adobe Experience Platform Data Collection Event Forwarding property
 kt: 5342
 doc-type: tutorial
+exl-id: ac6d09dd-ae8f-4b8a-b543-e4b96aed2c38
 ---
 # 2.5.1 Create an Adobe Experience Platform Data Collection Event Forwarding property
 

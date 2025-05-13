@@ -3,6 +3,7 @@ title: Real-time CDP - Destinations SDK
 description: Real-time CDP - Destinations SDK
 kt: 5342
 doc-type: tutorial
+exl-id: c18acbf5-92f5-4cd2-a5aa-a5e9debb98c9
 ---
 # 2.3.6 Destinations SDK
 

@@ -3,6 +3,7 @@ title: Query Service - Power BI/Tableau
 description: Query Service - Power BI/Tableau
 kt: 5342
 doc-type: tutorial
+exl-id: 4c89fa24-44a5-4a9a-bb24-39ad4650c503
 ---
 # 2.1.5 Generate a dataset from a query
 

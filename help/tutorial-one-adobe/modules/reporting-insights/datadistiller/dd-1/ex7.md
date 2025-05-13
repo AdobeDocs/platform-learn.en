@@ -3,6 +3,7 @@ title: Query Service - Explore the dataset with Tableau
 description: Query Service - Explore the dataset with Tableau
 kt: 5342
 doc-type: tutorial
+exl-id: 33ab854d-fad7-497c-affa-f58e4299c0b3
 ---
 # 2.1.7 Query Service and Tableau
 

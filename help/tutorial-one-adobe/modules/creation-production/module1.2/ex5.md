@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 37de6ceb-833e-4e75-9201-88bddd38a817
 ---
 # 1.2.5 Frame.io and Workfront Fusion
 
@@ -243,7 +244,7 @@ You should now see a prompt inside Frame.io. Don't fill out the fields yet and d
 
 ![Frame IO](./images/frame38.png)
 
-Switch back to Workfront Fusion and click the bubble on the **Webhook response** module. You'll see that under **OUTPUT**, you see the body containing the JSON payload for the form. Click **Run once** again.
+Switch back to Workfront Fusion and click the bubble on the **Webhook response** module. You'll see that under **INPUT**, you see the body containing the JSON payload for the form. Click **Run once** again.
 
 ![Frame IO](./images/frame40.png)
 

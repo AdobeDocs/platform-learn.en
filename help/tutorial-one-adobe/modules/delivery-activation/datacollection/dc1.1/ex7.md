@@ -3,6 +3,7 @@ title: Foundation - Setup of Adobe Experience Platform Data Collection and the W
 description: Foundation - Setup of Adobe Experience Platform Data Collection and the Web SDK extension - XDM Schema requirements in Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
+exl-id: 124c9c54-27f1-4784-9a5c-2c9d8ba620d5
 ---
 # 1.1.7 XDM schema requirements in Adobe Experience Platform
 

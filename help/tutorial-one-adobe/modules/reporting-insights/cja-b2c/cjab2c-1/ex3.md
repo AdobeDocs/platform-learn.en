@@ -3,6 +3,7 @@ title: Customer Journey Analytics - Create a Data View
 description: Customer Journey Analytics - Create a Data View
 kt: 5342
 doc-type: tutorial
+exl-id: 048e4f0f-4713-4249-a118-88906b3ba5c0
 ---
 # 1.1.3 Create a Data View
 

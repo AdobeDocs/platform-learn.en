@@ -3,6 +3,7 @@ title: Audience Activation to Microsoft Azure Event Hub - Action
 description: Audience Activation to Microsoft Azure Event Hub - Action
 kt: 5342
 doc-type: tutorial
+exl-id: bff4d2ee-eaff-4b56-9fa0-4ffc3c368141
 ---
 # 2.4.7 End-to-end scenario
 

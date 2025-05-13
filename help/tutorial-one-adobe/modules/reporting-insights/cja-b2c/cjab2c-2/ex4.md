@@ -3,6 +3,7 @@ title: Ingest & Analyze Google Analytics data in Adobe Experience Platform with 
 description: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector - Load data from BigQuery into Adobe Experience Platform
 kt: 5342
 doc-type: tutorial
+exl-id: f58af1cf-6f2e-420c-9eed-29382806a9f4
 ---
 # 1.2.4 Load data from BigQuery into Adobe Experience Platform
 

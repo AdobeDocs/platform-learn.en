@@ -3,6 +3,7 @@ title: Customer Journey Analytics - Summary
 description: Customer Journey Analytics - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: c5191a76-928c-414c-b13c-ae8cc739ffd1
 ---
 # Summary & benefits
 

@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: b2ffab2f-566e-4d7d-9790-1bbba76f8732
 ---
 # 1.3 Adobe Express and Adobe Experience Cloud
 

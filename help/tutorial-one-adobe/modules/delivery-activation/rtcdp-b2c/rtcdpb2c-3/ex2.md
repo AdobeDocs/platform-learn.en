@@ -3,6 +3,7 @@ title: Real-time CDP - Build an audience and take action - Configure an Advertis
 description: Real-time CDP - Build an audience and take action - Configure an Advertising Destination like Google DV360
 kt: 5342
 doc-type: tutorial
+exl-id: 2498c80f-8ba8-4563-ac37-52f461f706f4
 ---
 # 2.3.2 Configure an Advertising Destination like Google DV360
 

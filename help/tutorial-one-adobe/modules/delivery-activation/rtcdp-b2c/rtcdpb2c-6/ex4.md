@@ -3,6 +3,7 @@ title: Install and configure Kafka Connect and the Adobe Experience Platform Sin
 description: Install and configure Kafka Connect and the Adobe Experience Platform Sink Connector
 kt: 5342
 doc-type: tutorial
+exl-id: 51ddfdfc-fa5c-4bf4-bfc2-b4a88b0b8a4d
 ---
 # 2.6.4 Install and configure Kafka Connect and the Adobe Experience Platform Sink Connector
 

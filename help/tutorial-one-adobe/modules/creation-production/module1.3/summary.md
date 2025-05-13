@@ -3,6 +3,7 @@ title: Summary and Benefits of Adobe Express and Adobe Experience Cloud
 description: Adobe Express and Adobe Experience Cloud - Summary
 kt: 5342
 doc-type: tutorial
+exl-id: d1d0462a-a2aa-4d16-bb4d-3d639ebd9c29
 ---
 # Summary & benefits
 

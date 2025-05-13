@@ -3,6 +3,7 @@ title: Journey Optimizer
 description: Summary & benefits
 kt: 5342
 doc-type: tutorial
+exl-id: c9923375-ba50-437c-9868-7a4b65b63ca0
 ---
 # Summary & benefits
 

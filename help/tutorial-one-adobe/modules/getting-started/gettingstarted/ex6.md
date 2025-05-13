@@ -95,6 +95,10 @@ Next, you need to select a product profile that defines what permissions are ava
 
 Select **Adobe Experience Platform - All Users - PROD**.
 
+>[!NOTE]
+>
+>The name of the Product Profile for AEP is dependent on how the environment was configured. If you don't see the above mentioned product profile, you may have a product profile that is called **Default Production All Access**. If you're not sure which one to choose, ask your AEP System Admin.
+
 Select **Save Configured API**.
 
 ![Azure Storage](./images/aep4.png){zoomable="yes"}

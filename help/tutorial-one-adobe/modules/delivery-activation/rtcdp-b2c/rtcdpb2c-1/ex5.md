@@ -3,6 +3,7 @@ title: See your Real-time Customer Profile in action in the Call Center
 description: See your Real-time Customer Profile in action in the Call Center
 kt: 5342
 doc-type: tutorial
+exl-id: d3bd34a1-5577-4da7-a5a5-0f186b1a73c2
 ---
 # 2.1.5 See your Real-time Customer Profile in action in the Call Center
 
