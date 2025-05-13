@@ -53,7 +53,7 @@ You should then see this. Click **Copy address to clipboard**.
 
 ## 1.2.6.2 Configure Webhook in Frame.io
 
-Go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Custom Actions**.
+Go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Webhooks**.
 
 ![Frame IO](./images/aemf7.png)
 

@@ -180,7 +180,7 @@ Select **Create**.
 
 ![Azure Storage](./images/az28.png){zoomable="yes"}
 
-After receiving your **SAS-token**, select **Copy**.
+After receiving your **Shared Access Signature**, select **Copy** to copy the URL.
 
 ![Azure Storage](./images/az29.png){zoomable="yes"}
 
