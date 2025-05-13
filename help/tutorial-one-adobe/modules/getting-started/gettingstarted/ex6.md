@@ -39,7 +39,7 @@ Select **Creative Cloud** and choose **Firefly - Firefly Services**, then select
 
 ![Adobe I/O New Integration](./images/api3.png){zoomable="yes"}
 
-Provide a name for your credential: `--aepUserLdap-- - One Adobe OAuth credential`and select **Next**.
+Provide a name for your credential: `--aepUserLdap-- - One Adobe OAuth credential` and select **Next**.
 
 ![Adobe I/O New Integration](./images/api4.png){zoomable="yes"}
 
@@ -117,7 +117,7 @@ Select **Edit Project**.
 
 ![Adobe I/O New Integration](./images/api14.png){zoomable="yes"}
 
-Enter a friendly name for your integration: `--aepUserLdap-- One Adobe tutorial`and select **Save**.
+Enter a friendly name for your integration: `--aepUserLdap-- One Adobe tutorial` and select **Save**.
 
 ![Adobe I/O New Integration](./images/api15.png){zoomable="yes"}
 
