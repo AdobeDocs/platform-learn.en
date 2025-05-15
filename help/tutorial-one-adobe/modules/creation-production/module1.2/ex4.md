@@ -120,9 +120,13 @@ Once you've filled out all the fields, click **Continue**. Your connection will 
 
 ![WF Fusion](./images/wffcff6.png)
 
-Next, select the variable **prompt** which is provided to the scenario by the incoming **Custom webhook**. Click **OK**.
+Next, select the variable **prompt** which is provided to the scenario by the incoming **Custom webhook**.
 
 ![WF Fusion](./images/wffcff7.png)
+
+Next, set the **Model version**  **prompt** to **image4 standard**. Click **OK**.
+
+![WF Fusion](./images/wffcff7b.png)
 
 Before you continue, you need to disable the old route in the scenario as for this exercise, you will only use the new route that you're configuring at the moment. To do that, click the **wrench** icon between the **Router** module and the **Iterator** module, and select **Disable route**.
 
@@ -256,8 +260,6 @@ You can now see that a new PSD file was generated successfully and stored in you
 
 ## 1.2.4.3 Change text layers of PSD file
 
-### Call To Action Text
-
 Next, hover over the **Adobe Photoshop - Apply PSD edits** module and click the **+** icon.
 
 ![WF Fusion](./images/wffc34.png)
@@ -272,67 +274,59 @@ Select **Edit text layers**.
 
 You should then see this. First, select your previously already configured Adobe Photoshop connection, which should be named `--aepUserLdap-- Adobe IO`. 
 
-You now need to define the location of the **Input file**, which is the output of the previous step and under **Layers**, you need to enter the **Name** of the text layer you want to change. 
+You now need to define the location of the **Input file**, which is the output of the previous step and under **Layers**, you will need to click **+ Add item** for each layer for which the text needs to change. 
 
 ![WF Fusion](./images/wffc37.png)
 
-For the **Input file**, select **Azure** for **Input file storage** and make sure to select the output from the previous request, **Adobe Photoshop - Apply PSD edits**, which you can take from here: `data[]._links.renditions[].href`
+For the **Input file**, select **Azure** for **Input file storage** and make sure to select the output from the previous request, **Adobe Photoshop - Apply PSD edits**, which you can define like this: ``{{XX.data[].`_links`.renditions[].href}}`` (replace XX by the sequence number of the previous module Adobe Photoshop - Apply PSD edits).
+
+Next, click **+Add item** under **Layers** to start adding the text layers that need to be updated.
 
 ![WF Fusion](./images/wffc37a.png)
 
-Open the file **citisignal-fiber.psd**. In the file, you'll notice that the layer containing the call to action is named **2048x2048-cta**.
+There are 2 changes to make, the CTA text and the button text in the file **citisignal-fiber.psd** need to be updated.
+
+To find the layer names, open the file **citisignal-fiber.psd**. In the file, you'll notice that the layer containing the call to action is named **2048x2048-cta**.
 
 ![WF Fusion](./images/wffc38.png)
 
-Enter the name **2048x2048-cta** under **Name** in the dialog.
+In the file **citisignal-fiber.psd**, you'll also notice that the layer containing the call to action is named **2048x2048-button-text**.
+
+![WF Fusion](./images/wffc44.png)
+
+You first need to configure the changes that need to happen to the layer **2048x2048-cta**. Enter the name **2048x2048-cta** under **Name** in the dialog.
 
 ![WF Fusion](./images/wffc39.png)
 
-Scroll down until you see **Text** > **Content**. Select the variable **cta** from the Webhook payload.
+Scroll down until you see **Text** > **Content**. Select the variable **cta** from the Webhook payload. Click **Add**.
 
 ![WF Fusion](./images/wffc40.png)
 
-Scroll down until you see **Output**. For **Storage**, select **Azure**. For **File location**, enter the below location. Please note the addition of the variable `{{timestamp}}` to the filename which is used to ensure that every file that is generated has a unique name. Also, set the **Type** to **vnd.adobe.photoshop**. Click **OK**.
+You should then see this. Click click **+Add item** under **Layers** to start adding the text layers that need to be updated.
+
+![WF Fusion](./images/wffc40a.png)
+
+Enter the name **2048x2048-button-text** under **Name** in the dialog.
+
+![WF Fusion](./images/wffc40b.png)
+
+Scroll down until you see **Text** > **Content**. Select the variable **button** from the Webhook payload. Click **Add**.
+
+![WF Fusion](./images/wffc40c.png)
+
+You should then see this. 
+
+![WF Fusion](./images/wffc40d.png)
+
+Scroll down until you see **Output**. For **Storage**, select **Azure**. For **File location**, enter the below location. Please note the addition of the variable `{{timestamp}}` to the filename which is used to ensure that every file that is generated has a unique name. Also, set the **Type** to **vnd.adobe.photoshop**. 
 
 `{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
 
 ![WF Fusion](./images/wffc41.png)
 
-### Button Text
+Set **Type** to **vnd.adobe.photoshop**. Click **OK**.
 
-Right-click the module you just created and select **Clone**. This will create a second similar module.
-
-![WF Fusion](./images/wffc42.png)
-
-Connect the cloned module to the previous **Adobe Photoshop - Edit text layers** module.
-
-![WF Fusion](./images/wffc42a.png)
-
-You should then see this. First, select your previously already configured Adobe Photoshop connection, which should be named `--aepUserLdap-- Adobe IO`. 
-
-You now need to define the location of the **Input file**, which is the output of the previous step and under **Layers**, you need to enter the **Name** of the text layer you want to change. 
-
-![WF Fusion](./images/wffc43.png)
-
-For the **Input file**, select **Azure** for **Input file storage** and make sure to select the output from the previous request, **Adobe Photoshop - Edit text layers**, which you can take from here: `data[]._links.renditions[].href`
-
-Open the file **citisignal-fiber.psd**. In the file, you'll notice that the layer containing the call to action is named **2048x2048-button-text**.
-
-![WF Fusion](./images/wffc44.png)
-
-Enter the name **2048x2048-button-text** under **Name** in the dialog.
-
-![WF Fusion](./images/wffc43.png)
-
-Scroll down until you see **Text** > **Content**. Select the variable **button** from the Webhook payload.
-
-![WF Fusion](./images/wffc45.png)
-
-Scroll down until you see **Output**. For **Storage**, select **Azure**. For **File location**, enter the below location. Please note the addition of the variable `{{timestamp}}` to the filename which is used to ensure that every file that is generated has a unique name. Also, set the **Type** to **vnd.adobe.photoshop**. Click **OK**.
-
-`{{1.AZURE_STORAGE_URL}}/{{1.AZURE_STORAGE_CONTAINER}}/citisignal-fiber-changed-text-{{timestamp}}.psd{{1.AZURE_STORAGE_SAS_WRITE}}`
-
-![WF Fusion](./images/wffc46.png)
+![WF Fusion](./images/wffc41a.png)
 
 Click **Save** to save your changes.
 
@@ -364,9 +358,13 @@ You should then see this. Paste the below payload in **Body**.
 
 ![WF Fusion](./images/wffc51.png)
 
-Copy and paste the variable `{{XX.data[]._links.renditions[].href}}` and replace **XX** by the sequence number of the last **Adobe Photoshop - Edit text layers** module, which in this case is **25**. Enable the checkbox for **Show advanced settings** and then click **Add item**.
+Copy and paste the variable `{{XX.data[]._links.renditions[].href}}` and replace **XX** by the sequence number of the last **Adobe Photoshop - Edit text layers** module, which in this case is **30**. 
 
 ![WF Fusion](./images/wffc52.png)
+
+Enable the checkbox for **Show advanced settings** and then click **Add item**.
+
+![WF Fusion](./images/wffc52b.png)
 
 In the field **Key**, enter `Content-Type`. In the field **Value**, enter `application/json`. Click **Add**.
 
