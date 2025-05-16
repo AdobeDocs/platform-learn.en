@@ -8,6 +8,7 @@ doc-type: Feature Video
 duration: 292
 last-substantial-update: 2025-05-15
 jira: KT-16585
+exl-id: 2937ad7d-b4f3-4980-bf70-1f83a5e86411
 ---
 # Identity graph linking rules - Graph Simulation
 
