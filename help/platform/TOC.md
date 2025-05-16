@@ -190,6 +190,7 @@ Campaigns
   + Identity graph linking rules {#graph-linking-rules}
     + [Overview](/help/platform/identities/identity-graph-linking-rules/overview.md)
     + [Graph simulation](/help/platform/identities/identity-graph-linking-rules/graph-simulation.md)
+    + [Identity settings](/help/platform/identities/identity-graph-linking-rules/identity-settings.md)
 + Intelligent Services {#intelligent-services}
   + [Overview](/help/platform/intelligent-services/introduction-to-intelligent-services.md)
   + [Attribution AI overview](/help/platform/intelligent-services/introduction-to-attribution-ai.md)
