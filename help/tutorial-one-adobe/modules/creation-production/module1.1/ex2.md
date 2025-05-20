@@ -9,13 +9,49 @@ exl-id: 5f9803a4-135c-4470-bfbb-a298ab1fee33
 ---
 # 1.1.2 Optimize your Firefly process using Microsoft Azure and presigned URLs
 
-Learn how to optimize your Firefly process using Microsoft Azure and presigned URLs.
+Learn how to optimize your Firefly process using Microsoft Azure and pre-signed URLs.
 
-## 1.1.2.1 Create an Azure Subscription
+## 1.1.2.1 What are pre-signed URLs?
+
+A presigned URL is a URL that grants you temporary access to a specific object in a storage location. Using the URL, a user can for instance either READ the object or WRITE an object (or update an existing object). The URL contains specific parameters which are set by your application. 
+
+In the context of creating content supply chain automation, there often are multiple file operations that need to happen for a specific use case. As an example, the background of a file may need to be changed, the text of various layers may have to be changed, etc. It isn't always possible to do all the file operations at the same time which creates the need for a multi-step approach. After every intermediate step, the output then is a temporary file that is needed for the next step to be executed. Once that next step is executed, the temporary file quickly loses value and is often no longer needed so it should be deleted.
+
+Adobe Firefly Services currently supports these domains:
+
+- Amazon AWS: *.amazonaws.com
+- Microsoft Azure: *.windows.net
+- Dropbox: *.dropboxusercontent.com
+
+The reason why often cloud storage solutions are used, is that the intermediate assets that are being created lose value quickly. The problem that is solved by pre-signed URLs is often best solved with a commodity storage solution, which is typically one of the above cloud services.
+
+Within the Adobe ecosystem there also are storage solutions, such as Frame.io, Workfront Fusion and Adobe Experience Manager assets. These solutions also suppport pre-signed URLs so it often becomes a choice that needs to be made during the implementation. The choice is then often based on a combination of already available applications, and storage cost.
+
+As such, pre-signed URLs are used in combination with Adobe Firefly Services operations because:
+
+- organizations often need to process multiple changes to the same image in intermediate steps, and intermediate storage is needed to make that possible.
+- access to reading and writing from cloud storage locations should be secure and in a server-side environment, it's not possible to manually log in so security needs to be baked into the URL directly.
+
+A pre-signed URL uses three parameters to limit the access to the user:
+
+- Storage location: this could be an AWS S3 bucket location, a Microsoft Azure storage account location with container
+- Filename: the specific file that needs to be read, updated, deleted.
+- Query string parameter: a query string parameter always starts with a question mark and is followed by a complex series of paramaters
+
+Example:
+
+- **Amazon AWS**: `https://bucket.s3.eu-west-2.amazonaws.com/image.png?X-Amz-Algorithm=AWS4-HMAC-SHA256&X-Amz-Credential=AXXXXXXXXXX%2Feu-west-2%2Fs3%2Faws4_request&X-Amz-Date=20250510T171315Z&X-Amz-Expires=1800&X-Amz-Signature=XXXXXXXXX&X-Amz-SignedHeaders=host`
+- **Microsoft Azure**: `https://storageaccount.blob.core.windows.net/container/image.png?sv=2023-01-03&st=2025-01-13T07%3A16%3A52Z&se=2026-01-14T07%3A16%3A00Z&sr=b&sp=r&sig=XXXXXX%3D`
+
+## 1.1.2.2 Create an Azure Subscription
 
 >[!NOTE]
 >
 >If you already have an existing Azure Subscription, you can skip this step. Please proceed with the next exercise in that case.
+
+>[!NOTE]
+>
+>If you're following this tutorial as part of an in-person guided workshop or a guided on-demand training, you likely already have access to a Microsoft Azure Storage Account. In that case, you don't need to create your own account - please use the account that has been provided to you as part of the training.
 
 Go to [https://portal.azure.com](https://portal.azure.com){target="_blank"} and login with your Azure account. If you don't have one, please use your personal email address to create your Azure account.
 
@@ -37,7 +73,7 @@ When the subscription process is finished you are good to go.
 
 ![Azure Storage](./images/06azuresubscriptionok.png){zoomable="yes"}
 
-## 1.1.2.2 Create Azure Storage Account
+## 1.1.2.3 Create Azure Storage Account
 
 Search for `storage account` and then select **Storage accounts**.
 
@@ -79,7 +115,7 @@ Your container is now ready to be used.
 
 ![Azure Storage](./images/azs9.png){zoomable="yes"}
 
-## 1.1.2.3 Install Azure Storage Explorer
+## 1.1.2.4 Install Azure Storage Explorer
 
 [Download Microsoft Azure Storage Explorer to manage your files](https://azure.microsoft.com/en-us/products/storage/storage-explorer#Download-4){target="_blank"}. Select the correct version for your specific OS, download and install it.
 
@@ -121,7 +157,7 @@ Open **Blob Containers** and then select the container you created in the previo
 
 ![Azure Storage](./images/az18.png){zoomable="yes"}
 
-## 1.1.2.4 Manual file upload and using an image file as style reference
+## 1.1.2.5 Manual file upload and using an image file as style reference
 
 Upload a image file of your choice or [this file](./images/gradient.jpg){target="_blank"} into the container.
 
@@ -160,7 +196,7 @@ Another image appears with `horses in a field`, but this time the style is simil
 
 ![Azure Storage](./images/az26.png){zoomable="yes"}
 
-## 1.1.2.5 Programmatic file upload 
+## 1.1.2.6 Programmatic file upload 
 
 In order to use programmatic file upload with Azure Storage Accounts, you need to create a new **Shared Access Signature (SAS)** token with permissions that allow you to write a file.
 
@@ -241,7 +277,7 @@ Back in Azure Storage Explorer refresh the content of your folder, and the newly
 
 ![Azure Storage](./images/az38.png){zoomable="yes"}
 
-## 1.1.2.6 Programmatic file usage
+## 1.1.2.7 Programmatic file usage
 
 To programmatically read files from Azure Storage Accounts in the long term, you need to create a new **Shared Access Signature (SAS)** token, with permissions that allow you to read a file. Technically you could use the SAS-token created in the previous exercise, but it's best practice to have a separate token with only **Read** permissions and separate token with only **Write** permissions.
 

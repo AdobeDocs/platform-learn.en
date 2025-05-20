@@ -15,7 +15,37 @@ Learn how to use Postman and Adobe I/O to query Adobe Firefly Services APIs.
 
 Before continuing with this exercise, you need to have completed the setup of [your Adobe I/O project](./../../../modules/getting-started/gettingstarted/ex6.md), and you also need to have configured an application to interact with APIs, such as [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) or [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-## 1.1.1.2 Explore firefly.adobe.com - stage 1
+## 1.1.1.2 API basics
+
+There are multiple types of API requests:
+
+- **GET**: this is used when trying to retrieve information from an API endpoint, like getting a Status Report
+- **POST**: this is used when something new needs to be done, like having Adobe Firefly Services generate a new image 
+- **PUT**: this is used to completely update existing data
+- **PATCH**: this is used to selectively update existing data
+- **DELETE**: this is used to delete data
+
+When working with API's, you'll also notice response codes being returned by the various API endpoints. 
+
+There are 5 different categories of responses you may expect:
+
+- **1xx informational response**: the request was received, continuing process
+- **2xx successful**: the request was successfully received, understood, and accepted
+- **3xx redirection**: further action needs to be taken in order to complete the request
+- **4xx client error**: the request contains bad syntax or cannot be fulfilled
+- **5xx server error**: the server failed to fulfil an apparently valid request
+
+Here's an example of common response codes you may expect:
+
+- **200 OK**: this is good, your request completed successfully
+- **201 Created**: this is good, as an example, your image has been created
+- **202 Accepted**: this is good, your request is accepted and will be processed
+- **401 Unauthorized**: this is not good, likely your access token isn't valid
+- **403 Forbidden**: this is not good, you probably lack the required permissions for the action you're trying to execute
+- **404 Not Found**: this is not good, likely the URL you're trying to reach doesn't exist
+- **429 Too Many Requests**: this is not good, you likely have sent to many requests in a short period. Try again later.
+
+## 1.1.1.3 Explore firefly.adobe.com - stage 1
 
 Let's start exploring Adobe Firefly Services. For exploreation, you'll start with a CitiSignal image generation example. The CitiSignal design team would like to generate a neon version of the CitiSignal brand name. They would like to use Adobe Firefly Services to do that.
 
@@ -23,7 +53,7 @@ The first thing that is needed to achieve this, is a black and white version of 
 
 ![Postman](./images/CitiSignal.jpg)
 
-### 1.1.1.2.1 Create your composition reference image
+### 1.1.1.3.1 Create your composition reference image
 
 You can use [this sample image](./images/CitiSignal.jpg) or you can create your own text to experiment. Follow the below steps in Adobe Illustrator to create your own image file. If your choice is to use the predefined image, then skip the below section and go to step **1.1.1.2.2 Generate your image** directly.
 
@@ -75,7 +105,7 @@ Give your file a name and save it to your desktop. Click **Save**.
 
 ![Postman](./images/ill13.png)
 
-### 1.1.1.2.2 Generate your image
+### 1.1.1.3.2 Generate your image
 
 Go to [https://firefly.adobe.com](https://firefly.adobe.com). Click the **profile** icon and ensure you're logged in to the right **Account**, which should be `--aepImsOrgName--`. If needed, click **Switch Profile** to switch to that account.
 
@@ -103,7 +133,7 @@ You now have several images that show a neon-version of the CitiSignal brand nam
 
 You've now learnt to use Firefly to solve a design problem in a matter of minutes.
 
-## 1.1.1.3 Explore firefly.adobe.com - stage 2
+## 1.1.1.4 Explore firefly.adobe.com - stage 2
 
 Go to [https://firefly.adobe.com/generate/image](https://firefly.adobe.com/generate/image). You should then see this. Click the **Model** dropdown list. You'll notice that there are 3 available versions of Adobe Firefly Services:
 
@@ -178,13 +208,13 @@ For the next exercise, you'll need to use one of the **seed** numbers. Write dow
 
 In the next exercise, you'll do similar things with Firefly Services, but then by using the API instead of the UI. In this example, the seed number is **142194** for the first image, which has 2 horses looking at each other with their heads facing eachother.
 
-## 1.1.1.4 Adobe I/O - access_token
+## 1.1.1.5 Adobe I/O - access_token
 
 In the **Adobe IO - OAuth** collection, select the request named **POST - Get Access Token** and select **Send**. The response should contain a new **accestoken**.
 
 ![Postman](./images/ioauthresp.png)
 
-## 1.1.1.5 Firefly Services API, Text 2 Image, Image 3
+## 1.1.1.6 Firefly Services API, Text 2 Image, Image 3
 
 Now that you have a valid and fresh access_token, you are ready to send your first request to Firefly Services APIs.
 
@@ -263,7 +293,7 @@ Your image has now changed a bit again.
 
 ![Firefly](./images/ff10.png)
 
-## 1.1.1.6 Firefly Services API, Gen Expand
+## 1.1.1.7 Firefly Services API, Gen Expand
 
 Select the request named **POST - Firefly - Gen Expand** from the **FF - Firefly Services Tech Insiders** collection and go to the **Body** of the request.
 
@@ -291,15 +321,25 @@ You should then see that the original image is used in a different placement, wh
 
 ![Firefly](./images/ff15.png)
 
-## 1.1.1.7 Firefly Services API, Text 2 Image, Image 4 & Image 4 Ultra
+## 1.1.1.8 Firefly Services API, Text 2 Image, Image 4 & Image 4 Ultra
 
-### 1.1.1.7.1 image4_standard
+With the recent release of Firefly Image Model 4, several improvements have been made available:
+
+- Firefly Image Model 4 offers 2K resolution output with enhanced definition and detail.
+- Firefly Image Model 4 delivers significant improvements in text rendering, humans, animals, and architecture.
+- Firefly Image Model 4 maintains Adobe's commitment to IP-friendly, commercially safe generative AI.
+
+Firefly Image Model 4 gives you exceptional images of people, animals, and detailed scenes and you can use Image Model 4 Ultra for generating images with hyper-realistic human interactions, architectural elements, and complex landscapes.​
+
+### 1.1.1.8.1 image4_standard
 
 Select the request named **POST - Firefly - T2I V4** from the **FF - Firefly Services Tech Insiders** collection and go to the **Headers** of the request.
 
 You'll notice that the URL of the request is different from the **Firefly Services API, Text 2 Image, Image 3** request, which was **https://firefly-api.adobe.io/v3/images/generate**. This URL points to **https://firefly-api.adobe.io/v3/images/generate-async**. The addition of **-async** in the URL means you're using the asynchronous endpoint.
 
-In the **Header** variables, you'll notice a new variable called **x-model-version**. This is a required header when interacting with Firefly Image 4 and Image 4 Ultra. To use Firefly Image 4 or Image 4 Ultra when generating images, the value of the header should then be set to either `image4_standard` or `image4_ultra`. In this example, you'll be using `image4_standard`.
+In the **Header** variables, you'll notice a new variable called **x-model-version**. This is a required header when interacting with Firefly Image 4 and Image 4 Ultra. To use Firefly Image 4 or Image 4 Ultra when generating images, the value of the header should then be set to either `image4_standard` or `image4_ultra`. In this example, you'll be using `image4_standard`. 
+
+If you don't set the **x-model-version** to `image4_standard` or `image4_ultra`, then Firefly Services will default to using `image3` currently.
 
 ![Firefly](./images/ffim4_1.png)
 
@@ -327,7 +367,7 @@ You should then see a hyperrealistic image of **horses in a field**.
 
 ![Firefly](./images/ffim4_7.png)
 
-### 1.1.1.7.2 image4_ultra
+### 1.1.1.8.2 image4_ultra
 
 Go back to the request named **POST - Firefly - T2I V4** from the **FF - Firefly Services Tech Insiders** collection and go to the **Headers** of the request.
 
