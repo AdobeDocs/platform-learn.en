@@ -20,12 +20,12 @@ Before continuing with this exercise, you need to have completed the setup of [y
 There are multiple types of API requests:
 
 - **GET**: this is used when trying to retrieve information from an API endpoint, like getting a Status Report
-- **POST**: this is used when something new needs to be done, like having Adobe Firefly Services generate a new image 
+- **POST**: this is used when something new needs to be done, like having Adobe Firefly Services generate a new image
 - **PUT**: this is used to completely update existing data
 - **PATCH**: this is used to selectively update existing data
 - **DELETE**: this is used to delete data
 
-When working with API's, you'll also notice response codes being returned by the various API endpoints. 
+When working with API's, you'll also notice response codes being returned by the various API endpoints.
 
 There are 5 different categories of responses you may expect:
 
@@ -210,7 +210,7 @@ In the next exercise, you'll do similar things with Firefly Services, but then b
 
 ## 1.1.1.5 Adobe I/O - access_token
 
-In the **Adobe IO - OAuth** collection, select the request named **POST - Get Access Token** and select **Send**. The response should contain a new **accestoken**.
+In the **Adobe IO - OAuth** collection, select the request named **POST - Get Access Token** and select **Send**. The response should contain a new **access_token**.
 
 ![Postman](./images/ioauthresp.png)
 
@@ -218,13 +218,26 @@ In the **Adobe IO - OAuth** collection, select the request named **POST - Get Ac
 
 Now that you have a valid and fresh access_token, you are ready to send your first request to Firefly Services APIs.
 
-Select the request named **POST - Firefly - T2I V3** from the **FF - Firefly Services Tech Insiders** collection. Go to the **Body** and verify the prompt. Click **Send**.
-
-The request you're using here is a **synchronous** request, which provides you with a response that contains the requested image within a few seconds.
+The request you'll be using here is a **synchronous** request, which provides you with a response that contains the requested image within a few seconds.
 
 >[!NOTE]
 >
 >With the release of Firefly Image 4 and Image 4 Ultra, synchronous requests will be deprecated in favour of asynchronours requests. You'll find exercises on asynchronous requests further down in this tutorial.
+
+Select the request named **POST - Firefly - T2I V3** from the **FF - Firefly Services Tech Insiders** collection. Go to **Headers** and verify the key/value pair combinations.
+
+| Key     | Value     | 
+|:-------------:| :---------------:| 
+| `x-api-key`          | `{{API_KEY}}` |
+| `Authorization`          | `Bearer {{ACCESS_TOKEN}}` |
+
+Both values in this request refer to environment variables that have been defined upfront. `{{API_KEY}}` refers to the field **Client ID** of your Adobe I/O project. As part of the **Getting Started** section this tutorial, you configured that in Postman.
+
+The value for the field **Authorization** is a bit special: `Bearer {{ACCESS_TOKEN}}`. It contains a reference to the **Access Token** that you generated in the previous step. When you received your **Access Token** by using the request **POST - Get Access Token** in the **Adobe IO - OAuth** collection, a script ran in Postman that stored the field **access_token** as an environment variable, which is now being referenced in the request **POST - Firefly - T2I V3**. Please note the specific addition of the word **Bearer** and a space before the `{{ACCESS_TOKEN}}`. The word bearer is case-sensitive and the space is required. If this isn't done correctly, Adobe I/O will return a **401 Unauthorized** error as it won't be able to process your **Access Token** correctly.
+
+![Firefly](./images/ff0.png)
+
+Next, go to the **Body** and verify the prompt. Click **Send**.
 
 ![Firefly](./images/ff1.png)
 

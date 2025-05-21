@@ -161,6 +161,13 @@ Open **Blob Containers** and then select the container you created in the previo
 
 Upload a image file of your choice or [this file](./images/gradient.jpg){target="_blank"} into the container.
 
+>[!NOTE]
+>
+>When using images as style reference, composition reference or as mask image the following image types are accepted: 
+>- image/jpeg
+>- image/png
+>- image/webp
+
 ![Azure Storage](./images/gradient.jpg)
 
 Once uploaded, you can see it in your container:
