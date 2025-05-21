@@ -9,7 +9,44 @@ exl-id: 330f4492-d0df-4298-9edc-4174b0065c9a
 ---
 # 1.1.4 Firefly Custom Models API
 
-## 1.1.4.1 Configure your Custom Model
+## 1.1.4.1 What are Firefly Custom Models?
+
+With Firefly custom models, you can generate image variations that align with your brand using the Text to image feature. By training these models with your own images, you can generate content that reflects your brand's identity.
+Transform your style or subject to explore new ideas, visualize different surroundings, generate innovative content, and tailor content to specific segments.
+
+With Firefly Custom Models you can...
+
+- Create on-brand ideas and concepts
+- Produce character themes with consistent styles
+- Create consistent brand styles to quickly expand campaigns
+
+To achieve this, Firefly Custom Models support:
+
+- Custom subject models
+- Custom style models
+
+### Custom subject models
+
+When training custom models on a specific subject — whether objects or characters — the goal is to identify the subject’s essential features and help the model replicate them across various contexts and positions.
+
+Look for images with the following characteristics when training a subject model:
+
+- Object consistency: Provide images of the same make and model as your subject while ensuring that the subject doesn't look widely different across images. Avoid mixing multiple colors and ensure a common theme or pattern among images. However, your subject can vary across scenes, poses, clothing, and background.
+- Object focus: Use images of the subject in clear focus without unnecessary distractions. Keep the subject near the center of the image and make sure that it occupies at least 25% of the image's area.
+- Environmental context: Provide images of the subject in different views and contexts, showing it in a variety of lighting conditions. While images with white or transparent backgrounds can be used, it's best to have a mix with more complex surroundings as well.
+- Avoid other objects: Avoid large items in the background or associated with the character. Any large item shown in the images is memorized by the model and will appear in the generated images, similar to the same item in the training dataset. 
+
+### Custom style models
+
+Custom models trained on a style will identify the look and feel of the assets to generate similar images when prompted.
+
+To train an effective style model:
+
+- Provide similar aesthetics: Include images that show various scenes and objects while maintaining the same look and feel.
+- Use various images: Use as many images as you can to prevent the model from focusing too much on unwanted objects or subjects.
+- Avoid any fixed phrases: A fixed pattern has a bigger weight than other phrases. For example, if every caption contains "The background is solid black" or “cute cartoon styles” the model will depend on this phrase, and any testing prompt without it will not generate the desired results. 
+
+## 1.1.4.2 Configure your Custom Model
 
 Go to [https://firefly.adobe.com/](https://firefly.adobe.com/). Click **Custom Models**.
 
@@ -80,7 +117,7 @@ Close the **Share custom model** popup.
 
 ![Firefly Custom Models](./images/ffcm16.png){zoomable="yes"} 
 
-## 1.1.4.2 Use your Custom Model in the UI
+## 1.1.4.3 Use your Custom Model in the UI
 
 Go to [https://firefly.adobe.com/cme/train](https://firefly.adobe.com/cme/train). Click your Custom Model to open it. 
 
@@ -94,7 +131,7 @@ You'll then see the sample prompt that you entered before being executed.
 
 ![Firefly Custom Models](./images/ffcm18.png){zoomable="yes"} 
 
-## 1.1.4.3 Enable your Custom Model for Firefly Services Custom Models API
+## 1.1.4.4 Enable your Custom Model for Firefly Services Custom Models API
 
 Once your Custom Model is trained, it can also be used through the API. In exercise 1.1.1 you already configured your Adobe I/O project for interaction with Firefly Services through the API. 
 
@@ -128,7 +165,7 @@ The **Technical Account Email** should now be able to access the Custom Model.
 
 ![Firefly Custom Models](./images/ffcm22.png){zoomable="yes"}
 
-## 1.1.4.4 Interact with Firefly Services Custom Models API
+## 1.1.4.5 Interact with Firefly Services Custom Models API
 
 In Exercise 1.1.1 Getting started with Firefly Services, you downloaded this file: [postman-ff.zip](./../../../assets/postman/postman-ff.zip) to your local desktop and you then imported that collection in Postman.
 
