@@ -395,6 +395,30 @@ You should then see a hyperrealistic image of **horses in a field**.
 
 ![Firefly](./images/ffim4_16.png)
 
+### Negative prompting
+
+In case you would like to request Firefly to not include something in the image that will be generated, you can include the field `negativePrompt` when using the API (this option is currently not exposed to the UI). As an example, if you don't want any flowers to be included when the prompt **horses in a field** is executed, then you can specify this in the **Body** of your API request:
+
+```
+"negativePrompt": "no flowers",
+```
+
+Go to the request **POST - Firefly - T2I V4** from the **FF - Firefly Services Tech Insiders** collection and go to the **Body** of the request. Paste the above text in the Body of the request. Click **Send**.
+
+![Firefly](./images/ffim4_17.png)
+
+You should then see this.
+
+![Firefly](./images/ffim4_18.png)
+
+To check the status report of your running job, select the request named **GET - Firefly - Get Status Report** from the **FF - Firefly Services Tech Insiders** collection. Click to open it, and then click **Send**. Select the URL of the generated image and open it in your browser.
+
+![Firefly](./images/ffim4_19.png)
+
+You will then see the generated image, which shouldn't contain any flowers.
+
+![Firefly](./images/ffim4_20.png)
+
 ## Next Steps
 
 Go to [Optimize your Firefly process using Microsoft Azure and presigned URLs](./ex2.md){target="_blank"}
@@ -402,3 +426,4 @@ Go to [Optimize your Firefly process using Microsoft Azure and presigned URLs](.
 Go back to [Overview of Adobe Firefly Services](./firefly-services.md){target="_blank"}
 
 Go back to [All modules](./../../../overview.md){target="_blank"}
+	
