@@ -93,6 +93,7 @@ Campaigns
   + [Find unused audiences](/help/platform/ai-assistant/find-unused-audiences.md)
   + [Operational insights](/help/platform/ai-assistant/operational-insights.md)
   + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
+  + [Product Support Agent](/help/platform/ai-assistant/product-support-agent.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
