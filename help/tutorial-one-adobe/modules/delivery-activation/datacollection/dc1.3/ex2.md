@@ -61,7 +61,7 @@ In the left menu, click **Models** and then go to **Schemas**. Click **Create sc
 
 ![FAC](./images/fdb5.png)
 
-Select your federated database and click **+ Add tables**.
+Select your federated database and click **Next**.
 
 ![FAC](./images/fdb6.png)
 
@@ -73,7 +73,7 @@ You'll then see this. Select the 5 tables you created in Snowflake before:
 - `--aepUserLdap--_PERSONS`
 - `--aepUserLdap--_USERS`
 
-Click **Add**.
+Click **Next**.
 
 ![FAC](./images/fdb7.png)
 
@@ -88,7 +88,7 @@ For each table, you can:
 
 For this exercise, no changes are needed.
 
-Click **Create**.
+Click **Done**.
 
 ![FAC](./images/fdb8.png)
 
@@ -100,7 +100,7 @@ You'll then see this, with the ability to edit the configuration. Click **Data**
 
 ![FAC](./images/fdb10.png)
 
-You'll then see a sample of the data.
+You'll then see a sample of the data. This data is loaded directly from Snowflake and it is not persisted in AEP.
 
 ![FAC](./images/fdb11.png)
 
@@ -130,9 +130,9 @@ You'll then see this. Click **Save**.
 
 You can now start defining links between schemas. To start defining a link, you need to click **Create links**. 
 
-![FAC](./images/fdb16.png)
+![FAC](./images/fdb16a.png)
 
-First, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_PERSONS`.
+First, you need to define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_PERSONS`.
 
 Click **Add**.
 
@@ -144,7 +144,9 @@ You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb17.png)
 
-Next, let's define the link between the tabel `--aepUserLdap--_HOUSEHOLDS` and `--aepUserLdap--_PERSONS`.
+Next, you need to define the link between the tabel `--aepUserLdap--_HOUSEHOLDS` and `--aepUserLdap--_PERSONS`.
+
+Click **Add**.
 
 ![FAC](./images/fdb19.png)
 
@@ -154,10 +156,11 @@ You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb20.png)
 
-Next, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+Next, you need to define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_MONTHLY_DATA_USAGE`.
+
+Click **Add**.
 
 ![FAC](./images/fdb21.png)
-
 
 ### USERS - HOUSEHOLDS
 
@@ -165,7 +168,9 @@ You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb22.png)
 
-Next, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_HOUSEHOLDS`.
+Next, you need to define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_HOUSEHOLDS`.
+
+Click **Add**.
 
 ![FAC](./images/fdb23.png)
 
@@ -175,7 +180,9 @@ You'll then be back here. Click **Create links** to create another link.
 
 ![FAC](./images/fdb24.png)
 
-Next, let's define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_MOBILE_DATA_USAGE`.
+Next, you need to define the link between the tabel `--aepUserLdap--_USERS` and `--aepUserLdap--_MOBILE_DATA_USAGE`.
+
+Click **Add**.
 
 ![FAC](./images/fdb25.png)
 
@@ -183,7 +190,7 @@ You should then see this. Click **Save**.
 
 ![FAC](./images/fdb26.png)
 
-Your setup in AEP is now done. You can now start using your federated data in a federated audience composition.
+The setup of your Federated Database in Adobe Experience Platform is now done. You can now start using your federated data in a federated audience composition.
 
 ## Next Steps
 

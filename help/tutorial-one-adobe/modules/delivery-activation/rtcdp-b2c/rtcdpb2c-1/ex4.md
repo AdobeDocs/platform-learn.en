@@ -25,7 +25,7 @@ Select **Build rule** and click **Create**.
 
 ![Segmentation](./images/menusegbr.png)
 
-Once you're in the new audience builder, you immediately notice the **Attributes** menu option and the **XDM Individual Profile** reference.
+Once you're in the audience builder, you immediately notice the **Attributes** menu option and the **XDM Individual Profile** reference.
 
 ![Segmentation](./images/segmentationui.png)
 
@@ -77,6 +77,10 @@ The comparison parameter should be **equals** and in the input field, enter **iP
 
 ![Segmentation](./images/pv.png)
 
+Set the time condition on your segment to **In last 24 Hours**.
+
+![Segmentation](./images/pv1.png)
+
 Every time you add an element to the audience builder, you can click the **Refresh Estimate** button to get a new estimate of the population in your audience.
 
 So far, you've only used the UI to build your audience, but there's also a code-option to build a audience.
@@ -96,7 +100,7 @@ You can also preview a sample of the customer profiles that are part of this aud
 ![Segmentation](./images/previewprofilesdtl.png)
 
 Finally, let's give your audience a name, 
-set the **Evaluation method** to **Streaming** and click **Publish**.
+set the **Evaluation method** to **Edge** and click **Publish**.
 
 As a naming convention, use:
 

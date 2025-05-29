@@ -18,7 +18,13 @@ Adobe Experience Platform Data Collection is used by brands for a number of use 
 
 ## Explore the UI
 
-Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/#/data-collection/).
+Go to [Adobe Experience Platform Data Collection](https://experience.adobe.com/#/data-collection/). Ensure that you are using the correct environment, which should be `--aepImsOrgName--`.
+
+>[!NOTE]
+>
+>This tutorial is documented using the environment **Experience Platform International**. Your environment name is likely different, so whenever you see the name **Experience Platform International** in a screenshot, you should replace that by the name of your own environment, which should be `--aepImsOrgName--`.
+
+![Launch Properties View](./images/launch0.png)
 
 Go to **Tags**. Youre now seeing the **[!UICONTROL Properties]** view. Properties listed here are for tutorial management. These properties represent:
 
