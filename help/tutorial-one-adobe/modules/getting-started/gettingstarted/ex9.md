@@ -6,7 +6,7 @@ exl-id: 25f80da8-88c3-4273-962a-476675cf6047
 ---
 # Applications to install
 
-Below is an overview of the prework that is needed prior to joining a live workshop.
+Below is an overview of the applications you will need to have installed on your computer before starting the tutorial.
 
 ## Adobe Creative Cloud
 

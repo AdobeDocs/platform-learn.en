@@ -27,6 +27,10 @@ Next, select **Create new project**.
 
 ### Firefly Services API
 
+>[!IMPORTANT]
+>
+>Depending on the learning path that you selected, you may not have access to Firefly Services API. You will only have access to Firefly Services API if you're on the learning path **Firefly**, **Workfront Fusion**, **ALL**, or when you're attending a **live in-person workshop**. You can skip this step if you're not on one of these learning paths.
+
 You should then see this. Select **+ Add to Project** and choose **API**.
 
 ![Adobe I/O New Integration](./images/adobe_io_access_api.png){zoomable="yes"}
@@ -53,6 +57,10 @@ You should then see this.
 
 ### Photoshop Services API
 
+>[!IMPORTANT]
+>
+>Depending on the learning path that you selected, you may not have access to Photoshop Services API. You will only have access to Photoshop Services API if you're on the learning path **Firefly**, **Workfront Fusion**, **ALL**, or when you're attending a **live in-person workshop**. You can skip this step if you're not on one of these learning paths.
+
 Select **+ Add to Project** and then select **API**.
 
 ![Azure Storage](./images/ps2.png){zoomable="yes"}
@@ -78,6 +86,10 @@ You should then see this.
 ![Adobe I/O New Integration](./images/ps7.png){zoomable="yes"}
 
 ### Adobe Experience Platform API
+
+>[!IMPORTANT]
+>
+>Depending on the learning path that you selected, you may not have access to Adobe Experience Platform API. You will only have access to Adobe Experience Platform API if you're on the learning path **AEP + Apps**, **ALL**, or when you're attending a **live in-person workshop**. You can skip this step if you're not on one of these learning paths.
 
 Select **+ Add to Project** and then select **API**.
 

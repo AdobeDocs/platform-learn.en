@@ -28,22 +28,16 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 - Snowflake
 - ...
 
-## Prerequisites
+## Show your knowledge
 
-If you want to take this tutorial using your own Adobe Experience Cloud instance, the following applications need to be provisioned in your instance and you need to be able to access:
+![Adobe Qualified](./assets/images/badge.png){width="100px" align="left"}
 
-- Adobe Firefly
-- Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront
-- Adobe Workfront Fusion
-- Adobe Experience Platform, Adobe Experience Platform Data Collection
-- Access to Demo System Next: [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"}
+After completing some of the modules in this tutorial, you can take an Adobe Credential exam to receive an **Adobe Qualified** badge. 
 
-## Completion & Certification
-
-This tutorial is part of an Adobe Certification course. You can sign up for the course alongside this tutorial by going to [https://certification.adobe.com](https://certification.adobe.com).
-
-For every module that you complete using the below tutorial, you need to submit a proof of completion as indicated [here](./completion.md).
+- When you complete the module [Overview of Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}, you are ready to take and pass the **Adobe Qualified** exam **AD2-E901**: 
+[https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
+- When you complete the module [Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, you are ready to take and pass the **Adobe Qualified** exam **XXX**: 
+[TBC](https://certification.adobe.com/certification/services-qualified-credential).
 
 ## Content Status
 
@@ -59,7 +53,7 @@ In this foundational module, you will prepare everything so that you can access 
 
 ### 2. Creation & Production
 
-[1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
+[1.1 Overview of Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
 
 In this module, you will use Adobe Firefly Services APIs, Photoshop APIs and Microsoft Azure Storage Services to generate images and store them programmatically.
 

@@ -11,7 +11,6 @@ recommendations: noDisplay,noCatalog
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + [Completion](/help/tutorial-one-adobe/completion.md)
-+ [Prework](/help/tutorial-one-adobe/prework.md)
 
 + Getting started {#gettingstarted}
   + Getting started {#gettingstarted}
