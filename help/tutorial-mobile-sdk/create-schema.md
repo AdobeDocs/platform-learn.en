@@ -89,7 +89,11 @@ For learning purposes, you use prebuilt and custom field groups.
 
 ## Create a schema 
 
-1. Select **[!UICONTROL Create Schema]**.
+1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Create Schema]**.
+
+1. In the **[!UICONTROL Create a schema]** dialog, select **[!UICONTROL Manual]**. Use **[!UICONTROL Select]** to continue.
+
+   ![Schema manual](assets/schema-manual.png)
 
 1. In the **[!UICONTROL Select a class]** step of the **[!UICONTROL Create schema]** wizard, select **[!UICONTROL Experience Event]** underneath **[!UICONTROL Select a base class for this schema]**.
 
