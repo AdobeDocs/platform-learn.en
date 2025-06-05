@@ -522,7 +522,7 @@ To create the analytics-on-bottom request:
 
 Now that the rules are updated, you can validate if the data is being passed correctly using the Adobe Debugger.
 
-1. Navigate to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and login with the email `test@adobe.com` and password `test`
+1. Navigate to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html) and login with the email `test@test.com` and password `test`
 1. Navigate to a product details page
 1. Open the Adobe Experience Platform debugger browser extension and [switch the tag property to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 1. Reload the page

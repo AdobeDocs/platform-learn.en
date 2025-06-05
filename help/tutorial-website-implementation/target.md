@@ -314,7 +314,7 @@ For the time-being, custom parameters passed with at.js 2.x requests are not eas
 
    ![Your tags development environment shown in Debugger](images/switchEnvironments-debuggerOnWeRetail.png)
 
-1. Log into the Luma site using the credentials `test@adobe.com`/`test`
+1. Log into the Luma site using the credentials `test@test.com`/`test`
 1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
 
 1. Open your browser's developer tools

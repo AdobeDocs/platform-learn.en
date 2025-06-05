@@ -102,7 +102,7 @@ You can use the Debugger to validate client-side beacons triggered from your Pla
 
 You can also validate the Identity Map details:
 
-1. Log in to the Luma site using the credentials `test@adobe.com`/`test`
+1. Log in to the Luma site using the credentials `test@test.com`/`test`
 
 1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
 
