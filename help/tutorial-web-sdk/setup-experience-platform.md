@@ -103,7 +103,7 @@ These steps are more or less the same as what you did in the [Debugger lesson](v
 
    ![Your Launch development environment shown in Debugger](assets/experience-platform-debugger-dev.png)
 
-1. Log into the Luma site using the credentials `test@adobe.com`/`test`
+1. Log into the Luma site using the credentials `test@test.com`/`test`
 
 1. Return to the [Luma homepage](https://luma.enablementadobe.com/content/luma/us/en.html)
 
@@ -225,7 +225,7 @@ First you must generate more sample data. Repeat the steps from earlier in this 
 1. In the [Experience Platform](https://experience.adobe.com/platform/) interface, select **[!UICONTROL Customer]** > **[!UICONTROL Profiles]** in the left-navigation
 
 1. As the **[!UICONTROL Identity namespace]** use `lumaCRMId`
-1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `112ca06ed53d3db37e4cea49cc45b71e`.
+1. Copy & paste the value of the `lumaCRMId` passed in the call that you inspected in the Experience Platform Debugger, in this case `b642b4217b34b1e8d3bd915fc65c4452`.
 
     ![Profile](assets/experience-platform-validate-dataset-profile.png)
 

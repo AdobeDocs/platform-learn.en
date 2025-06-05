@@ -310,7 +310,7 @@ To validate Analytics is capturing data properly through Experience Platform Web
 ### Experience Cloud ID validation
 
 1. Go to the [Luma demo site](https://luma.enablementadobe.com/content/luma/us/en.html){target="_blank"}
-1. Select the login button on the top right, and use credentials u: test@adobe.com p: test to authenticate 
+1. Select the login button on the top right, and use credentials u: test@test.com p: test to authenticate 
 1. Open the Experience Platform Debugger and [switch the tag property on the site to your own development property](validate-with-debugger.md#use-the-experience-platform-debugger-to-map-to-your-tags-property)
 
 
@@ -333,13 +333,13 @@ To validate Analytics is capturing data properly through Experience Platform Web
 
 1. Scroll down to find `[!UICONTROL c.a.x.identitymap.ecid.[0].id]`. It is a Context Data Variable that captures ECID
 1. Keep scrolling down until you see the Analytics `[!UICONTROL mid]` variable. Both IDs match with your device's Experience Cloud ID.
-1. On the Luma site, 
+1. On the Luma site:
 
     ![Analytics ECID](assets/analytics-debugger-ecid.png)    
 
     >[!NOTE]
     >
-    >Since you are logged in, take a moment to validate the authenticated ID `112ca06ed53d3db37e4cea49cc45b71e` for the user **`test@adobe.com`** is captured as well in the `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
+    >Since you are logged in, take a moment to validate the authenticated ID `b642b4217b34b1e8d3bd915fc65c4452` for the user **`test@test.com`** is captured as well in the `[!UICONTROL c.a.x.identitymap.lumacrmid.[0].id]`
 
 ### Report suite override validation
 
