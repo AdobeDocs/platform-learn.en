@@ -13,26 +13,49 @@ In the previous exercise you configured the scenario `--aepUserLdap-- - Firefly 
 
 >[!NOTE]
 >
->In order to successfully complete this exercise, you need to be an Admin user in your Frame.io account. The below exercise was created for Frame.io V3 and will be updated at a later stage for Frame.io V4.
+>This exercise was created for Frame.io V4. Some of the below capabilities used in the exercise are currently in alpha and aren't generally available yet.
 
-## 1.2.5.1 Accessing Frame.io
+## 1.2.5.1 Prerequisites
 
-Go to [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}.
+Before continuing with this exercise, you need to have completed the setup of [your Adobe I/O project](./../../../modules/getting-started/gettingstarted/ex6.md) including adding the **Frame.io API** to your Adobe I/O project, and you also need to have configured an application to interact with APIs, such as [Postman](./../../../modules/getting-started/gettingstarted/ex7.md) or [PostBuster](./../../../modules/getting-started/gettingstarted/ex8.md).
 
-Click the **+ icon** to create your own project in Frame.io.
+## 1.2.5.2 Accessing Frame.io
+
+Go to [https://next.frame.io/](https://next.frame.io/){target="_blank"}.
 
 ![Frame IO](./images/frame1.png)
 
-Enter the name `--aepUserLdap--` and click **Create Project**.
+Verify which instance you're currently logged in to by clicking the instance icon. Choose the instance that you have been given access to, which should be `--aepImsOrgName--`.
+
+Click the **+ New Project** to create your own project in Frame.io.
+
+![Frame IO](./images/frame1a.png)
+
+Select the **Blank** template and then enter the name `--aepUserLdap--` for your project. Click **Create New Project**.
 
 ![Frame IO](./images/frame2.png)
 
-You'll then see your project in the left menu. 
-In one of the previous exercises, you downloaded [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"} to your desktop. Select that file, then drag and drop it in the project folder that was just created.
+You'll then see your project in the left menu. Click the **+** icon and then select **New Folder**.
 
-![Frame IO](./images/frame3.png)
+![Frame IO](./images/framev4_3.png)
 
-## 1.2.5.2 Workfront Fusion and Frame.io
+Enter the name `WF Fusion Assets` and then double-click the folder to open it.
+
+![Frame IO](./images/framev4_4.png)
+
+Click **Upload**.
+
+![Frame IO](./images/framev4_5.png)
+
+In one of the previous exercises, you downloaded [citisignal-fiber.psd](./../../../assets/ff/citisignal-fiber.psd){target="_blank"}. Select that file and click **Open**.
+
+![Frame IO](./images/framev4_6.png)
+
+The file **citisignal-fiber.psd** will then be available in your newly created folder.
+
+![Frame IO](./images/framev4_7.png)
+
+## 1.2.5.3 Workfront Fusion and Frame.io
 
 In the previous exercise, you created the scenario `--aepUserLdap-- - Firefly + Photoshop`, which started off with a custom webhook and that ended with a webhook response. The usage of the webhooks was then tested using Postman, but obviously, the point of such a scenario is to be called by an external application. As stated before, Frame.io will be that exercise, but in between Frame.io and the `--aepUserLdap-- - Firefly + Photoshop` another Workfront Fusion scenario is needed. you will now configure that scenario.
 
@@ -44,7 +67,7 @@ In the left menu, go to **Scenarios** and select your folder `--aepUserLdap--`. 
 
 ![Frame IO](./images/frame4.png)
 
-Use the name `--aepUserLdap-- - Frame IO Custom Action`.
+Use the name `--aepUserLdap-- - Frame IO Custom Action V4`.
 
 ![Frame IO](./images/frame5.png)
 
@@ -68,31 +91,53 @@ You should then see this. Leave this screen open and untouched as you'll need it
 
 ![Frame IO](./images/frame10.png)
 
-Go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Custom Actions**.
+## 1.2.5.3 Frame.io V4 Custom Actions API
 
-![Frame IO](./images/frame11.png)
+Go to Postman and open the request **POST - Get Access Token** in the collection **Adobe IO - OAuth**. Verify the field **scope** under **Params**. The field **scope** should include the scope `frame.s2s.all`. If it's missing, please add it. Next, click **Send** to request a new **access_token**.
 
-Click **Create a Custom Action**.
+![Frame IO](./images/frameV4api2.png)
 
-![Frame IO](./images/frame12.png)
+Next, open the request **GET - List Accounts** in the collection **Frame.io V4 - Tech Insiders**. Click **Send**.
 
-Enter the following values:
+![Frame IO](./images/frameV4api1.png)
 
-- **NAME**: use `--aepUserLdap-- - Frame IO Custom Action Fusion`
-- **DESCRIPTION**: use `--aepUserLdap-- - Frame IO Custom Action Fusion`
-- **EVENT**: use `fusion.tutorial`.
-- **URL**: enter the URL of the webhook that you just created in Workfront Fusion
-- **TEAM**: select the appropriate Frame.io team, in this case, **One Adobe Tutorial**.
+You should then see a similar response that contains one or more accounts. Review the response and locate the field **id** for the Frame.io V4 Account you're using. You can find the name of the Account in the Frame.io V4 user interface:
 
-Click **Submit**.
+![Frame IO](./images/frame1.png)
 
-![Frame IO](./images/frame15.png)
+Copy the value of the field **id**.
 
-You should then see this.
+![Frame IO](./images/frameV4api3.png)
 
-![Frame IO](./images/frame14.png)
+In the left menu, go to **Environments** and select the environment you're using. Find the variable **`FRAME_IO_ACCOUNT_ID`** and paste the **id** that you got from the previous request in both the **Initial value** column and the **Current value** column. Click **Save**.
 
-Go back to [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"}. Refresh the page.
+![Frame IO](./images/frameV4api4.png)
+
+In the left menu, go back to **Collections**. Open the request **GET - List Workspaces** in the collection **Frame.io V4 - Tech Insiders**. Click **Send**.
+
+![Frame IO](./images/frameV4api5.png)
+
+You should then see a similar response that contains one or more accounts. Review the response and locate the field **id** for the Frame.io V4 Workspace you're using. Copy the value of the field **id**.
+
+![Frame IO](./images/frameV4api6.png)
+
+In the left menu, go to **Environments** and select the environment you're using. Find the variable **`FRAME_IO_WORKSPACE_ID`** and paste the **id** that you got from the previous request in both the **Initial value** column and the **Current value** column. Click **Save**.
+
+![Frame IO](./images/frameV4api7.png)
+
+In the left menu, go back to **Collections**. Open the request **POST - Create Custom Action** in the collection **Frame.io V4 - Tech Insiders**, in the folder **Custom Actions**. 
+
+Go to the **Body** of the request. Change the field **name** to `--aepUserLdap--  - Frame.io Custom Action V4` and then change the field **url** to the value of the Webhook URL you copied from Workfront Fusion.
+
+Click **Send**.
+
+![Frame IO](./images/frameV4api8.png)
+
+Your Frame.io V4 Custom Action has now been created.
+
+![Frame IO](./images/frameV4api9.png)
+
+Go back to [https://next.frame.io/](https://next.frame.io/){target="_blank"} and go to the folder **WF Fusion Assets** that you created in your project `--aepUserLdap--`. Refresh the page.
 
 ![Frame IO](./images/frame16.png)
 

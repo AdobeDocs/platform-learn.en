@@ -63,7 +63,7 @@ You should then see this.
 
 ![PostBuster](./images/pb11.png)
 
-Copy the below environment placeholder and paste it in the **Base Environment**.
+Copy the below environment placeholder and paste it in the **Base Environment**, by replacing what is there.
 
 ```json
 {
@@ -77,7 +77,8 @@ Copy the below environment placeholder and paste it in the **Base Environment**.
 		"additional_info.projectedProductContext", 
 		"session",
 		"ff_apis",
-		"firefly_api"
+		"firefly_api",
+		"frame.s2s.all"
 	],
 	"TECHNICAL_ACCOUNT_ID": "",
 	"IMS": "ims-na1.adobelogin.com",
@@ -87,7 +88,10 @@ Copy the below environment placeholder and paste it in the **Base Environment**.
 	"AZURE_STORAGE_URL": "",
 	"AZURE_STORAGE_CONTAINER": "",
 	"AZURE_STORAGE_SAS_READ": "",
-	"AZURE_STORAGE_SAS_WRITE": ""
+	"AZURE_STORAGE_SAS_WRITE": "",
+	"FRAME_IO_BASE_URL": "https://api.frame.io",
+	"FRAME_IO_ACCOUNT_ID": "",
+	"FRAME_IO_WORKSPACE_ID": ""
 }
 ```
 
@@ -99,11 +103,11 @@ You should then have this.
 
 Go to [https://developer.adobe.com/console/home](https://developer.adobe.com/console/home){target="_blank"} and open your project.
 
-![Adobe I/O New Integration](./images/iopr.png){zoomable="yes"}
+![Adobe I/O New Integration](./images/iopr.png)
 
 Go to **OAuth Server-to-Server**. 
 
-![Adobe I/O New Integration](./images/iopbvar1.png){zoomable="yes"}
+![Adobe I/O New Integration](./images/iopbvar1.png)
 
 You now need to copy the following values from your Adobe I/O project and paste them in your PostBuster Base Environment.
 
@@ -112,7 +116,7 @@ You now need to copy the following values from your Adobe I/O project and paste 
 - Technical Account ID
 - Organization ID (Scroll down to find your Organization ID)
 
-![Adobe I/O New Integration](./images/iopbvar2.png){zoomable="yes"}
+![Adobe I/O New Integration](./images/iopbvar2.png)
 
 Copy the above variables one by one, and paste them in your **Base Environment** in PostBuster.
 
@@ -123,11 +127,15 @@ Copy the above variables one by one, and paste them in your **Base Environment**
 | Technical Account ID    | `TECHNICAL_ACCOUNT_ID`|
 | Organization ID          | `IMS_ORG` |
 
-After having copied these variables on by one, your PostBuster Base Environment should look like this:
+After having copied these variables on by one, your PostBuster Base Environment should look like this.
 
-![Adobe I/O New Integration](./images/iopbvar3.png){zoomable="yes"}
+Click **Close**.
+
+![Adobe I/O New Integration](./images/iopbvar3.png)
 
 In the **Adobe IO - OAuth** collection, select the request named **POST - Get Access Token** and select **Send**. 
+
+![Adobe I/O New Integration](./images/iopbvar3a.png)
 
 You should see a similar response containing the following information:
 
@@ -139,9 +147,9 @@ You should see a similar response containing the following information:
 
 The Adobe I/O **bearer-token** has a specific value (the very long access_token) and an expiration window and is now valid for 24 hours. This means that after 24 hours, if you want to use Postman to interact with Adobe APIs, you will have to generate a new token by running this request again.
 
-![Adobe I/O New Integration](./images/iopbvar4.png){zoomable="yes"}
+![Adobe I/O New Integration](./images/iopbvar4.png)
 
-Your PostBuster environment is now setup and working. You've now completed the Getting Started module.
+Your PostBuster environment is now configured and working. You've now completed this exercise.
 
 ## Next Steps
 
