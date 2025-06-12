@@ -73,7 +73,7 @@ Give the new project a name: `--aepUserLdap-- - Custom Models`. Click **Create**
 
 ![Firefly Custom Models](./images/ffcm5.png){zoomable="yes"} 
 
-You should then see this. Click **Create**.
+You should then see this. Click **Continue**.
 
 ![Firefly Custom Models](./images/ffcm6.png){zoomable="yes"} 
 

@@ -41,7 +41,7 @@ The URL looks like this: `https://hook.fusion.adobe.com/tuqxu1k4rbf7xdiiqheswzib
 
 The expected proof of completion for module **Adobe Experience Manager Cloud Service & Edge Delivery Services** is the **URL** of the website that was created.
 
-The URL looks like this: `https://main--citisignal--xxx.aem.page/us/en`.
+The URL looks like this: `https://main--citisignal--xxx.aem.page/us/en/`.
 
 ![3](./assets/images/aemcsweb.png){zoomable="yes"}
 

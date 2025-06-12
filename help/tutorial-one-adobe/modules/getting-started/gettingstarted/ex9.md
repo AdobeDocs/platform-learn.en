@@ -14,9 +14,15 @@ Go to [https://creativecloud.adobe.com/apps/download/creative-cloud](https://cre
 
 ![Adobe I/O New Integration](./images/cc.png)
 
-## Photoshop
+## Adobe Photoshop
 
 Open the **Adobe Creative Cloud** app, go to **Apps**. Install Photoshop on your computer.
+
+![Adobe I/O New Integration](./images/psd.png)
+
+## Adobe Illustrator
+
+Open the **Adobe Creative Cloud** app, go to **Apps**. Install Illustrator on your computer.
 
 ![Adobe I/O New Integration](./images/psd.png)
 
