@@ -348,7 +348,7 @@ Go back to your scenario in Workfront Fusion. Paste the values of the **Client I
 
 ![Frame IO](./images/frame55.png)
 
-If the connection was tested successfully, it will appear automatically under **Connnection**. You now have a succesful connection, and you need to finish the configuration to get all the asset details from Frame.io, including the file location. To do this, you`ll need to use the **Resource ID**.
+If the connection was tested successfully, it will appear automatically under **Connnection**. You now have a succesful connection, and you need to finish the configuration to get all the asset details from Frame.io, including the file location. To do this, you'll need to use the **Resource ID**.
 
 ![Frame IO](./images/frame56.png)
 
@@ -432,7 +432,7 @@ The specific piece of information that is needed for this use case, is the locat
 
 You now have all the information (**prompt**, **cta**, **button** and **psdTemplate**) availabe that is needed for this use case to function.
 
-## 1.2.5.5 Invoke Workfront scenario
+## 1.2.5.7 Invoke Workfront scenario
 
 In the previous exercise you configured the scenario `--aepUserLdap-- - Firefly + Photoshop`. You now need to make a minor change to that scenario. 
 
@@ -497,7 +497,7 @@ Click **Save** to save your changes.
 
 ![Frame IO](./images/frame73.png)
 
-## 1.2.5.6 Save new asset in Frame.io
+## 1.2.5.8 Save new asset in Frame.io
 
 Once the other Workfront Fusion scenario has been invoked, the result will be a new Photoshop PSD template that is available. That PSD file needs to be stored back into Frame.io, which is the last step in this scenario.
 
@@ -556,7 +556,7 @@ Click **Save** to save your changes.
 
 ![Frame IO](./images/frame81.png)
 
-## 1.2.5.7 Test your end-to-end use case
+## 1.2.5.9 Test your end-to-end use case
 
 Click **Run once** in your scenario `--aepUserLdap-- - Frame IO Custom Action`.
 

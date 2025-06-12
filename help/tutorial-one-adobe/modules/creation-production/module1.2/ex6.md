@@ -53,35 +53,27 @@ You should then see this. Click **Copy address to clipboard**.
 
 ## 1.2.6.2 Configure Webhook in Frame.io
 
-Go to [https://developer.frame.io/](https://developer.frame.io/){target="_blank"}. Click **DEVELOPER TOOLS** and then choose **Webhooks**.
+Go to Postman and open the request **POST - Get Access Token** in the collection **Adobe IO - OAuth**. Next, click **Send** to request a new **access_token**.
 
-![Frame IO](./images/aemf7.png)
+![Frame IO](./images/frameV4api2.png)
 
-Click **Create a Webhook**.
+In the left menu, go back to **Collections**. Open the request **POST - Create Webhook** in the collection **Frame.io V4 - Tech Insiders**, in the folder **Webhooks**. 
 
-![Frame IO](./images/aemf8.png)
+Go to the **Body** of the request. Change the field **name** to `--aepUserLdap--  - Fusion to AEM Assets` and then change the field **url** to the value of the Webhook URL you copied from Workfront Fusion.
 
-Enter the following values:
+Click **Send**.
 
-- **NAME**: use `--aepUserLdap-- - Asset Labels Updated`
-- **URL**: enter the URL of the webhook that you just created in Workfront Fusion
-- **TEAM**: select the appropriate Frame.io team, in this case, **One Adobe Tutorial**.
+![Frame IO](./images/framewh1.png)
 
-![Frame IO](./images/aemf9.png)
+Your Frame.io V4 Custom Action has now been created.
 
-Scroll down and enable the checkbox next to **Asset Labels - updated**. Click **Submit**.
+![Frame IO](./images/framewh2.png)
 
-![Frame IO](./images/aemf10.png)
-
-You should then see this.
-
-![Frame IO](./images/aemf11.png)
-
-Go to [https://app.frame.io/projects](https://app.frame.io/projects){target="_blank"} and go to the folder that you created before, which should be named `--aepUserLdap--`. Double-click to open the asset that was created in the previous exercise.
+Go to [https://next.frame.io/project](https://next.frame.io/project){target="_blank"} and go to the project that you created before, which should be named `--aepUserLdap--` and open the folder **CitiSignal Fiber Campaign**. You should now see the assets that was created in the previous exercise.
 
 ![Frame IO](./images/aemf11a.png)
 
-You should then see something like this. Click the field **No Status** and change the status to **In Progress**.
+Click the field **Status** and change the status to **In Progress**.
 
 ![Frame IO](./images/aemf12.png)
 
