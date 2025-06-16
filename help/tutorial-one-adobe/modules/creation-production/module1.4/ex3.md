@@ -7,13 +7,13 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: c580ac9b-ded1-4b86-b7db-1c38649f50a4
 ---
-# 1.3.3 Bulk Create Assets in Adobe Express
+# 1.4.3 Bulk Create Assets in Adobe Express
 
 Before you start this exercise, download the required assets from [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} and unzip them on your desktop.
 
 ![Adobe Express](./images/expressassets.png)
 
-## 1.3.3.1 Create your basic asset
+## 1.4.3.1 Create your basic asset
 
 Go to [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}. Click the **+** icon to create a new **image**.
 
@@ -89,7 +89,7 @@ You should then see this.
 
 ![Adobe Express](./images/expressbc17.png)
 
-## 1.3.3.2 Bulk create in Adobe Express
+## 1.4.3.2 Bulk create in Adobe Express
 
 Next, click **Bulk create**.
 

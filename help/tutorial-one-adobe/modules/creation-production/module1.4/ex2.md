@@ -7,13 +7,13 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: 510e9f59-1399-4a52-ad51-67e3f407037f
 ---
-# 1.3.2 Animation and Video in Adobe Express
+# 1.4.2 Animation and Video in Adobe Express
 
 Before you start this exercise, download the required assets from [https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip](https://tech-insiders.s3.us-west-2.amazonaws.com/one-adobe/Adobe_Express.zip){target="_blank"} and unzip them on your desktop.
 
 ![Adobe Express](./images/expressassets.png)
 
-## 1.3.2.1 Create a video
+## 1.4.2.1 Create a video
 
 Go to [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}. Click the **+** icon to create a new **image**.
 
@@ -129,7 +129,7 @@ Your video file will then be generated and will then be downloaded to your compu
 
 ![Adobe Express](./images/expressv30.png)
 
-## 1.3.2.2 Add to your video
+## 1.4.2.2 Add to your video
 
 Close the **Timeline** view.
 
@@ -183,7 +183,7 @@ Change the font size to **60**.
 
 ![Adobe Express](./images/expressv46.png)
 
-## 1.3.2.3 Use add-ons in Adobe Express
+## 1.4.2.3 Use add-ons in Adobe Express
 
 Go to **Add-ons** and search for the add-on **Social Previewer**.
 
@@ -197,7 +197,7 @@ Select the add-on **Social Previewer** and click the **Instagram Post** preview 
 
 ![Adobe Express](./images/expressv49.png)
 
-## 1.3.2.4 Make a new template in Adobe Express
+## 1.4.2.4 Make a new template in Adobe Express
 
 Next, click the **Share** button and then select **Make a template**.
 
@@ -211,7 +211,7 @@ Your video template is now saved in your Brand template.
 
 ![Adobe Express](./images/expressv52.png)
 
-## 1.3.2.5 Save your video in AEM Assets CS
+## 1.4.2.5 Save your video in AEM Assets CS
 
 Click **Share** again and then select **Save to cloud**. Select **AEM Assets**.
 
