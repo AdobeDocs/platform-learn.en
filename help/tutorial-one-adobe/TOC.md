@@ -44,12 +44,16 @@ recommendations: noDisplay,noCatalog
     + [1.2.5 Frame.io and Workfront Fusion](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex5.md)
     + [1.2.6 Frame.io to Workfront Fusion to AEM Assets](/help/tutorial-one-adobe/modules/creation-production/module1.2/ex6.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
-  + 1.3 Adobe Express and Adobe Experience Cloud {#crpr3}  
-    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.3/express.md)
-    + [1.3.1 Getting started with Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
-    + [1.3.2 Animation and Video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
-    + [1.3.3 Bulk Create Assets in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
+  + 1.3 GenStudio for Performance Marketing {#crpr3}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
+    + [1.3.1 Getting started with GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
+  + 1.4 Adobe Express and Adobe Experience Cloud {#crpr4}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)
+    + [1.4.1 Getting started with Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex1.md)
+    + [1.4.2 Animation and Video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex2.md)
+    + [1.4.3 Bulk Create Assets in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex3.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.4/summary.md)
 
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}

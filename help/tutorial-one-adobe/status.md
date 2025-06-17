@@ -26,7 +26,8 @@ Below is an overview of the status of the content in this tutorial.
 | ---------------------- | ------------ | ------------ |------------ |
 | [1.1 Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"} | 04/06/2025  | Yes         | - |
 | [1.2 Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} | 04/06/2025  | Yes         | - |
-| [1.3 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"} | 01/04/2025  | Yes         | - |
+| [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025  | Yes         | - |
+| [1.4 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025  | Yes         | - |
 
 
 ## 3. Asset Management

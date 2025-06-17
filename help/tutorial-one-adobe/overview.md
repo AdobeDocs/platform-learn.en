@@ -59,9 +59,13 @@ In this module, you will use Adobe Firefly Services APIs, Photoshop APIs and Mic
 
 [1.2 Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}
 
-In this foundational module, you will use Adobe Workfront Fusion to automate and scale your content creation workflows.
+In this module, you will use Adobe Workfront Fusion to automate and scale your content creation workflows.
 
-[1.3 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.3/express.md){target="_blank"}
+[1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"}
+
+In this module you will use Adobe GenStudio for Performance Marketing, a Gen AI-first end to end workflow application for marketing and creative teams to create, activate and optimize omni-channel content with enterprise governance for digital marketing campaigns.
+
+[1.4 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"}
 
 In this foundational module, you will use Adobe Express to create images and videos, and you'll share those assets towards the broader Adobe Experience Cloud ecosystem.
 
