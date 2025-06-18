@@ -35,9 +35,9 @@ This tutorial doesn't just focus on Adobe applications, but takes into account t
 After completing some of the modules in this tutorial, you can take an Adobe Credential exam to receive an **Adobe Qualified** badge. 
 
 - When you complete the module [Overview of Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}, you are ready to take and pass the **Adobe Qualified** exam **AD2-E901**: 
-[https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential).
-- When you complete the module [Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, you are ready to take and pass the **Adobe Qualified** exam **XXX**: 
-[TBC](https://certification.adobe.com/certification/services-qualified-credential).
+[https://certification.adobe.com/certification/services-qualified-credential](https://certification.adobe.com/certification/services-qualified-credential){target="_blank"}.
+- When you complete the module [Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"}, you are ready to take and pass the **Adobe Qualified** exam **AD2-E902**: 
+[https://certification.adobe.com/certification/fusion-qualified-credential](https://certification.adobe.com/certification/fusion-qualified-credential){target="_blank"}.
 
 ## Content Status
 
