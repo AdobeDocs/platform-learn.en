@@ -519,8 +519,6 @@ Your Frame.io connection will be automatically selected.
 
 For the configuration of the module **Frame.io - Make a custom API call**, use the URL: `/v4/accounts/{{1.account_id}}/folders/{{4.body.data.parent_id}}/files/remote_upload`.
 
-You need to replace XXX in the above URL by the ID of the folder
-
 >[!NOTE]
 >
 >As stated before, variables in Workfront Fusion can be manually specified using this syntax: `{{1.account_id}}` and `{{4.body.data.parent_id}}`. The number in the variable references the module in the scenario. 

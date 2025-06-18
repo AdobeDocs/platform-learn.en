@@ -46,7 +46,9 @@ recommendations: noDisplay,noCatalog
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.2/summary.md)
   + 1.3 GenStudio for Performance Marketing {#crpr3}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.3/genstudio.md)
-    + [1.3.1 Getting started with GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+    + [1.3.1 Configuration: Brands](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex1.md)
+    + [1.3.2 Configuration: Personas, Products and Templates](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex2.md)
+    + [1.3.3 Campaign Activation to Meta](/help/tutorial-one-adobe/modules/creation-production/module1.3/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.3/summary.md)
   + 1.4 Adobe Express and Adobe Experience Cloud {#crpr4}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.4/express.md)
