@@ -15,9 +15,13 @@ doc-type: Tutorial
 
 ## Exercises
 
-[1.3.1 Getting started with GenStudio for Performance Marketing](./ex1.md){target="_blank"}
+[1.3.1 Configuration: Brands](./ex1.md){target="_blank"}
 
-In this exercise, explore GenStudio for Performance Marketing.
+In this exercise, you'll configure a CitiSignal brand in GenStudio for Performance Marketing.
+
+[1.3.2 Configuration: Personas, Products and Templates](./ex2.md){target="_blank"}
+
+In this exercise, you'll configure personas and products in GenStudio for Performance Marketing.
 
 [Summary and benefits](./summary.md){target="_blank"}
 
