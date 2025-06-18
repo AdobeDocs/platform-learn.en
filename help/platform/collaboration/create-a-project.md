@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 243
 last-substantial-update: 2025-06-17
 jira: KT-18370
+exl-id: eee7cd2f-a034-400c-88d0-133ac23a59b0
 ---
-
 # Create a project in Real-Time CDP Collaboration
 
 Learn the basics of creating projects in Collaboration, including a brief look at discovery, activation, and measurement.
