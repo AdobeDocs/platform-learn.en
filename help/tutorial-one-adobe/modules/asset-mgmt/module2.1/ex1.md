@@ -9,51 +9,68 @@ exl-id: fda247eb-1865-4936-b46e-84128ccab357
 
 Go to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. The org you should select is `--aepImsOrgName--`. You'll then see something like this. Click **Add Program**.
 
-![AEMCS](./images/aemcs1.png){zoomable="yes"}
+![AEMCS](./images/aemcs1.png)
 
-For the **Program Name**, use `--aepUserLdap-- - CitiSignal`. Click **Continue**.
+For the **Program Name**, use `--aepUserLdap-- - CitiSignal`. Select the option **Set up a sandbox**. Click **Continue**.
 
-![AEMCS](./images/aemcs2.png){zoomable="yes"}
+![AEMCS](./images/aemcs2.png)
 
 Ensure that the following options are selected:
 
 - Sites
-- Assets
-- Edge Delivery Services
+- Forms
+- Assets 
+
+Click the arrow for **Assets** to open the list of options.
+
+![AEMCS](./images/aemcs3.png)
+
+Ensure that the following options are selected:
+
+- Content Hub
+
+Scroll down in the list.
+
+![AEMCS](./images/aemcs3a.png)
+
+Ensure that the following options are selected:
+
+- Edge Delivery Services 
+- Dynamic Media
 
 Click **Create**.
 
-![AEMCS](./images/aemcs3.png){zoomable="yes"}
+![AEMCS](./images/aemcs3b.png)
 
-Creating your environments will take some time, 10-20mins.
+Creating your environment will take some time, 10-20mins.
 
-![AEMCS](./images/aemcs4.png){zoomable="yes"}
+![AEMCS](./images/aemcs4.png)
 
 While you wait, you can already start with exercise [1.1.2 Create your document-based website](./ex2.md){target="_blank"}.
 
 Once the environments are created and ready to use, you'll receive an email confirmation after which you can come back here.
 
-![AEMCS](./images/aemcs5.png){zoomable="yes"}
+![AEMCS](./images/aemcs5.png)
 
 Once you've received your email confirmation, go back to [https://my.cloudmanager.adobe.com](https://my.cloudmanager.adobe.com){target="_blank"}. You'll then see that the status of your program has changed to **Ready**. Click your program to open it.
 
-![AEMCS](./images/aemcs6.png){zoomable="yes"}
+![AEMCS](./images/aemcs6.png)
 
 Have a look at the tab **Pipelines**. Click the 3 dots **...** and then click **Run**. 
 
-![AEMCS](./images/aemcs7.png){zoomable="yes"}
+![AEMCS](./images/aemcs7.png)
 
 Click **Run**.
 
-![AEMCS](./images/aemcs8.png){zoomable="yes"}
+![AEMCS](./images/aemcs8.png)
 
 Next, click the 3 dots **...** on the **Environments** tab and click **View Details**.
 
-![AEMCS](./images/aemcs9.png){zoomable="yes"}
+![AEMCS](./images/aemcs9.png)
 
 You'll then see your environment details, including the URL of your **Author** environment, which you'll need in the next exercise.
 
-![AEMCS](./images/aemcs10.png){zoomable="yes"}
+![AEMCS](./images/aemcs10.png)
 
 Once your pipeline run has finished, you can continue with the next exercise.
 
