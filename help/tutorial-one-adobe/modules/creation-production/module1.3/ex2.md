@@ -1,6 +1,6 @@
 ---
-title: Getting started with Adobe Express
-description: Getting started with Adobe Express
+title: GenStudio for Performance Marketing Configuration Personas Products Templates
+description: GenStudio for Performance Marketing Configuration Personas Products Templates
 role: Developer
 level: Beginner
 jira: KT-5342

@@ -70,7 +70,34 @@ Next, click the 3 dots **...** on the **Environments** tab and click **View Deta
 
 You'll then see your environment details, including the URL of your **Author** environment, which you'll need in the next exercise.
 
+Have a look at the **Content Hub** line, and select **Click to activate**.
+
 ![AEMCS](./images/aemcs10.png)
+
+Click **Activate**.
+
+![AEMCS](./images/aemcsact1.png)
+
+**Content Hub** activation has now started. This may take 10 minutes or more.
+
+![AEMCS](./images/aemcsact2.png)
+
+After about 10 minutes, the activation of **Content Hub** will be done. 
+Next, have a look at the **Dynamic Media** line, and select **Click to activate**.
+
+![AEMCS](./images/aemcsact3.png)
+
+Click **Activate**.
+
+![AEMCS](./images/aemcsact4.png)
+
+**Dynamic Media** activation has now started. This may take 10 minutes or more.
+
+![AEMCS](./images/aemcsact5.png)
+
+After about 10 minutes, the activation of **Dynamic Media** will be done. 
+
+![AEMCS](./images/aemcsact6.png)
 
 Once your pipeline run has finished, you can continue with the next exercise.
 

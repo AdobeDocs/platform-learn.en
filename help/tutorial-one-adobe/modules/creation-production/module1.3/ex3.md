@@ -1,6 +1,6 @@
 ---
-title: Getting started with Adobe Express
-description: Getting started with Adobe Express
+title: GenStudio for Performance Marketing Campaign Activation to Meta
+description: GenStudio for Performance Marketing Campaign Activation to Meta
 role: Developer
 level: Beginner
 jira: KT-5342

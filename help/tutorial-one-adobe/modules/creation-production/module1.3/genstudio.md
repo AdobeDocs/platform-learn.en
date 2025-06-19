@@ -23,7 +23,9 @@ In this module, you'll learn how to perform all of the above steps yourself, and
 
 ## Prerequisites
 
-- Access to Adobe GenStudio for Performance Marketing [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
+- Access to Adobe GenStudio for Performance Marketing
+- Access to Adobe Workfront and Adobe Workfront Planning
+- Access to an Adobe Experience Manager Cloud Service sandbox with Content Hub enabled
 
 ## Exercises
 
