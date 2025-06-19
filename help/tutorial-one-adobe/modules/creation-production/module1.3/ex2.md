@@ -9,9 +9,17 @@ exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
 ---
 # 1.3.2 Configuration: Personas, Products and Templates
 
+Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
+
+![GSPeM](./images/gspem1.png)
+
 ## 1.3.2.1 Products
 
-Click the 3 dots **...** and then select **Products**.
+Products in GenStudio for Performance Marketing leverage a deep understanding of product specifications, advantages, and differentiating factors to generate impactful content.
+
+Products encompass all elements of a specific product, such as imagery, descriptions, and value propositions, to create a cohesive brand representation. Leveraging Adobe’s advanced AI technology, GenStudio for Performance Marketing guidelines—Brands, Products, and Personas—work together to generate compelling content that showcases the strengths of your products and ensures consistency across all messaging.
+
+To start creating your own products, click the 3 dots **...** and then select **Products**.
 
 ![GSPeM](./images/gspem101.png)
 
@@ -97,7 +105,11 @@ You should then see the 2 products that you configured.
 
 ## 1.3.2.2 Personas
 
-Click the 3 dots **...** and then select **Personas**.
+Personas provide an authentic portrayal of your customer segments, encompassing their information, interests, pain points, preferences, and behavioral traits.
+
+GenStudio for Performance Marketing leverages the power of guidelines—Brands, Products, and Personas—and Adobe’s generative AI technology to curate personalized marketing content for your target customers.​
+
+To start creating your personas, click the 3 dots **...** and then select **Personas**.
 
 ![GSPeM](./images/gspem111.png)
 
@@ -208,6 +220,10 @@ You should then see the 3 personas that you configured.
 ![GSPeM](./images/gspem124.png)
 
 ## 1.3.2.3 Templates
+
+GenStudio for Performance Marketing enables content creators to produce consistent on-brand marketing content quickly using templates. A template significantly reduces the time and effort required to generate new content by providing a starting point that includes pre-configured layouts and design elements.
+
+While GenStudio for Performance Marketing does not support the direct creation of templates within the application, you can easily design and prepare templates using popular design tools, such as Adobe InDesign, Illustrator, or Express. Once your design is complete, you can adapt it for use in GenStudio for Performance Marketing. In this exercise, you'll import a number of predefined templates into GenStudio for Performance Marketing.
 
 In the previous exercise, you downloaded the file [CitiSignal-GSPeM-assets.zip](../../../assets/gspem/CitiSignal-GSPeM-assets.zip) to your desktop and unzipped it. That folder contains 4 sample templates that you now need to import in GenStudio.
 

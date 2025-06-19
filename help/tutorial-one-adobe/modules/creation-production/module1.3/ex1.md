@@ -9,6 +9,12 @@ exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
 ---
 # 1.3.1 Configuration: Brand
 
+A brand distinguishes an organization, product, service or concept from others. Some aspects of a brand are objective, like a logo, while others are subjective, like tone of voice.
+
+GenStudio for Performance Marketing uses the wealth of brand information from your brand, partners it with product and persona information, and builds out a comprehensive brand identity. This brand identity is used to inform the creation of on-brand content using Adobe’s generative AI technology.
+
+To start creating your own brand, follow the below steps.
+
 Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
 
 ![GSPeM](./images/gspem1.png)
