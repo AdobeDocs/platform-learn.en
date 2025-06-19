@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
 ---
 # 1.3.2 Configuration: Personas, Products and Templates
 

@@ -5,7 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
-exl-id: c1b1d78d-9374-4ccd-82cf-e71c682fc907
+exl-id: b34c6bbf-4c47-4791-b15e-73b8ba059434
 ---
 # 1.3.1 Configuration: Brand
 
