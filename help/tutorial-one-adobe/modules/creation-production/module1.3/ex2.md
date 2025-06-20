@@ -8,9 +8,7 @@ doc-type: Tutorial
 ---
 # 1.3.2 Configuration: Personas, Products and Templates
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
-
-![GSPeM](./images/gspem1.png)
+In this exercise, you'll configure personas, products and templates in GenStudio for Performance Marketing.
 
 ## 1.3.2.1 Products
 
