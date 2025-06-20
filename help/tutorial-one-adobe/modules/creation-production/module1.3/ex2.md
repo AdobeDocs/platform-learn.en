@@ -1,6 +1,6 @@
 ---
-title: Getting started with Adobe Express
-description: Getting started with Adobe Express
+title: GenStudio for Performance Marketing Configuration Personas Products Templates
+description: GenStudio for Performance Marketing Configuration Personas Products Templates
 role: Developer
 level: Beginner
 jira: KT-5342
@@ -9,9 +9,7 @@ exl-id: 181c1623-eb47-47e0-889b-6e9ebb6a143c
 ---
 # 1.3.2 Configuration: Personas, Products and Templates
 
-Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Open **GenStudio**.
-
-![GSPeM](./images/gspem1.png)
+In this exercise, you'll configure personas, products and templates in GenStudio for Performance Marketing.
 
 ## 1.3.2.1 Products
 

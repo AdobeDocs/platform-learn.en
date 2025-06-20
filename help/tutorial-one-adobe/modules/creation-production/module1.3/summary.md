@@ -1,6 +1,6 @@
 ---
 title: Summary and Benefits of GenStudio for Performance Marketing
-description: GenStudio for Performance Marketing
+description: Summary and Benefits of GenStudio for Performance Marketing
 kt: 5342
 doc-type: tutorial
 exl-id: 041a66b5-2089-4bb2-a2f5-819b3d879003

@@ -24,7 +24,9 @@ In this module, you'll learn how to perform all of the above steps yourself, and
 
 ## Prerequisites
 
-- Access to Adobe GenStudio for Performance Marketing [https://new.express.adobe.com/](https://new.express.adobe.com/){target="_blank"}
+- Access to Adobe GenStudio for Performance Marketing
+- Access to Adobe Workfront and Adobe Workfront Planning
+- Access to an Adobe Experience Manager Cloud Service sandbox with Content Hub enabled
 
 ## Exercises
 
@@ -34,11 +36,11 @@ In this exercise, you'll configure a CitiSignal brand in GenStudio for Performan
 
 [1.3.2 Configuration: Personas, Products and Templates](./ex2.md){target="_blank"}
 
-In this exercise, you'll configure personas and products in GenStudio for Performance Marketing.
+In this exercise, you'll configure personas, products and templates in GenStudio for Performance Marketing.
 
 [1.3.3 Campaign Activation to Meta](./ex3.md){target="_blank"}
 
-In this exercise, you'll configure a connection to Meta and you'll walk through all the steps needed to be able to create an ad, approve an ad using Adobe Workfront, and publish an ad to Meta.
+In this exercise, you'll create a Campaign. You'll also configure a connection to Meta and you'll walk through all the steps needed to be able to create an ad, approve an ad using Adobe Workfront, and publish an ad to Meta.
 
 [Summary and benefits](./summary.md){target="_blank"}
 
