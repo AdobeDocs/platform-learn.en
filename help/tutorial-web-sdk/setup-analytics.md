@@ -360,6 +360,10 @@ Go to a product page like the [Didi Sport Watch product page](https://luma.enabl
 1. Look for `[!UICONTROL c.a.x.web.webpagedetails.pageviews.value]=1`. 
 1. Scroll down to see the `[!UICONTROL gn]` variable. It is the Analytics dynamic syntax for the `[!UICONTROL s.pageName]` variable. It captures the page name from the data layer.
 
+    >[!NOTE]
+    >
+    > The `gn` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
+
     ![Analytics product string](assets/analytics-debugger-edge-page-view.png)  
 
 ### Product string and e-commerce events validation
@@ -383,7 +387,7 @@ Since you are already on a product page, this exercise continues to use the same
 
     >[!TIP]
     >
-    > The `ecommerce - pdp library loaded - AA (order 20)` rule is overwriting the value of `eventType` set by the `all pages global content variables - library loaded - AA (order 1)` rule as it is set to trigger later in the sequence
+    > The `ecommerce - library loaded - set product details variables - 20` rule is overwriting the value of `eventType` set by the `all pages - library loaded - set global variables - 1` rule as it is set to trigger later in the sequence
 
 
     ![Analytics Product View](assets/analytics-debugger-prodView.png) 
@@ -443,7 +447,13 @@ Then scroll down to **[!UICONTROL mcvisId]** to validate that the ECID is correc
 ### Content page views validation
 
 Using the same beacon, validate that content page views are mapped to the correct Adobe Analytics variable.
-Scroll down to **[!UICONTROL pageName]** to validate that the `Page Name` is correctly captured
+Scroll down to **[!UICONTROL pageName]** to validate that the `Page Name` is correctly captured:
+
+
+    >[!NOTE]
+    >
+    > The `pageName` value might be `test` if you overwrote the `xdm` object with the `data` object in the earlier exercise.
+
     ![Page name validation with Assurance](assets/assurance-hitdebugger-content-pagename.png)
 
 ### Product string and e-commerce events validation
