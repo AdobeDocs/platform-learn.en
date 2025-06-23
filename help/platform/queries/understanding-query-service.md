@@ -5,7 +5,7 @@ feature: Queries
 role: Data Engineer, Developer
 level: Beginner
 jira: KT-3139
-thumbnail: 29795.jpg
+last-substantial-update: 2025-06-23
 exl-id: 988bc316-9eec-4dca-8049-95c2d613379d
 ---
 # Query Service and Data Distiller overview
