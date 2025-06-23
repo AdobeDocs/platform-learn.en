@@ -334,7 +334,7 @@ Now that you have configured the Platform Web SDK to request content for the `ho
          if (proposition.scope === "homepage-hero") {
             heroProposition = proposition;
             break;
-         }xw
+         }
       }
    }
    // Send a "display" event
