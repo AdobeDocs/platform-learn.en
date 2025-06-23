@@ -236,7 +236,7 @@ Campaigns
   + [Set up customer-managed keys](/help/platform/privacy/set-up-customer-managed-keys.md)
   + [10 considerations for Responsible Customer Data Management](/help/platform/privacy/ten-considerations-for-responsible-customer-data-management.md)
   + [Elevating the Marketer's Role as a Data Steward](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
-+ Queries {#queries}
++ Queries and Data Distiller {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
   + [Query Service UI](/help/platform/queries/query-service-ui.md)
   + [Query Service API](/help/platform/queries/query-service-api.md)
