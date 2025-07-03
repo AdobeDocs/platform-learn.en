@@ -4,6 +4,7 @@ description: Getting Started with push notifications
 kt: 5342
 audience: Data Engineer, Data Architect, Orchestration Engineer, Marketer
 doc-type: tutorial
+exl-id: b46e0205-b0a1-4a14-95f6-9afe21cd2b5e
 ---
 # 3.3.1 Getting Started with push notifications
 

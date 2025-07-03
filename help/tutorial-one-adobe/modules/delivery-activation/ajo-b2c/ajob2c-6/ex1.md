@@ -3,6 +3,7 @@ title: Content Cards in Adobe Journey Optimizer
 description: Content Cards in Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
+exl-id: df8402b8-7668-492d-9d82-e89f60fa3c05
 ---
 # 3.6.1 Content Cards
 

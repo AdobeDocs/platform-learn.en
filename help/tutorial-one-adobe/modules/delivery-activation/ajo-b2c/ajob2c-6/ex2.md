@@ -3,6 +3,7 @@ title: Landing Pages in Adobe Journey Optimizer
 description: Landing Pages in Adobe Journey Optimizer
 kt: 5342
 doc-type: tutorial
+exl-id: bf499aad-91d0-4fb5-a38c-db8fcd56480b
 ---
 # 3.6.2 Landing Pages
 

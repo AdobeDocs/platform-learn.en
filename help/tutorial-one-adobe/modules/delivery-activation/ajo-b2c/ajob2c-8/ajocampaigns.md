@@ -3,6 +3,7 @@ title: Adobe Journey Optimizer Campaigns
 description: Adobe Journey Optimizer Campaigns
 kt: 5342
 doc-type: tutorial
+exl-id: 7b39e5df-408f-4534-9407-b39c5ce0eed0
 ---
 # 3.8 Adobe Journey Optimizer: Campaigns 
 
