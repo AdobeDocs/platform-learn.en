@@ -1,6 +1,6 @@
 ---
-title: Adobe Journey Optimizer: Content Management Summary
-description: Adobe Journey Optimizer: Content Management Summary
+title: Adobe Journey Optimizer Content Management Summary
+description: Adobe Journey Optimizer Content Management Summary
 kt: 5342
 doc-type: tutorial
 ---
