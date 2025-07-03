@@ -54,7 +54,6 @@ For this datastream...
 - All data that is collected will be stored in the `--aepSandboxName--` sandbox in Adobe Experience Platform
 - All Experience Event data is collected by default into the dataset **Demo System - Event Dataset for Website (Global v1.1)**
 - All Profile data will be collected by default into the dataset **Demo System - Profile Dataset for Website (Global v1.1)** (ingesting profile data natively with Web SDK currently isn't supported yet by Web SDK)
-- If you want to use the **Offer Decisioning** application service for this datastream, you need to check the box for Offer Decisioning. (This will be part of [Module 3.3](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md))
 - **Edge Segmentation** is enabled by default, which means that qualifying audiences will be evaluated at the edge, upon ingestion of incoming traffic
 - If you want to use [personalization destinations](https://experienceleague.adobe.com/en/docs/experience-platform/destinations/catalog/personalization/overview), check the box for **Personalization Destinations**.
 - If you want to use **Adobe Journey Optimizer**'s capabilities in this datastream, you need to check the box for **Adobe Journey Optimizer**.

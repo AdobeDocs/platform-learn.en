@@ -50,11 +50,14 @@ Below is an overview of the status of the content in this tutorial.
 | [2.4 Real-Time CDP: Audience Activation to Microsoft Azure Event Hub](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-4/segment-activation-microsoft-azure-eventhub.md){target="_blank"}      | 21/11/2024        | Yes         |-|
 | [2.5 Real-Time CDP Connections: Event Forwarding](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-5/aep-data-collection-ssf.md){target="_blank"}       | 21/11/2024        | Yes         |-|
 | [2.6 Stream data from Apache Kafka into Real-Time CDP](./modules/delivery-activation/rtcdp-b2c/rtcdpb2c-6/aep-apache-kafka.md){target="_blank"}      | 25/11/2024        | Yes        |-|
-| [3.1 Adobe Journey Optimizer: Orchestration](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"}     | 30/12/2024        | Yes        |-|
-| [3.2 Adobe Journey Optimizer: External data sources and custom actions](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"}     | 30/12/2024        | Yes       |-|
-| [3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md){target="_blank"}     | 06/01/2025        | Yes       |-|
-| [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"}| 05/01/2025        | Yes        |-|
-| [3.5 Adobe Journey Optimizer: Translation Services](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"}| 08/02/2025        | Yes        |-|
+| [3.1 Adobe Journey Optimizer: Orchestration](./modules/delivery-activation/ajo-b2c/ajob2c-1/journey-orchestration-create-account.md){target="_blank"}     | 03/07/2025       | Yes        |-|
+| [3.2 Adobe Journey Optimizer: External data sources and custom actions](./modules/delivery-activation/ajo-b2c/ajob2c-2/journey-orchestration-external-weather-api-sms.md){target="_blank"}     | 03/07/2025       | Yes       |-|
+| [3.3 Adobe Journey Optimizer: Push and In-app Messages](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"}     | 03/07/2025/2025        | Yes       |-|
+| [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"}| 03/07/2025        | Yes        |-|
+| [3.5 Adobe Journey Optimizer: Translation Services](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"}| 03/07/2025        | Yes        |-|
+| [3.6 Adobe Journey Optimizer: Content Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"}| 03/07/2025        | No        |Content being developed|
+| [3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"}| 03/07/2025        | No        |Content being developed|
+| [3.8 Adobe Journey Optimizer: Campaigns](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"}| 03/07/2025        | No        |Content being developed|
 
 ## 5. Reporting & Insights
 

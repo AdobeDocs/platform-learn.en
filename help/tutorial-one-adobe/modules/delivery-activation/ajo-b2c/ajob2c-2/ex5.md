@@ -17,7 +17,7 @@ This is the Adobe Experience Platform Data Collection Properties page you saw be
 
 ![Properties page](./../../../../modules/delivery-activation/datacollection/dc1.1/images/launch1.png) 
 
-In **Getting Started**, Demo System created two Client properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
+In **Getting Started**, Demo System Next created Tags properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **[!UICONTROL Search]** box. Click to open the **Web** property.
 
 ![Search box](./../../../../modules/delivery-activation/datacollection/dc1.1/images/property6.png)
 
@@ -47,7 +47,7 @@ You'll then see this:
 
 Navigate to the field `_experience.campaign.orchestration.eventID`. Remove the current value, and paste your eventID there.
 
-As a reminder, the Event ID can be found in Adobe Journey Optimizer under **Configurations > Events** and you'll find the event ID in the sample payload of your even, which looks like this: `"eventID": "4df8dc10731eba7b0c37af83a9db38d4de7aa6aebcce38196d9d47929b9c598e"`. 
+As a reminder, the Event ID can be found in Adobe Journey Optimizer under **Configurations > Events** and you'll find the event ID in the sample payload of your even, which looks like this: `"eventID": "209a2eecb641e20a517909e186a559ced155384a26429a557eb259e5a470bca7"`. 
 
 ![ACOP](./images/payloadeventID.png)
 
@@ -97,11 +97,17 @@ Open the Profile Viewer panel and go to Real-time Customer Profile. On the Profi
       
 ![Demo](./images/pv2.png)
 
-On the Profile Viewer panel, click **UTILITIES**. Enter `geofenceevent` and click **Send**.
+On the Profile Viewer panel, click **UTILITIES** and then selecy **Direct Call**. 
 
 >[!NOTE]
 >
 >In case you don't have the option on the Profile Viewer panel to send a direct call event, you can manually send one by open the Developer View of your browse and going to **Console**, and then paste and send this command: `_satellite.track('geofenceevent')`.
+
+![Demo](./images/pv3.png)
+
+Enter `geofenceevent` and click **Submit**.
+
+![Demo](./images/pv4.png)
 
 A couple of seconds later, you'll see the message from Adobe Journey Optimizer appear in the Slack channel.
 

@@ -40,7 +40,7 @@ After selecting the Schema, you'll see a number of fields being selected in the 
 
 ![ACOP](./images/eventpayload.png)
 
-You'll see a **Fields** window popup, in which you need to select some of the fields that we need to personalize the email.  We will choose other profile attributes later, using the data already in Adobe Experience Platform.
+You'll see a **Fields** window popup, in which you need to select some of the fields that we need to personalize the email.  You'll choose other profile attributes later, using the data already in Adobe Experience Platform.
 
 ![ACOP](./images/eventfields.png)
 
@@ -52,7 +52,7 @@ In the object `--aepTenantId--.identification.core`, please make sure to select 
 
 ![ACOP](./images/eventpayloadbrid.png)
 
-You should then see this. Set the **Namespace** to **ECID (ECID)**. Click **Save**.
+You should then see this. Make sure that the **Namespace** is set to **ECID (ECID)**. Click **Save**.
 
 ![ACOP](./images/eventsave.png)
 
@@ -71,17 +71,15 @@ You'll now see an example of the expected payload.
 Your Event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see `_experience.campaign.orchestration.eventID`.
 
 The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the journey that you'll build next. Remember this eventID, as you'll need it in one of the next exercises.
-`"eventID": "5ae9b8d3f68eb555502b0c07d03ef71780600c4bd0373a4065c692ae0bfbd34d"`
+`"eventID": "d40815dbcd6ffd813035b4b590b181be21f5305328e16c5b75e4f32fd9e98557"`
 
 Click **Ok**.
 
 ![ACOP](./images/payloadeventID.png)
 
-Click **Cancel**.
+Click **Cancel** to close this window.
 
 ![ACOP](./images/payloadeventID1.png)
-
-You've now finished this exercise.
 
 ## Next Steps
 

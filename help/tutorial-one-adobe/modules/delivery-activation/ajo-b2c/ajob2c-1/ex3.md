@@ -5,7 +5,7 @@ kt: 5342
 doc-type: tutorial
 exl-id: e264ab9e-e7f1-4a0b-b3b7-17003c40f17a
 ---
-# 3.1.3 Create your Journey, Fragments and Message
+# 3.1.3 Create your journey and email message
 
 In this exercise, you'll configure the journey and the message that needs to be triggered when someone creates an account on the demo website.
 
@@ -21,13 +21,13 @@ You'll be redirected to the **Home**  view in Journey Optimizer. First, make sur
 
 In the left menu, click **Journeys**. Next, click **Create Journey** to create a new journey.
 
-![ACOP](./images/createjourney.png) 
+![ACOP](./images/createjourney.png)
 
 You'll then see an empty journey screen.
 
 ![ACOP](./images/journeyempty.png)
 
-In the previous exercise, you created a new **Event**. You named it like this `--aepUserLdap--AccountCreationEvent` and replaced `ldap` with your ldap. This was the result of the Event creation:
+In the previous exercise, you created a new **Event**. You named it like this `--aepUserLdap--AccountCreationEvent`. This was the result of the Event creation:
 
 ![ACOP](./images/eventdone.png)
 
@@ -35,7 +35,7 @@ You now need to take this event as the start of this Journey. You can do this by
 
 ![ACOP](./images/eventlist.png)
 
-Select your event, drag and drop it on the Journey canvas. Your Journey now looks like this:
+Select your event, drag and drop it on the journey canvas. Your journey now looks like this:
 
 ![ACOP](./images/journeyevent.png)
 
@@ -51,7 +51,7 @@ As the third step in the journey, you need to add an **Email** action. Go to the
 
 ![ACOP](./images/journeyactions.png)
 
-Set the **Category** to **Marketing** and select an email configuration that enables you to send email. In this case, the email configuration to select is **Email**. Ensure that the checkboxes for **Clicks on email** and **email opens** are both enabled.
+Set the **Category** to **Marketing** and select an email configuration that enables you to send email. In this case, the email configuration to select is **Email-TI**.
 
 ![ACOP](./images/journeyactions1.png)
 

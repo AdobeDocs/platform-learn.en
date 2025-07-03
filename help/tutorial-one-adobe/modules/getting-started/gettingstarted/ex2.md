@@ -11,7 +11,7 @@ In order to visualize the learnings in this tutorial and to make it possible for
 
 Once you've got access to Demo System Next, proceed with the below steps.
 
-Go to [https://dsn.adobe.com/](https://dsn.adobe.com/){target="_blank"} and navigate to **Setup**.
+Go to [https://dsn.adobe.com/quick-setup](https://dsn.adobe.com/quick-setup){target="_blank"} and navigate to **Setup**.
 
 ![DSN](./images/dsnsetup.png)
 
@@ -19,7 +19,7 @@ In the **Environment** dropdown, select your instance and sandbox.
 
 ![DSN](./images/dsnh1.png)
 
-Next, select the preset **AEP Tutorial User**.
+Next, select the preset **One Adobe Tutorial**.
 
 ![DSN](./images/dsnhome.png)
 

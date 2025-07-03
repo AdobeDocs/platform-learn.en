@@ -131,9 +131,9 @@ In this module you'll use Adobe Journey Optimizer to build out a trigger-based j
 
 In this module, you'll use Adobe Journey Optimizer to listen to customer behavior, both online and offline, and respond to it in an intelligent, contextual and real-time way over various channels.
 
-[3.3 Adobe Journey Optimizer: Offer Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
+[3.3 Adobe Journey Optimizer: Push and In-app Messages](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
 
-In this module, you'll use Adobe Journey Optimizer to configure Personalized Offers and your own Offer Decision.
+In this module, you'll use Adobe Journey Optimizer to configure push notifications and in-app messages.
 
 [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
 
@@ -142,6 +142,18 @@ In this module, you'll learn everything there is to know about Journey Optimizer
 [3.5 Adobe Journey Optimizer: Translation Services](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
 
 In this module, you'll learn how to setup and use Translation Services within Adobe Journey Optimizer to localize your messages to your customers.
+
+[3.6 Adobe Journey Optimizer: Content Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+
+In this module, you'll learn how to setup and use Content Cards and Landing Pages within Adobe Journey Optimizer and you'll deepdive into the integration between Adobe Journey Optimizer and GenStudio for Performance Marketing.
+
+[3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
+
+In this module, you'll learn how to setup and use Decisioning and Code-based Experiences within Adobe Journey Optimizer.
+
+[3.8 Adobe Journey Optimizer: Campaigns](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
+
+In this module, you'll learn how to setup and use Campaigns within Adobe Journey Optimizer.
 
 ### 5. Reporting & Insights
 

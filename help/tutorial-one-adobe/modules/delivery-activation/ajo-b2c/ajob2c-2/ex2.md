@@ -68,7 +68,7 @@ As a Name for the data source, use `--aepUserLdap--WeatherApi`.
 
 Set Description to: `Access to the Open Weather Map`.
 
-The URL for the Open Weather Map API is: **http://api.openweathermap.org/data/2.5/weather?units=metric**
+The URL for the Open Weather Map API is: `http://api.openweathermap.org/data/2.5/weather?units=metric`.
 
 ![Demo](./images/dsname.png)
 
