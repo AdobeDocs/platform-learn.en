@@ -165,21 +165,17 @@ recommendations: noDisplay,noCatalog
       + [3.2.4 Create your journey and messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex4.md)
       + [3.2.5 Trigger your journey](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/ex5.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-2/summary.md)
-    + 3.3 Adobe Journey Optimizer: Offer Decisioning {#ajo33}
-      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/offer-decisioning.md)
-      + [3.3.1 Offer Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
-      + [3.3.2 Configure your Offers and Decision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
-      + [3.3.3 Prepare your Adobe Experience Platform Data Collection Client property and Web SDK setup for Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
-      + [3.3.4 Combine Adobe Target and Offer Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex4.md)
-      + [3.3.5 Use your decision in an email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex5.md)
-      + [3.3.6 Test your Decision using the API](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex6.md)
+    + 3.3 Adobe Journey Optimizer: Push and In-app Messages {#ajo33}
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md)
+      + [3.3.1 Getting Started with push notifications](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex1.md)
+      + [3.3.2 Configure a journey with push messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex2.md)
+      + [3.3.3 Configure a campaign with in-app messages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/ex3.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-3/summary.md)
-    + 3.4 Adobe Journey Optimizer: Event-based Journeys {#ajo34}
+    + 3.4 Adobe Journey Optimizer: Order Confirmation journey and Campaigns {#ajo34}
       + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md)
       + [3.4.1 Configure a trigger-based journey - Order Confirmation](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex1.md)
       + [3.4.2 Configure a campaign](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex2.md)
       + [3.4.3 Apply segment-based personalization in an email message](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex3.md)
-      + [3.4.4 Setup and use push notifications](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/ex4.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-4/summary.md)
     + 3.5 Adobe Journey Optimizer: Translation Services {#ajo35}
       + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md)
@@ -194,7 +190,7 @@ recommendations: noDisplay,noCatalog
       + [3.6.3 AJO and GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
     + 3.7 Adobe Journey Optimizer: Experience Decisioning  {#ajo37}
-      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajocontent.md)
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
       + [3.7.1 Experience Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
       + [3.7.2 Configure your offers and decision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
       + [3.7.3 Web SDK setup for Experience Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
