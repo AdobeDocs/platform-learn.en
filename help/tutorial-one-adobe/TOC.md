@@ -187,6 +187,12 @@ recommendations: noDisplay,noCatalog
       + [3.5.2 Create your Campaign](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex2.md)
       + [3.5.3 Add Languages to your Email](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/ex3.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-5/summary.md)
+    + 3.6 Adobe Journey Optimizer: Content Management  {#ajo36}
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md)
+      + [3.6.1 Content Cards](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex1.md)
+      + [3.6.2 Landing Pages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
+      + [3.6.3 AJO and GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
+      + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
 
 + Reporting & Insights {#reporting}
   + Customer Journey Analytics  {#cjab2c}
