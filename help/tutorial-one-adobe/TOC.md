@@ -189,12 +189,16 @@ recommendations: noDisplay,noCatalog
       + [3.6.2 Landing Pages](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex2.md)
       + [3.6.3 AJO and GenStudio for Performance Marketing](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/ex3.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-6/summary.md)
-    + 3.7 Adobe Journey Optimizer: Experience Decisioning  {#ajo37}
+    + 3.7 Adobe Journey Optimizer: Experience Decisioning {#ajo37}
       + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md)
       + [3.7.1 Experience Decisioning 101](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex1.md)
       + [3.7.2 Configure your offers and decision](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex2.md)
       + [3.7.3 Web SDK setup for Experience Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/summary.md)
+    + 3.8 Adobe Journey Optimizer: Campaigns {#ajo38}
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajo-decisioning.md)
+      + [3.8.1 Getting Started with Campaigns](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
+      + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
 
 + Reporting & Insights {#reporting}
   + Customer Journey Analytics  {#cjab2c}
