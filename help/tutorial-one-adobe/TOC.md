@@ -196,7 +196,7 @@ recommendations: noDisplay,noCatalog
       + [3.7.3 Web SDK setup for Experience Decisioning](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/ex3.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-7/summary.md)
     + 3.8 Adobe Journey Optimizer: Campaigns {#ajo38}
-      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajo-decisioning.md)
+      + [Overview](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md)
       + [3.8.1 Getting Started with Campaigns](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/ex1.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/delivery-activation/ajo-b2c/ajob2c-8/summary.md)
 
