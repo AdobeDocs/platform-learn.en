@@ -107,25 +107,21 @@ You already installed the **DX Demo** mobile application as part of the **Gettin
 
 ![DSN](./../../../../modules/getting-started/gettingstarted/images/mobileappn1.png)
 
-When you're using the app the first time, you'll be requested to log in using your Adobe ID. Complete the login process.
+After logging in, you'll see a notification requesting your permission to send notifications. We'll send notifications as part of the tutorial, so click **Allow**.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn2.png)
 
-After logging in, you'll see a notification requesting your permission to send notifications. We'll send notifications as part of the tutorial, so click **Allow**.
+You'll then see the app's homepage. Go to **Settings**.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn3.png)
 
-You'll then see the app's homepage. Go to **Settings**.
+In settings, you'll see that currently a **Public Project** is loaded in the app. Click **Custom Project**.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn4.png)
 
-In settings, you'll see that currently a **Public Project** is loaded in the app. Click **Custom Project**.
-
-![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
-
 You can now load a custom project. Click the QR code to easily load your project.
 
-![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn6.png)
+![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn5.png)
 
 After going through the **Getting Started** section, you had this result. Click to open the **Mobile Retail project** that was created for you.
 
@@ -143,15 +139,15 @@ You'll then see this popup, which contains a QR code. Scan this QR-code from wit
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/web8c.png)
 
-You'll then see your project ID show in the app, after which you can click **Save**.
+You'll then see your project ID show in the app, after which you can click **Switch**.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn7.png)
 
-Now, go back to **Home** in the app. Your app is now ready to be used.
+Your app is now ready to be used.
 
 ![DSN](./../../../modules/../getting-started/gettingstarted/images/mobileappn8.png)
 
-You now need to scan a QR code to connect your mobile device to your AEP Assurance session. 
+You now need to scan a QR code to connect your mobile device to your Assurance session. 
 
 To start an AEP Assurance session, Go to [https://experience.adobe.com/#/data-collection/](https://experience.adobe.com/#/data-collection/). Click **Assurance** in the left menu. Then, click **Create Session**.
 
