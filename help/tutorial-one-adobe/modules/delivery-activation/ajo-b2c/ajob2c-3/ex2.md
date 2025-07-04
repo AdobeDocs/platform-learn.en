@@ -7,10 +7,17 @@ exl-id: 63d7ee24-b6b5-4503-b104-a345c2b26960
 ---
 # 3.3.2 Configure a journey with push messages
 
+Login to Adobe Journey Optimizer by going to [Adobe Experience Cloud](https://experience.adobe.com). Click **Journey Optimizer**.
 
-## 3.4.4.6 Create a new event
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acophome.png)
 
-Go to **Journey Optimizer**. In the left menu, go to **Configurations** and click **Manage** under **Events**.
+You'll be redirected to the **Home**  view in Journey Optimizer. First, make sure you're using the correct sandbox. The sandbox to use is called `--aepSandboxName--`. You'll then be in the **Home** view of your sandbox `--aepSandboxName--`.
+
+![ACOP](./../../../../modules/delivery-activation/ajo-b2c/ajob2c-1/images/acoptriglp.png)
+
+## 3.3.2.1 Create a new event
+
+In the left menu, go to **Configurations** and click **Manage** under **Events**.
 
 ![ACOP](./images/acopmenu.png)
 
@@ -27,13 +34,13 @@ Next is the **Event ID Type** selection. Select **System Generated**.
 
 Next is the Schema selection. A schema was prepared for this exercise. Please use the schema `Demo System - Event Schema for Mobile App (Global v1.1) v.1`.
 
-After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Your event is now fully configured.
+After selecting the Schema, you'll see a number of fields being selected in the **Payload** section. Verify that the field **Namespace** is set to **ECID**. Your event is now fully configured.
 
 Click **Save**.
 
 ![ACOP](./images/eventschema.png)
 
-Your Event is now configured and saved. Click on your event again to open up the **Edit Event** screen again.
+Your event is now configured and saved. Click on your event again to open up the **Edit Event** screen again.
 
 ![ACOP](./images/eventdone.png)
 
@@ -45,20 +52,24 @@ You'll now see an example of the expected payload.
 
 Your Event has a unique orchestration eventID, which you can find by scrolling down in that payload until you see `_experience.campaign.orchestration.eventID`.
 
+The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in the next step. Write down this eventID, as you'll need it in the next step.
+`"eventID": "aa895251f76831e6440f169f1bb9d2a4388f0696d8e2782cfab192a275817dfa"`
+
+Click **Ok**.
+
 ![ACOP](./images/payloadeventID.png)
 
-The event ID is what needs to be sent to Adobe Experience Platform in order to trigger the Journey that you'll build in the next step. Write down this eventID, as you'll need it in the next step.
-`"eventID": "89acd341ec2b7d1130c9a73535029debf2ac35f486bc99236b1a5091d6f4bc68"`
+Click **Cancel**.
 
-Click **Ok**, followed by **Cancel**.
+![ACOP](./images/payloadeventIDa.png)
 
-## 3.4.4.7 Create a journey
+## 3.3.2.2 Create a journey
 
-In the menu, go to **Journeys** and click **Create Journey**.
+In the left menu, go to **Journeys** and click **Create Journey**.
 
 ![DSN](./images/sjourney1.png)
 
-You'll then see this. Give your journey a name. Use `--aepUserLdap-- - Store Entry journey`. Click **Save**.
+You'll then see this. Give your journey a name: `--aepUserLdap-- - Store Entry journey`. Click **Save**.
 
 ![DSN](./images/sjourney3.png)
 
@@ -84,7 +95,7 @@ You'll then see this. Click the **personalization** icon for the **Title** field
 
 ![Push](./images/bp5.png)
 
-You'll then see this. You can now select any Profile attribute from the Real-time Customer Profile directly.
+You'll then see this. You can now select any profile attribute from the Real-time Customer Profile directly.
 
 Search for the field **First Name**, then click the **+** icon next to the field **First Name**. You'll then see the personalization token for First Name being added: **{{profile.person.name.firstName}}**.
 
@@ -124,23 +135,61 @@ Your journey is now published.
 
 ![DSN](./images/sjourney11.png)
 
-## 3.4.4.8 Test your journey and push message
+## 3.3.2.3 Update your data collection property for mobile
 
-In your DX Demo 2.0 mobile application, go to the **Settings** screen. Click the **Store Entry** button.
+In **Getting Started**, Demo System Next created Tags properties for you: one for the website and one for the mobile app. Find them by searching for `--aepUserLdap--` in the **Search** box. Click to open the **Mobile** property.
 
->[!NOTE]
->
->The **Store Entry** button is currently being implemented. You won't yet find it in the app.
+![DSN](./images/pushpoi1.png)
 
-![DSN](./images/demo1b.png)
+You should then see this.
 
-Make sure to close the app immediately after clicking the **Store Entry** icon, otherwise the push message won't be shown.
+![DSN](./images/pushpoi2.png)
 
-After a couple of seconds, you'll see the message appear.
+In the left menu, go to **Rules** and click to open the rule **Location entry**.
 
-![DSN](./images/demo2.png)
+![DSN](./images/pushpoi3.png)
 
-You have finished this exercise.
+You should then see this. Click the action **Mobile Core - Attach Data**.
+
+![DSN](./images/pushpoi4.png)
+
+You should then see this.
+
+![DSN](./images/pushpoi5.png)
+
+Paste the eventID of your event `--aepUserLdap--StoreEntryEvent` in the **JSON Payload** window. Click **Keep Changes**.
+
+![DSN](./images/pushpoi6.png)
+
+Click **Save** or **Save to Library**.
+
+![DSN](./images/pushpoi7.png)
+
+Go to **Publishing Flow** and click to open the library **Main**.
+
+![DSN](./images/pushpoi8.png)
+
+Click **Add All Changed Resources** and then click **Save & Build to Development**.
+
+![DSN](./images/pushpoi9.png)
+
+## 3.3.2.4 Test your journey and push message
+
+Open the **DSN Mobile** application.
+
+![DSN](./images/dxdemo1.png)
+
+Go to the **Store Locator** page.
+
+![DSN](./images/dxdemo2.png)
+
+Click **Simulate POI Entry**.
+
+![DSN](./images/dxdemo3.png)
+
+After a couple of seconds, you'll see the push notification appear.
+
+![DSN](./images/dxdemo4.png)
 
 ## Next Steps
 
