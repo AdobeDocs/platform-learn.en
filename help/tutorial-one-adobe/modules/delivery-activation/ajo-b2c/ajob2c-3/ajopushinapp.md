@@ -18,6 +18,8 @@ In this module, you will get a hands-on walkthrough of Adobe Journey Optimizer's
 ## Prerequisites
 
 - Access to Adobe Journey Optimizer
+- **Download these assets**:
+  - [CitiSignal images](./../../../../assets/ajo/CitiSignal-images.zip)
 
 >[!NOTE]
 >
