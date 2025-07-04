@@ -1,12 +1,12 @@
 ---
-user-guide-title: Comprehensive Technical Tutorial for Adobe applications, from Creative Cloud to Experience Cloud
-breadcrumb-title: Comprehensive Technical Tutorial for Adobe applications, from Creative Cloud to Experience Cloud
+user-guide-title: One Adobe Technical Tutorial
+breadcrumb-title: One Adobe Technical Tutorial
 hide: yes
 doc-type: multipage
 recommendations: noDisplay,noCatalog
 ---
 
-# Comprehensive Technical Tutorial - One Adobe {#tutorial-one-adobe}
+# One Adobe Technical Tutorial {#tutorial-one-adobe}
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
