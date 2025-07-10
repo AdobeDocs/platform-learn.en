@@ -10,6 +10,10 @@ auto-video-transcripts: true
 + Platform {#platform}
   + Adobe Summit {#summit}
     + 2025 {#2025}
+      + [Video clip](platform/summit/2025/aaa-northeast-s-use-of-ai-assistant.md)
+      + [Video clip](platform/summit/2025/finding-data-attributes-with-ai-assistant.md)
+      + [Video clip](platform/summit/2025/introduction-to-ai-assistant-in-adobe-experience-platform.md)
+      + [Video clip](platform/summit/2025/optimizing-audiences-with-ai-assistant.md)
       + [Video clip](platform/summit/2025/adobe-experience-platform-building-connected-customer-journeys.md)
       + [Video clip](platform/summit/2025/adobe-s-internal-use-of-aep-driving-experience-led-growth.md)
       + [Video clip](platform/summit/2025/architecting-adobe-experience-platform-for-scalability.md)
