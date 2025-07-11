@@ -1,6 +1,6 @@
 ---
 title: Real-Time CDP Overview for Agency Practitioners
-description: This video is meant to give agency or paid media practitioners a high-level overview of the value prop of Real-Time CDP, what it is, how it works and what it does with a focus on data sources and audiences that fuel their Real-Time CDP Collaboration use case and workflows.
+description: Agency and paid media teams can get a quick look at Real-Time CDP--what it is, how it works, and how data sources and audiences power collaboration workflows.
 feature: Collaboration
 role: User
 level: Beginner
