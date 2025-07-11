@@ -95,9 +95,9 @@ Campaigns
   + [Product Support Agent](/help/platform/ai-assistant/product-support-agent.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
 + APIs {#api}
-  + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
-  + [Generate an Access Token](help/platform/api/generate-an-access-token.md)
-  + [Use APIs](help/platform/api/use-apis-with-postman.md)
+  + [Authenticate to Experience Platform APIs](/help/platform/api/platform-api-authentication.md)
+  + [Generate an Access Token](/help/platform/api/generate-an-access-token.md)
+  + [Use APIs](/help/platform/api/use-apis-with-postman.md)
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)

@@ -24,7 +24,7 @@ Learn how to get started with Adobe Experience Platform APIs. The first step is 
 >
 > After creating your API credential, a System Administrator must associate the credential with a role in the Experience Platform.
 >
->See the [Add developers and give permissions to API credentials tutorial](help/platform/admin/add-developers.md) for detailed instructions.
+>See the [Add developers and give permissions to API credentials tutorial](../admin/add-developers.md) for detailed instructions.
 
 
 >[!VIDEO](https://video.tv.adobe.com/v/28832/?learn=on&enablevpops)
