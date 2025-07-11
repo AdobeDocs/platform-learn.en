@@ -70,7 +70,6 @@ Campaigns
     + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
     + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
 + [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
-+ [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
   + [Overview](/help/platform/admin/overview.md)
@@ -95,6 +94,10 @@ Campaigns
   + [Impact analysis](/help/platform/ai-assistant/impact-analysis.md)
   + [Product Support Agent](/help/platform/ai-assistant/product-support-agent.md)
   + [Security overview](/help/platform/ai-assistant/security-overview.md)
++ APIs {#api}
+  + [Authenticate to Experience Platform APIs](/help/platform/authentication/platform-api-authentication.md)
+  + [Generate an Access Token](help/platform/api/generate-an-access-token.md)
+  + [Use APIs](help/platform/api/use-apis-with-postman.md)
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
