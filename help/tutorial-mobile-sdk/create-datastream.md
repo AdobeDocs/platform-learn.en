@@ -30,7 +30,7 @@ In this lesson, you will:
 Datastreams can be created in the [!UICONTROL Data Collection] interface using the [!UICONTROL Datastream] configuration tool. To create a datastream:
 
 1. Make sure you are in the correct Experience Platform sandbox, as datastreams are defined on a sandbox level.
-1. Select **[!UICONTROL Datastreams]** in the left rail.
+1. Select ![Datastreams-S2](/help/assets/icons/Datastreams-S2.svg) **[!UICONTROL Datastreams]** in the left rail.
 1. Select **[!UICONTROL New Datastream]**. 
 
     ![datastreams home](assets/datastream-new.png)
@@ -96,7 +96,7 @@ You might also want to enable the Adobe Experience Platform service.
 
 >[!NOTE]
 >
->Enabling each of the services that your organization uses ensures data collected in the mobile app can be used everywhere. For more information about datastream settings, review the documentation [here](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html).
+>Enabling each of the services that your organization uses ensures data collected in the mobile app can be used everywhere. See [datastream settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) for more information..
 
 When implementing Platform Mobile SDK in your own app, you should ultimately create three datastreams to map to your three tag environments (development, stage, and production). If you are using Platform Mobile SDK with Platform-based applications such as Adobe Real-Time Customer Data Platform or Adobe Journey Optimizer, you should be sure to create those datastreams in the appropriate sandboxes.
 

@@ -54,7 +54,7 @@ In this lesson, you will:
     > Customers of Platform-based applications like Real-Time CDP should use a development sandbox for this tutorial. Other customers use the default production sandbox.
 
 
-1. Select **[!UICONTROL Schemas]** under **[!UICONTROL Data Management]** in the left rail.
+1. Select ![Schemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Schemas]** under **[!UICONTROL Data management]** in the left rail.
 
     ![tags home screen](assets/mobile-schema-navigate.png)
 
@@ -129,6 +129,7 @@ For learning purposes, you use prebuilt and custom field groups.
     You are brought back to the main schema composition screen where you can see all the available fields.
 
 1. Select **[!UICONTROL Save]**.
+1. Select ![Schemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Schemas]** under **[!UICONTROL Data management]** to return to the main **[!UICONTROL Schemas]** interface.
 
 >[!NOTE]
 >
@@ -137,6 +138,7 @@ For learning purposes, you use prebuilt and custom field groups.
 The [!UICONTROL Consumer Experience Event] field group has a data type called [!UICONTROL Web information], which describes events like page view and link clicks. At the time of writing, there isn't a mobile app parity to this feature, so you are going to create your own. 
 
 ## Create a custom data type
+
 
 You begin by creating a custom data type describing the two events:
 
@@ -155,7 +157,7 @@ You begin by creating a custom data type describing the two events:
 
     >[!TIP]
     >
-    > Always use readable, descriptive [!UICONTROL display names] for your custom fields, as this practice makes them more accessible to marketers when the fields surface in downstream services like the segment builder.
+    > Always use readable, descriptive [!UICONTROL display names] for your custom fields. This practice makes custom fields more accessible to marketers when the fields surface in downstream services like the segment builder.
 
 
 1. To add a field, select the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button. 

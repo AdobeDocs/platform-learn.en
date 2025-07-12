@@ -118,28 +118,51 @@ Your library is built for the new extensions and configurations. A successful bu
 
 ## Generate SDK install instructions
 
+Select the tab specific for your platform:
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. Select **[!UICONTROL Environments]** from the left rail.
 
 1. Select the **[!UICONTROL Development]** install icon ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) .
 
-    ![environments home screen](assets/tags-environments.png)
+   ![environments home screen](assets/tags-environments.png)
 
 1. In the **[!UICONTROL Mobile Install Instructions]** dialog, select the **[!UICONTROL iOS]** tab.
 
-1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using CocoaPods. CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [CocoaPods documentation](https://cocoapods.org/). If you are using Android&trade; as your development platform, Gradle is the tool to manage SDK version, downloads, and dependencies. To learn more, please review the [Gradle documentation](https://gradle.org/)
+1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using CocoaPods. CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [CocoaPods documentation](https://cocoapods.org/).
  
    The install instructions provide you a good starting point for implementation. You can find additional information [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
 
-   >[!INFO]
-   >
-   >For the remainder of this tutorial, you will **not** use the CocoaPods instructions but instead use a native Swift Package Manager (SPM) based setup.
-   >
+   For the remainder of this tutorial, you will **not** use the CocoaPods instructions but instead use a native Swift Package Manager (SPM) based setup.
 
 1. Select the **[!UICONTROL Swift]** tab below **[!UICONTROL Add Initialization Code]**. This block of code shows how to import the required SDKs and register the extensions at launch. This is covered in more detail in [Install SDKs](install-sdks.md).
 
 1. Copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the **[!UICONTROL Environment File ID]** and store it in a place as you need it later. This unique ID points to your development environment. Each environment (Production, Staging, Development) does have its own unique ID value.
 
    ![install instructions](assets/tags-install-instructions.png)
+
+>[!TAB Android]
+
+1. Select **[!UICONTROL Environments]** from the left rail.
+1. Select the **[!UICONTROL Development]** install icon ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) .
+
+   ![environments home screen](assets/tags-environments.png)
+
+1. In the **[!UICONTROL Mobile Install Instructions]** dialog, select the **[!UICONTROL Android]** tab.
+1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using Gradle. Gradle is used to manage SDK versions and downloads. To learn more, please review the [Gradle documentation](https://gradle.org/)
+ 
+   The install instructions provide you a good starting point for implementation. You can find additional information [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
+
+1. This block of code shows how to import the required SDKs and register the extensions at launch. This is covered in more detail in [Install SDKs](install-sdks.md).
+
+1. Copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the **[!UICONTROL Environment File ID]** and store it in a place as you need it later. This unique ID points to your development environment. Each environment (Production, Staging, Development) does have its own unique ID value.
+
+   ![install instructions](assets/tags-install-instructions-android.png)
+
+>[!ENDTABS]
 
 >[!NOTE]
 >
