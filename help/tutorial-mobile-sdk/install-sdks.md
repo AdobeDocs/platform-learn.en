@@ -87,7 +87,7 @@ Do the same for **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICON
 
 Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **AppDelegate** in the Xcode Project navigator. 
 
-1. Replace the `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` for `environmentFileId` to the Development Environment File ID value that you retrieved from tags in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
+1. Replace the `@AppStorage` value `YOUR_ENVIRONMENT_ID_GOES_HERE` for `environmentFileId` with the Environment File ID value that you retrieved from tags in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions). 
 
    ```swift
    @AppStorage("environmentFileId") private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
@@ -144,7 +144,7 @@ Ensure you update `MobileCore.configureWith(appId: self.environmentFileId)` with
 
 ## Gradle
 
-You use the dependencies from the [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions) to add individual packages using Gradle's integration with Android Studio, native Swift Package Manager. The Android Studio project already has all packages dependencies added for you. 
+You use the dependencies from the [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions) to add individual packages using Gradle's integration with Android Studio, The Android Studio project already has all packages dependencies added for you. 
 
 Select **[!UICONTROL build.gradle.kts (Module app)]** from the left pane and in the right pane, scroll until you see `dependencies`.
 
@@ -164,11 +164,80 @@ In Anroid Studio, you can use **[!UICONTROL File]** > **[!UICONTROL Project Stru
 | [optimize](https://github.com/adobe/aepsdk-optimize-android) | The Adobe Experience Platform Optimize extension provides APIs to enable real-time personalization workflows in the Adobe Experience Platform SDKs using Adobe Target or Adobe Journey Optimizer Offer Decisioning. It depends on the Mobile Core and requires Edge Extension to send personalization query events to the Experience Edge network. |
 | [assurance](https://github.com/adobe/aepsdk-assurance-android) | Assurance (a.k.a. project Griffon) is a mobile extension for Adobe Experience Platform that allows integrating with Adobe Experience Platform Assurance to help inspect, proof, simulate, and validate how you collect data or serve experiences in your mobile app. This extension requires MobileCore. |
 
-## Android Studio 
+## Import extensions
 
-You use Gradle to add individual packages. Android Studio should already have all packages dependencies added for you. The Xcode **[!UICONTROL Package Dependencies]** screen should look like:
+In Android Studio, navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** and ensure the following imports are part of the source file.
 
-![Xcode Package Dependencies](assets/xcode-package-dependencies.png){zoomable="yes"}
+```kotlin
+import com.adobe.marketing.mobile.Assurance
+import com.adobe.marketing.mobile.Edge
+import com.adobe.marketing.mobile.Lifecycle
+import com.adobe.marketing.mobile.LoggingMode
+import com.adobe.marketing.mobile.Messaging
+import com.adobe.marketing.mobile.MobileCore
+import com.adobe.marketing.mobile.MobilePrivacyStatus
+import com.adobe.marketing.mobile.Places
+import com.adobe.marketing.mobile.Signal
+import com.adobe.marketing.mobile.UserProfile
+import com.adobe.marketing.mobile.edge.consent.Consent
+import com.adobe.marketing.mobile.edge.identity.Identity
+import com.adobe.marketing.mobile.optimize.Optimize
+```
+
+Do the same for **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]**.
+
+
+## Update LumaApplication
+
+Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in Android Studio.
+
+1. Replace `"YOUR_ENVIRONMENT_FILE_ID"` in `private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"` with the Environment File ID value that you retrieved from tags in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions).
+
+   ```kotlin
+   private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"
+   ```
+
+1. Add the following code to `override fun onCreate()` function in `class LumaApplication : Application()`.
+
+   ```kotlin
+   // Define extensions
+   val extensions = listOf(
+      Identity.EXTENSION,
+      Lifecycle.EXTENSION,
+      Signal.EXTENSION,
+      Edge.EXTENSION,
+      Consent.EXTENSION,
+      UserProfile.EXTENSION,
+      Places.EXTENSION,
+      Messaging.EXTENSION,
+      Optimize.EXTENSION,
+      Assurance.EXTENSION
+   )
+
+   // Register extensions
+   MobileCore.registerExtensions(extensions) {
+   // Use the environment file id assigned to this application via Adobe Experience Platform Data Collection
+     Log.i("Luma", "Using mobile config: $environmentFileId")
+     MobileCore.configureWithAppID(environmentFileId)
+
+     // set this to true when testing on your device, default is false.
+     //MobileCore.updateConfiguration(mapOf("messaging.useSandbox" to true))
+
+     // assume unknown, adapt to your needs.
+     MobileCore.setPrivacyStatus(MobilePrivacyStatus.UNKNOWN)
+   }
+   ```
+
+   The above code does the following:
+
+   1. Registers the required extensions.
+   1. Configures MobileCore and other extensions to use your tag property configuration.
+   1. Enables debug logging. More details and options can be found in the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/documentation/getting-started/enable-debug-logging/).
+   1. Starts lifecycle monitoring. See [Lifecycle](lifecycle-data.md) step in the tutorial for more details.
+   1. Sets the default consent to unknown. See [Consent](consent.md) step in the tutorial for more details.
+
+Ensure you update `MobileCore.configureWith(environmentFileId)` with the `environmentFileId` based on the Environment File ID from the tag environment you are building for (development, staging, or production).
+
 
 >[!ENDTABS]
 

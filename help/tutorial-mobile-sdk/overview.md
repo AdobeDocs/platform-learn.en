@@ -65,7 +65,7 @@ In these lessons, it is assumed that you have an Adobe Id and the required user-
     * **[!UICONTROL Data Management]**&mdash;permission items to manage and view datasets.
     * A development **sandbox** which you can use for this tutorial.
   
-  * For the Journey Optimizer lessons, you need permissions to configure the **push notification service** and to create an **app surface**, a **journey**, a **message**, and **message presets**. For Decision Management, you need the proper permissions to **manage offers** and **decisions** as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
+  * For the Journey Optimizer lessons, you need permissions to configure the **push notification service** and to create an **app surface**, a **journey**, a **message**, and **message presets**. For Decision Management, you need the proper permissions to **manage offers** and **decisions** as described in [Permission levels](https://experienceleague.adobe.com/docs/journey-optimizer/using/access-control/privacy/high-low-permissions.html?lang=en#decisions-permissions).
 
 * For Adobe Analytics, you must know which **report suites** you can use to complete this tutorial.
 
@@ -89,7 +89,7 @@ Select the appropriate tab for the platform you want to use for the tutorial.
 
 >[!TAB iOS]
 
-Two versions of the sample app are available for download. Both version can be downloaded / cloned from [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). You will find two folders:
+Two versions of the sample app are available for download. Both versions can be downloaded / cloned from [Github](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App). You will find two folders:
 
 1. [Start](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
 1. [Finish](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App){target="_blank"}: a version with the full implementation for reference.
@@ -102,7 +102,7 @@ You can download the final productized version of the app from the App Store.
 
 >[!TAB Android]
 
-Two versions of the sample app are available for download. Both version can be downloaded / cloned from [Github](https://github.com/adobe/Luma-Android). You will find two folders:
+Two versions of the sample app are available for download. Both versions can be downloaded / cloned from [Github](https://github.com/adobe/Luma-Android). You will find two folders:
 
 1. [Start](https://github.com/adobe/Luma-Android){target="_blank"}: a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
 1. [Finish](https://github.com/adobe/Luma-Android){target="_blank"}: a version with the full implementation for reference.
