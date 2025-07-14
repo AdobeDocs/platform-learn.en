@@ -210,7 +210,7 @@ Click **Publish** again.
 
 ![ACOP](./images/publish1.png)
 
-After a coupleof minutes, the status of your journey will change to **Live** and you'll see a real-time dashboad of your journey's performance.
+After a couple of minutes, the status of your journey will change to **Live** and you'll see a real-time dashboard of your journey's performance.
 
 ![ACOP](./images/published.png)
 
