@@ -115,7 +115,7 @@ Data Collection is the next generation of website tag and mobile SDK management 
     </a>
     </div>
     <p>
-    <em>Replace the Target extension with the Journey Optimizer - Decisioning extension</em>
+    <em>Replace the Target extension with the Offer Decisioning and Target extension</em>
     <p>
   </td>
   <td>

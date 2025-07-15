@@ -1,6 +1,6 @@
 ---
-title: Replace the SDK - Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
-description: Learn how to replace the SDK when migrating from the Adobe Target to the Adobe Journey Optimizer - Decisioning Mobile extension.
+title: Replace the SDK - Migrate the Adobe Target implementation in your mobile app to the Offer Decisioning and Target extension
+description: Learn how to replace the SDK when migrating from the Adobe Target to the Offer Decisioning and Target Mobile extension.
 exl-id: f1b77cad-792b-4a80-acff-e1a2f29250e1
 ---
 # Replace the Target SDK with the Optimize SDK
@@ -17,7 +17,7 @@ Learn how to replace the Adobe Target SDKs with the Optimize SDKs in your mobile
 >Within the Adobe Experience Platform Mobile SDK ecosystem, extensions are implemented by SDKs imported into your applications which may have different names:
 >
 > * **Target SDK** implements the **Adobe Target extension**
-> * **Optimize SDK** implements the **Adobe Journey Optimizer - Decisioning extension**
+> * **Optimize SDK** implements the **Offer Decisioning and Target extension**
 
 ## Update dependencies
 
@@ -127,7 +127,7 @@ public class MainApp extends Application {
  
         MobileCore.registerExtensions(
             Arrays.asList(Edge.EXTENSION, Identity.EXTENSION, Optimize.EXTENSION),
-            o -> Log.d("MainApp", "Adobe Journey Optimizer - Decisioning Mobile SDK was initialized.")
+            o -> Log.d("MainApp", "Offer Decisioning and Target Mobile SDK was initialized.")
         );
     }
 }
@@ -262,9 +262,9 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 ## API comparison
 
-Many Target extension APIs have an equivalent approach using the Decisioning extension outlined in the table below. For more details about the [functions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), refer to the API reference.
+Many Target extension APIs have an equivalent approach using the Offer Decisioning and Target extension outlined in the table below. For more details about the [functions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/), refer to the API reference.
 
-| Target extension | Decisioning extension | Notes |
+| Target extension | Offer Decisioning and Target extension | Notes |
 | --- | --- | --- | 
 | [prefetchContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#prefetchcontent){target=_blank} | [updatePropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandlerandtimeout){target=_blank} |  | 
 | [retrieveLocationContent](https://developer.adobe.com/client-sdks/solution/adobe-target/api-reference/#retrievelocationcontent){target=_blank} | [getPropositions](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#getpropositionswithtimeout){target=_blank} | When using `getPropositions` API, no remote call is made to fetch non-cached scopes in the SDK.  | 
@@ -284,4 +284,4 @@ Next, learn how to [request and render activities](retrieve-activities.md) to th
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Offer Decisioning and Target extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-adobe-target-to-mobile-sdk-on-edge/m-p/747484#M625).
