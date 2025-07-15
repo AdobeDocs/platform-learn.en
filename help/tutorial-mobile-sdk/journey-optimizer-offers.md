@@ -92,7 +92,7 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 To validate your setup in Assurance:
 
 1. Go to the Assurance UI.
-1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Validate Setup]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
+1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Validate Setup]** underneath **[!UICONTROL OFFER DECISIONING AND TARGET]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Validate Setup]** in the left rail. Both datastream setup and the SDK setup in your application are validated.
    ![AJO Decisioning validation](assets/ajo-decisioning-validation.png)
