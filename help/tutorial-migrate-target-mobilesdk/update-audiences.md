@@ -1,12 +1,12 @@
 ---
-title: Update Target audiences and profile scripts - Migrate the Adobe Target implementation in your mobile app to the Adobe Journey Optimizer - Decisioning extension
-description: Learn how to update Adobe Target audiences and profile scripts for compatibility with the Decisioning extension.
+title: Update Target audiences and profile scripts - Migrate the Adobe Target implementation in your mobile app to the Offer Decisioning and Target extension
+description: Learn how to update Adobe Target audiences and profile scripts for compatibility with the Offer Decisioning and Target extension.
 exl-id: de3ce2c7-0066-496a-a8a7-994d7ce3d92c
 ---
 # Update Target audiences and profile scripts for Decisioning mobile extension compatibility
 
 
-After you complete the technical updates to migrate Target to the Decisioning extension, you may need to update some of your audiences, profile scripts, and activities to ensure a smooth transition. 
+After you complete the technical updates to migrate Target to the Offer Decisioning and Target extension, you may need to update some of your audiences, profile scripts, and activities to ensure a smooth transition. 
 
 >[!INFO]
 >
@@ -23,9 +23,9 @@ If you migrate mbox paramters to the `xdm` object, before publishing your change
 
 If you migrate mbox paramters to the `xdm` object, audiences that use custom mbox parameters should be updated to use the new XDM parameter names. For example, a custom parameter for `page_name` would likely be mapped to `web.webpagedetails.pageName`.
 
-One approach to ensure compatibility with both the Target extension and the Decisioning extension is to update any relevant audiences so that `OR` conditions are used, as shown below:
+One approach to ensure compatibility with both the Target extension and the Offer Decisioning and Target extension is to update any relevant audiences so that `OR` conditions are used, as shown below:
 
-![How to view update a Target audience for Decisioning extension compatibility](assets/target-audience-update.png){zoomable="yes"}
+![How to view update a Target audience for Offer Decisioning and Target extension compatibility](assets/target-audience-update.png){zoomable="yes"}
 
 ## Edit profile scripts
  
@@ -82,4 +82,4 @@ Next, learn how to [validate the Target implementation](validate.md).
 
 >[!NOTE]
 >
->We are committed to helping you be successful with your mobile Target migration from the Target extension to the Decisioning extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).
+>We are committed to helping you be successful with your mobile Target migration from the Target extension to the Offer Decisioning and Target extension. If you run into obstacles with your migration or feel like there is critical information missing in this guide, please let us know by posting in [this Community discussion](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-migrate-target-from-at-js-to-web-sdk/m-p/575587#M463).

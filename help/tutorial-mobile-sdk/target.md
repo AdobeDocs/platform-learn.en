@@ -33,7 +33,7 @@ Before you can perform A/B tests with Target, you must ensure that the proper co
 In this lesson, you will:
 
 * Update your datastream for Target integration.
-* Update your tag property with the Journey Optimizer - Decisioning extension.
+* Update your tag property with the Offer Decisioning and Target extension.
 * Update your schema to capture propositon events.
 * Validate setup in Assurance.
 * Create a simple A/B test in Target.
@@ -81,15 +81,15 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
    ![AEP datastream configuration](assets/datastream-aep-configuration-target.png)
 
 
-### Install Adobe Journey Optimizer - Decisioning tags extension
+### Install Offer Decisioning and Target tags extension
 
 1. Navigate to **[!UICONTROL Tags]**, find your mobile tag property, and open the property.
 1. Select **[!UICONTROL Extensions]**.
 1. Select **[!UICONTROL Catalog]**.
-1. Search for the **[!UICONTROL Adobe Journey Optimizer - Decisioning]** extension.
+1. Search for the **[!UICONTROL Offer Decisioning and Target]** extension.
 1. Install the extension. The extension does not require additional configuration.
 
-    ![Add Decisioning extension](assets/tag-add-decisioning-extension.png)
+    ![Add Offer Decisioning and Target extension](assets/tag-add-decisioning-extension.png)
 
 
 ### Update your schema
@@ -287,7 +287,7 @@ You should now have all the tools to start adding more A/B tests or other Target
 
 >[!SUCCESS]
 >
->You have enabled the app for A/B tests and displayed the results of an A/B test with Adobe Target and the Adobe Journey Optimizer - Decisioning extension for the Adobe Experience Platform Mobile SDK.
+>You have enabled the app for A/B tests and displayed the results of an A/B test with Adobe Target and the Offer Decisioning and Target extension for the Adobe Experience Platform Mobile SDK.
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 

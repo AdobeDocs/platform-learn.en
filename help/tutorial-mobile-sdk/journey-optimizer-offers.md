@@ -37,7 +37,7 @@ Decision management makes personalization easy with a central library of marketi
 In this lesson, you will
 
 * Update your Edge configuration for Decision Management.
-* Update your tag property with the Journey Optimizer - Decisioning extension.
+* Update your tag property with the Offer Decisioning and Target extension.
 * Update your schema to capture proposition events.
 * Validate setup in Assurance.
 * Create an offer decision, based on offers in Journey Optimizer - Decision Management.
@@ -70,10 +70,10 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 1. Navigate to **[!UICONTROL Tags]** and find your mobile tag property and open the property.
 1. Select **[!UICONTROL Extensions]**.
 1. Select **[!UICONTROL Catalog]**.
-1. Search for the **[!UICONTROL Adobe Journey Optimizer - Decisioning]** extension.
+1. Search for the **[!UICONTROL Offer Decisioning and Target]** extension.
 1. Install the extension. The extension does not require additional configuration.
 
-    ![Add Decisioning extension](assets/tag-add-decisioning-extension.png)
+    ![Add Offer Decisioning and Target extension](assets/tag-add-decisioning-extension.png)
 
 
 ### Update your schema
@@ -410,7 +410,7 @@ You should now have all the tools to start adding more functionality to your Jou
 
 >[!SUCCESS]
 >
->You have enabled the app to display offers using the Journey Optimizer - Decisioning extension for the Experience Platform Mobile SDK.
+>You have enabled the app to display offers using the Offer Decisioning and Target extension for the Experience Platform Mobile SDK.
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Mobile SDK. If you have questions, want to share general feedback, or have suggestions on future content, share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-in-mobile/td-p/443796).
 
