@@ -227,6 +227,8 @@ In the previous exercise, you downloaded the file [CitiSignal-GSPeM-assets.zip](
 
 ![GSPeM](./images/gspem17.png)
 
+### Meta template
+
 Go to **Content** > **Templates**. Click **+ Add template**.
 
 ![GSPeM](./images/gspem125.png)
@@ -255,6 +257,8 @@ Use this for the field **Template name**:
 Your template has now been saved and is available in the template library.
 
 ![GSPeM](./images/gspem131.png)
+
+### Display Banner Ad templates
 
 Click **+ Add template**.
 
@@ -342,6 +346,39 @@ Use this for the field **Template name**:
 Your template has now been saved and is available in the template library.
 
 ![GSPeM](./images/gspem152.png)
+
+### Email template
+
+Click **+ Add template**.
+
+![GSPeM](./images/gspem153.png)
+
+Select **Email** and then click **Browse**.
+
+![GSPeM](./images/gspem154.png)
+
+In the folder that contains the downloaded **CitiSignal-GSPeM-assets** files, navigate to the folder **templates**. Select the file **citisignal-email-template.html** and click **Open**.
+
+![GSPeM](./images/gspem155.png)
+
+You should then see this. Click **Next**.
+
+![GSPeM](./images/gspem156.png)
+
+Click **Next**.
+
+![GSPeM](./images/gspem157.png)
+
+Use this for the field **Template name**: 
+`--aepUserLdap---citisignal-email-template`. 
+
+Click **Publish template**.
+
+![GSPeM](./images/gspem158.png)
+
+Your template has now been saved and is available in the template library.
+
+![GSPeM](./images/gspem159.png)
 
 You've now configured the templates that you need for the next exercise.
 

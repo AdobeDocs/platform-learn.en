@@ -70,7 +70,7 @@ The first thing that is needed to achieve this, is a black and white version of 
 
 ### 1.1.1.3.1 Create your composition reference image
 
-You can use [this sample image](./images/CitiSignal.jpg) or you can create your own text to experiment. Follow the below steps in Adobe Illustrator to create your own image file. If your choice is to use the predefined image, then skip the below section and go to step **1.1.1.2.2 Generate your image** directly.
+You can use [this sample image](./images/CitiSignal.jpg) or you can create your own text to experiment. Follow the below steps in Adobe Illustrator to create your own image file. If your choice is to use the predefined image, then skip the below section and go to step **1.1.1.3.2 Generate your image** directly.
 
 Open **Adobe Illustrator**. Click **New file**.
 
@@ -445,7 +445,7 @@ You should then see a hyperrealistic image of **horses in a field**.
 
 Go back to the request named **POST - Firefly - T2I V4** from the **FF - Firefly Services Tech Insiders** collection and go to the **Headers** of the request.
 
-Change the variable **x-model-version** to `image4_ultra`. In this example, you'll be using `image4_standard`.
+Change the variable **x-model-version** to `image4_ultra`. In this example, you'll be using `image4_ultra`.
 
 ![Firefly](./images/ffim4_11.png)
 
