@@ -41,6 +41,10 @@ In this exercise, you'll configure personas, products and templates in GenStudio
 
 In this exercise, you'll create a Campaign. You'll also configure a connection to Meta and you'll walk through all the steps needed to be able to create an ad, approve an ad using Adobe Workfront, and publish an ad to Meta.
 
+[1.3.4 Create Email Experience for AJO](./ex4.md){target="_blank"}
+
+In this exercise, you'll create an email experience using a template in GenStudio for Performance Marketing, and you'll share that experience with Adobe Journey Optimizer to send an email campaign.
+
 [Summary and benefits](./summary.md){target="_blank"}
 
 Summary of this module and overview of the benefits.
