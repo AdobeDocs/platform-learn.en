@@ -33,6 +33,10 @@ Confirm that your organization has access to Assurance. You, as user, should be 
 
 ## Implement
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 In addition to the general [SDK installation](install-sdks.md), you completed in the earlier lesson, iOS also requires the following addition to start the Assurance session for your app. 
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** in your Xcode's Project navigator.
@@ -49,7 +53,31 @@ In addition to the general [SDK installation](install-sdks.md), you completed in
 
     This code starts an assurance session when the app is in the background and opened using a deep link.
 
-More information can be found [here](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"}.
+>[!TAB Android]
+
+In addition to the general [SDK installation](install-sdks.md), you completed in the earlier lesson, Android also requires the following addition to start the Assurance session for your app. 
+
+1. Naviagte to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]**.
+ 
+1. Add the following code to `fun handleDeeplink(deeplink: String?)`:
+
+   ```kotlin
+   // Called when the app in background is opened with a deep link.
+   if (deeplink.isNullOrEmpty()) {
+      Log.w("Luma", "Deeplink is null or empty")
+      return
+   }
+
+   Log.i("Luma", "Handling deeplink: $deeplink")
+   Assurance.startSession(deeplink)
+   ```
+
+    This code starts an assurance session when the app is in the background and opened using a deep link.
+
+>[!ENDTABS]
+
+
+See [Assurance API reference](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/api-reference/){target="_blank"} for more information.
 
 
 
@@ -57,21 +85,41 @@ More information can be found [here](https://developer.adobe.com/client-sdks/doc
 
 You need to provide a unique bundle identifier for your app.
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. Open the project in Xcode.
 1. Select **[!DNL Luma]** in the Project navigator.
 1. Select the **[!DNL Luma]** target.
 1. Select the **Signing & Capabilities** tab.
 1. Define a **[!UICONTROL Bundle Identifier]**. 
  
-   >[!IMPORTANT]
-   >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier needs to be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
+![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
+>[!TAB Android]
+
+1. Open the project in Android Studio.
+1. Select **[!UICONTROL build.gradle.kts (Module:app)]** in the navigator.
+1. Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.android` value for `namespace` in `android`
+1. Ensure you use the same _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.android` for `applicationId` in `defaultConfig` in `android`
+ 
+Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
+
+![Android signing capabilities](assets/android-signing-capabilities.png){zoomable="yes"}
+
+>[!ENDTABS]
 
 
 ## Set up a base URL
+
+You need to set up a base URL to ensure deep linking works.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Go to your project in Xcode.
 1. Select **[!DNL Luma]** in the Project navigator.
@@ -82,24 +130,60 @@ You need to provide a unique bundle identifier for your app.
 
    ![assurance url](assets/assurance-url-type.png)
 
-   >[!IMPORTANT]
-   >
-   >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. You can use the same bundle identifier that you have used at [Define bundle identifier](#define-bundle-identifier).<br/>Similarly, use a unique URL scheme, and replace the already provided `lumatutorialswiftui` with your unique URL scheme.
+Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. You can use the same bundle identifier that you have used at [Define bundle identifier](#define-bundle-identifier).<br/>Similarly, use a unique URL scheme, and replace the already provided `lumatutorialswiftui` with your unique URL scheme.
 
 To learn more about URL Schemes in iOS, review [Apple's documentation](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
 
 Assurance works by opening a URL, either via browser or QR code. That URL begins with the base URL  which opens the app and contains additional parameters. Those unique parameters are used to connect the session.
 
+>[!TAB Android]
+
+1. Go to your project in Android Studio.
+1. Select **[!UICONTROL app]** > **[!UICONTROL manifests]** > **[!UICONTROL AndroidManifest.xml]** in the navigator.
+1. Ensure the **[!UICONTROL manifest]** > **[!UICONTROL application]** > **[!UICONTROL activity]** XML element looks like:
+
+   ```xml
+   <activity
+      android:name=".MainActivity"
+      android:exported="true"
+      android:theme="@style/Theme.LumaAndroid">
+      <intent-filter>
+            <action android:name="android.intent.action.MAIN" />
+            <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+      <intent-filter
+            android:label="@string/app_name">
+            <action android:name="android.intent.action.VIEW" />
+            <category android:name="android.intent.category.DEFAULT" />
+            <category android:name="android.intent.category.BROWSABLE" />
+            <data android:scheme="lumatutorialandroid"
+               android:host="default" />
+      </intent-filter>
+   </activity>
+   ```
+
+Ensure you specify an `android:scheme` (for example. `lumatutorialandroid`) and `android:host` (for example `default`) to define the base URL.
+
+To learn more about deeplinks in Android, see [Create Deep Links to App Content](https://developer.apple.com/documentation/xcode/defining-a-custom-url-scheme-for-your-app){target="_blank"}.
+
+Assurance works by opening a URL, either via browser or QR code. That URL begins with the base URL, which opens the app and contains additional parameters. Those unique parameters are used to connect the session.
+
+>[!ENDTABS]
+
 
 ## Connecting to a session
+
+You now use Assurance to connect to a session.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 In Xcode: 
 
 1. Build or rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg). 
 
-   >[!TIP]
-   >
-   >Optionally, you might want to 'clean' your build, especially when you see unexpected results. To do this, select **[!UICONTROL Clean Build Folder…]** from the Xcode **[!UICONTROL Product]** menu. 
+   Optionally, you might want to 'clean' your build, especially when you see unexpected results. To do this, select **[!UICONTROL Clean Build Folder…]** from the Xcode **[!UICONTROL Product]** menu. 
 
    
 1. In the **[!UICONTROL Allow "Luma App" to use your location]** dialog, select **[!UICONTROL Allow While Using App]**.
@@ -123,7 +207,7 @@ In your browser:
 
 1. Go to the Data Collection UI.
 1. Select **[!UICONTROL Assurance]** from the left rail.
-1. Select **[!UICONTROL Create Session]**.
+1. Select **[!UICONTROL Create New Session]**, and the option **[!UICONTROL Deep link connect]**.
 1. Select **[!UICONTROL Start]**.
 1. Provide a **[!UICONTROL Session Name]** such as `Luma Mobile App Session` and the **[!UICONTROL Base URL]**, which is the URL Schemes you entered in Xcode, followed by `://` For example: `lumatutorialswiftui://`
 1. Select **[!UICONTROL Next]**.
@@ -162,6 +246,91 @@ In your browser:
 
          ![assurance events](assets/assurance-events.png)
 
+1. Select **[!UICONTROL Continue]** to go the Home screen.
+
+>[!TAB Android]
+
+In Android Studio: 
+
+1. Build or rebuild and run the app in the simulator or on a physical device from Android Studio, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg). 
+
+   Optionally, you might want to 'clean' your build, especially when you see unexpected results. To do this, select **[!UICONTROL Clean Project]** from the Android Studio **[!UICONTROL Build]** menu. 
+
+   
+1. In the **[!UICONTROL Allow Luma Android to send you notifications]** dialog, select **[!UICONTROL Allow]**.
+ 
+   <img src="assets/allow-notifications-android.png" width=300>
+
+1. Select **[!UICONTROL Show permission dialog]**.
+
+   <img src="assets/show-permissions-android.png" width=300>
+
+1. In the **[!UICONTROL Allow Luma Android to access this device's location?]**... 
+
+   <img src="assets/access-device-location-android.png" width=300>
+
+   * Select **[!UICONTROL Precise]**.
+   * Select **[!UICONTROL While using the app]**.
+
+1. Back in the introduction app screen, select **[!UICONTROL Open device settings]**.
+
+1. In the **[!UICONTROL Location permission]** screen, select **[!UICONTROL Allow all the time]**. Then select **[!UICONTROL ←]** to return to the introduction app screen.
+
+   <img src="assets/location-permission-android.png" width=300>
+
+1. Select **[!UICONTROL Continue]** to go to the Home screen.
+
+
+
+In your browser:
+
+1. Go to the Data Collection UI.
+1. Select **[!UICONTROL Assurance]** from the left rail.
+1. Select **[!UICONTROL Create New Session]**, and the option **[!UICONTROL Deep link connect]**.
+1. Select **[!UICONTROL Start]**.
+1. Provide a **[!UICONTROL Session Name]** such as `Luma Mobile App Session` and the **[!UICONTROL Base URL]**, which is the `android:scheme` and `android:host` you defined in **[!UICONTROL AndroidManifest.xml]** in Android Studio, separated by `://` For example: `lumatutorialandroid://default`
+1. Select **[!UICONTROL Next]**.
+    ![assurance create session](assets/assurance-create-session-android.png)
+
+1. In the **[!UICONTROL Create New Session]** modal dialog:
+   
+   If you're using a physical device: 
+
+   * Select **[!UICONTROL Scan QR Code]**. To open the app, use the camera on your physical device to scan the QR code and tap the link.
+
+     ![assurance qa code](assets/assurance-qr-code.png)
+
+   If you are using a simulator:
+
+   1. Select **[!UICONTROL Copy Link]**.
+   1. Copy the deep link using ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg)  and use the deep link to open the app with Chrome in the simulator. 
+   
+     ![Assurance copy link](assets/assurance-copy-link.png)
+
+      When prompted in Chrome to **Continue to Luma Android**, select **Continue**.
+    
+1. When the app loads, you are presented with a modal dialog asking you to enter the PIN shown in step 7.
+   
+   <img src="assets/assurance-enter-pin.png" width=300>
+
+   Enter the PIN and select **[!UICONTROL Connect]**.
+
+
+1. If the connection was successful, you see:
+    * An Assurance icon floating on top of your app.
+      
+       <img src="assets/assurance-modal-android.png" width=300>
+    
+    * Experience Cloud updates coming through in the Assurance UI, showing:
+
+      1. Experience Events coming from the app.
+      1. Details of a selected event.
+      1. The device and timeline.
+
+         ![assurance events](assets/assurance-events.png)
+
+>[!ENDTABS]
+
 If you run into any challenges, review the [technical](https://developer.adobe.com/client-sdks/documentation/platform-assurance-sdk/){target="_blank"} and [general documentation](https://experienceleague.adobe.com/docs/experience-platform/assurance/home.html){target="_blank"}.
 
 
@@ -179,14 +348,26 @@ To verify whether your app is using the most up-to-date extensions:
 
 1. Select ![123](https://spectrum.adobe.com/static/icons/workflow_18/Smock_123_18_N.svg) **[!UICONTROL Extension Versions]** to see an overview of the latest extensions available and the extensions used in your version of the app.
 
-   ![Extension versions](assets/assurance-extension-versions.png)
+>[!BEGINTABS]
 
-1. To update your extension versions (for example, **[!UICONTROL Messaging]** and **[!UICONTROL Optimize]**) select the package (extension) from **[!UICONTROL Package Dependencies]** (for example, **[!UICONTROL AEPMessaging]**) and from the context menu select **[!UICONTROL Update Package]**. Xcode will update the package dependencies.
+>[!TAB iOS]
 
+![Extension versions](assets/assurance-extension-versions.png)
+
+To update your extension versions (for example, **[!UICONTROL Messaging]** and **[!UICONTROL Optimize]**) select the package (extension) from **[!UICONTROL Package Dependencies]** (for example, **[!UICONTROL AEPMessaging]**) and from the context menu select **[!UICONTROL Update Package]**. Xcode will update the package dependencies.
+
+>[!TAB Android]
+
+![Extension versions](assets/assurance-extension-versions-android.png)
+
+If you see outdated extensions, refer to the [Android Studio documentation](https://developer.android.com/build/agp-upgrade-assistant) how to update your dependency modules for your project.
+
+
+>[!ENDTABS]
 
 >[!NOTE]
 >
->Once you have updated your extensions (packages) in Xcode, close and delete your current session and repeat all steps from [Connecting to a session](#connecting-to-a-session) and [Verify extensions](#verify-extensions) to ensure Assurance properly reports the correct extensions in a new Assurance session.
+>Once you have updated your extensions (packages) in your development environment, close and delete your current session and repeat all steps from [Connecting to a session](#connecting-to-a-session) and [Verify extensions](#verify-extensions) to ensure Assurance properly reports the correct extensions in a new Assurance session.
 
 
 

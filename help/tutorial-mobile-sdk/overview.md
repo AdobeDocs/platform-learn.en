@@ -83,8 +83,6 @@ In these lessons, it is assumed that you have an Adobe Id and the required user-
 
 ## Download the Luma app
 
-Select the appropriate tab for the platform you want to use for the tutorial.
-
 >[!BEGINTABS]
 
 >[!TAB iOS]
