@@ -47,6 +47,10 @@ The Consumer Experience Event field group you added in the [previous lesson](cre
 
 Now you can update your project to register the lifecycle events.
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL SceneDelegate]** in the Xcode Project navigator.
 
 1. When launched, if your app is resuming from a background state, iOS might call your `sceneWillEnterForeground:` delegate method and this is where you want to trigger a lifecycle start event. Add this code to `func sceneWillEnterForeground(_ scene: UIScene)`:
@@ -62,6 +66,28 @@ Now you can update your project to register the lifecycle events.
    // When in background pause lifecycle data collection
    MobileCore.lifecyclePause()
    ```
+
+>[!TAB Android]
+
+
+1. Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio navigator.
+
+1. When launched, if your app is resuming from a background state, Android might call your override fun onActivityPaused function and this is where you want to trigger a lifecycle start event. Add this code to `override fun onActivityResumed(activity: Activity)`:
+ 
+   ```kotlin
+   // When in foreground start lifecycle data collection
+   MobileCore.lifecycleStart(null)
+   ```
+
+1. When the app enters the background, you want to pause lifecycle data collection from your app's `override fun onActivityPaused` function. Add this code to  `override fun onActivityPaused(activity: Activity)`:
+
+   ```swift
+   // When in background pause lifecycle data collection
+   MobileCore.lifecyclePause()
+   ```
+
+>[!ENDTABS]
+
 
 ## Validate with Assurance
 

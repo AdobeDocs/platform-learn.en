@@ -55,7 +55,11 @@ For the standard field groups, the process looks like:
   
   ![product view schema](assets/datacollection-prodView-schema.png)
 
-* To construct object containing the experience event data in your app, you would use code like:
+* To construct an object containing the experience event data in your app, you would use code like:
+
+  >[!BEGINTABS]
+
+  >[!TAB iOS]
 
   ```swift
   var xdmData: [String: Any] = [
@@ -68,6 +72,21 @@ For the standard field groups, the process looks like:
   ]
   ```
 
+  >[!TAB Android]
+
+  ```kotlin
+  val xdmData = mapOf(
+      "eventType" to "commerce.productViews",
+      "commerce" to mapOf(
+         "productViews" to mapOf(
+            "value": 1
+         )
+      )
+  )
+  ```
+
+  >[!ENDTABS]
+
    * `eventType`: Describes the event that occurred, use a [known value](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) when possible.
    * `commerce.productViews.value`: the numeric or boolean value of the event. If it's a Boolean (or "Counter" in Adobe Analytics), the value is always set to 1. If it's a numeric or currency event, the value can be > 1.
 
@@ -78,36 +97,86 @@ For the standard field groups, the process looks like:
 
 * To add this data, expand your `xdmData` object to include supplementary data:
 
-    ```swift
-    var xdmData: [String: Any] = [
-        "eventType": "commerce.productViews",
-            "commerce": [
-            "productViews": [
-                "value": 1
-            ]
-        ],
-        "productListItems": [
-            [
-                "name":  productName,
-                "SKU": sku,
-                "priceTotal": priceString,
-                "quantity": 1
-            ]
-        ]
-    ]
-    ```
+  >[!BEGINTABS]
+
+  >[!TAB iOS]
+  
+  ```swift
+  var xdmData: [String: Any] = [
+      "eventType": "commerce.productViews",
+      "commerce": [
+          "productViews": [
+              "value": 1
+          ]
+      ],
+      "productListItems": [
+          [
+              "name":  productName,
+              "SKU": sku,
+              "priceTotal": priceString,
+              "quantity": 1
+          ]
+      ]
+  ]
+  ```
+
+  >[!TAB Android]
+
+  ```kotlin
+  val xdmData = mapOf(
+      "eventType" to "commerce.productViews",
+      "commerce" to mapOf(
+         "productViews" to mapOf(
+            "value": 1
+         )
+      ),
+      "productListItems" to mapOf(
+          "name": productName,
+          "SKU": sku,
+          "priceTotal", priceString,
+          "quantity", 1
+      )
+  )
+  ```
+
+  >[!ENDTABS]
 
 * You now can use this data structure to create an `ExperienceEvent`:
+
+  >[!BEGINTABS]
+
+  >[!TAB iOS]
 
   ```swift
   let productViewEvent = ExperienceEvent(xdm: xdmData)
   ```
 
+  >[!TAB Android]
+
+  ```kotlin
+  val productViewEvent = ExperienceEvent.Builder().setXdmSchema(xdmData).build()
+  ```
+
+  >[!ENDTABS]
+
 * And send the event and data to Platform Edge Network using the `sendEvent` API:
+
+  >[!BEGINTABS]
+
+  >[!TAB iOS]
 
   ```swift
   Edge.sendEvent(experienceEvent: productViewEvent)
   ```
+ 
+  >[!TAB Android]
+
+  ```kotlin
+  Edge.sendEvent(productViewEcent, null)
+  ```
+
+  >[!ENDTABS]
+
 
 The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is the AEP Mobile SDK equivalent to the [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API calls. See [Migrate from Analytics mobile extension to Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) for more information.
 
@@ -116,10 +185,14 @@ You have different commerce product-related actions in your app and you want to 
 
 * view: occurs when a user views a specific product,
 * add to cart: when a user taps <img src="assets/addtocart.png" width="20"/> in a product detail screen,
-* save for later: when a user taps <img src="assets/saveforlater.png" width="15"/> in a product detail screen,
+* save for later: when a user taps <img src="assets/saveforlater.png" width="15"/> / <img src="assets/heart.png" width="25"/> in a product detail screen,
 * purchase: when a user taps <img src="assets/purchase.png" width="20"/> in a product detail screen.
 
 To implement the sending of commerce-related experience events in a reusable way, you use a dedicated function:
+
+>[!BEGINTABS]
+
+>[!TAB ios]
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in Xcode Project navigator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
 
@@ -183,6 +256,67 @@ To implement the sending of commerce-related experience events in a reusable way
             MobileSDK.shared.sendCommerceExperienceEvent(commerceEventType: "purchases", product: product)
             ```
 
+>[!TAB Android]
+
+1. Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
+
+    ```kotlin
+    // Set up a data map, create an experience event and send the event.
+    val xdmData = mapOf(
+        "eventType" to "commerce.$commerceEventType",
+        "commerce" to mapOf(commerceEventType to mapOf("value" to 1)),
+        "productListItems" to listOf(
+            mapOf(
+                "name" to product.name,
+                "priceTotal" to product.price,
+                "SKU" to product.sku
+            )
+        )
+    )
+    val commerceExperienceEvent = ExperienceEvent.Builder().setXdmSchema(xdmData).build()
+    Edge.sendEvent(commerceExperienceEvent, null)
+    ```
+
+    This function takes the commerce experience event type and product as parameters and 
+
+    * sets up the XDM payload as a map, using the parameters from the function,
+    * sets up an experience event using the map,
+    * sends the experience event using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+
+1. Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** in the Android Studio navigator, and add various calls to the `sendCommerceExperienceEvent` function:
+
+   1. At the `LaunchedEffect(Unit)` composable function, you want to send a product view event at the specific moment a product is viewed.
+
+      ```kotlin
+      // Send productViews commerce experience event
+      MobileSDK.shared.sendCommerceExperienceEvent("productViews", product)
+      ```  
+
+   1. For each of the buttons (<img src="assets/heart.png" width="25"/>, <img src="assets/addtocart.png" width="20"/> and <img src="assets/purchase.png" width="20"/>) in the toolbar, add the relevant call within the `scope.launch` of the `if (MobileSDK.shared.trackingEnabled == TrackingStatus.AUTHORIZED)  statement`:
+
+      1. For <img src="assets/heart.png" width="25"/>:
+
+            ```kotlin
+            // Send saveForLater commerce experience event
+            MobileSDK.shared.sendCommerceExperienceEvent("saveForLaters", product)
+            ```
+
+      1. For <img src="assets/addtocart.png" width="20"/>:
+
+            ```kotlin
+            // Send productListAdds commerce experience event
+            MobileSDK.shared.sendCommerceExperienceEvent("productListAdds", product)
+            ```
+
+      1. For <img src="assets/purchase.png" width="20"/>:
+
+            ```kotlin
+            // Send purchase commerce experience event
+            MobileSDK.shared.sendCommerceExperienceEvent("purchases", product)
+            ```
+
+>[!ENDTABS]
+
 >[!TIP]
 >
 >In case you are developing for Android&trade;, use Map (`java.util.Map`) as the foundational interface to construct your XDM payload.
@@ -205,31 +339,57 @@ Imagine you want to track screen views and interactions in the app itself. Remem
 
   For the app interaction event, you would construct an object like:
 
-  ```swift
-  let xdmData: [String: Any] = [
-    "eventType": "application.interaction",
-    "_techmarketingdemos": [
-      "appInformation": [
-          "appInteraction": [
-              "name": "login",
-              "appAction": [
-                  "value": 1
-                  ]
-              ]
-          ]
-      ]
-  ]
-  ```
+  >[!BEGINTABS]
+
+  >[!TAB iOS]
+
+    ```swift
+    let xdmData: [String: Any] = [
+        "eventType": "application.interaction",
+        "_techmarketingdemos": [
+        "appInformation": [
+            "appInteraction": [
+                "name": "login",
+                "appAction": [
+                    "value": 1
+                    ]
+                ]
+            ]
+        ]
+    ]
+    ```
+
+  >[!TAB Android]
+
+    ```kotlin
+    val xdmData = mapOf(
+        "eventType" to "application.interaction",
+        "_techmarketingdemos" to mapOf(
+            "appInformation" to mapOf(
+                "appInteraction" to mapOf(
+                    "name" to "login",
+                    "appAction" to mapOf("value" to 1)
+                )
+            )
+        )
+    )
+    ```
+
+  >[!ENDTABS]
 
   For the screen tracking event, you would construct an object like:
 
-  ```swift
-  var xdmData: [String: Any] = [
-    "eventType": "application.scene",
-    "_techmarketingdemos": [
-        "appInformation": [
-            "appStateDetails": [
-                "screenType": "App",
+  >[!BEGINTABS]
+
+  >[!TAB iOS]
+
+    ```swift
+    var xdmData: [String: Any] = [
+        "eventType": "application.scene",
+        "_techmarketingdemos": [
+            "appInformation": [
+                "appStateDetails": [
+                    "screenType": "App",
                     "screenName": "luma: content: ios: us: en: login",
                     "screenView": [
                         "value": 1
@@ -237,28 +397,76 @@ Imagine you want to track screen views and interactions in the app itself. Remem
                 ]
             ] 
         ]
-  ]
-  ```
+    ]
+    ```
+
+  >[!TAB Android]
+
+    ```kotlin
+    val xdmData = mapOf(
+        "eventType" to "application.scene",
+        tenant.value to mapOf(
+            "appInformation" to mapOf(
+                "appStateDetails" to mapOf(
+                    "screenType" to "App",
+                    "screenName" to stateName,
+                    "screenView" to mapOf("value" to 1)
+                )
+            )
+        )
+    )
+    ```
+
+  >[!ENDTABS]
+
 
 
 * You now can use this data structure to create an `ExperienceEvent`.
+
+  >[!BEGINTABS]
+
+  >[!TAB iOS]
 
     ```swift
     let event = ExperienceEvent(xdm: xdmData)
     ```
 
+  >[!TAB Android]
+
+    ```kotlin
+    val event = ExperienceEvent(xdmData)
+    ```
+
+  >[!ENDTABS]
+
+
 * Send the event and data to Platform Edge Network.
+
+  >[!BEGINTABS]
+
+  >[!TAB iOS]
 
     ```swift
     Edge.sendEvent(experienceEvent: event)
     ```
 
+  >[!TAB Android]
+
+    ```kotlin
+    Edge.sendEvent(event, null)
+    ```
+
+  >[!ENDTABS]
 
 Again, lets actually implement this code in your Xcode project. 
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. For convenience, you define two functions in **[!UICONTROL MobileSDK]**. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in your Xcode Project navigator.
 
-   1. One for app interactions. Add this code to the `func sendAppInteractionEvent(actionName: String)` function:
+   * One for app interactions. Add this code to the `func sendAppInteractionEvent(actionName: String)` function:
 
         ```swift 
         // Set up a data dictionary, create an experience event and send the event.
@@ -287,7 +495,7 @@ Again, lets actually implement this code in your Xcode project.
        * sends the experience event using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
 
-   1. And one for screen tracking. Add this code to the `func sendTrackScreenEvent(stateName: String) ` function:
+   * And one for screen tracking. Add this code to the `func sendTrackScreenEvent(stateName: String) ` function:
   
         ```swift
         // Set up a data dictionary, create an experience event and send the event.
@@ -330,6 +538,82 @@ Again, lets actually implement this code in your Xcode project.
         // Send track screen event
         MobileSDK.shared.sendTrackScreenEvent(stateName: "luma: content: ios: us: en: login")
         ```
+
+>[!TAB Android]
+
+1. For convenience, you define two functions in **[!UICONTROL MobileSDK]**. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in your Android Studio navigator.
+
+   * One for app interactions. Add this code to the `fun sendAppInteractionEvent(actionName: String)` function:
+
+        ```kotlin 
+        // Set up a data map, create an experience event and send the event.
+        val xdmData = mapOf(
+            "eventType" to "application.interaction",
+            tenant.value to mapOf(
+                "appInformation" to mapOf(
+                    "appInteraction" to mapOf(
+                        "name" to actionName,
+                        "appAction" to mapOf("value" to 1)
+                    )
+                )
+            )
+        )
+        val appInteractionEvent = ExperienceEvent.Builder().setXdmSchema(xdmData).build()
+        Edge.sendEvent(appInteractionEvent, null)
+        ```
+
+       This function uses the action name as a parameter and
+
+       * sets up the XDM payload as a map, using the parameter from the function,
+       * sets up an experience event using the map,
+       * sends the experience event using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+
+
+   * And one for screen tracking. Add this code to the `fun sendTrackScreenEvent(stateName: String)` function:
+  
+        ```kotlin
+        // Set up a data map, create an experience event and send the event.
+        val xdmData = mapOf(
+            "eventType" to "application.scene",
+            tenant.value to mapOf(
+                "appInformation" to mapOf(
+                    "appStateDetails" to mapOf(
+                        "screenType" to "App",
+                        "screenName" to stateName,
+                        "screenView" to mapOf("value" to 1)
+                    )
+                )
+            )
+        )
+        val trackScreenEvent = ExperienceEvent.Builder().setXdmSchema(xdmData).build()
+        Edge.sendEvent(trackScreenEvent, null)
+        ```
+       
+       This function uses the state name as a parameter and
+
+       * sets up the XDM payload as a map, using the parameter from the function,
+       * sets up an experience event using the map,
+       * sends the experience event using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]**
+
+   1. Add the following highlighted code to the **[!UICONTROL Button]** **[!UICONTROL onClick]** event: 
+
+        ```kotlin                              
+        // Send app interaction event
+        MobileSDK.shared.sendAppInteractionEvent("login")
+        ```
+
+   1. Add the following highlighted code to the LaunchedEffect(Unit) composable function:
+
+        ```kotlin
+        // Send track screen event
+        MobileSDK.shared.sendTrackScreenEvent("luma: content: android: us: en: login")
+        ```
+
+>[!ENDTABS]
+
+
 
 ## Validation
 
