@@ -623,17 +623,19 @@ Again, lets actually implement this code in your project.
    1. Select **[!UICONTROL Home]** in the tab bar and verify you see an **[!UICONTROL ECID]**, **[!UICONTROL Email]**, and **[!UICONTROL CRM ID]** in the Home screen.
    1. Select **[!DNL Products]** in the tab bar.
    1. Select a product.
-   1. Select <img src="assets/saveforlater.png" width="15"/>.
+   1. Select <img src="assets/saveforlater.png" width="15"/> (iOS) or <img src="assets/heart.png" width="25"/> (Android).
    1. Select <img src="assets/addtocart.png" width="20"/>.
    1. Select <img src="assets/purchase.png" width="15"/>.
 
-       <img src="./assets/mobile-app-events-3.png" width="300">
+      | iOS | Android |
+      |---|---|
+      | <img src="./assets/mobile-app-events-3.png" width="300"> |  <img src="./assets/mobile-app-events-3-android.png" width="278"> |
  
 
 1. In the Assurance UI, look for the **[!UICONTROL hitReceived]** events from the **[!UICONTROL com.adobe.edge.konductor]** vendor.
 1. Select the event and review the XDM data in the **[!UICONTROL messages]** object. Alternatively, you can use ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy Raw Event]** and use a text or code editor of your preference to paste and inspect the event.
    
-   ![data collection validation](assets/datacollection-validation.png)
+   ![data collection validation](assets/datacollection-validation.png) 
 
 
 ## Next steps

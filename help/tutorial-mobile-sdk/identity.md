@@ -53,6 +53,10 @@ To create a new identity namespace:
 
 You want to update both the standard identity (email) and the custom identity (Luma CRM ID) when the user logs into the app.
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and find the `func updateIdentities(emailAddress: String, crmId: String)` function implementation. Add the following  code to the function.
 
    ```swift
@@ -104,6 +108,65 @@ You want to update both the standard identity (email) and the custom identity (L
    ```
 
 
+>[!TAB Android]
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `fun updateIdentities(emailAddress: String, crmId: String) ` function implementation. Add the following  code to the function.
+
+   ```kotlin
+   // Set up identity map, add identities to map and update identities
+   val identityMap = IdentityMap()
+
+   val emailIdentity = IdentityItem(emailAddress, AuthenticatedState.AUTHENTICATED, true)
+   val crmIdentity = IdentityItem(crmId, AuthenticatedState.AUTHENTICATED, true)
+   identityMap.addItem(emailIdentity, "Email")
+   identityMap.addItem(crmIdentity, "lumaCRMId")
+
+   Identity.updateIdentities(identityMap)
+   ```
+
+    This code:
+
+    1. Creates an empty `IdentityMap` object.
+
+       ```kotlin
+       val identityMap = IdentityMap()
+       ```
+
+    1. Sets up `IdentityItem` objects for email and CRM ID.
+   
+       ```kotlin
+       val emailIdentity = IdentityItem(emailAddress, AuthenticatedState.AUTHENTICATED, true)
+       val crmIdentity = IdentityItem(crmId, AuthenticatedState.AUTHENTICATED, true)
+       ```
+
+    1. Adds these `IdentityItem` objects to the `IdentityMap` object.
+
+       ```kotlin
+       identityMap.addItem(emailIdentity, "Email")
+       identityMap.addItem(crmIdentity, "lumaCRMId")
+       ```    
+
+    1. Sends the `IdentityItem` object as part of the `Identity.updateIdentities` API call to the Edge Network.
+
+       ```kotlin
+       Identity.updateIdentities(identityMap)
+       ```   
+
+1.Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]** in the Android Studio navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
+
+   ```kotlin
+   // Update identities
+   MobileSDK.shared.updateIdentities(
+      MobileSDK.shared.currentEmailId.value,
+      MobileSDK.shared.currentCRMId.value
+   )                             
+   ```
+
+
+>[!ENDTABS]
+
+
+
 >[!NOTE]
 >
 >You can send multiple identities in a single `updateIdentities` call. You can also modify previously sent identities.
@@ -112,6 +175,11 @@ You want to update both the standard identity (email) and the custom identity (L
 ## Remove an identity
 
 You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#removeidentity) API to remove the identity from the stored client-side identity map. The Identity extension stops sending the identifier to the Edge Network. Using this API does not remove the identifier from the server-side identity graph. See [View identity graphs](https://experienceleague.adobe.com/docs/platform-learn/tutorials/identities/view-identity-graphs.html?lang=en) for more information on identity graphs.
+
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to the `func removeIdentities(emailAddress: String, crmId: String)` function: 
 
@@ -130,6 +198,31 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
    MobileSDK.shared.removeIdentities(emailAddress: currentEmailId, crmId: currentCRMId)                  
    ```
 
+>[!TAB Android]
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and add the following code to the `fun removeIdentities(emailAddress: String, crmId: String)` function: 
+
+   ```kotlin
+   // Remove identities and reset email and CRM Id to their defaults
+   Identity.removeIdentity(IdentityItem(emailAddress), "Email")
+   Identity.removeIdentity(IdentityItem(crmId), "lumaCRMId")
+   currentEmailId.value = "testUser@gmail.com"
+   currentCRMId.value = "112ca06ed53d3db37e4cea49cc45b71e"
+   ```
+
+1.Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]** in the Android Studio navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
+
+   ```swift
+   // Remove identities
+   // Remove identities
+   MobileSDK.shared.removeIdentities(
+         MobileSDK.shared.currentEmailId.value,
+         MobileSDK.shared.currentCRMId.value
+   )              
+   ```
+
+
+>[!ENDTABS]
 
 ## Validate with Assurance
 
@@ -137,14 +230,35 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 1. In the Luma app
    1. Select the **[!UICONTROL Home]** tab and move the Assurance icon to the left. 
    1. Select the <img src="assets/login.png" width=15/> icon from the top right.
+
+      >[!BEGINTABS]
+
+      >[!TAB iOS]
    
       <img src="./assets/identity1.png" width=300>
+
+      >[!TAB Android]
+
+      <img src="./assets/identity1-android.png" width=300>
+
+      >[!ENDTABS]
       
    1. Provide an email address and a CRM Id, or
-   1. Select <img src="assets/insert.png" width=15/> to randomly generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
+   1. Select <img src="assets/insert.png" width=15/> (iOS) or **[!UICONTROL Generate Random Email]** (Android) to randomly generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
    1. Select **[!UICONTROL Login]**.
 
-       <img src="./assets/identity2.png" width=300>
+      >[!BEGINTABS]
+
+      >[!TAB iOS]
+
+      <img src="./assets/identity2.png" width=300>
+
+      >[!TAB Android]
+
+      <img src="./assets/identity2-android.png" width=300>
+
+
+      >[!ENDTABS]
     
 
 1. Look in the Assurance web interface for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.

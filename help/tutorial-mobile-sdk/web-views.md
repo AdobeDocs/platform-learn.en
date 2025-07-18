@@ -29,6 +29,12 @@ The AEP Edge Identity extension used within the WebView collects the current ECI
 
 ## Implementation
 
+To implement the web view:
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL Info]** > **[!DNL TermsOfServiceSheet]**, and locate the `func loadUrl()` function in the `final class SwiftUIWebViewModel: ObservableObject` class. Add the following call to handle the web view:
 
 ```swift
@@ -56,6 +62,36 @@ The [`AEPEdgeIdentity.Identity.getUrlVariables`](https://developer.adobe.com/cli
 
 You can learn more about the `Identity.getUrlVariables` API in the [Identity for Edge Network extension API reference guide](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
 
+
+>[!TAB Android]
+
+Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL webViewModel]**, and locate the `fun loadUrl()` function in the `class WebViewModel: ViewModel()`. Add the following call to handle the web view:
+
+```kotlin
+// Handle web view
+Identity.getUrlVariables {
+    urlVariables = it
+    val baseUrl = getHtmlFileUrl("tou.html")
+
+    val finalUrl = if (urlVariables.isNotEmpty()) {
+        "$baseUrl?$urlVariables"
+    } else {
+        baseUrl
+    }
+
+    Handler(Looper.getMainLooper()).post {
+        webView.loadUrl(finalUrl)
+    }
+    MobileSDK.shared.logInfo("TermsOfServiceSheet - loadUrl: Successfully loaded WebView with URL: $finalUrl")
+}
+```
+
+The [`Identity.getUrlVariables`](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables) API sets up the variables for the URL to contain all relevant information, like ECID, and more. In the example, you are using a local file but the same concepts apply to remote pages.
+
+You can learn more about the `Identity.getUrlVariables` API in the [Identity for Edge Network extension API reference guide](https://developer.adobe.com/client-sdks/documentation/identity-for-edge-network/api-reference/#geturlvariables).
+
+>[!ENDTABS]
+
 ## Validate
 
 To execute the code:
@@ -64,7 +100,17 @@ To execute the code:
 1. Go to the **[!UICONTROL Settings]** in the app
 1. Tap the **[!DNL View...]** button to show the **[!DNL Terms of Use]**.
 
+   >[!BEGINTABS]
+
+   >[!TAB iOS]
+
    <img src="./assets/tou1.png" width=300/> <img src="./assets/tou2.png" width=300/> 
+
+   >[!TAB Android]
+
+   <img src="./assets/tou1-android.png" width=300/> <img src="./assets/tou2-android.png" width=300/>
+
+   >[!ENDTABS]
 
 1. In the Assurance UI, look for the **[!UICONTROL Edge Identity Response URL Variables]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor. 
 1. Select the event and review the **[!UICONTROL urlvariable]** field in the **[!UICONTROL ACPExtensionEventData]** object, confirming the following parameters are present in the URL: `adobe_mc`, `mcmid`, and `mcorgid`.
