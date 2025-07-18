@@ -458,7 +458,7 @@ Imagine you want to track screen views and interactions in the app itself. Remem
 
   >[!ENDTABS]
 
-Again, lets actually implement this code in your Xcode project. 
+Again, lets actually implement this code in your project. 
 
 >[!BEGINTABS]
 
