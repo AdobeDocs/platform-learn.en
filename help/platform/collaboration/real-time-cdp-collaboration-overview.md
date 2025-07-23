@@ -1,6 +1,6 @@
 ---
 title: Real-Time CDP Collaboration Overview
-description: Get an introduction to Adobe Real-Time Collaboration, a purpose-built data collaboration application that lets you discover and activate high-value audiences and use measurement capabilities to drive tangible results.
+description: Get an introduction to Adobe Real-Time CDP Collaboration, a purpose-built data collaboration application that lets you discover and activate high-value audiences and use measurement capabilities to drive tangible results.
 feature: Collaboration
 role: Leader, User
 level: Beginner
@@ -11,7 +11,7 @@ exl-id: 047839f3-ebf1-4c1d-a5bd-15ee55daf02e
 ---
 # Real-Time CDP Collaboration Overview
 
-With Adobe Real-Time Customer Data Platform (CDP) Collaboration, you can discover, activate, and measure high-value audiences without relying on third-party cookies. This solution enables advanced data collaboration between advertisers and publishers, helping you create personalized and impactful customer experiences in a privacy-safe, centralized environment.
+With Adobe Real-Time CDP Collaboration, you can discover, activate, and measure high-value audiences without relying on third-party cookies. This solution enables advanced data collaboration between collaborators, helping you create personalized and impactful customer experiences in a privacy-safe, centralized environment.
 
 Below you will find videos and other resources to help you learn how to set up, use, and get value from Real-Time CDP Collaboration. Additional assets will be added to this page and site, so please check back often. Happy learning!
 
@@ -106,7 +106,7 @@ For more information, see the Real-Time CDP Collaboration [documentation](https:
 
 ## Setup
 
-To get started, contact your Adobe Experience Platform (AEP) administrator to ensure you have appropriate access to set up Real-Time CDP Collaboration permissions as outlined in the subsequent tutorials. If you are unable to identify your AEP administrator please reach out to your Adobe Account Team.
+To get started, contact your Adobe Experience Platform administrator to ensure you have appropriate access to set up Real-Time CDP Collaboration permissions as outlined in the subsequent tutorials. If you are unable to identify your Experience Platform administrator please reach out to your Adobe Account Team.
 
 <!-- CARDS
 {cta=Watch}
@@ -178,7 +178,7 @@ To get started, contact your Adobe Experience Platform (AEP) administrator to en
                     <p class="headline is-size-6 has-text-weight-bold">
                         <a href="set-up-an-advertiser-account.md" target="_blank" rel="referrer" title="Set up an Advertiser account in Real-Time CDP Collaboration">Set up an Advertiser account in Real-Time CDP Collaboration</a>
                     </p>
-                    <p class="is-size-6">Learn how to set up an Advertiser account (organization) in Real-Time CDP Collaboration.</p>
+                    <p class="is-size-6">Learn how to set up an Advertiser account in Real-Time CDP Collaboration.</p>
                 </div>
                 <a href="set-up-an-advertiser-account.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
@@ -213,9 +213,9 @@ To get started, contact your Adobe Experience Platform (AEP) administrator to en
             <div class="card-content is-padded-small" style="display: flex; flex-direction: column; flex-grow: 1; justify-content: space-between;">
                 <div class="top-card-content">
                     <p class="headline is-size-6 has-text-weight-bold">
-                        <a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" title="Reference audiences as an advertiser in Real-Time CDP Collaboration">Reference audiences as an advertiser in Real-Time CDP Collaboration</a>
+                        <a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" title="Reference audiences as an advertiser in Real-Time CDP Collaboration">Source audiences as an advertiser in Real-Time CDP Collaboration</a>
                     </p>
-                    <p class="is-size-6">As an advertiser, learn how to reference audiences, bringing them into your interface so that they can be used as you collaborate with partners.</p>
+                    <p class="is-size-6">As an advertiser, learn how to source audiences, bringing them into your interface so that they can be used as you collaborate with partners.</p>
                 </div>
                 <a href="reference-audiences-as-an-advertiser.md" target="_blank" rel="referrer" class="spectrum-Button spectrum-Button--outline spectrum-Button--primary spectrum-Button--sizeM" style="align-self: flex-start; margin-top: 1rem;">
                     <span class="spectrum-Button-label has-no-wrap has-text-weight-bold">Watch</span>
