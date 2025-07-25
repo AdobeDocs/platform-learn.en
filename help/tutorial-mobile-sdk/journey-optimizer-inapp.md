@@ -49,26 +49,23 @@ In this lesson, you will
 >If you have setup your environment already as part of the [Journey Optimizer push messaging](journey-optimizer-push.md) lesson, you might already have performed some of the steps in this setup section.
 
 
-### Create a channel configuration in Journey Optimizer
+### Create a channel configuration
 
 To begin, you must create a channel configuration to be able to send in App messages notifications from Journey Optimizer.
 
 1. In the Journey Optimizer interface open the **[!UICONTROL Channels]** > **[!UICONTROL General settings]** > **[!UICONTROL Channel configurations]** menu and then select **[!UICONTROL Create channel configuration]**.
 
-    ![Create a channel configuration](assets/push-config-9.png)
-
-1. Enter a name and a description (optional) for the configuration.
+1. Enter a name and a description (optional) for the configuration. For example `LumaInAppMessaging` and `Channel for in-app messaging`.
 
     >[!NOTE]
     >
     > Names must begin with a letter (A-Z). It can only contain alpha-numeric characters. You can also use underscore `_`, dot`.` and hyphen `-` characters.
 
-
 1. To assign custom or core data usage labels to the configuration, you can select **[!UICONTROL Manage access]**. [Learn more about Object Level Access Control (OLAC)](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/access-control/object-based-access).
 
 1. Select the **In-app messaging** channel.
 
-1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more about marketing actions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
+1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more about marketing actions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions). For example: Push Targeting.
 
 1. Select the Platform for which you want to define the settings. This allows you to specify the target app for each platform and ensures consistent content delivery across multiple platforms.
 
@@ -76,9 +73,11 @@ To begin, you must create a channel configuration to be able to send in App mess
     >
     >For iOS and Android platforms, delivery is based solely on the app ID. If both apps share the same app ID, content will be delivered to both, regardless of the platform selected in the **[!UICONTROL Channel configuration]**.
 
-1. Select **[!UICONTROL Submit]** to save your changes.
+1. Enter the App ids for the platform you want to support.
 
-    ![Configure the in-app channel](assets/inapp_config_10.png)
+   ![Create a channel configuration](assets/in-app-messaging-config.png)
+
+1. Select **[!UICONTROL Submit]** to save your changes.
 
 ### Update datastream configuration
 
@@ -171,41 +170,63 @@ The SDK event hub publishes and receives event data from registered extensions t
 
 1. In the Journey Optimizer UI, select **[!UICONTROL Campaigns]** from the left rail.
 1. Select **[!UICONTROL Create Campaign]**.
-1. In the **[!UICONTROL Create Campaign]** screen: 
-   1. Select **[!UICONTROL In-app message]** and select an app surface from the **[!UICONTROL App surface]** list, for example **[!DNL Luma Mobile App]**.
-   1. Select **[!UICONTROL Create]**
-      ![Campaign Properties](assets/ajo-campaign-properties.png)
-1. In the Campaign definition screen, at **[!UICONTROL Properties]**, enter a **[!UICONTROL Name]** for the campaign, for example `Luma - In-App Messaging Campaign`, and a **[!UICONTROL Description]**, for example `In-app messaging campaign for Luma app`.
-   ![Campaign name](assets/ajo-campaign-properties-name.png)
-1. Scroll down to **[!UICONTROL Action]**, and select **[!UICONTROL Edit Content]**.
-1. In the **[!UICONTROL In-App Message]** screen:
-   1. Select **[!UICONTROL Modal]** as the **[!UICONTROL Message Layout]**.
-   2. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for the **[!UICONTROL Media URL]**.
-   3. Enter a **[!UICONTROL Header]**, for example `Welcome to this Luma In-App Message` and enter a **[!UICONTROL Body]**, for example `Triggered by pushing that button in the app...`.
-   4. Enter **[!UICONTROL Dismiss]** as the **[!UICONTROL Button #1 text (primary)]**.
-   5. Note how the preview is updated.
-   6. Select **[!UICONTROL Review to activate]**.
-      ![In-app editor](assets/ajo-in-app-editor.png)
-1. In the **[!UICONTROL Review to activate (Luma - In-App Messaging Campaign)]** screen, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) in the **[!UICONTROL Schedule]** tile.
-   ![Review schedule select Schedule](assets/ajo-review-select-schedule.png)
-1. Back in the **[!DNL Luma - In-App Messaging Campaign]** screen, select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit triggers]**.
-1. In the **[!UICONTROL In-app message trigger]** dialog, you configure the details of the track action that triggers the in-app message:
-   1. To remove **[!UICONTROL Application launch event]**, select ![Close](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Close_18_N.svg) .
-   1. Use ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add condition]** repeatedly to build the following logic for **[!UICONTROL Show message if]**.
-   1. Click **[!UICONTROL Done]**.
-      ![Trigger logic](assets/ajo-trigger-logic.png)
-    
-   You have defined a track action, where the **[!UICONTROL Action]** equals `in-app` and the **[!UICONTROL Context data]** with the action is a key value pair of `"showMessage" : "true"`.
+1. In the **[!UICONTROL Create your campaign]** dialog, select ![Clock](/help/assets/icons/Clock.svg) **[!UICONTROL Scheduled - Marketing]** and select **[!UICONTROL Confirm]**.
+1. In the **[!UICONTROL Campaign - *YYYY-MM-DD HH:MM:SS UTC+XX:XX*]** screen:
 
-1. Back in the **[!DNL Luma - In-App Messaging Campaign]** screen, select **[!UICONTROL Review to activate]**.
-1. In the **[!UICONTROL Review to activate (Luma - In-App Messaging Campaign)]** screen, select **[!UICONTROL Activate]**.
-1. You see your **[!DNL Luma - In-App Messaging Campaign]** with status **[!UICONTROL Live]** in the **[!UICONTROL Campaigns]** list.
+   1. In the **[!UICONTROL Properties]** tab:
+
+      1. Enter a name for the campaign For example, `Luma Mobile In-App Campaign`.
+      1. Optionally, add a description.
+
+
+   1. Select the **[!UICONTROL Action]** tab.
+
+      1. Underneath **[!UICONTROL Show message if]**, select ![Add](/help/assets/icons/Add.svg) **[!UICONTROL Add action]**. From the drop-down menu select **[!UICONTROL In-app message]**.
+      1. From the **[!UICONTROL In-app message configuration]** drop-down menu, select your configuration. For example **[!UICONTROL LumaInAppMessaging]**.
+      1. Select ![Edit](/help/assets/icons/Edit.svg) **[!UICONTROL Edit triggers]**.
+      1. In the **[!UICONTROL In-app message trigger]** dialog:
+         
+         1. Select **[!UICONTROL Application launch]** and select **[!UICONTROL Track action]** from the dropdown menu.
+         1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add condition]**.
+         1. Select **[!UICONTROL Action]** and **[!UICONTROL equals]** from the drop-down menus.
+         1. Enter `in-app`.
+         1. Select ![AddCircle](/help/assets/icons/AddCircle.svg) **[!UICONTROL Add condition]**.
+         1. Select **[!UICONTROL Context data]** from the drop-down menu, and enter `showMessage`.
+         1. Select **[!UICONTROL equals]** from the drop-down menu, and enter `true`.
+            
+            ![Edit triggers](assets/edit-triggers.png)
+         1. Select **[!UICONTROL Done]**.
+
+   1. Back in the main campaign definition screen, select the **[!UICONTROL Content]** tab.
+
+      1. Enable **[!UICONTROL Advanced formatting]**.
+      1. Select **[!UICONTROL Modal]** as the **[!UICONTROL Messaging layout]**. In the **[!UICONTROL Switch layout]** dialog, select **[!UICONTROL Change layout]**.
+      1. In the **[!UICONTROL Content]** tab.
+         1. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for the **[!UICONTROL Media URL]**.
+         1. Enter a **[!UICONTROL Header]**, for example `Welcome to this Luma In-App Message` and enter a **[!UICONTROL Body]**, for example `Triggered by pushing that button in the app...`.
+
+         ![In-app message content](assets/in-app-message-content.png)
+
+      1. Select **[!UICONTROL Settings]** tab.
+         1. Select **[!UICONTROL Customize size]** in **[!UICONTROL Message]**.
+         1. Disable **[!UICONTROL Fit to content]**.
+         1. Set **[!UICONTROL Height]** to **[!UICONTROL 75%]**.
+
+         ![In-app message settings](assets/in-app-message-settings.png)
+
+1. Select **[!UICONTROL Review to activate]**. To optionally edit any of the configurations for **[!UICONTROL Content]**, **[!UICONTROL Properties]**, **[!UICONTROL Actions]**, or more,  select ![Edit](/help/assets/icons/Edit.svg).
+1. In the **[!UICONTROL Review to activate (*campaign name*)]** screen, select **[!UICONTROL Activate]**.
+1. After a while, you see your **_campaign name_** with status **[!UICONTROL Live]** in the **[!UICONTROL Campaigns]** list.
    ![Campaign list](assets/ajo-campaign-list.png)
 
 
 ## Trigger the in-app message
 
 You have all the ingredients in place to send an in-app message. What remains is how to trigger this in-app message in your app.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Go to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Utils]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator. Find the `func sendTrackAction(action: String, data: [String: Any]?)` function, and add the following code, which calls the [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) function, based on the parameters `action` and `data`.
 
@@ -224,7 +245,35 @@ You have all the ingredients in place to send an in-app message. What remains is
     }
     ```
 
+>[!TAB Android]
+
+1. Go to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the `fun sendTrackAction(action: String, data: Map<String, String>?)` function, and add the following code, which calls the [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) function, based on the parameters `action` and `data`.
+
+    
+    ```kotlin
+    // Send trackAction event
+    MobileCore.track(action, data)
+    ```  
+
+1. Go to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.androi]** > **[!DNL views]** > **[!UICONTROL ConfigView.kt]** in the Android Studio navigator. Find the code for the `onInAppMessageClick` handler button and add the following code:
+
+    ```kotlin
+    // Setting parameters and calling function to send in-app message
+    MobileSDK.shared.sendTrackAction(
+        "in-app",
+        mapOf("showMessage" to "true")
+    )
+    ```
+
+>[!ENDTABS]
+
 ## Validate using your app
+
+You can validate the in-app messages from within the app itself.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
@@ -233,6 +282,20 @@ You have all the ingredients in place to send an in-app message. What remains is
 1. Tap **[!UICONTROL In-App Message]**. You see the in-app message appear in your app.
 
    <img src="assets/ajo-in-app-message.png" width=300/>
+
+
+>[!TAB Android]
+
+1. Rebuild and run the app in the simulator or on a physical device from Android Studio, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. Go to the **[!UICONTROL Settings]** tab.
+
+1. Tap **[!UICONTROL In-App Message]**. You see the in-app message appear in your app.
+
+   <img src="assets/ajo-in-app-message-android.png" width=300/>
+
+
+>[!ENDTABS]
 
 
 ## Validate implementation in Assurance
