@@ -48,7 +48,7 @@ To send your XDM data from the Edge Network to Adobe Analytics, you configure th
 
 ## Automatic mapping
 
-Many of the standard XDM fields are automatically mapped to Analytics variables. See the full list [here](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
+Many of the standard XDM fields are automatically mapped to Analytics variables. See the [full list](https://experienceleague.adobe.com/docs/analytics/implementation/aep-edge/variable-mapping.html?lang=en).
 
 ### Example #1 - s.products
 
@@ -86,7 +86,7 @@ s.products = ";5829;1;49.99,9841;3;30.00"
 
 ### Example #2 - scAdd
 
-If you look closely, all events have two fields `value` (required) and `id` (optional). The `value` field is used to increment the event count. The `id` field is used for serialization.
+If you look closely, all events have two fields: `value` (required) and `id` (optional). The `value` field is used to increment the event count. The `id` field is used for serialization.
 
 This object:
 
@@ -295,7 +295,7 @@ Here is what a processing rule using this data might look like:
 >The first time you map to a processing rule, the interface does not show you the context data variables from the XDM object. To fix that select any value, Save, and come back to edit. All XDM variables should now appear.
 
 
-Additional information about processing rules and context data can be found [here](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
+See [Map contextData variables into props and eVars with processing rules](https://experienceleague.adobe.com/docs/analytics-learn/tutorials/implementation/implementation-basics/map-contextdata-variables-into-props-and-evars-with-processing-rules.html?lang=en).
 
 >[!TIP]
 >
