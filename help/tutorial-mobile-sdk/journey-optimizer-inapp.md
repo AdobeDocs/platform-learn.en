@@ -26,7 +26,7 @@ Before you send in-app messages with Journey Optimizer, you must ensure that the
 
 * Successfully built and run app with SDKs installed and configured.
 * Set up the app for Adobe Experience Platform.
-* Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Also you need sufficient permission to the following Journey Optimizer features.
+* Access to Journey Optimizer and [sufficient permissions for push notifications](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html). Also you need sufficient permission to the following Journey Optimizer features.
   * Manage campaigns.
 * Physical iOS device or simulator for testing.
 
@@ -35,7 +35,7 @@ Before you send in-app messages with Journey Optimizer, you must ensure that the
 
 In this lesson, you will
 
-* Create an App Surface in AJO.
+* Create a channel configuration in Journey Optimizer.
 * Install & configure the Journey Optimizer tag extension.
 * Update your app to register the Journey Optimizer tag extension.
 * Validate setup in Assurance.
