@@ -101,6 +101,9 @@ Campaigns
 + Audiences and Segmentation {#audiences}
   + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
   + [Upload audiences](audiences/upload-audiences.md)
+  + Federated Audience Composition {#federated}
+    + [Subscribe to alerts](audiences/fac/subscribe-to-alerts.md)
+    + [Connect to Oracle](audiences/fac/connect-to-oracle.md)
   + [Overview of Federated Audience Composition](audiences/fac/overview-of-federated-audience-composition.md)
   + [Connect and configure Federated Audience Composition](audiences/fac/connect-and-configure-federated-audience-composition.md)
   + [Create a Federated Audience Composition](audiences/fac/create-a-federated-audience-composition.md)
