@@ -247,13 +247,13 @@ Campaigns
   + [Elevating the Marketer's Role as a Data Steward](/help/platform/privacy/elevating-the-marketers-role-as-a-data-steward.md)
 + Queries and Data Distiller {#queries}
   + [Overview](/help/platform/queries/understanding-query-service.md)
-  + [Query Service UI](/help/platform/queries/query-service-ui.md)
-  + [Query Service API](/help/platform/queries/query-service-api.md)
+  + [Run queries](/help/platform/queries/run-queries.md)
   + [Explore Data](/help/platform/queries/explore-data.md)
   + [Prepare Data](/help/platform/queries/prepare-data.md)
+  + [Query Service UI](/help/platform/queries/query-service-ui.md)
+  + [Query Service API](/help/platform/queries/query-service-api.md)
   + [Adobe Defined Functions](/help/platform/queries/adobe-defined-functions.md)
   + [Data usage patterns](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
-  + [Run queries](/help/platform/queries/run-queries.md)
   + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
   + [Tableau](/help/platform/queries/psql-client-tableau.md)
   + [Analyze and visualize data](/help/platform/queries/analyze-and-visualize.md)
