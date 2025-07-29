@@ -159,8 +159,6 @@ To enable Edge Trace:
 
 At this point, you are not able to view any Platform Edge Network requests going to Adobe applications because you have not enabled any in the datastream. In future lessons, you use Edge Trace to view the outgoing server-side requests to Adobe applications and event forwarding. But first, learn about another tool to validate server-side requests made by Platform Edge Network&mdash;Adobe Experience Platform Assurance!
 
-[Next: **Validate with Assurance**](validate-with-assurance.md)
-
 >[!NOTE]
 >
 >Thank you for investing your time in learning about Adobe Experience Platform Web SDK. If you have questions, want to share general feedback, or have suggestions on future content, please share them on this [Experience League Community discussion post](https://experienceleaguecommunities.adobe.com/t5/adobe-experience-platform-data/tutorial-discussion-implement-adobe-experience-cloud-with-web/td-p/444996)
