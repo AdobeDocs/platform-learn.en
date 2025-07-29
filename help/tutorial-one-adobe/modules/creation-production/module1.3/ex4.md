@@ -1,6 +1,6 @@
 ---
-title: GenStudio for Performance Marketing Campaign Activation to Meta
-description: GenStudio for Performance Marketing Campaign Activation to Meta
+title: GenStudio for Performance Marketing Create Email Experience for AJO
+description: GenStudio for Performance Marketing Create Email Experience for AJO
 role: Developer
 level: Beginner
 jira: KT-5342
@@ -34,7 +34,7 @@ Under **Paramaters**, select the following options:
 
 - **Brand**: `--aepUserLdap-- - CitiSignal`
 - **Language**: `English (US)`
-- **Persona**: `--aepUserLdap-- - Smart Home Families`
+- **Persona**: `--aepUserLdap-- - Online Gamers`
 - **Product**: `--aepUserLdap-- - CitiSignal Fiber Max`
 
 Click **Select from Content**.

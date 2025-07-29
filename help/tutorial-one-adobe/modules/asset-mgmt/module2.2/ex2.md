@@ -75,7 +75,7 @@ You should then have this. Click **Create proof** and then choose **Advanced Pro
 
 ![WF](./images/wfp13.png)
 
-In the **new proof** window, select the workflow template that you created before, which should be named `--aepuserLdap-- - Approval Workflow`. Click **Create Proof**.
+In the **new proof** window, select the workflow template that you created before, which should be named `--aepUserLdap-- - Approval Workflow`. Click **Create Proof**.
 
 ![WF](./images/wfp14.png)
 
