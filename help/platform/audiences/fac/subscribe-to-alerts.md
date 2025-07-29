@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 72
 last-substantial-update: 2025-07-28
 jira: KT-18639
+exl-id: 476b841c-e9a8-4813-abda-f223339e175f
 ---
-
 # Subscribe to Federated Audience Composition alerts
 
 Learn how to subscribe to Federated Audience Composition alerts to receive in-app or email notifications for both successful and failed executions. To enable this, configure their preferences in the Notification Settings under the Experience Platform product.
@@ -29,4 +29,3 @@ Once subscribed, you will receive alerts for:
 
 - Successful federated audience composition executions
 - Failures or errors during execution
-

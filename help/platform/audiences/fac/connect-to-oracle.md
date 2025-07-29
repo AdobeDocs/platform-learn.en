@@ -8,8 +8,8 @@ doc-type: Feature Video
 duration: 48
 last-substantial-update: 2025-07-29
 jira: KT-18640
+exl-id: f4aa560f-c1f5-4242-a92f-5b3bb0392d2b
 ---
-
 # Connect to Oracle databases in Federated Audience Composition
 
 Learn how to connect Oracle databases within Adobe Experience Platform to discover schemas, build data models, and use the data for audience enrichment. The video walks through the step-by-step process of adding a federated Oracle database, from navigating to the Federated Data section to entering connection details.
