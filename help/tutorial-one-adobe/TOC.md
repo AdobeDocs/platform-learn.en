@@ -25,7 +25,17 @@ recommendations: noDisplay,noCatalog
     + [Option 2: PostBuster setup](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex8.md)
     + [Applications to install](/help/tutorial-one-adobe/modules/getting-started/gettingstarted/ex9.md)
 
-+ Workflow and planning {#planning}
++ Workflow and planning {#wfplanning}
+  + 1.1 Workfront Planning {#wfpl1}
+    + [Overview](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
+    + [1.1.1 Getting started with Workfront Planning](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
+  + 1.2 Workfront {#wfpl2}
+    + [Overview](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
+    + [1.2.1 Getting started with Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+    + [1.2.2 Proofing with Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
+    + [1.2.5 Workfront + Photoshop integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
 + Creation & Production {#production}
   + 1.1 Overview of Adobe Firefly Services {#crpr1}
@@ -68,12 +78,6 @@ recommendations: noDisplay,noCatalog
     + [1.1.5 Advanced Custom Block](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
     + [1.1.6 AEM Edge Delivery Services MarTech plugin](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
-  + 1.2 Workfront {#assetm2}
-    + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/workfront.md)
-    + [1.2.1 Getting started Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
-    + [1.2.2 Proofing with Workfront](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex2.md)
-    + [1.2.5 Workfront + Photoshop integration](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex5.md)
-    + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + Delivery & Activation {#activation}
   + Data Collection {#dc}

@@ -253,7 +253,7 @@ Add a menu option to the nav menu with the text `Fiber`. Select the text **Fiber
 
 ![AEMCS](./images/nav1.png){zoomable="yes"}
 
-Enter this for the **URL** `/us/en//citisignal-fiber` and click the **V** icon to confirm.
+Enter this for the **URL** `/us/en/citisignal-fiber` and click the **V** icon to confirm.
 
 ![AEMCS](./images/nav3.png){zoomable="yes"}
 

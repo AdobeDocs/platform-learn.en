@@ -17,7 +17,7 @@ exl-id: 1424f649-d004-4b14-b8af-927ca1d47de5
 
 >[!IMPORTANT]
 >
->In order to execute all steps in this exercise, you need to have access to an existing Adobe Workfront environment, and in that environment you need to have created a project and an approval workflow. If you follow exercise [Workflow Management with Adobe Workfront](./../../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} you wil have the required setup available.
+>In order to execute all steps in this exercise, you need to have access to an existing Adobe Workfront environment, and in that environment you need to have created a project and an approval workflow. If you follow exercise [Workflow Management with Adobe Workfront](./../../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"} you wil have the required setup available.
 
 ## 1.3.4.1 Create & Approve Email Experience in Adobe GenStudio
 

@@ -1,6 +1,6 @@
 ---
-title: GenStudio for Performance Marketing Campaign Activation to Meta
-description: GenStudio for Performance Marketing Campaign Activation to Meta
+title: GenStudio for Performance Marketing Create Email Experience for AJO
+description: GenStudio for Performance Marketing Create Email Experience for AJO
 role: Developer
 level: Beginner
 jira: KT-5342
@@ -15,7 +15,7 @@ exl-id: 9837c076-e6ca-47a0-96b9-5fa5fdba3fd2
 
 >[!IMPORTANT]
 >
->In order to execute all steps in this exercise, you need to have access to an existing Adobe Workfront environment, and in that environment you need to have created a project and an approval workflow. If you follow exercise [Workflow Management with Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} you wil have the required setup available.
+>In order to execute all steps in this exercise, you need to have access to an existing Adobe Workfront environment, and in that environment you need to have created a project and an approval workflow. If you follow exercise [Workflow Management with Adobe Workfront](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"} you wil have the required setup available.
 
 ## 1.3.4.1 Create & Approve Email Experience
 
@@ -35,7 +35,7 @@ Under **Paramaters**, select the following options:
 
 - **Brand**: `--aepUserLdap-- - CitiSignal`
 - **Language**: `English (US)`
-- **Persona**: `--aepUserLdap-- - Smart Home Families`
+- **Persona**: `--aepUserLdap-- - Online Gamers`
 - **Product**: `--aepUserLdap-- - CitiSignal Fiber Max`
 
 Click **Select from Content**.

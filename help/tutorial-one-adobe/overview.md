@@ -13,11 +13,14 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 This tutorial is very diverse and offers clear insights in the following applications:
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront & Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service, Sites, Assets and Edge Delivery Services 
+- Adobe Workfront, Adobe Workfront Planning & Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service, Sites, Assets, Forms, and Edge Delivery Services 
+- AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe Content Analytics
 
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. In order to do that, in some lessons there is a focus on how non-Adobe applications integrate with Adobe applications. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
@@ -51,6 +54,14 @@ In this foundational module, you will prepare everything so that you can access 
 
 ### 1. Workflow & Planning
 
+[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"}
+
+In this module, you will configure and use Adobe Workfront Planning to create a new workspace, define record types, manage records, create a new request form and utilize the AI assistant. 
+
+[1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+
+In this module, you will configure and use Adobe Workfront to manage approval flows and you'll use integrations with Adobe Experience Manager Assets, Universal Editor, Photoshop and more.
+
 ### 2. Creation & Production
 
 [1.1 Overview of Adobe Firefly Services](./modules/creation-production/module1.1/firefly-services.md){target="_blank"}
@@ -74,10 +85,6 @@ In this foundational module, you will use Adobe Express to create images and vid
 [1.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
 In this foundational module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
-
-[1.2 Workflow Management with Adobe Workfront](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"}
-
-In this foundational module, you will configure and use Adobe Workfront to manage approval flows and you'll use integrations with Adobe Experience Manager Assets, Universal Editor, Photoshop and more.
 
 ### 4. Delivery & Activation
 
