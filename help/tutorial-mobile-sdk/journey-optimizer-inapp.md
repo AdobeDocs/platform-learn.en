@@ -116,6 +116,10 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
 
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPMessaging` is part of your list of imports.
@@ -140,6 +144,33 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
+>[!TAB Android]
+
+
+1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. Ensure `com.adobe.marketing.mobile.Messaging` is part of your list of imports.
+
+    `import import com.adobe.marketing.mobile.Messaging`
+
+1. Ensure `Messaging.self` is part of the array of extensions that you are registering.
+
+    ```kotlin
+    val extensions = listOf(
+        Identity.EXTENSION,
+        Lifecycle.EXTENSION,
+        Signal.EXTENSION,
+        Edge.EXTENSION,
+        Consent.EXTENSION,
+        UserProfile.EXTENSION,
+        Places.EXTENSION,
+        Messaging.EXTENSION,
+        Optimize.EXTENSION,
+        Assurance.EXTENSION
+    )
+    ```
+
+>[!ENDTABS]
 
 ## Validate setup with Assurance
 
