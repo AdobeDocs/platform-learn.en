@@ -14,7 +14,7 @@ doc-type: Tutorial
 
 >[!IMPORTANT]
 >
->In order to execute all steps in this exercise, you need to have access to an existing Adobe Workfront environment, and in that environment you need to have created a project and an approval workflow. If you follow exercise [Workflow Management with Adobe Workfront](./../../../modules/asset-mgmt/module2.2/workfront.md){target="_blank"} you wil have the required setup available.
+>In order to execute all steps in this exercise, you need to have access to an existing Adobe Workfront environment, and in that environment you need to have created a project and an approval workflow. If you follow exercise [Workflow Management with Adobe Workfront](./../../../modules/workflow-planning/module1.2/workfront.md){target="_blank"} you wil have the required setup available.
 
 >[!IMPORTANT]
 >
