@@ -3,6 +3,7 @@ title: Getting started with Workfront Planning
 description: Getting started with Workfront Planning
 kt: 5342
 doc-type: tutorial
+exl-id: 26fa872b-c872-46b6-8f56-fa41696100da
 ---
 # 1.1.1 Getting started with Workfront Planning
 

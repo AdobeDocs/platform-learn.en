@@ -3,6 +3,7 @@ title: Getting started with Workfront
 description: Getting started with Workfront
 kt: 5342
 doc-type: tutorial
+exl-id: 0867d7fd-4d12-46d8-a5ae-bb8db1575635
 ---
 # 1.2.1 Getting started with Workfront
 

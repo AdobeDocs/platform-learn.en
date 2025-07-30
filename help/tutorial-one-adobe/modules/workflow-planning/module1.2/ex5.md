@@ -3,6 +3,7 @@ title: Setup Photoshop + Workfront plugin
 description: Setup Photoshop + Workfront plugin
 kt: 5342
 doc-type: tutorial
+exl-id: 0695845e-d18e-416d-a8f4-34464618995a
 ---
 # 2.2.5 Setup Photoshop + Workfront plugin
 
