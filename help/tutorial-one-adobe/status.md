@@ -18,7 +18,8 @@ Below is an overview of the status of the content in this tutorial.
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
-| - | -  | -         | - |
+[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 29/07/2025  | No         | Content not finished yet |
+| [1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 29/07/2025  | No         | Content not finished yet |
 
 ## 2. Creation & Production
 
@@ -35,7 +36,6 @@ Below is an overview of the status of the content in this tutorial.
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
 | [2.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025  | Yes         | - |
-| [2.2 Workflow Management with Adobe Workfront](./modules/asset-mgmt/module2.2/workfront.md){target="_blank"} | 16/01/2025  | No         | Content not finished yet |
 
 ## 4. Delivery & Activation
 
@@ -55,7 +55,7 @@ Below is an overview of the status of the content in this tutorial.
 | [3.3 Adobe Journey Optimizer: Push and In-app Messages](./modules/delivery-activation/ajo-b2c/ajob2c-3/ajopushinapp.md){target="_blank"}     | 03/07/2025/2025        | Yes       |-|
 | [3.4 Adobe Journey Optimizer: Event-based Journeys](./modules/delivery-activation/ajo-b2c/ajob2c-4/journeyoptimizer.md){target="_blank"}| 03/07/2025        | Yes        |-|
 | [3.5 Adobe Journey Optimizer: Translation Services](./modules/delivery-activation/ajo-b2c/ajob2c-5/ajotranslationsvcs.md){target="_blank"}| 03/07/2025        | Yes        |-|
-| [3.6 Adobe Journey Optimizer: Content Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"}| 03/07/2025        | No        |Content being developed|
+| [3.6 Adobe Journey Optimizer: Content Management](./modules/delivery-activation/ajo-b2c/ajob2c-6/ajocontent.md){target="_blank"}| 03/07/2025        | Yes        |-|
 | [3.7 Adobe Journey Optimizer: Decisioning](./modules/delivery-activation/ajo-b2c/ajob2c-7/ajo-decisioning.md){target="_blank"}| 03/07/2025        | No        |Content being developed|
 | [3.8 Adobe Journey Optimizer: Campaigns](./modules/delivery-activation/ajo-b2c/ajob2c-8/ajocampaigns.md){target="_blank"}| 03/07/2025        | No        |Content being developed|
 

@@ -13,11 +13,14 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 This tutorial is very diverse and offers clear insights in the following applications:
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront & Adobe Workfront Fusion
-- Adobe Experience Manager Cloud Service, Sites, Assets and Edge Delivery Services 
+- Adobe Workfront, Adobe Workfront Planning & Adobe Workfront Fusion
+- Adobe Experience Manager Cloud Service, Sites, Assets, Forms, and Edge Delivery Services 
+- AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
 - Adobe Real-Time CDP
 - Adobe Journey Optimizer
+- Adobe Customer Journey Analytics
+- Adobe Content Analytics
 
 This tutorial doesn't just focus on Adobe applications, but takes into account the broader ecosystem in which brands operate. In order to do that, in some lessons there is a focus on how non-Adobe applications integrate with Adobe applications. As such, you'll gain a deep understanding in how the following applications will work together with Adobe Experience Platform:
 
