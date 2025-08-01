@@ -69,7 +69,7 @@ Campaigns
     + [Workflow](/help/platform/rtcdp/understanding-the-real-time-customer-data-platform-user-interface.md)
     + [Overview of B2B Edition](/help/platform/rtcdp/b2b-overview.md)
     + [Orchestrate campaigns with Marketo Engage](/help/platform/rtcdp/orchestrate-campaigns-with-marketo-engage.md)
-+ [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview.html){target="_blank"}
++ [Getting started: Data Architects and Data Engineers](https://experienceleague.adobe.com/en/docs/platform-learn/getting-started-for-data-architects-and-data-engineers/overview){target="_blank"}
 + [Import sample data to Experience Platform](/help/platform/data-generator/import-sample-data.md)
 + Administration {#admin}
   + [Overview](/help/platform/admin/overview.md)
@@ -114,7 +114,7 @@ Campaigns
     + [Create and activate account audiences (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
     + [Demo of streaming segmentation](/help/platform/audiences/audience-builder/streaming-segmentation-demo.md)
     + [Evaluate batch audiences on demand](/help/platform/audiences/audience-builder/evaluate-audiences-on-demand.md)
-  + Federated Audience Composition {#federated}
+  + Federated Audience Composition {#fac}
     + [Overview](audiences/fac/overview-of-federated-audience-composition.md)
     + [Configure a federated connection](audiences/fac/connect-and-configure-federated-audience-composition.md)
     + [Connect to Oracle](audiences/fac/connect-to-oracle.md)
@@ -127,10 +127,10 @@ Campaigns
     + [Segment Match pre-share insights](/help/platform/audiences/segment-match/segment-match-pre-share-insights.md)
     + [Segment Matches receiving data](/help/platform/audiences/segment-match/segment-match-receiving-data.md)
   + Tutorials{#audience-tutorials}
-    + [Evaluate an audience rule](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-    + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
+    + [Evaluate an audience rule](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
+    + [Create a dataset to export data](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment){target="_blank"}
 + [Audit logs](/help/platform/governance/audit-logs.md)
-+ [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
++ [Data Collection](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview){target="_blank"}
 + Collaboration {#collaboration}
   + [Real-Time CDP Collaboration Overview](collaboration/real-time-cdp-collaboration-overview.md)
   + [Intro to Collaboration](collaboration/real-time-cdp-collaboration-intro.md)
@@ -164,18 +164,18 @@ Campaigns
   + [Batch ingestion overview](/help/platform/data-ingestion/batch-ingestion-overview.md)
   + [Create and populate a dataset](/help/platform/data-ingestion/create-datasets-and-ingest-data.md)
   + [Delete datasets and batches](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/data-hygiene/delete-datasets-and-batches)
-  + [Map a CSV file to XDM](https://experienceleague.adobe.com/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema.html){target="_blank"}
-  + [Sources overview](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/overview.html)
-  + [Ingest data from Adobe Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
-  + [Ingest data from Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
-  + [Ingest data from cloud storage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage.html)
-  + [Ingest data from CRM](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-crm.html)
-  + [Ingest data from databases](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-databases.html)
+  + [Map a CSV file to XDM](https://experienceleague.adobe.com/en/docs/experience-platform/ingestion/tutorials/map-csv/existing-schema){target="_blank"}
+  + [Sources overview](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/overview)
+  + [Ingest data from Adobe Analytics](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
+  + [Ingest data from Audience Manager](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
+  + [Ingest data from cloud storage](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-cloud-storage)
+  + [Ingest data from CRM](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-crm)
+  + [Ingest data from databases](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-databases)
   + [Streaming ingestion overview](/help/platform/data-ingestion/understanding-streaming-ingestion.md)
-  + [Stream data with HTTP API](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api.html)
-  + [Stream data using Source Connectors](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector.html)
-  + [Web SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/web-sdk/overview.html){target="_blank"}
-  + [Mobile SDK tutorials](https://experienceleague.adobe.com/docs/platform-learn/data-collection/mobile-sdk/overview.html){target="_blank"}
+  + [Stream data with HTTP API](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-http-api)
+  + [Stream data using Source Connectors](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/streaming-ingestion-source-connector)
+  + [Web SDK tutorials](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/web-sdk/overview){target="_blank"}
+  + [Mobile SDK tutorials](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/mobile-sdk/overview){target="_blank"}
 + Data Lifecycle {#data-lifecycle}
   + [Expire datasets](/help/platform/data-lifecycle/expire-datasets.md)
 + Destinations {#destinations}
@@ -228,7 +228,7 @@ Campaigns
   + [Understanding the Real-Time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
   + [Bring data into Profile](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
-  + [Customize profile view details](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
+  + [Customize profile view details](https://experienceleague.adobe.com/en/docs/experience-platform/profile/ui/profile-customization){target="_blank"}
   + [View account profiles](/help/platform/profiles/view-account-profiles.md)
   + [Create merge policies](/help/platform/profiles/create-merge-policies.md)
   + [Union schemas overview](/help/platform/profiles/union-schemas-overview.md)
@@ -257,12 +257,12 @@ Campaigns
   + [Query Service API](/help/platform/queries/query-service-api.md)
   + [Adobe Defined Functions](/help/platform/queries/adobe-defined-functions.md)
   + [Data usage patterns](/help/platform/queries/understanding-data-usage-patterns-with-query-service.md)
-  + [Generate datasets from query results](https://experienceleague.adobe.com/docs/experience-platform/query/ui/create-datasets.html){target="_blank"}
+  + [Generate datasets from query results](https://experienceleague.adobe.com/en/docs/experience-platform/query/ui/create-datasets){target="_blank"}
   + [Tableau](/help/platform/queries/psql-client-tableau.md)
   + [Analyze and visualize data](/help/platform/queries/analyze-and-visualize.md)
   + [Build dashboards using BI tools](/help/platform/queries/understanding-the-value-of-dashboards-built-with-query-service.md)
   + [Recharge your customer data](/help/platform/queries/recharge-your-customer-data.md)
-  + [Connect clients to Query Service](https://experienceleague.adobe.com/docs/experience-platform/query/clients/overview.html){target="_blank"}
+  + [Connect clients to Query Service](https://experienceleague.adobe.com/en/docs/experience-platform/query/clients/overview){target="_blank"}
   + [Validate data in the datalake](/help/platform/queries/validate-data-in-the-datalake.md)
 + Schemas {#schemas}
   + [Overview](/help/platform/schemas/schemas-and-experience-data-model.md)
@@ -278,7 +278,7 @@ Campaigns
   + [Use enumerated fields and suggested values](/help/platform/schemas/use-enumerated-fields.md)
   + [Copy schemas between sandboxes](/help/platform/schemas/copy-schemas-between-sandboxes.md)
   + [Update schemas](/help/platform/schemas/update-schemas.md)
-  + [Create an ad hoc schema](https://experienceleague.adobe.com/docs/experience-platform/xdm/tutorials/ad-hoc.html){target="_blank"}
+  + [Create an ad hoc schema](https://experienceleague.adobe.com/en/docs/experience-platform/xdm/tutorials/ad-hoc){target="_blank"}
 + Sources {#sources}  
   + [Overview](/help/platform/sources/overview.md)
   + [Ingest data from Adobe Analytics](/help/platform/sources/ingest-data-from-adobe-analytics.md)
@@ -295,10 +295,10 @@ Campaigns
   + [Configure a playbook sandbox](/help/platform/use-case-playbooks/configure-a-playbook-sandbox.md)
   + [Create and publish a playbook instance](/help/platform/use-case-playbooks/create-and-publish-a-playbook-instance.md)
 + Experience Cloud Integrations {#experience-cloud}
-  + [Analytics](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics.html)
-  + [Audience Manager](https://experienceleague.adobe.com/docs/platform-learn/tutorials/sources/ingest-data-from-aam.html)
+  + [Analytics](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-adobe-analytics)
+  + [Audience Manager](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/sources/ingest-data-from-aam)
   + [Commerce](/help/platform/experience-cloud/business-value-of-platform-and-commerce.md)
-  + [Marketo Engage](https://experienceleague.adobe.com/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage.html)
+  + [Marketo Engage](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/rtcdp/orchestrate-campaigns-with-marketo-engage)
   + [Target](https://experienceleague.adobe.com/en/docs/platform-learn/tutorials/destinations/target/next-hit-personalization)
 + Industry Trends {#industry}
   + [The Future of Data Management and the Changing Environment](/help/platform/industry/the-future-of-data-management-and-the-changing-environment.md)
