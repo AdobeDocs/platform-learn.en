@@ -24,14 +24,15 @@ Journey Optimizer allows you to create journeys and send messages to targeted au
 
 * Successfully built and run the app with SDKs installed and configured.
 * Set up the app for Adobe Experience Platform.
-* Access to Journey Optimizer and sufficient permissions as described [here](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Journey Optimizer features.
-  * Create an push credential. 
+* Access to Journey Optimizer and [sufficient permissions](https://experienceleague.adobe.com/docs/journey-optimizer/using/push/push-config/push-configuration.html?lang=en). Also you need sufficient permission to the following Journey Optimizer features.
+  * Create a push credential. 
   * Create an push channel configuration. 
   * Create a journey.
   * Create a message.
   * Create message presets.
-* **Paid Apple developer account** with sufficient access to create certificates, identifiers, and keys.
-* Physical iOS device or simulator for testing.
+* For iOS, a **paid Apple developer account** with sufficient access to create certificates, identifiers, and keys.
+* For Android, a Google developer account with sufficient access to create certificates and keys.
+* Physical iOS or Android device or simulator for testing.
 
 ## Learning objectives
 
@@ -54,59 +55,100 @@ In this lesson, you will
 >
 >If you have set up your environment already as part of the [Journey Optimizer in-app messaging](journey-optimizer-inapp.md) lesson, you might already have performed some of the steps in this setup section.
 
-### Register App ID with APNs
+### Create push credentials
+
+For push notifications, you first have to register you app for push notifications. 
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 The following steps are not Adobe Experience Cloud-specific and are designed to guide you through APNs configuration.
-
-#### Create a private key
 
 1. In the Apple developer portal, navigate to **[!UICONTROL Keys]**.
 1. To create a key, select **[!UICONTROL +]**.
    ![create new key](assets/mobile-push-apple-dev-new-key.png)
 
 1. Provide a **[!UICONTROL Key Name]**.
-1. Select the **[!UICONTROL Apple Push Notification service] (APNs)** checkbox.
+1. Select the **[!UICONTROL Apple Push Notification service] (APNs)** checkbox, and select **[!UICONTROL Configure]**. 
+   1. In the **[!UICONTROL Configue Key]** screen, select **[!UICONTROL Sandbox & Production]** from the **[!UICONTROL Environment]** drop-down menu.
+   1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Continue]**.
    ![configure new key](assets/mobile-push-apple-dev-config-key.png)
 1. Review the configuration and select **[!UICONTROL Register]**.
 1. Download the `.p8` private key. It is used in the next exercise when you configure your Journey Optimizer push credential.
-1. Make note of the **[!UICONTROL Key ID]**. It is used in the next exercise when you configure your Journey Optimizer push credential.
-1. Make note of the **[!UICONTROL Team ID]**. It is used in the next exercise when you configure your Journey Optimizer push credential.
+1. Make note of the **[!UICONTROL Key ID]**. It is used in the next exercise when you configure your Journey Optimizer push credential. 
+1. Make note of the **[!UICONTROL Team ID]**. It is used in the next exercise when you configure your Journey Optimizer push credential. The Team ID can be found at the upper right on the screen, next to your login name.
    ![Key Details](assets/push-apple-dev-key-details.png)
 
 Additional documentation can be [found here](https://help.apple.com/developer-account/#/devcdfbb56a3).
 
+>[!TAB Android]
 
-#### Add your app push credentials in Journey Optimizer
+The following steps are not Adobe Experience Cloud-specific and are designed to guide you through Firebase configuration.
 
-Next you need to add your mobile application push credentials in Journey Optimizer. (In earlier versions of the product, these were added as part of the "App Surface" configuration in Data Collection).
+1. Access the Firebase console.
+1. Select **[!UICONTROL Create a Firebase project]**.
+   1. Enter a **[!UICONTROL Project name]**.
+   1. Select **[!UICONTROL Continue]** in **[!UICONTROL Create a project]** - **[!UICONTROL Let's start with a name for your project]**. For example, `Luma Android App.`
+   1. Disable **[!UICONTROL Gemini in Firebase]** and select **[!UICONTROL Continue]** in **[!UICONTROL Create a project]** - **[!UICONTROL AI assistance for your Firebase project]**.
+   1. Disable **[!UICONTROL Google Analytics for this project]** and select **[!UICONTROL Continue]** in **[!UICONTROL Create a project]** - **[!UICONTROL Google Analytics for your Firebase project]**.
+   1. Select **[!UICONTROL Create Project]**. 
+   1. After a the project is ready, select **[!UICONTROL Continue]**.
+1. Back in the Firebase console, ensure your project is selected at the top. For example **[!UICONTROL Luma Android App]**.
 
-The mobile app push credential registration is required to authorize Adobe to send push notifications on your behalf. Refer to the steps detailed below:
+   ![Firebase console](assets/fcm-1.png).
 
-1. In the Journey Optimizer interface, open the **[!UICONTROL Channels]** > **[!UICONTROL Push settings]** > **[!UICONTROL Push credentials]** menu.
+1. Select ![Setting](/help/assets/icons/Setting.svg) > **[!UICONTROL Project Settings]**.
+1. In **[!UICONTROL Project settings]**, select **[!UICONTROL Add app]**.
+   1. In the **[!UICONTROL Add Firebase to your app]**, select **[!UICONTROL Android]** as the platform.
+   1. In the **[!UICONTROL Add Firebase to your Android app:]**
+      1. In step 1, **[!UICONTROL Register app]**: 
+         1. Enter an Android package name, similar to your app identifier. For example, `com.adobe.luma.tutorial.android`.
+         1. Enter an optioal **[!UICONTROL App nickname]**.
+         1. Select **[!UICONTROL Register app]**.
+      1. In step 2, **[!UICONTROL Download and then add config file]**.
+         1. Select ![Download](/help/assets/icons/Download.svg) **[!UICONTROL Download google-services.json]**. When you build your own version of the Android app, you should replace the current `google-services.json` file in the sample Android Studio project, with the version that is generated by this new app configuration.
+    The other steps are taken care of already in the sample app.
 
-1. Select **[!UICONTROL Create push credential]**.
+    Your screen should look like below:
+
+    ![Firebase console](assets/fcm-2.png)
+
+1. In **[!UICONTROL Project Settings]**, select **[!UICONTROL Service accounts]**.
+1. Select **[!UICONTROL Generate new private key]**. This will generate a `luma-android-app-firebase-adminsdk-xxxx-xxxxxxxx.json` file. Store this file at a safe place, as you will need the file at a later stage.
+
+For more information, see the [Firebase developer documentation](https://firebase.google.com/docs).
+
+>[!ENDTABS]
+
+### Add your app push credentials in Data Collection
+
+Next you need to add your mobile application push credentials to authorize Adobe to send push notifications on your behalf. You can add push credentials either in Data Collection or in Journey Optimizer. In this tutorial, the Data Collection interface is used. The push credentials are then linked to a channel configuration in Journey Optimizer.
+
+1. In Data Collection, select **[!UICONTROL App Surfaces]**.
+1. Select **[!UICONTROL Create App Surface]**.
+1. In the **[!UICONTROL Create App Surface]** interface:
+   1. Enter a **[!UICONTROL Name]**.
+   1. Select **[!UICONTROL Apple iOS]** if you want to send push notification for iOS.
+      1. Enter your **[!UICONTROL App ID]**, for example `com.adobe.luma.tutorial.swiftui`.
+      1. Select the sandbox (optional).
+      1. Enable **[!UICONTROL Push Credentials]**.
+      1. Drop the saved `.p8` private key file onto **[!UICONTROL Drag and Drop Your File]**.
+      1. Enter the **[!UICONTROL Key ID]**.
+      1. Enter the **[!UICONTROL Team ID]**.
+   1. Select **[!UICONTROL Android]** if you want to send push notification for Android.
+      1. Enter your **[!UICONTROL App ID]**, for example `com.adobe.luma.tutorial.android`.
+      1. Select the sandbox (optional).
+      1. Enable **[!UICONTROL Push Credentials]**.
+      1. Drop the saved `luma-android-app-firebase-adminsdk-xxxx-xxxxxxxx.json` file ono `Drag and Drop Your File`.
+
+   ![Create a new push credential configuration in Journey Optimizer](assets/add-push-credentials.png)
+
+1. Select **[!UICONTROL Save]**. If all the information is correct, you have created push credentials to associate with a channel configuration. 
 
 
-    ![Create a new push credential configuration in Journey Optimizer](assets/add-push-credential-ios.png)
-
-1. From the **[!UICONTROL Platform]** drop-down, select the **iOS** operating system.
-
-1. Enter the mobile app Bundle Id in the **[!UICONTROL App ID]** (iOS Bundle ID) field. For example, com.adobe.luma.tutorial.swiftui
-    
-1. Enable the **[!UICONTROL Apply to all sandboxes]** option to make these Push credentials available across all sandboxes. If a specific sandbox has its own credentials for the same Platform and App ID pair, those sandbox-specific credentials will take precedence.
-
-1. Drag and drop your .p8 **Apple Push Notification Authentication Key** file obtained from the previous exercise.
-
-1. Provide the **[!UICONTROL Key ID]**, a 10-character string assigned during the creation of `p8` auth key. It can be found under the **[!UICONTROL Keys]** tab in the **Certificates, Identifiers and Profiles** page of the Apple Developer portal pages. (You should have noted during the previous exercise.)
-    
-1. Provide the **[!UICONTROL Team ID]**. The Team ID is a value which can be found under the **Membership** tab or at the top of the Apple Developer portal page. (You should have noted during the previous exercise.)
-
-    ![Push credential configuration in Journey Optimizer](assets/add-app-config-ios.png)
-
-1. Click **[!UICONTROL Submit]** to create your push credential configuration.
-
-#### Create a channel configuration for push in Journey Optimizer
+### Create a channel configuration for push in Journey Optimizer
 
 Once you have created a push credential configuration, you must create a configuration to be able to send push notifications from Journey Optimizer.
 
@@ -128,13 +170,16 @@ Once you have created a push credential configuration, you must create a configu
 
 1. Select **[!UICONTROL Marketing action]**(s) to associate consent policies to the messages using this configuration. All consent policies associated with the marketing action are leveraged in order to respect the preferences of your customers. [Learn more about marketing actions](https://experienceleague.adobe.com/en/docs/journey-optimizer/using/privacy/consent/consent#surface-marketing-actions).
 
-1. Choose your **[!UICONTROL Platform]**.
+1. Choose your **[!UICONTROL Platform]**. You can configure both **[!UICONTROL iOS]** and **[!UICONTROL Android]** for a channel configuration.
 
-1. Select the same **[!UICONTROL App id]** as for your push credential configured above.
+1. Select the appropriate **[!UICONTROL App id]** you used earlier to define your push credentials. For example com.adobe.luma.tutorial.swiftui for iOS and com.adobe.luma.tutorial.android for Android. The green ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) indicate valid push credentials are associated with this channel configuration.
+
+   
+   ![Push channel configuration](assets/push-config-10.png)
 
 1. Select **[!UICONTROL Submit]** to save your changes.
 
-    ![Push channel configuration](assets/push-config-10.png)
+    
     
 
 ### Update datastream configuration
@@ -189,13 +234,22 @@ For your app to work with Journey Optimizer, you must update your tag property.
 1. Confirm that you aren't getting any errors.
     ![validate](assets/push-validate-confirm.png)
 1. Select the **[!UICONTROL Send Test Push]** tab.
-1. (optional) Change the default details for **[!UICONTROL Title]** and **[!UICONTROL Body]**
+1. (optional) Change the default details for **[!UICONTROL Title]** and **[!UICONTROL Body]** and ensure you provide all parameters that your app expects, like **[!UICONTROL Rich Media]** > **[!UICONTROL Image]**, or a **[!UICONTROL Advance]**d > **[!UICONTROL Notification Channel]** (required for Android, for example `LUMA_CHANNEL_ID`).
 1. Select ![Bug](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL Send Test Push Notification]**.
 1. Check the **[!UICONTROL Test Results]**.
 1. You should see the test push notification appear in your app.
    
-    <img src="assets/luma-app-push.png" width=300/>
+   >[!BEGINTABS]
 
+   >[!TAB iOS]
+
+   <img src="assets/luma-app-push.png" width=300/>
+
+   >[!TAB Android]
+
+   <img src="assets/luma-app-push-android.png" width=300/>
+
+   >[!ENDTABS]
 
 ## Signing
 

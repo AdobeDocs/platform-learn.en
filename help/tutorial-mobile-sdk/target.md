@@ -25,7 +25,7 @@ Before you can perform A/B tests with Target, you must ensure that the proper co
 ## Prerequisites
 
 * Successfully built and run app with SDKs installed and configured.
-* Access to Adobe Target with permissions, properly configured roles, workspaces, and properties as described [here](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
+* Access to Adobe Target with [permissions, properly configured roles, workspaces, and properties](https://experienceleague.adobe.com/docs/target/using/administer/manage-users/enterprise/property-channel.html?lang=en).
 
 
 ## Learning objectives
@@ -125,9 +125,9 @@ There are many types of activities you can create in Adobe Target and implement 
 
 1. In the **[!UICONTROL Untitled Activity]** screen, at the **[!UICONTROL Experiences]** step:
 
-   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Select Location]** underneath **[!UICONTROL LOCATION 1]**. This location name (often referred to as an mbox) is used later in the app implementation.
-   1. Select ![Chrevron down](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronDown_18_N.svg) next to **[!UICONTROL Default Content]** and select **[!UICONTROL Create JSON Offer]** from the context menu.
-   1. Copy the following JSON into **[!UICONTROL Enter a valid JSON object]**.
+   1. Enter `luma-mobileapp-abtest` in **[!UICONTROL Select Location]** underneath **[!UICONTROL Location 1]**. This location name (often referred to as an mbox) is used later in the app implementation.
+   1. Select ![More](/help/assets/icons/More.svg) next to **[!UICONTROL Content]** and select **[!UICONTROL Create JSON Offer]** from the context menu.
+   1. In the **[!UICONTROL Create JSON Offer]** dialog, paste the following JSON.
 
         ```json
         { 
@@ -137,11 +137,15 @@ There are many types of activities you can create in Adobe Target and implement 
         }
         ```
 
-   1. Select **[!UICONTROL + Add Experience]**.
-   
-       ![Experience A](assets/target-create-activity-experienceA.png)
+        ![Experience A](assets/target-create-activity-experienceA.png)
 
-   1. Repeat step b and c for  experience Experience B, but instead use the following JSON:
+        Select **[!UICONTROL Create]**.
+
+   1. Select **[!UICONTROL +]** next to **[!UICONTROL Experiences]** to add **[!UICONTROL Experience B]**.
+   
+       
+
+   1. Repeat step b and c for experience Experience B, but instead use `Aim Analog Watch` as the title and paste the following JSON:
 
         ```json
         { 
@@ -152,13 +156,10 @@ There are many types of activities you can create in Adobe Target and implement 
 
         ```
 
-   1. Select **[!UICONTROL Next]**.
-      
-      ![Experience B](assets/target-create-activity-experienceB.png)
 
 1. In the **[!DNL Targeting]** step, review the setup of your A/B test. By default, both offers are allocated equally across all visitors. Select **[!UICONTROL Next]** to continue.
 
-   ![Targeting](assets/taget-targeting.png)
+   ![Targeting](assets/target-targeting.png)
 
 1. In the **[!UICONTROL Goals & Settings]** step:
 
@@ -185,6 +186,10 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >
 >If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. In Xcode, ensure that [AEP Optimize](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in the Xcode Project navigator.
@@ -220,9 +225,12 @@ As discussed in previous lessons, installing a mobile tag extension only provide
         let xdmData = ["xdm" : identityMap]
         let decisionScope = DecisionScope(name: location)
         Optimize.clearCachedPropositions()
-        Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData)
+        Optimize.updatePropositions(for: [decisionScope], withXdm: xdmData) { data, error in
+            if let error = error {
+                Logger.aepMobileSDK.error("MobileSDK - updatePropositionsAT: Error updating propositions: \(error.localizedDescription)")
+            }
+        }
     }
-
     ```
 
     This function:  
@@ -254,10 +262,91 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     await self.updatePropositionsAT(ecid: currentEcid, location: location)
     ```
 
+>[!TAB Android]
+
+1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]** in the Android Studio navigator.
+1. Ensure `Optimize` is part of your list of imports.
+
+   ```kotlin
+   import com.adobe.marketing.mobile.optimize.Optimize
+   ```
+   
+1. Ensure `Optimize.self` is part of the array of extensions that you are registering.
+
+   ```kotlin
+   val extensions = listOf(
+      Identity.EXTENSION,
+      Lifecycle.EXTENSION,
+      Signal.EXTENSION,
+      Edge.EXTENSION,
+      Consent.EXTENSION,
+      UserProfile.EXTENSION,
+      Places.EXTENSION,
+      Messaging.EXTENSION,
+      Optimize.EXTENSION,
+      Assurance.EXTENSION
+   )
+   ```
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the ` suspend fun updatePropositionsAT(ecid: String, location: String)` function. Add the following code:
+
+    ```kotlin
+    // set up the XDM dictionary, define decision scope and call update proposition API
+    withContext(Dispatchers.IO) {
+        val ecidMap = mapOf("ECID" to mapOf("id" to ecid, "primary" to true))
+        val identityMap = mapOf("identityMap" to ecidMap)
+        val xdmData = mapOf("xdm" to identityMap)
+        val decisionScope = DecisionScope(location)
+        Optimize.clearCachedPropositions()
+        Optimize.updatePropositions(listOf(decisionScope), xdmData, null, object :
+            AdobeCallbackWithOptimizeError<MutableMap<DecisionScope?, OptimizeProposition?>?> {
+            override fun fail(optimizeError: AEPOptimizeError?) {
+                val responseError = optimizeError
+                Log.i("MobileSDK", "updatePropositionsAT error: ${responseError}")
+            }
+            override fun call(propositionsMap: MutableMap<DecisionScope?, OptimizeProposition?>?) {
+                val responseMap = propositionsMap
+                Log.i("MobileSDK", "updatePropositionsOD call: ${responseMap}")
+            }
+        })
+    }
+    ```
+
+    This function:  
+
+      * sets up an XDM dictionary `xdmData`, containing the ECID to identify the profile for which you have to present the A/B test, and 
+      * defines a `decisionScope`, an array of locations on where to present the A/B test. 
+
+    Then the function calls two API's: [`Optimize.clearCachedPropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions) and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions). These functions clear any cached propositions and update the propositions for this profile. A proposition in this context is the experience (offer) that is selected from the Target activity (your A/B test) and which you defined in [Create an A/B test](#create-an-ab-test).
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL TargetOffers.kt]** in the Android Studio navigator. Find the `fun onPropositionsUpdateAT(location: String): List<OfferItem>` function and inspect the code of this function. The most important part of this function is the  [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which: 
+   * retrieves the propositions for the current profile based on the decision scope (which is the location you have defined in the A/B Test),
+   * retrieves the offer from the proposition,
+   * unwraps the content of the offer so it can be displayed properly in the app, and
+   * returns the offer.
+
+1. Still in **[!DNL TargetOffers.kt]**, add the `LaunchedEffect` function to ensure offers are refreshed upon launching the Personalization tab.
+
+    ```kotlin
+    // recompose the view when the number of received offers changes
+    LaunchedEffect(offersAT.count()) {
+        updatePropositionsAT(currentEcid, MobileSDK.shared.targetLocation.value)
+        offersAT = onPropositionsUpdateAT(MobileSDK.shared.targetLocation.value)
+    }
+    ```
+
+>[!ENDTABS]
+
 You can send additional Target parameters (like mbox, profile, product, or order parameters) in a personalization query request to the Experience Edge network, by adding them in a data dictionary when calling the [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#updatepropositions) API. See for more information [Target Parameters](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/#target-parameters).
 
 
+
 ## Validate using the app
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
@@ -267,6 +356,19 @@ You can send additional Target parameters (like mbox, profile, product, or order
 
     <img src="assets/target-app-offer.png" width=300>
 
+
+>[!TAB Android]
+
+1. Rebuild and run the app in the simulator or on a physical device from Android Studio, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. Go to the **[!DNL Personalisation]** tab.
+
+1. You see one of the two offers that you have defined in your A/B test displayed in the bottom  box, in the **[!UICONTROL TARGET]** tile.
+
+    <img src="assets/ajo-app-offers-android.png" width=300>
+
+
+>[!ENDTABS]
 
 ## Validate implementation in Assurance
 
