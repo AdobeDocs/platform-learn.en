@@ -99,33 +99,36 @@ Campaigns
   + [Generate an Access Token](/help/platform/api/generate-an-access-token.md)
   + [Use APIs](/help/platform/api/use-apis-with-postman.md)
 + Audiences and Segmentation {#audiences}
-  + [Introduction to Audience Portal and Composition](audiences/introduction-to-audience-portal-and-composition.md)
-  + [Upload audiences](audiences/upload-audiences.md)
+  + Audience Builder{#audience-builder}
+    + [Introduction](audiences/audience-builder/introduction-to-audience-portal-and-composition.md)
+    + [Upload audiences](audiences/audience-builder/upload-audiences.md)
+    + [Audience rule builder overview](audiences/audience-builder/audience-rule-builder-overview.md)
+    + [Create audiences](audiences/audience-builder/create-audiences.md)
+    + [Use time constraints](audiences/audience-builder/time-constraints.md)
+    + [Create content-based audiences](audiences/audience-builder/create-content-based-audiences.md)
+    + [Create conversion audiences](audiences/audience-builder/create-conversion-audiences.md)
+    + [Create audiences from existing audiences](audiences/audience-builder/create-audiences-from-existing-audiences.md)
+    + [Create sequential audiences](audiences/audience-builder/create-sequential-audiences.md)
+    + [Create dynamic audiences](audiences/audience-builder/create-dynamic-audiences.md)
+    + [Create multi-entity audiences](audiences/audience-builder/create-multi-entity-audiences.md)
+    + [Create and activate account audiences (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
+    + [Demo of streaming segmentation](/help/platform/audiences/audience-builder/streaming-segmentation-demo.md)
+    + [Evaluate batch audiences on demand](/help/platform/audiences/audience-builder/evaluate-audiences-on-demand.md)
   + Federated Audience Composition {#federated}
-    + [Subscribe to alerts](audiences/fac/subscribe-to-alerts.md)
+    + [Overview](audiences/fac/overview-of-federated-audience-composition.md)
+    + [Configure a federated connection](audiences/fac/connect-and-configure-federated-audience-composition.md)
     + [Connect to Oracle](audiences/fac/connect-to-oracle.md)
-  + [Overview of Federated Audience Composition](audiences/fac/overview-of-federated-audience-composition.md)
-  + [Connect and configure Federated Audience Composition](audiences/fac/connect-and-configure-federated-audience-composition.md)
-  + [Create a Federated Audience Composition](audiences/fac/create-a-federated-audience-composition.md)
-  + [Audience rule builder overview](audiences/audience-builder/audience-rule-builder-overview.md)
-  + [Create audiences](audiences/audience-builder/create-audiences.md)
-  + [Use time constraints](audiences/audience-builder/time-constraints.md)
-  + [Create content-based audiences](audiences/audience-builder/create-content-based-audiences.md)
-  + [Create conversion audiences](audiences/audience-builder/create-conversion-audiences.md)
-  + [Create audiences from existing audiences](audiences/audience-builder/create-audiences-from-existing-audiences.md)
-  + [Create sequential audiences](audiences/audience-builder/create-sequential-audiences.md)
-  + [Create dynamic audiences](audiences/audience-builder/create-dynamic-audiences.md)
-  + [Create multi-entity audiences](audiences/audience-builder/create-multi-entity-audiences.md)
-  + [Create and activate account audiences (B2B)](audiences/audience-builder/create-audiences-with-b2b-data.md)
-  + [Demo of streaming segmentation](/help/platform/audiences/streaming-segmentation-demo.md)
-  + [Evaluate batch audiences on demand](/help/platform/audiences/evaluate-audiences-on-demand.md)
-  + [Evaluate an audience rule](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
-  + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
-  + [Segment Match connection setup](/help/platform/segments/segment-match-connection-setup.md)
-  + [Segment Match data governance](/help/platform/segments/segment-match-data-governance.md)
-  + [Segment Match configuration flow](/help/platform/segments/segment-match-configuration-flow.md)
-  + [Segment Match pre-share insights](/help/platform/segments/segment-match-pre-share-insights.md)
-  + [Segment Match receiving data](/help/platform/segments/segment-match-receiving-data.md)
+    + [Create a federated audience](audiences/fac/create-a-federated-audience-composition.md)
+    + [Subscribe to alerts](audiences/fac/subscribe-to-alerts.md)
+  + Segment Match{#segment-match}
+    + [Segment Match connection setup](/help/platform/audiences/segment-match/segment-match-connection-setup.md)
+    + [Segment Match data governance](/help/platform/audiences/segment-match/segment-match-data-governance.md)
+    + [Segment Match configuration flow](/help/platform/audiences/segment-match/segment-match-configuration-flow.md)
+    + [Segment Match pre-share insights](/help/platform/audiences/segment-match/segment-match-pre-share-insights.md)
+    + [Segment Matches receiving data](/help/platform/audiences/segment-match/segment-match-receiving-data.md)
+  + Tutorials{#audience-tutorials}
+    + [Evaluate an audience rule](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/evaluate-a-segment.html){target="_blank"}
+    + [Create a dataset to export data](https://experienceleague.adobe.com/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment.html){target="_blank"}
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/docs/platform-learn/data-collection/overview.html){target="_blank"}
 + Collaboration {#collaboration}
@@ -222,7 +225,7 @@ Campaigns
   + [Add partner attributes to profiles](/help/platform/partner-data-support/partner-enrichment-partner-data.md)
   + [Personalize onsite for unknown visitors](/help/platform/partner-data-support/unknown-visitor-personalization-partner-data.md)
 + Profiles {#profiles}
-  + [Understanding Real-Time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
+  + [Understanding the Real-Time Customer Profile](/help/platform/profiles/understanding-the-real-time-customer-profile.md)
   + [Profile overview diagram](/help/platform/profiles/overview-diagram.md)
   + [Bring data into Profile](/help/platform/profiles/bring-data-into-the-real-time-customer-profile.md)
   + [Customize profile view details](https://experienceleague.adobe.com/docs/experience-platform/profile/ui/profile-customization.html){target="_blank"}
