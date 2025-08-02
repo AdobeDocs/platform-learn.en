@@ -218,6 +218,14 @@ After 1-2 minutes, your document will now be published into AEM Assets. You'll s
 
 ![WF](./images/wfp37a.png)
 
+Click **Mark as done** to finish this task.
+
+![WF](./images/wfp37b.png)
+
+You should then see this.
+
+![WF](./images/wfp37c.png)
+
 ## 1.2.2.5 View your file in AEM Assets
 
 Go to your folder in AEM Assets CS, which is named `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.

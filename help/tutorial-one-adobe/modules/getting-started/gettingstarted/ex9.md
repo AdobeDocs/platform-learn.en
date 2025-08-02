@@ -26,6 +26,26 @@ Open the **Adobe Creative Cloud** app, go to **Apps**. Install Illustrator on yo
 
 ![Adobe I/O New Integration](./images/psd.png)
 
+## Adobe Premiere Pro
+
+Install Adobe Premiere Pro Beta version on your computer from [https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html](https://helpx.adobe.com/premiere-pro/using/premiere-pro-beta.html)
+
+![Adobe I/O New Integration](./images/prpro.png)
+
+Click **Open Creative Cloud Desktop App**.
+
+![Adobe I/O New Integration](./images/prpro1.png)
+
+Click **Install** on the card for the **Premiere Pro (Beta)** app.
+
+![Adobe I/O New Integration](./images/prpro2.png)
+
+## Frame.io Transfer app
+
+Go to [https://frame.io/transfer](https://frame.io/transfer) and download the version for your computer.
+
+![Frame.io](./images/frameio11.png)
+
 ## Visual Studio Code
 
 Go to [https://code.visualstudio.com/](https://code.visualstudio.com/){target="_blank"}, download and install **Visual Studio Code**.
