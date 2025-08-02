@@ -191,7 +191,7 @@ You should then see thenewly created campaign in the overview.
 
 ![Workfront Planning](./images/wfpl35.png)
 
-## 1.1.1.7 Create an Automation
+## 1.1.1.7 Create Portfolio & Custom Form
 
 In the next step, you'll create an automation that will take information from the campaign that you created in Workfront Planning and that will use that information in Workfront to create a program. Before you can create the automation, there are 2 things to configure in Workfront first: a portfolio and a custom form.
 
@@ -219,7 +219,7 @@ Select **Program** and click **Continue**.
 
 ![Workfront Planning](./images/wfplss6.png)
 
-Change the name of the form to `--aepUserLdap-- Program Information`.
+Change the name of the form to `--aepUserLdap-- - Program Information`.
 
 ![Workfront Planning](./images/wfplss7.png)
 

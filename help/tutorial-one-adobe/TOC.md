@@ -9,6 +9,7 @@ recommendations: noDisplay,noCatalog
 # One Adobe Technical Tutorial {#tutorial-one-adobe}
 
 + [Tutorial Overview](/help/tutorial-one-adobe/overview.md)
++ [GenStudio for Content Supply Chain Technical Enablement](/help/tutorial-one-adobe/genstudiocsc.md)
 + [Content Status](/help/tutorial-one-adobe/status.md)
 + [Completion](/help/tutorial-one-adobe/completion.md)
 
@@ -30,11 +31,12 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/wfplanning.md)
     + [1.1.1 Getting started with Workfront Planning](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/ex1.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/workflow-planning/module1.1/summary.md)
-  + 1.2 Workfront {#wfpl2}
+  + 1.2 Workfront Workflow {#wfpl2}
     + [Overview](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
-    + [1.2.1 Getting started with Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
+    + [1.2.1 Workfront + AEM Assets CS Metadata Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
     + [1.2.2 Proofing with Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
-    + [1.2.5 Workfront + Photoshop integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
+    + [1.2.4 Workfront + AEM Sites CS Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
+    + [1.2.5 Workfront + Photoshop Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
 + Creation & Production {#production}

@@ -11,7 +11,13 @@ exl-id: 2c7ef715-b8af-4a5b-8873-5409b43d7cb0
 
 >[!IMPORTANT]
 >
->In order to complete this exercise, you need to have access to a working AEM Assets CS Author environment with AEM Content Hub enabled. If you follow exercise [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} you wil have access to such an environment.
+>In order to complete this exercise, you need to have access to a working AEM Assets CS Author environment with AEM Assets Content Hub enabled. 
+>
+>There are 2 options to consider: 
+>
+>- If you're attending the GenStudio for CSC Technical Enablement workshop, your instructors have created an AEM Assets CS Author environment for you. Please check with them what the name is and how to proceed.
+>
+>- If you're following the full One Adobe tutorial path, go to exercise [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Follow the instructions there, and you'll have access to such an environment.
 
 >[!IMPORTANT]
 >
