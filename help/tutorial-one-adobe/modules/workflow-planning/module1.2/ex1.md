@@ -6,6 +6,20 @@ doc-type: tutorial
 ---
 # 1.2.1 Workfront + AEM Assets CS Metadata Integration
 
+>[!IMPORTANT]
+>
+>In order to complete this exercise, you need to have access to a working AEM Assets CS Author environment. 
+>
+>There are 2 options to consider: 
+>
+>- If you're attending the GenStudio for CSC Technical Enablement workshop, your instructors have created an AEM Assets CS Author environment for you. Please check with them what the name is and how to proceed.
+>
+>- If you're following the full One Adobe tutorial path, go to exercise [Adobe Experience Manager Cloud Service & Edge Delivery Services](./../../../modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}. Follow the instructions there, and you'll have access to such an environment.
+
+>[!IMPORTANT]
+>
+>If you have previously configured an AEM CS Program with an AEM Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
+
 Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Click to open **Workfront**.
 
 ![Workfront Planning](./../module1.1/images/wfpl1.png)

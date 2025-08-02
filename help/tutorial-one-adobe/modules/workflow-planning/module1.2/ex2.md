@@ -6,6 +6,10 @@ doc-type: tutorial
 ---
 # 1.2.2 Proofing with Workfront
 
+>[!IMPORTANT]
+>
+>If you have previously configured an AEM CS Program with an AEM Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
+
 ## 1.2.2.1 Create a new Approval Flow
 
 Go back to **Adobe Workfront**. Click the **menu** icon and select **Proofing**.
