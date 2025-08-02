@@ -51,6 +51,10 @@ In this module you will use Adobe GenStudio for Performance Marketing, a Gen AI-
 
 In this foundational module, you will use Adobe Express to create images and videos, and you'll share those assets towards the broader Adobe Experience Cloud ecosystem.
 
+[Streamline your workflow with Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}
+
+In this module, you will use Adobe Frame.io in combination with Adobe Premiere Pro to collaborate and review images and videos.
+
 ### Asset Management
 
 [Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
@@ -61,9 +65,9 @@ In this foundational module, you will setup your Adobe Experience Manager Cloud 
 
 #### Adobe Content Analytics
 
-[Content Analytics](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md)
+[Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md)
 
-In this module, you'll setup and configure Content Analytics.
+In this module, you'll learn how to implement and use Adobe Content Analytics.
 
 ![Tech Insiders](./assets/images/techinsiders.png){width="50px" align="left"}
 

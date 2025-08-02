@@ -18,8 +18,8 @@ Below is an overview of the status of the content in this tutorial.
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
-[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 29/07/2025  | No         | Content not finished yet |
-| [1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 29/07/2025  | No         | Content not finished yet |
+[1.1 Adobe Workfront Planning](./modules/workflow-planning/module1.1/wfplanning.md){target="_blank"} | 02/08/2025  | Yes         | - |
+| [1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"} | 02/08/2025  | Yes         | Content not finished yet |
 
 ## 2. Creation & Production
 
@@ -29,6 +29,7 @@ Below is an overview of the status of the content in this tutorial.
 | [1.2 Creative Workflow Automation with Workfront Fusion](./modules/creation-production/module1.2/automation.md){target="_blank"} | 04/06/2025  | Yes         | - |
 | [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025  | Yes         | - |
 | [1.4 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025  | Yes         | - |
+| [1.5 Streamline your workflow with Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}| 02/08/2025  | Yes         | - |
 
 
 ## 3. Asset Management
@@ -66,6 +67,7 @@ Below is an overview of the status of the content in this tutorial.
 | [1.1 Customer Journey Analytics: Build a dashboard using Analysis Workspace on top of Adobe Experience Platform](./modules/reporting-insights/cja-b2c/cjab2c-1/customer-journey-analytics-build-a-dashboard.md){target="_blank"}      | 06/01/2025        | Yes        | - |
 | [1.2 Customer Journey Analytics: Ingest & Analyze Google Analytics data in Adobe Experience Platform with the BigQuery Source Connector](./modules/reporting-insights/cja-b2c/cjab2c-2/customer-journey-analytics-bigquery-gcp.md){target="_blank"}      | 07/01/2025        | No        | There's an issue with the data prep modelling for the source data. This is pending a fix. |
 | [2.1 Query Service](./modules/reporting-insights/datadistiller/dd-1/query-service.md){target="_blank"}      | 04/12/2024        | Yes        |-|
+| [3.1 Content Analytics](./modules/reporting-insights/content/module3.1/contentanalytics.md){target="_blank"}      | 02/08/2025        | No        |Content being developed|
 
 {style="table-layout:auto"}
 
