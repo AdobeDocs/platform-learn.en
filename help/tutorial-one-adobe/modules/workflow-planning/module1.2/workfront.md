@@ -4,7 +4,7 @@ description: Workflow Management with Adobe Workfront
 kt: 5342
 doc-type: tutorial
 ---
-# 1.2 Workflow Management with Adobe Workfront
+# 1.2 Workflow Management with Adobe Workfront Workflow
 
 ## Learning Objectives
 
@@ -16,15 +16,19 @@ doc-type: tutorial
 
 ## Exercises
 
-[1.2.1 Getting started with Workfront](./ex1.md){target="_blank"}
+[1.2.1 Workfront + AEM Assets CS Metadata Integration](./ex1.md){target="_blank"}
 
-In this exercise, you'll set up a number of basic settings in Workfront.
+In this exercise, you'll set up the Workfront + AEM Assets CS integration.
 
 [1.2.2 Proofing with Workfront](./ex2.md)
 
 In this exercise, you'll configure and use a proofing approval workflow.
 
-[1.2.5 Workfront + Photoshop integration](./ex5.md){target="_blank"}
+[1.2.4 Workfront + AEM Sites CS Integration](./ex4.md){target="_blank"}
+
+In this exercise, you'll set up and start using the plugin that connects Adobe Experience Manager Cloud Service Sites with Adobe Workfront.
+
+[1.2.5 Workfront + Photoshop Integration](./ex5.md){target="_blank"}
 
 In this exercise, you'll set up and start using the plugin that connects Adobe Photoshop with Adobe Workfront.
 

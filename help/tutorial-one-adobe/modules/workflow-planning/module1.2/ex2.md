@@ -8,9 +8,7 @@ doc-type: tutorial
 
 ## 1.2.2.1 Create a new Approval Flow
 
-Go to [https://experienceplatform.my.workfront.com/](https://experienceplatform.my.workfront.com/){target="_blank"}.
-
-Click the 9 dots **hamburger** icon and select **Proofing**.
+Go back to **Adobe Workfront**. Click the **menu** icon and select **Proofing**.
 
 ![WF](./images/wfp1.png)
 
@@ -22,7 +20,7 @@ Set the **Template name** to `--aepUserLdap-- - Approval Workflow` and set the *
 
 ![WF](./images/wfp3.png)
 
-Scroll down, and under **Stages** > **Stage 1**, add **Wouter Van Geluwe** with the **Role** of **Reviewer & Approver**.
+Scroll down, and under **Stages** > **Stage 1**, add yourself with the **Role** of **Reviewer & Approver**.
 
 Click **Create**.
 
@@ -34,13 +32,35 @@ Your basic approval workflow is now ready to be used.
 
 ## 1.2.2.2 Create a new Project
 
-From the Workfront home page, click **New** in the **My Projects** tab. Select **Blank Project**.
+Open the **menu** and go to **Programs**.
+
+![WF](./images/wfp6a.png)
+
+Click to the program you created before, which is named `--aepUserLdap-- CitiSignal Fiber Launch`.
+
+>[!NOTE]
+>
+>You created a program as part of the exercise on [Workfront Planning](./../module1.1/ex1.md) with the automation you created and ran. If you haven't done that yet, you can find the instructions there.
+
+![WF](./images/wfp6b.png)
+
+In your program, go to **Projects**. Click **+ New Project** and then select **New Project**.
 
 ![WF](./images/wfp6.png)
 
 You should then see this. Change the name to `--aepUserLdap-- - CitiSignal Fiber Launch`.
 
-![WF](./images/wfp6a.png)
+![WF](./images/wfp6c.png)
+
+Go to **Project Details**. Click **+Add** under **Description**.
+
+![WF](./images/wfp6d.png)
+
+Set the description to `The CitiSignal Fiber Launch project is used to plan the upcoming launch of CitiSignal Fiber.`
+
+Click **Save Changes**.
+
+![WF](./images/wfp6e.png)
 
 Your project is now created.
 
@@ -48,7 +68,15 @@ Your project is now created.
 
 ## 1.2.2.3 Create a new Task
 
-Enter this name for your task: **Create assets for Fiber campaign**. Click **Create Task**.
+Go to **Tasks** and click **+ New Task**.
+
+![WF](./images/wfp7a.png)
+
+Enter this name for your task: `Create assets for Fiber campaign`. 
+
+Set the field **Description** to: `This task is used to track the progress of the creation of the assets for the CitiSignal Fiber Launch Campaign.`
+
+Click **Create Task**.
 
 ![WF](./images/wfp8.png)
 
@@ -56,9 +84,25 @@ You should then see this.
 
 ![WF](./images/wfp9.png)
 
+In the column **Assignment**, add your own name.
+
+![WF](./images/wfp9a.png)
+
+The task will then be assigned to you.
+
+![WF](./images/wfp9b.png)
+
 ## 1.2.2.4 Add a new Document to your Task go through the approval flow
 
-Click **+ Add new** and then select **Document**.
+Click the **Workfront** logo to go back to the overview page. You should then see the project you just created appear in the overview. Click your project to open it.
+
+![WF](./images/wfp9c.png)
+
+In **Tasks**, click to open the task.
+
+![WF](./images/wfp9d.png)
+
+Go to **Documents**. Click **+ Add new** and then select **Document**.
 
 ![WF](./images/wfp10.png)
 
@@ -70,21 +114,13 @@ Select the file **2048x2048.png** and click **Open**.
 
 ![WF](./images/wfp12.png)
 
-You should then have this. Click **Create proof** and then choose **Advanced Proof**.
+You should then have this. Hover over the uploaded document. Click **Create proof** and then choose **Advanced Proof**.
 
 ![WF](./images/wfp13.png)
 
-In the **new proof** window, select the workflow template that you created before, which should be named `--aepUserLdap-- - Approval Workflow`. Click **Create Proof**.
+In the **new proof** window, select **Automated** and then select the workflow template that you created before, which should be named `--aepUserLdap-- - Approval Workflow`. Click **Create Proof**.
 
 ![WF](./images/wfp14.png)
-
-You'll then be back in your task. Click the **Assign to** button and select **Assign to me**.
-
-![WF](./images/wfp15.png)
-
-Click **Save**.
-
-![WF](./images/wfp16.png)
 
 Click **Work on it**.
 
@@ -118,7 +154,7 @@ Select **Changes required** and click **make decision**.
 
 ![WF](./images/wfp24.png)
 
-You should then be back here. You now need to upload a second image that takes into account the comments that were provided.
+Go back to your **Task** and the **Document**. You now need to upload a second image that takes into account the comments that were provided.
 
 ![WF](./images/wfp25.png)
 
@@ -154,7 +190,7 @@ Click **Make decision**, select **Approved** and click **Make decision** again.
 
 ![WF](./images/wfp32.png)
 
-Close the proof preview.
+Click the **Task Name** to go back to the Task overview.
 
 ![WF](./images/wfp33.png)
 
@@ -162,11 +198,11 @@ You'll then be back in your Task view, with an approved asset. This asset now ne
 
 ![WF](./images/wfp34.png)
 
-Click the **Share arrow** icon and select your AEM Assets integration, which should be named `--aepUserLdap-- - Citi Signal AEM`.
+Select the approved document. Click the **Share arrow** icon and select your AEM Assets integration, which should be named `--aepUserLdap-- - CitiSignal AEM`.
 
 ![WF](./images/wfp35.png)
 
-Double-click the folder you created before, which should be named `--aepUserLdap-- - Workfront Assets`.
+Double-click the folder you created before, which should be named `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
 
 ![WF](./images/wfp36.png)
 
@@ -178,29 +214,13 @@ After 1-2 minutes, your document will now be published into AEM Assets. You'll s
 
 ![WF](./images/wfp37a.png)
 
-Click **Open summary**.
-
-![WF](./images/wfp38.png)
-
-Go to **Metadata**, you should see this:
-
-![WF](./images/wfp39.png)
-
-Go to **Overview** and click **+ Add** to add a description.
-
-![WF](./images/wfp40.png)
-
-Enter your description. Your proof and document settings are now done.
-
-![WF](./images/wfp41.png)
-
 ## 1.2.2.5 View your file in AEM Assets
 
-Go to your folder in AEM Assets, which is named `--aepUserLdap-- - Workfront Assets`.
+Go to your folder in AEM Assets CS, which is named `--aepUserLdap-- - CitiSignal Fiber Launch Assets`.
 
 ![WF](./images/wfppaem1.png)
 
-Click the 3 dots under your image, and then select **Details**.
+Select the image, and then choose **Details**.
 
 ![WF](./images/wfppaem2.png)
 

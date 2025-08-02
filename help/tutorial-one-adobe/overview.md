@@ -13,7 +13,7 @@ exl-id: 5bc0d621-0662-4d94-80a0-b6c173c0ac9e
 This tutorial is very diverse and offers clear insights in the following applications:
 
 - Adobe Firefly Services, Adobe Photoshop, Adobe Frame I/O, Adobe Substance 3D Staging
-- Adobe Workfront, Adobe Workfront Planning & Adobe Workfront Fusion
+- Adobe Workfront Workflow, Adobe Workfront Planning & Adobe Workfront Fusion
 - Adobe Experience Manager Cloud Service, Sites, Assets, Forms, and Edge Delivery Services 
 - AEM Assets Dynamic Media, Content Hub
 - Adobe Experience Platform
@@ -58,7 +58,7 @@ In this foundational module, you will prepare everything so that you can access 
 
 In this module, you will configure and use Adobe Workfront Planning to create a new workspace, define record types, manage records, create a new request form and utilize the AI assistant. 
 
-[1.2 Workflow Management with Adobe Workfront](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
+[1.2 Workflow Management with Adobe Workfront Workflow](./modules/workflow-planning/module1.2/workfront.md){target="_blank"}
 
 In this module, you will configure and use Adobe Workfront to manage approval flows and you'll use integrations with Adobe Experience Manager Assets, Universal Editor, Photoshop and more.
 
