@@ -234,9 +234,11 @@ For your app to work with Journey Optimizer, you must update your tag property.
 1. Confirm that you aren't getting any errors.
     ![validate](assets/push-validate-confirm.png)
 1. Select the **[!UICONTROL Send Test Push]** tab.
-1. (optional) Change the default details for **[!UICONTROL Title]** and **[!UICONTROL Body]** and ensure you provide all parameters that your app expects, like **[!UICONTROL Rich Media]** > **[!UICONTROL Image]**, or a **[!UICONTROL Advance]**d > **[!UICONTROL Notification Channel]** (required for Android, for example `LUMA_CHANNEL_ID`).
+1. (optional) Change the default details for **[!UICONTROL Title]** and **[!UICONTROL Body]** and ensure you provide all parameters that your app expects, like **[!UICONTROL Advanced]** > **[!UICONTROL Notification Channel]** (required for Android, for example `LUMA_CHANNEL_ID`).
 1. Select ![Bug](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Bug_18_N.svg) **[!UICONTROL Send Test Push Notification]**.
 1. Check the **[!UICONTROL Test Results]**.
+
+   ![Test push notifications from Assurance](assets/test-push.png)
 1. You should see the test push notification appear in your app.
    
    >[!BEGINTABS]
@@ -253,7 +255,10 @@ For your app to work with Journey Optimizer, you must update your tag property.
 
 ## Signing
 
-Signing the Luma app is needed to send push notifications and **requires a paid Apple developer account**.
+>[!IMPORTANT]
+>
+>Signing an iOS app is needed to send push notifications on iOS and **requires a paid Apple developer account**. You don't need to sign an Android app to send push notifications.
+
 
 To update the signing for your app:
 
@@ -275,7 +280,11 @@ To update the signing for your app:
 
 >[!IMPORTANT]
 >
->To implement and test push notification in an iOS app, you must have a **paid** Apple developer account. If you do not have a paid Apple developer account, you can skip the remainder of this lesson.
+>To implement and test push notification in an iOS app, you must have a **paid** Apple developer account.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. In Xcode, select **[!DNL Luma]** from the **[!UICONTROL TARGETS]** list, select the **[!UICONTROL Signing & Capabilities]** tab, select the **[!UICONTROL + Capability]** button, then select **[!UICONTROL Push Notifications]**. This enables your app to receive push notifications.
 
@@ -288,6 +297,14 @@ To update the signing for your app:
 You should now have a push notification extension added to your app, similar to the screen below.
 
 ![Pusn nofitications extension](assets/xcode-signing-capabilities-pushnotifications.png)
+
+>[!TAB Android]
+
+The Android Studio project is already set up for push notifications. You do not need to take additional steps to enable the Android version of the Luma app for push notifications. See [About notifications](https://developer.android.com/develop/ui/views/notifications) for more information.
+
+Android push notifications require that you define a notification channel id, both in your app, and when sending a push notification. The channel notification id used in the Android Luma app is `LUMA_CHANNEL ID`.
+
+>[!ENDTABS]
 
 
 ## Implement Journey Optimizer in the app
