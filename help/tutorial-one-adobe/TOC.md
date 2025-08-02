@@ -69,6 +69,10 @@ recommendations: noDisplay,noCatalog
     + [1.4.2 Animation and Video in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex2.md)
     + [1.4.3 Bulk Create Assets in Adobe Express](/help/tutorial-one-adobe/modules/creation-production/module1.4/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.4/summary.md)
+  + 1.5 Streamline your workflow with Frame.io {#crpr5}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
+    + [1.5.1 Getting started with Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
@@ -237,4 +241,8 @@ recommendations: noDisplay,noCatalog
       + [2.1.7 Query Service and Tableau](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex7.md)
       + [2.1.8 Query Service API](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/ex8.md)
       + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/datadistiller/dd-1/summary.md)
-
+  + Content Analytics {#contentanalytics} 
+    + 3.1 Content Analytics {#ca1}
+      + [Overview](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/contentanalytics.md)
+      + [3.1.1 Getting started with Content Analytics](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/ex1.md)
+      + [Summary and benefits](/help/tutorial-one-adobe/modules/reporting-insights/content/module3.1/summary.md)
