@@ -35,7 +35,7 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/workfront.md)
     + [1.2.1 Workfront + AEM Assets CS Metadata Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex1.md)
     + [1.2.2 Proofing with Workfront](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex2.md)
-    + [1.2.4 Workfront + AEM Sites CS Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
+    + [1.2.4 Workfront + AEM Sites CS Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex4.md)
     + [1.2.5 Workfront + Photoshop Integration](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/ex5.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/workflow-planning/module1.2/summary.md)
 
