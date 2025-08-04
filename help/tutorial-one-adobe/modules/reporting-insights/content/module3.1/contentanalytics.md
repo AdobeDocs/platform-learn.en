@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: f697c3d2-1116-412c-bf3d-5d881b2e8d29
 ---
 # 3.1 Content Analytics
 

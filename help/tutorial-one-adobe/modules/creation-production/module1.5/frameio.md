@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 2b22fc2b-ce95-4860-8ba6-71163bacf5e7
 ---
 # 1.5 Streamline your workflow with Frame.io
 

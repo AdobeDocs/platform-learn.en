@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 09e8fdfd-e02f-43ff-a4f4-fa92eb3f01a3
 ---
 # 1.5.1 Getting started with Frame.io
 
