@@ -316,6 +316,10 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >If you completed the [Install SDKs](install-sdks.md) section, then the SDK is already installed and you can skip this step.
 >
  
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. In Xcode, ensure that [AEP Messaging](https://github.com/adobe/aepsdk-messaging-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPMessaging` is part of your list of imports.
@@ -340,8 +344,44 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     ]
     ```
 
+>[!TAB Android]
+
+1. In Android Studio, ensure that [aepsdk-messaing-android](https://github.com/adobe/aepsdk-messaging-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. Ensure `com.adobe.marketing.mobile.Messaging` is part of your list of imports.
+
+    `import import com.adobe.marketing.mobile.Messaging`
+
+1. Ensure `Messaging.self` is part of the array of extensions that you are registering.
+
+    ```kotlin
+    val extensions = listOf(
+        Identity.EXTENSION,
+        Lifecycle.EXTENSION,
+        Signal.EXTENSION,
+        Edge.EXTENSION,
+        Consent.EXTENSION,
+        UserProfile.EXTENSION,
+        Places.EXTENSION,
+        Messaging.EXTENSION,
+        Optimize.EXTENSION,
+        Assurance.EXTENSION
+    )
+    ```
+
+>[!ENDTABS]
+
+
+
 ## Register device token for push notifications
 
+You need to register the device token for push notifications.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
+1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL AppDelegate]** in the Xcode Project navigator.
 1. Add the [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API to the `func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data)` function.
 
     ```swift      
@@ -351,9 +391,24 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
     This function retrieves the device token unique to the device that the app is installed on. Then sets the token for push notification delivery using the configuration that you have set up and which relies on Apple's Push Notification service (APNs).
 
+>[!TAB Android]
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. Add the [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API to the `override fun onCreate()` function in `class LumaAplication : Application`, in `FirebaseMessaging.getInstance().token.addOnCompleteListener`.
+
+    ```kotlin      
+    // Send push token to Mobile SDK
+    MobileCore.setPushIdentifier(deviceToken)
+    ```
+
+    This function retrieves the device token unique to the device that the app is installed on. Then sets the token for push notification delivery using the configuration that you have set up and which relies on Firebase Cloud Messaging (FCM).
+
+>[!ENDTABS]
+
 >[!IMPORTANT]
 >
->The `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` determines whether push notifications are using an APNs sandbox or production server for sending push notifications. When testing your app in the simulator or on a device, ensure the `messaging.useSandbox` is set to `true` so you receive push notifications. When deploying your app for production ot test using Apple's Testflight, ensure you set `messaging.useSandbox` to `false` otherwise your production app will not be able to receive push notifications.
+>**For iOS only**: The `MobileCore.updateConfigurationWith(configDict: ["messaging.useSandbox": true])` determines whether push notifications are using an APNs sandbox or production server for sending push notifications. When testing your app in the simulator or on a device, ensure the `messaging.useSandbox` is set to `true` so you receive push notifications. When deploying your app for production ot test using Apple's Testflight, ensure you set `messaging.useSandbox` to `false` otherwise your production app will not be able to receive push notifications.<br/><br/>
+>Firebase Cloud Messaging (FCM) does **not** support the concept of sandboxes for push notifications.
 
 
 ## Create your own push notification
@@ -460,6 +515,12 @@ You have all the ingredients in place to send a push notification. What remains 
 
 This time the experience event you are about to send is not constructed building a simple XDM dictionary. You are going to use a `struct` representing a push notification payload. Defining a dedicated data type is an alternative way on how to implement constructing experience event payloads in your application.
 
+Be aware that solely for illustration purposes you send a push notification from within the app. A more typical scenario is that you send the experience event (that triggers the push notification journey) from another application or service.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!UICONTROL Model]** > **[!UICONTROL XDM]** > **[!UICONTROL TestPushPayload]** in the Xcode Project navigator and inspect the code.
 
    ```swift
@@ -519,17 +580,115 @@ This time the experience event you are about to send is not constructed building
     }
     ```
 
+>[!TAB Android]
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL xdm]** > **[!UICONTROL TestPushPayload.kt]** in the Android Studio navigator and inspect the code.
+
+   ```kotlin
+   import com.google.gson.annotations.SerializedName
+
+   data class TestPushPayload(
+      @SerializedName("application") val application: Application,
+      @SerializedName("eventType") val eventType: String
+   ) {
+      fun asMap(): Map<String, Any> {
+         return mapOf(
+               "application" to application.asMap(),
+               "eventType" to eventType
+         )
+      }
+   }
+
+   data class Application(
+      @SerializedName("id") val id: String
+   ) {
+      fun asMap(): Map<String, Any> {
+         return mapOf(
+               "id" to id
+         )
+      }
+   }
+   ```
+
+   The code is a representation of the following simple payload that you are going to send to trigger your test push notification journey
+
+   ```json
+   {
+      "eventType": string,
+      "application" : [
+          "id": string
+      ]
+   }
+   ```
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to `func sendTestPushEvent(applicationId: String, eventType: String)`:
+
+   ```kotlin
+   // Create payload and send experience event
+   val testPushPayload = TestPushPayload(
+      Application(applicationId),
+      eventType
+   )
+   sendExperienceEvent(testPushPayload.asMap())
+   ```
+
+   This code creates a `testPushPayload` instance using the parameters provided to the function (`applicationId` and `eventType`) and then calls `sendExperienceEvent` while converting the payload to a map.
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.android.tutorial]** > **[!DNL views]** > **[!UICONTROL ConfigView.kt]** in the Android Studio navigator. In the Push Notification Button definition, add the following code to send the test push notification experience event payload to trigger your journey whenever that button is tapped.
+
+   ```kotlin
+
+   // Setting parameters and calling function to send push notification
+   val eventType = testPushEventType
+   val applicationId = context.packageName
+   scope.launch {
+         MobileSDK.shared.sendTestPushEvent(
+            applicationId,
+            eventType
+         )
+   }
+   ```
+
+
+>[!ENDTABS]
 
 ## Validate using your app
+
+To validate the push notification event and journey:
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Rebuild and run the app in the simulator or on a physical device from Xcode, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
 
 1. Go to the **[!UICONTROL Settings]** tab.
 
-1. Tap **[!UICONTROL Push Notification]**. You see the push notification appear in your app.
+1. Tap **[!UICONTROL Push Notification]**. 
+   
+
+   You see the push notification appear on top of the app.
    
    <img src="assets/ajo-test-push.png" width=300/>
 
+>[!TAB Android]
+
+1. Rebuild and run the app in the simulator or on a physical device from Android Studio, using ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg).
+
+1. Go to the **[!UICONTROL Settings]** tab.
+
+1. Tap **[!UICONTROL Push Notification]**. 
+
+   You see a push notification indicator at the top bar. Drag down to reveal the push notification on top of the app.
+
+   <img src="assets/ajo-test-push-android.png" width=300/>
+
+>[!ENDTABS]
+
+How to handle and display the push notification in the app itself is beyond the topic of this section. Each platform implements this in a specific way. See for example:
+
+* For iOS: [User Notifications](https://developer.apple.com/documentation/usernotifications)
+* For Android: [Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
 
 ## Next steps
 
