@@ -685,7 +685,7 @@ To validate the push notification event and journey:
 
 >[!ENDTABS]
 
-How to handle and display the push notification in the app itself is beyond the topic of this section. Each platform implements this in a specific way. See for example:
+How to handle and display the push notification in the app itself is beyond the topic of this section. Each platform implements this in a specific way. See for more information:
 
 * For iOS: [User Notifications](https://developer.apple.com/documentation/usernotifications)
 * For Android: [Cloud Messaging](https://firebase.google.com/docs/cloud-messaging)
