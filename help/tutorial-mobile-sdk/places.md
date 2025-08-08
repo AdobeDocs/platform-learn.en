@@ -251,6 +251,14 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >If you completed the [Install SDKs](install-sdks.md) section, then the Places SDK is already installed and you can skip this step.
 >
 
+>[!IMPORTANT]
+>
+>Setting up the Maps SDK for Android in your app requires you to setup billing as your incur costs with the usage. You can limit the costs using your unique application id and a SHA-1 key. For more details, see [Map SDK for Android](https://developers.google.com/maps/documentation/android-sdk/overview). If you do not want to set up billing or incur costs, skip this lesson.
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
+
 1. In Xcode, ensure that [AEP Places](https://github.com/adobe/aepsdk-places-ios) is added to the list of packages in Package Dependencies. See [Swift Package Manager](install-sdks.md#swift-package-manager).
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL AppDelegate]** in the Xcode Project navigator.
 1. Ensure `AEPPlaces` is part of your list of imports.
@@ -306,7 +314,76 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     }
     ```  
 
+>[!TAB Android]
+
+1. Specify your Maps SDK API key in local.defaults.properties. To reach that file switch the navigator from Android to Project. 
+1. In Android Studio, ensure that [aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. Ensure `com.adobe.marketing.mobile.Places` is part of your list of imports.
+
+    `import import com.adobe.marketing.mobile.Places`
+
+1. Ensure `Places.self` is part of the array of extensions that you are registering.
+
+    ```kotlin
+    val extensions = listOf(
+        Identity.EXTENSION,
+        Lifecycle.EXTENSION,
+        Signal.EXTENSION,
+        Edge.EXTENSION,
+        Consent.EXTENSION,
+        UserProfile.EXTENSION,
+        Places.EXTENSION,
+        Messaging.EXTENSION,
+        Optimize.EXTENSION,
+        Assurance.EXTENSION
+    )
+    ```
+
+1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)` function. Add the following code:
+
+    ```kotlin
+    // Process geolocation event
+    Places.processGeofence(geofence, transitionType)
+    ```   
+
+    This [`Places.processGeofence`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processgeofence) API communicates the geolocation information to the Places service.
+
+1. 1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LocationView.kt]** in the Android Studio navigator 
+   
+   1. For the Entry button, enter the following code
+
+    ```kotlin
+    // Simulate geofence entry event
+    coroutineScope.launch {
+        MobileSDK.shared.processGeofence(
+            region,
+            Geofence.GEOFENCE_TRANSITION_ENTER
+        )
+    }
+    ```  
+
+   1. For the Exit button, enter the following code
+
+    ```kotlin
+    // Simulate geofence exit event
+    coroutineScope.launch {
+        MobileSDK.shared.processGeofence(
+            region,
+            Geofence.GEOFENCE_TRANSITION_EXIT
+        )
+    }
+    ```  
+
+>[!ENDTABS]
+
 ## Validate using your app
+
+To validate the geolocation features in your app:
+
+>[!BEGINTABS]
+
+>[!TAB iOS]
 
 1. Open your app on a device or in the simulator.
 
@@ -324,7 +401,28 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
    <img src="assets/appentryexit.png" width=300/>
 
+1. You should see the events in the Assurance UI. Both in the general Events and in the Places Service Events.
+
+>[!TAB Android]
+
+1. Go to the **[!UICONTROL Location]** tab.
+
+1. Select **[!UICONTROL Use and/or Simulate Geofences]**.
+
+1. Tap somewhere within the red circle that appears.
+
+   <img src="assets/appgeolocation-android.png" width=300/>
+
+
+1. Press the **[!UICONTROL Entry]** or **[!UICONTROL Exit]** buttons to simulate geofence entry and geofence exit events from the app.
+
+   <img src="assets/appentryexit-android.png" width=300/>
+
 1. You should see the events in the Assurance UI.
+
+Be aware that the Android Places API calls do not interact with the Mobile SDK Eventhub, so the POI - Enty and POI - Exit rules you have defined are not automatically triggered. You can work around by sending an explicit experience event with all details required for a geofence event.
+
+>[!ENDTABS]
 
 
 
