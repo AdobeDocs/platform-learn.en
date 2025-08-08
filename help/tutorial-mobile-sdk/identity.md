@@ -44,7 +44,7 @@ To create a new identity namespace:
 1. Select **[!UICONTROL Cross-device ID]**.
 1. Select **[!UICONTROL Create]**.
 
-   ![create identity namespace](assets/identity-create.png)
+   ![create identity namespace](assets/identity-create.png){zoomable="yes"}
 
 
 
@@ -263,7 +263,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 1. Look in the Assurance web interface for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
 1. Select the event and review the data in the **[!UICONTROL ACPExtensionEventData]** object. You should see the identities you updated.
-![validate identities update](assets/identity-validate-assurance.png)
+![validate identities update](assets/identity-validate-assurance.png){zoomable="yes"}
 
 ## Validate with identity graph
 
@@ -274,7 +274,7 @@ Once you complete the steps in the [Experience Platform lesson](platform.md), yo
 1. Enter `Luma CRM ID` as the **[!UICONTROL Identity namespace]** and your CRM Id (for example `24e620e255734d8489820e74f357b5c8`) as the **[!UICONTROL Identity value]**.
 1. You see the **[!UICONTROL Identities]** listed.
 
-   ![validate identity graph](assets/identity-validate-graph.png)
+   ![validate identity graph](assets/identity-validate-graph.png){zoomable="yes"}
 
 >[!INFO]
 >

@@ -11,7 +11,7 @@ Learn how to create a datastream in Experience Platform.
 
 A datastream is a server-side configuration on Platform Edge Network. The datastream ensures that incoming data to the Platform Edge Network is routed to Adobe Experience Cloud applications and services appropriately. For more information, see the [documentation](https://experienceleague.adobe.com/docs/experience-platform/datastreams/overview.html) or this [video](https://experienceleague.adobe.com/docs/platform-learn/data-collection/edge-network/configure-datastreams.html).
 
-![Architecture](assets/architecture.png)
+![Architecture](assets/architecture.png){zoomable="yes"}
 
 ## Prerequisites
 
@@ -33,7 +33,7 @@ Datastreams can be created in the [!UICONTROL Data Collection] interface using t
 1. Select ![Datastreams-S2](/help/assets/icons/Datastreams-S2.svg) **[!UICONTROL Datastreams]** in the left rail.
 1. Select **[!UICONTROL New Datastream]**. 
 
-    ![datastreams home](assets/datastream-new.png)
+    ![datastreams home](assets/datastream-new.png){zoomable="yes"}
 
 1. Provide a **[!UICONTROL Name]**, for example `Luma Mobile App` and a **[!UICONTROL Description]**, for example `Datastream for Luma Mobile App`.
 
@@ -44,7 +44,7 @@ Datastreams can be created in the [!UICONTROL Data Collection] interface using t
 1. Select the schema that you created in the previous lesson from the **Event Schema** list.
 1. Select **[!UICONTROL Save]**.
 
-    ![new datastreams](assets/datastream-name.png)
+    ![new datastreams](assets/datastream-name.png){zoomable="yes"}
 
 
 ## Add services
@@ -65,7 +65,7 @@ When you go through the (optional) [Analytics](analytics.md) and [Experience Pla
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png){zoomable="yes"}
 
 
 ### Adobe Experience Platform
@@ -86,10 +86,10 @@ You might also want to enable the Adobe Experience Platform service.
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png){zoomable="yes"}
 1. The final configuration should look something like this.
    
-   ![datastream settings](assets/datastream-settings.png)
+   ![datastream settings](assets/datastream-settings.png){zoomable="yes"}
 
 -->
 

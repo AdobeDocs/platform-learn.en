@@ -41,23 +41,23 @@ You define some points of interest in the Places service.
 1. In the Data Collection UI, select **[!UICONTROL Places]**.
 1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg).
 1. From the context menu, select **[!UICONTROL Manage Libraries]**.
-   ![Manage libraries](assets/places-manage-libraries.png) 
+   ![Manage libraries](assets/places-manage-libraries.png){zoomable="yes"} 
 1. In the **[!UICONTROL Manage Libraries]** dialog, select **[!UICONTROL New]**.
 1. In the **[!UICONTROL Create Library]** dialog enter a **[!UICONTROL Name]**, for example `Luma`.
 1. Select **[!UICONTROL Confirm]**.
-   ![Create library](assets/places-create-library.png)
+   ![Create library](assets/places-create-library.png){zoomable="yes"}
 1. To close the **[!UICONTROL Manage Libraries]** dialog, select **[!UICONTROL Close]**.
 1. Back in **[!UICONTROL POI Management]**, select **[!UICONTROL Import POIs]**.
 1. Select **[!UICONTROL Start]** in the **[!UICONTROL Import Places]** dialog.
 1. Select **[!DNL Luma]** from the list of libraries,
 1. Select **[!UICONTROL Next]**.
-    ![Select Library](assets/places-import-select-library.png)
+    ![Select Library](assets/places-import-select-library.png){zoomable="yes"}
 1. Download the [Luma POIs ZIP file](assets/luma_pois.csv.zip) and extract it to a location on your computer.
 1. In the **[!UICONTROL Import Places]** dialog, drag and drop the extracted `luma_pois.csv` file on to **[!UICONTROL Choose CSV File - Drag and Drop your File]**. You should see **[!UICONTROL Validation Success]** - **[!UICONTROL Successfully validated the CSV file]**.
 1. Select **[!UICONTROL Begin Import]**. You should see **[!UICONTROL Success]** - **[!UICONTROL Successfully added 6 new POIs]**.
 1. Select **[!UICONTROL Done]**.
 1. In **[!UICONTROL POI Management]**, you should see that six new Luma stores are added to the list. You can toggle between ![List](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ViewList_18_N.svg) list and ![Map](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MapView_18_N.svg) map view.
-   ![Places list](assets/places-list.png). 
+   ![Places list](assets/places-list.png){zoomable="yes"}. 
 
 
 ### Install Places extension
@@ -68,13 +68,13 @@ You define some points of interest in the Places service.
 1. Search for the **[!UICONTROL Places]** extension.
 1. Install the extension.
 
-    ![Add Decisioning extension](assets/tag-places-extension.png)
+    ![Add Decisioning extension](assets/tag-places-extension.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Install Extension]** dialog:
    1. Select **[!DNL Luma]** from the **[!UICONTROL Select a Library]** list.
    1. Ensure you have picked your working library, for example **[!UICONTROL Initial Build]**.
    1. Select **[!UICONTROL Save to Library and Build]** from **[!UICONTROL Save to Library]**.
-      ![Install Places extension](assets/places-install-extension.png). 
+      ![Install Places extension](assets/places-install-extension.png){zoomable="yes"}. 
 
 1. Your library is rebuilt.
 
@@ -88,7 +88,7 @@ Verify whether your schema, as defined in [Create schema](create-schema.md), inc
 1. Select your schema to open it.
 1. In the schema editor, select **[!UICONTROL Consumer Experience Event]**.
 1. You see a **[!UICONTROL placeContext]** object with object and fields to capture POI interaction and geolocation data.
-   ![Schema Places](assets/schema-places-context.png). 
+   ![Schema Places](assets/schema-places-context.png){zoomable="yes"}. 
 
 
 ### Update your tag property
@@ -107,7 +107,7 @@ You first create several data elements.
 1. Select **[!UICONTROL Name]** from the **[!UICONTROL Data Element Type]** list.
 1. Select **[!UICONTROL Current POI]** underneath **[!UICONTROL TARGET]**.
 1. Select **[!UICONTROL Save to Library]**.
-   ![Data element](assets/tags-create-data-element.png) 
+   ![Data element](assets/tags-create-data-element.png){zoomable="yes"} 
 
 1. Repeat steps 4 - 8 using the information from the table below, to create additional data elements.
    
@@ -121,7 +121,7 @@ You first create several data elements.
 
    You should have the following list of Data Elements.
 
-   ![List of data elements](assets/tags-data-elements-list.png)
+   ![List of data elements](assets/tags-data-elements-list.png){zoomable="yes"}
 
 **Rules** 
 
@@ -133,7 +133,7 @@ Next, you are going to define rules to work with these data elements.
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL EVENTS]**.
    1. Select **[!UICONTROL Places]** from the **[!UICONTROL Extension]** list and select **[!UICONTROL Enter POI]** from the **[!UICONTROL Event Type]** list.
    1. Select **[!UICONTROL Keep Changes]**.
-      ![Tag event](assets/tags-event-mobile-core.png). 
+      ![Tag event](assets/tags-event-mobile-core.png){zoomable="yes"}. 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ACTIONS]**.
    1. Select **[!UICONTROL Mobile Core]** from the **[!UICONTROL Extension]** list, select **[!UICONTROL Attach Data]** from **[!UICONTROL Action Type]** the list. This action attaches payload data.
    1. In the **[!UICONTROL JSON Payload]**, paste the following payload:
@@ -163,7 +163,7 @@ Next, you are going to define rules to work with these data elements.
        You can also insert `{%% ... %%}` data element placeholder values in the JSON by selecting the ![Data](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Data_18_N.svg). A popup dialog allows you to pick any data element you created.
 
    1. Select **[!UICONTROL Keep Changes]**.
-        ![Tags action](assets/tags-action-mobile-core.png)
+        ![Tags action](assets/tags-action-mobile-core.png){zoomable="yes"}
 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to the **[!UICONTROL Mobile Core - Attach Data]** action.
    1. Select **[!UICONTROL Adobe Experience Platform Edge Network]** from the **[!UICONTROL Extension]** list and select **[!UICONTROL Forward event to Edge Network]**. This action ensures that the event and additional payload data are forwarded to Platform Edge Network.
@@ -171,7 +171,7 @@ Next, you are going to define rules to work with these data elements.
 
 1. To save the rule, select **[!UICONTROL Save to Library]**.
 
-    ![Rule](assets/tags-rule-poi-entry.png)
+    ![Rule](assets/tags-rule-poi-entry.png){zoomable="yes"}
 
 Let's create another rule
 
@@ -213,14 +213,14 @@ Let's create another rule
 
 1. To save the rule, select **[!UICONTROL Save to Library]**.
 
-    ![Rule](assets/tags-rule-poi-exit.png)
+    ![Rule](assets/tags-rule-poi-exit.png){zoomable="yes"}
 
 
 To ensure all changes in your tag are published
 
  1. Select **[!UICONTROL Initial Build]** as the library to build.
  1. Select **[!UICONTROL Build]**.
-    ![Build library](assets/tags-build-library.png)
+    ![Build library](assets/tags-build-library.png){zoomable="yes"}
 
    
 
@@ -237,9 +237,9 @@ To validate your setup in Assurance:
 1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulate Load POIs. Your POI is identified using a circle and pin.
 1. Select your POI.
 1. From the popup, select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
-   ![Simulate Entry Event](assets/places-simulate.png)
+   ![Simulate Entry Event](assets/places-simulate.png){zoomable="yes"}
 1. Select **[!UICONTROL Events]** from the left rail, and you should see the events that you simulated.
-   ![AJO Decisioning validation](assets/places-events.png)
+   ![AJO Decisioning validation](assets/places-events.png){zoomable="yes"}
 
 
 ## Implement Places in your app

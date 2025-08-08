@@ -11,7 +11,7 @@ Learn how to map mobile data to Adobe Analytics.
 
 The [event](events.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Analytics. You map the data to the correct variables in your report suite.
 
-![Architecture](assets/architecture-aa.png)
+![Architecture](assets/architecture-aa.png){zoomable="yes"}
 
 ## Prerequisites
 
@@ -43,7 +43,7 @@ To send your XDM data from the Edge Network to Adobe Analytics, you configure th
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png)
+   ![Add Adobe Analytics as datastream service](assets/datastream-service-aa.png){zoomable="yes"}
 
 
 ## Automatic mapping
@@ -131,7 +131,7 @@ Using the [Assurance](assurance.md) you can confirm that you're sending an exper
 
 1. View the ExperienceEvent hit.
 
-    ![analytics xdm hit](assets/analytics-assurance-experiencevent.png)
+    ![analytics xdm hit](assets/analytics-assurance-experiencevent.png){zoomable="yes"}
 
 1. Review the XDM portion of the JSON.
 
@@ -154,7 +154,7 @@ Using the [Assurance](assurance.md) you can confirm that you're sending an exper
 
 1. Review the **[!UICONTROL analytics.mapping]** event.
 
-    ![analytics xdm hit](assets/analytics-assurance-mapping.png)
+    ![analytics xdm hit](assets/analytics-assurance-mapping.png){zoomable="yes"}
 
 Note the following in the Analytics mapping:
 
@@ -197,7 +197,7 @@ To map this XDM context data to your Analytics data in your report suite, you ca
 
 * Add the **[!UICONTROL Adobe Analytics ExperienceEvent Full Extension]** field group to your schema.
 
-  ![Analytics ExperienceEvent FullExtension field group](assets/schema-analytics-extension.png)
+  ![Analytics ExperienceEvent FullExtension field group](assets/schema-analytics-extension.png){zoomable="yes"}
 
 * Build XDM payloads in your app, conforming to the Adobe Analytics ExperienceEvent Full Extension field group, similar to what you have done in the [Track Event Data](events.md) lesson, or 
 * Build rules in your Tags property that use rule actions to attach or modify data to the Adobe Analytics ExperienceEvent Full Extension field group. See for more details [Attach data to SDK events](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/) or [Modify data in SDK events](https://developer.adobe.com/client-sdks/documentation/user-guides/attach-data/).
@@ -284,7 +284,7 @@ Here is what a processing rule using this data might look like:
 
 * You **[!UICONTROL Set event]** (6) **[!UICONTROL Add to Wishlist (Event 3)]** (7) to **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (8) if **[!UICONTROL a.x.commerce.saveForLaters.value(Context)]** (9) **[!UICONTROL is set]** (10).
 
-![analytics processing rules](assets/analytics-processing-rules.png)
+![analytics processing rules](assets/analytics-processing-rules.png){zoomable="yes"}
 
 >[!IMPORTANT]
 >

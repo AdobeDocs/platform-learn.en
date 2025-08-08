@@ -172,7 +172,7 @@ In the above example, you are simply logging the consent status to the console i
 1. Delete the application from your device or simulator to properly reset and initialize the tracking and consent.
 1. To connect your simulator or device to Assurance, review the [setup instructions](assurance.md#connecting-to-a-session) section.
 1. When moving in the app from **[!UICONTROL Home]** screen to **[!UICONTROL Products]** screen and back to **[!UICONTROL Home]** screen, you should see a **[!UICONTROL Get Consents Response]** event in the Assurance UI.
-    ![validate consent](assets/consent-update.png)
+    ![validate consent](assets/consent-update.png){zoomable="yes"}
 
 
 >[!SUCCESS]

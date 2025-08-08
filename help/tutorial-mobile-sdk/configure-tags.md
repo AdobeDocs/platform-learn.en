@@ -31,12 +31,12 @@ In this lesson, you will:
 1. Create a new mobile tag property in the Data Collection Interface:
     1. Select **[!UICONTROL Tags]** in the left navigation.
     1. Select **[!UICONTROL New Property]**
-       ![create a tag property](assets/tags-new-property.png).
+       ![create a tag property](assets/tags-new-property.png){zoomable="yes"}.
     1. For the **[!UICONTROL Name]**, enter `Luma Mobile App Tutorial`.
     1. For the **[!UICONTROL Platform]**, select **[!UICONTROL Mobile]**.
     1. Select  **[!UICONTROL Save]**. 
      
-        ![configure the tag property](assets/tags-property-config.png)
+        ![configure the tag property](assets/tags-property-config.png){zoomable="yes"}
 
         >[!NOTE]
         >
@@ -49,17 +49,17 @@ In this lesson, you will:
     1. Go to **[!UICONTROL Publishing Flow]** in the left navigation.
     1. Select **[!UICONTROL Add Library]**.
 
-        ![Select Add Library](assets/tags-create-library.png)
+        ![Select Add Library](assets/tags-create-library.png){zoomable="yes"}
 
     1. For the **[!UICONTROL Name]**, enter `Initial Build`.
     1. For the **[!UICONTROL Environment]**, select **[!UICONTROL Development (development)]**.
     1. Select  ![Add button](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add All Changed Resources]**. 
     1. Select **[!UICONTROL Save and Build to Development]**. 
 
-        ![Build the Library](assets/tags-save-library.png)
+        ![Build the Library](assets/tags-save-library.png){zoomable="yes"}
         
     1. Finally, select **[!UICONTROL Initial Build]** as your working library from the **[!UICONTROL Select a working library]** menu. 
-        ![Select as the working library](assets/tags-working-library.png)
+        ![Select as the working library](assets/tags-working-library.png){zoomable="yes"}
 1. Check extensions:
 
     1. Ensure that **[!UICONTROL Initial Build]** is selected as default library. 
@@ -70,7 +70,7 @@ In this lesson, you will:
     
        The [!UICONTROL Mobile Core] and [!UICONTROL Profile] extensions should be pre-installed.
 
-       ![Tags installed](assets/tags-installed.png)
+       ![Tags installed](assets/tags-installed.png){zoomable="yes"}
 
 ## Extension configuration
 
@@ -78,7 +78,7 @@ In this lesson, you will:
 
 1. Select **[!UICONTROL Catalog]**.
 
-    ![initial setup](assets/tags-starting.png)
+    ![initial setup](assets/tags-starting.png){zoomable="yes"}
 
 1. Use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search]** field the find the **Identity** extension.
 
@@ -88,7 +88,7 @@ In this lesson, you will:
 
     3. Select **[!UICONTROL Install]**.
 
-       ![Identity Install](assets/tags-identity-install.png)
+       ![Identity Install](assets/tags-identity-install.png){zoomable="yes"}
 
     This extension does not require any further configuration.
 
@@ -101,7 +101,7 @@ In this lesson, you will:
     1. Select **[!UICONTROL Pending]**. In this tutorial, you manage consent further in the application. Learn more about the Consent extension in [the documentation](https://developer.adobe.com/client-sdks/documentation/consent-for-edge-network/).
     1. Select **[!UICONTROL Save to Library]**.
     
-       ![consent settings](assets/tags-extension-consent.png)
+       ![consent settings](assets/tags-extension-consent.png){zoomable="yes"}
 
 1. Use the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) **[!UICONTROL Search]** field to find and install the **Adobe Experience Platform Edge Network** extension. 
     
@@ -111,14 +111,14 @@ In this lesson, you will:
 
     1. From the **[!UICONTROL Save to Library]** menu, select **[!UICONTROL Save to Library and Build]**.
 
-       ![edge network settings](assets/tags-extension-edge.png)
+       ![edge network settings](assets/tags-extension-edge.png){zoomable="yes"}
 
 Your library is built for the new extensions and configurations. A successful build is indicated by a <span style="color:green">●</span> in the **[!UICONTROL Initial Build]** button.
 
 
 ## Generate SDK install instructions
 
-Select the tab specific for your platform:
+Tags provide you with instructions and code snippets to install the Adobe Experience Platform Mobile SDK in your app.
 
 >[!BEGINTABS]
 
@@ -128,13 +128,13 @@ Select the tab specific for your platform:
 
 1. Select the **[!UICONTROL Development]** install icon ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) .
 
-   ![environments home screen](assets/tags-environments.png)
+   ![environments home screen](assets/tags-environments.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Mobile Install Instructions]** dialog, select the **[!UICONTROL iOS]** tab.
 
 1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using CocoaPods. CocoaPods are used to manage SDK versions and downloads. To learn more, please review the [CocoaPods documentation](https://cocoapods.org/).
  
-   The install instructions provide you a good starting point for implementation. You can find additional information [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
+   The [install instructions](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) provide you a good starting point for implementation.
 
    For the remainder of this tutorial, you will **not** use the CocoaPods instructions but instead use a native Swift Package Manager (SPM) based setup.
 
@@ -142,25 +142,25 @@ Select the tab specific for your platform:
 
 1. Copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the **[!UICONTROL Environment File ID]** and store it in a place as you need it later. This unique ID points to your development environment. Each environment (Production, Staging, Development) does have its own unique ID value.
 
-   ![install instructions](assets/tags-install-instructions.png)
+   ![install instructions](assets/tags-install-instructions.png){zoomable="yes"}
 
 >[!TAB Android]
 
 1. Select **[!UICONTROL Environments]** from the left rail.
 1. Select the **[!UICONTROL Development]** install icon ![Box](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Box_18_N.svg) .
 
-   ![environments home screen](assets/tags-environments.png)
+   ![environments home screen](assets/tags-environments.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Mobile Install Instructions]** dialog, select the **[!UICONTROL Android]** tab.
 1. You can copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the instructions to set up your project using Gradle. Gradle is used to manage SDK versions and downloads. To learn more, please review the [Gradle documentation](https://gradle.org/)
  
-   The install instructions provide you a good starting point for implementation. You can find additional information [here](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/).
+   The [install instructions](https://developer.adobe.com/client-sdks/documentation/getting-started/get-the-sdk/) provide you a good starting point for implementation.
 
 1. This block of code shows how to import the required SDKs and register the extensions at launch. This is covered in more detail in [Install SDKs](install-sdks.md).
 
 1. Copy ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) the **[!UICONTROL Environment File ID]** and store it in a place as you need it later. This unique ID points to your development environment. Each environment (Production, Staging, Development) does have its own unique ID value.
 
-   ![install instructions](assets/tags-install-instructions-android.png)
+   ![install instructions](assets/tags-install-instructions-android.png){zoomable="yes"}
 
 >[!ENDTABS]
 

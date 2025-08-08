@@ -13,7 +13,7 @@ Learn how to optimize and personalize the experiences in your mobile apps with P
 
 Target provides everything that you must tailor and personalize your customers' experiences. Target helps you maximize revenue on your web and mobile sites, apps, social media, and other digital channels. Target can perform A/B tests, multivariate tests, recommend products and content, target content, auto-personalize content with AI, and much more. The focus in this lesson is on the A/B test functionality of Target. See the [A/B Test overview](https://experienceleague.adobe.com/docs/target/using/activities/abtest/test-ab.html?lang=en) for more information. 
 
-![Architecture](assets/architecture-at.png)
+![Architecture](assets/architecture-at.png){zoomable="yes"}
 
 Before you can perform A/B tests with Target, you must ensure that the proper configurations and integrations are in place.
 
@@ -66,7 +66,7 @@ To ensure data send from your mobile app to Experience Platform Edge Network is 
 
 1. Select **[!UICONTROL Save]**.
 
-    ![Add Target to datastream](assets/edge-datastream-target.png)
+    ![Add Target to datastream](assets/edge-datastream-target.png){zoomable="yes"}
 
 
 #### Adobe Journey Optimizer
@@ -78,7 +78,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure that **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Personalization Destinations]** are selected. If you also follow the Journey Optimizer lessons, you select **[!UICONTROL Adobe Journey Optimizer]**. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
-   ![AEP datastream configuration](assets/datastream-aep-configuration-target.png)
+   ![AEP datastream configuration](assets/datastream-aep-configuration-target.png){zoomable="yes"}
 
 
 ### Install Adobe Journey Optimizer - Decisioning tags extension
@@ -89,7 +89,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 1. Search for the **[!UICONTROL Adobe Journey Optimizer - Decisioning]** extension.
 1. Install the extension. The extension does not require additional configuration.
 
-    ![Add Decisioning extension](assets/tag-add-decisioning-extension.png)
+    ![Add Decisioning extension](assets/tag-add-decisioning-extension.png){zoomable="yes"}
 
 
 ### Update your schema
@@ -99,7 +99,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 1. Select your schema to open it.
 1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to **[!UICONTROL Field groups]**.
 1. In the **[!UICONTROL Add field groups]** dialog, search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**.
-   ![Proposition](assets/schema-fieldgroup-proposition.png)
+   ![Proposition](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. To save the changes to your schema, select **[!UICONTROL Save]**.
 
 
@@ -111,7 +111,7 @@ To validate your setup in Assurance:
 1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Validate Setup]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Validate Setup]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
-   ![AJO Decisioning validation](assets/ajo-decisioning-validation.png) 
+   ![AJO Decisioning validation](assets/ajo-decisioning-validation.png){zoomable="yes"} 
 
 ## Create an A/B Test
 
@@ -121,7 +121,7 @@ There are many types of activities you can create in Adobe Target and implement 
 1. Select **[!UICONTROL Create Activity]** and **[!UICONTROL A/B Test]** from the context menu.
 1. In the **[!UICONTROL Create A/B Test Activity]** dialog, select **[!UICONTROL Mobile]** as the **[!UICONTROL Type]**, select a workspace from the **[!UICONTROL Choose Workspace]** list, and select your property from the **[!UICONTROL Choose property]** list if you are a Target Premium customer and specified a property token in the datastream. 
 1. Select **[!UICONTROL Create]**.
-   ![Create Target activity](assets/target-create-activity1.png)
+   ![Create Target activity](assets/target-create-activity1.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Untitled Activity]** screen, at the **[!UICONTROL Experiences]** step:
 
@@ -137,7 +137,7 @@ There are many types of activities you can create in Adobe Target and implement 
         }
         ```
 
-        ![Experience A](assets/target-create-activity-experienceA.png)
+        ![Experience A](assets/target-create-activity-experienceA.png){zoomable="yes"}
 
         Select **[!UICONTROL Create]**.
 
@@ -159,7 +159,7 @@ There are many types of activities you can create in Adobe Target and implement 
 
 1. In the **[!DNL Targeting]** step, review the setup of your A/B test. By default, both offers are allocated equally across all visitors. Select **[!UICONTROL Next]** to continue.
 
-   ![Targeting](assets/target-targeting.png)
+   ![Targeting](assets/target-targeting.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Goals & Settings]** step:
 
@@ -168,14 +168,14 @@ There are many types of activities you can create in Adobe Target and implement 
     1. Select **[!UICONTROL Conversion]**, **[!UICONTROL Viewed an mbox]** in the **[!UICONTROL Goal Metric]** > **[!UICONTROL MY PRIMARY GOAL]** tile and enter your location (mbox) name, for example `luma-mobileapp-abtest`.
     1. Select **[!UICONTROL Save & Close]**.
 
-       ![Goals Settings](assets/target-goals.png)
+       ![Goals Settings](assets/target-goals.png){zoomable="yes"}
 
 1. Back in the **[!UICONTROL All Activities]** screen:
 
     1. Select ![More](https://spectrum.adobe.com/static/icons/workflow_18/Smock_MoreSmallList_18_N.svg) at your activity.
     1. Select ![Play](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Play_18_N.svg) **[!UICONTROL Activate]** to activate your A/B test.
 
-    ![Activate](assets/target-activate.png)
+    ![Activate](assets/target-activate.png){zoomable="yes"}
 
 
 ## Implement Target in your app
@@ -379,7 +379,7 @@ To validate the A/B test in Assurance:
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Review & Simulate]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
 1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!DNL Target]** requests.
-   ![AJO Decisioning validation](assets/assurance-decisioning-requests.png)
+   ![AJO Decisioning validation](assets/assurance-decisioning-requests.png){zoomable="yes"}
 
 1. You can explore **[!UICONTROL Simulate]** and **[!UICONTROL Event List]** tabs for further functionality checking your setup for Target offers.
 

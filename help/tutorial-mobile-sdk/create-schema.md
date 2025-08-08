@@ -47,7 +47,7 @@ In this lesson, you will:
 
 1. Select **[!UICONTROL Data Collection]** from the menu.
 
-    ![Login to Experience Cloud](assets/experiencecloud-login.png)
+    ![Login to Experience Cloud](assets/experiencecloud-login.png){zoomable="yes"}
 
     >[!NOTE]
     >
@@ -56,7 +56,7 @@ In this lesson, you will:
 
 1. Select ![Schemas](/help/assets/icons/Schemas.svg) **[!UICONTROL Schemas]** under **[!UICONTROL Data management]** in the left rail.
 
-    ![tags home screen](assets/mobile-schema-navigate.png)
+    ![tags home screen](assets/mobile-schema-navigate.png){zoomable="yes"}
 
 You are now on the main schemas page and are presented with a list of any existing schemas. You can also see tabs corresponding to the core building blocks of a schema:
 
@@ -93,13 +93,13 @@ For learning purposes, you use prebuilt and custom field groups.
 
 1. In the **[!UICONTROL Create a schema]** dialog, select **[!UICONTROL Manual]**. Use **[!UICONTROL Select]** to continue.
 
-   ![Schema manual](assets/schema-manual.png)
+   ![Schema manual](assets/schema-manual.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Select a class]** step of the **[!UICONTROL Create schema]** wizard, select **[!UICONTROL Experience Event]** underneath **[!UICONTROL Select a base class for this schema]**.
 
 1. Select **[!UICONTROL Next]**.
     
-    ![Schema Wizard base class](assets/schema-wizard-base-class.png)
+    ![Schema Wizard base class](assets/schema-wizard-base-class.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Name and review]** step of the **[!UICONTROL Create schema]** wizard, enter a **[!UICONTROL Schema display name]**, for example `Luma Mobile Event Schema` and a [!UICONTROL Description], for example `Schema for Luma mobile app experience events`.
 
@@ -109,12 +109,12 @@ For learning purposes, you use prebuilt and custom field groups.
 
 1. Select **[!UICONTROL Finish]** to finish the wizard.
 
-    ![Schema name and review](assets/schema-wizard-name-and-review.png)
+    ![Schema name and review](assets/schema-wizard-name-and-review.png){zoomable="yes"}
 
 
 1. Select ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **Add** next to **[!UICONTROL Field groups]**.
 
-   ![Add field group](assets/add-field-group.png)
+   ![Add field group](assets/add-field-group.png){zoomable="yes"}
 
 1. Search for `Consumer Experience Event`.
 
@@ -124,7 +124,7 @@ For learning purposes, you use prebuilt and custom field groups.
 
 1. Select **[!UICONTROL Add field groups]**.
 
-    ![Selecting field group](assets/schema-select-field-groups.png)
+    ![Selecting field group](assets/schema-select-field-groups.png){zoomable="yes"}
 
     You are brought back to the main schema composition screen where you can see all the available fields.
 
@@ -149,11 +149,11 @@ You begin by creating a custom data type describing the two events:
 
 1. Select **[!UICONTROL Create data type]**.
 
-    ![Selecting data type menu](assets/schema-datatype-create.png)
+    ![Selecting data type menu](assets/schema-datatype-create.png){zoomable="yes"}
 
 1. Provide a **[!UICONTROL Display name]** and **[!UICONTROL Description]**, for example `App Information` and `Custom data type describing "Screen Views" & "App Actions"`
 
-    ![Providing name & description](assets/schema-datatype-name.png)
+    ![Providing name & description](assets/schema-datatype-name.png){zoomable="yes"}
 
     >[!TIP]
     >
@@ -167,7 +167,7 @@ You begin by creating a custom data type describing the two events:
 
 1. Select **[!UICONTROL Apply]**.
 
-    ![Adding new app action event](assets/schema-datatype-app-action.png)
+    ![Adding new app action event](assets/schema-datatype-app-action.png){zoomable="yes"}
 
 1. To measure how often an action has occurred, add a field by selecting the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button next to the **[!UICONTROL appInteraction]** object you created. 
 
@@ -177,7 +177,7 @@ You begin by creating a custom data type describing the two events:
 
 1. Select **[!UICONTROL Apply]**.
 
-    ![Adding action name field](assets/schema-datatype-action-name.png)
+    ![Adding action name field](assets/schema-datatype-action-name.png){zoomable="yes"}
 
 1. Add a field describing the type of interaction by selecting the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button next to the **[!UICONTROL appInteraction]** object. 
 
@@ -185,7 +185,7 @@ You begin by creating a custom data type describing the two events:
 
     This step is the equivalent of a dimension in Adobe Analytics. 
 
-    ![Selecting apply](assets/schema-datatype-apply.png)
+    ![Selecting apply](assets/schema-datatype-apply.png){zoomable="yes"}
 
 1. Scroll to the bottom of the right rail and select **[!UICONTROL Apply]**.
 
@@ -193,7 +193,7 @@ You begin by creating a custom data type describing the two events:
 
 1. Select **[!UICONTROL Save]**.
 
-    ![Final state of data type](assets/schema-datatype-final.png)
+    ![Final state of data type](assets/schema-datatype-final.png){zoomable="yes"}
 
 ## Add a custom field group
 
@@ -203,7 +203,7 @@ Now add a custom field group using your custom data type:
 
 1. Select ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to **[!UICONTROL Field groups]**.
 
-    ![Adding new field group](assets/schema-fieldgroup-add.png)
+    ![Adding new field group](assets/schema-fieldgroup-add.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Create new field group]**.
 
@@ -211,7 +211,7 @@ Now add a custom field group using your custom data type:
 
 1. Select **Add field groups**.
 
-    ![Providing name & description](assets/schema-fieldgroup-name.png)
+    ![Providing name & description](assets/schema-fieldgroup-name.png){zoomable="yes"}
 
 1. From the main composition screen, select **[!UICONTROL App Interactions**].
 
@@ -225,7 +225,7 @@ Now add a custom field group using your custom data type:
 
 1. Select **[!UICONTROL Save]**.
 
-    ![Selecting apply](assets/schema-fieldgroup-apply.png)
+    ![Selecting apply](assets/schema-fieldgroup-apply.png){zoomable="yes"}
 
 >[!NOTE]
 >

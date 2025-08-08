@@ -55,7 +55,7 @@ A connection in Customer Journey Analytics defines the datasets (and the data wi
 
    5. Select **[!UICONTROL Add datasets]** to select the datasets from Experience Platform you want to use in Customer Journey Analytics.
 
-      ![CJA Connections 1](assets/cja-connections-1.png)
+      ![CJA Connections 1](assets/cja-connections-1.png){zoomable="yes"}
 
    6. In the **[!UICONTROL Add datasets]** wizard, **[!UICONTROL Select datasets]** step, 
    
@@ -67,7 +67,7 @@ A connection in Customer Journey Analytics defines the datasets (and the data wi
 
       1. Select **[!UICONTROL Next]**.
 
-         ![CJA Connections 2](assets/cja-connections-2.png)
+         ![CJA Connections 2](assets/cja-connections-2.png){zoomable="yes"}
 
    7. In the **[!UICONTROL Add datasets]** wizard, **[!UICONTROL Datasets settings]** step, you need to define the details for each of the event datasets. 
       1. See the following tables for the proper setup:
@@ -80,11 +80,11 @@ A connection in Customer Journey Analytics defines the datasets (and the data wi
 
       1. Select **[!UICONTROL Add datasets]**.
 
-         ![CJA Connections 3](assets/cja-connections-3.png)
+         ![CJA Connections 3](assets/cja-connections-3.png){zoomable="yes"}
 
 1. Back in the **[!UICONTROL Connections]** > **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Connection]**, select **[!UICONTROL Save]** to save your connection.
 
-   ![CJA Connections 4](assets/cja-connections-4.png)
+   ![CJA Connections 4](assets/cja-connections-4.png){zoomable="yes"}
 
 You have now defined your connection and Customer Journey Analytics adds the data from the datasets to its own internal database. This data collection can take some time, depending on the amount of data. For your tutorial app, anticipate a couple of hours for the data to appear in Customer Journey Analytics.
 
@@ -98,7 +98,7 @@ In the **[!UICONTROL Connections]** > **[!UICONTROL Luma App - AEP Mobile SDK Tu
 1. Information on total records added, records skipped, and records deleted. Ensure you select **[!UICONTROL All datasets]** and select an appropriate time period to view details about your connection. You can use ![Calendar](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Calendar_18_N.svg) to open a dialog to select the time period.
 1. Information for individual datasets on records added, records skipped, records deleted, and more.
 
-   ![CJA Connections 6](assets/cja-connections-6.png)
+   ![CJA Connections 6](assets/cja-connections-6.png){zoomable="yes"}
 
 
 ## Create a data view
@@ -122,7 +122,7 @@ To create your data view:
    1. Enter a Name for your data view, for example: `Luma App - AEP Mobile SDK Tutorial Data view`.
    1. Select **[!UICONTROL Save and continue]**.
 
-      ![CJA Data view 1](assets/cja-dataview-1.png)
+      ![CJA Data view 1](assets/cja-dataview-1.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Components]** tab of the **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Data view]**, you can define the metrics and dimension you want to use when reporting on your mobile app. By default, a number of standard metrics and dimensions (jointly referred to a components) are already configured for your data view. But your data view requires more components. <br/>To add a schema field from your previously defined schema or out-of-the-box schemas (see [Create a schema](create-schema.md) lesson), as a component (dimension or metric):
 
@@ -130,23 +130,23 @@ To create your data view:
 
       - search for the component using the ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) ***[!UICONTROL Search schema fields]*** search field. For example, `productListAdd`, or
 
-         ![CJA Dataview 2a](assets/cja-dataview-2a.png)
+         ![CJA Dataview 2a](assets/cja-dataview-2a.png){zoomable="yes"}
 
       - traverse down to the schema field within ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg). <br/>For example, ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL Event datasets]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL commerce]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg) ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) **[!UICONTROL productListAdds]** ![Chevron](https://spectrum.adobe.com/static/icons/ui_18/ChevronSize100.svg)
 
-        ![CJA Dataview 2a](assets/cja-dataview-2b.png)
+        ![CJA Dataview 2a](assets/cja-dataview-2b.png){zoomable="yes"}
 
    1. Drag the specific schema field from the Schema fields pane and drop it on the **[!UICONTROL METRICS]** or **[!UICONTROL DIMENSIONS]** list in the [!UICONTROL Included components] pane.
 
-      ![CJA Dataview 2a](assets/cja-dataview-3.png)
+      ![CJA Dataview 2a](assets/cja-dataview-3.png){zoomable="yes"}
 
    1. You can configure the settings of a component. Select the component and configure settings in the right pane. <br/>For example, you can rename **[!UICONTROL commerce.productListAdds]** to `Product Add To Lists` using the **[!UICONTROL COMPONENT SETTINGS]** > **[!UICONTROL Component name]** field in the right pane.
 
-      ![CJA Dataview 3b](assets/cja-dataview-3b.png)
+      ![CJA Dataview 3b](assets/cja-dataview-3b.png){zoomable="yes"}
 
       Or configure **[!UICONTROL INCLUDE EXCLUDE VALUES]**.
 
-      ![CJA Data view component settings](assets/cja-dataview-component-settings.png)
+      ![CJA Data view component settings](assets/cja-dataview-component-settings.png){zoomable="yes"}
 
    1. Now that you understand how to add fields to your data view and configure the resulting component, use the tables below for a list of schema fields to add as metrics or dimensions. Use the **Schema Path** column value from the table below to search for or traverse to the specific schema field. Once metrics and dimensions are added, check the **Component Settings** column value in the table whether specific settings are required for a component, like its **[!UICONTROL Component name]** or defining **[!UICONTROL INCLUDE EXCLUDE VALUES]**. 
 
@@ -160,7 +160,7 @@ To create your data view:
       | Display | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | Integer | _experience.decisioning.<br/>propositionEventType.display | Component Name: `Display` |
       | Send | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | Integer | _experience.decisioning.<br/>propositionEventType.send | Component Name: `Send` |
       | Interact | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset | Integer | _experience.decisioning.<br/>propositionEventType.interact | Component Name: `Interact` | 
-      | Location Events | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset, ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | Event Type | Component Name: `Location Events`<br/><br/>![Include/exclude](assets/cja-dataview-include-exclude.png) |
+      | Location Events | AJO Push Tracking Experience Event Dataset, Luma Mobile App Event Dataset, ODE DecisionEvents - mobile-and-web-sdk-courses decisioning | String | Event Type | Component Name: `Location Events`<br/><br/>![Include/exclude](assets/cja-dataview-include-exclude.png){zoomable="yes"} |
       | Product Views | Luma Mobile App Event Dataset | Double | commerce.productViews.value | Component Name: `Product Views` | 
       | Product Add To Lists | Luma Mobile App Event Dataset | Double | commerce.productListAdds.value | Component Name: `Product Add To Lists` | 
       | Purchases | Luma Mobile App Event Dataset | Double | commerce.purchases.value | Component Name: `Purchases` | 
@@ -177,7 +177,7 @@ To create your data view:
 
       Your data view configuration for **[!UICONTROL METRICS]** should match below after you have added all schema fields from the table above as a metric component:
 
-      ![CJA Dataview 4](assets/cja-dataview-4.png)
+      ![CJA Dataview 4](assets/cja-dataview-4.png){zoomable="yes"}
 
       **DIMENSIONS**
 
@@ -195,7 +195,7 @@ To create your data view:
 
       Your data view configuration for **[!UICONTROL DIMENSIONS]** should match below after you have added all schema fields from the table above as a dimension component:
 
-      ![CJA Dataview 4](assets/cja-dataview-5.png)
+      ![CJA Dataview 4](assets/cja-dataview-5.png){zoomable="yes"}
 
    1. Select **[!UICONTROL Save and continue]**.
 
@@ -228,18 +228,18 @@ To create your project:
 
    1. Select **[!UICONTROL Create]**.
 
-      ![CJA Projects - 1](assets/cja-projects-1.png)
+      ![CJA Projects - 1](assets/cja-projects-1.png){zoomable="yes"}
 
 1. You are presented with the **[!UICONTROL New project]** interface. In this interface, you build your reports and visualizations.
 
 1. Select the name of the project (**[!UICONTROL New project]**) and provide your own name for the project. For example, `Luma App - AEP Mobile SDK Tutorial Project`.
-   ![CJA Project 2](assets/cja-projects-2.png)
+   ![CJA Project 2](assets/cja-projects-2.png){zoomable="yes"}
 
 1. To save the project, select **[!UICONTROL Project]** > **[!UICONTROL Save]**.
-   ![CJA Project 3](assets/cja-projects-3.png)
+   ![CJA Project 3](assets/cja-projects-3.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Save]** dialog, ignore all other fields and select **[!UICONTROL Save]**.
-   ![CJA Project 4](assets/cja-projects-4.png)
+   ![CJA Project 4](assets/cja-projects-4.png){zoomable="yes"}
 
 
 >[!IMPORTANT]
@@ -249,10 +249,10 @@ To create your project:
 You have now set up your project. A Freeform table is provided by default. Before you add components, ensure your Freeform panel is using the correct data view and time period.
 
 1. Select your data view from the dropdown list. For example, **[!UICONTROL Luma App - AEP Mobile SDK Tutorial Data view]**. If you cannot see your data view in the list, select **[!UICONTROL Show all]** at the bottom of the dropdown list.
-   ![CJA Project 5](assets/cja-projects-5.png)
+   ![CJA Project 5](assets/cja-projects-5.png){zoomable="yes"}
 
 1. To define the appropriate time period for the panel, select the default preset **[!UICONTROL This month]** enter a custom start and end date, or use a **[!UICONTROL Preset]** (like **[!UICONTROL Last 6 full months]**) and select **[!UICONTROL Apply]**.
-   ![CJA Project 6](assets/cja-projects-6.png)
+   ![CJA Project 6](assets/cja-projects-6.png){zoomable="yes"}
 
 
 ### App Usage
@@ -270,20 +270,20 @@ To report on the screens viewed in the app:
 1. Select **[!UICONTROL Show all]** below the **[!UICONTROL METRICS]** list.
 
 1. Drag and drop the **[!UICONTROL Screen Views]** component on [!UICONTROL _Drop a **metric** here (or any other component_)].
-   ![CJA Projects 7](assets/cja-projects-7.png)
+   ![CJA Projects 7](assets/cja-projects-7.png){zoomable="yes"}
    Your freeform table now shows screen views for each day for your selected time period. However, you want to show the number of screen views for each of the different screens used in the app.
 
 1. To show the **[!UICONTROL DIMENSIONS]** list of components, select ![Cross](https://spectrum.adobe.com/static/icons/ui_18/CrossSize100.svg) to remove the ![Event](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Event_18_N.svg) **[!UICONTROL Metrics]** filter from the components rail.
-   ![CJA Project 8](assets/cja-projects-8.png)
+   ![CJA Project 8](assets/cja-projects-8.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Show all]** below the **[!UICONTROL DIMENSIONS]** list.
 
 1. Drag and drop the **[!UICONTROL Screen Name]** component on the **[!UICONTROL Day]** header. The operation shows ![Switch](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Switch_18_N.svg) **[!UICONTROL Replace]** to indicate the replacement of the dimension.
-   ![CJA Projects 9](assets/cja-projects-9.png)
+   ![CJA Projects 9](assets/cja-projects-9.png){zoomable="yes"}
 
 Your first Freeform table in your report is complete.
 
-![CJA Projects 10](assets/cja-projects-10.png)
+![CJA Projects 10](assets/cja-projects-10.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -295,7 +295,7 @@ Your first Freeform table in your report is complete.
 Next, you'll build a Freeform table to report on how users interacted with the app.
 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) and from the popup ![Freeform table](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) to add a new Freeform table.
-   ![CJA Projects 11](assets/cja-projects-11.png)
+   ![CJA Projects 11](assets/cja-projects-11.png){zoomable="yes"}
 
 1. Rename **[!UICONTROL Freeform table (2)]** to `App Interactions`.
 
@@ -304,7 +304,7 @@ Next, you'll build a Freeform table to report on how users interacted with the a
 1. Drag and drop the **[!UICONTROL App Interaction Name]** dimension on the **[!UICONTROL Day]** header to replace this dimension.
 
 Your second report is now ready, showing app interactions. 
-![CJA Projects 12](assets/cja-projects-12.png)
+![CJA Projects 12](assets/cja-projects-12.png){zoomable="yes"}
 
 The information is limited mainly because you implemented `MobileSDK.shared.sendAppInteractionEvent(actionName: "<actionName>")` API calls only on the login screen. If you add this API call into more screens of your app, this report becomes more informative.
 
@@ -320,12 +320,12 @@ You now want to report, in a separate panel, on commerce events occurring in the
 #### Commerce Events
 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) outside of the current [!UICONTROL App Usage] panel, to create a new panel.
-   ![CJA Projects 13](assets/cja-projects-13.png)
+   ![CJA Projects 13](assets/cja-projects-13.png){zoomable="yes"}
 
 1. Ensure you select the appropriate time period.
 
 1. Select ![Freeform table](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Table_18_N.svg) **[!UICONTROL Freeform table]** to create a new Freeform table.
-   ![CJA Projects 14](assets/cja-projects-14.png)
+   ![CJA Projects 14](assets/cja-projects-14.png){zoomable="yes"}
 
 1. Rename **[!UICONTROL Panel]** to `Commerce`.
 
@@ -334,7 +334,7 @@ You now want to report, in a separate panel, on commerce events occurring in the
 1. Drag and drop **[!UICONTROL Product Views]** metric on to [!UICONTROL _Drop a **metric** here (or any other component_)].
 
 1. Drag and drop the **[!UICONTROL Product Add To Lists]** metric to the right of the **[!UICONTROL Product Views]** column to insert this column in the freeform table. Ensure **[!UICONTROL + Add]** (in blue) is shown when inserting the column.
-   ![CJA Projects 15](assets/cja-projects-15.png)
+   ![CJA Projects 15](assets/cja-projects-15.png){zoomable="yes"}
 
 1. Repeat the previous step to add the **[!UICONTROL Save For Laters]** metric and the **[!UICONTROL Purchases]** metric to the freeform table.
 
@@ -342,7 +342,7 @@ You now want to report, in a separate panel, on commerce events occurring in the
 
  Your Commerce Events report is complete.
 
-![CJA Projects 16](assets/cja-projects-16.png)
+![CJA Projects 16](assets/cja-projects-16.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -355,13 +355,13 @@ Next, you'll build a fallout visualization for the commerce funnel that shows ho
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) within the **[!UICONTROL Commerce]** panel and from the popup select ![Fallout](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ConversionFunnel_18_N.svg) (representing the Fallout visualization).
 
 1. Select **[!UICONTROL Product Views]** from the [!UICONTROL *Add touchpoint*] dropdown list.
-   ![CJA Projects 18](assets/cja-projects-18.png) 
+   ![CJA Projects 18](assets/cja-projects-18.png){zoomable="yes"} 
    Alternatively, you can drag and drop the **[!UICONTROL Products View]** dimension below the **[!UICONTROL All people]** dimension in the **[!UICONTROL Fallout]** visualization.
 
 1. Repeat the above step for **[!UICONTROL Product Add To Lists]** and **[!UICONTROL Purchases]** dimensions. 
  
 Your Fallout visualization report is complete.
-   ![CJA Projects 19](assets/cja-projects-19.png)
+   ![CJA Projects 19](assets/cja-projects-19.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -390,7 +390,7 @@ You want to report on how many offers and what offers are displayed to the users
 
 Your Monthly Overview for Offers is complete.
 
-![CJA Projects 20](assets/cja-projects-20.png)
+![CJA Projects 20](assets/cja-projects-20.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -412,11 +412,11 @@ You also want to have a report showing which offers were shown in what numbers t
 1. Right-click on the row, identifying one or more of the offer decisions you defined in the [Create and display offers with Decision Management](journey-optimizer-offers.md) lesson. For example, **[!UICONTROL Luma - Mobile App Decision]**.
 
 1. From the context menu, select **[!UICONTROL Breakdown]** > **[!UICONTROL Dimensions]** > **[!UICONTROL Offer Name]**. This selection will breakdown the Activity Name dimension into Offer Names.
-   ![CJA Projects 20b](assets/cja-projects-20b.png)
+   ![CJA Projects 20b](assets/cja-projects-20b.png){zoomable="yes"}
 
 Your Offers to People report is complete.
 
-![CJA Projects 21](assets/cja-projects-21.png)
+![CJA Projects 21](assets/cja-projects-21.png){zoomable="yes"}
 
 >[!NOTE]
 >
@@ -443,7 +443,7 @@ Finally, you want to report on store visits.
 
 1. To remove geolocation events with no cities associated to it select ![Filter](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Filter_18_N.svg), and from the **[!UICONTROL Search]** popup, turn off **[!UICONTROL Include "No value"]**, then select **[!UICONTROL Apply]**.
 
-   ![CJA Projects 22](assets/cja-projects-22.png)
+   ![CJA Projects 22](assets/cja-projects-22.png){zoomable="yes"}
 
    This action removes the **[!UICONTROL No value]** row from the report.
 
@@ -451,7 +451,7 @@ Finally, you want to report on store visits.
 
 Your Store Visits reportis complete. You now have a report showing users being in and out of the vicinity of your store locations (as you defined these locations in the [Places](places.md) lesson).
 
-![CJA Project 23](assets/cja-projects-23.png)
+![CJA Project 23](assets/cja-projects-23.png){zoomable="yes"}
 
 Note that if you really want to report on people physically visiting your store, you can use beacons. But hopefully, you have captured the concept of reporting on geolocation data.
 

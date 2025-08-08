@@ -30,7 +30,7 @@ In this lesson, you will:
 
 >[!NOTE]
 >
->In a mobile app implementation, the terms "extensions" and "SDKs" are nearly interchangeable.
+>In a mobile app implementation, the terms *extensions* and *SDKs* are nearly interchangeable.
 
 >[!BEGINTABS]
 
@@ -40,7 +40,7 @@ In this lesson, you will:
 
 Instead of using CocoaPods and a Pod file (as outlined in [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions)), you add individual packages using Xcode's native Swift Package Manager. The Xcode project already has all packages dependencies added for you. The Xcode **[!UICONTROL Package Dependencies]** screen should look like:
 
-![Xcode Package Dependencies](assets/xcode-package-dependencies.png){zoomable="yes"}
+![Xcode Package Dependencies](assets/xcode-package-dependencies.png){zoomable="yes"}{zoomable="yes"}
 
 
 In Xcode, you can use **[!UICONTROL File]** > **[!UICONTROL Add Packages...]** to add packages. The table below provides links to the URLs you would use to add packages. The links also direct you to more information about each specific package.  
@@ -146,9 +146,11 @@ Ensure you update `MobileCore.configureWith(appId: self.environmentFileId)` with
 
 You use the dependencies from the [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions) to add individual packages using Gradle's integration with Android Studio, The Android Studio project already has all packages dependencies added for you. 
 
-Select **[!UICONTROL build.gradle.kts (Module app)]** from the left pane and in the right pane, scroll until you see `dependencies`.
+1. Select ![FolderOutline](/help/assets/icons/FolderOutline.svg) as the tool. 
+1. Select **[!UICONTROL Android]** view. 
+1. Select **[!UICONTROL Gradle scripts]** > **[!UICONTROL build.gradle.kts (Module :app)]** from the left pane and in the right pane, scroll until you see `dependencies`.
 
-![Android Gradle Dependencies](assets/androidstudio-package-dependencies.png){zoomable="yes"}
+   ![Android Gradle Dependencies](assets/androidstudio-package-dependencies.png){zoomable="yes"}{zoomable="yes"}
 
 In Anroid Studio, you can use **[!UICONTROL File]** > **[!UICONTROL Project Structure...]** to add module dependencies. Select **[!UICONTROL Dependencies]** and then use **[!UICONTROL Modules]** ![Add](/help/assets/icons/Add.svg) to add modules. The table below provides links to the URLs you would use to add dependency modules. The links also direct you to more information about each specific module.  
 
@@ -189,7 +191,7 @@ Do the same for **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONT
 
 ## Update LumaApplication
 
-Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in Android Studio.
+In **[!UICONTROL Android]** view, navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in Android Studio.
 
 1. Replace `"YOUR_ENVIRONMENT_FILE_ID"` in `private var environmentFileId = "YOUR_ENVIRONMENT_ID_GOES_HERE"` with the Environment File ID value that you retrieved from tags in [Generate SDK install instructions](configure-tags.md#generate-sdk-install-instructions).
 

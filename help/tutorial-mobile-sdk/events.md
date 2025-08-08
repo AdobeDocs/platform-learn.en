@@ -53,7 +53,7 @@ For the standard field groups, the process looks like:
 
 * In your schema, identify the events that you are trying to collect. In this example, you are tracking commerce experience events, for example a product view (**[!UICONTROL productViews]**) event.
   
-  ![product view schema](assets/datacollection-prodView-schema.png)
+  ![product view schema](assets/datacollection-prodView-schema.png){zoomable="yes"}
 
 * To construct an object containing the experience event data in your app, you would use code like:
 
@@ -92,7 +92,7 @@ For the standard field groups, the process looks like:
 
 * In your schema, identify any additional data associated with the commerce product view event. In this example, include **[!UICONTROL productListItems]** which is a standard set of fields used with any commerce-related event:
       
-   ![product list items schema](assets/datacollection-prodListItems-schema.png)
+   ![product list items schema](assets/datacollection-prodListItems-schema.png){zoomable="yes"}
    * Notice that **[!UICONTROL productListItems]** is an array so multiple products could be provided.
 
 * To add this data, expand your `xdmData` object to include supplementary data:
@@ -327,7 +327,7 @@ To implement the sending of commerce-related experience events in a reusable way
 Imagine you want to track screen views and interactions in the app itself. Remember you have defined a custom field group for this type of events.
 
 * In your schema, identify the events you are trying to collect. 
-  ![app interaction schema](assets/datacollection-appInteraction-schema.png)
+  ![app interaction schema](assets/datacollection-appInteraction-schema.png){zoomable="yes"}
 
 * Begin constructing your object. 
 
@@ -635,7 +635,7 @@ Again, lets actually implement this code in your project.
 1. In the Assurance UI, look for the **[!UICONTROL hitReceived]** events from the **[!UICONTROL com.adobe.edge.konductor]** vendor.
 1. Select the event and review the XDM data in the **[!UICONTROL messages]** object. Alternatively, you can use ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy Raw Event]** and use a text or code editor of your preference to paste and inspect the event.
    
-   ![data collection validation](assets/datacollection-validation.png) 
+   ![data collection validation](assets/datacollection-validation.png){zoomable="yes"} 
 
 
 ## Next steps

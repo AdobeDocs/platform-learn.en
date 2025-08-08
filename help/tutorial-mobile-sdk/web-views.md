@@ -115,7 +115,7 @@ To execute the code:
 1. In the Assurance UI, look for the **[!UICONTROL Edge Identity Response URL Variables]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor. 
 1. Select the event and review the **[!UICONTROL urlvariable]** field in the **[!UICONTROL ACPExtensionEventData]** object, confirming the following parameters are present in the URL: `adobe_mc`, `mcmid`, and `mcorgid`.
 
-    ![webview validation](assets/webview-validation.png)
+    ![webview validation](assets/webview-validation.png){zoomable="yes"}
 
     A sample `urvariables` field can be seen below:
 

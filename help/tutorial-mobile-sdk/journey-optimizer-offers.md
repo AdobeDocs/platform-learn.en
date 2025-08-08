@@ -13,7 +13,7 @@ Learn how to show offers from Journey Optimizer Decision Management in your mobi
 
 Journey Optimizer Decision Management helps you to deliver the best offer and experience to your customers across all touchpoints  at the right time. Once designed, target your audience with personalized offers.
 
-![Architecture](assets/architecture-ajo.png)
+![Architecture](assets/architecture-ajo.png){zoomable="yes"}
 
 Decision management makes personalization easy with a central library of marketing offers and a decision engine that applies rules and constraints to rich, real-time profiles created by Adobe Experience Platform. As a result, it enables you to send your customers the right offer at the right time. See [About Decision Management](https://experienceleague.adobe.com/docs/journey-optimizer/using/offer-decisioning/get-started-decision/starting-offer-decisioning.html?lang=en) for more information. 
 
@@ -60,7 +60,7 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 1. In the **[!UICONTROL Datastreams]** > ![Folder](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Folder_18_N.svg) >  **[!UICONTROL Adobe Experience Platform]** screen, ensure **[!UICONTROL Offer Decisioning]**, **[!UICONTROL Edge Segmentation]**, and **[!UICONTROL Adobe Journey Optimizer]** are selected. If you will do the Target lesson, select **[!UICONTROL Personalization Destinations]**, too. See [Adobe Experience Platform settings](https://experienceleague.adobe.com/docs/experience-platform/datastreams/configure.html?lang=en#aep) for more information.
 1. To save your datastream configuration, select **[!UICONTROL Save]** .
 
-   ![AEP datastream configuration](assets/datastream-aep-configuration-offers.png)
+   ![AEP datastream configuration](assets/datastream-aep-configuration-offers.png){zoomable="yes"}
 
    
 
@@ -73,7 +73,7 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 1. Search for the **[!UICONTROL Adobe Journey Optimizer - Decisioning]** extension.
 1. Install the extension. The extension does not require additional configuration.
 
-    ![Add Decisioning extension](assets/tag-add-decisioning-extension.png)
+    ![Add Decisioning extension](assets/tag-add-decisioning-extension.png){zoomable="yes"}
 
 
 ### Update your schema
@@ -83,7 +83,7 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
 1. Select your schema to open it.
 1. In the schema editor, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** next to Field groups.
 1. In the **[!UICONTROL Add fields groups]** dialog, ![Search](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Search_18_N.svg) search for `proposition`, select **[!UICONTROL Experience Event - Proposition Interactions]** and select **[!UICONTROL Add field groups]**. This field group collects the experience event data relevant to offers: what offer is presented, as part of which collection, decision, and other parameters (see later in this lesson). But also what is happening with the offer? Is it displayed, interacted with, dismissed, and so forth.
-   ![Proposition](assets/schema-fieldgroup-proposition.png)
+   ![Proposition](assets/schema-fieldgroup-proposition.png){zoomable="yes"}
 1. Select **[!UICONTROL Save]** to save the changes to your schema.
 
 
@@ -95,7 +95,7 @@ To validate your setup in Assurance:
 1. Select **[!UICONTROL Configure]** in left rail and select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) next to **[!UICONTROL Validate Setup]** underneath **[!UICONTROL ADOBE JOURNEY OPTIMIZER DECISIONING]**.
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Validate Setup]** in the left rail. Both datastream setup and the SDK setup in your application are validated.
-   ![AJO Decisioning validation](assets/ajo-decisioning-validation.png)
+   ![AJO Decisioning validation](assets/ajo-decisioning-validation.png){zoomable="yes"}
 
 
 ## Create placement
@@ -115,7 +115,7 @@ To create the Mobile JSON placement:
    1. in the **[!UICONTROL Details]** section, enter `Mobile JSON` as the **[!UICONTROL Name]**, select **[!UICONTROL Mobile]** from **[!UICONTROL Channel type]** and **[!UICONTROL JSON]** from **[!UICONTROL Content type]**.
    1. Select **[!UICONTROL Save]** to save the placement.
 
-   ![Create placement](assets/ajo-create-placement.png)
+   ![Create placement](assets/ajo-create-placement.png){zoomable="yes"}
 
 
 
@@ -128,7 +128,7 @@ To create the Mobile JSON placement:
 1. In the **[!UICONTROL Details]** step of **[!UICONTROL Create new personalized offer]**:
    1. Enter a **[!UICONTROL Name]** for the offer, for example `Luma - Juno Jacket`, and enter a **[!UICONTROL Start date and time]** and an **[!UICONTROL End date and time]**. Outside of these dates, the offer won't be selected by the Decisioning engine.
    1. Select **[!UICONTROL Next]**.
-      ![Offers - Details](assets/ajo-offers-details.png)
+      ![Offers - Details](assets/ajo-offers-details.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Add representations]** step of **[!UICONTROL Create new personalized offer]**:
    1. Select ![Mobile](https://spectrum.adobe.com/static/icons/workflow_18/Smock_DevicePhone_18_N.svg) **[!UICONTROL Mobile]** from **[!UICONTROL Channel]** list, and select **[!UICONTROL Mobile JSON]** from the **[!UICONTROL Placement]** list.
@@ -146,15 +146,15 @@ To create the Mobile JSON placement:
             ```
 
       1. Select **[!UICONTROL Save]**.
-         ![Offers - Custom content](assets/ajo-offers-customcontent.png)
+         ![Offers - Custom content](assets/ajo-offers-customcontent.png){zoomable="yes"}
    1. Select **[!UICONTROL Next]**.
-      ![Offer Representations](assets/ajo-offers-representations.png) 
+      ![Offer Representations](assets/ajo-offers-representations.png){zoomable="yes"} 
 
 1. In the **[!UICONTROL Add constraints]** step of the **[!UICONTROL Create new personalized offer]**:
    1. Set **[!UICONTROL Priority]** to `10`.
    1. Toggle **[!UICONTROL Include capping]** off.
    1. Select **[!UICONTROL Next]**.
-      ![Offers - Constraints](assets/ajo-offers-constraints.png)
+      ![Offers - Constraints](assets/ajo-offers-constraints.png){zoomable="yes"}
 
 1. In the **[!UICONTROL Review]** step of **[!UICONTROL Create new personalized]** offer:
    1. Review the offer, then select **[!UICONTROL Finish]**.
@@ -204,7 +204,7 @@ To create the Mobile JSON placement:
    1. In the **[!UICONTROL Save offer]** dialog, select **[!UICONTROL Save and approve]**.
 
 You should now have the following list of offers:
-![Offers list](assets/ajo-offers-list.png)
+![Offers list](assets/ajo-offers-list.png){zoomable="yes"}
 
 
 ## Create a collection
@@ -218,7 +218,7 @@ To present an offer to your mobile app user, you must define an offer collection
 1. In **[!DNL Luma - Mobile App Collection]**, select the offers you want to include in the collection. For this tutorial, pick the five offers you created. You can easily filter the list using the search field, for example by typing **[!DNL Luma]**.
 1. Select **[!UICONTROL Save]**.
 
-    ![Offers - Collection](assets/ajo-collection-offersselected.png)
+    ![Offers - Collection](assets/ajo-collection-offersselected.png){zoomable="yes"}
 
 
 ## Create a decision
@@ -247,10 +247,10 @@ See [Key steps to create and manage offers](https://experienceleague.adobe.com/d
    1. In the **[!UICONTROL Evaluation Criteria]** tile, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]**.
       1. In the **[!UICONTROL Add Offer Collection]** dialog, select your offer collection. For example, **[!DNL Luma - Mobile App Collection]**.
       1. Select **[!UICONTROL Add]**.
-         ![Decision - Select collection](assets/ajo-decision-selectcollection.png) 
+         ![Decision - Select collection](assets/ajo-decision-selectcollection.png){zoomable="yes"} 
    1. Ensure that **[!UICONTROL None]** is selected for **[!UICONTROL Eligibility]**, and **[!UICONTROL Offer priority]** is selected as the **[!UICONTROL Ranking method]**. 
    1. Select **[!UICONTROL Next]**.
-      ![Decision scopes](assets/ajo-decision-scopes.png). 
+      ![Decision scopes](assets/ajo-decision-scopes.png){zoomable="yes"}. 
 1. In the **[!UICONTROL Add fallback offer]** step of **[!UICONTROL Create a new offer decision]**:
    1. Select your fallback offer, for example the **[!DNL Luma - Fallback offer]**.
    1. Select **[!UICONTROL Next]**.
@@ -266,7 +266,7 @@ Your offer decision, consisting of a set of offers, is now ready for use. To use
 1. Select your decision, for example **[!DNL Luma - Mobile App Decision]**.
 1. In the **[!UICONTROL Decision scopes]** tile, select ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy]**.
 1. From the contextual menu, select **[!UICONTROL Decision scope]**.
-   ![Copy decision scope](assets/ajo-copy-decisionscope.png) 
+   ![Copy decision scope](assets/ajo-copy-decisionscope.png){zoomable="yes"} 
 1. Use any text editor to paste the decision scope for later use. The decision scope has the following JSON format.
 
     ```json
@@ -517,7 +517,7 @@ To validate the offers implementation in Assurance:
 1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Review & Simulate]** in the left rail. Both datastream setup is validated and the SDK setup in your application.
 1. Select **[!UICONTROL Requests]** at the top bar. You see your **[!UICONTROL Offers]** requests.
-   ![AJO Decisioning validation](assets/assurance-decisioning-requests.png)
+   ![AJO Decisioning validation](assets/assurance-decisioning-requests.png){zoomable="yes"}
 
 1. You can explore **[!UICONTROL Simulate]** and **[!UICONTROL Event List]** tabs for further functionality, checking your setup of Journey Optimizer Decision Management.
 

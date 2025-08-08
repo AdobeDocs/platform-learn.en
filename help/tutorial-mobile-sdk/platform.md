@@ -14,7 +14,7 @@ This optional lesson is relevant to all customers of Real-Time Customer Data Pla
 
 The [event](events.md), [lifecycle](lifecycle-data.md), and [identity](identity.md) data which you collected and sent to Platform Edge Network in earlier lessons is forwarded to the services configured in your datastream, including Adobe Experience Platform.
 
-![Architecture](assets/architecture-aep.png)
+![Architecture](assets/architecture-aep.png){zoomable="yes"}
 
 
 ## Prerequisites
@@ -47,18 +47,18 @@ All data that is successfully ingested into Adobe Experience Platform is persist
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Create dataset]**.
 
 1. Select **[!UICONTROL Create dataset from schema]**.
-![dataset home](assets/dataset-create.png)
+![dataset home](assets/dataset-create.png){zoomable="yes"}
 
 1. Search for your schema. for example using `Luma Mobile` in the search field.
 1. Select your schema, for example **[!DNL Luma Mobile App Event Schema]**.
 
 1. Select **[!UICONTROL Next]**.
-   ![dataset configure](assets/dataset-configure.png)
+   ![dataset configure](assets/dataset-configure.png){zoomable="yes"}
 
 1. Provide a **[!UICONTROL Name]**, for example `Luma Mobile App Events Dataset` and a **[!UICONTROL Description]**.
 
 1. Select **[!UICONTROL Finish]**.
-   ![dataset finish](assets/dataset-finish.png)
+   ![dataset finish](assets/dataset-finish.png){zoomable="yes"}
 
 
 ## Add Adobe Experience Platform datastream service
@@ -81,10 +81,10 @@ To send your XDM data from the Edge Network to Adobe Experience Platform, add th
 
 1. Select **[!UICONTROL Save]**.
 
-   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png)
+   ![Add Adobe Experience Platform as a datastream service](assets/datastream-service-aep.png){zoomable="yes"}
 1. The final configuration should look something like this.
    
-   ![datastream settings](assets/datastream-settings.png)
+   ![datastream settings](assets/datastream-settings.png){zoomable="yes"}
 
 
 ## Validate data in the dataset
@@ -95,10 +95,10 @@ Open the app and navigate to screens where you are tracking events. You can also
 
 Open your dataset in the Platform interface. You should see the data arriving in batches to the dataset. The data typically arrives in microbatches every 15 minutes, so you might not see your data immediately.
 
-![validate data landing Platform dataset batches](assets/platform-dataset-batches.png)
+![validate data landing Platform dataset batches](assets/platform-dataset-batches.png){zoomable="yes"}
 
 You should also be able to see example records and fields using the **[!UICONTROL Preview dataset]** feature:
-![validate lifecycle sent to Platform dataset](assets/lifecycle-platform-dataset.png)
+![validate lifecycle sent to Platform dataset](assets/lifecycle-platform-dataset.png){zoomable="yes"}
 
 A more robust tool for validating data is Platform's [query service](https://experienceleague.adobe.com/docs/platform-learn/tutorials/queries/explore-data.html).
 
@@ -113,14 +113,14 @@ Experience Platform's Real-Time Customer Profile allows you to build a holistic 
 1. Select **[!UICONTROL Data for this schema will contain a primary identity in the identityMap field.]** in the  dialog.
 1. **[!UICONTROL Save]** the schema.
 
-    ![enable the schema for profile](assets/platform-profile-schema.png)
+    ![enable the schema for profile](assets/platform-profile-schema.png){zoomable="yes"}
 
 ### Enable the dataset
 
 1. Open your dataset, for example **[!DNL Luma Mobile App Event Dataset]**.
 1. Enable **[!UICONTROL Profile]**.
 
-    ![enable the dataset for profile](assets/platform-profile-dataset.png)
+    ![enable the dataset for profile](assets/platform-profile-dataset.png){zoomable="yes"}
 
 ### Validate data in Profile
 
@@ -128,7 +128,7 @@ Open the app and navigate to screens where you are tracking events, for example:
 
 Use Assurance to find one of the identities passed in the identityMap (Email, lumaCrmId, or ECID), for example the CRM Id.
 
-![grab an identity value](assets/platform-identity.png)
+![grab an identity value](assets/platform-identity.png){zoomable="yes"}
 
 In the Platform interface, 
 
@@ -136,14 +136,14 @@ In the Platform interface,
 1. Specify the identity details you just grabbed, for example `Luma CRM ID` for **[!UICONTROL Identity namespace]** and the value you copied for **[!UICONTROL Identity value]**. Then select **[!UICONTROL View]**.
 1. To view details, select the profile.
 
-![look up an identity value](assets/platform-profile-lookup.png)
+![look up an identity value](assets/platform-profile-lookup.png){zoomable="yes"}
 
 On the **[!UICONTROL Detail]** screen, you can see basic info about the user, including the **[!UICONTROL **linked identities**]**:
-![profile details](assets/platform-profile-details.png)
+![profile details](assets/platform-profile-details.png){zoomable="yes"}
 
 On the **[!UICONTROL Events]**, you can see the events collected from your mobile app implementation for this user:
 
-![profile events](assets/platform-profile-events.png)
+![profile events](assets/platform-profile-events.png){zoomable="yes"}
 
 
 From the profile detail screen:
@@ -153,7 +153,7 @@ From the profile detail screen:
    
    This visualization shows you all of the identities that are linked together in a profile and their origin. Here is an example of an identity graph constructed of data collected from completing both this Mobile SDK tutorial (Data Source 2) and the [Web SDK tutorial](https://experienceleague.adobe.com/docs/platform-learn/implement-web-sdk/overview.html) (Data Source 1):
 
-   ![grab an identity value](assets/platform-profile-identitygraph.png)
+   ![grab an identity value](assets/platform-profile-identitygraph.png){zoomable="yes"}
 
 
 ## Next steps

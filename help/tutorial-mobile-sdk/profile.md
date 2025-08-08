@@ -200,7 +200,7 @@ See the [API reference](https://developer.adobe.com/client-sdks/documentation/pr
      
 
 1. In the Assurance UI, you should see a **[!UICONTROL UserProfileUpdate]** and **[!UICONTROL getUserAttributes]** events with the updated `profileMap` value.
-   ![validate profile](assets/profile-validate.png)
+   ![validate profile](assets/profile-validate.png){zoomable="yes"}
 
 >[!SUCCESS]
 >

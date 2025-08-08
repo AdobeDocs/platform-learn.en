@@ -11,7 +11,7 @@ Learn how to implement Adobe Experience Cloud applications in your mobile app us
 
 Experience Platform Mobile SDK is a client-side SDK that allows customers of Adobe Experience Cloud to interact with both Adobe applications and third-party services through the Adobe Experience Platform Edge Network. See the [Adobe Experience Platform Mobile SDK documentation](https://developer.adobe.com/client-sdks/home/) for more detailed information.
 
-![Architecture](assets/architecture.png)
+![Architecture](assets/architecture.png){zoomable="yes"}
 
 
 This tutorial guides you through the implementation of the Platform Mobile SDK in a sample retail app called Luma. The [Luma app](https://github.com/Adobe-Marketing-Cloud/Luma-iOS-Mobile-App) has functionality that lets you build a realistic implementation. After completing this tutorial, you should be ready to start implementing all of your marketing solutions through Experience Platform Mobile SDK in your own mobile apps.
@@ -105,7 +105,7 @@ Two versions of the sample app are available for download. Both versions can be 
 1. [Start](https://github.com/adobe/Luma-Android){target="_blank"}: a project without code or with placehoder code for most of the Experience Platform Mobile SDK code you need use to complete the hands-on exercises in this tutorial.
 1. [Finish](https://github.com/adobe/Luma-Android){target="_blank"}: a version with the full implementation for reference.
 
-You use Android as the platform, [!DNL Kotlin] as the programming language, [!DNL JetPack] as the UI framework and [!DNL Android Studio] as the integrated development environment (IDE). However, many of the implementation concepts explained are similar for other development platforms. Many have already successfully completed this tutorial with little to no previous Android/JetPack/Kotlin experience. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
+You use Android as the platform, [!DNL Kotlin]+[!DNL Java] as the programming language, [!DNL JetPack] as the UI framework and [!DNL Android Studio] as the integrated development environment (IDE). However, many of the implementation concepts explained are similar for other development platforms. Many have already successfully completed this tutorial with little to no previous Android / Kotlin+Java / JetPack Compose experience. You do not need to be an expert to complete the lessons, but you get more out of the lessons if you can comfortably read and understand code.
 
 >[!ENDTABS]
 

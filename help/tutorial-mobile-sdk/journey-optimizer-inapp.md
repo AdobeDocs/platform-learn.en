@@ -13,7 +13,7 @@ Learn how to create in-app messages for mobile apps with Experience Platform Mob
 
 Journey Optimizer allows you to create campaigns to send in-app messages to targeted audiences. Campaigns in Journey Optimizer are used to deliver one-time content to a specific audience using various channels. With campaigns, actions are performed simultaneously, either immediately, or based on a specified schedule. When using journeys (see the [Journey Optimizer push notifications](journey-optimizer-push.md) lesson), actions are executed in sequence. 
 
-![Architecture](assets/architecture-ajo.png)
+![Architecture](assets/architecture-ajo.png){zoomable="yes"}
 
 Before you send in-app messages with Journey Optimizer, you must ensure that the proper configurations and integrations are in place. To understand the in-app messaging data flow in Journey Optimizer, refer to [the documentation](https://experienceleague.adobe.com/docs/journey-optimizer/using/in-app/inapp-configuration.html?lang=en).
 
@@ -75,7 +75,7 @@ To begin, you must create a channel configuration to be able to send in App mess
 
 1. Enter the App ids for the platform you want to support.
 
-   ![Create a channel configuration](assets/in-app-messaging-config.png)
+   ![Create a channel configuration](assets/in-app-messaging-config.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Submit]** to save your changes.
 
@@ -91,7 +91,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 1. To save your datastream configuration, select **[!UICONTROL Save]**.
 
 
-   ![AEP datastream configuration](assets/datastream-ajo-inapp-configuration.png)
+   ![AEP datastream configuration](assets/datastream-ajo-inapp-configuration.png){zoomable="yes"}
 
 
 ### Install Journey Optimizer tags extension
@@ -175,14 +175,14 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. In the Assurance UI, select **[!UICONTROL Configure]**.
-    ![configure click](assets/push-validate-config.png)
+    ![configure click](assets/push-validate-config.png){zoomable="yes"}
 1. Select the ![Plus](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) button next to **[!UICONTROL In-App Messaging]**.
 1. Select **[!UICONTROL Save]**.
-    ![save](assets/assurance-in-app-config.png)
+    ![save](assets/assurance-in-app-config.png){zoomable="yes"}
 1. Select **[!UICONTROL In-App Messaging]** from the left navigation.
 1. Select the **[!UICONTROL Validation]** tab. Confirm that you aren't getting any errors.
    
-   ![In-App Validation](assets/assurance-in-app-validate.png)
+   ![In-App Validation](assets/assurance-in-app-validate.png){zoomable="yes"}
 
 
 ## Create your own in-app message
@@ -224,7 +224,7 @@ The SDK event hub publishes and receives event data from registered extensions t
          1. Select **[!UICONTROL Context data]** from the drop-down menu, and enter `showMessage`.
          1. Select **[!UICONTROL equals]** from the drop-down menu, and enter `true`.
             
-            ![Edit triggers](assets/edit-triggers.png)
+            ![Edit triggers](assets/edit-triggers.png){zoomable="yes"}
          1. Select **[!UICONTROL Done]**.
 
    1. Back in the main campaign definition screen, select the **[!UICONTROL Content]** tab.
@@ -235,19 +235,19 @@ The SDK event hub publishes and receives event data from registered extensions t
          1. Enter `https://luma.enablementadobe.com/content/dam/luma/en/logos/Luma_Logo.png` for the **[!UICONTROL Media URL]**.
          1. Enter a **[!UICONTROL Header]**, for example `Welcome to this Luma In-App Message` and enter a **[!UICONTROL Body]**, for example `Triggered by pushing that button in the app...`.
 
-         ![In-app message content](assets/in-app-message-content.png)
+         ![In-app message content](assets/in-app-message-content.png){zoomable="yes"}
 
       1. Select **[!UICONTROL Settings]** tab.
          1. Select **[!UICONTROL Customize size]** in **[!UICONTROL Message]**.
          1. Disable **[!UICONTROL Fit to content]**.
          1. Set **[!UICONTROL Height]** to **[!UICONTROL 75%]**.
 
-         ![In-app message settings](assets/in-app-message-settings.png)
+         ![In-app message settings](assets/in-app-message-settings.png){zoomable="yes"}
 
 1. Select **[!UICONTROL Review to activate]**. To optionally edit any of the configurations for **[!UICONTROL Content]**, **[!UICONTROL Properties]**, **[!UICONTROL Actions]**, or more,  select ![Edit](/help/assets/icons/Edit.svg).
 1. In the **[!UICONTROL Review to activate (*campaign name*)]** screen, select **[!UICONTROL Activate]**.
 1. After a while, you see your **_campaign name_** with status **[!UICONTROL Live]** in the **[!UICONTROL Campaigns]** list.
-   ![Campaign list](assets/ajo-campaign-list.png)
+   ![Campaign list](assets/ajo-campaign-list.png){zoomable="yes"}
 
 
 ## Trigger the in-app message
@@ -337,7 +337,7 @@ You can validate your in-app messages in the Assurance UI.
 1. Select **[!UICONTROL Event List]**.
 1. Select a **[!UICONTROL Display message]** entry.
 1. Inspect the raw event, especially the `html`, which contains the complete layout and content of the in-app message.
-    ![Assurance In-App Message](assets/assurance-in-app-display-message.png)
+    ![Assurance In-App Message](assets/assurance-in-app-display-message.png){zoomable="yes"}
    
 
 ## Next steps
