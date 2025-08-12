@@ -13,7 +13,7 @@ hide: true
 
 In this lesson, we configure a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition. This allows you to query data directly from supported warehouses without replication. Additionally, we create Schemas and Data Models based on the Data Warehouse tables. 
 
-For this lab, we connect to a Snowflake account. Federated Audience Composition supports a growing list of cloud warehouse connections. See the updated list of integrations [here](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
+For this lab, we connect to a Snowflake account. Federated Audience Composition supports a growing list of cloud warehouse connections. See the [updated list of integrations](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
 
 ## Steps
@@ -30,6 +30,7 @@ For this lab, we connect to a Snowflake account. Federated Audience Composition 
    ![snowflake-connection-setup-step3](assets/snowflake-connection-setup-step3.png)
 
 ## Create a Schema
+
 To create schemas in Federated Audience Composition, follow these steps:
 
 1. In the **FEDERATED DATA** section, click **Models**.
@@ -50,6 +51,7 @@ After selecting your tables, review the columns of each table and select your pr
    ![create-schema-step2](assets/create-schema-step2.png)
 
 ## Preview Data in a Schema
+
 To preview the data in the table represented by your schema, browse to the **Data** tab.
 
 Click on the **Calculate** link to preview the total number of records.
@@ -57,6 +59,7 @@ Click on the **Calculate** link to preview the total number of records.
   ![preview-data-in-schema](assets/preview-data-in-schema.png)
 
 ## Create a Data Model
+
 Data models allow you to create a link between tables. The link can be created between tables in the same database, such as tables in Snowflake, or between tables in different databases, such as a link between a table in Snowflake and a table in Amazon Redshift.
 
 To create a data model in Federated Audience Composition, follow these steps:
@@ -68,6 +71,7 @@ To create a data model in Federated Audience Composition, follow these steps:
 5. Create a link between these tables by clicking on **Create links**.
 
 When creating a link, choose the applicable cardinality:
+
 - **1-N**: One occurrence of the source table can have several corresponding occurrences of the target table, but one occurrence of the target table can have at most one corresponding occurrence of the source table.
 - **N-1**: One occurrence of the target table can have several corresponding occurrences of the source table, but one occurrence of the source table can have at most one corresponding occurrence of the target table.
 - **1-1**: One occurrence of the source table can have at most one corresponding occurrence of the target table.

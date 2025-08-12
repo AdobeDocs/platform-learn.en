@@ -19,7 +19,7 @@ In this lesson, you learn how a federated audience can be used in journeys withi
 
 1. Navigate to the **Journeys** portal and click the **Create Journey** button.
 
-![create-a-journey](assets/create-journey.png)
+    ![create-a-journey](assets/create-journey.png)
 
 2. Update the Journey Properties with a new name: `SecurFinancial - Home Loan Offer - [your lab user ID]`.
 
@@ -63,11 +63,11 @@ In this lesson, you learn how a federated audience can be used in journeys withi
 
 11. Now that the first name personalization has been added, add `Hi, ` in front of the personalization variable. Then click **Save**.
 
- ![journey-email-save](assets/journey-email-save.png)
+    ![journey-email-save](assets/journey-email-save.png)
 
 12. Click on the **Back** button twice to return to the journey canvas. Then in the **Action: Email** menu to the right, click **Save**.
 
- ![save-final-journey](assets/save-final-journey.png)    
+    ![save-final-journey](assets/save-final-journey.png)    
 
 Congratulations! You have created a journey in AJO using a federated audience and federated enrichment attributes. 
 
