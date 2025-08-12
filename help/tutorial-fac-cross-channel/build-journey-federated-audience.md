@@ -21,13 +21,13 @@ In this lesson, you learn how a federated audience can be used in journeys withi
 
     ![create-a-journey](assets/create-journey.png)
 
-2. Update the Journey Properties with a new name: `SecurFinancial - Home Loan Offer - [your lab user ID]`.
+2. Update the Journey Properties with a new name: **`SecurFinancial - Home Loan Offer`**.
 
 3. Click on **Orchestration**, then drag and drop the **Read audience** tile to the canvas.
 
 4. Click on the **pencil icon** next to the Audience box on the right side of the screen.
 
-5. In the search bar, search for `SecureFinancial Customers - No Loans, Good Credit`, then click **Save**.
+5. In the search bar, search for **`SecureFinancial Customers - No Loans, Good Credit`**, then click **Save**.
 
     ![create-a-journey](assets/select-audience.png)
 
@@ -41,7 +41,7 @@ In this lesson, you learn how a federated audience can be used in journeys withi
 
 2. On the right side menu, click on **Email configuration** and select **EmailMarketing**. Then click on **Edit content**.
 
-3. In the subject line, add: `Learn more about SecurFinancial Home Loan`. Then click on **Edit email body**.
+3. In the subject line, add: **`Learn more about SecurFinancial Home Loan`**. Then click on **Edit email body**.
 
 4. Click the **Content template** button in the top right corner. Find and select the `SecureFinancial Template`, then click **Confirm**.
 
@@ -53,7 +53,7 @@ In this lesson, you learn how a federated audience can be used in journeys withi
 
 6. You will now be in the Email Designer. Hover over the `{profile.person.name.firstName}` macro and click the **personalization avatar**.
 
-7. In the personalization window, drill down to the following folder path: `[sandbox] > audienceEnrichment > CustomerAudienceUpload`
+7. In the personalization window, drill down to the following folder path: **`[sandbox] > audienceEnrichment > CustomerAudienceUpload`**
 
 8. Click into the **read audience** folder. The enrichment attributes from your federated audience can be found here.
 

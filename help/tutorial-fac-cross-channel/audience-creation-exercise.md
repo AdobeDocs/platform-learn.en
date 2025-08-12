@@ -20,39 +20,41 @@ This exercise guides you through creating an audience from your Data Warehouse u
 
    ![create-composition](assets/create-composition.png)
    
-3. Label your composition as `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Click **Create**.
+3. Label your composition as `SecurFinancial Customers - No Loans, Good Credit`. Click **Create**.
 
 4. Click the **+** button in the canvas and select **Build audience**. The right-hand rail should appear.
 
 5. Click **Select a schema** and select the **FSI_CRM** schema, then click **Confirm**.
 
 6. Click **Continue**. In the query builder window, click the **+** button and then **Custom Condition**. Create the following conditions:
-   - `CURRENTPRODUCTS does not contain loan`
-   - `AND`
-   - `CREDITSCORE greater than or equal to 650`
-   - We use marketing preference data to segment customers who have opted for email as their preferred channel of communication:
-   - `AND`
-   - `CONSENTSMARKETINGPREFERRED equal to email`
 
+   `CURRENTPRODUCTS does not contain loan`
+   `AND`
+   `CREDITSCORE greater than or equal to 650`
+   `AND`
+   `CONSENTSMARKETINGPREFERRED equal to email`
+
+   *The last condition ensures marketing preference data is used to segment customers who have opted for email as their preferred channel of communication*.
+   
    **Note:** The value field is case-sensitive.
 
    Your query should now look as follows:
 
    ![query-builder](assets/query-builder.png)
 
-7. Click the next **+** button, then click **Save audience**.
-
-   Label this step as `SecurFinancial Customers - No Loans, Good Credit + [your lab user ID]`. Use the same value as the audience label.
+7. Click the next **+** button, then click **Save audience**. Label this step as `SecurFinancial Customers - No Loans, Good Credit`. Use the same value as the audience label.
 
 8. Add the following audience mappings:
+
    - **Source Audience Field:** EMAIL
    - **Source Audience Field:** CURRENTPRODUCTS
    - **Source Audience Field:** FIRST NAME
 
 9. Select the primary identity and namespace to use for profiles:
+
    - **Primary identity field:** Email
    - **Identity namespace:** Email
-
+   
 10. Click **Save** and then click **Start** to run the query of the composition you just built.
 
 **Note:** We used product and credit information to build our audience which didn't move sensitive data, like credit score, to downstream platforms for activation.
