@@ -31,9 +31,8 @@ In this exercise, you'll learn how to leverage audience attributes in your data 
 
 5. In the **Scheduling** section, leave all default settings and click **Next**.
 
-6. In the **Mapping** step, ensure the following is included and selected as the **Deduplication Key**. Then click **Next**:
-   - `xdm: personalEmail.address`
-
+6. In the **Mapping** step, ensure `xdm: personalEmail.address` is included and selected as the **Deduplication Key**. Then click **Next**:
+   
    ![deduplication-key](assets/deduplication-key.png)
 
 7. In the following mapping step, you can select enrichment attributes based on audience field mappings in the federated audience composition. Click the **pencil (edit)** icon to view the pre-selected attributes.
