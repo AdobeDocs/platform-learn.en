@@ -7,8 +7,8 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
+exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
 ---
-
 # Map Federated Audience to S3 to Leverage Audience Attributes for Enrichment
 
 In this exercise, you'll learn how to leverage audience attributes in your data warehouse to enrich your audience's experience in downstream activation workflows using RTCDP destinations. For SecurFinancial, these federated attributes can be used to enhance the customer audience's personalization experience offline. In this example, we will map the federated audience to a pre-configured Amazon S3 destination.

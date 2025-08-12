@@ -7,8 +7,8 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 hide: true
+exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
 ---
-
 # Build a Journey with Federated Audience Data
 
 In this lesson, you learn how a federated audience can be used in journeys within Adobe Journey Optimizer (AJO). This includes using queried attributes from Federated Audience Composition to personalize messaging. To continue with the SecurFinancial customer story and address the customer retargeting and personalization use case, we orchestrate a journey for prequalified customers. The goal is to send a personalized email based on attributes federated from SecurFinancial's Data Warehouse.
