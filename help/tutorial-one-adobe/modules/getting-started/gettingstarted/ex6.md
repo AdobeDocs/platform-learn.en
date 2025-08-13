@@ -39,7 +39,7 @@ Your screen should look like this.
 
 ![Adobe I/O New Integration](./images/api1.png)
 
-Select **Creative Cloud** and choose **Firefly - Firefly Services**, then select **Next**.
+Select **Adobe Firefly Services** and choose **Firefly - Firefly Services**, then select **Next**.
 
 ![Adobe I/O New Integration](./images/api3.png)
 
@@ -65,7 +65,7 @@ Select **+ Add to Project** and then select **API**.
 
 ![Azure Storage](./images/ps2.png)
 
-Select **Creative Cloud** and choose **Photoshop - Firefly Services**. Select **Next**.
+Select **Adobe Firefly Services** and choose **Photoshop - Firefly Services**. Select **Next**.
 
 ![Azure Storage](./images/ps3.png)
 
