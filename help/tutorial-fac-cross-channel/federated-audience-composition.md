@@ -6,8 +6,8 @@ description: In this visual exercise, an Experience Platform audience is enriche
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
+exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
 ---
-
 # Enrich Experience Platform Audiences with Federated Data
 
 Federated Audience Composition enables you to enrich existing audiences in Adobe Experience Platform (AEP) by utilizing composed audience data that has been federated from the enterprise data warehouse. This data will not be persisted in Adobe Experience Platform customer profiles.
