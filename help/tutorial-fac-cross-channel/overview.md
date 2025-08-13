@@ -13,18 +13,18 @@ last-substantial-update: 2025-08-11
 
 Federated Audience Composition is a powerful feature available for Adobe Real-Time Customer Data Platform (Real-Time CDP) and Adobe Journey Optimizer environments. It enables data architects and data engineers to build and enrich audiences directly from [supported](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} third-party data warehouses without replicating data into Adobe Experience Platform. This tutorial provides hands-on guidance for technical users to connect enterprise data warehouses, create and enrich audiences, and activate them for personalized marketing experiences.
 
-## Learning Objectives
+## Visual Guide
 
-By completing this tutorial, you will:
+This visual guide shows you the steps for each of the activities taken to support various aspects of the business scenario. The goal is to provide you with activities that you can leverage in your environment, including:
 
-- Understand how to connect Adobe Experience Platform to an enterprise data warehouse.
-- Learn to create and manage audiences using Federated Audience Composition.
-- Explore how to enrich existing audiences with warehouse data.
+- Connect Adobe Experience Platform to an enterprise data warehouse.
+- Create and manage audiences using Federated Audience Composition.
 - Map federated audiences to external destinations like Amazon S3.
+- Enrich existing audiences with federated data.
+- Create audiences to drive "in-the-moment" personalization.
 - Build customer journeys using federated audience data.
-- Validate data and processes through hands-on exercises and demos.
 
-This tutorial is designed for data architects and data engineers working with Real-Time CDP or Journey Optimizer. It assumes familiarity with Adobe Experience Platform and basic data warehouse concepts.
+This guide is designed for data architects and data engineers working with Real-Time CDP or Journey Optimizer. It assumes familiarity with Adobe Experience Platform and basic data warehouse concepts.
 
 ## Business Context
 
@@ -39,25 +39,16 @@ SecurFinancial is a leading financial services firm. It leverages its wealth of 
 
 SecurFinancial would like to launch an email campaign to retarget its customers who are prequalified for a loan based on good credit and do not have an active loan in their SecurFinancial portfolio. While they are ingesting online behavioral data in real time, they face challenges in identifying customer prequalification, as they are restricted from ingesting credit information into AEP. To qualify prequalified customers without moving restricted data, they will use Federated Audience Composition to enrich their AEP behavioral audience.
 
-
-
 ## Prerequisites
 
-To follow this tutorial, ensure you have:
+To perform similar activities in your envrionment, ensure you have:
 
 - Access to an Adobe Experience Platform account provisioned with Real-Time CDP or Journey Optimizer.
 - System Administrator permissions or the ability to have permissions configured.
 - Familiarity with Adobe Experience Platform concepts, such as schemas, datasets, and audiences (recommended: complete the [Introduction to Adobe Experience Platform playlist](https://experienceleague.adobe.com/en/playlists/experience-platform-introduction?lang=en){target="_blank"} on Experience League).
 - Access to a supported enterprise data warehouse (e.g., Amazon Redshift, Azure Synapse Analytics, Snowflake, or Google BigQuery).
 - Basic knowledge of SQL for querying data warehouses.
-
-## Using This Tutorial
-
-This tutorial is structured for technical users. Lessons build on each other, so complete them in order unless otherwise noted. 
-
-## Technical Notes
-
 - **Sandbox Environments**: Create a sandbox in your organization's Real-Time CDP instance to safely experiment without affecting production data.
 - **Data Warehouse Connection**: This tutorial uses a Snowflake connection, but you can use any [supported cloud warehouse](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites).
 
-Start with the [Data Warehouse Connection](data-warehouse-connection.md) lesson to begin configuring your environment.
+Let's start with the [Data Warehouse Connection](data-warehouse-connection.md).

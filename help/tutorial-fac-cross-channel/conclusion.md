@@ -2,7 +2,7 @@
 title: Conclusion
 seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
 breadcrumb-title: Conclusion
-description: In this lesson, we summarize learnings and key takeaways.
+description: In conclusion, we summarize learnings and key takeaways.
 role: Data Architect, Data Engineer
 jira: KT-18743
 hide: true
@@ -12,13 +12,14 @@ hide: true
 
 Experience Platform Federated Audience Composition, provides new pathways and expanded access to create audiences from enterprise data warehouses to power brand-initiated and in-the-moment experiences.
 
-This tutorial provided a hands-on introduction to Federated Audience Composition in Adobe Experience Platform. You learned how to:
+This visual guide is an introduction to Federated Audience Composition in Adobe Experience Platform. You learned how to:
 
-- Connect a data warehouse to Adobe Experience Platform.
-- Create and enrich audiences using warehouse data without replication.
-- Export audiences to Amazon S3 for downstream use.
-- Build personalized customer journeys with federated audiences.
-- Enrich Experience Platform audiences with federated data.
+- Connect Adobe Experience Platform to an enterprise data warehouse.
+- Create and manage audiences using Federated Audience Composition.
+- Map federated audiences to external destinations like Amazon S3.
+- Enrich existing audiences with federated data.
+- Create audiences to drive "in-the-moment" personalization.
+- Build customer journeys using federated audience data.
 
 ## Key Takeaways
 
