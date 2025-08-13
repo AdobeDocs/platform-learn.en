@@ -13,7 +13,7 @@ hide: true
 
 + [Federated Audience Composition Tutorial](overview.md)
 + [1. Data Warehouse Connection](data-warehouse-connection.md)
-+ [2. Audience Creation Exercise](audience-creation-exercise.md)
++ [2. Create a Federated Audience](audience-creation-exercise.md)
 + [3. Map Federated Audience to S3](map-federated-audience-to-s3.md)
 + [4. Build a Journey with Federated Audience Data](build-journey-federated-audience.md)
 + [5. Enrich Audiences with Federated Data](federated-audience-composition.md)
