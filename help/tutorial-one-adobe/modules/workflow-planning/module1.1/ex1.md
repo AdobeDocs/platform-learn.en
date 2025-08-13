@@ -170,9 +170,11 @@ Select **Submit a request** and click **Continue**.
 
 ![Workfront Planning](./images/wfpl32.png)
 
-`vangeluw - New Campaign Creation Request`
+Set the **Subject** to `--aepUserLdap-- - New Campaign Creation Request`.
 
-`vangeluw - CitiSignal Fiber Launch`
+Set the **Campaign name** to `--aepUserLdap-- - CitiSignal Fiber Launch`.
+
+Set the **Campaign summary** to:
 
 ```
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
