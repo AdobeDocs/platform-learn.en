@@ -6,7 +6,6 @@ description: In this visual exercise, we configure a connection between Adobe Ex
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
-hide: true
 exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
 ---
 # Create a Federated Audience

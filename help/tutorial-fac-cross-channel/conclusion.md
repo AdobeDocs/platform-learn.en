@@ -5,7 +5,6 @@ breadcrumb-title: Conclusion
 description: In conclusion, we summarize learnings and key takeaways.
 role: Data Architect, Data Engineer
 jira: KT-18743
-hide: true
 exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
 ---
 # Conclusion

@@ -6,7 +6,6 @@ role: Data Architect, Data Engineer, Developer
 level: Beginner, Intermediate
 doc-type: multipage
 recommendations: noDisplay,noCatalog
-hide: true
 ---
 
 # Unlock cross-channel insights with Federated Audience Composition {#unlock-cross-channel-insights-with-federated-audience-composition}

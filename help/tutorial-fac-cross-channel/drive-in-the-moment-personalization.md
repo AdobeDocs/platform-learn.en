@@ -6,7 +6,6 @@ description: In this visual exercise, the federated audience is evaluated on the
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-drive-in-the-moment-personalization.jpg
-hide: true
 exl-id: 20bfafb1-1d1b-48d8-84eb-97d4c9e03b76
 ---
 # Drive "in-the moment" personalization on the Edge
