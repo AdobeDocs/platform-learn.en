@@ -6,7 +6,6 @@ description: In this visual exercise, we will map a federated audience to a down
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
-hide: true
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
 ---
 # Map Federated Audience to S3 to Leverage Audience Attributes for Enrichment

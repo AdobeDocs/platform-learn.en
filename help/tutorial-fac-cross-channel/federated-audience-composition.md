@@ -6,7 +6,6 @@ description: In this visual exercise, an Experience Platform audience is enriche
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
-hide: true
 ---
 
 # Enrich Experience Platform Audiences with Federated Data

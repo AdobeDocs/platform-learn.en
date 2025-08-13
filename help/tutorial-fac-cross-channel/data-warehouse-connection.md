@@ -6,7 +6,6 @@ description: In this visual exercise, we configure a connection between Adobe Ex
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
-hide: true
 exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
 ---
 # Data Warehouse connection

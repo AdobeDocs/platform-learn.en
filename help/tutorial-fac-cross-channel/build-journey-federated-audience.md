@@ -6,7 +6,6 @@ description: In this visual exercise, a federated audience is used in a Journey 
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
-hide: true
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
 ---
 # Build a Journey with Federated Audience Data
