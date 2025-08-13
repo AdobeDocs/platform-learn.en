@@ -16,5 +16,6 @@ hide: true
 + [2. Audience Creation Exercise](audience-creation-exercise.md)
 + [3. Map Federated Audience to S3](map-federated-audience-to-s3.md)
 + [4. Build a Journey with Federated Audience Data](build-journey-federated-audience.md)
-+ [5. Audience Enrichment Demo](audience-enrichment-demo.md)
++ [5. Enrich Audiences with Federated Data](federated-audience-composition.md)
++ [6. Drive "in-the moment" personalization on the Edge](drive-in-the-moment-personalization.md)
 + [Conclusion](conclusion.md)
