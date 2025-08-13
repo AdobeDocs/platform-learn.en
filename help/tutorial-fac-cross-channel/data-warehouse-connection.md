@@ -7,8 +7,8 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
 hide: true
+exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
 ---
-
 # Data Warehouse connection
 
 We start by configuring a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition. This allows you to query data directly from supported warehouses without replication. Additionally, we create Schemas and Data Models based on the Data Warehouse tables. 

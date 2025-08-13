@@ -7,8 +7,8 @@ jira: KT-18743
 thumbnail: 18743-overview.jpg
 recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11
+exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
 ---
-
 # Overview
 
 Federated Audience Composition is a powerful feature available for Adobe Real-Time Customer Data Platform (Real-Time CDP) and Adobe Journey Optimizer environments. It enables data architects and data engineers to build and enrich audiences directly from [supported](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"} third-party data warehouses without replicating data into Adobe Experience Platform. This tutorial provides hands-on guidance for technical users to connect enterprise data warehouses, create and enrich audiences, and activate them for personalized marketing experiences.

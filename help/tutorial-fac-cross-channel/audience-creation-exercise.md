@@ -7,8 +7,8 @@ role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 hide: true
+exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
 ---
-
 # Audience Creation Exercise
 
 Next, we guide you through creating an audience from our Data Warehouse using Federated Audience Composition. The audience is comprised of SecurFinancial customers who have a credit score of 650 or above and do not currently have a loan in their SecurFinancial portfolio.
