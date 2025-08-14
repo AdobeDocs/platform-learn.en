@@ -1,14 +1,14 @@
 ---
-title: Build a journey with federated audience data
-seo-title: Build a journey with federated audience data | Unlock cross-channel insights with Federated Audience Composition
-breadcrumb-title: Build a journey with federated audience data
-description: In this visual exercise, a federated audience is used in a Journey Optimizer journey.
+title: Build a Journey with a Federated Audience
+seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+breadcrumb-title: Build a Journey with a Federated Audience
+description: In this exercise, a federated audience is used in a Journey Optimizer journey.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
 ---
-# Build a Journey with Federated Audience Data
+# Build a Journey with a Federated Audience 
 
 Federated audiences can be used in journeys within Adobe Journey Optimizer (AJO). This includes using queried attributes from Federated Audience Composition to personalize messaging. 
 

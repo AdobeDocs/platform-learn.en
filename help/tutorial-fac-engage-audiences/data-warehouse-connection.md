@@ -1,8 +1,8 @@
 ---
 title: Data Warehouse connection
-seo-title: Configure a Data Warehouse connection | Unlock cross-channel insights with Federated Audience Composition
+seo-title: Configure a Data Warehouse connection | Engage with Audiences from your Data Warehouse using Federated Audience Composition
 breadcrumb-title: Data Warehouse connection
-description: In this visual exercise, we configure a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition.
+description: In this exercise, we configure a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-configure-a-data-warehouse-connection.jpg
@@ -10,7 +10,7 @@ exl-id: 3935f3ff-7728-4cd1-855e-2cd02c2ecc59
 ---
 # Data Warehouse connection
 
-We start by configuring a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition. This allows you to query data directly from supported warehouses without replication. Additionally, we create Schemas and Data Models based on the Data Warehouse tables. 
+We start by configuring a connection between Adobe Experience Platform and your Enterprise Data Warehouse. We use schemas and data models based on how the data sits in the Data Warehouse to support query building. 
 
 To demonstrate, we connect to a Snowflake account. Federated Audience Composition supports a growing list of cloud warehouse connections. See the [updated list of integrations](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}.
 
@@ -72,4 +72,4 @@ Below is a preview of the link created given the above steps. The link enables a
 
    ![preview-data-model](assets/preview-data-model.png)
 
-Now, we're ready to [create and audience](audience-creation-exercise.md).
+Now, we're ready to [create and audience](create-a-federated-audience.md).

@@ -1,6 +1,6 @@
 ---
 title: Conclusion
-seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
+seo-title: Conclusion | Engage with Audiences from your Data Warehouse using Federated Audience Composition
 breadcrumb-title: Conclusion
 description: In conclusion, we summarize learnings and key takeaways.
 role: Data Architect, Data Engineer
