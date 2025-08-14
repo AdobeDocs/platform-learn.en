@@ -1,6 +1,6 @@
 ---
 title: Unlock cross-channel insights with Federated Audience Composition
-description: Federated Audience Composition is a powerful feature that enables data architects and data engineers to build and enrich audiences directly from third-party data warehouses.
+description: Federated Audience Composition is a powerful feature that enables data architects and data engineers to build and enrich audiences directly from data warehouses.
 breadcrumb-title: Overview
 role: Data Architect, Data Engineer
 jira: KT-18743
