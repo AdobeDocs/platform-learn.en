@@ -1,8 +1,8 @@
 ---
 title: Create a federated audience
-seo-title: Create a federated audience | Unlock cross-channel insights with Federated Audience Composition
+seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
 breadcrumb-title: Create a federated audience
-description: In this visual exercise, we configure a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition.
+description: In this exercise, we configure a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg

@@ -1,8 +1,8 @@
 ---
 title: Map a federated audience to S3
-seo-title: Map a federated audience to S3 | Unlock cross-channel insights with Federated Audience Composition
+seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
 breadcrumb-title: Map a federated audience to S3
-description: In this visual exercise, we will map a federated audience to a downstream Real-Time CDP destination to support a personalized offline experience.
+description: In this exercise, we will map a federated audience to a downstream Real-Time CDP destination to support a personalized offline experience.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
@@ -42,8 +42,8 @@ You can leverage audience attributes in your data warehouse to enrich your audie
 
 8. Review your audience mapping and hit **Finish**.
 
->[**SUMMARY**]
+>[**!SUMMARY**]
 >
-> We successfully built an audience and activated it to an S3 destination with ease. The platform's user-friendly interface allows marketing teams to quickly build and activate audiences, reducing time to value. Customers taking this approach have gone live with there first use case in under two months.
+> We successfully built an audience and activated it to an S3 destination with ease. The user-friendly interface allows marketing teams to quickly build and activate audiences without moving underlying data. 
 
-We're ready to move on to [building a journey](build-journey-federated-audience.md).
+Now we'll [build a journey](build-journey-federated-audience.md).
