@@ -1,6 +1,6 @@
 ---
 title: Conclusion
-seo-title: Conclusion | Unlock cross-channel insights with Federated Audience Composition
+seo-title: Conclusion | Engage with audiences directly from your data warehouse using federated audience composition
 breadcrumb-title: Conclusion
 description: In conclusion, we summarize learnings and key takeaways.
 role: Data Architect, Data Engineer
@@ -9,9 +9,9 @@ exl-id: 19f3065a-c439-44b6-9888-664c9a5cb33c
 ---
 # Conclusion
 
-Experience Platform Federated Audience Composition, provides new pathways and expanded access to create audiences from enterprise data warehouses to power brand-initiated and in-the-moment experiences.
+Experience Platform Federated Audience Composition module, provides new pathways and expanded access to create audiences from enterprise data warehouses to power brand-initiated and in-the-moment experiences.
 
-This visual guide is an introduction to Federated Audience Composition in Adobe Experience Platform. You learned how to:
+This  guide is an introduction to Federated Audience Composition in Adobe Experience Platform. You learned how to:
 
 - Connect Adobe Experience Platform to an enterprise data warehouse.
 - Create and manage audiences using Federated Audience Composition.
