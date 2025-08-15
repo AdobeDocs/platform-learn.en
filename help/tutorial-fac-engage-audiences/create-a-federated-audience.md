@@ -54,9 +54,9 @@ Next, we guide you through creating an audience from the Snowflake data warehous
    
 10. Click **Save** and then click **Start** to run the query of the composition.
 
->[**SUMMARY**]
->
-> In this example, product and credit information was used to build our audience through direct access of enterprise data from Snowflake, without making a copy of it Adobe Experience Platform. Once the external system processes the query, only the relevant email, current products, and first name values are brought over to the audience definition for downstream activation. This applies to all destinations RTCDP supports.
+### SUMMARY
+
+ In this example, product and credit information was used to build our audience through direct access of enterprise data from Snowflake, without making a copy of it Adobe Experience Platform. Once the external system processes the query, only the relevant email, current products, and first name values are brought over to the audience definition for downstream activation. This applies to all destinations RTCDP supports.
 
 For more information about audience composition, visit [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
