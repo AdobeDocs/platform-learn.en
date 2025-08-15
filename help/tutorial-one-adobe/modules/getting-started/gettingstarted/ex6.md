@@ -35,10 +35,6 @@ You should then see this. Select **+ Add to Project** and choose **API**.
 
 ![Adobe I/O New Integration](./images/adobe_io_access_api.png)
 
-Your screen should look like this.
-
-![Adobe I/O New Integration](./images/api1.png)
-
 Select **Adobe Firefly Services** and choose **Firefly - Firefly Services**, then select **Next**.
 
 ![Adobe I/O New Integration](./images/api3.png)
