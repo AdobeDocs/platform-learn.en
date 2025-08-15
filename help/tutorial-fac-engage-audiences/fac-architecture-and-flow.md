@@ -1,14 +1,14 @@
 ---
 title: Federated Audience Composition High-level Architecture & Flow
-seo-title: Federated Audience Composition High-level Architecture & Flow | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Federated Audience Composition High-level Architecture & Flow
+seo-title: Federated Audience Composition high-level architecture & flow | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Federated Audience Composition high-level architecture & flow
 description: Overview of the high-level architecture and flow of Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-high-level-architecture.jpg
 ---
 
-# Federated Audience Composition High-level Architecture & Flow
+# Federated Audience Composition high-level architecture & flow
 
 Before we dive into the steps for supporting the business scenario for SecurFinancial, we'll review the high-level architecture and flow for this composable CDP approach.
 

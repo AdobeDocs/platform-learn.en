@@ -1,18 +1,18 @@
 ---
-title: Build a Journey with a Federated Audience
-seo-title: Build a Journey with a Federated Audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Build a Journey with a Federated Audience
+title: Build a journey with a Federated Audience
+seo-title: Build a journey with a Federated Audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Build a journey with a Federated Audience
 description: In this exercise, a federated audience is used in a Journey Optimizer journey.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-build-a-journey-with-federated-audience-data.jpg
 exl-id: a153667a-9b3a-4db7-9f58-b83e695009e0
 ---
-# Build a Journey with a Federated Audience 
+# Build a journey with a Federated Audience 
 
 Federated audiences can be used in journeys within Adobe Journey Optimizer (AJO). This includes using queried attributes from Federated Audience Composition to personalize messaging. 
 
-To continue with the SecurFinancial story, specifically the customer retargeting and personalization use case, we orchestrate a journey for pre-qualified customers. The goal is to send a personalized email based on attributes federated from SecurFinancial's Data Warehouse.
+To continue with the SecurFinancial story, specifically the customer retargeting and personalization use case, we orchestrate a journey for pre-qualified customers. The goal is to send a personalized email based on attributes federated from SecurFinancial's data warehouse.
 
 ## Steps
 

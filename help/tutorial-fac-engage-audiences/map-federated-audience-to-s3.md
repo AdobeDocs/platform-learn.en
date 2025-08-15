@@ -1,14 +1,14 @@
 ---
-title: Map a federated audience to S3
-seo-title: Map a federated audience to S3 | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Map a federated audience to S3
+title: Map a Federated Audience to an S3 Destination
+seo-title: Map a Federated Audience to an S3 Destination | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Map a Federated Audience to S3
 description: In this exercise, we will map a federated audience to a downstream Real-Time CDP destination to support a personalized offline experience.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
 exl-id: a47b8f7b-7bd0-43a0-bc58-8b57d331b444
 ---
-# Map Federated Audience to S3 to Leverage Audience Attributes for Enrichment
+# Map a Federated Audience to an S3 destination to leverage audience attributes for enrichment
 
 You can leverage audience attributes in your data warehouse to enrich your audience's experience in downstream activation workflows using RTCDP destinations. For SecurFinancial, these federated attributes can be used to enhance the customer audience's personalization experience offline. Below, the federated audience is mapped to a pre-configured Amazon S3 destination.
 
@@ -44,6 +44,6 @@ You can leverage audience attributes in your data warehouse to enrich your audie
 
 >[**!SUMMARY**]
 >
-> We successfully built an audience and activated it to an S3 destination with ease. The user-friendly interface allows marketing teams to quickly build and activate audiences without moving underlying data. 
+> We successfully built an audience and activated it to an S3 destination with ease. Any other solution can pick up this Audience and use it straightaway. The user-friendly interface allows marketing teams to quickly build and activate audiences without moving underlying data. Customers taking this approach have gone LIVE with their first use in about a month. 
 
 Now we'll [build a journey](build-journey-federated-audience.md).

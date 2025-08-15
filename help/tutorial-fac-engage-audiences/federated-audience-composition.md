@@ -1,18 +1,18 @@
 ---
-title: Enrich Audiences with Warehouse Data
-seo-title: Enrich Audiences with Warehouse Data | Engage with Audiences from your Data Warehouse using Federated Audience Composition
-breadcrumb-title: Enrich Audiences with Warehouse Data
+title: Enrich Audiences with warehouse data
+seo-title: Enrich Audiences with warehouse data | Engage with audiences directly from your data warehouse using Federated Audience Composition
+breadcrumb-title: Enrich Audiences with warehouse data
 description: In this exercise, an Experience Platform audience is enriched with warehouse data.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-enrich-audience-with-federated-data.jpg
 exl-id: 3f6aa121-0dbd-4ad9-b136-d1455eed03ca
 ---
-# Enrich Audiences with Warehouse Data
+# Enrich audiences with warehouse data
 
 Federated Audience Composition enables you to enrich existing audiences in Adobe Experience Platform (AEP) by utilizing composed audience data that has been federated from the enterprise data warehouse. This data will not be persisted in Adobe Experience Platform customer profiles.
 
-## Reading an Audience within a Federated Composition
+## Reading an audience within a Federated Composition
 
 In this exercise, we use the **SecurFinancial Loan Application Page Visitor** audience stored in Experience Platform's Profile Service to start our federated composition. It uses the federated data in Snowflake to determine pre-approval based on credit score and loan activity.
 
