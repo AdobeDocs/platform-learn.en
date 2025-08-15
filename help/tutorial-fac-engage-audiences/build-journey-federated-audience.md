@@ -72,4 +72,4 @@ To continue with the SecurFinancial story, specifically the customer retargeting
 
 We created a journey in AJO using a federated audience and federated enrichment attributes. 
 
-Now we'll look at how to [enrich existing audiences](federated-audience-composition.md) in Experience Platform with federated data from the data warehouse.
+Now we'll look at how to [enrich an audience](federated-audience-composition.md) in Experience Platform with data from the data warehouse.
