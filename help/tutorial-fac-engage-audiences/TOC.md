@@ -17,5 +17,5 @@ recommendations: noDisplay,noCatalog
 + [3. Map Federated Audience to S3](map-federated-audience-to-s3.md)
 + [4. Build a Journey with Federated Audience Data](build-journey-federated-audience.md)
 + [5. Enrich Audiences with Federated Data](federated-audience-composition.md)
-+ [6. Deliver "in-the moment" personalization on the Edge](drive-in-the-moment-personalization.md)
++ [6. Deliver "in-the moment" personalization on the Edge](deliver-in-the-moment-personalization.md)
 + [Conclusion](conclusion.md)
