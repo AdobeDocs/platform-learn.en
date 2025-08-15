@@ -60,4 +60,4 @@ Next, we guide you through creating an audience from the Snowflake data warehous
 
 For more information about audience composition, visit [Experience League](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/compositions/create-composition/create-composition){target="_blank"}.
 
-Now that our federated audience has been created, we'll [map it to an S3 account](map-federated-audience-to-s3.md).
+Now that our federated audience has been created, we'll [map it to an S3 destination in Experience Platform](map-federated-audience-to-s3.md).

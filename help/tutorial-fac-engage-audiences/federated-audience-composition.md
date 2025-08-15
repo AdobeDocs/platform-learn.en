@@ -28,4 +28,4 @@ In this exercise, we use the **SecurFinancial Loan Application Page Visitor** au
 
  ![federated-method-1-2](assets/federated-method-1-2.png)
 
-We'll look at another example of using federated data to [support "in-the-moment" personalization](deliver-in-the-moment-personalization.md)!
+We'll look at another example of using federated data to [deliver "in-the-moment" personalization](deliver-in-the-moment-personalization.md)!

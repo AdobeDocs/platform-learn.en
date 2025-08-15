@@ -72,4 +72,4 @@ Below is a preview of the link created given the above steps. The link enables a
 
    ![preview-data-model](assets/preview-data-model.png)
 
-Now, we're ready to [create and audience](create-a-federated-audience.md).
+Now, we're ready to [create a Federated Audience](create-a-federated-audience.md).
