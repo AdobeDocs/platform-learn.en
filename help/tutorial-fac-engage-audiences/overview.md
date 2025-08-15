@@ -1,6 +1,6 @@
 ---
-title: Engage with Audiences from your Data Warehouse using Federated Audience Composition
-description: Federated Audience Composition is a powerful feature that enables data architects and data engineers to build and enrich audiences directly from third-party data warehouses.
+title: Engage with audiences directly from your data warehouse using Federated Audience Composition overview
+description: Federated Audience Composition is a powerful feature that enables data architects and data engineers to curate and activate high-value audiences directly from supported data warehouses.
 breadcrumb-title: Overview
 role: Data Architect, Data Engineer
 jira: KT-18743
@@ -9,15 +9,20 @@ recommendations: catalog, noDisplay
 last-substantial-update: 2025-08-11
 exl-id: 9d5a2e40-6cda-4164-87db-1bfffe3438e3
 ---
-# Engage with Audiences from your Data Warehouse using Federated Audience Composition
+# Engage with audiences directly from your data warehouse using Federated Audience Composition overview
 
-Federated Audience Composition (FAC) is a powerful feature available for Adobe Real-Time Customer Data Platform (Real-Time CDP) and Adobe Journey Optimizer environments. It empowers data architects and data engineers to curate and activate high-value audiences directly from [supported enterprise data warehouses](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, without copying or moving customer data into Adobe Experience Platform (AEP). This composable CDP approach (a tailored solution for customers) aligns with industry trends, enabling businesses to leverage their data infrastructure for personalized digital experiences while maintaining data governance.
+Federated Audience Composition (FAC) is a module for Adobe Real-Time Customer Data Platform (Real-Time CDP) and Adobe Journey Optimizer. It is also, available with Adobe Real-Time CDP Composable Audiences ( a tailored solution for customers as a Composable CDP). It empowers data architects and data engineers to curate and activate high-value audiences directly from [supported enterprise data warehouses](https://experienceleague.adobe.com/en/docs/federated-audience-composition/using/start/access-prerequisites){target="_blank"}, without copying or moving customer data into Adobe Experience Platform (AEP). This composable CDP approach (a tailored solution for customers) aligns with industry trends, enabling businesses to leverage their data infrastructure for personalized digital experiences while maintaining data governance.
 
-## Business Context
+## Business context
 
-SecurFinancial is a leading financial services firm. It leverages its wealth of customer data across disparate sources to personalize offers and campaigns for a large number of segments. They plan to use Adobes Real-Time CDP Federated Audience Composition feature to curate audiences from their data warehouse while activating them to Adobe Experience Platform's destinations, as well as Adobe Journey Optimizer to deliver a tailored solution for delivering personalized customer experiences. 
+SecurFinancial is a leading financial services firm. It leverages its wealth of customer data across disparate sources to personalize offers and campaigns for a large number of segments. They plan to use Adobe Real-Time CDP Federated Audience Composition module which allows businesses to use their data warehouse for data management while using Adobe Experience Platform for delivering personalized customer experiences. Key benefits include:
 
-## Business Scenario
+- **Access to warehouse data**: Create high-value audiences from datasets in supported data warehouses without data replication.
+- **Minimized data movement**: Query data directly in the warehouse, without duplication and maintaining data governance.
+- **Unified Experience Workflows**: Curate and activate audiences within Adobe Experience Platform for cross-channel use cases.
+- **Enhanced personalization**: Enrich profiles and audiences with warehouse attributes to power real-time, triggered experiences.
+
+## Business scenario
 
 SecurFinancial would like to launch an email campaign to retarget its customers who are prequalified for a loan based on good credit and do not have an active loan in their SecurFinancial portfolio. While they are ingesting online behavioral data in real time, they face challenges in identifying customer pre-qualification, as they are restricted from ingesting credit information into AEP. To qualify pre-qualified customers without moving restricted data, they will use Federated Audience Composition to enrich their AEP behavioral audience.
 

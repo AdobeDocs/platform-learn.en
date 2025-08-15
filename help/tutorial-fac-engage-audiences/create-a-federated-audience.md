@@ -1,8 +1,8 @@
 ---
 title: Create a federated audience
-seo-title: Create a federated audience | Engage with Audiences from your Data Warehouse using Federated Audience Composition
+seo-title: Create a federated audience | Engage with audiences directly from your data warehouse using Federated Audience Composition
 breadcrumb-title: Create a federated audience
-description: In this exercise, we configure a connection between Adobe Experience Platform and your enterprise Data Warehouse to enable Federated Audience Composition.
+description: In this exercise, we create an audience from the Snowflake data warehouse using Federated Audience Composition.
 role: Data Architect, Data Engineer
 jira: KT-18743
 thumbnail: 18743-create-an-audience.jpg
@@ -10,7 +10,7 @@ exl-id: a507cab5-dba9-4bf7-a043-d7c967e9e07d
 ---
 # Create a Federated Audience
 
-Next, we guide you through creating an audience from our Data Warehouse using Federated Audience Composition. The audience is comprised of SecurFinancial customers who have a credit score of 650 or above and do not currently have a loan in their SecurFinancial portfolio.
+Next, we guide you through creating an audience from the Snowflake data warehouse using Federated Audience Composition. The audience is comprised of SecurFinancial customers who have a credit score of 650 or above and do not currently have a loan in their SecurFinancial portfolio.
 
 ## Steps
 
