@@ -6,13 +6,21 @@ doc-type: tutorial
 ---
 # 1.1 Adobe Workfront Planning
 
+This exercise wil guide you through the fundamental aspects of Workfront Planning, including creating workspaces, defining record types, managing records, and utilizing the AI Assistant for streamlined operations. Performing this lab will get you acquainted with this powerful solution and give you a starting point to explore the capabilities further down the road.
+
 ## Learning Objectives
 
-- Learn how to use Adobe Workfront Planning.
+After completing this lab, you will gain familiarity with the following items:
+
+- Understand the core components of Workfront Planning: Workspaces, Record Types, and Records. 
+- Create a new Workspace tailored to a specific operational lifecycle.
+- Define and customize Record Types within the Workspace.
+- Manage Records, including creating, updating, and deleting entries.
+- Utilize the AI Assistant to perform actions efficiently.
 
 ## Prerequisites
 
-- Access to Workfront Planning.
+- Access to Adobe Workfront account with the Workfront Planning package.
 
 ## Exercises
 
