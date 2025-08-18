@@ -372,6 +372,7 @@ If you see outdated extensions, refer to the [Android Studio documentation](http
 >[!NOTE]
 >
 >Once you have updated your extensions (packages) in your development environment, close and delete your current session and repeat all steps from [Connecting to a session](#connecting-to-a-session) and [Verify extensions](#verify-extensions) to ensure Assurance properly reports the correct extensions in a new Assurance session.
+>
 
 
 
