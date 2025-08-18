@@ -79,7 +79,7 @@ Click to open the newly created **Business Unit** record type.
 
 ![Workfront Planning](./images/wfpl10.png)
 
-You'll now see an empty table view, because your newly created record type doesn't yet have any field defined.
+You'll now see an empty table view, because your newly created record type doesn't yet have any Business Unit records defined.
 
 ![Workfront Planning](./images/wfpl11.png)
 
@@ -109,7 +109,49 @@ Click **Save**.
 
 ![Workfront Planning](./images/wfpl17.png)
 
-You've now created a new record type and you both deleted and created fields. Go back to the Workspace overview screen by clicking the arrow in the top left corner.
+Click the 3 dots **...** on the first record and select **View**.
+
+![Workfront Planning](./images/wfpla1.png)
+
+Set the **Name** to `Consumer Services`.
+
+Set the **Description** to `Handles residential offerings like mobile plans, internet packages, and customer support.`.
+
+Set the **Business Unit Lead** to yourself.
+
+Once done, click the arrow to go back to the previous screen.
+
+![Workfront Planning](./images/wfpla2.png)
+
+Click the 3 dots **...** on the second record and select **View**.
+
+![Workfront Planning](./images/wfpla3.png)
+
+Set the **Name** to `Enterprise & Business Solutions`
+
+Set the **Description** to `Provides connectivity, cloud, and managed services to corporate clients and government entities.`
+
+Set the **Business Unit Lead** to yourself.
+
+Once done, click the arrow to go back to the previous screen.
+
+![Workfront Planning](./images/wfpla4.png)
+
+Click the 3 dots **...** on the third record and select **View**.
+
+![Workfront Planning](./images/wfpla5.png)
+
+Set the **Name** to `Sales & Marketing`
+
+Set the **Description** to `Drives customer acquisition, brand strategy, advertising, and market segmentation.`
+
+Set the **Business Unit Lead** to yourself.
+
+Once done, click the arrow to go back to the previous screen.
+
+![Workfront Planning](./images/wfpla6.png)
+
+You've now created a new record type, you both deleted and created fields and you creatd 3 Business Units. Go back to the Workspace overview screen by clicking the arrow in the top left corner.
 
 ![Workfront Planning](./images/wfpl18.png)
 
@@ -123,7 +165,7 @@ Click to open **Campaigns**.
 
 ![Workfront Planning](./images/wfpl20.png)
 
-Click the **+** icon to create a new field. Select **New connection** and then select **Personas**.
+Click the **+** icon to create a new field. Select **New connection** and then select **Business Unit**.
 
 ![Workfront Planning](./images/wfpl21.png)
 
@@ -145,7 +187,7 @@ On the Campaigns overview screen, click the 3 dots **...** and then select **Cre
 
 ![Workfront Planning](./images/wfpl25.png)
 
-Change the name to `Campaign Request Form`. Click **Save**.
+Change the name to `Campaign Request Form`. Click **Create**.
 
 ![Workfront Planning](./images/wfpl26.png)
 
@@ -181,6 +223,8 @@ Set the **Campaign summary** to:
 The CitiSignal Fiber Launch campaign introduces CitiSignal’s flagship fiber internet service—CitiSignal Fiber Max—to key residential markets. This campaign is designed to build awareness, drive sign-ups, and establish CitiSignal as the go-to provider for ultra-fast, reliable, and future-ready internet. The campaign will highlight the product’s benefits for remote professionals, online gamers, and smart home families, using persona-driven messaging across digital and physical channels.
 ```
 
+Fill in the other fields as you like.
+
 Click **Submit request**.
 
 ![Workfront Planning](./images/wfpl33.png)
@@ -189,7 +233,7 @@ Click **X** to close the popup.
 
 ![Workfront Planning](./images/wfpl34.png)
 
-You should then see thenewly created campaign in the overview.
+You should then see the newly created campaign in the overview.
 
 ![Workfront Planning](./images/wfpl35.png)
 
@@ -291,19 +335,15 @@ After a couple of seconds, you should see a confirmation that the automation fin
 
 ![Workfront Planning](./images/wfpl47.png)
 
-To check the Program in Workfront, open the menu and click **Portfolios**.
+To check the Program in Workfront, scroll to the right and click the program in the **Connected Program** column.
 
 ![Workfront Planning](./images/wfpl48.png)
 
-Open your portfolio which should be named `--aepUserLdap-- - Marketing`.
-
-![Workfront Planning](./images/wfpl49.png)
-
-Go to **Programs** and you should then see the program that was just created by the automation you configured.
+You should then see the program that was just created by the automation you configured.
 
 ![Workfront Planning](./images/wfpl50.png)
 
-Next Step: [1.2.2 TBD](./ex1.md){target="_blank"}
+Next Step: [Summary & Benefits](./summary.md){target="_blank"}
 
 Go Back to [Introduction to Workfront Planning](./wfplanning.md){target="_blank"}
 
