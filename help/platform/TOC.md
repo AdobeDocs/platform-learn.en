@@ -120,6 +120,7 @@ Campaigns
     + [Connect to Oracle](audiences/fac/connect-to-oracle.md)
     + [Create a federated audience](audiences/fac/create-a-federated-audience-composition.md)
     + [Subscribe to alerts](audiences/fac/subscribe-to-alerts.md)
+    + [Guide: Engage with audiences from your data warehouse](/help/tutorial-fac-engage-audiences/overview.md)
   + Segment Match{#segment-match}
     + [Segment Match connection setup](/help/platform/audiences/segment-match/segment-match-connection-setup.md)
     + [Segment Match data governance](/help/platform/audiences/segment-match/segment-match-data-governance.md)
