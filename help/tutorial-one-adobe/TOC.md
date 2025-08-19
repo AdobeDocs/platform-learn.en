@@ -72,6 +72,8 @@ recommendations: noDisplay,noCatalog
   + 1.5 Streamline your workflow with Frame.io {#crpr5}  
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.5/frameio.md)
     + [1.5.1 Getting started with Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex1.md)
+    + [1.5.2 Approvals with Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
+    + [1.5.3 Frame.io and Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
 
 + Asset Management {#assetmgmt}
@@ -84,6 +86,10 @@ recommendations: noDisplay,noCatalog
     + [1.1.5 Advanced Custom Block](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex5.md)
     + [1.1.6 AEM Edge Delivery Services MarTech plugin](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/ex6.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.1/summary.md)
+  + 1.2 Adobe Experience Manager Assets {#assetm2}
+    + [Overview](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/aemassets.md)
+    + [1.2.1 Getting Started with AEM Assets](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/ex1.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/asset-mgmt/module2.2/summary.md)
 
 + Delivery & Activation {#activation}
   + Data Collection {#dc}

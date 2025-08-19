@@ -191,7 +191,7 @@ You should then see this.
 
 As part of this task, you need to create a new image and then upload it as a document in Workfront. You'll now create that asset yourself using Adobe Express.
 
-## 1.2.2.5 Create Asset with Adobe Firely Services and Adobe Express
+## 1.2.2.5 Create Asset with Adobe Firefly Services and Adobe Express
 
 Go to [https://firefly.adobe.com/](https://firefly.adobe.com/){target="_blank"}. Enter the prompt `a neon rabbit running very fast through space` and click **Generate**.
 

@@ -21,6 +21,14 @@ exl-id: 2b22fc2b-ce95-4860-8ba6-71163bacf5e7
 
 In this exercise, explore Frame.io and get an understanding of its capabilities.
 
+[1.5.2 Approvals with Frame.io](./ex2.md){target="_blank"}
+
+In this exercise, you'll go through a standard approval flow with Frame.io.
+
+[1.5.3 Frame.io and Premiere Pro](./ex3.md){target="_blank"}
+
+In this exercise, you'll discover the integration between Frame.io and Adobe Premiere Pro.
+
 [Summary and benefits](./summary.md){target="_blank"}
 
 Summary of this module and overview of the benefits.

@@ -109,37 +109,9 @@ Once uploaded, you'll see the new folder become available in Frame.io.
 
 ![Frame.io](./images/frameio21.png)
 
-## 1.5.1.3 Set up Adobe Premiere Pro Beta
-
-You already installed Adobe Premiere Pro Beta as part of the Getting Started module. To use Frame.io in combination with Adobe Premiere Pro Beta, you can make us of the plugin that was developed for this integration.
-
-Open the Creative Cloud app and search for `frame.io`.
-
-![Frame.io](./images/frameio23.png)
-
-Scroll down in the search results to find the plugin **Frame.io V4 Comments**. Click it.
-
-![Frame.io](./images/frameio24.png)
-
-You should then see this. Click **Install**.
-
-![Frame.io](./images/frameio25.png)
-
-If Adobe Premiere Pro Beta is open, you'll need to **Close** it first before you can install the plugin.
-
-![Frame.io](./images/frameio26.png)
-
-Click **OK**. The plugin is now being installed.
-
-![Frame.io](./images/frameio27.png)
-
-Once the plugin is installed, open Adobe Premiere Pro Beta on your computer.
-
-![Frame.io](./images/frameio22.png)
-
 ## Next Steps
 
-Go to [-](./ex1.md){target="_blank"}
+Go to [1.5.2 Approvals with Frame.io](./ex2.md){target="_blank"}
 
 Go back to [Streamline your workflow with Frame.io](./frameio.md){target="_blank"}
 
