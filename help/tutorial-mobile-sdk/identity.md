@@ -110,7 +110,7 @@ You want to update both the standard identity (email) and the custom identity (L
 
 >[!TAB Android]
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `fun updateIdentities(emailAddress: String, crmId: String) ` function implementation. Add the following  code to the function.
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `fun updateIdentities(emailAddress: String, crmId: String) ` function implementation. Add the following  code to the function.
 
    ```kotlin
    // Set up identity map, add identities to map and update identities
@@ -152,7 +152,7 @@ You want to update both the standard identity (email) and the custom identity (L
        Identity.updateIdentities(identityMap)
        ```   
 
-1.Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]** in the Android Studio navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]** in the Android Studio navigator and find the code to execute when selecting the **[!UICONTROL Login]** button. Add the following code:
 
    ```kotlin
    // Update identities
@@ -200,7 +200,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 >[!TAB Android]
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and add the following code to the `fun removeIdentities(emailAddress: String, crmId: String)` function: 
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and add the following code to the `fun removeIdentities(emailAddress: String, crmId: String)` function: 
 
    ```kotlin
    // Remove identities and reset email and CRM Id to their defaults
@@ -212,12 +212,11 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 1.Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]** in the Android Studio navigator and find the code to execute when selecting the **[!UICONTROL Logout]** button. Add the following code:
 
-   ```swift
-   // Remove identities
+   ```kotlin
    // Remove identities
    MobileSDK.shared.removeIdentities(
-         MobileSDK.shared.currentEmailId.value,
-         MobileSDK.shared.currentCRMId.value
+      MobileSDK.shared.currentEmailId.value,
+      MobileSDK.shared.currentCRMId.value
    )              
    ```
 

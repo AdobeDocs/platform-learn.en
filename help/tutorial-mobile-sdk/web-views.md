@@ -65,7 +65,7 @@ You can learn more about the `Identity.getUrlVariables` API in the [Identity for
 
 >[!TAB Android]
 
-Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL webViewModel]**, and locate the `fun loadUrl()` function in the `class WebViewModel: ViewModel()`. Add the following call to handle the web view:
+Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL webViewModel]**, and locate the `fun loadUrl()` function in the `class WebViewModel: ViewModel()`. Add the following call to handle the web view:
 
 ```kotlin
 // Handle web view

@@ -81,12 +81,13 @@ To begin collecting data, you must get consent from the user. In a real-world ap
 
 1. Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL DisclaimerView.kt]** in the Android Studio navigator.
 
-   Add the following code to the `ATTrackingManager.requestTrackingAuthorization { status in` closure.
+   Add the following code to the `DisclaimerView(navController: NavController)` function underneath `// Set content to yes`, and `// Set content to no`.
 
    ```kotlin 
    // Add consent based on authorization
    if (status) {
       showPersonalizationWarning = false
+
       // Set consent to yes
       MobileSDK.shared.updateTrackingStatus(TrackingStatus.AUTHORIZED)
       MobileSDK.shared.updateConsent("y")
@@ -97,6 +98,7 @@ To begin collecting data, you must get consent from the user. In a real-world ap
             Toast.LENGTH_LONG
       ).show()
       showPersonalizationWarning = true
+      
       // Set consent to no
       MobileSDK.shared.updateTrackingStatus(TrackingStatus.DENIED)
       MobileSDK.shared.updateConsent("n")

@@ -63,7 +63,7 @@ It would be helpful for targeting and / or personalization in the app to quickly
 
 >[!TAB Android]
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `func updateUserAttribute(attributeName: String, attributeValue: String)` function. Add the following code:
 
     ```kotlin
     // Create a profile map, add attributes to the map and update profile using the map
@@ -79,7 +79,7 @@ It would be helpful for targeting and / or personalization in the app to quickly
 
     1. Uses the `profileMap` map as a value to the `attributeDict` parameter of the [`UserProfile.updateUserAttributes`](https://developer.adobe.com/client-sdks/documentation/profile/api-reference/#updateuserattributes) API call.
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button). Add the following code:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL ProductView.kt]** and find the call to `updateUserAttributes` (within the code for the Purchases <img src="assets/purchase.png" width= 15/> button). Add the following code:
 
     ```kotlin
     // Update attributes
@@ -94,7 +94,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
 
 >[!BEGINTABS]
 
->[!TAB ios]
+>[!TAB iOS]
 
 1. Navigate to **[!DNL Luma]** > **[!DNL Luma]** > **[!DNL Views]** > **[!DNL General]** > **[!DNL HomeView]** in the Xcode Project navigator and find the `.onAppear` modifier. Add the following code:
 
@@ -119,7 +119,7 @@ Once you have updated a user's attribute, it is available to other Adobe SDKs bu
 
 >[!TAB Android]
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.androi]** > **[!DNL views]** > **[!DNL HomeView.kt]** in the Android Studio project navigator and find the `.onAppear` modifier. Add the following code:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.androi]** > **[!DNL views]** > **[!DNL HomeView.kt]** in the Android Studio project navigator and find the `.onAppear` modifier. Add the following code:
 
     ```kotlin
     // Get attributes

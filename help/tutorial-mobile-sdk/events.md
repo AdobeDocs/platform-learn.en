@@ -8,7 +8,7 @@ exl-id: 4779cf80-c143-437b-8819-1ebc11a26852
 
 Learn how to track events in a mobile app.
 
-The Edge Network extension provides an API to send Experience Events to Platform Edge Network. An Experience Event is an object that contains data conforming to the XDM ExperienceEvent schema definition. More simply, they capture what people do in your mobile app. Once data is received by Platform Edge Network, it can be forwarded to applications and services configured in your datastream, such as Adobe Analytics and Experience Platform. Learn more about the [Experience Events](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in the product documentation.
+The Edge Network extension provides an API to send Experience Events to Platform Edge Network. An Experience Event is an object that contains data conforming to the XDM ExperienceEvent schema definition. More simply, these events capture what people do in your mobile app. Once data is received by Platform Edge Network, that data can be forwarded to applications and services configured in your datastream, such as Adobe Analytics and Experience Platform. Learn more about the [Experience Events](https://developer.adobe.com/client-sdks/documentation/getting-started/track-events/) in the product documentation.
 
 ## Prerequisites
 
@@ -172,7 +172,7 @@ For the standard field groups, the process looks like:
   >[!TAB Android]
 
   ```kotlin
-  Edge.sendEvent(productViewEcent, null)
+  Edge.sendEvent(productViewEvent, null)
   ```
 
   >[!ENDTABS]
@@ -180,7 +180,7 @@ For the standard field groups, the process looks like:
 
 The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is the AEP Mobile SDK equivalent to the [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API calls. See [Migrate from Analytics mobile extension to Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) for more information.
 
-You are now going to actually implement this code in your Xcode project.
+You are now going to actually implement this code in your project.
 You have different commerce product-related actions in your app and you want to send events, based on these actions as performed by the user:
 
 * view: occurs when a user views a specific product,
@@ -258,7 +258,7 @@ To implement the sending of commerce-related experience events in a reusable way
 
 >[!TAB Android]
 
-1. Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator, and add the following to the `func sendCommerceExperienceEvent(commerceEventType: String, product: Product)` function.
 
     ```kotlin
     // Set up a data map, create an experience event and send the event.
@@ -541,7 +541,7 @@ Again, lets actually implement this code in your project.
 
 >[!TAB Android]
 
-1. For convenience, you define two functions in **[!UICONTROL MobileSDK]**. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in your Android Studio navigator.
+1. For convenience, you define two functions in **[!UICONTROL MobileSDK]**. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in your Android Studio navigator.
 
    * One for app interactions. Add this code to the `fun sendAppInteractionEvent(actionName: String)` function:
 
@@ -595,7 +595,7 @@ Again, lets actually implement this code in your project.
        * sets up an experience event using the map,
        * sends the experience event using the [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API.
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]**
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg)**[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LoginSheet.kt]**
 
    1. Add the following highlighted code to the **[!UICONTROL Button]** **[!UICONTROL onClick]** event: 
 
@@ -604,7 +604,7 @@ Again, lets actually implement this code in your project.
         MobileSDK.shared.sendAppInteractionEvent("login")
         ```
 
-   1. Add the following highlighted code to the LaunchedEffect(Unit) composable function:
+   1. Add the following highlighted code to the `LaunchedEffect(Unit)` composable function:
 
         ```kotlin
         // Send track screen event
@@ -627,10 +627,17 @@ Again, lets actually implement this code in your project.
    1. Select <img src="assets/addtocart.png" width="20"/>.
    1. Select <img src="assets/purchase.png" width="15"/>.
 
-      | iOS | Android |
-      |---|---|
-      | <img src="./assets/mobile-app-events-3.png" width="300"> |  <img src="./assets/mobile-app-events-3-android.png" width="278"> |
- 
+      >[!BEGINTABS]
+
+      >[!TAB iOS]
+
+      <img src="./assets/mobile-app-events-3.png" width="300">
+
+      >[!TAB Android]
+
+      <img src="./assets/mobile-app-events-3-android.png" width="278">
+
+      >[!ENDTABS]
 
 1. In the Assurance UI, look for the **[!UICONTROL hitReceived]** events from the **[!UICONTROL com.adobe.edge.konductor]** vendor.
 1. Select the event and review the XDM data in the **[!UICONTROL messages]** object. Alternatively, you can use ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy Raw Event]** and use a text or code editor of your preference to paste and inspect the event.

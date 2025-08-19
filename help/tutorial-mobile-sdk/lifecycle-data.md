@@ -69,10 +69,9 @@ Now you can update your project to register the lifecycle events.
 
 >[!TAB Android]
 
-
 1. Navigate to **[!UICONTROL app]** > **[!UICONTROL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio navigator.
 
-1. When launched, if your app is resuming from a background state, Android might call your override fun onActivityPaused function and this is where you want to trigger a lifecycle start event. Add this code to `override fun onActivityResumed(activity: Activity)`:
+1. When launched, if your app is resuming from a background state, Android might call your override `fun onActivityResumed function` and this is where you want to trigger a lifecycle start event. Add this code to `override fun onActivityResumed(activity: Activity)`:
  
    ```kotlin
    // When in foreground start lifecycle data collection
@@ -122,7 +121,9 @@ The previous exercise dispatches the foreground and background events to Adobe E
    1. Select **[!UICONTROL Keep Changes]**.
       ![Rule Event Configuration](assets/rule-event-configuration-background.png){zoomable="yes"}
 1. Back in the **[!UICONTROL Create Rule]** screen, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]** underneath **[!UICONTROL ACTIONS]**.
+   
    ![Rule Add Action](assets/rule-action-button.png){zoomable="yes"}
+
 1. In the **[!UICONTROL Action Configuration]** step:
    1. Select **[!UICONTROL Adobe Experience Edge Network]** as the **[!UICONTROL Extension]**.
    1. Select **[!UICONTROL Forward event to Edge Network]** as the **[!UICONTROL Action Type]**.

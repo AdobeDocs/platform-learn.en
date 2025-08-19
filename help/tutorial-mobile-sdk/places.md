@@ -237,8 +237,11 @@ To validate your setup in Assurance:
 1. Select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) Simulate Load POIs. Your POI is identified using a circle and pin.
 1. Select your POI.
 1. From the popup, select ![Gear](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Gears_18_N.svg) **[!UICONTROL Simulate Entry Event]**.
+   
    ![Simulate Entry Event](assets/places-simulate.png){zoomable="yes"}
+
 1. Select **[!UICONTROL Events]** from the left rail, and you should see the events that you simulated.
+   
    ![AJO Decisioning validation](assets/places-events.png){zoomable="yes"}
 
 
@@ -316,14 +319,14 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 >[!TAB Android]
 
-1. Specify your Maps SDK API key in local.defaults.properties. To reach that file switch the navigator from Android to Project. 
-1. In Android Studio, ensure that [aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. Specify your Maps SDK API key in `local.defaults.properties`. To reach that file switch the navigator from Android to **[!UICONTROL Project]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Start [Luma Android] ]**. Replace `DEFAULT_API_KEY` with the Android Map SDK key.
+1. In Android Studio, ensure that [aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) is part of the depencencies in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]** > **[!UICONTROL build.gradle.kts]** . See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
 1. Ensure `com.adobe.marketing.mobile.Places` is part of your list of imports.
 
     `import import com.adobe.marketing.mobile.Places`
 
-1. Ensure `Places.self` is part of the array of extensions that you are registering.
+1. Ensure `Places.EXTENSION` is part of the array of extensions that you are registering.
 
     ```kotlin
     val extensions = listOf(
@@ -340,7 +343,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     )
     ```
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)` function. Add the following code:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)` function. Add the following code:
 
     ```kotlin
     // Process geolocation event
@@ -349,9 +352,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
     This [`Places.processGeofence`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processgeofence) API communicates the geolocation information to the Places service.
 
-1. 1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LocationView.kt]** in the Android Studio navigator 
+1. 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LocationView.kt]** in the Android Studio navigator 
    
-   1. For the Entry button, enter the following code
+   1. Search for `// Simulate geofence entry event` to enter the following code for the Entry button:
 
     ```kotlin
     // Simulate geofence entry event
@@ -363,7 +366,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
     }
     ```  
 
-   1. For the Exit button, enter the following code
+   1. Search for `// Simulate geofence exit event` to enter the following code for the Exit button:
 
     ```kotlin
     // Simulate geofence exit event
