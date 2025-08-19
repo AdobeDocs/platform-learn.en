@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: 0dcde139-c64e-4cd5-8fcb-c7c40c02ae4b
 ---
 # 1.5.2 Approvals with Frame.io
 
