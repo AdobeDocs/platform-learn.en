@@ -118,9 +118,17 @@ In the **Status** field, change the status to **Needs Review**.
 
 ![Frame.io](./images/frameioappr9.png)
 
-You should then have this.
+You should then have this. Go back to the folder by clicking the arrow to go back.
 
 ![Frame.io](./images/frameioappr10.png)
+
+Click the 3 dots **...** and slect **Rename**.
+
+![Frame.io](./images/frameioappr11.png)
+
+Change the file name to `version1.png`.
+
+![Frame.io](./images/frameioappr12.png)
 
 ## 1.5.2.3 Make design changes in Adobe Express
 
@@ -140,9 +148,47 @@ Click **Download**.
 
 ![WF](./images/frameioasset6.png)
 
-You'll then have a new image downloaded on your local machine.
+You'll then have a new image downloaded on your local machine. Rename the file to `version2.png`.
 
 ![WF](./images/frameioasset7.png)
+
+## 1.5.2.4 Approve version2 in Frame.io
+
+In your folder in Frame.io, click the **+** icon and select **Upload Asset**.
+
+![Frame.io](./images/frameioappr13.png)
+
+Select the file **version2.png** and click **Open**.
+
+![Frame.io](./images/frameioappr14.png)
+
+Next, drag the file **version2.png** on top of the file **version1.png**. This action will enable version stacking in Frame.io.
+
+![Frame.io](./images/frameioappr15.png)
+
+You should then see this.
+
+![Frame.io](./images/frameioappr16.png)
+
+Click the 3 dots **...** on the image and then select **Compare Versions**.
+
+![Frame.io](./images/frameioappr17.png)
+
+You should then see this comparison view which shows both version of the file. Go to **Fields**.
+
+![Frame.io](./images/frameioappr18.png)
+
+CHange the field **Status** to **Approved**.
+
+![Frame.io](./images/frameioappr19.png)
+
+You should then have this. Click the arrow icon to go back to your folder view.
+
+![Frame.io](./images/frameioappr20.png)
+
+Click the 3 dots **...** and select **Download** in case you'd like to use this file in another application.
+
+![Frame.io](./images/frameioappr21.png)
 
 ## Next Steps
 
