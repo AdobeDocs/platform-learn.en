@@ -20,6 +20,22 @@ doc-type: tutorial
 >
 >If you have previously configured an AEM CS Program with an AEM Assets CS environment, it may be that your AEM CS sandbox was hibernated. Given that dehibernating such a sandbox takes 10-15 minutes, it would be a good idea to start the dehibernation process now so that you don't have to wait for it at a later time.
 
+## 1.2.1.1 Workfront Workflow Terminology
+
+The following are the main Workfront objects and concepts:
+
+| Name                   | Last Update | 
+| ---------------------- | ------------ | 
+| Portfolio | A collection of projects that have unifying characteristics. Those projects usually compete for the same resources, budget, or time slot.   |
+| Program | A subset within a portfolio, where similar projects can be grouped together in order to achieve a well-defined benefit. |
+| Project | A large amount of work that must be completed within a specific timeframe and must use a specific budget and number of resources. To make it manageable, you divide the project into a series of tasks. Completing all the tasks results in the completion of the project. |
+| Project Template | You can use project templates to capture most of the repeatable processes, information, and settings associated with the projects in your organization. After creating templates, you can attach them to existing projects, or you can use them to build new projects.  |
+| Task | An activity that must be performed as a step toward achieving a final goal (completing the Project). Tasks can never exist independently. They are always part of a project.|
+| Assignment | A user, job role, or team assigned to an issue or a task. Projects, portfolios, or programs cannot have assignments. |
+| Document/Version | Any file that is attached to an object within Workfront. Each time the same document is uploaded to the same object, it is assigned a version number. Users can view and change several options for a previous version of a document. |
+| Approval | A given work item, such as a task, document, or timesheet, may require that a supervisor or other user sign off on the work item. This process of signing off is called approval. |
+
+
 Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Click to open **Workfront**.
 
 ![Workfront Planning](./../module1.1/images/wfpl1.png)
