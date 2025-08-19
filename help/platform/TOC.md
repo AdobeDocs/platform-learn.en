@@ -120,7 +120,6 @@ Campaigns
     + [Connect to Oracle](audiences/fac/connect-to-oracle.md)
     + [Create a federated audience](audiences/fac/create-a-federated-audience-composition.md)
     + [Subscribe to alerts](audiences/fac/subscribe-to-alerts.md)
-    + [Guide: Engage with audiences from your data warehouse](/help/tutorial-fac-engage-audiences/overview.md)
   + Segment Match{#segment-match}
     + [Segment Match connection setup](/help/platform/audiences/segment-match/segment-match-connection-setup.md)
     + [Segment Match data governance](/help/platform/audiences/segment-match/segment-match-data-governance.md)
@@ -130,6 +129,7 @@ Campaigns
   + Tutorials{#audience-tutorials}
     + [Evaluate an audience rule](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/evaluate-a-segment){target="_blank"}
     + [Create a dataset to export data](https://experienceleague.adobe.com/en/docs/experience-platform/segmentation/tutorials/create-dataset-export-segment){target="_blank"}
+    + [Engage with audiences from your data warehouse](https://experienceleague.adobe.com/en/docs/platform-learn/engage-with-audiences-from-your-data-warehouse-using-fac/overview){target="_blank"}
 + [Audit logs](/help/platform/governance/audit-logs.md)
 + [Data Collection](https://experienceleague.adobe.com/en/docs/platform-learn/data-collection/overview){target="_blank"}
 + Collaboration {#collaboration}
