@@ -9,11 +9,17 @@ exl-id: 8cffcb71-63bd-41cb-b7cd-ab34a0c74499
 
 ## Learning Objectives
 
-- Learn how to use Adobe Workfront in various ways.
+After completing this lab, you will gain familiarity with the following items: 
+
+- Understand the hierarchy of Workfront objects including Portfolios, Programs, Projects, and Tasks
+- Create a new Project with a template tailored for a marketing campaign.
+- Assign Tasks to resources by role and availability.
+- Upload a Document and request approval
+- Send the approved document to AEM Assets CS with built-in integration
 
 ## Prerequisites
 
-- Access to Workfront and Workfront Fusion 
+- Access to Adobe Workfront with a Workfront standard/planner license. 
 
 ## Exercises
 
