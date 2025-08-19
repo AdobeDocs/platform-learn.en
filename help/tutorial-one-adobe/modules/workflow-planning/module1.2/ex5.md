@@ -4,9 +4,9 @@ description: Setup Photoshop + Workfront plugin
 kt: 5342
 doc-type: tutorial
 ---
-# 2.2.5 Setup Photoshop + Workfront plugin
+# 1.2.5 Setup Photoshop + Workfront plugin
 
-## 2.2.5.1 Install Workfront for Photoshop plugin
+## 1.2.5.1 Install Workfront for Photoshop plugin
 
 To set up the integration between Workfront and Photoshop, install the Creative Cloud application on your computer. Log in using your Adobe ID.
 
@@ -36,7 +36,7 @@ You'll then see this.
 
 ![WF](./images/wf7.png)
 
-## 2.2.5.2 Configure the plugin in Photoshop
+## 1.2.5.2 Configure the plugin in Photoshop
 
 Open Photoshop. In the Task Bar, go to **Plugins** > **Workfront for Adobe Photoshop** > click **Adobe Workfront**.
 

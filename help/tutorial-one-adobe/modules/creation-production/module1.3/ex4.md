@@ -61,7 +61,7 @@ Click **View and fix issues**.
 
 ![GSPeM](./images/gsemail9.png)
 
-You can then see more detail as to what you can do to optimize the complicancy score.
+You can then see more detail as to what you can do to optimize the compliancy score.
 
 ![GSPeM](./images/gsemail10.png)
 
