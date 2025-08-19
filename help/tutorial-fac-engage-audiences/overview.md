@@ -28,7 +28,7 @@ SecurFinancial would like to launch an email campaign to retarget its customers 
 
 ## Guide
 
-This guide demonstrates how we support the SecureFinancial Business scneario. Specfically, it covers how we expose audiences to systems that need these audiences, including an S3 storage account, a journey in Journey Optimizer to drive an email campaign, and onsite retargeting to customers who were pre-approved for a loan.
+This guide demonstrates how we support the SecureFinancial Business scenario. Specfically, it covers how we expose audiences to systems that need these audiences, including an S3 storage account, a journey in Journey Optimizer to drive an email campaign, and onsite retargeting to customers who were pre-approved for a loan.
 
 The steps, include:
 
