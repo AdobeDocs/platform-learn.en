@@ -266,7 +266,7 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
 
 ## Validate with identity graph
 
-Once you complete the steps in the [Experience Platform lesson](platform.md), you are able to confirm the identity capture in Platforms identity graph viewer:
+Once you complete the steps in the [Experience Platform lesson](platform.md), you are able to confirm the identity capture in the Experience Platform identity graph viewer:
 
 1. Select **[!UICONTROL Identities]** in the Data Collection UI.
 1. Select **[!UICONTROL Identity Graph]** from the top bar.

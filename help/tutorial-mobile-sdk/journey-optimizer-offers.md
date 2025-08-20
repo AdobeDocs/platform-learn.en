@@ -247,10 +247,14 @@ See [Key steps to create and manage offers](https://experienceleague.adobe.com/d
    1. In the **[!UICONTROL Evaluation Criteria]** tile, select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) **[!UICONTROL Add]**.
       1. In the **[!UICONTROL Add Offer Collection]** dialog, select your offer collection. For example, **[!DNL Luma - Mobile App Collection]**.
       1. Select **[!UICONTROL Add]**.
-         ![Decision - Select collection](assets/ajo-decision-selectcollection.png){zoomable="yes"} 
+   
+         ![Decision - Select collection](assets/ajo-decision-selectcollection.png){zoomable="yes"}
+
    1. Ensure that **[!UICONTROL None]** is selected for **[!UICONTROL Eligibility]**, and **[!UICONTROL Offer priority]** is selected as the **[!UICONTROL Ranking method]**. 
    1. Select **[!UICONTROL Next]**.
-      ![Decision scopes](assets/ajo-decision-scopes.png){zoomable="yes"}. 
+   
+      ![Decision scopes](assets/ajo-decision-scopes.png){zoomable="yes"}
+
 1. In the **[!UICONTROL Add fallback offer]** step of **[!UICONTROL Create a new offer decision]**:
    1. Select your fallback offer, for example the **[!DNL Luma - Fallback offer]**.
    1. Select **[!UICONTROL Next]**.
@@ -266,7 +270,9 @@ Your offer decision, consisting of a set of offers, is now ready for use. To use
 1. Select your decision, for example **[!DNL Luma - Mobile App Decision]**.
 1. In the **[!UICONTROL Decision scopes]** tile, select ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy]**.
 1. From the contextual menu, select **[!UICONTROL Decision scope]**.
+   
    ![Copy decision scope](assets/ajo-copy-decisionscope.png){zoomable="yes"} 
+
 1. Use any text editor to paste the decision scope for later use. The decision scope has the following JSON format.
 
     ```json
@@ -381,15 +387,15 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 >[!TAB Android]
 
 
-1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]** in the Android Studio navigator.
+1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the depencencies in **[!UICONTROL build.gradle.kts (Module :app)]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]** in the Android Studio navigator.
 1. Ensure `Optimize` is part of your list of imports.
 
    ```kotlin
    import com.adobe.marketing.mobile.optimize.Optimize
    ```
    
-1. Ensure `Optimize.self` is part of the array of extensions that you are registering.
+1. Ensure `Optimize.EXTENSION` is part of the array of extensions that you are registering.
 
    ```kotlin
    val extensions = listOf(
@@ -406,9 +412,9 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    )
    ```
 
-1. Navigate to **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decisions.json]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details you copied from the Journey Optimizer interface.
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL assets]** > **[!DNL data]** > **[!UICONTROL decisions.json]** in the Xcode Project navigator. Update the `activityId` and `placementId` values with the decision scope details you copied from the Journey Optimizer interface.
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > MobileSDK in the Android Studio navigator. Find the `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) ` function. Add the following code:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the `suspend fun updatePropositionsOD(ecid: String,        activityId: String, placementId: String, itemCount: Int) ` function. Add the following code:
 
    ```kotlin
    // set up the XDM dictionary, define decision scope and call update proposition API
@@ -452,7 +458,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
    * calls two APIs: [`Optimize.clearCachePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#clearpropositions)  and [`Optimize.updatePropositions`](https://developer.adobe.com/client-sdks/edge/adobe-journey-optimizer-decisioning/api-reference/#updatepropositionswithcompletionhandler).  These functions clear any cached propositions and update the propositions for this profile.
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL EdgeOffers.kt]** in the Xcode Project navigator. Find the `suspend fun onPropositionsUpdateOD(ecid: String, activityId: String, placementId: String, itemCount: Int)` function and inspect the code of this function. The most important part of this function is the [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL EdgeOffers.kt]** in the Xcode Project navigator. Find the `suspend fun onPropositionsUpdateOD(ecid: String, activityId: String, placementId: String, itemCount: Int)` function and inspect the code of this function. The most important part of this function is the [`Optimize.onPropositionsUpdate`](https://developer.adobe.com/client-sdks/documentation/adobe-journey-optimizer-decisioning/api-reference/#onpropositionsupdate) API call, which 
    
     * retrieves the propositions for the current profile based on the decision scope (which you have defined in Journey Optimizer - Decision Management), 
     * retrieves the offer from the proposition,

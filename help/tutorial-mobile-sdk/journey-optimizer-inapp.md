@@ -146,13 +146,13 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 >[!TAB Android]
 
-1. In Android Studio, ensure that [aepsdk-messaing-android](https://github.com/adobe/aepsdk-messaging-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. In Android Studio, ensure that [aepsdk-messaging-android](https://github.com/adobe/aepsdk-messaging-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
 1. Ensure `com.adobe.marketing.mobile.Messaging` is part of your list of imports.
 
     `import import com.adobe.marketing.mobile.Messaging`
 
-1. Ensure `Messaging.self` is part of the array of extensions that you are registering.
+1. Ensure `Messaging.EXTENSION` is part of the array of extensions that you are registering.
 
     ```kotlin
     val extensions = listOf(
@@ -277,7 +277,7 @@ You have all the ingredients in place to send an in-app message. What remains is
 
 >[!TAB Android]
 
-1. Go to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the `fun sendTrackAction(action: String, data: Map<String, String>?)` function, and add the following code, which calls the [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) function, based on the parameters `action` and `data`.
+1. Go to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the `fun sendTrackAction(action: String, data: Map<String, String>?)` function, and add the following code, which calls the [`MobileCore.track`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) function, based on the parameters `action` and `data`.
 
     
     ```kotlin
@@ -285,7 +285,7 @@ You have all the ingredients in place to send an in-app message. What remains is
     MobileCore.track(action, data)
     ```  
 
-1. Go to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.androi]** > **[!DNL views]** > **[!UICONTROL ConfigView.kt]** in the Android Studio navigator. Find the code for the `onInAppMessageClick` handler button and add the following code:
+1. Go to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.androi]** > **[!DNL views]** > **[!UICONTROL ConfigView.kt]** in the Android Studio navigator. Find the code for the `onInAppMessageClick` handler button and add the following code:
 
     ```kotlin
     // Setting parameters and calling function to send in-app message

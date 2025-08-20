@@ -83,6 +83,8 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 ### Install Adobe Journey Optimizer - Decisioning tags extension
 
+Although this lesson is about A/B tests in Target, the result of the tests are seen as an offer and are implemented in the Adobe infrastructure using the Adobe Journey Optimizer - Decisioning tags extension. That extension handles both offers served by Journey Optimizer and Target.
+
 1. Navigate to **[!UICONTROL Tags]**, find your mobile tag property, and open the property.
 1. Select **[!UICONTROL Extensions]**.
 1. Select **[!UICONTROL Catalog]**.
@@ -264,7 +266,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 >[!TAB Android]
 
-1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. In Android Studio, ensure that [aepsdk-optimize-android](https://github.com/adobe/aepsdk-optimize-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
 1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL MainActivity]** in the Android Studio navigator.
 1. Ensure `Optimize` is part of your list of imports.
 
@@ -272,7 +274,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    import com.adobe.marketing.mobile.optimize.Optimize
    ```
    
-1. Ensure `Optimize.self` is part of the array of extensions that you are registering.
+1. Ensure `Optimize.EXTENSION` is part of the array of extensions that you are registering.
 
    ```kotlin
    val extensions = listOf(
@@ -289,7 +291,7 @@ As discussed in previous lessons, installing a mobile tag extension only provide
    )
    ```
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the ` suspend fun updatePropositionsAT(ecid: String, location: String)` function. Add the following code:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator. Find the ` suspend fun updatePropositionsAT(ecid: String, location: String)` function. Add the following code:
 
     ```kotlin
     // set up the XDM dictionary, define decision scope and call update proposition API

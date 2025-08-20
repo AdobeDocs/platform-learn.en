@@ -67,6 +67,7 @@ The following steps are not Adobe Experience Cloud-specific and are designed to 
 
 1. In the Apple developer portal, navigate to **[!UICONTROL Keys]**.
 1. To create a key, select **[!UICONTROL +]**.
+   
    ![create new key](assets/mobile-push-apple-dev-new-key.png){zoomable="yes"}
 
 1. Provide a **[!UICONTROL Key Name]**.
@@ -74,7 +75,9 @@ The following steps are not Adobe Experience Cloud-specific and are designed to 
    1. In the **[!UICONTROL Configue Key]** screen, select **[!UICONTROL Sandbox & Production]** from the **[!UICONTROL Environment]** drop-down menu.
    1. Select **[!UICONTROL Save]**.
 1. Select **[!UICONTROL Continue]**.
+   
    ![configure new key](assets/mobile-push-apple-dev-config-key.png){zoomable="yes"}
+
 1. Review the configuration and select **[!UICONTROL Register]**.
 1. Download the `.p8` private key. It is used in the next exercise when you configure your Journey Optimizer push credential.
 1. Make note of the **[!UICONTROL Key ID]**. It is used in the next exercise when you configure your Journey Optimizer push credential. 
@@ -95,11 +98,13 @@ The following steps are not Adobe Experience Cloud-specific and are designed to 
    1. Disable **[!UICONTROL Google Analytics for this project]** and select **[!UICONTROL Continue]** in **[!UICONTROL Create a project]** - **[!UICONTROL Google Analytics for your Firebase project]**.
    1. Select **[!UICONTROL Create Project]**. 
    1. After a the project is ready, select **[!UICONTROL Continue]**.
+   
 1. Back in the Firebase console, ensure your project is selected at the top. For example **[!UICONTROL Luma Android App]**.
-
-   ![Firebase console](assets/fcm-1.png){zoomable="yes"}.
+   
+    ![Firebase console](assets/fcm-1.png){zoomable="yes"}
 
 1. Select ![Setting](/help/assets/icons/Setting.svg) > **[!UICONTROL Project Settings]**.
+   
 1. In **[!UICONTROL Project settings]**, select **[!UICONTROL Add app]**.
    1. In the **[!UICONTROL Add Firebase to your app]**, select **[!UICONTROL Android]** as the platform.
    1. In the **[!UICONTROL Add Firebase to your Android app:]**
@@ -141,7 +146,7 @@ Next you need to add your mobile application push credentials to authorize Adobe
       1. Enter your **[!UICONTROL App ID]**, for example `com.adobe.luma.tutorial.android`.
       1. Select the sandbox (optional).
       1. Enable **[!UICONTROL Push Credentials]**.
-      1. Drop the saved `luma-android-app-firebase-adminsdk-xxxx-xxxxxxxx.json` file ono `Drag and Drop Your File`.
+      1. Drop the saved `luma-android-app-firebase-adminsdk-xxxx-xxxxxxxx.json` file onto **[!UICONTROL Drag and Drop Your File]**.
 
    ![Create a new push credential configuration in Journey Optimizer](assets/add-push-credentials.png){zoomable="yes"}
 
@@ -172,7 +177,7 @@ Once you have created a push credential configuration, you must create a configu
 
 1. Choose your **[!UICONTROL Platform]**. You can configure both **[!UICONTROL iOS]** and **[!UICONTROL Android]** for a channel configuration.
 
-1. Select the appropriate **[!UICONTROL App id]** you used earlier to define your push credentials. For example com.adobe.luma.tutorial.swiftui for iOS and com.adobe.luma.tutorial.android for Android. The green ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) indicate valid push credentials are associated with this channel configuration.
+1. Select the appropriate **[!UICONTROL App id]** you used earlier to define your push credentials. For example **[!UICONTROL com.adobe.luma.tutorial.swiftui]** for iOS and **[!UICONTROL com.adobe.luma.tutorial.android]** for Android. The green ![CheckmarkCircle](/help/assets/icons/CheckmarkCircle.svg) indicate valid push credentials are associated with a channel configuration.
 
    
    ![Push channel configuration](assets/push-config-10.png){zoomable="yes"}
@@ -273,7 +278,7 @@ To update the signing for your app:
    >Ensure you use a _unique_ bundle identifier and replace the `com.adobe.luma.tutorial.swiftui` bundle identifier, as each bundle identifier must be unique. Typically, you use a reverse-DNS format for bundle ID strings, like `com.organization.brand.uniqueidentifier`. The Finished version of this tutorial, for example, uses `com.adobe.luma.tutorial.swiftui`.
 
 
-    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}{zoomable="yes"}
+    ![Xcode signing capabilities](assets/xcode-signing-capabilities.png){zoomable="yes"}
 
 
 ## Add push notification capabilities to your app
@@ -346,13 +351,13 @@ As discussed in previous lessons, installing a mobile tag extension only provide
 
 >[!TAB Android]
 
-1. In Android Studio, ensure that [aepsdk-messaing-android](https://github.com/adobe/aepsdk-messaging-android) is part of the depencencies in **[!UICONTROL build.gradle.kts]** in **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. In Android Studio, ensure that [aepsdk-messaing-android](https://github.com/adobe/aepsdk-messaging-android) is part of the depencencies in **[!UICONTROL build.gradle.kts (Module :app)]** in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) **[!UICONTROL Gradle Scripts]**. See [Gradle](install-sdks.md#gradle).
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
 1. Ensure `com.adobe.marketing.mobile.Messaging` is part of your list of imports.
 
     `import import com.adobe.marketing.mobile.Messaging`
 
-1. Ensure `Messaging.self` is part of the array of extensions that you are registering.
+1. Ensure `Messaging.EXTENSION` is part of the array of extensions that you are registering.
 
     ```kotlin
     val extensions = listOf(
@@ -393,7 +398,7 @@ You need to register the device token for push notifications.
 
 >[!TAB Android]
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
 1. Add the [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API to the `override fun onCreate()` function in `class LumaAplication : Application`, in `FirebaseMessaging.getInstance().token.addOnCompleteListener`.
 
     ```kotlin      
@@ -427,6 +432,7 @@ You are going to define a new event type, not available yet as part of the list 
    1. In the **[!UICONTROL Field properties]** pane, scroll down to see the list of possible values for event type. Select **[!UICONTROL Add row]**, and add `application.test` as the **[!UICONTROL VALUE]** and `[!UICONTROL Test event for push notification]` as the `DISPLAY NAME`.
    1. Select **[!UICONTROL Apply]**.
    1. Select **[!UICONTROL Save]**.
+   
       ![Add value to event types](assets/ajo-update-schema-eventtype-enum.png){zoomable="yes"}
 
 ### Define an event
@@ -494,13 +500,15 @@ Your next step is to create the journey that triggers the sending of the push no
    
     1. Provide a **[!UICONTROL Label]**, for example `Luma Test Push Notification`, provide a **[!UICONTROL Description]**, for example `Test push notification for Luma mobile app`, select **[!UICONTROL Transactional]** from the **[!UICONTROL Category]** list and select **[!DNL Luma]** from the **[!UICONTROL Push surface]**.
     1. Select ![Edit](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Edit_18_N.svg) **[!UICONTROL Edit content]** to start editing the actual push notification.
+   
        ![Push properties](assets/ajo-push-properties.png){zoomable="yes"}
 
        In the **[!UICONTROL Push Notification]** editor:
 
        1. Enter a **[!UICONTROL Title]**, for example `Luma Test Push Notification` and enter a **[!UICONTROL Body]**, for example `Test push notification for Luma mobile app`.
-       1. Optionally, you can enter a link to an image (.png or .jpg) in **[!UICONTROL Add media]**. If you do so, the image will be part of the push notification.
+       1. Optionally, you can enter a link to an image (.png or .jpg) in **[!UICONTROL Add media]**. If you do so, the image will be part of the push notification. Note, that if you do, you need to take care of properly handling the image in your mobile app.
        1. To save and leave the editor, select ![Chevron left](https://spectrum.adobe.com/static/icons/workflow_18/Smock_ChevronLeft_18_N.svg).
+   
           ![Push editor](assets/ajo-push-editor.png){zoomable="yes"}
 
     1. To save and finish the push notification definition, select **[!UICONTROL Ok]**.
@@ -538,7 +546,7 @@ Be aware that solely for illustration purposes you send a push notification from
    }
    ```
 
-   The code is a representation of the following simple payload that you are going to send to trigger your test push notification journey
+   The code is a representation of the following simple payload that you are going to send to trigger your test push notification journey.
 
    ```json
    {
@@ -582,7 +590,7 @@ Be aware that solely for illustration purposes you send a push notification from
 
 >[!TAB Android]
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL xdm]** > **[!UICONTROL TestPushPayload.kt]** in the Android Studio navigator and inspect the code.
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL xdm]** > **[!UICONTROL TestPushPayload.kt]** in the Android Studio navigator and inspect the code.
 
    ```kotlin
    import com.google.gson.annotations.SerializedName
@@ -610,7 +618,7 @@ Be aware that solely for illustration purposes you send a push notification from
    }
    ```
 
-   The code is a representation of the following simple payload that you are going to send to trigger your test push notification journey
+   The code is a representation of the following simple payload that you are going to send to trigger your test push notification journey.
 
    ```json
    {
@@ -621,7 +629,7 @@ Be aware that solely for illustration purposes you send a push notification from
    }
    ```
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to `func sendTestPushEvent(applicationId: String, eventType: String)`:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
    ```kotlin
    // Create payload and send experience event
@@ -634,10 +642,9 @@ Be aware that solely for illustration purposes you send a push notification from
 
    This code creates a `testPushPayload` instance using the parameters provided to the function (`applicationId` and `eventType`) and then calls `sendExperienceEvent` while converting the payload to a map.
 
-1. Navigate to **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.android.tutorial]** > **[!DNL views]** > **[!UICONTROL ConfigView.kt]** in the Android Studio navigator. In the Push Notification Button definition, add the following code to send the test push notification experience event payload to trigger your journey whenever that button is tapped.
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.android.tutorial]** > **[!DNL views]** > **[!UICONTROL ConfigView.kt]** in the Android Studio navigator. In the Push Notification Button definition, add the following code to send the test push notification experience event payload to trigger your journey whenever that button is tapped.
 
    ```kotlin
-
    // Setting parameters and calling function to send push notification
    val eventType = testPushEventType
    val applicationId = context.packageName
@@ -679,7 +686,7 @@ To validate the push notification event and journey:
 
 1. Tap **[!UICONTROL Push Notification]**. 
 
-   You see a push notification indicator at the top bar. Drag down to reveal the push notification on top of the app.
+   You see the push notification appear on top of the app.
 
    <img src="assets/ajo-test-push-android.png" width=300/>
 
