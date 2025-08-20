@@ -10,6 +10,8 @@ doc-type: Tutorial
 
 
 
+![ETL](./images/s3.jpeg){width="50px" align="left"}
+
 ## Next Steps
 
 Go to [-](./ex2.md){target="_blank"}
