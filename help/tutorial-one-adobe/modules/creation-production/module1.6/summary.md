@@ -11,6 +11,6 @@ Thank you for investing your time in learning about Adobe GenStudio for Performa
 
 ## Next steps
 
-Go back to [GenStudio for Performance Marketing](./genstudio.md){target="_blank"}
+Go back to [GenStudio for Performance Marketing - Extensibility](./genstudioext.md){target="_blank"}
 
 Go back to [All Modules](./../../../overview.md){target="_blank"}
