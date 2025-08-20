@@ -65,7 +65,7 @@ To ensure data sent from your mobile app to Platform Edge Network is forwarded t
    
 
 
-### Install Journey Optimizer - Decisioning tags extension
+### Install Offer Decisioning and Target tags extension
 
 1. Navigate to **[!UICONTROL Tags]** and find your mobile tag property and open the property.
 1. Select **[!UICONTROL Extensions]**.

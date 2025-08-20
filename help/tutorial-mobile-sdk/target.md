@@ -83,7 +83,7 @@ To ensure data send from your mobile app to the Edge Network is forwarded to Jou
 
 ### Install Offer Decisioning and Target tags extension
 
-Although this lesson is about A/B tests in Target, the result of the tests are seen as an offer and are implemented in the Adobe infrastructure using the Adobe Journey Optimizer - Decisioning tags extension. That extension handles both offers served by Journey Optimizer and Target.
+Although this lesson is about A/B tests in Target, the result of the tests are seen as an offer and are implemented in the Adobe infrastructure using the Adobe Offer Decisioning and Target tags extension. That extension handles both offers served by Journey Optimizer and Target.
 
 1. Navigate to **[!UICONTROL Tags]**, find your mobile tag property, and open the property.
 1. Select **[!UICONTROL Extensions]**.
