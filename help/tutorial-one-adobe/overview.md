@@ -84,11 +84,19 @@ In this module, you will use Adobe Express to create images and videos, and you'
 
 In this module, you will use Adobe Frame.io in combination with Adobe Premiere Pro to collaborate and review images and videos.
 
+[1.6 GenStudio for Performance Marketing - Extensibility](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}
+
+In this module, you will build a custom application to extend capability in GenStudio for Performance Marketing, using Adobe IO and App Builder.
+
 ### 3. Asset Management
 
 [1.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"}
 
-In this foundational module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
+In this module, you will setup your Adobe Experience Manager Cloud Service Program, Site and Assets repository.
+
+[1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"}
+
+In this module, you will explore AEM Assets.
 
 ### 4. Delivery & Activation
 

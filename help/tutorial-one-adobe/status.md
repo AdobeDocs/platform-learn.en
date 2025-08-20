@@ -30,13 +30,15 @@ Below is an overview of the status of the content in this tutorial.
 | [1.3 GenStudio for Performance Marketing](./modules/creation-production/module1.3/genstudio.md){target="_blank"} | 16/06/2025  | Yes         | - |
 | [1.4 Adobe Express and Adobe Experience Cloud](./modules/creation-production/module1.4/express.md){target="_blank"} | 01/04/2025  | Yes         | - |
 | [1.5 Streamline your workflow with Frame.io](./modules/creation-production/module1.5/frameio.md){target="_blank"}| 02/08/2025  | Yes         | - |
+| [1.6 GenStudio for Performance Marketing - Extensibility](./modules/creation-production/module1.6/genstudioext.md){target="_blank"}| 20/08/2025  | -         | - |
 
 
 ## 3. Asset Management
 
 | Name                   | Last Update | Working 100% | Remarks |
 | ---------------------- | ------------ | ------------ |------------ |
-| [2.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025  | Yes         | - |
+| [1.1 Adobe Experience Manager Cloud Service & Edge Delivery Services](./modules/asset-mgmt/module2.1/aemcs.md){target="_blank"} | 01/05/2025  | Yes         | - |
+| [1.2 Adobe Experience Manager Assets](./modules/asset-mgmt/module2.2/aemassets.md){target="_blank"} | 20/08/2025  | Yes         | - |
 
 ## 4. Delivery & Activation
 

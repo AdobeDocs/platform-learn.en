@@ -75,6 +75,13 @@ recommendations: noDisplay,noCatalog
     + [1.5.2 Approvals with Frame.io](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex2.md)
     + [1.5.3 Frame.io and Premiere Pro](/help/tutorial-one-adobe/modules/creation-production/module1.5/ex3.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.5/summary.md)
+  + 1.6 GenStudio for Performance Marketing - Extensibility {#crpr6}  
+    + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
+    + [1.6.1 Adobe IO and App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
+    + [1.6.2 Create your AWS S3 bucket](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
+    + [1.6.3 Create your external DAM app](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+    + [1.6.4 Deploy your code and publish your app privately](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+    + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + Asset Management {#assetmgmt}
   + 1.1 Adobe Experience Manager Cloud Service {#assetm1}
