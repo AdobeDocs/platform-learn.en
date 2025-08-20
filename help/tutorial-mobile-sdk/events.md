@@ -57,38 +57,38 @@ For the standard field groups, the process looks like:
 
 * To construct an object containing the experience event data in your app, you would use code like:
 
-  >[!BEGINTABS]
+>[!BEGINTABS]
 
-  >[!TAB iOS]
+>[!TAB iOS]
 
-  ```swift
-  var xdmData: [String: Any] = [
-      "eventType": "commerce.productViews",
-      "commerce": [
-          "productViews": [
-            "value": 1
-          ]
-      ]
-  ]
-  ```
+```swift
+var xdmData: [String: Any] = [
+    "eventType": "commerce.productViews",
+    "commerce": [
+        "productViews": [
+        "value": 1
+        ]
+    ]
+]
+```
 
-  >[!TAB Android]
+>[!TAB Android]
 
-  ```kotlin
-  val xdmData = mapOf(
-      "eventType" to "commerce.productViews",
-      "commerce" to mapOf(
-         "productViews" to mapOf(
-            "value": 1
-         )
-      )
-  )
-  ```
+```kotlin
+val xdmData = mapOf(
+    "eventType" to "commerce.productViews",
+    "commerce" to mapOf(
+        "productViews" to mapOf(
+        "value": 1
+        )
+    )
+)
+```
 
-  >[!ENDTABS]
+>[!ENDTABS]
 
-   * `eventType`: Describes the event that occurred, use a [known value](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) when possible.
-   * `commerce.productViews.value`: the numeric or boolean value of the event. If it's a Boolean (or "Counter" in Adobe Analytics), the value is always set to 1. If it's a numeric or currency event, the value can be > 1.
+  * `eventType`: Describes the event that occurred, use a [known value](https://github.com/adobe/xdm/blob/master/docs/reference/classes/experienceevent.schema.md#xdmeventtype-known-values) when possible.
+  * `commerce.productViews.value`: the numeric or boolean value of the event. If it's a Boolean (or "Counter" in Adobe Analytics), the value is always set to 1. If it's a numeric or currency event, the value can be > 1.
 
 * In your schema, identify any additional data associated with the commerce product view event. In this example, include **[!UICONTROL productListItems]** which is a standard set of fields used with any commerce-related event:
       
@@ -97,85 +97,85 @@ For the standard field groups, the process looks like:
 
 * To add this data, expand your `xdmData` object to include supplementary data:
 
-  >[!BEGINTABS]
+>[!BEGINTABS]
 
-  >[!TAB iOS]
-  
-  ```swift
-  var xdmData: [String: Any] = [
-      "eventType": "commerce.productViews",
-      "commerce": [
-          "productViews": [
-              "value": 1
-          ]
-      ],
-      "productListItems": [
-          [
-              "name":  productName,
-              "SKU": sku,
-              "priceTotal": priceString,
-              "quantity": 1
-          ]
-      ]
-  ]
-  ```
+>[!TAB iOS]
 
-  >[!TAB Android]
-
-  ```kotlin
-  val xdmData = mapOf(
-      "eventType" to "commerce.productViews",
-      "commerce" to mapOf(
-         "productViews" to mapOf(
+```swift
+var xdmData: [String: Any] = [
+    "eventType": "commerce.productViews",
+    "commerce": [
+        "productViews": [
             "value": 1
-         )
-      ),
-      "productListItems" to mapOf(
-          "name": productName,
-          "SKU": sku,
-          "priceTotal", priceString,
-          "quantity", 1
-      )
-  )
-  ```
+        ]
+    ],
+    "productListItems": [
+        [
+            "name":  productName,
+            "SKU": sku,
+            "priceTotal": priceString,
+            "quantity": 1
+        ]
+    ]
+]
+```
 
-  >[!ENDTABS]
+>[!TAB Android]
+
+```kotlin
+val xdmData = mapOf(
+    "eventType" to "commerce.productViews",
+    "commerce" to mapOf(
+        "productViews" to mapOf(
+        "value": 1
+        )
+    ),
+    "productListItems" to mapOf(
+        "name": productName,
+        "SKU": sku,
+        "priceTotal", priceString,
+        "quantity", 1
+    )
+)
+```
+
+>[!ENDTABS]
 
 * You now can use this data structure to create an `ExperienceEvent`:
 
-  >[!BEGINTABS]
+>[!BEGINTABS]
 
-  >[!TAB iOS]
+>[!TAB iOS]
 
-  ```swift
-  let productViewEvent = ExperienceEvent(xdm: xdmData)
-  ```
+```swift
+let productViewEvent = ExperienceEvent(xdm: xdmData)
+```
 
-  >[!TAB Android]
+>[!TAB Android]
 
-  ```kotlin
-  val productViewEvent = ExperienceEvent.Builder().setXdmSchema(xdmData).build()
-  ```
+```kotlin
+val productViewEvent = ExperienceEvent.Builder().setXdmSchema(xdmData).build()
+```
 
-  >[!ENDTABS]
+>[!ENDTABS]
 
 * And send the event and data to Platform Edge Network using the `sendEvent` API:
 
-  >[!BEGINTABS]
+>[!BEGINTABS]
 
-  >[!TAB iOS]
+>[!TAB iOS]
 
-  ```swift
-  Edge.sendEvent(experienceEvent: productViewEvent)
-  ```
- 
-  >[!TAB Android]
+```swift
+Edge.sendEvent(experienceEvent: productViewEvent)
+```
 
-  ```kotlin
-  Edge.sendEvent(productViewEvent, null)
-  ```
+>[!TAB Android]
 
-  >[!ENDTABS]
+```kotlin
+Edge.sendEvent(productViewEvent, null)
+```
+
+>[!ENDTABS]
 
 
 The [`Edge.sendEvent`](https://developer.adobe.com/client-sdks/documentation/edge-network/api-reference/#sendevent) API is the AEP Mobile SDK equivalent to the [`MobileCore.trackAction`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackaction) and [`MobileCore.trackState`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#trackstate) API calls. See [Migrate from Analytics mobile extension to Adobe Experience Platform Edge Network](https://developer.adobe.com/client-sdks/documentation/adobe-analytics/migrate-to-edge-network/) for more information.
@@ -337,126 +337,126 @@ Imagine you want to track screen views and interactions in the app itself. Remem
   >
   >* Custom fields groups always begin under an object unique to your Experience Cloud Org, `_techmarketingdemos` in this example.
 
-  For the app interaction event, you would construct an object like:
+* For the app interaction event, you would construct an object like:
 
-  >[!BEGINTABS]
+>[!BEGINTABS]
 
-  >[!TAB iOS]
+>[!TAB iOS]
 
-    ```swift
-    let xdmData: [String: Any] = [
-        "eventType": "application.interaction",
-        "_techmarketingdemos": [
-        "appInformation": [
-            "appInteraction": [
-                "name": "login",
-                "appAction": [
-                    "value": 1
-                    ]
+```swift
+let xdmData: [String: Any] = [
+    "eventType": "application.interaction",
+    "_techmarketingdemos": [
+    "appInformation": [
+        "appInteraction": [
+            "name": "login",
+            "appAction": [
+                "value": 1
                 ]
             ]
         ]
     ]
-    ```
+]
+```
 
-  >[!TAB Android]
+>[!TAB Android]
 
-    ```kotlin
-    val xdmData = mapOf(
-        "eventType" to "application.interaction",
-        "_techmarketingdemos" to mapOf(
-            "appInformation" to mapOf(
-                "appInteraction" to mapOf(
-                    "name" to "login",
-                    "appAction" to mapOf("value" to 1)
-                )
+```kotlin
+val xdmData = mapOf(
+    "eventType" to "application.interaction",
+    "_techmarketingdemos" to mapOf(
+        "appInformation" to mapOf(
+            "appInteraction" to mapOf(
+                "name" to "login",
+                "appAction" to mapOf("value" to 1)
             )
         )
     )
-    ```
+)
+```
 
-  >[!ENDTABS]
+>[!ENDTABS]
 
-  For the screen tracking event, you would construct an object like:
+* For the screen tracking event, you would construct an object like:
 
-  >[!BEGINTABS]
+>[!BEGINTABS]
 
-  >[!TAB iOS]
+>[!TAB iOS]
 
-    ```swift
-    var xdmData: [String: Any] = [
-        "eventType": "application.scene",
-        "_techmarketingdemos": [
-            "appInformation": [
-                "appStateDetails": [
-                    "screenType": "App",
-                    "screenName": "luma: content: ios: us: en: login",
-                    "screenView": [
-                        "value": 1
-                    ]
+```swift
+var xdmData: [String: Any] = [
+    "eventType": "application.scene",
+    "_techmarketingdemos": [
+        "appInformation": [
+            "appStateDetails": [
+                "screenType": "App",
+                "screenName": "luma: content: ios: us: en: login",
+                "screenView": [
+                    "value": 1
                 ]
-            ] 
-        ]
+            ]
+        ] 
     ]
-    ```
+]
+```
 
-  >[!TAB Android]
+>[!TAB Android]
 
-    ```kotlin
-    val xdmData = mapOf(
-        "eventType" to "application.scene",
-        tenant.value to mapOf(
-            "appInformation" to mapOf(
-                "appStateDetails" to mapOf(
-                    "screenType" to "App",
-                    "screenName" to stateName,
-                    "screenView" to mapOf("value" to 1)
-                )
+```kotlin
+val xdmData = mapOf(
+    "eventType" to "application.scene",
+    tenant.value to mapOf(
+        "appInformation" to mapOf(
+            "appStateDetails" to mapOf(
+                "screenType" to "App",
+                "screenName" to stateName,
+                "screenView" to mapOf("value" to 1)
             )
         )
     )
-    ```
+)
+```
 
-  >[!ENDTABS]
+>[!ENDTABS]
 
 
 
 * You now can use this data structure to create an `ExperienceEvent`.
 
-  >[!BEGINTABS]
+>[!BEGINTABS]
 
-  >[!TAB iOS]
+>[!TAB iOS]
 
-    ```swift
-    let event = ExperienceEvent(xdm: xdmData)
-    ```
+```swift
+let event = ExperienceEvent(xdm: xdmData)
+```
 
-  >[!TAB Android]
+>[!TAB Android]
 
-    ```kotlin
-    val event = ExperienceEvent(xdmData)
-    ```
+```kotlin
+val event = ExperienceEvent(xdmData)
+```
 
-  >[!ENDTABS]
+>[!ENDTABS]
 
 
 * Send the event and data to Platform Edge Network.
 
-  >[!BEGINTABS]
+>[!BEGINTABS]
 
-  >[!TAB iOS]
+>[!TAB iOS]
 
-    ```swift
-    Edge.sendEvent(experienceEvent: event)
-    ```
+```swift
+Edge.sendEvent(experienceEvent: event)
+```
 
-  >[!TAB Android]
+>[!TAB Android]
 
-    ```kotlin
-    Edge.sendEvent(event, null)
-    ```
+```kotlin
+Edge.sendEvent(event, null)
+```
 
-  >[!ENDTABS]
+>[!ENDTABS]
 
 Again, lets actually implement this code in your project. 
 
@@ -627,17 +627,17 @@ Again, lets actually implement this code in your project.
    1. Select <img src="assets/addtocart.png" width="20"/>.
    1. Select <img src="assets/purchase.png" width="15"/>.
 
-      >[!BEGINTABS]
+>[!BEGINTABS]
 
-      >[!TAB iOS]
+>[!TAB iOS]
 
-      <img src="./assets/mobile-app-events-3.png" width="300">
+<img src="./assets/mobile-app-events-3.png" width="300">
 
-      >[!TAB Android]
+>[!TAB Android]
 
-      <img src="./assets/mobile-app-events-3-android.png" width="278">
+<img src="./assets/mobile-app-events-3-android.png" width="278">
 
-      >[!ENDTABS]
+>[!ENDTABS]
 
 1. In the Assurance UI, look for the **[!UICONTROL hitReceived]** events from the **[!UICONTROL com.adobe.edge.konductor]** vendor.
 1. Select the event and review the XDM data in the **[!UICONTROL messages]** object. Alternatively, you can use ![Copy](https://spectrum.adobe.com/static/icons/workflow_18/Smock_Copy_18_N.svg) **[!UICONTROL Copy Raw Event]** and use a text or code editor of your preference to paste and inspect the event.

@@ -30,7 +30,7 @@ In this lesson, you will:
 Datastreams can be created in the [!UICONTROL Data Collection] interface using the [!UICONTROL Datastream] configuration tool. To create a datastream:
 
 1. Make sure you are in the correct Experience Platform sandbox, as datastreams are defined on a sandbox level.
-1. Select ![Datastreams-S2](/help/assets/icons/Datastreams-S2.svg) **[!UICONTROL Datastreams]** in the left rail.
+1. Select **[!UICONTROL Datastreams]** in the left rail.
 1. Select **[!UICONTROL New Datastream]**. 
 
     ![datastreams home](assets/datastream-new.png){zoomable="yes"}

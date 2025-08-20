@@ -40,7 +40,7 @@ In this lesson, you will:
 
 Instead of using CocoaPods and a Pod file (as outlined in [Generate SDK install instructions](./configure-tags.md#generate-sdk-install-instructions)), you add individual packages using Xcode's native Swift Package Manager. The Xcode project already has all packages dependencies added for you. The Xcode **[!UICONTROL Package Dependencies]** screen should look like:
 
-![Xcode Package Dependencies](assets/xcode-package-dependencies.png){zoomable="yes"}{zoomable="yes"}
+![Xcode Package Dependencies](assets/xcode-package-dependencies.png){zoomable="yes"}
 
 
 In Xcode, you can use **[!UICONTROL File]** > **[!UICONTROL Add Packages...]** to add packages. The table below provides links to the URLs you would use to add packages. The links also direct you to more information about each specific package.  
@@ -150,7 +150,7 @@ You use the dependencies from the [Generate SDK install instructions](./configur
 1. Select **[!UICONTROL Android]** view. 
 1. Select **[!UICONTROL Gradle scripts]** > **[!UICONTROL build.gradle.kts (Module :app)]** from the left pane and in the right pane, scroll until you see `dependencies`.
 
-   ![Android Gradle Dependencies](assets/androidstudio-package-dependencies.png){zoomable="yes"}{zoomable="yes"}
+   ![Android Gradle Dependencies](assets/androidstudio-package-dependencies.png){zoomable="yes"}
 
 In Anroid Studio, you can use **[!UICONTROL File]** > **[!UICONTROL Project Structure...]** to add module dependencies. Select **[!UICONTROL Dependencies]** and then use **[!UICONTROL Modules]** ![Add](/help/assets/icons/Add.svg) to add modules. The table below provides links to the URLs you would use to add dependency modules. The links also direct you to more information about each specific module.  
 

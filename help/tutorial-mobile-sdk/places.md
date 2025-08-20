@@ -68,11 +68,8 @@ You define some points of interest in the Places service.
 1. Search for the **[!UICONTROL Places]** extension.
 1. Install the extension.
 
-<<<<<<< HEAD
     ![Add Decisioning extension](assets/tag-places-extension.png){zoomable="yes"}
-=======
     ![Add Offer Decisioning and Target extension](assets/tag-places-extension.png)
->>>>>>> main
 
 1. In the **[!UICONTROL Install Extension]** dialog:
    1. Select **[!DNL Luma]** from the **[!UICONTROL Select a Library]** list.
@@ -137,7 +134,7 @@ Next, you are going to define rules to work with these data elements.
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL EVENTS]**.
    1. Select **[!UICONTROL Places]** from the **[!UICONTROL Extension]** list and select **[!UICONTROL Enter POI]** from the **[!UICONTROL Event Type]** list.
    1. Select **[!UICONTROL Keep Changes]**.
-      ![Tag event](assets/tags-event-mobile-core.png){zoomable="yes"}. 
+      ![Tag event](assets/tags-event-mobile-core.png). 
 1. Select ![Add](https://spectrum.adobe.com/static/icons/workflow_18/Smock_AddCircle_18_N.svg) underneath **[!UICONTROL ACTIONS]**.
    1. Select **[!UICONTROL Mobile Core]** from the **[!UICONTROL Extension]** list, select **[!UICONTROL Attach Data]** from **[!UICONTROL Action Type]** the list. This action attaches payload data.
    1. In the **[!UICONTROL JSON Payload]**, paste the following payload:
@@ -320,69 +317,6 @@ As discussed in previous lessons, installing a mobile tag extension only provide
         await MobileSDK.shared.processRegionEvent(regionEvent: .exit, forRegion: region)
     }
     ```  
-
->[!TAB Android]
-
-1. Specify your Maps SDK API key in `local.defaults.properties`. To reach that file switch the navigator from Android to **[!UICONTROL Project]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Start [Luma Android] ]**. Replace `DEFAULT_API_KEY` with the Android Map SDK key.
-1. In Android Studio, ensure that [aepsdk-places-android](https://github.com/adobe/aepsdk-places-android) is part of the depencencies in **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!UICONTROL Gradle Scripts]** > **[!UICONTROL build.gradle.kts]** . See [Gradle](install-sdks.md#gradle).
-1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
-1. Ensure `com.adobe.marketing.mobile.Places` is part of your list of imports.
-
-    `import import com.adobe.marketing.mobile.Places`
-
-1. Ensure `Places.EXTENSION` is part of the array of extensions that you are registering.
-
-    ```kotlin
-    val extensions = listOf(
-        Identity.EXTENSION,
-        Lifecycle.EXTENSION,
-        Signal.EXTENSION,
-        Edge.EXTENSION,
-        Consent.EXTENSION,
-        UserProfile.EXTENSION,
-        Places.EXTENSION,
-        Messaging.EXTENSION,
-        Optimize.EXTENSION,
-        Assurance.EXTENSION
-    )
-    ```
-
-1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and find the `suspend fun processGeofence(geofence: Geofence?, transitionType: Int)` function. Add the following code:
-
-    ```kotlin
-    // Process geolocation event
-    Places.processGeofence(geofence, transitionType)
-    ```   
-
-    This [`Places.processGeofence`](https://developer.adobe.com/client-sdks/documentation/places/api-reference/#processgeofence) API communicates the geolocation information to the Places service.
-
-1. 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL views]** > **[!UICONTROL LocationView.kt]** in the Android Studio navigator 
-   
-   1. Search for `// Simulate geofence entry event` to enter the following code for the Entry button:
-
-    ```kotlin
-    // Simulate geofence entry event
-    coroutineScope.launch {
-        MobileSDK.shared.processGeofence(
-            region,
-            Geofence.GEOFENCE_TRANSITION_ENTER
-        )
-    }
-    ```  
-
-   1. Search for `// Simulate geofence exit event` to enter the following code for the Exit button:
-
-    ```kotlin
-    // Simulate geofence exit event
-    coroutineScope.launch {
-        MobileSDK.shared.processGeofence(
-            region,
-            Geofence.GEOFENCE_TRANSITION_EXIT
-        )
-    }
-    ```  
-
->[!ENDTABS]
 
 ## Validate using your app
 

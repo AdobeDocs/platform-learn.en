@@ -65,7 +65,7 @@ You can learn more about the `Identity.getUrlVariables` API in the [Identity for
 
 >[!TAB Android]
 
-Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL webViewModel]**, and locate the `fun loadUrl()` function in the `class WebViewModel: ViewModel()`. Add the following call to handle the web view:
+Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!DNL views]** > **[!DNL WebViewModel]**, and locate the `fun loadUrl()` function in the `class WebViewModel: ViewModel()`. Add the following call to handle the web view:
 
 ```kotlin
 // Handle web view
@@ -92,7 +92,7 @@ You can learn more about the `Identity.getUrlVariables` API in the [Identity for
 
 >[!ENDTABS]
 
-## Validate
+## Validate in the app
 
 To execute the code:
 
@@ -100,17 +100,20 @@ To execute the code:
 1. Go to the **[!UICONTROL Settings]** in the app
 1. Tap the **[!DNL View...]** button to show the **[!DNL Terms of Use]**.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB iOS]
+>[!TAB iOS]
 
-   <img src="./assets/tou1.png" width=300/> <img src="./assets/tou2.png" width=300/> 
+<img src="./assets/tou1.png" width=300/> <img src="./assets/tou2.png" width=300/> 
 
-   >[!TAB Android]
+>[!TAB Android]
 
-   <img src="./assets/tou1-android.png" width=300/> <img src="./assets/tou2-android.png" width=300/>
+<img src="./assets/tou1-android.png" width=300/> <img src="./assets/tou2-android.png" width=300/>
 
-   >[!ENDTABS]
+>[!ENDTABS]
+
+
+## Validate with Assurance
 
 1. In the Assurance UI, look for the **[!UICONTROL Edge Identity Response URL Variables]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor. 
 1. Select the event and review the **[!UICONTROL urlvariable]** field in the **[!UICONTROL ACPExtensionEventData]** object, confirming the following parameters are present in the URL: `adobe_mc`, `mcmid`, and `mcorgid`.

@@ -401,10 +401,10 @@ You need to register the device token for push notifications.
 1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!UICONTROL com.adobe.luma.tutorial.android]** > **[!UICONTROL LumaApplication]** in the Android Studio project navigator.
 1. Add the [`MobileCore.setPushIdentifier`](https://developer.adobe.com/client-sdks/documentation/mobile-core/api-reference/#setpushidentifier) API to the `override fun onCreate()` function in `class LumaAplication : Application`, in `FirebaseMessaging.getInstance().token.addOnCompleteListener`.
 
-    ```kotlin      
-    // Send push token to Mobile SDK
-    MobileCore.setPushIdentifier(deviceToken)
-    ```
+   ```kotlin      
+   // Send push token to Mobile SDK
+   MobileCore.setPushIdentifier(token)
+   ```
 
     This function retrieves the device token unique to the device that the app is installed on. Then sets the token for push notification delivery using the configuration that you have set up and which relies on Firebase Cloud Messaging (FCM).
 
@@ -629,7 +629,7 @@ Be aware that solely for illustration purposes you send a push notification from
    }
    ```
 
-1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Xcode Project navigator and add the following code to `func sendTestPushEvent(applicationId: String, eventType: String)`:
+1. Navigate to **[!UICONTROL Android]** ![ChevronDown](/help/assets/icons/ChevronDown.svg) > **[!DNL app]** > **[!DNL kotlin+java]** > **[!DNL com.adobe.luma.tutorial.android]** > **[!UICONTROL models]** > **[!UICONTROL MobileSDK]** in the Android Studio navigator and add the following code to `func sendTestPushEvent(applicationId: String, eventType: String)`:
 
    ```kotlin
    // Create payload and send experience event
