@@ -5,6 +5,7 @@ role: Developer
 level: Beginner
 jira: KT-5342
 doc-type: Tutorial
+exl-id: aa25e753-ad02-42a0-badc-d158bdb64f91
 ---
 # 1.6.1 Adobe IO and App Builder
 
