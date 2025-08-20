@@ -246,17 +246,17 @@ For your app to work with Journey Optimizer, you must update your tag property.
    ![Test push notifications from Assurance](assets/test-push.png){zoomable="yes"}
 1. You should see the test push notification appear in your app.
    
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB iOS]
+>[!TAB iOS]
 
-   <img src="assets/luma-app-push.png" width=300/>
+<img src="assets/luma-app-push.png" width=300/>
 
-   >[!TAB Android]
+>[!TAB Android]
 
-   <img src="assets/luma-app-push-android.png" width=300/>
+<img src="assets/luma-app-push-android.png" width=300/>
 
-   >[!ENDTABS]
+>[!ENDTABS]
 
 ## Signing
 

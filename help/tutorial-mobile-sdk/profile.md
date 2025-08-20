@@ -142,64 +142,64 @@ See the [API reference](https://developer.adobe.com/client-sdks/documentation/pr
 1. Review the [setup instructions](assurance.md#connecting-to-a-session) section to connect your simulator or device to Assurance.
 1. Run the app to log in and interact with a product.
 
-   >[!BEGINTABS]
+>[!BEGINTABS]
 
-   >[!TAB iOS]
+>[!TAB iOS]
 
-   1. Select **[!UICONTROL Home]** in the tab bar.
-   1. Move the Assurance icon to the left.
-   1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
-      
-      <img src="./assets/mobile-app-events-1.png" width=300> 
-
-   1. To insert a random email and customer id, select the <img src="assets/insert.png" width=15/> button .
-   1. Select **[!UICONTROL Login]**.
-  
-       <img src="./assets/mobile-app-events-2.png" width=300>
-
-   1. Select **[!DNL Products]** in the tab bar.
-   1. Select one product.
-   1. Select <img src="assets/saveforlater.png" width=15/>.
-   1. Select <img src="assets/addtocart.png" width=20/>.
-   1. Select <img src="assets/purchase.png" width=15/>.
-   
-      <img src="./assets/mobile-app-events-3.png" width=300> 
-
-   1. Return back to **[!UICONTROL Home]** screen. You should see that a badge has been added <img src="assets/person-badge-icon.png" width=15/>.
-       
-       <img src="./assets/personbadges.png" width=300>
-
+1. Select **[!UICONTROL Home]** in the tab bar.
+1. Move the Assurance icon to the left.
+1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
     
-    >[!TAB Android]
+    <img src="./assets/mobile-app-events-1.png" width=300> 
 
-   1. Select **[!UICONTROL Home]** in the tab bar.
-   1. Move the Assurance icon to the left.
-   1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
-      
-      <img src="./assets/mobile-app-events-1-android.png" width=300> 
+1. To insert a random email and customer id, select the <img src="assets/insert.png" width=15/> button .
+1. Select **[!UICONTROL Login]**.
 
-   1. To insert a random email and customer id, select the <img src="assets/insert.png" width=15/> button .
-   1. Select **[!UICONTROL Login]**.
-  
-       <img src="./assets/mobile-app-events-2-android.png" width=300>
+    <img src="./assets/mobile-app-events-2.png" width=300>
 
-   1. Select **[!DNL Products]** in the tab bar.
-   1. Select one product.
-   1. Select<img src="assets/heart.png" width=25/>.
-   1. Select <img src="assets/addtocart.png" width=20/>.
-   1. Select <img src="assets/purchase.png" width=15/>.
-   
-      <img src="./assets/mobile-app-events-3-android.png" width=300> 
+1. Select **[!DNL Products]** in the tab bar.
+1. Select one product.
+1. Select <img src="assets/saveforlater.png" width=15/>.
+1. Select <img src="assets/addtocart.png" width=20/>.
+1. Select <img src="assets/purchase.png" width=15/>.
 
-   1. Return back to **[!UICONTROL Home]** screen. You should see that the person icon is updated.
-       
-       <img src="./assets/personbadges-android.png" width=300>
+    <img src="./assets/mobile-app-events-3.png" width=300> 
 
-    >[!ENDTABS]
+1. Return back to **[!UICONTROL Home]** screen. You should see that a badge has been added <img src="assets/person-badge-icon.png" width=15/>.
+    
+    <img src="./assets/personbadges.png" width=300>
 
-     
 
-1. In the Assurance UI, you should see a **[!UICONTROL UserProfileUpdate]** and **[!UICONTROL getUserAttributes]** events with the updated `profileMap` value.
+>[!TAB Android]
+
+1. Select **[!UICONTROL Home]** in the tab bar.
+1. Move the Assurance icon to the left.
+1. To open the Login sheet, select the <img src="assets/login.png" width=15/> button.
+    
+    <img src="./assets/mobile-app-events-1-android.png" width=300> 
+
+1. To insert a random email and customer id, select the <img src="assets/insert.png" width=15/> button .
+1. Select **[!UICONTROL Login]**.
+
+    <img src="./assets/mobile-app-events-2-android.png" width=300>
+
+1. Select **[!DNL Products]** in the tab bar.
+1. Select one product.
+1. Select<img src="assets/heart.png" width=25/>.
+1. Select <img src="assets/addtocart.png" width=20/>.
+1. Select <img src="assets/purchase.png" width=15/>.
+
+    <img src="./assets/mobile-app-events-3-android.png" width=300> 
+
+1. Return back to **[!UICONTROL Home]** screen. You should see that the person icon is updated.
+    
+    <img src="./assets/personbadges-android.png" width=300>
+
+>[!ENDTABS]
+
+
+In the Assurance UI you should see a **[!UICONTROL UserProfileUpdate]** and **[!UICONTROL getUserAttributes]** events with the updated `profileMap` value.
+
    ![validate profile](assets/profile-validate.png){zoomable="yes"}
 
 >[!SUCCESS]

@@ -230,35 +230,36 @@ You can use the [`Identity.removeIdentity`](https://developer.adobe.com/client-s
    1. Select the **[!UICONTROL Home]** tab and move the Assurance icon to the left. 
    1. Select the <img src="assets/login.png" width=15/> icon from the top right.
 
-      >[!BEGINTABS]
+>[!BEGINTABS]
 
-      >[!TAB iOS]
-   
-      <img src="./assets/identity1.png" width=300>
+>[!TAB iOS]
 
-      >[!TAB Android]
+<img src="./assets/identity1.png" width=300>
 
-      <img src="./assets/identity1-android.png" width=300>
+>[!TAB Android]
 
-      >[!ENDTABS]
+<img src="./assets/identity1-android.png" width=300>
+
+>[!ENDTABS]
       
    1. Provide an email address and a CRM Id, or
    1. Select <img src="assets/insert.png" width=15/> (iOS) or **[!UICONTROL Generate Random Email]** (Android) to randomly generate an **[!UICONTROL Email]** and **[!UICONTROL CRM ID]**.
    1. Select **[!UICONTROL Login]**.
 
-      >[!BEGINTABS]
+>[!BEGINTABS]
 
-      >[!TAB iOS]
+>[!TAB iOS]
 
-      <img src="./assets/identity2.png" width=300>
+<img src="./assets/identity2.png" width=300>
 
-      >[!TAB Android]
+>[!TAB Android]
 
-      <img src="./assets/identity2-android.png" width=300>
+<img src="./assets/identity2-android.png" width=300>
 
 
-      >[!ENDTABS]
+>[!ENDTABS]
     
+Back in Assurance:
 
 1. Look in the Assurance web interface for the **[!UICONTROL Edge Identity Update Identities]** event from the **[!UICONTROL com.adobe.griffon.mobile]** vendor.
 1. Select the event and review the data in the **[!UICONTROL ACPExtensionEventData]** object. You should see the identities you updated.
