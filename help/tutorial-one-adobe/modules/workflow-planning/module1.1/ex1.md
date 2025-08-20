@@ -6,7 +6,11 @@ doc-type: tutorial
 ---
 # 1.1.1 Getting started with Workfront Planning
 
-## 1.1.1.1 Workfront Planning Terminology
+## 1.1.1.1 CitiSignal Campaign Brief
+
+To understand the context of CitiSignal and what they're trying to achieve, download and read CitiSignal's Campaign Brief here: [CitiSignal-Fiber-Launch-Winter-2026.pdf](./../../../assets/brief/CitiSignal-Fiber-Launch-Winter-2026.pdf).
+
+## 1.1.1.2 Workfront Planning Terminology
 
 The following are the main Workfront Planning objects and concepts:
 
@@ -24,7 +28,7 @@ The following are the main Workfront Planning objects and concepts:
 
 You will now go hands-on and start creating some of these objects yourself.
 
-## 1.1.1.2 Workspace, Record Type, Fields
+## 1.1.1.3 Workspace, Record Type, Fields
 
 Go to [https://experience.adobe.com/](https://experience.adobe.com/){target="_blank"}. Click to open **Workfront**.
 
@@ -54,7 +58,7 @@ You should then have this.
 
 ![Workfront Planning](./images/wfpl7a.png)
 
-## 1.1.1.3 Taxonomies: Record Type & Fields
+## 1.1.1.4 Taxonomies: Record Type & Fields
 
 Under **Taxonomies**, click **+ Add Record Type** and then select **Add manually**.
 
@@ -158,7 +162,7 @@ You should then see this.
 
 ![Workfront Planning](./images/wfpl19.png)
 
-## 1.1.1.4 Operational Record Types: Fields
+## 1.1.1.5 Operational Record Types: Fields
 
 Click to open **Campaigns**.
 
@@ -180,7 +184,7 @@ Your new field is then shown in the table view.
 
 ![Workfront Planning](./images/wfpl24.png)
 
-## 1.1.1.5 Create a Request Form
+## 1.1.1.6 Create a Request Form
 
 On the Campaigns overview screen, click the 3 dots **...** and then select **Create request form**.
 
@@ -202,7 +206,7 @@ Click the arrow in the top left corner to go back to the Campaigns overview scre
 
 ![Workfront Planning](./images/wfpl29.png)
 
-## 1.1.1.6 Submit a new record using the Request Form
+## 1.1.1.7 Submit a new record using the Request Form
 
 On the Campaigns overview screen, click **+ New Record**.
 
@@ -236,7 +240,7 @@ You should then see the newly created campaign in the overview.
 
 ![Workfront Planning](./images/wfpl35.png)
 
-## 1.1.1.7 Create Portfolio & Custom Form
+## 1.1.1.8 Create Portfolio & Custom Form
 
 In the next step, you'll create an automation that will take information from the campaign that you created in Workfront Planning and that will use that information in Workfront to create a program. Before you can create the automation, there are 2 things to configure in Workfront first: a portfolio and a custom form.
 
