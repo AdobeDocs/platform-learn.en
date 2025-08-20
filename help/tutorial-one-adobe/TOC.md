@@ -79,8 +79,8 @@ recommendations: noDisplay,noCatalog
     + [Overview](/help/tutorial-one-adobe/modules/creation-production/module1.6/genstudioext.md)
     + [1.6.1 Adobe IO and App Builder](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex1.md)
     + [1.6.2 Create your AWS S3 bucket](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex2.md)
-    + [1.6.3 Create your external DAM app](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
-    + [1.6.4 Deploy your code and publish your app privately](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
+    + [1.6.3 Create and deploy your external DAM app](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex3.md)
+    + [1.6.4 Publish your app privately](/help/tutorial-one-adobe/modules/creation-production/module1.6/ex4.md)
     + [Summary and benefits](/help/tutorial-one-adobe/modules/creation-production/module1.6/summary.md)
 
 + Asset Management {#assetmgmt}

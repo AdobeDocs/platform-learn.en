@@ -7,7 +7,7 @@ jira: KT-5342
 doc-type: Tutorial
 exl-id: 6823e8a0-dde7-460a-a48a-6787e65e4104
 ---
-# 1.6.3 Create your external DAM app
+# 1.6.3 Create and deploy your external DAM app
 
 ## 1.6.3.1 Download sample app files
 
@@ -126,15 +126,15 @@ AWS_REGION=
 AWS_BUCKET_NAME=
 ```
 
-The field **AWS_ACCESS_KEY_ID** and **AWS_SECRET_ACCESS_KEY** were available after creating the IAM user in the previous exercise. You were asked to write them down, you can now copy the values.
+The field **`AWS_ACCESS_KEY_ID`** and **`AWS_SECRET_ACCESS_KEY`** were available after creating the IAM user in the previous exercise. You were asked to write them down, you can now copy the values.
 
 ![ETL](./images/cred1.png)
 
-The field **AWS_REGION** can be taken from the AWS S3 Home view, next to your bucket name. In this example, the region is **us-west-2**.
+The field **`AWS_REGION`** can be taken from the AWS S3 Home view, next to your bucket name. In this example, the region is **us-west-2**.
 
 ![ETL](./images/bucket2.png)
 
-The field **AWS_BUCKET_NAME** should be `--aepUserLdap---gspem-dam`.
+The field **`AWS_BUCKET_NAME`** should be `--aepUserLdap---gspem-dam`.
 
 This information allows you to update the values of each of these variables.
 
@@ -164,9 +164,53 @@ In your terminal window, run the command `aio app run`. You should then see this
 
 ![Ext DAM](./images/extdam24.png)
 
+You've now confirmed that your app is running. The next step is to deploy it.
+
+First, push **CTRL+C** to stop the app from running. Then, enter the command `aio app deploy`. This command will deploy your code to Adobe IO.
+
+As a result, you'll receive a similar URL to access your deployed application:
+
+`https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+![Ext DAM](./images/extdam27.png)
+
+For testing purposes, you can now use that URL as a query string paramater by adding `?ext=` as a prefix to the above URL. This results in this query string parameter:
+
+`?ext=https://133309-201burgundyguan.adobeio-static.net/index.html`
+
+Go to [https://experience.adobe.com/genstudio/create](https://experience.adobe.com/genstudio/create).
+
+![Ext DAM](./images/extdam25.png)
+
+Next, add the query string parameter just before the **#**. Your new URL should look like this:
+
+`https://experience.adobe.com/?ext=https://133309-201burgundyguan.adobeio-static.net/index.html#/@experienceplatform/genstudio/create`
+
+The page will load as normal. Click **Banners** to start creating a new banner.
+
+![Ext DAM](./images/extdam26.png)
+
+Select a template and click **Use**.
+
+![Ext DAM](./images/extdam28.png)
+
+Click **Select from content**.
+
+![Ext DAM](./images/extdam29.png)
+
+You should then be able to select your external DAM out of the dropdown list.
+
+![Ext DAM](./images/extdam30.png)
+
+When making changes to the code on your local machine, you will need to redeploy your app. When you re-deploy, use this terminal command:
+
+`aio app deploy --force-build --force-deploy` 
+
+Your app is now ready to be published.
+
 ## Next Steps
 
-Go to [Deploy your code and publish your app privately](./ex4.md){target="_blank"}
+Go to [Publish your app privately](./ex4.md){target="_blank"}
 
 Go back to [GenStudio for Performance Marketing - Extensibility](./genstudioext.md){target="_blank"}
 
