@@ -68,7 +68,6 @@ You define some points of interest in the Places service.
 1. Search for the **[!UICONTROL Places]** extension.
 1. Install the extension.
 
-    ![Add Decisioning extension](assets/tag-places-extension.png){zoomable="yes"}
     ![Add Offer Decisioning and Target extension](assets/tag-places-extension.png)
 
 1. In the **[!UICONTROL Install Extension]** dialog:

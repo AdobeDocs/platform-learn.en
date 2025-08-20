@@ -91,7 +91,8 @@ Although this lesson is about A/B tests in Target, the result of the tests are s
 1. Search for the **[!UICONTROL Offer Decisioning and Target]** extension.
 1. Install the extension. The extension does not require additional configuration.
 
-    ![Add Offer Decisioning and Target extension](assets/tag-add-decisioning-extension.png)
+    ![Add Offer Decisioning and Target extension](assets/tag-add-decisioning-extension.png){zoomable="yes"}
+
 
 
 ### Update your schema
