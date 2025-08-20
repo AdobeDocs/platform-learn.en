@@ -142,6 +142,7 @@ Campaigns
   + [Reference audiences as an advertiser](collaboration/reference-audiences-as-an-advertiser.md)
   + [Connect with publishers](collaboration/connect-with-publishers.md)
   + [Create a project](collaboration/create-a-project.md)
+  + [Brand to Brand](collaboration/brand-to-brand-collaboration.md)
 + Dashboards {#dashboards}
   + [Create a dashboard](/help/platform/dashboards/create-a-dashboard.md)
 + Data Governance {#data-governance}
